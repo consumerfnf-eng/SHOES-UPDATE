@@ -1,0 +1,6 @@
+{
+  "status": "initial package",
+  "mandatory_brand_count": 116,
+  "total_monitored_brands": 157,
+  "note": "Sergio Tacchini excluded from monitoring by user request. First GitHub Action run will populate per-brand coverage."
+}

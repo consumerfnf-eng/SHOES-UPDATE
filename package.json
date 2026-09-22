@@ -1,0 +1,11 @@
+{
+  "name": "mlb-shoes-dashboard-public",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "daily": "node scripts/run_daily_update.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}

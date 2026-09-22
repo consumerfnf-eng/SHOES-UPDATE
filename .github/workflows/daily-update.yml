@@ -1,0 +1,68 @@
+name: Daily Shoes Dashboard Update
+
+on:
+  schedule:
+    - cron: "0 23 * * *"   # 08:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shoes-daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install updater
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+
+      - name: Start local dashboard server
+        run: |
+          python -m http.server 8000 --bind 127.0.0.1 > /tmp/shoes-http.log 2>&1 &
+          sleep 2
+
+      - name: Strict daily brand + keyword update
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+        run: npm run daily
+
+      - name: Persist verified snapshot into internal dashboard
+        if: always()
+        run: python scripts/patch_snapshot.py
+
+      - name: Build public dashboard without WGSN
+        if: always()
+        run: python scripts/build_public.py
+
+      - name: Verify mandatory brand coverage
+        if: always()
+        run: python scripts/validate_coverage.py
+
+      - name: Commit refreshed dashboard
+        if: always()
+        run: |
+          git config user.name "Shoes Dashboard Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add internal/dashboard.html public/index.html data/last_update.json logs/last-run.png
+          git diff --cached --quiet || git commit -m "daily shoes update $(date -u +%F)"
+          git pull --rebase
+          git push

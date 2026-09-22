@@ -1,0 +1,1271 @@
+{
+  "mandatory_count": 116,
+  "policy": "Every listed brand must be attempted every daily run. Mandatory brands retry up to 3 times when all configured sources fail to respond. Zero new products is valid only after a successful source response.",
+  "display_to_canonical": {
+    "Acne Studios": "Acne Studios",
+    "Alaïa": "Alaïa",
+    "Alexander McQueen": "Alexander McQueen",
+    "Alo": "Alo",
+    "Amina Muaddi": "Amina Muaddi",
+    "Amiri": "AMIRI",
+    "Asics": "ASICS",
+    "Avavav": "Avavav",
+    "Axel Arigato": "Axel Arigato",
+    "Balenciaga": "Balenciaga",
+    "Bally": "Bally",
+    "Balmain": "Balmain",
+    "Berluti": "Berluti",
+    "Bottega Veneta": "Bottega Veneta",
+    "Brunello Cucinelli": "Brunello Cucinelli",
+    "Burberry": "Burberry",
+    "Casablanca": "Casablanca",
+    "Cecilie Bahnsen": "Cecilie Bahnsen",
+    "Celine": "Celine",
+    "Chanel": "Chanel",
+    "Chloé": "Chloé",
+    "Christian Louboutin": "Christian Louboutin",
+    "Comme des Garçons Homme Plus": "Comme des Garçons Homme Plus",
+    "Common Projects": "Common Projects",
+    "Converse": "Converse",
+    "Coperni": "Coperni",
+    "Courrèges": "Courrèges",
+    "Craig Green": "Craig Green",
+    "Diesel": "Diesel",
+    "Dior": "Dior",
+    "Dolce & Gabbana": "Dolce & Gabbana",
+    "Dries Van Noten": "Dries Van Noten",
+    "Dsquared2": "DSQUARED2",
+    "Fear of God": "Fear of God",
+    "Fendi": "Fendi",
+    "Feng Chen Wang": "Feng Chen Wang",
+    "Ferragamo": "Ferragamo",
+    "Fila": "FILA",
+    "Givenchy": "Givenchy",
+    "Golden Goose": "Golden Goose",
+    "Gucci": "Gucci",
+    "Hender Scheme": "Hender Scheme",
+    "Hermes": "Hermès",
+    "HOKA": "HOKA",
+    "Issey Miyake": "Issey Miyake",
+    "Jacquemus": "Jacquemus",
+    "Jil Sander": "Jil Sander",
+    "Jimmy Choo": "Jimmy Choo",
+    "Junya Watanabe": "Junya Watanabe",
+    "Kenzo": "Kenzo",
+    "Khaite": "Khaite",
+    "Kiko Kostadinov": "Kiko Kostadinov",
+    "Kolor": "Kolor",
+    "Lanvin": "Lanvin",
+    "Loewe": "Loewe",
+    "Loro Piana": "Loro Piana",
+    "Louis Vuitton": "Louis Vuitton",
+    "Lululemon": "Lululemon",
+    "Mach & Mach": "Mach & Mach",
+    "Maison Margiela": "Maison Margiela",
+    "Maison Mihara Yasuhiro": "Maison Mihara Yasuhiro",
+    "Marine Serre": "Marine Serre",
+    "Martine Rose": "Martine Rose",
+    "Miu Miu": "Miu Miu",
+    "Mizuno": "Mizuno",
+    "MM6 Maison Margiela": "MM6 Maison Margiela",
+    "Moncler": "Moncler",
+    "New Balance": "New Balance",
+    "Nike": "Nike",
+    "Norda": "norda",
+    "Oakley Factory Team": "Oakley Factory Team",
+    "Off-White": "Off-White",
+    "On Running": "On",
+    "Onitsuka Tiger": "Onitsuka Tiger",
+    "Ottolinger": "Ottolinger",
+    "Palm Angels": "Palm Angels",
+    "Pane": "PANE",
+    "Pierre Hardy": "Pierre Hardy",
+    "Prada": "Prada",
+    "Proenza Schouler": "Proenza Schouler",
+    "Puma": "PUMA",
+    "Rabanne": "Rabanne",
+    "Reebok": "Reebok",
+    "Repetto": "Repetto",
+    "Rhude": "Rhude",
+    "Rick Owens": "Rick Owens",
+    "ROA": "ROA",
+    "Roger Vivier": "Roger Vivier",
+    "Sacai": "sacai",
+    "Saint Laurent": "Saint Laurent",
+    "Salomon": "Salomon",
+    "Santoni": "Santoni",
+    "Saucony": "Saucony",
+    "Saul Nash": "Saul Nash",
+    "Simone Rocha": "Simone Rocha",
+    "Song for the Mute": "Song for the Mute",
+    "Soshiotsuki": "Soshiotsuki",
+    "Stella McCartney": "Stella McCartney",
+    "Stone Island": "Stone Island",
+    "The Row": "The Row",
+    "Thom Browne": "Thom Browne",
+    "Tod's": "Tod's",
+    "Tory Burch": "Tory Burch",
+    "Umbro": "Umbro",
+    "Undercover": "Undercover",
+    "Valentino Garavani": "Valentino Garavani",
+    "Vans": "Vans",
+    "Versace": "Versace",
+    "Vetements": "VETEMENTS",
+    "Visvim": "Visvim",
+    "Wales Bonner": "Wales Bonner",
+    "Willy Chavarria": "Willy Chavarria",
+    "Y-3": "Y-3",
+    "Yohji Yamamoto": "Yohji Yamamoto",
+    "Zegna": "Zegna",
+    "adidas": "adidas"
+  },
+  "brands": [
+    {
+      "display": "Acne Studios",
+      "canonical": "Acne Studios",
+      "domains": [
+        "acnestudios.com"
+      ],
+      "pages": [
+        {
+          "name": "Acne Studios Official",
+          "url": "https://www.acnestudios.com/us/en/woman/shoes/"
+        }
+      ]
+    },
+    {
+      "display": "Alaïa",
+      "canonical": "Alaïa",
+      "domains": [
+        "maison-alaia.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Alexander McQueen",
+      "canonical": "Alexander McQueen",
+      "domains": [
+        "alexandermcqueen.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Alo",
+      "canonical": "Alo",
+      "domains": [
+        "aloyoga.com"
+      ],
+      "pages": [
+        {
+          "name": "ALO Official Sneakers",
+          "url": "https://www.aloyoga.com/en-kr/collections/sneakers"
+        }
+      ]
+    },
+    {
+      "display": "Amina Muaddi",
+      "canonical": "Amina Muaddi",
+      "domains": [
+        "aminamuaddi.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Amiri",
+      "canonical": "AMIRI",
+      "domains": [
+        "amiri.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Asics",
+      "canonical": "ASICS",
+      "domains": [
+        "asics.com"
+      ],
+      "pages": [
+        {
+          "name": "ASICS Official",
+          "url": "https://www.asics.com/us/en-us/releases/"
+        },
+        {
+          "name": "ASICS Official",
+          "url": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/"
+        }
+      ]
+    },
+    {
+      "display": "Avavav",
+      "canonical": "Avavav",
+      "domains": [
+        "avavav.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Axel Arigato",
+      "canonical": "Axel Arigato",
+      "domains": [
+        "axelarigato.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Balenciaga",
+      "canonical": "Balenciaga",
+      "domains": [
+        "balenciaga.com"
+      ],
+      "pages": [
+        {
+          "name": "Balenciaga Official",
+          "url": "https://www.balenciaga.com/en-us/women/shoes-for-women"
+        }
+      ]
+    },
+    {
+      "display": "Bally",
+      "canonical": "Bally",
+      "domains": [
+        "bally.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Balmain",
+      "canonical": "Balmain",
+      "domains": [
+        "balmain.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Berluti",
+      "canonical": "Berluti",
+      "domains": [
+        "berluti.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Bottega Veneta",
+      "canonical": "Bottega Veneta",
+      "domains": [
+        "bottegaveneta.com"
+      ],
+      "pages": [
+        {
+          "name": "Bottega Veneta Official",
+          "url": "https://www.bottegaveneta.com/en-us/women/shoes"
+        }
+      ]
+    },
+    {
+      "display": "Brunello Cucinelli",
+      "canonical": "Brunello Cucinelli",
+      "domains": [
+        "brunellocucinelli.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Burberry",
+      "canonical": "Burberry",
+      "domains": [
+        "burberry.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Casablanca",
+      "canonical": "Casablanca",
+      "domains": [
+        "casablancaparis.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Cecilie Bahnsen",
+      "canonical": "Cecilie Bahnsen",
+      "domains": [
+        "ceciliebahnsen.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Celine",
+      "canonical": "Celine",
+      "domains": [
+        "celine.com"
+      ],
+      "pages": [
+        {
+          "name": "Celine Official",
+          "url": "https://www.celine.com/en-us/women/shoes/"
+        }
+      ]
+    },
+    {
+      "display": "Chanel",
+      "canonical": "Chanel",
+      "domains": [
+        "chanel.com"
+      ],
+      "pages": [
+        {
+          "name": "Chanel Official",
+          "url": "https://www.chanel.com/us/fashion/shoes/c/1x1x5/"
+        }
+      ]
+    },
+    {
+      "display": "Chloé",
+      "canonical": "Chloé",
+      "domains": [
+        "chloe.com"
+      ],
+      "pages": [
+        {
+          "name": "Chloé Official",
+          "url": "https://www.chloe.com/us/shoes_women"
+        }
+      ]
+    },
+    {
+      "display": "Christian Louboutin",
+      "canonical": "Christian Louboutin",
+      "domains": [
+        "christianlouboutin.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Comme des Garçons Homme Plus",
+      "canonical": "Comme des Garçons Homme Plus",
+      "domains": [
+        "comme-des-garcons.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Common Projects",
+      "canonical": "Common Projects",
+      "domains": [
+        "commonprojects.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Converse",
+      "canonical": "Converse",
+      "domains": [
+        "converse.com"
+      ],
+      "pages": [
+        {
+          "name": "Converse Official New Shoes",
+          "url": "https://www.converse.com/shop/new-arrivals/shoes"
+        }
+      ]
+    },
+    {
+      "display": "Coperni",
+      "canonical": "Coperni",
+      "domains": [
+        "coperniparis.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Courrèges",
+      "canonical": "Courrèges",
+      "domains": [
+        "courreges.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Craig Green",
+      "canonical": "Craig Green",
+      "domains": [
+        "craig-green.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Diesel",
+      "canonical": "Diesel",
+      "domains": [
+        "diesel.com"
+      ],
+      "pages": [
+        {
+          "name": "Diesel Women Sneakers",
+          "url": "https://kr.diesel.com/en/woman/footwear/sneakers/"
+        },
+        {
+          "name": "Diesel New Arrivals",
+          "url": "https://kr.diesel.com/en/woman/new-arrivals/"
+        }
+      ]
+    },
+    {
+      "display": "Dior",
+      "canonical": "Dior",
+      "domains": [
+        "dior.com"
+      ],
+      "pages": [
+        {
+          "name": "Dior Official",
+          "url": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers"
+        }
+      ]
+    },
+    {
+      "display": "Dolce & Gabbana",
+      "canonical": "Dolce & Gabbana",
+      "domains": [
+        "dolcegabbana.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Dries Van Noten",
+      "canonical": "Dries Van Noten",
+      "domains": [
+        "driesvannoten.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Dsquared2",
+      "canonical": "DSQUARED2",
+      "domains": [
+        "dsquared2.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Fear of God",
+      "canonical": "Fear of God",
+      "domains": [
+        "fearofgod.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Fendi",
+      "canonical": "Fendi",
+      "domains": [
+        "fendi.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Feng Chen Wang",
+      "canonical": "Feng Chen Wang",
+      "domains": [
+        "fengchenwang.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Ferragamo",
+      "canonical": "Ferragamo",
+      "domains": [
+        "ferragamo.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Fila",
+      "canonical": "FILA",
+      "domains": [
+        "fila.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Givenchy",
+      "canonical": "Givenchy",
+      "domains": [
+        "givenchy.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Golden Goose",
+      "canonical": "Golden Goose",
+      "domains": [
+        "goldengoose.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Gucci",
+      "canonical": "Gucci",
+      "domains": [
+        "gucci.com"
+      ],
+      "pages": [
+        {
+          "name": "Gucci Official",
+          "url": "https://www.gucci.com/us/en/ca/women/shoes-for-women-c-women-shoes?sort=newest"
+        }
+      ]
+    },
+    {
+      "display": "Hender Scheme",
+      "canonical": "Hender Scheme",
+      "domains": [
+        "henderscheme.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Hermes",
+      "canonical": "Hermès",
+      "domains": [
+        "hermes.com"
+      ],
+      "pages": [
+        {
+          "name": "Hermès Official",
+          "url": "https://www.hermes.com/us/en/category/women/shoes/"
+        }
+      ]
+    },
+    {
+      "display": "HOKA",
+      "canonical": "HOKA",
+      "domains": [
+        "hoka.com"
+      ],
+      "pages": [
+        {
+          "name": "HOKA Official New Arrivals",
+          "url": "https://www.hoka.com/en/us/new-arrivals/"
+        }
+      ]
+    },
+    {
+      "display": "Issey Miyake",
+      "canonical": "Issey Miyake",
+      "domains": [
+        "isseymiyake.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Jacquemus",
+      "canonical": "Jacquemus",
+      "domains": [
+        "jacquemus.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Jil Sander",
+      "canonical": "Jil Sander",
+      "domains": [
+        "jilsander.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Jimmy Choo",
+      "canonical": "Jimmy Choo",
+      "domains": [
+        "jimmychoo.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Junya Watanabe",
+      "canonical": "Junya Watanabe",
+      "domains": [
+        "comme-des-garcons.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Kenzo",
+      "canonical": "Kenzo",
+      "domains": [
+        "kenzo.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Khaite",
+      "canonical": "Khaite",
+      "domains": [
+        "khaite.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Kiko Kostadinov",
+      "canonical": "Kiko Kostadinov",
+      "domains": [
+        "kikokostadinov.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Kolor",
+      "canonical": "Kolor",
+      "domains": [
+        "kolor.jp"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Lanvin",
+      "canonical": "Lanvin",
+      "domains": [
+        "lanvin.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Loewe",
+      "canonical": "Loewe",
+      "domains": [
+        "loewe.com"
+      ],
+      "pages": [
+        {
+          "name": "Loewe Official",
+          "url": "https://www.loewe.com/usa/en/women/shoes"
+        }
+      ]
+    },
+    {
+      "display": "Loro Piana",
+      "canonical": "Loro Piana",
+      "domains": [
+        "loropiana.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Louis Vuitton",
+      "canonical": "Louis Vuitton",
+      "domains": [
+        "louisvuitton.com"
+      ],
+      "pages": [
+        {
+          "name": "Louis Vuitton Official",
+          "url": "https://us.louisvuitton.com/eng-us/women/shoes/all-shoes/_/N-t1mcbujj"
+        }
+      ]
+    },
+    {
+      "display": "Lululemon",
+      "canonical": "Lululemon",
+      "domains": [
+        "lululemon.com",
+        "shop.lululemon.com"
+      ],
+      "pages": [
+        {
+          "name": "lululemon Official Shoes",
+          "url": "https://shop.lululemon.com/c/shoes/n1n4fc"
+        },
+        {
+          "name": "lululemon Official Sneakers",
+          "url": "https://shop.lululemon.com/c/sneakers/n1d852zn4fc"
+        }
+      ]
+    },
+    {
+      "display": "Mach & Mach",
+      "canonical": "Mach & Mach",
+      "domains": [
+        "machandmach.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Maison Margiela",
+      "canonical": "Maison Margiela",
+      "domains": [
+        "maisonmargiela.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Maison Mihara Yasuhiro",
+      "canonical": "Maison Mihara Yasuhiro",
+      "domains": [
+        "miharayasuhiro.jp"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Marine Serre",
+      "canonical": "Marine Serre",
+      "domains": [
+        "marineserre.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Martine Rose",
+      "canonical": "Martine Rose",
+      "domains": [
+        "martine-rose.com"
+      ],
+      "pages": [
+        {
+          "name": "Martine Rose Official Shoes",
+          "url": "https://www.martine-rose.com/collections/shoes"
+        }
+      ]
+    },
+    {
+      "display": "Miu Miu",
+      "canonical": "Miu Miu",
+      "domains": [
+        "miumiu.com"
+      ],
+      "pages": [
+        {
+          "name": "Miu Miu Official",
+          "url": "https://www.miumiu.com/us/en/shoes/c/10207US"
+        }
+      ]
+    },
+    {
+      "display": "Mizuno",
+      "canonical": "Mizuno",
+      "domains": [
+        "mizunousa.com",
+        "mizuno.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "MM6 Maison Margiela",
+      "canonical": "MM6 Maison Margiela",
+      "domains": [
+        "maisonmargiela.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Moncler",
+      "canonical": "Moncler",
+      "domains": [
+        "moncler.com"
+      ],
+      "pages": [
+        {
+          "name": "Moncler Official",
+          "url": "https://www.moncler.com/en-us/women/shoes"
+        }
+      ]
+    },
+    {
+      "display": "New Balance",
+      "canonical": "New Balance",
+      "domains": [
+        "newbalance.com"
+      ],
+      "pages": [
+        {
+          "name": "New Balance Official",
+          "url": "https://www.newbalance.com/nb-launches/"
+        },
+        {
+          "name": "New Balance Official",
+          "url": "https://www.newbalance.com/women/featured/new-arrivals/"
+        }
+      ]
+    },
+    {
+      "display": "Nike",
+      "canonical": "Nike",
+      "domains": [
+        "nike.com"
+      ],
+      "pages": [
+        {
+          "name": "Nike Official",
+          "url": "https://www.nike.com/w/new-shoes-3n82yzy7ok"
+        }
+      ]
+    },
+    {
+      "display": "Norda",
+      "canonical": "norda",
+      "domains": [
+        "nordarun.com"
+      ],
+      "pages": [
+        {
+          "name": "norda Official",
+          "url": "https://nordarun.com/collections/footwear"
+        }
+      ]
+    },
+    {
+      "display": "Oakley Factory Team",
+      "canonical": "Oakley Factory Team",
+      "domains": [
+        "oakley.com",
+        "wearebraindead.com"
+      ],
+      "pages": [
+        {
+          "name": "Oakley Factory Team Official",
+          "url": "https://www.oakley.com/en-us/search?text=Factory%20Team"
+        },
+        {
+          "name": "Brain Dead Oakley Factory Team",
+          "url": "https://wearebraindead.com/pages/oakley-factory-team"
+        }
+      ]
+    },
+    {
+      "display": "Off-White",
+      "canonical": "Off-White",
+      "domains": [
+        "off---white.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "On Running",
+      "canonical": "On",
+      "domains": [
+        "on.com"
+      ],
+      "pages": [
+        {
+          "name": "On Official",
+          "url": "https://www.on.com/en-us/shop/shoes"
+        }
+      ]
+    },
+    {
+      "display": "Onitsuka Tiger",
+      "canonical": "Onitsuka Tiger",
+      "domains": [
+        "onitsukatiger.com"
+      ],
+      "pages": [
+        {
+          "name": "Onitsuka Tiger Official",
+          "url": "https://www.onitsukatiger.com/us/en-us/new-arrivals/c/0102"
+        }
+      ]
+    },
+    {
+      "display": "Ottolinger",
+      "canonical": "Ottolinger",
+      "domains": [
+        "ottolinger.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Palm Angels",
+      "canonical": "Palm Angels",
+      "domains": [
+        "palmangels.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Pane",
+      "canonical": "PANE",
+      "domains": [
+        "paneshoes.com"
+      ],
+      "pages": [
+        {
+          "name": "PANE Official Women",
+          "url": "https://paneshoes.com/collections/women-s"
+        },
+        {
+          "name": "PANE Official Men",
+          "url": "https://paneshoes.com/collections/men"
+        }
+      ]
+    },
+    {
+      "display": "Pierre Hardy",
+      "canonical": "Pierre Hardy",
+      "domains": [
+        "pierrehardy.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Prada",
+      "canonical": "Prada",
+      "domains": [
+        "prada.com"
+      ],
+      "pages": [
+        {
+          "name": "Prada Official",
+          "url": "https://www.prada.com/us/en/womens/new-in/c/10111US"
+        },
+        {
+          "name": "Prada Official",
+          "url": "https://www.prada.com/us/en/womens/shoes/c/10070US"
+        }
+      ]
+    },
+    {
+      "display": "Proenza Schouler",
+      "canonical": "Proenza Schouler",
+      "domains": [
+        "proenzaschouler.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Puma",
+      "canonical": "PUMA",
+      "domains": [
+        "puma.com"
+      ],
+      "pages": [
+        {
+          "name": "PUMA Official",
+          "url": "https://us.puma.com/us/en/launch-calendar"
+        },
+        {
+          "name": "PUMA Official",
+          "url": "https://us.puma.com/us/en/women/new-arrivals"
+        }
+      ]
+    },
+    {
+      "display": "Rabanne",
+      "canonical": "Rabanne",
+      "domains": [
+        "rabanne.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Reebok",
+      "canonical": "Reebok",
+      "domains": [
+        "reebok.com"
+      ],
+      "pages": [
+        {
+          "name": "Reebok Official Shoes",
+          "url": "https://www.reebok.com/c/shoes"
+        }
+      ]
+    },
+    {
+      "display": "Repetto",
+      "canonical": "Repetto",
+      "domains": [
+        "repetto.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Rhude",
+      "canonical": "Rhude",
+      "domains": [
+        "rh-ude.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Rick Owens",
+      "canonical": "Rick Owens",
+      "domains": [
+        "rickowens.eu"
+      ],
+      "pages": []
+    },
+    {
+      "display": "ROA",
+      "canonical": "ROA",
+      "domains": [
+        "roa-hiking.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Roger Vivier",
+      "canonical": "Roger Vivier",
+      "domains": [
+        "rogervivier.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Sacai",
+      "canonical": "sacai",
+      "domains": [
+        "sacai.jp"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Saint Laurent",
+      "canonical": "Saint Laurent",
+      "domains": [
+        "ysl.com"
+      ],
+      "pages": [
+        {
+          "name": "Saint Laurent Official",
+          "url": "https://www.ysl.com/en-us/ca/women/shoes"
+        }
+      ]
+    },
+    {
+      "display": "Salomon",
+      "canonical": "Salomon",
+      "domains": [
+        "salomon.com"
+      ],
+      "pages": [
+        {
+          "name": "Salomon Official",
+          "url": "https://www.salomon.com/en-us/c/women/shoes"
+        },
+        {
+          "name": "Salomon Official",
+          "url": "https://www.salomon.com/en-us/c/men/shoes"
+        }
+      ]
+    },
+    {
+      "display": "Santoni",
+      "canonical": "Santoni",
+      "domains": [
+        "santonishoes.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Saucony",
+      "canonical": "Saucony",
+      "domains": [
+        "saucony.com"
+      ],
+      "pages": [
+        {
+          "name": "Saucony Official New Arrivals",
+          "url": "https://www.saucony.com/en/new-arrivals/"
+        }
+      ]
+    },
+    {
+      "display": "Saul Nash",
+      "canonical": "Saul Nash",
+      "domains": [
+        "saulnash.co.uk"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Simone Rocha",
+      "canonical": "Simone Rocha",
+      "domains": [
+        "simonerocha.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Song for the Mute",
+      "canonical": "Song for the Mute",
+      "domains": [
+        "songforthemute.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Soshiotsuki",
+      "canonical": "Soshiotsuki",
+      "domains": [
+        "soshiotsuki.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Stella McCartney",
+      "canonical": "Stella McCartney",
+      "domains": [
+        "stellamccartney.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Stone Island",
+      "canonical": "Stone Island",
+      "domains": [
+        "stoneisland.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "The Row",
+      "canonical": "The Row",
+      "domains": [
+        "therow.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Thom Browne",
+      "canonical": "Thom Browne",
+      "domains": [
+        "thombrowne.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Tod's",
+      "canonical": "Tod's",
+      "domains": [
+        "tods.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Tory Burch",
+      "canonical": "Tory Burch",
+      "domains": [
+        "toryburch.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Umbro",
+      "canonical": "Umbro",
+      "domains": [
+        "umbro.com"
+      ],
+      "pages": [
+        {
+          "name": "Umbro Official Footwear",
+          "url": "https://www.umbro.com/en/style/?categories=1726"
+        }
+      ]
+    },
+    {
+      "display": "Undercover",
+      "canonical": "Undercover",
+      "domains": [
+        "undercoverism.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Valentino Garavani",
+      "canonical": "Valentino Garavani",
+      "domains": [
+        "valentino.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Vans",
+      "canonical": "Vans",
+      "domains": [
+        "vans.com"
+      ],
+      "pages": [
+        {
+          "name": "Vans Official Shoes",
+          "url": "https://www.vans.com/en-us/categories/shoes-c00081"
+        }
+      ]
+    },
+    {
+      "display": "Versace",
+      "canonical": "Versace",
+      "domains": [
+        "versace.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Vetements",
+      "canonical": "VETEMENTS",
+      "domains": [
+        "vetementswebsite.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Visvim",
+      "canonical": "Visvim",
+      "domains": [
+        "visvim.tv"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Wales Bonner",
+      "canonical": "Wales Bonner",
+      "domains": [
+        "walesbonner.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Willy Chavarria",
+      "canonical": "Willy Chavarria",
+      "domains": [
+        "willychavarria.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Y-3",
+      "canonical": "Y-3",
+      "domains": [
+        "adidas.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Yohji Yamamoto",
+      "canonical": "Yohji Yamamoto",
+      "domains": [
+        "theshopyohjiyamamoto.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "Zegna",
+      "canonical": "Zegna",
+      "domains": [
+        "zegna.com"
+      ],
+      "pages": []
+    },
+    {
+      "display": "adidas",
+      "canonical": "adidas",
+      "domains": [
+        "adidas.com"
+      ],
+      "pages": [
+        {
+          "name": "adidas Official",
+          "url": "https://www.adidas.com/us/shoes-new_arrivals"
+        }
+      ]
+    }
+  ]
+}
