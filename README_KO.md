@@ -27,4 +27,4 @@
 
 ## 자동 업데이트
 `.github/workflows/daily-update.yml`이 매일 08:00 KST에 실행됩니다.
-필수 브랜드는 `config/mandatory_brands.json`에 있으며 Sergio Tacchini는 제외되어 있습니다.
+필수 브랜드는 `config/mandatory_brands.json`에 있으며 Sergio Tacchini는 제외되어 있습니다...
