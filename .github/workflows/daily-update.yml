@@ -45,24 +45,20 @@ jobs:
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
         run: npm run daily
 
-      - name: Persist verified snapshot into internal dashboard
+      - name: Persist verified snapshot into public dashboard
         if: always()
         run: python scripts/patch_snapshot.py
-
-      - name: Build public dashboard without WGSN
-        if: always()
-        run: python scripts/build_public.py
 
       - name: Verify mandatory brand coverage
         if: always()
         run: python scripts/validate_coverage.py
 
-      - name: Commit refreshed dashboard
+      - name: Commit refreshed public dashboard
         if: always()
         run: |
           git config user.name "Shoes Dashboard Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add internal/dashboard.html public/index.html data/last_update.json logs/last-run.png
+          git add public/index.html data/last_update.json
           git diff --cached --quiet || git commit -m "daily shoes update $(date -u +%F)"
           git pull --rebase
           git push

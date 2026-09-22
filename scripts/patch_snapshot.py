@@ -2,7 +2,7 @@ from pathlib import Path
 import json, re, datetime
 
 ROOT=Path(__file__).resolve().parents[1]
-html_path=ROOT/'internal'/'dashboard.html'
+html_path=ROOT/'public'/'index.html'
 state_path=ROOT/'data'/'runtime_state.json'
 state=json.loads(state_path.read_text(encoding='utf-8'))
 text=html_path.read_text(encoding='utf-8')

@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 import fs from 'node:fs/promises';
 
-const base = process.env.DASHBOARD_URL || 'http://127.0.0.1:8000/internal/dashboard.html?noauto=1';
+const base = process.env.DASHBOARD_URL || 'http://127.0.0.1:8000/public/index.html?noauto=1';
 const key = process.env.JINA_API_KEY || '';
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage({ viewport: { width: 1600, height: 1000 } });

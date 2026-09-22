@@ -1,3 +1,6 @@
 node_modules/
-.DS_Store
 data/runtime_state.json
+logs/*.png
+!logs/.gitkeep
+.env
+.DS_Store
