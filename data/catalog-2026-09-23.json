@@ -86798,7 +86798,7 @@
     "category": "sports",
     "name": "Kobe A.D. Protro — Purple Stardust",
     "url": "https://www.nike.com/at/en/a/kobe-ad-protro-release-info",
-    "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1212,c_limit/50476efb-0f5d-4ab4-9f12-a80b3dbe5979/nike-kobe-a-d-protro-release-what-s-new-and-how-to-get-it.jpg",
+    "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_1579,c_limit/a0530b3a-8af4-4fff-976b-6b9038498a78/nike-kobe-a-d-protro-release-what-s-new-and-how-to-get-it.jpg",
     "evidence": "exact",
     "releaseLabel": "2026-10-01 발매 예정",
     "releaseDate": "2026-10-01",
@@ -86806,14 +86806,14 @@
     "colorway": "Purple Stardust",
     "colors": [
       {
-        "name": "Silver · image",
-        "hex": "#C6C6C6",
+        "name": "Black · image",
+        "hex": "#001212",
         "accuracy": "image-upper"
       }
     ],
     "primaryColor": {
-      "name": "Silver · image",
-      "hex": "#C6C6C6",
+      "name": "Black · image",
+      "hex": "#001212",
       "accuracy": "image-upper"
     },
     "source": "Nike Official",
@@ -86839,9 +86839,9 @@
     },
     "imageValidation": {
       "status": "verified",
-      "width": 1212,
-      "height": 808,
-      "checkedAt": "2026-09-23T05:38:47.464Z"
+      "width": 1824,
+      "height": 1216,
+      "checkedAt": "2026-09-23T05:57:23.190Z"
     }
   }
 ]

@@ -9,7 +9,8 @@ function valueSpan(src,marker){const start=src.indexOf(marker)+marker.length;ass
 const span=valueSpan(html,'const SEED_PRODUCTS=');
 const existing=JSON.parse(html.slice(...span));
 const ids=new Set(existing.map(p=>p.id));
-const merged=[...existing,...additions.filter(p=>!ids.has(p.id))];
+const byId=new Map(additions.map(p=>[p.id,p]));
+const merged=[...existing.map(p=>byId.get(p.id)||p),...additions.filter(p=>!ids.has(p.id))];
 assert.equal(new Set(merged.map(p=>p.id)).size,merged.length,'Duplicate product IDs');
 html=html.slice(0,span[0])+JSON.stringify(merged)+html.slice(span[1]);
 function replaceOnce(before,after){if(html.includes(after))return;assert(html.includes(before),'Missing expected code: '+before.slice(0,80));html=html.replace(before,after);}
@@ -22,6 +23,7 @@ replaceOnce("function banned(p){\n  const h=", "function banned(p){\n  if(isVeri
 replaceOnce("function tierLabel(p){if(p.evidence===", "function tierLabel(p){if(isVerifiedCatalogRecord(p)){if(p.status==='upcoming')return '공식 발매 예정';return p.sourceEvidence.kind==='newest'?'공식 최신순 · 09/23':'공식 NEW · 09/23'}if(p.evidence===");
 replaceOnce("$('#headerLastUpdate').textContent=`내장 스냅샷 · ${TREND_DATA?.updated||TREND_SNAPSHOT.updated}`", "$('#headerLastUpdate').textContent=`상품 확인 · 2026-09-23`");
 replaceOnce("const official=all.filter(p=>p.evidence==='official_latest'||p.evidence==='live_official'||p.evidence==='manual_official');", "const official=all.filter(p=>isVerifiedCatalogRecord(p)||p.evidence==='official_latest'||p.evidence==='live_official'||p.evidence==='manual_official');");
+replaceOnce("try{initResearchStrictCounts();render();scheduleDaily()}","try{initResearchStrictCounts();render();setProgress(false);$('#updateTitle').textContent='공식 상품 반영 · 2026-09-23';$('#updateNote').textContent='공식 근거가 확인된 44개 브랜드의 스니커즈 1,579개를 추가했습니다. 전체 브랜드의 확인 범위는 페이지 하단의 현황표에서 확인할 수 있습니다.';scheduleDaily()}");
 html=html.replace(/shoes-ss-(live-products|seen|trend|meta)-v19/g,'shoes-ss-$1-pub-20260923');
 // Static cards may finish loading before the bottom-of-page script initializes.
 html=html.replaceAll('onerror="handleProductImageError(this)"','onerror="window.handleProductImageError?.(this)"').replaceAll('onload="handleProductImageLoad(this)"','onload="window.handleProductImageLoad?.(this)"');
