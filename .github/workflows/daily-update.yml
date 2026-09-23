@@ -2,8 +2,18 @@ name: Daily Shoes Dashboard Update
 
 on:
   schedule:
-    - cron: "0 23 * * *"   # 08:00 KST
+    - cron: '0 23 * * *' # 08:00 KST (GitHub scheduling may be delayed)
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily-update.yml'
+      - 'scripts/run_daily_update.mjs'
+      - 'scripts/jina_client.mjs'
+      - 'scripts/patch_snapshot.py'
+      - 'scripts/validate_coverage.py'
+      - 'config/mandatory_brands.json'
+      - 'config/daily_sources.json'
 
 permissions:
   contents: write
@@ -20,43 +30,66 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: '22'
+          cache: npm
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-
-      - name: Install updater
+          python-version: '3.12'
+      - name: Install locked dependencies
         run: |
-          npm install
+          npm ci
           npx playwright install --with-deps chromium
-
-      - name: Start local dashboard server
-        run: |
-          python -m http.server 8000 --bind 127.0.0.1 > /tmp/shoes-http.log 2>&1 &
-          sleep 2
-
-      - name: Strict daily brand + keyword update
+      - name: Daily brand and keyword update
         env:
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
         run: npm run daily
-
-      - name: Persist verified snapshot into public dashboard
-        if: always()
-        run: python scripts/patch_snapshot.py
-
-      - name: Verify mandatory brand coverage
-        if: always()
+      - name: Validate coverage before changing the dashboard
         run: python scripts/validate_coverage.py
-
-      - name: Commit refreshed public dashboard
+      - name: Persist verified snapshot and retain previous records
+        run: python scripts/patch_snapshot.py
+      - name: Validate deployable dashboard
+        run: npm run build
+      - name: Commit refreshed dashboard for Cloudflare Git integration
+        run: |
+          git config user.name 'Shoes Dashboard Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add public/index.html public/data/last_update.json data/last_update.json
+          if git diff --cached --quiet; then
+            echo 'No catalog changes.'
+          else
+            git commit -m "daily shoes update $(date -u +%F)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Publish run summary
         if: always()
         run: |
-          git config user.name "Shoes Dashboard Bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add public/index.html data/last_update.json
-          git diff --cached --quiet || git commit -m "daily shoes update $(date -u +%F)"
-          git pull --rebase
-          git push
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          state_path = Path('data/runtime_state.json')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+              if not state_path.exists():
+                  out.write('Crawler did not produce a valid snapshot. Previous dashboard retained. See diagnostics artifact.\n')
+              else:
+                  state = json.loads(state_path.read_text())
+                  mandatory = set(state['mandatoryBrands'])
+                  rows = [r for r in state['coverage'] if r['brand'] in mandatory]
+                  failed = [r['brand'] for r in rows if not r['responses']]
+                  out.write(f"Mandatory brands attempted: {len(rows)}/{len(mandatory)}; responded: {len(rows)-len(failed)}; no response: {len(failed)}.\n\n")
+                  out.write(f"Products: {len(state['products'])}; new candidates: {state['meta'].get('lastNewItems', 0)}. Source failures are not interpreted as zero new products.\n\n")
+                  if failed: out.write('Unavailable sources: ' + ', '.join(failed) + '\n')
+          PY
+      - name: Save diagnostic artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-diagnostics-${{ github.run_id }}
+          path: |
+            logs/*.json
+            logs/*.jsonl
+            data/last_update.json
+          if-no-files-found: ignore
+          retention-days: 14
