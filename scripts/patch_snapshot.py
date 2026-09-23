@@ -67,7 +67,7 @@ def patch(root):
         if count != 1: raise ValueError(f'Missing cache key: {key}')
     # Initialize the deployed daily status from this run rather than the import date.
     defaults = {key: meta[key] for key in ['lastUpdateDay', 'lastFinished', 'lastNewItems'] if key in meta}
-    defaults.update(dailySnapshot=True, unavailableBrands=len(failed))
+    defaults.update(dailySnapshot=True, unavailableBrands=len(failed), lastNewItems=len(products)-len(existing))
     text = re.sub(r"META=safeParse\(APP_STORAGE.getItem\(META_KEY\),\{[^}]*\}\)",
                   lambda _: 'META=safeParse(APP_STORAGE.getItem(META_KEY),'+json.dumps(defaults, ensure_ascii=False)+')', text, count=1)
     summary = {

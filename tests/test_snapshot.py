@@ -30,7 +30,7 @@ class SnapshotTests(unittest.TestCase):
             html+="let META=safeParse(APP_STORAGE.getItem(META_KEY),{lastUpdateDay:'2026-09-23'});"
             (root/'public/index.html').write_text(html)
             (root/'config/mandatory_brands.json').write_text('{"brands":[{"canonical":"A"}]}')
-            state={'products':[dict(old,id='new',url='https://example.com/products/new')], 'crawler':{'scope':'full'},'coverage':[{'brand':'A','attempts':1,'responses':1}], 'meta':{'lastFinished':'2026-09-24 KST','lastUpdateDay':'2026-09-24'}}
+            state={'products':[dict(old,id='new',url='https://example.com/products/new')], 'crawler':{'scope':'full'},'coverage':[{'brand':'A','attempts':1,'responses':1}], 'meta':{'lastFinished':'2026-09-24 KST','lastUpdateDay':'2026-09-24','lastNewItems':9}}
             (root/'data/runtime_state.json').write_text(json.dumps(state))
             result=patch(root)
             updated=(root/'public/index.html').read_text()
@@ -38,6 +38,7 @@ class SnapshotTests(unittest.TestCase):
             self.assertIn('"id":"old"',updated)
             self.assertNotIn("pub-20260923'",updated)
             self.assertIn('2026-09-24',updated)
+            self.assertIn('"lastNewItems": 1',updated)
             self.assertTrue((root/'public/data/last_update.json').exists())
 
 if __name__ == '__main__': unittest.main()

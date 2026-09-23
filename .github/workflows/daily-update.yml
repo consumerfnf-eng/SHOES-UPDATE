@@ -4,16 +4,6 @@ on:
   schedule:
     - cron: '0 23 * * *' # 08:00 KST (GitHub scheduling may be delayed)
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/daily-update.yml'
-      - 'scripts/run_daily_update.mjs'
-      - 'scripts/jina_client.mjs'
-      - 'scripts/patch_snapshot.py'
-      - 'scripts/validate_coverage.py'
-      - 'config/mandatory_brands.json'
-      - 'config/daily_sources.json'
 
 permissions:
   contents: write
