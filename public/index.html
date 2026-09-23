@@ -489,7 +489,7 @@ async function fetchText(url,timeout=35000){if(window.__MLB_FETCH_TEXT__)return 
 function cleanTitle(s,brand){let x=String(s||'').replace(/\s+/g,' ').replace(/[₩$€£]\s?[0-9,.]+(?:\s?(?:USD|EUR|GBP|KRW))?/gi,'').replace(/\b\d+%\s*OFF\b/gi,'').trim();x=x.replace(new RegExp(`^${brand.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\s*[-:|]?\s*`,'i'),'');return x.trim()}
 function titleFromUrl(url){try{const u=new URL(url);let p=u.pathname.split('/').filter(Boolean);let s=p[p.length-1]||'Shoes';s=s.replace(/-p-[A-Z0-9]+$/i,'').replace(/-p\d{7,}$/i,'').replace(/\.(html|aspx)$/i,'').replace(/^[A-Z0-9_]{6,}$/,'Shoes');return decodeURIComponent(s).split('-').map(w=>w?w[0].toUpperCase()+w.slice(1):w).join(' ')}catch{return 'Shoes'}}
 function officialHostMatches(brand,url){try{const host=new URL(url).hostname.replace(/^www\./,'').toLowerCase(),domains=(OFFICIAL_SOURCES[brand]?.domains||[]);return domains.some(d=>host===d||host.endsWith('.'+d))}catch{return false}}
-function looksProductUrl(url,brand){if(!officialHostMatches(brand,url))return false;try{const p=new URL(url).pathname;return /\/(?:p|pr|pd|product|products|t|fashion\/products)\//i.test(p)||/\/[A-Z0-9_-]{6,}(?:\.html)?$/i.test(p)||/\.(?:html|aspx)$/i.test(p)&&!/(category|collection|new-arrivals|new-in|shoes-for|\/shoes\/?$)/i.test(p)}catch{return false}}
+function looksProductUrl(url,brand){if(!officialHostMatches(brand,url))return false;try{const p=new URL(url).pathname;if(/\/(?:collections?|categories|category|c|catalog|search)(?:\/|$)|new-arrivals|new-in|shop-all/i.test(p)&&!p.includes('/products/'))return false;return /\/(?:p|pr|pd|product|products|t|fashion\/products)\//i.test(p)||/\/[^/]*[0-9][^/]*(?:\.html|\.aspx)?$/i.test(p)&&/\/[A-Z0-9_-]{6,}(?:\.html|\.aspx)?$/i.test(p)||/\.(?:html|aspx)$/i.test(p)&&!/(category|collection|new-arrivals|new-in|shoes-for|\/(?:shoes|sneakers)(?:\.html|\.aspx)?$)/i.test(p)}catch{return false}}
 function looksShoe(text){return /sneaker|trainer|runner|running|trail|hiking|shoe|sandal|slide|mule|clog|rain[ -]?boot|wellington|mary jane sneaker|ballet sneaker|platform sneaker|water moc/i.test(text)&&!strictBannedText(text,text,'')}
 function contextBanned(text){return strictBannedText(text,text,'')}
 function styleFrom(text,url){const m=text.match(/(?:style|item number|sku|article|product code)\s*[:#]?\s*([A-Z0-9][A-Z0-9._-]{5,})/i);if(m)return m[1].toUpperCase();try{const p=new URL(url).pathname.match(/(?:\/|[-_])([A-Z0-9][A-Z0-9._-]{5,})(?:\.html)?$/i);return p?p[1].toUpperCase():''}catch{return ''}}
@@ -506,7 +506,7 @@ function parseMarkdown(md,brand,sourceName){
     const raw=m[1],url=m[2].replace(/&amp;/g,'&'),context=md.slice(Math.max(0,m.index-1800),Math.min(md.length,m.index+2200));
     let title=cleanTitle(raw,brand);
     if(!officialHostMatches(brand,url)||!looksProductUrl(url,brand)||!isProductDetailUrl(url)||!title||!isShoeRecord({name:title,productType:''}))continue;
-    if(/^(image|available sizes|shop now|view product|see details|add to wishlist|new arrivals?|shoes?|footwear)$/i.test(title))continue;
+    if(/^(image|available sizes|shop now|view product|see details|add to wishlist|new arrivals?|shoes?|sneakers?|trainers?|slippers?\s*[&/]\s*slides?|footwear)$/i.test(title))continue;
     const ownImg=(raw.match(/!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)/)||[])[1]||imageNear(md,m.index);
     if(!ownImg||!isDirectProductImage(ownImg))continue;
     const colorName=primaryName(`${title}\n${context}\n${url}`),c=inferColor(`${colorName} ${title} ${url}`);

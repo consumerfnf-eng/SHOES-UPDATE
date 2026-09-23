@@ -7,7 +7,8 @@ import { createJinaClient } from '../scripts/jina_client.mjs';
 import { runDaily, validateState } from '../scripts/run_daily_update.mjs';
 
 const text = 'Official new arrivals. There are no matching new sneakers in this test fixture. '.repeat(3);
-const productFixture = `# Nike New Arrivals 2026\n![Black running sneaker](https://static.nike.com/a/images/t_default/fixture-running-shoe.jpg)\n[Runner Sneaker Black](https://www.nike.com/t/runner-sneaker-fixture901)\nColor: Black\nStyle: QA901-001\nOfficial new sneaker arrival.`;
+const categoryFixture = `![Black footwear](https://static.nike.com/a/images/t_default/fixture-menu-shoe.jpg)\n[Sneakers](https://www.nike.com/collections/sneakers)\n[Slippers & Slides](https://www.nike.com/collections/slides)\n[Mens running sneakers](https://www.nike.com/category/running1234)\nColor: Black\nStyle: NAV901-999\n`;
+const productFixture = `${categoryFixture}${' '.repeat(5000)}\n# Nike New Arrivals 2026\n![Black running sneaker](https://static.nike.com/a/images/t_default/fixture-running-shoe.jpg)\n[Runner Sneaker Black](https://www.nike.com/t/runner-sneaker-fixture901)\nColor: Black\nStyle: QA901-001\nOfficial new sneaker arrival.`;
 test('Invalid Jina key falls back to anonymous Reader without leaking credentials', async () => {
   const calls = [], logs = [];
   const client = createJinaClient({ key: 'test-secret', intervalMs: 0, sleep: async()=>{}, log: line=>logs.push(line), fetchImpl: async (url, options) => {
@@ -48,6 +49,7 @@ test('Large dashboard initializes and exports a full 116-brand run without local
     assert.match(extracted.id,/^live-[0-9a-f]{16}$/);
     assert.match(extracted.firstSeen,/^20\d\d-/);
     assert.equal(state.coverage.find(row=>row.brand==='Nike').found,1);
+    assert.equal(state.liveProducts.length,1, 'Category and navigation links must never become products');
     assert(!state.coverage.some(row=>row.errors.some(error=>/not defined/.test(error))));
   } finally { await fs.rm(dir,{recursive:true,force:true}); }
 });
