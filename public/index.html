@@ -494,6 +494,9 @@ function looksShoe(text){return /sneaker|trainer|runner|running|trail|hiking|sho
 function contextBanned(text){return strictBannedText(text,text,'')}
 function styleFrom(text,url){const m=text.match(/(?:style|item number|sku|article|product code)\s*[:#]?\s*([A-Z0-9][A-Z0-9._-]{5,})/i);if(m)return m[1].toUpperCase();try{const p=new URL(url).pathname.match(/(?:\/|[-_])([A-Z0-9][A-Z0-9._-]{5,})(?:\.html)?$/i);return p?p[1].toUpperCase():''}catch{return ''}}
 function imageNear(md,idx){const start=Math.max(0,idx-1800),s=md.slice(start,Math.min(md.length,idx+1800)),arr=[...s.matchAll(/!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)/g)].map(m=>({u:m[1],d:Math.abs(start+(m.index||0)-idx)})).filter(x=>isDirectProductImage(x.u)&&!/(logo|icon|googleads|doubleclick|klarna|bing\.com|fallback\.svg|placeholder\.svg)/i.test(x.u)).sort((a,b)=>a.d-b.d);return arr[0]?.u||''}
+function hash(value){let h=0xcbf29ce484222325n;for(const character of String(value))h=BigInt.asUintN(64,(h^BigInt(character.codePointAt(0)))*0x100000001b3n);return h.toString(16).padStart(16,'0')}
+function firstSeenFor(url){const key=normalizeUrl(url);if(!SEEN[key])SEEN[key]=SEED_PRODUCTS.find(p=>normalizeUrl(p.url)===key)?.firstSeen||new Date().toISOString();return SEEN[key]}
+function rethrowCodeError(error){if(error instanceof ReferenceError||error instanceof TypeError||error instanceof SyntaxError)throw error}
 function screenshotImage(url){return `https://image.thum.io/get/width/900/crop/900/noanimate/${url}`}
 function primaryName(text){const m=text.match(/(?:Supplier color|Designer color name|Color|Colour)\s*:\s*([^\n|]+)/i);if(m)return m[1].trim().replace(/\s{2,}.*/, '');return inferColor(text).name}
 function dedupeItems(items){const m=new Map();items.forEach(x=>{const u=normalizeUrl(x.url),s=String(x.style||'').toLowerCase(),k=s?`${x.brand}|${s}`:u||`${x.brand}|${x.name}|${x.colorway||''}`;if(!m.has(k))m.set(k,x)});return [...m.values()]}
@@ -521,13 +524,13 @@ async function updateOneBrand(brand){
   for(const src of pages){
     if(stopRequested)break;attempts++;
     try{const md=await fetchText(readerUrl(src.url));responses++;found=dedupeItems([...found,...parseMarkdown(md,brand,src.name)]);if(found.length>=TARGET_PER_BRAND)break}
-    catch(e){errors.push(`${src.name||src.url}: ${e?.message||e}`)}
+    catch(e){rethrowCodeError(e);errors.push(`${src.name||src.url}: ${e?.message||e}`)}
     if(!window.__MLB_SERVER_MODE__)await sleep(APP_STORAGE.getItem(KEY_KEY)?650:2600)
   }
   if(found.length<TARGET_PER_BRAND&&!stopRequested){
     attempts++;
     try{const domains=(cfg.domains||[]);const site=domains.length?domains.map(d=>`site:${d}`).join(' OR '):`"${brand}" official`;const q=`${site} "${brand}" (2026 OR current OR upcoming OR new arrivals OR latest OR FW26 OR Fall 2026) (sneaker OR trainer OR running OR trail OR flat sandal OR sport sandal OR slide OR functional clog OR platform sneaker) -boot -bootie -loafer -heel -fur -fleece -shearling -flannel -padded -puffer -winter -ski`;const md=await fetchText(searchUrl(q),45000);responses++;found=dedupeItems([...found,...parseMarkdown(md,brand,`${brand} Official Search`)])}
-    catch(e){errors.push(`search: ${e?.message||e}`)}
+    catch(e){rethrowCodeError(e);errors.push(`search: ${e?.message||e}`)}
   }
   const old=LIVE_PRODUCTS.filter(p=>p.brand===brand&&cleanRecord(p)),merged=dedupeItems([...found,...old]).filter(cleanRecord).sort((a,b)=>dateScore(b)-dateScore(a)).slice(0,MAX_LIVE_PER_BRAND);
   LIVE_PRODUCTS=[...LIVE_PRODUCTS.filter(p=>p.brand!==brand),...merged];APP_STORAGE.setItem(LIVE_KEY,JSON.stringify(LIVE_PRODUCTS));APP_STORAGE.setItem(SEEN_KEY,JSON.stringify(SEEN));mergeProducts();
@@ -562,7 +565,7 @@ window.__MLB_RUN_SERVER_DAILY__=async(options={})=>{
       let best=null;const tries=MANDATORY_DAILY_BRANDS.includes(brand)?3:1;
       for(let n=1;n<=tries;n++){
         try{const r=await updateOneBrand(brand);best={...r,try:n,status:r.responses>0?'CHECKED':'NO_RESPONSE'};if(r.responses>0)break}
-        catch(e){best={brand,found:0,total:PRODUCTS.filter(p=>p.brand===brand).length,attempts:0,responses:0,errors:[String(e?.message||e)],checkedAt:kstStamp(),try:n,status:'ERROR'}}
+        catch(e){rethrowCodeError(e);best={brand,found:0,total:PRODUCTS.filter(p=>p.brand===brand).length,attempts:0,responses:0,errors:[String(e?.message||e)],checkedAt:kstStamp(),try:n,status:'ERROR'}}
         if(n<tries)await sleep(1800*n);
       }
       const row=best||{brand,status:'ERROR',responses:0,attempts:0,errors:['unknown'],checkedAt:kstStamp()};

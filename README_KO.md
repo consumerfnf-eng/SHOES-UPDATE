@@ -40,6 +40,7 @@
 - Actions run `35804430727`: package-lock 부재로 setup-node npm cache 실패. 잠금 파일을 추가하고 `npm ci`로 고정했습니다.
 - Actions run `35810427940`: localStorage quota 초과로 초기화 중단 → 서버 실행 함수 대기 timeout. 용량 초과 시 메모리 저장, 수집 전용 실행 경로 및 대량 데이터 회귀 테스트로 보완했습니다.
 - 위 실패 뒤 `if: always()`로 없는 runtime_state를 저장·검증하려던 연쇄 실패를 제거했습니다. 실패 시에는 진단 단계만 실행됩니다.
+- 실제 상품 추출에서 누락된 `hash`와 `firstSeenFor` 함수도 복구했습니다. 출처 응답만 받는 테스트에 더해 상품명·SKU·이미지를 실제 레코드로 변환하는 회귀 테스트를 추가했습니다. ReferenceError/TypeError/SyntaxError는 출처 차단으로 숨기지 않고 실행을 중단시킵니다.
 - Cloudflare Build watch paths Include가 빈 값이어서 최근 push들이 skipped였습니다. `*`로 복구했습니다.
 
 ## 개발 확인

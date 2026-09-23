@@ -28,7 +28,7 @@ export function createJinaClient({ key = '', fetchImpl = fetch, intervalMs, time
         throw Error(error.name === 'TimeoutError' || error.name === 'AbortError' ? 'Source request timed out' : 'Source network request failed');
       }
       if ([401, 402, 403].includes(response.status) && authenticated) {
-        authenticated = false; stats.authFallbacks++;
+        authenticated = false; stats.authFallbacks++; stats.authFallbackStatus = response.status;
         log('Jina authentication/quota unavailable; continuing with anonymous Reader.');
         await response.body?.cancel();
         if (target.hostname === 's.jina.ai') throw Error('Jina Search authentication unavailable');
