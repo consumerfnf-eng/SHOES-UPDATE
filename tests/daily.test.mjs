@@ -8,7 +8,15 @@ import { runDaily, validateState } from '../scripts/run_daily_update.mjs';
 
 const text = 'Official new arrivals. There are no matching new sneakers in this test fixture. '.repeat(3);
 const categoryFixture = `![Black footwear](https://static.nike.com/a/images/t_default/fixture-menu-shoe.jpg)\n[Sneakers](https://www.nike.com/collections/sneakers)\n[Slippers & Slides](https://www.nike.com/collections/slides)\n[Mens running sneakers](https://www.nike.com/category/running1234)\nColor: Black\nStyle: NAV901-999\n`;
-const productFixture = `${categoryFixture}${' '.repeat(5000)}\n# Nike New Arrivals 2026\n![Black running sneaker](https://static.nike.com/a/images/t_default/fixture-running-shoe.jpg)\n[Runner Sneaker Black](https://www.nike.com/t/runner-sneaker-fixture901)\nColor: Black\nStyle: QA901-001\nOfficial new sneaker arrival.`;
+const rejectedFixtures = [
+  ['New Mens Running Shoes','https://www.nike.com/w/new-mens-running-shoes-37v7jz3n82y'],
+  ['Runner Sneaker Black','https://images.nike.com/is/image/nike/QA901_BLACK_2'],
+  ['Runner Sneaker Black','https://www.nike.com/cdn/shop/products/QA901_2.jpg'],
+  ['Image 198: Runner Sneaker Black','https://www.nike.com/t/image-description901'],
+  ['Sandals','https://www.nike.com/shop/us/en/men/shoes-1/sandals-1'],
+  ['Black Leather High Heel Sandal','https://www.nike.com/products/sandal-fixture901'],
+].map(([title,url],i)=>`![Black footwear](https://static.nike.com/a/images/t_default/rejected-${i}.jpg)\n[${title}](${url})\nColor: Black\nStyle: BAD901-${i}99\n${' '.repeat(5000)}`).join('\n');
+const productFixture = `${categoryFixture}${' '.repeat(5000)}${rejectedFixtures}\n# Nike New Arrivals 2026\n![Black running sneaker](https://static.nike.com/a/images/t_default/fixture-running-shoe.jpg)\n[Runner Sneaker Black](https://www.nike.com/t/runner-sneaker-fixture901)\nColor: Black\nStyle: QA901-001\nOfficial new sneaker arrival.${' '.repeat(5000)}\n![White training shoes](https://static.nike.com/a/images/t_default/fixture-training-white.jpg)\n[Training Shoes White](https://www.nike.com/t/training-shoes-fixture902)\nColor: White\nStyle: QA902-001\nOfficial new sneaker arrival.`;
 test('Invalid Jina key falls back to anonymous Reader without leaking credentials', async () => {
   const calls = [], logs = [];
   const client = createJinaClient({ key: 'test-secret', intervalMs: 0, sleep: async()=>{}, log: line=>logs.push(line), fetchImpl: async (url, options) => {
@@ -43,13 +51,14 @@ test('Large dashboard initializes and exports a full 116-brand run without local
     assert.equal(state.crawler.responded, 116);
     assert(state.products.length >= 2000);
     assert.equal(state.products.filter(product=>product.catalogVerification).length,1571);
-    assert.equal(state.meta.lastNewItems,1);
+    assert.equal(state.meta.lastNewItems,2);
     const extracted = state.products.find(product=>product.style==='QA901-001');
     assert(extracted, 'The crawler must actually extract a product, not just receive pages');
     assert.match(extracted.id,/^live-[0-9a-f]{16}$/);
     assert.match(extracted.firstSeen,/^20\d\d-/);
-    assert.equal(state.coverage.find(row=>row.brand==='Nike').found,1);
-    assert.equal(state.liveProducts.length,1, 'Category and navigation links must never become products');
+    assert(state.products.some(product=>product.style==='QA902-001'), 'Named sports shoes must still be collected');
+    assert.equal(state.coverage.find(row=>row.brand==='Nike').found,2);
+    assert.equal(state.liveProducts.length,2, 'Images, category links and non-sneaker footwear must never become products');
     assert(!state.coverage.some(row=>row.errors.some(error=>/not defined/.test(error))));
   } finally { await fs.rm(dir,{recursive:true,force:true}); }
 });

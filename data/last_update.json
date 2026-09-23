@@ -1,6 +1,6 @@
 {
   "updated_at": "2026-09-23 16:08 KST",
-  "product_count": 2262,
+  "product_count": 2180,
   "mandatory_brand_count": 116,
   "mandatory_failed": [
     "ASICS",
@@ -18,7 +18,7 @@
     "Undercover"
   ],
   "mandatory_missing": [],
-  "new_items": 176,
+  "new_items": 94,
   "source_checks_complete": false,
   "catalog_exhaustive": false,
   "coverage": [
@@ -2073,5 +2073,6 @@
     "attempted": 116,
     "responded": 103,
     "scope": "full"
-  }
+  },
+  "quality_rejected_items": 82
 }
