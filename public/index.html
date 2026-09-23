@@ -468,24 +468,24 @@ function renderSummary(items){
   $('#headerProductCount').textContent=`QA 상품 ${all.length}`;
   const official=all.filter(p=>isVerifiedCatalogRecord(p)||p.evidence==='official_latest'||p.evidence==='live_official'||p.evidence==='manual_official');
   const officialBrands=new Set(official.map(p=>p.brand));const om=$('#officialSnapshotCount');if(om)om.textContent=`공식 ${official.length}개 · ${officialBrands.size}브랜드`;
-  $('#headerLastUpdate').textContent=`상품 확인 · 2026-09-23`
+  $('#headerLastUpdate').textContent=`상품 확인 · ${META.lastFinished||'2026-09-23'}`
 }
 function bindCards(){$$('.chip').forEach(b=>b.onclick=async()=>{try{await navigator.clipboard.writeText(b.dataset.hex);toast(`${b.dataset.hex} 복사됨`)}catch{toast('브라우저에서 복사를 허용하지 않았습니다')}});$$('.copy').forEach(b=>b.onclick=async()=>{try{await navigator.clipboard.writeText(b.dataset.url);toast('제품 링크 복사됨')}catch{toast('브라우저에서 복사를 허용하지 않았습니다')}})}
-function render(){mergeProducts();PRODUCTS.forEach(p=>{if(AUTO_COLOR_CACHE[p.id])p.colors=[AUTO_COLOR_CACHE[p.id]]});renderBrandMenu();const items=sortItems(baseFiltered());renderSummary(items);$('#grid').innerHTML=items.map(card).join('');$('#grid').style.display=items.length?'grid':'none';$('#empty').style.display=items.length?'none':'block';bindCards();renderTrends();scheduleAutoColors(items)}
+function render(){mergeProducts();if(window.__MLB_SERVER_MODE__)return;PRODUCTS.forEach(p=>{if(AUTO_COLOR_CACHE[p.id])p.colors=[AUTO_COLOR_CACHE[p.id]]});renderBrandMenu();const items=sortItems(baseFiltered());renderSummary(items);$('#grid').innerHTML=items.map(card).join('');$('#grid').style.display=items.length?'grid':'none';$('#empty').style.display=items.length?'none':'block';bindCards();renderTrends();scheduleAutoColors(items)}
 function setPressed(container,key,value){$$(`${container} button`).forEach(b=>b.setAttribute('aria-pressed',String(b.dataset[key]===value)))}
 
 function defaultTrendData(){return TREND_SNAPSHOT.items}
-function renderTrends(){const data=(TREND_DATA?.items?.length?TREND_DATA.items:defaultTrendData()).slice(0,20);$('#trendGrid').innerHTML=data.map(t=>{const d=(t.previousRank||t.rank)-t.rank,cls=d>0?'up':d<0?'down':'',symbol=d>0?`▲${d}`:d<0?`▼${Math.abs(d)}`:'—';return `<button class="trend-item" data-trend="${esc(t.tag)}"><span class="trend-rank">${t.rank}</span><span class="trend-name"><span class="trend-tag">${esc(t.tag)}</span><span class="trend-label">${esc(t.label)}</span></span><span class="trend-score"><span class="score">${Math.round(t.score)}</span><span class="change ${cls}">${symbol}</span></span></button>`}).join('');$('#trendUpdated').textContent=`상대지수 · ${TREND_DATA?.updated||TREND_SNAPSHOT.updated} 업데이트`;$('#trendSources').innerHTML=TREND_SOURCES.slice(0,6).map(s=>`<a class="source-link" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>`).join('');$$('.trend-item').forEach(b=>b.onclick=()=>{const item=data.find(t=>t.tag===b.dataset.trend);if(!item)return;state.trendAliases=item.aliases;state.researchTrend=null;state.query='';$('#search').value=item.tag;render();toast(`${item.tag} 관련 상품 필터 적용 · 검색창을 지우면 해제`)})}
+function renderTrends(){if(window.__MLB_SERVER_MODE__)return;const data=(TREND_DATA?.items?.length?TREND_DATA.items:defaultTrendData()).slice(0,20);$('#trendGrid').innerHTML=data.map(t=>{const d=(t.previousRank||t.rank)-t.rank,cls=d>0?'up':d<0?'down':'',symbol=d>0?`▲${d}`:d<0?`▼${Math.abs(d)}`:'—';return `<button class="trend-item" data-trend="${esc(t.tag)}"><span class="trend-rank">${t.rank}</span><span class="trend-name"><span class="trend-tag">${esc(t.tag)}</span><span class="trend-label">${esc(t.label)}</span></span><span class="trend-score"><span class="score">${Math.round(t.score)}</span><span class="change ${cls}">${symbol}</span></span></button>`}).join('');$('#trendUpdated').textContent=`상대지수 · ${TREND_DATA?.updated||TREND_SNAPSHOT.updated} 업데이트`;$('#trendSources').innerHTML=TREND_SOURCES.slice(0,6).map(s=>`<a class="source-link" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a>`).join('');$$('.trend-item').forEach(b=>b.onclick=()=>{const item=data.find(t=>t.tag===b.dataset.trend);if(!item)return;state.trendAliases=item.aliases;state.researchTrend=null;state.query='';$('#search').value=item.tag;render();toast(`${item.tag} 관련 상품 필터 적용 · 검색창을 지우면 해제`)})}
 
 function slugify(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
 const SSENSE_SLUG={'adidas':'adidas-originals','Alexander McQueen':'mcqueen','Maison Mihara Yasuhiro':'maison-mihara-yasuhiro','Comme des Garçons Homme Plus':'comme-des-garcons-homme-plus'};
 function providerSlug(brand,provider){if(provider==='ssense'&&SSENSE_SLUG[brand])return SSENSE_SLUG[brand];return slugify(brand)}
-function sourcePages(brand){const cfg=OFFICIAL_SOURCES[brand]||{pages:[]};return cfg.pages||[]}
+function sourcePages(brand){const cfg=OFFICIAL_SOURCES[brand]||{pages:[]};return window.__MLB_DAILY_SOURCES__?.[brand]||cfg.pages||[]}
 function readerUrl(url){return `https://r.jina.ai/${url}`}
 function searchUrl(query){return `https://s.jina.ai/${encodeURIComponent(query)}`}
 function requestHeaders(){const h={'Accept':'text/plain'};const key=$('#jinaKey')?.value.trim()||APP_STORAGE.getItem(KEY_KEY)||'';if(key)h['Authorization']=`Bearer ${key}`;return h}
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-async function fetchText(url,timeout=35000){const c=new AbortController(),timer=setTimeout(()=>c.abort(),timeout);try{const r=await fetch(url,{headers:requestHeaders(),cache:'no-store',signal:c.signal});if(!r.ok)throw new Error(`HTTP ${r.status}`);const t=await r.text();if(!t||t.length<80)throw new Error('empty response');return t}finally{clearTimeout(timer)}}
+async function fetchText(url,timeout=35000){if(window.__MLB_FETCH_TEXT__)return window.__MLB_FETCH_TEXT__(url,timeout);const c=new AbortController(),timer=setTimeout(()=>c.abort(),timeout);try{const r=await fetch(url,{headers:requestHeaders(),cache:'no-store',signal:c.signal});if(!r.ok)throw new Error(`HTTP ${r.status}`);const t=await r.text();if(!t||t.length<80)throw new Error('empty response');return t}finally{clearTimeout(timer)}}
 function cleanTitle(s,brand){let x=String(s||'').replace(/\s+/g,' ').replace(/[₩$€£]\s?[0-9,.]+(?:\s?(?:USD|EUR|GBP|KRW))?/gi,'').replace(/\b\d+%\s*OFF\b/gi,'').trim();x=x.replace(new RegExp(`^${brand.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\s*[-:|]?\s*`,'i'),'');return x.trim()}
 function titleFromUrl(url){try{const u=new URL(url);let p=u.pathname.split('/').filter(Boolean);let s=p[p.length-1]||'Shoes';s=s.replace(/-p-[A-Z0-9]+$/i,'').replace(/-p\d{7,}$/i,'').replace(/\.(html|aspx)$/i,'').replace(/^[A-Z0-9_]{6,}$/,'Shoes');return decodeURIComponent(s).split('-').map(w=>w?w[0].toUpperCase()+w.slice(1):w).join(' ')}catch{return 'Shoes'}}
 function officialHostMatches(brand,url){try{const host=new URL(url).hostname.replace(/^www\./,'').toLowerCase(),domains=(OFFICIAL_SOURCES[brand]?.domains||[]);return domains.some(d=>host===d||host.endsWith('.'+d))}catch{return false}}
@@ -522,7 +522,7 @@ async function updateOneBrand(brand){
     if(stopRequested)break;attempts++;
     try{const md=await fetchText(readerUrl(src.url));responses++;found=dedupeItems([...found,...parseMarkdown(md,brand,src.name)]);if(found.length>=TARGET_PER_BRAND)break}
     catch(e){errors.push(`${src.name||src.url}: ${e?.message||e}`)}
-    await sleep(APP_STORAGE.getItem(KEY_KEY)?650:2600)
+    if(!window.__MLB_SERVER_MODE__)await sleep(APP_STORAGE.getItem(KEY_KEY)?650:2600)
   }
   if(found.length<TARGET_PER_BRAND&&!stopRequested){
     attempts++;
@@ -539,7 +539,7 @@ async function refreshTrendRanking(){const previous=(TREND_DATA?.items||defaultT
  'site:musinsa.com shoes ranking sneakers sandals clogs 2026',
  'site:instagram.com 2026 shoe trends mesh animal print sandals sneakers',
  'fashion magazine latest shoe trends 2026 sneakers flat sandals platform shoes'
- ];const docs=[];for(const q of queryPages){if(stopRequested)break;try{docs.push((await fetchText(searchUrl(q),45000)).toLowerCase())}catch(e){}await sleep(APP_STORAGE.getItem(KEY_KEY)?500:2200)}const catalog=PRODUCTS.map(p=>`${p.name} ${p.colorway||''} ${p.note||''}`).join(' ').toLowerCase();const scored=TREND_SEED.map(t=>{let mentions=0,sourceHits=0;docs.forEach(d=>{let h=0;t.aliases.forEach(a=>{const n=d.split(a.toLowerCase()).length-1;h+=Math.min(n,12)});if(h){sourceHits++;mentions+=h}});let cat=0;t.aliases.forEach(a=>cat+=Math.min(catalog.split(a.toLowerCase()).length-1,20));return {...t,score:t.base*.42+mentions*3.4+sourceHits*8+cat*1.6}}).sort((a,b)=>b.score-a.score).map((t,i)=>({...t,rank:i+1,previousRank:previous[t.tag]||i+1,updated:kstStamp()}));TREND_DATA={updated:kstStamp(),items:scored};APP_STORAGE.setItem(TREND_KEY,JSON.stringify(TREND_DATA));renderTrends()}
+ ];const docs=[];for(const q of queryPages){if(stopRequested)break;try{docs.push((await fetchText(searchUrl(q),45000)).toLowerCase())}catch(e){}if(!window.__MLB_SERVER_MODE__)await sleep(APP_STORAGE.getItem(KEY_KEY)?500:2200)}if(!docs.length)return;const catalog=PRODUCTS.map(p=>`${p.name} ${p.colorway||''} ${p.note||''}`).join(' ').toLowerCase();const scored=TREND_SEED.map(t=>{let mentions=0,sourceHits=0;docs.forEach(d=>{let h=0;t.aliases.forEach(a=>{const n=d.split(a.toLowerCase()).length-1;h+=Math.min(n,12)});if(h){sourceHits++;mentions+=h}});let cat=0;t.aliases.forEach(a=>cat+=Math.min(catalog.split(a.toLowerCase()).length-1,20));return {...t,score:t.base*.42+mentions*3.4+sourceHits*8+cat*1.6}}).sort((a,b)=>b.score-a.score).map((t,i)=>({...t,rank:i+1,previousRank:previous[t.tag]||i+1,updated:kstStamp()}));TREND_DATA={updated:kstStamp(),items:scored};APP_STORAGE.setItem(TREND_KEY,JSON.stringify(TREND_DATA));renderTrends()}
 async function runUpdate(brandsToRun,auto=false){if(updating)return;updating=true;stopRequested=false;const priority=[...brandsToRun].sort((a,b)=>{const ca=PRODUCTS.filter(p=>p.brand===a&&!banned(p)).length,cb=PRODUCTS.filter(p=>p.brand===b&&!banned(p)).length;return ca-cb});setProgress(true,0,priority.length,'업데이트 시작');$('#updateTitle').textContent=auto?'매일 아침 자동 업데이트 진행 중':'공식 홈페이지 최신 상품 업데이트 진행 중';let success=0,newBefore=new Set(PRODUCTS.map(p=>normalizeUrl(p.url)));for(let i=0;i<priority.length;i++){if(stopRequested)break;const brand=priority[i];setProgress(true,i,priority.length,`${i+1}/${priority.length} · ${brand} 최신 상품 점검 중`);try{const r=await updateOneBrand(brand);if(r.total)success++;}catch(e){}render();await sleep(80)}if(!stopRequested){setProgress(true,priority.length,priority.length,'트렌드 키워드 순위 업데이트 중');await refreshTrendRanking()}mergeProducts();const newAfter=PRODUCTS.filter(p=>!newBefore.has(normalizeUrl(p.url))).length;META.lastFinished=kstStamp();META.lastUpdateDay=effectiveUpdateDay();META.lastSuccessBrands=success;META.lastNewItems=newAfter;APP_STORAGE.setItem(META_KEY,JSON.stringify(META));setProgress(false);$('#updateTitle').textContent=stopRequested?'업데이트가 중지되었습니다':`업데이트 완료 · 신규 ${newAfter}개`;$('#updateNote').textContent=`${success}/${priority.length}개 브랜드 응답 · 신규 ${newAfter}개. 2026 허용 카테고리, 2025·겨울 전용 제품 차단, 정확 PDP/상품 이미지, SKU·제품 ID, 컬러명·6자리 몸통 HEX 검사를 모두 통과한 상품만 저장했습니다.`;updating=false;render()}
 function scheduleDaily(){const q=new URLSearchParams(location.search);if(q.get('noauto')==='1')return;if(location.protocol==='file:'&&q.get('autoupdate')!=='1'){const t=$('#updateTitle'),n=$('#updateNote');if(t)t.textContent='로컬 안전 모드 · 내장 스냅샷 표시';if(n)n.textContent='파일을 더블클릭해 열면 자동 웹 크롤링은 시작하지 않고 내장 데이터부터 표시합니다. 필요하면 상단 업데이트 버튼으로 수동 실행하세요.';return;}const run=()=>{if(!updating&&META.lastUpdateDay!==effectiveUpdateDay())runUpdate(BRANDS,true)};if(q.get('autoupdate')==='1'||(kstParts().h>=8&&META.lastUpdateDay!==effectiveUpdateDay()))setTimeout(run,1300);setTimeout(()=>{run();setInterval(run,86400000)},Math.max(1000,nextMorningMs()))}
 
@@ -550,22 +550,27 @@ const MANDATORY_DAILY_BRANDS=["Acne Studios","Alaïa","Alexander McQueen","Alo",
 const DAILY_COVERAGE_KEY='shoes-daily-brand-coverage-v1';
 window.__MLB_MANDATORY_DAILY_BRANDS__=MANDATORY_DAILY_BRANDS;
 window.__MLB_EXPORT_STATE__=()=>({products:PRODUCTS,liveProducts:LIVE_PRODUCTS,trendData:TREND_DATA,meta:META,seen:SEEN,coverage:safeParse(APP_STORAGE.getItem(DAILY_COVERAGE_KEY),[]),brands:BRANDS,mandatoryBrands:MANDATORY_DAILY_BRANDS});
-window.__MLB_RUN_SERVER_DAILY__=async()=>{
+window.__MLB_RUN_SERVER_DAILY__=async(options={})=>{
   if(updating)throw new Error('update already running');
   updating=true;stopRequested=false;
   const before=new Set(PRODUCTS.map(p=>normalizeUrl(p.url))),coverage=[];
   try{
-    const ordered=[...BRANDS].sort((a,b)=>{const ma=MANDATORY_DAILY_BRANDS.includes(a)?0:1,mb=MANDATORY_DAILY_BRANDS.includes(b)?0:1;if(ma!==mb)return ma-mb;const ca=PRODUCTS.filter(p=>p.brand===a&&!banned(p)).length,cb=PRODUCTS.filter(p=>p.brand===b&&!banned(p)).length;return ca-cb});
-    for(const brand of ordered){
+    const ordered=[...(options.brands||BRANDS)].sort((a,b)=>{const ma=MANDATORY_DAILY_BRANDS.includes(a)?0:1,mb=MANDATORY_DAILY_BRANDS.includes(b)?0:1;if(ma!==mb)return ma-mb;const ca=PRODUCTS.filter(p=>p.brand===a&&!banned(p)).length,cb=PRODUCTS.filter(p=>p.brand===b&&!banned(p)).length;return ca-cb});
+    const pending=[...ordered];
+    const worker=async()=>{while(pending.length){
+      const brand=pending.shift();
       let best=null;const tries=MANDATORY_DAILY_BRANDS.includes(brand)?3:1;
       for(let n=1;n<=tries;n++){
         try{const r=await updateOneBrand(brand);best={...r,try:n,status:r.responses>0?'CHECKED':'NO_RESPONSE'};if(r.responses>0)break}
         catch(e){best={brand,found:0,total:PRODUCTS.filter(p=>p.brand===brand).length,attempts:0,responses:0,errors:[String(e?.message||e)],checkedAt:kstStamp(),try:n,status:'ERROR'}}
         if(n<tries)await sleep(1800*n);
       }
-      coverage.push(best||{brand,status:'ERROR',responses:0,attempts:0,errors:['unknown'],checkedAt:kstStamp()});
-    }
-    await refreshTrendRanking();mergeProducts();
+      const row=best||{brand,status:'ERROR',responses:0,attempts:0,errors:['unknown'],checkedAt:kstStamp()};
+      coverage.push(row);
+      if(window.__MLB_DAILY_PROGRESS__)await window.__MLB_DAILY_PROGRESS__(row);
+    }};
+    await Promise.all(Array.from({length:Math.max(1,Math.min(3,options.concurrency||1))},worker));
+    if(!options.skipTrends)await refreshTrendRanking();mergeProducts();
     const added=PRODUCTS.filter(p=>!before.has(normalizeUrl(p.url))).length;
     const mandatoryMissing=MANDATORY_DAILY_BRANDS.filter(b=>!coverage.some(x=>x.brand===b));
     const mandatoryFailed=coverage.filter(x=>MANDATORY_DAILY_BRANDS.includes(x.brand)&&x.responses===0).map(x=>x.brand);
@@ -648,7 +653,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if($('#researchLigh
 $('#search').addEventListener('input',e=>{state.query=e.target.value;state.trendAliases=null;state.researchTrend=null;render()});$('#sort').addEventListener('change',e=>{state.sort=e.target.value;render()});$('#typeFilter').addEventListener('change',e=>{state.type=e.target.value;state.brand='all';render()});$('#categorySeg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;state.category=b.dataset.category;state.brand='all';setPressed('#categorySeg','category',state.category);render()});$('#scopeSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;state.scope=b.dataset.scope;state.brand='all';setPressed('#scopeSeg','scope',state.scope);render()});document.addEventListener('click',e=>{const b=e.target.closest('.brand-btn');if(!b)return;state.brand=b.dataset.brand;render()});$('#brandSelect').addEventListener('change',e=>{state.brand=e.target.value;render()});$('#jinaKey').value=APP_STORAGE.getItem(KEY_KEY)||'';$('#jinaKey').addEventListener('change',e=>APP_STORAGE.setItem(KEY_KEY,e.target.value.trim()));$('#updateAll').addEventListener('click',()=>runUpdate(BRANDS,false));$('#updateBrand').addEventListener('click',()=>runUpdate(state.brand==='all'?BRANDS:[state.brand],false));$('#stopUpdate').addEventListener('click',()=>{stopRequested=true;$('#progressText').textContent='현재 요청이 끝나면 중지합니다.'});
 $('#export').addEventListener('click',()=>{const rows=sortItems(baseFiltered());const headers=['brand','product_name','category','shoe_type','release_or_evidence','release_date','first_seen','style','colorway','body_color_name','body_hex','hex_accuracy','source','official_listing_url','detail_url','image_url'];const csv=[headers.join(',')].concat(rows.map(p=>{const c=mainColor(p);return [p.brand,p.name,p.category,productType(p),p.releaseLabel,p.releaseDate,p.firstSeen,p.style,p.colorway,c.name,c.hex,c.accuracy,p.source,p.officialListingUrl||'',p.url,p.image].map(v=>`"${String(v??'').replaceAll('"','""')}"`).join(',')})).join('\r\n');const blob=new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`shoes_live_${kstDateKey()}.csv`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)});
 $('#terms').innerHTML=EXCLUDES.map(t=>`<span class="term">${esc(t)}</span>`).join('');
-try{initResearchStrictCounts();render();setProgress(false);$('#updateTitle').textContent='공식 상품 반영 · 2026-09-23';$('#updateNote').textContent='공식 근거가 확인된 44개 브랜드의 스니커즈 1571개를 추가했습니다. 전체 브랜드의 확인 범위는 페이지 하단의 현황표에서 확인할 수 있습니다.';scheduleDaily()}catch(e){console.error('Dashboard runtime fallback active:',e)}
+try{initResearchStrictCounts();render();setProgress(false);$('#updateTitle').textContent=META.dailySnapshot?`자동 점검 · ${META.lastFinished}`:'공식 상품 반영 · 2026-09-23';$('#updateNote').textContent=META.dailySnapshot?`필수 116개 브랜드 점검 · 신규 ${META.lastNewItems||0}개 · 응답 미확인 ${META.unavailableBrands||0}개 브랜드. 응답하지 않은 출처의 기존 상품은 보존했습니다.`:'공식 근거가 확인된 44개 브랜드의 스니커즈 1571개를 추가했습니다. 전체 브랜드의 확인 범위는 페이지 하단의 현황표에서 확인할 수 있습니다.';scheduleDaily()}catch(e){console.error('Dashboard runtime fallback active:',e)}
 </script>
 
 

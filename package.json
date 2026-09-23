@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "daily": "node scripts/run_daily_update.mjs"
+    "daily": "node scripts/run_daily_update.mjs",
+    "build": "node scripts/validate_catalog.mjs && node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"

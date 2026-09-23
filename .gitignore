@@ -1,6 +1,11 @@
 node_modules/
 data/runtime_state.json
 logs/*.png
+logs/*.json
+logs/*.jsonl
+public/deployment.json
 !logs/.gitkeep
 .env
 .DS_Store
+__pycache__/
+*.pyc
