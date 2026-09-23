@@ -1,6 +1,10 @@
 {
-  "status": "initial package",
+  "updated_at": "2026-09-23",
+  "product_count": 2074,
   "mandatory_brand_count": 116,
-  "total_monitored_brands": 157,
-  "note": "Sergio Tacchini excluded from monitoring by user request. First GitHub Action run will populate per-brand coverage."
+  "new_items": 1579,
+  "brands_with_additions": 44,
+  "upcoming_items": 13,
+  "complete": false,
+  "coverage_report": "catalog-audit-2026-09-23.json"
 }

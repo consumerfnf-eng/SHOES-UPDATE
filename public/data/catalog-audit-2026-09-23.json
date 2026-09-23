@@ -1,0 +1,5372 @@
+{
+  "updatedAt": "2026-09-23",
+  "window": {
+    "from": "2026-06-23",
+    "to": "2026-09-23"
+  },
+  "policy": "Include confirmed releases in the window, officially announced upcoming releases, and official NEW ARRIVAL or first-page newest-sorted sneakers when release dates are unknown. Store publication timestamps are not release dates. Preserve existing records. Deduplicate canonical product URLs and official style codes across brands.",
+  "complete": false,
+  "requestedBrands": 116,
+  "brandsWithAdditions": 44,
+  "existingRecords": 495,
+  "addedRecords": 1579,
+  "upcomingRecords": 13,
+  "duplicateCandidatesSkipped": 72,
+  "rejectedCandidates": 95,
+  "imageRejected": [],
+  "coverage": [
+    {
+      "brand": "Acne Studios",
+      "requestedName": "Acne Studios",
+      "added": 8,
+      "existing": 1,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.acnestudios.com/us/en/woman/shoes/",
+        "https://www.acnestudios.com/us/en/man/shoes/?srule=newest",
+        "https://www.acnestudios.com/us/en/woman/shoes/?srule=newest"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.acnestudios.com/us/en/woman/shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 732701
+        },
+        {
+          "url": "https://www.acnestudios.com/us/en/man/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 834886
+        },
+        {
+          "url": "https://www.acnestudios.com/us/en/woman/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 773362
+        },
+        {
+          "url": "https://www.acnestudios.com/us/en/woman/shoes/#main",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 732701
+        },
+        {
+          "url": "https://www.acnestudios.com/us/en/woman/shoes/#header",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 732701
+        }
+      ]
+    },
+    {
+      "brand": "Alaïa",
+      "requestedName": "Alaïa",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.maison-alaia.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.maison-alaia.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 163271
+        },
+        {
+          "url": "https://www.maison-alaia.com/fr-fr/cat/dernieres-nouveautes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 99436
+        }
+      ]
+    },
+    {
+      "brand": "Alexander McQueen",
+      "requestedName": "Alexander McQueen",
+      "added": 0,
+      "existing": 2,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.alexandermcqueen.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.alexandermcqueen.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 15174
+        },
+        {
+          "url": "https://www.alexandermcqueen.com/en-us/ca/women/women-new-in/seasonal-edit",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 7639
+        },
+        {
+          "url": "https://www.alexandermcqueen.com/en-us/ca/women/women-new-in/w-aw26-collection",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 7639
+        },
+        {
+          "url": "https://www.alexandermcqueen.com/en-us/ca/women/shoes/sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 7637
+        },
+        {
+          "url": "https://www.alexandermcqueen.com/en-us/ca/men/shoes/sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 7637
+        }
+      ]
+    },
+    {
+      "brand": "Alo",
+      "requestedName": "Alo",
+      "added": 9,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.aloyoga.com/en-kr/collections/sneakers",
+        "https://www.aloyoga.com/collections/new-arrivals",
+        "https://www.aloyoga.com/collections/mens-new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.aloyoga.com/en-kr/collections/sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 25031
+        },
+        {
+          "url": "https://www.aloyoga.com/collections/mens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 23335
+        },
+        {
+          "url": "https://www.aloyoga.com/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 25218
+        }
+      ]
+    },
+    {
+      "brand": "Amina Muaddi",
+      "requestedName": "Amina Muaddi",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.aminamuaddi.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.aminamuaddi.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 8690
+        },
+        {
+          "url": "https://www.aminamuaddi.com/collections/new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 942377
+        },
+        {
+          "url": "https://www.aminamuaddi.com/collections/new",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 869374
+        },
+        {
+          "url": "https://www.aminamuaddi.com/collections/flat-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 365964
+        },
+        {
+          "url": "https://www.aminamuaddi.com/collections/flat-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 27415
+        },
+        {
+          "url": "https://www.aminamuaddi.com/collections/view-all-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1314694
+        },
+        {
+          "url": "https://www.aminamuaddi.com/collections/view-all-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1007644
+        }
+      ]
+    },
+    {
+      "brand": "AMIRI",
+      "requestedName": "Amiri",
+      "added": 28,
+      "existing": 3,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.amiri.com/",
+        "https://www.amiri.com/collections/new-mens-footwear",
+        "https://www.amiri.com/collections/new-womens-sneaker",
+        "https://www.amiri.com/collections/kids-new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.amiri.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 50750
+        },
+        {
+          "url": "https://www.amiri.com/collections/new-womens-sneaker",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 59900
+        },
+        {
+          "url": "https://www.amiri.com/collections/new-womens-acc",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 58353
+        },
+        {
+          "url": "https://www.amiri.com/collections/new-in-womens-footwear",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 61404
+        },
+        {
+          "url": "https://www.amiri.com/collections/footwear-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 61024
+        },
+        {
+          "url": "https://www.amiri.com/collections/new-mens-footwear",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 59622
+        },
+        {
+          "url": "https://www.amiri.com/collections/mens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 59616
+        },
+        {
+          "url": "https://www.amiri.com/collections/womens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 60372
+        }
+      ]
+    },
+    {
+      "brand": "ASICS",
+      "requestedName": "Asics",
+      "added": 0,
+      "existing": 15,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.asics.com/us/en-us/releases/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.asics.com/us/en-us/releases/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2620706
+        },
+        {
+          "url": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
+          "status": 403,
+          "usableResponse": false,
+          "characters": 572
+        }
+      ]
+    },
+    {
+      "brand": "Avavav",
+      "requestedName": "Avavav",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.avavav.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.avavav.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 29621
+        }
+      ]
+    },
+    {
+      "brand": "Axel Arigato",
+      "requestedName": "Axel Arigato",
+      "added": 7,
+      "existing": 11,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.axelarigato.com/",
+        "https://www.axelarigato.com/men/new-arrivals",
+        "https://www.axelarigato.com/women/new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.axelarigato.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 49281
+        },
+        {
+          "url": "https://www.axelarigato.com/women/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 49954
+        },
+        {
+          "url": "https://www.axelarigato.com/men/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 50022
+        }
+      ]
+    },
+    {
+      "brand": "Balenciaga",
+      "requestedName": "Balenciaga",
+      "added": 0,
+      "existing": 3,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.balenciaga.com/en-us/women/shoes-for-women"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.balenciaga.com/en-us/women/shoes-for-women",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 662383
+        }
+      ]
+    },
+    {
+      "brand": "Bally",
+      "requestedName": "Bally",
+      "added": 4,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.bally.com/",
+        "https://www.bally.com/collections/men-new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.bally.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 82460
+        },
+        {
+          "url": "https://www.bally.com/collections/men-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 104696
+        },
+        {
+          "url": "https://www.bally.com/collections/men-online-exclusive-shoes-drivers?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1149618
+        },
+        {
+          "url": "https://www.bally.com/collections/men-online-exclusive-shoes-lace-ups-and-monks?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1142265
+        },
+        {
+          "url": "https://www.bally.com/collections/men-shoes-lace-ups-and-monks?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1165253
+        },
+        {
+          "url": "https://www.bally.com/collections/men-online-exclusive-shoes?sort_by=created-descending",
+          "status": 500,
+          "usableResponse": false,
+          "characters": 11009
+        },
+        {
+          "url": "https://www.bally.com/collections/men-online-exclusive-shoes-drivers/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1301901
+        },
+        {
+          "url": "https://www.bally.com/collections/men-online-exclusive-shoes-lace-ups-and-monks/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 904154
+        },
+        {
+          "url": "https://www.bally.com/collections/men-shoes-lace-ups-and-monks/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 122417
+        },
+        {
+          "url": "https://www.bally.com/collections/men-shoes-drivers/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 263448
+        },
+        {
+          "url": "https://www.bally.com/collections/men-shoes-drivers?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1472324
+        }
+      ]
+    },
+    {
+      "brand": "Balmain",
+      "requestedName": "Balmain",
+      "added": 17,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.balmain.com/",
+        "https://balmain.com/collections/men-shoes-view-all?sort_by=created-descending",
+        "https://balmain.com/collections/women-shoes-view-all?sort_by=created-descending",
+        "https://balmain.com/collections/women-sneakers?sort_by=created-descending"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.balmain.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 31034
+        },
+        {
+          "url": "https://balmain.com/collections/men-new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 63476
+        },
+        {
+          "url": "https://www.balmain.com/fr-fr/collections/men-new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 65210
+        },
+        {
+          "url": "https://www.balmain.com/fr-fr/collections/women-new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 61825
+        },
+        {
+          "url": "https://balmain.com/collections/women-new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 60554
+        },
+        {
+          "url": "https://balmain.com/collections/women-sneakers?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 608741
+        },
+        {
+          "url": "https://balmain.com/collections/women-sneakers/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 54835
+        },
+        {
+          "url": "https://balmain.com/collections/women-shoes-view-all/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 383896
+        },
+        {
+          "url": "https://balmain.com/collections/men-shoes-view-all/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 151065
+        },
+        {
+          "url": "https://balmain.com/collections/men-sneakers/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 113192
+        },
+        {
+          "url": "https://balmain.com/collections/women-flat-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 40024
+        },
+        {
+          "url": "https://balmain.com/collections/women-shoes-view-all?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 927913
+        },
+        {
+          "url": "https://balmain.com/collections/men-shoes-view-all?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 803181
+        },
+        {
+          "url": "https://balmain.com/collections/men-sneakers?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 721511
+        },
+        {
+          "url": "https://balmain.com/collections/women-flat-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 582699
+        }
+      ]
+    },
+    {
+      "brand": "Berluti",
+      "requestedName": "Berluti",
+      "added": 5,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.berluti.com/",
+        "https://www.berluti.com/en-my/shoes/sneakers/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.berluti.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 290805
+        },
+        {
+          "url": "https://www.berluti.com/en-my/shoes/sneakers/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 610334
+        }
+      ]
+    },
+    {
+      "brand": "Bottega Veneta",
+      "requestedName": "Bottega Veneta",
+      "added": 8,
+      "existing": 2,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.bottegaveneta.com/en-us/women/shoes",
+        "https://www.bottegaveneta.com/en-us/men-collection-us/men-new-arrivals",
+        "https://www.bottegaveneta.com/en-us/men-collection-us"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.bottegaveneta.com/en-us/women/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 134081
+        },
+        {
+          "url": "https://www.bottegaveneta.com/en-us/men-collection-us",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 22055
+        },
+        {
+          "url": "https://www.bottegaveneta.com/en-us/men-collection-us/men-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 139963
+        },
+        {
+          "url": "https://www.bottegaveneta.com/en-us/women-collection-us/women-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 150458
+        },
+        {
+          "url": "https://www.bottegaveneta.com/en-us/women-collection-us",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 86743
+        }
+      ]
+    },
+    {
+      "brand": "Brunello Cucinelli",
+      "requestedName": "Brunello Cucinelli",
+      "added": 0,
+      "existing": 3,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.brunellocucinelli.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.brunellocucinelli.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 62409
+        }
+      ]
+    },
+    {
+      "brand": "Burberry",
+      "requestedName": "Burberry",
+      "added": 0,
+      "existing": 2,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.burberry.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.burberry.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 176623
+        }
+      ]
+    },
+    {
+      "brand": "Casablanca",
+      "requestedName": "Casablanca",
+      "added": 3,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.casablancaparis.com/",
+        "https://www.casablancaparis.com/collections/new-arrivals-pour-homme",
+        "https://www.casablancaparis.com/collections/new-arrivals-pour-femme"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.casablancaparis.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 61674
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1066533
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/new-arrivals-pour-femme",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 79840
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/new-arrivals-pour-homme",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1066533
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/womens-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1020952
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/mens-sneakers?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1053892
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/mens-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1088602
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/all-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1110801
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/womens-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 160838
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/mens-sneakers/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 256901
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/mens-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 324971
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/all-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 485795
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/pf26-sneakers/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 169522
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/pf26-sneakers?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1019408
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/mens-sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1053811
+        },
+        {
+          "url": "https://www.casablancaparis.com/collections/all-shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1104005
+        }
+      ]
+    },
+    {
+      "brand": "Cecilie Bahnsen",
+      "requestedName": "Cecilie Bahnsen",
+      "added": 9,
+      "existing": 3,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.ceciliebahnsen.com/",
+        "https://www.ceciliebahnsen.com/collections/new-in",
+        "https://www.ceciliebahnsen.com/collections/shoes?sort_by=created-descending"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.ceciliebahnsen.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 41302
+        },
+        {
+          "url": "https://ceciliebahnsen.com/pages/projects?cat=runway",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.ceciliebahnsen.com/collections/new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 54814
+        },
+        {
+          "url": "https://www.ceciliebahnsen.com/collections/shoe-edit?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 254801
+        },
+        {
+          "url": "https://www.ceciliebahnsen.com/collections/shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 413949
+        },
+        {
+          "url": "https://www.ceciliebahnsen.com/collections/shoe-edit/products.json?limit=250",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 15
+        },
+        {
+          "url": "https://www.ceciliebahnsen.com/collections/shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 43907
+        }
+      ]
+    },
+    {
+      "brand": "Celine",
+      "requestedName": "Celine",
+      "added": 13,
+      "existing": 4,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.celine.com/en-us/women/shoes/",
+        "https://www.celine.com/en-us/men/shoes/sneakers/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.celine.com/en-us/women/shoes/",
+          "status": 403,
+          "usableResponse": false,
+          "characters": 552
+        },
+        {
+          "url": "https://www.celine.com/en-us/men/shoes/sneakers/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 610676
+        }
+      ]
+    },
+    {
+      "brand": "Chanel",
+      "requestedName": "Chanel",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.chanel.com/us/fashion/shoes/c/1x1x5/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.chanel.com/us/fashion/shoes/c/1x1x5/",
+          "status": 403,
+          "usableResponse": false,
+          "characters": 559
+        },
+        {
+          "url": "https://www.chanel.com/us/makeup/new-arrivals/#makeup",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 624569
+        },
+        {
+          "url": "https://www.chanel.com/us/fashion/shoes/c/1x1x5/#main",
+          "status": 403,
+          "usableResponse": false,
+          "characters": 561
+        },
+        {
+          "url": "https://www.chanel.com/us/makeup/new-arrivals/#fragrance",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 624569
+        }
+      ]
+    },
+    {
+      "brand": "Chloé",
+      "requestedName": "Chloé",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.chloe.com/us/shoes_women"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.chloe.com/us/shoes_women",
+          "status": 404,
+          "usableResponse": false,
+          "characters": 4236
+        },
+        {
+          "url": "https://www.chloe.com/en-us/c/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1112355
+        },
+        {
+          "url": "https://www.chloe.com/us/shoes_women#maincontent",
+          "status": 404,
+          "usableResponse": false,
+          "characters": 4236
+        },
+        {
+          "url": "https://www.chloe.com/us/shoes_women#",
+          "status": 404,
+          "usableResponse": false,
+          "characters": 4236
+        }
+      ]
+    },
+    {
+      "brand": "Christian Louboutin",
+      "requestedName": "Christian Louboutin",
+      "added": 0,
+      "existing": 1,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.christianlouboutin.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.christianlouboutin.com/",
+          "status": 403,
+          "usableResponse": false,
+          "characters": 298241
+        }
+      ]
+    },
+    {
+      "brand": "Comme des Garçons Homme Plus",
+      "requestedName": "Comme des Garçons Homme Plus",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.comme-des-garcons.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.comme-des-garcons.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 5122
+        }
+      ]
+    },
+    {
+      "brand": "Common Projects",
+      "requestedName": "Common Projects",
+      "added": 0,
+      "existing": 1,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.commonprojects.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.commonprojects.com/",
+          "status": 0,
+          "usableResponse": false,
+          "characters": 0
+        }
+      ]
+    },
+    {
+      "brand": "Converse",
+      "requestedName": "Converse",
+      "added": 36,
+      "existing": 8,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.converse.com/shop/new-arrivals/shoes",
+        "https://www.converse.com/shop/new-arrivals",
+        "https://www.converse.com/shop/womens-new-arrivals",
+        "https://www.converse.com/shop/mens-new-arrivals",
+        "https://www.converse.com/shop/custom-new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.converse.com/shop/new-arrivals/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 153101
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-70-x-unisex-high-top-shoe/A24233F.html?dwvar_A24233F_color=melon%20dramatic%2Fegret%2Fblack&dwvar_A24233F_width=standard&styleNo=A24233F&cgid=new-arrivals",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-taylor-all-star-lace-womens-low-top-shoe/A18308F.html?dwvar_A18308F_color=petal%20pit%2Fvintage%20white%2Fblack&dwvar_A18308F_width=standard&styleNo=A18308F&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 62770
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-taylor-all-star-malden-street-boot-unisex-mid-shoe/A04478C.html?dwvar_A04478C_color=black%2Fblack%2Fblack&dwvar_A04478C_width=standard&styleNo=A04478C&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 66667
+        },
+        {
+          "url": "https://www.converse.com/shop/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 138997
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-70-x-unisex-low-top-shoe/A24230F.html?dwvar_A24230F_color=white%2Fgarnet%2Fegret&dwvar_A24230F_width=standard&styleNo=A24230F&cgid=new-arrivals",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-70-x-silver-stars-unisex-low-top-shoe/A24221F.html?dwvar_A24221F_color=natural%20ivory%2Fdull%20silver&dwvar_A24221F_width=standard&styleNo=A24221F&cgid=new-arrivals",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-70-x-unisex-high-top-shoe/A24225F.html?dwvar_A24225F_color=black%2Fblack%2Fegret&dwvar_A24225F_width=standard&styleNo=A24225F&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 62318
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-taylor-all-star-lace-womens-high-top-shoe/A18306F.html?dwvar_A18306F_color=icy%20demeanor%2Fvintage%20white&dwvar_A18306F_width=standard&styleNo=A18306F&cgid=new-arrivals",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.converse.com/shop/mens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 144958
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-70-x-unisex-high-top-shoe/A24227F.html?dwvar_A24227F_color=white%2Fgarnet%2Fegret&dwvar_A24227F_width=standard&styleNo=A24227F&cgid=new-arrivals",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-70-x-unisex-low-top-shoe/A24228F.html?dwvar_A24228F_color=black%2Fblack%2Fegret&dwvar_A24228F_width=standard&styleNo=A24228F&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 61542
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-taylor-all-star-madison-womens-mid-shoe/A18360C.html?dwvar_A18360C_color=light%20grey%2Fwhite%2Fblack&dwvar_A18360C_width=standard&styleNo=A18360C&cgid=new-arrivals",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-70-industrial-glam-unisex-high-top-shoe/A18326C.html?dwvar_A18326C_color=egret%2Fegret%2Fblack&dwvar_A18326C_width=standard&styleNo=A18326C&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 61091
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-taylor-all-star-malden-street-boot-unisex-mid-shoe/A04477C.html?dwvar_A04477C_color=black%2Fwhite%2Fblack&dwvar_A04477C_width=standard&styleNo=A04477C&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 66923
+        },
+        {
+          "url": "https://www.converse.com/shop/p/custom-chuck-taylor-all-star-lift-platform-leather-by-you-unisex-high-top-shoe/173157CFA26.html?dwvar_173157CFA26_color=snake&styleNo=173157C&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 71834
+        },
+        {
+          "url": "https://www.converse.com/shop/p/custom-chuck-70-leather-by-you-unisex-low-top-shoe/162658CFA26.html?dwvar_162658CFA26_color=snake&styleNo=162658C&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 56998
+        },
+        {
+          "url": "https://www.converse.com/shop/custom-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 152179
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-taylor-all-star-lift-double-stack-distressed-plaid-and-lace-womens-low-top-shoe/A20559C.html?dwvar_A20559C_color=pavemint%2Fvintage%20white%2Fblack&dwvar_A20559C_width=standard&styleNo=A20559C&cgid=new-arrivals",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.converse.com/shop/womens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 152585
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-70-industrial-glam-unisex-high-top-shoe/A18325C.html?dwvar_A18325C_color=black%2Fegret%2Fdark%20matter&dwvar_A18325C_width=standard&styleNo=A18325C&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 61315
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-taylor-all-star-malden-street-boot-unisex-mid-shoe/A18145C.html?dwvar_A18145C_color=heavy%20duty%20brown%2Fblack%2Fwhite&dwvar_A18145C_width=standard&styleNo=A18145C&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 62260
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-taylor-all-star-lace-unisex-high-top-shoe/A23963C.html?dwvar_A23963C_color=black%2Fpetal%20pit%2Fblack&dwvar_A23963C_width=standard&styleNo=A23963C&cgid=new-arrivals",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.converse.com/shop/p/custom-chuck-taylor-all-star-leather-by-you-unisex-high-top-shoe/156574CFA26.html?dwvar_156574CFA26_color=snake&styleNo=156574C&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 60331
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-70-x-silver-stars-unisex-low-top-shoe/A24220F.html?dwvar_A24220F_color=black%2Fdull%20silver%2Fegret&dwvar_A24220F_width=standard&styleNo=A24220F&cgid=new-arrivals",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.converse.com/shop/p/chuck-70-x-unisex-low-top-shoe/A24236F.html?dwvar_A24236F_color=melon%20dramatic%2Fegret%2Fblack&dwvar_A24236F_width=standard&styleNo=A24236F&cgid=new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 61862
+        }
+      ]
+    },
+    {
+      "brand": "Coperni",
+      "requestedName": "Coperni",
+      "added": 3,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.coperniparis.com/",
+        "https://www.coperniparis.com/collections/sneakers?sort_by=created-descending"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.coperniparis.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 25867
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/new-in-rtw",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 32906
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/new-in-shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 29248
+        },
+        {
+          "url": "https://www.coperniparis.com/en-us/collections/new-in-rtw",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1182952
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/new-in-overall",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 32647
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/sneakers?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 950612
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/belt?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1047805
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/sneakers/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 13954
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/belt/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 31669
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/all-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 123927
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/new-in-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 31254
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/all-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1168823
+        },
+        {
+          "url": "https://www.coperniparis.com/collections/new-in-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1041763
+        },
+        {
+          "url": "https://www.coperniparis.com/en-us/collections/sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 950469
+        },
+        {
+          "url": "https://www.coperniparis.com/en-us/collections/new-in-accessories",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 955026
+        }
+      ]
+    },
+    {
+      "brand": "Courrèges",
+      "requestedName": "Courrèges",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.courreges.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.courreges.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 29122
+        },
+        {
+          "url": "https://www.courreges.com/us/category/men/new-in/9-to-5-essentials",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 15796
+        },
+        {
+          "url": "https://www.courreges.com/us/category/shop/new-in/9-to-5-essentials",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 607616
+        },
+        {
+          "url": "https://www.courreges.com/category/shop/new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 49982
+        },
+        {
+          "url": "https://www.courreges.com/us/category/men/new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 15617
+        },
+        {
+          "url": "https://www.courreges.com/us/category/shop/new-in/apres-ski",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 379782
+        },
+        {
+          "url": "https://www.courreges.com/category/men/new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 49400
+        },
+        {
+          "url": "https://www.courreges.com/us/category/shop/new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 15640
+        },
+        {
+          "url": "https://www.courreges.com/us/category/shop/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 490938
+        },
+        {
+          "url": "https://www.courreges.com/us/category/shop/shoes/new-shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 252943
+        }
+      ]
+    },
+    {
+      "brand": "Craig Green",
+      "requestedName": "Craig Green",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.craig-green.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.craig-green.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 10967
+        },
+        {
+          "url": "https://www.craig-green.com/collections/shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 265276
+        },
+        {
+          "url": "https://www.craig-green.com/collections/shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 16653
+        },
+        {
+          "url": "https://www.craig-green.com/collections/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 265249
+        }
+      ]
+    },
+    {
+      "brand": "Diesel",
+      "requestedName": "Diesel",
+      "added": 2,
+      "existing": 2,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://kr.diesel.com/en/woman/new-arrivals/",
+        "https://kr.diesel.com/en/man/new-arrivals/"
+      ],
+      "attempts": [
+        {
+          "url": "https://kr.diesel.com/en/woman/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1273986
+        },
+        {
+          "url": "https://kr.diesel.com/en/search-show?cgid=diesel-whatsnew_new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1387135
+        },
+        {
+          "url": "https://kr.diesel.com/en/man/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1334532
+        },
+        {
+          "url": "https://kr.diesel.com/en/woman/new-arrivals/underwear-and-swimwear/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 94040
+        },
+        {
+          "url": "https://kr.diesel.com/en/woman/new-arrivals/denim/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 101306
+        },
+        {
+          "url": "https://kr.diesel.com/en/man/new-arrivals/denim/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 96244
+        },
+        {
+          "url": "https://kr.diesel.com/en/man/new-arrivals/underwear-and-swimwear/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 65278
+        },
+        {
+          "url": "https://kr.diesel.com/en/man/footwear/sneakers/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1169778
+        },
+        {
+          "url": "https://kr.diesel.com/en/man/shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1376584
+        },
+        {
+          "url": "https://kr.diesel.com/en/woman/footwear/sneakers/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 890546
+        }
+      ]
+    },
+    {
+      "brand": "Dior",
+      "requestedName": "Dior",
+      "added": 6,
+      "existing": 16,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1540401
+        }
+      ]
+    },
+    {
+      "brand": "Dolce & Gabbana",
+      "requestedName": "Dolce & Gabbana",
+      "added": 0,
+      "existing": 4,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.dolcegabbana.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.dolcegabbana.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2496556
+        }
+      ]
+    },
+    {
+      "brand": "Dries Van Noten",
+      "requestedName": "Dries Van Noten",
+      "added": 19,
+      "existing": 9,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.driesvannoten.com/",
+        "https://www.driesvannoten.com/collections/sneakers?sort_by=created-descending",
+        "https://www.driesvannoten.com/collections/women-shoes?sort_by=created-descending"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.driesvannoten.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 54109
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/ke8nbwqbci",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 92424
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/women-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 180784
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/men-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 349624
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/men-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1677374
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 563267
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/happy-wife-happy-life2?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 567019
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/sneakers?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2162529
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/women-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1333075
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/men-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 361571
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 15
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/happy-wife-happy-life2/products.json?limit=250",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 15
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/sneakers/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 310959
+        },
+        {
+          "url": "https://www.driesvannoten.com/collections/women-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 302617
+        }
+      ]
+    },
+    {
+      "brand": "DSQUARED2",
+      "requestedName": "Dsquared2",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.dsquared2.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.dsquared2.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 30668
+        },
+        {
+          "url": "https://www.dsquared2.com/us/men/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1393116
+        },
+        {
+          "url": "https://www.dsquared2.com/us/men/shoes/sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 979829
+        }
+      ]
+    },
+    {
+      "brand": "Fear of God",
+      "requestedName": "Fear of God",
+      "added": 7,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.fearofgod.com/",
+        "https://www.fearofgod.com/collections/mens-footwear?sort_by=created-descending",
+        "https://www.fearofgod.com/collections/fearofgod-footwear?sort_by=created-descending"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.fearofgod.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 20196
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/all-footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1892321
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/fearofgod-footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1375277
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/mens-footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1892964
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/all-footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 396731
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/fearofgod-footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 15505
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/mens-footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 396731
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/essentials-footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 98872
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/all-womens-footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 13192
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/essentials-footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1501725
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/all-womens-footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1385369
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/mens-footwear",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1892929
+        },
+        {
+          "url": "https://www.fearofgod.com/collections/all-footwear",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1892287
+        }
+      ]
+    },
+    {
+      "brand": "Fendi",
+      "requestedName": "Fendi",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.fendi.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.fendi.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 918901
+        }
+      ]
+    },
+    {
+      "brand": "Feng Chen Wang",
+      "requestedName": "Feng Chen Wang",
+      "added": 2,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.fengchenwang.com/",
+        "https://www.fengchenwang.com/collections/new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.fengchenwang.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 88844
+        },
+        {
+          "url": "https://www.fengchenwang.com/collections/new-arrivals-2",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 52166
+        },
+        {
+          "url": "https://www.fengchenwang.com/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 52275
+        },
+        {
+          "url": "https://www.fengchenwang.com/collections/new-arrivals-1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 48399
+        },
+        {
+          "url": "https://www.fengchenwang.com/en-us/collections/new-arrivals-1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 481075
+        },
+        {
+          "url": "https://www.fengchenwang.com/en-us/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 546093
+        },
+        {
+          "url": "https://www.fengchenwang.com/collections/footwear-1?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 344798
+        },
+        {
+          "url": "https://www.fengchenwang.com/collections/footwear-1/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 23488
+        }
+      ]
+    },
+    {
+      "brand": "Ferragamo",
+      "requestedName": "Ferragamo",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.ferragamo.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.ferragamo.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 34947
+        },
+        {
+          "url": "https://www.ferragamo.com/shop/us/en/women/new-in-woman/new-arrivals-woman",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 709680
+        },
+        {
+          "url": "https://www.ferragamo.com/shop/us/en/men/new-arrivals-man/new-new-arrivals-us",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 709685
+        },
+        {
+          "url": "https://www.ferragamo.com/shop/us/en/women/shoes/pumps",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 708519
+        },
+        {
+          "url": "https://www.ferragamo.com/shop/us/en/women/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 706999
+        }
+      ]
+    },
+    {
+      "brand": "FILA",
+      "requestedName": "Fila",
+      "added": 0,
+      "existing": 3,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.fila.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.fila.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 42422
+        }
+      ]
+    },
+    {
+      "brand": "Givenchy",
+      "requestedName": "Givenchy",
+      "added": 0,
+      "existing": 2,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.givenchy.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.givenchy.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 53604
+        },
+        {
+          "url": "https://www.givenchy.com/us/en-US/women/shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 396452
+        },
+        {
+          "url": "https://www.givenchy.com/us/en-US/women/shoes/boots-ankle-boots/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 391514
+        }
+      ]
+    },
+    {
+      "brand": "Golden Goose",
+      "requestedName": "Golden Goose",
+      "added": 4,
+      "existing": 2,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.goldengoose.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.goldengoose.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 4872063
+        }
+      ]
+    },
+    {
+      "brand": "Gucci",
+      "requestedName": "Gucci",
+      "added": 9,
+      "existing": 4,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.gucci.com/us/en/ca/women/shoes-for-women-c-women-shoes?sort=newest"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.gucci.com/us/en/ca/women/shoes-for-women-c-women-shoes?sort=newest",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 962338
+        },
+        {
+          "url": "https://www.gucci.com/us/en/st/what-new",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 61261
+        },
+        {
+          "url": "https://www.gucci.com/us/en/ca/whats-new/new-in/this-week-women-c-new-women",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1006275
+        },
+        {
+          "url": "https://www.gucci.com/us/en?sort=newest&utm_medium=geolocation&utm_source=gucci-us&utm_campaign=overlay",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 242
+        },
+        {
+          "url": "https://www.gucci.com/us/en/ca/women/shoes-for-women-c-women-shoes?sort=newest&page=2",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 123517
+        },
+        {
+          "url": "https://www.gucci.com/us/en/ca/whats-new/new-in/this-week-men-c-new-men",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 103995
+        },
+        {
+          "url": "https://www.gucci.com/us/en/ca/women/shoes-for-women-c-women-shoes?sort=newest#mainContent",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 962338
+        },
+        {
+          "url": "https://www.gucci.com/us/en/ca/-c-women-shoes-sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 918034
+        }
+      ]
+    },
+    {
+      "brand": "Hender Scheme",
+      "requestedName": "Hender Scheme",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.henderscheme.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.henderscheme.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 219623
+        }
+      ]
+    },
+    {
+      "brand": "Hermès",
+      "requestedName": "Hermes",
+      "added": 0,
+      "existing": 1,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.hermes.com/us/en/category/women/shoes/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.hermes.com/us/en/category/women/shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1106145
+        },
+        {
+          "url": "https://www.hermes.com/us/en/category/women/shoes/#collection-button",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1106145
+        },
+        {
+          "url": "https://www.hermes.com/us/en/category/women/shoes/#content",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1106145
+        }
+      ]
+    },
+    {
+      "brand": "HOKA",
+      "requestedName": "HOKA",
+      "added": 0,
+      "existing": 11,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.hoka.com/en/us/new-arrivals/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.hoka.com/en/us/new-arrivals/",
+          "status": 0,
+          "usableResponse": false,
+          "characters": 0
+        }
+      ]
+    },
+    {
+      "brand": "Issey Miyake",
+      "requestedName": "Issey Miyake",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.isseymiyake.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.isseymiyake.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 183605
+        }
+      ]
+    },
+    {
+      "brand": "Jacquemus",
+      "requestedName": "Jacquemus",
+      "added": 0,
+      "existing": 3,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.jacquemus.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.jacquemus.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2724
+        }
+      ]
+    },
+    {
+      "brand": "Jil Sander",
+      "requestedName": "Jil Sander",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.jilsander.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.jilsander.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 56208
+        },
+        {
+          "url": "https://www.jilsander.com/en-us/men/accessories/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 553904
+        },
+        {
+          "url": "https://www.jilsander.com/en-us/women/accessories/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 665175
+        }
+      ]
+    },
+    {
+      "brand": "Jimmy Choo",
+      "requestedName": "Jimmy Choo",
+      "added": 11,
+      "existing": 1,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.jimmychoo.com/",
+        "https://www.jimmychoo.com/en/men/new-arrivals/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.jimmychoo.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 39586
+        },
+        {
+          "url": "https://www.jimmychoo.com/en/women/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 94376
+        },
+        {
+          "url": "https://www.jimmychoo.com/en/men/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 114553
+        }
+      ]
+    },
+    {
+      "brand": "Junya Watanabe",
+      "requestedName": "Junya Watanabe",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.comme-des-garcons.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.comme-des-garcons.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 5122
+        }
+      ]
+    },
+    {
+      "brand": "Kenzo",
+      "requestedName": "Kenzo",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.kenzo.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.kenzo.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 30495
+        },
+        {
+          "url": "https://www.kenzo.com/en-us/c-nouveautes/homme",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 74794
+        },
+        {
+          "url": "https://www.kenzo.com/en-us/c-shoes/men/sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 481774
+        },
+        {
+          "url": "https://www.kenzo.com/en-us/c-shoes/women/sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 460799
+        }
+      ]
+    },
+    {
+      "brand": "Khaite",
+      "requestedName": "Khaite",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.khaite.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.khaite.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 51677
+        },
+        {
+          "url": "https://www.khaite.com/collections/new",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1312276
+        },
+        {
+          "url": "https://khaite.com/cdn/shop/files/F26_R2_Menu_NewArrivals.jpg?v=1788191102&width=1200",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 350092
+        },
+        {
+          "url": "https://www.khaite.com/collections/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1394994
+        }
+      ]
+    },
+    {
+      "brand": "Kiko Kostadinov",
+      "requestedName": "Kiko Kostadinov",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.kikokostadinov.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.kikokostadinov.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2966
+        },
+        {
+          "url": "https://www.kikokostadinov.com/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 267881
+        },
+        {
+          "url": "https://kikokostadinov.com/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 269055
+        }
+      ]
+    },
+    {
+      "brand": "Kolor",
+      "requestedName": "Kolor",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.kolor.jp/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.kolor.jp/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 242489
+        },
+        {
+          "url": "https://www.kolor.jp/collections/kolor-beacon-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 146049
+        },
+        {
+          "url": "https://www.kolor.jp/collections/womens-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 171457
+        },
+        {
+          "url": "https://www.kolor.jp/collections/mens-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 194308
+        },
+        {
+          "url": "https://www.kolor.jp/collections/kolor-beacon-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 15
+        },
+        {
+          "url": "https://www.kolor.jp/collections/womens-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 12334
+        },
+        {
+          "url": "https://www.kolor.jp/collections/mens-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 32278
+        }
+      ]
+    },
+    {
+      "brand": "Lanvin",
+      "requestedName": "Lanvin",
+      "added": 26,
+      "existing": 1,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.lanvin.com/",
+        "https://us.lanvin.com/collections/men-new-in",
+        "https://us.lanvin.com/collections/women-new-in"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.lanvin.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 28346
+        },
+        {
+          "url": "https://www.lanvin.com/collections/men-new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 42593
+        },
+        {
+          "url": "https://us.lanvin.com/collections/women-new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 41713
+        },
+        {
+          "url": "https://www.lanvin.com/collections/women-new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 41532
+        },
+        {
+          "url": "https://us.lanvin.com/collections/men-new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 42687
+        }
+      ]
+    },
+    {
+      "brand": "Loewe",
+      "requestedName": "Loewe",
+      "added": 0,
+      "existing": 8,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.loewe.com/usa/en/women/shoes"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.loewe.com/usa/en/women/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1020971
+        },
+        {
+          "url": "https://www.loewe.com/usa/en/women/shoes#page-header",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1020971
+        },
+        {
+          "url": "https://www.loewe.com/usa/en/women/shoes#page-main-content",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1020971
+        }
+      ]
+    },
+    {
+      "brand": "Loro Piana",
+      "requestedName": "Loro Piana",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.loropiana.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.loropiana.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 715941
+        }
+      ]
+    },
+    {
+      "brand": "Louis Vuitton",
+      "requestedName": "Louis Vuitton",
+      "added": 0,
+      "existing": 5,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/women/shoes/all-shoes/_/N-t1mcbujj"
+      ],
+      "attempts": [
+        {
+          "url": "https://us.louisvuitton.com/eng-us/women/shoes/all-shoes/_/N-t1mcbujj",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2479
+        }
+      ]
+    },
+    {
+      "brand": "Lululemon",
+      "requestedName": "Lululemon",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://shop.lululemon.com/c/shoes/n1n4fc"
+      ],
+      "attempts": [
+        {
+          "url": "https://shop.lululemon.com/c/shoes/n1n4fc",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1364652
+        },
+        {
+          "url": "https://shop.lululemon.com/c/latest-scores/n1ol3q",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 121292
+        },
+        {
+          "url": "https://shop.lululemon.com/c/women-running-shoes/n16o10zn4fczynj2",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 709874
+        },
+        {
+          "url": "https://shop.lululemon.com/c/sneakers/n1d852zn4fc",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 662054
+        },
+        {
+          "url": "https://shop.lululemon.com/c/women-sneakers/n16o10zd852zn4fc",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 572331
+        }
+      ]
+    },
+    {
+      "brand": "Mach & Mach",
+      "requestedName": "Mach & Mach",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.machandmach.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.machandmach.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 19963
+        },
+        {
+          "url": "https://www.machandmach.com/collections/new-collection",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 442698
+        },
+        {
+          "url": "https://www.machandmach.com/collections/all-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 884326
+        },
+        {
+          "url": "https://www.machandmach.com/collections/all-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 938128
+        }
+      ]
+    },
+    {
+      "brand": "Maison Margiela",
+      "requestedName": "Maison Margiela",
+      "added": 11,
+      "existing": 4,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.maisonmargiela.com/",
+        "https://www.maisonmargiela.com/en-us/maison-margiela/men/featured/new-arrivals/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.maisonmargiela.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 43096
+        },
+        {
+          "url": "https://www.maisonmargiela.com/en-us/mm6/men/featured/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 73455
+        },
+        {
+          "url": "https://www.maisonmargiela.com/en-us/maison-margiela/men/featured/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 102268
+        },
+        {
+          "url": "https://www.maisonmargiela.com/en-us/mm6/women/featured/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 72898
+        },
+        {
+          "url": "https://www.maisonmargiela.com/en-us/maison-margiela/women/featured/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 91452
+        }
+      ]
+    },
+    {
+      "brand": "Maison Mihara Yasuhiro",
+      "requestedName": "Maison Mihara Yasuhiro",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.miharayasuhiro.jp/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.miharayasuhiro.jp/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 24531
+        },
+        {
+          "url": "https://www.miharayasuhiro.jp/lp/shoes.php",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 109607
+        }
+      ]
+    },
+    {
+      "brand": "Marine Serre",
+      "requestedName": "Marine Serre",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.marineserre.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.marineserre.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 160827
+        }
+      ]
+    },
+    {
+      "brand": "Martine Rose",
+      "requestedName": "Martine Rose",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.martine-rose.com/collections/shoes"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.martine-rose.com/collections/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 495560
+        },
+        {
+          "url": "https://www.martine-rose.com/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 756477
+        },
+        {
+          "url": "https://www.martine-rose.com/collections/shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 495632
+        },
+        {
+          "url": "https://www.martine-rose.com/collections/shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 39955
+        },
+        {
+          "url": "https://www.martine-rose.com/collections/shoes#",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 495560
+        }
+      ]
+    },
+    {
+      "brand": "Miu Miu",
+      "requestedName": "Miu Miu",
+      "added": 2,
+      "existing": 13,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.miumiu.com/us/en/shoes/c/10207US",
+        "https://www.miumiu.com/us/en/new-arrivals/shoes/c/10202US"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.miumiu.com/us/en/shoes/c/10207US",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1719189
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/new-arrivals/shoes/c/10202US",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 28267
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/new-arrivals/c/10200US",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1735177
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/new-arrivals/bags/c/10201US",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1700851
+        },
+        {
+          "url": "https://www.miumiu.com/content/dam/miumiu/2026/006_e-commerce/09/pop_up_vinyl/menu/shoes.jpg",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 54883
+        }
+      ]
+    },
+    {
+      "brand": "Mizuno",
+      "requestedName": "Mizuno",
+      "added": 0,
+      "existing": 6,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.mizunousa.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.mizunousa.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 79722
+        },
+        {
+          "url": "https://www.mizunousa.com/running/lifestyle-pack",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 495057
+        }
+      ]
+    },
+    {
+      "brand": "MM6 Maison Margiela",
+      "requestedName": "MM6 Maison Margiela",
+      "added": 0,
+      "existing": 1,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.maisonmargiela.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.maisonmargiela.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 43213
+        },
+        {
+          "url": "https://www.maisonmargiela.com/en-us/mm6/men/featured/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 85833
+        },
+        {
+          "url": "https://www.maisonmargiela.com/en-us/maison-margiela/men/featured/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1533727
+        },
+        {
+          "url": "https://www.maisonmargiela.com/en-us/mm6/women/featured/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 72898
+        },
+        {
+          "url": "https://www.maisonmargiela.com/en-us/maison-margiela/women/featured/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1504872
+        },
+        {
+          "url": "https://www.maisonmargiela.com/en-us/maison-margiela/women/shoes/heel-less/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 787994
+        },
+        {
+          "url": "https://www.maisonmargiela.com/en-us/maison-margiela/women/shoes/replica/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 985352
+        }
+      ]
+    },
+    {
+      "brand": "Moncler",
+      "requestedName": "Moncler",
+      "added": 0,
+      "existing": 6,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.moncler.com/en-us/women/shoes"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.moncler.com/en-us/women/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2733710
+        },
+        {
+          "url": "https://www.moncler.com/en-us/women/shoes#main-navigation",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2733826
+        },
+        {
+          "url": "https://www.moncler.com/en-us/women/shoes#main",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2733902
+        }
+      ]
+    },
+    {
+      "brand": "New Balance",
+      "requestedName": "New Balance",
+      "added": 0,
+      "existing": 19,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.newbalance.com/nb-launches/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.newbalance.com/nb-launches/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2507
+        },
+        {
+          "url": "https://www.newbalance.com/women/featured/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2507
+        }
+      ]
+    },
+    {
+      "brand": "Nike",
+      "requestedName": "Nike",
+      "added": 595,
+      "existing": 57,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.nike.com/w/new-shoes-3n82yzy7ok",
+        "https://www.nike.com/at/en/a/kobe-ad-protro-release-info"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 863340
+        },
+        {
+          "url": "https://www.nike.com/w/new-jordan-37eefz3n82y",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 44106
+        },
+        {
+          "url": "https://www.nike.com/w/new-mens-3n82yznik1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 59957
+        },
+        {
+          "url": "https://www.nike.com/w/new-womens-3n82yz5e1x6",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 51621
+        },
+        {
+          "url": "https://www.nike.com/w/new-upcoming-drops-k0gk",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 41309
+        }
+      ]
+    },
+    {
+      "brand": "norda",
+      "requestedName": "Norda",
+      "added": 4,
+      "existing": 21,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://nordarun.com/collections/footwear",
+        "https://www.nordarun.com/collections/mens-trail-running-shoes-1?sort_by=created-descending",
+        "https://www.nordarun.com/collections/new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://nordarun.com/collections/footwear",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 13885
+        },
+        {
+          "url": "https://nordarun.com/collections/new-arrivals/men",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 24288
+        },
+        {
+          "url": "https://nordarun.com/collections/new-arrivals/women",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 24665
+        },
+        {
+          "url": "https://www.nordarun.com/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 26856
+        },
+        {
+          "url": "https://www.nordarun.com/collections/mens-water-resistant-collection?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 598683
+        },
+        {
+          "url": "https://www.nordarun.com/collections/mens-cinder-trail-running-shoes-1?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 601768
+        },
+        {
+          "url": "https://www.nordarun.com/collections/mens-trail-running-shoes-1?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 728619
+        },
+        {
+          "url": "https://www.nordarun.com/collections/mens-black-trail-running-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 597623
+        },
+        {
+          "url": "https://www.nordarun.com/collections/mens-water-resistant-collection/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 31800
+        },
+        {
+          "url": "https://www.nordarun.com/collections/mens-cinder-trail-running-shoes-1/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 41870
+        },
+        {
+          "url": "https://www.nordarun.com/collections/mens-trail-running-shoes-1/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 640201
+        },
+        {
+          "url": "https://www.nordarun.com/collections/mens-black-trail-running-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 30336
+        },
+        {
+          "url": "https://www.nordarun.com/collections/mens-black-trail-running-shoes-1/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 159989
+        },
+        {
+          "url": "https://www.nordarun.com/collections/mens-black-trail-running-shoes-1?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 644362
+        }
+      ]
+    },
+    {
+      "brand": "Oakley Factory Team",
+      "requestedName": "Oakley Factory Team",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.oakley.com/en-us/search?text=Factory%20Team"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.oakley.com/en-us/search?text=Factory%20Team",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2735
+        },
+        {
+          "url": "https://wearebraindead.com/pages/oakley-factory-team",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 394053
+        }
+      ]
+    },
+    {
+      "brand": "Off-White",
+      "requestedName": "Off-White",
+      "added": 52,
+      "existing": 1,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.off---white.com/",
+        "https://www.off---white.com/en-us/new-in/men-new-in/shoes/",
+        "https://www.off---white.com/en-us/new-in/women-new-in/",
+        "https://www.off---white.com/en-us/new-in/men-new-in/",
+        "https://www.off---white.com/en-us/new-in/women-new-in/shoes/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.off---white.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 15389
+        },
+        {
+          "url": "https://www.off---white.com/en-us/new-in/women-new-in/clothing/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 96683
+        },
+        {
+          "url": "https://www.off---white.com/en-us/new-in/women-new-in/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 83788
+        },
+        {
+          "url": "https://www.off---white.com/en-us/new-in/men-new-in/clothing/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 107777
+        },
+        {
+          "url": "https://www.off---white.com/en-us/new-in/women-new-in/shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 117687
+        },
+        {
+          "url": "https://www.off---white.com/en-us/new-in/men-new-in/shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 116868
+        },
+        {
+          "url": "https://www.off---white.com/en-us/new-in/men-new-in/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 115795
+        },
+        {
+          "url": "https://www.off---white.com/en-us/new-in/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 111862
+        }
+      ]
+    },
+    {
+      "brand": "On",
+      "requestedName": "On Running",
+      "added": 270,
+      "existing": 12,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.on.com/en-us/shop/shoes",
+        "https://www.on.com/en-us/shop/new-arrivals/shoes",
+        "https://www.on.com/en-us/shop/new-arrivals",
+        "https://www.on.com/en-us/shop/new-arrivals/womens"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.on.com/en-us/shop/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 170751
+        },
+        {
+          "url": "https://www.on.com/en-us/shop/new-arrivals/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 136600
+        },
+        {
+          "url": "https://www.on.com/en-us/shop/new-arrivals/womens",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 127428
+        },
+        {
+          "url": "https://www.on.com/en-us/shop/new-arrivals/mens",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 89
+        },
+        {
+          "url": "https://www.on.com/en-us/shop/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 183718
+        }
+      ]
+    },
+    {
+      "brand": "Onitsuka Tiger",
+      "requestedName": "Onitsuka Tiger",
+      "added": 0,
+      "existing": 3,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.onitsukatiger.com/us/en-us/new-arrivals/c/0102"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.onitsukatiger.com/us/en-us/new-arrivals/c/0102",
+          "status": 404,
+          "usableResponse": false,
+          "characters": 112871
+        }
+      ]
+    },
+    {
+      "brand": "Ottolinger",
+      "requestedName": "Ottolinger",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.ottolinger.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.ottolinger.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 9360
+        },
+        {
+          "url": "https://www.ottolinger.com/shop/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 180109
+        },
+        {
+          "url": "https://www.ottolinger.com/shop/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 142557
+        }
+      ]
+    },
+    {
+      "brand": "Palm Angels",
+      "requestedName": "Palm Angels",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.palmangels.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.palmangels.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 29558
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/woman/clothing/tracksuits/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 34427
+        },
+        {
+          "url": "https://www.palmangels.com/new-in/?PAHP4=CTA3",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 13992
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/woman/clothing/activewear/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 35354
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/woman/clothing/sweatshirts-and-hoodies/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 32752
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/man/clothing/tracksuits/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 35816
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1232375
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/man/clothing/pants-and-shorts/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 38029
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/woman/clothing/t-shirts-and-tops/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 38177
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/woman/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 41157
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/man/clothing/t-shirts-and-shirts/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 40285
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/man/clothing/sweats-and-jackets/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 27087
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/man/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1240115
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/new-in/woman/clothing/pants-and-skirts/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 30991
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/man/shoes/sneakers/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1047084
+        },
+        {
+          "url": "https://www.palmangels.com/en-us/man/shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1077651
+        }
+      ]
+    },
+    {
+      "brand": "PANE",
+      "requestedName": "Pane",
+      "added": 30,
+      "existing": 11,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://paneshoes.com/collections/women-s",
+        "https://www.paneshoes.com/collections/new-arrivals-1",
+        "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
+        "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s"
+      ],
+      "attempts": [
+        {
+          "url": "https://paneshoes.com/collections/women-s",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 44320
+        },
+        {
+          "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 17352
+        },
+        {
+          "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 48288
+        },
+        {
+          "url": "https://www.paneshoes.com/collections/new-arrivals-1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 45729
+        },
+        {
+          "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 47860
+        }
+      ]
+    },
+    {
+      "brand": "Pierre Hardy",
+      "requestedName": "Pierre Hardy",
+      "added": 28,
+      "existing": 1,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.pierrehardy.com/",
+        "https://www.pierrehardy.com/collections/new-in",
+        "https://www.pierrehardy.com/collections/men-new-in"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.pierrehardy.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 26642
+        },
+        {
+          "url": "https://www.pierrehardy.com/collections/men-new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 38933
+        },
+        {
+          "url": "https://www.pierrehardy.com/collections/women-new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 16423
+        },
+        {
+          "url": "https://www.pierrehardy.com/collections/new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 15848
+        }
+      ]
+    },
+    {
+      "brand": "Prada",
+      "requestedName": "Prada",
+      "added": 5,
+      "existing": 9,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.prada.com/us/en/womens/new-in/c/10111US",
+        "https://www.prada.com/us/en/mens/new-in/c/10182US"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.prada.com/us/en/womens/new-in/c/10111US",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 65527
+        },
+        {
+          "url": "https://www.prada.com/us/en/mens/new-in/c/10182US",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 53976
+        },
+        {
+          "url": "https://www.prada.com/us/en/womens/new-in/c/10111US/page/2",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 74950
+        }
+      ]
+    },
+    {
+      "brand": "Proenza Schouler",
+      "requestedName": "Proenza Schouler",
+      "added": 1,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.proenzaschouler.com/",
+        "https://www.proenzaschouler.com/collections/shoes_taxes-exclusion?sort_by=created-descending"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.proenzaschouler.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 30004
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/new-arrivals-proenza-schouler-monogram",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 16958
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/pre-fall-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 228404
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/new-arrivals-ad-ss26",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 30019
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/new-arrivals-proenza-schouler",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1262708
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/pf-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 241703
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/new-arrivals-proenza-schouler-flip",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 48622
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/new-arrivals-proenza-schouler-park",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 48651
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/new-arrivals-white-label",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1179399
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/pin-sneaker?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 200712
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/shoes_taxes-exclusion?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 975533
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/lug-sole-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 201066
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 978229
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/pin-sneaker/products.json?limit=250",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 15
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/shoes_taxes-exclusion/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1403331
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/lug-sole-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 15
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1315782
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/new-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 262141
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/new-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 653449
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 434234
+        },
+        {
+          "url": "https://www.proenzaschouler.com/collections/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 990265
+        }
+      ]
+    },
+    {
+      "brand": "PUMA",
+      "requestedName": "Puma",
+      "added": 0,
+      "existing": 22,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://us.puma.com/us/en/women/new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://us.puma.com/us/en/women/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1475203
+        },
+        {
+          "url": "https://us.puma.com/us/en/men/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 33422
+        },
+        {
+          "url": "https://us.puma.com/us/en/women/new-arrivals#puma-skip-here",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1475203
+        },
+        {
+          "url": "https://us.puma.com/us/en/women/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1537048
+        },
+        {
+          "url": "https://us.puma.com/us/en/launch-calendar",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1074439
+        },
+        {
+          "url": "https://us.puma.com/us/en/sport/running/running-shoe-finder",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 979510
+        }
+      ]
+    },
+    {
+      "brand": "Rabanne",
+      "requestedName": "Rabanne",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.rabanne.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.rabanne.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 11750
+        }
+      ]
+    },
+    {
+      "brand": "Reebok",
+      "requestedName": "Reebok",
+      "added": 102,
+      "existing": 5,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.reebok.com/c/shoes",
+        "https://www.reebok.com/collections/womens-new-arrivals",
+        "https://www.reebok.com/collections/mens-new-arrivals",
+        "https://www.reebok.com/collections/kids-new-arrivals",
+        "https://www.reebok.com/collections/ltd-new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.reebok.com/c/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 58203
+        },
+        {
+          "url": "https://www.reebok.com/collections/ltd-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 64201
+        },
+        {
+          "url": "https://www.reebok.com/collections/womens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 185529
+        },
+        {
+          "url": "https://www.reebok.com/collections/new-arrivals-clothing",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 140545
+        },
+        {
+          "url": "https://www.reebok.com/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 160340
+        },
+        {
+          "url": "https://www.reebok.com/collections/mens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 65312
+        }
+      ]
+    },
+    {
+      "brand": "Repetto",
+      "requestedName": "Repetto",
+      "added": 0,
+      "existing": 4,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.repetto.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.repetto.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 16770
+        },
+        {
+          "url": "https://repetto.com/cdn/shop/files/tennissilkduo.jpg?v=1775742920",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 425307
+        },
+        {
+          "url": "https://repetto.com/cdn/shop/files/c8a5fe64-196f-4da5-8415-3476b21b79b2.jpg?v=1775742920",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 59176
+        }
+      ]
+    },
+    {
+      "brand": "Rhude",
+      "requestedName": "Rhude",
+      "added": 1,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.rh-ude.com/",
+        "https://www.rh-ude.com/collections/womens-footwear?sort_by=created-descending"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.rh-ude.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 84983
+        },
+        {
+          "url": "https://www.rh-ude.com/collections/womens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 346072
+        },
+        {
+          "url": "https://rh-ude.com/collections/womens-shop-all",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 502783
+        },
+        {
+          "url": "https://www.rh-ude.com/collections/footwear-all?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 382824
+        },
+        {
+          "url": "https://www.rh-ude.com/collections/sneakers?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 383094
+        },
+        {
+          "url": "https://www.rh-ude.com/collections/footwear-all/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 5007
+        },
+        {
+          "url": "https://www.rh-ude.com/collections/sneakers/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 5007
+        },
+        {
+          "url": "https://www.rh-ude.com/collections/womens-footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 6051
+        },
+        {
+          "url": "https://www.rh-ude.com/collections/womens-footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 385208
+        },
+        {
+          "url": "https://www.rh-ude.com/collections/sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 382959
+        },
+        {
+          "url": "https://www.rh-ude.com/collections/ss22-footwear-women",
+          "status": 404,
+          "usableResponse": false,
+          "characters": 334090
+        }
+      ]
+    },
+    {
+      "brand": "Rick Owens",
+      "requestedName": "Rick Owens",
+      "added": 195,
+      "existing": 3,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.rickowens.eu/",
+        "https://www.rickowens.eu/collections/homepage-new-arrivals",
+        "https://www.rickowens.eu/collections/new-arrivals-women-all",
+        "https://www.rickowens.eu/collections/new-arrivals-men-1"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.rickowens.eu/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 13132
+        },
+        {
+          "url": "https://www.rickowens.eu/collections/new-arrivals-men-1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 14581
+        },
+        {
+          "url": "https://www.rickowens.eu/collections/new-arrivals-women-all",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 14231
+        },
+        {
+          "url": "https://www.rickowens.eu/collections/homepage-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 12534
+        }
+      ]
+    },
+    {
+      "brand": "ROA",
+      "requestedName": "ROA",
+      "added": 8,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.roa-hiking.com/",
+        "https://www.roa-hiking.com/collections/shoes?sort_by=created-descending",
+        "https://www.roa-hiking.com/collections/spring-summer-26-footwear?sort_by=created-descending"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.roa-hiking.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 41785
+        },
+        {
+          "url": "https://www.roa-hiking.com/collections/spring-summer-26-footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1037633
+        },
+        {
+          "url": "https://www.roa-hiking.com/collections/fall-winter-26-footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1114993
+        },
+        {
+          "url": "https://www.roa-hiking.com/collections/spring-summer-26-footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 190256
+        },
+        {
+          "url": "https://www.roa-hiking.com/collections/fall-winter-26-footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 147640
+        },
+        {
+          "url": "https://www.roa-hiking.com/collections/shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 838546
+        },
+        {
+          "url": "https://www.roa-hiking.com/collections/shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2751045
+        },
+        {
+          "url": "https://www.roa-hiking.com/en-us/collections/fall-winter-26-footwear",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1114939
+        },
+        {
+          "url": "https://www.roa-hiking.com/en-us/collections/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2750991
+        }
+      ]
+    },
+    {
+      "brand": "Roger Vivier",
+      "requestedName": "Roger Vivier",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.rogervivier.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.rogervivier.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 378033
+        }
+      ]
+    },
+    {
+      "brand": "sacai",
+      "requestedName": "Sacai",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.sacai.jp/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.sacai.jp/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 51274
+        },
+        {
+          "url": "https://www.sacai.jp/collections/new-arrivals-women-clothing",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 671180
+        },
+        {
+          "url": "https://www.sacai.jp/collections/new-arrivals-men-clothing",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 58744
+        },
+        {
+          "url": "https://www.sacai.jp/collections/new-arrivals-man",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 58635
+        },
+        {
+          "url": "https://www.sacai.jp/collections/new-arrivals-women",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 627228
+        },
+        {
+          "url": "https://www.sacai.jp/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 58676
+        },
+        {
+          "url": "https://www.sacai.jp/collections/new-arrivals-anybody-clothing",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 54502
+        },
+        {
+          "url": "https://www.sacai.jp/collections/new-arrivals-anybody",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 54259
+        },
+        {
+          "url": "https://www.sacai.jp/collections/all-anybody-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 523380
+        },
+        {
+          "url": "https://www.sacai.jp/collections/all-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 590784
+        },
+        {
+          "url": "https://www.sacai.jp/collections/men-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 552761
+        },
+        {
+          "url": "https://www.sacai.jp/collections/women-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 570847
+        },
+        {
+          "url": "https://www.sacai.jp/collections/all-anybody-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 15
+        },
+        {
+          "url": "https://www.sacai.jp/collections/all-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 27468
+        },
+        {
+          "url": "https://www.sacai.jp/collections/men-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 9929
+        },
+        {
+          "url": "https://www.sacai.jp/collections/women-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 17553
+        }
+      ]
+    },
+    {
+      "brand": "Saint Laurent",
+      "requestedName": "Saint Laurent",
+      "added": 0,
+      "existing": 1,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.ysl.com/en-us/ca/women/shoes"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.ysl.com/en-us/ca/women/shoes",
+          "status": 404,
+          "usableResponse": false,
+          "characters": 290219
+        }
+      ]
+    },
+    {
+      "brand": "Salomon",
+      "requestedName": "Salomon",
+      "added": 0,
+      "existing": 7,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.salomon.com/en-us/c/women/shoes"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.salomon.com/en-us/c/women/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 697860
+        },
+        {
+          "url": "https://www.salomon.com/en-us/c/new/inspiration",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 570162
+        },
+        {
+          "url": "https://www.salomon.com/en-us/c/women/shoes#main-content",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 697860
+        },
+        {
+          "url": "https://www.salomon.com/en-us/c/men/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 771113
+        },
+        {
+          "url": "https://www.salomon.com/en-us/c/women/shoes#",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 697861
+        }
+      ]
+    },
+    {
+      "brand": "Santoni",
+      "requestedName": "Santoni",
+      "added": 0,
+      "existing": 1,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.santonishoes.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.santonishoes.com/",
+          "status": 403,
+          "usableResponse": false,
+          "characters": 5475
+        }
+      ]
+    },
+    {
+      "brand": "Saucony",
+      "requestedName": "Saucony",
+      "added": 0,
+      "existing": 1,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.saucony.com/en/new-arrivals/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1433543
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=bestFor&prefv1=Running&prefn2=isOnSale&prefv2=false",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 138317
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=offset&prefv2=12mm",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 52942
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=12.5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 116853
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=bestFor&prefv1=Hike&prefn2=isOnSale&prefv2=false",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 80111
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=offset&prefv2=6mm",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 217
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=10.5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 162676
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=8.5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 162754
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=9",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 162378
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=7",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 168524
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=offset&prefv2=8mm",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 98319
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=bestFor&prefv1=Trail&prefn2=isOnSale&prefv2=false",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 85296
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=13",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 149297
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=bestFor&prefv1=trailrunning&prefn2=isOnSale&prefv2=false",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 58890
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=15",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 105368
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=14",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 137957
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=12",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 164524
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=5.5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 152870
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=surface&prefv2=Road",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 149725
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=6.5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 162606
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=11.5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 173673
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=surface&prefv2=Treadmill",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 133922
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&start=48&sz=48",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 142272
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=7.5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 175620
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=16",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 62109
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=10",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 162852
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=bestFor&prefv1=Race%20Day&prefn2=isOnSale&prefv2=false",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 78824
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=4",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 90940
+        },
+        {
+          "url": "https://www.saucony.com/en/mens-new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1144747
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=width&prefv2=Medium",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 180141
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 151574
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=offset&prefv2=10mm",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 61291
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=bestFor&prefv1=Lifestyle&prefn2=isOnSale&prefv2=false",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 82912
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=4.5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 91135
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=8",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 162378
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=surface&prefv2=Trail",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 75598
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=width&prefv2=Extra%20Wide",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 57372
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=3.5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 90382
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=11",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 162852
+        },
+        {
+          "url": "https://www.saucony.com/en/womens-new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 133572
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=offset&prefv2=4mm",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 217
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=6",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 155371
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=size&prefv2=9.5",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 163042
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=bestFor&prefv1=Walking&prefn2=isOnSale&prefv2=false",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 115022
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/?prefn1=isOnSale&prefv1=false&prefn2=width&prefv2=Wide",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 217
+        },
+        {
+          "url": "https://www.saucony.com/en/mens-running/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1431194
+        },
+        {
+          "url": "https://www.saucony.com/en/new-arrivals/#main",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1433543
+        },
+        {
+          "url": "https://www.saucony.com/en/mens-trail-running-shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 520715
+        }
+      ]
+    },
+    {
+      "brand": "Saul Nash",
+      "requestedName": "Saul Nash",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.saulnash.co.uk/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.saulnash.co.uk/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 491763
+        }
+      ]
+    },
+    {
+      "brand": "Simone Rocha",
+      "requestedName": "Simone Rocha",
+      "added": 3,
+      "existing": 6,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.simonerocha.com/",
+        "https://www.simonerocha.com/collections/womenswear"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.simonerocha.com/",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 130
+        },
+        {
+          "url": "https://www.simonerocha.com/collections/womenswear",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 152
+        },
+        {
+          "url": "https://www.simonerocha.com/collections/menswear",
+          "status": 200,
+          "usableResponse": false,
+          "characters": 150
+        }
+      ]
+    },
+    {
+      "brand": "Song for the Mute",
+      "requestedName": "Song for the Mute",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.songforthemute.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.songforthemute.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 122197
+        }
+      ]
+    },
+    {
+      "brand": "Soshiotsuki",
+      "requestedName": "Soshiotsuki",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.soshiotsuki.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.soshiotsuki.com/",
+          "status": 0,
+          "usableResponse": false,
+          "characters": 0
+        }
+      ]
+    },
+    {
+      "brand": "Stella McCartney",
+      "requestedName": "Stella McCartney",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.stellamccartney.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.stellamccartney.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 82924
+        },
+        {
+          "url": "https://www.stellamccartney.com/us/en/adidas/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 250481
+        },
+        {
+          "url": "https://www.stellamccartney.com/us/en/women/shoes/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1903622
+        },
+        {
+          "url": "https://www.stellamccartney.com/us/en/women/new-in",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1707302
+        },
+        {
+          "url": "https://www.stellamccartney.com/us/en/women/shoes",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1974986
+        },
+        {
+          "url": "https://www.stellamccartney.com/us/en/women/ready-to-wear/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1780175
+        }
+      ]
+    },
+    {
+      "brand": "Stone Island",
+      "requestedName": "Stone Island",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.stoneisland.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.stoneisland.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 27498
+        },
+        {
+          "url": "https://www.stoneisland.com/en-us/collection/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 32220
+        }
+      ]
+    },
+    {
+      "brand": "The Row",
+      "requestedName": "The Row",
+      "added": 13,
+      "existing": 1,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.therow.com/",
+        "https://www.therow.com/collections/men-shoes?sort_by=created-descending",
+        "https://www.therow.com/collections/women-sneakers?sort_by=created-descending"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.therow.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 26923
+        },
+        {
+          "url": "https://www.therow.com/collections/men-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 95676
+        },
+        {
+          "url": "https://www.therow.com/collections/women-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1843793
+        },
+        {
+          "url": "https://www.therow.com/collections/women-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1992209
+        },
+        {
+          "url": "https://www.therow.com/collections/women-sneakers?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 830057
+        },
+        {
+          "url": "https://www.therow.com/collections/women-shoes/products.json?limit=250",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 8759
+        },
+        {
+          "url": "https://www.therow.com/collections/women-sneakers/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 56728
+        },
+        {
+          "url": "https://www.therow.com/collections/men-shoes/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 417545
+        },
+        {
+          "url": "https://www.therow.com/collections/women-essential-footwear?sort_by=created-descending",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 8828
+        },
+        {
+          "url": "https://www.therow.com/collections/men-shoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1960455
+        },
+        {
+          "url": "https://www.therow.com/collections/women-sneakers",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 829957
+        },
+        {
+          "url": "https://www.therow.com/collections/handbags-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1354938
+        }
+      ]
+    },
+    {
+      "brand": "Thom Browne",
+      "requestedName": "Thom Browne",
+      "added": 5,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.thombrowne.com/",
+        "https://www.thombrowne.com/collections/mens-new-arrivals",
+        "https://www.thombrowne.com/collections/womens-new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.thombrowne.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 38848
+        },
+        {
+          "url": "https://www.thombrowne.com/collections/mens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 59257
+        },
+        {
+          "url": "https://www.thombrowne.com/collections/womens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 58281
+        }
+      ]
+    },
+    {
+      "brand": "Tod's",
+      "requestedName": "Tod's",
+      "added": 0,
+      "existing": 3,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.tods.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.tods.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 562503
+        }
+      ]
+    },
+    {
+      "brand": "Tory Burch",
+      "requestedName": "Tory Burch",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.toryburch.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.toryburch.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 35729
+        },
+        {
+          "url": "https://www.toryburch.com/en-us/clothing/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 69508
+        },
+        {
+          "url": "https://www.toryburch.com/en-us/shoes/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 50694
+        },
+        {
+          "url": "https://www.toryburch.com/en-us/new-arrivals/runway-shop/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 50694
+        },
+        {
+          "url": "https://www.toryburch.com/en-us/new-arrivals/tory-burch-foundation/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 40923
+        },
+        {
+          "url": "https://www.toryburch.com/en-us/sport/clothing/new-arrivals/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 41924
+        },
+        {
+          "url": "https://www.toryburch.com/en-us/new-arrivals/view-all/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 50695
+        },
+        {
+          "url": "https://www.toryburch.com/en-us/fall-event/shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 50694
+        }
+      ]
+    },
+    {
+      "brand": "Umbro",
+      "requestedName": "Umbro",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.umbro.com/en/style/?categories=1726"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.umbro.com/en/style/?categories=1726",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 174439
+        }
+      ]
+    },
+    {
+      "brand": "Undercover",
+      "requestedName": "Undercover",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.undercoverism.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.undercoverism.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 24433
+        },
+        {
+          "url": "https://www.undercoverism.com/gender/womens/item?is_secret=1&new=365&order_by=1&sold=1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 14387
+        },
+        {
+          "url": "https://www.undercoverism.com/gender/all/undercoveraccessory?category_id=823&is_secret=1&order_by=1&sold=1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 14003
+        },
+        {
+          "url": "https://www.undercoverism.com/gender/womens/item",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 14349
+        },
+        {
+          "url": "https://www.undercoverism.com/gender/mens/item?is_secret=1&new=365&order_by=1&sold=1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 245012
+        },
+        {
+          "url": "https://www.undercoverism.com/gender/item?is_secret=1&new=365&order_by=1&sold=1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 243724
+        },
+        {
+          "url": "https://www.undercoverism.com/gender/undercoveraccessory?category_id=823&is_secret=1&order_by=1&sold=1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 13999
+        },
+        {
+          "url": "https://www.undercoverism.com/gender/item?is_secret=1&order_by=1&sold=1",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 14326
+        }
+      ]
+    },
+    {
+      "brand": "Valentino Garavani",
+      "requestedName": "Valentino Garavani",
+      "added": 6,
+      "existing": 3,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.valentino.com/",
+        "https://www.valentino.com/en-us/women/new-arrivals",
+        "https://www.valentino.com/en-us/men/new-arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.valentino.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 104979
+        },
+        {
+          "url": "https://www.valentino.com/en-us/women/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 201872
+        },
+        {
+          "url": "https://www.valentino.com/en-us/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 201824
+        },
+        {
+          "url": "https://www.valentino.com/en-us/men/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 215788
+        }
+      ]
+    },
+    {
+      "brand": "Vans",
+      "requestedName": "Vans",
+      "added": 0,
+      "existing": 1,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.vans.com/en-us/categories/shoes-c00081"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.vans.com/en-us/categories/shoes-c00081",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 964141
+        },
+        {
+          "url": "https://www.vans.com/en-us/c/new-arrivals-5250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 760391
+        },
+        {
+          "url": "https://www.vans.com/en-us/c/shoes-00081",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 964141
+        },
+        {
+          "url": "https://www.vans.com/en-us/categories/shoes-c00081#main-content",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 964141
+        }
+      ]
+    },
+    {
+      "brand": "Versace",
+      "requestedName": "Versace",
+      "added": 2,
+      "existing": 1,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.versace.com/",
+        "https://www.versace.com/us/en/men/new-arrivals-for-him/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.versace.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 133241
+        },
+        {
+          "url": "https://www.versace.com/us/en/women/new-arrivals-for-her/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1101491
+        },
+        {
+          "url": "https://www.versace.com/us/en/men/new-arrivals-for-him/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 140084
+        },
+        {
+          "url": "https://www.versace.com/us/en/women/shoes/pumps-slingbacks/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1139795
+        },
+        {
+          "url": "https://www.versace.com/on/demandware.static/-/Sites-ver-us-storefront-catalog/default/dw0cc5769a/W_Newin_270826.jpg",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 108942
+        },
+        {
+          "url": "https://www.versace.com/us/en/women/shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1137365
+        }
+      ]
+    },
+    {
+      "brand": "VETEMENTS",
+      "requestedName": "Vetements",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.vetementswebsite.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.vetementswebsite.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 478537
+        }
+      ]
+    },
+    {
+      "brand": "Visvim",
+      "requestedName": "Visvim",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.visvim.tv/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.visvim.tv/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 44014
+        }
+      ]
+    },
+    {
+      "brand": "Wales Bonner",
+      "requestedName": "Wales Bonner",
+      "added": 4,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.walesbonner.com/",
+        "https://www.walesbonner.com/collections/footwear?sort_by=created-descending"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.walesbonner.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 11618
+        },
+        {
+          "url": "https://www.walesbonner.com/collections/footwear-menswear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 186474
+        },
+        {
+          "url": "https://www.walesbonner.com/collections/adidas-spring-summer-2026-footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 168147
+        },
+        {
+          "url": "https://www.walesbonner.com/collections/footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 212297
+        },
+        {
+          "url": "https://www.walesbonner.com/collections/footwear-menswear/products.json?limit=250",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 8803
+        },
+        {
+          "url": "https://www.walesbonner.com/collections/adidas-spring-summer-2026-footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 75428
+        },
+        {
+          "url": "https://www.walesbonner.com/collections/footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 200628
+        },
+        {
+          "url": "https://www.walesbonner.com/collections/footwear-womenswear?sort_by=created-descending",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 8818
+        },
+        {
+          "url": "https://www.walesbonner.com/collections/footwear-womenswear",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 211752
+        },
+        {
+          "url": "https://www.walesbonner.com/collections/footwear-menswear",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 186447
+        }
+      ]
+    },
+    {
+      "brand": "Willy Chavarria",
+      "requestedName": "Willy Chavarria",
+      "added": 0,
+      "existing": 0,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.willychavarria.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.willychavarria.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 25136
+        },
+        {
+          "url": "https://www.willychavarria.com/collections/mens-new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 2303866
+        },
+        {
+          "url": "https://www.willychavarria.com/collections/new-arrivals",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 494938
+        },
+        {
+          "url": "https://www.willychavarria.com/collections/footwear/products.json?limit=250",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 14997
+        },
+        {
+          "url": "https://www.willychavarria.com/collections/footwear?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 369287
+        }
+      ]
+    },
+    {
+      "brand": "Y-3",
+      "requestedName": "Y-3",
+      "added": 0,
+      "existing": 4,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.adidas.com/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.adidas.com/",
+          "status": 403,
+          "usableResponse": false,
+          "characters": 9737
+        }
+      ]
+    },
+    {
+      "brand": "Yohji Yamamoto",
+      "requestedName": "Yohji Yamamoto",
+      "added": 4,
+      "existing": 0,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.theshopyohjiyamamoto.com/",
+        "https://www.theshopyohjiyamamoto.com/collections/new"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.theshopyohjiyamamoto.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 51264
+        },
+        {
+          "url": "https://www.theshopyohjiyamamoto.com/collections/new?filter.p.m.attr.gender=MEN&filter.v.availability=1&filter.p.m.attr.newState=all-others&filter.p.m.attr.newState=new",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 114378
+        },
+        {
+          "url": "https://www.theshopyohjiyamamoto.com/collections/new?filter.p.m.attr.gender=ALL&filter.v.availability=1&filter.p.m.attr.newState=all-others&filter.p.m.attr.newState=new",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 107468
+        },
+        {
+          "url": "https://www.theshopyohjiyamamoto.com/collections/new?filter.p.m.attr.gender=WOMEN&filter.v.availability=1&filter.p.m.attr.newState=all-others&filter.p.m.attr.newState=new",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 105681
+        },
+        {
+          "url": "https://www.theshopyohjiyamamoto.com/collections/elfnew",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 32033
+        },
+        {
+          "url": "https://www.theshopyohjiyamamoto.com/collections/new",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 96178
+        },
+        {
+          "url": "https://www.theshopyohjiyamamoto.com/collections/shoes?sort_by=created-descending",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 8785
+        },
+        {
+          "url": "https://www.theshopyohjiyamamoto.com/collections/gyshoes/products.json?limit=250",
+          "status": 429,
+          "usableResponse": false,
+          "characters": 8782
+        },
+        {
+          "url": "https://www.theshopyohjiyamamoto.com/collections/gyshoes?sort_by=created-descending",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 1091385
+        }
+      ]
+    },
+    {
+      "brand": "Zegna",
+      "requestedName": "Zegna",
+      "added": 2,
+      "existing": 2,
+      "status": "verified-products-added",
+      "exhaustive": false,
+      "note": "공식 근거가 확보된 상품 반영. 모든 지역·과거 3개월 전체 상품의 완전성은 미확인.",
+      "sourceUrls": [
+        "https://www.zegna.com/",
+        "https://www.zegna.com/us-en/new-in/"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.zegna.com/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 28760
+        },
+        {
+          "url": "https://www.zegna.com/us-en/new-in/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 161621
+        },
+        {
+          "url": "https://www.zegna.com/us-en/232-sneakers/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 33068
+        },
+        {
+          "url": "https://www.zegna.com/us-en/shoes/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 162599
+        },
+        {
+          "url": "https://www.zegna.com/us-en/shoes/loafers/",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 167157
+        },
+        {
+          "url": "https://www.zegna.com/content/dam/zegna-commerce/editorials/ratio071/new-menu/hub-single-column/desktop/fw26/_1_new-in/fw26-mads-mikkelsen-grey-suit-fitting-room-4_HUB-single-column-desktop.webp",
+          "status": 200,
+          "usableResponse": true,
+          "characters": 131503
+        }
+      ]
+    },
+    {
+      "brand": "adidas",
+      "requestedName": "adidas",
+      "added": 0,
+      "existing": 30,
+      "status": "needs-review",
+      "exhaustive": false,
+      "note": "접근 제한, 신상품 근거 부족 또는 신규 스니커즈 미확인. 신상품 0건으로 단정하지 않음.",
+      "sourceUrls": [
+        "https://www.adidas.com/us/shoes-new_arrivals"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.adidas.com/us/shoes-new_arrivals",
+          "status": 403,
+          "usableResponse": false,
+          "characters": 9890
+        }
+      ]
+    }
+  ]
+}
