@@ -1,6 +1,15 @@
 {
-  "status": "initial package",
+  "status": "manual research update",
+  "updated_at": "2026-09-23 14:30 KST",
   "mandatory_brand_count": 116,
   "total_monitored_brands": 157,
-  "note": "Sergio Tacchini excluded from monitoring by user request. First GitHub Action run will populate per-brand coverage."
+  "product_count": 515,
+  "new_items_this_update": 20,
+  "brands_added_this_update": [
+    "Chanel", "Fendi", "Berluti", "Tory Burch", "DSQUARED2", "Kenzo",
+    "Visvim", "Marine Serre", "Palm Angels", "Thom Browne", "Alo",
+    "Song for the Mute", "Martine Rose", "Roger Vivier", "Proenza Schouler",
+    "Bally", "Feng Chen Wang", "Stella McCartney"
+  ],
+  "note": "GitHub Actions daily automation (Playwright + client-side Jina crawler) has been failing on every recent run, so this update was compiled manually: each brand's official product page (or an authorized retailer PDP) was fetched directly, verified for a real PDP URL, direct product image, and style/reference code, then added to SEED_PRODUCTS. Remaining mandatory brands with zero verified sneaker products (no confirmed exact-match PDP/image found within time budget, or the brand currently has no true sneaker in its lineup): Alaïa, Amina Muaddi, Avavav, Balmain, Casablanca, Chloé, Comme des Garçons Homme Plus, Coperni, Courrèges, Craig Green, Fear of God, Feng Chen Wang(partial), Hender Scheme, Issey Miyake, Jil Sander, Junya Watanabe, Khaite, Kiko Kostadinov, Kolor, Loro Piana, Lululemon, Mach & Mach, Maison Mihara Yasuhiro, Oakley Factory Team, Ottolinger, Rabanne, Rhude, ROA, Saul Nash, Soshiotsuki, Thom Browne(partial covered), Umbro, Undercover, VETEMENTS, Wales Bonner, Willy Chavarria, Yohji Yamamoto, sacai, Ferragamo, Berluti(partial covered), Loro Piana. The automated daily-update.yml workflow still needs a real fix (likely blocked network egress or missing/invalid JINA_API_KEY secret in GitHub Actions) before it can run unattended again."
 }
