@@ -1,48 +1,29 @@
 {
-  "updated_at": "2026-09-26 10:14 KST",
-  "product_count": 2233,
+  "updated_at": "2026-09-27 10:12 KST",
+  "product_count": 2244,
   "mandatory_brand_count": 116,
   "mandatory_failed": [
     "ASICS",
-    "Berluti",
-    "Celine",
-    "Chanel",
     "Chloé",
     "Common Projects",
-    "Converse",
     "Dior",
-    "Fendi",
-    "Givenchy",
     "Gucci",
     "Jacquemus",
     "Kiko Kostadinov",
-    "Loro Piana",
     "Louis Vuitton",
     "Lululemon",
+    "New Balance",
     "Oakley Factory Team",
     "Saint Laurent",
     "Soshiotsuki",
-    "Undercover",
+    "Tod's",
     "Vans"
   ],
   "mandatory_missing": [],
-  "new_items": 5,
+  "new_items": 11,
   "source_checks_complete": false,
   "catalog_exhaustive": false,
   "coverage": [
-    {
-      "brand": "Alaïa",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:00 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
     {
       "brand": "Jil Sander",
       "found": 0,
@@ -52,7 +33,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:00 KST",
+      "checkedAt": "2026-09-27 10:00 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Alaïa",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:00 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -65,7 +59,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:00 KST",
+      "checkedAt": "2026-09-27 10:00 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -78,7 +72,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:00 KST",
+      "checkedAt": "2026-09-27 10:00 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -91,7 +85,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:00 KST",
+      "checkedAt": "2026-09-27 10:00 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -104,20 +98,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:01 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Ferragamo",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:01 KST",
+      "checkedAt": "2026-09-27 10:00 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -130,20 +111,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:01 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Comme des Garçons Homme Plus",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:01 KST",
+      "checkedAt": "2026-09-27 10:00 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -156,7 +124,33 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:01 KST",
+      "checkedAt": "2026-09-27 10:00 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Comme des Garçons Homme Plus",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:00 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Ferragamo",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:00 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -169,7 +163,33 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:01 KST",
+      "checkedAt": "2026-09-27 10:00 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Undercover",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:00 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Kolor",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:00 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -183,9 +203,22 @@
         "Chloé Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:01 KST",
+      "checkedAt": "2026-09-27 10:00 KST",
       "try": 3,
       "status": "NO_RESPONSE"
+    },
+    {
+      "brand": "Maison Mihara Yasuhiro",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:00 KST",
+      "try": 1,
+      "status": "CHECKED"
     },
     {
       "brand": "Kiko Kostadinov",
@@ -197,47 +230,7 @@
         "Kiko Kostadinov Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:01 KST",
-      "try": 3,
-      "status": "NO_RESPONSE"
-    },
-    {
-      "brand": "Kolor",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:01 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Maison Mihara Yasuhiro",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:01 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Undercover",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 0,
-      "errors": [
-        "Undercover Official daily source: Source returned no usable page",
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:01 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 3,
       "status": "NO_RESPONSE"
     },
@@ -250,20 +243,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:01 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Kenzo",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -276,7 +256,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -285,25 +265,11 @@
       "found": 0,
       "total": 0,
       "attempts": 2,
-      "responses": 0,
-      "errors": [
-        "Loro Piana Official daily source: Source returned no usable page",
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:02 KST",
-      "try": 3,
-      "status": "NO_RESPONSE"
-    },
-    {
-      "brand": "Mach & Mach",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
       "responses": 1,
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -316,12 +282,12 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
-      "try": 2,
+      "checkedAt": "2026-09-27 10:01 KST",
+      "try": 1,
       "status": "CHECKED"
     },
     {
-      "brand": "Amina Muaddi",
+      "brand": "Kenzo",
       "found": 0,
       "total": 0,
       "attempts": 2,
@@ -329,7 +295,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Mach & Mach",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -342,7 +321,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Amina Muaddi",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -355,7 +347,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -368,7 +360,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -381,7 +373,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -394,7 +386,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -407,7 +399,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -420,7 +412,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -433,7 +425,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:02 KST",
+      "checkedAt": "2026-09-27 10:01 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -446,7 +438,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:03 KST",
+      "checkedAt": "2026-09-27 10:02 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -460,7 +452,21 @@
         "Soshiotsuki Official daily source: Source HTTP 422",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:03 KST",
+      "checkedAt": "2026-09-27 10:02 KST",
+      "try": 3,
+      "status": "NO_RESPONSE"
+    },
+    {
+      "brand": "Saint Laurent",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 0,
+      "errors": [
+        "Saint Laurent Official daily source: Source returned no usable page",
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:02 KST",
       "try": 3,
       "status": "NO_RESPONSE"
     },
@@ -473,23 +479,9 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:03 KST",
+      "checkedAt": "2026-09-27 10:02 KST",
       "try": 1,
       "status": "CHECKED"
-    },
-    {
-      "brand": "Saint Laurent",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 0,
-      "errors": [
-        "Saint Laurent Official daily source: Source returned no usable page",
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:03 KST",
-      "try": 3,
-      "status": "NO_RESPONSE"
     },
     {
       "brand": "MM6 Maison Margiela",
@@ -500,20 +492,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:03 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Marine Serre",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:03 KST",
+      "checkedAt": "2026-09-27 10:02 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -528,26 +507,12 @@
         "Oakley Factory Team Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:03 KST",
+      "checkedAt": "2026-09-27 10:02 KST",
       "try": 3,
       "status": "NO_RESPONSE"
     },
     {
-      "brand": "Fendi",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 0,
-      "errors": [
-        "Fendi Official daily source: Source returned no usable page",
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:03 KST",
-      "try": 3,
-      "status": "NO_RESPONSE"
-    },
-    {
-      "brand": "Stella McCartney",
+      "brand": "Marine Serre",
       "found": 0,
       "total": 0,
       "attempts": 2,
@@ -555,8 +520,21 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:03 KST",
+      "checkedAt": "2026-09-27 10:02 KST",
       "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Fendi",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:02 KST",
+      "try": 2,
       "status": "CHECKED"
     },
     {
@@ -568,7 +546,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:04 KST",
+      "checkedAt": "2026-09-27 10:02 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -577,25 +555,24 @@
       "found": 0,
       "total": 0,
       "attempts": 2,
-      "responses": 0,
+      "responses": 1,
       "errors": [
-        "Chanel Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:04 KST",
-      "try": 3,
-      "status": "NO_RESPONSE"
+      "checkedAt": "2026-09-27 10:02 KST",
+      "try": 1,
+      "status": "CHECKED"
     },
     {
-      "brand": "Rhude",
+      "brand": "Stella McCartney",
       "found": 0,
       "total": 0,
-      "attempts": 3,
-      "responses": 2,
+      "attempts": 2,
+      "responses": 1,
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:04 KST",
+      "checkedAt": "2026-09-27 10:03 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -608,7 +585,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:04 KST",
+      "checkedAt": "2026-09-27 10:03 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Rhude",
+      "found": 0,
+      "total": 0,
+      "attempts": 3,
+      "responses": 2,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:03 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -621,7 +611,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:04 KST",
+      "checkedAt": "2026-09-27 10:03 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -634,7 +624,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:04 KST",
+      "checkedAt": "2026-09-27 10:03 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -648,7 +638,7 @@
         "Vans Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:04 KST",
+      "checkedAt": "2026-09-27 10:03 KST",
       "try": 3,
       "status": "NO_RESPONSE"
     },
@@ -661,7 +651,33 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:04 KST",
+      "checkedAt": "2026-09-27 10:03 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Givenchy",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:03 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Burberry",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:03 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -674,7 +690,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:04 KST",
+      "checkedAt": "2026-09-27 10:03 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "DSQUARED2",
+      "found": 1,
+      "total": 1,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:03 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -688,49 +717,9 @@
         "Common Projects Official daily source: Source HTTP 422",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:04 KST",
+      "checkedAt": "2026-09-27 10:03 KST",
       "try": 3,
       "status": "NO_RESPONSE"
-    },
-    {
-      "brand": "Burberry",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:04 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Givenchy",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 0,
-      "errors": [
-        "Givenchy Official daily source: Source returned no usable page",
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:05 KST",
-      "try": 3,
-      "status": "NO_RESPONSE"
-    },
-    {
-      "brand": "DSQUARED2",
-      "found": 1,
-      "total": 1,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:05 KST",
-      "try": 1,
-      "status": "CHECKED"
     },
     {
       "brand": "Balenciaga",
@@ -741,20 +730,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:05 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Onitsuka Tiger",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:05 KST",
+      "checkedAt": "2026-09-27 10:04 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -767,12 +743,12 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:05 KST",
+      "checkedAt": "2026-09-27 10:04 KST",
       "try": 1,
       "status": "CHECKED"
     },
     {
-      "brand": "Tod's",
+      "brand": "Onitsuka Tiger",
       "found": 0,
       "total": 0,
       "attempts": 2,
@@ -780,7 +756,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:05 KST",
+      "checkedAt": "2026-09-27 10:04 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -793,7 +769,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:05 KST",
+      "checkedAt": "2026-09-27 10:04 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -806,7 +782,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:05 KST",
+      "checkedAt": "2026-09-27 10:04 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -820,7 +796,21 @@
         "Jacquemus Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:05 KST",
+      "checkedAt": "2026-09-27 10:04 KST",
+      "try": 3,
+      "status": "NO_RESPONSE"
+    },
+    {
+      "brand": "Tod's",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 0,
+      "errors": [
+        "Tod's Official daily source: Source returned no usable page",
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:04 KST",
       "try": 3,
       "status": "NO_RESPONSE"
     },
@@ -833,7 +823,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:05 KST",
+      "checkedAt": "2026-09-27 10:04 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Casablanca",
+      "found": 1,
+      "total": 1,
+      "attempts": 4,
+      "responses": 3,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:04 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -846,20 +849,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:06 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Casablanca",
-      "found": 2,
-      "total": 2,
-      "attempts": 4,
-      "responses": 3,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:06 KST",
+      "checkedAt": "2026-09-27 10:04 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -872,20 +862,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:06 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Versace",
-      "found": 0,
-      "total": 0,
-      "attempts": 3,
-      "responses": 2,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:06 KST",
+      "checkedAt": "2026-09-27 10:05 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -898,33 +875,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:06 KST",
+      "checkedAt": "2026-09-27 10:05 KST",
       "try": 1,
       "status": "CHECKED"
     },
     {
-      "brand": "Y-3",
+      "brand": "Versace",
       "found": 0,
       "total": 0,
-      "attempts": 2,
-      "responses": 1,
+      "attempts": 3,
+      "responses": 2,
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:06 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Repetto",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:06 KST",
+      "checkedAt": "2026-09-27 10:05 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -937,8 +901,34 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:06 KST",
+      "checkedAt": "2026-09-27 10:05 KST",
       "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Repetto",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:05 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Y-3",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:05 KST",
+      "try": 2,
       "status": "CHECKED"
     },
     {
@@ -950,7 +940,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:06 KST",
+      "checkedAt": "2026-09-27 10:05 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Mizuno",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:05 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -964,22 +967,9 @@
         "Louis Vuitton Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:06 KST",
+      "checkedAt": "2026-09-27 10:05 KST",
       "try": 3,
       "status": "NO_RESPONSE"
-    },
-    {
-      "brand": "Mizuno",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:06 KST",
-      "try": 1,
-      "status": "CHECKED"
     },
     {
       "brand": "Golden Goose",
@@ -990,20 +980,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:06 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Salomon",
-      "found": 0,
-      "total": 0,
-      "attempts": 3,
-      "responses": 2,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:07 KST",
+      "checkedAt": "2026-09-27 10:05 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1016,7 +993,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:07 KST",
+      "checkedAt": "2026-09-27 10:06 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Salomon",
+      "found": 0,
+      "total": 0,
+      "attempts": 3,
+      "responses": 2,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:06 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1029,7 +1019,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:07 KST",
+      "checkedAt": "2026-09-27 10:06 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1042,20 +1032,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:07 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "ROA",
-      "found": 0,
-      "total": 0,
-      "attempts": 4,
-      "responses": 3,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:07 KST",
+      "checkedAt": "2026-09-27 10:06 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1068,7 +1045,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:07 KST",
+      "checkedAt": "2026-09-27 10:06 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "ROA",
+      "found": 0,
+      "total": 0,
+      "attempts": 4,
+      "responses": 3,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:06 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1081,7 +1071,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:07 KST",
+      "checkedAt": "2026-09-27 10:06 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1094,20 +1084,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:08 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "HOKA",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:08 KST",
+      "checkedAt": "2026-09-27 10:07 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1120,20 +1097,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:08 KST",
+      "checkedAt": "2026-09-27 10:07 KST",
       "try": 1,
       "status": "CHECKED"
     },
     {
-      "brand": "Fear of God",
-      "found": 4,
-      "total": 4,
-      "attempts": 4,
-      "responses": 3,
+      "brand": "HOKA",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:08 KST",
+      "checkedAt": "2026-09-27 10:07 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1144,20 +1121,7 @@
       "attempts": 1,
       "responses": 1,
       "errors": [],
-      "checkedAt": "2026-09-26 10:08 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Cecilie Bahnsen",
-      "found": 5,
-      "total": 5,
-      "attempts": 4,
-      "responses": 3,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:08 KST",
+      "checkedAt": "2026-09-27 10:07 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1171,20 +1135,33 @@
         "Gucci Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:08 KST",
+      "checkedAt": "2026-09-27 10:07 KST",
       "try": 3,
       "status": "NO_RESPONSE"
     },
     {
-      "brand": "Prada",
-      "found": 0,
-      "total": 0,
+      "brand": "Cecilie Bahnsen",
+      "found": 5,
+      "total": 5,
       "attempts": 4,
       "responses": 3,
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:09 KST",
+      "checkedAt": "2026-09-27 10:07 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Fear of God",
+      "found": 4,
+      "total": 4,
+      "attempts": 4,
+      "responses": 3,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:07 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1197,7 +1174,33 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:09 KST",
+      "checkedAt": "2026-09-27 10:08 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Prada",
+      "found": 0,
+      "total": 0,
+      "attempts": 4,
+      "responses": 3,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:08 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Maison Margiela",
+      "found": 0,
+      "total": 0,
+      "attempts": 3,
+      "responses": 2,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:08 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1212,22 +1215,9 @@
         "ASICS Official daily source: Source HTTP 403",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:09 KST",
+      "checkedAt": "2026-09-27 10:08 KST",
       "try": 3,
       "status": "NO_RESPONSE"
-    },
-    {
-      "brand": "Maison Margiela",
-      "found": 0,
-      "total": 0,
-      "attempts": 3,
-      "responses": 2,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:09 KST",
-      "try": 1,
-      "status": "CHECKED"
     },
     {
       "brand": "Moncler",
@@ -1238,7 +1228,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:09 KST",
+      "checkedAt": "2026-09-27 10:08 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Celine",
+      "found": 0,
+      "total": 0,
+      "attempts": 3,
+      "responses": 2,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:08 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1249,7 +1252,7 @@
       "attempts": 2,
       "responses": 2,
       "errors": [],
-      "checkedAt": "2026-09-26 10:09 KST",
+      "checkedAt": "2026-09-27 10:08 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1260,35 +1263,20 @@
       "attempts": 2,
       "responses": 2,
       "errors": [],
-      "checkedAt": "2026-09-26 10:10 KST",
+      "checkedAt": "2026-09-27 10:09 KST",
       "try": 1,
       "status": "CHECKED"
     },
     {
-      "brand": "Celine",
+      "brand": "Axel Arigato",
       "found": 0,
       "total": 0,
-      "attempts": 3,
-      "responses": 0,
-      "errors": [
-        "Celine Official daily source: Source returned no usable page",
-        "Celine Official daily source: Source returned no usable page",
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:10 KST",
-      "try": 3,
-      "status": "NO_RESPONSE"
-    },
-    {
-      "brand": "New Balance",
-      "found": 0,
-      "total": 0,
-      "attempts": 3,
-      "responses": 2,
+      "attempts": 4,
+      "responses": 3,
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:10 KST",
+      "checkedAt": "2026-09-27 10:09 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1303,22 +1291,9 @@
         "Lululemon Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:10 KST",
+      "checkedAt": "2026-09-27 10:09 KST",
       "try": 3,
       "status": "NO_RESPONSE"
-    },
-    {
-      "brand": "Axel Arigato",
-      "found": 0,
-      "total": 0,
-      "attempts": 4,
-      "responses": 3,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:10 KST",
-      "try": 1,
-      "status": "CHECKED"
     },
     {
       "brand": "Dior",
@@ -1330,7 +1305,7 @@
         "Dior Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:10 KST",
+      "checkedAt": "2026-09-27 10:09 KST",
       "try": 3,
       "status": "NO_RESPONSE"
     },
@@ -1343,9 +1318,24 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:10 KST",
+      "checkedAt": "2026-09-27 10:09 KST",
       "try": 1,
       "status": "CHECKED"
+    },
+    {
+      "brand": "New Balance",
+      "found": 0,
+      "total": 0,
+      "attempts": 3,
+      "responses": 0,
+      "errors": [
+        "New Balance Official daily source: Source returned no usable page",
+        "New Balance Official daily source: Source returned no usable page",
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:09 KST",
+      "try": 3,
+      "status": "NO_RESPONSE"
     },
     {
       "brand": "Pierre Hardy",
@@ -1356,7 +1346,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:11 KST",
+      "checkedAt": "2026-09-27 10:10 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "norda",
+      "found": 0,
+      "total": 0,
+      "attempts": 4,
+      "responses": 3,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:10 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1367,7 +1370,20 @@
       "attempts": 3,
       "responses": 3,
       "errors": [],
-      "checkedAt": "2026-09-26 10:11 KST",
+      "checkedAt": "2026-09-27 10:10 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "adidas",
+      "found": 0,
+      "total": 0,
+      "attempts": 2,
+      "responses": 1,
+      "errors": [
+        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+      ],
+      "checkedAt": "2026-09-27 10:10 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1381,33 +1397,7 @@
         "Lanvin Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:11 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "norda",
-      "found": 0,
-      "total": 0,
-      "attempts": 4,
-      "responses": 3,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:11 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "adidas",
-      "found": 0,
-      "total": 0,
-      "attempts": 2,
-      "responses": 1,
-      "errors": [
-        "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
-      ],
-      "checkedAt": "2026-09-26 10:11 KST",
+      "checkedAt": "2026-09-27 10:10 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1416,25 +1406,13 @@
       "found": 0,
       "total": 0,
       "attempts": 3,
-      "responses": 0,
+      "responses": 1,
       "errors": [
-        "Berluti Official daily source: Source returned no usable page",
         "Berluti Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:11 KST",
+      "checkedAt": "2026-09-27 10:11 KST",
       "try": 3,
-      "status": "NO_RESPONSE"
-    },
-    {
-      "brand": "Balmain",
-      "found": 17,
-      "total": 17,
-      "attempts": 1,
-      "responses": 1,
-      "errors": [],
-      "checkedAt": "2026-09-26 10:12 KST",
-      "try": 1,
       "status": "CHECKED"
     },
     {
@@ -1446,7 +1424,18 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:12 KST",
+      "checkedAt": "2026-09-27 10:11 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Balmain",
+      "found": 17,
+      "total": 17,
+      "attempts": 1,
+      "responses": 1,
+      "errors": [],
+      "checkedAt": "2026-09-27 10:11 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1459,7 +1448,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:12 KST",
+      "checkedAt": "2026-09-27 10:11 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1472,7 +1461,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:12 KST",
+      "checkedAt": "2026-09-27 10:11 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1483,29 +1472,7 @@
       "attempts": 1,
       "responses": 1,
       "errors": [],
-      "checkedAt": "2026-09-26 10:12 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "Reebok",
-      "found": 25,
-      "total": 18,
-      "attempts": 1,
-      "responses": 1,
-      "errors": [],
-      "checkedAt": "2026-09-26 10:12 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "On",
-      "found": 16,
-      "total": 16,
-      "attempts": 1,
-      "responses": 1,
-      "errors": [],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:11 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1514,16 +1481,35 @@
       "found": 0,
       "total": 0,
       "attempts": 4,
-      "responses": 0,
+      "responses": 3,
       "errors": [
-        "Converse Official daily source: Source returned no usable page",
-        "Converse Official daily source: Source returned no usable page",
-        "Converse Official daily source: Source returned no usable page",
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
-      "try": 3,
-      "status": "NO_RESPONSE"
+      "checkedAt": "2026-09-27 10:12 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "On",
+      "found": 18,
+      "total": 18,
+      "attempts": 1,
+      "responses": 1,
+      "errors": [],
+      "checkedAt": "2026-09-27 10:12 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "Reebok",
+      "found": 25,
+      "total": 18,
+      "attempts": 2,
+      "responses": 2,
+      "errors": [],
+      "checkedAt": "2026-09-27 10:12 KST",
+      "try": 1,
+      "status": "CHECKED"
     },
     {
       "brand": "Carlotha Ray",
@@ -1534,7 +1520,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1547,7 +1533,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1560,7 +1546,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1573,7 +1559,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1586,7 +1572,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1599,7 +1585,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1612,7 +1598,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1625,7 +1611,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1638,7 +1624,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1651,7 +1637,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1664,7 +1650,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1677,7 +1663,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1690,7 +1676,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1703,7 +1689,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1716,7 +1702,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1729,7 +1715,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1742,7 +1728,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1755,7 +1741,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1768,7 +1754,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1781,7 +1767,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1794,7 +1780,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1807,7 +1793,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1820,7 +1806,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -1833,7 +1819,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1846,7 +1832,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1859,7 +1845,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1872,7 +1858,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1885,7 +1871,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1898,7 +1884,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1911,7 +1897,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1924,7 +1910,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1937,7 +1923,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1950,7 +1936,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1963,7 +1949,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1976,7 +1962,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -1989,7 +1975,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -2002,7 +1988,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -2015,7 +2001,7 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
@@ -2028,31 +2014,20 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "NO_RESPONSE"
     },
     {
       "brand": "Nike",
-      "found": 7,
-      "total": 7,
+      "found": 6,
+      "total": 6,
       "attempts": 3,
       "responses": 2,
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
-      "try": 1,
-      "status": "CHECKED"
-    },
-    {
-      "brand": "ALOHAS",
-      "found": 22,
-      "total": 18,
-      "attempts": 1,
-      "responses": 1,
-      "errors": [],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -2065,7 +2040,18 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:13 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
+      "try": 1,
+      "status": "CHECKED"
+    },
+    {
+      "brand": "ALOHAS",
+      "found": 22,
+      "total": 18,
+      "attempts": 1,
+      "responses": 1,
+      "errors": [],
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "CHECKED"
     },
@@ -2078,23 +2064,23 @@
       "errors": [
         "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
       ],
-      "checkedAt": "2026-09-26 10:14 KST",
+      "checkedAt": "2026-09-27 10:12 KST",
       "try": 1,
       "status": "CHECKED"
     }
   ],
   "crawler": {
-    "requests": 241,
-    "responses": 154,
+    "requests": 229,
+    "responses": 163,
     "authFallbacks": 1,
     "rateLimitRetries": 0,
     "errors": {
       "403": 6,
-      "422": 7
+      "422": 6
     },
     "authFallbackStatus": 401,
     "attempted": 116,
-    "responded": 95,
+    "responded": 101,
     "scope": "full"
   }
 }
