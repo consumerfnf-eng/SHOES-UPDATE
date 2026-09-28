@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-09-28T02:30:45.893Z",
+  "publishedAt": "2026-09-28T03:00:09.598Z",
   "periodStart": "2026-06-28",
   "asOf": "2026-09-28",
   "brands": [
@@ -453,7 +453,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:07.832Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "US",
         "field": "launchViews.startEntryDate",
         "productId": "b3c26be1-67e6-5f21-83e4-4e6c6a633bad",
@@ -478,7 +478,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "US",
-      "lastVerifiedAt": "2026-09-28T02:12:07.832Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-high-og-royal",
       "eligibility": {
         "passed": true,
@@ -508,7 +508,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "CA",
         "excerpt": "XT-4 OG GORE-TEX (L49210800) — 2026-10-07, official Canadian launch calendar."
       },
@@ -531,7 +531,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "CA",
-      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
       "eligibility": {
         "passed": true,
@@ -559,7 +559,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:07.832Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "US",
         "field": "launchViews.startEntryDate",
         "productId": "87bf41bd-311e-5b41-9855-095a952958c9",
@@ -584,7 +584,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "US",
-      "lastVerifiedAt": "2026-09-28T02:12:07.832Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-low-og-howard-college-navy-and-university-red",
       "eligibility": {
         "passed": true,
@@ -614,7 +614,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "CA",
         "excerpt": "GENESIS 2 GORE-TEX (L49302000) — 2026-10-01, official Canadian launch calendar."
       },
@@ -637,7 +637,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "CA",
-      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/genesis-2-gtx-li9188/L49302000",
       "eligibility": {
         "passed": true,
@@ -667,7 +667,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "CA",
         "excerpt": "XT-4 OG GORE-TEX (L49210700) — 2026-10-01, official Canadian launch calendar."
       },
@@ -690,7 +690,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "CA",
-      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210700",
       "eligibility": {
         "passed": true,
@@ -720,7 +720,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "CA",
         "excerpt": "XT-6 (L49213700) — 2026-10-01, official Canadian launch calendar."
       },
@@ -743,7 +743,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "CA",
-      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213700",
       "eligibility": {
         "passed": true,
@@ -773,7 +773,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "CA",
         "excerpt": "XT-6 (L49213200) — 2026-10-01, official Canadian launch calendar."
       },
@@ -796,7 +796,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "CA",
-      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213200",
       "eligibility": {
         "passed": true,
@@ -826,7 +826,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "CA",
         "excerpt": "XT-6 (L49211100) — 2026-10-01, official Canadian launch calendar."
       },
@@ -849,7 +849,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "CA",
-      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49211100",
       "eligibility": {
         "passed": true,
@@ -877,7 +877,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "CA",
         "excerpt": "XT-6 GORE-TEX (L49215400) — 2026-10-01, official Canadian launch calendar."
       },
@@ -900,7 +900,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "CA",
-      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215400",
       "eligibility": {
         "passed": true,
@@ -928,7 +928,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "CA",
         "excerpt": "XT-6 GORE-TEX (L49215200) — 2026-10-01, official Canadian launch calendar."
       },
@@ -951,7 +951,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "CA",
-      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215200",
       "eligibility": {
         "passed": true,
@@ -979,7 +979,7 @@
         "precision": "day",
         "official": true,
         "verified": true,
-        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "verifiedAt": "2026-09-28T02:46:10.458Z",
         "region": "CA",
         "excerpt": "XT-6 GORE-TEX (L49214800) — 2026-10-01, official Canadian launch calendar."
       },
@@ -1002,7 +1002,7 @@
       },
       "archiveGroup": "outdoor",
       "country": "CA",
-      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "lastVerifiedAt": "2026-09-28T02:46:10.458Z",
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49214800",
       "eligibility": {
         "passed": true,
@@ -1407,18 +1407,840 @@
     }
   ],
   "sourceStatus": {
-    "checkedAt": null,
-    "lastSuccessfulCollectionAt": null,
-    "unavailableBrands": [],
-    "coverage": [],
+    "checkedAt": "2026-09-28T02:46:10.458Z",
+    "lastSuccessfulCollectionAt": "2026-09-28T03:00:09.597Z",
+    "unavailableBrands": [
+      "Saint Laurent",
+      "Vans",
+      "Oakley Factory Team",
+      "Louis Vuitton",
+      "Common Projects",
+      "ASICS",
+      "Lululemon",
+      "Dior",
+      "SATISFY",
+      "KOLON SPORT",
+      "Eider",
+      "National Geographic",
+      "Havaianas",
+      "Merrell",
+      "Le Coq Sportif",
+      "Jordan",
+      "Brooks",
+      "Under Armour",
+      "Arc'teryx",
+      "The North Face",
+      "Skechers",
+      "Rockfish Weatherwear",
+      "23.65",
+      "KEEN",
+      "OOFOS",
+      "Crocs"
+    ],
+    "coverage": [
+      {
+        "brand": "Maison Mihara Yasuhiro",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:46 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Umbro",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:46 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Hermès",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:46 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Saint Laurent",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 0,
+        "errors": [
+          "Saint Laurent Official daily source: Source returned no usable page",
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:46 KST",
+        "try": 3,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Saucony",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:46 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Vans",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 0,
+        "errors": [
+          "Vans Official daily source: Source returned no usable page",
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:46 KST",
+        "try": 3,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Balenciaga",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:47 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Oakley Factory Team",
+        "found": 0,
+        "total": 0,
+        "attempts": 3,
+        "responses": 0,
+        "errors": [
+          "Oakley Factory Team Official daily source: Source returned no usable page",
+          "Oakley Factory Team Official daily source: Source returned no usable page",
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:47 KST",
+        "try": 3,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "FILA",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:47 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Onitsuka Tiger",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:47 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Y-3",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:47 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Mizuno",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:47 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Louis Vuitton",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 0,
+        "errors": [
+          "Louis Vuitton Official daily source: Source returned no usable page",
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:47 KST",
+        "try": 3,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Golden Goose",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:47 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Loewe",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:47 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Common Projects",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 0,
+        "errors": [
+          "Common Projects Official daily source: Source HTTP 422",
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:48 KST",
+        "try": 3,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Salomon",
+        "found": 0,
+        "total": 0,
+        "attempts": 3,
+        "responses": 2,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:48 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "HOKA",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:48 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Bottega Veneta",
+        "found": 0,
+        "total": 0,
+        "attempts": 4,
+        "responses": 3,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:48 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "ROA",
+        "found": 1,
+        "total": 1,
+        "attempts": 4,
+        "responses": 3,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:48 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Gucci",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:48 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Cecilie Bahnsen",
+        "found": 7,
+        "total": 7,
+        "attempts": 4,
+        "responses": 3,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:48 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Prada",
+        "found": 0,
+        "total": 0,
+        "attempts": 4,
+        "responses": 3,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:49 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Miu Miu",
+        "found": 0,
+        "total": 0,
+        "attempts": 3,
+        "responses": 2,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:49 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "ASICS",
+        "found": 0,
+        "total": 0,
+        "attempts": 3,
+        "responses": 0,
+        "errors": [
+          "ASICS Official daily source: Source HTTP 403",
+          "ASICS Official daily source: Source HTTP 403",
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:49 KST",
+        "try": 3,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Moncler",
+        "found": 6,
+        "total": 6,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:49 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Celine",
+        "found": 0,
+        "total": 0,
+        "attempts": 3,
+        "responses": 1,
+        "errors": [
+          "Celine Official daily source: Source returned no usable page",
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:49 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "New Balance",
+        "found": 0,
+        "total": 0,
+        "attempts": 3,
+        "responses": 2,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:49 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Axel Arigato",
+        "found": 0,
+        "total": 0,
+        "attempts": 4,
+        "responses": 3,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:49 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Lululemon",
+        "found": 0,
+        "total": 0,
+        "attempts": 3,
+        "responses": 0,
+        "errors": [
+          "Lululemon Official daily source: Source returned no usable page",
+          "Lululemon Official daily source: Source returned no usable page",
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:50 KST",
+        "try": 3,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Dior",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 0,
+        "errors": [
+          "Dior Official daily source: Source returned no usable page",
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:50 KST",
+        "try": 3,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "PUMA",
+        "found": 0,
+        "total": 0,
+        "attempts": 3,
+        "responses": 2,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:50 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "adidas",
+        "found": 0,
+        "total": 0,
+        "attempts": 2,
+        "responses": 1,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:50 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Alo",
+        "found": 14,
+        "total": 14,
+        "attempts": 3,
+        "responses": 3,
+        "errors": [],
+        "checkedAt": "2026-09-28 11:50 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "norda",
+        "found": 0,
+        "total": 0,
+        "attempts": 4,
+        "responses": 3,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:50 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "PANE",
+        "found": 0,
+        "total": 0,
+        "attempts": 4,
+        "responses": 3,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:50 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "On",
+        "found": 20,
+        "total": 18,
+        "attempts": 1,
+        "responses": 1,
+        "errors": [],
+        "checkedAt": "2026-09-28 11:50 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Reebok",
+        "found": 21,
+        "total": 18,
+        "attempts": 1,
+        "responses": 1,
+        "errors": [],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "SATISFY",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "KOLON SPORT",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Eider",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "National Geographic",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Havaianas",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Nike",
+        "found": 13,
+        "total": 13,
+        "attempts": 1,
+        "responses": 1,
+        "errors": [],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Merrell",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Le Coq Sportif",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Jordan",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Brooks",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Under Armour",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Arc'teryx",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "The North Face",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Skechers",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Rockfish Weatherwear",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "23.65",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "KEEN",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "OOFOS",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Crocs",
+        "found": 0,
+        "total": 0,
+        "attempts": 1,
+        "responses": 0,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "NO_RESPONSE"
+      },
+      {
+        "brand": "Converse",
+        "found": 1,
+        "total": 1,
+        "attempts": 4,
+        "responses": 2,
+        "errors": [
+          "Converse Official daily source: Source HTTP 503",
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "grounds",
+        "found": 0,
+        "total": 0,
+        "attempts": 3,
+        "responses": 2,
+        "errors": [
+          "search: Jina Search unavailable without a valid key; official Reader sources were still attempted"
+        ],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "Melissa",
+        "found": 33,
+        "total": 18,
+        "attempts": 1,
+        "responses": 1,
+        "errors": [],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "CHECKED"
+      },
+      {
+        "brand": "ALOHAS",
+        "found": 23,
+        "total": 18,
+        "attempts": 1,
+        "responses": 1,
+        "errors": [],
+        "checkedAt": "2026-09-28 11:51 KST",
+        "try": 1,
+        "status": "CHECKED"
+      }
+    ],
     "notes": [
       "출시일·품목·적합성을 확인한 상품만 표시합니다. 확인일을 출시일로 사용하지 않습니다.",
       "SNS 인기는 수집한 공개 게시물 범위에 한합니다."
     ],
     "counts": {
-      "source": 2266,
+      "source": 2337,
       "published": 16,
-      "held": 2250,
+      "held": 2321,
       "expired": 0
     }
   }
