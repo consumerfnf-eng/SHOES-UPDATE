@@ -11,6 +11,7 @@ __pycache__/
 *.pyc
 logs/backups/
 logs/research/
+logs/weekly-run-*/
 logs/archive-audit/
 data/archive-report.json
 *.tmp
