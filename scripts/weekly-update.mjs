@@ -25,7 +25,7 @@ try {
   const withEvidence=applyReviewedEvidence(staged,evidence.products);
   const eligibleIds=new Set(curateCatalog(withEvidence,{now}).snapshot.products.map(p=>p.id));
   const signals=await collectSignals({products:withEvidence.filter(p=>eligibleIds.has(p.id)),read:client.read,now});
-  const collection={checkedAt:now.toISOString(),lastSuccessfulCollectionAt:new Date().toISOString(),coverage:run.coverage,unavailableBrands:run.coverage.filter(x=>!x.responses).map(x=>x.brand),scope:'weekly'};
+  const collection={checkedAt:now.toISOString(),lastSuccessfulCollectionAt:new Date().toISOString(),coverage:run.coverage,unavailableBrands:run.coverage.filter(x=>!x.responses).map(x=>x.brand),scope:'weekly',sourceDirectory:signals.sourceDirectory};
   await atomicJson(new URL('logs/weekly-diagnostics.json',root),{checkedAt:now.toISOString(),releaseChecks:[...verified.diagnostics,...structured.diagnostics],signalChecks:signals.diagnostics,crawler:client.stats});
   const result=await publishCurated({now:new Date(),incoming:[...run.products,...verified.products,...structured.products,...signals.products],collection});
   console.log(`Weekly snapshot complete: ${result.snapshot.products.length} public products; ${result.review.held.length} held for verification.`);

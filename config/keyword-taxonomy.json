@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "themes": [
+    {
+      "id": "ballet-hybrid",
+      "label": "Sneakerina / ballet hybrids",
+      "aliases": [
+        "#발레리나스니커즈",
+        "Sneakerina / ballet hybrids",
+        "sneakerina",
+        "ballet sneaker",
+        "ballerina sneaker",
+        "ballet hybrid",
+        "발레코어",
+        "발레 스니커즈",
+        "메리제인 스니커즈"
+      ]
+    },
+    {
+      "id": "low-profile",
+      "label": "Low-profile / slim sneakers",
+      "aliases": [
+        "#로우프로파일",
+        "Low-profile / slim sneakers",
+        "low profile",
+        "low-profile",
+        "slim sneaker",
+        "slim-line sneaker",
+        "sleek sneaker",
+        "로우 프로파일",
+        "스피드캣",
+        "태권도"
+      ]
+    },
+    {
+      "id": "retro-runner",
+      "label": "Retro runners / archive trainers",
+      "aliases": [
+        "#레트로러너",
+        "Retro runners / archive trainers",
+        "retro runner",
+        "retro trainer",
+        "archive sneaker",
+        "70s sneaker",
+        "80s runner",
+        "90s runner",
+        "레트로 러너",
+        "빈티지 조거"
+      ]
+    },
+    {
+      "id": "character-collaboration",
+      "label": "Character / franchise collaborations",
+      "aliases": [
+        "#캐릭터콜라보",
+        "Character / franchise collaborations",
+        "character sneaker",
+        "pokemon sneaker",
+        "franchise collaboration",
+        "캐릭터 콜라보",
+        "포켓몬 스니커즈"
+      ]
+    },
+    {
+      "id": "mesh-sheer",
+      "label": "Mesh / sheer footwear",
+      "aliases": [
+        "#메쉬슈즈",
+        "Mesh / sheer footwear",
+        "mesh shoe",
+        "mesh sneaker",
+        "sheer shoe",
+        "메쉬 슈즈",
+        "메쉬 스니커즈"
+      ]
+    },
+    {
+      "id": "metallic-silver",
+      "label": "Metallic silver footwear",
+      "aliases": [
+        "#메탈릭실버",
+        "Metallic silver footwear",
+        "metallic sneaker",
+        "silver sneaker",
+        "metallic silver",
+        "메탈릭 실버",
+        "실버 스니커즈"
+      ]
+    },
+    {
+      "id": "red-crimson",
+      "label": "Red / crimson statement sneakers",
+      "aliases": [
+        "#레드스니커즈",
+        "Red / crimson statement sneakers",
+        "red sneaker",
+        "crimson sneaker",
+        "cherry sneaker",
+        "burgundy sneaker",
+        "wine sneaker",
+        "레드 스니커즈",
+        "빨간 스니커즈",
+        "버건디 스니커즈"
+      ]
+    },
+    {
+      "id": "brown",
+      "label": "Chocolate / coffee brown",
+      "aliases": [
+        "#브라운슈즈",
+        "Chocolate / coffee brown",
+        "chocolate brown shoe",
+        "brown sneaker",
+        "coffee brown",
+        "브라운 스니커즈",
+        "초콜릿 브라운"
+      ]
+    },
+    {
+      "id": "sneaker-mule",
+      "label": "Sneaker mules / smules",
+      "aliases": [
+        "#스니커뮬",
+        "Sneaker mules / smules",
+        "sneaker mule",
+        "sneaker mules",
+        "smule",
+        "smules",
+        "스니커 뮬",
+        "스니커뮬"
+      ]
+    },
+    {
+      "id": "animal-print",
+      "label": "Animal print / cow / leopard",
+      "aliases": [
+        "#애니멀프린트",
+        "Animal print / cow / leopard",
+        "animal print",
+        "cow print",
+        "leopard sneaker",
+        "leopard shoe",
+        "애니멀 프린트",
+        "카우 프린트",
+        "레오파드"
+      ]
+    },
+    {
+      "id": "jelly",
+      "label": "Jelly shoes / jelly sandals",
+      "aliases": [
+        "#젤리슈즈",
+        "Jelly shoes / jelly sandals",
+        "jelly shoe",
+        "jelly sandal",
+        "젤리 슈즈",
+        "젤리 샌들"
+      ]
+    },
+    {
+      "id": "trail-gorpcore",
+      "label": "Trail / technical gorpcore",
+      "aliases": [
+        "#고프코어",
+        "Trail / technical gorpcore",
+        "gorpcore",
+        "trail sneaker",
+        "trail runner",
+        "approach shoe",
+        "technical sneaker",
+        "고프코어",
+        "트레일 러닝",
+        "트레일러닝"
+      ]
+    },
+    {
+      "id": "suede",
+      "label": "Suede sneakers",
+      "aliases": [
+        "#스웨이드",
+        "Suede sneakers",
+        "suede sneaker",
+        "suede trainer",
+        "스웨이드 스니커즈",
+        "스웨이드 러너"
+      ]
+    },
+    {
+      "id": "recovery-sandal",
+      "label": "Minimal / recovery sandals",
+      "aliases": [
+        "#샌들",
+        "Minimal / recovery sandals",
+        "minimal sandal",
+        "minimalist sandal",
+        "recovery sandal",
+        "sport sandal",
+        "thong sandal",
+        "flip-flop",
+        "flip flop",
+        "샌들",
+        "리커버리 샌들",
+        "조리"
+      ]
+    },
+    {
+      "id": "clog",
+      "label": "Clogs / open-back comfort",
+      "aliases": [
+        "#클로그",
+        "Clogs / open-back comfort",
+        "clog",
+        "clogs",
+        "클로그",
+        "에코 클로그",
+        "retro clog"
+      ]
+    },
+    {
+      "id": "canvas",
+      "label": "Canvas sneakers",
+      "aliases": [
+        "#캔버스스니커즈",
+        "Plain canvas sneakers",
+        "canvas sneaker",
+        "canvas shoe",
+        "plain sneaker",
+        "캔버스 스니커즈",
+        "캔버스 슈즈"
+      ]
+    },
+    {
+      "id": "skate-y2k",
+      "label": "Skater / Y2K sneakers",
+      "aliases": [
+        "#스케이터스니커즈",
+        "Skater / Y2K sneakers",
+        "skater sneaker",
+        "skate shoe",
+        "Y2K sneaker",
+        "checkerboard sneaker",
+        "스케이터 스니커즈",
+        "스케이트 슈즈"
+      ]
+    },
+    {
+      "id": "platform",
+      "label": "Platforms / flatforms",
+      "aliases": [
+        "#플랫폼슈즈",
+        "Platforms / flatforms",
+        "platform sneaker",
+        "platform sandal",
+        "platform shoes",
+        "flatform",
+        "platform sole",
+        "플랫폼 슈즈",
+        "플랫폼 스니커즈",
+        "플랫폼 샌들"
+      ]
+    },
+    {
+      "id": "mary-jane",
+      "label": "Mary Jane sneakers / hybrids",
+      "aliases": [
+        "#메리제인",
+        "Mary Jane sneakers / flats",
+        "mary jane sneaker",
+        "mary jane flat",
+        "mary jane",
+        "메리제인",
+        "메리 제인"
+      ]
+    },
+    {
+      "id": "satin-velvet",
+      "label": "Satin / velvet feminine sneakers",
+      "aliases": [
+        "#새틴스니커즈",
+        "Satin / velvet feminine sneakers",
+        "satin sneaker",
+        "velvet sneaker",
+        "새틴 스니커즈",
+        "벨벳 스니커즈"
+      ]
+    },
+    {
+      "id": "sculptural-upper",
+      "label": "Sculptural uppers",
+      "aliases": [
+        "스컬프처 어퍼",
+        "sculptural upper",
+        "sculpted upper"
+      ]
+    }
+  ]
+}

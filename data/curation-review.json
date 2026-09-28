@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-28T03:00:09.598Z",
+  "checkedAt": "2026-09-28T04:33:27.589Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -183,12 +183,6 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
-      "brand": "New Balance",
-      "name": "Made in UK 991v1 Luxe Suede — Cocoa / Castle Wall",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "daily-20260917-nike-atwo-dawn-staley-ix1923-100",
       "brand": "Nike",
       "name": "A'Two 'Dawn Staley' — White / Black",
@@ -216,18 +210,6 @@
       "id": "daily-20260916-crocs-quick-trail-racer-212713-7dw",
       "brand": "Crocs",
       "name": "Quick Trail Racer — Currant / Multi",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "daily-20260916-converse-palmes-green-a24756c",
-      "brand": "Converse",
-      "name": "Palmes x Jack Purcell PDM — Green Canvas",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "daily-20260916-converse-palmes-navy-a24786c",
-      "brand": "Converse",
-      "name": "Palmes x Jack Purcell PDM — Navy Suede",
       "reason": "footwear-type-unverified"
     },
     {
@@ -279,27 +261,9 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "daily-20260915-nike-tennis-centre-kallmeyer-iw4737-104",
-      "brand": "Nike",
-      "name": "Women's Tennis Centre x Kallmeyer",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "daily-20260915-nike-sb-af1-yuto-io8439-100",
-      "brand": "Nike",
-      "name": "Nike SB Air Force 1 x Yuto",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "daily-20260915-adidas-ae3-kh8537",
       "brand": "adidas",
       "name": "Anthony Edwards 3",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "daily-20260915-nike-air-foamposite-pro-im5204-001",
-      "brand": "Nike",
-      "name": "Air Foamposite Pro",
       "reason": "footwear-type-unverified"
     },
     {

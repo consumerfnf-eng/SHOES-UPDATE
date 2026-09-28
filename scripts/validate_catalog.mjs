@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import {curateProduct,POLICY,validDay,httpUrl,shiftMonth,validateSignals,popularity} from './curation.mjs';
+import {curateProduct,POLICY,validDay,httpUrl,shiftMonth,validateSignals,popularity,rankKeywords} from './curation.mjs';
+import {KEYWORD_THEMES} from './keyword-taxonomy.mjs';
 export function validateSnapshot(catalog) {
   assert.equal(catalog.schemaVersion,1);assert(Array.isArray(catalog.products));assert(Array.isArray(catalog.brands));assert(Array.isArray(catalog.keywords));
   assert(Number.isFinite(Date.parse(catalog.publishedAt)),'Invalid publication timestamp');assert(validDay(catalog.asOf),'Invalid catalog date');
@@ -29,7 +30,19 @@ export function validateSnapshot(catalog) {
     assert(r.product&&!r.expired,`Ineligible published product ${p.id}: ${r.reason||'expired'}`);
   }
   const ids=new Set(catalog.products.map(p=>p.id));
-  for(const keyword of catalog.keywords){assert(keyword.id&&keyword.label,'Missing keyword identity');assert(Array.isArray(keyword.productIds)&&keyword.productIds.length,'Empty keyword');assert(keyword.productIds.every(id=>ids.has(id)),'Keyword references absent product');assert.equal(keyword.productCount,new Set(keyword.productIds).size,'Keyword product count mismatch');}
+  assert.equal(new Set(catalog.keywords.map(k=>k.id)).size,catalog.keywords.length,'Duplicate keyword IDs');
+  for(const theme of KEYWORD_THEMES)assert(catalog.keywords.some(k=>k.id===theme.id&&k.label===theme.label),'Missing English keyword theme '+theme.id);
+  for(const keyword of catalog.keywords){
+    assert(keyword.id&&keyword.label,'Missing keyword identity');assert(Array.isArray(keyword.productIds),'Missing keyword matches');
+    assert(keyword.productIds.every(id=>ids.has(id)),'Keyword references absent product');
+    assert.equal(keyword.matchedProductCount,new Set(keyword.productIds).size,'Keyword matched count mismatch');
+    assert(Array.isArray(keyword.evidenceProductIds)&&keyword.evidenceProductIds.every(id=>keyword.productIds.includes(id)),'Keyword evidence is not a matching product');
+    const evidenceModels=new Set(keyword.evidenceProductIds.map(id=>catalog.products.find(p=>p.id===id).modelKey||id));
+    assert.equal(keyword.productCount,evidenceModels.size,'Keyword evidence model count mismatch');
+    if(keyword.productCount){assert(Number.isInteger(keyword.rank)&&keyword.rank>0,'Evidence-backed keyword must have rank');assert.equal(keyword.rankingStatus,'ranked');}
+    else{assert.equal(keyword.rank,null,'Zero-evidence keyword has invented rank');assert.equal(keyword.rankingStatus,'awaiting-evidence');}
+  }
+  assert.deepEqual(catalog.keywords,rankKeywords(catalog.products,catalog.asOf),'Keyword rank, coverage or evidence differs from verified signals');
   return true;
 }
 if(process.argv[1]?.endsWith('validate_catalog.mjs')){const c=JSON.parse(await fs.readFile(new URL('../public/data/catalog.json',import.meta.url),'utf8'));validateSnapshot(c);console.log(`PASS: ${c.products.length} products; mandatory25; exact dates, fit, taxonomy and calendar window.`);}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-09-28T03:00:09.598Z",
+  "publishedAt": "2026-09-28T04:33:27.589Z",
   "periodStart": "2026-06-28",
   "asOf": "2026-09-28",
   "brands": [
@@ -537,7 +537,10 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [
+        "mesh-sheer",
+        "trail-gorpcore"
+      ]
     },
     {
       "id": "official-nike-ix8478-410",
@@ -590,7 +593,11 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [
+        "red-crimson",
+        "suede",
+        "satin-velvet"
+      ]
     },
     {
       "id": "official-salomon-l49302000",
@@ -643,7 +650,9 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [
+        "trail-gorpcore"
+      ]
     },
     {
       "id": "official-salomon-l49210700",
@@ -696,7 +705,10 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [
+        "mesh-sheer",
+        "trail-gorpcore"
+      ]
     },
     {
       "id": "official-salomon-l49213700",
@@ -749,7 +761,9 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [
+        "mesh-sheer"
+      ]
     },
     {
       "id": "official-salomon-l49213200",
@@ -802,7 +816,9 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [
+        "mesh-sheer"
+      ]
     },
     {
       "id": "official-salomon-l49211100",
@@ -855,7 +871,9 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [
+        "mesh-sheer"
+      ]
     },
     {
       "id": "official-salomon-l49215400",
@@ -906,7 +924,10 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [
+        "mesh-sheer",
+        "trail-gorpcore"
+      ]
     },
     {
       "id": "official-salomon-l49215200",
@@ -957,7 +978,10 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [
+        "mesh-sheer",
+        "trail-gorpcore"
+      ]
     },
     {
       "id": "official-salomon-l49214800",
@@ -1008,7 +1032,10 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [
+        "mesh-sheer",
+        "trail-gorpcore"
+      ]
     },
     {
       "id": "new-20260923-f28d3395e6c72a4a",
@@ -1067,7 +1094,117 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
+      "keywordTags": [
+        "red-crimson"
+      ]
+    },
+    {
+      "id": "official-nike-ir0088-001",
+      "brand": "Jordan",
+      "name": "Air Jordan 1 Retro Low OG \"Garden\"",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "jordan|airjordan1retrolowoggarden",
+      "releaseDate": "2026-09-26",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.soleretriever.com/news/articles/air-jordan-1-retro-low-last-dance-at-the-garden-official-images",
+        "precision": "day",
+        "official": false,
+        "verified": true,
+        "verifiedAt": "2026-09-28T04:28:20.029Z",
+        "region": "US",
+        "field": "exact SKU release date; official US PDP identity verified",
+        "excerpt": "IR0088-001: US release 2026-09-26."
+      },
+      "url": "https://www.nike.com/launch/t/air-jordan-1-low-og-black-and-white-1",
+      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/2d370e02-73d7-45f5-8bd6-417baee625dc/air-jordan-1-low-og-black-and-white-1.webp",
+      "style": "IR0088-001",
+      "colorway": "Garden",
+      "colors": [],
+      "gender": "MEN/WOMEN",
+      "material": "",
+      "priceLabel": "USD 155",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:14:17.061Z",
+      "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-low-og-black-and-white-1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
       "keywordTags": []
+    },
+    {
+      "id": "official-nike-iv5678-102",
+      "brand": "Jordan",
+      "name": "Air Jordan 5 Retro \"Sunset\"",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "jordan|airjordan5retrosunset",
+      "releaseDate": "2026-09-25",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://sneakernews.com/2026/08/28/jordan-release-dates-september-2026/",
+        "precision": "day",
+        "official": false,
+        "verified": true,
+        "verifiedAt": "2026-09-28T04:28:20.029Z",
+        "region": "US",
+        "field": "exact SKU release date; official US PDP identity verified",
+        "excerpt": "IV5678-102: US release 2026-09-25."
+      },
+      "url": "https://www.nike.com/launch/t/women-s-air-jordan-5-sunset",
+      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/0a7070a9-0e7b-4440-acbe-2ff9e9937965/women-s-air-jordan-5-sunset.webp",
+      "style": "IV5678-102",
+      "colorway": "Sunset",
+      "colors": [],
+      "gender": "MEN/WOMEN",
+      "material": "Leather upper; mesh quarter panels",
+      "priceLabel": "USD 205",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:14:17.098Z",
+      "productEvidenceUrl": "https://www.nike.com/launch/t/women-s-air-jordan-5-sunset",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "mesh-sheer"
+      ]
     },
     {
       "id": "verified-nike-ir0968-500",
@@ -1115,10 +1252,11 @@
           "modelMatched": true,
           "independent": true,
           "sponsored": false,
-          "publisherId": "sneaker-bar-detroit",
+          "publisherId": "sneakerbardetroit.com",
           "keywords": [
             "스컬프처 어퍼"
-          ]
+          ],
+          "publisherName": "Sneaker Bar Detroit"
         },
         {
           "type": "magazine",
@@ -1129,10 +1267,11 @@
           "modelMatched": true,
           "independent": true,
           "sponsored": false,
-          "publisherId": "sole-retriever",
+          "publisherId": "soleretriever.com",
           "keywords": [
             "스컬프처 어퍼"
-          ]
+          ],
+          "publisherName": "Sole Retriever"
         }
       ],
       "popularity": {
@@ -1150,7 +1289,554 @@
         "checkedAt": "2026-09-28"
       },
       "keywordTags": [
-        "스컬프처 어퍼"
+        "character-collaboration",
+        "sculptural-upper"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u990br4",
+      "brand": "New Balance",
+      "name": "Made in USA 990v4",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|madeinusa990v4",
+      "releaseDate": "2026-09-24",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U990BR4: official US launch-calendar tile dated 2026-09-24 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52804.html",
+      "image": "https://nb.scene7.com/is/image/NB/u990br4_nb_02_i?%24pdpflexf22x%24=&hei=880&wid=880",
+      "style": "U990BR4",
+      "colorway": "MONARCH BURGUNDY with PUMPERNICKEL and BLACK",
+      "colors": [
+        {
+          "name": "MONARCH BURGUNDY with PUMPERNICKEL and BLACK"
+        }
+      ],
+      "gender": "",
+      "material": "Mesh upper Nubuckand synthetic overlays This item contains cow leather",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52804.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "retro-runner",
+        "mesh-sheer",
+        "red-crimson"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u990bg4",
+      "brand": "New Balance",
+      "name": "Made in USA 990v4",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|madeinusa990v4",
+      "releaseDate": "2026-09-24",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U990BG4: official US launch-calendar tile dated 2026-09-24 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52802.html",
+      "image": "https://nb.scene7.com/is/image/NB/u990bg4_nb_02_i?%24pdpflexf22x%24=&hei=880&wid=880",
+      "style": "U990BG4",
+      "colorway": "NB NAVY with METEORITE and KOMBU",
+      "colors": [
+        {
+          "name": "NB NAVY with METEORITE and KOMBU"
+        }
+      ],
+      "gender": "",
+      "material": "Mesh upper Nubuck and synthetic overlays This item contains cow and pig leather",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52802.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "retro-runner",
+        "mesh-sheer"
+      ]
+    },
+    {
+      "id": "daily-20260915-nike-air-foamposite-pro-im5204-001",
+      "brand": "Nike",
+      "name": "Nike Air Foamposite Pro Premium",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "nike|air-foamposite-pro-premium",
+      "releaseDate": "2026-09-18",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.sneakerfreaker.com/releases/nike-air-foamposite-pro-green-camo-price-buy-release-date",
+        "precision": "day",
+        "official": false,
+        "verified": true,
+        "verifiedAt": "2026-09-28T04:28:20.029Z",
+        "region": "US",
+        "field": "exact SKU release date; official US PDP identity verified",
+        "excerpt": "IM5204-001: US release 2026-09-18."
+      },
+      "url": "https://www.nike.com/launch/t/air-foamposite-pro-black-and-multi-color",
+      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/7fc95aff-0e71-4458-b9fb-848d4d43f9d7/air-foamposite-pro-black-and-multi-color.webp",
+      "style": "IM5204-001",
+      "colorway": "Black and Multi-Color",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#20211F",
+          "accuracy": "manual-upper-reviewed"
+        }
+      ],
+      "gender": "MEN",
+      "material": "Molded Foamposite upper",
+      "priceLabel": "USD 250",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:14:16.937Z",
+      "productEvidenceUrl": "https://www.nike.com/launch/t/air-foamposite-pro-black-and-multi-color",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "low-profile"
+      ]
+    },
+    {
+      "id": "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
+      "brand": "New Balance",
+      "name": "Made in UK 991V1 Luxe Suede",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "new-balance|991v1",
+      "releaseDate": "2026-09-17",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "M991BR1: official US launch-calendar tile dated 2026-09-17 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/made-in-uk-991v1-luxe-suede/M991V1_LI-FTW-826837.html",
+      "image": "https://nb.scene7.com/is/image/NB/m991br1_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "M991BR1",
+      "colorway": "COCOA with CASTLE WALL",
+      "colors": [
+        {
+          "name": "COCOA with CASTLE WALL"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Premium suede upper Rubber outsole This item contains cow leather",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-uk-991v1-luxe-suede/M991V1_LI-FTW-826837.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "brown",
+        "suede"
+      ]
+    },
+    {
+      "id": "daily-20260915-nike-sb-af1-yuto-io8439-100",
+      "brand": "Nike",
+      "name": "Nike SB Air Force 1 x Yuto",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "nike|sb-air-force-1-yuto",
+      "releaseDate": "2026-09-15",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.sneakerfiles.com/yuto-horigome-nike-sb-air-force-1-iron-grey/",
+        "precision": "day",
+        "official": false,
+        "verified": true,
+        "verifiedAt": "2026-09-28T04:28:20.029Z",
+        "region": "US",
+        "field": "exact SKU release date; official US PDP identity verified",
+        "excerpt": "IO8439-100: US release 2026-09-15 via SNKRS."
+      },
+      "url": "https://www.nike.com/launch/t/nike-sb-air-force-1-yuto-light-bone-and-iron-grey",
+      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/bd470bed-70bf-4f3e-a7c5-6e35f9815fd2/nike-sb-air-force-1-yuto-light-bone-and-iron-grey.webp",
+      "style": "IO8439-100",
+      "colorway": "Light Bone and Iron Grey",
+      "colors": [
+        {
+          "name": "Light Bone",
+          "hex": "#D9D2C3",
+          "accuracy": "manual-upper-reviewed"
+        }
+      ],
+      "gender": "MEN/WOMEN",
+      "material": "Leather upper; mesh quarter panels",
+      "priceLabel": "USD 125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:14:18.101Z",
+      "productEvidenceUrl": "https://www.nike.com/launch/t/nike-sb-air-force-1-yuto-light-bone-and-iron-grey",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "skate-y2k"
+      ]
+    },
+    {
+      "id": "daily-20260915-nike-tennis-centre-kallmeyer-iw4737-104",
+      "brand": "Nike",
+      "name": "Nike Tennis Centre",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "nike|tennis-centre-kallmeyer",
+      "releaseDate": "2026-09-15",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.soleretriever.com/sneaker-release-dates/nike/other/nike-tennis-centre-light-orewood-brown-w-iw4737-104",
+        "precision": "day",
+        "official": false,
+        "verified": true,
+        "verifiedAt": "2026-09-28T04:28:20.029Z",
+        "region": "US",
+        "field": "exact SKU release date; official US PDP identity verified",
+        "excerpt": "IW4737-104: US release 2026-09-15 via SNKRS."
+      },
+      "url": "https://www.nike.com/launch/t/womens-tennis-centre-x-kallmeyer-travertine",
+      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/e33d97ec-8ba5-47dc-873c-4da206965e4f/womens-tennis-centre-x-kallmeyer-travertine.webp",
+      "style": "IW4737-104",
+      "colorway": "Travertine",
+      "colors": [
+        {
+          "name": "Travertine",
+          "hex": "#B8A58F",
+          "accuracy": "manual-upper-reviewed"
+        }
+      ],
+      "gender": "WOMEN",
+      "material": "Suede upper; leather lining and sockliner",
+      "priceLabel": "USD 160",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:14:18.096Z",
+      "productEvidenceUrl": "https://www.nike.com/launch/t/womens-tennis-centre-x-kallmeyer-travertine",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "suede"
+      ]
+    },
+    {
+      "id": "daily-20260916-converse-palmes-green-a24756c",
+      "brand": "Converse",
+      "name": "Palmes for Converse Jack Purcell PDM — Green Canvas",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "converse|jack-purcell-pdm-palmes",
+      "releaseDate": "2026-09-14",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://sneakernews.com/2026/09/08/palmes-converse-jack-purcell/",
+        "precision": "day",
+        "official": false,
+        "verified": true,
+        "verifiedAt": "2026-09-28T04:28:20.029Z",
+        "region": "US",
+        "field": "model/color-specific release table with exact Converse SKU; official partner ProductGroup identity verified",
+        "excerpt": "Palmes Converse Jack Purcell A24756C: release September 14, 2026."
+      },
+      "url": "https://palmes.co/products/palmes-for-converse-jack-purcell-green-canvas",
+      "image": "https://palmes.co/cdn/shop/files/download_d5717302-ec5a-4109-8e48-09de8ab6969b.jpg?v=1788775154&width=1920",
+      "style": "A24756C",
+      "colorway": "Mountain View / Cloud Dancer",
+      "colors": [
+        {
+          "name": "Mountain View Green",
+          "hex": "#66715C"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Duck canvas upper; rubber outsole",
+      "priceLabel": "USD 150.00",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [
+        {
+          "type": "magazine",
+          "url": "https://sneakernews.com/2026/09/08/palmes-converse-jack-purcell/",
+          "title": "Palmes x Converse Jack Purcell",
+          "publishedAt": "2026-09-08",
+          "checkedAt": "2026-09-28T04:28:20.029Z",
+          "modelMatched": true,
+          "independent": true,
+          "sponsored": false,
+          "publisherId": "sneakernews.com",
+          "publisherName": "Sneaker News",
+          "keywords": [
+            "canvas"
+          ]
+        },
+        {
+          "type": "magazine",
+          "url": "https://sneakerbardetroit.com/palmes-converse-jack-purcell-pack-release-date/",
+          "title": "Palmes x Converse Jack Purcell Pack",
+          "publishedAt": "2026-09-09",
+          "checkedAt": "2026-09-28T04:28:20.029Z",
+          "modelMatched": true,
+          "independent": true,
+          "sponsored": false,
+          "publisherId": "sneakerbardetroit.com",
+          "publisherName": "Sneaker Bar Detroit",
+          "keywords": [
+            "canvas"
+          ]
+        }
+      ],
+      "popularity": {
+        "magazine": true,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:28:20.029Z",
+      "productEvidenceUrl": "https://palmes.co/products/palmes-for-converse-jack-purcell-green-canvas",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "canvas"
+      ]
+    },
+    {
+      "id": "daily-20260916-converse-palmes-navy-a24786c",
+      "brand": "Converse",
+      "name": "Palmes for Converse Jack Purcell PDM — Navy Suede",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "converse|jack-purcell-pdm-palmes",
+      "releaseDate": "2026-09-14",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://sneakernews.com/2026/09/08/palmes-converse-jack-purcell/",
+        "precision": "day",
+        "official": false,
+        "verified": true,
+        "verifiedAt": "2026-09-28T04:28:20.029Z",
+        "region": "US",
+        "field": "model/color-specific release table with exact Converse SKU; official partner ProductGroup identity verified",
+        "excerpt": "Palmes Converse Jack Purcell A24786C: release September 14, 2026."
+      },
+      "url": "https://palmes.co/products/palmes-for-converse-jack-purcell-navy-suede",
+      "image": "https://palmes.co/cdn/shop/files/download_86692e5f-1039-4ef4-9057-adb5fbfae293.jpg?v=1788775136&width=1920",
+      "style": "A24786C",
+      "colorway": "Parisian Night / Cloud Dancer",
+      "colors": [
+        {
+          "name": "Parisian Night Navy",
+          "hex": "#1F2C3F"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Suede upper; rubber outsole",
+      "priceLabel": "USD 150.00",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [
+        {
+          "type": "magazine",
+          "url": "https://sneakernews.com/2026/09/08/palmes-converse-jack-purcell/",
+          "title": "Palmes x Converse Jack Purcell",
+          "publishedAt": "2026-09-08",
+          "checkedAt": "2026-09-28T04:28:20.029Z",
+          "modelMatched": true,
+          "independent": true,
+          "sponsored": false,
+          "publisherId": "sneakernews.com",
+          "publisherName": "Sneaker News",
+          "keywords": [
+            "suede"
+          ]
+        },
+        {
+          "type": "magazine",
+          "url": "https://sneakerbardetroit.com/palmes-converse-jack-purcell-pack-release-date/",
+          "title": "Palmes x Converse Jack Purcell Pack",
+          "publishedAt": "2026-09-09",
+          "checkedAt": "2026-09-28T04:28:20.029Z",
+          "modelMatched": true,
+          "independent": true,
+          "sponsored": false,
+          "publisherId": "sneakerbardetroit.com",
+          "publisherName": "Sneaker Bar Detroit",
+          "keywords": [
+            "suede"
+          ]
+        }
+      ],
+      "popularity": {
+        "magazine": true,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:28:20.029Z",
+      "productEvidenceUrl": "https://palmes.co/products/palmes-for-converse-jack-purcell-navy-suede",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "suede"
       ]
     },
     {
@@ -1198,7 +1884,7 @@
           "url": "https://www.gq-magazin.de/artikel/sneaker-generation-puma-x-jl-al-cell-geo-ist-so-futuristisch-wie-nie-zuvor",
           "title": "GQ Germany: PUMA x J.L-A.L CELL GEO 소개",
           "publishedAt": "2026-09-10",
-          "publisherId": "gq-germany",
+          "publisherId": "gq-magazin.de",
           "keywords": [
             "스컬프처 어퍼",
             "메쉬"
@@ -1207,14 +1893,15 @@
           "modelMatched": true,
           "independent": true,
           "sponsored": false,
-          "reviewed": true
+          "reviewed": true,
+          "publisherName": "GQ Germany"
         },
         {
           "type": "magazine",
           "url": "https://pausemag.co.uk/2026/09/puma-x-j-l-a-l-takes-the-cell-geo-into-new-territory/",
           "title": "PAUSE: PUMA x J.L-A.L CELL GEO 소개",
           "publishedAt": "2026-09-09",
-          "publisherId": "pause",
+          "publisherId": "pausemag.co.uk",
           "keywords": [
             "스컬프처 어퍼",
             "메쉬"
@@ -1223,7 +1910,8 @@
           "modelMatched": true,
           "independent": true,
           "sponsored": false,
-          "reviewed": true
+          "reviewed": true,
+          "publisherName": "PAUSE"
         }
       ],
       "popularity": {
@@ -1241,8 +1929,8 @@
         "checkedAt": "2026-09-28"
       },
       "keywordTags": [
-        "스컬프처 어퍼",
-        "메쉬"
+        "mesh-sheer",
+        "sculptural-upper"
       ]
     },
     {
@@ -1290,7 +1978,7 @@
           "url": "https://www.gq-magazin.de/artikel/sneaker-generation-puma-x-jl-al-cell-geo-ist-so-futuristisch-wie-nie-zuvor",
           "title": "GQ Germany: PUMA x J.L-A.L CELL GEO 소개",
           "publishedAt": "2026-09-10",
-          "publisherId": "gq-germany",
+          "publisherId": "gq-magazin.de",
           "keywords": [
             "스컬프처 어퍼",
             "메쉬"
@@ -1299,14 +1987,15 @@
           "modelMatched": true,
           "independent": true,
           "sponsored": false,
-          "reviewed": true
+          "reviewed": true,
+          "publisherName": "GQ Germany"
         },
         {
           "type": "magazine",
           "url": "https://pausemag.co.uk/2026/09/puma-x-j-l-a-l-takes-the-cell-geo-into-new-territory/",
           "title": "PAUSE: PUMA x J.L-A.L CELL GEO 소개",
           "publishedAt": "2026-09-09",
-          "publisherId": "pause",
+          "publisherId": "pausemag.co.uk",
           "keywords": [
             "스컬프처 어퍼",
             "메쉬"
@@ -1315,7 +2004,8 @@
           "modelMatched": true,
           "independent": true,
           "sponsored": false,
-          "reviewed": true
+          "reviewed": true,
+          "publisherName": "PAUSE"
         }
       ],
       "popularity": {
@@ -1333,8 +2023,71 @@
         "checkedAt": "2026-09-28"
       },
       "keywordTags": [
-        "스컬프처 어퍼",
-        "메쉬"
+        "mesh-sheer",
+        "brown",
+        "sculptural-upper"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u1300ss",
+      "brand": "New Balance",
+      "name": "Made in USA 1300",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|madeinusa1300",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U1300SS: official US launch-calendar tile dated 2026-09-10 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/made-in-usa-1300/U1300V1-52809.html",
+      "image": "https://nb.scene7.com/is/image/NB/u1300ss_nb_02_i?%24pdpflexf22x%24=&hei=880&wid=880",
+      "style": "U1300SS",
+      "colorway": "ANGORA with BLUE OYSTER and MULLED WINE",
+      "colors": [
+        {
+          "name": "ANGORA with BLUE OYSTER and MULLED WINE"
+        }
+      ],
+      "gender": "",
+      "material": "NDurance rubber outsole Mesh upper Embossed pig suede and synthetic overlays This item contains pig leather",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-1300/U1300V1-52809.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "retro-runner",
+        "mesh-sheer",
+        "red-crimson",
+        "suede"
       ]
     },
     {
@@ -1388,24 +2141,1933 @@
         "checkedAt": "2026-09-28"
       },
       "keywordTags": []
+    },
+    {
+      "id": "verified-new-balance-u90608ol",
+      "brand": "New Balance",
+      "name": "Sydney Levrone 9060R",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|sydneylevrone9060r",
+      "releaseDate": "2026-09-08",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U90608OL: official US launch-calendar tile dated 2026-09-08 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/sydney-levrone-9060r/U9060RV1_LI-FTW-855217.html",
+      "image": "https://nb.scene7.com/is/image/NB/u90608ol_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "U90608OL",
+      "colorway": "METEORITE with PODIUM RED",
+      "colors": [
+        {
+          "name": "METEORITE with PODIUM RED"
+        }
+      ],
+      "gender": "",
+      "material": "Suede and mesh upper This item contains cow and pig leather",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/sydney-levrone-9060r/U9060RV1_LI-FTW-855217.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "red-crimson",
+        "suede"
+      ]
+    },
+    {
+      "id": "verified-new-balance-wfcx1yq",
+      "brand": "New Balance",
+      "name": "Sydney Levrone FuelCell Rebel v5",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|sydneylevronefuelcellrebelv5",
+      "releaseDate": "2026-09-08",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "WFCX1YQ: official US launch-calendar tile dated 2026-09-08 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/WFCXV5_RU-FTW-852606.html",
+      "image": "https://nb.scene7.com/is/image/NB/wfcx1yq_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "WFCX1YQ",
+      "colorway": "METEORITE with WHITE",
+      "colors": [
+        {
+          "name": "METEORITE with WHITE"
+        }
+      ],
+      "gender": "",
+      "material": "PEBA/EVA foam blend provides durable, lightweight cushioning and fast underfoot feel An engineered mesh upper provides lightweight support and breathability",
+      "priceLabel": "$144.99",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/WFCXV5_RU-FTW-852606.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "mesh-sheer"
+      ]
+    },
+    {
+      "id": "verified-new-balance-mfcx8e5",
+      "brand": "New Balance",
+      "name": "Sydney Levrone FuelCell Rebel v5",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|sydneylevronefuelcellrebelv5",
+      "releaseDate": "2026-09-08",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "MFCX8E5: official US launch-calendar tile dated 2026-09-08 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/MFCXV5_RU-FTW-852604.html",
+      "image": "https://nb.scene7.com/is/image/NB/mfcx8e5_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "MFCX8E5",
+      "colorway": "METEORITE with WHITE",
+      "colors": [
+        {
+          "name": "METEORITE with WHITE"
+        }
+      ],
+      "gender": "",
+      "material": "PEBA/EVA foam blend provides durable, lightweight cushioning and fast underfoot feel An engineered mesh upper provides lightweight support and breathability",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/MFCXV5_RU-FTW-852604.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "mesh-sheer"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u990lv4",
+      "brand": "New Balance",
+      "name": "Made in USA 990v4",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|madeinusa990v4",
+      "releaseDate": "2026-09-03",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U990LV4: official US launch-calendar tile dated 2026-09-03 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52803.html",
+      "image": "https://nb.scene7.com/is/image/NB/u990lv4_nb_02_i?%24pdpflexf22x%24=&hei=880&wid=880",
+      "style": "U990LV4",
+      "colorway": "GREY VIOLET with TIMBERWOLF and BLACK",
+      "colors": [
+        {
+          "name": "GREY VIOLET with TIMBERWOLF and BLACK"
+        }
+      ],
+      "gender": "",
+      "material": "Custom Wool-blend vamp material Hairy suede and synthetic overlays",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52803.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "retro-runner",
+        "suede"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u993mo",
+      "brand": "New Balance",
+      "name": "Made in USA 993",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|madeinusa993",
+      "releaseDate": "2026-09-03",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U993MO: official US launch-calendar tile dated 2026-09-03 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/made-in-usa-993/U993V1-52816.html",
+      "image": "https://nb.scene7.com/is/image/NB/u993mo_nb_02_i?%24pdpflexf22x%24=&hei=880&wid=880",
+      "style": "U993MO",
+      "colorway": "MOREL with TIMBERWOLF and BLACK",
+      "colors": [
+        {
+          "name": "MOREL with TIMBERWOLF and BLACK"
+        }
+      ],
+      "gender": "",
+      "material": "Mesh upper Hairy suede and synthetic overlays",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-993/U993V1-52816.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "retro-runner",
+        "mesh-sheer",
+        "suede"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u18902uh",
+      "brand": "New Balance",
+      "name": "1890P",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|1890p",
+      "releaseDate": "2026-08-26",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U18902UH: official US launch-calendar tile dated 2026-08-26 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/1890p/U1890PV1_LI-FTW-837876.html",
+      "image": "https://nb.scene7.com/is/image/NB/u18902uh_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "U18902UH",
+      "colorway": "TEAM RED with PINK ERASER",
+      "colors": [
+        {
+          "name": "TEAM RED with PINK ERASER"
+        }
+      ],
+      "gender": "",
+      "material": "Synthetic upper This item contains cow leather",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/1890p/U1890PV1_LI-FTW-837876.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "red-crimson"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u7507a0",
+      "brand": "New Balance",
+      "name": "750",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "newbalance|750",
+      "releaseDate": "2026-08-21",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U7507A0: official US launch-calendar tile dated 2026-08-21 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/750/U750V1_LI-FTW-851089-PMG-NA.html",
+      "image": "https://nb.scene7.com/is/image/NB/u7507a0_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "U7507A0",
+      "colorway": "WHITE with NB NAVY",
+      "colors": [
+        {
+          "name": "WHITE with NB NAVY"
+        }
+      ],
+      "gender": "",
+      "material": "Canvas upper This item contains cow leather",
+      "priceLabel": "$99.99",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/750/U750V1_LI-FTW-851089-PMG-NA.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "canvas"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u991wl2",
+      "brand": "New Balance",
+      "name": "Made in UK 991V2",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|madeinuk991v2",
+      "releaseDate": "2026-08-20",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U991WL2: official US launch-calendar tile dated 2026-08-20 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/made-in-uk-991v2/U991V2_LI-FTW-829161.html",
+      "image": "https://nb.scene7.com/is/image/NB/u991wl2_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "U991WL2",
+      "colorway": "WALNUT with SHITAKE",
+      "colors": [
+        {
+          "name": "WALNUT with SHITAKE"
+        }
+      ],
+      "gender": "",
+      "material": "Mesh upper Premium pigsuede overlays Synthetic leather accents Rubber outsole This item contains pig leather",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-uk-991v2/U991V2_LI-FTW-829161.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ]
+    },
+    {
+      "id": "verified-new-balance-ugtr4dy",
+      "brand": "New Balance",
+      "name": "ALD X NEW BALANCE GATOR RUN HAIRY SUEDE",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|aldxnewbalancegatorrunhairysuede",
+      "releaseDate": "2026-08-14",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "UGTR4DY: official US launch-calendar tile dated 2026-08-14 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/ald-x-new-balance-gator-run-hairy-suede/UGTRV1_LI-FTW-859792.html",
+      "image": "https://nb.scene7.com/is/image/NB/ugtr4dy_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "UGTR4DY",
+      "colorway": "ANGORA",
+      "colors": [
+        {
+          "name": "ANGORA"
+        }
+      ],
+      "gender": "",
+      "material": "Hairy suede overlays Nylon underlays Leather heel tab This item contains cow and pig leather",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/ald-x-new-balance-gator-run-hairy-suede/UGTRV1_LI-FTW-859792.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "suede"
+      ]
+    },
+    {
+      "id": "verified-new-balance-w327apc",
+      "brand": "New Balance",
+      "name": "327",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|327",
+      "releaseDate": "2026-08-12",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "W327APC: official US launch-calendar tile dated 2026-08-12 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/327/WS327V1-41747-PMG-NA-BROWN2.html",
+      "image": "https://nb.scene7.com/is/image/NB/w327apc_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "W327APC",
+      "colorway": "PUMPERNICKEL with SEA SALT",
+      "colors": [
+        {
+          "name": "PUMPERNICKEL with SEA SALT"
+        }
+      ],
+      "gender": "",
+      "material": "Suede/nylon upper featuring exaggerated fang design inspired by 320, 355, and Supercomp This item contains cow leather",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/327/WS327V1-41747-PMG-NA-BROWN2.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "retro-runner",
+        "suede"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u204v2w0",
+      "brand": "New Balance",
+      "name": "204V",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|204v",
+      "releaseDate": "2026-08-07",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U204V2W0: official US launch-calendar tile dated 2026-08-07 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/204v/U204V2W0-D-05.html",
+      "image": "https://nb.scene7.com/is/image/NB/u204v2w0_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "U204V2W0",
+      "colorway": "TURTLEDOVE with TIMBERWOLF",
+      "colors": [
+        {
+          "name": "TURTLEDOVE with TIMBERWOLF"
+        }
+      ],
+      "gender": "",
+      "material": "Premium suede and textiles material EVA midsole",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/204v/U204V2W0-D-05.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "low-profile",
+        "retro-runner",
+        "suede"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u204v2pt",
+      "brand": "New Balance",
+      "name": "204V",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|204v",
+      "releaseDate": "2026-08-07",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U204V2PT: official US launch-calendar tile dated 2026-08-07 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/204v/U204V2PT-D-05.html",
+      "image": "https://nb.scene7.com/is/image/NB/u204v2pt_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "U204V2PT",
+      "colorway": "BAYBERRY with LONE STAR GREY",
+      "colors": [
+        {
+          "name": "BAYBERRY with LONE STAR GREY"
+        }
+      ],
+      "gender": "",
+      "material": "Premium suede and textiles material EVA midsole",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/204v/U204V2PT-D-05.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "low-profile",
+        "retro-runner",
+        "suede"
+      ]
+    },
+    {
+      "id": "verified-new-balance-mrebx4fh",
+      "brand": "New Balance",
+      "name": "SuperComp Rebel",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|supercomprebel",
+      "releaseDate": "2026-08-06",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "MREBX4FH: official US launch-calendar tile dated 2026-08-06 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/supercomp-rebel/MREBXV1_RU-FTW-814193-PMG-NA.html",
+      "image": "https://nb.scene7.com/is/image/NB/mrebx4fh_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "MREBX4FH",
+      "colorway": "SATSUMA ORANGE with SILVER METALLIC",
+      "colors": [
+        {
+          "name": "SATSUMA ORANGE with SILVER METALLIC"
+        }
+      ],
+      "gender": "",
+      "material": "Synthetic material",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/supercomp-rebel/MREBXV1_RU-FTW-814193-PMG-NA.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "metallic-silver"
+      ]
+    },
+    {
+      "id": "verified-new-balance-wrebx38s",
+      "brand": "New Balance",
+      "name": "SuperComp Rebel",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|supercomprebel",
+      "releaseDate": "2026-08-06",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "WREBX38S: official US launch-calendar tile dated 2026-08-06 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/supercomp-rebel/WREBXV1_RU-FTW-814192-PMG-NA.html",
+      "image": "https://nb.scene7.com/is/image/NB/wrebx38s_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "WREBX38S",
+      "colorway": "SATSUMA ORANGE with SILVER METALLIC",
+      "colors": [
+        {
+          "name": "SATSUMA ORANGE with SILVER METALLIC"
+        }
+      ],
+      "gender": "",
+      "material": "Synthetic material",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/supercomp-rebel/WREBXV1_RU-FTW-814192-PMG-NA.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "metallic-silver"
+      ]
+    },
+    {
+      "id": "verified-new-balance-mt24yj",
+      "brand": "New Balance",
+      "name": "TDS MT2",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|tdsmt2",
+      "releaseDate": "2026-08-06",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "MT24YJ: official US launch-calendar tile dated 2026-08-06 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/tds-mt2/MT2V1_LI-FTW-857722.html",
+      "image": "https://nb.scene7.com/is/image/NB/mt24yj_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "MT24YJ",
+      "colorway": "CORTADO with PUMPERNICKEL",
+      "colors": [
+        {
+          "name": "CORTADO with PUMPERNICKEL"
+        }
+      ],
+      "gender": "",
+      "material": "Deconstructed open mesh and Ariprene upper",
+      "priceLabel": "$139.99",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "Lifestyle sneakers",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://www.newbalance.com/pd/tds-mt2/MT2V1_LI-FTW-857722.html",
+        "reason": "Main product confirms trail sole with Vibram lugs, rubber mudguard and lightweight EVA cushioning, with Mary Jane strap upper."
+      },
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/tds-mt2/MT2V1_LI-FTW-857722.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "trail-gorpcore",
+        "mary-jane"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u7406ak",
+      "brand": "New Balance",
+      "name": "Night Lights 740​",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "newbalance|nightlights740",
+      "releaseDate": "2026-08-05",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U7406AK: official US launch-calendar tile dated 2026-08-05 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/night-lights-740%E2%80%8B/U740V2_LI-FTW-885192.html",
+      "image": "https://nb.scene7.com/is/image/NB/u7406ak_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "U7406AK",
+      "colorway": "FADED BLACK with DAWN GLOW and TAFFY BLUE",
+      "colors": [
+        {
+          "name": "FADED BLACK with DAWN GLOW and TAFFY BLUE"
+        }
+      ],
+      "gender": "",
+      "material": "Mesh underlays with synthetic overlays",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/night-lights-740%E2%80%8B/U740V2_LI-FTW-885192.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "retro-runner",
+        "mesh-sheer"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u90609bo",
+      "brand": "New Balance",
+      "name": "Night Lights 9060R​",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|nightlights9060r",
+      "releaseDate": "2026-08-05",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U90609BO: official US launch-calendar tile dated 2026-08-05 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/night-lights-9060r%E2%80%8B/U9060RV1_LI-FTW-873793.html",
+      "image": "https://nb.scene7.com/is/image/NB/u90609bo_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "U90609BO",
+      "colorway": "SEA SALT with FRESH AIR and SLATE GREY",
+      "colors": [
+        {
+          "name": "SEA SALT with FRESH AIR and SLATE GREY"
+        }
+      ],
+      "gender": "",
+      "material": "Suede and mesh upper This item contains cow and pig leather",
+      "priceLabel": "$125",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/night-lights-9060r%E2%80%8B/U9060RV1_LI-FTW-873793.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ]
+    },
+    {
+      "id": "verified-new-balance-u20001k7",
+      "brand": "New Balance",
+      "name": "Night Lights ABZORB 2000​",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "newbalance|nightlightsabzorb2000",
+      "releaseDate": "2026-08-05",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.newbalance.com/nb-launches/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T04:20:31.258Z",
+        "region": "US",
+        "excerpt": "U20001K7: official US launch-calendar tile dated 2026-08-05 links to this exact product page."
+      },
+      "url": "https://www.newbalance.com/pd/night-lights-abzorb-2000%E2%80%8B/U2000V1_LI-FTW-873796.html",
+      "image": "https://nb.scene7.com/is/image/NB/u20001k7_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+      "style": "U20001K7",
+      "colorway": "FADED BLACK with ZINC BLUE and ENOKI",
+      "colors": [
+        {
+          "name": "FADED BLACK with ZINC BLUE and ENOKI"
+        }
+      ],
+      "gender": "",
+      "material": "Synthetic and mesh upper",
+      "priceLabel": "$99.99",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
+      "productEvidenceUrl": "https://www.newbalance.com/pd/night-lights-abzorb-2000%E2%80%8B/U2000V1_LI-FTW-873796.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "retro-runner",
+        "mesh-sheer"
+      ]
     }
   ],
   "keywords": [
     {
-      "id": "스컬프처어퍼",
-      "label": "스컬프처 어퍼",
+      "id": "sculptural-upper",
+      "label": "Sculptural uppers",
+      "aliases": [
+        "스컬프처 어퍼",
+        "sculptural upper",
+        "sculpted upper"
+      ],
       "sourceTypes": [
         "magazine"
       ],
       "productIds": [
+        "verified-nike-ir0968-500",
+        "verified-puma-406687-01",
+        "verified-puma-406687-02"
+      ],
+      "matchedProductCount": 3,
+      "evidenceProductIds": [
         "verified-nike-ir0968-500"
       ],
       "productCount": 1,
       "previousProductCount": 0,
       "growth": 1,
-      "rank": 1
+      "rank": 1,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "ballet-hybrid",
+      "label": "Sneakerina / ballet hybrids",
+      "aliases": [
+        "#발레리나스니커즈",
+        "Sneakerina / ballet hybrids",
+        "sneakerina",
+        "ballet sneaker",
+        "ballerina sneaker",
+        "ballet hybrid",
+        "발레코어",
+        "발레 스니커즈",
+        "메리제인 스니커즈"
+      ],
+      "sourceTypes": [],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "low-profile",
+      "label": "Low-profile / slim sneakers",
+      "aliases": [
+        "#로우프로파일",
+        "Low-profile / slim sneakers",
+        "low profile",
+        "low-profile",
+        "slim sneaker",
+        "slim-line sneaker",
+        "sleek sneaker",
+        "로우 프로파일",
+        "스피드캣",
+        "태권도"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "daily-20260915-nike-air-foamposite-pro-im5204-001",
+        "verified-new-balance-u204v2w0",
+        "verified-new-balance-u204v2pt"
+      ],
+      "matchedProductCount": 3,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "retro-runner",
+      "label": "Retro runners / archive trainers",
+      "aliases": [
+        "#레트로러너",
+        "Retro runners / archive trainers",
+        "retro runner",
+        "retro trainer",
+        "archive sneaker",
+        "70s sneaker",
+        "80s runner",
+        "90s runner",
+        "레트로 러너",
+        "빈티지 조거"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "verified-new-balance-u990br4",
+        "verified-new-balance-u990bg4",
+        "verified-new-balance-u1300ss",
+        "verified-new-balance-u990lv4",
+        "verified-new-balance-u993mo",
+        "verified-new-balance-w327apc",
+        "verified-new-balance-u204v2w0",
+        "verified-new-balance-u204v2pt",
+        "verified-new-balance-u7406ak",
+        "verified-new-balance-u20001k7"
+      ],
+      "matchedProductCount": 10,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "character-collaboration",
+      "label": "Character / franchise collaborations",
+      "aliases": [
+        "#캐릭터콜라보",
+        "Character / franchise collaborations",
+        "character sneaker",
+        "pokemon sneaker",
+        "franchise collaboration",
+        "캐릭터 콜라보",
+        "포켓몬 스니커즈"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "verified-nike-ir0968-500"
+      ],
+      "matchedProductCount": 1,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "mesh-sheer",
+      "label": "Mesh / sheer footwear",
+      "aliases": [
+        "#메쉬슈즈",
+        "Mesh / sheer footwear",
+        "mesh shoe",
+        "mesh sneaker",
+        "sheer shoe",
+        "메쉬 슈즈",
+        "메쉬 스니커즈"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "official-salomon-l49210800",
+        "official-salomon-l49210700",
+        "official-salomon-l49213700",
+        "official-salomon-l49213200",
+        "official-salomon-l49211100",
+        "official-salomon-l49215400",
+        "official-salomon-l49215200",
+        "official-salomon-l49214800",
+        "official-nike-iv5678-102",
+        "verified-new-balance-u990br4",
+        "verified-new-balance-u990bg4",
+        "daily-20260915-nike-sb-af1-yuto-io8439-100",
+        "verified-puma-406687-01",
+        "verified-puma-406687-02",
+        "verified-new-balance-u1300ss",
+        "verified-new-balance-u90608ol",
+        "verified-new-balance-wfcx1yq",
+        "verified-new-balance-mfcx8e5",
+        "verified-new-balance-u993mo",
+        "verified-new-balance-u991wl2",
+        "verified-new-balance-mt24yj",
+        "verified-new-balance-u7406ak",
+        "verified-new-balance-u90609bo",
+        "verified-new-balance-u20001k7"
+      ],
+      "matchedProductCount": 24,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "metallic-silver",
+      "label": "Metallic silver footwear",
+      "aliases": [
+        "#메탈릭실버",
+        "Metallic silver footwear",
+        "metallic sneaker",
+        "silver sneaker",
+        "metallic silver",
+        "메탈릭 실버",
+        "실버 스니커즈"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "verified-new-balance-mrebx4fh",
+        "verified-new-balance-wrebx38s"
+      ],
+      "matchedProductCount": 2,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "red-crimson",
+      "label": "Red / crimson statement sneakers",
+      "aliases": [
+        "#레드스니커즈",
+        "Red / crimson statement sneakers",
+        "red sneaker",
+        "crimson sneaker",
+        "cherry sneaker",
+        "burgundy sneaker",
+        "wine sneaker",
+        "레드 스니커즈",
+        "빨간 스니커즈",
+        "버건디 스니커즈"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "official-nike-ix8478-410",
+        "new-20260923-f28d3395e6c72a4a",
+        "verified-new-balance-u990br4",
+        "verified-new-balance-u1300ss",
+        "verified-new-balance-u90608ol",
+        "verified-new-balance-u18902uh"
+      ],
+      "matchedProductCount": 6,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "brown",
+      "label": "Chocolate / coffee brown",
+      "aliases": [
+        "#브라운슈즈",
+        "Chocolate / coffee brown",
+        "chocolate brown shoe",
+        "brown sneaker",
+        "coffee brown",
+        "브라운 스니커즈",
+        "초콜릿 브라운"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
+        "verified-puma-406687-02"
+      ],
+      "matchedProductCount": 2,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "sneaker-mule",
+      "label": "Sneaker mules / smules",
+      "aliases": [
+        "#스니커뮬",
+        "Sneaker mules / smules",
+        "sneaker mule",
+        "sneaker mules",
+        "smule",
+        "smules",
+        "스니커 뮬",
+        "스니커뮬"
+      ],
+      "sourceTypes": [],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "animal-print",
+      "label": "Animal print / cow / leopard",
+      "aliases": [
+        "#애니멀프린트",
+        "Animal print / cow / leopard",
+        "animal print",
+        "cow print",
+        "leopard sneaker",
+        "leopard shoe",
+        "애니멀 프린트",
+        "카우 프린트",
+        "레오파드"
+      ],
+      "sourceTypes": [],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "jelly",
+      "label": "Jelly shoes / jelly sandals",
+      "aliases": [
+        "#젤리슈즈",
+        "Jelly shoes / jelly sandals",
+        "jelly shoe",
+        "jelly sandal",
+        "젤리 슈즈",
+        "젤리 샌들"
+      ],
+      "sourceTypes": [],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "trail-gorpcore",
+      "label": "Trail / technical gorpcore",
+      "aliases": [
+        "#고프코어",
+        "Trail / technical gorpcore",
+        "gorpcore",
+        "trail sneaker",
+        "trail runner",
+        "approach shoe",
+        "technical sneaker",
+        "고프코어",
+        "트레일 러닝",
+        "트레일러닝"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "official-salomon-l49210800",
+        "official-salomon-l49302000",
+        "official-salomon-l49210700",
+        "official-salomon-l49215400",
+        "official-salomon-l49215200",
+        "official-salomon-l49214800",
+        "verified-new-balance-mt24yj"
+      ],
+      "matchedProductCount": 7,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "suede",
+      "label": "Suede sneakers",
+      "aliases": [
+        "#스웨이드",
+        "Suede sneakers",
+        "suede sneaker",
+        "suede trainer",
+        "스웨이드 스니커즈",
+        "스웨이드 러너"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "official-nike-ix8478-410",
+        "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
+        "daily-20260915-nike-tennis-centre-kallmeyer-iw4737-104",
+        "daily-20260916-converse-palmes-navy-a24786c",
+        "verified-new-balance-u1300ss",
+        "verified-new-balance-u90608ol",
+        "verified-new-balance-u990lv4",
+        "verified-new-balance-u993mo",
+        "verified-new-balance-u991wl2",
+        "verified-new-balance-ugtr4dy",
+        "verified-new-balance-w327apc",
+        "verified-new-balance-u204v2w0",
+        "verified-new-balance-u204v2pt",
+        "verified-new-balance-u90609bo"
+      ],
+      "matchedProductCount": 14,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "recovery-sandal",
+      "label": "Minimal / recovery sandals",
+      "aliases": [
+        "#샌들",
+        "Minimal / recovery sandals",
+        "minimal sandal",
+        "minimalist sandal",
+        "recovery sandal",
+        "sport sandal",
+        "thong sandal",
+        "flip-flop",
+        "flip flop",
+        "샌들",
+        "리커버리 샌들",
+        "조리"
+      ],
+      "sourceTypes": [],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "clog",
+      "label": "Clogs / open-back comfort",
+      "aliases": [
+        "#클로그",
+        "Clogs / open-back comfort",
+        "clog",
+        "clogs",
+        "클로그",
+        "에코 클로그",
+        "retro clog"
+      ],
+      "sourceTypes": [],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "canvas",
+      "label": "Canvas sneakers",
+      "aliases": [
+        "#캔버스스니커즈",
+        "Plain canvas sneakers",
+        "canvas sneaker",
+        "canvas shoe",
+        "plain sneaker",
+        "캔버스 스니커즈",
+        "캔버스 슈즈"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "daily-20260916-converse-palmes-green-a24756c",
+        "verified-new-balance-u7507a0"
+      ],
+      "matchedProductCount": 2,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "skate-y2k",
+      "label": "Skater / Y2K sneakers",
+      "aliases": [
+        "#스케이터스니커즈",
+        "Skater / Y2K sneakers",
+        "skater sneaker",
+        "skate shoe",
+        "Y2K sneaker",
+        "checkerboard sneaker",
+        "스케이터 스니커즈",
+        "스케이트 슈즈"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "daily-20260915-nike-sb-af1-yuto-io8439-100"
+      ],
+      "matchedProductCount": 1,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "platform",
+      "label": "Platforms / flatforms",
+      "aliases": [
+        "#플랫폼슈즈",
+        "Platforms / flatforms",
+        "platform sneaker",
+        "platform sandal",
+        "platform shoes",
+        "flatform",
+        "platform sole",
+        "플랫폼 슈즈",
+        "플랫폼 스니커즈",
+        "플랫폼 샌들"
+      ],
+      "sourceTypes": [],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "mary-jane",
+      "label": "Mary Jane sneakers / hybrids",
+      "aliases": [
+        "#메리제인",
+        "Mary Jane sneakers / flats",
+        "mary jane sneaker",
+        "mary jane flat",
+        "mary jane",
+        "메리제인",
+        "메리 제인"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "verified-new-balance-mt24yj"
+      ],
+      "matchedProductCount": 1,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
+    },
+    {
+      "id": "satin-velvet",
+      "label": "Satin / velvet feminine sneakers",
+      "aliases": [
+        "#새틴스니커즈",
+        "Satin / velvet feminine sneakers",
+        "satin sneaker",
+        "velvet sneaker",
+        "새틴 스니커즈",
+        "벨벳 스니커즈"
+      ],
+      "sourceTypes": [],
+      "productIds": [
+        "official-nike-ix8478-410"
+      ],
+      "matchedProductCount": 1,
+      "evidenceProductIds": [],
+      "productCount": 0,
+      "previousProductCount": 0,
+      "growth": 0,
+      "rank": null,
+      "rankingStatus": "awaiting-evidence"
     }
   ],
+  "sourceDirectory": {
+    "magazine": {
+      "configured": [
+        {
+          "id": "gq-magazin.de",
+          "name": "GQ Germany",
+          "url": "https://www.gq-magazin.de/",
+          "method": "public-article-search"
+        },
+        {
+          "id": "pausemag.co.uk",
+          "name": "PAUSE",
+          "url": "https://pausemag.co.uk/",
+          "method": "public-article-search"
+        },
+        {
+          "id": "sneakerbardetroit.com",
+          "name": "Sneaker Bar Detroit",
+          "url": "https://sneakerbardetroit.com/",
+          "method": "public-rss"
+        },
+        {
+          "id": "soleretriever.com",
+          "name": "Sole Retriever",
+          "url": "https://www.soleretriever.com/",
+          "method": "public-article-search"
+        },
+        {
+          "id": "hypebeast.com",
+          "name": "Hypebeast",
+          "url": "https://hypebeast.com/footwear",
+          "method": "public-rss"
+        },
+        {
+          "id": "highsnobiety.com",
+          "name": "Highsnobiety",
+          "url": "https://www.highsnobiety.com/",
+          "method": "public-rss"
+        },
+        {
+          "id": "sneakernews.com",
+          "name": "Sneaker News",
+          "url": "https://sneakernews.com/",
+          "method": "public-rss"
+        }
+      ],
+      "observed": [
+        {
+          "id": "sneakernews.com",
+          "name": "Sneaker News",
+          "url": "https://sneakernews.com/",
+          "itemCount": 2
+        },
+        {
+          "id": "sneakerbardetroit.com",
+          "name": "Sneaker Bar Detroit",
+          "url": "https://sneakerbardetroit.com/",
+          "itemCount": 3
+        },
+        {
+          "id": "gq-magazin.de",
+          "name": "GQ Germany",
+          "url": "https://www.gq-magazin.de/",
+          "itemCount": 2
+        },
+        {
+          "id": "pausemag.co.uk",
+          "name": "PAUSE",
+          "url": "https://pausemag.co.uk/",
+          "itemCount": 2
+        },
+        {
+          "id": "soleretriever.com",
+          "name": "Sole Retriever",
+          "url": "https://www.soleretriever.com/",
+          "itemCount": 1
+        }
+      ],
+      "checkedAt": "2026-09-28T04:31:07.117Z",
+      "checks": [
+        {
+          "id": "sneakerbardetroit.com",
+          "url": "https://sneakerbardetroit.com/feed/",
+          "method": "public-rss",
+          "status": "fetched",
+          "entryCount": 25,
+          "contentHash": "f0f500d060ee07dd4a21a9e9beca2a6e3ea63074f499405fa7bff2d79643ef3e",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0
+        },
+        {
+          "id": "hypebeast.com",
+          "url": "https://hypebeast.com/footwear/feed",
+          "method": "public-rss",
+          "status": "fetched",
+          "entryCount": 20,
+          "contentHash": "9f9b750d41c58a3dbd48c53f73abff4c5b2e23af62f9513db74643020d09d0a1",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0
+        },
+        {
+          "id": "highsnobiety.com",
+          "url": "https://www.highsnobiety.com/feeds/rss",
+          "method": "public-rss",
+          "status": "fetched",
+          "entryCount": 8,
+          "contentHash": "4fd32bd1f8ecabc22b059f4fc7359a2e2dc262a3c6dc6e85b7b4a455b954d12f",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0
+        },
+        {
+          "id": "sneakernews.com",
+          "url": "https://sneakernews.com/feed/",
+          "method": "public-rss",
+          "status": "fetched",
+          "entryCount": 7,
+          "contentHash": "8d83f0af0c12a7bc5e39561b5398f3d8b66be820e73a00b3025740769bc2ee1a",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0
+        }
+      ]
+    },
+    "newsletter": {
+      "configured": [
+        {
+          "id": "thesneakernewsletter.com",
+          "name": "The Sneaker Newsletter",
+          "url": "https://www.thesneakernewsletter.com/",
+          "method": "public-rss"
+        },
+        {
+          "id": "thedassler.substack.com",
+          "name": "The Dassler",
+          "url": "https://thedassler.substack.com/",
+          "method": "public-rss"
+        }
+      ],
+      "observed": [],
+      "checkedAt": "2026-09-28T04:31:07.117Z",
+      "checks": [
+        {
+          "id": "thesneakernewsletter.com",
+          "url": "https://www.thesneakernewsletter.com/feed",
+          "method": "public-rss",
+          "status": "fetched",
+          "entryCount": 5,
+          "contentHash": "cc062ccd090c0ec3c3034a376d48207f2faa4a3e8a038439e40d3007e53d9ff5",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0
+        },
+        {
+          "id": "thedassler.substack.com",
+          "url": "https://thedassler.substack.com/feed",
+          "method": "public-rss",
+          "status": "fetched",
+          "entryCount": 3,
+          "contentHash": "69858ffe7ae134a5d2664b0bfa90c543714e1ad0b19e5278bc8a54be7264b095",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0
+        }
+      ]
+    },
+    "sns": {
+      "configured": [],
+      "observed": [],
+      "checkedAt": "2026-09-28T04:31:07.117Z",
+      "checks": []
+    },
+    "ecommerce": {
+      "configured": [
+        {
+          "id": "musinsa",
+          "name": "무신사",
+          "url": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+          "method": "public-platform-ranking",
+          "categories": [
+            "스니커즈",
+            "스포츠화",
+            "샌들/슬리퍼"
+          ],
+          "country": "KR",
+          "period": "실시간",
+          "captureLimit": 100,
+          "basis": "매출·조회수·후기수를 반영한 플랫폼 인기 순위"
+        },
+        {
+          "id": "29cm",
+          "name": "29CM",
+          "url": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+          "method": "public-platform-ranking",
+          "categories": [
+            "여성슈즈",
+            "남성슈즈"
+          ],
+          "country": "KR",
+          "period": "1주일 (ONE_WEEK)",
+          "captureLimit": 100,
+          "basis": "플랫폼 BEST의 1주일 표시 순서"
+        }
+      ],
+      "observed": [],
+      "checkedAt": "2026-09-28T04:31:07.117Z",
+      "checks": [
+        {
+          "id": "musinsa",
+          "url": "https://client.musinsa.com/api/home/web/v5/pans/ranking/sections/256?storeCode=sneaker&categoryCode=103004&contentsId=",
+          "method": "public-platform-ranking",
+          "status": "fetched",
+          "entryCount": 100,
+          "contentHash": "a1724f91de5f07243c5a35b7f7fa360b250e740983a354d865f71ffcb166fd2d",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0,
+          "category": "스니커즈",
+          "country": "KR",
+          "period": "실시간",
+          "captureLimit": 100
+        },
+        {
+          "id": "musinsa",
+          "url": "https://client.musinsa.com/api/home/web/v5/pans/ranking/sections/256?storeCode=sneaker&categoryCode=103005&contentsId=",
+          "method": "public-platform-ranking",
+          "status": "fetched",
+          "entryCount": 100,
+          "contentHash": "0b971be4fa6f84d34f9ec45603d442ec201d276d668d73bc1d9f4f4618a1c416",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0,
+          "category": "스포츠화",
+          "country": "KR",
+          "period": "실시간",
+          "captureLimit": 100
+        },
+        {
+          "id": "musinsa",
+          "url": "https://client.musinsa.com/api/home/web/v5/pans/ranking/sections/256?storeCode=sneaker&categoryCode=103003&contentsId=",
+          "method": "public-platform-ranking",
+          "status": "fetched",
+          "entryCount": 100,
+          "contentHash": "d3c87e951e8b00d9bcd35bf0c551730e62c50159887fdd9de0efa539b4c8c84c",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0,
+          "category": "샌들/슬리퍼",
+          "country": "KR",
+          "period": "실시간",
+          "captureLimit": 100
+        },
+        {
+          "id": "29cm",
+          "url": "https://recommend-api.29cm.co.kr/api/v4/best/items?categoryList=270100100&periodSort=ONE_WEEK&limit=100&offset=0",
+          "method": "public-platform-ranking",
+          "status": "fetched",
+          "entryCount": 100,
+          "contentHash": "1ef6a96eb9d2d4889ea7b6042ea2c7447ffcc8924246e3cf4c5fff74ae8ce36c",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0,
+          "category": "여성슈즈",
+          "country": "KR",
+          "period": "1주일 (ONE_WEEK)",
+          "captureLimit": 100
+        },
+        {
+          "id": "29cm",
+          "url": "https://recommend-api.29cm.co.kr/api/v4/best/items?categoryList=274100100&periodSort=ONE_WEEK&limit=100&offset=0",
+          "method": "public-platform-ranking",
+          "status": "fetched",
+          "entryCount": 100,
+          "contentHash": "4dea5e1ebb7b4c277796a416c74cdfc8d75fb8bf60061984b565427a089deca7",
+          "checkedAt": "2026-09-28T04:31:07.117Z",
+          "matchedProductCount": 0,
+          "category": "남성슈즈",
+          "country": "KR",
+          "period": "1주일 (ONE_WEEK)",
+          "captureLimit": 100
+        }
+      ]
+    }
+  },
   "sourceStatus": {
     "checkedAt": "2026-09-28T02:46:10.458Z",
     "lastSuccessfulCollectionAt": "2026-09-28T03:00:09.597Z",
@@ -2238,9 +4900,9 @@
       "SNS 인기는 수집한 공개 게시물 범위에 한합니다."
     ],
     "counts": {
-      "source": 2337,
-      "published": 16,
-      "held": 2321,
+      "source": 2360,
+      "published": 45,
+      "held": 2315,
       "expired": 0
     }
   }

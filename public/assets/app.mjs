@@ -1,5 +1,5 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes } from './export.mjs';
-import { kstToday, releaseState, safeUrl, filterProducts } from './catalog-view.mjs';
+import { kstToday, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext } from './catalog-view.mjs';
 
 const $ = id => document.getElementById(id);
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -7,7 +7,7 @@ const sourceNames = {magazine:'매거진',newsletter:'뉴스레터',sns:'SNS',ec
 const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:'캐주얼 샌들','platform-sandal':'플랫폼 샌들',hybrid:'혼합형 스니커즈'};
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
-const state = {search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'released',sort:'newest',page:1,keywordIds:null,keywordLabel:''};
+const state = {search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'released',sort:'newest',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 let catalog = null, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId;
 
 function dateText(value, time = false) {
@@ -34,7 +34,7 @@ async function loadCatalog() {
     const value = await response.json();
     if (value.schemaVersion !== 1 || !Array.isArray(value.products) || !Array.isArray(value.brands) || !Array.isArray(value.keywords)) throw new Error('Invalid snapshot');
     catalog = value;
-    products = value.products.filter(p => p && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string').map(p => ({...p,keywords:[...(p.keywords||[]),...value.keywords.filter(k=>k.productIds?.includes(p.id)).map(k=>k.label)]}));
+    products = value.products.filter(p => p && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string').map(p => ({...p,keywords:[...(p.keywords||[]),...value.keywords.filter(k=>k.productIds?.includes(p.id)).flatMap(k=>[k.label,...(k.aliases||[])])]}));
     const collection = value.sourceStatus?.lastSuccessfulCollectionAt;
     $('update-label').textContent = collection ? `${dateText(collection, true)} 수집 완료` : value.publishedAt ? `${dateText(value.publishedAt, true)} 게시` : '첫 검증 완료본 게시 대기';
     const unavailable = value.sourceStatus?.unavailableBrands || [];
@@ -68,9 +68,18 @@ function renderBrands() {
   $('brand-list').querySelectorAll('input').forEach(input => input.addEventListener('change', () => { input.checked ? state.brands.add(input.dataset.brand) : state.brands.delete(input.dataset.brand); state.page=1; render(); }));
 }
 function renderKeywords() {
-  const keywords = (catalog?.keywords || []).filter(k => k.label && Array.isArray(k.productIds) && k.productIds.some(id => products.some(p => p.id === id && releaseState(p,today)))).slice(0,8);
-  $('keyword-list').innerHTML = keywords.length ? keywords.map((k,i) => `<button class="keyword ${state.keywordLabel===k.label?'active':''}" data-keyword="${i}" aria-pressed="${state.keywordLabel===k.label}"><span class="rank">${esc(k.rank||i+1)}</span>${esc(k.label)}<span class="count">${esc(k.productCount||k.productIds.length)}개 상품</span></button>`).join('') : '<p class="muted">이번 주 출처 근거를 충족한 키워드가 아직 없습니다.</p>';
-  $('keyword-list').querySelectorAll('button').forEach(button => button.addEventListener('click', () => { const k = keywords[Number(button.dataset.keyword)]; const same = state.keywordLabel===k.label; state.keywordLabel = same?'':k.label; state.keywordIds=same?null:new Set(k.productIds); state.page=1; renderKeywords(); render(); }));
+  const keywords = (catalog?.keywords || []).filter(k => k.label && Array.isArray(k.productIds));
+  $('keyword-list').innerHTML = keywords.length ? keywords.map((k,i) => {
+    const ranked=Number.isInteger(k.rank)&&k.rank>0, matched=keywordProductIds(k,products,today).size;
+    return `<button class="keyword ${state.keywordId===k.id?'active':''}" data-keyword="${i}" aria-pressed="${state.keywordId===k.id}" aria-label="${esc(k.label)} 관련 상품 ${matched}개"><span class="rank ${ranked?'':'unranked'}" aria-label="${ranked?k.rank+'위':'인기 근거 대기'}">${ranked?esc(k.rank):'—'}</span><span class="keyword-copy"><span class="keyword-name">${esc(k.label)}</span><span class="keyword-evidence">${ranked?'최근 7일 근거 '+esc(k.productCount||0)+'개 모델':'인기 근거 대기'}</span></span><span class="count"><strong>${matched}</strong><span>상품</span></span></button>`;
+  }).join('') : '<p class="muted">표시할 키워드가 아직 없습니다.</p>';
+  $('keyword-list').querySelectorAll('button').forEach(button => button.addEventListener('click', () => {
+    const k = keywords[Number(button.dataset.keyword)];
+    clearTimeout(searchTimer);
+    Object.assign(state,{search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'all',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
+    syncFilterControls();renderBrands();renderKeywords();render();
+    $('results').scrollIntoView({block:'start'});$('results').focus({preventScroll:true});
+  }));
 }
 function render() {
   if (!catalog) return;
@@ -78,7 +87,7 @@ function render() {
   state.page = Math.min(state.page,Math.max(1,Math.ceil(filtered.length/PAGE_SIZE)));
   visible = filtered.slice((state.page-1)*PAGE_SIZE,state.page*PAGE_SIZE);
   $('result-count').textContent = filtered.length.toLocaleString();
-  $('result-description').textContent = state.source === 'all' ? '출시일과 품목을 확인한 상품만 표시합니다.' : `${sourceNames[state.source]} 인기 기준을 충족한 상품입니다. 원문은 상세정보에서 확인하세요.`;
+  renderSourceDescription();
   $('product-grid').innerHTML = visible.map((p,i) => {
     const release = releaseState(p,today), url = safeUrl(p.url), sourceTypes = Object.keys(sourceNames).filter(type => p.popularity?.[type] === true);
     return `<article class="product-card ${selected.has(p.id)?'selected':''}" data-id="${esc(p.id)}"><div class="card-visual"><label class="card-checkbox"><input type="checkbox" data-select="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 선택" ${selected.has(p.id)?'checked':''}></label><button class="card-open" data-detail="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 상세정보">${imageMarkup(p,i<4)}</button>${release==='upcoming'?'<span class="release-badge upcoming">발매 예정</span>':''}</div><div class="card-copy"><p class="card-brand">${esc(p.brand)}</p><button class="card-name" data-detail="${esc(p.id)}">${esc(p.name)}</button><div class="card-meta">${fitBadges(p)}<span>${esc(p.releaseDate)}</span></div></div><div class="card-footer">${sourceTypes.map(type=>`<span class="source-badge">${sourceNames[type]}</span>`).join('')}${url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} 공식 상품 보기">공식 상품 ↗</a>`:''}</div></article>`;
@@ -96,10 +105,23 @@ function render() {
   $('mobile-brand-count').textContent=state.brands.size?String(state.brands.size):'';
   renderChips(); renderPagination(); updateSelection();
 }
+function renderSourceDescription() {
+  if (state.source === 'all') {
+    const narrowed=state.brands.size||state.fit!=='all'||state.category!=='all'||state.search||state.release!=='all';
+    $('result-description').textContent=state.keywordLabel?`${state.keywordLabel} ${narrowed?'관련 상품 · 선택한 필터 적용':'전체 상품 · 최근 3개월 출시와 발매 예정 포함'}`:'출시일과 품목을 확인한 상품만 표시합니다.';
+    return;
+  }
+  const context=sourceContext(state.source,products,catalog.sourceDirectory||{},today);
+  const links=entries=>entries.map(s=>`<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.name)} ↗</a>`).join(' · ');
+  const original=context.observed.length?`카탈로그 원문 출처: ${links(context.observed)}`:'확인된 원문 출처가 아직 없습니다.';
+  const awaiting=context.configured.length?`<span class="source-context">수집 대상 (원문 확인 전): ${links(context.configured)}</span>`:'';
+  const snsTarget=state.source==='sns'?`<span class="source-context">확인 대상: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram 공개 원문 ↗</a>. ${products.some(p=>releaseState(p,today)&&p.popularity?.sns)?'인기 기준을 충족한 게시물의 원문은 상품 상세정보에서 확인하세요.':'현재 인기 기준을 충족한 게시물은 없습니다.'}</span>`:'';
+  $('result-description').innerHTML=`${original}${awaiting}${snsTarget}<span class="source-context">${esc(sourceNames[state.source])} 인기 기준을 충족한 상품만 표시합니다. 개별 원문은 상세정보에서 확인하세요.</span>`;
+}
 function renderChips() {
   $('active-filters').innerHTML = [...state.brands].map(name=>`<button class="filter-chip" data-remove-brand="${esc(name)}" aria-label="${esc(name)} 필터 해제">${esc(name)}<span aria-hidden="true">×</span></button>`).join('')+(state.keywordLabel?`<button class="filter-chip" id="remove-keyword" aria-label="키워드 필터 해제"># ${esc(state.keywordLabel)}<span aria-hidden="true">×</span></button>`:'');
   $('active-filters').querySelectorAll('[data-remove-brand]').forEach(b=>b.addEventListener('click',()=>{state.brands.delete(b.dataset.removeBrand);state.page=1;renderBrands();render();}));
-  $('remove-keyword')?.addEventListener('click',()=>{state.keywordIds=null;state.keywordLabel='';state.page=1;renderKeywords();render();});
+  $('remove-keyword')?.addEventListener('click',()=>{state.keywordIds=null;state.keywordLabel='';state.keywordId='';state.page=1;renderKeywords();render();});
 }
 function renderPagination() {
   const pages = Math.ceil(filtered.length/PAGE_SIZE);
@@ -123,14 +145,18 @@ function openDetail(id) {
   const url=safeUrl(p.url), evidence=safeUrl(p.dateEvidence?.url);
   const signals=(p.sourceSignals||[]).filter(s=>safeUrl(s.url));
   const data=[['출시일',`${esc(dateText(p.releaseDate))}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">출시일 근거 ↗</a>`:''}`],['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'미확인')],['스타일 코드',esc(p.style||'미확인')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'미확인')],['소재',esc(p.material||'미확인')],['가격',esc(p.priceLabel||'공식 상품에서 확인')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
-  $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(p.name)}</h2><div class="detail-summary">${fitBadges(p)}</div><div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 인기 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?'발행 '+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p></div>`).join(''):'<p class="muted">확인 가능한 매거진·뉴스레터·SNS·랭킹 근거가 아직 없습니다.</p>'}`;
+  $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(p.name)}</h2><div class="detail-summary">${fitBadges(p)}</div><div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 인기 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):'<p class="muted">확인 가능한 매거진·뉴스레터·SNS·랭킹 근거가 아직 없습니다.</p>'}`;
   bindImageErrors($('detail-content'));$('detail-select').addEventListener('click',()=>toggleSelection(id,!selected.has(id)));
   if(!$('detail-dialog').open)$('detail-dialog').showModal();
 }
+function syncFilterControls() {
+  $('search').value=state.search;$('brand-search').value='';$('fit-filter').value=state.fit;$('category-filter').value=state.category;$('release-filter').value=state.release;$('sort').value=state.sort;
+  document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b.dataset.source===state.source);b.setAttribute('aria-pressed',String(b.dataset.source===state.source));});
+}
 function resetFilters() {
-  Object.assign(state,{search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'released',sort:'newest',page:1,keywordIds:null,keywordLabel:''});
-  $('search').value='';$('brand-search').value='';$('fit-filter').value='all';$('category-filter').value='all';$('release-filter').value='released';$('sort').value='newest';
-  document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b.dataset.source==='all');b.setAttribute('aria-pressed',String(b.dataset.source==='all'));});renderBrands();renderKeywords();render();
+  clearTimeout(searchTimer);
+  Object.assign(state,{search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'released',sort:'newest',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
+  syncFilterControls();renderBrands();renderKeywords();render();
 }
 function openExport() {
   $('export-description').textContent=`선택한 ${selected.size}개 상품에서 필요한 정보를 고르세요.`;

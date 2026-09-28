@@ -1,12 +1,14 @@
 import fs from 'node:fs';
-import { validDay, httpUrl, classifyFootwear, canonicalUrl } from './curation.mjs';
+import { validDay, httpUrl, classifyFootwear, canonicalUrl, brandPolicy } from './curation.mjs';
 
 const monthNames = 'January February March April May June July August September October November December'.split(' ');
 export function exactDate(text) {
   const iso = text.match(/\b(20\d{2}-\d{2}-\d{2})\b/); if (iso && validDay(iso[1])) return iso[1];
-  const match = text.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(20\d{2})\b/i);
-  if (!match) return null;
-  const day = `${match[3]}-${String(monthNames.findIndex(m=>m.toLowerCase()===match[1].toLowerCase())+1).padStart(2,'0')}-${match[2].padStart(2,'0')}`;
+  const month='(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)';
+  const match=text.match(new RegExp(`\\b${month}\\s+(\\d{1,2})(?:st|nd|rd|th)?,?\\s+(20\\d{2})\\b`,'i'));
+  const reverse=!match&&text.match(new RegExp(`\\b(\\d{1,2})\\s+${month}\\s+(20\\d{2})\\b`,'i'));
+  if(!match&&!reverse)return null;const m=match?match[1]:reverse[2],d=match?match[2]:reverse[1],y=match?match[3]:reverse[3];
+  const day = `${y}-${String(monthNames.findIndex(x=>x.slice(0,3).toLowerCase()===m.slice(0,3).toLowerCase())+1).padStart(2,'0')}-${d.padStart(2,'0')}`;
   return validDay(day) ? day : null;
 }
 export function releaseSentence(text,product) {
@@ -14,7 +16,7 @@ export function releaseSentence(text,product) {
   text=text.split(/\n#{1,3}\s*(?:Related|Recommended|You may also|Recently viewed)/i)[0];
   const parts = text.split(/\n|(?<=[.!?])\s+/).filter(s=>/releases? (?:on|date)|launch(?:es|ing)? (?:on|date)|available (?:starting|from|on)|발매일|출시일/i.test(s));
   const candidates = parts.filter(s=>product.style&&s.toLowerCase().includes(product.style.toLowerCase())||(product.signalAliases||[]).some(a=>a.length>=12&&s.toLowerCase().includes(a.toLowerCase())))
-    .map(s=>({day:exactDate(s),excerpt:s.trim().slice(0,450)})).filter(x=>x.day);
+    .map(s=>({day:exactDate(s),excerpt:s.trim().split(/\s+/).slice(0,25).join(' ')})).filter(x=>x.day);
   if (new Set(candidates.map(x=>x.day)).size !== 1) return null;
   return candidates[0];
 }
@@ -47,7 +49,7 @@ export function productDetails(text, product) {
   const description=body.split(/\n/).filter(s=>s.length>45&&!/https?:\/\/|cookies|privacy|copyright|shipping|returns|sign up|newsletter/i.test(s)).slice(0,12).join(' ').slice(0,3500);
   return {image,description,priceLabel:body.match(/(?:\$|€|£|₩)\s?[\d,.]+/)?.[0]||product.priceLabel||'',productType:product.productType||'sneaker'};
 }
-export async function collectOfficialEvidence({read,products=[],now=new Date(),maxCandidates=100,log=console.log}) {
+export async function collectOfficialEvidence({read,products=[],now=new Date(),maxCandidates=Infinity,log=console.log}) {
   const checkedAt=new Date(now).toISOString(), verified=[], diagnostics=[];
   const source='https://www.salomon.com/en-ca/c/launch-calendar/upcoming';
   try {
@@ -58,18 +60,30 @@ export async function collectOfficialEvidence({read,products=[],now=new Date(),m
       } catch(e) { diagnostics.push({url:p.url,error:e.message}); }
     }
   } catch(e) { diagnostics.push({url:source,error:e.message}); }
-  const incoming=products.filter(p=>!p.dateEvidence?.verified && httpUrl(p.url) && classifyFootwear(p).category).sort((a,b)=>(b.firstSeen||'').localeCompare(a.firstSeen||'')).slice(0,maxCandidates);
-  for(const p of incoming) {
+  const sources=JSON.parse(fs.readFileSync(new URL('../config/daily_sources.json',import.meta.url),'utf8'));
+  const incoming=products.filter(p=>{
+    if(p.dateEvidence?.verified||!httpUrl(p.url))return false;
+    const policy=brandPolicy(p.brand),reason=classifyFootwear(p).reason;
+    if(!policy||!['mandatory','core','conditional'].includes(policy.policy)||policy.policy==='conditional'&&!p.modelReview?.approved)return false;
+    if(['excluded-footwear','hybrid-review-required'].includes(reason))return false;
+    const host=new URL(p.url).hostname.replace(/^www\./,'');
+    if(!(sources[p.brand]||[]).some(s=>{const h=new URL(s.url).hostname.replace(/^www\./,'');return host===h||host.endsWith('.'+h);}))return false;
+    if(!p.style&&!(p.signalAliases||[]).some(a=>a.length>=12)){diagnostics.push({id:p.id,reason:'exact-product-date-identity-required'});return false;}
+    return true;
+  }).sort((a,b)=>(b.firstSeen||'').localeCompare(a.firstSeen||'')).slice(0,maxCandidates);
+  let next=0,completed=0;const pages=new Map();
+  const readOnce=url=>{const key=canonicalUrl(url);if(!pages.has(key))pages.set(key,read(`https://r.jina.ai/${url}`));return pages.get(key);};
+  log(`Official date verification: ${incoming.length} eligible product identities to check.`);
+  async function verifyNext(){while(next<incoming.length){const p=incoming[next++];
     try {
-      // Only official product URLs already verified by the collector qualify here.
-      const sources=JSON.parse(fs.readFileSync(new URL('../config/daily_sources.json',import.meta.url),'utf8'));
-      const host=new URL(p.url).hostname.replace(/^www\./,'');
-      if(!(sources[p.brand]||[]).some(s=>{const h=new URL(s.url).hostname.replace(/^www\./,'');return host===h||host.endsWith('.'+h);}))continue;
-      const page=await read(`https://r.jina.ai/${p.url}`), release=releaseSentence(page,p), details=productDetails(page,p);
+      const page=await readOnce(p.url), release=releaseSentence(page,p), details=productDetails(page,p);
       if(!release||!details) {diagnostics.push({id:p.id,reason:'exact-release-day-not-found'});continue;}
       verified.push({...p,...details,releaseDate:release.day,dateEvidence:{url:p.url,precision:'day',official:true,verified:true,verifiedAt:checkedAt,excerpt:release.excerpt},productVerifiedAt:checkedAt,productEvidenceUrl:p.url});
     } catch(e) {diagnostics.push({id:p.id,error:e.message});}
-  }
+    finally{completed++;if(completed%25===0||completed===incoming.length)log(`Official date verification: ${completed}/${incoming.length} checked; ${verified.length} verified.`);}
+  }}
+  // Reader applies one shared rate limit. Parallel workers prevent slow pages from stalling every brand.
+  await Promise.all(Array.from({length:4},()=>verifyNext()));
   log(`Official date verification: ${verified.length} qualified records; ${diagnostics.length} held checks.`);
   return {products:verified,diagnostics,checkedAt};
 }

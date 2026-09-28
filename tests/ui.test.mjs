@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { EXPORT_COLUMNS, productRecord, exportRows, csvBytes, xlsxBytes } from '../public/assets/export.mjs';
-import { kstToday, shiftCalendarMonths, releaseState, safeUrl, filterProducts } from '../public/assets/catalog-view.mjs';
+import { kstToday, shiftCalendarMonths, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext } from '../public/assets/catalog-view.mjs';
 
 test('KST calendar window clamps month ends and distinguishes upcoming, expired, unknown', () => {
   assert.equal(kstToday(new Date('2026-09-27T15:00:00Z')),'2026-09-28');
@@ -20,6 +20,19 @@ test('Source filters require qualified popularity, not a mere mention; common fi
 });
 test('External links accept only ordinary http(s), reject script and credential URLs',()=>{
   assert.equal(safeUrl('javascript:alert(1)'),'');assert.equal(safeUrl('https://user:password@example.org/'),'');assert.equal(safeUrl('data:text/html,x'),'');assert.equal(safeUrl('https://example.org/shoe'),'https://example.org/shoe');
+});
+test('Keyword matching uses every matching product, not only ranking evidence, and excludes expired or unknown dates',()=>{
+  const products=[{id:'evidence',releaseDate:'2026-09-01'},{id:'attribute-only',releaseDate:'2026-08-01'},{id:'upcoming',releaseDate:'2026-10-01'},{id:'expired',releaseDate:'2026-06-27'},{id:'unknown',releaseDate:''}];
+  const keyword={productIds:products.map(p=>p.id),evidenceProductIds:['evidence'],productCount:1,matchedProductCount:5};
+  assert.deepEqual([...keywordProductIds(keyword,products,'2026-09-28')],['evidence','attribute-only','upcoming']);
+  assert.equal(keywordProductIds({...keyword,productIds:[]},products,'2026-09-28').size,0);
+});
+test('Source labels distinguish observed originals from configured targets and never invent platforms',()=>{
+  const directory={magazine:{configured:[{id:'actual',name:'Editorial Site',url:'https://editorial.example/'},{id:'pending',name:'Planned Magazine',url:'https://planned.example/'}],observed:[{id:'old',name:'Expired source',url:'https://expired.example/'}]}};
+  const products=[{id:'a',releaseDate:'2026-09-01',sourceSignals:[{type:'magazine',url:'https://editorial.example/story',publisherName:'Editorial Site',publisherId:'actual'}]},{id:'old',releaseDate:'2020-01-01',sourceSignals:[{type:'magazine',url:'https://expired.example/story',publisherName:'Expired source'}]}];
+  const context=sourceContext('magazine',products,directory,'2026-09-28');
+  assert.deepEqual(context.observed.map(s=>s.name),['Editorial Site']);assert.deepEqual(context.configured.map(s=>s.name),['Planned Magazine']);
+  assert.equal(context.observed[0].url,'https://editorial.example/');assert.deepEqual(sourceContext('ecommerce',products,directory,'2026-09-28'),{observed:[],configured:[]});
 });
 test('Archive export is the exact 17-column whitelist, with Korean groups and unknown values blank',()=>{
   const p={brand:'Nike',name:'신발',archiveGroup:'outdoor',fit:['MLB'],fitReasons:['secret'],sourceSignals:[{url:'private'}],material:'Mesh',colors:[{name:'Black',hex:'#000000'}],image:'https://example.org/a.jpg'};

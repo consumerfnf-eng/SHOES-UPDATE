@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {KEYWORD_THEMES,canonicalKeyword,productKeywordIds} from './keyword-taxonomy.mjs';
 
 export const POLICY = JSON.parse(fs.readFileSync(new URL('../config/brand-policy.json', import.meta.url), 'utf8'));
 const key = x => String(x || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').normalize('NFC').toLowerCase().replace(/[^a-z0-9가-힣]/g, '');
@@ -99,22 +100,24 @@ export function curateProduct(raw, today) {
     hybridReview:raw.hybridReview,modelReview:raw.modelReview,
     sourceSignals: visibleSignals, popularity: hot, archiveGroup: raw.archiveGroup || policy.group,
     country: raw.country || '', lastVerifiedAt: raw.productVerifiedAt, productEvidenceUrl: raw.productEvidenceUrl,
-    eligibility: { passed: true, checkedAt: today }, keywordTags: raw.keywordTags || [] };
+    eligibility: { passed: true, checkedAt: today }, keywordTags: productKeywordIds({...raw,sourceSignals:visibleSignals}) };
   return { product, expired: raw.releaseDate < shiftMonth(today, -3) };
 }
 export function rankKeywords(products, today) {
-  const map = new Map(), old = new Map();
+  const map = new Map(KEYWORD_THEMES.map(theme=>[theme.id,{...theme,types:new Set(),evidence:new Set(),models:new Set(),oldModels:new Set()}]));
   for (const p of products) for (const signal of p.sourceSignals || []) {
     const days=age(signal.publishedAt,today);if(days<0||days>=14)continue;
     for (const label of signal.keywords || []) {
-      if (!label || label.length > 60) continue;
-      const id=key(label),model=p.modelKey||p.id;if(days>=7){const ids=old.get(id)||new Set();ids.add(model);old.set(id,ids);continue;}
-      const r = map.get(id) || { id, label, types: new Set(), products: new Set(),models:new Set() };
-      r.types.add(signal.type); r.products.add(p.id);r.models.add(model);map.set(id, r);
+      const id=canonicalKeyword(label),r=map.get(id),model=p.modelKey||p.id;if(!r||!(p.keywordTags||productKeywordIds(p)).includes(id))continue;
+      if(days>=7){r.oldModels.add(model);continue;}
+      r.types.add(signal.type);r.evidence.add(p.id);r.models.add(model);
     }
   }
-  return [...map.values()].map(r => ({ id: r.id, label: r.label, sourceTypes: [...r.types], productIds: [...r.products], productCount: r.models.size, previousProductCount: old.get(r.id)?.size || 0, growth: r.models.size - (old.get(r.id)?.size || 0) }))
-    .sort((a,b) => b.sourceTypes.length-a.sourceTypes.length || b.productCount-a.productCount || b.growth-a.growth || a.label.localeCompare(b.label)).map((r,i) => ({ ...r, rank:i+1 }));
+  const rows=[...map.values()].map(r=>{
+    const productIds=products.filter(p=>(p.keywordTags||productKeywordIds(p)).includes(r.id)).map(p=>p.id);
+    return {id:r.id,label:r.label,aliases:r.aliases,sourceTypes:[...r.types],productIds,matchedProductCount:productIds.length,evidenceProductIds:[...r.evidence],productCount:r.models.size,previousProductCount:r.oldModels.size,growth:r.models.size-r.oldModels.size};
+  }).sort((a,b)=>Number(b.productCount>0)-Number(a.productCount>0)||b.sourceTypes.length-a.sourceTypes.length||b.productCount-a.productCount||b.growth-a.growth||KEYWORD_THEMES.findIndex(t=>t.id===a.id)-KEYWORD_THEMES.findIndex(t=>t.id===b.id));
+  let rank=0;return rows.map(r=>({...r,rank:r.productCount?++rank:null,rankingStatus:r.productCount?'ranked':'awaiting-evidence'}));
 }
 export function curateCatalog(rawProducts, { now = new Date(), previous = {}, collection = {} } = {}) {
   const today = kstDay(now), products = [], expired = [], held = [], seen = new Set();
@@ -125,10 +128,19 @@ export function curateCatalog(rawProducts, { now = new Date(), previous = {}, co
     (result.expired ? expired : products).push(result.product);
   }
   const activeBrands = new Set(products.map(p => p.brand));
+  const configuredDirectory=collection.sourceDirectory||previous.sourceDirectory||{};
+  const sourceDirectory=Object.fromEntries(['magazine','newsletter','sns','ecommerce'].map(type=>{
+    const sources=new Map();
+    for(const p of products)for(const s of p.sourceSignals.filter(x=>x.type===type)){
+      const host=new URL(s.url).hostname.replace(/^www\./,''),rawId=s.publisherId||s.accountId||s.account||host,known=configuredDirectory[type]?.configured?.find(x=>x.id===rawId||new URL(x.url).hostname.replace(/^www\./,'')===host),id=known?.id||rawId;
+      const item=sources.get(id)||{id,name:s.publisherName||s.platformName||s.account||known?.name||host,url:known?.url||`https://${host}/`,ids:new Set()};item.ids.add(p.id);sources.set(id,item);
+    }
+    return [type,{configured:configuredDirectory[type]?.configured||[],observed:[...sources.values()].map(({ids,...s})=>({...s,itemCount:ids.size})),checkedAt:configuredDirectory[type]?.checkedAt||collection.checkedAt||previous.sourceStatus?.checkedAt||null,checks:configuredDirectory[type]?.checks||[]}];
+  }));
   const snapshot = { schemaVersion:1, publishedAt:new Date(now).toISOString(), periodStart:shiftMonth(today,-3), asOf:today,
     brands:POLICY.brands.filter(b => b.mandatory || b.policy === 'core' || b.policy === 'conditional' && activeBrands.has(b.name)),
     products:products.sort((a,b) => b.releaseDate.localeCompare(a.releaseDate) || a.name.localeCompare(b.name)),
-    keywords:rankKeywords(products,today,previous.keywords), sourceStatus:{ checkedAt:collection.checkedAt || previous.sourceStatus?.checkedAt || null,
+    keywords:rankKeywords(products,today,previous.keywords),sourceDirectory, sourceStatus:{ checkedAt:collection.checkedAt || previous.sourceStatus?.checkedAt || null,
       lastSuccessfulCollectionAt:collection.lastSuccessfulCollectionAt || previous.sourceStatus?.lastSuccessfulCollectionAt || null,
       unavailableBrands:collection.unavailableBrands || previous.sourceStatus?.unavailableBrands || [], coverage:collection.coverage || previous.sourceStatus?.coverage || [],
       notes:['출시일·품목·적합성을 확인한 상품만 표시합니다. 확인일을 출시일로 사용하지 않습니다.','SNS 인기는 수집한 공개 게시물 범위에 한합니다.'],

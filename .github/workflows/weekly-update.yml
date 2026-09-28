@@ -5,6 +5,12 @@ on:
     - cron: '0 11 * * 0' # Sunday 20:00 KST retry if no completed collection this week
     - cron: '0 21 * * 0' # Monday 06:00 KST final catch-up
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Run a fresh collection even when this week already completed'
+        required: false
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -28,7 +34,12 @@ jobs:
       - name: Collect and verify complete weekly snapshot
         env:
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
-        run: npm run weekly -- --only-if-stale
+        run: |
+          if [ "${{ github.event_name }}" = 'workflow_dispatch' ] && [ "${{ inputs.force }}" = 'true' ]; then
+            npm run weekly
+          else
+            npm run weekly -- --only-if-stale
+          fi
       - name: Validate snapshot before archive writes
         run: npm run build
       - name: Append eligible expired products to existing archive sheets

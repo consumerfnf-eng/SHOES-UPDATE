@@ -25,6 +25,32 @@ export function categoryMatches(product, key) {
   const tags = [product.category, product.productType, ...(product.tags || [])].join(' ').toLowerCase();
   return ({sneaker:/sneaker|스니커즈|러닝|트레일|runner|running|court/,clog:/clog|클로그/,sandal:/sandal|샌들/,platform:/platform|플랫폼/,hybrid:/hybrid|혼합|메리제인|발레|mule|뮬/}[key] || /$a/).test(tags);
 }
+export function keywordProductIds(keyword, products, today = kstToday()) {
+  // productIds is the publisher's complete attribute match set. evidenceProductIds
+  // is intentionally not used: a ranking mention does not limit product discovery.
+  const matched = new Set(keyword.productIds || []);
+  return new Set(products.filter(p => matched.has(p.id) && releaseState(p, today)).map(p => p.id));
+}
+export function sourceContext(type, products, directory = {}, today = kstToday()) {
+  const configured = (directory[type]?.configured || []).filter(s => s?.name && safeUrl(s.url));
+  const entries = [...(directory[type]?.observed || []), ...configured];
+  const host = value => { const url=safeUrl(value); return url ? new URL(url).hostname.replace(/^www\./,'') : ''; };
+  const observed = new Map();
+  for (const product of products) {
+    if (!releaseState(product,today)) continue;
+    for (const signal of product.sourceSignals || []) {
+      if(signal.type !== type || !safeUrl(signal.url)) continue;
+      const domain=host(signal.url);
+      const entry=entries.find(e=>e?.id&&e.id===signal.publisherId || host(e?.url)&& (domain===host(e.url)||domain.endsWith('.'+host(e.url))));
+      const id=entry?.id||signal.publisherId||domain;
+      const name=signal.publisherName||signal.platformName||entry?.name||domain;
+      observed.set(id,{id,name,url:safeUrl(entry?.url)||new URL(signal.url).origin,domain});
+    }
+  }
+  const confirmed=[...observed.values()].sort((a,b)=>a.name.localeCompare(b.name));
+  const awaiting=configured.filter(c=>!confirmed.some(o=>o.id===c.id||o.domain===host(c.url)||o.domain.endsWith('.'+host(c.url))));
+  return {observed:confirmed,configured:awaiting};
+}
 export function filterProducts(products, state, today = kstToday()) {
   const query = state.search.trim().toLocaleLowerCase();
   return products.filter(p => {

@@ -1,8 +1,26 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "magazineDomains": ["gq-magazin.de", "pausemag.co.uk", "sneakerbardetroit.com", "soleretriever.com", "hypebeast.com", "highsnobiety.com", "sneakernews.com"],
-  "newsletterDomains": ["substack.com"],
+  "newsletterDomains": ["thesneakernewsletter.com", "thedassler.substack.com"],
+  "editorialSources": [
+    {"id":"gq-magazin.de","name":"GQ Germany","type":"magazine","domain":"gq-magazin.de","url":"https://www.gq-magazin.de/"},
+    {"id":"pausemag.co.uk","name":"PAUSE","type":"magazine","domain":"pausemag.co.uk","url":"https://pausemag.co.uk/"},
+    {"id":"sneakerbardetroit.com","name":"Sneaker Bar Detroit","type":"magazine","domain":"sneakerbardetroit.com","url":"https://sneakerbardetroit.com/","feedUrl":"https://sneakerbardetroit.com/feed/"},
+    {"id":"soleretriever.com","name":"Sole Retriever","type":"magazine","domain":"soleretriever.com","url":"https://www.soleretriever.com/"},
+    {"id":"hypebeast.com","name":"Hypebeast","type":"magazine","domain":"hypebeast.com","url":"https://hypebeast.com/footwear","feedUrl":"https://hypebeast.com/footwear/feed"},
+    {"id":"highsnobiety.com","name":"Highsnobiety","type":"magazine","domain":"highsnobiety.com","url":"https://www.highsnobiety.com/","feedUrl":"https://www.highsnobiety.com/feeds/rss"},
+    {"id":"sneakernews.com","name":"Sneaker News","type":"magazine","domain":"sneakernews.com","url":"https://sneakernews.com/","feedUrl":"https://sneakernews.com/feed/"},
+    {"id":"thesneakernewsletter.com","name":"The Sneaker Newsletter","type":"newsletter","domain":"thesneakernewsletter.com","url":"https://www.thesneakernewsletter.com/","feedUrl":"https://www.thesneakernewsletter.com/feed"},
+    {"id":"thedassler.substack.com","name":"The Dassler","type":"newsletter","domain":"thedassler.substack.com","url":"https://thedassler.substack.com/","feedUrl":"https://thedassler.substack.com/feed","maxBytes":4000000}
+  ],
   "snsAccounts": [],
-  "rankingPages": [],
-  "note": "Public SNS accounts require a reviewed account identity, ownership and seller status before popularity counting. Add only verified ranking URLs with explicit country and category; search result order is never a ranking."
+  "rankingPages": [
+    {"id":"musinsa","name":"무신사","adapter":"musinsa","country":"KR","category":"스니커즈","categoryCode":"103004","period":"실시간","captureLimit":100,"url":"https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004","apiUrl":"https://client.musinsa.com/api/home/web/v5/pans/ranking/sections/256?storeCode=sneaker&categoryCode=103004&contentsId=","basis":"매출·조회수·후기수를 반영한 플랫폼 인기 순위"},
+    {"id":"musinsa","name":"무신사","adapter":"musinsa","country":"KR","category":"스포츠화","categoryCode":"103005","period":"실시간","captureLimit":100,"url":"https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005","apiUrl":"https://client.musinsa.com/api/home/web/v5/pans/ranking/sections/256?storeCode=sneaker&categoryCode=103005&contentsId=","basis":"매출·조회수·후기수를 반영한 플랫폼 인기 순위"},
+    {"id":"musinsa","name":"무신사","adapter":"musinsa","country":"KR","category":"샌들/슬리퍼","categoryCode":"103003","period":"실시간","captureLimit":100,"url":"https://www.musinsa.com/main/sneaker/ranking?categoryCode=103003","apiUrl":"https://client.musinsa.com/api/home/web/v5/pans/ranking/sections/256?storeCode=sneaker&categoryCode=103003&contentsId=","basis":"매출·조회수·후기수를 반영한 플랫폼 인기 순위"},
+    {"id":"29cm","name":"29CM","adapter":"29cm","country":"KR","category":"여성슈즈","categoryCode":"270100100","period":"1주일 (ONE_WEEK)","captureLimit":100,"url":"https://www.29cm.co.kr/store/best-items?category_large_code=270100100","apiUrl":"https://recommend-api.29cm.co.kr/api/v4/best/items?categoryList=270100100&periodSort=ONE_WEEK&limit=100&offset=0","basis":"플랫폼 BEST의 1주일 표시 순서"},
+    {"id":"29cm","name":"29CM","adapter":"29cm","country":"KR","category":"남성슈즈","categoryCode":"274100100","period":"1주일 (ONE_WEEK)","captureLimit":100,"url":"https://www.29cm.co.kr/store/best-items?category_large_code=274100100","apiUrl":"https://recommend-api.29cm.co.kr/api/v4/best/items?categoryList=274100100&periodSort=ONE_WEEK&limit=100&offset=0","basis":"플랫폼 BEST의 1주일 표시 순서"}
+  ],
+  "verifiedAt": "2026-09-28",
+  "note": "Registered targets are distinct from observed current-product evidence. Public RSS and ranking APIs are key-independent. SNS requires reviewed account identity plus each original post URL, never an account-wide originality flag. Ranking snapshot dates never establish product release dates."
 }
