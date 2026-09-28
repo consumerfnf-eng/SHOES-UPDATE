@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-28T02:30:45.893Z",
+  "checkedAt": "2026-09-28T03:00:09.598Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -13501,6 +13501,430 @@
       "brand": "Nike",
       "name": "Nike Air Max Goadome Low ",
       "reason": "hybrid-review-required"
+    },
+    {
+      "id": "live-a7e4e1fca5825517",
+      "brand": "Nike",
+      "name": "Air Jordan 4 Retro \"Tour Yellow\"",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-4244d2a73f23ca7b",
+      "brand": "Nike",
+      "name": "Mind 001",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-afd37159f5c237f1",
+      "brand": "Nike",
+      "name": "Pegasus Plus 2",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-db23375a0e4ad2b5",
+      "brand": "Nike",
+      "name": "Pegasus Plus 2",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-a09de951e6a34626",
+      "brand": "ROA",
+      "name": "Fedaia Clog",
+      "reason": "summer-structure-unverified"
+    },
+    {
+      "id": "live-1cf0cfd56db12135",
+      "brand": "Cecilie Bahnsen",
+      "name": "CBArna Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-473f3cb53f7662ee",
+      "brand": "Cecilie Bahnsen",
+      "name": "CBArna Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-82d4524836fd8c0d",
+      "brand": "Cecilie Bahnsen",
+      "name": "CBBlaise Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-cb46dd454437366b",
+      "brand": "Cecilie Bahnsen",
+      "name": "CBBlaise Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-370c07cfaad02ec7",
+      "brand": "Cecilie Bahnsen",
+      "name": "CBBlaise Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-3c4a608fd2316fb0",
+      "brand": "Cecilie Bahnsen",
+      "name": "CBBlaise Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-9d89028556ad6942",
+      "brand": "Cecilie Bahnsen",
+      "name": "CBBlaise Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-0f965211d38d4740",
+      "brand": "Alo",
+      "name": "Recovery Mode Sneaker (Unisex)",
+      "reason": "release-day-evidence-required"
+    },
+    {
+      "id": "live-dba639752c1cb84a",
+      "brand": "On",
+      "name": "New generation Cloudvista 3 Women – Trail Running, Mid-distances, all terrain",
+      "reason": "release-day-evidence-required"
+    },
+    {
+      "id": "live-bf244ceeace66347",
+      "brand": "On",
+      "name": "New color Cloudrunner 3 Waterproof Women – Everyday running, stable ride, waterproof",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-39293dd752462deb",
+      "brand": "On",
+      "name": "New color Cloudmonster 3 Men – Everyday running, responsive ride",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-efdd0cbc70bc1090",
+      "brand": "On",
+      "name": "New generation Cloudvista 3 Men – Trail Running, Mid-distances, all terrain",
+      "reason": "release-day-evidence-required"
+    },
+    {
+      "id": "live-93065cb2869c5b51",
+      "brand": "On",
+      "name": "New color Cloudrunner 3 Waterproof Men – Everyday running, stable ride, waterproof",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-66910d31b0db4092",
+      "brand": "On",
+      "name": "New color Cloudmonster 3 Women – Everyday running, responsive ride",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-57dd763eac32e677",
+      "brand": "On",
+      "name": "New generation Cloudvista 3 Waterproof Women – Trail Running, Mid-distances, all terrain",
+      "reason": "release-day-evidence-required"
+    },
+    {
+      "id": "live-943b63ba22cfe3dd",
+      "brand": "On",
+      "name": "New generation Cloudsoma Women – Trail Running, Short distances, all terrain",
+      "reason": "release-day-evidence-required"
+    },
+    {
+      "id": "live-d95bb35f7dafa725",
+      "brand": "On",
+      "name": "New color Cloudsoma Men – Trail Running, Short distances, all terrain",
+      "reason": "release-day-evidence-required"
+    },
+    {
+      "id": "live-6e36fbd575c32c53",
+      "brand": "On",
+      "name": "New color Cloudhorizon 2 Waterproof Women – Hiking, walking, trails, wet-weather hiking",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-54e29bf1bffc246c",
+      "brand": "On",
+      "name": "New color Cloudhorizon 2 Women – Hiking, walking, trails, all-day exploration",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-fb518061bb0db473",
+      "brand": "On",
+      "name": "New color Cloudvista 3 Waterproof Men – Trail Running, Mid-distances, all terrain",
+      "reason": "release-day-evidence-required"
+    },
+    {
+      "id": "live-73dfe16cab9a83e3",
+      "brand": "On",
+      "name": "New color Cloudswift 4 Women – Everyday running, responsive ride",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-f28198fe31fdbd9a",
+      "brand": "On",
+      "name": "New color Cloudhorizon 2 Waterproof Men – Hiking, walking, trails, wet-weather hiking",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-01f50aebbd505ea8",
+      "brand": "On",
+      "name": "New generation Cloudswift 4 Men – Everyday running, responsive ride",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-c2298c70e2d288a2",
+      "brand": "On",
+      "name": "New color Cloudmonster 3 FP Movement Women – Everyday running, responsive ride",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-8ac79a599ffcd711",
+      "brand": "On",
+      "name": "New color Cloudrunner 3 Men – Everyday running, stable ride",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-63831a56e3dea220",
+      "brand": "On",
+      "name": "Limited edition Cloudrunner 3 Max LN1 Men – Everyday running, long runs, stable ride",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-692fcaf78de76c2f",
+      "brand": "Reebok",
+      "name": "Women's Club C Grounds 70 Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-468afb830053b548",
+      "brand": "Reebok",
+      "name": "Women's Classic AZ Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-8442704faf626c8d",
+      "brand": "Reebok",
+      "name": "Women's Freestyle Hi Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-e59654acc4ff118a",
+      "brand": "Reebok",
+      "name": "Angel Reese 1 Basketball Shoes",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "live-0061a2806452f63d",
+      "brand": "Reebok",
+      "name": "Brutus Low Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-1398667558ae5953",
+      "brand": "Reebok",
+      "name": "Women's Classic AZ Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-0572f7683ed7d28a",
+      "brand": "Reebok",
+      "name": "Women's Ultra Lo Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-d310b459c1273236",
+      "brand": "Reebok",
+      "name": "Women's Freestyle Hi Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-bb570e26fab669ee",
+      "brand": "Reebok",
+      "name": "Women's Classic AZ Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-d064ac21f59cab2c",
+      "brand": "Reebok",
+      "name": "Women's Classic AZ Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-22b50a09ac2b9739",
+      "brand": "Reebok",
+      "name": "Women's Club C Revenge Vintage Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-b2108ecb577164bb",
+      "brand": "Reebok",
+      "name": "Women's Club C 85 Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-49f47fd6554d4d2e",
+      "brand": "Reebok",
+      "name": "Club C Revenge Vintage Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-eaa511a532f5e9ae",
+      "brand": "Nike",
+      "name": "Mind 001",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-946fcacfd3ac7661",
+      "brand": "Nike",
+      "name": "Jordan Heir Series 2",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-a62f9fcfddd90d84",
+      "brand": "Nike",
+      "name": "Jordan Heir Series 2",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-1c310de922c17f3c",
+      "brand": "Converse",
+      "name": "Custom Chuck Taylor All Star Lift Platform Leather By You",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-87ebf381acdb92d5",
+      "brand": "Melissa",
+      "name": "Shop the Original Possession Fisherman Sandal",
+      "reason": "casual-sandal-unverified"
+    },
+    {
+      "id": "live-6c3ee5d41c507cad",
+      "brand": "Melissa",
+      "name": "Green",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-6c195cd41c3077a5",
+      "brand": "Melissa",
+      "name": "Orange",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-6c3ed7d41c5064e3",
+      "brand": "Melissa",
+      "name": "Beige",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-a8140af78fb89f66",
+      "brand": "Melissa",
+      "name": "9 View size 9 for Dune Platform in color Black",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-e91d79b5304bfc5e",
+      "brand": "Melissa",
+      "name": "Metallic Blue",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-e91d7eb5304c04dd",
+      "brand": "Melissa",
+      "name": "Silver",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-532c5aeaeb3b9c10",
+      "brand": "Melissa",
+      "name": "Black/Glitter Black",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-f8a8542df88ede76",
+      "brand": "Melissa",
+      "name": "Brown",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-29f44df1ca039656",
+      "brand": "Melissa",
+      "name": "Pink/Clear Pink",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-465a1066e9f54a57",
+      "brand": "Melissa",
+      "name": "Green",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-e91d7db5304c032a",
+      "brand": "Melissa",
+      "name": "Gold",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-0c91cf3c6720b523",
+      "brand": "Melissa",
+      "name": "Beige/Black",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-532c60eaeb3ba642",
+      "brand": "Melissa",
+      "name": "Beige/Gold",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-2d720bdda7ffe481",
+      "brand": "Melissa",
+      "name": "Beige",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-faa07a1046047f5c",
+      "brand": "Melissa",
+      "name": "Blue/Blue",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-039828104b2ef601",
+      "brand": "Melissa",
+      "name": "Beige/Glitter",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-0c91ce3c6720b370",
+      "brand": "Melissa",
+      "name": "Pink/Pink",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "official-nike-ih7423-400",
+      "brand": "Nike",
+      "name": "Caitlin 1 \"Caitlin Blue\"",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "official-nike-ih7423-700",
+      "brand": "Nike",
+      "name": "Caitlin 1 \"Warning Code\"",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "official-nike-fz1363-002",
+      "brand": "Nike",
+      "name": "Nike General Purpose",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "official-nike-iq5365-600",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "official-nike-iq5339-400",
+      "brand": "Nike",
+      "name": "Kobe 10 Protro \"Blue Lagoon\"",
+      "reason": "excluded-footwear"
     }
   ]
 }
