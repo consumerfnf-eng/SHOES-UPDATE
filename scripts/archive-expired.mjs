@@ -64,6 +64,8 @@ export function resolveDestination(product, config, existing) {
   if(tag && tag!==country) return {reason:'brand-country-conflict'};
   if(key==='ralphlauren') return {key:'athleisure',country,reason:'user-ralph-lauren-override'};
   if(config.contemporaryOverrides.some(b=>brandKey(b,config)===key)) return {key:'domestic',country,reason:'user-contemporary-override'};
+  const regionalOverride=(config.regionalOverrides||[]).find(rule=>brandKey(rule.brand,config)===key&&!rule.excludeCountries.includes(country));
+  if(regionalOverride) return {key:regionalOverride.destination,country,reason:regionalOverride.reason};
   let locations=[...(existing.get(key)||[])];
   if(country==='CN' && locations.includes('outdoor_china')) return {key:'outdoor_china',country,reason:'existing-china-brand'};
   if(country!=='CN') locations=locations.filter(x=>x!=='outdoor_china');

@@ -58,11 +58,26 @@ test('wrong country, unknown brand and ambiguous existing destinations fail clos
   assert.equal(resolveDestination(product({brand:'PANE (CN)',country:'GL'}),productionConfig,new Map()).reason,'brand-country-conflict');
   assert.equal(resolveDestination(product({brand:'Unreviewed Brand'}),productionConfig,new Map()).reason,'unknown-brand-needs-review');
   assert.equal(resolveDestination(product({brand:'On',archiveGroup:'',country:'GL'}),productionConfig,new Map([['on',new Set(['athleisure','outdoor_global','luxury'])]])).reason,'multiple-existing-files-needs-review');
-  assert.equal(resolveDestination(product({brand:'PUMA',country:'GL'}),productionConfig,new Map([['puma',new Set(['outdoor_china'])]])).reason,'existing-country-mismatch-needs-review');
+  assert.equal(resolveDestination(product({brand:'FILA',country:'GL'}),productionConfig,new Map([['fila',new Set(['outdoor_china'])]])).reason,'existing-country-mismatch-needs-review');
 });
 test('user overrides preserve actual market, Ralph Lauren athleisure, contemporary domestic',()=>{
   assert.deepEqual(resolveDestination(product({brand:'Urban Revivo',country:'CN'}),productionConfig,new Map([['urbanrevivo',new Set(['outdoor_china'])]])),{key:'domestic',country:'CN',reason:'user-contemporary-override'});
   assert.equal(resolveDestination(product({brand:'Ralph Lauren'}),productionConfig,new Map()).key,'athleisure');
+});
+test('approved European/global PUMA routes to outdoor sports while preserving actual market',()=>{
+  const existing=new Map([['puma',new Set(['outdoor_china'])]]);
+  for(const country of ['EU','GL','US']) {
+    assert.deepEqual(resolveDestination(product({brand:'PUMA',country}),productionConfig,existing),{key:'outdoor_global',country,reason:'user-puma-regional-override'});
+  }
+  assert.equal(resolveDestination(product({brand:'PUMA',country:null}),productionConfig,existing).reason,'country-needs-review');
+});
+test('Chinese PUMA retains read-only Chinese destination and never enters append plan',()=>{
+  const p=product({brand:'PUMA',country:'CN'}),existing=new Map([['puma',new Set(['outdoor_china'])]]);
+  assert.deepEqual(resolveDestination(p,productionConfig,existing),{key:'outdoor_china',country:'CN',reason:'existing-china-brand'});
+  const snapshots=Object.fromEntries(productionConfig.sheets.map(s=>[s.key,snapshot()]));
+  snapshots.outdoor_china.rows[1][1]=cell('PUMA');snapshots.outdoor_china.rows[1][14]=cell('CN');
+  const plan=planArchive([p],snapshots,productionConfig,now);
+  assert.equal(plan.ready.length,0);assert.equal(plan.pending[0].reason,'destination-read-only-needs-user-review');assert.equal(plan.pending[0].destination,'outdoor_china');
 });
 test('invalid/date unknown/young products never enter archive; KST calendar-month boundary clamps',()=>{
   assert.equal(cutoffDate(new Date('2026-05-30T16:00:00Z')),'2026-02-28');

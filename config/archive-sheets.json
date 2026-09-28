@@ -10,6 +10,9 @@
     {"key":"domestic","id":"1ie6e9jQAkauBdBssqCH1DuyZHcGLyb2KDTysFdHV3Vc","sheetId":0,"title":"시트1","defaultCountry":"KR"}
   ],
   "contemporaryOverrides": ["론론","파르티멘토 우먼","튜드먼트","더바넷","던스트","레이브","르바","썸웨어버터","Urban Revivo","Rosemoo","Miss Sixty","MO&Co.","JNBY","Uniqlo"],
+  "regionalOverrides": [
+    {"brand":"PUMA","excludeCountries":["CN"],"destination":"outdoor_global","reason":"user-puma-regional-override","approvedAt":"2026-09-28"}
+  ],
   "newBrandGroups": {
     "athleisure": ["Alo","Lululemon","Aritzia","Skims","Sporty and Rich","Adanola","Vuori","Ralph Lauren"],
     "luxury": ["Louis Vuitton","Miu Miu","Prada","Gucci","Dior","Balenciaga","Celine","Saint Laurent","Hermès","Moncler","Bottega Veneta","Loewe","Cecilie Bahnsen","Dries Van Noten","Simone Rocha","Maison Margiela","MM6 Maison Margiela","Rick Owens","Jil Sander","Alaïa","Fendi","Givenchy","Versace","Valentino Garavani","Dolce & Gabbana","Alexander McQueen","Lanvin","Burberry","Chloé","Stella McCartney","Chanel","Thom Browne","Balmain","Golden Goose"],
