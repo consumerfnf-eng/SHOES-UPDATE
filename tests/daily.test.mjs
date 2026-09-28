@@ -42,13 +42,13 @@ test('No response or omitted mandatory brand cannot become a successful run', ()
   assert.throws(()=>validateState({products:[{}],coverage:[]},['Nike']), /NOT_ATTEMPTED/);
   assert.throws(()=>validateState({products:[{}],coverage:[{brand:'Nike',attempts:3,responses:0}]},['Nike']), /ALL_MANDATORY/);
 });
-test('Large dashboard initializes and exports a full 116-brand run without localStorage quota failure', { timeout: 120000 }, async () => {
+test('Large dashboard initializes and exports a approved 61-brand collection without localStorage quota failure', { timeout: 120000 }, async () => {
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'shoes-daily-test-'));
   try {
     const state = await runDaily({ read:async url=>url.startsWith('https://r.jina.ai/https://www.nike.com/')?productFixture:text, skipTrends:true, output:path.join(dir,'state.json') });
     assert.equal(state.crawler.scope, 'full');
-    assert.equal(state.crawler.attempted, 116);
-    assert.equal(state.crawler.responded, 116);
+    assert.equal(state.crawler.attempted, 25);
+    assert.equal(state.crawler.responded, 25);
     assert(state.products.length >= 2000);
     assert.equal(state.products.filter(product=>product.catalogVerification).length,1571);
     assert.equal(state.meta.lastNewItems,2);

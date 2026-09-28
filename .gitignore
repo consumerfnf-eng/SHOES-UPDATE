@@ -9,3 +9,11 @@ public/deployment.json
 .DS_Store
 __pycache__/
 *.pyc
+logs/backups/
+logs/research/
+logs/archive-audit/
+data/archive-report.json
+*.tmp
+
+data/archive-ledger.json
+data/archive.lock

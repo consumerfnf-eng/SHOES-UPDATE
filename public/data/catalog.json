@@ -1,0 +1,1425 @@
+{
+  "schemaVersion": 1,
+  "publishedAt": "2026-09-28T02:30:45.893Z",
+  "periodStart": "2026-06-28",
+  "asOf": "2026-09-28",
+  "brands": [
+    {
+      "id": "louis-vuitton",
+      "name": "Louis Vuitton",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "miu-miu",
+      "name": "Miu Miu",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "prada",
+      "name": "Prada",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "gucci",
+      "name": "Gucci",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "dior",
+      "name": "Dior",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "balenciaga",
+      "name": "Balenciaga",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "celine",
+      "name": "Celine",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "saint-laurent",
+      "name": "Saint Laurent",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "hermes",
+      "name": "Hermès",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "moncler",
+      "name": "Moncler",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "bottega-veneta",
+      "name": "Bottega Veneta",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "loewe",
+      "name": "Loewe",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "on",
+      "name": "On",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "cecilie-bahnsen",
+      "name": "Cecilie Bahnsen",
+      "group": "contemporary",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "asics",
+      "name": "ASICS",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "fila",
+      "name": "FILA",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "mizuno",
+      "name": "Mizuno",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "new-balance",
+      "name": "New Balance",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "salomon",
+      "name": "Salomon",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "adidas",
+      "name": "adidas",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "nike",
+      "name": "Nike",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "puma",
+      "name": "PUMA",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "axel-arigato",
+      "name": "Axel Arigato",
+      "group": "contemporary",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "pane",
+      "name": "PANE",
+      "group": "contemporary",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "onitsuka-tiger",
+      "name": "Onitsuka Tiger",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "satisfy",
+      "name": "SATISFY",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "jordan",
+      "name": "Jordan",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "converse",
+      "name": "Converse",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "vans",
+      "name": "Vans",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "reebok",
+      "name": "Reebok",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "saucony",
+      "name": "Saucony",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "hoka",
+      "name": "HOKA",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "brooks",
+      "name": "Brooks",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "skechers",
+      "name": "Skechers",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "under-armour",
+      "name": "Under Armour",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "arc-teryx",
+      "name": "Arc'teryx",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "the-north-face",
+      "name": "The North Face",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "kolon-sport",
+      "name": "KOLON SPORT",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "merrell",
+      "name": "Merrell",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "keen",
+      "name": "KEEN",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "roa",
+      "name": "ROA",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "norda",
+      "name": "norda",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "eider",
+      "name": "Eider",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "national-geographic",
+      "name": "National Geographic",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "le-coq-sportif",
+      "name": "Le Coq Sportif",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "umbro",
+      "name": "Umbro",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "alo",
+      "name": "Alo",
+      "group": "athleisure",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "lululemon",
+      "name": "Lululemon",
+      "group": "athleisure",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "crocs",
+      "name": "Crocs",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "oofos",
+      "name": "OOFOS",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "havaianas",
+      "name": "Havaianas",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "melissa",
+      "name": "Melissa",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "rockfish-weatherwear",
+      "name": "Rockfish Weatherwear",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "23-65",
+      "name": "23.65",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "alohas",
+      "name": "ALOHAS",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "grounds",
+      "name": "grounds",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "common-projects",
+      "name": "Common Projects",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "golden-goose",
+      "name": "Golden Goose",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "maison-mihara-yasuhiro",
+      "name": "Maison Mihara Yasuhiro",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "y-3",
+      "name": "Y-3",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "oakley-factory-team",
+      "name": "Oakley Factory Team",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    }
+  ],
+  "products": [
+    {
+      "id": "official-nike-iq5495-005",
+      "brand": "Jordan",
+      "name": "Air Jordan 1 High OG \"Royal\"",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "jordan|airjordan1highogroyal",
+      "releaseDate": "2026-10-10",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.nike.com/launch",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:07.832Z",
+        "region": "US",
+        "field": "launchViews.startEntryDate",
+        "productId": "b3c26be1-67e6-5f21-83e4-4e6c6a633bad",
+        "excerpt": "IQ5495-005 official launch entry opens 2026-10-10T14:00:00.000Z."
+      },
+      "url": "https://www.nike.com/launch/t/air-jordan-1-high-og-royal",
+      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/398ed1fa-1949-44ca-978b-df37d21a0766/air-jordan-1-high-og-royal.webp",
+      "style": "IQ5495-005",
+      "colorway": "Royal",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 185",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T02:12:07.832Z",
+      "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-high-og-royal",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "official-salomon-l49210800",
+      "brand": "Salomon",
+      "name": "XT-4 OG GORE-TEX",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xt4oggoretex",
+      "releaseDate": "2026-10-07",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "region": "CA",
+        "excerpt": "XT-4 OG GORE-TEX (L49210800) — 2026-10-07, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
+      "image": "https://cdn.dam.salomon.com/bd42f406-b469-4120-b0b1-b372008d8a8c/L49210800/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49210800",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$275",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "official-nike-ix8478-410",
+      "brand": "Jordan",
+      "name": "Air Jordan 1 Retro Low OG \"Howard\"",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "jordan|airjordan1retrolowoghoward",
+      "releaseDate": "2026-10-01",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.nike.com/launch",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:07.832Z",
+        "region": "US",
+        "field": "launchViews.startEntryDate",
+        "productId": "87bf41bd-311e-5b41-9855-095a952958c9",
+        "excerpt": "IX8478-410 official launch entry opens 2026-10-01T14:00:00.000Z."
+      },
+      "url": "https://www.nike.com/launch/t/air-jordan-1-low-og-howard-college-navy-and-university-red",
+      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/d44905f5-2fd8-435f-994d-8b45acb99354/air-jordan-1-low-og-howard-college-navy-and-university-red.webp",
+      "style": "IX8478-410",
+      "colorway": "College Navy and University Red",
+      "colors": [],
+      "gender": "MEN/WOMEN",
+      "material": "",
+      "priceLabel": "USD 155",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T02:12:07.832Z",
+      "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-low-og-howard-college-navy-and-university-red",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "official-salomon-l49302000",
+      "brand": "Salomon",
+      "name": "GENESIS 2 GORE-TEX",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|genesis2goretex",
+      "releaseDate": "2026-10-01",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "region": "CA",
+        "excerpt": "GENESIS 2 GORE-TEX (L49302000) — 2026-10-01, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/genesis-2-gtx-li9188/L49302000",
+      "image": "https://cdn.dam.salomon.com/4750df86-1bb3-4027-a793-b48800eb1222/L49302000/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49302000",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$210",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/genesis-2-gtx-li9188/L49302000",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "official-salomon-l49210700",
+      "brand": "Salomon",
+      "name": "XT-4 OG GORE-TEX",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xt4oggoretex",
+      "releaseDate": "2026-10-01",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "region": "CA",
+        "excerpt": "XT-4 OG GORE-TEX (L49210700) — 2026-10-01, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210700",
+      "image": "https://cdn.dam.salomon.com/625d3305-44b0-45ee-8e9d-b36800908c24/L49210700/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49210700",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$275",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210700",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "official-salomon-l49213700",
+      "brand": "Salomon",
+      "name": "XT-6",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xt6",
+      "releaseDate": "2026-10-01",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "region": "CA",
+        "excerpt": "XT-6 (L49213700) — 2026-10-01, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213700",
+      "image": "https://cdn.dam.salomon.com/68e7d436-9f55-4ce3-b51b-b3f5008c031b/L49213700/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49213700",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$230",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213700",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "official-salomon-l49213200",
+      "brand": "Salomon",
+      "name": "XT-6",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xt6",
+      "releaseDate": "2026-10-01",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "region": "CA",
+        "excerpt": "XT-6 (L49213200) — 2026-10-01, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213200",
+      "image": "https://cdn.dam.salomon.com/f0af6ab0-9c0b-4a2d-b0f6-b3680090a057/L49213200/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49213200",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$230",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213200",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "official-salomon-l49211100",
+      "brand": "Salomon",
+      "name": "XT-6",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xt6",
+      "releaseDate": "2026-10-01",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "region": "CA",
+        "excerpt": "XT-6 (L49211100) — 2026-10-01, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49211100",
+      "image": "https://cdn.dam.salomon.com/1f2e349e-36b1-43ef-8bfd-b3680090925f/L49211100/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49211100",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$230",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49211100",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "official-salomon-l49215400",
+      "brand": "Salomon",
+      "name": "XT-6 GORE-TEX",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xt6goretex",
+      "releaseDate": "2026-10-01",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "region": "CA",
+        "excerpt": "XT-6 GORE-TEX (L49215400) — 2026-10-01, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215400",
+      "image": "https://cdn.dam.salomon.com/dc766e14-7387-4608-9ace-b3790089b455/L49215400/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49215400",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$250",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215400",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "official-salomon-l49215200",
+      "brand": "Salomon",
+      "name": "XT-6 GORE-TEX",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xt6goretex",
+      "releaseDate": "2026-10-01",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "region": "CA",
+        "excerpt": "XT-6 GORE-TEX (L49215200) — 2026-10-01, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215200",
+      "image": "https://cdn.dam.salomon.com/dcf9c657-ab01-4652-a8e7-b3790089b3eb/L49215200/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49215200",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$250",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215200",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "official-salomon-l49214800",
+      "brand": "Salomon",
+      "name": "XT-6 GORE-TEX",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xt6goretex",
+      "releaseDate": "2026-10-01",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:17.572Z",
+        "region": "CA",
+        "excerpt": "XT-6 GORE-TEX (L49214800) — 2026-10-01, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49214800",
+      "image": "https://cdn.dam.salomon.com/1ac73867-4328-4fc5-b8d7-b3790089ae5f/L49214800/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49214800",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$250",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-09-28T02:12:17.572Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49214800",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "new-20260923-f28d3395e6c72a4a",
+      "brand": "Nike",
+      "name": "Nike Air Bakin High SP",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "nike|nikeairbakinhighsp",
+      "releaseDate": "2026-09-29",
+      "releaseStatus": "upcoming",
+      "dateEvidence": {
+        "url": "https://www.nike.com/launch",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T02:12:07.832Z",
+        "region": "US",
+        "field": "launchViews.startEntryDate",
+        "productId": "0340cf31-df49-56da-ba21-f3b95e1ddd09",
+        "excerpt": "IQ5365-600 official launch entry opens 2026-09-29T14:00:00.000Z."
+      },
+      "url": "https://www.nike.com/launch/t/air-bakin-high-sp-black-and-varsity-red",
+      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/055abca9-02e5-4a89-b696-9b401ab390d1/air-bakin-high-sp-black-and-varsity-red.webp",
+      "style": "IQ5365-600",
+      "colorway": "Black and Varsity Red",
+      "colors": [
+        {
+          "name": "Red",
+          "hex": "#B40033",
+          "accuracy": "official"
+        }
+      ],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 170",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T02:12:07.832Z",
+      "productEvidenceUrl": "https://www.nike.com/launch/t/air-bakin-high-sp-black-and-varsity-red",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    },
+    {
+      "id": "verified-nike-ir0968-500",
+      "brand": "Nike",
+      "name": "Air Max Plus x One Piece — Gomu Gomu",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "nike|airmaxplusxonepiece",
+      "releaseDate": "2026-09-25",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://about.nike.com/en/newsroom/releases/nike-one-piece-collection-transforms-imagination-into-motion-for-adventurers-everywhere",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T02:20:34.453Z",
+        "region": "TW / global SNKRS",
+        "excerpt": "One Piece Air Max Plus collection: global SNKRS launch September 25, 2026; Taiwan PDP matches IR0968-500."
+      },
+      "url": "https://www.nike.com/tw/launch/t/air-max-plus-one-piece-gomu-gomu",
+      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/e84befae-a391-489d-8366-e4a03291b199/air-max-plus-one-piece-gomu-gomu.webp",
+      "style": "IR0968-500",
+      "colorway": "Gomu Gomu",
+      "colors": [],
+      "gender": "Unisex",
+      "material": "",
+      "priceLabel": "",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [
+        {
+          "type": "magazine",
+          "url": "https://sneakerbardetroit.com/one-piece-nike-air-max-plus-gomu-gomu/",
+          "title": "Sneaker Bar Detroit: Gomu Gomu Air Max Plus",
+          "publishedAt": "2026-09-24",
+          "checkedAt": "2026-09-28T02:20:34.453Z",
+          "modelMatched": true,
+          "independent": true,
+          "sponsored": false,
+          "publisherId": "sneaker-bar-detroit",
+          "keywords": [
+            "스컬프처 어퍼"
+          ]
+        },
+        {
+          "type": "magazine",
+          "url": "https://www.soleretriever.com/sneaker-release-dates/nike/air-max-plus/nike-air-max-plus-one-piece-gomu-gomu-ir0968-500",
+          "title": "Sole Retriever: IR0968-500 출시 소개",
+          "publishedAt": "2026-09-04",
+          "checkedAt": "2026-09-28T02:20:34.453Z",
+          "modelMatched": true,
+          "independent": true,
+          "sponsored": false,
+          "publisherId": "sole-retriever",
+          "keywords": [
+            "스컬프처 어퍼"
+          ]
+        }
+      ],
+      "popularity": {
+        "magazine": true,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "TW",
+      "lastVerifiedAt": "2026-09-28T02:20:34.453Z",
+      "productEvidenceUrl": "https://www.nike.com/tw/launch/t/air-max-plus-one-piece-gomu-gomu",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "스컬프처 어퍼"
+      ]
+    },
+    {
+      "id": "verified-puma-406687-01",
+      "brand": "PUMA",
+      "name": "PUMA x J.L-A.L CELL GEO 1 CAGE",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "puma|pumaxjlalcellgeo1cage",
+      "releaseDate": "2026-09-12",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://mediahub.puma.com/articles/jl-al-s-puma-cell-geo-the-shape-of-things-to-come",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T02:20:34.453Z",
+        "excerpt": "PUMA x J.L-A.L CELL GEO collection: launch September 12, 2026."
+      },
+      "url": "https://eu.puma.com/es/es/pd/zapatillas-puma-x-j.l-a.l_-cell-geo-1-cage-unisex/406687?swatch=01",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/406687/01/sv01/fnd/EEA/fmt/png/Zapatillas-PUMA-x-J.L-A.L_-Cell-Geo-1-Cage-unisex",
+      "style": "406687_01",
+      "colorway": "Warm White",
+      "colors": [
+        {
+          "name": "Warm White"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Upper: 78% synthetic, 22% textile; rubber outsole",
+      "priceLabel": "EUR 190",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [
+        {
+          "type": "magazine",
+          "url": "https://www.gq-magazin.de/artikel/sneaker-generation-puma-x-jl-al-cell-geo-ist-so-futuristisch-wie-nie-zuvor",
+          "title": "GQ Germany: PUMA x J.L-A.L CELL GEO 소개",
+          "publishedAt": "2026-09-10",
+          "publisherId": "gq-germany",
+          "keywords": [
+            "스컬프처 어퍼",
+            "메쉬"
+          ],
+          "checkedAt": "2026-09-28T02:20:34.453Z",
+          "modelMatched": true,
+          "independent": true,
+          "sponsored": false,
+          "reviewed": true
+        },
+        {
+          "type": "magazine",
+          "url": "https://pausemag.co.uk/2026/09/puma-x-j-l-a-l-takes-the-cell-geo-into-new-territory/",
+          "title": "PAUSE: PUMA x J.L-A.L CELL GEO 소개",
+          "publishedAt": "2026-09-09",
+          "publisherId": "pause",
+          "keywords": [
+            "스컬프처 어퍼",
+            "메쉬"
+          ],
+          "checkedAt": "2026-09-28T02:20:34.453Z",
+          "modelMatched": true,
+          "independent": true,
+          "sponsored": false,
+          "reviewed": true
+        }
+      ],
+      "popularity": {
+        "magazine": true,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "ES",
+      "lastVerifiedAt": "2026-09-28T02:20:34.453Z",
+      "productEvidenceUrl": "https://eu.puma.com/es/es/pd/zapatillas-puma-x-j.l-a.l_-cell-geo-1-cage-unisex/406687?swatch=01",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "스컬프처 어퍼",
+        "메쉬"
+      ]
+    },
+    {
+      "id": "verified-puma-406687-02",
+      "brand": "PUMA",
+      "name": "PUMA x J.L-A.L CELL GEO 1 CAGE",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "puma|pumaxjlalcellgeo1cage",
+      "releaseDate": "2026-09-12",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://mediahub.puma.com/articles/jl-al-s-puma-cell-geo-the-shape-of-things-to-come",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T02:20:34.453Z",
+        "excerpt": "PUMA x J.L-A.L CELL GEO collection: launch September 12, 2026."
+      },
+      "url": "https://eu.puma.com/ie/en/pd/puma-x-jl-al-cell-geo-1-cage-sneakers-unisex/406687?swatch=02",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/406687/02/sv01/fnd/EEA/fmt/png/PUMA-x-J.L-A.L_-Cell-Geo-1-Cage-Sneakers-Unisex",
+      "style": "406687_02",
+      "colorway": "Bitter Chocolate",
+      "colors": [
+        {
+          "name": "Bitter Chocolate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Upper: 78% synthetic, 22% textile; rubber outsole",
+      "priceLabel": "EUR 190",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [
+        {
+          "type": "magazine",
+          "url": "https://www.gq-magazin.de/artikel/sneaker-generation-puma-x-jl-al-cell-geo-ist-so-futuristisch-wie-nie-zuvor",
+          "title": "GQ Germany: PUMA x J.L-A.L CELL GEO 소개",
+          "publishedAt": "2026-09-10",
+          "publisherId": "gq-germany",
+          "keywords": [
+            "스컬프처 어퍼",
+            "메쉬"
+          ],
+          "checkedAt": "2026-09-28T02:20:34.453Z",
+          "modelMatched": true,
+          "independent": true,
+          "sponsored": false,
+          "reviewed": true
+        },
+        {
+          "type": "magazine",
+          "url": "https://pausemag.co.uk/2026/09/puma-x-j-l-a-l-takes-the-cell-geo-into-new-territory/",
+          "title": "PAUSE: PUMA x J.L-A.L CELL GEO 소개",
+          "publishedAt": "2026-09-09",
+          "publisherId": "pause",
+          "keywords": [
+            "스컬프처 어퍼",
+            "메쉬"
+          ],
+          "checkedAt": "2026-09-28T02:20:34.453Z",
+          "modelMatched": true,
+          "independent": true,
+          "sponsored": false,
+          "reviewed": true
+        }
+      ],
+      "popularity": {
+        "magazine": true,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "IE",
+      "lastVerifiedAt": "2026-09-28T02:20:34.453Z",
+      "productEvidenceUrl": "https://eu.puma.com/ie/en/pd/puma-x-jl-al-cell-geo-1-cage-sneakers-unisex/406687?swatch=02",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": [
+        "스컬프처 어퍼",
+        "메쉬"
+      ]
+    },
+    {
+      "id": "verified-adidas-kj7669",
+      "brand": "adidas",
+      "name": "adidas x Tyrrell Winston CLIMACOOL 4D",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "adidas|adidasxtyrrellwinstonclimacool4d",
+      "releaseDate": "2026-09-08",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://news.adidas.com/sportswear/adidas-and-tyrrell-winston-unveil-new-collection-celebrating-resilience--dedication-and-the-athlete-/s/171be58f-96fa-4fe4-8ac1-78bd9445e68e",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-09-28T02:20:34.453Z",
+        "excerpt": "The Athlete collection including Tyrrell Winston CLIMACOOL 4D: worldwide release September 8, 2026."
+      },
+      "url": "https://www.adidas.ae/en/adidas-x-tyrrell-winston-climacool-4d-shoes/KJ7669.html",
+      "image": "https://assets.adidas.com/images/w_940,f_auto,q_auto/ca361dffbc6842438d52e79b4424dfba_9366/KJ7669_01_00_standard.jpg",
+      "style": "KJ7669",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "sns": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "AE",
+      "lastVerifiedAt": "2026-09-28T02:20:34.453Z",
+      "productEvidenceUrl": "https://www.adidas.ae/en/adidas-x-tyrrell-winston-climacool-4d-shoes/KJ7669.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-28"
+      },
+      "keywordTags": []
+    }
+  ],
+  "keywords": [
+    {
+      "id": "스컬프처어퍼",
+      "label": "스컬프처 어퍼",
+      "sourceTypes": [
+        "magazine"
+      ],
+      "productIds": [
+        "verified-nike-ir0968-500"
+      ],
+      "productCount": 1,
+      "previousProductCount": 0,
+      "growth": 1,
+      "rank": 1
+    }
+  ],
+  "sourceStatus": {
+    "checkedAt": null,
+    "lastSuccessfulCollectionAt": null,
+    "unavailableBrands": [],
+    "coverage": [],
+    "notes": [
+      "출시일·품목·적합성을 확인한 상품만 표시합니다. 확인일을 출시일로 사용하지 않습니다.",
+      "SNS 인기는 수집한 공개 게시물 범위에 한합니다."
+    ],
+    "counts": {
+      "source": 2266,
+      "published": 16,
+      "held": 2250,
+      "expired": 0
+    }
+  }
+}

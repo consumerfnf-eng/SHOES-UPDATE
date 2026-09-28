@@ -1,0 +1,1119 @@
+{
+  "schemaVersion": 1,
+  "approvedAt": "2026-09-28",
+  "brands": [
+    {
+      "id": "louis-vuitton",
+      "name": "Louis Vuitton",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "miu-miu",
+      "name": "Miu Miu",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "prada",
+      "name": "Prada",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "gucci",
+      "name": "Gucci",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "dior",
+      "name": "Dior",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "balenciaga",
+      "name": "Balenciaga",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "celine",
+      "name": "Celine",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "saint-laurent",
+      "name": "Saint Laurent",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "hermes",
+      "name": "Hermès",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "moncler",
+      "name": "Moncler",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "bottega-veneta",
+      "name": "Bottega Veneta",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "loewe",
+      "name": "Loewe",
+      "group": "luxury",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "on",
+      "name": "On",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "cecilie-bahnsen",
+      "name": "Cecilie Bahnsen",
+      "group": "contemporary",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "asics",
+      "name": "ASICS",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "fila",
+      "name": "FILA",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "mizuno",
+      "name": "Mizuno",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "new-balance",
+      "name": "New Balance",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "salomon",
+      "name": "Salomon",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "adidas",
+      "name": "adidas",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "nike",
+      "name": "Nike",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "puma",
+      "name": "PUMA",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "axel-arigato",
+      "name": "Axel Arigato",
+      "group": "contemporary",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "pane",
+      "name": "PANE",
+      "group": "contemporary",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "onitsuka-tiger",
+      "name": "Onitsuka Tiger",
+      "group": "outdoor",
+      "policy": "mandatory",
+      "mandatory": true
+    },
+    {
+      "id": "satisfy",
+      "name": "SATISFY",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "jordan",
+      "name": "Jordan",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "converse",
+      "name": "Converse",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "vans",
+      "name": "Vans",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "reebok",
+      "name": "Reebok",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "saucony",
+      "name": "Saucony",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "hoka",
+      "name": "HOKA",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "brooks",
+      "name": "Brooks",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "skechers",
+      "name": "Skechers",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "under-armour",
+      "name": "Under Armour",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "arc-teryx",
+      "name": "Arc'teryx",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "the-north-face",
+      "name": "The North Face",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "kolon-sport",
+      "name": "KOLON SPORT",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "merrell",
+      "name": "Merrell",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "keen",
+      "name": "KEEN",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "roa",
+      "name": "ROA",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "norda",
+      "name": "norda",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "eider",
+      "name": "Eider",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "national-geographic",
+      "name": "National Geographic",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "le-coq-sportif",
+      "name": "Le Coq Sportif",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "umbro",
+      "name": "Umbro",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "alo",
+      "name": "Alo",
+      "group": "athleisure",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "lululemon",
+      "name": "Lululemon",
+      "group": "athleisure",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "crocs",
+      "name": "Crocs",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "oofos",
+      "name": "OOFOS",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "havaianas",
+      "name": "Havaianas",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "melissa",
+      "name": "Melissa",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "rockfish-weatherwear",
+      "name": "Rockfish Weatherwear",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "23-65",
+      "name": "23.65",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "alohas",
+      "name": "ALOHAS",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "grounds",
+      "name": "grounds",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "common-projects",
+      "name": "Common Projects",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "golden-goose",
+      "name": "Golden Goose",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "maison-mihara-yasuhiro",
+      "name": "Maison Mihara Yasuhiro",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "y-3",
+      "name": "Y-3",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "oakley-factory-team",
+      "name": "Oakley Factory Team",
+      "group": "outdoor",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "dries-van-noten",
+      "name": "Dries Van Noten",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "wales-bonner",
+      "name": "Wales Bonner",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "simone-rocha",
+      "name": "Simone Rocha",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "maison-margiela",
+      "name": "Maison Margiela",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "mm6-maison-margiela",
+      "name": "MM6 Maison Margiela",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "sacai",
+      "name": "sacai",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "rick-owens",
+      "name": "Rick Owens",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "jil-sander",
+      "name": "Jil Sander",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "alaia",
+      "name": "Alaïa",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "acne-studios",
+      "name": "Acne Studios",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "coperni",
+      "name": "Coperni",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "courreges",
+      "name": "Courrèges",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "jacquemus",
+      "name": "Jacquemus",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "fendi",
+      "name": "Fendi",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "ganni",
+      "name": "Ganni",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "givenchy",
+      "name": "Givenchy",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "versace",
+      "name": "Versace",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "valentino-garavani",
+      "name": "Valentino Garavani",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "dolce-gabbana",
+      "name": "Dolce & Gabbana",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "alexander-mcqueen",
+      "name": "Alexander McQueen",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "lanvin",
+      "name": "Lanvin",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "lemaire",
+      "name": "Lemaire",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "stone-island",
+      "name": "Stone Island",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "burberry",
+      "name": "Burberry",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "tory-burch",
+      "name": "Tory Burch",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "marine-serre",
+      "name": "Marine Serre",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "chloe",
+      "name": "Chloé",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "stella-mccartney",
+      "name": "Stella McCartney",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "proenza-schouler",
+      "name": "Proenza Schouler",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "junya-watanabe",
+      "name": "Junya Watanabe",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "comme-des-garcons-homme-plus",
+      "name": "Comme des Garçons Homme Plus",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "yohji-yamamoto",
+      "name": "Yohji Yamamoto",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "kiko-kostadinov",
+      "name": "Kiko Kostadinov",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "craig-green",
+      "name": "Craig Green",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "undercover",
+      "name": "Undercover",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "kolor",
+      "name": "Kolor",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "visvim",
+      "name": "Visvim",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "hender-scheme",
+      "name": "Hender Scheme",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "chanel",
+      "name": "Chanel",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "thom-browne",
+      "name": "Thom Browne",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "kenzo",
+      "name": "Kenzo",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "amiri",
+      "name": "AMIRI",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "rhude",
+      "name": "Rhude",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "fear-of-god",
+      "name": "Fear of God",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "off-white",
+      "name": "Off-White",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "palm-angels",
+      "name": "Palm Angels",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "casablanca",
+      "name": "Casablanca",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "dsquared2",
+      "name": "DSQUARED2",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "balmain",
+      "name": "Balmain",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "pierre-hardy",
+      "name": "Pierre Hardy",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "rabanne",
+      "name": "Rabanne",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "ottolinger",
+      "name": "Ottolinger",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "avavav",
+      "name": "Avavav",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "feng-chen-wang",
+      "name": "Feng Chen Wang",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "saul-nash",
+      "name": "Saul Nash",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "issey-miyake",
+      "name": "Issey Miyake",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "vetements",
+      "name": "VETEMENTS",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "willy-chavarria",
+      "name": "Willy Chavarria",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "soshiotsuki",
+      "name": "Soshiotsuki",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "song-for-the-mute",
+      "name": "Song for the Mute",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "hunter",
+      "name": "Hunter",
+      "group": "outdoor",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "shoepen",
+      "name": "Shoepen",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "timberland",
+      "name": "Timberland",
+      "group": "outdoor",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "ugg",
+      "name": "UGG",
+      "group": "outdoor",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "diesel",
+      "name": "Diesel",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "martine-rose",
+      "name": "Martine Rose",
+      "group": "contemporary",
+      "policy": "conditional",
+      "mandatory": false
+    },
+    {
+      "id": "the-row",
+      "name": "The Row",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "khaite",
+      "name": "Khaite",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "ferragamo",
+      "name": "Ferragamo",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "tod-s",
+      "name": "Tod's",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "bally",
+      "name": "Bally",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "loro-piana",
+      "name": "Loro Piana",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "brunello-cucinelli",
+      "name": "Brunello Cucinelli",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "zegna",
+      "name": "Zegna",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "santoni",
+      "name": "Santoni",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "berluti",
+      "name": "Berluti",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "repetto",
+      "name": "Repetto",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "roger-vivier",
+      "name": "Roger Vivier",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "jimmy-choo",
+      "name": "Jimmy Choo",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "christian-louboutin",
+      "name": "Christian Louboutin",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "mach-mach",
+      "name": "Mach & Mach",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "amina-muaddi",
+      "name": "Amina Muaddi",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "aeyde",
+      "name": "Aeyde",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "staud",
+      "name": "Staud",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "toteme",
+      "name": "Toteme",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "carlotha-ray",
+      "name": "Carlotha Ray",
+      "group": "luxury",
+      "policy": "exclude",
+      "mandatory": false
+    },
+    {
+      "id": "yeel",
+      "name": "Yeel",
+      "group": "luxury",
+      "policy": "unverified",
+      "mandatory": false
+    },
+    {
+      "id": "s-e-o",
+      "name": "s/e/o",
+      "group": "luxury",
+      "policy": "unverified",
+      "mandatory": false
+    },
+    {
+      "id": "leey-x-hardworkup",
+      "name": "Leey x Hardworkup",
+      "group": "luxury",
+      "policy": "collab",
+      "mandatory": false
+    },
+    {
+      "id": "nike-x-jacquemus",
+      "name": "Nike x Jacquemus",
+      "group": "luxury",
+      "policy": "collab",
+      "mandatory": false
+    },
+    {
+      "id": "nikeskims",
+      "name": "NikeSKIMS",
+      "group": "luxury",
+      "policy": "collab",
+      "mandatory": false
+    },
+    {
+      "id": "pane-x-head",
+      "name": "PANE x HEAD",
+      "group": "luxury",
+      "policy": "collab",
+      "mandatory": false
+    },
+    {
+      "id": "repetto-x-marine-serre",
+      "name": "Repetto x Marine Serre",
+      "group": "luxury",
+      "policy": "collab",
+      "mandatory": false
+    },
+    {
+      "id": "cecilie-bahnsen-asics",
+      "name": "Cecilie Bahnsen × ASICS",
+      "group": "luxury",
+      "policy": "collab",
+      "mandatory": false
+    },
+    {
+      "id": "ganni-x-new-balance",
+      "name": "Ganni x New Balance",
+      "group": "luxury",
+      "policy": "collab",
+      "mandatory": false
+    },
+    {
+      "id": "vibram",
+      "name": "Vibram",
+      "group": "luxury",
+      "policy": "supplier",
+      "mandatory": false
+    }
+  ],
+  "aliases": {
+    "Jordan Brand": "Jordan",
+    "AXEL ARIATO": "Axel Arigato",
+    "HERMES": "Hermès",
+    "ONITSUKATIGER": "Onitsuka Tiger"
+  },
+  "collaborations": {
+    "Cecilie Bahnsen × ASICS": "ASICS",
+    "Nike x Jacquemus": "Nike",
+    "NikeSKIMS": "Nike",
+    "PANE x HEAD": "PANE",
+    "Ganni x New Balance": "New Balance",
+    "Repetto x Marine Serre": "Repetto"
+  }
+}

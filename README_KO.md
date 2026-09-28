@@ -1,60 +1,75 @@
-# Shoes Dashboard 운영
+# SHOES UPDATE 운영
 
 공개 사이트: https://shoes-update.pages.dev/
 
-## 매일 자동 수집
+## 수집과 게시
 
-`Daily Shoes Dashboard Update`가 매일 08:00 KST에 예약 실행됩니다. GitHub 스케줄러에 따라 시작이 지연될 수 있습니다. Actions의 **Run workflow**로도 실행할 수 있습니다.
+- 매주 **일요일 오전 8시 한국시간**에 GitHub Actions가 수집을 시작합니다. 사용자 PC나 사이트 접속이 필요하지 않습니다.
+- 일요일 20시와 월요일 6시는 이번 주 성공 기록이 없을 때만 재시도합니다. GitHub 예약 실행은 지연될 수 있습니다.
+- 수집 → 공식 출시일/품목/적합성 검증 → 출처 근거 확인 → 완성된 JSON 교체 → 빌드 검사 → Cloudflare Git 배포 순서입니다.
+- 실패한 수집은 기존 공개본을 교체하지 않습니다. 부분 출처 실패는 실패 브랜드로 표시합니다. 마지막 성공 수집일과 현재 기한 점검일을 구분합니다.
+- 매일 07:15 기한 점검은 수집을 하지 않습니다. 달력상 3개월이 지난 상품을 숨기고 아카이브 대기열을 재시도합니다.
 
-1. `npm ci`로 잠금 파일에 고정된 Playwright를 설치합니다.
-2. 대시보드를 로컬 서버로 열되 상품 이미지·화면 렌더링은 수집 작업에서 생략합니다.
-3. `config/daily_sources.json`의 공식 출처를 Node에서 요청합니다. Jina 호출 간격을 제한하고 429는 재시도합니다. 브랜드 작업은 최대 3개씩 진행하며 필수 브랜드의 출처가 모두 실패하면 최대 3회 확인합니다.
-4. 116개 필수 브랜드의 요청 여부와 수집 결과를 검사합니다. 한 브랜드의 차단은 진단 기록에 남기고 기존 상품을 보존합니다. 모든 필수 출처가 실패하거나 필수 브랜드가 누락되면 전체 실행을 실패시키고 게시하지 않습니다.
-5. 새 결과를 기존 내장 데이터에 중복 없이 추가합니다. 기존 화면 필터로 숨겨진 상품도 원본에서 삭제하지 않습니다. 캐시 키를 갱신하고 빌드 검증을 통과한 결과만 main에 커밋합니다.
-6. Cloudflare의 기존 Git 연결이 main 변경을 자동 배포합니다. 공개 `deployment.json`으로 배포된 커밋을 확인할 수 있습니다.
+## 데이터 위치
 
-`JINA_API_KEY`는 선택 사항입니다. GitHub Actions secret에 유효한 키가 있으면 Reader/Search에 사용합니다. 키가 없거나 인증·할당량 오류가 발생하면 익명 Reader로 계속하며 인증이 필요한 Search는 생략합니다. 키는 브라우저 저장소나 공개 파일에 쓰지 않습니다. 출처 차단이나 응답 성공만으로 ‘모든 신상품 수집 완료’를 선언하지 않습니다.
+- `collector/runtime.html`: 기존 수집기. 공개 디렉터리 밖에 보존했습니다.
+- `data/catalog-source.json`: 원본 2,250개와 이후 수집 기록. 불명확한 기록을 삭제하지 않습니다.
+- `data/release-evidence.json`: 사람이 직접 확인한 출시일/상품 근거. 기존 기록은 ID 또는 정확한 SKU로 보완합니다.
+- `data/curation-review.json`: 사이트 미노출 검토 목록과 대기 사유.
+- `data/archive-queue.json`: 품목/출시일/적합성 검증을 통과한 3개월 경과 상품.
+- `public/data/catalog.json`: 공개 완성본. 브라우저는 이 파일만 읽습니다.
+- `config/brand-policy.json`: 승인된 필수 25개, 우선 수집 36개, 모델별 검토, 제외/보류 브랜드.
+- `config/signal-sources.json`: 공개 매체/뉴스레터/검토된 SNS 계정/확인 가능한 랭킹 설정.
 
-확인 위치:
-- GitHub Actions 실행 로그와 Summary: 필수 브랜드 시도 수, 응답 수, 실패 브랜드
-- `daily-diagnostics-<run id>` artifact: 브랜드별 오류·재시도 기록(14일 보관)
-- `public/data/last_update.json`: 마지막으로 게시된 점검 결과
-- `public/catalog-coverage.html`: 2026-09-23 수동 수집 범위 기록(일일 점검과 별도)
+`collector/`, `data/`, `config/`의 커밋된 파일은 사이트에서 제공하지 않지만 공개 GitHub 저장소에서는 열람할 수 있습니다. 사이트 미노출은 비공개를 의미하지 않습니다. 이 위치에 인증 정보나 Google Sheets 원본 스냅샷·메타데이터를 평문으로 저장하지 않습니다. 시트 백업과 처리 영수증은 아래의 별도 암호화 저장 방식을 사용합니다.
 
-## Cloudflare Pages 설정
+## 선별 원칙
 
-- Repository: `consumerfnf-eng/SHOES-UPDATE`
-- Production branch: `main`
-- Automatic production branch deployments: **Enabled**
-- Build watch paths: Include **`*`**, Exclude **빈 값**
-- Build command: **`npm run build`**
-- Build output directory: **`public`**
-- Root directory: 저장소 루트
+브랜드 → 실제 품목 → MLB/DISCOVERY 참고 구조 → 정확한 출시일과 원문 → 상품/이미지 확인을 모두 통과해야 공개됩니다. 기존 검증 표시는 예외로 처리하지 않습니다. 수집일, 검색 노출일, NEW ARRIVAL 표기를 출시일로 사용하지 않습니다.
 
-기존 빈 Include paths는 변경 경로와 일치하지 않아 push 배포를 건너뛰었습니다. `exit 0` 자체는 정적 HTML의 유효한 빌드 명령이지만, 현재는 JavaScript·상품 데이터 검사 및 배포 커밋 파일 생성을 위해 `npm run build`를 사용합니다. `public` 외에 수집 원본·로그·내부 자료를 배포하지 않습니다.
+- 최근 신상: KST 오늘부터 달력상 3개월 전 이상, 오늘 이하.
+- 발매 예정: 공식 정확한 날짜가 있는 향후 3개월 상품. 공식 지역 발매일은 국가를 기록합니다.
+- 구두/로퍼/하이힐/방한화/특정 경기 전용화는 제외합니다. 혼합형은 모델별 승인과 근거를 요구합니다.
+- 공식 달력 어댑터: Nike SNKRS의 상품 ID에 연결된 launch entry, ASICS의 상품별 launch tile, Salomon의 상품별 upcoming calendar. 일반 PDP는 정확한 모델/SKU에 결합된 출시 문장만 인정합니다.
+- 제품 설명 원문은 사이트 미노출 검토용이며, 커밋된 수집 기록은 공개 저장소에서 열람할 수 있습니다. 사이트의 상품 설명은 짧은 분류·참고 이유로 구성합니다.
 
-이 사이트는 Cloudflare Pages를 사용합니다. 비활성 GitHub Pages를 대상으로 실패하던 워크플로우는 `Validate Shoes Dashboard`로 교체했습니다.
+## 출처와 키워드
 
-## 2026-09-23 장애 수정 근거
+매거진/뉴스레터는 최근 30일의 개별 모델 원문만 표시합니다. SNS는 최근 14일, 독립 비광고 계정 3개/원본 5개, 최근 7일 게시물 1개 이상이 필요합니다. 신규 SNS 계정은 독립성·판매계정 여부를 먼저 검토해야 합니다. 공개 게시물을 읽지 못하면 인기를 추정하지 않습니다. 이커머스는 실제 순위·국가·카테고리·날짜가 확인된 페이지만 인정합니다.
 
-- Actions run `35804430727`: package-lock 부재로 setup-node npm cache 실패. 잠금 파일을 추가하고 `npm ci`로 고정했습니다.
-- Actions run `35810427940`: localStorage quota 초과로 초기화 중단 → 서버 실행 함수 대기 timeout. 용량 초과 시 메모리 저장, 수집 전용 실행 경로 및 대량 데이터 회귀 테스트로 보완했습니다.
-- 위 실패 뒤 `if: always()`로 없는 runtime_state를 저장·검증하려던 연쇄 실패를 제거했습니다. 실패 시에는 진단 단계만 실행됩니다.
-- 실제 상품 추출에서 누락된 `hash`와 `firstSeenFor` 함수도 복구했습니다. 출처 응답만 받는 테스트에 더해 상품명·SKU·이미지를 실제 레코드로 변환하는 회귀 테스트를 추가했습니다. ReferenceError/TypeError/SyntaxError는 출처 차단으로 숨기지 않고 실행을 중단시킵니다.
-- 일일 신규 수집은 스니커즈·운동화 상품 링크만 받습니다. 이미지 CDN/파일, Nike `/w/` 카테고리, 일반 메뉴 및 샌들·힐 등은 제외하며, 실제 오분류 사례와 정상 운동화 사례를 함께 회귀 테스트합니다. 기존 내장 원본은 유지합니다.
-- Cloudflare Build watch paths Include가 빈 값이어서 최근 push들이 skipped였습니다. `*`로 복구했습니다.
+매거진·공개 뉴스레터·Instagram URL은 기존 Jina Search로 발견한 뒤 원문을 다시 읽습니다. 접근 제한이나 날짜 누락 시 보류합니다. 순위는 검색 순서를 이용하지 않습니다. 검증된 원문에서 실제 확인된 키워드만 최근 7일과 그 직전 7일의 출처 종류/상품 수/증가량으로 정렬합니다.
 
-## 개발 확인
+## 아카이브와 원본 보호
+
+별도 엑셀은 만들지 않습니다. 기존 브랜드 위치를 먼저 확인하고, Ralph Lauren은 애슬레저, 기존 컨템포러리 목록의 나머지는 국내 브랜드 파일에 저장합니다. 저장 파일과 국가/브랜드 성격은 별도로 유지합니다. 모호한 분류는 사용자 검토 대상으로 남깁니다.
+
+아카이브 스크립트는 기존 셀을 덮어쓰거나 삭제하지 않고 검증된 새 행만 추가합니다. 설정과 운영 절차는 `docs/archive-integration.md` 등 `docs/archive*.md`를 확인하세요. 인증이 없으면 쓰기를 수행하지 않으며 대기열을 보존합니다. GitHub에 `GOOGLE_SERVICE_ACCOUNT_JSON` 또는 OAuth 자격 증명을 설정하고 해당 계정에 대상 기존 시트 편집 권한을 부여해야 합니다. 키 내용은 코드·로그·공개 파일에 저장하지 않습니다.
+
+시트 쓰기 전에 원래 값·수식·서식·검증 규칙 등의 스냅샷과 처리 대기 영수증을 AES-256-GCM으로 암호화합니다. 별도 `archive-audit` 브랜치에 저장한 뒤 다시 읽어 일치 여부를 확인해야 실제 추가가 가능합니다. 필요한 `ARCHIVE_BACKUP_KEY`는 32바이트 Base64 GitHub Secret이며 GitHub 저장소 토큰은 실행 환경에서만 사용합니다. 백업 키는 교체 전에 기존 암호화 파일의 복구 가능성을 확인해야 합니다.
+
+실행이 중단되어도 다음 실행이 원격 암호화 영수증을 먼저 읽습니다. 추가 여부가 불확실한 기록은 임의로 다시 추가하거나 원래 셀을 복원하지 않고 검토 대상으로 남깁니다. 시트 스냅샷·원본 메타데이터·처리 영수증을 평문 아티팩트나 공개 사이트에 게시하지 않습니다. 주간·일일·수동 실행은 같은 `shoes-publication` 동시 실행 제한을 사용합니다.
+
+## 로컬 검증
 
 ```sh
 npm ci
-npx playwright install --with-deps chromium
+npx playwright install chromium
 npm test
+npm run test:ui
 python -m unittest discover -s tests -p 'test_*.py'
+npm run curate
 npm run build
-npm run daily
-python scripts/validate_coverage.py
-python scripts/patch_snapshot.py
+npm run archive
 ```
 
-Windows에서 설치된 Edge로 테스트하려면 `PLAYWRIGHT_CHANNEL=msedge`를 지정할 수 있습니다. 로컬 `npm run daily`는 수집 결과만 만들며, 직접 push하지 않습니다.
+`npm run weekly`는 실제 수집, `npm run daily`는 수집 없이 기한 점검, `npm run archive`는 기본 모의 실행입니다. Windows Edge를 사용할 때는 `PLAYWRIGHT_CHANNEL=msedge`를 설정할 수 있습니다.
+
+UI 테스트는 Windows에서 설치된 Chrome을 기본 사용하며 `UI_BROWSER_CHANNEL=msedge`로 Edge를 지정할 수 있습니다. Linux CI는 설치된 Playwright Chromium을 사용합니다. 테스트용 상품은 별도 로컬 서버에서만 응답하고 공개 데이터에 기록하지 않습니다. 실제 Safari/iOS 검증은 별도로 필요합니다.
+
+## 배포
+
+Cloudflare 기존 Git 연동: production branch `main`, build `npm run build`, output `public`. `public/deployment.json`에서 배포 커밋을 확인합니다. 브라우저에 Jina/Google 인증 정보를 전달하지 않습니다.
+
+스케줄·수동 게시 작업은 `main`에서만 실행됩니다. 작업 중 다른 커밋이 먼저 올라오면 게시 push를 중단합니다. 이미 검증한 작업에 다른 코드를 자동 병합해서 배포하지 않습니다. 수집 실패는 기존 공개본을 유지하며, 아카이브만 실패한 경우에도 검증된 신상품 공개본은 게시하고 실패 상태를 보고합니다. 이전 공개 진단 파일은 `collector/historical/`에 보존했습니다.
+
+공식 API 참고: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule, https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets.values/append

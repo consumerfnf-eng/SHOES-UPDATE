@@ -1,0 +1,71 @@
+name: Weekly Curated Shoes Update
+on:
+  schedule:
+    - cron: '0 23 * * 6' # Sunday 08:00 Asia/Seoul
+    - cron: '0 11 * * 0' # Sunday 20:00 KST retry if no completed collection this week
+    - cron: '0 21 * * 0' # Monday 06:00 KST final catch-up
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: shoes-publication
+  cancel-in-progress: false
+jobs:
+  collect:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Collect and verify complete weekly snapshot
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+        run: npm run weekly -- --only-if-stale
+      - name: Validate snapshot before archive writes
+        run: npm run build
+      - name: Append eligible expired products to existing archive sheets
+        id: archive
+        continue-on-error: true
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+          GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+          GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+          ARCHIVE_BACKUP_KEY: ${{ secrets.ARCHIVE_BACKUP_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/archive-expired.mjs --apply
+      - name: Publish validated snapshot via existing Cloudflare Git integration
+        run: |
+          git config user.name 'Shoes Dashboard Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/catalog-source.json data/curation-review.json data/archive-queue.json public/data/catalog.json
+          if ! git diff --cached --quiet; then
+            git commit -m "weekly curated shoes update $(date -u +%F)"
+            git push origin HEAD:main
+          fi
+      - name: Save collection diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-diagnostics-${{ github.run_id }}
+          path: |
+            logs/weekly-diagnostics.json
+            logs/weekly-error.json
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Report archive connection or verification failure
+        if: always() && steps.archive.outcome == 'failure'
+        run: |
+          echo 'Archive append was blocked or failed. Encrypted audit and pending receipts are stored on archive-audit before any Sheet write. Review the archive connection and retry queue.' >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+      - name: Flag archive items requiring review
+        if: always() && steps.archive.outputs.archive_attention == 'true'
+        run: echo '::warning::Archive items require brand classification or reconciliation. See the archive summary; pending items were retained.'

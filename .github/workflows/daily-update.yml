@@ -1,21 +1,18 @@
-name: Daily Shoes Dashboard Update
-
+name: Daily Expiry and Archive Maintenance
 on:
   schedule:
-    - cron: '0 23 * * *' # 08:00 KST (GitHub scheduling may be delayed)
+    - cron: '15 22 * * *' # 07:15 KST; no source crawling
   workflow_dispatch:
-
 permissions:
   contents: write
-
 concurrency:
-  group: shoes-daily-update
+  group: shoes-publication
   cancel-in-progress: false
-
 jobs:
-  update:
+  maintenance:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,63 +20,35 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: npm
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install locked dependencies
-        run: |
-          npm ci
-          npx playwright install --with-deps chromium
-      - name: Daily brand and keyword update
-        env:
-          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+      - name: Expire products by calendar date without crawling
         run: npm run daily
-      - name: Validate coverage before changing the dashboard
-        run: python scripts/validate_coverage.py
-      - name: Persist verified snapshot and retain previous records
-        run: python scripts/patch_snapshot.py
-      - name: Validate deployable dashboard
+      - name: Validate snapshot before archive writes
         run: npm run build
-      - name: Commit refreshed dashboard for Cloudflare Git integration
+      - name: Append only verified expired records
+        id: archive
+        continue-on-error: true
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+          GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+          GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+          ARCHIVE_BACKUP_KEY: ${{ secrets.ARCHIVE_BACKUP_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/archive-expired.mjs --apply
+      - name: Publish expiry snapshot
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add public/index.html public/data/last_update.json data/last_update.json
-          if git diff --cached --quiet; then
-            echo 'No catalog changes.'
-          else
-            git commit -m "daily shoes update $(date -u +%F)"
-            git pull --rebase origin main
+          git add public/data/catalog.json data/archive-queue.json data/curation-review.json
+          if ! git diff --cached --quiet; then
+            git commit -m "shoes expiry maintenance $(date -u +%F)"
             git push origin HEAD:main
           fi
-      - name: Publish run summary
-        if: always()
+      - name: Report archive connection or verification failure
+        if: always() && steps.archive.outcome == 'failure'
         run: |
-          python - <<'PY'
-          import json, os
-          from pathlib import Path
-          state_path = Path('data/runtime_state.json')
-          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
-              if not state_path.exists():
-                  out.write('Crawler did not produce a valid snapshot. Previous dashboard retained. See diagnostics artifact.\n')
-              else:
-                  state = json.loads(state_path.read_text())
-                  mandatory = set(state['mandatoryBrands'])
-                  rows = [r for r in state['coverage'] if r['brand'] in mandatory]
-                  failed = [r['brand'] for r in rows if not r['responses']]
-                  out.write(f"Mandatory brands attempted: {len(rows)}/{len(mandatory)}; responded: {len(rows)-len(failed)}; no response: {len(failed)}.\n\n")
-                  out.write(f"Products: {len(state['products'])}; new candidates: {state['meta'].get('lastNewItems', 0)}. Source failures are not interpreted as zero new products.\n\n")
-                  if failed: out.write('Unavailable sources: ' + ', '.join(failed) + '\n')
-          PY
-      - name: Save diagnostic artifacts
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: daily-diagnostics-${{ github.run_id }}
-          path: |
-            logs/*.json
-            logs/*.jsonl
-            data/last_update.json
-          if-no-files-found: ignore
-          retention-days: 14
+          echo 'Archive append requires attention. Queue remains intact; encrypted pending/verified receipts are recoverable from archive-audit.' >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+      - name: Flag archive items requiring review
+        if: always() && steps.archive.outputs.archive_attention == 'true'
+        run: echo '::warning::Archive items require brand classification or reconciliation. Pending items were retained; see the archive summary.'

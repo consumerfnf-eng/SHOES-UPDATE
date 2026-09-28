@@ -16,13 +16,15 @@ export function validateState(state, required) {
   return { attempted: required.length, responded: required.filter(brand => coverage.get(brand).responses > 0).length };
 }
 
-export async function runDaily({ read, brands, output = path.join(root, 'data/runtime_state.json'), channel = process.env.PLAYWRIGHT_CHANNEL, skipTrends = false } = {}) {
+export async function runDaily({ read, brands, output = path.join(root, 'data/runtime_state.json'), channel = process.env.PLAYWRIGHT_CHANNEL, skipTrends = true } = {}) {
   await fs.mkdir(path.join(root, 'logs'), { recursive: true });
   await fs.mkdir(path.dirname(output), { recursive: true });
   await fs.rm(output, { force: true });
   await fs.writeFile(path.join(root, 'logs/daily-progress.jsonl'), '');
   const required = JSON.parse(await fs.readFile(path.join(root, 'config/mandatory_brands.json'), 'utf8')).brands.map(row => row.canonical);
-  const html = await fs.readFile(path.join(root, 'public/index.html'), 'utf8');
+  const policy = JSON.parse(await fs.readFile(path.join(root, 'config/brand-policy.json'), 'utf8'));
+  const selected = brands || policy.brands.filter(b => ['mandatory','core'].includes(b.policy)).map(b => b.name);
+  const html = await fs.readFile(path.join(root, 'collector/runtime.html'), 'utf8');
   const sources = JSON.parse(await fs.readFile(path.join(root, 'config/daily_sources.json'), 'utf8'));
   const server = http.createServer((request, response) => {
     if (new URL(request.url, 'http://localhost').pathname !== '/') { response.writeHead(404); response.end(); return; }
@@ -47,7 +49,7 @@ export async function runDaily({ read, brands, output = path.join(root, 'data/ru
     await page.waitForFunction(() => typeof window.__MLB_RUN_SERVER_DAILY__ === 'function', null, { timeout: 30000 });
     if (errors.length) throw Error('Dashboard initialization failed; see page errors');
     console.log(`Starting daily update; ${required.length} mandatory brands; Jina key ${process.env.JINA_API_KEY ? 'configured' : 'absent (anonymous Reader)'}.`);
-    const state = await page.evaluate(options => window.__MLB_RUN_SERVER_DAILY__(options), { brands, concurrency: 3, skipTrends });
+    const state = await page.evaluate(options => window.__MLB_RUN_SERVER_DAILY__(options), { brands:selected, concurrency: 3, skipTrends:true });
     const health = validateState(state, brands || required);
     state.crawler = { ...client.stats, ...health, scope: brands ? 'test' : 'full' };
     await fs.writeFile(output + '.tmp', JSON.stringify(state, null, 2));

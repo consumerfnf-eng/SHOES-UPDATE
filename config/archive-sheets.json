@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "reference": "https://consumerfnf-eng.github.io/retail-archive-/js/config.js",
+  "verifiedAt": "2026-09-28",
+  "sheets": [
+    {"key":"athleisure","id":"1iqyZhiZhEtKC3HKSI_bRFT_V8nxEy4HyaBTn5TOm644","sheetId":0,"title":"시트1","defaultCountry":"GL","blankColorHeader":true},
+    {"key":"outdoor_global","id":"1hRSkBD82TnzqusqH79qy-k0kSMGGqx5XbTk5dbnA1-A","sheetId":0,"title":"시트1","defaultCountry":"GL"},
+    {"key":"luxury","id":"1VOOVTnp_T8YUqb_O06a_O02VNM3_jEJTLwIXfTEsKx0","sheetId":0,"title":"시트1","defaultCountry":"GL"},
+    {"key":"outdoor_china","id":"1tA9UpzRober_qfosSOv2hwkrq5d8hAG-jeEn8dY21RQ","sheetId":0,"title":"시트1","defaultCountry":"CN","readOnly":true},
+    {"key":"domestic","id":"1ie6e9jQAkauBdBssqCH1DuyZHcGLyb2KDTysFdHV3Vc","sheetId":0,"title":"시트1","defaultCountry":"KR"}
+  ],
+  "contemporaryOverrides": ["론론","파르티멘토 우먼","튜드먼트","더바넷","던스트","레이브","르바","썸웨어버터","Urban Revivo","Rosemoo","Miss Sixty","MO&Co.","JNBY","Uniqlo"],
+  "newBrandGroups": {
+    "athleisure": ["Alo","Lululemon","Aritzia","Skims","Sporty and Rich","Adanola","Vuori","Ralph Lauren"],
+    "luxury": ["Louis Vuitton","Miu Miu","Prada","Gucci","Dior","Balenciaga","Celine","Saint Laurent","Hermès","Moncler","Bottega Veneta","Loewe","Cecilie Bahnsen","Dries Van Noten","Simone Rocha","Maison Margiela","MM6 Maison Margiela","Rick Owens","Jil Sander","Alaïa","Fendi","Givenchy","Versace","Valentino Garavani","Dolce & Gabbana","Alexander McQueen","Lanvin","Burberry","Chloé","Stella McCartney","Chanel","Thom Browne","Balmain","Golden Goose"],
+    "domestic": ["Axel Arigato","PANE","Rockfish Weatherwear","23.65","ALOHAS","grounds","Common Projects","Maison Mihara Yasuhiro","Acne Studios","Coperni","Courrèges","Jacquemus","Ganni","Lemaire","Stone Island","Tory Burch","Marine Serre","Proenza Schouler","Wales Bonner","sacai","Junya Watanabe","Comme des Garçons Homme Plus","Yohji Yamamoto","Kiko Kostadinov","Craig Green","Undercover","Kolor","Visvim","Hender Scheme","Kenzo","AMIRI","Rhude","Fear of God","Off-White","Palm Angels","Casablanca","DSQUARED2","Pierre Hardy","Rabanne","Ottolinger","Avavav","Feng Chen Wang","Saul Nash","Issey Miyake","VETEMENTS","Willy Chavarria","Soshiotsuki","Song for the Mute","Shoepen","Diesel","Martine Rose","Melissa"],
+    "outdoor_global": ["On","ASICS","FILA","Mizuno","New Balance","Salomon","adidas","Nike","PUMA","Onitsuka Tiger","SATISFY","Jordan","Converse","Vans","Reebok","Saucony","HOKA","Brooks","Skechers","Under Armour","Arc'teryx","The North Face","KOLON SPORT","Merrell","KEEN","ROA","norda","Eider","National Geographic","Le Coq Sportif","Umbro","Crocs","OOFOS","Havaianas","Y-3","Oakley Factory Team","Hunter","Timberland","UGG"]
+  },
+  "aliases": {"jordanbrand":"jordan","kolon":"kolonsport","antasports":"anta","axelariato":"axelarigato","valentino":"valentinogaravani"},
+  "maxRowsPerWrite": 20
+}

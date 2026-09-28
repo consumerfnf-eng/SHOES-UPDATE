@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "magazineDomains": ["gq-magazin.de", "pausemag.co.uk", "sneakerbardetroit.com", "soleretriever.com", "hypebeast.com", "highsnobiety.com", "sneakernews.com"],
+  "newsletterDomains": ["substack.com"],
+  "snsAccounts": [],
+  "rankingPages": [],
+  "note": "Public SNS accounts require a reviewed account identity, ownership and seller status before popularity counting. Add only verified ranking URLs with explicit country and category; search result order is never a ranking."
+}
