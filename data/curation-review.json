@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-28T04:33:27.589Z",
+  "checkedAt": "2026-09-28T05:54:09.197Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -13889,6 +13889,96 @@
       "brand": "Nike",
       "name": "Kobe 10 Protro \"Blue Lagoon\"",
       "reason": "excluded-footwear"
+    },
+    {
+      "id": "live-64413604d50e0492",
+      "brand": "On",
+      "name": "Bestseller Cloudmonster 3 Everyday running, responsive ride",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-080281efa46745fd",
+      "brand": "On",
+      "name": "Bestseller Cloudmonster 3 Everyday running, responsive ride",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-9257005ba90b00b4",
+      "brand": "On",
+      "name": "Bestseller Cloudsurfer 2 Everyday running, smooth ride",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-c59ab2a38ca315b2",
+      "brand": "Reebok",
+      "name": "Men's Zignition Running Shoes () Fall Savings Event | Up to",
+      "reason": "release-day-evidence-required"
+    },
+    {
+      "id": "live-913a3ade42a97ca5",
+      "brand": "Reebok",
+      "name": "Men's Classic Leather Ripple Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-af9b3acb37e81067",
+      "brand": "Reebok",
+      "name": "Workout Plus Ripple Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-b22e67a88b53acf5",
+      "brand": "Reebok",
+      "name": "Workout Plus Ripple Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-c38ade6cf750f80b",
+      "brand": "Reebok",
+      "name": "Men's GL1600 Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-8c0c0575ad670074",
+      "brand": "Reebok",
+      "name": "Men's Daytona DMX Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-549821b90aa86ca5",
+      "brand": "Reebok",
+      "name": "Men's Club C Grounds UK 1.0 Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-71eb441e7fe0dd4c",
+      "brand": "Reebok",
+      "name": "Men's Club C 85 Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-b77094c35d17af1d",
+      "brand": "Reebok",
+      "name": "Men's Classic Nylon Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-c99b283ab0e84589",
+      "brand": "Reebok",
+      "name": "Omni Edge Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "live-ab43d980da32e6e6",
+      "brand": "ALOHAS",
+      "name": "Tb.490 Rife Chocolate Brown Leather Sneakers",
+      "reason": "brand-fit-unverified"
+    },
+    {
+      "id": "live-f85bdb1fa2340b4b",
+      "brand": "ALOHAS",
+      "name": "Tb.490 Crochet Cream Leather Sneakers",
+      "reason": "brand-fit-unverified"
     }
   ]
 }
