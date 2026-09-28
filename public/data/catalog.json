@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-09-28T05:54:09.197Z",
+  "publishedAt": "2026-09-28T06:04:27.964Z",
   "periodStart": "2026-06-28",
   "asOf": "2026-09-28",
   "brands": [
@@ -484,7 +484,12 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:jordan"
+      ]
     },
     {
       "id": "official-salomon-l49210800",
@@ -540,6 +545,16 @@
       "keywordTags": [
         "mesh-sheer",
         "trail-gorpcore"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "use:trail",
+        "style:gorpcore",
+        "model:xt-4",
+        "brand:salomon"
       ]
     },
     {
@@ -597,6 +612,12 @@
         "red-crimson",
         "suede",
         "satin-velvet"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:red",
+        "brand:jordan"
       ]
     },
     {
@@ -652,6 +673,14 @@
       },
       "keywordTags": [
         "trail-gorpcore"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "use:trail",
+        "style:gorpcore",
+        "brand:salomon"
       ]
     },
     {
@@ -708,6 +737,16 @@
       "keywordTags": [
         "mesh-sheer",
         "trail-gorpcore"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "use:trail",
+        "style:gorpcore",
+        "model:xt-4",
+        "brand:salomon"
       ]
     },
     {
@@ -761,7 +800,13 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "model:xt-6",
+        "brand:salomon"
+      ]
     },
     {
       "id": "official-salomon-l49213200",
@@ -816,6 +861,13 @@
       },
       "keywordTags": [
         "mesh-sheer"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "model:xt-6",
+        "brand:salomon"
       ]
     },
     {
@@ -871,6 +923,13 @@
       },
       "keywordTags": [
         "mesh-sheer"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "model:xt-6",
+        "brand:salomon"
       ]
     },
     {
@@ -925,6 +984,16 @@
       "keywordTags": [
         "mesh-sheer",
         "trail-gorpcore"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "use:trail",
+        "style:gorpcore",
+        "model:xt-6",
+        "brand:salomon"
       ]
     },
     {
@@ -979,6 +1048,16 @@
       "keywordTags": [
         "mesh-sheer",
         "trail-gorpcore"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "use:trail",
+        "style:gorpcore",
+        "model:xt-6",
+        "brand:salomon"
       ]
     },
     {
@@ -1033,6 +1112,16 @@
       "keywordTags": [
         "mesh-sheer",
         "trail-gorpcore"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "use:trail",
+        "style:gorpcore",
+        "model:xt-6",
+        "brand:salomon"
       ]
     },
     {
@@ -1094,6 +1183,13 @@
       },
       "keywordTags": [
         "red-crimson"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:red",
+        "color:black",
+        "brand:nike"
       ]
     },
     {
@@ -1146,7 +1242,12 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:jordan"
+      ]
     },
     {
       "id": "official-nike-iv5678-102",
@@ -1202,6 +1303,12 @@
       },
       "keywordTags": [
         "mesh-sheer"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "brand:jordan"
       ]
     },
     {
@@ -1289,6 +1396,13 @@
       "keywordTags": [
         "character-collaboration",
         "sculptural-upper"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "franchise:one-piece",
+        "model:air-max",
+        "brand:nike"
       ]
     },
     {
@@ -1350,6 +1464,17 @@
         "retro-runner",
         "mesh-sheer",
         "red-crimson"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "color:burgundy",
+        "color:black",
+        "shape:retro-runner",
+        "model:nb-990",
+        "brand:newbalance"
       ]
     },
     {
@@ -1410,6 +1535,15 @@
       "keywordTags": [
         "retro-runner",
         "mesh-sheer"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "shape:retro-runner",
+        "model:nb-990",
+        "brand:newbalance"
       ]
     },
     {
@@ -1472,6 +1606,13 @@
       },
       "keywordTags": [
         "low-profile"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "shape:low-profile",
+        "brand:nike"
       ]
     },
     {
@@ -1532,6 +1673,14 @@
       "keywordTags": [
         "brown",
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "color:brown",
+        "model:nb-991",
+        "brand:newbalance"
       ]
     },
     {
@@ -1595,6 +1744,14 @@
       "keywordTags": [
         "mesh-sheer",
         "skate-y2k"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "use:skate",
+        "model:air-force-1",
+        "brand:nike"
       ]
     },
     {
@@ -1655,6 +1812,12 @@
       },
       "keywordTags": [
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "brand:nike"
       ]
     },
     {
@@ -1745,6 +1908,13 @@
       },
       "keywordTags": [
         "canvas"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:canvas",
+        "model:jack-purcell",
+        "brand:converse"
       ]
     },
     {
@@ -1835,6 +2005,13 @@
       },
       "keywordTags": [
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "model:jack-purcell",
+        "brand:converse"
       ]
     },
     {
@@ -1929,6 +2106,13 @@
       "keywordTags": [
         "mesh-sheer",
         "sculptural-upper"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "color:white",
+        "brand:puma"
       ]
     },
     {
@@ -2024,6 +2208,13 @@
         "mesh-sheer",
         "brown",
         "sculptural-upper"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "color:brown",
+        "brand:puma"
       ]
     },
     {
@@ -2086,6 +2277,15 @@
         "mesh-sheer",
         "red-crimson",
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:suede",
+        "material:mesh",
+        "shape:retro-runner",
+        "brand:newbalance"
       ]
     },
     {
@@ -2138,7 +2338,12 @@
         "passed": true,
         "checkedAt": "2026-09-28"
       },
-      "keywordTags": []
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:adidas"
+      ]
     },
     {
       "id": "verified-new-balance-u90608ol",
@@ -2199,6 +2404,15 @@
         "mesh-sheer",
         "red-crimson",
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "material:mesh",
+        "color:red",
+        "model:nb-9060",
+        "brand:newbalance"
       ]
     },
     {
@@ -2256,6 +2470,14 @@
       },
       "keywordTags": [
         "mesh-sheer"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "color:white",
+        "brand:newbalance"
       ]
     },
     {
@@ -2313,6 +2535,14 @@
       },
       "keywordTags": [
         "mesh-sheer"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "color:white",
+        "brand:newbalance"
       ]
     },
     {
@@ -2373,6 +2603,16 @@
       "keywordTags": [
         "retro-runner",
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:suede",
+        "color:black",
+        "shape:retro-runner",
+        "model:nb-990",
+        "brand:newbalance"
       ]
     },
     {
@@ -2434,6 +2674,16 @@
         "retro-runner",
         "mesh-sheer",
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:suede",
+        "material:mesh",
+        "color:black",
+        "shape:retro-runner",
+        "brand:newbalance"
       ]
     },
     {
@@ -2493,6 +2743,12 @@
       },
       "keywordTags": [
         "red-crimson"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:red",
+        "brand:newbalance"
       ]
     },
     {
@@ -2550,6 +2806,13 @@
       },
       "keywordTags": [
         "canvas"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:canvas",
+        "color:white",
+        "brand:newbalance"
       ]
     },
     {
@@ -2610,6 +2873,13 @@
       "keywordTags": [
         "mesh-sheer",
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "model:nb-991",
+        "brand:newbalance"
       ]
     },
     {
@@ -2669,6 +2939,12 @@
       },
       "keywordTags": [
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "brand:newbalance"
       ]
     },
     {
@@ -2729,6 +3005,15 @@
       "keywordTags": [
         "retro-runner",
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:suede",
+        "shape:retro-runner",
+        "model:nb-327",
+        "brand:newbalance"
       ]
     },
     {
@@ -2790,6 +3075,15 @@
         "low-profile",
         "retro-runner",
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:suede",
+        "shape:low-profile",
+        "shape:retro-runner",
+        "brand:newbalance"
       ]
     },
     {
@@ -2851,6 +3145,15 @@
         "low-profile",
         "retro-runner",
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:suede",
+        "shape:low-profile",
+        "shape:retro-runner",
+        "brand:newbalance"
       ]
     },
     {
@@ -2908,6 +3211,13 @@
       },
       "keywordTags": [
         "metallic-silver"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "color:silver",
+        "brand:newbalance"
       ]
     },
     {
@@ -2965,6 +3275,13 @@
       },
       "keywordTags": [
         "metallic-silver"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "color:silver",
+        "brand:newbalance"
       ]
     },
     {
@@ -3031,6 +3348,15 @@
         "mesh-sheer",
         "trail-gorpcore",
         "mary-jane"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "shape:mary-jane",
+        "use:trail",
+        "style:gorpcore",
+        "brand:newbalance"
       ]
     },
     {
@@ -3089,6 +3415,15 @@
       "keywordTags": [
         "retro-runner",
         "mesh-sheer"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "color:black",
+        "shape:retro-runner",
+        "brand:newbalance"
       ]
     },
     {
@@ -3149,6 +3484,14 @@
       "keywordTags": [
         "mesh-sheer",
         "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "material:mesh",
+        "model:nb-9060",
+        "brand:newbalance"
       ]
     },
     {
@@ -3209,584 +3552,2891 @@
       "keywordTags": [
         "retro-runner",
         "mesh-sheer"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "color:black",
+        "shape:retro-runner",
+        "brand:newbalance"
       ]
+    }
+  ],
+  "keywordMethod": "public-source-rank-v1",
+  "keywordCheckedAt": "2026-09-28T06:04:27.964Z",
+  "sourceRanks": [
+    {
+      "platform": "musinsa",
+      "term": "아디다스",
+      "rank": 8,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "나이키",
+      "rank": 21,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "신발",
+      "rank": 22,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "살로몬",
+      "rank": 25,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "뉴발란스",
+      "rank": 30,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "아식스",
+      "rank": 32,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "챔피온",
+      "rank": 39,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "푸마",
+      "rank": 41,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "운동화",
+      "rank": 49,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "반스",
+      "rank": 69,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "미즈노",
+      "rank": 89,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "musinsa",
+      "term": "러닝화",
+      "rank": 99,
+      "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "무신사",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+      "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "rankBasis": "official-numbered-search-list"
+    },
+    {
+      "platform": "29cm",
+      "term": "아디다스",
+      "rank": 7,
+      "sourceUrl": "https://www.29cm.co.kr/store/search/start",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "29cm:2026-09-28T06:04:27.964Z:6f37cce392af4f18",
+      "sourceUpdatedAt": "09.28 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "29CM",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "6f37cce392af4f18319d96dccbe6e82b00efe19faac20577b780d9eff60bb234",
+      "evidenceUrl": "https://display-bff-api.29cm.co.kr/api/v1/search-home",
+      "rankBasis": "platform-explicit-search-rank"
+    },
+    {
+      "platform": "29cm",
+      "term": "살로몬",
+      "rank": 10,
+      "sourceUrl": "https://www.29cm.co.kr/store/search/start",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "29cm:2026-09-28T06:04:27.964Z:6f37cce392af4f18",
+      "sourceUpdatedAt": "09.28 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "29CM",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "6f37cce392af4f18319d96dccbe6e82b00efe19faac20577b780d9eff60bb234",
+      "evidenceUrl": "https://display-bff-api.29cm.co.kr/api/v1/search-home",
+      "rankBasis": "platform-explicit-search-rank"
+    },
+    {
+      "platform": "29cm",
+      "term": "나이키",
+      "rank": 27,
+      "sourceUrl": "https://www.29cm.co.kr/store/search/start",
+      "verified": true,
+      "kind": "search-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "29cm:2026-09-28T06:04:27.964Z:6f37cce392af4f18",
+      "sourceUpdatedAt": "09.28 기준",
+      "scope": "all",
+      "country": "KR",
+      "platformName": "29CM",
+      "sourceTitle": "인기 검색어",
+      "contentHash": "6f37cce392af4f18319d96dccbe6e82b00efe19faac20577b780d9eff60bb234",
+      "evidenceUrl": "https://display-bff-api.29cm.co.kr/api/v1/search-home",
+      "rankBasis": "platform-explicit-search-rank"
+    },
+    {
+      "platform": "tagwalk",
+      "term": "Prada",
+      "rank": 1,
+      "sourceUrl": "https://www2.tag-walk.com/es/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+      "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+      "sourceUpdatedAt": "2026-09-27",
+      "scope": "brand-traffic",
+      "country": "Global",
+      "platformName": "Tagwalk",
+      "sourceTitle": "Ranking de marcas",
+      "contentHash": "96b7c899ea6c7d8a5588a5c74fb32a49202300ba9d0830cb4208b8f66aaab256",
+      "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+      "validUntil": "2026-10-04",
+      "validityBasis": "최신 홈페이지의 명시 기간 확인 · 기간 종료일부터 7일 이내",
+      "evidenceUrl": "https://www2.tag-walk.com/es/",
+      "rankBasis": "platform-explicit-brand-traffic-rank",
+      "metric": "brand-traffic",
+      "latestPeriodVerified": true,
+      "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+      "periodStart": "2026-09-20",
+      "periodEnd": "2026-09-27"
+    },
+    {
+      "platform": "tagwalk",
+      "term": "Gucci",
+      "rank": 2,
+      "sourceUrl": "https://www2.tag-walk.com/es/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+      "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+      "sourceUpdatedAt": "2026-09-27",
+      "scope": "brand-traffic",
+      "country": "Global",
+      "platformName": "Tagwalk",
+      "sourceTitle": "Ranking de marcas",
+      "contentHash": "96b7c899ea6c7d8a5588a5c74fb32a49202300ba9d0830cb4208b8f66aaab256",
+      "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+      "validUntil": "2026-10-04",
+      "validityBasis": "최신 홈페이지의 명시 기간 확인 · 기간 종료일부터 7일 이내",
+      "evidenceUrl": "https://www2.tag-walk.com/es/",
+      "rankBasis": "platform-explicit-brand-traffic-rank",
+      "metric": "brand-traffic",
+      "latestPeriodVerified": true,
+      "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+      "periodStart": "2026-09-20",
+      "periodEnd": "2026-09-27"
+    },
+    {
+      "platform": "tagwalk",
+      "term": "Burberry",
+      "rank": 3,
+      "sourceUrl": "https://www2.tag-walk.com/es/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+      "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+      "sourceUpdatedAt": "2026-09-27",
+      "scope": "brand-traffic",
+      "country": "Global",
+      "platformName": "Tagwalk",
+      "sourceTitle": "Ranking de marcas",
+      "contentHash": "96b7c899ea6c7d8a5588a5c74fb32a49202300ba9d0830cb4208b8f66aaab256",
+      "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+      "validUntil": "2026-10-04",
+      "validityBasis": "최신 홈페이지의 명시 기간 확인 · 기간 종료일부터 7일 이내",
+      "evidenceUrl": "https://www2.tag-walk.com/es/",
+      "rankBasis": "platform-explicit-brand-traffic-rank",
+      "metric": "brand-traffic",
+      "latestPeriodVerified": true,
+      "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+      "periodStart": "2026-09-20",
+      "periodEnd": "2026-09-27"
+    },
+    {
+      "platform": "tagwalk",
+      "term": "Fendi",
+      "rank": 4,
+      "sourceUrl": "https://www2.tag-walk.com/es/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+      "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+      "sourceUpdatedAt": "2026-09-27",
+      "scope": "brand-traffic",
+      "country": "Global",
+      "platformName": "Tagwalk",
+      "sourceTitle": "Ranking de marcas",
+      "contentHash": "96b7c899ea6c7d8a5588a5c74fb32a49202300ba9d0830cb4208b8f66aaab256",
+      "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+      "validUntil": "2026-10-04",
+      "validityBasis": "최신 홈페이지의 명시 기간 확인 · 기간 종료일부터 7일 이내",
+      "evidenceUrl": "https://www2.tag-walk.com/es/",
+      "rankBasis": "platform-explicit-brand-traffic-rank",
+      "metric": "brand-traffic",
+      "latestPeriodVerified": true,
+      "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+      "periodStart": "2026-09-20",
+      "periodEnd": "2026-09-27"
+    },
+    {
+      "platform": "tagwalk",
+      "term": "DIESEL",
+      "rank": 5,
+      "sourceUrl": "https://www2.tag-walk.com/es/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+      "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+      "sourceUpdatedAt": "2026-09-27",
+      "scope": "brand-traffic",
+      "country": "Global",
+      "platformName": "Tagwalk",
+      "sourceTitle": "Ranking de marcas",
+      "contentHash": "96b7c899ea6c7d8a5588a5c74fb32a49202300ba9d0830cb4208b8f66aaab256",
+      "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+      "validUntil": "2026-10-04",
+      "validityBasis": "최신 홈페이지의 명시 기간 확인 · 기간 종료일부터 7일 이내",
+      "evidenceUrl": "https://www2.tag-walk.com/es/",
+      "rankBasis": "platform-explicit-brand-traffic-rank",
+      "metric": "brand-traffic",
+      "latestPeriodVerified": true,
+      "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+      "periodStart": "2026-09-20",
+      "periodEnd": "2026-09-27"
+    },
+    {
+      "platform": "lyst",
+      "term": "CHANEL",
+      "rank": 1,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "MIU MIU",
+      "rank": 2,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "DIOR",
+      "rank": 3,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "SAINT LAURENT",
+      "rank": 4,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "GUCCI",
+      "rank": 5,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "PRADA",
+      "rank": 6,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "BURBERRY",
+      "rank": 8,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "CHLOÉ",
+      "rank": 11,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "VERSACE",
+      "rank": 13,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "BOTTEGA VENETA",
+      "rank": 14,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "CELINE",
+      "rank": 15,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "MONCLER",
+      "rank": 16,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "LOEWE",
+      "rank": 17,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "JACQUEMUS",
+      "rank": 19,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "lyst",
+      "term": "STONE ISLAND",
+      "rank": 20,
+      "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "verified": true,
+      "kind": "composite-rank",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "sourceUpdatedAt": "2026-06-30",
+      "scope": "brand-popularity",
+      "country": "Global",
+      "platformName": "Lyst Index",
+      "sourceTitle": "Hottest Brands",
+      "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "validUntil": "2026-12-27",
+      "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+      "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "metric": "quarterly-brand-popularity",
+      "latestPeriodVerified": true,
+      "reportId": "lyst:Q2-26",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "wgsn-ss27-colours",
+      "term": "Luminous Blue",
+      "rank": null,
+      "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "verified": true,
+      "kind": "forecast-keyword",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "wgsn-ss27-colours:2026-09-28T06:04:27.964Z:9978f95996ebfed9",
+      "scope": "fashion-colour-forecast",
+      "platformName": "WGSN",
+      "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+      "forecastPeriod": "S/S 2027",
+      "validUntil": "2027-08-31",
+      "validityBasis": "season-end-policy",
+      "publishedAt": "2025-07-18",
+      "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "verificationMethod": "public-source-fetch",
+      "automatedStatus": "available",
+      "verifiedAt": "2026-09-28T06:04:27.964Z",
+      "applicability": "cross-category"
+    },
+    {
+      "platform": "wgsn-ss27-colours",
+      "term": "Energy Orange",
+      "rank": null,
+      "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "verified": true,
+      "kind": "forecast-keyword",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "wgsn-ss27-colours:2026-09-28T06:04:27.964Z:9978f95996ebfed9",
+      "scope": "fashion-colour-forecast",
+      "platformName": "WGSN",
+      "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+      "forecastPeriod": "S/S 2027",
+      "validUntil": "2027-08-31",
+      "validityBasis": "season-end-policy",
+      "publishedAt": "2025-07-18",
+      "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "verificationMethod": "public-source-fetch",
+      "automatedStatus": "available",
+      "verifiedAt": "2026-09-28T06:04:27.964Z",
+      "applicability": "sports-and-outdoor"
+    },
+    {
+      "platform": "wgsn-ss27-colours",
+      "term": "Pop Pink",
+      "rank": null,
+      "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "verified": true,
+      "kind": "forecast-keyword",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "wgsn-ss27-colours:2026-09-28T06:04:27.964Z:9978f95996ebfed9",
+      "scope": "fashion-colour-forecast",
+      "platformName": "WGSN",
+      "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+      "forecastPeriod": "S/S 2027",
+      "validUntil": "2027-08-31",
+      "validityBasis": "season-end-policy",
+      "publishedAt": "2025-07-18",
+      "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "verificationMethod": "public-source-fetch",
+      "automatedStatus": "available",
+      "verifiedAt": "2026-09-28T06:04:27.964Z",
+      "applicability": "cross-category"
+    },
+    {
+      "platform": "wgsn-ss27-colours",
+      "term": "Meadowland Green",
+      "rank": null,
+      "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "verified": true,
+      "kind": "forecast-keyword",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "wgsn-ss27-colours:2026-09-28T06:04:27.964Z:9978f95996ebfed9",
+      "scope": "fashion-colour-forecast",
+      "platformName": "WGSN",
+      "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+      "forecastPeriod": "S/S 2027",
+      "validUntil": "2027-08-31",
+      "validityBasis": "season-end-policy",
+      "publishedAt": "2025-07-18",
+      "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "verificationMethod": "public-source-fetch",
+      "automatedStatus": "available",
+      "verifiedAt": "2026-09-28T06:04:27.964Z",
+      "applicability": "footwear-explicit"
+    },
+    {
+      "platform": "wgsn-ss27-colours",
+      "term": "Clay",
+      "rank": null,
+      "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "verified": true,
+      "kind": "forecast-keyword",
+      "capturedAt": "2026-09-28T06:04:27.964Z",
+      "rankingPeriod": null,
+      "snapshotId": "wgsn-ss27-colours:2026-09-28T06:04:27.964Z:9978f95996ebfed9",
+      "scope": "fashion-colour-forecast",
+      "platformName": "WGSN",
+      "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+      "forecastPeriod": "S/S 2027",
+      "validUntil": "2027-08-31",
+      "validityBasis": "season-end-policy",
+      "publishedAt": "2025-07-18",
+      "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "verificationMethod": "public-source-fetch",
+      "automatedStatus": "available",
+      "verifiedAt": "2026-09-28T06:04:27.964Z",
+      "applicability": "cross-category"
     }
   ],
   "keywords": [
     {
-      "id": "sculptural-upper",
-      "label": "Sculptural uppers",
+      "id": "keyword-3f4ce61dd8e90742",
+      "label": "Prada",
       "aliases": [
-        "스컬프처 어퍼",
-        "sculptural upper",
-        "sculpted upper"
+        "Prada",
+        "PRADA",
+        "프라다"
       ],
-      "sourceTypes": [
-        "magazine"
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "tagwalk",
+          "term": "Prada",
+          "rank": 1,
+          "sourceUrl": "https://www2.tag-walk.com/es/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+          "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+          "sourceUpdatedAt": "2026-09-27",
+          "scope": "brand-traffic",
+          "country": "Global",
+          "platformName": "Tagwalk",
+          "sourceTitle": "Ranking de marcas",
+          "contentHash": "96b7c899ea6c7d8a5588a5c74fb32a49202300ba9d0830cb4208b8f66aaab256",
+          "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+          "validUntil": "2026-10-04",
+          "validityBasis": "최신 홈페이지의 명시 기간 확인 · 기간 종료일부터 7일 이내",
+          "evidenceUrl": "https://www2.tag-walk.com/es/",
+          "rankBasis": "platform-explicit-brand-traffic-rank",
+          "metric": "brand-traffic",
+          "latestPeriodVerified": true,
+          "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-27"
+        },
+        {
+          "platform": "lyst",
+          "term": "PRADA",
+          "rank": 6,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
       ],
-      "productIds": [
-        "verified-nike-ir0968-500",
-        "verified-puma-406687-01",
-        "verified-puma-406687-02"
-      ],
-      "matchedProductCount": 3,
-      "evidenceProductIds": [
-        "verified-nike-ir0968-500"
-      ],
-      "productCount": 1,
-      "previousProductCount": 0,
-      "growth": 1,
+      "sourceCount": 2,
+      "score": 1.1666666666666667,
       "rank": 1,
       "rankingStatus": "ranked"
     },
     {
-      "id": "ballet-hybrid",
-      "label": "Sneakerina / ballet hybrids",
+      "id": "keyword-04a4d5d6c5b84e66",
+      "label": "CHANEL",
       "aliases": [
-        "#발레리나스니커즈",
-        "Sneakerina / ballet hybrids",
-        "sneakerina",
-        "ballet sneaker",
-        "ballerina sneaker",
-        "ballet hybrid",
-        "발레코어",
-        "발레 스니커즈",
-        "메리제인 스니커즈"
+        "CHANEL",
+        "Chanel"
       ],
-      "sourceTypes": [],
       "productIds": [],
       "matchedProductCount": 0,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "CHANEL",
+          "rank": 1,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 1,
+      "rank": 2,
+      "rankingStatus": "ranked"
     },
     {
-      "id": "low-profile",
-      "label": "Low-profile / slim sneakers",
+      "id": "keyword-33c2de4a4f6a7444",
+      "label": "Gucci",
       "aliases": [
-        "#로우프로파일",
-        "Low-profile / slim sneakers",
-        "low profile",
-        "low-profile",
-        "slim sneaker",
-        "slim-line sneaker",
-        "sleek sneaker",
-        "로우 프로파일",
-        "스피드캣",
-        "태권도"
+        "Gucci",
+        "GUCCI",
+        "구찌"
       ],
-      "sourceTypes": [],
-      "productIds": [
-        "daily-20260915-nike-air-foamposite-pro-im5204-001",
-        "verified-new-balance-u204v2w0",
-        "verified-new-balance-u204v2pt"
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "tagwalk",
+          "term": "Gucci",
+          "rank": 2,
+          "sourceUrl": "https://www2.tag-walk.com/es/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+          "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+          "sourceUpdatedAt": "2026-09-27",
+          "scope": "brand-traffic",
+          "country": "Global",
+          "platformName": "Tagwalk",
+          "sourceTitle": "Ranking de marcas",
+          "contentHash": "96b7c899ea6c7d8a5588a5c74fb32a49202300ba9d0830cb4208b8f66aaab256",
+          "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+          "validUntil": "2026-10-04",
+          "validityBasis": "최신 홈페이지의 명시 기간 확인 · 기간 종료일부터 7일 이내",
+          "evidenceUrl": "https://www2.tag-walk.com/es/",
+          "rankBasis": "platform-explicit-brand-traffic-rank",
+          "metric": "brand-traffic",
+          "latestPeriodVerified": true,
+          "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-27"
+        },
+        {
+          "platform": "lyst",
+          "term": "GUCCI",
+          "rank": 5,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
       ],
-      "matchedProductCount": 3,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "sourceCount": 2,
+      "score": 0.7,
+      "rank": 3,
+      "rankingStatus": "ranked"
     },
     {
-      "id": "retro-runner",
-      "label": "Retro runners / archive trainers",
+      "id": "keyword-bd2aa19a2105705b",
+      "label": "MIU MIU",
       "aliases": [
-        "#레트로러너",
-        "Retro runners / archive trainers",
-        "retro runner",
-        "retro trainer",
-        "archive sneaker",
-        "70s sneaker",
-        "80s runner",
-        "90s runner",
-        "레트로 러너",
-        "빈티지 조거"
+        "MIU MIU",
+        "Miu Miu",
+        "미우미우",
+        "미우 미우"
       ],
-      "sourceTypes": [],
-      "productIds": [
-        "verified-new-balance-u990br4",
-        "verified-new-balance-u990bg4",
-        "verified-new-balance-u1300ss",
-        "verified-new-balance-u990lv4",
-        "verified-new-balance-u993mo",
-        "verified-new-balance-w327apc",
-        "verified-new-balance-u204v2w0",
-        "verified-new-balance-u204v2pt",
-        "verified-new-balance-u7406ak",
-        "verified-new-balance-u20001k7"
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "MIU MIU",
+          "rank": 2,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
       ],
-      "matchedProductCount": 10,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "sourceCount": 1,
+      "score": 0.5,
+      "rank": 4,
+      "rankingStatus": "ranked"
     },
     {
-      "id": "character-collaboration",
-      "label": "Character / franchise collaborations",
+      "id": "keyword-f9fabc86d1a14580",
+      "label": "Burberry",
       "aliases": [
-        "#캐릭터콜라보",
-        "Character / franchise collaborations",
-        "character sneaker",
-        "pokemon sneaker",
-        "franchise collaboration",
-        "캐릭터 콜라보",
-        "포켓몬 스니커즈"
+        "Burberry",
+        "BURBERRY"
       ],
-      "sourceTypes": [],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "tagwalk",
+          "term": "Burberry",
+          "rank": 3,
+          "sourceUrl": "https://www2.tag-walk.com/es/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+          "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+          "sourceUpdatedAt": "2026-09-27",
+          "scope": "brand-traffic",
+          "country": "Global",
+          "platformName": "Tagwalk",
+          "sourceTitle": "Ranking de marcas",
+          "contentHash": "96b7c899ea6c7d8a5588a5c74fb32a49202300ba9d0830cb4208b8f66aaab256",
+          "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+          "validUntil": "2026-10-04",
+          "validityBasis": "최신 홈페이지의 명시 기간 확인 · 기간 종료일부터 7일 이내",
+          "evidenceUrl": "https://www2.tag-walk.com/es/",
+          "rankBasis": "platform-explicit-brand-traffic-rank",
+          "metric": "brand-traffic",
+          "latestPeriodVerified": true,
+          "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-27"
+        },
+        {
+          "platform": "lyst",
+          "term": "BURBERRY",
+          "rank": 8,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 2,
+      "score": 0.4583333333333333,
+      "rank": 5,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-cd3ac805127bbc0b",
+      "label": "DIOR",
+      "aliases": [
+        "DIOR",
+        "Dior",
+        "디올"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "DIOR",
+          "rank": 3,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.3333333333333333,
+      "rank": 6,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-b5db2a005cea05ae",
+      "label": "아디다스",
+      "aliases": [
+        "아디다스",
+        "adidas"
+      ],
       "productIds": [
-        "verified-nike-ir0968-500"
+        "verified-adidas-kj7669"
       ],
       "matchedProductCount": 1,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "sourceRanks": [
+        {
+          "platform": "29cm",
+          "term": "아디다스",
+          "rank": 7,
+          "sourceUrl": "https://www.29cm.co.kr/store/search/start",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "29cm:2026-09-28T06:04:27.964Z:6f37cce392af4f18",
+          "sourceUpdatedAt": "09.28 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "29CM",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "6f37cce392af4f18319d96dccbe6e82b00efe19faac20577b780d9eff60bb234",
+          "evidenceUrl": "https://display-bff-api.29cm.co.kr/api/v1/search-home",
+          "rankBasis": "platform-explicit-search-rank"
+        },
+        {
+          "platform": "musinsa",
+          "term": "아디다스",
+          "rank": 8,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 2,
+      "score": 0.26785714285714285,
+      "rank": 7,
+      "rankingStatus": "ranked"
     },
     {
-      "id": "mesh-sheer",
-      "label": "Mesh / sheer footwear",
+      "id": "keyword-0fc6bd60db6f46c9",
+      "label": "Fendi",
       "aliases": [
-        "#메쉬슈즈",
-        "Mesh / sheer footwear",
-        "mesh shoe",
-        "mesh sneaker",
-        "sheer shoe",
-        "메쉬 슈즈",
-        "메쉬 스니커즈"
+        "Fendi"
       ],
-      "sourceTypes": [],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "tagwalk",
+          "term": "Fendi",
+          "rank": 4,
+          "sourceUrl": "https://www2.tag-walk.com/es/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+          "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+          "sourceUpdatedAt": "2026-09-27",
+          "scope": "brand-traffic",
+          "country": "Global",
+          "platformName": "Tagwalk",
+          "sourceTitle": "Ranking de marcas",
+          "contentHash": "96b7c899ea6c7d8a5588a5c74fb32a49202300ba9d0830cb4208b8f66aaab256",
+          "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+          "validUntil": "2026-10-04",
+          "validityBasis": "최신 홈페이지의 명시 기간 확인 · 기간 종료일부터 7일 이내",
+          "evidenceUrl": "https://www2.tag-walk.com/es/",
+          "rankBasis": "platform-explicit-brand-traffic-rank",
+          "metric": "brand-traffic",
+          "latestPeriodVerified": true,
+          "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-27"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.25,
+      "rank": 8,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-ab3e5e6d5a8da6e3",
+      "label": "SAINT LAURENT",
+      "aliases": [
+        "SAINT LAURENT",
+        "Saint Laurent",
+        "생로랑",
+        "생 로랑",
+        "입생로랑"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "SAINT LAURENT",
+          "rank": 4,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.25,
+      "rank": 9,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-2b453482e09cda5f",
+      "label": "DIESEL",
+      "aliases": [
+        "DIESEL",
+        "Diesel"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "tagwalk",
+          "term": "DIESEL",
+          "rank": 5,
+          "sourceUrl": "https://www2.tag-walk.com/es/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+          "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+          "sourceUpdatedAt": "2026-09-27",
+          "scope": "brand-traffic",
+          "country": "Global",
+          "platformName": "Tagwalk",
+          "sourceTitle": "Ranking de marcas",
+          "contentHash": "96b7c899ea6c7d8a5588a5c74fb32a49202300ba9d0830cb4208b8f66aaab256",
+          "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+          "validUntil": "2026-10-04",
+          "validityBasis": "최신 홈페이지의 명시 기간 확인 · 기간 종료일부터 7일 이내",
+          "evidenceUrl": "https://www2.tag-walk.com/es/",
+          "rankBasis": "platform-explicit-brand-traffic-rank",
+          "metric": "brand-traffic",
+          "latestPeriodVerified": true,
+          "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-27"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.2,
+      "rank": 10,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-fb836528728d22a6",
+      "label": "살로몬",
+      "aliases": [
+        "살로몬",
+        "Salomon"
+      ],
       "productIds": [
-        "official-salomon-l49210800",
         "official-salomon-l49210700",
-        "official-salomon-l49213200",
+        "official-salomon-l49210800",
         "official-salomon-l49211100",
-        "official-salomon-l49215400",
-        "official-salomon-l49215200",
+        "official-salomon-l49213200",
+        "official-salomon-l49213700",
         "official-salomon-l49214800",
-        "official-nike-iv5678-102",
-        "verified-new-balance-u990br4",
-        "verified-new-balance-u990bg4",
+        "official-salomon-l49215200",
+        "official-salomon-l49215400",
+        "official-salomon-l49302000"
+      ],
+      "matchedProductCount": 9,
+      "sourceRanks": [
+        {
+          "platform": "29cm",
+          "term": "살로몬",
+          "rank": 10,
+          "sourceUrl": "https://www.29cm.co.kr/store/search/start",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "29cm:2026-09-28T06:04:27.964Z:6f37cce392af4f18",
+          "sourceUpdatedAt": "09.28 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "29CM",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "6f37cce392af4f18319d96dccbe6e82b00efe19faac20577b780d9eff60bb234",
+          "evidenceUrl": "https://display-bff-api.29cm.co.kr/api/v1/search-home",
+          "rankBasis": "platform-explicit-search-rank"
+        },
+        {
+          "platform": "musinsa",
+          "term": "살로몬",
+          "rank": 25,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 2,
+      "score": 0.14,
+      "rank": 11,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-e1a9ee84fd1ca421",
+      "label": "CHLOÉ",
+      "aliases": [
+        "CHLOÉ",
+        "Chloé"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "CHLOÉ",
+          "rank": 11,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.09090909090909091,
+      "rank": 12,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-82ce1aa71778a90c",
+      "label": "나이키",
+      "aliases": [
+        "나이키",
+        "Nike"
+      ],
+      "productIds": [
+        "daily-20260915-nike-air-foamposite-pro-im5204-001",
         "daily-20260915-nike-sb-af1-yuto-io8439-100",
-        "verified-puma-406687-01",
-        "verified-puma-406687-02",
-        "verified-new-balance-u1300ss",
-        "verified-new-balance-u90608ol",
-        "verified-new-balance-wfcx1yq",
-        "verified-new-balance-mfcx8e5",
-        "verified-new-balance-u993mo",
-        "verified-new-balance-u991wl2",
-        "verified-new-balance-mt24yj",
-        "verified-new-balance-u7406ak",
-        "verified-new-balance-u90609bo",
-        "verified-new-balance-u20001k7"
-      ],
-      "matchedProductCount": 23,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
-    },
-    {
-      "id": "metallic-silver",
-      "label": "Metallic silver footwear",
-      "aliases": [
-        "#메탈릭실버",
-        "Metallic silver footwear",
-        "metallic sneaker",
-        "silver sneaker",
-        "metallic silver",
-        "메탈릭 실버",
-        "실버 스니커즈"
-      ],
-      "sourceTypes": [],
-      "productIds": [
-        "verified-new-balance-mrebx4fh",
-        "verified-new-balance-wrebx38s"
-      ],
-      "matchedProductCount": 2,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
-    },
-    {
-      "id": "red-crimson",
-      "label": "Red / crimson statement sneakers",
-      "aliases": [
-        "#레드스니커즈",
-        "Red / crimson statement sneakers",
-        "red sneaker",
-        "crimson sneaker",
-        "cherry sneaker",
-        "burgundy sneaker",
-        "wine sneaker",
-        "레드 스니커즈",
-        "빨간 스니커즈",
-        "버건디 스니커즈"
-      ],
-      "sourceTypes": [],
-      "productIds": [
-        "official-nike-ix8478-410",
+        "daily-20260915-nike-tennis-centre-kallmeyer-iw4737-104",
         "new-20260923-f28d3395e6c72a4a",
-        "verified-new-balance-u990br4",
-        "verified-new-balance-u1300ss",
-        "verified-new-balance-u90608ol",
-        "verified-new-balance-u18902uh"
+        "verified-nike-ir0968-500"
       ],
-      "matchedProductCount": 6,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "matchedProductCount": 5,
+      "sourceRanks": [
+        {
+          "platform": "musinsa",
+          "term": "나이키",
+          "rank": 21,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        },
+        {
+          "platform": "29cm",
+          "term": "나이키",
+          "rank": 27,
+          "sourceUrl": "https://www.29cm.co.kr/store/search/start",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "29cm:2026-09-28T06:04:27.964Z:6f37cce392af4f18",
+          "sourceUpdatedAt": "09.28 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "29CM",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "6f37cce392af4f18319d96dccbe6e82b00efe19faac20577b780d9eff60bb234",
+          "evidenceUrl": "https://display-bff-api.29cm.co.kr/api/v1/search-home",
+          "rankBasis": "platform-explicit-search-rank"
+        }
+      ],
+      "sourceCount": 2,
+      "score": 0.08465608465608465,
+      "rank": 13,
+      "rankingStatus": "ranked"
     },
     {
-      "id": "brown",
-      "label": "Chocolate / coffee brown",
+      "id": "keyword-48d04a221cfdcd0f",
+      "label": "VERSACE",
       "aliases": [
-        "#브라운슈즈",
-        "Chocolate / coffee brown",
-        "chocolate brown shoe",
-        "brown sneaker",
-        "coffee brown",
-        "브라운 스니커즈",
-        "초콜릿 브라운"
+        "VERSACE",
+        "Versace"
       ],
-      "sourceTypes": [],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "VERSACE",
+          "rank": 13,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.07692307692307693,
+      "rank": 14,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-4498ad20066fc690",
+      "label": "BOTTEGA VENETA",
+      "aliases": [
+        "BOTTEGA VENETA",
+        "Bottega Veneta",
+        "보테가베네타",
+        "보테가 베네타"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "BOTTEGA VENETA",
+          "rank": 14,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.07142857142857142,
+      "rank": 15,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-f0a89ab7ed98f675",
+      "label": "CELINE",
+      "aliases": [
+        "CELINE",
+        "Celine",
+        "셀린느",
+        "셀린"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "CELINE",
+          "rank": 15,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.06666666666666667,
+      "rank": 16,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-0245e58e04ae21f1",
+      "label": "MONCLER",
+      "aliases": [
+        "MONCLER",
+        "Moncler",
+        "몽클레르",
+        "몽클레어"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "MONCLER",
+          "rank": 16,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.0625,
+      "rank": 17,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-cc269bbe32a7462c",
+      "label": "LOEWE",
+      "aliases": [
+        "LOEWE",
+        "Loewe",
+        "로에베"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "LOEWE",
+          "rank": 17,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.058823529411764705,
+      "rank": 18,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-c77ae21f17a45504",
+      "label": "JACQUEMUS",
+      "aliases": [
+        "JACQUEMUS",
+        "Jacquemus"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "JACQUEMUS",
+          "rank": 19,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.05263157894736842,
+      "rank": 19,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-ff744b58bbbdd2ee",
+      "label": "STONE ISLAND",
+      "aliases": [
+        "STONE ISLAND",
+        "Stone Island"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "lyst",
+          "term": "STONE ISLAND",
+          "rank": 20,
+          "sourceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "verified": true,
+          "kind": "composite-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": "Q2 2026",
+          "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+          "sourceUpdatedAt": "2026-06-30",
+          "scope": "brand-popularity",
+          "country": "Global",
+          "platformName": "Lyst Index",
+          "sourceTitle": "Hottest Brands",
+          "contentHash": "49bcd66aeb4f088a16abaa78be367f54eb6b58ce284543cf6f353422bfe16392",
+          "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+          "validUntil": "2026-12-27",
+          "validityBasis": "공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내",
+          "evidenceUrl": "https://www.lyst.com/the-lyst-index/Q2-26/",
+          "rankBasis": "platform-explicit-quarterly-brand-rank",
+          "metric": "quarterly-brand-popularity",
+          "latestPeriodVerified": true,
+          "reportId": "lyst:Q2-26",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.05,
+      "rank": 20,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-ca7de5aa02c24871",
+      "label": "신발",
+      "aliases": [
+        "신발",
+        "슈즈",
+        "shoe",
+        "shoes",
+        "footwear"
+      ],
+      "productIds": [
+        "daily-20260915-nike-air-foamposite-pro-im5204-001",
+        "daily-20260915-nike-sb-af1-yuto-io8439-100",
+        "daily-20260915-nike-tennis-centre-kallmeyer-iw4737-104",
+        "daily-20260916-converse-palmes-green-a24756c",
+        "daily-20260916-converse-palmes-navy-a24786c",
+        "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
+        "new-20260923-f28d3395e6c72a4a",
+        "official-nike-iq5495-005",
+        "official-nike-ir0088-001",
+        "official-nike-iv5678-102",
+        "official-nike-ix8478-410",
+        "official-salomon-l49210700",
+        "official-salomon-l49210800",
+        "official-salomon-l49211100",
+        "official-salomon-l49213200",
+        "official-salomon-l49213700",
+        "official-salomon-l49214800",
+        "official-salomon-l49215200",
+        "official-salomon-l49215400",
+        "official-salomon-l49302000",
+        "verified-adidas-kj7669",
+        "verified-new-balance-mfcx8e5",
+        "verified-new-balance-mrebx4fh",
+        "verified-new-balance-mt24yj",
+        "verified-new-balance-u1300ss",
+        "verified-new-balance-u18902uh",
+        "verified-new-balance-u20001k7",
+        "verified-new-balance-u204v2pt",
+        "verified-new-balance-u204v2w0",
+        "verified-new-balance-u7406ak",
+        "verified-new-balance-u7507a0",
+        "verified-new-balance-u90608ol",
+        "verified-new-balance-u90609bo",
+        "verified-new-balance-u990bg4",
+        "verified-new-balance-u990br4",
+        "verified-new-balance-u990lv4",
+        "verified-new-balance-u991wl2",
+        "verified-new-balance-u993mo",
+        "verified-new-balance-ugtr4dy",
+        "verified-new-balance-w327apc",
+        "verified-new-balance-wfcx1yq",
+        "verified-new-balance-wrebx38s",
+        "verified-nike-ir0968-500",
+        "verified-puma-406687-01",
+        "verified-puma-406687-02"
+      ],
+      "matchedProductCount": 45,
+      "sourceRanks": [
+        {
+          "platform": "musinsa",
+          "term": "신발",
+          "rank": 22,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.045454545454545456,
+      "rank": 21,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-6e4f7b570adb85ff",
+      "label": "뉴발란스",
+      "aliases": [
+        "뉴발란스",
+        "New Balance",
+        "뉴발",
+        "newbalance",
+        "nb"
+      ],
       "productIds": [
         "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
+        "verified-new-balance-mfcx8e5",
+        "verified-new-balance-mrebx4fh",
+        "verified-new-balance-mt24yj",
+        "verified-new-balance-u1300ss",
+        "verified-new-balance-u18902uh",
+        "verified-new-balance-u20001k7",
+        "verified-new-balance-u204v2pt",
+        "verified-new-balance-u204v2w0",
+        "verified-new-balance-u7406ak",
+        "verified-new-balance-u7507a0",
+        "verified-new-balance-u90608ol",
+        "verified-new-balance-u90609bo",
+        "verified-new-balance-u990bg4",
+        "verified-new-balance-u990br4",
+        "verified-new-balance-u990lv4",
+        "verified-new-balance-u991wl2",
+        "verified-new-balance-u993mo",
+        "verified-new-balance-ugtr4dy",
+        "verified-new-balance-w327apc",
+        "verified-new-balance-wfcx1yq",
+        "verified-new-balance-wrebx38s"
+      ],
+      "matchedProductCount": 22,
+      "sourceRanks": [
+        {
+          "platform": "musinsa",
+          "term": "뉴발란스",
+          "rank": 30,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.03333333333333333,
+      "rank": 22,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-17d351a3a6905cfa",
+      "label": "아식스",
+      "aliases": [
+        "아식스",
+        "ASICS"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "musinsa",
+          "term": "아식스",
+          "rank": 32,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.03125,
+      "rank": 23,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-8fda45e90bc5e459",
+      "label": "챔피온",
+      "aliases": [
+        "챔피온"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "musinsa",
+          "term": "챔피온",
+          "rank": 39,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.02564102564102564,
+      "rank": 24,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-e4930fb819d8601b",
+      "label": "푸마",
+      "aliases": [
+        "푸마",
+        "PUMA",
+        "퓨마"
+      ],
+      "productIds": [
+        "verified-puma-406687-01",
         "verified-puma-406687-02"
       ],
       "matchedProductCount": 2,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "sourceRanks": [
+        {
+          "platform": "musinsa",
+          "term": "푸마",
+          "rank": 41,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.024390243902439025,
+      "rank": 25,
+      "rankingStatus": "ranked"
     },
     {
-      "id": "sneaker-mule",
-      "label": "Sneaker mules / smules",
+      "id": "keyword-030aa9428d71537c",
+      "label": "운동화",
       "aliases": [
-        "#스니커뮬",
-        "Sneaker mules / smules",
-        "sneaker mule",
-        "sneaker mules",
-        "smule",
-        "smules",
-        "스니커 뮬",
-        "스니커뮬"
+        "운동화",
+        "스니커즈",
+        "스니커",
+        "sneaker",
+        "sneakers"
       ],
-      "sourceTypes": [],
-      "productIds": [],
-      "matchedProductCount": 0,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
-    },
-    {
-      "id": "animal-print",
-      "label": "Animal print / cow / leopard",
-      "aliases": [
-        "#애니멀프린트",
-        "Animal print / cow / leopard",
-        "animal print",
-        "cow print",
-        "leopard sneaker",
-        "leopard shoe",
-        "애니멀 프린트",
-        "카우 프린트",
-        "레오파드"
-      ],
-      "sourceTypes": [],
-      "productIds": [],
-      "matchedProductCount": 0,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
-    },
-    {
-      "id": "jelly",
-      "label": "Jelly shoes / jelly sandals",
-      "aliases": [
-        "#젤리슈즈",
-        "Jelly shoes / jelly sandals",
-        "jelly shoe",
-        "jelly sandal",
-        "젤리 슈즈",
-        "젤리 샌들"
-      ],
-      "sourceTypes": [],
-      "productIds": [],
-      "matchedProductCount": 0,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
-    },
-    {
-      "id": "trail-gorpcore",
-      "label": "Trail / technical gorpcore",
-      "aliases": [
-        "#고프코어",
-        "Trail / technical gorpcore",
-        "gorpcore",
-        "trail sneaker",
-        "trail runner",
-        "approach shoe",
-        "technical sneaker",
-        "고프코어",
-        "트레일 러닝",
-        "트레일러닝"
-      ],
-      "sourceTypes": [],
       "productIds": [
-        "official-salomon-l49210800",
-        "official-salomon-l49302000",
-        "official-salomon-l49210700",
-        "official-salomon-l49215400",
-        "official-salomon-l49215200",
-        "official-salomon-l49214800",
-        "verified-new-balance-mt24yj"
-      ],
-      "matchedProductCount": 7,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
-    },
-    {
-      "id": "suede",
-      "label": "Suede sneakers",
-      "aliases": [
-        "#스웨이드",
-        "Suede sneakers",
-        "suede sneaker",
-        "suede trainer",
-        "스웨이드 스니커즈",
-        "스웨이드 러너"
-      ],
-      "sourceTypes": [],
-      "productIds": [
-        "official-nike-ix8478-410",
-        "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
+        "daily-20260915-nike-air-foamposite-pro-im5204-001",
+        "daily-20260915-nike-sb-af1-yuto-io8439-100",
         "daily-20260915-nike-tennis-centre-kallmeyer-iw4737-104",
+        "daily-20260916-converse-palmes-green-a24756c",
         "daily-20260916-converse-palmes-navy-a24786c",
+        "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
+        "new-20260923-f28d3395e6c72a4a",
+        "official-nike-iq5495-005",
+        "official-nike-ir0088-001",
+        "official-nike-iv5678-102",
+        "official-nike-ix8478-410",
+        "official-salomon-l49210700",
+        "official-salomon-l49210800",
+        "official-salomon-l49211100",
+        "official-salomon-l49213200",
+        "official-salomon-l49213700",
+        "official-salomon-l49214800",
+        "official-salomon-l49215200",
+        "official-salomon-l49215400",
+        "official-salomon-l49302000",
+        "verified-adidas-kj7669",
+        "verified-new-balance-mfcx8e5",
+        "verified-new-balance-mrebx4fh",
+        "verified-new-balance-mt24yj",
         "verified-new-balance-u1300ss",
+        "verified-new-balance-u18902uh",
+        "verified-new-balance-u20001k7",
+        "verified-new-balance-u204v2pt",
+        "verified-new-balance-u204v2w0",
+        "verified-new-balance-u7406ak",
+        "verified-new-balance-u7507a0",
         "verified-new-balance-u90608ol",
+        "verified-new-balance-u90609bo",
+        "verified-new-balance-u990bg4",
+        "verified-new-balance-u990br4",
         "verified-new-balance-u990lv4",
-        "verified-new-balance-u993mo",
         "verified-new-balance-u991wl2",
+        "verified-new-balance-u993mo",
         "verified-new-balance-ugtr4dy",
         "verified-new-balance-w327apc",
-        "verified-new-balance-u204v2w0",
+        "verified-new-balance-wfcx1yq",
+        "verified-new-balance-wrebx38s",
+        "verified-nike-ir0968-500",
+        "verified-puma-406687-01",
+        "verified-puma-406687-02"
+      ],
+      "matchedProductCount": 45,
+      "sourceRanks": [
+        {
+          "platform": "musinsa",
+          "term": "운동화",
+          "rank": 49,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.02040816326530612,
+      "rank": 26,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-73867477ae54ac97",
+      "label": "반스",
+      "aliases": [
+        "반스",
+        "Vans"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "musinsa",
+          "term": "반스",
+          "rank": 69,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.014492753623188406,
+      "rank": 27,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-1909e08af689ff20",
+      "label": "미즈노",
+      "aliases": [
+        "미즈노",
+        "Mizuno"
+      ],
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "musinsa",
+          "term": "미즈노",
+          "rank": 89,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.011235955056179775,
+      "rank": 28,
+      "rankingStatus": "ranked"
+    },
+    {
+      "id": "keyword-a6c8bd189cfc097e",
+      "label": "러닝화",
+      "aliases": [
+        "러닝화",
+        "런닝화",
+        "running shoe",
+        "running shoes",
+        "running trainer",
+        "running trainers"
+      ],
+      "productIds": [
+        "official-salomon-l49210700",
+        "official-salomon-l49210800",
+        "official-salomon-l49214800",
+        "official-salomon-l49215200",
+        "official-salomon-l49215400",
+        "official-salomon-l49302000",
+        "verified-new-balance-mfcx8e5",
+        "verified-new-balance-mrebx4fh",
+        "verified-new-balance-u1300ss",
+        "verified-new-balance-u20001k7",
         "verified-new-balance-u204v2pt",
-        "verified-new-balance-u90609bo"
+        "verified-new-balance-u204v2w0",
+        "verified-new-balance-u7406ak",
+        "verified-new-balance-u990bg4",
+        "verified-new-balance-u990br4",
+        "verified-new-balance-u990lv4",
+        "verified-new-balance-u993mo",
+        "verified-new-balance-w327apc",
+        "verified-new-balance-wfcx1yq",
+        "verified-new-balance-wrebx38s"
       ],
-      "matchedProductCount": 14,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
-    },
+      "matchedProductCount": 20,
+      "sourceRanks": [
+        {
+          "platform": "musinsa",
+          "term": "러닝화",
+          "rank": 99,
+          "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
+          "verified": true,
+          "kind": "search-rank",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+          "sourceUpdatedAt": "09.28 14:40, 기준",
+          "scope": "all",
+          "country": "KR",
+          "platformName": "무신사",
+          "sourceTitle": "인기 검색어",
+          "contentHash": "2113c2b3a96a7d2d5a4ddafc4b59238417d3e61efd8b135dcc3c96dfe086d12c",
+          "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+          "rankBasis": "official-numbered-search-list"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0.010101010101010102,
+      "rank": 29,
+      "rankingStatus": "ranked"
+    }
+  ],
+  "forecastKeywords": [
     {
-      "id": "recovery-sandal",
-      "label": "Minimal / recovery sandals",
+      "id": "forecast-359746927fd8aa30",
+      "label": "Clay",
       "aliases": [
-        "#샌들",
-        "Minimal / recovery sandals",
-        "minimal sandal",
-        "minimalist sandal",
-        "recovery sandal",
-        "sport sandal",
-        "thong sandal",
-        "flip-flop",
-        "flip flop",
-        "샌들",
-        "리커버리 샌들",
-        "조리"
+        "Clay",
+        "클레이"
       ],
-      "sourceTypes": [],
       "productIds": [],
       "matchedProductCount": 0,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
+      "sourceRanks": [
+        {
+          "platform": "wgsn-ss27-colours",
+          "term": "Clay",
+          "rank": null,
+          "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+          "verified": true,
+          "kind": "forecast-keyword",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "wgsn-ss27-colours:2026-09-28T06:04:27.964Z:9978f95996ebfed9",
+          "scope": "fashion-colour-forecast",
+          "platformName": "WGSN",
+          "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+          "forecastPeriod": "S/S 2027",
+          "validUntil": "2027-08-31",
+          "validityBasis": "season-end-policy",
+          "publishedAt": "2025-07-18",
+          "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+          "verificationMethod": "public-source-fetch",
+          "automatedStatus": "available",
+          "verifiedAt": "2026-09-28T06:04:27.964Z",
+          "applicability": "cross-category"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0,
       "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "rankingStatus": "forecast"
     },
     {
-      "id": "clog",
-      "label": "Clogs / open-back comfort",
+      "id": "forecast-4d2175cdefb875c8",
+      "label": "Pop Pink",
       "aliases": [
-        "#클로그",
-        "Clogs / open-back comfort",
-        "clog",
-        "clogs",
-        "클로그",
-        "에코 클로그",
-        "retro clog"
+        "Pop Pink",
+        "팝 핑크"
       ],
-      "sourceTypes": [],
       "productIds": [],
       "matchedProductCount": 0,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
+      "sourceRanks": [
+        {
+          "platform": "wgsn-ss27-colours",
+          "term": "Pop Pink",
+          "rank": null,
+          "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+          "verified": true,
+          "kind": "forecast-keyword",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "wgsn-ss27-colours:2026-09-28T06:04:27.964Z:9978f95996ebfed9",
+          "scope": "fashion-colour-forecast",
+          "platformName": "WGSN",
+          "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+          "forecastPeriod": "S/S 2027",
+          "validUntil": "2027-08-31",
+          "validityBasis": "season-end-policy",
+          "publishedAt": "2025-07-18",
+          "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+          "verificationMethod": "public-source-fetch",
+          "automatedStatus": "available",
+          "verifiedAt": "2026-09-28T06:04:27.964Z",
+          "applicability": "cross-category"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0,
       "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "rankingStatus": "forecast"
     },
     {
-      "id": "canvas",
-      "label": "Canvas sneakers",
+      "id": "forecast-a7d9211d2d11906a",
+      "label": "Luminous Blue",
       "aliases": [
-        "#캔버스스니커즈",
-        "Plain canvas sneakers",
-        "canvas sneaker",
-        "canvas shoe",
-        "plain sneaker",
-        "캔버스 스니커즈",
-        "캔버스 슈즈"
+        "Luminous Blue",
+        "루미너스 블루"
       ],
-      "sourceTypes": [],
-      "productIds": [
-        "daily-20260916-converse-palmes-green-a24756c",
-        "verified-new-balance-u7507a0"
-      ],
-      "matchedProductCount": 2,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
-    },
-    {
-      "id": "skate-y2k",
-      "label": "Skater / Y2K sneakers",
-      "aliases": [
-        "#스케이터스니커즈",
-        "Skater / Y2K sneakers",
-        "skater sneaker",
-        "skate shoe",
-        "Y2K sneaker",
-        "checkerboard sneaker",
-        "스케이터 스니커즈",
-        "스케이트 슈즈"
-      ],
-      "sourceTypes": [],
-      "productIds": [
-        "daily-20260915-nike-sb-af1-yuto-io8439-100"
-      ],
-      "matchedProductCount": 1,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
-      "rank": null,
-      "rankingStatus": "awaiting-evidence"
-    },
-    {
-      "id": "platform",
-      "label": "Platforms / flatforms",
-      "aliases": [
-        "#플랫폼슈즈",
-        "Platforms / flatforms",
-        "platform sneaker",
-        "platform sandal",
-        "platform shoes",
-        "flatform",
-        "platform sole",
-        "플랫폼 슈즈",
-        "플랫폼 스니커즈",
-        "플랫폼 샌들"
-      ],
-      "sourceTypes": [],
       "productIds": [],
       "matchedProductCount": 0,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
+      "sourceRanks": [
+        {
+          "platform": "wgsn-ss27-colours",
+          "term": "Luminous Blue",
+          "rank": null,
+          "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+          "verified": true,
+          "kind": "forecast-keyword",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "wgsn-ss27-colours:2026-09-28T06:04:27.964Z:9978f95996ebfed9",
+          "scope": "fashion-colour-forecast",
+          "platformName": "WGSN",
+          "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+          "forecastPeriod": "S/S 2027",
+          "validUntil": "2027-08-31",
+          "validityBasis": "season-end-policy",
+          "publishedAt": "2025-07-18",
+          "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+          "verificationMethod": "public-source-fetch",
+          "automatedStatus": "available",
+          "verifiedAt": "2026-09-28T06:04:27.964Z",
+          "applicability": "cross-category"
+        }
+      ],
+      "sourceCount": 1,
+      "score": 0,
       "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "rankingStatus": "forecast"
     },
     {
-      "id": "mary-jane",
-      "label": "Mary Jane sneakers / hybrids",
+      "id": "forecast-abebb2cf440d4b9c",
+      "label": "Meadowland Green",
       "aliases": [
-        "#메리제인",
-        "Mary Jane sneakers / flats",
-        "mary jane sneaker",
-        "mary jane flat",
-        "mary jane",
-        "메리제인",
-        "메리 제인"
+        "Meadowland Green",
+        "메도랜드 그린"
       ],
-      "sourceTypes": [],
-      "productIds": [
-        "verified-new-balance-mt24yj"
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "wgsn-ss27-colours",
+          "term": "Meadowland Green",
+          "rank": null,
+          "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+          "verified": true,
+          "kind": "forecast-keyword",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "wgsn-ss27-colours:2026-09-28T06:04:27.964Z:9978f95996ebfed9",
+          "scope": "fashion-colour-forecast",
+          "platformName": "WGSN",
+          "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+          "forecastPeriod": "S/S 2027",
+          "validUntil": "2027-08-31",
+          "validityBasis": "season-end-policy",
+          "publishedAt": "2025-07-18",
+          "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+          "verificationMethod": "public-source-fetch",
+          "automatedStatus": "available",
+          "verifiedAt": "2026-09-28T06:04:27.964Z",
+          "applicability": "footwear-explicit"
+        }
       ],
-      "matchedProductCount": 1,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
+      "sourceCount": 1,
+      "score": 0,
       "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "rankingStatus": "forecast"
     },
     {
-      "id": "satin-velvet",
-      "label": "Satin / velvet feminine sneakers",
+      "id": "forecast-eabc16ddb9def9f8",
+      "label": "Energy Orange",
       "aliases": [
-        "#새틴스니커즈",
-        "Satin / velvet feminine sneakers",
-        "satin sneaker",
-        "velvet sneaker",
-        "새틴 스니커즈",
-        "벨벳 스니커즈"
+        "Energy Orange",
+        "에너지 오렌지"
       ],
-      "sourceTypes": [],
-      "productIds": [
-        "official-nike-ix8478-410"
+      "productIds": [],
+      "matchedProductCount": 0,
+      "sourceRanks": [
+        {
+          "platform": "wgsn-ss27-colours",
+          "term": "Energy Orange",
+          "rank": null,
+          "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+          "verified": true,
+          "kind": "forecast-keyword",
+          "capturedAt": "2026-09-28T06:04:27.964Z",
+          "rankingPeriod": null,
+          "snapshotId": "wgsn-ss27-colours:2026-09-28T06:04:27.964Z:9978f95996ebfed9",
+          "scope": "fashion-colour-forecast",
+          "platformName": "WGSN",
+          "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+          "forecastPeriod": "S/S 2027",
+          "validUntil": "2027-08-31",
+          "validityBasis": "season-end-policy",
+          "publishedAt": "2025-07-18",
+          "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+          "verificationMethod": "public-source-fetch",
+          "automatedStatus": "available",
+          "verifiedAt": "2026-09-28T06:04:27.964Z",
+          "applicability": "sports-and-outdoor"
+        }
       ],
-      "matchedProductCount": 1,
-      "evidenceProductIds": [],
-      "productCount": 0,
-      "previousProductCount": 0,
-      "growth": 0,
+      "sourceCount": 1,
+      "score": 0,
       "rank": null,
-      "rankingStatus": "awaiting-evidence"
+      "rankingStatus": "forecast"
+    }
+  ],
+  "searchRankStatus": [
+    {
+      "platform": "musinsa",
+      "name": "무신사",
+      "url": "https://www.musinsa.com/main/musinsa/recommend",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "reason": null,
+      "count": 100,
+      "sourceUpdatedAt": "09.28 14:40, 기준",
+      "rankingPeriod": null,
+      "snapshotId": "musinsa:2026-09-28T06:04:27.964Z:2113c2b3a96a7d2d",
+      "kind": "search-rank",
+      "country": "KR"
+    },
+    {
+      "platform": "29cm",
+      "name": "29CM",
+      "url": "https://www.29cm.co.kr/store/search/start",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "reason": null,
+      "count": 30,
+      "sourceUpdatedAt": "09.28 기준",
+      "rankingPeriod": null,
+      "snapshotId": "29cm:2026-09-28T06:04:27.964Z:6f37cce392af4f18",
+      "kind": "search-rank",
+      "country": "KR"
+    },
+    {
+      "platform": "tiktok",
+      "name": "TikTok Creative Center",
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?region=KR&period=7",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "reason": null,
+      "count": 3,
+      "sourceUpdatedAt": null,
+      "rankingPeriod": "7 days",
+      "snapshotId": "tiktok:2026-09-28T06:04:27.964Z:ed0c0d5fe23ceede",
+      "kind": "hashtag-rank",
+      "country": "KR"
+    },
+    {
+      "platform": "tagwalk",
+      "name": "Tagwalk",
+      "url": "https://www2.tag-walk.com/es/",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "reason": null,
+      "count": 5,
+      "sourceUpdatedAt": "2026-09-27",
+      "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
+      "snapshotId": "tagwalk:2026-09-28T06:04:27.964Z:96b7c899ea6c7d8a",
+      "kind": "composite-rank",
+      "country": "Global",
+      "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
+      "periodEnd": "2026-09-27"
+    },
+    {
+      "platform": "lyst",
+      "name": "Lyst Index",
+      "url": "https://www.lyst.com/the-lyst-index/Q2-26/",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "reason": null,
+      "count": 20,
+      "sourceUpdatedAt": "2026-06-30",
+      "rankingPeriod": "Q2 2026",
+      "snapshotId": "lyst:2026-09-28T06:04:27.964Z:49bcd66aeb4f088a",
+      "kind": "composite-rank",
+      "country": "Global",
+      "reportId": "lyst:Q2-26",
+      "periodEnd": "2026-06-30"
+    },
+    {
+      "platform": "instagram",
+      "name": "Instagram",
+      "url": "https://about.instagram.com/blog/announcements/break-down-how-instagram-search-works",
+      "kind": "search-rank",
+      "status": "unavailable",
+      "reason": "공개 검증 가능한 검색순위 미확보",
+      "checkedAt": "2026-09-28"
+    },
+    {
+      "platform": "thesneakernewsletter.com",
+      "name": "The Sneaker Newsletter",
+      "url": "https://www.thesneakernewsletter.com/",
+      "kind": "search-popular",
+      "status": "unavailable",
+      "reason": "공개 인기 검색어·검색순위 미확보",
+      "checkedAt": "2026-09-28"
+    },
+    {
+      "platform": "thedassler.substack.com",
+      "name": "The Dassler",
+      "url": "https://thedassler.substack.com/",
+      "kind": "search-popular",
+      "status": "unavailable",
+      "reason": "공개 인기 검색어·검색순위 미확보",
+      "checkedAt": "2026-09-28"
+    },
+    {
+      "platform": "wgsn",
+      "name": "WGSN",
+      "url": "https://www.wgsn.com/",
+      "kind": "forecast-keyword",
+      "status": "unavailable",
+      "reason": "미래예측 원문 확인 대상",
+      "checkedAt": "2026-09-28"
+    },
+    {
+      "platform": "f-trend",
+      "name": "F-Trend",
+      "url": "https://f-trend.com/",
+      "kind": "forecast-keyword",
+      "status": "unavailable",
+      "reason": "공개 검증 가능한 미래예측 키워드 미확보",
+      "checkedAt": "2026-09-28"
+    },
+    {
+      "platform": "trendstop",
+      "name": "Trendstop",
+      "url": "https://www.trendstop.com/",
+      "kind": "forecast-keyword",
+      "status": "unavailable",
+      "reason": "공개 검증 가능한 미래예측 키워드 미확보",
+      "checkedAt": "2026-09-28"
+    },
+    {
+      "platform": "trendhunter",
+      "name": "TrendHunter",
+      "url": "https://www.trendhunter.com/shoes",
+      "kind": "editorial-keyword",
+      "status": "unavailable",
+      "reason": "공개 풋웨어 기사 확인 대상 · 원문 인기순위 미공개",
+      "checkedAt": "2026-09-28"
+    },
+    {
+      "platform": "sneakerfreaker.com",
+      "name": "Sneaker Freaker",
+      "url": "https://www.sneakerfreaker.com/",
+      "kind": "editorial-keyword",
+      "status": "unavailable",
+      "reason": "공개 풋웨어 기사 확인 대상 · 원문 인기순위 미공개",
+      "checkedAt": "2026-09-28"
+    },
+    {
+      "platform": "xiaohongshu",
+      "name": "Xiaohongshu",
+      "url": "https://www.xiaohongshu.com/",
+      "kind": "search-rank",
+      "status": "unavailable",
+      "reason": "공개 검증 가능한 검색·스타일 순위 미확보",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "forecastStatus": [
+    {
+      "platform": "wgsn-ss27-colours",
+      "name": "WGSN",
+      "url": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "validUntil": "2027-08-31",
+      "forecastPeriod": "S/S 2027",
+      "status": "available",
+      "automatedStatus": "available",
+      "verificationMethod": "public-source-fetch",
+      "verifiedAt": "2026-09-28T06:04:27.964Z",
+      "count": 5,
+      "reason": null
+    },
+    {
+      "platform": "f-trend",
+      "name": "F-Trend",
+      "url": "https://f-trend.com/",
+      "status": "unsupported",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "reason": "공개 전망 원문을 검증하지 못했습니다. 회원 전용 본문은 사용하지 않습니다."
+    },
+    {
+      "platform": "trendstop",
+      "name": "Trendstop",
+      "url": "https://www.trendstop.com/",
+      "status": "unsupported",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "reason": "공개 전망 원문을 검증하지 못했습니다. 회원 전용 본문은 사용하지 않습니다."
+    },
+    {
+      "platform": "wgsn-other",
+      "name": "WGSN 기타 전망",
+      "url": "https://www.wgsn.com/",
+      "status": "unsupported",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "reason": "검토한 공개 S/S27 색상 글 외 유료 보고서는 사용하지 않습니다."
+    }
+  ],
+  "editorialStatus": [
+    {
+      "platform": "sneakerbardetroit.com",
+      "name": "Sneaker Bar Detroit",
+      "url": "https://sneakerbardetroit.com/",
+      "kind": "editorial-keyword",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "count": 0,
+      "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
+    },
+    {
+      "platform": "hypebeast.com",
+      "name": "Hypebeast",
+      "url": "https://hypebeast.com/footwear",
+      "kind": "editorial-keyword",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "count": 0,
+      "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
+    },
+    {
+      "platform": "highsnobiety.com",
+      "name": "Highsnobiety",
+      "url": "https://www.highsnobiety.com/",
+      "kind": "editorial-keyword",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "count": 0,
+      "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
+    },
+    {
+      "platform": "sneakernews.com",
+      "name": "Sneaker News",
+      "url": "https://sneakernews.com/",
+      "kind": "editorial-keyword",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "count": 0,
+      "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
+    },
+    {
+      "platform": "thesneakernewsletter.com",
+      "name": "The Sneaker Newsletter",
+      "url": "https://www.thesneakernewsletter.com/",
+      "kind": "editorial-keyword",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "count": 0,
+      "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
+    },
+    {
+      "platform": "thedassler.substack.com",
+      "name": "The Dassler",
+      "url": "https://thedassler.substack.com/",
+      "kind": "editorial-keyword",
+      "checkedAt": "2026-09-28T06:04:27.964Z",
+      "status": "available",
+      "count": 0,
+      "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
     }
   ],
   "sourceDirectory": {

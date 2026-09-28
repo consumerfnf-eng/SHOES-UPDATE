@@ -1,5 +1,5 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes } from './export.mjs';
-import { kstToday, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext } from './catalog-view.mjs';
+import { kstToday, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords } from './catalog-view.mjs';
 
 const $ = id => document.getElementById(id);
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -34,7 +34,7 @@ async function loadCatalog() {
     const value = await response.json();
     if (value.schemaVersion !== 1 || !Array.isArray(value.products) || !Array.isArray(value.brands) || !Array.isArray(value.keywords)) throw new Error('Invalid snapshot');
     catalog = value;
-    products = value.products.filter(p => p && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string').map(p => ({...p,keywords:[...(p.keywords||[]),...value.keywords.filter(k=>k.productIds?.includes(p.id)).flatMap(k=>[k.label,...(k.aliases||[])])]}));
+    products = value.products.filter(p => p && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string').map(p => ({...p,keywords:[...(p.keywords||[]),...[...value.keywords,...(value.forecastKeywords||[])].filter(k=>k.productIds?.includes(p.id)).flatMap(k=>[k.label,...(k.aliases||[])])]}));
     const collection = value.sourceStatus?.lastSuccessfulCollectionAt;
     $('update-label').textContent = collection ? `${dateText(collection, true)} 수집 완료` : value.publishedAt ? `${dateText(value.publishedAt, true)} 게시` : '첫 검증 완료본 게시 대기';
     const unavailable = value.sourceStatus?.unavailableBrands || [];
@@ -68,18 +68,38 @@ function renderBrands() {
   $('brand-list').querySelectorAll('input').forEach(input => input.addEventListener('change', () => { input.checked ? state.brands.add(input.dataset.brand) : state.brands.delete(input.dataset.brand); state.page=1; render(); }));
 }
 function renderKeywords() {
-  const keywords = (catalog?.keywords || []).filter(k => k.label && Array.isArray(k.productIds));
-  $('keyword-list').innerHTML = keywords.length ? keywords.map((k,i) => {
-    const ranked=Number.isInteger(k.rank)&&k.rank>0, matched=keywordProductIds(k,products,today).size;
-    return `<button class="keyword ${state.keywordId===k.id?'active':''}" data-keyword="${i}" aria-pressed="${state.keywordId===k.id}" aria-label="${esc(k.label)} 관련 상품 ${matched}개"><span class="rank ${ranked?'':'unranked'}" aria-label="${ranked?k.rank+'위':'인기 근거 대기'}">${ranked?esc(k.rank):'—'}</span><span class="keyword-copy"><span class="keyword-name">${esc(k.label)}</span><span class="keyword-evidence">${ranked?'최근 7일 근거 '+esc(k.productCount||0)+'개 모델':'인기 근거 대기'}</span></span><span class="count"><strong>${matched}</strong><span>상품</span></span></button>`;
-  }).join('') : '<p class="muted">표시할 키워드가 아직 없습니다.</p>';
-  $('keyword-list').querySelectorAll('button').forEach(button => button.addEventListener('click', () => {
-    const k = keywords[Number(button.dataset.keyword)];
-    clearTimeout(searchTimer);
-    Object.assign(state,{search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'all',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
-    syncFilterControls();renderBrands();renderKeywords();render();
-    $('results').scrollIntoView({block:'start'});$('results').focus({preventScroll:true});
-  }));
+  const statuses=[...(catalog?.searchRankStatus||[]),...(catalog?.editorialStatus||[])], current=trendKeywords(catalog?.keywords||[]), forecasts=trendKeywords(catalog?.forecastKeywords||[],{forecast:true});
+  const platformName=platform=>[...statuses,...(catalog?.forecastStatus||[])].find(s=>s.platform===platform)?.name||platform;
+  const applicabilityNames={'cross-category':'여러 상품군에 적용되는 색상 전망','sports-and-outdoor':'원문에서 스포츠·아웃도어 적용 언급','footwear-explicit':'원문에서 풋웨어 적용을 직접 언급'};
+  const kindNames={'search-rank':'검색','search-popular':'인기 검색어','composite-rank':'복합 인기','hashtag-rank':'해시태그','editorial-keyword':'매체 추천','forecast-keyword':'미래 전망'};
+  function renderList(target,keywords,forecast=false) {
+    $(target).innerHTML=keywords.length?keywords.map((k,i)=>{
+      const matched=keywordProductIds(k,products,today).size,originals=[...new Set(k.sourceRanks.map(s=>s.term))].filter(term=>term!==k.label);
+      const sources=k.sourceRanks.map(s=>{
+        const type=s.kind==='composite-rank'?(/traffic|트래픽|방문|조회/.test([s.metric,s.rankingDefinition].join(' '))?'트래픽':'복합'):s.kind==='forecast-keyword'?'전망':kindNames[s.kind];
+        return `<a href="${esc(safeUrl(s.sourceUrl))}" target="_blank" rel="noopener noreferrer" title="원문: ${esc(s.term)}" aria-label="${esc(platformName(s.platform))} 원문 ${esc(s.term)} · ${kindNames[s.kind]} ${s.rank===null?'원순위 미공개':esc(s.rank)+'위'}">${esc(platformName(s.platform))} · ${type}${s.rank===null?(forecast?'':' · 순위 미공개'):' '+esc(s.rank)+'위'} ↗</a>`;
+      }).join('');
+      const details=k.sourceRanks.map(s=>`<div class="keyword-source-detail"><strong>${esc(platformName(s.platform))} · ${esc(s.term)}</strong><p>${kindNames[s.kind]}${s.rank===null?(forecast?'':' · 원순위 미공개'):' '+esc(s.rank)+'위'} · ${s.country||s.region?esc(s.country||s.region)+' · ':''}${esc(s.forecastPeriod||s.rankingPeriod||'기간 미공개')} · ${esc(dateText(s.capturedAt))} 확인</p>${s.rankingDefinition||s.metric||applicabilityNames[s.applicability]?`<p>${[...new Set([s.rankingDefinition,s.metric,applicabilityNames[s.applicability]].filter(Boolean))].map(esc).join(' · ')}</p>`:''}</div>`).join('');
+      return `<article class="keyword search-keyword ${state.keywordId===k.id?'active':''}"><button class="keyword-select" data-keyword="${i}" aria-pressed="${state.keywordId===k.id}" aria-label="${esc(k.label)} 관련 상품 ${matched}개"><span class="rank ${k.rank===null?'unranked':''}" aria-label="${forecast?'미래 전망 참고':k.rank===null?'원순위 미공개':'종합 '+k.rank+'위'}">${forecast?'↗':k.rank??'—'}</span><span class="keyword-copy"><span class="keyword-name">${esc(k.label)}</span>${!forecast&&k.rank===null?'<span class="keyword-evidence">원순위 미공개</span>':''}</span><span class="count"><strong>${matched}</strong><span>상품</span></span></button><div class="keyword-sources" aria-label="${forecast?'전망 원문':'출처별 원순위'}">${sources}</div><details class="keyword-source-details"><summary>출처 상세</summary>${originals.length?`<p class="keyword-originals">다른 원문 표기: ${originals.map(esc).join(' · ')}</p>`:''}${details}</details></article>`;
+    }).join(''):`<p class="keyword-empty">${forecast?'확인된 미래 트렌드 원문이 아직 없습니다.':'확인된 신발 관련 인기 키워드가 아직 없습니다. 공개 순위 또는 공식 인기 키워드 원문을 확인한 뒤 표시합니다.'}</p>`;
+    $(target).querySelectorAll('.keyword-select').forEach(button=>button.addEventListener('click',()=>{
+      const k=keywords[Number(button.dataset.keyword)];clearTimeout(searchTimer);
+      Object.assign(state,{search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'all',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
+      syncFilterControls();renderBrands();renderKeywords();render();$('results').scrollIntoView({block:'start'});$('results').focus({preventScroll:true});
+    }));
+  }
+  renderList('keyword-list',current);renderList('forecast-list',forecasts,true);
+  function renderStatus(target,rows,forecast=false){
+    $(target).innerHTML=`<details class="source-status-details"><summary>${forecast?'전망 원문':'인기 키워드 출처'} 확인 상태${rows.length?' · '+rows.length+'개 항목':''}</summary>${rows.length?`<ul>${rows.map(s=>{
+      const age=Date.now()-Date.parse(s.checkedAt),fresh=forecast?typeof s.validUntil==='string'&&s.validUntil>=today:age>=0&&age<=7*86400000;
+      const retained=forecast&&s.status==='available'&&s.verificationMethod==='reviewed-public-source';
+      const previousCurrent=!forecast&&s.status==='unavailable'&&current.some(k=>k.sourceRanks.some(r=>r.platform===s.platform&&(!s.kind||r.kind===s.kind)));
+      const status=previousCurrent?'최근 확인 자료 유지':fresh&&retained?'검토한 공개 원문 유지':fresh&&s.status==='available'?'공개 원문 확인':fresh&&s.status==='partial'?'일부 원문 확인':forecast?'공개 전망 원문 확인 불가':'공개 순위 확인 불가';
+      const name=s.name||s.platform||'출처',url=safeUrl(s.url);
+      return `<li><span>${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(name)} ↗</a>`:esc(name)}</span><span>${s.kind?esc(kindNames[s.kind]||s.kind)+' · ':''}${status}${s.kind==='editorial-keyword'&&s.count===0?' · 조건 일치 0개':''}</span>${s.reason?`<small>${esc(s.reason)}</small>`:''}</li>`;
+    }).join('')}</ul>`:`<p>공개 ${forecast?'전망 원문':'인기 키워드'}의 출처 확인을 기다리고 있습니다.</p>`}</details>`;
+  }
+  renderStatus('search-rank-status',statuses.filter(s=>s.kind!=='forecast-keyword'));renderStatus('forecast-status',catalog?.forecastStatus||[],true);
 }
 function render() {
   if (!catalog) return;
@@ -193,6 +213,6 @@ $('mobile-brands').addEventListener('click',()=>{const sidebar=document.querySel
 document.addEventListener('click',event=>{if(!event.target.closest('.sidebar')&&!event.target.closest('#mobile-brands')){document.querySelector('.sidebar').classList.remove('open');$('mobile-brands').setAttribute('aria-expanded','false');}});
 document.addEventListener('keydown',event=>{if(event.key==='/'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.target.matches('input,textarea,select')&&!document.querySelector('dialog[open]')){event.preventDefault();$('search').focus();}if(event.key==='Escape'){document.querySelector('.sidebar').classList.remove('open');$('mobile-brands').setAttribute('aria-expanded','false');}});
 // A tab left open overnight must not retain an expired product or selection.
-function refreshDate() { const next=kstToday();if(next!==today){today=next;brandCounts=new Map();products.filter(p=>releaseState(p,today)).forEach(p=>brandCounts.set(p.brand,(brandCounts.get(p.brand)||0)+1));selected=new Set([...selected].filter(id=>products.some(p=>p.id===id&&releaseState(p,today))));renderBrands();renderKeywords();render();if($('detail-dialog').open&&!products.some(p=>p.id===activeDetailId&&releaseState(p,today)))$('detail-dialog').close();} }
+function refreshDate() { if(!catalog)return;const next=kstToday();if(next===today){renderKeywords();return;}if(next!==today){today=next;brandCounts=new Map();products.filter(p=>releaseState(p,today)).forEach(p=>brandCounts.set(p.brand,(brandCounts.get(p.brand)||0)+1));selected=new Set([...selected].filter(id=>products.some(p=>p.id===id&&releaseState(p,today))));renderBrands();renderKeywords();render();if($('detail-dialog').open&&!products.some(p=>p.id===activeDetailId&&releaseState(p,today)))$('detail-dialog').close();} }
 setInterval(refreshDate,60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshDate();});
 renderBrands();loadCatalog();

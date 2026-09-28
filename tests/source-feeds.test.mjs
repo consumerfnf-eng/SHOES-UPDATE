@@ -15,7 +15,7 @@ const rankBody=(items)=>JSON.stringify({meta:{result:'SUCCESS'},data:{modules:[{
 
 test('publisher RSS accepts original dated entries and rejects external, old, future, undated and entity declarations',()=>{
   const result=parseEditorialFeed(feed([{}, {url:'https://other.example/copy'}, {date:'2025-09-27'}, {date:'2027-01-01'}, {date:'unknown'}]),source,{now});
-  assert.equal(result.length,1);assert.equal(result[0].publishedAt,'2026-09-28');assert.match(result[0].text,/breathable mesh/);
+  assert.equal(result.length,1);assert.equal(result[0].publishedAt,'2026-09-28');assert.equal(result[0].publishedAtInstant,'2026-09-27T20:00:00.000Z');assert.match(result[0].text,/breathable mesh/);
   assert.throws(()=>parseEditorialFeed('<html>redirect</html>',source,{now}),/INVALID/);
   assert.throws(()=>parseEditorialFeed('<!DOCTYPE rss [<!ENTITY external SYSTEM "file:///x">]><rss/>',source,{now}),/INVALID/);
 });

@@ -29,7 +29,7 @@ export function parseEditorialFeed(xml,source,{now=new Date()}={}) {
     const published=decodeText(tag(block,'pubDate')||tag(block,'published')).trim(),stamp=Date.parse(published);
     const title=htmlText(tag(block,'title'));if(!httpUrl(url)||!sameHost(url,source.domain)||!title||!Number.isFinite(stamp)||stamp<cutoff||stamp>new Date(now).getTime()+5*60000)continue;
     const body=htmlText(tag(block,'content:encoded')||tag(block,'content')||tag(block,'description')||tag(block,'summary'));
-    rows.push({url,title,publishedAt:kstDay(new Date(stamp)),text:`Title: ${title}\nPublished Time: ${kstDay(new Date(stamp))}\n${body}`,source});
+    rows.push({url,title,publishedAt:kstDay(new Date(stamp)),publishedAtInstant:new Date(stamp).toISOString(),text:`Title: ${title}\nPublished Time: ${kstDay(new Date(stamp))}\n${body}`,source});
     if(rows.length>=100)break;
   }
   return rows;

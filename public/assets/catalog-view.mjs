@@ -31,6 +31,24 @@ export function keywordProductIds(keyword, products, today = kstToday()) {
   const matched = new Set(keyword.productIds || []);
   return new Set(products.filter(p => matched.has(p.id) && releaseState(p, today)).map(p => p.id));
 }
+export function trendKeywords(keywords = [], {now = Date.now(), forecast = false} = {}) {
+  const rankedKinds=new Set(['search-rank','composite-rank','hashtag-rank']);
+  const unrankedKinds=new Set(forecast?['forecast-keyword']:['search-popular','editorial-keyword']);
+  return keywords.filter(k => typeof k?.label === 'string' && k.label.trim() && Array.isArray(k.productIds)).flatMap(k => {
+    const sourceRanks=(k.sourceRanks||[]).filter(s => {
+      const day=kstToday(new Date(now)),age=now-Date.parse(s?.capturedAt),publicationAge=now-Date.parse(s?.publishedAt);
+      const extraValid=s?.kind==='composite-rank'?s.latestPeriodVerified===true&&s.reportId&&validDay(s.periodEnd)&&s.validityBasis&&validDay(s.validUntil)&&day<=s.validUntil:s?.kind==='editorial-keyword'?publicationAge>=0&&publicationAge<=7*86400000:true;
+      const fresh=forecast?age>=0&&s.validityBasis==='season-end-policy'&&validDay(s?.validUntil)&&kstToday(new Date(now))<=s.validUntil:age>=0&&age<=7*86400000;
+      return s?.verified===true && typeof s.term==='string' && s.term.trim() && s.platform && safeUrl(s.sourceUrl) && fresh && extraValid && (
+        !forecast && rankedKinds.has(s.kind) && Number.isInteger(s.rank) && s.rank>0 || unrankedKinds.has(s.kind) && s.rank===null
+      );
+    });
+    // Combined ranks are published on the server. Do not retain a rank after a contributor expires.
+    if(!sourceRanks.length||sourceRanks.length!==k.sourceRanks.length)return [];
+    const rank=!forecast&&Number.isInteger(k.rank)&&k.rank>0&&Number.isFinite(k.score)&&k.score>0&&sourceRanks.some(s=>rankedKinds.has(s.kind))?k.rank:null;
+    return [{...k,rank,sourceRanks}];
+  }).sort((a,b)=>(a.rank??Infinity)-(b.rank??Infinity));
+}
 export function sourceContext(type, products, directory = {}, today = kstToday()) {
   const configured = (directory[type]?.configured || []).filter(s => s?.name && safeUrl(s.url));
   const entries = [...(directory[type]?.observed || []), ...configured];

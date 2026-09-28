@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-09-28",
+  "sources": [
+    {
+      "id": "musinsa",
+      "name": "무신사",
+      "adapter": "musinsa-search",
+      "url": "https://www.musinsa.com/main/musinsa/recommend",
+      "apiUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
+      "country": "KR",
+      "scope": "all",
+      "captureLimit": 100,
+      "rankingPeriod": null,
+      "rankBasis": "official-numbered-search-list",
+      "method": "로그인·쿠키 없이 전체 성별 인기 검색어 목록 확인",
+      "enabled": true
+    },
+    {
+      "id": "29cm",
+      "name": "29CM",
+      "adapter": "29cm-search",
+      "url": "https://www.29cm.co.kr/store/search/start",
+      "apiUrl": "https://display-bff-api.29cm.co.kr/api/v1/search-home",
+      "country": "KR",
+      "scope": "all",
+      "captureLimit": 30,
+      "rankingPeriod": null,
+      "rankBasis": "platform-explicit-search-rank",
+      "method": "로그인·쿠키 없이 기본 인기 검색어 목록의 명시적 rank 확인",
+      "enabled": true
+    },
+    {
+      "id": "tiktok",
+      "name": "TikTok Creative Center",
+      "adapter": "tiktok-hashtags",
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?region=KR&period=7",
+      "apiUrl": "https://ads.tiktok.com/CreativeOne/KnowledgeAPI/GetHashtagList",
+      "method": "POST",
+      "requestBody": {
+        "timeRange": 7,
+        "countryCode": "KR",
+        "page": 1,
+        "limit": 20
+      },
+      "country": "KR",
+      "scope": "all-industries",
+      "captureLimit": 20,
+      "rankingPeriod": "7 days",
+      "rankBasis": "platform-explicit-hashtag-rank",
+      "rankingDefinition": "현재 게시물량·조회 트래픽·기간 대비 성장에 따른 해시태그 순위",
+      "enabled": true
+    },
+    {
+      "id": "tagwalk",
+      "name": "Tagwalk",
+      "adapter": "tagwalk-traffic",
+      "url": "https://www2.tag-walk.com/es/",
+      "apiUrl": "https://www2.tag-walk.com/es/",
+      "country": "Global",
+      "scope": "brand-traffic",
+      "captureLimit": 5,
+      "rankBasis": "platform-explicit-brand-traffic-rank",
+      "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
+      "enabled": true
+    },
+    {
+      "id": "lyst",
+      "name": "Lyst Index",
+      "adapter": "lyst-brand-index",
+      "url": "https://www.lyst.com/the-lyst-index/",
+      "apiUrl": "https://www.lyst.com/the-lyst-index/",
+      "country": "Global",
+      "scope": "brand-popularity",
+      "captureLimit": 20,
+      "rankBasis": "platform-explicit-quarterly-brand-rank",
+      "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
+      "enabled": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "url": "https://about.instagram.com/blog/announcements/break-down-how-instagram-search-works",
+      "reason": "공개 검증 가능한 검색순위 미확보",
+      "kind": "search-rank"
+    },
+    {
+      "id": "thesneakernewsletter.com",
+      "name": "The Sneaker Newsletter",
+      "url": "https://www.thesneakernewsletter.com/",
+      "reason": "공개 인기 검색어·검색순위 미확보",
+      "kind": "search-popular"
+    },
+    {
+      "id": "thedassler.substack.com",
+      "name": "The Dassler",
+      "url": "https://thedassler.substack.com/",
+      "reason": "공개 인기 검색어·검색순위 미확보",
+      "kind": "search-popular"
+    },
+    {
+      "id": "wgsn",
+      "name": "WGSN",
+      "url": "https://www.wgsn.com/",
+      "reason": "미래예측 원문 확인 대상",
+      "kind": "forecast-keyword"
+    },
+    {
+      "id": "f-trend",
+      "name": "F-Trend",
+      "url": "https://f-trend.com/",
+      "reason": "공개 검증 가능한 미래예측 키워드 미확보",
+      "kind": "forecast-keyword"
+    },
+    {
+      "id": "trendstop",
+      "name": "Trendstop",
+      "url": "https://www.trendstop.com/",
+      "reason": "공개 검증 가능한 미래예측 키워드 미확보",
+      "kind": "forecast-keyword"
+    },
+    {
+      "id": "trendhunter",
+      "name": "TrendHunter",
+      "url": "https://www.trendhunter.com/shoes",
+      "reason": "공개 풋웨어 기사 확인 대상 · 원문 인기순위 미공개",
+      "kind": "editorial-keyword"
+    },
+    {
+      "id": "sneakerfreaker.com",
+      "name": "Sneaker Freaker",
+      "url": "https://www.sneakerfreaker.com/",
+      "reason": "공개 풋웨어 기사 확인 대상 · 원문 인기순위 미공개",
+      "kind": "editorial-keyword"
+    },
+    {
+      "id": "xiaohongshu",
+      "name": "Xiaohongshu",
+      "url": "https://www.xiaohongshu.com/",
+      "reason": "공개 검증 가능한 검색·스타일 순위 미확보",
+      "kind": "search-rank"
+    }
+  ],
+  "note": "각 원문이 공개한 순위와 표기를 보존한다. 검색순위와 상품 BEST 순위를 섞지 않는다. 집계 기간 미공개는 null이며 업데이트 시각을 집계 기간으로 바꾸지 않는다. 현재인기와 미래예측 집계는 별도 모듈에서 수행한다."
+}

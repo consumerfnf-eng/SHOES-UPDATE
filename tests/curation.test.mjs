@@ -54,12 +54,10 @@ test('editorial popularity counts independent domains and ranks are verified',()
   assert(popularity([s,{...s,publisherId:'b'}],day).magazine);
   assert.equal(validateSignals([signal(0,{type:'ecommerce',rank:1})],day).length,0);
 });
-test('keywords compare actual seven-day windows and not previous build counts',()=>{
+test('article theme mentions never become public search ranks or synthetic fallback keywords',()=>{
   const a=product({id:'a',sourceSignals:[signal(0,{type:'magazine',keywords:['메쉬'],publishedAt:'2026-09-25'})]}),b=product({id:'b',sourceSignals:[signal(1,{type:'magazine',keywords:['메쉬'],publishedAt:'2026-09-20'})]});
-  const result=rankKeywords([a,b],day),mesh=result.find(k=>k.id==='mesh-sheer');assert.equal(mesh.productCount,1);assert.equal(mesh.previousProductCount,1);assert.equal(mesh.growth,0);
-  assert.equal(mesh.label,'Mesh / sheer footwear');assert.equal(mesh.matchedProductCount,2);assert.deepEqual(mesh.evidenceProductIds,['a']);
-  const noEvidence=rankKeywords([product()],day);assert.equal(noEvidence.length,21);assert(noEvidence.every(k=>k.rank===null));assert.deepEqual(keywordsFromText('breathable mesh upper'),['mesh-sheer']);
-  const rawMatch=curateCatalog([product({id:'without-article'})],{now}).snapshot;assert(rawMatch.keywords.find(k=>k.id==='mesh-sheer').productIds.includes('without-article'));assert.equal(rawMatch.keywords.find(k=>k.id==='mesh-sheer').productCount,0);
+  assert.deepEqual(rankKeywords([a,b],now),[]);assert.deepEqual(keywordsFromText('breathable mesh upper'),['mesh-sheer']);
+  const rawMatch=curateCatalog([product({id:'without-article'})],{now}).snapshot;assert(rawMatch.products[0].keywordTags.includes('mesh-sheer'));assert(rawMatch.products[0].searchConceptIds.includes('material:mesh'));assert.deepEqual(rawMatch.keywords,[]);
 });
 test('keyword color and licensed character matches cannot leak from another colorway or generic construction',()=>{
   const white={name:'CELL GEO CAGE',colorway:'White',colors:[{name:'White'}],description:'The original version was brown.',sourceSignals:[{keywords:['brown']}]};
@@ -71,7 +69,7 @@ test('keyword color and licensed character matches cannot leak from another colo
   assert(!productKeywordIds({name:'GENESIS 2 GORE-TEX',description:'Wider midsole platform for stability',sourceSignals:[{keywords:['platform']}]}).includes('platform'));
   assert(productKeywordIds({name:'Platform sneaker'}).includes('platform'));
   assert(productKeywordIds({name:'Court sneaker',description:'An elevated platform sole adds height.'}).includes('platform'));
-  const ranked=rankKeywords([{...white,id:'white',keywordTags:productKeywordIds(white),sourceSignals:[signal(1,{type:'magazine',keywords:['brown']})]}],day).find(k=>k.id==='brown');assert.equal(ranked.rank,null);assert.deepEqual(ranked.productIds,[]);
+  const ranked=rankKeywords([{...white,id:'white',keywordTags:productKeywordIds(white),sourceSignals:[signal(1,{type:'magazine',keywords:['brown']})]}],now);assert.deepEqual(ranked,[]);
 });
 test('generic release extraction refuses unrelated, footer, article-date and partial-date claims',()=>{
   assert.equal(releaseSentence('# Retro\nPublished Time: 2026-09-01\nThis item is new.',product()),null);

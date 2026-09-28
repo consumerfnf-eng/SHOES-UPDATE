@@ -42,3 +42,97 @@ export function productKeywordIds(raw){
   if(!platformIdentity&&!platformStructure)ids.delete('platform');
   return KEYWORD_THEMES.filter(t=>ids.has(t.id)).map(t=>t.id);
 }
+
+// Search labels are never translated. This dictionary is used only to connect equivalent queries and products.
+const searchDictionary=JSON.parse(fs.readFileSync(new URL('../config/search-term-dictionary.json',import.meta.url),'utf8'));
+const searchBrandPolicy=JSON.parse(fs.readFileSync(new URL('../config/brand-policy.json',import.meta.url),'utf8'));
+const singulars={shoes:'shoe',sneakers:'sneaker',trainers:'trainer',clogs:'clog',sandals:'sandal',mules:'mule',platforms:'platform',flatforms:'flatform',runners:'runner'};
+export function normalizeSearchTerm(value){return String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').normalize('NFC').toLowerCase().replace(/[\u200b-\u200d\ufeff]/g,'').replace(/[^\p{L}\p{N}]+/gu,' ').trim().replace(/\b[a-z]+\b/g,w=>singulars[w]||w).replace(/\s+/g,' ');}
+const compact=value=>normalizeSearchTerm(value).replaceAll(' ','');
+const brandNames=new Map(searchBrandPolicy.brands.map(b=>[compact(b.name),b.name]));
+for(const [a,b]of Object.entries(searchBrandPolicy.aliases))brandNames.set(compact(a),b);
+const brandName=value=>brandNames.get(compact(value))||value;
+function makeSearchConcepts(){
+  const entries=searchDictionary.entries.filter(e=>e.kind!=='brand').map(e=>({...e,id:`${e.kind}:${e.id}`}));
+  for(const b of searchBrandPolicy.brands.filter(b=>['mandatory','core','conditional'].includes(b.policy))){
+    const aliases=[b.name,...Object.entries(searchBrandPolicy.aliases).filter(([,target])=>target===b.name).map(([a])=>a),...searchDictionary.entries.filter(e=>e.kind==='brand'&&e.match.brands.some(x=>brandName(x)===b.name)).flatMap(e=>e.aliases)];
+    entries.push({id:`brand:${compact(b.name)}`,kind:'brand',aliases:[...new Set(aliases)],match:{brands:[b.name]}});
+  }
+  return entries;
+}
+export const SEARCH_CONCEPTS=makeSearchConcepts();
+const searchConceptById=new Map(SEARCH_CONCEPTS.map(e=>[e.id,e]));
+const searchAliases=SEARCH_CONCEPTS.flatMap(e=>e.aliases.map(alias=>({alias,key:compact(alias),id:e.id}))).filter(a=>a.key).sort((a,b)=>b.key.length-a.key.length||a.id.localeCompare(b.id));
+function textIndex(value){const text=normalizeSearchTerm(value),indices=[];let key='';for(let i=0;i<text.length;i++)if(text[i]!==' '){key+=text[i];indices.push(i);}return{text,key,indices};}
+function bounded(index,start,term){
+  const finish=start+term.length-1,first=index.indices[start],last=index.indices[finish];
+  if(first===undefined||last===undefined)return false;
+  if(/[a-z0-9]/.test(term[0])&&/[a-z0-9]/.test(index.text[first-1]||''))return false;
+  if(/[a-z0-9]/.test(term.at(-1))&&/[a-z0-9]/.test(index.text[last+1]||''))return false;
+  return true;
+}
+function containsPhrase(text,phrase){const index=textIndex(text),term=compact(phrase);if(!term)return false;for(let at=index.key.indexOf(term);at>=0;at=index.key.indexOf(term,at+1))if(bounded(index,at,term))return true;return false;}
+export function resolveSearchTerm(value){
+  const index=textIndex(value),ids=[],unmatched=[];let at=0;
+  while(at<index.key.length){const match=searchAliases.find(a=>index.key.startsWith(a.key,at)&&bounded(index,at,a.key));
+    if(match){ids.push(match.id);at+=match.key.length;continue;}
+    const start=at++;while(at<index.key.length&&!searchAliases.some(a=>index.key.startsWith(a.key,at)&&bounded(index,at,a.key)))at++;
+    unmatched.push(index.text.slice(index.indices[start],index.indices[at-1]+1));
+  }
+  const unique=[...new Set(ids)];
+  // An exact model already contains its brand constraint. Do not split equivalent model queries into extra groups.
+  const modelBrands=new Set(unique.map(id=>searchConceptById.get(id)).filter(e=>e.kind==='model').flatMap(e=>(e.match.brands||[]).map(brandName)));
+  const conceptIds=unique.filter(id=>{const e=searchConceptById.get(id);return e.kind!=='brand'||!e.match.brands.some(b=>modelBrands.has(brandName(b)));}).sort();
+  const literalTerms=unmatched.flatMap(t=>t.split(' ')).filter(Boolean);
+  return {original:String(value||''),normalized:index.text,conceptIds,literalTerms,key:[...conceptIds,...literalTerms.map(t=>'literal:'+compact(t))].sort().join('|')};
+}
+const fieldText=(p,field)=>field==='colors'?(p.colors||[]).map(c=>typeof c==='string'?c:c.name).join(' '):String(p[field]||'');
+function explicitCollaborator(product,brand){
+  if(!Number.isFinite(Date.parse(product.productVerifiedAt||product.lastVerifiedAt))||!product.productEvidenceUrl)return false;
+  const name=String(product.name||'').replace(/×/g,' x ');
+  if(!/\b(?:x|collab(?:oration)?)\b/i.test(name))return false;
+  if(/\binspired by\b|\btribute to\b|\brecommended\b|\bin the style of\b/i.test(name))return false;
+  const index=textIndex(name),entry=searchConceptById.get(`brand:${compact(brandName(brand))}`);
+  for(const alias of entry?.aliases||[]){const term=compact(alias);for(let at=index.key.indexOf(term);at>=0;at=index.key.indexOf(term,at+1)){
+    if(!bounded(index,at,term))continue;
+    const before=index.text.slice(0,index.indices[at]).trim(),after=index.text.slice(index.indices[at+term.length-1]+1).trim();
+    if(/(?:^|\s)x$|(?:^|\s)collab(?:oration)?(?: with)?$/.test(before)||/^(?:x|collab(?:oration)?(?: with)?)(?:\s|$)/.test(after))return true;
+  }}
+  return false;
+}
+function matchesConcept(p,entry,themeIds){
+  const m=entry.match;
+  if(m.brands&&!m.brands.some(b=>brandName(p.brand)===brandName(b)||entry.kind==='brand'&&explicitCollaborator(p,b)))return false;
+  if(m.categories&&!m.categories.includes(p.category||p.productType))return false;
+  if(m.themeIds&&!m.themeIds.some(id=>themeIds.has(id)))return false;
+  if(m.fields&&!m.terms.some(term=>m.fields.some(field=>containsPhrase(fieldText(p,field),term))))return false;
+  return true;
+}
+export function productSearchConceptIds(product){
+  const themeIds=new Set(product.keywordTags||productKeywordIds(product));
+  return SEARCH_CONCEPTS.filter(entry=>matchesConcept(product,entry,themeIds)).map(e=>e.id);
+}
+const publiclyVerifiableKinds=new Set(['brand','model','category','color']);
+export function validPublicSearchConcepts(product){
+  const themes=new Set(product.keywordTags||productKeywordIds(product));
+  return (product.searchConceptIds||[]).every(id=>{const entry=searchConceptById.get(id);return entry&&(!publiclyVerifiableKinds.has(entry.kind)||matchesConcept(product,entry,themes));});
+}
+export function matchesSearchTerm(product,term){
+  const resolved=typeof term==='string'?resolveSearchTerm(term):term;
+  if(!resolved.key)return false;
+  const concepts=new Set(product.searchConceptIds||productSearchConceptIds(product));
+  if(!resolved.conceptIds.every(id=>concepts.has(id)))return false;
+  const themes=new Set(product.keywordTags||productKeywordIds(product));
+  if(!resolved.conceptIds.every(id=>{const entry=searchConceptById.get(id);return !publiclyVerifiableKinds.has(entry.kind)||matchesConcept(product,entry,themes);} ))return false;
+  const identity=['name','brand','style','colorway','colors','material'].map(field=>fieldText(product,field)).join(' ');
+  return resolved.literalTerms.every(term=>containsPhrase(identity,term));
+}
+export function searchTermAliases(term){const resolved=typeof term==='string'?resolveSearchTerm(term):term;return resolved.conceptIds.length===1&&!resolved.literalTerms.length?[...new Set(searchConceptById.get(resolved.conceptIds[0])?.aliases||[])]:[resolved.original];}
+export function isFootwearSearchTerm(term,{scope,products=[]}={}){
+  const resolved=typeof term==='string'?resolveSearchTerm(term):term;if(!resolved.key)return false;
+  if(searchDictionary.excludedQueryTerms.some(t=>containsPhrase(resolved.original,t)))return false;
+  if(['footwear','shoes','sneakers'].includes(scope))return true;
+  if(scope==='fashion-colour-forecast'&&!resolved.literalTerms.length&&resolved.conceptIds.length&&resolved.conceptIds.every(id=>searchConceptById.get(id)?.kind==='color'))return true;
+  if(resolved.conceptIds.some(id=>searchConceptById.get(id)?.footwearRelevant===true||['brand','model','category','shape','use'].includes(searchConceptById.get(id)?.kind)))return true;
+  return products.some(p=>compact(p.style)&&compact(p.style)===compact(resolved.original)||compact(p.name)===compact(resolved.original));
+}

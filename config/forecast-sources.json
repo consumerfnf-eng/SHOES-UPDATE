@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "wgsn-ss27-colours",
+      "name": "WGSN",
+      "enabled": true,
+      "adapter": "wgsn-seasonal-colours",
+      "url": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+      "alternateUrl": "https://www.wgsn.com/jp/node/2563",
+      "title": "The S/S 27 Key Colours have landed",
+      "publishedAt": "2025-07-18",
+      "forecastPeriod": "S/S 2027",
+      "validUntil": "2027-08-31",
+      "validityBasis": "season-end-policy",
+      "terms": [
+        {
+          "label": "Luminous Blue",
+          "scope": "cross-category"
+        },
+        {
+          "label": "Energy Orange",
+          "scope": "sports-and-outdoor"
+        },
+        {
+          "label": "Pop Pink",
+          "scope": "cross-category"
+        },
+        {
+          "label": "Meadowland Green",
+          "scope": "footwear-explicit"
+        },
+        {
+          "label": "Clay",
+          "scope": "cross-category"
+        }
+      ],
+      "reviewedEvidence": {
+        "verifiedAt": "2026-09-28T05:29:22.478Z",
+        "verificationMethod": "reviewed-public-source",
+        "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
+        "contentHash": "9978f95996ebfed9c04aa20fb344a45d21c939a1f518193209af4fc48346ffac",
+        "exactTerms": [
+          "Luminous Blue",
+          "Energy Orange",
+          "Pop Pink",
+          "Meadowland Green",
+          "Clay"
+        ],
+        "reviewNote": "Public article title, publication date, five exact colour headings and S/S27 season were checked. Exact colour-name matching only; broad blue/orange/pink/green/brown matches are excluded.",
+        "evidenceSnapshot": "logs/research/forecast-keywords/wgsn-discovery-0.txt"
+      }
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "f-trend",
+      "name": "F-Trend",
+      "url": "https://f-trend.com/",
+      "reason": "공개 전망 원문을 검증하지 못했습니다. 회원 전용 본문은 사용하지 않습니다."
+    },
+    {
+      "id": "trendstop",
+      "name": "Trendstop",
+      "url": "https://www.trendstop.com/",
+      "reason": "공개 전망 원문을 검증하지 못했습니다. 회원 전용 본문은 사용하지 않습니다."
+    },
+    {
+      "id": "wgsn-other",
+      "name": "WGSN 기타 전망",
+      "url": "https://www.wgsn.com/",
+      "reason": "검토한 공개 S/S27 색상 글 외 유료 보고서는 사용하지 않습니다."
+    }
+  ]
+}

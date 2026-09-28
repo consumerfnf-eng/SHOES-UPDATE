@@ -34,18 +34,20 @@ export function applyReviewedEvidence(input,evidence) {
   }
   return products;
 }
-export async function publishCurated({directory=root,now=new Date(),incoming=[],collection,maintenance=false}={}) {
+export async function publishCurated({directory=root,now=new Date(),incoming=[],collection,maintenance=false,keywordRefresh=false}={}) {
   const sourceFile=path.join(directory,'data/catalog-source.json'), prior=await readJson(path.join(directory,'public/data/catalog.json'),{});
   const source=await readJson(sourceFile), evidence=await readJson(path.join(directory,'data/release-evidence.json'),{products:[]});
+  if(keywordRefresh&&incoming.length)throw Error('Keyword refresh cannot change product records');
+  if(keywordRefresh){const fields=['sourceRanks','searchRankStatus','forecastStatus','editorialStatus','keywordCheckedAt'];collection={...source.collection,...Object.fromEntries(fields.filter(k=>collection?.[k]!==undefined).map(k=>[k,collection[k]]))};}
   const products=applyReviewedEvidence(mergePreserving(source.products,incoming),evidence.products);
   const result=curateCatalog(products,{now,previous:prior,collection:collection||source.collection||{}});
   // Maintenance only removes expired entries / updates upcoming state and ages signals; it does not claim a new collection.
   if(maintenance&&prior.publishedAt) result.snapshot.publishedAt=prior.publishedAt;
   if(!Array.isArray(result.snapshot.products)||new Set(result.snapshot.products.map(p=>p.id)).size!==result.snapshot.products.length)throw Error('Invalid curated snapshot');
-  if(!maintenance) {
+  if(!maintenance||keywordRefresh) {
     await fs.mkdir(path.join(directory,'logs/backups'),{recursive:true});
     await fs.copyFile(sourceFile,path.join(directory,'logs/backups/catalog-source-before.json'));
-    await atomicJson(sourceFile,{...source,products,collection:collection||source.collection||{},lastCuratedAt:new Date(now).toISOString()});
+    await atomicJson(sourceFile,keywordRefresh?{...source,collection,lastKeywordsRefreshedAt:new Date(now).toISOString()}:{...source,products,collection:collection||source.collection||{},lastCuratedAt:new Date(now).toISOString()});
   }
   await atomicJson(path.join(directory,'data/archive-queue.json'),result.queue);
   await atomicJson(path.join(directory,'data/curation-review.json'),result.review);

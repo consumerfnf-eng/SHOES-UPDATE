@@ -1,5 +1,6 @@
 import fs from 'node:fs';
-import {KEYWORD_THEMES,canonicalKeyword,productKeywordIds} from './keyword-taxonomy.mjs';
+import {productKeywordIds,productSearchConceptIds} from './keyword-taxonomy.mjs';
+import {buildKeywordCatalog} from './search-keywords.mjs';
 
 export const POLICY = JSON.parse(fs.readFileSync(new URL('../config/brand-policy.json', import.meta.url), 'utf8'));
 const key = x => String(x || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').normalize('NFC').toLowerCase().replace(/[^a-z0-9가-힣]/g, '');
@@ -101,24 +102,10 @@ export function curateProduct(raw, today) {
     sourceSignals: visibleSignals, popularity: hot, archiveGroup: raw.archiveGroup || policy.group,
     country: raw.country || '', lastVerifiedAt: raw.productVerifiedAt, productEvidenceUrl: raw.productEvidenceUrl,
     eligibility: { passed: true, checkedAt: today }, keywordTags: productKeywordIds({...raw,sourceSignals:visibleSignals}) };
+  product.searchConceptIds=productSearchConceptIds({...raw,category:type.category,keywordTags:product.keywordTags});
   return { product, expired: raw.releaseDate < shiftMonth(today, -3) };
 }
-export function rankKeywords(products, today) {
-  const map = new Map(KEYWORD_THEMES.map(theme=>[theme.id,{...theme,types:new Set(),evidence:new Set(),models:new Set(),oldModels:new Set()}]));
-  for (const p of products) for (const signal of p.sourceSignals || []) {
-    const days=age(signal.publishedAt,today);if(days<0||days>=14)continue;
-    for (const label of signal.keywords || []) {
-      const id=canonicalKeyword(label),r=map.get(id),model=p.modelKey||p.id;if(!r||!(p.keywordTags||productKeywordIds(p)).includes(id))continue;
-      if(days>=7){r.oldModels.add(model);continue;}
-      r.types.add(signal.type);r.evidence.add(p.id);r.models.add(model);
-    }
-  }
-  const rows=[...map.values()].map(r=>{
-    const productIds=products.filter(p=>(p.keywordTags||productKeywordIds(p)).includes(r.id)).map(p=>p.id);
-    return {id:r.id,label:r.label,aliases:r.aliases,sourceTypes:[...r.types],productIds,matchedProductCount:productIds.length,evidenceProductIds:[...r.evidence],productCount:r.models.size,previousProductCount:r.oldModels.size,growth:r.models.size-r.oldModels.size};
-  }).sort((a,b)=>Number(b.productCount>0)-Number(a.productCount>0)||b.sourceTypes.length-a.sourceTypes.length||b.productCount-a.productCount||b.growth-a.growth||KEYWORD_THEMES.findIndex(t=>t.id===a.id)-KEYWORD_THEMES.findIndex(t=>t.id===b.id));
-  let rank=0;return rows.map(r=>({...r,rank:r.productCount?++rank:null,rankingStatus:r.productCount?'ranked':'awaiting-evidence'}));
-}
+export function rankKeywords(products, now, sourceRanks=[]) {return buildKeywordCatalog(products,sourceRanks,{now}).keywords;}
 export function curateCatalog(rawProducts, { now = new Date(), previous = {}, collection = {} } = {}) {
   const today = kstDay(now), products = [], expired = [], held = [], seen = new Set();
   for (const raw of rawProducts) {
@@ -137,10 +124,11 @@ export function curateCatalog(rawProducts, { now = new Date(), previous = {}, co
     }
     return [type,{configured:configuredDirectory[type]?.configured||[],observed:[...sources.values()].map(({ids,...s})=>({...s,itemCount:ids.size})),checkedAt:configuredDirectory[type]?.checkedAt||collection.checkedAt||previous.sourceStatus?.checkedAt||null,checks:configuredDirectory[type]?.checks||[]}];
   }));
+  const keywordState=buildKeywordCatalog(products,[...(previous.sourceRanks||[]),...(collection.sourceRanks||[])],{now});
   const snapshot = { schemaVersion:1, publishedAt:new Date(now).toISOString(), periodStart:shiftMonth(today,-3), asOf:today,
     brands:POLICY.brands.filter(b => b.mandatory || b.policy === 'core' || b.policy === 'conditional' && activeBrands.has(b.name)),
     products:products.sort((a,b) => b.releaseDate.localeCompare(a.releaseDate) || a.name.localeCompare(b.name)),
-    keywords:rankKeywords(products,today,previous.keywords),sourceDirectory, sourceStatus:{ checkedAt:collection.checkedAt || previous.sourceStatus?.checkedAt || null,
+    ...keywordState,searchRankStatus:collection.searchRankStatus||previous.searchRankStatus||[],forecastStatus:collection.forecastStatus||previous.forecastStatus||[],editorialStatus:collection.editorialStatus||previous.editorialStatus||[],sourceDirectory, sourceStatus:{ checkedAt:collection.checkedAt || previous.sourceStatus?.checkedAt || null,
       lastSuccessfulCollectionAt:collection.lastSuccessfulCollectionAt || previous.sourceStatus?.lastSuccessfulCollectionAt || null,
       unavailableBrands:collection.unavailableBrands || previous.sourceStatus?.unavailableBrands || [], coverage:collection.coverage || previous.sourceStatus?.coverage || [],
       notes:['출시일·품목·적합성을 확인한 상품만 표시합니다. 확인일을 출시일로 사용하지 않습니다.','SNS 인기는 수집한 공개 게시물 범위에 한합니다.'],

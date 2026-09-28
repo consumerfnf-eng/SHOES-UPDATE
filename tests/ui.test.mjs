@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { EXPORT_COLUMNS, productRecord, exportRows, csvBytes, xlsxBytes } from '../public/assets/export.mjs';
-import { kstToday, shiftCalendarMonths, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext } from '../public/assets/catalog-view.mjs';
+import { kstToday, shiftCalendarMonths, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords } from '../public/assets/catalog-view.mjs';
 
 test('KST calendar window clamps month ends and distinguishes upcoming, expired, unknown', () => {
   assert.equal(kstToday(new Date('2026-09-27T15:00:00Z')),'2026-09-28');
@@ -49,4 +49,16 @@ test('CSV preserves Unicode/quotes and neutralizes formulas; XLSX uses only inli
   let offset=0,sheet='';const names=[];
   while(view.getUint32(offset,true)===0x04034B50){const size=view.getUint32(offset+18,true),nameLength=view.getUint16(offset+26,true),extra=view.getUint16(offset+28,true),name=new TextDecoder().decode(bytes.slice(offset+30,offset+30+nameLength));names.push(name);const start=offset+30+nameLength+extra;if(name==='xl/worksheets/sheet1.xml')sheet=new TextDecoder().decode(bytes.slice(start,start+size));offset=start+size;}
   assert.equal(names.length,6);assert(sheet.includes('한글'));assert(sheet.includes('&apos;=HYPERLINK'));assert(!sheet.includes('<f>'));assert(!sheet.includes('private'));assert.equal((sheet.match(/<c /g)||[]).length,34);
+});
+
+test('Current ranks use only verified fresh source ordinals; official unranked and forecasts stay separate',()=>{
+  const now=Date.parse('2026-09-28T05:00:00Z'),base={id:'term',label:'스니커즈',productIds:['a'],rank:1,score:1},signal={platform:'musinsa',term:'스니커즈',rank:1,kind:'search-rank',verified:true,sourceUrl:'https://example.org/search',capturedAt:'2026-09-28T04:00:00Z',validUntil:'2026-09-30',latestPeriodVerified:true,reportId:'fixture-period',periodEnd:'2026-09-27',validityBasis:'report-end-policy',publishedAt:'2026-09-27T00:00:00Z'};
+  for(const kind of ['search-rank','composite-rank','hashtag-rank'])assert.equal(trendKeywords([{...base,sourceRanks:[{...signal,kind}]}],{now})[0].rank,1);
+  for(const kind of ['search-popular','editorial-keyword'])assert.equal(trendKeywords([{...base,sourceRanks:[{...signal,kind,rank:null}]}],{now})[0].rank,null,'No numeric score from an official unranked mention');
+  for(const patch of [{kind:'search-results-order'},{kind:'hashtag-count'},{verified:false},{rank:0},{sourceUrl:'javascript:alert(1)'},{capturedAt:'2026-09-21T04:59:59Z'},{capturedAt:'2026-09-28T05:00:01Z'},{kind:'composite-rank',validUntil:'2026-09-27'},{kind:'editorial-keyword',rank:null,publishedAt:'2026-08-01'}])assert.equal(trendKeywords([{...base,sourceRanks:[{...signal,...patch}]}],{now}).length,0);
+  assert.equal(trendKeywords([{...base,sourceRanks:[{...signal,capturedAt:'2026-09-21T05:00:00Z'}]}],{now}).length,1,'Exactly 168 hours is still valid');
+  assert.equal(trendKeywords([{...base,sourceRanks:[signal,{...signal,capturedAt:'2026-09-20T00:00:00Z'}]}],{now}).length,0,'Do not preserve aggregate rank after one contributor expires');
+  assert.equal(trendKeywords([base],{now}).length,0,'Legacy fixed themes are not ranked search evidence');
+  const forecast={...base,sourceRanks:[{...signal,kind:'forecast-keyword',rank:null,capturedAt:'2025-07-18T00:00:00Z',validUntil:'2027-08-31',validityBasis:'season-end-policy'}]};assert.equal(trendKeywords([forecast],{now}).length,0);assert.equal(trendKeywords([forecast],{now,forecast:true})[0].rank,null);assert.equal(trendKeywords([forecast],{now:Date.parse('2027-08-31T14:59:59Z'),forecast:true}).length,1);assert.equal(trendKeywords([forecast],{now:Date.parse('2027-08-31T15:00:00Z'),forecast:true}).length,0);
+  assert.equal(trendKeywords([{...base,sourceRanks:[signal]}],{now,forecast:true}).length,0);
 });

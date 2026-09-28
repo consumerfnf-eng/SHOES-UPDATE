@@ -6,6 +6,7 @@
     "daily": "node scripts/publish-curated.mjs --maintenance",
     "weekly": "node scripts/weekly-update.mjs",
     "curate": "node scripts/publish-curated.mjs",
+    "keywords": "node scripts/refresh-keywords.mjs",
     "archive": "node scripts/archive-expired.mjs",
     "build": "node scripts/validate_catalog.mjs && node scripts/build.mjs",
     "test": "node --test tests/*.test.mjs",

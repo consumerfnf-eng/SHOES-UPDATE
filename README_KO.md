@@ -50,7 +50,9 @@
 
 매거진·공개 뉴스레터는 직접 RSS와 설정된 공개 원문을 읽고, 유효한 Jina Search가 있으면 추가 원문을 발견합니다. 접근 제한이나 날짜 누락 시 보류합니다. 이커머스 순위는 검색 순서를 이용하지 않습니다.
 
-이전 사이트의 20개 키워드 주제와 검증된 Sculptural uppers를 합친 21개 영어 주제를 모두 표시합니다. 최근 7일과 직전 7일의 검증된 원문으로 출처 종류·중복 제거한 모델 수·증가량을 계산합니다. 근거가 없는 주제는 순위를 만들지 않고 대기로 표시합니다. 키워드 클릭은 기사에서 언급된 상품에 제한하지 않고, 검증된 상품 구조·소재·해당 색상에 맞는 공개 상품 전체를 표시합니다. `productIds`/`matchedProductCount`는 모든 매칭 상품, `evidenceProductIds`/`productCount`는 현재 순위 근거 상품/중복 제거 모델 수입니다.
+현재 인기 키워드는 실제 검색어·복합 인기·해시태그 원순위를 플랫폼별 동일 가중치 `1 / 원순위`로 합산합니다. 같은 플랫폼의 동의어는 최고 순위 한 번만 기여하고, 원문 표기·원순위·종류·기간·국가를 보존합니다. 숫자 없는 공식 인기·매체 표현은 종합순위 없이 후단에, 미래예측은 별도 영역에 표시합니다. 실제 원순위가 없는 고정 주제를 인기순위로 채우지 않습니다.
+
+키워드 클릭은 한영 동의어와 검토된 브랜드·모델 사전으로 유효한 출시 완료·발매 예정 상품 전체를 찾습니다. 복합어의 조건은 모두 맞아야 하며, 원문의 검색어 표기를 영어로 바꾸지 않습니다. 현재 인기의 168시간 유효기간, 보고서·미래 시즌 종료 정책, 매칭 기준은 `docs/keyword-ranking.md`를 확인하세요.
 
 ## 아카이브와 원본 보호
 
@@ -77,7 +79,7 @@ npm run build
 npm run archive
 ```
 
-`npm run weekly`는 실제 수집, `npm run daily`는 수집 없이 기한 점검, `npm run archive`는 기본 모의 실행입니다. Windows Edge를 사용할 때는 `PLAYWRIGHT_CHANNEL=msedge`를 설정할 수 있습니다.
+`npm run weekly`는 실제 전체 수집, `npm run keywords`는 상품·Signals·전체 수집시각을 보존하는 키워드만 갱신, `npm run daily`는 수집 없이 기한 점검, `npm run archive`는 기본 모의 실행입니다. 키워드 갱신은 Google Sheets를 호출하지 않습니다. Windows Edge를 사용할 때는 `PLAYWRIGHT_CHANNEL=msedge`를 설정할 수 있습니다.
 
 UI 테스트는 Windows에서 설치된 Chrome을 기본 사용하며 `UI_BROWSER_CHANNEL=msedge`로 Edge를 지정할 수 있습니다. Linux CI는 설치된 Playwright Chromium을 사용합니다. 테스트용 상품은 별도 로컬 서버에서만 응답하고 공개 데이터에 기록하지 않습니다. 실제 Safari/iOS 검증은 별도로 필요합니다.
 
