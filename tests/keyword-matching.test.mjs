@@ -53,3 +53,10 @@ test('verified explicit collaborators match without changing the primary brand o
  assert(!matchesSearchTerm({...collab,lastVerifiedAt:undefined},'Cecilie Bahnsen'));
  assert(!matchesSearchTerm(shoe({brand:'Jordan',name:'Air Jordan 1'}),'나이키'));
 });
+
+test('editorial style aliases distinguish retro low tops from ultraslim retro and literal netting',()=>{
+ const retroCourt=shoe({name:'Freestyle low-top court sneaker',description:'A retro low-top tennis design.'});
+ assert(matchesSearchTerm(retroCourt,'Retro Low Tops'));assert(matchesSearchTerm(retroCourt,'레트로 로우톱'));assert(!matchesSearchTerm(retroCourt,'ultraslim retro sneakers'));
+ assert(matchesSearchTerm({...retroCourt,description:'Retro low-top sneaker with a slim silhouette.'},'ultraslim retro sneakers'));
+ assert(!matchesSearchTerm(shoe({material:'mesh'}),'Netting'));assert(matchesSearchTerm(shoe({material:'fishnet panels'}),'그물 소재'));
+});

@@ -16,11 +16,11 @@ test('latest complete source snapshot wins, even when its newest keywords are un
  assert.equal(buildKeywordCatalog([p],[old,latest],{now}).keywords.length,0);
 });
 test('source ranks remain original after clothing removal; zero-match shoe topics remain',()=>{
- const result=buildKeywordCatalog([],[source({term:'테이블',rank:1}),source({term:'스니커즈',rank:34})],{now});
+ const result=buildKeywordCatalog([],[source({term:'테이블',rank:1}),source({term:'메리제인 스니커즈',rank:34})],{now});
  assert.equal(result.keywords[0].sourceRanks[0].rank,34);assert.equal(result.keywords[0].rank,1);assert.equal(result.keywords[0].matchedProductCount,0);
 });
 test('unranked official popularity stays unranked and forecasts cannot influence current scores',()=>{
- const result=buildKeywordCatalog([p],[source({platform:'lyst',term:'New Balance',kind:'composite-rank',rank:3}),source({platform:'editor',term:'뉴발란스',kind:'editorial-keyword',rank:null}),source({platform:'forecast',term:'뉴발란스',kind:'forecast-keyword',rank:null,forecastPeriod:'Spring/Summer 2027'}),source({platform:'popular',term:'스니커즈',kind:'search-popular',rank:null})],{now});
+ const result=buildKeywordCatalog([p],[source({platform:'lyst',term:'Suede sneakers',kind:'composite-rank',rank:3}),source({platform:'editor',term:'스웨이드 스니커즈',kind:'editorial-keyword',rank:null}),source({platform:'forecast',term:'스웨이드 스니커즈',kind:'forecast-keyword',rank:null,forecastPeriod:'Spring/Summer 2027'}),source({platform:'popular',term:'메리제인 스니커즈',kind:'search-popular',rank:null})],{now});
  assert.equal(result.keywords.length,2);assert.equal(result.keywords[0].score,1/3);assert.equal(result.keywords[0].sourceCount,2);
  assert.equal(result.keywords[1].rank,null);assert.equal(result.keywords[1].score,0);
  assert.equal(result.forecastKeywords.length,1);assert.equal(result.forecastKeywords[0].rank,null);assert.equal(result.forecastKeywords[0].sourceRanks[0].forecastPeriod,'Spring/Summer 2027');
@@ -41,7 +41,21 @@ test('seasonal forecasts use the approved season end and exact color names, not 
  assert.equal(buildKeywordCatalog([p],[record],{now:new Date('2027-08-31T15:00:00Z')}).forecastKeywords.length,0);
 });
 test('maintenance removes old editorial publication and expired reports even after a fresh capture',()=>{
- const result=buildKeywordCatalog([p],[source({kind:'editorial-keyword',rank:null,publishedAt:'2026-09-20'}),source({platform:'lyst',kind:'composite-rank',validUntil:'2026-09-27'}),source({platform:'unverified-quarter',kind:'composite-rank',latestPeriodVerified:false})],{now});
+ const result=buildKeywordCatalog([p],[source({kind:'editorial-keyword',rank:null,publishedAt:'2026-08-28'}),source({platform:'lyst',kind:'composite-rank',validUntil:'2026-09-27'}),source({platform:'unverified-quarter',kind:'composite-rank',latestPeriodVerified:false})],{now});
  assert.deepEqual(result.keywords,[]);
  assert.equal(buildKeywordCatalog([p],[source({kind:'composite-rank',periodEnd:'2026-02-31'}),source({kind:'forecast-keyword',rank:null,validUntil:'2027-02-31'})],{now}).sourceRanks.length,0);
+});
+test('style view rejects brand/model/generic terms and retains real original style evidence only',()=>{
+ const rows=['나이키','뉴발란스530','신발','운동화','스니커즈','PUMA Speedcat','나이키 브라운 스니커즈','브라운 스니커즈','메리제인','gorpcore'].map((term,i)=>source({term,rank:i+1}));
+ const result=buildKeywordCatalog([p],rows,{now});
+ assert.deepEqual(new Set(result.keywords.map(k=>k.label)),new Set(['브라운 스니커즈','메리제인','gorpcore']));
+ assert(result.keywords.every(k=>k.keywordType==='style'));assert.deepEqual(buildKeywordCatalog([p],[],{now}).keywords,[]);
+});
+test('editorial trend publication uses exact 30-day window while capture remains seven days',()=>{
+ const at=new Date(now.getTime()-30*86400000).toISOString();
+ assert.equal(buildKeywordCatalog([p],[source({kind:'editorial-keyword',rank:null,publishedAt:at})],{now}).keywords.length,1);
+ assert.equal(buildKeywordCatalog([p],[source({kind:'editorial-keyword',rank:null,publishedAt:new Date(Date.parse(at)-1).toISOString()})],{now}).keywords.length,0);
+});
+test('composite reports reject future, reversed and impossible validity periods',()=>{
+ for(const patch of [{periodStart:'2026-12-30',periodEnd:'2026-10-01'},{periodEnd:'2026-10-01'},{periodEnd:'2026-09-20',validUntil:'2026-09-19'}])assert.equal(buildKeywordCatalog([p],[source({kind:'composite-rank',...patch})],{now}).keywords.length,0);
 });

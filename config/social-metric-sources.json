@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "platform": "tiktok",
+      "name": "TikTok",
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag",
+      "status": "unavailable",
+      "reason": "상품별 검증 가능한 검색량·게시물 총량 미확보",
+      "collectionMode": "reviewed-evidence-import",
+      "automatedAdapter": null,
+      "checkedAt": null
+    }
+  ],
+  "importContract": "data/social-metric-evidence.json contains products with stable id/brand/style/socialMetrics plus sourceStatus. Verified source values and their original capturedAt are preserved; importing does not imply a new live fetch. No session cookies or credentials are accepted."
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-28T06:04:27.964Z",
+  "checkedAt": "2026-09-28T07:57:52.622Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -1125,12 +1125,6 @@
       "reason": "brand-fit-unverified"
     },
     {
-      "id": "official-82d80c59311fcc15",
-      "brand": "Miu Miu",
-      "name": "Bubble embroidered technical fabric and suede sneakers",
-      "reason": "brand-fit-unverified"
-    },
-    {
       "id": "official-2dd1ef7a1711bcd6",
       "brand": "Nike",
       "name": "Air Jordan 1 Retro High OG “Nails and Grails”",
@@ -1621,18 +1615,6 @@
       "brand": "PUMA",
       "name": "A$AP ROCKY x PUMA Straycat Women's Sneakers",
       "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "zip-cecilie-asics-black-coffee",
-      "brand": "Cecilie Bahnsen",
-      "name": "ASICS GEL-KINETIC FR | BLACK COFFEE",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "zip-cecilie-asics-silver",
-      "brand": "Cecilie Bahnsen",
-      "name": "ASICS GEL-KINETIC FR | SILVER",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "zip-puma-hstreet-snake-407310",

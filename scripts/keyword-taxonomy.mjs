@@ -100,11 +100,16 @@ function explicitCollaborator(product,brand){
   }}
   return false;
 }
+export function productCollaborationBrands(product){
+  return SEARCH_CONCEPTS.filter(e=>e.kind==='brand'&&e.match.brands.some(b=>brandName(b)!==brandName(product.brand)&&explicitCollaborator(product,b))).flatMap(e=>e.match.brands);
+}
 function matchesConcept(p,entry,themeIds){
   const m=entry.match;
   if(m.brands&&!m.brands.some(b=>brandName(p.brand)===brandName(b)||entry.kind==='brand'&&explicitCollaborator(p,b)))return false;
   if(m.categories&&!m.categories.includes(p.category||p.productType))return false;
   if(m.themeIds&&!m.themeIds.some(id=>themeIds.has(id)))return false;
+  if(m.allThemeIds&&!m.allThemeIds.every(id=>themeIds.has(id)))return false;
+  if(m.allConditions&&!m.allConditions.every(c=>c.terms.some(term=>c.fields.some(field=>containsPhrase(fieldText(p,field),term)))))return false;
   if(m.fields&&!m.terms.some(term=>m.fields.some(field=>containsPhrase(fieldText(p,field),term))))return false;
   return true;
 }
@@ -135,4 +140,13 @@ export function isFootwearSearchTerm(term,{scope,products=[]}={}){
   if(scope==='fashion-colour-forecast'&&!resolved.literalTerms.length&&resolved.conceptIds.length&&resolved.conceptIds.every(id=>searchConceptById.get(id)?.kind==='color'))return true;
   if(resolved.conceptIds.some(id=>searchConceptById.get(id)?.footwearRelevant===true||['brand','model','category','shape','use'].includes(searchConceptById.get(id)?.kind)))return true;
   return products.some(p=>compact(p.style)&&compact(p.style)===compact(resolved.original)||compact(p.name)===compact(resolved.original));
+}
+// Popularity is a style research view. Keep brand/model aliases for product search,
+// but do not turn brand demand, model demand, or a generic shoe category into a style trend.
+export function isStyleTrendTerm(term,options={}){
+  const resolved=typeof term==='string'?resolveSearchTerm(term):term;
+  if(!isFootwearSearchTerm(resolved,options)||resolved.literalTerms.length)return false;
+  const concepts=resolved.conceptIds.map(id=>searchConceptById.get(id));
+  if(concepts.some(c=>['brand','model','franchise'].includes(c?.kind)))return false;
+  return concepts.some(c=>['style','shape','material','color','pattern','structure','use','attribute'].includes(c?.kind));
 }

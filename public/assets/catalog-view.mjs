@@ -3,22 +3,59 @@ export function kstToday(now = new Date()) {
   return shifted.toISOString().slice(0, 10);
 }
 export function shiftCalendarMonths(day, months) {
-  const [year, month, date] = day.split('-').map(Number);
-  const target = new Date(Date.UTC(year, month - 1 + months, 1));
-  const last = new Date(Date.UTC(target.getUTCFullYear(), target.getUTCMonth() + 1, 0)).getUTCDate();
-  target.setUTCDate(Math.min(date, last)); return target.toISOString().slice(0, 10);
+  return calendarShift(day,months);
 }
 export function validDay(value) {
-  return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(Date.parse(value)) && new Date(value).toISOString().slice(0,10) === value;
+  return validCalendarDay(value);
 }
 export function releaseState(product, today = kstToday()) {
-  const date = product.releaseDate;
-  if (!validDay(date)) return null;
-  if (date > today) return date <= shiftCalendarMonths(today, 3) ? 'upcoming' : null;
-  return date >= shiftCalendarMonths(today, -3) ? 'released' : null;
+  const state=windowState(product,today);return ['released','upcoming'].includes(state)?state:null;
 }
+export function releaseDateLabel(product){const range=releaseWindow(product);if(range?.precision==='month'){const [year,month]=product.releaseDate.split('-');return `${year}년 ${Number(month)}월 (일자 미공개)`;}return product.releaseDate||'미확인';}
 export function safeUrl(value) {
   try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password ? url.href : ''; } catch { return ''; }
+}
+const sameIdentity = (evidence, product) => typeof evidence?.brand==='string' && typeof evidence?.style==='string' && !!product.brand && !!product.style && evidence.brand.normalize('NFC').trim().toLowerCase()===product.brand.normalize('NFC').trim().toLowerCase() && evidence.style.replace(/[^a-z0-9]/gi,'').toLowerCase()===product.style.replace(/[^a-z0-9]/gi,'').toLowerCase();
+const verifiedDate = (value, today) => Number.isFinite(Date.parse(value)) && kstToday(new Date(value))<=today;
+export function officialProductUrl(product, today = kstToday()) {
+  const evidence=product.officialProductEvidence,url=safeUrl(product.url);
+  return url && evidence?.verified===true && sameIdentity(evidence,product) && safeUrl(evidence.url)===url && verifiedDate(evidence.verifiedAt,today) ? url : '';
+}
+export function officialImageUrl(product, today = kstToday()) {
+  const evidence=product.officialImageEvidence,url=safeUrl(product.image),sourceUrl=officialProductUrl(product,today);
+  return url && sourceUrl && evidence?.verified===true && sameIdentity(evidence,product) && safeUrl(evidence.url)===url && safeUrl(evidence.sourceUrl)===sourceUrl && verifiedDate(evidence.verifiedAt,today) ? url : '';
+}
+export function productBrandNames(product, today = kstToday()) {
+  const collaborators=officialImageUrl(product,today)?(product.collaborationBrands||[]).filter(name=>typeof name==='string'&&name.trim()):[];
+  return [...new Set([product.brand,...collaborators].filter(Boolean))];
+}
+export function visibleSocialMetrics(product, today = kstToday(), {now=Date.now()} = {}) {
+  if(!officialImageUrl(product,today))return [];
+  const units={'search-count':'searches','hashtag-post-count':'posts','view-count':'views'};
+  const cutoff=shiftCalendarMonths(today,-3);
+  return (product.socialMetrics||[]).filter(metric=>{
+    const captured=Date.parse(metric?.capturedAt),day=Number.isFinite(captured)?kstToday(new Date(captured)):'';
+    const period=metric?.scope==='cumulative'&&metric.periodStart==null&&metric.periodEnd==null||metric?.scope==='period'&&validDay(day)&&validDay(metric.periodStart)&&validDay(metric.periodEnd)&&metric.periodStart>=shiftCalendarMonths(day,-3)&&metric.periodStart<=metric.periodEnd&&metric.periodEnd<=day&&metric.periodEnd>=cutoff;
+    const identity=metric?.identity,model=product.officialProductEvidence?.modelIdentity;
+    const identityValid=identity?.level==='model'?!!officialProductUrl(product,today)&&model?.verified===true&&identity.brand===product.brand&&identity.modelId===model.id&&identity.modelName===model.name:(!identity?.level||identity.level==='variant')&&sameIdentity(identity,product);
+    return metric?.verified===true && identityValid && metric.platform && metric.query && safeUrl(metric.sourceUrl).startsWith('https:') && units[metric.metric]===metric.unit && (metric.value===null||Number.isSafeInteger(metric.value)&&metric.value>=0) && period && day>=cutoff && day<=today && captured<=new Date(now).getTime();
+  });
+}
+export function socialGroupKey(metric){
+  const c=metric?.comparison;
+  const level=metric?.identity?.level||'variant';
+  return ['search-count','hashtag-post-count'].includes(metric?.metric)&&c?.id&&c.identityLevel===level&&c.verified===true&&c.population==='items'&&['observed-sample','published-ranking'].includes(c.coverage)&&Number.isInteger(c.rank)&&c.rank>0&&Number.isInteger(c.itemCount)&&c.itemCount>=c.rank&&c.itemCount>=2&&metric.value>0?JSON.stringify([c.id,metric.platform,metric.metric,metric.unit,metric.scope,level,metric.country||'',metric.periodStart||'',metric.periodEnd||'',metric.scope==='cumulative'?kstToday(new Date(metric.capturedAt)):'',c.coverage]):'';
+}
+export function socialComparisonGroups(products,today=kstToday()){
+  const groups=new Map();for(const p of products.filter(p=>releaseState(p,today)&&sourceMatches(p,'sns',today)))for(const m of visibleSocialMetrics(p,today)){const key=socialGroupKey(m);if(!key)continue;if(!groups.has(key))groups.set(key,{key,...m,itemKeys:new Set()});groups.get(key).itemKeys.add(m.identity?.level==='model'?`${p.brand}:${m.identity.modelId}`:`${p.brand}:${p.style}`);}
+  return [...groups.values()].map(({itemKeys,...group})=>({...group,matchedItemCount:itemKeys.size})).sort((a,b)=>b.matchedItemCount-a.matchedItemCount||Number(a.metric!=='search-count')-Number(b.metric!=='search-count')||a.key.localeCompare(b.key));
+}
+export function sourceMatches(product, type, today = kstToday()) {
+  if(type==='all')return true;
+  if(type==='media')return product.popularity?.media===true;
+  if(type==='brand')return releaseState(product,today)==='released'&&!!officialProductUrl(product,today)&&!!officialImageUrl(product,today);
+  if(type==='sns')return !!officialImageUrl(product,today)&&visibleSocialMetrics(product,today).some(m=>['search-count','hashtag-post-count'].includes(m.metric)&&m.value>0);
+  return product.popularity?.[type]===true;
 }
 export function categoryMatches(product, key) {
   if (key === 'all') return true;
@@ -34,10 +71,11 @@ export function keywordProductIds(keyword, products, today = kstToday()) {
 export function trendKeywords(keywords = [], {now = Date.now(), forecast = false} = {}) {
   const rankedKinds=new Set(['search-rank','composite-rank','hashtag-rank']);
   const unrankedKinds=new Set(forecast?['forecast-keyword']:['search-popular','editorial-keyword']);
-  return keywords.filter(k => typeof k?.label === 'string' && k.label.trim() && Array.isArray(k.productIds)).flatMap(k => {
+  return keywords.filter(k => k?.keywordType==='style' && typeof k.label === 'string' && k.label.trim() && Array.isArray(k.productIds)).flatMap(k => {
     const sourceRanks=(k.sourceRanks||[]).filter(s => {
       const day=kstToday(new Date(now)),age=now-Date.parse(s?.capturedAt),publicationAge=now-Date.parse(s?.publishedAt);
-      const extraValid=s?.kind==='composite-rank'?s.latestPeriodVerified===true&&s.reportId&&validDay(s.periodEnd)&&s.validityBasis&&validDay(s.validUntil)&&day<=s.validUntil:s?.kind==='editorial-keyword'?publicationAge>=0&&publicationAge<=7*86400000:true;
+      const captureDay=Number.isFinite(Date.parse(s?.capturedAt))?kstToday(new Date(s.capturedAt)):'';
+      const extraValid=s?.kind==='composite-rank'?s.latestPeriodVerified===true&&s.reportId&&validDay(s.periodEnd)&&(s.periodStart===undefined||validDay(s.periodStart)&&s.periodStart<=s.periodEnd)&&s.periodEnd<=captureDay&&s.validityBasis&&validDay(s.validUntil)&&s.validUntil>=s.periodEnd&&day<=s.validUntil:s?.kind==='editorial-keyword'?publicationAge>=0&&publicationAge<=30*86400000:true;
       const fresh=forecast?age>=0&&s.validityBasis==='season-end-policy'&&validDay(s?.validUntil)&&kstToday(new Date(now))<=s.validUntil:age>=0&&age<=7*86400000;
       return s?.verified===true && typeof s.term==='string' && s.term.trim() && s.platform && safeUrl(s.sourceUrl) && fresh && extraValid && (
         !forecast && rankedKinds.has(s.kind) && Number.isInteger(s.rank) && s.rank>0 || unrankedKinds.has(s.kind) && s.rank===null
@@ -50,6 +88,12 @@ export function trendKeywords(keywords = [], {now = Date.now(), forecast = false
   }).sort((a,b)=>(a.rank??Infinity)-(b.rank??Infinity));
 }
 export function sourceContext(type, products, directory = {}, today = kstToday()) {
+  if(type==='media'){
+    const contexts=['magazine','newsletter'].map(source=>sourceContext(source,products,directory,today));
+    const unique=rows=>[...new Map(rows.map(row=>[row.id||row.url,row])).values()];
+    const observed=unique(contexts.flatMap(c=>c.observed));
+    return {observed,configured:unique(contexts.flatMap(c=>c.configured)).filter(c=>!observed.some(o=>o.id===c.id||o.url===c.url))};
+  }
   const configured = (directory[type]?.configured || []).filter(s => s?.name && safeUrl(s.url));
   const entries = [...(directory[type]?.observed || []), ...configured];
   const host = value => { const url=safeUrl(value); return url ? new URL(url).hostname.replace(/^www\./,'') : ''; };
@@ -74,11 +118,20 @@ export function filterProducts(products, state, today = kstToday()) {
   return products.filter(p => {
     const release = releaseState(p, today);
     return release && (state.release === 'all' || release === state.release)
-      && (!state.brands.size || state.brands.has(p.brand))
+      && (!state.brands.size || productBrandNames(p,today).some(brand=>state.brands.has(brand)))
       && (state.fit === 'all' || (state.fit === 'common' ? p.fit?.includes('MLB') && p.fit?.includes('DISCOVERY') : p.fit?.includes(state.fit)))
       && categoryMatches(p, state.category)
-      && (state.source === 'all' || p.popularity?.[state.source] === true)
+      && sourceMatches(p,state.source,today)
+      && (state.source!=='sns'||!state.socialGroup||visibleSocialMetrics(p,today).some(m=>socialGroupKey(m)===state.socialGroup))
       && (!state.keywordIds || state.keywordIds.has(p.id))
       && (!query || [p.name,p.brand,p.style,p.colorway,p.category,p.productType,...(p.keywords || []),...(p.keywordTags || [])].join(' ').toLocaleLowerCase().includes(query));
-  }).sort((a, b) => state.sort === 'brand' ? a.brand.localeCompare(b.brand, 'en') || a.name.localeCompare(b.name) : state.sort === 'sources' ? (b.sourceSignals?.length || 0) - (a.sourceSignals?.length || 0) || b.releaseDate.localeCompare(a.releaseDate) : b.releaseDate.localeCompare(a.releaseDate) || a.brand.localeCompare(b.brand));
+  }).sort((a,b)=>{
+    if(state.source==='sns'&&state.socialGroup&&state.sort==='social'){
+      const metric=p=>visibleSocialMetrics(p,today).find(m=>socialGroupKey(m)===state.socialGroup),aa=metric(a),bb=metric(b);
+      if(aa&&bb)return bb.value-aa.value||aa.comparison.rank-bb.comparison.rank||a.id.localeCompare(b.id);
+    }
+    return state.sort==='brand'?a.brand.localeCompare(b.brand,'en')||a.name.localeCompare(b.name):state.sort==='sources'?(b.sourceSignals?.length||0)-(a.sourceSignals?.length||0)||releaseSortKey(b).localeCompare(releaseSortKey(a)):releaseSortKey(b).localeCompare(releaseSortKey(a))||a.brand.localeCompare(b.brand);
+  });
 }
+import {calendarShift,validCalendarDay,releaseWindow,releaseState as windowState,releaseSortKey} from './release-window.mjs';
+export {releaseWindow,releaseSortKey};

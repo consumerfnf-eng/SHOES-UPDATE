@@ -42,11 +42,10 @@ test('release evidence, verification and future official confirmation cannot be 
   assert.equal(curateProduct(product({releaseDate:'2026-10-01'}),day).product.releaseStatus,'upcoming');
 });
 const signal=(i,patch={})=>({type:'sns',url:`https://www.instagram.com/p/p${i}/`,title:'Retro running sneaker',account:`account${i%3}`,publishedAt:'2026-09-25',checkedAt:now.toISOString(),modelMatched:true,sponsored:false,original:true,originalId:`p${i}`,seller:false,brandOwned:false,...patch});
-test('SNS requires five originals three accounts fresh nonadvertising sources',()=>{
-  const all=Array.from({length:5},(_,i)=>signal(i));assert(popularity(validateSignals(all,day),day).sns);
-  assert(!popularity(validateSignals(all.slice(0,4),day),day).sns);
-  assert(!popularity(validateSignals(all.map(x=>({...x,account:'same'})),day),day).sns);
-  assert(!popularity(validateSignals(all.map(x=>({...x,publishedAt:'2026-09-17'})),day),day).sns);
+test('SNS post and account counts never substitute for verified item volume metrics',()=>{
+  const all=Array.from({length:5},(_,i)=>signal(i));assert(!popularity(validateSignals(all,day),day).sns);
+  assert(!popularity(validateSignals(Array.from({length:50},(_,i)=>signal(i)),day),day).sns);
+  assert.equal(validateSignals([signal(1,{publishedAt:'2026-06-28'}),signal(2,{publishedAt:'2026-06-27'})],day).length,1);
   assert.equal(validateSignals([...all,signal(0),signal(6,{sponsored:true})],day).length,5);
 });
 test('editorial popularity counts independent domains and ranks are verified',()=>{

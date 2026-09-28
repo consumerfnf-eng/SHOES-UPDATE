@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-28T02:20:34.453Z",
+  "checkedAt": "2026-09-28T07:56:02.000Z",
   "products": [
     {
       "id": "official-nike-ix8478-410",
@@ -1678,6 +1678,93 @@
           ]
         }
       ]
+    },
+    {
+      "id": "official-82d80c59311fcc15",
+      "brand": "Miu Miu",
+      "style": "5E808E_3ZR4_F0304_F_A045",
+      "colorway": "Embroidered cream/beige technical fabric and suede",
+      "releaseDate": "2026-08-03",
+      "dateEvidence": {
+        "url": "https://10magazine.com/footwear-finds-miu-miu-bubble-shoe/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T07:56:02.000Z",
+        "excerpt": "10 Magazine (published 2026-08-03, photography courtesy of Miu Miu): 'Miu Miu's bubble shoe is back... the shoe, launching today... Revamped in supple suede and leather with cotton laces, the shoe also comes in an embellished version crafted in technical nylon with crystal and sequin embroidery.' The article's official Miu Miu photo shows the cream/beige suede-toe, crystal-and-sequin embroidered colorway with light-blue lace tip and white ridged bubble sole -- an exact visual match to official style 5E808E_3ZR4_F0304_F_A045."
+      },
+      "productVerifiedAt": "2026-09-28T07:56:02.000Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
+      "description": "Bubble embroidered technical fabric and suede sneakers: crystal and sequin embroidery over a rounded, cushioned platform sole, revived from Miu Miu's early-2000s archive for the brand's AW26 runway.",
+      "officialCategory": "Sneakers",
+      "gender": "WOMEN"
+    },
+    {
+      "id": "zip-cecilie-asics-black-coffee",
+      "brand": "Cecilie Bahnsen",
+      "style": "26-4-0001",
+      "url": "https://ceciliebahnsen.com/products/asics-26-4-0001-gel-kinetic-fr-synthetic-leather-black-coffee",
+      "image": "https://ceciliebahnsen.com/cdn/shop/files/260616_Cecilie_Bahnsen_ECOM_111_4654.jpg?v=1787040313&width=1200",
+      "colorway": "Black Coffee",
+      "releaseDate": "2026-08-28",
+      "dateEvidence": {
+        "url": "https://www.soleretriever.com/news/articles/cecilie-bahnsen-asics-gel-kinetic-fr-collection-release-date-august-2026",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T07:56:02.000Z",
+        "excerpt": "Sole Retriever: Cecilie Bahnsen's own stores and website offered an exclusive early-access window for the ASICS GEL-KINETIC FR collaboration beginning August 28, 2026, ahead of the global ASICS.com release on September 12, 2026, both colorways (Piedmont Grey/Silver and Black Coffee) priced at $200."
+      },
+      "productVerifiedAt": "2026-09-28T07:56:02.000Z",
+      "productEvidenceUrl": "https://ceciliebahnsen.com/products/asics-26-4-0001-gel-kinetic-fr-synthetic-leather-black-coffee",
+      "description": "GEL-KINETIC FR sneaker collaboration between ASICS and Cecilie Bahnsen: a Mary-Jane inspired running-style upper secured with double velcro straps reimagining the ASICS Stripes, finished with floral appliques.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 220",
+      "country": "DK"
+    },
+    {
+      "id": "zip-cecilie-asics-silver",
+      "brand": "Cecilie Bahnsen",
+      "style": "26-4-0002",
+      "url": "https://ceciliebahnsen.com/products/asics-26-4-0002-gel-kinetic-fr-synthetic-leather-silver",
+      "image": "https://ceciliebahnsen.com/cdn/shop/files/260616_Cecilie_Bahnsen_ECOM_109_4777.jpg?v=1787040322&width=1200",
+      "colorway": "Silver",
+      "releaseDate": "2026-08-28",
+      "dateEvidence": {
+        "url": "https://www.soleretriever.com/news/articles/cecilie-bahnsen-asics-gel-kinetic-fr-collection-release-date-august-2026",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T07:56:02.000Z",
+        "excerpt": "Sole Retriever: Cecilie Bahnsen's own stores and website offered an exclusive early-access window for the ASICS GEL-KINETIC FR collaboration beginning August 28, 2026, ahead of the global ASICS.com release on September 12, 2026, both colorways (Piedmont Grey/Silver and Black Coffee) priced at $200."
+      },
+      "productVerifiedAt": "2026-09-28T07:56:02.000Z",
+      "productEvidenceUrl": "https://ceciliebahnsen.com/products/asics-26-4-0002-gel-kinetic-fr-synthetic-leather-silver",
+      "description": "GEL-KINETIC FR sneaker collaboration between ASICS and Cecilie Bahnsen: a Mary-Jane inspired running-style upper secured with double velcro straps reimagining the ASICS Stripes, finished with floral appliques.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 220",
+      "country": "DK"
+    },
+    {
+      "id": "verified-moncler-citytrek-white-l209a4m00230n0633034",
+      "brand": "Moncler",
+      "name": "Moncler CityTrek Sneakers",
+      "style": "L209A4M00230N0633034",
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
+      "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209A4M00230N0633034_F/image/moncler-citytrek-sneakers-men-white-moncler-0.jpg?w=1300&q=80",
+      "colorway": "White",
+      "releaseDate": "2026-08-03",
+      "dateEvidence": {
+        "url": "https://www.moncler.com/en-se/city-trek-trail-sneakers",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T07:56:02.000Z",
+        "excerpt": "Official Moncler CityTrek campaign page confirms the trail-sneaker model is part of the current collection; cross-referenced with Fashion Press Japan and HOUYHNHNM coverage confirming the model's launch and Japan store/online sell-through beginning 2026-08-03."
+      },
+      "productVerifiedAt": "2026-09-28T07:56:02.000Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
+      "description": "CityTrek technical outdoor-inspired trail sneaker combining nylon, suede and leather with a breathable Cordura front panel, cushioned midsole and Vibram gum outsole for everyday city movement.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 650",
+      "gender": "MEN",
+      "country": "US"
     }
   ]
 }

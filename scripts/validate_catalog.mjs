@@ -1,7 +1,9 @@
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import {curateProduct,POLICY,validDay,httpUrl,shiftMonth,validateSignals,popularity,kstDay} from './curation.mjs';
-import {SEARCH_CONCEPTS,validPublicSearchConcepts} from './keyword-taxonomy.mjs';
+import {curateProduct,POLICY,validDay,httpUrl,shiftMonth,validateSignals,popularity,kstDay,officialEvidenceFor} from './curation.mjs';
+import {validateSocialMetrics,withSocialComparisons} from './social-metrics.mjs';
+import {releaseWindow,releaseState} from '../public/assets/release-window.mjs';
+import {SEARCH_CONCEPTS,validPublicSearchConcepts,productCollaborationBrands} from './keyword-taxonomy.mjs';
 import {buildKeywordCatalog,KEYWORD_METHOD} from './search-keywords.mjs';
 export function validateSnapshot(catalog) {
   assert.equal(catalog.schemaVersion,1);assert(Array.isArray(catalog.products));assert(Array.isArray(catalog.brands));assert(Array.isArray(catalog.keywords));
@@ -16,10 +18,12 @@ export function validateSnapshot(catalog) {
     assert(['sneaker','clog','sandal','platform-sandal','hybrid'].includes(p.category),'Invalid product category');
     assert(Array.isArray(p.fit)&&p.fit.length&&p.fit.every(f=>['MLB','DISCOVERY'].includes(f)),'Invalid fit');
     assert(Array.isArray(p.fitReasons)&&p.fitReasons.length,'Missing selection reasons');
-    assert(validDay(p.releaseDate),'Invalid release day');
-    assert.equal(p.releaseStatus,p.releaseDate>catalog.asOf?'upcoming':'released','Wrong release state');
-    assert(p.releaseDate>=catalog.periodStart&&p.releaseDate<=shiftMonth(catalog.asOf,3),'Product outside publication window');
-    assert(p.dateEvidence?.verified===true&&p.dateEvidence.precision==='day','Missing release evidence');
+    const release=releaseWindow(p),state=releaseState(p,catalog.asOf);
+    assert(release,'Invalid verified release day/month');
+    assert(['released','upcoming'].includes(state),'Product outside confirmed publication window');
+    assert.equal(p.releaseStatus,state,'Wrong release state');
+    assert(p.dateEvidence?.verified===true&&['day','month'].includes(p.dateEvidence.precision),'Missing release evidence');
+    if(release.precision==='month')assert.deepEqual(p.verifiedReleaseWindow,{start:release.start,end:release.end},'Missing exact month interval');
     assert(httpUrl(p.dateEvidence.url)&&p.dateEvidence.excerpt&&Number.isFinite(Date.parse(p.dateEvidence.verifiedAt)),'Invalid release provenance');
     if(p.releaseStatus==='upcoming')assert(p.dateEvidence.official===true,'Upcoming date must be official');
     assert(httpUrl(p.url)&&httpUrl(p.image)&&httpUrl(p.productEvidenceUrl),'Invalid product/image evidence URL');
@@ -28,10 +32,16 @@ export function validateSnapshot(catalog) {
     assert(Array.isArray(p.searchConceptIds)&&p.searchConceptIds.every(id=>SEARCH_CONCEPTS.some(c=>c.id===id)),'Invalid product search concepts');
     assert(validPublicSearchConcepts(p),'Product search concept conflicts with its public brand/model/category/color facts');
     assert.equal(validateSignals(p.sourceSignals,catalog.asOf).length,p.sourceSignals.length,'Unverified or expired public signal');
-    assert.deepEqual(p.popularity,popularity(p.sourceSignals,catalog.asOf),'Unsubstantiated popularity flag');
+    const official=officialEvidenceFor(p,catalog.asOf);
+    if(p.officialProductEvidence||p.officialImageEvidence){assert(official,'Invalid official product/image proof');assert.deepEqual(p.officialProductEvidence,official.officialProductEvidence,'Invalid official model identity');assert.deepEqual(p.officialImageEvidence,official.officialImageEvidence,'Invalid official image fields');}
+    assert.deepEqual(p.collaborationBrands,official?productCollaborationBrands(p):[],'Unverified collaborator brand');
+    assert(Array.isArray(p.socialMetrics),'Missing social metric list');
+    assert.deepEqual(p.popularity,popularity(p.sourceSignals,catalog.asOf,{product:p,socialMetrics:validateSocialMetrics(p,catalog.asOf,{officialEligible:!!official,now:catalog.keywordCheckedAt}),officialEligible:!!official,now:catalog.keywordCheckedAt}),'Unsubstantiated popularity flag');
     const r=curateProduct({...p,productVerifiedAt:p.lastVerifiedAt,productEvidenceUrl:p.productEvidenceUrl,hybridReview:p.hybridReview,modelReview:p.modelReview},catalog.asOf);
     assert(r.product&&!r.expired,`Ineligible published product ${p.id}: ${r.reason||'expired'}`);
   }
+  const socialExpected=withSocialComparisons(catalog.products.map(p=>({...p,socialMetrics:validateSocialMetrics(p,catalog.asOf,{officialEligible:!!officialEvidenceFor(p,catalog.asOf),now:catalog.keywordCheckedAt})})));
+  assert.deepEqual(catalog.products.map(p=>p.socialMetrics),socialExpected.map(p=>p.socialMetrics),'Unverified social metrics or invalid comparison ranks');
   const ids=new Set(catalog.products.map(p=>p.id));
   assert.equal(catalog.keywordMethod,KEYWORD_METHOD,'Unverified keyword ranking method');
   assert(Number.isFinite(Date.parse(catalog.keywordCheckedAt))&&kstDay(catalog.keywordCheckedAt)===catalog.asOf,'Invalid keyword verification time');
@@ -39,6 +49,7 @@ export function validateSnapshot(catalog) {
   const keywords=[...catalog.keywords,...catalog.forecastKeywords];
   assert.equal(new Set(keywords.map(k=>k.id)).size,keywords.length,'Duplicate keyword IDs');
   for(const keyword of keywords){
+    assert.equal(keyword.keywordType,'style','Non-style keyword in trend list');
     assert(keyword.id&&keyword.label,'Missing keyword identity');assert(Array.isArray(keyword.productIds),'Missing keyword matches');
     assert(keyword.productIds.every(id=>ids.has(id)),'Keyword references absent product');
     assert.equal(keyword.matchedProductCount,new Set(keyword.productIds).size,'Keyword matched count mismatch');

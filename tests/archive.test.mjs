@@ -87,6 +87,16 @@ test('invalid/date unknown/young products never enter archive; KST calendar-mont
   assert.equal(eligibilityReason(product({eligibility:{passed:false}}),now),'eligibility-not-verified');
   assert.equal(eligibilityReason(product({dateEvidence:{url:'https://example.com'}}),now),'missing-release-evidence');
 });
+test('verified release months archive only after the entire month expires, without fabricating a day',()=>{
+  const monthly=product({releaseDate:'2026-06',dateEvidence:{...product().dateEvidence,precision:'month',excerpt:'First released in June 2026'}});
+  assert.equal(eligibilityReason(monthly,now),'not-expired');
+  assert.equal(eligibilityReason(monthly,new Date('2026-09-30T14:59:00Z')),'not-expired');
+  assert.equal(eligibilityReason(monthly,new Date('2026-09-30T15:00:00Z')),null);
+  assert.equal(monthly.releaseDate,'2026-06');
+  assert.equal(eligibilityReason({...monthly,releaseDate:'2026-13'},now),'unknown-release-date');
+  assert.equal(eligibilityReason({...monthly,dateEvidence:{...monthly.dateEvidence,verified:false}},now),'unknown-release-date');
+  assert.equal(eligibilityReason({...monthly,verifiedReleaseWindow:{start:'2026-06-01',end:'2026-06-29'}},now),'unknown-release-date');
+});
 test('audit is mandatory before any write; schema drift and unsupported validations block writes',async()=>{
   const adapter=memoryAdapter();await assert.rejects(executeArchive({products:[product()],config,adapter,now,apply:true}),/Immutable audit/);assert.equal(adapter.writes,0);
   const changed=snapshot();changed.rows[0][1]=cell('renamed');assert.throws(()=>planArchive([product()],{domestic:changed},config,now),/Header changed/);

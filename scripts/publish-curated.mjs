@@ -28,6 +28,13 @@ export function applyReviewedEvidence(input,evidence) {
       const next={...e,id:found.id};
       // Reviewed bootstrap facts must never reset newer weekly verification or discard newly found signals.
       if((found.lastSignalCheckedAt||'')>(e.checkedAt||e.dateEvidence?.verifiedAt||''))delete next.sourceSignals;
+      if(e.socialMetrics)next.socialMetrics=[...new Map([...(found.socialMetrics||[]),...e.socialMetrics].map(m=>[JSON.stringify(m),m])).values()];
+      const proofAt=found.officialProductEvidence?.verifiedAt;
+      if(found.officialProductEvidence?.verified===true&&proofAt>(e.officialProductEvidence?.verifiedAt||e.productVerifiedAt||e.dateEvidence?.verifiedAt||'')){
+        // Keep the exact URL/image/identity pair checked together. A bootstrap source
+        // may add release facts, but cannot attach an older image to a newer official proof.
+        for(const field of ['name','brand','style','url','image','productEvidenceUrl','productVerifiedAt','officialProductEvidence','officialImageEvidence'])delete next[field];
+      }
       products=mergePreserving(products,[next]);
     }
     else if(!sameId&&e.id&&e.name&&e.brand) products=mergePreserving(products,[e]);
@@ -37,10 +44,14 @@ export function applyReviewedEvidence(input,evidence) {
 export async function publishCurated({directory=root,now=new Date(),incoming=[],collection,maintenance=false,keywordRefresh=false}={}) {
   const sourceFile=path.join(directory,'data/catalog-source.json'), prior=await readJson(path.join(directory,'public/data/catalog.json'),{});
   const source=await readJson(sourceFile), evidence=await readJson(path.join(directory,'data/release-evidence.json'),{products:[]});
+  const socialEvidence=await readJson(path.join(directory,'data/social-metric-evidence.json'),{products:[],sourceStatus:[]});
   if(keywordRefresh&&incoming.length)throw Error('Keyword refresh cannot change product records');
   if(keywordRefresh){const fields=['sourceRanks','searchRankStatus','forecastStatus','editorialStatus','keywordCheckedAt'];collection={...source.collection,...Object.fromEntries(fields.filter(k=>collection?.[k]!==undefined).map(k=>[k,collection[k]]))};}
-  const products=applyReviewedEvidence(mergePreserving(source.products,incoming),evidence.products);
-  const result=curateCatalog(products,{now,previous:prior,collection:collection||source.collection||{}});
+  const socialPatches=(socialEvidence.products||[]).filter(e=>e.id&&e.brand&&e.style&&Array.isArray(e.socialMetrics)).map(e=>({id:e.id,brand:e.brand,style:e.style,socialMetrics:e.socialMetrics}));
+  const products=applyReviewedEvidence(applyReviewedEvidence(mergePreserving(source.products,incoming),evidence.products),socialPatches);
+  const socialStatus=(socialEvidence.sourceStatus||[]).map(s=>Object.fromEntries(['platform','name','url','status','reason','checkedAt','collectionMode','automatedAdapter'].filter(k=>s[k]!==undefined).map(k=>[k,s[k]])));
+  const effectiveCollection={...(collection||source.collection||{}),...(socialStatus.length?{socialMetricStatus:socialStatus}:{})};
+  const result=curateCatalog(products,{now,previous:prior,collection:effectiveCollection});
   // Maintenance only removes expired entries / updates upcoming state and ages signals; it does not claim a new collection.
   if(maintenance&&prior.publishedAt) result.snapshot.publishedAt=prior.publishedAt;
   if(!Array.isArray(result.snapshot.products)||new Set(result.snapshot.products.map(p=>p.id)).size!==result.snapshot.products.length)throw Error('Invalid curated snapshot');

@@ -4,13 +4,14 @@ import {collectSearchKeywords} from './collect-search-keywords.mjs';
 import {publishCurated,readJson,atomicJson} from './publish-curated.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
-export async function refreshKeywords({directory=root,now=new Date(),searchCollector=collectSearchKeywords,forecastCollector,editorialCollector}={}){
+export async function refreshKeywords({directory=root,now=new Date(),searchCollector=collectSearchKeywords,forecastCollector,editorialCollector,styleCollector}={}){
   forecastCollector??=(await import('./collect-forecast-keywords.mjs')).collectForecastKeywords;
   editorialCollector??=(await import('./collect-editorial-keywords.mjs')).collectEditorialKeywords;
+  styleCollector??=(await import('./collect-style-editorials.mjs')).collectStyleEditorials;
   const source=await readJson(path.join(directory,'data/catalog-source.json'));
-  const [search,forecast,editorial]=await Promise.all([searchCollector({now}),forecastCollector({now}),editorialCollector({now})]);
-  const collection={...source.collection,keywordCheckedAt:new Date(now).toISOString(),sourceRanks:[...(source.collection?.sourceRanks||[]),...search.sourceRanks,...forecast.sourceRanks,...editorial.sourceRanks],searchRankStatus:search.searchRankStatus,forecastStatus:forecast.forecastStatus,editorialStatus:editorial.editorialStatus};
-  await atomicJson(path.join(directory,'logs/keyword-refresh-diagnostics.json'),{checkedAt:new Date(now).toISOString(),search:search.diagnostics,forecast:forecast.diagnostics,editorial:editorial.diagnostics});
+  const [search,forecast,editorial,style]=await Promise.all([searchCollector({now}),forecastCollector({now}),editorialCollector({now}),styleCollector({now})]);
+  const collection={...source.collection,keywordCheckedAt:new Date(now).toISOString(),sourceRanks:[...(source.collection?.sourceRanks||[]),...search.sourceRanks,...forecast.sourceRanks,...editorial.sourceRanks,...style.sourceRanks],searchRankStatus:search.searchRankStatus,forecastStatus:forecast.forecastStatus,editorialStatus:[...editorial.editorialStatus,...style.editorialStatus]};
+  await atomicJson(path.join(directory,'logs/keyword-refresh-diagnostics.json'),{checkedAt:new Date(now).toISOString(),search:search.diagnostics,forecast:forecast.diagnostics,editorial:editorial.diagnostics,style:style.diagnostics});
   return publishCurated({directory,now,collection,keywordRefresh:true});
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(path.resolve(process.argv[1])).href)refreshKeywords().then(result=>console.log(`Keyword refresh complete: ${result.snapshot.keywords.length} current topics; ${result.snapshot.forecastKeywords.length} forecasts; ${result.snapshot.products.length} products. Product collection timestamp preserved; no Sheets operation.`)).catch(error=>{console.error(error.message);process.exitCode=1;});

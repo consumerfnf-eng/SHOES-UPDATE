@@ -80,7 +80,9 @@ export async function collectSignals({products,read,readPublic=readPublicSource,
     for(const url of urls) {
       const host=new URL(url).hostname.replace(/^www\./,'');
       const type=config.magazineDomains.some(d=>host===d||host.endsWith('.'+d))?'magazine':config.newsletterDomains.some(d=>host===d||host.endsWith('.'+d))?'newsletter':host==='instagram.com'?'sns':null;
-      if(!type)continue;
+      // Individual social posts are retained as source history, but never refreshed or
+      // scored as popularity. The volume-metric pipeline is the only SNS eligibility source.
+      if(!type||type==='sns')continue;
       try {
         let text=null;if(type!=='sns'){const html=await publicArticle(url);if(html)text=articleFromHtml(html);}
         if(!text&&read&&searchIds.has(p.id))text=await read(`https://r.jina.ai/${url}`);

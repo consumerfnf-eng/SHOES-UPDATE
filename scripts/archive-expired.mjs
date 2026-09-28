@@ -3,6 +3,7 @@ import path from 'node:path';
 import { createHash, createSign, randomUUID } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { backupKey,createArchiveStore } from './archive-store.mjs';
+import { releaseWindow,releaseState } from '../public/assets/release-window.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CELL_FIELDS = 'userEnteredValue,userEnteredFormat,dataValidation,chipRuns,textFormatRuns,note';
@@ -16,7 +17,6 @@ const hash = value => createHash('sha256').update(typeof value === 'string' ? va
 function canonical(value) { if (Array.isArray(value)) return '[' + value.map(canonical).join(',') + ']'; if (value && typeof value === 'object') return '{' + Object.keys(value).sort().map(k => JSON.stringify(k)+':'+canonical(value[k])).join(',') + '}'; return JSON.stringify(value); }
 const countryCode = value => ({GLOBAL:'GL',KOREA:'KR',CHINA:'CN',EUROPE:'EU',한국:'KR',중국:'CN',유럽:'EU',글로벌:'GL'}[String(value ?? '').toUpperCase()] || String(value ?? '').toUpperCase());
 function brandKey(value, config) { const key = normalize(value); return config.aliases?.[key] || key; }
-function validDate(value) { const d=new Date(value+'T00:00:00Z'); return /^\d{4}-\d{2}-\d{2}$/.test(value || '') && Number.isFinite(d.getTime()) && d.toISOString().slice(0,10) === value; }
 function http(value) { try { const u = new URL(value); return ['http:','https:'].includes(u.protocol); } catch { return false; } }
 export function cutoffDate(now = new Date()) {
   const d = new Date(now.getTime()+9*3600_000), year=d.getUTCFullYear(), month=d.getUTCMonth()-3;
@@ -26,10 +26,11 @@ export function eligibilityReason(product, now = new Date()) {
   if (product.eligibility?.passed !== true) return 'eligibility-not-verified';
   if (!['sneaker','clog','sandal','platform-sandal','hybrid'].includes(product.category)) return 'excluded-category';
   if (!Array.isArray(product.fit) || !product.fit.some(x=>['MLB','DISCOVERY'].includes(x))) return 'missing-brand-fit';
-  if (!validDate(product.releaseDate) || product.releaseStatus !== 'released') return 'unknown-release-date';
-  if (product.releaseDate >= cutoffDate(now)) return 'not-expired';
+  if (!releaseWindow(product) || product.releaseStatus !== 'released') return 'unknown-release-date';
+  const asOf = new Date(now.getTime()+9*3600_000).toISOString().slice(0,10);
+  if (releaseState(product,asOf) !== 'expired') return 'not-expired';
   const e = product.dateEvidence;
-  if (!e || e.verified !== true || e.precision !== 'day' || !http(e.url) || !e.excerpt || !Number.isFinite(Date.parse(e.verifiedAt))) return 'missing-release-evidence';
+  if (!e || e.verified !== true || !['day','month'].includes(e.precision) || !http(e.url) || !e.excerpt || !Number.isFinite(Date.parse(e.verifiedAt))) return 'missing-release-evidence';
   if(!http(product.productEvidenceUrl) || !Number.isFinite(Date.parse(product.lastVerifiedAt))) return 'missing-product-verification';
   if (!product.id || !product.brand || !product.name || !http(product.url) || !http(product.image)) return 'incomplete-product';
   return null;

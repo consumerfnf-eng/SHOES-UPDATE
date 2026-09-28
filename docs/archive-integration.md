@@ -52,8 +52,8 @@ node scripts/archive-expired.mjs --queue data/archive-queue.json --report data/a
 ```
 
 - 입력: `data/archive-queue.json`, `{schemaVersion:1, generatedAt, products:[...]}`.
-- 제품은 카테고리/MLB·DISCOVERY 적합성/검증 완료 상태, 정확한 출시일과 검증한 원문, 상품 원문 검증, 이미지·링크·국가가 있어야 합니다.
-- `releaseDate`가 한국시간 기준 달력상 3개월 경계보다 과거일 때만 이전합니다. 경계 당일은 신상품에 남습니다.
+- 제품은 카테고리/MLB·DISCOVERY 적합성/검증 완료 상태, 검증한 출시일 또는 출시월과 원문, 상품 원문 검증, 이미지·링크·국가가 있어야 합니다.
+- 일 단위 `releaseDate`가 한국시간 기준 달력상 3개월 경계보다 과거일 때만 이전합니다. 경계 당일은 신상품에 남습니다. 월 단위 증거는 `YYYY-MM`을 그대로 보존하며, 그 달의 마지막 날까지 경계보다 과거가 되었을 때만 이전합니다. 경계가 월 중간을 지나면 공개 목록에서 보류하되 아카이브에 성급히 추가하지 않습니다. 공개·아카이브 모두 `public/assets/release-window.mjs`의 같은 날짜 판정을 사용합니다.
 - 기존 원천 데이터와 큐를 삭제하지 않습니다. 다운로드에서 제외한 검증 근거는 새 아카이브 행에 넣지 않습니다.
 - 출력: `data/archive-report.json`의 `ready`, `pending`, `skipped`, `appended`.
 - 종료 코드: `0`은 검토/완료/처리할 항목 없음, `2`는 인증 설정 차단, `1`은 검증·통신 실패입니다. `0`이어도 `pending`은 미해결일 수 있으므로 확인해야 합니다.
