@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-28T07:56:02.000Z",
+  "checkedAt": "2026-09-29T00:00:00.000Z",
   "products": [
     {
       "id": "official-nike-ix8478-410",
@@ -1696,7 +1696,24 @@
       "productEvidenceUrl": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
       "description": "Bubble embroidered technical fabric and suede sneakers: crystal and sequin embroidery over a rounded, cushioned platform sole, revived from Miu Miu's early-2000s archive for the brand's AW26 runway.",
       "officialCategory": "Sneakers",
-      "gender": "WOMEN"
+      "gender": "WOMEN",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
+        "brand": "Miu Miu",
+        "style": "5E808E_3ZR4_F0304_F_A045",
+        "verifiedAt": "2026-09-29T00:00:00.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E808E/3ZR4F0304/5E808E_3ZR4_F0304_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.700.700.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
+        "brand": "Miu Miu",
+        "style": "5E808E_3ZR4_F0304_F_A045",
+        "verifiedAt": "2026-09-29T00:00:00.000Z"
+      },
+      "url": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E808E/3ZR4F0304/5E808E_3ZR4_F0304_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.700.700.jpg"
     },
     {
       "id": "zip-cecilie-asics-black-coffee",
@@ -1718,7 +1735,22 @@
       "description": "GEL-KINETIC FR sneaker collaboration between ASICS and Cecilie Bahnsen: a Mary-Jane inspired running-style upper secured with double velcro straps reimagining the ASICS Stripes, finished with floral appliques.",
       "officialCategory": "Sneakers",
       "priceLabel": "USD 220",
-      "country": "DK"
+      "country": "DK",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://ceciliebahnsen.com/products/asics-26-4-0001-gel-kinetic-fr-synthetic-leather-black-coffee",
+        "brand": "Cecilie Bahnsen",
+        "style": "26-4-0001",
+        "verifiedAt": "2026-09-29T00:00:00.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://ceciliebahnsen.com/cdn/shop/files/260616_Cecilie_Bahnsen_ECOM_111_4654.jpg?v=1787040313&width=1200",
+        "sourceUrl": "https://ceciliebahnsen.com/products/asics-26-4-0001-gel-kinetic-fr-synthetic-leather-black-coffee",
+        "brand": "Cecilie Bahnsen",
+        "style": "26-4-0001",
+        "verifiedAt": "2026-09-29T00:00:00.000Z"
+      }
     },
     {
       "id": "zip-cecilie-asics-silver",
@@ -1740,7 +1772,22 @@
       "description": "GEL-KINETIC FR sneaker collaboration between ASICS and Cecilie Bahnsen: a Mary-Jane inspired running-style upper secured with double velcro straps reimagining the ASICS Stripes, finished with floral appliques.",
       "officialCategory": "Sneakers",
       "priceLabel": "USD 220",
-      "country": "DK"
+      "country": "DK",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://ceciliebahnsen.com/products/asics-26-4-0002-gel-kinetic-fr-synthetic-leather-silver",
+        "brand": "Cecilie Bahnsen",
+        "style": "26-4-0002",
+        "verifiedAt": "2026-09-29T00:00:00.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://ceciliebahnsen.com/cdn/shop/files/260616_Cecilie_Bahnsen_ECOM_109_4777.jpg?v=1787040322&width=1200",
+        "sourceUrl": "https://ceciliebahnsen.com/products/asics-26-4-0002-gel-kinetic-fr-synthetic-leather-silver",
+        "brand": "Cecilie Bahnsen",
+        "style": "26-4-0002",
+        "verifiedAt": "2026-09-29T00:00:00.000Z"
+      }
     },
     {
       "id": "verified-moncler-citytrek-white-l209a4m00230n0633034",
@@ -1748,7 +1795,7 @@
       "name": "Moncler CityTrek Sneakers",
       "style": "L209A4M00230N0633034",
       "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
-      "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209A4M00230N0633034_F/image/moncler-citytrek-sneakers-men-white-moncler-0.jpg?w=1300&q=80",
+      "image": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633034_S/dpx6uv/std/1200x1200/L209A4M00230N0633034_S.jpg",
       "colorway": "White",
       "releaseDate": "2026-08-03",
       "dateEvidence": {
@@ -1764,7 +1811,728 @@
       "officialCategory": "Sneakers",
       "priceLabel": "USD 650",
       "gender": "MEN",
-      "country": "US"
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633034",
+        "verifiedAt": "2026-09-29T00:00:00.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633034_S/dpx6uv/std/1200x1200/L209A4M00230N0633034_S.jpg",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633034",
+        "verifiedAt": "2026-09-29T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-01op",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Optic White",
+      "style": "369405533C.01OP",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html",
+      "image": "https://image.celine.com/asset/5153a911-e9f9-47e9-9b33-a22f98fdd61b/369405533C-01OP_1_SPR27_M_V1.jpg",
+      "colorway": "Optic White",
+      "releaseDate": "2026-09-10",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html",
+      "description": "Reebok Freestyle Lo sneaker reimagined by Celine: a retro-heritage 1982 low-top silhouette revisited in Celine's leather, suede, and mesh materials as part of the CELINE/REEBOK collaboration.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 750",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html",
+        "brand": "Celine",
+        "style": "369405533C.01OP",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/5153a911-e9f9-47e9-9b33-a22f98fdd61b/369405533C-01OP_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html",
+        "brand": "Celine",
+        "style": "369405533C.01OP",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-02bg",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Beige",
+      "style": "369405533C.02BG",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html",
+      "image": "https://image.celine.com/asset/1100b5b4-363e-4a65-b7b0-ee44d6b99b16/Packshot-Large/369405533C-02BG_1_SPR27_M_V1.jpg",
+      "colorway": "Beige",
+      "releaseDate": "2026-09-10",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html",
+      "description": "Reebok Freestyle Lo sneaker reimagined by Celine: a retro-heritage 1982 low-top silhouette revisited in Celine's leather, suede, and mesh materials as part of the CELINE/REEBOK collaboration.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 750",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html",
+        "brand": "Celine",
+        "style": "369405533C.02BG",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/1100b5b4-363e-4a65-b7b0-ee44d6b99b16/Packshot-Large/369405533C-02BG_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html",
+        "brand": "Celine",
+        "style": "369405533C.02BG",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-03pt",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Peanut",
+      "style": "369405533C.03PT",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html",
+      "image": "https://image.celine.com/asset/a27f4c9e-d956-4b76-a910-d544942dfd60/369405533C-03PT_1_SPR27_M_V1.jpg",
+      "colorway": "Peanut",
+      "releaseDate": "2026-09-10",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html",
+      "description": "Reebok Freestyle Lo sneaker reimagined by Celine: a retro-heritage 1982 low-top silhouette revisited in Celine's leather, suede, and mesh materials as part of the CELINE/REEBOK collaboration.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 750",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html",
+        "brand": "Celine",
+        "style": "369405533C.03PT",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/a27f4c9e-d956-4b76-a910-d544942dfd60/369405533C-03PT_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html",
+        "brand": "Celine",
+        "style": "369405533C.03PT",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-11bu",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Butter",
+      "style": "369405533C.11BU",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html",
+      "image": "https://image.celine.com/asset/3096cb6a-1ab7-4c80-834d-ecec29cb719d/369405533C-11BU_1_SPR27_M_V1.jpg",
+      "colorway": "Butter",
+      "releaseDate": "2026-09-10",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html",
+      "description": "Reebok Freestyle Lo sneaker reimagined by Celine: a retro-heritage 1982 low-top silhouette revisited in Celine's leather, suede, and mesh materials as part of the CELINE/REEBOK collaboration.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 750",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html",
+        "brand": "Celine",
+        "style": "369405533C.11BU",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/3096cb6a-1ab7-4c80-834d-ecec29cb719d/369405533C-11BU_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html",
+        "brand": "Celine",
+        "style": "369405533C.11BU",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-19dk",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Dark Brown",
+      "style": "369405533C.19DK",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html",
+      "image": "https://image.celine.com/asset/26656259-51ba-45ef-8943-ee7876467487/369405533C-19DK_1_SPR27_M_V1.jpg",
+      "colorway": "Dark Brown",
+      "releaseDate": "2026-09-10",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html",
+      "description": "Reebok Freestyle Lo sneaker reimagined by Celine: a retro-heritage 1982 low-top silhouette revisited in Celine's leather, suede, and mesh materials as part of the CELINE/REEBOK collaboration.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 750",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html",
+        "brand": "Celine",
+        "style": "369405533C.19DK",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/26656259-51ba-45ef-8943-ee7876467487/369405533C-19DK_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html",
+        "brand": "Celine",
+        "style": "369405533C.19DK",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-27fr",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Fluo Red",
+      "style": "369405533C.27FR",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html",
+      "image": "https://image.celine.com/asset/8ef19258-4f6b-4890-9bdd-faab649353d7/369405533C-27FR_1_SPR27_M_V1.jpg",
+      "colorway": "Fluo Red",
+      "releaseDate": "2026-09-10",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html",
+      "description": "Reebok Freestyle Lo sneaker reimagined by Celine: a retro-heritage 1982 low-top silhouette revisited in Celine's leather, suede, and mesh materials as part of the CELINE/REEBOK collaboration.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 750",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html",
+        "brand": "Celine",
+        "style": "369405533C.27FR",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/8ef19258-4f6b-4890-9bdd-faab649353d7/369405533C-27FR_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html",
+        "brand": "Celine",
+        "style": "369405533C.27FR",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-28ms",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Oxblood",
+      "style": "369405533C.28MS",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html",
+      "image": "https://image.celine.com/asset/48d52834-72bd-449f-a34d-adb15027f4aa/369405533C-28MS_1_SPR27_M_V1.jpg",
+      "colorway": "Oxblood",
+      "releaseDate": "2026-09-10",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html",
+      "description": "Reebok Freestyle Lo sneaker reimagined by Celine: a retro-heritage 1982 low-top silhouette revisited in Celine's leather, suede, and mesh materials as part of the CELINE/REEBOK collaboration.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 750",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html",
+        "brand": "Celine",
+        "style": "369405533C.28MS",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/48d52834-72bd-449f-a34d-adb15027f4aa/369405533C-28MS_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html",
+        "brand": "Celine",
+        "style": "369405533C.28MS",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-38no",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Black",
+      "style": "369405533C.38NO",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html",
+      "image": "https://image.celine.com/asset/ab634932-fff9-46ee-809d-1457ed80f613/369405533C-38NO_1_SPR27_M_V1.jpg",
+      "colorway": "Black",
+      "releaseDate": "2026-09-10",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html",
+      "description": "Reebok Freestyle Lo sneaker reimagined by Celine: a retro-heritage 1982 low-top silhouette revisited in Celine's leather, suede, and mesh materials as part of the CELINE/REEBOK collaboration.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 750",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html",
+        "brand": "Celine",
+        "style": "369405533C.38NO",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/ab634932-fff9-46ee-809d-1457ed80f613/369405533C-38NO_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html",
+        "brand": "Celine",
+        "style": "369405533C.38NO",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-dior-hooper-white-navy-3sn376zdf-h009",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker White Canvas and Navy Blue Suede Calfskin",
+      "style": "3SN376ZDF_H009",
+      "url": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+      "image": "https://assets.christiandior.com/is/image/diorprod/3SN376ZDFH009_SBG_E02-5",
+      "colorway": "White Canvas and Navy Blue Suede Calfskin",
+      "releaseDate": "2026-07-02",
+      "dateEvidence": {
+        "url": "https://www.fashion-press.net/news/147430",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fashion Press / HOUYHNHNM (Japan): Dior Hooper low-top sneaker launched in Japan online and in boutiques on 2026-07-02, confirming three official low-top colorways designed by Jonathan Anderson."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+      "description": "Dior's retro take on the classic low-top team-sportswear sneaker, finished with contrasting white canvas and navy blue suede calfskin panels in a heritage two-tone silhouette designed by Jonathan Anderson.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 1,050",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+        "brand": "Dior",
+        "style": "3SN376ZDF_H009",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/3SN376ZDFH009_SBG_E02-5",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+        "brand": "Dior",
+        "style": "3SN376ZDF_H009",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-dior-hooper-black-oblique-3sn375aed-h960",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker Black Dior Oblique Jacquard and Black Suede Calfskin",
+      "style": "3SN375AED_H960",
+      "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+      "image": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH960_SBG_E02",
+      "colorway": "Black Dior Oblique Jacquard and Black Suede Calfskin",
+      "releaseDate": "2026-07-02",
+      "dateEvidence": {
+        "url": "https://www.fashion-press.net/news/147430",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fashion Press / HOUYHNHNM (Japan): Dior Hooper low-top sneaker launched in Japan online and in boutiques on 2026-07-02, confirming three official low-top colorways designed by Jonathan Anderson."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+      "description": "Dior's retro take on the classic low-top team-sportswear sneaker, finished with contrasting black Dior Oblique jacquard and black suede calfskin panels in a heritage tonal silhouette designed by Jonathan Anderson.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 1,100",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+        "brand": "Dior",
+        "style": "3SN375AED_H960",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH960_SBG_E02",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+        "brand": "Dior",
+        "style": "3SN375AED_H960",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-dior-hooper-beige-blue-3sn375aed-h560",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker Beige and Blue Dior Oblique Jacquard and Black Suede Calfskin",
+      "style": "3SN375AED_H560",
+      "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+      "image": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH560_SBG_E02",
+      "colorway": "Beige and Blue Dior Oblique Jacquard and Black Suede Calfskin",
+      "releaseDate": "2026-07-02",
+      "dateEvidence": {
+        "url": "https://www.fashion-press.net/news/147430",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fashion Press / HOUYHNHNM (Japan): Dior Hooper low-top sneaker launched in Japan online and in boutiques on 2026-07-02, confirming three official low-top colorways designed by Jonathan Anderson."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+      "description": "Dior's retro take on the classic low-top team-sportswear sneaker, finished with contrasting beige and blue Dior Oblique jacquard and black suede calfskin panels in a heritage two-tone silhouette designed by Jonathan Anderson.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 1,100",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+        "brand": "Dior",
+        "style": "3SN375AED_H560",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH560_SBG_E02",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+        "brand": "Dior",
+        "style": "3SN375AED_H560",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-lv-drop-300-black-1akp23",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Black",
+      "style": "1AKP23",
+      "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP23",
+      "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI02_PM1_Worn%20view.png",
+      "colorway": "Black",
+      "releaseDate": "2026-07",
+      "dateEvidence": {
+        "url": "https://freshmagparis.com/cette-sneaker-louis-vuitton-a-300-grammes-signee-pharrell-williams-est-la-paire-de-lete-2026/",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fresh Mag Paris (July 2026): the Louis Vuitton LV Drop 300 sneaker, designed by Pharrell Williams, began selling in July 2026 in Orange, Blue and Black; cross-referenced with Hypebeast JP's new-model release coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP23",
+      "description": "The LV Drop 300 sneaker takes its name from its exceptional weight of just 300 grams. The streamlined design references vintage running shoes from the 1990s, updated with contemporary technologies for lightness and flexibility, with a shock-absorbent rippled rubber outsole.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 970",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP23",
+        "brand": "Louis Vuitton",
+        "style": "1AKP23",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI02_PM1_Worn%20view.png",
+        "sourceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP23",
+        "brand": "Louis Vuitton",
+        "style": "1AKP23",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-lv-drop-300-orange-1akp11",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Orange",
+      "style": "1AKP11",
+      "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP11",
+      "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI11_PM1_Worn%20view.png",
+      "colorway": "Orange",
+      "releaseDate": "2026-07",
+      "dateEvidence": {
+        "url": "https://freshmagparis.com/cette-sneaker-louis-vuitton-a-300-grammes-signee-pharrell-williams-est-la-paire-de-lete-2026/",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fresh Mag Paris (July 2026): the Louis Vuitton LV Drop 300 sneaker, designed by Pharrell Williams, began selling in July 2026 in Orange, Blue and Black; cross-referenced with Hypebeast JP's new-model release coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP11",
+      "description": "The LV Drop 300 sneaker takes its name from its exceptional weight of just 300 grams. The streamlined design references vintage running shoes from the 1990s, updated with contemporary technologies for lightness and flexibility, with a shock-absorbent rippled rubber outsole.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 970",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP11",
+        "brand": "Louis Vuitton",
+        "style": "1AKP11",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI11_PM1_Worn%20view.png",
+        "sourceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP11",
+        "brand": "Louis Vuitton",
+        "style": "1AKP11",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-lv-drop-300-blue-1akp2m",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Blue",
+      "style": "1AKP2M",
+      "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP2M",
+      "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI20_PM1_Worn%20view.png",
+      "colorway": "Blue",
+      "releaseDate": "2026-07",
+      "dateEvidence": {
+        "url": "https://freshmagparis.com/cette-sneaker-louis-vuitton-a-300-grammes-signee-pharrell-williams-est-la-paire-de-lete-2026/",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fresh Mag Paris (July 2026): the Louis Vuitton LV Drop 300 sneaker, designed by Pharrell Williams, began selling in July 2026 in Orange, Blue and Black; cross-referenced with Hypebeast JP's new-model release coverage."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP2M",
+      "description": "The LV Drop 300 sneaker takes its name from its exceptional weight of just 300 grams. The streamlined design references vintage running shoes from the 1990s, updated with contemporary technologies for lightness and flexibility, with a shock-absorbent rippled rubber outsole.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 970",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP2M",
+        "brand": "Louis Vuitton",
+        "style": "1AKP2M",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI20_PM1_Worn%20view.png",
+        "sourceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP2M",
+        "brand": "Louis Vuitton",
+        "style": "1AKP2M",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-gucci-drip-sand-brown-a00a2sfagmq9656",
+      "brand": "Gucci",
+      "name": "Men's Drip sneaker in sand and brown GG canvas",
+      "style": "A00A2SFAGMQ9656",
+      "url": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1782836125/A00A2S_FAGMQ_9656_015_100_0000_Light-mens-drip-sneaker.jpg",
+      "colorway": "Sand and Brown GG Canvas",
+      "releaseDate": "2026-08",
+      "dateEvidence": {
+        "url": "https://www.straitstimes.com/life/style/guccis-new-made-in-china-sneaker-models-break-with-italian-tradition",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Straits Times (Reuters wire): Gucci's Drip sneaker, Demna's first sneaker model for the house, began retail sale in August 2026."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656",
+      "description": "Demna's first Gucci sneaker: an ultra-minimal street-style basketball-inspired silhouette with the slip-on ease of a loafer, streamlined upper and rubber sole.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 1,050",
+      "gender": "MEN",
+      "country": "US",
+      "footwearReview": {
+        "approved": true,
+        "type": "sneaker",
+        "brand": "Gucci",
+        "style": "A00A2SFAGMQ9656",
+        "url": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656",
+        "brand": "Gucci",
+        "style": "A00A2SFAGMQ9656",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1782836125/A00A2S_FAGMQ_9656_015_100_0000_Light-mens-drip-sneaker.jpg",
+        "sourceUrl": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656",
+        "brand": "Gucci",
+        "style": "A00A2SFAGMQ9656",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-moncler-citytrek-ivory-l209a4m00230n0633050",
+      "brand": "Moncler",
+      "name": "Moncler CityTrek Sneakers",
+      "style": "L209A4M00230N0633050",
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
+      "image": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633050_S/dpx6uv/std/1200x1200/L209A4M00230N0633050_S.jpg",
+      "colorway": "White Ivory",
+      "releaseDate": "2026-08-03",
+      "dateEvidence": {
+        "url": "https://www.moncler.com/en-se/city-trek-trail-sneakers",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Official Moncler CityTrek campaign page confirms the trail-sneaker model is part of the current collection; cross-referenced with Fashion Press Japan and HOUYHNHNM coverage confirming the model's launch and Japan store/online sell-through beginning 2026-08-03."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
+      "description": "CityTrek technical outdoor-inspired trail sneaker combining nylon, suede and leather with a breathable Cordura front panel, cushioned midsole and Vibram gum outsole for everyday city movement.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 650",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633050",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633050_S/dpx6uv/std/1200x1200/L209A4M00230N0633050_S.jpg",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633050",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-moncler-citytrek-black-l209a4m00230n0633999",
+      "brand": "Moncler",
+      "name": "Moncler CityTrek Sneakers",
+      "style": "L209A4M00230N0633999",
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html",
+      "image": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633999_S/dpx6uv/std/1200x1200/L209A4M00230N0633999_S.jpg",
+      "colorway": "Black",
+      "releaseDate": "2026-08-03",
+      "dateEvidence": {
+        "url": "https://www.moncler.com/en-se/city-trek-trail-sneakers",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Official Moncler CityTrek campaign page confirms the trail-sneaker model is part of the current collection; cross-referenced with Fashion Press Japan and HOUYHNHNM coverage confirming the model's launch and Japan store/online sell-through beginning 2026-08-03."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html",
+      "description": "CityTrek technical outdoor-inspired trail sneaker combining nylon, suede and leather with a breathable Cordura front panel, cushioned midsole and Vibram gum outsole for everyday city movement.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 650",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633999",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633999_S/dpx6uv/std/1200x1200/L209A4M00230N0633999_S.jpg",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633999",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "verified-moncler-citytrek-sagegreen-l209a4m00230n0633818",
+      "brand": "Moncler",
+      "name": "Moncler CityTrek Sneakers",
+      "style": "L209A4M00230N0633818",
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html",
+      "image": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633818_S/dpx6uv/std/1200x1200/L209A4M00230N0633818_S.jpg",
+      "colorway": "Sage Green",
+      "releaseDate": "2026-08-03",
+      "dateEvidence": {
+        "url": "https://www.moncler.com/en-se/city-trek-trail-sneakers",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Official Moncler CityTrek campaign page confirms the trail-sneaker model is part of the current collection; cross-referenced with Fashion Press Japan and HOUYHNHNM coverage confirming the model's launch and Japan store/online sell-through beginning 2026-08-03."
+      },
+      "productVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html",
+      "description": "CityTrek technical outdoor-inspired trail sneaker combining nylon, suede and leather with a breathable Cordura front panel, cushioned midsole and Vibram gum outsole for everyday city movement.",
+      "officialCategory": "Sneakers",
+      "priceLabel": "USD 650",
+      "gender": "MEN",
+      "country": "US",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633818",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633818_S/dpx6uv/std/1200x1200/L209A4M00230N0633818_S.jpg",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633818",
+        "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-09-28T07:57:52.622Z",
-  "periodStart": "2026-06-28",
-  "asOf": "2026-09-28",
+  "publishedAt": "2026-09-28T23:52:26.872Z",
+  "periodStart": "2026-06-29",
+  "asOf": "2026-09-29",
   "brands": [
     {
       "id": "louis-vuitton",
@@ -486,7 +486,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-high-og-royal",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -548,7 +548,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -619,7 +619,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-low-og-howard-college-navy-and-university-red",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "red-crimson",
@@ -688,7 +688,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/genesis-2-gtx-li9188/L49302000",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "trail-gorpcore"
@@ -755,7 +755,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210700",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -826,7 +826,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213700",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -889,7 +889,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213200",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -955,7 +955,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49211100",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -1019,7 +1019,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215400",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -1087,7 +1087,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215200",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -1155,7 +1155,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49214800",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -1186,7 +1186,7 @@
       ],
       "modelKey": "nike|nikeairbakinhighsp",
       "releaseDate": "2026-09-29",
-      "releaseStatus": "upcoming",
+      "releaseStatus": "released",
       "dateEvidence": {
         "url": "https://www.nike.com/launch",
         "precision": "day",
@@ -1231,7 +1231,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-bakin-high-sp-black-and-varsity-red",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -1296,7 +1296,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-low-og-black-and-white-1",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1361,7 +1361,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/women-s-air-jordan-5-sunset",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -1458,7 +1458,7 @@
       "productEvidenceUrl": "https://www.nike.com/tw/launch/t/air-max-plus-one-piece-gomu-gomu",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "character-collaboration",
@@ -1531,7 +1531,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52804.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -1608,7 +1608,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52802.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -1685,7 +1685,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-foamposite-pro-black-and-multi-color",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "low-profile"
@@ -1758,7 +1758,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-uk-991v1-luxe-suede/M991V1_LI-FTW-826837.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "brown",
@@ -1833,7 +1833,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/nike-sb-air-force-1-yuto-light-bone-and-iron-grey",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -1907,7 +1907,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/womens-tennis-centre-x-kallmeyer-travertine",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "suede"
@@ -2007,7 +2007,7 @@
       "productEvidenceUrl": "https://palmes.co/products/palmes-for-converse-jack-purcell-green-canvas",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "canvas"
@@ -2109,7 +2109,7 @@
       "productEvidenceUrl": "https://palmes.co/products/palmes-for-converse-jack-purcell-navy-suede",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "suede"
@@ -2214,7 +2214,7 @@
       "productEvidenceUrl": "https://eu.puma.com/es/es/pd/zapatillas-puma-x-j.l-a.l_-cell-geo-1-cage-unisex/406687?swatch=01",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -2320,7 +2320,7 @@
       "productEvidenceUrl": "https://eu.puma.com/ie/en/pd/puma-x-jl-al-cell-geo-1-cage-sneakers-unisex/406687?swatch=02",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -2334,6 +2334,652 @@
         "material:mesh",
         "color:brown",
         "brand:puma"
+      ]
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-02bg",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Beige",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "celine|freestylelobycelinereeboksneakerbeige",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html",
+      "image": "https://image.celine.com/asset/1100b5b4-363e-4a65-b7b0-ee44d6b99b16/Packshot-Large/369405533C-02BG_1_SPR27_M_V1.jpg",
+      "style": "369405533C.02BG",
+      "colorway": "Beige",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 750",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.02BG"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/1100b5b4-363e-4a65-b7b0-ee44d6b99b16/Packshot-Large/369405533C-02BG_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.02BG"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "brand:celine"
+      ]
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-38no",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Black",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "celine|freestylelobycelinereeboksneakerblack",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html",
+      "image": "https://image.celine.com/asset/ab634932-fff9-46ee-809d-1457ed80f613/369405533C-38NO_1_SPR27_M_V1.jpg",
+      "style": "369405533C.38NO",
+      "colorway": "Black",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 750",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.38NO"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/ab634932-fff9-46ee-809d-1457ed80f613/369405533C-38NO_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.38NO"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "color:black",
+        "brand:celine"
+      ]
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-11bu",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Butter",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "celine|freestylelobycelinereeboksneakerbutter",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html",
+      "image": "https://image.celine.com/asset/3096cb6a-1ab7-4c80-834d-ecec29cb719d/369405533C-11BU_1_SPR27_M_V1.jpg",
+      "style": "369405533C.11BU",
+      "colorway": "Butter",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 750",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.11BU"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/3096cb6a-1ab7-4c80-834d-ecec29cb719d/369405533C-11BU_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.11BU"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "brand:celine"
+      ]
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-19dk",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Dark Brown",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "celine|freestylelobycelinereeboksneakerdarkbrown",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html",
+      "image": "https://image.celine.com/asset/26656259-51ba-45ef-8943-ee7876467487/369405533C-19DK_1_SPR27_M_V1.jpg",
+      "style": "369405533C.19DK",
+      "colorway": "Dark Brown",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 750",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.19DK"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/26656259-51ba-45ef-8943-ee7876467487/369405533C-19DK_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.19DK"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "brown",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "color:brown",
+        "brand:celine"
+      ]
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-27fr",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Fluo Red",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "celine|freestylelobycelinereeboksneakerfluored",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html",
+      "image": "https://image.celine.com/asset/8ef19258-4f6b-4890-9bdd-faab649353d7/369405533C-27FR_1_SPR27_M_V1.jpg",
+      "style": "369405533C.27FR",
+      "colorway": "Fluo Red",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 750",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.27FR"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/8ef19258-4f6b-4890-9bdd-faab649353d7/369405533C-27FR_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.27FR"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "red-crimson",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "color:red",
+        "brand:celine"
+      ]
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-01op",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Optic White",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "celine|freestylelobycelinereeboksneakeropticwhite",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html",
+      "image": "https://image.celine.com/asset/5153a911-e9f9-47e9-9b33-a22f98fdd61b/369405533C-01OP_1_SPR27_M_V1.jpg",
+      "style": "369405533C.01OP",
+      "colorway": "Optic White",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 750",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.01OP"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/5153a911-e9f9-47e9-9b33-a22f98fdd61b/369405533C-01OP_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.01OP"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "color:white",
+        "brand:celine"
+      ]
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-28ms",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Oxblood",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "celine|freestylelobycelinereeboksneakeroxblood",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html",
+      "image": "https://image.celine.com/asset/48d52834-72bd-449f-a34d-adb15027f4aa/369405533C-28MS_1_SPR27_M_V1.jpg",
+      "style": "369405533C.28MS",
+      "colorway": "Oxblood",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 750",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.28MS"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/48d52834-72bd-449f-a34d-adb15027f4aa/369405533C-28MS_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.28MS"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "brand:celine"
+      ]
+    },
+    {
+      "id": "verified-celine-reebok-freestyle-lo-03pt",
+      "brand": "Celine",
+      "name": "Freestyle Lo by Celine/Reebok Sneaker - Peanut",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "celine|freestylelobycelinereeboksneakerpeanut",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://wwd.com/footwear-news/sneaker-news/celine-reebok-freestyle-lo-sneaker-release-date-1239200585/",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "WWD (2026-09-08): 'The shoe will be release on Sept. 10.' Confirms the Celine/Reebok Freestyle Lo's first online sale date across all 8 official colorways, cross-referenced with Marie Claire's fall 2026 collaboration coverage."
+      },
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html",
+      "image": "https://image.celine.com/asset/a27f4c9e-d956-4b76-a910-d544942dfd60/369405533C-03PT_1_SPR27_M_V1.jpg",
+      "style": "369405533C.03PT",
+      "colorway": "Peanut",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 750",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.03PT"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://image.celine.com/asset/a27f4c9e-d956-4b76-a910-d544942dfd60/369405533C-03PT_1_SPR27_M_V1.jpg",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Celine",
+        "style": "369405533C.03PT"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "brand:celine"
       ]
     },
     {
@@ -2393,7 +3039,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-1300/U1300V1-52809.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -2464,7 +3110,7 @@
       "productEvidenceUrl": "https://www.adidas.ae/en/adidas-x-tyrrell-winston-climacool-4d-shoes/KJ7669.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -2530,7 +3176,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/sydney-levrone-9060r/U9060RV1_LI-FTW-855217.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -2602,7 +3248,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/WFCXV5_RU-FTW-852606.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -2671,7 +3317,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/MFCXV5_RU-FTW-852604.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -2742,7 +3388,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52803.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -2817,7 +3463,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-993/U993V1-52816.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -2876,13 +3522,28 @@
       "officialCategory": "스니커즈",
       "sourceSignals": [],
       "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://ceciliebahnsen.com/products/asics-26-4-0001-gel-kinetic-fr-synthetic-leather-black-coffee",
+        "verifiedAt": "2026-09-29T00:00:00.000Z",
+        "brand": "Cecilie Bahnsen",
+        "style": "26-4-0001"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://ceciliebahnsen.com/cdn/shop/files/260616_Cecilie_Bahnsen_ECOM_111_4654.jpg?v=1787040313&width=1200",
+        "sourceUrl": "https://ceciliebahnsen.com/products/asics-26-4-0001-gel-kinetic-fr-synthetic-leather-black-coffee",
+        "verifiedAt": "2026-09-29T00:00:00.000Z",
+        "brand": "Cecilie Bahnsen",
+        "style": "26-4-0001"
+      },
       "collaborationBrands": [],
       "popularity": {
         "magazine": false,
         "newsletter": false,
         "media": false,
         "sns": false,
-        "brand": false,
+        "brand": true,
         "ecommerce": false
       },
       "archiveGroup": "contemporary",
@@ -2891,7 +3552,7 @@
       "productEvidenceUrl": "https://ceciliebahnsen.com/products/asics-26-4-0001-gel-kinetic-fr-synthetic-leather-black-coffee",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "brown",
@@ -2947,13 +3608,28 @@
       "officialCategory": "스니커즈",
       "sourceSignals": [],
       "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://ceciliebahnsen.com/products/asics-26-4-0002-gel-kinetic-fr-synthetic-leather-silver",
+        "verifiedAt": "2026-09-29T00:00:00.000Z",
+        "brand": "Cecilie Bahnsen",
+        "style": "26-4-0002"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://ceciliebahnsen.com/cdn/shop/files/260616_Cecilie_Bahnsen_ECOM_109_4777.jpg?v=1787040322&width=1200",
+        "sourceUrl": "https://ceciliebahnsen.com/products/asics-26-4-0002-gel-kinetic-fr-synthetic-leather-silver",
+        "verifiedAt": "2026-09-29T00:00:00.000Z",
+        "brand": "Cecilie Bahnsen",
+        "style": "26-4-0002"
+      },
       "collaborationBrands": [],
       "popularity": {
         "magazine": false,
         "newsletter": false,
         "media": false,
         "sns": false,
-        "brand": false,
+        "brand": true,
         "ecommerce": false
       },
       "archiveGroup": "contemporary",
@@ -2962,7 +3638,7 @@
       "productEvidenceUrl": "https://ceciliebahnsen.com/products/asics-26-4-0002-gel-kinetic-fr-synthetic-leather-silver",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mary-jane"
@@ -3033,7 +3709,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/1890p/U1890PV1_LI-FTW-837876.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -3100,7 +3776,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/750/U750V1_LI-FTW-851089-PMG-NA.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "canvas"
@@ -3170,7 +3846,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-uk-991v2/U991V2_LI-FTW-829161.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -3241,7 +3917,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/ald-x-new-balance-gator-run-hairy-suede/UGTRV1_LI-FTW-859792.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "suede"
@@ -3311,7 +3987,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/327/WS327V1-41747-PMG-NA-BROWN2.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -3385,7 +4061,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/204v/U204V2W0-D-05.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "low-profile",
@@ -3461,7 +4137,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/204v/U204V2PT-D-05.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "low-profile",
@@ -3535,7 +4211,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/supercomp-rebel/MREBXV1_RU-FTW-814193-PMG-NA.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "metallic-silver"
@@ -3603,7 +4279,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/supercomp-rebel/WREBXV1_RU-FTW-814192-PMG-NA.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "metallic-silver"
@@ -3678,7 +4354,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/tds-mt2/MT2V1_LI-FTW-857722.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -3750,7 +4426,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/night-lights-740%E2%80%8B/U740V2_LI-FTW-885192.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -3824,7 +4500,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/night-lights-9060r%E2%80%8B/U9060RV1_LI-FTW-873793.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -3896,7 +4572,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/night-lights-abzorb-2000%E2%80%8B/U2000V1_LI-FTW-873796.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -3925,7 +4601,8 @@
       ],
       "fitReasons": [
         "일상 스포츠 캐주얼·실루엣 참고",
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+        "럭셔리 스니커즈 디자인 참고"
       ],
       "modelKey": "miu miu|bubble embroidered technical fabric and suede sneakers",
       "releaseDate": "2026-08-03",
@@ -3951,17 +4628,32 @@
       "gender": "WOMEN",
       "material": "",
       "priceLabel": "",
-      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
       "officialCategory": "스니커즈",
       "sourceSignals": [],
       "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
+        "verifiedAt": "2026-09-29T00:00:00.000Z",
+        "brand": "Miu Miu",
+        "style": "5E808E_3ZR4_F0304_F_A045"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E808E/3ZR4F0304/5E808E_3ZR4_F0304_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.700.700.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
+        "verifiedAt": "2026-09-29T00:00:00.000Z",
+        "brand": "Miu Miu",
+        "style": "5E808E_3ZR4_F0304_F_A045"
+      },
       "collaborationBrands": [],
       "popularity": {
         "magazine": false,
         "newsletter": false,
         "media": false,
         "sns": false,
-        "brand": false,
+        "brand": true,
         "ecommerce": false
       },
       "archiveGroup": "luxury",
@@ -3970,7 +4662,7 @@
       "productEvidenceUrl": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "brown",
@@ -3994,10 +4686,12 @@
       "category": "sneaker",
       "productType": "sneaker",
       "fit": [
-        "DISCOVERY"
+        "DISCOVERY",
+        "MLB"
       ],
       "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+        "럭셔리 스니커즈 디자인 참고"
       ],
       "modelKey": "moncler|monclercitytreksneakers",
       "releaseDate": "2026-08-03",
@@ -4010,24 +4704,39 @@
         "excerpt": "Official Moncler CityTrek campaign page confirms the trail-sneaker model is part of the current collection; cross-referenced with Fashion Press Japan and HOUYHNHNM coverage confirming the model's launch and Japan store/online sell-through beginning 2026-08-03."
       },
       "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
-      "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209A4M00230N0633034_F/image/moncler-citytrek-sneakers-men-white-moncler-0.jpg?w=1300&q=80",
+      "image": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633034_S/dpx6uv/std/1200x1200/L209A4M00230N0633034_S.jpg",
       "style": "L209A4M00230N0633034",
       "colorway": "White",
       "colors": [],
       "gender": "MEN",
       "material": "",
       "priceLabel": "USD 650",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
       "officialCategory": "스니커즈",
       "sourceSignals": [],
       "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
+        "verifiedAt": "2026-09-29T00:00:00.000Z",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633034"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633034_S/dpx6uv/std/1200x1200/L209A4M00230N0633034_S.jpg",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
+        "verifiedAt": "2026-09-29T00:00:00.000Z",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633034"
+      },
       "collaborationBrands": [],
       "popularity": {
         "magazine": false,
         "newsletter": false,
         "media": false,
         "sns": false,
-        "brand": false,
+        "brand": true,
         "ecommerce": false
       },
       "archiveGroup": "luxury",
@@ -4036,7 +4745,7 @@
       "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-09-28"
+        "checkedAt": "2026-09-29"
       },
       "keywordTags": [
         "trail-gorpcore",
@@ -4050,27 +4759,845 @@
         "style:gorpcore",
         "brand:moncler"
       ]
+    },
+    {
+      "id": "verified-moncler-citytrek-ivory-l209a4m00230n0633050",
+      "brand": "Moncler",
+      "name": "Moncler CityTrek Sneakers",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY",
+        "MLB"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "moncler|monclercitytreksneakers",
+      "releaseDate": "2026-08-03",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.moncler.com/en-se/city-trek-trail-sneakers",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Official Moncler CityTrek campaign page confirms the trail-sneaker model is part of the current collection; cross-referenced with Fashion Press Japan and HOUYHNHNM coverage confirming the model's launch and Japan store/online sell-through beginning 2026-08-03."
+      },
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
+      "image": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633050_S/dpx6uv/std/1200x1200/L209A4M00230N0633050_S.jpg",
+      "style": "L209A4M00230N0633050",
+      "colorway": "White Ivory",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 650",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633050"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633050_S/dpx6uv/std/1200x1200/L209A4M00230N0633050_S.jpg",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633050"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "trail-gorpcore",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:white",
+        "use:trail",
+        "style:gorpcore",
+        "brand:moncler"
+      ]
+    },
+    {
+      "id": "verified-moncler-citytrek-black-l209a4m00230n0633999",
+      "brand": "Moncler",
+      "name": "Moncler CityTrek Sneakers",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY",
+        "MLB"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "moncler|monclercitytreksneakers",
+      "releaseDate": "2026-08-03",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.moncler.com/en-se/city-trek-trail-sneakers",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Official Moncler CityTrek campaign page confirms the trail-sneaker model is part of the current collection; cross-referenced with Fashion Press Japan and HOUYHNHNM coverage confirming the model's launch and Japan store/online sell-through beginning 2026-08-03."
+      },
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html",
+      "image": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633999_S/dpx6uv/std/1200x1200/L209A4M00230N0633999_S.jpg",
+      "style": "L209A4M00230N0633999",
+      "colorway": "Black",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 650",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633999"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633999_S/dpx6uv/std/1200x1200/L209A4M00230N0633999_S.jpg",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633999"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "trail-gorpcore",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "use:trail",
+        "style:gorpcore",
+        "brand:moncler"
+      ]
+    },
+    {
+      "id": "verified-moncler-citytrek-sagegreen-l209a4m00230n0633818",
+      "brand": "Moncler",
+      "name": "Moncler CityTrek Sneakers",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY",
+        "MLB"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "moncler|monclercitytreksneakers",
+      "releaseDate": "2026-08-03",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.moncler.com/en-se/city-trek-trail-sneakers",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Official Moncler CityTrek campaign page confirms the trail-sneaker model is part of the current collection; cross-referenced with Fashion Press Japan and HOUYHNHNM coverage confirming the model's launch and Japan store/online sell-through beginning 2026-08-03."
+      },
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html",
+      "image": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633818_S/dpx6uv/std/1200x1200/L209A4M00230N0633818_S.jpg",
+      "style": "L209A4M00230N0633818",
+      "colorway": "Sage Green",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 650",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633818"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://moncler-cdn.thron.com/delivery/public/image/moncler/L209A4M00230N0633818_S/dpx6uv/std/1200x1200/L209A4M00230N0633818_S.jpg",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Moncler",
+        "style": "L209A4M00230N0633818"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "trail-gorpcore",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "use:trail",
+        "style:gorpcore",
+        "brand:moncler"
+      ]
+    },
+    {
+      "id": "verified-gucci-drip-sand-brown-a00a2sfagmq9656",
+      "brand": "Gucci",
+      "name": "Men's Drip sneaker in sand and brown GG canvas",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "gucci|mensdripsneakerinsandandbrownggcanvas",
+      "releaseDate": "2026-08",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.straitstimes.com/life/style/guccis-new-made-in-china-sneaker-models-break-with-italian-tradition",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Straits Times (Reuters wire): Gucci's Drip sneaker, Demna's first sneaker model for the house, began retail sale in August 2026."
+      },
+      "verifiedReleaseWindow": {
+        "start": "2026-08-01",
+        "end": "2026-08-31"
+      },
+      "url": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1782836125/A00A2S_FAGMQ_9656_015_100_0000_Light-mens-drip-sneaker.jpg",
+      "style": "A00A2SFAGMQ9656",
+      "colorway": "Sand and Brown GG Canvas",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 1,050",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "footwearReview": {
+        "approved": true,
+        "type": "sneaker",
+        "brand": "Gucci",
+        "style": "A00A2SFAGMQ9656",
+        "url": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656"
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Gucci",
+        "style": "A00A2SFAGMQ9656"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1782836125/A00A2S_FAGMQ_9656_015_100_0000_Light-mens-drip-sneaker.jpg",
+        "sourceUrl": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Gucci",
+        "style": "A00A2SFAGMQ9656"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "brown",
+        "canvas"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:canvas",
+        "color:brown",
+        "brand:gucci"
+      ]
+    },
+    {
+      "id": "verified-dior-hooper-beige-blue-3sn375aed-h560",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker Beige and Blue Dior Oblique Jacquard and Black Suede Calfskin",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "dior|diorhooperlowtopsneakerbeigeandbluediorobliquejacquardandblacksuedecalfskin",
+      "releaseDate": "2026-07-02",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.fashion-press.net/news/147430",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fashion Press / HOUYHNHNM (Japan): Dior Hooper low-top sneaker launched in Japan online and in boutiques on 2026-07-02, confirming three official low-top colorways designed by Jonathan Anderson."
+      },
+      "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+      "image": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH560_SBG_E02",
+      "style": "3SN375AED_H560",
+      "colorway": "Beige and Blue Dior Oblique Jacquard and Black Suede Calfskin",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "USD 1,100",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN375AED_H560"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH560_SBG_E02",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN375AED_H560"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "color:black",
+        "brand:dior"
+      ]
+    },
+    {
+      "id": "verified-dior-hooper-black-oblique-3sn375aed-h960",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker Black Dior Oblique Jacquard and Black Suede Calfskin",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "dior|diorhooperlowtopsneakerblackdiorobliquejacquardandblacksuedecalfskin",
+      "releaseDate": "2026-07-02",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.fashion-press.net/news/147430",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fashion Press / HOUYHNHNM (Japan): Dior Hooper low-top sneaker launched in Japan online and in boutiques on 2026-07-02, confirming three official low-top colorways designed by Jonathan Anderson."
+      },
+      "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+      "image": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH960_SBG_E02",
+      "style": "3SN375AED_H960",
+      "colorway": "Black Dior Oblique Jacquard and Black Suede Calfskin",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "USD 1,100",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN375AED_H960"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH960_SBG_E02",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN375AED_H960"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "color:black",
+        "brand:dior"
+      ]
+    },
+    {
+      "id": "verified-dior-hooper-white-navy-3sn376zdf-h009",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker White Canvas and Navy Blue Suede Calfskin",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "dior|diorhooperlowtopsneakerwhitecanvasandnavybluesuedecalfskin",
+      "releaseDate": "2026-07-02",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.fashion-press.net/news/147430",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fashion Press / HOUYHNHNM (Japan): Dior Hooper low-top sneaker launched in Japan online and in boutiques on 2026-07-02, confirming three official low-top colorways designed by Jonathan Anderson."
+      },
+      "url": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+      "image": "https://assets.christiandior.com/is/image/diorprod/3SN376ZDFH009_SBG_E02-5",
+      "style": "3SN376ZDF_H009",
+      "colorway": "White Canvas and Navy Blue Suede Calfskin",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "USD 1,050",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN376ZDF_H009"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/3SN376ZDFH009_SBG_E02-5",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN376ZDF_H009"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [
+        "suede",
+        "canvas"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "material:canvas",
+        "color:white",
+        "brand:dior"
+      ]
+    },
+    {
+      "id": "verified-lv-drop-300-black-1akp23",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Black",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY",
+        "MLB"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "louisvuitton|lvdrop300sneakerblack",
+      "releaseDate": "2026-07",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://freshmagparis.com/cette-sneaker-louis-vuitton-a-300-grammes-signee-pharrell-williams-est-la-paire-de-lete-2026/",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fresh Mag Paris (July 2026): the Louis Vuitton LV Drop 300 sneaker, designed by Pharrell Williams, began selling in July 2026 in Orange, Blue and Black; cross-referenced with Hypebeast JP's new-model release coverage."
+      },
+      "verifiedReleaseWindow": {
+        "start": "2026-07-01",
+        "end": "2026-07-31"
+      },
+      "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP23",
+      "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI02_PM1_Worn%20view.png",
+      "style": "1AKP23",
+      "colorway": "Black",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 970",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP23",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Louis Vuitton",
+        "style": "1AKP23"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI02_PM1_Worn%20view.png",
+        "sourceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP23",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Louis Vuitton",
+        "style": "1AKP23"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP23",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "color:black",
+        "brand:louisvuitton"
+      ]
+    },
+    {
+      "id": "verified-lv-drop-300-blue-1akp2m",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Blue",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY",
+        "MLB"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "louisvuitton|lvdrop300sneakerblue",
+      "releaseDate": "2026-07",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://freshmagparis.com/cette-sneaker-louis-vuitton-a-300-grammes-signee-pharrell-williams-est-la-paire-de-lete-2026/",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fresh Mag Paris (July 2026): the Louis Vuitton LV Drop 300 sneaker, designed by Pharrell Williams, began selling in July 2026 in Orange, Blue and Black; cross-referenced with Hypebeast JP's new-model release coverage."
+      },
+      "verifiedReleaseWindow": {
+        "start": "2026-07-01",
+        "end": "2026-07-31"
+      },
+      "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP2M",
+      "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI20_PM1_Worn%20view.png",
+      "style": "1AKP2M",
+      "colorway": "Blue",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 970",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP2M",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Louis Vuitton",
+        "style": "1AKP2M"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI20_PM1_Worn%20view.png",
+        "sourceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP2M",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Louis Vuitton",
+        "style": "1AKP2M"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP2M",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "brand:louisvuitton"
+      ]
+    },
+    {
+      "id": "verified-lv-drop-300-orange-1akp11",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Orange",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY",
+        "MLB"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "louisvuitton|lvdrop300sneakerorange",
+      "releaseDate": "2026-07",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://freshmagparis.com/cette-sneaker-louis-vuitton-a-300-grammes-signee-pharrell-williams-est-la-paire-de-lete-2026/",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fresh Mag Paris (July 2026): the Louis Vuitton LV Drop 300 sneaker, designed by Pharrell Williams, began selling in July 2026 in Orange, Blue and Black; cross-referenced with Hypebeast JP's new-model release coverage."
+      },
+      "verifiedReleaseWindow": {
+        "start": "2026-07-01",
+        "end": "2026-07-31"
+      },
+      "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP11",
+      "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI11_PM1_Worn%20view.png",
+      "style": "1AKP11",
+      "colorway": "Orange",
+      "colors": [],
+      "gender": "MEN",
+      "material": "",
+      "priceLabel": "USD 970",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP11",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Louis Vuitton",
+        "style": "1AKP11"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-drop-300-sneaker--BWU0A8MI11_PM1_Worn%20view.png",
+        "sourceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP11",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Louis Vuitton",
+        "style": "1AKP11"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP11",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-09-29"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "brand:louisvuitton"
+      ]
     }
   ],
   "keywordMethod": "verified-style-source-rank-v2",
-  "keywordCheckedAt": "2026-09-28T07:57:52.622Z",
+  "keywordCheckedAt": "2026-09-28T23:52:26.872Z",
   "sourceRanks": [
     {
       "platform": "musinsa",
       "term": "러닝화",
-      "rank": 76,
+      "rank": 85,
       "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
       "verified": true,
       "kind": "search-rank",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "musinsa:2026-09-28T07:57:52.622Z:584d6cb8af302b40",
-      "sourceUpdatedAt": "09.28 16:40, 기준",
+      "snapshotId": "musinsa:2026-09-28T08:09:49.223Z:37f8f54d0c221d30",
+      "sourceUpdatedAt": "09.28 17:00, 기준",
       "scope": "all",
       "country": "KR",
       "platformName": "무신사",
       "sourceTitle": "인기 검색어",
-      "contentHash": "584d6cb8af302b409ec79b7aca2ee8372c5321b0cf59578d4c3f6b808ae28ceb",
+      "contentHash": "37f8f54d0c221d3041bbd3923696e0b580a90fad27fa37878401350652fb3164",
       "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
       "rankBasis": "official-numbered-search-list"
     },
@@ -4081,9 +5608,9 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-09-28T07:57:52.622Z:f81bcee6971a82e8",
+      "snapshotId": "wgsn-ss27-colours:2026-09-28T08:09:49.223Z:f81bcee6971a82e8",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
       "contentHash": "f81bcee6971a82e8d57398969a6680946b05a36a22027893c4d0235efcc38aaa",
@@ -4094,7 +5621,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-09-28T07:57:52.622Z",
+      "verifiedAt": "2026-09-28T08:09:49.223Z",
       "applicability": "cross-category"
     },
     {
@@ -4104,9 +5631,9 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-09-28T07:57:52.622Z:f81bcee6971a82e8",
+      "snapshotId": "wgsn-ss27-colours:2026-09-28T08:09:49.223Z:f81bcee6971a82e8",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
       "contentHash": "f81bcee6971a82e8d57398969a6680946b05a36a22027893c4d0235efcc38aaa",
@@ -4117,7 +5644,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-09-28T07:57:52.622Z",
+      "verifiedAt": "2026-09-28T08:09:49.223Z",
       "applicability": "sports-and-outdoor"
     },
     {
@@ -4127,9 +5654,9 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-09-28T07:57:52.622Z:f81bcee6971a82e8",
+      "snapshotId": "wgsn-ss27-colours:2026-09-28T08:09:49.223Z:f81bcee6971a82e8",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
       "contentHash": "f81bcee6971a82e8d57398969a6680946b05a36a22027893c4d0235efcc38aaa",
@@ -4140,7 +5667,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-09-28T07:57:52.622Z",
+      "verifiedAt": "2026-09-28T08:09:49.223Z",
       "applicability": "cross-category"
     },
     {
@@ -4150,9 +5677,9 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-09-28T07:57:52.622Z:f81bcee6971a82e8",
+      "snapshotId": "wgsn-ss27-colours:2026-09-28T08:09:49.223Z:f81bcee6971a82e8",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
       "contentHash": "f81bcee6971a82e8d57398969a6680946b05a36a22027893c4d0235efcc38aaa",
@@ -4163,7 +5690,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-09-28T07:57:52.622Z",
+      "verifiedAt": "2026-09-28T08:09:49.223Z",
       "applicability": "footwear-explicit"
     },
     {
@@ -4173,9 +5700,9 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-09-28T07:57:52.622Z:f81bcee6971a82e8",
+      "snapshotId": "wgsn-ss27-colours:2026-09-28T08:09:49.223Z:f81bcee6971a82e8",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
       "contentHash": "f81bcee6971a82e8d57398969a6680946b05a36a22027893c4d0235efcc38aaa",
@@ -4186,7 +5713,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-09-28T07:57:52.622Z",
+      "verifiedAt": "2026-09-28T08:09:49.223Z",
       "applicability": "cross-category"
     },
     {
@@ -4196,9 +5723,9 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+      "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4214,9 +5741,9 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+      "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4232,9 +5759,9 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+      "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4250,9 +5777,9 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+      "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4268,9 +5795,9 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+      "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4286,9 +5813,9 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+      "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4304,9 +5831,9 @@
       "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "glamour-style:2026-09-28T07:57:52.622Z:3ffe25a1ce8b1927",
+      "snapshotId": "glamour-style:2026-09-28T08:09:49.223Z:3ffe25a1ce8b1927",
       "scope": "footwear",
       "platformName": "Glamour",
       "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
@@ -4322,9 +5849,9 @@
       "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "glamour-style:2026-09-28T07:57:52.622Z:3ffe25a1ce8b1927",
+      "snapshotId": "glamour-style:2026-09-28T08:09:49.223Z:3ffe25a1ce8b1927",
       "scope": "footwear",
       "platformName": "Glamour",
       "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
@@ -4340,9 +5867,9 @@
       "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-09-28T07:57:52.622Z",
+      "capturedAt": "2026-09-28T08:09:49.223Z",
       "rankingPeriod": null,
-      "snapshotId": "glamour-style:2026-09-28T07:57:52.622Z:3ffe25a1ce8b1927",
+      "snapshotId": "glamour-style:2026-09-28T08:09:49.223Z:3ffe25a1ce8b1927",
       "scope": "footwear",
       "platformName": "Glamour",
       "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
@@ -4372,6 +5899,9 @@
         "official-salomon-l49215200",
         "official-salomon-l49215400",
         "official-salomon-l49302000",
+        "verified-lv-drop-300-black-1akp23",
+        "verified-lv-drop-300-blue-1akp2m",
+        "verified-lv-drop-300-orange-1akp11",
         "verified-new-balance-mfcx8e5",
         "verified-new-balance-mrebx4fh",
         "verified-new-balance-u1300ss",
@@ -4389,30 +5919,30 @@
         "zip-cecilie-asics-black-coffee",
         "zip-cecilie-asics-silver"
       ],
-      "matchedProductCount": 22,
+      "matchedProductCount": 25,
       "sourceRanks": [
         {
           "platform": "musinsa",
           "term": "러닝화",
-          "rank": 76,
+          "rank": 85,
           "sourceUrl": "https://www.musinsa.com/main/musinsa/recommend",
           "verified": true,
           "kind": "search-rank",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "musinsa:2026-09-28T07:57:52.622Z:584d6cb8af302b40",
-          "sourceUpdatedAt": "09.28 16:40, 기준",
+          "snapshotId": "musinsa:2026-09-28T08:09:49.223Z:37f8f54d0c221d30",
+          "sourceUpdatedAt": "09.28 17:00, 기준",
           "scope": "all",
           "country": "KR",
           "platformName": "무신사",
           "sourceTitle": "인기 검색어",
-          "contentHash": "584d6cb8af302b409ec79b7aca2ee8372c5321b0cf59578d4c3f6b808ae28ceb",
+          "contentHash": "37f8f54d0c221d3041bbd3923696e0b580a90fad27fa37878401350652fb3164",
           "evidenceUrl": "https://api.musinsa.com/api2/dp/v1/keyword/search-home?popularCount=100&gf=A",
           "rankBasis": "official-numbered-search-list"
         }
       ],
       "sourceCount": 1,
-      "score": 0.013157894736842105,
+      "score": 0.011764705882352941,
       "rank": 1,
       "rankingStatus": "ranked"
     },
@@ -4436,9 +5966,9 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+          "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4463,9 +5993,20 @@
         "빈티지 로우톱"
       ],
       "productIds": [
-        "official-nike-ir0088-001"
+        "official-nike-ir0088-001",
+        "verified-celine-reebok-freestyle-lo-01op",
+        "verified-celine-reebok-freestyle-lo-02bg",
+        "verified-celine-reebok-freestyle-lo-03pt",
+        "verified-celine-reebok-freestyle-lo-11bu",
+        "verified-celine-reebok-freestyle-lo-19dk",
+        "verified-celine-reebok-freestyle-lo-27fr",
+        "verified-celine-reebok-freestyle-lo-28ms",
+        "verified-celine-reebok-freestyle-lo-38no",
+        "verified-dior-hooper-beige-blue-3sn375aed-h560",
+        "verified-dior-hooper-black-oblique-3sn375aed-h960",
+        "verified-dior-hooper-white-navy-3sn376zdf-h009"
       ],
-      "matchedProductCount": 1,
+      "matchedProductCount": 12,
       "sourceRanks": [
         {
           "platform": "whowhatwear-style",
@@ -4474,9 +6015,9 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+          "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4511,6 +6052,20 @@
         "official-nike-ix8478-410",
         "official-salomon-l49210700",
         "official-salomon-l49210800",
+        "verified-celine-reebok-freestyle-lo-01op",
+        "verified-celine-reebok-freestyle-lo-02bg",
+        "verified-celine-reebok-freestyle-lo-03pt",
+        "verified-celine-reebok-freestyle-lo-11bu",
+        "verified-celine-reebok-freestyle-lo-19dk",
+        "verified-celine-reebok-freestyle-lo-27fr",
+        "verified-celine-reebok-freestyle-lo-28ms",
+        "verified-celine-reebok-freestyle-lo-38no",
+        "verified-dior-hooper-beige-blue-3sn375aed-h560",
+        "verified-dior-hooper-black-oblique-3sn375aed-h960",
+        "verified-dior-hooper-white-navy-3sn376zdf-h009",
+        "verified-lv-drop-300-black-1akp23",
+        "verified-lv-drop-300-blue-1akp2m",
+        "verified-lv-drop-300-orange-1akp11",
         "verified-new-balance-u1300ss",
         "verified-new-balance-u20001k7",
         "verified-new-balance-u204v2pt",
@@ -4523,7 +6078,7 @@
         "verified-new-balance-ugtr4dy",
         "verified-new-balance-w327apc"
       ],
-      "matchedProductCount": 21,
+      "matchedProductCount": 35,
       "sourceRanks": [
         {
           "platform": "whowhatwear-style",
@@ -4532,9 +6087,9 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+          "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4572,9 +6127,9 @@
           "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "glamour-style:2026-09-28T07:57:52.622Z:3ffe25a1ce8b1927",
+          "snapshotId": "glamour-style:2026-09-28T08:09:49.223Z:3ffe25a1ce8b1927",
           "scope": "footwear",
           "platformName": "Glamour",
           "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
@@ -4613,9 +6168,9 @@
           "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "glamour-style:2026-09-28T07:57:52.622Z:3ffe25a1ce8b1927",
+          "snapshotId": "glamour-style:2026-09-28T08:09:49.223Z:3ffe25a1ce8b1927",
           "scope": "footwear",
           "platformName": "Glamour",
           "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
@@ -4631,9 +6186,9 @@
           "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "glamour-style:2026-09-28T07:57:52.622Z:3ffe25a1ce8b1927",
+          "snapshotId": "glamour-style:2026-09-28T08:09:49.223Z:3ffe25a1ce8b1927",
           "scope": "footwear",
           "platformName": "Glamour",
           "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
@@ -4668,9 +6223,9 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+          "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4705,9 +6260,9 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+          "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4743,9 +6298,9 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-09-28T07:57:52.622Z:8399cb54a8d78ad5",
+          "snapshotId": "whowhatwear-style:2026-09-28T08:09:49.223Z:8399cb54a8d78ad5",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
@@ -4780,9 +6335,9 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-09-28T07:57:52.622Z:f81bcee6971a82e8",
+          "snapshotId": "wgsn-ss27-colours:2026-09-28T08:09:49.223Z:f81bcee6971a82e8",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
           "contentHash": "f81bcee6971a82e8d57398969a6680946b05a36a22027893c4d0235efcc38aaa",
@@ -4793,7 +6348,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-09-28T07:57:52.622Z",
+          "verifiedAt": "2026-09-28T08:09:49.223Z",
           "applicability": "cross-category"
         }
       ],
@@ -4820,9 +6375,9 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-09-28T07:57:52.622Z:f81bcee6971a82e8",
+          "snapshotId": "wgsn-ss27-colours:2026-09-28T08:09:49.223Z:f81bcee6971a82e8",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
           "contentHash": "f81bcee6971a82e8d57398969a6680946b05a36a22027893c4d0235efcc38aaa",
@@ -4833,7 +6388,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-09-28T07:57:52.622Z",
+          "verifiedAt": "2026-09-28T08:09:49.223Z",
           "applicability": "cross-category"
         }
       ],
@@ -4860,9 +6415,9 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-09-28T07:57:52.622Z:f81bcee6971a82e8",
+          "snapshotId": "wgsn-ss27-colours:2026-09-28T08:09:49.223Z:f81bcee6971a82e8",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
           "contentHash": "f81bcee6971a82e8d57398969a6680946b05a36a22027893c4d0235efcc38aaa",
@@ -4873,7 +6428,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-09-28T07:57:52.622Z",
+          "verifiedAt": "2026-09-28T08:09:49.223Z",
           "applicability": "cross-category"
         }
       ],
@@ -4900,9 +6455,9 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-09-28T07:57:52.622Z:f81bcee6971a82e8",
+          "snapshotId": "wgsn-ss27-colours:2026-09-28T08:09:49.223Z:f81bcee6971a82e8",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
           "contentHash": "f81bcee6971a82e8d57398969a6680946b05a36a22027893c4d0235efcc38aaa",
@@ -4913,7 +6468,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-09-28T07:57:52.622Z",
+          "verifiedAt": "2026-09-28T08:09:49.223Z",
           "applicability": "footwear-explicit"
         }
       ],
@@ -4940,9 +6495,9 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-09-28T07:57:52.622Z",
+          "capturedAt": "2026-09-28T08:09:49.223Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-09-28T07:57:52.622Z:f81bcee6971a82e8",
+          "snapshotId": "wgsn-ss27-colours:2026-09-28T08:09:49.223Z:f81bcee6971a82e8",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
           "contentHash": "f81bcee6971a82e8d57398969a6680946b05a36a22027893c4d0235efcc38aaa",
@@ -4953,7 +6508,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-09-28T07:57:52.622Z",
+          "verifiedAt": "2026-09-28T08:09:49.223Z",
           "applicability": "sports-and-outdoor"
         }
       ],
@@ -4968,13 +6523,13 @@
       "platform": "musinsa",
       "name": "무신사",
       "url": "https://www.musinsa.com/main/musinsa/recommend",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "reason": null,
       "count": 100,
-      "sourceUpdatedAt": "09.28 16:40, 기준",
+      "sourceUpdatedAt": "09.28 17:00, 기준",
       "rankingPeriod": null,
-      "snapshotId": "musinsa:2026-09-28T07:57:52.622Z:584d6cb8af302b40",
+      "snapshotId": "musinsa:2026-09-28T08:09:49.223Z:37f8f54d0c221d30",
       "kind": "search-rank",
       "country": "KR"
     },
@@ -4982,13 +6537,13 @@
       "platform": "29cm",
       "name": "29CM",
       "url": "https://www.29cm.co.kr/store/search/start",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "reason": null,
       "count": 30,
       "sourceUpdatedAt": "09.28 기준",
       "rankingPeriod": null,
-      "snapshotId": "29cm:2026-09-28T07:57:52.622Z:22c3a642546548f1",
+      "snapshotId": "29cm:2026-09-28T08:09:49.223Z:009c8f28d026d4a6",
       "kind": "search-rank",
       "country": "KR"
     },
@@ -4996,47 +6551,15 @@
       "platform": "tiktok",
       "name": "TikTok Creative Center",
       "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?region=KR&period=7",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "reason": null,
       "count": 3,
       "sourceUpdatedAt": null,
       "rankingPeriod": "7 days",
-      "snapshotId": "tiktok:2026-09-28T07:57:52.622Z:f20833f4382e8ace",
+      "snapshotId": "tiktok:2026-09-28T08:09:49.223Z:0737803dbb0cc22a",
       "kind": "hashtag-rank",
       "country": "KR"
-    },
-    {
-      "platform": "tagwalk",
-      "name": "Tagwalk",
-      "url": "https://www2.tag-walk.com/es/",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
-      "status": "available",
-      "reason": null,
-      "count": 5,
-      "sourceUpdatedAt": "2026-09-27",
-      "rankingPeriod": "20 Sep 2026 – 27 Sep 2026",
-      "snapshotId": "tagwalk:2026-09-28T07:57:52.622Z:2c5c57c2ce500c2d",
-      "kind": "composite-rank",
-      "country": "Global",
-      "reportId": "tagwalk-traffic:20 Sep 2026:27 Sep 2026",
-      "periodEnd": "2026-09-27"
-    },
-    {
-      "platform": "lyst",
-      "name": "Lyst Index",
-      "url": "https://www.lyst.com/the-lyst-index/Q2-26/",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
-      "status": "available",
-      "reason": null,
-      "count": 20,
-      "sourceUpdatedAt": "2026-06-30",
-      "rankingPeriod": "Q2 2026",
-      "snapshotId": "lyst:2026-09-28T07:57:52.622Z:31a64a12a59fcc54",
-      "kind": "composite-rank",
-      "country": "Global",
-      "reportId": "lyst:Q2-26",
-      "periodEnd": "2026-06-30"
     },
     {
       "platform": "instagram",
@@ -5125,13 +6648,13 @@
       "platform": "wgsn-ss27-colours",
       "name": "WGSN",
       "url": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "validUntil": "2027-08-31",
       "forecastPeriod": "S/S 2027",
       "status": "available",
       "automatedStatus": "available",
       "verificationMethod": "public-source-fetch",
-      "verifiedAt": "2026-09-28T07:57:52.622Z",
+      "verifiedAt": "2026-09-28T08:09:49.223Z",
       "count": 5,
       "reason": null
     },
@@ -5140,7 +6663,7 @@
       "name": "F-Trend",
       "url": "https://f-trend.com/",
       "status": "unsupported",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "reason": "공개 전망 원문을 검증하지 못했습니다. 회원 전용 본문은 사용하지 않습니다."
     },
     {
@@ -5148,7 +6671,7 @@
       "name": "Trendstop",
       "url": "https://www.trendstop.com/",
       "status": "unsupported",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "reason": "공개 전망 원문을 검증하지 못했습니다. 회원 전용 본문은 사용하지 않습니다."
     },
     {
@@ -5156,7 +6679,7 @@
       "name": "WGSN 기타 전망",
       "url": "https://www.wgsn.com/",
       "status": "unsupported",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "reason": "검토한 공개 S/S27 색상 글 외 유료 보고서는 사용하지 않습니다."
     }
   ],
@@ -5166,7 +6689,7 @@
       "name": "Sneaker Bar Detroit",
       "url": "https://sneakerbardetroit.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -5176,7 +6699,7 @@
       "name": "Hypebeast",
       "url": "https://hypebeast.com/footwear",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -5186,7 +6709,7 @@
       "name": "Highsnobiety",
       "url": "https://www.highsnobiety.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -5196,7 +6719,7 @@
       "name": "Sneaker News",
       "url": "https://sneakernews.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -5206,7 +6729,7 @@
       "name": "The Sneaker Newsletter",
       "url": "https://www.thesneakernewsletter.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -5216,7 +6739,7 @@
       "name": "The Dassler",
       "url": "https://thedassler.substack.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -5226,7 +6749,7 @@
       "name": "Who What Wear",
       "url": "https://www.whowhatwear.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "count": 6,
       "reason": null
@@ -5236,7 +6759,7 @@
       "name": "Glamour",
       "url": "https://www.glamour.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "available",
       "count": 3,
       "reason": null
@@ -5246,7 +6769,7 @@
       "name": "Vogue",
       "url": "https://www.vogue.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-09-28T07:57:52.622Z",
+      "checkedAt": "2026-09-28T08:09:49.223Z",
       "status": "unavailable",
       "count": 0,
       "reason": "최근 30일 스타일 트렌드 원문 확인 불가"
@@ -6373,8 +7896,8 @@
       "SNS는 확인된 검색량·해시태그 게시물량을 지표와 기간별로 구분합니다. 미공개 수치는 0으로 대체하지 않습니다."
     ],
     "counts": {
-      "source": 2376,
-      "published": 49,
+      "source": 2394,
+      "published": 67,
       "held": 2327,
       "expired": 0
     }

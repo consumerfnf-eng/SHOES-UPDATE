@@ -62,7 +62,8 @@
       "captureLimit": 5,
       "rankBasis": "platform-explicit-brand-traffic-rank",
       "rankingDefinition": "Tagwalk 트래픽에 따른 브랜드 순위",
-      "enabled": true
+      "enabled": false,
+      "disabledReason": "브랜드 인기 순위이며 신발 스타일 키워드가 아님 - 이번 주 인기 키워드에서 제외"
     },
     {
       "id": "lyst",
@@ -75,7 +76,8 @@
       "captureLimit": 20,
       "rankBasis": "platform-explicit-quarterly-brand-rank",
       "rankingDefinition": "Lyst Index 분기별 브랜드 복합 인기 순위",
-      "enabled": true
+      "enabled": false,
+      "disabledReason": "브랜드 인기 순위이며 신발 스타일 키워드가 아님 - 이번 주 인기 키워드에서 제외"
     }
   ],
   "unavailable": [
