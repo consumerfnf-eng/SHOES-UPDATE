@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-28T23:52:26.872Z",
+  "checkedAt": "2026-09-29T00:44:19.888Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -1290,12 +1290,6 @@
       "id": "p005",
       "brand": "Nike",
       "name": "Kobe Air Force 1 Low",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "p011",
-      "brand": "On",
-      "name": "Cloud X Tempo Pro",
       "reason": "footwear-type-unverified"
     },
     {
@@ -12900,7 +12894,7 @@
       "id": "live-9563ad057c29e77e",
       "brand": "Reebok",
       "name": "Nano X5 Training Shoes () Fall Savings Event | Up to",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "live-76f069e08d07e1c0",
@@ -13380,7 +13374,7 @@
       "id": "live-863532e7e9d922f8",
       "brand": "Reebok",
       "name": "Men's Nano 2.0 Training Shoes",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "live-056678727ed8966c",

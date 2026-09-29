@@ -10,7 +10,8 @@ const supportedOrigins={
   '29cm-search':'https://display-bff-api.29cm.co.kr',
   'tiktok-hashtags':'https://ads.tiktok.com',
   'tagwalk-traffic':'https://www2.tag-walk.com',
-  'lyst-brand-index':'https://www.lyst.com'
+  'lyst-brand-index':'https://www.lyst.com',
+  'eql-search':'https://www.eqlstore.com'
 };
 const validTerm=value=>typeof value==='string'&&value.trim().length>0&&value.length<=160&&!/[\u0000-\u001f\u007f]/.test(value);
 function calendarInstant(value) {
@@ -21,12 +22,13 @@ function calendarInstant(value) {
   return date.getUTCFullYear()===year&&date.getUTCMonth()===month&&date.getUTCDate()===day?date.getTime():NaN;
 }
 
-export async function readSearchSource(url,{method='GET',requestBody,fetchImpl=fetch}={}) {
-  if(method==='GET')return readPublicSource(url,{fetchImpl});
+export async function readSearchSource(url,{method='GET',requestBody,fetchImpl=fetch,userAgent,accept}={}) {
+  const headers={...(userAgent?{'User-Agent':userAgent}:{}),...(accept?{'Accept':accept}:{})};
+  if(method==='GET')return readPublicSource(url,{fetchImpl,headers});
   if(method!=='POST')throw Error('SEARCH_METHOD_UNREVIEWED');
   // This documented-by-page POST reads the public hashtag list; it creates no resource.
   return readPublicSource(url,{fetchImpl:(target,options)=>fetchImpl(target,{...options,method,
-    headers:{...options.headers,'Content-Type':'application/json'},body:JSON.stringify(requestBody)})});
+    headers:{...options.headers,'Content-Type':'application/json'},body:JSON.stringify(requestBody)}),headers});
 }
 
 export function latestLystReport(index,{now=new Date()}={}) {
@@ -41,7 +43,11 @@ export function latestLystReport(index,{now=new Date()}={}) {
 }
 
 export function parseSearchKeywordSnapshot(text,source,{capturedAt}={}) {
-  const data=['tagwalk-traffic','lyst-brand-index'].includes(source.adapter)?null:JSON.parse(text);
+  let data=null;
+  if(!['tagwalk-traffic','lyst-brand-index'].includes(source.adapter)) {
+    try { data=JSON.parse(text); }
+    catch(error) { if(source.adapter!=='eql-search')throw error; }
+  }
   let entries,sourceUpdatedAt=null,sourceTitle,kind='search-rank',rankingPeriod=source.rankingPeriod??null,report={};
   if(source.adapter==='musinsa-search') {
     if(data.meta?.result!=='SUCCESS')throw Error('SEARCH_SOURCE_UNSUCCESSFUL');
@@ -85,6 +91,22 @@ export function parseSearchKeywordSnapshot(text,source,{capturedAt}={}) {
     if(entries.length!==20||entries.some((row,index)=>row.rank!==index+1))throw Error('LYST_CHART_UNVERIFIED');
     sourceTitle='Hottest Brands';kind='composite-rank';sourceUpdatedAt=source.periodEnd;
     report={reportId:source.reportId,periodStart:source.periodStart,periodEnd:source.periodEnd,latestPeriodVerified:true,metric:'quarterly-brand-popularity',validUntil:new Date(Date.parse(source.periodEnd)+180*86400000).toISOString().slice(0,10),validityBasis:'공식 Index에서 최신 완료 분기 확인 · 분기 종료일부터 180일 이내'};
+  } else if(source.adapter==='eql-search') {
+    // The public endpoint returns the same numbered list used by the EQL search UI.
+    // It is JSON for the collector's public-source Accept header and may be HTML
+    // for a browser-like request, so accept either representation without ranking
+    // the separate rising-keyword list.
+    if(Array.isArray(data?.hotKeyword)) {
+      entries=data.hotKeyword.map(row=>({term:row.KEYWORD,rank:Number(row.RANKING)}));
+      sourceTitle='인기 검색어';sourceUpdatedAt=data.riseKeyword?.[0]?.INDEX_DATE||null;
+    } else {
+      const list=text.match(/<ul id="hotKeywordList"[^>]*>([\s\S]*?)<\/ul>/);
+      if(!list)throw Error('EQL_LIST_UNVERIFIED');
+      entries=[...list[1].matchAll(/<span class="rank">(\d+)<\/span>\s*<span class="txt">([^<]+)<\/span>/g)].map(match=>({term:htmlText(match[2]),rank:Number(match[1])}));
+      const dateMatch=text.match(/인기 검색어<\/p>\s*<div class="tit_date">([\d.]+ [\d:]+)<\/div>/);
+      if(!dateMatch)throw Error('EQL_DATE_UNVERIFIED');
+      sourceTitle='인기 검색어';sourceUpdatedAt=dateMatch[1];
+    }
   } else throw Error('SEARCH_ADAPTER_UNSUPPORTED');
   if(!entries.length||entries.some(row=>!validTerm(row.term)||!Number.isInteger(row.rank)||row.rank<1))throw Error('SEARCH_ROWS_INVALID');
   if(new Set(entries.map(row=>row.rank)).size!==entries.length||new Set(entries.map(row=>row.term)).size!==entries.length)throw Error('SEARCH_ROWS_DUPLICATED');
@@ -129,7 +151,11 @@ export async function collectSearchKeywords({config,now=new Date(),readPublic=re
         base.url=report.url;
         await preserveSnapshot(auditDir,{...indexSource,id:'lyst-index'},index,{sourceUpdatedAt:report.periodEnd,contentHash:createHash('sha256').update(index).digest('hex'),snapshotId:`lyst-index:${capturedAt}`},capturedAt);
       }
-      const text=await readPublic(source.apiUrl,{method:source.method==='POST'?'POST':'GET',requestBody:source.requestBody}),parsed=parseSearchKeywordSnapshot(text,source,{capturedAt});
+      const requestOptions={method:source.method==='POST'?'POST':'GET'};
+      if(source.requestBody!==undefined)requestOptions.requestBody=source.requestBody;
+      if(source.userAgent!==undefined)requestOptions.userAgent=source.userAgent;
+      if(source.accept!==undefined)requestOptions.accept=source.accept;
+      const text=await readPublic(source.apiUrl,requestOptions),parsed=parseSearchKeywordSnapshot(text,source,{capturedAt});
       await preserveSnapshot(auditDir,source,text,parsed,capturedAt);
       return {sourceRanks:parsed.sourceRanks,status:{...base,status:'available',reason:null,
         count:parsed.sourceRanks.length,sourceUpdatedAt:parsed.sourceUpdatedAt,rankingPeriod:parsed.rankingPeriod,snapshotId:parsed.snapshotId,kind:parsed.sourceRanks[0]?.kind,country:source.country,...(parsed.reportId?{reportId:parsed.reportId,periodEnd:parsed.periodEnd}:{})},

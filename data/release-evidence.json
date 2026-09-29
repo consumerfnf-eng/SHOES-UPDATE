@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-29T00:00:00.000Z",
+  "checkedAt": "2026-09-29T03:00:00.000Z",
   "products": [
     {
       "id": "official-nike-ix8478-410",
@@ -2532,6 +2532,52 @@
         "brand": "Moncler",
         "style": "L209A4M00230N0633818",
         "verifiedAt": "2026-09-28T08:19:13.000Z"
+      }
+    },
+    {
+      "id": "p011",
+      "brand": "On",
+      "name": "Cloud X Tempo Pro",
+      "style": "3MH10335109",
+      "url": "https://www.on.com/en-kr/products/cloud-x-tempo-pro-m-3mh1033/mens/white-celeste-shoes-3MH10335109",
+      "image": "https://images.ctfassets.net/hnk2vsx53n6l/372W5iM3NwVYSOULer5pUR/f6575ea0227d29e5f432eee0393bc1be/d7b1946603c52d741257dc931af0613bdc9758de.png?fm=webp",
+      "productType": "sneaker",
+      "officialCategory": "Training shoes",
+      "country": "KR",
+      "gender": "MEN",
+      "colorway": "White / Celeste",
+      "releaseDate": "2026-08",
+      "dateEvidence": {
+        "url": "https://www.on.com/en-kr/products/cloud-x-tempo-pro-m-3mh1033/mens/white-celeste-shoes-3MH10335109",
+        "precision": "month",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-15T07:58:53+09:00",
+        "region": "KR",
+        "field": "reviewed-seed-release-month",
+        "excerpt": "기존 검토 기록에 2026년 8월 공식 출시월로 보존된 Cloud X Tempo Pro 제품 페이지."
+      },
+      "description": "Worn by Alexander Rončević for hybrid fitness racing, this is your high-performance shoe for responsiveness, power and traction on all surfaces.",
+      "productEvidenceUrl": "https://www.on.com/en-kr/products/cloud-x-tempo-pro-m-3mh1033/mens/white-celeste-shoes-3MH10335109",
+      "productVerifiedAt": "2026-09-29T03:00:00.000Z",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "On",
+        "style": "3MH10335109",
+        "verifiedAt": "2026-09-29T03:00:00.000Z",
+        "verificationMethod": "official-product-jsonld-sku-image",
+        "contentHash": "a5b6b37bff29cf7ca41fc9a4cf1c63770aade4022284d1dfc54aa17b6cabfc4f",
+        "url": "https://www.on.com/en-kr/products/cloud-x-tempo-pro-m-3mh1033/mens/white-celeste-shoes-3MH10335109"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "On",
+        "style": "3MH10335109",
+        "verifiedAt": "2026-09-29T03:00:00.000Z",
+        "verificationMethod": "official-product-jsonld-sku-image",
+        "contentHash": "a5b6b37bff29cf7ca41fc9a4cf1c63770aade4022284d1dfc54aa17b6cabfc4f",
+        "url": "https://images.ctfassets.net/hnk2vsx53n6l/372W5iM3NwVYSOULer5pUR/f6575ea0227d29e5f432eee0393bc1be/d7b1946603c52d741257dc931af0613bdc9758de.png?fm=webp",
+        "sourceUrl": "https://www.on.com/en-kr/products/cloud-x-tempo-pro-m-3mh1033/mens/white-celeste-shoes-3MH10335109"
       }
     }
   ]

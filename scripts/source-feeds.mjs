@@ -1,9 +1,9 @@
 import {canonicalBrand,httpUrl,kstDay} from './curation.mjs';
 
 // Only public, reviewed origins are passed by the collector. No cookies or API keys.
-export async function readPublicSource(url,{fetchImpl=fetch,maxBytes=2_000_000}={}) {
+export async function readPublicSource(url,{fetchImpl=fetch,maxBytes=2_000_000,headers={}}={}) {
   if(!httpUrl(url))throw Error('PUBLIC_SOURCE_URL_INVALID');
-  const response=await fetchImpl(url,{signal:AbortSignal.timeout(20000),redirect:'error',headers:{'User-Agent':'SHOES-UPDATE/1.0 (public source verification)','Accept':'application/rss+xml, application/atom+xml, application/json, text/html;q=0.8'}});
+  const response=await fetchImpl(url,{signal:AbortSignal.timeout(20000),redirect:'error',headers:{'User-Agent':'SHOES-UPDATE/1.0 (public source verification)','Accept':'application/rss+xml, application/atom+xml, application/json, text/html;q=0.8',...headers}});
   if(!response.ok)throw Error(`PUBLIC_SOURCE_HTTP_${response.status}`);
   if(Number(response.headers.get('content-length'))>maxBytes)throw Error('PUBLIC_SOURCE_TOO_LARGE');
   const reader=response.body.getReader();let size=0;const chunks=[];

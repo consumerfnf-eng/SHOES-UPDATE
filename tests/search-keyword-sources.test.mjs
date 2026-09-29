@@ -6,13 +6,14 @@ import {join} from 'node:path';
 import {collectSearchKeywords,parseSearchKeywordSnapshot,readSearchSource,latestLystReport} from '../scripts/collect-search-keywords.mjs';
 
 const config=JSON.parse(await readFile(new URL('../config/search-keyword-sources.json',import.meta.url),'utf8'));
-const [musinsa,cm,tiktok]=config.sources,now=new Date('2026-09-28T05:00:00Z'),capturedAt=now.toISOString();
+const musinsa=config.sources.find(row=>row.id==='musinsa'),cm=config.sources.find(row=>row.id==='29cm'),tiktok=config.sources.find(row=>row.id==='tiktok'),now=new Date('2026-09-28T05:00:00Z'),capturedAt=now.toISOString();
 const musinsaBody=JSON.stringify({meta:{result:'SUCCESS'},data:{componentList:[
   {key:'rising',meta:{title:'급상승 검색어'},items:[{text:'Fake rising',rankIncrement:99}]},
   {key:'popular',meta:{title:'인기 검색어',updateDate:'09.28 14:00, 기준'},items:[{text:'아디다스',rankIncrement:50},{text:'New Balance',rankIncrement:-7}]}
 ]}});
 const cmBody=JSON.stringify({data:{popularKeywords:{title:{text:'인기 검색어',subText:'09.28 기준'},rankings:[{title:'살로몬',rank:10},{title:'NIKE',rank:27}]},popularBrands:{rankings:[{title:'Not a general keyword',rank:1}]}}});
 const tiktokBody=JSON.stringify({BaseResp:{StatusCode:0},items:[{hashtagName:'추석',rankIndex:1,hashtagID:'123'},{hashtagName:'gorpcore',rankIndex:3,hashtagID:'456'}],pagination:{totalCount:2,limit:3}});
+const eql=config.sources.find(row=>row.id==='eql'),eqlBody=JSON.stringify({hotKeyword:[{KEYWORD:'아식스',RANKING:'1'},{KEYWORD:'고프코어',RANKING:'2'}],riseKeyword:[{INDEX_DATE:'2026/09/28 09:00:02'}]});
 
 test('Musinsa preserves original terms and displayed order, ignoring change and rising ranks',()=>{
   const parsed=parseSearchKeywordSnapshot(musinsaBody,musinsa,{capturedAt});
@@ -25,6 +26,12 @@ test('29CM uses explicit search ranks without renumbering or adding separate bra
   const rows=parseSearchKeywordSnapshot(cmBody,cm,{capturedAt}).sourceRanks;
   assert.deepEqual(rows.map(row=>[row.term,row.rank]),[['살로몬',10],['NIKE',27]]);
   assert.equal(rows[0].sourceUpdatedAt,'09.28 기준');assert.equal(rows[0].rankingPeriod,null);
+});
+
+test('EQL uses the public hot-keyword list and ignores rising-keyword labels',()=>{
+  const rows=parseSearchKeywordSnapshot(eqlBody,eql,{capturedAt}).sourceRanks;
+  assert.deepEqual(rows.map(row=>[row.term,row.rank]),[['아식스',1],['고프코어',2]]);
+  assert.equal(rows[0].sourceUpdatedAt,'2026/09/28 09:00:02');
 });
 
 test('TikTok preserves actual KR seven-day hashtag ranks and anonymous capture size',()=>{
@@ -46,7 +53,7 @@ test('collection keeps working sources and immutable raw snapshots while failure
   const dir=await mkdtemp(join(tmpdir(),'search-keywords-'));
   try {
     const calls=[];
-    const opts={config:{...config,sources:config.sources.slice(0,3)},now,auditDir:dir,readPublic:async(url,options)=>{calls.push([url,options]);if(url===cm.apiUrl)throw Error('HTTP 503 internal');return url===tiktok.apiUrl?tiktokBody:musinsaBody;}};
+    const opts={config:{...config,sources:[musinsa,cm,tiktok]},now,auditDir:dir,readPublic:async(url,options)=>{calls.push([url,options]);if(url===cm.apiUrl)throw Error('HTTP 503 internal');return url===tiktok.apiUrl?tiktokBody:musinsaBody;}};
     const result=await collectSearchKeywords(opts);
     assert.equal(result.sourceRanks.length,4);assert.equal(calls.length,3);
     assert.deepEqual(calls.find(([url])=>url===tiktok.apiUrl)[1],{method:'POST',requestBody:tiktok.requestBody});

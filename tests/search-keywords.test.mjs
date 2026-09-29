@@ -59,3 +59,34 @@ test('editorial trend publication uses exact 30-day window while capture remains
 test('composite reports reject future, reversed and impossible validity periods',()=>{
  for(const patch of [{periodStart:'2026-12-30',periodEnd:'2026-10-01'},{periodEnd:'2026-10-01'},{periodEnd:'2026-09-20',validUntil:'2026-09-19'}])assert.equal(buildKeywordCatalog([p],[source({kind:'composite-rank',...patch})],{now}).keywords.length,0);
 });
+test('ecommerce ranking combines only musinsa/29cm/eql/wconcept and ignores site product count',()=>{
+ const rows=[source({platform:'musinsa',term:'브라운 스니커즈',rank:2}),source({platform:'29cm',term:'브라운 스니커즈',rank:4}),
+   source({platform:'eql',term:'메리제인',rank:1}),source({platform:'tiktok',kind:'hashtag-rank',term:'브라운 스니커즈',rank:1}),
+   source({platform:'lyst',kind:'composite-rank',term:'브라운 스니커즈',rank:1,latestPeriodVerified:true,reportId:'2026-Q2',periodEnd:'2026-06-30',validUntil:'2026-09-30',validityBasis:'quarter-end-policy'})];
+ const result=buildKeywordCatalog([],rows,{now});
+ assert.deepEqual(result.ecommerceKeywords.map(k=>[k.label,k.rank,k.score]),[['메리제인',1,1],['브라운 스니커즈',2,1/2+1/4]]);
+ assert(result.ecommerceKeywords.every(k=>k.sourceRanks.every(s=>['musinsa','29cm','eql','wconcept'].includes(s.platform))));
+ assert.equal(result.ecommerceKeywords.every(k=>k.matchedProductCount===0),true,'zero on-site matches must not exclude or reorder ecommerce ranks');
+ assert(result.ecommerceKeywords.length<=20);
+});
+test('media ranking requires 5+ posts from the same outlet and merges only qualifying outlets',()=>{
+ const editorial=(platform,term,i)=>({platform,term,rank:null,sourceUrl:`https://${platform}.example/post-${term}-${i}`,verified:true,kind:'editorial-keyword',capturedAt:'2026-09-28T05:00:00Z',publishedAt:`2026-09-2${i}T00:00:00Z`,rankingPeriod:null,scope:'all',snapshotId:`${platform}:2026-09-28:${term}-${i}`});
+ const belowThreshold=[0,1,2,3].map(i=>editorial('magA','고프코어',i));
+ const result=buildKeywordCatalog([],belowThreshold,{now});
+ assert.deepEqual(result.editorialKeywords.map(k=>k.label),[],'below the 5-post outlet minimum must not surface');
+ const qualifiesA=[0,1,2,3,4].map(i=>editorial('magA','메리제인',i));
+ const qualifiesB=[0,1,2].map(i=>editorial('magB','메리제인',i));
+ const merged=buildKeywordCatalog([],[...qualifiesA,...qualifiesB],{now});
+ assert.deepEqual(merged.editorialKeywords.map(k=>[k.label,k.rank,k.score,k.sourceCount]),[['메리제인',1,5,1]],'a second outlet below its own 5-post minimum cannot contribute posts to the merged count');
+ const twoOutlets=[...qualifiesA,...[0,1,2,3,4].map(i=>editorial('magB','메리제인',i))];
+ const bothQualify=buildKeywordCatalog([],twoOutlets,{now});
+ assert.deepEqual(bothQualify.editorialKeywords.map(k=>[k.label,k.rank,k.score,k.sourceCount]),[['메리제인',1,10,2]]);
+});
+test('editorial evidence accumulates across collection runs instead of collapsing to the latest snapshot',()=>{
+ const rows=[0,1,2,3,4].map(i=>({platform:'magA',term:'고프코어',rank:null,sourceUrl:`https://magA.example/post-${i}`,verified:true,kind:'editorial-keyword',capturedAt:'2026-09-28T05:00:00Z',publishedAt:`2026-09-2${i}T00:00:00Z`,rankingPeriod:null,scope:'all',snapshotId:'magA:2026-09-28'}));
+ const result=buildKeywordCatalog([],rows,{now});
+ assert.deepEqual(result.editorialKeywords.map(k=>[k.label,k.score]),[['고프코어',5]]);
+ const duplicate=[...rows,{...rows[0],capturedAt:'2026-09-27T05:00:00Z',snapshotId:'magA:2026-09-27'}];
+ const deduped=buildKeywordCatalog([],duplicate,{now});
+ assert.deepEqual(deduped.editorialKeywords.map(k=>k.score),[5],'the same article recollected in an earlier run must not double count');
+});

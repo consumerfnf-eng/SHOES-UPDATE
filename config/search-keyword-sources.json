@@ -31,6 +31,38 @@
       "enabled": true
     },
     {
+      "id": "eql",
+      "name": "EQL",
+      "adapter": "eql-search",
+      "url": "https://www.eqlstore.com/public/search/keyword",
+      "apiUrl": "https://www.eqlstore.com/public/search/keyword",
+      "country": "KR",
+      "scope": "all",
+      "captureLimit": 20,
+      "rankingPeriod": null,
+      "rankBasis": "platform-explicit-search-rank",
+      "method": "로그인·쿠키 없이 서버 렌더링된 인기 검색어 목록(hotKeywordList)의 명시적 rank 확인",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "accept": "application/json",
+      "userAgentReason": "공개 엔드포인트의 JSON 응답에서 hotKeyword의 명시적 순위와 INDEX_DATE를 확인하며 로그인·쿠키를 사용하지 않음",
+      "enabled": true
+    },
+    {
+      "id": "wconcept",
+      "name": "W컨셉",
+      "adapter": "wconcept-search",
+      "url": "https://www.wconcept.co.kr/",
+      "apiUrl": "https://gw-front.wconcept.co.kr/display/api/search/v1/keywords/popular",
+      "country": "KR",
+      "scope": "all",
+      "captureLimit": 20,
+      "rankingPeriod": null,
+      "rankBasis": "platform-explicit-search-rank",
+      "method": "GET 요청에 공개 프런트 API 키 필요 - 정확한 인증 헤더를 확인하지 못해 현재 비활성화",
+      "enabled": false,
+      "disabledReason": "gw-front.wconcept.co.kr API가 API 키를 요구하며, 브라우저에 노출된 공개 키를 그대로 헤더에 실어도 게이트웨이가 거부함(errorCode 20002). 정확한 헤더 이름/서명 방식을 확인하지 못해 비활성화 상태로 둠"
+    },
+    {
       "id": "tiktok",
       "name": "TikTok Creative Center",
       "adapter": "tiktok-hashtags",

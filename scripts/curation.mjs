@@ -64,7 +64,7 @@ export function classifyFootwear(p) {
     if (!/sport|outdoor|eva|foam|cushion|casual|flat|recovery|스포츠|캐주얼|플랫|쿠셔닝/i.test(context)) return { reason: 'casual-sandal-unverified' };
     return { category: /platform|플랫폼/i.test(context) ? 'platform-sandal' : 'sandal' };
   }
-  if (/sneaker|running shoe|trail running|trainers?|court shoe|스니커|운동화|러닝화|트레일화/i.test(context)) return { category: 'sneaker' };
+  if (/sneaker|running shoe|trail running|training shoes?|trainers?|court shoe|스니커|운동화|러닝화|트레이닝화|트레일화/i.test(context)) return { category: 'sneaker' };
   if(p.productVerifiedAt&&/\b(?:Air Max (?!Phenomena)|Air Force 1|Air Jordan \d|Air Bakin|Dunk Low|Dunk High|Cortez|Vomero|Pegasus|Shox|P-6000)\b/i.test(p.name||''))return {category:'sneaker'};
   return { reason: 'footwear-type-unverified' };
 }
@@ -74,7 +74,7 @@ export function fitFor(p, category, today=kstDay()) {
   if (/lifestyle|casual|retro|heritage|court|platform|chunky|street|sportstyle|low.profile|first released in (?:19\d\d|200\d)[\s\S]*returns|스니커즈|레트로|캐주얼|플랫폼/i.test(text)) {
     fit.push('MLB'); fitReasons.push('일상 스포츠 캐주얼·실루엣 참고');
   }
-  if (/trail|running|gravel|outdoor|cushion|breath|ventilat|drain|lightweight|recovery|트레일|쿠셔닝|통기|경량|아웃도어/i.test(text)) {
+  if (/trail|running|training|fitness|gravel|outdoor|cushion|breath|ventilat|drain|lightweight|recovery|트레이닝|피트니스|트레일|쿠셔닝|통기|경량|아웃도어/i.test(text)) {
     fit.push('DISCOVERY'); fitReasons.push('활동성·쿠셔닝·통기 또는 아웃도어 구조 참고');
   }
   if (!fit.length && ['sandal','clog','platform-sandal'].includes(category) && /eva|foam|croslite/i.test(text)) { fit.push('DISCOVERY'); fitReasons.push('여름용 경량 몰드 구조 참고'); }

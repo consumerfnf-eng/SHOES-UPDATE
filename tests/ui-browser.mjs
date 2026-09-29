@@ -26,7 +26,7 @@ for(const p of fixture.products){p.officialProductEvidence={verified:true,url:p.
 fixture.products[1].popularity.newsletter=true;fixture.products[1].popularity.media=true;
 fixture.products[2].officialImageEvidence.verified=false;
 fixture.products[4].name='Cecilie Bahnsen x Nike Runner';fixture.products[4].collaborationBrands=['Cecilie Bahnsen'];
-const metric={platform:'instagram',metric:'hashtag-post-count',unit:'posts',value:1200,scope:'cumulative',capturedAt:new Date().toISOString(),sourceUrl:'https://www.instagram.com/explore/tags/testrunner/',query:'test-runner',country:'KR',verified:true,identity:{brand:'Nike',style:'STYLE-0'},comparison:{id:'instagram-posts-fixture',verified:true,population:'items',coverage:'observed-sample',rank:1,itemCount:2}};
+const metric={platform:'instagram',metric:'hashtag-post-count',unit:'posts',value:1200,scope:'cumulative',capturedAt:new Date().toISOString(),sourceUrl:'https://www.instagram.com/explore/tags/testrunner/',query:'test-runner',country:'KR',verified:true,identity:{brand:'Nike',style:'STYLE-0'},comparison:{id:'instagram-posts-fixture',verified:true,population:'items',coverage:'observed-sample',identityLevel:'variant',rank:1,itemCount:2}};
 fixture.products[0].socialMetrics=[metric,{...metric,metric:'search-count',unit:'searches',value:null,comparison:null},{...metric,metric:'view-count',unit:'views',value:9000,scope:'period',periodStart:today,periodEnd:today,comparison:null}];
 fixture.products[1].socialMetrics=[{...metric,metric:'view-count',unit:'views',value:99999,identity:{brand:'Nike',style:'STYLE-1'},comparison:null}];
 fixture.products[3].socialMetrics=[{...metric,value:800,identity:{brand:'Nike',style:'STYLE-3'},comparison:{...metric.comparison,rank:2}}];

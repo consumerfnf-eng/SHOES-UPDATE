@@ -35,13 +35,24 @@ function safeRow(raw,now){
   return row;
 }
 function latestRows(records,now){
-  const valid=records.map(row=>safeRow(row,now)).filter(Boolean),snapshots=new Map();
+  const valid=records.map(row=>safeRow(row,now)).filter(Boolean);
+  // Editorial mentions accumulate across many collection runs (each article must
+  // recur in >=5 posts per outlet over time), so they are never snapshot-collapsed
+  // like a full-list source: only exact duplicate (platform, article, term) rows merge.
+  const editorial=valid.filter(row=>row.kind==='editorial-keyword'),rest=valid.filter(row=>row.kind!=='editorial-keyword');
+  const editorialByIdentity=new Map();
+  for(const row of editorial){
+    const identity=[row.platform,row.sourceUrl,row.term].join('|'),existing=editorialByIdentity.get(identity);
+    if(!existing||time(row.capturedAt)>time(existing.capturedAt))editorialByIdentity.set(identity,row);
+  }
+  const snapshots=new Map();
   const bucket=row=>row.platform+'|'+(row.kind==='forecast-keyword'?'forecast':'current');
-  for(const row of valid){const id=row.snapshotId||row.capturedAt,existing=snapshots.get(bucket(row));if(!existing||time(row.capturedAt)>existing.at||time(row.capturedAt)===existing.at&&id.localeCompare(existing.id)>0)snapshots.set(bucket(row),{id,at:time(row.capturedAt)});}
-  const seen=new Set();return valid.filter(row=>{
+  for(const row of rest){const id=row.snapshotId||row.capturedAt,existing=snapshots.get(bucket(row));if(!existing||time(row.capturedAt)>existing.at||time(row.capturedAt)===existing.at&&id.localeCompare(existing.id)>0)snapshots.set(bucket(row),{id,at:time(row.capturedAt)});}
+  const seen=new Set();const keptRest=rest.filter(row=>{
     if((row.snapshotId||row.capturedAt)!==snapshots.get(bucket(row)).id)return false;
     const identity=[row.platform,row.snapshotId||row.capturedAt,row.kind,row.term,row.rank,row.sourceUrl].join('|');if(seen.has(identity))return false;seen.add(identity);return true;
   });
+  return [...keptRest,...editorialByIdentity.values()];
 }
 const sourceOrder=(a,b)=>(a.rank??Infinity)-(b.rank??Infinity)||a.platform.localeCompare(b.platform)||a.term.localeCompare(b.term)||a.sourceUrl.localeCompare(b.sourceUrl);
 function groupsFor(records,products,forecast){
@@ -59,8 +70,42 @@ function groupsFor(records,products,forecast){
   let rank=0;for(const item of result)if(!forecast&&item.score>0)item.rank=++rank;
   return result;
 }
+// Ecommerce platforms whose explicit search-term rankings combine into one 1-20 list.
+// Rank is by cross-platform reciprocal-rank score only, never by how many matching
+// products currently exist on this site.
+const ECOMMERCE_PLATFORMS=new Set(['musinsa','29cm','eql','wconcept']);
+// A media keyword must recur in at least this many distinct posts from the SAME
+// magazine/newsletter before it qualifies; platforms below the threshold contribute nothing.
+export const EDITORIAL_MIN_POSTS_PER_OUTLET=5;
+function ecommerceRanking(records,products){
+  const rows=records.filter(row=>rankedKinds.has(row.kind)&&ECOMMERCE_PLATFORMS.has(row.platform));
+  return groupsFor(rows,products,false).filter(k=>k.score>0).slice(0,20).map((k,i)=>({...k,rank:i+1}));
+}
+function editorialRanking(records,products){
+  const byOutletTerm=new Map();
+  for(const row of records){
+    if(row.kind!=='editorial-keyword')continue;
+    const resolved=resolveSearchTerm(row.term);if(!resolved.key)continue;
+    const key=row.platform+'|'+resolved.key;
+    if(!byOutletTerm.has(key))byOutletTerm.set(key,{platform:row.platform,resolved,rows:[],urls:new Set()});
+    const entry=byOutletTerm.get(key);entry.rows.push(row);entry.urls.add(row.sourceUrl);
+  }
+  const byTerm=new Map();
+  for(const entry of byOutletTerm.values()){
+    if(entry.urls.size<EDITORIAL_MIN_POSTS_PER_OUTLET)continue;
+    if(!byTerm.has(entry.resolved.key))byTerm.set(entry.resolved.key,{resolved:entry.resolved,rows:[],postCount:0,platforms:new Set()});
+    const term=byTerm.get(entry.resolved.key);term.rows.push(...entry.rows);term.postCount+=entry.urls.size;term.platforms.add(entry.platform);
+  }
+  const result=[...byTerm.values()].map(({resolved,rows,postCount,platforms})=>{
+    rows.sort(sourceOrder);
+    const productIds=products.filter(p=>matchesSearchTerm(p,resolved)).map(p=>p.id).sort();
+    return {id:'media-'+createHash('sha256').update(resolved.key).digest('hex').slice(0,16),keywordType:'style',label:rows[0].term,aliases:[...new Set([...rows.map(r=>r.term),...searchTermAliases(resolved)])],productIds,matchedProductCount:productIds.length,sourceRanks:rows,sourceCount:platforms.size,score:postCount,rank:null,rankingStatus:'ranked'};
+  }).sort((a,b)=>b.score-a.score||b.sourceCount-a.sourceCount||a.id.localeCompare(b.id)).slice(0,20);
+  let rank=0;for(const item of result)item.rank=++rank;
+  return result;
+}
 export function buildKeywordCatalog(products,records=[],{now=new Date()}={}){
   const at=new Date(now);if(!Number.isFinite(at.getTime()))throw Error('Invalid keyword verification time');
   const sourceRanks=latestRows(records,at.getTime()).filter(row=>isStyleTrendTerm(row.term,{scope:row.scope,products}));
-  return {keywordMethod:KEYWORD_METHOD,keywordCheckedAt:at.toISOString(),sourceRanks,keywords:groupsFor(sourceRanks,products,false),forecastKeywords:groupsFor(sourceRanks,products,true)};
+  return {keywordMethod:KEYWORD_METHOD,keywordCheckedAt:at.toISOString(),sourceRanks,keywords:groupsFor(sourceRanks,products,false),forecastKeywords:groupsFor(sourceRanks,products,true),ecommerceKeywords:ecommerceRanking(sourceRanks,products),editorialKeywords:editorialRanking(sourceRanks,products)};
 }

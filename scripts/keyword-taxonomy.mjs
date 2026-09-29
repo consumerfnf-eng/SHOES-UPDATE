@@ -147,6 +147,9 @@ export function isStyleTrendTerm(term,options={}){
   const resolved=typeof term==='string'?resolveSearchTerm(term):term;
   if(!isFootwearSearchTerm(resolved,options)||resolved.literalTerms.length)return false;
   const concepts=resolved.conceptIds.map(id=>searchConceptById.get(id));
-  if(concepts.some(c=>['brand','model','franchise'].includes(c?.kind)))return false;
+  if(concepts.some(c=>c?.kind==='brand'))return false;
+  // A model name can be useful for product matching, but it is never a
+  // style-trend keyword. Weekly trends must describe a form, material,
+  // colour, pattern or use that can apply across products.
   return concepts.some(c=>['style','shape','material','color','pattern','structure','use','attribute'].includes(c?.kind));
 }

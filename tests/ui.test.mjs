@@ -53,11 +53,12 @@ test('External links accept only ordinary http(s), reject script and credential 
 test('Model SNS metrics require an exact verified official model and comparisons never mix units or periods',()=>{
   const base=official({id:'a',name:'Runner',brand:'Nike',style:'AA100',url:'https://nike.example/runner',image:'https://nike.example/runner.jpg',releaseDate:'2026-09-01',fit:['MLB']});
   base.officialProductEvidence.modelIdentity={id:'runner',name:'Runner',verified:true};
-  const modelMetric={...socialMetric,identity:{level:'model',brand:'Nike',modelId:'runner',modelName:'Runner'},comparison:{id:'ig-posts',verified:true,population:'items',coverage:'observed-sample',rank:2,itemCount:2}};
+  const modelMetric={...socialMetric,identity:{level:'model',brand:'Nike',modelId:'runner',modelName:'Runner'},comparison:{id:'ig-posts',verified:true,population:'items',coverage:'observed-sample',identityLevel:'model',rank:2,itemCount:2}};
   assert.equal(visibleSocialMetrics({...base,socialMetrics:[modelMetric]},'2026-09-28').length,1);
   assert.equal(visibleSocialMetrics({...base,socialMetrics:[{...modelMetric,identity:{...modelMetric.identity,modelId:'other'}}]},'2026-09-28').length,0);
-  const a={...base,socialMetrics:[modelMetric]},b={...base,id:'b',socialMetrics:[{...modelMetric,value:500,identity:{brand:'Nike',style:'AA100'},comparison:{...modelMetric.comparison,rank:1}}]},c={...base,id:'c',socialMetrics:[{...modelMetric,metric:'search-count',unit:'searches',value:99999,comparison:{...modelMetric.comparison,id:'ig-search'}}]};
-  const groups=socialComparisonGroups([a,b,c],'2026-09-28');assert.equal(groups.length,2);assert.equal(groups[0].metric,'hashtag-post-count');
+  const variantMetric={...socialMetric,identity:{brand:'Nike',style:'AA100'},comparison:{id:'ig-variant',verified:true,population:'items',coverage:'observed-sample',identityLevel:'variant',rank:2,itemCount:2}};
+  const a={...base,socialMetrics:[modelMetric,variantMetric]},b={...base,id:'b',style:'BB200',officialProductEvidence:{...base.officialProductEvidence,style:'BB200'},officialImageEvidence:{...base.officialImageEvidence,style:'BB200'},socialMetrics:[{...variantMetric,value:500,identity:{brand:'Nike',style:'BB200'},comparison:{...variantMetric.comparison,rank:1}}]},c={...base,id:'c',socialMetrics:[{...modelMetric,metric:'search-count',unit:'searches',value:99999,comparison:{...modelMetric.comparison,id:'ig-search'}}]};
+  const groups=socialComparisonGroups([a,b,c],'2026-09-28');assert.equal(groups.length,3);assert.equal(groups[0].metric,'hashtag-post-count');
   const state={search:'',brands:new Set(),fit:'all',category:'all',release:'released',sort:'social',source:'sns',socialGroup:groups[0].key};assert.deepEqual(filterProducts([a,c,b],state,'2026-09-28').map(p=>p.id),['b','a'],'Only the same measured group is sorted by count');
 });
 test('Keyword matching uses every matching product, not only ranking evidence, and excludes expired or unknown dates',()=>{
