@@ -44,6 +44,7 @@ export function applyReviewedEvidence(input,evidence) {
 export async function publishCurated({directory=root,now=new Date(),incoming=[],collection,maintenance=false,keywordRefresh=false}={}) {
   const sourceFile=path.join(directory,'data/catalog-source.json'), prior=await readJson(path.join(directory,'public/data/catalog.json'),{});
   const source=await readJson(sourceFile), evidence=await readJson(path.join(directory,'data/release-evidence.json'),{products:[]});
+  const styleTrendSource=await readJson(path.join(directory,'data/style-trend-keywords.json'),prior.styleTrendKeywords||null);
   const socialEvidence=await readJson(path.join(directory,'data/social-metric-evidence.json'),{products:[],sourceStatus:[]});
   if(keywordRefresh&&incoming.length)throw Error('Keyword refresh cannot change product records');
   if(keywordRefresh){const fields=['sourceRanks','searchRankStatus','forecastStatus','editorialStatus','keywordCheckedAt'];collection={...source.collection,...Object.fromEntries(fields.filter(k=>collection?.[k]!==undefined).map(k=>[k,collection[k]]))};}
@@ -52,6 +53,13 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   const socialStatus=(socialEvidence.sourceStatus||[]).map(s=>Object.fromEntries(['platform','name','url','status','reason','checkedAt','collectionMode','automatedAdapter'].filter(k=>s[k]!==undefined).map(k=>[k,s[k]])));
   const effectiveCollection={...(collection||source.collection||{}),...(socialStatus.length?{socialMetricStatus:socialStatus}:{})};
   const result=curateCatalog(products,{now,previous:prior,collection:effectiveCollection});
+  // Style trends are maintained as a separate, small weekly reference snapshot
+  // so a keyword refresh never invents ranks or changes product records. Keep
+  // only IDs that are present in the atomically curated public catalog.
+  if(styleTrendSource?.items?.length){
+    const ids=new Set(result.snapshot.products.map(p=>p.id));
+    result.snapshot.styleTrendKeywords={...styleTrendSource,items:styleTrendSource.items.map(item=>({...item,productIds:[...(item.productIds||[])].filter(id=>ids.has(id))}))};
+  }
   // Maintenance only removes expired entries / updates upcoming state and ages signals; it does not claim a new collection.
   if(maintenance&&prior.publishedAt) result.snapshot.publishedAt=prior.publishedAt;
   if(!Array.isArray(result.snapshot.products)||new Set(result.snapshot.products.map(p=>p.id)).size!==result.snapshot.products.length)throw Error('Invalid curated snapshot');

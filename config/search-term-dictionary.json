@@ -89,7 +89,7 @@
     {"id":"air-max","kind":"model","aliases":["에어맥스","에어 맥스","air max","airmax"],"match":{"brands":["Nike"],"fields":["name"],"terms":["air max","airmax","에어맥스"]}},
     {"id":"air-force-1","kind":"model","aliases":["에어포스1","에어 포스 1","에어포스","air force 1","airforce1","af1"],"match":{"brands":["Nike"],"fields":["name"],"terms":["air force 1","af1","에어포스"]}},
     {"id":"dunk","kind":"model","aliases":["덩크","dunk"],"match":{"brands":["Nike"],"fields":["name"],"terms":["dunk","덩크"]}},
-    {"id":"gel-kayano","kind":"model","aliases":["젤카야노","젤 카야노","gel kayano","gel-kayano"],"match":{"brands":["ASICS"],"fields":["name"],"terms":["gel kayano","젤카야노"]}},
+    {"id":"gel-kayano","kind":"model","aliases":["젤카야노","젤 카야노","gel kayano","gel-kayano","젤카야노14","젤 카야노 14","gel kayano 14","gel-kayano 14"],"match":{"brands":["ASICS"],"fields":["name"],"terms":["gel kayano","젤카야노"]}},
     {"id":"gel-nyc","kind":"model","aliases":["젤엔와이씨","젤뉴욕","gel nyc"],"match":{"brands":["ASICS"],"fields":["name"],"terms":["gel nyc","젤엔와이씨"]}},
     {"id":"nb-530","kind":"model","aliases":["530","뉴발530","뉴발란스530"],"match":{"brands":["New Balance"],"fields":["name"],"terms":["530"]}},
     {"id":"nb-327","kind":"model","aliases":["327","뉴발327","뉴발란스327"],"match":{"brands":["New Balance"],"fields":["name"],"terms":["327"]}},

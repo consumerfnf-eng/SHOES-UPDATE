@@ -46,8 +46,12 @@ const excluded = /\b(loafers?|oxfords?|derby|derbies|pumps?|stilettos?|high[ -]?
 const performance = /\b(?:soccer|football|baseball|track|golf)\s+(?:boots?|cleats?|spikes?|shoes?)|\b(?:racing spikes|competition spikes|basketball shoes)\b|축구화|야구화|스파이크/i;
 export function classifyFootwear(p) {
   // Negative gates run first for every record; legacy verification cannot bypass them.
-  const title = `${p.name || ''} ${p.officialCategory || ''}`;
-  const context = `${title} ${p.description || ''}`;
+  // Include the normalized source category/type. Several official product feeds
+  // describe a shoe as `category: casual` while declaring `productType: sneaker`;
+  // omitting those fields silently held otherwise verified sneaker releases.
+  const typeHint = p.category ? (p.productType || '') : '';
+  const title = `${p.name || ''} ${p.officialCategory || ''} ${typeHint}`;
+  const context = `${title} ${p.description || ''} ${p.category || ''}`;
   const review=p.footwearReview;
   const approvedDrip=canonicalBrand(p.brand)==='Gucci'&&p.style==='A00A2SFAGMQ9656'&&review?.approved===true&&review.type==='sneaker'&&review.brand==='Gucci'&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url)&&/sneaker/i.test(title)&&/slip.on ease of (?:a )?loafer/i.test(p.description||'');
   if(/goadome/i.test(title)&&!p.hybridReview?.approved)return {reason:'hybrid-review-required'};
@@ -78,6 +82,12 @@ export function fitFor(p, category, today=kstDay()) {
     fit.push('DISCOVERY'); fitReasons.push('활동성·쿠셔닝·통기 또는 아웃도어 구조 참고');
   }
   if (!fit.length && ['sandal','clog','platform-sandal'].includes(category) && /eva|foam|croslite/i.test(text)) { fit.push('DISCOVERY'); fitReasons.push('여름용 경량 몰드 구조 참고'); }
+  // A verified sneaker without an explicit performance/lifestyle descriptor is
+  // still a valid MLB reference item. Keep this fallback gated by the exact
+  // official product/image proof so unverified generic records never surface.
+  if(category==='sneaker'&&!fit.length&&officialEvidenceFor(p,today)){
+    fit.push('MLB'); fitReasons.push('공식 스니커즈 실루엣·컬러 참고');
+  }
   const policy=brandPolicy(p.brand);
   if(category==='sneaker'&&policy?.mandatory&&policy.group==='luxury'&&officialEvidenceFor(p,today)){
     if(!fit.includes('MLB'))fit.push('MLB');fitReasons.push('럭셔리 스니커즈 디자인 참고');

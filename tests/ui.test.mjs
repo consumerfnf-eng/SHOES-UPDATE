@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { EXPORT_COLUMNS, productRecord, exportRows, csvBytes, xlsxBytes } from '../public/assets/export.mjs';
-import { kstToday, shiftCalendarMonths, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, officialImageUrl, officialProductUrl, sourceMatches, visibleSocialMetrics, releaseDateLabel, releaseSortKey, socialComparisonGroups } from '../public/assets/catalog-view.mjs';
+import { kstToday, shiftCalendarMonths, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, officialImageUrl, officialProductUrl, sourceMatches, visibleSocialMetrics, releaseDateLabel, releaseSortKey, socialComparisonGroups, groupProductVariants } from '../public/assets/catalog-view.mjs';
 
 function official(product){return {...product,officialProductEvidence:{verified:true,url:product.url,brand:product.brand,style:product.style,verifiedAt:'2026-09-27T00:00:00Z'},officialImageEvidence:{verified:true,url:product.image,sourceUrl:product.url,brand:product.brand,style:product.style,verifiedAt:'2026-09-27T00:00:00Z'}};}
 const socialMetric={platform:'instagram',metric:'hashtag-post-count',value:120,unit:'posts',scope:'cumulative',capturedAt:'2026-09-27T00:00:00Z',sourceUrl:'https://www.instagram.com/explore/tags/runner/',query:'runner',verified:true,identity:{brand:'Nike',style:'AA100'}};
@@ -102,4 +102,10 @@ test('Current ranks use only verified fresh source ordinals; official unranked a
   for(const keywordType of [undefined,'brand','model','generic'])assert.equal(trendKeywords([{...base,keywordType,sourceRanks:[signal]}],{now}).length,0,'Only server-verified styles appear in the trend list');
   const forecast={...base,sourceRanks:[{...signal,kind:'forecast-keyword',rank:null,capturedAt:'2025-07-18T00:00:00Z',validUntil:'2027-08-31',validityBasis:'season-end-policy'}]};assert.equal(trendKeywords([forecast],{now}).length,0);assert.equal(trendKeywords([forecast],{now,forecast:true})[0].rank,null);assert.equal(trendKeywords([forecast],{now:Date.parse('2027-08-31T14:59:59Z'),forecast:true}).length,1);assert.equal(trendKeywords([forecast],{now:Date.parse('2027-08-31T15:00:00Z'),forecast:true}).length,0);
   assert.equal(trendKeywords([{...base,sourceRanks:[signal]}],{now,forecast:true}).length,0);
+});
+test('Same-model colorways group into one card in input order; distinct models stay separate',()=>{
+  const a={id:'a',modelKey:'nb|990',colorway:'Red'},b={id:'b',modelKey:'nb|990',colorway:'Blue'},c={id:'c',modelKey:'nb|991'},d={id:'d'};
+  assert.deepEqual(groupProductVariants([a,b,c,d]),[[a,b],[c],[d]]);
+  assert.deepEqual(groupProductVariants([b,a]),[[b,a]],'group order follows first-seen input order, not a sort inside the group');
+  assert.deepEqual(groupProductVariants([]),[]);
 });

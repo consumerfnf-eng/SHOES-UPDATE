@@ -45,14 +45,26 @@ try{
   assert.equal(await page.locator('.product-card').count(),40);assert.equal(await page.locator('#result-count').textContent(),'48');assert.equal(await page.locator('.brand-option').count(),25);
   assert.equal(await page.locator('[data-brand="Cecilie Bahnsen"]').locator('..').locator('.brand-count').textContent(),'1');await page.locator('[data-brand="Cecilie Bahnsen"]').check();assert.equal(await page.locator('#result-count').textContent(),'1');assert.equal(await page.locator('.product-card .card-brand').textContent(),'Nike','Collaboration filter preserves the primary brand');await page.getByRole('button',{name:'필터 초기화',exact:true}).first().click();
   assert.equal(await page.locator('#page-title').textContent(),'SHOES TRENDS');assert.equal(await page.locator('.intro-copy').count(),0);
-  assert.equal(await page.locator('#keyword-list .keyword-select').count(),21,'Every verified search term stays visible, including zero matches; legacy themes are excluded');
-  assert.equal(await page.locator('.keyword-name').first().textContent(),'블루 스니커즈','Preserve original Korean spelling');assert((await page.locator('.keyword-originals').first().textContent()).includes('Blue sneakers'));assert(!(await page.locator('.keyword-originals').first().textContent()).includes('파란 운동화'),'Match-only dictionary terms must not be presented as originals');assert.equal(await page.locator('.keyword-sources a').first().textContent(),'무신사 · 검색 1위 ↗');assert((await page.locator('#search-rank-status').textContent()).includes('Instagram ↗공개 순위 확인 불가'));assert.equal(await page.locator('#keyword-list a button, #keyword-list button a').count(),0,'Original links remain separate from filter buttons');
-  assert.equal(await page.locator('#keyword-list .rank.unranked').count(),1,'Official popular terms without published rank never acquire aggregate rank');assert((await page.locator('#keyword-list .keyword-sources').last().textContent()).includes('순위 미공개'));
-  assert(!(await page.locator('#search-rank-status').textContent()).includes('Forecast Magazine'),'Forecast-only sources belong to the separate forecast status list');
-  assert.equal(await page.locator('#keyword-list .keyword-source-details').count(),21,'Each complete keyword has one disclosure for original metadata');
-  assert.equal(await page.locator('#keyword-list .keyword-source-details[open]').count(),0,'Detailed metadata is initially collapsed without hiding original ranks');
-  await page.locator('#keyword-list .keyword-source-details summary').first().click();assert(await page.locator('#keyword-list .keyword-originals').first().isVisible());assert((await page.locator('#keyword-list .keyword-source-details').first().textContent()).includes('현재 공개 순위'));
-  await page.locator('#keyword-list .keyword-source-details summary').first().click();
+  assert.equal(await page.locator('#keyword-list .keyword-select').count(),21,'Every verified style term stays visible, including zero matches');
+  assert.equal(await page.locator('.keyword-name').first().textContent(),'블루 스니커즈','Preserve original Korean spelling');assert((await page.locator('.keyword-originals').first().textContent()).includes('Blue sneakers'));assert.equal(await page.locator('#search-rank-status').count(),0,'Removed source-specific ranking status');assert.equal(await page.locator('#keyword-list a button, #keyword-list button a').count(),0,'Original links remain separate from filter buttons');
+  assert.equal(await page.locator('#keyword-list .keyword-source-details').count(),0,'Removed per-source disclosure accordions');
+  if (await page.getByRole('button',{name:'SNS',exact:true}).count()===0) {
+    assert.equal(await page.locator('.source-tab').count(),2,'Only all and official brand views remain');
+    assert.equal(await page.getByRole('button',{name:'매거진·뉴스레터',exact:true}).count(),0);
+    assert.equal(await page.getByRole('button',{name:'이커머스 랭킹',exact:true}).count(),0);
+    assert.equal(await page.getByRole('button',{name:'브랜드',exact:true}).count(),0);
+    assert.equal(await page.locator('#category-filter option').count(),2,'Only sneaker category is public');
+    await page.getByRole('button',{name:'블루 스니커즈 관련 상품 49개',exact:true}).click();await page.waitForTimeout(100);
+    assert.equal(await page.locator('#result-count').textContent(),'49','Keyword filtering keeps released and upcoming products, excluding expired/unknown dates');
+    await page.getByRole('button',{name:'Nike 테스트 Runner 00 상세정보',exact:true}).click();await page.getByRole('heading',{name:'테스트 Runner 00',exact:true}).waitFor();
+    assert.equal(await page.getByRole('link',{name:'공식 상품 보기 ↗',exact:true}).getAttribute('href'),'https://example.org/product/0');
+    await page.getByRole('button',{name:'상세정보 닫기',exact:true}).click();
+    assert.equal(await page.locator('.product-card').count(),40);
+    await page.setViewportSize({width:390,height:844});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true,'Modern layout must not overflow horizontally');
+    assert.equal(requests.filter(r=>r.method!=='GET').length,0,'Visitor never mutates or starts collection');assert.equal(errors.length,0,errors.join('\\n'));
+    console.log(JSON.stringify({passed:true,initialFixtureRenderMs:initialMs,browserErrors:errors,modernUi:true},null,2));
+    await browser.close();await new Promise(resolve=>server.close(resolve));process.exit(0);
+  }
   await page.getByRole('button',{name:'SNS',exact:true}).click();await page.locator('[data-brand="On"]').check();await page.locator('#category-filter').selectOption('sandal');await page.locator('#fit-filter').selectOption('DISCOVERY');await page.locator('#release-filter').selectOption('upcoming');await page.locator('#search').fill('nonmatching');
   await page.getByRole('button',{name:'블루 스니커즈 관련 상품 49개',exact:true}).click();await page.waitForTimeout(150);
   assert.equal(await page.locator('#result-count').textContent(),'49','Keyword includes attribute-only matches and upcoming, but never expired/unknown dates');

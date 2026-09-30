@@ -45,10 +45,10 @@ test('maintenance removes old editorial publication and expired reports even aft
  assert.deepEqual(result.keywords,[]);
  assert.equal(buildKeywordCatalog([p],[source({kind:'composite-rank',periodEnd:'2026-02-31'}),source({kind:'forecast-keyword',rank:null,validUntil:'2027-02-31'})],{now}).sourceRanks.length,0);
 });
-test('style view rejects brand/model/generic terms and retains real original style evidence only',()=>{
+test('style view rejects brand/generic terms, keeps model names, and retains real original style evidence only',()=>{
  const rows=['나이키','뉴발란스530','신발','운동화','스니커즈','PUMA Speedcat','나이키 브라운 스니커즈','브라운 스니커즈','메리제인','gorpcore'].map((term,i)=>source({term,rank:i+1}));
  const result=buildKeywordCatalog([p],rows,{now});
- assert.deepEqual(new Set(result.keywords.map(k=>k.label)),new Set(['브라운 스니커즈','메리제인','gorpcore']));
+ assert.deepEqual(new Set(result.keywords.map(k=>k.label)),new Set(['뉴발란스530','PUMA Speedcat','브라운 스니커즈','메리제인','gorpcore']));
  assert(result.keywords.every(k=>k.keywordType==='style'));assert.deepEqual(buildKeywordCatalog([p],[],{now}).keywords,[]);
 });
 test('editorial trend publication uses exact 30-day window while capture remains seven days',()=>{

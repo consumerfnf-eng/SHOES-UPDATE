@@ -135,3 +135,25 @@ export function filterProducts(products, state, today = kstToday()) {
 }
 import {calendarShift,validCalendarDay,releaseWindow,releaseState as windowState,releaseSortKey} from './release-window.mjs';
 export {releaseWindow,releaseSortKey};
+// Same-model colorways share one grid card; when a feed gives every color a
+// different modelKey, remove the declared colorway tokens from the product name
+// before grouping. The raw variant records remain intact for detail/download.
+export function variantGroupKey(p) {
+  if (!p?.name) return p?.modelKey || p?.id;
+  const normalize = value => String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9가-힣]+/g,'');
+  let base = String(p.name);
+  const colors = [p.colorway, ...(p.colors || []).map(c => typeof c === 'string' ? c : c?.name)].filter(Boolean)
+    .flatMap(value => String(value).split(/[\/,·]+/)).map(value => value.trim()).filter(value => value.length > 2).sort((a,b)=>b.length-a.length);
+  for (const color of colors) base = base.replace(new RegExp(`(?:^|[\\s|—–-])${color.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}(?=$|[\\s|—–-])`,'ig'),' ');
+  const normalized = normalize(base);
+  return `${normalize(p.brand)}|${normalized || normalize(p.modelKey) || normalize(p.id)}`;
+}
+export function groupProductVariants(products) {
+  const groups = new Map();
+  for (const p of products) {
+    const key = variantGroupKey(p);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(p);
+  }
+  return [...groups.values()];
+}

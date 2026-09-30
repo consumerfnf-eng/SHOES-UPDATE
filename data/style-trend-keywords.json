@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-09-27T08:02:00+09:00",
+  "asOf": "2026-09-27",
+  "method": "첨부 HTML의 공개 Shoes Trend Snapshot을 보존한 주간 참고본. WGSN 비공개 페이지 값은 포함하지 않음.",
+  "sources": [
+    {
+      "name": "Real Simple · low-profile sneaker signal",
+      "url": "https://www.realsimple.com/amazon-low-profile-sneakers-september-2026-12125661"
+    },
+    {
+      "name": "Vogue · ASICS Walking / performance-lifestyle signal",
+      "url": "https://www.vogue.com/article/can-asics-make-walking-shoes-cool"
+    },
+    {
+      "name": "Who What Wear · fall sneaker trends",
+      "url": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026"
+    },
+    {
+      "name": "Sneaker News · release calendar",
+      "url": "https://sneakernews.com/2026/09/20/sneaker-releases-september-20-september-26-2026/"
+    },
+    {
+      "name": "Musinsa · footwear category signal",
+      "url": "https://www.musinsa.com/category/005/goods?gf=A"
+    },
+    {
+      "name": "29CM · footwear category signal",
+      "url": "https://www.29cm.co.kr/home/category/202100100"
+    },
+    {
+      "name": "PUMA · MB.06 release",
+      "url": "https://us.puma.com/us/en/pd/mb.06-shooting-star-basketball-shoes/313624"
+    }
+  ],
+  "items": [
+    {
+      "id": "shoes-trend-01",
+      "label": "#로우프로파일",
+      "englishLabel": "Low-profile / slim sneakers",
+      "aliases": [
+        "#로우프로파일",
+        "low profile",
+        "low-profile",
+        "slim sneaker",
+        "slim-line sneaker",
+        "sleek sneaker",
+        "로우 프로파일",
+        "스피드캣",
+        "태권도",
+        "Low-profile / slim sneakers"
+      ],
+      "rank": 1,
+      "score": 100,
+      "previousRank": null,
+      "productIds": [
+        "daily-20260915-nike-air-foamposite-pro-im5204-001",
+        "verified-new-balance-u204v2w0",
+        "verified-new-balance-u204v2pt"
+      ],
+      "sourceNames": [
+        "Real Simple",
+        "Who What Wear",
+        "Musinsa",
+        "29CM"
+      ]
+    },
+    {
+      "id": "shoes-trend-02",
+      "label": "#스웨이드",
+      "englishLabel": "Suede sneakers",
+      "aliases": [
+        "#스웨이드",
+        "suede sneaker",
+        "suede trainer",
+        "스웨이드 스니커즈",
+        "스웨이드 러너",
+        "Suede sneakers"
+      ],
+      "rank": 2,
+      "score": 98,
+      "previousRank": null,
+      "productIds": [
+        "official-82d80c59311fcc15"
+      ],
+      "sourceNames": [
+        "The Strategist",
+        "Byrdie",
+        "Musinsa",
+        "Retail arrivals"
+      ]
+    },
+    {
+      "id": "shoes-trend-03",
+      "label": "#레트로러너",
+      "englishLabel": "Retro runners / archive trainers",
+      "aliases": [
+        "#레트로러너",
+        "retro runner",
+        "retro trainer",
+        "archive sneaker",
+        "70s sneaker",
+        "80s runner",
+        "90s runner",
+        "레트로 러너",
+        "빈티지 조거",
+        "Retro runners / archive trainers"
+      ],
+      "rank": 3,
+      "score": 96,
+      "previousRank": null,
+      "productIds": [
+        "verified-new-balance-u990br4",
+        "verified-new-balance-u990bg4",
+        "verified-new-balance-u1300ss",
+        "verified-new-balance-u990lv4",
+        "verified-new-balance-u993mo",
+        "verified-new-balance-w327apc",
+        "verified-new-balance-u204v2w0",
+        "verified-new-balance-u204v2pt",
+        "verified-new-balance-u7406ak",
+        "verified-new-balance-u20001k7"
+      ],
+      "sourceNames": [
+        "Who What Wear",
+        "Newcop",
+        "PUMA MB.06",
+        "Public social"
+      ]
+    },
+    {
+      "id": "shoes-trend-04",
+      "label": "#메쉬슈즈",
+      "englishLabel": "Mesh / sheer footwear",
+      "aliases": [
+        "#메쉬슈즈",
+        "mesh shoe",
+        "mesh sneaker",
+        "sheer shoe",
+        "메쉬 슈즈",
+        "메쉬 스니커즈",
+        "Mesh / sheer footwear"
+      ],
+      "rank": 4,
+      "score": 94,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "Vogue ASICS Walking",
+        "Who What Wear netting",
+        "PUMA MB.06"
+      ]
+    },
+    {
+      "id": "shoes-trend-05",
+      "label": "#브라운슈즈",
+      "englishLabel": "Chocolate / coffee brown",
+      "aliases": [
+        "#브라운슈즈",
+        "chocolate brown shoe",
+        "brown sneaker",
+        "coffee brown",
+        "브라운 스니커즈",
+        "초콜릿 브라운",
+        "Chocolate / coffee brown"
+      ],
+      "rank": 5,
+      "score": 92,
+      "previousRank": null,
+      "productIds": [
+        "verified-celine-reebok-freestyle-lo-19dk"
+      ],
+      "sourceNames": [
+        "The Strategist brown Samba",
+        "adidas Tobacco Koyo",
+        "29CM"
+      ]
+    },
+    {
+      "id": "shoes-trend-06",
+      "label": "#캐릭터콜라보",
+      "englishLabel": "Character / franchise collaborations",
+      "aliases": [
+        "#캐릭터콜라보",
+        "character sneaker",
+        "pokemon sneaker",
+        "franchise collaboration",
+        "캐릭터 콜라보",
+        "포켓몬 스니커즈",
+        "Character / franchise collaborations"
+      ],
+      "rank": 6,
+      "score": 90,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "Nike × One Piece",
+        "J Balvin × Jordan",
+        "Public social"
+      ]
+    },
+    {
+      "id": "shoes-trend-07",
+      "label": "#메탈릭실버",
+      "englishLabel": "Metallic silver footwear",
+      "aliases": [
+        "#메탈릭실버",
+        "metallic sneaker",
+        "silver sneaker",
+        "metallic silver",
+        "메탈릭 실버",
+        "실버 스니커즈",
+        "Metallic silver footwear"
+      ],
+      "rank": 7,
+      "score": 88,
+      "previousRank": null,
+      "productIds": [
+        "zip-cecilie-asics-silver",
+        "verified-new-balance-mrebx4fh",
+        "verified-new-balance-wrebx38s"
+      ],
+      "sourceNames": [
+        "Harper’s Bazaar",
+        "Byrdie",
+        "Retail rankings"
+      ]
+    },
+    {
+      "id": "shoes-trend-08",
+      "label": "#레드스니커즈",
+      "englishLabel": "Red / crimson statement sneakers",
+      "aliases": [
+        "#레드스니커즈",
+        "red sneaker",
+        "crimson sneaker",
+        "cherry sneaker",
+        "burgundy sneaker",
+        "wine sneaker",
+        "레드 스니커즈",
+        "빨간 스니커즈",
+        "버건디 스니커즈",
+        "Red / crimson statement sneakers"
+      ],
+      "rank": 8,
+      "score": 85,
+      "previousRank": null,
+      "productIds": [
+        "official-nike-ix8478-410",
+        "new-20260923-f28d3395e6c72a4a",
+        "verified-celine-reebok-freestyle-lo-27fr"
+      ],
+      "sourceNames": [
+        "Air Jordan 1 IR0088-001",
+        "Fashion media",
+        "Public social"
+      ]
+    },
+    {
+      "id": "shoes-trend-09",
+      "label": "#고프코어",
+      "englishLabel": "Trail / technical gorpcore",
+      "aliases": [
+        "#고프코어",
+        "gorpcore",
+        "trail sneaker",
+        "trail runner",
+        "approach shoe",
+        "technical sneaker",
+        "고프코어",
+        "트레일 러닝",
+        "트레일러닝",
+        "Trail / technical gorpcore"
+      ],
+      "rank": 9,
+      "score": 82,
+      "previousRank": null,
+      "productIds": [
+        "official-salomon-l49210800",
+        "official-salomon-l49302000",
+        "official-salomon-l49210700",
+        "official-salomon-l49215400",
+        "official-salomon-l49215200",
+        "official-salomon-l49214800",
+        "verified-new-balance-mt24yj",
+        "verified-moncler-citytrek-white-l209a4m00230n0633034",
+        "verified-moncler-citytrek-ivory-l209a4m00230n0633050",
+        "verified-moncler-citytrek-black-l209a4m00230n0633999",
+        "verified-moncler-citytrek-sagegreen-l209a4m00230n0633818"
+      ],
+      "sourceNames": [
+        "Salomon",
+        "Vogue",
+        "Public social"
+      ]
+    },
+    {
+      "id": "shoes-trend-10",
+      "label": "#발레리나스니커즈",
+      "englishLabel": "Sneakerina / ballet hybrids",
+      "aliases": [
+        "#발레리나스니커즈",
+        "sneakerina",
+        "ballet sneaker",
+        "ballerina sneaker",
+        "ballet hybrid",
+        "발레코어",
+        "발레 스니커즈",
+        "메리제인 스니커즈",
+        "Sneakerina / ballet hybrids"
+      ],
+      "rank": 10,
+      "score": 79,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "People",
+        "Byrdie",
+        "Public social"
+      ]
+    },
+    {
+      "id": "shoes-trend-11",
+      "label": "#애니멀프린트",
+      "englishLabel": "Animal print / cow / leopard",
+      "aliases": [
+        "#애니멀프린트",
+        "animal print",
+        "cow print",
+        "leopard sneaker",
+        "leopard shoe",
+        "애니멀 프린트",
+        "카우 프린트",
+        "레오파드",
+        "Animal print / cow / leopard"
+      ],
+      "rank": 11,
+      "score": 76,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "Byrdie",
+        "Who What Wear",
+        "29CM"
+      ]
+    },
+    {
+      "id": "shoes-trend-12",
+      "label": "#클로그",
+      "englishLabel": "Clogs / open-back comfort",
+      "aliases": [
+        "#클로그",
+        "clog",
+        "clogs",
+        "클로그",
+        "에코 클로그",
+        "retro clog",
+        "Clogs / open-back comfort"
+      ],
+      "rank": 12,
+      "score": 73,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "Crocs",
+        "Musinsa",
+        "Recovery retail"
+      ]
+    },
+    {
+      "id": "shoes-trend-13",
+      "label": "#스니커뮬",
+      "englishLabel": "Sneaker mules / smules",
+      "aliases": [
+        "#스니커뮬",
+        "sneaker mule",
+        "sneaker mules",
+        "smule",
+        "smules",
+        "스니커 뮬",
+        "스니커뮬",
+        "Sneaker mules / smules"
+      ],
+      "rank": 13,
+      "score": 70,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "Byrdie collapsible-back",
+        "Footwear news",
+        "Musinsa"
+      ]
+    },
+    {
+      "id": "shoes-trend-14",
+      "label": "#새틴스니커즈",
+      "englishLabel": "Satin / velvet feminine sneakers",
+      "aliases": [
+        "#새틴스니커즈",
+        "satin sneaker",
+        "velvet sneaker",
+        "새틴 스니커즈",
+        "벨벳 스니커즈",
+        "Satin / velvet feminine sneakers"
+      ],
+      "rank": 14,
+      "score": 67,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "Byrdie",
+        "Harper’s Bazaar",
+        "Public social"
+      ]
+    },
+    {
+      "id": "shoes-trend-15",
+      "label": "#젤리슈즈",
+      "englishLabel": "Jelly shoes / jelly sandals",
+      "aliases": [
+        "#젤리슈즈",
+        "jelly shoe",
+        "jelly sandal",
+        "젤리 슈즈",
+        "젤리 샌들",
+        "Jelly shoes / jelly sandals"
+      ],
+      "rank": 15,
+      "score": 64,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "Melissa New Arrivals",
+        "Public social",
+        "29CM"
+      ]
+    },
+    {
+      "id": "shoes-trend-16",
+      "label": "#캔버스스니커즈",
+      "englishLabel": "Plain canvas sneakers",
+      "aliases": [
+        "#캔버스스니커즈",
+        "canvas sneaker",
+        "canvas shoe",
+        "plain sneaker",
+        "캔버스 스니커즈",
+        "캔버스 슈즈",
+        "Plain canvas sneakers"
+      ],
+      "rank": 16,
+      "score": 61,
+      "previousRank": null,
+      "productIds": [
+        "verified-gucci-drip-sand-brown-a00a2sfagmq9656"
+      ],
+      "sourceNames": [
+        "Converse",
+        "Musinsa",
+        "29CM"
+      ]
+    },
+    {
+      "id": "shoes-trend-17",
+      "label": "#플랫폼슈즈",
+      "englishLabel": "Platforms / flatforms",
+      "aliases": [
+        "#플랫폼슈즈",
+        "platform sneaker",
+        "platform sandal",
+        "platform shoes",
+        "flatform",
+        "platform sole",
+        "플랫폼 슈즈",
+        "플랫폼 스니커즈",
+        "플랫폼 샌들",
+        "Platforms / flatforms"
+      ],
+      "rank": 17,
+      "score": 58,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "Jordan",
+        "Melissa",
+        "29CM"
+      ]
+    },
+    {
+      "id": "shoes-trend-18",
+      "label": "#스케이터스니커즈",
+      "englishLabel": "Skater / Y2K sneakers",
+      "aliases": [
+        "#스케이터스니커즈",
+        "skater sneaker",
+        "skate shoe",
+        "Y2K sneaker",
+        "checkerboard sneaker",
+        "스케이터 스니커즈",
+        "스케이트 슈즈",
+        "Skater / Y2K sneakers"
+      ],
+      "rank": 18,
+      "score": 55,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "Nike SB",
+        "Musinsa",
+        "Public social"
+      ]
+    },
+    {
+      "id": "shoes-trend-19",
+      "label": "#샌들",
+      "englishLabel": "Minimal / recovery sandals",
+      "aliases": [
+        "#샌들",
+        "minimal sandal",
+        "minimalist sandal",
+        "recovery sandal",
+        "sport sandal",
+        "thong sandal",
+        "flip-flop",
+        "flip flop",
+        "샌들",
+        "리커버리 샌들",
+        "조리",
+        "Minimal / recovery sandals"
+      ],
+      "rank": 19,
+      "score": 52,
+      "previousRank": null,
+      "productIds": [],
+      "sourceNames": [
+        "Melissa",
+        "29CM",
+        "Public social"
+      ]
+    },
+    {
+      "id": "shoes-trend-20",
+      "label": "#메리제인",
+      "englishLabel": "Mary Jane sneakers / flats",
+      "aliases": [
+        "#메리제인",
+        "mary jane sneaker",
+        "mary jane flat",
+        "mary jane",
+        "메리제인",
+        "메리 제인",
+        "Mary Jane sneakers / flats"
+      ],
+      "rank": 20,
+      "score": 49,
+      "previousRank": null,
+      "productIds": [
+        "zip-cecilie-asics-black-coffee",
+        "zip-cecilie-asics-silver",
+        "verified-new-balance-mt24yj"
+      ],
+      "sourceNames": [
+        "Fashion media",
+        "Public social",
+        "29CM"
+      ]
+    }
+  ]
+}
