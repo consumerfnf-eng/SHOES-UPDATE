@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-01T01:17:07.286Z",
+  "checkedAt": "2026-10-02T01:40:55.321Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -13955,6 +13955,24 @@
       "brand": "ALOHAS",
       "name": "Tb.490 Crochet Cream Leather Sneakers",
       "reason": "brand-fit-unverified"
+    },
+    {
+      "id": "verified-lv-drop-300-black-1akp23",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Black",
+      "reason": "release-month-window-uncertain"
+    },
+    {
+      "id": "verified-lv-drop-300-orange-1akp11",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Orange",
+      "reason": "release-month-window-uncertain"
+    },
+    {
+      "id": "verified-lv-drop-300-blue-1akp2m",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Blue",
+      "reason": "release-month-window-uncertain"
     }
   ]
 }
