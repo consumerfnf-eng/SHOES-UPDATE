@@ -1,5 +1,248 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T01:40:55.321Z",
-  "products": []
+  "generatedAt": "2026-10-03T01:10:59.505Z",
+  "products": [
+    {
+      "id": "verified-dior-hooper-white-navy-3sn376zdf-h009",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker White Canvas and Navy Blue Suede Calfskin",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "dior|diorhooperlowtopsneakerwhitecanvasandnavybluesuedecalfskin",
+      "releaseDate": "2026-07-02",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.fashion-press.net/news/147430",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fashion Press / HOUYHNHNM (Japan): Dior Hooper low-top sneaker launched in Japan online and in boutiques on 2026-07-02, confirming three official low-top colorways designed by Jonathan Anderson."
+      },
+      "url": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+      "image": "https://assets.christiandior.com/is/image/diorprod/3SN376ZDFH009_SBG_E02-5",
+      "style": "3SN376ZDF_H009",
+      "colorway": "White Canvas and Navy Blue Suede Calfskin",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "USD 1,050",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN376ZDF_H009"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/3SN376ZDFH009_SBG_E02-5",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN376ZDF_H009"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-03"
+      },
+      "keywordTags": [
+        "suede",
+        "canvas"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "material:canvas",
+        "color:white",
+        "brand:dior"
+      ]
+    },
+    {
+      "id": "verified-dior-hooper-black-oblique-3sn375aed-h960",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker Black Dior Oblique Jacquard and Black Suede Calfskin",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "dior|diorhooperlowtopsneakerblackdiorobliquejacquardandblacksuedecalfskin",
+      "releaseDate": "2026-07-02",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.fashion-press.net/news/147430",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fashion Press / HOUYHNHNM (Japan): Dior Hooper low-top sneaker launched in Japan online and in boutiques on 2026-07-02, confirming three official low-top colorways designed by Jonathan Anderson."
+      },
+      "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+      "image": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH960_SBG_E02",
+      "style": "3SN375AED_H960",
+      "colorway": "Black Dior Oblique Jacquard and Black Suede Calfskin",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "USD 1,100",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN375AED_H960"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH960_SBG_E02",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN375AED_H960"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-03"
+      },
+      "keywordTags": [
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "color:black",
+        "brand:dior"
+      ]
+    },
+    {
+      "id": "verified-dior-hooper-beige-blue-3sn375aed-h560",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker Beige and Blue Dior Oblique Jacquard and Black Suede Calfskin",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "dior|diorhooperlowtopsneakerbeigeandbluediorobliquejacquardandblacksuedecalfskin",
+      "releaseDate": "2026-07-02",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.fashion-press.net/news/147430",
+        "precision": "day",
+        "verified": true,
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "excerpt": "Fashion Press / HOUYHNHNM (Japan): Dior Hooper low-top sneaker launched in Japan online and in boutiques on 2026-07-02, confirming three official low-top colorways designed by Jonathan Anderson."
+      },
+      "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+      "image": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH560_SBG_E02",
+      "style": "3SN375AED_H560",
+      "colorway": "Beige and Blue Dior Oblique Jacquard and Black Suede Calfskin",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "USD 1,100",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN375AED_H560"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/3SN375AEDH560_SBG_E02",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+        "verifiedAt": "2026-09-28T08:19:13.000Z",
+        "brand": "Dior",
+        "style": "3SN375AED_H560"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-09-28T08:19:13.000Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-03"
+      },
+      "keywordTags": [
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:retro-low-tops",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "color:black",
+        "brand:dior"
+      ]
+    }
+  ]
 }
