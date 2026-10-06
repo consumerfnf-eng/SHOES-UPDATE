@@ -6,6 +6,7 @@ import {mergePreserving} from './collect-evidence.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {productPresentation} from './product-presentation.mjs';
 import {withSocialComparisons} from './social-metrics.mjs';
+import {buildStyleTrendBoard} from './style-trend-board.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 export async function readJson(file,fallback) {try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(e){if(e.code==='ENOENT'&&fallback!==undefined)return fallback;throw e;}}
@@ -49,7 +50,7 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   const source=await readJson(sourceFile), evidence=await readJson(path.join(directory,'data/release-evidence.json'),{products:[]});
   const socialEvidence=await readJson(path.join(directory,'data/social-metric-evidence.json'),{products:[],sourceStatus:[]});
   if(keywordRefresh&&incoming.length)throw Error('Keyword refresh cannot change product records');
-  if(keywordRefresh){const fields=['sourceRanks','searchRankStatus','forecastStatus','editorialStatus','keywordCheckedAt'];collection={...source.collection,...Object.fromEntries(fields.filter(k=>collection?.[k]!==undefined).map(k=>[k,collection[k]]))};}
+  if(keywordRefresh){const fields=['sourceRanks','searchRankStatus','forecastStatus','editorialStatus','keywordCheckedAt','styleObservations','styleMarketStatus'];collection={...source.collection,...Object.fromEntries(fields.filter(k=>collection?.[k]!==undefined).map(k=>[k,collection[k]]))};}
   const socialPatches=(socialEvidence.products||[]).filter(e=>e.id&&e.brand&&e.style&&Array.isArray(e.socialMetrics)).map(e=>({id:e.id,brand:e.brand,style:e.style,socialMetrics:e.socialMetrics}));
   const products=applyReviewedEvidence(applyReviewedEvidence(mergePreserving(source.products,incoming),evidence.products),socialPatches);
   const socialStatus=(socialEvidence.sourceStatus||[]).map(s=>Object.fromEntries(['platform','name','url','status','reason','checkedAt','collectionMode','automatedAdapter'].filter(k=>s[k]!==undefined).map(k=>[k,s[k]])));
@@ -71,14 +72,8 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   for(const p of result.snapshot.products)if(p.presentation){const cached=photoCache.images[p.presentation.image];if(cached&&/^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(cached.path))p.presentation.cachedPath=cached.path;}
   result.snapshot.products=withSocialComparisons(result.snapshot.products);
   Object.assign(result.snapshot,buildKeywordCatalog(result.snapshot.products,result.snapshot.sourceRanks,{now}));
-  const ids=new Set(result.snapshot.products.map(p=>p.id));
-  // Use this week's verified observations, never the old uploaded HTML ranking.
-  // Distinct editorial URLs measure mentions; they are not search-volume estimates.
-  const items=result.snapshot.keywords.map(k=>({...k,
-    productIds:k.productIds.filter(id=>ids.has(id)),
-    mentionCount:new Set(k.sourceRanks.filter(s=>s.kind==='editorial-keyword').map(s=>s.sourceUrl)).size,
-  })).sort((a,b)=>b.mentionCount-a.mentionCount||b.score-a.score||a.label.localeCompare(b.label));
-  result.snapshot.styleTrendKeywords={method:'verified-current-style-mentions',updated:effectiveCollection.keywordCheckedAt||result.snapshot.keywordCheckedAt,items:items.map((k,i)=>({...k,rank:i+1,matchedProductCount:k.productIds.length}))};
+  result.snapshot.styleTrendKeywords=buildStyleTrendBoard(result.snapshot.products,effectiveCollection.styleObservations||[],{now,updated:effectiveCollection.keywordCheckedAt||result.snapshot.keywordCheckedAt,sourceRanks:result.snapshot.sourceRanks});
+  result.snapshot.sourceStatus.styleMarketStatus=effectiveCollection.styleMarketStatus||[];
   result.snapshot.sourceStatus.counts.published=result.snapshot.products.length;
   const discovery=await readJson(path.join(directory,'data/discovery-checks.json'),null);
   if(discovery&&Date.parse(discovery.checkedAt)>Date.parse(effectiveCollection.checkedAt||0))result.snapshot.sourceStatus.discoveryRecheck=discovery;

@@ -101,10 +101,10 @@ function renderKeywords() {
   const snapshot=catalog?.styleTrendKeywords;
   const keywords=snapshot?.items||trendKeywords(catalog?.keywords||[]);
   function renderList(target,list) {
+    const maxSignals=Math.max(1,...list.map(k=>k.sourceCount||1));
     $(target).innerHTML=list.length?list.map((k,i)=>{
       const ids=keywordProductIds(k,products,today),matched=groupProductVariants(products.filter(p=>ids.has(p.id))).length;
-      const aliases=[...new Set((k.aliases||[]).filter(a=>a!==k.label&&a!==k.englishLabel))].slice(0,4).join(' · ');
-      return `<article class="keyword search-keyword ${state.keywordId===k.id?'active':''}"><button class="keyword-select" data-keyword="${i}" aria-pressed="${state.keywordId===k.id}" aria-label="${esc(k.label)} ${esc(k.englishLabel||'')} 관련 상품 ${matched}개"><span class="rank" aria-label="키워드 ${i+1}">${esc(k.rank)}</span><span class="keyword-copy"><span class="keyword-name">${esc(k.label)}</span><span class="keyword-evidence">${esc(k.englishLabel||'')}</span></span><span class="count"><strong>${matched}</strong><span>상품</span></span></button>${aliases?`<p class="keyword-originals">동의어: ${esc(aliases)}</p>`:''}</article>`;
+      return `<article class="keyword search-keyword trend-row ${state.keywordId===k.id?'active':''}"><button class="keyword-select" data-keyword="${i}" aria-pressed="${state.keywordId===k.id}" aria-label="${esc(k.label)} ${esc(k.englishLabel||'')} 관련 상품 ${matched}개"><span class="rank" aria-label="종합순 ${i+1}">${String(i+1).padStart(2,'0')}</span><span class="keyword-copy"><span class="keyword-name">#${esc(k.label)}</span><span class="keyword-evidence">${esc(k.englishLabel||'')}</span></span><span class="keyword-signal"><span>신호 <strong>${k.sourceCount||1}</strong></span><span class="signal-track" aria-hidden="true"><i style="width:${Math.round((k.sourceCount||1)/maxSignals*100)}%"></i></span></span><span class="count"><strong>${matched}</strong><span>상품</span></span></button></article>`;
     }).join(''):'<p class="keyword-empty">확인된 Shoes Trend Keyword가 아직 없습니다.</p>';
     $(target).querySelectorAll('.keyword-select').forEach(button=>button.addEventListener('click',()=>{
       const k=list[Number(button.dataset.keyword)];clearTimeout(searchTimer);
@@ -113,6 +113,7 @@ function renderKeywords() {
     }));
   }
   renderList('keyword-list',keywords);
+  if($('keyword-total'))$('keyword-total').textContent=`${keywords.length} KEYWORDS`;
   const status=$('style-status');
   if(status)status.textContent=snapshot?.updated?`${dateText(snapshot.updated,true)} 키워드 확인 · 매주 일요일 오전 8시 업데이트 예약`:'';
 }

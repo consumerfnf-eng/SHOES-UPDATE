@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "topics": [
+    {
+      "id": "ballet",
+      "label": "발레리나스니커즈",
+      "englishLabel": "Ballet sneakers / sneakerina",
+      "queries": [
+        "ballet sneakers"
+      ],
+      "pattern": "ballet|ballerina|sneakerina|발레|발레리나"
+    },
+    {
+      "id": "low-profile",
+      "label": "로우프로파일",
+      "englishLabel": "Low-profile / slim sneakers",
+      "queries": [
+        "low profile"
+      ],
+      "pattern": "low[ -]profile|ultraslim|super[ -]slim|slimmest|slim sneakers?|로우 ?프로파일|슬림"
+    },
+    {
+      "id": "retro",
+      "label": "레트로스니커즈",
+      "englishLabel": "Retro runners / archive trainers",
+      "queries": [
+        "retro runner",
+        "Nostalgic Style"
+      ],
+      "pattern": "retro|nostalgic|archive trainer|레트로|빈티지 조거"
+    },
+    {
+      "id": "suede",
+      "label": "스웨이드",
+      "englishLabel": "Suede sneakers",
+      "queries": [
+        "suede"
+      ],
+      "pattern": "\\bsuede\\b|스웨이드|스웨드"
+    },
+    {
+      "id": "mesh",
+      "label": "메쉬슈즈",
+      "englishLabel": "Mesh / breathable uppers",
+      "queries": [
+        "mesh"
+      ],
+      "pattern": "\\bmesh\\b|메쉬|메시"
+    },
+    {
+      "id": "netting",
+      "label": "피시넷",
+      "englishLabel": "Netting / see-through panels",
+      "queries": [
+        "Netting"
+      ],
+      "pattern": "fishnet|netting|netted|피시넷|그물"
+    },
+    {
+      "id": "animal",
+      "label": "애니멀프린트",
+      "englishLabel": "Animal print / leopard / snake",
+      "queries": [
+        "animal print"
+      ],
+      "pattern": "animal[ -]prints?|leopard|cheetah|snake[ -]effect|snake.?skin|zebra|cow (?:print|motif)|애니멀|레오파드|호피|스네이크"
+    },
+    {
+      "id": "brown",
+      "label": "브라운슈즈",
+      "englishLabel": "Chocolate / coffee brown",
+      "queries": [
+        "brown"
+      ],
+      "pattern": "\\bbrown\\b|chocolate|coffee[ -]brown|브라운|초콜릿"
+    },
+    {
+      "id": "satin",
+      "label": "새틴스니커즈",
+      "englishLabel": "Satin / luminous textures",
+      "queries": [
+        "satin"
+      ],
+      "pattern": "\\bsatin\\b|새틴|사틴"
+    },
+    {
+      "id": "burgundy",
+      "label": "버건디",
+      "englishLabel": "Wine / burgundy sneakers",
+      "queries": [
+        "burgundy"
+      ],
+      "pattern": "burgundy|\\bwine\\b|cranberry|버건디|와인"
+    },
+    {
+      "id": "jewel",
+      "label": "주얼톤",
+      "englishLabel": "Emerald / sapphire / rich tones",
+      "queries": [
+        "jewel tones"
+      ],
+      "pattern": "jewel[ -]tones?|emerald|sapphire|주얼 ?톤|에메랄드|사파이어"
+    },
+    {
+      "id": "silver",
+      "label": "메탈릭실버",
+      "englishLabel": "Metallic silver sneakers",
+      "queries": [
+        "metallic silver",
+        "silver"
+      ],
+      "pattern": "\\bsilver\\b|gunmetal|메탈릭|실버|은색"
+    },
+    {
+      "id": "worn",
+      "label": "빈티지가공",
+      "englishLabel": "Worn-in / distressed finish",
+      "queries": [
+        "Worn In"
+      ],
+      "pattern": "worn[ -]in|pre[ -]worn|distressed|디스트레스드|빈티지 ?가공"
+    },
+    {
+      "id": "contrast",
+      "label": "컬러블로킹",
+      "englishLabel": "Clashing / contrasting colours",
+      "queries": [
+        "Unexpected Color Combination"
+      ],
+      "pattern": "clashing|contrasting colo[u]?rs|colo[u]?r[ -]blocking|unexpected colo[u]?r|대비색|컬러 ?블록|컬러 ?블로킹"
+    },
+    {
+      "id": "feminine",
+      "label": "페미닌디테일",
+      "englishLabel": "Lace fabric / bows / delicate trims",
+      "queries": [
+        "Feminine Touch"
+      ],
+      "pattern": "lace fabric|\\bbows\\b|feminine touch|리본|레이스 어퍼"
+    },
+    {
+      "id": "mary-jane",
+      "label": "메리제인스니커즈",
+      "englishLabel": "Mary Jane / strap hybrids",
+      "queries": [
+        "mary jane"
+      ],
+      "pattern": "mary[ -]jane|메리 ?제인"
+    },
+    {
+      "id": "red",
+      "label": "레드스니커즈",
+      "englishLabel": "Red / crimson statement sneakers",
+      "queries": [
+        "red"
+      ],
+      "pattern": "\\bred\\b|\\bcrimson\\b|레드|빨강"
+    },
+    {
+      "id": "canvas",
+      "label": "캔버스스니커즈",
+      "englishLabel": "Canvas / casual classics",
+      "queries": [
+        "canvas"
+      ],
+      "pattern": "\\bcanvas\\b|캔버스"
+    },
+    {
+      "id": "mule",
+      "label": "스니커뮬",
+      "englishLabel": "Sneaker mules / open-back hybrids",
+      "queries": [
+        "sneaker mule"
+      ],
+      "pattern": "\\bmules?\\b|\\bsmules?\\b|스니커 ?뮬"
+    },
+    {
+      "id": "skate",
+      "label": "스케이터스니커즈",
+      "englishLabel": "Skate / board-inspired sneakers",
+      "queries": [
+        "skate"
+      ],
+      "pattern": "\\bskate(?:r|boards?|boarding)?\\b|nike sb|스케이트|스케이터"
+    },
+    {
+      "id": "trail",
+      "label": "고프코어",
+      "englishLabel": "Trail / technical sneakers",
+      "queries": [
+        "gorpcore"
+      ],
+      "pattern": "gorpcore|\\btrail\\b|technical sneakers?|고프코어|트레일"
+    },
+    {
+      "id": "platform",
+      "label": "플랫폼스니커즈",
+      "englishLabel": "Platform / raised soles",
+      "queries": [
+        "platform"
+      ],
+      "pattern": "\\bplatform\\b|\\bflatform\\b|플랫폼"
+    },
+    {
+      "id": "character",
+      "label": "캐릭터콜라보",
+      "englishLabel": "Character / franchise collaborations",
+      "queries": [
+        "character collaboration"
+      ],
+      "pattern": "street fighter|hello kitty|pokemon|pokémon|sanrio|disney|one piece|캐릭터|포켓몬|산리오"
+    }
+  ]
+}

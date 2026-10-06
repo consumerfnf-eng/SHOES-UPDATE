@@ -9,6 +9,7 @@ import {collectSearchKeywords} from './collect-search-keywords.mjs';
 import {collectForecastKeywords} from './collect-forecast-keywords.mjs';
 import {collectEditorialKeywords} from './collect-editorial-keywords.mjs';
 import {collectStyleEditorials} from './collect-style-editorials.mjs';
+import {collectStyleMarket} from './collect-style-market.mjs';
 import {publishCurated,readJson,atomicJson,applyReviewedEvidence} from './publish-curated.mjs';
 import {curateCatalog,kstDay} from './curation.mjs';
 
@@ -32,9 +33,9 @@ try {
   const withEvidence=applyReviewedEvidence(staged,evidence.products);
   const eligibleIds=new Set(curateCatalog(withEvidence,{now}).snapshot.products.map(p=>p.id));
   const signalNow=new Date(),signals=await collectSignals({products:withEvidence.filter(p=>eligibleIds.has(p.id)),read:reader.read,now:signalNow});
-  const keywordNow=new Date(),[search,forecast,editorial,style]=await Promise.all([collectSearchKeywords({now:keywordNow}),collectForecastKeywords({now:keywordNow}),collectEditorialKeywords({now:keywordNow}),collectStyleEditorials({now:keywordNow})]);
-  const collection={checkedAt:now.toISOString(),lastSuccessfulCollectionAt:new Date().toISOString(),coverage:run.coverage,unavailableBrands:run.coverage.filter(x=>!x.responses).map(x=>x.brand),scope:'weekly',sourceDirectory:signals.sourceDirectory,keywordCheckedAt:keywordNow.toISOString(),sourceRanks:[...search.sourceRanks,...forecast.sourceRanks,...editorial.sourceRanks,...style.sourceRanks],searchRankStatus:search.searchRankStatus,forecastStatus:forecast.forecastStatus,editorialStatus:[...editorial.editorialStatus,...style.editorialStatus]};
-  await atomicJson(new URL('logs/weekly-diagnostics.json',root),{checkedAt:now.toISOString(),releaseChecks:[...verified.diagnostics,...structured.diagnostics],signalChecks:signals.diagnostics,keywordChecks:[...search.diagnostics,...forecast.diagnostics,...editorial.diagnostics,...style.diagnostics],crawler:client.stats,officialFallbacks:reader.diagnostics});
+  const keywordNow=new Date(),[search,forecast,editorial,style,market]=await Promise.all([collectSearchKeywords({now:keywordNow}),collectForecastKeywords({now:keywordNow}),collectEditorialKeywords({now:keywordNow}),collectStyleEditorials({now:keywordNow}),collectStyleMarket({now:keywordNow,previousObservations:source.collection?.styleObservations||[]})]);
+  const collection={checkedAt:now.toISOString(),lastSuccessfulCollectionAt:new Date().toISOString(),coverage:run.coverage,unavailableBrands:run.coverage.filter(x=>!x.responses).map(x=>x.brand),scope:'weekly',sourceDirectory:signals.sourceDirectory,keywordCheckedAt:keywordNow.toISOString(),sourceRanks:[...search.sourceRanks,...forecast.sourceRanks,...editorial.sourceRanks,...style.sourceRanks],styleObservations:[...style.observations,...market.observations],styleMarketStatus:market.diagnostics,searchRankStatus:search.searchRankStatus,forecastStatus:forecast.forecastStatus,editorialStatus:[...editorial.editorialStatus,...style.editorialStatus]};
+  await atomicJson(new URL('logs/weekly-diagnostics.json',root),{checkedAt:now.toISOString(),releaseChecks:[...verified.diagnostics,...structured.diagnostics],signalChecks:signals.diagnostics,keywordChecks:[...search.diagnostics,...forecast.diagnostics,...editorial.diagnostics,...style.diagnostics,...market.diagnostics],crawler:client.stats,officialFallbacks:reader.diagnostics});
   const result=await publishCurated({now:new Date(),incoming:[...run.products,...verified.products,...structured.products,...signals.products],collection});
   console.log(`Weekly snapshot complete: ${result.snapshot.products.length} public products; ${result.review.held.length} held for verification.`);
 } catch(e) {await fs.mkdir(new URL('logs/',root),{recursive:true});await atomicJson(new URL('logs/weekly-error.json',root),{error:e.message,at:new Date().toISOString()});throw e;}

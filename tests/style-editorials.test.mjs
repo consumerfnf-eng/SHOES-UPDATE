@@ -34,3 +34,15 @@ test('Bounded collection returns unranked keywords and source metadata, never fu
   assert.equal(calls.length,4);assert.deepEqual(calls.slice(2),[other,'https://magazine.example/story/third-sneaker-trends']);assert.equal(result.sourceRanks.length,4);assert(result.sourceRanks.every(r=>r.rank===null&&r.kind==='editorial-keyword'&&r.publishedAt&&r.sourceUrl===r.evidenceUrl));assert.equal(result.editorialStatus[0].status,'available');assert(!JSON.stringify(result).includes('body'));assert(!JSON.stringify(result).includes('A long product description'));
   const failed=await collectStyleEditorials({now,config,dictionary,auditDir:null,readPublic:async()=>{throw Error('offline');}});assert.equal(failed.sourceRanks.length,0);assert.equal(failed.editorialStatus[0].status,'unavailable');
 });
+
+test('Hearst article-body layout supplies reviewed seasonal topics, excluding product widgets and derby sections',()=>{
+  const body='<div data-journey-body="standard-article"><h2>Smooth Satin</h2><p>Satin sneakers bring texture to the current season and everyday styling.</p><div class="product-card"><p>Suede brown boots are a separate shopping offer.</p></div><h2>Derby Season</h2><p>Canvas and platform shapes here describe dress shoes, not sneakers.</p><h2>Super Rich</h2><p>Jewel tones such as emerald and sapphire update suede sneakers for fall.</p></div>';
+  const html=markup(body,{publishedAt:'2026-08-10T10:00:00Z'}).replace('<article>','<main>').replace('</article>','</main>');
+  const parsed=parseStyleEditorial(html,{url,source,config:{...config,publicationDays:92},dictionary,now});
+  assert.deepEqual(parsed.topicIds,['satin','suede','jewel']);
+});
+
+test('General shoe articles cannot turn flat-shoe materials into sneaker trend evidence',()=>{
+  const html=markup('<p>Brown suede and silver materials are popular for flat shoes this fall season.</p><p>Mesh sneakers are another current trend that remains practical for daily wear.</p>',{title:'Current shoe trends for fall'});
+  const parsed=parseStyleEditorial(html,{url,source,config,dictionary,now});assert.deepEqual(parsed.topicIds,['mesh']);
+});

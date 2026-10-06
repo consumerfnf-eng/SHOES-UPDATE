@@ -1,19 +1,85 @@
 {
   "schemaVersion": 1,
-  "publicationDays": 30,
-  "maxArticlesPerSource": 4,
+  "publicationDays": 92,
+  "maxArticlesPerSource": 5,
   "sources": [
-    {"id":"whowhatwear-style","name":"Who What Wear","url":"https://www.whowhatwear.com/","domain":"www.whowhatwear.com","articlePrefix":"/fashion/","feedUrl":"https://www.whowhatwear.com/feeds/tag/shoes","discoveryUrl":"https://www.whowhatwear.com/tag/sneakers","seeds":["https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026"]},
-    {"id":"glamour-style","name":"Glamour","url":"https://www.glamour.com/","domain":"www.glamour.com","articlePrefix":"/story/","feedUrl":"https://www.glamour.com/feed/rss","discoveryUrl":"https://www.glamour.com/about/sneakers","seeds":["https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026"]},
-    {"id":"vogue-style","name":"Vogue","url":"https://www.vogue.com/","domain":"www.vogue.com","articlePrefix":"/article/","feedUrl":"https://www.vogue.com/feed/rss","discoveryUrl":"https://www.vogue.com/shopping/womens/shoes/sneakers","seeds":["https://www.vogue.com/article/fall-2026-shoe-trends"]}
+    {
+      "id": "whowhatwear-style",
+      "name": "Who What Wear",
+      "url": "https://www.whowhatwear.com/",
+      "domain": "www.whowhatwear.com",
+      "articlePrefix": "/fashion/",
+      "feedUrl": "https://www.whowhatwear.com/feeds/tag/shoes",
+      "discoveryUrl": "https://www.whowhatwear.com/tag/sneakers",
+      "seeds": [
+        "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026"
+      ],
+      "pinnedSeed": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026"
+    },
+    {
+      "id": "glamour-style",
+      "name": "Glamour",
+      "url": "https://www.glamour.com/",
+      "domain": "www.glamour.com",
+      "articlePrefix": "/story/",
+      "feedUrl": "https://www.glamour.com/feed/rss",
+      "discoveryUrl": "https://www.glamour.com/about/sneakers",
+      "seeds": [
+        "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026"
+      ]
+    },
+    {
+      "id": "vogue-style",
+      "name": "Vogue",
+      "url": "https://www.vogue.com/",
+      "domain": "www.vogue.com",
+      "articlePrefix": "/article/",
+      "feedUrl": "https://www.vogue.com/feed/rss",
+      "discoveryUrl": "https://www.vogue.com/shopping/womens/shoes/sneakers",
+      "seeds": [
+        "https://www.vogue.com/article/fall-2026-shoe-trends"
+      ]
+    },
+    {
+      "id": "harpersbazaar-style",
+      "name": "Harper’s Bazaar",
+      "url": "https://www.harpersbazaar.com/",
+      "domain": "www.harpersbazaar.com",
+      "articlePrefix": "/fashion/",
+      "discoveryUrl": "https://www.harpersbazaar.com/fashion/trends/",
+      "pinnedSeed": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/"
+    }
   ],
   "reviewedHeadings": [
-    {"label":"Retro Low Tops","context":"low[ -]profile|slimmest|retro runners"},
-    {"label":"Feminine Touch","context":"lace fabric|bows|ballerina"},
-    {"label":"Worn In","context":"worn[ -]in|pre[ -]worn|distress|real wear"},
-    {"label":"Netting","context":"mesh|netted|fishnet"},
-    {"label":"Unexpected Color Combination","context":"clashing|contrasting|colors|colours"},
-    {"label":"Nostalgic Style","context":"classic|retro|OG"}
+    {
+      "label": "Retro Low Tops",
+      "context": "low[ -]profile|slimmest|retro runners"
+    },
+    {
+      "label": "Feminine Touch",
+      "context": "lace fabric|bows|ballerina"
+    },
+    {
+      "label": "Worn In",
+      "context": "worn[ -]in|pre[ -]worn|distress|real wear"
+    },
+    {
+      "label": "Netting",
+      "context": "mesh|netted|fishnet"
+    },
+    {
+      "label": "Unexpected Color Combination",
+      "context": "clashing|contrasting|colors|colours"
+    },
+    {
+      "label": "Nostalgic Style",
+      "context": "classic|retro|OG"
+    }
   ],
-  "reviewedPhrases": ["ballet-sneaker","ballet sneaker","ballet sneakers","ultraslim retro sneakers"]
+  "reviewedPhrases": [
+    "ballet-sneaker",
+    "ballet sneaker",
+    "ballet sneakers",
+    "ultraslim retro sneakers"
+  ]
 }

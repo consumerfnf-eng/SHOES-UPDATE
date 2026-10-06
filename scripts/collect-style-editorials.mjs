@@ -3,6 +3,7 @@ import {readFile,mkdir,writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {readPublicSource,decodeText,parseEditorialFeed} from './source-feeds.mjs';
+import {styleTopicsInText} from './style-trend-board.mjs';
 
 const hash=value=>createHash('sha256').update(value).digest('hex');
 const escaped=value=>String(value).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
@@ -28,7 +29,7 @@ export function editorialBlocks(html){
     const raw=token[0];if(raw[0]!=='<'){for(const node of stack)if(node.capture)node.text+=raw;continue;}
     const close=/^<\//.test(raw),tag=raw.match(/^<\/?([a-z0-9]+)/i)?.[1].toLowerCase();if(!tag)continue;
     if(close){const index=stack.findLastIndex(n=>n.tag===tag);if(index>=0)for(const node of stack.splice(index).reverse())finish(node);continue;}
-    const parent=stack.at(-1),inside=tag==='article'||parent?.inside;
+    const parent=stack.at(-1),inside=tag==='article'||/\bdata-journey-body=["']standard-article["']/i.test(raw)||parent?.inside;
     const articleContainer=/\bdata-widget-type=["']contentparsed["']|\bid=["'](?:content|article-body)["']/i.test(raw);
     const excluded=parent?.excluded||['nav','aside','footer'].includes(tag)||skip.test(raw)&&!articleContainer;
     const node={tag,inside,excluded,position:token.index,capture:inside&&!excluded&&['h1','h2','h3','p'].includes(tag),text:''};
@@ -44,7 +45,7 @@ export function parseStyleEditorial(html,{url,source,config,dictionary,now=new D
   const article=candidates[0],stamp=Date.parse(article.datePublished),nowMs=new Date(now).getTime(),cutoff=nowMs-(config.publicationDays||30)*86400000;
   if(!Number.isFinite(stamp)||stamp<cutoff||stamp>nowMs)throw Error('STYLE_ARTICLE_PUBLICATION_OUTSIDE_WINDOW');
   const blocks=editorialBlocks(html),headline=blocks.find(b=>b.tag==='h1')?.text||plain(article.headline||'');
-  if(!blocks.length||!footwear.test(headline+' '+article.headline)||!trend.test(headline+' '+article.headline))throw Error('STYLE_ARTICLE_NOT_EXPLICIT_CURRENT_TREND');
+  if(!blocks.length||!footwear.test(headline+' '+article.headline)||!trend.test(headline+' '+article.headline+' '+canonical.replace(/-/g,' ')))throw Error('STYLE_ARTICLE_NOT_EXPLICIT_CURRENT_TREND');
   if(/\b(?:forecast|prediction|predicts?|sponsored|advertorial|paid partnership)\b/i.test(headline+' '+article.headline)||article.sponsor)throw Error('STYLE_ARTICLE_NOT_INDEPENDENT_CURRENT_EDITORIAL');
   const terms=new Map(),reviewed=config.reviewedHeadings||[],phrases=config.reviewedPhrases||[];
   const add=(term,origin)=>{const key=normalize(term);if(term.length<=90&&!terms.has(key))terms.set(key,{term,origin});};
@@ -58,7 +59,16 @@ export function parseStyleEditorial(html,{url,source,config,dictionary,now=new D
     }
     if(block.tag==='h1'||block.tag==='p'&&/\b(?:trend|fall|spring|summer|winter|season|current|continue|dominate)\b/i.test(block.text))for(const phrase of phrases){const match=block.text.match(literal(phrase));if(match)add(match[0],block.tag==='h1'?'editorial-headline-phrase':'editorial-paragraph-phrase');}
   }
-  return {url:canonical,title:headline,publishedAt:new Date(stamp).toISOString(),modifiedAt:article.dateModified||null,terms:[...terms.values()],contentHash:hash(html)};
+  // Review body paragraphs in an explicit sneaker-trend article. Product widgets,
+  // navigation and unrelated dress-shoe sections are excluded by the tokenizer.
+  const sneakerArticle=/\bsneakers?\b|\bsneakerinas?\b|\btrainers?\b/i.test(headline+' '+article.headline);
+  const topicIds=new Set();let excludedSection=false;
+  for(const block of blocks){
+    if(['h2','h3'].includes(block.tag))excludedSection=excludedTheme.test(block.text)||/derby|jazz shoes?|why trust|readers also/i.test(block.text);
+    const sneakerContext=sneakerArticle||/\bsneakers?\b|\bsneakerinas?\b|\btrainers?\b/i.test(block.text);
+    if(!excludedSection&&sneakerContext&&block.tag==='p'&&block.text.length>=50&&!/\b(?:heels?|pumps?|loafers?|boots?|derby|jazz shoe)\b/i.test(block.text))for(const id of styleTopicsInText(block.text))topicIds.add(id);
+  }
+  return {url:canonical,title:headline,publishedAt:new Date(stamp).toISOString(),modifiedAt:article.dateModified||null,terms:[...terms.values()],topicIds:[...topicIds],contentHash:hash(html)};
 }
 
 export function discoverStyleArticles(body,source,{now=new Date()}={}){
@@ -78,6 +88,7 @@ export async function collectStyleEditorials({now=new Date(),config,dictionary,r
       try{const url=new URL(discovery);if(url.hostname!==source.domain||url.protocol!=='https:')throw Error('STYLE_DISCOVERY_ORIGIN_INVALID');const body=await readPublic(discovery,{maxBytes:4_000_000});candidates.push(...discoverStyleArticles(body,source,{now}));diagnostics.push({stage:'discovery',url:discovery,status:'fetched'});}
       catch(error){diagnostics.push({stage:'discovery',url:discovery,status:'unavailable',reason:error.message});}
     }
+    if(source.pinnedSeed)candidates.unshift(sourceUrl(source.pinnedSeed,source));
     candidates.push(...(source.seeds||[]).map(url=>sourceUrl(url,source)).filter(Boolean));
     const articles=await Promise.all([...new Set(candidates)].slice(0,limit).map(async url=>{
       try{const body=await readPublic(url,{maxBytes:4_000_000}),parsed=parseStyleEditorial(body,{url,source,config,dictionary,now});
@@ -87,8 +98,9 @@ export async function collectStyleEditorials({now=new Date(),config,dictionary,r
     }));
     const valid=articles.filter(a=>a.parsed),digest=hash(JSON.stringify(valid.map(a=>[a.parsed.url,a.parsed.contentHash]))),snapshotId=`${source.id}:${checkedAt}:${digest.slice(0,16)}`;
     const sourceRanks=valid.flatMap(({parsed})=>parsed.terms.map(({term,origin})=>({platform:source.id,platformName:source.name,term,rank:null,kind:'editorial-keyword',verified:true,sourceUrl:parsed.url,evidenceUrl:parsed.url,capturedAt:checkedAt,publishedAt:parsed.publishedAt,rankingPeriod:null,snapshotId,contentHash:parsed.contentHash,rankBasis:origin,scope:'footwear',sourceOriginalContext:parsed.title.slice(0,180)})));
-    return {sourceRanks,status:{...status,status:valid.length?'available':'unavailable',count:sourceRanks.length,reason:sourceRanks.length?null:valid.length?'최근 30일 본문에서 스타일 트렌드 항목 미확인':'최근 30일 스타일 트렌드 원문 확인 불가'},diagnostics:[...diagnostics,...articles.flatMap(a=>a.diagnostic?[a.diagnostic]:[])]};
+    const observations=valid.flatMap(({parsed})=>parsed.topicIds.map(topicId=>({topicId,kind:'editorial',sourceId:source.id,sourceUrl:parsed.url,evidenceId:parsed.url,publishedAt:parsed.publishedAt,capturedAt:checkedAt,contentHash:parsed.contentHash,verified:true})));
+    return {sourceRanks,observations,status:{...status,status:valid.length?'available':'unavailable',count:observations.length,originalTermCount:sourceRanks.length,reason:observations.length?null:valid.length?'검증 기간 내 스니커즈 스타일 항목 미확인':'검증 기간 내 스타일 트렌드 원문 확인 불가'},diagnostics:[...diagnostics,...articles.flatMap(a=>a.diagnostic?[a.diagnostic]:[])]};
   }));
-  return {checkedAt,sourceRanks:results.flatMap(r=>r.sourceRanks),editorialStatus:results.map(r=>r.status),diagnostics:results.flatMap(r=>r.diagnostics)};
+  return {checkedAt,sourceRanks:results.flatMap(r=>r.sourceRanks),observations:results.flatMap(r=>r.observations),editorialStatus:results.map(r=>r.status),diagnostics:results.flatMap(r=>r.diagnostics)};
 }
 if(process.argv[1]&&pathToFileURL(resolve(process.argv[1])).href===import.meta.url){const result=await collectStyleEditorials();console.log(JSON.stringify({checkedAt:result.checkedAt,sourceRanks:result.sourceRanks,editorialStatus:result.editorialStatus,diagnostics:result.diagnostics},null,2));}

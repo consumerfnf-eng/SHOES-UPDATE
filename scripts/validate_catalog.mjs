@@ -5,6 +5,7 @@ import {validateSocialMetrics,withSocialComparisons} from './social-metrics.mjs'
 import {releaseWindow,releaseState} from '../public/assets/release-window.mjs';
 import {SEARCH_CONCEPTS,validPublicSearchConcepts,productCollaborationBrands} from './keyword-taxonomy.mjs';
 import {buildKeywordCatalog,KEYWORD_METHOD} from './search-keywords.mjs';
+import {buildStyleTrendBoard} from './style-trend-board.mjs';
 export function validateSnapshot(catalog) {
   assert.equal(catalog.schemaVersion,1);assert(Array.isArray(catalog.products));assert(Array.isArray(catalog.brands));assert(Array.isArray(catalog.keywords));
   assert(Number.isFinite(Date.parse(catalog.publishedAt)),'Invalid publication timestamp');assert(validDay(catalog.asOf),'Invalid catalog date');
@@ -61,6 +62,7 @@ export function validateSnapshot(catalog) {
   assert.deepEqual(catalog.sourceRanks,expected.sourceRanks,'Invalid, expired or superseded original keyword source');
   assert.deepEqual(catalog.keywords,expected.keywords,'Current keyword score, original label or complete product matches differ from verified sources');
   assert.deepEqual(catalog.forecastKeywords,expected.forecastKeywords,'Forecast cannot affect the current popularity rank or broaden source terms');
+  if(catalog.styleTrendKeywords?.method==='verified-style-board-v1')assert.deepEqual(catalog.styleTrendKeywords,buildStyleTrendBoard(catalog.products,catalog.styleTrendKeywords.observations,{now:catalog.keywordCheckedAt,updated:catalog.styleTrendKeywords.updated,sourceRanks:catalog.sourceRanks}),'Style board must match fresh evidence and bilingual product attributes');
   return true;
 }
 if(process.argv[1]?.endsWith('validate_catalog.mjs')){const c=JSON.parse(await fs.readFile(new URL('../public/data/catalog.json',import.meta.url),'utf8'));validateSnapshot(c);console.log(`PASS: ${c.products.length} products; mandatory25; exact dates, fit, taxonomy and calendar window.`);}

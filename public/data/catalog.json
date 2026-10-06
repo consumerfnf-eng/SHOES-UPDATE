@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-06T05:39:07.663Z",
+  "publishedAt": "2026-10-06T06:41:31.408Z",
   "periodStart": "2026-07-06",
   "asOf": "2026-10-06",
   "brands": [
@@ -1626,6 +1626,7 @@
         "color:black",
         "shape:retro-runner",
         "model:nb-990",
+        "color:jewel-tones",
         "brand:newbalance"
       ],
       "presentation": {
@@ -3137,6 +3138,7 @@
         "category:footwear",
         "category:sneakers",
         "material:mesh",
+        "color:burgundy",
         "brand:celine"
       ],
       "presentation": {
@@ -3312,6 +3314,7 @@
         "attribute:running",
         "material:suede",
         "material:mesh",
+        "color:burgundy",
         "shape:retro-runner",
         "brand:newbalance"
       ],
@@ -5644,7 +5647,7 @@
     }
   ],
   "keywordMethod": "verified-style-source-rank-v2",
-  "keywordCheckedAt": "2026-10-06T06:00:02.287Z",
+  "keywordCheckedAt": "2026-10-06T06:41:31.408Z",
   "sourceRanks": [
     {
       "platform": "wgsn-ss27-colours",
@@ -5653,9 +5656,9 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-10-06T05:39:07.663Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
+      "snapshotId": "wgsn-ss27-colours:2026-10-06T06:38:01.498Z:a6d6eeadbcaf2518",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
       "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
@@ -5666,7 +5669,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-10-06T05:39:07.663Z",
+      "verifiedAt": "2026-10-06T06:38:01.498Z",
       "applicability": "cross-category"
     },
     {
@@ -5676,9 +5679,9 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-10-06T05:39:07.663Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
+      "snapshotId": "wgsn-ss27-colours:2026-10-06T06:38:01.498Z:a6d6eeadbcaf2518",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
       "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
@@ -5689,7 +5692,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-10-06T05:39:07.663Z",
+      "verifiedAt": "2026-10-06T06:38:01.498Z",
       "applicability": "sports-and-outdoor"
     },
     {
@@ -5699,9 +5702,9 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-10-06T05:39:07.663Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
+      "snapshotId": "wgsn-ss27-colours:2026-10-06T06:38:01.498Z:a6d6eeadbcaf2518",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
       "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
@@ -5712,7 +5715,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-10-06T05:39:07.663Z",
+      "verifiedAt": "2026-10-06T06:38:01.498Z",
       "applicability": "cross-category"
     },
     {
@@ -5722,9 +5725,9 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-10-06T05:39:07.663Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
+      "snapshotId": "wgsn-ss27-colours:2026-10-06T06:38:01.498Z:a6d6eeadbcaf2518",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
       "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
@@ -5735,7 +5738,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-10-06T05:39:07.663Z",
+      "verifiedAt": "2026-10-06T06:38:01.498Z",
       "applicability": "footwear-explicit"
     },
     {
@@ -5745,9 +5748,9 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-10-06T05:39:07.663Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
+      "snapshotId": "wgsn-ss27-colours:2026-10-06T06:38:01.498Z:a6d6eeadbcaf2518",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
       "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
@@ -5758,7 +5761,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-10-06T05:39:07.663Z",
+      "verifiedAt": "2026-10-06T06:38:01.498Z",
       "applicability": "cross-category"
     },
     {
@@ -5768,13 +5771,13 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+      "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-      "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+      "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
       "publishedAt": "2026-09-08T07:00:00.000Z",
       "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "rankBasis": "editorial-heading"
@@ -5786,13 +5789,13 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+      "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-      "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+      "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
       "publishedAt": "2026-09-08T07:00:00.000Z",
       "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "rankBasis": "editorial-heading"
@@ -5804,13 +5807,13 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+      "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-      "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+      "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
       "publishedAt": "2026-09-08T07:00:00.000Z",
       "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "rankBasis": "editorial-heading"
@@ -5822,13 +5825,13 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+      "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-      "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+      "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
       "publishedAt": "2026-09-08T07:00:00.000Z",
       "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "rankBasis": "editorial-heading"
@@ -5840,13 +5843,13 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+      "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-      "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+      "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
       "publishedAt": "2026-09-08T07:00:00.000Z",
       "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "rankBasis": "editorial-heading"
@@ -5858,13 +5861,13 @@
       "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "verified": true,
       "kind": "editorial-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T06:38:01.498Z",
       "rankingPeriod": null,
-      "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+      "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
       "scope": "footwear",
       "platformName": "Who What Wear",
       "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-      "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+      "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
       "publishedAt": "2026-09-08T07:00:00.000Z",
       "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
       "rankBasis": "editorial-heading"
@@ -5945,13 +5948,13 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+          "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-          "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+          "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
           "publishedAt": "2026-09-08T07:00:00.000Z",
           "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "rankBasis": "editorial-heading"
@@ -5991,13 +5994,13 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+          "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-          "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+          "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
           "publishedAt": "2026-09-08T07:00:00.000Z",
           "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "rankBasis": "editorial-heading"
@@ -6056,13 +6059,13 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+          "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-          "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+          "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
           "publishedAt": "2026-09-08T07:00:00.000Z",
           "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "rankBasis": "editorial-heading"
@@ -6192,13 +6195,13 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+          "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-          "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+          "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
           "publishedAt": "2026-09-08T07:00:00.000Z",
           "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "rankBasis": "editorial-heading"
@@ -6229,13 +6232,13 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+          "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-          "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+          "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
           "publishedAt": "2026-09-08T07:00:00.000Z",
           "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "rankBasis": "editorial-heading"
@@ -6267,13 +6270,13 @@
           "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "verified": true,
           "kind": "editorial-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+          "snapshotId": "whowhatwear-style:2026-10-06T06:38:01.498Z:6efcc9369373e72b",
           "scope": "footwear",
           "platformName": "Who What Wear",
           "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-          "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+          "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
           "publishedAt": "2026-09-08T07:00:00.000Z",
           "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
           "rankBasis": "editorial-heading"
@@ -6304,9 +6307,9 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-10-06T05:39:07.663Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
+          "snapshotId": "wgsn-ss27-colours:2026-10-06T06:38:01.498Z:a6d6eeadbcaf2518",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
           "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
@@ -6317,7 +6320,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-10-06T05:39:07.663Z",
+          "verifiedAt": "2026-10-06T06:38:01.498Z",
           "applicability": "cross-category"
         }
       ],
@@ -6344,9 +6347,9 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-10-06T05:39:07.663Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
+          "snapshotId": "wgsn-ss27-colours:2026-10-06T06:38:01.498Z:a6d6eeadbcaf2518",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
           "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
@@ -6357,7 +6360,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-10-06T05:39:07.663Z",
+          "verifiedAt": "2026-10-06T06:38:01.498Z",
           "applicability": "cross-category"
         }
       ],
@@ -6384,9 +6387,9 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-10-06T05:39:07.663Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
+          "snapshotId": "wgsn-ss27-colours:2026-10-06T06:38:01.498Z:a6d6eeadbcaf2518",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
           "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
@@ -6397,7 +6400,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-10-06T05:39:07.663Z",
+          "verifiedAt": "2026-10-06T06:38:01.498Z",
           "applicability": "cross-category"
         }
       ],
@@ -6424,9 +6427,9 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-10-06T05:39:07.663Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
+          "snapshotId": "wgsn-ss27-colours:2026-10-06T06:38:01.498Z:a6d6eeadbcaf2518",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
           "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
@@ -6437,7 +6440,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-10-06T05:39:07.663Z",
+          "verifiedAt": "2026-10-06T06:38:01.498Z",
           "applicability": "footwear-explicit"
         }
       ],
@@ -6464,9 +6467,9 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-10-06T05:39:07.663Z",
+          "capturedAt": "2026-10-06T06:38:01.498Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
+          "snapshotId": "wgsn-ss27-colours:2026-10-06T06:38:01.498Z:a6d6eeadbcaf2518",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
           "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
@@ -6477,7 +6480,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-10-06T05:39:07.663Z",
+          "verifiedAt": "2026-10-06T06:38:01.498Z",
           "applicability": "sports-and-outdoor"
         }
       ],
@@ -6494,13 +6497,13 @@
       "platform": "musinsa",
       "name": "무신사",
       "url": "https://www.musinsa.com/main/musinsa/recommend",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
       "reason": null,
       "count": 100,
-      "sourceUpdatedAt": "10.06 14:20, 기준",
+      "sourceUpdatedAt": "10.06 15:20, 기준",
       "rankingPeriod": null,
-      "snapshotId": "musinsa:2026-10-06T05:39:07.663Z:5d2f9002290b279c",
+      "snapshotId": "musinsa:2026-10-06T06:38:01.498Z:09bfc3176388addf",
       "kind": "search-rank",
       "country": "KR"
     },
@@ -6508,13 +6511,13 @@
       "platform": "29cm",
       "name": "29CM",
       "url": "https://www.29cm.co.kr/store/search/start",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
       "reason": null,
       "count": 30,
       "sourceUpdatedAt": "10.06 기준",
       "rankingPeriod": null,
-      "snapshotId": "29cm:2026-10-06T05:39:07.663Z:68797e2a4ff53c65",
+      "snapshotId": "29cm:2026-10-06T06:38:01.498Z:95d7867030c9a472",
       "kind": "search-rank",
       "country": "KR"
     },
@@ -6522,21 +6525,27 @@
       "platform": "eql",
       "name": "EQL",
       "url": "https://www.eqlstore.com/public/search/keyword",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
-      "status": "unavailable",
-      "reason": "공개 검색순위 원문 확인 불가"
+      "checkedAt": "2026-10-06T06:38:01.498Z",
+      "status": "available",
+      "reason": null,
+      "count": 20,
+      "sourceUpdatedAt": "2026/10/06 15:00:01",
+      "rankingPeriod": null,
+      "snapshotId": "eql:2026-10-06T06:38:01.498Z:5e8d8c91491d04d0",
+      "kind": "search-rank",
+      "country": "KR"
     },
     {
       "platform": "tiktok",
       "name": "TikTok Creative Center",
       "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?region=KR&period=7",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
       "reason": null,
       "count": 3,
       "sourceUpdatedAt": null,
       "rankingPeriod": "7 days",
-      "snapshotId": "tiktok:2026-10-06T05:39:07.663Z:4f87c285aa8e9336",
+      "snapshotId": "tiktok:2026-10-06T06:38:01.498Z:95970b66600c8b3e",
       "kind": "hashtag-rank",
       "country": "KR"
     },
@@ -6627,13 +6636,13 @@
       "platform": "wgsn-ss27-colours",
       "name": "WGSN",
       "url": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "validUntil": "2027-08-31",
       "forecastPeriod": "S/S 2027",
       "status": "available",
       "automatedStatus": "available",
       "verificationMethod": "public-source-fetch",
-      "verifiedAt": "2026-10-06T05:39:07.663Z",
+      "verifiedAt": "2026-10-06T06:38:01.498Z",
       "count": 5,
       "reason": null
     },
@@ -6642,7 +6651,7 @@
       "name": "F-Trend",
       "url": "https://f-trend.com/",
       "status": "unsupported",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "reason": "공개 전망 원문을 검증하지 못했습니다. 회원 전용 본문은 사용하지 않습니다."
     },
     {
@@ -6650,7 +6659,7 @@
       "name": "Trendstop",
       "url": "https://www.trendstop.com/",
       "status": "unsupported",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "reason": "공개 전망 원문을 검증하지 못했습니다. 회원 전용 본문은 사용하지 않습니다."
     },
     {
@@ -6658,7 +6667,7 @@
       "name": "WGSN 기타 전망",
       "url": "https://www.wgsn.com/",
       "status": "unsupported",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "reason": "검토한 공개 S/S27 색상 글 외 유료 보고서는 사용하지 않습니다."
     }
   ],
@@ -6668,7 +6677,7 @@
       "name": "Sneaker Bar Detroit",
       "url": "https://sneakerbardetroit.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6678,7 +6687,7 @@
       "name": "Hypebeast",
       "url": "https://hypebeast.com/footwear",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6688,7 +6697,7 @@
       "name": "Highsnobiety",
       "url": "https://www.highsnobiety.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6698,7 +6707,7 @@
       "name": "Sneaker News",
       "url": "https://sneakernews.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6708,7 +6717,7 @@
       "name": "The Sneaker Newsletter",
       "url": "https://www.thesneakernewsletter.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6718,7 +6727,7 @@
       "name": "The Dassler",
       "url": "https://thedassler.substack.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6728,30 +6737,44 @@
       "name": "Who What Wear",
       "url": "https://www.whowhatwear.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
-      "count": 0,
-      "reason": "최근 30일 본문에서 스타일 트렌드 항목 미확인"
+      "count": 13,
+      "reason": null,
+      "originalTermCount": 6
     },
     {
       "platform": "glamour-style",
       "name": "Glamour",
       "url": "https://www.glamour.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
       "status": "available",
-      "count": 0,
-      "reason": "최근 30일 본문에서 스타일 트렌드 항목 미확인"
+      "count": 5,
+      "reason": null,
+      "originalTermCount": 0
     },
     {
       "platform": "vogue-style",
       "name": "Vogue",
       "url": "https://www.vogue.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-06T05:39:07.663Z",
-      "status": "unavailable",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
+      "status": "available",
       "count": 0,
-      "reason": "최근 30일 스타일 트렌드 원문 확인 불가"
+      "reason": "검증 기간 내 스니커즈 스타일 항목 미확인",
+      "originalTermCount": 0
+    },
+    {
+      "platform": "harpersbazaar-style",
+      "name": "Harper’s Bazaar",
+      "url": "https://www.harpersbazaar.com/",
+      "kind": "editorial-keyword",
+      "checkedAt": "2026-10-06T06:38:01.498Z",
+      "status": "available",
+      "count": 11,
+      "reason": null,
+      "originalTermCount": 0
     }
   ],
   "socialMetricStatus": [
@@ -7871,6 +7894,37 @@
       "held": 2358,
       "expired": 3
     },
+    "styleMarketStatus": [
+      {
+        "source": "musinsa",
+        "category": "스니커즈",
+        "status": "available",
+        "items": 99
+      },
+      {
+        "source": "musinsa",
+        "category": "스포츠화",
+        "status": "available",
+        "items": 100
+      },
+      {
+        "source": "29cm",
+        "category": "여성슈즈",
+        "status": "available",
+        "items": 37
+      },
+      {
+        "source": "29cm",
+        "category": "남성슈즈",
+        "status": "available",
+        "items": 42
+      },
+      {
+        "source": "sole-retriever",
+        "status": "available",
+        "items": 23
+      }
+    ],
     "discoveryRecheck": {
       "checkedAt": "2026-10-06T05:49:06.710Z",
       "scope": "targeted-discovery-recheck",
@@ -8351,154 +8405,2499 @@
     }
   },
   "styleTrendKeywords": {
-    "method": "verified-current-style-mentions",
-    "updated": "2026-10-06T05:39:07.663Z",
+    "method": "verified-style-board-v1",
+    "updated": "2026-10-06T06:41:31.408Z",
+    "observations": [
+      {
+        "topicId": "animal",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "KH8143",
+        "itemName": "adidas Samba Bowling Brain Dead Cheetah",
+        "releaseDate": "2026-10-08",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "animal",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "KJ0662",
+        "itemName": "adidas Samba Bowling Brain Dead Snakeskin",
+        "releaseDate": "2026-10-08",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "animal",
+        "kind": "editorial",
+        "sourceId": "glamour-style",
+        "sourceUrl": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+        "evidenceId": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+        "publishedAt": "2026-09-29T11:30:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "b67d1ff96df91c96d907825d922391df8c916dc3c5340cb804548f10a96b8bce",
+        "verified": true
+      },
+      {
+        "topicId": "animal",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "animal",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+        "verified": true
+      },
+      {
+        "topicId": "ballet",
+        "kind": "editorial",
+        "sourceId": "glamour-style",
+        "sourceUrl": "https://www.glamour.com/story/how-to-style-mary-jane-shoes",
+        "evidenceId": "https://www.glamour.com/story/how-to-style-mary-jane-shoes",
+        "publishedAt": "2026-10-03T13:30:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "87c69c6f7d1fe9470e2024a717188b3beb20740c30f9b7611aa40ff365e10069",
+        "verified": true
+      },
+      {
+        "topicId": "ballet",
+        "kind": "editorial",
+        "sourceId": "glamour-style",
+        "sourceUrl": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+        "evidenceId": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+        "publishedAt": "2026-09-29T11:30:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "b67d1ff96df91c96d907825d922391df8c916dc3c5340cb804548f10a96b8bce",
+        "verified": true
+      },
+      {
+        "topicId": "ballet",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "ballet",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+        "verified": true
+      },
+      {
+        "topicId": "ballet",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "5987818",
+        "itemName": "스탠 스미스 LO 발레 JQ6939",
+        "sourceRank": 2,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "ballet",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "6931961",
+        "itemName": "슬립캣 발레 - 오트 커피:체스넛 브라운 / 410524-03",
+        "sourceRank": 84,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "ballet",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "7013623",
+        "itemName": "슈퍼스타 SQ 발레 LB3786",
+        "sourceRank": 50,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+        "evidenceId": "1874511",
+        "itemName": "dress (dark brown)",
+        "sourceRank": 17,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "3377182",
+        "itemName": "[29CM단독 재입고] SL 72 OG - 브라운 / JR7527",
+        "sourceRank": 1,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+        "evidenceId": "3382103",
+        "itemName": "[29CM단독] SL 72 OG - 원더 화이트:브라운 / JR7526",
+        "sourceRank": 7,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "3393882",
+        "itemName": "[딘디 Pick] NBRJGF710F / 브리즈 / SD2203BR (BROWN)",
+        "sourceRank": 93,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+        "evidenceId": "3544788",
+        "itemName": "에어 포스 1 07 - [플랙스:검 라이트 브라운:블랙:위트 / FZ7372-200]",
+        "sourceRank": 31,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+        "evidenceId": "3724986",
+        "itemName": "[29CM Only] 벨라 UT 클래식 - 초콜릿 브라운:알파인 스노우 / 404620-03",
+        "sourceRank": 12,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "3759642",
+        "itemName": "NBPDGF766F / U204LMMA (BROWN)",
+        "sourceRank": 39,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4027609",
+        "itemName": "문 슈 OG W - [바로크 브라운:블랙:캐시미어 / IW0955-201]",
+        "sourceRank": 27,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4106303",
+        "itemName": "벨라 미나 스웨이드 우먼 - 초콜릿:검 / 407671-05",
+        "sourceRank": 92,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4117534",
+        "itemName": "푸마 태클렛 프리미엄 우먼스 - 다크 초콜릿:검 / 410226-02",
+        "sourceRank": 5,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4203490",
+        "itemName": "[딘디 Pick] NBRJGF730F / SD2602BR (BROWN)",
+        "sourceRank": 88,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4204636",
+        "itemName": "NBPDGF775F / U204L3W2 (BROWN)",
+        "sourceRank": 81,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4214180",
+        "itemName": "문 슈 OGW - [코코넛 밀크:모스우드 브라운:펜넬:라이트 카키 / IZ6169-122]",
+        "sourceRank": 41,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4247447",
+        "itemName": "문 슈 W - [오프 누아르:블랙:검 라이트 브라운:세일 / IX7025-001]",
+        "sourceRank": 11,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4247448",
+        "itemName": "문 슈 W - [미스틱 데이츠:터프 레드:검 라이트 브라운:세일 / IX7025-600]",
+        "sourceRank": 7,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "4371012",
+        "itemName": "에어 포스 1 07 WB M - 플랙스:검 라이트 브라운:블랙:위트 / CJ9179-200",
+        "sourceRank": 19,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "4923314",
+        "itemName": "토바코 - 브라운 / JP9651",
+        "sourceRank": 16,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "5321121",
+        "itemName": "가젤 로우 프로  - 다크브라운:크림화이트 / JS2662",
+        "sourceRank": 20,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "5825888",
+        "itemName": "스피드캣 TTF - 다크초콜릿:아이보리 / 403903-01",
+        "sourceRank": 66,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "5981569",
+        "itemName": "NBPDGF766F / U204LMMA (BROWN)",
+        "sourceRank": 86,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "6931961",
+        "itemName": "슬립캣 발레 - 오트 커피:체스넛 브라운 / 410524-03",
+        "sourceRank": 84,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "6976459",
+        "itemName": "[6.5CM UP] 논슬립 러기드 스웨이드 뮬_브라운",
+        "sourceRank": 34,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "brown",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "7332262",
+        "itemName": "NBPQGF702F / 워킹 1880 V2 (2E) (BROWN)",
+        "sourceRank": 77,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "burgundy",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "burgundy",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "3690270",
+        "itemName": "메가그립 레니게이드 MID GTX 여성 와이드 블랙/버건디 등산화",
+        "sourceRank": 13,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "canvas",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "1494180",
+        "itemName": "척테일러 올스타 리프트 캔버스 화이트 560251C",
+        "sourceRank": 35,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "character",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "410646-01",
+        "itemName": "Puma Suede Street Fighter Ken Masters",
+        "releaseDate": "2026-10-09",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "character",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "410647-01",
+        "itemName": "Puma Suede Street Fighter Ryu",
+        "releaseDate": "2026-10-09",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "character",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "410648-01",
+        "itemName": "Puma Suede Street Fighter Chun-Li",
+        "releaseDate": "2026-10-09",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "contrast",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+        "verified": true
+      },
+      {
+        "topicId": "feminine",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+        "verified": true
+      },
+      {
+        "topicId": "jewel",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "low-profile",
+        "kind": "editorial",
+        "sourceId": "glamour-style",
+        "sourceUrl": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+        "evidenceId": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+        "publishedAt": "2026-09-29T11:30:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "b67d1ff96df91c96d907825d922391df8c916dc3c5340cb804548f10a96b8bce",
+        "verified": true
+      },
+      {
+        "topicId": "low-profile",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "low-profile",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+        "publishedAt": "2026-09-29T15:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "2709829a08277f43d6c606e93a2c2ba2a28f5cd6004980d424aa950dc790db2a",
+        "verified": true
+      },
+      {
+        "topicId": "low-profile",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+        "verified": true
+      },
+      {
+        "topicId": "mary-jane",
+        "kind": "editorial",
+        "sourceId": "glamour-style",
+        "sourceUrl": "https://www.glamour.com/story/how-to-style-mary-jane-shoes",
+        "evidenceId": "https://www.glamour.com/story/how-to-style-mary-jane-shoes",
+        "publishedAt": "2026-10-03T13:30:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "87c69c6f7d1fe9470e2024a717188b3beb20740c30f9b7611aa40ff365e10069",
+        "verified": true
+      },
+      {
+        "topicId": "mary-jane",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4085104",
+        "itemName": "맥스코트 메리제인 - 블랙 / KZ9650",
+        "sourceRank": 62,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "mesh",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+        "verified": true
+      },
+      {
+        "topicId": "mule",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "LC5440",
+        "itemName": "adidas Samba OG Mules Core Black (W)",
+        "releaseDate": "2026-10-07",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "mule",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "LC5441",
+        "itemName": "adidas Samba OG Mules Cloud White (W)",
+        "releaseDate": "2026-10-07",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "mule",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+        "evidenceId": "3262308",
+        "itemName": "chinese mule sneakers (black)",
+        "sourceRank": 42,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+        "verified": true
+      },
+      {
+        "topicId": "mule",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4133593",
+        "itemName": "MOSS Suede Mules (3color)",
+        "sourceRank": 59,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "netting",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+        "verified": true
+      },
+      {
+        "topicId": "platform",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "4916439",
+        "itemName": "Flatform Cowhide Leather Sneakers [ Gray ]",
+        "sourceRank": 47,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "platform",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "5267279",
+        "itemName": "하트 시그니처 플랫폼 스니커즈 EBAL157510",
+        "sourceRank": 59,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "red",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "II0402-601",
+        "itemName": "Nike Sabrina 4 Bright Crimson",
+        "releaseDate": "2026-10-06",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "red",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "red",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4151865",
+        "itemName": "[기호X베리시] TRIA SHIRRING SNEAKERS / RED",
+        "sourceRank": 20,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "red",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4247448",
+        "itemName": "문 슈 W - [미스틱 데이츠:터프 레드:검 라이트 브라운:세일 / IX7025-600]",
+        "sourceRank": 7,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "red",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "4680101",
+        "itemName": "샥스 R4 M - 메탈릭 실버:블랙:피칸테 레드 / HQ1988-002",
+        "sourceRank": 32,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "red",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "6083807",
+        "itemName": "젤-1130 -화이트:레드 / 1203A609-111",
+        "sourceRank": 72,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "red",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "6680966",
+        "itemName": "매그맥스 나이트로 2 - 울트라 레드:레드 리듬 / 312125-32",
+        "sourceRank": 11,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "red",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "6781146",
+        "itemName": "보메로 플러스 M - 앤트러사이트:브라이트 크림슨:유니버시티 레드:블랙 / HV8150-017",
+        "sourceRank": 73,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "retro",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "retro",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+        "publishedAt": "2026-09-29T15:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "2709829a08277f43d6c606e93a2c2ba2a28f5cd6004980d424aa950dc790db2a",
+        "verified": true
+      },
+      {
+        "topicId": "retro",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+        "verified": true
+      },
+      {
+        "topicId": "satin",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+        "evidenceId": "3470518",
+        "itemName": "젤-카야노 14 - 블랙:퓨어 실버 / 1201A019-006",
+        "sourceRank": 16,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+        "evidenceId": "3697250",
+        "itemName": "NBPDGF703S / M1906REH (SILVER)",
+        "sourceRank": 86,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+        "evidenceId": "3808242",
+        "itemName": "adidas by Stella McCartney 울트라부스트 5 - 라이트솔리드그레이:실버메탈릭 / KJ1019",
+        "sourceRank": 15,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+        "evidenceId": "4187248",
+        "itemName": "젤-카야노 14 - 버치:퓨어실버 / 1203A537-200",
+        "sourceRank": 25,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "3777398",
+        "itemName": "(공용) 웨이브 라이더 10 - 화이트:실버:블랙 / D1GA210405",
+        "sourceRank": 9,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "4680101",
+        "itemName": "샥스 R4 M - 메탈릭 실버:블랙:피칸테 레드 / HQ1988-002",
+        "sourceRank": 32,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "4727091",
+        "itemName": "NBPDGF719S / MR530LG (SILVER)",
+        "sourceRank": 45,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "4752687",
+        "itemName": "젤-카야노 14 - 버치:퓨어실버 / 1203A537-200",
+        "sourceRank": 31,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "4817435",
+        "itemName": "모션플렉스 실버",
+        "sourceRank": 66,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "5042974",
+        "itemName": "아디제로 EVO SL W - 블랙:실버 / JP7147",
+        "sourceRank": 60,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "5131848",
+        "itemName": "매그맥스 나이트로 우먼스 - 화이트:실버 / 310089-06",
+        "sourceRank": 96,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "5277374",
+        "itemName": "에어 조던 뮬 W - 블랙:메탈릭 실버 / HJ4292-001",
+        "sourceRank": 77,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "5277377",
+        "itemName": "보메로 플러스 W - 블랙:메탈릭 다크 그레이:쿨 그레이:다크 스모크 그레이 / HV8154-001",
+        "sourceRank": 3,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "5340557",
+        "itemName": "아디제로 아루쿠  - 실버:크리스탈화이트 / JS3714",
+        "sourceRank": 52,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "5408936",
+        "itemName": "에어 맥스 TL 2.5 M - 블랙:메탈릭 실버:블랙 / FZ4110-002",
+        "sourceRank": 83,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "5408953",
+        "itemName": "보메로 플러스 M - 블랙:메탈릭 다크 그레이:쿨 그레이:다크 스모크 그레이 / HV8150-003",
+        "sourceRank": 72,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "5590698",
+        "itemName": "에어 맥스 모토 2K M - 블랙:메탈릭 다크 그레이:다크 스모크 그레이 / IO9279-001",
+        "sourceRank": 30,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "6046406",
+        "itemName": "아디제로 EVO SL EXO M - 화이트:블랙:아이언메탈릭 / KI4763",
+        "sourceRank": 64,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "6618043",
+        "itemName": "보메로 18 SE W - 팬텀:그레이 포그:메탈릭 실버:서밋 화이트 / IM8330-001",
+        "sourceRank": 99,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "6931948",
+        "itemName": "디비에이트 퓨어 나이트로 - 푸마 블랙:플랫 다크 그레이:푸마 실버 / 313904-16",
+        "sourceRank": 34,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "6931951",
+        "itemName": "디비에이트 퓨어 나이트로 헬로 선라이즈 - 웜 화이트:메이플 시럽:푸마 실버 / 314852-01",
+        "sourceRank": 83,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "silver",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "7261909",
+        "itemName": "페가수스 42 M - 풋볼 그레이:브라이트 스프루스:메탈릭 실버:블랙 / IQ0454-001",
+        "sourceRank": 81,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "skate",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "IV6099-002",
+        "itemName": "Nike SB Air Force 1 Low SE Instant Skateboards City Pack Tokyo",
+        "releaseDate": "2026-10-09",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "410646-01",
+        "itemName": "Puma Suede Street Fighter Ken Masters",
+        "releaseDate": "2026-10-09",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "410647-01",
+        "itemName": "Puma Suede Street Fighter Ryu",
+        "releaseDate": "2026-10-09",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "410648-01",
+        "itemName": "Puma Suede Street Fighter Chun-Li",
+        "releaseDate": "2026-10-09",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "editorial",
+        "sourceId": "harpersbazaar-style",
+        "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+        "publishedAt": "2026-08-10T20:34:47.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+        "publishedAt": "2026-09-29T15:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "2709829a08277f43d6c606e93a2c2ba2a28f5cd6004980d424aa950dc790db2a",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4106302",
+        "itemName": "벨라 미나 스웨이드 우먼 - 푸마 블랙 / 407671-04",
+        "sourceRank": 99,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4106303",
+        "itemName": "벨라 미나 스웨이드 우먼 - 초콜릿:검 / 407671-05",
+        "sourceRank": 92,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "retail",
+        "sourceId": "29cm",
+        "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+        "evidenceId": "4133593",
+        "itemName": "MOSS Suede Mules (3color)",
+        "sourceRank": 59,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "6976459",
+        "itemName": "[6.5CM UP] 논슬립 러기드 스웨이드 뮬_브라운",
+        "sourceRank": 34,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "6976462",
+        "itemName": "[6.5CM UP] 논슬립 러기드 스웨이드 뮬_블랙",
+        "sourceRank": 23,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "suede",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+        "evidenceId": "7231155",
+        "itemName": "에어 포스 1 07 스웨이드 W - 카카오 와우:팀 그린:민트 폼:소프트 펄 / IQ0136-200",
+        "sourceRank": 37,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+        "verified": true
+      },
+      {
+        "topicId": "trail",
+        "kind": "calendar",
+        "sourceId": "sole-retriever",
+        "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+        "evidenceId": "214274-0TP",
+        "itemName": "Crocs Quick Trail Racer V2 Cordura Black",
+        "releaseDate": "2026-10-08",
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+        "verified": true
+      },
+      {
+        "topicId": "trail",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "6151541",
+        "itemName": "[TRAIL] 트레일러닝 슈즈 TL-E FE4TX26040BLK",
+        "sourceRank": 82,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "trail",
+        "kind": "retail",
+        "sourceId": "musinsa",
+        "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+        "evidenceId": "6949852",
+        "itemName": "모노 트레일",
+        "sourceRank": 21,
+        "capturedAt": "2026-10-06T06:41:31.408Z",
+        "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+        "verified": true
+      },
+      {
+        "topicId": "worn",
+        "kind": "editorial",
+        "sourceId": "whowhatwear-style",
+        "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "capturedAt": "2026-10-06T06:38:01.498Z",
+        "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+        "verified": true
+      }
+    ],
     "items": [
       {
-        "id": "keyword-78918f6763c59160",
+        "id": "style-suede",
         "keywordType": "style",
-        "label": "ballet sneakers",
+        "label": "스웨이드",
+        "englishLabel": "Suede sneakers",
         "aliases": [
-          "ballet sneakers",
-          "Ballet-Sneaker",
-          "발레코어",
-          "발레리나",
-          "발레 스니커즈",
-          "ballet sneaker",
-          "ballerina sneaker",
-          "sneakerina"
-        ],
-        "productIds": [],
-        "matchedProductCount": 0,
-        "sourceRanks": [
-          {
-            "platform": "glamour-style",
-            "term": "ballet sneakers",
-            "rank": null,
-            "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
-            "verified": true,
-            "kind": "editorial-keyword",
-            "capturedAt": "2026-10-04T03:27:50.902Z",
-            "rankingPeriod": null,
-            "snapshotId": "glamour-style:2026-10-04T03:27:50.902Z:cb70e26b963ef5d0",
-            "scope": "footwear",
-            "platformName": "Glamour",
-            "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
-            "contentHash": "9051ccfb26f9902dc3cf02f494cf487be4014bdd2258f56d116f45dddbb3fa50",
-            "publishedAt": "2026-09-23T13:53:42.223Z",
-            "evidenceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
-            "rankBasis": "editorial-paragraph-phrase"
-          },
-          {
-            "platform": "glamour-style",
-            "term": "Ballet-Sneaker",
-            "rank": null,
-            "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
-            "verified": true,
-            "kind": "editorial-keyword",
-            "capturedAt": "2026-10-04T03:27:50.902Z",
-            "rankingPeriod": null,
-            "snapshotId": "glamour-style:2026-10-04T03:27:50.902Z:cb70e26b963ef5d0",
-            "scope": "footwear",
-            "platformName": "Glamour",
-            "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
-            "contentHash": "9051ccfb26f9902dc3cf02f494cf487be4014bdd2258f56d116f45dddbb3fa50",
-            "publishedAt": "2026-09-23T13:53:42.223Z",
-            "evidenceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
-            "rankBasis": "editorial-headline-phrase"
-          }
-        ],
-        "sourceCount": 1,
-        "score": 0,
-        "rank": 1,
-        "rankingStatus": "unranked",
-        "mentionCount": 1
-      },
-      {
-        "id": "keyword-1070fb2b450d17ba",
-        "keywordType": "style",
-        "label": "Feminine Touch",
-        "aliases": [
-          "Feminine Touch",
-          "페미닌 터치"
+          "suede"
         ],
         "productIds": [
-          "official-nike-ix8478-410"
+          "daily-20260915-nike-tennis-centre-kallmeyer-iw4737-104",
+          "daily-20260916-converse-palmes-navy-a24786c",
+          "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
+          "official-82d80c59311fcc15",
+          "verified-new-balance-u1300ss",
+          "verified-new-balance-u204v2pt",
+          "verified-new-balance-u204v2w0",
+          "verified-new-balance-u90608ol",
+          "verified-new-balance-u90609bo",
+          "verified-new-balance-u990lv4",
+          "verified-new-balance-u993mo",
+          "verified-new-balance-ugtr4dy",
+          "verified-new-balance-w327apc"
         ],
-        "matchedProductCount": 1,
-        "sourceRanks": [
+        "matchedProductCount": 13,
+        "sourceCount": 5,
+        "editorialCount": 3,
+        "retailCount": 6,
+        "calendarCount": 3,
+        "channels": [
+          "calendar",
+          "editorial",
+          "retail"
+        ],
+        "rankSignal": 0.060427413411938094,
+        "evidence": [
           {
-            "platform": "whowhatwear-style",
-            "term": "Feminine Touch",
-            "rank": null,
+            "topicId": "suede",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "410646-01",
+            "itemName": "Puma Suede Street Fighter Ken Masters",
+            "releaseDate": "2026-10-09",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "410647-01",
+            "itemName": "Puma Suede Street Fighter Ryu",
+            "releaseDate": "2026-10-09",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "410648-01",
+            "itemName": "Puma Suede Street Fighter Chun-Li",
+            "releaseDate": "2026-10-09",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+            "publishedAt": "2026-09-29T15:00:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "2709829a08277f43d6c606e93a2c2ba2a28f5cd6004980d424aa950dc790db2a",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
             "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "verified": true,
-            "kind": "editorial-keyword",
-            "capturedAt": "2026-10-04T03:27:50.902Z",
-            "rankingPeriod": null,
-            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
-            "scope": "footwear",
-            "platformName": "Who What Wear",
-            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
             "publishedAt": "2026-09-08T07:00:00.000Z",
-            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "rankBasis": "editorial-heading"
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4106302",
+            "itemName": "벨라 미나 스웨이드 우먼 - 푸마 블랙 / 407671-04",
+            "sourceRank": 99,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4106303",
+            "itemName": "벨라 미나 스웨이드 우먼 - 초콜릿:검 / 407671-05",
+            "sourceRank": 92,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4133593",
+            "itemName": "MOSS Suede Mules (3color)",
+            "sourceRank": 59,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "6976459",
+            "itemName": "[6.5CM UP] 논슬립 러기드 스웨이드 뮬_브라운",
+            "sourceRank": 34,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "6976462",
+            "itemName": "[6.5CM UP] 논슬립 러기드 스웨이드 뮬_블랙",
+            "sourceRank": 23,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "suede",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "7231155",
+            "itemName": "에어 포스 1 07 스웨이드 W - 카카오 와우:팀 그린:민트 폼:소프트 펄 / IQ0136-200",
+            "sourceRank": 37,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
           }
         ],
-        "sourceCount": 1,
-        "score": 0,
-        "rank": 2,
-        "rankingStatus": "unranked",
-        "mentionCount": 1
+        "rank": 1
       },
       {
-        "id": "keyword-f48afd9a805f53c2",
+        "id": "style-ballet",
         "keywordType": "style",
-        "label": "Netting",
+        "label": "발레리나스니커즈",
+        "englishLabel": "Ballet sneakers / sneakerina",
         "aliases": [
-          "Netting",
-          "fishnet",
-          "피시넷",
-          "그물 소재",
-          "네팅"
+          "ballet sneakers"
         ],
         "productIds": [],
         "matchedProductCount": 0,
-        "sourceRanks": [
+        "sourceCount": 4,
+        "editorialCount": 4,
+        "retailCount": 3,
+        "calendarCount": 0,
+        "channels": [
+          "editorial",
+          "retail"
+        ],
+        "rankSignal": 0.5,
+        "evidence": [
           {
-            "platform": "whowhatwear-style",
-            "term": "Netting",
-            "rank": null,
+            "topicId": "ballet",
+            "kind": "editorial",
+            "sourceId": "glamour-style",
+            "sourceUrl": "https://www.glamour.com/story/how-to-style-mary-jane-shoes",
+            "evidenceId": "https://www.glamour.com/story/how-to-style-mary-jane-shoes",
+            "publishedAt": "2026-10-03T13:30:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "87c69c6f7d1fe9470e2024a717188b3beb20740c30f9b7611aa40ff365e10069",
+            "verified": true
+          },
+          {
+            "topicId": "ballet",
+            "kind": "editorial",
+            "sourceId": "glamour-style",
+            "sourceUrl": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+            "evidenceId": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+            "publishedAt": "2026-09-29T11:30:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "b67d1ff96df91c96d907825d922391df8c916dc3c5340cb804548f10a96b8bce",
+            "verified": true
+          },
+          {
+            "topicId": "ballet",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          },
+          {
+            "topicId": "ballet",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
             "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "verified": true,
-            "kind": "editorial-keyword",
-            "capturedAt": "2026-10-04T03:27:50.902Z",
-            "rankingPeriod": null,
-            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
-            "scope": "footwear",
-            "platformName": "Who What Wear",
-            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
             "publishedAt": "2026-09-08T07:00:00.000Z",
-            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "rankBasis": "editorial-heading"
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+            "verified": true
+          },
+          {
+            "topicId": "ballet",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "5987818",
+            "itemName": "스탠 스미스 LO 발레 JQ6939",
+            "sourceRank": 2,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "ballet",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "6931961",
+            "itemName": "슬립캣 발레 - 오트 커피:체스넛 브라운 / 410524-03",
+            "sourceRank": 84,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "ballet",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "7013623",
+            "itemName": "슈퍼스타 SQ 발레 LB3786",
+            "sourceRank": 50,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
           }
         ],
-        "sourceCount": 1,
-        "score": 0,
-        "rank": 3,
-        "rankingStatus": "unranked",
-        "mentionCount": 1
+        "rank": 2
       },
       {
-        "id": "keyword-54915604415c7e38",
+        "id": "style-animal",
         "keywordType": "style",
-        "label": "Nostalgic Style",
+        "label": "애니멀프린트",
+        "englishLabel": "Animal print / leopard / snake",
         "aliases": [
-          "Nostalgic Style",
-          "복고 스타일",
-          "노스탤직 스타일"
+          "animal print"
+        ],
+        "productIds": [],
+        "matchedProductCount": 0,
+        "sourceCount": 4,
+        "editorialCount": 3,
+        "retailCount": 0,
+        "calendarCount": 2,
+        "channels": [
+          "calendar",
+          "editorial"
+        ],
+        "rankSignal": 0,
+        "evidence": [
+          {
+            "topicId": "animal",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "KH8143",
+            "itemName": "adidas Samba Bowling Brain Dead Cheetah",
+            "releaseDate": "2026-10-08",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "animal",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "KJ0662",
+            "itemName": "adidas Samba Bowling Brain Dead Snakeskin",
+            "releaseDate": "2026-10-08",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "animal",
+            "kind": "editorial",
+            "sourceId": "glamour-style",
+            "sourceUrl": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+            "evidenceId": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+            "publishedAt": "2026-09-29T11:30:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "b67d1ff96df91c96d907825d922391df8c916dc3c5340cb804548f10a96b8bce",
+            "verified": true
+          },
+          {
+            "topicId": "animal",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          },
+          {
+            "topicId": "animal",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+            "verified": true
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "style-red",
+        "keywordType": "style",
+        "label": "레드스니커즈",
+        "englishLabel": "Red / crimson statement sneakers",
+        "aliases": [
+          "red"
+        ],
+        "productIds": [
+          "new-20260923-f28d3395e6c72a4a",
+          "official-nike-ix8478-410",
+          "verified-celine-reebok-freestyle-lo-27fr",
+          "verified-new-balance-u18902uh",
+          "verified-new-balance-u90608ol"
+        ],
+        "matchedProductCount": 5,
+        "sourceCount": 4,
+        "editorialCount": 1,
+        "retailCount": 6,
+        "calendarCount": 1,
+        "channels": [
+          "calendar",
+          "editorial",
+          "retail"
+        ],
+        "rankSignal": 0.23376623376623376,
+        "evidence": [
+          {
+            "topicId": "red",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "II0402-601",
+            "itemName": "Nike Sabrina 4 Bright Crimson",
+            "releaseDate": "2026-10-06",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "red",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          },
+          {
+            "topicId": "red",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4151865",
+            "itemName": "[기호X베리시] TRIA SHIRRING SNEAKERS / RED",
+            "sourceRank": 20,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "red",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4247448",
+            "itemName": "문 슈 W - [미스틱 데이츠:터프 레드:검 라이트 브라운:세일 / IX7025-600]",
+            "sourceRank": 7,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "red",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "4680101",
+            "itemName": "샥스 R4 M - 메탈릭 실버:블랙:피칸테 레드 / HQ1988-002",
+            "sourceRank": 32,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "red",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "6083807",
+            "itemName": "젤-1130 -화이트:레드 / 1203A609-111",
+            "sourceRank": 72,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "red",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "6680966",
+            "itemName": "매그맥스 나이트로 2 - 울트라 레드:레드 리듬 / 312125-32",
+            "sourceRank": 11,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "red",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "6781146",
+            "itemName": "보메로 플러스 M - 앤트러사이트:브라이트 크림슨:유니버시티 레드:블랙 / HV8150-017",
+            "sourceRank": 73,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "style-low-profile",
+        "keywordType": "style",
+        "label": "로우프로파일",
+        "englishLabel": "Low-profile / slim sneakers",
+        "aliases": [
+          "low profile"
+        ],
+        "productIds": [
+          "daily-20260915-nike-air-foamposite-pro-im5204-001",
+          "verified-new-balance-u204v2pt",
+          "verified-new-balance-u204v2w0"
+        ],
+        "matchedProductCount": 3,
+        "sourceCount": 3,
+        "editorialCount": 4,
+        "retailCount": 0,
+        "calendarCount": 0,
+        "channels": [
+          "editorial"
+        ],
+        "rankSignal": 0,
+        "evidence": [
+          {
+            "topicId": "low-profile",
+            "kind": "editorial",
+            "sourceId": "glamour-style",
+            "sourceUrl": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+            "evidenceId": "https://www.glamour.com/story/statement-sneakers-trend-fall-2026",
+            "publishedAt": "2026-09-29T11:30:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "b67d1ff96df91c96d907825d922391df8c916dc3c5340cb804548f10a96b8bce",
+            "verified": true
+          },
+          {
+            "topicId": "low-profile",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          },
+          {
+            "topicId": "low-profile",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+            "publishedAt": "2026-09-29T15:00:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "2709829a08277f43d6c606e93a2c2ba2a28f5cd6004980d424aa950dc790db2a",
+            "verified": true
+          },
+          {
+            "topicId": "low-profile",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+            "verified": true
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "style-brown",
+        "keywordType": "style",
+        "label": "브라운슈즈",
+        "englishLabel": "Chocolate / coffee brown",
+        "aliases": [
+          "brown"
+        ],
+        "productIds": [
+          "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
+          "official-82d80c59311fcc15",
+          "verified-celine-reebok-freestyle-lo-19dk",
+          "verified-gucci-drip-sand-brown-a00a2sfagmq9656",
+          "verified-puma-406687-02",
+          "zip-cecilie-asics-black-coffee"
+        ],
+        "matchedProductCount": 6,
+        "sourceCount": 3,
+        "editorialCount": 1,
+        "retailCount": 23,
+        "calendarCount": 0,
+        "channels": [
+          "editorial",
+          "retail"
+        ],
+        "rankSignal": 1.0625,
+        "evidence": [
+          {
+            "topicId": "brown",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+            "evidenceId": "1874511",
+            "itemName": "dress (dark brown)",
+            "sourceRank": 17,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "3377182",
+            "itemName": "[29CM단독 재입고] SL 72 OG - 브라운 / JR7527",
+            "sourceRank": 1,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+            "evidenceId": "3382103",
+            "itemName": "[29CM단독] SL 72 OG - 원더 화이트:브라운 / JR7526",
+            "sourceRank": 7,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "3393882",
+            "itemName": "[딘디 Pick] NBRJGF710F / 브리즈 / SD2203BR (BROWN)",
+            "sourceRank": 93,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+            "evidenceId": "3544788",
+            "itemName": "에어 포스 1 07 - [플랙스:검 라이트 브라운:블랙:위트 / FZ7372-200]",
+            "sourceRank": 31,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+            "evidenceId": "3724986",
+            "itemName": "[29CM Only] 벨라 UT 클래식 - 초콜릿 브라운:알파인 스노우 / 404620-03",
+            "sourceRank": 12,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "3759642",
+            "itemName": "NBPDGF766F / U204LMMA (BROWN)",
+            "sourceRank": 39,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4027609",
+            "itemName": "문 슈 OG W - [바로크 브라운:블랙:캐시미어 / IW0955-201]",
+            "sourceRank": 27,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4106303",
+            "itemName": "벨라 미나 스웨이드 우먼 - 초콜릿:검 / 407671-05",
+            "sourceRank": 92,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4117534",
+            "itemName": "푸마 태클렛 프리미엄 우먼스 - 다크 초콜릿:검 / 410226-02",
+            "sourceRank": 5,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4203490",
+            "itemName": "[딘디 Pick] NBRJGF730F / SD2602BR (BROWN)",
+            "sourceRank": 88,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4204636",
+            "itemName": "NBPDGF775F / U204L3W2 (BROWN)",
+            "sourceRank": 81,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4214180",
+            "itemName": "문 슈 OGW - [코코넛 밀크:모스우드 브라운:펜넬:라이트 카키 / IZ6169-122]",
+            "sourceRank": 41,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4247447",
+            "itemName": "문 슈 W - [오프 누아르:블랙:검 라이트 브라운:세일 / IX7025-001]",
+            "sourceRank": 11,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4247448",
+            "itemName": "문 슈 W - [미스틱 데이츠:터프 레드:검 라이트 브라운:세일 / IX7025-600]",
+            "sourceRank": 7,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "4371012",
+            "itemName": "에어 포스 1 07 WB M - 플랙스:검 라이트 브라운:블랙:위트 / CJ9179-200",
+            "sourceRank": 19,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "4923314",
+            "itemName": "토바코 - 브라운 / JP9651",
+            "sourceRank": 16,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "5321121",
+            "itemName": "가젤 로우 프로  - 다크브라운:크림화이트 / JS2662",
+            "sourceRank": 20,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "5825888",
+            "itemName": "스피드캣 TTF - 다크초콜릿:아이보리 / 403903-01",
+            "sourceRank": 66,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "5981569",
+            "itemName": "NBPDGF766F / U204LMMA (BROWN)",
+            "sourceRank": 86,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "6931961",
+            "itemName": "슬립캣 발레 - 오트 커피:체스넛 브라운 / 410524-03",
+            "sourceRank": 84,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "6976459",
+            "itemName": "[6.5CM UP] 논슬립 러기드 스웨이드 뮬_브라운",
+            "sourceRank": 34,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "brown",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "7332262",
+            "itemName": "NBPQGF702F / 워킹 1880 V2 (2E) (BROWN)",
+            "sourceRank": 77,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "style-silver",
+        "keywordType": "style",
+        "label": "메탈릭실버",
+        "englishLabel": "Metallic silver sneakers",
+        "aliases": [
+          "metallic silver",
+          "silver"
+        ],
+        "productIds": [
+          "verified-new-balance-mrebx4fh",
+          "verified-new-balance-wrebx38s",
+          "zip-cecilie-asics-silver"
+        ],
+        "matchedProductCount": 3,
+        "sourceCount": 3,
+        "editorialCount": 1,
+        "retailCount": 22,
+        "calendarCount": 0,
+        "channels": [
+          "editorial",
+          "retail"
+        ],
+        "rankSignal": 0.39999999999999997,
+        "evidence": [
+          {
+            "topicId": "silver",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+            "evidenceId": "3470518",
+            "itemName": "젤-카야노 14 - 블랙:퓨어 실버 / 1201A019-006",
+            "sourceRank": 16,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+            "evidenceId": "3697250",
+            "itemName": "NBPDGF703S / M1906REH (SILVER)",
+            "sourceRank": 86,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+            "evidenceId": "3808242",
+            "itemName": "adidas by Stella McCartney 울트라부스트 5 - 라이트솔리드그레이:실버메탈릭 / KJ1019",
+            "sourceRank": 15,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+            "evidenceId": "4187248",
+            "itemName": "젤-카야노 14 - 버치:퓨어실버 / 1203A537-200",
+            "sourceRank": 25,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "3777398",
+            "itemName": "(공용) 웨이브 라이더 10 - 화이트:실버:블랙 / D1GA210405",
+            "sourceRank": 9,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "4680101",
+            "itemName": "샥스 R4 M - 메탈릭 실버:블랙:피칸테 레드 / HQ1988-002",
+            "sourceRank": 32,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "4727091",
+            "itemName": "NBPDGF719S / MR530LG (SILVER)",
+            "sourceRank": 45,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "4752687",
+            "itemName": "젤-카야노 14 - 버치:퓨어실버 / 1203A537-200",
+            "sourceRank": 31,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "4817435",
+            "itemName": "모션플렉스 실버",
+            "sourceRank": 66,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "5042974",
+            "itemName": "아디제로 EVO SL W - 블랙:실버 / JP7147",
+            "sourceRank": 60,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "5131848",
+            "itemName": "매그맥스 나이트로 우먼스 - 화이트:실버 / 310089-06",
+            "sourceRank": 96,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "5277374",
+            "itemName": "에어 조던 뮬 W - 블랙:메탈릭 실버 / HJ4292-001",
+            "sourceRank": 77,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "5277377",
+            "itemName": "보메로 플러스 W - 블랙:메탈릭 다크 그레이:쿨 그레이:다크 스모크 그레이 / HV8154-001",
+            "sourceRank": 3,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "5340557",
+            "itemName": "아디제로 아루쿠  - 실버:크리스탈화이트 / JS3714",
+            "sourceRank": 52,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "5408936",
+            "itemName": "에어 맥스 TL 2.5 M - 블랙:메탈릭 실버:블랙 / FZ4110-002",
+            "sourceRank": 83,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "5408953",
+            "itemName": "보메로 플러스 M - 블랙:메탈릭 다크 그레이:쿨 그레이:다크 스모크 그레이 / HV8150-003",
+            "sourceRank": 72,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "5590698",
+            "itemName": "에어 맥스 모토 2K M - 블랙:메탈릭 다크 그레이:다크 스모크 그레이 / IO9279-001",
+            "sourceRank": 30,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "6046406",
+            "itemName": "아디제로 EVO SL EXO M - 화이트:블랙:아이언메탈릭 / KI4763",
+            "sourceRank": 64,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "6618043",
+            "itemName": "보메로 18 SE W - 팬텀:그레이 포그:메탈릭 실버:서밋 화이트 / IM8330-001",
+            "sourceRank": 99,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "6931948",
+            "itemName": "디비에이트 퓨어 나이트로 - 푸마 블랙:플랫 다크 그레이:푸마 실버 / 313904-16",
+            "sourceRank": 34,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "6931951",
+            "itemName": "디비에이트 퓨어 나이트로 헬로 선라이즈 - 웜 화이트:메이플 시럽:푸마 실버 / 314852-01",
+            "sourceRank": 83,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "silver",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "7261909",
+            "itemName": "페가수스 42 M - 풋볼 그레이:브라이트 스프루스:메탈릭 실버:블랙 / IQ0454-001",
+            "sourceRank": 81,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "style-retro",
+        "keywordType": "style",
+        "label": "레트로스니커즈",
+        "englishLabel": "Retro runners / archive trainers",
+        "aliases": [
+          "retro runner",
+          "Nostalgic Style"
         ],
         "productIds": [
           "daily-20260915-nike-air-foamposite-pro-im5204-001",
@@ -8531,43 +10930,413 @@
           "verified-new-balance-w327apc"
         ],
         "matchedProductCount": 28,
-        "sourceRanks": [
+        "sourceCount": 2,
+        "editorialCount": 3,
+        "retailCount": 0,
+        "calendarCount": 0,
+        "channels": [
+          "editorial"
+        ],
+        "rankSignal": 0,
+        "evidence": [
           {
-            "platform": "whowhatwear-style",
-            "term": "Nostalgic Style",
-            "rank": null,
+            "topicId": "retro",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          },
+          {
+            "topicId": "retro",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-flat-shoe-trends-2026",
+            "publishedAt": "2026-09-29T15:00:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "2709829a08277f43d6c606e93a2c2ba2a28f5cd6004980d424aa950dc790db2a",
+            "verified": true
+          },
+          {
+            "topicId": "retro",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
             "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "verified": true,
-            "kind": "editorial-keyword",
-            "capturedAt": "2026-10-04T03:27:50.902Z",
-            "rankingPeriod": null,
-            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
-            "scope": "footwear",
-            "platformName": "Who What Wear",
-            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
             "publishedAt": "2026-09-08T07:00:00.000Z",
-            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "rankBasis": "editorial-heading"
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+            "verified": true
           }
         ],
-        "sourceCount": 1,
-        "score": 0,
-        "rank": 4,
-        "rankingStatus": "unranked",
-        "mentionCount": 1
+        "rank": 8
       },
       {
-        "id": "keyword-53e008de050fa9c6",
+        "id": "style-burgundy",
         "keywordType": "style",
-        "label": "Retro Low Tops",
+        "label": "버건디",
+        "englishLabel": "Wine / burgundy sneakers",
         "aliases": [
-          "Retro Low Tops",
-          "레트로 로우톱",
-          "빈티지 로우톱"
+          "burgundy"
         ],
         "productIds": [
-          "official-nike-ir0088-001",
+          "verified-celine-reebok-freestyle-lo-28ms",
+          "verified-new-balance-u1300ss",
+          "verified-new-balance-u990br4"
+        ],
+        "matchedProductCount": 3,
+        "sourceCount": 2,
+        "editorialCount": 1,
+        "retailCount": 1,
+        "calendarCount": 0,
+        "channels": [
+          "editorial",
+          "retail"
+        ],
+        "rankSignal": 0.07692307692307693,
+        "evidence": [
+          {
+            "topicId": "burgundy",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          },
+          {
+            "topicId": "burgundy",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "3690270",
+            "itemName": "메가그립 레니게이드 MID GTX 여성 와이드 블랙/버건디 등산화",
+            "sourceRank": 13,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "style-mary-jane",
+        "keywordType": "style",
+        "label": "메리제인스니커즈",
+        "englishLabel": "Mary Jane / strap hybrids",
+        "aliases": [
+          "mary jane"
+        ],
+        "productIds": [
+          "zip-cecilie-asics-black-coffee",
+          "zip-cecilie-asics-silver"
+        ],
+        "matchedProductCount": 2,
+        "sourceCount": 2,
+        "editorialCount": 1,
+        "retailCount": 1,
+        "calendarCount": 0,
+        "channels": [
+          "editorial",
+          "retail"
+        ],
+        "rankSignal": 0.016129032258064516,
+        "evidence": [
+          {
+            "topicId": "mary-jane",
+            "kind": "editorial",
+            "sourceId": "glamour-style",
+            "sourceUrl": "https://www.glamour.com/story/how-to-style-mary-jane-shoes",
+            "evidenceId": "https://www.glamour.com/story/how-to-style-mary-jane-shoes",
+            "publishedAt": "2026-10-03T13:30:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "87c69c6f7d1fe9470e2024a717188b3beb20740c30f9b7611aa40ff365e10069",
+            "verified": true
+          },
+          {
+            "topicId": "mary-jane",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4085104",
+            "itemName": "맥스코트 메리제인 - 블랙 / KZ9650",
+            "sourceRank": 62,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          }
+        ],
+        "rank": 10
+      },
+      {
+        "id": "style-trail",
+        "keywordType": "style",
+        "label": "고프코어",
+        "englishLabel": "Trail / technical sneakers",
+        "aliases": [
+          "gorpcore"
+        ],
+        "productIds": [
+          "official-salomon-l49210700",
+          "official-salomon-l49214800",
+          "official-salomon-l49215200",
+          "official-salomon-l49215400",
+          "official-salomon-l49302000",
+          "verified-moncler-citytrek-black-l209a4m00230n0633999",
+          "verified-moncler-citytrek-ivory-l209a4m00230n0633050",
+          "verified-moncler-citytrek-sagegreen-l209a4m00230n0633818",
+          "verified-moncler-citytrek-white-l209a4m00230n0633034"
+        ],
+        "matchedProductCount": 9,
+        "sourceCount": 2,
+        "editorialCount": 0,
+        "retailCount": 2,
+        "calendarCount": 1,
+        "channels": [
+          "calendar",
+          "retail"
+        ],
+        "rankSignal": 0.047619047619047616,
+        "evidence": [
+          {
+            "topicId": "trail",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "214274-0TP",
+            "itemName": "Crocs Quick Trail Racer V2 Cordura Black",
+            "releaseDate": "2026-10-08",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "trail",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "6151541",
+            "itemName": "[TRAIL] 트레일러닝 슈즈 TL-E FE4TX26040BLK",
+            "sourceRank": 82,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "trail",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "6949852",
+            "itemName": "모노 트레일",
+            "sourceRank": 21,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          }
+        ],
+        "rank": 11
+      },
+      {
+        "id": "style-mule",
+        "keywordType": "style",
+        "label": "스니커뮬",
+        "englishLabel": "Sneaker mules / open-back hybrids",
+        "aliases": [
+          "sneaker mule"
+        ],
+        "productIds": [],
+        "matchedProductCount": 0,
+        "sourceCount": 2,
+        "editorialCount": 0,
+        "retailCount": 2,
+        "calendarCount": 2,
+        "channels": [
+          "calendar",
+          "retail"
+        ],
+        "rankSignal": 0.023809523809523808,
+        "evidence": [
+          {
+            "topicId": "mule",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "LC5440",
+            "itemName": "adidas Samba OG Mules Core Black (W)",
+            "releaseDate": "2026-10-07",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "mule",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "LC5441",
+            "itemName": "adidas Samba OG Mules Cloud White (W)",
+            "releaseDate": "2026-10-07",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "mule",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=274100100",
+            "evidenceId": "3262308",
+            "itemName": "chinese mule sneakers (black)",
+            "sourceRank": 42,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "f5822fc182d2b237a929f43f9edca463ac4f5a9d573203f4f2bd03b897b33879",
+            "verified": true
+          },
+          {
+            "topicId": "mule",
+            "kind": "retail",
+            "sourceId": "29cm",
+            "sourceUrl": "https://www.29cm.co.kr/store/best-items?category_large_code=270100100",
+            "evidenceId": "4133593",
+            "itemName": "MOSS Suede Mules (3color)",
+            "sourceRank": 59,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "0f26cf77273abb9fd58afb68e73be4f561b0ee29b3a4893bc9ec1055af927901",
+            "verified": true
+          }
+        ],
+        "rank": 12
+      },
+      {
+        "id": "style-contrast",
+        "keywordType": "style",
+        "label": "컬러블로킹",
+        "englishLabel": "Clashing / contrasting colours",
+        "aliases": [
+          "Unexpected Color Combination"
+        ],
+        "productIds": [
+          "daily-20260915-nike-air-foamposite-pro-im5204-001"
+        ],
+        "matchedProductCount": 1,
+        "sourceCount": 1,
+        "editorialCount": 1,
+        "retailCount": 0,
+        "calendarCount": 0,
+        "channels": [
+          "editorial"
+        ],
+        "rankSignal": 0,
+        "evidence": [
+          {
+            "topicId": "contrast",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+            "verified": true
+          }
+        ],
+        "rank": 13
+      },
+      {
+        "id": "style-feminine",
+        "keywordType": "style",
+        "label": "페미닌디테일",
+        "englishLabel": "Lace fabric / bows / delicate trims",
+        "aliases": [
+          "Feminine Touch"
+        ],
+        "productIds": [
+          "official-nike-ix8478-410"
+        ],
+        "matchedProductCount": 1,
+        "sourceCount": 1,
+        "editorialCount": 1,
+        "retailCount": 0,
+        "calendarCount": 0,
+        "channels": [
+          "editorial"
+        ],
+        "rankSignal": 0,
+        "evidence": [
+          {
+            "topicId": "feminine",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+            "verified": true
+          }
+        ],
+        "rank": 14
+      },
+      {
+        "id": "style-jewel",
+        "keywordType": "style",
+        "label": "주얼톤",
+        "englishLabel": "Emerald / sapphire / rich tones",
+        "aliases": [
+          "jewel tones"
+        ],
+        "productIds": [
+          "verified-new-balance-u990br4"
+        ],
+        "matchedProductCount": 1,
+        "sourceCount": 1,
+        "editorialCount": 1,
+        "retailCount": 0,
+        "calendarCount": 0,
+        "channels": [
+          "editorial"
+        ],
+        "rankSignal": 0,
+        "evidence": [
+          {
+            "topicId": "jewel",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          }
+        ],
+        "rank": 15
+      },
+      {
+        "id": "style-mesh",
+        "keywordType": "style",
+        "label": "메쉬슈즈",
+        "englishLabel": "Mesh / breathable uppers",
+        "aliases": [
+          "mesh"
+        ],
+        "productIds": [
+          "daily-20260915-nike-sb-af1-yuto-io8439-100",
+          "official-nike-iv5678-102",
+          "official-salomon-l45401400",
+          "official-salomon-l49210700",
+          "official-salomon-l49211100",
+          "official-salomon-l49213200",
+          "official-salomon-l49214800",
+          "official-salomon-l49215200",
+          "official-salomon-l49215400",
           "verified-celine-reebok-freestyle-lo-01op",
           "verified-celine-reebok-freestyle-lo-02bg",
           "verified-celine-reebok-freestyle-lo-03pt",
@@ -8575,151 +11344,325 @@
           "verified-celine-reebok-freestyle-lo-19dk",
           "verified-celine-reebok-freestyle-lo-27fr",
           "verified-celine-reebok-freestyle-lo-28ms",
-          "verified-celine-reebok-freestyle-lo-38no"
+          "verified-celine-reebok-freestyle-lo-38no",
+          "verified-new-balance-mfcx8e5",
+          "verified-new-balance-u1300ss",
+          "verified-new-balance-u20001k7",
+          "verified-new-balance-u7406ak",
+          "verified-new-balance-u90608ol",
+          "verified-new-balance-u90609bo",
+          "verified-new-balance-u990bg4",
+          "verified-new-balance-u990br4",
+          "verified-new-balance-u991wl2",
+          "verified-new-balance-u993mo",
+          "verified-new-balance-wfcx1yq",
+          "verified-puma-406687-01",
+          "verified-puma-406687-02"
         ],
-        "matchedProductCount": 9,
-        "sourceRanks": [
+        "matchedProductCount": 30,
+        "sourceCount": 1,
+        "editorialCount": 1,
+        "retailCount": 0,
+        "calendarCount": 0,
+        "channels": [
+          "editorial"
+        ],
+        "rankSignal": 0,
+        "evidence": [
           {
-            "platform": "whowhatwear-style",
-            "term": "Retro Low Tops",
-            "rank": null,
+            "topicId": "mesh",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
             "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "verified": true,
-            "kind": "editorial-keyword",
-            "capturedAt": "2026-10-04T03:27:50.902Z",
-            "rankingPeriod": null,
-            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
-            "scope": "footwear",
-            "platformName": "Who What Wear",
-            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
             "publishedAt": "2026-09-08T07:00:00.000Z",
-            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "rankBasis": "editorial-heading"
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+            "verified": true
           }
         ],
-        "sourceCount": 1,
-        "score": 0,
-        "rank": 5,
-        "rankingStatus": "unranked",
-        "mentionCount": 1
+        "rank": 16
       },
       {
-        "id": "keyword-5943f15f7cc4c274",
+        "id": "style-netting",
         "keywordType": "style",
-        "label": "ultraslim retro sneakers",
+        "label": "피시넷",
+        "englishLabel": "Netting / see-through panels",
         "aliases": [
-          "ultraslim retro sneakers",
-          "울트라슬림 레트로 스니커즈",
-          "슬림 레트로 스니커즈"
-        ],
-        "productIds": [
-          "daily-20260915-nike-air-foamposite-pro-im5204-001",
-          "verified-new-balance-u204v2pt",
-          "verified-new-balance-u204v2w0"
-        ],
-        "matchedProductCount": 3,
-        "sourceRanks": [
-          {
-            "platform": "glamour-style",
-            "term": "ultraslim retro sneakers",
-            "rank": null,
-            "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
-            "verified": true,
-            "kind": "editorial-keyword",
-            "capturedAt": "2026-10-04T03:27:50.902Z",
-            "rankingPeriod": null,
-            "snapshotId": "glamour-style:2026-10-04T03:27:50.902Z:cb70e26b963ef5d0",
-            "scope": "footwear",
-            "platformName": "Glamour",
-            "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
-            "contentHash": "9051ccfb26f9902dc3cf02f494cf487be4014bdd2258f56d116f45dddbb3fa50",
-            "publishedAt": "2026-09-23T13:53:42.223Z",
-            "evidenceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
-            "rankBasis": "editorial-paragraph-phrase"
-          }
-        ],
-        "sourceCount": 1,
-        "score": 0,
-        "rank": 6,
-        "rankingStatus": "unranked",
-        "mentionCount": 1
-      },
-      {
-        "id": "keyword-c107143ae68bbb3a",
-        "keywordType": "style",
-        "label": "Unexpected Color Combination",
-        "aliases": [
-          "Unexpected Color Combination",
-          "대비색 조합"
-        ],
-        "productIds": [
-          "daily-20260915-nike-air-foamposite-pro-im5204-001"
-        ],
-        "matchedProductCount": 1,
-        "sourceRanks": [
-          {
-            "platform": "whowhatwear-style",
-            "term": "Unexpected Color Combination",
-            "rank": null,
-            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "verified": true,
-            "kind": "editorial-keyword",
-            "capturedAt": "2026-10-04T03:27:50.902Z",
-            "rankingPeriod": null,
-            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
-            "scope": "footwear",
-            "platformName": "Who What Wear",
-            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
-            "publishedAt": "2026-09-08T07:00:00.000Z",
-            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "rankBasis": "editorial-heading"
-          }
-        ],
-        "sourceCount": 1,
-        "score": 0,
-        "rank": 7,
-        "rankingStatus": "unranked",
-        "mentionCount": 1
-      },
-      {
-        "id": "keyword-ce0c27ddafd988c9",
-        "keywordType": "style",
-        "label": "Worn In",
-        "aliases": [
-          "Worn In",
-          "distressed sneakers",
-          "디스트레스드 스니커즈",
-          "빈티지 가공"
+          "Netting"
         ],
         "productIds": [],
         "matchedProductCount": 0,
-        "sourceRanks": [
+        "sourceCount": 1,
+        "editorialCount": 1,
+        "retailCount": 0,
+        "calendarCount": 0,
+        "channels": [
+          "editorial"
+        ],
+        "rankSignal": 0,
+        "evidence": [
           {
-            "platform": "whowhatwear-style",
-            "term": "Worn In",
-            "rank": null,
+            "topicId": "netting",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
             "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "verified": true,
-            "kind": "editorial-keyword",
-            "capturedAt": "2026-10-04T03:27:50.902Z",
-            "rankingPeriod": null,
-            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
-            "scope": "footwear",
-            "platformName": "Who What Wear",
-            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
-            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
             "publishedAt": "2026-09-08T07:00:00.000Z",
-            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
-            "rankBasis": "editorial-heading"
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+            "verified": true
           }
         ],
+        "rank": 17
+      },
+      {
+        "id": "style-satin",
+        "keywordType": "style",
+        "label": "새틴스니커즈",
+        "englishLabel": "Satin / luminous textures",
+        "aliases": [
+          "satin"
+        ],
+        "productIds": [],
+        "matchedProductCount": 0,
         "sourceCount": 1,
-        "score": 0,
-        "rank": 8,
-        "rankingStatus": "unranked",
-        "mentionCount": 1
+        "editorialCount": 1,
+        "retailCount": 0,
+        "calendarCount": 0,
+        "channels": [
+          "editorial"
+        ],
+        "rankSignal": 0,
+        "evidence": [
+          {
+            "topicId": "satin",
+            "kind": "editorial",
+            "sourceId": "harpersbazaar-style",
+            "sourceUrl": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "evidenceId": "https://www.harpersbazaar.com/fashion/trends/a73375392/fall-sneaker-trends-2026/",
+            "publishedAt": "2026-08-10T20:34:47.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "e771aef2f4a54a3092085ecbce050abfe44ac4873a5f95280f710d718a74cb46",
+            "verified": true
+          }
+        ],
+        "rank": 18
+      },
+      {
+        "id": "style-worn",
+        "keywordType": "style",
+        "label": "빈티지가공",
+        "englishLabel": "Worn-in / distressed finish",
+        "aliases": [
+          "Worn In"
+        ],
+        "productIds": [],
+        "matchedProductCount": 0,
+        "sourceCount": 1,
+        "editorialCount": 1,
+        "retailCount": 0,
+        "calendarCount": 0,
+        "channels": [
+          "editorial"
+        ],
+        "rankSignal": 0,
+        "evidence": [
+          {
+            "topicId": "worn",
+            "kind": "editorial",
+            "sourceId": "whowhatwear-style",
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "evidenceId": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "capturedAt": "2026-10-06T06:38:01.498Z",
+            "contentHash": "afd3aa7fabfacf17453c74fe1cc4222f2bd6569e651b7da9ec5d00253bb53fc1",
+            "verified": true
+          }
+        ],
+        "rank": 19
+      },
+      {
+        "id": "style-canvas",
+        "keywordType": "style",
+        "label": "캔버스스니커즈",
+        "englishLabel": "Canvas / casual classics",
+        "aliases": [
+          "canvas"
+        ],
+        "productIds": [
+          "daily-20260916-converse-palmes-green-a24756c",
+          "verified-gucci-drip-sand-brown-a00a2sfagmq9656",
+          "verified-new-balance-u7507a0"
+        ],
+        "matchedProductCount": 3,
+        "sourceCount": 1,
+        "editorialCount": 0,
+        "retailCount": 1,
+        "calendarCount": 0,
+        "channels": [
+          "retail"
+        ],
+        "rankSignal": 0.02857142857142857,
+        "evidence": [
+          {
+            "topicId": "canvas",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "1494180",
+            "itemName": "척테일러 올스타 리프트 캔버스 화이트 560251C",
+            "sourceRank": 35,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          }
+        ],
+        "rank": 20
+      },
+      {
+        "id": "style-platform",
+        "keywordType": "style",
+        "label": "플랫폼스니커즈",
+        "englishLabel": "Platform / raised soles",
+        "aliases": [
+          "platform"
+        ],
+        "productIds": [
+          "official-82d80c59311fcc15"
+        ],
+        "matchedProductCount": 1,
+        "sourceCount": 1,
+        "editorialCount": 0,
+        "retailCount": 2,
+        "calendarCount": 0,
+        "channels": [
+          "retail"
+        ],
+        "rankSignal": 0.02127659574468085,
+        "evidence": [
+          {
+            "topicId": "platform",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103005",
+            "evidenceId": "4916439",
+            "itemName": "Flatform Cowhide Leather Sneakers [ Gray ]",
+            "sourceRank": 47,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "dce458d22b446418d79e609c9e8bdde523337c455f5d825add1ea754f9bae5ef",
+            "verified": true
+          },
+          {
+            "topicId": "platform",
+            "kind": "retail",
+            "sourceId": "musinsa",
+            "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
+            "evidenceId": "5267279",
+            "itemName": "하트 시그니처 플랫폼 스니커즈 EBAL157510",
+            "sourceRank": 59,
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "c599c9c51aa804bc409866073b2b39a359f8756bf0f2bd00f8bdd38eed2d2afe",
+            "verified": true
+          }
+        ],
+        "rank": 21
+      },
+      {
+        "id": "style-character",
+        "keywordType": "style",
+        "label": "캐릭터콜라보",
+        "englishLabel": "Character / franchise collaborations",
+        "aliases": [
+          "character collaboration"
+        ],
+        "productIds": [
+          "verified-nike-ir0968-500"
+        ],
+        "matchedProductCount": 1,
+        "sourceCount": 1,
+        "editorialCount": 0,
+        "retailCount": 0,
+        "calendarCount": 3,
+        "channels": [
+          "calendar"
+        ],
+        "rankSignal": 0,
+        "evidence": [
+          {
+            "topicId": "character",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "410646-01",
+            "itemName": "Puma Suede Street Fighter Ken Masters",
+            "releaseDate": "2026-10-09",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "character",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "410647-01",
+            "itemName": "Puma Suede Street Fighter Ryu",
+            "releaseDate": "2026-10-09",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          },
+          {
+            "topicId": "character",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "410648-01",
+            "itemName": "Puma Suede Street Fighter Chun-Li",
+            "releaseDate": "2026-10-09",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          }
+        ],
+        "rank": 22
+      },
+      {
+        "id": "style-skate",
+        "keywordType": "style",
+        "label": "스케이터스니커즈",
+        "englishLabel": "Skate / board-inspired sneakers",
+        "aliases": [
+          "skate"
+        ],
+        "productIds": [
+          "daily-20260915-nike-sb-af1-yuto-io8439-100"
+        ],
+        "matchedProductCount": 1,
+        "sourceCount": 1,
+        "editorialCount": 0,
+        "retailCount": 0,
+        "calendarCount": 1,
+        "channels": [
+          "calendar"
+        ],
+        "rankSignal": 0,
+        "evidence": [
+          {
+            "topicId": "skate",
+            "kind": "calendar",
+            "sourceId": "sole-retriever",
+            "sourceUrl": "https://www.soleretriever.com/sneaker-release-dates",
+            "evidenceId": "IV6099-002",
+            "itemName": "Nike SB Air Force 1 Low SE Instant Skateboards City Pack Tokyo",
+            "releaseDate": "2026-10-09",
+            "capturedAt": "2026-10-06T06:41:31.408Z",
+            "contentHash": "5b7fb3fbfb3210f075c9f80c226ddb2a2201bf2ac0287b391415ca5f86fbfbe8",
+            "verified": true
+          }
+        ],
+        "rank": 23
       }
     ]
   }

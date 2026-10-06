@@ -28,7 +28,7 @@
     {"id":"velvet","kind":"material","aliases":["벨벳","velvet"],"match":{"fields":["name","material"],"terms":["velvet","벨벳"]}},
     {"id":"brown","kind":"color","aliases":["갈색","브라운","brown"],"match":{"fields":["name","colorway","colors"],"terms":["brown","chocolate","cocoa","coffee","mocha","espresso","갈색","브라운","초콜릿"]}},
     {"id":"red","kind":"color","aliases":["빨강","빨간","빨간색","레드","red"],"match":{"fields":["name","colorway","colors"],"terms":["red","crimson","빨강","빨간","레드"]}},
-    {"id":"burgundy","kind":"color","aliases":["버건디","burgundy"],"match":{"fields":["name","colorway","colors"],"terms":["burgundy","버건디"]}},
+    {"id":"burgundy","kind":"color","aliases":["버건디","burgundy"],"match":{"fields":["name","colorway","colors"],"terms":["burgundy","버건디","wine","cranberry","oxblood","와인"]}},
     {"id":"silver","kind":"color","aliases":["실버","은색","silver"],"match":{"fields":["name","colorway","colors"],"terms":["silver","실버","은색"]}},
     {"id":"black","kind":"color","aliases":["블랙","검정","검정색","검은","black"],"match":{"fields":["name","colorway","colors"],"terms":["black","블랙","검정","검은"]}},
     {"id":"white","kind":"color","aliases":["화이트","흰색","흰","white"],"match":{"fields":["name","colorway","colors"],"terms":["white","화이트","흰색"]}},
@@ -99,6 +99,7 @@
     {"id":"xt-6","kind":"model","aliases":["xt6","xt 6","엑스티6","엑스티식스"],"match":{"brands":["Salomon"],"fields":["name"],"terms":["xt 6","xt6","엑스티6"]}},
     {"id":"xt-4","kind":"model","aliases":["xt4","xt 4","엑스티4"],"match":{"brands":["Salomon"],"fields":["name"],"terms":["xt 4","xt4","엑스티4"]}},
     {"id":"jack-purcell","kind":"model","aliases":["잭퍼셀","잭 퍼셀","jack purcell"],"match":{"brands":["Converse"],"fields":["name"],"terms":["jack purcell","잭퍼셀"]}},
-    {"id":"chuck-70","kind":"model","aliases":["척70","척테일러70","chuck 70","chuck70"],"match":{"brands":["Converse"],"fields":["name"],"terms":["chuck 70","척70"]}}
+    {"id":"chuck-70","kind":"model","aliases":["척70","척테일러70","chuck 70","chuck70"],"match":{"brands":["Converse"],"fields":["name"],"terms":["chuck 70","척70"]}},
+    {"id":"jewel-tones","kind":"color","aliases":["jewel tones","주얼톤"],"match":{"fields":["name","colorway","colors"],"terms":["emerald","sapphire","burgundy","에메랄드","사파이어","버건디"]}}
   ]
 }
