@@ -1,4 +1,5 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes } from './export.mjs';
+import { groupedBrands } from './brand-groups.mjs';
 import { kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, officialProductUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, variantGroupKey, colorSwatch } from './catalog-view.mjs';
 
 const $ = id => document.getElementById(id);
@@ -89,13 +90,10 @@ function renderBrands() {
   const normalized = name => name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
   for (const name of mandatory) if (!brands.some(b => normalized(b.name) === normalized(name))) brands.push({name,mandatory:true,group:'',policy:'mandatory'});
   const search = $('brand-search').value.toLocaleLowerCase();
-  const list = brands.filter(b => b.name.toLocaleLowerCase().includes(search)).sort((a,b) => Number(!!b.mandatory)-Number(!!a.mandatory) || a.name.localeCompare(b.name,'en'));
-  let previousGroup = '';
-  $('brand-list').innerHTML = list.map(b => {
-    const group = b.mandatory ? '필수 브랜드' : '참고 브랜드';
-    const heading = group !== previousGroup ? `<h3 class="brand-group-label">${group}</h3>` : ''; previousGroup = group;
-    return `${heading}<label class="brand-option"><input type="checkbox" data-brand="${esc(b.name)}" ${state.brands.has(b.name)?'checked':''}><span class="brand-name">${esc(b.name)}</span><span class="brand-count">${brandCounts.get(b.name)||0}</span></label>`;
-  }).join('') || '<p class="muted">일치하는 브랜드가 없습니다.</p>';
+  const groups = groupedBrands(brands.filter(b => b.name.toLocaleLowerCase().includes(search)));
+  $('brand-list').innerHTML = groups.filter(g=>g.brands.length).map(group => `<section class="brand-group" aria-label="${group.name}"><h3 class="brand-group-label">${group.name}</h3>${group.brands.map(b =>
+    `<label class="brand-option"><input type="checkbox" data-brand="${esc(b.name)}" ${state.brands.has(b.name)?'checked':''}><span class="brand-name">${esc(b.name)}</span><span class="brand-count">${brandCounts.get(b.name)||0}</span></label>`
+  ).join('')}</section>`).join('') || '<p class="muted">일치하는 브랜드가 없습니다.</p>';
   $('brand-list').querySelectorAll('input').forEach(input => input.addEventListener('change', () => { input.checked ? state.brands.add(input.dataset.brand) : state.brands.delete(input.dataset.brand); state.page=1; render(); }));
 }
 const ECOMMERCE_PLATFORMS=new Set(['musinsa','29cm','eql','wconcept']);
