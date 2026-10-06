@@ -157,3 +157,13 @@ export function groupProductVariants(products) {
   }
   return [...groups.values()];
 }
+
+// Named colors are an approximate navigation aid; the official photo is the
+// color reference. Unknown names use a neutral patterned chip, never a guess.
+export function colorSwatch(product) {
+  const reviewed=product.colorSwatches?.filter(c=>/^#[0-9a-f]{6}$/i.test(c))||[];
+  const palette={black:'#242424',white:'#f7f7f2',ivory:'#eee9d8',cream:'#ece1c6',beige:'#c9b89e',butter:'#eddf9d',brown:'#70472f',chocolate:'#493329',burgundy:'#632a39',oxblood:'#581f2c',red:'#cf303a',navy:'#27374d',blue:'#4479ad',green:'#53745c',sage:'#a5ad8d',silver:'#bac0c5',grey:'#989ba0',gray:'#989ba0',pink:'#e4a9bb',orange:'#e17a31',yellow:'#e6c953',violet:'#a69bb4',purple:'#866799',sand:'#cbbb9d',peanut:'#ac865e',angora:'#e8dfcd',meteorite:'#45474a',pumpernickel:'#504137',bayberry:'#55624c',turtledove:'#c8c4b5',morel:'#988b79',cocoa:'#795e50',walnut:'#796252',cortado:'#a6886b',블랙:'#242424',화이트:'#f7f7f2',그레이:'#989ba0',블루:'#4479ad',브라운:'#70472f',베이지:'#c9b89e'};
+  const colors=reviewed.length?reviewed:[...new Set((product.colorway||'').toLowerCase().split(/[^a-z가-힣]+/).map(word=>palette[word]).filter(Boolean))].slice(0,3);
+  if(!colors.length)return 'repeating-linear-gradient(45deg,#eee 0 4px,#bbb 4px 8px)';
+  return colors.length===1?colors[0]:`linear-gradient(135deg,${colors.map((c,i)=>`${c} ${Math.round(i/colors.length*100)}% ${Math.round((i+1)/colors.length*100)}%`).join(',')})`;
+}

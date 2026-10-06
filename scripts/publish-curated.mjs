@@ -3,6 +3,9 @@ import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {curateCatalog,canonicalBrand} from './curation.mjs';
 import {mergePreserving} from './collect-evidence.mjs';
+import {buildKeywordCatalog} from './search-keywords.mjs';
+import {productPresentation} from './product-presentation.mjs';
+import {withSocialComparisons} from './social-metrics.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 export async function readJson(file,fallback) {try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(e){if(e.code==='ENOENT'&&fallback!==undefined)return fallback;throw e;}}
@@ -44,7 +47,6 @@ export function applyReviewedEvidence(input,evidence) {
 export async function publishCurated({directory=root,now=new Date(),incoming=[],collection,maintenance=false,keywordRefresh=false}={}) {
   const sourceFile=path.join(directory,'data/catalog-source.json'), prior=await readJson(path.join(directory,'public/data/catalog.json'),{});
   const source=await readJson(sourceFile), evidence=await readJson(path.join(directory,'data/release-evidence.json'),{products:[]});
-  const styleTrendSource=await readJson(path.join(directory,'data/style-trend-keywords.json'),prior.styleTrendKeywords||null);
   const socialEvidence=await readJson(path.join(directory,'data/social-metric-evidence.json'),{products:[],sourceStatus:[]});
   if(keywordRefresh&&incoming.length)throw Error('Keyword refresh cannot change product records');
   if(keywordRefresh){const fields=['sourceRanks','searchRankStatus','forecastStatus','editorialStatus','keywordCheckedAt'];collection={...source.collection,...Object.fromEntries(fields.filter(k=>collection?.[k]!==undefined).map(k=>[k,collection[k]]))};}
@@ -53,13 +55,33 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   const socialStatus=(socialEvidence.sourceStatus||[]).map(s=>Object.fromEntries(['platform','name','url','status','reason','checkedAt','collectionMode','automatedAdapter'].filter(k=>s[k]!==undefined).map(k=>[k,s[k]])));
   const effectiveCollection={...(collection||source.collection||{}),...(socialStatus.length?{socialMetricStatus:socialStatus}:{})};
   const result=curateCatalog(products,{now,previous:prior,collection:effectiveCollection});
-  // Style trends are maintained as a separate, small weekly reference snapshot
-  // so a keyword refresh never invents ranks or changes product records. Keep
-  // only IDs that are present in the atomically curated public catalog.
-  if(styleTrendSource?.items?.length){
-    const ids=new Set(result.snapshot.products.map(p=>p.id));
-    result.snapshot.styleTrendKeywords={...styleTrendSource,items:styleTrendSource.items.map(item=>({...item,productIds:[...(item.productIds||[])].filter(id=>ids.has(id))}))};
+  // Preserve upcoming/other footwear internally, while the public view follows
+  // the requested released-sneaker window. Expired records still enter the archive.
+  result.snapshot.products=result.snapshot.products.filter(p=>p.category==='sneaker'&&p.releaseStatus==='released');
+  if(maintenance&&Array.isArray(prior.products)){const priorIds=new Set(prior.products.map(p=>p.id));result.snapshot.products=result.snapshot.products.filter(p=>priorIds.has(p.id));}
+  const photoReviews=await readJson(path.join(directory,'data/product-presentation.json'),null);
+  if(photoReviews){
+    result.snapshot.products=result.snapshot.products.flatMap(p=>{
+      const presented=productPresentation(p,photoReviews);
+      if(presented)return [presented];
+      result.review.held.push({id:p.id,brand:p.brand,name:p.name,reason:'representative-photo-review-required'});return [];
+    });
   }
+  const photoCache=await readJson(path.join(directory,'data/photo-cache.json'),{images:{}});
+  for(const p of result.snapshot.products)if(p.presentation){const cached=photoCache.images[p.presentation.image];if(cached&&/^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(cached.path))p.presentation.cachedPath=cached.path;}
+  result.snapshot.products=withSocialComparisons(result.snapshot.products);
+  Object.assign(result.snapshot,buildKeywordCatalog(result.snapshot.products,result.snapshot.sourceRanks,{now}));
+  const ids=new Set(result.snapshot.products.map(p=>p.id));
+  // Use this week's verified observations, never the old uploaded HTML ranking.
+  // Distinct editorial URLs measure mentions; they are not search-volume estimates.
+  const items=result.snapshot.keywords.map(k=>({...k,
+    productIds:k.productIds.filter(id=>ids.has(id)),
+    mentionCount:new Set(k.sourceRanks.filter(s=>s.kind==='editorial-keyword').map(s=>s.sourceUrl)).size,
+  })).sort((a,b)=>b.mentionCount-a.mentionCount||b.score-a.score||a.label.localeCompare(b.label));
+  result.snapshot.styleTrendKeywords={method:'verified-current-style-mentions',updated:effectiveCollection.keywordCheckedAt||result.snapshot.keywordCheckedAt,items:items.map((k,i)=>({...k,rank:i+1,matchedProductCount:k.productIds.length}))};
+  result.snapshot.sourceStatus.counts.published=result.snapshot.products.length;
+  const discovery=await readJson(path.join(directory,'data/discovery-checks.json'),null);
+  if(discovery&&Date.parse(discovery.checkedAt)>Date.parse(effectiveCollection.checkedAt||0))result.snapshot.sourceStatus.discoveryRecheck=discovery;
   // Maintenance only removes expired entries / updates upcoming state and ages signals; it does not claim a new collection.
   if(maintenance&&prior.publishedAt) result.snapshot.publishedAt=prior.publishedAt;
   if(!Array.isArray(result.snapshot.products)||new Set(result.snapshot.products.map(p=>p.id)).size!==result.snapshot.products.length)throw Error('Invalid curated snapshot');

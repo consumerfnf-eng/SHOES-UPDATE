@@ -16,7 +16,7 @@ The header names and order follow [Retail Archive productRows](https://consumerf
 
 `season,country,brand_group,court,brand,gender,category,subcategory,fabric,fabric_group,product_name,colorway_count,variant_names,colors,hex_colors,top_hex,image_url`
 
-`exportData` can supply archive-normalized values, but it cannot add keys. Brand group English identifiers are translated to the reference's Korean labels. Unknown country and season remain blank. Category is `shoe`. A card is a single verified product/colourway; no fuzzy name-based variant merging occurs. An explicit archive-normalized variant group must supply its count/names itself.
+`exportData` can supply archive-normalized values, but it cannot add keys. Brand group English identifiers are translated to the reference's Korean labels. Unknown country and season remain blank. Category is `shoe`. One card groups exact normalized product names within a brand, removing only declared color terms. Circular color chips select the individual variant; the selected variant remains the export unit. Official photo source URLs remain in downloads even when the UI uses the byte-identical local image cache.
 
 Source URLs/check dates, popularity reasons, verification dates, MLB/DISCOVERY fit/reasons never enter downloaded rows. CSV has UTF-8 BOM and escaped quoted cells. Dangerous spreadsheet formula prefixes are neutralized. XLSX is a true OOXML ZIP workbook with inline text cells, no formula execution/macros, no external dependency/CDN scripts. Its columns follow the same whitelist. XLSX contains image URLs as the reference export does; it does not embed product image binaries.
 

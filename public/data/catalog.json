@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-04T03:27:54.548Z",
+  "publishedAt": "2026-10-06T05:39:07.663Z",
   "periodStart": "2026-07-06",
   "asOf": "2026-10-06",
   "brands": [
@@ -434,391 +434,6 @@
   ],
   "products": [
     {
-      "id": "official-nike-hq7978-001",
-      "brand": "Jordan",
-      "name": "Air Jordan 5 Retro \"Halloween\"",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fit": [
-        "MLB",
-        "DISCOVERY"
-      ],
-      "fitReasons": [
-        "일상 스포츠 캐주얼·실루엣 참고",
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "jordan|airjordan5retrohalloween",
-      "releaseDate": "2026-10-17",
-      "releaseStatus": "upcoming",
-      "dateEvidence": {
-        "url": "https://www.nike.com/launch",
-        "precision": "day",
-        "official": true,
-        "verified": true,
-        "verifiedAt": "2026-10-04T02:12:52.941Z",
-        "region": "US",
-        "field": "launchViews.startEntryDate",
-        "productId": "0b49fc24-f23a-59f8-8a81-b8f4dfd2c831",
-        "excerpt": "HQ7978-001 official launch entry opens 2026-10-17T14:00:00.000Z."
-      },
-      "url": "https://www.nike.com/launch/t/air-jordan-5-halloween-black-and-picante-red",
-      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/fa7291c3-74c5-4b1a-a5ad-7edff217d6fc/air-jordan-5-halloween-black-and-picante-red.webp",
-      "style": "HQ7978-001",
-      "colorway": "Black and Picante Red",
-      "colors": [],
-      "gender": "MEN",
-      "material": "",
-      "priceLabel": "USD 215",
-      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": false,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-04T03:27:14.242Z",
-      "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-5-halloween-black-and-picante-red",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-06"
-      },
-      "keywordTags": [
-        "red-crimson"
-      ],
-      "searchConceptIds": [
-        "style:nostalgic-style",
-        "category:footwear",
-        "category:sneakers",
-        "color:red",
-        "color:black",
-        "brand:jordan"
-      ]
-    },
-    {
-      "id": "official-nike-iq5495-005",
-      "brand": "Jordan",
-      "name": "Air Jordan 1 High OG \"Royal\"",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fit": [
-        "MLB"
-      ],
-      "fitReasons": [
-        "일상 스포츠 캐주얼·실루엣 참고"
-      ],
-      "modelKey": "jordan|airjordan1highogroyal",
-      "releaseDate": "2026-10-10",
-      "releaseStatus": "upcoming",
-      "dateEvidence": {
-        "url": "https://www.nike.com/launch",
-        "precision": "day",
-        "official": true,
-        "verified": true,
-        "verifiedAt": "2026-10-04T02:12:52.941Z",
-        "region": "US",
-        "field": "launchViews.startEntryDate",
-        "productId": "b3c26be1-67e6-5f21-83e4-4e6c6a633bad",
-        "excerpt": "IQ5495-005 official launch entry opens 2026-10-10T14:00:00.000Z."
-      },
-      "url": "https://www.nike.com/launch/t/air-jordan-1-high-og-royal",
-      "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/398ed1fa-1949-44ca-978b-df37d21a0766/air-jordan-1-high-og-royal.webp",
-      "style": "IQ5495-005",
-      "colorway": "Royal",
-      "colors": [],
-      "gender": "MEN",
-      "material": "",
-      "priceLabel": "USD 185",
-      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": false,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-04T03:27:11.902Z",
-      "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-high-og-royal",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-06"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:jordan"
-      ]
-    },
-    {
-      "id": "official-salomon-l49210800",
-      "brand": "Salomon",
-      "name": "XT-4 OG GORE-TEX",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fit": [
-        "MLB",
-        "DISCOVERY"
-      ],
-      "fitReasons": [
-        "일상 스포츠 캐주얼·실루엣 참고",
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "salomon|xt4oggoretex",
-      "releaseDate": "2026-10-07",
-      "releaseStatus": "upcoming",
-      "dateEvidence": {
-        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
-        "precision": "day",
-        "official": true,
-        "verified": true,
-        "verifiedAt": "2026-09-28T04:38:58.933Z",
-        "region": "CA",
-        "excerpt": "XT-4 OG GORE-TEX (L49210800) — 2026-10-07, official Canadian launch calendar."
-      },
-      "url": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
-      "image": "https://cdn.dam.salomon.com/bd42f406-b469-4120-b0b1-b372008d8a8c/L49210800/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
-      "style": "L49210800",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$275",
-      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": false,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "CA",
-      "lastVerifiedAt": "2026-09-28T04:38:58.933Z",
-      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-06"
-      },
-      "keywordTags": [
-        "mesh-sheer",
-        "trail-gorpcore"
-      ],
-      "searchConceptIds": [
-        "style:nostalgic-style",
-        "category:footwear",
-        "category:sneakers",
-        "attribute:running",
-        "material:mesh",
-        "use:trail",
-        "style:gorpcore",
-        "model:xt-4",
-        "brand:salomon"
-      ]
-    },
-    {
-      "id": "official-salomon-l45405100",
-      "brand": "Salomon",
-      "name": "XT-6 PROTECTIVE",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fit": [
-        "DISCOVERY"
-      ],
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "salomon|xt6protective",
-      "releaseDate": "2026-10-07",
-      "releaseStatus": "upcoming",
-      "dateEvidence": {
-        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
-        "precision": "day",
-        "official": true,
-        "verified": true,
-        "verifiedAt": "2026-10-04T02:12:52.941Z",
-        "region": "CA",
-        "excerpt": "XT-6 PROTECTIVE (L45405100) — 2026-10-07, official Canadian launch calendar."
-      },
-      "url": "https://www.salomon.com/en-ca/product/xt-6-protective-li1345/L45405100",
-      "image": "https://cdn.dam.salomon.com/c7db5eeb-a298-435d-86a6-b37900897ee4/L45405100/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
-      "style": "L45405100",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$230",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": false,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "CA",
-      "lastVerifiedAt": "2026-10-04T02:12:52.941Z",
-      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-protective-li1345/L45405100",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-06"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "model:xt-6",
-        "brand:salomon"
-      ]
-    },
-    {
-      "id": "official-salomon-l49192300",
-      "brand": "Salomon",
-      "name": "XT-WHISPER GORE-TEX",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fit": [
-        "DISCOVERY"
-      ],
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "salomon|xtwhispergoretex",
-      "releaseDate": "2026-10-07",
-      "releaseStatus": "upcoming",
-      "dateEvidence": {
-        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
-        "precision": "day",
-        "official": true,
-        "verified": true,
-        "verifiedAt": "2026-10-04T02:12:52.941Z",
-        "region": "CA",
-        "excerpt": "XT-WHISPER GORE-TEX (L49192300) — 2026-10-07, official Canadian launch calendar."
-      },
-      "url": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L49192300",
-      "image": "https://cdn.dam.salomon.com/0bcc429b-9f44-48bc-a36e-b3790089a1a0/L49192300/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
-      "style": "L49192300",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$210",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": false,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "CA",
-      "lastVerifiedAt": "2026-10-04T02:12:52.941Z",
-      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L49192300",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-06"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "attribute:running",
-        "brand:salomon"
-      ]
-    },
-    {
-      "id": "official-salomon-l45397700",
-      "brand": "Salomon",
-      "name": "XT-WHISPER GORE-TEX",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fit": [
-        "DISCOVERY"
-      ],
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "salomon|xtwhispergoretex",
-      "releaseDate": "2026-10-07",
-      "releaseStatus": "upcoming",
-      "dateEvidence": {
-        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
-        "precision": "day",
-        "official": true,
-        "verified": true,
-        "verifiedAt": "2026-10-04T02:12:52.941Z",
-        "region": "CA",
-        "excerpt": "XT-WHISPER GORE-TEX (L45397700) — 2026-10-07, official Canadian launch calendar."
-      },
-      "url": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L45397700",
-      "image": "https://cdn.dam.salomon.com/e4bdeab6-6e5b-4a41-bb3c-b37900897aea/L45397700/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
-      "style": "L45397700",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$210",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": false,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "CA",
-      "lastVerifiedAt": "2026-10-04T02:12:52.941Z",
-      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L45397700",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-06"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "attribute:running",
-        "brand:salomon"
-      ]
-    },
-    {
       "id": "official-salomon-l45401400",
       "brand": "Salomon",
       "name": "AERO BLAZE 4 GRVL",
@@ -880,6 +495,18 @@
         "attribute:running",
         "material:mesh",
         "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/5f36d41d-0d07-4e77-990b-b3d90113c130/L45401400/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/aero-blaze-4-grvl-li9273/L45401400",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/7ec502914faa4eee71a6fb4486784382ba68c1a0bd36555523e939faa6485478.jpg"
+      },
+      "colorSwatches": [
+        "#3d4a49"
       ]
     },
     {
@@ -949,7 +576,17 @@
         "category:sneakers",
         "color:red",
         "brand:jordan"
-      ]
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/d44905f5-2fd8-435f-994d-8b45acb99354/air-jordan-1-low-og-howard-college-navy-and-university-red.webp",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.nike.com/launch/t/air-jordan-1-low-og-howard-college-navy-and-university-red",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/3c9db9f2f3d3619f926494843d7ac70e8faed4c30322cee358888b15043572e3.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "official-salomon-l49302000",
@@ -1016,6 +653,19 @@
         "use:trail",
         "style:gorpcore",
         "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/4750df86-1bb3-4027-a793-b48800eb1222/L49302000/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/genesis-2-gtx-li9188/L49302000",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/d62097237c0f288fec7f80ea1479d31344d1cbf1e0d0727f34848c22974ec9b3.jpg"
+      },
+      "colorSwatches": [
+        "#b5a88c",
+        "#558da6"
       ]
     },
     {
@@ -1087,6 +737,18 @@
         "style:gorpcore",
         "model:xt-4",
         "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/625d3305-44b0-45ee-8e9d-b36800908c24/L49210700/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210700",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/1e48e663a333a48ccaae800b04c51593d355785ec2aef30f3e207dd6f4605625.jpg"
+      },
+      "colorSwatches": [
+        "#9c895b"
       ]
     },
     {
@@ -1150,6 +812,19 @@
         "category:sneakers",
         "model:xt-6",
         "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/68e7d436-9f55-4ce3-b51b-b3f5008c031b/L49213700/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213700",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/094c83b616bef3669f0275258b1dd8276d4798f33bd47daf318f79b7afb36130.jpg"
+      },
+      "colorSwatches": [
+        "#586775",
+        "#918775"
       ]
     },
     {
@@ -1216,6 +891,19 @@
         "material:mesh",
         "model:xt-6",
         "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/f0af6ab0-9c0b-4a2d-b0f6-b3680090a057/L49213200/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213200",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/da549f0800d3ff4779534ebcea3bc062d72010bfcc43788579e0d252c5bb1137.jpg"
+      },
+      "colorSwatches": [
+        "#292e2d",
+        "#ccd39d"
       ]
     },
     {
@@ -1282,6 +970,18 @@
         "material:mesh",
         "model:xt-6",
         "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/1f2e349e-36b1-43ef-8bfd-b3680090925f/L49211100/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49211100",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/4d01318a5a2509b866ae8922adb3ae3d70fbbbeb74b64c82d9d62d6575ae91fa.jpg"
+      },
+      "colorSwatches": [
+        "#293752"
       ]
     },
     {
@@ -1350,6 +1050,18 @@
         "style:gorpcore",
         "model:xt-6",
         "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/dc766e14-7387-4608-9ace-b3790089b455/L49215400/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215400",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/8d089cb5c3f6236c96784a92b3acffb0aa5b1d8f6108b0f6c9c1295d9055cbce.jpg"
+      },
+      "colorSwatches": [
+        "#626467"
       ]
     },
     {
@@ -1418,6 +1130,18 @@
         "style:gorpcore",
         "model:xt-6",
         "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/dcf9c657-ab01-4652-a8e7-b3790089b3eb/L49215200/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215200",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/c53bbd13a4d0a793df8ab045a63a682ac29ebb5351a636c4c3b75dc6d60bd021.jpg"
+      },
+      "colorSwatches": [
+        "#633f3a"
       ]
     },
     {
@@ -1486,6 +1210,19 @@
         "style:gorpcore",
         "model:xt-6",
         "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/1ac73867-4328-4fc5-b8d7-b3790089ae5f/L49214800/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49214800",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/0d61ff4b23545f1c1f218278a61baf212d3f7bc6b741303c52961b805b7beffa.jpg"
+      },
+      "colorSwatches": [
+        "#6a9282",
+        "#647489"
       ]
     },
     {
@@ -1558,7 +1295,17 @@
         "color:red",
         "color:black",
         "brand:nike"
-      ]
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/055abca9-02e5-4a89-b696-9b401ab390d1/air-bakin-high-sp-black-and-varsity-red.webp",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.nike.com/launch/t/air-bakin-high-sp-black-and-varsity-red",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/cc38ae8cc9b8468bc5a130d0dde9eec5a07a024c4d1e87734711212d07e2503f.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "official-nike-ir0088-001",
@@ -1621,7 +1368,17 @@
         "category:footwear",
         "category:sneakers",
         "brand:jordan"
-      ]
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/2d370e02-73d7-45f5-8bd6-417baee625dc/air-jordan-1-low-og-black-and-white-1.webp",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.nike.com/launch/t/air-jordan-1-low-og-black-and-white-1",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/e7800898e3e969f8f7b2c1bdfd5a3112f7881fb32277cc59e7f99e06b601f16a.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "official-nike-iv5678-102",
@@ -1688,7 +1445,17 @@
         "category:sneakers",
         "material:mesh",
         "brand:jordan"
-      ]
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/0a7070a9-0e7b-4440-acbe-2ff9e9937965/women-s-air-jordan-5-sunset.webp",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.nike.com/launch/t/women-s-air-jordan-5-sunset",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/5e4a37c38829abd6f9ad2b33d94482cc516b4462dd66414686e7d7999745e2ff.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-nike-ir0968-500",
@@ -1773,7 +1540,17 @@
         "franchise:one-piece",
         "model:air-max",
         "brand:nike"
-      ]
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/e84befae-a391-489d-8366-e4a03291b199/air-max-plus-one-piece-gomu-gomu.webp",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.nike.com/tw/launch/t/air-max-plus-one-piece-gomu-gomu",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/e67f2d37989abe58626347bd4925a0c8828f2c58a15934a0fd9970deaf049f7c.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u990br4",
@@ -1850,7 +1627,17 @@
         "shape:retro-runner",
         "model:nb-990",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u990br4_nb_02_i?%24pdpflexf22x%24=&hei=880&wid=880",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52804.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/d95cdb1065489797e34ccced0ab7d5a7069cf9278f509f059b22d812be46ec54.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u990bg4",
@@ -1924,7 +1711,17 @@
         "shape:retro-runner",
         "model:nb-990",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u990bg4_nb_02_i?%24pdpflexf22x%24=&hei=880&wid=880",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52802.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/e2a9f550bb3d2f8f5c40d748ea8c15136f6a158caf18c2708a8b978813f15452.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "daily-20260915-nike-air-foamposite-pro-im5204-001",
@@ -2000,7 +1797,17 @@
         "color:black",
         "shape:low-profile",
         "brand:nike"
-      ]
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/7fc95aff-0e71-4458-b9fb-848d4d43f9d7/air-foamposite-pro-black-and-multi-color.webp",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.nike.com/launch/t/air-foamposite-pro-black-and-multi-color",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/75f96726dac8e31fb33591df6e74a52f86a1ae83bc4c992e126b5efee564c1f6.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
@@ -2072,7 +1879,17 @@
         "color:brown",
         "model:nb-991",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/m991br1_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/made-in-uk-991v1-luxe-suede/M991V1_LI-FTW-826837.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/187a0d84f17a4beeaae2e3f8e56ce683e84555f4a42e5106237f1ab3dc91528e.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "daily-20260915-nike-sb-af1-yuto-io8439-100",
@@ -2148,7 +1965,17 @@
         "use:skate",
         "model:air-force-1",
         "brand:nike"
-      ]
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/bd470bed-70bf-4f3e-a7c5-6e35f9815fd2/nike-sb-air-force-1-yuto-light-bone-and-iron-grey.webp",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.nike.com/launch/t/nike-sb-air-force-1-yuto-light-bone-and-iron-grey",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/9261fa22fffbe5524dce8620de2f7f8ef5a3d7e1bd1d4a2659d684b2f96bd730.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "daily-20260915-nike-tennis-centre-kallmeyer-iw4737-104",
@@ -2218,7 +2045,17 @@
         "category:sneakers",
         "material:suede",
         "brand:nike"
-      ]
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/f_auto,q_auto,c_limit,w_1200,g_south/e33d97ec-8ba5-47dc-873c-4da206965e4f/womens-tennis-centre-x-kallmeyer-travertine.webp",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.nike.com/launch/t/womens-tennis-centre-x-kallmeyer-travertine",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/d3099926ee6cc4a0e78e66b1b469e559ec5d41413b1120e01fb3f99ddf40c30e.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "daily-20260916-converse-palmes-green-a24756c",
@@ -2320,7 +2157,17 @@
         "material:canvas",
         "model:jack-purcell",
         "brand:converse"
-      ]
+      ],
+      "presentation": {
+        "image": "https://palmes.co/cdn/shop/files/download_d5717302-ec5a-4109-8e48-09de8ab6969b.jpg?v=1788775154&width=1920",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://palmes.co/products/palmes-for-converse-jack-purcell-green-canvas",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/17f5ff122561d62d9f60f3f4eb60b50edf6474257d9658834d28865567adc44f.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "daily-20260916-converse-palmes-navy-a24786c",
@@ -2422,7 +2269,17 @@
         "material:suede",
         "model:jack-purcell",
         "brand:converse"
-      ]
+      ],
+      "presentation": {
+        "image": "https://palmes.co/cdn/shop/files/download_86692e5f-1039-4ef4-9057-adb5fbfae293.jpg?v=1788775136&width=1920",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://palmes.co/products/palmes-for-converse-jack-purcell-navy-suede",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/0f8030804433c0ff714521f5f0ee1441f24794d170ad11452a374fb058e68788.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-puma-406687-01",
@@ -2528,7 +2385,17 @@
         "material:mesh",
         "color:white",
         "brand:puma"
-      ]
+      ],
+      "presentation": {
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/406687/01/sv01/fnd/EEA/fmt/png/Zapatillas-PUMA-x-J.L-A.L_-Cell-Geo-1-Cage-unisex",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://eu.puma.com/es/es/pd/zapatillas-puma-x-j.l-a.l_-cell-geo-1-cage-unisex/406687?swatch=01",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/b4579cc62cd3f339210640a039698065dddede74877901348e7dc718a7c2cba0.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-puma-406687-02",
@@ -2635,7 +2502,17 @@
         "material:mesh",
         "color:brown",
         "brand:puma"
-      ]
+      ],
+      "presentation": {
+        "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/406687/02/sv01/fnd/EEA/fmt/png/PUMA-x-J.L-A.L_-Cell-Geo-1-Cage-Sneakers-Unisex",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://eu.puma.com/ie/en/pd/puma-x-jl-al-cell-geo-1-cage-sneakers-unisex/406687?swatch=02",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/75de6837180cc501370b90f45ab96fd382d44a1771b10cbf205fce699e814b63.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-celine-reebok-freestyle-lo-02bg",
@@ -2715,7 +2592,17 @@
         "category:sneakers",
         "material:mesh",
         "brand:celine"
-      ]
+      ],
+      "presentation": {
+        "image": "https://image.celine.com/asset/1100b5b4-363e-4a65-b7b0-ee44d6b99b16/Packshot-Large/369405533C-02BG_1_SPR27_M_V1.jpg",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/1dffa8189aaa82561ecd2dc873932b658200e0b5149486e0a2f22f055317c51a.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-celine-reebok-freestyle-lo-38no",
@@ -2796,7 +2683,17 @@
         "material:mesh",
         "color:black",
         "brand:celine"
-      ]
+      ],
+      "presentation": {
+        "image": "https://image.celine.com/asset/ab634932-fff9-46ee-809d-1457ed80f613/369405533C-38NO_1_SPR27_M_V1.jpg",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/8a32ba97367bbf8a1bd03557956fcb8da8676151b6226ad3f8dfee615ae6b358.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-celine-reebok-freestyle-lo-11bu",
@@ -2876,7 +2773,17 @@
         "category:sneakers",
         "material:mesh",
         "brand:celine"
-      ]
+      ],
+      "presentation": {
+        "image": "https://image.celine.com/asset/3096cb6a-1ab7-4c80-834d-ecec29cb719d/369405533C-11BU_1_SPR27_M_V1.jpg",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/860d1a68d95e4ff5c4c09b6dbcb228f16562225af595a218a587c41843d9bc40.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-celine-reebok-freestyle-lo-19dk",
@@ -2958,7 +2865,17 @@
         "material:mesh",
         "color:brown",
         "brand:celine"
-      ]
+      ],
+      "presentation": {
+        "image": "https://image.celine.com/asset/26656259-51ba-45ef-8943-ee7876467487/369405533C-19DK_1_SPR27_M_V1.jpg",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/445411ed6ef1a38eed3cd18f40572242bafaefd7b640bbcaa76836b148626819.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-celine-reebok-freestyle-lo-27fr",
@@ -3040,7 +2957,17 @@
         "material:mesh",
         "color:red",
         "brand:celine"
-      ]
+      ],
+      "presentation": {
+        "image": "https://image.celine.com/asset/8ef19258-4f6b-4890-9bdd-faab649353d7/369405533C-27FR_1_SPR27_M_V1.jpg",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/71cc24467aba0c1413cc6656f5c6286ddca50e376a45e3a83709322fa0cbfe66.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-celine-reebok-freestyle-lo-01op",
@@ -3121,7 +3048,17 @@
         "material:mesh",
         "color:white",
         "brand:celine"
-      ]
+      ],
+      "presentation": {
+        "image": "https://image.celine.com/asset/5153a911-e9f9-47e9-9b33-a22f98fdd61b/369405533C-01OP_1_SPR27_M_V1.jpg",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/edd2b052595f03ef4ef761dc9aef4abfcc6ef92745d0306b67a1a996a75a472f.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-celine-reebok-freestyle-lo-28ms",
@@ -3201,7 +3138,17 @@
         "category:sneakers",
         "material:mesh",
         "brand:celine"
-      ]
+      ],
+      "presentation": {
+        "image": "https://image.celine.com/asset/48d52834-72bd-449f-a34d-adb15027f4aa/369405533C-28MS_1_SPR27_M_V1.jpg",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/56f1e9a8374a1732c27acee7706a3f5c239004948abdc4998c0712b8a32f1451.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-celine-reebok-freestyle-lo-03pt",
@@ -3281,7 +3228,17 @@
         "category:sneakers",
         "material:mesh",
         "brand:celine"
-      ]
+      ],
+      "presentation": {
+        "image": "https://image.celine.com/asset/a27f4c9e-d956-4b76-a910-d544942dfd60/369405533C-03PT_1_SPR27_M_V1.jpg",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/65e4691a56d22811cbd98ee7e27f0a32c83cf673255e6fde46624cd7d4544e95.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u1300ss",
@@ -3357,7 +3314,17 @@
         "material:mesh",
         "shape:retro-runner",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u1300ss_nb_02_i?%24pdpflexf22x%24=&hei=880&wid=880",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/made-in-usa-1300/U1300V1-52809.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/c3e2a8cdcbf542274ded29e68f4aab4fdbceab7a17646feb939a20fae4691438.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-adidas-kj7669",
@@ -3418,7 +3385,17 @@
         "category:footwear",
         "category:sneakers",
         "brand:adidas"
-      ]
+      ],
+      "presentation": {
+        "image": "https://assets.adidas.com/images/w_940,f_auto,q_auto/ca361dffbc6842438d52e79b4424dfba_9366/KJ7669_01_00_standard.jpg",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.adidas.ae/en/adidas-x-tyrrell-winston-climacool-4d-shoes/KJ7669.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/a6ee2b3f15210474d06de0578af099277c5326a44b0d6b4cba10f3acbf404e7e.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u90608ol",
@@ -3492,7 +3469,17 @@
         "color:red",
         "model:nb-9060",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u90608ol_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/sydney-levrone-9060r/U9060RV1_LI-FTW-855217.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/b7fa9274cddae0c52ff0bd4a95ca3b87b2da7d8d240f019958d9725c4d66a1e3.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-wfcx1yq",
@@ -3561,7 +3548,17 @@
         "material:mesh",
         "color:white",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/wfcx1yq_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/WFCXV5_RU-FTW-852606.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/5ac272bbcd36e2d41658dbe6c0d16176280adf25901ea446199757687e6acb89.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-mfcx8e5",
@@ -3630,7 +3627,17 @@
         "material:mesh",
         "color:white",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/mfcx8e5_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/MFCXV5_RU-FTW-852604.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/d655c09538a2b7731d1b6af92a999a917b6184df934cb183c254e9a0c96c73ff.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u990lv4",
@@ -3705,7 +3712,17 @@
         "shape:retro-runner",
         "model:nb-990",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u990lv4_nb_02_i?%24pdpflexf22x%24=&hei=880&wid=880",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52803.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/974a8804b8a89c8b29312f8d85d877b7aa2ffeba9a84a6497e53feed31f0d55e.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u993mo",
@@ -3781,7 +3798,17 @@
         "color:black",
         "shape:retro-runner",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u993mo_nb_02_i?%24pdpflexf22x%24=&hei=880&wid=880",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/made-in-usa-993/U993V1-52816.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/30141dc6a36a8f117e4b9bbb2373a1a6db6695c194c0161b88941d3a19ae40bc.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "zip-cecilie-asics-black-coffee",
@@ -3867,7 +3894,17 @@
         "color:black",
         "shape:mary-jane",
         "brand:ceciliebahnsen"
-      ]
+      ],
+      "presentation": {
+        "image": "https://images.asics.com/is/image/asics/1203B171_001_SL_LT_GLB?$zoom$",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.asics.com/ph/en-ph/cecilie-bahnsen-x-gel-kinetic-fr/p/1203B171-001.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/0eaa1ff8d260a3ecffe586022bf8336468dc4a45ada78a5042947229e360845b.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "zip-cecilie-asics-silver",
@@ -3951,7 +3988,17 @@
         "color:silver",
         "shape:mary-jane",
         "brand:ceciliebahnsen"
-      ]
+      ],
+      "presentation": {
+        "image": "https://images.asics.com/is/image/asics/1203B171_020_SL_LT_GLB?$zoom$",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.asics.com/ph/en-ph/cecilie-bahnsen-x-gel-kinetic-fr/p/1203B171-020.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/40da56ffd5ea0f459ecacc2e35f7deff1836dc2bc700527ced93f82b62351296.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u18902uh",
@@ -4020,7 +4067,17 @@
         "category:sneakers",
         "color:red",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u18902uh_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/1890p/U1890PV1_LI-FTW-837876.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/9af67bcbb26bc9b0fb614358ec21abfbe8999dce15416005719b57fa8c4bb34f.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u7507a0",
@@ -4088,7 +4145,17 @@
         "material:canvas",
         "color:white",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u7507a0_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/750/U750V1_LI-FTW-851089-PMG-NA.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/b2bca1ca7eeee6738cfba195c2ced494748cde67b3beb5206788047e005ec343.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u991wl2",
@@ -4159,7 +4226,17 @@
         "material:mesh",
         "model:nb-991",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u991wl2_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/made-in-uk-991v2/U991V2_LI-FTW-829161.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/a6f6f975e9913c0903f313b05bbd9f5098b03e30bd4e3d7272aa41ab58475981.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-ugtr4dy",
@@ -4229,7 +4306,17 @@
         "category:sneakers",
         "material:suede",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/ugtr4dy_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/ald-x-new-balance-gator-run-hairy-suede/UGTRV1_LI-FTW-859792.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/202c8fdc24f8effb955a972210d872052808f0e0d9a79272638dd26d7b97b85f.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-w327apc",
@@ -4303,7 +4390,17 @@
         "shape:retro-runner",
         "model:nb-327",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/w327apc_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/327/WS327V1-41747-PMG-NA-BROWN2.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/521068344746947c95d20eba5b80a1d159b7907dd47990dde07e41e9fd5b9819.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u204v2w0",
@@ -4379,7 +4476,17 @@
         "shape:low-profile",
         "shape:retro-runner",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u204v2w0_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/204v/U204V2W0-D-05.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/ff12999a19953c6368603147612eb7ba667c229b5651c0ff74484f517ef3ec42.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u204v2pt",
@@ -4455,7 +4562,17 @@
         "shape:low-profile",
         "shape:retro-runner",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u204v2pt_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/204v/U204V2PT-D-05.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/1587b6353d5444ffc4a5cffe9531129e216c10e65f6905c28e8b9ac34bede5fd.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-mrebx4fh",
@@ -4523,7 +4640,17 @@
         "attribute:running",
         "color:silver",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/mrebx4fh_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/supercomp-rebel/MREBXV1_RU-FTW-814193-PMG-NA.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/4160130a170de1b5d9f9cada7949c2ddee51d6d9022c668b60915b5bea4e3878.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-wrebx38s",
@@ -4591,86 +4718,17 @@
         "attribute:running",
         "color:silver",
         "brand:newbalance"
-      ]
-    },
-    {
-      "id": "verified-new-balance-mt24yj",
-      "brand": "New Balance",
-      "name": "TDS MT2",
-      "category": "hybrid",
-      "productType": "hybrid",
-      "fit": [
-        "MLB",
-        "DISCOVERY"
       ],
-      "fitReasons": [
-        "일상 스포츠 캐주얼·실루엣 참고",
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "newbalance|tdsmt2",
-      "releaseDate": "2026-08-06",
-      "releaseStatus": "released",
-      "dateEvidence": {
-        "url": "https://www.newbalance.com/nb-launches/",
-        "precision": "day",
-        "verified": true,
-        "official": true,
-        "verifiedAt": "2026-09-28T04:20:31.258Z",
-        "region": "US",
-        "excerpt": "MT24YJ: official US launch-calendar tile dated 2026-08-06 links to this exact product page."
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/wrebx38s_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/supercomp-rebel/WREBXV1_RU-FTW-814192-PMG-NA.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/8e6d2a05f0dc2ae98ae9e38e35b73e7bec08f5c81e646ae90f93e9d81c8a2007.webp"
       },
-      "url": "https://www.newbalance.com/pd/tds-mt2/MT2V1_LI-FTW-857722.html",
-      "image": "https://nb.scene7.com/is/image/NB/mt24yj_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
-      "style": "MT24YJ",
-      "colorway": "CORTADO with PUMPERNICKEL",
-      "colors": [
-        {
-          "name": "CORTADO with PUMPERNICKEL"
-        }
-      ],
-      "gender": "",
-      "material": "Deconstructed open mesh and Ariprene upper",
-      "priceLabel": "$139.99",
-      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "Lifestyle sneakers",
-      "hybridReview": {
-        "approved": true,
-        "url": "https://www.newbalance.com/pd/tds-mt2/MT2V1_LI-FTW-857722.html",
-        "reason": "Main product confirms trail sole with Vibram lugs, rubber mudguard and lightweight EVA cushioning, with Mary Jane strap upper."
-      },
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": false,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "US",
-      "lastVerifiedAt": "2026-09-28T04:20:31.258Z",
-      "productEvidenceUrl": "https://www.newbalance.com/pd/tds-mt2/MT2V1_LI-FTW-857722.html",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-06"
-      },
-      "keywordTags": [
-        "mesh-sheer",
-        "trail-gorpcore",
-        "mary-jane"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "material:mesh",
-        "shape:mary-jane",
-        "use:trail",
-        "style:gorpcore",
-        "brand:newbalance"
-      ]
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u7406ak",
@@ -4742,7 +4800,17 @@
         "color:black",
         "shape:retro-runner",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u7406ak_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/night-lights-740%E2%80%8B/U740V2_LI-FTW-885192.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/a7448bf71ccea358b59497668d9d672e1d7820797db23ead6dcdafeb399b6b9d.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u90609bo",
@@ -4814,7 +4882,17 @@
         "material:mesh",
         "model:nb-9060",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u90609bo_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/night-lights-9060r%E2%80%8B/U9060RV1_LI-FTW-873793.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/b763dc1a94fca965a976869d53e589bc088565052f992abeb03b820f02361c26.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-new-balance-u20001k7",
@@ -4888,7 +4966,17 @@
         "color:black",
         "shape:retro-runner",
         "brand:newbalance"
-      ]
+      ],
+      "presentation": {
+        "image": "https://nb.scene7.com/is/image/NB/u20001k7_nb_02_i?%24pdpflexf2%24=&hei=440&wid=440",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.newbalance.com/pd/night-lights-abzorb-2000%E2%80%8B/U2000V1_LI-FTW-873796.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/ec389f70a4408f2b58e7068e4c9d0b47e1997b9f2a7e9d2d1c7c96ebf7e85b4c.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "official-82d80c59311fcc15",
@@ -4978,7 +5066,17 @@
         "color:brown",
         "shape:platform",
         "brand:miumiu"
-      ]
+      ],
+      "presentation": {
+        "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E808E/3ZR4F0304/5E808E_3ZR4_F0304_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.700.700.jpg",
+        "scale": 2.25,
+        "offsetY": -14,
+        "view": "side",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/a4a4a389cc977f6af966646d0b27f0a0e09fd25b6a7cbab45f7f7bd24cb0b30d.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-moncler-citytrek-white-l209a4m00230n0633034",
@@ -5059,7 +5157,17 @@
         "use:trail",
         "style:gorpcore",
         "brand:moncler"
-      ]
+      ],
+      "presentation": {
+        "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209A4M00230N0633034_3/image/moncler-city-trek-white.jpg?w=1600&q=80",
+        "scale": 2,
+        "offsetY": -14,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/6582e626b9622e4b14288dc4df3c8d867e35dd63e562fdf555e50b5cabc76114.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-moncler-citytrek-ivory-l209a4m00230n0633050",
@@ -5140,7 +5248,17 @@
         "use:trail",
         "style:gorpcore",
         "brand:moncler"
-      ]
+      ],
+      "presentation": {
+        "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209A4M00230N0633050_3/image/moncler-city-trek-ivory.jpg?w=1600&q=80",
+        "scale": 2,
+        "offsetY": -14,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/a599a0ce9f7605a453d53aed05f17b59a91519aab0119d8dfacf675178ca7f10.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-moncler-citytrek-black-l209a4m00230n0633999",
@@ -5221,7 +5339,17 @@
         "use:trail",
         "style:gorpcore",
         "brand:moncler"
-      ]
+      ],
+      "presentation": {
+        "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209A4M00230N0633999_3/image/moncler-city-trek-black.jpg?w=1600&q=80",
+        "scale": 2,
+        "offsetY": -14,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/c2982d1f3f56be29399778dca4e74e13e65d5f895396fe1e928b021fac0e8a1c.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-moncler-citytrek-sagegreen-l209a4m00230n0633818",
@@ -5301,7 +5429,17 @@
         "use:trail",
         "style:gorpcore",
         "brand:moncler"
-      ]
+      ],
+      "presentation": {
+        "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209A4M00230N0633818_3/image/moncler-city-trek-sage-green.jpg?w=1600&q=80",
+        "scale": 2,
+        "offsetY": -14,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/1d5fc01309abb74426f42f97e055ada0c2e1a9a08ad2b2ec54e83905f7fdce63.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "p011",
@@ -5392,7 +5530,17 @@
         "category:sneakers",
         "color:white",
         "brand:on"
-      ]
+      ],
+      "presentation": {
+        "image": "https://images.ctfassets.net/hnk2vsx53n6l/372W5iM3NwVYSOULer5pUR/f6575ea0227d29e5f432eee0393bc1be/d7b1946603c52d741257dc931af0613bdc9758de.png?fm=webp",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.on.com/en-kr/products/cloud-x-tempo-pro-m-3mh1033/mens/white-celeste-shoes-3MH10335109",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/3ccf1af0e514efe8ba4f8bb0175ccfb33961acc86eec2aa3a0a2963a37613b99.webp"
+      },
+      "colorSwatches": []
     },
     {
       "id": "verified-gucci-drip-sand-brown-a00a2sfagmq9656",
@@ -5482,11 +5630,21 @@
         "material:canvas",
         "color:brown",
         "brand:gucci"
-      ]
+      ],
+      "presentation": {
+        "image": "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1782836123/A00A2S_FAGMQ_9656_007_100_0000_Light-mens-drip-sneaker.jpg",
+        "scale": 1.2,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "cachedPath": "/images/66246d1e18940ce6edc4c981eba54d322475c86e25012c5611670a14e0ed683f.webp"
+      },
+      "colorSwatches": []
     }
   ],
   "keywordMethod": "verified-style-source-rank-v2",
-  "keywordCheckedAt": "2026-10-06T02:17:12.425Z",
+  "keywordCheckedAt": "2026-10-06T06:00:02.287Z",
   "sourceRanks": [
     {
       "platform": "wgsn-ss27-colours",
@@ -5495,12 +5653,12 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T05:39:07.663Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-10-04T03:27:50.902Z:83af2f00f1ea7a01",
+      "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
-      "contentHash": "83af2f00f1ea7a019b2085ddac770ad4375d0b83b1ab49ef42d364e72696ad44",
+      "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
       "forecastPeriod": "S/S 2027",
       "validUntil": "2027-08-31",
       "validityBasis": "season-end-policy",
@@ -5508,7 +5666,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-10-04T03:27:50.902Z",
+      "verifiedAt": "2026-10-06T05:39:07.663Z",
       "applicability": "cross-category"
     },
     {
@@ -5518,12 +5676,12 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T05:39:07.663Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-10-04T03:27:50.902Z:83af2f00f1ea7a01",
+      "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
-      "contentHash": "83af2f00f1ea7a019b2085ddac770ad4375d0b83b1ab49ef42d364e72696ad44",
+      "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
       "forecastPeriod": "S/S 2027",
       "validUntil": "2027-08-31",
       "validityBasis": "season-end-policy",
@@ -5531,7 +5689,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-10-04T03:27:50.902Z",
+      "verifiedAt": "2026-10-06T05:39:07.663Z",
       "applicability": "sports-and-outdoor"
     },
     {
@@ -5541,12 +5699,12 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T05:39:07.663Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-10-04T03:27:50.902Z:83af2f00f1ea7a01",
+      "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
-      "contentHash": "83af2f00f1ea7a019b2085ddac770ad4375d0b83b1ab49ef42d364e72696ad44",
+      "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
       "forecastPeriod": "S/S 2027",
       "validUntil": "2027-08-31",
       "validityBasis": "season-end-policy",
@@ -5554,7 +5712,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-10-04T03:27:50.902Z",
+      "verifiedAt": "2026-10-06T05:39:07.663Z",
       "applicability": "cross-category"
     },
     {
@@ -5564,12 +5722,12 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T05:39:07.663Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-10-04T03:27:50.902Z:83af2f00f1ea7a01",
+      "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
-      "contentHash": "83af2f00f1ea7a019b2085ddac770ad4375d0b83b1ab49ef42d364e72696ad44",
+      "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
       "forecastPeriod": "S/S 2027",
       "validUntil": "2027-08-31",
       "validityBasis": "season-end-policy",
@@ -5577,7 +5735,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-10-04T03:27:50.902Z",
+      "verifiedAt": "2026-10-06T05:39:07.663Z",
       "applicability": "footwear-explicit"
     },
     {
@@ -5587,12 +5745,12 @@
       "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verified": true,
       "kind": "forecast-keyword",
-      "capturedAt": "2026-10-04T03:27:50.902Z",
+      "capturedAt": "2026-10-06T05:39:07.663Z",
       "rankingPeriod": null,
-      "snapshotId": "wgsn-ss27-colours:2026-10-04T03:27:50.902Z:83af2f00f1ea7a01",
+      "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
       "scope": "fashion-colour-forecast",
       "platformName": "WGSN",
-      "contentHash": "83af2f00f1ea7a019b2085ddac770ad4375d0b83b1ab49ef42d364e72696ad44",
+      "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
       "forecastPeriod": "S/S 2027",
       "validUntil": "2027-08-31",
       "validityBasis": "season-end-policy",
@@ -5600,7 +5758,7 @@
       "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
       "verificationMethod": "public-source-fetch",
       "automatedStatus": "available",
-      "verifiedAt": "2026-10-04T03:27:50.902Z",
+      "verifiedAt": "2026-10-06T05:39:07.663Z",
       "applicability": "cross-category"
     },
     {
@@ -5865,12 +6023,10 @@
         "daily-20260916-converse-palmes-green-a24756c",
         "daily-20260916-converse-palmes-navy-a24786c",
         "official-82d80c59311fcc15",
-        "official-nike-hq7978-001",
         "official-nike-ir0088-001",
         "official-nike-iv5678-102",
         "official-nike-ix8478-410",
         "official-salomon-l49210700",
-        "official-salomon-l49210800",
         "verified-celine-reebok-freestyle-lo-01op",
         "verified-celine-reebok-freestyle-lo-02bg",
         "verified-celine-reebok-freestyle-lo-03pt",
@@ -5891,7 +6047,7 @@
         "verified-new-balance-ugtr4dy",
         "verified-new-balance-w327apc"
       ],
-      "matchedProductCount": 30,
+      "matchedProductCount": 28,
       "sourceRanks": [
         {
           "platform": "whowhatwear-style",
@@ -6148,12 +6304,12 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T05:39:07.663Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-10-04T03:27:50.902Z:83af2f00f1ea7a01",
+          "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
-          "contentHash": "83af2f00f1ea7a019b2085ddac770ad4375d0b83b1ab49ef42d364e72696ad44",
+          "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
           "forecastPeriod": "S/S 2027",
           "validUntil": "2027-08-31",
           "validityBasis": "season-end-policy",
@@ -6161,7 +6317,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-10-04T03:27:50.902Z",
+          "verifiedAt": "2026-10-06T05:39:07.663Z",
           "applicability": "cross-category"
         }
       ],
@@ -6188,12 +6344,12 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T05:39:07.663Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-10-04T03:27:50.902Z:83af2f00f1ea7a01",
+          "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
-          "contentHash": "83af2f00f1ea7a019b2085ddac770ad4375d0b83b1ab49ef42d364e72696ad44",
+          "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
           "forecastPeriod": "S/S 2027",
           "validUntil": "2027-08-31",
           "validityBasis": "season-end-policy",
@@ -6201,7 +6357,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-10-04T03:27:50.902Z",
+          "verifiedAt": "2026-10-06T05:39:07.663Z",
           "applicability": "cross-category"
         }
       ],
@@ -6228,12 +6384,12 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T05:39:07.663Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-10-04T03:27:50.902Z:83af2f00f1ea7a01",
+          "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
-          "contentHash": "83af2f00f1ea7a019b2085ddac770ad4375d0b83b1ab49ef42d364e72696ad44",
+          "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
           "forecastPeriod": "S/S 2027",
           "validUntil": "2027-08-31",
           "validityBasis": "season-end-policy",
@@ -6241,7 +6397,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-10-04T03:27:50.902Z",
+          "verifiedAt": "2026-10-06T05:39:07.663Z",
           "applicability": "cross-category"
         }
       ],
@@ -6268,12 +6424,12 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T05:39:07.663Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-10-04T03:27:50.902Z:83af2f00f1ea7a01",
+          "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
-          "contentHash": "83af2f00f1ea7a019b2085ddac770ad4375d0b83b1ab49ef42d364e72696ad44",
+          "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
           "forecastPeriod": "S/S 2027",
           "validUntil": "2027-08-31",
           "validityBasis": "season-end-policy",
@@ -6281,7 +6437,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-10-04T03:27:50.902Z",
+          "verifiedAt": "2026-10-06T05:39:07.663Z",
           "applicability": "footwear-explicit"
         }
       ],
@@ -6308,12 +6464,12 @@
           "sourceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verified": true,
           "kind": "forecast-keyword",
-          "capturedAt": "2026-10-04T03:27:50.902Z",
+          "capturedAt": "2026-10-06T05:39:07.663Z",
           "rankingPeriod": null,
-          "snapshotId": "wgsn-ss27-colours:2026-10-04T03:27:50.902Z:83af2f00f1ea7a01",
+          "snapshotId": "wgsn-ss27-colours:2026-10-06T05:39:07.663Z:a6d6eeadbcaf2518",
           "scope": "fashion-colour-forecast",
           "platformName": "WGSN",
-          "contentHash": "83af2f00f1ea7a019b2085ddac770ad4375d0b83b1ab49ef42d364e72696ad44",
+          "contentHash": "a6d6eeadbcaf251874477cde2dc59dc18a7939d9fbf6c4e0e384f8abb31eb773",
           "forecastPeriod": "S/S 2027",
           "validUntil": "2027-08-31",
           "validityBasis": "season-end-policy",
@@ -6321,7 +6477,7 @@
           "evidenceUrl": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
           "verificationMethod": "public-source-fetch",
           "automatedStatus": "available",
-          "verifiedAt": "2026-10-04T03:27:50.902Z",
+          "verifiedAt": "2026-10-06T05:39:07.663Z",
           "applicability": "sports-and-outdoor"
         }
       ],
@@ -6338,13 +6494,13 @@
       "platform": "musinsa",
       "name": "무신사",
       "url": "https://www.musinsa.com/main/musinsa/recommend",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "available",
       "reason": null,
       "count": 100,
-      "sourceUpdatedAt": "10.04 12:00, 기준",
+      "sourceUpdatedAt": "10.06 14:20, 기준",
       "rankingPeriod": null,
-      "snapshotId": "musinsa:2026-10-04T03:27:50.902Z:1c65dfc0e552fea1",
+      "snapshotId": "musinsa:2026-10-06T05:39:07.663Z:5d2f9002290b279c",
       "kind": "search-rank",
       "country": "KR"
     },
@@ -6352,13 +6508,13 @@
       "platform": "29cm",
       "name": "29CM",
       "url": "https://www.29cm.co.kr/store/search/start",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "available",
       "reason": null,
       "count": 30,
-      "sourceUpdatedAt": "10.04 기준",
+      "sourceUpdatedAt": "10.06 기준",
       "rankingPeriod": null,
-      "snapshotId": "29cm:2026-10-04T03:27:50.902Z:edcbc8d5fe067d16",
+      "snapshotId": "29cm:2026-10-06T05:39:07.663Z:68797e2a4ff53c65",
       "kind": "search-rank",
       "country": "KR"
     },
@@ -6366,27 +6522,21 @@
       "platform": "eql",
       "name": "EQL",
       "url": "https://www.eqlstore.com/public/search/keyword",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
-      "status": "available",
-      "reason": null,
-      "count": 20,
-      "sourceUpdatedAt": "2026/10/04 09:00:02",
-      "rankingPeriod": null,
-      "snapshotId": "eql:2026-10-04T03:27:50.902Z:b6bb18131b0b244d",
-      "kind": "search-rank",
-      "country": "KR"
+      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "status": "unavailable",
+      "reason": "공개 검색순위 원문 확인 불가"
     },
     {
       "platform": "tiktok",
       "name": "TikTok Creative Center",
       "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?region=KR&period=7",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "available",
       "reason": null,
       "count": 3,
       "sourceUpdatedAt": null,
       "rankingPeriod": "7 days",
-      "snapshotId": "tiktok:2026-10-04T03:27:50.902Z:4f008895b160c3d0",
+      "snapshotId": "tiktok:2026-10-06T05:39:07.663Z:4f87c285aa8e9336",
       "kind": "hashtag-rank",
       "country": "KR"
     },
@@ -6477,13 +6627,13 @@
       "platform": "wgsn-ss27-colours",
       "name": "WGSN",
       "url": "https://www.wgsn.com/en/blog/s-s-27-key-colours-have-landed",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "validUntil": "2027-08-31",
       "forecastPeriod": "S/S 2027",
       "status": "available",
       "automatedStatus": "available",
       "verificationMethod": "public-source-fetch",
-      "verifiedAt": "2026-10-04T03:27:50.902Z",
+      "verifiedAt": "2026-10-06T05:39:07.663Z",
       "count": 5,
       "reason": null
     },
@@ -6492,7 +6642,7 @@
       "name": "F-Trend",
       "url": "https://f-trend.com/",
       "status": "unsupported",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "reason": "공개 전망 원문을 검증하지 못했습니다. 회원 전용 본문은 사용하지 않습니다."
     },
     {
@@ -6500,7 +6650,7 @@
       "name": "Trendstop",
       "url": "https://www.trendstop.com/",
       "status": "unsupported",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "reason": "공개 전망 원문을 검증하지 못했습니다. 회원 전용 본문은 사용하지 않습니다."
     },
     {
@@ -6508,7 +6658,7 @@
       "name": "WGSN 기타 전망",
       "url": "https://www.wgsn.com/",
       "status": "unsupported",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "reason": "검토한 공개 S/S27 색상 글 외 유료 보고서는 사용하지 않습니다."
     }
   ],
@@ -6518,7 +6668,7 @@
       "name": "Sneaker Bar Detroit",
       "url": "https://sneakerbardetroit.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6528,7 +6678,7 @@
       "name": "Hypebeast",
       "url": "https://hypebeast.com/footwear",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6538,7 +6688,7 @@
       "name": "Highsnobiety",
       "url": "https://www.highsnobiety.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6548,7 +6698,7 @@
       "name": "Sneaker News",
       "url": "https://sneakernews.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6558,7 +6708,7 @@
       "name": "The Sneaker Newsletter",
       "url": "https://www.thesneakernewsletter.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "available",
       "count": 0,
       "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
@@ -6568,36 +6718,37 @@
       "name": "The Dassler",
       "url": "https://thedassler.substack.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
-      "status": "unavailable",
-      "reason": "공개 매체 키워드 원문 확인 불가"
+      "checkedAt": "2026-10-06T05:39:07.663Z",
+      "status": "available",
+      "count": 0,
+      "reason": "최근 7일 명시적 슈즈 트렌드 키워드 미확인"
     },
     {
       "platform": "whowhatwear-style",
       "name": "Who What Wear",
       "url": "https://www.whowhatwear.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "available",
-      "count": 6,
-      "reason": null
+      "count": 0,
+      "reason": "최근 30일 본문에서 스타일 트렌드 항목 미확인"
     },
     {
       "platform": "glamour-style",
       "name": "Glamour",
       "url": "https://www.glamour.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "available",
-      "count": 3,
-      "reason": null
+      "count": 0,
+      "reason": "최근 30일 본문에서 스타일 트렌드 항목 미확인"
     },
     {
       "platform": "vogue-style",
       "name": "Vogue",
       "url": "https://www.vogue.com/",
       "kind": "editorial-keyword",
-      "checkedAt": "2026-10-04T03:27:50.902Z",
+      "checkedAt": "2026-10-06T05:39:07.663Z",
       "status": "unavailable",
       "count": 0,
       "reason": "최근 30일 스타일 트렌드 원문 확인 불가"
@@ -7716,577 +7867,859 @@
     ],
     "counts": {
       "source": 2428,
-      "published": 67,
+      "published": 60,
       "held": 2358,
       "expired": 3
+    },
+    "discoveryRecheck": {
+      "checkedAt": "2026-10-06T05:49:06.710Z",
+      "scope": "targeted-discovery-recheck",
+      "previousCollection": "2026-10-04",
+      "brands": [
+        {
+          "brand": "Oakley Factory Team",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.oakley.com/en-us/search?text=Factory%20Team",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "OFFICIAL_ACCESS_CHALLENGE"
+            },
+            {
+              "url": "https://wearebraindead.com/pages/oakley-factory-team",
+              "mode": "direct-official-partner",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Gucci",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.gucci.com/us/en/ca/women/shoes-for-women-c-women-shoes?sort=newest",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Louis Vuitton",
+          "status": "unavailable",
+          "attempts": [
+            {
+              "url": "https://us.louisvuitton.com/eng-us/women/shoes/all-shoes/_/N-t1mcbujj",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_403"
+            },
+            {
+              "url": "https://us.louisvuitton.com/eng-us/women/shoes/all-shoes/_/N-t1mcbujj",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source returned no usable page"
+            }
+          ]
+        },
+        {
+          "brand": "Celine",
+          "status": "unavailable",
+          "attempts": [
+            {
+              "url": "https://www.celine.com/en-us/men/shoes/sneakers/",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "OFFICIAL_ACCESS_CHALLENGE"
+            }
+          ]
+        },
+        {
+          "brand": "Lululemon",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://shop.lululemon.com/c/shoes/n1n4fc",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Saint Laurent",
+          "status": "unavailable",
+          "attempts": [
+            {
+              "url": "https://www.ysl.com/en-us/ca/women/shoes",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_403"
+            },
+            {
+              "url": "https://www.ysl.com/en-us/ca/women/shoes",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source returned no usable page"
+            },
+            {
+              "url": "https://www.ysl.com/en-us/ca/shop-women/shoes",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "OFFICIAL_ACCESS_CHALLENGE"
+            }
+          ]
+        },
+        {
+          "brand": "ASICS",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.asics.com/us/en-us/releases/",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_TOO_LARGE"
+            },
+            {
+              "url": "https://www.asics.com/us/en-us/releases/",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source HTTP 403"
+            },
+            {
+              "url": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_403"
+            },
+            {
+              "url": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source HTTP 403"
+            },
+            {
+              "url": "https://www.asics.com/dk/en-dk/gel-kinetic-fr/p/1203B051-001.html",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_403"
+            },
+            {
+              "url": "https://www.asics.com/dk/en-dk/gel-kinetic-fr/p/1203B051-001.html",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source HTTP 403"
+            },
+            {
+              "url": "https://www.asics.com/us/en-us/releases/",
+              "mode": "direct-html-structured-calendar",
+              "status": "readable",
+              "reason": "2 future launch cards verified; 6MB limit supports full calendar"
+            }
+          ]
+        },
+        {
+          "brand": "KOLON SPORT",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.kolonsport.com/",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Eider",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.eider.co.kr/",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "National Geographic",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://natgeostore.ph/collections/footwear",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_404"
+            },
+            {
+              "url": "https://natgeostore.ph/collections/footwear",
+              "mode": "reader",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Dior",
+          "status": "unavailable",
+          "attempts": [
+            {
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_403"
+            },
+            {
+              "url": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source request timed out"
+            }
+          ]
+        },
+        {
+          "brand": "SATISFY",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://satisfyrunning.com/collections/shop-all",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_404"
+            },
+            {
+              "url": "https://satisfyrunning.com/collections/shop-all",
+              "mode": "reader",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Merrell",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.merrell.com/US/en/mens-shoes/",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "New Balance",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.newbalance.com/nb-launches/",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_403"
+            },
+            {
+              "url": "https://www.newbalance.com/nb-launches/",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source returned no usable page"
+            },
+            {
+              "url": "https://www.newbalance.com/women/featured/new-arrivals/",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Jordan",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.nike.com/launch",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Common Projects",
+          "status": "unavailable",
+          "attempts": [
+            {
+              "url": "https://www.commonprojects.com/",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "fetch failed"
+            },
+            {
+              "url": "https://www.commonprojects.com/",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source request timed out"
+            },
+            {
+              "url": "https://commonprojects.com/",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "fetch failed"
+            },
+            {
+              "url": "https://commonprojects.com/",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source request timed out"
+            }
+          ]
+        },
+        {
+          "brand": "Under Armour",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.underarmour.com/en-us/",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Arc'teryx",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://arcteryx.com/us/en/c/mens/footwear/shoes",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "The North Face",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.thenorthface.com/en-us/c/shop-all/footwear-747784",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Skechers",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.skechers.com/women/shoes/",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Rockfish Weatherwear",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://en.rockfish-weatherwear.co.kr/",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "23.65",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://m.23-65.com/",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Havaianas",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.havaianas.com/",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_403"
+            },
+            {
+              "url": "https://www.havaianas.com/",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source request timed out"
+            },
+            {
+              "url": "https://www.havaianas-store.com/gb/en/home",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Le Coq Sportif",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.lecoqsportif.com/en-us/collections/chaussures-homme-femme",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_404"
+            },
+            {
+              "url": "https://www.lecoqsportif.com/en-us/collections/chaussures-homme-femme",
+              "mode": "reader",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "OOFOS",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.oofos.com/",
+              "mode": "html",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Brooks",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.brooksrunning.com/en_us/shoes/",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_TOO_LARGE"
+            },
+            {
+              "url": "https://www.brooksrunning.com/en_us/shoes/",
+              "mode": "reader",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "KEEN",
+          "status": "readable",
+          "attempts": [
+            {
+              "url": "https://www.keenfootwear.com/collections/shoes",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_404"
+            },
+            {
+              "url": "https://www.keenfootwear.com/collections/shoes",
+              "mode": "reader",
+              "status": "readable"
+            }
+          ]
+        },
+        {
+          "brand": "Crocs",
+          "status": "unavailable",
+          "attempts": [
+            {
+              "url": "https://www.crocs.com/c/men/footwear/sneakers",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_403"
+            },
+            {
+              "url": "https://www.crocs.com/c/men/footwear/sneakers",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "Source request timed out"
+            },
+            {
+              "url": "https://www.crocs.co.jp/c/footwear/sneakers",
+              "mode": "html",
+              "status": "unavailable",
+              "reason": "PUBLIC_SOURCE_HTTP_403"
+            },
+            {
+              "url": "https://www.crocs.co.jp/c/footwear/sneakers",
+              "mode": "reader",
+              "status": "unavailable",
+              "reason": "OFFICIAL_ACCESS_CHALLENGE"
+            }
+          ]
+        }
+      ]
     }
   },
   "styleTrendKeywords": {
-    "schemaVersion": 1,
-    "updated": "2026-09-27T08:02:00+09:00",
-    "asOf": "2026-09-27",
-    "method": "첨부 HTML의 공개 Shoes Trend Snapshot을 보존한 주간 참고본. WGSN 비공개 페이지 값은 포함하지 않음.",
-    "sources": [
-      {
-        "name": "Real Simple · low-profile sneaker signal",
-        "url": "https://www.realsimple.com/amazon-low-profile-sneakers-september-2026-12125661"
-      },
-      {
-        "name": "Vogue · ASICS Walking / performance-lifestyle signal",
-        "url": "https://www.vogue.com/article/can-asics-make-walking-shoes-cool"
-      },
-      {
-        "name": "Who What Wear · fall sneaker trends",
-        "url": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026"
-      },
-      {
-        "name": "Sneaker News · release calendar",
-        "url": "https://sneakernews.com/2026/09/20/sneaker-releases-september-20-september-26-2026/"
-      },
-      {
-        "name": "Musinsa · footwear category signal",
-        "url": "https://www.musinsa.com/category/005/goods?gf=A"
-      },
-      {
-        "name": "29CM · footwear category signal",
-        "url": "https://www.29cm.co.kr/home/category/202100100"
-      },
-      {
-        "name": "PUMA · MB.06 release",
-        "url": "https://us.puma.com/us/en/pd/mb.06-shooting-star-basketball-shoes/313624"
-      }
-    ],
+    "method": "verified-current-style-mentions",
+    "updated": "2026-10-06T05:39:07.663Z",
     "items": [
       {
-        "id": "shoes-trend-01",
-        "label": "#로우프로파일",
-        "englishLabel": "Low-profile / slim sneakers",
+        "id": "keyword-78918f6763c59160",
+        "keywordType": "style",
+        "label": "ballet sneakers",
         "aliases": [
-          "#로우프로파일",
-          "low profile",
-          "low-profile",
-          "slim sneaker",
-          "slim-line sneaker",
-          "sleek sneaker",
-          "로우 프로파일",
-          "스피드캣",
-          "태권도",
-          "Low-profile / slim sneakers"
-        ],
-        "rank": 1,
-        "score": 100,
-        "previousRank": null,
-        "productIds": [
-          "daily-20260915-nike-air-foamposite-pro-im5204-001",
-          "verified-new-balance-u204v2w0",
-          "verified-new-balance-u204v2pt"
-        ],
-        "sourceNames": [
-          "Real Simple",
-          "Who What Wear",
-          "Musinsa",
-          "29CM"
-        ]
-      },
-      {
-        "id": "shoes-trend-02",
-        "label": "#스웨이드",
-        "englishLabel": "Suede sneakers",
-        "aliases": [
-          "#스웨이드",
-          "suede sneaker",
-          "suede trainer",
-          "스웨이드 스니커즈",
-          "스웨이드 러너",
-          "Suede sneakers"
-        ],
-        "rank": 2,
-        "score": 98,
-        "previousRank": null,
-        "productIds": [
-          "official-82d80c59311fcc15"
-        ],
-        "sourceNames": [
-          "The Strategist",
-          "Byrdie",
-          "Musinsa",
-          "Retail arrivals"
-        ]
-      },
-      {
-        "id": "shoes-trend-03",
-        "label": "#레트로러너",
-        "englishLabel": "Retro runners / archive trainers",
-        "aliases": [
-          "#레트로러너",
-          "retro runner",
-          "retro trainer",
-          "archive sneaker",
-          "70s sneaker",
-          "80s runner",
-          "90s runner",
-          "레트로 러너",
-          "빈티지 조거",
-          "Retro runners / archive trainers"
-        ],
-        "rank": 3,
-        "score": 96,
-        "previousRank": null,
-        "productIds": [
-          "verified-new-balance-u990br4",
-          "verified-new-balance-u990bg4",
-          "verified-new-balance-u1300ss",
-          "verified-new-balance-u990lv4",
-          "verified-new-balance-u993mo",
-          "verified-new-balance-w327apc",
-          "verified-new-balance-u204v2w0",
-          "verified-new-balance-u204v2pt",
-          "verified-new-balance-u7406ak",
-          "verified-new-balance-u20001k7"
-        ],
-        "sourceNames": [
-          "Who What Wear",
-          "Newcop",
-          "PUMA MB.06",
-          "Public social"
-        ]
-      },
-      {
-        "id": "shoes-trend-04",
-        "label": "#메쉬슈즈",
-        "englishLabel": "Mesh / sheer footwear",
-        "aliases": [
-          "#메쉬슈즈",
-          "mesh shoe",
-          "mesh sneaker",
-          "sheer shoe",
-          "메쉬 슈즈",
-          "메쉬 스니커즈",
-          "Mesh / sheer footwear"
-        ],
-        "rank": 4,
-        "score": 94,
-        "previousRank": null,
-        "productIds": [],
-        "sourceNames": [
-          "Vogue ASICS Walking",
-          "Who What Wear netting",
-          "PUMA MB.06"
-        ]
-      },
-      {
-        "id": "shoes-trend-05",
-        "label": "#브라운슈즈",
-        "englishLabel": "Chocolate / coffee brown",
-        "aliases": [
-          "#브라운슈즈",
-          "chocolate brown shoe",
-          "brown sneaker",
-          "coffee brown",
-          "브라운 스니커즈",
-          "초콜릿 브라운",
-          "Chocolate / coffee brown"
-        ],
-        "rank": 5,
-        "score": 92,
-        "previousRank": null,
-        "productIds": [
-          "verified-celine-reebok-freestyle-lo-19dk"
-        ],
-        "sourceNames": [
-          "The Strategist brown Samba",
-          "adidas Tobacco Koyo",
-          "29CM"
-        ]
-      },
-      {
-        "id": "shoes-trend-06",
-        "label": "#캐릭터콜라보",
-        "englishLabel": "Character / franchise collaborations",
-        "aliases": [
-          "#캐릭터콜라보",
-          "character sneaker",
-          "pokemon sneaker",
-          "franchise collaboration",
-          "캐릭터 콜라보",
-          "포켓몬 스니커즈",
-          "Character / franchise collaborations"
-        ],
-        "rank": 6,
-        "score": 90,
-        "previousRank": null,
-        "productIds": [],
-        "sourceNames": [
-          "Nike × One Piece",
-          "J Balvin × Jordan",
-          "Public social"
-        ]
-      },
-      {
-        "id": "shoes-trend-07",
-        "label": "#메탈릭실버",
-        "englishLabel": "Metallic silver footwear",
-        "aliases": [
-          "#메탈릭실버",
-          "metallic sneaker",
-          "silver sneaker",
-          "metallic silver",
-          "메탈릭 실버",
-          "실버 스니커즈",
-          "Metallic silver footwear"
-        ],
-        "rank": 7,
-        "score": 88,
-        "previousRank": null,
-        "productIds": [
-          "zip-cecilie-asics-silver",
-          "verified-new-balance-mrebx4fh",
-          "verified-new-balance-wrebx38s"
-        ],
-        "sourceNames": [
-          "Harper’s Bazaar",
-          "Byrdie",
-          "Retail rankings"
-        ]
-      },
-      {
-        "id": "shoes-trend-08",
-        "label": "#레드스니커즈",
-        "englishLabel": "Red / crimson statement sneakers",
-        "aliases": [
-          "#레드스니커즈",
-          "red sneaker",
-          "crimson sneaker",
-          "cherry sneaker",
-          "burgundy sneaker",
-          "wine sneaker",
-          "레드 스니커즈",
-          "빨간 스니커즈",
-          "버건디 스니커즈",
-          "Red / crimson statement sneakers"
-        ],
-        "rank": 8,
-        "score": 85,
-        "previousRank": null,
-        "productIds": [
-          "official-nike-ix8478-410",
-          "new-20260923-f28d3395e6c72a4a",
-          "verified-celine-reebok-freestyle-lo-27fr"
-        ],
-        "sourceNames": [
-          "Air Jordan 1 IR0088-001",
-          "Fashion media",
-          "Public social"
-        ]
-      },
-      {
-        "id": "shoes-trend-09",
-        "label": "#고프코어",
-        "englishLabel": "Trail / technical gorpcore",
-        "aliases": [
-          "#고프코어",
-          "gorpcore",
-          "trail sneaker",
-          "trail runner",
-          "approach shoe",
-          "technical sneaker",
-          "고프코어",
-          "트레일 러닝",
-          "트레일러닝",
-          "Trail / technical gorpcore"
-        ],
-        "rank": 9,
-        "score": 82,
-        "previousRank": null,
-        "productIds": [
-          "official-salomon-l49210800",
-          "official-salomon-l49302000",
-          "official-salomon-l49210700",
-          "official-salomon-l49215400",
-          "official-salomon-l49215200",
-          "official-salomon-l49214800",
-          "verified-new-balance-mt24yj",
-          "verified-moncler-citytrek-white-l209a4m00230n0633034",
-          "verified-moncler-citytrek-ivory-l209a4m00230n0633050",
-          "verified-moncler-citytrek-black-l209a4m00230n0633999",
-          "verified-moncler-citytrek-sagegreen-l209a4m00230n0633818"
-        ],
-        "sourceNames": [
-          "Salomon",
-          "Vogue",
-          "Public social"
-        ]
-      },
-      {
-        "id": "shoes-trend-10",
-        "label": "#발레리나스니커즈",
-        "englishLabel": "Sneakerina / ballet hybrids",
-        "aliases": [
-          "#발레리나스니커즈",
-          "sneakerina",
+          "ballet sneakers",
+          "Ballet-Sneaker",
+          "발레코어",
+          "발레리나",
+          "발레 스니커즈",
           "ballet sneaker",
           "ballerina sneaker",
-          "ballet hybrid",
-          "발레코어",
-          "발레 스니커즈",
-          "메리제인 스니커즈",
-          "Sneakerina / ballet hybrids"
+          "sneakerina"
         ],
-        "rank": 10,
-        "score": 79,
-        "previousRank": null,
         "productIds": [],
-        "sourceNames": [
-          "People",
-          "Byrdie",
-          "Public social"
-        ]
+        "matchedProductCount": 0,
+        "sourceRanks": [
+          {
+            "platform": "glamour-style",
+            "term": "ballet sneakers",
+            "rank": null,
+            "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
+            "verified": true,
+            "kind": "editorial-keyword",
+            "capturedAt": "2026-10-04T03:27:50.902Z",
+            "rankingPeriod": null,
+            "snapshotId": "glamour-style:2026-10-04T03:27:50.902Z:cb70e26b963ef5d0",
+            "scope": "footwear",
+            "platformName": "Glamour",
+            "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
+            "contentHash": "9051ccfb26f9902dc3cf02f494cf487be4014bdd2258f56d116f45dddbb3fa50",
+            "publishedAt": "2026-09-23T13:53:42.223Z",
+            "evidenceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
+            "rankBasis": "editorial-paragraph-phrase"
+          },
+          {
+            "platform": "glamour-style",
+            "term": "Ballet-Sneaker",
+            "rank": null,
+            "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
+            "verified": true,
+            "kind": "editorial-keyword",
+            "capturedAt": "2026-10-04T03:27:50.902Z",
+            "rankingPeriod": null,
+            "snapshotId": "glamour-style:2026-10-04T03:27:50.902Z:cb70e26b963ef5d0",
+            "scope": "footwear",
+            "platformName": "Glamour",
+            "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
+            "contentHash": "9051ccfb26f9902dc3cf02f494cf487be4014bdd2258f56d116f45dddbb3fa50",
+            "publishedAt": "2026-09-23T13:53:42.223Z",
+            "evidenceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
+            "rankBasis": "editorial-headline-phrase"
+          }
+        ],
+        "sourceCount": 1,
+        "score": 0,
+        "rank": 1,
+        "rankingStatus": "unranked",
+        "mentionCount": 1
       },
       {
-        "id": "shoes-trend-11",
-        "label": "#애니멀프린트",
-        "englishLabel": "Animal print / cow / leopard",
+        "id": "keyword-1070fb2b450d17ba",
+        "keywordType": "style",
+        "label": "Feminine Touch",
         "aliases": [
-          "#애니멀프린트",
-          "animal print",
-          "cow print",
-          "leopard sneaker",
-          "leopard shoe",
-          "애니멀 프린트",
-          "카우 프린트",
-          "레오파드",
-          "Animal print / cow / leopard"
+          "Feminine Touch",
+          "페미닌 터치"
         ],
-        "rank": 11,
-        "score": 76,
-        "previousRank": null,
-        "productIds": [],
-        "sourceNames": [
-          "Byrdie",
-          "Who What Wear",
-          "29CM"
-        ]
-      },
-      {
-        "id": "shoes-trend-12",
-        "label": "#클로그",
-        "englishLabel": "Clogs / open-back comfort",
-        "aliases": [
-          "#클로그",
-          "clog",
-          "clogs",
-          "클로그",
-          "에코 클로그",
-          "retro clog",
-          "Clogs / open-back comfort"
-        ],
-        "rank": 12,
-        "score": 73,
-        "previousRank": null,
-        "productIds": [],
-        "sourceNames": [
-          "Crocs",
-          "Musinsa",
-          "Recovery retail"
-        ]
-      },
-      {
-        "id": "shoes-trend-13",
-        "label": "#스니커뮬",
-        "englishLabel": "Sneaker mules / smules",
-        "aliases": [
-          "#스니커뮬",
-          "sneaker mule",
-          "sneaker mules",
-          "smule",
-          "smules",
-          "스니커 뮬",
-          "스니커뮬",
-          "Sneaker mules / smules"
-        ],
-        "rank": 13,
-        "score": 70,
-        "previousRank": null,
-        "productIds": [],
-        "sourceNames": [
-          "Byrdie collapsible-back",
-          "Footwear news",
-          "Musinsa"
-        ]
-      },
-      {
-        "id": "shoes-trend-14",
-        "label": "#새틴스니커즈",
-        "englishLabel": "Satin / velvet feminine sneakers",
-        "aliases": [
-          "#새틴스니커즈",
-          "satin sneaker",
-          "velvet sneaker",
-          "새틴 스니커즈",
-          "벨벳 스니커즈",
-          "Satin / velvet feminine sneakers"
-        ],
-        "rank": 14,
-        "score": 67,
-        "previousRank": null,
-        "productIds": [],
-        "sourceNames": [
-          "Byrdie",
-          "Harper’s Bazaar",
-          "Public social"
-        ]
-      },
-      {
-        "id": "shoes-trend-15",
-        "label": "#젤리슈즈",
-        "englishLabel": "Jelly shoes / jelly sandals",
-        "aliases": [
-          "#젤리슈즈",
-          "jelly shoe",
-          "jelly sandal",
-          "젤리 슈즈",
-          "젤리 샌들",
-          "Jelly shoes / jelly sandals"
-        ],
-        "rank": 15,
-        "score": 64,
-        "previousRank": null,
-        "productIds": [],
-        "sourceNames": [
-          "Melissa New Arrivals",
-          "Public social",
-          "29CM"
-        ]
-      },
-      {
-        "id": "shoes-trend-16",
-        "label": "#캔버스스니커즈",
-        "englishLabel": "Plain canvas sneakers",
-        "aliases": [
-          "#캔버스스니커즈",
-          "canvas sneaker",
-          "canvas shoe",
-          "plain sneaker",
-          "캔버스 스니커즈",
-          "캔버스 슈즈",
-          "Plain canvas sneakers"
-        ],
-        "rank": 16,
-        "score": 61,
-        "previousRank": null,
         "productIds": [
-          "verified-gucci-drip-sand-brown-a00a2sfagmq9656"
+          "official-nike-ix8478-410"
         ],
-        "sourceNames": [
-          "Converse",
-          "Musinsa",
-          "29CM"
-        ]
+        "matchedProductCount": 1,
+        "sourceRanks": [
+          {
+            "platform": "whowhatwear-style",
+            "term": "Feminine Touch",
+            "rank": null,
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "verified": true,
+            "kind": "editorial-keyword",
+            "capturedAt": "2026-10-04T03:27:50.902Z",
+            "rankingPeriod": null,
+            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+            "scope": "footwear",
+            "platformName": "Who What Wear",
+            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
+            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "rankBasis": "editorial-heading"
+          }
+        ],
+        "sourceCount": 1,
+        "score": 0,
+        "rank": 2,
+        "rankingStatus": "unranked",
+        "mentionCount": 1
       },
       {
-        "id": "shoes-trend-17",
-        "label": "#플랫폼슈즈",
-        "englishLabel": "Platforms / flatforms",
+        "id": "keyword-f48afd9a805f53c2",
+        "keywordType": "style",
+        "label": "Netting",
         "aliases": [
-          "#플랫폼슈즈",
-          "platform sneaker",
-          "platform sandal",
-          "platform shoes",
-          "flatform",
-          "platform sole",
-          "플랫폼 슈즈",
-          "플랫폼 스니커즈",
-          "플랫폼 샌들",
-          "Platforms / flatforms"
+          "Netting",
+          "fishnet",
+          "피시넷",
+          "그물 소재",
+          "네팅"
         ],
-        "rank": 17,
-        "score": 58,
-        "previousRank": null,
         "productIds": [],
-        "sourceNames": [
-          "Jordan",
-          "Melissa",
-          "29CM"
-        ]
+        "matchedProductCount": 0,
+        "sourceRanks": [
+          {
+            "platform": "whowhatwear-style",
+            "term": "Netting",
+            "rank": null,
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "verified": true,
+            "kind": "editorial-keyword",
+            "capturedAt": "2026-10-04T03:27:50.902Z",
+            "rankingPeriod": null,
+            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+            "scope": "footwear",
+            "platformName": "Who What Wear",
+            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
+            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "rankBasis": "editorial-heading"
+          }
+        ],
+        "sourceCount": 1,
+        "score": 0,
+        "rank": 3,
+        "rankingStatus": "unranked",
+        "mentionCount": 1
       },
       {
-        "id": "shoes-trend-18",
-        "label": "#스케이터스니커즈",
-        "englishLabel": "Skater / Y2K sneakers",
+        "id": "keyword-54915604415c7e38",
+        "keywordType": "style",
+        "label": "Nostalgic Style",
         "aliases": [
-          "#스케이터스니커즈",
-          "skater sneaker",
-          "skate shoe",
-          "Y2K sneaker",
-          "checkerboard sneaker",
-          "스케이터 스니커즈",
-          "스케이트 슈즈",
-          "Skater / Y2K sneakers"
+          "Nostalgic Style",
+          "복고 스타일",
+          "노스탤직 스타일"
         ],
-        "rank": 18,
-        "score": 55,
-        "previousRank": null,
-        "productIds": [],
-        "sourceNames": [
-          "Nike SB",
-          "Musinsa",
-          "Public social"
-        ]
-      },
-      {
-        "id": "shoes-trend-19",
-        "label": "#샌들",
-        "englishLabel": "Minimal / recovery sandals",
-        "aliases": [
-          "#샌들",
-          "minimal sandal",
-          "minimalist sandal",
-          "recovery sandal",
-          "sport sandal",
-          "thong sandal",
-          "flip-flop",
-          "flip flop",
-          "샌들",
-          "리커버리 샌들",
-          "조리",
-          "Minimal / recovery sandals"
-        ],
-        "rank": 19,
-        "score": 52,
-        "previousRank": null,
-        "productIds": [],
-        "sourceNames": [
-          "Melissa",
-          "29CM",
-          "Public social"
-        ]
-      },
-      {
-        "id": "shoes-trend-20",
-        "label": "#메리제인",
-        "englishLabel": "Mary Jane sneakers / flats",
-        "aliases": [
-          "#메리제인",
-          "mary jane sneaker",
-          "mary jane flat",
-          "mary jane",
-          "메리제인",
-          "메리 제인",
-          "Mary Jane sneakers / flats"
-        ],
-        "rank": 20,
-        "score": 49,
-        "previousRank": null,
         "productIds": [
-          "zip-cecilie-asics-black-coffee",
-          "zip-cecilie-asics-silver",
-          "verified-new-balance-mt24yj"
+          "daily-20260915-nike-air-foamposite-pro-im5204-001",
+          "daily-20260915-nike-sb-af1-yuto-io8439-100",
+          "daily-20260916-converse-palmes-green-a24756c",
+          "daily-20260916-converse-palmes-navy-a24786c",
+          "official-82d80c59311fcc15",
+          "official-nike-ir0088-001",
+          "official-nike-iv5678-102",
+          "official-nike-ix8478-410",
+          "official-salomon-l49210700",
+          "verified-celine-reebok-freestyle-lo-01op",
+          "verified-celine-reebok-freestyle-lo-02bg",
+          "verified-celine-reebok-freestyle-lo-03pt",
+          "verified-celine-reebok-freestyle-lo-11bu",
+          "verified-celine-reebok-freestyle-lo-19dk",
+          "verified-celine-reebok-freestyle-lo-27fr",
+          "verified-celine-reebok-freestyle-lo-28ms",
+          "verified-celine-reebok-freestyle-lo-38no",
+          "verified-new-balance-u1300ss",
+          "verified-new-balance-u20001k7",
+          "verified-new-balance-u204v2pt",
+          "verified-new-balance-u204v2w0",
+          "verified-new-balance-u7406ak",
+          "verified-new-balance-u990bg4",
+          "verified-new-balance-u990br4",
+          "verified-new-balance-u990lv4",
+          "verified-new-balance-u993mo",
+          "verified-new-balance-ugtr4dy",
+          "verified-new-balance-w327apc"
         ],
-        "sourceNames": [
-          "Fashion media",
-          "Public social",
-          "29CM"
-        ]
+        "matchedProductCount": 28,
+        "sourceRanks": [
+          {
+            "platform": "whowhatwear-style",
+            "term": "Nostalgic Style",
+            "rank": null,
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "verified": true,
+            "kind": "editorial-keyword",
+            "capturedAt": "2026-10-04T03:27:50.902Z",
+            "rankingPeriod": null,
+            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+            "scope": "footwear",
+            "platformName": "Who What Wear",
+            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
+            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "rankBasis": "editorial-heading"
+          }
+        ],
+        "sourceCount": 1,
+        "score": 0,
+        "rank": 4,
+        "rankingStatus": "unranked",
+        "mentionCount": 1
+      },
+      {
+        "id": "keyword-53e008de050fa9c6",
+        "keywordType": "style",
+        "label": "Retro Low Tops",
+        "aliases": [
+          "Retro Low Tops",
+          "레트로 로우톱",
+          "빈티지 로우톱"
+        ],
+        "productIds": [
+          "official-nike-ir0088-001",
+          "verified-celine-reebok-freestyle-lo-01op",
+          "verified-celine-reebok-freestyle-lo-02bg",
+          "verified-celine-reebok-freestyle-lo-03pt",
+          "verified-celine-reebok-freestyle-lo-11bu",
+          "verified-celine-reebok-freestyle-lo-19dk",
+          "verified-celine-reebok-freestyle-lo-27fr",
+          "verified-celine-reebok-freestyle-lo-28ms",
+          "verified-celine-reebok-freestyle-lo-38no"
+        ],
+        "matchedProductCount": 9,
+        "sourceRanks": [
+          {
+            "platform": "whowhatwear-style",
+            "term": "Retro Low Tops",
+            "rank": null,
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "verified": true,
+            "kind": "editorial-keyword",
+            "capturedAt": "2026-10-04T03:27:50.902Z",
+            "rankingPeriod": null,
+            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+            "scope": "footwear",
+            "platformName": "Who What Wear",
+            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
+            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "rankBasis": "editorial-heading"
+          }
+        ],
+        "sourceCount": 1,
+        "score": 0,
+        "rank": 5,
+        "rankingStatus": "unranked",
+        "mentionCount": 1
+      },
+      {
+        "id": "keyword-5943f15f7cc4c274",
+        "keywordType": "style",
+        "label": "ultraslim retro sneakers",
+        "aliases": [
+          "ultraslim retro sneakers",
+          "울트라슬림 레트로 스니커즈",
+          "슬림 레트로 스니커즈"
+        ],
+        "productIds": [
+          "daily-20260915-nike-air-foamposite-pro-im5204-001",
+          "verified-new-balance-u204v2pt",
+          "verified-new-balance-u204v2w0"
+        ],
+        "matchedProductCount": 3,
+        "sourceRanks": [
+          {
+            "platform": "glamour-style",
+            "term": "ultraslim retro sneakers",
+            "rank": null,
+            "sourceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
+            "verified": true,
+            "kind": "editorial-keyword",
+            "capturedAt": "2026-10-04T03:27:50.902Z",
+            "rankingPeriod": null,
+            "snapshotId": "glamour-style:2026-10-04T03:27:50.902Z:cb70e26b963ef5d0",
+            "scope": "footwear",
+            "platformName": "Glamour",
+            "sourceOriginalContext": "Bella Hadid Just Found a New Way to Style the Ballet-Sneaker Trend for Fall",
+            "contentHash": "9051ccfb26f9902dc3cf02f494cf487be4014bdd2258f56d116f45dddbb3fa50",
+            "publishedAt": "2026-09-23T13:53:42.223Z",
+            "evidenceUrl": "https://www.glamour.com/story/bella-hadid-ballet-sneakers-fall-2026",
+            "rankBasis": "editorial-paragraph-phrase"
+          }
+        ],
+        "sourceCount": 1,
+        "score": 0,
+        "rank": 6,
+        "rankingStatus": "unranked",
+        "mentionCount": 1
+      },
+      {
+        "id": "keyword-c107143ae68bbb3a",
+        "keywordType": "style",
+        "label": "Unexpected Color Combination",
+        "aliases": [
+          "Unexpected Color Combination",
+          "대비색 조합"
+        ],
+        "productIds": [
+          "daily-20260915-nike-air-foamposite-pro-im5204-001"
+        ],
+        "matchedProductCount": 1,
+        "sourceRanks": [
+          {
+            "platform": "whowhatwear-style",
+            "term": "Unexpected Color Combination",
+            "rank": null,
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "verified": true,
+            "kind": "editorial-keyword",
+            "capturedAt": "2026-10-04T03:27:50.902Z",
+            "rankingPeriod": null,
+            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+            "scope": "footwear",
+            "platformName": "Who What Wear",
+            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
+            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "rankBasis": "editorial-heading"
+          }
+        ],
+        "sourceCount": 1,
+        "score": 0,
+        "rank": 7,
+        "rankingStatus": "unranked",
+        "mentionCount": 1
+      },
+      {
+        "id": "keyword-ce0c27ddafd988c9",
+        "keywordType": "style",
+        "label": "Worn In",
+        "aliases": [
+          "Worn In",
+          "distressed sneakers",
+          "디스트레스드 스니커즈",
+          "빈티지 가공"
+        ],
+        "productIds": [],
+        "matchedProductCount": 0,
+        "sourceRanks": [
+          {
+            "platform": "whowhatwear-style",
+            "term": "Worn In",
+            "rank": null,
+            "sourceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "verified": true,
+            "kind": "editorial-keyword",
+            "capturedAt": "2026-10-04T03:27:50.902Z",
+            "rankingPeriod": null,
+            "snapshotId": "whowhatwear-style:2026-10-04T03:27:50.902Z:8b02ca5329bbfcdb",
+            "scope": "footwear",
+            "platformName": "Who What Wear",
+            "sourceOriginalContext": "Hold the White Sneakers—These Styles Will Dominate Fall Instead",
+            "contentHash": "695c053f3a904ab6e2382e3f6955f00a4616a653f4f8212990811f32ae020b2e",
+            "publishedAt": "2026-09-08T07:00:00.000Z",
+            "evidenceUrl": "https://www.whowhatwear.com/fashion/shoes/fall-sneaker-trends-2026",
+            "rankBasis": "editorial-heading"
+          }
+        ],
+        "sourceCount": 1,
+        "score": 0,
+        "rank": 8,
+        "rankingStatus": "unranked",
+        "mentionCount": 1
       }
     ]
   }

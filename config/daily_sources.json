@@ -67,6 +67,10 @@
     {
       "name": "ASICS Official daily source",
       "url": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/"
+    },
+    {
+      "name": "ASICS Official public source",
+      "url": "https://www.asics.com/dk/en-dk/gel-kinetic-fr/p/1203B051-001.html"
     }
   ],
   "Avavav": [
@@ -771,8 +775,8 @@
   ],
   "Saint Laurent": [
     {
-      "name": "Saint Laurent Official daily source",
-      "url": "https://www.ysl.com/en-us/ca/women/shoes"
+      "name": "Saint Laurent Official shoes",
+      "url": "https://www.ysl.com/en-us/ca/shop-women/shoes"
     }
   ],
   "Salomon": [
@@ -977,6 +981,130 @@
     {
       "name": "adidas Official daily source",
       "url": "https://www.adidas.com/us/shoes-new_arrivals"
+    }
+  ],
+  "SATISFY": [
+    {
+      "name": "SATISFY Official public source",
+      "url": "https://satisfyrunning.com/collections/shop-all"
+    }
+  ],
+  "KOLON SPORT": [
+    {
+      "name": "KOLON SPORT Official public source",
+      "url": "https://www.kolonsport.com/"
+    },
+    {
+      "name": "KOLON SPORT Official public source",
+      "url": "https://www.kolonsport.com/KolonTrailRun"
+    }
+  ],
+  "Eider": [
+    {
+      "name": "Eider Official public source",
+      "url": "https://www.eider.co.kr/"
+    },
+    {
+      "name": "Eider Official public source",
+      "url": "https://www.k-village.co.kr/eider"
+    }
+  ],
+  "National Geographic": [
+    {
+      "name": "National Geographic Official public source",
+      "url": "https://natgeostore.ph/collections/footwear"
+    }
+  ],
+  "Havaianas": [
+    {
+      "name": "Havaianas Official public source",
+      "url": "https://www.havaianas.com/"
+    },
+    {
+      "name": "Havaianas Official Europe",
+      "url": "https://www.havaianas-store.com/gb/en/home"
+    }
+  ],
+  "Merrell": [
+    {
+      "name": "Merrell Official public source",
+      "url": "https://www.merrell.com/US/en/mens-shoes/"
+    }
+  ],
+  "Le Coq Sportif": [
+    {
+      "name": "Le Coq Sportif Official public source",
+      "url": "https://www.lecoqsportif.com/en-us/collections/chaussures-homme-femme"
+    }
+  ],
+  "Jordan": [
+    {
+      "name": "Jordan Official public source",
+      "url": "https://www.nike.com/launch"
+    }
+  ],
+  "Brooks": [
+    {
+      "name": "Brooks Official public source",
+      "url": "https://www.brooksrunning.com/en_us/shoes/"
+    }
+  ],
+  "Under Armour": [
+    {
+      "name": "Under Armour Official public source",
+      "url": "https://www.underarmour.com/en-us/"
+    }
+  ],
+  "Arc'teryx": [
+    {
+      "name": "Arc'teryx Official public source",
+      "url": "https://arcteryx.com/us/en/c/mens/footwear/shoes"
+    }
+  ],
+  "The North Face": [
+    {
+      "name": "The North Face Official public source",
+      "url": "https://www.thenorthface.com/en-us/c/shop-all/footwear-747784"
+    }
+  ],
+  "Skechers": [
+    {
+      "name": "Skechers Official public source",
+      "url": "https://www.skechers.com/women/shoes/"
+    }
+  ],
+  "Rockfish Weatherwear": [
+    {
+      "name": "Rockfish Weatherwear Official public source",
+      "url": "https://en.rockfish-weatherwear.co.kr/"
+    }
+  ],
+  "23.65": [
+    {
+      "name": "23.65 Official public source",
+      "url": "https://m.23-65.com/"
+    }
+  ],
+  "KEEN": [
+    {
+      "name": "KEEN Official public source",
+      "url": "https://www.keenfootwear.com/collections/shoes"
+    }
+  ],
+  "OOFOS": [
+    {
+      "name": "OOFOS Official public source",
+      "url": "https://www.oofos.com/"
+    }
+  ],
+  "Crocs": [
+    {
+      "name": "Crocs Official public source",
+      "url": "https://www.crocs.com/c/men/footwear/sneakers"
+    },
+    {
+      "name": "Crocs Official public source",
+      "url": "https://www.crocs.co.jp/c/footwear/sneakers"
     }
   ]
 }

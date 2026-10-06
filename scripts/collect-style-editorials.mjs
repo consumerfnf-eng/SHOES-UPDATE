@@ -73,11 +73,12 @@ export async function collectStyleEditorials({now=new Date(),config,dictionary,r
   dictionary??=JSON.parse(await readFile(new URL('../config/search-term-dictionary.json',import.meta.url),'utf8'));
   const checkedAt=new Date(now).toISOString(),limit=Math.min(8,Math.max(1,config.maxArticlesPerSource||4));
   const results=await Promise.all((config.sources||[]).map(async source=>{
-    const status={platform:source.id,name:source.name,url:source.url,kind:'editorial-keyword',checkedAt},diagnostics=[],candidates=[...(source.seeds||[]).map(url=>sourceUrl(url,source)).filter(Boolean)];
+    const status={platform:source.id,name:source.name,url:source.url,kind:'editorial-keyword',checkedAt},diagnostics=[],candidates=[];
     for(const discovery of [source.feedUrl,source.discoveryUrl].filter(Boolean)){
       try{const url=new URL(discovery);if(url.hostname!==source.domain||url.protocol!=='https:')throw Error('STYLE_DISCOVERY_ORIGIN_INVALID');const body=await readPublic(discovery,{maxBytes:4_000_000});candidates.push(...discoverStyleArticles(body,source,{now}));diagnostics.push({stage:'discovery',url:discovery,status:'fetched'});}
       catch(error){diagnostics.push({stage:'discovery',url:discovery,status:'unavailable',reason:error.message});}
     }
+    candidates.push(...(source.seeds||[]).map(url=>sourceUrl(url,source)).filter(Boolean));
     const articles=await Promise.all([...new Set(candidates)].slice(0,limit).map(async url=>{
       try{const body=await readPublic(url,{maxBytes:4_000_000}),parsed=parseStyleEditorial(body,{url,source,config,dictionary,now});
         if(auditDir){await mkdir(auditDir,{recursive:true});const file=`${source.id.replace(/[^a-z0-9.-]/gi,'_')}-${checkedAt.replace(/[:.]/g,'-')}-${parsed.contentHash.slice(0,16)}.json`;await writeFile(resolve(auditDir,file),JSON.stringify({checkedAt,url,contentHash:parsed.contentHash,publishedAt:parsed.publishedAt,modifiedAt:parsed.modifiedAt,terms:parsed.terms,body:{format:'html',text:body}},null,2)+'\n');}

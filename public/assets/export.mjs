@@ -25,7 +25,7 @@ export function productRecord(product) {
     product_name: p.product_name ?? product.name ?? '', colorway_count: p.colorway_count ?? 1,
     variant_names: p.variant_names ?? '', colors: p.colors ?? colors.join(' | '),
     hex_colors: p.hex_colors ?? hexes.join(' | '), top_hex: p.top_hex ?? hexes[0] ?? '',
-    image_url: p.image_url ?? product.image ?? '',
+    image_url: product.presentation?.image ?? p.image_url ?? product.image ?? '',
   };
 }
 

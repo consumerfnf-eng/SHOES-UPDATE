@@ -1,0 +1,478 @@
+{
+  "checkedAt": "2026-10-06T05:49:06.710Z",
+  "scope": "targeted-discovery-recheck",
+  "previousCollection": "2026-10-04",
+  "brands": [
+    {
+      "brand": "Oakley Factory Team",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.oakley.com/en-us/search?text=Factory%20Team",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "OFFICIAL_ACCESS_CHALLENGE"
+        },
+        {
+          "url": "https://wearebraindead.com/pages/oakley-factory-team",
+          "mode": "direct-official-partner",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Gucci",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.gucci.com/us/en/ca/women/shoes-for-women-c-women-shoes?sort=newest",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Louis Vuitton",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://us.louisvuitton.com/eng-us/women/shoes/all-shoes/_/N-t1mcbujj",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_403"
+        },
+        {
+          "url": "https://us.louisvuitton.com/eng-us/women/shoes/all-shoes/_/N-t1mcbujj",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source returned no usable page"
+        }
+      ]
+    },
+    {
+      "brand": "Celine",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://www.celine.com/en-us/men/shoes/sneakers/",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "OFFICIAL_ACCESS_CHALLENGE"
+        }
+      ]
+    },
+    {
+      "brand": "Lululemon",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://shop.lululemon.com/c/shoes/n1n4fc",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Saint Laurent",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://www.ysl.com/en-us/ca/women/shoes",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_403"
+        },
+        {
+          "url": "https://www.ysl.com/en-us/ca/women/shoes",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source returned no usable page"
+        },
+        {
+          "url": "https://www.ysl.com/en-us/ca/shop-women/shoes",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "OFFICIAL_ACCESS_CHALLENGE"
+        }
+      ]
+    },
+    {
+      "brand": "ASICS",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.asics.com/us/en-us/releases/",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_TOO_LARGE"
+        },
+        {
+          "url": "https://www.asics.com/us/en-us/releases/",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source HTTP 403"
+        },
+        {
+          "url": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_403"
+        },
+        {
+          "url": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source HTTP 403"
+        },
+        {
+          "url": "https://www.asics.com/dk/en-dk/gel-kinetic-fr/p/1203B051-001.html",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_403"
+        },
+        {
+          "url": "https://www.asics.com/dk/en-dk/gel-kinetic-fr/p/1203B051-001.html",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source HTTP 403"
+        },
+        {
+          "url": "https://www.asics.com/us/en-us/releases/",
+          "mode": "direct-html-structured-calendar",
+          "status": "readable",
+          "reason": "2 future launch cards verified; 6MB limit supports full calendar"
+        }
+      ]
+    },
+    {
+      "brand": "KOLON SPORT",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.kolonsport.com/",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Eider",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.eider.co.kr/",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "National Geographic",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://natgeostore.ph/collections/footwear",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_404"
+        },
+        {
+          "url": "https://natgeostore.ph/collections/footwear",
+          "mode": "reader",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Dior",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_403"
+        },
+        {
+          "url": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source request timed out"
+        }
+      ]
+    },
+    {
+      "brand": "SATISFY",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://satisfyrunning.com/collections/shop-all",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_404"
+        },
+        {
+          "url": "https://satisfyrunning.com/collections/shop-all",
+          "mode": "reader",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Merrell",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.merrell.com/US/en/mens-shoes/",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "New Balance",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.newbalance.com/nb-launches/",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_403"
+        },
+        {
+          "url": "https://www.newbalance.com/nb-launches/",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source returned no usable page"
+        },
+        {
+          "url": "https://www.newbalance.com/women/featured/new-arrivals/",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Jordan",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.nike.com/launch",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Common Projects",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://www.commonprojects.com/",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "fetch failed"
+        },
+        {
+          "url": "https://www.commonprojects.com/",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source request timed out"
+        },
+        {
+          "url": "https://commonprojects.com/",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "fetch failed"
+        },
+        {
+          "url": "https://commonprojects.com/",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source request timed out"
+        }
+      ]
+    },
+    {
+      "brand": "Under Armour",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.underarmour.com/en-us/",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Arc'teryx",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://arcteryx.com/us/en/c/mens/footwear/shoes",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "The North Face",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.thenorthface.com/en-us/c/shop-all/footwear-747784",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Skechers",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.skechers.com/women/shoes/",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Rockfish Weatherwear",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://en.rockfish-weatherwear.co.kr/",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "23.65",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://m.23-65.com/",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Havaianas",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.havaianas.com/",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_403"
+        },
+        {
+          "url": "https://www.havaianas.com/",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source request timed out"
+        },
+        {
+          "url": "https://www.havaianas-store.com/gb/en/home",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Le Coq Sportif",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.lecoqsportif.com/en-us/collections/chaussures-homme-femme",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_404"
+        },
+        {
+          "url": "https://www.lecoqsportif.com/en-us/collections/chaussures-homme-femme",
+          "mode": "reader",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "OOFOS",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.oofos.com/",
+          "mode": "html",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Brooks",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.brooksrunning.com/en_us/shoes/",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_TOO_LARGE"
+        },
+        {
+          "url": "https://www.brooksrunning.com/en_us/shoes/",
+          "mode": "reader",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "KEEN",
+      "status": "readable",
+      "attempts": [
+        {
+          "url": "https://www.keenfootwear.com/collections/shoes",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_404"
+        },
+        {
+          "url": "https://www.keenfootwear.com/collections/shoes",
+          "mode": "reader",
+          "status": "readable"
+        }
+      ]
+    },
+    {
+      "brand": "Crocs",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "url": "https://www.crocs.com/c/men/footwear/sneakers",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_403"
+        },
+        {
+          "url": "https://www.crocs.com/c/men/footwear/sneakers",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "Source request timed out"
+        },
+        {
+          "url": "https://www.crocs.co.jp/c/footwear/sneakers",
+          "mode": "html",
+          "status": "unavailable",
+          "reason": "PUBLIC_SOURCE_HTTP_403"
+        },
+        {
+          "url": "https://www.crocs.co.jp/c/footwear/sneakers",
+          "mode": "reader",
+          "status": "unavailable",
+          "reason": "OFFICIAL_ACCESS_CHALLENGE"
+        }
+      ]
+    }
+  ]
+}
