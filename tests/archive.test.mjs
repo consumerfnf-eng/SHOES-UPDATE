@@ -87,6 +87,18 @@ test('invalid/date unknown/young products never enter archive; KST calendar-mont
   assert.equal(eligibilityReason(product({eligibility:{passed:false}}),now),'eligibility-not-verified');
   assert.equal(eligibilityReason(product({dateEvidence:{url:'https://example.com'}}),now),'missing-release-evidence');
 });
+test('verified expired jelly and platform shoes archive with unchanged fit and date gates, while heels and loafers remain excluded',()=>{
+  for(const category of ['jelly','platform-shoe']) {
+    assert.equal(eligibilityReason(product({category}),now),null);
+    assert.equal(planArchive([product({category})],{domestic:snapshot()},config,now).ready.length,1);
+    assert.equal(eligibilityReason(product({category,eligibility:{passed:false}}),now),'eligibility-not-verified');
+    assert.equal(eligibilityReason(product({category,fit:[]}),now),'missing-brand-fit');
+    assert.equal(eligibilityReason(product({category,releaseDate:'2026-06-28'}),now),'not-expired');
+    assert.equal(eligibilityReason(product({category,releaseDate:null}),now),'unknown-release-date');
+    assert.equal(eligibilityReason(product({category,dateEvidence:{...product().dateEvidence,verified:false}}),now),'missing-release-evidence');
+  }
+  for(const category of ['heel','high-heel','loafer','dress-shoe'])assert.equal(eligibilityReason(product({category}),now),'excluded-category');
+});
 test('verified release months archive only after the entire month expires, without fabricating a day',()=>{
   const monthly=product({releaseDate:'2026-06',dateEvidence:{...product().dateEvidence,precision:'month',excerpt:'First released in June 2026'}});
   assert.equal(eligibilityReason(monthly,now),'not-expired');
@@ -130,6 +142,51 @@ test('CSV handles commas, quoted newlines and quotes without changing strings',(
 });
 test('read-only China file cannot be written even if adapter is called directly',async()=>{
   const china=productionConfig.sheets.find(s=>s.key==='outdoor_china');await assert.rejects(createGoogleAdapter('test').append(china,[]),/read-only/);
+});
+
+test('native GET recovers transient responses and network errors with bounded backoff and read pacing',async()=>{
+  let time=10000;const calls=[],waits=[];
+  const adapter=createGoogleAdapter('dummy',{now:()=>time,sleep:async ms=>{waits.push(ms);time+=ms;},fetchImpl:async(url,{method})=>{
+    calls.push({time,method});
+    if(calls.length===1)return new Response('PRIVATE_RESPONSE',{status:503});
+    if(calls.length===2)throw new TypeError('fetch failed',{cause:{code:'ECONNRESET'}});
+    if(calls.length===3)return new Response('PRIVATE_RESPONSE',{status:429});
+    if(!url.includes('ranges='))return Response.json({sheets:[snapshot().metadata]});
+    return Response.json({sheets:[{data:[{rowData:snapshot().rows.map(values=>({values}))}]}]});
+  }});
+  const actual=await adapter.read(cfg,true);
+  assert.deepEqual(actual.rows,snapshot().rows);assert.equal(calls.length,5);
+  assert.ok(calls.every(c=>c.method==='GET'));assert.ok(calls.slice(1).every((c,i)=>c.time-calls[i].time>=1100));
+  assert.ok(waits.includes(1000)&&waits.includes(2000)&&waits.includes(4000));
+});
+
+test('native GET stops after four transient attempts, while auth and malformed responses fail immediately without private contents',async()=>{
+  for(const failure of [429,500,502,503,504,'network',401,403,400,'malformed','permanent-network','certificate']) {
+    let calls=0,time=10000;const transient=typeof failure==='number'&&[429,500,502,503,504].includes(failure)||failure==='network';
+    const adapter=createGoogleAdapter('PRIVATE_TOKEN',{now:()=>time,sleep:async ms=>{time+=ms;},fetchImpl:async()=>{
+      calls++;
+      if(failure==='network')throw Object.assign(new Error('PRIVATE_RESPONSE'),{code:'ETIMEDOUT'});
+      if(failure==='permanent-network')throw new TypeError('PRIVATE_RESPONSE invalid URL');
+      if(failure==='certificate')throw new TypeError('fetch failed',{cause:{code:'CERT_HAS_EXPIRED'}});
+      if(failure==='malformed')return new Response('PRIVATE_RESPONSE');
+      return new Response('PRIVATE_RESPONSE',{status:failure});
+    }});
+    await assert.rejects(adapter.read(cfg,true),error=>{assert.ok(!/PRIVATE_/.test(error.message));return /Sheets GET/.test(error.message);});
+    assert.equal(calls,transient?4:1,String(failure));
+  }
+});
+
+test('native POST is never retried after transient HTTP or network errors',async()=>{
+  for(const failure of [429,500,502,503,504,'network']) {
+    let calls=0,waits=0;
+    const adapter=createGoogleAdapter('dummy',{sleep:async()=>{waits++;},fetchImpl:async(_url,{method})=>{
+      calls++;assert.equal(method,'POST');
+      if(failure==='network')throw new TypeError('fetch failed',{cause:{code:'ECONNRESET'}});
+      return new Response('PRIVATE_RESPONSE',{status:failure});
+    }});
+    await assert.rejects(adapter.append(cfg,[]),error=>{assert.ok(!error.message.includes('PRIVATE_RESPONSE'));return /Sheets POST/.test(error.message);});
+    assert.equal(calls,1);assert.equal(waits,0);
+  }
 });
 test('actual US/CA/TW market is preserved, unknown gender is left blank',()=>{
   for(const country of ['US','CA','TW']) {

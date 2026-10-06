@@ -73,6 +73,7 @@ jobs:
           path: |
             logs/weekly-diagnostics.json
             logs/weekly-error.json
+            data/archive-report.json
           if-no-files-found: ignore
           retention-days: 14
       - name: Report archive connection or verification failure

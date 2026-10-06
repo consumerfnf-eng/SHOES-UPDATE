@@ -24,7 +24,7 @@ export function cutoffDate(now = new Date()) {
 }
 export function eligibilityReason(product, now = new Date()) {
   if (product.eligibility?.passed !== true) return 'eligibility-not-verified';
-  if (!['sneaker','clog','sandal','platform-sandal','hybrid'].includes(product.category)) return 'excluded-category';
+  if (!['sneaker','clog','sandal','platform-sandal','hybrid','jelly','platform-shoe'].includes(product.category)) return 'excluded-category';
   if (!Array.isArray(product.fit) || !product.fit.some(x=>['MLB','DISCOVERY'].includes(x))) return 'missing-brand-fit';
   if (!releaseWindow(product) || product.releaseStatus !== 'released') return 'unknown-release-date';
   const asOf = new Date(now.getTime()+9*3600_000).toISOString().slice(0,10);
@@ -306,19 +306,41 @@ export async function writeRunSummary(report,env=process.env) {
     await fs.appendFile(env.GITHUB_STEP_SUMMARY,summary);
   }
 }
-export function createGoogleAdapter(token) {
+export function createGoogleAdapter(token,{fetchImpl=fetch,sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms)),now=Date.now}={}) {
   let lastRead=0;
+  const retryStatuses=new Set([429,500,502,503,504]);
+  const transientNetwork=error=>{
+    const code=error?.code||error?.cause?.code;
+    return ['AbortError','TimeoutError'].includes(error?.name)||['ECONNRESET','ECONNREFUSED','ETIMEDOUT','EAI_AGAIN','ENETUNREACH','EHOSTUNREACH','UND_ERR_CONNECT_TIMEOUT','UND_ERR_HEADERS_TIMEOUT','UND_ERR_BODY_TIMEOUT','UND_ERR_SOCKET'].includes(code)||(!code&&error?.name==='TypeError'&&error.message==='fetch failed');
+  };
   async function request(url,method='GET',body) {
-    // Serialize and pace reads below the per-user quota. Never retry a write.
-    if(method==='GET'){const wait=1100-(Date.now()-lastRead);if(wait>0)await new Promise(r=>setTimeout(r,wait));lastRead=Date.now();}
-    const response=await fetch(url,{method,headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},...(body?{body:JSON.stringify(body)}:{}),signal:AbortSignal.timeout(60000)});
-    if(!response.ok) throw new Error(`Sheets ${method} failed (HTTP ${response.status}); response omitted`);
-    return response.json();
+    // Only reads are retryable. A POST can have committed even when its response fails.
+    const attempts=method==='GET'?4:1;
+    for(let attempt=0;attempt<attempts;attempt++) {
+      if(method==='GET'){const wait=1100-(now()-lastRead);if(wait>0)await sleep(wait);lastRead=now();}
+      let response;
+      try {
+        response=await fetchImpl(url,{method,headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},...(body?{body:JSON.stringify(body)}:{}),signal:AbortSignal.timeout(60000)});
+      } catch(error) {
+        if(attempt+1<attempts&&transientNetwork(error)){await sleep(1000*2**attempt);continue;}
+        throw new Error(`Sheets ${method} failed (network error); response omitted`);
+      }
+      if(!response.ok) {
+        await response.body?.cancel().catch(()=>{});
+        if(attempt+1<attempts&&retryStatuses.has(response.status)){await sleep(1000*2**attempt);continue;}
+        throw new Error(`Sheets ${method} failed (HTTP ${response.status}); response omitted`);
+      }
+      try {return await response.json();}
+      catch(error) {
+        if(attempt+1<attempts&&transientNetwork(error)){await sleep(1000*2**attempt);continue;}
+        throw new Error(`Sheets ${method} response could not be read; response omitted`);
+      }
+    }
   }
   return {
     async read(cfg,native) {
       if(!native || cfg.readOnly) {
-        const response=await fetch(`https://docs.google.com/spreadsheets/d/${cfg.id}/export?format=csv&gid=${cfg.sheetId}`,{signal:AbortSignal.timeout(60000)});
+        const response=await fetchImpl(`https://docs.google.com/spreadsheets/d/${cfg.id}/export?format=csv&gid=${cfg.sheetId}`,{signal:AbortSignal.timeout(60000)});
         if(!response.ok) throw new Error(`Archive CSV read failed: ${cfg.key} HTTP ${response.status}`);
         return {rows:parseCsv(await response.text()).map(row=>row.map(v=>v?{userEnteredValue:{stringValue:v}}:{})),native:false};
       }

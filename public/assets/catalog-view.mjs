@@ -26,6 +26,13 @@ export function officialImageUrl(product, today = kstToday()) {
   const evidence=product.officialImageEvidence,url=safeUrl(product.image),sourceUrl=officialProductUrl(product,today);
   return url && sourceUrl && evidence?.verified===true && sameIdentity(evidence,product) && safeUrl(evidence.url)===url && safeUrl(evidence.sourceUrl)===sourceUrl && verifiedDate(evidence.verifiedAt,today) ? url : '';
 }
+// A reviewed navigation link does not grant official-proof or popularity eligibility.
+export function reviewedProductPageUrl(product, today = kstToday()) {
+  const strict=officialProductUrl(product,today);if(strict)return strict;
+  const p=product.presentation,url=safeUrl(p?.officialProductUrl);
+  const image=safeUrl(p?.image).startsWith('https:')||/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/.test(p?.cachedPath||'');
+  return url.startsWith('https:')&&p.officialProductUrl===p.sourceUrl&&url===safeUrl(p.sourceUrl)&&verifiedDate(p.checkedAt,today)&&['side','three-quarter'].includes(p.view)&&image?url:'';
+}
 export function productBrandNames(product, today = kstToday()) {
   const collaborators=officialImageUrl(product,today)?(product.collaborationBrands||[]).filter(name=>typeof name==='string'&&name.trim()):[];
   return [...new Set([product.brand,...collaborators].filter(Boolean))];

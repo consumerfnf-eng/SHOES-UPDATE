@@ -9,6 +9,12 @@ import {buildStyleTrendBoard} from './style-trend-board.mjs';
 export function validateSnapshot(catalog) {
   assert.equal(catalog.schemaVersion,1);assert(Array.isArray(catalog.products));assert(Array.isArray(catalog.brands));assert(Array.isArray(catalog.keywords));
   assert(Number.isFinite(Date.parse(catalog.publishedAt)),'Invalid publication timestamp');assert(validDay(catalog.asOf),'Invalid catalog date');
+  // Older snapshots used keywordCheckedAt for both collection and evaluation.
+  // Maintenance preserves collection time while recomputing expiry at this time.
+  const keywordEvaluatedAt=catalog.keywordEvaluatedAt??catalog.keywordCheckedAt;
+  assert(Number.isFinite(Date.parse(catalog.keywordCheckedAt)),'Invalid keyword verification time');
+  assert(Number.isFinite(Date.parse(keywordEvaluatedAt))&&kstDay(keywordEvaluatedAt)===catalog.asOf,'Invalid keyword evaluation time');
+  assert(Date.parse(catalog.keywordCheckedAt)<=Date.parse(keywordEvaluatedAt),'Keyword verification cannot be after evaluation');
   assert.equal(catalog.periodStart,shiftMonth(catalog.asOf,-3),'Wrong calendar cutoff');
   assert.equal(new Set(catalog.products.map(p=>p.id)).size,catalog.products.length,'Duplicate public IDs');
   assert.equal(POLICY.brands.filter(b=>b.mandatory).length,25,'Mandatory policy changed');
@@ -37,15 +43,14 @@ export function validateSnapshot(catalog) {
     if(p.officialProductEvidence||p.officialImageEvidence){assert(official,'Invalid official product/image proof');assert.deepEqual(p.officialProductEvidence,official.officialProductEvidence,'Invalid official model identity');assert.deepEqual(p.officialImageEvidence,official.officialImageEvidence,'Invalid official image fields');}
     assert.deepEqual(p.collaborationBrands,official?productCollaborationBrands(p):[],'Unverified collaborator brand');
     assert(Array.isArray(p.socialMetrics),'Missing social metric list');
-    assert.deepEqual(p.popularity,popularity(p.sourceSignals,catalog.asOf,{product:p,socialMetrics:validateSocialMetrics(p,catalog.asOf,{officialEligible:!!official,now:catalog.keywordCheckedAt}),officialEligible:!!official,now:catalog.keywordCheckedAt}),'Unsubstantiated popularity flag');
+    assert.deepEqual(p.popularity,popularity(p.sourceSignals,catalog.asOf,{product:p,socialMetrics:validateSocialMetrics(p,catalog.asOf,{officialEligible:!!official,now:keywordEvaluatedAt}),officialEligible:!!official,now:keywordEvaluatedAt}),'Unsubstantiated popularity flag');
     const r=curateProduct({...p,productVerifiedAt:p.lastVerifiedAt,productEvidenceUrl:p.productEvidenceUrl,hybridReview:p.hybridReview,modelReview:p.modelReview},catalog.asOf);
     assert(r.product&&!r.expired,`Ineligible published product ${p.id}: ${r.reason||'expired'}`);
   }
-  const socialExpected=withSocialComparisons(catalog.products.map(p=>({...p,socialMetrics:validateSocialMetrics(p,catalog.asOf,{officialEligible:!!officialEvidenceFor(p,catalog.asOf),now:catalog.keywordCheckedAt})})));
+  const socialExpected=withSocialComparisons(catalog.products.map(p=>({...p,socialMetrics:validateSocialMetrics(p,catalog.asOf,{officialEligible:!!officialEvidenceFor(p,catalog.asOf),now:keywordEvaluatedAt})})));
   assert.deepEqual(catalog.products.map(p=>p.socialMetrics),socialExpected.map(p=>p.socialMetrics),'Unverified social metrics or invalid comparison ranks');
   const ids=new Set(catalog.products.map(p=>p.id));
   assert.equal(catalog.keywordMethod,KEYWORD_METHOD,'Unverified keyword ranking method');
-  assert(Number.isFinite(Date.parse(catalog.keywordCheckedAt))&&kstDay(catalog.keywordCheckedAt)===catalog.asOf,'Invalid keyword verification time');
   assert(Array.isArray(catalog.sourceRanks)&&Array.isArray(catalog.forecastKeywords)&&Array.isArray(catalog.searchRankStatus),'Missing source rankings or forecast list');
   const keywords=[...catalog.keywords,...catalog.forecastKeywords];
   assert.equal(new Set(keywords.map(k=>k.id)).size,keywords.length,'Duplicate keyword IDs');
@@ -58,11 +63,11 @@ export function validateSnapshot(catalog) {
     assert(keyword.sourceRanks.some(s=>s.term===keyword.label),'Keyword label is not an original source term');
     assert.equal(keyword.sourceCount,new Set(keyword.sourceRanks.map(s=>s.platform)).size,'Keyword source count mismatch');
   }
-  const expected=buildKeywordCatalog(catalog.products,catalog.sourceRanks,{now:catalog.keywordCheckedAt});
+  const expected=buildKeywordCatalog(catalog.products,catalog.sourceRanks,{now:keywordEvaluatedAt});
   assert.deepEqual(catalog.sourceRanks,expected.sourceRanks,'Invalid, expired or superseded original keyword source');
   assert.deepEqual(catalog.keywords,expected.keywords,'Current keyword score, original label or complete product matches differ from verified sources');
   assert.deepEqual(catalog.forecastKeywords,expected.forecastKeywords,'Forecast cannot affect the current popularity rank or broaden source terms');
-  if(catalog.styleTrendKeywords?.method==='verified-style-board-v1')assert.deepEqual(catalog.styleTrendKeywords,buildStyleTrendBoard(catalog.products,catalog.styleTrendKeywords.observations,{now:catalog.keywordCheckedAt,updated:catalog.styleTrendKeywords.updated,sourceRanks:catalog.sourceRanks}),'Style board must match fresh evidence and bilingual product attributes');
+  if(catalog.styleTrendKeywords?.method==='verified-style-board-v1')assert.deepEqual(catalog.styleTrendKeywords,buildStyleTrendBoard(catalog.products,catalog.styleTrendKeywords.observations,{now:keywordEvaluatedAt,updated:catalog.styleTrendKeywords.updated,sourceRanks:catalog.sourceRanks}),'Style board must match fresh evidence and bilingual product attributes');
   return true;
 }
 if(process.argv[1]?.endsWith('validate_catalog.mjs')){const c=JSON.parse(await fs.readFile(new URL('../public/data/catalog.json',import.meta.url),'utf8'));validateSnapshot(c);console.log(`PASS: ${c.products.length} products; mandatory25; exact dates, fit, taxonomy and calendar window.`);}

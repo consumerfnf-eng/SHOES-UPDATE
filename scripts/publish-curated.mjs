@@ -73,13 +73,17 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   for(const p of result.snapshot.products)if(p.presentation){const cached=photoCache.images[p.presentation.image];if(cached&&/^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(cached.path))p.presentation.cachedPath=cached.path;}
   result.snapshot.products=withSocialComparisons(result.snapshot.products);
   Object.assign(result.snapshot,buildKeywordCatalog(result.snapshot.products,result.snapshot.sourceRanks,{now}));
+  // Expiry and product matching run at the current instant without claiming
+  // that a maintenance pass collected fresh keyword evidence.
+  result.snapshot.keywordEvaluatedAt=new Date(now).toISOString();
+  if(maintenance&&!keywordRefresh&&prior.keywordCheckedAt)result.snapshot.keywordCheckedAt=prior.keywordCheckedAt;
   result.snapshot.styleTrendKeywords=buildStyleTrendBoard(result.snapshot.products,effectiveCollection.styleObservations||[],{now,updated:effectiveCollection.keywordCheckedAt||result.snapshot.keywordCheckedAt,sourceRanks:result.snapshot.sourceRanks});
   result.snapshot.sourceStatus.styleMarketStatus=effectiveCollection.styleMarketStatus||[];
   result.snapshot.sourceStatus.counts.published=result.snapshot.products.length;
   const discovery=await readJson(path.join(directory,'data/discovery-checks.json'),null);
   if(discovery&&Date.parse(discovery.checkedAt)>Date.parse(effectiveCollection.checkedAt||0))result.snapshot.sourceStatus.discoveryRecheck=discovery;
   // Maintenance only removes expired entries / updates upcoming state and ages signals; it does not claim a new collection.
-  if(maintenance&&prior.publishedAt) result.snapshot.publishedAt=prior.publishedAt;
+  if(maintenance&&!keywordRefresh&&prior.publishedAt) result.snapshot.publishedAt=prior.publishedAt;
   if(!Array.isArray(result.snapshot.products)||new Set(result.snapshot.products.map(p=>p.id)).size!==result.snapshot.products.length)throw Error('Invalid curated snapshot');
   if(!maintenance||keywordRefresh) {
     await fs.mkdir(path.join(directory,'logs/backups'),{recursive:true});

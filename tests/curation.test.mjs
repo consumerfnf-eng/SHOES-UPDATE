@@ -103,6 +103,17 @@ test('merge retains original records and nonempty fields',()=>{
   const old=[product({custom:'human value'})];const merged=mergePreserving(old,[{id:old[0].id,image:'',description:'fresh',releaseDate:'2020-01-01'}]);assert.equal(merged[0].custom,'human value');assert.equal(merged[0].image,old[0].image);assert.equal(old[0].description,product().description);assert.equal(merged[0].releaseDate,old[0].releaseDate);assert.equal(merged[0].description,old[0].description);
   assert.notEqual(canonicalUrl('https://eu.puma.com/product?swatch=01'),canonicalUrl('https://eu.puma.com/product?swatch=02'));
 });
+
+test('merge preserves a valid first discovery date while new and invalid dates accept incoming evidence',()=>{
+  const firstSeen='2026-09-28T04:44:12.802Z',observedAt='2026-10-06T08:57:16.354Z';
+  const existing=[{id:'known',firstSeen,observedAt:firstSeen},{id:'invalid',firstSeen:'not-a-date'},{id:'impossible-day',firstSeen:'2026-02-30T00:00:00Z'}],before=structuredClone(existing);
+  const incoming=[{id:'known',firstSeen:observedAt,observedAt},{id:'invalid',firstSeen:observedAt},{id:'impossible-day',firstSeen:observedAt},{id:'new',firstSeen:observedAt}];
+  const merged=mergePreserving(existing,incoming);
+  assert.equal(merged[0].firstSeen,firstSeen);assert.equal(merged[0].observedAt,observedAt);
+  assert.equal(mergePreserving(existing,[{id:'known',firstSeen:'2026-01-01T00:00:00Z'}])[0].firstSeen,firstSeen);
+  assert.deepEqual(merged.slice(1).map(p=>p.firstSeen),[observedAt,observedAt,observedAt]);
+  assert.deepEqual(existing,before);assert.equal(incoming[0].firstSeen,observedAt);
+});
 test('editorial evidence excludes recommended-product identity and keywords',()=>{
   const config={magazineDomains:['example.com'],newsletterDomains:[]};
   const args={url:'https://example.com/story',type:'magazine',product:product(),checkedAt:now.toISOString(),config};

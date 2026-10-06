@@ -1,9 +1,18 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { EXPORT_COLUMNS, productRecord, exportRows, csvBytes, xlsxBytes } from '../public/assets/export.mjs';
-import { kstToday, shiftCalendarMonths, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, officialImageUrl, officialProductUrl, sourceMatches, visibleSocialMetrics, releaseDateLabel, releaseSortKey, socialComparisonGroups, groupProductVariants } from '../public/assets/catalog-view.mjs';
+import { kstToday, shiftCalendarMonths, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, officialImageUrl, officialProductUrl, reviewedProductPageUrl, sourceMatches, visibleSocialMetrics, releaseDateLabel, releaseSortKey, socialComparisonGroups, groupProductVariants } from '../public/assets/catalog-view.mjs';
 
 function official(product){return {...product,officialProductEvidence:{verified:true,url:product.url,brand:product.brand,style:product.style,verifiedAt:'2026-09-27T00:00:00Z'},officialImageEvidence:{verified:true,url:product.image,sourceUrl:product.url,brand:product.brand,style:product.style,verifiedAt:'2026-09-27T00:00:00Z'}};}
+test('approved navigation links restore product buttons without loosening strict official or social gates',()=>{
+ const p={id:'reviewed',brand:'Nike',style:'AA100',url:'https://www.nike.com/launch/t/runner',image:'https://static.nike.com/runner.jpg',releaseDate:'2026-09-01',socialMetrics:[{platform:'instagram',metric:'hashtag-post-count',unit:'posts',value:100,scope:'cumulative',capturedAt:'2026-10-06T05:00:00Z',sourceUrl:'https://www.instagram.com/explore/tags/runner/',query:'runner',verified:true,identity:{brand:'Nike',style:'AA100'}}]};
+ const presentation={officialProductUrl:p.url,sourceUrl:p.url,image:p.image,view:'side',checkedAt:'2026-10-06T05:00:00Z'};
+ assert.equal(reviewedProductPageUrl({...p,presentation},'2026-10-06'),p.url);
+ assert.equal(officialProductUrl({...p,presentation},'2026-10-06'),'');assert.equal(officialImageUrl({...p,presentation},'2026-10-06'),'');assert.deepEqual(visibleSocialMetrics({...p,presentation},'2026-10-06'),[]);assert(!sourceMatches({...p,presentation},'sns','2026-10-06'));assert(!sourceMatches({...p,presentation},'brand','2026-10-06'));
+ for(const patch of [{officialProductUrl:undefined},{sourceUrl:'https://www.nike.com/other'},{officialProductUrl:'http://www.nike.com/runner',sourceUrl:'http://www.nike.com/runner'},{checkedAt:'invalid'},{checkedAt:'2026-10-07T00:00:00Z'},{view:'campaign'},{image:'javascript:alert(1)'}])assert.equal(reviewedProductPageUrl({...p,presentation:{...presentation,...patch}},'2026-10-06'),'');
+ assert.equal(reviewedProductPageUrl({...p,presentation:{...presentation,image:undefined,cachedPath:'/images/'+'a'.repeat(64)+'.jpg'}},'2026-10-06'),p.url);
+ assert.equal(reviewedProductPageUrl({...official(p),presentation:{...presentation,officialProductUrl:'https://bad.example/',sourceUrl:'https://bad.example/'}},'2026-10-06'),p.url,'Existing strict product evidence has priority');
+});
 const socialMetric={platform:'instagram',metric:'hashtag-post-count',value:120,unit:'posts',scope:'cumulative',capturedAt:'2026-09-27T00:00:00Z',sourceUrl:'https://www.instagram.com/explore/tags/runner/',query:'runner',verified:true,identity:{brand:'Nike',style:'AA100'}};
 
 test('KST calendar window clamps month ends and distinguishes upcoming, expired, unknown', () => {

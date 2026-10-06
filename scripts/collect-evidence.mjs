@@ -102,6 +102,8 @@ export function mergePreserving(existing,incoming) {
       // Preserve complete old source record alongside verified additions; never blank data on outages.
       const safe=Object.fromEntries(Object.entries(p).filter(([,v])=>v!==undefined&&v!==null&&v!==''));
       const old=output[i];
+      // A later crawl updates observedAt; the original discovery date is history.
+      if(typeof old.firstSeen==='string'&&validDay(old.firstSeen.slice(0,10))&&Number.isFinite(Date.parse(old.firstSeen)))delete safe.firstSeen;
       if(old.dateEvidence?.verified&&(!p.dateEvidence?.verified||(p.dateEvidence.verifiedAt||'')<(old.dateEvidence.verifiedAt||'')))for(const field of ['releaseDate','dateEvidence'])delete safe[field];
       if(old.productVerifiedAt&&(!p.productVerifiedAt||p.productVerifiedAt<old.productVerifiedAt))for(const field of ['name','brand','style','url','image','description','officialCategory','productType','colorway','country','material','gender','productVerifiedAt','productEvidenceUrl'])delete safe[field];
       output[i]={...output[i],...safe};

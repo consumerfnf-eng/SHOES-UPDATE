@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-06T10:27:47.007Z",
+  "checkedAt": "2026-10-06T10:44:43.369Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -16055,12 +16055,6 @@
       "brand": "ALOHAS",
       "name": "Rosalind Vintage Effect Brown Leather Ballet Flats",
       "reason": "excluded-footwear"
-    },
-    {
-      "id": "verified-new-balance-mt24yj",
-      "brand": "New Balance",
-      "name": "TDS MT2",
-      "reason": "representative-photo-review-required"
     }
   ]
 }
