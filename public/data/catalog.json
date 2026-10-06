@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-06T06:41:31.408Z",
+  "publishedAt": "2026-10-06T07:22:15.600Z",
   "periodStart": "2026-07-06",
   "asOf": "2026-10-06",
   "brands": [
@@ -3330,6 +3330,335 @@
       "colorSwatches": []
     },
     {
+      "id": "verified-adidas-kh7452",
+      "brand": "adidas",
+      "name": "Simone Rocha Climacool Shoes",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "adidas|simonerochaclimacoolshoes",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://news.adidas.com/originals/adidas-originals-and-simone-rocha-introduce-their-fall-winter-2026-collection/s/2f9928fa-e59e-4da9-9735-2979c41b4de3",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T07:15:49.697Z",
+        "excerpt": "The adidas Originals by Simone Rocha Fall/Winter 2026 collection launches globally on 10 September"
+      },
+      "url": "https://www.adidas.com/us/simone-rocha-climacool-shoes/KH7452.html",
+      "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/d3af39d1e03d43bba685e37cd4c5de8c_9366/Simone_Rocha_Climacool_Shoes_Black_KH7452_01_00_standard.jpg",
+      "style": "KH7452",
+      "colorway": "Core Black",
+      "colors": [
+        {
+          "name": "Core Black",
+          "hex": "#242424"
+        }
+      ],
+      "gender": "Women",
+      "material": "Leather",
+      "priceLabel": "$250",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "메리제인 스니커즈",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://www.adidas.com/us/simone-rocha-climacool-shoes/KH7452.html",
+        "sneakerSole": true,
+        "type": "mary-jane-sneaker",
+        "checkedAt": "2026-10-06T07:15:53.956Z",
+        "reason": "공식 상품과 발매 원문에서 스포츠화 밑창·혼합형 구조 확인"
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/simone-rocha-climacool-shoes/KH7452.html",
+        "verifiedAt": "2026-10-06T07:15:53.956Z",
+        "brand": "adidas",
+        "style": "KH7452",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "322b2be27b8768ff06368eeedad40affdfd5a19e61aeefe33b5fae2b57c520b1"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/d3af39d1e03d43bba685e37cd4c5de8c_9366/Simone_Rocha_Climacool_Shoes_Black_KH7452_01_00_standard.jpg",
+        "sourceUrl": "https://www.adidas.com/us/simone-rocha-climacool-shoes/KH7452.html",
+        "verifiedAt": "2026-10-06T07:15:53.956Z",
+        "brand": "adidas",
+        "style": "KH7452",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "322b2be27b8768ff06368eeedad40affdfd5a19e61aeefe33b5fae2b57c520b1"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-06T07:15:53.956Z",
+      "productEvidenceUrl": "https://www.adidas.com/us/simone-rocha-climacool-shoes/KH7452.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "mary-jane"
+      ],
+      "searchConceptIds": [
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "shape:mary-jane",
+        "brand:adidas"
+      ],
+      "presentation": {
+        "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/d3af39d1e03d43bba685e37cd4c5de8c_9366/Simone_Rocha_Climacool_Shoes_Black_KH7452_01_00_standard.jpg",
+        "scale": 1.15,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.adidas.com/us/simone-rocha-climacool-shoes/KH7452.html",
+        "checkedAt": "2026-10-06T07:20:59.374Z",
+        "cachedPath": "/images/078c628cd1781d761f4d31cd6bed72553bebc2d68817374d188acfbf959a75a0.webp"
+      },
+      "colorSwatches": [
+        "#242424"
+      ]
+    },
+    {
+      "id": "verified-adidas-kj5249",
+      "brand": "adidas",
+      "name": "Simone Rocha Taekwondo Ballerina",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "adidas|simonerochataekwondoballerina",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://news.adidas.com/originals/adidas-originals-and-simone-rocha-introduce-their-fall-winter-2026-collection/s/2f9928fa-e59e-4da9-9735-2979c41b4de3",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T07:15:49.697Z",
+        "excerpt": "The adidas Originals by Simone Rocha Fall/Winter 2026 collection launches globally on 10 September"
+      },
+      "url": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5249.html",
+      "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c1fa351afee54fafaaf367df1902af77_9366/Simone_Rocha_Taekwondo_Ballerina_Pink_KJ5249_01_00_standard.jpg",
+      "style": "KJ5249",
+      "colorway": "Pink Tint / Pink Tint / Better Scarlet",
+      "colors": [
+        {
+          "name": "Pink Tint / Pink Tint / Better Scarlet",
+          "hex": "#edced4"
+        }
+      ],
+      "gender": "Women",
+      "material": "Leather",
+      "priceLabel": "$250",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "발레리나 스니커즈",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5249.html",
+        "sneakerSole": true,
+        "type": "ballet-sneaker",
+        "checkedAt": "2026-10-06T07:15:51.103Z",
+        "reason": "공식 상품과 발매 원문에서 스포츠화 밑창·혼합형 구조 확인"
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5249.html",
+        "verifiedAt": "2026-10-06T07:15:51.103Z",
+        "brand": "adidas",
+        "style": "KJ5249",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "ed9aa8d6118713494b2b0defbabfc02b14795c79b742f804a7de137ff7a6491b"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c1fa351afee54fafaaf367df1902af77_9366/Simone_Rocha_Taekwondo_Ballerina_Pink_KJ5249_01_00_standard.jpg",
+        "sourceUrl": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5249.html",
+        "verifiedAt": "2026-10-06T07:15:51.103Z",
+        "brand": "adidas",
+        "style": "KJ5249",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "ed9aa8d6118713494b2b0defbabfc02b14795c79b742f804a7de137ff7a6491b"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-06T07:15:51.103Z",
+      "productEvidenceUrl": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5249.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "ballet-hybrid",
+        "low-profile"
+      ],
+      "searchConceptIds": [
+        "style:ultraslim-retro",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "shape:ballet",
+        "shape:low-profile",
+        "brand:adidas"
+      ],
+      "presentation": {
+        "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c1fa351afee54fafaaf367df1902af77_9366/Simone_Rocha_Taekwondo_Ballerina_Pink_KJ5249_01_00_standard.jpg",
+        "scale": 1.15,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5249.html",
+        "checkedAt": "2026-10-06T07:20:59.374Z",
+        "cachedPath": "/images/571ee23a4e1db4c3d40ff1614e92245ffac2439223a27b5e856e3c8a269361bc.webp"
+      },
+      "colorSwatches": [
+        "#edced4"
+      ]
+    },
+    {
+      "id": "verified-adidas-kj5248",
+      "brand": "adidas",
+      "name": "Simone Rocha Taekwondo Ballerina",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "adidas|simonerochataekwondoballerina",
+      "releaseDate": "2026-09-10",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://news.adidas.com/originals/adidas-originals-and-simone-rocha-introduce-their-fall-winter-2026-collection/s/2f9928fa-e59e-4da9-9735-2979c41b4de3",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T07:15:49.697Z",
+        "excerpt": "The adidas Originals by Simone Rocha Fall/Winter 2026 collection launches globally on 10 September"
+      },
+      "url": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5248.html",
+      "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c80de8b5d3564c9fb84f63996e200980_9366/Simone_Rocha_Taekwondo_Ballerina_Black_KJ5248_01_00_standard.jpg",
+      "style": "KJ5248",
+      "colorway": "Core Black / Better Scarlet / Core Black",
+      "colors": [
+        {
+          "name": "Core Black / Better Scarlet / Core Black",
+          "hex": "#232323"
+        }
+      ],
+      "gender": "Women",
+      "material": "Leather",
+      "priceLabel": "$250",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "발레리나 스니커즈",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5248.html",
+        "sneakerSole": true,
+        "type": "ballet-sneaker",
+        "checkedAt": "2026-10-06T07:15:52.442Z",
+        "reason": "공식 상품과 발매 원문에서 스포츠화 밑창·혼합형 구조 확인"
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5248.html",
+        "verifiedAt": "2026-10-06T07:15:52.442Z",
+        "brand": "adidas",
+        "style": "KJ5248",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "a4bf511cf7ff6184d0c66138a47b81c0bf3cdcb983690b6fe55bd95984d6c407"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c80de8b5d3564c9fb84f63996e200980_9366/Simone_Rocha_Taekwondo_Ballerina_Black_KJ5248_01_00_standard.jpg",
+        "sourceUrl": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5248.html",
+        "verifiedAt": "2026-10-06T07:15:52.442Z",
+        "brand": "adidas",
+        "style": "KJ5248",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "a4bf511cf7ff6184d0c66138a47b81c0bf3cdcb983690b6fe55bd95984d6c407"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-06T07:15:52.442Z",
+      "productEvidenceUrl": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5248.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "ballet-hybrid",
+        "low-profile"
+      ],
+      "searchConceptIds": [
+        "style:ultraslim-retro",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "shape:ballet",
+        "shape:low-profile",
+        "brand:adidas"
+      ],
+      "presentation": {
+        "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c80de8b5d3564c9fb84f63996e200980_9366/Simone_Rocha_Taekwondo_Ballerina_Black_KJ5248_01_00_standard.jpg",
+        "scale": 1.15,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5248.html",
+        "checkedAt": "2026-10-06T07:20:59.374Z",
+        "cachedPath": "/images/69b971c414cbb7151bbb665cc08b21c58757d4d9b49184ef5dc6179b73c3d6fc.webp"
+      },
+      "colorSwatches": [
+        "#232323"
+      ]
+    },
+    {
       "id": "verified-adidas-kj7669",
       "brand": "adidas",
       "name": "adidas x Tyrrell Winston CLIMACOOL 4D",
@@ -3814,6 +4143,228 @@
       "colorSwatches": []
     },
     {
+      "id": "verified-adidas-lb3786",
+      "brand": "adidas",
+      "name": "ADIDAS JENNIE SUPERSTAR SQ BALLET SHOES",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "adidas|adidasjenniesuperstarsqballetshoes",
+      "releaseDate": "2026-09-01",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://news.adidas.com/originals/adidas-originals-by-jennie--the-first-collaboration-with-global-icon-jennie-unveiled/s/22b50af4-2b86-4722-bd7e-114b67949b58",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T07:08:07.422Z",
+        "excerpt": "The adidas Originals by JENNIE collection launches on 1 September 2026."
+      },
+      "url": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3786.html",
+      "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/f895b44e477546238787734ab7494f03_9366/ADIDAS_JENNIE_SUPERSTAR_SQ_BALLET_SHOES_White_LB3786_01_00_standard.jpg",
+      "style": "LB3786",
+      "colorway": "Off White / Core Black / Core White",
+      "colors": [
+        {
+          "name": "Off White / Core Black / Core White",
+          "hex": "#eeeade"
+        }
+      ],
+      "gender": "Women",
+      "material": "Leather",
+      "priceLabel": "$150",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "발레리나 스니커즈",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3786.html",
+        "sneakerSole": true,
+        "type": "ballet-sneaker",
+        "checkedAt": "2026-10-06T07:08:04.504Z",
+        "reason": "공식 상품과 발매 원문에서 스포츠화 밑창·혼합형 구조 확인"
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3786.html",
+        "verifiedAt": "2026-10-06T07:08:04.504Z",
+        "brand": "adidas",
+        "style": "LB3786",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "3523b9ecb33e5a035d58970b19addba943a0220a39145b07cbe90c956dd6f6c9"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/f895b44e477546238787734ab7494f03_9366/ADIDAS_JENNIE_SUPERSTAR_SQ_BALLET_SHOES_White_LB3786_01_00_standard.jpg",
+        "sourceUrl": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3786.html",
+        "verifiedAt": "2026-10-06T07:08:04.504Z",
+        "brand": "adidas",
+        "style": "LB3786",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "3523b9ecb33e5a035d58970b19addba943a0220a39145b07cbe90c956dd6f6c9"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-06T07:08:04.504Z",
+      "productEvidenceUrl": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3786.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "ballet-hybrid"
+      ],
+      "searchConceptIds": [
+        "style:feminine-touch",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "color:white",
+        "shape:ballet",
+        "model:superstar",
+        "brand:adidas"
+      ],
+      "presentation": {
+        "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/f895b44e477546238787734ab7494f03_9366/ADIDAS_JENNIE_SUPERSTAR_SQ_BALLET_SHOES_White_LB3786_01_00_standard.jpg",
+        "scale": 1.15,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3786.html",
+        "checkedAt": "2026-10-06T07:20:59.372Z",
+        "cachedPath": "/images/f6b536343be2f5d61116dba67924bcf175df6937f4af5c25fd958e6757d85cd5.webp"
+      },
+      "colorSwatches": [
+        "#eeeade"
+      ]
+    },
+    {
+      "id": "verified-adidas-lb3787",
+      "brand": "adidas",
+      "name": "ADIDAS JENNIE SUPERSTAR SQ BALLET SHOES",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "adidas|adidasjenniesuperstarsqballetshoes",
+      "releaseDate": "2026-09-01",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://news.adidas.com/originals/adidas-originals-by-jennie--the-first-collaboration-with-global-icon-jennie-unveiled/s/22b50af4-2b86-4722-bd7e-114b67949b58",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T07:08:07.422Z",
+        "excerpt": "The adidas Originals by JENNIE collection launches on 1 September 2026."
+      },
+      "url": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3787.html",
+      "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/7fadea40747f44788d258ebede73c1d8_9366/ADIDAS_JENNIE_SUPERSTAR_SQ_BALLET_SHOES_Black_LB3787_01_00_standard.jpg",
+      "style": "LB3787",
+      "colorway": "Core Black / Core Black / Off White",
+      "colors": [
+        {
+          "name": "Core Black / Core Black / Off White",
+          "hex": "#262626"
+        }
+      ],
+      "gender": "Women",
+      "material": "Leather",
+      "priceLabel": "$150",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "발레리나 스니커즈",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3787.html",
+        "sneakerSole": true,
+        "type": "ballet-sneaker",
+        "checkedAt": "2026-10-06T07:08:06.103Z",
+        "reason": "공식 상품과 발매 원문에서 스포츠화 밑창·혼합형 구조 확인"
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3787.html",
+        "verifiedAt": "2026-10-06T07:08:06.103Z",
+        "brand": "adidas",
+        "style": "LB3787",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "8a52f2206ea460acd38116ef65c252322f46555a50f19d67891e00a7296257da"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.adidas.com/images/w_500,f_auto,q_auto/7fadea40747f44788d258ebede73c1d8_9366/ADIDAS_JENNIE_SUPERSTAR_SQ_BALLET_SHOES_Black_LB3787_01_00_standard.jpg",
+        "sourceUrl": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3787.html",
+        "verifiedAt": "2026-10-06T07:08:06.103Z",
+        "brand": "adidas",
+        "style": "LB3787",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "8a52f2206ea460acd38116ef65c252322f46555a50f19d67891e00a7296257da"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-06T07:08:06.103Z",
+      "productEvidenceUrl": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3787.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "ballet-hybrid"
+      ],
+      "searchConceptIds": [
+        "style:feminine-touch",
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "color:white",
+        "shape:ballet",
+        "model:superstar",
+        "brand:adidas"
+      ],
+      "presentation": {
+        "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/7fadea40747f44788d258ebede73c1d8_9366/ADIDAS_JENNIE_SUPERSTAR_SQ_BALLET_SHOES_Black_LB3787_01_00_standard.jpg",
+        "scale": 1.15,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3787.html",
+        "checkedAt": "2026-10-06T07:20:59.374Z",
+        "cachedPath": "/images/20db98efb5fe3e8b00e60eb1d367c3a8ef5fd5b3aa99485fcd6a87b9c505d7a3.webp"
+      },
+      "colorSwatches": [
+        "#262626"
+      ]
+    },
+    {
       "id": "zip-cecilie-asics-black-coffee",
       "brand": "Cecilie Bahnsen",
       "name": "ASICS GEL-KINETIC FR | BLACK COFFEE",
@@ -4081,6 +4632,125 @@
         "cachedPath": "/images/9af67bcbb26bc9b0fb614358ec21abfbe8999dce15416005719b57fa8c4bb34f.webp"
       },
       "colorSwatches": []
+    },
+    {
+      "id": "verified-nike-iu3167-002",
+      "brand": "Nike",
+      "name": "Nike Rejuven8 Run",
+      "category": "jelly",
+      "productType": "jelly",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "nike|nikerejuven8run",
+      "releaseDate": "2026-08-26",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://sneakernews.com/2026/07/30/nike-air-rejuven8-gel-camo-pack/",
+        "precision": "day",
+        "verified": true,
+        "official": false,
+        "verifiedAt": "2026-10-06T07:17:54.192Z",
+        "region": "US",
+        "excerpt": "Womens Nike Air Rejuven8 — SKU: IU3167-002. RELEASE DATE: Aug 26, 2026. US 08/26/2026."
+      },
+      "url": "https://www.nike.com/t/rejuven8-run-womens-shoes-eIBcnQk9",
+      "image": "https://static.nike.com/a/images/t_web_pdp_936_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d066c71a-22ea-47f8-b64a-fee26827a420/NIKE+W+REJUVEN8+JEL+PRINT+QS.png",
+      "style": "IU3167-002",
+      "colorway": "Black / Black / White",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#222222"
+        },
+        {
+          "name": "White",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "gender": "Women",
+      "material": "",
+      "priceLabel": "$145",
+      "description": "플랫 젤리 슈즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "footwearStructure": {
+        "category": "jelly",
+        "description": "Recovery sneaker with foam and encapsulated Air cushioning, ventilation holes and sticky rubber outsole.",
+        "officialCategory": "Women's Shoes"
+      },
+      "officialCategory": "Women's Shoes",
+      "footwearReview": {
+        "approved": true,
+        "type": "jelly",
+        "brand": "Nike",
+        "style": "IU3167-002",
+        "url": "https://www.nike.com/t/rejuven8-run-womens-shoes-eIBcnQk9",
+        "flatSole": true,
+        "sneakerSole": true,
+        "checkedAt": "2026-10-06T07:15:55.368Z",
+        "reason": "Official JEL PRINT product image and exact SKU; semi-opaque jelly cage identified in the release article.",
+        "structureEvidenceUrl": "https://sneakernews.com/2026/07/30/nike-air-rejuven8-gel-camo-pack/"
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.nike.com/t/rejuven8-run-womens-shoes-eIBcnQk9",
+        "verifiedAt": "2026-10-06T07:15:55.368Z",
+        "brand": "Nike",
+        "style": "IU3167-002",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "497e9a80e73c7f656a4bfba212faa01790875b9613b29cf25390e4bf7aa842fe"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://static.nike.com/a/images/t_web_pdp_936_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d066c71a-22ea-47f8-b64a-fee26827a420/NIKE+W+REJUVEN8+JEL+PRINT+QS.png",
+        "sourceUrl": "https://www.nike.com/t/rejuven8-run-womens-shoes-eIBcnQk9",
+        "verifiedAt": "2026-10-06T07:15:55.368Z",
+        "brand": "Nike",
+        "style": "IU3167-002",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "497e9a80e73c7f656a4bfba212faa01790875b9613b29cf25390e4bf7aa842fe"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-06T07:15:55.368Z",
+      "productEvidenceUrl": "https://www.nike.com/t/rejuven8-run-womens-shoes-eIBcnQk9",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "use:recovery",
+        "color:black",
+        "color:white",
+        "brand:nike"
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/t_web_pdp_936_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d066c71a-22ea-47f8-b64a-fee26827a420/NIKE+W+REJUVEN8+JEL+PRINT+QS.png",
+        "scale": 1.35,
+        "offsetY": -10,
+        "view": "side",
+        "sourceUrl": "https://www.nike.com/t/rejuven8-run-womens-shoes-eIBcnQk9",
+        "checkedAt": "2026-10-06T07:20:59.374Z",
+        "cachedPath": "/images/34061d3c2d0cdc37f34f53a96cff826835136d21114d11fc390959ca44928708.webp"
+      },
+      "colorSwatches": [
+        "#222222",
+        "#f5f5f5"
+      ]
     },
     {
       "id": "verified-new-balance-u7507a0",
@@ -5644,10 +6314,237 @@
         "cachedPath": "/images/66246d1e18940ce6edc4c981eba54d322475c86e25012c5611670a14e0ed683f.webp"
       },
       "colorSwatches": []
+    },
+    {
+      "id": "verified-saucony-s101074-1002",
+      "brand": "Saucony",
+      "name": "ProGrid V2 Mule",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "saucony|progridv2mule",
+      "releaseDate": "2026-08-01",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.saucony.com/en/blog-progrid-v2-mule-press-release/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T07:10:37.789Z",
+        "excerpt": "August 1, 2026 — ProGrid V2 Mule, Trek/Black and Black colorways, launching August 1 at Saucony.com."
+      },
+      "url": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+      "image": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1002_1/?preset=dw-pdp-primary",
+      "style": "S101074-1002",
+      "colorway": "Black",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#262626"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Suede / Neoprene",
+      "priceLabel": "$140",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "뮬 스니커즈",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+        "sneakerSole": true,
+        "type": "mule-sneaker",
+        "checkedAt": "2026-10-06T07:10:36.134Z",
+        "reason": "공식 상품과 발매 원문에서 스포츠화 밑창·혼합형 구조 확인"
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+        "verifiedAt": "2026-10-06T07:10:36.134Z",
+        "brand": "Saucony",
+        "style": "S101074-1002",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "ec988fa8285e0eb52b30d1d77defca10e98f98752a60a12313ea451c9bf98c8a"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1002_1/?preset=dw-pdp-primary",
+        "sourceUrl": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+        "verifiedAt": "2026-10-06T07:10:36.134Z",
+        "brand": "Saucony",
+        "style": "S101074-1002",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "ec988fa8285e0eb52b30d1d77defca10e98f98752a60a12313ea451c9bf98c8a"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-06T07:10:36.134Z",
+      "productEvidenceUrl": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "sneaker-mule",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "color:black",
+        "shape:mule",
+        "brand:saucony"
+      ],
+      "presentation": {
+        "image": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1002_1/?preset=dw-pdp-primary",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+        "checkedAt": "2026-10-06T07:20:59.374Z",
+        "cachedPath": "/images/4bbeaf3cbbe530966ac61d9216bc1dd6c949e31c49a2996b22ee6538546cb506.jpg"
+      },
+      "colorSwatches": [
+        "#262626"
+      ]
+    },
+    {
+      "id": "verified-saucony-s101074-1004",
+      "brand": "Saucony",
+      "name": "ProGrid V2 Mule",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "saucony|progridv2mule",
+      "releaseDate": "2026-08-01",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.saucony.com/en/blog-progrid-v2-mule-press-release/",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T07:10:37.789Z",
+        "excerpt": "August 1, 2026 — ProGrid V2 Mule, Trek/Black and Black colorways, launching August 1 at Saucony.com."
+      },
+      "url": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+      "image": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1004_1/?preset=dw-pdp-primary",
+      "style": "S101074-1004",
+      "colorway": "Trek / Black",
+      "colors": [
+        {
+          "name": "Trek",
+          "hex": "#948e75"
+        },
+        {
+          "name": "Black",
+          "hex": "#222222"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Suede / Neoprene",
+      "priceLabel": "$140",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "뮬 스니커즈",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+        "sneakerSole": true,
+        "type": "mule-sneaker",
+        "checkedAt": "2026-10-06T07:10:36.134Z",
+        "reason": "공식 상품과 발매 원문에서 스포츠화 밑창·혼합형 구조 확인"
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+        "verifiedAt": "2026-10-06T07:17:52.653Z",
+        "brand": "Saucony",
+        "style": "S101074-1004",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "db90fbbbd68347de04331978389b38177984f0a79d8bd43e4c83cf160ac9cd4a"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1004_1/?preset=dw-pdp-primary",
+        "sourceUrl": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+        "verifiedAt": "2026-10-06T07:17:52.653Z",
+        "brand": "Saucony",
+        "style": "S101074-1004",
+        "verificationMethod": "reviewed-official-product-name-sku-color-image",
+        "contentHash": "db90fbbbd68347de04331978389b38177984f0a79d8bd43e4c83cf160ac9cd4a"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-06T07:10:36.134Z",
+      "productEvidenceUrl": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "sneaker-mule",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "color:black",
+        "shape:mule",
+        "brand:saucony"
+      ],
+      "presentation": {
+        "image": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1004_1/?preset=dw-pdp-primary",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+        "checkedAt": "2026-10-06T07:20:59.374Z",
+        "cachedPath": "/images/65b9ddf42447679565af53122b8412d1c00fc746db6915fa3057695aed7f5631.jpg"
+      },
+      "colorSwatches": [
+        "#948e75",
+        "#222222"
+      ]
     }
   ],
   "keywordMethod": "verified-style-source-rank-v2",
-  "keywordCheckedAt": "2026-10-06T06:41:31.408Z",
+  "keywordCheckedAt": "2026-10-06T07:22:15.600Z",
   "sourceRanks": [
     {
       "platform": "wgsn-ss27-colours",
@@ -5937,9 +6834,11 @@
         "페미닌 터치"
       ],
       "productIds": [
-        "official-nike-ix8478-410"
+        "official-nike-ix8478-410",
+        "verified-adidas-lb3786",
+        "verified-adidas-lb3787"
       ],
-      "matchedProductCount": 1,
+      "matchedProductCount": 3,
       "sourceRanks": [
         {
           "platform": "whowhatwear-style",
@@ -6030,6 +6929,11 @@
         "official-nike-iv5678-102",
         "official-nike-ix8478-410",
         "official-salomon-l49210700",
+        "verified-adidas-kh7452",
+        "verified-adidas-kj5248",
+        "verified-adidas-kj5249",
+        "verified-adidas-lb3786",
+        "verified-adidas-lb3787",
         "verified-celine-reebok-freestyle-lo-01op",
         "verified-celine-reebok-freestyle-lo-02bg",
         "verified-celine-reebok-freestyle-lo-03pt",
@@ -6050,7 +6954,7 @@
         "verified-new-balance-ugtr4dy",
         "verified-new-balance-w327apc"
       ],
-      "matchedProductCount": 28,
+      "matchedProductCount": 33,
       "sourceRanks": [
         {
           "platform": "whowhatwear-style",
@@ -6087,10 +6991,12 @@
       ],
       "productIds": [
         "daily-20260915-nike-air-foamposite-pro-im5204-001",
+        "verified-adidas-kj5248",
+        "verified-adidas-kj5249",
         "verified-new-balance-u204v2pt",
         "verified-new-balance-u204v2w0"
       ],
-      "matchedProductCount": 3,
+      "matchedProductCount": 5,
       "sourceRanks": [
         {
           "platform": "glamour-style",
@@ -6130,8 +7036,13 @@
         "ballerina sneaker",
         "sneakerina"
       ],
-      "productIds": [],
-      "matchedProductCount": 0,
+      "productIds": [
+        "verified-adidas-kj5248",
+        "verified-adidas-kj5249",
+        "verified-adidas-lb3786",
+        "verified-adidas-lb3787"
+      ],
+      "matchedProductCount": 4,
       "sourceRanks": [
         {
           "platform": "glamour-style",
@@ -7889,8 +8800,8 @@
       "SNS는 확인된 검색량·해시태그 게시물량을 지표와 기간별로 구분합니다. 미공개 수치는 0으로 대체하지 않습니다."
     ],
     "counts": {
-      "source": 2428,
-      "published": 60,
+      "source": 2436,
+      "published": 68,
       "held": 2358,
       "expired": 3
     },
@@ -7926,7 +8837,7 @@
       }
     ],
     "discoveryRecheck": {
-      "checkedAt": "2026-10-06T05:49:06.710Z",
+      "checkedAt": "2026-10-06T07:12:14.807Z",
       "scope": "targeted-discovery-recheck",
       "previousCollection": "2026-10-04",
       "brands": [
@@ -7973,18 +8884,29 @@
               "mode": "reader",
               "status": "unavailable",
               "reason": "Source returned no usable page"
+            },
+            {
+              "url": "https://jp.louisvuitton.com/jpn-jp/men/shoes/sneakers/_/N-t1fud07g",
+              "mode": "regional-official-reader-slow-retry",
+              "status": "unavailable",
+              "reason": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403"
             }
           ]
         },
         {
           "brand": "Celine",
-          "status": "unavailable",
+          "status": "readable",
           "attempts": [
             {
               "url": "https://www.celine.com/en-us/men/shoes/sneakers/",
               "mode": "html",
               "status": "unavailable",
               "reason": "OFFICIAL_ACCESS_CHALLENGE"
+            },
+            {
+              "url": "https://www.celine.com/ja-jp/ウィメンズ/シューズ/スニーカー/?start=17&sz=20",
+              "mode": "regional-official-reader-slow-retry",
+              "status": "readable"
             }
           ]
         },
@@ -8001,7 +8923,7 @@
         },
         {
           "brand": "Saint Laurent",
-          "status": "unavailable",
+          "status": "readable",
           "attempts": [
             {
               "url": "https://www.ysl.com/en-us/ca/women/shoes",
@@ -8020,6 +8942,11 @@
               "mode": "html",
               "status": "unavailable",
               "reason": "OFFICIAL_ACCESS_CHALLENGE"
+            },
+            {
+              "url": "https://www.ysl.com/en-jp/ca/shop-women/shoes/sneakers",
+              "mode": "regional-official-reader-slow-retry",
+              "status": "readable"
             }
           ]
         },
@@ -8125,6 +9052,12 @@
               "mode": "reader",
               "status": "unavailable",
               "reason": "Source request timed out"
+            },
+            {
+              "url": "https://www.dior.com/ja_jp/fashion/mens-fashion/shoes/colorama?page=1",
+              "mode": "regional-official-reader-slow-retry",
+              "status": "unavailable",
+              "reason": "no-product-content"
             }
           ]
         },
@@ -8217,6 +9150,12 @@
               "mode": "reader",
               "status": "unavailable",
               "reason": "Source request timed out"
+            },
+            {
+              "url": "https://www.commonprojects.com/",
+              "mode": "regional-official-reader-slow-retry",
+              "status": "unavailable",
+              "reason": "Source HTTP 422; official HTML: fetch failed"
             }
           ]
         },
@@ -8398,6 +9337,12 @@
               "mode": "reader",
               "status": "unavailable",
               "reason": "OFFICIAL_ACCESS_CHALLENGE"
+            },
+            {
+              "url": "https://www.crocs.co.kr/c/collection-classicsneaker",
+              "mode": "regional-official-reader-slow-retry",
+              "status": "unavailable",
+              "reason": "OFFICIAL_ACCESS_CHALLENGE; official HTML: PUBLIC_SOURCE_HTTP_429"
             }
           ]
         }
@@ -9734,9 +10679,11 @@
           "verified-new-balance-u990lv4",
           "verified-new-balance-u993mo",
           "verified-new-balance-ugtr4dy",
-          "verified-new-balance-w327apc"
+          "verified-new-balance-w327apc",
+          "verified-saucony-s101074-1002",
+          "verified-saucony-s101074-1004"
         ],
-        "matchedProductCount": 13,
+        "matchedProductCount": 15,
         "sourceCount": 5,
         "editorialCount": 3,
         "retailCount": 6,
@@ -9900,8 +10847,13 @@
         "aliases": [
           "ballet sneakers"
         ],
-        "productIds": [],
-        "matchedProductCount": 0,
+        "productIds": [
+          "verified-adidas-kj5248",
+          "verified-adidas-kj5249",
+          "verified-adidas-lb3786",
+          "verified-adidas-lb3787"
+        ],
+        "matchedProductCount": 4,
         "sourceCount": 4,
         "editorialCount": 4,
         "retailCount": 3,
@@ -10210,10 +11162,12 @@
         ],
         "productIds": [
           "daily-20260915-nike-air-foamposite-pro-im5204-001",
+          "verified-adidas-kj5248",
+          "verified-adidas-kj5249",
           "verified-new-balance-u204v2pt",
           "verified-new-balance-u204v2w0"
         ],
-        "matchedProductCount": 3,
+        "matchedProductCount": 5,
         "sourceCount": 3,
         "editorialCount": 4,
         "retailCount": 0,
@@ -10909,6 +11863,11 @@
           "official-nike-iv5678-102",
           "official-nike-ix8478-410",
           "official-salomon-l49210700",
+          "verified-adidas-kh7452",
+          "verified-adidas-kj5248",
+          "verified-adidas-kj5249",
+          "verified-adidas-lb3786",
+          "verified-adidas-lb3787",
           "verified-celine-reebok-freestyle-lo-01op",
           "verified-celine-reebok-freestyle-lo-02bg",
           "verified-celine-reebok-freestyle-lo-03pt",
@@ -10929,7 +11888,7 @@
           "verified-new-balance-ugtr4dy",
           "verified-new-balance-w327apc"
         ],
-        "matchedProductCount": 28,
+        "matchedProductCount": 33,
         "sourceCount": 2,
         "editorialCount": 3,
         "retailCount": 0,
@@ -11034,10 +11993,11 @@
           "mary jane"
         ],
         "productIds": [
+          "verified-adidas-kh7452",
           "zip-cecilie-asics-black-coffee",
           "zip-cecilie-asics-silver"
         ],
-        "matchedProductCount": 2,
+        "matchedProductCount": 3,
         "sourceCount": 2,
         "editorialCount": 1,
         "retailCount": 1,
@@ -11151,8 +12111,11 @@
         "aliases": [
           "sneaker mule"
         ],
-        "productIds": [],
-        "matchedProductCount": 0,
+        "productIds": [
+          "verified-saucony-s101074-1002",
+          "verified-saucony-s101074-1004"
+        ],
+        "matchedProductCount": 2,
         "sourceCount": 2,
         "editorialCount": 0,
         "retailCount": 2,
@@ -11258,9 +12221,11 @@
           "Feminine Touch"
         ],
         "productIds": [
-          "official-nike-ix8478-410"
+          "official-nike-ix8478-410",
+          "verified-adidas-lb3786",
+          "verified-adidas-lb3787"
         ],
-        "matchedProductCount": 1,
+        "matchedProductCount": 3,
         "sourceCount": 1,
         "editorialCount": 1,
         "retailCount": 0,

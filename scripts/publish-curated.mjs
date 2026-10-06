@@ -7,6 +7,7 @@ import {buildKeywordCatalog} from './search-keywords.mjs';
 import {productPresentation} from './product-presentation.mjs';
 import {withSocialComparisons} from './social-metrics.mjs';
 import {buildStyleTrendBoard} from './style-trend-board.mjs';
+import {isPublishedFootwear} from '../public/assets/footwear-policy.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 export async function readJson(file,fallback) {try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(e){if(e.code==='ENOENT'&&fallback!==undefined)return fallback;throw e;}}
@@ -56,9 +57,9 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   const socialStatus=(socialEvidence.sourceStatus||[]).map(s=>Object.fromEntries(['platform','name','url','status','reason','checkedAt','collectionMode','automatedAdapter'].filter(k=>s[k]!==undefined).map(k=>[k,s[k]])));
   const effectiveCollection={...(collection||source.collection||{}),...(socialStatus.length?{socialMetricStatus:socialStatus}:{})};
   const result=curateCatalog(products,{now,previous:prior,collection:effectiveCollection});
-  // Preserve upcoming/other footwear internally, while the public view follows
-  // the requested released-sneaker window. Expired records still enter the archive.
-  result.snapshot.products=result.snapshot.products.filter(p=>p.category==='sneaker'&&p.releaseStatus==='released');
+  // Preserve other records internally; publish the six requested footwear types.
+  // Expired records still enter the archive independently of this display filter.
+  result.snapshot.products=result.snapshot.products.filter(p=>isPublishedFootwear(p)&&p.releaseStatus==='released');
   if(maintenance&&Array.isArray(prior.products)){const priorIds=new Set(prior.products.map(p=>p.id));result.snapshot.products=result.snapshot.products.filter(p=>priorIds.has(p.id));}
   const photoReviews=await readJson(path.join(directory,'data/product-presentation.json'),null);
   if(photoReviews){

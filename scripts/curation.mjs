@@ -42,7 +42,7 @@ export function officialEvidenceFor(p,today){
   if(model?.verified===true&&model.id&&model.name&&key(model.name)===key(String(p.name).split(/\s[—–]\s/)[0]))verifiedProduct.modelIdentity={id:model.id,name:model.name,verified:true};
   return {officialProductEvidence:verifiedProduct,officialImageEvidence:clean(image,['verified','url','sourceUrl','verifiedAt','brand','style','verificationMethod','contentHash'])};
 }
-const excluded = /\b(loafers?|oxfords?|derby|derbies|pumps?|stilettos?|high[ -]?heels?|moccasins?|mocassins?|escarpins?|decolletes?|slingbacks?|dress (?:shoes?|sandals?)|ballerina flats?|ballet flats?|chelsea|boots?|snowclog|ski|snowboard|winter|fur[ -]lined|insulated)\b|로퍼|구두|하이힐|펌프스|부츠|방한|발레 플랫/i;
+const excluded = /\b(loafers?|oxfords?|derby|derbies|pumps?|stilettos?|heels|(?:high|kitten|block|wedge)[ -]?heels?|heeled|moccasins?|mocassins?|escarpins?|decolletes?|slingbacks?|dress (?:shoes?|sandals?)|ballerina flats?|ballet flats?|chelsea|boots?|snowclog|ski|snowboard|winter|fur[ -]lined|insulated)\b|로퍼|구두|슬링백|(?:하이|키튼|블록|웨지)힐|펌프스|부츠|방한|발레 플랫/i;
 const performance = /\b(?:soccer|football|baseball|track|golf)\s+(?:boots?|cleats?|spikes?|shoes?)|\b(?:racing spikes|competition spikes|basketball shoes)\b|축구화|야구화|스파이크/i;
 export function classifyFootwear(p) {
   // Negative gates run first for every record; legacy verification cannot bypass them.
@@ -51,13 +51,26 @@ export function classifyFootwear(p) {
   // omitting those fields silently held otherwise verified sneaker releases.
   const typeHint = p.category ? (p.productType || '') : '';
   const title = `${p.name || ''} ${p.officialCategory || ''} ${typeHint}`;
-  const context = `${title} ${p.description || ''} ${p.category || ''}`;
+  const structure=p.footwearStructure?.category===p.category?p.footwearStructure:null;
+  const context = `${title} ${p.description || ''} ${p.category || ''} ${structure?.description||''} ${structure?.officialCategory||''}`;
   const review=p.footwearReview;
+  if(/ローファー|パンプス|スリングバック|ハイヒール|革靴|高跟|乐福|樂福|皮鞋|(?:^|[\s/])힐(?:[\s/]|$)/.test(title))return {reason:'excluded-footwear'};
+  const reviewedPlatform=review?.approved===true&&review.type==='platform'&&review.flatSole===true&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url);
+  const reviewedJelly=review?.approved===true&&review.type==='jelly'&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url)&&review.flatSole===true;
   const approvedDrip=canonicalBrand(p.brand)==='Gucci'&&p.style==='A00A2SFAGMQ9656'&&review?.approved===true&&review.type==='sneaker'&&review.brand==='Gucci'&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url)&&/sneaker/i.test(title)&&/slip.on ease of (?:a )?loafer/i.test(p.description||'');
   if(/goadome/i.test(title)&&!p.hybridReview?.approved)return {reason:'hybrid-review-required'};
-  if (excluded.test(title) || performance.test(title) || /\b(?:loafers?|oxford shoes?|derby shoes|ballet flats?|high[ -]heeled|stilettos?|dress sandals?)\b|로퍼|하이힐|정장 구두/i.test(approvedDrip?(p.description||'').replace(/slip.on ease of (?:a )?loafer/gi,''):(p.description || ''))) return { reason: 'excluded-footwear' };
-  if (/\b(?:mule|mary jane|ballet)\b|메리제인|뮬/i.test(context)) {
+  if (excluded.test(`${title} ${p.category||''} ${p.productType||''}`) || performance.test(title) || /\b(?:loafers?|oxford shoes?|derby shoes|ballet flats?|high[ -]heeled|stilettos?|slingbacks?|(?:kitten|block|wedge) heels?|dress sandals?)\b|로퍼|슬링백|하이힐|정장 구두/i.test(approvedDrip?(p.description||'').replace(/slip.on ease of (?:a )?loafer/gi,''):(p.description || ''))) return { reason: 'excluded-footwear' };
+  // Jelly names alone (for example Jellyfish) are not proof of jelly construction.
+  if (/\bjelly\b|젤리/i.test(title)||reviewedJelly) {
+    if (!reviewedJelly&&!/\b(?:pvc|tpu|melflex|jelly upper|jelly material|jelly construction)\b|젤리 소재/i.test(context))return {reason:'jelly-structure-unverified'};
+    if (!reviewedJelly&&!/\b(?:flat|low.profile|sneakers?|trainers?|flexible sole)\b|플랫|스니커|평평한/i.test(context))return {reason:'flat-structure-unverified'};
+    return {category:'jelly'};
+  }
+  // Inspiration mentioned in a description does not change a conventional runner
+  // into a hybrid. Use its actual product type or a reviewed construction.
+  if (/\b(?:mules?|mary[ -]?jane|ballet|ballerinas?)\b|메리제인|발레리나|뮬/i.test(`${title} ${p.hybridReview?.approved?p.hybridReview.type||'':''}`)) {
     if (!p.hybridReview?.approved || !httpUrl(p.hybridReview.url)) return { reason: 'hybrid-review-required' };
+    if (!/\b(?:sneakers?|running shoes?|trainers?|sneaker sole)\b|스니커|운동화/i.test(context) && !(p.hybridReview.sneakerSole===true&&p.hybridReview.url===p.url&&isOfficialProductUrl(p.brand,p.url)))return {reason:'sneaker-structure-unverified'};
     return { category: 'hybrid' };
   }
   if (/\b(?:clog|클로그)\b/i.test(title)) {
@@ -66,9 +79,11 @@ export function classifyFootwear(p) {
   }
   if (/sandal|slide|샌들|슬라이드/i.test(title)) {
     if (!/sport|outdoor|eva|foam|cushion|casual|flat|recovery|스포츠|캐주얼|플랫|쿠셔닝/i.test(context)) return { reason: 'casual-sandal-unverified' };
+    if(/platform|플랫폼/i.test(context)&&!reviewedPlatform&&!/\bflat\b|level sole|통굽|평평한|플랫/i.test(context))return {reason:'flat-platform-unverified'};
     return { category: /platform|플랫폼/i.test(context) ? 'platform-sandal' : 'sandal' };
   }
   if (/sneaker|running shoe|trail running|training shoes?|trainers?|court shoe|스니커|운동화|러닝화|트레이닝화|트레일화/i.test(context)) return { category: 'sneaker' };
+  if (/\bplatform\b|플랫폼/i.test(title)&&(reviewedPlatform||/\bflat\b|level sole|플랫|통굽|평평한/i.test(context))&&/casual|street|sport|캐주얼/i.test(context))return {category:'platform-shoe'};
   if(p.productVerifiedAt&&/\b(?:Air Max (?!Phenomena)|Air Force 1|Air Jordan \d|Air Bakin|Dunk Low|Dunk High|Cortez|Vomero|Pegasus|Shox|P-6000)\b/i.test(p.name||''))return {category:'sneaker'};
   return { reason: 'footwear-type-unverified' };
 }
@@ -85,7 +100,7 @@ export function fitFor(p, category, today=kstDay()) {
   // A verified sneaker without an explicit performance/lifestyle descriptor is
   // still a valid MLB reference item. Keep this fallback gated by the exact
   // official product/image proof so unverified generic records never surface.
-  if(category==='sneaker'&&!fit.length&&officialEvidenceFor(p,today)){
+  if(['sneaker','hybrid','jelly','platform-shoe','platform-sandal'].includes(category)&&!fit.length&&officialEvidenceFor(p,today)){
     fit.push('MLB'); fitReasons.push('공식 스니커즈 실루엣·컬러 참고');
   }
   const policy=brandPolicy(p.brand);
@@ -136,7 +151,8 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
     releaseDate: raw.releaseDate, releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),
     url: raw.url, image: raw.image, style: raw.style || '', colorway: raw.colorway || '', colors: raw.colors || [],
     gender: raw.gender || '', material: raw.material || '', priceLabel: raw.priceLabel || '',
-    description:[type.category==='sneaker'?'스니커즈':type.category==='clog'?'여름 클로그':type.category==='hybrid'?'검토된 혼합형 스니커즈':'캐주얼 샌들',...fit.fitReasons].join(' · '),
+    description:[type.category==='sneaker'?'스니커즈':type.category==='clog'?'여름 클로그':type.category==='hybrid'?'검토된 혼합형 스니커즈':type.category==='jelly'?'플랫 젤리 슈즈':type.category==='platform-shoe'?'캐주얼 플랫폼 슈즈':'캐주얼 샌들',...fit.fitReasons].join(' · '),
+    footwearStructure:raw.footwearStructure||(['jelly','platform-shoe','platform-sandal'].includes(type.category)?{category:type.category,description:raw.description,officialCategory:raw.officialCategory}:undefined),
     officialCategory:type.category==='sneaker'?'스니커즈':raw.officialCategory||'',
     hybridReview:raw.hybridReview,modelReview:raw.modelReview,footwearReview:raw.footwearReview,
     sourceSignals: visibleSignals, socialMetrics,...(official||{}),collaborationBrands:official?productCollaborationBrands(raw):[],popularity: hot, archiveGroup: raw.archiveGroup || policy.group,

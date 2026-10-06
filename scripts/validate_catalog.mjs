@@ -16,7 +16,7 @@ export function validateSnapshot(catalog) {
   for(const p of catalog.products) {
     assert(typeof p.id==='string'&&p.id&&typeof p.name==='string'&&p.name.trim(),'Missing product identity');
     assert(catalog.brands.some(b=>b.name===p.brand),'Unknown product brand');
-    assert(['sneaker','clog','sandal','platform-sandal','hybrid'].includes(p.category),'Invalid product category');
+    assert(['sneaker','clog','sandal','platform-sandal','hybrid','jelly','platform-shoe'].includes(p.category),'Invalid product category');
     assert(Array.isArray(p.fit)&&p.fit.length&&p.fit.every(f=>['MLB','DISCOVERY'].includes(f)),'Invalid fit');
     assert(Array.isArray(p.fitReasons)&&p.fitReasons.length,'Missing selection reasons');
     const release=releaseWindow(p),state=releaseState(p,catalog.asOf);

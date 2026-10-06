@@ -1,4 +1,29 @@
 import {readPublicSource,decodeText} from './source-feeds.mjs';
+import {setTimeout as delay} from 'node:timers/promises';
+
+export function pacedOfficialFetch({fetchImpl=fetch,sleep=delay,intervalMs=2500,retryMs=5000,now=Date.now}={}){
+  const queues=new Map(),next=new Map();
+  return async function fetchOfficial(url,options){
+    const origin=new URL(url).origin;
+    for(let attempt=0;attempt<2;attempt++){
+      const turn=(queues.get(origin)||Promise.resolve()).then(async()=>{await sleep(Math.max(0,(next.get(origin)||0)-now()));next.set(origin,now()+intervalMs);});
+      queues.set(origin,turn.catch(()=>{}));await turn;
+      let response;
+      try{response=await fetchImpl(url,{...options,signal:AbortSignal.timeout(20000)});}catch(error){
+        if(attempt||!['TypeError','TimeoutError','AbortError'].includes(error.name))throw error;
+        await sleep(retryMs);continue;
+      }
+      if(!attempt&&[429,500,502,503,504].includes(response.status)){
+        const header=response.headers.get('retry-after');
+        const wait=header?(Number.isFinite(Number(header))?Number(header)*1000:Date.parse(header)-now()):retryMs;
+        // A long server cooldown is deferred to the next scheduled run.
+        if(wait>60000)return response;
+        await response.body?.cancel();await sleep(Math.max(retryMs,Number.isFinite(wait)?wait:retryMs));continue;
+      }
+      return response; // Never retry access denials, CAPTCHAs or missing pages.
+    }
+  };
+}
 
 export function assertReadableOfficial(text){
   if(/^Title:.*(?:Just a moment|Access Denied|Pardon Our Interruption|Page Not Found)/im.test(text)||/powered and protected by[\s\S]{0,500}akamai|YOUR ACCESS TO .{1,80} IS TEMPORARILY RESTRICTED|verify (?:that )?you are human|enable javascript and cookies to continue/i.test(text))throw Error('OFFICIAL_ACCESS_CHALLENGE');
@@ -23,14 +48,15 @@ export function officialHtmlMarkdown(html,url){
   if(body.length<150||!/\]\(https:\/\//.test(body))throw Error('OFFICIAL_HTML_NO_CONTENT');
   return assertReadableOfficial(`Title: ${title}\nURL Source: ${url}\nMarkdown Content:\n${body}`);
 }
-export function createOfficialReader({read,origins,fetchImpl=fetch}={}){
+export function createOfficialReader({read,origins,fetchImpl=fetch,sleep=delay,intervalMs=2500,retryMs=5000}={}){
   const allowed=new Set(origins.map(url=>new URL(url).origin)),diagnostics=[];
+  const officialFetch=pacedOfficialFetch({fetchImpl,sleep,intervalMs,retryMs});
   return {diagnostics,async read(url,timeout){
     try{return assertReadableOfficial(await read(url,timeout));}catch(primary){
       if(!url.startsWith('https://r.jina.ai/https://'))throw primary;
       const target=url.slice('https://r.jina.ai/'.length);
       if(!allowed.has(new URL(target).origin))throw primary;
-      try{const html=await readPublicSource(target,{fetchImpl,maxBytes:6_000_000,headers:{Accept:'text/html'}}),text=officialHtmlMarkdown(html,target);
+      try{const html=await readPublicSource(target,{fetchImpl:officialFetch,maxBytes:6_000_000,headers:{Accept:'text/html'}}),text=officialHtmlMarkdown(html,target);
         diagnostics.push({url:target,method:'direct-official-html',status:'readable',primaryError:primary.message});return text;
       }catch(error){diagnostics.push({url:target,method:'direct-official-html',status:'unavailable',primaryError:primary.message,error:error.message});throw Error(`${primary.message}; official HTML: ${error.message}`);}
     }

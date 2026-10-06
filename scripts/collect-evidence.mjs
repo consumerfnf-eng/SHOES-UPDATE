@@ -65,7 +65,7 @@ export async function collectOfficialEvidence({read,products=[],now=new Date(),m
     if(p.dateEvidence?.verified||!httpUrl(p.url))return false;
     const policy=brandPolicy(p.brand),reason=classifyFootwear(p).reason;
     if(!policy||!['mandatory','core','conditional'].includes(policy.policy)||policy.policy==='conditional'&&!p.modelReview?.approved)return false;
-    if(['excluded-footwear','hybrid-review-required'].includes(reason))return false;
+    if(reason==='excluded-footwear')return false;
     const host=new URL(p.url).hostname.replace(/^www\./,'');
     if(!(sources[p.brand]||[]).some(s=>{const h=new URL(s.url).hostname.replace(/^www\./,'');return host===h||host.endsWith('.'+h);}))return false;
     if(!p.style&&!(p.signalAliases||[]).some(a=>a.length>=12)){diagnostics.push({id:p.id,reason:'exact-product-date-identity-required'});return false;}
@@ -78,7 +78,10 @@ export async function collectOfficialEvidence({read,products=[],now=new Date(),m
     try {
       const page=await readOnce(p.url), release=releaseSentence(page,p), details=productDetails(page,p);
       if(!release||!details) {diagnostics.push({id:p.id,reason:'exact-release-day-not-found'});continue;}
-      verified.push({...p,...details,releaseDate:release.day,dateEvidence:{url:p.url,precision:'day',official:true,verified:true,verifiedAt:checkedAt,excerpt:release.excerpt},productVerifiedAt:checkedAt,productEvidenceUrl:p.url});
+      // An official description can establish the sneaker base of a hybrid.
+      // It still needs exact release proof and the separate official photo gate.
+      const hybrid=/\b(?:ballet|ballerina|mary[ -]?jane|mule)\b/i.test(p.name)&&/\b(?:sneakers?|running (?:shoes?|heritage)|trainers?)\b/i.test(details.description)?{hybridReview:{approved:true,url:p.url,sneakerSole:true,checkedAt,method:'official-product-sneaker-description'}}:{};
+      verified.push({...p,...details,...hybrid,releaseDate:release.day,dateEvidence:{url:p.url,precision:'day',official:true,verified:true,verifiedAt:checkedAt,excerpt:release.excerpt},productVerifiedAt:checkedAt,productEvidenceUrl:p.url});
     } catch(e) {diagnostics.push({id:p.id,error:e.message});}
     finally{completed++;if(completed%25===0||completed===incoming.length)log(`Official date verification: ${completed}/${incoming.length} checked; ${verified.length} verified.`);}
   }}

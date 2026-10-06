@@ -1,3 +1,4 @@
+import {footwearTypes,FOOTWEAR_TYPES} from './footwear-policy.mjs';
 export function kstToday(now = new Date()) {
   const shifted = new Date(now.getTime() + 9 * 60 * 60 * 1000);
   return shifted.toISOString().slice(0, 10);
@@ -59,6 +60,7 @@ export function sourceMatches(product, type, today = kstToday()) {
 }
 export function categoryMatches(product, key) {
   if (key === 'all') return true;
+  if(FOOTWEAR_TYPES.includes(key))return footwearTypes(product).includes(key);
   const tags = [product.category, product.productType, ...(product.tags || [])].join(' ').toLowerCase();
   return ({sneaker:/sneaker|스니커즈|러닝|트레일|runner|running|court/,clog:/clog|클로그/,sandal:/sandal|샌들/,platform:/platform|플랫폼/,hybrid:/hybrid|혼합|메리제인|발레|mule|뮬/}[key] || /$a/).test(tags);
 }

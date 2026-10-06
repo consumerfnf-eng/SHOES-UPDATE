@@ -1,11 +1,12 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes } from './export.mjs';
 import { groupedBrands } from './brand-groups.mjs';
+import {isPublishedFootwear} from './footwear-policy.mjs';
 import { kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, officialProductUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, variantGroupKey, colorSwatch } from './catalog-view.mjs';
 
 const $ = id => document.getElementById(id);
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const sourceNames = {magazine:'매거진',newsletter:'뉴스레터',media:'매거진·뉴스레터',sns:'SNS',ecommerce:'이커머스 랭킹',brand:'브랜드'};
-const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:'캐주얼 샌들','platform-sandal':'플랫폼 샌들',hybrid:'혼합형 스니커즈'};
+const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:'캐주얼 샌들','platform-sandal':'플랫폼 샌들','platform-shoe':'플랫폼 슈즈',jelly:'젤리 슈즈',hybrid:'혼합형 스니커즈'};
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
 const state = {search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'released',sort:'newest',socialGroup:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
@@ -64,7 +65,7 @@ async function loadCatalog() {
     catalog = value;
     // This view is the sneaker reference set. Other footwear records remain in
     // the internal snapshot/archive but never enter the public product grid.
-    products = value.products.filter(p => p && p.category === 'sneaker' && releaseState(p,today)==='released' && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string').map(p => ({...p,keywords:[...(p.keywords||[]),...[...value.keywords,...(value.forecastKeywords||[])].filter(k=>k.productIds?.includes(p.id)).flatMap(k=>[k.label,...(k.aliases||[])])]}));
+    products = value.products.filter(p => p && isPublishedFootwear(p) && releaseState(p,today)==='released' && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string').map(p => ({...p,keywords:[...(p.keywords||[]),...[...value.keywords,...(value.forecastKeywords||[])].filter(k=>k.productIds?.includes(p.id)).flatMap(k=>[k.label,...(k.aliases||[])])]}));
     const collection = value.sourceStatus?.lastSuccessfulCollectionAt;
     $('update-label').textContent = collection ? `${dateText(collection, true)} 수집 완료` : value.publishedAt ? `${dateText(value.publishedAt, true)} 게시` : '첫 검증 완료본 게시 대기';
     const unavailable = value.sourceStatus?.unavailableBrands || [];
@@ -101,10 +102,9 @@ function renderKeywords() {
   const snapshot=catalog?.styleTrendKeywords;
   const keywords=snapshot?.items||trendKeywords(catalog?.keywords||[]);
   function renderList(target,list) {
-    const maxSignals=Math.max(1,...list.map(k=>k.sourceCount||1));
     $(target).innerHTML=list.length?list.map((k,i)=>{
       const ids=keywordProductIds(k,products,today),matched=groupProductVariants(products.filter(p=>ids.has(p.id))).length;
-      return `<article class="keyword search-keyword trend-row ${state.keywordId===k.id?'active':''}"><button class="keyword-select" data-keyword="${i}" aria-pressed="${state.keywordId===k.id}" aria-label="${esc(k.label)} ${esc(k.englishLabel||'')} 관련 상품 ${matched}개"><span class="rank" aria-label="종합순 ${i+1}">${String(i+1).padStart(2,'0')}</span><span class="keyword-copy"><span class="keyword-name">#${esc(k.label)}</span><span class="keyword-evidence">${esc(k.englishLabel||'')}</span></span><span class="keyword-signal"><span>신호 <strong>${k.sourceCount||1}</strong></span><span class="signal-track" aria-hidden="true"><i style="width:${Math.round((k.sourceCount||1)/maxSignals*100)}%"></i></span></span><span class="count"><strong>${matched}</strong><span>상품</span></span></button></article>`;
+      return `<article class="keyword search-keyword trend-row ${state.keywordId===k.id?'active':''}"><button class="keyword-select" data-keyword="${i}" aria-pressed="${state.keywordId===k.id}" aria-label="${esc(k.label)} ${esc(k.englishLabel||'')} 관련 상품 ${matched}개"><span class="rank" aria-label="종합순 ${i+1}">${String(i+1).padStart(2,'0')}</span><span class="keyword-copy"><span class="keyword-name">#${esc(k.label)}</span><span class="keyword-evidence">${esc(k.englishLabel||'')}</span></span><span class="count"><strong>${matched}</strong><span>상품</span></span></button></article>`;
     }).join(''):'<p class="keyword-empty">확인된 Shoes Trend Keyword가 아직 없습니다.</p>';
     $(target).querySelectorAll('.keyword-select').forEach(button=>button.addEventListener('click',()=>{
       const k=list[Number(button.dataset.keyword)];clearTimeout(searchTimer);

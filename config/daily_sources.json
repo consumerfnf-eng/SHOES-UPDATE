@@ -195,6 +195,10 @@
     {
       "name": "Celine Official daily source",
       "url": "https://www.celine.com/en-us/women/shoes/"
+    },
+    {
+      "name": "Celine Official Japan sneakers",
+      "url": "https://www.celine.com/ja-jp/ウィメンズ/シューズ/スニーカー/?start=17&sz=20"
     }
   ],
   "Chanel": [
@@ -281,6 +285,10 @@
     {
       "name": "Dior Official daily source",
       "url": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers"
+    },
+    {
+      "name": "Dior Official Japan sneakers",
+      "url": "https://www.dior.com/ja_jp/fashion/mens-fashion/shoes/colorama?page=1"
     }
   ],
   "Dolce & Gabbana": [
@@ -475,6 +483,10 @@
     {
       "name": "Louis Vuitton Official daily source",
       "url": "https://us.louisvuitton.com/eng-us/women/shoes/all-shoes/_/N-t1mcbujj"
+    },
+    {
+      "name": "Louis Vuitton Official Japan sneakers",
+      "url": "https://jp.louisvuitton.com/jpn-jp/men/shoes/sneakers/_/N-t1fud07g"
     }
   ],
   "Lululemon": [
@@ -777,6 +789,10 @@
     {
       "name": "Saint Laurent Official shoes",
       "url": "https://www.ysl.com/en-us/ca/shop-women/shoes"
+    },
+    {
+      "name": "Saint Laurent Official Japan sneakers",
+      "url": "https://www.ysl.com/en-jp/ca/shop-women/shoes/sneakers"
     }
   ],
   "Salomon": [
@@ -1041,6 +1057,10 @@
     {
       "name": "Jordan Official public source",
       "url": "https://www.nike.com/launch"
+    },
+    {
+      "name": "Jordan Official Hong Kong launch",
+      "url": "https://www.nike.com.hk/lp/launch.htm"
     }
   ],
   "Brooks": [
@@ -1105,6 +1125,10 @@
     {
       "name": "Crocs Official public source",
       "url": "https://www.crocs.co.jp/c/footwear/sneakers"
+    },
+    {
+      "name": "Crocs Official Korea sneakers",
+      "url": "https://www.crocs.co.kr/c/collection-classicsneaker"
     }
   ]
 }

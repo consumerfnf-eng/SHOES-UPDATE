@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-06T05:49:06.710Z",
+  "checkedAt": "2026-10-06T07:12:14.807Z",
   "scope": "targeted-discovery-recheck",
   "previousCollection": "2026-10-04",
   "brands": [
@@ -46,18 +46,29 @@
           "mode": "reader",
           "status": "unavailable",
           "reason": "Source returned no usable page"
+        },
+        {
+          "url": "https://jp.louisvuitton.com/jpn-jp/men/shoes/sneakers/_/N-t1fud07g",
+          "mode": "regional-official-reader-slow-retry",
+          "status": "unavailable",
+          "reason": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403"
         }
       ]
     },
     {
       "brand": "Celine",
-      "status": "unavailable",
+      "status": "readable",
       "attempts": [
         {
           "url": "https://www.celine.com/en-us/men/shoes/sneakers/",
           "mode": "html",
           "status": "unavailable",
           "reason": "OFFICIAL_ACCESS_CHALLENGE"
+        },
+        {
+          "url": "https://www.celine.com/ja-jp/ウィメンズ/シューズ/スニーカー/?start=17&sz=20",
+          "mode": "regional-official-reader-slow-retry",
+          "status": "readable"
         }
       ]
     },
@@ -74,7 +85,7 @@
     },
     {
       "brand": "Saint Laurent",
-      "status": "unavailable",
+      "status": "readable",
       "attempts": [
         {
           "url": "https://www.ysl.com/en-us/ca/women/shoes",
@@ -93,6 +104,11 @@
           "mode": "html",
           "status": "unavailable",
           "reason": "OFFICIAL_ACCESS_CHALLENGE"
+        },
+        {
+          "url": "https://www.ysl.com/en-jp/ca/shop-women/shoes/sneakers",
+          "mode": "regional-official-reader-slow-retry",
+          "status": "readable"
         }
       ]
     },
@@ -198,6 +214,12 @@
           "mode": "reader",
           "status": "unavailable",
           "reason": "Source request timed out"
+        },
+        {
+          "url": "https://www.dior.com/ja_jp/fashion/mens-fashion/shoes/colorama?page=1",
+          "mode": "regional-official-reader-slow-retry",
+          "status": "unavailable",
+          "reason": "no-product-content"
         }
       ]
     },
@@ -290,6 +312,12 @@
           "mode": "reader",
           "status": "unavailable",
           "reason": "Source request timed out"
+        },
+        {
+          "url": "https://www.commonprojects.com/",
+          "mode": "regional-official-reader-slow-retry",
+          "status": "unavailable",
+          "reason": "Source HTTP 422; official HTML: fetch failed"
         }
       ]
     },
@@ -471,6 +499,12 @@
           "mode": "reader",
           "status": "unavailable",
           "reason": "OFFICIAL_ACCESS_CHALLENGE"
+        },
+        {
+          "url": "https://www.crocs.co.kr/c/collection-classicsneaker",
+          "mode": "regional-official-reader-slow-retry",
+          "status": "unavailable",
+          "reason": "OFFICIAL_ACCESS_CHALLENGE; official HTML: PUBLIC_SOURCE_HTTP_429"
         }
       ]
     }

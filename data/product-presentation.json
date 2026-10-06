@@ -924,6 +924,144 @@
       "view": "side",
       "noPerson": true,
       "scale": 1.2
+    },
+    {
+      "id": "verified-adidas-lb3786",
+      "brand": "adidas",
+      "style": "LB3786",
+      "originalImage": "https://assets.adidas.com/images/w_500,f_auto,q_auto/f895b44e477546238787734ab7494f03_9366/ADIDAS_JENNIE_SUPERSTAR_SQ_BALLET_SHOES_White_LB3786_01_00_standard.jpg",
+      "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/f895b44e477546238787734ab7494f03_9366/ADIDAS_JENNIE_SUPERSTAR_SQ_BALLET_SHOES_White_LB3786_01_00_standard.jpg",
+      "sourceUrl": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3786.html",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.15,
+      "offsetY": 0,
+      "checkedAt": "2026-10-06T07:20:59.372Z",
+      "colorSwatches": [
+        "#eeeade"
+      ]
+    },
+    {
+      "id": "verified-adidas-lb3787",
+      "brand": "adidas",
+      "style": "LB3787",
+      "originalImage": "https://assets.adidas.com/images/w_500,f_auto,q_auto/7fadea40747f44788d258ebede73c1d8_9366/ADIDAS_JENNIE_SUPERSTAR_SQ_BALLET_SHOES_Black_LB3787_01_00_standard.jpg",
+      "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/7fadea40747f44788d258ebede73c1d8_9366/ADIDAS_JENNIE_SUPERSTAR_SQ_BALLET_SHOES_Black_LB3787_01_00_standard.jpg",
+      "sourceUrl": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3787.html",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.15,
+      "offsetY": 0,
+      "checkedAt": "2026-10-06T07:20:59.374Z",
+      "colorSwatches": [
+        "#262626"
+      ]
+    },
+    {
+      "id": "verified-adidas-kj5249",
+      "brand": "adidas",
+      "style": "KJ5249",
+      "originalImage": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c1fa351afee54fafaaf367df1902af77_9366/Simone_Rocha_Taekwondo_Ballerina_Pink_KJ5249_01_00_standard.jpg",
+      "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c1fa351afee54fafaaf367df1902af77_9366/Simone_Rocha_Taekwondo_Ballerina_Pink_KJ5249_01_00_standard.jpg",
+      "sourceUrl": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5249.html",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.15,
+      "offsetY": 0,
+      "checkedAt": "2026-10-06T07:20:59.374Z",
+      "colorSwatches": [
+        "#edced4"
+      ]
+    },
+    {
+      "id": "verified-adidas-kj5248",
+      "brand": "adidas",
+      "style": "KJ5248",
+      "originalImage": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c80de8b5d3564c9fb84f63996e200980_9366/Simone_Rocha_Taekwondo_Ballerina_Black_KJ5248_01_00_standard.jpg",
+      "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/c80de8b5d3564c9fb84f63996e200980_9366/Simone_Rocha_Taekwondo_Ballerina_Black_KJ5248_01_00_standard.jpg",
+      "sourceUrl": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5248.html",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.15,
+      "offsetY": 0,
+      "checkedAt": "2026-10-06T07:20:59.374Z",
+      "colorSwatches": [
+        "#232323"
+      ]
+    },
+    {
+      "id": "verified-adidas-kh7452",
+      "brand": "adidas",
+      "style": "KH7452",
+      "originalImage": "https://assets.adidas.com/images/w_500,f_auto,q_auto/d3af39d1e03d43bba685e37cd4c5de8c_9366/Simone_Rocha_Climacool_Shoes_Black_KH7452_01_00_standard.jpg",
+      "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/d3af39d1e03d43bba685e37cd4c5de8c_9366/Simone_Rocha_Climacool_Shoes_Black_KH7452_01_00_standard.jpg",
+      "sourceUrl": "https://www.adidas.com/us/simone-rocha-climacool-shoes/KH7452.html",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.15,
+      "offsetY": 0,
+      "checkedAt": "2026-10-06T07:20:59.374Z",
+      "colorSwatches": [
+        "#242424"
+      ]
+    },
+    {
+      "id": "verified-saucony-s101074-1002",
+      "brand": "Saucony",
+      "style": "S101074-1002",
+      "originalImage": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1002_1/?preset=dw-pdp-primary",
+      "image": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1002_1/?preset=dw-pdp-primary",
+      "sourceUrl": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1,
+      "offsetY": 0,
+      "checkedAt": "2026-10-06T07:20:59.374Z",
+      "colorSwatches": [
+        "#262626"
+      ]
+    },
+    {
+      "id": "verified-saucony-s101074-1004",
+      "brand": "Saucony",
+      "style": "S101074-1004",
+      "originalImage": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1004_1/?preset=dw-pdp-primary",
+      "image": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1004_1/?preset=dw-pdp-primary",
+      "sourceUrl": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1,
+      "offsetY": 0,
+      "checkedAt": "2026-10-06T07:20:59.374Z",
+      "colorSwatches": [
+        "#948e75",
+        "#222222"
+      ]
+    },
+    {
+      "id": "verified-nike-iu3167-002",
+      "brand": "Nike",
+      "style": "IU3167-002",
+      "originalImage": "https://static.nike.com/a/images/t_web_pdp_936_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d066c71a-22ea-47f8-b64a-fee26827a420/NIKE+W+REJUVEN8+JEL+PRINT+QS.png",
+      "image": "https://static.nike.com/a/images/t_web_pdp_936_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d066c71a-22ea-47f8-b64a-fee26827a420/NIKE+W+REJUVEN8+JEL+PRINT+QS.png",
+      "sourceUrl": "https://www.nike.com/t/rejuven8-run-womens-shoes-eIBcnQk9",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.35,
+      "offsetY": -10,
+      "checkedAt": "2026-10-06T07:20:59.374Z",
+      "colorSwatches": [
+        "#222222",
+        "#f5f5f5"
+      ]
     }
   ]
 }

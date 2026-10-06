@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-06T06:41:31.408Z",
+  "checkedAt": "2026-10-06T07:22:15.600Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -1704,7 +1704,7 @@
       "id": "xlsx-dd420b668df34fdd",
       "brand": "Crocs",
       "name": "클래식 플랫폼 클로그 우먼 - 콰츠 / 206750-6UR",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "xlsx-ab33fd84ce6dfab7",
@@ -1722,7 +1722,7 @@
       "id": "xlsx-aa84b5f7be299e18",
       "brand": "Crocs",
       "name": "여성 겟어웨이 플랫폼 플립 BK (26SWFP209410)",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "xlsx-7d0ceda2d5d970f1",
@@ -14147,6 +14147,12 @@
       "brand": "Nike",
       "name": "Nike Blazy",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "verified-new-balance-mt24yj",
+      "brand": "New Balance",
+      "name": "TDS MT2",
+      "reason": "representative-photo-review-required"
     }
   ]
 }
