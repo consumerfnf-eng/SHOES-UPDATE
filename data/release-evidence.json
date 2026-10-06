@@ -3071,6 +3071,464 @@
       },
       "productVerifiedAt": "2026-10-06T07:15:55.368Z",
       "productEvidenceUrl": "https://www.nike.com/t/rejuven8-run-womens-shoes-eIBcnQk9"
+    },
+    {
+      "id": "verified-grounds-10268749758770",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046",
+      "style": "10268749758770",
+      "styleType": "official-product-id",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_445.jpg?v=1786520582",
+      "productType": "sneaker",
+      "officialCategory": "Platform sneakers",
+      "colorway": "BLACK / BLACK",
+      "colors": [
+        {
+          "name": "BLACK / BLACK",
+          "hex": "#262626",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "CPU upper details / Phylon sole / TPU details",
+      "priceLabel": "¥52,800",
+      "country": "JP",
+      "releaseDate": "2026-09-26",
+      "description": "Casual platform sneakers with a flat-adjusted Phylon sole, rubber outsole parts and TPU details; sole height about 7cm. Lace-up dad-sneaker construction.",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:19.379837+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268749758770",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:19.379837+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "3f7b2482f2c6e4e5027d64d77735e6badcedc208b8fae8b71b404b820ede373f",
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb",
+        "modelIdentity": {
+          "id": "grounds-graffiti-2046",
+          "name": "GRAFFITI 2046",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268749758770",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:19.379837+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "3f7b2482f2c6e4e5027d64d77735e6badcedc208b8fae8b71b404b820ede373f",
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_445.jpg?v=1786520582",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb"
+      },
+      "productVerifiedAt": "2026-10-06T08:02:19.379837+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb",
+      "source": "grounds Official Japan"
+    },
+    {
+      "id": "verified-grounds-10268751200562",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046 BEENAWHILE",
+      "style": "10268751200562",
+      "styleType": "official-product-id",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_440.jpg?v=1786526165",
+      "productType": "sneaker",
+      "officialCategory": "Platform sneakers",
+      "colorway": "CLOUDY GRAY / DUSTY GRAY",
+      "colors": [
+        {
+          "name": "CLOUDY GRAY / DUSTY GRAY",
+          "hex": "#aaa9a1",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "CPU upper details / Phylon sole / TPU details",
+      "priceLabel": "¥62,700",
+      "country": "JP",
+      "releaseDate": "2026-09-26",
+      "description": "Casual platform sneakers with a flat-adjusted Phylon sole, rubber outsole parts and TPU details; sole height about 7cm. Lace-up dad-sneaker construction. Distressed finish.",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:19.748510+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268751200562",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:19.748510+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "11addf42da9da2ebb1a0e0333f88a4981107e257df2903785693ad0d54de6f4f",
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg",
+        "modelIdentity": {
+          "id": "grounds-graffiti-2046-beenawhile",
+          "name": "GRAFFITI 2046 BEENAWHILE",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268751200562",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:19.748510+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "11addf42da9da2ebb1a0e0333f88a4981107e257df2903785693ad0d54de6f4f",
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_440.jpg?v=1786526165",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg"
+      },
+      "productVerifiedAt": "2026-10-06T08:02:19.748510+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg",
+      "source": "grounds Official Japan"
+    },
+    {
+      "id": "verified-grounds-10268771287346",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046",
+      "style": "10268771287346",
+      "styleType": "official-product-id",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_321.jpg?v=1786526577",
+      "productType": "sneaker",
+      "officialCategory": "Platform sneakers",
+      "colorway": "BLACK NEON MIX / BLACK MIX",
+      "colors": [
+        {
+          "name": "BLACK NEON MIX / BLACK MIX",
+          "hex": "#474f3b",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "CPU upper details / Phylon sole / TPU details",
+      "priceLabel": "¥52,800",
+      "country": "JP",
+      "releaseDate": "2026-09-26",
+      "description": "Casual platform sneakers with a flat-adjusted Phylon sole, rubber outsole parts and TPU details; sole height about 7cm. Lace-up dad-sneaker construction.",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:20.119770+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268771287346",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:20.119770+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "51a84422286af8f8140e7e2d630fb116f06cd1bc30d71f63bb847f787bbcf3fa",
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm",
+        "modelIdentity": {
+          "id": "grounds-graffiti-2046",
+          "name": "GRAFFITI 2046",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268771287346",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:20.119770+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "51a84422286af8f8140e7e2d630fb116f06cd1bc30d71f63bb847f787bbcf3fa",
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_321.jpg?v=1786526577",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm"
+      },
+      "productVerifiedAt": "2026-10-06T08:02:20.119770+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm",
+      "source": "grounds Official Japan"
+    },
+    {
+      "id": "verified-grounds-10268772991282",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046",
+      "style": "10268772991282",
+      "styleType": "official-product-id",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_435a.jpg?v=1786527025",
+      "productType": "sneaker",
+      "officialCategory": "Platform sneakers",
+      "colorway": "UNICORN / UNICORN",
+      "colors": [
+        {
+          "name": "UNICORN / UNICORN",
+          "hex": "#c6b8ca",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "CPU upper details / Phylon sole / TPU details",
+      "priceLabel": "¥52,800",
+      "country": "JP",
+      "releaseDate": "2026-09-26",
+      "description": "Casual platform sneakers with a flat-adjusted Phylon sole, rubber outsole parts and TPU details; sole height about 7cm. Lace-up dad-sneaker construction.",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:20.512345+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268772991282",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:20.512345+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "97fcd6b7d5467813bc973a4e6bbb4a2b0f220a6b687b0891dac61b8da12981ce",
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu",
+        "modelIdentity": {
+          "id": "grounds-graffiti-2046",
+          "name": "GRAFFITI 2046",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268772991282",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:20.512345+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "97fcd6b7d5467813bc973a4e6bbb4a2b0f220a6b687b0891dac61b8da12981ce",
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_435a.jpg?v=1786527025",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu"
+      },
+      "productVerifiedAt": "2026-10-06T08:02:20.512345+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu",
+      "source": "grounds Official Japan"
+    },
+    {
+      "id": "verified-grounds-10268748677426",
+      "brand": "grounds",
+      "name": "GRAFFITI NOA BEENAWHILE",
+      "style": "10268748677426",
+      "styleType": "official-product-id",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_336.jpg?v=1786520184",
+      "productType": "sneaker",
+      "officialCategory": "Platform sneakers",
+      "colorway": "CLOUDY GRAY / DUSTY GRAY",
+      "colors": [
+        {
+          "name": "CLOUDY GRAY / DUSTY GRAY",
+          "hex": "#aaa9a1",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Knit upper / PVC belt / Phylon sole / TPU details",
+      "priceLabel": "¥60,500",
+      "country": "JP",
+      "releaseDate": "2026-09-26",
+      "description": "Casual platform sneakers with a flat-adjusted Phylon sole, rubber outsole parts and TPU details; sole height about 7cm. Knitted upper with a large PVC strap. Distressed finish.",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:20.906369+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268748677426",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:20.906369+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "6b119a3f63f216d6db8acedac6f96f3f87627fc9f468354c4cf58e8c9416d1e9",
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+        "modelIdentity": {
+          "id": "grounds-graffiti-noa-beenawhile",
+          "name": "GRAFFITI NOA BEENAWHILE",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268748677426",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:20.906369+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "6b119a3f63f216d6db8acedac6f96f3f87627fc9f468354c4cf58e8c9416d1e9",
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_336.jpg?v=1786520184",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg"
+      },
+      "productVerifiedAt": "2026-10-06T08:02:20.906369+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+      "source": "grounds Official Japan",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+        "type": "strap-sneaker",
+        "sneakerSole": true,
+        "checkedAt": "2026-10-06T08:02:20.906369+00:00",
+        "reason": "Official knitted upper and PVC strap on flat-adjusted sneaker sole."
+      }
+    },
+    {
+      "id": "verified-grounds-10268747170098",
+      "brand": "grounds",
+      "name": "GRAFFITI NOA BEENAWHILE",
+      "style": "10268747170098",
+      "styleType": "official-product-id",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_326.jpg?v=1786519842",
+      "productType": "sneaker",
+      "officialCategory": "Platform sneakers",
+      "colorway": "PLUM GRAY / DUSTY GRAY",
+      "colors": [
+        {
+          "name": "PLUM GRAY / DUSTY GRAY",
+          "hex": "#82737e",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Knit upper / PVC belt / Phylon sole / TPU details",
+      "priceLabel": "¥60,500",
+      "country": "JP",
+      "releaseDate": "2026-09-26",
+      "description": "Casual platform sneakers with a flat-adjusted Phylon sole, rubber outsole parts and TPU details; sole height about 7cm. Knitted upper with a large PVC strap. Distressed finish.",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:21.292712+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268747170098",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:21.292712+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "087170a98da05ab8ed7499dea802e6713c5e7a6d1d3adae90e496e46ff01260d",
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+        "modelIdentity": {
+          "id": "grounds-graffiti-noa-beenawhile",
+          "name": "GRAFFITI NOA BEENAWHILE",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268747170098",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:21.292712+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "087170a98da05ab8ed7499dea802e6713c5e7a6d1d3adae90e496e46ff01260d",
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_326.jpg?v=1786519842",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg"
+      },
+      "productVerifiedAt": "2026-10-06T08:02:21.292712+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+      "source": "grounds Official Japan",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+        "type": "strap-sneaker",
+        "sneakerSole": true,
+        "checkedAt": "2026-10-06T08:02:21.292712+00:00",
+        "reason": "Official knitted upper and PVC strap on flat-adjusted sneaker sole."
+      }
+    },
+    {
+      "id": "verified-grounds-10268728688946",
+      "brand": "grounds",
+      "name": "GRAFFITI NOA",
+      "style": "10268728688946",
+      "styleType": "official-product-id",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_331.jpg?v=1786519165",
+      "productType": "sneaker",
+      "officialCategory": "Platform sneakers",
+      "colorway": "BLACK PURPLE NEON / BLACK MIX",
+      "colors": [
+        {
+          "name": "BLACK PURPLE NEON / BLACK MIX",
+          "hex": "#514268",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Knit upper / PVC belt / Phylon sole / TPU details",
+      "priceLabel": "¥48,400",
+      "country": "JP",
+      "releaseDate": "2026-09-26",
+      "description": "Casual platform sneakers with a flat-adjusted Phylon sole, rubber outsole parts and TPU details; sole height about 7cm. Knitted upper with a large PVC strap.",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:21.677037+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268728688946",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:21.677037+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "d318227b3bfe76594652ebc0b6991d97de7587dcbe4cf3fc1eeb62df3560609f",
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+        "modelIdentity": {
+          "id": "grounds-graffiti-noa",
+          "name": "GRAFFITI NOA",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "grounds",
+        "style": "10268728688946",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-10-06T08:02:21.677037+00:00",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "d318227b3bfe76594652ebc0b6991d97de7587dcbe4cf3fc1eeb62df3560609f",
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_331.jpg?v=1786519165",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm"
+      },
+      "productVerifiedAt": "2026-10-06T08:02:21.677037+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+      "source": "grounds Official Japan",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+        "type": "strap-sneaker",
+        "sneakerSole": true,
+        "checkedAt": "2026-10-06T08:02:21.677037+00:00",
+        "reason": "Official knitted upper and PVC strap on flat-adjusted sneaker sole."
+      }
     }
   ]
 }

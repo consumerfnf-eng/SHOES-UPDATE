@@ -1062,6 +1062,125 @@
         "#222222",
         "#f5f5f5"
       ]
+    },
+    {
+      "id": "verified-grounds-10268749758770",
+      "brand": "grounds",
+      "style": "10268749758770",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_445.jpg?v=1786520582",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_445.jpg?v=1786520582",
+      "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.5,
+      "offsetY": -9,
+      "checkedAt": "2026-10-06T08:11:17.318Z",
+      "colorSwatches": [
+        "#262626"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268751200562",
+      "brand": "grounds",
+      "style": "10268751200562",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_440.jpg?v=1786526165",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_440.jpg?v=1786526165",
+      "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.5,
+      "offsetY": -9,
+      "checkedAt": "2026-10-06T08:11:17.319Z",
+      "colorSwatches": [
+        "#aaa9a1"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268771287346",
+      "brand": "grounds",
+      "style": "10268771287346",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_321.jpg?v=1786526577",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_321.jpg?v=1786526577",
+      "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.5,
+      "offsetY": -9,
+      "checkedAt": "2026-10-06T08:11:17.319Z",
+      "colorSwatches": [
+        "#474f3b"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268772991282",
+      "brand": "grounds",
+      "style": "10268772991282",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_435a.jpg?v=1786527025",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_435a.jpg?v=1786527025",
+      "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.5,
+      "offsetY": -9,
+      "checkedAt": "2026-10-06T08:11:17.319Z",
+      "colorSwatches": [
+        "#c6b8ca"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268748677426",
+      "brand": "grounds",
+      "style": "10268748677426",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_336.jpg?v=1786520184",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_336.jpg?v=1786520184",
+      "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.5,
+      "offsetY": -9,
+      "checkedAt": "2026-10-06T08:11:17.319Z",
+      "colorSwatches": [
+        "#aaa9a1"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268747170098",
+      "brand": "grounds",
+      "style": "10268747170098",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_326.jpg?v=1786519842",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_326.jpg?v=1786519842",
+      "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.5,
+      "offsetY": -9,
+      "checkedAt": "2026-10-06T08:11:17.319Z",
+      "colorSwatches": [
+        "#82737e"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268728688946",
+      "brand": "grounds",
+      "style": "10268728688946",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_331.jpg?v=1786519165",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_331.jpg?v=1786519165",
+      "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.5,
+      "offsetY": -9,
+      "checkedAt": "2026-10-06T08:11:17.319Z",
+      "colorSwatches": [
+        "#514268"
+      ]
     }
   ]
 }

@@ -26,7 +26,7 @@ export function pacedOfficialFetch({fetchImpl=fetch,sleep=delay,intervalMs=2500,
 }
 
 export function assertReadableOfficial(text){
-  if(/^Title:.*(?:Just a moment|Access Denied|Pardon Our Interruption|Page Not Found)/im.test(text)||/powered and protected by[\s\S]{0,500}akamai|YOUR ACCESS TO .{1,80} IS TEMPORARILY RESTRICTED|verify (?:that )?you are human|enable javascript and cookies to continue/i.test(text))throw Error('OFFICIAL_ACCESS_CHALLENGE');
+  if(/^Title:.*(?:Just a moment|Access Denied|Pardon Our Interruption|Page Not Found|captcha|robot check|sign in|log in|login|ログイン|로그인)/im.test(text)||/powered and protected by[\s\S]{0,500}akamai|YOUR ACCESS TO .{1,80} IS TEMPORARILY RESTRICTED|verify (?:that )?you are human|enable javascript and cookies to continue/i.test(text))throw Error('OFFICIAL_ACCESS_CHALLENGE');
   if(/(?:^|\n)#{1,3}\s*(?:\*\*)?PAGE NOT FOUND/i.test(text))throw Error('OFFICIAL_PAGE_NOT_FOUND');
   return text;
 }
@@ -48,7 +48,7 @@ export function officialHtmlMarkdown(html,url){
   if(body.length<150||!/\]\(https:\/\//.test(body))throw Error('OFFICIAL_HTML_NO_CONTENT');
   return assertReadableOfficial(`Title: ${title}\nURL Source: ${url}\nMarkdown Content:\n${body}`);
 }
-export function createOfficialReader({read,origins,fetchImpl=fetch,sleep=delay,intervalMs=2500,retryMs=5000}={}){
+export function createOfficialReader({read,origins,fetchImpl=fetch,sleep=delay,intervalMs=2500,retryMs=5000,renderedRead}={}){
   const allowed=new Set(origins.map(url=>new URL(url).origin)),diagnostics=[];
   const officialFetch=pacedOfficialFetch({fetchImpl,sleep,intervalMs,retryMs});
   return {diagnostics,async read(url,timeout){
@@ -58,7 +58,12 @@ export function createOfficialReader({read,origins,fetchImpl=fetch,sleep=delay,i
       if(!allowed.has(new URL(target).origin))throw primary;
       try{const html=await readPublicSource(target,{fetchImpl:officialFetch,maxBytes:6_000_000,headers:{Accept:'text/html'}}),text=officialHtmlMarkdown(html,target);
         diagnostics.push({url:target,method:'direct-official-html',status:'readable',primaryError:primary.message});return text;
-      }catch(error){diagnostics.push({url:target,method:'direct-official-html',status:'unavailable',primaryError:primary.message,error:error.message});throw Error(`${primary.message}; official HTML: ${error.message}`);}
+      }catch(error){
+        diagnostics.push({url:target,method:'direct-official-html',status:'unavailable',primaryError:primary.message,error:error.message});
+        if(renderedRead)try{const text=assertReadableOfficial(await renderedRead(target));diagnostics.push({url:target,method:'rendered-public-official',status:'readable'});return text;}
+        catch(renderedError){diagnostics.push({url:target,method:'rendered-public-official',status:'unavailable',error:renderedError.message});throw Error(`${primary.message}; official HTML: ${error.message}; rendered: ${renderedError.message}`);}
+        throw Error(`${primary.message}; official HTML: ${error.message}`);
+      }
     }
   }};
 }

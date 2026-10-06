@@ -34,6 +34,7 @@ jobs:
       - name: Collect and verify complete weekly snapshot
         env:
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         run: |
           if [ "${{ github.event_name }}" = 'workflow_dispatch' ] && [ "${{ inputs.force }}" = 'true' ]; then
             npm run weekly

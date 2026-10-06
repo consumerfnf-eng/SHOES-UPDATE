@@ -438,6 +438,48 @@
       "sha256": "4bbeaf3cbbe530966ac61d9216bc1dd6c949e31c49a2996b22ee6538546cb506",
       "sourceUrl": "https://thekit.wolverineworldwide.com/match/media_lookup/S101074-1002_1/?preset=dw-pdp-primary",
       "checkedAt": "2026-10-06T07:21:04.779Z"
+    },
+    "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_435a.jpg?v=1786527025": {
+      "path": "/images/349e73a02de861b3840247300f4e0fe92c096b5072b9e59025e1590dbe00ddc9.webp",
+      "sha256": "349e73a02de861b3840247300f4e0fe92c096b5072b9e59025e1590dbe00ddc9",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_435a.jpg?v=1786527025",
+      "checkedAt": "2026-10-06T08:11:41.070Z"
+    },
+    "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_445.jpg?v=1786520582": {
+      "path": "/images/f6a7f01e0582b9f3362cb01c667596b569b72a0a037dd4480fee94e349182607.webp",
+      "sha256": "f6a7f01e0582b9f3362cb01c667596b569b72a0a037dd4480fee94e349182607",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_445.jpg?v=1786520582",
+      "checkedAt": "2026-10-06T08:11:41.074Z"
+    },
+    "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_321.jpg?v=1786526577": {
+      "path": "/images/6350ebfd46f6978895003604184ecc582277536ef29067605b2e5f5c73dad26a.webp",
+      "sha256": "6350ebfd46f6978895003604184ecc582277536ef29067605b2e5f5c73dad26a",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_321.jpg?v=1786526577",
+      "checkedAt": "2026-10-06T08:11:41.075Z"
+    },
+    "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_331.jpg?v=1786519165": {
+      "path": "/images/2c1e78b6457cb099a7f4d8022c9f36039e2c35b5c450a341a769ae5eef71ed77.webp",
+      "sha256": "2c1e78b6457cb099a7f4d8022c9f36039e2c35b5c450a341a769ae5eef71ed77",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_331.jpg?v=1786519165",
+      "checkedAt": "2026-10-06T08:11:41.579Z"
+    },
+    "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_440.jpg?v=1786526165": {
+      "path": "/images/6c96ad8a1f44d6ee14e29e0f03502436f67dc9d39a611f02a176b9c973e27236.jpg",
+      "sha256": "6c96ad8a1f44d6ee14e29e0f03502436f67dc9d39a611f02a176b9c973e27236",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_440.jpg?v=1786526165",
+      "checkedAt": "2026-10-06T08:11:41.595Z"
+    },
+    "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_336.jpg?v=1786520184": {
+      "path": "/images/2a9c35027005cb6b852cdff827108e10109822cc8cd18c1317f7df9202010119.jpg",
+      "sha256": "2a9c35027005cb6b852cdff827108e10109822cc8cd18c1317f7df9202010119",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_336.jpg?v=1786520184",
+      "checkedAt": "2026-10-06T08:11:41.653Z"
+    },
+    "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_326.jpg?v=1786519842": {
+      "path": "/images/3529afc26a34eb774f9bcf80c5c71dfac78ee9da6791d0cdb7be5123051fc9a0.jpg",
+      "sha256": "3529afc26a34eb774f9bcf80c5c71dfac78ee9da6791d0cdb7be5123051fc9a0",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_326.jpg?v=1786519842",
+      "checkedAt": "2026-10-06T08:11:42.131Z"
     }
   }
 }

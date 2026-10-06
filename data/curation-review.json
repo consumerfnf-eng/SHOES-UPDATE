@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-06T07:22:15.600Z",
+  "checkedAt": "2026-10-06T08:11:17.335Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -1056,13 +1056,13 @@
       "id": "manual-55389facd5178602",
       "brand": "Rockfish Weatherwear",
       "name": "Glair Platform Fisherman Sandals - Clear Black",
-      "reason": "release-day-evidence-required"
+      "reason": "flat-platform-unverified"
     },
     {
       "id": "manual-a9a9cdee239df39d",
       "brand": "Rockfish Weatherwear",
       "name": "Glair Platform Fisherman Sandals - Light Grey",
-      "reason": "release-day-evidence-required"
+      "reason": "flat-platform-unverified"
     },
     {
       "id": "manual-83e0ee2a47223593",
@@ -9066,7 +9066,7 @@
       "id": "new-20260923-556b516f561ae480",
       "brand": "Nike",
       "name": "Nike Hybrid RN",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "new-20260923-70fc0afdcc7192b0",
@@ -9078,7 +9078,7 @@
       "id": "new-20260923-1c55de5723ea3ada",
       "brand": "Nike",
       "name": "Nike Hybrid RN",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "new-20260923-1f867d740a455285",

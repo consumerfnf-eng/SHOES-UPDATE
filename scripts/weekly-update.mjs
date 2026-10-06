@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import {runDaily} from './run_daily_update.mjs';
 import {createOfficialReader} from './official-reader.mjs';
+import {createRenderedOfficialReader} from './rendered-official-reader.mjs';
 import {createJinaClient} from './jina_client.mjs';
 import {collectOfficialEvidence,mergePreserving} from './collect-evidence.mjs';
 import {collectSignals} from './collect-signals.mjs';
@@ -19,7 +20,9 @@ const weekStart=sunday.toISOString().slice(0,10);
 if(process.argv.includes('--only-if-stale')&&source.collection?.lastSuccessfulCollectionAt&&kstDay(source.collection.lastSuccessfulCollectionAt)>=weekStart){console.log('This week already has a completed collection; no duplicate collection.');process.exit(0);}
 const client=createJinaClient({key:process.env.JINA_API_KEY||''});
 const officialSources=await readJson(new URL('config/daily_sources.json',root));
-const reader=createOfficialReader({read:client.read,origins:Object.values(officialSources).flat().map(s=>s.url)});
+const origins=Object.values(officialSources).flat().map(s=>s.url);
+const rendered=createRenderedOfficialReader({origins,apiKey:process.env.FIRECRAWL_API_KEY||''});
+const reader=createOfficialReader({read:client.read,origins,renderedRead:rendered.read});
 try {
   const run=await runDaily({read:reader.read,skipTrends:true});
   const combined=mergePreserving(source.products,run.products);
@@ -35,7 +38,7 @@ try {
   const signalNow=new Date(),signals=await collectSignals({products:withEvidence.filter(p=>eligibleIds.has(p.id)),read:reader.read,now:signalNow});
   const keywordNow=new Date(),[search,forecast,editorial,style,market]=await Promise.all([collectSearchKeywords({now:keywordNow}),collectForecastKeywords({now:keywordNow}),collectEditorialKeywords({now:keywordNow}),collectStyleEditorials({now:keywordNow}),collectStyleMarket({now:keywordNow,previousObservations:source.collection?.styleObservations||[]})]);
   const collection={checkedAt:now.toISOString(),lastSuccessfulCollectionAt:new Date().toISOString(),coverage:run.coverage,unavailableBrands:run.coverage.filter(x=>!x.responses).map(x=>x.brand),scope:'weekly',sourceDirectory:signals.sourceDirectory,keywordCheckedAt:keywordNow.toISOString(),sourceRanks:[...search.sourceRanks,...forecast.sourceRanks,...editorial.sourceRanks,...style.sourceRanks],styleObservations:[...style.observations,...market.observations],styleMarketStatus:market.diagnostics,searchRankStatus:search.searchRankStatus,forecastStatus:forecast.forecastStatus,editorialStatus:[...editorial.editorialStatus,...style.editorialStatus]};
-  await atomicJson(new URL('logs/weekly-diagnostics.json',root),{checkedAt:now.toISOString(),releaseChecks:[...verified.diagnostics,...structured.diagnostics],signalChecks:signals.diagnostics,keywordChecks:[...search.diagnostics,...forecast.diagnostics,...editorial.diagnostics,...style.diagnostics,...market.diagnostics],crawler:client.stats,officialFallbacks:reader.diagnostics});
+  await atomicJson(new URL('logs/weekly-diagnostics.json',root),{checkedAt:now.toISOString(),releaseChecks:[...verified.diagnostics,...structured.diagnostics],signalChecks:signals.diagnostics,keywordChecks:[...search.diagnostics,...forecast.diagnostics,...editorial.diagnostics,...style.diagnostics,...market.diagnostics],crawler:client.stats,officialFallbacks:reader.diagnostics,renderedOfficial:rendered.stats});
   const result=await publishCurated({now:new Date(),incoming:[...run.products,...verified.products,...structured.products,...signals.products],collection});
   console.log(`Weekly snapshot complete: ${result.snapshot.products.length} public products; ${result.review.held.length} held for verification.`);
 } catch(e) {await fs.mkdir(new URL('logs/',root),{recursive:true});await atomicJson(new URL('logs/weekly-error.json',root),{error:e.message,at:new Date().toISOString()});throw e;}

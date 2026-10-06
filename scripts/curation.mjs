@@ -27,11 +27,12 @@ export function isOfficialProductUrl(brand,url){
 }
 export function officialEvidenceFor(p,today){
   const product=p.officialProductEvidence,image=p.officialImageEvidence;
-  const identity=e=>e?.verified===true&&canonicalBrand(e.brand)===canonicalBrand(p.brand)&&key(p.style)&&key(e.style)===key(p.style)&&Number.isFinite(Date.parse(e.verifiedAt))&&kstDay(e.verifiedAt)<=today;
+  const identifierMatches=e=>p.styleType==='official-product-id'?e?.identifierType==='official-product-id':e?.identifierType!=='official-product-id';
+  const identity=e=>e?.verified===true&&identifierMatches(e)&&canonicalBrand(e.brand)===canonicalBrand(p.brand)&&key(p.style)&&key(e.style)===key(p.style)&&Number.isFinite(Date.parse(e.verifiedAt))&&kstDay(e.verifiedAt)<=today;
   const partner=canonicalBrand(p.brand)==='ASICS'&&httpUrl(p.url)&&/^(?:www\.)?ceciliebahnsen\.com$/.test(new URL(p.url).hostname)&&productCollaborationBrands(p).includes('Cecilie Bahnsen')&&product?.styleEvidence?.verified===true&&key(product.styleEvidence.style)===key(p.style)&&isOfficialProductUrl('ASICS',product.styleEvidence.url);
   if(!identity(product)||!identity(image)||!isOfficialProductUrl(p.brand,p.url)&&!partner||product.url!==p.url||image.url!==p.image||image.sourceUrl!==p.url||!httpUrl(p.image))return null;
   const clean=(e,fields)=>Object.fromEntries(fields.filter(k=>e[k]!==undefined).map(k=>[k,e[k]]));
-  const verifiedProduct=clean(product,['verified','url','verifiedAt','brand','style','verificationMethod','contentHash']);
+  const verifiedProduct=clean(product,['verified','url','verifiedAt','brand','style','identifierType','verificationMethod','contentHash']);
   if(product.verificationMethod==='official-partner-exact-name-color-image-with-reviewed-style'){
     const external=product.externalStyleEvidence;
     if(key(product.matchedName)!==key(p.name)||!product.publisherStyle||external?.verified!==true||key(external.style)!==key(p.style)||!httpUrl(external.url)||!Number.isFinite(Date.parse(external.verifiedAt)))return null;
@@ -40,10 +41,25 @@ export function officialEvidenceFor(p,today){
   if(partner)verifiedProduct.styleEvidence={verified:true,url:product.styleEvidence.url,style:product.styleEvidence.style};
   const model=product.modelIdentity;
   if(model?.verified===true&&model.id&&model.name&&key(model.name)===key(String(p.name).split(/\s[—–]\s/)[0]))verifiedProduct.modelIdentity={id:model.id,name:model.name,verified:true};
-  return {officialProductEvidence:verifiedProduct,officialImageEvidence:clean(image,['verified','url','sourceUrl','verifiedAt','brand','style','verificationMethod','contentHash'])};
+  return {officialProductEvidence:verifiedProduct,officialImageEvidence:clean(image,['verified','url','sourceUrl','verifiedAt','brand','style','identifierType','verificationMethod','contentHash'])};
 }
 const excluded = /\b(loafers?|oxfords?|derby|derbies|pumps?|stilettos?|heels|(?:high|kitten|block|wedge)[ -]?heels?|heeled|moccasins?|mocassins?|escarpins?|decolletes?|slingbacks?|dress (?:shoes?|sandals?)|ballerina flats?|ballet flats?|chelsea|boots?|snowclog|ski|snowboard|winter|fur[ -]lined|insulated)\b|로퍼|구두|슬링백|(?:하이|키튼|블록|웨지)힐|펌프스|부츠|방한|발레 플랫/i;
 const performance = /\b(?:soccer|football|baseball|track|golf)\s+(?:boots?|cleats?|spikes?|shoes?)|\b(?:racing spikes|competition spikes|basketball shoes)\b|축구화|야구화|스파이크/i;
+const sneakerStructure = /\b(?:sneakers?|running (?:shoes?|heritage)|trainers?|sneaker (?:sole|midsole|outsole|construction))\b|스니커|운동화|러닝화|スニーカー|运动鞋|運動鞋|跑鞋/i;
+const namedHybrid = /\b(?:mules?|mary[ -]?jane|ballet|ballerinas?)\b|메리제인|발레리나|발레|뮬|バレエ|バレリーナ|メリージェーン|ミュール|芭蕾|玛丽珍|瑪麗珍|穆勒/i;
+const otherHybrid = /\b(?:clogs?|sandals?|slides?|espadrilles?|fisherman|hybrids?)\b|클로그|샌들|슬라이드|에스파드리유|피셔맨|혼합|하이브리드|クロッグ|サンダル|エスパドリーユ|ハイブリッド|凉鞋|涼鞋|混合/i;
+export function sneakerHybridCandidate(p) {
+  const title = `${p.name || ''} ${p.officialCategory || ''} ${p.hybridReview?.approved ? p.hybridReview.type || '' : ''}`;
+  return namedHybrid.test(title) || otherHybrid.test(title) || p.category === 'hybrid' || p.hybridReview?.approved === true && p.hybridReview.sneakerSole === true;
+}
+export function officialHybridReview(p, description, checkedAt) {
+  if (!isOfficialProductUrl(p.brand,p.url) || !sneakerHybridCandidate(p) || !sneakerStructure.test(description || '')) return null;
+  // A comparison with running shoes does not establish a sneaker base. Either
+  // the verified product name declares one, or the description names its base.
+  const construction=/\b(?:sneaker|trainer|running shoe)[ -](?:sole|midsole|outsole|construction|base)|\b(?:sole|midsole|outsole|base)\b[^.!?]{0,45}\b(?:sneaker|trainer|running shoe)|(?:스니커|운동화|러닝화)[^.!?]{0,15}(?:솔|밑창|미드솔)|(?:スニーカー|运动鞋|運動鞋|跑鞋)[^.!?]{0,15}(?:ソール|底)/i;
+  if(!sneakerStructure.test(p.name||'')&&!construction.test(description||''))return null;
+  return {approved:true,url:p.url,type:'hybrid',sneakerSole:true,checkedAt,method:'official-product-sneaker-description'};
+}
 export function classifyFootwear(p) {
   // Negative gates run first for every record; legacy verification cannot bypass them.
   // Include the normalized source category/type. Several official product feeds
@@ -68,9 +84,13 @@ export function classifyFootwear(p) {
   }
   // Inspiration mentioned in a description does not change a conventional runner
   // into a hybrid. Use its actual product type or a reviewed construction.
-  if (/\b(?:mules?|mary[ -]?jane|ballet|ballerinas?)\b|메리제인|발레리나|뮬/i.test(`${title} ${p.hybridReview?.approved?p.hybridReview.type||'':''}`)) {
+  // All reviewed sneaker hybrids are eligible, including sandal/clog and new
+  // mixed forms. Plain summer sandals/clogs keep their own separate gates.
+  const hybridTitle=`${title} ${p.hybridReview?.approved?p.hybridReview.type||'':''}`;
+  const reviewedSneakerBase=p.hybridReview?.approved===true&&p.hybridReview.sneakerSole===true&&p.hybridReview.url===p.url&&isOfficialProductUrl(p.brand,p.url);
+  if (namedHybrid.test(hybridTitle) || sneakerHybridCandidate(p) && (sneakerStructure.test(p.name||'') || reviewedSneakerBase || /\bhybrids?\b|하이브리드|혼합|ハイブリッド|混合/i.test(hybridTitle) || p.category==='hybrid')) {
     if (!p.hybridReview?.approved || !httpUrl(p.hybridReview.url)) return { reason: 'hybrid-review-required' };
-    if (!/\b(?:sneakers?|running shoes?|trainers?|sneaker sole)\b|스니커|운동화/i.test(context) && !(p.hybridReview.sneakerSole===true&&p.hybridReview.url===p.url&&isOfficialProductUrl(p.brand,p.url)))return {reason:'sneaker-structure-unverified'};
+    if (!sneakerStructure.test(context) && !reviewedSneakerBase)return {reason:'sneaker-structure-unverified'};
     return { category: 'hybrid' };
   }
   if (/\b(?:clog|클로그)\b/i.test(title)) {
@@ -144,12 +164,14 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   if(state==='uncertain'||state==='invalid')return {reason:release.precision==='month'?'release-month-window-uncertain':'upcoming-evidence-or-range'};
   if (!httpUrl(raw.url) || !httpUrl(raw.image)) return { reason: 'product-url-or-image-required' };
   if (!Number.isFinite(Date.parse(raw.productVerifiedAt)) || !httpUrl(raw.productEvidenceUrl)) return { reason: 'product-verification-required' };
-  const official=officialEvidenceFor(raw,today),socialMetrics=validateSocialMetrics({...raw,...(official||{}),brand},today,{officialEligible:!!official,now});
+  const official=officialEvidenceFor(raw,today);
+  if(raw.styleType==='official-product-id'&&!official)return {reason:'official-product-id-evidence-required'};
+  const socialMetrics=validateSocialMetrics({...raw,...(official||{}),brand},today,{officialEligible:!!official,now});
   const visibleSignals = validateSignals(raw.sourceSignals, today), hot = popularity(visibleSignals, today,{product:raw,socialMetrics,officialEligible:!!official});
   const product = { id: raw.id, brand, name: raw.name, category: type.category, productType: type.category, ...fit,
     modelKey:raw.modelGroup||`${key(brand)}|${key(String(raw.name).split(/ — | – /)[0])}`,
     releaseDate: raw.releaseDate, releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),
-    url: raw.url, image: raw.image, style: raw.style || '', colorway: raw.colorway || '', colors: raw.colors || [],
+    url: raw.url, image: raw.image, style: raw.style || '',...(raw.styleType==='official-product-id'?{styleType:raw.styleType}:{}),colorway: raw.colorway || '', colors: raw.colors || [],
     gender: raw.gender || '', material: raw.material || '', priceLabel: raw.priceLabel || '',
     description:[type.category==='sneaker'?'스니커즈':type.category==='clog'?'여름 클로그':type.category==='hybrid'?'검토된 혼합형 스니커즈':type.category==='jelly'?'플랫 젤리 슈즈':type.category==='platform-shoe'?'캐주얼 플랫폼 슈즈':'캐주얼 샌들',...fit.fitReasons].join(' · '),
     footwearStructure:raw.footwearStructure||(['jelly','platform-shoe','platform-sandal'].includes(type.category)?{category:type.category,description:raw.description,officialCategory:raw.officialCategory}:undefined),

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-06T07:22:15.600Z",
+  "publishedAt": "2026-10-06T08:11:17.335Z",
   "periodStart": "2026-07-06",
   "asOf": "2026-10-06",
   "brands": [
@@ -1379,6 +1379,785 @@
         "cachedPath": "/images/e7800898e3e969f8f7b2c1bdfd5a3112f7881fb32277cc59e7f99e06b601f16a.webp"
       },
       "colorSwatches": []
+    },
+    {
+      "id": "verified-grounds-10268749758770",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "grounds|graffiti2046",
+      "releaseDate": "2026-09-26",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:19.379837+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_445.jpg?v=1786520582",
+      "style": "10268749758770",
+      "styleType": "official-product-id",
+      "colorway": "BLACK / BLACK",
+      "colors": [
+        {
+          "name": "BLACK / BLACK",
+          "hex": "#262626",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "CPU upper details / Phylon sole / TPU details",
+      "priceLabel": "¥52,800",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb",
+        "verifiedAt": "2026-10-06T08:02:19.379837+00:00",
+        "brand": "grounds",
+        "style": "10268749758770",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "3f7b2482f2c6e4e5027d64d77735e6badcedc208b8fae8b71b404b820ede373f",
+        "modelIdentity": {
+          "id": "grounds-graffiti-2046",
+          "name": "GRAFFITI 2046",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_445.jpg?v=1786520582",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb",
+        "verifiedAt": "2026-10-06T08:02:19.379837+00:00",
+        "brand": "grounds",
+        "style": "10268749758770",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "3f7b2482f2c6e4e5027d64d77735e6badcedc208b8fae8b71b404b820ede373f"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "JP",
+      "lastVerifiedAt": "2026-10-06T08:02:19.379837+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "platform"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "shape:platform",
+        "brand:grounds"
+      ],
+      "presentation": {
+        "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_445.jpg?v=1786520582",
+        "scale": 1.5,
+        "offsetY": -9,
+        "view": "side",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb",
+        "checkedAt": "2026-10-06T08:11:17.318Z",
+        "cachedPath": "/images/f6a7f01e0582b9f3362cb01c667596b569b72a0a037dd4480fee94e349182607.webp"
+      },
+      "colorSwatches": [
+        "#262626"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268771287346",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "grounds|graffiti2046",
+      "releaseDate": "2026-09-26",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:20.119770+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_321.jpg?v=1786526577",
+      "style": "10268771287346",
+      "styleType": "official-product-id",
+      "colorway": "BLACK NEON MIX / BLACK MIX",
+      "colors": [
+        {
+          "name": "BLACK NEON MIX / BLACK MIX",
+          "hex": "#474f3b",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "CPU upper details / Phylon sole / TPU details",
+      "priceLabel": "¥52,800",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm",
+        "verifiedAt": "2026-10-06T08:02:20.119770+00:00",
+        "brand": "grounds",
+        "style": "10268771287346",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "51a84422286af8f8140e7e2d630fb116f06cd1bc30d71f63bb847f787bbcf3fa",
+        "modelIdentity": {
+          "id": "grounds-graffiti-2046",
+          "name": "GRAFFITI 2046",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_321.jpg?v=1786526577",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm",
+        "verifiedAt": "2026-10-06T08:02:20.119770+00:00",
+        "brand": "grounds",
+        "style": "10268771287346",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "51a84422286af8f8140e7e2d630fb116f06cd1bc30d71f63bb847f787bbcf3fa"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "JP",
+      "lastVerifiedAt": "2026-10-06T08:02:20.119770+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "platform"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "shape:platform",
+        "brand:grounds"
+      ],
+      "presentation": {
+        "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_321.jpg?v=1786526577",
+        "scale": 1.5,
+        "offsetY": -9,
+        "view": "side",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm",
+        "checkedAt": "2026-10-06T08:11:17.319Z",
+        "cachedPath": "/images/6350ebfd46f6978895003604184ecc582277536ef29067605b2e5f5c73dad26a.webp"
+      },
+      "colorSwatches": [
+        "#474f3b"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268772991282",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "grounds|graffiti2046",
+      "releaseDate": "2026-09-26",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:20.512345+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_435a.jpg?v=1786527025",
+      "style": "10268772991282",
+      "styleType": "official-product-id",
+      "colorway": "UNICORN / UNICORN",
+      "colors": [
+        {
+          "name": "UNICORN / UNICORN",
+          "hex": "#c6b8ca",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "CPU upper details / Phylon sole / TPU details",
+      "priceLabel": "¥52,800",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu",
+        "verifiedAt": "2026-10-06T08:02:20.512345+00:00",
+        "brand": "grounds",
+        "style": "10268772991282",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "97fcd6b7d5467813bc973a4e6bbb4a2b0f220a6b687b0891dac61b8da12981ce",
+        "modelIdentity": {
+          "id": "grounds-graffiti-2046",
+          "name": "GRAFFITI 2046",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_435a.jpg?v=1786527025",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu",
+        "verifiedAt": "2026-10-06T08:02:20.512345+00:00",
+        "brand": "grounds",
+        "style": "10268772991282",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "97fcd6b7d5467813bc973a4e6bbb4a2b0f220a6b687b0891dac61b8da12981ce"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "JP",
+      "lastVerifiedAt": "2026-10-06T08:02:20.512345+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "platform"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "shape:platform",
+        "brand:grounds"
+      ],
+      "presentation": {
+        "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_435a.jpg?v=1786527025",
+        "scale": 1.5,
+        "offsetY": -9,
+        "view": "side",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu",
+        "checkedAt": "2026-10-06T08:11:17.319Z",
+        "cachedPath": "/images/349e73a02de861b3840247300f4e0fe92c096b5072b9e59025e1590dbe00ddc9.webp"
+      },
+      "colorSwatches": [
+        "#c6b8ca"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268751200562",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046 BEENAWHILE",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "grounds|graffiti2046beenawhile",
+      "releaseDate": "2026-09-26",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:19.748510+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_440.jpg?v=1786526165",
+      "style": "10268751200562",
+      "styleType": "official-product-id",
+      "colorway": "CLOUDY GRAY / DUSTY GRAY",
+      "colors": [
+        {
+          "name": "CLOUDY GRAY / DUSTY GRAY",
+          "hex": "#aaa9a1",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "CPU upper details / Phylon sole / TPU details",
+      "priceLabel": "¥62,700",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg",
+        "verifiedAt": "2026-10-06T08:02:19.748510+00:00",
+        "brand": "grounds",
+        "style": "10268751200562",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "11addf42da9da2ebb1a0e0333f88a4981107e257df2903785693ad0d54de6f4f",
+        "modelIdentity": {
+          "id": "grounds-graffiti-2046-beenawhile",
+          "name": "GRAFFITI 2046 BEENAWHILE",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_440.jpg?v=1786526165",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg",
+        "verifiedAt": "2026-10-06T08:02:19.748510+00:00",
+        "brand": "grounds",
+        "style": "10268751200562",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "11addf42da9da2ebb1a0e0333f88a4981107e257df2903785693ad0d54de6f4f"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "JP",
+      "lastVerifiedAt": "2026-10-06T08:02:19.748510+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "platform"
+      ],
+      "searchConceptIds": [
+        "style:worn-in",
+        "category:footwear",
+        "category:sneakers",
+        "shape:platform",
+        "brand:grounds"
+      ],
+      "presentation": {
+        "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_440.jpg?v=1786526165",
+        "scale": 1.5,
+        "offsetY": -9,
+        "view": "side",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg",
+        "checkedAt": "2026-10-06T08:11:17.319Z",
+        "cachedPath": "/images/6c96ad8a1f44d6ee14e29e0f03502436f67dc9d39a611f02a176b9c973e27236.jpg"
+      },
+      "colorSwatches": [
+        "#aaa9a1"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268728688946",
+      "brand": "grounds",
+      "name": "GRAFFITI NOA",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "grounds|graffitinoa",
+      "releaseDate": "2026-09-26",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:21.677037+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_331.jpg?v=1786519165",
+      "style": "10268728688946",
+      "styleType": "official-product-id",
+      "colorway": "BLACK PURPLE NEON / BLACK MIX",
+      "colors": [
+        {
+          "name": "BLACK PURPLE NEON / BLACK MIX",
+          "hex": "#514268",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Knit upper / PVC belt / Phylon sole / TPU details",
+      "priceLabel": "¥48,400",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "Platform sneakers",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+        "type": "strap-sneaker",
+        "sneakerSole": true,
+        "checkedAt": "2026-10-06T08:02:21.677037+00:00",
+        "reason": "Official knitted upper and PVC strap on flat-adjusted sneaker sole."
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+        "verifiedAt": "2026-10-06T08:02:21.677037+00:00",
+        "brand": "grounds",
+        "style": "10268728688946",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "d318227b3bfe76594652ebc0b6991d97de7587dcbe4cf3fc1eeb62df3560609f",
+        "modelIdentity": {
+          "id": "grounds-graffiti-noa",
+          "name": "GRAFFITI NOA",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_331.jpg?v=1786519165",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+        "verifiedAt": "2026-10-06T08:02:21.677037+00:00",
+        "brand": "grounds",
+        "style": "10268728688946",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "d318227b3bfe76594652ebc0b6991d97de7587dcbe4cf3fc1eeb62df3560609f"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "JP",
+      "lastVerifiedAt": "2026-10-06T08:02:21.677037+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "platform"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "shape:platform",
+        "brand:grounds"
+      ],
+      "presentation": {
+        "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_331.jpg?v=1786519165",
+        "scale": 1.5,
+        "offsetY": -9,
+        "view": "side",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm",
+        "checkedAt": "2026-10-06T08:11:17.319Z",
+        "cachedPath": "/images/2c1e78b6457cb099a7f4d8022c9f36039e2c35b5c450a341a769ae5eef71ed77.webp"
+      },
+      "colorSwatches": [
+        "#514268"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268748677426",
+      "brand": "grounds",
+      "name": "GRAFFITI NOA BEENAWHILE",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "grounds|graffitinoabeenawhile",
+      "releaseDate": "2026-09-26",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:20.906369+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_336.jpg?v=1786520184",
+      "style": "10268748677426",
+      "styleType": "official-product-id",
+      "colorway": "CLOUDY GRAY / DUSTY GRAY",
+      "colors": [
+        {
+          "name": "CLOUDY GRAY / DUSTY GRAY",
+          "hex": "#aaa9a1",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Knit upper / PVC belt / Phylon sole / TPU details",
+      "priceLabel": "¥60,500",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "Platform sneakers",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+        "type": "strap-sneaker",
+        "sneakerSole": true,
+        "checkedAt": "2026-10-06T08:02:20.906369+00:00",
+        "reason": "Official knitted upper and PVC strap on flat-adjusted sneaker sole."
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+        "verifiedAt": "2026-10-06T08:02:20.906369+00:00",
+        "brand": "grounds",
+        "style": "10268748677426",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "6b119a3f63f216d6db8acedac6f96f3f87627fc9f468354c4cf58e8c9416d1e9",
+        "modelIdentity": {
+          "id": "grounds-graffiti-noa-beenawhile",
+          "name": "GRAFFITI NOA BEENAWHILE",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_336.jpg?v=1786520184",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+        "verifiedAt": "2026-10-06T08:02:20.906369+00:00",
+        "brand": "grounds",
+        "style": "10268748677426",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "6b119a3f63f216d6db8acedac6f96f3f87627fc9f468354c4cf58e8c9416d1e9"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "JP",
+      "lastVerifiedAt": "2026-10-06T08:02:20.906369+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "platform"
+      ],
+      "searchConceptIds": [
+        "style:worn-in",
+        "category:footwear",
+        "category:sneakers",
+        "shape:platform",
+        "brand:grounds"
+      ],
+      "presentation": {
+        "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_336.jpg?v=1786520184",
+        "scale": 1.5,
+        "offsetY": -9,
+        "view": "side",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg",
+        "checkedAt": "2026-10-06T08:11:17.319Z",
+        "cachedPath": "/images/2a9c35027005cb6b852cdff827108e10109822cc8cd18c1317f7df9202010119.jpg"
+      },
+      "colorSwatches": [
+        "#aaa9a1"
+      ]
+    },
+    {
+      "id": "verified-grounds-10268747170098",
+      "brand": "grounds",
+      "name": "GRAFFITI NOA BEENAWHILE",
+      "category": "hybrid",
+      "productType": "hybrid",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "grounds|graffitinoabeenawhile",
+      "releaseDate": "2026-09-26",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://grounds-fw.jp/blogs/news/graffiti",
+        "precision": "day",
+        "verified": true,
+        "official": true,
+        "verifiedAt": "2026-10-06T08:02:21.292712+00:00",
+        "excerpt": "Official GRAFFITI announcement lists this model/color: 発売予定日：9月26日 (2026)."
+      },
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+      "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_326.jpg?v=1786519842",
+      "style": "10268747170098",
+      "styleType": "official-product-id",
+      "colorway": "PLUM GRAY / DUSTY GRAY",
+      "colors": [
+        {
+          "name": "PLUM GRAY / DUSTY GRAY",
+          "hex": "#82737e",
+          "accuracy": "approximate"
+        }
+      ],
+      "gender": "Unisex",
+      "material": "Knit upper / PVC belt / Phylon sole / TPU details",
+      "priceLabel": "¥60,500",
+      "description": "검토된 혼합형 스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "Platform sneakers",
+      "hybridReview": {
+        "approved": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+        "type": "strap-sneaker",
+        "sneakerSole": true,
+        "checkedAt": "2026-10-06T08:02:21.292712+00:00",
+        "reason": "Official knitted upper and PVC strap on flat-adjusted sneaker sole."
+      },
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+        "verifiedAt": "2026-10-06T08:02:21.292712+00:00",
+        "brand": "grounds",
+        "style": "10268747170098",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "087170a98da05ab8ed7499dea802e6713c5e7a6d1d3adae90e496e46ff01260d",
+        "modelIdentity": {
+          "id": "grounds-graffiti-noa-beenawhile",
+          "name": "GRAFFITI NOA BEENAWHILE",
+          "verified": true
+        }
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_326.jpg?v=1786519842",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+        "verifiedAt": "2026-10-06T08:02:21.292712+00:00",
+        "brand": "grounds",
+        "style": "10268747170098",
+        "identifierType": "official-product-id",
+        "verificationMethod": "reviewed-official-shopify-product-id-color-image",
+        "contentHash": "087170a98da05ab8ed7499dea802e6713c5e7a6d1d3adae90e496e46ff01260d"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "JP",
+      "lastVerifiedAt": "2026-10-06T08:02:21.292712+00:00",
+      "productEvidenceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-06"
+      },
+      "keywordTags": [
+        "platform"
+      ],
+      "searchConceptIds": [
+        "style:worn-in",
+        "category:footwear",
+        "category:sneakers",
+        "shape:platform",
+        "brand:grounds"
+      ],
+      "presentation": {
+        "image": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_326.jpg?v=1786519842",
+        "scale": 1.5,
+        "offsetY": -9,
+        "view": "side",
+        "sourceUrl": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg",
+        "checkedAt": "2026-10-06T08:11:17.319Z",
+        "cachedPath": "/images/3529afc26a34eb774f9bcf80c5c71dfac78ee9da6791d0cdb7be5123051fc9a0.jpg"
+      },
+      "colorSwatches": [
+        "#82737e"
+      ]
     },
     {
       "id": "official-nike-iv5678-102",
@@ -6544,7 +7323,7 @@
     }
   ],
   "keywordMethod": "verified-style-source-rank-v2",
-  "keywordCheckedAt": "2026-10-06T07:22:15.600Z",
+  "keywordCheckedAt": "2026-10-06T08:11:17.335Z",
   "sourceRanks": [
     {
       "platform": "wgsn-ss27-colours",
@@ -7133,8 +7912,12 @@
         "디스트레스드 스니커즈",
         "빈티지 가공"
       ],
-      "productIds": [],
-      "matchedProductCount": 0,
+      "productIds": [
+        "verified-grounds-10268747170098",
+        "verified-grounds-10268748677426",
+        "verified-grounds-10268751200562"
+      ],
+      "matchedProductCount": 3,
       "sourceRanks": [
         {
           "platform": "whowhatwear-style",
@@ -8800,8 +9583,8 @@
       "SNS는 확인된 검색량·해시태그 게시물량을 지표와 기간별로 구분합니다. 미공개 수치는 0으로 대체하지 않습니다."
     ],
     "counts": {
-      "source": 2436,
-      "published": 68,
+      "source": 2443,
+      "published": 75,
       "held": 2358,
       "expired": 3
     },
@@ -8837,7 +9620,7 @@
       }
     ],
     "discoveryRecheck": {
-      "checkedAt": "2026-10-06T07:12:14.807Z",
+      "checkedAt": "2026-10-06T08:11:17.329Z",
       "scope": "targeted-discovery-recheck",
       "previousCollection": "2026-10-04",
       "brands": [
@@ -8890,6 +9673,12 @@
               "mode": "regional-official-reader-slow-retry",
               "status": "unavailable",
               "reason": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403"
+            },
+            {
+              "url": "https://br.louisvuitton.com/por-br/produtos/lv-drop-300-sneaker-nvprod7730141v/1AKP2J",
+              "mode": "public-rendered-regional-official",
+              "status": "unavailable",
+              "reason": "RENDERED_OFFICIAL_HTTP_500"
             }
           ]
         },
@@ -9039,7 +9828,7 @@
         },
         {
           "brand": "Dior",
-          "status": "unavailable",
+          "status": "readable",
           "attempts": [
             {
               "url": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers",
@@ -9058,6 +9847,11 @@
               "mode": "regional-official-reader-slow-retry",
               "status": "unavailable",
               "reason": "no-product-content"
+            },
+            {
+              "url": "https://www.dior.com/en_hk/fashion/mens-fashion/shoes/sneakers",
+              "mode": "public-rendered-regional-official",
+              "status": "readable"
             }
           ]
         },
@@ -12422,8 +13216,12 @@
         "aliases": [
           "Worn In"
         ],
-        "productIds": [],
-        "matchedProductCount": 0,
+        "productIds": [
+          "verified-grounds-10268747170098",
+          "verified-grounds-10268748677426",
+          "verified-grounds-10268751200562"
+        ],
+        "matchedProductCount": 3,
         "sourceCount": 1,
         "editorialCount": 1,
         "retailCount": 0,
@@ -12494,9 +13292,16 @@
           "platform"
         ],
         "productIds": [
-          "official-82d80c59311fcc15"
+          "official-82d80c59311fcc15",
+          "verified-grounds-10268728688946",
+          "verified-grounds-10268747170098",
+          "verified-grounds-10268748677426",
+          "verified-grounds-10268749758770",
+          "verified-grounds-10268751200562",
+          "verified-grounds-10268771287346",
+          "verified-grounds-10268772991282"
         ],
-        "matchedProductCount": 1,
+        "matchedProductCount": 8,
         "sourceCount": 1,
         "editorialCount": 0,
         "retailCount": 2,

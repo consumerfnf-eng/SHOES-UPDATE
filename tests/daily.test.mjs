@@ -62,3 +62,38 @@ test('Large dashboard initializes and exports a approved 61-brand collection wit
     assert(!state.coverage.some(row=>row.errors.some(error=>/not defined/.test(error))));
   } finally { await fs.rm(dir,{recursive:true,force:true}); }
 });
+
+test('server collection scans later official pages and retains more than 18 candidates per brand', {timeout:120000}, async()=>{
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'shoes-full-discovery-')),calls=[];
+  const fixture=(start,end)=>Array.from({length:end-start},(_,i)=>{const n=start+i;return `![Black sneaker](https://static.nike.com/a/images/t_default/full-${n}.jpg)\n[Runner Sneaker Black ${n}](https://www.nike.com/t/runner-full-fixture${n})\nColor: Black\nStyle: QA${n}-001\nOfficial sneaker.${' '.repeat(5000)}`;}).join('\n');
+  try{
+    const state=await runDaily({brands:['Nike'],output:path.join(dir,'state.json'),read:async url=>{calls.push(url);return url.includes('/w/new')?fixture(101,113):url.startsWith('https://r.jina.ai/https://www.nike.com/')?fixture(113,124):text;}});
+    assert.equal(state.coverage[0].found,23);assert.equal(state.liveProducts.length,23);assert(calls.some(u=>u.includes('/a/kobe-ad-protro-release-info')));assert(calls.some(u=>u.includes('/w/new')));assert.equal(state.coverage[0].attempts,3);
+  }finally{await fs.rm(dir,{recursive:true,force:true});}
+});
+
+test('server discovery preserves same-style variant URLs and defers ambiguous sneaker platforms to evidence review', {timeout:120000}, async()=>{
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'shoes-hybrid-discovery-'));
+  const rows=[
+    ['Orbit Mesh Sneaker Black','ORBIT001','orbit-fixture','Black'],
+    ['Nama Mesh Platform Sneaker White','NAMA001','nama-fixture','White'],
+    ['6 cm Platform Sneaker Black','FLAT001','platform-fixture','Black'],
+    ['Sandal Sneaker Black','SAME001','sandal-fixture?variant=black','Black'],
+    ['Sandal Sneaker White','SAME001','sandal-fixture?variant=white','White'],
+    ['Platform Heel Sneaker Black','HEEL001','heel-fixture','Black'],
+    ['Sneaker Loafer Black','LOAF001','loafer-fixture','Black'],
+    ['Dress Slingback Sneaker Black','DRESS001','slingback-fixture','Black'],
+    ['Slingback Sneaker Black','SLING001','plain-slingback-fixture','Black']
+  ];
+  const fixture=rows.map(([name,style,url,color])=>`![${name}](https://static.nike.com/a/images/t_default/${style}-${color}.jpg)\n[${name}](https://www.nike.com/t/${url})\nColor: ${color}\nStyle: ${style}\nOfficial footwear.${' '.repeat(5000)}`).join('\n');
+  try{
+    const state=await runDaily({brands:['Nike'],output:path.join(dir,'state.json'),read:async url=>url.startsWith('https://r.jina.ai/https://www.nike.com/')?fixture:text});
+    assert.equal(state.coverage[0].found,5);
+    const found=state.liveProducts.filter(p=>p.url.includes('-fixture'));
+    assert.equal(found.length,5);
+    assert.deepEqual(found.filter(p=>p.style==='SAME001').map(p=>p.colorway).sort(),['Black','White']);
+    assert.equal(state.products.filter(p=>p.style==='SAME001').length,2);
+    assert(found.every(p=>p.releaseDate===''),'Discovery must not invent release dates while broadening candidate scope');
+    assert(!found.some(p=>/heel|loafer|slingback/i.test(p.name)));
+  }finally{await fs.rm(dir,{recursive:true,force:true});}
+});

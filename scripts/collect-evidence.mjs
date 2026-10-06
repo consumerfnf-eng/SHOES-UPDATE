@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import { validDay, httpUrl, classifyFootwear, canonicalUrl, brandPolicy } from './curation.mjs';
+import { validDay, httpUrl, classifyFootwear, canonicalUrl, brandPolicy, officialHybridReview, sneakerHybridCandidate } from './curation.mjs';
 
 const monthNames = 'January February March April May June July August September October November December'.split(' ');
 export function exactDate(text) {
@@ -62,7 +62,8 @@ export async function collectOfficialEvidence({read,products=[],now=new Date(),m
   } catch(e) { diagnostics.push({url:source,error:e.message}); }
   const sources=JSON.parse(fs.readFileSync(new URL('../config/daily_sources.json',import.meta.url),'utf8'));
   const incoming=products.filter(p=>{
-    if(p.dateEvidence?.verified||!httpUrl(p.url))return false;
+    const needsHybridReview=sneakerHybridCandidate(p)&&(!p.hybridReview?.approved||p.hybridReview.sneakerSole!==true);
+    if(p.dateEvidence?.verified&&!needsHybridReview||!httpUrl(p.url))return false;
     const policy=brandPolicy(p.brand),reason=classifyFootwear(p).reason;
     if(!policy||!['mandatory','core','conditional'].includes(policy.policy)||policy.policy==='conditional'&&!p.modelReview?.approved)return false;
     if(reason==='excluded-footwear')return false;
@@ -76,12 +77,14 @@ export async function collectOfficialEvidence({read,products=[],now=new Date(),m
   log(`Official date verification: ${incoming.length} eligible product identities to check.`);
   async function verifyNext(){while(next<incoming.length){const p=incoming[next++];
     try {
-      const page=await readOnce(p.url), release=releaseSentence(page,p), details=productDetails(page,p);
-      if(!release||!details) {diagnostics.push({id:p.id,reason:'exact-release-day-not-found'});continue;}
+      const page=await readOnce(p.url), release=p.dateEvidence?.verified?null:releaseSentence(page,p), details=productDetails(page,p);
+      if(!details||!p.dateEvidence?.verified&&!release) {diagnostics.push({id:p.id,reason:!details?'product-identity-image-not-found':'exact-release-day-not-found'});continue;}
       // An official description can establish the sneaker base of a hybrid.
       // It still needs exact release proof and the separate official photo gate.
-      const hybrid=/\b(?:ballet|ballerina|mary[ -]?jane|mule)\b/i.test(p.name)&&/\b(?:sneakers?|running (?:shoes?|heritage)|trainers?)\b/i.test(details.description)?{hybridReview:{approved:true,url:p.url,sneakerSole:true,checkedAt,method:'official-product-sneaker-description'}}:{};
-      verified.push({...p,...details,...hybrid,releaseDate:release.day,dateEvidence:{url:p.url,precision:'day',official:true,verified:true,verifiedAt:checkedAt,excerpt:release.excerpt},productVerifiedAt:checkedAt,productEvidenceUrl:p.url});
+      const hybridReview=officialHybridReview(p,details.description,checkedAt);
+      const hybrid=hybridReview?{hybridReview}:{};
+      const releaseProof=release?{releaseDate:release.day,dateEvidence:{url:p.url,precision:'day',official:true,verified:true,verifiedAt:checkedAt,excerpt:release.excerpt}}:{};
+      verified.push({...p,...details,...hybrid,...releaseProof,productVerifiedAt:checkedAt,productEvidenceUrl:p.url});
     } catch(e) {diagnostics.push({id:p.id,error:e.message});}
     finally{completed++;if(completed%25===0||completed===incoming.length)log(`Official date verification: ${completed}/${incoming.length} checked; ${verified.length} verified.`);}
   }}

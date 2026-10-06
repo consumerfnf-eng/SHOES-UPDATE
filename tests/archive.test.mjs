@@ -111,6 +111,20 @@ test('duplicate queue and pre-existing product are not appended',()=>{
   const p=product({name:'Original One',colorway:'White',image:'https://example.com/Original One.jpg'});
   const r=planArchive([p,product(),product()],{domestic:snapshot()},config,now);assert.equal(r.ready.length,1);assert.deepEqual(r.skipped.map(x=>x.status),['existing-product','queue-duplicate']);
 });
+test('official product IDs never masquerade as manufacturer codes in archive rows or duplicate matching',()=>{
+  const source=snapshot();source.rows[0][11]=cell('상품코드');
+  for(const row of source.rows.slice(1))row[11]=cell('9876543210123');
+  const before=structuredClone(source),p=product({style:'9876543210123',styleType:'official-product-id',colorway:'White'});
+  const plan=planArchive([p],{domestic:source},config,now);
+  assert.equal(plan.ready.length,1,'An unrelated existing manufacturer code must not match a platform product ID');
+  const rows=prepareRows(plan.ready,source,cfg);
+  assert.equal(rows[0].values[11].userEnteredValue?.stringValue||'','');
+  assert.deepEqual(source,before,'The original Sheet snapshot remains unchanged');
+  const manufacturer=planArchive([{...p,styleType:undefined}],{domestic:source},config,now);
+  assert.equal(manufacturer.skipped[0].status,'existing-product','Existing manufacturer-code matching is preserved');
+  const differentCode=planArchive([{...p,style:'MANUFACTURER-CODE',styleType:undefined}],{domestic:source},config,now);
+  assert.equal(prepareRows(differentCode.ready,source,cfg)[0].values[11].userEnteredValue.stringValue,'MANUFACTURER-CODE');
+});
 test('CSV handles commas, quoted newlines and quotes without changing strings',()=>{
   assert.deepEqual(parseCsv('brand,name\r\n"PANE","A, B"\r\n"X","A\n""B"""'),[['brand','name'],['PANE','A, B'],['X','A\n"B"']]);
 });

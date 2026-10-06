@@ -96,7 +96,7 @@ export function duplicateStatus(product,snapshot,config,schema,cfg) {
     const brandCountry=String(scalar(row[1])).match(/\(([A-Za-z]{2})\)/)?.[1]?.toUpperCase();
     const rowCountry=brandCountry || countryCode(schema.country>=0?scalar(row[schema.country]):'') || cfg.defaultCountry;
     if(rowCountry!==countryCode(product.country)) continue;
-    const sameStyle=product.style && schema.style>=0 && normalize(scalar(row[schema.style]))===normalize(product.style);
+    const sameStyle=product.styleType!=='official-product-id' && product.style && schema.style>=0 && normalize(scalar(row[schema.style]))===normalize(product.style);
     const sameName=normalize(scalar(row[5]))===targetName;
     if(!sameStyle&&!sameName) continue;
     const existingColor=normalize(scalar(row[7]));
@@ -154,7 +154,7 @@ export function prepareRows(entries,snapshot,cfg) {
     const raw=[p.releaseDate.slice(0,7),archiveBrand,p.gender||'','shoe',null,p.name,p.material||'',colorText(p),hex,p.image,''];
     if(schema.country>=0) raw[schema.country]=entry.route.country;
     if(schema.releaseDate>=0) raw[schema.releaseDate]=p.releaseDate;
-    if(schema.style>=0) raw[schema.style]=p.style||'';
+    if(schema.style>=0) raw[schema.style]=p.styleType==='official-product-id'?'':p.style||'';
     for(let i=0;i<width;i++) {
       if(raw[i]===undefined) continue;
       validateCell(raw[i],exemplar[i]?.dataValidation);

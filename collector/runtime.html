@@ -323,7 +323,8 @@ function strictBannedText(text,name='',ptype=''){
 
   // Heels, pumps and heel-shaped sandals/mules. Measurements may appear in the detail note.
   if(/\b(pumps?|stiletto|kitten(?:[ -]?heel)?|high[ -]?heel|heeled|wedge(?:[ -]?heel)?|block[ -]?heel|platform[ -]?heel|slingback[ -]?heel|dress[ -]?slingback|court[ -]?shoe|d'orsay|evening[ -]?shoe|bridal[ -]?shoe)\b|하이힐|스틸레토|키튼힐|웨지힐|굽샌들|힐샌들|힐뮬|펌프스/.test(h))return true;
-  if(/\b[4-9](?:\.\d+)?\s*cm\s*(?:heel|platform)\b|\b(?:40|45|50|55|60|65|70|75|80|85|90|95|100|105|110|115|120)\s*mm\s*(?:heel|arch)\b/.test(h))return true;
+  if(/\b[4-9](?:\.\d+)?\s*cm\s*heel\b|\b(?:40|45|50|55|60|65|70|75|80|85|90|95|100|105|110|115|120)\s*mm\s*(?:heel|arch)\b/.test(h))return true;
+  if(!window.__MLB_SERVER_MODE__&&/\b[4-9](?:\.\d+)?\s*cm\s*platform\b/.test(h))return true;
 
   // Loafers, formal and traditional dress shoes.
   if(/\b(loafer|penny[ -]?loafer|tassel[ -]?loafer|horsebit[ -]?loafer|formal[ -]?loafer|moccasin|boat[ -]?shoe|wallabee|oxford|derby|brogue|wingtip|monk(?:[ -]?strap)?|wholecut|dress[ -]?shoe|formal[ -]?shoe|lace[ -]?up[ -]?shoe)\b|로퍼|모카신|옥스퍼드|더비|브로그|몽크스트랩|구두|정장화|보트슈즈|왈라비/.test(catText))return true;
@@ -337,7 +338,8 @@ function strictBannedText(text,name='',ptype=''){
   if(/\b(espadrille|salom[eé]|dress[ -]?mule|leather[ -]?mule|suede[ -]?mule|satin[ -]?mule|dress[ -]?slipper)\b|에스파드리유|드레스 뮬|가죽 뮬|스웨이드 뮬|새틴 뮬/.test(catText)&&!sportHybrid)return true;
 
   // Known hidden-heel or manually rejected SKUs.
-  if(/dg patent leather thong sandal|jelly drop 50 tpu sandal|moon shoe sp|suede platform sandal|rubber platform sandal|beatle kiss leather platform ankle boot|women's bombshell bootie|women's sorbetto slide sandal|nama .*platform sneaker|orbit .*sneaker/.test(catText))return true;
+  if(/dg patent leather thong sandal|jelly drop 50 tpu sandal|moon shoe sp|suede platform sandal|rubber platform sandal|beatle kiss leather platform ankle boot|women's bombshell bootie|women's sorbetto slide sandal/.test(catText))return true;
+  if(!window.__MLB_SERVER_MODE__&&/nama .*platform sneaker|orbit .*sneaker/.test(catText))return true;
   return false;
 }
 function winterRejectReason(p,context=''){
@@ -490,7 +492,7 @@ function cleanTitle(s,brand){let x=String(s||'').replace(/\s+/g,' ').replace(/[�
 function titleFromUrl(url){try{const u=new URL(url);let p=u.pathname.split('/').filter(Boolean);let s=p[p.length-1]||'Shoes';s=s.replace(/-p-[A-Z0-9]+$/i,'').replace(/-p\d{7,}$/i,'').replace(/\.(html|aspx)$/i,'').replace(/^[A-Z0-9_]{6,}$/,'Shoes');return decodeURIComponent(s).split('-').map(w=>w?w[0].toUpperCase()+w.slice(1):w).join(' ')}catch{return 'Shoes'}}
 function officialHostMatches(brand,url){try{const host=new URL(url).hostname.replace(/^www\./,'').toLowerCase(),domains=[...(OFFICIAL_SOURCES[brand]?.domains||[]),...(window.__MLB_DAILY_SOURCES__?.[brand]||[]).map(s=>new URL(s.url).hostname.replace(/^www\./,''))];return domains.some(d=>host===d||host.endsWith('.'+d))}catch{return false}}
 function looksProductUrl(url,brand){if(!officialHostMatches(brand,url))return false;try{const u=new URL(url),p=u.pathname;if(/^(?:images?|static|cdn|assets)\./i.test(u.hostname)||/\/(?:cdn|images?|assets)\/|\.(?:jpe?g|png|webp|gif|avif|svg)$/i.test(p))return false;if(/\/(?:collections?|categories|category|c|w|catalog|search)(?:\/|$)|new-arrivals|new-in|shop-all/i.test(p)&&!p.includes('/products/'))return false;if(/\/(?:shoes|sneakers|sandals|slides|footwear)(?:-\d+)?\/?$/i.test(p))return false;return /\/(?:p|pr|pd|product|products|t|fashion\/products)\//i.test(p)||/\/[^/]*[0-9][^/]*(?:\.html|\.aspx)?$/i.test(p)&&/\/[A-Z0-9_-]{6,}(?:\.html|\.aspx)?$/i.test(p)||/\.(?:html|aspx)$/i.test(p)&&!/(category|collection|new-arrivals|new-in|shoes-for|\/(?:shoes|sneakers)(?:\.html|\.aspx)?$)/i.test(p)}catch{return false}}
-function dailySneakerCandidate(brand,title,url){if(brand==='Jordan'&&!/\bjordan\b/i.test(title))return false;const t=`${title} ${url}`.toLowerCase();if(/\b(?:heels?|pumps?|loafers?|boots?|winter|fur|snow)\b/.test(t))return false;return /sneaker|trainer|runner|running|trail|barefoot|air.max|air.force|jordan|pegasus|fuelcell|supercomp|gel-|clog|sandal|slide|platform|mule|jelly|ballet|ballerina|mary[ -]?jane|スニーカー|スニーカ/.test(t)||(SPORTS.has(brand)&&/\bshoes?\b/i.test(title))}
+function dailySneakerCandidate(brand,title,url){if(brand==='Jordan'&&!/\bjordan\b/i.test(title))return false;const t=`${title} ${url}`.toLowerCase();if(/\b(?:heels?|pumps?|loafers?|slingbacks?|boots?|winter|fur|snow)\b/.test(t))return false;return /sneaker|trainer|runner|running|trail|barefoot|air.max|air.force|jordan|pegasus|fuelcell|supercomp|gel-|clog|sandal|slide|platform|mule|jelly|ballet|ballerina|mary[ -]?jane|hybrid|espadrille|fisherman|スニーカー|スニーカ/.test(t)||(SPORTS.has(brand)&&/\bshoes?\b/i.test(title))}
 function looksShoe(text){return /sneaker|trainer|runner|running|trail|hiking|shoe|sandal|slide|mule|clog|rain[ -]?boot|wellington|mary jane sneaker|ballet sneaker|platform sneaker|water moc/i.test(text)&&!strictBannedText(text,text,'')}
 function contextBanned(text){return strictBannedText(text,text,'')}
 function styleFrom(text,url){const m=text.match(/(?:style|item number|sku|article|product code)\s*[:#]?\s*([A-Z0-9][A-Z0-9._-]{5,})/i);if(m)return m[1].toUpperCase();try{const p=new URL(url).pathname.match(/(?:\/|[-_])([A-Z0-9][A-Z0-9._-]{5,})(?:\.html)?$/i);return p?p[1].toUpperCase():''}catch{return ''}}
@@ -500,7 +502,7 @@ function firstSeenFor(url){const key=normalizeUrl(url);if(!SEEN[key])SEEN[key]=S
 function rethrowCodeError(error){if(error instanceof ReferenceError||error instanceof TypeError||error instanceof SyntaxError)throw error}
 function screenshotImage(url){return `https://image.thum.io/get/width/900/crop/900/noanimate/${url}`}
 function primaryName(text){const m=text.match(/(?:Supplier color|Designer color name|Color|Colour)\s*:\s*([^\n|]+)/i);if(m)return m[1].trim().replace(/\s{2,}.*/, '');return inferColor(text).name}
-function dedupeItems(items){const m=new Map();items.forEach(x=>{const u=normalizeUrl(x.url),s=String(x.style||'').toLowerCase(),k=s?`${x.brand}|${s}`:u||`${x.brand}|${x.name}|${x.colorway||''}`;if(!m.has(k))m.set(k,x)});return [...m.values()]}
+function dedupeItems(items){const m=new Map();items.forEach(x=>{const u=normalizeUrl(x.url),s=String(x.style||'').toLowerCase(),base=s?`${x.brand}|${s}`:u||`${x.brand}|${x.name}|${x.colorway||''}`,k=window.__MLB_SERVER_MODE__?`${base}|${u}|${String(x.colorway||'').toLowerCase()}`:base;if(!m.has(k))m.set(k,x)});return [...m.values()]}
 function parseMarkdown(md,brand,sourceName){
   const out=[],rx=/\[([^\]\n]{2,320})\]\((https?:\/\/[^)\s]+)\)/g;let m,rank=0;
   while((m=rx.exec(md))){
@@ -524,16 +526,16 @@ async function updateOneBrand(brand){
   const cfg=OFFICIAL_SOURCES[brand]||{domains:[],pages:[]},pages=sourcePages(brand);
   for(const src of pages){
     if(stopRequested)break;attempts++;
-    try{const md=await fetchText(readerUrl(src.url));responses++;found=dedupeItems([...found,...parseMarkdown(md,brand,src.name)]);if(found.length>=TARGET_PER_BRAND)break}
+    try{const md=await fetchText(readerUrl(src.url));responses++;found=dedupeItems([...found,...parseMarkdown(md,brand,src.name)]);if(!window.__MLB_SERVER_MODE__&&found.length>=TARGET_PER_BRAND)break}
     catch(e){rethrowCodeError(e);errors.push(`${src.name||src.url}: ${e?.message||e}`)}
     if(!window.__MLB_SERVER_MODE__)await sleep(APP_STORAGE.getItem(KEY_KEY)?650:2600)
   }
-  if(found.length<TARGET_PER_BRAND&&!stopRequested){
+  if((window.__MLB_SERVER_MODE__||found.length<TARGET_PER_BRAND)&&!stopRequested){
     attempts++;
-    try{const domains=(cfg.domains||[]);const site=domains.length?domains.map(d=>`site:${d}`).join(' OR '):`"${brand}" official`;const q=`${site} "${brand}" (2026 OR current OR upcoming OR new arrivals OR latest OR FW26 OR Fall 2026) (sneaker OR trainer OR running OR trail OR ballet sneaker OR mary jane sneaker OR mule sneaker OR jelly shoes OR platform shoes) -boot -bootie -loafer -heel -fur -fleece -shearling -flannel -padded -puffer -winter -ski`;const md=await fetchText(searchUrl(q),45000);responses++;found=dedupeItems([...found,...parseMarkdown(md,brand,`${brand} Official Search`)])}
+    try{const domains=(cfg.domains||[]);const site=domains.length?domains.map(d=>`site:${d}`).join(' OR '):`"${brand}" official`;const q=`${site} "${brand}" (2026 OR current OR upcoming OR new arrivals OR latest OR FW26 OR Fall 2026) (sneaker OR trainer OR running OR trail OR ballet sneaker OR mary jane sneaker OR mule sneaker OR jelly shoes OR platform shoes OR hybrid sneaker OR sneaker sandal OR sneaker clog) -boot -bootie -loafer -heel -fur -fleece -shearling -flannel -padded -puffer -winter -ski`;const md=await fetchText(searchUrl(q),45000);responses++;found=dedupeItems([...found,...parseMarkdown(md,brand,`${brand} Official Search`)])}
     catch(e){rethrowCodeError(e);errors.push(`search: ${e?.message||e}`)}
   }
-  const old=LIVE_PRODUCTS.filter(p=>p.brand===brand&&cleanRecord(p)),merged=dedupeItems([...found,...old]).filter(cleanRecord).sort((a,b)=>dateScore(b)-dateScore(a)).slice(0,MAX_LIVE_PER_BRAND);
+  const old=LIVE_PRODUCTS.filter(p=>p.brand===brand&&cleanRecord(p)),merged=dedupeItems([...found,...old]).filter(cleanRecord).sort((a,b)=>dateScore(b)-dateScore(a)).slice(0,window.__MLB_SERVER_MODE__?undefined:MAX_LIVE_PER_BRAND);
   LIVE_PRODUCTS=[...LIVE_PRODUCTS.filter(p=>p.brand!==brand),...merged];APP_STORAGE.setItem(LIVE_KEY,JSON.stringify(LIVE_PRODUCTS));APP_STORAGE.setItem(SEEN_KEY,JSON.stringify(SEEN));mergeProducts();
   return {brand,found:found.length,total:merged.length,attempts,responses,errors,checkedAt:kstStamp()}
 }

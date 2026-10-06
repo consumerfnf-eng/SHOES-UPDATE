@@ -289,6 +289,14 @@
     {
       "name": "Dior Official Japan sneakers",
       "url": "https://www.dior.com/ja_jp/fashion/mens-fashion/shoes/colorama?page=1"
+    },
+    {
+      "name": "Dior Official Hong Kong sneakers",
+      "url": "https://www.dior.com/en_hk/fashion/mens-fashion/shoes/sneakers"
+    },
+    {
+      "name": "Dior Official Hong Kong September selection",
+      "url": "https://www.dior.com/en_hk/fashion/mens-fashion/septembers-new-essentials"
     }
   ],
   "Dolce & Gabbana": [
@@ -487,6 +495,10 @@
     {
       "name": "Louis Vuitton Official Japan sneakers",
       "url": "https://jp.louisvuitton.com/jpn-jp/men/shoes/sneakers/_/N-t1fud07g"
+    },
+    {
+      "name": "Louis Vuitton Official Brazil Drop 300",
+      "url": "https://br.louisvuitton.com/por-br/produtos/lv-drop-300-sneaker-nvprod7730141v/1AKP2J"
     }
   ],
   "Lululemon": [
@@ -1129,6 +1141,32 @@
     {
       "name": "Crocs Official Korea sneakers",
       "url": "https://www.crocs.co.kr/c/collection-classicsneaker"
+    }
+  ],
+  "ALOHAS": [
+    {
+      "name": "ALOHAS Official US sneakers",
+      "url": "https://alohas.com/en-us/collections/sneakers"
+    }
+  ],
+  "Melissa": [
+    {
+      "name": "Melissa Official US sneakers",
+      "url": "https://www.shopmelissa.com/collections/adult-sneakers"
+    }
+  ],
+  "grounds": [
+    {
+      "name": "grounds Official US current products",
+      "url": "https://us.grounds-fw.com/collections/all"
+    },
+    {
+      "name": "grounds Official Japan collections",
+      "url": "https://grounds-fw.jp/en/collections"
+    },
+    {
+      "name": "grounds Official Japan FW26/27",
+      "url": "https://grounds-fw.jp/en/collections/fw-26-27"
     }
   ]
 }
