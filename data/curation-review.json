@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-06T08:11:17.335Z",
+  "checkedAt": "2026-10-06T08:46:20.340Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -378,7 +378,7 @@
       "id": "zip4-grounds-jewelry-aurora",
       "brand": "grounds",
       "name": "Jewelry Aurora",
-      "reason": "footwear-type-unverified"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "ecom-musinsa-jordan-willow-6686327",
@@ -14149,10 +14149,46 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "verified-new-balance-mt24yj",
-      "brand": "New Balance",
-      "name": "TDS MT2",
-      "reason": "representative-photo-review-required"
+      "id": "verified-grounds-10268749758770",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "verified-grounds-10268751200562",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046 BEENAWHILE",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "verified-grounds-10268771287346",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "verified-grounds-10268772991282",
+      "brand": "grounds",
+      "name": "GRAFFITI 2046",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "verified-grounds-10268748677426",
+      "brand": "grounds",
+      "name": "GRAFFITI NOA BEENAWHILE",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "verified-grounds-10268747170098",
+      "brand": "grounds",
+      "name": "GRAFFITI NOA BEENAWHILE",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "verified-grounds-10268728688946",
+      "brand": "grounds",
+      "name": "GRAFFITI NOA",
+      "reason": "brand-excluded-or-unverified"
     }
   ]
 }

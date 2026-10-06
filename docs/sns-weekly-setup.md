@@ -1,6 +1,14 @@
 # SNS 인기 신상품: 로그인과 주간 자동화 연결 방법
 
-확인일: 2026-10-06. 공식 문서와 현재 저장소를 읽기만 했으며 계정·권한·비밀키·쿠키를 변경하거나 수집하지 않았다.
+확인일: 2026-10-06. 사용자가 외부 로그인 상태 보관과 기존 크레딧 내 시험을 승인하여 Firecrawl 전용 프로필 `shoes-tiktok-weekly`를 만들었다. 사용자가 직접 인증했으며 비밀번호·인증번호·쿠키·원격 제어 URL은 저장소에 넣지 않았다.
+
+## 실제 시험 결과
+
+- 첫 브라우저는 10분 제한으로 종료됐다. 같은 프로필로 다시 열었을 때 Creative Center 로그인이 유지되는 것을 확인하지 못했다.
+- 두 번째 시도에서는 TikTok 휴대전화 인증 화면에 `Maximum number of attempts reached. Try again later.`가 표시됐다. 해제 시각은 제공되지 않았다.
+- 두 브라우저 모두 명시적으로 종료했다. 브라우저 사용량은 20+11크레딧, 페이지 조회를 포함한 잔액 감소는 33크레딧이다(599 → 566). 추가 결제는 없었다.
+- 로그인 유지 검증, 상품별 SNS 지표 확보, 주간 SNS 자동 게시 연결은 아직 완료되지 않았다. 검증된 SNS 신상품은 0개다. 인증 제한이 풀렸다는 사용자 확인 전에는 자동으로 인증을 재시도하지 않는다.
+- 다음 설정에는 같은 Firecrawl 팀의 API 키를 연결하고, 최초 로그인용 브라우저를 최대 30분으로 준비하는 안을 권한다. 현재 MCP 도구는 브라우저 수명 설정을 노출하지 않지만 독립 Browser API는 생성 시 `ttl`/`activityTtl`을 최대 3,600초까지 지원한다. 1회 코드 실행의 `timeout`은 브라우저 수명 연장이 아니다. [공식 Browser 생성 API](https://docs.firecrawl.dev/api-reference/endpoint/browser-create)
 
 ## 결론
 
@@ -66,7 +74,7 @@
 
 ### 4. PC를 꺼도 로그인 상태를 재사용하는 대안: Firecrawl Cloud 프로필
 
-Firecrawl은 이름이 있는 프로필에 쿠키·localStorage 등 브라우저 상태를 저장하고 다음 세션에서 재사용하는 기능을 문서화하고 있다. 이는 현재 Codex 브라우저와 별개인 **외부 서비스의 브라우저**다. 사용할 경우 로그인 상태를 Firecrawl에 보관한다는 점과 요금을 사용자에게 알리고 동의받아야 한다. 이번에는 프로필을 만들거나 계정을 옮기지 않았다. [공식 capabilities](https://docs.firecrawl.dev/capabilities)
+Firecrawl은 이름이 있는 프로필에 쿠키·localStorage 등 브라우저 상태를 저장하고 다음 세션에서 재사용하는 기능을 문서화하고 있다. 이는 현재 Codex 브라우저와 별개인 **외부 서비스의 브라우저**다. 사용자가 이 보관 방식과 기존 크레딧 내 시험을 승인했고 전용 프로필을 만들었다. 실제 TikTok 로그인 유지는 위 시험 결과처럼 아직 확인하지 못했다. [공식 capabilities](https://docs.firecrawl.dev/capabilities)
 
 사용 절차:
 
@@ -79,7 +87,9 @@ Firecrawl은 이름이 있는 프로필에 쿠키·localStorage 등 브라우저
 
 Firecrawl 문서상 프로필은 세션이 닫힐 때 저장되며, 동시에 쓸 수 있는 세션은 하나다. HTTP/Node 옵션은 `saveChanges`, Python 옵션은 `save_changes`다. 매번 새 세션 ID를 받아 같은 프로필 이름으로 연결해야 한다. [브라우저 프로필 동작](https://docs.firecrawl.dev/features/browser#persistent-sessions)
 
-확인일 기준 Interact 비용은 코드만 사용하면 분당 2크레딧, AI 프롬프트를 쓰면 분당 7크레딧이고 최소 1분부터 부과된다. Scrape는 별도 과금이다. 사용량 실측 전 월 비용을 확정하지 않는다. 원격 브라우저 직접 로그인의 지원과 비용은 확인했으나 **TikTok/Instagram에서 이 방식이 실제로 성공하는지는 아직 시험하지 않았다.** [대화형 뷰·프로필·과금 문서](https://docs.firecrawl.dev/features/interact)
+확인일 기준 Interact 비용은 코드만 사용하면 분당 2크레딧, AI 프롬프트를 쓰면 분당 7크레딧이고 최소 1분부터 부과된다. Scrape는 별도 과금이다. 아직 주간 수집 실측이 없어 월 비용을 확정하지 않는다. **TikTok 시험은 인증 횟수 제한으로 중단됐고 Instagram은 아직 시험하지 않았다.** [대화형 뷰·프로필·과금 문서](https://docs.firecrawl.dev/features/interact)
+
+프로필이 같아도 고정 IP나 동일 기기 식별값까지 유지된다는 보장은 공식 문서에서 확인하지 못했다. 지역 옵션은 사용 가능한 해당 국가 프록시를 요청하는 기능이며, 고정 IP 약속이 아니다. 세션 만료와 추가 인증은 운영 중에도 생길 수 있다.
 
 | 방식 | 사용자 PC | 로그인 자료 위치 | 시작 조건 |
 |---|---|---|---|
@@ -108,7 +118,7 @@ Firecrawl 문서상 프로필은 세션이 닫힐 때 저장되며, 동시에 �
 - `config/social-metric-sources.json`은 TikTok을 `reviewed-evidence-import`, `automatedAdapter: null`, `unavailable`로 기록하고 있다. **주간 SNS 실수집 어댑터가 연결된 상태가 아니다.**
 - 해당 설정은 `data/social-metric-evidence.json` 입력 계약을 명시하지만, 현재 파일은 없다. 즉 실제 가져올 검증 수치 자료가 아직 없다.
 - 기존 `.github/workflows/weekly-update.yml`은 일요일 08시 KST와 실패 시 보완 실행을 예약하고 있다. SNS API 연결이 완료되면 이 흐름에 붙일 수 있다.
-- SNS 계정·로그인 프로필·권한은 아직 연결하지 않았다. 일반 상품 수집 경로는 별도 변경했으며, 확인된 SNS 상품 수는 여전히 0개다.
+- 전용 클라우드 프로필 생성은 완료했으나 SNS 인증·로그인 유지 검증과 서버 API 키 연결은 미완료다. 일반 상품 수집 경로는 별도로 배포했으며, 확인된 SNS 상품 수는 여전히 0개다.
 
 ## 실행 순서
 

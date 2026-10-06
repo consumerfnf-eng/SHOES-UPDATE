@@ -391,7 +391,7 @@
       "id": "grounds",
       "name": "grounds",
       "group": "contemporary",
-      "policy": "core",
+      "policy": "exclude",
       "mandatory": false
     },
     {

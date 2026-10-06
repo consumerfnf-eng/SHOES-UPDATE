@@ -5,7 +5,7 @@ import {exportRows,EXPORT_COLUMNS} from '../public/assets/export.mjs';
 
 const now='2026-10-06T08:00:00Z',day='2026-10-06';
 function product(){
-  const p={id:'grounds-fixture',brand:'grounds',name:'Experimental sneaker',style:'9876543210123',styleType:'official-product-id',url:'https://us.grounds-fw.com/products/experimental-sneaker',image:'https://us.grounds-fw.com/cdn/shop/files/experimental.jpg',officialCategory:'Sneakers',description:'A casual lifestyle sneaker with a lightweight cushioned sole.',releaseDate:'2026-09-02',dateEvidence:{verified:true,precision:'day',url:'https://us.grounds-fw.com/blogs/news/experimental',verifiedAt:now,excerpt:'Experimental sneaker releases on September 2, 2026.'},productVerifiedAt:now,productEvidenceUrl:'https://us.grounds-fw.com/products/experimental-sneaker'};
+  const p={id:'nike-fixture',brand:'Nike',name:'Experimental sneaker',style:'9876543210123',styleType:'official-product-id',url:'https://www.nike.com/products/experimental-sneaker',image:'https://www.nike.com/cdn/shop/files/experimental.jpg',officialCategory:'Sneakers',description:'A casual lifestyle sneaker with a lightweight cushioned sole.',releaseDate:'2026-09-02',dateEvidence:{verified:true,precision:'day',url:'https://www.nike.com/blogs/news/experimental',verifiedAt:now,excerpt:'Experimental sneaker releases on September 2, 2026.'},productVerifiedAt:now,productEvidenceUrl:'https://www.nike.com/products/experimental-sneaker'};
   const proof={verified:true,brand:p.brand,style:p.style,identifierType:p.styleType,verifiedAt:now,verificationMethod:'reviewed-official-shopify-product-id-color-image'};
   p.officialProductEvidence={...proof,url:p.url};
   p.officialImageEvidence={...proof,url:p.image,sourceUrl:p.url};
@@ -22,8 +22,8 @@ test('official product identifiers remain typed and bound to the exact official 
     q=>delete q.officialProductEvidence.identifierType,
     q=>delete q.officialImageEvidence.identifierType,
     q=>q.officialProductEvidence.style='9876543210999',
-    q=>q.officialImageEvidence.sourceUrl='https://us.grounds-fw.com/products/another',
-    q=>q.officialImageEvidence.url='https://us.grounds-fw.com/cdn/shop/files/another.jpg'
+    q=>q.officialImageEvidence.sourceUrl='https://www.nike.com/products/another',
+    q=>q.officialImageEvidence.url='https://www.nike.com/cdn/shop/files/another.jpg'
   ]){
     const invalid=structuredClone(p);mutate(invalid);
     assert.equal(officialEvidenceFor(invalid,day),null);
