@@ -398,7 +398,9 @@ export async function main(argv=process.argv.slice(2)) {
       await remoteStore.saveLedger(l); // Durable encrypted pending state must be verified before Sheet write.
       await jsonWrite(ledgerPath,l);
     },audit:(id,payload)=>remoteStore.audit(id,payload)});
-    await jsonWrite(reportPath,report);await writeRunSummary(report);console.log(JSON.stringify({status:report.status,ready:report.ready?.length||0,pending:report.pending.length,appended:report.appended.length}));return 0;
+    await jsonWrite(reportPath,report);await writeRunSummary(report);
+    const pendingReasons={};for(const item of report.pending){const reason=String(item.reason||item.status||'review-required').replace(/[^A-Za-z0-9_:-]/g,'').slice(0,80);pendingReasons[reason]=(pendingReasons[reason]||0)+1;}
+    console.log(JSON.stringify({status:report.status,ready:report.ready?.length||0,pending:report.pending.length,appended:report.appended.length,pendingReasons}));return 0;
   } catch(error) {const report={schemaVersion:1,status:'failed',reason:error.message,generatedAt:new Date().toISOString()};await jsonWrite(reportPath,report);await writeRunSummary(report);console.error(error.message);return 1;}
   finally {if(lock){await lock.close();await fs.unlink(lockPath);}}
 }
