@@ -59,7 +59,7 @@ export function officialHybridReview(p, description, checkedAt) {
   // A comparison with running shoes does not establish a sneaker base. Either
   // the verified product name declares one, or the description names its base.
   const construction=/\b(?:sneaker|trainer|running shoe)[ -](?:sole|midsole|outsole|construction|base)|\b(?:sole|midsole|outsole|base)\b[^.!?]{0,45}\b(?:sneaker|trainer|running shoe)|(?:스니커|운동화|러닝화)[^.!?]{0,15}(?:솔|밑창|미드솔)|(?:スニーカー|运动鞋|運動鞋|跑鞋)[^.!?]{0,15}(?:ソール|底)/i;
-  if(!sneakerStructure.test(p.name||'')&&!construction.test(description||''))return null;
+  if(!sneakerStructure.test(`${p.name||''} ${p.officialCategory||''}`)&&!construction.test(description||''))return null;
   return {approved:true,url:p.url,type:'hybrid',sneakerSole:true,checkedAt,method:'official-product-sneaker-description'};
 }
 export function classifyFootwear(p) {

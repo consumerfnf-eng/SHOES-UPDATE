@@ -6,7 +6,7 @@ import path from 'node:path';
 import {parseArrivalListing,isNewListing,listingProduct,listingFollowups} from '../scripts/new-arrivals.mjs';
 import {releaseState} from '../public/assets/release-window.mjs';
 import {publicationWindow} from '../public/assets/publication-window.mjs';
-import {curateProduct} from '../scripts/curation.mjs';
+import {curateProduct,officialHybridReview} from '../scripts/curation.mjs';
 import {publishCurated,atomicJson} from '../scripts/publish-curated.mjs';
 import {eligibilityReason} from '../scripts/archive-expired.mjs';
 const now=new Date('2026-10-07T01:00:00Z'),today='2026-10-07';
@@ -16,6 +16,11 @@ test('official New Arrivals can publish without inventing a release day; unrelat
  const p=product(),r=curateProduct(p,today);assert(r.product);assert.equal(r.product.releaseDate,'');assert.equal(r.product.dateEvidence,undefined);
  for(const patch of [{verified:false},{kind:'newest'},{productUrl:'https://www.prada.com/other'},{style:'OTHER'},{url:'https://retailer.example/new-arrivals'}])assert(!curateProduct({...p,arrivalEvidence:{...p.arrivalEvidence,...patch}},today).product);
  for(const name of ['Platform loafers','Mary Jane pumps','Slingback sneakers','Leather oxford shoes','Speedcat Wedge','메리제인 구두','플랫폼 힐'])assert(!curateProduct({...p,name},today).product,name);
+});
+test('a shortened ballet model title retains its verified official sneaker category',()=>{
+ const p={...product(),name:'Runner Ballet Dress-Up',officialCategory:'Sneakers',description:'Runner Ballet Dress-Up Sneakers with straps and a rubber outsole'};
+ p.hybridReview=officialHybridReview(p,p.description,now.toISOString());assert(p.hybridReview?.approved);assert.equal(curateProduct(p,today).product.category,'hybrid');
+ assert(!curateProduct({...p,name:'Runner Ballet Slingback'},today).product);
 });
 test('a product-linked official listing image is evidence at the listing URL, not a claimed PDP fetch',()=>{
  const p=product(),source=p.arrivalEvidence.url;

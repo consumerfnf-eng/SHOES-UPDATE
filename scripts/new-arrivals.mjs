@@ -94,7 +94,13 @@ export function listingProduct(candidate,checkedAt){
 }
 function pageProduct(candidate,text,checkedAt,existing){
   const url=candidate.url;
-  if(existing&&officialEvidenceFor(existing,kstDay(checkedAt)))return {...existing,arrivalEvidence:{...candidate.arrivalEvidence,style:existing.style,productUrl:existing.url}};
+  if(existing&&officialEvidenceFor(existing,kstDay(checkedAt))){
+    const p={...existing,arrivalEvidence:{...candidate.arrivalEvidence,style:existing.style,productUrl:existing.url}};
+    const alt=existing.imageCandidates?.find(i=>i.url===existing.image)?.alt||'';
+    if(/\bsneakers?\b/i.test(alt))p.officialCategory='Sneakers';
+    const hybrid=officialHybridReview(p,p.name+' '+p.description+' '+alt,checkedAt);if(hybrid)p.hybridReview=hybrid;
+    return p;
+  }
   const body=text.replaceAll('\\_','_').split(/\n#{1,3}\s*(?:Related|Recommended|You may also|Recently viewed)/i)[0];
   const heading=body.match(/^#\s+(.+)$/m)?.[1];
   if(!heading)return null;
@@ -119,6 +125,7 @@ function pageProduct(candidate,text,checkedAt,existing){
     colorway:body.match(/(?:^|\n)\s*[-*]?\s*#{0,3}\s*(?:Colors?|Colours?|색상)\s*:?\s*([^\n]{2,90})/i)?.[1]?.trim()||colorLabel(chosen.alt,candidate.brand),colors:[],
     priceLabel:body.match(/(?:\$|€|£|₩)\s?[\d,.]+/)?.[0]||'',country:region(url),gender:/\/women|\/womens|shop-women/i.test(url)?'Women':/\/men|\/mens|shop-men/i.test(url)?'Men':'',
     firstSeen:checkedAt,productVerifiedAt:checkedAt,productEvidenceUrl:url,arrivalEvidence:{...candidate.arrivalEvidence,style},sourceSignals:[]};
+  if(/\bsneakers?\b/i.test(chosen.alt))p.officialCategory='Sneakers';
   if(/sneakerina/i.test(p.name))p.officialCategory='Ballet sneaker';
   const hybrid=officialHybridReview(p,body,checkedAt);if(hybrid)p.hybridReview=hybrid;
   const base={verified:true,brand:p.brand,style,verifiedAt:checkedAt,verificationMethod:'official-new-arrivals-and-product-page',contentHash:digest(text),...(styleType?{identifierType:styleType}:{})};

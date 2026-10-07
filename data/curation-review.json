@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-07T09:13:25.698Z",
+  "checkedAt": "2026-10-07T09:15:36.048Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -15883,40 +15883,106 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-e88fffb382898154e156",
-      "brand": "PUMA",
-      "name": "Speedcat OG",
-      "reason": "footwear-type-unverified"
+      "id": "arrival-de152d857f00699601ac",
+      "brand": "Nike",
+      "name": "Air Jordan 1 High OG \"Royal\"",
+      "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-b32989ab4eb73430409f",
-      "brand": "PUMA",
-      "name": "Speedcat Ballet Dress-Up",
-      "reason": "hybrid-review-required"
+      "id": "live-994ec45581750f46",
+      "brand": "Alo",
+      "name": "ALO Sunset Sneaker",
+      "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-4229e273d1921d9aa5c8",
-      "brand": "PUMA",
-      "name": "Speedcat OG",
-      "reason": "footwear-type-unverified"
+      "id": "arrival-15e3315dd937326cd63c",
+      "brand": "Louis Vuitton",
+      "name": "LV Stadium Sneaker",
+      "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-bd2d8fa34ff8edb03925",
-      "brand": "PUMA",
-      "name": "Speedcat Ballet Dress-Up",
-      "reason": "hybrid-review-required"
+      "id": "arrival-7bfbc18a95e62fc8fed3",
+      "brand": "Louis Vuitton",
+      "name": "Time Out Sneaker",
+      "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-0e2cd02619a29ca52f5f",
-      "brand": "PUMA",
-      "name": "Arizona Suede",
-      "reason": "footwear-type-unverified"
+      "id": "arrival-b7843630cdec6b89520b",
+      "brand": "Moncler",
+      "name": "Trailgrip Lite3 Nubuck & Suede Sneakers",
+      "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-cb79f6400396e350bf8d",
-      "brand": "PUMA",
-      "name": "Speedcat Ballet Dress-Up",
-      "reason": "hybrid-review-required"
+      "id": "official-salomon-l45404900",
+      "brand": "Salomon",
+      "name": "XT-6 PROTECTIVE",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-salomon-l45397400",
+      "brand": "Salomon",
+      "name": "XT-WHISPER GORE-TEX",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-dior-hooper-beige-blue-3sn375aed-h560",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker Beige and Blue Dior Oblique Jacquard and Black Suede Calfskin",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-dior-hooper-black-oblique-3sn375aed-h960",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker Black Dior Oblique Jacquard and Black Suede Calfskin",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-dior-hooper-white-navy-3sn376zdf-h009",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker White Canvas and Navy Blue Suede Calfskin",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-lv-drop-300-black-1akp23",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Black",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-lv-drop-300-blue-1akp2m",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Blue",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-lv-drop-300-orange-1akp11",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Orange",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-new-balance-mt24yj",
+      "brand": "New Balance",
+      "name": "TDS MT2",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "lv-frontrow-sneaker-1akyho",
+      "brand": "Louis Vuitton",
+      "name": "Frontrow Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "lv-frontrow-sneaker-1akyh8",
+      "brand": "Louis Vuitton",
+      "name": "Frontrow Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "lv-time-out-sneaker-1akyik",
+      "brand": "Louis Vuitton",
+      "name": "Time Out Sneaker",
+      "reason": "representative-photo-review-required"
     }
   ]
 }

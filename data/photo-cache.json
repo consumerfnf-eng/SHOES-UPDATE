@@ -1320,6 +1320,42 @@
       "sha256": "9b5b1ed4ed8f07f8dc9d88cc22d4ee4c0422c37aceb163c49f01f91ecb94e7b3",
       "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b31272b8-ab20-436c-a772-6ab6c6a8b8e3/W+NIKE+AIR+WINFLO+12+GTX.png",
       "checkedAt": "2026-10-07T08:52:33.777Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/402362/11/sv01/fnd/PNA/fmt/png/Arizona-Suede-Sneakers": {
+      "path": "/images/ad90729863e5189c51bb39602096ee704a3838ac4fa56be9eb9a53d5f4103031.webp",
+      "sha256": "ad90729863e5189c51bb39602096ee704a3838ac4fa56be9eb9a53d5f4103031",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/402362/11/sv01/fnd/PNA/fmt/png/Arizona-Suede-Sneakers",
+      "checkedAt": "2026-10-07T09:15:39.296Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/408054/02/sv01/fnd/PNA/fmt/png/Speedcat-Ballet-Dress-Up-Women's-Sneakers": {
+      "path": "/images/1bf40eebfd6963cf5775749c431640407a4b790b9c967b25fbe70cf129ce82d8.webp",
+      "sha256": "1bf40eebfd6963cf5775749c431640407a4b790b9c967b25fbe70cf129ce82d8",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/408054/02/sv01/fnd/PNA/fmt/png/Speedcat-Ballet-Dress-Up-Women's-Sneakers",
+      "checkedAt": "2026-10-07T09:15:39.346Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/408054/03/sv01/fnd/PNA/fmt/png/Speedcat-Ballet-Dress-Up-Women's-Sneakers": {
+      "path": "/images/f9024d0d237fcf6c633c187ed9e8e4ab98e57918c0a96258d4ed6af7c28652f8.webp",
+      "sha256": "f9024d0d237fcf6c633c187ed9e8e4ab98e57918c0a96258d4ed6af7c28652f8",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/408054/03/sv01/fnd/PNA/fmt/png/Speedcat-Ballet-Dress-Up-Women's-Sneakers",
+      "checkedAt": "2026-10-07T09:15:39.369Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/408054/01/sv01/fnd/PNA/fmt/png/Speedcat-Ballet-Dress-Up-Women's-Sneakers": {
+      "path": "/images/9bb986bf1618c24706c5313d9349e89cd066bd7b15439a9e469bc61403336c9e.webp",
+      "sha256": "9bb986bf1618c24706c5313d9349e89cd066bd7b15439a9e469bc61403336c9e",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/408054/01/sv01/fnd/PNA/fmt/png/Speedcat-Ballet-Dress-Up-Women's-Sneakers",
+      "checkedAt": "2026-10-07T09:15:39.817Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/398846/93/sv01/fnd/PNA/fmt/png/Speedcat-OG-Sneakers": {
+      "path": "/images/a84aee424be563fed3fe406fabd1c7ea821407b701ca97f4201cc83d4bde3948.webp",
+      "sha256": "a84aee424be563fed3fe406fabd1c7ea821407b701ca97f4201cc83d4bde3948",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/398846/93/sv01/fnd/PNA/fmt/png/Speedcat-OG-Sneakers",
+      "checkedAt": "2026-10-07T09:15:40.021Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/398846/94/sv01/fnd/PNA/fmt/png/Speedcat-OG-Sneakers": {
+      "path": "/images/484cbba2cc4e4d855671a297c66119f0eec766fd0c126d7c38a3e92f39ee3808.webp",
+      "sha256": "484cbba2cc4e4d855671a297c66119f0eec766fd0c126d7c38a3e92f39ee3808",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/398846/94/sv01/fnd/PNA/fmt/png/Speedcat-OG-Sneakers",
+      "checkedAt": "2026-10-07T09:15:40.029Z"
     }
   }
 }
