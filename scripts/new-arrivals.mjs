@@ -53,6 +53,7 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence}){
     const labelText=clean(link.label).replace(/\b(?:Next slide|Previous slide|App Access)\s*/gi,'').trim();
     let name=link.label.match(/\*\*([^*]+)\*\*/)?.[1]||labelText.split(/(?:\$|€|£|₩)\s*[\d,.]/)[0]||imageUrls(link.label)[0]?.alt;
     name=clean(name).replace(/\s+E\d{2}$/,'');
+    if(!/[\p{L}\p{N}]/u.test(name))name=clean(imageUrls(link.label)[0]?.alt||'');
     name=name.replace(/^\d+ Colors?,\s*/i,'').replace(/^(?:Shop the look|Main product image of)\s*/i,'').replace(/,\s*Price,?\s*$/i,'').replace(/\s+\d[\d,.]*\s+USD\s+.*$/i,'').replace(/(?:\s+-)+\s*$/,'');
     name=name.replace(/\s+-\s+Slide\s+\d+/gi,'').trim();
     const imageDerivedName=/^new(?: in)?$/i.test(name);
@@ -96,7 +97,33 @@ export function listingProduct(candidate,checkedAt){
   const base={verified:true,brand:p.brand,style,verifiedAt:checkedAt,verificationMethod:method,contentHash:p.arrivalEvidence.contentHash,...(!sku?{identifierType:'official-product-id'}:{})};
   p.officialProductEvidence={...base,url:p.url};p.officialImageEvidence={...base,url:p.image,sourceUrl:p.arrivalEvidence.url};
   const hybrid=officialHybridReview(p,p.name+' '+p.description,checkedAt);if(hybrid)p.hybridReview=hybrid;
-  return classifyFootwear(p).category?p:null;
+  const labeled=officialVariantLabels(p,candidate);
+  return classifyFootwear(labeled).category?labeled:null;
+}
+// Use only the exact official product's card, URL or title to repair navigation
+// labels accidentally parsed as a color. Never borrow a neighbouring swatch.
+export function officialVariantLabels(product,candidate){
+  const p={...product},last=new URL(p.url).pathname.split('/').filter(Boolean).pop().replace(/\.html$/i,'');
+  if(p.brand==='On'){
+    const title=candidate?.cardDescription?.replace(/^New(?:\s+color)?\s+/i,'').split(/\s+(?:Men|Women|Unisex)\s*[–—-]/)[0]?.trim();
+    if(title&&/Cloud/i.test(title))p.name=title;
+    const color=candidate?.linkedImages?.find(i=>/^[\p{L}\s]+\s\|\s[\p{L}\s]+$/u.test(i.alt))?.alt;
+    if(color)p.colorway=color;
+  }
+  if(['Balenciaga','Bottega Veneta'].includes(p.brand)){
+    const prefix=p.name.toLowerCase().replace(/\s+/g,'-')+'-';
+    if(last.toLowerCase().startsWith(prefix)){
+      const color=last.slice(prefix.length).replace(/-[A-Z0-9]{8,}$/,'');
+      if(color&&/^[a-z-]+$/i.test(color))p.colorway=color.replaceAll('-',' ');
+    }
+  }
+  if(p.brand==='ALOHAS'){
+    const title=p.name.match(/^Tb\.\d+\s+(?:Aera|Club Nylon)\s+(.+?)\s+Sneakers$/i);
+    if(title)p.colorway=title[1];
+  }
+  if(p.brand==='FILA'&&p.colorway)p.colorway=p.colorway.split(/!\[|https?:|\\/)[0].trim();
+  if(/^(?:image\s*\d+|(?:women|men)\s*\||sneakers?\s*[·|]|공식 색상명 미표기)/i.test(p.colorway||''))p.colorway='';
+  return p;
 }
 function pageProduct(candidate,text,checkedAt,existing){
   const url=candidate.url;
@@ -184,6 +211,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
         let p=listed?{...listed,...(old?{id:old.id}:{}),...(!listed.colorway&&old?.colorway&&old?.officialProductEvidence?.verificationMethod!=='official-new-listing-sku-image'?{colorway:old.colorway,colors:old.colors}:{} )}:pageProduct(candidate,text,checkedAt,retained?old:null);
         if(!p&&readDetails)p=pageProduct(candidate,assertReadableOfficial(await readDetails(candidate.url)),checkedAt,null);
         if(!p){status.errors.push({url:candidate.url,error:'product-identity-image-unverified'});continue;}
+        p=officialVariantLabels(p,candidate);
         if(classifyFootwear(p).reason==='excluded-footwear')continue;
         products.push(p);status.verified++;
       }catch(e){status.errors.push({url:candidate.url,error:e.message});}

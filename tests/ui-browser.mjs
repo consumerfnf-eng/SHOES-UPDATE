@@ -25,9 +25,12 @@ try{
  await page.goto(url);await page.locator('.product-card').first().waitFor();
  assert.equal(await page.locator('#result-count').textContent(),'48');assert.equal(await page.locator('.product-card').count(),40);
  assert.equal(await page.locator('#keyword-list a,#style-status a').count(),0,'No source links under style keywords');
- assert.equal(await page.locator('[data-source="sns"],#ecommerce-keyword-list,#editorial-keyword-list').count(),0);
+ assert.equal(await page.locator('#ecommerce-keyword-list,#editorial-keyword-list').count(),0);
+ assert.equal(await page.locator('[data-source="sns"]').count(),1);
+ await page.locator('[data-source="sns"]').click();assert.equal(await page.locator('.product-card').count(),0);assert(await page.locator('#empty-title').isVisible());await page.locator('[data-source="all"]').click();
  assert.equal(await page.locator('#release-filter option').count(),1,'Only released products are offered');
  assert.equal(await page.locator('.color-chip img').count(),0,'Chips show color fills, not thumbnail photos');
+ await page.locator('#search').fill('White');assert.equal(await page.locator('.product-card').filter({has:page.locator('[data-variant="black"]')}).locator('.color-chip').count(),2,'A color search retains the other active colors of the matching model');await page.locator('#search').fill('');
  const group=page.locator('.product-card').filter({has:page.locator('[data-variant="black"]')});
  await group.locator('[data-variant="black"]').click();assert((await group.locator('.card-open img').getAttribute('src')).endsWith('black.svg'));
  await group.locator('.card-name').click();assert.equal(await page.locator('#detail-content .color-chip').count(),2);

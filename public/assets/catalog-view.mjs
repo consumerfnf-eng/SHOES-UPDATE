@@ -149,15 +149,32 @@ export {releaseWindow,releaseSortKey};
 // Same-model colorways share one grid card; when a feed gives every color a
 // different modelKey, remove the declared colorway tokens from the product name
 // before grouping. The raw variant records remain intact for detail/download.
-export function variantGroupKey(p) {
-  if (!p?.name) return p?.modelKey || p?.id;
-  const normalize = value => String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9가-힣]+/g,'');
+export function variantGroupName(p) {
+  if (!p?.name) return p?.modelKey || p?.id || '';
   let base = String(p.name);
   const colors = [p.colorway, ...(p.colors || []).map(c => typeof c === 'string' ? c : c?.name)].filter(Boolean)
     .flatMap(value => String(value).split(/[\/,·]+/)).map(value => value.trim()).filter(value => value.length > 2).sort((a,b)=>b.length-a.length);
   for (const color of colors) base = base.replace(new RegExp(`(?:^|[\\s|—–-])${color.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}(?=$|[\\s|—–-])`,'ig'),' ');
-  const normalized = normalize(base);
+  return base.replace(/\s+/g,' ').replace(/\s*[|—–-]\s*$/,'').trim()||p.name;
+}
+export function variantGroupKey(p) {
+  if (!p?.name) return p?.modelKey || p?.id;
+  const normalize = value => String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'');
+  const normalized = normalize(variantGroupName(p));
   return `${normalize(p.brand)}|${normalized || normalize(p.modelKey) || normalize(p.id)}`;
+}
+export function variantColorLabel(p){
+  const color=String(p.colorway||'').trim();
+  return color&&!/(?:https?:|!\[|^image\s*\d+$|^(?:women|men)\s*\||^sneakers?\s*[·|]|미표기)/i.test(color)?color:'';
+}
+export function uniqueColorVariants(group,activeId){
+  const seen=new Map();
+  for(const p of group){
+    const color=variantColorLabel(p).normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
+    const key=color||p.id;
+    if(!seen.has(key)||p.id===activeId)seen.set(key,p);
+  }
+  return [...seen.values()];
 }
 export function groupProductVariants(products) {
   const groups = new Map();

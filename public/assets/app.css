@@ -57,3 +57,5 @@
 @media(min-width:1800px){.trends .keyword-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:1100px){.trends{padding:20px}.trends .keyword-list{gap:0 12px}.trend-row .keyword-select{grid-template-columns:23px minmax(0,1fr) 34px;gap:8px}}
 @media(max-width:680px){.trends{padding:19px 15px}.trends h2{font-size:18px}.trend-heading{gap:7px}.trends .keyword-list{grid-template-columns:1fr}.trend-row .keyword-select{grid-template-columns:26px minmax(0,1fr) 33px;min-height:75px;padding:12px 5px}.trend-row.search-keyword .keyword-name{font-size:14px}.trend-row.search-keyword .keyword-evidence{font-size:11px}.trends .section-label .text-button{font-size:11px;white-space:nowrap}.trends .search-rank-status{line-height:1.7}}
+
+.selected-color{margin:7px 0 0;color:#64748b;font-size:11px;line-height:1.5;overflow-wrap:anywhere}.detail-dialog .selected-color{font-size:13px;margin-bottom:14px}
