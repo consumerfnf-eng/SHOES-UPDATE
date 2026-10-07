@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-07T08:26:51.885Z",
+  "checkedAt": "2026-10-07T09:38:20.803Z",
   "policy": "Exact-variant official side or three-quarter shoe-only photograph; new unreviewed assets are held.",
   "products": [
     {
@@ -3686,6 +3686,59 @@
       "offsetY": -20,
       "colorSwatches": [
         "#626244"
+      ]
+    },
+    {
+      "id": "arrival-0527b5dfb0912bea1f28",
+      "brand": "Cecilie Bahnsen",
+      "style": "3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
+      "originalImage": "https://ceciliebahnsen.com/cdn/shop/files/3.26FTW30002CBBLAISESOFTSNEAKERSLEATHERNYLONSILVERMINT_Side.jpg?crop=center&format=webp&height=730&v=1784620332&width=1200",
+      "image": "https://ceciliebahnsen.com/cdn/shop/files/3.26FTW30002CBBLAISESOFTSNEAKERSLEATHERNYLONSILVERMINT_Side.jpg?crop=center&format=webp&height=730&v=1784620332&width=1200",
+      "sourceUrl": "https://ceciliebahnsen.com/products/3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
+      "checkedAt": "2026-10-07T09:38:20.803Z",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.75,
+      "offsetY": -20,
+      "colorSwatches": [
+        "#c0c0c0",
+        "#d1e2c6"
+      ]
+    },
+    {
+      "id": "arrival-fd128415c313d132cec2",
+      "brand": "Loewe",
+      "style": "L815282XAY-0115",
+      "originalImage": "https://www.loewe.com/dw/image/v2/BBPC_PRD/on/demandware.static/-/Sites-Loewe_master/default/dwd2b42d20/images_rd/L815282XAY/L815282XAY-0115/L815282XAY_0115_1F.jpg?sw=750&q=100",
+      "image": "https://www.loewe.com/dw/image/v2/BBPC_PRD/on/demandware.static/-/Sites-Loewe_master/default/dwd2b42d20/images_rd/L815282XAY/L815282XAY-0115/L815282XAY_0115_1F.jpg?sw=750&q=100",
+      "sourceUrl": "https://www.loewe.com/usa/en/women/shoes/sneakers/pogo-sneaker-in-technical-knit-and-suede/L815282XAY-0115.html",
+      "checkedAt": "2026-10-07T09:38:20.803Z",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1.8,
+      "offsetY": -41,
+      "colorSwatches": [
+        "#c7c7c7",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "arrival-b7843630cdec6b89520b",
+      "brand": "Moncler",
+      "style": "L209B4M00080M7242285",
+      "originalImage": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00080M7242285_1/image/trailgrip-lite3-nubuck-and-suede-sneakers-women-brown-moncler-1.jpg?w=1300&q=80",
+      "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00080M7242285_3/image/trailgrip-lite3-nubuck-and-suede-sneakers-women-brown-moncler-3.jpg?w=1300&q=80",
+      "sourceUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lite3-nubuck-and-suede-sneakers-brown-L209B4M00080M7242285.html",
+      "checkedAt": "2026-10-07T09:38:20.803Z",
+      "approved": true,
+      "view": "three-quarter",
+      "noPerson": true,
+      "scale": 1.8,
+      "offsetY": -35,
+      "colorSwatches": [
+        "#8d777e"
       ]
     }
   ]

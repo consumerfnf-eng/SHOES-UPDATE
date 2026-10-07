@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-07T09:15:36.048Z",
+  "checkedAt": "2026-10-07T09:38:21.006Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -15883,6 +15883,12 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-3d39dc707b5ca1c66628",
+      "brand": "FILA",
+      "name": "휠라 에샤페 LX 퍼플",
+      "reason": "footwear-type-unverified"
+    },
+    {
       "id": "arrival-de152d857f00699601ac",
       "brand": "Nike",
       "name": "Air Jordan 1 High OG \"Royal\"",
@@ -15901,15 +15907,15 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-7bfbc18a95e62fc8fed3",
+      "id": "arrival-e41f7477d4ff320d379f",
       "brand": "Louis Vuitton",
-      "name": "Time Out Sneaker",
+      "name": "LV スニーカリーナ",
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-b7843630cdec6b89520b",
-      "brand": "Moncler",
-      "name": "Trailgrip Lite3 Nubuck & Suede Sneakers",
+      "id": "arrival-7bfbc18a95e62fc8fed3",
+      "brand": "Louis Vuitton",
+      "name": "Time Out Sneaker",
       "reason": "representative-photo-review-required"
     },
     {

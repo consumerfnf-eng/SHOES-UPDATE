@@ -20,13 +20,13 @@ const weekStart=sunday.toISOString().slice(0,10);
 if(process.argv.includes('--only-if-stale')&&source.collection?.selectionBasis==='official-new-arrivals'&&source.collection?.lastSuccessfulCollectionAt&&kstDay(source.collection.lastSuccessfulCollectionAt)>=weekStart){console.log('This week already has a completed New Arrivals collection; no duplicate collection.');process.exit(0);}
 const client=createJinaClient({key:process.env.JINA_API_KEY||''});
 const officialSources=await readJson(new URL('config/daily_sources.json',root));
-const origins=Object.values(officialSources).flat().map(s=>s.url);
+const origins=Object.values(officialSources).flat().flatMap(s=>{const u=new URL(s.url);return u.hostname.startsWith('www.')?[s.url,u.origin.replace('://www.','://')]:[s.url];});
 const rendered=createRenderedOfficialReader({origins,apiKey:process.env.FIRECRAWL_API_KEY||'',maxRequests:600});
 const reader=createOfficialReader({read:client.read,origins,renderedRead:rendered.read});
 try {
   const policy=await readJson(new URL('config/brand-policy.json',root));
   const brands=policy.brands.filter(b=>b.mandatory||b.policy==='core').sort((a,b)=>Number(b.group==='luxury')-Number(a.group==='luxury')).map(b=>b.name);
-  const run=await collectNewArrivals({read:reader.read,sources:officialSources,brands,existing:source.products,now});
+  const run=await collectNewArrivals({read:reader.read,readDetails:rendered.readHtml,sources:officialSources,brands,existing:source.products,now});
   if(!run.coverage.some(c=>c.responses))throw Error('ALL_OFFICIAL_SOURCES_UNAVAILABLE');
   const combined=mergePreserving(source.products,run.products);
   const verified={products:run.products,diagnostics:run.coverage};

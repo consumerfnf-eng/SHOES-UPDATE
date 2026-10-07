@@ -5,6 +5,10 @@ import {createOfficialReader} from '../scripts/official-reader.mjs';
 const target='https://official.example/jp/sneakers';
 const text='Public official sneaker catalogue with shoe specifications and product links. '.repeat(4);
 const page=(override={})=>Response.json({success:true,data:{markdown:text,metadata:{url:target,statusCode:200,title:'Official Sneakers'},...override}});
+test('rendered detail mode reads HTML galleries omitted from markdown and caches by mode',async()=>{
+ const requests=[],client=createRenderedOfficialReader({origins:[target],sleep:async()=>{},fetchImpl:async(_,options)=>{requests.push(JSON.parse(options.body));return page({html:'<h1>Runner sneakers</h1><p>Official product description with rubber outsole and mesh upper. Verified shoes are available in the official catalogue.</p><img alt="Runner side" src="https://official.example/runner-side.jpg">'});}});
+ const result=await client.readHtml(target);assert(result.includes('runner-side.jpg'));await client.readHtml(target);assert.equal(requests.length,1);assert.deepEqual(requests[0].formats,['markdown','html']);assert.equal(requests[0].onlyMainContent,false);await client.read(target);assert.equal(requests.length,2);
+});
 test('public rendering sends only an official URL, caches repeats, and caps requests',async()=>{
   const calls=[],client=createRenderedOfficialReader({origins:[target],sleep:async()=>{},maxRequests:1,fetchImpl:async(url,options)=>{calls.push({url,options});return page();}});
   const [a,b]=await Promise.all([client.read(target),client.read(target)]);assert.equal(a,b);assert(a.includes('URL Source: '+target));assert.equal(calls.length,1);

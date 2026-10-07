@@ -38,9 +38,14 @@ export function officialHtmlMarkdown(html,url){
   if(/access denied|just a moment|captcha|robot check|pardon our interruption/i.test(title))throw Error('OFFICIAL_ACCESS_CHALLENGE');
   const clean=t=>decodeText(t.replace(/<[^>]*>/g,' ')).replace(/\s+/g,' ').trim();
   const absolute=value=>{try{const u=new URL(decodeText(value),url);return u.protocol==='https:'&&!u.username&&!u.password?u.href:'';}catch{return '';}};
-  const attr=(tag,name)=>tag.match(new RegExp(`\\b${name}=["']([^"']+)["']`,'i'))?.[1]||'';
+  const attr=(tag,name)=>tag.match(new RegExp(`(?:^|\\s)${name}=["']([^"']+)["']`,'i'))?.[1]||'';
   let body=html.replace(/<(script|style|nav|footer|aside)\b[^>]*>[\s\S]*?<\/\1>/gi,'');
-  body=body.replace(/<img\b[^>]*>/gi,tag=>{const src=absolute(attr(tag,'src'));return src?`![${clean(attr(tag,'alt'))}](${src})`:'';})
+  body=body.replace(/<img\b[^>]*>/gi,tag=>{
+    const responsive=[...(attr(tag,'data-srcset')||attr(tag,'srcset')).matchAll(/(?:^|,\s*)(https:\/\/\S+)\s+(\d+)w/g)].map(m=>({url:m[1],width:Number(m[2])})).sort((a,b)=>a.width-b.width);
+    const preferred=responsive.filter(i=>i.width>=600&&i.width<=1600).at(-1)||responsive.at(-1);
+    const src=absolute(preferred?.url||attr(tag,'src'))||absolute(attr(tag,'data-src'));
+    return src?`![${clean(attr(tag,'alt'))}](${src})`:'';
+  })
     .replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi,(_,attrs,text)=>{const href=absolute(attr(attrs,'href'));return href?`[${clean(text)}](${href})`:clean(text);})
     .replace(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi,(_,level,text)=>`\n${'#'.repeat(Number(level))} ${clean(text)}\n`)
     .replace(/<(?:li)\b[^>]*>/gi,'\n* ').replace(/<\/(?:p|div|section|li)>|<br\s*\/?>/gi,'\n').replace(/<[^>]*>/g,' ');

@@ -27,11 +27,12 @@ export function isNewListing(url,text=''){
 const productPath=/\/(?:products?|produtos|p|pr|pd|t)\/|\/[^/]+\.html(?:$|\?)|(?:-p-|\/p-)[a-z0-9]|\/(?:men|women)\/footwear\/[^/]+\/[^/?]+|\/[0-9]{6,}(?:[.?/]|$)/i;
 function isProductLink(url){try{const u=new URL(url);return productPath.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
 function colorLabel(alt,brand){
+  if(brand==='Cecilie Bahnsen'&&/\b[A-Z]+\/[A-Z]+$/.test(alt))return alt.split(/\s+/).at(-1);
   let color=['ASICS','PUMA','Onitsuka Tiger'].includes(brand)?alt.split(',')[1]?.trim().replace(/\s+\d+$/,'')||'':alt.split(/\s[-—–]\s/)[1]||'';
   color=color.replace(/^(.+)\s+\1$/i,'$1').trim();
   return /\b(?:women|men|unisex|image|view|united states)\b|\|/.test(color.toLowerCase())?'':color;
 }
-const imageUrls=text=>markdownLinks(text).filter(l=>l.image).map(l=>({alt:l.label,url:l.url})).filter(i=>{
+const imageUrls=text=>markdownLinks(text).flatMap(l=>l.image?[l]:markdownLinks(l.label).filter(child=>child.image)).map(l=>({alt:l.label,url:l.url})).filter(i=>{
   if(/(?:placeholder|fallback|logo|swatch|icon|LOOK_|lookbook|campaign|lifestyle|cardPayment|packaging|_MDL\b|variantthumbnail)/i.test(i.url+' '+i.alt)||/[.]svg(?:[?\/]|$)/i.test(i.url))return false;
   const u=new URL(i.url),size=Number(u.searchParams.get('width')||u.searchParams.get('wid')||u.searchParams.get('w'));
   return !(size&&size<160)&&!/(?:^|[\/_])(?:40x40|60x60|80x80)(?:[\/_]|$)/i.test(u.pathname);
@@ -53,11 +54,15 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence}){
     let name=link.label.match(/\*\*([^*]+)\*\*/)?.[1]||labelText.split(/(?:\$|€|£|₩)\s*[\d,.]/)[0]||imageUrls(link.label)[0]?.alt;
     name=clean(name).replace(/\s+E\d{2}$/,'');
     name=name.replace(/^\d+ Colors?,\s*/i,'').replace(/^(?:Shop the look|Main product image of)\s*/i,'').replace(/,\s*Price,?\s*$/i,'').replace(/\s+\d[\d,.]*\s+USD\s+.*$/i,'').replace(/(?:\s+-)+\s*$/,'');
+    name=name.replace(/\s+-\s+Slide\s+\d+/gi,'').trim();
+    const imageDerivedName=/^new(?: in)?$/i.test(name);
+    if(imageDerivedName)name=clean(imageUrls(link.label)[0]?.alt||'').replace(new RegExp('^'+brand+'\\s+','i'),'');
     if(!name||/^(?:shop now|quick view|discover|view product|add to bag|new|coming soon|\+?\d+)$/i.test(name))continue;
     const block=text.slice(link.start,next?.start||link.end+1600);
     const images=imageUrls(link.label).concat(imageUrls(block));
     const row=rows.get(key)||{brand,name,url:link.url,images:[],linkedImages:[],cardDescription:clean(link.label),arrivalEvidence:{verified:true,brand,productUrl:link.url,kind:isNew?'new-arrivals-listing':'new-badge',url,verifiedAt:checkedAt,excerpt:(isNew?'Official New / New Arrivals listing: ':'Official product New badge: ')+name,contentHash:sourceHash}};
     if(labelText&&/sneaker|trainer|shoe/i.test(name))row.name=name;
+    if(imageDerivedName)row.needsProductTitle=true;
     if(labelText.length>row.cardDescription.length)row.cardDescription=labelText;
     row.images=[...new Map([...row.images,...images].map(image=>[image.url,image])).values()];
     row.linkedImages=[...new Map([...row.linkedImages,...imageUrls(link.label)].map(image=>[image.url,image])).values()];rows.set(key,row);
@@ -76,6 +81,7 @@ export function listingFollowups(text,url,brand,sectionEvidence){
   return result;
 }
 export function listingProduct(candidate,checkedAt){
+  if(candidate.needsProductTitle)return null;
   const chosen=candidate.linkedImages?.find(i=>/_SLS\.|_PM1_Side|_nb_02_i|_SBG_E02|_A\.(?:jpg|png)/i.test(i.url))||candidate.linkedImages?.[0];
   if(!chosen)return null;
   const last=new URL(candidate.url).pathname.split('/').filter(Boolean).pop().replace(/\.html$/i,'');
@@ -116,8 +122,10 @@ function pageProduct(candidate,text,checkedAt,existing){
   // LV's colour picker includes other variants' large photographs after the
   // heading. Only its current variant gallery before H1 is identity evidence.
   const gallery=candidate.brand==='Louis Vuitton'?body.slice(0,body.indexOf('# '+heading)):body;
-  const images=imageUrls(gallery),own=images.filter(i=>candidate.images.some(c=>canonicalUrl(c.url)===canonicalUrl(i.url))||i.url.toLowerCase().includes(style.replace(/_/g,'').toLowerCase())||i.url.toLowerCase().includes(style.toLowerCase())||tokens.filter(t=>i.alt.toLowerCase().includes(t)).length>=Math.min(2,tokens.length));
-  const chosen=(candidate.brand==='Moncler'?own.find(i=>i.url.includes('/'+style+'_1/image/')):null)||own.find(i=>/_SLS\.|_PM1_Side|_nb_02_i|_SBG_E02|_A\.(?:jpg|png)/i.test(i.url))||own.find(i=>/_SLR\.|_PM2_/i.test(i.url))||own[0];
+  const lvSlug=candidate.brand==='Louis Vuitton'&&gallery.includes(style)?new URL(url).pathname.match(/\/products\/(.+)-nvprod/)?.[1]:'';
+  const cbStyle=candidate.brand==='Cecilie Bahnsen'?last.match(/^\d-\d{2}ftw\d+/i)?.[0]?.replace(/[^a-z0-9]/gi,'').toLowerCase():'';
+  const images=imageUrls(gallery),own=images.filter(i=>candidate.images.some(c=>canonicalUrl(c.url)===canonicalUrl(i.url))||i.url.toLowerCase().includes(style.replace(/_/g,'').toLowerCase())||i.url.toLowerCase().includes(style.toLowerCase())||lvSlug&&i.url.includes('louis-vuitton-'+lvSlug+'--')||cbStyle&&i.url.toLowerCase().replace(/[^a-z0-9]/g,'').includes(cbStyle)||tokens.filter(t=>i.alt.toLowerCase().includes(t)).length>=Math.min(2,tokens.length));
+  const chosen=(candidate.brand==='Moncler'?own.find(i=>i.url.includes('/'+style+'_1/image/')):null)||own.find(i=>/_SLS\.|_PM1_Side|_Side\.|_nb_02_i|_SBG_E02|_A\.(?:jpg|png)/i.test(i.url))||own.find(i=>/_SLR\.|_PM2_/i.test(i.url))||own[0];
   if(!chosen)return null;
   const detail=body.slice(body.indexOf('# '+heading)).split(/\n#{1,4}\s*(?:Contact us|Shipping|Delivery|Free shipping|SUBSCRIBE)/i)[0];
   const description=detail.split('\n').filter(l=>!l.includes('https://')&&l.trim().length>30).join(' ').slice(0,6000);
@@ -126,7 +134,11 @@ function pageProduct(candidate,text,checkedAt,existing){
     priceLabel:body.match(/(?:\$|€|£|₩)\s?[\d,.]+/)?.[0]||'',country:region(url),gender:/\/women|\/womens|shop-women/i.test(url)?'Women':/\/men|\/mens|shop-men/i.test(url)?'Men':'',
     firstSeen:checkedAt,productVerifiedAt:checkedAt,productEvidenceUrl:url,arrivalEvidence:{...candidate.arrivalEvidence,style},sourceSignals:[]};
   if(/\bsneakers?\b/i.test(chosen.alt))p.officialCategory='Sneakers';
-  if(/sneakerina/i.test(p.name))p.officialCategory='Ballet sneaker';
+  if(candidate.brand==='Loewe'){
+    const alt=chosen.alt.replace(/^LOEWE\s+/i,'').replace(/\s+/g,' ').trim(),prefix=clean(heading)+' ';
+    if(alt.toLowerCase().startsWith(prefix.toLowerCase()))p.colorway=alt.slice(prefix.length);
+  }
+  if(/sneakerina|スニーカリーナ/i.test(p.name))p.officialCategory='Ballet sneaker';
   const hybrid=officialHybridReview(p,body,checkedAt);if(hybrid)p.hybridReview=hybrid;
   const base={verified:true,brand:p.brand,style,verifiedAt:checkedAt,verificationMethod:'official-new-arrivals-and-product-page',contentHash:digest(text),...(styleType?{identifierType:styleType}:{})};
   p.officialProductEvidence={...base,url};p.officialImageEvidence={...base,url:p.image,sourceUrl:url};
@@ -134,7 +146,7 @@ function pageProduct(candidate,text,checkedAt,existing){
   return p;
 }
 function region(url){const u=new URL(url),m=(u.hostname+'/'+u.pathname).match(/(?:^|[./_-])(us|uk|gb|jp|kr|ca|hk|cn|au|fr|it|de|dk)(?:[./_-]|$)/i);return m?(m[1].toUpperCase()==='UK'?'GB':m[1].toUpperCase()):'GL';}
-export async function collectNewArrivals({read,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,log=console.log}={}){
+export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,log=console.log}={}){
   const checkedAt=new Date(now).toISOString(),products=[],coverage=[],work=[];
   let discoveryCursor=0;
   async function discoverBrands(){while(discoveryCursor<brands.length){const brand=brands[discoveryCursor++];
@@ -147,7 +159,7 @@ export async function collectNewArrivals({read,sources,brands,existing=[],now=ne
         const rows=parseArrivalListing(text,{brand,url:source.url,checkedAt,sectionEvidence:source.sectionEvidence});if(isNewListing(source.url,text)||rows.length)status.listingPages++;
         for(const p of rows)candidates.set(canonicalUrl(p.url),p);
         const followups=listingFollowups(text,source.url,brand,source.sectionEvidence);
-        for(const next of followups.reverse())if(!seen.has(canonicalUrl(next.url))&&!queue.some(q=>canonicalUrl(q.url)===canonicalUrl(next.url)))queue.unshift(next);
+        for(const next of followups)if(!seen.has(canonicalUrl(next.url))&&!queue.some(q=>canonicalUrl(q.url)===canonicalUrl(next.url)))queue.push(next);
       }catch(e){status.errors.push({url:source.url,error:e.message});}
     }
     status.truncated=queue.some(s=>!seen.has(canonicalUrl(s.url)));status.candidates=candidates.size;
@@ -169,7 +181,9 @@ export async function collectNewArrivals({read,sources,brands,existing=[],now=ne
         const retained=old&&old.officialProductEvidence?.verificationMethod!=='official-new-listing-sku-image'&&officialEvidenceFor(old,kstDay(now));
         const listed=retained?null:listingProduct(candidate,checkedAt);
         const text=retained||listed?'':assertReadableOfficial(await read(`https://r.jina.ai/${candidate.url}`));
-        const p=listed?{...listed,...(old?{id:old.id}:{}),...(!listed.colorway&&old?.colorway&&old?.officialProductEvidence?.verificationMethod!=='official-new-listing-sku-image'?{colorway:old.colorway,colors:old.colors}:{} )}:pageProduct(candidate,text,checkedAt,retained?old:null);if(!p){status.errors.push({url:candidate.url,error:'product-identity-image-unverified'});continue;}
+        let p=listed?{...listed,...(old?{id:old.id}:{}),...(!listed.colorway&&old?.colorway&&old?.officialProductEvidence?.verificationMethod!=='official-new-listing-sku-image'?{colorway:old.colorway,colors:old.colors}:{} )}:pageProduct(candidate,text,checkedAt,retained?old:null);
+        if(!p&&readDetails)p=pageProduct(candidate,assertReadableOfficial(await readDetails(candidate.url)),checkedAt,null);
+        if(!p){status.errors.push({url:candidate.url,error:'product-identity-image-unverified'});continue;}
         if(classifyFootwear(p).reason==='excluded-footwear')continue;
         products.push(p);status.verified++;
       }catch(e){status.errors.push({url:candidate.url,error:e.message});}

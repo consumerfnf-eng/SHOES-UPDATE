@@ -3,14 +3,33 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import {parseArrivalListing,isNewListing,listingProduct,listingFollowups} from '../scripts/new-arrivals.mjs';
+import {parseArrivalListing,isNewListing,listingProduct,listingFollowups,collectNewArrivals} from '../scripts/new-arrivals.mjs';
 import {releaseState} from '../public/assets/release-window.mjs';
 import {publicationWindow} from '../public/assets/publication-window.mjs';
 import {curateProduct,officialHybridReview} from '../scripts/curation.mjs';
 import {publishCurated,atomicJson} from '../scripts/publish-curated.mjs';
 import {eligibilityReason} from '../scripts/archive-expired.mjs';
 const now=new Date('2026-10-07T01:00:00Z'),today='2026-10-07';
+test('an incomplete product image gallery gets a rendered detail retry without trusting a different product',async()=>{
+ const source='https://www.prada.com/us/en/women/new-in.html',pdp='https://www.prada.com/us/en/p/runner-sneaker/ABC123';let retries=0;
+ const run=await collectNewArrivals({sources:{Prada:[{url:source}]},brands:['Prada'],now,log:()=>{},read:async target=>target.endsWith(source)?`# New In\n[Runner sneaker](${pdp})`:'# Runner sneaker\nABC123\n![Runner sneaker](<Base64-Image-Removed>)',readDetails:async target=>{assert.equal(target,pdp);retries++;return `# Runner sneaker\nProduct code: ABC123\n![Runner sneaker side](https://www.prada.com/ABC123_SLS.jpg)\nRunner sneaker with rubber outsole.`;}});
+ assert.equal(retries,1);assert.equal(run.products.length,1);assert.equal(run.products[0].officialImageEvidence.sourceUrl,pdp);assert.equal(run.products[0].style,'ABC123');
+ const wrong=await collectNewArrivals({sources:{Prada:[{url:source}]},brands:['Prada'],now,log:()=>{},read:async target=>target.endsWith(source)?`# New In\n[Runner sneaker](${pdp})`:'# Runner sneaker',readDetails:async()=>'# Leather handbag\n![Handbag](https://www.prada.com/bag.jpg)'});
+ assert.equal(wrong.products.length,0);
+});
 const url='https://www.prada.com/us/en/p/runner/ABC123';
+test('linked galleries match an exact Cecilie shoe code and recover a model name from carousel-only labels',async()=>{
+ const source='https://www.ceciliebahnsen.com/collections/new-in',pdp='https://ceciliebahnsen.com/products/3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint',img='https://ceciliebahnsen.com/cdn/shop/files/3.26FTW30002CBBLAISE_Side.jpg';
+ const run=await collectNewArrivals({sources:{'Cecilie Bahnsen':[{url:source}]},brands:['Cecilie Bahnsen'],now,log:()=>{},read:async target=>target.endsWith(source)?`# New In\n[CBBlaise Shoes](${pdp})`:`[![CBBLAISE | SOFT SNEAKERS SILVER/MINT](${img})](${img})\n# CBBlaise Shoes\nSoft leather sneakers with rubber sole.`});
+ assert.equal(run.products.length,1);assert.equal(run.products[0].image,img);assert.equal(run.products[0].colorway,'SILVER/MINT');assert.equal(run.products[0].officialCategory,'Sneakers');
+ const rows=parseArrivalListing('# New In\n[![LOEWE Pogo sneaker Grey/White](https://www.loewe.com/P123.jpg) New in - Slide 0 - Slide 1](https://www.loewe.com/usa/en/women/shoes/sneakers/pogo/P123.html)',{brand:'Loewe',url:'https://www.loewe.com/usa/en/women/new-in',checkedAt:now.toISOString()});
+ assert.equal(rows[0].name,'Pogo sneaker Grey/White');assert(rows[0].needsProductTitle);assert.equal(listingProduct(rows[0],now.toISOString()),null);
+});
+test('configured regional sources are attempted before one catalogue consumes the page limit',async()=>{
+ const a='https://www.prada.com/us/en/new-in',b='https://www.prada.com/gb/en/new-in',calls=[];
+ await collectNewArrivals({sources:{Prada:[{url:a},{url:b}]},brands:['Prada'],maxPagesPerBrand:2,now,log:()=>{},read:async target=>{calls.push(target);return `# New In\n[Next](${a}?page=2)`;}});
+ assert.deepEqual(calls,['https://r.jina.ai/'+a,'https://r.jina.ai/'+b]);
+});
 function product(){const base={verified:true,brand:'Prada',style:'ABC123',verifiedAt:now.toISOString()};return {id:'new-prada',brand:'Prada',name:'Runner sneakers',style:'ABC123',url,image:'https://www.prada.com/ABC123_SLR.jpg',description:'Mesh sneakers with rubber soles',colorway:'Red',country:'US',productVerifiedAt:now.toISOString(),productEvidenceUrl:url,officialProductEvidence:{...base,url},officialImageEvidence:{...base,url:'https://www.prada.com/ABC123_SLR.jpg',sourceUrl:url},arrivalEvidence:{...base,productUrl:url,url:'https://www.prada.com/us/en/womens/new-in/c/10111US',kind:'new-arrivals-listing',excerpt:'Official New In listing: Runner sneakers',contentHash:'a'.repeat(64)}};}
 test('official New Arrivals can publish without inventing a release day; unrelated proof fails',()=>{
  const p=product(),r=curateProduct(p,today);assert(r.product);assert.equal(r.product.releaseDate,'');assert.equal(r.product.dateEvidence,undefined);

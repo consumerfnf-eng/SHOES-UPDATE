@@ -7,6 +7,11 @@ test('official HTML preserves headings and exact links without executing scripts
  const text=officialHtmlMarkdown(html+'<script>throw Error("bad")</script>',url);
  assert(text.includes('# ABC Sneakers'));assert(text.includes('![ABC-001 side](https://shoe.example/abc.jpg)'));assert(!text.includes('throw Error'));
 });
+test('lazy gallery images preserve card binding and a usable responsive image instead of a base64 placeholder',()=>{
+ const text=officialHtmlMarkdown(html+'<a href="/products/lazy"><img src="data:image/gif;base64,abc" data-srcset="https://shoe.example/lazy.jpg?w=490 490w, https://shoe.example/lazy.jpg?w=1300&amp;h=1300 1300w, https://shoe.example/lazy.jpg?w=4096 4096w" alt="Lazy sneaker side">Lazy sneaker</a>',url);
+ assert(text.includes('[![Lazy sneaker side](https://shoe.example/lazy.jpg?w=1300&h=1300)Lazy sneaker](https://shoe.example/products/lazy)'));
+ assert(!text.includes('base64'));assert(!text.includes('w=4096'));
+});
 test('official requests honor cooldowns and retry transient failures without retrying denials',async()=>{
  let time=0,calls=0;const waits=[];const sleep=async ms=>{waits.push(ms);time+=ms;};
  const f=pacedOfficialFetch({now:()=>time,sleep,fetchImpl:async()=>++calls===1?new Response('',{status:429,headers:{'Retry-After':'8'}}):new Response('ok')});

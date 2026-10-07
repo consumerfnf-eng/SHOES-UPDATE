@@ -1356,6 +1356,24 @@
       "sha256": "484cbba2cc4e4d855671a297c66119f0eec766fd0c126d7c38a3e92f39ee3808",
       "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/398846/94/sv01/fnd/PNA/fmt/png/Speedcat-OG-Sneakers",
       "checkedAt": "2026-10-07T09:15:40.029Z"
+    },
+    "https://www.loewe.com/dw/image/v2/BBPC_PRD/on/demandware.static/-/Sites-Loewe_master/default/dwd2b42d20/images_rd/L815282XAY/L815282XAY-0115/L815282XAY_0115_1F.jpg?sw=750&q=100": {
+      "path": "/images/9678806a60b5087ff3cf14285fdd503247ccd4837854dc6c5715094bb95403f3.jpg",
+      "sha256": "9678806a60b5087ff3cf14285fdd503247ccd4837854dc6c5715094bb95403f3",
+      "sourceUrl": "https://www.loewe.com/dw/image/v2/BBPC_PRD/on/demandware.static/-/Sites-Loewe_master/default/dwd2b42d20/images_rd/L815282XAY/L815282XAY-0115/L815282XAY_0115_1F.jpg?sw=750&q=100",
+      "checkedAt": "2026-10-07T09:38:23.758Z"
+    },
+    "https://ceciliebahnsen.com/cdn/shop/files/3.26FTW30002CBBLAISESOFTSNEAKERSLEATHERNYLONSILVERMINT_Side.jpg?crop=center&format=webp&height=730&v=1784620332&width=1200": {
+      "path": "/images/397e327fa32b3b6de348b4c3900c77a9acdadb6e150b8dca7df8d93af42e8255.webp",
+      "sha256": "397e327fa32b3b6de348b4c3900c77a9acdadb6e150b8dca7df8d93af42e8255",
+      "sourceUrl": "https://ceciliebahnsen.com/cdn/shop/files/3.26FTW30002CBBLAISESOFTSNEAKERSLEATHERNYLONSILVERMINT_Side.jpg?crop=center&format=webp&height=730&v=1784620332&width=1200",
+      "checkedAt": "2026-10-07T09:38:23.791Z"
+    },
+    "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00080M7242285_3/image/trailgrip-lite3-nubuck-and-suede-sneakers-women-brown-moncler-3.jpg?w=1300&q=80": {
+      "path": "/images/1bc05146a8cfeb2a7edf84940d5e2d8fa76081fcca750ac4e148082ef76dbf4d.webp",
+      "sha256": "1bc05146a8cfeb2a7edf84940d5e2d8fa76081fcca750ac4e148082ef76dbf4d",
+      "sourceUrl": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00080M7242285_3/image/trailgrip-lite3-nubuck-and-suede-sneakers-women-brown-moncler-3.jpg?w=1300&q=80",
+      "checkedAt": "2026-10-07T09:38:25.541Z"
     }
   }
 }

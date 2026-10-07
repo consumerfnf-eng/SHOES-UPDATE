@@ -47,8 +47,8 @@ export function officialEvidenceFor(p,today){
 }
 const excluded = /\b(loafers?|oxfords?|derby|derbies|pumps?|stilettos?|wedge|heels|(?:high|kitten|block|wedge)[ -]?heels?|heeled|moccasins?|mocassins?|escarpins?|decolletes?|slingbacks?|dress (?:shoes?|sandals?)|ballerina flats?|ballet flats?|chelsea|boots?|snowclog)\b|로퍼|구두|슬링백|(?:하이|키튼|블록|웨지)힐|펌프스|부츠|방한|발레 플랫/i;
 const performance = /\b(?:soccer|football|baseball|track|golf)\s+(?:boots?|cleats?|spikes?|shoes?)|\b(?:racing spikes|competition spikes|basketball shoes)\b|축구화|야구화|스파이크/i;
-const sneakerStructure = /\b(?:sneakers?|sneakerina|running (?:shoes?|heritage)|trainers?|sneaker (?:sole|midsole|outsole|construction))\b|스니커|운동화|러닝화|スニーカー|运动鞋|運動鞋|跑鞋/i;
-const namedHybrid = /\b(?:mules?|mary[ -]?jane|ballet|ballerinas?|sneakerina)\b|메리제인|발레리나|발레|뮬|バレエ|バレリーナ|メリージェーン|ミュール|芭蕾|玛丽珍|瑪麗珍|穆勒/i;
+const sneakerStructure = /\b(?:sneakers?|sneakerina|running (?:shoes?|heritage)|trainers?|sneaker (?:sole|midsole|outsole|construction))\b|스니커|운동화|러닝화|スニーカ(?:ー|リーナ)|运动鞋|運動鞋|跑鞋/i;
+const namedHybrid = /\b(?:mules?|mary[ -]?jane|ballet|ballerinas?|sneakerina)\b|메리제인|발레리나|발레|뮬|バレエ|バレリーナ|スニーカリーナ|メリージェーン|ミュール|芭蕾|玛丽珍|瑪麗珍|穆勒/i;
 const otherHybrid = /\b(?:clogs?|sandals?|slides?|espadrilles?|fisherman|hybrids?)\b|클로그|샌들|슬라이드|에스파드리유|피셔맨|혼합|하이브리드|クロッグ|サンダル|エスパドリーユ|ハイブリッド|凉鞋|涼鞋|混合/i;
 export function sneakerHybridCandidate(p) {
   const title = `${p.name || ''} ${p.officialCategory || ''} ${p.hybridReview?.approved ? p.hybridReview.type || '' : ''}`;

@@ -38,7 +38,7 @@ function fitBadges(p) { return (p.fit || []).map(f => `<span class="fit-badge ${
 function imageMarkup(p, eager = false) {
   const cached=p.presentation?.cachedPath;
   const url = /^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(cached||'')?cached:safeUrl(p.presentation?.image) || officialImageUrl(p,today) || safeUrl(p.image);
-  return url ? `<img style="transform:translateY(${Math.max(-20,Math.min(20,Number(p.presentation?.offsetY)||0))}%) scale(${Math.min(2.7,Math.max(1,Number(p.presentation?.scale)||1))})" src="${esc(url)}" alt="${esc(p.brand + ' ' + p.name)}" loading="${eager ? 'eager' : 'lazy'}" decoding="async" referrerpolicy="no-referrer">` : '<span class="image-missing">공식 이미지 확인 중</span>';
+  return url ? `<img style="transform:translateY(${Math.max(-45,Math.min(45,Number(p.presentation?.offsetY)||0))}%) scale(${Math.min(2.7,Math.max(1,Number(p.presentation?.scale)||1))})" src="${esc(url)}" alt="${esc(p.brand + ' ' + p.name)}" loading="${eager ? 'eager' : 'lazy'}" decoding="async" referrerpolicy="no-referrer">` : '<span class="image-missing">공식 이미지 확인 중</span>';
 }
 function bindImageErrors(container) { container.querySelectorAll('img').forEach(img => img.addEventListener('error', () => { const span = document.createElement('span'); span.className = 'image-missing'; span.textContent = '이미지를 표시할 수 없습니다'; img.replaceWith(span); }, {once:true})); }
 function socialMetricsMarkup(product,compact=false) {

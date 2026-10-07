@@ -6,7 +6,7 @@ export function productPresentation(product,reviews){
   const row=reviews.products?.find(r=>r.id===product.id&&r.brand===product.brand&&r.style===product.style&&r.originalImage===product.image);
   if(row?.approved===false)return null;
   if(row?.approved===true&&['side','three-quarter'].includes(row.view)&&row.noPerson===true&&row.sourceUrl&&/^https:\/\//.test(row.image))return {...product,
-    presentation:{image:row.image,scale:Math.max(1,Math.min(2.7,row.scale||1)),offsetY:Math.max(-20,Math.min(20,row.offsetY||0)),view:row.view,sourceUrl:row.sourceUrl,checkedAt:row.checkedAt,...(isOfficialProductUrl(product.brand,row.sourceUrl)?{officialProductUrl:row.sourceUrl}:{})},colorSwatches:row.colorSwatches||[]};
+    presentation:{image:row.image,scale:Math.max(1,Math.min(2.7,row.scale||1)),offsetY:Math.max(-45,Math.min(45,row.offsetY||0)),view:row.view,sourceUrl:row.sourceUrl,checkedAt:row.checkedAt,...(isOfficialProductUrl(product.brand,row.sourceUrl)?{officialProductUrl:row.sourceUrl}:{})},colorSwatches:row.colorSwatches||[]};
   // New Balance's standard product side/three-quarter slot is SKU-bound.
   // Prada SLS is the product-only lateral slot, checked against the live
   // Speedrock PDP on 2026-10-07. Require its exact complete style identifier.
