@@ -1128,106 +1128,6 @@
       }
     },
     {
-      "id": "arrival-cce02d4333bff366011d",
-      "brand": "FILA",
-      "name": "휠라 스피드템포 플러스",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fit": [
-        "DISCOVERY"
-      ],
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "fila|휠라스피드템포플러스",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "FILA",
-        "productUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.fila.co.kr/collections/men-new",
-        "verifiedAt": "2026-10-07T08:53:59.381Z",
-        "excerpt": "Official New / New Arrivals listing: 휠라 스피드템포 플러스 179,000 원 179,000 원 0%",
-        "contentHash": "2ac2862b2f4fec4d75af64d95e1415e4e3ce5c0a6eab18c7ffec8e651a7ab4c1",
-        "style": "FS263RU02X098260"
-      },
-      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
-      "url": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-      "image": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
-      "style": "FS263RU02X098260",
-      "colorway": "BEIGE,GRAY,BEIGE![휠라 스피드템포 플러스](https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-        "verifiedAt": "2026-10-07T08:50:41.787Z",
-        "brand": "FILA",
-        "style": "FS263RU02X098260",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "2bf7900ad81c09536f527eddb070df6fe9cacbf47603e52fa00f5fc5044e02a8"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
-        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-        "verifiedAt": "2026-10-07T08:50:41.787Z",
-        "brand": "FILA",
-        "style": "FS263RU02X098260",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "2bf7900ad81c09536f527eddb070df6fe9cacbf47603e52fa00f5fc5044e02a8"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-07T08:50:41.787Z",
-      "productEvidenceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-07"
-      },
-      "keywordTags": [
-        "mesh-sheer",
-        "suede"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "attribute:running",
-        "material:mesh",
-        "brand:fila"
-      ],
-      "presentation": {
-        "image": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
-        "scale": 1.25,
-        "offsetY": 0,
-        "view": "side",
-        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-        "checkedAt": "2026-10-07T08:50:41.368Z",
-        "officialProductUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-        "cachedPath": "/images/983bdea5cf8c3cefb96ab84b07fc8c5c63340537ab32682bc4dcd8fc828aeeb5.jpg"
-      },
-      "colorSwatches": [
-        "#e2dbca"
-      ]
-    },
-    {
       "id": "arrival-0238571a5a035485e194",
       "brand": "adidas",
       "name": "ADIZERO ADIOS PRO 5 Running Shoes",
@@ -15616,6 +15516,106 @@
       ]
     },
     {
+      "id": "arrival-cce02d4333bff366011d",
+      "brand": "FILA",
+      "name": "휠라 스피드템포 플러스",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "fila|휠라스피드템포플러스",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "FILA",
+        "productUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.fila.co.kr/collections/men-new",
+        "verifiedAt": "2026-10-07T08:53:59.381Z",
+        "excerpt": "Official New / New Arrivals listing: 휠라 스피드템포 플러스 179,000 원 179,000 원 0%",
+        "contentHash": "2ac2862b2f4fec4d75af64d95e1415e4e3ce5c0a6eab18c7ffec8e651a7ab4c1",
+        "style": "FS263RU02X098260"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+      "image": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
+      "style": "FS263RU02X098260",
+      "colorway": "BEIGE,GRAY,BEIGE![휠라 스피드템포 플러스](https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+        "verifiedAt": "2026-10-07T08:50:41.787Z",
+        "brand": "FILA",
+        "style": "FS263RU02X098260",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "2bf7900ad81c09536f527eddb070df6fe9cacbf47603e52fa00f5fc5044e02a8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
+        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+        "verifiedAt": "2026-10-07T08:50:41.787Z",
+        "brand": "FILA",
+        "style": "FS263RU02X098260",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "2bf7900ad81c09536f527eddb070df6fe9cacbf47603e52fa00f5fc5044e02a8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-07T08:50:41.787Z",
+      "productEvidenceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "brand:fila"
+      ],
+      "presentation": {
+        "image": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
+        "scale": 1.25,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+        "checkedAt": "2026-10-07T08:50:41.368Z",
+        "officialProductUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+        "cachedPath": "/images/983bdea5cf8c3cefb96ab84b07fc8c5c63340537ab32682bc4dcd8fc828aeeb5.jpg"
+      },
+      "colorSwatches": [
+        "#e2dbca"
+      ]
+    },
+    {
       "id": "verified-adidas-lb3786",
       "brand": "adidas",
       "name": "ADIDAS JENNIE SUPERSTAR SQ BALLET SHOES",
@@ -29927,7 +29927,7 @@
     ]
   },
   "retentionBasis": "first-published",
-  "keywordEvaluatedAt": "2026-10-07T09:01:26.809Z",
+  "keywordEvaluatedAt": "2026-10-07T09:03:09.708Z",
   "styleTrendKeywords": {
     "method": "verified-style-board-v1",
     "updated": "2026-10-06T10:27:37.860Z",
