@@ -74,3 +74,13 @@ test('recollection never renews publication age and an undated item remains queu
   const retry=await publishCurated({directory:dir,now:new Date('2027-01-08T00:00:00Z'),maintenance:true});assert.equal(retry.queue.products.length,1);
  }finally{await fs.rm(dir,{recursive:true,force:true});}
 });
+test('legacy release-based queue entries wait for their migrated publication anniversary',async()=>{
+ const dir=await fs.mkdtemp(path.join(os.tmpdir(),'shoes-legacy-queue-'));
+ try{
+  const p=product();await atomicJson(path.join(dir,'data/catalog-source.json'),{products:[]});
+  await atomicJson(path.join(dir,'data/archive-queue.json'),{products:[p]});
+  await atomicJson(path.join(dir,'data/publication-history.json'),{entries:{[p.id]:{firstPublishedAt:now.toISOString()}}});
+  const current=await publishCurated({directory:dir,now,maintenance:true});assert.equal(current.queue.products.length,0);assert.equal(current.queue.deferred.length,1);
+  const due=await publishCurated({directory:dir,now:new Date('2027-01-07T00:00:00Z'),maintenance:true});assert.equal(due.queue.deferred.length,0);assert.equal(due.queue.products.length,1);assert.equal(due.queue.products[0].firstPublishedAt,now.toISOString());
+ }finally{await fs.rm(dir,{recursive:true,force:true});}
+});

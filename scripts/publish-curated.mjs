@@ -8,6 +8,8 @@ import {productPresentation} from './product-presentation.mjs';
 import {withSocialComparisons} from './social-metrics.mjs';
 import {buildStyleTrendBoard} from './style-trend-board.mjs';
 import {isPublishedFootwear} from '../public/assets/footwear-policy.mjs';
+import {publicationState} from '../public/assets/publication-window.mjs';
+import {kstDay} from './curation.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 export async function readJson(file,fallback) {try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(e){if(e.code==='ENOENT'&&fallback!==undefined)return fallback;throw e;}}
@@ -109,7 +111,12 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   const priorQueue=await readJson(path.join(directory,'data/archive-queue.json'),{products:[]});
   // Retain retryable transfers even when a later source response omits the item.
   const active=new Set(result.snapshot.products.map(p=>p.id));
-  result.queue.products=[...new Map([...priorQueue.products,...result.queue.products].filter(p=>!active.has(p.id)).map(p=>[p.id,p])).values()];
+  const queued=[...new Map([...priorQueue.products,...(priorQueue.deferred||[]),...result.queue.products].filter(p=>!active.has(p.id)).map(p=>[p.id,history.entries[p.id]?{...p,firstPublishedAt:history.entries[p.id].firstPublishedAt}:p])).values()];
+  // Old release-based retry rows may not yet be due under the new publication
+  // clock. Preserve them separately and make them eligible again on that date.
+  result.queue.deferred=queued.filter(p=>p.firstPublishedAt&&publicationState(p,kstDay(now))!=='expired');
+  result.queue.products=queued.filter(p=>!result.queue.deferred.some(d=>d.id===p.id));
+  result.queue.retentionBasis='first-published';
   await atomicJson(historyFile,history);
   await atomicJson(path.join(directory,'data/archive-queue.json'),result.queue);
   await atomicJson(path.join(directory,'data/curation-review.json'),result.review);
