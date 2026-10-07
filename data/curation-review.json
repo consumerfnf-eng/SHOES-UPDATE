@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-07T01:31:06.600Z",
+  "checkedAt": "2026-10-07T06:39:57.901Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -16055,6 +16055,42 @@
       "brand": "ALOHAS",
       "name": "Rosalind Vintage Effect Brown Leather Ballet Flats",
       "reason": "excluded-footwear"
+    },
+    {
+      "id": "official-salomon-l45404900",
+      "brand": "Salomon",
+      "name": "XT-6 PROTECTIVE",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-salomon-l45397400",
+      "brand": "Salomon",
+      "name": "XT-WHISPER GORE-TEX",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "lv-frontrow-sneaker-1akyho",
+      "brand": "Louis Vuitton",
+      "name": "Frontrow Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "lv-frontrow-sneaker-1akyh8",
+      "brand": "Louis Vuitton",
+      "name": "Frontrow Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "lv-time-out-sneaker-1akyik",
+      "brand": "Louis Vuitton",
+      "name": "Time Out Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-new-balance-mt24yj",
+      "brand": "New Balance",
+      "name": "TDS MT2",
+      "reason": "representative-photo-review-required"
     }
   ]
 }

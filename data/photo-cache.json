@@ -480,6 +480,42 @@
       "sha256": "3529afc26a34eb774f9bcf80c5c71dfac78ee9da6791d0cdb7be5123051fc9a0",
       "sourceUrl": "https://cdn.shopify.com/s/files/1/0253/4578/5890/files/2601g_326.jpg?v=1786519842",
       "checkedAt": "2026-10-06T08:11:42.131Z"
+    },
+    "https://assets.christiandior.com/is/image/diorprod/KCK568FOSS60U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80": {
+      "path": "/images/6fe0c7b93db6c6f1a2dfd06414247778e31b98fb5b8eb20df3f0f20ad06a6abc.webp",
+      "sha256": "6fe0c7b93db6c6f1a2dfd06414247778e31b98fb5b8eb20df3f0f20ad06a6abc",
+      "sourceUrl": "https://assets.christiandior.com/is/image/diorprod/KCK568FOSS60U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "checkedAt": "2026-10-07T06:39:58.966Z"
+    },
+    "https://assets.christiandior.com/is/image/diorprod/KCK498OCHS56B_SBG_E02-2?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80": {
+      "path": "/images/0b8396f2024d947094f65fb6de37dd7ac26babcddd77d4b813c64fadab729b4d.webp",
+      "sha256": "0b8396f2024d947094f65fb6de37dd7ac26babcddd77d4b813c64fadab729b4d",
+      "sourceUrl": "https://assets.christiandior.com/is/image/diorprod/KCK498OCHS56B_SBG_E02-2?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "checkedAt": "2026-10-07T06:39:58.979Z"
+    },
+    "https://assets.christiandior.com/is/image/diorprod/KCK565SENS61U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80": {
+      "path": "/images/f74b91686b2bef15daf40c4ae198b32e299dd77e76adcb7a9db29a03d6091cf0.webp",
+      "sha256": "f74b91686b2bef15daf40c4ae198b32e299dd77e76adcb7a9db29a03d6091cf0",
+      "sourceUrl": "https://assets.christiandior.com/is/image/diorprod/KCK565SENS61U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "checkedAt": "2026-10-07T06:39:59.024Z"
+    },
+    "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/988d9b75cacc80844e031f1d1faf13608fef33700b9bfc2d8455858e8b6fab0d.jpg",
+      "sha256": "988d9b75cacc80844e031f1d1faf13608fef33700b9bfc2d8455858e8b6fab0d",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T06:39:59.225Z"
+    },
+    "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784219482/A009YZ_FAGMQ_9656_015_100_0000_Light-womens-drip-sneaker.jpg": {
+      "path": "/images/ab7552d33b6621b7c272af81cc125f42c45f2b695e3841e34bbf66c028320861.webp",
+      "sha256": "ab7552d33b6621b7c272af81cc125f42c45f2b695e3841e34bbf66c028320861",
+      "sourceUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784219482/A009YZ_FAGMQ_9656_015_100_0000_Light-womens-drip-sneaker.jpg",
+      "checkedAt": "2026-10-07T06:39:59.302Z"
+    },
+    "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784133070/A009Z4_AAG8V_9072_015_100_0000_Light-womens-drip-sneaker.jpg": {
+      "path": "/images/2a0be94f413b6ba191453690252f48e03255fe0ccbcab533514292d45a7b4db1.webp",
+      "sha256": "2a0be94f413b6ba191453690252f48e03255fe0ccbcab533514292d45a7b4db1",
+      "sourceUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784133070/A009Z4_AAG8V_9072_015_100_0000_Light-womens-drip-sneaker.jpg",
+      "checkedAt": "2026-10-07T06:39:59.314Z"
     }
   }
 }

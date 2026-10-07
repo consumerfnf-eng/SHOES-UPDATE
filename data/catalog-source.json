@@ -139087,6 +139087,555 @@
       "sourceSignals": [],
       "lastSignalCheckedAt": "2026-10-06T10:27:16.237Z",
       "lastSignalSearchCheckedAt": "2026-10-06T10:27:16.237Z"
+    },
+    {
+      "id": "dior-dioralps-kck498och-s56b",
+      "brand": "Dior",
+      "filterBrands": [
+        "Dior"
+      ],
+      "category": "luxury",
+      "name": "DiorAlps Walk'n'Dior Platform Sneaker",
+      "url": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+      "image": "https://assets.christiandior.com/is/image/diorprod/KCK498OCHS56B_SBG_E02-2?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "evidence": "official_new_arrival",
+      "releaseLabel": "Dior 공식 사이트 New 배지 확인",
+      "releaseDate": "2026-09",
+      "style": "KCK498OCH_S56B",
+      "colorway": "Deep Blue Dior Oblique Embroidered Cotton and White Lambskin Shearling",
+      "colors": [
+        {
+          "name": "Deep Blue",
+          "hex": "#28324A",
+          "accuracy": "name"
+        }
+      ],
+      "primaryColor": {
+        "name": "Deep Blue",
+        "hex": "#28324A",
+        "accuracy": "name"
+      },
+      "source": "Dior official site · DiorAlps capsule (New)",
+      "note": "Dior 공식 상품 페이지에서 New 배지와 DiorAlps 캡슐(2026 가을/겨울) 소속을 직접 확인. 정확한 출시 일자가 공개되지 않아, 확인 시점 기준 가장 최근에 완결된 달(2026-09)을 보수적 추정월로 사용.",
+      "productType": "sneaker",
+      "gender": "WOMEN",
+      "country": "US",
+      "priceLabel": "USD 1,300",
+      "description": "Part of the DiorAlps capsule, the Walk'n'Dior platform sneaker enhances the line with a modern, backless creation. The deep blue Dior Oblique embroidered cotton upper is enhanced by white lambskin shearling lining. The style features the Christian Dior Paris signature on the comfortable and ultralightweight thick sole, tongue and laces. The sneaker can be paired with other DiorAlps creations.",
+      "officialCategory": "Sneakers",
+      "dateEvidence": {
+        "url": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "excerpt": "Dior 공식 상품 페이지(https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B)에 \"New\" 배지가 표시되어 있으며, DiorAlps 캡슐은 Dior 공식 사이트에 \"Now available online\"으로 명시된 2026 가을/겨울(Autumn-Winter 2026-2027) 신규 캡슐. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "productVerifiedAt": "2026-10-07T06:39:29.927Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+        "brand": "Dior",
+        "style": "KCK498OCH_S56B",
+        "verifiedAt": "2026-10-07T06:39:29.927Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/KCK498OCHS56B_SBG_E02-2?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+        "brand": "Dior",
+        "style": "KCK498OCH_S56B",
+        "verifiedAt": "2026-10-07T06:39:29.927Z"
+      },
+      "sourceSignals": []
+    },
+    {
+      "id": "dior-dioralps-kck565sen-s61u",
+      "brand": "Dior",
+      "filterBrands": [
+        "Dior"
+      ],
+      "category": "luxury",
+      "name": "DiorAlps Dior Ribbon Sneaker",
+      "url": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+      "image": "https://assets.christiandior.com/is/image/diorprod/KCK565SENS61U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "evidence": "official_new_arrival",
+      "releaseLabel": "Dior 공식 사이트 New 배지 확인",
+      "releaseDate": "2026-09",
+      "style": "KCK565SEN_S61U",
+      "colorway": "Beige Sheepskin Shearling and Natural-Colored Suede Calfskin",
+      "colors": [
+        {
+          "name": "Beige",
+          "hex": "#D8CCB4",
+          "accuracy": "name"
+        }
+      ],
+      "primaryColor": {
+        "name": "Beige",
+        "hex": "#D8CCB4",
+        "accuracy": "name"
+      },
+      "source": "Dior official site · DiorAlps capsule (New)",
+      "note": "Dior 공식 상품 페이지에서 New 배지와 DiorAlps 캡슐(2026 가을/겨울) 소속을 직접 확인. 정확한 출시 일자가 공개되지 않아, 확인 시점 기준 가장 최근에 완결된 달(2026-09)을 보수적 추정월로 사용.",
+      "productType": "sneaker",
+      "gender": "WOMEN",
+      "country": "US",
+      "priceLabel": "USD 1,090",
+      "description": "Part of the DiorAlps capsule, the Dior Ribbon sneaker revisits House heritage through a bold silhouette with vintage charm. The upper combines beige sheepskin shearling and natural-colored suede calfskin. The Dior signature ribbons serve as a contemporary nod to the iconic J'Adior design, lending the design a graphic and distinctly couture elegance.",
+      "officialCategory": "Sneakers",
+      "dateEvidence": {
+        "url": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "excerpt": "Dior 공식 상품 페이지(https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U)에 \"New\" 배지가 표시되어 있으며, DiorAlps 캡슐은 Dior 공식 사이트에 \"Now available online\"으로 명시된 2026 가을/겨울(Autumn-Winter 2026-2027) 신규 캡슐. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "productVerifiedAt": "2026-10-07T06:39:29.927Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+        "brand": "Dior",
+        "style": "KCK565SEN_S61U",
+        "verifiedAt": "2026-10-07T06:39:29.927Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/KCK565SENS61U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+        "brand": "Dior",
+        "style": "KCK565SEN_S61U",
+        "verifiedAt": "2026-10-07T06:39:29.927Z"
+      },
+      "sourceSignals": []
+    },
+    {
+      "id": "dior-dioralps-kck568fos-s60u",
+      "brand": "Dior",
+      "filterBrands": [
+        "Dior"
+      ],
+      "category": "luxury",
+      "name": "DiorAlps Dior Saltwind Sneaker",
+      "url": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+      "image": "https://assets.christiandior.com/is/image/diorprod/KCK568FOSS60U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "evidence": "official_new_arrival",
+      "releaseLabel": "Dior 공식 사이트 New 배지 확인",
+      "releaseDate": "2026-09",
+      "style": "KCK568FOS_S60U",
+      "colorway": "Beige and Black Dior Oblique Embroidered Cotton",
+      "colors": [
+        {
+          "name": "Beige",
+          "hex": "#D8CCB4",
+          "accuracy": "name"
+        }
+      ],
+      "primaryColor": {
+        "name": "Beige",
+        "hex": "#D8CCB4",
+        "accuracy": "name"
+      },
+      "source": "Dior official site · DiorAlps capsule (New)",
+      "note": "Dior 공식 상품 페이지에서 New 배지와 DiorAlps 캡슐(2026 가을/겨울) 소속을 직접 확인. 정확한 출시 일자가 공개되지 않아, 확인 시점 기준 가장 최근에 완결된 달(2026-09)을 보수적 추정월로 사용.",
+      "productType": "sneaker",
+      "gender": "WOMEN",
+      "country": "US",
+      "priceLabel": "USD 1,050",
+      "description": "Jonathan Anderson unveils the Dior Saltwind sneaker as part of the DiorAlps capsule. Featuring the Dior Oblique motif, the style is distinguished by a round toe and grosgrain topstitch detailing, as well as a lambskin shearling lining, offering a lightweight and comfortable design that will become a new House essential. The shoe will complement any DiorAlps silhouette with modernity and simplicity.",
+      "officialCategory": "Sneakers",
+      "dateEvidence": {
+        "url": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "excerpt": "Dior 공식 상품 페이지(https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U)에 \"New\" 배지가 표시되어 있으며, DiorAlps 캡슐은 Dior 공식 사이트에 \"Now available online\"으로 명시된 2026 가을/겨울(Autumn-Winter 2026-2027) 신규 캡슐. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "productVerifiedAt": "2026-10-07T06:39:29.927Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+        "brand": "Dior",
+        "style": "KCK568FOS_S60U",
+        "verifiedAt": "2026-10-07T06:39:29.927Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/KCK568FOSS60U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+        "brand": "Dior",
+        "style": "KCK568FOS_S60U",
+        "verifiedAt": "2026-10-07T06:39:29.927Z"
+      },
+      "sourceSignals": []
+    },
+    {
+      "id": "lv-time-out-sneaker-1akyik",
+      "brand": "Louis Vuitton",
+      "filterBrands": [
+        "Louis Vuitton"
+      ],
+      "category": "luxury",
+      "name": "Time Out Sneaker",
+      "url": "https://us.louisvuitton.com/eng-us/products/time-out-sneaker-nvprod7720023v/1AKYIK",
+      "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton--A1UT1QSC92_PM2_Front%20view.jpg?wid=1600",
+      "evidence": "official_new_arrival",
+      "releaseLabel": "Louis Vuitton 공식 사이트 New 배지 확인",
+      "releaseDate": "2026-09",
+      "style": "1AKYIK",
+      "colorway": "Brown Mahina Monogram Suede with Shearling Lining",
+      "colors": [
+        {
+          "name": "Brown",
+          "hex": "#4A3728",
+          "accuracy": "name"
+        }
+      ],
+      "primaryColor": {
+        "name": "Brown",
+        "hex": "#4A3728",
+        "accuracy": "name"
+      },
+      "source": "Louis Vuitton official site (New)",
+      "note": "LV 공식 상품 페이지에서 New 배지를 직접 확인. 정확한 출시 일자가 공개되지 않아, 확인 시점 기준 가장 최근에 완결된 달(2026-09)을 보수적 추정월로 사용.",
+      "productType": "sneaker",
+      "gender": "WOMEN",
+      "country": "US",
+      "priceLabel": "USD 1,360",
+      "description": "This edition of the emblematic Time Out sneaker pairs the Mahina Monogram perforated suede with a fluffy shearling lining for a cozy look and feel. This model is characterized by its elevated rubber outsole, which is decorated with Monogram Flowers. Made in Italy.",
+      "officialCategory": "Sneakers",
+      "dateEvidence": {
+        "url": "https://us.louisvuitton.com/eng-us/products/time-out-sneaker-nvprod7720023v/1AKYIK",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:30.227Z",
+        "excerpt": "Louis Vuitton 공식 상품 페이지(https://us.louisvuitton.com/eng-us/products/time-out-sneaker-nvprod7720023v/1AKYIK)에 \"New\" 배지가 표시됨. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "productVerifiedAt": "2026-10-07T06:39:30.227Z",
+      "productEvidenceUrl": "https://us.louisvuitton.com/eng-us/products/time-out-sneaker-nvprod7720023v/1AKYIK",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/eng-us/products/time-out-sneaker-nvprod7720023v/1AKYIK",
+        "brand": "Louis Vuitton",
+        "style": "1AKYIK",
+        "verifiedAt": "2026-10-07T06:39:30.227Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton--A1UT1QSC92_PM2_Front%20view.jpg?wid=1600",
+        "sourceUrl": "https://us.louisvuitton.com/eng-us/products/time-out-sneaker-nvprod7720023v/1AKYIK",
+        "brand": "Louis Vuitton",
+        "style": "1AKYIK",
+        "verifiedAt": "2026-10-07T06:39:30.227Z"
+      },
+      "sourceSignals": []
+    },
+    {
+      "id": "lv-frontrow-sneaker-1akyho",
+      "brand": "Louis Vuitton",
+      "filterBrands": [
+        "Louis Vuitton"
+      ],
+      "category": "luxury",
+      "name": "Frontrow Sneaker",
+      "url": "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYHO",
+      "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-frontrow-sneaker--A1UT50SC92_PM1_Side%20view.png?wid=1600",
+      "evidence": "official_new_arrival",
+      "releaseLabel": "Louis Vuitton 공식 사이트 New 배지 확인",
+      "releaseDate": "2026-09",
+      "style": "1AKYHO",
+      "colorway": "Brown Mahina Suede Calf Leather with Monogram Pattern",
+      "colors": [
+        {
+          "name": "Brown",
+          "hex": "#4A3728",
+          "accuracy": "name"
+        }
+      ],
+      "primaryColor": {
+        "name": "Brown",
+        "hex": "#4A3728",
+        "accuracy": "name"
+      },
+      "source": "Louis Vuitton official site (New)",
+      "note": "LV 공식 상품 페이지에서 New 배지를 직접 확인. 정확한 출시 일자가 공개되지 않아, 확인 시점 기준 가장 최근에 완결된 달(2026-09)을 보수적 추정월로 사용.",
+      "productType": "sneaker",
+      "gender": "WOMEN",
+      "country": "US",
+      "priceLabel": "USD 1,110",
+      "description": "The Frontrow sneaker is crafted from soft Mahina suede calf leather with Monogram pattern perforations referencing the Mahina leather-goods line. This timeless model, which was inspired by classic tennis shoes, has elastic laces for an easy, slip-on fit. Both the tongue and the lightweight rubber outsole bear the Louis Vuitton signature. Made in Italy.",
+      "officialCategory": "Sneakers",
+      "dateEvidence": {
+        "url": "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYHO",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:30.227Z",
+        "excerpt": "Louis Vuitton 공식 상품 페이지(https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYHO)에 \"New\" 배지가 표시됨. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "productVerifiedAt": "2026-10-07T06:39:30.227Z",
+      "productEvidenceUrl": "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYHO",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYHO",
+        "brand": "Louis Vuitton",
+        "style": "1AKYHO",
+        "verifiedAt": "2026-10-07T06:39:30.227Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-frontrow-sneaker--A1UT50SC92_PM1_Side%20view.png?wid=1600",
+        "sourceUrl": "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYHO",
+        "brand": "Louis Vuitton",
+        "style": "1AKYHO",
+        "verifiedAt": "2026-10-07T06:39:30.227Z"
+      },
+      "sourceSignals": []
+    },
+    {
+      "id": "lv-frontrow-sneaker-1akyh8",
+      "brand": "Louis Vuitton",
+      "filterBrands": [
+        "Louis Vuitton"
+      ],
+      "category": "luxury",
+      "name": "Frontrow Sneaker",
+      "url": "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYH8",
+      "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-frontrow-sneaker--A1UT50SCCA_PM1_Side%20view.png?wid=1600",
+      "evidence": "official_new_arrival",
+      "releaseLabel": "Louis Vuitton 공식 사이트 New 배지 확인",
+      "releaseDate": "2026-09",
+      "style": "1AKYH8",
+      "colorway": "Camel Mahina Suede Calf Leather with Monogram Pattern",
+      "colors": [
+        {
+          "name": "Camel",
+          "hex": "#C19A6B",
+          "accuracy": "name"
+        }
+      ],
+      "primaryColor": {
+        "name": "Camel",
+        "hex": "#C19A6B",
+        "accuracy": "name"
+      },
+      "source": "Louis Vuitton official site (New)",
+      "note": "LV 공식 상품 페이지에서 New 배지를 직접 확인. 정확한 출시 일자가 공개되지 않아, 확인 시점 기준 가장 최근에 완결된 달(2026-09)을 보수적 추정월로 사용.",
+      "productType": "sneaker",
+      "gender": "WOMEN",
+      "country": "US",
+      "priceLabel": "USD 1,110",
+      "description": "The Frontrow sneaker is crafted from soft Mahina suede calf leather with Monogram pattern perforations referencing the Mahina leather-goods line. This timeless model, which was inspired by classic tennis shoes, has elastic laces for an easy, slip-on fit. Both the tongue and the lightweight rubber outsole bear the Louis Vuitton signature. Made in Italy.",
+      "officialCategory": "Sneakers",
+      "dateEvidence": {
+        "url": "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYH8",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:30.227Z",
+        "excerpt": "Louis Vuitton 공식 상품 페이지(https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYH8)에 \"New\" 배지가 표시됨. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "productVerifiedAt": "2026-10-07T06:39:30.227Z",
+      "productEvidenceUrl": "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYH8",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYH8",
+        "brand": "Louis Vuitton",
+        "style": "1AKYH8",
+        "verifiedAt": "2026-10-07T06:39:30.227Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-frontrow-sneaker--A1UT50SCCA_PM1_Side%20view.png?wid=1600",
+        "sourceUrl": "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod7720028v/1AKYH8",
+        "brand": "Louis Vuitton",
+        "style": "1AKYH8",
+        "verifiedAt": "2026-10-07T06:39:30.227Z"
+      },
+      "sourceSignals": []
+    },
+    {
+      "id": "gucci-drip-sneaker-white-suede-a009z4aag8v9072",
+      "brand": "Gucci",
+      "filterBrands": [
+        "Gucci"
+      ],
+      "category": "luxury",
+      "name": "Women's Drip sneaker",
+      "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784133070/A009Z4_AAG8V_9072_015_100_0000_Light-womens-drip-sneaker.jpg",
+      "evidence": "official_verified_model_additional_colorway",
+      "releaseLabel": "Gucci 공식 Drip 스니커즈(기검증 모델)의 신규 컬러웨이",
+      "releaseDate": "2026-08",
+      "style": "A009Z4AAG8V9072",
+      "colorway": "White Suede",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "#F5F3EE",
+          "accuracy": "name"
+        }
+      ],
+      "primaryColor": {
+        "name": "White",
+        "hex": "#F5F3EE",
+        "accuracy": "name"
+      },
+      "source": "Gucci official site · Straits Times (Reuters) — same verified Drip launch",
+      "note": "이미 검증된 Gucci Drip 스니커즈(Demna 첫 구찌 스니커, 2026년 8월 출시, Straits Times 보도)의 여성용 컬러웨이. 공식 상품 페이지에서 동일 모델 설명과 이미지를 직접 확인.",
+      "productType": "sneaker",
+      "gender": "WOMEN",
+      "country": "US",
+      "priceLabel": "USD 1,050",
+      "description": "Gucci Primavera establishes a new vocabulary of silhouettes, textures, and materials, where innovation meets a grounded vision. Introducing Drip, Demna's first sneaker for Gucci, a mid-top style with the ultra-minimal look of a basketball shoe. A streamlined upper and rubber sole give the silhouette its bold, distinctive character.",
+      "officialCategory": "Sneakers",
+      "dateEvidence": {
+        "url": "https://www.straitstimes.com/life/style/guccis-new-made-in-china-sneaker-models-break-with-italian-tradition",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:30.529Z",
+        "excerpt": "Straits Times (Reuters wire): Gucci's Drip sneaker, Demna's first sneaker model for the house, began retail sale in August 2026. (Same Drip launch covers this women's colorway of the same model.)"
+      },
+      "productVerifiedAt": "2026-10-07T06:39:30.529Z",
+      "productEvidenceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+        "brand": "Gucci",
+        "style": "A009Z4AAG8V9072",
+        "verifiedAt": "2026-10-07T06:39:30.529Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784133070/A009Z4_AAG8V_9072_015_100_0000_Light-womens-drip-sneaker.jpg",
+        "sourceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+        "brand": "Gucci",
+        "style": "A009Z4AAG8V9072",
+        "verifiedAt": "2026-10-07T06:39:30.529Z"
+      },
+      "sourceSignals": []
+    },
+    {
+      "id": "gucci-drip-sneaker-sand-brown-a009zffagmq9656",
+      "brand": "Gucci",
+      "filterBrands": [
+        "Gucci"
+      ],
+      "category": "luxury",
+      "name": "Women's Drip sneaker",
+      "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784219482/A009YZ_FAGMQ_9656_015_100_0000_Light-womens-drip-sneaker.jpg",
+      "evidence": "official_verified_model_additional_colorway",
+      "releaseLabel": "Gucci 공식 Drip 스니커즈(기검증 모델)의 신규 컬러웨이",
+      "releaseDate": "2026-08",
+      "style": "A009YZFAGMQ9656",
+      "colorway": "Sand and Dark Brown GG Canvas",
+      "colors": [
+        {
+          "name": "Sand",
+          "hex": "#C9B38A",
+          "accuracy": "name"
+        }
+      ],
+      "primaryColor": {
+        "name": "Sand",
+        "hex": "#C9B38A",
+        "accuracy": "name"
+      },
+      "source": "Gucci official site · Straits Times (Reuters) — same verified Drip launch",
+      "note": "이미 검증된 Gucci Drip 스니커즈(Demna 첫 구찌 스니커, 2026년 8월 출시, Straits Times 보도)의 여성용 컬러웨이. 공식 상품 페이지에서 동일 모델 설명과 이미지를 직접 확인.",
+      "productType": "sneaker",
+      "gender": "WOMEN",
+      "country": "US",
+      "priceLabel": "USD 1,050",
+      "description": "Gucci Primavera establishes a new vocabulary of silhouettes, textures, and materials, where innovation meets a grounded vision. Introducing Drip, Demna's first sneaker for Gucci, a mid-top style with the ultra-minimal look of a basketball shoe. A streamlined upper and rubber sole give the silhouette its bold, distinctive character.",
+      "officialCategory": "Sneakers",
+      "dateEvidence": {
+        "url": "https://www.straitstimes.com/life/style/guccis-new-made-in-china-sneaker-models-break-with-italian-tradition",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:30.529Z",
+        "excerpt": "Straits Times (Reuters wire): Gucci's Drip sneaker, Demna's first sneaker model for the house, began retail sale in August 2026. (Same Drip launch covers this women's colorway of the same model.)"
+      },
+      "productVerifiedAt": "2026-10-07T06:39:30.529Z",
+      "productEvidenceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+        "brand": "Gucci",
+        "style": "A009YZFAGMQ9656",
+        "verifiedAt": "2026-10-07T06:39:30.529Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784219482/A009YZ_FAGMQ_9656_015_100_0000_Light-womens-drip-sneaker.jpg",
+        "sourceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+        "brand": "Gucci",
+        "style": "A009YZFAGMQ9656",
+        "verifiedAt": "2026-10-07T06:39:30.529Z"
+      },
+      "sourceSignals": []
+    },
+    {
+      "id": "asics-gel-kayano-14-illusion-blue-1203a537-402",
+      "brand": "ASICS",
+      "filterBrands": [
+        "ASICS"
+      ],
+      "category": "outdoor",
+      "name": "GEL-KAYANO 14",
+      "url": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+      "image": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
+      "evidence": "official_new_arrival",
+      "releaseLabel": "ASICS 공식 Sportstyle New Arrivals 확인",
+      "releaseDate": "2026-09",
+      "style": "1203A537-402",
+      "colorway": "Illusion Blue/Pure Silver",
+      "colors": [
+        {
+          "name": "Illusion Blue",
+          "hex": "#3B5FCB",
+          "accuracy": "name"
+        }
+      ],
+      "primaryColor": {
+        "name": "Illusion Blue",
+        "hex": "#3B5FCB",
+        "accuracy": "name"
+      },
+      "source": "ASICS official site · Sportstyle New Arrivals",
+      "note": "ASICS 공식 Sportstyle New Arrivals 컬렉션 페이지에서 직접 확인. 정확한 출시 일자가 명시되지 않아, 확인 시점 기준 가장 최근에 완결된 달(2026-09)을 보수적 추정월로 사용.",
+      "productType": "sneaker",
+      "gender": "UNISEX",
+      "country": "US",
+      "priceLabel": "USD 165",
+      "description": "The GEL-KAYANO 14 sneaker resurfaces with its late 2000s aesthetic as a nod to our storied GEL-KAYANO series. Reinterpreting the shoe's performance capabilities with updated materials and componentry, this version became the first iteration in the sneaker's lineage to be designed by someone other than Toshikazu Kayano. Inspired by the original tooling from 2008, this shoe also features GEL technology underfoot for advanced impact absorption.",
+      "officialCategory": "Sportstyle Shoes",
+      "dateEvidence": {
+        "url": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:30.835Z",
+        "excerpt": "ASICS 공식 \"Sportstyle New Arrivals\" 컬렉션(https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html)에 포함되어 확인됨. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "productVerifiedAt": "2026-10-07T06:39:30.835Z",
+      "productEvidenceUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+        "brand": "ASICS",
+        "style": "1203A537-402",
+        "verifiedAt": "2026-10-07T06:39:30.835Z"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
+        "sourceUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+        "brand": "ASICS",
+        "style": "1203A537-402",
+        "verifiedAt": "2026-10-07T06:39:30.835Z"
+      },
+      "sourceSignals": []
     }
   ],
   "collection": {
@@ -144893,6 +145442,6 @@
       }
     ]
   },
-  "lastCuratedAt": "2026-10-06T10:27:47.007Z",
+  "lastCuratedAt": "2026-10-07T06:39:57.901Z",
   "lastKeywordsRefreshedAt": "2026-10-06T06:41:31.408Z"
 }

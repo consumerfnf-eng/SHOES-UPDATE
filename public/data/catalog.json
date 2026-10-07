@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-06T10:27:47.007Z",
+  "publishedAt": "2026-10-07T06:39:57.901Z",
   "periodStart": "2026-07-07",
   "asOf": "2026-10-07",
   "brands": [
@@ -426,6 +426,313 @@
     }
   ],
   "products": [
+    {
+      "id": "official-salomon-l49210800",
+      "brand": "Salomon",
+      "name": "XT-4 OG GORE-TEX",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xt4oggoretex",
+      "releaseDate": "2026-10-07",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-09-28T04:38:58.933Z",
+        "region": "CA",
+        "excerpt": "XT-4 OG GORE-TEX (L49210800) — 2026-10-07, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
+      "image": "https://cdn.dam.salomon.com/bd42f406-b469-4120-b0b1-b372008d8a8c/L49210800/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49210800",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$275",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-09-28T04:38:58.933Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "trail-gorpcore"
+      ],
+      "searchConceptIds": [
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "use:trail",
+        "style:gorpcore",
+        "model:xt-4",
+        "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/bd42f406-b469-4120-b0b1-b372008d8a8c/L49210800/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "officialProductUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
+        "cachedPath": "/images/5dafb8c8c45ca0fc5d9d3a8d5f663deb9c13dcc5858e879936cd47aa358024cc.jpg"
+      },
+      "colorSwatches": [
+        "#8c8581"
+      ]
+    },
+    {
+      "id": "official-salomon-l45405100",
+      "brand": "Salomon",
+      "name": "XT-6 PROTECTIVE",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xt6protective",
+      "releaseDate": "2026-10-07",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-10-04T02:12:52.941Z",
+        "region": "CA",
+        "excerpt": "XT-6 PROTECTIVE (L45405100) — 2026-10-07, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-6-protective-li1345/L45405100",
+      "image": "https://cdn.dam.salomon.com/c7db5eeb-a298-435d-86a6-b37900897ee4/L45405100/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L45405100",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$230",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-10-04T02:12:52.941Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-protective-li1345/L45405100",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "model:xt-6",
+        "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/c7db5eeb-a298-435d-86a6-b37900897ee4/L45405100/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-6-protective-li1345/L45405100",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "officialProductUrl": "https://www.salomon.com/en-ca/product/xt-6-protective-li1345/L45405100",
+        "cachedPath": "/images/4ff63e94db500d9f578e303b86edc28ffeb03e7481c767de761af9c7fbaace36.jpg"
+      },
+      "colorSwatches": [
+        "#c6a69c",
+        "#504a47"
+      ]
+    },
+    {
+      "id": "official-salomon-l49192300",
+      "brand": "Salomon",
+      "name": "XT-WHISPER GORE-TEX",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xtwhispergoretex",
+      "releaseDate": "2026-10-07",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-10-06T08:51:54.164Z",
+        "region": "CA",
+        "excerpt": "XT-WHISPER GORE-TEX (L49192300) — 2026-10-07, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L49192300",
+      "image": "https://cdn.dam.salomon.com/0bcc429b-9f44-48bc-a36e-b3790089a1a0/L49192300/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L49192300",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$210",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-10-06T08:51:54.164Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L49192300",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/0bcc429b-9f44-48bc-a36e-b3790089a1a0/L49192300/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L49192300",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "officialProductUrl": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L49192300",
+        "cachedPath": "/images/2c5101a4ac6eca0d64994e6cd8f646a9f6960dc641f201c39f94c5df16db8533.jpg"
+      },
+      "colorSwatches": [
+        "#a6a8aa"
+      ]
+    },
+    {
+      "id": "official-salomon-l45397700",
+      "brand": "Salomon",
+      "name": "XT-WHISPER GORE-TEX",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "salomon|xtwhispergoretex",
+      "releaseDate": "2026-10-07",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.salomon.com/en-ca/c/launch-calendar/upcoming",
+        "precision": "day",
+        "official": true,
+        "verified": true,
+        "verifiedAt": "2026-10-06T08:51:54.164Z",
+        "region": "CA",
+        "excerpt": "XT-WHISPER GORE-TEX (L45397700) — 2026-10-07, official Canadian launch calendar."
+      },
+      "url": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L45397700",
+      "image": "https://cdn.dam.salomon.com/e4bdeab6-6e5b-4a41-bb3c-b37900897aea/L45397700/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+      "style": "L45397700",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$210",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": false,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "CA",
+      "lastVerifiedAt": "2026-10-06T08:51:54.164Z",
+      "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L45397700",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "brand:salomon"
+      ],
+      "presentation": {
+        "image": "https://cdn.dam.salomon.com/e4bdeab6-6e5b-4a41-bb3c-b37900897aea/L45397700/PNG-2000px-max-72dpi.png?width=3840&fit=cover&optimize=medium&bg-color=f5f5f5&format=pjpg&auto=avif&canvas=116p%2C144p",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L45397700",
+        "checkedAt": "2026-10-06T05:41:54.180Z",
+        "officialProductUrl": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L45397700",
+        "cachedPath": "/images/8a977946aa508cd55a3fab85d7d06b46bafe755ea53325bf0787d35c4a44ac21.jpg"
+      },
+      "colorSwatches": [
+        "#242424"
+      ]
+    },
     {
       "id": "official-salomon-l45401400",
       "brand": "Salomon",
@@ -4402,6 +4709,409 @@
       ]
     },
     {
+      "id": "dior-dioralps-kck565sen-s61u",
+      "brand": "Dior",
+      "name": "DiorAlps Dior Ribbon Sneaker",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "dior|dioralpsdiorribbonsneaker",
+      "releaseDate": "2026-09",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "excerpt": "Dior 공식 상품 페이지(https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U)에 \"New\" 배지가 표시되어 있으며, DiorAlps 캡슐은 Dior 공식 사이트에 \"Now available online\"으로 명시된 2026 가을/겨울(Autumn-Winter 2026-2027) 신규 캡슐. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "verifiedReleaseWindow": {
+        "start": "2026-09-01",
+        "end": "2026-09-30"
+      },
+      "url": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+      "image": "https://assets.christiandior.com/is/image/diorprod/KCK565SENS61U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "style": "KCK565SEN_S61U",
+      "colorway": "Beige Sheepskin Shearling and Natural-Colored Suede Calfskin",
+      "colors": [
+        {
+          "name": "Beige",
+          "hex": "#D8CCB4",
+          "accuracy": "name"
+        }
+      ],
+      "gender": "WOMEN",
+      "material": "",
+      "priceLabel": "USD 1,090",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "brand": "Dior",
+        "style": "KCK565SEN_S61U"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/KCK565SENS61U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "brand": "Dior",
+        "style": "KCK565SEN_S61U"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-07T06:39:29.927Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "brand:dior"
+      ],
+      "presentation": {
+        "image": "https://assets.christiandior.com/is/image/diorprod/KCK565SENS61U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+        "checkedAt": "2026-10-07T06:39:29.927Z",
+        "officialProductUrl": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+        "cachedPath": "/images/f74b91686b2bef15daf40c4ae198b32e299dd77e76adcb7a9db29a03d6091cf0.webp"
+      },
+      "colorSwatches": [
+        "#D8CCB4"
+      ]
+    },
+    {
+      "id": "dior-dioralps-kck568fos-s60u",
+      "brand": "Dior",
+      "name": "DiorAlps Dior Saltwind Sneaker",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "DISCOVERY",
+        "MLB"
+      ],
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "dior|dioralpsdiorsaltwindsneaker",
+      "releaseDate": "2026-09",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "excerpt": "Dior 공식 상품 페이지(https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U)에 \"New\" 배지가 표시되어 있으며, DiorAlps 캡슐은 Dior 공식 사이트에 \"Now available online\"으로 명시된 2026 가을/겨울(Autumn-Winter 2026-2027) 신규 캡슐. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "verifiedReleaseWindow": {
+        "start": "2026-09-01",
+        "end": "2026-09-30"
+      },
+      "url": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+      "image": "https://assets.christiandior.com/is/image/diorprod/KCK568FOSS60U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "style": "KCK568FOS_S60U",
+      "colorway": "Beige and Black Dior Oblique Embroidered Cotton",
+      "colors": [
+        {
+          "name": "Beige",
+          "hex": "#D8CCB4",
+          "accuracy": "name"
+        }
+      ],
+      "gender": "WOMEN",
+      "material": "",
+      "priceLabel": "USD 1,050",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "brand": "Dior",
+        "style": "KCK568FOS_S60U"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/KCK568FOSS60U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "brand": "Dior",
+        "style": "KCK568FOS_S60U"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-07T06:39:29.927Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "brand:dior"
+      ],
+      "presentation": {
+        "image": "https://assets.christiandior.com/is/image/diorprod/KCK568FOSS60U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+        "checkedAt": "2026-10-07T06:39:29.927Z",
+        "officialProductUrl": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+        "cachedPath": "/images/6fe0c7b93db6c6f1a2dfd06414247778e31b98fb5b8eb20df3f0f20ad06a6abc.webp"
+      },
+      "colorSwatches": [
+        "#D8CCB4"
+      ]
+    },
+    {
+      "id": "dior-dioralps-kck498och-s56b",
+      "brand": "Dior",
+      "name": "DiorAlps Walk'n'Dior Platform Sneaker",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB",
+        "DISCOVERY"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "dior|dioralpswalkndiorplatformsneaker",
+      "releaseDate": "2026-09",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "excerpt": "Dior 공식 상품 페이지(https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B)에 \"New\" 배지가 표시되어 있으며, DiorAlps 캡슐은 Dior 공식 사이트에 \"Now available online\"으로 명시된 2026 가을/겨울(Autumn-Winter 2026-2027) 신규 캡슐. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "verifiedReleaseWindow": {
+        "start": "2026-09-01",
+        "end": "2026-09-30"
+      },
+      "url": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+      "image": "https://assets.christiandior.com/is/image/diorprod/KCK498OCHS56B_SBG_E02-2?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "style": "KCK498OCH_S56B",
+      "colorway": "Deep Blue Dior Oblique Embroidered Cotton and White Lambskin Shearling",
+      "colors": [
+        {
+          "name": "Deep Blue",
+          "hex": "#28324A",
+          "accuracy": "name"
+        }
+      ],
+      "gender": "WOMEN",
+      "material": "",
+      "priceLabel": "USD 1,300",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "brand": "Dior",
+        "style": "KCK498OCH_S56B"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://assets.christiandior.com/is/image/diorprod/KCK498OCHS56B_SBG_E02-2?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+        "verifiedAt": "2026-10-07T06:39:29.927Z",
+        "brand": "Dior",
+        "style": "KCK498OCH_S56B"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-07T06:39:29.927Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [
+        "platform"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:white",
+        "shape:platform",
+        "brand:dior"
+      ],
+      "presentation": {
+        "image": "https://assets.christiandior.com/is/image/diorprod/KCK498OCHS56B_SBG_E02-2?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+        "checkedAt": "2026-10-07T06:39:29.927Z",
+        "officialProductUrl": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+        "cachedPath": "/images/0b8396f2024d947094f65fb6de37dd7ac26babcddd77d4b813c64fadab729b4d.webp"
+      },
+      "colorSwatches": [
+        "#28324A"
+      ]
+    },
+    {
+      "id": "asics-gel-kayano-14-illusion-blue-1203a537-402",
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 14",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "asics|gelkayano14",
+      "releaseDate": "2026-09",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:30.835Z",
+        "excerpt": "ASICS 공식 \"Sportstyle New Arrivals\" 컬렉션(https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html)에 포함되어 확인됨. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
+      },
+      "verifiedReleaseWindow": {
+        "start": "2026-09-01",
+        "end": "2026-09-30"
+      },
+      "url": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+      "image": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
+      "style": "1203A537-402",
+      "colorway": "Illusion Blue/Pure Silver",
+      "colors": [
+        {
+          "name": "Illusion Blue",
+          "hex": "#3B5FCB",
+          "accuracy": "name"
+        }
+      ],
+      "gender": "UNISEX",
+      "material": "",
+      "priceLabel": "USD 165",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+        "verifiedAt": "2026-10-07T06:39:30.835Z",
+        "brand": "ASICS",
+        "style": "1203A537-402"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
+        "sourceUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+        "verifiedAt": "2026-10-07T06:39:30.835Z",
+        "brand": "ASICS",
+        "style": "1203A537-402"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-07T06:39:30.835Z",
+      "productEvidenceUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [
+        "metallic-silver"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:metallic-silver",
+        "color:silver",
+        "model:gel-kayano",
+        "brand:asics"
+      ],
+      "presentation": {
+        "image": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+        "checkedAt": "2026-10-07T06:39:30.835Z",
+        "officialProductUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+        "cachedPath": "/images/988d9b75cacc80844e031f1d1faf13608fef33700b9bfc2d8455858e8b6fab0d.jpg"
+      },
+      "colorSwatches": [
+        "#3B5FCB"
+      ]
+    },
+    {
       "id": "zip-cecilie-asics-black-coffee",
       "brand": "Cecilie Bahnsen",
       "name": "ASICS GEL-KINETIC FR | BLACK COFFEE",
@@ -6600,10 +7310,211 @@
         "#948e75",
         "#222222"
       ]
+    },
+    {
+      "id": "gucci-drip-sneaker-white-suede-a009z4aag8v9072",
+      "brand": "Gucci",
+      "name": "Women's Drip sneaker",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "gucci|womensdripsneaker",
+      "releaseDate": "2026-08",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.straitstimes.com/life/style/guccis-new-made-in-china-sneaker-models-break-with-italian-tradition",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:30.529Z",
+        "excerpt": "Straits Times (Reuters wire): Gucci's Drip sneaker, Demna's first sneaker model for the house, began retail sale in August 2026. (Same Drip launch covers this women's colorway of the same model.)"
+      },
+      "verifiedReleaseWindow": {
+        "start": "2026-08-01",
+        "end": "2026-08-31"
+      },
+      "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784133070/A009Z4_AAG8V_9072_015_100_0000_Light-womens-drip-sneaker.jpg",
+      "style": "A009Z4AAG8V9072",
+      "colorway": "White Suede",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "#F5F3EE",
+          "accuracy": "name"
+        }
+      ],
+      "gender": "WOMEN",
+      "material": "",
+      "priceLabel": "USD 1,050",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+        "verifiedAt": "2026-10-07T06:39:30.529Z",
+        "brand": "Gucci",
+        "style": "A009Z4AAG8V9072"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784133070/A009Z4_AAG8V_9072_015_100_0000_Light-womens-drip-sneaker.jpg",
+        "sourceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+        "verifiedAt": "2026-10-07T06:39:30.529Z",
+        "brand": "Gucci",
+        "style": "A009Z4AAG8V9072"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-07T06:39:30.529Z",
+      "productEvidenceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [
+        "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:white",
+        "brand:gucci"
+      ],
+      "presentation": {
+        "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784133070/A009Z4_AAG8V_9072_015_100_0000_Light-womens-drip-sneaker.jpg",
+        "scale": 1.2,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+        "checkedAt": "2026-10-07T06:39:30.529Z",
+        "officialProductUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+        "cachedPath": "/images/2a0be94f413b6ba191453690252f48e03255fe0ccbcab533514292d45a7b4db1.webp"
+      },
+      "colorSwatches": [
+        "#F5F3EE"
+      ]
+    },
+    {
+      "id": "gucci-drip-sneaker-sand-brown-a009zffagmq9656",
+      "brand": "Gucci",
+      "name": "Women's Drip sneaker",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fit": [
+        "MLB"
+      ],
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "gucci|womensdripsneaker",
+      "releaseDate": "2026-08",
+      "releaseStatus": "released",
+      "dateEvidence": {
+        "url": "https://www.straitstimes.com/life/style/guccis-new-made-in-china-sneaker-models-break-with-italian-tradition",
+        "precision": "month",
+        "verified": true,
+        "verifiedAt": "2026-10-07T06:39:30.529Z",
+        "excerpt": "Straits Times (Reuters wire): Gucci's Drip sneaker, Demna's first sneaker model for the house, began retail sale in August 2026. (Same Drip launch covers this women's colorway of the same model.)"
+      },
+      "verifiedReleaseWindow": {
+        "start": "2026-08-01",
+        "end": "2026-08-31"
+      },
+      "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784219482/A009YZ_FAGMQ_9656_015_100_0000_Light-womens-drip-sneaker.jpg",
+      "style": "A009YZFAGMQ9656",
+      "colorway": "Sand and Dark Brown GG Canvas",
+      "colors": [
+        {
+          "name": "Sand",
+          "hex": "#C9B38A",
+          "accuracy": "name"
+        }
+      ],
+      "gender": "WOMEN",
+      "material": "",
+      "priceLabel": "USD 1,050",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+        "verifiedAt": "2026-10-07T06:39:30.529Z",
+        "brand": "Gucci",
+        "style": "A009YZFAGMQ9656"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784219482/A009YZ_FAGMQ_9656_015_100_0000_Light-womens-drip-sneaker.jpg",
+        "sourceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+        "verifiedAt": "2026-10-07T06:39:30.529Z",
+        "brand": "Gucci",
+        "style": "A009YZFAGMQ9656"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-07T06:39:30.529Z",
+      "productEvidenceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-07"
+      },
+      "keywordTags": [
+        "brown",
+        "canvas"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:brown",
+        "brand:gucci"
+      ],
+      "presentation": {
+        "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784219482/A009YZ_FAGMQ_9656_015_100_0000_Light-womens-drip-sneaker.jpg",
+        "scale": 1.2,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+        "checkedAt": "2026-10-07T06:39:30.529Z",
+        "officialProductUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+        "cachedPath": "/images/ab7552d33b6621b7c272af81cc125f42c45f2b695e3841e34bbf66c028320861.webp"
+      },
+      "colorSwatches": [
+        "#C9B38A"
+      ]
     }
   ],
   "keywordMethod": "verified-style-source-rank-v2",
-  "keywordCheckedAt": "2026-10-06T10:27:47.007Z",
+  "keywordCheckedAt": "2026-10-07T06:39:57.901Z",
   "sourceRanks": [
     {
       "platform": "eql",
@@ -6917,8 +7828,10 @@
         "gel kayano 14",
         "gel-kayano 14"
       ],
-      "productIds": [],
-      "matchedProductCount": 0,
+      "productIds": [
+        "asics-gel-kayano-14-illusion-blue-1203a537-402"
+      ],
+      "matchedProductCount": 1,
       "sourceRanks": [
         {
           "platform": "eql",
@@ -7044,11 +7957,13 @@
         "daily-20260915-nike-sb-af1-yuto-io8439-100",
         "daily-20260916-converse-palmes-green-a24756c",
         "daily-20260916-converse-palmes-navy-a24786c",
+        "dior-dioralps-kck565sen-s61u",
         "official-82d80c59311fcc15",
         "official-nike-ir0088-001",
         "official-nike-iv5678-102",
         "official-nike-ix8478-410",
         "official-salomon-l49210700",
+        "official-salomon-l49210800",
         "verified-adidas-kh7452",
         "verified-adidas-kj5248",
         "verified-adidas-kj5249",
@@ -7074,7 +7989,7 @@
         "verified-new-balance-ugtr4dy",
         "verified-new-balance-w327apc"
       ],
-      "matchedProductCount": 33,
+      "matchedProductCount": 35,
       "sourceRanks": [
         {
           "platform": "whowhatwear-style",
@@ -7536,8 +8451,10 @@
         "gel kayano 14",
         "gel-kayano 14"
       ],
-      "productIds": [],
-      "matchedProductCount": 0,
+      "productIds": [
+        "asics-gel-kayano-14-illusion-blue-1203a537-402"
+      ],
+      "matchedProductCount": 1,
       "sourceRanks": [
         {
           "platform": "eql",
@@ -8923,8 +9840,8 @@
       "SNS는 확인된 검색량·해시태그 게시물량을 지표와 기간별로 구분합니다. 미공개 수치는 0으로 대체하지 않습니다."
     ],
     "counts": {
-      "source": 2756,
-      "published": 68,
+      "source": 2765,
+      "published": 78,
       "held": 2676,
       "expired": 3
     },
@@ -8960,7 +9877,7 @@
       }
     ]
   },
-  "keywordEvaluatedAt": "2026-10-07T01:31:06.600Z",
+  "keywordEvaluatedAt": "2026-10-07T06:39:57.901Z",
   "styleTrendKeywords": {
     "method": "verified-style-board-v1",
     "updated": "2026-10-06T10:27:37.860Z",
@@ -10802,11 +11719,13 @@
           "daily-20260915-nike-sb-af1-yuto-io8439-100",
           "daily-20260916-converse-palmes-green-a24756c",
           "daily-20260916-converse-palmes-navy-a24786c",
+          "dior-dioralps-kck565sen-s61u",
           "official-82d80c59311fcc15",
           "official-nike-ir0088-001",
           "official-nike-iv5678-102",
           "official-nike-ix8478-410",
           "official-salomon-l49210700",
+          "official-salomon-l49210800",
           "verified-adidas-kh7452",
           "verified-adidas-kj5248",
           "verified-adidas-kj5249",
@@ -10832,7 +11751,7 @@
           "verified-new-balance-ugtr4dy",
           "verified-new-balance-w327apc"
         ],
-        "matchedProductCount": 33,
+        "matchedProductCount": 35,
         "sourceCount": 3,
         "editorialCount": 3,
         "retailCount": 1,
@@ -10901,13 +11820,14 @@
         ],
         "productIds": [
           "daily-20260917-new-balance-991v1-luxe-suede-m991br1",
+          "gucci-drip-sneaker-sand-brown-a009zffagmq9656",
           "official-82d80c59311fcc15",
           "verified-celine-reebok-freestyle-lo-19dk",
           "verified-gucci-drip-sand-brown-a00a2sfagmq9656",
           "verified-puma-406687-02",
           "zip-cecilie-asics-black-coffee"
         ],
-        "matchedProductCount": 6,
+        "matchedProductCount": 7,
         "sourceCount": 3,
         "editorialCount": 1,
         "retailCount": 22,
@@ -11206,11 +12126,12 @@
           "silver"
         ],
         "productIds": [
+          "asics-gel-kayano-14-illusion-blue-1203a537-402",
           "verified-new-balance-mrebx4fh",
           "verified-new-balance-wrebx38s",
           "zip-cecilie-asics-silver"
         ],
-        "matchedProductCount": 3,
+        "matchedProductCount": 4,
         "sourceCount": 3,
         "editorialCount": 1,
         "retailCount": 18,
@@ -11511,6 +12432,7 @@
         ],
         "productIds": [
           "official-salomon-l49210700",
+          "official-salomon-l49210800",
           "official-salomon-l49214800",
           "official-salomon-l49215200",
           "official-salomon-l49215400",
@@ -11520,7 +12442,7 @@
           "verified-moncler-citytrek-sagegreen-l209a4m00230n0633818",
           "verified-moncler-citytrek-white-l209a4m00230n0633034"
         ],
-        "matchedProductCount": 9,
+        "matchedProductCount": 10,
         "sourceCount": 2,
         "editorialCount": 0,
         "retailCount": 5,
@@ -11837,6 +12759,7 @@
           "official-nike-iv5678-102",
           "official-salomon-l45401400",
           "official-salomon-l49210700",
+          "official-salomon-l49210800",
           "official-salomon-l49211100",
           "official-salomon-l49213200",
           "official-salomon-l49214800",
@@ -11864,7 +12787,7 @@
           "verified-puma-406687-01",
           "verified-puma-406687-02"
         ],
-        "matchedProductCount": 30,
+        "matchedProductCount": 31,
         "sourceCount": 1,
         "editorialCount": 1,
         "retailCount": 0,
@@ -11996,9 +12919,10 @@
           "platform"
         ],
         "productIds": [
+          "dior-dioralps-kck498och-s56b",
           "official-82d80c59311fcc15"
         ],
-        "matchedProductCount": 1,
+        "matchedProductCount": 2,
         "sourceCount": 1,
         "editorialCount": 0,
         "retailCount": 3,

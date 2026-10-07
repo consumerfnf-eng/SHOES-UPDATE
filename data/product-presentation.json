@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-06T05:41:54.180Z",
+  "checkedAt": "2026-10-07T06:39:30.835Z",
   "policy": "Exact-variant official side or three-quarter shoe-only photograph; new unreviewed assets are held.",
   "products": [
     {
@@ -1180,6 +1180,102 @@
       "checkedAt": "2026-10-06T08:11:17.319Z",
       "colorSwatches": [
         "#514268"
+      ]
+    },
+    {
+      "id": "dior-dioralps-kck498och-s56b",
+      "brand": "Dior",
+      "style": "KCK498OCH_S56B",
+      "originalImage": "https://assets.christiandior.com/is/image/diorprod/KCK498OCHS56B_SBG_E02-2?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "image": "https://assets.christiandior.com/is/image/diorprod/KCK498OCHS56B_SBG_E02-2?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+      "checkedAt": "2026-10-07T06:39:29.927Z",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1,
+      "colorSwatches": [
+        "#28324A"
+      ]
+    },
+    {
+      "id": "dior-dioralps-kck565sen-s61u",
+      "brand": "Dior",
+      "style": "KCK565SEN_S61U",
+      "originalImage": "https://assets.christiandior.com/is/image/diorprod/KCK565SENS61U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "image": "https://assets.christiandior.com/is/image/diorprod/KCK565SENS61U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
+      "checkedAt": "2026-10-07T06:39:29.927Z",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1,
+      "colorSwatches": [
+        "#D8CCB4"
+      ]
+    },
+    {
+      "id": "dior-dioralps-kck568fos-s60u",
+      "brand": "Dior",
+      "style": "KCK568FOS_S60U",
+      "originalImage": "https://assets.christiandior.com/is/image/diorprod/KCK568FOSS60U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "image": "https://assets.christiandior.com/is/image/diorprod/KCK568FOSS60U_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
+      "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
+      "checkedAt": "2026-10-07T06:39:29.927Z",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1,
+      "colorSwatches": [
+        "#D8CCB4"
+      ]
+    },
+    {
+      "id": "gucci-drip-sneaker-white-suede-a009z4aag8v9072",
+      "brand": "Gucci",
+      "style": "A009Z4AAG8V9072",
+      "originalImage": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784133070/A009Z4_AAG8V_9072_015_100_0000_Light-womens-drip-sneaker.jpg",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784133070/A009Z4_AAG8V_9072_015_100_0000_Light-womens-drip-sneaker.jpg",
+      "sourceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
+      "checkedAt": "2026-10-07T06:39:30.529Z",
+      "approved": true,
+      "view": "three-quarter",
+      "noPerson": true,
+      "scale": 1.2,
+      "colorSwatches": [
+        "#F5F3EE"
+      ]
+    },
+    {
+      "id": "gucci-drip-sneaker-sand-brown-a009zffagmq9656",
+      "brand": "Gucci",
+      "style": "A009YZFAGMQ9656",
+      "originalImage": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784219482/A009YZ_FAGMQ_9656_015_100_0000_Light-womens-drip-sneaker.jpg",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784219482/A009YZ_FAGMQ_9656_015_100_0000_Light-womens-drip-sneaker.jpg",
+      "sourceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+      "checkedAt": "2026-10-07T06:39:30.529Z",
+      "approved": true,
+      "view": "three-quarter",
+      "noPerson": true,
+      "scale": 1.2,
+      "colorSwatches": [
+        "#C9B38A"
+      ]
+    },
+    {
+      "id": "asics-gel-kayano-14-illusion-blue-1203a537-402",
+      "brand": "ASICS",
+      "style": "1203A537-402",
+      "originalImage": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
+      "image": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
+      "sourceUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
+      "checkedAt": "2026-10-07T06:39:30.835Z",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "scale": 1,
+      "colorSwatches": [
+        "#3B5FCB"
       ]
     }
   ]

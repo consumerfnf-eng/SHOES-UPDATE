@@ -9,5 +9,6 @@
 - [ ] Settings → General → Danger Zone → Repository visibility → Public
 - [ ] Settings → Pages → Source → GitHub Actions
 - [ ] `JINA_API_KEY` Actions Secret 등록
+- [ ] `FIRECRAWL_API_KEY` Actions Secret 등록 (차단된 브랜드 공식 사이트 재시도용, 설정 방법: `docs/firecrawl-api-key-setup-2026-10-07.md`)
 - [ ] Daily Shoes Dashboard Update 수동 1회 실행
 - [ ] Deploy GitHub Pages 성공 확인
