@@ -1,4 +1,5 @@
 import {footwearTypes,FOOTWEAR_TYPES} from './footwear-policy.mjs';
+import {hasArrivalEvidence} from './publication-window.mjs';
 export function kstToday(now = new Date()) {
   const shifted = new Date(now.getTime() + 9 * 60 * 60 * 1000);
   return shifted.toISOString().slice(0, 10);
@@ -12,7 +13,7 @@ export function validDay(value) {
 export function releaseState(product, today = kstToday()) {
   const state=windowState(product,today);return ['released','upcoming'].includes(state)?state:null;
 }
-export function releaseDateLabel(product){const range=releaseWindow(product);if(range?.precision==='month'){const [year,month]=product.releaseDate.split('-');return `${year}년 ${Number(month)}월 (일자 미공개)`;}return product.releaseDate||'미확인';}
+export function releaseDateLabel(product){const range=releaseWindow(product);if(range?.precision==='month'){const [year,month]=product.releaseDate.split('-');return `${year}년 ${Number(month)}월 (일자 미공개)`;}return product.arrivalEvidence?`NEW · ${product.arrivalEvidence.verifiedAt.slice(0,10)} 확인`:product.releaseDate||'출시일 미공개';}
 export function safeUrl(value) {
   try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password ? url.href : ''; } catch { return ''; }
 }
@@ -24,7 +25,8 @@ export function officialProductUrl(product, today = kstToday()) {
 }
 export function officialImageUrl(product, today = kstToday()) {
   const evidence=product.officialImageEvidence,url=safeUrl(product.image),sourceUrl=officialProductUrl(product,today);
-  return url && sourceUrl && evidence?.verified===true && sameIdentity(evidence,product) && safeUrl(evidence.url)===url && safeUrl(evidence.sourceUrl)===sourceUrl && verifiedDate(evidence.verifiedAt,today) ? url : '';
+  const listing=evidence?.verificationMethod==='official-new-listing-sku-image'&&hasArrivalEvidence(product,today)&&safeUrl(evidence.sourceUrl)===safeUrl(product.arrivalEvidence.url)&&evidence.contentHash===product.arrivalEvidence.contentHash;
+  return url && sourceUrl && evidence?.verified===true && sameIdentity(evidence,product) && safeUrl(evidence.url)===url && (listing||safeUrl(evidence.sourceUrl)===sourceUrl) && verifiedDate(evidence.verifiedAt,today) ? url : '';
 }
 // A reviewed navigation link does not grant official-proof or popularity eligibility.
 export function reviewedProductPageUrl(product, today = kstToday()) {

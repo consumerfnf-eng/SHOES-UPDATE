@@ -27,8 +27,9 @@ test('keyword-only refresh preserves all product raw fields, signals and product
 test('maintenance preserves actual keyword collection time while expiring products and ranks at the evaluation instant',async()=>{
  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'shoes-keyword-maintenance-'));
  try{
-  const older={...product,id:'older',style:'OLD001',name:'Older suede sneaker',url:'https://www.nike.com/t/older/OLD001',releaseDate:'2026-06-28',dateEvidence:{...product.dateEvidence,excerpt:'OLD001 releases June 28, 2026.'}};
+  const older={...product,id:'older',style:'OLD001',name:'Older suede sneaker',url:'https://www.nike.com/t/older/OLD001',firstPublishedAt:'2026-06-29T00:00:00Z',releaseDate:'2026-06-28',dateEvidence:{...product.dateEvidence,excerpt:'OLD001 releases June 28, 2026.'}};
   const original={products:[product,older],collection:{keywordCheckedAt:now.toISOString(),sourceRanks:[rank],checkedAt:'2026-09-28T00:00:00Z',lastSuccessfulCollectionAt:'2026-09-28T00:30:00Z'}};
+  await atomicJson(path.join(dir,'data/publication-history.json'),{schemaVersion:1,entries:{older:{firstPublishedAt:older.firstPublishedAt}}});
   await atomicJson(path.join(dir,'data/catalog-source.json'),original);
   const initial=await publishCurated({directory:dir,now});
   const sourceBefore=await fs.readFile(path.join(dir,'data/catalog-source.json'));

@@ -1,0 +1,1515 @@
+{
+  "schemaVersion": 1,
+  "retentionMonths": 3,
+  "basis": "first-published-kst-calendar-day",
+  "entries": {
+    "verified-nike-ir0968-500": {
+      "firstPublishedAt": "2026-09-28T11:35:24+09:00",
+      "sourceCommit": "4a8bc476e5bd9b7a180702b4bc16c7de9433e478",
+      "brand": "Nike",
+      "style": "IR0968-500",
+      "url": "https://www.nike.com/tw/launch/t/air-max-plus-one-piece-gomu-gomu"
+    },
+    "verified-puma-406687-01": {
+      "firstPublishedAt": "2026-09-28T11:35:24+09:00",
+      "sourceCommit": "4a8bc476e5bd9b7a180702b4bc16c7de9433e478",
+      "brand": "PUMA",
+      "style": "406687_01",
+      "url": "https://eu.puma.com/es/es/pd/zapatillas-puma-x-j.l-a.l_-cell-geo-1-cage-unisex/406687?swatch=01"
+    },
+    "verified-puma-406687-02": {
+      "firstPublishedAt": "2026-09-28T11:35:24+09:00",
+      "sourceCommit": "4a8bc476e5bd9b7a180702b4bc16c7de9433e478",
+      "brand": "PUMA",
+      "style": "406687_02",
+      "url": "https://eu.puma.com/ie/en/pd/puma-x-jl-al-cell-geo-1-cage-sneakers-unisex/406687?swatch=02"
+    },
+    "verified-adidas-kj7669": {
+      "firstPublishedAt": "2026-09-28T11:35:24+09:00",
+      "sourceCommit": "4a8bc476e5bd9b7a180702b4bc16c7de9433e478",
+      "brand": "adidas",
+      "style": "KJ7669",
+      "url": "https://www.adidas.ae/en/adidas-x-tyrrell-winston-climacool-4d-shoes/KJ7669.html"
+    },
+    "official-nike-ir0088-001": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "Jordan",
+      "style": "IR0088-001",
+      "url": "https://www.nike.com/launch/t/air-jordan-1-low-og-black-and-white-1"
+    },
+    "official-nike-iv5678-102": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "Jordan",
+      "style": "IV5678-102",
+      "url": "https://www.nike.com/launch/t/women-s-air-jordan-5-sunset"
+    },
+    "verified-new-balance-u990br4": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U990BR4",
+      "url": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52804.html"
+    },
+    "verified-new-balance-u990bg4": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U990BG4",
+      "url": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52802.html"
+    },
+    "daily-20260915-nike-air-foamposite-pro-im5204-001": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "Nike",
+      "style": "IM5204-001",
+      "url": "https://www.nike.com/launch/t/air-foamposite-pro-black-and-multi-color"
+    },
+    "daily-20260917-new-balance-991v1-luxe-suede-m991br1": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "M991BR1",
+      "url": "https://www.newbalance.com/pd/made-in-uk-991v1-luxe-suede/M991V1_LI-FTW-826837.html"
+    },
+    "daily-20260915-nike-sb-af1-yuto-io8439-100": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "Nike",
+      "style": "IO8439-100",
+      "url": "https://www.nike.com/launch/t/nike-sb-air-force-1-yuto-light-bone-and-iron-grey"
+    },
+    "daily-20260915-nike-tennis-centre-kallmeyer-iw4737-104": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "Nike",
+      "style": "IW4737-104",
+      "url": "https://www.nike.com/launch/t/womens-tennis-centre-x-kallmeyer-travertine"
+    },
+    "daily-20260916-converse-palmes-green-a24756c": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "Converse",
+      "style": "A24756C",
+      "url": "https://palmes.co/products/palmes-for-converse-jack-purcell-green-canvas"
+    },
+    "daily-20260916-converse-palmes-navy-a24786c": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "Converse",
+      "style": "A24786C",
+      "url": "https://palmes.co/products/palmes-for-converse-jack-purcell-navy-suede"
+    },
+    "verified-new-balance-u1300ss": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U1300SS",
+      "url": "https://www.newbalance.com/pd/made-in-usa-1300/U1300V1-52809.html"
+    },
+    "verified-new-balance-u90608ol": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U90608OL",
+      "url": "https://www.newbalance.com/pd/sydney-levrone-9060r/U9060RV1_LI-FTW-855217.html"
+    },
+    "verified-new-balance-wfcx1yq": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "WFCX1YQ",
+      "url": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/WFCXV5_RU-FTW-852606.html"
+    },
+    "verified-new-balance-mfcx8e5": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "MFCX8E5",
+      "url": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/MFCXV5_RU-FTW-852604.html"
+    },
+    "verified-new-balance-u990lv4": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U990LV4",
+      "url": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52803.html"
+    },
+    "verified-new-balance-u993mo": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U993MO",
+      "url": "https://www.newbalance.com/pd/made-in-usa-993/U993V1-52816.html"
+    },
+    "verified-new-balance-u18902uh": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U18902UH",
+      "url": "https://www.newbalance.com/pd/1890p/U1890PV1_LI-FTW-837876.html"
+    },
+    "verified-new-balance-u7507a0": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U7507A0",
+      "url": "https://www.newbalance.com/pd/750/U750V1_LI-FTW-851089-PMG-NA.html"
+    },
+    "verified-new-balance-u991wl2": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U991WL2",
+      "url": "https://www.newbalance.com/pd/made-in-uk-991v2/U991V2_LI-FTW-829161.html"
+    },
+    "verified-new-balance-ugtr4dy": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "UGTR4DY",
+      "url": "https://www.newbalance.com/pd/ald-x-new-balance-gator-run-hairy-suede/UGTRV1_LI-FTW-859792.html"
+    },
+    "verified-new-balance-w327apc": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "W327APC",
+      "url": "https://www.newbalance.com/pd/327/WS327V1-41747-PMG-NA-BROWN2.html"
+    },
+    "verified-new-balance-u204v2w0": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U204V2W0",
+      "url": "https://www.newbalance.com/pd/204v/U204V2W0-D-05.html"
+    },
+    "verified-new-balance-u204v2pt": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U204V2PT",
+      "url": "https://www.newbalance.com/pd/204v/U204V2PT-D-05.html"
+    },
+    "verified-new-balance-mrebx4fh": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "MREBX4FH",
+      "url": "https://www.newbalance.com/pd/supercomp-rebel/MREBXV1_RU-FTW-814193-PMG-NA.html"
+    },
+    "verified-new-balance-wrebx38s": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "WREBX38S",
+      "url": "https://www.newbalance.com/pd/supercomp-rebel/WREBXV1_RU-FTW-814192-PMG-NA.html"
+    },
+    "verified-new-balance-mt24yj": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "MT24YJ",
+      "url": "https://www.newbalance.com/pd/tds-mt2/MT2V1_LI-FTW-857722.html"
+    },
+    "verified-new-balance-u7406ak": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U7406AK",
+      "url": "https://www.newbalance.com/pd/night-lights-740%E2%80%8B/U740V2_LI-FTW-885192.html"
+    },
+    "verified-new-balance-u90609bo": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U90609BO",
+      "url": "https://www.newbalance.com/pd/night-lights-9060r%E2%80%8B/U9060RV1_LI-FTW-873793.html"
+    },
+    "verified-new-balance-u20001k7": {
+      "firstPublishedAt": "2026-09-28T13:36:25+09:00",
+      "sourceCommit": "7659dacd9541bf9af9bd65e5413863931a6b0757",
+      "brand": "New Balance",
+      "style": "U20001K7",
+      "url": "https://www.newbalance.com/pd/night-lights-abzorb-2000%E2%80%8B/U2000V1_LI-FTW-873796.html"
+    },
+    "zip-cecilie-asics-black-coffee": {
+      "firstPublishedAt": "2026-09-28T16:59:37+09:00",
+      "sourceCommit": "702747939ae2b7499cec92f3e4e104b5216221c7",
+      "brand": "Cecilie Bahnsen",
+      "style": "26-4-0001",
+      "url": "https://ceciliebahnsen.com/products/asics-26-4-0001-gel-kinetic-fr-synthetic-leather-black-coffee"
+    },
+    "zip-cecilie-asics-silver": {
+      "firstPublishedAt": "2026-09-28T16:59:37+09:00",
+      "sourceCommit": "702747939ae2b7499cec92f3e4e104b5216221c7",
+      "brand": "Cecilie Bahnsen",
+      "style": "26-4-0002",
+      "url": "https://ceciliebahnsen.com/products/asics-26-4-0002-gel-kinetic-fr-synthetic-leather-silver"
+    },
+    "official-82d80c59311fcc15": {
+      "firstPublishedAt": "2026-09-28T16:59:37+09:00",
+      "sourceCommit": "702747939ae2b7499cec92f3e4e104b5216221c7",
+      "brand": "Miu Miu",
+      "style": "5E808E_3ZR4_F0304_F_A045",
+      "url": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045"
+    },
+    "verified-moncler-citytrek-white-l209a4m00230n0633034": {
+      "firstPublishedAt": "2026-09-28T16:59:37+09:00",
+      "sourceCommit": "702747939ae2b7499cec92f3e4e104b5216221c7",
+      "brand": "Moncler",
+      "style": "L209A4M00230N0633034",
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html"
+    },
+    "new-20260923-f28d3395e6c72a4a": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Nike",
+      "style": "IQ5365-600",
+      "url": "https://www.nike.com/launch/t/air-bakin-high-sp-black-and-varsity-red"
+    },
+    "verified-celine-reebok-freestyle-lo-02bg": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Celine",
+      "style": "369405533C.02BG",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html"
+    },
+    "verified-celine-reebok-freestyle-lo-38no": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Celine",
+      "style": "369405533C.38NO",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html"
+    },
+    "verified-celine-reebok-freestyle-lo-11bu": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Celine",
+      "style": "369405533C.11BU",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html"
+    },
+    "verified-celine-reebok-freestyle-lo-19dk": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Celine",
+      "style": "369405533C.19DK",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html"
+    },
+    "verified-celine-reebok-freestyle-lo-27fr": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Celine",
+      "style": "369405533C.27FR",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html"
+    },
+    "verified-celine-reebok-freestyle-lo-01op": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Celine",
+      "style": "369405533C.01OP",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html"
+    },
+    "verified-celine-reebok-freestyle-lo-28ms": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Celine",
+      "style": "369405533C.28MS",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html"
+    },
+    "verified-celine-reebok-freestyle-lo-03pt": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Celine",
+      "style": "369405533C.03PT",
+      "url": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html"
+    },
+    "verified-moncler-citytrek-ivory-l209a4m00230n0633050": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Moncler",
+      "style": "L209A4M00230N0633050",
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html"
+    },
+    "verified-moncler-citytrek-black-l209a4m00230n0633999": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Moncler",
+      "style": "L209A4M00230N0633999",
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html"
+    },
+    "verified-moncler-citytrek-sagegreen-l209a4m00230n0633818": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Moncler",
+      "style": "L209A4M00230N0633818",
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html"
+    },
+    "verified-gucci-drip-sand-brown-a00a2sfagmq9656": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Gucci",
+      "style": "A00A2SFAGMQ9656",
+      "url": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656"
+    },
+    "verified-dior-hooper-beige-blue-3sn375aed-h560": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Dior",
+      "style": "3SN375AED_H560",
+      "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H560"
+    },
+    "verified-dior-hooper-black-oblique-3sn375aed-h960": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Dior",
+      "style": "3SN375AED_H960",
+      "url": "https://www.dior.com/en_us/fashion/products/3SN375AED_H960"
+    },
+    "verified-dior-hooper-white-navy-3sn376zdf-h009": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Dior",
+      "style": "3SN376ZDF_H009",
+      "url": "https://www.dior.com/en_us/fashion/products/3SN376ZDF_H009"
+    },
+    "verified-lv-drop-300-black-1akp23": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Louis Vuitton",
+      "style": "1AKP23",
+      "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP23"
+    },
+    "verified-lv-drop-300-blue-1akp2m": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Louis Vuitton",
+      "style": "1AKP2M",
+      "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP2M"
+    },
+    "verified-lv-drop-300-orange-1akp11": {
+      "firstPublishedAt": "2026-09-29T08:55:28+09:00",
+      "sourceCommit": "6a75c1c135333b846dca86342f01045b3db26036",
+      "brand": "Louis Vuitton",
+      "style": "1AKP11",
+      "url": "https://us.louisvuitton.com/eng-us/products/lv-drop-300-sneaker-nvprod7730141v/1AKP11"
+    },
+    "p011": {
+      "firstPublishedAt": "2026-09-29T09:48:54+09:00",
+      "sourceCommit": "035cff7c3aba1384206179a7d00323e55c4367ef",
+      "brand": "On",
+      "style": "3MH10335109",
+      "url": "https://www.on.com/en-kr/products/cloud-x-tempo-pro-m-3mh1033/mens/white-celeste-shoes-3MH10335109"
+    },
+    "official-nike-ix8478-410": {
+      "firstPublishedAt": "2026-10-01T01:17:08Z",
+      "sourceCommit": "4d2e2a1bc6f871a71cdff8c0c7ff74df0691bbe6",
+      "brand": "Jordan",
+      "style": "IX8478-410",
+      "url": "https://www.nike.com/launch/t/air-jordan-1-low-og-howard-college-navy-and-university-red"
+    },
+    "official-salomon-l49302000": {
+      "firstPublishedAt": "2026-10-01T01:17:08Z",
+      "sourceCommit": "4d2e2a1bc6f871a71cdff8c0c7ff74df0691bbe6",
+      "brand": "Salomon",
+      "style": "L49302000",
+      "url": "https://www.salomon.com/en-ca/product/genesis-2-gtx-li9188/L49302000"
+    },
+    "official-salomon-l49210700": {
+      "firstPublishedAt": "2026-10-01T01:17:08Z",
+      "sourceCommit": "4d2e2a1bc6f871a71cdff8c0c7ff74df0691bbe6",
+      "brand": "Salomon",
+      "style": "L49210700",
+      "url": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210700"
+    },
+    "official-salomon-l49213700": {
+      "firstPublishedAt": "2026-10-01T01:17:08Z",
+      "sourceCommit": "4d2e2a1bc6f871a71cdff8c0c7ff74df0691bbe6",
+      "brand": "Salomon",
+      "style": "L49213700",
+      "url": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213700"
+    },
+    "official-salomon-l49213200": {
+      "firstPublishedAt": "2026-10-01T01:17:08Z",
+      "sourceCommit": "4d2e2a1bc6f871a71cdff8c0c7ff74df0691bbe6",
+      "brand": "Salomon",
+      "style": "L49213200",
+      "url": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213200"
+    },
+    "official-salomon-l49211100": {
+      "firstPublishedAt": "2026-10-01T01:17:08Z",
+      "sourceCommit": "4d2e2a1bc6f871a71cdff8c0c7ff74df0691bbe6",
+      "brand": "Salomon",
+      "style": "L49211100",
+      "url": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49211100"
+    },
+    "official-salomon-l49215400": {
+      "firstPublishedAt": "2026-10-01T01:17:08Z",
+      "sourceCommit": "4d2e2a1bc6f871a71cdff8c0c7ff74df0691bbe6",
+      "brand": "Salomon",
+      "style": "L49215400",
+      "url": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215400"
+    },
+    "official-salomon-l49215200": {
+      "firstPublishedAt": "2026-10-01T01:17:08Z",
+      "sourceCommit": "4d2e2a1bc6f871a71cdff8c0c7ff74df0691bbe6",
+      "brand": "Salomon",
+      "style": "L49215200",
+      "url": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215200"
+    },
+    "official-salomon-l49214800": {
+      "firstPublishedAt": "2026-10-01T01:17:08Z",
+      "sourceCommit": "4d2e2a1bc6f871a71cdff8c0c7ff74df0691bbe6",
+      "brand": "Salomon",
+      "style": "L49214800",
+      "url": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49214800"
+    },
+    "official-salomon-l45401400": {
+      "firstPublishedAt": "2026-10-06T02:18:44Z",
+      "sourceCommit": "ecb768bca9d8d3932acf1b97b503351079aa5bdd",
+      "brand": "Salomon",
+      "style": "L45401400",
+      "url": "https://www.salomon.com/en-ca/product/aero-blaze-4-grvl-li9273/L45401400"
+    },
+    "verified-adidas-kh7452": {
+      "firstPublishedAt": "2026-10-06T16:34:15+09:00",
+      "sourceCommit": "3cfcd837de83abe0ba5e3f7b55ad0ae642445e30",
+      "brand": "adidas",
+      "style": "KH7452",
+      "url": "https://www.adidas.com/us/simone-rocha-climacool-shoes/KH7452.html"
+    },
+    "verified-adidas-kj5249": {
+      "firstPublishedAt": "2026-10-06T16:34:15+09:00",
+      "sourceCommit": "3cfcd837de83abe0ba5e3f7b55ad0ae642445e30",
+      "brand": "adidas",
+      "style": "KJ5249",
+      "url": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5249.html"
+    },
+    "verified-adidas-kj5248": {
+      "firstPublishedAt": "2026-10-06T16:34:15+09:00",
+      "sourceCommit": "3cfcd837de83abe0ba5e3f7b55ad0ae642445e30",
+      "brand": "adidas",
+      "style": "KJ5248",
+      "url": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5248.html"
+    },
+    "verified-adidas-lb3786": {
+      "firstPublishedAt": "2026-10-06T16:34:15+09:00",
+      "sourceCommit": "3cfcd837de83abe0ba5e3f7b55ad0ae642445e30",
+      "brand": "adidas",
+      "style": "LB3786",
+      "url": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3786.html"
+    },
+    "verified-adidas-lb3787": {
+      "firstPublishedAt": "2026-10-06T16:34:15+09:00",
+      "sourceCommit": "3cfcd837de83abe0ba5e3f7b55ad0ae642445e30",
+      "brand": "adidas",
+      "style": "LB3787",
+      "url": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3787.html"
+    },
+    "verified-nike-iu3167-002": {
+      "firstPublishedAt": "2026-10-06T16:34:15+09:00",
+      "sourceCommit": "3cfcd837de83abe0ba5e3f7b55ad0ae642445e30",
+      "brand": "Nike",
+      "style": "IU3167-002",
+      "url": "https://www.nike.com/t/rejuven8-run-womens-shoes-eIBcnQk9"
+    },
+    "verified-saucony-s101074-1002": {
+      "firstPublishedAt": "2026-10-06T16:34:15+09:00",
+      "sourceCommit": "3cfcd837de83abe0ba5e3f7b55ad0ae642445e30",
+      "brand": "Saucony",
+      "style": "S101074-1002",
+      "url": "https://www.saucony.com/en/progrid-v2-mule/61289U.html"
+    },
+    "verified-saucony-s101074-1004": {
+      "firstPublishedAt": "2026-10-06T16:34:15+09:00",
+      "sourceCommit": "3cfcd837de83abe0ba5e3f7b55ad0ae642445e30",
+      "brand": "Saucony",
+      "style": "S101074-1004",
+      "url": "https://www.saucony.com/en/progrid-v2-mule/61289U.html"
+    },
+    "verified-grounds-10268749758770": {
+      "firstPublishedAt": "2026-10-06T17:19:12+09:00",
+      "sourceCommit": "433db46e13f84fedcd45f8c8beb74f5bbb3cc382",
+      "brand": "grounds",
+      "style": "10268749758770",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bb"
+    },
+    "verified-grounds-10268771287346": {
+      "firstPublishedAt": "2026-10-06T17:19:12+09:00",
+      "sourceCommit": "433db46e13f84fedcd45f8c8beb74f5bbb3cc382",
+      "brand": "grounds",
+      "style": "10268771287346",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-bnmbm"
+    },
+    "verified-grounds-10268772991282": {
+      "firstPublishedAt": "2026-10-06T17:19:12+09:00",
+      "sourceCommit": "433db46e13f84fedcd45f8c8beb74f5bbb3cc382",
+      "brand": "grounds",
+      "style": "10268772991282",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-uu"
+    },
+    "verified-grounds-10268751200562": {
+      "firstPublishedAt": "2026-10-06T17:19:12+09:00",
+      "sourceCommit": "433db46e13f84fedcd45f8c8beb74f5bbb3cc382",
+      "brand": "grounds",
+      "style": "10268751200562",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-2046-beenawhile-cgdg"
+    },
+    "verified-grounds-10268728688946": {
+      "firstPublishedAt": "2026-10-06T17:19:12+09:00",
+      "sourceCommit": "433db46e13f84fedcd45f8c8beb74f5bbb3cc382",
+      "brand": "grounds",
+      "style": "10268728688946",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-bpnbm"
+    },
+    "verified-grounds-10268748677426": {
+      "firstPublishedAt": "2026-10-06T17:19:12+09:00",
+      "sourceCommit": "433db46e13f84fedcd45f8c8beb74f5bbb3cc382",
+      "brand": "grounds",
+      "style": "10268748677426",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-cgdg"
+    },
+    "verified-grounds-10268747170098": {
+      "firstPublishedAt": "2026-10-06T17:19:12+09:00",
+      "sourceCommit": "433db46e13f84fedcd45f8c8beb74f5bbb3cc382",
+      "brand": "grounds",
+      "style": "10268747170098",
+      "url": "https://grounds-fw.jp/en/products/grounds-graffiti-noa-beenawhile-pgdg"
+    },
+    "official-salomon-l49210800": {
+      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
+      "sourceCommit": "d54ed509254c9ea74edda329820b4aead7419d02",
+      "brand": "Salomon",
+      "style": "L49210800",
+      "url": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800"
+    },
+    "official-salomon-l45405100": {
+      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
+      "sourceCommit": "d54ed509254c9ea74edda329820b4aead7419d02",
+      "brand": "Salomon",
+      "style": "L45405100",
+      "url": "https://www.salomon.com/en-ca/product/xt-6-protective-li1345/L45405100"
+    },
+    "official-salomon-l49192300": {
+      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
+      "sourceCommit": "d54ed509254c9ea74edda329820b4aead7419d02",
+      "brand": "Salomon",
+      "style": "L49192300",
+      "url": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L49192300"
+    },
+    "official-salomon-l45397700": {
+      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
+      "sourceCommit": "d54ed509254c9ea74edda329820b4aead7419d02",
+      "brand": "Salomon",
+      "style": "L45397700",
+      "url": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L45397700"
+    },
+    "dior-dioralps-kck565sen-s61u": {
+      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
+      "sourceCommit": "d54ed509254c9ea74edda329820b4aead7419d02",
+      "brand": "Dior",
+      "style": "KCK565SEN_S61U",
+      "url": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U"
+    },
+    "dior-dioralps-kck568fos-s60u": {
+      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
+      "sourceCommit": "d54ed509254c9ea74edda329820b4aead7419d02",
+      "brand": "Dior",
+      "style": "KCK568FOS_S60U",
+      "url": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U"
+    },
+    "dior-dioralps-kck498och-s56b": {
+      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
+      "sourceCommit": "d54ed509254c9ea74edda329820b4aead7419d02",
+      "brand": "Dior",
+      "style": "KCK498OCH_S56B",
+      "url": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B"
+    },
+    "asics-gel-kayano-14-illusion-blue-1203a537-402": {
+      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
+      "sourceCommit": "d54ed509254c9ea74edda329820b4aead7419d02",
+      "brand": "ASICS",
+      "style": "1203A537-402",
+      "url": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html"
+    },
+    "gucci-drip-sneaker-white-suede-a009z4aag8v9072": {
+      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
+      "sourceCommit": "d54ed509254c9ea74edda329820b4aead7419d02",
+      "brand": "Gucci",
+      "style": "A009Z4AAG8V9072",
+      "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072"
+    },
+    "gucci-drip-sneaker-sand-brown-a009zffagmq9656": {
+      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
+      "sourceCommit": "d54ed509254c9ea74edda329820b4aead7419d02",
+      "brand": "Gucci",
+      "style": "A009YZFAGMQ9656",
+      "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656"
+    },
+    "new-20260923-2e902fa978c7dc7d": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "On",
+      "style": "silver-ore-shoes-3MG30255317",
+      "url": "https://www.on.com/en-us/products/cloudvista-3-waterproof-m-3mg3025/mens/silver-ore-shoes-3MG30255317"
+    },
+    "live-38d151b1f66721ba": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "On",
+      "style": "grain-saffron-shoes-3WG30195160",
+      "url": "https://www.on.com/en-us/products/cloudvista-3-w-3wg3019/womens/grain-saffron-shoes-3WG30195160"
+    },
+    "live-a4cee0e20826cfca": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "On",
+      "style": "grain-saffron-shoes-3MG30045160",
+      "url": "https://www.on.com/en-us/products/cloudvista-3-m-3mg3004/mens/grain-saffron-shoes-3MG30045160"
+    },
+    "arrival-9c97d9f62088cb3e83c3": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "New Balance",
+      "style": "W10807PK",
+      "url": "https://www.newbalance.com/pd/1080v15/W1080V15_RU-FTW-874208-PMG-NA.html?dwvar_W1080V15__RU-FTW-874208-PMG-NA_style=W10807PK"
+    },
+    "arrival-ec19f4a6a31c980bc4bb": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "New Balance",
+      "style": "U204L5YB",
+      "url": "https://www.newbalance.com/pd/204l/U204LV1-51907-PMG-NA.html?dwvar_U204LV1-51907-PMG-NA_style=U204L5YB"
+    },
+    "arrival-3f8b92731ce862e14b6f": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "3xl-rivets-sneaker-black-734731W3SDT1081",
+      "url": "https://www.balenciaga.com/en-us/3xl-rivets-sneaker-black-734731W3SDT1081.html"
+    },
+    "arrival-5e2a2afa67692f0de9af": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "New Balance",
+      "style": "U530SCW",
+      "url": "https://www.newbalance.com/pd/530/U530V1_LI-FTW-834185-PMG-NA.html?dwvar_U530V1__LI-FTW-834185-PMG-NA_style=U530SCW"
+    },
+    "arrival-cce02d4333bff366011d": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "FILA",
+      "style": "FS263RU02X098260",
+      "url": "https://www.fila.co.kr/products/1100fs263ru02x098260"
+    },
+    "arrival-0238571a5a035485e194": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "adidas",
+      "style": "KI8294",
+      "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8294.html"
+    },
+    "arrival-9e8e0b0a5146e2dbaee6": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "adidas",
+      "style": "KI8293",
+      "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8293.html"
+    },
+    "arrival-ad0202aa3ef6cea9804c": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "adidas",
+      "style": "KJ4984",
+      "url": "https://www.adidas.com/us/adizero-evo-sl-woven-running-shoes/KJ4984.html"
+    },
+    "arrival-14c1cc25b80878d18ec4": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Nike",
+      "style": "FD1437-005",
+      "url": "https://www.nike.com/t/air-jordan-1-high-og-royal-big-kids-shoes-p8vLeLAd/FD1437-005"
+    },
+    "arrival-da2c9ca1382a48b7fb9a": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Nike",
+      "style": "IQ5161-001",
+      "url": "https://www.nike.com/t/air-jordan-1-mid-se-womens-shoes-wkMdft/IQ5161-001"
+    },
+    "arrival-77d6a298f47dd674e5ed": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Axel Arigato",
+      "style": "clean-90-bee-bird-perf-sneaker-f4602005",
+      "url": "https://axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602005"
+    },
+    "arrival-3ea4f1845bd0ead1a831": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Axel Arigato",
+      "style": "clean-90-bee-bird-perf-sneaker-f4602002",
+      "url": "https://axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602002"
+    },
+    "arrival-e349ec5a45bef576d8b6": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Axel Arigato",
+      "style": "clean-90-bee-bird-perf-sneaker-f4602003",
+      "url": "https://axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602003"
+    },
+    "arrival-553083c6a7764c1f3acc": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Axel Arigato",
+      "style": "clean-90-bee-bird-perf-sneaker-f4602004",
+      "url": "https://axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602004"
+    },
+    "arrival-b8cd0d18d2e42abcdef0": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Axel Arigato",
+      "style": "clean-90-bee-bird-perf-sneaker-f4602006",
+      "url": "https://axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602006"
+    },
+    "new-20260923-8acae7430e9a7ae1": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Prada",
+      "style": "2EE490_2HKD_F0316_F_G000",
+      "url": "https://www.prada.com/us/en/p/collapse-antiqued-nappa-leather-sneakers-with-hooks/2EE490_2HKD_F0316_F_G000"
+    },
+    "arrival-925323163048818ce236": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Prada",
+      "style": "2EE364_3LJ6_F0002_F_D003",
+      "url": "https://www.prada.com/us/en/p/downtown-leather-sneakers/2EE364_3LJ6_F0002_F_D003"
+    },
+    "arrival-c6664a0b56408428130b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ASICS",
+      "style": "1012C075-400",
+      "url": "https://www.asics.com/us/en-us/gel-cumulus-28-lite-show/p/ANA_1012C075-400.html"
+    },
+    "arrival-e144220d6976e62daabb": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ASICS",
+      "style": "1011C315-400",
+      "url": "https://www.asics.com/us/en-us/gel-kayano-33-lite-show/p/ANA_1011C315-400.html"
+    },
+    "arrival-00a4f193a1d26d1f0312": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ASICS",
+      "style": "1012C073-400",
+      "url": "https://www.asics.com/us/en-us/gel-kayano-33-lite-show/p/ANA_1012C073-400.html"
+    },
+    "arrival-6f1d21152fdb6a18995f": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ASICS",
+      "style": "1011C167-101",
+      "url": "https://www.asics.com/us/en-us/gel-kayano-33/p/ANA_1011C167-101.html"
+    },
+    "arrival-3c606b3c23e2f409d468": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Onitsuka Tiger",
+      "style": "1183c471-001",
+      "url": "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-001.html"
+    },
+    "arrival-6f284738a7cd0e4914e4": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Onitsuka Tiger",
+      "style": "1183c471-002",
+      "url": "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-002.html"
+    },
+    "arrival-f1d1a0e62970f0d36d9f": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Onitsuka Tiger",
+      "style": "1183c471-250",
+      "url": "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-250.html"
+    },
+    "arrival-1c633a7051440dbf50ad": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Onitsuka Tiger",
+      "style": "1183c471-200",
+      "url": "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-200.html"
+    },
+    "arrival-b8c4f5b997ce2c690f8b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ASICS",
+      "style": "1011C314-400",
+      "url": "https://www.asics.com/us/en-us/gt-2000-15-lite-show/p/ANA_1011C314-400.html"
+    },
+    "arrival-496833d7a29ae484efcc": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ASICS",
+      "style": "1012C074-400",
+      "url": "https://www.asics.com/us/en-us/gt-2000-15-lite-show/p/ANA_1012C074-400.html"
+    },
+    "arrival-f3705a24c98dca3115c8": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Miu Miu",
+      "style": "5E428E_8M2_F05Q7_F_DD05",
+      "url": "https://www.miumiu.com/us/en/p/gymnasium-suede-sneakers/5E428E_8M2_F05Q7_F_DD05"
+    },
+    "arrival-3f0a9d9c8d9b5593b193": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "hamptons-stickers-platform-sneaker-black-multicolor-856420WHPSK1080",
+      "url": "https://www.balenciaga.com/en-us/hamptons-stickers-platform-sneaker-black-multicolor-856420WHPSK1080.html"
+    },
+    "arrival-ea4131794bbbba2ce4f6": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "adidas",
+      "style": "KJ0817",
+      "url": "https://www.adidas.com/us/hyperboost-edge-running-shoes/KJ0817.html"
+    },
+    "arrival-643329d2d091aba11c47": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "jet-sneaker-eggshell-872640WMRTN9191",
+      "url": "https://www.balenciaga.com/en-us/jet-sneaker-eggshell-872640WMRTN9191.html"
+    },
+    "arrival-afa5de9a02e3f36023fd": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "jet-sneaker-black-872640WMRTN1000",
+      "url": "https://www.balenciaga.com/en-us/jet-sneaker-black-872640WMRTN1000.html"
+    },
+    "arrival-f7f881a126e353269082": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150",
+      "url": "https://www.balenciaga.com/en-us/jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150.html"
+    },
+    "new-20260923-6b70459cbe7db07e": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Prada",
+      "style": "2EG452_3ZR1_F075A_F_G000",
+      "url": "https://www.prada.com/us/en/p/leather-sneakers/2EG452_3ZR1_F075A_F_G000"
+    },
+    "arrival-7a964c8a421b0f28982c": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Mizuno",
+      "style": "running-mizuno-sky-prime-mens",
+      "url": "https://usa.mizuno.com/running-mizuno-sky-prime-mens"
+    },
+    "arrival-e627321c8f84aa312e60": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Mizuno",
+      "style": "running-neo-vista-3-tsukiakari-pack",
+      "url": "https://usa.mizuno.com/running-neo-vista-3-tsukiakari-pack/"
+    },
+    "arrival-04d41c3a1ffd7fbc1907": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Mizuno",
+      "style": "running-neo-zen-2-tsukiakari-pack",
+      "url": "https://usa.mizuno.com/running-neo-zen-2-tsukiakari-pack/"
+    },
+    "arrival-a7ee568a2b5aeeb58d3b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Miu Miu",
+      "style": "5E165E_3ZS0_F0003_F_BD05",
+      "url": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-crocodile-embossed-calfskin-and-technical-fabric-sneakers/5E165E_3ZS0_F0003_F_BD05"
+    },
+    "arrival-6e5ca4c3be88a7635515": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Nike",
+      "style": "JA1020-411",
+      "url": "https://www.nike.com/t/air-max-90-little-kids-shoes-1wzwJM/JA1020-411"
+    },
+    "new-20260923-4819253c162ff664": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Nike",
+      "style": "HQ6364-017",
+      "url": "https://www.nike.com/t/air-max-95-recraft-little-kids-shoes-HX6aTG7t/HQ6364-017"
+    },
+    "arrival-9a48f1dae894448abf4b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Nike",
+      "style": "IR4333-200",
+      "url": "https://www.nike.com/t/air-max-moto-2k-womens-shoes-xfKLxDbe/IR4333-200"
+    },
+    "new-20260923-19918d424820ab2e": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Nike",
+      "style": "IM2541-400",
+      "url": "https://www.nike.com/t/pegasus-plus-2-mens-road-running-shoes-p9ePl101/IM2541-400"
+    },
+    "new-20260923-a0b21e5a752af27e": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Nike",
+      "style": "IM2543-004",
+      "url": "https://www.nike.com/t/pegasus-plus-2-womens-road-running-shoes-IApQlsjO/IM2543-004"
+    },
+    "arrival-a34874d9964c4ebffa9e": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Nike",
+      "style": "IQ7318-100",
+      "url": "https://www.nike.com/t/vomero-plus-x-distance-mens-road-running-shoes-TWnkdn7u/IQ7318-100"
+    },
+    "arrival-7501765132ade66b8ab4": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ASICS",
+      "style": "1012C077-400",
+      "url": "https://www.asics.com/us/en-us/novablast-6-lite-show/p/ANA_1012C077-400.html"
+    },
+    "new-20260923-9522a7640a5200af": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Bottega Veneta",
+      "style": "orbit-sneaker-black-silver-741357V2X401350",
+      "url": "https://www.bottegaveneta.com/en-us/orbit-sneaker-black-silver-741357V2X401350.html"
+    },
+    "new-20260923-2b6a7b3bf2e54c2c": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Bottega Veneta",
+      "style": "orbit-sneaker-bark-green-shamrock-741357V2X403801",
+      "url": "https://www.bottegaveneta.com/en-us/orbit-sneaker-bark-green-shamrock-741357V2X403801.html"
+    },
+    "arrival-631c1e6f71eb89f53940": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-ginger-chestnut",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-ginger-chestnut"
+    },
+    "arrival-c277c0db27d3432c64dd": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-lychee-blush",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-lychee-blush"
+    },
+    "arrival-2f6910850693f37529c1": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-boromir",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-boromir"
+    },
+    "new-20260923-543725d4a1749c4a": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-cloudine",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-cloudine"
+    },
+    "arrival-9a17252e2cdc92db0640": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-crimson",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-crimson"
+    },
+    "arrival-e7c1f93629735b678d53": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-dusk-indigo",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-dusk-indigo"
+    },
+    "arrival-43da4f96c638c3596fe6": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-fog-rock",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-fog-rock"
+    },
+    "arrival-d37e1446ce6172b6ea96": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-fudge",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-fudge"
+    },
+    "arrival-726f460277beaee2be8c": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-gandal",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-gandal"
+    },
+    "new-20260923-fb0055cbc6657935": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-home-court",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-home-court"
+    },
+    "arrival-7cb2670962f67f1123c1": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-hop-point",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-hop-point"
+    },
+    "arrival-98c0c5025c603830f71b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-mocha-mousse",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-mocha-mousse"
+    },
+    "arrival-bb9578816ffa46aa61ee": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-moonless-night",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-moonless-night"
+    },
+    "arrival-a26b3beab94c4e6f2408": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-noctra",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-noctra"
+    },
+    "arrival-6e17f7638c50c29f6185": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-pelican",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-pelican"
+    },
+    "arrival-3df1e6d5ba133894cd4c": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-percheron",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-percheron"
+    },
+    "arrival-35780e35f123458e9c4b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-pine-mist",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-pine-mist"
+    },
+    "arrival-cbe255c8a85fa0056e84": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-rio-de-janeiro",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-rio-de-janeiro"
+    },
+    "arrival-4656ca331d7586589a0c": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-shale",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-shale"
+    },
+    "arrival-1fa2ebd761fcafaa6be5": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-siphlophis",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-siphlophis"
+    },
+    "arrival-dbf6bf55320ab2db12aa": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-tyrian",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-tyrian"
+    },
+    "arrival-6326a87cde8010ea917f": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-men-s-shoes-verse",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-verse"
+    },
+    "arrival-3d938923976bc5e9ad9a": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-ginger-chestnut",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ginger-chestnut"
+    },
+    "arrival-61f016595fa76a5cbf7b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-lychee-blush",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-lychee-blush"
+    },
+    "arrival-521d94f0b5e7daa0b72e": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-boromir",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-boromir"
+    },
+    "new-20260923-dcfeec74baea92fc": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-cloudine",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-cloudine"
+    },
+    "arrival-c9a9a279f6164dfb4697": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-crimson",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-crimson"
+    },
+    "arrival-6e10cd359149161d6eb3": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-dusk-indigo",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-dusk-indigo"
+    },
+    "arrival-e80a3e7bbf058942e1fb": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-fog-rock",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-fog-rock"
+    },
+    "arrival-7ffb98f1e3c5e2247d3b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-fudge",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-fudge"
+    },
+    "arrival-17bf963e364a46c295f5": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-gandalf",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gandalf"
+    },
+    "new-20260923-0c4cdf0b3d5c2728": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-home-court",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-home-court"
+    },
+    "arrival-981c6dd34f6272458478": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-hop-point",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-hop-point"
+    },
+    "arrival-cb05bb153e5c16f50593": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-mocha-mousse",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-mocha-mousse"
+    },
+    "manual-981323eac05ed152": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-moonless-night",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-moonless-night"
+    },
+    "arrival-24332c2574af6e242f48": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-noctra",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-noctra"
+    },
+    "arrival-8fcdd535268d3c5d29b7": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-pelican",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-pelican"
+    },
+    "arrival-ec287137301a78574bea": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-percheron",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-percheron"
+    },
+    "arrival-1a73ae60ad373f6c6dd8": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-pine-mist",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-pine-mist"
+    },
+    "arrival-b7506711385a69044372": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-rio-de-janeiro",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-rio-de-janeiro"
+    },
+    "arrival-3d9ad88b97fb83d07045": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-shale",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-shale"
+    },
+    "arrival-519450b4db0c47dc0c0a": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-siphlophis",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-siphlophis"
+    },
+    "arrival-2b60f35b112f79aa3219": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-tyrian",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-tyrian"
+    },
+    "arrival-83a1a2c29a12b358420b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-light-training-nogi-women-s-shoes-verse",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-verse"
+    },
+    "new-20260923-9d4f3d8a63e71a0c": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-men-s-shoes-crimson-ink",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-crimson-ink"
+    },
+    "new-20260923-1fab5b6b78b13618": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-men-s-shoes-gray-moss",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-gray-moss"
+    },
+    "new-20260923-88c7f38c914647b8": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-men-s-shoes-imperial-purple",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-imperial-purple"
+    },
+    "new-20260923-5bb11cd3432a6894": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-men-s-shoes-silk-cyan",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-silk-cyan"
+    },
+    "arrival-cd8f4dd7458e9c30d364": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-pouching-men-s-shoes-analogue-glitch",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-analogue-glitch"
+    },
+    "arrival-61343cec96fd61f471a7": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-pouching-men-s-shoes-code-retro",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-code-retro"
+    },
+    "arrival-f1f956a5aeed6117a576": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-pouching-men-s-shoes-hologram-fade",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-hologram-fade"
+    },
+    "arrival-91a49281b69ba63591a8": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-pouching-men-s-shoes-raw-sample",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-raw-sample"
+    },
+    "arrival-5427eae4818b42c91725": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-pouching-men-s-shoes-time-traveler",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-time-traveler"
+    },
+    "arrival-b3582a461fa10b2cdc4b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-pouching-women-s-shoes-analogue-glitch",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-analogue-glitch"
+    },
+    "arrival-fc3a8b00f7ceb19390a2": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-pouching-women-s-shoes-code-retro",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-code-retro"
+    },
+    "arrival-44d185b9dcc0855912ef": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-pouching-women-s-shoes-hologram-fade",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-hologram-fade"
+    },
+    "arrival-dfef0a8ada3636aef5fa": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-pouching-women-s-shoes-raw-sample",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-raw-sample"
+    },
+    "arrival-36b667db36ff69699272": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-pouching-women-s-shoes-time-traveler",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-time-traveler"
+    },
+    "new-20260923-55d72bde31a66e94": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-women-s-shoes-crimson-ink",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-crimson-ink"
+    },
+    "new-20260923-9d29fb4817fa10e0": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-women-s-shoes-gray-moss",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-gray-moss"
+    },
+    "new-20260923-a8e13d96a0ce226a": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-women-s-shoes-imperial-purple",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-imperial-purple"
+    },
+    "xlsx-96e68f24261b0dec": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PANE",
+      "style": "pane-zephyr-training-women-s-shoes-silk-cyan",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-silk-cyan"
+    },
+    "new-20260923-8c2a30cee1296c64": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Prada",
+      "style": "4E3400_3LNG_F0YB4_F_G000",
+      "url": "https://www.prada.com/us/en/p/prada-americas-cup-metallic-leather-and-bike-fabric-sneakers/4E3400_3LNG_F0YB4_F_G000"
+    },
+    "new-20260923-2ed65254c51d1a39": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Prada",
+      "style": "2EE479_3ANK_F073E_F_G000",
+      "url": "https://www.prada.com/us/en/p/prax-suede-and-re-nylon-sneakers/2EE479_3ANK_F073E_F_G000"
+    },
+    "arrival-73c17ae4da4e28b24c0a": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Prada",
+      "style": "2EE479_3ANK_F0334_F_G000",
+      "url": "https://www.prada.com/us/en/p/prax-suede-and-re-nylon-sneakers/2EE479_3ANK_F0334_F_G000"
+    },
+    "arrival-0abc1b23a30517fbe321": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "radar-gradient-lines-sneaker-purple-grey-pink-white-865704WSTGL5159",
+      "url": "https://www.balenciaga.com/en-us/radar-gradient-lines-sneaker-purple-grey-pink-white-865704WSTGL5159.html"
+    },
+    "arrival-6e72609ece163f0a574b": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "radar-leather-sneaker-brown-black-865704WSTVL2010",
+      "url": "https://www.balenciaga.com/en-us/radar-leather-sneaker-brown-black-865704WSTVL2010.html"
+    },
+    "arrival-064c9b5b9885acfb8867": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "radar-velvety-sneaker-beige-brown-865704WSTSU9020",
+      "url": "https://www.balenciaga.com/en-us/radar-velvety-sneaker-beige-brown-865704WSTSU9020.html"
+    },
+    "arrival-23562a09abb98089619a": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "radar-velvety-sneaker-grey-off-white-brown-865704WSTSU1920",
+      "url": "https://www.balenciaga.com/en-us/radar-velvety-sneaker-grey-off-white-brown-865704WSTSU1920.html"
+    },
+    "new-20260923-32587c9dd88b787f": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Bottega Veneta",
+      "style": "shot-sneaker-bark-green-alabaster-A007BYV6VC09063",
+      "url": "https://www.bottegaveneta.com/en-us/shot-sneaker-bark-green-alabaster-A007BYV6VC09063.html"
+    },
+    "new-20260923-0cf5e92695d47286": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Bottega Veneta",
+      "style": "shot-sneaker-black-alabaster-A009YHV5U221003",
+      "url": "https://www.bottegaveneta.com/en-us/shot-sneaker-black-alabaster-A009YHV5U221003.html"
+    },
+    "arrival-3017c169576f738ec99a": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PUMA",
+      "style": "406998",
+      "url": "https://us.puma.com/us/en/pd/speedcat-dress-up-sneakers/406998?swatch=03"
+    },
+    "arrival-6db20bbff4eb4d0f2fab": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PUMA",
+      "style": "407829",
+      "url": "https://us.puma.com/us/en/pd/speedcat-dressed-sneakers/407829?swatch=01"
+    },
+    "arrival-16d7ba668cb3a9f55579": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PUMA",
+      "style": "398846",
+      "url": "https://us.puma.com/us/en/pd/speedcat-og-sneakers/398846?swatch=31"
+    },
+    "arrival-0c303242722f05ab20b7": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PUMA",
+      "style": "409453",
+      "url": "https://us.puma.com/us/en/pd/speedcat-og-ii-womens-sneakers/409453?swatch=05"
+    },
+    "arrival-2d5b6da8adace0d3dd3c": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "PUMA",
+      "style": "407257",
+      "url": "https://us.puma.com/us/en/pd/speedcat-patch-sneakers/407257?swatch=02"
+    },
+    "new-20260923-df9645f37b8eddcb": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Prada",
+      "style": "2EE487_3H0K_F0002_F_G000",
+      "url": "https://www.prada.com/us/en/p/speedrock-leather-and-mesh-fabric-sneakers/2EE487_3H0K_F0002_F_G000"
+    },
+    "arrival-7c19abdacd92360f2f0a": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Prada",
+      "style": "1E490O_3ZM0_F0007_F_005",
+      "url": "https://www.prada.com/us/en/p/speedrock-mesh-fabric-sneakers/1E490O_3ZM0_F0007_F_005"
+    },
+    "arrival-df6baad18926d4fa9919": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Prada",
+      "style": "1E490O_3ZM0_F0161_F_005",
+      "url": "https://www.prada.com/us/en/p/speedrock-mesh-fabric-sneakers/1E490O_3ZM0_F0161_F_005"
+    },
+    "arrival-a9090e8e1f7afd336173": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ASICS",
+      "style": "1013A177-101",
+      "url": "https://www.asics.com/us/en-us/superblast-3/p/ANA_1013A177-101.html"
+    },
+    "live-8d6b78366ba84f37": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ALOHAS",
+      "style": "tb-490-club-nylon-black-sneakers",
+      "url": "https://alohas.com/en-us/products/tb-490-club-nylon-black-sneakers"
+    },
+    "live-c805172140149a66": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ALOHAS",
+      "style": "tb-61-aera-cream-sneakers",
+      "url": "https://alohas.com/en-us/products/tb-61-aera-cream-sneakers"
+    },
+    "live-8dd4fbad2b988d31": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "ALOHAS",
+      "style": "tb-61-aera-dark-brown-sneakers",
+      "url": "https://alohas.com/en-us/products/tb-61-aera-dark-brown-sneakers"
+    },
+    "arrival-f61c08d4e0fa7918f486": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "track-trail-laces-sneaker-white-orange-blue-pink-800590WTRHK9745",
+      "url": "https://www.balenciaga.com/en-us/track-trail-laces-sneaker-white-orange-blue-pink-800590WTRHK9745.html"
+    },
+    "arrival-882dfe52be7da18abd80": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "track-zip-sneaker-black-542436WTKZM1018",
+      "url": "https://www.balenciaga.com/en-us/track-zip-sneaker-black-542436WTKZM1018.html"
+    },
+    "arrival-b5ecc94490f65f748f57": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Balenciaga",
+      "style": "triple-s.2-gradient-sneaker-purple-865851WTR2G6800",
+      "url": "https://www.balenciaga.com/en-us/triple-s.2-gradient-sneaker-purple-865851WTR2G6800.html"
+    },
+    "arrival-8281d17a77c293e5f2d4": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Mizuno",
+      "style": "running-wave-rider-30-tsukiakari-pack",
+      "url": "https://usa.mizuno.com/running-wave-rider-30-tsukiakari-pack/"
+    },
+    "new-20260923-65b0d4ef965c9856": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Gucci",
+      "style": "A00CRDAAHKK9060",
+      "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-gucci-ace-sneaker-p-A00CRDAAHKK9060"
+    },
+    "new-20260923-589a5631ce5ea791": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Gucci",
+      "style": "A00CRDAAHKK9059",
+      "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-gucci-ace-sneaker-p-A00CRDAAHKK9059"
+    },
+    "arrival-5481c13309894211603a": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Mizuno",
+      "style": "running-mizuno-sky-prime-womens",
+      "url": "https://usa.mizuno.com/running-mizuno-sky-prime-womens"
+    },
+    "arrival-2deaa22fd3d8d4ee6319": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Salomon",
+      "style": "L49212100",
+      "url": "https://www.salomon.com/en-us/product/xt-6-lg4239/L49212100"
+    },
+    "arrival-3abf1fa08940f82da21d": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Salomon",
+      "style": "L49306800",
+      "url": "https://www.salomon.com/en-us/product/xt-6-gore-tex-lg9333/L49306800"
+    },
+    "arrival-e1d48a82e161144b2260": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Axel Arigato",
+      "style": "zane-sneaker-f4357001",
+      "url": "https://axelarigato.com/men/footwear/zane/zane-sneaker-f4357001"
+    },
+    "arrival-6ff2fffe31598dc7cab8": {
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "brand": "Axel Arigato",
+      "style": "zane-sneaker-f4357002",
+      "url": "https://axelarigato.com/men/footwear/zane/zane-sneaker-f4357002"
+    }
+  }
+}

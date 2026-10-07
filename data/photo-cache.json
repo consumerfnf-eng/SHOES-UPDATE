@@ -516,6 +516,810 @@
       "sha256": "2a0be94f413b6ba191453690252f48e03255fe0ccbcab533514292d45a7b4db1",
       "sourceUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x1200/1784133070/A009Z4_AAG8V_9072_015_100_0000_Light-womens-drip-sneaker.jpg",
       "checkedAt": "2026-10-07T06:39:59.314Z"
+    },
+    "https://images.ctfassets.net/hnk2vsx53n6l/5MoF5B8hiyyqhwX8KhTXVb/c32fbf4060b187dd7f4fd7a7b0c406fc/94d1cafe953bd568db9208918b1e312d0011bd2d.png?fm=webp": {
+      "path": "/images/2c547ff1200771d457c1fb052401b178b0d13f539c717b4d443354a7d985af06.webp",
+      "sha256": "2c547ff1200771d457c1fb052401b178b0d13f539c717b4d443354a7d985af06",
+      "sourceUrl": "https://images.ctfassets.net/hnk2vsx53n6l/5MoF5B8hiyyqhwX8KhTXVb/c32fbf4060b187dd7f4fd7a7b0c406fc/94d1cafe953bd568db9208918b1e312d0011bd2d.png?fm=webp",
+      "checkedAt": "2026-10-07T08:52:28.193Z"
+    },
+    "https://images.ctfassets.net/hnk2vsx53n6l/6ZRGOil2XcQDHLYuWPJDNS/03a15dd8ef1ccab3828856fc3e071671/2bf3bbc3a301d556484a9043db8c1eff9cb3bcd3.png?fm=webp": {
+      "path": "/images/711876dbaf0f9173431b904002aabfa546eff0fc1b858b4eea5e2e38673a91d4.webp",
+      "sha256": "711876dbaf0f9173431b904002aabfa546eff0fc1b858b4eea5e2e38673a91d4",
+      "sourceUrl": "https://images.ctfassets.net/hnk2vsx53n6l/6ZRGOil2XcQDHLYuWPJDNS/03a15dd8ef1ccab3828856fc3e071671/2bf3bbc3a301d556484a9043db8c1eff9cb3bcd3.png?fm=webp",
+      "checkedAt": "2026-10-07T08:52:28.338Z"
+    },
+    "https://images.ctfassets.net/hnk2vsx53n6l/rvr0MulhjqgwT1Zuxx7Ie/89d7d8f91c72181bf7a505d00a4bc0b5/d80a6774439481359048e718bd35d2de4aee04be.png?fm=webp": {
+      "path": "/images/a7e1e01c574ff606e8e2668f52f7ac5a5094a62851c7dfc8f9da60def7373af7.webp",
+      "sha256": "a7e1e01c574ff606e8e2668f52f7ac5a5094a62851c7dfc8f9da60def7373af7",
+      "sourceUrl": "https://images.ctfassets.net/hnk2vsx53n6l/rvr0MulhjqgwT1Zuxx7Ie/89d7d8f91c72181bf7a505d00a4bc0b5/d80a6774439481359048e718bd35d2de4aee04be.png?fm=webp",
+      "checkedAt": "2026-10-07T08:52:28.452Z"
+    },
+    "https://nb.scene7.com/is/image/NB/u204l5yb_nb_02_i?$pdpflexf22x$&wid=726&hei=726": {
+      "path": "/images/3b0416d54dd5e5a9b42ed6899a64032968c70f3e278681b6c4440f1ab59d8e67.webp",
+      "sha256": "3b0416d54dd5e5a9b42ed6899a64032968c70f3e278681b6c4440f1ab59d8e67",
+      "sourceUrl": "https://nb.scene7.com/is/image/NB/u204l5yb_nb_02_i?$pdpflexf22x$&wid=726&hei=726",
+      "checkedAt": "2026-10-07T08:52:28.699Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/d5da9458-e1b9-42e4-992f-dd2fc7d382d2/Large/734731W3SDT1081_X.jpg?v=2": {
+      "path": "/images/ed467a76cbb6db134ab05957dd936192ca278dd28dc2d7b92d9d4625072b7878.jpg",
+      "sha256": "ed467a76cbb6db134ab05957dd936192ca278dd28dc2d7b92d9d4625072b7878",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/d5da9458-e1b9-42e4-992f-dd2fc7d382d2/Large/734731W3SDT1081_X.jpg?v=2",
+      "checkedAt": "2026-10-07T08:52:28.763Z"
+    },
+    "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200": {
+      "path": "/images/983bdea5cf8c3cefb96ab84b07fc8c5c63340537ab32682bc4dcd8fc828aeeb5.jpg",
+      "sha256": "983bdea5cf8c3cefb96ab84b07fc8c5c63340537ab32682bc4dcd8fc828aeeb5",
+      "sourceUrl": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
+      "checkedAt": "2026-10-07T08:52:28.918Z"
+    },
+    "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/7fbc7763ad5049dcba9e078156375ac6_9366/ADIZERO_ADIOS_PRO_5_Running_Shoes_Pink_KI8294_00_plp_standard.jpg": {
+      "path": "/images/86e3adae0bd115a2740437c1ca79b7cf7522d44e7ba97e5b66ccfacc8450b2a0.jpg",
+      "sha256": "86e3adae0bd115a2740437c1ca79b7cf7522d44e7ba97e5b66ccfacc8450b2a0",
+      "sourceUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/7fbc7763ad5049dcba9e078156375ac6_9366/ADIZERO_ADIOS_PRO_5_Running_Shoes_Pink_KI8294_00_plp_standard.jpg",
+      "checkedAt": "2026-10-07T08:52:28.989Z"
+    },
+    "https://nb.scene7.com/is/image/NB/w10807pk_nb_02_i?$pdpflexf22x$&wid=726&hei=726": {
+      "path": "/images/d23a56ebcb4bf94968ed9571c5ed8d64c25f5c43b857f0ac7016bb257010076d.webp",
+      "sha256": "d23a56ebcb4bf94968ed9571c5ed8d64c25f5c43b857f0ac7016bb257010076d",
+      "sourceUrl": "https://nb.scene7.com/is/image/NB/w10807pk_nb_02_i?$pdpflexf22x$&wid=726&hei=726",
+      "checkedAt": "2026-10-07T08:52:29.018Z"
+    },
+    "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d8e0f841b9a14a75807f270e64e6a0b2_9366/ADIZERO_ADIOS_PRO_5_Running_Shoes_Pink_KI8293_00_plp_standard.jpg": {
+      "path": "/images/c49d155f3b964380dffec9db0f75e0dbbd774caf3a246212c3a30132f09bd315.jpg",
+      "sha256": "c49d155f3b964380dffec9db0f75e0dbbd774caf3a246212c3a30132f09bd315",
+      "sourceUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d8e0f841b9a14a75807f270e64e6a0b2_9366/ADIZERO_ADIOS_PRO_5_Running_Shoes_Pink_KI8293_00_plp_standard.jpg",
+      "checkedAt": "2026-10-07T08:52:29.029Z"
+    },
+    "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/55b9de0c6a2945129391ca37aa0520e7_9366/Adizero_EVO_SL_Woven_Running_Shoes_White_KJ4984_00_plp_standard.jpg": {
+      "path": "/images/ba021d1cb1781ab3a4461339d8f2548f3e8e0dea129947f7b9de6bceb11aefe0.webp",
+      "sha256": "ba021d1cb1781ab3a4461339d8f2548f3e8e0dea129947f7b9de6bceb11aefe0",
+      "sourceUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/55b9de0c6a2945129391ca37aa0520e7_9366/Adizero_EVO_SL_Woven_Running_Shoes_White_KJ4984_00_plp_standard.jpg",
+      "checkedAt": "2026-10-07T08:52:29.051Z"
+    },
+    "https://nb.scene7.com/is/image/NB/u530scw_nb_02_i?$pdpflexf22x$&wid=726&hei=726": {
+      "path": "/images/dbdd80698039cf188f0855859fe25d479451efb60c276dccb73293b56c0ab250.webp",
+      "sha256": "dbdd80698039cf188f0855859fe25d479451efb60c276dccb73293b56c0ab250",
+      "sourceUrl": "https://nb.scene7.com/is/image/NB/u530scw_nb_02_i?$pdpflexf22x$&wid=726&hei=726",
+      "checkedAt": "2026-10-07T08:52:29.072Z"
+    },
+    "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/b25d5e56-5738-5f1b-baf1-0f09c8f38373/F4602005_CATEGORY.jpg?format=xl&outputFormat=webp": {
+      "path": "/images/7e82f861cced27682196ba3bbf642b7c445f82a15c30c134fe318de26f6ec07f.webp",
+      "sha256": "7e82f861cced27682196ba3bbf642b7c445f82a15c30c134fe318de26f6ec07f",
+      "sourceUrl": "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/b25d5e56-5738-5f1b-baf1-0f09c8f38373/F4602005_CATEGORY.jpg?format=xl&outputFormat=webp",
+      "checkedAt": "2026-10-07T08:52:29.178Z"
+    },
+    "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/fa1bebbc-c25d-5190-bff4-d98add7d6412/F4602002_CATEGORY.jpg?format=xl&outputFormat=webp": {
+      "path": "/images/8dacbdbd738249b62f70649e021613934cb192d168b57f3172f0731e6609cb03.webp",
+      "sha256": "8dacbdbd738249b62f70649e021613934cb192d168b57f3172f0731e6609cb03",
+      "sourceUrl": "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/fa1bebbc-c25d-5190-bff4-d98add7d6412/F4602002_CATEGORY.jpg?format=xl&outputFormat=webp",
+      "checkedAt": "2026-10-07T08:52:29.211Z"
+    },
+    "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5378301c-ad92-4da1-a06e-2b6faa5e0d1b/WMNS+AIR+JORDAN+1+MID+SE.png": {
+      "path": "/images/b00d63460509e910d0ce2054402f48295787c182c68637a5129a4cdd3fe2cd05.webp",
+      "sha256": "b00d63460509e910d0ce2054402f48295787c182c68637a5129a4cdd3fe2cd05",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5378301c-ad92-4da1-a06e-2b6faa5e0d1b/WMNS+AIR+JORDAN+1+MID+SE.png",
+      "checkedAt": "2026-10-07T08:52:29.216Z"
+    },
+    "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/2ec62544-96e9-5d64-b53f-5ed5fee9659b/F4602003_CATEGORY.jpg?format=xl&outputFormat=webp": {
+      "path": "/images/e2f595759d8d70dcfbdf518d860da2dd91beb8a63655d627a6a8f8b62c329ba4.webp",
+      "sha256": "e2f595759d8d70dcfbdf518d860da2dd91beb8a63655d627a6a8f8b62c329ba4",
+      "sourceUrl": "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/2ec62544-96e9-5d64-b53f-5ed5fee9659b/F4602003_CATEGORY.jpg?format=xl&outputFormat=webp",
+      "checkedAt": "2026-10-07T08:52:29.225Z"
+    },
+    "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/9c8af770-25ef-50bc-8253-2fe9367331b7/F4602006_CATEGORY.jpg?format=xl&outputFormat=webp": {
+      "path": "/images/136c6a648bffeab26c1a1bb2898f1fed9eb14688e417a34573cf6e2965e8ce03.webp",
+      "sha256": "136c6a648bffeab26c1a1bb2898f1fed9eb14688e417a34573cf6e2965e8ce03",
+      "sourceUrl": "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/9c8af770-25ef-50bc-8253-2fe9367331b7/F4602006_CATEGORY.jpg?format=xl&outputFormat=webp",
+      "checkedAt": "2026-10-07T08:52:29.242Z"
+    },
+    "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/1e6d3abf-75a5-51b4-83c2-d9781ae42b21/F4602004_CATEGORY.jpg?format=xl&outputFormat=webp": {
+      "path": "/images/54b176ea80765b4b2e9f5f0867da656ae21ff856766106c7fad1b5ff748ffd85.webp",
+      "sha256": "54b176ea80765b4b2e9f5f0867da656ae21ff856766106c7fad1b5ff748ffd85",
+      "sourceUrl": "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/1e6d3abf-75a5-51b4-83c2-d9781ae42b21/F4602004_CATEGORY.jpg?format=xl&outputFormat=webp",
+      "checkedAt": "2026-10-07T08:52:29.278Z"
+    },
+    "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE490/2HKDF0316/2EE490_2HKD_F0316_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg": {
+      "path": "/images/bc8178d78b10a77da5238ffe15c88d893b307ace125b363880e633da138944e6.webp",
+      "sha256": "bc8178d78b10a77da5238ffe15c88d893b307ace125b363880e633da138944e6",
+      "sourceUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE490/2HKDF0316/2EE490_2HKD_F0316_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg",
+      "checkedAt": "2026-10-07T08:52:29.297Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C075_400_SL_LT_GLB-1?$sfcc-product$": {
+      "path": "/images/7e1590d4abf457af0eefd9716edd7ae165c1119a919f4ee5d2dc0c536aa2ba9e.webp",
+      "sha256": "7e1590d4abf457af0eefd9716edd7ae165c1119a919f4ee5d2dc0c536aa2ba9e",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C075_400_SL_LT_GLB-1?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:29.342Z"
+    },
+    "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE364/3LJ6F0002/2EE364_3LJ6_F0002_F_D003_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg": {
+      "path": "/images/0bd58304823cd7f28da08f528f3fdd372cd2cf05d41e591f4e6e9170325b7122.webp",
+      "sha256": "0bd58304823cd7f28da08f528f3fdd372cd2cf05d41e591f4e6e9170325b7122",
+      "sourceUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE364/3LJ6F0002/2EE364_3LJ6_F0002_F_D003_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg",
+      "checkedAt": "2026-10-07T08:52:29.420Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C315_400_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/51c3287fb0747b1879ea0ee1b0b34d7bde034ffa27c60dc3fcff502feeb7c6d3.webp",
+      "sha256": "51c3287fb0747b1879ea0ee1b0b34d7bde034ffa27c60dc3fcff502feeb7c6d3",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C315_400_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:29.446Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C073_400_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/41722d73ac205b643a2ecc169d903cccfbb56ae5c7ad0b61e91ee903b063f614.webp",
+      "sha256": "41722d73ac205b643a2ecc169d903cccfbb56ae5c7ad0b61e91ee903b063f614",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C073_400_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:29.483Z"
+    },
+    "https://images.asics.com/is/image/asics/1183C471_001_SR_RT_GLB?qlt=80&wid=1024&hei=768&bgc=255,255,255&resMode=bisharp": {
+      "path": "/images/b03fa540919ab4b3aef0fd674ce9c58c4b1551a52ec3642eda1480d8c1e84409.webp",
+      "sha256": "b03fa540919ab4b3aef0fd674ce9c58c4b1551a52ec3642eda1480d8c1e84409",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1183C471_001_SR_RT_GLB?qlt=80&wid=1024&hei=768&bgc=255,255,255&resMode=bisharp",
+      "checkedAt": "2026-10-07T08:52:29.519Z"
+    },
+    "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/37637feb-d08f-42cc-b2b4-4a4bc3483ba3/AIR+JORDAN+1+RTR+HIGH+OG+%28GS%29.png": {
+      "path": "/images/3da13187dbb61b7854e6af676a2ec06d8bc37294cb01ec47abdf0d747a85abd0.webp",
+      "sha256": "3da13187dbb61b7854e6af676a2ec06d8bc37294cb01ec47abdf0d747a85abd0",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/37637feb-d08f-42cc-b2b4-4a4bc3483ba3/AIR+JORDAN+1+RTR+HIGH+OG+%28GS%29.png",
+      "checkedAt": "2026-10-07T08:52:29.531Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C167_101_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/3ca419e620d289e91857ecf166d92a5fdfbb74475267d9ad5e992c0e96da9872.webp",
+      "sha256": "3ca419e620d289e91857ecf166d92a5fdfbb74475267d9ad5e992c0e96da9872",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C167_101_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:29.534Z"
+    },
+    "https://images.asics.com/is/image/asics/1183C471_002_SR_RT_GLB?qlt=80&wid=1024&hei=768&bgc=255,255,255&resMode=bisharp": {
+      "path": "/images/32758af875ff1e9f5223c5fc7239342ba50c5e4eade13175b4a14ed83d884a21.webp",
+      "sha256": "32758af875ff1e9f5223c5fc7239342ba50c5e4eade13175b4a14ed83d884a21",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1183C471_002_SR_RT_GLB?qlt=80&wid=1024&hei=768&bgc=255,255,255&resMode=bisharp",
+      "checkedAt": "2026-10-07T08:52:29.563Z"
+    },
+    "https://images.asics.com/is/image/asics/1183C471_200_SR_RT_GLB?qlt=80&wid=1024&hei=768&bgc=255,255,255&resMode=bisharp": {
+      "path": "/images/4f97375335c3fa73a52885cbdf0a5c8ed21618f2150c8f0f14bb4b024420d524.webp",
+      "sha256": "4f97375335c3fa73a52885cbdf0a5c8ed21618f2150c8f0f14bb4b024420d524",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1183C471_200_SR_RT_GLB?qlt=80&wid=1024&hei=768&bgc=255,255,255&resMode=bisharp",
+      "checkedAt": "2026-10-07T08:52:29.570Z"
+    },
+    "https://images.asics.com/is/image/asics/1183C471_250_SR_RT_GLB?qlt=80&wid=1024&hei=768&bgc=255,255,255&resMode=bisharp": {
+      "path": "/images/4044c3cfec8f76fff1777e06befc626e32c7031eea0f5d2b6a527245e924b269.webp",
+      "sha256": "4044c3cfec8f76fff1777e06befc626e32c7031eea0f5d2b6a527245e924b269",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1183C471_250_SR_RT_GLB?qlt=80&wid=1024&hei=768&bgc=255,255,255&resMode=bisharp",
+      "checkedAt": "2026-10-07T08:52:29.579Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C314_400_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/e0333710304755ea5a9dfbf5362bda57a8ef5d591ba82508b4aaef9e9fe88875.jpg",
+      "sha256": "e0333710304755ea5a9dfbf5362bda57a8ef5d591ba82508b4aaef9e9fe88875",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C314_400_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:29.588Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C074_400_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/1f687844a0e8031367cf0fc648bb979ce6b69665789b174b86436288a49dc67a.webp",
+      "sha256": "1f687844a0e8031367cf0fc648bb979ce6b69665789b174b86436288a49dc67a",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C074_400_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:29.627Z"
+    },
+    "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/33077e7ea1e74eb1a387b36208d65af4_9366/HYPERBOOST_EDGE_Running_Shoes_Grey_KJ0817_HM1.jpg": {
+      "path": "/images/af6fa4076d1ccb78987fe92b5f58cde07ed20e4be3f7a955137316e8a31bd7aa.webp",
+      "sha256": "af6fa4076d1ccb78987fe92b5f58cde07ed20e4be3f7a955137316e8a31bd7aa",
+      "sourceUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/33077e7ea1e74eb1a387b36208d65af4_9366/HYPERBOOST_EDGE_Running_Shoes_Grey_KJ0817_HM1.jpg",
+      "checkedAt": "2026-10-07T08:52:29.657Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/dc90d86c-529e-4951-a156-2dd7cc102064/Large/856420WHPSK1080_X.jpg?v=1": {
+      "path": "/images/7d04fd91181f1d93a0b071557129bf0174190ded9c32e2272ff467c1bd60e6bc.jpg",
+      "sha256": "7d04fd91181f1d93a0b071557129bf0174190ded9c32e2272ff467c1bd60e6bc",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/dc90d86c-529e-4951-a156-2dd7cc102064/Large/856420WHPSK1080_X.jpg?v=1",
+      "checkedAt": "2026-10-07T08:52:29.683Z"
+    },
+    "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/8M2F05Q7/5E428E_8M2_F05Q7_F_DD05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.2400.2400.jpg": {
+      "path": "/images/b2c0670ae993525094625658c1c3d81c29367561af4e89cc5682b6527b552ece.webp",
+      "sha256": "b2c0670ae993525094625658c1c3d81c29367561af4e89cc5682b6527b552ece",
+      "sourceUrl": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/8M2F05Q7/5E428E_8M2_F05Q7_F_DD05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.2400.2400.jpg",
+      "checkedAt": "2026-10-07T08:52:29.722Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/05e23ca5-3c21-439a-95a9-02ca3c1895ea/Large/872640WMRTN1000_X.jpg?v=1": {
+      "path": "/images/510effbe094b4f80dca104a96d1b042a46298106e209faad79c71b55c654c159.jpg",
+      "sha256": "510effbe094b4f80dca104a96d1b042a46298106e209faad79c71b55c654c159",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/05e23ca5-3c21-439a-95a9-02ca3c1895ea/Large/872640WMRTN1000_X.jpg?v=1",
+      "checkedAt": "2026-10-07T08:52:29.761Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/09c767c6-612c-4040-ac42-6a19aa093ccc/Large/872640WMRTN9191_X.jpg?v=1": {
+      "path": "/images/2fcd9dad00e0770f117a0e2c5efd6e98de91ddec2ade710fffe4f532a4fd51d5.jpg",
+      "sha256": "2fcd9dad00e0770f117a0e2c5efd6e98de91ddec2ade710fffe4f532a4fd51d5",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/09c767c6-612c-4040-ac42-6a19aa093ccc/Large/872640WMRTN9191_X.jpg?v=1",
+      "checkedAt": "2026-10-07T08:52:29.903Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/22ee9730-342a-417b-b578-2166c91198ee/Large/872640WMRTN9150_X.jpg?v=1": {
+      "path": "/images/271543d1f22a5a822ddac45343c431adb2cada226fec8f0b11b47be0fab6ae8a.jpg",
+      "sha256": "271543d1f22a5a822ddac45343c431adb2cada226fec8f0b11b47be0fab6ae8a",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/22ee9730-342a-417b-b578-2166c91198ee/Large/872640WMRTN9150_X.jpg?v=1",
+      "checkedAt": "2026-10-07T08:52:29.978Z"
+    },
+    "https://www.prada.com/content/dam/pradabkg_products/2/2EG/2EG452/3ZR1F075A/2EG452_3ZR1_F075A_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg": {
+      "path": "/images/c91b3cd3afa87a20be32663c23e3423f88aed1a3b58476b9adb7533797150e1b.webp",
+      "sha256": "c91b3cd3afa87a20be32663c23e3423f88aed1a3b58476b9adb7533797150e1b",
+      "sourceUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2EG/2EG452/3ZR1F075A/2EG452_3ZR1_F075A_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg",
+      "checkedAt": "2026-10-07T08:52:30.082Z"
+    },
+    "https://cdn11.bigcommerce.com/s-x6b2pdd9ey/product_images/attribute_rule_images/212271_source_1790770291.jpg": {
+      "path": "/images/14b7850c15d971ecd5e9b757b81574a20568e859ee4c225477f3578b80f8f26c.webp",
+      "sha256": "14b7850c15d971ecd5e9b757b81574a20568e859ee4c225477f3578b80f8f26c",
+      "sourceUrl": "https://cdn11.bigcommerce.com/s-x6b2pdd9ey/product_images/attribute_rule_images/212271_source_1790770291.jpg",
+      "checkedAt": "2026-10-07T08:52:30.206Z"
+    },
+    "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E165E/3ZS0F0003/5E165E_3ZS0_F0003_F_BD05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.2400.2400.jpg": {
+      "path": "/images/9dcbe0087bad8ab7d792914b58780c71657bbed9c557e740c8956965a1c0871b.webp",
+      "sha256": "9dcbe0087bad8ab7d792914b58780c71657bbed9c557e740c8956965a1c0871b",
+      "sourceUrl": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E165E/3ZS0F0003/5E165E_3ZS0_F0003_F_BD05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.2400.2400.jpg",
+      "checkedAt": "2026-10-07T08:52:30.320Z"
+    },
+    "https://cdn11.bigcommerce.com/s-x6b2pdd9ey/product_images/attribute_rule_images/212167_source_1790770288.jpg": {
+      "path": "/images/58b34439c1876cf844dd396a22b1eacb315262249be7cb8333dfa7fcdfa744e0.webp",
+      "sha256": "58b34439c1876cf844dd396a22b1eacb315262249be7cb8333dfa7fcdfa744e0",
+      "sourceUrl": "https://cdn11.bigcommerce.com/s-x6b2pdd9ey/product_images/attribute_rule_images/212167_source_1790770288.jpg",
+      "checkedAt": "2026-10-07T08:52:30.328Z"
+    },
+    "https://cdn11.bigcommerce.com/s-x6b2pdd9ey/product_images/attribute_rule_images/212147_source_1790770288.jpg": {
+      "path": "/images/ff68b9b8fdbf21182b55efd2e89b6e998a5c35bfa557270449a929643bd0f46e.webp",
+      "sha256": "ff68b9b8fdbf21182b55efd2e89b6e998a5c35bfa557270449a929643bd0f46e",
+      "sourceUrl": "https://cdn11.bigcommerce.com/s-x6b2pdd9ey/product_images/attribute_rule_images/212147_source_1790770288.jpg",
+      "checkedAt": "2026-10-07T08:52:30.366Z"
+    },
+    "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f6d23b31-8313-4852-92f8-cb6b34ec2861/AIR+MAX+95+RECRAFT+LTR+%28PS%29.png": {
+      "path": "/images/f0f1583825bc896a8570b639398e48dc42129670cae3d571e7fa4d222161ae61.webp",
+      "sha256": "f0f1583825bc896a8570b639398e48dc42129670cae3d571e7fa4d222161ae61",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f6d23b31-8313-4852-92f8-cb6b34ec2861/AIR+MAX+95+RECRAFT+LTR+%28PS%29.png",
+      "checkedAt": "2026-10-07T08:52:30.441Z"
+    },
+    "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/71f19357-2769-48fc-a8d1-5dd4e4fc2848/NIKE+PEGASUS+PLUS+2.png": {
+      "path": "/images/5055f91d9d62d779e46a34649593291b4145e549a628201faf74b652bf3dc295.webp",
+      "sha256": "5055f91d9d62d779e46a34649593291b4145e549a628201faf74b652bf3dc295",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/71f19357-2769-48fc-a8d1-5dd4e4fc2848/NIKE+PEGASUS+PLUS+2.png",
+      "checkedAt": "2026-10-07T08:52:30.564Z"
+    },
+    "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/834ff104-16fc-4def-8d34-4ab58b6f3964/W+NIKE+AIR+MAX+MOTO+2K.png": {
+      "path": "/images/8f369013b23a3b031f2982a73e3411b490baff89c18a026d0e71b206957a58d8.webp",
+      "sha256": "8f369013b23a3b031f2982a73e3411b490baff89c18a026d0e71b206957a58d8",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/834ff104-16fc-4def-8d34-4ab58b6f3964/W+NIKE+AIR+MAX+MOTO+2K.png",
+      "checkedAt": "2026-10-07T08:52:30.581Z"
+    },
+    "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/89aa372c-b534-4ebb-8408-a52ae17753b3/W+NIKE+PEGASUS+PLUS+2.png": {
+      "path": "/images/d2bddcaf4903fba3808bbc62db02ec688b880ecfb9df5b3fbccd4fc6eb3d1163.webp",
+      "sha256": "d2bddcaf4903fba3808bbc62db02ec688b880ecfb9df5b3fbccd4fc6eb3d1163",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/89aa372c-b534-4ebb-8408-a52ae17753b3/W+NIKE+PEGASUS+PLUS+2.png",
+      "checkedAt": "2026-10-07T08:52:30.680Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C077_400_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/75697a11e2edd97504c83b194cbf69b9e13ecf9f2402c423fa77305c38b36714.jpg",
+      "sha256": "75697a11e2edd97504c83b194cbf69b9e13ecf9f2402c423fa77305c38b36714",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C077_400_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:30.772Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/23dc3d20-123a-4c99-adc9-45f5268fe3f4/Large/741357V2X401350_A.jpg?v=2": {
+      "path": "/images/aa3cee61247f13a6080cda335d60a638904d5fa731259dadee6a9dcbbdc0643c.jpg",
+      "sha256": "aa3cee61247f13a6080cda335d60a638904d5fa731259dadee6a9dcbbdc0643c",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/23dc3d20-123a-4c99-adc9-45f5268fe3f4/Large/741357V2X401350_A.jpg?v=2",
+      "checkedAt": "2026-10-07T08:52:30.987Z"
+    },
+    "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/37e6b608-f7b5-41d8-b1fd-17f304b66ae2/NIKE+AIR+MAX+90+PS.png": {
+      "path": "/images/0cfe337d02f57f52fb0b0ada695c9458b62f654eb9c321cfaf1df7252feb7129.webp",
+      "sha256": "0cfe337d02f57f52fb0b0ada695c9458b62f654eb9c321cfaf1df7252feb7129",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/37e6b608-f7b5-41d8-b1fd-17f304b66ae2/NIKE+AIR+MAX+90+PS.png",
+      "checkedAt": "2026-10-07T08:52:31.026Z"
+    },
+    "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9f031a35-df09-4164-8909-2f6bc1b4c5c7/NIKE+VOMERO+PLUS+X+DISTANCE.png": {
+      "path": "/images/7508a16a92b063fea16d559ed541cf9ffcdf2d4cdfdc6290e6c660ae0f978a71.webp",
+      "sha256": "7508a16a92b063fea16d559ed541cf9ffcdf2d4cdfdc6290e6c660ae0f978a71",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9f031a35-df09-4164-8909-2f6bc1b4c5c7/NIKE+VOMERO+PLUS+X+DISTANCE.png",
+      "checkedAt": "2026-10-07T08:52:31.070Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/1_65e14f21-1eaf-44ba-873d-6651e83b2a67.jpg?v=1789547622&width=2000": {
+      "path": "/images/35d43e594b40ae3a2631cb50b71237d751a0ac390f02aa77e0d522fc2db1d01b.webp",
+      "sha256": "35d43e594b40ae3a2631cb50b71237d751a0ac390f02aa77e0d522fc2db1d01b",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/1_65e14f21-1eaf-44ba-873d-6651e83b2a67.jpg?v=1789547622&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.112Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/1_45eeed76-6f77-40b6-b287-7624fe4eb8fc.jpg?v=1789549195&width=2000": {
+      "path": "/images/f83df97e0bc9c8b42ea4c9212b03959498af7e4c0318b05a9b0f23f9a95a5b9e.webp",
+      "sha256": "f83df97e0bc9c8b42ea4c9212b03959498af7e4c0318b05a9b0f23f9a95a5b9e",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/1_45eeed76-6f77-40b6-b287-7624fe4eb8fc.jpg?v=1789549195&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.122Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/1_8dcf8142-642f-4715-8741-213296aac9bd.jpg?v=1790820442&width=2000": {
+      "path": "/images/a56c8a9678ab9a938a5f1ffc292691f3e17c12494d3111d975a657f4dbe12ec4.webp",
+      "sha256": "a56c8a9678ab9a938a5f1ffc292691f3e17c12494d3111d975a657f4dbe12ec4",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/1_8dcf8142-642f-4715-8741-213296aac9bd.jpg?v=1790820442&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.134Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5439-1.jpg?v=1779805773&width=2000": {
+      "path": "/images/568fc428a1a60acdc15b3614d378ac6b49a207d76df502aa8c43192bdc169515.webp",
+      "sha256": "568fc428a1a60acdc15b3614d378ac6b49a207d76df502aa8c43192bdc169515",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5439-1.jpg?v=1779805773&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.149Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5192.jpg?v=1779805793&width=2000": {
+      "path": "/images/bb030b666525f1f6658831d3784645dc6153e6691f19d0373ecec411ed62366a.webp",
+      "sha256": "bb030b666525f1f6658831d3784645dc6153e6691f19d0373ecec411ed62366a",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5192.jpg?v=1779805793&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.161Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5366_4b51877a-cee4-4fc2-bbad-3015b354cd98.jpg?v=1779805582&width=2000": {
+      "path": "/images/7644387469a6d243f7a6489df440d1cdf8ac2a5c41aab0f81956e0ab42e59b6b.webp",
+      "sha256": "7644387469a6d243f7a6489df440d1cdf8ac2a5c41aab0f81956e0ab42e59b6b",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5366_4b51877a-cee4-4fc2-bbad-3015b354cd98.jpg?v=1779805582&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.176Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5368_1720c64c-7843-48bd-9549-4d3606b9f21d.jpg?v=1779805544&width=2000": {
+      "path": "/images/de77cea3393c600ddcdaeee537824fc238d47bdde7dc146457222128654841c9.webp",
+      "sha256": "de77cea3393c600ddcdaeee537824fc238d47bdde7dc146457222128654841c9",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5368_1720c64c-7843-48bd-9549-4d3606b9f21d.jpg?v=1779805544&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.191Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5389.jpg?v=1779806079&width=2000": {
+      "path": "/images/01f61f2d1dce8cadbb29edbc7e573c6544273324d7d45994e2cf56a1e544b5c2.webp",
+      "sha256": "01f61f2d1dce8cadbb29edbc7e573c6544273324d7d45994e2cf56a1e544b5c2",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5389.jpg?v=1779806079&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.208Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/1_83524d48-9ad4-4c83-8d95-31be6d75466a.jpg?v=1790819923&width=2000": {
+      "path": "/images/52729d46480e24ffc69a0eb89fc46b1216ca87947e053e6a439688677e228c2b.webp",
+      "sha256": "52729d46480e24ffc69a0eb89fc46b1216ca87947e053e6a439688677e228c2b",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/1_83524d48-9ad4-4c83-8d95-31be6d75466a.jpg?v=1790819923&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.218Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5441_f7dbf8e9-e478-4299-b139-8a2e1371211a.jpg?v=1779805603&width=2000": {
+      "path": "/images/c4fd0593fc80c6684d4a48c642ad22a528275d29704eb53e0a8ff96ab5a848d3.webp",
+      "sha256": "c4fd0593fc80c6684d4a48c642ad22a528275d29704eb53e0a8ff96ab5a848d3",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5441_f7dbf8e9-e478-4299-b139-8a2e1371211a.jpg?v=1779805603&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.235Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5395_ad27d349-ae59-4723-b390-a8d742b22199.jpg?v=1779805618&width=2000": {
+      "path": "/images/2082c1ffb88cea4d18e07f788609da353e958543d7f94dbcbb7a0520d4819553.webp",
+      "sha256": "2082c1ffb88cea4d18e07f788609da353e958543d7f94dbcbb7a0520d4819553",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5395_ad27d349-ae59-4723-b390-a8d742b22199.jpg?v=1779805618&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.237Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5337_8d082c08-c39c-4405-9ed9-23d2283b11b1.jpg?v=1779805720&width=2000": {
+      "path": "/images/cae16115d5c5b7bbff88b1b23164c6ccf5ce84469e954b982c65824c033e7ad5.webp",
+      "sha256": "cae16115d5c5b7bbff88b1b23164c6ccf5ce84469e954b982c65824c033e7ad5",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5337_8d082c08-c39c-4405-9ed9-23d2283b11b1.jpg?v=1779805720&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.262Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5339_b85e8029-86ad-42be-97b7-806458241019.jpg?v=1779805706&width=2000": {
+      "path": "/images/d2df9d38a76beabba8b74b9c61aecac9fc00b66d83bfba336abf405d4ae1709f.webp",
+      "sha256": "d2df9d38a76beabba8b74b9c61aecac9fc00b66d83bfba336abf405d4ae1709f",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5339_b85e8029-86ad-42be-97b7-806458241019.jpg?v=1779805706&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.276Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5440.jpg?v=1779805751&width=2000": {
+      "path": "/images/c73762db70bd654c236c86607e09b899a9e6b2469fda3f43e41af34730982f9f.webp",
+      "sha256": "c73762db70bd654c236c86607e09b899a9e6b2469fda3f43e41af34730982f9f",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5440.jpg?v=1779805751&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.291Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5198_bb2a219b-3815-4628-bc6a-5760ccf43468.jpg?v=1786955474&width=2000": {
+      "path": "/images/f306f575f1e653a197825b9643288e037217555c04e61f2b51940b4e98baf953.webp",
+      "sha256": "f306f575f1e653a197825b9643288e037217555c04e61f2b51940b4e98baf953",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5198_bb2a219b-3815-4628-bc6a-5760ccf43468.jpg?v=1786955474&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.303Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/1_a9b5bf44-ae95-4e32-a1b2-5f323808b691.jpg?v=1786525714&width=2000": {
+      "path": "/images/145c6640bb0cd4c174a82c42b9a69f4c16d16766d8ad73eae76dc330edc208ab.webp",
+      "sha256": "145c6640bb0cd4c174a82c42b9a69f4c16d16766d8ad73eae76dc330edc208ab",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/1_a9b5bf44-ae95-4e32-a1b2-5f323808b691.jpg?v=1786525714&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.326Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5367_0c5f6161-561f-48cc-b94f-9739932478ed.jpg?v=1779805567&width=2000": {
+      "path": "/images/1d8e46a37a35e667fcb19362ee93bcdfdbee74e24ddbe6b727662193c9c2c7bd.webp",
+      "sha256": "1d8e46a37a35e667fcb19362ee93bcdfdbee74e24ddbe6b727662193c9c2c7bd",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5367_0c5f6161-561f-48cc-b94f-9739932478ed.jpg?v=1779805567&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.338Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/0c803fdb-d7fb-4cad-b9d5-91784fd858ff/Large/741357V2X403801_A.jpg?v=1": {
+      "path": "/images/542ef25f89c9155ee7007adb72a2cac3efc289284bfaa7e081c68754b841f5f7.jpg",
+      "sha256": "542ef25f89c9155ee7007adb72a2cac3efc289284bfaa7e081c68754b841f5f7",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/0c803fdb-d7fb-4cad-b9d5-91784fd858ff/Large/741357V2X403801_A.jpg?v=1",
+      "checkedAt": "2026-10-07T08:52:31.342Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5196_9ce82261-4e28-4920-8dfc-fcbd7b0909e6.jpg?v=1779806059&width=2000": {
+      "path": "/images/f4300f80e9a91e81069811071be7986fab777e9dc3b14f2dfa373b5723048cd5.webp",
+      "sha256": "f4300f80e9a91e81069811071be7986fab777e9dc3b14f2dfa373b5723048cd5",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5196_9ce82261-4e28-4920-8dfc-fcbd7b0909e6.jpg?v=1779806059&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.348Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5390.jpg?v=1779806098&width=2000": {
+      "path": "/images/fcb03a9c227a96e13cf68b7ed5f1cd51431cbb99bfc5d66649e7b255842235c1.webp",
+      "sha256": "fcb03a9c227a96e13cf68b7ed5f1cd51431cbb99bfc5d66649e7b255842235c1",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5390.jpg?v=1779806098&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.363Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5394_17508ae7-d216-4db3-a1d5-7922f92e49cb.jpg?v=1779805634&width=2000": {
+      "path": "/images/3d0f5bf2cc178cc6f5860382f6dc87c3323a3a1f369d2a3c24b58d0329288ec9.webp",
+      "sha256": "3d0f5bf2cc178cc6f5860382f6dc87c3323a3a1f369d2a3c24b58d0329288ec9",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5394_17508ae7-d216-4db3-a1d5-7922f92e49cb.jpg?v=1779805634&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.366Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/9_74453bda-faf0-4f21-8cdf-16891ef3e88c.jpg?v=1776740307&width=2000": {
+      "path": "/images/48cbf156ff649f5d3e7e4d788e699b4f095eb487af3bc88009c9564bad0646dd.webp",
+      "sha256": "48cbf156ff649f5d3e7e4d788e699b4f095eb487af3bc88009c9564bad0646dd",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/9_74453bda-faf0-4f21-8cdf-16891ef3e88c.jpg?v=1776740307&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.384Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5439-1_40473982-63e9-4ff3-9f32-1af065283d34.jpg?v=1779805905&width=2000": {
+      "path": "/images/568fc428a1a60acdc15b3614d378ac6b49a207d76df502aa8c43192bdc169515.webp",
+      "sha256": "568fc428a1a60acdc15b3614d378ac6b49a207d76df502aa8c43192bdc169515",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5439-1_40473982-63e9-4ff3-9f32-1af065283d34.jpg?v=1779805905&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.386Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/1_3182d3a7-0366-4a69-b36a-58bb809e3fc4.jpg?v=1790820897&width=2000": {
+      "path": "/images/179b838f4237462b91949b154785c614bc5db91c1a5efe715637b59f1dd777d2.webp",
+      "sha256": "179b838f4237462b91949b154785c614bc5db91c1a5efe715637b59f1dd777d2",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/1_3182d3a7-0366-4a69-b36a-58bb809e3fc4.jpg?v=1790820897&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.395Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5192_4db94845-1443-4658-b90d-cb0cfff3ee5e.jpg?v=1779805987&width=2000": {
+      "path": "/images/bb030b666525f1f6658831d3784645dc6153e6691f19d0373ecec411ed62366a.webp",
+      "sha256": "bb030b666525f1f6658831d3784645dc6153e6691f19d0373ecec411ed62366a",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5192_4db94845-1443-4658-b90d-cb0cfff3ee5e.jpg?v=1779805987&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.400Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5366.jpg?v=1779805431&width=2000": {
+      "path": "/images/7644387469a6d243f7a6489df440d1cdf8ac2a5c41aab0f81956e0ab42e59b6b.webp",
+      "sha256": "7644387469a6d243f7a6489df440d1cdf8ac2a5c41aab0f81956e0ab42e59b6b",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5366.jpg?v=1779805431&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.402Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5368.jpg?v=1779805216&width=2000": {
+      "path": "/images/de77cea3393c600ddcdaeee537824fc238d47bdde7dc146457222128654841c9.webp",
+      "sha256": "de77cea3393c600ddcdaeee537824fc238d47bdde7dc146457222128654841c9",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5368.jpg?v=1779805216&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.420Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5389_b65156a8-48c8-48a4-9cb1-31b637eefbf9.jpg?v=1779806122&width=2000": {
+      "path": "/images/01f61f2d1dce8cadbb29edbc7e573c6544273324d7d45994e2cf56a1e544b5c2.webp",
+      "sha256": "01f61f2d1dce8cadbb29edbc7e573c6544273324d7d45994e2cf56a1e544b5c2",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5389_b65156a8-48c8-48a4-9cb1-31b637eefbf9.jpg?v=1779806122&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.421Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5441.jpg?v=1779805453&width=2000": {
+      "path": "/images/c4fd0593fc80c6684d4a48c642ad22a528275d29704eb53e0a8ff96ab5a848d3.webp",
+      "sha256": "c4fd0593fc80c6684d4a48c642ad22a528275d29704eb53e0a8ff96ab5a848d3",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5441.jpg?v=1779805453&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.423Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5395.jpg?v=1779805478&width=2000": {
+      "path": "/images/2082c1ffb88cea4d18e07f788609da353e958543d7f94dbcbb7a0520d4819553.webp",
+      "sha256": "2082c1ffb88cea4d18e07f788609da353e958543d7f94dbcbb7a0520d4819553",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5395.jpg?v=1779805478&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.439Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5337.jpg?v=1779805684&width=2000": {
+      "path": "/images/cae16115d5c5b7bbff88b1b23164c6ccf5ce84469e954b982c65824c033e7ad5.webp",
+      "sha256": "cae16115d5c5b7bbff88b1b23164c6ccf5ce84469e954b982c65824c033e7ad5",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5337.jpg?v=1779805684&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.449Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5339.jpg?v=1779805666&width=2000": {
+      "path": "/images/d2df9d38a76beabba8b74b9c61aecac9fc00b66d83bfba336abf405d4ae1709f.webp",
+      "sha256": "d2df9d38a76beabba8b74b9c61aecac9fc00b66d83bfba336abf405d4ae1709f",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5339.jpg?v=1779805666&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.454Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5440_d1287385-f2c6-443d-9a4f-b1a44a9e7d5a.jpg?v=1779805878&width=2000": {
+      "path": "/images/c73762db70bd654c236c86607e09b899a9e6b2469fda3f43e41af34730982f9f.webp",
+      "sha256": "c73762db70bd654c236c86607e09b899a9e6b2469fda3f43e41af34730982f9f",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5440_d1287385-f2c6-443d-9a4f-b1a44a9e7d5a.jpg?v=1779805878&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.461Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5367.jpg?v=1779805306&width=2000": {
+      "path": "/images/1d8e46a37a35e667fcb19362ee93bcdfdbee74e24ddbe6b727662193c9c2c7bd.webp",
+      "sha256": "1d8e46a37a35e667fcb19362ee93bcdfdbee74e24ddbe6b727662193c9c2c7bd",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5367.jpg?v=1779805306&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.471Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5196_e1ce1237-eeae-45b3-a21f-67ae054a6081.jpg?v=1779806019&width=2000": {
+      "path": "/images/f4300f80e9a91e81069811071be7986fab777e9dc3b14f2dfa373b5723048cd5.webp",
+      "sha256": "f4300f80e9a91e81069811071be7986fab777e9dc3b14f2dfa373b5723048cd5",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5196_e1ce1237-eeae-45b3-a21f-67ae054a6081.jpg?v=1779806019&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.477Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5390_d609b45a-54e8-4f86-8b3b-629075fd7846.jpg?v=1779806141&width=2000": {
+      "path": "/images/fcb03a9c227a96e13cf68b7ed5f1cd51431cbb99bfc5d66649e7b255842235c1.webp",
+      "sha256": "fcb03a9c227a96e13cf68b7ed5f1cd51431cbb99bfc5d66649e7b255842235c1",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5390_d609b45a-54e8-4f86-8b3b-629075fd7846.jpg?v=1779806141&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.486Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5394.jpg?v=1779805511&width=2000": {
+      "path": "/images/3d0f5bf2cc178cc6f5860382f6dc87c3323a3a1f369d2a3c24b58d0329288ec9.webp",
+      "sha256": "3d0f5bf2cc178cc6f5860382f6dc87c3323a3a1f369d2a3c24b58d0329288ec9",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5394.jpg?v=1779805511&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.495Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/1_32cb4b71-79b9-45b7-ba7c-fee3740640b9.jpg?v=1787125016&width=2000": {
+      "path": "/images/af4a4e5b6ba73f344c5a22db0ae48a71c9e76b50dd55918825000aa14ae83c31.webp",
+      "sha256": "af4a4e5b6ba73f344c5a22db0ae48a71c9e76b50dd55918825000aa14ae83c31",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/1_32cb4b71-79b9-45b7-ba7c-fee3740640b9.jpg?v=1787125016&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.500Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/1_42368fc0-843b-416a-bb5c-435317c597ed.jpg?v=1787124587&width=2000": {
+      "path": "/images/e69c95c1d4b4e4279e9c476b2a9e8e2fb6ffe35c64956567019a7402ea5e1c24.webp",
+      "sha256": "e69c95c1d4b4e4279e9c476b2a9e8e2fb6ffe35c64956567019a7402ea5e1c24",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/1_42368fc0-843b-416a-bb5c-435317c597ed.jpg?v=1787124587&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.506Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/1_89b6f997-9c34-40b0-b764-6d9531f67106.jpg?v=1787125781&width=2000": {
+      "path": "/images/943e5eb9da8ca2d6696bf0d7886b2e26b9819b55bbc8ae12bcfaf594ffc9aefa.webp",
+      "sha256": "943e5eb9da8ca2d6696bf0d7886b2e26b9819b55bbc8ae12bcfaf594ffc9aefa",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/1_89b6f997-9c34-40b0-b764-6d9531f67106.jpg?v=1787125781&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.522Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/1_7b7fe3eb-becb-4ac3-8f2e-4d727b3596dc.jpg?v=1787128449&width=2000": {
+      "path": "/images/4a0c20dad3926cff1a419a21923361d91f90ad3af607c19e384b390184fa2308.webp",
+      "sha256": "4a0c20dad3926cff1a419a21923361d91f90ad3af607c19e384b390184fa2308",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/1_7b7fe3eb-becb-4ac3-8f2e-4d727b3596dc.jpg?v=1787128449&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.523Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5424_fdedfded-c219-4226-b2c5-3a07fc367459.jpg?v=1779804781&width=2000": {
+      "path": "/images/f382054c0ae172ed2ecdcd12f3414b5b9cec93aea8a52db1b2bc30b42daaf50e.webp",
+      "sha256": "f382054c0ae172ed2ecdcd12f3414b5b9cec93aea8a52db1b2bc30b42daaf50e",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5424_fdedfded-c219-4226-b2c5-3a07fc367459.jpg?v=1779804781&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.536Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5429_67eabdae-f282-4978-9ff2-ff8e2efa8e64.jpg?v=1779804709&width=2000": {
+      "path": "/images/bb998ad606a3385666a43a919c47b1daf4c8777a6bf2dbacef2540aeebff216e.webp",
+      "sha256": "bb998ad606a3385666a43a919c47b1daf4c8777a6bf2dbacef2540aeebff216e",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5429_67eabdae-f282-4978-9ff2-ff8e2efa8e64.jpg?v=1779804709&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.548Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5413_9d80ac6f-0c10-491a-984e-a1c6ca4f79d9.jpg?v=1779784297&width=2000": {
+      "path": "/images/5e3fc134e0965a23249119e7babde492cc7e61d291983fcb5d22e8bc9cff9909.webp",
+      "sha256": "5e3fc134e0965a23249119e7babde492cc7e61d291983fcb5d22e8bc9cff9909",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5413_9d80ac6f-0c10-491a-984e-a1c6ca4f79d9.jpg?v=1779784297&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.549Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5423_89b413df-c7bf-48b3-b416-299fe127ee5b.jpg?v=1779804846&width=2000": {
+      "path": "/images/dd01ebdb07b7361663e025ee816425591964629b3e3a58a2aa477b630e49e0f8.webp",
+      "sha256": "dd01ebdb07b7361663e025ee816425591964629b3e3a58a2aa477b630e49e0f8",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5423_89b413df-c7bf-48b3-b416-299fe127ee5b.jpg?v=1779804846&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.561Z"
+    },
+    "https://paneshoes.com/cdn/shop/files/5414_ef972336-e50c-42f0-8c68-98235038d6a8.jpg?v=1779804636&width=2000": {
+      "path": "/images/0119de5b9de961e384e5d34a6ab3c6d5d66757c658d5998c7b2187f6abaab368.webp",
+      "sha256": "0119de5b9de961e384e5d34a6ab3c6d5d66757c658d5998c7b2187f6abaab368",
+      "sourceUrl": "https://paneshoes.com/cdn/shop/files/5414_ef972336-e50c-42f0-8c68-98235038d6a8.jpg?v=1779804636&width=2000",
+      "checkedAt": "2026-10-07T08:52:31.571Z"
+    },
+    "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE479/3ANKF073E/2EE479_3ANK_F073E_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg": {
+      "path": "/images/52dc5c019444d6f3376c6d37f9700a48103d8dbcb06ba26ca4941cf02d20c8d8.webp",
+      "sha256": "52dc5c019444d6f3376c6d37f9700a48103d8dbcb06ba26ca4941cf02d20c8d8",
+      "sourceUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE479/3ANKF073E/2EE479_3ANK_F073E_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg",
+      "checkedAt": "2026-10-07T08:52:31.607Z"
+    },
+    "https://www.prada.com/content/dam/pradabkg_products/4/4E3/4E3400/3LNGF0YB4/4E3400_3LNG_F0YB4_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg": {
+      "path": "/images/b1625751f71170016b92d6addfd9db46704d4d3991565629bdaeb0576c2c679b.webp",
+      "sha256": "b1625751f71170016b92d6addfd9db46704d4d3991565629bdaeb0576c2c679b",
+      "sourceUrl": "https://www.prada.com/content/dam/pradabkg_products/4/4E3/4E3400/3LNGF0YB4/4E3400_3LNG_F0YB4_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg",
+      "checkedAt": "2026-10-07T08:52:31.689Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/cd758730-e8c9-4d4f-828c-b8fafb62c336/Large/865704WSTGL5159_X.jpg?v=3": {
+      "path": "/images/0b98b8510d55d59b52cfbf6711c674ce38bb9323ad3f918bf46bf3a8cdf2c253.jpg",
+      "sha256": "0b98b8510d55d59b52cfbf6711c674ce38bb9323ad3f918bf46bf3a8cdf2c253",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/cd758730-e8c9-4d4f-828c-b8fafb62c336/Large/865704WSTGL5159_X.jpg?v=3",
+      "checkedAt": "2026-10-07T08:52:31.753Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/f573210a-a6bf-465e-acbe-cb322b96890a/Large/865704WSTVL2010_X.jpg?v=1": {
+      "path": "/images/b90a5fd36e35acfece2757eb08c2c45779ca4d8763354b24e53a8329fa2bff5e.jpg",
+      "sha256": "b90a5fd36e35acfece2757eb08c2c45779ca4d8763354b24e53a8329fa2bff5e",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/f573210a-a6bf-465e-acbe-cb322b96890a/Large/865704WSTVL2010_X.jpg?v=1",
+      "checkedAt": "2026-10-07T08:52:31.809Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/f7bbeb60-a2e0-41cb-b9e3-8f188d46e7d4/Large/865704WSTSU1920_X.jpg?v=1": {
+      "path": "/images/6a7a094b775018eef5ec93334193a4d0e33b6c58edd826e5701e4e9132265007.jpg",
+      "sha256": "6a7a094b775018eef5ec93334193a4d0e33b6c58edd826e5701e4e9132265007",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/f7bbeb60-a2e0-41cb-b9e3-8f188d46e7d4/Large/865704WSTSU1920_X.jpg?v=1",
+      "checkedAt": "2026-10-07T08:52:31.908Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/2af40137-53ac-47d6-9420-9ffc8297bbbc/Large/865704WSTSU9020_X.jpg?v=1": {
+      "path": "/images/b3eb15eb99f6fd15eb5afc0d0a5564c3525be13769a8f1680026f1aaa805623e.jpg",
+      "sha256": "b3eb15eb99f6fd15eb5afc0d0a5564c3525be13769a8f1680026f1aaa805623e",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/2af40137-53ac-47d6-9420-9ffc8297bbbc/Large/865704WSTSU9020_X.jpg?v=1",
+      "checkedAt": "2026-10-07T08:52:31.916Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/249fb372-fc58-4aa7-8514-84c8be77f358/Large/A007BYV6VC09063_A.jpg?v=1": {
+      "path": "/images/521612cc4702abca997457092d995dc43f242389bd3bbdfe667147c021441a34.jpg",
+      "sha256": "521612cc4702abca997457092d995dc43f242389bd3bbdfe667147c021441a34",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/249fb372-fc58-4aa7-8514-84c8be77f358/Large/A007BYV6VC09063_A.jpg?v=1",
+      "checkedAt": "2026-10-07T08:52:32.027Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/4061e7e1-f8d5-491a-b77e-b998ee15fae3/Large/A009YHV5U221003_A.jpg?v=1": {
+      "path": "/images/7f062b05534e4d3654d8674f5260982de06bec74306d5abe42e4f85c9acf2762.jpg",
+      "sha256": "7f062b05534e4d3654d8674f5260982de06bec74306d5abe42e4f85c9acf2762",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/4061e7e1-f8d5-491a-b77e-b998ee15fae3/Large/A009YHV5U221003_A.jpg?v=1",
+      "checkedAt": "2026-10-07T08:52:32.109Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/406998/03/sv01/fnd/PNA/fmt/png/Speedcat-Dress-Up-Sneakers": {
+      "path": "/images/04ef582d10b3c3b62ddd56880a72baa041081b15b1496545a14fc9144bb75748.webp",
+      "sha256": "04ef582d10b3c3b62ddd56880a72baa041081b15b1496545a14fc9144bb75748",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/406998/03/sv01/fnd/PNA/fmt/png/Speedcat-Dress-Up-Sneakers",
+      "checkedAt": "2026-10-07T08:52:32.212Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/407829/01/sv01/fnd/PNA/fmt/png/Speedcat-Dressed-Sneakers": {
+      "path": "/images/91d26cdae523d5b8ea10e634cad68da16e3e53c088c209ffa743b23dd556cdc5.webp",
+      "sha256": "91d26cdae523d5b8ea10e634cad68da16e3e53c088c209ffa743b23dd556cdc5",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/407829/01/sv01/fnd/PNA/fmt/png/Speedcat-Dressed-Sneakers",
+      "checkedAt": "2026-10-07T08:52:32.257Z"
+    },
+    "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE479/3ANKF0334/2EE479_3ANK_F0334_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg": {
+      "path": "/images/b4d2031968c537bad7dcec391c92c78a8282ca82412fea921eda466568c33aa6.webp",
+      "sha256": "b4d2031968c537bad7dcec391c92c78a8282ca82412fea921eda466568c33aa6",
+      "sourceUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE479/3ANKF0334/2EE479_3ANK_F0334_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg",
+      "checkedAt": "2026-10-07T08:52:32.617Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/398846/31/sv01/fnd/PNA/fmt/png/Speedcat-OG-Sneakers": {
+      "path": "/images/867670e1507e634470d8177718756f7c51053cad80d43dcdb903cf85f5da439c.webp",
+      "sha256": "867670e1507e634470d8177718756f7c51053cad80d43dcdb903cf85f5da439c",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/398846/31/sv01/fnd/PNA/fmt/png/Speedcat-OG-Sneakers",
+      "checkedAt": "2026-10-07T08:52:32.631Z"
+    },
+    "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE487/3H0KF0002/2EE487_3H0K_F0002_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg": {
+      "path": "/images/e3a701c4ae277f28d8dff1c1f36f97c8e0ceb61dfd60e896d41030679f3018ed.webp",
+      "sha256": "e3a701c4ae277f28d8dff1c1f36f97c8e0ceb61dfd60e896d41030679f3018ed",
+      "sourceUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE487/3H0KF0002/2EE487_3H0K_F0002_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg",
+      "checkedAt": "2026-10-07T08:52:32.692Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/407257/02/sv01/fnd/PNA/fmt/png/Speedcat-Patch-Sneakers": {
+      "path": "/images/6e36a23cc4057ff96e6260f0ffdea571448684f5deab047aa2945286f3142a9a.webp",
+      "sha256": "6e36a23cc4057ff96e6260f0ffdea571448684f5deab047aa2945286f3142a9a",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/407257/02/sv01/fnd/PNA/fmt/png/Speedcat-Patch-Sneakers",
+      "checkedAt": "2026-10-07T08:52:32.745Z"
+    },
+    "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/409453/05/sv01/fnd/PNA/fmt/png/Speedcat-OG-II-Women's-Sneakers": {
+      "path": "/images/15ed065a7508f44742a7d2c5ccacdbde89f3256ad005a9cf22bb25d0c18a58b7.webp",
+      "sha256": "15ed065a7508f44742a7d2c5ccacdbde89f3256ad005a9cf22bb25d0c18a58b7",
+      "sourceUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/409453/05/sv01/fnd/PNA/fmt/png/Speedcat-OG-II-Women's-Sneakers",
+      "checkedAt": "2026-10-07T08:52:32.749Z"
+    },
+    "https://www.prada.com/content/dam/pradabkg_products/1/1E4/1E490O/3ZM0F0007/1E490O_3ZM0_F0007_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg": {
+      "path": "/images/2ea2fa037dd73955c663cb97e8a7062df0241627f9d8adde5725d3395b1cbc48.webp",
+      "sha256": "2ea2fa037dd73955c663cb97e8a7062df0241627f9d8adde5725d3395b1cbc48",
+      "sourceUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1E4/1E490O/3ZM0F0007/1E490O_3ZM0_F0007_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg",
+      "checkedAt": "2026-10-07T08:52:32.760Z"
+    },
+    "https://www.prada.com/content/dam/pradabkg_products/1/1E4/1E490O/3ZM0F0161/1E490O_3ZM0_F0161_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg": {
+      "path": "/images/b7b7184d330fdeaa322f38c08e14841b6d80085370930fb51bad855682ed7435.webp",
+      "sha256": "b7b7184d330fdeaa322f38c08e14841b6d80085370930fb51bad855682ed7435",
+      "sourceUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1E4/1E490O/3ZM0F0161/1E490O_3ZM0_F0161_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.700.700.jpg",
+      "checkedAt": "2026-10-07T08:52:32.780Z"
+    },
+    "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-490-club-nylon-black-sneakers-5.jpg?v=1780313350&width=533": {
+      "path": "/images/1a415e6459c9df6dbe0e37e1609a7841530f21077b027553caa489eac91f190a.webp",
+      "sha256": "1a415e6459c9df6dbe0e37e1609a7841530f21077b027553caa489eac91f190a",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-490-club-nylon-black-sneakers-5.jpg?v=1780313350&width=533",
+      "checkedAt": "2026-10-07T08:52:32.802Z"
+    },
+    "https://images.asics.com/is/image/asics/1013A177_101_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/baa43eae1e6353a5c11da994da008f0115e6887ec39f2eacd200e3b9d7d7cd1a.webp",
+      "sha256": "baa43eae1e6353a5c11da994da008f0115e6887ec39f2eacd200e3b9d7d7cd1a",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1013A177_101_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:32.809Z"
+    },
+    "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-61-aera-cream-sneakers-2.jpg?v=1787220976&width=533": {
+      "path": "/images/1d93e816c163e129ac60617f44092f12051ccec94f51f27ce9b3213fd658a80f.webp",
+      "sha256": "1d93e816c163e129ac60617f44092f12051ccec94f51f27ce9b3213fd658a80f",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-61-aera-cream-sneakers-2.jpg?v=1787220976&width=533",
+      "checkedAt": "2026-10-07T08:52:32.830Z"
+    },
+    "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-61-aera-dark-brown-sneakers-1.jpg?v=1787221033&width=533": {
+      "path": "/images/c91b9582efdf969dbb690f7f5a0ad464ac6e51b1e09515b5866f477f83dbf33d.webp",
+      "sha256": "c91b9582efdf969dbb690f7f5a0ad464ac6e51b1e09515b5866f477f83dbf33d",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-61-aera-dark-brown-sneakers-1.jpg?v=1787221033&width=533",
+      "checkedAt": "2026-10-07T08:52:32.831Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/2fbf7155-8ac3-4d8f-85b7-f498c35f4f17/Large/800590WTRHK9745_X.jpg?v=2": {
+      "path": "/images/3e0295b8654954977d1a6a22ffc52856938e0c43c9e1a0a1763e439c3c6361e9.jpg",
+      "sha256": "3e0295b8654954977d1a6a22ffc52856938e0c43c9e1a0a1763e439c3c6361e9",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/2fbf7155-8ac3-4d8f-85b7-f498c35f4f17/Large/800590WTRHK9745_X.jpg?v=2",
+      "checkedAt": "2026-10-07T08:52:32.894Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/af4f0fb5-34df-441a-bd95-257f44fd14ee/Large/542436WTKZM1018_X.jpg?v=2": {
+      "path": "/images/c13e856b57448d902388a4c02255ad2c233737f5d3a31e2e29941ffd1bfe97fa.jpg",
+      "sha256": "c13e856b57448d902388a4c02255ad2c233737f5d3a31e2e29941ffd1bfe97fa",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/af4f0fb5-34df-441a-bd95-257f44fd14ee/Large/542436WTKZM1018_X.jpg?v=2",
+      "checkedAt": "2026-10-07T08:52:32.922Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/254a22c2-9f46-4564-9ee5-10b4a49d4db6/Large/865851WTR2G6800_X.jpg?v=6": {
+      "path": "/images/c79446ac27cbd2758d8c39f45573ea2b288da1b138795ecde49043a0ff62ab2f.jpg",
+      "sha256": "c79446ac27cbd2758d8c39f45573ea2b288da1b138795ecde49043a0ff62ab2f",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/254a22c2-9f46-4564-9ee5-10b4a49d4db6/Large/865851WTR2G6800_X.jpg?v=6",
+      "checkedAt": "2026-10-07T08:52:32.959Z"
+    },
+    "https://cdn11.bigcommerce.com/s-x6b2pdd9ey/product_images/attribute_rule_images/212184_source_1790770288.jpg": {
+      "path": "/images/28b945629135b79bb3a2f479f09287eba1e83404a4d85728d9e93a55fb65ab6a.webp",
+      "sha256": "28b945629135b79bb3a2f479f09287eba1e83404a4d85728d9e93a55fb65ab6a",
+      "sourceUrl": "https://cdn11.bigcommerce.com/s-x6b2pdd9ey/product_images/attribute_rule_images/212184_source_1790770288.jpg",
+      "checkedAt": "2026-10-07T08:52:32.983Z"
+    },
+    "https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1788968740/A00CRD_AAHKK_9059_001_100_0000_Light.jpg": {
+      "path": "/images/7c492bc718398dcaa918fd73f7685c90e8fb921b4471a7938eabfaa82e001e10.webp",
+      "sha256": "7c492bc718398dcaa918fd73f7685c90e8fb921b4471a7938eabfaa82e001e10",
+      "sourceUrl": "https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1788968740/A00CRD_AAHKK_9059_001_100_0000_Light.jpg",
+      "checkedAt": "2026-10-07T08:52:33.022Z"
+    },
+    "https://cdn11.bigcommerce.com/s-x6b2pdd9ey/product_images/attribute_rule_images/212285_source_1790770292.jpg": {
+      "path": "/images/70996e60bdb5aef0018b07dd194646ce74358f2edbea2dbdf0c99ff304b4a132.webp",
+      "sha256": "70996e60bdb5aef0018b07dd194646ce74358f2edbea2dbdf0c99ff304b4a132",
+      "sourceUrl": "https://cdn11.bigcommerce.com/s-x6b2pdd9ey/product_images/attribute_rule_images/212285_source_1790770292.jpg",
+      "checkedAt": "2026-10-07T08:52:33.057Z"
+    },
+    "https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1788882312/A00CRD_AAHKK_9060_001_100_0000_Light.jpg": {
+      "path": "/images/04c38ce826bae31163f4996bf2e2e107202a01e5e57dbd36492626257e7b596e.webp",
+      "sha256": "04c38ce826bae31163f4996bf2e2e107202a01e5e57dbd36492626257e7b596e",
+      "sourceUrl": "https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1788882312/A00CRD_AAHKK_9060_001_100_0000_Light.jpg",
+      "checkedAt": "2026-10-07T08:52:33.133Z"
+    },
+    "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/743eac00-ecb0-5ed9-8e83-e899876f62d9/F4357001_CATEGORY.jpg?format=xl&outputFormat=webp": {
+      "path": "/images/6db423a0e3607edc7bc02505632fc1af8852a0c956d58e6a023ba2638db149e9.webp",
+      "sha256": "6db423a0e3607edc7bc02505632fc1af8852a0c956d58e6a023ba2638db149e9",
+      "sourceUrl": "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/743eac00-ecb0-5ed9-8e83-e899876f62d9/F4357001_CATEGORY.jpg?format=xl&outputFormat=webp",
+      "checkedAt": "2026-10-07T08:52:33.163Z"
+    },
+    "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/e3709dc2-fc81-539a-94a8-d275f05832b0/F4357002_CATEGORY.jpg?format=xl&outputFormat=webp": {
+      "path": "/images/367e3dd4b7ae54da291ece02e09128a2659daf5adf86f719a1175745e3e68280.webp",
+      "sha256": "367e3dd4b7ae54da291ece02e09128a2659daf5adf86f719a1175745e3e68280",
+      "sourceUrl": "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/e3709dc2-fc81-539a-94a8-d275f05832b0/F4357002_CATEGORY.jpg?format=xl&outputFormat=webp",
+      "checkedAt": "2026-10-07T08:52:33.175Z"
+    },
+    "https://cdn.dam.salomon.com/eaa3ee32-3cf9-46ad-b9be-b3720090672f/L49212100/PNG-2000px-max-72dpi.png?width=2918&fit=cover&optimize=medium&bg-color=transparent&format=pjpg&auto=avif&pad=0.12%2C0.12%2C0.12%2C0.12": {
+      "path": "/images/1c062cdc993023a73458d9f865e24256af8512a20c153c4f147c1692f9054dd2.jpg",
+      "sha256": "1c062cdc993023a73458d9f865e24256af8512a20c153c4f147c1692f9054dd2",
+      "sourceUrl": "https://cdn.dam.salomon.com/eaa3ee32-3cf9-46ad-b9be-b3720090672f/L49212100/PNG-2000px-max-72dpi.png?width=2918&fit=cover&optimize=medium&bg-color=transparent&format=pjpg&auto=avif&pad=0.12%2C0.12%2C0.12%2C0.12",
+      "checkedAt": "2026-10-07T08:52:33.315Z"
+    },
+    "https://cdn.dam.salomon.com/329e06e3-7a10-4be2-945f-b3790089d54b/L49306800/PNG-2000px-max-72dpi.png?width=2918&fit=cover&optimize=medium&bg-color=transparent&format=pjpg&auto=avif&pad=0.12%2C0.12%2C0.12%2C0.12": {
+      "path": "/images/7864468cb6485e79a3ab12ea58d8c51296c101415ef72367bc28b2c37c736e44.jpg",
+      "sha256": "7864468cb6485e79a3ab12ea58d8c51296c101415ef72367bc28b2c37c736e44",
+      "sourceUrl": "https://cdn.dam.salomon.com/329e06e3-7a10-4be2-945f-b3790089d54b/L49306800/PNG-2000px-max-72dpi.png?width=2918&fit=cover&optimize=medium&bg-color=transparent&format=pjpg&auto=avif&pad=0.12%2C0.12%2C0.12%2C0.12",
+      "checkedAt": "2026-10-07T08:52:33.315Z"
+    },
+    "https://images.ctfassets.net/hnk2vsx53n6l/2wjlM3mWJ3qG4RFo3TKbRI/bcb48b214d4b041c7f0f9b3058c19650/e0613a13464de0cc28588b1c5b460dde49b2bb7b.png?fm=webp": {
+      "path": "/images/52fa74941560dc036a69c81104826d153ce7b70be3fcfcc2c5e8bdd1ee91b3cd.webp",
+      "sha256": "52fa74941560dc036a69c81104826d153ce7b70be3fcfcc2c5e8bdd1ee91b3cd",
+      "sourceUrl": "https://images.ctfassets.net/hnk2vsx53n6l/2wjlM3mWJ3qG4RFo3TKbRI/bcb48b214d4b041c7f0f9b3058c19650/e0613a13464de0cc28588b1c5b460dde49b2bb7b.png?fm=webp",
+      "checkedAt": "2026-10-07T08:52:33.503Z"
+    },
+    "https://images.ctfassets.net/hnk2vsx53n6l/66Mg3fBZPCeMul4w7wuUIs/7b51bf35ff0d537a0fa7996d2630f086/f1ab1384c29518400d660d43e1c700abc690a8bc.png?fm=webp": {
+      "path": "/images/5e0970ff433a5ee786c973b8c505a234e2b8ae3f641bb25612a803474d632d86.webp",
+      "sha256": "5e0970ff433a5ee786c973b8c505a234e2b8ae3f641bb25612a803474d632d86",
+      "sourceUrl": "https://images.ctfassets.net/hnk2vsx53n6l/66Mg3fBZPCeMul4w7wuUIs/7b51bf35ff0d537a0fa7996d2630f086/f1ab1384c29518400d660d43e1c700abc690a8bc.png?fm=webp",
+      "checkedAt": "2026-10-07T08:52:33.542Z"
+    },
+    "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/69b679f2-8201-411f-9a58-14356f588c66/W+NIKE+REVOLUTION+8+EASYON.png": {
+      "path": "/images/b5a4b2b7267b8eea3f8e7ee8c5454eb57d01bb825ad01cc47adb73946e4ec3fd.webp",
+      "sha256": "b5a4b2b7267b8eea3f8e7ee8c5454eb57d01bb825ad01cc47adb73946e4ec3fd",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/69b679f2-8201-411f-9a58-14356f588c66/W+NIKE+REVOLUTION+8+EASYON.png",
+      "checkedAt": "2026-10-07T08:52:33.633Z"
+    },
+    "https://images.asics.com/is/image/asics/1203A383_204_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/112a291c3465f9d0201701dc439fb0ebcdfc5774fafccea86b4041f50ad153ad.webp",
+      "sha256": "112a291c3465f9d0201701dc439fb0ebcdfc5774fafccea86b4041f50ad153ad",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1203A383_204_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:33.677Z"
+    },
+    "https://images.asics.com/is/image/asics/1203A383_119_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/29c62ba869dc9a4eace47d6de7d0f2e6c591f24e366fa2ff431c735f4c614f84.webp",
+      "sha256": "29c62ba869dc9a4eace47d6de7d0f2e6c591f24e366fa2ff431c735f4c614f84",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1203A383_119_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:33.698Z"
+    },
+    "https://images.asics.com/is/image/asics/1203A901_001_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/810fb62441a5d2a3b229b6d4028dc0269139f9b64c84e0d3ae3c660cc886f4b8.webp",
+      "sha256": "810fb62441a5d2a3b229b6d4028dc0269139f9b64c84e0d3ae3c660cc886f4b8",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1203A901_001_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-07T08:52:33.723Z"
+    },
+    "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b31272b8-ab20-436c-a772-6ab6c6a8b8e3/W+NIKE+AIR+WINFLO+12+GTX.png": {
+      "path": "/images/9b5b1ed4ed8f07f8dc9d88cc22d4ee4c0422c37aceb163c49f01f91ecb94e7b3.webp",
+      "sha256": "9b5b1ed4ed8f07f8dc9d88cc22d4ee4c0422c37aceb163c49f01f91ecb94e7b3",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b31272b8-ab20-436c-a772-6ab6c6a8b8e3/W+NIKE+AIR+WINFLO+12+GTX.png",
+      "checkedAt": "2026-10-07T08:52:33.777Z"
     }
   }
 }

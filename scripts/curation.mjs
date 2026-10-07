@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import {productKeywordIds,productSearchConceptIds,productCollaborationBrands} from './keyword-taxonomy.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {validateSocialMetrics,qualifyingSocialMetric,withSocialComparisons} from './social-metrics.mjs';
+import {hasArrivalEvidence} from '../public/assets/publication-window.mjs';
 import {validCalendarDay as validDay,calendarShift as shiftMonth,releaseWindow,releaseState,releaseSortKey} from '../public/assets/release-window.mjs';
 export {validDay,shiftMonth};
 
@@ -30,7 +31,8 @@ export function officialEvidenceFor(p,today){
   const identifierMatches=e=>p.styleType==='official-product-id'?e?.identifierType==='official-product-id':e?.identifierType!=='official-product-id';
   const identity=e=>e?.verified===true&&identifierMatches(e)&&canonicalBrand(e.brand)===canonicalBrand(p.brand)&&key(p.style)&&key(e.style)===key(p.style)&&Number.isFinite(Date.parse(e.verifiedAt))&&kstDay(e.verifiedAt)<=today;
   const partner=canonicalBrand(p.brand)==='ASICS'&&httpUrl(p.url)&&/^(?:www\.)?ceciliebahnsen\.com$/.test(new URL(p.url).hostname)&&productCollaborationBrands(p).includes('Cecilie Bahnsen')&&product?.styleEvidence?.verified===true&&key(product.styleEvidence.style)===key(p.style)&&isOfficialProductUrl('ASICS',product.styleEvidence.url);
-  if(!identity(product)||!identity(image)||!isOfficialProductUrl(p.brand,p.url)&&!partner||product.url!==p.url||image.url!==p.image||image.sourceUrl!==p.url||!httpUrl(p.image))return null;
+  const listing=product?.verificationMethod==='official-new-listing-sku-image'&&image?.verificationMethod===product.verificationMethod&&hasArrivalEvidence(p,today)&&isOfficialProductUrl(p.brand,p.arrivalEvidence.url)&&image.sourceUrl===p.arrivalEvidence.url&&product.contentHash===p.arrivalEvidence.contentHash&&image.contentHash===p.arrivalEvidence.contentHash&&p.productEvidenceUrl===p.arrivalEvidence.url;
+  if(!identity(product)||!identity(image)||!isOfficialProductUrl(p.brand,p.url)&&!partner||product.url!==p.url||image.url!==p.image||(!listing&&image.sourceUrl!==p.url)||!httpUrl(p.image))return null;
   const clean=(e,fields)=>Object.fromEntries(fields.filter(k=>e[k]!==undefined).map(k=>[k,e[k]]));
   const verifiedProduct=clean(product,['verified','url','verifiedAt','brand','style','identifierType','verificationMethod','contentHash']);
   if(product.verificationMethod==='official-partner-exact-name-color-image-with-reviewed-style'){
@@ -43,10 +45,10 @@ export function officialEvidenceFor(p,today){
   if(model?.verified===true&&model.id&&model.name&&key(model.name)===key(String(p.name).split(/\s[—–]\s/)[0]))verifiedProduct.modelIdentity={id:model.id,name:model.name,verified:true};
   return {officialProductEvidence:verifiedProduct,officialImageEvidence:clean(image,['verified','url','sourceUrl','verifiedAt','brand','style','identifierType','verificationMethod','contentHash'])};
 }
-const excluded = /\b(loafers?|oxfords?|derby|derbies|pumps?|stilettos?|heels|(?:high|kitten|block|wedge)[ -]?heels?|heeled|moccasins?|mocassins?|escarpins?|decolletes?|slingbacks?|dress (?:shoes?|sandals?)|ballerina flats?|ballet flats?|chelsea|boots?|snowclog|ski|snowboard|winter|fur[ -]lined|insulated)\b|로퍼|구두|슬링백|(?:하이|키튼|블록|웨지)힐|펌프스|부츠|방한|발레 플랫/i;
+const excluded = /\b(loafers?|oxfords?|derby|derbies|pumps?|stilettos?|wedge|heels|(?:high|kitten|block|wedge)[ -]?heels?|heeled|moccasins?|mocassins?|escarpins?|decolletes?|slingbacks?|dress (?:shoes?|sandals?)|ballerina flats?|ballet flats?|chelsea|boots?|snowclog)\b|로퍼|구두|슬링백|(?:하이|키튼|블록|웨지)힐|펌프스|부츠|방한|발레 플랫/i;
 const performance = /\b(?:soccer|football|baseball|track|golf)\s+(?:boots?|cleats?|spikes?|shoes?)|\b(?:racing spikes|competition spikes|basketball shoes)\b|축구화|야구화|스파이크/i;
-const sneakerStructure = /\b(?:sneakers?|running (?:shoes?|heritage)|trainers?|sneaker (?:sole|midsole|outsole|construction))\b|스니커|운동화|러닝화|スニーカー|运动鞋|運動鞋|跑鞋/i;
-const namedHybrid = /\b(?:mules?|mary[ -]?jane|ballet|ballerinas?)\b|메리제인|발레리나|발레|뮬|バレエ|バレリーナ|メリージェーン|ミュール|芭蕾|玛丽珍|瑪麗珍|穆勒/i;
+const sneakerStructure = /\b(?:sneakers?|sneakerina|running (?:shoes?|heritage)|trainers?|sneaker (?:sole|midsole|outsole|construction))\b|스니커|운동화|러닝화|スニーカー|运动鞋|運動鞋|跑鞋/i;
+const namedHybrid = /\b(?:mules?|mary[ -]?jane|ballet|ballerinas?|sneakerina)\b|메리제인|발레리나|발레|뮬|バレエ|バレリーナ|メリージェーン|ミュール|芭蕾|玛丽珍|瑪麗珍|穆勒/i;
 const otherHybrid = /\b(?:clogs?|sandals?|slides?|espadrilles?|fisherman|hybrids?)\b|클로그|샌들|슬라이드|에스파드리유|피셔맨|혼합|하이브리드|クロッグ|サンダル|エスパドリーユ|ハイブリッド|凉鞋|涼鞋|混合/i;
 export function sneakerHybridCandidate(p) {
   const title = `${p.name || ''} ${p.officialCategory || ''} ${p.hybridReview?.approved ? p.hybridReview.type || '' : ''}`;
@@ -102,7 +104,7 @@ export function classifyFootwear(p) {
     if(/platform|플랫폼/i.test(context)&&!reviewedPlatform&&!/\bflat\b|level sole|통굽|평평한|플랫/i.test(context))return {reason:'flat-platform-unverified'};
     return { category: /platform|플랫폼/i.test(context) ? 'platform-sandal' : 'sandal' };
   }
-  if (/sneaker|running shoe|trail running|training shoes?|trainers?|court shoe|스니커|운동화|러닝화|트레이닝화|트레일화/i.test(context)) return { category: 'sneaker' };
+  if (/sneaker|running shoe|trail running|training shoes?|trainers?|court(?:-type)? shoe|tennis shoes?|스니커|운동화|러닝화|트레이닝화|트레일화/i.test(context)||/\btraining\b[^.!?]{0,45}\bshoes?\b/i.test(title)) return { category: 'sneaker' };
   if (/\bplatform\b|플랫폼/i.test(title)&&(reviewedPlatform||/\bflat\b|level sole|플랫|통굽|평평한/i.test(context))&&/casual|street|sport|캐주얼/i.test(context))return {category:'platform-shoe'};
   if(p.productVerifiedAt&&/\b(?:Air Max (?!Phenomena)|Air Force 1|Air Jordan \d|Air Bakin|Dunk Low|Dunk High|Cortez|Vomero|Pegasus|Shox|P-6000)\b/i.test(p.name||''))return {category:'sneaker'};
   return { reason: 'footwear-type-unverified' };
@@ -159,9 +161,10 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   const fit = fitFor(raw, type.category,today); if (!fit.fit.length) return { reason: 'brand-fit-unverified' };
   const e = raw.dateEvidence;
   const release=releaseWindow(raw);
-  if (!release || !e || !['day','month'].includes(e.precision) || !httpUrl(e.url) || !Number.isFinite(Date.parse(e.verifiedAt)) || !e.excerpt || e.verified!==true) return { reason: 'release-day-evidence-required' };
+  const arrival=hasArrivalEvidence(raw,today)&&isOfficialProductUrl(brand,raw.arrivalEvidence.url)&&!!officialEvidenceFor(raw,today);
+  if (!arrival&&(!release || !e || !['day','month'].includes(e.precision) || !httpUrl(e.url) || !Number.isFinite(Date.parse(e.verifiedAt)) || !e.excerpt || e.verified!==true)) return { reason: 'release-day-evidence-required' };
   const state=releaseState(raw,today),future=state==='upcoming';
-  if(state==='uncertain'||state==='invalid')return {reason:release.precision==='month'?'release-month-window-uncertain':'upcoming-evidence-or-range'};
+  if(state==='uncertain'||state==='invalid')return {reason:release?.precision==='month'?'release-month-window-uncertain':'upcoming-evidence-or-range'};
   if (!httpUrl(raw.url) || !httpUrl(raw.image)) return { reason: 'product-url-or-image-required' };
   if (!Number.isFinite(Date.parse(raw.productVerifiedAt)) || !httpUrl(raw.productEvidenceUrl)) return { reason: 'product-verification-required' };
   const official=officialEvidenceFor(raw,today);
@@ -170,7 +173,8 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   const visibleSignals = validateSignals(raw.sourceSignals, today), hot = popularity(visibleSignals, today,{product:raw,socialMetrics,officialEligible:!!official});
   const product = { id: raw.id, brand, name: raw.name, category: type.category, productType: type.category, ...fit,
     modelKey:raw.modelGroup||`${key(brand)}|${key(String(raw.name).split(/ — | – /)[0])}`,
-    releaseDate: raw.releaseDate, releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),
+    releaseDate: raw.releaseDate||'', releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release?.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),
+    ...(arrival?{arrivalEvidence:raw.arrivalEvidence}:{}),...(raw.firstPublishedAt?{firstPublishedAt:raw.firstPublishedAt}:{}),
     url: raw.url, image: raw.image, style: raw.style || '',...(raw.styleType==='official-product-id'?{styleType:raw.styleType}:{}),colorway: raw.colorway || '', colors: raw.colors || [],
     gender: raw.gender || '', material: raw.material || '', priceLabel: raw.priceLabel || '',
     description:[type.category==='sneaker'?'스니커즈':type.category==='clog'?'여름 클로그':type.category==='hybrid'?'검토된 혼합형 스니커즈':type.category==='jelly'?'플랫 젤리 슈즈':type.category==='platform-shoe'?'캐주얼 플랫폼 슈즈':'캐주얼 샌들',...fit.fitReasons].join(' · '),

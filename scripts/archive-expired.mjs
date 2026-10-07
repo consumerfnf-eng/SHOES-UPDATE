@@ -4,6 +4,7 @@ import { createHash, createSign, randomUUID } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { backupKey,createArchiveStore } from './archive-store.mjs';
 import { releaseWindow,releaseState } from '../public/assets/release-window.mjs';
+import {publicationWindow,hasArrivalEvidence} from '../public/assets/publication-window.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CELL_FIELDS = 'userEnteredValue,userEnteredFormat,dataValidation,chipRuns,textFormatRuns,note';
@@ -26,11 +27,12 @@ export function eligibilityReason(product, now = new Date()) {
   if (product.eligibility?.passed !== true) return 'eligibility-not-verified';
   if (!['sneaker','clog','sandal','platform-sandal','hybrid','jelly','platform-shoe'].includes(product.category)) return 'excluded-category';
   if (!Array.isArray(product.fit) || !product.fit.some(x=>['MLB','DISCOVERY'].includes(x))) return 'missing-brand-fit';
-  if (!releaseWindow(product) || product.releaseStatus !== 'released') return 'unknown-release-date';
+  if ((!releaseWindow(product)&&!product.firstPublishedAt) || product.releaseStatus !== 'released') return 'unknown-release-date';
   const asOf = new Date(now.getTime()+9*3600_000).toISOString().slice(0,10);
   if (releaseState(product,asOf) !== 'expired') return 'not-expired';
   const e = product.dateEvidence;
-  if (!e || e.verified !== true || !['day','month'].includes(e.precision) || !http(e.url) || !e.excerpt || !Number.isFinite(Date.parse(e.verifiedAt))) return 'missing-release-evidence';
+  if(product.firstPublishedAt&&!publicationWindow(product))return 'invalid-publication-date';
+  if (!hasArrivalEvidence(product,asOf)&&(!e || e.verified !== true || !['day','month'].includes(e.precision) || !http(e.url) || !e.excerpt || !Number.isFinite(Date.parse(e.verifiedAt)))) return 'missing-release-evidence';
   if(!http(product.productEvidenceUrl) || !Number.isFinite(Date.parse(product.lastVerifiedAt))) return 'missing-product-verification';
   if (!product.id || !product.brand || !product.name || !http(product.url) || !http(product.image)) return 'incomplete-product';
   return null;
@@ -151,7 +153,7 @@ export function prepareRows(entries,snapshot,cfg) {
     const archiveBrand=schema.country<0&&entry.route.country!==cfg.defaultCountry?`${cleanBrand} (${entry.route.country})`:cleanBrand;
     const hex=(p.colors||[]).map(c=>c.hex).filter(x=>/^#[\dA-Fa-f]{6}$/.test(x||'')).join(' / ');
     // The site's season parser expects a YYYY-MM month. This new row uses its verified release month.
-    const raw=[p.releaseDate.slice(0,7),archiveBrand,p.gender||'','shoe',null,p.name,p.material||'',colorText(p),hex,p.image,''];
+    const raw=[p.releaseDate?.slice(0,7)||'',archiveBrand,p.gender||'','shoe',null,p.name,p.material||'',colorText(p),hex,p.image,''];
     if(schema.country>=0) raw[schema.country]=entry.route.country;
     if(schema.releaseDate>=0) raw[schema.releaseDate]=p.releaseDate;
     if(schema.style>=0) raw[schema.style]=p.styleType==='official-product-id'?'':p.style||'';
@@ -167,6 +169,7 @@ export function prepareRows(entries,snapshot,cfg) {
       else if(raw[i]!==''&&raw[i]!==null) values[i].userEnteredValue={stringValue:String(raw[i])};
     }
     values[5].note=MARKER+entry.key;
+    if(p.firstPublishedAt)values[9].note=JSON.stringify({productUrl:p.url,firstPublishedAt:p.firstPublishedAt,archiveDue:publicationWindow(p)?.end,newArrivalSource:p.arrivalEvidence?.url,newArrivalCheckedAt:p.arrivalEvidence?.verifiedAt,releaseDate:p.releaseDate||null});
     return {values};
   });
 }

@@ -15,7 +15,10 @@ export function releaseWindow(product){
   if(product.verifiedReleaseWindow&&(product.verifiedReleaseWindow.start!==range.start||product.verifiedReleaseWindow.end!==range.end))return null;
   return range;
 }
+import {publicationState,hasArrivalEvidence} from './publication-window.mjs';
 export function releaseState(product,asOf){
+  if(product?.firstPublishedAt)return publicationState(product,asOf);
+  if(validCalendarDay(asOf)&&hasArrivalEvidence(product,asOf))return 'released';
   if(!validCalendarDay(asOf))return 'invalid';const range=releaseWindow(product);if(!range)return 'invalid';
   const cutoff=calendarShift(asOf,-3);
   if(range.end<cutoff)return 'expired';
@@ -24,4 +27,4 @@ export function releaseState(product,asOf){
   if(range.precision==='month')return 'uncertain';
   return range.start<=calendarShift(asOf,3)&&product.dateEvidence?.official===true?'upcoming':'uncertain';
 }
-export function releaseSortKey(product){return releaseWindow(product)?.start||'';}
+export function releaseSortKey(product){return product.firstPublishedAt?.slice(0,10)||product.arrivalEvidence?.verifiedAt?.slice(0,10)||releaseWindow(product)?.start||'';}

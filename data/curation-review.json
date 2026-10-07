@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-07T06:39:57.901Z",
+  "checkedAt": "2026-10-07T09:01:26.809Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -480,13 +480,13 @@
       "id": "zip3-59a1d79e714dce4a",
       "brand": "Louis Vuitton",
       "name": "LV Sneakerina",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "zip3-98da743f6522afd4",
       "brand": "Louis Vuitton",
       "name": "LV Sneakerina",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "zip3-569e17bb6a6e8748",
@@ -1021,12 +1021,6 @@
       "brand": "PANE",
       "name": "Crest Kick Women’s Shoes - Zebrass",
       "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "manual-981323eac05ed152",
-      "brand": "PANE",
-      "name": "Light Training Nogi Women’s Shoes - Moonless Night",
-      "reason": "release-day-evidence-required"
     },
     {
       "id": "manual-c544e9785b466782",
@@ -2889,12 +2883,6 @@
       "reason": "brand-fit-unverified"
     },
     {
-      "id": "xlsx-96e68f24261b0dec",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Women's Shoes – Silk Cyan",
-      "reason": "release-day-evidence-required"
-    },
-    {
       "id": "xlsx-bb46aaa12dfdfb40",
       "brand": "PANE",
       "name": "Pane Aria Women's Shoes – Plié",
@@ -3819,48 +3807,6 @@
       "reason": "brand-fit-unverified"
     },
     {
-      "id": "new-20260923-5bb11cd3432a6894",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Men’s Shoes – Silk Cyan",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-a8e13d96a0ce226a",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Women’s Shoes – Imperial Purple",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-88c7f38c914647b8",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Men’s Shoes – Imperial Purple",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-9d4f3d8a63e71a0c",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Men’s Shoes – Crimson Ink",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-55d72bde31a66e94",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Women’s Shoes – Crimson Ink",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-1fab5b6b78b13618",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Men’s Shoes – Gray Moss",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-9d29fb4817fa10e0",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Women’s Shoes – Gray Moss",
-      "reason": "release-day-evidence-required"
-    },
-    {
       "id": "new-20260923-8813a5e8f6b50104",
       "brand": "PANE",
       "name": "PANE x HEAD Riviera Run Women’s Shoes – Navy Rally",
@@ -3925,18 +3871,6 @@
       "brand": "PANE",
       "name": "Pane Pace Nostalgia 2.0 Women’s Shoes – Pastel Drift",
       "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-0c4cdf0b3d5c2728",
-      "brand": "PANE",
-      "name": "Pane Light Training Nogi Women’s Shoes – Home Court",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-fb0055cbc6657935",
-      "brand": "PANE",
-      "name": "Pane Light Training Nogi Men’s Shoes – Home Court",
-      "reason": "release-day-evidence-required"
     },
     {
       "id": "new-20260923-ba9773079048aaca",
@@ -6165,30 +6099,6 @@
       "reason": "brand-fit-unverified"
     },
     {
-      "id": "new-20260923-32587c9dd88b787f",
-      "brand": "Bottega Veneta",
-      "name": "Men's Shot Sneaker in Bark green/alabaster",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-0cf5e92695d47286",
-      "brand": "Bottega Veneta",
-      "name": "Men's Shot Sneaker in Black/alabaster",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-9522a7640a5200af",
-      "brand": "Bottega Veneta",
-      "name": "Men's Orbit Sneaker in Black/silver",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-2b6a7b3bf2e54c2c",
-      "brand": "Bottega Veneta",
-      "name": "Men's Orbit Sneaker in Bark green/shamrock",
-      "reason": "brand-fit-unverified"
-    },
-    {
       "id": "new-20260923-b675a14d233ac636",
       "brand": "Bottega Veneta",
       "name": "Women's Orbit Sneaker in Silver / White / Optic white rubber",
@@ -8076,31 +7986,31 @@
       "id": "new-20260923-8efcb591598d4a78",
       "brand": "On",
       "name": "Men's Cloudhorizon 2 Winter | Grain",
-      "reason": "excluded-footwear"
+      "reason": "brand-fit-unverified"
     },
     {
       "id": "new-20260923-4570aa240903972a",
       "brand": "On",
       "name": "Men's Cloudhorizon 2 Winter | Grain",
-      "reason": "excluded-footwear"
+      "reason": "brand-fit-unverified"
     },
     {
       "id": "new-20260923-5972ad1944ffa63b",
       "brand": "On",
       "name": "Men's Cloudhorizon 2 Winter | Grain",
-      "reason": "excluded-footwear"
+      "reason": "brand-fit-unverified"
     },
     {
       "id": "new-20260923-c7aad499ab0e7964",
       "brand": "On",
       "name": "Men's Cloudhorizon 2 Winter | Grain",
-      "reason": "excluded-footwear"
+      "reason": "brand-fit-unverified"
     },
     {
       "id": "new-20260923-8115faa33abc08e3",
       "brand": "On",
       "name": "Men's Cloudhorizon 2 Winter | Grain",
-      "reason": "excluded-footwear"
+      "reason": "brand-fit-unverified"
     },
     {
       "id": "new-20260923-8abece4b3b1d4f93",
@@ -8136,12 +8046,6 @@
       "id": "new-20260923-e4c11bf3bb479726",
       "brand": "On",
       "name": "Men's Cloud 6 Geo Waterproof Black | Black",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-2e902fa978c7dc7d",
-      "brand": "On",
-      "name": "Men's Cloudvista 3 Waterproof Black | Black",
       "reason": "brand-fit-unverified"
     },
     {
@@ -8484,48 +8388,6 @@
       "id": "new-20260923-719aa9935c660361",
       "brand": "On",
       "name": "Women's Cloudtilt Moon Winter | Kasha",
-      "reason": "excluded-footwear"
-    },
-    {
-      "id": "new-20260923-dcfeec74baea92fc",
-      "brand": "PANE",
-      "name": "Pane Light Training Nogi Women’s Shoes – Cloudine - Cloudine / US 5/EU 35/UK 2.5",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-543725d4a1749c4a",
-      "brand": "PANE",
-      "name": "Pane Light Training Nogi Men’s Shoes – Cloudine - Cloudine / US 7/EU 40/UK 6.5",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-8acae7430e9a7ae1",
-      "brand": "Prada",
-      "name": "Collapse antiqued nappa leather sneakers with hooks",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-df9645f37b8eddcb",
-      "brand": "Prada",
-      "name": "Speedrock leather and mesh fabric sneakers",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-8c2a30cee1296c64",
-      "brand": "Prada",
-      "name": "Prada America's Cup metallic leather and bike fabric sneakers",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-2ed65254c51d1a39",
-      "brand": "Prada",
-      "name": "Prax suede and Re-Nylon sneakers",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-6b70459cbe7db07e",
-      "brand": "Prada",
-      "name": "Leather sneakers",
       "reason": "brand-fit-unverified"
     },
     {
@@ -8646,18 +8508,6 @@
       "id": "new-20260923-e7ab48ab800fa2d9",
       "brand": "Golden Goose",
       "name": "Ball Star uomo in pelle blu navy con stella in pelle ton sur ton",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-65b0d4ef965c9856",
-      "brand": "Gucci",
-      "name": "Women's Gucci Ace sneaker",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-589a5631ce5ea791",
-      "brand": "Gucci",
-      "name": "Women's Gucci Ace sneaker",
       "reason": "brand-fit-unverified"
     },
     {
@@ -11757,12 +11607,6 @@
       "reason": "brand-fit-unverified"
     },
     {
-      "id": "new-20260923-19918d424820ab2e",
-      "brand": "Nike",
-      "name": "Nike Pegasus Plus 2",
-      "reason": "brand-fit-unverified"
-    },
-    {
       "id": "new-20260923-f96c5615204cbffe",
       "brand": "Nike",
       "name": "Nike Air Max Fire",
@@ -11859,12 +11703,6 @@
       "reason": "brand-fit-unverified"
     },
     {
-      "id": "new-20260923-a0b21e5a752af27e",
-      "brand": "Nike",
-      "name": "Nike Pegasus Plus 2",
-      "reason": "brand-fit-unverified"
-    },
-    {
       "id": "new-20260923-5cfef03bf97a3f87",
       "brand": "Nike",
       "name": "Sabrina 4 \"The Switch\"",
@@ -11898,12 +11736,6 @@
       "id": "new-20260923-b8d58505699c6f9a",
       "brand": "Nike",
       "name": "Nike Tennis Essential",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "new-20260923-4819253c162ff664",
-      "brand": "Nike",
-      "name": "Nike Air Max 95 Recraft",
       "reason": "brand-fit-unverified"
     },
     {
@@ -12843,12 +12675,6 @@
       "reason": "brand-fit-unverified"
     },
     {
-      "id": "live-994ec45581750f46",
-      "brand": "Alo",
-      "name": "Sunset Sneaker",
-      "reason": "brand-fit-unverified"
-    },
-    {
       "id": "live-2544a04ca6784cee",
       "brand": "Dries Van Noten",
       "name": "Suede sneakers",
@@ -12969,12 +12795,6 @@
       "reason": "brand-fit-unverified"
     },
     {
-      "id": "live-8d6b78366ba84f37",
-      "brand": "ALOHAS",
-      "name": "Tb.490 Club Nylon Black Sneakers",
-      "reason": "brand-fit-unverified"
-    },
-    {
       "id": "live-4a0bcfc4631cf8e0",
       "brand": "ALOHAS",
       "name": "Tb.00 Barefoot Rife Cocoa & Off White Leather Sneakers",
@@ -12990,18 +12810,6 @@
       "id": "live-c9e663eede4b5cc1",
       "brand": "ALOHAS",
       "name": "Tb.00 Barefoot Crochet Cream Leather Sneakers",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "live-8dd4fbad2b988d31",
-      "brand": "ALOHAS",
-      "name": "Tb.61 Aera Dark Brown Sneakers",
-      "reason": "brand-fit-unverified"
-    },
-    {
-      "id": "live-c805172140149a66",
-      "brand": "ALOHAS",
-      "name": "Tb.61 Aera Cream Sneakers",
       "reason": "brand-fit-unverified"
     },
     {
@@ -13957,24 +13765,6 @@
       "reason": "brand-fit-unverified"
     },
     {
-      "id": "verified-lv-drop-300-black-1akp23",
-      "brand": "Louis Vuitton",
-      "name": "LV Drop 300 Sneaker - Black",
-      "reason": "release-month-window-uncertain"
-    },
-    {
-      "id": "verified-lv-drop-300-orange-1akp11",
-      "brand": "Louis Vuitton",
-      "name": "LV Drop 300 Sneaker - Orange",
-      "reason": "release-month-window-uncertain"
-    },
-    {
-      "id": "verified-lv-drop-300-blue-1akp2m",
-      "brand": "Louis Vuitton",
-      "name": "LV Drop 300 Sneaker - Blue",
-      "reason": "release-month-window-uncertain"
-    },
-    {
       "id": "live-5fd6d6f51b527fbe",
       "brand": "Nike",
       "name": "Pegasus Plus 2",
@@ -14068,18 +13858,6 @@
       "id": "live-41ba46a56d70447a",
       "brand": "On",
       "name": "Limited edition Cloudrunner 3 Max LN1 Women – Everyday running, long runs, stable ride",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "live-38d151b1f66721ba",
-      "brand": "On",
-      "name": "New color Cloudvista 3 Women – Trail Running, Mid-distances, all terrain",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "live-a4cee0e20826cfca",
-      "brand": "On",
-      "name": "New color Cloudvista 3 Men – Trail Running, Mid-distances, all terrain",
       "reason": "release-day-evidence-required"
     },
     {
@@ -14248,7 +14026,7 @@
       "id": "live-203d039ba2d46345",
       "brand": "Louis Vuitton",
       "name": "LV Sneakerina",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "live-92ad7e5b58a51088",
@@ -14308,25 +14086,25 @@
       "id": "live-2a990be37731a15b",
       "brand": "Louis Vuitton",
       "name": "LV Sneakerina",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "live-9ea911955218ec80",
       "brand": "Louis Vuitton",
       "name": "LV Sneakerina",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "live-7a5791ac2851d4cb",
       "brand": "Louis Vuitton",
       "name": "LV Sneakerina",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "live-1425bbd73d0c434e",
       "brand": "Louis Vuitton",
       "name": "LV Sneakerina",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "live-08fb87f149cbec34",
@@ -14344,13 +14122,13 @@
       "id": "live-15b4b597f5b30ceb",
       "brand": "Louis Vuitton",
       "name": "LV Sneakerina Open Back",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "live-3adcf2b1c5809b79",
       "brand": "Louis Vuitton",
       "name": "LV Sneakerina",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "live-f7ff6b4b232f0bdd",
@@ -14380,7 +14158,7 @@
       "id": "live-04fc14a59c924836",
       "brand": "Louis Vuitton",
       "name": "LV Sneakerina",
-      "reason": "brand-fit-unverified"
+      "reason": "hybrid-review-required"
     },
     {
       "id": "live-13d807918f45ffda",
@@ -16057,6 +15835,120 @@
       "reason": "excluded-footwear"
     },
     {
+      "id": "arrival-c22dcff6f576256d9203",
+      "brand": "Miu Miu",
+      "name": "Printed leather mules",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-7d6037c4091b3b5fca9d",
+      "brand": "Gucci",
+      "name": "Women's Casanova mule",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-274ca59f6bf29f1d9e8b",
+      "brand": "Miu Miu",
+      "name": "Crocodile embossed calfskin Deck shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-bf283512814f2916ca83",
+      "brand": "Louis Vuitton",
+      "name": "LV Cosy Comfort Closed Mule",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-8c11f938f8fa73efae79",
+      "brand": "FILA",
+      "name": "[한소희 착용 ] 휠라 에샤페 실버문",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-403a0e990355c4bee2ca",
+      "brand": "FILA",
+      "name": "[차정원 착용 ] 휠라 에샤페 LX 말차",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-39f7df7bb07e86be421b",
+      "brand": "FILA",
+      "name": "[한소희 착용 ] 휠라 글리오 LX 에스프레소",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-d5c774fe84722acf037b",
+      "brand": "FILA",
+      "name": "[우즈 착용 ] 하레핀 1998 말차",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-e88fffb382898154e156",
+      "brand": "PUMA",
+      "name": "Speedcat OG",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-b32989ab4eb73430409f",
+      "brand": "PUMA",
+      "name": "Speedcat Ballet Dress-Up",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-4229e273d1921d9aa5c8",
+      "brand": "PUMA",
+      "name": "Speedcat OG",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-bd2d8fa34ff8edb03925",
+      "brand": "PUMA",
+      "name": "Speedcat Ballet Dress-Up",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-0e2cd02619a29ca52f5f",
+      "brand": "PUMA",
+      "name": "Arizona Suede",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-cb79f6400396e350bf8d",
+      "brand": "PUMA",
+      "name": "Speedcat Ballet Dress-Up",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-de152d857f00699601ac",
+      "brand": "Nike",
+      "name": "Air Jordan 1 High OG \"Royal\"",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "live-994ec45581750f46",
+      "brand": "Alo",
+      "name": "ALO Sunset Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-15e3315dd937326cd63c",
+      "brand": "Louis Vuitton",
+      "name": "LV Stadium Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-7bfbc18a95e62fc8fed3",
+      "brand": "Louis Vuitton",
+      "name": "Time Out Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-b7843630cdec6b89520b",
+      "brand": "Moncler",
+      "name": "Trailgrip Lite3 Nubuck & Suede Sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "official-salomon-l45404900",
       "brand": "Salomon",
       "name": "XT-6 PROTECTIVE",
@@ -16066,6 +15958,48 @@
       "id": "official-salomon-l45397400",
       "brand": "Salomon",
       "name": "XT-WHISPER GORE-TEX",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-dior-hooper-beige-blue-3sn375aed-h560",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker Beige and Blue Dior Oblique Jacquard and Black Suede Calfskin",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-dior-hooper-black-oblique-3sn375aed-h960",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker Black Dior Oblique Jacquard and Black Suede Calfskin",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-dior-hooper-white-navy-3sn376zdf-h009",
+      "brand": "Dior",
+      "name": "Dior Hooper Low-Top Sneaker White Canvas and Navy Blue Suede Calfskin",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-lv-drop-300-black-1akp23",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Black",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-lv-drop-300-blue-1akp2m",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Blue",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-lv-drop-300-orange-1akp11",
+      "brand": "Louis Vuitton",
+      "name": "LV Drop 300 Sneaker - Orange",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "verified-new-balance-mt24yj",
+      "brand": "New Balance",
+      "name": "TDS MT2",
       "reason": "representative-photo-review-required"
     },
     {
@@ -16084,12 +16018,6 @@
       "id": "lv-time-out-sneaker-1akyik",
       "brand": "Louis Vuitton",
       "name": "Time Out Sneaker",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "verified-new-balance-mt24yj",
-      "brand": "New Balance",
-      "name": "TDS MT2",
       "reason": "representative-photo-review-required"
     }
   ]

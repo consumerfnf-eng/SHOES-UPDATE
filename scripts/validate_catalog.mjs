@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {curateProduct,POLICY,validDay,httpUrl,shiftMonth,validateSignals,popularity,kstDay,officialEvidenceFor} from './curation.mjs';
 import {validateSocialMetrics,withSocialComparisons} from './social-metrics.mjs';
 import {releaseWindow,releaseState} from '../public/assets/release-window.mjs';
+import {hasArrivalEvidence,publicationWindow} from '../public/assets/publication-window.mjs';
 import {SEARCH_CONCEPTS,validPublicSearchConcepts,productCollaborationBrands} from './keyword-taxonomy.mjs';
 import {buildKeywordCatalog,KEYWORD_METHOD} from './search-keywords.mjs';
 import {buildStyleTrendBoard} from './style-trend-board.mjs';
@@ -26,12 +27,16 @@ export function validateSnapshot(catalog) {
     assert(Array.isArray(p.fit)&&p.fit.length&&p.fit.every(f=>['MLB','DISCOVERY'].includes(f)),'Invalid fit');
     assert(Array.isArray(p.fitReasons)&&p.fitReasons.length,'Missing selection reasons');
     const release=releaseWindow(p),state=releaseState(p,catalog.asOf);
-    assert(release,'Invalid verified release day/month');
+    const arrival=hasArrivalEvidence(p,catalog.asOf);
+    assert(release||arrival,'Missing release or official New Arrivals evidence');
     assert(['released','upcoming'].includes(state),'Product outside confirmed publication window');
     assert.equal(p.releaseStatus,state,'Wrong release state');
-    assert(p.dateEvidence?.verified===true&&['day','month'].includes(p.dateEvidence.precision),'Missing release evidence');
-    if(release.precision==='month')assert.deepEqual(p.verifiedReleaseWindow,{start:release.start,end:release.end},'Missing exact month interval');
-    assert(httpUrl(p.dateEvidence.url)&&p.dateEvidence.excerpt&&Number.isFinite(Date.parse(p.dateEvidence.verifiedAt)),'Invalid release provenance');
+    if(!arrival){
+      assert(p.dateEvidence?.verified===true&&['day','month'].includes(p.dateEvidence.precision),'Missing release evidence');
+      assert(httpUrl(p.dateEvidence.url)&&p.dateEvidence.excerpt&&Number.isFinite(Date.parse(p.dateEvidence.verifiedAt)),'Invalid release provenance');
+    }
+    if(release?.precision==='month')assert.deepEqual(p.verifiedReleaseWindow,{start:release.start,end:release.end},'Missing exact month interval');
+    if(catalog.retentionBasis==='first-published')assert(publicationWindow(p),'Missing first publication timestamp');
     if(p.releaseStatus==='upcoming')assert(p.dateEvidence.official===true,'Upcoming date must be official');
     assert(httpUrl(p.url)&&httpUrl(p.image)&&httpUrl(p.productEvidenceUrl),'Invalid product/image evidence URL');
     assert(Number.isFinite(Date.parse(p.lastVerifiedAt)),'Invalid product verification timestamp');

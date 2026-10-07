@@ -95,6 +95,17 @@
   ],
   "Balenciaga": [
     {
+      "name": "Balenciaga Official New Arrivals",
+      "url": "https://www.balenciaga.com/en-us/women/discover-women",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.balenciaga.com/en-us/women/shoes-for-women",
+        "targetUrl": "https://www.balenciaga.com/en-us/women/discover-women",
+        "contentHash": "e25993164fdf0f9d6ef4517aa4c3ba86a40769642f85f1bcb7e687593e4b4cb7",
+        "checkedAt": "2026-10-07T07:36:15.807Z"
+      }
+    },
+    {
       "name": "Balenciaga Official daily source",
       "url": "https://www.balenciaga.com/en-us/women/shoes-for-women"
     }
@@ -188,6 +199,14 @@
     }
   ],
   "Celine": [
+    {
+      "name": "Celine Official New Arrivals",
+      "url": "https://www.celine.com/en-us/new/?start=20&sz=100"
+    },
+    {
+      "name": "Celine Official New Arrivals",
+      "url": "https://www.celine.com/en-us/new/"
+    },
     {
       "name": "Celine Official daily source",
       "url": "https://www.celine.com/en-us/men/shoes/sneakers/"
@@ -363,6 +382,18 @@
   ],
   "FILA": [
     {
+      "name": "FILA Official New Arrivals",
+      "url": "https://www.fila.co.kr/collections/women-new"
+    },
+    {
+      "name": "FILA Official New Arrivals",
+      "url": "https://www.fila.co.kr/collections/men-new"
+    },
+    {
+      "name": "FILA Official regional New Arrivals check",
+      "url": "https://www.fila.co.kr/"
+    },
+    {
       "name": "FILA Official daily source",
       "url": "https://www.fila.com/"
     }
@@ -381,6 +412,10 @@
   ],
   "Gucci": [
     {
+      "name": "Gucci Official New Arrivals",
+      "url": "https://www.gucci.com/us/en/ca/whats-new/new-in/this-week-women-c-new-women"
+    },
+    {
       "name": "Gucci Official daily source",
       "url": "https://www.gucci.com/us/en/ca/women/shoes-for-women-c-women-shoes?sort=newest"
     }
@@ -392,6 +427,10 @@
     }
   ],
   "Hermès": [
+    {
+      "name": "Hermès Official regional New Arrivals check",
+      "url": "https://www.hermes.com/us/en/category/men/shoes/sneakers/"
+    },
     {
       "name": "Hermès Official daily source",
       "url": "https://www.hermes.com/us/en/category/women/shoes/"
@@ -489,6 +528,10 @@
   ],
   "Louis Vuitton": [
     {
+      "name": "Louis Vuitton Official New In Shoes",
+      "url": "https://us.louisvuitton.com/eng-us/women/shoes/new-in-shoes/_/N-tmyjnh4"
+    },
+    {
       "name": "Louis Vuitton Official daily source",
       "url": "https://us.louisvuitton.com/eng-us/women/shoes/all-shoes/_/N-t1mcbujj"
     },
@@ -557,6 +600,14 @@
   ],
   "Mizuno": [
     {
+      "name": "Mizuno Official regional New Arrivals check",
+      "url": "https://usa.mizuno.com/running/featured/new-arrivals/"
+    },
+    {
+      "name": "Mizuno Official regional New Arrivals check",
+      "url": "https://usa.mizuno.com/women/featured/new-arrivals/"
+    },
+    {
       "name": "Mizuno Official daily source",
       "url": "https://www.mizunousa.com/"
     }
@@ -568,6 +619,10 @@
     }
   ],
   "Moncler": [
+    {
+      "name": "Moncler Official New Arrivals",
+      "url": "https://www.moncler.com/en-us/women/new-in/view-all-new-arrivals"
+    },
     {
       "name": "Moncler Official daily source",
       "url": "https://www.moncler.com/en-us/women/shoes"
@@ -646,6 +701,14 @@
     }
   ],
   "Onitsuka Tiger": [
+    {
+      "name": "Onitsuka Tiger Official regional New Arrivals check",
+      "url": "https://www.onitsukatiger.com/se/en-se/new-arrivals/new-arrivals/"
+    },
+    {
+      "name": "Onitsuka Tiger Official regional New Arrivals check",
+      "url": "https://www.onitsukatiger.com/in/en-in/men/new-arrivals.html"
+    },
     {
       "name": "Onitsuka Tiger Official daily source",
       "url": "https://www.onitsukatiger.com/us/en-us/new-arrivals/c/0102"
@@ -798,6 +861,10 @@
     }
   ],
   "Saint Laurent": [
+    {
+      "name": "Saint Laurent Official regional New Arrivals check",
+      "url": "https://www.ysl.com/en-us/collections/women-summer-26-shoes-new-arrivals"
+    },
     {
       "name": "Saint Laurent Official shoes",
       "url": "https://www.ysl.com/en-us/ca/shop-women/shoes"

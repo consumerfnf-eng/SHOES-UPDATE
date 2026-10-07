@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add public/data/catalog.json data/archive-queue.json data/curation-review.json
+          git add public/data/catalog.json data/archive-queue.json data/curation-review.json data/publication-history.json
           if ! git diff --cached --quiet; then
             git commit -m "shoes expiry maintenance $(date -u +%F)"
             git push origin HEAD:main

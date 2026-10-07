@@ -53,10 +53,18 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   if(keywordRefresh&&incoming.length)throw Error('Keyword refresh cannot change product records');
   if(keywordRefresh){const fields=['sourceRanks','searchRankStatus','forecastStatus','editorialStatus','keywordCheckedAt','styleObservations','styleMarketStatus'];collection={...source.collection,...Object.fromEntries(fields.filter(k=>collection?.[k]!==undefined).map(k=>[k,collection[k]]))};}
   const socialPatches=(socialEvidence.products||[]).filter(e=>e.id&&e.brand&&e.style&&Array.isArray(e.socialMetrics)).map(e=>({id:e.id,brand:e.brand,style:e.style,socialMetrics:e.socialMetrics}));
-  const products=applyReviewedEvidence(applyReviewedEvidence(mergePreserving(source.products,incoming),evidence.products),socialPatches);
+  const historyFile=path.join(directory,'data/publication-history.json');
+  const history=await readJson(historyFile,{schemaVersion:1,entries:{}});
+  // Previous public rows are proof even in a fresh checkout; raw firstSeen is not.
+  for(const p of prior.products||[])if(!history.entries[p.id])history.entries[p.id]={firstPublishedAt:p.firstPublishedAt||prior.publishedAt,brand:p.brand,style:p.style,url:p.url};
+  const products=applyReviewedEvidence(applyReviewedEvidence(mergePreserving(source.products,incoming),evidence.products),socialPatches).map(p=>{
+    const {firstPublishedAt,...unpublished}=p;
+    return history.entries[p.id]?{...p,firstPublishedAt:history.entries[p.id].firstPublishedAt}:unpublished;
+  });
   const socialStatus=(socialEvidence.sourceStatus||[]).map(s=>Object.fromEntries(['platform','name','url','status','reason','checkedAt','collectionMode','automatedAdapter'].filter(k=>s[k]!==undefined).map(k=>[k,s[k]])));
   const effectiveCollection={...(collection||source.collection||{}),...(socialStatus.length?{socialMetricStatus:socialStatus}:{})};
   const result=curateCatalog(products,{now,previous:prior,collection:effectiveCollection});
+  result.queue.products=result.queue.products.filter(p=>p.firstPublishedAt);
   // Preserve other records internally; publish the six requested footwear types.
   // Expired records still enter the archive independently of this display filter.
   result.snapshot.products=result.snapshot.products.filter(p=>isPublishedFootwear(p)&&p.releaseStatus==='released');
@@ -70,6 +78,14 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
     });
   }
   const photoCache=await readJson(path.join(directory,'data/photo-cache.json'),{images:{}});
+  for(const p of result.snapshot.products){
+    if(!history.entries[p.id])history.entries[p.id]={firstPublishedAt:new Date(now).toISOString(),brand:p.brand,style:p.style,url:p.url};
+    p.firstPublishedAt=history.entries[p.id].firstPublishedAt;
+  }
+  result.snapshot.retentionBasis='first-published';
+  result.snapshot.sourceStatus.selectionBasis=effectiveCollection.selectionBasis||'verified-release-legacy';
+  result.snapshot.sourceStatus.catalogExhaustive=effectiveCollection.catalogExhaustive===true;
+  if(effectiveCollection.selectionBasis==='official-new-arrivals')result.snapshot.sourceStatus.notes[0]='공식 New·New Arrivals 또는 상품별 NEW 표시와 품목·상품 정보를 확인합니다. 출시일이 미공개이면 비워 두며, 최초 게시일부터 3개월간 표시합니다.';
   for(const p of result.snapshot.products)if(p.presentation){const cached=photoCache.images[p.presentation.image];if(cached&&/^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(cached.path))p.presentation.cachedPath=cached.path;}
   result.snapshot.products=withSocialComparisons(result.snapshot.products);
   Object.assign(result.snapshot,buildKeywordCatalog(result.snapshot.products,result.snapshot.sourceRanks,{now}));
@@ -90,6 +106,11 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
     await fs.copyFile(sourceFile,path.join(directory,'logs/backups/catalog-source-before.json'));
     await atomicJson(sourceFile,keywordRefresh?{...source,collection,lastKeywordsRefreshedAt:new Date(now).toISOString()}:{...source,products,collection:collection||source.collection||{},lastCuratedAt:new Date(now).toISOString()});
   }
+  const priorQueue=await readJson(path.join(directory,'data/archive-queue.json'),{products:[]});
+  // Retain retryable transfers even when a later source response omits the item.
+  const active=new Set(result.snapshot.products.map(p=>p.id));
+  result.queue.products=[...new Map([...priorQueue.products,...result.queue.products].filter(p=>!active.has(p.id)).map(p=>[p.id,p])).values()];
+  await atomicJson(historyFile,history);
   await atomicJson(path.join(directory,'data/archive-queue.json'),result.queue);
   await atomicJson(path.join(directory,'data/curation-review.json'),result.review);
   // Public catalog is the last write: observers can only see a fully serialized snapshot.
