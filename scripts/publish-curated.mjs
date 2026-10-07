@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
-import {curateCatalog,canonicalBrand} from './curation.mjs';
+import {curateCatalog,canonicalBrand,canonicalUrl,isOfficialProductUrl} from './curation.mjs';
 import {mergePreserving} from './collect-evidence.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {productPresentation} from './product-presentation.mjs';
@@ -43,6 +43,14 @@ export function applyReviewedEvidence(input,evidence) {
         for(const field of ['name','brand','style','url','image','productEvidenceUrl','productVerifiedAt','officialProductEvidence','officialImageEvidence'])delete next[field];
       }
       products=mergePreserving(products,[next]);
+      // A color-only review has its own proof date. It must not refresh the
+      // whole product's verification, and a later blank listing cannot erase it.
+      const colorProof=e.colorwayEvidence;
+      if(e.colorway&&colorProof?.verified===true&&Number.isFinite(Date.parse(colorProof.checkedAt))
+        &&isOfficialProductUrl(found.brand,colorProof.url)&&canonicalUrl(colorProof.url)===canonicalUrl(found.url)
+        &&(!found.colorway||colorProof.checkedAt>=(found.colorwayEvidence?.checkedAt||found.productVerifiedAt||''))){
+        products=products.map(p=>p.id===found.id?{...p,colorway:e.colorway,colors:e.colors||[e.colorway],colorwayEvidence:colorProof}:p);
+      }
     }
     else if(!sameId&&e.id&&e.name&&e.brand) products=mergePreserving(products,[e]);
   }

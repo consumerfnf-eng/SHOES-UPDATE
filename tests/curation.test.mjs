@@ -138,6 +138,20 @@ test('reviewed evidence rejects conflicting IDs and never joins a SKU across bra
     await assert.rejects(publishCurated({directory:dir,now}),/Conflicting reviewed product identity/);
   }finally{await fs.rm(dir,{recursive:true,force:true});}
 });
+test('a weekly listing missing color names cannot undo a reviewed colorway or renew publication age',async()=>{
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'curated-color-'));
+  try{
+    const original=product({colorway:''});
+    await atomicJson(path.join(dir,'data/catalog-source.json'),{products:[original]});
+    await atomicJson(path.join(dir,'data/release-evidence.json'),{products:[{id:original.id,brand:original.brand,style:original.style,url:original.url,colorway:'Solar Turbo / Core Black / Lucid Red',colorwayEvidence:{verified:true,url:original.url,checkedAt:now.toISOString()}}]});
+    const first=await publishCurated({directory:dir,now});
+    const next=await publishCurated({directory:dir,now:new Date('2026-10-04T01:00:00Z'),incoming:[{...original,colorway:''}]});
+    assert.equal(next.snapshot.products[0].colorway,'Solar Turbo / Core Black / Lucid Red');
+    assert.equal(next.snapshot.products[0].firstPublishedAt,first.snapshot.products[0].firstPublishedAt);
+    assert.equal(next.snapshot.products[0].productVerifiedAt,first.snapshot.products[0].productVerifiedAt);
+  }finally{await fs.rm(dir,{recursive:true,force:true});}
+});
+
 test('publication preserves complete raw records, supports URL atomic files, expiry keeps successful publish stamp',async()=>{
   const dir=await fs.mkdtemp(path.join(os.tmpdir(),'curated-shoes-'));
   try{await atomicJson(new URL('file:///'+path.join(dir,'data/catalog-source.json').replaceAll('\\','/')),{schemaVersion:1,products:[product({custom:'preserve me'}),product({id:'unknown',dateEvidence:undefined})]});

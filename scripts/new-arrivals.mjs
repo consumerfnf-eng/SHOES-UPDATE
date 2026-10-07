@@ -125,6 +125,12 @@ export function officialVariantLabels(product,candidate){
   if(/^(?:image\s*\d+|(?:women|men)\s*\||sneakers?\s*[·|]|공식 색상명 미표기)/i.test(p.colorway||''))p.colorway='';
   return p;
 }
+export function adidasProductColor(text,url){
+  // Bind a label to this exact PDP. Review text and neighbouring color tiles
+  // can describe different colorways, even when they share the same model.
+  const own=markdownLinks(text).find(l=>!l.image&&canonicalUrl(l.url)===canonicalUrl(url)&&/!\[Product colou?r:/i.test(l.label));
+  return own?.label.match(/!\[Product colou?r:\s*([^\]]+)\]/i)?.[1]?.trim()||'';
+}
 function pageProduct(candidate,text,checkedAt,existing){
   const url=candidate.url;
   if(existing&&officialEvidenceFor(existing,kstDay(checkedAt))){
@@ -165,6 +171,7 @@ function pageProduct(candidate,text,checkedAt,existing){
     const alt=chosen.alt.replace(/^LOEWE\s+/i,'').replace(/\s+/g,' ').trim(),prefix=clean(heading)+' ';
     if(alt.toLowerCase().startsWith(prefix.toLowerCase()))p.colorway=alt.slice(prefix.length);
   }
+  if(candidate.brand==='adidas')p.colorway=adidasProductColor(body,url)||p.colorway;
   if(/sneakerina|スニーカリーナ/i.test(p.name))p.officialCategory='Ballet sneaker';
   const hybrid=officialHybridReview(p,body,checkedAt);if(hybrid)p.hybridReview=hybrid;
   const base={verified:true,brand:p.brand,style,verifiedAt:checkedAt,verificationMethod:'official-new-arrivals-and-product-page',contentHash:digest(text),...(styleType?{identifierType:styleType}:{})};

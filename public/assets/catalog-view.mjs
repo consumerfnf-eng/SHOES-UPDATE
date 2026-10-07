@@ -170,8 +170,11 @@ export function variantColorLabel(p){
 export function uniqueColorVariants(group,activeId){
   const seen=new Map();
   for(const p of group){
-    const color=variantColorLabel(p).normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
-    const key=color||p.id;
+    const color=variantColorLabel(p).normalize('NFKC').toLowerCase().replace(/\s*[/|,·]\s*/g,'/').replace(/\s+/g,' ').trim();
+    // Official color names identify a colorway; approximate chip hex values do
+    // not. For unnamed duplicates, only an identical cached photo is evidence.
+    const photo=p.presentation?.cachedPath;
+    const key=color?`color:${color}`:/^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(photo||'')?`photo:${photo}`:`id:${p.id}`;
     if(!seen.has(key)||p.id===activeId)seen.set(key,p);
   }
   return [...seen.values()];

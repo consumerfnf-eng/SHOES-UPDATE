@@ -3529,6 +3529,42 @@
         "checkedAt": "2026-10-06T08:02:21.677037+00:00",
         "reason": "Official knitted upper and PVC strap on flat-adjusted sneaker sole."
       }
+    },
+    {
+      "id": "arrival-0238571a5a035485e194",
+      "brand": "adidas",
+      "style": "KI8294",
+      "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8294.html",
+      "colorway": "Solar Turbo / Core Black / Lucid Red",
+      "colors": [
+        "Solar Turbo / Core Black / Lucid Red"
+      ],
+      "colorwayEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8294.html",
+        "checkedAt": "2026-10-07T23:49:00.461Z",
+        "method": "exact-product-linked-official-color-label",
+        "contentHash": "7c53cdddf8692a1b54881a51c3aaa5e654e94e342999cdfb79e07b24daab8856",
+        "excerpt": "Product color: Solar Turbo / Core Black / Lucid Red"
+      }
+    },
+    {
+      "id": "arrival-9e8e0b0a5146e2dbaee6",
+      "brand": "adidas",
+      "style": "KI8293",
+      "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8293.html",
+      "colorway": "Solar Turbo / Core Black / Lucid Red",
+      "colors": [
+        "Solar Turbo / Core Black / Lucid Red"
+      ],
+      "colorwayEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8293.html",
+        "checkedAt": "2026-10-07T23:49:00.470Z",
+        "method": "exact-product-linked-official-color-label",
+        "contentHash": "7819714ffa2b98f737df6f772513ff33b50d651f841d061f15716cdc0d0caf09",
+        "excerpt": "Product color: Solar Turbo / Core Black / Lucid Red"
+      }
     }
   ]
 }
