@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {variantGroupName,groupProductVariants,uniqueColorVariants,variantColorLabel} from '../public/assets/catalog-view.mjs';
-import {officialVariantLabels,parseArrivalListing,listingProduct,adidasProductColor} from '../scripts/new-arrivals.mjs';
+import {officialVariantLabels,parseArrivalListing,listingProduct,adidasProductColor,collectNewArrivals} from '../scripts/new-arrivals.mjs';
 import fs from 'node:fs';
 import {applyReviewedEvidence} from '../scripts/publish-curated.mjs';
 
@@ -36,6 +36,12 @@ test('the reported ADIOS PRO 5 variants retain their official color evidence and
  const rows=applyReviewedEvidence(catalog.products.filter(p=>p.brand==='adidas'&&['KI8294','KI8293'].includes(p.style)),evidence.products.filter(e=>e.brand==='adidas'&&['KI8294','KI8293'].includes(e.style)));
  assert.equal(rows.length,2);assert.equal(uniqueColorVariants(rows).length,1);
  for(const p of rows){const e=evidence.products.find(e=>e.id===p.id);assert.equal(e.colorway,p.colorway);assert.equal(e.colorwayEvidence.url,p.url);assert(e.colorwayEvidence.verified);}
+});
+test('a current-product color picker below recommendations is still bound to the exact PDP',async()=>{
+ const url='https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8293.html',source='https://www.adidas.com/us/shoes-new_arrivals';
+ const pdp=`# ADIZERO ADIOS PRO 5 Running Shoes\nProduct code: KI8293\n![ADIZERO ADIOS PRO 5 Running Shoes](https://assets.adidas.com/KI8293.jpg)\n## You may also like\n[![Product color: White](https://assets.adidas.com/OTHER.jpg)](https://www.adidas.com/us/shoes/OTHER.html)\n[![Product color: Solar Turbo / Core Black / Lucid Red](https://assets.adidas.com/KI8293.jpg)](${url})`;
+ const result=await collectNewArrivals({sources:{adidas:[{url:source}]},brands:['adidas'],now:new Date('2026-10-08T00:00:00Z'),log:()=>{},read:async target=>target.endsWith(source)?`# New Arrivals\n[ADIZERO ADIOS PRO 5 Running Shoes](${url})`:pdp});
+ assert.equal(result.products.length,1);assert.equal(result.products[0].colorway,'Solar Turbo / Core Black / Lucid Red');
 });
 test('official variant labels do not take colors from navigation or adjacent products',()=>{
  const kering=officialVariantLabels({brand:'Bottega Veneta',name:'Orbit Sneaker',url:'https://www.bottegaveneta.com/en-us/orbit-sneaker-bark-green-shamrock-741357V2X403801.html',colorway:'Image 1'});assert.equal(kering.colorway,'bark green shamrock');

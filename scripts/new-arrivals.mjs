@@ -171,7 +171,7 @@ function pageProduct(candidate,text,checkedAt,existing){
     const alt=chosen.alt.replace(/^LOEWE\s+/i,'').replace(/\s+/g,' ').trim(),prefix=clean(heading)+' ';
     if(alt.toLowerCase().startsWith(prefix.toLowerCase()))p.colorway=alt.slice(prefix.length);
   }
-  if(candidate.brand==='adidas')p.colorway=adidasProductColor(body,url)||p.colorway;
+  if(candidate.brand==='adidas')p.colorway=adidasProductColor(text,url)||p.colorway;
   if(/sneakerina|スニーカリーナ/i.test(p.name))p.officialCategory='Ballet sneaker';
   const hybrid=officialHybridReview(p,body,checkedAt);if(hybrid)p.hybridReview=hybrid;
   const base={verified:true,brand:p.brand,style,verifiedAt:checkedAt,verificationMethod:'official-new-arrivals-and-product-page',contentHash:digest(text),...(styleType?{identifierType:styleType}:{})};
