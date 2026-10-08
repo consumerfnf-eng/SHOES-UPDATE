@@ -2,7 +2,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
-import {groupProductVariants,variantGroupKey,variantGroupName,uniqueColorVariants,officialImageUrl,officialProductUrl,releaseState,kstToday} from '../public/assets/catalog-view.mjs';
+import {groupProductVariants,preferWomenVariants,variantGroupKey,variantGroupName,uniqueColorVariants,officialImageUrl,officialProductUrl,releaseState,kstToday} from '../public/assets/catalog-view.mjs';
 import {isPublishedFootwear} from '../public/assets/footwear-policy.mjs';
 import {hasArrivalEvidence} from '../public/assets/publication-window.mjs';
 import {releaseWindow,calendarShift} from '../public/assets/release-window.mjs';
@@ -27,7 +27,7 @@ export function exportTrendModels(catalog,now,reviews) {
     return !!reviewed&&['side','three-quarter'].includes(reviewed.view)
       &&p.presentation?.image===reviewed.image&&p.presentation?.view===reviewed.view;
   });
-  return groupProductVariants(eligible).map(group=>({modelKey:variantGroupKey(group[0]),name:variantGroupName(group[0]),
+  return groupProductVariants(preferWomenVariants(eligible)).map(group=>({modelKey:variantGroupKey(group[0]),name:variantGroupName(group[0]),
     variants:group,colorVariants:uniqueColorVariants(group),allVariantIds:group.map(p=>p.id)}));
 }
 

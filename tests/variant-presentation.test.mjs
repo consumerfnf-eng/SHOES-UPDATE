@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {variantGroupName,variantGroupKey,groupProductVariants,uniqueColorVariants,variantColorLabel} from '../public/assets/catalog-view.mjs';
+import {variantGroupName,variantGroupKey,groupProductVariants,preferWomenVariants,productAudience,uniqueColorVariants,variantColorLabel} from '../public/assets/catalog-view.mjs';
 import {officialVariantLabels,parseArrivalListing,listingProduct,adidasProductColor,collectNewArrivals} from '../scripts/new-arrivals.mjs';
 import fs from 'node:fs';
 import {applyReviewedEvidence} from '../scripts/publish-curated.mjs';
@@ -35,6 +35,45 @@ test('editions, generations, materials, widths, collaborations and brands keep s
  const names=['Cloudvista 3','Cloudvista 3 Waterproof','Cloudvista 2','Radar leather sneaker','Radar velvety sneaker','Pane Zephyr Training Shoes','Pane Zephyr Training Pouching Shoes','Wave Rider 30 Running Shoe','Wave Rider 30 Running Shoe, Tsukiakari Pack'];
  assert.equal(groupProductVariants(names.map(name=>({brand:'same',name}))).length,names.length);
  assert.equal(variantGroupName({name:'Superwomen Running Shoes'}),'Superwomen Running Shoes','Do not remove an embedded gender substring');
+});
+
+test('women counterparts exclusively supply colors while male-only editions and original records remain',()=>{
+ const make=(id,name,colorway,gender='')=>({id,name,colorway,gender,brand:'ASICS'});
+ const rows=[make('m',"Runner 33 Men's Running Shoes",'Orange'),make('w1',"Runner 33 Women's Running Shoes",'Lavender'),make('w2',"Runner 33 Women's Running Shoes",'White'),make('unknown','Runner 33','Black'),make('unisex','Runner 33','Grey','unisex'),make('edition',"Runner 33 GTX Men's Running Shoes",'Orange'),make('only',"Runner 14 Men's Running Shoes",'White')];
+ const before=structuredClone(rows),selected=preferWomenVariants(rows);
+ assert.deepEqual(selected.map(p=>p.id),['w1','w2','edition','only']);
+ assert.deepEqual(rows,before);
+ assert.deepEqual(preferWomenVariants(selected),selected,'Selection is idempotent');
+ assert.deepEqual(preferWomenVariants(rows.filter(p=>!p.id.startsWith('w'))).map(p=>p.id),['m','unknown','unisex','edition','only']);
+ assert.equal(uniqueColorVariants(selected.slice(0,2)).length,2,'Keep every distinct female color');
+});
+
+test('audience uses explicit product metadata and URL path without guessing from a SKU or query',()=>{
+ for(const product of [{gender:'Female'},{name:'Runner Women’s Shoes'},{url:'https://www.on.com/en-us/products/runner/womens/cream-shoes'},{url:'https://paneshoes.com/products/runner-women-s-shoes-cream'},{officialCategory:'여성용 러닝화'}])assert.equal(productAudience(product),'women');
+ for(const product of [{gender:'Male'},{name:"Runner Men's Shoes"},{url:'https://www.nike.com/t/runner-mens-running-shoes/ABC'}])assert.equal(productAudience(product),'men');
+ assert.equal(productAudience({gender:'MEN/WOMEN',name:'Runner'}),'unisex');
+ assert.equal(productAudience({gender:'Unisex',name:"Women's Runner"}),'women');
+ assert.equal(productAudience({name:'Superwomen Runner',style:'W123',url:'https://example.com/runner?ref=womens'}),'');
+ assert.equal(productAudience({gender:'Women',url:'https://example.com/men/runner'}),'women');
+ assert.equal(variantGroupKey({brand:'A',name:'여성용 Runner Shoes'}),variantGroupKey({brand:'A',name:'남성용 Runner Shoes'}));
+});
+
+test('reported live duplicates use female products only, including the reviewed adidas SKU',()=>{
+ const rows=JSON.parse(fs.readFileSync(new URL('../public/data/catalog.json',import.meta.url))).products;
+ const selected=preferWomenVariants(rows);
+ for(const group of groupProductVariants(rows).filter(g=>g.some(p=>productAudience(p)==='women'))){
+  const shown=selected.filter(p=>variantGroupKey(p)===variantGroupKey(group[0]));
+  assert(shown.length>0);assert(shown.every(p=>productAudience(p)==='women'),group[0].name);
+ }
+ assert.deepEqual(selected.filter(p=>p.brand==='adidas'&&['KI8294','KI8293'].includes(p.style)).map(p=>p.style),['KI8293']);
+});
+
+test('reviewed gender survives a later blank listing without refreshing product verification',()=>{
+ const url='https://www.adidas.com/us/test/KI8293.html',verifiedAt='2026-10-08T00:00:00Z';
+ const original={id:'adidas-w',brand:'adidas',style:'KI8293',url,gender:'',productVerifiedAt:verifiedAt};
+ const review={id:original.id,brand:original.brand,style:original.style,url,gender:'Women',genderEvidence:{verified:true,url,checkedAt:'2026-10-07T12:00:00Z',excerpt:"Women's • Running"}};
+ const [result]=applyReviewedEvidence([original],[review]);
+ assert.equal(result.gender,'Women');assert.equal(result.productVerifiedAt,verifiedAt);assert.deepEqual(result.genderEvidence,review.genderEvidence);
 });
 test('the current catalog consolidates the reported ASICS, PANE and Mizuno gender pairs',()=>{
  const rows=JSON.parse(fs.readFileSync(new URL('../public/data/catalog.json',import.meta.url))).products;

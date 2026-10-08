@@ -3546,6 +3546,14 @@
         "method": "exact-product-linked-official-color-label",
         "contentHash": "7c53cdddf8692a1b54881a51c3aaa5e654e94e342999cdfb79e07b24daab8856",
         "excerpt": "Product color: Solar Turbo / Core Black / Lucid Red"
+      },
+      "gender": "Men",
+      "genderEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8294.html",
+        "checkedAt": "2026-10-08T09:52:43.272Z",
+        "method": "official-product-audience-label",
+        "excerpt": "Men's • Running"
       }
     },
     {
@@ -3564,6 +3572,14 @@
         "method": "exact-product-linked-official-color-label",
         "contentHash": "7819714ffa2b98f737df6f772513ff33b50d651f841d061f15716cdc0d0caf09",
         "excerpt": "Product color: Solar Turbo / Core Black / Lucid Red"
+      },
+      "gender": "Women",
+      "genderEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8293.html",
+        "checkedAt": "2026-10-08T09:52:43.272Z",
+        "method": "official-product-audience-label",
+        "excerpt": "Women's • Running"
       }
     }
   ]

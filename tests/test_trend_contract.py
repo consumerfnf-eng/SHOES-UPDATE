@@ -110,6 +110,10 @@ assert.equal(run([{...dated,dateEvidence:{...dated.dateEvidence,verified:false}}
 assert.equal(run([{...dated,releaseDate:'2026-01-01'}]).length,0);
 assert.equal(run([{...dated,releaseDate:'2026-11-01'}]).length,0);
 assert.equal(run([{...dated,releaseDate:'2026-07',dateEvidence:{...dated.dateEvidence,precision:'month'}}]).length,0);
+const womenModels=run([{...a,gender:'Men'},{...b,gender:'Women'},{...c,gender:'Women'}]);
+assert.deepEqual(womenModels[0].allVariantIds,['b','c']);
+assert.equal(womenModels[0].colorVariants.length,2);
+assert.deepEqual(run([{...a,gender:'Men'}])[0].allVariantIds,['a']);
 console.log(JSON.stringify({variants:models[0].variants.length,colorVariants:models[0].colorVariants.length}));
 """
         result = subprocess.run(["node", "--input-type=module"], input=script, text=True, encoding="utf-8", capture_output=True, cwd=ROOT)

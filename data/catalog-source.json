@@ -144477,7 +144477,15 @@
         "url": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/7fbc7763ad5049dcba9e078156375ac6_9366/ADIZERO_ADIOS_PRO_5_Running_Shoes_Pink_KI8294_00_plp_standard.jpg",
         "sourceUrl": "https://www.adidas.com/us/shoes-new_arrivals"
       },
-      "firstPublishedAt": "2026-10-07T08:52:24.382Z"
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "gender": "Men",
+      "genderEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8294.html",
+        "checkedAt": "2026-10-08T09:52:43.272Z",
+        "method": "official-product-audience-label",
+        "excerpt": "Men's • Running"
+      }
     },
     {
       "id": "arrival-9e8e0b0a5146e2dbaee6",
@@ -144534,7 +144542,15 @@
         "url": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d8e0f841b9a14a75807f270e64e6a0b2_9366/ADIZERO_ADIOS_PRO_5_Running_Shoes_Pink_KI8293_00_plp_standard.jpg",
         "sourceUrl": "https://www.adidas.com/us/shoes-new_arrivals"
       },
-      "firstPublishedAt": "2026-10-07T08:52:24.382Z"
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "gender": "Women",
+      "genderEvidence": {
+        "verified": true,
+        "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8293.html",
+        "checkedAt": "2026-10-08T09:52:43.272Z",
+        "method": "official-product-audience-label",
+        "excerpt": "Women's • Running"
+      }
     },
     {
       "id": "arrival-2deaa22fd3d8d4ee6319",

@@ -147,7 +147,7 @@ export function filterProducts(products, state, today = kstToday()) {
 import {calendarShift,validCalendarDay,releaseWindow,releaseState as windowState,releaseSortKey} from './release-window.mjs';
 export {releaseWindow,releaseSortKey};
 const trimModelSeparators = value => value.replace(/\s+/g,' ').replace(/[\s|·—–-]+$/u,'').trim();
-const audienceLabel = "(?:men(?:['’]s|s)?|women(?:['’]s|s)?|unisex)";
+const audienceLabel = "(?:men(?:['’]s|s)?|women(?:['’]s|s)?|unisex|남성(?:용)?|여성(?:용)?|남녀공용)";
 function withoutAudienceLabel(value) {
   // Only audience labels at the edges or immediately before a footwear suffix
   // are marketing metadata. Keep editions, materials, widths and generations.
@@ -157,7 +157,7 @@ function withoutAudienceLabel(value) {
     .replace(new RegExp(`\\s+${audienceLabel}(?=\\s+(?:(?:road|trail|running|training|walking|tennis|basketball|golf)\\s+)*(?:shoes?|sneakers?)$)`,'i'),''));
 }
 // Same-model colorways share one grid card even when feeds assign separate
-// modelKeys to colors or genders. Raw variant records stay intact for exports.
+// modelKeys to colors or genders. Grouping never mutates source records.
 export function variantGroupName(p) {
   if (!p?.name) return p?.modelKey || p?.id || '';
   let base = String(p.name);
@@ -202,6 +202,32 @@ export function groupProductVariants(products) {
     groups.get(key).push(p);
   }
   return [...groups.values()];
+}
+
+export function productAudience(product) {
+  const read = value => {
+    const text = String(value || '').normalize('NFKC').toLowerCase();
+    const women = /(?:^|[^\p{L}\p{N}])(?:women(?:['’ -]?s)?|female|여성(?:용)?)(?=$|[^\p{L}\p{N}])/u.test(text);
+    const men = /(?:^|[^\p{L}\p{N}])(?:men(?:['’ -]?s)?|male|남성(?:용)?)(?=$|[^\p{L}\p{N}])/u.test(text);
+    if (/\bunisex\b|남녀공용/u.test(text) || women && men) return 'unisex';
+    return women ? 'women' : men ? 'men' : '';
+  };
+  // Use declared metadata and product-specific labels, never image colors,
+  // SKU guesses, navigation text, or tracking query parameters.
+  // A women's listing can carry a generic Unisex value in older feed metadata.
+  for (const value of [product.name, product.gender, product.officialCategory]) {
+    const audience = read(value);
+    if (audience) return audience;
+  }
+  try { return read(decodeURIComponent(new URL(product.url).pathname)); }
+  catch { return ''; }
+}
+
+export function preferWomenVariants(products) {
+  const womenModels = new Set(products.filter(p => productAudience(p) === 'women').map(variantGroupKey));
+  // Apply to the eligible catalog BEFORE search/source filters: a male-only
+  // color search must not bring a suppressed counterpart back into the grid.
+  return products.filter(p => !womenModels.has(variantGroupKey(p)) || productAudience(p) === 'women');
 }
 
 // Named colors are an approximate navigation aid; the official photo is the

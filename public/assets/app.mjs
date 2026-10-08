@@ -1,7 +1,7 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes } from './export.mjs';
 import { groupedBrands } from './brand-groups.mjs';
 import {isPublishedFootwear} from './footwear-policy.mjs';
-import { kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch } from './catalog-view.mjs';
+import { kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, preferWomenVariants, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch } from './catalog-view.mjs';
 
 const $ = id => document.getElementById(id);
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -59,6 +59,12 @@ function socialMetricsMarkup(product,compact=false) {
   }).join('')}${missing.length?`<p class="social-metrics-empty">${missing.map(esc).join(' · ')}</p>`:''}</div>`;
 }
 
+function rebuildProducts() {
+  const eligible = catalog.products.filter(p => p && isPublishedFootwear(p) && releaseState(p,today)==='released' && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string');
+  products = preferWomenVariants(eligible).map(p => ({...p,keywords:[...(p.keywords||[]),...[...catalog.keywords,...(catalog.forecastKeywords||[])].filter(k=>k.productIds?.includes(p.id)).flatMap(k=>[k.label,...(k.aliases||[])])]}));
+  brandCounts = new Map();
+  groupProductVariants(products).forEach(group => [...new Set(group.flatMap(p=>productBrandNames(p,today)))].forEach(brand=>brandCounts.set(brand,(brandCounts.get(brand)||0)+1)));
+}
 async function loadCatalog() {
   $('product-grid').setAttribute('aria-busy','true'); $('product-grid').innerHTML = Array.from({length:8}, () => '<div class="skeleton" aria-hidden="true"></div>').join('');
   $('empty-state').hidden = true;
@@ -71,7 +77,7 @@ async function loadCatalog() {
     catalog = value;
     // This view is the sneaker reference set. Other footwear records remain in
     // the internal snapshot/archive but never enter the public product grid.
-    products = value.products.filter(p => p && isPublishedFootwear(p) && releaseState(p,today)==='released' && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string').map(p => ({...p,keywords:[...(p.keywords||[]),...[...value.keywords,...(value.forecastKeywords||[])].filter(k=>k.productIds?.includes(p.id)).flatMap(k=>[k.label,...(k.aliases||[])])]}));
+    rebuildProducts();
     const collection = value.sourceStatus?.lastSuccessfulCollectionAt;
     $('update-label').textContent = collection ? `${dateText(collection, true)} 신상품 확인` : value.publishedAt ? `${dateText(value.publishedAt, true)} 게시` : '첫 검증 완료본 게시 대기';
     const unavailable = value.sourceStatus?.unavailableBrands || [];
@@ -82,7 +88,6 @@ async function loadCatalog() {
     if(recheck){const remaining=recheck.brands.filter(b=>b.status==='unavailable').map(b=>b.brand);notice.push(`${dateText(recheck.checkedAt)} 수집 경로 재확인: ${recheck.brands.length-remaining.length}/${recheck.brands.length}개 브랜드의 공개 페이지를 읽었습니다. ${remaining.length?`자동 수집 재확인 필요: ${remaining.join(', ')}. `:''}공식 신상품 여부와 사진 검증을 마친 상품만 표시합니다.`);}
     else if (unavailable.length) notice.push(`최근 전체 수집에서 ${unavailable.length}개 브랜드의 신상품 목록을 읽지 못했습니다. 검색 인증·수집 경로·사이트 응답 문제를 포함하며, 기존에 확인한 공식 상품은 표시합니다.`);
     $('catalog-notice').textContent = notice.join(' '); $('catalog-notice').className = 'notice'; $('catalog-notice').hidden = !notice.length;
-    brandCounts = new Map(); groupProductVariants(products.filter(p => releaseState(p,today)==='released')).forEach(group => [...new Set(group.flatMap(p=>productBrandNames(p,today)))].forEach(brand=>brandCounts.set(brand,(brandCounts.get(brand)||0)+1)));
     renderBrands(); renderKeywords(); render();
   } catch (error) {
     $('product-grid').innerHTML = ''; $('result-count').textContent = '—'; $('empty-state').hidden = false;
@@ -262,6 +267,6 @@ $('mobile-brands').addEventListener('click',()=>{const sidebar=document.querySel
 document.addEventListener('click',event=>{if(!event.target.closest('.sidebar')&&!event.target.closest('#mobile-brands')){document.querySelector('.sidebar').classList.remove('open');$('mobile-brands').setAttribute('aria-expanded','false');}});
 document.addEventListener('keydown',event=>{if(event.key==='/'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.target.matches('input,textarea,select')&&!document.querySelector('dialog[open]')){event.preventDefault();$('search').focus();}if(event.key==='Escape'){document.querySelector('.sidebar').classList.remove('open');$('mobile-brands').setAttribute('aria-expanded','false');}});
 // A tab left open overnight must not retain an expired product or selection.
-function refreshDate() { if(!catalog)return;const next=kstToday();if(next===today){renderKeywords();return;}if(next!==today){today=next;brandCounts=new Map();products.filter(p=>releaseState(p,today)).forEach(p=>productBrandNames(p,today).forEach(brand=>brandCounts.set(brand,(brandCounts.get(brand)||0)+1)));selected=new Set([...selected].filter(id=>products.some(p=>p.id===id&&releaseState(p,today))));renderBrands();renderKeywords();render();if($('detail-dialog').open&&!products.some(p=>p.id===activeDetailId&&releaseState(p,today)))$('detail-dialog').close();} }
+function refreshDate() { if(!catalog)return;const next=kstToday();if(next===today){renderKeywords();return;}today=next;rebuildProducts();selected=new Set([...selected].filter(id=>products.some(p=>p.id===id)));renderBrands();renderKeywords();render();if($('detail-dialog').open&&!products.some(p=>p.id===activeDetailId))$('detail-dialog').close(); }
 setInterval(refreshDate,60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshDate();});
 renderBrands();loadCatalog();

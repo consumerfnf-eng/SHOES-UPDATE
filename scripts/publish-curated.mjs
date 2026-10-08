@@ -51,6 +51,12 @@ export function applyReviewedEvidence(input,evidence) {
         &&(!found.colorway||colorProof.checkedAt>=(found.colorwayEvidence?.checkedAt||found.productVerifiedAt||''))){
         products=products.map(p=>p.id===found.id?{...p,colorway:e.colorway,colors:e.colors||[e.colorway],colorwayEvidence:colorProof}:p);
       }
+      const genderProof=e.genderEvidence;
+      if(e.gender&&genderProof?.verified===true&&Number.isFinite(Date.parse(genderProof.checkedAt))
+        &&isOfficialProductUrl(found.brand,genderProof.url)&&canonicalUrl(genderProof.url)===canonicalUrl(found.url)
+        &&(!found.gender||genderProof.checkedAt>=(found.genderEvidence?.checkedAt||found.productVerifiedAt||''))){
+        products=products.map(p=>p.id===found.id?{...p,gender:e.gender,genderEvidence:genderProof}:p);
+      }
     }
     else if(!sameId&&e.id&&e.name&&e.brand) products=mergePreserving(products,[e]);
   }
