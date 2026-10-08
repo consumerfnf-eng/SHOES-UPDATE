@@ -20,6 +20,8 @@ const fixture={schemaVersion:1,publishedAt:at,asOf:today,brands:[{name:'Nike',ma
 let browser;
 try{
  browser=await chromium.launch({headless:true,...(process.env.UI_BROWSER_CHANNEL?{channel:process.env.UI_BROWSER_CHANNEL}:{})});const context=await browser.newContext({viewport:{width:1440,height:1000},acceptDownloads:true});
+ // All UI checks run against local code and fixtures; never contact live sites.
+ await context.route('**/*',r=>new URL(r.request().url()).origin===new URL(url).origin?r.continue():r.abort());
  await context.route('https://example.org/**',r=>r.fulfill({contentType:'image/svg+xml',body:`<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><rect width="400" height="300" fill="${r.request().url().includes('black')?'#222':'#ddd'}"/></svg>`}));
  await context.route('**/data/catalog.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(fixture)}));
  const page=await context.newPage(),errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push({url:r.url(),method:r.method()}));
@@ -45,6 +47,53 @@ try{
  await page.getByRole('button',{name:'2페이지',exact:true}).click();assert.equal(await page.locator('.product-card').count(),8);
  assert.equal(requests.filter(r=>r.url.endsWith('/data/catalog.json')).length,1);assert(requests.every(r=>r.method==='GET'),'Visit never starts a collection');
  await page.screenshot({path:path.join(out,'desktop.png')});await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:path.join(out,'mobile.png')});
+ // Use the reported catalog names/colors, with local fixture photos and dates
+ // so grouping regressions do not depend on external sites or release windows.
+ const actual=JSON.parse(await fs.readFile(path.join(root,'data/catalog.json'),'utf8')).products;
+ const variantProducts=actual.filter(p=>p.brand==='ASICS'||p.brand==='PANE'||p.brand==='adidas'&&['KI8294','KI8293'].includes(p.style)).map(p=>({
+  ...products[0],id:p.id,brand:p.brand,name:p.name,style:p.style,modelKey:p.modelKey,colorway:p.colorway,
+  image:`https://example.org/${p.id}.svg`,presentation:{image:`https://example.org/${p.id}.svg`,scale:1}
+ }));
+ const variantFixture={...fixture,products:variantProducts,brands:['ASICS','PANE','adidas'].map(name=>({name,mandatory:true})),keywords:[],styleTrendKeywords:{updated:at,items:[]}};
+ const variantPage=await context.newPage();variantPage.on('pageerror',e=>errors.push(e.message));
+ await variantPage.route('**/data/catalog.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(variantFixture)}));
+ await variantPage.goto(url);await variantPage.locator('.product-card').first().waitFor();
+ assert.equal(await variantPage.locator('#result-count').textContent(),'11','7 ASICS, 3 PANE and 1 adidas model cards');
+ const cardFor=id=>variantPage.locator('.product-card').filter({has:variantPage.locator(`[data-variant="${id}"]`)});
+ for(const model of ['GEL-KAYANO 33 LITE-SHOW','GT-2000 15 LITE-SHOW']){
+  const pair=variantProducts.filter(p=>p.brand==='ASICS'&&p.name.startsWith(model));
+  assert.equal(pair.length,2);
+  const [men,women]=pair,card=cardFor(men.id);
+  assert.equal(await card.count(),1);assert.equal(await card.locator('.color-chip').count(),2);
+  assert(!(await card.locator('.card-name').textContent()).match(/Men|Women/));
+  await card.locator(`[data-variant="${women.id}"]`).click();
+  assert.equal(await card.locator('.card-open img').getAttribute('src'),women.image);
+  assert.equal(await card.locator(`[data-variant="${women.id}"]`).getAttribute('aria-pressed'),'true');
+  await card.locator('.card-name').click();
+  assert.equal(await variantPage.locator('#detail-content .color-chip').count(),2);
+  assert.equal(await variantPage.locator('.detail-visual img').getAttribute('src'),women.image);
+  await variantPage.locator(`#detail-content [data-variant="${men.id}"]`).click();
+  assert.equal(await variantPage.locator('.detail-visual img').getAttribute('src'),men.image);
+  assert.equal(await card.locator('.card-open img').getAttribute('src'),men.image,'Detail selection synchronizes the card');
+  await variantPage.getByRole('button',{name:'상세정보 닫기',exact:true}).click();
+ }
+ assert.equal(await variantPage.locator('.card-name').filter({hasText:/^GEL-KAYANO 33 Running Shoes$/}).count(),1,'Standard edition has its own card');
+ assert.equal(await variantPage.locator('.card-name').filter({hasText:/^GEL-KAYANO 14$/}).count(),1,'Older generation has its own card');
+ const adidasCard=variantPage.locator('.product-card').filter({has:variantPage.locator('.card-name').filter({hasText:'ADIZERO ADIOS PRO 5'})});
+ assert.equal(await adidasCard.count(),1);assert.equal(await adidasCard.locator('.color-chip').count(),1,'Previously fixed adidas duplicate color stays collapsed');
+ for(const [name,count] of [['Pane Light Training Nogi Shoes',22],['Pane Zephyr Training Shoes',4],['Pane Zephyr Training Pouching Shoes',5]]){
+  const card=variantPage.locator('.product-card').filter({has:variantPage.getByRole('button',{name,exact:true})});
+  assert.equal(await card.count(),1);assert.equal(await card.locator('.color-chip').count(),count);
+ }
+ const kayanoWomen=variantProducts.find(p=>p.name.startsWith('GEL-KAYANO 33 LITE-SHOW Women'));
+ await variantPage.locator('#search').fill('GEL-KAYANO 33 LITE-SHOW Women');
+ await variantPage.waitForFunction(()=>document.getElementById('result-count').textContent==='1');
+ assert.equal(await variantPage.locator('.product-card .color-chip').count(),2,'Searching one gender still exposes both colors');
+ assert.equal(await variantPage.locator(`[data-variant="${kayanoWomen.id}"]`).count(),1);
+ await variantPage.setViewportSize({width:390,height:844});
+ assert(await variantPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ assert.equal(await variantPage.locator('.color-chip').first().evaluate(el=>getComputedStyle(el).borderRadius),'50%');
+ await variantPage.screenshot({path:path.join(out,'asics-variants-mobile.png')});
  assert.deepEqual(errors,[]);
- console.log(JSON.stringify({passed:true,browser:process.env.UI_BROWSER_CHANNEL||'chromium',screenshots:out,downloads:[csvPath,xlsxPath],checks:'sources hidden, released-only, variant grouping, card/detail color switching, 17-column CSV/XLSX, pagination, mobile, single read'},null,2));
+ console.log(JSON.stringify({passed:true,browser:process.env.UI_BROWSER_CHANNEL||'chromium',screenshots:out,downloads:[csvPath,xlsxPath],checks:'sources hidden, released-only, ASICS/PANE gender grouping, editions separate, adidas duplicate chips preserved, card/detail color switching, 17-column CSV/XLSX, pagination, mobile, single read, local fixtures only'},null,2));
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

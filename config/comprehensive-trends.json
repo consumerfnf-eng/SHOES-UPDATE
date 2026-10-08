@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "weights": {"internal": 0.2, "ecommerce": 0.3, "sns": 0.3, "newsletter": 0.2},
+  "max_keywords": 100,
+  "max_items": 100,
+  "lookback_days": 30,
+  "taxonomy_path": "config/style-trend-board.json",
+  "internal": {
+    "url": "https://shoes-update.pages.dev/",
+    "catalog_url": "https://shoes-update.pages.dev/data/catalog.json"
+  },
+  "browser": {
+    "headless": true,
+    "storage_state_env": "SHOE_TRENDS_STORAGE_STATE",
+    "user_agent": "Mozilla/5.0 ShoesTrendResearch/1.0",
+    "delay_seconds": 2,
+    "timeout_ms": 30000
+  },
+  "ecommerce": [
+    {"id": "musinsa", "url": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004", "max_rank": 50},
+    {"id": "kream", "url": "https://kream.co.kr/?tab=home_ranking_v2", "max_rank": 50}
+  ],
+  "instagram": {
+    "enabled": true,
+    "username_env": "INSTAGRAM_USERNAME",
+    "session_file_env": "INSTALOADER_SESSION_FILE",
+    "hashtags": ["신발추천", "고프코어슈즈", "발레스니커즈"],
+    "max_posts_per_tag": 30
+  },
+  "newsletters": [
+    {"id": "sneakernews", "url": "https://sneakernews.com/feed/", "max_articles": 10},
+    {"id": "sneaker-newsletter", "url": "https://www.thesneakernewsletter.com/feed", "max_articles": 10}
+  ]
+}

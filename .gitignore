@@ -18,5 +18,8 @@ data/archive-report.json
 
 data/archive-ledger.json
 data/archive.lock
+.venv-trends/
+.secrets/
+reports/
 
 logs/*.txt

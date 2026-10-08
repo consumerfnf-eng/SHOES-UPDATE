@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {variantGroupName,groupProductVariants,uniqueColorVariants,variantColorLabel} from '../public/assets/catalog-view.mjs';
+import {variantGroupName,variantGroupKey,groupProductVariants,uniqueColorVariants,variantColorLabel} from '../public/assets/catalog-view.mjs';
 import {officialVariantLabels,parseArrivalListing,listingProduct,adidasProductColor,collectNewArrivals} from '../scripts/new-arrivals.mjs';
 import fs from 'node:fs';
 import {applyReviewedEvidence} from '../scripts/publish-curated.mjs';
@@ -15,6 +15,46 @@ test('one chip represents one declared color while all source variants remain av
  const rows=[{id:'m',colorway:'White / Grey'},{id:'w',colorway:'WHITE / GREY'},{id:'black',colorway:'Black'},{id:'unknown1'},{id:'unknown2'}];
  assert.deepEqual(uniqueColorVariants(rows,'w').map(p=>p.id),['w','black','unknown1','unknown2']);assert.equal(rows.length,5);
  for(const colorway of ['Image 1','Women | Balenciaga United States EN','Sneakers · Unisex','BEIGE![shoe](https://example.org/a.jpg)'])assert.equal(variantColorLabel({colorway}),'');
+});
+test('gender labels and terminal footwear wording group the same model without changing source records',()=>{
+ const names=["GEL-KAYANO 33 LITE-SHOW Men's Running Shoes","GEL-KAYANO 33 LITE-SHOW Women’s Running Shoes","Men's GEL-KAYANO 33 LITE-SHOW Sneaker",'GEL-KAYANO 33 LITE-SHOW Sneakers · Unisex','GEL-KAYANO 33 LITE-SHOW'];
+ const rows=names.map((name,i)=>({id:String(i),modelKey:`different-feed-key-${i}`,brand:'ASICS',name,colorway:i?'Lite Show/Lavender Glow':'Lite Show/Orange Glow'}));
+ const before=structuredClone(rows),groups=groupProductVariants(rows);
+ assert.equal(groups.length,1);assert.deepEqual(groups[0],rows);assert.deepEqual(rows,before);
+ assert.equal(variantGroupName(rows[0]),'GEL-KAYANO 33 LITE-SHOW Running Shoes');
+ assert.equal(uniqueColorVariants(groups[0]).length,2);
+ for(const [men,women] of [["Men's Mizuno Sky Prime Running Shoe","Women's Mizuno Sky Prime Running Shoes"],['Pane Zephyr Training Men’s Shoes','Pane Zephyr Training Women’s Shoes']]){
+  assert.equal(variantGroupKey({brand:'same',name:men}),variantGroupKey({brand:'same',name:women}));
+ }
+});
+test('editions, generations, materials, widths, collaborations and brands keep separate cards',()=>{
+ const asics=['GEL-KAYANO 33','GEL-KAYANO 33 LITE-SHOW','GEL-KAYANO 33 GTX','GEL-KAYANO 33 GORE-TEX','GEL-KAYANO 32 LITE-SHOW','GEL-KAYANO 33 WIDE','GEL-KAYANO 33 Trail','GEL-KAYANO 33 x Designer'];
+ const rows=asics.flatMap((name,i)=>["Men's",'Women’s'].map((gender,j)=>({brand:'ASICS',id:`${i}-${j}`,name:`${name} ${gender} Running Shoes`})));
+ assert.equal(groupProductVariants(rows).length,asics.length);
+ assert.equal(groupProductVariants([...rows,{...rows[0],brand:'Other brand'}]).length,asics.length+1);
+ const names=['Cloudvista 3','Cloudvista 3 Waterproof','Cloudvista 2','Radar leather sneaker','Radar velvety sneaker','Pane Zephyr Training Shoes','Pane Zephyr Training Pouching Shoes','Wave Rider 30 Running Shoe','Wave Rider 30 Running Shoe, Tsukiakari Pack'];
+ assert.equal(groupProductVariants(names.map(name=>({brand:'same',name}))).length,names.length);
+ assert.equal(variantGroupName({name:'Superwomen Running Shoes'}),'Superwomen Running Shoes','Do not remove an embedded gender substring');
+});
+test('the current catalog consolidates the reported ASICS, PANE and Mizuno gender pairs',()=>{
+ const rows=JSON.parse(fs.readFileSync(new URL('../public/data/catalog.json',import.meta.url))).products;
+ for(const [brand,prefix,count,chips] of [['ASICS','GEL-KAYANO 33 LITE-SHOW',2,2],['ASICS','GT-2000 15 LITE-SHOW',2,2],['PANE','Pane Light Training Nogi',44,22],['PANE','Pane Zephyr Training Pouching',10,5]]){
+  const variants=rows.filter(p=>p.brand===brand&&p.name.startsWith(prefix));
+  assert.equal(variants.length,count);assert.equal(groupProductVariants(variants).length,1,prefix);assert.equal(uniqueColorVariants(variants).length,chips,prefix);
+ }
+ const zephyr=rows.filter(p=>p.brand==='PANE'&&p.name.startsWith('Pane Zephyr Training'));
+ assert.equal(groupProductVariants(zephyr).length,2,'Pouching stays separate from standard Zephyr');
+ const sky=rows.filter(p=>p.brand==='Mizuno'&&p.name.includes('Sky Prime'));
+ assert.equal(sky.length,2);assert.equal(groupProductVariants(sky).length,1);
+ const kayano=rows.filter(p=>p.brand==='ASICS'&&p.name.startsWith('GEL-KAYANO'));
+ assert.equal(groupProductVariants(kayano).length,3,'14, 33 and 33 LITE-SHOW stay separate');
+});
+test('category delimiters and dangling color prepositions do not split otherwise identical models',()=>{
+ const salomon=[{brand:'Salomon',name:'XT-6 - Sneakers · Unisex',colorway:'Sneakers · Unisex'},{brand:'Salomon',name:'XT-6'}];
+ assert.equal(groupProductVariants(salomon).length,1);assert.equal(variantGroupName(salomon[0]),'XT-6');
+ const gucci=[{brand:'Gucci',name:"Women's Drip sneaker",colorway:'White Suede'},{brand:'Gucci',name:"Men's Drip sneaker in sand and brown GG canvas",colorway:'Sand and Brown GG Canvas'}];
+ assert.equal(groupProductVariants(gucci).length,1);assert.equal(variantGroupName(gucci[1]),'Drip sneaker');
+ assert.equal(variantGroupName({name:'Runner in Suede',colorway:'White'}),'Runner in Suede','Unmatched material descriptions stay intact');
 });
 test('duplicate color labels normalize separators without merging different colors with the same chip fill',()=>{
  const rows=[{id:'m',colorway:'Solar Turbo / Core Black / Lucid Red'},{id:'w',colorway:'SOLAR TURBO/Core Black/Lucid Red'},{id:'other',colorway:'Lucid Red / Core Black / Solar Turbo'}];

@@ -146,21 +146,36 @@ export function filterProducts(products, state, today = kstToday()) {
 }
 import {calendarShift,validCalendarDay,releaseWindow,releaseState as windowState,releaseSortKey} from './release-window.mjs';
 export {releaseWindow,releaseSortKey};
-// Same-model colorways share one grid card; when a feed gives every color a
-// different modelKey, remove the declared colorway tokens from the product name
-// before grouping. The raw variant records remain intact for detail/download.
+const trimModelSeparators = value => value.replace(/\s+/g,' ').replace(/[\s|·—–-]+$/u,'').trim();
+const audienceLabel = "(?:men(?:['’]s|s)?|women(?:['’]s|s)?|unisex)";
+function withoutAudienceLabel(value) {
+  // Only audience labels at the edges or immediately before a footwear suffix
+  // are marketing metadata. Keep editions, materials, widths and generations.
+  return trimModelSeparators(value
+    .replace(new RegExp(`^${audienceLabel}\\s+`,'i'),'')
+    .replace(new RegExp(`\\s+${audienceLabel}$`,'i'),'')
+    .replace(new RegExp(`\\s+${audienceLabel}(?=\\s+(?:(?:road|trail|running|training|walking|tennis|basketball|golf)\\s+)*(?:shoes?|sneakers?)$)`,'i'),''));
+}
+// Same-model colorways share one grid card even when feeds assign separate
+// modelKeys to colors or genders. Raw variant records stay intact for exports.
 export function variantGroupName(p) {
   if (!p?.name) return p?.modelKey || p?.id || '';
   let base = String(p.name);
   const colors = [p.colorway, ...(p.colors || []).map(c => typeof c === 'string' ? c : c?.name)].filter(Boolean)
     .flatMap(value => String(value).split(/[\/,·]+/)).map(value => value.trim()).filter(value => value.length > 2).sort((a,b)=>b.length-a.length);
   for (const color of colors) base = base.replace(new RegExp(`(?:^|[\\s|—–-])${color.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}(?=$|[\\s|—–-])`,'ig'),' ');
-  return base.replace(/\s+/g,' ').replace(/\s*[|—–-]\s*$/,'').trim()||p.name;
+  // A declared trailing color can leave "sneaker in" behind (e.g. Gucci).
+  if (base !== p.name) base = base.replace(/\s+in\s*$/i,'');
+  return withoutAudienceLabel(trimModelSeparators(base))||p.name;
 }
 export function variantGroupKey(p) {
   if (!p?.name) return p?.modelKey || p?.id;
   const normalize = value => String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'');
-  const normalized = normalize(variantGroupName(p));
+  const name = variantGroupName(p);
+  // Strip only generic terminal category wording from the key, not the title.
+  // "Trail", "LITE-SHOW", "GTX", "Waterproof", etc. remain model identity.
+  const model = trimModelSeparators(name.replace(/\s+(?:running\s+)?(?:shoes?|sneakers?)$/i,''));
+  const normalized = normalize(model || name);
   return `${normalize(p.brand)}|${normalized || normalize(p.modelKey) || normalize(p.id)}`;
 }
 export function variantColorLabel(p){
