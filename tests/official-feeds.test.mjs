@@ -56,5 +56,8 @@ test('weekly manual force is explicit and does not change scheduled retry guards
  assert.match(workflow,/force:[\s\S]*?type: boolean[\s\S]*?default: false/);
  assert.match(workflow,/github\.event_name.*workflow_dispatch.*inputs\.force/);
  assert.match(workflow,/npm run weekly -- --only-if-stale/);
+ assert.match(workflow,/ref: main/,'Queued retries must load the completed publication before the stale guard');
+ const daily=fs.readFileSync(new URL('../.github/workflows/daily-update.yml',import.meta.url),'utf8');
+ assert.match(daily,/ref: main/,'Queued maintenance must not overwrite a newer weekly snapshot');
  assert.match(workflow,/cron: '0 23 \* \* 6'/);
 });

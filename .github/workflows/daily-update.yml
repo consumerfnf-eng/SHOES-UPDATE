@@ -17,6 +17,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: main # A queued maintenance run must keep the newest weekly data.
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
