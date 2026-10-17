@@ -75,7 +75,7 @@ export async function collectSignals({products,read,readPublic=readPublicSource,
     const query=`"${p.brand}" "${p.style||p.name}" sneakers ${now.getUTCFullYear()}`;
     let found=[],searchAttempted=false;
     if(read&&searchIds.has(p.id)&&!discoveryUnavailable)try {searchAttempted=true;found=discoverUrls(await read(`https://s.jina.ai/${encodeURIComponent(query)}`));}
-    catch(e){diagnostics.push({id:p.id,method:'article-search',reason:e.message});if(/401|unauthori[sz]ed|AUTH|402/i.test(e.message))discoveryUnavailable=true;}
+    catch(e){diagnostics.push({id:p.id,method:'article-search',reason:e.message});if(/TIME_BUDGET/.test(e.message))searchAttempted=false;if(/401|unauthori[sz]ed|AUTH|402|TIME_BUDGET|unavailable without a valid key/i.test(e.message))discoveryUnavailable=true;}
     const urls=[...new Set([...old.map(s=>s.url),...found])].filter(httpUrl).slice(0,12);
     for(const url of urls) {
       const host=new URL(url).hostname.replace(/^www\./,'');

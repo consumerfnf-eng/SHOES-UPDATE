@@ -23,6 +23,15 @@ test('provider quota stops subsequent fallbacks without retries or leaked error 
   await assert.rejects(client.read(target),/^Error: RENDERED_OFFICIAL_HTTP_429$/);
   await assert.rejects(client.read(target+'?page=2'),/QUOTA_STOPPED/);assert.equal(calls,1);assert(client.stats.quotaStopped);
 });
+
+test('queued renders recheck the phase deadline before making a request',async()=>{
+ let allowed=true,calls=0,finish;
+ const client=createRenderedOfficialReader({origins:[target],sleep:async()=>{},shouldContinue:()=>allowed,fetchImpl:async()=>{calls++;await new Promise(r=>finish=r);return page();}});
+ const first=client.read(target),second=client.read(target+'?page=2');
+ const rejected=assert.rejects(second,/TIME_BUDGET/);
+ await new Promise(r=>setImmediate(r));allowed=false;finish();
+ await first;await rejected;assert.equal(calls,1);
+});
 test('failed pages, cross-origin redirects and challenges cannot become readable',async()=>{
   for(const response of [page({metadata:{url:target,statusCode:403}}),page({metadata:{url:target,statusCode:302}}),page({metadata:{sourceURL:target,statusCode:200}}),page({metadata:{url:target,statusCode:200,error:'failed'}}),page({metadata:{url:'https://other.example/',statusCode:200}}),...['Just a moment...','CAPTCHA verification','Robot Check','Sign In'].map(title=>page({metadata:{url:target,statusCode:200,title}}))]){
     const client=createRenderedOfficialReader({origins:[target],fetchImpl:async()=>response});await assert.rejects(client.read(target));assert.equal(client.stats.readable,0);

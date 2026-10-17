@@ -180,8 +180,14 @@ function pageProduct(candidate,text,checkedAt,existing){
   return p;
 }
 function region(url){const u=new URL(url),m=(u.hostname+'/'+u.pathname).match(/(?:^|[./_-])(us|uk|gb|jp|kr|ca|hk|cn|au|fr|it|de|dk)(?:[./_-]|$)/i);return m?(m[1].toUpperCase()==='UK'?'GB':m[1].toUpperCase()):'GL';}
-export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,log=console.log}={}){
+export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,maxDetailMsPerBrand=Infinity,canReadDetails=()=>true,clock=Date.now,onProgress,log=console.log}={}){
   const checkedAt=new Date(now).toISOString(),products=[],coverage=[],work=[];
+  let progressTail=Promise.resolve();
+  async function checkpoint(phase){
+    if(!onProgress)return;
+    const snapshot=structuredClone({checkedAt,phase,products,coverage,pending:work.flatMap(w=>[...(w.pending||w.candidates.values()),...(w.inflight?[w.inflight]:[])].map(candidate=>({brand:w.brand,candidate})))});
+    progressTail=progressTail.then(()=>onProgress(snapshot));await progressTail;
+  }
   let discoveryCursor=0;
   async function discoverBrands(){while(discoveryCursor<brands.length){const brand=brands[discoveryCursor++];
     const configured=sources[brand]||[],queue=[...configured].sort((a,b)=>Number(isNewListing(b.url))-Number(isNewListing(a.url))),seen=new Set(),candidates=new Map();
@@ -199,34 +205,55 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
     status.truncated=queue.some(s=>!seen.has(canonicalUrl(s.url)));status.candidates=candidates.size;
     work.push({brand,status,candidates});coverage.push(status);
     log(`${brand}: listing discovery checked (${status.responses}/${status.attempts} responses).`);
+    await checkpoint('listing-discovery');
   }}
   await Promise.all(Array.from({length:4},()=>discoverBrands()));
-  // Discover every brand before slower PDP checks; one large luxury assortment
-  // must not prevent the remaining mandatory brands from being attempted.
-  let cursor=0;
-  async function verifyBrands(){while(cursor<work.length){
-    const {brand,status,candidates}=work[cursor++];
+  // Resolve every brand's exact linked listing photos before doing ANY slower
+  // PDP work, so a large assortment cannot starve another brand's ready proofs.
+  const oldByUrl=new Map(existing.map(p=>[p.brand+'|'+canonicalUrl(p.url),p]));
+  const accept=(p,candidate,status)=>{
+    p=officialVariantLabels(p,candidate);
+    if(classifyFootwear(p).reason==='excluded-footwear')return;
+    products.push(p);status.verified++;
+  };
+  for(const item of work){
+    const {brand,status,candidates}=item;item.pending=[];
     for(const candidate of candidates.values()){
-      const old=existing.find(p=>p.brand===brand&&canonicalUrl(p.url)===canonicalUrl(candidate.url));
+      const old=oldByUrl.get(brand+'|'+canonicalUrl(candidate.url));
       // Avoid product requests for clearly unrelated clothing and ordinary dress shoes.
       const footwearHint=/sneaker|sneakerina|trainers?|running|shoes?|ballet|mary.jane|mule|jelly|platform|スニーカー|슈즈|스니커|运动鞋|運動鞋/i.test(candidate.name+' '+candidate.cardDescription+' '+new URL(candidate.url).pathname);
       if(!footwearHint&&(!candidate.linkedImages.length||/\b(?:shirts?|jackets?|coats?|bags?|wallets?|belts?|trousers|pants|shorts|socks|caps?|hats?|dresses?|sunglasses|eyewear|jewell?ery|earrings?|necklaces?|bracelets?|scarves|sweaters?|hoodies?|t-shirts?|tops?|leggings?|bras?|skorts?)\b|재킷|자켓|팬츠|가방|티셔츠|양말|모자/i.test(candidate.name)))continue;
       try{
         const retained=old&&old.officialProductEvidence?.verificationMethod!=='official-new-listing-sku-image'&&officialEvidenceFor(old,kstDay(now));
         const listed=retained?null:listingProduct(candidate,checkedAt);
-        const text=retained||listed?'':assertReadableOfficial(await read(`https://r.jina.ai/${candidate.url}`));
-        let p=listed?{...listed,...(old?{id:old.id}:{}),...(!listed.colorway&&old?.colorway&&old?.officialProductEvidence?.verificationMethod!=='official-new-listing-sku-image'?{colorway:old.colorway,colors:old.colors}:{} )}:pageProduct(candidate,text,checkedAt,retained?old:null);
-        if(!p&&readDetails)p=pageProduct(candidate,assertReadableOfficial(await readDetails(candidate.url)),checkedAt,null);
-        if(!p){status.errors.push({url:candidate.url,error:'product-identity-image-unverified'});continue;}
-        p=officialVariantLabels(p,candidate);
-        if(classifyFootwear(p).reason==='excluded-footwear')continue;
-        products.push(p);status.verified++;
+        const p=listed?{...listed,...(old?{id:old.id}:{}),...(!listed.colorway&&old?.colorway&&old?.officialProductEvidence?.verificationMethod!=='official-new-listing-sku-image'?{colorway:old.colorway,colors:old.colors}:{} )}:retained?pageProduct(candidate,'',checkedAt,old):null;
+        if(p)accept(p,candidate,status);else item.pending.push(candidate);
       }catch(e){status.errors.push({url:candidate.url,error:e.message});}
     }
+    status.detailPending=item.pending.length;
+  }
+  await checkpoint('listing-proofs');
+  let cursor=0;
+  async function verifyBrands(){while(cursor<work.length){
+    const item=work[cursor++],{brand,status}=item,started=clock();
+    while(item.pending.length&&canReadDetails()&&clock()-started<maxDetailMsPerBrand){
+      const candidate=item.pending.shift();
+      item.inflight=candidate;
+      try{
+        let p=pageProduct(candidate,assertReadableOfficial(await read(`https://r.jina.ai/${candidate.url}`)),checkedAt,null);
+        if(!p&&readDetails&&canReadDetails())p=pageProduct(candidate,assertReadableOfficial(await readDetails(candidate.url)),checkedAt,null);
+        if(p)accept(p,candidate,status);else status.errors.push({url:candidate.url,error:'product-identity-image-unverified'});
+      }catch(e){status.errors.push({url:candidate.url,error:e.message});}
+      finally{delete item.inflight;}
+    }
+    status.detailPending=item.pending.length;
+    if(status.detailPending)status.errors.push({error:'product-follow-up-deferred',reason:'detail-time-budget',remaining:status.detailPending});
     // Dynamic pagination may hide additional items: never equate a response with completeness.
     status.status=!status.responses?'unavailable':!status.listingPages?'new-section-unconfirmed':status.errors.length||status.truncated?'partial':'checked';
     log(`${brand}: ${status.listingPages} New listing pages, ${status.candidates} candidates, ${status.verified} product proofs, ${status.errors.length} unresolved checks`);
+    await checkpoint('product-verification');
   }}
   await Promise.all(Array.from({length:3},()=>verifyBrands()));
+  await checkpoint('complete');
   return {products,coverage,checkedAt};
 }

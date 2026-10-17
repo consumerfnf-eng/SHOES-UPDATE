@@ -71,6 +71,7 @@ jobs:
         with:
           name: weekly-diagnostics-${{ github.run_id }}
           path: |
+            logs/weekly-progress.json
             logs/weekly-diagnostics.json
             logs/weekly-error.json
             data/archive-report.json
