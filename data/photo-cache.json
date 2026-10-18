@@ -1374,6 +1374,282 @@
       "sha256": "1bc05146a8cfeb2a7edf84940d5e2d8fa76081fcca750ac4e148082ef76dbf4d",
       "sourceUrl": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00080M7242285_3/image/trailgrip-lite3-nubuck-and-suede-sneakers-women-brown-moncler-3.jpg?w=1300&q=80",
       "checkedAt": "2026-10-07T09:38:25.541Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/d1066751-7b34-4e3c-b419-7c3caca03ba2/Small/800590WTRHK5500_X.jpg?v=1": {
+      "path": "/images/2304e99d267a679f0bb6ed7a5fc0e77f5a0682464025e577d4ce79f59dbaf63a.jpg",
+      "sha256": "2304e99d267a679f0bb6ed7a5fc0e77f5a0682464025e577d4ce79f59dbaf63a",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/d1066751-7b34-4e3c-b419-7c3caca03ba2/Small/800590WTRHK5500_X.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:15.245Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/5e2959fc-a974-4fb8-a207-cb92a646edb5/Small/865704WSTGL1160_X.jpg?v=1": {
+      "path": "/images/7f141c4d8c2eba5d2ba3282a0aff4072a4fbc6aad46a3c47a26611d493cb6683.jpg",
+      "sha256": "7f141c4d8c2eba5d2ba3282a0aff4072a4fbc6aad46a3c47a26611d493cb6683",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/5e2959fc-a974-4fb8-a207-cb92a646edb5/Small/865704WSTGL1160_X.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:15.268Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C276_001_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/b690c53f626c3fc1e89018e9cc1363e66f5c90977e4cf878b55168c0a6fa15fa.webp",
+      "sha256": "b690c53f626c3fc1e89018e9cc1363e66f5c90977e4cf878b55168c0a6fa15fa",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C276_001_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:15.387Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C037_500_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/bc9cc80b9d5de149b2fb24dadfdc911d8f729e8da03912dd8b121e95d344eb75.webp",
+      "sha256": "bc9cc80b9d5de149b2fb24dadfdc911d8f729e8da03912dd8b121e95d344eb75",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C037_500_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:15.487Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C019_500_SL_LT_GLB-1?$sfcc-product$": {
+      "path": "/images/6ec85961be1d4463d48b966271bdf86a1f620dd38334331560a6bc0138b425ea.webp",
+      "sha256": "6ec85961be1d4463d48b966271bdf86a1f620dd38334331560a6bc0138b425ea",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C019_500_SL_LT_GLB-1?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:15.836Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C019_250_SL_LT_GLB-1?$sfcc-product$": {
+      "path": "/images/fad10f6f562559e6f131df7291c25524ec0921ac746396e042ad4e1c7f58bbb9.webp",
+      "sha256": "fad10f6f562559e6f131df7291c25524ec0921ac746396e042ad4e1c7f58bbb9",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C019_250_SL_LT_GLB-1?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:15.866Z"
+    },
+    "https://images.asics.com/is/image/asics/1203A821_001_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/a851212e4b9ae35e6379a3da1c0c8d9743824bbc48c1d4d5f6a6ea27c1a706d7.webp",
+      "sha256": "a851212e4b9ae35e6379a3da1c0c8d9743824bbc48c1d4d5f6a6ea27c1a706d7",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1203A821_001_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:16.031Z"
+    },
+    "https://images.asics.com/is/image/asics/1203B057_020_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/8a338956c176b7bdd7e5cb1081a3cee4fb2abfa93595b5f973bbf89dccf12192.webp",
+      "sha256": "8a338956c176b7bdd7e5cb1081a3cee4fb2abfa93595b5f973bbf89dccf12192",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1203B057_020_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:16.111Z"
+    },
+    "https://images.asics.com/is/image/asics/1203B057_001_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/059f1174a3c77acac5e336eacf56eec87fbe0198426efa11be6ba32fbded79f4.webp",
+      "sha256": "059f1174a3c77acac5e336eacf56eec87fbe0198426efa11be6ba32fbded79f4",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1203B057_001_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:16.134Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C167_100_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/63354934d7400951fa7ceff2fa95a65de9f97e6d4e7e909494a1875ed3b8e405.webp",
+      "sha256": "63354934d7400951fa7ceff2fa95a65de9f97e6d4e7e909494a1875ed3b8e405",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C167_100_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:16.277Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C069_250_SL_LT_GLB-1?$sfcc-product$": {
+      "path": "/images/fe128381029b966656023981440f9f74679e50f21bbf7c0e2b4bc39d787f0f21.webp",
+      "sha256": "fe128381029b966656023981440f9f74679e50f21bbf7c0e2b4bc39d787f0f21",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C069_250_SL_LT_GLB-1?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:16.466Z"
+    },
+    "https://images.asics.com/is/image/asics/1012B939_100_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/c33f6679e6eeed5b4378bb67855eb991cba4087a458a50ca950bc9c6feb2fdac.webp",
+      "sha256": "c33f6679e6eeed5b4378bb67855eb991cba4087a458a50ca950bc9c6feb2fdac",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012B939_100_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:16.480Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C309_250_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/e4f22dbe701bc38fa70e03be3f49f86284e62751d42b1a183a3a4fec922f4e91.webp",
+      "sha256": "e4f22dbe701bc38fa70e03be3f49f86284e62751d42b1a183a3a4fec922f4e91",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C309_250_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:16.507Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C067_250_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/e80a28a8c980a2250b89ad274983fd0a6292a6318b71151db211055d318ca229.webp",
+      "sha256": "e80a28a8c980a2250b89ad274983fd0a6292a6318b71151db211055d318ca229",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C067_250_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:16.829Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C230_020_SL_LT_GLB?$eazoom$": {
+      "path": "/images/e0f6411074c24793749f8b99ebd213aec388a13a8f225d09088e76111981b843.webp",
+      "sha256": "e0f6411074c24793749f8b99ebd213aec388a13a8f225d09088e76111981b843",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C230_020_SL_LT_GLB?$eazoom$",
+      "checkedAt": "2026-10-18T00:18:16.897Z"
+    },
+    "https://images.asics.com/is/image/asics/1202A544_020_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/86b6ddcc53d405cfe2279a6482c080eba109d886d69ea1e956974574e7967841.webp",
+      "sha256": "86b6ddcc53d405cfe2279a6482c080eba109d886d69ea1e956974574e7967841",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1202A544_020_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:17.057Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C308_250_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/4b19fa757f3e6645eed540fa9ef6dda03e4a92d946898422db1a6f6f55462c4f.webp",
+      "sha256": "4b19fa757f3e6645eed540fa9ef6dda03e4a92d946898422db1a6f6f55462c4f",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C308_250_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:17.058Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C313_800_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/3df0b970448720f36f7fea322d2cea24c1846f36f25ea56f5dd3fa70636c5e60.webp",
+      "sha256": "3df0b970448720f36f7fea322d2cea24c1846f36f25ea56f5dd3fa70636c5e60",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C313_800_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:17.346Z"
+    },
+    "https://images.asics.com/is/image/asics/1202A544_200_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/ec0d1ffdf34cee04569ce3c2e84ddfe3b5129a818082cad356025e4abdfb2d16.webp",
+      "sha256": "ec0d1ffdf34cee04569ce3c2e84ddfe3b5129a818082cad356025e4abdfb2d16",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1202A544_200_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:17.534Z"
+    },
+    "https://images.asics.com/is/image/asics/1013A178_750_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/56425081157211ffa8b122d0b166a4d389930f6ed0dbf92bd6a00339313e01c8.webp",
+      "sha256": "56425081157211ffa8b122d0b166a4d389930f6ed0dbf92bd6a00339313e01c8",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1013A178_750_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:17.555Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/832f2355-c81a-4a81-9fe0-86419e9f6e35/Large/867921V3MS25720_A.jpg?v=1": {
+      "path": "/images/2204d47dae629d8aaf33523dd80eb7c7da09c0dae4032d690dcb34fc5152f16c.jpg",
+      "sha256": "2204d47dae629d8aaf33523dd80eb7c7da09c0dae4032d690dcb34fc5152f16c",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/832f2355-c81a-4a81-9fe0-86419e9f6e35/Large/867921V3MS25720_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:18.513Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/08d378e7-1d93-45cc-9856-7b97cf09df7e/Large/867944V3MS21354_A.jpg?v=2": {
+      "path": "/images/b07d095861103a4db32b803d529aaaa0fb5e4cab86e83753f11ec23b6fc66b0b.jpg",
+      "sha256": "b07d095861103a4db32b803d529aaaa0fb5e4cab86e83753f11ec23b6fc66b0b",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/08d378e7-1d93-45cc-9856-7b97cf09df7e/Large/867944V3MS21354_A.jpg?v=2",
+      "checkedAt": "2026-10-18T00:18:18.528Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/ff14a8e5-420e-4f5d-885a-2d0f836448e0/Large/867921V3MS21354_A.jpg?v=1": {
+      "path": "/images/9b614a3a5e67769bdcba53d4ed5712101bdd763cdf0f7f3179016200469d67fb.jpg",
+      "sha256": "9b614a3a5e67769bdcba53d4ed5712101bdd763cdf0f7f3179016200469d67fb",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/ff14a8e5-420e-4f5d-885a-2d0f836448e0/Large/867921V3MS21354_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:18.572Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/39407ecd-c4a0-48bc-af35-905e7655f835/Large/867944V3MS29163_A.jpg?v=1": {
+      "path": "/images/f034141ee476c9a189be4744284e88bd0c52fb9a28ec9283796c577a1e6b7e99.jpg",
+      "sha256": "f034141ee476c9a189be4744284e88bd0c52fb9a28ec9283796c577a1e6b7e99",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/39407ecd-c4a0-48bc-af35-905e7655f835/Large/867944V3MS29163_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:18.588Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/becff2fd-0830-49a5-b88c-b20ab7f8394f/Large/867944V3MS27386_A.jpg?v=1": {
+      "path": "/images/7987abd5c83fd091c7ab6014254e0b84e901bed716b633fddb0aa3566055e684.jpg",
+      "sha256": "7987abd5c83fd091c7ab6014254e0b84e901bed716b633fddb0aa3566055e684",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/becff2fd-0830-49a5-b88c-b20ab7f8394f/Large/867944V3MS27386_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:19.091Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/a39ac9f6-0566-495e-a38e-19f054e694ec/Large/867941V3MS03063_A.jpg?v=1": {
+      "path": "/images/3ccb8b0df44a0e36525f99c935bb424865d27850662ee84c6ec78916accf1a77.jpg",
+      "sha256": "3ccb8b0df44a0e36525f99c935bb424865d27850662ee84c6ec78916accf1a77",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/a39ac9f6-0566-495e-a38e-19f054e694ec/Large/867941V3MS03063_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:19.149Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/db0ac97b-135e-4c51-81cd-065ba0272f68/Large/867941V65C09013_A.jpg?v=1": {
+      "path": "/images/617d240fd7e71d03397bf840447106dbb61514350df7439e452236e4e498eaec.jpg",
+      "sha256": "617d240fd7e71d03397bf840447106dbb61514350df7439e452236e4e498eaec",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/db0ac97b-135e-4c51-81cd-065ba0272f68/Large/867941V65C09013_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:19.458Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/229de7e0-2afe-415f-9e30-99783a5af692/Large/867924V65D14015_A.jpg?v=1": {
+      "path": "/images/5a351e7306e85ee22971254d4ca330dba6d47b5922b74f1d3859e92ff5609206.jpg",
+      "sha256": "5a351e7306e85ee22971254d4ca330dba6d47b5922b74f1d3859e92ff5609206",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/229de7e0-2afe-415f-9e30-99783a5af692/Large/867924V65D14015_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:19.537Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/2920e31a-c0b2-4b8b-923b-89f744595379/Large/867944V3MS25720_A.jpg?v=1": {
+      "path": "/images/027d962f35d877abe6f04763fd1243e088df3350444e7d29fae5f0cabc670cf7.jpg",
+      "sha256": "027d962f35d877abe6f04763fd1243e088df3350444e7d29fae5f0cabc670cf7",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/2920e31a-c0b2-4b8b-923b-89f744595379/Large/867944V3MS25720_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:19.556Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/64de2c56-d961-4616-a9ad-c473c9d82778/Large/755915V2X401350_A.jpg?v=1": {
+      "path": "/images/74002288ddf61a406c61660c6428fbaa50c26680e18661311a11729bbacadb16.jpg",
+      "sha256": "74002288ddf61a406c61660c6428fbaa50c26680e18661311a11729bbacadb16",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/64de2c56-d961-4616-a9ad-c473c9d82778/Large/755915V2X401350_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:19.665Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/3a6ff972-2582-47ef-a4de-81ff56f34715/Large/867924V65D19174_A.jpg?v=1": {
+      "path": "/images/e0694dd65cf0736084e1550ffef74cb273dc6b8dfd0755ac39903e7ec57ea32c.jpg",
+      "sha256": "e0694dd65cf0736084e1550ffef74cb273dc6b8dfd0755ac39903e7ec57ea32c",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/3a6ff972-2582-47ef-a4de-81ff56f34715/Large/867924V65D19174_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:20.127Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/54aebea6-18c7-4e35-ac75-52cd84e2041e/Large/876153V6VE01670_A.jpg?v=1": {
+      "path": "/images/604c07010931e693ef9b66b2df005f949480a15c0b8685cfb4fdfa1a9b32d878.jpg",
+      "sha256": "604c07010931e693ef9b66b2df005f949480a15c0b8685cfb4fdfa1a9b32d878",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/54aebea6-18c7-4e35-ac75-52cd84e2041e/Large/876153V6VE01670_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:20.166Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/a9f87c0c-b6ec-4042-ab5c-bc6f6f5d8b52/Large/867926V65C05052_A.jpg?v=1": {
+      "path": "/images/17842241b85e68c18555b6c43dfa836387a9b9c9c12f60d61027dcfaed32db71.jpg",
+      "sha256": "17842241b85e68c18555b6c43dfa836387a9b9c9c12f60d61027dcfaed32db71",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/a9f87c0c-b6ec-4042-ab5c-bc6f6f5d8b52/Large/867926V65C05052_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:20.552Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/028778b2-f6c6-4215-b86c-882f5189921f/Large/755915V2X409038_A.jpg?v=1": {
+      "path": "/images/5eb6ec8acb997dd51abc8d8c73a039ba5c90f94ee3f311ba75136342e2411c59.jpg",
+      "sha256": "5eb6ec8acb997dd51abc8d8c73a039ba5c90f94ee3f311ba75136342e2411c59",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/028778b2-f6c6-4215-b86c-882f5189921f/Large/755915V2X409038_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:20.716Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/02bc58b2-a32a-4dec-9db8-166d52ef4b14/Large/876153V6VE09117_A.jpg?v=1": {
+      "path": "/images/bc0f643941c8f649b4a55c8cb5c39789e8f59a67447452e8126579812095269d.jpg",
+      "sha256": "bc0f643941c8f649b4a55c8cb5c39789e8f59a67447452e8126579812095269d",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/02bc58b2-a32a-4dec-9db8-166d52ef4b14/Large/876153V6VE09117_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:21.080Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/230dba97-e3aa-4a81-bb01-045a18893ec6/Large/876113V3QE09866_A.jpg?v=1": {
+      "path": "/images/0a0fc02b5f51baf30e7d0dc03ff3a867b13dc9d7055926512d8da7817f5a49d2.jpg",
+      "sha256": "0a0fc02b5f51baf30e7d0dc03ff3a867b13dc9d7055926512d8da7817f5a49d2",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/230dba97-e3aa-4a81-bb01-045a18893ec6/Large/876113V3QE09866_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:21.135Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/ae48988c-1b5f-4e24-9750-67f0f4eb290b/Large/876113V6VE01684_A.jpg?v=2": {
+      "path": "/images/d1ec96ae9a88fd9f28c3f9ef4e489b9536d69e5509729789b08b5790f6dace89.jpg",
+      "sha256": "d1ec96ae9a88fd9f28c3f9ef4e489b9536d69e5509729789b08b5790f6dace89",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/ae48988c-1b5f-4e24-9750-67f0f4eb290b/Large/876113V6VE01684_A.jpg?v=2",
+      "checkedAt": "2026-10-18T00:18:21.223Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/7430d1ee-2af0-4885-b31e-039ff4d2fd99/Large/867850V5JG39179_A.jpg?v=1": {
+      "path": "/images/b691b46a95896bf944bfe4382a915bef4e2181a685ff76c3c852306f861e3cac.jpg",
+      "sha256": "b691b46a95896bf944bfe4382a915bef4e2181a685ff76c3c852306f861e3cac",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/7430d1ee-2af0-4885-b31e-039ff4d2fd99/Large/867850V5JG39179_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:21.655Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/1b5a4e3c-b3ed-4fbf-8ce2-abea133ad2ff/Large/867848V2ED09117_A.jpg?v=1": {
+      "path": "/images/281734f67db0131e9ce9f7588905a5b2a6c56c74520288d0f2d19b9b323a6093.jpg",
+      "sha256": "281734f67db0131e9ce9f7588905a5b2a6c56c74520288d0f2d19b9b323a6093",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/1b5a4e3c-b3ed-4fbf-8ce2-abea133ad2ff/Large/867848V2ED09117_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:21.904Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/bb00fac2-d074-4c9a-9d05-bf3714620d66/Large/A007BYV6VC09263_A.jpg?v=1": {
+      "path": "/images/2b9da8c94827baeb5e2028b7fb3a88ba1e9799206dbfc602624dac528d4db494.jpg",
+      "sha256": "2b9da8c94827baeb5e2028b7fb3a88ba1e9799206dbfc602624dac528d4db494",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/bb00fac2-d074-4c9a-9d05-bf3714620d66/Large/A007BYV6VC09263_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:21.958Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/df693fd8-526c-4b68-a951-82c8e9737104/Large/A009YPV7BB12782_A.jpg?v=1": {
+      "path": "/images/fd5855632c4dceb721530ffa39ed74833995193fe87b9be32eee8300b0132b16.jpg",
+      "sha256": "fd5855632c4dceb721530ffa39ed74833995193fe87b9be32eee8300b0132b16",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/df693fd8-526c-4b68-a951-82c8e9737104/Large/A009YPV7BB12782_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:22.271Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/bb488285-f4e9-40fa-8956-ed23ce982890/Large/A007CFV6VC09063_A.jpg?v=1": {
+      "path": "/images/31c132dcbe59c5a6236c7985e12af0e443376bbe2cd3618620661fd47436f896.jpg",
+      "sha256": "31c132dcbe59c5a6236c7985e12af0e443376bbe2cd3618620661fd47436f896",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/bb488285-f4e9-40fa-8956-ed23ce982890/Large/A007CFV6VC09063_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:22.413Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/231e34fb-4cc4-49ab-bca5-8d7839894ed6/Large/A009YGV7BB12782_A.jpg?v=2": {
+      "path": "/images/fd5855632c4dceb721530ffa39ed74833995193fe87b9be32eee8300b0132b16.jpg",
+      "sha256": "fd5855632c4dceb721530ffa39ed74833995193fe87b9be32eee8300b0132b16",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/231e34fb-4cc4-49ab-bca5-8d7839894ed6/Large/A009YGV7BB12782_A.jpg?v=2",
+      "checkedAt": "2026-10-18T00:18:22.493Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C009_750_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/cdfab8dfe25f46c3c662fe6b6806bf6b25c0c81721b2c4401e2554bb6b394e00.webp",
+      "sha256": "cdfab8dfe25f46c3c662fe6b6806bf6b25c0c81721b2c4401e2554bb6b394e00",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C009_750_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:22.640Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/94241db2-90db-4e8b-950f-ae45e4e75011/Large/867864V6IJ19197_A.jpg?v=1": {
+      "path": "/images/bdef42b12993e677f13c89a9aa101bfcb59483b0efd0d5e527ab181dcd792a4b.jpg",
+      "sha256": "bdef42b12993e677f13c89a9aa101bfcb59483b0efd0d5e527ab181dcd792a4b",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/94241db2-90db-4e8b-950f-ae45e4e75011/Large/867864V6IJ19197_A.jpg?v=1",
+      "checkedAt": "2026-10-18T00:18:23.002Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C244_400_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/b5f290a5d1376ca701c3e97a72b947aabfab69f8c99a75c4b40b1acf0aca6137.webp",
+      "sha256": "b5f290a5d1376ca701c3e97a72b947aabfab69f8c99a75c4b40b1acf0aca6137",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C244_400_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-18T00:18:23.054Z"
     }
   }
 }
