@@ -1650,6 +1650,24 @@
       "sha256": "b5f290a5d1376ca701c3e97a72b947aabfab69f8c99a75c4b40b1acf0aca6137",
       "sourceUrl": "https://images.asics.com/is/image/asics/1011C244_400_SL_LT_GLB?$sfcc-product$",
       "checkedAt": "2026-10-18T00:18:23.054Z"
+    },
+    "https://images.asics.com/is/image/asics/1012C071_700_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/efe84a967055b9e6427f42b16372f2cf861a3a7400de995f8bb439d45631aeb8.webp",
+      "sha256": "efe84a967055b9e6427f42b16372f2cf861a3a7400de995f8bb439d45631aeb8",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1012C071_700_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-25T01:40:58.645Z"
+    },
+    "https://images.asics.com/is/image/asics/1013A196_400_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/1ca7e23b7faaaf438d4983a57745de9b70c75109b7421714c88de581140bda95.webp",
+      "sha256": "1ca7e23b7faaaf438d4983a57745de9b70c75109b7421714c88de581140bda95",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1013A196_400_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-25T01:40:58.776Z"
+    },
+    "https://images.asics.com/is/image/asics/1011C311_800_SL_LT_GLB?$sfcc-product$": {
+      "path": "/images/df052e322136af1e96e8b5fe4d7ddeb8e6ec60f6f6f59ffc7ef6b34b542bed95.webp",
+      "sha256": "df052e322136af1e96e8b5fe4d7ddeb8e6ec60f6f6f59ffc7ef6b34b542bed95",
+      "sourceUrl": "https://images.asics.com/is/image/asics/1011C311_800_SL_LT_GLB?$sfcc-product$",
+      "checkedAt": "2026-10-25T01:40:58.785Z"
     }
   }
 }
