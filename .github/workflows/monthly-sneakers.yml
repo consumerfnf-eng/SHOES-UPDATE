@@ -1,74 +1,140 @@
 name: Monthly Sneakers Update
 on:
+  schedule:
+    - cron: '0 8 1 * *'
+      timezone: Asia/Seoul
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['.github/workflows/monthly-sneakers.yml']
+    paths:
+      - '.github/workflows/monthly-sneakers.yml'
+      - 'scripts/monthly-sneakers.py'
+      - 'scripts/install-monthly-ui.mjs'
+      - 'tests/monthly-collector-test.py'
 permissions:
-  contents: read
+  contents: write
 concurrency:
-  group: shoes-monthly-source-check
+  group: shoes-publication
   cancel-in-progress: false
 jobs:
-  verify-sources:
+  collect-and-publish:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install requests beautifulsoup4 playwright
+      - run: npm ci
+      - run: pip install 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'lxml>=5,<7' 'instaloader>=4.14,<5' playwright
       - run: python -m playwright install --with-deps chromium
-      - name: Inspect public source responses without bypassing authentication
+      - name: Preserve baseline tests before applying compatible UI integration
         run: |
-          mkdir -p monthly-probe
+          mkdir -p logs
+          find tests -name '*.test.mjs' ! -name 'monthly-sneakers.test.mjs' -print0 | xargs -0 node --test > logs/monthly-tests-before.log 2>&1 || true
+          node scripts/install-monthly-ui.mjs
+          node --check public/assets/app.mjs
+          node --check public/assets/catalog-view.mjs
+          node --check public/assets/monthly-sneakers.mjs
+          python tests/monthly-collector-test.py
+          node --test tests/monthly-sneakers.test.mjs
+          npm test > logs/monthly-tests-after.log 2>&1 || true
           python - <<'PY'
-          import json, pathlib, requests
-          from playwright.sync_api import sync_playwright
-          out=pathlib.Path('monthly-probe'); report=[]
-          sources={
-            'farfetch':'https://www.farfetch.com/ie/shopping/men/shoes-2/items.aspx?sort=2&page=1&category=137174',
-            'mytheresa':'https://www.mytheresa.com/kr/en/women/shoes/sneakers',
-            'live':'https://shoes-update.pages.dev/'
-          }
-          with sync_playwright() as p:
-            browser=p.chromium.launch()
-            for name,url in sources.items():
-              entry={'name':name,'url':url}
-              try:
-                r=requests.get(url,timeout=35,headers={'User-Agent':'Mozilla/5.0 ShoesResearch/1.0'})
-                entry.update(status=r.status_code,finalUrl=r.url,bytes=len(r.content))
-                (out/(name+'-http.html')).write_text(r.text,encoding='utf-8')
-              except Exception as e: entry['httpError']=type(e).__name__
-              page=browser.new_page(locale='en-US',viewport={'width':1440,'height':1000})
-              try:
-                r=page.goto(url,wait_until='domcontentloaded',timeout=45000)
-                page.wait_for_timeout(3000)
-                entry.update(browserStatus=r.status if r else None,title=page.title(),browserUrl=page.url)
-                (out/(name+'-browser.html')).write_text(page.content(),encoding='utf-8')
-                page.screenshot(path=str(out/(name+'.png')),full_page=False)
-              except Exception as e: entry['browserError']=type(e).__name__
-              page.close();report.append(entry)
-            browser.close()
-          (out/'report.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
-          print(json.dumps(report,indent=2))
+          import re,pathlib
+          failures=lambda p:set(re.findall(r'^not ok \d+ - (.+)$',pathlib.Path(p).read_text(),re.M))
+          before=failures('logs/monthly-tests-before.log');after=failures('logs/monthly-tests-after.log')
+          if after-before:raise SystemExit('New regression failures: '+str(after-before))
+          print('No new regressions. Pre-existing failures:',sorted(before))
           PY
-      - name: Save source and application evidence for implementation checks
+      - name: Collect retailer catalog, original editorial dates and actual Instagram samples
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+          INSTAGRAM_SESSION_BASE64: ${{ secrets.INSTAGRAM_SESSION_BASE64 }}
+        run: |
+          if [ '${{ github.event_name }}' = 'push' ]; then
+            python scripts/monthly-sneakers.py --retail-minutes 45 --media-minutes 4
+          else
+            python scripts/monthly-sneakers.py --retail-minutes 45 --media-minutes 15
+          fi
+      - name: Validate original catalog and prevent public secrets or crawler code
+        run: npm run build
+      - name: Verify same card layout, source controls and mobile overflow
+        run: |
+          python - <<'PY'
+          import json,pathlib,threading,http.server,functools
+          from playwright.sync_api import sync_playwright
+          handler=functools.partial(http.server.SimpleHTTPRequestHandler,directory='public')
+          server=http.server.ThreadingHTTPServer(('127.0.0.1',8765),handler)
+          threading.Thread(target=server.serve_forever,daemon=True).start()
+          out=pathlib.Path('logs/monthly-ui');out.mkdir(parents=True,exist_ok=True)
+          errors=[];checks={}
+          with sync_playwright() as p:
+            browser=p.chromium.launch();page=browser.new_page(viewport={'width':1440,'height':1000})
+            page.on('pageerror',lambda e:errors.append(str(e)))
+            page.goto('http://127.0.0.1:8765',wait_until='networkidle',timeout=60000)
+            page.locator('#result-count').wait_for();page.wait_for_timeout(1500)
+            assert page.locator('#update-label').inner_text()!='게시 정보 확인 불가'
+            for source in ['all','farfetch','mytheresa','sns','media']:
+              page.locator('[data-source="'+source+'"]').click()
+              checks[source]={'count':page.locator('#result-count').inner_text(),'description':page.locator('#result-description').inner_text()}
+              page.screenshot(path=str(out/(source+'.png')),full_page=False)
+            page.locator('[data-source="all"]').click()
+            page.set_viewport_size({'width':390,'height':844})
+            assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'), 'Mobile overflow'
+            page.screenshot(path=str(out/'mobile.png'),full_page=False)
+            browser.close()
+          server.shutdown()
+          assert not errors,errors
+          (out/'checks.json').write_text(json.dumps(checks,ensure_ascii=False,indent=2))
+          print(json.dumps(checks,ensure_ascii=False))
+          PY
+      - name: Publish using existing Cloudflare Pages Git integration
+        run: |
+          git config user.name 'Shoes Dashboard Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add public/index.html public/assets/app.mjs public/assets/catalog-view.mjs public/assets/release-window.mjs public/assets/brand-groups.mjs public/data/monthly-sneakers.json
+          if ! git diff --cached --quiet; then
+            git commit -m "monthly sneaker evidence $(date -u +%F)"
+            git push origin HEAD:main
+          fi
+          git rev-parse HEAD > logs/monthly-published-commit.txt
+      - name: Summarize coverage without claiming blocked sources completed
+        if: always()
+        run: |
+          python - <<'PY'
+          import json,os,pathlib
+          p=pathlib.Path('logs/monthly-summary.json')
+          if not p.exists():raise SystemExit('Collection did not produce a validated summary; previous publication retained.')
+          d=json.loads(p.read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+            f.write('## Monthly sneaker evidence\n\n')
+            f.write('New retailer records: '+str(d['newRecords'])+'\n\n')
+            for r in d['retailers']:
+              f.write(f"- {r['source']}: {r['status']}; {r['pagesRead']} pages; {r['accepted']} accepted.\n")
+            f.write('\nInstagram: '+d['instagram']['status']+'\n\nMedia: '+d['media']['status']+'\n')
+            f.write('\nBlocked/partial sources are not complete uploads. Previous records remain.\n')
+          PY
+      - name: Save auditable collection and rendered checks
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: monthly-source-check
+          name: monthly-sneakers-${{ github.run_id }}
           path: |
-            monthly-probe
+            logs/monthly-*
+            public/data/monthly-sneakers.json
+            public/assets/monthly-sneakers.mjs
             public/index.html
-            public/assets
-            public/data/catalog.json
-            scripts
-            config
-            tests
-            package.json
-            package-lock.json
-          retention-days: 3
+            scripts/monthly-sneakers.py
+            scripts/install-monthly-ui.mjs
+            tests/monthly-*
+          if-no-files-found: ignore
+          retention-days: 14
