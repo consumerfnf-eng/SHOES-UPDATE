@@ -1,0 +1,74 @@
+name: Monthly Sneakers Update
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/monthly-sneakers.yml']
+permissions:
+  contents: read
+concurrency:
+  group: shoes-monthly-source-check
+  cancel-in-progress: false
+jobs:
+  verify-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 playwright
+      - run: python -m playwright install --with-deps chromium
+      - name: Inspect public source responses without bypassing authentication
+        run: |
+          mkdir -p monthly-probe
+          python - <<'PY'
+          import json, pathlib, requests
+          from playwright.sync_api import sync_playwright
+          out=pathlib.Path('monthly-probe'); report=[]
+          sources={
+            'farfetch':'https://www.farfetch.com/ie/shopping/men/shoes-2/items.aspx?sort=2&page=1&category=137174',
+            'mytheresa':'https://www.mytheresa.com/kr/en/women/shoes/sneakers',
+            'live':'https://shoes-update.pages.dev/'
+          }
+          with sync_playwright() as p:
+            browser=p.chromium.launch()
+            for name,url in sources.items():
+              entry={'name':name,'url':url}
+              try:
+                r=requests.get(url,timeout=35,headers={'User-Agent':'Mozilla/5.0 ShoesResearch/1.0'})
+                entry.update(status=r.status_code,finalUrl=r.url,bytes=len(r.content))
+                (out/(name+'-http.html')).write_text(r.text,encoding='utf-8')
+              except Exception as e: entry['httpError']=type(e).__name__
+              page=browser.new_page(locale='en-US',viewport={'width':1440,'height':1000})
+              try:
+                r=page.goto(url,wait_until='domcontentloaded',timeout=45000)
+                page.wait_for_timeout(3000)
+                entry.update(browserStatus=r.status if r else None,title=page.title(),browserUrl=page.url)
+                (out/(name+'-browser.html')).write_text(page.content(),encoding='utf-8')
+                page.screenshot(path=str(out/(name+'.png')),full_page=False)
+              except Exception as e: entry['browserError']=type(e).__name__
+              page.close();report.append(entry)
+            browser.close()
+          (out/'report.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+          print(json.dumps(report,indent=2))
+          PY
+      - name: Save source and application evidence for implementation checks
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: monthly-source-check
+          path: |
+            monthly-probe
+            public/index.html
+            public/assets
+            public/data/catalog.json
+            scripts
+            config
+            tests
+            package.json
+            package-lock.json
+          retention-days: 3
