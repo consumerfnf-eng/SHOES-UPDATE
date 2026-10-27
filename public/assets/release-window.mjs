@@ -1,3 +1,4 @@
+import {retailerReleaseState} from './monthly-sneakers.mjs'; // MONTHLY_SNEAKERS_V1
 export function validCalendarDay(day){return /^\d{4}-\d{2}-\d{2}$/.test(day||'')&&Number.isFinite(Date.parse(day))&&new Date(day).toISOString().slice(0,10)===day;}
 export function calendarShift(day,delta){
   if(!validCalendarDay(day)||!Number.isInteger(delta))throw Error('Invalid calendar shift');
@@ -17,6 +18,7 @@ export function releaseWindow(product){
 }
 import {publicationState,hasArrivalEvidence} from './publication-window.mjs';
 export function releaseState(product,asOf){
+  const retailer=retailerReleaseState(product,asOf);if(retailer!==null)return retailer;
   if(product?.firstPublishedAt)return publicationState(product,asOf);
   if(validCalendarDay(asOf)&&hasArrivalEvidence(product,asOf))return 'released';
   if(!validCalendarDay(asOf))return 'invalid';const range=releaseWindow(product);if(!range)return 'invalid';

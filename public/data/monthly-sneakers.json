@@ -1,0 +1,937 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-27T18:33:06+09:00",
+  "periodStart": "2026-07-27",
+  "periodEnd": "2026-10-27",
+  "products": [],
+  "models": {
+    "balenciaga:track": {
+      "key": "balenciaga:track",
+      "brand": "Balenciaga",
+      "name": "track",
+      "aliases": [
+        "track"
+      ],
+      "productIds": [
+        "arrival-8d0b2abd78458118cbe3",
+        "arrival-f61c08d4e0fa7918f486",
+        "arrival-882dfe52be7da18abd80"
+      ]
+    },
+    "jordan:airjordan5": {
+      "key": "jordan:airjordan5",
+      "brand": "Jordan",
+      "name": "Air Jordan 5",
+      "aliases": [
+        "Air Jordan 5"
+      ],
+      "productIds": [
+        "official-nike-hq7978-001",
+        "official-nike-iv5678-102"
+      ]
+    },
+    "asics:gelkayano33": {
+      "key": "asics:gelkayano33",
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 33",
+      "aliases": [
+        "GEL-KAYANO 33"
+      ],
+      "productIds": [
+        "arrival-2aa99c05fe6811dce70c",
+        "arrival-ffa4b7d01542b7073a54",
+        "arrival-e144220d6976e62daabb",
+        "arrival-00a4f193a1d26d1f0312",
+        "arrival-6f1d21152fdb6a18995f"
+      ]
+    },
+    "asics:1000": {
+      "key": "asics:1000",
+      "brand": "ASICS",
+      "name": "1000",
+      "aliases": [
+        "1000"
+      ],
+      "productIds": [
+        "arrival-0b38dd1fa9ffc31400a6"
+      ]
+    },
+    "newbalance:204l": {
+      "key": "newbalance:204l",
+      "brand": "New Balance",
+      "name": "204L",
+      "aliases": [
+        "204L"
+      ],
+      "productIds": [
+        "arrival-ec19f4a6a31c980bc4bb"
+      ]
+    },
+    "newbalance:530": {
+      "key": "newbalance:530",
+      "brand": "New Balance",
+      "name": "530",
+      "aliases": [
+        "530"
+      ],
+      "productIds": [
+        "arrival-5e2a2afa67692f0de9af"
+      ]
+    },
+    "nike:airjordan1": {
+      "key": "nike:airjordan1",
+      "brand": "Nike",
+      "name": "Air Jordan 1",
+      "aliases": [
+        "Air Jordan 1"
+      ],
+      "productIds": [
+        "arrival-14c1cc25b80878d18ec4",
+        "arrival-da2c9ca1382a48b7fb9a"
+      ]
+    },
+    "prada:collapse": {
+      "key": "prada:collapse",
+      "brand": "Prada",
+      "name": "Collapse",
+      "aliases": [
+        "Collapse"
+      ],
+      "productIds": [
+        "new-20260923-8acae7430e9a7ae1"
+      ]
+    },
+    "asics:gelkayano14": {
+      "key": "asics:gelkayano14",
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 14",
+      "aliases": [
+        "GEL-KAYANO 14"
+      ],
+      "productIds": [
+        "asics-gel-kayano-14-illusion-blue-1203a537-402"
+      ]
+    },
+    "miumiu:530": {
+      "key": "miumiu:530",
+      "brand": "Miu Miu",
+      "name": "530",
+      "aliases": [
+        "530"
+      ],
+      "productIds": [
+        "arrival-a7ee568a2b5aeeb58d3b"
+      ]
+    },
+    "nike:airmax90": {
+      "key": "nike:airmax90",
+      "brand": "Nike",
+      "name": "Air Max 90",
+      "aliases": [
+        "Air Max 90"
+      ],
+      "productIds": [
+        "arrival-6e5ca4c3be88a7635515"
+      ]
+    },
+    "nike:airmax95": {
+      "key": "nike:airmax95",
+      "brand": "Nike",
+      "name": "Air Max 95",
+      "aliases": [
+        "Air Max 95"
+      ],
+      "productIds": [
+        "new-20260923-4819253c162ff664"
+      ]
+    },
+    "prada:americascup": {
+      "key": "prada:americascup",
+      "brand": "Prada",
+      "name": "America's Cup",
+      "aliases": [
+        "America's Cup"
+      ],
+      "productIds": [
+        "new-20260923-8c2a30cee1296c64"
+      ]
+    },
+    "puma:speedcatballet": {
+      "key": "puma:speedcatballet",
+      "brand": "PUMA",
+      "name": "Speedcat Ballet",
+      "aliases": [
+        "Speedcat Ballet"
+      ],
+      "productIds": [
+        "arrival-b32989ab4eb73430409f",
+        "arrival-bd2d8fa34ff8edb03925",
+        "arrival-cb79f6400396e350bf8d"
+      ]
+    },
+    "puma:speedcat": {
+      "key": "puma:speedcat",
+      "brand": "PUMA",
+      "name": "Speedcat",
+      "aliases": [
+        "Speedcat"
+      ],
+      "productIds": [
+        "arrival-3017c169576f738ec99a",
+        "arrival-6db20bbff4eb4d0f2fab",
+        "arrival-16d7ba668cb3a9f55579",
+        "arrival-e88fffb382898154e156",
+        "arrival-4229e273d1921d9aa5c8",
+        "arrival-0c303242722f05ab20b7",
+        "arrival-2d5b6da8adace0d3dd3c"
+      ]
+    },
+    "prada:speedrock": {
+      "key": "prada:speedrock",
+      "brand": "Prada",
+      "name": "Speedrock",
+      "aliases": [
+        "Speedrock"
+      ],
+      "productIds": [
+        "new-20260923-df9645f37b8eddcb",
+        "arrival-df6baad18926d4fa9919"
+      ]
+    },
+    "balenciaga:triples": {
+      "key": "balenciaga:triples",
+      "brand": "Balenciaga",
+      "name": "triple s",
+      "aliases": [
+        "triple s"
+      ],
+      "productIds": [
+        "arrival-b5ecc94490f65f748f57"
+      ]
+    },
+    "salomon:xt4": {
+      "key": "salomon:xt4",
+      "brand": "Salomon",
+      "name": "XT-4",
+      "aliases": [
+        "XT-4"
+      ],
+      "productIds": [
+        "official-salomon-l49210800",
+        "official-salomon-l49210700"
+      ]
+    },
+    "salomon:xt6": {
+      "key": "salomon:xt6",
+      "brand": "Salomon",
+      "name": "XT-6",
+      "aliases": [
+        "XT-6"
+      ],
+      "productIds": [
+        "arrival-2deaa22fd3d8d4ee6319",
+        "official-salomon-l45405100",
+        "official-salomon-l49213700",
+        "official-salomon-l49213200",
+        "official-salomon-l49211100"
+      ]
+    },
+    "salomon:xt6goretex": {
+      "key": "salomon:xt6goretex",
+      "brand": "Salomon",
+      "name": "XT-6 GORE-TEX",
+      "aliases": [
+        "XT-6 GORE-TEX"
+      ],
+      "productIds": [
+        "arrival-3abf1fa08940f82da21d",
+        "official-salomon-l49215400",
+        "official-salomon-l49215200",
+        "official-salomon-l49214800"
+      ]
+    },
+    "adidas:superstar": {
+      "key": "adidas:superstar",
+      "brand": "adidas",
+      "name": "SUPERSTAR",
+      "aliases": [
+        "SUPERSTAR"
+      ],
+      "productIds": [
+        "verified-adidas-lb3786",
+        "verified-adidas-lb3787"
+      ]
+    },
+    "adidas:taekwondo": {
+      "key": "adidas:taekwondo",
+      "brand": "adidas",
+      "name": "Taekwondo",
+      "aliases": [
+        "Taekwondo"
+      ],
+      "productIds": [
+        "verified-adidas-kj5249",
+        "verified-adidas-kj5248"
+      ]
+    },
+    "jordan:airjordan1": {
+      "key": "jordan:airjordan1",
+      "brand": "Jordan",
+      "name": "Air Jordan 1",
+      "aliases": [
+        "Air Jordan 1"
+      ],
+      "productIds": [
+        "official-nike-ix8478-410",
+        "official-nike-ir0088-001"
+      ]
+    },
+    "newbalance:991v2": {
+      "key": "newbalance:991v2",
+      "brand": "New Balance",
+      "name": "991V2",
+      "aliases": [
+        "991V2"
+      ],
+      "productIds": [
+        "verified-new-balance-u991wl2"
+      ]
+    },
+    "newbalance:740": {
+      "key": "newbalance:740",
+      "brand": "New Balance",
+      "name": "740",
+      "aliases": [
+        "740"
+      ],
+      "productIds": [
+        "verified-new-balance-u7406ak"
+      ]
+    },
+    "nike:airforce1": {
+      "key": "nike:airforce1",
+      "brand": "Nike",
+      "name": "Air Force 1",
+      "aliases": [
+        "Air Force 1"
+      ],
+      "productIds": [
+        "daily-20260915-nike-sb-af1-yuto-io8439-100"
+      ]
+    }
+  },
+  "signals": {
+    "media": {
+      "nike:airforce1": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "nike:airforce1",
+        "articleCount": 6,
+        "publisherCount": 3,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://www.gq-magazin.de/artikel/der-neue-nike-air-force-1-iron-man",
+            "title": "So cool wie Tony Stark: Ob der neue Nike Air Force 1 \"Iron Man“ genauso unverwüstlich ist, wird sich zeigen",
+            "publishedAt": "2026-10-19",
+            "publisher": "gq-magazin.de",
+            "publisherName": "GQ Germany",
+            "type": "magazine"
+          },
+          {
+            "url": "https://www.gq-magazin.de/artikel/so-wird-ein-sneaker-zum-eleganten-dressschuh-der-neue-nike-air-force-1",
+            "title": "So wird ein Sneaker zum eleganten Dressschuh: Der neue Nike Air Force 1 zeigt Kante",
+            "publishedAt": "2026-10-26",
+            "publisher": "gq-magazin.de",
+            "publisherName": "GQ Germany",
+            "type": "magazine"
+          },
+          {
+            "url": "https://hypebeast.com/2026/10/nike-air-force-1-low-gore-tex-thunder-blue-hv5953-400-official-look-release-info",
+            "title": "Nike Air Force 1 Low GORE-TEX Prepares for Winter in \"Thunder Blue\"",
+            "publishedAt": "2026-10-27",
+            "publisher": "hypebeast.com",
+            "publisherName": "Hypebeast",
+            "type": "magazine"
+          },
+          {
+            "url": "https://hypebeast.com/2026/10/nike-air-force-1-low-square-toe-triple-white-jf7766-100-release-info",
+            "title": "Nike Air Force 1 Low Square Toe \"Triple White\" Receives Official Release Date",
+            "publishedAt": "2026-10-26",
+            "publisher": "hypebeast.com",
+            "publisherName": "Hypebeast",
+            "type": "magazine"
+          },
+          {
+            "url": "https://www.highsnobiety.com/p/nike-air-force-1-square-toe",
+            "title": "Nike's Spiffy Forces Are All Squared Away",
+            "publishedAt": "2026-10-27",
+            "publisher": "highsnobiety.com",
+            "publisherName": "Highsnobiety",
+            "type": "magazine"
+          },
+          {
+            "url": "https://www.highsnobiety.com/p/nike-air-max-goadome-low-foamposite",
+            "title": "Nike's Slick Foamposite Dad Sneaker Is Outdoor-Ready",
+            "publishedAt": "2026-10-27",
+            "publisher": "highsnobiety.com",
+            "publisherName": "Highsnobiety",
+            "type": "magazine"
+          }
+        ],
+        "rank": 2
+      },
+      "adidas:superstar": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "adidas:superstar",
+        "articleCount": 2,
+        "publisherCount": 1,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://www.gq-magazin.de/artikel/flauschig-blau-dieser-adidas-superstar-bricht-mit-einer-wichtigen-tradition",
+            "title": "Flauschig und blau: Dieser Adidas Superstar bricht mit einer wichtigen Tradition",
+            "publishedAt": "2026-10-26",
+            "publisher": "gq-magazin.de",
+            "publisherName": "GQ Germany",
+            "type": "magazine"
+          },
+          {
+            "url": "https://www.gq-magazin.de/artikel/vincent-kompany-adidas-superstar-minimalismus-300-euro",
+            "title": "Vincent Kompany trägt Adidas Superstar – allerdings in dieser minimalistischen 300-Euro-Version",
+            "publishedAt": "2026-10-17",
+            "publisher": "gq-magazin.de",
+            "publisherName": "GQ Germany",
+            "type": "magazine"
+          }
+        ],
+        "rank": 5
+      },
+      "jordan:airjordan1": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "jordan:airjordan1",
+        "articleCount": 7,
+        "publisherCount": 3,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://sneakerbardetroit.com/infinite-archives-air-jordan-17-low-2027",
+            "title": "Infinite Archives x Air Jordan 17 Low “Varsity Purple” and “Varsity Red” Releases March 2027",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakerbardetroit.com",
+            "publisherName": "Sneaker Bar Detroit",
+            "type": "magazine"
+          },
+          {
+            "url": "https://sneakerbardetroit.com/moma-air-jordan-1-2027",
+            "title": "MoMA x Air Jordan 1 High OG Releases March 2027",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakerbardetroit.com",
+            "publisherName": "Sneaker Bar Detroit",
+            "type": "magazine"
+          },
+          {
+            "url": "https://sneakerbardetroit.com/air-jordan-14-blue-ferrari",
+            "title": "Air Jordan 14 “Blue Ferrari” Releases July 2027",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakerbardetroit.com",
+            "publisherName": "Sneaker Bar Detroit",
+            "type": "magazine"
+          },
+          {
+            "url": "https://sneakernews.com/2026/10/26/jordan-son-of-mars-low-black-metallic-gold-580603-007",
+            "title": "The Jordan Son Of Mars Low Grabs A “Gold Tongue”",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakernews.com",
+            "publisherName": "Sneaker News",
+            "type": "magazine"
+          },
+          {
+            "url": "https://sneakernews.com/2026/10/26/jordan-spizike-low-rust-pink-ja4139-632",
+            "title": "“Rust Pink” Coats A Patent Leather Jordan Spiz’ike Low",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakernews.com",
+            "publisherName": "Sneaker News",
+            "type": "magazine"
+          },
+          {
+            "url": "https://www.thesneakernewsletter.com/p/the-most-important-story-on-nikes",
+            "title": "The Most Important Story On Nike's Calendar",
+            "publishedAt": "2026-10-12",
+            "publisher": "thesneakernewsletter.com",
+            "publisherName": "The Sneaker Newsletter",
+            "type": "newsletter"
+          },
+          {
+            "url": "https://www.thesneakernewsletter.com/p/brands-dont-put-their-best-shoe-where",
+            "title": "Brands Don't Put Their Best Shoe Where The Money Is",
+            "publishedAt": "2026-09-07",
+            "publisher": "thesneakernewsletter.com",
+            "publisherName": "The Sneaker Newsletter",
+            "type": "newsletter"
+          }
+        ],
+        "rank": 1
+      },
+      "nike:airjordan1": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "nike:airjordan1",
+        "articleCount": 4,
+        "publisherCount": 3,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://sneakerbardetroit.com/moma-air-jordan-1-2027",
+            "title": "MoMA x Air Jordan 1 High OG Releases March 2027",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakerbardetroit.com",
+            "publisherName": "Sneaker Bar Detroit",
+            "type": "magazine"
+          },
+          {
+            "url": "https://sneakernews.com/2026/10/26/jordan-son-of-mars-low-black-metallic-gold-580603-007",
+            "title": "The Jordan Son Of Mars Low Grabs A “Gold Tongue”",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakernews.com",
+            "publisherName": "Sneaker News",
+            "type": "magazine"
+          },
+          {
+            "url": "https://sneakernews.com/2026/10/26/jordan-spizike-low-rust-pink-ja4139-632",
+            "title": "“Rust Pink” Coats A Patent Leather Jordan Spiz’ike Low",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakernews.com",
+            "publisherName": "Sneaker News",
+            "type": "magazine"
+          },
+          {
+            "url": "https://www.thesneakernewsletter.com/p/the-most-important-story-on-nikes",
+            "title": "The Most Important Story On Nike's Calendar",
+            "publishedAt": "2026-10-12",
+            "publisher": "thesneakernewsletter.com",
+            "publisherName": "The Sneaker Newsletter",
+            "type": "newsletter"
+          }
+        ],
+        "rank": 3
+      },
+      "jordan:airjordan5": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "jordan:airjordan5",
+        "articleCount": 2,
+        "publisherCount": 1,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://sneakerbardetroit.com/air-jordan-5-black-cat-2027",
+            "title": "Air Jordan 5 “Black Cat” Releases July 2027",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakerbardetroit.com",
+            "publisherName": "Sneaker Bar Detroit",
+            "type": "magazine"
+          },
+          {
+            "url": "https://sneakerbardetroit.com/solefly-air-jordan-5",
+            "title": "How The SoleFly x Air Jordan 5 Looks On-Feet",
+            "publishedAt": "2026-10-26",
+            "publisher": "sneakerbardetroit.com",
+            "publisherName": "Sneaker Bar Detroit",
+            "type": "magazine"
+          }
+        ],
+        "rank": 5
+      },
+      "nike:airmax90": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "nike:airmax90",
+        "articleCount": 2,
+        "publisherCount": 2,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://sneakerbardetroit.com/nike-book-2-moon-landing-release-date",
+            "title": "Nike Book 2 “Moon Landing” First Look",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakerbardetroit.com",
+            "publisherName": "Sneaker Bar Detroit",
+            "type": "magazine"
+          },
+          {
+            "url": "https://www.highsnobiety.com/p/nike-air-max-95-batman-black",
+            "title": "Nike’s Bruce Wayne-Approved Air Max 95 Leaves Gotham",
+            "publishedAt": "2026-10-27",
+            "publisher": "highsnobiety.com",
+            "publisherName": "Highsnobiety",
+            "type": "magazine"
+          }
+        ],
+        "rank": 5
+      },
+      "newbalance:991v2": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "newbalance:991v2",
+        "articleCount": 3,
+        "publisherCount": 3,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://sneakerbardetroit.com/new-balance-991v2-iron-mulch-u991ey2",
+            "title": "New Balance 991v2 “Iron/Mulch” Releases November 1st",
+            "publishedAt": "2026-10-26",
+            "publisher": "sneakerbardetroit.com",
+            "publisherName": "Sneaker Bar Detroit",
+            "type": "magazine"
+          },
+          {
+            "url": "https://hypebeast.com/2026/10/new-balance-991v2-iron-mulch-u991ey2-release-info",
+            "title": "New Balance 991v2 Prepares for Fall in \"Iron/Mulch\"",
+            "publishedAt": "2026-10-27",
+            "publisher": "hypebeast.com",
+            "publisherName": "Hypebeast",
+            "type": "magazine"
+          },
+          {
+            "url": "https://www.highsnobiety.com/p/sneaker-releases-2026-october-week-5",
+            "title": "From adidas to New Balance, the Seven Best Sneakers to Cop This Week",
+            "publishedAt": "2026-10-27",
+            "publisher": "highsnobiety.com",
+            "publisherName": "Highsnobiety",
+            "type": "magazine"
+          }
+        ],
+        "rank": 4
+      },
+      "salomon:xt4": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "salomon:xt4",
+        "articleCount": 1,
+        "publisherCount": 1,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://www.highsnobiety.com/p/mm6-salomon-crossderby-sneaker-black",
+            "title": "MM6’s Crossbred Salomon Sneaker Trades the Trail for the Derby",
+            "publishedAt": "2026-10-27",
+            "publisher": "highsnobiety.com",
+            "publisherName": "Highsnobiety",
+            "type": "magazine"
+          }
+        ],
+        "rank": 9
+      },
+      "prada:americascup": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "prada:americascup",
+        "articleCount": 1,
+        "publisherCount": 1,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://www.highsnobiety.com/p/prada-frank-ocean-sneaker-new",
+            "title": "Up Close With Frank Ocean’s Fave New Prada Sneaker",
+            "publishedAt": "2026-10-27",
+            "publisher": "highsnobiety.com",
+            "publisherName": "Highsnobiety",
+            "type": "magazine"
+          }
+        ],
+        "rank": 9
+      },
+      "puma:speedcat": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "puma:speedcat",
+        "articleCount": 1,
+        "publisherCount": 1,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://www.highsnobiety.com/p/sneaker-releases-2026-october-week-5",
+            "title": "From adidas to New Balance, the Seven Best Sneakers to Cop This Week",
+            "publishedAt": "2026-10-27",
+            "publisher": "highsnobiety.com",
+            "publisherName": "Highsnobiety",
+            "type": "magazine"
+          }
+        ],
+        "rank": 9
+      },
+      "nike:airmax95": {
+        "basis": "observed-editorial-corpus",
+        "identityLevel": "model",
+        "modelKey": "nike:airmax95",
+        "articleCount": 2,
+        "publisherCount": 2,
+        "periodStart": "2026-07-27",
+        "periodEnd": "2026-10-27",
+        "observedAt": "2026-10-27T18:33:06+09:00",
+        "sources": [
+          {
+            "url": "https://www.highsnobiety.com/p/nike-air-max-95-batman-black",
+            "title": "Nike’s Bruce Wayne-Approved Air Max 95 Leaves Gotham",
+            "publishedAt": "2026-10-27",
+            "publisher": "highsnobiety.com",
+            "publisherName": "Highsnobiety",
+            "type": "magazine"
+          },
+          {
+            "url": "https://sneakernews.com/2026/10/26/nike-air-max-joga-bonito-camo-iq0217-900",
+            "title": "The Nike Air Max Joga Bonito Goes Into Hiding In “Camo”",
+            "publishedAt": "2026-10-27",
+            "publisher": "sneakernews.com",
+            "publisherName": "Sneaker News",
+            "type": "magazine"
+          }
+        ],
+        "rank": 5
+      }
+    },
+    "instagram": {}
+  },
+  "sourceStatus": {
+    "retailers": [
+      {
+        "source": "farfetch",
+        "checkedAt": "2026-10-27T18:33:06+09:00",
+        "status": "blocked",
+        "complete": false,
+        "pagesRead": 0,
+        "totalPages": null,
+        "productsObserved": 0,
+        "totalProducts": null,
+        "accepted": 0,
+        "newOnly": false,
+        "errors": [
+          "ValueError:ValueError:http-403; ValueError:http-401"
+        ],
+        "pages": []
+      },
+      {
+        "source": "mytheresa",
+        "checkedAt": "2026-10-27T18:33:06+09:00",
+        "status": "blocked",
+        "complete": false,
+        "pagesRead": 0,
+        "totalPages": null,
+        "productsObserved": 0,
+        "totalProducts": null,
+        "accepted": 0,
+        "newOnly": true,
+        "errors": [
+          "ValueError:ValueError:access-blocked"
+        ],
+        "pages": []
+      }
+    ],
+    "media": {
+      "status": "observed-corpus",
+      "checkedAt": "2026-10-27T18:33:06+09:00",
+      "periodStart": "2026-07-27",
+      "periodEnd": "2026-10-27",
+      "articlesMatched": 25,
+      "sources": [
+        {
+          "archive": {
+            "pagesRead": 1,
+            "oldestPublishedAt": null,
+            "error": "",
+            "exhaustive": false
+          },
+          "source": "gq-magazin.de",
+          "url": "https://www.gq-magazin.de/",
+          "status": "partial-feed",
+          "pagesRead": 0,
+          "oldestPublishedAt": null,
+          "windowComplete": false,
+          "error": ""
+        },
+        {
+          "archive": {
+            "pagesRead": 0,
+            "oldestPublishedAt": null,
+            "error": "ValueError:ValueError:http-403",
+            "exhaustive": false
+          },
+          "source": "pausemag.co.uk",
+          "url": "https://pausemag.co.uk/",
+          "status": "blocked",
+          "pagesRead": 0,
+          "oldestPublishedAt": null,
+          "windowComplete": false,
+          "error": ""
+        },
+        {
+          "archive": {
+            "pagesRead": 1,
+            "oldestPublishedAt": "2026-10-27",
+            "error": "",
+            "exhaustive": false
+          },
+          "source": "sneakerbardetroit.com",
+          "url": "https://sneakerbardetroit.com/feed/",
+          "status": "partial-feed",
+          "pagesRead": 1,
+          "oldestPublishedAt": "2026-10-26",
+          "windowComplete": false,
+          "error": ""
+        },
+        {
+          "archive": {
+            "pagesRead": 0,
+            "oldestPublishedAt": null,
+            "error": "ValueError:ValueError:http-403",
+            "exhaustive": false
+          },
+          "source": "soleretriever.com",
+          "url": "https://www.soleretriever.com/",
+          "status": "blocked",
+          "pagesRead": 0,
+          "oldestPublishedAt": null,
+          "windowComplete": false,
+          "error": ""
+        },
+        {
+          "archive": {
+            "pagesRead": 1,
+            "oldestPublishedAt": null,
+            "error": "",
+            "exhaustive": false
+          },
+          "source": "hypebeast.com",
+          "url": "https://hypebeast.com/footwear/feed",
+          "status": "partial-feed",
+          "pagesRead": 1,
+          "oldestPublishedAt": "2026-10-26",
+          "windowComplete": false,
+          "error": ""
+        },
+        {
+          "archive": {
+            "pagesRead": 1,
+            "oldestPublishedAt": "2026-10-06",
+            "error": "",
+            "exhaustive": false
+          },
+          "source": "highsnobiety.com",
+          "url": "https://www.highsnobiety.com/feeds/rss",
+          "status": "partial-feed",
+          "pagesRead": 1,
+          "oldestPublishedAt": "2026-10-26",
+          "windowComplete": false,
+          "error": ""
+        },
+        {
+          "archive": {
+            "pagesRead": 0,
+            "oldestPublishedAt": null,
+            "error": "ValueError:ValueError:http-403",
+            "exhaustive": false
+          },
+          "source": "sneakernews.com",
+          "url": "https://sneakernews.com/feed/",
+          "status": "partial-feed",
+          "pagesRead": 1,
+          "oldestPublishedAt": "2026-10-27",
+          "windowComplete": false,
+          "error": ""
+        },
+        {
+          "archive": {
+            "pagesRead": 1,
+            "oldestPublishedAt": null,
+            "error": "",
+            "exhaustive": false
+          },
+          "source": "thesneakernewsletter.com",
+          "url": "https://www.thesneakernewsletter.com/feed",
+          "status": "complete",
+          "pagesRead": 1,
+          "oldestPublishedAt": "2026-07-24",
+          "windowComplete": true,
+          "error": ""
+        },
+        {
+          "archive": {
+            "pagesRead": 0,
+            "oldestPublishedAt": null,
+            "error": "ValueError:ValueError:http-403",
+            "exhaustive": false
+          },
+          "source": "thedassler.substack.com",
+          "url": "https://thedassler.substack.com/feed",
+          "status": "blocked",
+          "pagesRead": 0,
+          "oldestPublishedAt": null,
+          "windowComplete": false,
+          "error": "ValueError:http-403"
+        }
+      ],
+      "exhaustive": false,
+      "rankingScope": "등록 매체에서 실제 읽은 날짜 확인 기사 표본; 전체 인터넷 순위 아님"
+    },
+    "instagram": {
+      "checkedAt": "2026-10-27T18:33:06+09:00",
+      "hashtags": [
+        "신발추천",
+        "고프코어슈즈",
+        "스니커즈추천",
+        "신상스니커즈",
+        "sneakerrelease"
+      ],
+      "selection": "hashtag-top-post-sample",
+      "periodStart": "2026-07-27",
+      "periodEnd": "2026-10-27",
+      "exhaustive": false,
+      "sources": [
+        {
+          "hashtag": "신발추천",
+          "status": "unavailable",
+          "error": "ConnectionException"
+        }
+      ],
+      "status": "authentication-or-source-unavailable",
+      "sessionConfigured": false,
+      "postsMatched": 0
+    }
+  },
+  "schedule": {
+    "frequency": "monthly",
+    "day": 1,
+    "time": "08:00",
+    "timezone": "Asia/Seoul"
+  },
+  "notes": [
+    "Farfetch is retailer assortment, not proof of a recent launch.",
+    "Mytheresa accepts exact NEW/New Arrival, not New Season alone.",
+    "SNS and media describe the observed corpus, never the whole market.",
+    "Unknown body colors and likes remain unknown."
+  ]
+}

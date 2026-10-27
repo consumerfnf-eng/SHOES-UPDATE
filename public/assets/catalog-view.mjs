@@ -1,3 +1,4 @@
+import {monthlySourceMatches,retailerProductUrl,retailerDateLabel,monthlySort} from './monthly-sneakers.mjs'; // MONTHLY_SNEAKERS_V1
 import {footwearTypes,FOOTWEAR_TYPES} from './footwear-policy.mjs';
 import {hasArrivalEvidence} from './publication-window.mjs';
 export function kstToday(now = new Date()) {
@@ -13,7 +14,7 @@ export function validDay(value) {
 export function releaseState(product, today = kstToday()) {
   const state=windowState(product,today);return ['released','upcoming'].includes(state)?state:null;
 }
-export function releaseDateLabel(product){const range=releaseWindow(product);if(range?.precision==='month'){const [year,month]=product.releaseDate.split('-');return `${year}년 ${Number(month)}월 (일자 미공개)`;}return product.arrivalEvidence?`NEW · ${product.arrivalEvidence.verifiedAt.slice(0,10)} 확인`:product.releaseDate||'출시일 미공개';}
+export function releaseDateLabel(product){if(product.retailerEvidence)return retailerDateLabel(product);const range=releaseWindow(product);if(range?.precision==='month'){const [year,month]=product.releaseDate.split('-');return `${year}년 ${Number(month)}월 (일자 미공개)`;}return product.arrivalEvidence?`NEW · ${product.arrivalEvidence.verifiedAt.slice(0,10)} 확인`:product.releaseDate||'출시일 미공개';}
 export function safeUrl(value) {
   try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password ? url.href : ''; } catch { return ''; }
 }
@@ -30,6 +31,7 @@ export function officialImageUrl(product, today = kstToday()) {
 }
 // A reviewed navigation link does not grant official-proof or popularity eligibility.
 export function reviewedProductPageUrl(product, today = kstToday()) {
+  const retailer=retailerProductUrl(product,today);if(retailer)return retailer;
   const strict=officialProductUrl(product,today);if(strict)return strict;
   const p=product.presentation,url=safeUrl(p?.officialProductUrl);
   const image=safeUrl(p?.image).startsWith('https:')||/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/.test(p?.cachedPath||'');
@@ -61,6 +63,7 @@ export function socialComparisonGroups(products,today=kstToday()){
   return [...groups.values()].map(({itemKeys,...group})=>({...group,matchedItemCount:itemKeys.size})).sort((a,b)=>b.matchedItemCount-a.matchedItemCount||Number(a.metric!=='search-count')-Number(b.metric!=='search-count')||a.key.localeCompare(b.key));
 }
 export function sourceMatches(product, type, today = kstToday()) {
+  const monthly=monthlySourceMatches(product,type,today);if(monthly!==null)return monthly;
   if(type==='all')return true;
   if(type==='media')return product.popularity?.media===true;
   if(type==='brand')return releaseState(product,today)==='released'&&!!officialProductUrl(product,today)&&!!officialImageUrl(product,today);
@@ -137,6 +140,7 @@ export function filterProducts(products, state, today = kstToday()) {
       && (!state.keywordIds || state.keywordIds.has(p.id))
       && (!query || [p.name,p.brand,p.style,p.colorway,p.category,p.productType,...(p.keywords || []),...(p.keywordTags || [])].join(' ').toLocaleLowerCase().includes(query));
   }).sort((a,b)=>{
+    if(['monthly-mentions','monthly-likes','media-mentions'].includes(state.sort))return monthlySort(a,b,state.sort,today);
     if(state.source==='sns'&&state.socialGroup&&state.sort==='social'){
       const metric=p=>visibleSocialMetrics(p,today).find(m=>socialGroupKey(m)===state.socialGroup),aa=metric(a),bb=metric(b);
       if(aa&&bb)return bb.value-aa.value||aa.comparison.rank-bb.comparison.rank||a.id.localeCompare(b.id);
