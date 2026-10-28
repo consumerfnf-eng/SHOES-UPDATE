@@ -24,6 +24,7 @@ import json
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 from curl_cffi import requests as curl_requests
 
@@ -38,6 +39,15 @@ CATEGORIES = [
 ]
 MAX_PAGES = 16
 LDJSON_RE = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
+# A product page embeds its record as escaped JSON inside the page script, and
+# that record - unlike the listing's JSON-LD - carries the composition, the
+# country of origin and a real creation date. Pages are large, so only a
+# bounded number of the newest items are enriched.
+COMPOSITION_RE = re.compile(r'compositionByLanguage\\":\{\\"en\\":\\"(.*?)\\"')
+ORIGIN_RE = re.compile(r'countryOrigin\\":\{\\"nameByLanguage\\":\{\\"en\\":\\"(.*?)\\"')
+CREATED_RE = re.compile(r'creationDate\\":\\"(20\d\d-\d\d-\d\dT[0-9:.]+Z)\\"')
+DETAIL_BUDGET = 500
+DETAIL_CONCURRENCY = 3
 
 
 def listing_url(path):
@@ -164,6 +174,42 @@ def collect_category(category, checked_at, bee, diagnostics):
     return items
 
 
+def enrich_with_product_pages(items, bee, status):
+    """Fill material / country / listing date from each product's own page.
+
+    The listing's JSON-LD has none of the three. The product page embeds the
+    full record, so the composition string is SSENSE's own declared material
+    and creationDate is a real per-item date rather than a position in a sort.
+    A page that fails to load just leaves that item as the listing had it.
+    """
+    targets = items[:DETAIL_BUDGET]
+    status['detailsRequested'] = len(targets)
+    status['detailsFilled'] = 0
+
+    def apply(item):
+        try:
+            html = fetch(item['url'], attempts=1, bee=bee)
+        except Exception:
+            return 0
+        composition = COMPOSITION_RE.search(html)
+        origin = ORIGIN_RE.search(html)
+        created = CREATED_RE.search(html)
+        if origin:
+            item['countryOrigin'] = origin.group(1)
+        if created:
+            item['listedAt'] = created.group(1)
+        if composition:
+            item['material'] = composition.group(1)
+            return 1
+        return 0
+
+    with ThreadPoolExecutor(max_workers=DETAIL_CONCURRENCY) as pool:
+        for start in range(0, len(targets), DETAIL_CONCURRENCY):
+            batch = targets[start:start + DETAIL_CONCURRENCY]
+            status['detailsFilled'] += sum(pool.map(apply, batch))
+            time.sleep(0.6)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--out', required=True)
@@ -185,6 +231,11 @@ def main():
                 continue
             seen.add(item['url'])
             items.append(item)
+
+    detail_status = {'step': 'product-page enrichment'}
+    if items:
+        enrich_with_product_pages(items, bee, detail_status)
+        diagnostics.append(detail_status)
 
     responded = any(d.get('responses') for d in diagnostics)
     result = {

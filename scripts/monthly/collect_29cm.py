@@ -22,6 +22,7 @@ or a heeled Mary Jane is dropped rather than published as a sneaker.
 """
 import argparse
 import json
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -37,6 +38,15 @@ IMAGE_BASE = 'https://img.29cm.co.kr'
 PAGE_SIZE = 48           # server-side cap; larger values are ignored
 MAX_PAGES = 260          # covers the largest shoe category (~10,300 items)
 CONCURRENCY = 4
+DETAIL_API = 'https://bff-api.29cm.co.kr/api/v5/product-detail/{}'
+# Material is not in the listing; it is one small JSON call per product, so a
+# bounded number of the newest items are enriched rather than all of them.
+# The detail endpoint rate-limits: at five concurrent calls it answered 100
+# products and then refused everything, so this stays near three per second
+# and the diagnostics count the refusals instead of hiding them.
+DETAIL_BUDGET = 1500
+DETAIL_CONCURRENCY = 2
+DETAIL_PAUSE = 0.6
 HEADERS = {'accept': 'application/json', 'accept-language': 'ko-KR,ko;q=0.9',
            'referer': 'https://www.29cm.co.kr/'}
 
@@ -164,6 +174,71 @@ def collect_category(category, cutoff_day, checked_at, diagnostics):
     return items
 
 
+# 29CM requires sellers to fill these rows but lets them point at the images
+# instead; those answers state nothing and must not become a material value.
+DETAIL_PLACEHOLDERS = re.compile(r'^(?:상세\s*(?:페이지|이미지)\s*(?:참조|참고)|상품\s*Tag\s*참고|'
+                                 r'상세\s*설명\s*참조|별도\s*표기|해당\s*없음|-)$')
+
+
+def is_stated(value):
+    return bool(value) and not DETAIL_PLACEHOLDERS.match(value)
+
+
+def fetch_detail(item_no, outcome, attempts=2):
+    """Return the detail payload, recording why it failed when it does."""
+    last = 'unknown'
+    for attempt in range(attempts):
+        try:
+            r = curl_requests.get(DETAIL_API.format(item_no), impersonate='chrome124',
+                                  headers=HEADERS, timeout=30)
+            if r.status_code == 200:
+                return r.json().get('data') or {}
+            last = f'http-{r.status_code}'
+        except Exception as e:
+            last = type(e).__name__
+        time.sleep(1.0 * (attempt + 1))
+    outcome[last] = outcome.get(last, 0) + 1
+    return None
+
+
+def enrich_with_details(items, status):
+    """Fill material / country / colour from 29CM's own product-detail API.
+
+    The listing carries none of the three. The detail response has a
+    structured itemDetailsList holding the legally required product facts, so
+    "제품 주소재" is the retailer's own declared material rather than anything
+    inferred from a title.
+    """
+    targets = sorted(items, key=lambda i: i.get('listedAt') or '', reverse=True)[:DETAIL_BUDGET]
+    outcome = {}
+    status.update({'detailsRequested': len(targets), 'detailsFilled': 0,
+                   'detailsPlaceholder': 0, 'detailsFailed': outcome})
+
+    def apply(item):
+        detail = fetch_detail(item['url'].rsplit('/', 1)[-1], outcome)
+        if detail is None:
+            return 0, 0
+        rows = {row.get('itemDetailsTitles'): (row.get('itemDetailsValue') or '').strip()
+                for row in (detail.get('itemDetailsList') or [])}
+        material, country, colour = rows.get('제품 주소재', ''), rows.get('제조국', ''), rows.get('색상', '')
+        if is_stated(country):
+            item['countryOrigin'] = country
+        if is_stated(colour) and not item.get('colorway'):
+            item['colorway'] = colour
+        if is_stated(material):
+            item['material'] = material
+            return 1, 0
+        return 0, 1
+
+    with ThreadPoolExecutor(max_workers=DETAIL_CONCURRENCY) as pool:
+        for start in range(0, len(targets), DETAIL_CONCURRENCY):
+            batch = targets[start:start + DETAIL_CONCURRENCY]
+            for filled, placeholder in pool.map(apply, batch):
+                status['detailsFilled'] += filled
+                status['detailsPlaceholder'] += placeholder
+            time.sleep(DETAIL_PAUSE)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--out', required=True)
@@ -180,6 +255,11 @@ def main():
                 continue
             seen.add(item['url'])
             items.append(item)
+
+    detail_status = {'step': 'product-detail enrichment'}
+    if items:
+        enrich_with_details(items, detail_status)
+        diagnostics.append(detail_status)
 
     responded = any(d.get('pages') for d in diagnostics)
     result = {

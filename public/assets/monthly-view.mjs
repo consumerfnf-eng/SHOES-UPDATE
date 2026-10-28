@@ -184,10 +184,11 @@ function detailRows(p) {
   return [
     ['품목', esc(types || '스니커즈')],
     ['컬러', esc(colorLabel(p) || '색상명 미확인')],
-    ['소재', esc(p.material || '상품 페이지에서 확인')],
+    ['소재', esc(p.material || '리테일러 미표기 · 상품 페이지에서 확인')],
     [p.style ? '스타일 코드' : '상품 코드', esc(p.style || '미확인')],
     ['가격', esc(p.priceLabel || '상품 페이지에서 확인')],
     ['성별', esc(genderLabel(p) || '미표기')],
+    ...(p.countryOrigin ? [['제조국', esc(p.countryOrigin)]] : []),
     ['출시', p.releaseDate
       ? `${esc(dateText(p.releaseDate))}${p.releaseStatus === 'upcoming' ? ' (예정)' : ''}`
       : p.listedAt ? `${esc(dateText(p.listedAt))} 등록` : '미공개'],
