@@ -56,7 +56,22 @@ jobs:
           git add data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json public/data/monthly-catalog.json
           if ! git diff --cached --quiet; then
             git commit -m "weekly retailer/sns/media shoes update $(date -u +%F)"
-            git push origin HEAD:main
+            # See weekly-update.yml: main can move during a long collection,
+            # so rebase onto it and retry rather than losing the run's work.
+            published=0
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if git rebase origin/main; then
+                if git push origin HEAD:main; then published=1; break; fi
+              else
+                git rebase --abort
+              fi
+              sleep 10
+            done
+            if [ "$published" != 1 ]; then
+              echo '::error::Collected snapshot could not be published after 3 rebase/push attempts.'
+              exit 1
+            fi
           fi
       - name: Save collection diagnostics
         if: always()

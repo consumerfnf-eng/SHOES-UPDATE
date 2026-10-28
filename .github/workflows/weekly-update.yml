@@ -65,7 +65,25 @@ jobs:
           git add data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json public/data/catalog.json public/images
           if ! git diff --cached --quiet; then
             git commit -m "weekly curated shoes update $(date -u +%F)"
-            git push origin HEAD:main
+            # main moves while this runs (the daily workflow, or a person
+            # pushing) - an hour of collection must not be thrown away to a
+            # non-fast-forward rejection, so rebase onto whatever landed and
+            # retry. A real conflict aborts the rebase rather than resolving
+            # it blindly.
+            published=0
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if git rebase origin/main; then
+                if git push origin HEAD:main; then published=1; break; fi
+              else
+                git rebase --abort
+              fi
+              sleep 10
+            done
+            if [ "$published" != 1 ]; then
+              echo '::error::Collected snapshot could not be published after 3 rebase/push attempts.'
+              exit 1
+            fi
           fi
       - name: Save collection diagnostics
         if: always()

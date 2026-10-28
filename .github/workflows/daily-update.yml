@@ -43,7 +43,22 @@ jobs:
           git add public/data/catalog.json data/archive-queue.json data/curation-review.json data/publication-history.json
           if ! git diff --cached --quiet; then
             git commit -m "shoes expiry maintenance $(date -u +%F)"
-            git push origin HEAD:main
+            # See weekly-update.yml: main can move during a run, so rebase
+            # onto it and retry rather than dropping the maintenance commit.
+            published=0
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if git rebase origin/main; then
+                if git push origin HEAD:main; then published=1; break; fi
+              else
+                git rebase --abort
+              fi
+              sleep 10
+            done
+            if [ "$published" != 1 ]; then
+              echo '::error::Maintenance commit could not be published after 3 rebase/push attempts.'
+              exit 1
+            fi
           fi
       - name: Report archive connection or verification failure
         if: always() && steps.archive.outcome == 'failure'
