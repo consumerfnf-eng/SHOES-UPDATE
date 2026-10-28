@@ -52,15 +52,33 @@ def run_collector(script, out_path, extra_args=None):
     return read_json(out_path, {'status': 'unavailable', 'items': [], 'diagnostics': []})
 
 
-def match_mentions(ssense_items, mentions, mention_field):
-    """Attach mentions to ssense items whose brand+model tokens all appear in
-    the mention text. Mentions that match nothing are returned separately,
-    never turned into new products."""
+def match_mentions(ssense_items, mentions, mention_field, model_aliases=None):
+    """Attach mentions to retail items. First tries a registered model alias
+    (data/monthly-model-aliases.json) - a human-reviewed mapping, so a bare
+    alias like "스피드캣" is enough to match every variant of that model
+    without also requiring the brand word in the same text. Falls back to
+    brand+model token overlap for everything not covered by an alias.
+    Mentions that match nothing are returned separately, never turned into
+    new products."""
+    model_aliases = model_aliases or {}
     unmatched = []
     index = [(item, set(match_key(item['brand'], item['name']))) for item in ssense_items]
+    alias_entries = [(key(v['brand']), [a.lower() for a in v.get('aliases', [])], v)
+                      for v in model_aliases.values()]
     for mention in mentions:
         text = (mention.get(mention_field) or '') + ' ' + (mention.get('headline') or '')
+        text_lower = text.lower()
         mention_tokens = set(tokenize(text))
+        alias_hit = next((v for brand_key, aliases, v in alias_entries
+                           if any(a in text_lower for a in aliases)), None)
+        if alias_hit:
+            matched_any = False
+            for item in ssense_items:
+                if key(item['brand']) == key(alias_hit['brand']) and alias_hit['model'].lower() in item['name'].lower():
+                    item.setdefault('_mentions', []).append(mention)
+                    matched_any = True
+            if matched_any:
+                continue
         best, best_overlap = None, 0
         for item, tokens in index:
             if not tokens:
@@ -80,6 +98,10 @@ def match_mentions(ssense_items, mentions, mention_field):
         else:
             unmatched.append(mention)
     return unmatched
+
+
+def key(value):
+    return re.sub(r'[^a-z0-9]', '', (value or '').lower())
 
 
 def main():
@@ -119,13 +141,34 @@ def main():
     is_baseline_run = not previous_source.get('products')
 
     ssense_items = ssense.get('items', [])
+    # Durable hand-curated finds (e.g. Lyst items collected by browsing a real
+    # logged-in session, since Lyst blocks unattended automation) merge in on
+    # every run so they survive the next automated SSENSE-only collection.
+    manual_items = read_json(os.path.join(DATA, 'monthly-manual-items.json'), {'items': []}).get('items', [])
+    known_urls = {p['url'] for p in ssense_items}
+    manual_urls = set()
+    for item in manual_items:
+        if item['url'] not in known_urls:
+            ssense_items.append(dict(item))
+            known_urls.add(item['url'])
+        manual_urls.add(item['url'])
     for item in ssense_items:
         prior = previous_by_url.get(item['url'])
         item['firstSeenAt'] = prior['firstSeenAt'] if prior else now.isoformat()
         item['newThisRun'] = (prior is None) and not is_baseline_run
+        # firstDetectedAsNewAt is only set the one time an item is confirmed
+        # genuinely new - a real month-over-month delta, or a human manually
+        # verifying a find right now (e.g. browsing a site that blocks
+        # automation). It must NOT be reset on later runs just because the
+        # item is still being carried forward as "known" - otherwise a
+        # 3-month publish window keyed off it would quietly reset every run.
+        if prior and prior.get('firstDetectedAsNewAt'):
+            item['firstDetectedAsNewAt'] = prior['firstDetectedAsNewAt']
+        elif item['newThisRun'] or (item['url'] in manual_urls and not prior):
+            item['firstDetectedAsNewAt'] = now.isoformat()
 
-    unmatched_media = match_mentions(ssense_items, media.get('items', []), 'headline')
-    unmatched_sns = match_mentions(ssense_items, instagram.get('items', []), 'caption')
+    unmatched_media = match_mentions(ssense_items, media.get('items', []), 'headline', model_aliases)
+    unmatched_sns = match_mentions(ssense_items, instagram.get('items', []), 'caption', model_aliases)
 
     for item in ssense_items:
         mentions = item.pop('_mentions', [])
@@ -151,7 +194,12 @@ def main():
     # this run's genuine delta against last run's snapshot: items SSENSE is
     # showing that it was not showing last time we checked. Baseline run:
     # publish nothing, since there is no prior snapshot to diff against yet.
-    published = [] if is_baseline_run else [p for p in ssense_items if p['newThisRun']]
+    # A manually hand-verified find (firstDetectedAsNewAt set the moment a
+    # human confirmed it, not from a bulk baseline) stays published for the
+    # normal 3 months from that date, same as a genuine automated delta -
+    # it does not need to be "new this exact run" every run to stay visible.
+    published = [] if is_baseline_run else [p for p in ssense_items
+                                             if p.get('firstDetectedAsNewAt') and p['firstDetectedAsNewAt'] >= cutoff]
 
     source_snapshot = {
         'lastRunAt': now.isoformat(),

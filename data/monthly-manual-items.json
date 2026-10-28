@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "monthly-lyst-26f4f43bb6ca8d4aac15",
+      "source": "retail-lyst",
+      "gender": "women",
+      "brand": "PUMA",
+      "name": "Jil Sander X Speedcat Low-Top Sneakers",
+      "url": "https://www.lyst.com/shoes/puma-jil-sander-x-speedcat-low-top-trainers/",
+      "image": "https://cdna.lystit.com/300/375/tr/photos/vitkac/0963f7e1/1333x2000/puma-Black-Jil-Sander-X-Speedcat-Low-Top-Trainers.jpeg",
+      "sku": "",
+      "priceLabel": "$418 (VITKAC via Lyst)",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Lyst (VITKAC)",
+        "productUrl": "https://www.lyst.com/shoes/puma-jil-sander-x-speedcat-low-top-trainers/",
+        "listingUrl": "https://www.lyst.com/shop/sneakers/?view=newest&page=3",
+        "verifiedAt": "2026-10-28T13:58:50.560858+09:00",
+        "collectionMethod": "manual-browser-session-2026-10-28",
+        "note": "Lyst blocks unattended automation (curl_cffi 403, headless Playwright 403, and even a fresh headful Playwright profile got 403 on retry); only the user's own logged-in Chrome session loaded it reliably. Collected by hand this session, not by the recurring pipeline."
+      }
+    }
+  ]
+}

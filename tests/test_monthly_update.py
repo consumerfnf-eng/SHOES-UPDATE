@@ -39,6 +39,27 @@ class MatchMentionsTests(unittest.TestCase):
         unmatched = match_mentions(self.items, mentions, 'headline')
         self.assertEqual(len(unmatched), 1)
 
+    def test_registered_alias_matches_every_variant_without_brand_word(self):
+        items = [
+            {'brand': 'PUMA', 'name': 'Black Speedcat OG Sneakers'},
+            {'brand': 'PUMA', 'name': 'Jil Sander X Speedcat Low-Top Sneakers'},
+            {'brand': 'PUMA', 'name': 'White Low-Top Sneakers'},
+        ]
+        aliases = {'puma:speedcat': {'brand': 'PUMA', 'model': 'Speedcat', 'aliases': ['스피드캣', 'speedcat']}}
+        mentions = [{'caption': '오늘 스피드캣 신고 나왔어요'}]
+        unmatched = match_mentions(items, mentions, 'caption', aliases)
+        self.assertEqual(unmatched, [])
+        self.assertEqual(len(items[0]['_mentions']), 1)
+        self.assertEqual(len(items[1]['_mentions']), 1)
+        self.assertNotIn('_mentions', items[2])
+
+    def test_unregistered_korean_mention_without_alias_is_held(self):
+        items = [{'brand': 'PUMA', 'name': 'Black Speedcat OG Sneakers'}]
+        mentions = [{'caption': '오늘 스피드캣 신고 나왔어요'}]
+        unmatched = match_mentions(items, mentions, 'caption', model_aliases={})
+        self.assertEqual(len(unmatched), 1)
+        self.assertNotIn('_mentions', items[0])
+
 
 if __name__ == '__main__':
     unittest.main()

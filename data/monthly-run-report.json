@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-10-28T10:39:07.003589+09:00",
+  "checkedAt": "2026-10-28T14:08:38.101226+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
-      "items": 1100,
+      "items": 1101,
       "diagnostics": [
         {
           "gender": "men",
@@ -27,22 +27,22 @@
     },
     "media": {
       "status": "ok",
-      "items": 424,
-      "matched": 128,
-      "held": 296,
+      "items": 430,
+      "matched": 129,
+      "held": 301,
       "diagnostics": [
         {
           "source": "hypebeast",
           "pages": 8,
           "responses": 8,
-          "articles": 12,
+          "articles": 16,
           "errors": []
         },
         {
           "source": "hypebeast-kr",
           "pages": 8,
           "responses": 8,
-          "articles": 12,
+          "articles": 14,
           "errors": []
         },
         {
@@ -108,8 +108,8 @@
       ]
     }
   },
-  "isBaselineRun": true,
-  "published": 0,
-  "heldAsStale": 0,
-  "heldAsBaseline": 1100
+  "isBaselineRun": false,
+  "published": 1,
+  "heldAsStale": 1100,
+  "heldAsBaseline": 0
 }

@@ -71,6 +71,9 @@ function colorChipsMarkup(group, activeId) {
   }).join('')}</div>`;
 }
 
+function sourceLabel(p) {
+  return p.retailerEvidence?.retailer || (p.source === 'retail-lyst' ? 'Lyst' : p.source === 'retail-ssense' ? 'SSENSE' : p.source || '');
+}
 function cardMarkup(group) {
   const p = activeOf(group);
   const img = safeUrl(p.image);
@@ -89,7 +92,7 @@ function cardMarkup(group) {
   return `<article class="product-card monthly-card" data-group="${esc(groupKey(p))}">
     <div class="card-visual"><a class="card-open" href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener noreferrer">${visual}</a></div>
     <div class="card-copy">
-      <p class="card-brand">${esc(p.brand)} · SSENSE</p>
+      <p class="card-brand">${esc(p.brand)} · ${esc(sourceLabel(p))}</p>
       <a class="card-name" href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener noreferrer">${esc(rest || p.name)}</a>
       <p class="card-meta">${esc(p.priceLabel || '가격 미확인')} · ${p.gender === 'women' ? '여성' : '남성'}${group.length > 1 ? ` · ${group.length}개 색상` : ''}</p>
       ${colorChipsMarkup(group, p.id)}
@@ -136,7 +139,7 @@ async function load() {
     if (value.schemaVersion !== 1 || !Array.isArray(value.products)) throw new Error('Invalid monthly snapshot');
     allProducts = value.products;
     const baselineNote = value.isBaselineRun ? ' · 첫 수집(기준선) — 다음 달부터 신규 변동분만 게시' : '';
-    $('monthly-asof').textContent = `SSENSE 신상 스니커즈 · ${value.periodStart} 이후 확인 · ${value.asOf} 기준${baselineNote}`;
+    $('monthly-asof').textContent = `리테일 신상 스니커즈 · ${value.periodStart} 이후 확인 · ${value.asOf} 기준${baselineNote}`;
     const hashtags = Array.isArray(value.hashtagTrends) ? value.hashtagTrends : [];
     $('monthly-hashtags').innerHTML = hashtags.length
       ? hashtags.map(hashtagMarkup).join('')

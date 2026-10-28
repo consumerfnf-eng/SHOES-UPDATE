@@ -1,10 +1,41 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-28T10:39:07.003589+09:00",
+  "publishedAt": "2026-10-28T14:08:38.101226+09:00",
   "asOf": "2026-10-28",
   "periodStart": "2026-07-28",
-  "isBaselineRun": true,
-  "products": [],
+  "isBaselineRun": false,
+  "products": [
+    {
+      "id": "monthly-lyst-26f4f43bb6ca8d4aac15",
+      "source": "retail-lyst",
+      "gender": "women",
+      "brand": "PUMA",
+      "name": "Jil Sander X Speedcat Low-Top Sneakers",
+      "url": "https://www.lyst.com/shoes/puma-jil-sander-x-speedcat-low-top-trainers/",
+      "image": "https://cdna.lystit.com/300/375/tr/photos/vitkac/0963f7e1/1333x2000/puma-Black-Jil-Sander-X-Speedcat-Low-Top-Trainers.jpeg",
+      "sku": "",
+      "priceLabel": "$418 (VITKAC via Lyst)",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Lyst (VITKAC)",
+        "productUrl": "https://www.lyst.com/shoes/puma-jil-sander-x-speedcat-low-top-trainers/",
+        "listingUrl": "https://www.lyst.com/shop/sneakers/?view=newest&page=3",
+        "verifiedAt": "2026-10-28T13:58:50.560858+09:00",
+        "collectionMethod": "manual-browser-session-2026-10-28",
+        "note": "Lyst blocks unattended automation (curl_cffi 403, headless Playwright 403, and even a fresh headful Playwright profile got 403 on retry); only the user's own logged-in Chrome session loaded it reliably. Collected by hand this session, not by the recurring pipeline."
+      },
+      "firstSeenAt": "2026-10-28T14:04:50.534348+09:00",
+      "newThisRun": false,
+      "firstDetectedAsNewAt": "2026-10-28T14:04:50.534348+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "snsAverageLikes": null
+      }
+    }
+  ],
   "hashtagTrends": [
     {
       "hashtag": "sneakers",
@@ -33,7 +64,7 @@
         "erl's vamp sneaker style guide",
         "sneaker trends 2026"
       ],
-      "checkedAt": "2026-10-28T10:41:04.571530+09:00"
+      "checkedAt": "2026-10-28T14:10:41.774760+09:00"
     },
     {
       "hashtag": "sneakerhead",
@@ -62,7 +93,7 @@
         "civilized nation sneakerhead community",
         "culture kicks sneakerhead community"
       ],
-      "checkedAt": "2026-10-28T10:41:04.571530+09:00"
+      "checkedAt": "2026-10-28T14:10:41.774760+09:00"
     },
     {
       "hashtag": "신발추천",
@@ -70,7 +101,7 @@
       "title": "신발추천",
       "totalMediaCount": "1.7M",
       "relatedKeywords": [],
-      "checkedAt": "2026-10-28T10:41:04.571530+09:00"
+      "checkedAt": "2026-10-28T14:10:41.774760+09:00"
     },
     {
       "hashtag": "스니커즈추천",
@@ -78,7 +109,7 @@
       "title": "스니커즈추천",
       "totalMediaCount": "125K",
       "relatedKeywords": [],
-      "checkedAt": "2026-10-28T10:41:04.571530+09:00"
+      "checkedAt": "2026-10-28T14:10:41.774760+09:00"
     }
   ]
 }
