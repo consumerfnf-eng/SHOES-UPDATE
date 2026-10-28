@@ -107,9 +107,13 @@ function render() {
   const grid = $('monthly-grid'), empty = $('monthly-empty'), more = $('monthly-more');
   if (!list.length) {
     grid.innerHTML = '';
+    $('monthly-empty-title').textContent = allProducts.length
+      ? (activeFilter === 'media' ? '최근 3개월 뉴스레터 언급과 일치한 상품이 아직 없습니다'
+        : activeFilter === 'sns' ? 'SNS 게시물과 매칭된 상품이 아직 없습니다 (Instagram 로그인 세션 등록 후 채워집니다)'
+        : query ? '검색어와 일치하는 상품이 없습니다' : '조건에 맞는 상품이 없습니다')
+      : '상품을 불러오고 있습니다';
     empty.hidden = false;
     more.hidden = true;
-    $('monthly-count').textContent = '0';
     return;
   }
   empty.hidden = true;
@@ -120,7 +124,6 @@ function render() {
     if (group) { activeVariant.set(groupKey(group[0]), btn.dataset.variant); render(); }
   }));
   more.hidden = shown >= list.length;
-  $('monthly-count').textContent = String(list.length);
 }
 
 function hashtagMarkup(h) {
@@ -156,14 +159,47 @@ async function load() {
   }
 }
 
+// Elements owned by app.mjs's official-catalog view, hidden while a monthly
+// tab is active and restored when a main source-tab is clicked again.
+// #monthly-section has its own .filters/.selection-row too, so these are
+// scoped with the direct-child combinator (> ) to never match those nested
+// copies - only the ones that are direct children of <section class="catalog">.
+const MAIN_CATALOG_SELECTORS = ['#active-filters', '.catalog > .filters', '.catalog > .results-bar',
+  '.catalog > .selection-row', '#product-grid', '#empty-state', '#pagination'];
+
+function mainCatalogElements() {
+  return MAIN_CATALOG_SELECTORS.flatMap(sel => [...document.querySelectorAll(sel)]);
+}
+const MONTHLY_FILTER_BY_TAB = {retail: 'all', newsletter: 'media', sns: 'sns'};
+
+function showMonthly(tabKey) {
+  mainCatalogElements().forEach(el => { el.hidden = true; });
+  $('monthly-section').hidden = false;
+  document.querySelectorAll('[data-source]').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+  document.querySelectorAll('.monthly-tab').forEach(b => {
+    const active = b.dataset.monthly === tabKey;
+    b.classList.toggle('active', active);
+    b.setAttribute('aria-pressed', String(active));
+  });
+  activeFilter = MONTHLY_FILTER_BY_TAB[tabKey] || 'all';
+  shown = PAGE_SIZE;
+  render();
+}
+
+function showMainCatalog() {
+  mainCatalogElements().forEach(el => { el.hidden = false; });
+  $('monthly-section').hidden = true;
+  document.querySelectorAll('.monthly-tab').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+}
+
 export function initMonthlyView() {
   if (!$('monthly-section')) return;
-  document.querySelectorAll('.monthly-tab').forEach(btn => btn.addEventListener('click', () => {
-    document.querySelectorAll('.monthly-tab').forEach(b => { b.classList.toggle('active', b === btn); b.setAttribute('aria-pressed', String(b === btn)); });
-    activeFilter = btn.dataset.filter;
-    shown = PAGE_SIZE;
-    render();
-  }));
+  document.querySelectorAll('.monthly-tab').forEach(btn => btn.addEventListener('click', () => showMonthly(btn.dataset.monthly)));
+  // app.mjs already binds its own click handler to these buttons (by a
+  // different attribute, [data-source]) when it loads - this is a second,
+  // independent listener on the same elements, purely to restore the main
+  // catalog's visibility. It never touches app.mjs's own state.
+  document.querySelectorAll('[data-source]').forEach(btn => btn.addEventListener('click', showMainCatalog));
   $('monthly-search').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); shown = PAGE_SIZE; render(); });
   $('monthly-more').addEventListener('click', () => { shown += PAGE_SIZE; render(); });
   load();

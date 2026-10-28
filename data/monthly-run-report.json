@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-28T14:08:38.101226+09:00",
+  "checkedAt": "2026-10-28T15:11:28.934594+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -27,9 +27,9 @@
     },
     "media": {
       "status": "ok",
-      "items": 430,
-      "matched": 129,
-      "held": 301,
+      "items": 763,
+      "matched": 222,
+      "held": 541,
       "diagnostics": [
         {
           "source": "hypebeast",
@@ -50,6 +50,20 @@
           "pages": 8,
           "responses": 8,
           "articles": 400,
+          "errors": []
+        },
+        {
+          "source": "footwear-news",
+          "pages": 7,
+          "responses": 7,
+          "articles": 333,
+          "errors": []
+        },
+        {
+          "source": "allure-korea",
+          "queries": 2,
+          "responses": 2,
+          "articles": 0,
           "errors": []
         }
       ]
