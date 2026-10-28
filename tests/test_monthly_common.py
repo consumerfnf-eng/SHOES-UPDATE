@@ -2,7 +2,24 @@ import sys, unittest
 from datetime import datetime
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'monthly'))
-from common import is_sneaker_title, canonical_url, kst_three_months_ago, short_id
+from common import is_sneaker_title, is_kids_item, canonical_url, kst_three_months_ago, short_id
+
+
+class KidsExclusionTests(unittest.TestCase):
+    def test_excludes_kids_labeled_items(self):
+        self.assertTrue(is_kids_item('Nike Air Force 1 (GS) Sneakers'))
+        self.assertTrue(is_kids_item('Toddler Running Shoes'))
+        self.assertTrue(is_kids_item('신발추천', '/kids/sneakers/123'))
+        self.assertTrue(is_kids_item('아동 운동화'))
+
+    def test_adult_items_pass(self):
+        self.assertFalse(is_kids_item('Black Low-Top Sneakers'))
+        self.assertFalse(is_kids_item('Jil Sander X Speedcat Low-Top Sneakers'))
+
+    def test_does_not_false_positive_on_similar_substrings(self):
+        # "td" must only trigger as the parenthesized size code "(td)", not
+        # as a substring inside an unrelated word.
+        self.assertFalse(is_kids_item('Standard Low-Top Sneakers'))
 
 
 class SneakerClassificationTests(unittest.TestCase):

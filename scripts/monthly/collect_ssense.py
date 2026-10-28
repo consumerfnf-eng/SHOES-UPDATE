@@ -21,7 +21,7 @@ import time
 
 from curl_cffi import requests as curl_requests
 
-from common import (BROWSER_HEADERS, atomic_write_json, canonical_url, is_sneaker_title,
+from common import (BROWSER_HEADERS, atomic_write_json, canonical_url, is_kids_item, is_sneaker_title,
                      kst_now, short_id)
 
 CATEGORIES = [
@@ -89,7 +89,7 @@ def collect_category(gender, listing_url, checked_at, diagnostics):
             new_this_page += 1
             status['candidates'] += 1
             name = (p.get('name') or '').strip()
-            if not is_sneaker_title(name):
+            if not is_sneaker_title(name) or is_kids_item(name, url):
                 continue
             sku = (p.get('sku') or '').strip()
             if not sku:

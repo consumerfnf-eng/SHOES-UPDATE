@@ -17,6 +17,7 @@ if (!url) { console.error('--out <path> required'); process.exit(1); }
 const BASE = 'https://www.lyst.com/shop/sneakers/?view=newest';
 const MAX_PAGES = 10;
 const SNEAKER_EXCLUDE = /\b(loafers?|oxfords?|derbys?|derbies|boots?|heels?|pumps?|mules?|sandals?|slides?|flats?|slingbacks?|espadrilles?|clogs?|mary ?janes?|wedges?|moccasins?|monk straps?)\b/i;
+const KIDS_EXCLUDE = /\b(kids?|baby|toddler|infant|junior|youth|little ?kids?|big ?kids?|grade ?school|pre-?school)\b|\((?:gs|ps|td)\)/i;
 
 function parseCard(cardHtml) {
   const imgMatch = cardHtml.match(/<img[^>]+src="([^"]+)"[^>]*alt="([^"]*)"/);
@@ -63,7 +64,7 @@ async function main() {
         if (!parsed || seen.has(parsed.url)) continue;
         seen.add(parsed.url);
         newThisPage++;
-        if (SNEAKER_EXCLUDE.test(parsed.name)) continue;
+        if (SNEAKER_EXCLUDE.test(parsed.name) || KIDS_EXCLUDE.test(parsed.name) || KIDS_EXCLUDE.test(parsed.url)) continue;
         items.push({...parsed, gender: 'women', source: 'retail-lyst'});
       }
       status.cards = newThisPage;

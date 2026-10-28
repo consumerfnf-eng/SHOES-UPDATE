@@ -101,6 +101,16 @@ def is_sneaker_title(name):
     return bool(SNEAKER_INCLUDE.search(name))
 
 
+KIDS_EXCLUDE = re.compile(
+    r'\b(kids?|baby|toddler|infant|junior|youth|little\s*kids?|big\s*kids?|grade\s*school|pre-?school)\b|'
+    r'\((?:gs|ps|td)\)|키즈|아동|주니어|유아|베이비|어린이', re.I)
+
+
+def is_kids_item(*texts):
+    combined = ' '.join(t or '' for t in texts)
+    return bool(KIDS_EXCLUDE.search(combined))
+
+
 BROWSER_HEADERS = {
     'accept-language': 'en-US,en;q=0.9',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
