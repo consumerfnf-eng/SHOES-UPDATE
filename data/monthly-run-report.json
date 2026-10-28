@@ -1,81 +1,150 @@
 {
-  "checkedAt": "2026-10-28T17:17:21.593597+09:00",
+  "checkedAt": "2026-10-28T17:24:37.432054+09:00",
   "sources": {
     "retail-ssense": {
-      "status": "ok",
-      "items": 1151,
+      "status": "unavailable",
+      "items": 1,
       "diagnostics": [
         {
           "gender": "men",
           "listingUrl": "https://www.ssense.com/en-us/men/shoes/sneakers",
-          "pages": 12,
-          "responses": 12,
-          "candidates": 1440,
-          "sneakers": 733,
-          "errors": []
+          "pages": 0,
+          "responses": 0,
+          "candidates": 0,
+          "sneakers": 0,
+          "errors": [
+            {
+              "url": "https://www.ssense.com/en-us/men/shoes/sneakers?page=1",
+              "error": "http-403"
+            }
+          ]
         },
         {
           "gender": "women",
           "listingUrl": "https://www.ssense.com/en-us/women/shoes/sneakers",
-          "pages": 12,
-          "responses": 12,
-          "candidates": 1440,
-          "sneakers": 367,
-          "errors": []
+          "pages": 0,
+          "responses": 0,
+          "candidates": 0,
+          "sneakers": 0,
+          "errors": [
+            {
+              "url": "https://www.ssense.com/en-us/women/shoes/sneakers?page=1",
+              "error": "http-403"
+            }
+          ]
         }
       ]
     },
     "retail-lyst": {
-      "status": "requires_key",
+      "status": "partial",
       "items": 0,
       "creditsUsed": 0,
       "diagnostics": [
         {
-          "error": "SCRAPINGBEE_API_KEY not set"
+          "page": 1,
+          "url": "https://www.lyst.com/shop/sneakers/?view=newest&page=1",
+          "cards": 0,
+          "errors": [
+            {
+              "error": "SCRAPINGBEE_HTTP_401"
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "url": "https://www.lyst.com/shop/sneakers/?view=newest&page=2",
+          "cards": 0,
+          "errors": [
+            {
+              "error": "SCRAPINGBEE_QUOTA_STOPPED"
+            }
+          ]
         }
       ]
     },
     "retail-farfetch-mytheresa": {
-      "status": "requires_key",
+      "status": "unavailable",
       "items": 0,
       "creditsUsed": 0,
       "diagnostics": [
         {
-          "error": "SCRAPINGBEE_API_KEY not set"
+          "source": "retail-farfetch",
+          "pages": 0,
+          "responses": 0,
+          "products": 0,
+          "errors": [
+            {
+              "url": "https://www.farfetch.com/shopping/men/shoes-2/items.aspx?category=137174",
+              "error": "SCRAPINGBEE_HTTP_401"
+            },
+            {
+              "url": "https://www.farfetch.com/shopping/men/shoes-2/items.aspx?category=137174&page=2",
+              "error": "SCRAPINGBEE_QUOTA_STOPPED"
+            }
+          ]
+        },
+        {
+          "source": "retail-mytheresa",
+          "pages": 0,
+          "responses": 0,
+          "products": 0,
+          "errors": [
+            {
+              "url": "https://www.mytheresa.com/us/en/women/shoes/sneakers",
+              "error": "SCRAPINGBEE_QUOTA_STOPPED"
+            }
+          ]
+        },
+        {
+          "source": "ecommerce-wconcept",
+          "pages": 0,
+          "responses": 0,
+          "products": 0,
+          "errors": [
+            {
+              "url": "https://display.wconcept.co.kr/rn/category/women/002002",
+              "error": "SCRAPINGBEE_QUOTA_STOPPED"
+            }
+          ]
         }
       ]
     },
     "media": {
       "status": "ok",
-      "items": 562,
-      "matched": 151,
-      "held": 411,
+      "items": 734,
+      "matched": 4,
+      "held": 730,
       "diagnostics": [
         {
           "source": "hypebeast",
-          "pages": 8,
-          "responses": 8,
-          "articles": 14,
-          "errors": []
+          "pages": 0,
+          "responses": 0,
+          "articles": 0,
+          "errors": [
+            {
+              "url": "https://hypebeast.com/footwear",
+              "error": "http-202"
+            }
+          ]
         },
         {
           "source": "hypebeast-kr",
-          "pages": 8,
-          "responses": 8,
-          "articles": 14,
-          "errors": []
+          "pages": 0,
+          "responses": 0,
+          "articles": 0,
+          "errors": [
+            {
+              "url": "https://hypebeast.kr/footwear",
+              "error": "http-202"
+            }
+          ]
         },
         {
           "source": "sneaker-news",
-          "pages": 4,
-          "responses": 4,
-          "articles": 200,
-          "errors": [
-            {
-              "url": "https://sneakernews.com/wp-json/wp/v2/posts?per_page=50&page=5&after=2026-07-28T08:18:25",
-              "error": "Failed to perform, curl: (28) Operation timed out after 25006 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-            }
-          ]
+          "pages": 8,
+          "responses": 8,
+          "articles": 400,
+          "errors": []
         },
         {
           "source": "footwear-news",
@@ -147,20 +216,20 @@
       ]
     },
     "ecommerce-musinsa": {
-      "status": "ok",
-      "items": 50,
-      "matched": 3,
-      "held": 47,
+      "status": "unavailable",
+      "items": 0,
+      "matched": 0,
+      "held": 0,
       "diagnostics": [
         {
           "url": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
-          "totalListed": 60
+          "error": "http-403"
         }
       ]
     }
   },
   "isBaselineRun": false,
-  "published": 51,
-  "heldAsStale": 1100,
+  "published": 1,
+  "heldAsStale": 0,
   "heldAsBaseline": 0
 }
