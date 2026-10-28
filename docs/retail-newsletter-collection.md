@@ -1,0 +1,102 @@
+# 리테일 신상 · 뉴스레터 수집 기준
+
+`scripts/monthly/update.py`가 매주 실행하는 수집 파이프라인의 실제 동작을 적어 둔
+문서입니다. 사이트의 **리테일 신상**, **뉴스레터** 탭이 이 파이프라인의 결과이고,
+**브랜드 공식 신상품** · **SNS 인기 신상** 탭은 별도의 기존 파이프라인
+(`scripts/weekly-update.mjs`)이 담당합니다. 두 파이프라인은 서로의 파일을 건드리지
+않습니다.
+
+## 1. "신상"의 근거는 사이트마다 다릅니다
+
+사이트가 실제로 제공하는 정보만 근거로 씁니다. 날짜를 주지 않는 사이트에 날짜를
+지어내지 않고, 신상품순이 없는 사이트를 신상품순인 척하지 않습니다.
+
+| 근거 | 뜻 | 해당 사이트 |
+| --- | --- | --- |
+| `dated` | 상품마다 실제 등록일이 내려옴 → 최근 3개월 필터 | 29CM, 뉴스레터 7곳 |
+| `new-sort` | 사이트 자체 신상품순이 동작 → 그 상위 목록이 신상 | SSENSE (`sort=latest-desc`), 무신사 (`sortCode=NEW`) |
+| `delta` | 날짜도 신상품순도 없음 → 지난주 스냅샷 대비 새로 등장한 것만 | W컨셉, Lyst, Farfetch, Mytheresa, Net-a-Porter |
+
+`delta` 사이트는 비교할 지난주 스냅샷이 없는 **첫 실행에서는 아무것도 게시하지
+않습니다**(기준선 수집). 이것이 "지난번 확인 이후 새로 들어온 것"이라는 질문에
+대한 정직한 답이기 때문입니다. `dated`·`new-sort` 사이트는 첫 실행부터 게시됩니다.
+
+## 2. 사이트별 수집 방법
+
+사용한 방법은 전부 실제 응답을 보고 확인한 것입니다. 막혀서 못 보는 페이지에
+대해서는 선택자를 추측해 넣지 않습니다.
+
+| 사이트 | 방법 | 비고 |
+| --- | --- | --- |
+| SSENSE | 목록 페이지의 schema.org JSON-LD (페이지당 120개) | `/en-us/{men,women}/sneakers?sort=latest-desc`. 긴 경로(`/shoes/sneakers?sort=`)는 전체 신발 카테고리로 302 되면서 힐·로퍼가 섞여 들어오므로 쓰지 않습니다. 여성 `flats`도 함께 훑어 발레리나·메리제인 실루엣을 잡습니다. |
+| 무신사 | 카테고리 페이지의 `__NEXT_DATA__` + 응답마다 새로 서명되는 `nextPageUrl` | 서명(`hmacId`)은 그 요청 한 건에만 유효합니다. 1페이지 서명으로 페이지 번호만 올리면 3페이지부터 403입니다. |
+| 29CM | 공개 카테고리 API (`search-api.29cm.co.kr`) | 유일하게 `visibleBeginTimestamp`(등록일)를 줍니다. 날짜 정렬은 동작하지 않고(`sort`/`sortType`/`order` × `LATEST`/`NEW`/… 전부 같은 순서) `size`는 48로 고정되므로, 카테고리를 전수 순회하며 날짜로 거릅니다. |
+| W컨셉 | 스토어프런트 카테고리 API (`gw-front.wconcept.co.kr`) | 상품 그리드가 전부 클라이언트 렌더라 HTML·RSC 페이로드에 상품이 없습니다. 프런트엔드 번들에 들어 있는 공개 `DISPLAY-API-KEY` 헤더가 필요하며, 키가 바뀌어도 조용히 죽지 않도록 매 실행마다 번들에서 다시 읽습니다. 날짜·신상품순이 없어 `delta` 처리합니다. |
+| Lyst | ScrapingBee + 실제 렌더 페이지에서 확인한 선택자 | curl_cffi와 Playwright(헤드리스·헤드풀) 모두 403. |
+| Farfetch / Mytheresa / Net-a-Porter | ScrapingBee + schema.org JSON-LD | 셋 다 직접 접근 차단(Farfetch 403, Net-a-Porter Akamai 403, Mytheresa는 `window.isBotPage = true` 폴백 셸). 렌더된 페이지를 한 번도 본 적이 없으므로 사이트별 마크업을 추측하지 않고 표준 JSON-LD만 읽습니다. 상품 블록이 없으면 그 페이지에 **무엇이 있었는지**(`markers`: 다른 타입의 JSON-LD, `__NEXT_DATA__`, 상태 블롭, 봇 차단벽)를 진단에 남겨, 다음 개정을 추측이 아니라 관찰에 기반해 쓸 수 있게 합니다. |
+
+뉴스레터 7곳:
+
+| 매체 | 방법 |
+| --- | --- |
+| Sneaker News | WordPress REST (`_embed=1`). 글의 **카테고리가 곧 브랜드**, **태그가 곧 모델명**이라 이 파이프라인에서 가장 정확한 신호입니다. |
+| Footwear News | 같은 REST API를 `wwd.com`에서. 기사 원본이 거기 있고, footwearnews.com의 `<time>`은 채워지지 않은 템플릿 자리표시자(`00:00-YY-DD-MM`)입니다. WWD의 "Sneaker News" 카테고리(344412701)로 한정합니다. |
+| Hypebeast / Hypebeast Korea | 목록 HTML (`data-permalink`/`data-title` + 실제 `<time datetime>`), 기사 페이지에서 `og:image`와 본문 보강 |
+| Highsnobiety | RSS + Google 뉴스 사이트맵. `/sneakers` 목록은 클라이언트 렌더라 HTML에 기사 링크가 없고 `/feed/`는 `?paged`를 무시하므로, 이 둘이 자바스크립트 없이 얻을 수 있는 전부입니다. |
+| Sneaker Freaker | RSS(`rss.xml`; `/feed`는 404). `<category>` 값이 모델·브랜드명입니다. |
+| Concept Kicks | Squarespace라 각 컬렉션이 `?format=json`에 실제 항목을 돌려줍니다(`/design`, `/feature`). RSS 없음. |
+
+## 3. 뉴스레터 기사가 아이템이 되는 조건
+
+기사의 **브랜드를 실제로 특정할 수 있을 때만** 아이템이 됩니다.
+
+1. 매체 자체 분류(Sneaker News의 카테고리·태그, Sneaker Freaker의 `<category>`)
+2. 안 되면 `config/brand-policy.json`의 157개 브랜드명을 헤드라인에서 매칭
+3. 그래도 안 되면 `config/brand-aliases-ko.json`의 한글 표기 매칭
+
+셋 다 실패한 기사는 상품으로 만들지 않고 `unidentifiedArticles`로 보류합니다.
+브랜드를 추측해서 카드를 만들지 않습니다.
+
+`config/brand-aliases-ko.json`의 `derived` 항목은 손으로 적은 것이 아니라,
+한글 브랜드명과 영문 슬러그를 **같은 상품에 대해 동시에** 내려주는 무신사 응답에서
+생성한 것입니다. `manual` 항목은 무신사가 취급하지 않는 정책 브랜드의 한글 표기이며,
+값이 전부 `brand-policy.json`에 존재하는지 파일을 쓸 때 검증합니다.
+
+출시일·가격·스타일 코드는 기사 본문에서 보수적인 패턴으로만 뽑고, 기사가 말하지
+않으면 비워 둡니다. 추출한 출시일이 미래면 **발매 예정**으로 표시합니다.
+
+## 4. 품목 범위
+
+`scripts/monthly/footwear_scope.py` 한 곳에서 모든 수집기가 같은 기준을 씁니다.
+
+**포함** — 스니커즈, 발레리나 스니커즈, 메리제인 스니커즈, 뮬 스니커즈, 젤리 슈즈,
+플랫폼 슈즈 (`public/assets/footwear-policy.mjs`의 `FOOTWEAR_TYPES`와 동일)
+
+**제외** — 구두, 로퍼, 옥스포드, 더비, 힐·펌프스, 슬링백, 부츠, 샌들, 슬리퍼,
+플립플랍, 클로그, 키즈
+
+리테일러의 카테고리 라벨은 그 자체로 "스니커즈"라는 근거가 되지만, **상품 제목을
+이기지는 못합니다.** 리테일러는 상시로 잘못 분류합니다 — 무신사의 스니커즈
+카테고리에는 "키높이 페니로퍼"가 들어 있습니다. 그래서 제목이 제외 실루엣을
+말하면 제목이 스니커즈라고 말할 때만 통과합니다("Mule Sneakers"는 통과,
+"페니로퍼"는 탈락). 이 규칙은 `tests/test_monthly_footwear_scope.py`가 지킵니다.
+
+## 5. 화면
+
+- 같은 모델의 다른 색상은 **한 카드**로 묶이고 컬러칩으로 전환합니다. 묶음 키는
+  브랜드 + 리테일러 + (컬러웨이와 끝의 카테고리 단어를 뗀) 모델명입니다.
+- 컬러칩 색은 리테일러가 준 hex(29CM `colorHexes`, W컨셉 `colors`)를 1순위로,
+  없으면 색상명을 한·영 팔레트에서 찾고, 그래도 모르면 색을 지어내지 않고 중립
+  패턴 칩을 씁니다.
+- 카드를 누르면 소재·컬러·스타일 코드·가격·출시·수집 근거가 담긴 상세 패널이
+  열리고, **상세 패널의 사진을 누르면** 해당 상품·기사 페이지로 이동합니다.
+
+## 6. 실행 주기
+
+| 워크플로 | 주기 (KST) | 내용 |
+| --- | --- | --- |
+| Weekly Curated Shoes Update | 일요일 08:00 (+ 20:00, 월 06:00 재시도) | 브랜드 공식 신상품 · SNS 인기 신상 |
+| Weekly Retail and Newsletter Shoes Update | 월요일 08:00 (+ 20:00 재시도) | 리테일 신상 · 뉴스레터 |
+| Daily Expiry and Archive Maintenance | 매일 07:15 | 수집 없음. 3개월이 지난 항목을 공개 목록에서 내리고 아카이브로 넘기는 정리 작업만 수행 |
+
+두 수집 워크플로는 `shoes-publication` 동시성 그룹을 공유하므로 겹쳐 돌지 않습니다.

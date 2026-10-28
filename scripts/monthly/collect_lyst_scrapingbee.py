@@ -22,10 +22,16 @@ import re
 import sys
 import time
 
-from common import BROWSER_HEADERS, atomic_write_json, canonical_url, is_kids_item, is_sneaker_title, kst_now
+from common import atomic_write_json, canonical_url, derive_colorway, kst_now, short_id
+from footwear_scope import classify
 from scrapingbee_client import ScrapingBeeClient
 
-BASE = 'https://www.lyst.com/shop/sneakers/?view=newest'
+# Lyst's own "Newest" view. Women's flats are walked too, the same way the
+# other retailers are, for ballet/Mary Jane silhouettes.
+LISTINGS = [
+    {'url': 'https://www.lyst.com/shop/sneakers/?view=newest', 'gender': '', 'label': 'sneakers'},
+    {'url': 'https://www.lyst.com/shop/womens-flat-shoes/?view=newest', 'gender': 'women', 'label': 'flats'},
+]
 MAX_PAGES = 6
 
 CARD_SPLIT = re.compile(r'data-testid="product-card"')
@@ -76,16 +82,21 @@ def main():
         print('Lyst (ScrapingBee) collection: requires_key', file=sys.stderr)
         return
 
-    for page in range(1, MAX_PAGES + 1):
-        page_url = f'{BASE}&page={page}'
-        status = {'page': page, 'url': page_url, 'cards': 0, 'errors': []}
+    listing_pages = [(listing, page) for listing in LISTINGS for page in range(1, MAX_PAGES + 1)]
+    stopped = set()
+    for listing, page in listing_pages:
+        if listing['url'] in stopped:
+            continue
+        page_url = f"{listing['url']}&page={page}"
+        status = {'page': page, 'url': page_url, 'cards': 0, 'kept': 0, 'dropped': {}, 'errors': []}
         try:
             html = client.fetch(page_url, validate=valid_lyst_page)
         except RuntimeError as e:
             status['errors'].append({'error': str(e)})
             diagnostics.append(status)
-            if 'QUOTA' in str(e) or 'NO_KEY' in str(e):
+            if 'QUOTA' in str(e) or 'NO_KEY' in str(e) or 'BUDGET' in str(e):
                 break
+            stopped.add(listing['url'])
             continue
         cards = CARD_SPLIT.split(html)[1:]
         new_this_page = 0
@@ -95,16 +106,31 @@ def main():
                 continue
             seen.add(parsed['url'])
             new_this_page += 1
-            if not is_sneaker_title(parsed['name']) or is_kids_item(parsed['name'], parsed['url']):
+            kind, types, reason = classify(parsed['name'], listing['label'])
+            if not kind:
+                status['dropped'][reason] = status['dropped'].get(reason, 0) + 1
                 continue
-            items.append({**parsed, 'gender': 'women', 'source': 'retail-lyst',
+            colorway = derive_colorway(parsed['name'])
+            model = parsed['name'][len(colorway):].strip() if colorway else parsed['name']
+            items.append({**parsed,
+                          'id': short_id('weekly-lyst', canonical_url(parsed['url']) or parsed['url']),
+                          'name': model or parsed['name'],
+                          'fullName': parsed['name'],
+                          'colorway': colorway,
+                          'gender': listing['gender'],
+                          'source': 'retail-lyst',
+                          'category': kind, 'productType': kind, 'footwearTypes': types,
+                          'officialCategory': listing['label'],
                           'retailerEvidence': {'verified': True, 'retailer': parsed['retailer'] or 'Lyst',
                                                 'productUrl': parsed['url'], 'listingUrl': page_url,
+                                                'listingBasis': f"Lyst {listing['label']} · Newest",
                                                 'verifiedAt': checked_at, 'collectionMethod': 'scrapingbee'}})
+            status['kept'] += 1
         status['cards'] = new_this_page
         diagnostics.append(status)
         if new_this_page == 0:
-            break
+            stopped.add(listing['url'])
+            continue
         time.sleep(1.5)
 
     result = {'status': 'ok' if items else ('partial' if diagnostics else 'unavailable'),

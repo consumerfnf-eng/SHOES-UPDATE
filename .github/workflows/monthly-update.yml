@@ -1,4 +1,4 @@
-name: Weekly Retailer SNS Media Shoes Update
+name: Weekly Retail and Newsletter Shoes Update
 on:
   schedule:
     # Staggered after Weekly Curated Shoes Update (Sunday 08:00 KST) - same
@@ -23,7 +23,7 @@ jobs:
   collect:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,7 +33,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements-trends.txt
-      - name: Collect retail/media/SNS weekly snapshot
+      - name: Collect retail/newsletter weekly snapshot
         # IG_SESSION_B64 (if the user has registered one) is restored to a
         # temp file in-process by collect_instagram.py and removed when it
         # finishes; nothing is ever written to disk by this workflow itself.
@@ -47,15 +47,15 @@ jobs:
           else
             npm run monthly -- --only-if-stale
           fi
-      - name: Run offline retail/media/SNS tests before publishing
-        run: python -m unittest tests.test_monthly_common tests.test_monthly_update tests.test_monthly_instagram_hashtags tests.test_monthly_musinsa tests.test_monthly_generic_jsonld tests.test_monthly_lyst_scrapingbee tests.test_monthly_scrapingbee_client -v
+      - name: Run offline retail/newsletter tests before publishing
+        run: python -m unittest discover -s tests -p 'test_monthly_*.py' -v
       - name: Publish weekly snapshot via existing Cloudflare Git integration
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
           git add data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json public/data/monthly-catalog.json
           if ! git diff --cached --quiet; then
-            git commit -m "weekly retailer/sns/media shoes update $(date -u +%F)"
+            git commit -m "weekly retail/newsletter shoes update $(date -u +%F)"
             # See weekly-update.yml: main can move during a long collection,
             # so rebase onto it and retry rather than losing the run's work.
             published=0
@@ -80,10 +80,12 @@ jobs:
           name: monthly-diagnostics-${{ github.run_id }}
           path: |
             data/monthly-staging-ssense.json
+            data/monthly-staging-musinsa.json
+            data/monthly-staging-29cm.json
+            data/monthly-staging-wconcept.json
             data/monthly-staging-lyst.json
             data/monthly-staging-farfetch-mytheresa.json
-            data/monthly-staging-media.json
-            data/monthly-staging-musinsa.json
+            data/monthly-staging-newsletter.json
             data/monthly-staging-instagram.json
             data/monthly-staging-ig-hashtags.json
             data/monthly-run-report.json

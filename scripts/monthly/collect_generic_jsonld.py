@@ -1,14 +1,20 @@
-"""Generic schema.org JSON-LD Product collector for retailers reachable only
-through ScrapingBee (Farfetch, Mytheresa - both block curl_cffi and every
-Playwright mode tried by hand this session). Unlike collect_ssense.py, this
-was NOT built against a real observed page: every direct attempt to view
-Farfetch/Mytheresa was blocked before any content came through, so there is
-nothing to read selectors off of. schema.org Product JSON-LD is a widely
-used, standardized pattern (confirmed working this way for SSENSE and, in
-an earlier session, Moncler) - trying it generically is a legitimate first
-attempt, not a guess at site-specific markup. If a page has no JSON-LD
-Product blocks, that source is honestly reported unavailable; this never
-falls back to scraping arbitrary HTML it hasn't verified the shape of.
+"""Generic schema.org JSON-LD Product collector for the retailers that are
+reachable only through ScrapingBee: Farfetch, Mytheresa and Net-a-Porter.
+
+All three were re-checked directly this session and all three are shut:
+Farfetch 403, Net-a-Porter 403 behind Akamai, and Mytheresa answers with a
+failover shell that sets `window.isBotPage = true` and carries no product at
+all. curl_cffi's Chrome TLS impersonation and every Playwright mode tried by
+hand get the same treatment.
+
+Because none of those pages has ever been observed rendered, this collector
+deliberately reads only schema.org Product JSON-LD - the standardized pattern
+these retailers have to publish for Google Shopping, and the same one that
+works for SSENSE - rather than guessing at site-specific markup. When a page
+yields no Product block, `markers` in that source's diagnostics records which
+data shapes the page *did* contain (JSON-LD of other types, __NEXT_DATA__, an
+inline state blob, a bot wall), so the next revision can be written against
+something observed instead of guessed at again.
 """
 import argparse
 import json
@@ -16,22 +22,47 @@ import re
 import sys
 import time
 
-from common import atomic_write_json, is_kids_item, is_sneaker_title, kst_now
+from common import atomic_write_json, canonical_url, derive_colorway, kst_now, short_id
+from footwear_scope import classify
 from scrapingbee_client import ScrapingBeeClient
 
 LDJSON_RE = re.compile(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', re.S)
 
+# Each listing URL is the retailer's own newest-first sneaker view, so the
+# top pages are its new arrivals rather than an arbitrary slice. W Concept
+# used to be in this list; it now has its own collector (collect_wconcept.py)
+# built against its real, observed storefront API.
 SOURCES = [
+    {'id': 'retail-farfetch', 'label': 'Farfetch', 'gender': 'women',
+     'listingUrl': 'https://www.farfetch.com/shopping/women/shoes-trainers-1/items.aspx?sortby=3',
+     'maxPages': 4},
     {'id': 'retail-farfetch', 'label': 'Farfetch', 'gender': 'men',
-     'listingUrl': 'https://www.farfetch.com/shopping/men/shoes-2/items.aspx?category=137174', 'maxPages': 4},
+     'listingUrl': 'https://www.farfetch.com/shopping/men/shoes-trainers-1/items.aspx?sortby=3',
+     'maxPages': 4},
     {'id': 'retail-mytheresa', 'label': 'Mytheresa', 'gender': 'women',
-     'listingUrl': 'https://www.mytheresa.com/us/en/women/shoes/sneakers', 'maxPages': 4},
-    # categoryCd 65 "스니커즈" under largeCategory 002 "신발" - confirmed by
-    # hand from the embedded category tree on wconcept.co.kr's own homepage
-    # (women's only path found; a men's equivalent was not located).
-    {'id': 'ecommerce-wconcept', 'label': 'W Concept', 'gender': 'women',
-     'listingUrl': 'https://display.wconcept.co.kr/rn/category/women/002002', 'maxPages': 3},
+     'listingUrl': 'https://www.mytheresa.com/int/en/women/shoes/sneakers?sortBy=new_items',
+     'maxPages': 4},
+    {'id': 'retail-mytheresa', 'label': 'Mytheresa', 'gender': 'men',
+     'listingUrl': 'https://www.mytheresa.com/int/en/men/shoes/sneakers?sortBy=new_items',
+     'maxPages': 4},
+    {'id': 'retail-netaporter', 'label': 'Net-a-Porter', 'gender': 'women',
+     'listingUrl': 'https://www.net-a-porter.com/en-us/shop/clothing/shoes/sneakers?sortBy=newIn',
+     'maxPages': 4},
 ]
+
+# What a page contained when it yielded no Product block - the input the next
+# revision of this collector needs, instead of another blind guess.
+MARKERS = {
+    'jsonld': re.compile(r'application/ld\+json', re.I),
+    'next-data': re.compile(r'__NEXT_DATA__'),
+    'nuxt-data': re.compile(r'__NUXT'),
+    'initial-state': re.compile(r'__(?:INITIAL_STATE|PRELOADED_STATE|APOLLO_STATE)__'),
+    'bot-wall': re.compile(r'isBotPage|Access Denied|Request unsuccessful', re.I),
+}
+
+
+def page_markers(html):
+    return sorted(name for name, pattern in MARKERS.items() if pattern.search(html or ''))
 
 
 def extract_products(html):
@@ -72,24 +103,33 @@ def to_item(product, source):
     sku = product.get('sku') or product.get('productID') or ''
     if not url or not image:
         return None
+    colorway = derive_colorway(name)
     return {
+        'id': short_id('weekly-' + source['id'], canonical_url(url) or url),
         'brand': brand_name or name.split()[0],
-        'name': name,
+        'name': name[len(colorway):].strip() if colorway else name,
+        'fullName': name,
         'image': image,
         'url': url,
         'sku': sku,
+        'style': sku,
+        'colorway': colorway,
         'priceLabel': f'{currency} {price}'.strip() if price else '',
         'gender': source['gender'],
         'source': source['id'],
+        'retailer': source['label'],
+        'officialCategory': 'sneakers',
         'retailerEvidence': {'verified': True, 'retailer': source['label'], 'productUrl': url,
                               'listingUrl': source['listingUrl'], 'verifiedAt': kst_now().isoformat(),
+                              'listingBasis': source['label'] + ' newest-first listing',
                               'collectionMethod': 'scrapingbee-jsonld'},
     }
 
 
 def collect_source(source, client, diagnostics):
     items, seen = [], set()
-    status = {'source': source['id'], 'pages': 0, 'responses': 0, 'products': 0, 'errors': []}
+    status = {'source': source['id'], 'gender': source['gender'], 'listingUrl': source['listingUrl'],
+              'pages': 0, 'responses': 0, 'products': 0, 'dropped': {}, 'markers': [], 'errors': []}
     for page in range(1, source['maxPages'] + 1):
         sep = '&' if '?' in source['listingUrl'] else '?'
         page_url = source['listingUrl'] if page == 1 else f"{source['listingUrl']}{sep}page={page}"
@@ -103,7 +143,9 @@ def collect_source(source, client, diagnostics):
             continue
         products = extract_products(html)
         if not products:
-            status['errors'].append({'url': page_url, 'error': 'NO_JSONLD_PRODUCTS_FOUND'})
+            status['markers'] = page_markers(html)
+            status['errors'].append({'url': page_url, 'error': 'NO_JSONLD_PRODUCTS_FOUND',
+                                      'markers': status['markers'], 'length': len(html)})
             break
         new_this_page = 0
         for p in products:
@@ -112,8 +154,11 @@ def collect_source(source, client, diagnostics):
                 continue
             seen.add(item['url'])
             new_this_page += 1
-            if not is_sneaker_title(item['name']) or is_kids_item(item['name'], item['url']):
+            kind, types, reason = classify(item['fullName'], 'sneakers')
+            if not kind:
+                status['dropped'][reason] = status['dropped'].get(reason, 0) + 1
                 continue
+            item.update({'category': kind, 'productType': kind, 'footwearTypes': types})
             items.append(item)
             status['products'] += 1
         status['pages'] = page
@@ -136,7 +181,7 @@ def main():
     if not client.has_key:
         atomic_write_json(args.out, {'status': 'requires_key', 'checkedAt': checked_at, 'items': [],
                                       'diagnostics': [{'error': 'SCRAPINGBEE_API_KEY not set'}]})
-        print('Farfetch/Mytheresa (ScrapingBee JSON-LD) collection: requires_key', file=sys.stderr)
+        print('Farfetch/Mytheresa/Net-a-Porter (ScrapingBee JSON-LD): requires_key', file=sys.stderr)
         return
 
     for source in SOURCES:
@@ -145,7 +190,7 @@ def main():
     result = {'status': 'ok' if items else 'unavailable', 'checkedAt': checked_at,
               'items': items, 'diagnostics': diagnostics, 'scrapingBeeCreditsUsed': client.credits_used}
     atomic_write_json(args.out, result)
-    print(f"Farfetch/Mytheresa (ScrapingBee JSON-LD) collection: {result['status']} - "
+    print(f"Farfetch/Mytheresa/Net-a-Porter (ScrapingBee JSON-LD): {result['status']} - "
           f"{len(items)} items, {client.credits_used} credits used", file=sys.stderr)
 
 

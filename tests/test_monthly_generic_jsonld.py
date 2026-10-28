@@ -43,7 +43,11 @@ class ToItemTests(unittest.TestCase):
         products = extract_products(PLAIN_HTML)
         item = to_item(products[0], SOURCES[0])
         self.assertEqual(item['brand'], 'Example Brand')
-        self.assertEqual(item['name'], 'Black Low-Top Sneakers')
+        # name is the model; the leading colorway is split off into its own
+        # field, matching the shape the other retail collectors emit.
+        self.assertEqual(item['name'], 'Low-Top Sneakers')
+        self.assertEqual(item['fullName'], 'Black Low-Top Sneakers')
+        self.assertEqual(item['colorway'], 'Black')
         self.assertEqual(item['image'], 'https://img.example/abc123.jpg')
         self.assertEqual(item['url'], 'https://example.com/p/abc123')
         self.assertEqual(item['priceLabel'], 'EUR 450')

@@ -78,12 +78,18 @@ def read_json(path, default=None):
         raise
 
 
-def atomic_write_json(path, value):
+def atomic_write_json(path, value, compact=False):
+    """`compact=True` drops the indentation for files that are downloaded
+    rather than read - two spaces per line is a third of the bytes on a
+    payload with thousands of records."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
     fd, tmp_path = tempfile.mkstemp(dir=os.path.dirname(path), prefix='.tmp-')
     try:
         with os.fdopen(fd, 'w', encoding='utf-8') as f:
-            json.dump(value, f, indent=2, ensure_ascii=False)
+            if compact:
+                json.dump(value, f, ensure_ascii=False, separators=(',', ':'))
+            else:
+                json.dump(value, f, indent=2, ensure_ascii=False)
         os.replace(tmp_path, path)
     except Exception:
         if os.path.exists(tmp_path):

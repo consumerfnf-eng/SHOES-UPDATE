@@ -46,6 +46,8 @@
 - 공식 New 목록 수집 → 상품/품목/적합성·사진 확인 → 최초 게시 이력 결합 → 완성된 JSON 교체 → 빌드 검사 → Cloudflare Git 배포 순서입니다.
 - 실패한 수집은 기존 공개본을 교체하지 않습니다. 부분 출처 실패는 실패 브랜드로 표시합니다. 마지막 성공 수집일과 현재 기한 점검일을 구분합니다.
 - 매일 07:15 기한 점검은 수집을 하지 않습니다. 달력상 3개월이 지난 상품을 숨기고 아카이브 대기열을 재시도합니다.
+- 매주 **월요일 오전 8시 한국시간**에 리테일 신상·뉴스레터 수집을 따로 예약합니다(`npm run monthly`). SSENSE·Farfetch·Mytheresa·Net-a-Porter·Lyst·무신사·29CM·W컨셉과 Sneaker News·Highsnobiety·Sneaker Freaker·Hypebeast·Hypebeast Korea·Concept Kicks·Footwear News를 수집해 **리테일 신상**·**뉴스레터** 탭을 채웁니다. 공식 신상품 파이프라인과 파일이 겹치지 않습니다. 수집 근거와 사이트별 방법은 `docs/retail-newsletter-collection.md`에 있습니다.
+- 수집 로직만 고칠 때는 `npm run monthly -- --use-staging`으로 지난 수집 결과를 다시 병합·게시합니다. 여덟 개 사이트를 다시 크롤링하지 않습니다.
 
 ## 데이터 위치
 
