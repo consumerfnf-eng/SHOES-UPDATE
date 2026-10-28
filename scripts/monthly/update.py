@@ -1,0 +1,195 @@
+"""Monthly orchestrator: retail (SSENSE) + media (Hypebeast/Hypebeast KR/Sneaker
+News) + SNS (Instagram hashtags) collection, merged into a *separate* overlay
+catalog that the site adds to its existing display without ever touching
+public/data/catalog.json or the daily/weekly scripts.
+
+Design rules carried over from this repo's existing pipeline philosophy:
+  - Never fabricate: a source that is blocked/unavailable keeps 0 items and
+    is reported as such; the previous month's published products are kept
+    (not deleted) until no longer within the 3-month display window.
+  - Never auto-productize an SNS/media mention of a model that isn't already
+    a verified SSENSE retail item or in data/monthly-model-aliases.json. An
+    unmatched mention is held in data/monthly-unmatched-mentions.json for a
+    human to register an alias for, exactly like the real catalog's
+    unregistered-model gate.
+  - Retail items publish directly (their image/evidence comes straight from
+    the retailer's own structured product data, the same trust level as the
+    existing officialImageEvidence pattern elsewhere in this repo).
+"""
+import argparse
+import os
+import re
+import subprocess
+import sys
+from datetime import timezone
+
+from common import atomic_write_json, kst_day, kst_now, kst_three_months_ago, read_json
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+DATA = os.path.join(ROOT, 'data')
+PUBLIC_DATA = os.path.join(ROOT, 'public', 'data')
+GENERIC_WORDS = {'sneakers', 'sneaker', 'shoes', 'shoe', 'trainers', 'trainer', 'low', 'high', 'mid',
+                  'black', 'white', 'red', 'blue', 'green', 'grey', 'gray', 'tan', 'brown', 'pink',
+                  'navy', 'beige', 'cream', 'yellow', 'orange', 'purple', 'leather', 'knit', 'mesh'}
+
+
+def tokenize(text):
+    return [t for t in re.findall(r"[a-zA-Z0-9']+", (text or '').lower()) if len(t) > 2 and t not in GENERIC_WORDS]
+
+
+def match_key(brand, name):
+    tokens = sorted(set(tokenize(brand) + tokenize(name)))
+    return tokens
+
+
+def run_collector(script, out_path, extra_args=None):
+    cmd = [sys.executable, os.path.join(os.path.dirname(__file__), script), '--out', out_path]
+    if extra_args:
+        cmd.extend(extra_args)
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+    if proc.returncode != 0:
+        return {'status': 'error', 'items': [], 'diagnostics': [{'error': proc.stderr[-2000:]}]}
+    return read_json(out_path, {'status': 'unavailable', 'items': [], 'diagnostics': []})
+
+
+def match_mentions(ssense_items, mentions, mention_field):
+    """Attach mentions to ssense items whose brand+model tokens all appear in
+    the mention text. Mentions that match nothing are returned separately,
+    never turned into new products."""
+    unmatched = []
+    index = [(item, set(match_key(item['brand'], item['name']))) for item in ssense_items]
+    for mention in mentions:
+        text = (mention.get(mention_field) or '') + ' ' + (mention.get('headline') or '')
+        mention_tokens = set(tokenize(text))
+        best, best_overlap = None, 0
+        for item, tokens in index:
+            if not tokens:
+                continue
+            brand_tokens = set(tokenize(item['brand']))
+            model_tokens = tokens - brand_tokens
+            # Require the brand AND at least one distinct model token in the
+            # mention text; a brand name alone (e.g. just "New Balance") is
+            # not evidence this mention is about any specific item.
+            if not (brand_tokens and brand_tokens <= mention_tokens):
+                continue
+            model_overlap = model_tokens & mention_tokens
+            if model_overlap and len(model_overlap) > best_overlap:
+                best, best_overlap = item, len(model_overlap)
+        if best:
+            best.setdefault('_mentions', []).append(mention)
+        else:
+            unmatched.append(mention)
+    return unmatched
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--only-if-stale', action='store_true')
+    parser.add_argument('--ig-session-file')
+    parser.add_argument('--ig-username')
+    args = parser.parse_args()
+
+    now = kst_now()
+    today = kst_day(now)
+    previous_source = read_json(os.path.join(DATA, 'monthly-catalog-source.json'), {'products': [], 'lastRunAt': None})
+
+    if args.only_if_stale and previous_source.get('lastRunMonth') == today[:7]:
+        print('This month already has a completed monthly collection; no duplicate run.')
+        return
+
+    os.makedirs(os.path.join(ROOT, 'logs'), exist_ok=True)
+    ssense = run_collector('collect_ssense.py', os.path.join(DATA, 'monthly-staging-ssense.json'))
+    media = run_collector('collect_media.py', os.path.join(DATA, 'monthly-staging-media.json'))
+    ig_args = []
+    if args.ig_session_file:
+        ig_args += ['--session-file', args.ig_session_file]
+    if args.ig_username:
+        ig_args += ['--username', args.ig_username]
+    instagram = run_collector('collect_instagram.py', os.path.join(DATA, 'monthly-staging-instagram.json'), ig_args)
+    hashtag_volume = run_collector('collect_instagram_hashtags.py', os.path.join(DATA, 'monthly-staging-ig-hashtags.json'))
+
+    model_aliases = read_json(os.path.join(DATA, 'monthly-model-aliases.json'), {})
+    previous_by_url = {p['url']: p for p in previous_source.get('products', [])}
+
+    ssense_items = ssense.get('items', [])
+    for item in ssense_items:
+        prior = previous_by_url.get(item['url'])
+        item['firstSeenAt'] = prior['firstSeenAt'] if prior else now.isoformat()
+        item['newThisRun'] = prior is None
+
+    unmatched_media = match_mentions(ssense_items, media.get('items', []), 'headline')
+    unmatched_sns = match_mentions(ssense_items, instagram.get('items', []), 'caption')
+
+    for item in ssense_items:
+        mentions = item.pop('_mentions', [])
+        media_mentions = [m for m in mentions if m.get('headline')]
+        sns_mentions = [m for m in mentions if m.get('shortcode')]
+        likes = [m['likeCount'] for m in sns_mentions if isinstance(m.get('likeCount'), int)]
+        item['popularity'] = {
+            'media': len(media_mentions) > 0,
+            'mediaMentions': media_mentions,
+            'sns': len(sns_mentions) > 0,
+            'snsPosts': sns_mentions,
+            'snsAverageLikes': round(sum(likes) / len(likes)) if likes else None,
+        }
+
+    cutoff = kst_three_months_ago(now).isoformat()
+    published = [p for p in ssense_items if p['firstSeenAt'] >= cutoff]
+
+    source_snapshot = {
+        'lastRunAt': now.isoformat(),
+        'lastRunMonth': today[:7],
+        'products': ssense_items,
+    }
+    atomic_write_json(os.path.join(DATA, 'monthly-catalog-source.json'), source_snapshot)
+
+    atomic_write_json(os.path.join(DATA, 'monthly-unmatched-mentions.json'), {
+        'checkedAt': now.isoformat(),
+        'note': 'Mentions here reference a model not found among this run\'s verified SSENSE retail items '
+                'and not registered in monthly-model-aliases.json. They are held, not auto-productized. '
+                'Register a real alias in monthly-model-aliases.json to let a future run match them.',
+        'media': unmatched_media,
+        'sns': unmatched_sns,
+    })
+
+    public_catalog = {
+        'schemaVersion': 1,
+        'publishedAt': now.isoformat(),
+        'asOf': today,
+        'periodStart': cutoff[:10],
+        'products': published,
+        # Hashtag-level volume + related keywords, collected without any Instagram
+        # login (see collect_instagram_hashtags.py). This is a different, coarser
+        # signal than popularity.snsPosts above (which needs the user's login
+        # session and gives per-post captions/likes matched to specific items).
+        'hashtagTrends': hashtag_volume.get('items', []),
+    }
+    atomic_write_json(os.path.join(PUBLIC_DATA, 'monthly-catalog.json'), public_catalog)
+
+    report = {
+        'checkedAt': now.isoformat(),
+        'sources': {
+            'retail-ssense': {'status': ssense.get('status'), 'items': len(ssense_items),
+                               'diagnostics': ssense.get('diagnostics', [])},
+            'media': {'status': media.get('status'), 'items': len(media.get('items', [])),
+                      'matched': len(media.get('items', [])) - len(unmatched_media),
+                      'held': len(unmatched_media), 'diagnostics': media.get('diagnostics', [])},
+            'instagram': {'status': instagram.get('status'), 'items': len(instagram.get('items', [])),
+                          'matched': len(instagram.get('items', [])) - len(unmatched_sns),
+                          'held': len(unmatched_sns), 'diagnostics': instagram.get('diagnostics', [])},
+            'instagram-hashtag-volume': {'status': hashtag_volume.get('status'),
+                                          'items': len(hashtag_volume.get('items', [])),
+                                          'diagnostics': hashtag_volume.get('diagnostics', [])},
+        },
+        'published': len(published),
+        'heldAsStale': len(ssense_items) - len(published),
+    }
+    atomic_write_json(os.path.join(DATA, 'monthly-run-report.json'), report)
+
+    print(f"Monthly update complete: {len(published)} published retail items; "
+          f"{report['sources']['media']['held']} media + {report['sources']['instagram']['held']} SNS mentions held unmatched; "
+          f"SSENSE={ssense.get('status')} media={media.get('status')} instagram={instagram.get('status')}")
+
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,71 @@
+name: Monthly Retailer SNS Media Shoes Update
+on:
+  schedule:
+    - cron: '0 23 1 * *'  # 1st of month 08:00 Asia/Seoul
+    - cron: '0 23 2 * *'  # 2nd of month 08:00 KST retry if no completed run this month
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Run a fresh collection even when this month already completed'
+        required: false
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: shoes-publication
+  cancel-in-progress: false
+jobs:
+  collect:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-trends.txt
+      - name: Restore Instagram session (if the user registered one)
+        if: ${{ secrets.IG_SESSION_B64 != '' }}
+        env:
+          IG_SESSION_B64: ${{ secrets.IG_SESSION_B64 }}
+          IG_USERNAME: ${{ secrets.IG_USERNAME }}
+        run: echo "IG session will be restored to a temp file in-process by collect_instagram.py; nothing is written to disk here."
+      - name: Collect retail/media/SNS monthly snapshot
+        env:
+          IG_USERNAME: ${{ secrets.IG_USERNAME }}
+          IG_SESSION_B64: ${{ secrets.IG_SESSION_B64 }}
+        run: |
+          if [ "${{ github.event_name }}" = 'workflow_dispatch' ] && [ "${{ inputs.force }}" = 'true' ]; then
+            npm run monthly
+          else
+            npm run monthly -- --only-if-stale
+          fi
+      - name: Run offline monthly tests before publishing
+        run: python -m unittest tests.test_monthly_common tests.test_monthly_update tests.test_monthly_instagram_hashtags -v
+      - name: Publish monthly snapshot via existing Cloudflare Git integration
+        run: |
+          git config user.name 'Shoes Dashboard Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json public/data/monthly-catalog.json
+          if ! git diff --cached --quiet; then
+            git commit -m "monthly retailer/sns/media shoes update $(date -u +%F)"
+            git push origin HEAD:main
+          fi
+      - name: Save collection diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: monthly-diagnostics-${{ github.run_id }}
+          path: |
+            data/monthly-staging-ssense.json
+            data/monthly-staging-media.json
+            data/monthly-staging-instagram.json
+            data/monthly-staging-ig-hashtags.json
+            data/monthly-run-report.json
+          if-no-files-found: ignore
+          retention-days: 14

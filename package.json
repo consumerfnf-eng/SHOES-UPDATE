@@ -5,6 +5,7 @@
   "scripts": {
     "daily": "node scripts/publish-curated.mjs --maintenance",
     "weekly": "node scripts/weekly-update.mjs",
+    "monthly": "python scripts/monthly/update.py",
     "curate": "node scripts/publish-curated.mjs",
     "keywords": "node scripts/refresh-keywords.mjs",
     "photos": "node scripts/cache-product-photos.mjs",

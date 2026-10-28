@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="./assets/app.css?v=hybrid-collection-20261006" rel="stylesheet">
   <script type="module" src="./assets/app.mjs?v=hybrid-collection-20261006"></script>
+  <script type="module">import {initMonthlyView} from './assets/monthly-view.mjs?v=monthly-1'; initMonthlyView();</script>
 </head>
 <body>
   <a class="skip-link" href="#results">상품 목록으로 건너뛰기</a>
@@ -35,6 +36,21 @@
         <div id="product-grid" class="product-grid" aria-busy="true"></div>
         <div id="empty-state" class="empty-state" hidden><div class="empty-symbol" aria-hidden="true">⌕</div><h3 id="empty-title">상품을 불러오고 있습니다</h3><p id="empty-description"></p><button id="empty-reset" class="secondary-button">필터 초기화</button></div>
         <nav id="pagination" class="pagination" aria-label="상품 페이지"></nav>
+      </section>
+      <section id="monthly-section" class="catalog monthly-catalog" aria-label="월간 리테일·미디어·SNS 확장">
+        <div class="section-label"><div class="trend-heading"><span class="trend-eyebrow">MONTHLY</span><h2>리테일·미디어·SNS 신상 스니커즈</h2><span id="monthly-count" class="keyword-total">0</span></div></div>
+        <p id="monthly-asof" class="muted">불러오는 중…</p>
+        <div id="monthly-hashtags" class="keyword-list" aria-label="Instagram 해시태그 볼륨 (비로그인 집계)"></div>
+        <div class="source-tabs" role="group" aria-label="월간 출처 선택">
+          <button data-filter="all" class="source-tab monthly-tab active" aria-pressed="true">전체</button>
+          <button data-filter="media" class="source-tab monthly-tab" aria-pressed="false">미디어 언급</button>
+          <button data-filter="sns" class="source-tab monthly-tab" aria-pressed="false">SNS 인기</button>
+        </div>
+        <div class="filters"><label class="sr-only" for="monthly-search">월간 상품 검색</label><input id="monthly-search" type="search" placeholder="브랜드·상품명 검색" autocomplete="off"></div>
+        <div id="monthly-grid" class="product-grid" aria-busy="true"></div>
+        <div id="monthly-empty" class="empty-state" hidden><div class="empty-symbol" aria-hidden="true">⌕</div><h3 id="monthly-empty-title">상품을 불러오고 있습니다</h3></div>
+        <div class="selection-row"><button id="monthly-more" class="secondary-button" hidden>더 보기</button></div>
+        <p class="muted">SSENSE 남성·여성 스니커즈 카테고리에서 확인한 신상입니다. Farfetch·Mytheresa는 현재 봇 차단으로 수집하지 못해 SSENSE로 대체했습니다. 미디어 언급은 Hypebeast·Hypebeast Korea·Sneaker News 최근 3개월 기사 중 이 목록의 브랜드·모델과 일치한 것만 표시합니다.</p>
       </section>
       <footer><span>공식 신상품을 최초 게시일부터 3개월간 표시합니다.</span><a href="https://consumerfnf-eng.github.io/retail-archive-/" target="_blank" rel="noopener noreferrer">이전 시즌은 Retail Archive에서 ↗</a></footer>
     </main>

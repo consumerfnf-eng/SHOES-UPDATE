@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-10-28T10:09:14.721012+09:00",
+  "sources": {
+    "retail-ssense": {
+      "status": "ok",
+      "items": 1100,
+      "diagnostics": [
+        {
+          "gender": "men",
+          "listingUrl": "https://www.ssense.com/en-us/men/shoes/sneakers",
+          "pages": 12,
+          "responses": 12,
+          "candidates": 1440,
+          "sneakers": 733,
+          "errors": []
+        },
+        {
+          "gender": "women",
+          "listingUrl": "https://www.ssense.com/en-us/women/shoes/sneakers",
+          "pages": 12,
+          "responses": 12,
+          "candidates": 1440,
+          "sneakers": 367,
+          "errors": []
+        }
+      ]
+    },
+    "media": {
+      "status": "ok",
+      "items": 424,
+      "matched": 128,
+      "held": 296,
+      "diagnostics": [
+        {
+          "source": "hypebeast",
+          "pages": 8,
+          "responses": 8,
+          "articles": 12,
+          "errors": []
+        },
+        {
+          "source": "hypebeast-kr",
+          "pages": 8,
+          "responses": 8,
+          "articles": 12,
+          "errors": []
+        },
+        {
+          "source": "sneaker-news",
+          "pages": 8,
+          "responses": 8,
+          "articles": 400,
+          "errors": []
+        }
+      ]
+    },
+    "instagram": {
+      "status": "requires_session",
+      "items": 0,
+      "matched": 0,
+      "held": 0,
+      "diagnostics": [
+        {
+          "error": "No Instagram session file/username available. Run: python -m instaloader --login YOUR_USERNAME --sessionfile <path>, then pass --session-file/--username or set IG_USERNAME + IG_SESSION_B64."
+        }
+      ]
+    },
+    "instagram-hashtag-volume": {
+      "status": "ok",
+      "items": 4,
+      "diagnostics": [
+        {
+          "hashtag": "sneakers",
+          "url": "https://www.instagram.com/explore/tags/sneakers/",
+          "errors": [],
+          "status": "ok"
+        },
+        {
+          "hashtag": "sneakerhead",
+          "url": "https://www.instagram.com/explore/tags/sneakerhead/",
+          "errors": [],
+          "status": "ok"
+        },
+        {
+          "hashtag": "신발추천",
+          "url": "https://www.instagram.com/explore/tags/신발추천/",
+          "errors": [],
+          "status": "ok"
+        },
+        {
+          "hashtag": "고프코어슈즈",
+          "url": "https://www.instagram.com/explore/tags/고프코어슈즈/",
+          "errors": [],
+          "status": "no-data"
+        },
+        {
+          "hashtag": "스니커즈추천",
+          "url": "https://www.instagram.com/explore/tags/스니커즈추천/",
+          "errors": [],
+          "status": "ok"
+        },
+        {
+          "hashtag": "신상스니커즈",
+          "url": "https://www.instagram.com/explore/tags/신상스니커즈/",
+          "errors": [],
+          "status": "no-data"
+        }
+      ]
+    }
+  },
+  "published": 1100,
+  "heldAsStale": 0
+}
