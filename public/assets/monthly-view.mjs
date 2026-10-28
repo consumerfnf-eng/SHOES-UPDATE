@@ -151,7 +151,7 @@ async function load() {
     const value = await res.json();
     if (value.schemaVersion !== 1 || !Array.isArray(value.products)) throw new Error('Invalid monthly snapshot');
     allProducts = value.products;
-    const baselineNote = value.isBaselineRun ? ' · 첫 수집(기준선) — 다음 달부터 신규 변동분만 게시' : '';
+    const baselineNote = value.isBaselineRun ? ' · 첫 수집(기준선) — 다음 확인부터 신규 변동분만 게시' : '';
     $('monthly-asof').textContent = `리테일 신상 스니커즈 · ${value.periodStart} 이후 확인 · ${value.asOf} 기준${baselineNote}`;
     const hashtags = Array.isArray(value.hashtagTrends) ? value.hashtagTrends : [];
     $('monthly-hashtags').innerHTML = hashtags.length
@@ -167,7 +167,7 @@ async function load() {
   } catch (e) {
     grid.innerHTML = '';
     $('monthly-empty').hidden = false;
-    $('monthly-empty-title').textContent = '월간 리테일 데이터를 불러오지 못했습니다';
+    $('monthly-empty-title').textContent = '리테일 데이터를 불러오지 못했습니다';
     $('monthly-asof').textContent = String(e.message || e);
   } finally {
     grid.removeAttribute('aria-busy');

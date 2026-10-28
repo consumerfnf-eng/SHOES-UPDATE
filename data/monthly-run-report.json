@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-28T16:36:57.166280+09:00",
+  "checkedAt": "2026-10-28T17:02:32.614988+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -47,9 +47,9 @@
     },
     "media": {
       "status": "ok",
-      "items": 763,
+      "items": 766,
       "matched": 221,
-      "held": 542,
+      "held": 545,
       "diagnostics": [
         {
           "source": "hypebeast",
@@ -62,7 +62,7 @@
           "source": "hypebeast-kr",
           "pages": 8,
           "responses": 8,
-          "articles": 14,
+          "articles": 16,
           "errors": []
         },
         {
@@ -76,7 +76,7 @@
           "source": "footwear-news",
           "pages": 7,
           "responses": 7,
-          "articles": 333,
+          "articles": 334,
           "errors": []
         },
         {

@@ -2,7 +2,16 @@ import sys, unittest
 from datetime import datetime
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'monthly'))
-from common import is_sneaker_title, is_kids_item, canonical_url, kst_three_months_ago, short_id
+from common import is_sneaker_title, is_kids_item, canonical_url, derive_colorway, kst_three_months_ago, short_id
+
+
+class DeriveColorwayTests(unittest.TestCase):
+    def test_strips_a_leading_color_word(self):
+        self.assertEqual(derive_colorway('Black Cloudtilt Moon Sneakers'), 'Black')
+        self.assertEqual(derive_colorway('White & Navy Shox BB4 Sneakers'), 'White & Navy')
+
+    def test_returns_empty_without_a_recognized_leading_color(self):
+        self.assertEqual(derive_colorway('Jil Sander X Speedcat Low-Top Sneakers'), '')
 
 
 class KidsExclusionTests(unittest.TestCase):

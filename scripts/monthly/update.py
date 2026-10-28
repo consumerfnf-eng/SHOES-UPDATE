@@ -1,12 +1,17 @@
-"""Monthly orchestrator: retail (SSENSE) + media (Hypebeast/Hypebeast KR/Sneaker
-News) + SNS (Instagram hashtags) collection, merged into a *separate* overlay
-catalog that the site adds to its existing display without ever touching
-public/data/catalog.json or the daily/weekly scripts.
+"""Weekly retail/media/SNS orchestrator: retail (SSENSE/Lyst/Farfetch/Mytheresa)
++ media (Hypebeast/Hypebeast KR/Sneaker News/Footwear News/Allure Korea) +
+e-commerce (Musinsa) + SNS (Instagram) collection, merged into a *separate*
+overlay catalog that the site adds to its existing display without ever
+touching public/data/catalog.json or the official daily/weekly scripts.
+Runs weekly (see .github/workflows/monthly-update.yml); the "monthly" file/
+variable names predate that change and are kept as-is rather than
+mass-renamed this late - the actual cadence is the workflow's cron schedule,
+not these names.
 
 Design rules carried over from this repo's existing pipeline philosophy:
   - Never fabricate: a source that is blocked/unavailable keeps 0 items and
-    is reported as such; the previous month's published products are kept
-    (not deleted) until no longer within the 3-month display window.
+    is reported as such; the previously published products are kept (not
+    deleted) until no longer within the 3-month display window.
   - Never auto-productize an SNS/media mention of a model that isn't already
     a verified SSENSE retail item or in data/monthly-model-aliases.json. An
     unmatched mention is held in data/monthly-unmatched-mentions.json for a
@@ -23,7 +28,7 @@ import subprocess
 import sys
 from datetime import timezone
 
-from common import atomic_write_json, kst_day, kst_now, kst_three_months_ago, read_json
+from common import atomic_write_json, derive_colorway, kst_day, kst_iso_week, kst_now, kst_three_months_ago, read_json
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 DATA = os.path.join(ROOT, 'data')
@@ -115,8 +120,8 @@ def main():
     today = kst_day(now)
     previous_source = read_json(os.path.join(DATA, 'monthly-catalog-source.json'), {'products': [], 'lastRunAt': None})
 
-    if args.only_if_stale and previous_source.get('lastRunMonth') == today[:7]:
-        print('This month already has a completed monthly collection; no duplicate run.')
+    if args.only_if_stale and previous_source.get('lastRunWeek') == kst_iso_week(now):
+        print('This week already has a completed retail/media/SNS collection; no duplicate run.')
         return
 
     os.makedirs(os.path.join(ROOT, 'logs'), exist_ok=True)
@@ -167,6 +172,18 @@ def main():
             known_urls.add(item['url'])
         manual_urls.add(item['url'])
     for item in ssense_items:
+        # Field names/shape aligned with the official catalog's products
+        # (category/productType/style/colorway) so a card renders the same
+        # way regardless of source - never backfilled with a guess: a field
+        # the source didn't actually provide (releaseDate, material, fit)
+        # stays absent rather than invented, unlike the official pipeline's
+        # fields of the same name, which are always brand-verified.
+        item.setdefault('category', 'sneaker')
+        item.setdefault('productType', 'sneaker')
+        if not item.get('style'):
+            item['style'] = item.get('sku', '')
+        if not item.get('colorway'):
+            item['colorway'] = derive_colorway(item.get('name', ''))
         prior = previous_by_url.get(item['url'])
         item['firstSeenAt'] = prior['firstSeenAt'] if prior else now.isoformat()
         item['newThisRun'] = (prior is None) and not is_baseline_run
@@ -221,7 +238,7 @@ def main():
 
     source_snapshot = {
         'lastRunAt': now.isoformat(),
-        'lastRunMonth': today[:7],
+        'lastRunWeek': kst_iso_week(now),
         'products': ssense_items,
     }
     atomic_write_json(os.path.join(DATA, 'monthly-catalog-source.json'), source_snapshot)
@@ -289,10 +306,10 @@ def main():
     atomic_write_json(os.path.join(DATA, 'monthly-run-report.json'), report)
 
     if is_baseline_run:
-        print(f"Monthly update: baseline run, 0 published ({len(ssense_items)} SSENSE items recorded as "
+        print(f"Weekly retail/media/SNS update: baseline run, 0 published ({len(ssense_items)} SSENSE items recorded as "
               f"the starting snapshot; next run will publish only genuinely new-since-then items).")
         return
-    print(f"Monthly update complete: {len(published)} published retail items; "
+    print(f"Weekly retail/media/SNS update complete: {len(published)} published retail items; "
           f"{report['sources']['media']['held']} media + {report['sources']['instagram']['held']} SNS mentions held unmatched; "
           f"SSENSE={ssense.get('status')} Lyst={lyst.get('status')} "
           f"Farfetch/Mytheresa={farfetch_mytheresa.get('status')} media={media.get('status')} "
