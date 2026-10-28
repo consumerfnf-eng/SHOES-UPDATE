@@ -5,9 +5,20 @@ import path from 'node:path';
 import os from 'node:os';
 import {prepareTrendImport,importTrendReport} from '../scripts/import-trend-report.mjs';
 import {variantGroupKey} from '../public/assets/catalog-view.mjs';
+import {exportTrendModels} from '../scripts/export-trend-catalog.mjs';
 const catalog=JSON.parse(await fs.readFile(new URL('../public/data/catalog.json',import.meta.url)));
+const photoReviews=JSON.parse(await fs.readFile(new URL('../data/product-presentation.json',import.meta.url)));
 const now=new Date('2026-10-08T12:00:00+09:00');
-const product=catalog.products.find(p=>p.brand==='ASICS');
+// Pick a product the live import pipeline itself currently considers eligible
+// (exportTrendModels is the exact gate prepareTrendImport checks against),
+// rather than assuming catalog.products' first ASICS entry still qualifies -
+// which brand/model ends up with a reviewed side/three-quarter photo shifts
+// as the daily/weekly pipeline runs, so a hardcoded pick drifts out of sync
+// with live data over time even though nothing about the import logic itself
+// is broken.
+const eligibleIds=new Set(exportTrendModels(catalog,now,photoReviews).flatMap(m=>m.variants.map(p=>p.id)));
+const product=catalog.products.find(p=>eligibleIds.has(p.id));
+if(!product)throw Error('No product in the live catalog is currently eligible for trend import - cannot build a fixture');
 const payload=()=>({schemaVersion:1,generatedAt:now.toISOString(),items:[{modelKey:variantGroupKey(product),representativeId:product.id,variants:[product],
  keywordRank:1,keywordRankingStatus:'provisional_missing_or_partial_sources',provisionalScore:80,totalTrendScore:null,productPopularityVerified:false,
  form:{Item_Name:product.name,Brand:product.brand,Price:product.priceLabel,Trend_Keyword:'트레일',Image_CDN_URL:product.presentation.image,Color_Hex:'#abcdef',Description:product.description},descriptionEvidence:{type:'official-catalog',sourceUrl:product.url}}]});
