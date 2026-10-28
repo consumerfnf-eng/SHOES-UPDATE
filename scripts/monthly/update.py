@@ -125,6 +125,11 @@ def main():
     # 'requires_key' otherwise) - Lyst blocks curl_cffi and both headless and
     # headful Playwright for an unattended run, confirmed by hand.
     lyst = run_collector('collect_lyst_scrapingbee.py', os.path.join(DATA, 'monthly-staging-lyst.json'))
+    # Farfetch/Mytheresa: generic schema.org JSON-LD only (never-observed real
+    # markup - see collect_generic_jsonld.py's module docstring). 'unavailable'
+    # with a NO_JSONLD_PRODUCTS_FOUND diagnostic means their pages don't use
+    # this pattern, not that the fetch itself failed.
+    farfetch_mytheresa = run_collector('collect_generic_jsonld.py', os.path.join(DATA, 'monthly-staging-farfetch-mytheresa.json'))
     media = run_collector('collect_media.py', os.path.join(DATA, 'monthly-staging-media.json'))
     musinsa = run_collector('collect_musinsa.py', os.path.join(DATA, 'monthly-staging-musinsa.json'))
     ig_args = []
@@ -147,7 +152,7 @@ def main():
 
     ssense_items = ssense.get('items', [])
     known_urls = {p['url'] for p in ssense_items}
-    for item in lyst.get('items', []):
+    for item in lyst.get('items', []) + farfetch_mytheresa.get('items', []):
         if item['url'] not in known_urls:
             ssense_items.append(item)
             known_urls.add(item['url'])
@@ -259,6 +264,10 @@ def main():
                                'diagnostics': ssense.get('diagnostics', [])},
             'retail-lyst': {'status': lyst.get('status'), 'items': len(lyst.get('items', [])),
                              'creditsUsed': lyst.get('scrapingBeeCreditsUsed', 0), 'diagnostics': lyst.get('diagnostics', [])},
+            'retail-farfetch-mytheresa': {'status': farfetch_mytheresa.get('status'),
+                                           'items': len(farfetch_mytheresa.get('items', [])),
+                                           'creditsUsed': farfetch_mytheresa.get('scrapingBeeCreditsUsed', 0),
+                                           'diagnostics': farfetch_mytheresa.get('diagnostics', [])},
             'media': {'status': media.get('status'), 'items': len(media.get('items', [])),
                       'matched': len(media.get('items', [])) - len(unmatched_media),
                       'held': len(unmatched_media), 'diagnostics': media.get('diagnostics', [])},
@@ -285,7 +294,8 @@ def main():
         return
     print(f"Monthly update complete: {len(published)} published retail items; "
           f"{report['sources']['media']['held']} media + {report['sources']['instagram']['held']} SNS mentions held unmatched; "
-          f"SSENSE={ssense.get('status')} Lyst={lyst.get('status')} media={media.get('status')} "
+          f"SSENSE={ssense.get('status')} Lyst={lyst.get('status')} "
+          f"Farfetch/Mytheresa={farfetch_mytheresa.get('status')} media={media.get('status')} "
           f"Musinsa={musinsa.get('status')} instagram={instagram.get('status')}")
 
 

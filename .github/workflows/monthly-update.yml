@@ -62,6 +62,7 @@ jobs:
           path: |
             data/monthly-staging-ssense.json
             data/monthly-staging-lyst.json
+            data/monthly-staging-farfetch-mytheresa.json
             data/monthly-staging-media.json
             data/monthly-staging-musinsa.json
             data/monthly-staging-instagram.json
