@@ -121,6 +121,10 @@ def main():
 
     os.makedirs(os.path.join(ROOT, 'logs'), exist_ok=True)
     ssense = run_collector('collect_ssense.py', os.path.join(DATA, 'monthly-staging-ssense.json'))
+    # ScrapingBee only runs when SCRAPINGBEE_API_KEY is set (status
+    # 'requires_key' otherwise) - Lyst blocks curl_cffi and both headless and
+    # headful Playwright for an unattended run, confirmed by hand.
+    lyst = run_collector('collect_lyst_scrapingbee.py', os.path.join(DATA, 'monthly-staging-lyst.json'))
     media = run_collector('collect_media.py', os.path.join(DATA, 'monthly-staging-media.json'))
     ig_args = []
     if args.ig_session_file:
@@ -141,11 +145,15 @@ def main():
     is_baseline_run = not previous_source.get('products')
 
     ssense_items = ssense.get('items', [])
-    # Durable hand-curated finds (e.g. Lyst items collected by browsing a real
-    # logged-in session, since Lyst blocks unattended automation) merge in on
-    # every run so they survive the next automated SSENSE-only collection.
-    manual_items = read_json(os.path.join(DATA, 'monthly-manual-items.json'), {'items': []}).get('items', [])
     known_urls = {p['url'] for p in ssense_items}
+    for item in lyst.get('items', []):
+        if item['url'] not in known_urls:
+            ssense_items.append(item)
+            known_urls.add(item['url'])
+    # Durable hand-curated finds (e.g. a Lyst item collected by browsing a real
+    # logged-in session, before ScrapingBee was wired in) merge in on every
+    # run too, so they survive the next automated collection.
+    manual_items = read_json(os.path.join(DATA, 'monthly-manual-items.json'), {'items': []}).get('items', [])
     manual_urls = set()
     for item in manual_items:
         if item['url'] not in known_urls:
@@ -235,8 +243,10 @@ def main():
     report = {
         'checkedAt': now.isoformat(),
         'sources': {
-            'retail-ssense': {'status': ssense.get('status'), 'items': len(ssense_items),
+            'retail-ssense': {'status': ssense.get('status'), 'items': len(ssense.get('items', [])),
                                'diagnostics': ssense.get('diagnostics', [])},
+            'retail-lyst': {'status': lyst.get('status'), 'items': len(lyst.get('items', [])),
+                             'creditsUsed': lyst.get('scrapingBeeCreditsUsed', 0), 'diagnostics': lyst.get('diagnostics', [])},
             'media': {'status': media.get('status'), 'items': len(media.get('items', [])),
                       'matched': len(media.get('items', [])) - len(unmatched_media),
                       'held': len(unmatched_media), 'diagnostics': media.get('diagnostics', [])},

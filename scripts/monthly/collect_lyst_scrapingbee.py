@@ -1,0 +1,119 @@
+"""Collect women's sneakers from Lyst's "Newest" sort via ScrapingBee.
+
+Lyst blocks curl_cffi (403) and both headless and headful Playwright (403,
+confirmed by hand - even a fresh headful profile got blocked on a retry a
+few minutes after an earlier successful run). Only a real, long-lived,
+already-logged-in Chrome profile loaded it reliably; a fresh browser
+profile launched for automation does not. So this uses the user's own paid
+ScrapingBee key as the automated path instead.
+
+The parsing targets are real selectors read from Lyst's own rendered page
+(scripts/monthly/collect-lyst.mjs has the same patterns, confirmed against
+the live site by hand): each card is `data-testid="product-card"`, holding
+an `<img alt="Brand Name - Color" src="...">`, a canonical product link
+`href="/shoes/<slug>/..."`, a `data-testid="product-price"` block, and the
+retailer name inside the lead link's aria-label ("View X at RETAILER").
+Like collect_ssense.py, Lyst's "Newest" sort carries no visible per-item
+date, so "new" here is purely update.py's month-over-month delta - this
+collector only reports what it currently sees.
+"""
+import argparse
+import re
+import sys
+import time
+
+from common import BROWSER_HEADERS, atomic_write_json, canonical_url, is_kids_item, is_sneaker_title, kst_now
+from scrapingbee_client import ScrapingBeeClient
+
+BASE = 'https://www.lyst.com/shop/sneakers/?view=newest'
+MAX_PAGES = 6
+
+CARD_SPLIT = re.compile(r'data-testid="product-card"')
+IMG_RE = re.compile(r'<img[^>]+src="([^"]+)"[^>]*alt="([^"]*)"')
+PRICE_RE = re.compile(r'data-testid="product-price"[^>]*>.*?\$([\d,.]+)', re.S)
+URL_RE = re.compile(r'href="(/shoes/[^"?]+)')
+RETAILER_RE = re.compile(r'aria-label="View [^"]+ at ([^"]+)"')
+
+
+def valid_lyst_page(html):
+    return 'data-testid="product-card"' in html
+
+
+def parse_card(card_html):
+    img = IMG_RE.search(card_html)
+    url = URL_RE.search(card_html)
+    if not img or not url:
+        return None
+    image, alt = img.groups()
+    price = PRICE_RE.search(card_html)
+    retailer = RETAILER_RE.search(card_html)
+    dash = alt.rfind(' - ')
+    name_part = alt[:dash] if dash > 0 else alt
+    words = name_part.strip().split()
+    brand = ' '.join(words[:min(3, max(1, len(words) - 2))]) if words else name_part
+    return {
+        'brand': brand or name_part,
+        'name': name_part,
+        'image': image,
+        'url': 'https://www.lyst.com' + url.group(1).rstrip('/') + '/',
+        'priceLabel': f'${price.group(1)}' if price else '',
+        'retailer': retailer.group(1) if retailer else '',
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--out', required=True)
+    args = parser.parse_args()
+
+    client = ScrapingBeeClient()
+    checked_at = kst_now().isoformat()
+    items, diagnostics, seen = [], [], set()
+
+    if not client.has_key:
+        atomic_write_json(args.out, {'status': 'requires_key', 'checkedAt': checked_at, 'items': [],
+                                      'diagnostics': [{'error': 'SCRAPINGBEE_API_KEY not set'}]})
+        print('Lyst (ScrapingBee) collection: requires_key', file=sys.stderr)
+        return
+
+    for page in range(1, MAX_PAGES + 1):
+        page_url = f'{BASE}&page={page}'
+        status = {'page': page, 'url': page_url, 'cards': 0, 'errors': []}
+        try:
+            html = client.fetch(page_url, validate=valid_lyst_page)
+        except RuntimeError as e:
+            status['errors'].append({'error': str(e)})
+            diagnostics.append(status)
+            if 'QUOTA' in str(e) or 'NO_KEY' in str(e):
+                break
+            continue
+        cards = CARD_SPLIT.split(html)[1:]
+        new_this_page = 0
+        for raw in cards:
+            parsed = parse_card(raw[:4000])
+            if not parsed or parsed['url'] in seen:
+                continue
+            seen.add(parsed['url'])
+            new_this_page += 1
+            if not is_sneaker_title(parsed['name']) or is_kids_item(parsed['name'], parsed['url']):
+                continue
+            items.append({**parsed, 'gender': 'women', 'source': 'retail-lyst',
+                          'retailerEvidence': {'verified': True, 'retailer': parsed['retailer'] or 'Lyst',
+                                                'productUrl': parsed['url'], 'listingUrl': page_url,
+                                                'verifiedAt': checked_at, 'collectionMethod': 'scrapingbee'}})
+        status['cards'] = new_this_page
+        diagnostics.append(status)
+        if new_this_page == 0:
+            break
+        time.sleep(1.5)
+
+    result = {'status': 'ok' if items else ('partial' if diagnostics else 'unavailable'),
+              'checkedAt': checked_at, 'items': items, 'diagnostics': diagnostics,
+              'scrapingBeeCreditsUsed': client.credits_used}
+    atomic_write_json(args.out, result)
+    print(f"Lyst (ScrapingBee) collection: {result['status']} - {len(items)} items, "
+          f"{client.credits_used} credits used", file=sys.stderr)
+
+
+if __name__ == '__main__':
+    main()

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-28T15:26:47.137670+09:00",
+  "checkedAt": "2026-10-28T15:50:22.297404+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -22,6 +22,16 @@
           "candidates": 1440,
           "sneakers": 367,
           "errors": []
+        }
+      ]
+    },
+    "retail-lyst": {
+      "status": "requires_key",
+      "items": 0,
+      "creditsUsed": 0,
+      "diagnostics": [
+        {
+          "error": "SCRAPINGBEE_API_KEY not set"
         }
       ]
     },

@@ -37,7 +37,7 @@ function parseCard(cardHtml) {
     name: namePart,
     colorway: color,
     image,
-    url: 'https://www.lyst.com' + urlMatch[1] + '/',
+    url: 'https://www.lyst.com' + urlMatch[1].replace(/\/+$/, '') + '/',
     priceLabel: priceMatch ? `$${priceMatch[1]}` : '',
     retailer: retailerMatch ? retailerMatch[1] : '',
   };
