@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-28T19:05:29.835802+09:00",
+  "checkedAt": "2026-10-28T19:13:05.437965+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -678,6 +678,7 @@
   },
   "isBaselineRun": false,
   "baselineSources": [],
+  "carriedForward": {},
   "publishedRetail": 5827,
   "publishedNewsletter": 706,
   "retailCollected": 18869,

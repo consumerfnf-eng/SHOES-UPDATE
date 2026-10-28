@@ -253,6 +253,31 @@ def normalize_retail_item(item, basis, previous, now, is_baseline):
     return item
 
 
+def carry_forward(previous_payload, published, collected_by_source, cutoff_day):
+    """Keep a blocked source's last published items instead of deleting them.
+
+    A retailer that 403s the runner for one run must not empty its section of
+    the site. When a source collected nothing this run but had published items
+    last run, those items are carried over with their original evidence and a
+    `carriedForward` date, still subject to the same 3-month window. A source
+    that collected something is fully replaced by what it collected - this is
+    only a floor under a failed fetch, never a way for stale items to linger
+    beside fresh ones.
+    """
+    kept, carried_sources = [], {}
+    published_sources = {item.get('source') for item in published}
+    for item in (previous_payload.get('retail') or []) + (previous_payload.get('newsletter') or []):
+        source = item.get('source')
+        if not source or collected_by_source.get(source) or source in published_sources:
+            continue
+        listed = (item.get('listedAt') or item.get('publishedAt') or '')[:10]
+        if listed and listed < cutoff_day:
+            continue
+        kept.append({**item, 'carriedForward': True})
+        carried_sources[source] = carried_sources.get(source, 0) + 1
+    return kept, carried_sources
+
+
 def retail_is_published(item, cutoff_day, cutoff_iso):
     """A delta-basis item publishes for 3 months from the run that first saw
     it appear; a dated item publishes while its own listing date is inside
@@ -306,6 +331,7 @@ def main():
                                    reuse=args.use_staging)
 
     model_aliases = read_json(os.path.join(DATA, 'monthly-model-aliases.json'), {})
+    previous_payload = read_json(os.path.join(PUBLIC_DATA, 'monthly-catalog.json'), {})
     previous_products = previous_source.get('products', [])
     previous_by_url = {p['url']: p for p in previous_products if p.get('url')}
     # Baseline is decided per source, not per run. A newly added collector
@@ -370,6 +396,16 @@ def main():
     published_newsletter = [n for n in newsletter_items
                             if not n.get('publishedAt') or n['publishedAt'][:10] >= cutoff_day]
 
+    collected_by_source = {}
+    for item in retail_items + newsletter_items:
+        source = item.get('source')
+        if source:
+            collected_by_source[source] = collected_by_source.get(source, 0) + 1
+    carried, carried_sources = carry_forward(
+        previous_payload, published_retail + published_newsletter, collected_by_source, cutoff_day)
+    published_retail += [c for c in carried if str(c.get('source', '')).startswith('retail-')]
+    published_newsletter += [c for c in carried if str(c.get('source', '')).startswith('newsletter-')]
+
     atomic_write_json(os.path.join(DATA, 'monthly-catalog-source.json'), {
         'lastRunAt': now.isoformat(),
         'lastRunWeek': kst_iso_week(now),
@@ -401,7 +437,9 @@ def main():
         'periodStart': cutoff_day,
         'isBaselineRun': run_is_baseline,
         'baselineSources': sorted(baseline_sources),
-        'sources': source_directory(published_retail + published_newsletter),
+        'sources': {**{k: v for k, v in (previous_payload.get('sources') or {}).items()
+                       if k in carried_sources},
+                    **source_directory(published_retail + published_newsletter)},
         'retail': [slim_for_publish(p) for p in published_retail],
         'newsletter': [slim_for_publish(n) for n in published_newsletter],
         # Hashtag-level volume collected without any Instagram login. A coarser
@@ -434,6 +472,7 @@ def main():
         },
         'isBaselineRun': run_is_baseline,
         'baselineSources': sorted(baseline_sources),
+        'carriedForward': carried_sources,
         'publishedRetail': len(published_retail),
         'publishedNewsletter': len(published_newsletter),
         'retailCollected': len(retail_items),
@@ -443,6 +482,9 @@ def main():
 
     baseline_note = (f" (baseline for {', '.join(sorted(baseline_sources))}: they publish from the next run)"
                      if baseline_sources else '')
+    if carried_sources:
+        baseline_note += (' (kept last run\'s items for blocked sources: '
+                          + ', '.join(f'{k} x{v}' for k, v in sorted(carried_sources.items())) + ')')
     print(f'Weekly retail/newsletter update complete: {len(published_retail)} retail items + '
           f'{len(published_newsletter)} newsletter items published from {len(retail_items)} collected'
           f'{baseline_note}; '
