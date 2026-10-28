@@ -12,10 +12,29 @@ import time
 from curl_cffi import requests as curl_requests
 
 
+DEFAULT_RUN_BUDGET = 125
+
+
+def env_budget(default=DEFAULT_RUN_BUDGET):
+    """Per-collector credit ceiling, overridable with SCRAPINGBEE_RUN_BUDGET.
+
+    Credits are the user's money, so the ceiling is explicit and per-run. The
+    125 default is only enough for four premium page loads, which is why the
+    multi-retailer collector asks for more: with five listings to try, a
+    shared 125 meant the first one consumed the budget and the other four
+    never got a single attempt.
+    """
+    raw = os.environ.get('SCRAPINGBEE_RUN_BUDGET', '')
+    try:
+        return max(0, int(raw)) if raw.strip() else default
+    except ValueError:
+        return default
+
+
 class ScrapingBeeClient:
-    def __init__(self, api_key=None, max_credits_per_run=125, sleep=time.sleep):
+    def __init__(self, api_key=None, max_credits_per_run=None, sleep=time.sleep):
         self.api_key = api_key if api_key is not None else os.environ.get('SCRAPINGBEE_API_KEY', '')
-        self.max_credits_per_run = max_credits_per_run
+        self.max_credits_per_run = DEFAULT_RUN_BUDGET if max_credits_per_run is None else max_credits_per_run
         self.sleep = sleep
         self.credits_used = 0
         self.attempted = 0

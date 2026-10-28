@@ -24,7 +24,7 @@ import time
 
 from common import atomic_write_json, canonical_url, derive_colorway, kst_now, short_id
 from footwear_scope import classify
-from scrapingbee_client import ScrapingBeeClient
+from scrapingbee_client import ScrapingBeeClient, env_budget
 
 LDJSON_RE = re.compile(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', re.S)
 
@@ -174,7 +174,10 @@ def main():
     parser.add_argument('--out', required=True)
     args = parser.parse_args()
 
-    client = ScrapingBeeClient()
+    # Five listings to try, each needing a premium render: the shared 125
+    # default let the first one spend the whole budget and the other four
+    # reported BUDGET_WOULD_EXCEED without a single attempt (seen in CI).
+    client = ScrapingBeeClient(max_credits_per_run=env_budget(400))
     checked_at = kst_now().isoformat()
     diagnostics, items = [], []
 

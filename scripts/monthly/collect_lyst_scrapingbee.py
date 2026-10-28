@@ -24,7 +24,7 @@ import time
 
 from common import atomic_write_json, canonical_url, derive_colorway, kst_now, short_id
 from footwear_scope import classify
-from scrapingbee_client import ScrapingBeeClient
+from scrapingbee_client import ScrapingBeeClient, env_budget
 
 # Lyst's own "Newest" view. Women's flats are walked too, the same way the
 # other retailers are, for ballet/Mary Jane silhouettes.
@@ -72,7 +72,7 @@ def main():
     parser.add_argument('--out', required=True)
     args = parser.parse_args()
 
-    client = ScrapingBeeClient()
+    client = ScrapingBeeClient(max_credits_per_run=env_budget(200))
     checked_at = kst_now().isoformat()
     items, diagnostics, seen = [], [], set()
 

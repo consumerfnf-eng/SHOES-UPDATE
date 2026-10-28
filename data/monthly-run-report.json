@@ -1,62 +1,55 @@
 {
-  "checkedAt": "2026-10-28T19:15:35.425276+09:00",
+  "checkedAt": "2026-10-28T19:44:37.680385+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
       "basis": "new-sort",
-      "items": 1512,
-      "creditsUsed": 125,
+      "items": 2214,
+      "creditsUsed": 0,
       "diagnostics": [
         {
           "gender": "men",
           "listingUrl": "https://www.ssense.com/en-us/men/sneakers?sort=latest-desc",
-          "pages": 9,
-          "responses": 9,
-          "candidates": 891,
-          "kept": 885,
+          "pages": 16,
+          "responses": 16,
+          "candidates": 1407,
+          "kept": 1341,
           "dropped": {
-            "excluded-silhouette": 6
+            "excluded-silhouette": 66
           },
-          "errors": [
-            {
-              "url": "https://www.ssense.com/en-us/men/sneakers?sort=latest-desc&page=10",
-              "error": "http-403; scrapingbee: SCRAPINGBEE_STILL_INVALID"
-            }
-          ]
+          "errors": []
         },
         {
           "gender": "women",
           "listingUrl": "https://www.ssense.com/en-us/women/sneakers?sort=latest-desc",
-          "pages": 6,
-          "responses": 6,
-          "candidates": 575,
-          "kept": 575,
-          "dropped": {},
-          "errors": [
-            {
-              "url": "https://www.ssense.com/en-us/women/sneakers?sort=latest-desc&page=7",
-              "error": "http-403; scrapingbee: SCRAPINGBEE_RUN_BUDGET_WOULD_EXCEED_PREMIUM"
-            }
-          ]
+          "pages": 11,
+          "responses": 11,
+          "candidates": 914,
+          "kept": 827,
+          "dropped": {
+            "excluded-silhouette": 79,
+            "sandal-or-clog": 8
+          },
+          "errors": []
         },
         {
           "gender": "women",
           "listingUrl": "https://www.ssense.com/en-us/women/flats?sort=latest-desc",
-          "pages": 8,
-          "responses": 8,
-          "candidates": 653,
-          "kept": 66,
+          "pages": 9,
+          "responses": 9,
+          "candidates": 692,
+          "kept": 73,
           "dropped": {
-            "excluded-silhouette": 343,
-            "no-sneaker-evidence": 233,
-            "sandal-or-clog": 11
+            "excluded-silhouette": 361,
+            "no-sneaker-evidence": 245,
+            "sandal-or-clog": 13
           },
-          "errors": [
-            {
-              "url": "https://www.ssense.com/en-us/women/flats?sort=latest-desc&page=9",
-              "error": "http-403; scrapingbee: SCRAPINGBEE_RUN_BUDGET_EXHAUSTED"
-            }
-          ]
+          "errors": []
+        },
+        {
+          "step": "product-page enrichment",
+          "detailsRequested": 500,
+          "detailsFilled": 500
         }
       ]
     },
@@ -64,7 +57,7 @@
       "status": "ok",
       "basis": "new-sort",
       "items": 1365,
-      "creditsUsed": 24,
+      "creditsUsed": 0,
       "diagnostics": [
         {
           "category": "103004",
@@ -137,64 +130,65 @@
       ]
     },
     "retail-29cm": {
-      "status": "unavailable",
+      "status": "ok",
       "basis": "dated",
-      "items": 0,
+      "items": 2467,
       "creditsUsed": 0,
       "diagnostics": [
         {
           "category": "270100100/270106100",
           "label": "여성슈즈 · 스니커즈",
-          "pages": 0,
-          "candidates": 0,
-          "kept": 0,
-          "tooOld": 0,
-          "dropped": {},
-          "errors": [
-            {
-              "page": 1,
-              "url": "https://search-api.29cm.co.kr/api/v4/products/category?categoryLargeCode=270100100&categoryMediumCode=270106100&page=1&size=48",
-              "error": "http-403"
-            }
-          ],
-          "totalListed": null,
+          "pages": 216,
+          "candidates": 10323,
+          "kept": 2107,
+          "tooOld": 8173,
+          "dropped": {
+            "sandal-or-clog": 11,
+            "excluded-silhouette": 30,
+            "kids": 2
+          },
+          "errors": [],
+          "totalListed": 10323,
           "pageCapHit": false
         },
         {
           "category": "274100100/274101100",
           "label": "남성슈즈 · 스니커즈",
-          "pages": 0,
-          "candidates": 0,
-          "kept": 0,
-          "tooOld": 0,
-          "dropped": {},
-          "errors": [
-            {
-              "page": 1,
-              "url": "https://search-api.29cm.co.kr/api/v4/products/category?categoryLargeCode=274100100&categoryMediumCode=274101100&page=1&size=48",
-              "error": "http-403"
-            }
-          ],
-          "totalListed": null,
+          "pages": 170,
+          "candidates": 8147,
+          "kept": 1394,
+          "tooOld": 6732,
+          "dropped": {
+            "sandal-or-clog": 6,
+            "kids": 1,
+            "excluded-silhouette": 14
+          },
+          "errors": [],
+          "totalListed": 8147,
           "pageCapHit": false
         },
         {
           "category": "270100100/270121100",
           "label": "여성슈즈 · 플랫슈즈",
-          "pages": 0,
-          "candidates": 0,
-          "kept": 0,
-          "tooOld": 0,
-          "dropped": {},
-          "errors": [
-            {
-              "page": 1,
-              "url": "https://search-api.29cm.co.kr/api/v4/products/category?categoryLargeCode=270100100&categoryMediumCode=270121100&page=1&size=48",
-              "error": "http-403"
-            }
-          ],
-          "totalListed": null,
+          "pages": 111,
+          "candidates": 5300,
+          "kept": 17,
+          "tooOld": 4588,
+          "dropped": {
+            "no-sneaker-evidence": 611,
+            "excluded-silhouette": 80,
+            "kids": 4
+          },
+          "errors": [],
+          "totalListed": 5300,
           "pageCapHit": false
+        },
+        {
+          "step": "product-detail enrichment",
+          "detailsRequested": 1500,
+          "detailsFilled": 1453,
+          "detailsPlaceholder": 47,
+          "detailsFailed": {}
         }
       ]
     },
@@ -272,142 +266,32 @@
       ]
     },
     "retail-lyst": {
-      "status": "partial",
+      "status": "requires_key",
       "basis": "delta",
       "items": 0,
-      "creditsUsed": 52,
+      "creditsUsed": 0,
       "diagnostics": [
         {
-          "page": 1,
-          "url": "https://www.lyst.com/shop/sneakers/?view=newest&page=1",
-          "cards": 0,
-          "kept": 0,
-          "dropped": {},
-          "errors": [
-            {
-              "error": "SCRAPINGBEE_STILL_INVALID"
-            }
-          ]
-        },
-        {
-          "page": 1,
-          "url": "https://www.lyst.com/shop/womens-flat-shoes/?view=newest&page=1",
-          "cards": 0,
-          "kept": 0,
-          "dropped": {},
-          "errors": [
-            {
-              "error": "SCRAPINGBEE_STILL_INVALID"
-            }
-          ]
+          "error": "SCRAPINGBEE_API_KEY not set"
         }
       ]
     },
     "retail-farfetch-mytheresa-netaporter": {
-      "status": "unavailable",
+      "status": "requires_key",
       "basis": "delta",
       "items": 0,
-      "creditsUsed": 108,
+      "creditsUsed": 0,
       "diagnostics": [
         {
-          "source": "retail-farfetch",
-          "gender": "women",
-          "listingUrl": "https://www.farfetch.com/shopping/women/shoes-trainers-1/items.aspx?sortby=3",
-          "pages": 0,
-          "responses": 0,
-          "products": 0,
-          "dropped": {},
-          "markers": [],
-          "errors": [
-            {
-              "url": "https://www.farfetch.com/shopping/women/shoes-trainers-1/items.aspx?sortby=3",
-              "error": "SCRAPINGBEE_PREMIUM_FETCH_FAILED"
-            },
-            {
-              "url": "https://www.farfetch.com/shopping/women/shoes-trainers-1/items.aspx?sortby=3&page=2",
-              "error": "SCRAPINGBEE_PREMIUM_FETCH_FAILED"
-            },
-            {
-              "url": "https://www.farfetch.com/shopping/women/shoes-trainers-1/items.aspx?sortby=3&page=3",
-              "error": "SCRAPINGBEE_PREMIUM_FETCH_FAILED"
-            },
-            {
-              "url": "https://www.farfetch.com/shopping/women/shoes-trainers-1/items.aspx?sortby=3&page=4",
-              "error": "SCRAPINGBEE_PREMIUM_FETCH_FAILED"
-            }
-          ]
-        },
-        {
-          "source": "retail-farfetch",
-          "gender": "men",
-          "listingUrl": "https://www.farfetch.com/shopping/men/shoes-trainers-1/items.aspx?sortby=3",
-          "pages": 0,
-          "responses": 0,
-          "products": 0,
-          "dropped": {},
-          "markers": [],
-          "errors": [
-            {
-              "url": "https://www.farfetch.com/shopping/men/shoes-trainers-1/items.aspx?sortby=3",
-              "error": "SCRAPINGBEE_RUN_BUDGET_WOULD_EXCEED_PREMIUM"
-            }
-          ]
-        },
-        {
-          "source": "retail-mytheresa",
-          "gender": "women",
-          "listingUrl": "https://www.mytheresa.com/int/en/women/shoes/sneakers?sortBy=new_items",
-          "pages": 0,
-          "responses": 0,
-          "products": 0,
-          "dropped": {},
-          "markers": [],
-          "errors": [
-            {
-              "url": "https://www.mytheresa.com/int/en/women/shoes/sneakers?sortBy=new_items",
-              "error": "SCRAPINGBEE_RUN_BUDGET_WOULD_EXCEED_PREMIUM"
-            }
-          ]
-        },
-        {
-          "source": "retail-mytheresa",
-          "gender": "men",
-          "listingUrl": "https://www.mytheresa.com/int/en/men/shoes/sneakers?sortBy=new_items",
-          "pages": 0,
-          "responses": 0,
-          "products": 0,
-          "dropped": {},
-          "markers": [],
-          "errors": [
-            {
-              "url": "https://www.mytheresa.com/int/en/men/shoes/sneakers?sortBy=new_items",
-              "error": "SCRAPINGBEE_RUN_BUDGET_WOULD_EXCEED_PREMIUM"
-            }
-          ]
-        },
-        {
-          "source": "retail-netaporter",
-          "gender": "women",
-          "listingUrl": "https://www.net-a-porter.com/en-us/shop/clothing/shoes/sneakers?sortBy=newIn",
-          "pages": 0,
-          "responses": 0,
-          "products": 0,
-          "dropped": {},
-          "markers": [],
-          "errors": [
-            {
-              "url": "https://www.net-a-porter.com/en-us/shop/clothing/shoes/sneakers?sortBy=newIn",
-              "error": "SCRAPINGBEE_RUN_BUDGET_WOULD_EXCEED_PREMIUM"
-            }
-          ]
+          "error": "SCRAPINGBEE_API_KEY not set"
         }
       ]
     },
     "newsletter": {
       "status": "ok",
-      "items": 517,
-      "matchedToRetail": 273,
-      "unidentifiedArticles": 33,
+      "items": 706,
+      "matchedToRetail": 356,
+      "unidentifiedArticles": 59,
       "diagnostics": [
         {
           "source": "sneaker-news",
@@ -440,34 +324,264 @@
         {
           "source": "hypebeast",
           "label": "Hypebeast",
-          "pages": 0,
-          "responses": 0,
-          "articles": 0,
-          "items": 0,
-          "dropped": {},
+          "pages": 10,
+          "responses": 10,
+          "articles": 120,
+          "items": 94,
+          "dropped": {
+            "brand-unidentified": 13,
+            "excluded-silhouette": 13
+          },
           "errors": [
             {
-              "url": "https://hypebeast.com/footwear",
-              "error": "http-202"
+              "url": "https://hypebeast.com/2026/10/corteiz-nike-shox-r419-collaboration-silver-colorway-first-look-reveal",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/nike-kobe-3-low-protro-mamba-eterno-io6260-800-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/nike-air-force-1-low-lace-metallic-gold-ix7038-121-official-images",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/ugg-fall-2026-naz-hassan-hypebeast-campaign-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/nike-air-force-1-low-07-premium-iron-man-ix8058-687-official-look-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/victor-kan-third-of-june-interview",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/merrell-harris-tweed-collection-collaboration-release-relay-lace-se-j00005589-j00005590-moab-2-slide-se-j00005588-jungle-moc-j00005586-cham-redux-se-j00005585-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/dr-martens-sophia-wilson-bouncing-soles-event-recap",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/tyrrell-winston-adidas-spiritain-2000-kj7676-first-look-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/new-balance-992-made-in-usa-medusa-green-u992bb-official-look-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/nike-kobe-7-protro-invisibility-cloak-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/jjjjound-new-balance-990v3-suede-u9904d8-official-look-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/carhart-wip-nike-goadome-low-release-date-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/timberland-jacquemus-3-eye-classic-lug-authentic-boat-shoe-navy-dark-brown-croc-collaboration-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/vans-sza-collaboration-collection-drop-1-campaign-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/adidas-samba-camo-cow-print-kj7500-official-images",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/converse-all-star-westernstitch-su-hi-black-tan-31319430-31319431-japan-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/otw-by-vans-satoshi-nakamoto-era-95-gems-collaboration-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/nike-air-force-1-what-the-la-ct1117-100-2026-re-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/nike-24-7-recovery-boot-ir0450-200-dark-driftwood-official-look-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/converse-tyler-the-creator-golf-le-fleur-pro-leather-molten-lava-bison-white-black-colorways-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/kiko-kostadinov-crocs-vaals-black-kelp-yellow-sand-footwear-fw26-collaboration-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/streamer-rakai-under-armour-arc-96-25xx-official-look-6023886-391-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/thibo-denis-birkenstock-1774-uerzell-sneaker-mule-three-new-colorways-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/joe-freshgoods-new-balance-990v7-closer-look-teased",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/jw-anderson-ugg-collaboration-collection-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/prada-gives-the-americas-cup-sneaker-an-autumnal-update",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/jaylen-brown-7uice-special-edition-bape-sta-collaboration-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/air-jordan-12-fireside-ct8013-105-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/air-jordan-1-low-og-dia-de-muertos-iz4686-216-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/asics-utility-collection-gel-ventx-gtx-gel-nyc-2-0-gtx-gel-kayano-20-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/loewe-on-cloudsolo-hiker-cloudtilt-cosmic-collaboration-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/air-jordan-3-fireside-ck9246-200-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/chainsaw-man-crocs-classic-clog-collection-chainsaw-man-213925-90h-power-213926-90h-pochita-213928-90h-characters-213927-90h-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/jjjjound-new-balance-990v3-tan-suede-official-release-date-revealed",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/nike-air-max-goadome-low-yellow-croc-vivid-sulfur-black-iv4517-700-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/nanga-subu-auror-tex-winter-sandal-na2443-3e105-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/wasted-paris-clarks-wallabee-lite-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/shai-gilgeous-alexander-personally-hand-drew-nike-shai-002-revealed",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/loewe-on-cloudsolo-hiker-model-first-look-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/bstn-salomon-xt-6-iridescent-black-almond-milk-l45567700-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/thierry-henry-closer-look-on-debut-football-boot-teaser",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/salomon-xt-6-gore-tex-tradewinds-stormy-weather-bog-l49214800-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/wildside-yohji-yamamoto-moonstar-gym-classic-cotton-canvas-sneakers-collaboration-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/victory-lap-radio-nike-air-force-1-low-pine-green-ja7805-302-first-look-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/deluxe-suicoke-moccasin-collaboration-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/birkenstock-amsterdam-wrapped-santa-clarita-shearling-upper-s005512-s005522-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/air-jordan-12-obsidian-ct8013-401-first-look-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/dennys-mache-return-real-syrup-filled-sticky-kicks-2-0-sneakers-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/junya-watanabe-man-new-balance-p400-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.com/2026/10/nike-nigo-j-hope-air-force-1-release-info",
+              "error": "article: http-202"
             }
           ],
-          "enriched": 0
+          "enriched": 120
         },
         {
           "source": "hypebeast-kr",
           "label": "Hypebeast Korea",
-          "pages": 0,
-          "responses": 0,
-          "articles": 0,
-          "items": 0,
-          "dropped": {},
+          "pages": 10,
+          "responses": 10,
+          "articles": 120,
+          "items": 95,
+          "dropped": {
+            "excluded-silhouette": 12,
+            "brand-unidentified": 13
+          },
           "errors": [
             {
-              "url": "https://hypebeast.kr/footwear",
-              "error": "http-202"
+              "url": "https://hypebeast.kr/2026/10/adidas-originals-hellstar-megaride-s2-collection-collaboration-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.kr/2026/10/kith-giorgio-armani-asics-gel-mai-0-1-dream-of-the-dune-tri-collab-first-look-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.kr/2026/10/jah-jah-adidas-f50-tunit-green-core-black-yellow-la3614-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.kr/2026/10/brain-dead-adidas-bowling-cheetah-snakeskin-release-info",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.kr/2026/10/miu-miu-new-balance-rc150-spring-summer-2027-paris-fashion-week-runway-collaboration-closer-look",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.kr/2026/10/nike-air-rift-black-desert-ochre-io4884-002-official-images",
+              "error": "article: http-202"
+            },
+            {
+              "url": "https://hypebeast.kr/2026/10/nike-dunk-low-jade-stone-light-khaki-gum-light-brown-old-royal-im4414-301-official-images",
+              "error": "article: http-202"
             }
           ],
-          "enriched": 0
+          "enriched": 120
         },
         {
           "source": "highsnobiety",
@@ -556,12 +670,8 @@
         {
           "hashtag": "고프코어슈즈",
           "url": "https://www.instagram.com/explore/tags/고프코어슈즈/",
-          "errors": [
-            {
-              "error": "http-429"
-            }
-          ],
-          "status": "error"
+          "errors": [],
+          "status": "no-data"
         },
         {
           "hashtag": "스니커즈추천",
@@ -572,25 +682,17 @@
         {
           "hashtag": "신상스니커즈",
           "url": "https://www.instagram.com/explore/tags/신상스니커즈/",
-          "errors": [
-            {
-              "error": "http-429"
-            }
-          ],
-          "status": "error"
+          "errors": [],
+          "status": "no-data"
         }
       ]
     }
   },
   "isBaselineRun": false,
   "baselineSources": [],
-  "carriedForward": {
-    "retail-29cm": 2416,
-    "newsletter-hypebeast": 94,
-    "newsletter-hypebeast-kr": 95
-  },
-  "publishedRetail": 5294,
+  "carriedForward": {},
+  "publishedRetail": 6047,
   "publishedNewsletter": 706,
-  "retailCollected": 15920,
-  "heldOutsideWindow": 10626
+  "retailCollected": 19089,
+  "heldOutsideWindow": 13042
 }
