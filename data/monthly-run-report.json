@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-10-28T17:02:32.614988+09:00",
+  "checkedAt": "2026-10-28T17:17:21.593597+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
-      "items": 1101,
+      "items": 1151,
       "diagnostics": [
         {
           "gender": "men",
@@ -47,30 +47,35 @@
     },
     "media": {
       "status": "ok",
-      "items": 766,
-      "matched": 221,
-      "held": 545,
+      "items": 562,
+      "matched": 151,
+      "held": 411,
       "diagnostics": [
         {
           "source": "hypebeast",
           "pages": 8,
           "responses": 8,
-          "articles": 16,
+          "articles": 14,
           "errors": []
         },
         {
           "source": "hypebeast-kr",
           "pages": 8,
           "responses": 8,
-          "articles": 16,
+          "articles": 14,
           "errors": []
         },
         {
           "source": "sneaker-news",
-          "pages": 8,
-          "responses": 8,
-          "articles": 400,
-          "errors": []
+          "pages": 4,
+          "responses": 4,
+          "articles": 200,
+          "errors": [
+            {
+              "url": "https://sneakernews.com/wp-json/wp/v2/posts?per_page=50&page=5&after=2026-07-28T08:18:25",
+              "error": "Failed to perform, curl: (28) Operation timed out after 25006 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+            }
+          ]
         },
         {
           "source": "footwear-news",
@@ -155,7 +160,7 @@
     }
   },
   "isBaselineRun": false,
-  "published": 1,
+  "published": 51,
   "heldAsStale": 1100,
   "heldAsBaseline": 0
 }

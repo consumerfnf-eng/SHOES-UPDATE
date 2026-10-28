@@ -157,7 +157,11 @@ def main():
 
     ssense_items = ssense.get('items', [])
     known_urls = {p['url'] for p in ssense_items}
-    for item in lyst.get('items', []) + farfetch_mytheresa.get('items', []):
+    # Musinsa/W Concept items become real standalone cards (the 이커머스 tab),
+    # not just a ranking signal attached to other items - they already carry
+    # real brand/name/url/image/price from their own listing, same as any
+    # other retail source here.
+    for item in lyst.get('items', []) + farfetch_mytheresa.get('items', []) + musinsa.get('items', []):
         if item['url'] not in known_urls:
             ssense_items.append(item)
             known_urls.add(item['url'])

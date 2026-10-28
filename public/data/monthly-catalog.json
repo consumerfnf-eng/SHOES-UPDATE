@@ -1,10 +1,1810 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-28T17:02:32.614988+09:00",
+  "publishedAt": "2026-10-28T17:17:21.593597+09:00",
   "asOf": "2026-10-28",
   "periodStart": "2026-07-28",
   "isBaselineRun": false,
   "products": [
+    {
+      "rank": 1,
+      "brand": "리복",
+      "name": "클럽 C 85 빈티지 - 클래식 그레이 / 100278986",
+      "url": "https://www.musinsa.com/products/7467213",
+      "image": "https://image.msscdn.net/images/goods_img/20261007/7467213/7467213_17913519822770_500.jpg",
+      "priceLabel": "179,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7467213",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 1
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 2,
+      "brand": "반스",
+      "name": "LX SF 목 로우 - 라이트 브라운:브라운 / VN000Z3XICX1",
+      "url": "https://www.musinsa.com/products/7297268",
+      "image": "https://image.msscdn.net/images/goods_img/20260910/7297268/7297268_17890200923754_500.jpg",
+      "priceLabel": "92,990원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7297268",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 2
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 3,
+      "brand": "아식스",
+      "name": "젤 스트라투스 MC - 화이트:클레이 캐니언 / 1203B049-102",
+      "url": "https://www.musinsa.com/products/7143410",
+      "image": "https://image.msscdn.net/images/goods_img/20260824/7143410/7143410_17876357577628_500.jpg",
+      "priceLabel": "119,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7143410",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 3
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 4,
+      "brand": "리복",
+      "name": "클럽 C 85 - 화이트:블랙 / GZ1605",
+      "url": "https://www.musinsa.com/products/2897209",
+      "image": "https://image.msscdn.net/images/goods_img/20221027/2897209/2897209_17878167034310_500.jpg",
+      "priceLabel": "44,390원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/2897209",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 4
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 5,
+      "brand": "컨버스",
+      "name": "컨버스 X 산리오캐릭터즈 척테일러 올스타 쿠로미 블랙 A21837C",
+      "url": "https://www.musinsa.com/products/7245983",
+      "image": "https://image.msscdn.net/images/goods_img/20260904/7245983/7245983_17894566441854_500.jpg",
+      "priceLabel": "105,000원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7245983",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 5
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 6,
+      "brand": "컨버스",
+      "name": "척 테일러 올스타 번트 허니 A02785C",
+      "url": "https://www.musinsa.com/products/5674323",
+      "image": "https://image.msscdn.net/images/goods_img/20251031/5674323/5674323_17621517656971_500.jpg",
+      "priceLabel": "29,900원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5674323",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 6
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 7,
+      "brand": "야세",
+      "name": "송이송이 x 야세 오프셋 퀵레이서 에어솔 스니커즈 블랙",
+      "url": "https://www.musinsa.com/products/6507215",
+      "image": "https://image.msscdn.net/images/goods_img/20260519/6507215/6507215_17812478626595_500.jpg",
+      "priceLabel": "125,300원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6507215",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 7
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 8,
+      "brand": "컨버스",
+      "name": "컨버스 & 마츠이 척 70 X 블랙 A24291C",
+      "url": "https://www.musinsa.com/products/7427263",
+      "image": "https://image.msscdn.net/images/goods_img/20260930/7427263/7427263_17908322351879_500.jpg",
+      "priceLabel": "119,000원",
+      "gender": "men",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7427263",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 8
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 9,
+      "brand": "노스페이스",
+      "name": "NS82S66M 화이트라벨 여성 쉘던 메리 제인 BROWN",
+      "url": "https://www.musinsa.com/products/6113949",
+      "image": "https://image.msscdn.net/images/goods_img/20260311/6113949/6113949_17732031118118_500.jpg",
+      "priceLabel": "98,690원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6113949",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 9
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 10,
+      "brand": "챔피온",
+      "name": "여성 T 트레이너 스니커즈 Cream",
+      "url": "https://www.musinsa.com/products/6039194",
+      "image": "https://image.msscdn.net/images/goods_img/20260223/6039194/6039194_17848666879832_500.jpg",
+      "priceLabel": "87,200원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6039194",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 10
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 11,
+      "brand": "살로몬",
+      "name": "XT-위스퍼 GTX_L45397700",
+      "url": "https://www.musinsa.com/products/7319610",
+      "image": "https://image.msscdn.net/images/goods_img/20260914/7319610/7319610_17907474324122_500.jpg",
+      "priceLabel": "250,000원",
+      "gender": "men",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7319610",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 11
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 12,
+      "brand": "노스페이스",
+      "name": "NS94S64J 화이트라벨 여성 쉘던 REAL BLACK",
+      "url": "https://www.musinsa.com/products/6037010",
+      "image": "https://image.msscdn.net/images/goods_img/20260220/6037010/6037010_17827969933345_500.jpg",
+      "priceLabel": "82,560원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6037010",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 12
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 13,
+      "brand": "휠라",
+      "name": "리트모 슬릭 LX 블랙(FS263OD03X104001)",
+      "url": "https://www.musinsa.com/products/5825666",
+      "image": "https://image.msscdn.net/images/goods_img/20251212/5825666/5825666_17894481367662_500.jpg",
+      "priceLabel": "129,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5825666",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 13
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 14,
+      "brand": "무신사 스탠다드",
+      "name": "신세틱 레더 퍼그 슬립온 [블랙]",
+      "url": "https://www.musinsa.com/products/7101119",
+      "image": "https://image.msscdn.net/images/goods_img/20260819/7101119/7101119_17925518192033_500.jpg",
+      "priceLabel": "80,890원",
+      "gender": "men",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7101119",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 14
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 15,
+      "brand": "노스페이스",
+      "name": "WJF6FT101A 화이트라벨 클리프 로우 스니커즈 BLACK",
+      "url": "https://www.musinsa.com/products/7487850",
+      "image": "https://image.msscdn.net/images/goods_img/20261012/7487850/7487850_17917744709875_500.jpg",
+      "priceLabel": "103,550원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7487850",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 15
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 16,
+      "brand": "바토즈",
+      "name": "VTZ Grid_Gray",
+      "url": "https://www.musinsa.com/products/5963600",
+      "image": "https://image.msscdn.net/images/goods_img/20260130/5963600/5963600_17725198245055_500.jpg",
+      "priceLabel": "170,100원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5963600",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 16
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 17,
+      "brand": "오찌",
+      "name": "3300 하이 스웨이드 코코아모브 브라운 OZPDFA360N",
+      "url": "https://www.musinsa.com/products/5555085",
+      "image": "https://image.msscdn.net/images/goods_img/20250930/5555085/5555085_17592258280551_500.jpg",
+      "priceLabel": "112,590원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5555085",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 17
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 18,
+      "brand": "아디다스",
+      "name": "몬트리올 - 블랙:카본 / IH7249",
+      "url": "https://www.musinsa.com/products/6105243",
+      "image": "https://image.msscdn.net/images/goods_img/20260310/6105243/6105243_17731928684479_500.jpg",
+      "priceLabel": "88,990원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6105243",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 18
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 19,
+      "brand": "푸마",
+      "name": "스피드캣 OG -쉐도우그레이:블랙 / 398846-64",
+      "url": "https://www.musinsa.com/products/6002026",
+      "image": "https://image.msscdn.net/images/goods_img/20260210/6002026/6002026_17707747881821_500.jpg",
+      "priceLabel": "97,680원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6002026",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 19
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 20,
+      "brand": "머렐",
+      "name": "(공용) 윈터목 3 - 건스모크 / M26W1-UOL731",
+      "url": "https://www.musinsa.com/products/7363502",
+      "image": "https://image.msscdn.net/images/goods_img/20260918/7363502/7363502_17919440706607_500.jpg",
+      "priceLabel": "179,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7363502",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 20
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 21,
+      "brand": "킨",
+      "name": "재스퍼 여성 스니커즈 BIRCH/BISON",
+      "url": "https://www.musinsa.com/products/5214720",
+      "image": "https://image.msscdn.net/images/goods_img/20250630/5214720/5214720_17882371607130_500.jpg",
+      "priceLabel": "169,000원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5214720",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 21
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 22,
+      "brand": "오찌",
+      "name": "툴레아 스웨이드 스니커즈 OZPDGA122N",
+      "url": "https://www.musinsa.com/products/5908699",
+      "image": "https://image.msscdn.net/images/goods_img/20260119/5908699/5908699_17688077832814_500.jpg",
+      "priceLabel": "44,950원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5908699",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 22
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 23,
+      "brand": "푸마",
+      "name": "밀레니오 TR - 그레이:카키 베이지 / 380511-06",
+      "url": "https://www.musinsa.com/products/3177097",
+      "image": "https://image.msscdn.net/images/goods_img/20230324/3177097/3177097_16801537157097_500.jpg",
+      "priceLabel": "38,990원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/3177097",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 23
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 24,
+      "brand": "아디다스",
+      "name": "도쿄 - 그린:옐로우 /  JI3298",
+      "url": "https://www.musinsa.com/products/4815325",
+      "image": "https://image.msscdn.net/images/goods_img/20250221/4815325/4815325_17401286670274_500.jpg",
+      "priceLabel": "63,990원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/4815325",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 24
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 25,
+      "brand": "엘칸토",
+      "name": "마쯔 여성 고프코어 메쉬 스니커즈 4cm LCWS21M439",
+      "url": "https://www.musinsa.com/products/4447378",
+      "image": "https://image.msscdn.net/images/goods_img/20240920/4447378/4447378_17289687884677_500.jpg",
+      "priceLabel": "33,500원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/4447378",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 25
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 26,
+      "brand": "무신사 스탠다드 우먼",
+      "name": "우먼즈 로우 프로파일 스니커즈 [블랙]",
+      "url": "https://www.musinsa.com/products/7146983",
+      "image": "https://image.msscdn.net/images/goods_img/20260824/7146983/7146983_17919632440017_500.jpg",
+      "priceLabel": "80,910원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7146983",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 26
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 27,
+      "brand": "페몬트",
+      "name": "serve (black)",
+      "url": "https://www.musinsa.com/products/6289293",
+      "image": "https://image.msscdn.net/images/goods_img/20260410/6289293/6289293_17757924505955_500.jpg",
+      "priceLabel": "179,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6289293",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 27
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 28,
+      "brand": "나이키",
+      "name": "P-6000 M - 블랙 / CD6404-002",
+      "url": "https://www.musinsa.com/products/4475479",
+      "image": "https://image.msscdn.net/images/goods_img/20240930/4475479/4475479_17292143987852_500.jpg",
+      "priceLabel": "125,100원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/4475479",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 28
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 29,
+      "brand": "베어파우",
+      "name": "BRIA 스니커즈 블랙 (K3010001RA-W)",
+      "url": "https://www.musinsa.com/products/6145546",
+      "image": "https://image.msscdn.net/images/goods_img/20260317/6145546/6145546_17737255937798_500.jpg",
+      "priceLabel": "59,000원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6145546",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 29
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 30,
+      "brand": "아디다스",
+      "name": "맥스코트 메리제인 - 화이트 / KH6915",
+      "url": "https://www.musinsa.com/products/6831819",
+      "image": "https://image.msscdn.net/images/goods_img/20260713/6831819/6831819_17841923311546_500.jpg",
+      "priceLabel": "63,990원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6831819",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 30
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 31,
+      "brand": "반스",
+      "name": "프리미엄 어센틱 프리마 - 레더 블랙 / VN000EDXCJI1",
+      "url": "https://www.musinsa.com/products/6116022",
+      "image": "https://image.msscdn.net/images/goods_img/20260311/6116022/6116022_17745056671068_500.jpg",
+      "priceLabel": "90,400원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6116022",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 31
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 32,
+      "brand": "컨버스",
+      "name": "척테일러 올스타 인더스트리얼 지퍼 레더 블랙 A20199C",
+      "url": "https://www.musinsa.com/products/7383093",
+      "image": "https://image.msscdn.net/images/prd_img/20260921/7383093/detail_7383093_17900553656950_500.jpg",
+      "priceLabel": "95,000원",
+      "gender": "men",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7383093",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 32
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 33,
+      "brand": "리복",
+      "name": "울트라 LO 스니커즈 - 화이트 / RESO6EJ1WG2",
+      "url": "https://www.musinsa.com/products/5830108",
+      "image": "https://image.msscdn.net/images/goods_img/20251215/5830108/5830108_17791776258628_500.jpg",
+      "priceLabel": "61,990원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5830108",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 33
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 34,
+      "brand": "위더로드",
+      "name": "WTRD3115 레이지 홀스레더 레이싱 스니커즈 워싱 블랙",
+      "url": "https://www.musinsa.com/products/5347573",
+      "image": "https://image.msscdn.net/images/goods_img/20250821/5347573/5347573_17573082563939_500.jpg",
+      "priceLabel": "119,200원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5347573",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 34
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 35,
+      "brand": "나이키",
+      "name": "문 슈 OG M - 블랙:세이프티 오렌지:세일 / IX3952-001",
+      "url": "https://www.musinsa.com/products/7407733",
+      "image": "https://image.msscdn.net/images/goods_img/20260928/7407733/7407733_17907594821717_500.jpg",
+      "priceLabel": "139,000원",
+      "gender": "men",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7407733",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 35
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 36,
+      "brand": "푸마",
+      "name": "스피드캣 에투알 우먼스 - 블랙 / 407673-02",
+      "url": "https://www.musinsa.com/products/6931751",
+      "image": "https://image.msscdn.net/images/goods_img/20260727/6931751/6931751_17853181614756_500.jpg",
+      "priceLabel": "127,200원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6931751",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 36
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 37,
+      "brand": "코어오브알케미",
+      "name": "에센셜 프린지 모카신 브라운 스니커즈",
+      "url": "https://www.musinsa.com/products/5568104",
+      "image": "https://image.msscdn.net/images/goods_img/20251002/5568104/5568104_17624976039410_500.jpg",
+      "priceLabel": "89,000원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5568104",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 37
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 38,
+      "brand": "오클리",
+      "name": "(공용) 라이트 브리드 스니커 - 트리플 블랙 / FOF10058802Y",
+      "url": "https://www.musinsa.com/products/4028712",
+      "image": "https://image.msscdn.net/images/goods_img/20240405/4028712/4028712_17122929879303_500.jpg",
+      "priceLabel": "164,990원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/4028712",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 38
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 39,
+      "brand": "파스코로젠",
+      "name": "25Paco JC3302 Pawn Germany Millie Sneakers 58.5",
+      "url": "https://www.musinsa.com/products/5679704",
+      "image": "https://image.msscdn.net/images/goods_img/20251103/5679704/5679704_17623980706591_500.jpg",
+      "priceLabel": "79,200원",
+      "gender": "men",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5679704",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 39
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 40,
+      "brand": "뉴발란스",
+      "name": "NBPDGF733S / U740WN2 (WHITE NB NAVY)",
+      "url": "https://www.musinsa.com/products/4797720",
+      "image": "https://image.msscdn.net/images/goods_img/20250218/4797720/4797720_17411596402542_500.jpg",
+      "priceLabel": "149,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/4797720",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 40
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 41,
+      "brand": "미세키서울",
+      "name": "Double strap sneakers BLACK",
+      "url": "https://www.musinsa.com/products/6551526",
+      "image": "https://image.msscdn.net/images/goods_img/20260527/6551526/6551526_17809952738609_500.jpg",
+      "priceLabel": "127,980원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6551526",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 41
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 42,
+      "brand": "푸마",
+      "name": "밀레니오 테크 LT (40679103)",
+      "url": "https://www.musinsa.com/products/5698874",
+      "image": "https://image.msscdn.net/images/goods_img/20251107/5698874/5698874_17624806222949_500.jpg",
+      "priceLabel": "89,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5698874",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 42
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 43,
+      "brand": "아디다스",
+      "name": "아디스타 컨트롤 5 - 블랙 / KI5226",
+      "url": "https://www.musinsa.com/products/5943435",
+      "image": "https://image.msscdn.net/images/goods_img/20260127/5943435/5943435_17756277254897_500.jpg",
+      "priceLabel": "94,990원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5943435",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 43
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 44,
+      "brand": "푸마",
+      "name": "스피드캣 발렛 새틴 - 실버 / 404383-03",
+      "url": "https://www.musinsa.com/products/5168188",
+      "image": "https://image.msscdn.net/images/goods_img/20250605/5168188/5168188_17495179937980_500.jpg",
+      "priceLabel": "71,710원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5168188",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 44
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 45,
+      "brand": "휠라",
+      "name": "에샤페 MS(FS261OD03X040032)",
+      "url": "https://www.musinsa.com/products/6010742",
+      "image": "https://image.msscdn.net/images/goods_img/20260211/6010742/6010742_17894378136850_500.jpg",
+      "priceLabel": "109,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6010742",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 45
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 46,
+      "brand": "나이키",
+      "name": "코르테즈 텍스타일 M - 문 파슬:세일:쉐도우 헤더 / HF0263-005",
+      "url": "https://www.musinsa.com/products/6089165",
+      "image": "https://image.msscdn.net/images/goods_img/20260305/6089165/6089165_17736268437761_500.jpg",
+      "priceLabel": "95,200원",
+      "gender": "men",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6089165",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 46
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 47,
+      "brand": "미세키서울",
+      "name": "Diagonal suede sneakers BLACK",
+      "url": "https://www.musinsa.com/products/7195809",
+      "image": "https://image.msscdn.net/images/goods_img/20260828/7195809/7195809_17908248491964_500.jpg",
+      "priceLabel": "119,880원",
+      "gender": "women",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7195809",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 47
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 48,
+      "brand": "아식스",
+      "name": "젤 벤트엑스 - 캐리어 그레이:그래파이트 그레이 / 1203B040-021",
+      "url": "https://www.musinsa.com/products/7044189",
+      "image": "https://image.msscdn.net/images/goods_img/20260811/7044189/7044189_17864393025923_500.jpg",
+      "priceLabel": "129,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7044189",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 48
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 49,
+      "brand": "닥터마틴",
+      "name": "단테 - 블랙 / 16736001",
+      "url": "https://www.musinsa.com/products/1134374",
+      "image": "https://image.msscdn.net/images/goods_img/20190828/1134374/1134374_3_500.jpg",
+      "priceLabel": "170,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/1134374",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 49
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
+    {
+      "rank": 50,
+      "brand": "오니츠카타이거",
+      "name": "GSM 1183A353_127",
+      "url": "https://www.musinsa.com/products/3785713",
+      "image": "https://image.msscdn.net/images/goods_img/20240110/3785713/3785713_17050422994015_500.jpg",
+      "priceLabel": "180,000원",
+      "gender": "",
+      "source": "ecommerce-musinsa",
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/3785713",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 50
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
+    },
     {
       "id": "monthly-lyst-26f4f43bb6ca8d4aac15",
       "source": "retail-lyst",
@@ -40,7 +1840,7 @@
             "headline": "Blackpink’s Rosé Helps Puma Launch Its New Speedcat Croc&nbsp;Sneakers",
             "url": "https://wwd.com/footwear-news/sneaker-news/rose-puma-speedcat-croc-sneakers-release-date-1239345468/",
             "publishedAt": "2026-10-13T18:20:46Z",
-            "checkedAt": "2026-10-28T17:03:36.328625+09:00"
+            "checkedAt": "2026-10-28T17:18:25.443690+09:00"
           },
           {
             "source": "footwear-news",
@@ -48,7 +1848,7 @@
             "headline": "Jil Sander Teases Latest Sneakers With Puma in&nbsp;Milan",
             "url": "https://wwd.com/footwear-news/sneaker-news/jil-sander-puma-speedcat-suede-milan-fashion-week-1239265223/",
             "publishedAt": "2026-09-25T20:14:08Z",
-            "checkedAt": "2026-10-28T17:03:36.328625+09:00"
+            "checkedAt": "2026-10-28T17:18:25.443690+09:00"
           },
           {
             "source": "footwear-news",
@@ -56,7 +1856,7 @@
             "headline": "Madhappy and Puma Are Back With Updates to the Speedcat Plus, H-Street and Suede&nbsp;Sneakers",
             "url": "https://wwd.com/footwear-news/sneaker-news/madhappy-puma-speedcat-plus-h-street-suede-release-date-1239147964/",
             "publishedAt": "2026-08-24T17:23:09Z",
-            "checkedAt": "2026-10-28T17:03:36.328625+09:00"
+            "checkedAt": "2026-10-28T17:18:25.443690+09:00"
           },
           {
             "source": "footwear-news",
@@ -64,7 +1864,7 @@
             "headline": "Blackpink’s Rosé Helps Puma Launch Its New Ballet-inspired Speedcat&nbsp;Sneakers",
             "url": "https://wwd.com/footwear-news/sneaker-news/rose-puma-speedcat-etoile-sneakers-1239085929/",
             "publishedAt": "2026-07-28T20:28:23Z",
-            "checkedAt": "2026-10-28T17:03:36.328625+09:00"
+            "checkedAt": "2026-10-28T17:18:25.443690+09:00"
           }
         ],
         "sns": false,
@@ -80,7 +1880,32 @@
             "priceLabel": "97,680원",
             "gender": "",
             "source": "ecommerce-musinsa",
-            "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+            "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+            "retailerEvidence": {
+              "verified": true,
+              "retailer": "Musinsa",
+              "productUrl": "https://www.musinsa.com/products/6002026",
+              "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+              "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+              "collectionMethod": "curl_cffi",
+              "rank": 19
+            },
+            "category": "sneaker",
+            "productType": "sneaker",
+            "style": "",
+            "colorway": "",
+            "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+            "newThisRun": true,
+            "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+            "popularity": {
+              "media": false,
+              "mediaMentions": [],
+              "sns": false,
+              "snsPosts": [],
+              "ecommerce": false,
+              "ecommerceRankings": [],
+              "snsAverageLikes": null
+            }
           },
           {
             "rank": 36,
@@ -91,7 +1916,32 @@
             "priceLabel": "127,200원",
             "gender": "women",
             "source": "ecommerce-musinsa",
-            "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+            "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+            "retailerEvidence": {
+              "verified": true,
+              "retailer": "Musinsa",
+              "productUrl": "https://www.musinsa.com/products/6931751",
+              "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+              "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+              "collectionMethod": "curl_cffi",
+              "rank": 36
+            },
+            "category": "sneaker",
+            "productType": "sneaker",
+            "style": "",
+            "colorway": "",
+            "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+            "newThisRun": true,
+            "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+            "popularity": {
+              "media": false,
+              "mediaMentions": [],
+              "sns": false,
+              "snsPosts": [],
+              "ecommerce": false,
+              "ecommerceRankings": [],
+              "snsAverageLikes": null
+            }
           },
           {
             "rank": 44,
@@ -102,7 +1952,32 @@
             "priceLabel": "71,710원",
             "gender": "women",
             "source": "ecommerce-musinsa",
-            "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+            "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+            "retailerEvidence": {
+              "verified": true,
+              "retailer": "Musinsa",
+              "productUrl": "https://www.musinsa.com/products/5168188",
+              "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+              "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+              "collectionMethod": "curl_cffi",
+              "rank": 44
+            },
+            "category": "sneaker",
+            "productType": "sneaker",
+            "style": "",
+            "colorway": "",
+            "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+            "newThisRun": true,
+            "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+            "popularity": {
+              "media": false,
+              "mediaMentions": [],
+              "sns": false,
+              "snsPosts": [],
+              "ecommerce": false,
+              "ecommerceRankings": [],
+              "snsAverageLikes": null
+            }
           }
         ],
         "snsAverageLikes": null
@@ -137,7 +2012,7 @@
         "erl's vamp sneaker style guide",
         "sneaker trends 2026"
       ],
-      "checkedAt": "2026-10-28T17:05:48.382528+09:00"
+      "checkedAt": "2026-10-28T17:20:35.537709+09:00"
     },
     {
       "hashtag": "sneakerhead",
@@ -166,7 +2041,7 @@
         "civilized nation sneakerhead community",
         "culture kicks sneakerhead community"
       ],
-      "checkedAt": "2026-10-28T17:05:48.382528+09:00"
+      "checkedAt": "2026-10-28T17:20:35.537709+09:00"
     },
     {
       "hashtag": "신발추천",
@@ -174,7 +2049,7 @@
       "title": "신발추천",
       "totalMediaCount": "1.7M",
       "relatedKeywords": [],
-      "checkedAt": "2026-10-28T17:05:48.382528+09:00"
+      "checkedAt": "2026-10-28T17:20:35.537709+09:00"
     },
     {
       "hashtag": "스니커즈추천",
@@ -182,7 +2057,7 @@
       "title": "스니커즈추천",
       "totalMediaCount": "125K",
       "relatedKeywords": [],
-      "checkedAt": "2026-10-28T17:05:48.382528+09:00"
+      "checkedAt": "2026-10-28T17:20:35.537709+09:00"
     }
   ],
   "ecommerceRanking": [
@@ -195,7 +2070,32 @@
       "priceLabel": "179,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7467213",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 1
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 2,
@@ -206,7 +2106,32 @@
       "priceLabel": "92,990원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7297268",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 2
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 3,
@@ -217,7 +2142,32 @@
       "priceLabel": "119,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7143410",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 3
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 4,
@@ -228,7 +2178,32 @@
       "priceLabel": "44,390원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/2897209",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 4
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 5,
@@ -239,7 +2214,32 @@
       "priceLabel": "105,000원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7245983",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 5
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 6,
@@ -250,7 +2250,32 @@
       "priceLabel": "29,900원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5674323",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 6
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 7,
@@ -261,7 +2286,32 @@
       "priceLabel": "125,300원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6507215",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 7
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 8,
@@ -272,7 +2322,32 @@
       "priceLabel": "119,000원",
       "gender": "men",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7427263",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 8
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 9,
@@ -283,7 +2358,32 @@
       "priceLabel": "98,690원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6113949",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 9
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 10,
@@ -294,7 +2394,32 @@
       "priceLabel": "87,200원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6039194",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 10
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 11,
@@ -305,7 +2430,32 @@
       "priceLabel": "250,000원",
       "gender": "men",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7319610",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 11
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 12,
@@ -316,7 +2466,32 @@
       "priceLabel": "82,560원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6037010",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 12
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 13,
@@ -327,7 +2502,32 @@
       "priceLabel": "129,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5825666",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 13
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 14,
@@ -338,7 +2538,32 @@
       "priceLabel": "80,890원",
       "gender": "men",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7101119",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 14
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 15,
@@ -349,7 +2574,32 @@
       "priceLabel": "103,550원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7487850",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 15
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 16,
@@ -360,7 +2610,32 @@
       "priceLabel": "170,100원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5963600",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 16
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 17,
@@ -371,7 +2646,32 @@
       "priceLabel": "112,590원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5555085",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 17
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 18,
@@ -382,7 +2682,32 @@
       "priceLabel": "88,990원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6105243",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 18
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 19,
@@ -393,7 +2718,32 @@
       "priceLabel": "97,680원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6002026",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 19
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 20,
@@ -404,7 +2754,32 @@
       "priceLabel": "179,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7363502",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 20
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 21,
@@ -415,7 +2790,32 @@
       "priceLabel": "169,000원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5214720",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 21
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 22,
@@ -426,7 +2826,32 @@
       "priceLabel": "44,950원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5908699",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 22
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 23,
@@ -437,7 +2862,32 @@
       "priceLabel": "38,990원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/3177097",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 23
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 24,
@@ -448,7 +2898,32 @@
       "priceLabel": "63,990원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/4815325",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 24
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 25,
@@ -459,7 +2934,32 @@
       "priceLabel": "33,500원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/4447378",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 25
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 26,
@@ -470,7 +2970,32 @@
       "priceLabel": "80,910원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7146983",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 26
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 27,
@@ -481,7 +3006,32 @@
       "priceLabel": "179,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6289293",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 27
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 28,
@@ -492,7 +3042,32 @@
       "priceLabel": "125,100원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/4475479",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 28
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 29,
@@ -503,7 +3078,32 @@
       "priceLabel": "59,000원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6145546",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 29
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 30,
@@ -514,7 +3114,32 @@
       "priceLabel": "63,990원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6831819",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 30
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 31,
@@ -525,7 +3150,32 @@
       "priceLabel": "90,400원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6116022",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 31
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 32,
@@ -536,7 +3186,32 @@
       "priceLabel": "95,000원",
       "gender": "men",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7383093",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 32
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 33,
@@ -547,7 +3222,32 @@
       "priceLabel": "61,990원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5830108",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 33
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 34,
@@ -558,7 +3258,32 @@
       "priceLabel": "119,200원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5347573",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 34
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 35,
@@ -569,7 +3294,32 @@
       "priceLabel": "139,000원",
       "gender": "men",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7407733",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 35
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 36,
@@ -580,7 +3330,32 @@
       "priceLabel": "127,200원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6931751",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 36
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 37,
@@ -591,7 +3366,32 @@
       "priceLabel": "89,000원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5568104",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 37
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 38,
@@ -602,7 +3402,32 @@
       "priceLabel": "164,990원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/4028712",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 38
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 39,
@@ -613,7 +3438,32 @@
       "priceLabel": "79,200원",
       "gender": "men",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5679704",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 39
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 40,
@@ -624,7 +3474,32 @@
       "priceLabel": "149,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/4797720",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 40
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 41,
@@ -635,7 +3510,32 @@
       "priceLabel": "127,980원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6551526",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 41
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 42,
@@ -646,7 +3546,32 @@
       "priceLabel": "89,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5698874",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 42
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 43,
@@ -657,7 +3582,32 @@
       "priceLabel": "94,990원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5943435",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 43
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 44,
@@ -668,7 +3618,32 @@
       "priceLabel": "71,710원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/5168188",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 44
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 45,
@@ -679,7 +3654,32 @@
       "priceLabel": "109,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6010742",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 45
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 46,
@@ -690,7 +3690,32 @@
       "priceLabel": "95,200원",
       "gender": "men",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/6089165",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 46
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 47,
@@ -701,7 +3726,32 @@
       "priceLabel": "119,880원",
       "gender": "women",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7195809",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 47
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 48,
@@ -712,7 +3762,32 @@
       "priceLabel": "129,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/7044189",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 48
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 49,
@@ -723,7 +3798,32 @@
       "priceLabel": "170,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/1134374",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 49
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     },
     {
       "rank": 50,
@@ -734,7 +3834,32 @@
       "priceLabel": "180,000원",
       "gender": "",
       "source": "ecommerce-musinsa",
-      "checkedAt": "2026-10-28T17:05:46.781980+09:00"
+      "checkedAt": "2026-10-28T17:20:33.865704+09:00",
+      "retailerEvidence": {
+        "verified": true,
+        "retailer": "Musinsa",
+        "productUrl": "https://www.musinsa.com/products/3785713",
+        "listingUrl": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+        "verifiedAt": "2026-10-28T17:20:33.865704+09:00",
+        "collectionMethod": "curl_cffi",
+        "rank": 50
+      },
+      "category": "sneaker",
+      "productType": "sneaker",
+      "style": "",
+      "colorway": "",
+      "firstSeenAt": "2026-10-28T17:17:21.593597+09:00",
+      "newThisRun": true,
+      "firstDetectedAsNewAt": "2026-10-28T17:17:21.593597+09:00",
+      "popularity": {
+        "media": false,
+        "mediaMentions": [],
+        "sns": false,
+        "snsPosts": [],
+        "ecommerce": false,
+        "ecommerceRankings": [],
+        "snsAverageLikes": null
+      }
     }
   ]
 }

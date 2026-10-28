@@ -79,16 +79,20 @@ def main():
                 if is_kids_item(name) or NON_SNEAKER_RE.search(name):
                     continue
                 rank += 1
+                url = g.get('goodsLinkUrl') or f"https://www.musinsa.com/products/{g.get('goodsNo')}"
                 items.append({
                     'rank': rank,
                     'brand': g.get('brandName') or g.get('brand') or '',
                     'name': name,
-                    'url': g.get('goodsLinkUrl') or f"https://www.musinsa.com/products/{g.get('goodsNo')}",
+                    'url': url,
                     'image': g.get('thumbnail') or '',
                     'priceLabel': f"{g.get('finalPrice'):,}원" if g.get('finalPrice') else '',
                     'gender': 'women' if g.get('displayGenderText') == '여성' else ('men' if g.get('displayGenderText') == '남성' else ''),
                     'source': 'ecommerce-musinsa',
                     'checkedAt': checked_at,
+                    'retailerEvidence': {'verified': True, 'retailer': 'Musinsa', 'productUrl': url,
+                                          'listingUrl': CATEGORY_URL, 'verifiedAt': checked_at,
+                                          'collectionMethod': 'curl_cffi', 'rank': rank},
                 })
                 if rank >= TOP_N:
                     break

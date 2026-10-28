@@ -26,6 +26,11 @@ SOURCES = [
      'listingUrl': 'https://www.farfetch.com/shopping/men/shoes-2/items.aspx?category=137174', 'maxPages': 4},
     {'id': 'retail-mytheresa', 'label': 'Mytheresa', 'gender': 'women',
      'listingUrl': 'https://www.mytheresa.com/us/en/women/shoes/sneakers', 'maxPages': 4},
+    # categoryCd 65 "스니커즈" under largeCategory 002 "신발" - confirmed by
+    # hand from the embedded category tree on wconcept.co.kr's own homepage
+    # (women's only path found; a men's equivalent was not located).
+    {'id': 'ecommerce-wconcept', 'label': 'W Concept', 'gender': 'women',
+     'listingUrl': 'https://display.wconcept.co.kr/rn/category/women/002002', 'maxPages': 3},
 ]
 
 

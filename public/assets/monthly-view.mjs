@@ -51,7 +51,9 @@ function activeOf(group) {
 }
 function groupMatches(group) {
   if (activeFilter === 'media' && !group.some(p => p.popularity?.media)) return false;
-  if (activeFilter === 'sns' && !group.some(p => p.popularity?.sns)) return false;
+  // 이커머스 tab: items actually sourced from an e-commerce ranking
+  // (Musinsa/W Concept) OR any item a ranking matched as a mention.
+  if (activeFilter === 'ecommerce' && !group.some(p => (p.source || '').startsWith('ecommerce-') || p.popularity?.ecommerce)) return false;
   if (!query) return true;
   return group.some(p => `${p.brand} ${p.name}`.toLowerCase().includes(query));
 }
@@ -113,7 +115,7 @@ function render() {
     grid.innerHTML = '';
     $('monthly-empty-title').textContent = allProducts.length
       ? (activeFilter === 'media' ? '최근 3개월 뉴스레터 언급과 일치한 상품이 아직 없습니다'
-        : activeFilter === 'sns' ? 'SNS 게시물과 매칭된 상품이 아직 없습니다 (Instagram 로그인 세션 등록 후 채워집니다)'
+        : activeFilter === 'ecommerce' ? '이커머스 랭킹 상품이 아직 없습니다'
         : query ? '검색어와 일치하는 상품이 없습니다' : '조건에 맞는 상품이 없습니다')
       : '상품을 불러오고 있습니다';
     empty.hidden = false;
@@ -185,7 +187,7 @@ const MAIN_CATALOG_SELECTORS = ['#active-filters', '.catalog > .filters', '.cata
 function mainCatalogElements() {
   return MAIN_CATALOG_SELECTORS.flatMap(sel => [...document.querySelectorAll(sel)]);
 }
-const MONTHLY_FILTER_BY_TAB = {retail: 'all', newsletter: 'media', sns: 'sns'};
+const MONTHLY_FILTER_BY_TAB = {retail: 'all', newsletter: 'media', ecommerce: 'ecommerce'};
 
 function showMonthly(tabKey) {
   mainCatalogElements().forEach(el => { el.hidden = true; });
