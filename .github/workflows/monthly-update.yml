@@ -61,7 +61,9 @@ jobs:
           name: monthly-diagnostics-${{ github.run_id }}
           path: |
             data/monthly-staging-ssense.json
+            data/monthly-staging-lyst.json
             data/monthly-staging-media.json
+            data/monthly-staging-musinsa.json
             data/monthly-staging-instagram.json
             data/monthly-staging-ig-hashtags.json
             data/monthly-run-report.json

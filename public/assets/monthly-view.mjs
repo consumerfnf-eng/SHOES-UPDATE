@@ -83,9 +83,13 @@ function cardMarkup(group) {
   const anyNew = group.some(v => v.newThisRun);
   const mediaCount = group.reduce((n, v) => n + (v.popularity?.mediaMentions?.length || 0), 0);
   const snsLikes = group.flatMap(v => v.popularity?.snsPosts || []).map(m => m.likeCount).filter(Number.isFinite);
+  const bestRank = Math.min(...group.flatMap(v => (v.popularity?.ecommerceRankings || []).map(r => r.rank)), Infinity);
+  const signalCount = [mediaCount > 0, snsLikes.length > 0, Number.isFinite(bestRank)].filter(Boolean).length;
   const badges = [
     mediaCount ? `<span class="source-badge">미디어 언급 ${mediaCount}건</span>` : '',
     snsLikes.length ? `<span class="source-badge">SNS 인기 · 평균 ❤ ${Math.round(snsLikes.reduce((a, b) => a + b, 0) / snsLikes.length)}</span>` : '',
+    Number.isFinite(bestRank) ? `<span class="source-badge">무신사 랭킹 ${bestRank}위</span>` : '',
+    signalCount >= 2 ? `<span class="source-badge trend-signal">독립 신호 ${signalCount}개</span>` : '',
     anyNew ? '<span class="source-badge">이번 달 신규</span>' : '',
   ].filter(Boolean).join('');
   const { rest } = splitColorFromName(p.name);
@@ -132,6 +136,12 @@ function hashtagMarkup(h) {
   </span>`;
 }
 
+function musinsaRankMarkup(items) {
+  return items.slice(0, 10).map(i => `<a class="keyword" href="${esc(safeUrl(i.url))}" target="_blank" rel="noopener noreferrer">
+    <span>${i.rank}위 ${esc(i.brand)}</span><span class="count">${esc(i.priceLabel)}</span>
+  </a>`).join('');
+}
+
 async function load() {
   const grid = $('monthly-grid');
   grid.setAttribute('aria-busy', 'true');
@@ -147,6 +157,11 @@ async function load() {
     $('monthly-hashtags').innerHTML = hashtags.length
       ? hashtags.map(hashtagMarkup).join('')
       : '<p class="muted">Instagram 해시태그 볼륨 데이터 없음(비로그인 집계 · 로그인 필요 항목은 SNS 인기 탭에서 별도 확인)</p>';
+    const musinsaRanking = Array.isArray(value.ecommerceRanking) ? value.ecommerceRanking : [];
+    const musinsaEl = $('monthly-ecommerce');
+    if (musinsaEl) musinsaEl.innerHTML = musinsaRanking.length
+      ? musinsaRankMarkup(musinsaRanking)
+      : '<p class="muted">무신사 스니커즈 랭킹 데이터 없음</p>';
     shown = PAGE_SIZE;
     render();
   } catch (e) {

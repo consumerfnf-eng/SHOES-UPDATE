@@ -126,6 +126,7 @@ def main():
     # headful Playwright for an unattended run, confirmed by hand.
     lyst = run_collector('collect_lyst_scrapingbee.py', os.path.join(DATA, 'monthly-staging-lyst.json'))
     media = run_collector('collect_media.py', os.path.join(DATA, 'monthly-staging-media.json'))
+    musinsa = run_collector('collect_musinsa.py', os.path.join(DATA, 'monthly-staging-musinsa.json'))
     ig_args = []
     if args.ig_session_file:
         ig_args += ['--session-file', args.ig_session_file]
@@ -177,17 +178,21 @@ def main():
 
     unmatched_media = match_mentions(ssense_items, media.get('items', []), 'headline', model_aliases)
     unmatched_sns = match_mentions(ssense_items, instagram.get('items', []), 'caption', model_aliases)
+    unmatched_ecommerce = match_mentions(ssense_items, musinsa.get('items', []), 'name', model_aliases)
 
     for item in ssense_items:
         mentions = item.pop('_mentions', [])
         media_mentions = [m for m in mentions if m.get('headline')]
         sns_mentions = [m for m in mentions if m.get('shortcode')]
+        ecommerce_mentions = [m for m in mentions if 'rank' in m]
         likes = [m['likeCount'] for m in sns_mentions if isinstance(m.get('likeCount'), int)]
         item['popularity'] = {
             'media': len(media_mentions) > 0,
             'mediaMentions': media_mentions,
             'sns': len(sns_mentions) > 0,
             'snsPosts': sns_mentions,
+            'ecommerce': len(ecommerce_mentions) > 0,
+            'ecommerceRankings': ecommerce_mentions,
             'snsAverageLikes': round(sum(likes) / len(likes)) if likes else None,
         }
 
@@ -223,6 +228,7 @@ def main():
                 'Register a real alias in monthly-model-aliases.json to let a future run match them.',
         'media': unmatched_media,
         'sns': unmatched_sns,
+        'ecommerce': unmatched_ecommerce,
     })
 
     public_catalog = {
@@ -237,6 +243,12 @@ def main():
         # signal than popularity.snsPosts above (which needs the user's login
         # session and gives per-post captions/likes matched to specific items).
         'hashtagTrends': hashtag_volume.get('items', []),
+        # Musinsa's own "인기순" sneaker-category ranking (top 50, real
+        # products with a real rank position - not a search-term list).
+        # Kept here in full regardless of matching, since the ranking
+        # itself is useful context even for items not (yet) carried by
+        # SSENSE/Lyst.
+        'ecommerceRanking': musinsa.get('items', []),
     }
     atomic_write_json(os.path.join(PUBLIC_DATA, 'monthly-catalog.json'), public_catalog)
 
@@ -256,6 +268,9 @@ def main():
             'instagram-hashtag-volume': {'status': hashtag_volume.get('status'),
                                           'items': len(hashtag_volume.get('items', [])),
                                           'diagnostics': hashtag_volume.get('diagnostics', [])},
+            'ecommerce-musinsa': {'status': musinsa.get('status'), 'items': len(musinsa.get('items', [])),
+                                   'matched': len(musinsa.get('items', [])) - len(unmatched_ecommerce),
+                                   'held': len(unmatched_ecommerce), 'diagnostics': musinsa.get('diagnostics', [])},
         },
         'isBaselineRun': is_baseline_run,
         'published': len(published),
@@ -270,7 +285,8 @@ def main():
         return
     print(f"Monthly update complete: {len(published)} published retail items; "
           f"{report['sources']['media']['held']} media + {report['sources']['instagram']['held']} SNS mentions held unmatched; "
-          f"SSENSE={ssense.get('status')} media={media.get('status')} instagram={instagram.get('status')}")
+          f"SSENSE={ssense.get('status')} Lyst={lyst.get('status')} media={media.get('status')} "
+          f"Musinsa={musinsa.get('status')} instagram={instagram.get('status')}")
 
 
 if __name__ == '__main__':

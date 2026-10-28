@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-28T15:50:22.297404+09:00",
+  "checkedAt": "2026-10-28T16:28:06.534987+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -37,22 +37,22 @@
     },
     "media": {
       "status": "ok",
-      "items": 759,
+      "items": 763,
       "matched": 221,
-      "held": 538,
+      "held": 542,
       "diagnostics": [
         {
           "source": "hypebeast",
           "pages": 8,
           "responses": 8,
-          "articles": 14,
+          "articles": 16,
           "errors": []
         },
         {
           "source": "hypebeast-kr",
           "pages": 8,
           "responses": 8,
-          "articles": 12,
+          "articles": 14,
           "errors": []
         },
         {
@@ -128,6 +128,18 @@
           "url": "https://www.instagram.com/explore/tags/신상스니커즈/",
           "errors": [],
           "status": "no-data"
+        }
+      ]
+    },
+    "ecommerce-musinsa": {
+      "status": "ok",
+      "items": 50,
+      "matched": 3,
+      "held": 47,
+      "diagnostics": [
+        {
+          "url": "https://www.musinsa.com/category/103004?sortCode=POPULAR",
+          "totalListed": 60
         }
       ]
     }
