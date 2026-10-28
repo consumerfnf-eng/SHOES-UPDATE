@@ -110,12 +110,19 @@ def main():
 
     model_aliases = read_json(os.path.join(DATA, 'monthly-model-aliases.json'), {})
     previous_by_url = {p['url']: p for p in previous_source.get('products', [])}
+    # SSENSE's category listing has no "new arrivals" signal at all (no sort,
+    # no facet, no dedicated URL for it) - verified by hand, not assumed. The
+    # only honest way to know a listing is new is a month-over-month delta
+    # against our own prior snapshot. On the very first run there IS no prior
+    # snapshot, so nothing can be called new yet - the whole current listing
+    # is establishing the baseline, not a month's worth of new arrivals.
+    is_baseline_run = not previous_source.get('products')
 
     ssense_items = ssense.get('items', [])
     for item in ssense_items:
         prior = previous_by_url.get(item['url'])
         item['firstSeenAt'] = prior['firstSeenAt'] if prior else now.isoformat()
-        item['newThisRun'] = prior is None
+        item['newThisRun'] = (prior is None) and not is_baseline_run
 
     unmatched_media = match_mentions(ssense_items, media.get('items', []), 'headline')
     unmatched_sns = match_mentions(ssense_items, instagram.get('items', []), 'caption')
@@ -134,7 +141,17 @@ def main():
         }
 
     cutoff = kst_three_months_ago(now).isoformat()
-    published = [p for p in ssense_items if p['firstSeenAt'] >= cutoff]
+    # SSENSE's category listing has no release date, so there is no honest
+    # basis for a 3-month display window the way the official catalog has
+    # (which carries real verified release dates). Giving a retail item a
+    # 3-month grace period after its firstSeenAt would mean a whole month's
+    # baseline (hundreds of items already carried by SSENSE, not newly
+    # arrived) stays published for 3 months regardless - exactly the
+    # over-inclusion this was built to avoid. So "published" here means only
+    # this run's genuine delta against last run's snapshot: items SSENSE is
+    # showing that it was not showing last time we checked. Baseline run:
+    # publish nothing, since there is no prior snapshot to diff against yet.
+    published = [] if is_baseline_run else [p for p in ssense_items if p['newThisRun']]
 
     source_snapshot = {
         'lastRunAt': now.isoformat(),
@@ -157,6 +174,7 @@ def main():
         'publishedAt': now.isoformat(),
         'asOf': today,
         'periodStart': cutoff[:10],
+        'isBaselineRun': is_baseline_run,
         'products': published,
         # Hashtag-level volume + related keywords, collected without any Instagram
         # login (see collect_instagram_hashtags.py). This is a different, coarser
@@ -181,11 +199,17 @@ def main():
                                           'items': len(hashtag_volume.get('items', [])),
                                           'diagnostics': hashtag_volume.get('diagnostics', [])},
         },
+        'isBaselineRun': is_baseline_run,
         'published': len(published),
-        'heldAsStale': len(ssense_items) - len(published),
+        'heldAsStale': len(ssense_items) - len(published) if not is_baseline_run else 0,
+        'heldAsBaseline': len(ssense_items) if is_baseline_run else 0,
     }
     atomic_write_json(os.path.join(DATA, 'monthly-run-report.json'), report)
 
+    if is_baseline_run:
+        print(f"Monthly update: baseline run, 0 published ({len(ssense_items)} SSENSE items recorded as "
+              f"the starting snapshot; next run will publish only genuinely new-since-then items).")
+        return
     print(f"Monthly update complete: {len(published)} published retail items; "
           f"{report['sources']['media']['held']} media + {report['sources']['instagram']['held']} SNS mentions held unmatched; "
           f"SSENSE={ssense.get('status')} media={media.get('status')} instagram={instagram.get('status')}")
