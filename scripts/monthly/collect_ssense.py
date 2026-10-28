@@ -23,6 +23,7 @@ from curl_cffi import requests as curl_requests
 
 from common import (BROWSER_HEADERS, atomic_write_json, canonical_url, is_kids_item, is_sneaker_title,
                      kst_now, short_id)
+from scrapingbee_client import ScrapingBeeClient
 
 CATEGORIES = [
     {'gender': 'men', 'url': 'https://www.ssense.com/en-us/men/shoes/sneakers'},
@@ -36,7 +37,15 @@ def image_url(sku):
     return f'https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/{sku}_1.jpg'
 
 
-def fetch(url, attempts=3):
+def fetch(url, attempts=3, bee=None):
+    """Direct curl_cffi first; on a hard block, retry through ScrapingBee.
+
+    SSENSE serves this fine to a residential IP but answers 403 to GitHub
+    Actions' datacenter ranges (confirmed: 1,100 items collected locally,
+    403 on every page from CI the same hour). ScrapingBee's proxies are not
+    in that blocklist, so it's the fallback that makes the scheduled run
+    work at all - without a key, the 403 stands and is reported as such.
+    """
     last_error = None
     for attempt in range(attempts):
         try:
@@ -44,9 +53,16 @@ def fetch(url, attempts=3):
             if r.status_code == 200:
                 return r.text
             last_error = f'http-{r.status_code}'
+            if r.status_code in (401, 403, 407, 429):
+                break  # a block won't clear by retrying the same way
         except Exception as e:
             last_error = str(e)
         time.sleep(1.5 * (attempt + 1))
+    if bee is not None and bee.has_key:
+        try:
+            return bee.fetch(url, validate=lambda h: 'application/ld+json' in h)
+        except RuntimeError as e:
+            raise RuntimeError(f'{last_error}; scrapingbee: {e}')
     raise RuntimeError(last_error or 'unknown-fetch-error')
 
 
@@ -63,7 +79,7 @@ def parse_products(html):
     return out
 
 
-def collect_category(gender, listing_url, checked_at, diagnostics):
+def collect_category(gender, listing_url, checked_at, diagnostics, bee=None):
     seen_urls = set()
     items = []
     status = {'gender': gender, 'listingUrl': listing_url, 'pages': 0, 'responses': 0,
@@ -71,7 +87,7 @@ def collect_category(gender, listing_url, checked_at, diagnostics):
     for page in range(1, MAX_PAGES + 1):
         page_url = f'{listing_url}?page={page}'
         try:
-            html = fetch(page_url)
+            html = fetch(page_url, bee=bee)
             status['responses'] += 1
         except Exception as e:
             status['errors'].append({'url': page_url, 'error': str(e)})
@@ -137,9 +153,10 @@ def main():
     checked_at = kst_now().isoformat()
     diagnostics = []
     items = []
+    bee = ScrapingBeeClient()
     for cat in CATEGORIES:
         try:
-            items.extend(collect_category(cat['gender'], cat['url'], checked_at, diagnostics))
+            items.extend(collect_category(cat['gender'], cat['url'], checked_at, diagnostics, bee=bee))
         except Exception as e:
             diagnostics.append({'gender': cat['gender'], 'listingUrl': cat['url'], 'errors': [{'error': str(e)}]})
 
@@ -149,6 +166,7 @@ def main():
         'checkedAt': checked_at,
         'items': items,
         'diagnostics': diagnostics,
+        'scrapingBeeCreditsUsed': bee.credits_used,
     }
     atomic_write_json(args.out, result)
     print(f"SSENSE collection: {result['status']} — {len(items)} sneaker items across "

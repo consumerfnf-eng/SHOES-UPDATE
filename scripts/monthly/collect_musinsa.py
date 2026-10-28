@@ -17,6 +17,7 @@ import time
 from curl_cffi import requests as curl_requests
 
 from common import BROWSER_HEADERS, atomic_write_json, is_kids_item, kst_now
+from scrapingbee_client import ScrapingBeeClient
 
 # Musinsa's own category 103004 is already scoped to sneakers, so (unlike
 # SSENSE/Lyst) names rarely spell out "sneakers" explicitly - only exclude
@@ -28,7 +29,13 @@ NEXT_DATA_RE = re.compile(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.
 TOP_N = 50
 
 
-def fetch(url, attempts=3):
+def fetch(url, attempts=3, bee=None):
+    """Direct curl_cffi first; on a hard block, retry through ScrapingBee.
+
+    Musinsa serves this fine to a residential IP but answers 403 to GitHub
+    Actions' datacenter ranges (confirmed: 50 ranked items locally, 403 from
+    CI the same hour), so the scheduled run needs the proxy fallback.
+    """
     last_error = None
     for attempt in range(attempts):
         try:
@@ -36,9 +43,16 @@ def fetch(url, attempts=3):
             if r.status_code == 200:
                 return r.text
             last_error = f'http-{r.status_code}'
+            if r.status_code in (401, 403, 407, 429):
+                break
         except Exception as e:
             last_error = str(e)
         time.sleep(1.5 * (attempt + 1))
+    if bee is not None and bee.has_key:
+        try:
+            return bee.fetch(url, validate=lambda h: '__NEXT_DATA__' in h)
+        except RuntimeError as e:
+            raise RuntimeError(f'{last_error}; scrapingbee: {e}')
     raise RuntimeError(last_error or 'unknown-fetch-error')
 
 
@@ -67,7 +81,8 @@ def main():
     diagnostics = [{'url': CATEGORY_URL}]
     items = []
     try:
-        html = fetch(CATEGORY_URL)
+        bee = ScrapingBeeClient()
+        html = fetch(CATEGORY_URL, bee=bee)
         goods = extract_list(html)
         if goods is None:
             diagnostics[0]['error'] = 'NEXT_DATA_LIST_NOT_FOUND'
