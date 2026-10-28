@@ -29,16 +29,14 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements-trends.txt
-      - name: Restore Instagram session (if the user registered one)
-        if: ${{ secrets.IG_SESSION_B64 != '' }}
-        env:
-          IG_SESSION_B64: ${{ secrets.IG_SESSION_B64 }}
-          IG_USERNAME: ${{ secrets.IG_USERNAME }}
-        run: echo "IG session will be restored to a temp file in-process by collect_instagram.py; nothing is written to disk here."
       - name: Collect retail/media/SNS monthly snapshot
+        # IG_SESSION_B64 (if the user has registered one) is restored to a
+        # temp file in-process by collect_instagram.py and removed when it
+        # finishes; nothing is ever written to disk by this workflow itself.
         env:
           IG_USERNAME: ${{ secrets.IG_USERNAME }}
           IG_SESSION_B64: ${{ secrets.IG_SESSION_B64 }}
+          SCRAPINGBEE_API_KEY: ${{ secrets.SCRAPINGBEE_API_KEY }}
         run: |
           if [ "${{ github.event_name }}" = 'workflow_dispatch' ] && [ "${{ inputs.force }}" = 'true' ]; then
             npm run monthly
