@@ -1806,6 +1806,48 @@
       "sha256": "b4a2ef0e0db66695d9819091e30007f7ced1d0d8ca9a57b73e943e8615ef14e6",
       "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/7d5c394e-4fec-4a11-89c0-a9cf2e5feb09/Large/867926V3MS03063_A.jpg?v=1",
       "checkedAt": "2026-10-28T09:53:42.291Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/4f9cc626-0b8c-47bc-ba08-63d69bc3fc9f/Large/A007OIV74J31663_A.jpg?v=1": {
+      "path": "/images/f3b511223e332359d28cb6d9f40d22aaa959533a1c11405414486acb393d99ac.jpg",
+      "sha256": "f3b511223e332359d28cb6d9f40d22aaa959533a1c11405414486acb393d99ac",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/4f9cc626-0b8c-47bc-ba08-63d69bc3fc9f/Large/A007OIV74J31663_A.jpg?v=1",
+      "checkedAt": "2026-10-29T12:01:44.260Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/cd758730-e8c9-4d4f-828c-b8fafb62c336/Medium/865704WSTGL5159_X.jpg?v=3": {
+      "path": "/images/4d4a9e8db3e3246a3083e54068f2174639bdaa108a522427c431110579391c3a.jpg",
+      "sha256": "4d4a9e8db3e3246a3083e54068f2174639bdaa108a522427c431110579391c3a",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/cd758730-e8c9-4d4f-828c-b8fafb62c336/Medium/865704WSTGL5159_X.jpg?v=3",
+      "checkedAt": "2026-10-29T12:01:44.418Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/2af40137-53ac-47d6-9420-9ffc8297bbbc/Medium/865704WSTSU9020_X.jpg?v=1": {
+      "path": "/images/412a1716c0fd5815126e2937ed376ecb1e242107e0124b1570804a2468660c36.jpg",
+      "sha256": "412a1716c0fd5815126e2937ed376ecb1e242107e0124b1570804a2468660c36",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/2af40137-53ac-47d6-9420-9ffc8297bbbc/Medium/865704WSTSU9020_X.jpg?v=1",
+      "checkedAt": "2026-10-29T12:01:44.423Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/f7bbeb60-a2e0-41cb-b9e3-8f188d46e7d4/Medium/865704WSTSU1920_X.jpg?v=1": {
+      "path": "/images/d5aa01b37c29353ac09ac84a8882415027a777296bf5a0709476b2a69c8dd9b0.jpg",
+      "sha256": "d5aa01b37c29353ac09ac84a8882415027a777296bf5a0709476b2a69c8dd9b0",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/f7bbeb60-a2e0-41cb-b9e3-8f188d46e7d4/Medium/865704WSTSU1920_X.jpg?v=1",
+      "checkedAt": "2026-10-29T12:01:44.428Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/af4f0fb5-34df-441a-bd95-257f44fd14ee/Medium/542436WTKZM1018_X.jpg?v=2": {
+      "path": "/images/cfc76ede58beec55d53192381a6e38d719bc58dd90d909dee4ccd5c23cdbfe52.jpg",
+      "sha256": "cfc76ede58beec55d53192381a6e38d719bc58dd90d909dee4ccd5c23cdbfe52",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/af4f0fb5-34df-441a-bd95-257f44fd14ee/Medium/542436WTKZM1018_X.jpg?v=2",
+      "checkedAt": "2026-10-29T12:01:44.437Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/230dba97-e3aa-4a81-bb01-045a18893ec6/Thumbnail/876113V3QE09866_A.jpg?v=1": {
+      "path": "/images/5dffd02dcebcba91dc1418be01d38ffae66e3ae515e4808c3d1fb8b41d61c210.jpg",
+      "sha256": "5dffd02dcebcba91dc1418be01d38ffae66e3ae515e4808c3d1fb8b41d61c210",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/230dba97-e3aa-4a81-bb01-045a18893ec6/Thumbnail/876113V3QE09866_A.jpg?v=1",
+      "checkedAt": "2026-10-29T12:01:44.959Z"
+    },
+    "https://bottega-veneta.dam.kering.com/asset/ae48988c-1b5f-4e24-9750-67f0f4eb290b/Thumbnail/876113V6VE01684_A.jpg?v=2": {
+      "path": "/images/bdcc62066cd43348c9724739bdcd4540b6c70f32e62dd695b579a0c1c2d2908d.jpg",
+      "sha256": "bdcc62066cd43348c9724739bdcd4540b6c70f32e62dd695b579a0c1c2d2908d",
+      "sourceUrl": "https://bottega-veneta.dam.kering.com/asset/ae48988c-1b5f-4e24-9750-67f0f4eb290b/Thumbnail/876113V6VE01684_A.jpg?v=2",
+      "checkedAt": "2026-10-29T12:01:44.964Z"
     }
   }
 }

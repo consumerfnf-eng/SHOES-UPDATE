@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-29T10:58:01.421Z",
+  "checkedAt": "2026-10-29T12:01:35.435Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -17725,6 +17725,694 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-64ceeb1ca08035dda9c8",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-96028b665a32f70520d8",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-6004a799c11a0258cdbb",
+      "brand": "Nike",
+      "name": "Nike P-6000",
+      "reason": "re-release-launched-2026-06-29"
+    },
+    {
+      "id": "arrival-b804f21eef534e7b7433",
+      "brand": "Balenciaga",
+      "name": "Women's Cropped Crewneck in Dark Yellow",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-22ebf522b2eec9586de8",
+      "brand": "Prada",
+      "name": "Leather mules",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-58325eaeff063c40acfc",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-ca2dc05ba309631b5568",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-4fa57893d57c57bf5c2a",
+      "brand": "Prada",
+      "name": "Rubber platform sandals",
+      "reason": "casual-sandal-unverified"
+    },
+    {
+      "id": "arrival-66062eeb55b24acea0b6",
+      "brand": "Prada",
+      "name": "Leather mules",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-9c7a49c2c00400a3ada3",
+      "brand": "Prada",
+      "name": "Shuffle antiqued leather boat shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-4b87285662c8d984ca0c",
+      "brand": "Prada",
+      "name": "Shuffle antiqued leather boat shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-929a66d18acb32ebb99a",
+      "brand": "FILA",
+      "name": "푸퍼 미니 토트백",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-fc23187148d9b4d14de2",
+      "brand": "FILA",
+      "name": "발레리나 더플백 v3",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-adc248ce997411ebdad9",
+      "brand": "FILA",
+      "name": "기모 그래픽 후드티",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-9707b66ee1f4da4c619f",
+      "brand": "FILA",
+      "name": "기모 그래픽 후드티",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-ac761c2f874f03f19318",
+      "brand": "FILA",
+      "name": "기모 그래픽 후드티",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-7d42f139426b964b1455",
+      "brand": "FILA",
+      "name": "마이크로플리스 아노락",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-5dddfbf17546cf4627ed",
+      "brand": "FILA",
+      "name": "마이크로플리스 아노락",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-3fb456624b11f27eb37a",
+      "brand": "Bottega Veneta",
+      "name": "Sardine Hair Comb",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-cb70f23bc29e5a003366",
+      "brand": "FILA",
+      "name": "마이크로플리스 아노락",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-221840c170637a5292b5",
+      "brand": "On",
+      "name": "Cloud X Tempo",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-0546be3a881eb16b8758",
+      "brand": "FILA",
+      "name": "마이크로플리스 아노락",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-573f499ab09a9ad7c03c",
+      "brand": "On",
+      "name": "Women's Cloud X Tempo Ivory | Ice",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-6bb00fbd61faa44ae587",
+      "brand": "On",
+      "name": "Women's Cloud X Tempo Ivory | Camellia",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-1bc0ce3c2b95c89e16ea",
+      "brand": "FILA",
+      "name": "에센셜 쉐르파 후드집업",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-483a282187a857f3c65d",
+      "brand": "On",
+      "name": "Women's Cloud X Tempo Ivory | Storm",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-90e927adcd1b9c489104",
+      "brand": "Nike",
+      "name": "Nike Run Swift 3",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-45b061f11c5d71ee550e",
+      "brand": "Nike",
+      "name": "Nike Run Swift 3",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-cdf2cb4311b436b993ba",
+      "brand": "Nike",
+      "name": "Kobe 3 Low Protro \"Mamba Eterno\"",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-665677f003f9141b1f96",
+      "brand": "Onitsuka Tiger",
+      "name": "WOMEN'S GRAPHIC TEE",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-6e7456ff47cd4c44a5c5",
+      "brand": "Nike",
+      "name": "Nike Run Defy",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-7c5eb26f21e32b2fcf23",
+      "brand": "Onitsuka Tiger",
+      "name": "WOMEN'S GRAPHIC TEE",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-b44d1c38b2a0055f9e13",
+      "brand": "Nike",
+      "name": "Nike Interact Run",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-d5bf717403d663e06bd7",
+      "brand": "Onitsuka Tiger",
+      "name": "OVERSIZED GRAPHIC TEE",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-a51e1fd1e68656e0c121",
+      "brand": "Nike",
+      "name": "NikeLab | Running",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-875f424a18bd41bc29a1",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 PARATY",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-5fa6a5fa04d756633d5f",
+      "brand": "Nike",
+      "name": "Jordan Brooklyn",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-534281f67af7d06464ee",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 PARATY",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-4646f708f520f8e8f6f3",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 PARATY",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-e4ef188c918a9e0d6029",
+      "brand": "Converse",
+      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star Lift Double Stack My Melody™ & Kuromi™",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-cbdeba776d23c7cae5c7",
+      "brand": "Converse",
+      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™ & Kuromi™",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-79c2917e9bdad12dfc00",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 PARATY",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-1edbf6c0122e87824a1e",
+      "brand": "Converse",
+      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-451a35f6fcc86b64a729",
+      "brand": "Converse",
+      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™ & Kuromi™",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-f63a4a42a919dab8de75",
+      "brand": "Converse",
+      "name": "Converse x Hello Kitty® and Friends Chuck 70 My Melody™ & Kuromi™",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-32f122f4f2d1cf61a44f",
+      "brand": "Converse",
+      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™ & Kuromi™",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-a47070c18f1c085a0515",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 PARATY",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-941563cfd923dff4bcd5",
+      "brand": "Brooks",
+      "name": "Ghost 18",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-0ff335f378354e0a8e23",
+      "brand": "Onitsuka Tiger",
+      "name": "SHORT SLEEVE TEE",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-182dfc0ce8b3dd6e18ee",
+      "brand": "Converse",
+      "name": "SHAI 001 Lace Up",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-14f0b988ed3a8f5939ce",
+      "brand": "Brooks",
+      "name": "Ghost 18",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-26ead1c247819dbdbf50",
+      "brand": "Converse",
+      "name": "SHAI 001 Lace Up",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-72866ff43fe0dafd5d1c",
+      "brand": "Brooks",
+      "name": "Ghost 18",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-c1b341afbc49177a204f",
+      "brand": "Converse",
+      "name": "SHAI 001 Lace Up",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-b0ab272a1f23230e2885",
+      "brand": "Brooks",
+      "name": "Ghost Max 4",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-3ff2adb74d0dec007dbf",
+      "brand": "Converse",
+      "name": "SHAI 001 Lace Up",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-22c18cfdfe4e4202fc5e",
+      "brand": "Brooks",
+      "name": "Ghost Max 4",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-de1b3c171c5ee9cc24fc",
+      "brand": "Converse",
+      "name": "SHAI 001 Lace Up",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-23f794e6cf065d97b342",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Vest",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-1886454fe20eccc327b3",
+      "brand": "Converse",
+      "name": "Converse x GOLF le FLEUR Pro Leather",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-24c1b35536deba7a6d7c",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Jogger 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-40fc0800d0af50e0ad02",
+      "brand": "Converse",
+      "name": "Converse x GOLF le FLEUR Pro Leather",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-786c3376e8a8cd38c7bb",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Jogger 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-d3e96a59f2501aa5fd9b",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Jogger 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-a8d3a56d9ca6a4c1ade9",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Jogger 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-43e4c2a4c7a42d363872",
+      "brand": "Converse",
+      "name": "Chuck 70 Día de Muertos",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-cb969f8576335897ecbe",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Jogger 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-1f14b39d6b6c79e8c417",
+      "brand": "Converse",
+      "name": "Chuck Taylor All Star Velvet Ruffle",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-6ec3aee6f2b541930326",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Hybrid Glove",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-f74c25de90f735dfeaad",
+      "brand": "Reebok",
+      "name": "Club C Revenge Vintage Shoes",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-4a6d5dfe126f71ec306f",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Hybrid Glove",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-77557e39141c42754a89",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Hybrid Glove",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-9fd34bb5895da117ac7a",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-fa6ea2343ddefd3d30da",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-1095e516807e834f6907",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-9ce285cfa23057c8e19c",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-04aff8a7501d6544cae0",
+      "brand": "Under Armour",
+      "name": "ColdGear® NEOLAST™",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-2a4f4a405c51d1e8f6ba",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-665b80c32537278941f1",
+      "brand": "Under Armour",
+      "name": "UA Vanish Elite Jacquard",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-2accdd081476535ce849",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-f5502b3b2cc83e58d670",
+      "brand": "Under Armour",
+      "name": "ColdGear® NEOLAST™",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-7f752a23f76a1bcaed03",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-d09f437148676271492d",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Relaxed Fit: Glide-Step - Fater",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-284b3558e0a730448447",
+      "brand": "Under Armour",
+      "name": "UA Utility Pro Pinstripe",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-1182ee3b54a78fbe64b3",
+      "brand": "Skechers",
+      "name": "Work Slip-Resistant Relaxed Fit: Consistent 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-698187706592c990156d",
+      "brand": "Skechers",
+      "name": "GO RUN Now - Lightdrive",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-07c1652670440dae2bf7",
+      "brand": "Skechers",
+      "name": "Sprinta",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-7b116e4e0b45527d70c3",
+      "brand": "Under Armour",
+      "name": "ColdGear® Printed",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-5a9b6ba05d3fa09be8cd",
+      "brand": "Skechers",
+      "name": "Sprinta",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-42068d793d68ee3cf24a",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-143dc4160a7ed45df54e",
+      "brand": "Under Armour",
+      "name": "UA x Sharpie HeatGear®",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-022635e6aafb54660008",
+      "brand": "Under Armour",
+      "name": "UA Cozy",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-34c1eb385f7249c0625e",
+      "brand": "Skechers",
+      "name": "S-Lights: Wave 92 Lights",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-1f18d01c2e67aaf0dae5",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-ccd4bd15a9976ff9d83b",
+      "brand": "Skechers",
+      "name": "S-Lights: Wave 92 Lights",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-486e6fc197e17873b4e3",
+      "brand": "Skechers",
+      "name": "Skechers SKX_2 Jr Youth TF",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-f4796afe68bbea2f32c4",
+      "brand": "KEEN",
+      "name": "Men's Targhee Apex Waterproof Hiking Shoe",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-80f0a80ae966f3f91069",
+      "brand": "Alo",
+      "name": "Conquer 1/4 Zip Reform Long Sleeve",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-34b126816b20a70477e4",
+      "brand": "Alo",
+      "name": "Conquer Max 4 Pocket Pant",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-85dbdc9719003c2df7a4",
+      "brand": "Alo",
+      "name": "Double Take Short Sleeve",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-11c088522a16f8ae2a16",
+      "brand": "Melissa",
+      "name": "Wave Platform",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-5153b086e1da44819cf6",
+      "brand": "Melissa",
+      "name": "Wave Platform",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-ec1ab02b5dd83eeb0228",
+      "brand": "Alo",
+      "name": "7\" Conquer React Performance Short",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-0fb6138f976c9f3e4a59",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-c39318219262a1cb6304",
+      "brand": "Melissa",
+      "name": "Wave Platform",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-35ae96329380f5c9b52a",
+      "brand": "Havaianas",
+      "name": "Women's Summer Bliss Slim Flip Flops",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-b84a51a53a56d69ff9b5",
+      "brand": "Havaianas",
+      "name": "Women's Brazil Twist Flip Flops",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-d8aac04615484f3361cf",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flip Flops",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-a9b9a5e3b7a7e9dbf8dd",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Flor de Fita Flip Flops",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-dd538fb61dfa8e7be0b7",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Sweet Forest Flip Flops",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-737fbd9492217af98539",
+      "brand": "Havaianas",
+      "name": "Women's Tradicional Flip Flops",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-f5537639647101eea7eb",
+      "brand": "Havaianas",
+      "name": "Kids' Fluffy Flip Flops",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-99f3eeaa41f0072fdfaf",
+      "brand": "Havaianas",
+      "name": "Kids' Slim Flip Flops",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-ce48f5dedc5e9067a72d",
+      "brand": "Havaianas",
+      "name": "Kids' Slim Flip Flops",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-b041d0ee6db49031edd1",
+      "brand": "Havaianas",
+      "name": "Havaianas Fantasia",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-54e86503520d083532a5",
+      "brand": "Havaianas",
+      "name": "Havaianas Square",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "official-nike-io6259-800",
+      "brand": "Nike",
+      "name": "Kobe 8 Protro \"Shanghai Fireworks\"",
+      "reason": "excluded-footwear"
+    },
+    {
       "id": "arrival-175b05a389f039c50157",
       "brand": "FILA",
       "name": "[FILA X T] 스피드템포 플러스",
@@ -17749,6 +18437,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-da444edfe6361adb438b",
+      "brand": "Nike",
+      "name": "Air Force 1 \"University of Oregon\"",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-18a29b14dad2bc54a1fb",
       "brand": "Nike",
       "name": "Air Force 1 \"University of Texas\"",
@@ -17767,15 +18461,21 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-22cd4152144dd294b876",
+      "brand": "Nike",
+      "name": "Air Jordan 1 Low SE 'Lola Bunny'",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-f73defdf522481e74884",
       "brand": "Nike",
       "name": "Air Jordan 1 Low SE 'Magic Ball'",
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-781d8bc77d2d3bb253f6",
+      "id": "arrival-2ac8fa5771f1f2139cdf",
       "brand": "Nike",
-      "name": "Air Jordan 1 Mid SE",
+      "name": "Air Jordan 1 Low SE 'Magic Ball'",
       "reason": "representative-photo-review-required"
     },
     {
@@ -17791,9 +18491,21 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-e725bd064fb7f53f9047",
+      "brand": "Nike",
+      "name": "Air Jordan 3 Retro 'Fireside'",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "live-9aac13c20a3a27d9",
       "brand": "Nike",
       "name": "Air Jordan 3 Retro \"Fireside\"",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-9881ab6ce90b72a36ead",
+      "brand": "Nike",
+      "name": "Air Jordan 3 Retro \"Space Jam\"",
       "reason": "representative-photo-review-required"
     },
     {
@@ -17839,9 +18551,9 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-8e630a0b5948b017d489",
-      "brand": "Dior",
-      "name": "B27 Uptown Low-Top Sneaker",
+      "id": "arrival-14410c0b4466b5b90943",
+      "brand": "Prada",
+      "name": "America’s Cup",
       "reason": "representative-photo-review-required"
     },
     {
@@ -17941,6 +18653,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-1c09dc286f1c408073d8",
+      "brand": "Loewe",
+      "name": "Cloudsolo Hiker sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-013e5822a4629f00b75e",
       "brand": "Loewe",
       "name": "Cloudtilt Cosmic sneaker",
@@ -17965,6 +18683,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-73e664d27415761c691f",
+      "brand": "Loewe",
+      "name": "Cloudtilt Cosmic sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "live-57dd763eac32e677",
       "brand": "On",
       "name": "Cloudvista 3 Waterproof",
@@ -17974,24 +18698,6 @@
       "id": "live-fb518061bb0db473",
       "brand": "On",
       "name": "Cloudvista 3 Waterproof",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-99acc7c60246e8d23d1c",
-      "brand": "The North Face",
-      "name": "Clyffe™",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-6453c44087930a3b1ebc",
-      "brand": "The North Face",
-      "name": "Clyffe™ Mid Insulated Waterproof Shoes",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-452966633658173542dd",
-      "brand": "The North Face",
-      "name": "Clyffe™ Slip-On",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18019,15 +18725,33 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-fc23d27c2addb23d3efc",
+      "brand": "Prada",
+      "name": "Court leather sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-0ea14260dd1e5d2b4b1a",
+      "brand": "Prada",
+      "name": "Court leather sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-41d6dffd386c46d7e110",
       "brand": "Prada",
       "name": "Court Re-Nylon sneakers",
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-86e87ed4a55f9de84053",
-      "brand": "Vans",
-      "name": "Crosspath XC Shoe",
+      "id": "arrival-8c4a4fe47f33320c6e20",
+      "brand": "Prada",
+      "name": "Court Re-Nylon sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-0e5d0b379f96492e3fd2",
+      "brand": "Prada",
+      "name": "Court Re-Nylon sneakers",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18049,9 +18773,45 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-d78122e947ead9cc3ae7",
+      "id": "arrival-5dc19c77012be507d15f",
       "brand": "Dior",
-      "name": "Dior Saltwind Sneaker",
+      "name": "Dior Ribbon Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-594be1fe28d65756f146",
+      "brand": "Dior",
+      "name": "Dior Ribbon Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-a782c34b58bd25a8b83c",
+      "brand": "Dior",
+      "name": "Dior Ribbon Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-803df2991350c4be81d4",
+      "brand": "Dior",
+      "name": "Dior Ribbon Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-c9751bfc0b37c0a1b7e8",
+      "brand": "Dior",
+      "name": "Dior Ribbon Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-b054aefbe52e8c2704f1",
+      "brand": "Dior",
+      "name": "Dior Ribbon Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-f568c3a249046cb892e3",
+      "brand": "Dior",
+      "name": "Dior Ribbon Sneaker",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18061,27 +18821,75 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "lv-frontrow-sneaker-1akyho",
-      "brand": "Louis Vuitton",
-      "name": "Frontrow Sneaker",
+      "id": "arrival-1885940ceb0b34d6d57d",
+      "brand": "Axel Arigato",
+      "name": "Flair Runner",
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "lv-frontrow-sneaker-1akyh8",
-      "brand": "Louis Vuitton",
-      "name": "Frontrow Sneaker",
+      "id": "arrival-e90650f01f166c81af1e",
+      "brand": "Axel Arigato",
+      "name": "Flair Runner",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-5b91572ccbb3c20b2062",
+      "brand": "Axel Arigato",
+      "name": "Flair Runner",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-111ef7c88495e8c91237",
+      "brand": "Axel Arigato",
+      "name": "Flair Runner",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-441303590dc2d152b931",
+      "brand": "Axel Arigato",
+      "name": "Flair Runner",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-dd614384d3ef644222bb",
+      "brand": "Axel Arigato",
+      "name": "Flair Runner",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-7a7336b952ca6f24ee5f",
+      "brand": "Axel Arigato",
+      "name": "Flair Runner",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-290a69b6ee724f7a07fd",
+      "brand": "Axel Arigato",
+      "name": "Flair Runner",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-fac6bf4cc0f4bf5dfbfe",
+      "brand": "Axel Arigato",
+      "name": "Flair Suede Runner",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-ad1c7691a507bea41b14",
+      "brand": "Axel Arigato",
+      "name": "Flair Suede Runner",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-fa252f0f11a4a54f4a5c",
+      "brand": "Axel Arigato",
+      "name": "Flair Suede Runner",
       "reason": "representative-photo-review-required"
     },
     {
       "id": "live-943b63ba22cfe3dd",
       "brand": "On",
       "name": "generation Cloudsoma",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-e213774a9e756646678e",
-      "brand": "The North Face",
-      "name": "Glenclyffe™",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18097,6 +18905,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-6a124c67a55f595916d8",
+      "brand": "Prada",
+      "name": "High-top Re-Nylon sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-9fc7f6c1e81f377572f0",
       "brand": "Skechers",
       "name": "Hotshot - Cozy Fit Wild Style",
@@ -18106,6 +18920,12 @@
       "id": "arrival-0ec26cccc31ef16f5cf4",
       "brand": "Skechers",
       "name": "Hotshot - Cozy Fit Wild Style",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-e3810821ff88742b1bcc",
+      "brand": "Mizuno",
+      "name": "HYPERWARP 96",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18139,81 +18959,15 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-0e1f95a859c42f7ad113",
-      "brand": "Melissa",
-      "name": "Image 163: Side view of a black and beige X Bend sneaker with yellow sole",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-01a1e0a0f29f3ca3e484",
-      "brand": "Melissa",
-      "name": "Image 167: Side view of a black and white cow print X Bend sneaker with beige sole",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-a60cb9e6859d37518110",
-      "brand": "Melissa",
-      "name": "Image 167: Side view of a black Camp platform Sneaker with black laces",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-0bae2c72c7907868d9d5",
-      "brand": "Melissa",
-      "name": "Image 168: Side view of a black X Bend sneaker with beige sole",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-e422feda221568fd5cd8",
-      "brand": "Melissa",
-      "name": "Image 171: Side view of a brown Camp platform Sneaker with yellow laces and sole",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-8250f52275704939d0b0",
-      "brand": "Melissa",
-      "name": "Image 172: Side view of a beige Camp platform Sneaker with beige laces",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-9d3406690248af38ab1f",
-      "brand": "Melissa",
-      "name": "Image 173: Side view of an army green Camp platform Sneaker with brown laces",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-aa3f56708f02df7580ee",
       "brand": "Brooks",
       "name": "Image 183: Cascadia Elite image number 1",
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-c76bdbf9426709d0ff39",
-      "brand": "Salomon",
-      "name": "Image 3: Main product image of AERO GLIDE 4 GRADIENT - Men · Road running shoes",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-0bdb63e7d3fb0a317a93",
-      "brand": "Melissa",
-      "name": "Image 332: Side view of an orange/green/pink X Loop sneaker",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-83926b655b48f07b2de7",
-      "brand": "Melissa",
-      "name": "Image 336: Side view of an beige X Loop sneaker",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-b1f73719d7a481d78f4f",
-      "brand": "Melissa",
-      "name": "Image 337: Side view of a black X Loop sneaker with beige sole",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-2b12038bdb536bbc161e",
-      "brand": "Salomon",
-      "name": "Image 4: Main product image of AERO GLIDE 4 GRADIENT - Women · Road running shoes",
+      "id": "arrival-7d35e226807bfaa46955",
+      "brand": "On",
+      "name": "Image 373: On Weather Jacket Insulated Brume & Hare Women – Performance running, outdoor, trail running Jackets",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18223,27 +18977,27 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-7d35e226807bfaa46955",
+      "id": "arrival-a6e40e415ae3aec7f48a",
       "brand": "On",
-      "name": "Image 422: On Weather Jacket Insulated Brume & Hare Women – Performance running, outdoor, trail running Jackets",
+      "name": "Image 410: On Trail-T Solar Brume Women – Trail running, UPF40+, warm and sunny weather running Trail running Tops and t-shirts",
       "reason": "representative-photo-review-required"
     },
     {
       "id": "arrival-ed77755b36cf4082da1c",
       "brand": "On",
-      "name": "Image 446: On Weather Jacket Insulated Brume & Hare Men – Performance running, outdoor, trail running Jackets",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-a6e40e415ae3aec7f48a",
-      "brand": "On",
-      "name": "Image 450: On Trail-T Solar Brume Women – Trail running, UPF40+, warm and sunny weather running Trail running Tops and t-shirts",
+      "name": "Image 410: On Weather Jacket Insulated Brume & Hare Men – Performance running, outdoor, trail running Jackets",
       "reason": "representative-photo-review-required"
     },
     {
       "id": "arrival-88f56f1ea62e855894a5",
       "brand": "Salomon",
       "name": "Image 5: Main product image of XT-MM6 MAISON MARGIELA - Unisex · Sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-7b9568295a2c4ec03342",
+      "brand": "Bottega Veneta",
+      "name": "Image 53: Orbit Exclusive",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18331,12 +19085,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-e41f7477d4ff320d379f",
-      "brand": "Louis Vuitton",
-      "name": "LV スニーカリーナ",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-092b588cbbaca7490398",
       "brand": "Skechers",
       "name": "Max Cushioning Endeavour - Thread Path",
@@ -18364,6 +19112,18 @@
       "id": "arrival-8a96505578aa2732926b",
       "brand": "KEEN",
       "name": "Men's A86 Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-8f938d34c588592480df",
+      "brand": "Balenciaga",
+      "name": "Men's Hamptons Worn-out Sneaker in Black",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-d96e99da59620e6835ea",
+      "brand": "Balenciaga",
+      "name": "Men's Hamptons Worn-out Sneaker in White/dark Blue/grey",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18655,6 +19415,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-a837293ff913511f3bcc",
+      "brand": "Balenciaga",
+      "name": "Men's Pace Sneaker in Black",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-2d9e5713c50f4ee5fc5a",
       "brand": "KEEN",
       "name": "Men's Roam Leather Trail Running Shoe",
@@ -18751,6 +19517,24 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-faaea81e9dbd95e02094",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Shoe",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-4ce99d7daf5cdc03f044",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Shoe",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-88ea430314e71af78002",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Shoe",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-294cf75560e08429e8ca",
       "brand": "OOFOS",
       "name": "Men's Slip-On Suede Shoe",
@@ -18802,6 +19586,30 @@
       "id": "arrival-ee4b154fa9d279400e45",
       "brand": "Balenciaga",
       "name": "Men's Triple S.2 Denim Sneaker in Black",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-28a8e9491268540327e1",
+      "brand": "Balenciaga",
+      "name": "Men's Triple S.2 Denim Sneaker in Blue",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-1870c982693bf12d5aba",
+      "brand": "Balenciaga",
+      "name": "Men's Triple S.2 Gradient Sneaker in Blue/white/black/orange",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-46f42b1f5f415d84e721",
+      "brand": "Balenciaga",
+      "name": "Men's Triple S.2 Gradient Sneaker in Green/beige/grey",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-70759bf3da301392c997",
+      "brand": "Balenciaga",
+      "name": "Men's Triple S.2 Gradient Sneaker in Grey",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18919,6 +19727,24 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "live-c59ab2a38ca315b2",
+      "brand": "Reebok",
+      "name": "Men's Zignition Running Shoes",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-8777604cc5d013913d28",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 TGRS",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-82afaf2ae8d49f3ce39b",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 TGRS",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-5c8d9ad90ca938333994",
       "brand": "Mizuno",
       "name": "Mizuno Neo Accera Running Shoes",
@@ -18949,12 +19775,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-3f5378a18de52fefb9d1",
-      "brand": "Nike",
-      "name": "Nike Air Force 1 '07 LV8",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-cb83a1bc7effc4052b20",
       "brand": "Nike",
       "name": "Nike Air Force 1 '07 LV8",
@@ -18964,6 +19784,12 @@
       "id": "arrival-4cf6ec2095965228f0df",
       "brand": "Nike",
       "name": "Nike Air Force 1 '07 SE",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-867735aa2676f37f01ef",
+      "brand": "Nike",
+      "name": "Nike Air Force 1 '07 SE Leopard",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18979,6 +19805,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-772fd1b01f5cd9153e68",
+      "brand": "Nike",
+      "name": "Nike Air Force 1 Mid '07 GORE-TEX Vibram®",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-8c6b5a679ac0a23f4550",
       "brand": "Nike",
       "name": "Nike Air Max 270",
@@ -18988,12 +19820,6 @@
       "id": "arrival-caaeac625e9d97553929",
       "brand": "Nike",
       "name": "Nike Air Max 270",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-624eb0125fa70bd86b7d",
-      "brand": "Nike",
-      "name": "Nike Air Max 90",
       "reason": "representative-photo-review-required"
     },
     {
@@ -19027,21 +19853,9 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-c747b1ccf64ba6c05849",
+      "id": "arrival-748bf7f405d6de03bcae",
       "brand": "Nike",
       "name": "Nike Air Max 95 Big Bubble GORE-TEX",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "official-nike-iv7022-002",
-      "brand": "Nike",
-      "name": "Nike Air Max Ecstasy Plus",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "official-nike-iv7022-001",
-      "brand": "Nike",
-      "name": "Nike Air Max Ecstasy Plus",
       "reason": "representative-photo-review-required"
     },
     {
@@ -19069,15 +19883,15 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-a8d3a94f3cc2d88dc83e",
+      "id": "arrival-68d9325d8cfc0b2f081f",
       "brand": "Nike",
-      "name": "Nike Air Max Solo",
+      "name": "Nike Air Max Plus",
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-0cbafc57104a53d56ec7",
+      "id": "arrival-87aede1beb1c1b622e67",
       "brand": "Nike",
-      "name": "Nike Pegasus 42 GORE-TEX",
+      "name": "Nike P-6000 CORDURA®",
       "reason": "representative-photo-review-required"
     },
     {
@@ -19093,9 +19907,9 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-b993ff6c9717467ae25d",
+      "id": "arrival-331ce41e336e16b1aea4",
       "brand": "Nike",
-      "name": "Nike Pegasus Plus 2",
+      "name": "Nike Pegasus Premium",
       "reason": "representative-photo-review-required"
     },
     {
@@ -19105,33 +19919,33 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-2450cef43aa0c82942fa",
-      "brand": "Nike",
-      "name": "Nike Vomero 18",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-f2e9cbf244561be9f1fd",
-      "brand": "Nike",
-      "name": "Nike Vomero 18 GORE-TEX",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-176e6c3ebcb53fe51c53",
+      "id": "arrival-39313a93e1969385ead1",
       "brand": "Nike",
       "name": "Nike Vomero Plus",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-84da5e1d6cfa4dc9cd8d",
+      "brand": "Nike",
+      "name": "Nike Vomero Plus",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-bf1589a4815e75de5270",
+      "brand": "Nike",
+      "name": "Nike Vomero Premium",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-89bd44cede9c96b95a2b",
+      "brand": "Nike",
+      "name": "Nike Vomero Premium SP",
       "reason": "representative-photo-review-required"
     },
     {
       "id": "arrival-11c1cb3bd7da6fc39fa3",
       "brand": "Nike",
       "name": "Nike Zoom Vomero 5",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-7b9568295a2c4ec03342",
-      "brand": "Bottega Veneta",
-      "name": "ORBIT IN BLUE VENEZIA A NEW EXPRESSION OF THE LIGHTWEIGHT RUNNER SNEAKER, EXCLUSIVE TO THE AMERICAS",
       "reason": "representative-photo-review-required"
     },
     {
@@ -19147,9 +19961,75 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-6116e298c23a2b38267b",
+      "brand": "PANE",
+      "name": "Pane Light Training Men's Shoes - Blush",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-190436c37ee310706d0d",
+      "brand": "PANE",
+      "name": "Pane Light Training Men's Shoes - Lacquer",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-819f5219b158ccff7b07",
+      "brand": "PANE",
+      "name": "Pane Light Training Men's Shoes - Obsidian",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-541016da17ca8d801761",
+      "brand": "PANE",
+      "name": "Pane Light Training Men's Shoes - Pristine",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-9c0cc5f8b788101ebcf3",
+      "brand": "PANE",
+      "name": "Pane Light Training Men's Shoes - Suntan",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-188f23223c96a71a2dee",
+      "brand": "PANE",
+      "name": "Pane Light Training Men’s Shoes – Travertine",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-3252817b19906fdd85e1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Achromate",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-f59e1206a2d331d57f1d",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Airliner",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-2bbd015a6a9f1934a28f",
       "brand": "PANE",
       "name": "Pane Light Training Nogi Men’s Shoes – Aragon",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-4a2c6bc13907eb54384a",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Artichoke",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-b48b4a9531f3e9ca23e7",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Boogie Woogie",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-b9f2be4ace094fda6f5b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Gaily",
       "reason": "representative-photo-review-required"
     },
     {
@@ -19159,9 +20039,63 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-4de686e6c95ec6c754d6",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Gooseberry",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-14b4fe6437ca260c4f9e",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Ground Ginger",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-1ceb3eec191ab1e3ff6f",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Hornet",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-a1e9dbf8058e9b4e3688",
       "brand": "PANE",
       "name": "Pane Light Training Nogi Men’s Shoes – Legolas",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-5128895af6eabda889fd",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Mint",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-59f1c53971e699ebd0f2",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Mystique",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-08c52c0485c47a3a1b74",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Ripe",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-d80c6765b26c6a8963de",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Spice Blaze",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-76745e13eff28af4eaa4",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Willow Creek",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-eacc16979a8c54622cca",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Wolf Moon",
       "reason": "representative-photo-review-required"
     },
     {
@@ -19213,6 +20147,18 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-2b63a9728548e8936508",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Ground Ginger",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-9760be99d50c95692e58",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Hornet",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-9d756d84788744aeafa0",
       "brand": "PANE",
       "name": "Pane Light Training Nogi Women’s Shoes – Legolas",
@@ -19243,9 +20189,87 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-bc3fe9c986635026f778",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Willow Creek",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-d57e3318e922bd1678c1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Wolf Moon",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-b5a6055d12e17dbf4d2c",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Blush",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-465e5f3537f9cd8a724d",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Lacquer",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-79a57c41e7315bc91349",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Obsidian",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-d4c44588182156e9e3ad",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Pristine",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-9952613cb125dfb795fb",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Suntan",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-0f45ec52b6c12485cb11",
       "brand": "PANE",
       "name": "Pane Light Training Women’s Shoes – Travertine",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-5b600c549722d19873af",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Juniper",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-371f6c0ec4da94054eeb",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Opaque",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-c8130381cee39d9ee9d5",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Porcelain",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-f823056a6c6784bd22ea",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Rowan",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-86bc69db3aa4328124b2",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Sterling",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-b9d25970a807dc2bcf41",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes-Manu Bay",
       "reason": "representative-photo-review-required"
     },
     {
@@ -19297,6 +20321,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-c02689fe2495cf1b6cec",
+      "brand": "Prada",
+      "name": "Prada America's Cup metallic leather and bike fabric sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-289598dbbb4e01e81732",
       "brand": "Prada",
       "name": "Prada America's Cup Original sneakers in brushed leather and bike fabric",
@@ -19321,6 +20351,18 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-76b57121179418dbb501",
+      "brand": "Reebok",
+      "name": "Premier Road Ultra",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-7405885005f87920cabe",
+      "brand": "Reebok",
+      "name": "Premier Road Ultra",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-26f40ed3a681a12ca1f9",
       "brand": "Reebok",
       "name": "Premier Road Ultra SV Shoes",
@@ -19330,18 +20372,6 @@
       "id": "arrival-8ec64ae04dcd8e1cc2bf",
       "brand": "Reebok",
       "name": "Reebok x Icecream Board Flip Shoes",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-0ae775ade5264dfca9ea",
-      "brand": "Celine",
-      "name": "ROCKER SNEAKER ; WHITE",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-287bf58c80d0aed610ef",
-      "brand": "Celine",
-      "name": "ROCKER SNEAKER ; WHITE",
       "reason": "representative-photo-review-required"
     },
     {
@@ -19388,12 +20418,6 @@
     },
     {
       "id": "new-20260923-93d0b8e38d1fbe77",
-      "brand": "Axel Arigato",
-      "name": "Squish Sneaker Squish Sneaker",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "new-20260923-1278e39ec4bb9afe",
       "brand": "Axel Arigato",
       "name": "Squish Sneaker Squish Sneaker",
       "reason": "representative-photo-review-required"
@@ -19585,12 +20609,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-2ccaa92138f499af15a0",
-      "brand": "Vans",
-      "name": "Ultrarange 2.0 Shoe",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-d5de5a08da22695a87cf",
       "brand": "Skechers",
       "name": "UNO - Alma De Guerrero",
@@ -19628,6 +20646,12 @@
     },
     {
       "id": "arrival-839969a2c0da9e9b9c66",
+      "brand": "Reebok",
+      "name": "Women's Classic AZ Shoes",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-687d27c7a44bb33e266f",
       "brand": "Reebok",
       "name": "Women's Classic AZ Shoes",
       "reason": "representative-photo-review-required"
@@ -19675,15 +20699,69 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-65fea178237daa9f47f7",
+      "brand": "On",
+      "name": "Women's Cloudrunner 3 Black | Black",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-ca31b3245f4a1595a4e6",
+      "brand": "On",
+      "name": "Women's Cloudrunner 3 Black | Ivory",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-2650e4b92967f4f54877",
+      "brand": "On",
+      "name": "Women's Cloudrunner 3 Frost | Glacier",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-4f61cd8a8502dc9305e4",
+      "brand": "On",
+      "name": "Women's Cloudrunner 3 Ghost | Verdite",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-e321f672a7353eefac70",
+      "brand": "On",
+      "name": "Women's Cloudrunner 3 Ivory | Aquamarine",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-d9024d1052778b4c7344",
+      "brand": "On",
+      "name": "Women's Cloudrunner 3 Myrtle | Platinum",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-11c70a1b25c0748ee2f1",
+      "brand": "On",
+      "name": "Women's Cloudrunner 3 Oyster | Camellia",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-814b293b0602b8735b53",
+      "brand": "On",
+      "name": "Women's Cloudrunner 3 Squash | Saffron",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-8796450ba2a1c9d76523",
+      "brand": "On",
+      "name": "Women's Cloudrunner 3 White | Ivory",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-cd6a6fb19f521b41daa1",
       "brand": "Reebok",
       "name": "Women's Club C 85 Shoes",
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-d6dbeff82084e21afeba",
-      "brand": "Gucci",
-      "name": "Women's Gucci Tempo sneaker",
+      "id": "arrival-7ee786ef03442e6c8816",
+      "brand": "Reebok",
+      "name": "Women's Freestyle Lo Shoes",
       "reason": "representative-photo-review-required"
     },
     {
@@ -20155,6 +21233,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-c43f62d14687b68d70ee",
+      "brand": "OOFOS",
+      "name": "Women's Slip-On Shoe",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-b8d4e788d8663968b933",
       "brand": "Balenciaga",
       "name": "Women's Track Trail Laces Sneaker in Black/pink/blue/beige",
@@ -20293,15 +21377,243 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "official-nike-iv7509-001",
+      "id": "arrival-781d8bc77d2d3bb253f6",
       "brand": "Nike",
-      "name": "Nike Vomero Premium SP",
+      "name": "Air Jordan 1 Mid SE",
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-e725bd064fb7f53f9047",
+      "id": "arrival-8e630a0b5948b017d489",
+      "brand": "Dior",
+      "name": "B27 Uptown Low-Top Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-99acc7c60246e8d23d1c",
+      "brand": "The North Face",
+      "name": "Clyffe™",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-6453c44087930a3b1ebc",
+      "brand": "The North Face",
+      "name": "Clyffe™ Mid Insulated Waterproof Shoes",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-452966633658173542dd",
+      "brand": "The North Face",
+      "name": "Clyffe™ Slip-On",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-86e87ed4a55f9de84053",
+      "brand": "Vans",
+      "name": "Crosspath XC Shoe",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-d78122e947ead9cc3ae7",
+      "brand": "Dior",
+      "name": "Dior Saltwind Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "lv-frontrow-sneaker-1akyho",
+      "brand": "Louis Vuitton",
+      "name": "Frontrow Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "lv-frontrow-sneaker-1akyh8",
+      "brand": "Louis Vuitton",
+      "name": "Frontrow Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-e213774a9e756646678e",
+      "brand": "The North Face",
+      "name": "Glenclyffe™",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-0e1f95a859c42f7ad113",
+      "brand": "Melissa",
+      "name": "Image 163: Side view of a black and beige X Bend sneaker with yellow sole",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-01a1e0a0f29f3ca3e484",
+      "brand": "Melissa",
+      "name": "Image 167: Side view of a black and white cow print X Bend sneaker with beige sole",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-a60cb9e6859d37518110",
+      "brand": "Melissa",
+      "name": "Image 167: Side view of a black Camp platform Sneaker with black laces",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-0bae2c72c7907868d9d5",
+      "brand": "Melissa",
+      "name": "Image 168: Side view of a black X Bend sneaker with beige sole",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-e422feda221568fd5cd8",
+      "brand": "Melissa",
+      "name": "Image 171: Side view of a brown Camp platform Sneaker with yellow laces and sole",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-8250f52275704939d0b0",
+      "brand": "Melissa",
+      "name": "Image 172: Side view of a beige Camp platform Sneaker with beige laces",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-9d3406690248af38ab1f",
+      "brand": "Melissa",
+      "name": "Image 173: Side view of an army green Camp platform Sneaker with brown laces",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-c76bdbf9426709d0ff39",
+      "brand": "Salomon",
+      "name": "Image 3: Main product image of AERO GLIDE 4 GRADIENT - Men · Road running shoes",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-0bdb63e7d3fb0a317a93",
+      "brand": "Melissa",
+      "name": "Image 332: Side view of an orange/green/pink X Loop sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-83926b655b48f07b2de7",
+      "brand": "Melissa",
+      "name": "Image 336: Side view of an beige X Loop sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-b1f73719d7a481d78f4f",
+      "brand": "Melissa",
+      "name": "Image 337: Side view of a black X Loop sneaker with beige sole",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-2b12038bdb536bbc161e",
+      "brand": "Salomon",
+      "name": "Image 4: Main product image of AERO GLIDE 4 GRADIENT - Women · Road running shoes",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-e41f7477d4ff320d379f",
+      "brand": "Louis Vuitton",
+      "name": "LV スニーカリーナ",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-3f5378a18de52fefb9d1",
       "brand": "Nike",
-      "name": "Air Jordan 3 Retro 'Fireside'",
+      "name": "Nike Air Force 1 '07 LV8",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-624eb0125fa70bd86b7d",
+      "brand": "Nike",
+      "name": "Nike Air Max 90",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-c747b1ccf64ba6c05849",
+      "brand": "Nike",
+      "name": "Nike Air Max 95 Big Bubble GORE-TEX",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-iv7022-002",
+      "brand": "Nike",
+      "name": "Nike Air Max Ecstasy Plus",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-iv7022-001",
+      "brand": "Nike",
+      "name": "Nike Air Max Ecstasy Plus",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-a8d3a94f3cc2d88dc83e",
+      "brand": "Nike",
+      "name": "Nike Air Max Solo",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-0cbafc57104a53d56ec7",
+      "brand": "Nike",
+      "name": "Nike Pegasus 42 GORE-TEX",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-b993ff6c9717467ae25d",
+      "brand": "Nike",
+      "name": "Nike Pegasus Plus 2",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-2450cef43aa0c82942fa",
+      "brand": "Nike",
+      "name": "Nike Vomero 18",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-f2e9cbf244561be9f1fd",
+      "brand": "Nike",
+      "name": "Nike Vomero 18 GORE-TEX",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-176e6c3ebcb53fe51c53",
+      "brand": "Nike",
+      "name": "Nike Vomero Plus",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-0ae775ade5264dfca9ea",
+      "brand": "Celine",
+      "name": "ROCKER SNEAKER ; WHITE",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-287bf58c80d0aed610ef",
+      "brand": "Celine",
+      "name": "ROCKER SNEAKER ; WHITE",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "new-20260923-1278e39ec4bb9afe",
+      "brand": "Axel Arigato",
+      "name": "Squish Sneaker Squish Sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-2ccaa92138f499af15a0",
+      "brand": "Vans",
+      "name": "Ultrarange 2.0 Shoe",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-d6dbeff82084e21afeba",
+      "brand": "Gucci",
+      "name": "Women's Gucci Tempo sneaker",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-iv7509-001",
+      "brand": "Nike",
+      "name": "Nike Vomero Premium SP",
       "reason": "representative-photo-review-required"
     },
     {
@@ -20383,12 +21695,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "live-c59ab2a38ca315b2",
-      "brand": "Reebok",
-      "name": "Men's Zignition Running Shoes",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-04d023cd0bbee3168c99",
       "brand": "Onitsuka Tiger",
       "name": "MEXICO 66",
@@ -20404,12 +21710,6 @@
       "id": "arrival-e71e5b6b6fd12355fe88",
       "brand": "Nike",
       "name": "Nike Air Force 1",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-867735aa2676f37f01ef",
-      "brand": "Nike",
-      "name": "Nike Air Force 1 '07 SE Leopard",
       "reason": "representative-photo-review-required"
     },
     {
@@ -20488,12 +21788,6 @@
       "id": "arrival-feb0b1814e04604132eb",
       "brand": "Nike",
       "name": "Nike P-6000 CORDURA®",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-331ce41e336e16b1aea4",
-      "brand": "Nike",
-      "name": "Nike Pegasus Premium",
       "reason": "representative-photo-review-required"
     },
     {
