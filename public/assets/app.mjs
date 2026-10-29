@@ -1,7 +1,7 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes } from './export.mjs';
 import { groupedBrands } from './brand-groups.mjs';
 import {isPublishedFootwear} from './footwear-policy.mjs';
-import { kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, preferWomenVariants, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch, isOverlay, overlayKind, overlayReleaseState, overlayWindowDay, retailerId, trendTerms, trendKeywordMatches } from './catalog-view.mjs';
+import { kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, preferWomenVariants, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch, isOverlay, overlayKind, overlayReleaseState, overlayWindowDay, retailerId, trendTerms, trendTermGroups, trendKeywordMatches } from './catalog-view.mjs';
 
 const $ = id => document.getElementById(id);
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -26,7 +26,7 @@ function activeOf(group){
 }
 function colorChipsMarkup(group, activeId){
   const choices=uniqueColorVariants(group,activeId);
-  if(choices.length===1&&!variantColorLabel(choices[0])&&!choices[0].colorSwatches?.length)return '';
+  if(choices.length===1&&!variantColorLabel(choices[0])&&!choices[0].colorSwatches?.length&&!choices[0].bodyColor)return '';
   const active=group.find(p=>p.id===activeId)||group[0];
   return `<div class="color-chips" role="group" aria-label="색상 선택">${choices.map(p=>{
     const swatch = colorSwatch(p);
@@ -106,8 +106,14 @@ function rebuildProducts() {
   products = products.concat(overlayProducts());
   // Mark everything this week's trend keywords actually match, so the SNS tab
   // can show the real items behind a hashtag instead of only the hashtag.
-  const allTerms=(trends?.keywords||[]).flatMap(k=>trendTerms(k));
-  if(allTerms.length)for(const p of products)if(trendKeywordMatches(p,allTerms))p.snsTrending=true;
+  // How many of this week's trending hashtags name each item. One match puts
+  // it on the SNS tab; the count is what orders it there, so the items the
+  // most hashtags are talking about come first.
+  const keywordTerms=(trends?.keywords||[]).map(k=>trendTermGroups(k)).filter(t=>t.length);
+  if(keywordTerms.length)for(const p of products){
+    const hits=keywordTerms.filter(terms=>trendKeywordMatches(p,terms)).length;
+    if(hits){p.snsTrending=true;p.snsTrendMatches=hits;}
+  }
   brandCounts = new Map();
   groupProductVariants(products).forEach(group => [...new Set(group.flatMap(p=>productBrandNames(p,today)))].forEach(brand=>brandCounts.set(brand,(brandCounts.get(brand)||0)+1)));
 }
@@ -204,6 +210,8 @@ function render() {
   if (!catalog) return;
   renderSocialGroups();
   filtered = filterProducts(products,state,today);
+  if(state.source==='sns'&&state.sort==='newest')
+    filtered=[...filtered].sort((a,b)=>(b.snsTrendMatches||0)-(a.snsTrendMatches||0));
   const groups = groupProductVariants(filtered);
   groupCount = groups.length;
   state.page = Math.min(state.page,Math.max(1,Math.ceil(groups.length/PAGE_SIZE)));
@@ -292,7 +300,13 @@ function renderTrendKeywords() {
   section.hidden=state.source!=='sns';
   if(section.hidden)return;
   const list=$('sns-trend-list');
-  const keywords=trends?.keywords||[];
+  // Only keywords that actually reach at least one published item are shown,
+  // so every chip returns something when it is pressed. The collector
+  // publishes more than the display count for exactly this reason.
+  const limit=trends?.displayCount||20;
+  const keywords=(trends?.keywords||[]).map(k=>({...k,_terms:trendTerms(k)}))
+    .map(k=>({...k,_matches:products.filter(p=>trendKeywordMatches(p,k._terms)).length}))
+    .filter(k=>k._matches>0).slice(0,limit);
   if(!keywords.length){
     list.innerHTML='<p class="keyword-empty">주간 성장률을 계산할 SNS 키워드가 아직 없습니다. 첫 수집 이후 다음 주부터 증감이 표시됩니다.</p>';
     $('sns-trend-total').textContent='';
@@ -304,22 +318,25 @@ function renderTrendKeywords() {
     const growth=k.growthPercent===null||k.growthPercent===undefined
       ? '<span class="platform">신규</span>'
       : `<span class="growth ${k.growthPercent<0?'down':''}">${k.growthPercent>0?'+':''}${k.growthPercent.toLocaleString()}%</span>`;
-    return `<button type="button" class="keyword trend-chip ${active?'active':''}" data-trend="${i}" aria-pressed="${active}" title="${esc((k.relatedKeywords||[]).join(' · '))}"><span class="rank">${String(i+1).padStart(2,'0')}</span><span>#${esc(k.hashtag)}</span>${growth}</button>`;
+    return `<button type="button" class="keyword trend-chip ${active?'active':''}" data-trend="${i}" aria-pressed="${active}" title="${esc((k.relatedKeywords||[]).join(' · '))}"><span class="rank">${String(i+1).padStart(2,'0')}</span><span>#${esc(k.hashtag)}</span><span class="platform">${k._matches.toLocaleString()}개</span>${growth}</button>`;
   }).join('');
   $('sns-trend-total').textContent=`${keywords.length} KEYWORDS`;
+  const dropped=(trends?.keywords||[]).length-keywords.length;
   const measured=keywords.filter(k=>k.growthPercent!==null&&k.growthPercent!==undefined).length;
   const platforms=trends?.sourceStatus||{};
   const blocked=Object.entries(platforms).filter(([,v])=>v&&v.status&&v.status!=='ok').map(([name,v])=>`${name}: ${v.status}`);
   $('sns-trend-status').textContent=[
     trends?.generatedAt?`${dateText(trends.generatedAt,true)} 확인`:'',
     `주간 증감 산출 ${measured}개 / ${keywords.length}개`,
+    dropped>0?`일치 상품 없는 ${dropped}개 키워드 제외`:'',
+    (trends?.excludedAsGeneric||[]).length?`트렌드 신호 없는 일반 태그 제외: ${(trends.excludedAsGeneric||[]).slice(0,4).map(t=>'#'+t).join(' ')}`:'',
     blocked.length?`수집 불가 — ${blocked.join(', ')}`:'',
   ].filter(Boolean).join(' · ');
   list.querySelectorAll('[data-trend]').forEach(button=>button.addEventListener('click',()=>{
     const k=keywords[Number(button.dataset.trend)];
     const same=state.trendHashtag===k.hashtag;
     state.trendHashtag=same?'':k.hashtag;
-    state.trendTerms=same?null:trendTerms(k);
+    state.trendTerms=same?null:k._terms;
     state.page=1;render();
   }));
 }

@@ -184,6 +184,10 @@ export function variantGroupName(p) {
   return withoutAudienceLabel(trimModelSeparators(base))||p.name;
 }
 export function variantGroupKey(p) {
+  // A newsletter item is an article, not a SKU. Grouping those by model name
+  // merged 42 separate Footwear News pieces into one "Michael Jordan" card,
+  // because the publisher's tag is the model name. One article, one card.
+  if (isOverlay(p) && overlayKind(p) === 'newsletter') return `article|${p.id}`;
   if (!p?.name) return p?.modelKey || p?.id;
   const normalize = value => String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'');
   const name = variantGroupName(p);
@@ -201,15 +205,44 @@ export function variantColorLabel(p){
   if(!color||COLOR_PLACEHOLDER.test(color))return '';
   return !/(?:https?:|!\[|^image\s*\d+$|^(?:women|men)\s*\||^sneakers?\s*[·|]|미표기)/i.test(color)?color:'';
 }
+// Plain RGB distance between two #rrggbb values, or a large number when
+// either is missing. Enough to tell one shoe's two angles from two
+// genuinely different colourways.
+const HEX6=/^#[0-9a-f]{6}$/i;
+export function colorDistance(a,b){
+  if(!HEX6.test(a||'')||!HEX6.test(b||''))return 999;
+  const to=v=>[parseInt(v.slice(1,3),16),parseInt(v.slice(3,5),16),parseInt(v.slice(5,7),16)];
+  const [ar,ag,ab]=to(a),[br,bg,bb]=to(b);
+  return Math.round(Math.hypot(ar-br,ag-bg,ab-bb));
+}
+// Two photographs of one shoe from slightly different angles read as almost
+// the same body colour; two real colourways do not.
+export const SAME_BODY_COLOR = 42;
+
 export function uniqueColorVariants(group,activeId){
   const seen=new Map();
+  const unnamed=[];
   for(const p of group){
     const color=variantColorLabel(p).normalize('NFKC').toLowerCase().replace(/\s*[/|,·]\s*/g,'/').replace(/\s+/g,' ').trim();
-    // Official color names identify a colorway; approximate chip hex values do
-    // not. For unnamed duplicates, only an identical cached photo is evidence.
+    if(color){
+      const key=`color:${color}`;
+      if(!seen.has(key)||p.id===activeId)seen.set(key,p);
+      continue;
+    }
+    // No colour name. The photo decides: the identical cached shot, or a body
+    // colour read off the photo that matches one already kept, is the same
+    // colourway - that is what stops one shoe shot from two angles becoming
+    // two chips. Otherwise it stands on its own.
     const photo=p.presentation?.cachedPath;
-    const key=color?`color:${color}`:/^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(photo||'')?`photo:${photo}`:`id:${p.id}`;
-    if(!seen.has(key)||p.id===activeId)seen.set(key,p);
+    if(/^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(photo||'')){
+      const key=`photo:${photo}`;
+      if(!seen.has(key)||p.id===activeId)seen.set(key,p);
+      continue;
+    }
+    const twin=unnamed.find(q=>colorDistance(q.bodyColor,p.bodyColor)<=SAME_BODY_COLOR);
+    if(twin){ if(p.id===activeId)seen.set(`body:${twin.id}`,p); continue; }
+    unnamed.push(p);
+    seen.set(`body:${p.id}`,p);
   }
   return [...seen.values()];
 }
@@ -254,7 +287,11 @@ export function preferWomenVariants(products) {
 export function colorSwatch(product) {
   const reviewed=product.colorSwatches?.filter(c=>/^#[0-9a-f]{6}$/i.test(c))||[];
   const palette={black:'#242424',white:'#f7f7f2',ivory:'#eee9d8',cream:'#ece1c6',beige:'#c9b89e',butter:'#eddf9d',brown:'#70472f',chocolate:'#493329',burgundy:'#632a39',oxblood:'#581f2c',red:'#cf303a',navy:'#27374d',blue:'#4479ad',green:'#53745c',sage:'#a5ad8d',silver:'#bac0c5',grey:'#989ba0',gray:'#989ba0',pink:'#e4a9bb',orange:'#e17a31',yellow:'#e6c953',violet:'#a69bb4',purple:'#866799',sand:'#cbbb9d',peanut:'#ac865e',angora:'#e8dfcd',meteorite:'#45474a',pumpernickel:'#504137',bayberry:'#55624c',turtledove:'#c8c4b5',morel:'#988b79',cocoa:'#795e50',walnut:'#796252',cortado:'#a6886b',khaki:'#9b8b5e',taupe:'#8a7968',olive:'#6e7446',charcoal:'#3a3b3c',gold:'#b99746',tan:'#c8a165',camel:'#b08457',rust:'#9a4a29',mint:'#a7d8c4',lilac:'#c7b3d9',coral:'#e8836b',teal:'#2f7d78',maroon:'#5c1a24',multicolor:'#8f8f8f',denim:'#3f5c84',stone:'#b7b2a8',bone:'#e4ded0',sail:'#efeade',gum:'#b98a52',블랙:'#242424',화이트:'#f7f7f2',그레이:'#989ba0',블루:'#4479ad',브라운:'#70472f',베이지:'#c9b89e',실버:'#bac0c5',핑크:'#e4a9bb',네이비:'#27374d',레드:'#cf303a',그린:'#53745c',옐로우:'#e6c953',퍼플:'#866799',오렌지:'#e17a31',골드:'#b99746',크림:'#ece1c6',아이보리:'#eee9d8',카키:'#9b8b5e',버건디:'#632a39',민트:'#a7d8c4',차콜:'#3a3b3c',올리브:'#6e7446',와인:'#632a39',모카:'#795e50',검정:'#242424',검:'#242424',흰색:'#f7f7f2',회색:'#989ba0',파랑:'#4479ad',초록:'#53745c',노랑:'#e6c953',빨강:'#cf303a',보라:'#866799',연청:'#8fb0d6',진청:'#27374d',탄:'#c8a165'};
-  const colors=reviewed.length?reviewed:[...new Set((product.colorway||'').toLowerCase().split(/[^a-z가-힣]+/).map(word=>palette[word]).filter(Boolean))].slice(0,3);
+  // Order of trust: a hex the retailer itself declared, then the colour read
+  // off the product photo, then a recognised colour word, then nothing -
+  // a neutral pattern rather than a guessed colour.
+  const named=[...new Set((product.colorway||'').toLowerCase().split(/[^a-z가-힣]+/).map(word=>palette[word]).filter(Boolean))].slice(0,3);
+  const colors=reviewed.length?reviewed:(named.length?named:(HEX6.test(product.bodyColor||'')?[product.bodyColor]:[]));
   if(!colors.length)return 'repeating-linear-gradient(45deg,#eee 0 4px,#bbb 4px 8px)';
   return colors.length===1?colors[0]:`linear-gradient(135deg,${colors.map((c,i)=>`${c} ${Math.round(i/colors.length*100)}% ${Math.round((i+1)/colors.length*100)}%`).join(',')})`;
 }
@@ -312,15 +349,39 @@ export function foldTerm(value) {
     .replace(/[\u00f2\u00f3\u00f4\u00f5\u00f6]/g, 'o').replace(/[\u00f9\u00fa\u00fb\u00fc]/g, 'u').replace(/[\u00e7]/g, 'c').replace(/[\u00f1]/g, 'n')
     .replace(/[^\p{L}\p{N}]+/gu, '');
 }
+export function trendTermGroups(keyword) {
+  // Alternatives inside a group, requirements across groups. A flat OR-list
+  // made "나이키 러닝화" match every Nike shoe and every running shoe at once.
+  const groups = keyword?.matchTermGroups;
+  if (Array.isArray(groups) && groups.length) {
+    return groups.map(g => [...new Set((g || []).map(foldTerm).filter(Boolean))]).filter(g => g.length);
+  }
+  const flat = trendTerms(keyword);
+  return flat.length ? [flat] : [];
+}
 export function trendTerms(keyword) {
   if (!keyword) return [];
+  // The collector publishes matchTerms: the hashtag and its related words
+  // already widened across Korean and English (config/shoe-term-synonyms.json
+  // and the brand aliases). Keeping that dictionary in one place means a
+  // Korean keyword reaches an English listing and the reverse, without a
+  // second copy here that could drift.
+  if (Array.isArray(keyword.matchTerms) && keyword.matchTerms.length) {
+    return [...new Set(keyword.matchTerms.map(foldTerm).filter(term => term.length >= 2))];
+  }
   const raw = [keyword.hashtag, ...(keyword.relatedKeywords || [])];
   return [...new Set(raw.map(foldTerm).filter(term => term.length >= 3))];
 }
-export function trendKeywordMatches(product, terms) {
-  if (!terms?.length) return true;
-  const haystack = foldTerm([product.name, product.fullName, product.brand, product.brandAsListed,
+function productHaystack(product) {
+  return foldTerm([product.name, product.fullName, product.brand, product.brandAsListed,
     product.colorway, product.officialCategory, ...(product.keywords || []),
     ...(product.keywordTags || [])].filter(Boolean).join(' '));
+}
+// `terms` is either a flat list (every term an alternative) or a list of
+// groups (alternatives within, requirements across).
+export function trendKeywordMatches(product, terms) {
+  if (!terms?.length) return true;
+  const haystack = productHaystack(product);
+  if (Array.isArray(terms[0])) return terms.every(group => group.some(term => haystack.includes(term)));
   return terms.some(term => haystack.includes(term));
 }

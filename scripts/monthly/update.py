@@ -43,6 +43,7 @@ import sys
 
 from brand_identity import canonical_brand
 from footwear_scope import is_stated_value
+from image_signals import colour_distance, signals_for
 from common import atomic_write_json, derive_colorway, kst_day, kst_iso_week, kst_now, kst_three_months_ago, read_json
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -293,6 +294,127 @@ def carry_forward(previous_payload, published, collected_by_source, cutoff_day):
     return kept, carried_sources
 
 
+# How many published photos a single run will download. They are cached by
+# URL in data/image-signals.json, so after the first run this only covers
+# genuinely new listings.
+PHOTO_BUDGET = 6000
+PHOTO_SAME_SHOT = 2       # hamming distance at or under this is the same shot
+
+
+def attach_photo_signals(items, status):
+    """Read each published photo once: who it is, and what colour it is."""
+    signals = signals_for([i.get('image') for i in items], status, budget=PHOTO_BUDGET)
+    for item in items:
+        found = signals.get(item.get('image') or '')
+        if not found:
+            continue
+        if found.get('phash'):
+            item['photoHash'] = found['phash']
+        if found.get('body'):
+            item['bodyColor'] = found['body']
+    return items
+
+
+def drop_duplicate_photos(items, status):
+    """Collapse listings that are literally the same photograph.
+
+    The same shot gets re-hosted - one retailer's image reused by another,
+    or one product listed twice - and each copy was becoming its own card or
+    its own colour chip. Identical hashes within one brand are one listing;
+    the duplicates' links are kept on the survivor rather than thrown away.
+    A different angle of the same shoe does NOT hash alike and is handled by
+    the colour merge in the view, not here.
+    """
+    # Grouped by brand *and model*, not brand alone. A hash match across two
+    # different models is a hash collision, not a duplicate listing - before
+    # this, a Nike Tennis Classic absorbed an Air Force 1 and an Air Max 90.
+    by_brand = {}
+    for item in items:
+        if item.get('photoHash'):
+            by_brand.setdefault(model_key(item) or f"id:{item['id']}", []).append(item)
+    drop, merged = set(), 0
+    for group in by_brand.values():
+        kept = []
+        for item in group:
+            twin = next((k for k in kept if _same_shot(k['photoHash'], item['photoHash'])), None)
+            if twin is None:
+                kept.append(item)
+                continue
+            twin.setdefault('alsoListedAt', []).append(
+                {'source': item.get('source'), 'url': item.get('url'), 'priceLabel': item.get('priceLabel')})
+            drop.add(item['id'])
+            merged += 1
+    status['duplicatePhotosMerged'] = status.get('duplicatePhotosMerged', 0) + merged
+    return [i for i in items if i['id'] not in drop]
+
+
+def _same_shot(a, b):
+    return int(bin(int(a, 16) ^ int(b, 16)).count('1')) <= PHOTO_SAME_SHOT
+
+
+MODEL_INDEX_FILE = 'model-first-listed.json'
+MIN_MODEL_KEY = 3
+
+
+def style_key(item):
+    """A manufacturer style code identifies one shoe in any language.
+
+    Model names do not cross languages - Musinsa's "척 70" and SSENSE's
+    "Chuck 70" fold to different keys - but HQ4310-500 is HQ4310-500
+    everywhere, so it is indexed alongside the name.
+    """
+    style = ''.join(c for c in (item.get('style') or '').lower() if c.isalnum())
+    return f'style:{style}' if len(style) >= 6 else ''
+
+
+def model_key(item):
+    """brand|model, with the colourway and trailing category words removed.
+
+    Deliberately coarser than a SKU: the point is to recognise the same shoe
+    across retailers and across weeks, however each of them spells its
+    listing.
+    """
+    brand = re.sub(r'[^0-9a-z가-힣]', '', (item.get('brand') or '').lower())
+    name = item.get('name') or item.get('fullName') or ''
+    colour = item.get('colorway') or ''
+    if colour:
+        name = name.replace(colour, ' ')
+    name = re.sub(r'\s+(?:running\s+)?(?:shoes?|sneakers?)$', '', name.strip(), flags=re.I)
+    model = ''.join(c for c in name.lower() if c.isalnum())
+    return f'{brand}|{model}' if brand and len(model) >= MIN_MODEL_KEY else ''
+
+
+def first_listed_index(items, previous):
+    """Earliest listing date ever seen for each model, across every source.
+
+    A retailer re-listing an old shoe stamps it with today's date - 29CM's
+    visibleBeginTimestamp and Musinsa's image-upload day are both the date of
+    *this* listing, not of the shoe. So the earliest date any source has ever
+    shown for that model is kept, and a model first seen more than three
+    months ago is a re-release however fresh today's listing looks.
+
+    Cross-source evidence works on the very first run too: SSENSE records a
+    creationDate of 2022 for the Chuck 70, which rules out a 29CM listing of
+    the same shoe posted this week.
+    """
+    index = dict(previous)
+    for item in items:
+        day = (item.get('listedAt') or '')[:10]
+        if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', day):
+            continue
+        for key in (model_key(item), style_key(item)):
+            if key and (key not in index or day < index[key]):
+                index[key] = day
+    return index
+
+
+def is_rerelease(item, index, cutoff_day):
+    """True when this shoe was already on sale before the window opened."""
+    dates = [index.get(key) for key in (model_key(item), style_key(item)) if key]
+    known = [d for d in dates if d]
+    return bool(known) and min(known) < cutoff_day
+
+
 def retail_is_published(item, cutoff_day, cutoff_iso):
     """Only items that are actually inside the three-month window publish.
 
@@ -416,7 +538,16 @@ def main():
             'snsAverageLikes': round(sum(likes) / len(likes)) if likes else None,
         }
 
-    published_retail = [p for p in retail_items if retail_is_published(p, cutoff_day, cutoff_iso)]
+    # Every collected item feeds the index, not only the published ones: an
+    # old SSENSE record is exactly the evidence that rules out a fresh-looking
+    # re-listing of the same shoe somewhere else.
+    model_index = first_listed_index(
+        retail_items, read_json(os.path.join(DATA, MODEL_INDEX_FILE), {}))
+    atomic_write_json(os.path.join(DATA, MODEL_INDEX_FILE), model_index)
+
+    in_window = [p for p in retail_items if retail_is_published(p, cutoff_day, cutoff_iso)]
+    published_retail = [p for p in in_window if not is_rerelease(p, model_index, cutoff_day)]
+    rereleases = len(in_window) - len(published_retail)
     published_newsletter = [n for n in newsletter_items
                             if not n.get('publishedAt') or n['publishedAt'][:10] >= cutoff_day]
 
@@ -429,6 +560,12 @@ def main():
         previous_payload, published_retail + published_newsletter, collected_by_source, cutoff_day)
     published_retail += [c for c in carried if str(c.get('source', '')).startswith('retail-')]
     published_newsletter += [c for c in carried if str(c.get('source', '')).startswith('newsletter-')]
+
+    photo_status = {'step': 'photo signals'}
+    published_retail = attach_photo_signals(published_retail, photo_status)
+    published_newsletter = attach_photo_signals(published_newsletter, photo_status)
+    published_retail = drop_duplicate_photos(published_retail, photo_status)
+    published_newsletter = drop_duplicate_photos(published_newsletter, photo_status)
 
     atomic_write_json(os.path.join(DATA, 'monthly-catalog-source.json'), {
         'lastRunAt': now.isoformat(),
@@ -495,6 +632,9 @@ def main():
         'isBaselineRun': run_is_baseline,
         'baselineSources': sorted(baseline_sources),
         'carriedForward': carried_sources,
+        'photoSignals': photo_status,
+        'rereleasesExcluded': rereleases,
+        'modelsIndexed': len(model_index),
         'publishedRetail': len(published_retail),
         'publishedNewsletter': len(published_newsletter),
         'retailCollected': len(retail_items),

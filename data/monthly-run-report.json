@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-29T09:50:01.733032+09:00",
+  "checkedAt": "2026-10-29T10:31:47.105531+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -289,8 +289,8 @@
     },
     "newsletter": {
       "status": "ok",
-      "items": 706,
-      "matchedToRetail": 378,
+      "items": 620,
+      "matchedToRetail": 319,
       "unidentifiedArticles": 59,
       "diagnostics": [
         {
@@ -312,10 +312,10 @@
           "label": "Footwear News",
           "pages": 7,
           "responses": 7,
-          "articles": 334,
-          "items": 296,
+          "articles": 335,
+          "items": 298,
           "dropped": {
-            "excluded-silhouette": 25,
+            "excluded-silhouette": 24,
             "brand-unidentified": 12,
             "kids": 1
           },
@@ -332,212 +332,7 @@
             "brand-unidentified": 13,
             "excluded-silhouette": 13
           },
-          "errors": [
-            {
-              "url": "https://hypebeast.com/2026/10/corteiz-nike-shox-r419-collaboration-silver-colorway-first-look-reveal",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/nike-kobe-3-low-protro-mamba-eterno-io6260-800-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/nike-air-force-1-low-lace-metallic-gold-ix7038-121-official-images",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/ugg-fall-2026-naz-hassan-hypebeast-campaign-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/nike-air-force-1-low-07-premium-iron-man-ix8058-687-official-look-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/victor-kan-third-of-june-interview",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/merrell-harris-tweed-collection-collaboration-release-relay-lace-se-j00005589-j00005590-moab-2-slide-se-j00005588-jungle-moc-j00005586-cham-redux-se-j00005585-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/dr-martens-sophia-wilson-bouncing-soles-event-recap",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/tyrrell-winston-adidas-spiritain-2000-kj7676-first-look-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/new-balance-992-made-in-usa-medusa-green-u992bb-official-look-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/nike-kobe-7-protro-invisibility-cloak-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/jjjjound-new-balance-990v3-suede-u9904d8-official-look-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/carhart-wip-nike-goadome-low-release-date-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/timberland-jacquemus-3-eye-classic-lug-authentic-boat-shoe-navy-dark-brown-croc-collaboration-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/vans-sza-collaboration-collection-drop-1-campaign-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/adidas-samba-camo-cow-print-kj7500-official-images",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/converse-all-star-westernstitch-su-hi-black-tan-31319430-31319431-japan-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/otw-by-vans-satoshi-nakamoto-era-95-gems-collaboration-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/nike-air-force-1-what-the-la-ct1117-100-2026-re-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/nike-24-7-recovery-boot-ir0450-200-dark-driftwood-official-look-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/converse-tyler-the-creator-golf-le-fleur-pro-leather-molten-lava-bison-white-black-colorways-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/kiko-kostadinov-crocs-vaals-black-kelp-yellow-sand-footwear-fw26-collaboration-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/streamer-rakai-under-armour-arc-96-25xx-official-look-6023886-391-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/thibo-denis-birkenstock-1774-uerzell-sneaker-mule-three-new-colorways-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/joe-freshgoods-new-balance-990v7-closer-look-teased",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/jw-anderson-ugg-collaboration-collection-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/prada-gives-the-americas-cup-sneaker-an-autumnal-update",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/jaylen-brown-7uice-special-edition-bape-sta-collaboration-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/air-jordan-12-fireside-ct8013-105-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/air-jordan-1-low-og-dia-de-muertos-iz4686-216-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/asics-utility-collection-gel-ventx-gtx-gel-nyc-2-0-gtx-gel-kayano-20-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/loewe-on-cloudsolo-hiker-cloudtilt-cosmic-collaboration-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/air-jordan-3-fireside-ck9246-200-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/chainsaw-man-crocs-classic-clog-collection-chainsaw-man-213925-90h-power-213926-90h-pochita-213928-90h-characters-213927-90h-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/jjjjound-new-balance-990v3-tan-suede-official-release-date-revealed",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/nike-air-max-goadome-low-yellow-croc-vivid-sulfur-black-iv4517-700-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/nanga-subu-auror-tex-winter-sandal-na2443-3e105-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/wasted-paris-clarks-wallabee-lite-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/shai-gilgeous-alexander-personally-hand-drew-nike-shai-002-revealed",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/loewe-on-cloudsolo-hiker-model-first-look-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/bstn-salomon-xt-6-iridescent-black-almond-milk-l45567700-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/thierry-henry-closer-look-on-debut-football-boot-teaser",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/salomon-xt-6-gore-tex-tradewinds-stormy-weather-bog-l49214800-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/wildside-yohji-yamamoto-moonstar-gym-classic-cotton-canvas-sneakers-collaboration-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/victory-lap-radio-nike-air-force-1-low-pine-green-ja7805-302-first-look-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/deluxe-suicoke-moccasin-collaboration-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/birkenstock-amsterdam-wrapped-santa-clarita-shearling-upper-s005512-s005522-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/air-jordan-12-obsidian-ct8013-401-first-look-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/dennys-mache-return-real-syrup-filled-sticky-kicks-2-0-sneakers-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/junya-watanabe-man-new-balance-p400-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.com/2026/10/nike-nigo-j-hope-air-force-1-release-info",
-              "error": "article: http-202"
-            }
-          ],
+          "errors": [],
           "enriched": 120
         },
         {
@@ -551,36 +346,7 @@
             "excluded-silhouette": 12,
             "brand-unidentified": 13
           },
-          "errors": [
-            {
-              "url": "https://hypebeast.kr/2026/10/adidas-originals-hellstar-megaride-s2-collection-collaboration-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.kr/2026/10/kith-giorgio-armani-asics-gel-mai-0-1-dream-of-the-dune-tri-collab-first-look-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.kr/2026/10/jah-jah-adidas-f50-tunit-green-core-black-yellow-la3614-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.kr/2026/10/brain-dead-adidas-bowling-cheetah-snakeskin-release-info",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.kr/2026/10/miu-miu-new-balance-rc150-spring-summer-2027-paris-fashion-week-runway-collaboration-closer-look",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.kr/2026/10/nike-air-rift-black-desert-ochre-io4884-002-official-images",
-              "error": "article: http-202"
-            },
-            {
-              "url": "https://hypebeast.kr/2026/10/nike-dunk-low-jade-stone-light-khaki-gum-light-brown-old-royal-im4414-301-official-images",
-              "error": "article: http-202"
-            }
-          ],
+          "errors": [],
           "enriched": 120
         },
         {
@@ -588,10 +354,10 @@
           "label": "Highsnobiety",
           "pages": 1,
           "responses": 1,
-          "articles": 9,
+          "articles": 8,
           "items": 3,
           "dropped": {
-            "brand-unidentified": 6
+            "brand-unidentified": 5
           },
           "errors": []
         },
@@ -613,9 +379,9 @@
           "pages": 0,
           "responses": 1,
           "articles": 19,
-          "items": 14,
+          "items": 13,
           "dropped": {
-            "brand-unidentified": 5
+            "brand-unidentified": 6
           },
           "errors": [],
           "enriched": 19
@@ -631,6 +397,11 @@
             "brand-unidentified": 3
           },
           "errors": []
+        },
+        {
+          "step": "translated-duplicate merge",
+          "translatedPairsMerged": 86,
+          "translatedDuplicatesDropped": 86
         }
       ]
     },
@@ -647,7 +418,7 @@
     },
     "sns-trend-keywords": {
       "status": "ok",
-      "items": 15,
+      "items": 21,
       "acceptedIntoSeeds": 0,
       "diagnostics": [
         {
@@ -669,8 +440,18 @@
   "isBaselineRun": false,
   "baselineSources": [],
   "carriedForward": {},
-  "publishedRetail": 3800,
-  "publishedNewsletter": 702,
+  "photoSignals": {
+    "step": "photo signals",
+    "requested": 616,
+    "cached": 3536,
+    "readable": 4152,
+    "failures": {},
+    "duplicatePhotosMerged": 137
+  },
+  "rereleasesExcluded": 264,
+  "modelsIndexed": 7125,
+  "publishedRetail": 3399,
+  "publishedNewsletter": 620,
   "retailCollected": 19022,
-  "heldOutsideWindow": 15222
+  "heldOutsideWindow": 15623
 }

@@ -14,12 +14,21 @@ Instagram: the logged-out hashtag page (/explore/tags/<tag>/) server-renders a
 Instagram's own list of related search keywords. Public, no login, and the
 same block collect_instagram_hashtags.py already reads.
 
-TikTok: /tag/<tag> is attempted with Playwright. As of 2026-10-29 TikTok
-answers both headless and headful automation with its "문제가 발생했습니다"
-error shell and no view count at all, and its Creative Center API replies
-`40101 no permission` without a signed anonymous token. So this is wired up,
-reports `blocked` honestly when that happens, and contributes nothing to the
-ranking until it can actually read a number. It never estimates one.
+TikTok: /tag/<tag> is attempted with Playwright, and with the browser profile
+named by TIKTOK_USER_DATA_DIR when one is configured. As of 2026-10-29 TikTok
+answers headless automation, headful automation and the user's own logged-out
+Chrome with the same "문제가 발생했습니다" error shell and no view count, and its
+Creative Center API replies `40101 no permission` without a signed anonymous
+token. A logged-in session is what is missing, so the collector reports
+`blocked` honestly until one exists. It never estimates a number.
+
+What is ranked, and what is not
+-------------------------------
+#sneakers, #sneakerhead, #sneakerstyle and #신발추천 are excluded from the
+ranking: they are the largest tags by volume and they only say "this is a
+sneaker post", so they would permanently occupy the top places without
+telling anyone which shoe is trending. They stay in the seed list, because
+their related_keywords are the richest source of new candidates.
 
 Growth
 ------
@@ -62,6 +71,8 @@ from collections import Counter
 from curl_cffi import requests as curl_requests
 
 from common import BROWSER_HEADERS, atomic_write_json, kst_day, kst_now, read_json
+from term_synonyms import expand as expand_terms
+from term_synonyms import expand_groups
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 DATA = os.path.join(ROOT, 'data')
@@ -69,8 +80,19 @@ SEED_FILE = os.path.join(ROOT, 'config', 'trend-seed-hashtags.json')
 HISTORY_FILE = os.path.join(DATA, 'trend-history.csv')
 HISTORY_FIELDS = ['observedAt', 'day', 'platform', 'hashtag', 'metric', 'value']
 
-TOP_N = 15
+# The page shows 20; more are published so that keywords matching no item at
+# all can be dropped client-side and 20 usable chips still remain.
+TOP_N = 20
+PUBLISH_N = 40
 MAX_CANDIDATES = 20
+
+# Hashtags that say "this is a sneaker post" and nothing else. They are the
+# biggest tags by volume, so they sit at the top of any ranking while telling
+# you nothing about which shoe is trending - excluded from the ranking, but
+# still collected as seeds because their related_keywords are where new
+# candidates come from.
+NON_TREND_TAGS = {'sneakers', 'sneakerhead', 'sneakerstyle', '신발추천',
+                  'shoes', 'shoesaddict', 'shoestagram', '신발', '신발스타그램'}
 MIN_GROWTH_GAP_DAYS = 5
 TARGET_GAP_DAYS = 7
 
@@ -331,14 +353,27 @@ def main():
             'value': o['value'], 'valueLabel': o.get('label', ''), 'growthPercent': growth, 'comparedToDay': since,
             'previousValue': before, 'isNew': growth is None,
             'relatedKeywords': related_by_tag.get(o['hashtag'], [])[:8],
+            # Folded Korean+English terms the page matches products on, so the
+            # dictionary lives in config/ once instead of being duplicated in
+            # JavaScript where the two copies would drift apart.
+            # Only the hashtag itself. Its related keywords are what finds new
+            # candidates, but folding them into the match terms made a chip
+            # mean far more than it says - #gorpcore would pull in every Nike
+            # because "nike" happened to be a related search.
+            'matchTerms': expand_terms(o['hashtag']),
+            # Alternatives within a group, requirements across groups:
+            # "나이키 러닝화" means Nike AND running, not Nike OR running.
+            'matchTermGroups': expand_groups(o['hashtag']),
             'sourceUrl': o['url'],
         })
     # Growth first; a keyword with no comparison yet cannot outrank a measured
     # one, so new keywords sort below by volume rather than above by accident.
-    measured = sorted([r for r in ranked if r['growthPercent'] is not None],
+    rankable = [r for r in ranked if normalise(r['hashtag']) not in
+                {normalise(t) for t in NON_TREND_TAGS}]
+    measured = sorted([r for r in rankable if r['growthPercent'] is not None],
                       key=lambda r: (-r['growthPercent'], -r['value']))
-    unmeasured = sorted([r for r in ranked if r['growthPercent'] is None], key=lambda r: -r['value'])
-    top = (measured + unmeasured)[:TOP_N]
+    unmeasured = sorted([r for r in rankable if r['growthPercent'] is None], key=lambda r: -r['value'])
+    top = (measured + unmeasured)[:PUBLISH_N]
 
     known = {normalise(t) for t in tags}
     counts = Counter()
@@ -371,6 +406,8 @@ def main():
         'method': 'instagram-post-count-wow',
         'window': {'targetGapDays': TARGET_GAP_DAYS, 'minGapDays': MIN_GROWTH_GAP_DAYS},
         'sourceStatus': status,
+        'displayCount': TOP_N,
+        'excludedAsGeneric': sorted(NON_TREND_TAGS),
         'keywords': top,
         'candidates': candidates,
         'acceptedIntoSeeds': accepted,

@@ -37,6 +37,7 @@ import os
 import re
 import sys
 import time
+import urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -508,6 +509,56 @@ def read_concept_kicks(cutoff_iso, status):
     return articles
 
 
+# Hypebeast and Hypebeast Korea run the same story twice, in two languages,
+# off the same image file - "Nike-Air-Max-90-Light-Orewood-Brown-IX8056-104-
+# Release-Info-tw.jpg" on one and the same stem with a TW prefix on the
+# other. That is a reliable join key, so the pair collapses to the Korean
+# edition. Six pairs in the 2026-10-29 run.
+KOREAN_PUBLISHERS = {'hypebeast-kr'}
+IMAGE_STEM_RE = re.compile(r'([^/]+?)(?:\.(?:jpg|jpeg|png|webp|avif))?(?:\?.*)?$', re.I)
+
+
+def image_join_key(url):
+    """Folded filename stem of an article's lead image, or ''."""
+    if not url:
+        return ''
+    found = IMAGE_STEM_RE.search(urllib.parse.unquote(url).split('?')[0])
+    stem = (found.group(1) if found else '').lower()
+    stem = re.sub(r'^tw[-_]?', '', stem)
+    stem = re.sub(r'[-_]tw$', '', stem)
+    stem = re.sub(r'[^a-z0-9]+', '', stem)
+    return stem if len(stem) >= 12 else ''
+
+
+def drop_translated_duplicates(items, status):
+    """Keep the Korean edition when the same article ran in both languages."""
+    by_image = {}
+    for item in items:
+        key = image_join_key(item.get('image'))
+        if key:
+            by_image.setdefault(key, []).append(item)
+    drop, merged = set(), 0
+    for group in by_image.values():
+        if len(group) < 2:
+            continue
+        korean = [i for i in group if i['mediaEvidence']['publisherId'] in KOREAN_PUBLISHERS]
+        others = [i for i in group if i['mediaEvidence']['publisherId'] not in KOREAN_PUBLISHERS]
+        if not korean or not others:
+            continue
+        keep = korean[0]
+        # The English edition is not thrown away silently: its article stays
+        # recorded on the Korean item as the same story in another language.
+        keep.setdefault('alsoPublishedAs', []).extend(
+            {'publisher': i['publisher'], 'url': i['url'], 'headline': i['fullName']}
+            for i in korean[1:] + others)
+        for item in korean[1:] + others:
+            drop.add(item['id'])
+        merged += 1
+    status['translatedPairsMerged'] = merged
+    status['translatedDuplicatesDropped'] = len(drop)
+    return [i for i in items if i['id'] not in drop]
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--out', required=True)
@@ -569,7 +620,11 @@ def main():
                 seen.add(key)
                 items.append(item)
 
-    responded = any(d['responses'] for d in diagnostics)
+    dedupe_status = {'step': 'translated-duplicate merge'}
+    items = drop_translated_duplicates(items, dedupe_status)
+    diagnostics.append(dedupe_status)
+
+    responded = any(d.get('responses') for d in diagnostics)
     result = {
         'status': 'ok' if items else ('partial' if responded else 'unavailable'),
         'checkedAt': checked_at,
