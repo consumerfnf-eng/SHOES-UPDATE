@@ -294,6 +294,60 @@ function renderRetailers() {
     state.retailer=button.dataset.retailer;state.page=1;render();
   }));
 }
+// A name that is only a manufacturer's reference tells a reader nothing:
+// New Balance's Korean listings are called "NBPFGF701Y" and no more.
+const CODE_ONLY_NAME=/^(?=[A-Za-z0-9]*[A-Za-z])(?=[A-Za-z0-9]*\d)[A-Za-z0-9-]{6,}$/;
+const TREND_ITEMS_SHOWN=12;
+const TREND_ITEMS_PER_BRAND=2;
+
+// The keywords name a subject; this names the shoes. One row per model,
+// ranked by how many of the week's keywords reach it - a model several
+// hashtags point at outranks one carried by the single biggest tag - and
+// then by how many listings of it the week actually found, because the
+// keyword count alone ties almost everything.
+function renderTrendItems(keywords,products){
+  const box=$('sns-trend-items'),list=$('sns-trend-item-list');
+  if(!box||!list)return;
+  const models=new Map();
+  for(const k of keywords){
+    const seen=new Set();
+    for(const p of products){
+      // An article about a shoe is not the shoe. Newsletter records are
+      // headlines, and they were filling this list with sentences.
+      if(isOverlay(p)&&overlayKind(p)==='newsletter')continue;
+      if(!trendKeywordMatches(p,k._terms))continue;
+      const key=variantGroupKey(p);
+      const row=models.get(key)||{name:variantGroupName(p),brand:p.brand||'',
+                                  tags:new Set(),listings:0,id:p.id};
+      if(!seen.has(key)){seen.add(key);row.tags.add(k.hashtag);}
+      if(k===keywords[0]||!models.has(key))row.listings=products.filter(
+        q=>variantGroupKey(q)===key).length;
+      models.set(key,row);
+    }
+  }
+  const ranked=[...models.values()]
+    .filter(row=>row.name&&!CODE_ONLY_NAME.test(row.name.trim()))
+    .sort((a,b)=>b.tags.size-a.tags.size||b.listings-a.listings||a.name.localeCompare(b.name));
+  // No single brand may fill the row: New Balance alone matched twelve.
+  const perBrand=new Map(),top=[];
+  for(const row of ranked){
+    const used=perBrand.get(row.brand)||0;
+    if(used>=TREND_ITEMS_PER_BRAND)continue;
+    perBrand.set(row.brand,used+1);
+    top.push(row);
+    if(top.length>=TREND_ITEMS_SHOWN)break;
+  }
+  box.hidden=!top.length;
+  if(!top.length)return;
+  list.innerHTML=top.map(row=>
+    `<button type="button" class="trend-item" data-trend-item="${esc(row.id)}" title="${esc([...row.tags].map(t=>'#'+t).join(' · '))}">`
+    +`<span class="trend-item-brand">${esc(row.brand)}</span>`
+    +`<span class="trend-item-name">${esc(row.name)}</span>`
+    +`<span class="trend-item-count">${row.tags.size}</span></button>`).join('');
+  list.querySelectorAll('[data-trend-item]').forEach(button =>
+    button.addEventListener('click', () => openDetail(button.dataset.trendItem)));
+}
+
 function renderTrendKeywords() {
   const section=$('sns-trends');
   if(!section)return;
@@ -320,6 +374,7 @@ function renderTrendKeywords() {
       : `<span class="growth ${k.growthPercent<0?'down':''}">${k.growthPercent>0?'+':''}${k.growthPercent.toLocaleString()}%</span>`;
     return `<button type="button" class="keyword trend-chip ${active?'active':''}" data-trend="${i}" aria-pressed="${active}" title="${esc((k.relatedKeywords||[]).join(' · '))}"><span class="rank">${String(i+1).padStart(2,'0')}</span><span>#${esc(k.hashtag)}</span><span class="platform">${k._matches.toLocaleString()}개</span>${growth}</button>`;
   }).join('');
+  renderTrendItems(keywords,products);
   $('sns-trend-total').textContent=`${keywords.length} KEYWORDS`;
   const dropped=(trends?.keywords||[]).length-keywords.length;
   const measured=keywords.filter(k=>k.growthPercent!==null&&k.growthPercent!==undefined).length;

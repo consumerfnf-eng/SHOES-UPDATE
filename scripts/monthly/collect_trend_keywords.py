@@ -51,12 +51,35 @@ The sneaker test (a candidate must pass, in this order)
 1. Any EXCLUDE term (구두 / 힐 / 펌프스 / 슬링백 / 로퍼 / 부츠 ...) in the
    candidate or in the related keywords of its own hashtag page: rejected
    outright. One is enough.
-2. Its name or related keywords match a product name already collected from
+2. It has to name something the seeds do not already name. "나이키 러닝화"
+   is a brand we track plus a category we seed plus nothing, and accepting
+   it is how the ranking filled up with running shoes - see below.
+3. Its name or related keywords match a product name already collected from
    Musinsa or 29CM this week: accepted. Those staging files are this run's own
    e-commerce sneaker catalogue, so a match is a real cross-check and costs no
    extra request.
-3. Otherwise at least 30% of its related keywords must carry an INCLUDE term
+4. Otherwise at least 30% of its related keywords must carry an INCLUDE term
    (스니커즈 / 운동화 / 러닝화 / sneaker ...).
+
+Why rule 2 exists
+-----------------
+Instagram's related_keywords for #러닝화 are 나이키 러닝화, 아디다스 러닝화,
+아식스 러닝화, 미즈노 러닝화, 살로몬 러닝화, 러닝화 추천, 러닝화 브랜드,
+2026 러닝화 브랜드. Every one of them passes rule 4 trivially - their own
+related keywords are also 러닝화 compounds, so the include share is 100% -
+and each then becomes a seed that produces more of the same next week.
+Seventeen of twenty discovered keywords were running compounds and nine of
+the twenty displayed chips were "X 러닝화", which is what a reader saw as
+the board being about running shoes. A candidate now has to survive having
+its known brand, known category and marketing words removed; if nothing
+distinctive is left, it is a restatement of a seed, not a discovery.
+
+Diversity in the ranking
+------------------------
+Discovery is not the only way one subject can take the board: a category can
+simply be big. At most MAX_PER_CONCEPT keywords sharing a category word, and
+the same per brand, reach the published list. The rest are still collected
+and still in the history - they are held out of the display, not deleted.
 """
 import argparse
 import csv
@@ -295,11 +318,100 @@ def ecommerce_vocabulary():
     return words
 
 
-def validate_candidate(tag, related, vocabulary):
+# Words that modify a search without naming a shoe. "러닝화 추천" and
+# "2026 러닝화 브랜드" are the same subject as "러닝화".
+MODIFIER_WORDS = {
+    '추천', '브랜드', '순위', '후기', '코디', '스타일링', '일상화', '데일리',
+    '남자', '여자', '남성', '여성', '신상', '인기', '베스트', '정보', '종류',
+    '가격', '할인', '직구', '리뷰', '착용', '구매', '세일',
+    'best', 'top', 'new', 'review', 'style', 'outfit', 'outfits', 'fashion',
+    'men', 'mens', 'women', 'womens', 'daily', 'trend', 'trends',
+}
+YEAR_RE = re.compile(r'^(?:19|20)\d{2}$')
+
+
+def brand_vocabulary():
+    """Brand names this run collected, Korean and English."""
+    words = set()
+    for name in ('monthly-staging-musinsa.json', 'monthly-staging-29cm.json',
+                 'monthly-staging-ssense.json', 'monthly-staging-wconcept.json'):
+        payload = read_json(os.path.join(DATA, name), {'items': []})
+        for item in payload.get('items', []):
+            for value in (item.get('brand'), item.get('brandKo'), item.get('brandAsListed')):
+                for token in re.split(r'[^0-9A-Za-z가-힣]+', value or ''):
+                    if len(token) >= 2:
+                        words.add(token.lower())
+    return words
+
+
+MIN_DISTINCTIVE_CHARS = 2
+# How many keywords about one subject reach the published list. Discovery is
+# not the only way running shoes can take the board - a category can simply
+# be big - so the display is capped per category word and per brand.
+MAX_PER_CONCEPT = 2
+
+
+def concepts_of(tag, brands):
+    """The subjects a keyword belongs to: its category words and its brand."""
+    folded = normalise(tag)
+    found = {term for term in INCLUDE_TERMS if normalise(term) in folded}
+    found |= {brand for brand in brands if len(brand) >= 3 and normalise(brand) in folded}
+    return found
+
+
+def diversified(ranked, brands, limit=MAX_PER_CONCEPT):
+    """The ranking with no subject allowed to fill it.
+
+    Nine of twenty chips were "X 러닝화"; a reader saw a running board. The
+    ones held back are still collected and still in the history - this is a
+    display rule, not a deletion.
+    """
+    used, kept, held = Counter(), [], []
+    for row in ranked:
+        subjects = concepts_of(row['hashtag'], brands)
+        if any(used[subject] >= limit for subject in subjects):
+            held.append(row)
+            continue
+        for subject in subjects:
+            used[subject] += 1
+        kept.append(row)
+    return kept, held
+
+
+def distinctive_part(tag, seeds, brands):
+    """What a candidate names beyond the seeds, as a list of words.
+
+    A seed word, a category word, a brand we already track, a year and a
+    marketing modifier are all things the board already covers. Whatever
+    survives all of those is the candidate's own contribution.
+
+    Korean glues words together, so the known parts are cut out of a token
+    rather than used to discard it whole: "메리제인스니커즈" keeps 메리제인,
+    which is a silhouette worth knowing about, where discarding any token
+    containing 스니커즈 would have thrown it away with the category.
+    """
+    known = sorted({normalise(t) for t in seeds} | set(brands)
+                   | {normalise(t) for t in INCLUDE_TERMS}, key=len, reverse=True)
+    out = []
+    for word in re.split(r'[^0-9A-Za-z가-힣]+', tag or ''):
+        folded = normalise(word)
+        if not folded or folded in MODIFIER_WORDS or YEAR_RE.match(folded):
+            continue
+        for part in known:
+            if part and len(part) >= 2 and part in folded:
+                folded = folded.replace(part, '')
+        if len(folded) >= MIN_DISTINCTIVE_CHARS and folded not in MODIFIER_WORDS:
+            out.append(folded)
+    return out
+
+
+def validate_candidate(tag, related, vocabulary, seeds=(), brands=frozenset()):
     """Return (accepted, reason). See the module docstring for the order."""
     text = ' '.join([tag, *related])
     if has_term(text, EXCLUDE_TERMS) and not EXCLUDE_OVERRIDE.search(text):
         return False, 'excluded-term'
+    if not distinctive_part(tag, seeds, brands):
+        return False, 'restates-a-seed'
     folded = normalise(tag)
     if folded and folded in vocabulary:
         return True, 'ecommerce-name-match'
@@ -378,7 +490,9 @@ def main():
     measured = sorted([r for r in rankable if r['growthPercent'] is not None],
                       key=lambda r: (-r['growthPercent'], -r['value']))
     unmeasured = sorted([r for r in rankable if r['growthPercent'] is None], key=lambda r: -r['value'])
-    top = (measured + unmeasured)[:PUBLISH_N]
+    brands = brand_vocabulary()
+    diverse, held_back = diversified(measured + unmeasured, brands)
+    top = diverse[:PUBLISH_N]
 
     known = {normalise(t) for t in tags}
     counts = Counter()
@@ -390,17 +504,32 @@ def main():
     vocabulary = ecommerce_vocabulary()
     candidates, accepted = [], []
     for word, seen in counts.most_common(MAX_CANDIDATES):
+        if not distinctive_part(word, tags, brands):
+            # Settled without a request: it restates a seed either way.
+            candidates.append({'hashtag': word, 'coOccurrences': seen, 'accepted': False,
+                               'reason': 'restates-a-seed', 'postCount': None})
+            continue
         data, state, _ = fetch_instagram(word)
         related = data['related'] if data else []
-        ok, reason = validate_candidate(word, related, vocabulary) if data else (False, f'unreadable:{state}')
+        ok, reason = (validate_candidate(word, related, vocabulary, tags, brands)
+                      if data else (False, f'unreadable:{state}'))
         candidates.append({'hashtag': word, 'coOccurrences': seen, 'accepted': ok, 'reason': reason,
                            'postCount': data['count'] if data else None})
         if ok:
             accepted.append(word)
         time.sleep(0.8)
 
-    if accepted:
-        seeds_file['discovered'] = sorted(set([*(seeds_file.get('discovered') or []), *accepted]))
+    # Re-test what earlier runs discovered, not only what this one found.
+    # Seventeen of the twenty already in the file are "X 러닝화" compounds,
+    # accepted before the restatement rule existed; left in place they would
+    # keep seeding more of themselves every week.
+    was_discovered = seeds_file.get('discovered') or []
+    previously = [w for w in was_discovered
+                  if distinctive_part(w, seeds_file.get('seed') or [], brands)]
+    retired = sorted(set(was_discovered) - set(previously))
+    discovered = sorted(set([*previously, *accepted]))
+    if discovered != sorted(set(was_discovered)):
+        seeds_file['discovered'] = discovered
         seeds_file['updatedAt'] = today
         atomic_write_json(SEED_FILE, seeds_file)
 
@@ -413,6 +542,9 @@ def main():
         'sourceStatus': status,
         'displayCount': TOP_N,
         'excludedAsGeneric': sorted(NON_TREND_TAGS),
+        'maxPerConcept': MAX_PER_CONCEPT,
+        'retiredFromSeeds': retired,
+        'heldForDiversity': [{'hashtag': r['hashtag'], 'value': r['value']} for r in held_back[:20]],
         'keywords': top,
         'candidates': candidates,
         'acceptedIntoSeeds': accepted,

@@ -73,3 +73,16 @@
 #source-note{padding:16px 2px 0;line-height:1.8}
 @media(max-width:900px){.sns-trends .keyword-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:640px){.retailer-tabs{gap:5px;padding-top:12px}.retailer-tab{font-size:11px;padding:6px 10px}.sns-trends{padding:14px}.sns-trends .keyword-list{grid-template-columns:repeat(2,minmax(0,1fr))}.trend-chip{font-size:11px;padding:8px 10px}}
+
+/* The sneakers this week's SNS keywords actually point at. The keyword chips
+   above say what the subject is; these say which shoe it is. */
+.trend-items{margin:14px 0 0;display:flex;flex-direction:column;gap:8px}
+.trend-items-label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted,#6b6b6b)}
+.trend-item-list{display:flex;flex-wrap:wrap;gap:6px}
+.trend-item{display:inline-flex;align-items:baseline;gap:7px;padding:6px 11px;border:1px solid var(--line,#e2e2de);
+  border-radius:999px;background:var(--surface,#fff);cursor:pointer;font:inherit;max-width:100%}
+.trend-item:hover{border-color:var(--ink,#1c1c1a)}
+.trend-item-brand{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted,#6b6b6b);flex:none}
+.trend-item-name{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.trend-item-count{font-size:11px;color:var(--muted,#6b6b6b);flex:none}
+.trend-item-count::before{content:'#'}

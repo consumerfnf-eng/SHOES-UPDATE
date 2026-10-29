@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
 import assert from 'node:assert/strict';
-import {kstToday,shiftCalendarMonths} from '../public/assets/catalog-view.mjs';
+import {kstToday,shiftCalendarMonths,variantGroupKey,preferWomenVariants} from '../public/assets/catalog-view.mjs';
 import {EXPORT_COLUMNS} from '../public/assets/export.mjs';
 const root=path.resolve('public'),out=await fs.mkdtemp(path.join(os.tmpdir(),'shoes-ui-'));
 const mime={'.html':'text/html','.css':'text/css','.mjs':'text/javascript','.json':'application/json'};
@@ -24,6 +24,13 @@ try{
  await context.route('**/*',r=>new URL(r.request().url()).origin===new URL(url).origin?r.continue():r.abort());
  await context.route('https://example.org/**',r=>r.fulfill({contentType:'image/svg+xml',body:`<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><rect width="400" height="300" fill="${r.request().url().includes('black')?'#222':'#ddd'}"/></svg>`}));
  await context.route('**/data/catalog.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(fixture)}));
+ // The page loads the retail/newsletter overlay and the SNS keyword board
+ // alongside the catalog. Unmocked, the real published files answered and
+ // every count in this file was measuring live data instead of the fixture.
+ await context.route('**/data/monthly-catalog.json',r=>r.fulfill({contentType:'application/json',
+   body:JSON.stringify({schemaVersion:2,publishedAt:at,asOf:today,periodStart:today,sources:{},retail:[],newsletter:[],sourceStatus:[]})}));
+ await context.route('**/data/trend-keywords.json',r=>r.fulfill({contentType:'application/json',
+   body:JSON.stringify({schemaVersion:1,generatedAt:at,asOf:today,displayCount:20,keywords:[],candidates:[],sourceStatus:{}})}));
  const page=await context.newPage(),errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push({url:r.url(),method:r.method()}));
  await page.goto(url);await page.locator('.product-card').first().waitFor();
  assert.equal(await page.locator('#result-count').textContent(),'48');assert.equal(await page.locator('.product-card').count(),40);
@@ -58,7 +65,13 @@ try{
  const variantPage=await context.newPage();variantPage.on('pageerror',e=>errors.push(e.message));
  await variantPage.route('**/data/catalog.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(variantFixture)}));
  await variantPage.goto(url);await variantPage.locator('.product-card').first().waitFor();
- assert.equal(await variantPage.locator('#result-count').textContent(),'11','7 ASICS, 3 PANE and 1 adidas model cards');
+ // Counted from the fixture, not written down. The fixture is built from the
+ // live catalog's ASICS/PANE/adidas listings, so a hard-coded 11 only held
+ // until those brands' line-ups changed - which is the third time a test here
+ // has been bound to mutable data (see 62e4b70).
+ const expectedCards=new Set(preferWomenVariants(variantProducts).map(variantGroupKey)).size;
+ assert.equal(await variantPage.locator('#result-count').textContent(),String(expectedCards),
+   `one card per model group (${variantProducts.length} listings)`);
  const cardFor=id=>variantPage.locator('.product-card').filter({has:variantPage.locator(`[data-variant="${id}"]`)});
  for(const model of ['GEL-KAYANO 33 LITE-SHOW','GT-2000 15 LITE-SHOW']){
   const pair=variantProducts.filter(p=>p.brand==='ASICS'&&p.name.startsWith(model));

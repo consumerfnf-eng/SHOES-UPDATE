@@ -34,6 +34,10 @@
         <section id="sns-trends" class="sns-trends" aria-labelledby="sns-trends-title" hidden>
           <div class="section-label"><div class="trend-heading"><span class="trend-eyebrow">WEEKLY HOT TRENDS</span><h2 id="sns-trends-title">SNS 인기 스니커즈 키워드</h2><span id="sns-trend-total" class="keyword-total"></span></div><button id="sns-trend-info" class="text-button">선정 기준</button></div>
           <div id="sns-trend-list" class="keyword-list"><p class="muted">주간 트렌드 키워드를 불러오고 있습니다.</p></div>
+          <div id="sns-trend-items" class="trend-items" hidden>
+            <span class="trend-items-label">이 키워드들이 가리키는 스니커즈</span>
+            <div id="sns-trend-item-list" class="trend-item-list"></div>
+          </div>
           <p id="sns-trend-status" class="search-rank-status"></p>
         </section>
         <div class="results-bar"><div><h2 id="results" tabindex="-1">슈즈 <span id="result-count">—</span></h2><p id="result-description">검증을 마친 상품만 표시합니다.</p></div><label class="sort-label"><span class="sr-only">정렬</span><select id="sort"><option value="newest">게시일 최신순</option><option value="brand">브랜드 이름순</option><option value="sources">확인된 출처 많은순</option><option id="social-sort-option" value="social" hidden disabled>선택 지표 높은순</option></select></label></div>

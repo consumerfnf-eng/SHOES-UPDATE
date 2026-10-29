@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T10:46:20.494033+09:00",
+  "generatedAt": "2026-10-29T14:27:23.506773+09:00",
   "asOf": "2026-10-29",
   "method": "instagram-post-count-wow",
   "window": {
@@ -17,20 +17,75 @@
       }
     },
     "tiktok": {
-      "status": "skipped"
+      "status": "blocked",
+      "read": 0,
+      "blocked": 72,
+      "note": "TikTok answered automation with its error shell and no view count; Creative Center replies 40101 no permission without a signed token."
     }
   },
   "displayCount": 20,
   "excludedAsGeneric": [
+    "kicks",
+    "kicksonfire",
+    "newrelease",
+    "shoegame",
     "shoes",
     "shoesaddict",
     "shoestagram",
+    "sneakercommunity",
     "sneakerhead",
+    "sneakerlove",
+    "sneakernews",
+    "sneakerrelease",
     "sneakers",
     "sneakerstyle",
+    "데일리슈즈",
     "신발",
     "신발스타그램",
-    "신발추천"
+    "신발추천",
+    "신상",
+    "신상스니커즈",
+    "운동화추천"
+  ],
+  "maxPerConcept": 2,
+  "retiredFromSeeds": [
+    "나이키 러닝화",
+    "러닝화 브랜드",
+    "러닝화 일상화",
+    "리복 러닝화",
+    "미즈노 러닝화",
+    "살로몬 러닝화",
+    "스피드캣 고",
+    "아디다스 러닝화",
+    "아식스 러닝화",
+    "프로스펙스 러닝화",
+    "호카 러닝화"
+  ],
+  "heldForDiversity": [
+    {
+      "hashtag": "나이키 러닝화",
+      "value": 23000
+    },
+    {
+      "hashtag": "러닝화추천",
+      "value": 22000
+    },
+    {
+      "hashtag": "아식스 러닝화",
+      "value": 4300
+    },
+    {
+      "hashtag": "아디다스 러닝화",
+      "value": 2000
+    },
+    {
+      "hashtag": "미즈노 러닝화",
+      "value": 1400
+    },
+    {
+      "hashtag": "살로몬 러닝화",
+      "value": 1300
+    }
   ],
   "keywords": [
     {
@@ -204,27 +259,6 @@
       "sourceUrl": "https://www.instagram.com/explore/tags/%EC%96%B4%EA%B8%80%EB%A6%AC%EC%8A%88%EC%A6%88/"
     },
     {
-      "hashtag": "sneakerrelease",
-      "platform": "instagram",
-      "metric": "post-count",
-      "value": 379000,
-      "valueLabel": "379K",
-      "growthPercent": null,
-      "comparedToDay": null,
-      "previousValue": null,
-      "isNew": true,
-      "relatedKeywords": [],
-      "matchTerms": [
-        "sneakerrelease"
-      ],
-      "matchTermGroups": [
-        [
-          "sneakerrelease"
-        ]
-      ],
-      "sourceUrl": "https://www.instagram.com/explore/tags/sneakerrelease/"
-    },
-    {
       "hashtag": "남자스니커즈",
       "platform": "instagram",
       "metric": "post-count",
@@ -367,72 +401,6 @@
       "sourceUrl": "https://www.instagram.com/explore/tags/%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%9F%AC%EB%8B%9D%ED%99%94/"
     },
     {
-      "hashtag": "나이키 러닝화",
-      "platform": "instagram",
-      "metric": "post-count",
-      "value": 23000,
-      "valueLabel": "23K",
-      "growthPercent": null,
-      "comparedToDay": null,
-      "previousValue": null,
-      "isNew": true,
-      "relatedKeywords": [
-        "러닝화"
-      ],
-      "matchTerms": [
-        "nike",
-        "runner",
-        "runners",
-        "running",
-        "나이키",
-        "러닝",
-        "러닝화"
-      ],
-      "matchTermGroups": [
-        [
-          "runner",
-          "runners",
-          "running",
-          "러닝",
-          "러닝화"
-        ],
-        [
-          "nike",
-          "나이키"
-        ]
-      ],
-      "sourceUrl": "https://www.instagram.com/explore/tags/%EB%82%98%EC%9D%B4%ED%82%A4%20%EB%9F%AC%EB%8B%9D%ED%99%94/"
-    },
-    {
-      "hashtag": "러닝화추천",
-      "platform": "instagram",
-      "metric": "post-count",
-      "value": 22000,
-      "valueLabel": "22K",
-      "growthPercent": null,
-      "comparedToDay": null,
-      "previousValue": null,
-      "isNew": true,
-      "relatedKeywords": [],
-      "matchTerms": [
-        "runner",
-        "runners",
-        "running",
-        "러닝",
-        "러닝화"
-      ],
-      "matchTermGroups": [
-        [
-          "runner",
-          "runners",
-          "running",
-          "러닝",
-          "러닝화"
-        ]
-      ],
-      "sourceUrl": "https://www.instagram.com/explore/tags/%EB%9F%AC%EB%8B%9D%ED%99%94%EC%B6%94%EC%B2%9C/"
-    },
-    {
       "hashtag": "스피드캣",
       "platform": "instagram",
       "metric": "post-count",
@@ -515,157 +483,6 @@
         ]
       ],
       "sourceUrl": "https://www.instagram.com/explore/tags/%EC%95%84%EC%8B%9D%EC%8A%A4%EC%A0%A4/"
-    },
-    {
-      "hashtag": "아식스 러닝화",
-      "platform": "instagram",
-      "metric": "post-count",
-      "value": 4300,
-      "valueLabel": "4.3K",
-      "growthPercent": null,
-      "comparedToDay": null,
-      "previousValue": null,
-      "isNew": true,
-      "relatedKeywords": [
-        "러닝화"
-      ],
-      "matchTerms": [
-        "asics",
-        "runner",
-        "runners",
-        "running",
-        "러닝",
-        "러닝화",
-        "아식스"
-      ],
-      "matchTermGroups": [
-        [
-          "runner",
-          "runners",
-          "running",
-          "러닝",
-          "러닝화"
-        ],
-        [
-          "asics",
-          "아식스"
-        ]
-      ],
-      "sourceUrl": "https://www.instagram.com/explore/tags/%EC%95%84%EC%8B%9D%EC%8A%A4%20%EB%9F%AC%EB%8B%9D%ED%99%94/"
-    },
-    {
-      "hashtag": "아디다스 러닝화",
-      "platform": "instagram",
-      "metric": "post-count",
-      "value": 2000,
-      "valueLabel": "2K",
-      "growthPercent": null,
-      "comparedToDay": null,
-      "previousValue": null,
-      "isNew": true,
-      "relatedKeywords": [
-        "아디다스",
-        "러닝화"
-      ],
-      "matchTerms": [
-        "adidas",
-        "runner",
-        "runners",
-        "running",
-        "러닝",
-        "러닝화",
-        "아디다스"
-      ],
-      "matchTermGroups": [
-        [
-          "runner",
-          "runners",
-          "running",
-          "러닝",
-          "러닝화"
-        ],
-        [
-          "adidas",
-          "아디다스"
-        ]
-      ],
-      "sourceUrl": "https://www.instagram.com/explore/tags/%EC%95%84%EB%94%94%EB%8B%A4%EC%8A%A4%20%EB%9F%AC%EB%8B%9D%ED%99%94/"
-    },
-    {
-      "hashtag": "미즈노 러닝화",
-      "platform": "instagram",
-      "metric": "post-count",
-      "value": 1400,
-      "valueLabel": "1.4K",
-      "growthPercent": null,
-      "comparedToDay": null,
-      "previousValue": null,
-      "isNew": true,
-      "relatedKeywords": [
-        "미즈노",
-        "러닝화"
-      ],
-      "matchTerms": [
-        "mizuno",
-        "runner",
-        "runners",
-        "running",
-        "러닝",
-        "러닝화",
-        "미즈노"
-      ],
-      "matchTermGroups": [
-        [
-          "runner",
-          "runners",
-          "running",
-          "러닝",
-          "러닝화"
-        ],
-        [
-          "mizuno",
-          "미즈노"
-        ]
-      ],
-      "sourceUrl": "https://www.instagram.com/explore/tags/%EB%AF%B8%EC%A6%88%EB%85%B8%20%EB%9F%AC%EB%8B%9D%ED%99%94/"
-    },
-    {
-      "hashtag": "살로몬 러닝화",
-      "platform": "instagram",
-      "metric": "post-count",
-      "value": 1300,
-      "valueLabel": "1.3K",
-      "growthPercent": null,
-      "comparedToDay": null,
-      "previousValue": null,
-      "isNew": true,
-      "relatedKeywords": [
-        "살로몬",
-        "러닝화"
-      ],
-      "matchTerms": [
-        "runner",
-        "runners",
-        "running",
-        "salomon",
-        "러닝",
-        "러닝화",
-        "살로몬"
-      ],
-      "matchTermGroups": [
-        [
-          "runner",
-          "runners",
-          "running",
-          "러닝",
-          "러닝화"
-        ],
-        [
-          "salomon",
-          "살로몬"
-        ]
-      ],
-      "sourceUrl": "https://www.instagram.com/explore/tags/%EC%82%B4%EB%A1%9C%EB%AA%AC%20%EB%9F%AC%EB%8B%9D%ED%99%94/"
     },
     {
       "hashtag": "스피드캣 고",
@@ -817,7 +634,7 @@
       "hashtag": "살로몬 코디",
       "coOccurrences": 1,
       "accepted": false,
-      "reason": "unreadable:no-data",
+      "reason": "restates-a-seed",
       "postCount": null
     },
     {
