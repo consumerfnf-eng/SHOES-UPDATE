@@ -194,6 +194,19 @@ function withoutAudienceLabel(value) {
 // 90" and "SL 72 프로" keep their model numbers. The closing bracket is
 // optional because ASH's listings reach the collector with it missing.
 const TRAILING_STYLE_CODE=/[([]?\s*\b(?=[A-Za-z0-9]*[A-Za-z])(?=[A-Za-z0-9]*\d)[A-Za-z0-9][A-Za-z0-9\-_/]{5,}\s*[)\]]?\s*$/;
+// What a retailer puts in front of the product's own name: its shop tag
+// ("[푸마 공식]"), an exclusivity note ("[29CM 단독]"), an audience ("(여성)"),
+// or the style code ("WTRD8100 엘더 플리츠 트레이너"). None of it is the
+// shoe's name, and each spelling was becoming its own card.
+const LEADING_TAG=/^\s*(?:[([][^)\]]{0,24}[)\]]\s*)+/;
+const LEADING_STYLE_CODE=/^\s*(?=[A-Za-z0-9]*[A-Za-z])(?=[A-Za-z0-9]*\d)[A-Za-z0-9]{6,}\s+/;
+const lettersIn=value=>value.replace(/[^\p{L}\p{N}]+/gu,'').length;
+function withoutLeadingNoise(value){
+  let out=String(value||'').replace(LEADING_TAG,' ').trim();
+  if(lettersIn(out)<3)out=String(value||'').trim();
+  const bare=out.replace(LEADING_STYLE_CODE,'').trim();
+  return lettersIn(bare)>=3?bare:out;
+}
 // variantGroupName and variantGroupKey are pure functions of one record and
 // are called for every product on every filter, sort, group and render - the
 // SNS tab alone asked for them tens of thousands of times and spent fifteen
@@ -225,7 +238,7 @@ function computeVariantGroupName(p) {
   for (const color of colors) base = base.replace(new RegExp(`(?:^|[\\s|—–-])${color.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}(?=$|[\\s|—–-])`,'ig'),' ');
   // A declared trailing color can leave "sneaker in" behind (e.g. Gucci).
   if (base !== p.name) base = base.replace(/\s+in\s*$/i,'');
-  base = base.replace(TRAILING_STYLE_CODE,' ');
+  base = withoutLeadingNoise(base.replace(TRAILING_STYLE_CODE,' '));
   return withoutAudienceLabel(trimModelSeparators(base))||p.name;
 }
 function computeVariantGroupKey(p) {

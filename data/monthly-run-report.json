@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-29T19:19:12.275906+09:00",
+  "checkedAt": "2026-10-29T20:03:59.843535+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -456,11 +456,12 @@
   },
   "modelGrouping": {
     "step": "model grouping",
-    "colourwayFromOwnName": 182,
-    "modelGroupsAssigned": 1281,
-    "groupedByStyleCode": 277,
-    "joinedToExistingModel": 20,
-    "colourwaysRecoveredFromName": 395
+    "colourwayFromOwnName": 168,
+    "modelGroupsAssigned": 1555,
+    "groupedByStyleCode": 299,
+    "groupedByColourSlot": 29,
+    "joinedToExistingModel": 21,
+    "colourwaysRecoveredFromName": 443
   },
   "rereleasesExcluded": 274,
   "modelsIndexed": 7502,

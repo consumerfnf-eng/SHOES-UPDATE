@@ -100,7 +100,11 @@ def tokens(text):
     token each, the colour and the code can never be seen.
     """
     out = []
-    for token in re.split(r'[\s_]+', (text or '').strip()):
+    # A bracket opens a new word even with no space in front of it: 29CM
+    # writes "칼튼 스웨이드 스니커즈(베이지)" and "Fev Veil run sneakers(black)",
+    # and read as one token the silhouette swallowed the colour.
+    spaced = re.sub(r'(?<=[^\s(\[])(?=[(\[])', ' ', (text or '').strip())
+    for token in re.split(r'[\s_]+', spaced):
         if not token:
             continue
         # "스니커즈-그레이지" is two words; "K3021001RD-W" is one code. A part
@@ -194,22 +198,57 @@ def remainder_is_colour_only(remainder):
     comes immediately before it. So a model-shaped token is accepted only
     when it trails a colour.
     """
-    stripped = HEIGHT.sub(' ', BRACKETED.sub(' ', remainder or ''))
+    # A bracket holds a code often enough that it used to be dropped whole,
+    # which made "(와이드 슬립인스)" look like one - and merged a wide fitting
+    # with a regular one. Only a bracket that reads as a code or a colour is
+    # dropped; anything else is judged on its words like the rest.
+    def unwrap(match):
+        inner = match.group(0)[1:-1].strip()
+        if not inner or any(c.isdigit() for c in inner):
+            return ' '                      # (502), (K3708240SD-W)
+        # A short Latin run with no spaces is a colour code - kizik writes
+        # (MWG), (BLA), (SOF) - unless it spells a colour outright. Anything
+        # with Korean in it is words: "(와이드 슬립인스)" is a fitting and a
+        # technology, and dropping it merged a wide shoe with a regular one.
+        if (re.fullmatch(r'[A-Za-z]{2,6}', inner) and not is_colour_token(inner)):
+            return ' '
+        return ' ' + inner + ' '
+    stripped = HEIGHT.sub(' ', BRACKETED.sub(unwrap, remainder or ''))
     stripped = TRAILING_CODE.sub(' ', stripped)
     parts = [t for t in tokens(stripped) if PUNCT.sub('', t)]
     if not parts:
         return True                       # the listings differed only by a code
     if len(parts) > MAX_REMAINDER_TOKENS:
         return False
-    previous_was_colour, named_a_colour = False, False
+    # What survives after a style code was removed, and is only digits, is
+    # that code's colour slot: FILA writes "플레르 2_FS263RU03X031_370" with
+    # _217 and _101 beside it. On its own a bare number is a model ("Air Max
+    # 90"), so the code has to have been there.
+    # It has to come *after* the code. "Air Max 90 DZ4504" also leaves a bare
+    # 90 once DZ4504 is gone, and the 90 is the model - merging it with
+    # "Air Max 95 DZ4505" is the one mistake this rule must never make.
+    found = TRAILING_CODE.search(remainder or '')
+    if (found and parts and all(MODEL_TOKEN.match(PUNCT.sub('', t.lower())) for t in parts)
+            and all(t in (remainder or '')[found.end():] for t in parts)):
+        return True
+    previous_was_colour, named_a_colour, previous_was_code = False, False, False
     for token in parts:
+        was_code = bool(TRAILING_CODE.fullmatch(token) or
+                        (len(PUNCT.sub('', token)) >= 6
+                         and any(c.isdigit() for c in token) and any(c.isalpha() for c in token)))
         if is_colour_token(token):
-            previous_was_colour, named_a_colour = True, True
+            previous_was_colour, named_a_colour, previous_was_code = True, True, was_code
             continue
         if previous_was_colour and MODEL_TOKEN.match(PUNCT.sub('', token.lower())):
+            previous_was_code = was_code
             continue                      # "히커리 II" - a shade, not a model
         if is_shade_modifier(token):
-            previous_was_colour = False   # 미드 브라운, 소프트 블랙, light grey
+            previous_was_colour, previous_was_code = False, was_code
+            continue
+        # A bare number straight after a style code is that code's colour
+        # slot: FILA writes "플레르 2_FS263RU03X031_370" and _217 and _101.
+        if previous_was_code and MODEL_TOKEN.match(PUNCT.sub('', token.lower())):
+            named_a_colour, previous_was_code = True, was_code
             continue
         return False
     # A remainder of nothing but modifiers names no colour at all.
@@ -267,6 +306,25 @@ def name_code(item):
     return code if any(c.isdigit() for c in code) and any(c.isalpha() for c in code) else ''
 
 
+# What a retailer puts in front of the product's own name: its shop tag, an
+# exclusivity note, an audience, or the style code. "[푸마 공식] H Street OG"
+# and "H-Street OG" are one shoe; so are "WTRD8100 엘더 플리츠 트레이너" and
+# "WTRD8101 엘더 플리츠 트레이너".
+LEADING_TAG = re.compile(
+    r'^\s*(?:[\[\(][^\]\)]{0,24}[\]\)]\s*)+')
+LEADING_CODE = re.compile(
+    r'^\s*(?=[A-Za-z0-9]*[A-Za-z])(?=[A-Za-z0-9]*\d)[A-Za-z0-9]{6,}\s+')
+
+
+def without_leading_noise(text):
+    """The title with a retailer's tag or a leading style code removed."""
+    stripped = LEADING_TAG.sub(' ', text or '').strip()
+    if not stripped or len(PUNCT.sub('', stripped)) < MIN_PREFIX_CHARS_HANGUL:
+        stripped = (text or '').strip()
+    without_code = LEADING_CODE.sub('', stripped).strip()
+    return without_code if len(PUNCT.sub('', without_code)) >= MIN_PREFIX_CHARS_HANGUL else stripped
+
+
 def model_title(item):
     """The title the grouping rules read: no audience word, no style code.
 
@@ -274,7 +332,7 @@ def model_title(item):
     and "LOOM 패딩슬립온 블랙 II (K3699011SD-W)". It is one shoe; MENS is who
     it is cut for, which belongs on the listing, not in the model's identity.
     """
-    return without_audience((item.get('name') or '').strip())
+    return without_audience(without_leading_noise((item.get('name') or '').strip()))
 
 
 def name_without_code(item):
@@ -389,8 +447,10 @@ def long_enough(prefix):
     folded = PUNCT.sub('', prefix)
     if not folded:
         return False
-    minimum = MIN_PREFIX_CHARS_HANGUL if HANGUL_TOKEN.match(folded) else MIN_PREFIX_CHARS
-    return len(folded) >= minimum
+    # "베가스 2" and "아테네 2" are complete Korean model names; measured by
+    # the Latin threshold they were two characters short and never grouped.
+    korean = re.search(r'[가-힣]', folded)
+    return len(folded) >= (MIN_PREFIX_CHARS_HANGUL if korean else MIN_PREFIX_CHARS)
 
 
 def trim_colour_tail(prefix):
@@ -419,6 +479,47 @@ def trim_colour_tail(prefix):
     return ' '.join(parts)
 
 
+def colour_slot_groups(listings):
+    """Listings whose titles differ in exactly one word, and that word is a colour.
+
+    Korean retailers often put the shade in the middle rather than at the
+    end - "플렉스 이지온 블랙 스니커즈", "플렉스 이지온 화이트 스니커즈",
+    "에어솔 올데이 블랙 스니커즈". A prefix rule cannot see that: the titles
+    agree on everything except one slot, and the leftover after the common
+    prefix is "블랙 스니커즈", which contains a silhouette and is refused.
+
+    So titles of equal length are bucketed by the word positions they share,
+    leaving one position free. The free word has to be a colour in every
+    member - a number there is a model ("Air Max 90" / "95"), and an ordinary
+    word is another model ("삼바 OG 블랙" / "삼바 클래식 블랙").
+    """
+    buckets = defaultdict(list)
+    for item in listings:
+        parts = tokens(model_title(item))
+        if not MIN_PREFIX_TOKENS < len(parts) <= 8:
+            continue
+        for slot in range(len(parts)):
+            if not (is_colour_token(parts[slot]) or is_shade_modifier(parts[slot])):
+                continue
+            shape = (len(parts), slot, tuple(PUNCT.sub('', t.lower()) for t in parts[:slot]),
+                     tuple(PUNCT.sub('', t.lower()) for t in parts[slot + 1:]))
+            buckets[shape].append((item, parts[slot]))
+    taken, groups = set(), []
+    for shape, members in sorted(buckets.items(), key=lambda kv: -len(kv[1])):
+        fresh = [(i, c) for i, c in members if id(i) not in taken]
+        if len(fresh) < 2 or len({PUNCT.sub('', c.lower()) for _, c in fresh}) < 2:
+            continue
+        _, slot, head, tail = shape
+        name = ' '.join(tokens(model_title(fresh[0][0]))[:slot]
+                        + tokens(model_title(fresh[0][0]))[slot + 1:])
+        if not long_enough(name):
+            continue
+        for item, _ in fresh:
+            taken.add(id(item))
+        groups.append((name, fresh))
+    return groups
+
+
 def _brand_key(item):
     return PUNCT.sub('', (item.get('brand') or '').lower())
 
@@ -436,7 +537,7 @@ def assign_model_groups(items, status=None):
         if _brand_key(item):
             by_brand[_brand_key(item)].append(item)
 
-    grouped, coloured, by_code = 0, 0, 0
+    grouped, coloured, by_code, by_slot = 0, 0, 0, 0
     for brand, listings in by_brand.items():
         # The manufacturer's own answer first: a shared style-code stem is
         # not a guess about language, so it outranks the word rule and takes
@@ -516,10 +617,26 @@ def assign_model_groups(items, status=None):
                         member['colorway'] = found
                         member['colorwayFrom'] = 'product-name'
                         coloured += 1
+
+        # A colour sitting in the middle of the title rather than at its end.
+        for name, members in colour_slot_groups([i for i in listings if id(i) not in taken]):
+            group_id = f'{brand}|{PUNCT.sub("", name.lower())}'
+            for item, colour in members:
+                taken.add(id(item))
+                item['modelGroupId'] = group_id
+                item['modelName'] = name
+                grouped += 1
+                by_slot += 1
+                if not (item.get('colorway') or '').strip():
+                    item['colorway'] = colour
+                    item['colorwayFrom'] = 'colour-slot'
+                    coloured += 1
+
     joined = join_leftovers(by_brand, status)
     status['colourwayFromOwnName'] = read_own_tail_colour(items)
     status['modelGroupsAssigned'] = grouped + joined
     status['groupedByStyleCode'] = by_code
+    status['groupedByColourSlot'] = by_slot
     status['joinedToExistingModel'] = joined
     status['colourwaysRecoveredFromName'] = coloured
     return items
