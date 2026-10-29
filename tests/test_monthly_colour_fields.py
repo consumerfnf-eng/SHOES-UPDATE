@@ -5,8 +5,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'monthly'))
 from build_colour_words import derive  # noqa: E402
-from footwear_scope import clean_colour_value, is_opaque_codes  # noqa: E402
-from model_grouping import assign_model_groups, colour_from_remainder, is_colour_token  # noqa: E402
+from footwear_scope import clean_colour_value, colour_from_style, is_opaque_codes  # noqa: E402
+from model_grouping import (  # noqa: E402
+    assign_model_groups, colour_from_remainder, is_colour_token, name_code, tokens)
 
 NOTICE_29CM = '(입고 시기에 따라 정보가 상이할 수 있어, 수령하신 상품의 라벨을 참고하시기 바랍니다.)'
 NOTICE_MUSINSA = '(선택되지 않는 색상은 판매하지 않거나 품절인 상품입니다)'
@@ -46,6 +47,15 @@ class ColourFieldTests(unittest.TestCase):
 
     def test_a_parenthetical_that_is_not_a_code_is_left_alone(self):
         self.assertEqual(clean_colour_value('스무디 슬립온 (BLACK)'), '스무디 슬립온 (BLACK)')
+
+    def test_a_colour_stated_in_the_style_field_is_not_thrown_away(self):
+        # New Balance's Korean listings put the model code in the name and
+        # the colour in the style field: name "NBPDGF762C", style
+        # "MT10O6L5 (CHARCOAL)".
+        self.assertEqual(colour_from_style('MT10O6L5 (CHARCOAL)'), 'CHARCOAL')
+        self.assertEqual(colour_from_style('U204L6JO (BEIGE)'), 'BEIGE')
+        self.assertEqual(colour_from_style('K3708240SD-W'), '')
+        self.assertEqual(colour_from_style('ABC (123)'), '')
 
     def test_a_full_colourway_specification_survives_intact(self):
         # Nike states upper:midsole:outsole:accent. All of it is real.
@@ -138,6 +148,98 @@ class ModelGroupingTests(unittest.TestCase):
                               '제옥스 플렉스트라이드 플러스 여성 슬립온-골드', brand='GEOX')
         assign_model_groups(items)
         self.assertEqual([i.get('modelGroupId') for i in items], [None, None])
+
+    def test_a_shared_style_code_stem_is_one_model_in_several_colours(self):
+        # fitflop names two of these shades 카푸치노 and 스파이스드 에프리콧,
+        # which are in no vocabulary. The code answers anyway.
+        items = self.listings(
+            '여성 네오D 하이커 패디드 트레이너  그레이 세이지 (FT69K2N51H)',
+            '여성 네오D 하이커 패디드 트레이너  카푸치노 (FT69K2N51A)',
+            '여성 네오D 하이커 패디드 트레이너  스파이스드 에프리콧 (FT69K2N517)',
+            '여성 네오D 하이커 패디드 트레이너  블랙 (FT69K2N515)', brand='fitflop')
+        status = {}
+        assign_model_groups(items, status)
+        self.assertEqual(len({i['modelGroupId'] for i in items}), 1)
+        self.assertEqual(status['groupedByStyleCode'], 4)
+        self.assertEqual([i['colorway'] for i in items],
+                         ['그레이 세이지', '카푸치노', '스파이스드 에프리콧', '블랙'])
+        self.assertEqual({i['modelName'] for i in items}, {'여성 네오D 하이커 패디드 트레이너'})
+
+    def test_a_title_that_is_only_a_code_still_groups(self):
+        items = self.listings('NBPDGF762C', 'NBPDGF762T', brand='New Balance')
+        assign_model_groups(items)
+        self.assertEqual(len({i['modelGroupId'] for i in items}), 1)
+
+    def test_a_different_version_in_the_same_code_block_stays_apart(self):
+        # fitflop numbers the metallic trainer alongside the plain one, so
+        # they share FT69K2N51 while differing by a word in the middle.
+        items = self.listings(
+            '여성 네오D 하이커 패디드 트레이너  블랙 (FT69K2N515)',
+            '여성 네오D 하이커 패디드 트레이너  카푸치노 (FT69K2N51A)',
+            '여성 네오D 하이커 패디드 메탈릭 트레이너  실버 (FT69K2N512)', brand='fitflop')
+        assign_model_groups(items)
+        self.assertEqual(items[0]['modelGroupId'], items[1]['modelGroupId'])
+        self.assertIsNone(items[2].get('modelGroupId'))
+
+    def test_a_code_block_never_merges_two_model_numbers(self):
+        items = self.listings('Air Max 90 DZ4504', 'Air Max 95 DZ4505', brand='Nike')
+        assign_model_groups(items)
+        self.assertEqual([i.get('modelGroupId') for i in items], [None, None])
+
+    def test_a_colour_abbreviation_groups_like_the_word(self):
+        items = self.listings('에버라스트 다이나믹 트레킹화 BLK',
+                              '에버라스트 다이나믹 트레킹화 BRN',
+                              '에버라스트 다이나믹 트레킹화 IVY', brand='everlast')
+        assign_model_groups(items)
+        self.assertEqual(len({i['modelGroupId'] for i in items}), 1)
+        self.assertEqual([i['colorway'] for i in items], ['BLK', 'BRN', 'IVY'])
+
+    def test_a_technology_suffix_is_not_a_colour_abbreviation(self):
+        for token in ('GTX', 'DMX', 'ATR', 'OG', 'LS'):
+            self.assertFalse(is_colour_token(token), token)
+
+    def test_two_code_blocks_of_one_model_land_on_one_card(self):
+        # adidas numbers the 핸드볼 스페지알 across unrelated code blocks.
+        # The model's name is its identity; the code only finds it.
+        items = self.listings('핸드볼 스페지알 IF6490', '핸드볼 스페지알 IF6562',
+                              '핸드볼 스페지알 BD7632', brand='adidas')
+        assign_model_groups(items)
+        self.assertEqual(len({i['modelGroupId'] for i in items}), 1)
+
+    def test_models_numbered_inside_one_code_block_stay_apart(self):
+        # ASH numbers SIENA, SUPER and VIRGIN inside AG2D0100.
+        items = self.listings(
+            '[공식] ASH(아쉬) SIENA 시에나 스니커즈 (AG2D01005',
+            '[공식] ASH(아쉬) SIENA 시에나 스니커즈 (AG2D01003',
+            '[공식] ASH(아쉬) SUPER 수퍼 스니커즈 (AG2D01008',
+            '[공식] ASH(아쉬) SUPER 수퍼 스니커즈 (AG2D01007', brand='ASH')
+        assign_model_groups(items)
+        self.assertEqual(items[0]['modelGroupId'], items[1]['modelGroupId'])
+        self.assertEqual(items[2]['modelGroupId'], items[3]['modelGroupId'])
+        self.assertNotEqual(items[0]['modelGroupId'], items[2]['modelGroupId'])
+
+    def test_a_colour_after_an_underscore_is_still_a_colour(self):
+        # NATIVE writes "제퍼슨_웨이브"; read as one token the colour is lost.
+        self.assertEqual(tokens('[NATIVE] 네이티브 제퍼슨_화이트'),
+                         ['[NATIVE]', '네이티브', '제퍼슨', '화이트'])
+        items = self.listings('[NATIVE] 네이티브 제퍼슨_화이트',
+                              '[NATIVE] 네이티브 제퍼슨_블랙', brand='NATIVE')
+        assign_model_groups(items)
+        self.assertEqual(len({i['modelGroupId'] for i in items}), 1)
+
+    def test_one_odd_listing_no_longer_splits_the_whole_model(self):
+        # "로 프로" is its own model and used to disqualify the prefix for
+        # every colourway sharing it.
+        items = self.listings('핸드볼 스페지알 IF6490', '핸드볼 스페지알 IF6562',
+                              '핸드볼 스페지알 로 프로 KI2208', brand='adidas')
+        assign_model_groups(items)
+        self.assertEqual(items[0]['modelGroupId'], items[1]['modelGroupId'])
+        self.assertIsNone(items[2].get('modelGroupId'))
+
+    def test_a_word_is_never_mistaken_for_a_style_code(self):
+        self.assertEqual(name_code({'name': 'Premium Skate SNEAKERS'}), '')
+        self.assertEqual(name_code({'name': '핸드볼 스페지알 IF6490'}), 'IF6490')
+        self.assertEqual(name_code({'name': '... 스니커즈 (AF2D01051'}), 'AF2D01051')
 
     def test_colour_is_read_out_of_a_bracketed_remainder(self):
         self.assertEqual(colour_from_remainder('(BLACK)'), 'BLACK')

@@ -175,6 +175,12 @@ function withoutAudienceLabel(value) {
 }
 // Same-model colorways share one grid card even when feeds assign separate
 // modelKeys to colors or genders. Grouping never mutates source records.
+// A style code at the end of a title is the manufacturer's reference, not
+// part of the shoe's name: "…메탈릭 트레이너 실버 (FT69K2N512)", "핸드볼
+// 스페지알 IF6490". It must contain both a letter and a digit, so "Air Max
+// 90" and "SL 72 프로" keep their model numbers. The closing bracket is
+// optional because ASH's listings reach the collector with it missing.
+const TRAILING_STYLE_CODE=/[([]?\s*\b(?=[A-Za-z0-9]*[A-Za-z])(?=[A-Za-z0-9]*\d)[A-Za-z0-9][A-Za-z0-9\-_/]{5,}\s*[)\]]?\s*$/;
 export function variantGroupName(p) {
   // When the collection step resolved this listing to a model, that name is
   // the card's name. It is the only one that is right for a card standing
@@ -183,10 +189,14 @@ export function variantGroupName(p) {
   if (!p?.name) return p?.modelKey || p?.id || '';
   let base = String(p.name);
   const colors = [p.colorway, ...(p.colors || []).map(c => typeof c === 'string' ? c : c?.name)].filter(Boolean)
-    .flatMap(value => String(value).split(/[\/,·]+/)).map(value => value.trim()).filter(value => value.length > 2).sort((a,b)=>b.length-a.length);
+    .flatMap(value => String(value).split(/[\/,·]+/)).map(value => value.trim())
+    // Two letters is noise in a Latin name and a whole colour in Korean:
+    // 블랙, 실버, 카키 are all two syllables.
+    .filter(value => value.length > 2 || /^[가-힣]{2}$/.test(value)).sort((a,b)=>b.length-a.length);
   for (const color of colors) base = base.replace(new RegExp(`(?:^|[\\s|—–-])${color.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}(?=$|[\\s|—–-])`,'ig'),' ');
   // A declared trailing color can leave "sneaker in" behind (e.g. Gucci).
   if (base !== p.name) base = base.replace(/\s+in\s*$/i,'');
+  base = base.replace(TRAILING_STYLE_CODE,' ');
   return withoutAudienceLabel(trimModelSeparators(base))||p.name;
 }
 export function variantGroupKey(p) {
@@ -221,9 +231,18 @@ const COLOR_HEX={black:'#242424',white:'#f7f7f2',ivory:'#eee9d8',cream:'#ece1c6'
 // The same shade, written in two languages. Musinsa lists OLLA's slip-on as
 // 히커리 II and 29CM lists the identical shoe as HICKORY II; without this
 // one colourway draws two chips on the one card.
-const COLOR_SYNONYM={블랙:'black',검정:'black',검:'black',화이트:'white',흰색:'white',오프화이트:'offwhite',아이보리:'ivory',크림:'cream',그레이:'grey',회색:'grey',차콜:'charcoal',실버:'silver',블루:'blue',파랑:'blue',네이비:'navy',진청:'navy',연청:'denim',데님:'denim',레드:'red',빨강:'red',와인:'wine',버건디:'burgundy',마룬:'maroon',핑크:'pink',코랄:'coral',오렌지:'orange',옐로우:'yellow',노랑:'yellow',그린:'green',초록:'green',올리브:'olive',카키:'khaki',세이지:'sage',민트:'mint',퍼플:'purple',보라:'purple',바이올렛:'violet',라벤더:'lavender',라일락:'lilac',브라운:'brown',실브라운:'sealbrown',초콜릿:'chocolate',초콜렛:'chocolate',모카:'mocha',커피:'coffee',코냑:'cognac',카멜:'camel',탄:'tan',베이지:'beige',샌드:'sand',스톤:'stone',토프:'taupe',그레이지:'greige',누드:'nude',라떼:'latte',오트밀:'oatmeal',머스타드:'mustard',골드:'gold',브론즈:'bronze',퓨터:'pewter',히커리:'hickory',체스트넛:'chestnut',테라코타:'terracotta',브릭:'brick',러스트:'rust',피치:'peach',살구:'apricot',터콰이즈:'turquoise',틸:'teal',멀티컬러:'multicolor',메탈릭:'metallic',펄:'pearl'};
+const COLOR_SYNONYM={블랙:'black',검정:'black',검:'black',화이트:'white',흰색:'white',오프화이트:'offwhite',아이보리:'ivory',크림:'cream',그레이:'grey',회색:'grey',차콜:'charcoal',실버:'silver',블루:'blue',파랑:'blue',네이비:'navy',진청:'navy',연청:'denim',데님:'denim',레드:'red',빨강:'red',와인:'wine',버건디:'burgundy',마룬:'maroon',핑크:'pink',코랄:'coral',오렌지:'orange',옐로우:'yellow',노랑:'yellow',그린:'green',초록:'green',올리브:'olive',카키:'khaki',세이지:'sage',민트:'mint',퍼플:'purple',보라:'purple',바이올렛:'violet',라벤더:'lavender',라일락:'lilac',브라운:'brown',실브라운:'sealbrown',초콜릿:'chocolate',초콜렛:'chocolate',모카:'mocha',커피:'coffee',코냑:'cognac',카멜:'camel',탄:'tan',베이지:'beige',샌드:'sand',스톤:'stone',토프:'taupe',그레이지:'greige',누드:'nude',라떼:'latte',오트밀:'oatmeal',머스타드:'mustard',골드:'gold',브론즈:'bronze',퓨터:'pewter',히커리:'hickory',체스트넛:'chestnut',테라코타:'terracotta',브릭:'brick',러스트:'rust',피치:'peach',살구:'apricot',터콰이즈:'turquoise',틸:'teal',멀티컬러:'multicolor',메탈릭:'metallic',펄:'pearl',
+// Abbreviations retailers use instead of the word: "에버라스트 다이나믹
+// 트레킹화 BLK / BRN / IVY" is one shoe in three colours. Kept apart from
+// the model and technology suffixes of the same shape - GTX, OG, DMX, LS.
+blk:'black',bwn:'brown',brn:'brown',wht:'white',ivy:'ivory',nvy:'navy',gry:'grey',grn:'green',blu:'blue',pnk:'pink',ylw:'yellow',bge:'beige',crm:'cream',khk:'khaki',olv:'olive',slv:'silver',gld:'gold',chc:'chocolate'};
 export function colorHex(word){
-  const key=String(word||'').normalize('NFKC').toLowerCase().replace(/[^a-z가-힣]/g,'');
+  const raw=String(word||'').normalize('NFKC');
+  // A token with a digit in it is a product code, not a colour. Without
+  // this, stripping the digits turned 29CM's "BLK0" into "blk" and made
+  // its internal code list "BGD0,BLK0,WHGY" read as a colour.
+  if(/\d/.test(raw))return '';
+  const key=raw.toLowerCase().replace(/[^a-z가-힣]/g,'');
   return COLOR_HEX[key]||COLOR_HEX[COLOR_SYNONYM[key]||'']||'';
 }
 // One colourway's canonical spelling: each recognised word folded to its

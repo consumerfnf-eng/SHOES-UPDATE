@@ -28,6 +28,28 @@ A bare number or a version token blocks the merge, which is what keeps
 short token, exactly like a colour pair, and only the remainder's shape
 tells them apart. The longest qualifying prefix wins, so a more specific
 model never dissolves into a shorter one.
+
+The second rule: style codes
+----------------------------
+A dictionary of colour words cannot keep up with what retailers write.
+fitflop names its trainer's shades 그레이 세이지, 카푸치노 and 스파이스드
+에프리콧; two of those are in no vocabulary, and because the first rule
+needs *every* listing's remainder to be colour-only, one unknown shade kept
+the whole model split into four cards.
+
+The manufacturer already answered the question, in the style code:
+
+    여성 네오D 하이커 패디드 트레이너  그레이 세이지 (FT69K2N51H)
+    여성 네오D 하이커 패디드 트레이너  카푸치노      (FT69K2N51A)
+    여성 네오D 하이커 패디드 트레이너  블랙          (FT69K2N515)
+
+    NBPDGF762C   NBPDGF762T
+
+Codes of equal length sharing every character but the last are one model in
+two colourways - that is what the trailing position of a style code is for.
+It needs no vocabulary and no language, so it also catches the listings
+whose whole name is the code. Whatever word is left over is then a colour
+by construction, which is how 카푸치노 gets recognised at all.
 """
 import os
 import re
@@ -44,7 +66,13 @@ MIN_PREFIX_CHARS = 6
 MAX_REMAINDER_TOKENS = 4
 
 BRACKETED = re.compile(r'[\(\[\{][^\)\]\}]*[\)\]\}]')
-TRAILING_CODE = re.compile(r'[-_/]?\b[A-Z0-9]{2,}[-_][A-Z0-9]+\b|\b[A-Z]{1,4}\d{3,}[A-Z0-9-]*\b')
+TRAILING_CODE = re.compile(
+    r'[-_/]?\b[A-Z0-9]{2,}[-_][A-Z0-9]+\b'           # KI-2208, SP0WRCGX-251
+    r'|\b[A-Z]{1,4}\d{3,}[A-Z0-9-]*\b'               # IF6490, KI2971
+    # AF2D01051, SP0MWCGX211: letters and digits interleaved, which is
+    # most Korean retailers' SKU. ASH's listings arrive from the
+    # collector with the bracket left open, so it is optional here.
+    r'|\(?\b(?=[A-Z0-9]*[A-Z])(?=[A-Z0-9]*\d)[A-Z0-9]{6,}\b\)?')
 HEIGHT = re.compile(r'\b\d+(?:\.\d+)?\s*(?:cm|mm|inch|호)\b', re.I)
 # A token that identifies a model rather than a colour: a bare number, a
 # version marker, or a number glued to a short suffix (90, v2, 1906, 9060).
@@ -62,7 +90,13 @@ def colour_words():
 
 
 def tokens(text):
-    return [t for t in re.split(r'\s+', (text or '').strip()) if t]
+    """The words of a title.
+
+    An underscore separates as surely as a space: NATIVE writes
+    "제퍼슨_웨이브" and Skechers "플렉스(슬립인스)_SP0MWCGX211". Read as one
+    token each, the colour and the code can never be seen.
+    """
+    return [t for t in re.split(r'[\s_]+', (text or '').strip()) if t]
 
 
 HANGUL_TOKEN = re.compile(r'^[가-힣]+$')
@@ -156,6 +190,140 @@ def colour_from_remainder(remainder):
     return ''
 
 
+# A style code at the end of a listing title, bracketed or bare. Six
+# characters is the shortest that is a code rather than a size or a year.
+NAME_CODE = re.compile(
+    r'[\(\[]\s*([A-Za-z0-9][A-Za-z0-9\-_/]{4,})\s*[\)\]]?\s*$'
+    # A bare code at the end, after a space or an underscore. ASH's
+    # listings reach us with the bracket open - "... (AF2D01051" - and
+    # Skechers joins the code on with an underscore.
+    r'|(?:^|[\s_(])([A-Za-z0-9]{6,})\s*$')
+MIN_CODE_CHARS = 6
+MAX_COLOUR_SUFFIX = 2     # how much of a code may be the colour position
+
+
+def name_code(item):
+    """The style code a listing's title ends with, normalised, or ''.
+
+    Both a letter and a digit are required: "SNEAKERS" is the end of a
+    title and "AF2D01051" is a reference to one shoe in one colour.
+    """
+    found = NAME_CODE.search((item.get('name') or '').strip())
+    if not found:
+        return ''
+    code = re.sub(r'[^A-Za-z0-9]', '', found.group(1) or found.group(2) or '').upper()
+    if len(code) < MIN_CODE_CHARS:
+        return ''
+    return code if any(c.isdigit() for c in code) and any(c.isalpha() for c in code) else ''
+
+
+def name_without_code(item):
+    """The title with its trailing style code removed."""
+    return NAME_CODE.sub(' ', (item.get('name') or '').strip()).strip()
+
+
+def shared_prefix(names):
+    """The leading tokens every name has in common."""
+    split = [tokens(n) for n in names]
+    prefix = []
+    for column in zip(*split):
+        if len(set(column)) != 1:
+            break
+        prefix.append(column[0])
+    return ' '.join(prefix)
+
+
+def code_groups(listings):
+    """Listings of one brand whose style codes differ only in their last
+    character or two - the position a manufacturer puts the colour in.
+
+    Codes of different lengths are never compared: "ABC123" and "ABC1234"
+    share a stem without sharing a model.
+    """
+    by_stem = defaultdict(list)
+    for item in listings:
+        code = name_code(item)
+        if not code:
+            continue
+        for cut in range(1, MAX_COLOUR_SUFFIX + 1):
+            if len(code) - cut >= MIN_CODE_CHARS - 1:
+                by_stem[(len(code), code[:-cut])].append((item, code))
+    seen, groups = set(), []
+    for (_, stem), members in sorted(by_stem.items(), key=lambda kv: -len(kv[0][1])):
+        fresh = [(i, c) for i, c in members if id(i) not in seen]
+        if len(fresh) < 2 or len({c for _, c in fresh}) < 2:
+            continue
+        for prefix, chosen in _by_title(fresh):
+            for item, _ in chosen:
+                seen.add(id(item))
+            bodies = [name_without_code(i) for i, _ in chosen]
+            size = len(tokens(prefix))
+            groups.append((stem, prefix, [(i, ' '.join(tokens(b)[size:]))
+                                          for (i, _), b in zip(chosen, bodies)]))
+    return groups
+
+
+def _by_title(members):
+    """Split one code stem into the products its titles actually describe.
+
+    Sharing a stem is not enough on its own. fitflop numbers the metallic
+    version of a trainer in the same block as the plain one, so
+    "...패디드 트레이너 블랙" and "...패디드 메탈릭 트레이너 실버" share
+    FT69K2N51 while differing by a word in the middle that is not a colour.
+    Taken as one group their common prefix stops early and every colour chip
+    inherits the leftover "트레이너". Grouped by title instead, the four
+    plain shades become one card and the metallic one stands on its own.
+
+    No colour vocabulary is consulted here: the code already established
+    that siblings differ by colour, so an unrecognised shade is fine. Only a
+    model identifier or another silhouette can break a title apart.
+    """
+    candidates = defaultdict(list)
+    for item, code in members:
+        parts = tokens(name_without_code(item))
+        for size in range(len(parts), -1, -1):
+            candidates[' '.join(parts[:size])].append((item, code))
+    taken, out = set(), []
+    for prefix in sorted(candidates, key=lambda p: (-len(tokens(p)), -len(p))):
+        chosen = [(i, c) for i, c in candidates[prefix] if id(i) not in taken]
+        if len(chosen) < 2 or len({c for _, c in chosen}) < 2:
+            continue
+        size = len(tokens(prefix))
+        remainders = [' '.join(tokens(name_without_code(i))[size:]) for i, _ in chosen]
+        # A prefix too short to name a model is allowed only when there is
+        # no model name to find: New Balance's Korean listings are called
+        # "NBPDGF762C" and nothing else, so the code is the whole title.
+        if (len(tokens(prefix)) < MIN_PREFIX_TOKENS
+                or len(PUNCT.sub('', prefix)) < MIN_PREFIX_CHARS):
+            if not all(remainder_is_colour_only(r) for r in remainders):
+                continue
+        if any(MODEL_TOKEN.match(PUNCT.sub('', t.lower()))
+               for r in remainders for t in tokens(HEIGHT.sub(' ', r))):
+            continue
+        if any(names_a_silhouette(r) for r in remainders):
+            continue
+        # No requirement that the leftovers differ, unlike the word rule:
+        # the codes already do, and when the title *is* the code there is
+        # nothing left over at all ("NBPDGF762C" and "NBPDGF762T").
+        for i, _ in chosen:
+            taken.add(id(i))
+        out.append((prefix, chosen))
+    return out
+
+
+def trimmed(remainder):
+    """The remainder as a label, with brackets, codes and heights gone.
+
+    colour_from_remainder returns only words it recognises. When the style
+    code has already established that two listings are one model, the words
+    it did not recognise are the colour anyway - 카푸치노 is in no
+    vocabulary and is still what tells that listing from its siblings.
+    """
+    stripped = HEIGHT.sub(' ', BRACKETED.sub(' ', remainder or ''))
+    stripped = TRAILING_CODE.sub(' ', stripped)
+    return ' '.join(tokens(stripped)).strip(' -_/()[]')
+
+
 def _brand_key(item):
     return PUNCT.sub('', (item.get('brand') or '').lower())
 
@@ -173,26 +341,65 @@ def assign_model_groups(items, status=None):
         if _brand_key(item):
             by_brand[_brand_key(item)].append(item)
 
-    grouped, coloured = 0, 0
+    grouped, coloured, by_code = 0, 0, 0
     for brand, listings in by_brand.items():
+        # The manufacturer's own answer first: a shared style-code stem is
+        # not a guess about language, so it outranks the word rule and takes
+        # its members out of the running before prefixes are considered.
+        taken = set()
+        for stem, prefix, members in code_groups(listings):
+            # The model's name is its identity; the code only found it. Two
+            # code blocks of one model - adidas numbers the 핸드볼 스페지알
+            # across KI2970, KK0932 and KZ6705 - therefore land on the same
+            # key, and so do a code group and a word group of the same name.
+            # Only a listing with no name to share falls back to the stem:
+            # New Balance's "NBPDGF762C" is a code and nothing else.
+            named = PUNCT.sub('', prefix.lower())
+            group_id = f'{brand}|{named}' if named else f'{brand}|code:{stem.lower()}'
+            for item, remainder in members:
+                taken.add(id(item))
+                item['modelGroupId'] = group_id
+                item['modelName'] = prefix or item.get('modelName') or ''
+                grouped += 1
+                by_code += 1
+                if not (item.get('colorway') or '').strip():
+                    # The code says these differ only by colour, so whatever
+                    # the title has left over is the colour - no vocabulary
+                    # needed, which is the point.
+                    found = colour_from_remainder(remainder) or trimmed(remainder)
+                    if found:
+                        item['colorway'] = found
+                        item['colorwayFrom'] = 'style-code-sibling'
+                        coloured += 1
+
         # Candidate prefixes, longest first, so the most specific model wins.
         candidates = defaultdict(list)
         for item in listings:
             parts = tokens(item.get('name'))
-            for size in range(len(parts) - 1, MIN_PREFIX_TOKENS - 1, -1):
+            # `len(parts)` included: adidas lists four colourways of the
+            # 핸드볼 스페지알 under that name exactly and a fifth as
+            # "핸드볼 스페지알 IF6490". Stopping one token short of the title
+            # left the plain ones unable to join their own model.
+            for size in range(len(parts), MIN_PREFIX_TOKENS - 1, -1):
                 prefix = ' '.join(parts[:size])
                 if len(PUNCT.sub('', prefix)) >= MIN_PREFIX_CHARS:
                     candidates[prefix].append(item)
 
-        taken = set()
         for prefix in sorted(candidates, key=lambda p: (-len(tokens(p)), -len(p))):
             members = [m for m in candidates[prefix] if id(m) not in taken]
             if len(members) < 2:
                 continue
             size = len(tokens(prefix))
-            remainders = [' '.join(tokens(m.get('name'))[size:]) for m in members]
-            if not all(remainder_is_colour_only(r) for r in remainders):
+            # The members that qualify, not all-or-nothing. adidas lists the
+            # 핸드볼 스페지알 in four colourways, a Low Pro and a Bold; under
+            # the old rule "로 프로" disqualified the whole prefix and all six
+            # stayed apart. The two that are their own models still do.
+            pairs = [(m, ' '.join(tokens(m.get('name'))[size:])) for m in members]
+            pairs = [(m, r) for m, r in pairs if remainder_is_colour_only(r)]
+            if len(pairs) < 2:
                 continue
+            members = [m for m, _ in pairs]
+            remainders = [r for _, r in pairs]
             # Two listings whose remainders are identical are not a colour
             # pair; leave them to the photo-duplicate step.
             if len({r.strip().lower() for r in remainders}) < 2:
@@ -210,5 +417,6 @@ def assign_model_groups(items, status=None):
                         member['colorwayFrom'] = 'product-name'
                         coloured += 1
     status['modelGroupsAssigned'] = grouped
+    status['groupedByStyleCode'] = by_code
     status['colourwaysRecoveredFromName'] = coloured
     return items

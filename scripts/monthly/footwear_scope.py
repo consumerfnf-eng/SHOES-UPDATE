@@ -195,6 +195,20 @@ def is_opaque_codes(text):
 INLINE_CODE = re.compile(r'[\(\[]\s*[A-Za-z]{0,3}\d{1,4}[A-Za-z]{0,2}\s*[\)\]]')
 
 
+# New Balance's Korean listings put the model code in the name and the
+# colour in the style field, in brackets after the SKU:
+#     name "NBPDGF762C"   style "MT10O6L5 (CHARCOAL)"
+# That is a colour the retailer stated; it was being thrown away because
+# nothing looks for it outside the colour field.
+STYLE_COLOUR = re.compile(r'\(\s*([A-Za-z][A-Za-z /\-]{2,30})\s*\)\s*$')
+
+
+def colour_from_style(style):
+    """The colour a retailer wrote into the style field, or ''."""
+    found = STYLE_COLOUR.search((style or '').strip())
+    return clean_colour_value(found.group(1)) if found else ''
+
+
 def clean_colour_value(value):
     """The colour a retailer stated, with its boilerplate cut off, or ''."""
     text = SELLER_NOTICE.sub(' ', (value or '').strip())

@@ -72,8 +72,12 @@ NOT_COLOURS = {
     'new', 'colors', 'color', 'three', 'six', 'triple', 'core', 'light', 'dark',
     'bright', 'clear', 'off', 'warm', 'cool', 'dot', 'star', 'empire', 'plaza',
     'land', 'africa', 'english', 'leo', 'magic', 'military', 'safari', 'wonder',
-    'wood', 'flux', 'six', 'tea', 'ii', 'dkbl', 'blk', 'whbk', 'whbr', 'whgy',
+    'wood', 'flux', 'six', 'tea', 'ii', 'dkbl', 'whbk', 'whbr', 'whgy',
     'whpu', 'slx', 'strata', 'tango', 'fandango',
+    # Three- and four-letter suffixes that look like a colour abbreviation
+    # and are a model or a technology: "Air Max GTX", "Gel-Kayano ATR".
+    'gtx', 'dmx', 'atr', 'exo', 'nyc', 'mld', 'arq', 'etr', 'ami', 'rsp',
+    'prm', 'txt', 'ltd', 'spt', 'trl', 'nxt', 'evo',
 }
 
 

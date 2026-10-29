@@ -42,7 +42,7 @@ import subprocess
 import sys
 
 from brand_identity import canonical_brand
-from footwear_scope import clean_colour_value, is_stated_value
+from footwear_scope import clean_colour_value, colour_from_style, is_stated_value
 from image_signals import colour_distance, signals_for
 from model_grouping import assign_model_groups
 from common import atomic_write_json, derive_colorway, kst_day, kst_iso_week, kst_now, kst_three_months_ago, read_json
@@ -250,6 +250,10 @@ def normalize_retail_item(item, basis, previous, now, is_baseline):
     # standing notice. None of that belongs on a chip, so the field is cleaned
     # down to whatever colour it actually states before anything else reads it.
     item['colorway'] = clean_colour_value(item.get('colorway'))
+    if not item['colorway']:
+        # A colour the retailer stated in the wrong field still counts:
+        # New Balance writes "MT10O6L5 (CHARCOAL)" into `style`.
+        item['colorway'] = colour_from_style(item.get('style'))
     if not item['colorway']:
         item['colorway'] = derive_colorway(item.get('fullName') or item.get('name', ''))
     for field in ('material', 'countryOrigin'):

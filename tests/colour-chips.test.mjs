@@ -115,3 +115,27 @@ test('lifting the colour off a name does not leave its separator behind', () => 
     brand: 'KSNSLIFE', name: '어반트렉 메시 Ver. 3, 버건디', colorway: '버건디',
   }), '어반트렉 메시 Ver. 3');
 });
+
+test('a colour abbreviation gets a label and a real chip colour', () => {
+  // "에버라스트 다이나믹 트레킹화 BLK / BRN / IVY" is one shoe in three colours.
+  assert.equal(variantColorLabel({colorway: 'BLK'}), 'BLK');
+  assert.equal(colorHex('BLK'), colorHex('black'));
+  assert.equal(colorHex('IVY'), colorHex('ivory'));
+  assert.equal(uniqueColorVariants([listing('a', 'BLK'), listing('b', '블랙')], 'a').length, 1);
+});
+
+test('a technology suffix of the same shape is not a colour', () => {
+  for (const token of ['GTX', 'OG', 'DMX', 'LS']) assert.equal(colorHex(token), '', token);
+});
+
+test("a retailer's internal code list is still not a colour", () => {
+  // Reading "BLK0" as black would let the whole code list through.
+  assert.equal(colorHex('BLK0'), '');
+  assert.equal(variantColorLabel({colorway: 'BGD0,BLK0,WHGY'}), '');
+});
+
+test('a style code in brackets is not part of the card name', () => {
+  assert.equal(variantGroupName({
+    brand: 'fitflop', name: '여성 네오D 하이커 패디드 메탈릭 트레이너  실버 (FT69K2N512)', colorway: '실버',
+  }), '네오D 하이커 패디드 메탈릭 트레이너');
+});
