@@ -24,6 +24,12 @@ permissions:
 concurrency:
   group: shoes-publication
   cancel-in-progress: false
+env:
+  # Some official stores answer with more than Node's default 16KB of
+  # headers; HOKA failed every request with UND_ERR_HEADERS_OVERFLOW,
+  # which reads like a block and is a client limit.
+  NODE_OPTIONS: --max-http-header-size=65536
+
 jobs:
   collect:
     if: github.ref == 'refs/heads/main'
