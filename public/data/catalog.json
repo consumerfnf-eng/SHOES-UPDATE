@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "publishedAt": "2026-10-28T09:53:34.688Z",
-  "periodStart": "2026-07-28",
-  "asOf": "2026-10-28",
+  "periodStart": "2026-07-29",
+  "asOf": "2026-10-29",
   "brands": [
     {
       "id": "louis-vuitton",
@@ -453,6 +453,7 @@
         "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
         "style": "hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080.html",
       "image": "https://balenciaga.dam.kering.com/asset/485cb78b-fe1e-4cfb-956c-38014342e8f5/Small/841765WHPSM1080_X.jpg?v=1",
       "style": "hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080",
@@ -502,7 +503,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -519,8 +520,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/52d0280e02dd9eb2c3c5f11a7dcab2fc936262ee7d5564c298f705ebdbc40ce0.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-6127f9f012dd243098ef",
@@ -549,6 +549,7 @@
         "contentHash": "235df901f11d502f863bb2a17db7ae30533f81efb18d44bef458074eed81d0b1",
         "style": "jet-sneaker-white-black-872642WMRTN9010"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/jet-sneaker-white-black-872642WMRTN9010.html",
       "image": "https://balenciaga.dam.kering.com/asset/ddd4406f-3733-4a79-9187-479e4e2c0834/Small/872642WMRTN9010_X.jpg?v=1",
       "style": "jet-sneaker-white-black-872642WMRTN9010",
@@ -598,7 +599,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/men/discover-men/new-arrivals-for-men",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -615,8 +616,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/4017916a7fc093c04b5a58d4c83c7d109abd07214c0467082b0325ca29710545.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-3f4271c34b46d590d012",
@@ -645,6 +645,7 @@
         "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
         "style": "pace-sneaker-black-A004VIWASYM1000"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/pace-sneaker-black-A004VIWASYM1000.html",
       "image": "https://balenciaga.dam.kering.com/asset/1b5bd636-da64-4b26-bd9a-8fe7a8a01a9f/Small/A004VIWASYM1000_X.jpg?v=1",
       "style": "pace-sneaker-black-A004VIWASYM1000",
@@ -694,7 +695,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -711,8 +712,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/71e15c31d4ef83ed0f1fa96b1faf33904c2f6cf8c0c1886d437403c16c716946.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-66fbd257d6ae792093a5",
@@ -741,6 +741,7 @@
         "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
         "style": "pace-sneaker-brown-A004VIWASYM2000"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/pace-sneaker-brown-A004VIWASYM2000.html",
       "image": "https://balenciaga.dam.kering.com/asset/dbfee54d-d306-4418-a9fb-6a835a68e118/Small/A004VIWASYM2000_X.jpg?v=1",
       "style": "pace-sneaker-brown-A004VIWASYM2000",
@@ -790,7 +791,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -807,8 +808,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/067c0fe358d29584e64814a72849228d18aac13bdebb8df27a53e880137b5f72.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-092efba1b74a2c48e903",
@@ -837,6 +837,7 @@
         "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
         "style": "runner-sneaker-multicolor-A0011YW3RMU8123"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/runner-sneaker-multicolor-A0011YW3RMU8123.html",
       "image": "https://balenciaga.dam.kering.com/asset/f114c0fb-a5d7-4d83-9519-728182375601/Small/A0011YW3RMU8123_X.jpg?v=1",
       "style": "runner-sneaker-multicolor-A0011YW3RMU8123",
@@ -886,7 +887,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -904,8 +905,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/40aec53fd17ac6c403db2801a3f5ac88b798f6af8544928bb9482e922a6e5a5f.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-e14ab52990198debdcec",
@@ -934,6 +934,7 @@
         "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
         "style": "triple-s.2-denim-sneaker-blue-865849WTSDN4000"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-blue-865849WTSDN4000.html",
       "image": "https://balenciaga.dam.kering.com/asset/274edb13-f39a-48d1-9acf-9cdb168a718a/Small/865849WTSDN4000_X.jpg?v=2",
       "style": "triple-s.2-denim-sneaker-blue-865849WTSDN4000",
@@ -983,7 +984,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1000,8 +1001,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/8694c767ebfae48e8dfcd4c44beaec229f73c814c225efeb6ec922b5491a525a.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-93bede7c3893b7531a9b",
@@ -1030,6 +1030,7 @@
         "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
         "style": "triple-s.2-denim-sneaker-black-865849WTSDN1000"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-black-865849WTSDN1000.html",
       "image": "https://balenciaga.dam.kering.com/asset/12990d77-1861-46f0-a299-0b84f1ce8595/Small/865849WTSDN1000_X.jpg?v=1",
       "style": "triple-s.2-denim-sneaker-black-865849WTSDN1000",
@@ -1079,7 +1080,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1096,8 +1097,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/facdd949fac60305f697be44389aeda56bf468a88e99714b4c7a43fa375f643c.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-2f840de7f9d765f65a84",
@@ -1126,6 +1126,7 @@
         "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
         "style": "triple-s.2-gradient-sneaker-green-beige-grey-865849WTR2G4491"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/triple-s.2-gradient-sneaker-green-beige-grey-865849WTR2G4491.html",
       "image": "https://balenciaga.dam.kering.com/asset/c391be01-3fd4-4ffc-bdd0-f0557791ccc2/Small/865849WTR2G4491_X.jpg?v=2",
       "style": "triple-s.2-gradient-sneaker-green-beige-grey-865849WTR2G4491",
@@ -1175,7 +1176,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1192,8 +1193,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/7a1ea02230316c31b2e5e6ca449dd14ce140b6529e13586a7c2338469b139cc1.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-0298ab531668cd38e182",
@@ -1222,6 +1222,7 @@
         "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
         "style": "triple-s.2-sneaker-black-dark-grey-865849WTRS21011"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/triple-s.2-sneaker-black-dark-grey-865849WTRS21011.html",
       "image": "https://balenciaga.dam.kering.com/asset/a9f29023-297f-44e2-bf64-dcb37591c9e4/Small/865849WTRS21011_X.jpg?v=5",
       "style": "triple-s.2-sneaker-black-dark-grey-865849WTRS21011",
@@ -1271,7 +1272,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1288,8 +1289,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/39368b3c5af87577ddd90a8b5839878486ee6a40d939e792d625d4601ae6b25b.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-f84fa2e82c654f672361",
@@ -1318,6 +1318,7 @@
         "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
         "style": "runner-led-sneaker-black-A0011YWRNLD1000"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/runner-led-sneaker-black-A0011YWRNLD1000.html",
       "image": "https://balenciaga.dam.kering.com/asset/421d4356-fc14-4b22-b7f3-1435fd198dd8/Small/A0011YWRNLD1000_X.jpg?v=2",
       "style": "runner-led-sneaker-black-A0011YWRNLD1000",
@@ -1367,7 +1368,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1385,8 +1386,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/f633224b178090b51e476cbb9a11f2ade58e78e4c8f548141b1edd3602067000.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "official-a86faaac89f85234",
@@ -1415,6 +1415,7 @@
         "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2",
         "style": "3xl-tulle-sneaker-white-pink-734731W3XPT9050"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/3xl-tulle-sneaker-white-pink-734731W3XPT9050.html",
       "image": "https://balenciaga.dam.kering.com/asset/619bd9c4-e6fc-44e0-8568-33eabf09a75c/Medium/734731W3XPT9050_X.jpg?v=1",
       "style": "3xl-tulle-sneaker-white-pink-734731W3XPT9050",
@@ -1470,7 +1471,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1488,8 +1489,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/8430466994ee600fb04173b0c5ba63266d65ae0e83f48945c80333cce47897e0.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-58042b68b3b7cad58cc4",
@@ -1518,6 +1518,7 @@
         "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2",
         "style": "3xl-tulle-sneaker-grey-yellow-734731W3XPT1170"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/3xl-tulle-sneaker-grey-yellow-734731W3XPT1170.html",
       "image": "https://balenciaga.dam.kering.com/asset/0d590dad-bb9e-4682-92a6-e8f492a633d5/Medium/734731W3XPT1170_X.jpg?v=1",
       "style": "3xl-tulle-sneaker-grey-yellow-734731W3XPT1170",
@@ -1567,7 +1568,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1584,8 +1585,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/f33682073ce630b9e6ed824cd18ef6ebb40333f8994231ceabd30fbd0c2e897f.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-1192b057cd67bc9bcdeb",
@@ -1613,6 +1613,7 @@
         "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2",
         "style": "ballet-sneaker-black-871962WBLLT1000"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/ballet-sneaker-black-871962WBLLT1000.html",
       "image": "https://balenciaga.dam.kering.com/asset/ac50ab7b-8fff-43f0-990a-b7e49b08b25b/Medium/871962WBLLT1000_X.jpg?v=1",
       "style": "ballet-sneaker-black-871962WBLLT1000",
@@ -1670,7 +1671,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "ballet-hybrid"
@@ -1691,8 +1692,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/5bb52a10e3524e1ee7961da31e9d4e01ff26b39f877b712e3336a57865ed9d17.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-c966ddf2447c66c0beb6",
@@ -1721,6 +1721,7 @@
         "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352",
         "style": "orbit-flash-sneaker-travertine-deep-mahogany-867926V3MS03063"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-travertine-deep-mahogany-867926V3MS03063.html",
       "image": "https://bottega-veneta.dam.kering.com/asset/7d5c394e-4fec-4a11-89c0-a9cf2e5feb09/Large/867926V3MS03063_A.jpg?v=1",
       "style": "orbit-flash-sneaker-travertine-deep-mahogany-867926V3MS03063",
@@ -1770,7 +1771,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1787,8 +1788,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/b4a2ef0e0db66695d9819091e30007f7ced1d0d8ca9a57b73e943e8615ef14e6.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-e457fc82abbf1f37efd6",
@@ -1817,6 +1817,7 @@
         "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2",
         "style": "radar-sneaker-white-black-865704WSTEO9010"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/radar-sneaker-white-black-865704WSTEO9010.html",
       "image": "https://balenciaga.dam.kering.com/asset/463478a1-2e93-432f-b4bf-6d704403bd1a/Medium/865704WSTEO9010_X.jpg?v=3",
       "style": "radar-sneaker-white-black-865704WSTEO9010",
@@ -1866,7 +1867,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1883,8 +1884,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/1d9ac3a3ea45c596e96092c8bffd610a32ae11347d83bbc849012d12f2d64a69.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-984ca7b7d93b10190d0c",
@@ -1913,6 +1913,7 @@
         "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2",
         "style": "triple-s.2-denim-sneaker-blue-865851WTSDN4000"
       },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
       "url": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-blue-865851WTSDN4000.html",
       "image": "https://balenciaga.dam.kering.com/asset/2b92fa57-3fbd-45d9-a98b-467083d710c4/Medium/865851WTSDN4000_X.jpg?v=2",
       "style": "triple-s.2-denim-sneaker-blue-865851WTSDN4000",
@@ -1962,7 +1963,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -1979,8 +1980,7 @@
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
         "cachedPath": "/images/fff877e738161e4fded95226238bbde6cd501added242f367fd38b18c215a749.jpg"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z"
+      }
     },
     {
       "id": "arrival-74e48f643aac9d063cb4",
@@ -2055,7 +2055,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -2149,7 +2149,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -2243,7 +2243,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -2320,7 +2320,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-5-halloween-black-and-picante-red",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -2418,7 +2418,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -2512,7 +2512,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -2605,7 +2605,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -2698,7 +2698,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -2791,7 +2791,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/sportstyle-new-arrivals/c/aa90000023/",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -2884,7 +2884,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=5",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -2977,7 +2977,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=5",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "metallic-silver"
@@ -3073,7 +3073,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=4",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -3168,7 +3168,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=4",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -3263,7 +3263,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore"
@@ -3360,7 +3360,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -3453,7 +3453,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/sportstyle-new-arrivals/c/aa90000023/",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -3546,7 +3546,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -3639,7 +3639,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -3734,7 +3734,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=5",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -3830,7 +3830,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=5",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -3926,7 +3926,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -4021,7 +4021,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=4",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore"
@@ -4122,7 +4122,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -4218,7 +4218,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -4314,7 +4314,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -4410,7 +4410,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -4506,7 +4506,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -4606,7 +4606,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -4703,7 +4703,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -4799,7 +4799,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -4895,7 +4895,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -4991,7 +4991,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -5087,7 +5087,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -5183,7 +5183,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -5281,7 +5281,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -5378,7 +5378,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -5474,7 +5474,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -5570,7 +5570,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -5666,7 +5666,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -5762,7 +5762,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -5858,7 +5858,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -5954,7 +5954,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -6050,7 +6050,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -6149,7 +6149,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -6245,7 +6245,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -6341,7 +6341,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -6436,7 +6436,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -6529,7 +6529,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -6626,7 +6626,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -6723,7 +6723,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore"
@@ -6819,7 +6819,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/1080v15/W1080V15_RU-FTW-874208-PMG-NA.html?dwvar_W1080V15__RU-FTW-874208-PMG-NA_style=W10807PK",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -6919,7 +6919,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/204l/U204LV1-51907-PMG-NA.html?dwvar_U204LV1-51907-PMG-NA_style=U204L5YB",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile",
@@ -7022,7 +7022,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -7118,7 +7118,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/530/U530V1_LI-FTW-834185-PMG-NA.html?dwvar_U530V1__LI-FTW-834185-PMG-NA_style=U530SCW",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -7216,7 +7216,7 @@
       "productEvidenceUrl": "https://www.adidas.com/us/shoes-new_arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -7321,7 +7321,7 @@
       "productEvidenceUrl": "https://www.adidas.com/us/shoes-new_arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -7424,7 +7424,7 @@
       "productEvidenceUrl": "https://www.adidas.com/us/shoes-new_arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -7523,7 +7523,7 @@
       "productEvidenceUrl": "https://www.nike.com/w/new-3n82y",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -7621,7 +7621,7 @@
       "productEvidenceUrl": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -7716,7 +7716,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/arizona-suede-sneakers/402362?swatch=11",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -7819,7 +7819,7 @@
       "productEvidenceUrl": "https://ceciliebahnsen.com/products/3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -7919,7 +7919,7 @@
       "productEvidenceUrl": "https://www.axelarigato.com/men/new-arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -8017,7 +8017,7 @@
       "productEvidenceUrl": "https://www.axelarigato.com/men/new-arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -8115,7 +8115,7 @@
       "productEvidenceUrl": "https://www.axelarigato.com/men/new-arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -8213,7 +8213,7 @@
       "productEvidenceUrl": "https://www.axelarigato.com/men/new-arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -8311,7 +8311,7 @@
       "productEvidenceUrl": "https://www.axelarigato.com/men/new-arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -8409,7 +8409,7 @@
       "productEvidenceUrl": "https://www.on.com/en-us/shop/new-arrivals/womens?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore"
@@ -8512,7 +8512,7 @@
       "productEvidenceUrl": "https://www.on.com/en-us/shop/new-arrivals/mens?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore"
@@ -8615,7 +8615,7 @@
       "productEvidenceUrl": "https://www.on.com/en-us/shop/new-arrivals/shoes",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore"
@@ -8717,7 +8717,7 @@
       "productEvidenceUrl": "https://www.prada.com/us/en/mens/new-in/c/10182US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -8826,7 +8826,7 @@
       "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/KCK565SEN_S61U",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -8939,7 +8939,7 @@
       "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/KCK568FOS_S60U",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -9051,7 +9051,7 @@
       "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "platform"
@@ -9150,7 +9150,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -9279,7 +9279,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "character-collaboration",
@@ -9382,7 +9382,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -9479,7 +9479,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -9576,7 +9576,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -9679,7 +9679,7 @@
       "productEvidenceUrl": "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-001.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -9783,7 +9783,7 @@
       "productEvidenceUrl": "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-002.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -9887,7 +9887,7 @@
       "productEvidenceUrl": "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-250.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -9991,7 +9991,7 @@
       "productEvidenceUrl": "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-200.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -10090,7 +10090,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -10186,7 +10186,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -10283,7 +10283,7 @@
       "productEvidenceUrl": "https://www.miumiu.com/us/en/p/gymnasium-suede-sneakers/5E428E_8M2_F05Q7_F_DD05",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -10385,7 +10385,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "platform"
@@ -10488,7 +10488,7 @@
       "productEvidenceUrl": "https://www.adidas.com/us/shoes-new_arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -10587,7 +10587,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-us/c/new/inspiration/new-arrivals/sportstyle",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -10687,7 +10687,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -10783,7 +10783,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -10879,7 +10879,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -10973,7 +10973,7 @@
       "productEvidenceUrl": "https://www.prada.com/us/en/mens/new-in/c/10182US/page/2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -11071,7 +11071,7 @@
       "productEvidenceUrl": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-crocodile-embossed-calfskin-and-technical-fabric-sneakers/5E165E_3ZS0_F0003_F_BD05",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -11173,7 +11173,7 @@
       "productEvidenceUrl": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -11272,7 +11272,7 @@
       "productEvidenceUrl": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -11372,7 +11372,7 @@
       "productEvidenceUrl": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -11471,7 +11471,7 @@
       "productEvidenceUrl": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -11570,7 +11570,7 @@
       "productEvidenceUrl": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "metallic-silver"
@@ -11672,7 +11672,7 @@
       "productEvidenceUrl": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -11793,7 +11793,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -11893,7 +11893,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -11994,7 +11994,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -12092,7 +12092,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -12190,7 +12190,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -12288,7 +12288,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -12386,7 +12386,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -12484,7 +12484,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -12585,7 +12585,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -12683,7 +12683,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -12781,7 +12781,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -12879,7 +12879,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -12979,7 +12979,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -13077,7 +13077,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -13175,7 +13175,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -13276,7 +13276,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -13374,7 +13374,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -13472,7 +13472,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -13570,7 +13570,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -13668,7 +13668,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -13766,7 +13766,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -13864,7 +13864,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -13962,7 +13962,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -14060,7 +14060,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -14158,7 +14158,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -14256,7 +14256,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -14354,7 +14354,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -14452,7 +14452,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -14550,7 +14550,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -14648,7 +14648,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -14749,7 +14749,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -14847,7 +14847,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -14945,7 +14945,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -15043,7 +15043,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -15143,7 +15143,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -15241,7 +15241,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -15339,7 +15339,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -15440,7 +15440,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -15538,7 +15538,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -15636,7 +15636,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -15734,7 +15734,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -15832,7 +15832,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -15930,7 +15930,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -16028,7 +16028,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -16126,7 +16126,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -16224,7 +16224,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -16322,7 +16322,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -16420,7 +16420,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -16521,7 +16521,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -16619,7 +16619,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -16717,7 +16717,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Men%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -16815,7 +16815,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -16915,7 +16915,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -17014,7 +17014,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -17112,7 +17112,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -17210,7 +17210,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -17308,7 +17308,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -17408,7 +17408,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -17507,7 +17507,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -17605,7 +17605,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -17703,7 +17703,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -17801,7 +17801,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -17902,7 +17902,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -18000,7 +18000,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/women-s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -18098,7 +18098,7 @@
       "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -18194,7 +18194,7 @@
       "productEvidenceUrl": "https://www.loewe.com/usa/en/women/shoes/sneakers/pogo-sneaker-in-technical-knit-and-suede/L815282XAY-0115.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -18295,7 +18295,7 @@
       "productEvidenceUrl": "https://www.prada.com/us/en/mens/new-in/c/10182US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -18392,7 +18392,7 @@
       "productEvidenceUrl": "https://www.prada.com/us/en/mens/new-in/c/10182US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -18494,7 +18494,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -18594,7 +18594,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -18694,7 +18694,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -18796,7 +18796,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -18899,7 +18899,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -18998,7 +18998,7 @@
       "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -19102,7 +19102,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/speedcat-ballet-dress-up-womens-sneakers/408054?swatch=02",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "ballet-hybrid",
@@ -19211,7 +19211,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/speedcat-ballet-dress-up-womens-sneakers/408054?swatch=03",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "ballet-hybrid",
@@ -19326,7 +19326,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/speedcat-ballet-dress-up-womens-sneakers/408054?swatch=01",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "ballet-hybrid",
@@ -19428,7 +19428,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/speedcat-dress-up-sneakers/406998?swatch=03",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile"
@@ -19531,7 +19531,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/speedcat-dressed-sneakers/407829?swatch=01",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile",
@@ -19711,7 +19711,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/speedcat-og-sneakers/398846?swatch=31",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile",
@@ -19888,7 +19888,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/speedcat-og-sneakers/398846?swatch=94",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile",
@@ -20064,7 +20064,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/speedcat-og-sneakers/398846?swatch=93",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile",
@@ -20163,7 +20163,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/speedcat-og-ii-womens-sneakers/409453?swatch=05",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile"
@@ -20262,7 +20262,7 @@
       "productEvidenceUrl": "https://us.puma.com/us/en/pd/speedcat-patch-sneakers/407257?swatch=02",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile"
@@ -20362,7 +20362,7 @@
       "productEvidenceUrl": "https://www.prada.com/us/en/mens/new-in/c/10182US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -20460,7 +20460,7 @@
       "productEvidenceUrl": "https://www.asics.com/us/en-us/new-arrivals/c/aa80101000/?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -20560,7 +20560,7 @@
       "productEvidenceUrl": "https://alohas.com/en-us/collections/new-in-men",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -20659,7 +20659,7 @@
       "productEvidenceUrl": "https://alohas.com/en-us/collections/new-in-men",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -20757,7 +20757,7 @@
       "productEvidenceUrl": "https://alohas.com/en-us/collections/new-in-men",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown"
@@ -20860,7 +20860,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore"
@@ -20964,7 +20964,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -21063,7 +21063,7 @@
       "productEvidenceUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lite3-nubuck-and-suede-sneakers-brown-L209B4M00080M7242285.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown",
@@ -21170,7 +21170,7 @@
       "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -21265,7 +21265,7 @@
       "productEvidenceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009Z4AAG8V9072",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -21366,7 +21366,7 @@
       "productEvidenceUrl": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown",
@@ -21466,7 +21466,7 @@
       "productEvidenceUrl": "https://www.gucci.com/us/en/ca/whats-new/new-in/this-week-women-c-new-women?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -21562,7 +21562,7 @@
       "productEvidenceUrl": "https://www.gucci.com/us/en/ca/whats-new/new-in/this-week-women-c-new-women?page=2",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -21638,7 +21638,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -21745,7 +21745,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-us/c/new",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -21820,7 +21820,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-protective-li1345/L45405100",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -21896,7 +21896,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L49192300",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -22022,7 +22022,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L45397700",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -22121,7 +22121,7 @@
       "productEvidenceUrl": "https://www.axelarigato.com/men/new-arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -22219,7 +22219,7 @@
       "productEvidenceUrl": "https://www.axelarigato.com/men/new-arrivals",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -22314,7 +22314,7 @@
       "productEvidenceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -22424,7 +22424,7 @@
       "productEvidenceUrl": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3786.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "ballet-hybrid"
@@ -22537,7 +22537,7 @@
       "productEvidenceUrl": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3787.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "ballet-hybrid"
@@ -22619,7 +22619,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/aero-blaze-4-grvl-li9273/L45401400",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -22742,7 +22742,7 @@
       "productEvidenceUrl": "https://www.nike.com/t/rejuven8-run-womens-shoes-eIBcnQk9",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -22851,7 +22851,7 @@
       "productEvidenceUrl": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "sneaker-mule",
@@ -22968,7 +22968,7 @@
       "productEvidenceUrl": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "sneaker-mule",
@@ -23080,7 +23080,7 @@
       "productEvidenceUrl": "https://www.adidas.com/us/simone-rocha-climacool-shoes/KH7452.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mary-jane"
@@ -23190,7 +23190,7 @@
       "productEvidenceUrl": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5249.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "ballet-hybrid",
@@ -23302,7 +23302,7 @@
       "productEvidenceUrl": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5248.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "ballet-hybrid",
@@ -23386,7 +23386,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-low-og-howard-college-navy-and-university-red",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "red-crimson",
@@ -23467,7 +23467,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/genesis-2-gtx-li9188/L49302000",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore"
@@ -23549,7 +23549,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210700",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -23634,7 +23634,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213700",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -23712,7 +23712,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213200",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -23793,7 +23793,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49211100",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -23871,7 +23871,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215400",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -23953,7 +23953,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215200",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -24035,7 +24035,7 @@
       "productEvidenceUrl": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49214800",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -24148,7 +24148,7 @@
       "productEvidenceUrl": "https://www.on.com/en-kr/products/cloud-x-tempo-pro-m-3mh1033/mens/white-celeste-shoes-3MH10335109",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -24235,7 +24235,7 @@
       "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.02BG.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -24338,7 +24338,7 @@
       "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.38NO.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -24431,7 +24431,7 @@
       "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.11BU.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -24534,7 +24534,7 @@
       "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.19DK.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -24639,7 +24639,7 @@
       "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.27FR.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -24744,7 +24744,7 @@
       "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.01OP.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -24837,7 +24837,7 @@
       "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.28MS.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -24930,7 +24930,7 @@
       "productEvidenceUrl": "https://www.celine.com/en-us/men/shoes/men-celine-reebok/freestyle-lo-by-celinereebok-369405533C.03PT.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -25033,7 +25033,7 @@
       "productEvidenceUrl": "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown",
@@ -25125,7 +25125,7 @@
       "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore",
@@ -25218,7 +25218,7 @@
       "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-black-L209A4M00230N0633999.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore",
@@ -25311,7 +25311,7 @@
       "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-sage-green-L209A4M00230N0633818.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore",
@@ -25396,7 +25396,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-bakin-high-sp-black-and-varsity-red",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -25478,7 +25478,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/1890p/U1890PV1_LI-FTW-837876.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "red-crimson"
@@ -25559,7 +25559,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/204v/U204V2W0-D-05.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile",
@@ -25647,7 +25647,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/204v/U204V2PT-D-05.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile",
@@ -25735,7 +25735,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/327/WS327V1-41747-PMG-NA-BROWN2.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -25819,7 +25819,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/750/U750V1_LI-FTW-851089-PMG-NA.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "canvas"
@@ -25896,7 +25896,7 @@
       "productEvidenceUrl": "https://www.adidas.ae/en/adidas-x-tyrrell-winston-climacool-4d-shoes/KJ7669.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -25969,7 +25969,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-jordan-1-low-og-black-and-white-1",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [],
       "searchConceptIds": [
@@ -26046,7 +26046,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/women-s-air-jordan-5-sunset",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -26124,7 +26124,7 @@
       "productEvidenceUrl": "https://www.nike.com/tw/launch/t/air-max-plus-one-piece-gomu-gomu",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "character-collaboration",
@@ -26209,7 +26209,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/ald-x-new-balance-gator-run-hairy-suede/UGTRV1_LI-FTW-859792.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -26304,7 +26304,7 @@
       "productEvidenceUrl": "https://ceciliebahnsen.com/products/asics-26-4-0001-gel-kinetic-fr-synthetic-leather-black-coffee",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown",
@@ -26401,7 +26401,7 @@
       "productEvidenceUrl": "https://ceciliebahnsen.com/products/asics-26-4-0002-gel-kinetic-fr-synthetic-leather-silver",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mary-jane"
@@ -26499,7 +26499,7 @@
       "productEvidenceUrl": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown",
@@ -26585,7 +26585,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-uk-991v1-luxe-suede/M991V1_LI-FTW-826837.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "brown",
@@ -26669,7 +26669,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-uk-991v2/U991V2_LI-FTW-829161.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -26752,7 +26752,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-1300/U1300V1-52809.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -26841,7 +26841,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52804.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -26931,7 +26931,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52802.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -27017,7 +27017,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52803.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -27104,7 +27104,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/made-in-usa-993/U993V1-52816.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -27201,7 +27201,7 @@
       "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-L209A4M00230N0633034.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "trail-gorpcore",
@@ -27283,7 +27283,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/night-lights-740%E2%80%8B/U740V2_LI-FTW-885192.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -27369,7 +27369,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/night-lights-9060r%E2%80%8B/U9060RV1_LI-FTW-873793.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -27453,7 +27453,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/night-lights-abzorb-2000%E2%80%8B/U2000V1_LI-FTW-873796.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "retro-runner",
@@ -27542,7 +27542,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/air-foamposite-pro-black-and-multi-color",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "low-profile"
@@ -27630,7 +27630,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/nike-sb-air-force-1-yuto-light-bone-and-iron-grey",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -27716,7 +27716,7 @@
       "productEvidenceUrl": "https://www.nike.com/launch/t/womens-tennis-centre-x-kallmeyer-travertine",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -27797,7 +27797,7 @@
       "productEvidenceUrl": "https://palmes.co/products/palmes-for-converse-jack-purcell-green-canvas",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "canvas"
@@ -27880,7 +27880,7 @@
       "productEvidenceUrl": "https://palmes.co/products/palmes-for-converse-jack-purcell-navy-suede",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "suede"
@@ -27962,7 +27962,7 @@
       "productEvidenceUrl": "https://eu.puma.com/es/es/pd/zapatillas-puma-x-j.l-a.l_-cell-geo-1-cage-unisex/406687?swatch=01",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -28045,7 +28045,7 @@
       "productEvidenceUrl": "https://eu.puma.com/ie/en/pd/puma-x-jl-al-cell-geo-1-cage-sneakers-unisex/406687?swatch=02",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -28128,7 +28128,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/supercomp-rebel/MREBXV1_RU-FTW-814193-PMG-NA.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "metallic-silver"
@@ -28208,7 +28208,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/supercomp-rebel/WREBXV1_RU-FTW-814192-PMG-NA.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "metallic-silver"
@@ -28290,7 +28290,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/sydney-levrone-9060r/U9060RV1_LI-FTW-855217.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer",
@@ -28374,7 +28374,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/WFCXV5_RU-FTW-852606.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -28455,7 +28455,7 @@
       "productEvidenceUrl": "https://www.newbalance.com/pd/sydney-levrone-fuelcell-rebel-v5/MFCXV5_RU-FTW-852604.html",
       "eligibility": {
         "passed": true,
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-29"
       },
       "keywordTags": [
         "mesh-sheer"
@@ -31339,7 +31339,7 @@
     ]
   },
   "retentionBasis": "first-published",
-  "keywordEvaluatedAt": "2026-10-28T09:53:34.688Z",
+  "keywordEvaluatedAt": "2026-10-29T01:47:15.280Z",
   "styleTrendKeywords": {
     "method": "verified-style-board-v1",
     "updated": "2026-10-28T09:53:26.246Z",
