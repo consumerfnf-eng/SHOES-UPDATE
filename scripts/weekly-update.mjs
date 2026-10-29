@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import {createOfficialReader} from './official-reader.mjs';
 import {createRenderedOfficialReader} from './rendered-official-reader.mjs';
+import {createSitemapReader,localeAlternates} from './fallback-sources.mjs';
 import {createScrapingBeeReader} from './scrapingbee-reader.mjs';
 import {createJinaClient} from './jina_client.mjs';
 import {mergePreserving} from './collect-evidence.mjs';
@@ -52,7 +53,20 @@ const viaRenderers=method=>async target=>{
   throw last;
 };
 const renderedCombined={read:viaRenderers('read'),readHtml:viaRenderers('readHtml')};
-const reader=createOfficialReader({read:client.read,origins,renderedRead:renderedCombined.read});
+// Two more ways in for the stores that refuse the ones above: the same page
+// in another country, and the store's own sitemap. Both read public pages
+// only and neither needs an account.
+const sitemap=createSitemapReader({shouldContinue:()=>!phaseBudget.exhausted()});
+const localeRead=async target=>{
+  let last=Error('LOCALE_NO_ALTERNATE');
+  for(const alternate of localeAlternates(target)){
+    try{return await client.read('https://r.jina.ai/'+alternate);}
+    catch(error){last=Error(`${new URL(alternate).host}: ${error.message}`);}
+  }
+  throw last;
+};
+const reader=createOfficialReader({read:client.read,origins,renderedRead:renderedCombined.read,
+  localeRead,sitemapRead:sitemap.read});
 try {
   const policy=await readJson(new URL('config/brand-policy.json',root));
   const brands=policy.brands.filter(b=>b.mandatory||b.policy==='core').sort((a,b)=>Number(b.group==='luxury')-Number(a.group==='luxury')).map(b=>b.name);
@@ -75,7 +89,7 @@ try {
   const signalNow=new Date(),signals=await collectSignals({products:withEvidence.filter(p=>eligibleIds.has(p.id)),read:phaseBudget.wrap(reader.read),readPublic:phaseBudget.wrap(readPublicSource),now:signalNow});
   const keywordNow=new Date(),[search,forecast,editorial,style,market]=await Promise.all([collectSearchKeywords({now:keywordNow}),collectForecastKeywords({now:keywordNow}),collectEditorialKeywords({now:keywordNow}),collectStyleEditorials({now:keywordNow}),collectStyleMarket({now:keywordNow,previousObservations:source.collection?.styleObservations||[]})]);
   const collection={checkedAt:now.toISOString(),lastSuccessfulCollectionAt:new Date().toISOString(),coverage:run.coverage,unavailableBrands:run.coverage.filter(x=>!x.responses).map(x=>x.brand),scope:'weekly',selectionBasis:'official-new-arrivals',catalogExhaustive:false,sourceDirectory:signals.sourceDirectory,keywordCheckedAt:keywordNow.toISOString(),sourceRanks:[...search.sourceRanks,...forecast.sourceRanks,...editorial.sourceRanks,...style.sourceRanks],styleObservations:[...style.observations,...market.observations],styleMarketStatus:market.diagnostics,searchRankStatus:search.searchRankStatus,forecastStatus:forecast.forecastStatus,editorialStatus:[...editorial.editorialStatus,...style.editorialStatus]};
-  await atomicJson(new URL('logs/weekly-diagnostics.json',root),{checkedAt:now.toISOString(),releaseChecks:[...verified.diagnostics,...structured.diagnostics],signalChecks:signals.diagnostics,keywordChecks:[...search.diagnostics,...forecast.diagnostics,...editorial.diagnostics,...style.diagnostics,...market.diagnostics],crawler:client.stats,officialFallbacks:reader.diagnostics,renderedOfficial:rendered.stats,scrapingBeeOfficial:scrapingBee.stats});
+  await atomicJson(new URL('logs/weekly-diagnostics.json',root),{checkedAt:now.toISOString(),releaseChecks:[...verified.diagnostics,...structured.diagnostics],signalChecks:signals.diagnostics,keywordChecks:[...search.diagnostics,...forecast.diagnostics,...editorial.diagnostics,...style.diagnostics,...market.diagnostics],crawler:client.stats,officialFallbacks:reader.diagnostics,renderedOfficial:rendered.stats,sitemap:sitemap.stats,scrapingBeeOfficial:scrapingBee.stats});
   const result=await publishCurated({now:new Date(),incoming:[...run.products,...verified.products,...structured.products,...signals.products],collection});
   console.log(`Weekly snapshot complete: ${result.snapshot.products.length} public products; ${result.review.held.length} held for verification.`);
 } catch(e) {await fs.mkdir(new URL('logs/',root),{recursive:true});await atomicJson(new URL('logs/weekly-error.json',root),{error:e.message,at:new Date().toISOString()});throw e;}

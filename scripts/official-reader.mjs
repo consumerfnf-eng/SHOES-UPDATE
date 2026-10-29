@@ -61,7 +61,7 @@ export function officialHtmlMarkdown(html,url){
   if(body.length<150||!/\]\(https:\/\//.test(body))throw Error('OFFICIAL_HTML_NO_CONTENT');
   return assertReadableOfficial(`Title: ${title}\nURL Source: ${url}\nMarkdown Content:\n${body}`);
 }
-export function createOfficialReader({read,origins,fetchImpl=fetch,sleep=delay,intervalMs=2500,retryMs=5000,renderedRead}={}){
+export function createOfficialReader({read,origins,fetchImpl=fetch,sleep=delay,intervalMs=2500,retryMs=5000,renderedRead,localeRead,sitemapRead}={}){
   const allowed=new Set(origins.map(url=>new URL(url).origin)),diagnostics=[];
   const officialFetch=pacedOfficialFetch({fetchImpl,sleep,intervalMs,retryMs});
   return {diagnostics,async read(url,timeout){
@@ -73,9 +73,18 @@ export function createOfficialReader({read,origins,fetchImpl=fetch,sleep=delay,i
         diagnostics.push({url:target,method:'direct-official-html',status:'readable',primaryError:primary.message});return text;
       }catch(error){
         diagnostics.push({url:target,method:'direct-official-html',status:'unavailable',primaryError:primary.message,error:error.message});
-        if(renderedRead)try{const text=assertReadableOfficial(await renderedRead(target));diagnostics.push({url:target,method:'rendered-public-official',status:'readable'});return text;}
-        catch(renderedError){diagnostics.push({url:target,method:'rendered-public-official',status:'unavailable',error:renderedError.message});throw Error(`${primary.message}; official HTML: ${error.message}; rendered: ${renderedError.message}`);}
-        throw Error(`${primary.message}; official HTML: ${error.message}`);
+        const trail=[`${primary.message}`,`official HTML: ${error.message}`];
+        // Escalate: render it, then try the same page in another country,
+        // then read the store's own sitemap. Each answers a different kind
+        // of refusal, so a failure at one is not a failure at the next.
+        for(const [method,attempt] of [['rendered-public-official',renderedRead],
+                                       ['locale-alternate',localeRead],
+                                       ['official-sitemap',sitemapRead]]){
+          if(!attempt)continue;
+          try{const text=assertReadableOfficial(await attempt(target));diagnostics.push({url:target,method,status:'readable'});return text;}
+          catch(next){diagnostics.push({url:target,method,status:'unavailable',error:next.message});trail.push(`${method}: ${next.message}`);}
+        }
+        throw Error(trail.join('; '));
       }
     }
   }};
