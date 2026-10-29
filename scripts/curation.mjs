@@ -158,7 +158,13 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   if (!policy || !['mandatory','core','conditional'].includes(policy.policy)) return { reason: 'brand-excluded-or-unverified' };
   if (policy.policy === 'conditional' && (!raw.modelReview?.approved || !httpUrl(raw.modelReview.url))) return { reason: 'conditional-model-review-required' };
   const type = classifyFootwear(raw); if (!type.category) return type;
-  const fit = fitFor(raw, type.category,today); if (!fit.fit.length) return { reason: 'brand-fit-unverified' };
+  // Brand fit was a keyword guess about whether a shoe was MLB-ish or
+  // DISCOVERY-ish, and it was the single largest reason a verified product
+  // never reached the page: 1,600 of 2,933 held records. A shoe that is
+  // real, in scope and inside the window is a new arrival whatever words
+  // its description happens to use, so the guess no longer gates anything.
+  // The reasons it produced are kept as planning notes on the record.
+  const fit = fitFor(raw, type.category, today);
   const e = raw.dateEvidence;
   const release=releaseWindow(raw);
   const arrival=hasArrivalEvidence(raw,today)&&isOfficialProductUrl(brand,raw.arrivalEvidence.url)&&!!officialEvidenceFor(raw,today);
@@ -171,7 +177,7 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   if(raw.styleType==='official-product-id'&&!official)return {reason:'official-product-id-evidence-required'};
   const socialMetrics=validateSocialMetrics({...raw,...(official||{}),brand},today,{officialEligible:!!official,now});
   const visibleSignals = validateSignals(raw.sourceSignals, today), hot = popularity(visibleSignals, today,{product:raw,socialMetrics,officialEligible:!!official});
-  const product = { id: raw.id, brand, name: raw.name, category: type.category, productType: type.category, ...fit,
+  const product = { id: raw.id, brand, name: raw.name, category: type.category, productType: type.category, fitReasons: fit.fitReasons,
     modelKey:raw.modelGroup||`${key(brand)}|${key(String(raw.name).split(/ — | – /)[0])}`,
     releaseDate: raw.releaseDate||'', releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release?.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),
     ...(arrival?{arrivalEvidence:raw.arrivalEvidence}:{}),...(raw.firstPublishedAt?{firstPublishedAt:raw.firstPublishedAt}:{}),

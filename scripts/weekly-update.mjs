@@ -25,17 +25,33 @@ const client=createJinaClient({key:process.env.JINA_API_KEY||''});
 const officialSources=await readJson(new URL('config/daily_sources.json',root));
 const origins=Object.values(officialSources).flat().flatMap(s=>{const u=new URL(s.url);return u.hostname.startsWith('www.')?[s.url,u.origin.replace('://www.','://')]:[s.url];});
 let phaseBudget=createCollectionBudget({durationMs:75*60_000,label:'OFFICIAL_NEW'});
-const rendered=createRenderedOfficialReader({origins,apiKey:process.env.FIRECRAWL_API_KEY||'',maxRequests:600,shouldContinue:()=>!phaseBudget.exhausted()});
-// ScrapingBee is a last-resort rendered fallback, tried only after Firecrawl
-// fails or has stopped on quota. It's optional - with no SCRAPINGBEE_API_KEY
-// set, scrapingBee.read/readHtml throw SCRAPINGBEE_NO_KEY immediately and the
-// combined reader below falls through to Firecrawl's own error, exactly as
-// if ScrapingBee weren't wired in at all.
-const scrapingBee=createScrapingBeeReader({origins,apiKey:process.env.SCRAPINGBEE_API_KEY||'',maxCreditsPerRun:125,shouldContinue:()=>!phaseBudget.exhausted()});
-const renderedCombined={
-  read:async target=>{try{return await rendered.read(target);}catch(firecrawlError){try{return await scrapingBee.read(target);}catch{throw firecrawlError;}}},
-  readHtml:async target=>{try{return await rendered.readHtml(target);}catch(firecrawlError){try{return await scrapingBee.readHtml(target);}catch{throw firecrawlError;}}},
+const firecrawlKey=process.env.FIRECRAWL_API_KEY||'',scrapingBeeKey=process.env.SCRAPINGBEE_API_KEY||'';
+const rendered=createRenderedOfficialReader({origins,apiKey:firecrawlKey,maxRequests:600,shouldContinue:()=>!phaseBudget.exhausted()});
+// ScrapingBee is the other rendered fallback. Its ceiling rises when it is
+// the only one with a key, because then it is not a last resort - it is the
+// renderer, and 125 credits does not cover sixty brands.
+const scrapingBee=createScrapingBeeReader({origins,apiKey:scrapingBeeKey,
+  maxCreditsPerRun:Number(process.env.SCRAPINGBEE_OFFICIAL_CREDITS||(firecrawlKey?125:400)),
+  shouldContinue:()=>!phaseBudget.exhausted()});
+// Only readers that have a key are tried. Firecrawl without one answers 401
+// on its first request, which latches `quotaStopped` for the whole run and
+// made every brand report RENDERED_OFFICIAL_QUOTA_STOPPED - including the
+// ones ScrapingBee could have rendered, because the combined reader always
+// re-threw Firecrawl's error and hid what actually happened.
+const renderers=[
+  ...(firecrawlKey?[['firecrawl',rendered]]:[]),
+  ...(scrapingBeeKey?[['scrapingbee',scrapingBee]]:[]),
+  ...(firecrawlKey||scrapingBeeKey?[]:[['firecrawl',rendered]]),
+];
+const viaRenderers=method=>async target=>{
+  let last=Error('RENDERED_OFFICIAL_NO_READER_CONFIGURED');
+  for(const [name,reader] of renderers){
+    try{return await reader[method](target);}
+    catch(error){last=Error(`${name}: ${error.message}`);}
+  }
+  throw last;
 };
+const renderedCombined={read:viaRenderers('read'),readHtml:viaRenderers('readHtml')};
 const reader=createOfficialReader({read:client.read,origins,renderedRead:renderedCombined.read});
 try {
   const policy=await readJson(new URL('config/brand-policy.json',root));

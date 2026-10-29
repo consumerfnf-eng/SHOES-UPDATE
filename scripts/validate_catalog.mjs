@@ -24,8 +24,10 @@ export function validateSnapshot(catalog) {
     assert(typeof p.id==='string'&&p.id&&typeof p.name==='string'&&p.name.trim(),'Missing product identity');
     assert(catalog.brands.some(b=>b.name===p.brand),'Unknown product brand');
     assert(['sneaker','clog','sandal','platform-sandal','hybrid','jelly','platform-shoe'].includes(p.category),'Invalid product category');
-    assert(Array.isArray(p.fit)&&p.fit.length&&p.fit.every(f=>['MLB','DISCOVERY'].includes(f)),'Invalid fit');
-    assert(Array.isArray(p.fitReasons)&&p.fitReasons.length,'Missing selection reasons');
+    // Brand fit no longer exists: it was a keyword guess that held back 1,600
+    // verified products. Its reasons survive as optional planning notes.
+    assert(p.fit===undefined,'Brand fit was removed and must not be republished');
+    assert(p.fitReasons===undefined||Array.isArray(p.fitReasons),'Invalid selection reasons');
     const release=releaseWindow(p),state=releaseState(p,catalog.asOf);
     const arrival=hasArrivalEvidence(p,catalog.asOf);
     assert(release||arrival,'Missing release or official New Arrivals evidence');
@@ -75,4 +77,4 @@ export function validateSnapshot(catalog) {
   if(catalog.styleTrendKeywords?.method==='verified-style-board-v1')assert.deepEqual(catalog.styleTrendKeywords,buildStyleTrendBoard(catalog.products,catalog.styleTrendKeywords.observations,{now:keywordEvaluatedAt,updated:catalog.styleTrendKeywords.updated,sourceRanks:catalog.sourceRanks}),'Style board must match fresh evidence and bilingual product attributes');
   return true;
 }
-if(process.argv[1]?.endsWith('validate_catalog.mjs')){const c=JSON.parse(await fs.readFile(new URL('../public/data/catalog.json',import.meta.url),'utf8'));validateSnapshot(c);console.log(`PASS: ${c.products.length} products; mandatory25; exact dates, fit, taxonomy and calendar window.`);}
+if(process.argv[1]?.endsWith('validate_catalog.mjs')){const c=JSON.parse(await fs.readFile(new URL('../public/data/catalog.json',import.meta.url),'utf8'));validateSnapshot(c);console.log(`PASS: ${c.products.length} products; mandatory25; exact dates, taxonomy and calendar window.`);}

@@ -17,10 +17,14 @@ test('official brand tab requires exact official PDP and image proof and release
  assert(!curateProduct({...p,releaseDate:'2026-10-01'},today).product.popularity.brand);
  for(const changed of [{officialImageEvidence:null},{officialImageEvidence:{...p.officialImageEvidence,url:'https://other.test/image.jpg'}},{officialProductEvidence:{...p.officialProductEvidence,style:'WRONG'}},{url:'https://fake-nike.example/product'}])assert(!curateProduct({...p,...changed},today).product.popularity.brand);
 });
-test('verified mandatory luxury sneakers pass design reference fit without invented performance claims',()=>{
+test('a verified luxury sneaker publishes on its own evidence, with no brand-fit label',()=>{
  const p=shoe({brand:'Gucci',url:'https://www.gucci.com/us/en/pr/sneaker-123',productEvidenceUrl:'https://www.gucci.com/us/en/pr/sneaker-123',name:'Leather sneaker',officialCategory:'Sneakers',description:'Leather upper and logo.'});
- const result=curateProduct(p,today);assert(result.product);assert.deepEqual(result.product.fit,['MLB']);assert(result.product.fitReasons.includes('럭셔리 스니커즈 디자인 참고'));
- assert.equal(curateProduct({...p,officialImageEvidence:null},today).reason,'brand-fit-unverified');
+ const result=curateProduct(p,today);assert(result.product);
+ assert.equal(result.product.fit,undefined,'brand fit is no longer published');
+ assert(result.product.fitReasons.includes('럭셔리 스니커즈 디자인 참고'),'its reason survives as a planning note');
+ // Without the official image proof it is the same shoe and still publishes;
+ // brand fit used to reject it outright, which is what held 1,600 records.
+ assert(curateProduct({...p,officialImageEvidence:null},today).product,'no longer rejected for brand fit');
  assert.equal(curateProduct({...p,name:'Leather loafer'},today).reason,'excluded-footwear');
 });
 test('SNS accepts observed positive item search/posts, distinguishes null and views, and does not require many accounts',()=>{

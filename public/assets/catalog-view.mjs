@@ -143,7 +143,6 @@ export function filterProducts(products, state, today = kstToday()) {
     return release && (state.release === 'all' || release === state.release)
       && (!state.retailer || state.retailer === 'all' || retailerId(p) === state.retailer)
       && (!state.brands.size || productBrandNames(p,today).some(brand=>state.brands.has(brand)))
-      && (state.fit === 'all' || (state.fit === 'common' ? p.fit?.includes('MLB') && p.fit?.includes('DISCOVERY') : p.fit?.includes(state.fit)))
       && categoryMatches(p, state.category)
       && sourceMatches(p,state.source,today)
       && (state.source!=='sns'||!state.socialGroup||visibleSocialMetrics(p,today).some(m=>socialGroupKey(m)===state.socialGroup))
@@ -181,7 +180,23 @@ function withoutAudienceLabel(value) {
 // 90" and "SL 72 프로" keep their model numbers. The closing bracket is
 // optional because ASH's listings reach the collector with it missing.
 const TRAILING_STYLE_CODE=/[([]?\s*\b(?=[A-Za-z0-9]*[A-Za-z])(?=[A-Za-z0-9]*\d)[A-Za-z0-9][A-Za-z0-9\-_/]{5,}\s*[)\]]?\s*$/;
-export function variantGroupName(p) {
+// variantGroupName and variantGroupKey are pure functions of one record and
+// are called for every product on every filter, sort, group and render - the
+// SNS tab alone asked for them tens of thousands of times and spent fifteen
+// seconds doing it. The answer cannot change while the record exists, so it
+// is computed once per record and kept on a WeakMap, which releases with the
+// record itself.
+const NAME_CACHE = new WeakMap(), KEY_CACHE = new WeakMap();
+const memo = (cache, p, compute) => {
+  if (!p || typeof p !== 'object') return compute(p);
+  if (cache.has(p)) return cache.get(p);
+  const value = compute(p);
+  cache.set(p, value);
+  return value;
+};
+export function variantGroupName(p) { return memo(NAME_CACHE, p, computeVariantGroupName); }
+export function variantGroupKey(p) { return memo(KEY_CACHE, p, computeVariantGroupKey); }
+function computeVariantGroupName(p) {
   // When the collection step resolved this listing to a model, that name is
   // the card's name. It is the only one that is right for a card standing
   // for four colourways: every listing's own name ends in its own shade.
@@ -199,7 +214,7 @@ export function variantGroupName(p) {
   base = base.replace(TRAILING_STYLE_CODE,' ');
   return withoutAudienceLabel(trimModelSeparators(base))||p.name;
 }
-export function variantGroupKey(p) {
+function computeVariantGroupKey(p) {
   // A newsletter item is an article, not a SKU. Grouping those by model name
   // merged 42 separate Footwear News pieces into one "Michael Jordan" card,
   // because the publisher's tag is the model name. One article, one card.

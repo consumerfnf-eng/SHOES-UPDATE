@@ -5,8 +5,13 @@ on:
     # shoes-publication concurrency group, so this would queue behind it
     # even without the offset, but running it a day later keeps retail/SNS
     # matching against that week's freshly-published official catalog.
-    - cron: '0 23 * * 0'  # Monday 08:00 Asia/Seoul
-    - cron: '0 11 * * 1'  # Monday 20:00 KST retry if no completed run this week
+    # Sunday morning, the same window as the official New Arrivals run. The
+    # two share the `shoes-publication` concurrency group, so they queue
+    # rather than collide; this one starts an hour later so the official
+    # collection has the publication lock first.
+    - cron: '0 0 * * 0'   # Sunday 09:00 Asia/Seoul
+    - cron: '0 11 * * 0'  # Sunday 20:00 KST retry if no completed run this week
+    - cron: '0 21 * * 0'  # Monday 06:00 KST final catch-up
   workflow_dispatch:
     inputs:
       force:

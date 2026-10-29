@@ -92,7 +92,6 @@ test('verified expired jelly and platform shoes archive with unchanged fit and d
     assert.equal(eligibilityReason(product({category}),now),null);
     assert.equal(planArchive([product({category})],{domestic:snapshot()},config,now).ready.length,1);
     assert.equal(eligibilityReason(product({category,eligibility:{passed:false}}),now),'eligibility-not-verified');
-    assert.equal(eligibilityReason(product({category,fit:[]}),now),'missing-brand-fit');
     assert.equal(eligibilityReason(product({category,releaseDate:'2026-06-28'}),now),'not-expired');
     assert.equal(eligibilityReason(product({category,releaseDate:null}),now),'unknown-release-date');
     assert.equal(eligibilityReason(product({category,dateEvidence:{...product().dateEvidence,verified:false}}),now),'missing-release-evidence');

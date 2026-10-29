@@ -9,7 +9,7 @@ const sourceNames = {magazine:'매거진',newsletter:'뉴스레터',media:'매�
 const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:'캐주얼 샌들','platform-sandal':'플랫폼 샌들','platform-shoe':'플랫폼 슈즈',jelly:'젤리 슈즈',hybrid:'혼합형 스니커즈'};
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
-const state = {search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
+const state = {search:'',brands:new Set(),category:'all',source:'all',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter']];
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter'};
 let catalog = null, overlay = null, trends = null, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
@@ -51,7 +51,6 @@ function dateText(value, time = false) {
   return new Intl.DateTimeFormat('ko-KR', {timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit',...(time ? {hour:'2-digit',minute:'2-digit',hour12:false} : {})}).format(date);
 }
 function popup(message) { $('toast').textContent = message; $('toast').hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => $('toast').hidden = true, 4500); }
-function fitBadges(p) { return (p.fit || []).map(f => `<span class="fit-badge ${f === 'DISCOVERY' ? 'discovery' : ''}">${esc(f)}</span>`).join(''); }
 function imageMarkup(p, eager = false) {
   const cached=p.presentation?.cachedPath;
   const url = /^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(cached||'')?cached:safeUrl(p.presentation?.image) || officialImageUrl(p,today) || safeUrl(p.image);
@@ -188,7 +187,7 @@ function renderKeywords() {
     }).join(''):'<p class="keyword-empty">확인된 Shoes Trend Keyword가 아직 없습니다.</p>';
     $(target).querySelectorAll('.keyword-select').forEach(button=>button.addEventListener('click',()=>{
       const k=list[Number(button.dataset.keyword)];clearTimeout(searchTimer);
-      Object.assign(state,{search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'released',socialGroup:'',sort:'newest',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
+      Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',release:'released',socialGroup:'',sort:'newest',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
       syncFilterControls();renderBrands();renderKeywords();render();$('results').scrollIntoView({block:'start'});$('results').focus({preventScroll:true});
     }));
   }
@@ -223,7 +222,7 @@ function render() {
     const p = activeOf(group), release = isOverlay(p)?overlayReleaseState(p,today):releaseState(p,today), url = outboundUrl(p);
     const over=isOverlay(p);
     const brandLine=over?`${esc(p.brand)} · ${esc(sourceLabelOf(p))}`:esc(p.brand);
-    const meta=over?`<span>${esc(overlayDateLabel(p))}</span>${p.priceLabel?`<span>${esc(p.priceLabel)}</span>`:''}`:`${fitBadges(p)}<span>${esc(releaseDateLabel(p))}</span>`;
+    const meta=over?`<span>${esc(overlayDateLabel(p))}</span>${p.priceLabel?`<span>${esc(p.priceLabel)}</span>`:''}`:`<span>${esc(releaseDateLabel(p))}</span>`;
     const link=over?(url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} ${esc(sourceLabelOf(p))}에서 보기">${esc(sourceLabelOf(p))} ↗</a>`:'')
                    :(url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} 공식 상품 보기">공식 상품 ↗</a>`:'');
     return `<article class="product-card ${selected.has(p.id)?'selected':''}" data-id="${esc(p.id)}" data-group="${esc(groupKey(p))}"><div class="card-visual"><label class="card-checkbox"><input type="checkbox" data-select="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 선택" ${selected.has(p.id)?'checked':''}></label><button class="card-open" data-detail="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 상세정보">${imageMarkup(p,i<4)}</button>${release==='upcoming'?'<span class="release-badge upcoming">발매 예정</span>':''}</div><div class="card-copy"><p class="card-brand">${brandLine}</p><button class="card-name" data-detail="${esc(p.id)}">${esc(variantGroupName(p))}</button><div class="card-meta">${meta}</div>${colorChipsMarkup(group,p.id)}</div><div class="card-footer">${link}</div></article>`;
@@ -244,7 +243,7 @@ function render() {
 }
 function renderSourceDescription() {
   if (state.source === 'all') {
-    const narrowed=state.brands.size||state.fit!=='all'||state.category!=='all'||state.search||state.release!=='all';
+    const narrowed=state.brands.size||state.category!=='all'||state.search||state.release!=='all';
     $('result-description').textContent=state.keywordLabel?`${state.keywordLabel} ${narrowed?'관련 상품 · 선택한 필터 적용':'전체 상품 · 공식 신상품 · 게시 후 3개월'}`:'공식 New·New Arrivals와 품목을 확인한 상품입니다.';
     return;
   }
@@ -308,6 +307,13 @@ const TREND_ITEMS_PER_BRAND=2;
 function renderTrendItems(keywords,products){
   const box=$('sns-trend-items'),list=$('sns-trend-item-list');
   if(!box||!list)return;
+  // One pass to count listings per model. Asking `products.filter` for each
+  // match instead made this quadratic: the SNS tab took fifteen seconds.
+  const listings=new Map();
+  for(const p of products){
+    const key=variantGroupKey(p);
+    listings.set(key,(listings.get(key)||0)+1);
+  }
   const models=new Map();
   for(const k of keywords){
     const seen=new Set();
@@ -317,11 +323,11 @@ function renderTrendItems(keywords,products){
       if(isOverlay(p)&&overlayKind(p)==='newsletter')continue;
       if(!trendKeywordMatches(p,k._terms))continue;
       const key=variantGroupKey(p);
+      if(seen.has(key))continue;
+      seen.add(key);
       const row=models.get(key)||{name:variantGroupName(p),brand:p.brand||'',
-                                  tags:new Set(),listings:0,id:p.id};
-      if(!seen.has(key)){seen.add(key);row.tags.add(k.hashtag);}
-      if(k===keywords[0]||!models.has(key))row.listings=products.filter(
-        q=>variantGroupKey(q)===key).length;
+                                  tags:new Set(),listings:listings.get(key)||1,id:p.id};
+      row.tags.add(k.hashtag);
       models.set(key,row);
     }
   }
@@ -358,9 +364,10 @@ function renderTrendKeywords() {
   // so every chip returns something when it is pressed. The collector
   // publishes more than the display count for exactly this reason.
   const limit=trends?.displayCount||20;
-  const keywords=(trends?.keywords||[]).map(k=>({...k,_terms:trendTerms(k)}))
-    .map(k=>({...k,_matches:products.filter(p=>trendKeywordMatches(p,k._terms)).length}))
-    .filter(k=>k._matches>0).slice(0,limit);
+  // Counted in one pass over the products rather than one pass per keyword.
+  const prepared=(trends?.keywords||[]).map(k=>({...k,_terms:trendTerms(k),_matches:0}));
+  for(const p of products)for(const k of prepared)if(trendKeywordMatches(p,k._terms))k._matches++;
+  const keywords=prepared.filter(k=>k._matches>0).slice(0,limit);
   if(!keywords.length){
     list.innerHTML='<p class="keyword-empty">주간 성장률을 계산할 SNS 키워드가 아직 없습니다. 첫 수집 이후 다음 주부터 증감이 표시됩니다.</p>';
     $('sns-trend-total').textContent='';
@@ -487,18 +494,18 @@ function openDetail(id) {
   const url=reviewedProductPageUrl(p,today), evidence=safeUrl(p.dateEvidence?.url);
   const signals=(p.sourceSignals||[]).filter(s=>safeUrl(s.url));
   const data=[...(p.arrivalEvidence?[['신상품 근거',`<a href="${esc(safeUrl(p.arrivalEvidence.url))}" target="_blank" rel="noopener noreferrer">공식 New·New Arrivals ↗</a> · ${esc(dateText(p.arrivalEvidence.verifiedAt,true))} 확인`]]:[]),...(p.firstPublishedAt?[['사이트 최초 게시',esc(dateText(p.firstPublishedAt,true))]]:[]),['출시일',`${esc(p.releaseDate?dateText(p.releaseDate):'미공개')}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">출시일 근거 ↗</a>`:''}`],['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'미확인')],[p.styleType==='official-product-id'?'상품 ID':'스타일 코드',esc(p.style||'미확인')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'미확인')],['소재',esc(p.material||'미확인')],['가격',esc(p.priceLabel||'공식 상품에서 확인')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
-  $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2><div class="detail-summary">${fitBadges(p)}</div>${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 검증 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):'<p class="muted">확인 가능한 공식 상품·출시·이미지 근거가 아직 없습니다.</p>'}`;
+  $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2>${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 검증 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):'<p class="muted">확인 가능한 공식 상품·출시·이미지 근거가 아직 없습니다.</p>'}`;
   bindImageErrors($('detail-content'));$('detail-select').addEventListener('click',()=>toggleSelection(id,!selected.has(id)));
   $('detail-content').querySelectorAll('[data-variant]').forEach(button=>button.addEventListener('click',()=>{openDetail(button.dataset.variant);render();}));
   if(!$('detail-dialog').open)$('detail-dialog').showModal();
 }
 function syncFilterControls() {
-  $('search').value=state.search;$('brand-search').value='';$('fit-filter').value=state.fit;$('category-filter').value=state.category;$('release-filter').value=state.release;$('sort').value=state.sort;
+  $('search').value=state.search;$('brand-search').value='';$('category-filter').value=state.category;$('release-filter').value=state.release;$('sort').value=state.sort;
   document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b.dataset.source===state.source);b.setAttribute('aria-pressed',String(b.dataset.source===state.source));});
 }
 function resetFilters() {
   clearTimeout(searchTimer);
-  Object.assign(state,{search:'',brands:new Set(),fit:'all',category:'all',source:'all',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
+  Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
   syncFilterControls();renderBrands();renderKeywords();render();
 }
 function openExport() {
@@ -522,7 +529,7 @@ $('search-form').addEventListener('submit',event=>event.preventDefault());
 let searchTimer;$('search').addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(()=>{state.search=$('search').value;state.page=1;render();},100);});
 $('brand-search').addEventListener('input',renderBrands);
 $('clear-brands').addEventListener('click',()=>{state.brands.clear();state.page=1;renderBrands();render();});
-for(const [id,key] of [['fit-filter','fit'],['category-filter','category'],['release-filter','release'],['sort','sort']])$(id).addEventListener('change',()=>{state[key]=$(id).value;state.page=1;render();});
+for(const [id,key] of [['category-filter','category'],['release-filter','release'],['sort','sort']])$(id).addEventListener('change',()=>{state[key]=$(id).value;state.page=1;render();});
 document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(socialComparisonGroups(products,today)[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});render();}));
 $('social-group').addEventListener('change',()=>{state.socialGroup=$('social-group').value;state.sort=state.socialGroup?'social':'newest';state.page=1;render();});
 $('reset-filters').addEventListener('click',resetFilters);$('empty-reset').addEventListener('click',()=> $('empty-reset').dataset.retry?loadCatalog():resetFilters());

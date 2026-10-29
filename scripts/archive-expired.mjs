@@ -26,7 +26,6 @@ export function cutoffDate(now = new Date()) {
 export function eligibilityReason(product, now = new Date()) {
   if (product.eligibility?.passed !== true) return 'eligibility-not-verified';
   if (!['sneaker','clog','sandal','platform-sandal','hybrid','jelly','platform-shoe'].includes(product.category)) return 'excluded-category';
-  if (!Array.isArray(product.fit) || !product.fit.some(x=>['MLB','DISCOVERY'].includes(x))) return 'missing-brand-fit';
   if ((!releaseWindow(product)&&!product.firstPublishedAt) || product.releaseStatus !== 'released') return 'unknown-release-date';
   const asOf = new Date(now.getTime()+9*3600_000).toISOString().slice(0,10);
   if (releaseState(product,asOf) !== 'expired') return 'not-expired';
