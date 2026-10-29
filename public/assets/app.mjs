@@ -1,5 +1,7 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes } from './export.mjs';
 import { groupedBrands } from './brand-groups.mjs';
+import { analysisCsv, analysisRows, priceDistribution, materialDistribution, colourDistribution,
+         priceKrw, priceBand, colourFamily, materialsOf, RATE_NOTE } from './analysis.mjs';
 import {isPublishedFootwear} from './footwear-policy.mjs';
 import { hasVisual, productImageUrl, kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, preferWomenVariants, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch, isOverlay, overlayKind, overlayReleaseState, overlayWindowDay, retailerId, trendTerms, trendTermGroups, trendKeywordMatches } from './catalog-view.mjs';
 
@@ -9,7 +11,7 @@ const sourceNames = {magazine:'매거진',newsletter:'뉴스레터',media:'매�
 const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:'캐주얼 샌들','platform-sandal':'플랫폼 샌들','platform-shoe':'플랫폼 슈즈',jelly:'젤리 슈즈',hybrid:'혼합형 스니커즈'};
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
-const state = {search:'',brands:new Set(),category:'all',source:'all',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
+const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter']];
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter'};
 let catalog = null, overlay = null, trends = null, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
@@ -205,10 +207,130 @@ function renderSocialGroups(){
   $('social-group').value=state.socialGroup;
   const available=state.source==='sns'&&!!state.socialGroup;$('social-sort-option').hidden=!available;$('social-sort-option').disabled=!available;$('sort').value=state.sort;
 }
+
+// --- saved items -----------------------------------------------------------
+// A bookmark and a note, kept in this browser. Nothing is sent anywhere: it is
+// one person's working shortlist, not shared state, and it survives a reload
+// so a week's reading is not lost on refresh.
+const SAVED_KEY = 'shoes-research:saved:v1';
+let saved = {};
+function loadSaved(){
+  try{ saved = JSON.parse(localStorage.getItem(SAVED_KEY) || '{}') || {}; }
+  catch{ saved = {}; }                       // private window, blocked storage
+}
+function persistSaved(){
+  try{ localStorage.setItem(SAVED_KEY, JSON.stringify(saved)); }catch{ /* read-only is fine */ }
+  const n=Object.keys(saved).length;
+  const label=$('saved-count'); if(label)label.textContent=n?`(${n})`:'';
+}
+function isSaved(p){ return !!saved[p?.id]; }
+function toggleSaved(id,name){
+  if(saved[id])delete saved[id]; else saved[id]={at:new Date().toISOString(),name:name||'',memo:''};
+  persistSaved();
+  popup(saved[id]?'저장함에 담았습니다':'저장함에서 뺐습니다');
+  render();
+}
+function setMemo(id,memo){ if(saved[id]){saved[id].memo=memo;persistSaved();} }
+
+// --- what is new this week -------------------------------------------------
+// The date a record states for itself: when a retailer listed it, when an
+// article ran, or when we first published an official arrival.
+function recordDay(p){
+  return String(p?.listedAt || p?.publishedAt || p?.firstPublishedAt || '').slice(0,10);
+}
+function isFresh(p, asOf = today){
+  const day = recordDay(p);
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(day))return false;
+  return (Date.parse(asOf) - Date.parse(day)) / 86400000 <= 7;
+}
+
+// --- downloads --------------------------------------------------------------
+function downloadText(name, text, type='text/csv;charset=utf-8'){
+  const blob=new Blob([text],{type}), url=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);
+  a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+const scopeState=()=>({...state,isFresh,isSaved,
+  source:state.source==='analysis'?'all':state.source});
+const analysisScope=()=>filterProducts(products,scopeState(),today);
+
+// --- the analysis tab -------------------------------------------------------
+const bar=(label,count,total,swatch)=>{
+  const pct=total?Math.round(count/total*1000)/10:0;
+  return `<div class="dist-row"><span class="dist-label">${swatch?`<i class="dist-swatch" style="background:${esc(swatch)}"></i>`:''}${esc(label)}</span>`
+    +`<span class="dist-track"><span class="dist-fill" style="width:${Math.max(1.5,pct)}%"></span></span>`
+    +`<span class="dist-value">${count.toLocaleString()}<small>${pct.toFixed(1)}%</small></span></div>`;
+};
+function renderAnalysis(){
+  const section=$('analysis');
+  if(!section)return;
+  const on=state.source==='analysis';
+  section.hidden=!on;
+  // The grid's own chrome - count, sort, page selection, pagination -
+  // belongs to the grid, not to a distribution.
+  for(const sel of ['#product-grid','.results-bar','.selection-row','#pagination','#selection-bar','#empty-state'])
+    document.querySelector(sel)?.classList.toggle('hidden-by-analysis',on);
+  if(!on)return;
+  const rows=analysisScope();
+  $('analysis-scope').textContent=`현재 필터 기준 ${rows.length.toLocaleString()}개 상품 · ${RATE_NOTE}`;
+
+  const price=priceDistribution(rows);
+  document.querySelector('#panel-price .panel-body').innerHTML=
+    price.bands.map(b=>bar(b.label,b.count,price.priced)).join('')||'<p class="muted">가격 정보가 없습니다.</p>';
+  document.querySelector('#panel-price .panel-note').textContent=
+    `가격 확인 ${price.priced.toLocaleString()}건 · 미기재 ${price.missing.toLocaleString()}건`;
+
+  const colour=colourDistribution(rows);
+  document.querySelector('#panel-colour .panel-body').innerHTML=
+    colour.rows.map(r=>bar(r.name,r.count,colour.read,r.hex)).join('')||'<p class="muted">색상 정보가 없습니다.</p>';
+  document.querySelector('#panel-colour .panel-note').textContent=
+    `상품 사진에서 판독 ${colour.read.toLocaleString()}건`;
+
+  const material=materialDistribution(rows);
+  document.querySelector('#panel-material .panel-body').innerHTML=
+    material.rows.slice(0,12).map(r=>bar(r.name,r.count,material.stated)).join('')||'<p class="muted">소재 정보가 없습니다.</p>';
+  document.querySelector('#panel-material .panel-note').textContent=
+    `소재 기재 ${material.stated.toLocaleString()}건 · 한 상품이 여러 소재에 포함될 수 있습니다`;
+
+  const top=price.groups.slice(0,14);
+  const widest=Math.max(1,...top.map(g=>g.high));
+  document.querySelector('#panel-brand .panel-body').innerHTML=top.length?
+    `<table class="dist-table"><tr><th>브랜드</th><th>건수</th><th>최저</th><th>중앙값</th><th>최고</th><th></th></tr>`
+    +top.map(g=>`<tr><td>${esc(g.name)}</td><td class="n">${g.count}</td>`
+      +`<td class="n">${Math.round(g.low/10000).toLocaleString()}만</td>`
+      +`<td class="n"><b>${Math.round(g.median/10000).toLocaleString()}만</b></td>`
+      +`<td class="n">${Math.round(g.high/10000).toLocaleString()}만</td>`
+      +`<td><span class="range-track"><span class="range-fill" style="left:${g.low/widest*100}%;width:${Math.max(2,(g.high-g.low)/widest*100)}%"></span>`
+      +`<span class="range-dot" style="left:${g.median/widest*100}%"></span></span></td></tr>`).join('')
+    +'</table>':'<p class="muted">가격 정보가 없습니다.</p>';
+  document.querySelector('#panel-brand .panel-note').textContent='막대는 최저~최고, 점은 중앙값입니다.';
+}
+
+// --- compare ----------------------------------------------------------------
+function openCompare(){
+  const picked=products.filter(p=>selected.has(p.id)).slice(0,5);
+  if(picked.length<2){popup('비교하려면 상품을 2개 이상 선택하세요');return;}
+  const rows=[['브랜드',p=>p.brand],['상품명',p=>variantGroupName(p)],
+    ['색상',p=>variantColorLabel(p)||colourFamily(p.bodyColor)||'—'],
+    ['가격',p=>priceKrw(p)?`${priceKrw(p).toLocaleString()}원`:(p.priceLabel||'—')],
+    ['가격대',p=>priceBand(priceKrw(p))||'—'],
+    ['소재',p=>materialsOf(p).join(' / ')||'—'],
+    ['품목',p=>p.category||'—'],['등록일',p=>recordDay(p)||'—'],
+    ['출처',p=>isOverlay(p)?sourceLabelOf(p):'브랜드 공식']];
+  $('compare-body').innerHTML=`<table class="compare-table"><tr><th></th>${picked.map(p=>
+    `<th><span class="compare-shot">${imageMarkup(p,true)}</span></th>`).join('')}</tr>`
+    +rows.map(([label,read])=>`<tr><th>${esc(label)}</th>${picked.map(p=>`<td>${esc(String(read(p)))}</td>`).join('')}</tr>`).join('')
+    +`<tr><th></th>${picked.map(p=>{const u=outboundUrl(p);return `<td>${u?`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">원본 ↗</a>`:''}</td>`;}).join('')}</tr></table>`;
+  bindImageErrors($('compare-body'));
+  $('compare-dialog').showModal();
+}
+
 function render() {
   if (!catalog) return;
   renderSocialGroups();
-  filtered = filterProducts(products,state,today);
+  renderAnalysis();
+  if(state.source==='analysis')return;
+  filtered = filterProducts(products,{...state,isFresh,isSaved},today);
   if(state.source==='sns'&&state.sort==='newest')
     filtered=[...filtered].sort((a,b)=>(b.snsTrendMatches||0)-(a.snsTrendMatches||0));
   const groups = groupProductVariants(filtered);
@@ -225,11 +347,13 @@ function render() {
     const meta=over?`<span>${esc(overlayDateLabel(p))}</span>${p.priceLabel?`<span>${esc(p.priceLabel)}</span>`:''}`:`<span>${esc(releaseDateLabel(p))}</span>`;
     const link=over?(url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} ${esc(sourceLabelOf(p))}에서 보기">${esc(sourceLabelOf(p))} ↗</a>`:'')
                    :(url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} 공식 상품 보기">공식 상품 ↗</a>`:'');
-    return `<article class="product-card ${selected.has(p.id)?'selected':''}" data-id="${esc(p.id)}" data-group="${esc(groupKey(p))}"><div class="card-visual"><label class="card-checkbox"><input type="checkbox" data-select="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 선택" ${selected.has(p.id)?'checked':''}></label><button class="card-open" data-detail="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 상세정보">${imageMarkup(p,i<4)}</button>${release==='upcoming'?'<span class="release-badge upcoming">발매 예정</span>':''}</div><div class="card-copy"><p class="card-brand">${brandLine}</p><button class="card-name" data-detail="${esc(p.id)}">${esc(variantGroupName(p))}</button><div class="card-meta">${meta}</div>${colorChipsMarkup(group,p.id)}</div><div class="card-footer">${link}</div></article>`;
+    return `<article class="product-card ${selected.has(p.id)?'selected':''}" data-id="${esc(p.id)}" data-group="${esc(groupKey(p))}"><div class="card-visual"><label class="card-checkbox"><input type="checkbox" data-select="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 선택" ${selected.has(p.id)?'checked':''}></label><button class="card-save ${isSaved(p)?'on':''}" data-save="${esc(p.id)}" aria-pressed="${isSaved(p)}" aria-label="${esc(p.name)} 저장"${isSaved(p)?' title="저장함에 있음"':''}>★</button><button class="card-open" data-detail="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 상세정보">${imageMarkup(p,i<4)}</button>${release==='upcoming'?'<span class="release-badge upcoming">발매 예정</span>':''}</div><div class="card-copy"><p class="card-brand">${brandLine}</p><button class="card-name" data-detail="${esc(p.id)}">${esc(variantGroupName(p))}</button><div class="card-meta">${meta}</div>${colorChipsMarkup(group,p.id)}</div><div class="card-footer">${link}</div></article>`;
   }).join('');
   bindImageErrors($('product-grid'));
   $('product-grid').querySelectorAll('[data-detail]').forEach(button=>button.addEventListener('click',()=>openDetail(button.dataset.detail)));
   $('product-grid').querySelectorAll('[data-select]').forEach(input=>input.addEventListener('change',()=>toggleSelection(input.dataset.select,input.checked)));
+  $('product-grid').querySelectorAll('[data-save]').forEach(button=>button.addEventListener('click',()=>{
+    const p=products.find(x=>x.id===button.dataset.save);toggleSaved(button.dataset.save,p?variantGroupName(p):'');}));
   $('product-grid').querySelectorAll('[data-variant]').forEach(button=>button.addEventListener('click',()=>{activeVariant.set(button.closest('.product-card').dataset.group,button.dataset.variant);render();}));
   $('empty-state').hidden = filtered.length>0;
   $('empty-reset').textContent='필터 초기화'; delete $('empty-reset').dataset.retry;
@@ -433,6 +557,8 @@ function updateSelection() {
   $('select-page').indeterminate=visible.some(p=>selected.has(p.id))&&!$('select-page').checked;
   $('product-grid').querySelectorAll('[data-select]').forEach(input=>{input.checked=selected.has(input.dataset.select);input.closest('.product-card').classList.toggle('selected',input.checked);});
   const button=$('detail-select'); if(button) {button.textContent=selected.has(activeDetailId)?'선택 해제':'상품 선택';button.setAttribute('aria-pressed',String(selected.has(activeDetailId)));}
+  $('detail-save')?.addEventListener('click',()=>{const p=products.find(x=>x.id===id);toggleSaved(id,p?variantGroupName(p):'');openDetail(id);});
+  $('detail-memo')?.addEventListener('input',e=>setMemo(id,e.target.value));
 }
 function toggleSelection(id,checked) { checked?selected.add(id):selected.delete(id);updateSelection(); }
 function overlayDetailMarkup(p,id,group){
@@ -494,7 +620,7 @@ function openDetail(id) {
   const url=reviewedProductPageUrl(p,today), evidence=safeUrl(p.dateEvidence?.url);
   const signals=(p.sourceSignals||[]).filter(s=>safeUrl(s.url));
   const data=[...(p.arrivalEvidence?[['신상품 근거',`<a href="${esc(safeUrl(p.arrivalEvidence.url))}" target="_blank" rel="noopener noreferrer">공식 New·New Arrivals ↗</a> · ${esc(dateText(p.arrivalEvidence.verifiedAt,true))} 확인`]]:[]),...(p.firstPublishedAt?[['사이트 최초 게시',esc(dateText(p.firstPublishedAt,true))]]:[]),['출시일',`${esc(p.releaseDate?dateText(p.releaseDate):'미공개')}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">출시일 근거 ↗</a>`:''}`],['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'미확인')],[p.styleType==='official-product-id'?'상품 ID':'스타일 코드',esc(p.style||'미확인')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'미확인')],['소재',esc(p.material||'미확인')],['가격',esc(p.priceLabel||'공식 상품에서 확인')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
-  $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2>${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 검증 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):'<p class="muted">확인 가능한 공식 상품·출시·이미지 근거가 아직 없습니다.</p>'}`;
+  $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2>${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button><button id="detail-save" class="secondary-button" aria-pressed="${isSaved(p)}">${isSaved(p)?'★ 저장됨':'☆ 저장'}</button></div><div class="memo-box"><label for="detail-memo">메모</label><textarea id="detail-memo" rows="2" placeholder="${isSaved(p)?'이 상품에 대한 메모를 남겨 두세요':'저장하면 메모를 남길 수 있습니다'}" ${isSaved(p)?'':'disabled'}>${esc(saved[id]?.memo||'')}</textarea></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 검증 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):'<p class="muted">확인 가능한 공식 상품·출시·이미지 근거가 아직 없습니다.</p>'}`;
   bindImageErrors($('detail-content'));$('detail-select').addEventListener('click',()=>toggleSelection(id,!selected.has(id)));
   $('detail-content').querySelectorAll('[data-variant]').forEach(button=>button.addEventListener('click',()=>{openDetail(button.dataset.variant);render();}));
   if(!$('detail-dialog').open)$('detail-dialog').showModal();
@@ -529,6 +655,18 @@ $('search-form').addEventListener('submit',event=>event.preventDefault());
 let searchTimer;$('search').addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(()=>{state.search=$('search').value;state.page=1;render();},100);});
 $('brand-search').addEventListener('input',renderBrands);
 $('clear-brands').addEventListener('click',()=>{state.brands.clear();state.page=1;renderBrands();render();});
+loadSaved();persistSaved();
+$('fresh-only')?.addEventListener('change',e=>{state.freshOnly=e.target.checked;state.page=1;render();});
+$('saved-only')?.addEventListener('change',e=>{state.savedOnly=e.target.checked;state.page=1;render();});
+$('compare-close')?.addEventListener('click',()=>$('compare-dialog').close());
+$('compare-open')?.addEventListener('click',openCompare);
+$('dl-analysis-all')?.addEventListener('click',()=>downloadText(`shoes-analysis-${today}.csv`,analysisCsv(analysisScope(),'all')));
+$('dl-analysis-xlsx')?.addEventListener('click',()=>{
+  downloadText(`shoes-analysis-${today}.xlsx`,xlsxBytes(analysisRows(analysisScope(),'all').map(r=>r.map(String))),
+    'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+});
+document.querySelectorAll('[data-dl]').forEach(button=>button.addEventListener('click',()=>
+  downloadText(`shoes-${button.dataset.dl}-${today}.csv`,analysisCsv(analysisScope(),button.dataset.dl))));
 for(const [id,key] of [['category-filter','category'],['release-filter','release'],['sort','sort']])$(id).addEventListener('change',()=>{state[key]=$(id).value;state.page=1;render();});
 document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(socialComparisonGroups(products,today)[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});render();}));
 $('social-group').addEventListener('change',()=>{state.socialGroup=$('social-group').value;state.sort=state.socialGroup?'social':'newest';state.page=1;render();});

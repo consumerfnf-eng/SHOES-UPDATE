@@ -154,6 +154,10 @@ export function filterProducts(products, state, today = kstToday()) {
   return products.filter(p => {
     const release = isOverlay(p) ? overlayReleaseState(p, today) : releaseState(p, today);
     return release && hasVisual(p, today)
+      // "이번 주 신규" and "저장함" are reader's filters, not evidence rules:
+      // a caller that does not set them sees exactly what it saw before.
+      && (!state.freshOnly || typeof state.isFresh !== 'function' || state.isFresh(p))
+      && (!state.savedOnly || typeof state.isSaved !== 'function' || state.isSaved(p))
       && (state.release === 'all' || release === state.release)
       && (!state.retailer || state.retailer === 'all' || retailerId(p) === state.retailer)
       && (!state.brands.size || productBrandNames(p,today).some(brand=>state.brands.has(brand)))

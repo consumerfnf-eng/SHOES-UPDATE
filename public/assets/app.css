@@ -86,3 +86,67 @@
 .trend-item-name{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .trend-item-count{font-size:11px;color:var(--muted,#6b6b6b);flex:none}
 .trend-item-count::before{content:'#'}
+
+/* --- data analysis tab ----------------------------------------------------
+   Distributions over the records already on the page. Bars rather than a
+   chart library: the numbers are small, and a bar that is also a number
+   reads without a legend. */
+.hidden-by-analysis{display:none!important}
+.analysis{padding:22px 0 6px}
+.analysis-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.analysis-head h2{font-size:17px;font-weight:600;margin:0 0 4px;letter-spacing:-.4px}
+.analysis-actions{display:flex;gap:8px;flex-wrap:wrap}
+.analysis-actions .secondary-button{min-height:36px;padding:7px 14px;font-size:12px}
+.analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.panel{border:1px solid var(--line);border-radius:14px;background:#fff;padding:16px 18px 14px;min-width:0}
+.panel.wide{grid-column:1/-1}
+.panel header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.panel h3{font-size:13px;font-weight:600;margin:0}
+.panel-note{font-size:10px;color:#8690a0;margin:11px 0 0;line-height:1.6}
+.dist-row{display:grid;grid-template-columns:minmax(74px,118px) minmax(0,1fr) 72px;gap:10px;align-items:center;margin-bottom:7px}
+.dist-label{font-size:11.5px;color:#4d5765;display:flex;align-items:center;gap:6px;overflow-wrap:anywhere}
+.dist-swatch{width:11px;height:11px;border-radius:3px;border:1px solid #0000001a;flex:none}
+.dist-track{background:#eef1f6;border-radius:5px;height:9px;overflow:hidden}
+.dist-fill{display:block;height:100%;background:var(--blue);border-radius:5px}
+.dist-value{font-size:11.5px;color:#36414f;text-align:right;font-variant-numeric:tabular-nums}
+.dist-value small{display:block;font-size:9.5px;color:#8b95a3}
+.dist-table{width:100%;border-collapse:collapse;font-size:11.5px}
+.dist-table th{text-align:left;font-size:9.5px;letter-spacing:.4px;text-transform:uppercase;color:#8690a0;
+  font-weight:600;padding:0 8px 7px 0;border-bottom:1px solid var(--line)}
+.dist-table td{padding:7px 8px 7px 0;border-bottom:1px solid #f1f3f7}
+.dist-table td.n,.dist-table th:nth-child(n+2){text-align:right;font-variant-numeric:tabular-nums}
+.dist-table td:last-child,.dist-table th:last-child{width:34%;text-align:left;padding-right:0}
+.range-track{position:relative;display:block;height:9px;background:#eef1f6;border-radius:5px}
+.range-fill{position:absolute;top:0;height:100%;background:#c3d8f7;border-radius:5px}
+.range-dot{position:absolute;top:-2px;width:3px;height:13px;background:var(--blue);border-radius:2px}
+
+/* --- saved items and the new-this-week filter ----------------------------- */
+.toggle-filter{flex-direction:row!important;align-items:center;gap:7px!important;font-size:12px!important;
+  color:#4d5765!important;padding-bottom:8px;cursor:pointer;white-space:nowrap}
+.toggle-filter input{width:15px;height:15px}
+.card-save{position:absolute;right:9px;bottom:9px;z-index:1;width:28px;height:28px;border-radius:8px;
+  background:#ffffffe6;border:1px solid #e3e6ea;color:#b9c2cd;font-size:14px;line-height:1}
+.card-save:hover{color:#f0a500;border-color:#e4cf9a}
+.card-save.on{color:#f0a500;border-color:#f0d7a0;background:#fffaf0}
+.memo-box{margin:16px 0 0;display:flex;flex-direction:column;gap:6px}
+.memo-box label{font-size:11px;color:#8690a0}
+.memo-box textarea{width:100%;border:1px solid #dfe3e8;border-radius:10px;padding:9px 11px;font:inherit;
+  font-size:12.5px;resize:vertical;background:#fff;color:inherit}
+.memo-box textarea:disabled{background:#f6f7f9;color:#9aa4b1}
+
+/* --- compare -------------------------------------------------------------- */
+.compare-dialog{width:min(1020px,calc(100vw - 32px))}
+.compare-body{overflow-x:auto;margin-top:16px}
+.compare-table{border-collapse:collapse;width:100%;font-size:12.5px;min-width:520px}
+.compare-table th,.compare-table td{border-bottom:1px solid #eef1f5;padding:9px 11px;text-align:left;vertical-align:top}
+.compare-table tr>th:first-child{width:92px;color:#8690a0;font-size:11px;font-weight:600;white-space:nowrap}
+.compare-shot{display:block;width:100%;aspect-ratio:1.2;background:#f5f7f9;border-radius:10px;overflow:hidden}
+.compare-shot img{width:100%;height:100%;object-fit:contain;padding:8px;mix-blend-mode:multiply}
+
+@media(max-width:900px){.analysis-grid{grid-template-columns:1fr}}
+@media(max-width:640px){
+  .dist-row{grid-template-columns:minmax(64px,96px) minmax(0,1fr) 60px;gap:7px}
+  .dist-label,.dist-value{font-size:10.5px}
+  .analysis-actions .secondary-button{font-size:11px;padding:6px 11px}
+  .panel{padding:13px 13px 11px}
+}
