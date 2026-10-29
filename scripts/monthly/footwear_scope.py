@@ -148,3 +148,17 @@ def split_ko_listing_title(name):
     return ((match.group('model') or name or '').strip(),
             (match.group('color') or '').strip(),
             (match.group('style') or '').strip())
+
+
+# Korean retailers let a seller answer a required field by pointing at the
+# images. Those answers state nothing, so they must never be stored as a
+# colourway or a material - "상세내용참고" was reaching the colour chips.
+PLACEHOLDER_VALUE = re.compile(
+    r'^(?:상세\s*(?:페이지|이미지|내용|정보|설명)?\s*(?:참조|참고|확인)?|상품\s*(?:상세|tag)?\s*참고|'
+    r'별도\s*표기|해당\s*없음|없음|기타|n/?a|-{1,3}|\.*)$', re.I)
+
+
+def is_stated_value(value):
+    """True when a field actually says something."""
+    text = (value or '').strip()
+    return bool(text) and not PLACEHOLDER_VALUE.match(text)

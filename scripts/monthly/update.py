@@ -41,6 +41,8 @@ import re
 import subprocess
 import sys
 
+from brand_identity import canonical_brand
+from footwear_scope import is_stated_value
 from common import atomic_write_json, derive_colorway, kst_day, kst_iso_week, kst_now, kst_three_months_ago, read_json
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -54,9 +56,9 @@ GENERIC_WORDS = {'sneakers', 'sneaker', 'shoes', 'shoe', 'trainers', 'trainer', 
 # establishes that an item is new - see the module docstring.
 RETAIL_COLLECTORS = [
     {'script': 'collect_ssense.py', 'staging': 'monthly-staging-ssense.json',
-     'report': 'retail-ssense', 'basis': 'new-sort'},
+     'report': 'retail-ssense', 'basis': 'dated'},
     {'script': 'collect_musinsa.py', 'staging': 'monthly-staging-musinsa.json',
-     'report': 'retail-musinsa', 'basis': 'new-sort'},
+     'report': 'retail-musinsa', 'basis': 'dated'},
     {'script': 'collect_29cm.py', 'staging': 'monthly-staging-29cm.json',
      'report': 'retail-29cm', 'basis': 'dated'},
     {'script': 'collect_wconcept.py', 'staging': 'monthly-staging-wconcept.json',
@@ -231,10 +233,23 @@ def normalize_retail_item(item, basis, previous, now, is_baseline):
     item.setdefault('productType', 'sneaker')
     item.setdefault('footwearTypes', ['sneaker'])
     item.setdefault('newnessBasis', basis)
+    # One canonical brand across retailers, so the same shoe listed on Musinsa
+    # as 나이키 and on SSENSE as Nike is one card and one sidebar entry. The
+    # retailer's own wording is kept alongside it, never discarded.
+    written = item.get('brand') or ''
+    canonical = canonical_brand(item.get('brandSlug'), written, item.get('brandKo'))
+    if canonical and canonical != written:
+        item['brandAsListed'] = written
+        item['brand'] = canonical
     if not item.get('style'):
         item['style'] = item.get('sku', '')
-    if not item.get('colorway'):
+    # A retailer is allowed to answer a required colour field with "상세내용참고";
+    # that states nothing and must not reach a colour chip as a label.
+    if not is_stated_value(item.get('colorway')):
         item['colorway'] = derive_colorway(item.get('fullName') or item.get('name', ''))
+    for field in ('material', 'countryOrigin'):
+        if item.get(field) and not is_stated_value(item[field]):
+            item.pop(field)
     prior = previous.get(item['url'])
     item['firstSeenAt'] = prior['firstSeenAt'] if prior else now.isoformat()
     item['newThisRun'] = (prior is None) and not is_baseline
@@ -279,18 +294,25 @@ def carry_forward(previous_payload, published, collected_by_source, cutoff_day):
 
 
 def retail_is_published(item, cutoff_day, cutoff_iso):
-    """A delta-basis item publishes for 3 months from the run that first saw
-    it appear; a dated item publishes while its own listing date is inside
-    the window; a new-sort item publishes while it is still in the top of
-    that sort, which is what being collected at all means."""
+    """Only items that are actually inside the three-month window publish.
+
+    A dated item needs its own listing date inside the window, and an item
+    with no date at all does not publish - "within three months" is a claim
+    that has to be backed by a date, and every source except W Concept now
+    provides one (29CM's visibleBeginTimestamp, SSENSE's creationDate,
+    Musinsa's image-upload day). Position in a site's own newest-first sort
+    is no longer accepted on its own: Musinsa's 신상품순 reaches back past
+    three months, so the sort alone would have let older listings through.
+
+    A delta-basis item has no date anywhere, so its window runs for three
+    months from the run that first saw it appear.
+    """
     basis = item.get('newnessBasis')
-    if basis == 'dated':
-        listed = (item.get('listedAt') or '')[:10]
-        return bool(listed) and listed >= cutoff_day
-    if basis == 'new-sort':
-        return True
-    detected = item.get('firstDetectedAsNewAt')
-    return bool(detected) and detected >= cutoff_iso
+    if basis == DELTA_BASIS:
+        detected = item.get('firstDetectedAsNewAt')
+        return bool(detected) and detected >= cutoff_iso
+    listed = (item.get('listedAt') or '')[:10]
+    return bool(listed) and listed >= cutoff_day
 
 
 def main():
@@ -326,9 +348,11 @@ def main():
         ig_args += ['--username', args.ig_username]
     instagram = run_collector('collect_instagram.py', os.path.join(DATA, 'monthly-staging-instagram.json'),
                               ig_args, reuse=args.use_staging)
-    hashtag_volume = run_collector('collect_instagram_hashtags.py',
-                                   os.path.join(DATA, 'monthly-staging-ig-hashtags.json'),
-                                   reuse=args.use_staging)
+    # The trend ranking writes straight into public/data: it is its own
+    # snapshot with its own history file, not part of the product catalog.
+    trends = run_collector('collect_trend_keywords.py',
+                           os.path.join(PUBLIC_DATA, 'trend-keywords.json'),
+                           reuse=args.use_staging)
 
     model_aliases = read_json(os.path.join(DATA, 'monthly-model-aliases.json'), {})
     previous_payload = read_json(os.path.join(PUBLIC_DATA, 'monthly-catalog.json'), {})
@@ -442,9 +466,6 @@ def main():
                     **source_directory(published_retail + published_newsletter)},
         'retail': [slim_for_publish(p) for p in published_retail],
         'newsletter': [slim_for_publish(n) for n in published_newsletter],
-        # Hashtag-level volume collected without any Instagram login. A coarser
-        # signal than popularity.snsPosts, which needs the user's session.
-        'hashtagTrends': hashtag_volume.get('items', []),
         'sourceStatus': source_status,
     }
     atomic_write_json(os.path.join(PUBLIC_DATA, 'monthly-catalog.json'), public_catalog, compact=True)
@@ -466,9 +487,10 @@ def main():
             'instagram': {'status': instagram.get('status'), 'items': len(instagram.get('items', [])),
                           'matched': len(instagram.get('items', [])) - len(unmatched_sns),
                           'held': len(unmatched_sns), 'diagnostics': instagram.get('diagnostics', [])},
-            'instagram-hashtag-volume': {'status': hashtag_volume.get('status'),
-                                          'items': len(hashtag_volume.get('items', [])),
-                                          'diagnostics': hashtag_volume.get('diagnostics', [])},
+            'sns-trend-keywords': {'status': 'ok' if trends.get('keywords') else 'unavailable',
+                                    'items': len(trends.get('keywords', [])),
+                                    'acceptedIntoSeeds': len(trends.get('acceptedIntoSeeds', [])),
+                                    'diagnostics': [trends.get('sourceStatus', {})]},
         },
         'isBaselineRun': run_is_baseline,
         'baselineSources': sorted(baseline_sources),

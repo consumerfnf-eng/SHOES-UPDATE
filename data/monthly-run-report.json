@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-10-28T19:44:37.680385+09:00",
+  "checkedAt": "2026-10-29T09:50:01.733032+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
-      "basis": "new-sort",
-      "items": 2214,
+      "basis": "dated",
+      "items": 2147,
       "creditsUsed": 0,
       "diagnostics": [
         {
@@ -12,10 +12,10 @@
           "listingUrl": "https://www.ssense.com/en-us/men/sneakers?sort=latest-desc",
           "pages": 16,
           "responses": 16,
-          "candidates": 1407,
-          "kept": 1341,
+          "candidates": 1286,
+          "kept": 1281,
           "dropped": {
-            "excluded-silhouette": 66
+            "excluded-silhouette": 5
           },
           "errors": []
         },
@@ -24,10 +24,10 @@
           "listingUrl": "https://www.ssense.com/en-us/women/sneakers?sort=latest-desc",
           "pages": 11,
           "responses": 11,
-          "candidates": 914,
-          "kept": 827,
+          "candidates": 909,
+          "kept": 823,
           "dropped": {
-            "excluded-silhouette": 79,
+            "excluded-silhouette": 78,
             "sandal-or-clog": 8
           },
           "errors": []
@@ -37,25 +37,25 @@
           "listingUrl": "https://www.ssense.com/en-us/women/flats?sort=latest-desc",
           "pages": 9,
           "responses": 9,
-          "candidates": 692,
-          "kept": 73,
+          "candidates": 691,
+          "kept": 71,
           "dropped": {
-            "excluded-silhouette": 361,
-            "no-sneaker-evidence": 245,
-            "sandal-or-clog": 13
+            "no-sneaker-evidence": 261,
+            "excluded-silhouette": 348,
+            "sandal-or-clog": 11
           },
           "errors": []
         },
         {
           "step": "product-page enrichment",
-          "detailsRequested": 500,
-          "detailsFilled": 500
+          "detailsRequested": 2147,
+          "detailsFilled": 2145
         }
       ]
     },
     "retail-musinsa": {
       "status": "ok",
-      "basis": "new-sort",
+      "basis": "dated",
       "items": 1365,
       "creditsUsed": 0,
       "diagnostics": [
@@ -290,7 +290,7 @@
     "newsletter": {
       "status": "ok",
       "items": 706,
-      "matchedToRetail": 356,
+      "matchedToRetail": 378,
       "unidentifiedArticles": 59,
       "diagnostics": [
         {
@@ -645,45 +645,23 @@
         }
       ]
     },
-    "instagram-hashtag-volume": {
+    "sns-trend-keywords": {
       "status": "ok",
-      "items": 4,
+      "items": 15,
+      "acceptedIntoSeeds": 0,
       "diagnostics": [
         {
-          "hashtag": "sneakers",
-          "url": "https://www.instagram.com/explore/tags/sneakers/",
-          "errors": [],
-          "status": "ok"
-        },
-        {
-          "hashtag": "sneakerhead",
-          "url": "https://www.instagram.com/explore/tags/sneakerhead/",
-          "errors": [],
-          "status": "ok"
-        },
-        {
-          "hashtag": "신발추천",
-          "url": "https://www.instagram.com/explore/tags/신발추천/",
-          "errors": [],
-          "status": "ok"
-        },
-        {
-          "hashtag": "고프코어슈즈",
-          "url": "https://www.instagram.com/explore/tags/고프코어슈즈/",
-          "errors": [],
-          "status": "no-data"
-        },
-        {
-          "hashtag": "스니커즈추천",
-          "url": "https://www.instagram.com/explore/tags/스니커즈추천/",
-          "errors": [],
-          "status": "ok"
-        },
-        {
-          "hashtag": "신상스니커즈",
-          "url": "https://www.instagram.com/explore/tags/신상스니커즈/",
-          "errors": [],
-          "status": "no-data"
+          "instagram": {
+            "status": "ok",
+            "read": 25,
+            "tags": 72,
+            "failures": {
+              "no-data": 47
+            }
+          },
+          "tiktok": {
+            "status": "skipped"
+          }
         }
       ]
     }
@@ -691,8 +669,8 @@
   "isBaselineRun": false,
   "baselineSources": [],
   "carriedForward": {},
-  "publishedRetail": 6047,
-  "publishedNewsletter": 706,
-  "retailCollected": 19089,
-  "heldOutsideWindow": 13042
+  "publishedRetail": 3800,
+  "publishedNewsletter": 702,
+  "retailCollected": 19022,
+  "heldOutsideWindow": 15222
 }

@@ -30,7 +30,7 @@ from concurrent.futures import ThreadPoolExecutor
 from curl_cffi import requests as curl_requests
 
 from common import atomic_write_json, kst_now, kst_three_months_ago, short_id
-from footwear_scope import classify, split_ko_listing_title
+from footwear_scope import classify, is_stated_value, split_ko_listing_title
 
 API = 'https://search-api.29cm.co.kr/api/v4/products/category'
 PRODUCT_URL = 'https://www.29cm.co.kr/products/{}'
@@ -89,6 +89,7 @@ def build_item(product, category, checked_at):
     if not kind:
         return None, reason
     model, color, style = split_ko_listing_title(name)
+    color = color if is_stated_value(color) else ''
     item_no = product.get('itemNo')
     url = PRODUCT_URL.format(item_no)
     began = product.get('visibleBeginTimestamp') or ''
@@ -174,14 +175,10 @@ def collect_category(category, cutoff_day, checked_at, diagnostics):
     return items
 
 
-# 29CM requires sellers to fill these rows but lets them point at the images
-# instead; those answers state nothing and must not become a material value.
-DETAIL_PLACEHOLDERS = re.compile(r'^(?:상세\s*(?:페이지|이미지)\s*(?:참조|참고)|상품\s*Tag\s*참고|'
-                                 r'상세\s*설명\s*참조|별도\s*표기|해당\s*없음|-)$')
-
-
+# The shared guard in footwear_scope covers every "상세 페이지 참조" spelling
+# these sellers use; a local copy drifted and let "상세내용참고" through.
 def is_stated(value):
-    return bool(value) and not DETAIL_PLACEHOLDERS.match(value)
+    return is_stated_value(value)
 
 
 def fetch_detail(item_no, outcome, attempts=2):

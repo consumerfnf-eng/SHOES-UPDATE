@@ -54,8 +54,13 @@ class PublishWindowTests(unittest.TestCase):
         self.assertTrue(retail_is_published(inside, CUTOFF_DAY, CUTOFF_ISO))
         self.assertFalse(retail_is_published(outside, CUTOFF_DAY, CUTOFF_ISO))
 
-    def test_a_newest_sorted_item_publishes_because_it_was_collected_at_all(self):
-        self.assertTrue(retail_is_published({'newnessBasis': 'new-sort'}, CUTOFF_DAY, CUTOFF_ISO))
+    def test_an_item_with_no_date_at_all_does_not_publish(self):
+        # "within three months" has to be backed by a date; a position in a
+        # site's newest-first sort is not one. Musinsa's 신상품순 reaches back
+        # past three months, so this is a real case, not a hypothetical.
+        self.assertFalse(retail_is_published({'newnessBasis': 'dated'}, CUTOFF_DAY, CUTOFF_ISO))
+        self.assertFalse(retail_is_published({'newnessBasis': 'new-sort'}, CUTOFF_DAY, CUTOFF_ISO))
+        self.assertFalse(retail_is_published({}, CUTOFF_DAY, CUTOFF_ISO))
 
     def test_a_delta_item_needs_a_run_that_actually_saw_it_arrive(self):
         self.assertFalse(retail_is_published({'newnessBasis': 'delta'}, CUTOFF_DAY, CUTOFF_ISO))

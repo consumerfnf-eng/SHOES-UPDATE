@@ -13,10 +13,11 @@ Calling the API without an hmacId from a real page load answers
 DISPLAY_000_0001 ("잘못된 파라미터"), so the HTML step cannot be skipped and
 is not attempted.
 
-Musinsa publishes no per-item date, so "new" here means exactly what Musinsa
-itself means by it: the item's position in its own 신상품순 sort. We walk that
-sort from the top for a bounded number of pages per category rather than
-inventing a release date we were never given.
+Musinsa publishes no date field, but it files every thumbnail under the day
+it was uploaded, so `listedAt` comes from the image path (see listed_day).
+That matters: its own 신상품순 sort reaches back well past three months -
+collected items carry image dates from March - so the sort's position alone
+is not a three-month guarantee and the date is what the publish window uses.
 """
 import argparse
 import json
@@ -27,7 +28,7 @@ import time
 from curl_cffi import requests as curl_requests
 
 from common import BROWSER_HEADERS, atomic_write_json, kst_now, short_id
-from footwear_scope import classify, split_ko_listing_title
+from footwear_scope import classify, is_stated_value, split_ko_listing_title
 from scrapingbee_client import ScrapingBeeClient
 
 # Musinsa's own shoe tree (code -> label), limited to this project's scope.
@@ -47,6 +48,7 @@ CATEGORIES = [
 PAGES_PER_CATEGORY = 6          # 6 x 60 = up to 360 newest listings per category
 PAGE_SIZE = 60
 NEXT_DATA_RE = re.compile(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.S)
+THUMBNAIL_DAY_RE = re.compile(r'/goods_img/(\d{4})(\d{2})(\d{2})/')
 
 
 def listing_url(code):
@@ -110,15 +112,34 @@ def next_page_of(payload):
     return ((payload.get('data') or {}).get('pagination') or {}).get('nextPageUrl')
 
 
+def listed_day(thumbnail):
+    """The day Musinsa first hosted this product's image.
+
+    Musinsa publishes no date field anywhere - not in the listing, not on the
+    product page - but it files every thumbnail under the day it was uploaded
+    (`/goods_img/20261014/7516828/...`), which for a listing is the day it went
+    up. It is already in the listing payload, so this costs no extra request.
+    It is recorded as what it is, an image-upload day, not as a release date:
+    1,357 of 1,365 collected items carry one, and they show that Musinsa's own
+    신상품순 reaches back well past three months, which is exactly why the date
+    filter is needed rather than trusting the sort's position alone.
+    """
+    found = THUMBNAIL_DAY_RE.search(thumbnail or '')
+    return '-'.join(found.groups()) if found else ''
+
+
 def build_item(good, category, checked_at, listing, rank):
     name = good.get('goodsName') or ''
     kind, types, reason = classify(name, category['label'])
     if not kind:
         return None, reason
     model, color, style = split_ko_listing_title(name)
+    color = color if is_stated_value(color) else ''
     url = good.get('goodsLinkUrl') or f"https://www.musinsa.com/products/{good.get('goodsNo')}"
     price = good.get('finalPrice') or good.get('price')
     gender_text = good.get('displayGenderText') or ''
+    thumbnail = good.get('thumbnail') or ''
+    listed = listed_day(thumbnail)
     return {
         'id': short_id('weekly-musinsa', str(good.get('goodsNo') or url)),
         'source': 'retail-musinsa',
@@ -128,7 +149,7 @@ def build_item(good, category, checked_at, listing, rank):
         'name': model or name,
         'fullName': name,
         'url': url,
-        'image': good.get('thumbnail') or '',
+        'image': thumbnail,
         'priceLabel': f'{price:,}원' if isinstance(price, int) else '',
         'gender': 'women' if gender_text == '여성' else ('men' if gender_text == '남성' else ''),
         'colorway': color,
@@ -137,12 +158,15 @@ def build_item(good, category, checked_at, listing, rank):
         'productType': kind,
         'footwearTypes': types,
         'officialCategory': category['label'],
+        'listedAt': listed,
         'retailerEvidence': {
             'verified': True,
             'retailer': 'Musinsa',
             'productUrl': url,
             'listingUrl': listing,
-            'listingBasis': f"Musinsa {category['label']} · 신상품순(sortCode=NEW) {rank}번째",
+            'listedAt': listed,
+            'listingBasis': (f"Musinsa {category['label']} · 신상품순(sortCode=NEW) {rank}번째"
+                              + (f' · 이미지 등록일 {listed}' if listed else ' · 등록일 미표기')),
             'verifiedAt': checked_at,
             'collectionMethod': 'next-data+signed-plp-api',
         },

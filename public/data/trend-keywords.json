@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-29T09:40:03.525275+09:00",
+  "asOf": "2026-10-29",
+  "method": "instagram-post-count-wow",
+  "window": {
+    "targetGapDays": 7,
+    "minGapDays": 5
+  },
+  "sourceStatus": {
+    "instagram": {
+      "status": "ok",
+      "read": 25,
+      "tags": 72,
+      "failures": {
+        "no-data": 47
+      }
+    },
+    "tiktok": {
+      "status": "skipped"
+    }
+  },
+  "keywords": [
+    {
+      "hashtag": "sneakers",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 243000000,
+      "valueLabel": "243M",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [
+        "flux sneakers",
+        "weird sneakers",
+        "alexander mcqueen glitter sneakers",
+        "baseball mom sneaker options",
+        "sachin tendulkar's tenxyouworld sneaker review",
+        "dtlr sneakers",
+        "silver sneakers program",
+        "cool sneakers for men"
+      ],
+      "sourceUrl": "https://www.instagram.com/explore/tags/sneakers/"
+    },
+    {
+      "hashtag": "sneakerhead",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 122000000,
+      "valueLabel": "122M",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [
+        "sneakerheads trends 2026",
+        "sneakerhead jordan collection",
+        "japanorak sneakerhead community",
+        "detroit sneakerhead meetups",
+        "jordan 8 sneakerheads community",
+        "adidas x liberty london sneakerheads",
+        "rick owens geobasket sneakerhead culture",
+        "sneakerhead shoes"
+      ],
+      "sourceUrl": "https://www.instagram.com/explore/tags/sneakerhead/"
+    },
+    {
+      "hashtag": "sneakerstyle",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 2300000,
+      "valueLabel": "2.3M",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [],
+      "sourceUrl": "https://www.instagram.com/explore/tags/sneakerstyle/"
+    },
+    {
+      "hashtag": "gorpcore",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 1800000,
+      "valueLabel": "1.8M",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [
+        "gorpcore fashion for hiking",
+        "gorpcore outfits with arc'teryx",
+        "quiet gorpcore men's fashion",
+        "gorpcore style for winter",
+        "men's gorpcore fashion trends 2026",
+        "gorpcore hiking fashion trends 2026",
+        "decathlon gorpcore",
+        "gorpcore fashion influencers"
+      ],
+      "sourceUrl": "https://www.instagram.com/explore/tags/gorpcore/"
+    },
+    {
+      "hashtag": "신발추천",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 1700000,
+      "valueLabel": "1.7M",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [],
+      "sourceUrl": "https://www.instagram.com/explore/tags/%EC%8B%A0%EB%B0%9C%EC%B6%94%EC%B2%9C/"
+    },
+    {
+      "hashtag": "조던1",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 1200000,
+      "valueLabel": "1.2M",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [
+        "조던1 시카고"
+      ],
+      "sourceUrl": "https://www.instagram.com/explore/tags/%EC%A1%B0%EB%8D%981/"
+    },
+    {
+      "hashtag": "러닝화",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 619000,
+      "valueLabel": "619K",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [
+        "러닝화 계급도",
+        "러닝화 계급도 2026",
+        "2026 러닝화 계급도",
+        "나이키 러닝화",
+        "아디다스 러닝화",
+        "러닝화 추천",
+        "아식스 러닝화",
+        "미즈노 러닝화"
+      ],
+      "sourceUrl": "https://www.instagram.com/explore/tags/%EB%9F%AC%EB%8B%9D%ED%99%94/"
+    },
+    {
+      "hashtag": "살로몬",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 486000,
+      "valueLabel": "486K",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [
+        "살로몬 코디",
+        "살로몬 경량패딩",
+        "살로몬 할인코드",
+        "살로몬 백팩",
+        "살로몬 모디세이",
+        "살로몬 인슐레이션 패딩",
+        "살로몬 신발",
+        "살로몬 트레일블레이저 10 노트북"
+      ],
+      "sourceUrl": "https://www.instagram.com/explore/tags/%EC%82%B4%EB%A1%9C%EB%AA%AC/"
+    },
+    {
+      "hashtag": "어글리슈즈",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 407000,
+      "valueLabel": "407K",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [
+        "발렌시아가 어글리슈즈"
+      ],
+      "sourceUrl": "https://www.instagram.com/explore/tags/%EC%96%B4%EA%B8%80%EB%A6%AC%EC%8A%88%EC%A6%88/"
+    },
+    {
+      "hashtag": "sneakerrelease",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 379000,
+      "valueLabel": "379K",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [],
+      "sourceUrl": "https://www.instagram.com/explore/tags/sneakerrelease/"
+    },
+    {
+      "hashtag": "남자스니커즈",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 357000,
+      "valueLabel": "357K",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [],
+      "sourceUrl": "https://www.instagram.com/explore/tags/%EB%82%A8%EC%9E%90%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/"
+    },
+    {
+      "hashtag": "뉴발란스530",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 183000,
+      "valueLabel": "183K",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [
+        "뉴발란스 530"
+      ],
+      "sourceUrl": "https://www.instagram.com/explore/tags/%EB%89%B4%EB%B0%9C%EB%9E%80%EC%8A%A4530/"
+    },
+    {
+      "hashtag": "스니커즈추천",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 125000,
+      "valueLabel": "125K",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [],
+      "sourceUrl": "https://www.instagram.com/explore/tags/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88%EC%B6%94%EC%B2%9C/"
+    },
+    {
+      "hashtag": "온러닝",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 85000,
+      "valueLabel": "85K",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [
+        "더현대 온러닝",
+        "kith 온러닝",
+        "온러닝 소리",
+        "온러닝 클라우드",
+        "온러닝 부산공장",
+        "온러닝 클라우드 몬스터",
+        "온러닝 한남",
+        "온러닝 잠실"
+      ],
+      "sourceUrl": "https://www.instagram.com/explore/tags/%EC%98%A8%EB%9F%AC%EB%8B%9D/"
+    },
+    {
+      "hashtag": "트레일러닝화",
+      "platform": "instagram",
+      "metric": "post-count",
+      "value": 49000,
+      "valueLabel": "49K",
+      "growthPercent": null,
+      "comparedToDay": null,
+      "previousValue": null,
+      "isNew": true,
+      "relatedKeywords": [],
+      "sourceUrl": "https://www.instagram.com/explore/tags/%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%9F%AC%EB%8B%9D%ED%99%94/"
+    }
+  ],
+  "candidates": [
+    {
+      "hashtag": "스피드캣go",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "조던1 시카고",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "include-share-0.00",
+      "postCount": 39000
+    },
+    {
+      "hashtag": "더현대 온러닝",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "kith 온러닝",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "온러닝 소리",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "온러닝 클라우드",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "온러닝 부산공장",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "온러닝 클라우드 몬스터",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "온러닝 한남",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "온러닝 잠실",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "온러닝 파프",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "include-share-0.00",
+      "postCount": 550
+    },
+    {
+      "hashtag": "온러닝 부산",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "한남동 온러닝",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "잠실 온러닝",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "온러닝 내구성",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "온러닝 키스",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "키스 온러닝",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "살로몬 코디",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    },
+    {
+      "hashtag": "살로몬 경량패딩",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "include-share-0.00",
+      "postCount": 100
+    },
+    {
+      "hashtag": "살로몬 할인코드",
+      "coOccurrences": 1,
+      "accepted": false,
+      "reason": "unreadable:no-data",
+      "postCount": null
+    }
+  ],
+  "acceptedIntoSeeds": [],
+  "seedCount": 72
+}

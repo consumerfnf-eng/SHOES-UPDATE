@@ -46,7 +46,9 @@ LDJSON_RE = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re
 COMPOSITION_RE = re.compile(r'compositionByLanguage\\":\{\\"en\\":\\"(.*?)\\"')
 ORIGIN_RE = re.compile(r'countryOrigin\\":\{\\"nameByLanguage\\":\{\\"en\\":\\"(.*?)\\"')
 CREATED_RE = re.compile(r'creationDate\\":\\"(20\d\d-\d\d-\d\dT[0-9:.]+Z)\\"')
-DETAIL_BUDGET = 500
+# Every item is enriched, not a slice: creationDate is the only real date
+# SSENSE gives, and the publish window needs one for every published item.
+DETAIL_BUDGET = 4000
 DETAIL_CONCURRENCY = 3
 
 

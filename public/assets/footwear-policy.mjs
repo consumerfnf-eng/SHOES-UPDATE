@@ -1,6 +1,12 @@
 // The same publication scope is used by the publisher and the browser.
 export const FOOTWEAR_TYPES = ['sneaker','ballet-sneaker','mary-jane-sneaker','mule-sneaker','jelly','platform'];
 export function footwearTypes(product) {
+  // A retail/newsletter collector already classified its own listing against
+  // this same list (scripts/monthly/footwear_scope.py), using the retailer's
+  // category label as well as the title. Re-deriving it here from the title
+  // alone would quietly lose that, so a stated list wins.
+  if(Array.isArray(product.footwearTypes)&&product.footwearTypes.length)
+    return product.footwearTypes.filter(type=>FOOTWEAR_TYPES.includes(type));
   const category=product.category;
   const text=[product.name,product.officialCategory,product.hybridReview?.approved?product.hybridReview.type:''].filter(Boolean).join(' ');
   const types=[];

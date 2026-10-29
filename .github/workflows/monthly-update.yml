@@ -53,7 +53,7 @@ jobs:
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json public/data/monthly-catalog.json
+          git add data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json data/trend-history.csv config/trend-seed-hashtags.json public/data/monthly-catalog.json public/data/trend-keywords.json
           if ! git diff --cached --quiet; then
             git commit -m "weekly retail/newsletter shoes update $(date -u +%F)"
             # See weekly-update.yml: main can move during a long collection,
@@ -89,5 +89,6 @@ jobs:
             data/monthly-staging-instagram.json
             data/monthly-staging-ig-hashtags.json
             data/monthly-run-report.json
+            data/trend-history.csv
           if-no-files-found: ignore
           retention-days: 14
