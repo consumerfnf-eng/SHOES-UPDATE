@@ -33,8 +33,6 @@ from collections import Counter, deque
 from concurrent.futures import ThreadPoolExecutor
 from io import BytesIO
 
-from curl_cffi import requests as curl_requests
-
 from common import BROWSER_HEADERS, atomic_write_json, read_json
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -254,6 +252,11 @@ def body_colour(image):
 
 
 def read_image(url):
+    # Imported here, not at module load: reading a colour off a file on disk
+    # needs no HTTP client, and requiring one made `npm run colors` fail on a
+    # runner that had installed only Pillow - taking the whole weekly
+    # publication down with it.
+    from curl_cffi import requests as curl_requests
     try:
         r = curl_requests.get(url, impersonate='chrome124', headers=BROWSER_HEADERS, timeout=TIMEOUT)
         if r.status_code != 200 or len(r.content) < 512:
