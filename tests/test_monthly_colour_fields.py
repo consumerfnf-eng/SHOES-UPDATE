@@ -300,6 +300,26 @@ class ModelGroupingTests(unittest.TestCase):
         self.assertEqual(status['joinedToExistingModel'], 1)
         self.assertEqual(items[2]['colorway'], '베이지')
 
+    def test_a_lone_listing_reads_the_colour_off_its_own_name(self):
+        # fitflop sells one metallic trainer, so nothing groups it and the
+        # shade stayed in the title with an unlabelled chip beside it.
+        items = self.listings('여성 네오D 하이커 패디드 메탈릭 트레이너 실버 (FT69K2N512)',
+                              '스무디 슬립온 (BLACK)', brand='fitflop')
+        status = {}
+        assign_model_groups(items, status)
+        self.assertEqual([i['colorway'] for i in items], ['실버', 'BLACK'])
+        self.assertEqual(status['colourwayFromOwnName'], 2)
+
+    def test_a_model_number_is_not_read_as_a_trailing_colour(self):
+        items = self.listings('Air Max 90', '삼바 OG', brand='Nike')
+        assign_model_groups(items)
+        self.assertEqual([i.get('colorway') for i in items], [None, None])
+
+    def test_a_title_that_is_only_a_colour_keeps_its_name(self):
+        items = self.listings('블랙', '화이트', brand='x')
+        assign_model_groups(items)
+        self.assertEqual([i.get('colorway') for i in items], [None, None])
+
     def test_colour_is_read_out_of_a_bracketed_remainder(self):
         self.assertEqual(colour_from_remainder('(BLACK)'), 'BLACK')
         self.assertEqual(colour_from_remainder('히커리 II (K3708220SD-W)'), '히커리 II')

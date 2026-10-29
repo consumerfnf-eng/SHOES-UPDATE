@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-29T19:04:28.824292+09:00",
+  "checkedAt": "2026-10-29T19:19:12.275906+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -456,6 +456,7 @@
   },
   "modelGrouping": {
     "step": "model grouping",
+    "colourwayFromOwnName": 182,
     "modelGroupsAssigned": 1281,
     "groupedByStyleCode": 277,
     "joinedToExistingModel": 20,

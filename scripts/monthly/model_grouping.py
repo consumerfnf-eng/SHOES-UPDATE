@@ -517,11 +517,62 @@ def assign_model_groups(items, status=None):
                         member['colorwayFrom'] = 'product-name'
                         coloured += 1
     joined = join_leftovers(by_brand, status)
+    status['colourwayFromOwnName'] = read_own_tail_colour(items)
     status['modelGroupsAssigned'] = grouped + joined
     status['groupedByStyleCode'] = by_code
     status['joinedToExistingModel'] = joined
     status['colourwaysRecoveredFromName'] = coloured
     return items
+
+
+MAX_TAIL_COLOUR_TOKENS = 3
+
+
+def read_own_tail_colour(items):
+    """Take the colour off the end of a listing that has no sibling.
+
+    "네오D 하이커 패디드 메탈릭 트레이너 실버" is the only metallic one
+    fitflop sells, so nothing groups it and nothing told the page that 실버
+    is its colour: the card carried the shade in its title and drew a chip
+    with no label. A colour at the end of a title is a colour whether or not
+    a second listing exists to prove it.
+
+    Only a trailing run of colour words is taken, never more than three
+    tokens, and never when what is left would be too short to name a model.
+    """
+    read = 0
+    for item in items:
+        if (item.get('colorway') or '').strip():
+            continue
+        parts = tokens(name_without_code(item))
+        size = len(parts)
+        while size > 0 and len(parts) - size < MAX_TAIL_COLOUR_TOKENS:
+            token = parts[size - 1]
+            if is_colour_token(token) or is_shade_modifier(token):
+                size -= 1
+                continue
+            if (size < len(parts) and MODEL_TOKEN.match(PUNCT.sub('', token.lower()))
+                    and size > 1 and is_colour_token(parts[size - 2])):
+                size -= 1
+                continue
+            break
+        tail = parts[size:]
+        if not tail or not long_enough(' '.join(parts[:size])):
+            # Nothing at the end, or the end is all there is. A bracket may
+            # still hold it: "스무디 슬립온 (BLACK)".
+            bracketed = BRACKETED.findall(model_title(item))
+            inner = colour_from_remainder(bracketed[-1]) if bracketed else ''
+            if inner and long_enough(BRACKETED.sub(' ', model_title(item)).strip()):
+                item['colorway'] = inner
+                item['colorwayFrom'] = 'own-name-tail'
+                read += 1
+            continue
+        if not any(is_colour_token(t) for t in tail):
+            continue
+        item['colorway'] = ' '.join(tail)
+        item['colorwayFrom'] = 'own-name-tail'
+        read += 1
+    return read
 
 
 def join_leftovers(by_brand, status):
