@@ -67,6 +67,44 @@ jobs:
         run: python scripts/monthly/build_colour_words.py
       - name: Run offline retail/newsletter tests before publishing
         run: python -m unittest discover -s tests -p 'test_monthly_*.py' -v
+      # Written after both Sunday collections have published, so the figures
+      # are the week's final ones rather than a half-finished run's.
+      - name: Write the weekly briefing
+        if: always()
+        run: npm run briefing
+      - name: Email the weekly briefing
+        id: briefing
+        if: always()
+        continue-on-error: true
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER || 'smtp.gmail.com' }}
+          server_port: ${{ secrets.MAIL_PORT || 465 }}
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: SHOES Research
+          to: rlapwls39@fnfcorp.com
+          subject: "[SHOES] 주간 브리핑 · ${{ github.event.repository.updated_at }}"
+          html_body: file://logs/weekly-briefing.html
+          body: file://logs/weekly-briefing.txt
+          attachments: logs/weekly-briefing.json
+      - name: Say so when the briefing could not be sent
+        if: always() && steps.briefing.outcome != 'success'
+        run: |
+          echo '주간 브리핑을 만들었지만 메일로 보내지 못했습니다. MAIL_USERNAME / MAIL_PASSWORD 시크릿이 필요합니다.' >> "$GITHUB_STEP_SUMMARY"
+          echo '브리핑 본문은 이 실행의 아티팩트(weekly-briefing)에 들어 있습니다.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Keep the briefing as an artifact either way
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-briefing-${{ github.run_id }}
+          path: |
+            logs/weekly-briefing.html
+            logs/weekly-briefing.txt
+            logs/weekly-briefing.json
+          if-no-files-found: ignore
+          retention-days: 30
       - name: Publish weekly snapshot via existing Cloudflare Git integration
         run: |
           git config user.name 'Shoes Dashboard Bot'
@@ -74,7 +112,7 @@ jobs:
           # image-signals.json is the photo-analysis cache and
           # model-first-listed.json is the re-release index: both only work
           # if they survive between runs, so they are committed too.
-          git add config/colour-words.json data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json data/trend-history.csv data/image-signals.json data/model-first-listed.json config/trend-seed-hashtags.json public/data/monthly-catalog.json public/data/trend-keywords.json
+          git add config/colour-words.json data/collection-history.json data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json data/trend-history.csv data/image-signals.json data/model-first-listed.json config/trend-seed-hashtags.json public/data/monthly-catalog.json public/data/trend-keywords.json
           if ! git diff --cached --quiet; then
             git commit -m "weekly retail/newsletter shoes update $(date -u +%F)"
             # See weekly-update.yml: main can move during a long collection,

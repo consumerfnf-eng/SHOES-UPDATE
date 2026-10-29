@@ -11,6 +11,7 @@
     "photos": "node scripts/cache-product-photos.mjs",
     "colors": "python scripts/photo_body_colors.py",
     "audit": "node scripts/audit-duplicates.mjs",
+    "briefing": "node scripts/weekly-briefing.mjs",
     "archive": "node scripts/archive-expired.mjs",
     "build": "node scripts/validate_catalog.mjs && node scripts/build.mjs",
     "test": "node --test tests/*.test.mjs",
