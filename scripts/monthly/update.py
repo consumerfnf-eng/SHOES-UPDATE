@@ -42,8 +42,9 @@ import subprocess
 import sys
 
 from brand_identity import canonical_brand
-from footwear_scope import is_stated_value
+from footwear_scope import clean_colour_value, is_stated_value
 from image_signals import colour_distance, signals_for
+from model_grouping import assign_model_groups
 from common import atomic_write_json, derive_colorway, kst_day, kst_iso_week, kst_now, kst_three_months_ago, read_json
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -244,9 +245,12 @@ def normalize_retail_item(item, basis, previous, now, is_baseline):
         item['brand'] = canonical
     if not item.get('style'):
         item['style'] = item.get('sku', '')
-    # A retailer is allowed to answer a required colour field with "상세내용참고";
-    # that states nothing and must not reach a colour chip as a label.
-    if not is_stated_value(item.get('colorway')):
+    # A retailer is allowed to answer a required colour field with "상세내용참고",
+    # with its own internal codes, or with a colour followed by a paragraph of
+    # standing notice. None of that belongs on a chip, so the field is cleaned
+    # down to whatever colour it actually states before anything else reads it.
+    item['colorway'] = clean_colour_value(item.get('colorway'))
+    if not item['colorway']:
         item['colorway'] = derive_colorway(item.get('fullName') or item.get('name', ''))
     for field in ('material', 'countryOrigin'):
         if item.get(field) and not is_stated_value(item[field]):
@@ -567,6 +571,13 @@ def main():
     published_retail = drop_duplicate_photos(published_retail, photo_status)
     published_newsletter = drop_duplicate_photos(published_newsletter, photo_status)
 
+    # Colourways a retailer only ever wrote into the product name, so the
+    # four shades of one slip-on become one card with four chips instead of
+    # four cards. Retail only: a newsletter item is an article, and two
+    # articles about one shoe are two pieces of writing, not two colours.
+    grouping_status = {'step': 'model grouping'}
+    assign_model_groups(published_retail, grouping_status)
+
     atomic_write_json(os.path.join(DATA, 'monthly-catalog-source.json'), {
         'lastRunAt': now.isoformat(),
         'lastRunWeek': kst_iso_week(now),
@@ -633,6 +644,7 @@ def main():
         'baselineSources': sorted(baseline_sources),
         'carriedForward': carried_sources,
         'photoSignals': photo_status,
+        'modelGrouping': grouping_status,
         'rereleasesExcluded': rereleases,
         'modelsIndexed': len(model_index),
         'publishedRetail': len(published_retail),

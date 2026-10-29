@@ -112,12 +112,12 @@ SNEAKER_EXCLUDE = re.compile(
 # strips client-side for the color chips, mirrored here so the stored JSON
 # itself carries a colorway field consistent with the official catalog's
 # shape, instead of leaving it to be re-derived in the browser every time.
-_COLOR_WORDS = ['black', 'white', 'red', 'blue', 'green', 'grey', 'gray', 'tan', 'brown', 'pink', 'navy',
+COLOR_WORDS = ['off-white', 'off white', 'black', 'white', 'red', 'blue', 'green', 'grey', 'gray', 'tan', 'brown', 'pink', 'navy',
                 'beige', 'cream', 'yellow', 'orange', 'purple', 'silver', 'gold', 'multicolor', 'burgundy',
                 'khaki', 'ivory', 'olive', 'maroon', 'charcoal', 'taupe', 'rust', 'mint', 'lilac', 'coral',
                 'teal', 'camel']
 COLOR_PREFIX = re.compile(
-    r'^(?:' + '|'.join(_COLOR_WORDS) + r')(?:\s*(?:&|,|/)\s*(?:' + '|'.join(_COLOR_WORDS) + r'))*\s+', re.I)
+    r'^(?:' + '|'.join(COLOR_WORDS) + r')(?:\s*(?:&|,|/)\s*(?:' + '|'.join(COLOR_WORDS) + r'))*\s+', re.I)
 
 
 def derive_colorway(name):

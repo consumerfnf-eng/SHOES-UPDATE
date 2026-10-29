@@ -92,7 +92,12 @@ MAX_CANDIDATES = 20
 # still collected as seeds because their related_keywords are where new
 # candidates come from.
 NON_TREND_TAGS = {'sneakers', 'sneakerhead', 'sneakerstyle', '신발추천',
-                  'shoes', 'shoesaddict', 'shoestagram', '신발', '신발스타그램'}
+                  'shoes', 'shoesaddict', 'shoestagram', '신발', '신발스타그램',
+                  # "a shoe was released" is true of every item here, so these
+                  # rank high on volume and say nothing about which shoe.
+                  'sneakerrelease', 'sneakernews', 'newrelease', 'kicks',
+                  'kicksonfire', 'shoegame', 'sneakercommunity', 'sneakerlove',
+                  '신상', '신상스니커즈', '운동화추천', '데일리슈즈', '신발스타그램'}
 MIN_GROWTH_GAP_DAYS = 5
 TARGET_GAP_DAYS = 7
 

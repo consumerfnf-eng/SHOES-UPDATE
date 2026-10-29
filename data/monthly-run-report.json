@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-29T10:31:47.105531+09:00",
+  "checkedAt": "2026-10-29T13:21:21.242657+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -442,16 +442,24 @@
   "carriedForward": {},
   "photoSignals": {
     "step": "photo signals",
-    "requested": 616,
-    "cached": 3536,
+    "requested": 0,
+    "new": 0,
+    "rereadForVersion": 0,
+    "cached": 4152,
     "readable": 4152,
+    "stillOnOldVersion": 10,
     "failures": {},
     "duplicatePhotosMerged": 137
   },
-  "rereleasesExcluded": 264,
-  "modelsIndexed": 7125,
-  "publishedRetail": 3399,
+  "modelGrouping": {
+    "step": "model grouping",
+    "modelGroupsAssigned": 562,
+    "colourwaysRecoveredFromName": 242
+  },
+  "rereleasesExcluded": 274,
+  "modelsIndexed": 7177,
+  "publishedRetail": 3389,
   "publishedNewsletter": 620,
   "retailCollected": 19022,
-  "heldOutsideWindow": 15623
+  "heldOutsideWindow": 15633
 }

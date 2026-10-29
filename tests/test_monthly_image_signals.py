@@ -89,6 +89,54 @@ class PhotoHashTests(unittest.TestCase):
         self.assertEqual(hamming(None, None), 64)
 
 
+@unittest.skipIf(Image is None, 'Pillow is not installed')
+class StudioBackdropTests(unittest.TestCase):
+    """The two shapes of product shot that returned no colour at all."""
+
+    def assertClose(self, got, expected, tolerance=40):
+        self.assertLessEqual(colour_distance(got, expected), tolerance, f'{got} vs {expected}')
+
+    @staticmethod
+    def padded(rgb, size=200, shoe=(0.5, 0.78), outline=(170, 170, 170)):
+        """A shoe low in a tall white frame, as SSENSE's `c_lpad,g_south` pads
+        every photo, with the faint contour a real photograph has."""
+        img = Image.new('RGB', (size, size), (255, 255, 255))
+        top, bottom = int(size * shoe[0]), int(size * shoe[1])
+        for x in range(10, size - 10):
+            for y in range(top, bottom):
+                edge = x < 13 or x >= size - 13 or y < top + 3 or y >= bottom - 3
+                img.putpixel((x, y), outline if edge else rgb)
+        return img
+
+    def test_a_white_shoe_is_not_mistaken_for_the_white_studio_sweep(self):
+        # The whole point: every one of SSENSE's white sneakers came back with
+        # no colour, because a fixed brightness cutoff called the shoe
+        # background. 136 photos read a hash but no colour; this is them.
+        self.assertClose(body_colour(self.padded((246, 246, 246))), '#f6f6f6', 30)
+
+    def test_a_shoe_low_in_a_padded_frame_is_still_found(self):
+        # A centre crop of this frame is almost entirely canvas.
+        self.assertClose(body_colour(self.padded((150, 60, 50), shoe=(0.62, 0.9))), '#963c32')
+
+    def test_a_coloured_backdrop_is_removed_as_readily_as_a_white_one(self):
+        img = Image.new('RGB', (200, 200), (210, 230, 240))
+        for x in range(60, 140):
+            for y in range(60, 140):
+                img.putpixel((x, y), (40, 120, 60))
+        self.assertClose(body_colour(img), '#28783c')
+
+    def test_a_photo_with_no_backdrop_still_reads_its_subject(self):
+        # Nothing uniform around the edge: the centre-crop rule still applies.
+        noisy = Image.new('RGB', (200, 200))
+        for x in range(200):
+            for y in range(200):
+                noisy.putpixel((x, y), ((x * 7) % 256, (y * 11) % 256, (x + y) % 256))
+        for x in range(70, 130):
+            for y in range(70, 130):
+                noisy.putpixel((x, y), (30, 30, 150))
+        self.assertTrue(body_colour(noisy).startswith('#'))
+
+
 class ColourDistanceTests(unittest.TestCase):
     def test_identical_colours_are_zero_apart(self):
         self.assertEqual(colour_distance('#102030', '#102030'), 0)

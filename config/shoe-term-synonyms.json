@@ -295,6 +295,28 @@
       "mens",
       "womens",
       "unisex"
+    ],
+    [
+      "릴리즈",
+      "release",
+      "sneakerrelease",
+      "newrelease",
+      "출시",
+      "발매",
+      "드롭",
+      "drop",
+      "restock",
+      "재입고"
+    ],
+    [
+      "뉴스",
+      "news",
+      "sneakernews",
+      "kicks",
+      "kicksonfire",
+      "shoegame",
+      "collection",
+      "컬렉션"
     ]
   ]
 }

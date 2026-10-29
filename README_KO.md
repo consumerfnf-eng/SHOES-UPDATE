@@ -111,7 +111,7 @@ npm run build
 npm run archive
 ```
 
-`npm run weekly`는 실제 전체 수집, `npm run keywords`는 상품·Signals·전체 수집시각을 보존하는 키워드만 갱신, `npm run daily`는 수집 없이 기한 점검, `npm run archive`는 기본 모의 실행입니다. 키워드 갱신은 Google Sheets를 호출하지 않습니다. Windows Edge를 사용할 때는 `PLAYWRIGHT_CHANNEL=msedge`를 설정할 수 있습니다.
+`npm run weekly`는 실제 전체 수집, `npm run keywords`는 상품·Signals·전체 수집시각을 보존하는 키워드만 갱신, `npm run daily`는 수집 없이 기한 점검, `npm run archive`는 기본 모의 실행입니다. `npm run colors`는 `npm run photos`가 받아 둔 **로컬 캐시 사진**에서 상품별 신발 몸통 색을 읽어 `public/data/catalog.json`의 `bodyColor`에 채웁니다. 네트워크를 쓰지 않으며, 리뷰어가 기록한 `colorSwatches` hex나 색상명이 있으면 그쪽이 우선이고 이 값은 둘 다 없을 때만 컬러칩이 됩니다 (루이비통·발렌시아가처럼 색을 아예 표기하지 않는 46개 상품이 여기에 해당합니다). 키워드 갱신은 Google Sheets를 호출하지 않습니다. Windows Edge를 사용할 때는 `PLAYWRIGHT_CHANNEL=msedge`를 설정할 수 있습니다.
 
 UI 테스트는 Windows에서 설치된 Chrome을 기본 사용하며 `UI_BROWSER_CHANNEL=msedge`로 Edge를 지정할 수 있습니다. Linux CI는 설치된 Playwright Chromium을 사용합니다. 테스트용 상품은 별도 로컬 서버에서만 응답하고 공개 데이터에 기록하지 않습니다. 실제 Safari/iOS 검증은 별도로 필요합니다.
 

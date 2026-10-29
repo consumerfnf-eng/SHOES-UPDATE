@@ -161,7 +161,9 @@ export function filterProducts(products, state, today = kstToday()) {
 }
 import {calendarShift,validCalendarDay,releaseWindow,releaseState as windowState,releaseSortKey} from './release-window.mjs';
 export {releaseWindow,releaseSortKey};
-const trimModelSeparators = value => value.replace(/\s+/g,' ').replace(/[\s|·—–-]+$/u,'').trim();
+// A comma is a separator too: Musinsa writes "어반트렉 메시 Ver. 3, 버건디",
+// and lifting the colour off the end leaves the comma behind.
+const trimModelSeparators = value => value.replace(/\s+/g,' ').replace(/[\s|·—–,/-]+$/u,'').trim();
 const audienceLabel = "(?:men(?:['’]s|s)?|women(?:['’]s|s)?|unisex|남성(?:용)?|여성(?:용)?|남녀공용)";
 function withoutAudienceLabel(value) {
   // Only audience labels at the edges or immediately before a footwear suffix
@@ -174,6 +176,10 @@ function withoutAudienceLabel(value) {
 // Same-model colorways share one grid card even when feeds assign separate
 // modelKeys to colors or genders. Grouping never mutates source records.
 export function variantGroupName(p) {
+  // When the collection step resolved this listing to a model, that name is
+  // the card's name. It is the only one that is right for a card standing
+  // for four colourways: every listing's own name ends in its own shade.
+  if (p?.modelName) return withoutAudienceLabel(trimModelSeparators(p.modelName));
   if (!p?.name) return p?.modelKey || p?.id || '';
   let base = String(p.name);
   const colors = [p.colorway, ...(p.colors || []).map(c => typeof c === 'string' ? c : c?.name)].filter(Boolean)
@@ -188,6 +194,11 @@ export function variantGroupKey(p) {
   // merged 42 separate Footwear News pieces into one "Michael Jordan" card,
   // because the publisher's tag is the model name. One article, one card.
   if (isOverlay(p) && overlayKind(p) === 'newsletter') return `article|${p.id}`;
+  // The collection pipeline resolved this listing to a model by reading the
+  // colour out of its name - "OLLA 양털슬립온 실브라운" and "OLLA 양털슬립온
+  // 초콜릿" are one shoe. Nothing in the record says 실브라운 is a colour, so
+  // that answer cannot be re-derived here; it is used as given.
+  if (p.modelGroupId) return `model|${p.modelGroupId}`;
   if (!p?.name) return p?.modelKey || p?.id;
   const normalize = value => String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'');
   const name = variantGroupName(p);
@@ -195,14 +206,58 @@ export function variantGroupKey(p) {
   // "Trail", "LITE-SHOW", "GTX", "Waterproof", etc. remain model identity.
   const model = trimModelSeparators(name.replace(/\s+(?:running\s+)?(?:shoes?|sneakers?)$/i,''));
   const normalized = normalize(model || name);
+  // A listing whose whole name is its brand states no model, so it has
+  // nothing to be grouped by: 29CM returns twelve different NEPA shoes all
+  // named "네파", and keyed on the name alone they became one card holding
+  // twelve unrelated products. Each stands on its own instead.
+  if (normalized && [p.brand, p.brandKo, p.brandAsListed].some(b => b && normalize(b) === normalized))
+    return `unnamed|${p.id}`;
   return `${normalize(p.brand)}|${normalized || normalize(p.modelKey) || normalize(p.id)}`;
 }
+// Named colours are an approximate navigation aid; the official photo stays
+// the colour reference. Shared by the chips and by the colour-field cleaning
+// below, which needs to know whether "BLACK" is a word or a product code.
+const COLOR_HEX={black:'#242424',white:'#f7f7f2',ivory:'#eee9d8',cream:'#ece1c6',beige:'#c9b89e',butter:'#eddf9d',brown:'#70472f',chocolate:'#493329',burgundy:'#632a39',oxblood:'#581f2c',red:'#cf303a',navy:'#27374d',blue:'#4479ad',green:'#53745c',sage:'#a5ad8d',silver:'#bac0c5',grey:'#989ba0',gray:'#989ba0',pink:'#e4a9bb',orange:'#e17a31',yellow:'#e6c953',violet:'#a69bb4',purple:'#866799',sand:'#cbbb9d',peanut:'#ac865e',angora:'#e8dfcd',meteorite:'#45474a',pumpernickel:'#504137',bayberry:'#55624c',turtledove:'#c8c4b5',morel:'#988b79',cocoa:'#795e50',walnut:'#796252',cortado:'#a6886b',khaki:'#9b8b5e',taupe:'#8a7968',olive:'#6e7446',charcoal:'#3a3b3c',gold:'#b99746',tan:'#c8a165',camel:'#b08457',rust:'#9a4a29',mint:'#a7d8c4',lilac:'#c7b3d9',coral:'#e8836b',teal:'#2f7d78',maroon:'#5c1a24',multicolor:'#8f8f8f',denim:'#3f5c84',stone:'#b7b2a8',bone:'#e4ded0',sail:'#efeade',gum:'#b98a52',블랙:'#242424',화이트:'#f7f7f2',그레이:'#989ba0',블루:'#4479ad',브라운:'#70472f',베이지:'#c9b89e',실버:'#bac0c5',핑크:'#e4a9bb',네이비:'#27374d',레드:'#cf303a',그린:'#53745c',옐로우:'#e6c953',퍼플:'#866799',오렌지:'#e17a31',골드:'#b99746',크림:'#ece1c6',아이보리:'#eee9d8',카키:'#9b8b5e',버건디:'#632a39',민트:'#a7d8c4',차콜:'#3a3b3c',올리브:'#6e7446',와인:'#632a39',모카:'#795e50',검정:'#242424',검:'#242424',흰색:'#f7f7f2',회색:'#989ba0',파랑:'#4479ad',초록:'#53745c',노랑:'#e6c953',빨강:'#cf303a',보라:'#866799',연청:'#8fb0d6',진청:'#27374d',탄:'#c8a165'};
+// The same shade, written in two languages. Musinsa lists OLLA's slip-on as
+// 히커리 II and 29CM lists the identical shoe as HICKORY II; without this
+// one colourway draws two chips on the one card.
+const COLOR_SYNONYM={블랙:'black',검정:'black',검:'black',화이트:'white',흰색:'white',오프화이트:'offwhite',아이보리:'ivory',크림:'cream',그레이:'grey',회색:'grey',차콜:'charcoal',실버:'silver',블루:'blue',파랑:'blue',네이비:'navy',진청:'navy',연청:'denim',데님:'denim',레드:'red',빨강:'red',와인:'wine',버건디:'burgundy',마룬:'maroon',핑크:'pink',코랄:'coral',오렌지:'orange',옐로우:'yellow',노랑:'yellow',그린:'green',초록:'green',올리브:'olive',카키:'khaki',세이지:'sage',민트:'mint',퍼플:'purple',보라:'purple',바이올렛:'violet',라벤더:'lavender',라일락:'lilac',브라운:'brown',실브라운:'sealbrown',초콜릿:'chocolate',초콜렛:'chocolate',모카:'mocha',커피:'coffee',코냑:'cognac',카멜:'camel',탄:'tan',베이지:'beige',샌드:'sand',스톤:'stone',토프:'taupe',그레이지:'greige',누드:'nude',라떼:'latte',오트밀:'oatmeal',머스타드:'mustard',골드:'gold',브론즈:'bronze',퓨터:'pewter',히커리:'hickory',체스트넛:'chestnut',테라코타:'terracotta',브릭:'brick',러스트:'rust',피치:'peach',살구:'apricot',터콰이즈:'turquoise',틸:'teal',멀티컬러:'multicolor',메탈릭:'metallic',펄:'pearl'};
+export function colorHex(word){
+  const key=String(word||'').normalize('NFKC').toLowerCase().replace(/[^a-z가-힣]/g,'');
+  return COLOR_HEX[key]||COLOR_HEX[COLOR_SYNONYM[key]||'']||'';
+}
+// One colourway's canonical spelling: each recognised word folded to its
+// English name, the rest kept as written, so two labels agree only when they
+// genuinely name the same colours.
+export function canonicalColorKey(label){
+  const words=String(label||'').normalize('NFKC').toLowerCase().split(/[^a-z0-9가-힣]+/).filter(Boolean)
+    .map(word=>COLOR_SYNONYM[word]||word);
+  // Joined without separators: Korean writes a two-word shade as one token
+  // (실브라운) where English spaces it ("Seal Brown"), and the two are the
+  // same colour. Order is kept - "black/white" and "white/black" name a
+  // different upper and sole, and are not interchangeable.
+  return words.join('');
+}
+
 // A retailer may answer a required colour field by pointing at the images.
 // "상세내용참고" is not a colour and must not reach a chip label.
-const COLOR_PLACEHOLDER=/^(?:상세\s*(?:페이지|이미지|내용|정보|설명)?\s*(?:참조|참고|확인)?|상품\s*(?:상세|tag)?\s*참고|별도\s*표기|해당\s*없음|없음|기타|n\/?a|-{1,3})$/i;
+const COLOR_PLACEHOLDER=/^(?:상세\s*(?:페이지|이미지|내용|정보|설명)?\s*(?:참조|참고|확인)?|상품\s*(?:상세|tag)?\s*참고|설명\s*페이지\s*(?:참조|참고)?|상세피이지\s*(?:참조|참고)?|맨발신발|별도\s*표기|해당\s*없음|없음|기타|n\/?a|-{1,3})$/i;
+// The seller's standing notice, pasted in after the answer: 29CM appends
+// "(입고 시기에 따라 정보가 상이할 수 있어...)" and Musinsa "(선택되지 않는
+// 색상은...)". The colour in front of it is real, so the notice is cut.
+const SELLER_NOTICE=/[(\[]\s*[^)\]]*(?:입고\s*시기|색상은|판매하지|품절|라벨을\s*참고|상이할\s*수\s*있)[^)\]]*[)\]]/g;
+const AUDIENCE_TAG=/[(\[]\s*(?:남성|여성|남녀|공용|유니섹스)\s*용?\s*[)\]]/g;
+// "BGD0,BLK0,WHGY" is the retailer's internal colour codes; "BLACK, WHITE"
+// is the same shape and says plenty, so a recognised name decides.
+const CODE_LIST=/^[A-Z0-9]{2,6}(?:\s*[,/]\s*[A-Z0-9]{2,6})*$/;
+// 29CM pins its own code to each colour name: "CHARCOAL(B02)", "(19)BLACK".
+const INLINE_CODE=/[([]\s*[A-Za-z]{0,3}\d{1,4}[A-Za-z]{0,2}\s*[)\]]/g;
 export function variantColorLabel(p){
-  const color=String(p.colorway||'').trim();
+  const color=String(p.colorway||'').replace(SELLER_NOTICE,' ').replace(AUDIENCE_TAG,' ')
+    .replace(INLINE_CODE,' ').replace(/\s*,\s*/g,', ')
+    .replace(/\s{2,}/g,' ').replace(/^[\s,/|-]+|[\s,/|-]+$/g,'');
   if(!color||COLOR_PLACEHOLDER.test(color))return '';
+  if(CODE_LIST.test(color)&&!color.split(/[,/]/).some(part=>colorHex(part.trim())))return '';
   return !/(?:https?:|!\[|^image\s*\d+$|^(?:women|men)\s*\||^sneakers?\s*[·|]|미표기)/i.test(color)?color:'';
 }
 // Plain RGB distance between two #rrggbb values, or a large number when
@@ -223,7 +278,10 @@ export function uniqueColorVariants(group,activeId){
   const seen=new Map();
   const unnamed=[];
   for(const p of group){
-    const color=variantColorLabel(p).normalize('NFKC').toLowerCase().replace(/\s*[/|,·]\s*/g,'/').replace(/\s+/g,' ').trim();
+    // Folded to one spelling first: Musinsa writes 히커리 II where 29CM writes
+    // HICKORY II for the identical shoe, and two chips for one colourway is
+    // exactly the duplication the card exists to remove.
+    const color=canonicalColorKey(variantColorLabel(p));
     if(color){
       const key=`color:${color}`;
       if(!seen.has(key)||p.id===activeId)seen.set(key,p);
@@ -286,11 +344,10 @@ export function preferWomenVariants(products) {
 // color reference. Unknown names use a neutral patterned chip, never a guess.
 export function colorSwatch(product) {
   const reviewed=product.colorSwatches?.filter(c=>/^#[0-9a-f]{6}$/i.test(c))||[];
-  const palette={black:'#242424',white:'#f7f7f2',ivory:'#eee9d8',cream:'#ece1c6',beige:'#c9b89e',butter:'#eddf9d',brown:'#70472f',chocolate:'#493329',burgundy:'#632a39',oxblood:'#581f2c',red:'#cf303a',navy:'#27374d',blue:'#4479ad',green:'#53745c',sage:'#a5ad8d',silver:'#bac0c5',grey:'#989ba0',gray:'#989ba0',pink:'#e4a9bb',orange:'#e17a31',yellow:'#e6c953',violet:'#a69bb4',purple:'#866799',sand:'#cbbb9d',peanut:'#ac865e',angora:'#e8dfcd',meteorite:'#45474a',pumpernickel:'#504137',bayberry:'#55624c',turtledove:'#c8c4b5',morel:'#988b79',cocoa:'#795e50',walnut:'#796252',cortado:'#a6886b',khaki:'#9b8b5e',taupe:'#8a7968',olive:'#6e7446',charcoal:'#3a3b3c',gold:'#b99746',tan:'#c8a165',camel:'#b08457',rust:'#9a4a29',mint:'#a7d8c4',lilac:'#c7b3d9',coral:'#e8836b',teal:'#2f7d78',maroon:'#5c1a24',multicolor:'#8f8f8f',denim:'#3f5c84',stone:'#b7b2a8',bone:'#e4ded0',sail:'#efeade',gum:'#b98a52',블랙:'#242424',화이트:'#f7f7f2',그레이:'#989ba0',블루:'#4479ad',브라운:'#70472f',베이지:'#c9b89e',실버:'#bac0c5',핑크:'#e4a9bb',네이비:'#27374d',레드:'#cf303a',그린:'#53745c',옐로우:'#e6c953',퍼플:'#866799',오렌지:'#e17a31',골드:'#b99746',크림:'#ece1c6',아이보리:'#eee9d8',카키:'#9b8b5e',버건디:'#632a39',민트:'#a7d8c4',차콜:'#3a3b3c',올리브:'#6e7446',와인:'#632a39',모카:'#795e50',검정:'#242424',검:'#242424',흰색:'#f7f7f2',회색:'#989ba0',파랑:'#4479ad',초록:'#53745c',노랑:'#e6c953',빨강:'#cf303a',보라:'#866799',연청:'#8fb0d6',진청:'#27374d',탄:'#c8a165'};
   // Order of trust: a hex the retailer itself declared, then the colour read
   // off the product photo, then a recognised colour word, then nothing -
   // a neutral pattern rather than a guessed colour.
-  const named=[...new Set((product.colorway||'').toLowerCase().split(/[^a-z가-힣]+/).map(word=>palette[word]).filter(Boolean))].slice(0,3);
+  const named=[...new Set((product.colorway||'').split(/[^a-z가-힣]+/i).map(colorHex).filter(Boolean))].slice(0,3);
   const colors=reviewed.length?reviewed:(named.length?named:(HEX6.test(product.bodyColor||'')?[product.bodyColor]:[]));
   if(!colors.length)return 'repeating-linear-gradient(45deg,#eee 0 4px,#bbb 4px 8px)';
   return colors.length===1?colors[0]:`linear-gradient(135deg,${colors.map((c,i)=>`${c} ${Math.round(i/colors.length*100)}% ${Math.round((i+1)/colors.length*100)}%`).join(',')})`;

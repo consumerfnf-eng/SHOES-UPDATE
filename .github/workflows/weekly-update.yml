@@ -30,6 +30,12 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # Only the image reader, not the whole collection stack: this job runs
+      # one Python step and it reads already-cached files off the disk.
+      - run: python -m pip install 'Pillow>=10,<14'
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - name: Collect and verify complete weekly snapshot
@@ -45,6 +51,8 @@ jobs:
           fi
       - name: Cache verified official photos before publication
         run: npm run photos
+      - name: Read each product's colour off its own cached photo
+        run: npm run colors
       - name: Validate snapshot before archive writes
         run: npm run build
       - name: Append eligible expired products to existing archive sheets

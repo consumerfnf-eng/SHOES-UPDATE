@@ -13,6 +13,10 @@ than guessing a category, mirroring the main catalog's evidence gates.
 """
 import re
 
+from common import COLOR_WORDS
+
+COLOUR_NAMES = set(COLOR_WORDS)
+
 # --- hard exclusions -------------------------------------------------------
 # Checked before any inclusion rule: these words describe the shoe's own
 # construction, so a "platform loafer" is a loafer, not a platform sneaker.
@@ -155,7 +159,52 @@ def split_ko_listing_title(name):
 # colourway or a material - "상세내용참고" was reaching the colour chips.
 PLACEHOLDER_VALUE = re.compile(
     r'^(?:상세\s*(?:페이지|이미지|내용|정보|설명)?\s*(?:참조|참고|확인)?|상품\s*(?:상세|tag)?\s*참고|'
+    r'설명\s*페이지\s*(?:참조|참고)?|상세피이지\s*(?:참조|참고)?|맨발신발|'
     r'별도\s*표기|해당\s*없음|없음|기타|n/?a|-{1,3}|\.*)$', re.I)
+
+# A seller's standing notice, pasted into the colour field after the answer:
+# 29CM appends "(입고 시기에 따라 정보가 상이할 수 있어...)" and Musinsa
+# "(선택되지 않는 색상은 판매하지 않거나 품절인 상품입니다)". The colour in
+# front of it is real, so the notice is cut rather than the whole value
+# thrown away - and when nothing but the notice was there, nothing is left.
+SELLER_NOTICE = re.compile(
+    r'[\(\[]\s*[^\)\]]*(?:입고\s*시기|색상은|판매하지|품절|라벨을\s*참고|상이할\s*수\s*있)[^\)\]]*[\)\]]')
+# An audience tag is not a colour: Musinsa answers the colour field with
+# "맨발신발 [남성용]" on a shoe sold in a men's and a women's listing.
+AUDIENCE_TAG = re.compile(r'[\(\[]\s*(?:남성|여성|남녀|공용|유니섹스)\s*용?\s*[\)\]]')
+# "BGD0,BLK0,WHGY" and "BLK0,DKBL,WHBR" are a retailer's internal colour
+# codes. They identify nothing a reader can see, and as a chip label they
+# are noise - but "BLACK, WHITE" is the same shape and says plenty, so a
+# recognised colour name in the list is what tells the two apart.
+CODE_TOKEN = re.compile(r'^[A-Z0-9]{2,6}$')
+
+
+def is_opaque_codes(text):
+    parts = [p.strip() for p in re.split(r'[,/]', text) if p.strip()]
+    if not parts or not all(CODE_TOKEN.match(p) for p in parts):
+        return False
+    if any(p.lower() in COLOUR_NAMES for p in parts):
+        return False
+    # A single code has to look like one; two or more never read as colours.
+    return len(parts) > 1 or any(c.isdigit() for c in parts[0])
+
+
+# 29CM pins its own code to each colour name: "CHARCOAL(B02),DARK KHAKI(B65)"
+# and "(19)BLACK". The name is the answer; the code only stops that name
+# matching the same colour written plainly somewhere else.
+INLINE_CODE = re.compile(r'[\(\[]\s*[A-Za-z]{0,3}\d{1,4}[A-Za-z]{0,2}\s*[\)\]]')
+
+
+def clean_colour_value(value):
+    """The colour a retailer stated, with its boilerplate cut off, or ''."""
+    text = SELLER_NOTICE.sub(' ', (value or '').strip())
+    text = AUDIENCE_TAG.sub(' ', text)
+    text = INLINE_CODE.sub(' ', text)
+    text = re.sub(r'\s*,\s*', ', ', text)
+    text = re.sub(r'\s{2,}', ' ', text).strip(' ,/|-')
+    if not text or not is_stated_value(text) or is_opaque_codes(text):
+        return ''
+    return text
 
 
 def is_stated_value(value):

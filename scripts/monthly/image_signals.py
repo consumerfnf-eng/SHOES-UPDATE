@@ -16,8 +16,8 @@ Two signals per photo
          real change of angle - nothing cheap does - so it is used only to
          merge photos that really are the same shot.
 
-`body`   The dominant colour of the shoe itself: the frame is cropped to the
-         middle, the near-white studio background and near-black shadow are
+`body`   The dominant colour of the shoe itself: the studio backdrop is
+         flood-filled away from the frame's border, near-black shadow is
          discarded, and the most common remaining colour bucket wins. Two
          angles of one shoe agree on this even when their hashes do not,
          which is what lets the colour chips merge them.
@@ -29,7 +29,7 @@ signals rather than invented ones.
 import json
 import os
 import re
-from collections import Counter
+from collections import Counter, deque
 from concurrent.futures import ThreadPoolExecutor
 from io import BytesIO
 
@@ -104,10 +104,71 @@ def hamming(a, b):
 
 SATURATED_MIN = 0.22          # below this a pixel reads as black/white/grey
 SATURATED_SHARE = 0.07        # a shoe is "a colour" once this much of it is
+BORDER = 2                    # the ring of pixels the backdrop is measured from
+CANVAS_TOLERANCE = 10         # this close to the measured backdrop is backdrop
+CANVAS_MIN_SHARE = 0.45       # below this the border is not a studio backdrop
+CANVAS_MAX_SHARE = 0.97       # above this the fill leaked through the subject
 
 
-def body_colour(image):
-    """Dominant colour of the shoe itself, as #rrggbb, or '' if unreadable.
+def _border_indices(size):
+    return [y * size + x for y in range(size) for x in range(size)
+            if x < BORDER or y < BORDER or x >= size - BORDER or y >= size - BORDER]
+
+
+def _is_canvas(pixel, canvas):
+    return (abs(pixel[0] - canvas[0]) <= CANVAS_TOLERANCE
+            and abs(pixel[1] - canvas[1]) <= CANVAS_TOLERANCE
+            and abs(pixel[2] - canvas[2]) <= CANVAS_TOLERANCE)
+
+
+def canvas_colour(pixels, size):
+    """The backdrop this photo was shot on, measured rather than assumed.
+
+    A fixed "anything above 232 is background" cutoff cannot tell a white
+    shoe from a white studio sweep, so it threw the shoe away: every one of
+    SSENSE's white sneakers came back with no colour at all. The commonest
+    colour around the frame's edge is the backdrop by definition; a photo
+    whose border is not mostly one colour has no backdrop to remove.
+    """
+    ring = [pixels[i] for i in _border_indices(size)]
+    if not ring:
+        return None
+    buckets = Counter((p[0] // 8, p[1] // 8, p[2] // 8) for p in ring)
+    bucket, hits = buckets.most_common(1)[0]
+    if hits / len(ring) < CANVAS_MIN_SHARE:
+        return None
+    members = [p for p in ring if (p[0] // 8, p[1] // 8, p[2] // 8) == bucket]
+    return tuple(sum(m[c] for m in members) // len(members) for c in range(3))
+
+
+def canvas_mask(pixels, size, canvas):
+    """Backdrop reachable from the border without crossing the subject.
+
+    Flood-filling inwards rather than testing each pixel on its own is what
+    keeps a white shoe: its lit panels are the same value as the sweep, but
+    they are fenced off from the border by the shoe's own outline, so the
+    fill never reaches them.
+    """
+    filled = bytearray(size * size)
+    queue = deque()
+    for i in _border_indices(size):
+        if not filled[i] and _is_canvas(pixels[i], canvas):
+            filled[i] = 1
+            queue.append(i)
+    while queue:
+        i = queue.popleft()
+        x, y = i % size, i // size
+        for nx, ny in ((x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)):
+            if 0 <= nx < size and 0 <= ny < size:
+                j = ny * size + nx
+                if not filled[j] and _is_canvas(pixels[j], canvas):
+                    filled[j] = 1
+                    queue.append(j)
+    return filled
+
+
+def dominant_colour(subject):
+    """The colour of a set of subject pixels, as #rrggbb, or ''.
 
     Taking the single most common colour does not work: sneaker photos are
     mostly sole, shadow and neutral panels, so a khaki shoe came back black
@@ -116,19 +177,8 @@ def body_colour(image):
     shoe actually has a colour. A genuinely black, white or grey shoe has
     almost none, and falls through to the neutral answer.
     """
-    rgb = image.convert('RGB').resize((SAMPLE, SAMPLE))
-    margin = int(SAMPLE * (1 - CROP) / 2)
-    rgb = rgb.crop((margin, margin, SAMPLE - margin, SAMPLE - margin))
-    raw = rgb.tobytes()
-    pixels = [tuple(raw[i:i + 3]) for i in range(0, len(raw), 3)]
     saturated, neutral = Counter(), Counter()
-    subject = 0
-    for r, g, b in pixels:
-        if r >= BACKGROUND_MIN and g >= BACKGROUND_MIN and b >= BACKGROUND_MIN:
-            continue                      # studio background
-        if r <= SHADOW_MAX and g <= SHADOW_MAX and b <= SHADOW_MAX:
-            continue                      # shadow, not the shoe
-        subject += 1
+    for r, g, b in subject:
         high, low = max(r, g, b), min(r, g, b)
         saturation = 0 if high == 0 else (high - low) / high
         bucket = (r // 20, g // 20, b // 20)
@@ -136,24 +186,71 @@ def body_colour(image):
             saturated[bucket] += 1
         else:
             neutral[bucket] += 1
-    if subject < MIN_COLOUR_PIXELS:
-        return ''
-    pool = saturated if sum(saturated.values()) >= subject * SATURATED_SHARE else neutral
+    pool = saturated if sum(saturated.values()) >= len(subject) * SATURATED_SHARE else neutral
     if not pool:
         pool = saturated or neutral
     if not pool:
         return ''
+    bucket, _ = pool.most_common(1)[0]
     # Average the real pixels in the winning bucket instead of its midpoint,
     # so the answer is a colour that is actually in the photo.
-    (br, bg, bb), _ = pool.most_common(1)[0]
-    members = [(r, g, b) for r, g, b in pixels
-               if (r // 20, g // 20, b // 20) == (br, bg, bb)]
+    members = [p for p in subject if (p[0] // 20, p[1] // 20, p[2] // 20) == bucket]
     if not members:
         return ''
-    r = sum(m[0] for m in members) // len(members)
-    g = sum(m[1] for m in members) // len(members)
-    b = sum(m[2] for m in members) // len(members)
-    return '#%02x%02x%02x' % (r, g, b)
+    return '#%02x%02x%02x' % tuple(sum(m[c] for m in members) // len(members) for c in range(3))
+
+
+def _centre_crop_subject(pixels, size):
+    """The pre-backdrop reading: the middle of the frame, minus white and black.
+
+    Still the right answer for a photo with no studio backdrop - an on-foot
+    or lifestyle shot - where there is nothing to flood-fill away and the
+    subject really is in the middle.
+    """
+    margin = int(size * (1 - CROP) / 2)
+    return [p for p in (pixels[y * size + x]
+                        for y in range(margin, size - margin)
+                        for x in range(margin, size - margin))
+            if not (p[0] >= BACKGROUND_MIN and p[1] >= BACKGROUND_MIN and p[2] >= BACKGROUND_MIN)
+            and not (p[0] <= SHADOW_MAX and p[1] <= SHADOW_MAX and p[2] <= SHADOW_MAX)]
+
+
+def body_colour(image):
+    """Dominant colour of the shoe itself, as #rrggbb, or '' if unreadable.
+
+    The subject is whatever the studio backdrop is not. Cropping to the
+    middle of the frame instead - the previous rule - assumed the shoe is
+    centred and darker than its background, and SSENSE's photos are neither:
+    `b_white,c_lpad,g_south` pads every shot onto a tall white canvas with
+    the shoe sitting along the bottom edge, so the centre crop held almost
+    nothing but canvas, and on a white sneaker what little it did hold was
+    discarded as background too. 136 photos read a hash but no colour; all
+    of them read one now, with the colours of the rest left where they were.
+    """
+    rgb = image.convert('RGB').resize((SAMPLE, SAMPLE))
+    raw = rgb.tobytes()
+    pixels = [tuple(raw[i:i + 3]) for i in range(0, len(raw), 3)]
+
+    canvas = canvas_colour(pixels, SAMPLE)
+    if canvas is None:
+        subject = _centre_crop_subject(pixels, SAMPLE)
+        return dominant_colour(subject) if len(subject) >= MIN_COLOUR_PIXELS else ''
+
+    filled = canvas_mask(pixels, SAMPLE, canvas)
+    if sum(filled) > len(filled) * CANVAS_MAX_SHARE:
+        # The fill escaped through a gap in the subject's outline and ate the
+        # photo. Nothing is left to measure, so fall back rather than invent.
+        subject = _centre_crop_subject(pixels, SAMPLE)
+        return dominant_colour(subject) if len(subject) >= MIN_COLOUR_PIXELS else ''
+
+    lit = [p for i, p in enumerate(pixels) if not filled[i]]
+    subject = [p for p in lit
+               if not (p[0] <= SHADOW_MAX and p[1] <= SHADOW_MAX and p[2] <= SHADOW_MAX)]
+    if len(subject) < MIN_COLOUR_PIXELS:
+        subject = lit                 # an almost-black shoe is still a shoe
+    if len(subject) < MIN_COLOUR_PIXELS:
+        return ''
+    return dominant_colour(subject)
 
 
 def read_image(url):
@@ -169,15 +266,34 @@ def read_image(url):
         return None, type(e).__name__
 
 
+# Bump when the stored signals would come out different for the same photo,
+# so a cached entry written by the previous rule is re-read instead of
+# outliving it. Version 2: the backdrop is flood-filled rather than assumed
+# to be the frame's bright margins.
+SIGNALS_VERSION = 2
+
+
+def _is_current(entry):
+    return bool(entry) and entry.get('v') == SIGNALS_VERSION
+
+
 def signals_for(urls, status=None, budget=None):
     """{url: {'phash': ..., 'body': ...}} for every readable photo.
 
-    Cached by URL, so a weekly run only fetches photos it has not seen.
+    Cached by URL, so a weekly run only fetches photos it has not seen - or
+    ones whose cached answer predates the current reading rule. A stale entry
+    is kept if its re-read fails, so a flaky host costs accuracy, never the
+    duplicate-photo merge that already depends on its hash.
     """
     status = status if status is not None else {}
     cache = read_json(CACHE_FILE, {'images': {}})
     known = cache.get('images', {})
-    wanted = [u for u in dict.fromkeys(urls) if u and u not in known]
+    requested = dict.fromkeys(u for u in urls if u)
+    fresh = [u for u in requested if u not in known]
+    # New photos first: a budget that cannot cover everything should still
+    # leave this week's arrivals with signals.
+    stale = [u for u in requested if u in known and not _is_current(known[u])]
+    wanted = fresh + stale
     if budget is not None:
         wanted = wanted[:budget]
     failures = Counter()
@@ -188,19 +304,27 @@ def signals_for(urls, status=None, budget=None):
             failures[error] += 1
             return url, None
         try:
-            return url, {'phash': dhash(image), 'body': body_colour(image)}
+            return url, {'phash': dhash(image), 'body': body_colour(image), 'v': SIGNALS_VERSION}
         except Exception as e:
             failures[type(e).__name__] += 1
             return url, None
 
+    refreshed = 0
     if wanted:
         with ThreadPoolExecutor(max_workers=CONCURRENCY) as pool:
             for url, value in pool.map(load, wanted):
-                known[url] = value or {}
+                if value is None:
+                    known.setdefault(url, {})
+                    continue
+                refreshed += url in known
+                known[url] = value
     cache['images'] = known
     atomic_write_json(CACHE_FILE, cache)
-    status.update({'requested': len(wanted), 'cached': len(known) - len(wanted),
+    status.update({'requested': len(wanted), 'new': len(fresh[:budget] if budget else fresh),
+                   'rereadForVersion': refreshed,
+                   'cached': len(known) - len(wanted),
                    'readable': sum(1 for v in known.values() if v.get('phash')),
+                   'stillOnOldVersion': sum(1 for v in known.values() if v and not _is_current(v)),
                    'failures': dict(failures)})
     return {u: v for u, v in known.items() if v.get('phash')}
 

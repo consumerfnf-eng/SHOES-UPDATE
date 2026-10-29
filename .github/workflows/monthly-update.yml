@@ -47,6 +47,13 @@ jobs:
           else
             npm run monthly -- --only-if-stale
           fi
+      # The colour vocabulary that decides which listings are one model comes
+      # from the colourways the retailers themselves wrote. Rebuilt after the
+      # run that collected them, so a shade first seen this week groups from
+      # next week - the alternative is grouping against a vocabulary that
+      # only ever grows stale.
+      - name: Rebuild the colour vocabulary from what was collected
+        run: python scripts/monthly/build_colour_words.py
       - name: Run offline retail/newsletter tests before publishing
         run: python -m unittest discover -s tests -p 'test_monthly_*.py' -v
       - name: Publish weekly snapshot via existing Cloudflare Git integration
@@ -56,7 +63,7 @@ jobs:
           # image-signals.json is the photo-analysis cache and
           # model-first-listed.json is the re-release index: both only work
           # if they survive between runs, so they are committed too.
-          git add data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json data/trend-history.csv data/image-signals.json data/model-first-listed.json config/trend-seed-hashtags.json public/data/monthly-catalog.json public/data/trend-keywords.json
+          git add config/colour-words.json data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json data/trend-history.csv data/image-signals.json data/model-first-listed.json config/trend-seed-hashtags.json public/data/monthly-catalog.json public/data/trend-keywords.json
           if ! git diff --cached --quiet; then
             git commit -m "weekly retail/newsletter shoes update $(date -u +%F)"
             # See weekly-update.yml: main can move during a long collection,
