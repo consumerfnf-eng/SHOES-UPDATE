@@ -225,6 +225,28 @@ def snapshot_entry(item):
     return {k: item[k] for k in ('url', 'source', 'firstSeenAt', 'firstDetectedAsNewAt') if item.get(k)}
 
 
+def repair_split_title(item):
+    """Put back a title a collector cut in half inside its own brackets.
+
+    29CM returns DISCOVERY EXPEDITION's slip-on as three products called
+    "토리노 (S", "토리노 (L" and "토리노 (BLACK)", with "WHITE)" and "BROWN)"
+    left in the style field. The name is a fragment and the style is not a
+    style, so nothing downstream can tell the three apart or put them
+    together. Rejoining them restores "토리노 (S WHITE)" and the colour with
+    it; the style field is cleared, because it never held one.
+    """
+    name = (item.get('name') or '').strip()
+    style = (item.get('style') or '').strip()
+    if not name or not style or style.count(')') != 1 or not style.endswith(')'):
+        return
+    if name.count('(') != name.count(')') + 1:
+        return
+    item['name'] = f'{name} {style}'
+    if item.get('fullName') == name:
+        item['fullName'] = item['name']
+    item['style'] = ''
+
+
 def normalize_retail_item(item, basis, previous, now, is_baseline):
     """Align a collector's record with the official catalog's field shape and
     stamp its newness. `is_baseline` is this *source's* baseline flag, not the
@@ -245,6 +267,7 @@ def normalize_retail_item(item, basis, previous, now, is_baseline):
         item['brand'] = canonical
     if not item.get('style'):
         item['style'] = item.get('sku', '')
+    repair_split_title(item)
     # A retailer is allowed to answer a required colour field with "상세내용참고",
     # with its own internal codes, or with a colour followed by a paragraph of
     # standing notice. None of that belongs on a chip, so the field is cleaned

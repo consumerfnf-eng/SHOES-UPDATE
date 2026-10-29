@@ -136,11 +136,25 @@ export function sourceContext(type, products, directory = {}, today = kstToday()
   const awaiting=configured.filter(c=>!confirmed.some(o=>o.id===c.id||o.domain===host(c.url)||o.domain.endsWith('.'+host(c.url))));
   return {observed:confirmed,configured:awaiting};
 }
+// A research card with no photograph is not worth a slot: the whole point of
+// the grid is seeing the shoe. Where the page used to print "공식 이미지 확인 중"
+// over an empty tile, the record is now left out of the catalog entirely.
+const CACHED_IMAGE=/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/;
+export function productImageUrl(product, today = kstToday()) {
+  const cached=product?.presentation?.cachedPath;
+  if(CACHED_IMAGE.test(cached||''))return cached;
+  return safeUrl(product?.presentation?.image)
+    || officialImageUrl(product,today)
+    || safeUrl(product?.image) || '';
+}
+export function hasVisual(product, today = kstToday()) { return !!productImageUrl(product,today); }
+
 export function filterProducts(products, state, today = kstToday()) {
   const query = state.search.trim().toLocaleLowerCase();
   return products.filter(p => {
     const release = isOverlay(p) ? overlayReleaseState(p, today) : releaseState(p, today);
-    return release && (state.release === 'all' || release === state.release)
+    return release && hasVisual(p, today)
+      && (state.release === 'all' || release === state.release)
       && (!state.retailer || state.retailer === 'all' || retailerId(p) === state.retailer)
       && (!state.brands.size || productBrandNames(p,today).some(brand=>state.brands.has(brand)))
       && categoryMatches(p, state.category)
@@ -263,8 +277,15 @@ export function colorHex(word){
 // One colourway's canonical spelling: each recognised word folded to its
 // English name, the rest kept as written, so two labels agree only when they
 // genuinely name the same colours.
+// Words that say "the whole shoe is this colour" rather than qualifying the
+// shade: 올 블랙, triple black and 블랙 are one colourway. 라이트 그레이 is
+// NOT - a modifier that changes the shade stays in the key.
+const WHOLE_SHOE=new Set(['올','전체','풀','트리플','all','full','triple','mono','솔리드','solid']);
 export function canonicalColorKey(label){
   const words=String(label||'').normalize('NFKC').toLowerCase().split(/[^a-z0-9가-힣]+/).filter(Boolean)
+    // Korean tacks 색 onto a colour: 검정색 is 검정 is black.
+    .map(word=>/^[가-힣]{2,}색$/.test(word)&&COLOR_SYNONYM[word.slice(0,-1)]?word.slice(0,-1):word)
+    .filter(word=>!WHOLE_SHOE.has(word))
     .map(word=>COLOR_SYNONYM[word]||word);
   // Joined without separators: Korean writes a two-word shade as one token
   // (실브라운) where English spaces it ("Seal Brown"), and the two are the
@@ -321,10 +342,20 @@ export function uniqueColorVariants(group,activeId){
       if(!seen.has(key)||p.id===activeId)seen.set(key,p);
       continue;
     }
-    // No colour name. The photo decides: the identical cached shot, or a body
+    // No colour name, but the two listings are word-for-word the same title:
+    // Musinsa and 29CM both carry "페이스 로우 미드 브라운" and only one of
+    // them fills the colour field. One title is one colourway, whichever
+    // retailer happened to describe it.
+    const title=String(p.name||'').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'');
+    if(title){
+      const key=`title:${title}`;
+      if(!seen.has(key)||p.id===activeId)seen.set(key,p);
+      continue;
+    }
+    // Otherwise the photo decides: the identical cached shot, or a body
     // colour read off the photo that matches one already kept, is the same
     // colourway - that is what stops one shoe shot from two angles becoming
-    // two chips. Otherwise it stands on its own.
+    // two chips.
     const photo=p.presentation?.cachedPath;
     if(/^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(photo||'')){
       const key=`photo:${photo}`;

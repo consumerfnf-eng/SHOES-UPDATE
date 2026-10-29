@@ -845,11 +845,7 @@
   "ROA": [
     {
       "name": "ROA Official daily source",
-      "url": "https://www.roa-hiking.com/collections/shoes?sort_by=created-descending"
-    },
-    {
-      "name": "ROA Official daily source",
-      "url": "https://www.roa-hiking.com/collections/spring-summer-26-footwear?sort_by=created-descending"
+      "url": "https://www.roa-hiking.com/collections/shoes"
     },
     {
       "name": "ROA Official daily source",
@@ -994,7 +990,11 @@
   ],
   "Umbro": [
     {
-      "name": "Umbro Official daily source",
+      "name": "Umbro Official Korea daily source",
+      "url": "https://www.umbro.co.kr/"
+    },
+    {
+      "name": "Umbro Official global style source",
       "url": "https://www.umbro.com/en/style/?categories=1726"
     }
   ],
@@ -1102,11 +1102,11 @@
   ],
   "KOLON SPORT": [
     {
-      "name": "KOLON SPORT Official public source",
-      "url": "https://www.kolonsport.com/"
+      "name": "KOLON SPORT Official new arrivals",
+      "url": "https://www.kolonsport.com/shop/list.php?ct_id=10"
     },
     {
-      "name": "KOLON SPORT Official public source",
+      "name": "KOLON SPORT Official trail running",
       "url": "https://www.kolonsport.com/KolonTrailRun"
     }
   ],
@@ -1144,8 +1144,8 @@
   ],
   "Le Coq Sportif": [
     {
-      "name": "Le Coq Sportif Official public source",
-      "url": "https://www.lecoqsportif.com/en-us/collections/chaussures-homme-femme"
+      "name": "Le Coq Sportif Official Korea daily source",
+      "url": "https://www.lecoqsportif.co.kr/"
     }
   ],
   "Jordan": [
@@ -1196,8 +1196,8 @@
   ],
   "23.65": [
     {
-      "name": "23.65 Official public source",
-      "url": "https://m.23-65.com/"
+      "name": "23.65 Official daily source",
+      "url": "https://www.23-65.com/"
     }
   ],
   "KEEN": [

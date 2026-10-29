@@ -63,6 +63,9 @@ _WORDS = None
 
 MIN_PREFIX_TOKENS = 2
 MIN_PREFIX_CHARS = 6
+# Korean packs a model name into fewer characters: "페이스 로우" is five
+# syllables and a complete name, where six was tuned for Latin spelling.
+MIN_PREFIX_CHARS_HANGUL = 3
 MAX_REMAINDER_TOKENS = 4
 
 BRACKETED = re.compile(r'[\(\[\{][^\)\]\}]*[\)\]\}]')
@@ -96,10 +99,50 @@ def tokens(text):
     "제퍼슨_웨이브" and Skechers "플렉스(슬립인스)_SP0MWCGX211". Read as one
     token each, the colour and the code can never be seen.
     """
-    return [t for t in re.split(r'[\s_]+', (text or '').strip()) if t]
+    out = []
+    for token in re.split(r'[\s_]+', (text or '').strip()):
+        if not token:
+            continue
+        # "스니커즈-그레이지" is two words; "K3021001RD-W" is one code. A part
+        # carrying a digit means the hyphen is holding a code together.
+        parts = token.split('-')
+        if len(parts) > 1 and all(p and not any(c.isdigit() for c in p) for p in parts):
+            out.extend(parts)
+        else:
+            out.append(token)
+    return out
 
 
 HANGUL_TOKEN = re.compile(r'^[가-힣]+$')
+
+# Words that qualify a shade rather than name one. Korean puts the base
+# colour last - 라이트 그레이, 미드 브라운, 소프트 블랙 - so without these the
+# remainder reads as "unknown word + colour" and the model stays split. The
+# list is explicit rather than "any word before a colour", because that would
+# merge "삼바 OG 블랙" with "삼바 클래식 블랙".
+SHADE_MODIFIERS = {
+    '라이트', '다크', '미드', '딥', '소프트', '페일', '비비드', '파스텔', '네온',
+    '메탈릭', '매트', '글로시', '투톤', '멀티', '올', '웜', '쿨', '클리어', '하프',
+    '무광', '유광', '진', '연', '찐', '밝은', '어두운',
+    'light', 'dark', 'mid', 'deep', 'soft', 'pale', 'vivid', 'pastel', 'neon',
+    'metallic', 'matte', 'glossy', 'two', 'tone', 'warm', 'cool', 'clear', 'half',
+}
+
+# An audience is not a model. BEARPAW lists one slip-on as "LOOM MENS 패딩슬립온
+# 블랙 II (K3699011SD-M)" and "LOOM 패딩슬립온 블랙 II (K3699011SD-W)"; the codes
+# differ only in that last letter, and read as different titles the two sat on
+# separate cards.
+AUDIENCE_TOKEN = re.compile(
+    r'^(?:mens?|womens?|men|women|unisex|남성용?|여성용?|남녀공용|공용|유니섹스)$', re.I)
+
+
+def is_shade_modifier(token):
+    return PUNCT.sub('', (token or '').lower()) in SHADE_MODIFIERS
+
+
+def without_audience(text):
+    """The title with any audience word removed."""
+    return ' '.join(t for t in tokens(text) if not AUDIENCE_TOKEN.match(PUNCT.sub('', t)))
 
 
 def names_a_silhouette(token):
@@ -158,15 +201,19 @@ def remainder_is_colour_only(remainder):
         return True                       # the listings differed only by a code
     if len(parts) > MAX_REMAINDER_TOKENS:
         return False
-    previous_was_colour = False
+    previous_was_colour, named_a_colour = False, False
     for token in parts:
         if is_colour_token(token):
-            previous_was_colour = True
+            previous_was_colour, named_a_colour = True, True
             continue
         if previous_was_colour and MODEL_TOKEN.match(PUNCT.sub('', token.lower())):
             continue                      # "히커리 II" - a shade, not a model
+        if is_shade_modifier(token):
+            previous_was_colour = False   # 미드 브라운, 소프트 블랙, light grey
+            continue
         return False
-    return True
+    # A remainder of nothing but modifiers names no colour at all.
+    return named_a_colour or not parts
 
 
 def colour_from_remainder(remainder):
@@ -183,6 +230,9 @@ def colour_from_remainder(remainder):
                 previous_was_colour = True
             elif previous_was_colour and MODEL_TOKEN.match(PUNCT.sub('', token.lower())):
                 words.append(token)       # keep the "II" of "히커리 II"
+            elif is_shade_modifier(token):
+                words.append(token)       # keep the "미드" of "미드 브라운"
+                previous_was_colour = False
             else:
                 previous_was_colour = False
         if words:
@@ -208,7 +258,7 @@ def name_code(item):
     Both a letter and a digit are required: "SNEAKERS" is the end of a
     title and "AF2D01051" is a reference to one shoe in one colour.
     """
-    found = NAME_CODE.search((item.get('name') or '').strip())
+    found = NAME_CODE.search(model_title(item))
     if not found:
         return ''
     code = re.sub(r'[^A-Za-z0-9]', '', found.group(1) or found.group(2) or '').upper()
@@ -217,9 +267,19 @@ def name_code(item):
     return code if any(c.isdigit() for c in code) and any(c.isalpha() for c in code) else ''
 
 
+def model_title(item):
+    """The title the grouping rules read: no audience word, no style code.
+
+    BEARPAW sells one slip-on as "LOOM MENS 패딩슬립온 블랙 II (K3699011SD-M)"
+    and "LOOM 패딩슬립온 블랙 II (K3699011SD-W)". It is one shoe; MENS is who
+    it is cut for, which belongs on the listing, not in the model's identity.
+    """
+    return without_audience((item.get('name') or '').strip())
+
+
 def name_without_code(item):
-    """The title with its trailing style code removed."""
-    return NAME_CODE.sub(' ', (item.get('name') or '').strip()).strip()
+    """The title with its audience word and trailing style code removed."""
+    return NAME_CODE.sub(' ', model_title(item)).strip()
 
 
 def shared_prefix(names):
@@ -256,6 +316,7 @@ def code_groups(listings):
         for prefix, chosen in _by_title(fresh):
             for item, _ in chosen:
                 seen.add(id(item))
+            prefix = trim_colour_tail(prefix)
             bodies = [name_without_code(i) for i, _ in chosen]
             size = len(tokens(prefix))
             groups.append((stem, prefix, [(i, ' '.join(tokens(b)[size:]))
@@ -293,8 +354,7 @@ def _by_title(members):
         # A prefix too short to name a model is allowed only when there is
         # no model name to find: New Balance's Korean listings are called
         # "NBPDGF762C" and nothing else, so the code is the whole title.
-        if (len(tokens(prefix)) < MIN_PREFIX_TOKENS
-                or len(PUNCT.sub('', prefix)) < MIN_PREFIX_CHARS):
+        if len(tokens(prefix)) < MIN_PREFIX_TOKENS or not long_enough(prefix):
             if not all(remainder_is_colour_only(r) for r in remainders):
                 continue
         if any(MODEL_TOKEN.match(PUNCT.sub('', t.lower()))
@@ -322,6 +382,41 @@ def trimmed(remainder):
     stripped = HEIGHT.sub(' ', BRACKETED.sub(' ', remainder or ''))
     stripped = TRAILING_CODE.sub(' ', stripped)
     return ' '.join(tokens(stripped)).strip(' -_/()[]')
+
+
+def long_enough(prefix):
+    """True when a prefix is substantial enough to name a model."""
+    folded = PUNCT.sub('', prefix)
+    if not folded:
+        return False
+    minimum = MIN_PREFIX_CHARS_HANGUL if HANGUL_TOKEN.match(folded) else MIN_PREFIX_CHARS
+    return len(folded) >= minimum
+
+
+def trim_colour_tail(prefix):
+    """The prefix with any colour it swallowed handed back to the remainder.
+
+    When every listing in a code block happens to share a colour - BEARPAW's
+    two JULES slip-ons are both 블랙 - the longest common prefix includes it,
+    and the group lands on a different key from its own siblings in other
+    colours. The model's name stops where its colours begin.
+    """
+    parts = tokens(prefix)
+    while len(parts) > MIN_PREFIX_TOKENS:
+        last = parts[-1]
+        # A model number is identity, never a swallowed colour: trimming the
+        # 90 off "Air Max 90" merged it with "Air Max 95". The only number a
+        # colour may end with is one that follows a colour word - 히커리 II.
+        if MODEL_TOKEN.match(PUNCT.sub('', last.lower())):
+            if not (len(parts) > 1 and is_colour_token(parts[-2])):
+                break
+        elif not (is_colour_token(last) or is_shade_modifier(last)):
+            break
+        shorter = ' '.join(parts[:-1])
+        if not long_enough(shorter):
+            break
+        parts = parts[:-1]
+    return ' '.join(parts)
 
 
 def _brand_key(item):
@@ -375,14 +470,19 @@ def assign_model_groups(items, status=None):
         # Candidate prefixes, longest first, so the most specific model wins.
         candidates = defaultdict(list)
         for item in listings:
-            parts = tokens(item.get('name'))
+            title = model_title(item)
+            parts = tokens(title)
+            bare = tokens(BRACKETED.sub(' ', title))
+            if (bare and len(bare) < MIN_PREFIX_TOKENS and parts[:len(bare)] == bare
+                    and long_enough(' '.join(bare))):
+                candidates[' '.join(bare)].append(item)
             # `len(parts)` included: adidas lists four colourways of the
             # 핸드볼 스페지알 under that name exactly and a fifth as
             # "핸드볼 스페지알 IF6490". Stopping one token short of the title
             # left the plain ones unable to join their own model.
             for size in range(len(parts), MIN_PREFIX_TOKENS - 1, -1):
                 prefix = ' '.join(parts[:size])
-                if len(PUNCT.sub('', prefix)) >= MIN_PREFIX_CHARS:
+                if long_enough(prefix):
                     candidates[prefix].append(item)
 
         for prefix in sorted(candidates, key=lambda p: (-len(tokens(p)), -len(p))):
@@ -394,7 +494,7 @@ def assign_model_groups(items, status=None):
             # 핸드볼 스페지알 in four colourways, a Low Pro and a Bold; under
             # the old rule "로 프로" disqualified the whole prefix and all six
             # stayed apart. The two that are their own models still do.
-            pairs = [(m, ' '.join(tokens(m.get('name'))[size:])) for m in members]
+            pairs = [(m, ' '.join(tokens(model_title(m))[size:])) for m in members]
             pairs = [(m, r) for m, r in pairs if remainder_is_colour_only(r)]
             if len(pairs) < 2:
                 continue
@@ -416,7 +516,55 @@ def assign_model_groups(items, status=None):
                         member['colorway'] = found
                         member['colorwayFrom'] = 'product-name'
                         coloured += 1
-    status['modelGroupsAssigned'] = grouped
+    joined = join_leftovers(by_brand, status)
+    status['modelGroupsAssigned'] = grouped + joined
     status['groupedByStyleCode'] = by_code
+    status['joinedToExistingModel'] = joined
     status['colourwaysRecoveredFromName'] = coloured
     return items
+
+
+def join_leftovers(by_brand, status):
+    """Put a listing left on its own into the model it obviously belongs to.
+
+    The two rules claim members in turn, and the first one to run takes its
+    members out of the second's reach. BEARPAW's LOOM slip-on is the case:
+    the style codes matched the two 블랙 II listings and claimed them, which
+    left "LOOM 패딩슬립온 피버" with no second listing to pair with, so it
+    stayed on its own card next to its own model.
+
+    So once both rules have run, any listing still ungrouped is offered to
+    the models that exist: longest prefix first, and only when what is left
+    over is a colour.
+    """
+    joined = 0
+    for listings in by_brand.values():
+        known = {}
+        for item in listings:
+            name = item.get('modelName')
+            if item.get('modelGroupId') and name:
+                known.setdefault(PUNCT.sub('', name.lower()),
+                                 (item['modelGroupId'], name))
+        if not known:
+            continue
+        for item in listings:
+            if item.get('modelGroupId'):
+                continue
+            parts = tokens(name_without_code(item))
+            for size in range(len(parts), MIN_PREFIX_TOKENS - 1, -1):
+                prefix = ' '.join(parts[:size])
+                match = known.get(PUNCT.sub('', prefix.lower()))
+                if not match:
+                    continue
+                remainder = ' '.join(parts[size:])
+                if not remainder_is_colour_only(remainder):
+                    break
+                item['modelGroupId'], item['modelName'] = match[0], match[1]
+                joined += 1
+                if not (item.get('colorway') or '').strip():
+                    found = colour_from_remainder(remainder) or trimmed(remainder)
+                    if found:
+                        item['colorway'] = found
+                        item['colorwayFrom'] = 'joined-to-model'
+                break
+    return joined

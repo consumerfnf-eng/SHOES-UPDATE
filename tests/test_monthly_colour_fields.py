@@ -163,7 +163,8 @@ class ModelGroupingTests(unittest.TestCase):
         self.assertEqual(status['groupedByStyleCode'], 4)
         self.assertEqual([i['colorway'] for i in items],
                          ['그레이 세이지', '카푸치노', '스파이스드 에프리콧', '블랙'])
-        self.assertEqual({i['modelName'] for i in items}, {'여성 네오D 하이커 패디드 트레이너'})
+        # The audience word is who it is cut for, not which model it is.
+        self.assertEqual({i['modelName'] for i in items}, {'네오D 하이커 패디드 트레이너'})
 
     def test_a_title_that_is_only_a_code_still_groups(self):
         items = self.listings('NBPDGF762C', 'NBPDGF762T', brand='New Balance')
@@ -240,6 +241,64 @@ class ModelGroupingTests(unittest.TestCase):
         self.assertEqual(name_code({'name': 'Premium Skate SNEAKERS'}), '')
         self.assertEqual(name_code({'name': '핸드볼 스페지알 IF6490'}), 'IF6490')
         self.assertEqual(name_code({'name': '... 스니커즈 (AF2D01051'}), 'AF2D01051')
+
+    def test_a_shade_modifier_does_not_split_a_model(self):
+        # Korean puts the base colour last: 라이트 그레이, 미드 브라운,
+        # 소프트 블랙. Reading the modifier as a model word kept JACLAR's
+        # 페이스 로우 on three cards across two retailers.
+        items = self.listings('페이스 로우 라이트 그레이', '페이스 로우 미드 브라운',
+                              '페이스 로우 소프트 블랙', brand='JACLAR')
+        assign_model_groups(items)
+        self.assertEqual(len({i['modelGroupId'] for i in items}), 1)
+        self.assertEqual([i['colorway'] for i in items],
+                         ['라이트 그레이', '미드 브라운', '소프트 블랙'])
+
+    def test_a_modifier_before_a_model_word_is_not_a_colour(self):
+        items = self.listings('삼바 OG 블랙', '삼바 클래식 블랙', brand='adidas')
+        assign_model_groups(items)
+        self.assertEqual([i.get('modelGroupId') for i in items], [None, None])
+
+    def test_an_audience_word_does_not_split_a_model(self):
+        # BEARPAW lists one slip-on as MENS and WOMENS; the codes differ only
+        # in that last letter.
+        items = self.listings('JULES WOMENS 패딩슬립온 블랙 (K3021001RD-W)',
+                              'JULES MENS 패딩슬립온 블랙 (K3021001RD-M)',
+                              'JULES MENS 패딩슬립온 차콜 (K3021049RD-M)', brand='BEARPAW')
+        assign_model_groups(items)
+        self.assertEqual(len({i['modelGroupId'] for i in items}), 1)
+        self.assertEqual({i['modelName'] for i in items}, {'JULES 패딩슬립온'})
+
+    def test_a_model_number_is_never_trimmed_off_a_prefix(self):
+        # Trimming the 90 off "Air Max 90" merged it with "Air Max 95".
+        items = self.listings('Air Max 90 DZ4504', 'Air Max 95 DZ4505',
+                              'Air Max 90 블랙 DZ4506', brand='Nike')
+        assign_model_groups(items)
+        self.assertEqual(items[0]['modelGroupId'], items[2]['modelGroupId'])
+        self.assertIsNone(items[1].get('modelGroupId'))
+
+    def test_a_korean_hyphen_compound_splits_but_a_style_code_does_not(self):
+        self.assertEqual(tokens('여성 스니커즈-그레이지'), ['여성', '스니커즈', '그레이지'])
+        self.assertEqual(tokens('JULES (K3021001RD-W)'), ['JULES', '(K3021001RD-W)'])
+
+    def test_two_colourways_of_one_silhouette_group_and_the_other_does_not(self):
+        items = self.listings('제옥스 플렉스트라이드 플러스 여성 스니커즈-그레이지',
+                              '제옥스 플렉스트라이드 플러스 여성 스니커즈-블랙',
+                              '제옥스 플렉스트라이드 플러스 여성 슬립온-골드', brand='GEOX')
+        assign_model_groups(items)
+        self.assertEqual(items[0]['modelGroupId'], items[1]['modelGroupId'])
+        self.assertIsNone(items[2].get('modelGroupId'))
+
+    def test_a_listing_left_alone_joins_the_model_it_belongs_to(self):
+        # The style-code rule claims its members before the word rule runs,
+        # which left this one with no sibling to pair with.
+        items = self.listings('LOOM 패딩슬립온 블랙 (K3699011SD-M)',
+                              'LOOM 패딩슬립온 블랙 (K3699011SD-W)',
+                              'LOOM 패딩슬립온 베이지 (K3699019SD-W)', brand='BEARPAW')
+        status = {}
+        assign_model_groups(items, status)
+        self.assertEqual(len({i['modelGroupId'] for i in items}), 1)
+        self.assertEqual(status['joinedToExistingModel'], 1)
+        self.assertEqual(items[2]['colorway'], '베이지')
 
     def test_colour_is_read_out_of_a_bracketed_remainder(self):
         self.assertEqual(colour_from_remainder('(BLACK)'), 'BLACK')

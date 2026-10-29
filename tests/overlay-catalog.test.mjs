@@ -9,13 +9,17 @@ import {
 const TODAY = '2026-10-29';
 const retail = (over = {}) => ({
   id: 'r1', overlay: true, source: 'retail-29cm', brand: 'PUMA', name: 'Speedcat',
+  // A card with no photograph is no longer published, so every fixture that
+  // expects to appear in the grid carries one.
+  image: 'https://example.org/speedcat.jpg',
   listedAt: '2026-10-01T00:00:00+09:00', category: 'sneaker', footwearTypes: ['sneaker'], ...over,
 });
 const article = (over = {}) => ({
   id: 'n1', overlay: true, source: 'newsletter-hypebeast', brand: 'Nike', name: 'Air Max 95',
+  image: 'https://example.org/am95.jpg',
   publishedAt: '2026-10-20T00:00:00Z', category: 'sneaker', footwearTypes: ['sneaker'], ...over,
 });
-const official = (over = {}) => ({ id: 'o1', brand: 'adidas', name: 'Samba', ...over });
+const official = (over = {}) => ({ id: 'o1', brand: 'adidas', name: 'Samba', image: 'https://example.org/samba.jpg', ...over });
 
 const state = (over = {}) => ({
   search: '', brands: new Set(), fit: 'all', category: 'all', source: 'all',

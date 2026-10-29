@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-29T14:20:37.801613+09:00",
+  "checkedAt": "2026-10-29T19:04:28.824292+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -418,7 +418,7 @@
     },
     "sns-trend-keywords": {
       "status": "ok",
-      "items": 21,
+      "items": 14,
       "acceptedIntoSeeds": 0,
       "diagnostics": [
         {
@@ -431,7 +431,10 @@
             }
           },
           "tiktok": {
-            "status": "skipped"
+            "status": "blocked",
+            "read": 0,
+            "blocked": 72,
+            "note": "TikTok answered automation with its error shell and no view count; Creative Center replies 40101 no permission without a signed token."
           }
         }
       ]
@@ -453,12 +456,13 @@
   },
   "modelGrouping": {
     "step": "model grouping",
-    "modelGroupsAssigned": 1111,
-    "groupedByStyleCode": 487,
-    "colourwaysRecoveredFromName": 322
+    "modelGroupsAssigned": 1281,
+    "groupedByStyleCode": 277,
+    "joinedToExistingModel": 20,
+    "colourwaysRecoveredFromName": 395
   },
   "rereleasesExcluded": 274,
-  "modelsIndexed": 7177,
+  "modelsIndexed": 7502,
   "publishedRetail": 3389,
   "publishedNewsletter": 620,
   "retailCollected": 19022,

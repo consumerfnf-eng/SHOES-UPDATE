@@ -1,24 +1,32 @@
 import {readPublicSource,decodeText} from './source-feeds.mjs';
 import {setTimeout as delay} from 'node:timers/promises';
 
-export function pacedOfficialFetch({fetchImpl=fetch,sleep=delay,intervalMs=2500,retryMs=5000,now=Date.now}={}){
+// Three attempts, each waiting longer than the last. A site that answered a
+// timeout or a 503 once will often answer the third try; hammering it at a
+// fixed interval will not. Access denials and CAPTCHAs are never retried -
+// the same client gets the same answer - they escalate to the rendered
+// reader instead.
+export const MAX_OFFICIAL_ATTEMPTS=3;
+export function pacedOfficialFetch({fetchImpl=fetch,sleep=delay,intervalMs=2500,retryMs=5000,now=Date.now,attempts=MAX_OFFICIAL_ATTEMPTS}={}){
   const queues=new Map(),next=new Map();
+  const backoff=attempt=>retryMs*Math.pow(3,attempt);   // 5s, 15s
   return async function fetchOfficial(url,options){
     const origin=new URL(url).origin;
-    for(let attempt=0;attempt<2;attempt++){
+    for(let attempt=0;attempt<attempts;attempt++){
+      const last=attempt===attempts-1;
       const turn=(queues.get(origin)||Promise.resolve()).then(async()=>{await sleep(Math.max(0,(next.get(origin)||0)-now()));next.set(origin,now()+intervalMs);});
       queues.set(origin,turn.catch(()=>{}));await turn;
       let response;
       try{response=await fetchImpl(url,{...options,signal:AbortSignal.timeout(20000)});}catch(error){
-        if(attempt||!['TypeError','TimeoutError','AbortError'].includes(error.name))throw error;
-        await sleep(retryMs);continue;
+        if(last||!['TypeError','TimeoutError','AbortError'].includes(error.name))throw error;
+        await sleep(backoff(attempt));continue;
       }
-      if(!attempt&&[429,500,502,503,504].includes(response.status)){
+      if(!last&&[429,500,502,503,504].includes(response.status)){
         const header=response.headers.get('retry-after');
-        const wait=header?(Number.isFinite(Number(header))?Number(header)*1000:Date.parse(header)-now()):retryMs;
+        const wait=header?(Number.isFinite(Number(header))?Number(header)*1000:Date.parse(header)-now()):backoff(attempt);
         // A long server cooldown is deferred to the next scheduled run.
         if(wait>60000)return response;
-        await response.body?.cancel();await sleep(Math.max(retryMs,Number.isFinite(wait)?wait:retryMs));continue;
+        await response.body?.cancel();await sleep(Math.max(backoff(attempt),Number.isFinite(wait)?wait:backoff(attempt)));continue;
       }
       return response; // Never retry access denials, CAPTCHAs or missing pages.
     }
