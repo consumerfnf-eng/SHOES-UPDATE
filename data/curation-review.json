@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-29T09:30:42.121Z",
+  "checkedAt": "2026-10-29T10:45:30.292Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -13137,6 +13137,12 @@
       "reason": "release-day-evidence-required"
     },
     {
+      "id": "live-d95bb35f7dafa725",
+      "brand": "On",
+      "name": "Cloudsoma",
+      "reason": "re-release-launched-2026-03-16"
+    },
+    {
       "id": "live-6e36fbd575c32c53",
       "brand": "On",
       "name": "New color Cloudhorizon 2 Waterproof Women – Hiking, walking, trails, wet-weather hiking",
@@ -15379,6 +15385,12 @@
       "reason": "excluded-footwear"
     },
     {
+      "id": "asics-gel-kayano-14-illusion-blue-1203a537-402",
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 14",
+      "reason": "re-release-launched-2026-06-19"
+    },
+    {
       "id": "arrival-c22dcff6f576256d9203",
       "brand": "Miu Miu",
       "name": "Printed leather mules",
@@ -15397,10 +15409,22 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-b5ecc94490f65f748f57",
+      "brand": "Balenciaga",
+      "name": "triple s.2 gradient sneaker",
+      "reason": "re-release-launched-2026-02-03"
+    },
+    {
       "id": "arrival-bf283512814f2916ca83",
       "brand": "Louis Vuitton",
       "name": "LV Cosy Comfort Closed Mule",
       "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-f61c08d4e0fa7918f486",
+      "brand": "Balenciaga",
+      "name": "track trail laces sneaker",
+      "reason": "re-release-launched-2026-07-06"
     },
     {
       "id": "arrival-8c11f938f8fa73efae79",
@@ -15427,10 +15451,100 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-0527b5dfb0912bea1f28",
+      "brand": "Cecilie Bahnsen",
+      "name": "CBBlaise Shoes",
+      "reason": "re-release-launched-2026-02-09"
+    },
+    {
       "id": "arrival-3d39dc707b5ca1c66628",
       "brand": "FILA",
       "name": "휠라 에샤페 LX 퍼플",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-8d0b2abd78458118cbe3",
+      "brand": "Balenciaga",
+      "name": "track trail laces sneaker",
+      "reason": "re-release-launched-2026-07-06"
+    },
+    {
+      "id": "arrival-410b562a6366af2d888a",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-233cd630dbbf5c25380d",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-753cdb8ec2daa9568f75",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-dda986d6d43101bfe1e7",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-71f9baf4159c60cb65df",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-ae30da4b61f7e2c5227f",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-a988605f2759722e27b2",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-ff03196516e32e93d678",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-b5764f726c30bb57b1ac",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-59f2ce34196268ccb3a5",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-6d337d6d36b846db24bb",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
+      "id": "arrival-9ea57aa844acc2ab737f",
+      "brand": "Nike",
+      "name": "Nike P-6000",
+      "reason": "re-release-launched-2026-06-29"
+    },
+    {
+      "id": "arrival-4c615f9405c8c52400b1",
+      "brand": "Nike",
+      "name": "Nike P-6000",
+      "reason": "re-release-launched-2026-06-29"
     },
     {
       "id": "arrival-7b6e3f9095f96ae75dde",
@@ -15447,6 +15561,12 @@
     {
       "id": "arrival-08911cb1eaae1a000e31",
       "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-2cf0df98c99bae89da17",
+      "brand": "Nike",
+      "name": "Nike P-6000",
+      "reason": "re-release-launched-2026-06-29"
     },
     {
       "id": "arrival-7758c7e4885c7606f0ad",
@@ -15473,6 +15593,12 @@
       "brand": "Balenciaga",
       "name": "Women's Cropped Peacoat in Navy",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-fe34b6529d294dccf72e",
+      "brand": "Moncler",
+      "name": "Vera Leisure Suede Sneakers",
+      "reason": "re-release-launched-2026-01-22"
     },
     {
       "id": "arrival-4f3f5b2c3b31d6334282",
@@ -16187,6 +16313,12 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-8f870a59d609d62e28fa",
+      "brand": "Nike",
+      "name": "Nike P-6000",
+      "reason": "re-release-launched-2026-06-29"
+    },
+    {
       "id": "arrival-7131c8feb87b0daa7544",
       "reason": "duplicate-product-color"
     },
@@ -16793,6 +16925,54 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-0298ab531668cd38e182",
+      "brand": "Balenciaga",
+      "name": "triple s.2 sneaker",
+      "reason": "re-release-launched-2026-02-03"
+    },
+    {
+      "id": "arrival-e14ab52990198debdcec",
+      "brand": "Balenciaga",
+      "name": "triple s.2 denim sneaker",
+      "reason": "re-release-launched-2026-02-03"
+    },
+    {
+      "id": "arrival-93bede7c3893b7531a9b",
+      "brand": "Balenciaga",
+      "name": "triple s.2 denim sneaker",
+      "reason": "re-release-launched-2026-02-03"
+    },
+    {
+      "id": "arrival-2f840de7f9d765f65a84",
+      "brand": "Balenciaga",
+      "name": "triple s.2 gradient sneaker",
+      "reason": "re-release-launched-2026-02-03"
+    },
+    {
+      "id": "arrival-a55c2d5ef56fac5fb2d7",
+      "brand": "Balenciaga",
+      "name": "runner sneaker",
+      "reason": "re-release-launched-2026-07-06"
+    },
+    {
+      "id": "arrival-092efba1b74a2c48e903",
+      "brand": "Balenciaga",
+      "name": "runner sneaker",
+      "reason": "re-release-launched-2026-07-06"
+    },
+    {
+      "id": "arrival-984ca7b7d93b10190d0c",
+      "brand": "Balenciaga",
+      "name": "triple s.2 denim sneaker",
+      "reason": "re-release-launched-2026-02-03"
+    },
+    {
+      "id": "arrival-c966ddf2447c66c0beb6",
+      "brand": "Bottega Veneta",
+      "name": "Orbit Flash Sneaker",
+      "reason": "re-release-launched-2025-08-13"
+    },
+    {
       "id": "arrival-6c65d79ff5c8d777349b",
       "reason": "duplicate-product-color"
     },
@@ -16801,12 +16981,24 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-0165eaccce5fbc812edd",
+      "brand": "Nike",
+      "name": "Nike P-6000",
+      "reason": "re-release-launched-2026-06-29"
+    },
+    {
       "id": "arrival-254336f35f5e0cba3875",
       "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-5a25066175f2836fb486",
       "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-97596ca38a54348fa845",
+      "brand": "Nike",
+      "name": "Nike P-6000",
+      "reason": "re-release-launched-2026-06-29"
     },
     {
       "id": "arrival-7f7ce227faf3a1555e51",
@@ -16869,6 +17061,12 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-a300e0c1fe6926d86584",
+      "brand": "On",
+      "name": "Cloudnova 2",
+      "reason": "re-release-launched-2025-03-19"
+    },
+    {
       "id": "arrival-e321c3b3a847a8bddb71",
       "brand": "FILA",
       "name": "1911 여성 니트트랙 집업",
@@ -16921,6 +17119,12 @@
       "brand": "FILA",
       "name": "푸퍼 미니 토트백",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-15b9f4f5f1040555f344",
+      "brand": "On",
+      "name": "Cloudrunner 3",
+      "reason": "re-release-launched-2026-03-12"
     },
     {
       "id": "arrival-26d678c3976d9e729bf7",
@@ -17539,18 +17743,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-91f0ad5d993b43a0a8d1",
-      "brand": "Balenciaga",
-      "name": "0 1 2 hamptons worn-out sneaker Men 2 colors",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-a55c2d5ef56fac5fb2d7",
-      "brand": "Balenciaga",
-      "name": "0 1 2 runner sneaker Men",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-6d67032d4b31438b85c3",
       "brand": "Nike",
       "name": "Air Force 1 \"University of Georgia\"",
@@ -17737,18 +17929,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-a300e0c1fe6926d86584",
-      "brand": "On",
-      "name": "Cloudnova 2",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-15b9f4f5f1040555f344",
-      "brand": "On",
-      "name": "Cloudrunner 3",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-0f45e33c0a62e8d0b84c",
       "brand": "Loewe",
       "name": "Cloudsolo Hiker sneaker",
@@ -17758,12 +17938,6 @@
       "id": "arrival-26a2fcf412b82cef1ba4",
       "brand": "Loewe",
       "name": "Cloudsolo Hiker sneaker",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "live-d95bb35f7dafa725",
-      "brand": "On",
-      "name": "Cloudsoma",
       "reason": "representative-photo-review-required"
     },
     {
@@ -17908,6 +18082,12 @@
       "id": "arrival-e213774a9e756646678e",
       "brand": "The North Face",
       "name": "Glenclyffe™",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-91f0ad5d993b43a0a8d1",
+      "brand": "Balenciaga",
+      "name": "hamptons worn-out sneaker",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18892,24 +19072,6 @@
       "id": "arrival-a8d3a94f3cc2d88dc83e",
       "brand": "Nike",
       "name": "Nike Air Max Solo",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-4c615f9405c8c52400b1",
-      "brand": "Nike",
-      "name": "Nike P-6000",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-0165eaccce5fbc812edd",
-      "brand": "Nike",
-      "name": "Nike P-6000",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-97596ca38a54348fa845",
-      "brand": "Nike",
-      "name": "Nike P-6000",
       "reason": "representative-photo-review-required"
     },
     {
@@ -20323,12 +20485,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-8f870a59d609d62e28fa",
-      "brand": "Nike",
-      "name": "Nike P-6000",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-feb0b1814e04604132eb",
       "brand": "Nike",
       "name": "Nike P-6000 CORDURA®",
@@ -20451,7 +20607,7 @@
     {
       "id": "official-nike-io8766-800",
       "brand": "Nike",
-      "name": "Nike Air Force 1 '01 ",
+      "name": "Nike Air Force 1 '01",
       "reason": "representative-photo-review-required"
     },
     {
@@ -20719,18 +20875,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-9ea57aa844acc2ab737f",
-      "brand": "Nike",
-      "name": "Nike P-6000",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-2cf0df98c99bae89da17",
-      "brand": "Nike",
-      "name": "Nike P-6000",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "new-20260923-18da789b62fe6070",
       "brand": "Nike",
       "name": "Nike Pegasus Plus 2",
@@ -20776,12 +20920,6 @@
       "id": "arrival-6fb93e75a88ca9f74065",
       "brand": "Moncler",
       "name": "Vera Leisure Padded Sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-fe34b6529d294dccf72e",
-      "brand": "Moncler",
-      "name": "Vera Leisure Suede Sneakers",
       "reason": "representative-photo-review-required"
     },
     {

@@ -79,7 +79,14 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   });
   const socialStatus=(socialEvidence.sourceStatus||[]).map(s=>Object.fromEntries(['platform','name','url','status','reason','checkedAt','collectionMode','automatedAdapter'].filter(k=>s[k]!==undefined).map(k=>[k,s[k]])));
   const effectiveCollection={...(collection||source.collection||{}),...(socialStatus.length?{socialMetricStatus:socialStatus}:{})};
-  const result=curateCatalog(products,{now,previous:prior,collection:effectiveCollection});
+  // Evidence that a listing the brand still calls new is not: the weekly
+  // retail run's index of when each model was first listed anywhere, plus
+  // launch dates recorded by hand for what a person knows and no feed says.
+  const firstListed={
+    ...(await readJson(path.join(directory,'data/model-first-listed.json'),{})),
+    ...(await readJson(path.join(directory,'data/model-launch-dates.json'),{dates:{}})).dates,
+  };
+  const result=curateCatalog(products,{now,previous:prior,collection:effectiveCollection,firstListed});
   result.queue.products=result.queue.products.filter(p=>p.firstPublishedAt);
   // Preserve other records internally; publish the six requested footwear types.
   // Expired records still enter the archive independently of this display filter.

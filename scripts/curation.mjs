@@ -153,6 +153,37 @@ export function popularity(signals, today, {product,socialMetrics=[],officialEli
     brand:officialEligible&&!!product&&releaseState(product,today)==='released',
     ecommerce: signals.some(s => s.type === 'ecommerce') };
 }
+// A listing card wraps the product name in its colour swatches. Balenciaga
+// reads as "0 1 2 triple s.2 denim sneaker 2 colors": "0 1 2" are the swatch
+// indices and "2 colors" is how many there are. Left in, the same shoe came
+// back on two cards - one spelled with the swatches, one without.
+// Cleaned here as well as at collection, so re-curating the stored source
+// repairs what is already published without re-crawling anyone.
+export function cleanProductName(name) {
+  return String(name || '')
+    .replace(/^(?:\d{1,2}\s+){1,8}/, '')
+    .replace(/\s+\d{1,2}\s+colou?rs?$/i, '')
+    .replace(/\s+(?:Men|Women|Unisex)(?:'?s)?$/i, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
+// Luxury houses put the colour in the product slug and leave the colour
+// field empty: "triple-s.2-denim-sneaker-blue-865849WTSDN4000". The colour
+// is whatever sits between the model's own name and the style code - taking
+// every colour word in the slug instead would read the "denim" of the model
+// name as a colour.
+const SLUG_CODE = /^[a-z0-9]*\d[a-z0-9]*$/i;
+export function colorwayFromStyleSlug(style, name) {
+  const slug = String(style || '').toLowerCase();
+  const head = cleanProductName(name).toLowerCase().replace(/[^a-z0-9.]+/g, '-').replace(/^-|-$/g, '');
+  if (!slug || !head || !slug.startsWith(head + '-')) return '';
+  const parts = slug.slice(head.length + 1).split('-').filter(Boolean);
+  while (parts.length && SLUG_CODE.test(parts[parts.length - 1]) && parts[parts.length - 1].length >= 5) parts.pop();
+  const words = parts.filter(x => /^[a-z]{2,}$/.test(x));
+  return words.length && words.length <= 4 ? words.join(' ') : '';
+}
+
 export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:00')) {
   const brand = canonicalBrand(raw.brand), policy = brandPolicy(brand);
   if (!policy || !['mandatory','core','conditional'].includes(policy.policy)) return { reason: 'brand-excluded-or-unverified' };
@@ -177,11 +208,13 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   if(raw.styleType==='official-product-id'&&!official)return {reason:'official-product-id-evidence-required'};
   const socialMetrics=validateSocialMetrics({...raw,...(official||{}),brand},today,{officialEligible:!!official,now});
   const visibleSignals = validateSignals(raw.sourceSignals, today), hot = popularity(visibleSignals, today,{product:raw,socialMetrics,officialEligible:!!official});
-  const product = { id: raw.id, brand, name: raw.name, category: type.category, productType: type.category, fitReasons: fit.fitReasons,
+  const cleanName = cleanProductName(raw.name) || raw.name;
+  const colorway = String(raw.colorway || '').trim() || colorwayFromStyleSlug(raw.style, cleanName);
+  const product = { id: raw.id, brand, name: cleanName, category: type.category, productType: type.category, fitReasons: fit.fitReasons,
     modelKey:raw.modelGroup||`${key(brand)}|${key(String(raw.name).split(/ — | – /)[0])}`,
     releaseDate: raw.releaseDate||'', releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release?.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),
     ...(arrival?{arrivalEvidence:raw.arrivalEvidence}:{}),...(raw.firstPublishedAt?{firstPublishedAt:raw.firstPublishedAt}:{}),
-    url: raw.url, image: raw.image, style: raw.style || '',...(raw.styleType==='official-product-id'?{styleType:raw.styleType}:{}),colorway: raw.colorway || '', colors: raw.colors || [],
+    url: raw.url, image: raw.image, style: raw.style || '',...(raw.styleType==='official-product-id'?{styleType:raw.styleType}:{}),colorway, colors: raw.colors || [],
     gender: raw.gender || '', material: raw.material || '', priceLabel: raw.priceLabel || '',
     description:[type.category==='sneaker'?'스니커즈':type.category==='clog'?'여름 클로그':type.category==='hybrid'?'검토된 혼합형 스니커즈':type.category==='jelly'?'플랫 젤리 슈즈':type.category==='platform-shoe'?'캐주얼 플랫폼 슈즈':'캐주얼 샌들',...fit.fitReasons].join(' · '),
     footwearStructure:raw.footwearStructure||(['jelly','platform-shoe','platform-sandal'].includes(type.category)?{category:type.category,description:raw.description,officialCategory:raw.officialCategory}:undefined),
@@ -194,11 +227,50 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   return { product, expired: state==='expired' };
 }
 export function rankKeywords(products, now, sourceRanks=[]) {return buildKeywordCatalog(products,sourceRanks,{now}).keywords;}
-export function curateCatalog(rawProducts, { now = new Date(), previous = {}, collection = {} } = {}) {
+// --- re-release detection for the official catalog ------------------------
+// A brand's "New Arrivals" section is a claim, not a date. Balenciaga keeps
+// the Triple S.2 there months after its launch, and 217 of 288 official
+// products carry no release date at all, so "new" rested entirely on the
+// brand still listing it. Three pieces of evidence can overturn that claim,
+// and any one of them is enough:
+//
+//   1. a launch date recorded by hand in data/model-launch-dates.json;
+//   2. the earliest date any retailer or publication listed the same model,
+//      which the weekly retail run already indexes by model and style code;
+//   3. our own first sighting, once it is older than the window - a shoe we
+//      have been calling new for three months is not new.
+export function modelIdentityKeys(product) {
+  const brand = key(canonicalBrand(product.brand));
+  const name = cleanProductName(product.name || '')
+    .replace(/\s+(?:running\s+)?(?:shoes?|sneakers?)$/i, '');
+  const model = key(name);
+  const style = String(product.style || '').replace(/[^a-z0-9]/gi, '').toLowerCase();
+  return [
+    ...(brand && model.length >= 6 ? [`${brand}|${model}`] : []),
+    ...(style.length >= 6 ? [`style:${style}`] : []),
+  ];
+}
+
+export function launchedBefore(product, cutoffDay, firstListed = {}) {
+  // Outside evidence only. How long *we* have been showing something is
+  // already what the publication window measures, and counting it here
+  // stopped expired products reaching the archive queue.
+  const dates = modelIdentityKeys(product).map(k => firstListed[k])
+    .filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d || ''));
+  const earliest = dates.sort()[0];
+  return earliest && earliest < cutoffDay ? earliest : '';
+}
+
+export function curateCatalog(rawProducts, { now = new Date(), previous = {}, collection = {} , firstListed = {} } = {}) {
   const today = kstDay(now), products = [], expired = [], held = [], seen = new Set();
+  const cutoffDay = shiftMonth(today, -3);
   for (const raw of rawProducts) {
     const result = curateProduct(raw, today,now);
     if (!result.product) { held.push({ id:raw.id, brand:raw.brand, name:raw.name, reason:result.reason }); continue; }
+    // Only a live listing can wrongly claim to be new; an expired one is on
+    // its way to the archive and must not be diverted.
+    const launched = result.expired ? '' : launchedBefore(result.product, cutoffDay, firstListed);
+    if (launched) { held.push({ id:raw.id, brand:raw.brand, name:result.product.name, reason:`re-release-launched-${launched}` }); continue; }
     const k = dedupeKey(result.product); if (seen.has(k)) { held.push({ id:raw.id, reason:'duplicate-product-color' }); continue; } seen.add(k);
     (result.expired ? expired : products).push(result.product);
   }

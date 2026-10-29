@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "note": "Launch dates a person knows and no feed states. A brand's 'New Arrivals' section is a claim, not a date: Balenciaga keeps the Triple S.2 there months after it launched, and 217 of 288 official products carry no release date at all. An entry here is treated exactly like a date a retailer stated - the model is excluded from NEW once the date is older than the three-month window. Keys are `<brand>|<model>` folded to letters and digits, or `style:<code>` for one colourway. Both forms are matched against scripts/curation.mjs modelIdentityKeys.",
+  "dates": {
+    "balenciaga|triples2": "2026-02-03",
+    "balenciaga|triples2denim": "2026-02-03",
+    "balenciaga|triples2denimsneaker": "2026-02-03",
+    "balenciaga|triples2gradient": "2026-02-03",
+    "balenciaga|triples2gradientsneaker": "2026-02-03",
+    "balenciaga|triples2sneaker": "2026-02-03"
+  },
+  "sources": {
+    "balenciaga|triples2": "Triple S.2 pre-launched 2026-02-03 in selected Asia/Australia stores; global release March 2026."
+  }
+}

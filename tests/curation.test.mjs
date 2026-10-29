@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import {POLICY,canonicalBrand,canonicalUrl,shiftMonth,kstDay,curateProduct,curateCatalog,popularity,validateSignals,rankKeywords} from '../scripts/curation.mjs';
+import {POLICY,canonicalBrand,canonicalUrl,shiftMonth,kstDay,curateProduct,curateCatalog,popularity,validateSignals,rankKeywords,cleanProductName,colorwayFromStyleSlug,modelIdentityKeys,launchedBefore} from '../scripts/curation.mjs';
 import {releaseSentence,parseSalomonCalendar,productDetails,mergePreserving} from '../scripts/collect-evidence.mjs';
 import {parseNikeLaunch,nikeProductDetails,parseAsicsCalendar} from '../scripts/official-feeds.mjs';
 import {atomicJson,publishCurated} from '../scripts/publish-curated.mjs';
@@ -160,4 +160,40 @@ test('publication preserves complete raw records, supports URL atomic files, exp
     const next=await publishCurated({directory:dir,now:new Date('2027-01-01T01:00:00Z'),maintenance:true});assert.equal(next.snapshot.products.length,0);assert.equal(next.queue.products.length,1);assert.equal(next.snapshot.publishedAt,first.snapshot.publishedAt);
     const previous=await fs.readFile(path.join(dir,'public/data/catalog.json'),'utf8');await fs.writeFile(path.join(dir,'data/catalog-source.json'),'bad json');await assert.rejects(publishCurated({directory:dir,now}));assert.equal(await fs.readFile(path.join(dir,'public/data/catalog.json'),'utf8'),previous);
   }finally{await fs.rm(dir,{recursive:true,force:true});}
+});
+
+test('a listing card\'s colour swatches are not part of the product name', () => {
+  // Balenciaga reads as "0 1 2 triple s.2 denim sneaker 2 colors": the
+  // leading digits are swatch indices and the tail is how many there are.
+  // Left in, the same shoe came back on two cards - one per spelling.
+  assert.equal(cleanProductName('0 1 2 triple s.2 denim sneaker 2 colors'), 'triple s.2 denim sneaker');
+  assert.equal(cleanProductName('triple s.2 gradient sneaker Women 2 colors'), 'triple s.2 gradient sneaker');
+  assert.equal(cleanProductName('0 1 2 hamptons stickers sneaker Men'), 'hamptons stickers sneaker');
+  // Model numbers survive.
+  assert.equal(cleanProductName('Air Max 90'), 'Air Max 90');
+  assert.equal(cleanProductName('New Balance 990v4'), 'New Balance 990v4');
+});
+
+test('the colour is read out of the style slug when the colour field is empty', () => {
+  // Luxury houses put it between the model name and the style code.
+  assert.equal(colorwayFromStyleSlug('triple-s.2-denim-sneaker-blue-865849WTSDN4000', 'triple s.2 denim sneaker'), 'blue');
+  assert.equal(colorwayFromStyleSlug('triple-s.2-sneaker-black-dark-grey-865849WTRS21011', 'triple s.2 sneaker'), 'black dark grey');
+  // "denim" belongs to the model, not the colourway, so it is not taken.
+  assert.ok(!colorwayFromStyleSlug('triple-s.2-denim-sneaker-blue-865849WTSDN4000', 'triple s.2 denim sneaker').includes('denim'));
+  // A slug that is not the model's own tells us nothing.
+  assert.equal(colorwayFromStyleSlug('SKU001', 'Retro running sneaker'), '');
+});
+
+test('outside evidence that a model launched before the window withdraws it from NEW', () => {
+  const p = {brand: 'Balenciaga', name: 'triple s.2 denim sneaker', style: '865849WTSDN4000'};
+  // The trailing category word is dropped: a model is "triple s.2 denim".
+  assert.deepEqual(modelIdentityKeys(p), ['balenciaga|triples2denim', 'style:865849wtsdn4000']);
+  // A date recorded by hand, or one a retailer stated, is equally evidence.
+  assert.equal(launchedBefore(p, '2026-07-29', {'balenciaga|triples2denim': '2026-02-03'}), '2026-02-03');
+  assert.equal(launchedBefore(p, '2026-07-29', {'style:865849wtsdn4000': '2026-02-03'}), '2026-02-03');
+  // Inside the window, or no evidence at all, and the listing stands.
+  assert.equal(launchedBefore(p, '2026-07-29', {'balenciaga|triples2denim': '2026-09-01'}), '');
+  assert.equal(launchedBefore(p, '2026-07-29', {}), '');
+  // A model name too short to identify one shoe is not used as a key.
+  assert.deepEqual(modelIdentityKeys({brand: 'Nike', name: 'Retro running sneaker', style: ''}), []);
 });

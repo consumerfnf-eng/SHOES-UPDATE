@@ -55,6 +55,13 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence}){
     name=clean(name).replace(/\s+E\d{2}$/,'');
     if(!/[\p{L}\p{N}]/u.test(name))name=clean(imageUrls(link.label)[0]?.alt||'');
     name=name.replace(/^\d+ Colors?,\s*/i,'').replace(/^(?:Shop the look|Main product image of)\s*/i,'').replace(/,\s*Price,?\s*$/i,'').replace(/\s+\d[\d,.]*\s+USD\s+.*$/i,'').replace(/(?:\s+-)+\s*$/,'');
+    // A listing card puts its colour swatches around the name: Balenciaga
+    // reads as "0 1 2 triple s.2 denim sneaker 2 colors", where "0 1 2" are
+    // the swatch indices and "2 colors" is how many there are. Neither is
+    // part of the shoe's name, and leaving them in put the same model on two
+    // cards - one per spelling.
+    name=name.replace(/^(?:\d{1,2}\s+){1,8}/,'').replace(/\s+\d{1,2}\s+colou?rs?$/i,'')
+      .replace(/\s+(?:Men|Women|Unisex)(?:'?s)?$/i,'').trim();
     name=name.replace(/\s+-\s+Slide\s+\d+/gi,'').trim();
     const imageDerivedName=/^new(?: in)?$/i.test(name);
     if(imageDerivedName)name=clean(imageUrls(link.label)[0]?.alt||'').replace(new RegExp('^'+brand+'\\s+','i'),'');

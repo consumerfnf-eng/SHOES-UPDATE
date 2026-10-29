@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-29T09:30:42.121Z",
+  "publishedAt": "2026-10-29T10:45:30.292Z",
   "periodStart": "2026-07-29",
   "asOf": "2026-10-29",
   "brands": [
@@ -427,951 +427,9 @@
   ],
   "products": [
     {
-      "id": "arrival-557f22a5e16cba9b4f13",
-      "brand": "Balenciaga",
-      "name": "0 1 2 hamptons stickers sneaker Men",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|012hamptonsstickerssneakermen",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 0 1 2 hamptons stickers sneaker Men",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
-        "style": "hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080.html",
-      "image": "https://balenciaga.dam.kering.com/asset/485cb78b-fe1e-4cfb-956c-38014342e8f5/Small/841765WHPSM1080_X.jpg?v=1",
-      "style": "hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,050",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/485cb78b-fe1e-4cfb-956c-38014342e8f5/Small/841765WHPSM1080_X.jpg?v=1",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/485cb78b-fe1e-4cfb-956c-38014342e8f5/Small/841765WHPSM1080_X.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/52d0280e02dd9eb2c3c5f11a7dcab2fc936262ee7d5564c298f705ebdbc40ce0.jpg"
-      },
-      "bodyColor": "#212122"
-    },
-    {
-      "id": "arrival-6127f9f012dd243098ef",
-      "brand": "Balenciaga",
-      "name": "0 1 2 jet sneaker 5 colors",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|012jetsneaker5colors",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/jet-sneaker-white-black-872642WMRTN9010.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/en-us/men/discover-men/new-arrivals-for-men",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 0 1 2 jet sneaker 5 colors",
-        "contentHash": "235df901f11d502f863bb2a17db7ae30533f81efb18d44bef458074eed81d0b1",
-        "style": "jet-sneaker-white-black-872642WMRTN9010"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/jet-sneaker-white-black-872642WMRTN9010.html",
-      "image": "https://balenciaga.dam.kering.com/asset/ddd4406f-3733-4a79-9187-479e4e2c0834/Small/872642WMRTN9010_X.jpg?v=1",
-      "style": "jet-sneaker-white-black-872642WMRTN9010",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,090",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/jet-sneaker-white-black-872642WMRTN9010.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "jet-sneaker-white-black-872642WMRTN9010",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "235df901f11d502f863bb2a17db7ae30533f81efb18d44bef458074eed81d0b1"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/ddd4406f-3733-4a79-9187-479e4e2c0834/Small/872642WMRTN9010_X.jpg?v=1",
-        "sourceUrl": "https://www.balenciaga.com/en-us/men/discover-men/new-arrivals-for-men",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "jet-sneaker-white-black-872642WMRTN9010",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "235df901f11d502f863bb2a17db7ae30533f81efb18d44bef458074eed81d0b1"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/en-us/men/discover-men/new-arrivals-for-men",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/ddd4406f-3733-4a79-9187-479e4e2c0834/Small/872642WMRTN9010_X.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/en-us/men/discover-men/new-arrivals-for-men",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/4017916a7fc093c04b5a58d4c83c7d109abd07214c0467082b0325ca29710545.jpg"
-      },
-      "bodyColor": "#aca9a7"
-    },
-    {
-      "id": "arrival-3f4271c34b46d590d012",
-      "brand": "Balenciaga",
-      "name": "0 1 2 pace sneaker 2 colors",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|012pacesneaker2colors",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/pace-sneaker-black-A004VIWASYM1000.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 0 1 2 pace sneaker 2 colors",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
-        "style": "pace-sneaker-black-A004VIWASYM1000"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/pace-sneaker-black-A004VIWASYM1000.html",
-      "image": "https://balenciaga.dam.kering.com/asset/1b5bd636-da64-4b26-bd9a-8fe7a8a01a9f/Small/A004VIWASYM1000_X.jpg?v=1",
-      "style": "pace-sneaker-black-A004VIWASYM1000",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 995",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/pace-sneaker-black-A004VIWASYM1000.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "pace-sneaker-black-A004VIWASYM1000",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/1b5bd636-da64-4b26-bd9a-8fe7a8a01a9f/Small/A004VIWASYM1000_X.jpg?v=1",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "pace-sneaker-black-A004VIWASYM1000",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/1b5bd636-da64-4b26-bd9a-8fe7a8a01a9f/Small/A004VIWASYM1000_X.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/71e15c31d4ef83ed0f1fa96b1faf33904c2f6cf8c0c1886d437403c16c716946.jpg"
-      },
-      "bodyColor": "#222222"
-    },
-    {
-      "id": "arrival-66fbd257d6ae792093a5",
-      "brand": "Balenciaga",
-      "name": "0 1 2 pace sneaker 2 colors",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|012pacesneaker2colors",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/pace-sneaker-brown-A004VIWASYM2000.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 0 1 2 pace sneaker 2 colors",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
-        "style": "pace-sneaker-brown-A004VIWASYM2000"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/pace-sneaker-brown-A004VIWASYM2000.html",
-      "image": "https://balenciaga.dam.kering.com/asset/dbfee54d-d306-4418-a9fb-6a835a68e118/Small/A004VIWASYM2000_X.jpg?v=1",
-      "style": "pace-sneaker-brown-A004VIWASYM2000",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 995",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/pace-sneaker-brown-A004VIWASYM2000.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "pace-sneaker-brown-A004VIWASYM2000",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/dbfee54d-d306-4418-a9fb-6a835a68e118/Small/A004VIWASYM2000_X.jpg?v=1",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "pace-sneaker-brown-A004VIWASYM2000",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/dbfee54d-d306-4418-a9fb-6a835a68e118/Small/A004VIWASYM2000_X.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/067c0fe358d29584e64814a72849228d18aac13bdebb8df27a53e880137b5f72.jpg"
-      },
-      "bodyColor": "#46362d"
-    },
-    {
-      "id": "arrival-092efba1b74a2c48e903",
-      "brand": "Balenciaga",
-      "name": "0 1 2 runner sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|012runnersneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/runner-sneaker-multicolor-A0011YW3RMU8123.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 0 1 2 runner sneaker",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
-        "style": "runner-sneaker-multicolor-A0011YW3RMU8123"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/runner-sneaker-multicolor-A0011YW3RMU8123.html",
-      "image": "https://balenciaga.dam.kering.com/asset/f114c0fb-a5d7-4d83-9519-728182375601/Small/A0011YW3RMU8123_X.jpg?v=1",
-      "style": "runner-sneaker-multicolor-A0011YW3RMU8123",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,190",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/runner-sneaker-multicolor-A0011YW3RMU8123.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "runner-sneaker-multicolor-A0011YW3RMU8123",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/f114c0fb-a5d7-4d83-9519-728182375601/Small/A0011YW3RMU8123_X.jpg?v=1",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "runner-sneaker-multicolor-A0011YW3RMU8123",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "attribute:running",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/f114c0fb-a5d7-4d83-9519-728182375601/Small/A0011YW3RMU8123_X.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/40aec53fd17ac6c403db2801a3f5ac88b798f6af8544928bb9482e922a6e5a5f.jpg"
-      },
-      "bodyColor": "#5b6f47"
-    },
-    {
-      "id": "arrival-e14ab52990198debdcec",
-      "brand": "Balenciaga",
-      "name": "0 1 2 triple s.2 denim sneaker 2 colors",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|012triples2denimsneaker2colors",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-blue-865849WTSDN4000.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 0 1 2 triple s.2 denim sneaker 2 colors",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
-        "style": "triple-s.2-denim-sneaker-blue-865849WTSDN4000"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-blue-865849WTSDN4000.html",
-      "image": "https://balenciaga.dam.kering.com/asset/274edb13-f39a-48d1-9acf-9cdb168a718a/Small/865849WTSDN4000_X.jpg?v=2",
-      "style": "triple-s.2-denim-sneaker-blue-865849WTSDN4000",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,090",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-blue-865849WTSDN4000.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "triple-s.2-denim-sneaker-blue-865849WTSDN4000",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/274edb13-f39a-48d1-9acf-9cdb168a718a/Small/865849WTSDN4000_X.jpg?v=2",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "triple-s.2-denim-sneaker-blue-865849WTSDN4000",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/274edb13-f39a-48d1-9acf-9cdb168a718a/Small/865849WTSDN4000_X.jpg?v=2",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/8694c767ebfae48e8dfcd4c44beaec229f73c814c225efeb6ec922b5491a525a.jpg"
-      },
-      "bodyColor": "#465c6f"
-    },
-    {
-      "id": "arrival-93bede7c3893b7531a9b",
-      "brand": "Balenciaga",
-      "name": "0 1 2 triple s.2 denim sneaker 2 colors",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|012triples2denimsneaker2colors",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-black-865849WTSDN1000.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 0 1 2 triple s.2 denim sneaker 2 colors",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
-        "style": "triple-s.2-denim-sneaker-black-865849WTSDN1000"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-black-865849WTSDN1000.html",
-      "image": "https://balenciaga.dam.kering.com/asset/12990d77-1861-46f0-a299-0b84f1ce8595/Small/865849WTSDN1000_X.jpg?v=1",
-      "style": "triple-s.2-denim-sneaker-black-865849WTSDN1000",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,090",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-black-865849WTSDN1000.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "triple-s.2-denim-sneaker-black-865849WTSDN1000",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/12990d77-1861-46f0-a299-0b84f1ce8595/Small/865849WTSDN1000_X.jpg?v=1",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "triple-s.2-denim-sneaker-black-865849WTSDN1000",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/12990d77-1861-46f0-a299-0b84f1ce8595/Small/865849WTSDN1000_X.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/facdd949fac60305f697be44389aeda56bf468a88e99714b4c7a43fa375f643c.jpg"
-      },
-      "bodyColor": "#2f3131"
-    },
-    {
-      "id": "arrival-2f840de7f9d765f65a84",
-      "brand": "Balenciaga",
-      "name": "0 1 2 triple s.2 gradient sneaker 3 colors",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|012triples2gradientsneaker3colors",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/triple-s.2-gradient-sneaker-green-beige-grey-865849WTR2G4491.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 0 1 2 triple s.2 gradient sneaker 3 colors",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
-        "style": "triple-s.2-gradient-sneaker-green-beige-grey-865849WTR2G4491"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/triple-s.2-gradient-sneaker-green-beige-grey-865849WTR2G4491.html",
-      "image": "https://balenciaga.dam.kering.com/asset/c391be01-3fd4-4ffc-bdd0-f0557791ccc2/Small/865849WTR2G4491_X.jpg?v=2",
-      "style": "triple-s.2-gradient-sneaker-green-beige-grey-865849WTR2G4491",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,090",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/triple-s.2-gradient-sneaker-green-beige-grey-865849WTR2G4491.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "triple-s.2-gradient-sneaker-green-beige-grey-865849WTR2G4491",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/c391be01-3fd4-4ffc-bdd0-f0557791ccc2/Small/865849WTR2G4491_X.jpg?v=2",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "triple-s.2-gradient-sneaker-green-beige-grey-865849WTR2G4491",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/c391be01-3fd4-4ffc-bdd0-f0557791ccc2/Small/865849WTR2G4491_X.jpg?v=2",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/7a1ea02230316c31b2e5e6ca449dd14ce140b6529e13586a7c2338469b139cc1.jpg"
-      },
-      "bodyColor": "#d3cebb"
-    },
-    {
-      "id": "arrival-0298ab531668cd38e182",
-      "brand": "Balenciaga",
-      "name": "0 1 2 triple s.2 sneaker Men 5 colors",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|012triples2sneakermen5colors",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/triple-s.2-sneaker-black-dark-grey-865849WTRS21011.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 0 1 2 triple s.2 sneaker Men 5 colors",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
-        "style": "triple-s.2-sneaker-black-dark-grey-865849WTRS21011"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/triple-s.2-sneaker-black-dark-grey-865849WTRS21011.html",
-      "image": "https://balenciaga.dam.kering.com/asset/a9f29023-297f-44e2-bf64-dcb37591c9e4/Small/865849WTRS21011_X.jpg?v=5",
-      "style": "triple-s.2-sneaker-black-dark-grey-865849WTRS21011",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,090",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/triple-s.2-sneaker-black-dark-grey-865849WTRS21011.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "triple-s.2-sneaker-black-dark-grey-865849WTRS21011",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/a9f29023-297f-44e2-bf64-dcb37591c9e4/Small/865849WTRS21011_X.jpg?v=5",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "triple-s.2-sneaker-black-dark-grey-865849WTRS21011",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/a9f29023-297f-44e2-bf64-dcb37591c9e4/Small/865849WTRS21011_X.jpg?v=5",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/39368b3c5af87577ddd90a8b5839878486ee6a40d939e792d625d4601ae6b25b.jpg"
-      },
-      "bodyColor": "#1e1f20"
-    },
-    {
-      "id": "arrival-f84fa2e82c654f672361",
-      "brand": "Balenciaga",
-      "name": "0 1 runner led sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|01runnerledsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/runner-led-sneaker-black-A0011YWRNLD1000.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 0 1 runner led sneaker",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
-        "style": "runner-led-sneaker-black-A0011YWRNLD1000"
-      },
-      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/runner-led-sneaker-black-A0011YWRNLD1000.html",
-      "image": "https://balenciaga.dam.kering.com/asset/421d4356-fc14-4b22-b7f3-1435fd198dd8/Small/A0011YWRNLD1000_X.jpg?v=2",
-      "style": "runner-led-sneaker-black-A0011YWRNLD1000",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,790",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/runner-led-sneaker-black-A0011YWRNLD1000.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "runner-led-sneaker-black-A0011YWRNLD1000",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/421d4356-fc14-4b22-b7f3-1435fd198dd8/Small/A0011YWRNLD1000_X.jpg?v=2",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "runner-led-sneaker-black-A0011YWRNLD1000",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "attribute:running",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/421d4356-fc14-4b22-b7f3-1435fd198dd8/Small/A0011YWRNLD1000_X.jpg?v=2",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/f633224b178090b51e476cbb9a11f2ade58e78e4c8f548141b1edd3602067000.jpg"
-      },
-      "bodyColor": "#1f2021"
-    },
-    {
       "id": "official-a86faaac89f85234",
       "brand": "Balenciaga",
-      "name": "3xl tulle sneaker 2 colors",
+      "name": "3xl tulle sneaker",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
@@ -1472,7 +530,7 @@
     {
       "id": "arrival-58042b68b3b7cad58cc4",
       "brand": "Balenciaga",
-      "name": "3xl tulle sneaker 2 colors",
+      "name": "3xl tulle sneaker",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
@@ -1498,7 +556,7 @@
       "image": "https://balenciaga.dam.kering.com/asset/0d590dad-bb9e-4682-92a6-e8f492a633d5/Medium/734731W3XPT1170_X.jpg?v=1",
       "style": "3xl-tulle-sneaker-grey-yellow-734731W3XPT1170",
       "styleType": "official-product-id",
-      "colorway": "",
+      "colorway": "grey yellow",
       "colors": [],
       "gender": "",
       "material": "",
@@ -1566,7 +624,7 @@
     {
       "id": "arrival-1192b057cd67bc9bcdeb",
       "brand": "Balenciaga",
-      "name": "ballet sneaker 3 colors",
+      "name": "ballet sneaker",
       "category": "hybrid",
       "productType": "hybrid",
       "fitReasons": [
@@ -1591,7 +649,7 @@
       "image": "https://balenciaga.dam.kering.com/asset/ac50ab7b-8fff-43f0-990a-b7e49b08b25b/Medium/871962WBLLT1000_X.jpg?v=1",
       "style": "ballet-sneaker-black-871962WBLLT1000",
       "styleType": "official-product-id",
-      "colorway": "",
+      "colorway": "black",
       "colors": [],
       "gender": "",
       "material": "",
@@ -1669,63 +727,63 @@
       "bodyColor": "#20222e"
     },
     {
-      "id": "arrival-c966ddf2447c66c0beb6",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
+      "id": "arrival-557f22a5e16cba9b4f13",
+      "brand": "Balenciaga",
+      "name": "hamptons stickers sneaker",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
         "공식 스니커즈 실루엣·컬러 참고",
         "럭셔리 스니커즈 디자인 참고"
       ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
+      "modelKey": "balenciaga|012hamptonsstickerssneakermen",
       "releaseDate": "",
       "releaseStatus": "released",
       "arrivalEvidence": {
         "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-travertine-deep-mahogany-867926V3MS03063.html",
+        "brand": "Balenciaga",
+        "productUrl": "https://www.balenciaga.com/en-us/hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080.html",
         "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
+        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
         "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352",
-        "style": "orbit-flash-sneaker-travertine-deep-mahogany-867926V3MS03063"
+        "excerpt": "Official New / New Arrivals listing: 0 1 2 hamptons stickers sneaker Men",
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
+        "style": "hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080"
       },
       "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-travertine-deep-mahogany-867926V3MS03063.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/7d5c394e-4fec-4a11-89c0-a9cf2e5feb09/Large/867926V3MS03063_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-travertine-deep-mahogany-867926V3MS03063",
+      "url": "https://www.balenciaga.com/en-us/hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080.html",
+      "image": "https://balenciaga.dam.kering.com/asset/485cb78b-fe1e-4cfb-956c-38014342e8f5/Small/841765WHPSM1080_X.jpg?v=1",
+      "style": "hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080",
       "styleType": "official-product-id",
-      "colorway": "travertine deep mahogany",
+      "colorway": "black multicolor",
       "colors": [],
       "gender": "",
       "material": "",
-      "priceLabel": "",
+      "priceLabel": "$ 1,050",
       "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
       "officialCategory": "스니커즈",
       "sourceSignals": [],
       "socialMetrics": [],
       "officialProductEvidence": {
         "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-travertine-deep-mahogany-867926V3MS03063.html",
+        "url": "https://www.balenciaga.com/en-us/hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080.html",
         "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-travertine-deep-mahogany-867926V3MS03063",
+        "brand": "Balenciaga",
+        "style": "hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080",
         "identifierType": "official-product-id",
         "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352"
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
       },
       "officialImageEvidence": {
         "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/7d5c394e-4fec-4a11-89c0-a9cf2e5feb09/Large/867926V3MS03063_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
+        "url": "https://balenciaga.dam.kering.com/asset/485cb78b-fe1e-4cfb-956c-38014342e8f5/Small/841765WHPSM1080_X.jpg?v=1",
+        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
         "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-travertine-deep-mahogany-867926V3MS03063",
+        "brand": "Balenciaga",
+        "style": "hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080",
         "identifierType": "official-product-id",
         "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352"
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
       },
       "collaborationBrands": [],
       "popularity": {
@@ -1739,7 +797,7 @@
       "archiveGroup": "luxury",
       "country": "US",
       "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
+      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
         "checkedAt": "2026-10-29"
@@ -1748,24 +806,306 @@
       "searchConceptIds": [
         "category:footwear",
         "category:sneakers",
-        "brand:bottegaveneta"
+        "brand:balenciaga"
       ],
       "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/7d5c394e-4fec-4a11-89c0-a9cf2e5feb09/Large/867926V3MS03063_A.jpg?v=1",
+        "image": "https://balenciaga.dam.kering.com/asset/485cb78b-fe1e-4cfb-956c-38014342e8f5/Small/841765WHPSM1080_X.jpg?v=1",
         "scale": 1.6,
         "offsetY": -20,
         "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
+        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/b4a2ef0e0db66695d9819091e30007f7ced1d0d8ca9a57b73e943e8615ef14e6.jpg"
+        "cachedPath": "/images/52d0280e02dd9eb2c3c5f11a7dcab2fc936262ee7d5564c298f705ebdbc40ce0.jpg"
       },
-      "bodyColor": "#afa682"
+      "bodyColor": "#212122"
+    },
+    {
+      "id": "arrival-6127f9f012dd243098ef",
+      "brand": "Balenciaga",
+      "name": "jet sneaker",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "balenciaga|012jetsneaker5colors",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Balenciaga",
+        "productUrl": "https://www.balenciaga.com/en-us/jet-sneaker-white-black-872642WMRTN9010.html",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.balenciaga.com/en-us/men/discover-men/new-arrivals-for-men",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 0 1 2 jet sneaker 5 colors",
+        "contentHash": "235df901f11d502f863bb2a17db7ae30533f81efb18d44bef458074eed81d0b1",
+        "style": "jet-sneaker-white-black-872642WMRTN9010"
+      },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
+      "url": "https://www.balenciaga.com/en-us/jet-sneaker-white-black-872642WMRTN9010.html",
+      "image": "https://balenciaga.dam.kering.com/asset/ddd4406f-3733-4a79-9187-479e4e2c0834/Small/872642WMRTN9010_X.jpg?v=1",
+      "style": "jet-sneaker-white-black-872642WMRTN9010",
+      "styleType": "official-product-id",
+      "colorway": "white black",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$ 1,090",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.balenciaga.com/en-us/jet-sneaker-white-black-872642WMRTN9010.html",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Balenciaga",
+        "style": "jet-sneaker-white-black-872642WMRTN9010",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "235df901f11d502f863bb2a17db7ae30533f81efb18d44bef458074eed81d0b1"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://balenciaga.dam.kering.com/asset/ddd4406f-3733-4a79-9187-479e4e2c0834/Small/872642WMRTN9010_X.jpg?v=1",
+        "sourceUrl": "https://www.balenciaga.com/en-us/men/discover-men/new-arrivals-for-men",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Balenciaga",
+        "style": "jet-sneaker-white-black-872642WMRTN9010",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "235df901f11d502f863bb2a17db7ae30533f81efb18d44bef458074eed81d0b1"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.balenciaga.com/en-us/men/discover-men/new-arrivals-for-men",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-29"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:balenciaga"
+      ],
+      "presentation": {
+        "image": "https://balenciaga.dam.kering.com/asset/ddd4406f-3733-4a79-9187-479e4e2c0834/Small/872642WMRTN9010_X.jpg?v=1",
+        "scale": 1.6,
+        "offsetY": -20,
+        "view": "side",
+        "sourceUrl": "https://www.balenciaga.com/en-us/men/discover-men/new-arrivals-for-men",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "reviewed-official-sku-view-slot",
+        "cachedPath": "/images/4017916a7fc093c04b5a58d4c83c7d109abd07214c0467082b0325ca29710545.jpg"
+      },
+      "bodyColor": "#aca9a7"
+    },
+    {
+      "id": "arrival-3f4271c34b46d590d012",
+      "brand": "Balenciaga",
+      "name": "pace sneaker",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "balenciaga|012pacesneaker2colors",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Balenciaga",
+        "productUrl": "https://www.balenciaga.com/en-us/pace-sneaker-black-A004VIWASYM1000.html",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 0 1 2 pace sneaker 2 colors",
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
+        "style": "pace-sneaker-black-A004VIWASYM1000"
+      },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
+      "url": "https://www.balenciaga.com/en-us/pace-sneaker-black-A004VIWASYM1000.html",
+      "image": "https://balenciaga.dam.kering.com/asset/1b5bd636-da64-4b26-bd9a-8fe7a8a01a9f/Small/A004VIWASYM1000_X.jpg?v=1",
+      "style": "pace-sneaker-black-A004VIWASYM1000",
+      "styleType": "official-product-id",
+      "colorway": "black",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$ 995",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.balenciaga.com/en-us/pace-sneaker-black-A004VIWASYM1000.html",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Balenciaga",
+        "style": "pace-sneaker-black-A004VIWASYM1000",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://balenciaga.dam.kering.com/asset/1b5bd636-da64-4b26-bd9a-8fe7a8a01a9f/Small/A004VIWASYM1000_X.jpg?v=1",
+        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Balenciaga",
+        "style": "pace-sneaker-black-A004VIWASYM1000",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-29"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:balenciaga"
+      ],
+      "presentation": {
+        "image": "https://balenciaga.dam.kering.com/asset/1b5bd636-da64-4b26-bd9a-8fe7a8a01a9f/Small/A004VIWASYM1000_X.jpg?v=1",
+        "scale": 1.6,
+        "offsetY": -20,
+        "view": "side",
+        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "reviewed-official-sku-view-slot",
+        "cachedPath": "/images/71e15c31d4ef83ed0f1fa96b1faf33904c2f6cf8c0c1886d437403c16c716946.jpg"
+      },
+      "bodyColor": "#222222"
+    },
+    {
+      "id": "arrival-66fbd257d6ae792093a5",
+      "brand": "Balenciaga",
+      "name": "pace sneaker",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "balenciaga|012pacesneaker2colors",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Balenciaga",
+        "productUrl": "https://www.balenciaga.com/en-us/pace-sneaker-brown-A004VIWASYM2000.html",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 0 1 2 pace sneaker 2 colors",
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
+        "style": "pace-sneaker-brown-A004VIWASYM2000"
+      },
+      "firstPublishedAt": "2026-10-28T09:53:34.688Z",
+      "url": "https://www.balenciaga.com/en-us/pace-sneaker-brown-A004VIWASYM2000.html",
+      "image": "https://balenciaga.dam.kering.com/asset/dbfee54d-d306-4418-a9fb-6a835a68e118/Small/A004VIWASYM2000_X.jpg?v=1",
+      "style": "pace-sneaker-brown-A004VIWASYM2000",
+      "styleType": "official-product-id",
+      "colorway": "brown",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$ 995",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.balenciaga.com/en-us/pace-sneaker-brown-A004VIWASYM2000.html",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Balenciaga",
+        "style": "pace-sneaker-brown-A004VIWASYM2000",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://balenciaga.dam.kering.com/asset/dbfee54d-d306-4418-a9fb-6a835a68e118/Small/A004VIWASYM2000_X.jpg?v=1",
+        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Balenciaga",
+        "style": "pace-sneaker-brown-A004VIWASYM2000",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-29"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:balenciaga"
+      ],
+      "presentation": {
+        "image": "https://balenciaga.dam.kering.com/asset/dbfee54d-d306-4418-a9fb-6a835a68e118/Small/A004VIWASYM2000_X.jpg?v=1",
+        "scale": 1.6,
+        "offsetY": -20,
+        "view": "side",
+        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "reviewed-official-sku-view-slot",
+        "cachedPath": "/images/067c0fe358d29584e64814a72849228d18aac13bdebb8df27a53e880137b5f72.jpg"
+      },
+      "bodyColor": "#46362d"
     },
     {
       "id": "arrival-e457fc82abbf1f37efd6",
       "brand": "Balenciaga",
-      "name": "radar sneaker Women",
+      "name": "radar sneaker",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
@@ -1791,7 +1131,7 @@
       "image": "https://balenciaga.dam.kering.com/asset/463478a1-2e93-432f-b4bf-6d704403bd1a/Medium/865704WSTEO9010_X.jpg?v=3",
       "style": "radar-sneaker-white-black-865704WSTEO9010",
       "styleType": "official-product-id",
-      "colorway": "",
+      "colorway": "white black",
       "colors": [],
       "gender": "",
       "material": "",
@@ -1857,63 +1197,63 @@
       "bodyColor": "#e2e2e2"
     },
     {
-      "id": "arrival-984ca7b7d93b10190d0c",
+      "id": "arrival-f84fa2e82c654f672361",
       "brand": "Balenciaga",
-      "name": "triple s.2 denim sneaker",
+      "name": "runner led sneaker",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
         "공식 스니커즈 실루엣·컬러 참고",
         "럭셔리 스니커즈 디자인 참고"
       ],
-      "modelKey": "balenciaga|triples2denimsneaker",
+      "modelKey": "balenciaga|01runnerledsneaker",
       "releaseDate": "",
       "releaseStatus": "released",
       "arrivalEvidence": {
         "verified": true,
         "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-blue-865851WTSDN4000.html",
+        "productUrl": "https://www.balenciaga.com/en-us/runner-led-sneaker-black-A0011YWRNLD1000.html",
         "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
+        "url": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
         "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: triple s.2 denim sneaker",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2",
-        "style": "triple-s.2-denim-sneaker-blue-865851WTSDN4000"
+        "excerpt": "Official New / New Arrivals listing: 0 1 runner led sneaker",
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397",
+        "style": "runner-led-sneaker-black-A0011YWRNLD1000"
       },
       "firstPublishedAt": "2026-10-28T09:53:34.688Z",
-      "url": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-blue-865851WTSDN4000.html",
-      "image": "https://balenciaga.dam.kering.com/asset/2b92fa57-3fbd-45d9-a98b-467083d710c4/Medium/865851WTSDN4000_X.jpg?v=2",
-      "style": "triple-s.2-denim-sneaker-blue-865851WTSDN4000",
+      "url": "https://www.balenciaga.com/en-us/runner-led-sneaker-black-A0011YWRNLD1000.html",
+      "image": "https://balenciaga.dam.kering.com/asset/421d4356-fc14-4b22-b7f3-1435fd198dd8/Small/A0011YWRNLD1000_X.jpg?v=2",
+      "style": "runner-led-sneaker-black-A0011YWRNLD1000",
       "styleType": "official-product-id",
-      "colorway": "blue",
+      "colorway": "black",
       "colors": [],
       "gender": "",
       "material": "",
-      "priceLabel": "$ 1,090",
+      "priceLabel": "$ 1,790",
       "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
       "officialCategory": "스니커즈",
       "sourceSignals": [],
       "socialMetrics": [],
       "officialProductEvidence": {
         "verified": true,
-        "url": "https://www.balenciaga.com/en-us/triple-s.2-denim-sneaker-blue-865851WTSDN4000.html",
+        "url": "https://www.balenciaga.com/en-us/runner-led-sneaker-black-A0011YWRNLD1000.html",
         "verifiedAt": "2026-10-28T08:52:16.113Z",
         "brand": "Balenciaga",
-        "style": "triple-s.2-denim-sneaker-blue-865851WTSDN4000",
+        "style": "runner-led-sneaker-black-A0011YWRNLD1000",
         "identifierType": "official-product-id",
         "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2"
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
       },
       "officialImageEvidence": {
         "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/2b92fa57-3fbd-45d9-a98b-467083d710c4/Medium/865851WTSDN4000_X.jpg?v=2",
-        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
+        "url": "https://balenciaga.dam.kering.com/asset/421d4356-fc14-4b22-b7f3-1435fd198dd8/Small/A0011YWRNLD1000_X.jpg?v=2",
+        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
         "verifiedAt": "2026-10-28T08:52:16.113Z",
         "brand": "Balenciaga",
-        "style": "triple-s.2-denim-sneaker-blue-865851WTSDN4000",
+        "style": "runner-led-sneaker-black-A0011YWRNLD1000",
         "identifierType": "official-product-id",
         "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2"
+        "contentHash": "8fb4d832f4b9431a10c5da6fa9d6cb21513ccc7b796cc10ecda077f125760397"
       },
       "collaborationBrands": [],
       "popularity": {
@@ -1927,7 +1267,7 @@
       "archiveGroup": "luxury",
       "country": "US",
       "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
+      "productEvidenceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
       "eligibility": {
         "passed": true,
         "checkedAt": "2026-10-29"
@@ -1936,19 +1276,20 @@
       "searchConceptIds": [
         "category:footwear",
         "category:sneakers",
+        "attribute:running",
         "brand:balenciaga"
       ],
       "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/2b92fa57-3fbd-45d9-a98b-467083d710c4/Medium/865851WTSDN4000_X.jpg?v=2",
+        "image": "https://balenciaga.dam.kering.com/asset/421d4356-fc14-4b22-b7f3-1435fd198dd8/Small/A0011YWRNLD1000_X.jpg?v=2",
         "scale": 1.6,
         "offsetY": -20,
         "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
+        "sourceUrl": "https://www.balenciaga.com/search?cgid=men_shoes_sneakers",
         "checkedAt": "2026-10-28T08:52:16.113Z",
         "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/fff877e738161e4fded95226238bbde6cd501added242f367fd38b18c215a749.jpg"
+        "cachedPath": "/images/f633224b178090b51e476cbb9a11f2ade58e78e4c8f548141b1edd3602067000.jpg"
       },
-      "bodyColor": "#455c6f"
+      "bodyColor": "#1f2021"
     },
     {
       "id": "arrival-74e48f643aac9d063cb4",
@@ -3320,7 +2661,7 @@
     {
       "id": "arrival-0b38dd1fa9ffc31400a6",
       "brand": "ASICS",
-      "name": "GT-1000 15 Men's Running Shoes • 6 Colors",
+      "name": "GT-1000 15 Men's Running Shoes •",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
@@ -3969,1045 +3310,6 @@
       "bodyColor": "#714741"
     },
     {
-      "id": "arrival-410b562a6366af2d888a",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-terra-pink-olive-oil-867921V3MS25720.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "3ca484e3a7c2755b2d2289656240987b26ea60062b49bea90f5d678a9bf808bd",
-        "style": "orbit-flash-sneaker-terra-pink-olive-oil-867921V3MS25720"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-terra-pink-olive-oil-867921V3MS25720.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/832f2355-c81a-4a81-9fe0-86419e9f6e35/Large/867921V3MS25720_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-terra-pink-olive-oil-867921V3MS25720",
-      "styleType": "official-product-id",
-      "colorway": "terra pink olive oil",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-terra-pink-olive-oil-867921V3MS25720.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-terra-pink-olive-oil-867921V3MS25720",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "3ca484e3a7c2755b2d2289656240987b26ea60062b49bea90f5d678a9bf808bd"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/832f2355-c81a-4a81-9fe0-86419e9f6e35/Large/867921V3MS25720_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-terra-pink-olive-oil-867921V3MS25720",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "3ca484e3a7c2755b2d2289656240987b26ea60062b49bea90f5d678a9bf808bd"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/832f2355-c81a-4a81-9fe0-86419e9f6e35/Large/867921V3MS25720_A.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/2204d47dae629d8aaf33523dd80eb7c7da09c0dae4032d690dcb34fc5152f16c.jpg"
-      },
-      "bodyColor": "#d1a799"
-    },
-    {
-      "id": "arrival-233cd630dbbf5c25380d",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-olive-oil-terra-pink-867921V3MS21354.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "3ca484e3a7c2755b2d2289656240987b26ea60062b49bea90f5d678a9bf808bd",
-        "style": "orbit-flash-sneaker-olive-oil-terra-pink-867921V3MS21354"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-olive-oil-terra-pink-867921V3MS21354.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/ff14a8e5-420e-4f5d-885a-2d0f836448e0/Large/867921V3MS21354_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-olive-oil-terra-pink-867921V3MS21354",
-      "styleType": "official-product-id",
-      "colorway": "olive oil terra pink",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-olive-oil-terra-pink-867921V3MS21354.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-olive-oil-terra-pink-867921V3MS21354",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "3ca484e3a7c2755b2d2289656240987b26ea60062b49bea90f5d678a9bf808bd"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/ff14a8e5-420e-4f5d-885a-2d0f836448e0/Large/867921V3MS21354_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-olive-oil-terra-pink-867921V3MS21354",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "3ca484e3a7c2755b2d2289656240987b26ea60062b49bea90f5d678a9bf808bd"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/ff14a8e5-420e-4f5d-885a-2d0f836448e0/Large/867921V3MS21354_A.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/9b614a3a5e67769bdcba53d4ed5712101bdd763cdf0f7f3179016200469d67fb.jpg"
-      },
-      "bodyColor": "#584323"
-    },
-    {
-      "id": "arrival-753cdb8ec2daa9568f75",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-olive-oil-terra-pink-867944V3MS21354.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363",
-        "style": "orbit-flash-sneaker-olive-oil-terra-pink-867944V3MS21354"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-olive-oil-terra-pink-867944V3MS21354.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/08d378e7-1d93-45cc-9856-7b97cf09df7e/Large/867944V3MS21354_A.jpg?v=2",
-      "style": "orbit-flash-sneaker-olive-oil-terra-pink-867944V3MS21354",
-      "styleType": "official-product-id",
-      "colorway": "olive oil terra pink",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-olive-oil-terra-pink-867944V3MS21354.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-olive-oil-terra-pink-867944V3MS21354",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/08d378e7-1d93-45cc-9856-7b97cf09df7e/Large/867944V3MS21354_A.jpg?v=2",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-olive-oil-terra-pink-867944V3MS21354",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/08d378e7-1d93-45cc-9856-7b97cf09df7e/Large/867944V3MS21354_A.jpg?v=2",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/b07d095861103a4db32b803d529aaaa0fb5e4cab86e83753f11ec23b6fc66b0b.jpg"
-      },
-      "bodyColor": "#554222"
-    },
-    {
-      "id": "arrival-dda986d6d43101bfe1e7",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-terra-pink-olive-oil-867944V3MS25720.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363",
-        "style": "orbit-flash-sneaker-terra-pink-olive-oil-867944V3MS25720"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-terra-pink-olive-oil-867944V3MS25720.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/2920e31a-c0b2-4b8b-923b-89f744595379/Large/867944V3MS25720_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-terra-pink-olive-oil-867944V3MS25720",
-      "styleType": "official-product-id",
-      "colorway": "terra pink olive oil",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-terra-pink-olive-oil-867944V3MS25720.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-terra-pink-olive-oil-867944V3MS25720",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/2920e31a-c0b2-4b8b-923b-89f744595379/Large/867944V3MS25720_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-terra-pink-olive-oil-867944V3MS25720",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/2920e31a-c0b2-4b8b-923b-89f744595379/Large/867944V3MS25720_A.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/027d962f35d877abe6f04763fd1243e088df3350444e7d29fae5f0cabc670cf7.jpg"
-      },
-      "bodyColor": "#e1b9ac"
-    },
-    {
-      "id": "arrival-71f9baf4159c60cb65df",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-optic-white-espresso-867944V3MS29163.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363",
-        "style": "orbit-flash-sneaker-optic-white-espresso-867944V3MS29163"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-optic-white-espresso-867944V3MS29163.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/39407ecd-c4a0-48bc-af35-905e7655f835/Large/867944V3MS29163_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-optic-white-espresso-867944V3MS29163",
-      "styleType": "official-product-id",
-      "colorway": "optic white espresso",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-optic-white-espresso-867944V3MS29163.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-optic-white-espresso-867944V3MS29163",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/39407ecd-c4a0-48bc-af35-905e7655f835/Large/867944V3MS29163_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-optic-white-espresso-867944V3MS29163",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [
-        "brown"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "color:brown",
-        "color:white",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/39407ecd-c4a0-48bc-af35-905e7655f835/Large/867944V3MS29163_A.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/f034141ee476c9a189be4744284e88bd0c52fb9a28ec9283796c577a1e6b7e99.jpg"
-      },
-      "bodyColor": "#2c221e"
-    },
-    {
-      "id": "arrival-ae30da4b61f7e2c5227f",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-white-867941V65C09013.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363",
-        "style": "orbit-flash-sneaker-white-867941V65C09013"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-white-867941V65C09013.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/db0ac97b-135e-4c51-81cd-065ba0272f68/Large/867941V65C09013_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-white-867941V65C09013",
-      "styleType": "official-product-id",
-      "colorway": "white",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-white-867941V65C09013.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-white-867941V65C09013",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/db0ac97b-135e-4c51-81cd-065ba0272f68/Large/867941V65C09013_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-white-867941V65C09013",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "color:white",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/db0ac97b-135e-4c51-81cd-065ba0272f68/Large/867941V65C09013_A.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/617d240fd7e71d03397bf840447106dbb61514350df7439e452236e4e498eaec.jpg"
-      },
-      "bodyColor": "#e8e8e5"
-    },
-    {
-      "id": "arrival-a988605f2759722e27b2",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-taxi-denim-867944V3MS27386.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363",
-        "style": "orbit-flash-sneaker-taxi-denim-867944V3MS27386"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-taxi-denim-867944V3MS27386.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/becff2fd-0830-49a5-b88c-b20ab7f8394f/Large/867944V3MS27386_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-taxi-denim-867944V3MS27386",
-      "styleType": "official-product-id",
-      "colorway": "taxi denim",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-taxi-denim-867944V3MS27386.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-taxi-denim-867944V3MS27386",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/becff2fd-0830-49a5-b88c-b20ab7f8394f/Large/867944V3MS27386_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-taxi-denim-867944V3MS27386",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/becff2fd-0830-49a5-b88c-b20ab7f8394f/Large/867944V3MS27386_A.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/7987abd5c83fd091c7ab6014254e0b84e901bed716b633fddb0aa3566055e684.jpg"
-      },
-      "bodyColor": "#e3cb6f"
-    },
-    {
-      "id": "arrival-ff03196516e32e93d678",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-travertine-deep-mahogany-867941V3MS03063.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363",
-        "style": "orbit-flash-sneaker-travertine-deep-mahogany-867941V3MS03063"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-travertine-deep-mahogany-867941V3MS03063.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/a39ac9f6-0566-495e-a38e-19f054e694ec/Large/867941V3MS03063_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-travertine-deep-mahogany-867941V3MS03063",
-      "styleType": "official-product-id",
-      "colorway": "travertine deep mahogany",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-travertine-deep-mahogany-867941V3MS03063.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-travertine-deep-mahogany-867941V3MS03063",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/a39ac9f6-0566-495e-a38e-19f054e694ec/Large/867941V3MS03063_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-travertine-deep-mahogany-867941V3MS03063",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "127f991fcfce697b79deba95f71f4c8c5df0b367ae1dc0f9d7ea060727c78363"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/a39ac9f6-0566-495e-a38e-19f054e694ec/Large/867941V3MS03063_A.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=new-women-shoes&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_superMicroCategoryFrontBv&prefv3=Sneakers&prefn4=countryInclusion&prefv4=US",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/3ccb8b0df44a0e36525f99c935bb424865d27850662ee84c6ec78916accf1a77.jpg"
-      },
-      "bodyColor": "#aea582"
-    },
-    {
-      "id": "arrival-b5764f726c30bb57b1ac",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-alabaster-cardinal-867924V65D19174.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352",
-        "style": "orbit-flash-sneaker-alabaster-cardinal-867924V65D19174"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-alabaster-cardinal-867924V65D19174.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/3a6ff972-2582-47ef-a4de-81ff56f34715/Large/867924V65D19174_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-alabaster-cardinal-867924V65D19174",
-      "styleType": "official-product-id",
-      "colorway": "alabaster cardinal",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-alabaster-cardinal-867924V65D19174.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-alabaster-cardinal-867924V65D19174",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/3a6ff972-2582-47ef-a4de-81ff56f34715/Large/867924V65D19174_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-alabaster-cardinal-867924V65D19174",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/3a6ff972-2582-47ef-a4de-81ff56f34715/Large/867924V65D19174_A.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/e0694dd65cf0736084e1550ffef74cb273dc6b8dfd0755ac39903e7ec57ea32c.jpg"
-      },
-      "bodyColor": "#b8a794"
-    },
-    {
-      "id": "arrival-59f2ce34196268ccb3a5",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-blu-venezia-867924V65D14015.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352",
-        "style": "orbit-flash-sneaker-blu-venezia-867924V65D14015"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-blu-venezia-867924V65D14015.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/229de7e0-2afe-415f-9e30-99783a5af692/Large/867924V65D14015_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-blu-venezia-867924V65D14015",
-      "styleType": "official-product-id",
-      "colorway": "blu venezia",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-blu-venezia-867924V65D14015.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-blu-venezia-867924V65D14015",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/229de7e0-2afe-415f-9e30-99783a5af692/Large/867924V65D14015_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-blu-venezia-867924V65D14015",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/229de7e0-2afe-415f-9e30-99783a5af692/Large/867924V65D14015_A.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/5a351e7306e85ee22971254d4ca330dba6d47b5922b74f1d3859e92ff5609206.jpg"
-      },
-      "bodyColor": "#47586e"
-    },
-    {
-      "id": "arrival-6d337d6d36b846db24bb",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "bottegaveneta|orbitflashsneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Bottega Veneta",
-        "productUrl": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-camelia-867926V65C05052.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Orbit Flash Sneaker",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352",
-        "style": "orbit-flash-sneaker-camelia-867926V65C05052"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-camelia-867926V65C05052.html",
-      "image": "https://bottega-veneta.dam.kering.com/asset/a9f87c0c-b6ec-4042-ab5c-bc6f6f5d8b52/Large/867926V65C05052_A.jpg?v=1",
-      "style": "orbit-flash-sneaker-camelia-867926V65C05052",
-      "styleType": "official-product-id",
-      "colorway": "camelia",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.bottegaveneta.com/en-us/orbit-flash-sneaker-camelia-867926V65C05052.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-camelia-867926V65C05052",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://bottega-veneta.dam.kering.com/asset/a9f87c0c-b6ec-4042-ab5c-bc6f6f5d8b52/Large/867926V65C05052_A.jpg?v=1",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Bottega Veneta",
-        "style": "orbit-flash-sneaker-camelia-867926V65C05052",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "20b86eaf6c059d22f7b9ad2b4ca7f5f4ecfc0971a0d11d6c09e6fcd62c5f5352"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:bottegaveneta"
-      ],
-      "presentation": {
-        "image": "https://bottega-veneta.dam.kering.com/asset/a9f87c0c-b6ec-4042-ab5c-bc6f6f5d8b52/Large/867926V65C05052_A.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.bottegaveneta.com/en-us/searchajax?cgid=men-shoes-new&prefn1=akeneo_employeesSalesVisible&prefn2=akeneo_markDownInto&prefn3=countryInclusion&prefv1=false&prefv2=no_season&prefv3=US&srule=Price+ascending&start=16&sz=16",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/17842241b85e68c18555b6c43dfa836387a9b9c9c12f60d61027dcfaed32db71.jpg"
-      },
-      "bodyColor": "#c27f7f"
-    },
-    {
       "id": "new-20260923-649152cee92d14ae",
       "brand": "Bottega Veneta",
       "name": "Orbit Sneaker",
@@ -5201,7 +3503,7 @@
     {
       "id": "arrival-57acc5af07331d8df879",
       "brand": "Balenciaga",
-      "name": "radar gradient lines sneaker Women 4 colors",
+      "name": "radar gradient lines sneaker",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
@@ -5227,7 +3529,7 @@
       "image": "https://balenciaga.dam.kering.com/asset/5e2959fc-a974-4fb8-a207-cb92a646edb5/Medium/865704WSTGL1160_X.jpg?v=1",
       "style": "radar-gradient-lines-sneaker-grey-light-grey-red-865704WSTGL1160",
       "styleType": "official-product-id",
-      "colorway": "",
+      "colorway": "grey light grey red",
       "colors": [],
       "gender": "",
       "material": "",
@@ -5509,7 +3811,7 @@
       "image": "https://bottega-veneta.dam.kering.com/asset/230dba97-e3aa-4a81-bb01-045a18893ec6/Large/876113V3QE09866_A.jpg?v=1",
       "style": "serena-sneaker-dark-caramel-20-876113V3QE09866",
       "styleType": "official-product-id",
-      "colorway": "",
+      "colorway": "dark caramel",
       "colors": [],
       "gender": "",
       "material": "",
@@ -6513,104 +4815,6 @@
         "cachedPath": "/images/bdef42b12993e677f13c89a9aa101bfcb59483b0efd0d5e527ab181dcd792a4b.jpg"
       },
       "bodyColor": "#e8e7e3"
-    },
-    {
-      "id": "arrival-8d0b2abd78458118cbe3",
-      "brand": "Balenciaga",
-      "name": "track trail laces sneaker 4 colors",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|tracktraillacessneaker4colors",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/track-trail-laces-sneaker-pink-800590WTRHK5500.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: track trail laces sneaker 4 colors",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2",
-        "style": "track-trail-laces-sneaker-pink-800590WTRHK5500"
-      },
-      "firstPublishedAt": "2026-10-18T00:18:12.283Z",
-      "url": "https://www.balenciaga.com/en-us/track-trail-laces-sneaker-pink-800590WTRHK5500.html",
-      "image": "https://balenciaga.dam.kering.com/asset/d1066751-7b34-4e3c-b419-7c3caca03ba2/Medium/800590WTRHK5500_X.jpg?v=1",
-      "style": "track-trail-laces-sneaker-pink-800590WTRHK5500",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,250",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/track-trail-laces-sneaker-pink-800590WTRHK5500.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "track-trail-laces-sneaker-pink-800590WTRHK5500",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/d1066751-7b34-4e3c-b419-7c3caca03ba2/Medium/800590WTRHK5500_X.jpg?v=1",
-        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "track-trail-laces-sneaker-pink-800590WTRHK5500",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [
-        "trail-gorpcore"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "use:trail",
-        "style:gorpcore",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/d1066751-7b34-4e3c-b419-7c3caca03ba2/Medium/800590WTRHK5500_X.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/6064773ef27c0e44751d9fdde3e09d74efec405637f17a808f5b15f6e0921b1e.jpg"
-      },
-      "bodyColor": "#cf98a9"
     },
     {
       "id": "arrival-9c97d9f62088cb3e83c3",
@@ -7685,104 +5889,6 @@
         "cachedPath": "/images/ad90729863e5189c51bb39602096ee704a3838ac4fa56be9eb9a53d5f4103031.webp"
       },
       "bodyColor": "#34201d"
-    },
-    {
-      "id": "arrival-0527b5dfb0912bea1f28",
-      "brand": "Cecilie Bahnsen",
-      "name": "CBBlaise Shoes",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "ceciliebahnsen|cbblaiseshoes",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Cecilie Bahnsen",
-        "productUrl": "https://ceciliebahnsen.com/products/3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.ceciliebahnsen.com/collections/new-in",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Image 41: CBBLAISE | SOFT SNEAKERS LEATHER/NYLON SILVER/MINT",
-        "contentHash": "d0305a3fc5642b1f1cef795f05f9b95f6a5c85941128856ebdea84c851fd74fd",
-        "style": "3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint"
-      },
-      "firstPublishedAt": "2026-10-07T09:38:21.006Z",
-      "url": "https://ceciliebahnsen.com/products/3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
-      "image": "https://ceciliebahnsen.com/cdn/shop/files/3.26FTW30002CBBLAISESOFTSNEAKERSLEATHERNYLONSILVERMINT_Side.jpg?crop=center&format=webp&height=730&v=1784620332&width=1200",
-      "style": "3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
-      "styleType": "official-product-id",
-      "colorway": "SILVER/MINT",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$1.750",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://ceciliebahnsen.com/products/3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
-        "verifiedAt": "2026-10-07T09:51:39.249Z",
-        "brand": "Cecilie Bahnsen",
-        "style": "3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "4b710963f9f1d8c46a1013aa963dbb3b6846bfbb8119150c81789d4a759b8fcd"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://ceciliebahnsen.com/cdn/shop/files/3.26FTW30002CBBLAISESOFTSNEAKERSLEATHERNYLONSILVERMINT_Side.jpg?crop=center&format=webp&height=730&v=1784620332&width=1200",
-        "sourceUrl": "https://ceciliebahnsen.com/products/3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
-        "verifiedAt": "2026-10-07T09:51:39.249Z",
-        "brand": "Cecilie Bahnsen",
-        "style": "3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "4b710963f9f1d8c46a1013aa963dbb3b6846bfbb8119150c81789d4a759b8fcd"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "contemporary",
-      "country": "GL",
-      "lastVerifiedAt": "2026-10-07T09:51:39.249Z",
-      "productEvidenceUrl": "https://ceciliebahnsen.com/products/3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "color:silver",
-        "brand:ceciliebahnsen"
-      ],
-      "presentation": {
-        "image": "https://ceciliebahnsen.com/cdn/shop/files/3.26FTW30002CBBLAISESOFTSNEAKERSLEATHERNYLONSILVERMINT_Side.jpg?crop=center&format=webp&height=730&v=1784620332&width=1200",
-        "scale": 1.75,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://ceciliebahnsen.com/products/3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
-        "checkedAt": "2026-10-07T09:38:20.803Z",
-        "officialProductUrl": "https://ceciliebahnsen.com/products/3-26ftw30002-cbblaise-soft-sneakers-leather-nylon-silver-mint",
-        "cachedPath": "/images/397e327fa32b3b6de348b4c3900c77a9acdadb6e150b8dca7df8d93af42e8255.webp"
-      },
-      "colorSwatches": [
-        "#c0c0c0",
-        "#d1e2c6"
-      ],
-      "bodyColor": "#cfd4cd"
     },
     {
       "id": "arrival-77d6a298f47dd674e5ed",
@@ -9087,140 +7193,6 @@
       "bodyColor": "#cfd5e7"
     },
     {
-      "id": "asics-gel-kayano-14-illusion-blue-1203a537-402",
-      "brand": "ASICS",
-      "name": "GEL-KAYANO 14",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "일상 스포츠 캐주얼·실루엣 참고"
-      ],
-      "modelKey": "asics|gelkayano14",
-      "releaseDate": "2026-09",
-      "releaseStatus": "released",
-      "dateEvidence": {
-        "url": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
-        "precision": "month",
-        "verified": true,
-        "verifiedAt": "2026-10-07T06:39:30.835Z",
-        "excerpt": "ASICS 공식 \"Sportstyle New Arrivals\" 컬렉션(https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html)에 포함되어 확인됨. 정확한 출시일(day) 근거는 확인되지 않아 month 단위로 보수적으로 기록."
-      },
-      "verifiedReleaseWindow": {
-        "start": "2026-09-01",
-        "end": "2026-09-30"
-      },
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "ASICS",
-        "productUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.asics.com/us/en-us/sportstyle-new-arrivals/c/aa90000023/",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: Member Access GEL-KAYANO 14 Sportstyle Shoes",
-        "contentHash": "56c4e88ca2c8cf344885e4f61a316088426d72287261f0920a7060f3aa42c47a",
-        "style": "1203A537-402"
-      },
-      "firstPublishedAt": "2026-10-07T15:40:50+09:00",
-      "url": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
-      "image": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
-      "style": "1203A537-402",
-      "colorway": "Illusion Blue/Pure Silver",
-      "colors": [
-        {
-          "name": "Illusion Blue",
-          "hex": "#3B5FCB",
-          "accuracy": "name"
-        }
-      ],
-      "gender": "UNISEX",
-      "material": "",
-      "priceLabel": "USD 165",
-      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [
-        {
-          "type": "magazine",
-          "url": "https://sneakernews.com/2026/10/17/asics-gel-kayano-14-illusion-blue-silver-1203a537-402/",
-          "title": "The ASICS GEL-Kayano Gets A Sporty “Illusion Blue”",
-          "publishedAt": "2026-10-18",
-          "checkedAt": "2026-10-18T00:17:50.970Z",
-          "modelMatched": true,
-          "publisherId": "sneakernews.com",
-          "publisherName": "Sneaker News",
-          "sponsored": false,
-          "independent": true,
-          "keywords": [
-            "character-collaboration",
-            "mesh-sheer"
-          ],
-          "evidenceMethod": "publisher-rss",
-          "evidenceUrl": "https://sneakernews.com/feed/",
-          "evidenceHash": "388bf3829dac97e24f3d3c537a19f1d8e191c5a2ccc2cf74ff129dc6f60ecf07"
-        }
-      ],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
-        "verifiedAt": "2026-10-07T06:39:30.835Z",
-        "brand": "ASICS",
-        "style": "1203A537-402"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
-        "sourceUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
-        "verifiedAt": "2026-10-07T06:39:30.835Z",
-        "brand": "ASICS",
-        "style": "1203A537-402"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-07T06:39:30.835Z",
-      "productEvidenceUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [
-        "character-collaboration",
-        "mesh-sheer",
-        "metallic-silver"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "color:metallic-silver",
-        "style:character-collaboration",
-        "color:silver",
-        "model:gel-kayano",
-        "brand:asics"
-      ],
-      "presentation": {
-        "image": "https://images.asics.com/is/image/asics/1203A537_402_SL_LT_GLB?$sfcc-product$",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "side",
-        "sourceUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
-        "checkedAt": "2026-10-07T06:39:30.835Z",
-        "officialProductUrl": "https://www.asics.com/us/en-us/gel-kayano-14/p/ANA_1203A537-402.html",
-        "cachedPath": "/images/988d9b75cacc80844e031f1d1faf13608fef33700b9bfc2d8455858e8b6fab0d.jpg"
-      },
-      "colorSwatches": [
-        "#3B5FCB"
-      ],
-      "bodyColor": "#193582"
-    },
-    {
       "id": "arrival-e144220d6976e62daabb",
       "brand": "ASICS",
       "name": "GEL-KAYANO 33 LITE-SHOW Men's Running Shoes",
@@ -10492,103 +8464,9 @@
       "bodyColor": "#2f2f30"
     },
     {
-      "id": "arrival-f7f881a126e353269082",
-      "brand": "Balenciaga",
-      "name": "jet sneaker 4 colors",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|jetsneaker4colors",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: jet sneaker 4 colors",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2",
-        "style": "jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150"
-      },
-      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
-      "url": "https://www.balenciaga.com/en-us/jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150.html",
-      "image": "https://balenciaga.dam.kering.com/asset/22ee9730-342a-417b-b578-2166c91198ee/Medium/872640WMRTN9150_X.jpg?v=1",
-      "style": "jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150",
-      "styleType": "official-product-id",
-      "colorway": "eggshell strawberry pink",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,090",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/22ee9730-342a-417b-b578-2166c91198ee/Medium/872640WMRTN9150_X.jpg?v=1",
-        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/22ee9730-342a-417b-b578-2166c91198ee/Medium/872640WMRTN9150_X.jpg?v=1",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/074246a4f803edfbcd5e164f275bb10ee82be1bfc26fd6a30c5fc1d76d26b143.jpg"
-      },
-      "bodyColor": "#c193aa"
-    },
-    {
       "id": "arrival-643329d2d091aba11c47",
       "brand": "Balenciaga",
-      "name": "jet sneaker Women 4 colors",
+      "name": "jet sneaker",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
@@ -10682,7 +8560,7 @@
     {
       "id": "arrival-afa5de9a02e3f36023fd",
       "brand": "Balenciaga",
-      "name": "jet sneaker Women 4 colors",
+      "name": "jet sneaker",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
@@ -10773,6 +8651,100 @@
         "cachedPath": "/images/a512340bf1877b720febb6416657045daa9074a676241d20f416ca62c579aad6.jpg"
       },
       "bodyColor": "#303233"
+    },
+    {
+      "id": "arrival-f7f881a126e353269082",
+      "brand": "Balenciaga",
+      "name": "jet sneaker",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고",
+        "럭셔리 스니커즈 디자인 참고"
+      ],
+      "modelKey": "balenciaga|jetsneaker4colors",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Balenciaga",
+        "productUrl": "https://www.balenciaga.com/en-us/jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150.html",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: jet sneaker 4 colors",
+        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2",
+        "style": "jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.balenciaga.com/en-us/jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150.html",
+      "image": "https://balenciaga.dam.kering.com/asset/22ee9730-342a-417b-b578-2166c91198ee/Medium/872640WMRTN9150_X.jpg?v=1",
+      "style": "jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150",
+      "styleType": "official-product-id",
+      "colorway": "eggshell strawberry pink",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "$ 1,090",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.balenciaga.com/en-us/jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150.html",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Balenciaga",
+        "style": "jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://balenciaga.dam.kering.com/asset/22ee9730-342a-417b-b578-2166c91198ee/Medium/872640WMRTN9150_X.jpg?v=1",
+        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Balenciaga",
+        "style": "jet-sneaker-eggshell-strawberry-pink-872640WMRTN9150",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "luxury",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-29"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:balenciaga"
+      ],
+      "presentation": {
+        "image": "https://balenciaga.dam.kering.com/asset/22ee9730-342a-417b-b578-2166c91198ee/Medium/872640WMRTN9150_X.jpg?v=1",
+        "scale": 1.6,
+        "offsetY": -20,
+        "view": "side",
+        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "reviewed-official-sku-view-slot",
+        "cachedPath": "/images/074246a4f803edfbcd5e164f275bb10ee82be1bfc26fd6a30c5fc1d76d26b143.jpg"
+      },
+      "bodyColor": "#c193aa"
     },
     {
       "id": "new-20260923-6b70459cbe7db07e",
@@ -18236,7 +16208,7 @@
     {
       "id": "arrival-6e72609ece163f0a574b",
       "brand": "Balenciaga",
-      "name": "radar leather sneaker Women",
+      "name": "radar leather sneaker",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
@@ -20455,108 +18427,6 @@
       "bodyColor": "#342a24"
     },
     {
-      "id": "arrival-f61c08d4e0fa7918f486",
-      "brand": "Balenciaga",
-      "name": "track trail laces sneaker",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|tracktraillacessneaker",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/track-trail-laces-sneaker-white-orange-blue-pink-800590WTRHK9745.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-07T09:51:39.249Z",
-        "excerpt": "Official New / New Arrivals listing: track trail laces sneaker",
-        "contentHash": "ea7af1a213470166ecf86af72c42b3e83fb3dc0cb8131fbc2ab77731c32e9f23",
-        "style": "track-trail-laces-sneaker-white-orange-blue-pink-800590WTRHK9745"
-      },
-      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
-      "url": "https://www.balenciaga.com/en-us/track-trail-laces-sneaker-white-orange-blue-pink-800590WTRHK9745.html",
-      "image": "https://balenciaga.dam.kering.com/asset/2fbf7155-8ac3-4d8f-85b7-f498c35f4f17/Large/800590WTRHK9745_X.jpg?v=2",
-      "style": "track-trail-laces-sneaker-white-orange-blue-pink-800590WTRHK9745",
-      "styleType": "official-product-id",
-      "colorway": "white orange blue pink",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,250",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/track-trail-laces-sneaker-white-orange-blue-pink-800590WTRHK9745.html",
-        "verifiedAt": "2026-10-07T09:51:39.249Z",
-        "brand": "Balenciaga",
-        "style": "track-trail-laces-sneaker-white-orange-blue-pink-800590WTRHK9745",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "ea7af1a213470166ecf86af72c42b3e83fb3dc0cb8131fbc2ab77731c32e9f23"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/2fbf7155-8ac3-4d8f-85b7-f498c35f4f17/Large/800590WTRHK9745_X.jpg?v=2",
-        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-07T09:51:39.249Z",
-        "brand": "Balenciaga",
-        "style": "track-trail-laces-sneaker-white-orange-blue-pink-800590WTRHK9745",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "ea7af1a213470166ecf86af72c42b3e83fb3dc0cb8131fbc2ab77731c32e9f23"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-07T09:51:39.249Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [
-        "trail-gorpcore"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "color:white",
-        "use:trail",
-        "style:gorpcore",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/2fbf7155-8ac3-4d8f-85b7-f498c35f4f17/Large/800590WTRHK9745_X.jpg?v=2",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "checkedAt": "2026-10-07T08:34:14.967Z",
-        "officialProductUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "cachedPath": "/images/3e0295b8654954977d1a6a22ffc52856938e0c43c9e1a0a1763e439c3c6361e9.jpg"
-      },
-      "colorSwatches": [
-        "#dadad2"
-      ],
-      "bodyColor": "#e3ba96"
-    },
-    {
       "id": "arrival-882dfe52be7da18abd80",
       "brand": "Balenciaga",
       "name": "track zip sneaker",
@@ -20756,100 +18626,6 @@
         "#8d777e"
       ],
       "bodyColor": "#5d5a58"
-    },
-    {
-      "id": "arrival-b5ecc94490f65f748f57",
-      "brand": "Balenciaga",
-      "name": "triple s.2 gradient sneaker Women 2 colors",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고",
-        "럭셔리 스니커즈 디자인 참고"
-      ],
-      "modelKey": "balenciaga|triples2gradientsneakerwomen2colors",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Balenciaga",
-        "productUrl": "https://www.balenciaga.com/en-us/triple-s.2-gradient-sneaker-purple-865851WTR2G6800.html",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: triple s.2 gradient sneaker Women 2 colors",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2",
-        "style": "triple-s.2-gradient-sneaker-purple-865851WTR2G6800"
-      },
-      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
-      "url": "https://www.balenciaga.com/en-us/triple-s.2-gradient-sneaker-purple-865851WTR2G6800.html",
-      "image": "https://balenciaga.dam.kering.com/asset/254a22c2-9f46-4564-9ee5-10b4a49d4db6/Medium/865851WTR2G6800_X.jpg?v=6",
-      "style": "triple-s.2-gradient-sneaker-purple-865851WTR2G6800",
-      "styleType": "official-product-id",
-      "colorway": "purple",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$ 1,090",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고 · 럭셔리 스니커즈 디자인 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.balenciaga.com/en-us/triple-s.2-gradient-sneaker-purple-865851WTR2G6800.html",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "triple-s.2-gradient-sneaker-purple-865851WTR2G6800",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://balenciaga.dam.kering.com/asset/254a22c2-9f46-4564-9ee5-10b4a49d4db6/Medium/865851WTR2G6800_X.jpg?v=6",
-        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Balenciaga",
-        "style": "triple-s.2-gradient-sneaker-purple-865851WTR2G6800",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "e26191e262dfeb3aaba5a38fb008ddd61bb590cbbf852e8e1a24a4300b7bb0d2"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "luxury",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-29"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:balenciaga"
-      ],
-      "presentation": {
-        "image": "https://balenciaga.dam.kering.com/asset/254a22c2-9f46-4564-9ee5-10b4a49d4db6/Medium/865851WTR2G6800_X.jpg?v=6",
-        "scale": 1.6,
-        "offsetY": -20,
-        "view": "side",
-        "sourceUrl": "https://www.balenciaga.com/en-us/searchajax?cgid=discover_women&prefn1=akeneo_employeesSalesVisible&prefv1=false&prefn2=akeneo_markDownInto&prefv2=no_season&prefn3=akeneo_productCategoryFilter&prefv3=bal_sneakers&prefn4=countryInclusion&prefv4=US",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "reviewed-official-sku-view-slot",
-        "cachedPath": "/images/eb7e7179471195783907dcec1fb2407fbb23cca34ea63e342c8e3f5ff83416de.jpg"
-      },
-      "bodyColor": "#ae8180"
     },
     {
       "id": "gucci-drip-sneaker-white-suede-a009z4aag8v9072",
@@ -21323,7 +19099,7 @@
     {
       "id": "arrival-2deaa22fd3d8d4ee6319",
       "brand": "Salomon",
-      "name": "XT-6 - Sneakers · Unisex",
+      "name": "XT-6 - Sneakers ·",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
@@ -27851,7 +25627,7 @@
     }
   ],
   "keywordMethod": "verified-style-source-rank-v2",
-  "keywordCheckedAt": "2026-10-29T09:30:42.121Z",
+  "keywordCheckedAt": "2026-10-29T10:45:30.292Z",
   "sourceRanks": [
     {
       "platform": "wgsn-ss27-colours",
@@ -28525,7 +26301,7 @@
           "id": "sneakernews.com",
           "name": "Sneaker News",
           "url": "https://sneakernews.com/",
-          "itemCount": 2
+          "itemCount": 1
         }
       ],
       "checkedAt": "2026-10-28T09:53:06.917Z",
@@ -30669,8 +28445,8 @@
     ],
     "counts": {
       "source": 3791,
-      "published": 288,
-      "held": 2926,
+      "published": 265,
+      "held": 2960,
       "expired": 0
     },
     "selectionBasis": "official-new-arrivals",
@@ -30708,7 +28484,7 @@
     ]
   },
   "retentionBasis": "first-published",
-  "keywordEvaluatedAt": "2026-10-29T09:30:42.121Z",
+  "keywordEvaluatedAt": "2026-10-29T10:45:30.292Z",
   "styleTrendKeywords": {
     "method": "verified-style-board-v1",
     "updated": "2026-10-28T09:53:26.246Z",
@@ -31875,7 +29651,6 @@
           "arrival-54f8872d84a145f71750",
           "arrival-6db20bbff4eb4d0f2fab",
           "arrival-6e72609ece163f0a574b",
-          "arrival-71f9baf4159c60cb65df",
           "arrival-98c0c5025c603830f71b",
           "arrival-a7ee568a2b5aeeb58d3b",
           "arrival-b7843630cdec6b89520b",
@@ -31890,7 +29665,7 @@
           "verified-puma-406687-02",
           "zip-cecilie-asics-black-coffee"
         ],
-        "matchedProductCount": 22,
+        "matchedProductCount": 21,
         "sourceCount": 5,
         "editorialCount": 2,
         "retailCount": 19,
@@ -32297,9 +30072,7 @@
         ],
         "productIds": [
           "arrival-00d436f1c4d978b7fc10",
-          "arrival-0527b5dfb0912bea1f28",
           "arrival-9c97d9f62088cb3e83c3",
-          "asics-gel-kayano-14-illusion-blue-1203a537-402",
           "new-20260923-2e902fa978c7dc7d",
           "new-20260923-649152cee92d14ae",
           "new-20260923-9522a7640a5200af",
@@ -32308,7 +30081,7 @@
           "verified-new-balance-wrebx38s",
           "zip-cecilie-asics-silver"
         ],
-        "matchedProductCount": 11,
+        "matchedProductCount": 9,
         "sourceCount": 4,
         "editorialCount": 1,
         "retailCount": 12,
@@ -33121,9 +30894,7 @@
         ],
         "productIds": [
           "arrival-146374cdaa129ce872ad",
-          "arrival-8d0b2abd78458118cbe3",
           "arrival-b7843630cdec6b89520b",
-          "arrival-f61c08d4e0fa7918f486",
           "arrival-f90eb8142f6c5340dc45",
           "live-38d151b1f66721ba",
           "live-a4cee0e20826cfca",
@@ -33139,7 +30910,7 @@
           "verified-moncler-citytrek-sagegreen-l209a4m00230n0633818",
           "verified-moncler-citytrek-white-l209a4m00230n0633034"
         ],
-        "matchedProductCount": 18,
+        "matchedProductCount": 16,
         "sourceCount": 1,
         "editorialCount": 0,
         "retailCount": 2,
