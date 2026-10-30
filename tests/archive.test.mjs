@@ -83,7 +83,8 @@ test('invalid/date unknown/young products never enter archive; KST calendar-mont
   assert.equal(cutoffDate(new Date('2026-05-30T16:00:00Z')),'2026-02-28');
   assert.equal(eligibilityReason(product({releaseDate:'2026-06-28'}),now),'not-expired');
   assert.equal(eligibilityReason(product({releaseDate:null}),now),'unknown-release-date');
-  assert.equal(eligibilityReason(product({category:'loafer'}),now),'excluded-category');
+  // A loafer publishes now, so it has to be able to leave again.
+  assert.notEqual(eligibilityReason(product({category:'loafer'}),now),'excluded-category');
   assert.equal(eligibilityReason(product({eligibility:{passed:false}}),now),'eligibility-not-verified');
   assert.equal(eligibilityReason(product({dateEvidence:{url:'https://example.com'}}),now),'missing-release-evidence');
 });
@@ -96,7 +97,7 @@ test('verified expired jelly and platform shoes archive with unchanged fit and d
     assert.equal(eligibilityReason(product({category,releaseDate:null}),now),'unknown-release-date');
     assert.equal(eligibilityReason(product({category,dateEvidence:{...product().dateEvidence,verified:false}}),now),'missing-release-evidence');
   }
-  for(const category of ['heel','high-heel','loafer','dress-shoe'])assert.equal(eligibilityReason(product({category}),now),'excluded-category');
+  for(const category of ['heel','high-heel','dress-shoe'])assert.equal(eligibilityReason(product({category}),now),'excluded-category');
 });
 test('verified release months archive only after the entire month expires, without fabricating a day',()=>{
   const monthly=product({releaseDate:'2026-06',dateEvidence:{...product().dateEvidence,precision:'month',excerpt:'First released in June 2026'}});

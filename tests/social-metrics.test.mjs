@@ -25,7 +25,9 @@ test('a verified luxury sneaker publishes on its own evidence, with no brand-fit
  // Without the official image proof it is the same shoe and still publishes;
  // brand fit used to reject it outright, which is what held 1,600 records.
  assert(curateProduct({...p,officialImageEvidence:null},today).product,'no longer rejected for brand fit');
- assert.equal(curateProduct({...p,name:'Leather loafer'},today).reason,'excluded-footwear');
+ // A loafer is in scope now; a heeled shoe is still not.
+ assert.equal(curateProduct({...p,name:'Leather loafer'},today).product.category,'loafer');
+ assert.equal(curateProduct({...p,name:'Slingback pump'},today).reason,'excluded-footwear');
 });
 test('SNS accepts observed positive item search/posts, distinguishes null and views, and does not require many accounts',()=>{
  const p=shoe({socialMetrics:[metric(),metric({metric:'search-count',unit:'searches',value:null})]});

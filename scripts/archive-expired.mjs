@@ -25,7 +25,10 @@ export function cutoffDate(now = new Date()) {
 }
 export function eligibilityReason(product, now = new Date()) {
   if (product.eligibility?.passed !== true) return 'eligibility-not-verified';
-  if (!['sneaker','clog','sandal','platform-sandal','hybrid','jelly','platform-shoe'].includes(product.category)) return 'excluded-category';
+  // Whatever the catalogue publishes, it also archives - otherwise a shape
+  // could reach a card and then never leave it. Kept in step with
+  // inPublishedScope in curation.mjs.
+  if (!['sneaker','clog','loafer','slipper','platform-slipper','sandal','platform-sandal','hybrid','jelly','platform-shoe'].includes(product.category)) return 'excluded-category';
   if ((!releaseWindow(product)&&!product.firstPublishedAt) || product.releaseStatus !== 'released') return 'unknown-release-date';
   const asOf = new Date(now.getTime()+9*3600_000).toISOString().slice(0,10);
   if (releaseState(product,asOf) !== 'expired') return 'not-expired';

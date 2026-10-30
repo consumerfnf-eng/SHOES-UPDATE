@@ -46,7 +46,10 @@ export function officialEvidenceFor(p,today){
   if(model?.verified===true&&model.id&&model.name&&key(model.name)===key(String(p.name).split(/\s[—–]\s/)[0]))verifiedProduct.modelIdentity={id:model.id,name:model.name,verified:true};
   return {officialProductEvidence:verifiedProduct,officialImageEvidence:clean(image,['verified','url','sourceUrl','verifiedAt','brand','style','identifierType','verificationMethod','contentHash'])};
 }
-const excluded = /\b(loafers?|oxfords?|derby|derbies|pumps?|stilettos?|wedge|heels|(?:high|kitten|block|wedge)[ -]?heels?|heeled|moccasins?|mocassins?|escarpins?|decolletes?|slingbacks?|dress (?:shoes?|sandals?)|ballerina flats?|ballet flats?|chelsea|boots?|snowclog)\b|로퍼|구두|슬링백|(?:하이|키튼|블록|웨지)힐|펌프스|부츠|방한|발레 플랫/i;
+// Loafers were on this list and are now asked for by name, so they come off
+// it. Everything still here is a dress or heeled shoe, or a boot - shapes
+// nobody has asked the catalogue to carry.
+const excluded = /\b(oxfords?|derby|derbies|pumps?|stilettos?|wedge|heels|(?:high|kitten|block|wedge)[ -]?heels?|heeled|escarpins?|decolletes?|slingbacks?|dress (?:shoes?|sandals?)|ballerina flats?|ballet flats?|chelsea|boots?|snowclog)\b|구두|슬링백|(?:하이|키튼|블록|웨지)힐|펌프스|부츠|방한|발레 플랫/i;
 const performance = /\b(?:soccer|football|baseball|track|golf)\s+(?:boots?|cleats?|spikes?|shoes?)|\b(?:racing spikes|competition spikes|basketball shoes)\b|축구화|야구화|스파이크/i;
 const sneakerStructure = /\b(?:sneakers?|sneakerina|running (?:shoes?|heritage)|trainers?|sneaker (?:sole|midsole|outsole|construction))\b|스니커|운동화|러닝화|スニーカ(?:ー|リーナ)|运动鞋|運動鞋|跑鞋/i;
 const namedHybrid = /\b(?:mules?|mary[ -]?jane|ballet|ballerinas?|sneakerina)\b|메리제인|발레리나|발레|뮬|バレエ|バレリーナ|スニーカリーナ|メリージェーン|ミュール|芭蕾|玛丽珍|瑪麗珍|穆勒/i;
@@ -66,7 +69,7 @@ export function officialHybridReview(p, description, checkedAt) {
 /** Does a classified category reach a card? Kept next to the classifier so
  *  the gate above and the browser filter cannot drift apart. */
 export function inPublishedScope(category) {
-  return ['sneaker', 'hybrid', 'jelly', 'clog', 'slipper', 'platform-slipper', 'platform-sandal', 'platform-shoe'].includes(category);
+  return ['sneaker', 'hybrid', 'jelly', 'clog', 'loafer', 'slipper', 'platform-slipper', 'platform-sandal', 'platform-shoe'].includes(category);
 }
 
 export function classifyFootwear(p) {
@@ -79,12 +82,11 @@ export function classifyFootwear(p) {
   const structure=p.footwearStructure?.category===p.category?p.footwearStructure:null;
   const context = `${title} ${p.description || ''} ${p.category || ''} ${structure?.description||''} ${structure?.officialCategory||''}`;
   const review=p.footwearReview;
-  if(/ローファー|パンプス|スリングバック|ハイヒール|革靴|高跟|乐福|樂福|皮鞋|(?:^|[\s/])힐(?:[\s/]|$)/.test(title))return {reason:'excluded-footwear'};
+  if(/パンプス|スリングバック|ハイヒール|革靴|高跟|皮鞋|(?:^|[\s/])힐(?:[\s/]|$)/.test(title))return {reason:'excluded-footwear'};
   const reviewedPlatform=review?.approved===true&&review.type==='platform'&&review.flatSole===true&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url);
   const reviewedJelly=review?.approved===true&&review.type==='jelly'&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url)&&review.flatSole===true;
-  const approvedDrip=canonicalBrand(p.brand)==='Gucci'&&p.style==='A00A2SFAGMQ9656'&&review?.approved===true&&review.type==='sneaker'&&review.brand==='Gucci'&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url)&&/sneaker/i.test(title)&&/slip.on ease of (?:a )?loafer/i.test(p.description||'');
   if(/goadome/i.test(title)&&!p.hybridReview?.approved)return {reason:'hybrid-review-required'};
-  if (excluded.test(`${title} ${p.category||''} ${p.productType||''}`) || performance.test(title) || /\b(?:loafers?|oxford shoes?|derby shoes|ballet flats?|high[ -]heeled|stilettos?|slingbacks?|(?:kitten|block|wedge) heels?|dress sandals?)\b|로퍼|슬링백|하이힐|정장 구두/i.test(approvedDrip?(p.description||'').replace(/slip.on ease of (?:a )?loafer/gi,''):(p.description || ''))) return { reason: 'excluded-footwear' };
+  if (excluded.test(`${title} ${p.category||''} ${p.productType||''}`) || performance.test(title) || /\b(?:oxford shoes?|derby shoes|ballet flats?|high[ -]heeled|stilettos?|slingbacks?|(?:kitten|block|wedge) heels?|dress sandals?)\b|슬링백|하이힐|정장 구두/i.test(p.description || '')) return { reason: 'excluded-footwear' };
   // Jelly names alone (for example Jellyfish) are not proof of jelly construction.
   if (/\bjelly\b|젤리/i.test(title)||reviewedJelly) {
     if (!reviewedJelly&&!/\b(?:pvc|tpu|melflex|jelly upper|jelly material|jelly construction)\b|젤리 소재/i.test(context))return {reason:'jelly-structure-unverified'};
@@ -107,6 +109,10 @@ export function classifyFootwear(p) {
   // first - a clog had to mention ventilation or drainage, a sandal had to
   // mention foam or recovery - which held 23 records on wording their brands
   // simply had not used. A clog is a clog; the word is the brand's own.
+  // Loafers and moccasins are asked for. A heeled loafer is still a heeled
+  // shoe and is refused above with the rest of them, so what reaches here is
+  // the flat kind.
+  if (/\b(?:loafers?|moccasins?|mocassins?|penny loafer|driving shoes?)\b|로퍼|모카신|ローファー|乐福|樂福|豆豆鞋/i.test(`${title} ${p.category||''} ${p.productType||''}`)) return { category: 'loafer' };
   if (/\b(?:clog|클로그|クロッグ)\b/i.test(title)) return { category: 'clog' };
   // A slide, a thong and a slipper are asked for by name. A strappy summer
   // sandal is not, and dress sandals stay excluded above, so the two are

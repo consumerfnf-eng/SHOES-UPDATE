@@ -11,5 +11,14 @@ test('official proof requires current primary SKU-image pair, rejects mismatched
 });
 test('Gucci Drip description metaphor exception is limited to the reviewed exact official SKU',()=>{
  const p={brand:'Gucci',name:"Men's Drip sneaker",style:'A00A2SFAGMQ9656',officialCategory:'Sneakers',url:'https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-drip-sneaker-p-A00A2SFAGMQ9656',description:'A sneaker with the slip-on ease of a loafer.'};p.footwearReview={approved:true,type:'sneaker',brand:p.brand,style:p.style,url:p.url};
- assert.equal(classifyFootwear(p).category,'sneaker');assert.equal(classifyFootwear({...p,style:'OTHER'}).reason,'excluded-footwear');assert.equal(classifyFootwear({...p,name:'Classic loafer'}).reason,'excluded-footwear');assert.equal(classifyFootwear({...p,footwearReview:null}).reason,'excluded-footwear');
+ // A sneaker whose copy mentions a loafer is a sneaker. It needed a named
+ // exception while the word excluded the shoe; now it needs nothing, and
+ // the shoe classifies on its own without any review attached.
+ assert.equal(classifyFootwear(p).category,'sneaker');
+ assert.equal(classifyFootwear({...p,style:'OTHER'}).category,'sneaker');
+ assert.equal(classifyFootwear({...p,footwearReview:null}).category,'sneaker');
+ // Called a loafer rather than merely compared to one, it is a loafer.
+ assert.equal(classifyFootwear({...p,name:'Classic loafer'}).category,'loafer');
+ // And a heel is still a heel whatever else the copy says.
+ assert.equal(classifyFootwear({...p,name:'Slingback pump'}).reason,'excluded-footwear');
 });

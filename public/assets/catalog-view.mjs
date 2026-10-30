@@ -177,6 +177,16 @@ export function filterProducts(products, state, today = kstToday()) {
     // release date, else the day it was confirmed new, else the day we first
     // saw it - and sends the ones with no date at all to the end rather than
     // mixing them in at the top where an empty string would put them.
+    // LUX first, all of it, then SPORTS with Rockfish Weatherwear leading.
+    // Inside a brand the newest comes first, so the ordering is "which house,
+    // then what is new from it" rather than one flat date list.
+    if(state.sort==='group'){
+      const byGroup=compareByBrandGroup({name:a.brand},{name:b.brand});
+      if(byGroup)return byGroup;
+      const ra=isOverlay(a)?overlayWindowDay(a):releaseSortKey(a);
+      const rb=isOverlay(b)?overlayWindowDay(b):releaseSortKey(b);
+      return rb.localeCompare(ra)||a.name.localeCompare(b.name);
+    }
     if(state.sort==='release'){
       const key=p=>releaseSortKey(p)||(isOverlay(p)?overlayWindowDay(p):'');
       const ka=key(a),kb=key(b);
@@ -187,6 +197,7 @@ export function filterProducts(products, state, today = kstToday()) {
   });
 }
 import {calendarShift,validCalendarDay,releaseWindow,releaseState as windowState,releaseSortKey} from './release-window.mjs';
+import {compareByBrandGroup} from './brand-groups.mjs';
 export {releaseWindow,releaseSortKey};
 // A comma is a separator too: Musinsa writes "어반트렉 메시 Ver. 3, 버건디",
 // and lifting the colour off the end leaves the comma behind.

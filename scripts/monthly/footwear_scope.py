@@ -1,10 +1,11 @@
 """Shared footwear scope for the weekly retail/newsletter collectors.
 
 The publication scope is fixed by public/assets/footwear-policy.mjs:
-sneaker, ballet-sneaker, mary-jane-sneaker, mule-sneaker, jelly, platform.
-Court/running/skate sneakers and the sneaker-soled hybrids count; dress
-footwear (loafers, oxfords, derbies, heels, pumps, slingbacks, boots,
-plain sandals/slides/mules) does not.
+sneaker, ballet-sneaker, mary-jane-sneaker, mule-sneaker, jelly, platform,
+clog, slipper, loafer, sandal. Court/running/skate sneakers and the
+sneaker-soled hybrids count, and so do flat loafers, clogs, slides, thongs,
+slippers and platform sandals. Dress footwear - oxfords, derbies, brogues,
+heels, pumps, slingbacks, boots - does not.
 
 Every rule here reads only a listing's own title and its retailer category
 label - the two things every source in this pipeline actually provides. A
@@ -20,19 +21,33 @@ COLOUR_NAMES = set(COLOR_WORDS)
 # --- hard exclusions -------------------------------------------------------
 # Checked before any inclusion rule: these words describe the shoe's own
 # construction, so a "platform loafer" is a loafer, not a platform sneaker.
+# Loafers, clogs, slides, thongs and slippers were on this list and are now
+# asked for by name, so they moved to the inclusions below. What is left is
+# dress and heeled footwear and boots - shapes nobody has asked for. A heeled
+# loafer is still caught here, by its heel.
 EXCLUDE_EN = re.compile(
-    r'\b(?:loafers?|oxfords?|derbys?|derbies|brogues?|monk ?straps?|moccasins?|boat shoes?|'
-    r'heels?|pumps?|stilettos?|slingbacks?|kitten ?heels?|wedges?|'
-    r'boots?|booties?|ankle ?boots?|chelsea|espadrilles?|'
-    r'thongs?|flip[- ]?flops?|slides?|slippers?)\b', re.I)
+    r'\b(?:oxfords?|derbys?|derbies|brogues?|monk ?straps?|boat shoes?|'
+    r'heels?|pumps?|stilettos?|slingbacks?|kitten ?heels?|'
+    r'boots?|booties?|ankle ?boots?|chelsea)\b', re.I)
 EXCLUDE_KO = re.compile(
-    r'로퍼|블로퍼|옥스포드|옥스퍼드|더비|브로그|몽크|모카신|보트\s?슈즈|구두|'
+    r'옥스포드|옥스퍼드|더비|브로그|몽크|보트\s?슈즈|구두|'
     r'힐|펌프스|하이힐|웨지힐|킬힐|슬링백|'
-    r'부츠|부티|워커|첼시|에스파드리유|'
-    r'쪼리|플립플랍|슬리퍼|슬라이드|실내화')
-# Sandals and clogs are their own categories in the main catalog and are not
-# part of this overlay's scope unless the title also says sneaker.
-EXCLUDE_SOFT = re.compile(r'\b(?:sandals?|clogs?)\b|샌들|클로그', re.I)
+    r'부츠|부티|워커|첼시')
+# A strappy summer sandal is still not in scope; a platform one is, and is
+# matched by the inclusion rule below before this gets a say.
+EXCLUDE_SOFT = re.compile(r'\b(?:sandals?)\b|샌들', re.I)
+
+# Shapes that are in scope on their own, without the title having to say
+# sneaker. Checked before EXCLUDE_SOFT so 통굽 샌들 is kept while a plain
+# strappy sandal is not.
+OTHER_SHAPES = (
+    ('loafer', re.compile(r'\b(?:loafers?|moccasins?|mocassins?|penny loafers?|driving shoes?)\b'
+                          r'|로퍼|블로퍼|모카신', re.I)),
+    ('clog', re.compile(r'\b(?:clogs?)\b|클로그', re.I)),
+    ('slipper', re.compile(r'\b(?:thongs?|flip[- ]?flops?|slides?|slippers?)\b'
+                           r'|쪼리|조리|플립플랍|슬리퍼|슬라이드|실내화', re.I)),
+    ('sandal', re.compile(r'(?:\bplatform\b[^|]{0,20}\bsandals?\b)|통굽[^|]{0,6}샌들|플랫폼[^|]{0,6}샌들', re.I)),
+)
 
 # --- inclusions ------------------------------------------------------------
 SNEAKER_EN = re.compile(
@@ -99,6 +114,17 @@ def classify(title, retailer_category=''):
         # still has to show this particular item is a sneaker.
         if not sneaker_in_title:
             return '', [], 'excluded-silhouette'
+    # Shapes that stand on their own: a loafer does not have to call itself a
+    # sneaker to be a loafer. Checked before the sandal rule so 통굽 샌들 is
+    # kept while a plain strappy one is not.
+    for shape, pattern in OTHER_SHAPES:
+        if pattern.search(title) or pattern.search(label) and not EXCLUDE_EN.search(title) and not EXCLUDE_KO.search(title):
+            if shape == 'sandal':
+                return 'platform-sandal', ['sandal', 'platform'], ''
+            if shape == 'slipper':
+                return ('platform-slipper' if platform else 'slipper'), ['slipper'] + (['platform'] if platform else []), ''
+            return shape, [shape] + (['platform'] if platform else []), ''
+
     if EXCLUDE_SOFT.search(title) and not sneaker_in_title:
         return '', [], 'sandal-or-clog'
     if EXCLUDE_SOFT.search(label) and not sneaker_in_title and not jelly:

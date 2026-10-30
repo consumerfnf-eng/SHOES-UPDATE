@@ -1,5 +1,5 @@
 // The same publication scope is used by the publisher and the browser.
-export const FOOTWEAR_TYPES = ['sneaker','ballet-sneaker','mary-jane-sneaker','mule-sneaker','jelly','platform','clog','slipper'];
+export const FOOTWEAR_TYPES = ['sneaker','ballet-sneaker','mary-jane-sneaker','mule-sneaker','jelly','platform','clog','slipper','loafer','sandal'];
 export function footwearTypes(product) {
   // A retail/newsletter collector already classified its own listing against
   // this same list (scripts/monthly/footwear_scope.py), using the retailer's
@@ -21,6 +21,8 @@ export function footwearTypes(product) {
   // now rather than only when they happen to be built on a platform.
   if(category==='clog')types.push('clog');
   if(category==='slipper'||category==='platform-slipper')types.push('slipper');
+  if(category==='loafer')types.push('loafer');
+  if(category==='platform-sandal')types.push('sandal');
   if(['platform-shoe','platform-sandal','platform-slipper'].includes(category)||['sneaker','hybrid','jelly','clog'].includes(category)&&(/\bplatform\b|플랫폼/i.test(text)||product.keywordTags?.includes('platform')))types.push('platform');
   return types;
 }

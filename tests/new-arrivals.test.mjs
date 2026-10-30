@@ -34,7 +34,10 @@ function product(){const base={verified:true,brand:'Prada',style:'ABC123',verifi
 test('official New Arrivals can publish without inventing a release day; unrelated proof fails',()=>{
  const p=product(),r=curateProduct(p,today);assert(r.product);assert.equal(r.product.releaseDate,'');assert.equal(r.product.dateEvidence,undefined);
  for(const patch of [{verified:false},{kind:'newest'},{productUrl:'https://www.prada.com/other'},{style:'OTHER'},{url:'https://retailer.example/new-arrivals'}])assert(!curateProduct({...p,arrivalEvidence:{...p.arrivalEvidence,...patch}},today).product);
- for(const name of ['Platform loafers','Mary Jane pumps','Slingback sneakers','Leather oxford shoes','Speedcat Wedge','메리제인 구두','플랫폼 힐'])assert(!curateProduct({...p,name},today).product,name);
+ for(const name of ['Mary Jane pumps','Slingback sneakers','Leather oxford shoes','Speedcat Wedge','메리제인 구두','플랫폼 힐'])assert(!curateProduct({...p,name},today).product,name);
+ // Platform loafers are asked for, so they are no longer refused for their
+ // shape - only for whatever a shoe is normally refused for.
+ assert.notEqual(curateProduct({...p,name:'Platform loafers'},today).reason,'excluded-footwear');
 });
 test('a shortened ballet model title retains its verified official sneaker category',()=>{
  const p={...product(),name:'Runner Ballet Dress-Up',officialCategory:'Sneakers',description:'Runner Ballet Dress-Up Sneakers with straps and a rubber outsole'};

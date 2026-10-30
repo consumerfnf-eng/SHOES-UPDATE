@@ -2,7 +2,7 @@
 // sheet routing rules, independently of this two-group browsing layout.
 export const BRAND_GROUPS = [
   {name:'LUX', priority:['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe']},
-  {name:'SPORTS', priority:['On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger']}
+  {name:'SPORTS', priority:['Rockfish Weatherwear','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger']}
 ];
 const key = name => String(name).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
 const luxury = new Set([...BRAND_GROUPS[0].priority,'Common Projects','Golden Goose','Maison Mihara Yasuhiro'].map(key));
@@ -16,4 +16,27 @@ export function groupedBrands(brands) {
     const priority = new Map(group.priority.map((name,i)=>[key(name),i]));
     return {...group, brands:brands.filter(b=>displayBrandGroup(b)===group.name).sort((a,b)=>(priority.get(key(a.name))??Infinity)-(priority.get(key(b.name))??Infinity)||a.name.localeCompare(b.name,'en'))};
   });
+}
+
+/** Where a product sits when the grid is ordered by brand group: every LUX
+ *  brand before any SPORTS brand, and inside SPORTS, Rockfish first.
+ *
+ *  Brands named in a group's priority list keep that order; the rest follow
+ *  alphabetically, so a new brand lands somewhere predictable rather than
+ *  wherever the catalogue happens to list it.
+ */
+export function brandGroupRank(brand) {
+  const group = displayBrandGroup(brand);
+  const index = BRAND_GROUPS.findIndex(g => g.name === group);
+  const priority = BRAND_GROUPS[index]?.priority.map(key).indexOf(key(brand.name)) ?? -1;
+  return {
+    group: index < 0 ? BRAND_GROUPS.length : index,
+    priority: priority < 0 ? Number.MAX_SAFE_INTEGER : priority,
+    name: String(brand.name || ''),
+  };
+}
+
+export function compareByBrandGroup(a, b) {
+  const x = brandGroupRank(a), y = brandGroupRank(b);
+  return x.group - y.group || x.priority - y.priority || x.name.localeCompare(y.name, 'en');
 }

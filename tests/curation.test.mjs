@@ -23,9 +23,13 @@ test('mandatory25 preserved, aliases normalize, collaboration is not new brand',
   assert.equal(curateCatalog([],{now}).snapshot.brands.filter(x=>x.mandatory).length,25);
 });
 test('no grandfather exemption and actual structure required',()=>{
-  for(const name of ['Classic leather loafer','Suede derby','Winter boot','Ballet flats','High heel sandal','Leather moccasin','Slingback pumps'])assert(curateProduct(product({name,catalogVerification:'official-catalog-2026-09-23'}),day).reason);
+  for(const name of ['Suede derby','Winter boot','Ballet flats','High heel sandal','Slingback pumps'])assert(curateProduct(product({name,catalogVerification:'official-catalog-2026-09-23'}),day).reason);
+  // A loafer is in scope now, so it is refused for the same reasons any
+  // other shoe is - not for being a loafer.
+  for(const name of ['Classic leather loafer','Leather moccasin'])
+    assert.notEqual(curateProduct(product({name,catalogVerification:'official-catalog-2026-09-23'}),day).reason,'excluded-footwear',name);
   assert.equal(curateProduct(product({name:'Fashion 001',officialCategory:'Shoes',description:'Classic calf leather',productType:'sneaker'}),day).reason,'footwear-type-unverified');
-  assert.equal(curateProduct(product({name:'Shoe 001',officialCategory:'Shoes',description:'An elegant leather loafer.'}),day).reason,'excluded-footwear');
+  assert.equal(curateProduct(product({name:'Shoe 001',officialCategory:'Shoes',description:'An elegant slingback pump.'}),day).reason,'excluded-footwear');
 });
 test('summer forms and reviewed hybrids pass, unreviewed hybrids do not',()=>{
   assert.equal(curateProduct(product({name:'Summer clog',officialCategory:'Clogs',description:'Vented EVA summer cushioning.'}),day).product.category,'clog');

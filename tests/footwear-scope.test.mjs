@@ -19,8 +19,15 @@ test('six requested types pass structure gates and share browser/publication fil
   for(const r of rows){const p={...base,...r,hybridReview:{approved:true,url:base.url}};const type=classifyFootwear(p);assert(type.category,r.name+': '+type.reason);Object.assign(p,type);assert(isPublishedFootwear(p));assert.deepEqual(footwearTypes(p),r.expected);for(const key of r.expected)assert(categoryMatches(p,key));}
 });
 test('dress exclusions win even with sneaker words, category labels and review approvals',()=>{
-  for(const name of ['Sneaker loafer','Mary Jane dress shoes','Jelly slingback','Platform heels','Kitten heel sneaker','Wedge heel mule','Platform pump','Leather derby','Ballerina flats','메리제인 구두','슬링백 스니커즈','플랫폼 하이힐'])assert.equal(classifyFootwear({...base,name,productType:'sneaker',hybridReview:{approved:true,url:base.url,sneakerSole:true}}).reason,'excluded-footwear',name);
-  assert.equal(classifyFootwear({...base,name:'Casual shoe',category:'loafers',productType:'sneaker'}).reason,'excluded-footwear');
+  // Dress and heeled shapes stay out however they are worded. Loafers came
+  // off this list when they were asked for by name; a heeled one is still
+  // caught by its heel.
+  for(const name of ['Mary Jane dress shoes','Jelly slingback','Platform heels','Kitten heel sneaker','Wedge heel mule','Platform pump','Leather derby','Ballerina flats','메리제인 구두','슬링백 스니커즈','플랫폼 하이힐'])assert.equal(classifyFootwear({...base,name,productType:'sneaker',hybridReview:{approved:true,url:base.url,sneakerSole:true}}).reason,'excluded-footwear',name);
+  for(const name of ['Leather loafer','로퍼','Penny loafer','Leather moccasin'])assert.equal(classifyFootwear({...base,name}).category,'loafer',name);
+  assert.equal(classifyFootwear({...base,name:'Heeled loafer'}).reason,'excluded-footwear','a heel is a heel');
+  // The source's own category counts as much as the title: filed under
+  // loafers, it is a loafer, whatever its productType field claims.
+  assert.equal(classifyFootwear({...base,name:'Casual shoe',category:'loafers',productType:'sneaker'}).category,'loafer');
   assert.equal(classifyFootwear({...base,name:'Mary Jane',hybridReview:{approved:true,url:base.url}}).reason,'sneaker-structure-unverified');
   assert.equal(classifyFootwear({...base,name:'Jelly shoe',description:'Jelly upper'}).reason,'flat-structure-unverified');
   assert.equal(classifyFootwear({...base,name:'Jellyfish sneaker'}).category,'sneaker');
