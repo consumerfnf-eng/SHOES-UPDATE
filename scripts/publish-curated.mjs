@@ -62,6 +62,16 @@ export function applyReviewedEvidence(input,evidence) {
   }
   return products;
 }
+// An image inlined as base64 is not a photograph this site can use: every
+// later check wants an https URL, so the record can never publish, and the
+// blob rides along in every checkout - the August 2026 spreadsheet import
+// alone carried 5.5 MB of it. Recorded as having no image, which is what it
+// is, rather than carried as a kilobyte of unusable data.
+export function dropInlineImages(products) {
+  return (products||[]).map(p=>typeof p?.image==='string'&&p.image.startsWith('data:')
+    ? {...p,image:'',imageNote:'inline-base64-dropped'} : p);
+}
+
 export async function publishCurated({directory=root,now=new Date(),incoming=[],collection,maintenance=false,keywordRefresh=false}={}) {
   const sourceFile=path.join(directory,'data/catalog-source.json'), prior=await readJson(path.join(directory,'public/data/catalog.json'),{});
   const source=await readJson(sourceFile), evidence=await readJson(path.join(directory,'data/release-evidence.json'),{products:[]});
@@ -73,7 +83,7 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   const history=await readJson(historyFile,{schemaVersion:1,entries:{}});
   // Previous public rows are proof even in a fresh checkout; raw firstSeen is not.
   for(const p of prior.products||[])if(!history.entries[p.id])history.entries[p.id]={firstPublishedAt:p.firstPublishedAt||prior.publishedAt,brand:p.brand,style:p.style,url:p.url};
-  const products=applyReviewedEvidence(applyReviewedEvidence(mergePreserving(source.products,incoming),evidence.products),socialPatches).map(p=>{
+  const products=applyReviewedEvidence(applyReviewedEvidence(mergePreserving(dropInlineImages(source.products),dropInlineImages(incoming)),evidence.products),socialPatches).map(p=>{
     const {firstPublishedAt,...unpublished}=p;
     return history.entries[p.id]?{...p,firstPublishedAt:history.entries[p.id].firstPublishedAt}:unpublished;
   });
