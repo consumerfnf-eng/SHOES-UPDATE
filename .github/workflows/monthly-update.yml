@@ -72,28 +72,6 @@ jobs:
       - name: Write the weekly briefing
         if: always()
         run: npm run briefing
-      - name: Email the weekly briefing
-        id: briefing
-        if: always()
-        continue-on-error: true
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: ${{ secrets.MAIL_SERVER || 'smtp.gmail.com' }}
-          server_port: ${{ secrets.MAIL_PORT || 465 }}
-          secure: true
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          from: SHOES Research
-          to: rlapwls39@fnfcorp.com
-          subject: "[SHOES] 주간 브리핑 · ${{ github.event.repository.updated_at }}"
-          html_body: file://logs/weekly-briefing.html
-          body: file://logs/weekly-briefing.txt
-          attachments: logs/weekly-briefing.json
-      - name: Say so when the briefing could not be sent
-        if: always() && steps.briefing.outcome != 'success'
-        run: |
-          echo '주간 브리핑을 만들었지만 메일로 보내지 못했습니다. MAIL_USERNAME / MAIL_PASSWORD 시크릿이 필요합니다.' >> "$GITHUB_STEP_SUMMARY"
-          echo '브리핑 본문은 이 실행의 아티팩트(weekly-briefing)에 들어 있습니다.' >> "$GITHUB_STEP_SUMMARY"
       - name: Keep the briefing as an artifact either way
         if: always()
         uses: actions/upload-artifact@v4

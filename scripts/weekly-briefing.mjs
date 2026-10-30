@@ -12,13 +12,16 @@
 //   what broke     - collection steps that failed, and readers that were
 //                    blocked, named rather than buried in a log.
 //
-// Writes logs/weekly-briefing.html and .txt. The workflow sends them; if no
+// Writes logs/weekly-briefing.html and .txt, and - given --out <directory> or
+// SHOES_BRIEFING_DIR - a dated copy named for the week it covers, so a folder
+// of them reads as a run of weeks rather than one file overwritten in place.
+// The old comment below describes the mail route, which is no longer used.
 // mail credentials are configured it still writes them and says so, because
 // a briefing that exists is better than one that was never generated.
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {priceDistribution, colourDistribution, materialDistribution, priceKrw, RATE_NOTE}
+import {priceDistribution, colourDistribution, materialDistribution, priceKrw, RATE_NOTE, categoryDistribution}
   from '../public/assets/analysis.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -60,6 +63,7 @@ export function buildBriefing({catalog, overlay, trends, report, coverage, histo
   const price = priceDistribution(fresh.length ? fresh : products);
   const colour = colourDistribution(fresh.length ? fresh : products);
   const material = materialDistribution(fresh.length ? fresh : products);
+  const category = categoryDistribution(fresh.length ? fresh : products);
 
   // A brand only counts as empty when nothing of its reached the page.
   // `verified` can be zero while products publish through another path -
@@ -83,7 +87,7 @@ export function buildBriefing({catalog, overlay, trends, report, coverage, histo
     counts: {products: products.length, fresh: fresh.length,
              official: (catalog.products || []).length, retail: (overlay.retail || []).length,
              newsletter: (overlay.newsletter || []).length},
-    price, colour, material, topBrands, keywords, silent, empty, watch, failures,
+    price, colour, material, category, topBrands, keywords, silent, empty, watch, failures,
     rereleases: report?.rereleasesExcluded ?? null,
     collected: report?.retailCollected ?? null,
   };
@@ -157,7 +161,9 @@ export function briefingText(b) {
     '상위 브랜드: ' + b.topBrands.map(([n, c]) => `${n} ${c}`).join(', '), '',
     '가격대: ' + b.price.bands.map(x => `${x.label} ${x.count}`).join(' / '),
     '컬러: ' + b.colour.rows.slice(0, 6).map(x => `${x.name} ${x.count}`).join(' / '),
-    '소재: ' + b.material.rows.slice(0, 6).map(x => `${x.name} ${x.count}`).join(' / '), '',
+    '소재: ' + b.material.rows.slice(0, 6).map(x => `${x.name} ${x.count}`).join(' / '),
+    '카테고리: ' + b.category.rows.slice(0, 8).map(x => `${x.name} ${x.count}`).join(' / ')
+      + ` (분류 ${num(b.category.placed)}건 · 이름만으로 알 수 없는 ${num(b.category.unplaced)}건 제외)`, '',
     'SNS 키워드: ' + (b.keywords.join(' ') || '없음'), '',
     '살펴볼 것:',
     ...(b.watch.length ? b.watch.map(w => `  - ${w.brand}: 이번 주 ${w.count}건 (평소 ${w.typical}건)`) : ['  급감한 브랜드 없음']),
@@ -194,8 +200,26 @@ export async function main() {
   await fs.writeFile(path.join(root, 'logs/weekly-briefing.html'), briefingHtml(brief));
   await fs.writeFile(path.join(root, 'logs/weekly-briefing.txt'), briefingText(brief));
   await fs.writeFile(path.join(root, 'logs/weekly-briefing.json'), JSON.stringify(brief, null, 2));
+  const outDir = outputDirectory();
+  if (outDir) {
+    await fs.mkdir(outDir, {recursive: true});
+    // Named for the day the briefing covers, not the day it was written: a
+    // Monday re-run of last week's figures should land on last week's file.
+    const stamp = brief.asOf.slice(0, 10);
+    await fs.writeFile(path.join(outDir, `${stamp}.txt`), briefingText(brief).replace(/\n/g, '\r\n'), 'utf8');
+    await fs.writeFile(path.join(outDir, `${stamp}.html`), briefingHtml(brief), 'utf8');
+    console.log(`저장: ${path.join(outDir, stamp + '.txt')}`);
+  }
   console.log(briefingText(brief));
   return brief;
+}
+
+/** Where the dated copy goes: --out wins, then SHOES_BRIEFING_DIR, then
+ *  nowhere - a CI run writes only the repository copies. */
+export function outputDirectory(argv = process.argv, env = process.env) {
+  const flag = argv.indexOf('--out');
+  if (flag >= 0 && argv[flag + 1]) return argv[flag + 1];
+  return env.SHOES_BRIEFING_DIR || '';
 }
 
 if (process.argv[1] && import.meta.url === new URL(`file://${process.argv[1].replace(/\\/g, '/')}`).href.replace('file:////', 'file:///'))
