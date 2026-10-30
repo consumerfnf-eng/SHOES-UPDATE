@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-30T08:10:07.930Z",
+  "publishedAt": "2026-10-30T08:16:04.261Z",
   "periodStart": "2026-07-30",
   "asOf": "2026-10-30",
   "brands": [
@@ -548,6 +548,102 @@
   ],
   "products": [
     {
+      "id": "arrival-175b05a389f039c50157",
+      "brand": "FILA",
+      "name": "[FILA X T] 스피드템포 플러스",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "fila|filaxt스피드템포플러스",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "FILA",
+        "productUrl": "https://www.fila.co.kr/products/1100fs263ru04x003461",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.fila.co.kr/collections/men-new",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 170: [FILA X T] 스피드템포 플러스",
+        "contentHash": "a4fc6a93c5a47328f34bf0f6d97324c8f96d3f1b1dc4f40dd9ac03b5f0125a44",
+        "style": "FS263RU04X003461"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.fila.co.kr/products/1100fs263ru04x003461",
+      "image": "https://www.fila.co.kr/cdn/shop/files/26FW_HSH_ECHAPPE_BOOTS_5_09625f7b-0443-45cb-b9c4-ddce0977fb9c.png?v=1791446666&width=600",
+      "style": "FS263RU04X003461",
+      "colorway": "461 (BLUE,BLACK,BLACK)",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "179,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.fila.co.kr/products/1100fs263ru04x003461",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "brand": "FILA",
+        "style": "FS263RU04X003461",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "c3022d42fab14e39691a36352d7eda6ef84d98deb856ee8e75fada4123c22495"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://www.fila.co.kr/cdn/shop/files/26FW_HSH_ECHAPPE_BOOTS_5_09625f7b-0443-45cb-b9c4-ddce0977fb9c.png?v=1791446666&width=600",
+        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru04x003461",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "brand": "FILA",
+        "style": "FS263RU04X003461",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "c3022d42fab14e39691a36352d7eda6ef84d98deb856ee8e75fada4123c22495"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-25T00:39:28.323Z",
+      "productEvidenceUrl": "https://www.fila.co.kr/products/1100fs263ru04x003461",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "color:black",
+        "brand:fila"
+      ],
+      "presentation": {
+        "image": "https://www.fila.co.kr/cdn/shop/files/26FW_HSH_ECHAPPE_BOOTS_5_09625f7b-0443-45cb-b9c4-ddce0977fb9c.png?v=1791446666&width=600",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru04x003461",
+        "checkedAt": "2026-10-25T00:39:28.323Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/295244d5d43fac375a351b106d050d0d3df587be097f347c9c70428ccb657a05.webp"
+      },
+      "bodyColor": "#040d1d"
+    },
+    {
       "id": "arrival-d5c774fe84722acf037b",
       "brand": "FILA",
       "name": "[우즈 착용 ] 하레핀 1998 말차",
@@ -933,102 +1029,6 @@
         "cachedPath": "/images/47fec5d9f44af1d2405250459202bf2004fff8aff0f689db36f6d6438f0b4e2f.jpg"
       },
       "bodyColor": "#d1d1cd"
-    },
-    {
-      "id": "arrival-175b05a389f039c50157",
-      "brand": "FILA",
-      "name": "[FILA X T] 스피드템포 플러스",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "fila|filaxt스피드템포플러스",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "FILA",
-        "productUrl": "https://www.fila.co.kr/products/1100fs263ru04x003461",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.fila.co.kr/collections/men-new",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "excerpt": "Official New / New Arrivals listing: Image 170: [FILA X T] 스피드템포 플러스",
-        "contentHash": "a4fc6a93c5a47328f34bf0f6d97324c8f96d3f1b1dc4f40dd9ac03b5f0125a44",
-        "style": "FS263RU04X003461"
-      },
-      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
-      "url": "https://www.fila.co.kr/products/1100fs263ru04x003461",
-      "image": "https://www.fila.co.kr/cdn/shop/files/26FW_HSH_ECHAPPE_BOOTS_5_09625f7b-0443-45cb-b9c4-ddce0977fb9c.png?v=1791446666&width=600",
-      "style": "FS263RU04X003461",
-      "colorway": "461 (BLUE,BLACK,BLACK)",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "179,000원",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.fila.co.kr/products/1100fs263ru04x003461",
-        "verifiedAt": "2026-10-25T00:39:28.323Z",
-        "brand": "FILA",
-        "style": "FS263RU04X003461",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "c3022d42fab14e39691a36352d7eda6ef84d98deb856ee8e75fada4123c22495"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://www.fila.co.kr/cdn/shop/files/26FW_HSH_ECHAPPE_BOOTS_5_09625f7b-0443-45cb-b9c4-ddce0977fb9c.png?v=1791446666&width=600",
-        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru04x003461",
-        "verifiedAt": "2026-10-25T00:39:28.323Z",
-        "brand": "FILA",
-        "style": "FS263RU04X003461",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "c3022d42fab14e39691a36352d7eda6ef84d98deb856ee8e75fada4123c22495"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-25T00:39:28.323Z",
-      "productEvidenceUrl": "https://www.fila.co.kr/products/1100fs263ru04x003461",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "mesh-sheer",
-        "suede"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "attribute:running",
-        "material:mesh",
-        "color:black",
-        "brand:fila"
-      ],
-      "presentation": {
-        "image": "https://www.fila.co.kr/cdn/shop/files/26FW_HSH_ECHAPPE_BOOTS_5_09625f7b-0443-45cb-b9c4-ddce0977fb9c.png?v=1791446666&width=600",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru04x003461",
-        "checkedAt": "2026-10-25T00:39:28.323Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/295244d5d43fac375a351b106d050d0d3df587be097f347c9c70428ccb657a05.webp"
-      },
-      "bodyColor": "#040d1d"
     },
     {
       "id": "arrival-cf6be25196b49a78b032",
@@ -1418,200 +1418,6 @@
         "cachedPath": "/images/f33682073ce630b9e6ed824cd18ef6ebb40333f8994231ceabd30fbd0c2e897f.jpg"
       },
       "bodyColor": "#bcb9ad"
-    },
-    {
-      "id": "arrival-cce02d4333bff366011d",
-      "brand": "FILA",
-      "name": "휠라 스피드템포 플러스",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "fila|휠라스피드템포플러스",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "FILA",
-        "productUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.fila.co.kr/collections/kids-new",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "excerpt": "Official New / New Arrivals listing: 휠라 스피드템포 플러스 179,000원 0%",
-        "contentHash": "b7565d6b0f193b2653ffc6496f84b0a28aa5a62cc2f17ec210c635d5d42b242c",
-        "style": "FS263RU02X098260"
-      },
-      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
-      "url": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-      "image": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
-      "style": "FS263RU02X098260",
-      "colorway": "BEIGE,GRAY,BEIGE",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "179,000원",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-        "verifiedAt": "2026-10-07T08:50:41.787Z",
-        "brand": "FILA",
-        "style": "FS263RU02X098260",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "2bf7900ad81c09536f527eddb070df6fe9cacbf47603e52fa00f5fc5044e02a8"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
-        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-        "verifiedAt": "2026-10-07T08:50:41.787Z",
-        "brand": "FILA",
-        "style": "FS263RU02X098260",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "2bf7900ad81c09536f527eddb070df6fe9cacbf47603e52fa00f5fc5044e02a8"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-07T08:50:41.787Z",
-      "productEvidenceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "mesh-sheer",
-        "suede"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "attribute:running",
-        "material:mesh",
-        "brand:fila"
-      ],
-      "presentation": {
-        "image": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
-        "scale": 1.25,
-        "offsetY": 0,
-        "view": "side",
-        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-        "checkedAt": "2026-10-07T08:50:41.368Z",
-        "officialProductUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
-        "cachedPath": "/images/983bdea5cf8c3cefb96ab84b07fc8c5c63340537ab32682bc4dcd8fc828aeeb5.jpg"
-      },
-      "colorSwatches": [
-        "#e2dbca"
-      ],
-      "bodyColor": "#a99482"
-    },
-    {
-      "id": "arrival-3d39dc707b5ca1c66628",
-      "brand": "FILA",
-      "name": "휠라 에샤페 LX 퍼플",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고"
-      ],
-      "modelKey": "fila|휠라에샤페lx퍼플",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "FILA",
-        "productUrl": "https://www.fila.co.kr/products/1100fs261od03x087662",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.fila.co.kr/collections/kids-new",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "excerpt": "Official New / New Arrivals listing: 휠라 에샤페 LX 퍼플 119,000원 0%",
-        "contentHash": "b7565d6b0f193b2653ffc6496f84b0a28aa5a62cc2f17ec210c635d5d42b242c",
-        "style": "FS261OD03X087662"
-      },
-      "firstPublishedAt": "2026-10-30T06:40:41.423Z",
-      "url": "https://www.fila.co.kr/products/1100fs261od03x087662",
-      "image": "https://www.fila.co.kr/cdn/shop/files/26FW_WOODZ_DOWN_22.png?v=1789607024&width=600",
-      "style": "FS261OD03X087662",
-      "colorway": "PINK,PINK,GRAY",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "119,000원",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.fila.co.kr/products/1100fs261od03x087662",
-        "verifiedAt": "2026-10-07T09:36:32.356Z",
-        "brand": "FILA",
-        "style": "FS261OD03X087662",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "7141354caa1b69d1828698369e386e89c07d45ce08a8ca558295749f4cd02e3c"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://www.fila.co.kr/cdn/shop/files/26FW_WOODZ_DOWN_22.png?v=1789607024&width=600",
-        "sourceUrl": "https://www.fila.co.kr/products/1100fs261od03x087662",
-        "verifiedAt": "2026-10-07T09:36:32.356Z",
-        "brand": "FILA",
-        "style": "FS261OD03X087662",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "7141354caa1b69d1828698369e386e89c07d45ce08a8ca558295749f4cd02e3c"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-07T09:36:32.356Z",
-      "productEvidenceUrl": "https://www.fila.co.kr/products/1100fs261od03x087662",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "mesh-sheer",
-        "trail-gorpcore",
-        "suede"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "material:mesh",
-        "style:gorpcore",
-        "brand:fila"
-      ],
-      "presentation": {
-        "image": "https://www.fila.co.kr/cdn/shop/files/26FW_WOODZ_DOWN_22.png?v=1789607024&width=600",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.fila.co.kr/products/1100fs261od03x087662",
-        "checkedAt": "2026-10-07T09:36:32.356Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/6bc8c3dcfe82105474c79c42c007fa52f539844bd93ff100f9f364b4ef1d289c.webp"
-      },
-      "bodyColor": "#6dc1d5"
     },
     {
       "id": "arrival-d329e17895c3ffb6c74f",
@@ -55314,6 +55120,200 @@
       "bodyColor": "#aa9682"
     },
     {
+      "id": "arrival-cce02d4333bff366011d",
+      "brand": "FILA",
+      "name": "휠라 스피드템포 플러스",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "fila|휠라스피드템포플러스",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "FILA",
+        "productUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.fila.co.kr/collections/kids-new",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: 휠라 스피드템포 플러스 179,000원 0%",
+        "contentHash": "b7565d6b0f193b2653ffc6496f84b0a28aa5a62cc2f17ec210c635d5d42b242c",
+        "style": "FS263RU02X098260"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+      "image": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
+      "style": "FS263RU02X098260",
+      "colorway": "BEIGE,GRAY,BEIGE",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "179,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+        "verifiedAt": "2026-10-07T08:50:41.787Z",
+        "brand": "FILA",
+        "style": "FS263RU02X098260",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "2bf7900ad81c09536f527eddb070df6fe9cacbf47603e52fa00f5fc5044e02a8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
+        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+        "verifiedAt": "2026-10-07T08:50:41.787Z",
+        "brand": "FILA",
+        "style": "FS263RU02X098260",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "2bf7900ad81c09536f527eddb070df6fe9cacbf47603e52fa00f5fc5044e02a8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-07T08:50:41.787Z",
+      "productEvidenceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "material:mesh",
+        "brand:fila"
+      ],
+      "presentation": {
+        "image": "https://www.fila.co.kr/cdn/shop/files/01_ec774e94-3176-464e-9139-cab54dec4b8c.jpg?v=1784689224&width=200",
+        "scale": 1.25,
+        "offsetY": 0,
+        "view": "side",
+        "sourceUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+        "checkedAt": "2026-10-07T08:50:41.368Z",
+        "officialProductUrl": "https://www.fila.co.kr/products/1100fs263ru02x098260",
+        "cachedPath": "/images/983bdea5cf8c3cefb96ab84b07fc8c5c63340537ab32682bc4dcd8fc828aeeb5.jpg"
+      },
+      "colorSwatches": [
+        "#e2dbca"
+      ],
+      "bodyColor": "#a99482"
+    },
+    {
+      "id": "arrival-3d39dc707b5ca1c66628",
+      "brand": "FILA",
+      "name": "휠라 에샤페 LX 퍼플",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고"
+      ],
+      "modelKey": "fila|휠라에샤페lx퍼플",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "FILA",
+        "productUrl": "https://www.fila.co.kr/products/1100fs261od03x087662",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.fila.co.kr/collections/kids-new",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: 휠라 에샤페 LX 퍼플 119,000원 0%",
+        "contentHash": "b7565d6b0f193b2653ffc6496f84b0a28aa5a62cc2f17ec210c635d5d42b242c",
+        "style": "FS261OD03X087662"
+      },
+      "firstPublishedAt": "2026-10-30T06:40:41.423Z",
+      "url": "https://www.fila.co.kr/products/1100fs261od03x087662",
+      "image": "https://www.fila.co.kr/cdn/shop/files/26FW_WOODZ_DOWN_22.png?v=1789607024&width=600",
+      "style": "FS261OD03X087662",
+      "colorway": "PINK,PINK,GRAY",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "119,000원",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.fila.co.kr/products/1100fs261od03x087662",
+        "verifiedAt": "2026-10-07T09:36:32.356Z",
+        "brand": "FILA",
+        "style": "FS261OD03X087662",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "7141354caa1b69d1828698369e386e89c07d45ce08a8ca558295749f4cd02e3c"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://www.fila.co.kr/cdn/shop/files/26FW_WOODZ_DOWN_22.png?v=1789607024&width=600",
+        "sourceUrl": "https://www.fila.co.kr/products/1100fs261od03x087662",
+        "verifiedAt": "2026-10-07T09:36:32.356Z",
+        "brand": "FILA",
+        "style": "FS261OD03X087662",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "7141354caa1b69d1828698369e386e89c07d45ce08a8ca558295749f4cd02e3c"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-07T09:36:32.356Z",
+      "productEvidenceUrl": "https://www.fila.co.kr/products/1100fs261od03x087662",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "mesh-sheer",
+        "trail-gorpcore",
+        "suede"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:mesh",
+        "style:gorpcore",
+        "brand:fila"
+      ],
+      "presentation": {
+        "image": "https://www.fila.co.kr/cdn/shop/files/26FW_WOODZ_DOWN_22.png?v=1789607024&width=600",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.fila.co.kr/products/1100fs261od03x087662",
+        "checkedAt": "2026-10-07T09:36:32.356Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/6bc8c3dcfe82105474c79c42c007fa52f539844bd93ff100f9f364b4ef1d289c.webp"
+      },
+      "bodyColor": "#6dc1d5"
+    },
+    {
       "id": "arrival-9c97d9f62088cb3e83c3",
       "brand": "New Balance",
       "name": "1080v15",
@@ -55600,853 +55600,6 @@
         "cachedPath": "/images/dbdd80698039cf188f0855859fe25d479451efb60c276dccb73293b56c0ab250.webp"
       },
       "bodyColor": "#492b21"
-    },
-    {
-      "id": "arrival-1d4de6a10bafe12f2e42",
-      "brand": "Crocs",
-      "name": "베이 라인드 메탈 미니즈 클로그",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고"
-      ],
-      "modelKey": "crocs|베이라인드메탈미니즈클로그",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Crocs",
-        "productUrl": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 신상품 베이 라인드 메탈 미니즈 클로그",
-        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
-        "style": "214483"
-      },
-      "firstPublishedAt": "2026-10-30T06:40:41.423Z",
-      "url": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
-      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214483_2PL_ALT100/crocs",
-      "style": "214483",
-      "colorway": "코코아 크림",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "₩124,000",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "214483",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "761257b7611a8cd2ec12895222c5ac0c79e6c99ba2fbb6041b2c759e52fe3d69"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214483_2PL_ALT100/crocs",
-        "sourceUrl": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "214483",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "761257b7611a8cd2ec12895222c5ac0c79e6c99ba2fbb6041b2c759e52fe3d69"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "clog"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:crocs"
-      ],
-      "presentation": {
-        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214483_2PL_ALT100/crocs",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/a377bd620bb4c578f9aae15696b5395a1a76304589e8ef25e93e2479558cd0e2.webp"
-      },
-      "bodyColor": "#bfb7ad"
-    },
-    {
-      "id": "arrival-f9e74b9742fed6225341",
-      "brand": "Crocs",
-      "name": "언퍼게터블 퀼티드 비건 스웨이드",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "crocs|언퍼게터블퀼티드비건스웨이드",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Crocs",
-        "productUrl": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarFull StarFull StarFull Star 1 언퍼게터블 퀼티드 비건 스웨이드",
-        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
-        "style": "214038"
-      },
-      "firstPublishedAt": "2026-10-30T06:40:41.423Z",
-      "url": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
-      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214038_7DF_ALT100/crocs",
-      "style": "214038",
-      "colorway": "버블 아이스",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "₩99,900",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "214038",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "5cc2c209c4e0b3bcd454d9af582f93e82af1c17861e5a4d672366d06830f30fa"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214038_7DF_ALT100/crocs",
-        "sourceUrl": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "214038",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "5cc2c209c4e0b3bcd454d9af582f93e82af1c17861e5a4d672366d06830f30fa"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "suede",
-        "clog"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "material:suede",
-        "brand:crocs"
-      ],
-      "presentation": {
-        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214038_7DF_ALT100/crocs",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/b16d87128a5b82884b841c36e1f0bde487c9077ee27968eb343218170335216b.webp"
-      },
-      "bodyColor": "#e6e2e4"
-    },
-    {
-      "id": "arrival-d42c2c5544ca9cc00753",
-      "brand": "Crocs",
-      "name": "언퍼게터블 플랫폼 클로그",
-      "category": "platform-shoe",
-      "productType": "platform-shoe",
-      "fitReasons": [
-        "일상 스포츠 캐주얼·실루엣 참고",
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "crocs|언퍼게터블플랫폼클로그",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Crocs",
-        "productUrl": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarHalf StarHalf StarFull StarFull Star 4 언퍼게터블 플랫폼 클로그",
-        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
-        "style": "214108"
-      },
-      "firstPublishedAt": "2026-10-30T04:22:33.335Z",
-      "url": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
-      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214108_2Y2_ALT100/crocs",
-      "style": "214108",
-      "colorway": ":본",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "₩109,000",
-      "description": "캐주얼 플랫폼 슈즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "footwearStructure": {
-        "category": "platform-shoe",
-        "description": "이 놀랍도록 편안한 클로그는 포근한 포 퍼와 Croslite™ 아웃솔을 결합해 어디서든 안락한 편안함을 극대화하도록 디자인되었습니다. 플랫폼 높이를 더한 언퍼게터블 플랫폼 클로그는 한층 높아진 편안함과 다양한 스타일을 선사합니다. *   더 높은 1.6인치/41mm 높이 웨지(바닥에서 발 뒤꿈치까지 측정)  *   어퍼의 참 장착용 링이 달린 TPU Crocs™ 로고 탭  *   편안함을 더해주는 풋베드의 발을 감싸주는 부드러움  *   아웃도어용으로 어울리는 Croslite™ 아웃솔이 선사하는 다용도성  *   Dual Crocs Comfort™: 더없이 만족스러운 지지력. 부드러움. 아늑한 편안함. 겉감 :34.5% 나일론, 34.5% 폴리우레탄,19% 에틸렌비닐아세테이트, 11% 폴리염화비닐, 1% 기타 •기간: 10/26(월) 9am – 10/30(금) 9am    •해당 프로모션 페이지 내 상품에 6만원 이상 구매 시 1만원 카드 할인    •프로모션 상품이 포함된 주문의 경우 전체 반품만 가능 (부분 반품 불가)    •일부 프로모션 및 쿠폰 중복 적용 불가 / 일부 상품 제외    •본 프로모션은 당사의 사정에 의해 사전 고지 없이 변경 혹은 종료 될 수 있음    •해당 프로모션의 주문 건은 주문 폭주로 인해 배송이 지연될 수 있음    •웹사이트 판매 약관에 따라 재판매를 위한 구매가 의심되는 경우 출고에 제한이 발생할 수 있습니다. 지금 크록스 클럽 신청하고추가15% 할인 쿠폰을 받으세요. 크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준 캐시백 링크로 접속 되었습니다. 구매 후 캐시백을 받으시려면 “모두 동의” 버튼을 클릭해 주십시오 당사 웹사이트는 사이트 기능, 성능, 분석, 맞춤, 컨텐츠 및 광고에 쿠키를 사용합니다. “모두 수락하기”를 클릭하면 고객님께서는 사이트 사용을 위해 개인정보보호법과 사용조건에따라 쿠키사용에 동의합니다. \"개인정보 설정\"에서 동의 내용을 수정할 수 있습니다. 웹사이트를 방문하는 경우 컴퓨터나 모바일 장치에 저장되는 텍스트 파일인 쿠키가 사용되어 웹사이트에서 정보를 저장하거나 검색할 수 있습니다. 수집된 정보는 귀하, 귀하의 기본 설정 또는 본인이 사용하는 기기에 관한 것일 수 있으며 사이트가 이용자의 예상대로 작동하도록 사용됩니다. 정보는 일반적으로 이용자를 직접 식별하지 않으며 더욱 맞춤화된 웹 경험을 제공할 수 있습니다.    당사는 귀하의 개인정보 보호 권리를 존중하므로, 이용자가 일부 유형의 쿠키를 허용하지 않도록 선택할 수 있습니다. 카테고리별 제목을 클릭하여 자세히 알아보고 기본 설정을 변경하십시오. 하지만 이용자가 일부 쿠키를 차단하면 사이트 및 당사가 제공하는 서비스 경험에 영향을 받을 수 있습니다. 이 쿠키는 웹사이트 기능의 작동에 필요하며 당사 시스템에서 끌 수 없습니다. 일반적으로 개인 정보 기본 설정, 로그인 또는 양식 작성 등의 서비스 요청에 해당하는 귀하의 조치에 대한 응답으로만 설정됩니다. 이는 종종 \"선호\" 쿠키라고도 합니다. 귀하가 웹사이트를 방문하는 동안 쿠키는 사이트의 성능을 향상시키고 귀하가 입력한 정보 또는 선택한 사항(귀하의 언어 또는 지역 등)을 기억하기 위해 사용됩니다. 하지만 귀하가 사이트를 이용할 때 필수적인 사항은 아입니다. 하지만 이 쿠키가 없으면 특정 기능의 사용이 불가능할 수도 있습니다. 이 쿠키를 사용하여 트래픽 소스를 계산하고 인식이 가능하여 당사의 사이트 성능을 측정할 수 있습니다. 이 쿠키가 수집하는 모든 정보는 집계되어 귀하는 직접 식별되지 않습니다. 이러한 쿠키를 허용하지 않는 경우 귀하의 당사 사이트 방문한 시간을 알 수 없고 성능도 모니터링되지 않습니다. 이 쿠키는 광고 파트너가 당사 사이트를 통해 설정할 수 있습니다. 귀하의 관심사에 대한 프로필을 작성하고 다른 사이트에서 귀하에게 관련 광고를 보여주기 위해 해당 회사들이 사용할 수 있습니다. 직접적인 개인 정보를 저장하지 않지만 귀하의 브라우저와 인터넷 장치의 고유한 식별을 기반으로 이루어집니다. 이 쿠키를 허용하지 않으면 타겟 광고가 덜 노출됩니다. 귀하의 기기는 GPC신호가 활성화 되어 있습니다.당사의 동의 범주를 선택하려면 GPC 신호를 비활성화 하십시오."
-      },
-      "officialCategory": "",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "214108",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "900929b486a4534130f5bc0dc4443988c6f97088b547c826b545595e53eb8356"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214108_2Y2_ALT100/crocs",
-        "sourceUrl": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "214108",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "900929b486a4534130f5bc0dc4443988c6f97088b547c826b545595e53eb8356"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "clog",
-        "platform"
-      ],
-      "searchConceptIds": [
-        "shape:platform",
-        "brand:crocs"
-      ],
-      "presentation": {
-        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214108_2Y2_ALT100/crocs",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/4757607ebaee3d5f770d79fc2724b760019ebe84dc45643f3c3bf90753e69176.webp"
-      },
-      "bodyColor": "#bfb8a9"
-    },
-    {
-      "id": "arrival-db8db2c64a7bc921d7be",
-      "brand": "Crocs",
-      "name": "에코 II 크롬",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고"
-      ],
-      "modelKey": "crocs|에코ii크롬",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Crocs",
-        "productUrl": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarFull StarFull StarFull Star 1 에코 II 크롬",
-        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
-        "style": "213780"
-      },
-      "firstPublishedAt": "2026-10-30T06:40:41.423Z",
-      "url": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
-      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/213780_0TK_ALT100/crocs",
-      "style": "213780",
-      "colorway": "블랙 크롬",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "₩119,000",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "213780",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "20d03668d9b3fc8a1c239b5adf82d56bf3a4a667ab8cbe09840e9be0d5121af3"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/213780_0TK_ALT100/crocs",
-        "sourceUrl": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "213780",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "20d03668d9b3fc8a1c239b5adf82d56bf3a4a667ab8cbe09840e9be0d5121af3"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "clog"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "color:black",
-        "brand:crocs"
-      ],
-      "presentation": {
-        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/213780_0TK_ALT100/crocs",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/36d005e6351b9bec77424d23c0be0dd1012d677f02699449e04d6e93858db23a.webp"
-      },
-      "bodyColor": "#333231"
-    },
-    {
-      "id": "arrival-c3fd897d781dae57af3f",
-      "brand": "Crocs",
-      "name": "클래식 두들 퍼 라인드 클로그",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고"
-      ],
-      "modelKey": "crocs|클래식두들퍼라인드클로그",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Crocs",
-        "productUrl": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarFull StarFull StarHalf StarHalf Star 3 클래식 두들 퍼 라인드 클로그 할인가:",
-        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
-        "style": "210849"
-      },
-      "firstPublishedAt": "2026-10-30T07:43:05.765Z",
-      "url": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
-      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/210849_2EY_ALT100/crocs",
-      "style": "210849",
-      "colorway": "세피아",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "₩99,900",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "210849",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "423395ad03d41ed5bc3dbd7205a816aa4d25004cbfcb3114fd831ce4a3f07d4b"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/210849_2EY_ALT100/crocs",
-        "sourceUrl": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "210849",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "423395ad03d41ed5bc3dbd7205a816aa4d25004cbfcb3114fd831ce4a3f07d4b"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "clog"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:crocs"
-      ],
-      "presentation": {
-        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/210849_2EY_ALT100/crocs",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/ee85a60ec20777e1ae638887a3f8d67b0f200ba8f9e6c02736d45b9d2fbf10e5.webp"
-      },
-      "bodyColor": "#705641"
-    },
-    {
-      "id": "arrival-1cdda21a5f8cff060f26",
-      "brand": "Crocs",
-      "name": "클래식 언퍼게터블 스웨이드 클로그",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "crocs|클래식언퍼게터블스웨이드클로그",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Crocs",
-        "productUrl": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarFull StarFull StarFull Star 3 클래식 언퍼게터블 스웨이드 클로그",
-        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
-        "style": "212106"
-      },
-      "firstPublishedAt": "2026-10-30T07:43:05.765Z",
-      "url": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
-      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212106_2EY_ALT100/crocs",
-      "style": "212106",
-      "colorway": "세피아",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "₩99,900",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "212106",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "0b2794c26abcc6e9f9da59b25173f82277f90d83d3234c8d368bc3d11a7dd22c"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212106_2EY_ALT100/crocs",
-        "sourceUrl": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "212106",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "0b2794c26abcc6e9f9da59b25173f82277f90d83d3234c8d368bc3d11a7dd22c"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "suede",
-        "clog"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "material:suede",
-        "brand:crocs"
-      ],
-      "presentation": {
-        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212106_2EY_ALT100/crocs",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/3e89ef98ae82ee5aeba8f424e2f0820717595a1b5a638b7e7e0b52359655beb1.webp"
-      },
-      "bodyColor": "#a8815d"
-    },
-    {
-      "id": "arrival-f8ebb3b8e5ae39842b52",
-      "brand": "Crocs",
-      "name": "클래식 플랫폼 퍼즈 라인드 클로그",
-      "category": "platform-shoe",
-      "productType": "platform-shoe",
-      "fitReasons": [
-        "일상 스포츠 캐주얼·실루엣 참고"
-      ],
-      "modelKey": "crocs|클래식플랫폼퍼즈라인드클로그",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Crocs",
-        "productUrl": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarFull StarFull StarFull Star 1 클래식 플랫폼 퍼즈 라인드 클로그",
-        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
-        "style": "212854"
-      },
-      "firstPublishedAt": "2026-10-30T04:22:33.335Z",
-      "url": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
-      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212854_2MC_ALT100/crocs",
-      "style": "212854",
-      "colorway": "프라페",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "₩94,900",
-      "description": "캐주얼 플랫폼 슈즈 · 일상 스포츠 캐주얼·실루엣 참고",
-      "footwearStructure": {
-        "category": "platform-shoe",
-        "description": "## 지비츠™ 참을 추가해서 개성을 표현해 보세요 Personalize your shoe by adding jibbitz 글자를 입력하시면 Jibbitz Charms로 바꿔드려요. *   겉감 : 71% 에틸렌비닐아세테이트, 29% 폴리에스터 여성들을 위해 클래식 아이콘을 더욱 스타일리시하게 업데이트했습니다. 모두가 알고 있고 사랑하는 어퍼를 지지하는 더 높은 컨투어 아웃솔이 특징인 클래식 플랫폼 라인드 클로그를 더욱 슬림하고 세련된 디자인으로 선보입니다. 부드럽고 포근한 안감과 퍼즈로 덮은 백스트랩이 라인드 클래식 디자인의 아늑한 느낌을 선사하면서도 한층 높아진 스타일을 연출합니다. 편안한 스타일과 약간 더 높아진 스타일을 원한다면, 클래식 플랫폼 퍼즈 라인드 클로그를 신어보세요. *   더 높은 1.6인치/41mm 높이 웨지(바닥에서 발 뒤꿈치까지 측정) *   Dual Crocs Comfort™: 더없이 만족스러운 지지력. 부드러움. 아늑한 편안함. •기간: 10/26(월) 9am – 10/30(금) 9am    •프로모션 상품이 포함된 주문의 경우 전체 반품만 가능 (부분 반품 불가)    •일부 프로모션 및 쿠폰 중복 적용 불가 / 일부 상품 제외    •본 프로모션은 당사의 사정에 의해 사전 고지 없이 변경 혹은 종료 될 수 있음    •해당 프로모션의 주문 건은 주문 폭주로 인해 배송이 지연될 수 있음    •웹사이트 판매 약관에 따라 재판매를 위한 구매가 의심되는 경우 출고에 제한이 발생할 수 있습니다. 클래식 플랫폼 클로그로 내피 있는 것과 없는것 둘다 구입. 내피 있는것 (사이즈 250) 한사이즈 업함. 사진보면 알겠지만, 내피 없는것은 240사이즈인데, 사진보면 비교가 보일꺼임. 퍼즈 라이즈는 입구 사이즈가 좁음. 한기들어가지 말라고 좁게 나온 듯. 덕분에 사이즈가 좀 커도 폭이 좁아 길이가 커도 적당히 밀착됨. 문제는 내피없는것과 고무재질이 좀 차이가 있음. 플랫폼 클로그는 쫀득한 고무인데, 퍼즈 라인드는 딱딱함이 큼. 착화감이 다름. 게다가 플랫폼 디자인에 내피까지있어 너무 무거워 발등및 정강이까지 불편함. 너비 좁은 것 같음 사이즈 잘 맞는 것 같음 착용감 불편함 내구성 내구성이 있음 여성들을 위해 클래식 아이콘을 더욱 스타일리시하게 업데이트했습니다. 모두가 알고 있고 사랑하는 어퍼를 지지하는 더 높은 컨투어 아웃솔이 특징인 클래식 플랫폼 라인드 클로그를 더욱 슬림하고 세련된 디자인으로 선보입니다. 부드럽고 포근한 안감과 퍼즈로 덮은 백스트랩이 라인드 클래식 디자인의 아늑한 느낌을 선사하면서도 한층 높아진 스타일을 연출합니다. 편안한 스타일과 약간 더 높아진 스타일을 원한다면, 클래식 플랫폼 퍼즈 라인드 클로그를 신어보세요. *   더 높은 1.6인치/41mm 높이 웨지(바닥에서 발 뒤꿈치까지 측정) *   Dual Crocs Comfort™: 더없이 만족스러운 지지력. 부드러움. 아늑한 편안함. *   겉감 : 71% 에틸렌비닐아세테이트, 29% 폴리에스터 지금 크록스 클럽 신청하고추가15% 할인 쿠폰을 받으세요. *   월 - 금 :Monday through Friday 오전 10시 - 오후 5시 오전 10시 - 오후 5시  *   점심시간 :Saturday 오후 12시 - 1시 9am to 9pm Eastern Time  *   크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준 고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한   *   월 - 금 :Monday through Friday 오전 10시 - 오후 5시 오전 10시 - 오후 5시  *   점심시간 :Saturday 오후 12시 - 1시 9am to 9pm Eastern Time  *   크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준 |  캐시백 링크로 접속 되었습니다. 구매 후 캐시백을 받으시려면 “모두 동의” 버튼을 클릭해 주십시오 당사 웹사이트는 사이트 기능, 성능, 분석, 맞춤, 컨텐츠 및 광고에 쿠키를 사용합니다. “모두 수락하기”를 클릭하면 고객님께서는 사이트 사용을 위해 개인정보보호법과 사용조건에따라 쿠키사용에 동의합니다. \"개인정보 설정\"에서 동의 내용을 수정할 수 있습니다. 웹사이트를 방문하는 경우 컴퓨터나 모바일 장치에 저장되는 텍스트 파일인 쿠키가 사용되어 웹사이트에서 정보를 저장하거나 검색할 수 있습니다. 수집된 정보는 귀하, 귀하의 기본 설정 또는 본인이 사용하는 기기에 관한 것일 수 있으며 사이트가 이용자의 예상대로 작동하도록 사용됩니다. 정보는 일반적으로 이용자를 직접 식별하지 않으며 더욱 맞춤화된 웹 경험을 제공할 수 있습니다.    당사는 귀하의 개인정보 보호 권리를 존중하므로, 이용자가 일부 유형의 쿠키를 허용하지 않도록 선택할 수 있습니다. 카테고리별 제목을 클릭하여 자세히 알아보고 기본 설정을 변경하십시오. 하지만 이용자가 일부 쿠키를 차단하면 사이트 및 당사가 제공하는 서비스 경험에 영향을 받을 수 있습니다. 이 쿠키는 웹사이트 기능의 작동에 필요하며 당사 시스템에서 끌 수 없습니다. 일반적으로 개인 정보 기본 설정, 로그인 또는 양식 작성 등의 서비스 요청에 해당하는 귀하의 조치에 대한 응답으로만 설정됩니다. 이는 종종 \"선호\" 쿠키라고도 합니다. 귀하가 웹사이트를 방문하는 동안 쿠키는 사이트의 성능을 향상시키고 귀하가 입력한 정보 또는 선택한 사항(귀하의 언어 또는 지역 등)을 기억하기 위해 사용됩니다. 하지만 귀하가 사이트를 이용할 때 필수적인 사항은 아입니다. 하지만 이 쿠키가 없으면 특정 기능의 사용이 불가능할 수도 있습니다. 이 쿠키를 사용하여 트래픽 소스를 계산하고 인식이 가능하여 당사의 사이트 성능을 측정할 수 있습니다. 이 쿠키가 수집하는 모든 정보는 집계되어 귀하는 직접 식별되지 않습니다. 이러한 쿠키를 허용하지 않는 경우 귀하의 당사 사이트 방문한 시간을 알 수 없고 성능도 모니터링되지 않습니다. 이 쿠키는 광고 파트너가 당사 사이트를 통해 설정할 수 있습니다. 귀하의 관심사에 대한 프로필을 작성하고 다른 사이트에서 귀하에게 관련 광고를 보여주기 위해 해당 회사들이 사용할 수 있습니다. 직접적인 개인 정보를 저장하지 않지만 귀하의 브라우저와 인터넷 장치의 고유한 식별을 기반으로 이루어집니다. 이 쿠키를 허용하지 않으면 타겟 광고가 덜 노출됩니다. 귀하의 기기는 GPC신호가 활성화 되어 있습니다.당사의 동의 범주를 선택하려면 GPC 신호를 비활성화 하십시오."
-      },
-      "officialCategory": "",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "212854",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "dda329b75d68c1fca37847e403e654b814e471b44aff8ece0893104fc64d75b3"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212854_2MC_ALT100/crocs",
-        "sourceUrl": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "212854",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "dda329b75d68c1fca37847e403e654b814e471b44aff8ece0893104fc64d75b3"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "clog",
-        "platform"
-      ],
-      "searchConceptIds": [
-        "shape:platform",
-        "brand:crocs"
-      ],
-      "presentation": {
-        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212854_2MC_ALT100/crocs",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/0846ecca026ebb5ae4f06a174e2ffdac35ee25805febf7c8fe9a1b8548540412.webp"
-      },
-      "bodyColor": "#aaa494"
-    },
-    {
-      "id": "arrival-77407d2dbd8bee37b681",
-      "brand": "Crocs",
-      "name": "클래식 플랫폼 플리스 라인드 젬 클로그",
-      "category": "platform-shoe",
-      "productType": "platform-shoe",
-      "fitReasons": [
-        "일상 스포츠 캐주얼·실루엣 참고"
-      ],
-      "modelKey": "crocs|클래식플랫폼플리스라인드젬클로그",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Crocs",
-        "productUrl": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.crocs.co.kr/c/new-arrivals?intid=search-new",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 신상품 클래식 플랫폼 플리스 라인드 젬 클로그",
-        "contentHash": "42c3c1affff4e887e3eff6d3fa49fe92b34cff118fb33b45f94c00075a36e652",
-        "style": "214360"
-      },
-      "firstPublishedAt": "2026-10-30T04:22:33.335Z",
-      "url": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
-      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214360_1NK_ALT100/crocs",
-      "style": "214360",
-      "colorway": "문라이트",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "₩119,000",
-      "description": "캐주얼 플랫폼 슈즈 · 일상 스포츠 캐주얼·실루엣 참고",
-      "footwearStructure": {
-        "category": "platform-shoe",
-        "description": "## 지비츠™ 참을 추가해서 개성을 표현해 보세요 Personalize your shoe by adding jibbitz 글자를 입력하시면 Jibbitz Charms로 바꿔드려요. *   겉감 : 75% 폴리에스터, 15% 에틸렌비닐아세테이트, 10% 금속섬유 클래식 플랫폼 플리스 라인드 클로그의 셰르파 플리스 라이닝으로 실내외 어디서든 발가락과 뒤꿈치를 따뜻하게 지켜주세요. Croslite™ 폼 구조의 편안함에 백스트랩의 메탈 젬 장식을 더해 스타일까지 챙기세요. *   Iconic Crocs Comfort™: 가벼움. 유연함. 360도 편안함. •기간: 10/26(월) 9am – 10/30(금) 9am    •해당 프로모션 페이지 내 상품에 6만원 이상 구매 시 1만원 카드 할인    •프로모션 상품이 포함된 주문의 경우 전체 반품만 가능 (부분 반품 불가)    •일부 프로모션 및 쿠폰 중복 적용 불가 / 일부 상품 제외    •본 프로모션은 당사의 사정에 의해 사전 고지 없이 변경 혹은 종료 될 수 있음    •해당 프로모션의 주문 건은 주문 폭주로 인해 배송이 지연될 수 있음    •웹사이트 판매 약관에 따라 재판매를 위한 구매가 의심되는 경우 출고에 제한이 발생할 수 있습니다. 클래식 플랫폼 플리스 라인드 클로그의 셰르파 플리스 라이닝으로 실내외 어디서든 발가락과 뒤꿈치를 따뜻하게 지켜주세요. Croslite™ 폼 구조의 편안함에 백스트랩의 메탈 젬 장식을 더해 스타일까지 챙기세요. *   Iconic Crocs Comfort™: 가벼움. 유연함. 360도 편안함. *   겉감 : 75% 폴리에스터, 15% 에틸렌비닐아세테이트, 10% 금속섬유 지금 크록스 클럽 신청하고추가15% 할인 쿠폰을 받으세요. *   월 - 금 :Monday through Friday 오전 10시 - 오후 5시 오전 10시 - 오후 5시  *   점심시간 :Saturday 오후 12시 - 1시 9am to 9pm Eastern Time  *   크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준 고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한   *   월 - 금 :Monday through Friday 오전 10시 - 오후 5시 오전 10시 - 오후 5시  *   점심시간 :Saturday 오후 12시 - 1시 9am to 9pm Eastern Time  *   크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준 |  캐시백 링크로 접속 되었습니다. 구매 후 캐시백을 받으시려면 “모두 동의” 버튼을 클릭해 주십시오 당사 웹사이트는 사이트 기능, 성능, 분석, 맞춤, 컨텐츠 및 광고에 쿠키를 사용합니다. “모두 수락하기”를 클릭하면 고객님께서는 사이트 사용을 위해 개인정보보호법과 사용조건에따라 쿠키사용에 동의합니다. \"개인정보 설정\"에서 동의 내용을 수정할 수 있습니다. 웹사이트를 방문하는 경우 컴퓨터나 모바일 장치에 저장되는 텍스트 파일인 쿠키가 사용되어 웹사이트에서 정보를 저장하거나 검색할 수 있습니다. 수집된 정보는 귀하, 귀하의 기본 설정 또는 본인이 사용하는 기기에 관한 것일 수 있으며 사이트가 이용자의 예상대로 작동하도록 사용됩니다. 정보는 일반적으로 이용자를 직접 식별하지 않으며 더욱 맞춤화된 웹 경험을 제공할 수 있습니다.    당사는 귀하의 개인정보 보호 권리를 존중하므로, 이용자가 일부 유형의 쿠키를 허용하지 않도록 선택할 수 있습니다. 카테고리별 제목을 클릭하여 자세히 알아보고 기본 설정을 변경하십시오. 하지만 이용자가 일부 쿠키를 차단하면 사이트 및 당사가 제공하는 서비스 경험에 영향을 받을 수 있습니다. 이 쿠키는 웹사이트 기능의 작동에 필요하며 당사 시스템에서 끌 수 없습니다. 일반적으로 개인 정보 기본 설정, 로그인 또는 양식 작성 등의 서비스 요청에 해당하는 귀하의 조치에 대한 응답으로만 설정됩니다. 이는 종종 \"선호\" 쿠키라고도 합니다. 귀하가 웹사이트를 방문하는 동안 쿠키는 사이트의 성능을 향상시키고 귀하가 입력한 정보 또는 선택한 사항(귀하의 언어 또는 지역 등)을 기억하기 위해 사용됩니다. 하지만 귀하가 사이트를 이용할 때 필수적인 사항은 아입니다. 하지만 이 쿠키가 없으면 특정 기능의 사용이 불가능할 수도 있습니다. 이 쿠키를 사용하여 트래픽 소스를 계산하고 인식이 가능하여 당사의 사이트 성능을 측정할 수 있습니다. 이 쿠키가 수집하는 모든 정보는 집계되어 귀하는 직접 식별되지 않습니다. 이러한 쿠키를 허용하지 않는 경우 귀하의 당사 사이트 방문한 시간을 알 수 없고 성능도 모니터링되지 않습니다. 이 쿠키는 광고 파트너가 당사 사이트를 통해 설정할 수 있습니다. 귀하의 관심사에 대한 프로필을 작성하고 다른 사이트에서 귀하에게 관련 광고를 보여주기 위해 해당 회사들이 사용할 수 있습니다. 직접적인 개인 정보를 저장하지 않지만 귀하의 브라우저와 인터넷 장치의 고유한 식별을 기반으로 이루어집니다. 이 쿠키를 허용하지 않으면 타겟 광고가 덜 노출됩니다. 귀하의 기기는 GPC신호가 활성화 되어 있습니다.당사의 동의 범주를 선택하려면 GPC 신호를 비활성화 하십시오."
-      },
-      "officialCategory": "",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "214360",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "b39194b9859abfea0bf8129a365018b7d726ac7d146aef5390665b959b95a9ba"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214360_1NK_ALT100/crocs",
-        "sourceUrl": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "214360",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "b39194b9859abfea0bf8129a365018b7d726ac7d146aef5390665b959b95a9ba"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "clog",
-        "platform"
-      ],
-      "searchConceptIds": [
-        "shape:platform",
-        "brand:crocs"
-      ],
-      "presentation": {
-        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214360_1NK_ALT100/crocs",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/72529161f0fc30261deec7cd515e31630da57e11ea74ac6d5614986bec5938bb.webp"
-      },
-      "bodyColor": "#ced3d1"
-    },
-    {
-      "id": "arrival-091dd58d96db3ee78ec4",
-      "brand": "Crocs",
-      "name": "파타 x 크록스 클래식 클로그",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고"
-      ],
-      "modelKey": "crocs|파타x크록스클래식클로그",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Crocs",
-        "productUrl": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "excerpt": "Official New / New Arrivals listing: 신상품 파타 x 크록스 클래식 클로그",
-        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
-        "style": "212487"
-      },
-      "firstPublishedAt": "2026-10-30T07:43:05.765Z",
-      "url": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
-      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212487_001_ALT100/crocs",
-      "style": "212487",
-      "colorway": "블랙",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "₩149,000",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "212487",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "9c657bb2d326997f881d25613ff5c2414dc6ef685335b6e01c291a7ffbe39c0e"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212487_001_ALT100/crocs",
-        "sourceUrl": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
-        "verifiedAt": "2026-10-28T08:52:16.113Z",
-        "brand": "Crocs",
-        "style": "212487",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "9c657bb2d326997f881d25613ff5c2414dc6ef685335b6e01c291a7ffbe39c0e"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "KR",
-      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
-      "productEvidenceUrl": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [
-        "clog"
-      ],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "color:black",
-        "brand:crocs"
-      ],
-      "presentation": {
-        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212487_001_ALT100/crocs",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
-        "checkedAt": "2026-10-28T08:52:16.113Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/6774d01ec762fe05939f44a487af153e91ec36d28f38c5937db1d139bd8ec7e5.webp"
-      },
-      "bodyColor": "#212121"
     },
     {
       "id": "arrival-ce5763908515a1ea044e",
@@ -65624,6 +64777,853 @@
         "#445761"
       ],
       "bodyColor": "#2e3640"
+    },
+    {
+      "id": "arrival-1d4de6a10bafe12f2e42",
+      "brand": "Crocs",
+      "name": "베이 라인드 메탈 미니즈 클로그",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고"
+      ],
+      "modelKey": "crocs|베이라인드메탈미니즈클로그",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Crocs",
+        "productUrl": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 신상품 베이 라인드 메탈 미니즈 클로그",
+        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
+        "style": "214483"
+      },
+      "firstPublishedAt": "2026-10-30T06:40:41.423Z",
+      "url": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
+      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214483_2PL_ALT100/crocs",
+      "style": "214483",
+      "colorway": "코코아 크림",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "₩124,000",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "214483",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "761257b7611a8cd2ec12895222c5ac0c79e6c99ba2fbb6041b2c759e52fe3d69"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214483_2PL_ALT100/crocs",
+        "sourceUrl": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "214483",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "761257b7611a8cd2ec12895222c5ac0c79e6c99ba2fbb6041b2c759e52fe3d69"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "clog"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:crocs"
+      ],
+      "presentation": {
+        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214483_2PL_ALT100/crocs",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.crocs.co.kr/p/bae-lined-metal-minis-clog/214483.html?cgid=women-footwear-new-arrivals&cid=2PL",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/a377bd620bb4c578f9aae15696b5395a1a76304589e8ef25e93e2479558cd0e2.webp"
+      },
+      "bodyColor": "#bfb7ad"
+    },
+    {
+      "id": "arrival-f9e74b9742fed6225341",
+      "brand": "Crocs",
+      "name": "언퍼게터블 퀼티드 비건 스웨이드",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "crocs|언퍼게터블퀼티드비건스웨이드",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Crocs",
+        "productUrl": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarFull StarFull StarFull Star 1 언퍼게터블 퀼티드 비건 스웨이드",
+        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
+        "style": "214038"
+      },
+      "firstPublishedAt": "2026-10-30T06:40:41.423Z",
+      "url": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
+      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214038_7DF_ALT100/crocs",
+      "style": "214038",
+      "colorway": "버블 아이스",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "₩99,900",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "214038",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "5cc2c209c4e0b3bcd454d9af582f93e82af1c17861e5a4d672366d06830f30fa"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214038_7DF_ALT100/crocs",
+        "sourceUrl": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "214038",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "5cc2c209c4e0b3bcd454d9af582f93e82af1c17861e5a4d672366d06830f30fa"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "suede",
+        "clog"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "brand:crocs"
+      ],
+      "presentation": {
+        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214038_7DF_ALT100/crocs",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.crocs.co.kr/p/unfurgettable-quilted-clog/214038.html?cgid=women-footwear-new-arrivals&cid=7DF",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/b16d87128a5b82884b841c36e1f0bde487c9077ee27968eb343218170335216b.webp"
+      },
+      "bodyColor": "#e6e2e4"
+    },
+    {
+      "id": "arrival-d42c2c5544ca9cc00753",
+      "brand": "Crocs",
+      "name": "언퍼게터블 플랫폼 클로그",
+      "category": "platform-shoe",
+      "productType": "platform-shoe",
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "crocs|언퍼게터블플랫폼클로그",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Crocs",
+        "productUrl": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarHalf StarHalf StarFull StarFull Star 4 언퍼게터블 플랫폼 클로그",
+        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
+        "style": "214108"
+      },
+      "firstPublishedAt": "2026-10-30T04:22:33.335Z",
+      "url": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
+      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214108_2Y2_ALT100/crocs",
+      "style": "214108",
+      "colorway": ":본",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "₩109,000",
+      "description": "캐주얼 플랫폼 슈즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "footwearStructure": {
+        "category": "platform-shoe",
+        "description": "이 놀랍도록 편안한 클로그는 포근한 포 퍼와 Croslite™ 아웃솔을 결합해 어디서든 안락한 편안함을 극대화하도록 디자인되었습니다. 플랫폼 높이를 더한 언퍼게터블 플랫폼 클로그는 한층 높아진 편안함과 다양한 스타일을 선사합니다. *   더 높은 1.6인치/41mm 높이 웨지(바닥에서 발 뒤꿈치까지 측정)  *   어퍼의 참 장착용 링이 달린 TPU Crocs™ 로고 탭  *   편안함을 더해주는 풋베드의 발을 감싸주는 부드러움  *   아웃도어용으로 어울리는 Croslite™ 아웃솔이 선사하는 다용도성  *   Dual Crocs Comfort™: 더없이 만족스러운 지지력. 부드러움. 아늑한 편안함. 겉감 :34.5% 나일론, 34.5% 폴리우레탄,19% 에틸렌비닐아세테이트, 11% 폴리염화비닐, 1% 기타 •기간: 10/26(월) 9am – 10/30(금) 9am    •해당 프로모션 페이지 내 상품에 6만원 이상 구매 시 1만원 카드 할인    •프로모션 상품이 포함된 주문의 경우 전체 반품만 가능 (부분 반품 불가)    •일부 프로모션 및 쿠폰 중복 적용 불가 / 일부 상품 제외    •본 프로모션은 당사의 사정에 의해 사전 고지 없이 변경 혹은 종료 될 수 있음    •해당 프로모션의 주문 건은 주문 폭주로 인해 배송이 지연될 수 있음    •웹사이트 판매 약관에 따라 재판매를 위한 구매가 의심되는 경우 출고에 제한이 발생할 수 있습니다. 지금 크록스 클럽 신청하고추가15% 할인 쿠폰을 받으세요. 크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준 캐시백 링크로 접속 되었습니다. 구매 후 캐시백을 받으시려면 “모두 동의” 버튼을 클릭해 주십시오 당사 웹사이트는 사이트 기능, 성능, 분석, 맞춤, 컨텐츠 및 광고에 쿠키를 사용합니다. “모두 수락하기”를 클릭하면 고객님께서는 사이트 사용을 위해 개인정보보호법과 사용조건에따라 쿠키사용에 동의합니다. \"개인정보 설정\"에서 동의 내용을 수정할 수 있습니다. 웹사이트를 방문하는 경우 컴퓨터나 모바일 장치에 저장되는 텍스트 파일인 쿠키가 사용되어 웹사이트에서 정보를 저장하거나 검색할 수 있습니다. 수집된 정보는 귀하, 귀하의 기본 설정 또는 본인이 사용하는 기기에 관한 것일 수 있으며 사이트가 이용자의 예상대로 작동하도록 사용됩니다. 정보는 일반적으로 이용자를 직접 식별하지 않으며 더욱 맞춤화된 웹 경험을 제공할 수 있습니다.    당사는 귀하의 개인정보 보호 권리를 존중하므로, 이용자가 일부 유형의 쿠키를 허용하지 않도록 선택할 수 있습니다. 카테고리별 제목을 클릭하여 자세히 알아보고 기본 설정을 변경하십시오. 하지만 이용자가 일부 쿠키를 차단하면 사이트 및 당사가 제공하는 서비스 경험에 영향을 받을 수 있습니다. 이 쿠키는 웹사이트 기능의 작동에 필요하며 당사 시스템에서 끌 수 없습니다. 일반적으로 개인 정보 기본 설정, 로그인 또는 양식 작성 등의 서비스 요청에 해당하는 귀하의 조치에 대한 응답으로만 설정됩니다. 이는 종종 \"선호\" 쿠키라고도 합니다. 귀하가 웹사이트를 방문하는 동안 쿠키는 사이트의 성능을 향상시키고 귀하가 입력한 정보 또는 선택한 사항(귀하의 언어 또는 지역 등)을 기억하기 위해 사용됩니다. 하지만 귀하가 사이트를 이용할 때 필수적인 사항은 아입니다. 하지만 이 쿠키가 없으면 특정 기능의 사용이 불가능할 수도 있습니다. 이 쿠키를 사용하여 트래픽 소스를 계산하고 인식이 가능하여 당사의 사이트 성능을 측정할 수 있습니다. 이 쿠키가 수집하는 모든 정보는 집계되어 귀하는 직접 식별되지 않습니다. 이러한 쿠키를 허용하지 않는 경우 귀하의 당사 사이트 방문한 시간을 알 수 없고 성능도 모니터링되지 않습니다. 이 쿠키는 광고 파트너가 당사 사이트를 통해 설정할 수 있습니다. 귀하의 관심사에 대한 프로필을 작성하고 다른 사이트에서 귀하에게 관련 광고를 보여주기 위해 해당 회사들이 사용할 수 있습니다. 직접적인 개인 정보를 저장하지 않지만 귀하의 브라우저와 인터넷 장치의 고유한 식별을 기반으로 이루어집니다. 이 쿠키를 허용하지 않으면 타겟 광고가 덜 노출됩니다. 귀하의 기기는 GPC신호가 활성화 되어 있습니다.당사의 동의 범주를 선택하려면 GPC 신호를 비활성화 하십시오."
+      },
+      "officialCategory": "",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "214108",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "900929b486a4534130f5bc0dc4443988c6f97088b547c826b545595e53eb8356"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214108_2Y2_ALT100/crocs",
+        "sourceUrl": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "214108",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "900929b486a4534130f5bc0dc4443988c6f97088b547c826b545595e53eb8356"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "clog",
+        "platform"
+      ],
+      "searchConceptIds": [
+        "shape:platform",
+        "brand:crocs"
+      ],
+      "presentation": {
+        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214108_2Y2_ALT100/crocs",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.crocs.co.kr/p/unfurgettable-platform-clog/214108.html?cgid=women-footwear-new-arrivals&cid=2Y2",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/4757607ebaee3d5f770d79fc2724b760019ebe84dc45643f3c3bf90753e69176.webp"
+      },
+      "bodyColor": "#bfb8a9"
+    },
+    {
+      "id": "arrival-db8db2c64a7bc921d7be",
+      "brand": "Crocs",
+      "name": "에코 II 크롬",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고"
+      ],
+      "modelKey": "crocs|에코ii크롬",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Crocs",
+        "productUrl": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarFull StarFull StarFull Star 1 에코 II 크롬",
+        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
+        "style": "213780"
+      },
+      "firstPublishedAt": "2026-10-30T06:40:41.423Z",
+      "url": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
+      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/213780_0TK_ALT100/crocs",
+      "style": "213780",
+      "colorway": "블랙 크롬",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "₩119,000",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "213780",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "20d03668d9b3fc8a1c239b5adf82d56bf3a4a667ab8cbe09840e9be0d5121af3"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/213780_0TK_ALT100/crocs",
+        "sourceUrl": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "213780",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "20d03668d9b3fc8a1c239b5adf82d56bf3a4a667ab8cbe09840e9be0d5121af3"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "clog"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "brand:crocs"
+      ],
+      "presentation": {
+        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/213780_0TK_ALT100/crocs",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.crocs.co.kr/p/echo-ii-chrome/213780.html?cgid=women-footwear-new-arrivals&cid=0TK",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/36d005e6351b9bec77424d23c0be0dd1012d677f02699449e04d6e93858db23a.webp"
+      },
+      "bodyColor": "#333231"
+    },
+    {
+      "id": "arrival-c3fd897d781dae57af3f",
+      "brand": "Crocs",
+      "name": "클래식 두들 퍼 라인드 클로그",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고"
+      ],
+      "modelKey": "crocs|클래식두들퍼라인드클로그",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Crocs",
+        "productUrl": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarFull StarFull StarHalf StarHalf Star 3 클래식 두들 퍼 라인드 클로그 할인가:",
+        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
+        "style": "210849"
+      },
+      "firstPublishedAt": "2026-10-30T07:43:05.765Z",
+      "url": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
+      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/210849_2EY_ALT100/crocs",
+      "style": "210849",
+      "colorway": "세피아",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "₩99,900",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "210849",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "423395ad03d41ed5bc3dbd7205a816aa4d25004cbfcb3114fd831ce4a3f07d4b"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/210849_2EY_ALT100/crocs",
+        "sourceUrl": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "210849",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "423395ad03d41ed5bc3dbd7205a816aa4d25004cbfcb3114fd831ce4a3f07d4b"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "clog"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:crocs"
+      ],
+      "presentation": {
+        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/210849_2EY_ALT100/crocs",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.crocs.co.kr/p/classic-faux-doodle-fur-clog/210849.html?cgid=women-footwear-new-arrivals&cid=2EY",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/ee85a60ec20777e1ae638887a3f8d67b0f200ba8f9e6c02736d45b9d2fbf10e5.webp"
+      },
+      "bodyColor": "#705641"
+    },
+    {
+      "id": "arrival-1cdda21a5f8cff060f26",
+      "brand": "Crocs",
+      "name": "클래식 언퍼게터블 스웨이드 클로그",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "crocs|클래식언퍼게터블스웨이드클로그",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Crocs",
+        "productUrl": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarFull StarFull StarFull Star 3 클래식 언퍼게터블 스웨이드 클로그",
+        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
+        "style": "212106"
+      },
+      "firstPublishedAt": "2026-10-30T07:43:05.765Z",
+      "url": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
+      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212106_2EY_ALT100/crocs",
+      "style": "212106",
+      "colorway": "세피아",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "₩99,900",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "212106",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "0b2794c26abcc6e9f9da59b25173f82277f90d83d3234c8d368bc3d11a7dd22c"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212106_2EY_ALT100/crocs",
+        "sourceUrl": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "212106",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "0b2794c26abcc6e9f9da59b25173f82277f90d83d3234c8d368bc3d11a7dd22c"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "suede",
+        "clog"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "material:suede",
+        "brand:crocs"
+      ],
+      "presentation": {
+        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212106_2EY_ALT100/crocs",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.crocs.co.kr/p/classic-unfurgettable-vegan-suede-clog/212106.html?cgid=women-footwear-new-arrivals&cid=2EY",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/3e89ef98ae82ee5aeba8f424e2f0820717595a1b5a638b7e7e0b52359655beb1.webp"
+      },
+      "bodyColor": "#a8815d"
+    },
+    {
+      "id": "arrival-f8ebb3b8e5ae39842b52",
+      "brand": "Crocs",
+      "name": "클래식 플랫폼 퍼즈 라인드 클로그",
+      "category": "platform-shoe",
+      "productType": "platform-shoe",
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "crocs|클래식플랫폼퍼즈라인드클로그",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Crocs",
+        "productUrl": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 신상품 Full StarFull StarFull StarFull StarFull Star 1 클래식 플랫폼 퍼즈 라인드 클로그",
+        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
+        "style": "212854"
+      },
+      "firstPublishedAt": "2026-10-30T04:22:33.335Z",
+      "url": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
+      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212854_2MC_ALT100/crocs",
+      "style": "212854",
+      "colorway": "프라페",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "₩94,900",
+      "description": "캐주얼 플랫폼 슈즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "footwearStructure": {
+        "category": "platform-shoe",
+        "description": "## 지비츠™ 참을 추가해서 개성을 표현해 보세요 Personalize your shoe by adding jibbitz 글자를 입력하시면 Jibbitz Charms로 바꿔드려요. *   겉감 : 71% 에틸렌비닐아세테이트, 29% 폴리에스터 여성들을 위해 클래식 아이콘을 더욱 스타일리시하게 업데이트했습니다. 모두가 알고 있고 사랑하는 어퍼를 지지하는 더 높은 컨투어 아웃솔이 특징인 클래식 플랫폼 라인드 클로그를 더욱 슬림하고 세련된 디자인으로 선보입니다. 부드럽고 포근한 안감과 퍼즈로 덮은 백스트랩이 라인드 클래식 디자인의 아늑한 느낌을 선사하면서도 한층 높아진 스타일을 연출합니다. 편안한 스타일과 약간 더 높아진 스타일을 원한다면, 클래식 플랫폼 퍼즈 라인드 클로그를 신어보세요. *   더 높은 1.6인치/41mm 높이 웨지(바닥에서 발 뒤꿈치까지 측정) *   Dual Crocs Comfort™: 더없이 만족스러운 지지력. 부드러움. 아늑한 편안함. •기간: 10/26(월) 9am – 10/30(금) 9am    •프로모션 상품이 포함된 주문의 경우 전체 반품만 가능 (부분 반품 불가)    •일부 프로모션 및 쿠폰 중복 적용 불가 / 일부 상품 제외    •본 프로모션은 당사의 사정에 의해 사전 고지 없이 변경 혹은 종료 될 수 있음    •해당 프로모션의 주문 건은 주문 폭주로 인해 배송이 지연될 수 있음    •웹사이트 판매 약관에 따라 재판매를 위한 구매가 의심되는 경우 출고에 제한이 발생할 수 있습니다. 클래식 플랫폼 클로그로 내피 있는 것과 없는것 둘다 구입. 내피 있는것 (사이즈 250) 한사이즈 업함. 사진보면 알겠지만, 내피 없는것은 240사이즈인데, 사진보면 비교가 보일꺼임. 퍼즈 라이즈는 입구 사이즈가 좁음. 한기들어가지 말라고 좁게 나온 듯. 덕분에 사이즈가 좀 커도 폭이 좁아 길이가 커도 적당히 밀착됨. 문제는 내피없는것과 고무재질이 좀 차이가 있음. 플랫폼 클로그는 쫀득한 고무인데, 퍼즈 라인드는 딱딱함이 큼. 착화감이 다름. 게다가 플랫폼 디자인에 내피까지있어 너무 무거워 발등및 정강이까지 불편함. 너비 좁은 것 같음 사이즈 잘 맞는 것 같음 착용감 불편함 내구성 내구성이 있음 여성들을 위해 클래식 아이콘을 더욱 스타일리시하게 업데이트했습니다. 모두가 알고 있고 사랑하는 어퍼를 지지하는 더 높은 컨투어 아웃솔이 특징인 클래식 플랫폼 라인드 클로그를 더욱 슬림하고 세련된 디자인으로 선보입니다. 부드럽고 포근한 안감과 퍼즈로 덮은 백스트랩이 라인드 클래식 디자인의 아늑한 느낌을 선사하면서도 한층 높아진 스타일을 연출합니다. 편안한 스타일과 약간 더 높아진 스타일을 원한다면, 클래식 플랫폼 퍼즈 라인드 클로그를 신어보세요. *   더 높은 1.6인치/41mm 높이 웨지(바닥에서 발 뒤꿈치까지 측정) *   Dual Crocs Comfort™: 더없이 만족스러운 지지력. 부드러움. 아늑한 편안함. *   겉감 : 71% 에틸렌비닐아세테이트, 29% 폴리에스터 지금 크록스 클럽 신청하고추가15% 할인 쿠폰을 받으세요. *   월 - 금 :Monday through Friday 오전 10시 - 오후 5시 오전 10시 - 오후 5시  *   점심시간 :Saturday 오후 12시 - 1시 9am to 9pm Eastern Time  *   크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준 고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한   *   월 - 금 :Monday through Friday 오전 10시 - 오후 5시 오전 10시 - 오후 5시  *   점심시간 :Saturday 오후 12시 - 1시 9am to 9pm Eastern Time  *   크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준 |  캐시백 링크로 접속 되었습니다. 구매 후 캐시백을 받으시려면 “모두 동의” 버튼을 클릭해 주십시오 당사 웹사이트는 사이트 기능, 성능, 분석, 맞춤, 컨텐츠 및 광고에 쿠키를 사용합니다. “모두 수락하기”를 클릭하면 고객님께서는 사이트 사용을 위해 개인정보보호법과 사용조건에따라 쿠키사용에 동의합니다. \"개인정보 설정\"에서 동의 내용을 수정할 수 있습니다. 웹사이트를 방문하는 경우 컴퓨터나 모바일 장치에 저장되는 텍스트 파일인 쿠키가 사용되어 웹사이트에서 정보를 저장하거나 검색할 수 있습니다. 수집된 정보는 귀하, 귀하의 기본 설정 또는 본인이 사용하는 기기에 관한 것일 수 있으며 사이트가 이용자의 예상대로 작동하도록 사용됩니다. 정보는 일반적으로 이용자를 직접 식별하지 않으며 더욱 맞춤화된 웹 경험을 제공할 수 있습니다.    당사는 귀하의 개인정보 보호 권리를 존중하므로, 이용자가 일부 유형의 쿠키를 허용하지 않도록 선택할 수 있습니다. 카테고리별 제목을 클릭하여 자세히 알아보고 기본 설정을 변경하십시오. 하지만 이용자가 일부 쿠키를 차단하면 사이트 및 당사가 제공하는 서비스 경험에 영향을 받을 수 있습니다. 이 쿠키는 웹사이트 기능의 작동에 필요하며 당사 시스템에서 끌 수 없습니다. 일반적으로 개인 정보 기본 설정, 로그인 또는 양식 작성 등의 서비스 요청에 해당하는 귀하의 조치에 대한 응답으로만 설정됩니다. 이는 종종 \"선호\" 쿠키라고도 합니다. 귀하가 웹사이트를 방문하는 동안 쿠키는 사이트의 성능을 향상시키고 귀하가 입력한 정보 또는 선택한 사항(귀하의 언어 또는 지역 등)을 기억하기 위해 사용됩니다. 하지만 귀하가 사이트를 이용할 때 필수적인 사항은 아입니다. 하지만 이 쿠키가 없으면 특정 기능의 사용이 불가능할 수도 있습니다. 이 쿠키를 사용하여 트래픽 소스를 계산하고 인식이 가능하여 당사의 사이트 성능을 측정할 수 있습니다. 이 쿠키가 수집하는 모든 정보는 집계되어 귀하는 직접 식별되지 않습니다. 이러한 쿠키를 허용하지 않는 경우 귀하의 당사 사이트 방문한 시간을 알 수 없고 성능도 모니터링되지 않습니다. 이 쿠키는 광고 파트너가 당사 사이트를 통해 설정할 수 있습니다. 귀하의 관심사에 대한 프로필을 작성하고 다른 사이트에서 귀하에게 관련 광고를 보여주기 위해 해당 회사들이 사용할 수 있습니다. 직접적인 개인 정보를 저장하지 않지만 귀하의 브라우저와 인터넷 장치의 고유한 식별을 기반으로 이루어집니다. 이 쿠키를 허용하지 않으면 타겟 광고가 덜 노출됩니다. 귀하의 기기는 GPC신호가 활성화 되어 있습니다.당사의 동의 범주를 선택하려면 GPC 신호를 비활성화 하십시오."
+      },
+      "officialCategory": "",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "212854",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "dda329b75d68c1fca37847e403e654b814e471b44aff8ece0893104fc64d75b3"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212854_2MC_ALT100/crocs",
+        "sourceUrl": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "212854",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "dda329b75d68c1fca37847e403e654b814e471b44aff8ece0893104fc64d75b3"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "clog",
+        "platform"
+      ],
+      "searchConceptIds": [
+        "shape:platform",
+        "brand:crocs"
+      ],
+      "presentation": {
+        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212854_2MC_ALT100/crocs",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.crocs.co.kr/p/classic-platform-fuzz-lined-clog/212854.html?cgid=women-footwear-new-arrivals&cid=2MC",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/0846ecca026ebb5ae4f06a174e2ffdac35ee25805febf7c8fe9a1b8548540412.webp"
+      },
+      "bodyColor": "#aaa494"
+    },
+    {
+      "id": "arrival-77407d2dbd8bee37b681",
+      "brand": "Crocs",
+      "name": "클래식 플랫폼 플리스 라인드 젬 클로그",
+      "category": "platform-shoe",
+      "productType": "platform-shoe",
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고"
+      ],
+      "modelKey": "crocs|클래식플랫폼플리스라인드젬클로그",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Crocs",
+        "productUrl": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.crocs.co.kr/c/new-arrivals?intid=search-new",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 신상품 클래식 플랫폼 플리스 라인드 젬 클로그",
+        "contentHash": "42c3c1affff4e887e3eff6d3fa49fe92b34cff118fb33b45f94c00075a36e652",
+        "style": "214360"
+      },
+      "firstPublishedAt": "2026-10-30T04:22:33.335Z",
+      "url": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
+      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214360_1NK_ALT100/crocs",
+      "style": "214360",
+      "colorway": "문라이트",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "₩119,000",
+      "description": "캐주얼 플랫폼 슈즈 · 일상 스포츠 캐주얼·실루엣 참고",
+      "footwearStructure": {
+        "category": "platform-shoe",
+        "description": "## 지비츠™ 참을 추가해서 개성을 표현해 보세요 Personalize your shoe by adding jibbitz 글자를 입력하시면 Jibbitz Charms로 바꿔드려요. *   겉감 : 75% 폴리에스터, 15% 에틸렌비닐아세테이트, 10% 금속섬유 클래식 플랫폼 플리스 라인드 클로그의 셰르파 플리스 라이닝으로 실내외 어디서든 발가락과 뒤꿈치를 따뜻하게 지켜주세요. Croslite™ 폼 구조의 편안함에 백스트랩의 메탈 젬 장식을 더해 스타일까지 챙기세요. *   Iconic Crocs Comfort™: 가벼움. 유연함. 360도 편안함. •기간: 10/26(월) 9am – 10/30(금) 9am    •해당 프로모션 페이지 내 상품에 6만원 이상 구매 시 1만원 카드 할인    •프로모션 상품이 포함된 주문의 경우 전체 반품만 가능 (부분 반품 불가)    •일부 프로모션 및 쿠폰 중복 적용 불가 / 일부 상품 제외    •본 프로모션은 당사의 사정에 의해 사전 고지 없이 변경 혹은 종료 될 수 있음    •해당 프로모션의 주문 건은 주문 폭주로 인해 배송이 지연될 수 있음    •웹사이트 판매 약관에 따라 재판매를 위한 구매가 의심되는 경우 출고에 제한이 발생할 수 있습니다. 클래식 플랫폼 플리스 라인드 클로그의 셰르파 플리스 라이닝으로 실내외 어디서든 발가락과 뒤꿈치를 따뜻하게 지켜주세요. Croslite™ 폼 구조의 편안함에 백스트랩의 메탈 젬 장식을 더해 스타일까지 챙기세요. *   Iconic Crocs Comfort™: 가벼움. 유연함. 360도 편안함. *   겉감 : 75% 폴리에스터, 15% 에틸렌비닐아세테이트, 10% 금속섬유 지금 크록스 클럽 신청하고추가15% 할인 쿠폰을 받으세요. *   월 - 금 :Monday through Friday 오전 10시 - 오후 5시 오전 10시 - 오후 5시  *   점심시간 :Saturday 오후 12시 - 1시 9am to 9pm Eastern Time  *   크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준 고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한   *   월 - 금 :Monday through Friday 오전 10시 - 오후 5시 오전 10시 - 오후 5시  *   점심시간 :Saturday 오후 12시 - 1시 9am to 9pm Eastern Time  *   크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준 |  캐시백 링크로 접속 되었습니다. 구매 후 캐시백을 받으시려면 “모두 동의” 버튼을 클릭해 주십시오 당사 웹사이트는 사이트 기능, 성능, 분석, 맞춤, 컨텐츠 및 광고에 쿠키를 사용합니다. “모두 수락하기”를 클릭하면 고객님께서는 사이트 사용을 위해 개인정보보호법과 사용조건에따라 쿠키사용에 동의합니다. \"개인정보 설정\"에서 동의 내용을 수정할 수 있습니다. 웹사이트를 방문하는 경우 컴퓨터나 모바일 장치에 저장되는 텍스트 파일인 쿠키가 사용되어 웹사이트에서 정보를 저장하거나 검색할 수 있습니다. 수집된 정보는 귀하, 귀하의 기본 설정 또는 본인이 사용하는 기기에 관한 것일 수 있으며 사이트가 이용자의 예상대로 작동하도록 사용됩니다. 정보는 일반적으로 이용자를 직접 식별하지 않으며 더욱 맞춤화된 웹 경험을 제공할 수 있습니다.    당사는 귀하의 개인정보 보호 권리를 존중하므로, 이용자가 일부 유형의 쿠키를 허용하지 않도록 선택할 수 있습니다. 카테고리별 제목을 클릭하여 자세히 알아보고 기본 설정을 변경하십시오. 하지만 이용자가 일부 쿠키를 차단하면 사이트 및 당사가 제공하는 서비스 경험에 영향을 받을 수 있습니다. 이 쿠키는 웹사이트 기능의 작동에 필요하며 당사 시스템에서 끌 수 없습니다. 일반적으로 개인 정보 기본 설정, 로그인 또는 양식 작성 등의 서비스 요청에 해당하는 귀하의 조치에 대한 응답으로만 설정됩니다. 이는 종종 \"선호\" 쿠키라고도 합니다. 귀하가 웹사이트를 방문하는 동안 쿠키는 사이트의 성능을 향상시키고 귀하가 입력한 정보 또는 선택한 사항(귀하의 언어 또는 지역 등)을 기억하기 위해 사용됩니다. 하지만 귀하가 사이트를 이용할 때 필수적인 사항은 아입니다. 하지만 이 쿠키가 없으면 특정 기능의 사용이 불가능할 수도 있습니다. 이 쿠키를 사용하여 트래픽 소스를 계산하고 인식이 가능하여 당사의 사이트 성능을 측정할 수 있습니다. 이 쿠키가 수집하는 모든 정보는 집계되어 귀하는 직접 식별되지 않습니다. 이러한 쿠키를 허용하지 않는 경우 귀하의 당사 사이트 방문한 시간을 알 수 없고 성능도 모니터링되지 않습니다. 이 쿠키는 광고 파트너가 당사 사이트를 통해 설정할 수 있습니다. 귀하의 관심사에 대한 프로필을 작성하고 다른 사이트에서 귀하에게 관련 광고를 보여주기 위해 해당 회사들이 사용할 수 있습니다. 직접적인 개인 정보를 저장하지 않지만 귀하의 브라우저와 인터넷 장치의 고유한 식별을 기반으로 이루어집니다. 이 쿠키를 허용하지 않으면 타겟 광고가 덜 노출됩니다. 귀하의 기기는 GPC신호가 활성화 되어 있습니다.당사의 동의 범주를 선택하려면 GPC 신호를 비활성화 하십시오."
+      },
+      "officialCategory": "",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "214360",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "b39194b9859abfea0bf8129a365018b7d726ac7d146aef5390665b959b95a9ba"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214360_1NK_ALT100/crocs",
+        "sourceUrl": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "214360",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "b39194b9859abfea0bf8129a365018b7d726ac7d146aef5390665b959b95a9ba"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "clog",
+        "platform"
+      ],
+      "searchConceptIds": [
+        "shape:platform",
+        "brand:crocs"
+      ],
+      "presentation": {
+        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214360_1NK_ALT100/crocs",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.crocs.co.kr/p/classic-platform-fleece-lined-gem-clog/214360.html?cgid=new-arrivals&cid=1NK",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/72529161f0fc30261deec7cd515e31630da57e11ea74ac6d5614986bec5938bb.webp"
+      },
+      "bodyColor": "#ced3d1"
+    },
+    {
+      "id": "arrival-091dd58d96db3ee78ec4",
+      "brand": "Crocs",
+      "name": "파타 x 크록스 클래식 클로그",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고"
+      ],
+      "modelKey": "crocs|파타x크록스클래식클로그",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Crocs",
+        "productUrl": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.crocs.co.kr/c/women/footwear/new-arrivals?intid=sitemap",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "excerpt": "Official New / New Arrivals listing: 신상품 파타 x 크록스 클래식 클로그",
+        "contentHash": "9e65eea8f78e28f2c20eb9b49a14fd923e36626f1de2b1d455005bc37859f701",
+        "style": "212487"
+      },
+      "firstPublishedAt": "2026-10-30T07:43:05.765Z",
+      "url": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
+      "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212487_001_ALT100/crocs",
+      "style": "212487",
+      "colorway": "블랙",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "₩149,000",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "212487",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "9c657bb2d326997f881d25613ff5c2414dc6ef685335b6e01c291a7ffbe39c0e"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212487_001_ALT100/crocs",
+        "sourceUrl": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
+        "verifiedAt": "2026-10-28T08:52:16.113Z",
+        "brand": "Crocs",
+        "style": "212487",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "9c657bb2d326997f881d25613ff5c2414dc6ef685335b6e01c291a7ffbe39c0e"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "KR",
+      "lastVerifiedAt": "2026-10-28T08:52:16.113Z",
+      "productEvidenceUrl": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "clog"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:black",
+        "brand:crocs"
+      ],
+      "presentation": {
+        "image": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212487_001_ALT100/crocs",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.crocs.co.kr/p/patta-x-crocs-classic-exp-clog/212487.html?cgid=women-footwear-new-arrivals&cid=001",
+        "checkedAt": "2026-10-28T08:52:16.113Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/6774d01ec762fe05939f44a487af153e91ec36d28f38c5937db1d139bd8ec7e5.webp"
+      },
+      "bodyColor": "#212121"
     },
     {
       "id": "arrival-1529629f8f059353dec9",
@@ -87413,7 +87413,7 @@
     }
   ],
   "keywordMethod": "verified-style-source-rank-v2",
-  "keywordCheckedAt": "2026-10-30T08:10:07.930Z",
+  "keywordCheckedAt": "2026-10-30T08:16:04.261Z",
   "sourceRanks": [
     {
       "platform": "wgsn-ss27-colours",
@@ -90228,7 +90228,7 @@
     ]
   },
   "retentionBasis": "first-published",
-  "keywordEvaluatedAt": "2026-10-30T08:10:07.930Z",
+  "keywordEvaluatedAt": "2026-10-30T08:16:04.261Z",
   "styleTrendKeywords": {
     "method": "verified-style-board-v1",
     "updated": "2026-10-29T12:01:18.605Z",
