@@ -186,9 +186,27 @@ export function categoryText(product) {
   ].filter(Boolean).join(' ');
 }
 
+// A model -> kind dictionary, built by scripts/build-model-categories.mjs from
+// filings elsewhere in the catalogue and loaded once at start-up. It is
+// consulted after the shop's own filing for this record and before the words
+// in the name: a shop that filed THIS record knows better than a sibling, but
+// a sibling that was filed knows better than a model name that says nothing.
+let MODEL_CATEGORIES = new Map();
+export function useModelCategories(entries = [], keyOf) {
+  MODEL_CATEGORIES = new Map((entries || []).map(e => [e.key, e.category]));
+  if (keyOf) modelKeyOf = keyOf;
+  return MODEL_CATEGORIES.size;
+}
+let modelKeyOf = null;
+
 export function sneakerCategory(product) {
-  return fromSourceLabel(product)
-    || (SNEAKER_CATEGORIES.find(([, re]) => re.test(categoryText(product))) || [UNPLACED_CATEGORY])[0];
+  const filed = fromSourceLabel(product);
+  if (filed) return filed;
+  if (modelKeyOf && MODEL_CATEGORIES.size) {
+    const known = MODEL_CATEGORIES.get(modelKeyOf(product));
+    if (known) return known;
+  }
+  return (SNEAKER_CATEGORIES.find(([, re]) => re.test(categoryText(product))) || [UNPLACED_CATEGORY])[0];
 }
 
 export function categoryDistribution(products) {

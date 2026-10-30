@@ -1,7 +1,7 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes } from './export.mjs';
 import { groupedBrands } from './brand-groups.mjs';
 import { analysisCsv, analysisRows, priceDistribution, materialDistribution, colourDistribution,
-         priceKrw, priceBand, colourFamily, materialsOf, RATE_NOTE,categoryDistribution} from './analysis.mjs';
+         priceKrw, priceBand, colourFamily, materialsOf, RATE_NOTE,categoryDistribution,useModelCategories} from './analysis.mjs';
 import {isPublishedFootwear} from './footwear-policy.mjs';
 import { hasVisual, productImageUrl, kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, preferWomenVariants, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch, isOverlay, overlayKind, overlayReleaseState, overlayWindowDay, retailerId, trendTerms, trendTermGroups, trendKeywordMatches } from './catalog-view.mjs';
 
@@ -122,6 +122,12 @@ async function loadCatalog() {
   $('product-grid').setAttribute('aria-busy','true'); $('product-grid').innerHTML = Array.from({length:8}, () => '<div class="skeleton" aria-hidden="true"></div>').join('');
   $('empty-state').hidden = true;
   const controller = new AbortController(), timeout = setTimeout(() => controller.abort(), 20000);
+  // The model dictionary is a convenience, not a requirement: if it does not
+  // load, the category panel simply places fewer records and says so.
+  try{
+    const dictionary = await fetch('./data/model-categories.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null);
+    if(dictionary?.entries)useModelCategories(dictionary.entries,p=>`${p.brand}|${variantGroupKey(p)}`);
+  }catch{}
   try {
     const response = await fetch('./data/catalog.json', {signal:controller.signal,cache:'no-cache'});
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -278,7 +284,7 @@ function renderAnalysis(){
   document.querySelector('#panel-category .panel-body').innerHTML=
     category.rows.map(r=>bar(r.name,r.count,category.placed)).join('')||'<p class="muted">분류된 상품이 없습니다.</p>';
   document.querySelector('#panel-category .panel-note').textContent=
-    `상점이 적어 둔 분류와 상품명에서 읽은 ${category.placed.toLocaleString()}건 기준 · `
+    `상점 분류 · 같은 모델의 다른 기록 · 상품명에서 읽은 ${category.placed.toLocaleString()}건 기준 · `
     +`이름만으로는 종류를 알 수 없는 ${category.unplaced.toLocaleString()}건은 제외했습니다`;
 
   const price=priceDistribution(rows);

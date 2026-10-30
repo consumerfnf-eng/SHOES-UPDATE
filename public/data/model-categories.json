@@ -1,0 +1,6028 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-10-30T00:45:14.223Z",
+  "note": "상점이 직접 분류했거나 상품명에 종류가 적힌 기록에서 모델별로 모은 사전입니다. 같은 모델의 기록이 서로 다른 종류를 가리키면 기록하지 않습니다.",
+  "entries": [
+    {
+      "key": "23.65|model|2365|donkeymule스니커즈",
+      "brand": "23.65",
+      "model": "DONKEY MULE 스니커즈",
+      "category": "뮬·슬립온",
+      "seenOn": 4,
+      "source": "https://www.29cm.co.kr/products/4307559",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "8seconds|model|8seconds|발레코어스니커즈",
+      "brand": "8seconds",
+      "model": "발레코어 스니커즈",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4189433",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|고스트스프린트발레",
+      "brand": "adidas",
+      "model": "고스트 스프린트 발레",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4115343",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|그랜드코트뮬",
+      "brand": "adidas",
+      "model": "그랜드 코트 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4292028",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|더토탈웨이트리프팅",
+      "brand": "adidas",
+      "model": "더 토탈 웨이트리프팅",
+      "category": "트레이닝·짐",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/6968666",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|도쿄메리제인",
+      "brand": "adidas",
+      "model": "도쿄 메리제인",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4105467",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|슈퍼노바라이즈3",
+      "brand": "adidas",
+      "model": "슈퍼노바 라이즈 3",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7472546",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|슈퍼노바라이즈gtx",
+      "brand": "adidas",
+      "model": "슈퍼노바 라이즈 GTX",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7260986",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|슈퍼노바이즈",
+      "brand": "adidas",
+      "model": "슈퍼노바 이즈",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7472552",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|아디뮬슈퍼스타",
+      "brand": "adidas",
+      "model": "아디뮬 슈퍼스타",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4168015",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|아디제로보스턴13",
+      "brand": "adidas",
+      "model": "아디제로 보스턴 13",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7273316",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|아디제로보스턴13m",
+      "brand": "adidas",
+      "model": "아디제로 보스턴 13 M",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7152815",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|아디제로아디오스9",
+      "brand": "adidas",
+      "model": "아디제로 아디오스 9",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7358256",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|아디제로evoslatr",
+      "brand": "adidas",
+      "model": "아디제로 EVO SL ATR",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7382463",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|아디제로evoslexo",
+      "brand": "adidas",
+      "model": "아디제로 EVO SL EXO",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7273286",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|아디제로evoslhkoumorim",
+      "brand": "adidas",
+      "model": "아디제로 EVO SL H.Koumori M",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7228342",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|아디제로evoslhkoumoriw",
+      "brand": "adidas",
+      "model": "아디제로 EVO SL H.Koumori W",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7228344",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|아디파워웨이트리프팅3",
+      "brand": "adidas",
+      "model": "아디파워 웨이트리프팅 3",
+      "category": "트레이닝·짐",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/6968672",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|앤서니에드워즈3",
+      "brand": "adidas",
+      "model": "앤서니 에드워즈 3",
+      "category": "농구",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7379000",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|크레이지",
+      "brand": "adidas",
+      "model": "크레이지",
+      "category": "농구",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7062495",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|테렉스아그라빅4m",
+      "brand": "adidas",
+      "model": "테렉스 아그라빅 4 M",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7460863",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|테렉스프리하이커lt슬립온",
+      "brand": "adidas",
+      "model": "테렉스 프리하이커 LT 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7488786",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|파워리프트5웨이트리프팅",
+      "brand": "adidas",
+      "model": "파워리프트 5 웨이트리프팅",
+      "category": "트레이닝·짐",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7358238",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|포럼sq",
+      "brand": "adidas",
+      "model": "포럼 SQ",
+      "category": "농구",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7517131",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|하든볼륨10",
+      "brand": "adidas",
+      "model": "하든 볼륨 10",
+      "category": "농구",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7152363",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|하이퍼부스트atrw",
+      "brand": "adidas",
+      "model": "하이퍼부스트 ATR W",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7380965",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|하이퍼부스트gtxm",
+      "brand": "adidas",
+      "model": "하이퍼부스트 GTX M",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7241152",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|하이퍼부스트gtxw",
+      "brand": "adidas",
+      "model": "하이퍼부스트 GTX W",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7273314",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|adidashardenvol1",
+      "brand": "adidas",
+      "model": "adidas Harden Vol. 1",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/13/adidas-harden-vol-1-retro-bw0546/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|adidasjenniesuperstarsqballet",
+      "brand": "adidas",
+      "model": "ADIDAS JENNIE SUPERSTAR SQ BALLET SHOES",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.adidas.com/us/adidas-jennie-superstar-sq-ballet-shoes/LB3786.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|adidasoriginals",
+      "brand": "adidas",
+      "model": "Adidas Originals",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/adidas-edison-chen-clot-superstar-mule-release-date-1239347138/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|adistarcontrol5maryjane",
+      "brand": "adidas",
+      "model": "Adistar Control 5 Mary Jane Sneakers",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/adidas-originals/black-adistar-control-5-mary-jane-sneakers/687556539",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|adizeroadiospro5",
+      "brand": "adidas",
+      "model": "ADIZERO ADIOS PRO 5 Running Shoes",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8294.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|adizeroevoslwoven",
+      "brand": "adidas",
+      "model": "Adizero EVO SL Woven Running Shoes",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.adidas.com/us/adizero-evo-sl-woven-running-shoes/KJ4984.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|continuesitsmarathondominanceinchicago",
+      "brand": "adidas",
+      "model": "Continues its Marathon Dominance in Chicago",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/chicago-marathon-winners-adidas-shoes-details-1239342091/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|damex",
+      "brand": "adidas",
+      "model": "DAME X",
+      "category": "농구",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7117115",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|don이슈8",
+      "brand": "adidas",
+      "model": "D.O.N. 이슈 8",
+      "category": "농구",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7117104",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|donissue8",
+      "brand": "adidas",
+      "model": "D.O.N. ISSUE 8",
+      "category": "농구",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7357762",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|ghostsprintballetw",
+      "brand": "adidas",
+      "model": "GHOST SPRINT BALLET W",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4152347",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|hyperboostedge",
+      "brand": "adidas",
+      "model": "HYPERBOOST EDGE Running Shoes",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.adidas.com/us/hyperboost-edge-running-shoes/KJ0817.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|larryjunesfirstsneakerreleaseoffersavibrantretrorunner",
+      "brand": "adidas",
+      "model": "Larry June’s First Sneaker Release Offers a Vibrant Retro Runner",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/larry-june-adidas-adistar-control-5-release-date-kz7294-1239198523/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|simonerochaclimacool",
+      "brand": "adidas",
+      "model": "Simone Rocha Climacool Shoes",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.adidas.com/us/simone-rocha-climacool-shoes/KH7452.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|simonerochataekwondoballerina",
+      "brand": "adidas",
+      "model": "Simone Rocha Taekwondo Ballerina",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.adidas.com/us/simone-rocha-taekwondo-ballerina/KJ5249.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|sl72프로",
+      "brand": "adidas",
+      "model": "SL 72 프로",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7273330",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|supernovaprima3",
+      "brand": "adidas",
+      "model": "SUPERNOVA PRIMA 3 RUNNING SHOES",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7358271",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|adidas|trainingspezial트레이닝화",
+      "brand": "adidas",
+      "model": "Training Spezial 트레이닝화",
+      "category": "트레이닝·짐",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7152345",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|model|adidas|바레다메리제인",
+      "brand": "adidas",
+      "model": "바레다 메리 제인",
+      "category": "발레·메리제인",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4152349",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|model|adidas|삼바og뮬",
+      "brand": "adidas",
+      "model": "삼바 OG 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 5,
+      "source": "https://www.29cm.co.kr/products/4322951",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|model|adidas|슈퍼노바라이즈3gtx",
+      "brand": "adidas",
+      "model": "슈퍼노바 라이즈 3 GTX",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7358330",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|model|adidas|슈퍼노바프리마3러닝화",
+      "brand": "adidas",
+      "model": "슈퍼노바 프리마 3 러닝화",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7358291",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|model|adidas|위스퍼글라이드트레이닝화",
+      "brand": "adidas",
+      "model": "위스퍼 글라이드 트레이닝화",
+      "category": "트레이닝·짐",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4220372",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "adidas|model|adidas|sambaogmulew",
+      "brand": "adidas",
+      "model": "SAMBA OG MULE W",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4255209",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ALDO|aldo|알도에니오슬립온",
+      "brand": "ALDO",
+      "model": "알도 에니오 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4204604",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|ash|ash아쉬flip플립슬립온ag2d01013bl",
+      "brand": "ASH",
+      "model": "ASH(아쉬) FLIP 플립 슬립온 (AG2D01013 BL)",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4312584",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|ash|ash아쉬idol아이돌플랫폼스니커즈ag4d01025db",
+      "brand": "ASH",
+      "model": "ASH(아쉬) IDOL 아이돌 플랫폼 스니커즈 (AG4D01025 DB)",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4312429",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|ash|ash아쉬magdastuds마그다스터드메리제인스니커즈ah4d01006bl",
+      "brand": "ASH",
+      "model": "ASH(아쉬) MAGDA STUDS 마그다 스터드 메리제인 스니커즈 (AH4D01006 BL)",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4312764",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|ash|ash아쉬mobyanimalier모비애니멀리어플랫폼스니커즈ae4d01016lp",
+      "brand": "ASH",
+      "model": "ASH(아쉬) MOBY ANIMALIER 모비 애니멀리어 플랫폼 스니커즈 (AE4D01016 LP)",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4311904",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|ash|ash아쉬mobybekind모비비카인드플랫폼스니커즈ae4d01019kh",
+      "brand": "ASH",
+      "model": "ASH(아쉬) MOBY BE KIND 모비 비카인드 플랫폼 스니커즈 (AE4D01019 KH)",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4311903",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|ash|ash아쉬mobystuds모비스터드플랫폼스니커즈ah2d01032tj",
+      "brand": "ASH",
+      "model": "ASH(아쉬) MOBY STUDS 모비 스터드 플랫폼 스니커즈 (AH2D01032 TJ)",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4312816",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|ash|ash아쉬moviebis무비비스플랫폼스니커즈ag4d01031bl",
+      "brand": "ASH",
+      "model": "ASH(아쉬) MOVIE BIS 무비 비스 플랫폼 스니커즈 (AG4D01031 BL)",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4312426",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|ash|ash아쉬rainbowwashedcanvas레인보우워시드컨버스스니커즈af2d01101dn",
+      "brand": "ASH",
+      "model": "ASH(아쉬) RAINBOW WASHED CANVAS 레인보우 워시드 컨버스 스니커즈 (AF2D01101 DN)",
+      "category": "캔버스",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4312295",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬dragon드래곤플랫폼스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) DRAGON 드래곤 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 5,
+      "source": "https://www.29cm.co.kr/products/4312336",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬drake드레이크메리제인스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) DRAKE 드레이크 메리제인 스니커즈",
+      "category": "발레·메리제인",
+      "seenOn": 4,
+      "source": "https://www.29cm.co.kr/products/4312350",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬eagle이글플랫폼스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) EAGLE 이글 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 5,
+      "source": "https://www.29cm.co.kr/products/4312811",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬eldoradofur엘도라도퍼플랫폼스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) ELDORADO FUR 엘도라도 퍼 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4312639",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬eli엘리플랫폼스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) ELI 엘리 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4312808",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬icone아이콘플랫폼스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) ICONE 아이콘 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4312589",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬impetus임페터스플랫폼스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) IMPETUS 임페터스 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4312268",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬kore코레메리제인스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) KORE 코레 메리제인 스니커즈",
+      "category": "발레·메리제인",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4312839",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬korebis코레비스메리제인스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) KORE BIS 코레 비스 메리제인 스니커즈",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4312733",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬magda마그다메리제인스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) MAGDA 마그다 메리제인 스니커즈",
+      "category": "발레·메리제인",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4312813",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬match매치플랫폼스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) MATCH 매치 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4312654",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬matchbis매치비스플랫폼스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) MATCH BIS 매치 비스 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4312461",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬matchopen매치오픈플랫폼스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) MATCH OPEN 매치 오픈 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4311902",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASH|model|ash|ash아쉬rolls롤스메리제인스니커즈",
+      "brand": "ASH",
+      "model": "ASH (아쉬) ROLLS 롤스 메리제인 스니커즈",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4312822",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|노바블라스트6라이트쇼남성스탠다드",
+      "brand": "ASICS",
+      "model": "노바블라스트 6 라이트쇼 남성 스탠다드",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7318357",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|노바블라스트6라이트쇼여성스탠다드",
+      "brand": "ASICS",
+      "model": "노바블라스트 6 라이트쇼 여성 스탠다드",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7318359",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|노바블라스트6gtx여성스탠다드",
+      "brand": "ASICS",
+      "model": "노바블라스트 6 GTX 여성 스탠다드",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7318358",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|솔루션스피드ff4",
+      "brand": "ASICS",
+      "model": "솔루션 스피드 FF 4",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575740",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|솔루션스피드ff4클레이nightenergy",
+      "brand": "ASICS",
+      "model": "솔루션 스피드 FF 4 클레이 Night Energy",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575723",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|솔루션스피드ff4nightenergy",
+      "brand": "ASICS",
+      "model": "솔루션 스피드 FF 4 Night Energy",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575737",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|젤1130",
+      "brand": "ASICS",
+      "model": "젤-1130",
+      "category": "캔버스",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4158539",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|젤레졸루션10",
+      "brand": "ASICS",
+      "model": "젤-레졸루션 10",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575736",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|젤레졸루션10클레이",
+      "brand": "ASICS",
+      "model": "젤-레졸루션 10 클레이",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575722",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|젤레졸루션10클레이nightenergy",
+      "brand": "ASICS",
+      "model": "젤-레졸루션 10 클레이 Night Energy",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575721",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|젤레졸루션10클레이nightenergyw",
+      "brand": "ASICS",
+      "model": "젤-레졸루션 10 클레이 Night Energy W",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575717",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|젤레졸루션10클레이w",
+      "brand": "ASICS",
+      "model": "젤-레졸루션 10 클레이 W",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575720",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|젤레졸루션10gs",
+      "brand": "ASICS",
+      "model": "젤-레졸루션 10 GS",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575731",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|젤레졸루션10nightenergy",
+      "brand": "ASICS",
+      "model": "젤-레졸루션 10 Night Energy",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575734",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|젤레졸루션10nightenergyw",
+      "brand": "ASICS",
+      "model": "젤-레졸루션 10 Night Energy W",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575725",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|젤카야노33여성스탠다드화이트비비드코랄",
+      "brand": "ASICS",
+      "model": "젤 카야노 33 여성 스탠다드 - 화이트/비비드 코랄",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7260754",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|코트ff3클레이nightenergyw",
+      "brand": "ASICS",
+      "model": "코트 FF 3 클레이 Night Energy W",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575714",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|코트ff3nightenergyw",
+      "brand": "ASICS",
+      "model": "코트 FF 3 Night Energy W",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7575724",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|blazeblast",
+      "brand": "ASICS",
+      "model": "BLAZEBLAST Running Shoes",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.asics.com/us/en-us/blazeblast/p/ANA_1011C276-001.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|bloomstride",
+      "brand": "ASICS",
+      "model": "BLOOMSTRIDE Running Shoes",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.asics.com/us/en-us/bloomstride/p/ANA_1012C019-250.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|camielfortgensturnsthegelcumulus16intoamaryjaneandvelcro",
+      "brand": "ASICS",
+      "model": "Camiel Fortgens Turns the Gel-Cumulus 16 Into a Mary Jane and Velcro Sneaker",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/asics-camiel-fortgens-gel-cumulus-16-mary-jane-velcro-1239244564/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|gelcumulus28liteshow",
+      "brand": "ASICS",
+      "model": "GEL-CUMULUS 28 LITE-SHOW Running Shoes",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.asics.com/us/en-us/gel-cumulus-28-lite-show/p/ANA_1012C075-400.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|gelkayano33",
+      "brand": "ASICS",
+      "model": "GEL-KAYANO 33 Running Shoes",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.asics.com/us/en-us/gel-kayano-33/p/ANA_1011C167-100.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|gelkayano33liteshow",
+      "brand": "ASICS",
+      "model": "GEL-KAYANO 33 LITE-SHOW Running Shoes",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.asics.com/us/en-us/gel-kayano-33-lite-show/p/ANA_1011C315-400.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|gelnimbus28tr",
+      "brand": "ASICS",
+      "model": "GEL-NIMBUS 28 TR Running Shoes",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.asics.com/us/en-us/gel-nimbus-28-tr/p/ANA_1012C069-250.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|gelnimbus28trtrail",
+      "brand": "ASICS",
+      "model": "GEL-NIMBUS 28 TR Trail Running Shoes",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.asics.com/us/en-us/gel-nimbus-28-tr/p/ANA_1011C309-250.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|gt100015mensrunningshoes",
+      "brand": "ASICS",
+      "model": "GT-1000 15 Men's Running Shoes •",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.asics.com/us/en-us/gt-1000-15/p/ANA_1011C230-020.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|gt200015liteshow",
+      "brand": "ASICS",
+      "model": "GT-2000 15 LITE-SHOW Running Shoes",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.asics.com/us/en-us/gt-2000-15-lite-show/p/ANA_1011C314-400.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|gt200015tr",
+      "brand": "ASICS",
+      "model": "GT-2000 15 TR Running Shoes",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.asics.com/us/en-us/gt-2000-15-tr/p/ANA_1011C308-250.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|hasupgradedthefastestrunningshoeinitsblastline",
+      "brand": "ASICS",
+      "model": "Has Upgraded the Fastest Running Shoe in Its Blast Line",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/asics-sonicblast-2-release-date-1239128261/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|madearunningshoesochillitputslowinthename",
+      "brand": "ASICS",
+      "model": "Made a Running Shoe So Chill It Put ‘Slow’ in the Name",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/asics-gel-slowcush-release-date-1239245378/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|memberaccessnovablast6tenka",
+      "brand": "ASICS",
+      "model": "Member Access NOVABLAST 6 TENKA Running Shoes",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.asics.com/us/en-us/novablast-6-tenka/p/ANA_1011C313-800.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|memberaccesssonicblast2tenka",
+      "brand": "ASICS",
+      "model": "Member Access SONICBLAST 2 TENKA Running Shoes",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.asics.com/us/en-us/sonicblast-2-tenka/p/ANA_1011C311-800.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|metafujitrail2trailrunningshoeshiking",
+      "brand": "ASICS",
+      "model": "METAFUJI TRAIL 2 Trail Running Shoes & Hiking Shoes",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.asics.com/us/en-us/metafuji-trail-2/p/ANA_1013A178-750.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|novablast6liteshow",
+      "brand": "ASICS",
+      "model": "NOVABLAST 6 LITE-SHOW Running Shoes",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.asics.com/us/en-us/novablast-6-lite-show/p/ANA_1012C077-400.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|sonicblast2",
+      "brand": "ASICS",
+      "model": "SONICBLAST 2 Running Shoes",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.asics.com/us/en-us/sonicblast-2/p/ANA_1011C244-400.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|sportstyleaddspearlsballetflatcuesandflowerstotwonewsneakercollaborations",
+      "brand": "ASICS",
+      "model": "SportStyle Adds Pearls, Ballet Flat Cues and Flowers to Two New Sneaker Collaborations",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/asics-sportstyle-gohar-world-cecilie-bahnsen-collaborations-1239172566/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|superblast3",
+      "brand": "ASICS",
+      "model": "SUPERBLAST 3 Running Shoes",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.asics.com/us/en-us/superblast-3/p/ANA_1013A177-101.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|asics|yogirispeed",
+      "brand": "ASICS",
+      "model": "YOGIRI SPEED Running Shoes",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.asics.com/us/en-us/yogiri-speed/p/ANA_1013A196-400.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ASICS|model|asics|젤레졸루션10w",
+      "brand": "ASICS",
+      "model": "젤 레졸루션 10 W",
+      "category": "테니스·코트",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7575730",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Axel Arigato|axelarigato|newflairrunnercombinestwokeydesignelementsfromitspopulardazeandgenesismodels",
+      "brand": "Axel Arigato",
+      "model": "New Flair Runner Combines Two Key Design Elements From Its Popular Daze and Genesis Models",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/axel-arigato-flair-runner-release-date-1239388080/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BABARA|babara|린발레코어스니커즈",
+      "brand": "BABARA",
+      "model": "린 발레코어 스니커즈",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4310198",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Balenciaga|balenciaga|ballet",
+      "brand": "Balenciaga",
+      "model": "ballet sneaker",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.balenciaga.com/en-us/ballet-sneaker-black-871962WBLLT1000.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Balenciaga|balenciaga|hamptonsstickersplatform",
+      "brand": "Balenciaga",
+      "model": "hamptons stickers platform sneaker",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.balenciaga.com/en-us/hamptons-stickers-platform-sneaker-black-multicolor-856420WHPSK1080.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Balenciaga|balenciaga|runnerled",
+      "brand": "Balenciaga",
+      "model": "runner led sneaker",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.balenciaga.com/en-us/runner-led-sneaker-black-A0011YWRNLD1000.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ballop|model|ballop|로드레이서10",
+      "brand": "ballop",
+      "model": "로드 레이서1.0",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7296575",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ballop|model|ballop|스톰r2러닝화",
+      "brand": "ballop",
+      "model": "스톰R2 러닝화",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7564097",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ballop|model|ballop|티바트쉴드v2",
+      "brand": "ballop",
+      "model": "티바트 쉴드V2",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7332566",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ballop|model|ballop|티바트프라임",
+      "brand": "ballop",
+      "model": "티바트 프라임",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7564105",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "bbcearth|model|bbcearth|허글리뮬",
+      "brand": "bbcearth",
+      "model": "허글리 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7573944",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BEARPAW|bearpaw|plum스니커즈",
+      "brand": "BEARPAW",
+      "model": "PLUM 스니커즈",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4162571",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "bearpaw|bearpaw|rosemary양털슬립온",
+      "brand": "bearpaw",
+      "model": "ROSEMARY 양털슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7524419",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BEARPAW|bearpaw|selma양털슬립온블랙",
+      "brand": "BEARPAW",
+      "model": "SELMA 양털슬립온 블랙",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4233569",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BEARPAW|bearpaw|sue패딩슬립온블랙",
+      "brand": "BEARPAW",
+      "model": "SUE 패딩슬립온 블랙",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4233573",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BEARPAW|model|bearpaw|edith패딩슬립온",
+      "brand": "BEARPAW",
+      "model": "EDITH 패딩슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4233556",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BEARPAW|model|bearpaw|jules패딩슬립온",
+      "brand": "BEARPAW",
+      "model": "JULES 패딩슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 5,
+      "source": "https://www.29cm.co.kr/products/4233564",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "bearpaw|model|bearpaw|lark양털슬립온",
+      "brand": "bearpaw",
+      "model": "LARK 양털슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7605177",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "bearpaw|model|bearpaw|loom패딩슬립온",
+      "brand": "bearpaw",
+      "model": "LOOM 패딩슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7605406",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "bearpaw|model|bearpaw|olla양털슬립온",
+      "brand": "bearpaw",
+      "model": "OLLA 양털슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/7605428",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BEARPAW|model|bearpaw|olla양털슬립온",
+      "brand": "BEARPAW",
+      "model": "OLLA 양털슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 4,
+      "source": "https://www.29cm.co.kr/products/4342980",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BLACKYAK|blackyak|트레일엑스lt",
+      "brand": "BLACKYAK",
+      "model": "트레일 엑스 LT_",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4099949",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BLACKYAK|blackyak|트레일엑스lt2pi",
+      "brand": "BLACKYAK",
+      "model": "트레일 엑스 LT#2_PI",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4098890",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BLACKYAK|blackyak|트레일엑스ltbk",
+      "brand": "BLACKYAK",
+      "model": "트레일 엑스 LT_BK",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4098891",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BLACKYAK|blackyak|트레일엑스ltbr",
+      "brand": "BLACKYAK",
+      "model": "트레일 엑스 LT_BR",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4098892",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BLACKYAK|blackyak|트레일엑스ltsi",
+      "brand": "BLACKYAK",
+      "model": "트레일 엑스 LT_SI",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4098959",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Brooks|brooks|brooksrunning",
+      "brand": "Brooks",
+      "model": "Brooks Running",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://wwd.com/footwear-news/sneaker-news/brooks-running-adrenaline-gts-10-pickled-beet-sky-blue-1239310433/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Brooks|brooks|brooksrunningcompany",
+      "brand": "Brooks",
+      "model": "Brooks Running Company",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/brooks-ghost-amp-daily-running-shoe-available-1239093543/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BSQT by classy|bsqtbyclassy|데이2way스웨이드퍼슬립온go122",
+      "brand": "BSQT by classy",
+      "model": "데이 2way 스웨이드 퍼 슬립온 GO122",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4317341",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BSQT by classy|bsqtbyclassy|홀리2way로퍼슬립온go121",
+      "brand": "BSQT by classy",
+      "model": "홀리 2way 로퍼 슬립온 GO121",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4317376",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "BSQT by classy|bsqtbyclassy|홀리2way스웨이드슬립온go121",
+      "brand": "BSQT by classy",
+      "model": "홀리 2way 스웨이드 슬립온 GO121",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4317377",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "bsqtbyclassy|bsqtbyclassy|데이2way스웨이드퍼슬립온베이지go122",
+      "brand": "bsqtbyclassy",
+      "model": "데이 2way 스웨이드 퍼 슬립온 베이지 GO122",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7555768",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "bsqtbyclassy|bsqtbyclassy|데이2way퍼슬립온블랙go122",
+      "brand": "bsqtbyclassy",
+      "model": "데이 2way 퍼 슬립온 블랙 GO122",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7555767",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "bsqtbyclassy|bsqtbyclassy|홀리2way로퍼슬립온블랙go121",
+      "brand": "bsqtbyclassy",
+      "model": "홀리 2way 로퍼 슬립온 블랙 GO121",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7555704",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "bsqtbyclassy|bsqtbyclassy|홀리2way스웨이드슬립온베이지go121",
+      "brand": "bsqtbyclassy",
+      "model": "홀리 2way 스웨이드 슬립온 베이지 GO121",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7555706",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "CAMPER|model|camper|스니커즈drifttrail",
+      "brand": "CAMPER",
+      "model": "스니커즈 Drift Trail",
+      "category": "트레일·하이킹",
+      "seenOn": 11,
+      "source": "https://www.29cm.co.kr/products/4220826",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "CAMPER|model|camper|스니커즈runnerfour",
+      "brand": "CAMPER",
+      "model": "스니커즈 Runner Four",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.29cm.co.kr/products/4186206",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "CAMPER|model|camper|스니커즈runnertwentyfive",
+      "brand": "CAMPER",
+      "model": "스니커즈 Runner Twentyfive",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.29cm.co.kr/products/4220832",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "CAMPER|model|camper|스니커즈runnertwentyfivetwins",
+      "brand": "CAMPER",
+      "model": "스니커즈 Runner Twentyfive Twins",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.29cm.co.kr/products/4186207",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "CAMPER|model|camper|스니커즈runnerup",
+      "brand": "CAMPER",
+      "model": "스니커즈 Runner Up",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4186210",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Cecilie Bahnsen|ceciliebahnsen|asicsgelkineticfr",
+      "brand": "Cecilie Bahnsen",
+      "model": "ASICS GEL-KINETIC FR",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://ceciliebahnsen.com/products/asics-26-4-0001-gel-kinetic-fr-synthetic-leather-black-coffee",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "CHAAKAN|chaakan|벌키플랫폼스니커즈",
+      "brand": "CHAAKAN",
+      "model": "벌키 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4202165",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "CLANE|clane|suedepuffslipons",
+      "brand": "CLANE",
+      "model": "SUEDE PUFF SLIPONS",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4204087",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "COLUMBIA|columbia|컬럼비아남성텔루릭스타이타늄아웃드라이미드와이드트레킹화",
+      "brand": "COLUMBIA",
+      "model": "컬럼비아 남성 텔루릭스 타이타늄 아웃드라이 미드 와이드 트레킹화",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4175747",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "COLUMBIA|columbia|컬럼비아남성텔루릭스타이타늄아웃드라이와이드트레킹화",
+      "brand": "COLUMBIA",
+      "model": "컬럼비아 남성 텔루릭스 타이타늄 아웃드라이 와이드 트레킹화",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4175748",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "COLUMBIA|columbia|컬럼비아남성픽프릭타이타늄아웃드라이미드와이드트레킹화",
+      "brand": "COLUMBIA",
+      "model": "컬럼비아 남성 픽프릭 타이타늄 아웃드라이 미드 와이드 트레킹화",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4175750",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Common Projects|commonprojects|minimalrunner",
+      "brand": "Common Projects",
+      "model": "Minimal Runner Sneakers",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/men/product/common-projects/white-minimal-runner-sneakers/19642561",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Common Projects|commonprojects|minimalrunnerseventy",
+      "brand": "Common Projects",
+      "model": "Minimal Runner Seventy Sneakers",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.ssense.com/en-us/men/product/common-projects/khaki-minimal-runner-seventy-sneakers/19642471",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Common Projects|commonprojects|premiumrunner",
+      "brand": "Common Projects",
+      "model": "Premium Runner Sneakers",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/men/product/common-projects/white-premium-runner-sneakers/469069873",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Common Projects|commonprojects|premiumskate",
+      "brand": "Common Projects",
+      "model": "Premium Skate Sneakers",
+      "category": "스케이트·보드",
+      "seenOn": 4,
+      "source": "https://www.ssense.com/en-us/men/product/common-projects/off-white-premium-skate-sneakers/19642311",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Converse|converse|palmesforconversejackpurcellpdmgreencanvas",
+      "brand": "Converse",
+      "model": "Palmes for Converse Jack Purcell PDM — Green Canvas",
+      "category": "캔버스",
+      "seenOn": 1,
+      "source": "https://palmes.co/products/palmes-for-converse-jack-purcell-green-canvas",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "COREOFALCHEMY|coreofalchemy|originplatformwallaby",
+      "brand": "COREOFALCHEMY",
+      "model": "Origin Platform Wallaby",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4286880",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "covernat|covernat|퀼팅패딩뮬",
+      "brand": "covernat",
+      "model": "퀼팅 패딩 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7595318",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Crocs|crocs|체인소맨과협업한네가지색다른클래식클로그공개",
+      "brand": "Crocs",
+      "model": "‘체인소 맨’과 협업한 네 가지 색다른 클래식 클로그 공개",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://hypebeast.kr/2026/10/chainsaw-man-crocs-classic-clog-collection-chainsaw-man-213925-90h-power-213926-90h-pochita-213928-90h-characters-213927-90h-release-info",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Crocs|crocs|crocsclassicclog",
+      "brand": "Crocs",
+      "model": "Crocs Classic Clog",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/lightning-mcqueen-dinoco-crocs-classic-clog-release-date-1239122912/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "CUSTOMADE WOMAN|customadewoman|아벨스웨이드레이스업메리제인스니커즈4cm",
+      "brand": "CUSTOMADE WOMAN",
+      "model": "아벨 스웨이드 레이스업 메리제인 스니커즈 4cm",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4252367",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "customellow|customellow|blackleathersliponloafersuon2",
+      "brand": "customellow",
+      "model": "Black Leather Slip On Loafers Uon2",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4196909",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DESCENTE|descente|디마라톤v3",
+      "brand": "DESCENTE",
+      "model": "디마라톤 V3",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4208911",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DESCENTE|model|descente|엣지코트",
+      "brand": "DESCENTE",
+      "model": "엣지 코트",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4333663",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "descente|model|descente|goettingenstudioshoes",
+      "brand": "descente",
+      "model": "Goettingen Studio Shoes",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7284299",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "descente|model|descente|trekeasemule",
+      "brand": "descente",
+      "model": "TREK EASE MULE",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7538845",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "diadora|diadora|미토스블루실드볼로5우먼",
+      "brand": "diadora",
+      "model": "미토스 블루실드 볼로 5 우먼",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7316142",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "diadora|diadora|미토스블루실드볼티체10",
+      "brand": "diadora",
+      "model": "미토스 블루실드 볼티체 10",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7316146",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "diadora|diadora|미토스블루실드비고레3",
+      "brand": "diadora",
+      "model": "미토스 블루실드 비고레 3",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7316147",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "diadora|diadora|미토스블루실드비고레3우먼",
+      "brand": "diadora",
+      "model": "미토스 블루실드 비고레3 우먼",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7316154",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "diadora|diadora|비엘리트스타",
+      "brand": "diadora",
+      "model": "비엘리트 스타",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7398925",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "diadora|diadora|아토모스타",
+      "brand": "diadora",
+      "model": "아토모스타",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7316110",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "diadora|diadora|프리퀀자2우먼",
+      "brand": "diadora",
+      "model": "프리퀀자 2 우먼",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7316125",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "diadora|model|diadora|미토스블루실드볼로5",
+      "brand": "diadora",
+      "model": "미토스 블루실드 볼로 5",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7316145",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "diadora|model|diadora|피오레메리제인",
+      "brand": "diadora",
+      "model": "피오레 메리제인",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4237450",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "diadora|model|diadora|v7000딥다이",
+      "brand": "diadora",
+      "model": "V7000 딥 다이",
+      "category": "러닝",
+      "seenOn": 5,
+      "source": "https://www.musinsa.com/products/7341486",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Diesel|diesel|dcagedistressedchunky",
+      "brand": "Diesel",
+      "model": "D-Cage Distressed Chunky Sneakers",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/men/product/diesel/khaki-d-cage-distressed-chunky-sneakers/19358531",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Dior|dior|dioralpswalkndiorplatform",
+      "brand": "Dior",
+      "model": "DiorAlps Walk'n'Dior Platform Sneaker",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.dior.com/en_us/fashion/products/KCK498OCH_S56B",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DISCOVERY EXPEDITION|discoveryexpedition|퍼지뮬dbrown",
+      "brand": "DISCOVERY EXPEDITION",
+      "model": "퍼지뮬 (D BROWN)",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4197688",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DISCOVERY EXPEDITION|model|discoveryexpedition|고프코어하이킹",
+      "brand": "DISCOVERY EXPEDITION",
+      "model": "고프코어 하이킹",
+      "category": "트레일·하이킹",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4191888",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DISCOVERY EXPEDITION|model|discoveryexpedition|스무디슬립온",
+      "brand": "DISCOVERY EXPEDITION",
+      "model": "스무디 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4197694",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "discoveryexpedition|discoveryexpedition|퍼지뮬d",
+      "brand": "discoveryexpedition",
+      "model": "퍼지뮬 (D",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7207322",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "discoveryexpedition|model|discoveryexpedition|스무디슬립온",
+      "brand": "discoveryexpedition",
+      "model": "스무디 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7207338",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DOD|dod|유토리프리토슬립온beige",
+      "brand": "DOD",
+      "model": "유토리 프리토 슬립온(BEIGE)",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4124512",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DR.MARTENS|drmartens|마리엘iihs메리제인",
+      "brand": "DR.MARTENS",
+      "model": "마리엘 II H+S 메리제인",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4149214",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DR.MARTENS|drmartens|메리제인wds벡스",
+      "brand": "DR.MARTENS",
+      "model": "메리제인 WDS 벡스",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4202828",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DR.MARTENS|drmartens|엘피mj메리제인",
+      "brand": "DR.MARTENS",
+      "model": "엘피 MJ 메리제인",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4202832",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DR.MARTENS|drmartens|제브잭메리제인",
+      "brand": "DR.MARTENS",
+      "model": "제브잭 메리제인",
+      "category": "발레·메리제인",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4149217",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Dries Van Noten|driesvannoten|patchworkballerina",
+      "brand": "Dries Van Noten",
+      "model": "Patchwork Ballerina Sneakers",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/dries-van-noten/beige-and-brown-patchwork-ballerina-sneakers/19734791",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DYNAFIT|dynafit|레트로핏슬립온ivory",
+      "brand": "DYNAFIT",
+      "model": "레트로핏 슬립온_Ivory",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4051900",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DYNAFIT|dynafit|업스퍼슬립온2black",
+      "brand": "DYNAFIT",
+      "model": "업스퍼 슬립온 2_Black",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4051921",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DYNAFIT|model|dynafit|루스터프라임",
+      "brand": "DYNAFIT",
+      "model": "루스터 프라임",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4207787",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DYNAFIT|model|dynafit|스카이스피드넘버원",
+      "brand": "DYNAFIT",
+      "model": "스카이 스피드 넘버원",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4187573",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DYNAFIT|model|dynafit|어바닉보아",
+      "brand": "DYNAFIT",
+      "model": "어바닉 보아",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4207797",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "dynafit|model|dynafit|어바닉gtx",
+      "brand": "dynafit",
+      "model": "어바닉 GTX",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7399717",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "DYNAFIT|model|dynafit|어바닉gtx",
+      "brand": "DYNAFIT",
+      "model": "어바닉 GTX",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4255385",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "E.B.M (Edition by Michaa)|ebmeditionbymichaa|클래식레트로로우스니커즈",
+      "brand": "E.B.M (Edition by Michaa)",
+      "model": "클래식 레트로 로우 스니커즈",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4176004",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Eider|model|eider|라투르클래식",
+      "brand": "Eider",
+      "model": "라투르 클래식",
+      "category": "레트로·클래식",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4172492",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "elcanto|elcanto|마쯔여성캐주얼퍼슬립온3cm",
+      "brand": "elcanto",
+      "model": "마쯔 여성 캐주얼 퍼 슬립온 3cm",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7518481",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ELCANTO|elcanto|엘칸토마쯔여성스포티발레리나스니커즈25cm",
+      "brand": "ELCANTO",
+      "model": "엘칸토 마쯔 여성 스포티 발레리나 스니커즈 2.5cm",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4142286",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ept|ept|sliponblack",
+      "brand": "ept",
+      "model": "SLIPON_BLACK",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7640142",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "EPURE|epure|mosssuedemules",
+      "brand": "EPURE",
+      "model": "MOSS Suede Mules",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4133593",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "everlastkidsshoes|model|everlastkidsshoes|에버라스트다이나믹트레킹화",
+      "brand": "everlastkidsshoes",
+      "model": "에버라스트 다이나믹 트레킹화",
+      "category": "트레일·하이킹",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7627434",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Ferragamo|ferragamo|derbyslipon",
+      "brand": "Ferragamo",
+      "model": "Derby Slip-On Sneakers",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/men/product/salvatore-ferragamo/taupe-derby-slip-on-sneakers/356426782",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FILA|fila|엑실러스3t9",
+      "brand": "FILA",
+      "model": "엑실러스 3 T9",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/6950096",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FILA|model|fila|스카이코어에버gtx",
+      "brand": "FILA",
+      "model": "스카이코어 에버 GTX",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7391156",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FILA|model|fila|스카일트레일라이트",
+      "brand": "FILA",
+      "model": "스카일 트레일 라이트",
+      "category": "트레일·하이킹",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4105645",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FILA|model|fila|스피드템포플러스",
+      "brand": "FILA",
+      "model": "스피드템포 플러스",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7386585",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FILA|model|fila|엑실러스프로4",
+      "brand": "FILA",
+      "model": "엑실러스 프로 4",
+      "category": "테니스·코트",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/6969601",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FILA|model|fila|엑실러스프로4ms",
+      "brand": "FILA",
+      "model": "엑실러스 프로 4 MS",
+      "category": "테니스·코트",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7386586",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|델리카토레더메리제인슈즈",
+      "brand": "FITFLOP",
+      "model": "델리카토 레더 메리 제인 슈즈",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4162468",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|델리카토메탈릭메리제인",
+      "brand": "FITFLOP",
+      "model": "델리카토 메탈릭 메리 제인",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4162467",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|델리카토스네이크메리제인헤이지",
+      "brand": "FITFLOP",
+      "model": "델리카토 스네이크 메리 제인 헤이지",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4162481",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|델리카토포니카우메리제인",
+      "brand": "FITFLOP",
+      "model": "델리카토 포니 카우 메리 제인",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4162484",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|델리카토포이즈레더메리제인클레이블러쉬",
+      "brand": "FITFLOP",
+      "model": "델리카토 포이즈 레더 메리 제인 클레이 블러쉬",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4162473",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|레트로qff",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF",
+      "category": "레트로·클래식",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4143975",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|레트로qff나일론스웨이드트레이너마린",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF 나일론 스웨이드 트레이너 마린",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4143971",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "fitflop|fitflop|레트로qff나일론하이탑트레이너",
+      "brand": "fitflop",
+      "model": "레트로Q FF 나일론 하이탑 트레이너",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7284780",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|레트로qff나일론하이탑트레이너블랙",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF 나일론 하이탑 트레이너 블랙",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4216045",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "fitflop|fitflop|레트로qff나일론하이탑트레이너헤이지",
+      "brand": "fitflop",
+      "model": "레트로Q FF 나일론 하이탑 트레이너 헤이지",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7284817",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|레트로qff나일론하이탑트레이너헤이지토프",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF 나일론 하이탑 트레이너 헤이지 토프",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4216046",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|레트로qff스웨이드레오파드트레이너탄",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF 스웨이드 레오파드 트레이너 탄",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4162515",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|레트로qff스웨이드스니커즈프로스티그린",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF 스웨이드 스니커즈 프로스티 그린",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4178266",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|레트로qff패브릭스웨이드스니커즈카푸치노",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF 패브릭/스웨이드 스니커즈 카푸치노",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4143977",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|레트로qff패브릭스웨이드트레이너어반",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF 패브릭/스웨이드 트레이너 어반",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4162499",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|슈퍼q크리스탈트림니트슬립온레이스드스니커즈",
+      "brand": "FITFLOP",
+      "model": "슈퍼Q 크리스탈트림 니트 슬립온 레이스드 스니커즈",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4143987",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|젠ff맨즈레더뮬",
+      "brand": "FITFLOP",
+      "model": "젠FF 맨즈 레더 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4162451",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|f모드플로우메리제인청키니트트레이너듀",
+      "brand": "FITFLOP",
+      "model": "F모드 플로우 메리제인 청키 니트 트레이너 듀",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4162514",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|fitflop|f모드플로우패브릭스웨이드",
+      "brand": "FITFLOP",
+      "model": "F모드 플로우 패브릭/스웨이드",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4162509",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|model|fitflop|델리카토페이턴트텍스처드레더메리제인",
+      "brand": "FITFLOP",
+      "model": "델리카토 페이턴트 텍스처드 레더 메리 제인",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4162476",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|model|fitflop|델리카토포이즈레더메리제인",
+      "brand": "FITFLOP",
+      "model": "델리카토 포이즈 레더 메리 제인",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4162472",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|model|fitflop|레트로qff나일론스웨이드트레이너",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF 나일론 스웨이드 트레이너",
+      "category": "레트로·클래식",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4143968",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "fitflop|model|fitflop|레트로qff레더나일론트레이너딥올리브ft69k1n32j",
+      "brand": "fitflop",
+      "model": "레트로Q FF 레더 나일론 트레이너 딥 올리브 (FT69K1N32J)",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7284762",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|model|fitflop|레트로qff레더나일론트레이너딥올리브ft69k1n32j",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF 레더 나일론 트레이너 딥 올리브 (FT69K1N32J)",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4216044",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "fitflop|model|fitflop|레트로qff코드트레이너",
+      "brand": "fitflop",
+      "model": "레트로Q FF 코드 트레이너",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7284835",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|model|fitflop|레트로qff코드트레이너",
+      "brand": "FITFLOP",
+      "model": "레트로Q FF 코드 트레이너",
+      "category": "레트로·클래식",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4302085",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|model|fitflop|슈브백스트랩뮬",
+      "brand": "FITFLOP",
+      "model": "슈브 백스트랩 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4162490",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|model|fitflop|슈퍼q니트슬립온레이스드스니커즈",
+      "brand": "FITFLOP",
+      "model": "슈퍼Q 니트 슬립온 레이스드 스니커즈",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4143985",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "fitflop|model|fitflop|f모드플로우청키니트트레이너",
+      "brand": "fitflop",
+      "model": "F모드 플로우 청키 니트 트레이너",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7284560",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FITFLOP|model|fitflop|f모드플로우청키니트트레이너",
+      "brand": "FITFLOP",
+      "model": "F모드 플로우 청키 니트 트레이너",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4216033",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FLORIDASTUDIO|model|floridastudio|에브리데이세비야볼드솔어글리스니커즈",
+      "brand": "FLORIDASTUDIO",
+      "model": "에브리데이 세비야 볼드솔 어글리 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4039594",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "FRI FLA|frifla|maryjanedrivingshoes2colors",
+      "brand": "FRI FLA",
+      "model": "maryjane driving shoes_2colors",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4187478",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Ganni|ganni|jennybowballerinaflats",
+      "brand": "Ganni",
+      "model": "Jenny Bow Ballerina Flats",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.ssense.com/en-us/women/product/ganni/burgundy-jenny-bow-ballerina-flats/19706211",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "GEOX|model|geox|제옥스클라이버플러스슬립온",
+      "brand": "GEOX",
+      "model": "제옥스 클라이버 플러스 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4176268",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "GEOX|model|geox|제옥스플렉스트라이드플러스슬립온",
+      "brand": "GEOX",
+      "model": "제옥스 플렉스트라이드 플러스 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4175617",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "gisse|gisse|천연가죽국내수제화테오라인플랫폼스니커즈gis47283",
+      "brand": "gisse",
+      "model": "천연가죽 국내수제화 테오 라인 플랫폼 스니커즈 GIS-47283",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7574573",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "GISSE|gisse|천연가죽국내수제화테오라인플랫폼스니커즈gis47283",
+      "brand": "GISSE",
+      "model": "천연가죽 국내수제화 테오 라인 플랫폼 스니커즈 GIS-47283",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4278502",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "GOODNEWS|model|goodnews|굿뉴스룰라메리제인스니커즈",
+      "brand": "GOODNEWS",
+      "model": "굿뉴스 룰라 메리제인 스니커즈",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4239080",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Gucci|gucci|drip",
+      "brand": "Gucci",
+      "model": "Drip sneaker",
+      "category": "캔버스",
+      "seenOn": 2,
+      "source": "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-drip-sneaker-p-A009YZFAGMQ9656",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Hai|hai|ssenseexclusiveblueharmonyballerinaflats",
+      "brand": "Hai",
+      "model": "SSENSE Exclusive Blue Harmony Ballerina Flats",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/hai/ssense-exclusive-blue-harmony-ballerina-flats/627185686",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "HBD|hbd|발레balletfrost",
+      "brand": "HBD",
+      "model": "발레 BALLET (FROST",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4147573",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "HBD|hbd|발레balleticy",
+      "brand": "HBD",
+      "model": "발레 BALLET (ICY",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4147572",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "HBD|hbd|스위프트swifttrail",
+      "brand": "HBD",
+      "model": "스위프트 SWIFT (TRAIL",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4147579",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "HBD|model|hbd|발레ballet",
+      "brand": "HBD",
+      "model": "발레 BALLET",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4147571",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "HBD|model|hbd|알투라altura",
+      "brand": "HBD",
+      "model": "알투라 ALTURA",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4147591",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "heryoung|heryoung|지메리제인sliver",
+      "brand": "heryoung",
+      "model": "지 메리제인 (Sliver)",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7522444",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "HERYOUNG|heryoung|지메리제인sliver",
+      "brand": "HERYOUNG",
+      "model": "지 메리제인 (Sliver)",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4305866",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Hide&Jack|model|hidejack|하이드앤잭레트로스니커즈",
+      "brand": "Hide&Jack",
+      "model": "하이드앤잭 레트로 스니커즈",
+      "category": "레트로·클래식",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4239028",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "HOKA|hoka|revampsoneofitsmostdemocraticrunningshoesasanoutandoutlifestyle",
+      "brand": "HOKA",
+      "model": "Revamps One of Its Most Democratic Running Shoes as an Out-and-out Lifestyle Sneaker",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/hoka-clifton-utl-lifestyle-sneaker-1239145238/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Hugo|hugo|suedepaneledretro",
+      "brand": "Hugo",
+      "model": "Suede Paneled Retro Sneakers",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/men/product/hugo-hugo-boss/black-suede-paneled-retro-sneakers/19596651",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Hunter|hunter|익스플로러온부클스웨이드메리제인",
+      "brand": "Hunter",
+      "model": "익스플로러 온 부클 스웨이드 메리 제인",
+      "category": "발레·메리제인",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4214036",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Hunter|hunter|트래블20퀼팅슬립온",
+      "brand": "Hunter",
+      "model": "트래블 2.0 퀼팅 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4136050",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "jaclar|model|jaclar|헤리티지로우",
+      "brand": "jaclar",
+      "model": "헤리티지 로우",
+      "category": "레트로·클래식",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7601387",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "JACLAR|model|jaclar|헤리티지로우",
+      "brand": "JACLAR",
+      "model": "헤리티지 로우",
+      "category": "레트로·클래식",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4331193",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jacquemus|jacquemus|lespantouflestennis",
+      "brand": "Jacquemus",
+      "model": "'Les Pantoufles Tennis' Sneakers",
+      "category": "테니스·코트",
+      "seenOn": 2,
+      "source": "https://www.ssense.com/en-us/men/product/jacquemus/gray-les-pantoufles-tennis-sneakers/19473071",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jil Sander|jilsander|elbeslipon",
+      "brand": "Jil Sander",
+      "model": "Elbe Slip-on Sneakers",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/jil-sander/black-elbe-slip-on-sneakers/19690821",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jil Sander|jilsander|elbesliponloafers",
+      "brand": "Jil Sander",
+      "model": "Elbe Slip On Loafers",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.ssense.com/en-us/women/product/jil-sander/navy-elbe-slip-on-loafers/19690831",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "JILL BY JILLSTUART|jillbyjillstuart|버클장식메리제인2colors",
+      "brand": "JILL BY JILLSTUART",
+      "model": "버클장식 메리제인 2COLORS",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4130600",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jordan|jordan|airjordan10",
+      "brand": "Jordan",
+      "model": "Air Jordan 10",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/27/air-jordan-10-red-steel-hj6779-100/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jordan|jordan|airjordan12",
+      "brand": "Jordan",
+      "model": "Air Jordan 12",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.sneakerfreaker.com/features/every-air-jordan-retro-dropping-in-price-buy-release-date-2027",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jordan|jordan|airjordan1retrolowoggarden",
+      "brand": "Jordan",
+      "model": "Air Jordan 1 Retro Low OG \"Garden\"",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.nike.com/launch/t/air-jordan-1-low-og-black-and-white-1",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jordan|jordan|airjordan1retrolowoghoward",
+      "brand": "Jordan",
+      "model": "Air Jordan 1 Retro Low OG \"Howard\"",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.nike.com/launch/t/air-jordan-1-low-og-howard-college-navy-and-university-red",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jordan|jordan|airjordan3",
+      "brand": "Jordan",
+      "model": "Air Jordan 3",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/13/air-jordan-3-santa-claus-chimney-poster-dm0967-601/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jordan|jordan|airjordan5retrohalloween",
+      "brand": "Jordan",
+      "model": "Air Jordan 5 Retro \"Halloween\"",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.nike.com/launch/t/air-jordan-5-halloween-black-and-picante-red",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jordan|jordan|airjordan5retrosunset",
+      "brand": "Jordan",
+      "model": "Air Jordan 5 Retro \"Sunset\"",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.nike.com/launch/t/women-s-air-jordan-5-sunset",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Jordan|jordan|nikes1retrohighogroyalmakesitsgrandreturn",
+      "brand": "Jordan",
+      "model": "Nike’s 1 Retro High Og Royal Makes Its Grand Return",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.highsnobiety.com/p/nikes-air-jordan-1-retro-high-og-royal-sneaker/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|유니크360남성슬립온",
+      "brand": "KEEN",
+      "model": "유니크 360 남성 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4174994",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|유니크360여성슬립온",
+      "brand": "KEEN",
+      "model": "유니크 360 여성 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4174993",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|유니크트레커남성트레킹화",
+      "brand": "KEEN",
+      "model": "유니크 트레커 남성 트레킹화",
+      "category": "트레일·하이킹",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4173417",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|유니크트레커여성트레킹화",
+      "brand": "KEEN",
+      "model": "유니크 트레커 여성 트레킹화",
+      "category": "트레일·하이킹",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4173411",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|타기exp워터프루프남성등산화",
+      "brand": "KEEN",
+      "model": "타기 EXP 워터프루프 남성 등산화",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4130910",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|하우저ii남성슬립온cordur",
+      "brand": "KEEN",
+      "model": "하우저 II 남성 슬립온 CORDUR",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4191263",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|하우저ii남성슬립온triple",
+      "brand": "KEEN",
+      "model": "하우저 II 남성 슬립온-TRIPLE",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4191261",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|하우저ii여성슬립온",
+      "brand": "KEEN",
+      "model": "하우저 II 여성 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4191260",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|하우저ii여성슬립온triple",
+      "brand": "KEEN",
+      "model": "하우저 II 여성 슬립온-TRIPLE",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4191258",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|a86남성런닝화",
+      "brand": "KEEN",
+      "model": "A86 남성 런닝화",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4152588",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|a86여성런닝화",
+      "brand": "KEEN",
+      "model": "A86 여성 런닝화",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4152583",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|aspire남성런닝화",
+      "brand": "KEEN",
+      "model": "ASPIRE 남성 런닝화",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4173470",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|aspire여성런닝화",
+      "brand": "KEEN",
+      "model": "ASPIRE 여성 런닝화",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4173473",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|roam워터프루프남성트레일러닝화",
+      "brand": "KEEN",
+      "model": "ROAM 워터프루프 남성 트레일 러닝화",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4173522",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|roam워터프루프여성런닝화",
+      "brand": "KEEN",
+      "model": "ROAM 워터프루프 여성 런닝화",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4173521",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|wander남성트레일러닝화",
+      "brand": "KEEN",
+      "model": "WANDER 남성 트레일 러닝화",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4173467",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KEEN|keen|wander여성런닝화",
+      "brand": "KEEN",
+      "model": "WANDER 여성 런닝화",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4173465",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KHIHO|khiho|noatieplatform",
+      "brand": "KHIHO",
+      "model": "NOA TIE PLATFORM SNEAKERS",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4113059",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kissa|kissa|mossrunner93발편한조거스니커즈블랙kissa",
+      "brand": "kissa",
+      "model": "Moss Runner 93 발편한 조거 스니커즈 블랙 KISSA",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7563128",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KIZIK|kizik|프리덤트레일spb",
+      "brand": "KIZIK",
+      "model": "프리덤 트레일 (SPB)",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4264807",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KODAK APPAREL|model|kodakapparel|브라우니코듀로이뮬",
+      "brand": "KODAK APPAREL",
+      "model": "브라우니 코듀로이 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4282803",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KODAK APPAREL|model|kodakapparel|rgb윈터뮬",
+      "brand": "KODAK APPAREL",
+      "model": "RGB 윈터 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4282808",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KOLON SPORT|kolonsport|하이킹슈즈트라이포드미드2gtx",
+      "brand": "KOLON SPORT",
+      "model": "하이킹 슈즈 트라이포드 미드2 GTX",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4159822",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KOLON SPORT|model|kolonsport|솟솟뮬",
+      "brand": "KOLON SPORT",
+      "model": "솟솟 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/7565765",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KOLON SPORT|model|kolonsport|트레일워킹슈즈삭스s7gtx",
+      "brand": "KOLON SPORT",
+      "model": "트레일 워킹 슈즈 삭스 S7 GTX",
+      "category": "트레일·하이킹",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4159824",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KOLON SPORT|model|kolonsport|하이킹슈즈아처삭스2gtx",
+      "brand": "KOLON SPORT",
+      "model": "하이킹 슈즈 아처삭스 2 GTX",
+      "category": "트레일·하이킹",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4277966",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KOLON SPORT|model|kolonsport|하이킹슈즈파인브리즈gtx",
+      "brand": "KOLON SPORT",
+      "model": "하이킹 슈즈 파인브리즈 GTX",
+      "category": "트레일·하이킹",
+      "seenOn": 4,
+      "source": "https://www.29cm.co.kr/products/4244338",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kswiss|kswiss|멜로즈튜브라이트aksflfv520pu",
+      "brand": "kswiss",
+      "model": "멜로즈 튜브 라이트_AKSFLFV520PU",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7264613",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kswiss|kswiss|울트라샷4테니스화aksfpfv001da",
+      "brand": "kswiss",
+      "model": "울트라샷 4 테니스화_AKSFPFV001DA",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7172554",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kswiss|kswiss|하이퍼코트익스프레스32e테니스화aksfpfv005tu",
+      "brand": "kswiss",
+      "model": "하이퍼코트 익스프레스 3 2E 테니스화_AKSFPFV005TU",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7172545",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kswiss|kswiss|k스피드팀테니스화aksfpfv502wh",
+      "brand": "kswiss",
+      "model": "K-스피드 팀 테니스화_AKSFPFV502WH",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7172496",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kswiss|model|kswiss|라구나튜브라이트",
+      "brand": "kswiss",
+      "model": "라구나 튜브 라이트",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7252304",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kswiss|model|kswiss|울트라샷라이트테니스화",
+      "brand": "kswiss",
+      "model": "울트라샷 라이트 테니스화",
+      "category": "테니스·코트",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7172556",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kswiss|model|kswiss|코트익스프레스2테니스화",
+      "brand": "kswiss",
+      "model": "코트 익스프레스 2 테니스화",
+      "category": "테니스·코트",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7172558",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kswiss|model|kswiss|튜브스포츠울트라",
+      "brand": "kswiss",
+      "model": "튜브 스포츠 울트라",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/7252331",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kswiss|model|kswiss|k프레임스피드루블로테니스화",
+      "brand": "kswiss",
+      "model": "K 프레임 스피드 루블로 테니스화",
+      "category": "테니스·코트",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7172551",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "kswiss|model|kswiss|kswiss비엔토",
+      "brand": "kswiss",
+      "model": "K SWISS 비엔토",
+      "category": "러닝",
+      "seenOn": 5,
+      "source": "https://www.musinsa.com/products/7252240",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KUMKANG|model|kumkang|fairlady스퀘어메리제인단화",
+      "brand": "KUMKANG",
+      "model": "FAIR LADY 스퀘어 메리제인 단화",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4161696",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "KUMKANG|model|kumkang|fairlady절개메리제인단화",
+      "brand": "KUMKANG",
+      "model": "FAIR LADY 절개 메리제인 단화",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4185600",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "LACOSTE|lacoste|agltpro테니스화rz7067m56nami",
+      "brand": "LACOSTE",
+      "model": "AG-LT PRO 테니스화 RZ7067M56N AMI",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4118068",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "LACOSTE|lacoste|agltpro테니스화rz7068m56n02h",
+      "brand": "LACOSTE",
+      "model": "AG-LT PRO 테니스화 RZ7068M56N 02H",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4254979",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "lacoste|lacoste|agltpro테니스화rz7121w56nami",
+      "brand": "lacoste",
+      "model": "AG-LT PRO 테니스화 RZ7121W56N AMI",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7347880",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "LACOSTE|lacoste|agltpro테니스화rz7121w56nami",
+      "brand": "LACOSTE",
+      "model": "AG-LT PRO 테니스화 RZ7121W56N AMI",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4235973",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "LACOSTE|lacoste|agltultra테니스화rz7105m56n12x",
+      "brand": "LACOSTE",
+      "model": "AG-LT ULTRA 테니스화 RZ7105M56N 12X",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4108513",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "LACOSTE|lacoste|tennisballerina스니커즈rz7034w56n02h",
+      "brand": "LACOSTE",
+      "model": "TENNIS BALLERINA 스니커즈 RZ7034W56N 02H",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4108488",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "LACOSTE|lacoste|tennisballerina스니커즈rz7036w56naqz",
+      "brand": "LACOSTE",
+      "model": "TENNIS BALLERINA 스니커즈 RZ7036W56N AQZ",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4235968",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "lacoste|model|lacoste|agltevo테니스화",
+      "brand": "lacoste",
+      "model": "AG LT EVO 테니스화",
+      "category": "테니스·코트",
+      "seenOn": 5,
+      "source": "https://www.musinsa.com/products/7347932",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "LACOSTE|model|lacoste|agltevo테니스화",
+      "brand": "LACOSTE",
+      "model": "AG LT EVO 테니스화",
+      "category": "테니스·코트",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4235971",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "LACOSTE|model|lacoste|zianeplatform스니커즈",
+      "brand": "LACOSTE",
+      "model": "ZIANE PLATFORM 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4108494",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Lanvin|lanvin|newsoccerlaceupleather",
+      "brand": "Lanvin",
+      "model": "New Soccer Lace Up Leather Sneakers",
+      "category": "축구·풋살",
+      "seenOn": 3,
+      "source": "https://www.ssense.com/en-us/men/product/lanvin/white-new-soccer-lace-up-leather-sneakers/19541831",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Le Coq Sportif|lecoqsportif|포폴라클래식라이트",
+      "brand": "Le Coq Sportif",
+      "model": "포폴라 클래식 라이트",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4065987",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Le Coq Sportif|lecoqsportif|포폴라클래식레오파드",
+      "brand": "Le Coq Sportif",
+      "model": "포폴라 클래식 레오파드",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4152034",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Le Coq Sportif|lecoqsportif|포폴라클래식슬립온",
+      "brand": "Le Coq Sportif",
+      "model": "포폴라 클래식 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4154474",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Le Coq Sportif|lecoqsportif|rgt83클래식",
+      "brand": "Le Coq Sportif",
+      "model": "RGT 83 클래식",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4108672",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "leey|leey|laceplatform",
+      "brand": "leey",
+      "model": "LACE PLATFORM SNEAKERS",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7626477",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Lemaire|lemaire|glovesliponflats",
+      "brand": "Lemaire",
+      "model": "Glove Slip-on Flats",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/lemaire/brown-glove-slip-on-flats/19436311",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Louis Vuitton|louisvuitton|birkenstocksredhotsneakermulecreatedbymensshoedesignerreturnsinnewcolors",
+      "brand": "Louis Vuitton",
+      "model": "Birkenstock’s Red-hot Sneaker Mule Created by Men’s Shoe Designer Returns in New Colors",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/birkenstock-uerzell-sneaker-clog-thibo-denis-collab-details-1239333400/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "lowa|model|lowa|매드릭스에보트레일러닝화",
+      "brand": "lowa",
+      "model": "매드릭스 에보 트레일러닝화",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7312228",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "lowa|model|lowa|스카이테라트레일러닝화",
+      "brand": "lowa",
+      "model": "스카이테라 트레일러닝화",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7311835",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "LOWFLOW|lowflow|hansmaryjanesneakers3cm",
+      "brand": "LOWFLOW",
+      "model": "Hans Maryjane Sneakers 3cm",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4194830",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Lululemon|lululemon|francestiafoeandbensheltonbringbuzztoandoninusopensemifinalsandthisclassicsneakerbrandalsogetsanod",
+      "brand": "Lululemon",
+      "model": "Frances Tiafoe and Ben Shelton Bring Buzz to and On in U.S. Open Semifinals — And This Classic Sneaker Brand Also Gets a Nod",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/frances-tiafoe-ben-shelton-us-open-semifinals-outfits-shoes-1239223884/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MACMOC|macmoc|blocky블로키통굽벨크로리본메리제인스니커즈55cm",
+      "brand": "MACMOC",
+      "model": "Blocky 블로키 통굽 벨크로 리본 메리제인 스니커즈 (5.5cm)",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4167196",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MACMOC|macmoc|corzet코르젯벨크로플랫폼메리제인스니커즈2colors55cm",
+      "brand": "MACMOC",
+      "model": "Corzet 코르젯 벨크로 플랫폼 메리제인 스니커즈_2colors (5.5cm)",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4165854",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MACMOC|macmoc|nico니코리본플랫메리제인스니커즈3colors3cm",
+      "brand": "MACMOC",
+      "model": "Nico 니코 리본 플랫 메리제인 스니커즈_3colors (3cm)",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4167327",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Maison Margiela|maisonmargiela|tabielasticbandmuleflats",
+      "brand": "Maison Margiela",
+      "model": "Tabi Elastic Band Mule Flats",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/maison-margiela/black-tabi-elastic-band-mule-flats/465801048",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Maison Mihara Yasuhiro|maisonmiharayasuhiro|hankogsolecanvaslowtop",
+      "brand": "Maison Mihara Yasuhiro",
+      "model": "'Hank' OG Sole Canvas Low-Top Sneakers",
+      "category": "캔버스",
+      "seenOn": 2,
+      "source": "https://www.ssense.com/en-us/men/product/miharayasuhiro/off-white-hank-og-sole-canvas-low-top-sneakers/19475141",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Marc Jacobs|marcjacobs|thevintagefloral400bleeckerrunner",
+      "brand": "Marc Jacobs",
+      "model": "'The Vintage Floral 400 Bleecker Runner' Sneakers",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/marc-jacobs/black-and-pink-the-vintage-floral-400-bleecker-runner-sneakers/19419811",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MARITHÉ+FRANҪOIS GIRBAUD|model|marithfranoisgirbaud|wmaryjanestrapsneakers",
+      "brand": "MARITHÉ+FRANҪOIS GIRBAUD",
+      "model": "W MARYJANE STRAP SNEAKERS",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4148058",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Marni|marni|lycramaryjane",
+      "brand": "Marni",
+      "model": "Lycra Mary-Jane Sneakers",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/marni/black-lycra-mary-jane-sneakers/19693581",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MATIN KIM|model|matinkim|chunkyvelcromaryjanesneakersin",
+      "brand": "MATIN KIM",
+      "model": "CHUNKY VELCRO MARYJANE SNEAKERS IN",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4167152",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MATIN KIM|model|matinkim|sportyshearlingmaryjanesneakersin",
+      "brand": "MATIN KIM",
+      "model": "SPORTY SHEARLING MARY JANE SNEAKERS IN",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4274029",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "matinkim|matinkim|pufferfurmules",
+      "brand": "matinkim",
+      "model": "PUFFER FUR MULES",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7541560",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Merrell|merrell|trailglove8black",
+      "brand": "Merrell",
+      "model": "TRAIL GLOVE 8_BLACK",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4182693",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Merrell|merrell|trailglove8poplar",
+      "brand": "Merrell",
+      "model": "TRAIL GLOVE 8_POPLAR",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4182690",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "metier|metier|antontriplemaryjaneflatformsneakers안톤트리플메리제인플랫폼스니커즈",
+      "brand": "metier",
+      "model": "anton triple maryjane flatform sneakers 안톤 트리플 메리제인 플랫폼 스니커즈",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7297446",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MIAMIPROJECT|miamiproject|할리아드빈티지스웨이드독일군레이싱스니커즈초코브라운",
+      "brand": "MIAMIPROJECT",
+      "model": "할리아드 빈티지 스웨이드 독일군 레이싱 스니커즈 초코브라운",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4192773",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "miamiproject|model|miamiproject|마일즈볼드솔캔버스스니커즈",
+      "brand": "miamiproject",
+      "model": "마일즈 볼드솔 캔버스 스니커즈",
+      "category": "캔버스",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7616370",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MIAMIPROJECT|model|miamiproject|마일즈볼드솔캔버스스니커즈",
+      "brand": "MIAMIPROJECT",
+      "model": "마일즈 볼드솔 캔버스 스니커즈",
+      "category": "캔버스",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4334139",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MISEKI SEOUL|model|misekiseoul|cutlinebandslipon",
+      "brand": "MISEKI SEOUL",
+      "model": "Cut line band slip on",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4212942",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MISOPE|misope|단화51263550415cm",
+      "brand": "MISOPE",
+      "model": "단화 512635504 1.5cm",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4217254",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MISOPE|misope|단화51263550515cm",
+      "brand": "MISOPE",
+      "model": "단화 512635505 1.5cm",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4197955",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MISOPE|misope|단화5126355103cm",
+      "brand": "MISOPE",
+      "model": "단화 512635510 3cm",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4234474",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MISOPE|misope|단화51263551125cm",
+      "brand": "MISOPE",
+      "model": "단화 512635511 2.5cm",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4217377",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Miu Miu|miumiu|bubbleembroideredtechnicalfabricandsuede",
+      "brand": "Miu Miu",
+      "model": "Bubble embroidered technical fabric and suede sneakers",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|네오비스타3",
+      "brand": "Mizuno",
+      "model": "네오 비스타 3",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/6964893",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|미즈노네오비스타3",
+      "brand": "Mizuno",
+      "model": "미즈노 네오 비스타 3",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7212101",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|웨이브라이더10",
+      "brand": "Mizuno",
+      "model": "웨이브 라이더 10",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7341452",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|웨이브라이더30",
+      "brand": "Mizuno",
+      "model": "웨이브 라이더 30",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7212100",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|웨이브라이더30디스클로저",
+      "brand": "Mizuno",
+      "model": "웨이브 라이더 30 디스클로저",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/6965608",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|웨이브라이더30sw",
+      "brand": "Mizuno",
+      "model": "웨이브 라이더 30 SW",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/6965607",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|웨이브스카이9sw",
+      "brand": "Mizuno",
+      "model": "웨이브 스카이 9 SW",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/6966472",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|웨이브인스파이어22sw",
+      "brand": "Mizuno",
+      "model": "웨이브 인스파이어 22 SW",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/6966469",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|포르티스ls",
+      "brand": "Mizuno",
+      "model": "포르티스 LS",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7033836",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|하이퍼워프엘리트",
+      "brand": "Mizuno",
+      "model": "하이퍼워프 엘리트",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7212104",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|하이퍼워프프로",
+      "brand": "Mizuno",
+      "model": "하이퍼워프 프로",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7212103",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|mizunoskyprimewj1gw2650",
+      "brand": "Mizuno",
+      "model": "MIZUNO SKY PRIME (W)_J1GW2650",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7409028",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|waverider301j1gu2624",
+      "brand": "Mizuno",
+      "model": "WAVE RIDER 30.1_J1GU2624",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7355993",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|mizuno|waverider302j1gu2625",
+      "brand": "Mizuno",
+      "model": "WAVE RIDER 30.2_J1GU2625",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7355991",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Mizuno|model|mizuno|mizunoskyprime",
+      "brand": "Mizuno",
+      "model": "MIZUNO SKY PRIME",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7409030",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MLB|mlb|청키라이너베이직slnyblack",
+      "brand": "MLB",
+      "model": "청키라이너 베이직 SL NY (Black)",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4262909",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MLB|mlb|청키라이너pk모노그램slnydblue",
+      "brand": "MLB",
+      "model": "청키라이너 PK 모노그램 SL NY (D.Blue)",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4180268",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MLB|mlb|청키라이너pk모노그램slnydgrey",
+      "brand": "MLB",
+      "model": "청키라이너 PK 모노그램 SL NY (D.Grey)",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4180266",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MLB|mlb|청키라이너pk모노그램slnydpink",
+      "brand": "MLB",
+      "model": "청키라이너 PK 모노그램 SL NY (D.Pink)",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4180265",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "MLB|model|mlb|청키라이너데님pk모노그램ny",
+      "brand": "MLB",
+      "model": "청키라이너 데님 PK 모노그램 NY",
+      "category": "플랫폼·청키",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4209769",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Moncler|moncler|monclercitytrek",
+      "brand": "Moncler",
+      "model": "Moncler CityTrek Sneakers",
+      "category": "트레일·하이킹",
+      "seenOn": 4,
+      "source": "https://www.moncler.com/en-us/men/shoes/sneakers/moncler-city-trek-sneakers-white-ivory-L209A4M00230N0633050.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Moncler|moncler|trailgriplite3nubucksuede",
+      "brand": "Moncler",
+      "model": "Trailgrip Lite3 Nubuck & Suede Sneakers",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lite3-nubuck-and-suede-sneakers-brown-L209B4M00080M7242285.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "movesportbydescente|model|movesportbydescente|데일리테크",
+      "brand": "movesportbydescente",
+      "model": "데일리 테크",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7218643",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "movesportbydescente|model|movesportbydescente|모션서포트",
+      "brand": "movesportbydescente",
+      "model": "모션 서포트",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7218678",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "musinsastandard|model|musinsastandard|신세틱레더퍼그슬립온",
+      "brand": "musinsastandard",
+      "model": "신세틱 레더 퍼그 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7101119",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "NATIONAL GEOGRAPHIC APPAREL|model|nationalgeographicapparel|내셔널지오그래픽n265utr050트레일본",
+      "brand": "NATIONAL GEOGRAPHIC APPAREL",
+      "model": "내셔널지오그래픽 N265UTR050 트레일본",
+      "category": "트레일·하이킹",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4155212",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "negativethree|model|negativethree|nusalvibramtrailsneakers",
+      "brand": "negativethree",
+      "model": "NUSAL VIBRAM Trail Sneakers",
+      "category": "트레일·하이킹",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7048978",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "NEPA|unnamed|weekly-29cm-0c8e82e33e3473f8c9ef",
+      "brand": "NEPA",
+      "model": "네파",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4146430",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "NEPA|unnamed|weekly-29cm-d893cf0e5c6ff36afa71",
+      "brand": "NEPA",
+      "model": "네파",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4146431",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "NeroGiardini|model|nerogiardini|메탈포인트레더플랫폼스니커즈",
+      "brand": "NeroGiardini",
+      "model": "메탈 포인트 레더 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4224124",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "NeroGiardini|model|nerogiardini|모노그램레더플랫폼스니커즈",
+      "brand": "NeroGiardini",
+      "model": "모노그램 레더 플랫폼 스니커즈",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4224135",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "NeroGiardini|nerogiardini|스웨이드레더플랫폼스니커즈i514151d613",
+      "brand": "NeroGiardini",
+      "model": "스웨이드 레더 플랫폼 스니커즈_I514151D_613",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4224147",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|model|newbalance|code:nbpfgf701",
+      "brand": "New Balance",
+      "model": "NBPFGF701Y",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7491636",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|model|newbalance|code:nbpfgf702",
+      "brand": "New Balance",
+      "model": "NBPFGF702O",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7491626",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|model|newbalance|code:nbpfgf72",
+      "brand": "New Balance",
+      "model": "NBPFGF720K",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7422833",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|model|newbalance|code:nbpqgf702",
+      "brand": "New Balance",
+      "model": "NBPQGF702G",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7332267",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|204l",
+      "brand": "New Balance",
+      "model": "204L",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.newbalance.com/pd/204l/U204LV1-51907-PMG-NA.html?dwvar_U204LV1-51907-PMG-NA_style=U204L5YB",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|204v",
+      "brand": "New Balance",
+      "model": "204V",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.newbalance.com/pd/204v/U204V2W0-D-05.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|327",
+      "brand": "New Balance",
+      "model": "327",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.newbalance.com/pd/327/WS327V1-41747-PMG-NA-BROWN2.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|750",
+      "brand": "New Balance",
+      "model": "750",
+      "category": "캔버스",
+      "seenOn": 1,
+      "source": "https://www.newbalance.com/pd/750/U750V1_LI-FTW-851089-PMG-NA.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|엘립스v1남성2el",
+      "brand": "New Balance",
+      "model": "/ 엘립스 V1 (남성 2E) (L",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7422834",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|카와이v슬레이트그레이브랜드헤리티지를품다",
+      "brand": "New Balance",
+      "model": "카와이 V '슬레이트 그레이', 브랜드 헤리티지를 품다",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://hypebeast.kr/2026/10/new-balance-kawhi-v-slate-grey-ukls3qz-official-look-release-info",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|aimeleondoreandfirstperformancerunningshoesaregettingarestock",
+      "brand": "New Balance",
+      "model": "Aimé Leon Dore and First Performance Running Shoes Are Getting a Restock",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/aime-leon-dore-new-balance-rebel-super-comp-elite-v5-1239100167/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|justupdatedoneofitsflagshiptennisshoesaheadoftheusopen",
+      "brand": "New Balance",
+      "model": "Just Updated One of Its Flagship Tennis Shoes Ahead of the U.S. Open",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/new-balance-fuelcell-996v7-us-open-1239094997/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|madeinusa1300",
+      "brand": "New Balance",
+      "model": "Made in USA 1300",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.newbalance.com/pd/made-in-usa-1300/U1300V1-52809.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|madeinusa990v4",
+      "brand": "New Balance",
+      "model": "Made in USA 990v4",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-52804.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|madeinusa993",
+      "brand": "New Balance",
+      "model": "Made in USA 993",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.newbalance.com/pd/made-in-usa-993/U993V1-52816.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|newbalance1890a",
+      "brand": "New Balance",
+      "model": "New Balance 1890A",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/14/new-balance-1890a-truffle-salt-u18909vf/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|newbalance9060",
+      "brand": "New Balance",
+      "model": "New Balance 9060",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/15/new-balance-9060-lace-toggle-trail-hiker/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|newbalancekawhiv",
+      "brand": "New Balance",
+      "model": "New Balance Kawhi V",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/23/new-balance-kawhi-v-grey-white-ukls3qz/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|newbalancetl900",
+      "brand": "New Balance",
+      "model": "New Balance TL900",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/27/new-balance-tl900-army-green-utl909qq/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|nightlights740",
+      "brand": "New Balance",
+      "model": "Night Lights 740​",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.newbalance.com/pd/night-lights-740%E2%80%8B/U740V2_LI-FTW-885192.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "New Balance|newbalance|nightlightsabzorb2000",
+      "brand": "New Balance",
+      "model": "Night Lights ABZORB 2000​",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.newbalance.com/pd/night-lights-abzorb-2000%E2%80%8B/U2000V1_LI-FTW-873796.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|레볼루션8유틸리티m",
+      "brand": "Nike",
+      "model": "레볼루션 8 유틸리티 M",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7577204",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|레볼루션8유틸리티w",
+      "brand": "Nike",
+      "model": "레볼루션 8 유틸리티 W",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7577220",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|레볼루션8w",
+      "brand": "Nike",
+      "model": "레볼루션 8 W",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7577186",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|메이슨젤러펠트와협업한3d프린팅에어맥스뮬공개",
+      "brand": "Nike",
+      "model": "메이슨, 젤러펠트와 협업한 3D 프린팅 에어맥스 뮬 공개",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://hypebeast.kr/2026/10/masyn-3d-printed-nike-air-max-mule-zellerfeld-revealed",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|보메로18goretexm",
+      "brand": "Nike",
+      "model": "보메로 18 GORE-TEX M",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7366261",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|보메로18goretexw",
+      "brand": "Nike",
+      "model": "보메로 18 GORE-TEX W",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7261886",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|보메로18m",
+      "brand": "Nike",
+      "model": "보메로 18 M",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7261911",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|보메로18w",
+      "brand": "Nike",
+      "model": "보메로 18 W",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7261882",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|보메로프리미엄m",
+      "brand": "Nike",
+      "model": "보메로 프리미엄 M",
+      "category": "러닝",
+      "seenOn": 5,
+      "source": "https://www.musinsa.com/products/7577215",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|보메로프리미엄w",
+      "brand": "Nike",
+      "model": "보메로 프리미엄 W",
+      "category": "러닝",
+      "seenOn": 6,
+      "source": "https://www.musinsa.com/products/7577221",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|보메로플러스m",
+      "brand": "Nike",
+      "model": "보메로 플러스 M",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/7577190",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|보메로플러스w",
+      "brand": "Nike",
+      "model": "보메로 플러스 W",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7366260",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|스트럭처26m",
+      "brand": "Nike",
+      "model": "스트럭처 26 M",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7487892",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|스트럭처26w",
+      "brand": "Nike",
+      "model": "스트럭처 26 W",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7543351",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|스트럭처플러스m",
+      "brand": "Nike",
+      "model": "스트럭처 플러스 M",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7261884",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|스트럭처플러스w",
+      "brand": "Nike",
+      "model": "스트럭처 플러스 W",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7425228",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|스프린트시스터w",
+      "brand": "Nike",
+      "model": "스프린트 시스터 W",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7314170",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|에어조던3레트로스포츠르네상스w",
+      "brand": "Nike",
+      "model": "에어 조던 3 레트로 스포츠 르네상스 W",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7366282",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|저니런m",
+      "brand": "Nike",
+      "model": "저니 런 M",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7577201",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|줌보메로5corduram",
+      "brand": "Nike",
+      "model": "줌 보메로 5 CORDURA® M",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7284478",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|클래식실루엣을덜어낸에어맥스90sp블랙레더",
+      "brand": "Nike",
+      "model": "클래식 실루엣을 덜어낸 에어 맥스 90 SP \"블랙 레더\"",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://hypebeast.kr/2026/10/nike-air-max-90-sp-black-leather-iv4504-001-release-info",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|페가수스42goretex워터프루프로드러닝화w",
+      "brand": "Nike",
+      "model": "페가수스 42 GORE-TEX 워터프루프 로드 러닝화 W",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4209845",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|페가수스42goretexm",
+      "brand": "Nike",
+      "model": "페가수스 42 GORE-TEX M",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7314171",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|페가수스42goretexw",
+      "brand": "Nike",
+      "model": "페가수스 42 GORE-TEX W",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7425230",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|페가수스42m",
+      "brand": "Nike",
+      "model": "페가수스 42 M",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/7577193",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|페가수스42w",
+      "brand": "Nike",
+      "model": "페가수스 42 W",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7577195",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|페가수스프리미엄m",
+      "brand": "Nike",
+      "model": "페가수스 프리미엄 M",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7266365",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|페가수스프리미엄w",
+      "brand": "Nike",
+      "model": "페가수스 프리미엄 W",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7266364",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|페가수스플러스2m",
+      "brand": "Nike",
+      "model": "페가수스 플러스 2 M",
+      "category": "러닝",
+      "seenOn": 5,
+      "source": "https://www.musinsa.com/products/7366267",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|페가수스플러스2w",
+      "brand": "Nike",
+      "model": "페가수스 플러스 2 W",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/7366271",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|프리메트콘7ampm",
+      "brand": "Nike",
+      "model": "프리 메트콘 7 AMP M",
+      "category": "트레이닝·짐",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7231123",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|하이브리드rnm",
+      "brand": "Nike",
+      "model": "하이브리드 RN M",
+      "category": "트레이닝·짐",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7577217",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|하이브리드rnw",
+      "brand": "Nike",
+      "model": "하이브리드 RN W",
+      "category": "트레이닝·짐",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7577218",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|헤어리스웨이드덩크로우바스켓볼참에메탈농구공을장식하다",
+      "brand": "Nike",
+      "model": "헤어리 스웨이드 덩크 로우 '바스켓볼 참'에 메탈 농구공을 장식하다",
+      "category": "농구",
+      "seenOn": 1,
+      "source": "https://hypebeast.kr/2026/10/nike-dunk-low-basketball-charm-ja3772-658-official-images",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|acg울트라플라이트레일m",
+      "brand": "Nike",
+      "model": "ACG 울트라플라이 트레일 M",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7471944",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|acg제가마트레일goretexm",
+      "brand": "Nike",
+      "model": "ACG 제가마 트레일 GORE-TEX M",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7284475",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|acg제가마트레일m",
+      "brand": "Nike",
+      "model": "ACG 제가마 트레일 M",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7261890",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|acg페가수스트레일goretexm",
+      "brand": "Nike",
+      "model": "ACG 페가수스 트레일 GORE-TEX M",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7425148",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|acg페가수스트레일goretexw",
+      "brand": "Nike",
+      "model": "ACG 페가수스 트레일 GORE-TEX W",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7284479",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|acg페가수스트레일m",
+      "brand": "Nike",
+      "model": "ACG 페가수스 트레일 M",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7284465",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|acg페가수스트레일w",
+      "brand": "Nike",
+      "model": "ACG 페가수스 트레일 W",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7516831",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|firstsightshadowcreamiiandenigmastoney2k감성의코트슬립온",
+      "brand": "Nike",
+      "model": "First Sight Shadow “Cream II and Enigma Stone”, Y2K 감성의 코트 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://hypebeast.kr/2026/10/nike-first-sight-shadow-cream-ii-enigma-stone-hq2410-200-release-info",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|howkallmeyerreimaginedatennisshoeintoalifestyleplayforusopen",
+      "brand": "Nike",
+      "model": "How Kallmeyer Reimagined a Tennis Shoe Into a Lifestyle Play for US Open",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/kallmeyer-nike-tennis-centre-sneaker-release-date-1239201225/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|introducesabrandnewrunningshoemadespecificallyfortheindianmarket",
+      "brand": "Nike",
+      "model": "Introduces a Brand-New Running Shoe Made Specifically for the Indian Market",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/nike-vegam-run-india-release-date-1239390483/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikeacg",
+      "brand": "Nike",
+      "model": "Nike ACG",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/nike-acg-picklejus-mountain-running-shoe-release-date-1239165169/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikeairfoampositepro",
+      "brand": "Nike",
+      "model": "nike air foamposite pro",
+      "category": "축구·풋살",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/nike-vaporposite-pro-pearl-white-game-royal-university-red-1239087986/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikeairforce1",
+      "brand": "Nike",
+      "model": "Nike Air Force 1",
+      "category": "레트로·클래식",
+      "seenOn": 5,
+      "source": "https://wwd.com/footwear-news/sneaker-news/nike-air-force-1-low-07-safari-release-date-ix4837-253-1239387588/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikeairmaxecstasyplus",
+      "brand": "Nike",
+      "model": "Nike Air Max Ecstasy Plus",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/27/nike-air-max-ecstasy-plus-citron-plus-black-ja4491-800/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikebasketball",
+      "brand": "Nike",
+      "model": "Nike Basketball",
+      "category": "농구",
+      "seenOn": 3,
+      "source": "https://wwd.com/footwear-news/sneaker-news/nike-ja-4-halloween-release-date-io7939-300-1239164514/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikedunklow",
+      "brand": "Nike",
+      "model": "Nike Dunk Low",
+      "category": "농구",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/24/nike-dunk-low-basketball-ja3772-658/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikegiannisfreak8",
+      "brand": "Nike",
+      "model": "Nike Giannis Freak 8",
+      "category": "농구",
+      "seenOn": 2,
+      "source": "https://sneakernews.com/2026/10/21/nike-basketball-signature-athletes-in-new-cities/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikekobe8protro",
+      "brand": "Nike",
+      "model": "Nike Kobe 8 Protro",
+      "category": "축구·풋살",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/nike-kobe-8-mambacurial-mercurial-release-date-io6253-500-1239099519/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikepegasus",
+      "brand": "Nike",
+      "model": "Nike Pegasus",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/nike-pegasus-plus-2-release-date-1239143774/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikerunning",
+      "brand": "Nike",
+      "model": "Nike Running",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/nike-zoom-skylon-11-black-light-magenta-iu7360-003-1239194675/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikesbairforce1xyuto",
+      "brand": "Nike",
+      "model": "Nike SB Air Force 1 x Yuto",
+      "category": "스케이트·보드",
+      "seenOn": 1,
+      "source": "https://www.nike.com/launch/t/nike-sb-air-force-1-yuto-light-bone-and-iron-grey",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|niketenniscentre",
+      "brand": "Nike",
+      "model": "Nike Tennis Centre",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://www.nike.com/launch/t/womens-tennis-centre-x-kallmeyer-travertine",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikevomero",
+      "brand": "Nike",
+      "model": "Nike Vomero",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/nike-vomero-premium-nyc-release-date-ja4059-010-1239389595/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|nikevomeropremium",
+      "brand": "Nike",
+      "model": "Nike Vomero Premium",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/28/nike-vomero-premium-nyc-marathon-ja4059-010/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|quietlydroppedanewintentionalrecoverysneakerthathugsyourfootbeforeandaftertraining",
+      "brand": "Nike",
+      "model": "Quietly Dropped a New ‘Intentional Recovery’ Sneaker That Hugs Your Foot Before and After Training",
+      "category": "트레이닝·짐",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/nike-24-7-recovery-shoe-ir0447-001-1239166195/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Nike|nike|tennisclassiccs",
+      "brand": "Nike",
+      "model": "Tennis Classic CS Sneakers",
+      "category": "테니스·코트",
+      "seenOn": 2,
+      "source": "https://www.ssense.com/en-us/men/product/nike/black-tennis-classic-cs-sneakers/19372401",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "norda|norda|andblackdiamondchristentrailrunningpartnershipwithabrandnew",
+      "brand": "norda",
+      "model": "and Black Diamond Christen Trail Running Partnership With a Brand New Shoe",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/norda-black-diamond-collaboration-first-collection-1239149543/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "notace|model|notace|미치1",
+      "brand": "notace",
+      "model": "미치 1",
+      "category": "러닝",
+      "seenOn": 8,
+      "source": "https://www.musinsa.com/products/7388295",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "notace|model|notace|야마1",
+      "brand": "notace",
+      "model": "야마 1",
+      "category": "러닝",
+      "seenOn": 8,
+      "source": "https://www.musinsa.com/products/7345516",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "NUUS|nuus|다몬슬립온플랫폼스니커즈n53352color",
+      "brand": "NUUS",
+      "model": "다몬 슬립온 플랫폼 스니커즈 [n5335]_2color",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4196935",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "NUUS|nuus|에오스스토퍼플랫폼스니커즈n53333color",
+      "brand": "NUUS",
+      "model": "에오스 스토퍼 플랫폼 스니커즈 [n5333]_3color",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4196925",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Off-White|offwhite|vulclowcanvas",
+      "brand": "Off-White",
+      "model": "Vulc Low Canvas Sneakers",
+      "category": "캔버스",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/men/product/off-white/white-and-burgundy-vulc-low-canvas-sneakers/19320111",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "On|on|cloudvista3",
+      "brand": "On",
+      "model": "Cloudvista 3",
+      "category": "트레일·하이킹",
+      "seenOn": 2,
+      "source": "https://www.on.com/en-us/products/cloudvista-3-w-3wg3019/womens/grain-saffron-shoes-3WG30195160",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "On|on|cloudvista3waterproof",
+      "brand": "On",
+      "model": "Cloudvista 3 Waterproof",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.on.com/en-us/products/cloudvista-3-waterproof-m-3mg3025/mens/silver-ore-shoes-3MG30255317",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "On|on|collaborations",
+      "brand": "On",
+      "model": "collaborations",
+      "category": "테니스·코트",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/roger-federer-on-centre-court-tennis-hall-of-fame-release-1239147768/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "On|on|fkatwigseditioncloudmonster3mule",
+      "brand": "On",
+      "model": "FKA twigs Edition Cloudmonster 3 Mule Sneakers",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/men/product/on-running/yellow-fka-twigs-edition-cloudmonster-3-mule-sneakers/19515751",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "On|on|onrunning",
+      "brand": "On",
+      "model": "ON Running",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://sneakernews.com/2026/10/26/atmos-on-cloudmaster-1-wp/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Onitsuka Tiger|model|onitsukatiger|오니츠카타이거멕시코66sd슬립온",
+      "brand": "Onitsuka Tiger",
+      "model": "오니츠카 타이거 멕시코 66 SD 슬립온",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4290767",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "OOFOS|oofos|블랙남성뮬",
+      "brand": "OOFOS",
+      "model": "블랙 남성 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4180020",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "OOFOS|oofos|블랙여성뮬",
+      "brand": "OOFOS",
+      "model": "블랙 여성 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4180015",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "OOFOS|oofos|진한브라운여성뮬",
+      "brand": "OOFOS",
+      "model": "진한 브라운 여성 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4180017",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "OTZ|model|otz|로미타플랫폼슬립온",
+      "brand": "OTZ",
+      "model": "로미타 플랫폼 슬립온",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4123341",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "OTZ|model|otz|로미타플랫폼플러피벨크로슈즈",
+      "brand": "OTZ",
+      "model": "로미타 플랫폼 플러피 벨크로 슈즈",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4282120",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "OTZ|otz|3300캔버스하이코티지팩그레이",
+      "brand": "OTZ",
+      "model": "3300 캔버스 하이 코티지팩 그레이",
+      "category": "캔버스",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4216890",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "OTZ|otz|로미타플랫폼벨크로메리제인슈즈블랙",
+      "brand": "OTZ",
+      "model": "로미타 플랫폼 벨크로 메리제인슈즈 블랙",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4222287",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "OTZ|otz|로미타플랫폼스웨이드벨크로메리제인그레이",
+      "brand": "OTZ",
+      "model": "로미타 플랫폼 스웨이드 벨크로 메리제인 그레이",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4123340",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PANE|pane|panelighttrainingnogi",
+      "brand": "PANE",
+      "model": "Pane Light Training Nogi Shoes",
+      "category": "트레이닝·짐",
+      "seenOn": 44,
+      "source": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-ginger-chestnut",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PANE|pane|panezephyrtraining",
+      "brand": "PANE",
+      "model": "Pane Zephyr Training Shoes",
+      "category": "트레이닝·짐",
+      "seenOn": 8,
+      "source": "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-crimson-ink",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PANE|pane|panezephyrtrainingpouching",
+      "brand": "PANE",
+      "model": "Pane Zephyr Training Pouching Shoes",
+      "category": "트레이닝·짐",
+      "seenOn": 10,
+      "source": "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-analogue-glitch",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "pascorozen LIMITED|pascorozenlimited|nevadamountaintrekkingshoes5810",
+      "brand": "pascorozen LIMITED",
+      "model": "Nevada mountain Trekking shoes 58.10",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4176645",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "poloralphlauren|poloralphlauren|헤리티지아에라레더브로그스니커즈",
+      "brand": "poloralphlauren",
+      "model": "헤리티지 아에라 레더 브로그 스니커즈",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7634121",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|model|puma|디비에이트나이트로엘리트4",
+      "brand": "PUMA",
+      "model": "디비에이트 나이트로 엘리트 4",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7403101",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|model|puma|디비에이트나이트로엘리트4w",
+      "brand": "PUMA",
+      "model": "디비에이트 나이트로 엘리트 4 W",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7403081",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|model|puma|디비에이트퓨어나이트로",
+      "brand": "PUMA",
+      "model": "디비에이트 퓨어 나이트로",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7403124",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|model|puma|매그맥스나이트로2",
+      "brand": "PUMA",
+      "model": "매그맥스 나이트로 2",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7282682",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|model|puma|모스트로xc빈티지페이드",
+      "brand": "PUMA",
+      "model": "모스트로 XC 빈티지 페이드",
+      "category": "레트로·클래식",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4183763",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|model|puma|벨로시티나이트로5",
+      "brand": "PUMA",
+      "model": "벨로시티 나이트로 5",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7282684",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|model|puma|벨로시티나이트로5gtx",
+      "brand": "PUMA",
+      "model": "벨로시티 나이트로 5 GTX",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7282680",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|model|puma|hstreet발레우먼스hstreetballetwns",
+      "brand": "PUMA",
+      "model": "H Street 발레 우먼스 H Street Ballet Wns",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4320516",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|디비에이트나이트로431212327",
+      "brand": "PUMA",
+      "model": "디비에이트 나이트로 4(31212327)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403127",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|디비에이트나이트로4brightstride31369801",
+      "brand": "PUMA",
+      "model": "디비에이트 나이트로 4 Brightstride(31369801)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403126",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|디비에이트나이트로4brightstridew31369901",
+      "brand": "PUMA",
+      "model": "디비에이트 나이트로 4 Brightstride W(31369901)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403097",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|디비에이트나이트로4xhyrox31415501",
+      "brand": "PUMA",
+      "model": "디비에이트 나이트로 4 X HYROX(31415501)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403103",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|디비에이트퓨어나이트로w31390507",
+      "brand": "PUMA",
+      "model": "디비에이트 퓨어 나이트로 W(31390507)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403078",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|매그니파이나이트로3",
+      "brand": "PUMA",
+      "model": "매그니파이 나이트로 3",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7165981",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|매그니파이나이트로3우먼스",
+      "brand": "PUMA",
+      "model": "매그니파이 나이트로 3 우먼스",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7165982",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|매그맥스나이트로2우먼스",
+      "brand": "PUMA",
+      "model": "매그맥스 나이트로 2 우먼스",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7282683",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|매그맥스나이트로2brightstride31368501",
+      "brand": "PUMA",
+      "model": "매그맥스 나이트로 2 Brightstride(31368501)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403111",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|매그맥스나이트로2brightstridew31370401",
+      "brand": "PUMA",
+      "model": "매그맥스 나이트로 2 Brightstride W(31370401)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403090",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|매그맥스나이트로2w31212621",
+      "brand": "PUMA",
+      "model": "매그맥스 나이트로 2 W(31212621)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403095",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|벨로시티나이트로5우먼스",
+      "brand": "PUMA",
+      "model": "벨로시티 나이트로 5 우먼스",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7282685",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|벨로시티나이트로5gtx우먼스",
+      "brand": "PUMA",
+      "model": "벨로시티 나이트로 5 GTX 우먼스",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7282681",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|벨로시티나이트로5xhyrox31368602",
+      "brand": "PUMA",
+      "model": "벨로시티 나이트로 5 X HYROX(31368602)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403108",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|벨로시티나이트로5xhyroxw31368702",
+      "brand": "PUMA",
+      "model": "벨로시티 나이트로 5 X HYROX W(31368702)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403086",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|액티베이트나이트로트레이너xhyrox31405701",
+      "brand": "PUMA",
+      "model": "액티베이트 나이트로 트레이너 X HYROX(31405701)",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7403105",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|푸마와로제스피드캣크로코레더로클래식레이싱실루엣의품격을높이다",
+      "brand": "PUMA",
+      "model": "푸마와 로제, '스피드캣 크로코 레더'로 클래식 레이싱 실루엣의 품격을 높이다",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://hypebeast.kr/2026/10/blackpink-rose-puma-speedcat-croco-leather-launch-campaign-release-info",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|푸마x로제스피드캣빈티지",
+      "brand": "PUMA",
+      "model": "푸마 x 로제 스피드캣 빈티지",
+      "category": "레트로·클래식",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4236800",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|speedcatballetetoile",
+      "brand": "PUMA",
+      "model": "Speedcat Ballet Etoile Sneakers",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/puma/blue-speedcat-ballet-etoile-sneakers/19349381",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|speedcatballetetoileflats",
+      "brand": "PUMA",
+      "model": "Speedcat Ballet Etoile Flats",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/puma/black-speedcat-ballet-etoile-flats/19349371",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|speedcatballetmetallic",
+      "brand": "PUMA",
+      "model": "Speedcat Ballet Metallic Sneakers",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/puma/silver-speedcat-ballet-metallic-sneakers/19349581",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|speedcatballetnovaflats",
+      "brand": "PUMA",
+      "model": "Speedcat Ballet Nova Flats",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/puma/black-speedcat-ballet-nova-flats/19349351",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "PUMA|puma|speedcatballetsuede",
+      "brand": "PUMA",
+      "model": "Speedcat Ballet Suede Sneakers",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.ssense.com/en-us/women/product/puma/pink-speedcat-ballet-suede-sneakers/19349621",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "RACHEL COX|rachelcox|arisretrolowsneakersrc7003n",
+      "brand": "RACHEL COX",
+      "model": "ARIS Retro Low Sneakers_RC7003N",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4133836",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "rag & bone|ragbone|leximulesliponloafers",
+      "brand": "rag & bone",
+      "model": "Lexi Mule Slip-on Loafers",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.ssense.com/en-us/women/product/rag-and-bone/white-lexi-mule-slip-on-loafers/19674481",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "rag & bone|ragbone|ultraslimretrorunner",
+      "brand": "rag & bone",
+      "model": "Ultra Slim Retro Runner Sneakers",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.ssense.com/en-us/women/product/rag-and-bone/black-ultra-slim-retro-runner-sneakers/19674201",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Reebok|reebok|데이토나dmx",
+      "brand": "Reebok",
+      "model": "데이토나 DMX",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7126061",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Reebok|reebok|스피드쉬프터",
+      "brand": "Reebok",
+      "model": "스피드 쉬프터",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7538843",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Reebok|reebok|울트라lo스웨이드메리제인w",
+      "brand": "Reebok",
+      "model": "울트라 LO 스웨이드 메리제인 (W)",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4161286",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Reebok|reebok|클래식나일론89",
+      "brand": "Reebok",
+      "model": "클래식 나일론 89",
+      "category": "레트로·클래식",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4215842",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Reebok|reebok|클래식나일론89w",
+      "brand": "Reebok",
+      "model": "클래식 나일론 89 (W)",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4215847",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Reebok|reebok|클래식레더",
+      "brand": "Reebok",
+      "model": "클래식 레더",
+      "category": "레트로·클래식",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4285458",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Reebok|reebok|클래식뮬",
+      "brand": "Reebok",
+      "model": "클래식 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4130631",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Reebok|reebok|클래식az레더w",
+      "brand": "Reebok",
+      "model": "클래식 AZ 레더 (W)",
+      "category": "레트로·클래식",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4130655",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Reebok|reebok|클럽c85빈티지",
+      "brand": "Reebok",
+      "model": "클럽 C 85 빈티지",
+      "category": "레트로·클래식",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4285453",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Reebok|reebok|reebokclassic",
+      "brand": "Reebok",
+      "model": "Reebok Classic",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/karol-g-reebok-classics-campaign-tropicoqueta-1239088863/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Rick Owens|rickowens|towervintage",
+      "brand": "Rick Owens",
+      "model": "Tower Vintage Sneakers",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/rick-owens/brown-tower-vintage-sneakers/19728321",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Rockfish Weatherwear|rockfishweatherwear|cloudyplatformfurmules",
+      "brand": "Rockfish Weatherwear",
+      "model": "CLOUDY PLATFORM FUR MULES",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4276164",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ROCKPORT|model|rockport|듀오폼프로워커델리오슬립온dfpwdeleoslipon",
+      "brand": "ROCKPORT",
+      "model": "듀오폼 프로워커 델리오 슬립온 DF PW DELEO SLIP ON",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4272306",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ROCKPORT|model|rockport|할리슬립온hallieslipon",
+      "brand": "ROCKPORT",
+      "model": "할리 슬립온 HALLIE SLIP ON",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4179497",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "ROCKPORT|model|rockport|할리퍼슬립온halliefurslipon",
+      "brand": "ROCKPORT",
+      "model": "할리 퍼 슬립온 HALLIE FUR SLIP ON",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4179499",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Salomon|salomon|레트로등산스타일을담은익스페디션팩",
+      "brand": "Salomon",
+      "model": "레트로 등산 스타일을 담은 '익스페디션 팩'",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://hypebeast.kr/2026/10/salomon-expedition-pack-xt-quest-l49177400-x-alp-l49177400-xt-whisper-l49193100-snowclog-og-l49180400-release-info",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Salomon|salomon|genesis2goretex",
+      "brand": "Salomon",
+      "model": "GENESIS 2 GORE-TEX",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.salomon.com/en-ca/product/genesis-2-gtx-li9188/L49302000",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Salomon|salomon|xt4oggoretex",
+      "brand": "Salomon",
+      "model": "XT-4 OG GORE-TEX",
+      "category": "트레일·하이킹",
+      "seenOn": 2,
+      "source": "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Salomon|salomon|xt6goretex",
+      "brand": "Salomon",
+      "model": "XT-6 GORE-TEX",
+      "category": "트레일·하이킹",
+      "seenOn": 3,
+      "source": "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215400",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SALTANDCHOCOLATE|saltandchocolate|비츠메리제인스니커즈4126350046cm",
+      "brand": "SALTANDCHOCOLATE",
+      "model": "비츠 메리제인 스니커즈 412635004 (6cm)",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4131928",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Saucony|saucony|progridv2mule",
+      "brand": "Saucony",
+      "model": "ProGrid V2 Mule",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.saucony.com/en/progrid-v2-mule/61289U.html",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Simone Rocha|simonerocha|adidasoriginalseditionjapanslipon",
+      "brand": "Simone Rocha",
+      "model": "adidas Originals Edition Japan Slip-on Sneakers",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/simone-rocha/beige-adidas-originals-edition-japan-slip-on-sneakers/19577421",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Simone Rocha|simonerocha|firstadidascollectionoffersballerinasmaryjanesneakersandmules",
+      "brand": "Simone Rocha",
+      "model": "First Adidas Collection Offers Ballerinas, Mary Jane Sneakers and Mules",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/simone-rocha-adidas-ballerina-climacool-release-date-1239196805/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Simone Rocha|simonerocha|satinturboballetrunnerloafers",
+      "brand": "Simone Rocha",
+      "model": "Satin Turbo Ballet Runner Loafers",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/simone-rocha/black-satin-turbo-ballet-runner-loafers/19744021",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "sixft|model|sixft|himollymaryjane",
+      "brand": "sixft",
+      "model": "HI MOLLY MARYJANE",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4203132",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|고런컨시스턴트프로트레일",
+      "brand": "Skechers",
+      "model": "고런 컨시스턴트 프로 트레일",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7449679",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|고런컨시스턴트프로트레일슬립인스",
+      "brand": "Skechers",
+      "model": "고런 컨시스턴트 프로 트레일 (슬립인스)",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7449672",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|고워크맥스쿠셔닝플렉스슬립인스",
+      "brand": "Skechers",
+      "model": "고워크 맥스쿠셔닝 플렉스 (슬립인스)",
+      "category": "뮬·슬립온",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7572743",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|다이나마이트30슬립인스",
+      "brand": "Skechers",
+      "model": "다이나마이트 3.0 (슬립인스)",
+      "category": "뮬·슬립온",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7572739",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|맥스런슬립인스",
+      "brand": "Skechers",
+      "model": "맥스 런 (슬립인스)",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/7499481",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|맥스쿠셔닝엔데버",
+      "brand": "Skechers",
+      "model": "맥스쿠셔닝 엔데버",
+      "category": "러닝",
+      "seenOn": 6,
+      "source": "https://www.musinsa.com/products/7461720",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|맥스쿠셔닝엘리트3슬립인스",
+      "brand": "Skechers",
+      "model": "맥스쿠셔닝 엘리트 3 (슬립인스)",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7357799",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|맥스쿠셔닝프리미어3슬립인스",
+      "brand": "Skechers",
+      "model": "맥스쿠셔닝 프리미어 3 (슬립인스)",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7357807",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|맥스쿠셔닝프리미어3와이드슬립인스",
+      "brand": "Skechers",
+      "model": "맥스쿠셔닝 프리미어 3 (와이드 슬립인스)",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7357803",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|맥스플렉스슬립인스",
+      "brand": "Skechers",
+      "model": "맥스 플렉스 (슬립인스)",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7499477",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|밥스비플렉스하이슬립인스",
+      "brand": "Skechers",
+      "model": "밥스 비플렉스 하이 (슬립인스)",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/7499449",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|스케쳐스usa뮤레트슬립인스",
+      "brand": "Skechers",
+      "model": "[스케쳐스 USA] 뮤레트 (슬립인스)",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7572684",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|스케쳐스usa아치핏모던컴포트디럭스슬립인스",
+      "brand": "Skechers",
+      "model": "[스케쳐스 USA] 아치핏 모던 컴포트 디럭스 (슬립인스)",
+      "category": "뮬·슬립온",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7572690",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|model|skechers|아치핏비스타20",
+      "brand": "Skechers",
+      "model": "아치핏 비스타 2.0",
+      "category": "러닝",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/7499440",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Skechers|skechers|고런아치핏20슬립인스sp0mrcgy172",
+      "brand": "Skechers",
+      "model": "고런 아치핏 2.0(슬립인스)_SP0MRCGY172",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7499488",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SNOWPEAK APPAREL|model|snowpeakapparel|네오패딩뮬",
+      "brand": "SNOWPEAK APPAREL",
+      "model": "네오 패딩 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 4,
+      "source": "https://www.29cm.co.kr/products/4190790",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "snowpeakapparel|model|snowpeakapparel|네오패딩뮬s26wufmu72",
+      "brand": "snowpeakapparel",
+      "model": "네오 패딩 뮬 (S26WUFMU72)",
+      "category": "뮬·슬립온",
+      "seenOn": 4,
+      "source": "https://www.musinsa.com/products/7208425",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SOLETTE|model|solette|rumblefurmule",
+      "brand": "SOLETTE",
+      "model": "Rumble Fur mule",
+      "category": "뮬·슬립온",
+      "seenOn": 5,
+      "source": "https://www.29cm.co.kr/products/4270652",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SPUR|spur|blairelasticbandingsneakers소가죽플랫폼스니커즈65cmwa9006",
+      "brand": "SPUR",
+      "model": "Blair Elastic Banding Sneakers 소가죽 플랫폼 스니커즈 6.5cm -WA9006",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4184283",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "spyder|spyder|공용트레킹화delkilow델키로우",
+      "brand": "spyder",
+      "model": "공용 트레킹화 DELKI LOW 델키 로우",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7229443",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUAMAR|suamar|eronsliponhaircalfblack",
+      "brand": "SUAMAR",
+      "model": "Eron Slipon (Haircalf Black)",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4198968",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUBU|subu|발레",
+      "brand": "SUBU",
+      "model": "발레",
+      "category": "발레·메리제인",
+      "seenOn": 3,
+      "source": "https://www.29cm.co.kr/products/4304016",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUBU|subu|뱀프플랫폼",
+      "brand": "SUBU",
+      "model": "뱀프 플랫폼",
+      "category": "플랫폼·청키",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4304006",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUBU|subu|뱀프플랫폼써클",
+      "brand": "SUBU",
+      "model": "뱀프 플랫폼 써클",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4304008",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUECOMMA BONNIE|model|suecommabonnie|blossommaryjanesneakers",
+      "brand": "SUECOMMA BONNIE",
+      "model": "Blossom maryjane sneakers",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4213152",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUECOMMA BONNIE|model|suecommabonnie|maryjaneknitsneakers",
+      "brand": "SUECOMMA BONNIE",
+      "model": "Mary jane knit sneakers",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4294238",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUECOMMA BONNIE|suecommabonnie|beadedplatformsneakersblackdg4da26503blk",
+      "brand": "SUECOMMA BONNIE",
+      "model": "Beaded platform sneakers(black)_DG4DA26503BLK",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4131705",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUECOMMA BONNIE|suecommabonnie|curtaincallplatformsneakersblackda4da26504blk",
+      "brand": "SUECOMMA BONNIE",
+      "model": "Curtain call platform sneakers(black)_DA4DA26504BLK",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4294241",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUECOMMA BONNIE|suecommabonnie|fevfoilplatformsneakersblackdd4da26501blk",
+      "brand": "SUECOMMA BONNIE",
+      "model": "Fev Foil platform sneakers(black)_DD4DA26501BLK",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4204544",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUECOMMA BONNIE|suecommabonnie|floralmaryjanesneakersblackdg4da26507blk",
+      "brand": "SUECOMMA BONNIE",
+      "model": "Floral maryjane sneakers(black)_DG4DA26507BLK",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4213145",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUECOMMA BONNIE|suecommabonnie|jewelboldplatformglamsneakersblackdg4da26509blk",
+      "brand": "SUECOMMA BONNIE",
+      "model": "Jewel bold platform glam sneakers(black)_DG4DA26509BLK",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4267454",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUECOMMA BONNIE|suecommabonnie|sportyplatformsneakersblackda4da26501blk",
+      "brand": "SUECOMMA BONNIE",
+      "model": "Sporty platform sneakers(black)_DA4DA26501BLK",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4249829",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "SUECOMMA BONNIE|suecommabonnie|volumeribbonmuleblackdg4da26525blk",
+      "brand": "SUECOMMA BONNIE",
+      "model": "Volume ribbon mule(black)_DG4DA26525BLK",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4222171",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "suecommabonnie|suecommabonnie|fevveilliftrunnersneakersblackde4ds26015blk",
+      "brand": "suecommabonnie",
+      "model": "Fev Veil lift runner sneakers(black)_DE4DS26015BLK",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7073330",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "suecommabonnie|suecommabonnie|fevveilmaryjanesbrownde4ds26002brn",
+      "brand": "suecommabonnie",
+      "model": "Fev Veil Mary Janes(brown)_DE4DS26002BRN",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7073238",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "TEVA|model|teva|허리케인트레일세터",
+      "brand": "TEVA",
+      "model": "허리케인 트레일세터",
+      "category": "트레일·하이킹",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4205104",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "TEVA|teva|허리케인데이브레이커슬립온dun",
+      "brand": "TEVA",
+      "model": "허리케인 데이브레이커 슬립온 (DUN)",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4297740",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "TEVA|teva|허리케인트레일세터gtxbcb",
+      "brand": "TEVA",
+      "model": "허리케인 트레일세터 GTX (BCB)",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4205100",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "THE NOPI|thenopi|라이언4cm키높이독일군뮬스니커즈",
+      "brand": "THE NOPI",
+      "model": "라이언 4cm 키높이 독일군뮬 스니커즈",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4295505",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "The North Face|thenorthface|눕시뮬sandshell",
+      "brand": "The North Face",
+      "model": "눕시 뮬 SAND SHELL",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7540449",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "The North Face|thenorthface|벡티브엔듀리스4트레일러닝화",
+      "brand": "The North Face",
+      "model": "벡티브 엔듀리스 4 트레일러닝화",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4181817",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "The North Face|thenorthface|launchesanewtrailrunningshoebuiltforhardcoreterrain",
+      "brand": "The North Face",
+      "model": "Launches a New Trail Running Shoe Built for Hardcore Terrain",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/the-north-face-offtrail-ultra-running-shoe-1239098416/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Thom McAn|model|thommcan|톰맥캔레아01슬립온플랫",
+      "brand": "Thom McAn",
+      "model": "톰맥캔 레아 01 슬립온 플랫",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4176563",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Toga Pulla|togapulla|suedefursliponloafers",
+      "brand": "Toga Pulla",
+      "model": "Suede Fur Slip-on Loafers",
+      "category": "발레·메리제인",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/women/product/toga-pulla/black-suede-fur-slip-on-loafers/19772201",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Umbro|model|umbro|recordrivenv2레코드리븐v2",
+      "brand": "Umbro",
+      "model": "RECORDRIVEN V2 (레코드리븐 V2)",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7302754",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|model|underarmour|ua서지",
+      "brand": "Under Armour",
+      "model": "UA 서지",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498664",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|model|underarmour|ua인피니트엘리트",
+      "brand": "Under Armour",
+      "model": "UA 인피니트 엘리트",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7299242",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|model|underarmour|ua차지드밴디트트레일",
+      "brand": "Under Armour",
+      "model": "UA 차지드 밴디트 트레일",
+      "category": "트레일·하이킹",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4250541",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|model|underarmour|ua페이드rn",
+      "brand": "Under Armour",
+      "model": "UA 페이드 RN",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498611",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|model|underarmour|uahb러너",
+      "brand": "Under Armour",
+      "model": "UA HB 러너",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7498828",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|model|underarmour|uahb레이서",
+      "brand": "Under Armour",
+      "model": "UA HB 레이서",
+      "category": "러닝",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7498832",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|유니섹스ua락다운7농구화3028512001",
+      "brand": "Under Armour",
+      "model": "유니섹스 UA 락다운 7 농구화3028512-001",
+      "category": "농구",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4065073",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|유니섹스ua레인리프터트레이닝화3028028001",
+      "brand": "Under Armour",
+      "model": "유니섹스 UA 레인 리프터 트레이닝화3028028-001",
+      "category": "트레이닝·짐",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4065069",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|유니섹스uahovr애퍼리션운동화3027595100",
+      "brand": "Under Armour",
+      "model": "유니섹스 UA HOVR 애퍼리션 운동화3027595-100",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7298837",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua벨로시티4러닝화3027585105",
+      "brand": "Under Armour",
+      "model": "UA 벨로시티 4 러닝화3027585-105",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7298820",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua벨로시티디스턴스6006030280",
+      "brand": "Under Armour",
+      "model": "UA 벨로시티 디스턴스6006030-280",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498617",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua벨로시티디스턴스스톰6013477001",
+      "brand": "Under Armour",
+      "model": "UA 벨로시티 디스턴스 스톰6013477-001",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498607",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua벨로시티디스턴스스톰6013477002",
+      "brand": "Under Armour",
+      "model": "UA 벨로시티 디스턴스 스톰6013477-002",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498615",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua스트리트미라지3028378403",
+      "brand": "Under Armour",
+      "model": "UA 스트리트 미라지3028378-403",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7298812",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua스트리트미라지3028378452",
+      "brand": "Under Armour",
+      "model": "UA 스트리트 미라지3028378-452",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7298826",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua스트리트미라지3028379003",
+      "brand": "Under Armour",
+      "model": "UA 스트리트 미라지3028379-003",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7299245",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua스트리트미라지3028379721",
+      "brand": "Under Armour",
+      "model": "UA 스트리트 미라지3028379-721",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7299243",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua애퍼리션테크6005280105",
+      "brand": "Under Armour",
+      "model": "UA 애퍼리션 테크6005280-105",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498658",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua어센드6009828100",
+      "brand": "Under Armour",
+      "model": "UA 어센드6009828-100",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498841",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua엣지레더트레이닝화3028375100",
+      "brand": "Under Armour",
+      "model": "UA 엣지 레더 트레이닝화3028375-100",
+      "category": "트레이닝·짐",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4065075",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua엣지레더트레이닝화3028569100",
+      "brand": "Under Armour",
+      "model": "UA 엣지 레더 트레이닝화3028569-100",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7299253",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua익스팬스로우워터프루프6000769249",
+      "brand": "Under Armour",
+      "model": "UA 익스팬스 로우 워터프루프6000769-249",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498836",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua인피니트러닝화3027523107",
+      "brand": "Under Armour",
+      "model": "UA 인피니트 러닝화3027523-107",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7341907",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua인피니트러닝화3027523109",
+      "brand": "Under Armour",
+      "model": "UA 인피니트 러닝화3027523-109",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7341906",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua인피니트러닝화3027524101",
+      "brand": "Under Armour",
+      "model": "UA 인피니트 러닝화3027524-101",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7299248",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua인피니트프로2러닝화3028168001",
+      "brand": "Under Armour",
+      "model": "UA 인피니트 프로 2 러닝화3028168-001",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7298828",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua차지드밴디트트레일4워터프루프6010415001",
+      "brand": "Under Armour",
+      "model": "UA 차지드 밴디트 트레일 4 워터프루프6010415-001",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498644",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua차지드밴디트트레일4워터프루프6010415016",
+      "brand": "Under Armour",
+      "model": "UA 차지드 밴디트 트레일 4 워터프루프6010415-016",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498655",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua차지드어서트10러닝화3026175104",
+      "brand": "Under Armour",
+      "model": "UA 차지드 어서트 10 러닝화3026175-104",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4250657",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua커미트43026017106",
+      "brand": "Under Armour",
+      "model": "UA 커미트 43026017-106",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498640",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua팬텀4신발3027593101",
+      "brand": "Under Armour",
+      "model": "UA 팬텀 4 신발3027593-101",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7298830",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua팬텀4신발3027594003",
+      "brand": "Under Armour",
+      "model": "UA 팬텀 4 신발3027594-003",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7299247",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua페이드rn3러닝화3028252001",
+      "brand": "Under Armour",
+      "model": "UA 페이드 RN 3 러닝화3028252-001",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4065067",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua페이드rn3러닝화3028252100",
+      "brand": "Under Armour",
+      "model": "UA 페이드 RN 3 러닝화3028252-100",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4065065",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|ua플레어6015443003",
+      "brand": "Under Armour",
+      "model": "UA 플레어6015443-003",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498627",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|uaarc966006060101",
+      "brand": "Under Armour",
+      "model": "UA Arc 966006060-101",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498656",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|uaexplor트레일6012791004",
+      "brand": "Under Armour",
+      "model": "UA EXPLOR 트레일6012791-004",
+      "category": "트레일·하이킹",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4250592",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|uaexplor트레일6012791843",
+      "brand": "Under Armour",
+      "model": "UA EXPLOR 트레일6012791-843",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498662",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|uaexplor트레일워터프루프6010417008",
+      "brand": "Under Armour",
+      "model": "UA Explor 트레일 워터프루프6010417-008",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498651",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|uaexplor트레일워터프루프6010417110",
+      "brand": "Under Armour",
+      "model": "UA Explor 트레일 워터프루프6010417-110",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7498660",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|uaflow벨로시티4러닝화3027586001",
+      "brand": "Under Armour",
+      "model": "UA Flow 벨로시티 4 러닝화3027586-001",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7299250",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|uaflow벨로시티4러닝화3027586100",
+      "brand": "Under Armour",
+      "model": "UA Flow 벨로시티 4 러닝화3027586-100",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.musinsa.com/products/7299251",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|uaflx",
+      "brand": "Under Armour",
+      "model": "UA FLX",
+      "category": "러닝",
+      "seenOn": 3,
+      "source": "https://www.musinsa.com/products/7498838",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Under Armour|underarmour|uahovr터뷸런스2러닝화3026520001",
+      "brand": "Under Armour",
+      "model": "UA HOVR 터뷸런스 2 러닝화3026520-001",
+      "category": "러닝",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4250655",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Vans|vans|슈퍼로우프로발레라이트",
+      "brand": "Vans",
+      "model": "슈퍼로우프로 발레 라이트",
+      "category": "발레·메리제인",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4119707",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Vans|vans|올드스쿨",
+      "brand": "Vans",
+      "model": "올드스쿨",
+      "category": "레트로·클래식",
+      "seenOn": 2,
+      "source": "https://www.musinsa.com/products/7297263",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Vans|vans|lx올드스쿨36",
+      "brand": "Vans",
+      "model": "LX 올드스쿨 36",
+      "category": "레트로·클래식",
+      "seenOn": 5,
+      "source": "https://www.musinsa.com/products/7471749",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Vans|vans|lx클래식슬립온98",
+      "brand": "Vans",
+      "model": "LX 클래식 슬립온 98",
+      "category": "뮬·슬립온",
+      "seenOn": 2,
+      "source": "https://www.29cm.co.kr/products/4276248",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Vans|vans|offwhitepremiumclassicslipon",
+      "brand": "Vans",
+      "model": "& Off-White Premium Classic Slip-On Sneakers",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/men/product/vans/red-and-off-white-premium-classic-slip-on-sneakers/19400131",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Vans|vans|premiumslipon",
+      "brand": "Vans",
+      "model": "Premium Slip-On Sneakers",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.ssense.com/en-us/men/product/vans/black-premium-slip-on-sneakers/19400231",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Vans|vans|vansauthentic",
+      "brand": "Vans",
+      "model": "Vans Authentic",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/vans-holiday-2026-sneaker-collection-release-date-1239375378/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Vans|vans|vansoldskool",
+      "brand": "Vans",
+      "model": "Vans Old Skool",
+      "category": "스케이트·보드",
+      "seenOn": 1,
+      "source": "https://sneakernews.com/2026/10/12/vans-old-skool-era-sk8-hi-floral-rivets/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Vans|vans|vansslipon",
+      "brand": "Vans",
+      "model": "Vans Slip-On",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://wwd.com/footwear-news/sneaker-news/vans-premium-classic-slip-on-patchwork-stripe-1239177744/",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "WILSON|wilson|써모플레이뮬",
+      "brand": "WILSON",
+      "model": "써모플레이 뮬",
+      "category": "뮬·슬립온",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4178433",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "YASE|yase|고아웃빈티지풀업스니커즈블랙",
+      "brand": "YASE",
+      "model": "고아웃 빈티지 풀업 스니커즈 블랙",
+      "category": "레트로·클래식",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4219227",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Yeel|yeel|laceplatform",
+      "brand": "Yeel",
+      "model": "LACE PLATFORM SNEAKERS",
+      "category": "플랫폼·청키",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4157056",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "Yohji Yamamoto|yohjiyamamoto|wildsideandmoonstarreworkthegymclassic",
+      "brand": "Yohji Yamamoto",
+      "model": "WILDSIDE and MOONSTAR Rework the GYM CLASSIC Sneaker",
+      "category": "트레이닝·짐",
+      "seenOn": 1,
+      "source": "https://hypebeast.com/2026/10/wildside-yohji-yamamoto-moonstar-gym-classic-cotton-canvas-sneakers-collaboration-release-info",
+      "recordedAt": "2026-10-30"
+    },
+    {
+      "key": "YOONSEUL|yoonseul|lorenloafer",
+      "brand": "YOONSEUL",
+      "model": "loren loafer sneakers",
+      "category": "로퍼·더비",
+      "seenOn": 1,
+      "source": "https://www.29cm.co.kr/products/4233659",
+      "recordedAt": "2026-10-30"
+    }
+  ]
+}
