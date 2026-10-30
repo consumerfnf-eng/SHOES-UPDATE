@@ -211,7 +211,8 @@
 .catwalk-chip:hover{border-color:#c9c2b6}
 .catwalk-chip.active{background:#1c1a17;border-color:#1c1a17;color:#fff}
 .catwalk-chip.active span{color:#bdb6a9}
-.catwalk-grid{display:grid;gap:22px 16px;grid-template-columns:repeat(auto-fill,minmax(168px,1fr))}
+.catwalk-grid{display:grid;gap:22px 16px;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));
+  align-items:start}   /* a landscape close-up is shorter; it must not stretch to the row */
 .catwalk-card{display:grid;gap:8px;min-width:0}
 .catwalk-photo{display:block;background:#f4f1ec;border:1px solid #ece7df;border-radius:8px;overflow:hidden;line-height:0}
 .catwalk-photo img{width:100%;height:auto;display:block}

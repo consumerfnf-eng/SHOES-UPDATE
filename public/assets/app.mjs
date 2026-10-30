@@ -433,7 +433,10 @@ function renderRankBoards(){
 // it: the brand, the season, the city. A look is not a product - it has no
 // price, no colourway and nothing to select or export - so it gets its own
 // grid rather than being forced through the product card.
-const CATWALK_PAGE = 120;
+// The whole season at once. 247 cards of about 180KB is a page the browser
+// handles comfortably with lazy loading, and paging them split the viewer's
+// own range - it walked 1/120 of a 247-look season.
+const CATWALK_PAGE = 400;
 function catwalkLooks(){
   const looks=catwalk?.looks||[];
   if(state.catwalkShow==='footwear'){
