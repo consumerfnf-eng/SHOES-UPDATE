@@ -115,6 +115,16 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
     });
   }
   const photoCache=await readJson(path.join(directory,'data/photo-cache.json'),{images:{}});
+  // A photograph the brand's CDN will not serve costs that one product its
+  // card, the same answer the catalogue already gives a product with no
+  // photograph at all. It is held with a reason rather than dropped silently,
+  // so the queue report says which host refused and how many it cost.
+  if(photoCache.unavailable){
+    result.snapshot.products=result.snapshot.products.filter(p=>{
+      if(!p.presentation||photoCache.images[p.presentation.image]||!photoCache.unavailable[p.presentation.image])return true;
+      result.review.held.push({id:p.id,brand:p.brand,name:p.name,reason:'photo-unavailable'});return false;
+    });
+  }
   for(const p of result.snapshot.products){
     if(!history.entries[p.id])history.entries[p.id]={firstPublishedAt:new Date(now).toISOString(),brand:p.brand,style:p.style,url:p.url};
     p.firstPublishedAt=history.entries[p.id].firstPublishedAt;

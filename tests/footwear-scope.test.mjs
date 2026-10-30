@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {classifyFootwear,officialHybridReview} from '../scripts/curation.mjs';
+import {classifyFootwear,officialHybridReview,dedupeKey,productStyle,inPublishedScope} from '../scripts/curation.mjs';
 import {collectOfficialEvidence} from '../scripts/collect-evidence.mjs';
 import {footwearTypes,isPublishedFootwear} from '../public/assets/footwear-policy.mjs';
 import {categoryMatches} from '../public/assets/catalog-view.mjs';
@@ -89,4 +89,36 @@ test('hybrid structure collection preserves an already verified release date',as
   assert.deepEqual(row.dateEvidence,product.dateEvidence);assert.equal(row.releaseDate,product.releaseDate);
   assert.equal(classifyFootwear(row).category,'hybrid');assert(row.hybridReview.sneakerSole);
   assert.equal(row.officialProductEvidence,undefined);assert.equal(row.officialImageEvidence,undefined);
+});
+
+test('a platform shoe is in scope on the strength of its sole, not its marketing copy',()=>{
+  // 26 records were held because their brands never wrote "casual" or
+  // "street", and one of them is the shape the group was asked for.
+  assert.deepEqual(classifyFootwear({...base,brand:'Melissa',name:'Sun Capri Platform',description:''}),{category:'platform-shoe'});
+  assert.deepEqual(classifyFootwear({...base,brand:'Melissa',name:'통굽 플랫폼',description:''}),{category:'platform-shoe'});
+  // A heel is still a heel, whatever sole it is on.
+  assert.equal(classifyFootwear({...base,name:'Platform wedge heels'}).reason,'excluded-footwear');
+});
+
+test('the publishable set the validator checks is the one the classifier produces',()=>{
+  // These two lists used to be written out separately. The scope gained
+  // slipper and loafer, the build's validator did not, and the build - which
+  // is what deploys the site - refused the catalogue it had just curated.
+  for(const category of ['sneaker','hybrid','jelly','clog','loafer','slipper','platform-slipper','platform-sandal','platform-shoe'])
+    assert.equal(inPublishedScope(category),true,category);
+  for(const category of ['sandal','excluded-footwear',''])assert.equal(inPublishedScope(category),false,category);
+});
+
+test('one shoe listed once per size is one card, not six',()=>{
+  // Melissa's Sun Capri Platform arrives as 38132-BY684-5 through -10, every
+  // one of them pointing at the same product page with a ?variant= per size.
+  const url='https://www.shopmelissa.com/products/sun-capri-platform-38132-by684';
+  const size=(style,variant)=>({brand:'Melissa',style,colorway:'Black',url:variant?`${url}?variant=${variant}`:url});
+  assert.equal(productStyle(size('38132-BY684-5')),'38132-BY684');
+  assert.equal(dedupeKey(size('38132-BY684-5')),dedupeKey(size('38132-BY684-10','50543714828546')));
+  // A different colour of the same model stays a different card.
+  assert.notEqual(dedupeKey(size('38132-BY684-5')),dedupeKey({...size('38132-BY687-5'),colorway:'Orange'}));
+  // A colour code is not a size: Nike's style survives whole, because the
+  // product's own URL never names it without the last segment.
+  assert.equal(productStyle({style:'CW2288-111',url:'https://www.nike.com/t/air-force-1-07-CW2288-111/CW2288-111'}),'CW2288-111');
 });

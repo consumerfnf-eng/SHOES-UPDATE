@@ -16,9 +16,29 @@ export function brandPolicy(name) { return brandMap.get(key(canonicalBrand(name)
 export function kstDay(now = new Date()) { return new Date(new Date(now).getTime() + 9 * 3600000).toISOString().slice(0, 10); }
 export function httpUrl(x) { try { const u = new URL(x); return u.protocol === 'https:' && !u.username && !u.password; } catch { return false; } }
 export function canonicalUrl(x) {
-  try { const u = new URL(x); u.hash = ''; for(const name of [...u.searchParams.keys()])if(/^(?:utm_|gclid$|fbclid$|ref$|referrer$|campaign$|affiliate$)/i.test(name))u.searchParams.delete(name);u.searchParams.sort();u.hostname = u.hostname.replace(/^www\./, ''); u.pathname = u.pathname.replace(/\/collections\/[^/]+\/products\//, '/products/').replace(/\/$/, ''); return u.href; } catch { return ''; }
+  try { const u = new URL(x); u.hash = ''; for(const name of [...u.searchParams.keys()])if(/^(?:utm_|gclid$|fbclid$|ref$|referrer$|campaign$|affiliate$|variant$)/i.test(name))u.searchParams.delete(name);u.searchParams.sort();u.hostname = u.hostname.replace(/^www\./, ''); u.pathname = u.pathname.replace(/\/collections\/[^/]+\/products\//, '/products/').replace(/\/$/, ''); return u.href; } catch { return ''; }
 }
-export function dedupeKey(p) { return `${key(canonicalBrand(p.brand))}|${key(p.style) || canonicalUrl(p.url)}|${key(p.colorway)}`; }
+/** The style a product is identified by, with a size variant removed.
+ *
+ *  A Shopify store can list one shoe once per size. Melissa's Sun Capri
+ *  Platform arrives six times - 38132-BY684-5 through -10 - every one of them
+ *  pointing at /products/sun-capri-platform-38132-by684 with a ?variant= for
+ *  the size. A size is neither a colour nor a product, so six cards became
+ *  one shoe's worth of grid.
+ *
+ *  The trailing segment is dropped only when the product's own URL names the
+ *  style without it, which is the store's own statement that the rest is the
+ *  style. That keeps a colour code intact: Nike's CW2288-111 is three digits
+ *  and never appears in its URL as CW2288. */
+export function productStyle(p) {
+  const style = String(p.style || '');
+  const trimmed = style.replace(/-\d{1,2}(?:\.5)?$/, '');
+  if (trimmed === style || !trimmed) return style;
+  let path = '';
+  try { path = new URL(p.url).pathname.toLowerCase(); } catch { return style; }
+  return path.includes(trimmed.toLowerCase()) || path.includes(key(trimmed)) ? trimmed : style;
+}
+export function dedupeKey(p) { return `${key(canonicalBrand(p.brand))}|${key(productStyle(p)) || canonicalUrl(p.url)}|${key(p.colorway)}`; }
 const officialSources=JSON.parse(fs.readFileSync(new URL('../config/daily_sources.json',import.meta.url),'utf8'));
 const socialSources=JSON.parse(fs.readFileSync(new URL('../config/social-metric-sources.json',import.meta.url),'utf8'));
 const officialDomainOverrides={'Nike':['nike.com'],'Jordan':['nike.com'],'PUMA':['puma.com'],'adidas':['adidas.com','adidas.ae','adidas.jp','adidas.fr','adidas.co.uk'],'Converse':['converse.com','palmes.co']};
@@ -127,7 +147,13 @@ export function classifyFootwear(p) {
     return { category: platform ? 'platform-sandal' : 'sandal' };
   }
   if (/sneaker|running shoe|trail running|training shoes?|trainers?|court(?:-type)? shoe|tennis shoes?|스니커|운동화|러닝화|트레이닝화|트레일화/i.test(context)||/\btraining\b[^.!?]{0,45}\bshoes?\b/i.test(title)) return { category: 'sneaker' };
-  if (/\bplatform\b|플랫폼/i.test(title)&&(reviewedPlatform||/\bflat\b|level sole|플랫|통굽|평평한/i.test(context))&&/casual|street|sport|캐주얼/i.test(context))return {category:'platform-shoe'};
+  // A platform shoe is in scope because of its sole, not because the brand's
+  // copy happens to say "casual" or "street". Requiring those words held 26
+  // records whose own titles said platform - Melissa's Possession and Sun
+  // Capri among them - and requiring the sole be proved flat contradicted the
+  // shape itself: the raised sole is the whole point of a platform. Heeled and
+  // dress platforms are still refused by the exclusion gate above.
+  if (/\bplatform\b|플랫폼|통굽/i.test(title)||reviewedPlatform)return {category:'platform-shoe'};
   if(p.productVerifiedAt&&/\b(?:Air Max (?!Phenomena)|Air Force 1|Air Jordan \d|Air Bakin|Dunk Low|Dunk High|Cortez|Vomero|Pegasus|Shox|P-6000)\b/i.test(p.name||''))return {category:'sneaker'};
   return { reason: 'footwear-type-unverified' };
 }

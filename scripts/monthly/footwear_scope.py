@@ -27,7 +27,7 @@ COLOUR_NAMES = set(COLOR_WORDS)
 # loafer is still caught here, by its heel.
 EXCLUDE_EN = re.compile(
     r'\b(?:oxfords?|derbys?|derbies|brogues?|monk ?straps?|boat shoes?|'
-    r'heels?|pumps?|stilettos?|slingbacks?|kitten ?heels?|'
+    r'heels?|heeled|pumps?|stilettos?|slingbacks?|kitten ?heels?|'
     r'boots?|booties?|ankle ?boots?|chelsea)\b', re.I)
 EXCLUDE_KO = re.compile(
     r'옥스포드|옥스퍼드|더비|브로그|몽크|보트\s?슈즈|구두|'
@@ -67,6 +67,18 @@ PLATFORM = re.compile(r'\bplatform\b|플랫폼|통굽', re.I)
 KIDS = re.compile(
     r'\b(?:kids?|baby|toddler|infant|junior|youth|little\s*kids?|big\s*kids?|'
     r'grade\s*school|pre-?school)\b|\((?:gs|ps|td)\)|키즈|아동|주니어|유아|베이비|어린이', re.I)
+
+
+def names_other_shape(text):
+    """True when the text names a shape that is in scope on its own.
+
+    These words used to sit in the hard exclusions, and the colour reader
+    asked that list whether a token was a silhouette. Moving them here made
+    "로퍼-블랙" read as a shade, which merges a loafer onto a sneaker's card.
+    A word that says what kind of shoe this is is never its colour.
+    """
+    text = text or ''
+    return bool(EXCLUDE_SOFT.search(text)) or any(p.search(text) for _, p in OTHER_SHAPES)
 
 
 def is_kids(*texts):
@@ -117,8 +129,14 @@ def classify(title, retailer_category=''):
     # Shapes that stand on their own: a loafer does not have to call itself a
     # sneaker to be a loafer. Checked before the sandal rule so 통굽 샌들 is
     # kept while a plain strappy one is not.
-    for shape, pattern in OTHER_SHAPES:
-        if pattern.search(title) or pattern.search(label) and not EXCLUDE_EN.search(title) and not EXCLUDE_KO.search(title):
+    # A title that calls itself a sneaker keeps its sneaker reading, whatever
+    # shelf it sits on: Musinsa files "바이커 뮬 스니커즈" under 뮬/슬리퍼, and it
+    # is a mule sneaker, not a slipper. Only a title making no sneaker claim
+    # falls through to these shapes.
+    for shape, pattern in (() if sneaker_in_title else OTHER_SHAPES):
+        if pattern.search(title) or (pattern.search(label)
+                                     and not EXCLUDE_EN.search(title)
+                                     and not EXCLUDE_KO.search(title)):
             if shape == 'sandal':
                 return 'platform-sandal', ['sandal', 'platform'], ''
             if shape == 'slipper':

@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';
-import {readJson,atomicJson} from './publish-curated.mjs';
+import {readJson,atomicJson,publishCurated} from './publish-curated.mjs';
 const root=new URL('../',import.meta.url),catalog=await readJson(new URL('public/data/catalog.json',root));
 const reviews=await readJson(new URL('data/product-presentation.json',root),{products:[]});
 const cache=await readJson(new URL('data/photo-cache.json',root),{schemaVersion:1,images:{}});
@@ -27,13 +27,20 @@ async function worker(){while(next<sources.length){const url=sources[next++],kno
 }}
 await Promise.all(Array.from({length:3},worker));
 const dropped=catalog.products.filter(p=>p.presentation&&!cache.images[p.presentation.image]);
-catalog.products=catalog.products.filter(p=>!p.presentation||cache.images[p.presentation.image]);
-for(const p of catalog.products)if(p.presentation)p.presentation.cachedPath=cache.images[p.presentation.image].path;
-await atomicJson(new URL('data/photo-cache.json',root),cache);await atomicJson(new URL('public/data/catalog.json',root),catalog);
+// Striking those products out of the published list by hand left the snapshot
+// disagreeing with itself: the keyword catalogue, the style board and the
+// social comparisons had all been computed over products that were no longer
+// in it, and `npm run build` - which is what Cloudflare runs - refuses a
+// snapshot whose own sections do not match its products. So the unfetchable
+// photos are recorded, and the publication is rebuilt from them, which is the
+// one place every section is computed over the same set of products.
+cache.unavailable=Object.fromEntries([...failures].map(([url,error])=>[url,{error,checkedAt:new Date().toISOString()}]));
+await atomicJson(new URL('data/photo-cache.json',root),cache);
+const republished=await publishCurated({});
 if(dropped.length){
  const byHost={};for(const p of dropped){const h=(()=>{try{return new URL(p.presentation.image).hostname}catch{return '?'}})();byHost[h]=(byHost[h]||0)+1;}
  console.log(`photo unavailable, product not published: ${dropped.length}`);
  for(const [host,n] of Object.entries(byHost).sort((a,b)=>b[1]-a[1]))
   console.log(`  ${String(n).padStart(4)}  ${host}  ${[...failures].find(([u])=>u.includes(host))?.[1]||''}`);
 }
-console.log(`photos cached: ${Object.keys(cache.images).length} · published: ${catalog.products.length}`);
+console.log(`photos cached: ${Object.keys(cache.images).length} · published: ${republished.snapshot.products.length}`);

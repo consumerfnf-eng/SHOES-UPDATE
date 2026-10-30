@@ -56,7 +56,7 @@ import re
 from collections import defaultdict
 
 from common import read_json
-from footwear_scope import EXCLUDE_EN, EXCLUDE_KO, SNEAKER_EN, SNEAKER_KO
+from footwear_scope import EXCLUDE_EN, EXCLUDE_KO, SNEAKER_EN, SNEAKER_KO, names_other_shape
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 _WORDS = None
@@ -158,7 +158,8 @@ def names_a_silhouette(token):
     that names the silhouette is the shoe's identity, never its colour.
     """
     return bool(SNEAKER_KO.search(token) or EXCLUDE_KO.search(token)
-                or SNEAKER_EN.search(token) or EXCLUDE_EN.search(token))
+                or SNEAKER_EN.search(token) or EXCLUDE_EN.search(token)
+                or names_other_shape(token))
 
 
 def is_colour_token(token):

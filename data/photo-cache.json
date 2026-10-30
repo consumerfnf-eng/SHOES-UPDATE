@@ -5304,6 +5304,36 @@
       "sha256": "59a23f85689d9623366cd9ef1beb619f11e5dc56e97bc8f71f0805093ac66085",
       "sourceUrl": "https://assets.christiandior.com/is/image/diorprod/3SN376ZDFH009_SBG_E02-5",
       "checkedAt": "2026-10-30T01:48:49.000Z"
+    },
+    "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214108_2Y2_ALT100/crocs": {
+      "path": "/images/4757607ebaee3d5f770d79fc2724b760019ebe84dc45643f3c3bf90753e69176.webp",
+      "sha256": "4757607ebaee3d5f770d79fc2724b760019ebe84dc45643f3c3bf90753e69176",
+      "sourceUrl": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214108_2Y2_ALT100/crocs",
+      "checkedAt": "2026-10-30T04:25:02.367Z"
+    },
+    "https://www.shopmelissa.com/cdn/shop/files/ef0c78f3-f958-427c-8fca-dbb7d1003569_1260x.jpg?v=1749672327": {
+      "path": "/images/17de0fe47f7fce57500d783483823c5a63fcc5af3a4ecf2d77b36b651d258d86.webp",
+      "sha256": "17de0fe47f7fce57500d783483823c5a63fcc5af3a4ecf2d77b36b651d258d86",
+      "sourceUrl": "https://www.shopmelissa.com/cdn/shop/files/ef0c78f3-f958-427c-8fca-dbb7d1003569_1260x.jpg?v=1749672327",
+      "checkedAt": "2026-10-30T04:25:03.271Z"
+    },
+    "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212854_2MC_ALT100/crocs": {
+      "path": "/images/0846ecca026ebb5ae4f06a174e2ffdac35ee25805febf7c8fe9a1b8548540412.webp",
+      "sha256": "0846ecca026ebb5ae4f06a174e2ffdac35ee25805febf7c8fe9a1b8548540412",
+      "sourceUrl": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/212854_2MC_ALT100/crocs",
+      "checkedAt": "2026-10-30T04:25:03.362Z"
+    },
+    "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214360_1NK_ALT100/crocs": {
+      "path": "/images/72529161f0fc30261deec7cd515e31630da57e11ea74ac6d5614986bec5938bb.webp",
+      "sha256": "72529161f0fc30261deec7cd515e31630da57e11ea74ac6d5614986bec5938bb",
+      "sourceUrl": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214360_1NK_ALT100/crocs",
+      "checkedAt": "2026-10-30T04:25:03.927Z"
+    }
+  },
+  "unavailable": {
+    "https://www.havaianas.com/cdn/shop/files/4000030-slim-0090-0.png?v=1732553673&width=300": {
+      "error": "HTTP 403",
+      "checkedAt": "2026-10-30T04:30:40.705Z"
     }
   }
 }

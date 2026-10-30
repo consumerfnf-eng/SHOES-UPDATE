@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T01:46:14.371Z",
+  "checkedAt": "2026-10-30T04:30:40.717Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -240,7 +240,7 @@
       "id": "daily-20260916-melissa-free-line-platform-brown-bn316",
       "brand": "Melissa",
       "name": "Free Line Platform — Brown",
-      "reason": "footwear-type-unverified"
+      "reason": "product-verification-required"
     },
     {
       "id": "daily-20260915-nike-first-sight-shadow-hq2410-600",
@@ -276,13 +276,13 @@
       "id": "daily-20260915-melissa-susan-fang-sakura-white-bu740",
       "brand": "Melissa",
       "name": "Possession Platform Sakura",
-      "reason": "footwear-type-unverified"
+      "reason": "product-verification-required"
     },
     {
       "id": "daily-20260915-melissa-susan-fang-sakura-pink-bu711",
       "brand": "Melissa",
       "name": "Possession Platform Sakura",
-      "reason": "footwear-type-unverified"
+      "reason": "product-verification-required"
     },
     {
       "id": "daily-20260915-melissa-possession-pink-bo066",
@@ -378,7 +378,7 @@
       "id": "ecom-musinsa-jordan-willow-6686327",
       "brand": "Nike",
       "name": "Jordan Willow W",
-      "reason": "footwear-type-unverified"
+      "reason": "product-verification-required"
     },
     {
       "id": "zip3-cdc2b3aab37a3abb",
@@ -1632,19 +1632,19 @@
       "id": "zip-melissa-possession-platform-green",
       "brand": "Melissa",
       "name": "Possession Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "zip-melissa-possession-platform-black",
       "brand": "Melissa",
       "name": "Possession Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "zip-melissa-possession-platform-hot-pink",
       "brand": "Melissa",
       "name": "Possession Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "zip-adidas-whisper-glide-grey-kh6932",
@@ -13290,7 +13290,7 @@
       "id": "live-1c310de922c17f3c",
       "brand": "Converse",
       "name": "Custom Chuck Taylor All Star Lift Platform Leather By You",
-      "reason": "footwear-type-unverified"
+      "reason": "product-verification-required"
     },
     {
       "id": "live-87ebf381acdb92d5",
@@ -13320,7 +13320,7 @@
       "id": "live-a8140af78fb89f66",
       "brand": "Melissa",
       "name": "9 View size 9 for Dune Platform in color Black",
-      "reason": "footwear-type-unverified"
+      "reason": "product-verification-required"
     },
     {
       "id": "live-e91d79b5304bfc5e",
@@ -14224,7 +14224,7 @@
       "id": "live-703b220963376d05",
       "brand": "Converse",
       "name": "Custom Chuck Taylor All Star Lift Platform Leather By You",
-      "reason": "footwear-type-unverified"
+      "reason": "product-verification-required"
     },
     {
       "id": "live-a3f0f247ee5251ce",
@@ -16171,12 +16171,6 @@
       "reason": "hybrid-review-required"
     },
     {
-      "id": "arrival-0dce895ded2a95ffe941",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-b71bc70ba4d493df4607",
       "brand": "Havaianas",
       "name": "Havaianas Zellerfeld Top Toe Mule",
@@ -16184,9 +16178,7 @@
     },
     {
       "id": "arrival-32903ed080396542cb0c",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-c80e8b7768d5b63f4a78",
@@ -16196,51 +16188,23 @@
     },
     {
       "id": "arrival-2589084ba8d9b603abb5",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-b166b625dacc7e58317d",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-38e342d1d0a15f0a04e0",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-006521b4ce8bd7faac80",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-6865054883bd9156e8f9",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-119d34cbfe696c1cfd41",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-8b9c8d9dd5da38726ada",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-d7331f4cdd173d02c3a1",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "official-nike-487471-300",
@@ -16787,28 +16751,12 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-b6975c113502467ae3c0",
-      "brand": "Melissa",
-      "name": "Possession Platform II",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-2e2d45e274040cb5ef21",
-      "brand": "Melissa",
-      "name": "Wave Platform",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-b9615accc0caad6f0912",
-      "brand": "Melissa",
-      "name": "Wave Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-32005e67ffc5a78f6dfe",
-      "brand": "Melissa",
-      "name": "Wave Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "official-nike-iq5700-900",
@@ -17413,18 +17361,6 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-77407d2dbd8bee37b681",
-      "brand": "Crocs",
-      "name": "클래식 플랫폼 플리스 라인드 젬 클로그",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-d42c2c5544ca9cc00753",
-      "brand": "Crocs",
-      "name": "언퍼게터블 플랫폼 클로그",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-1cdda21a5f8cff060f26",
       "brand": "Crocs",
       "name": "클래식 언퍼게터블 스웨이드 클로그",
@@ -17476,12 +17412,6 @@
       "id": "arrival-677940fdbd8da74c295a",
       "brand": "OOFOS",
       "name": "Men's Lace-Up Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-f8ebb3b8e5ae39842b52",
-      "brand": "Crocs",
-      "name": "클래식 플랫폼 퍼즈 라인드 클로그",
       "reason": "footwear-type-unverified"
     },
     {
@@ -18144,15 +18074,11 @@
     },
     {
       "id": "arrival-11c088522a16f8ae2a16",
-      "brand": "Melissa",
-      "name": "Wave Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-5153b086e1da44819cf6",
-      "brand": "Melissa",
-      "name": "Wave Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-ec1ab02b5dd83eeb0228",
@@ -18162,9 +18088,7 @@
     },
     {
       "id": "arrival-c39318219262a1cb6304",
-      "brand": "Melissa",
-      "name": "Wave Platform",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-b041d0ee6db49031edd1",
@@ -18507,6 +18431,234 @@
       "brand": "Louis Vuitton",
       "name": "LV Drop 300 Sneaker - Orange",
       "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-64aa1fedb48a16061840",
+      "brand": "Havaianas",
+      "name": "Baby Disney's Classics Flip Flop Sandals",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-9a3871a69c9cdbc66e92",
+      "brand": "Havaianas",
+      "name": "Baby Peppa Pig Flip Flop Sandals",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-f5537639647101eea7eb",
+      "brand": "Havaianas",
+      "name": "Kids' Fluffy Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-99f3eeaa41f0072fdfaf",
+      "brand": "Havaianas",
+      "name": "Kids' Slim Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-ce48f5dedc5e9067a72d",
+      "brand": "Havaianas",
+      "name": "Kids' Slim Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-2ca410cb75545871db58",
+      "brand": "Havaianas",
+      "name": "Men's Surfer Coast Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-76846170820daa2804c5",
+      "brand": "Havaianas",
+      "name": "Men's Surfer Coast Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-703ef95c2aa9ef92eacc",
+      "brand": "Havaianas",
+      "name": "Men's Surfer Coast Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-ae97055dd5d7f9154976",
+      "brand": "Havaianas",
+      "name": "Men's Track Plus Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-1aa5b5f35467db697a6f",
+      "brand": "Havaianas",
+      "name": "Men's Track Plus Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-6aed4814acbfc3d1311c",
+      "brand": "Havaianas",
+      "name": "Men's Track Plus Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-3a62e1c911054ec8ca04",
+      "brand": "Havaianas",
+      "name": "Men's Urban Print Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-6f35ed194da83d6848ad",
+      "brand": "Havaianas",
+      "name": "Men's Urban Print Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-b84a51a53a56d69ff9b5",
+      "brand": "Havaianas",
+      "name": "Women's Brazil Twist Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-a9b9a5e3b7a7e9dbf8dd",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Flor de Fita Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-e7abdcfbcc6d08a153ee",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Nina Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-dd538fb61dfa8e7be0b7",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Sweet Forest Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-342b1e3a8025f5e1574d",
+      "brand": "Havaianas",
+      "name": "Women's High Platform Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-f69a1031a571e1791e35",
+      "brand": "Havaianas",
+      "name": "Women's Maxi Puffed Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-2a4e8f28bc1e74b3da7a",
+      "brand": "Havaianas",
+      "name": "Women's Maxi Puffed Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-671c88ac803a645386c0",
+      "brand": "Havaianas",
+      "name": "Women's Maxi Puffed Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-5af1e88b724cc630a280",
+      "brand": "Havaianas",
+      "name": "Women's Over Puffed Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-dc1b34a095696f5f344e",
+      "brand": "Havaianas",
+      "name": "Women's Over Puffed Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-aaf805fbae621024f194",
+      "brand": "Havaianas",
+      "name": "Women's Over Puffed Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-6bb85ede7fb082ee18e2",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-ae7bb42faa62d26f4f13",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-3af7763e8391195dd8e0",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-0fb6138f976c9f3e4a59",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-00c488fe4b32723fd08f",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flatform Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-91790fb2457d81e1e156",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-29cc51250904ab5b6b5e",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-d8aac04615484f3361cf",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-bb800b6f69ce992f6073",
+      "brand": "Havaianas",
+      "name": "Women's Slim Palette Glow Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-a34aeb6d41a32449cc1b",
+      "brand": "Havaianas",
+      "name": "Women's Summer Bliss Slim Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-ddf35e73894b73e6b2dd",
+      "brand": "Havaianas",
+      "name": "Women's Summer Bliss Slim Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-35ae96329380f5c9b52a",
+      "brand": "Havaianas",
+      "name": "Women's Summer Bliss Slim Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-737fbd9492217af98539",
+      "brand": "Havaianas",
+      "name": "Women's Tradicional Flip Flops",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-8d86763bd49dbe8a23a4",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flip Flops",
+      "reason": "photo-unavailable"
     }
   ]
 }

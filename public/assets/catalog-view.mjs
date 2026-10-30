@@ -181,7 +181,8 @@ export function filterProducts(products, state, today = kstToday()) {
     // Inside a brand the newest comes first, so the ordering is "which house,
     // then what is new from it" rather than one flat date list.
     if(state.sort==='group'){
-      const byGroup=compareByBrandGroup({name:a.brand},{name:b.brand});
+      const named=name=>({name,group:state.brandGroups?.get(name)});
+      const byGroup=compareByBrandGroup(named(a.brand),named(b.brand));
       if(byGroup)return byGroup;
       const ra=isOverlay(a)?overlayWindowDay(a):releaseSortKey(a);
       const rb=isOverlay(b)?overlayWindowDay(b):releaseSortKey(b);

@@ -14,7 +14,7 @@ FIXTURE = {
                  'brandName': '리복', 'brand': 'reebok',
                  'goodsLinkUrl': 'https://www.musinsa.com/products/1', 'thumbnail': 'https://img/1.jpg',
                  'finalPrice': 179000, 'displayGenderText': '남성'},
-                {'goodsNo': 2, 'goodsName': '키높이 페니로퍼', 'brandName': '착한구두', 'brand': 'chaakan',
+                {'goodsNo': 2, 'goodsName': '키높이 정장 구두', 'brandName': '착한구두', 'brand': 'chaakan',
                  'goodsLinkUrl': 'https://www.musinsa.com/products/2', 'thumbnail': 'https://img/2.jpg',
                  'finalPrice': 59900, 'displayGenderText': '여성'},
             ],

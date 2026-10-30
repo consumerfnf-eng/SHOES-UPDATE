@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import {curateProduct,POLICY,validDay,httpUrl,shiftMonth,validateSignals,popularity,kstDay,officialEvidenceFor} from './curation.mjs';
+import {curateProduct,POLICY,validDay,httpUrl,shiftMonth,validateSignals,popularity,kstDay,officialEvidenceFor,inPublishedScope} from './curation.mjs';
 import {validateSocialMetrics,withSocialComparisons} from './social-metrics.mjs';
 import {releaseWindow,releaseState} from '../public/assets/release-window.mjs';
 import {hasArrivalEvidence,publicationWindow} from '../public/assets/publication-window.mjs';
@@ -23,7 +23,10 @@ export function validateSnapshot(catalog) {
   for(const p of catalog.products) {
     assert(typeof p.id==='string'&&p.id&&typeof p.name==='string'&&p.name.trim(),'Missing product identity');
     assert(catalog.brands.some(b=>b.name===p.brand),'Unknown product brand');
-    assert(['sneaker','clog','sandal','platform-sandal','hybrid','jelly','platform-shoe'].includes(p.category),'Invalid product category');
+    // The publishable set lives in curation.mjs. Listing it again here let the
+    // two drift: the scope gained slipper and loafer, the validator did not, and
+    // the build - which Pages runs - refused the catalogue it had just curated.
+    assert(inPublishedScope(p.category),'Invalid product category: '+p.category);
     // Brand fit no longer exists: it was a keyword guess that held back 1,600
     // verified products. Its reasons survive as optional planning notes.
     assert(p.fit===undefined,'Brand fit was removed and must not be republished');

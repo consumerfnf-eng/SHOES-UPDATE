@@ -134,6 +134,10 @@ async function loadCatalog() {
     const value = await response.json();
     if (value.schemaVersion !== 1 || !Array.isArray(value.products) || !Array.isArray(value.brands) || !Array.isArray(value.keywords)) throw new Error('Invalid snapshot');
     catalog = value;
+    // The grid's LUX-first ordering needs each brand's policy group, and the
+    // grid only ever sees a product's brand name. Carry the lookup on state so
+    // a luxury house nobody named in the LUX list still sorts with LUX.
+    state.brandGroups = new Map(value.brands.map(b => [b.name, b.group]));
     // The overlay is additive: if it fails to load the official catalog still
     // renders, which is the whole reason it is a separate file.
     try {

@@ -29,16 +29,41 @@ class InScopeTests(unittest.TestCase):
         self.assertEqual(classify('Jelly Kitten Heel')[2], 'excluded-silhouette')
 
 
+class OtherShapesInScopeTests(unittest.TestCase):
+    """Loafers, clogs, slides, thongs, slippers and platform sandals were
+    asked for by name, so each is a category of its own rather than something
+    that has to call itself a sneaker first."""
+
+    def test_a_loafer_is_a_loafer(self):
+        for title in ['Brown Sandrine Loafers', '키높이 페니로퍼', '모카신']:
+            self.assertEqual(classify(title)[0], 'loafer', title)
+
+    def test_a_platform_loafer_keeps_both_readings(self):
+        kind, types, _ = classify('Leather platform loafers')
+        self.assertEqual(kind, 'loafer')
+        self.assertEqual(sorted(types), ['loafer', 'platform'])
+
+    def test_slides_thongs_and_slippers_are_in_scope(self):
+        self.assertEqual(classify('Tan Dasha 2.0 Flip-Flops')[0], 'slipper')
+        self.assertEqual(classify('Pool Slides')[0], 'slipper')
+        self.assertEqual(classify('통굽 쪼리')[0], 'platform-slipper')
+
+    def test_a_platform_sandal_is_in_scope_and_a_strappy_one_is_not(self):
+        self.assertEqual(classify('Platform Sandals')[0], 'platform-sandal')
+        self.assertEqual(classify('통굽 샌들')[0], 'platform-sandal')
+        self.assertEqual(classify('Strappy Sandals')[2], 'sandal-or-clog')
+
+
 class OutOfScopeTests(unittest.TestCase):
     def test_dress_footwear_is_excluded(self):
-        for title in ['Brown Sandrine Loafers', 'Silver Gilda Glass 95 Heels',
-                      'Leather platform loafers', '플랫폼 로퍼', '키높이 페니로퍼',
-                      'Chelsea Boots', '앵클 부츠']:
+        for title in ['Silver Gilda Glass 95 Heels', 'Leather Derby',
+                      'Chelsea Boots', '앵클 부츠', '정장 구두']:
             self.assertEqual(classify(title)[0], '', title)
 
-    def test_sandals_and_slides_are_out_of_scope(self):
-        self.assertEqual(classify('Tan Dasha 2.0 Flip-Flops')[0], '')
-        self.assertEqual(classify('Pool Slides')[0], '')
+    def test_a_heeled_loafer_is_refused_by_its_heel(self):
+        # The loafer gate opened; the heel gate did not.
+        self.assertEqual(classify('Heeled Loafers')[2], 'excluded-silhouette')
+        self.assertEqual(classify('로퍼 힐')[2], 'excluded-silhouette')
 
     def test_kids_sizing_is_excluded(self):
         self.assertEqual(classify('Air Jordan 1 (GS) Sneakers')[2], 'kids')
@@ -53,17 +78,18 @@ class RetailerCategoryTests(unittest.TestCase):
         self.assertEqual(classify('클럽 C 85 빈티지', '스니커즈')[0], 'sneaker')
 
     def test_a_misfiled_dress_shoe_is_still_dropped(self):
-        # Musinsa really does carry this one under 신발 > 스니커즈.
-        self.assertEqual(classify('키높이 페니로퍼', '스니커즈')[2], 'excluded-silhouette')
-        self.assertEqual(classify('Leather Loafers', 'sneakers')[2], 'excluded-silhouette')
+        # Musinsa really does carry dress shoes under 신발 > 스니커즈.
+        self.assertEqual(classify('키높이 정장 구두', '스니커즈')[2], 'excluded-silhouette')
+        self.assertEqual(classify('Leather Derby', 'sneakers')[2], 'excluded-silhouette')
 
     def test_a_sneaker_on_an_excluded_shelf_is_kept(self):
         kind, types, _ = classify('바이커 뮬 스니커즈', '여성 신발 · 뮬/슬리퍼')
         self.assertEqual(kind, 'hybrid')
         self.assertIn('mule-sneaker', types)
 
-    def test_a_plain_slipper_on_that_shelf_is_dropped(self):
-        self.assertEqual(classify('퍼 뮬 슬리퍼', '여성 신발 · 뮬/슬리퍼')[0], '')
+    def test_a_plain_slipper_on_that_shelf_is_kept_as_a_slipper(self):
+        # Slippers are in scope now, so the shelf and the title agree.
+        self.assertEqual(classify('퍼 뮬 슬리퍼', '여성 신발 · 뮬/슬리퍼')[0], 'slipper')
 
 
 class KoreanTitleSplitTests(unittest.TestCase):
