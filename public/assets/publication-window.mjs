@@ -12,9 +12,16 @@ export function publicationState(product,today) {
   return today>=window.end?'expired':'released';
 }
 // This is assortment evidence, never a claimed launch date.
+//
+// `catalogue-listing` is the weakest of the three and says the least: the
+// product is on the brand's own shelf on the day we read it. For a brand with
+// no New section and nothing on its site but what it currently sells, that is
+// the whole of what can be known, and it is what the card says - 목록 확인,
+// never a release date.
+export const ARRIVAL_KINDS=['new-arrivals-listing','new-badge','catalogue-listing'];
 export function hasArrivalEvidence(product,today) {
   const e=product?.arrivalEvidence;
-  if(!e||e.verified!==true||!['new-arrivals-listing','new-badge'].includes(e.kind)||e.brand!==product.brand||e.style!==product.style||e.productUrl!==product.url||!e.excerpt||!e.contentHash)return false;
+  if(!e||e.verified!==true||!ARRIVAL_KINDS.includes(e.kind)||e.brand!==product.brand||e.style!==product.style||e.productUrl!==product.url||!e.excerpt||!e.contentHash)return false;
   try{if(new URL(e.url).protocol!=='https:')return false;}catch{return false;}
   if(!Number.isFinite(Date.parse(e.verifiedAt)))return false;
   const day=new Date(Date.parse(e.verifiedAt)+9*3600000).toISOString().slice(0,10);

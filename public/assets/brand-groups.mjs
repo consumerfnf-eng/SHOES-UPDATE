@@ -1,17 +1,18 @@
 // Display categories only. Archive destinations continue to use the existing
 // sheet routing rules, independently of this two-group browsing layout.
 export const BRAND_GROUPS = [
-  // The LUX list is the 32 houses named for the group, in the order they
-  // were named. Everything in it sits above every SPORTS brand on the page.
+  // The LUX list is the houses named for the group, in the order they were
+  // named. Everything in it sits above every SPORTS brand on the page.
   {name:'LUX', priority:[
     'Louis Vuitton','Dior','Balenciaga','Prada','Gucci','Celine','Saint Laurent','Hermès',
     'Chanel','Miu Miu','Alexander McQueen','Fendi','Valentino Garavani','Givenchy',
     'Maison Margiela','Bottega Veneta','Loewe','Lanvin','Rick Owens','Jil Sander',
     'Off-White','AMIRI','Loro Piana','Brunello Cucinelli','Zegna','Moncler','The Row',
-    'Golden Goose','Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry'
+    'Golden Goose','Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry','PANE',
+    'ALOHAS'
   ]},
   {name:'SPORTS', priority:['Rockfish Weatherwear','On','Cecilie Bahnsen','ASICS','FILA',
-    'Mizuno','New Balance','Salomon','adidas','Nike','PUMA','PANE','Onitsuka Tiger']}
+    'Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Onitsuka Tiger']}
 ];
 const key = name => String(name).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
 // Valentino's shoe line is registered under its own name; both spellings

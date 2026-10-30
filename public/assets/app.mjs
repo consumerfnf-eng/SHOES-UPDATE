@@ -118,6 +118,26 @@ function rebuildProducts() {
   brandCounts = new Map();
   groupProductVariants(products).forEach(group => [...new Set(group.flatMap(p=>productBrandNames(p,today)))].forEach(brand=>brandCounts.set(brand,(brandCounts.get(brand)||0)+1)));
 }
+// Additive snapshots, fetched after the first paint. A failure here leaves the
+// official catalogue exactly as it rendered.
+async function loadSupplements() {
+  let changed = false;
+  try {
+    const extra = await fetch('./data/monthly-catalog.json', {cache:'no-cache'});
+    if (extra.ok) {
+      const snapshot = await extra.json();
+      if (snapshot.schemaVersion === 2 && Array.isArray(snapshot.retail)) { overlay = snapshot; changed = true; }
+    }
+  } catch { overlay = null; }
+  try {
+    const ranking = await fetch('./data/trend-keywords.json', {cache:'no-cache'});
+    if (ranking.ok) {
+      const snapshot = await ranking.json();
+      if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.keywords)) { trends = snapshot; changed = true; }
+    }
+  } catch { trends = null; }
+  return changed;
+}
 async function loadCatalog() {
   $('product-grid').setAttribute('aria-busy','true'); $('product-grid').innerHTML = Array.from({length:8}, () => '<div class="skeleton" aria-hidden="true"></div>').join('');
   $('empty-state').hidden = true;
@@ -138,22 +158,6 @@ async function loadCatalog() {
     // grid only ever sees a product's brand name. Carry the lookup on state so
     // a luxury house nobody named in the LUX list still sorts with LUX.
     state.brandGroups = new Map(value.brands.map(b => [b.name, b.group]));
-    // The overlay is additive: if it fails to load the official catalog still
-    // renders, which is the whole reason it is a separate file.
-    try {
-      const extra = await fetch('./data/monthly-catalog.json', {cache:'no-cache'});
-      if (extra.ok) {
-        const snapshot = await extra.json();
-        if (snapshot.schemaVersion === 2 && Array.isArray(snapshot.retail)) overlay = snapshot;
-      }
-    } catch { overlay = null; }
-    try {
-      const ranking = await fetch('./data/trend-keywords.json', {cache:'no-cache'});
-      if (ranking.ok) {
-        const snapshot = await ranking.json();
-        if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.keywords)) trends = snapshot;
-      }
-    } catch { trends = null; }
     // This view is the sneaker reference set. Other footwear records remain in
     // the internal snapshot/archive but never enter the public product grid.
     rebuildProducts();
@@ -168,6 +172,12 @@ async function loadCatalog() {
     else if (unavailable.length) notice.push(`최근 전체 수집에서 ${unavailable.length}개 브랜드의 신상품 목록을 읽지 못했습니다. 검색 인증·수집 경로·사이트 응답 문제를 포함하며, 기존에 확인한 공식 상품은 표시합니다.`);
     $('catalog-notice').textContent = notice.join(' '); $('catalog-notice').className = 'notice'; $('catalog-notice').hidden = !notice.length;
     renderBrands(); renderKeywords(); render();
+    // The retail overlay and the trend board are 4 MB between them, more than
+    // the catalogue itself, and both add to this view rather than define it.
+    // Waiting for them before the first paint spent four seconds showing a
+    // skeleton for content most readers never scroll to, so they now arrive
+    // after it and the view is rebuilt when they do.
+    void loadSupplements().then(changed => { if(!changed) return; rebuildProducts(); renderBrands(); renderKeywords(); render(); });
   } catch (error) {
     $('product-grid').innerHTML = ''; $('result-count').textContent = '—'; $('empty-state').hidden = false;
     $('empty-title').textContent = '게시된 정보를 불러오지 못했습니다';
@@ -636,7 +646,7 @@ function openDetail(id) {
   }
   const url=reviewedProductPageUrl(p,today), evidence=safeUrl(p.dateEvidence?.url);
   const signals=(p.sourceSignals||[]).filter(s=>safeUrl(s.url));
-  const data=[...(p.arrivalEvidence?[['신상품 근거',`<a href="${esc(safeUrl(p.arrivalEvidence.url))}" target="_blank" rel="noopener noreferrer">공식 New·New Arrivals ↗</a> · ${esc(dateText(p.arrivalEvidence.verifiedAt,true))} 확인`]]:[]),...(p.firstPublishedAt?[['사이트 최초 게시',esc(dateText(p.firstPublishedAt,true))]]:[]),['출시일',`${esc(p.releaseDate?dateText(p.releaseDate):'미공개')}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">출시일 근거 ↗</a>`:''}`],['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'미확인')],[p.styleType==='official-product-id'?'상품 ID':'스타일 코드',esc(p.style||'미확인')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'미확인')],['소재',esc(p.material||'미확인')],['가격',esc(p.priceLabel||'공식 상품에서 확인')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
+  const data=[...(p.arrivalEvidence?[[p.arrivalEvidence.kind==='catalogue-listing'?'목록 근거':'신상품 근거',`<a href="${esc(safeUrl(p.arrivalEvidence.url))}" target="_blank" rel="noopener noreferrer">${p.arrivalEvidence.kind==='catalogue-listing'?'공식 상품 목록 ↗':'공식 New·New Arrivals ↗'}</a> · ${esc(dateText(p.arrivalEvidence.verifiedAt,true))} 확인`]]:[]),...(p.firstPublishedAt?[['사이트 최초 게시',esc(dateText(p.firstPublishedAt,true))]]:[]),['출시일',`${esc(p.releaseDate?dateText(p.releaseDate):'미공개')}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">출시일 근거 ↗</a>`:''}`],['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'미확인')],[p.styleType==='official-product-id'?'상품 ID':'스타일 코드',esc(p.style||'미확인')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'미확인')],['소재',esc(p.material||'미확인')],['가격',esc(p.priceLabel||'공식 상품에서 확인')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
   $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2>${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button><button id="detail-save" class="secondary-button" aria-pressed="${isSaved(p)}">${isSaved(p)?'★ 저장됨':'☆ 저장'}</button></div><div class="memo-box"><label for="detail-memo">메모</label><textarea id="detail-memo" rows="2" placeholder="${isSaved(p)?'이 상품에 대한 메모를 남겨 두세요':'저장하면 메모를 남길 수 있습니다'}" ${isSaved(p)?'':'disabled'}>${esc(saved[id]?.memo||'')}</textarea></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 검증 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):'<p class="muted">확인 가능한 공식 상품·출시·이미지 근거가 아직 없습니다.</p>'}`;
   bindImageErrors($('detail-content'));$('detail-select').addEventListener('click',()=>toggleSelection(id,!selected.has(id)));
   $('detail-content').querySelectorAll('[data-variant]').forEach(button=>button.addEventListener('click',()=>{openDetail(button.dataset.variant);render();}));

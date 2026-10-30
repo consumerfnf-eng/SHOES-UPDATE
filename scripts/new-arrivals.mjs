@@ -75,6 +75,10 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence,ba
     let name=link.label.match(/\*\*([^*]+)\*\*/)?.[1]||labelText.split(/(?:\$|€|£|₩)\s*[\d,.]/)[0]||imageUrls(link.label)[0]?.alt;
     name=clean(name).replace(/\s+E\d{2}$/,'');
     if(!/[\p{L}\p{N}]/u.test(name))name=clean(imageUrls(link.label)[0]?.alt||'');
+    // Melissa's cards read "+2 colors View Hip Sneaker in other colors": the
+    // colour counter and the swatch link's own wording, with the shoe's name
+    // in the middle of them.
+    name=name.replace(/^\+\d+\s*colou?rs?\s*/i,'').replace(/^view\s+/i,'').replace(/\s+in other colou?rs?\b.*$/i,'');
     name=name.replace(/^\d+ Colors?,\s*/i,'').replace(/^(?:Shop the look|Main product image of)\s*/i,'').replace(/,\s*Price,?\s*$/i,'').replace(/\s+\d[\d,.]*\s+USD\s+.*$/i,'').replace(/(?:\s+-)+\s*$/,'');
     // A listing card puts its colour swatches around the name: Balenciaga
     // reads as "0 1 2 triple s.2 denim sneaker 2 colors", where "0 1 2" are
@@ -119,7 +123,7 @@ export function listingProduct(candidate,checkedAt){
   if(candidate.brand==='New Balance')sku=[...new URL(candidate.url).searchParams].find(([k])=>/_style$/.test(k))?.[1]||'';
   const style=sku||last,method='official-new-listing-sku-image';
   const p={id:`arrival-${digest(candidate.brand+'|'+canonicalUrl(candidate.url)).slice(0,20)}`,brand:candidate.brand,name:candidate.name,style,...(!sku?{styleType:'official-product-id'}:{}),url:candidate.url,image:chosen.url,
-    description:candidate.cardDescription,colorway:colorLabel(chosen.alt,candidate.brand),colors:[],priceLabel:candidate.cardDescription?.match(/(?:\$|€|£|₩)\s?[\d,.]+/)?.[0]||'',
+    description:candidate.cardDescription,colorway:colorLabel(chosen.alt,candidate.brand),colors:[],priceLabel:candidate.cardDescription?.match(/(?:[$€£₩¥]\s?[0-9,.]+|[0-9][0-9,.]*\s?(?:원|円|USD|EUR|GBP|KRW|JPY))/)?.[0]||'',
     country:region(candidate.url),firstSeen:checkedAt,productVerifiedAt:checkedAt,productEvidenceUrl:candidate.arrivalEvidence.url,
     arrivalEvidence:{...candidate.arrivalEvidence,style},sourceSignals:[],imageCandidates:candidate.linkedImages};
   const base={verified:true,brand:p.brand,style,verifiedAt:checkedAt,verificationMethod:method,contentHash:p.arrivalEvidence.contentHash,...(!sku?{identifierType:'official-product-id'}:{})};
@@ -192,7 +196,7 @@ function pageProduct(candidate,text,checkedAt,existing){
   const description=detail.split('\n').filter(l=>!l.includes('https://')&&l.trim().length>30).join(' ').slice(0,6000);
   const p={id:existing?.id||`arrival-${digest(candidate.brand+'|'+canonicalUrl(url)).slice(0,20)}`,brand:candidate.brand,name:clean(heading),url,image:chosen.url,style,...(styleType?{styleType}:{}),description,
     colorway:body.match(/(?:^|\n)\s*[-*]?\s*#{0,3}\s*(?:Colors?|Colours?|색상)\s*:?\s*([^\n]{2,90})/i)?.[1]?.trim()||colorLabel(chosen.alt,candidate.brand),colors:[],
-    priceLabel:body.match(/(?:\$|€|£|₩)\s?[\d,.]+/)?.[0]||'',country:region(url),gender:/\/women|\/womens|shop-women/i.test(url)?'Women':/\/men|\/mens|shop-men/i.test(url)?'Men':'',
+    priceLabel:body.match(/(?:[$€£₩¥]\s?[0-9,.]+|[0-9][0-9,.]*\s?(?:원|円|USD|EUR|GBP|KRW|JPY))/)?.[0]||'',country:region(url),gender:/\/women|\/womens|shop-women/i.test(url)?'Women':/\/men|\/mens|shop-men/i.test(url)?'Men':'',
     firstSeen:checkedAt,productVerifiedAt:checkedAt,productEvidenceUrl:url,arrivalEvidence:{...candidate.arrivalEvidence,style},sourceSignals:[]};
   if(/\bsneakers?\b/i.test(chosen.alt))p.officialCategory='Sneakers';
   if(candidate.brand==='Loewe'){

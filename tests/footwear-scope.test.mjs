@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {classifyFootwear,officialHybridReview,dedupeKey,productStyle,inPublishedScope} from '../scripts/curation.mjs';
+import {classifyFootwear,officialHybridReview,dedupeKey,productStyle,inPublishedScope,labelVariantColours} from '../scripts/curation.mjs';
 import {collectOfficialEvidence} from '../scripts/collect-evidence.mjs';
 import {footwearTypes,isPublishedFootwear} from '../public/assets/footwear-policy.mjs';
 import {categoryMatches} from '../public/assets/catalog-view.mjs';
@@ -121,4 +121,50 @@ test('one shoe listed once per size is one card, not six',()=>{
   // A colour code is not a size: Nike's style survives whole, because the
   // product's own URL never names it without the last segment.
   assert.equal(productStyle({style:'CW2288-111',url:'https://www.nike.com/t/air-force-1-07-CW2288-111/CW2288-111'}),'CW2288-111');
+});
+
+test("a kids' shoe is not in the catalogue, and a colour called baby still is",()=>{
+  // The retail classifier always refused them; the official one never looked,
+  // so 31 reached cards - and Nike's GS models arrived as a second card beside
+  // the adult shoe of the same name.
+  for(const name of ["Big Kids' Jasper III Sneaker",'Air Jordan 1 High OG "Royal" (GS)',
+                     "Baby Peppa Pig Flip Flop Sandals",'키즈 스니커즈','Toddler Court Sneaker'])
+    assert.equal(classifyFootwear({...base,name}).reason,'kids-sizing',name);
+  assert.deepEqual(classifyFootwear({...base,name:'Air Force 1 Baby Blue Sneaker'}),{category:'sneaker'});
+});
+
+test('basketball and golf shoes are sneakers; studs and spikes are not',()=>{
+  for(const name of ['Kobe 10 Protro Basketball Shoes','Angel Reese 1 Basketball Shoes',
+                     'Club C Revenge Golf Shoes','농구화 에어줌'])
+    assert.deepEqual(classifyFootwear({...base,name}),{category:'sneaker'},name);
+  for(const name of ['Mercurial Soccer Cleats','Track Spikes','야구화 스파이크'])
+    assert.equal(classifyFootwear({...base,name}).reason,'excluded-footwear',name);
+});
+
+test("a colour with no name is read off the brand's own URLs, and an article number is not a colour",()=>{
+  const keen=url=>({brand:'KEEN',name:"Jasper III Sneaker",url,colorway:''});
+  const group=[keen('https://www.keenfootwear.com/products/jasper-iii-bungee-brindle-evening-primrose'),
+               keen('https://www.keenfootwear.com/products/jasper-iii-bungee-cameo-rose-birch'),
+               keen('https://www.keenfootwear.com/products/jasper-iii-bungee-birch-black')];
+  labelVariantColours(group);
+  assert.deepEqual(group.map(p=>p.colorway),['Brindle Evening Primrose','Cameo Rose Birch','Birch Black']);
+  assert.equal(group[0].colorwaySource,'official-url-variant');
+  // Axel Arigato's slugs end in an article number: it tells the shoes apart
+  // and names nothing, so the cards stay unlabelled rather than lie.
+  const axel=url=>({brand:'Axel Arigato',name:'Flair Runner',url,colorway:''});
+  const sku=[axel('https://www.axelarigato.com/p/flair-runner-f4500001'),
+             axel('https://www.axelarigato.com/p/flair-runner-f4500006')];
+  labelVariantColours(sku);
+  assert.deepEqual(sku.map(p=>p.colorway),['','']);
+  // A colour that is already recorded is never overwritten.
+  const known=[{brand:'KEEN',name:'UNEEK',url:'https://www.keenfootwear.com/products/uneek-black',colorway:'Black'}];
+  labelVariantColours(known);assert.equal(known[0].colorway,'Black');
+});
+
+test('one shelf or another is the same product',()=>{
+  // 23.65 reaches a product from its NEW shelf and its SNEAKERS shelf with the
+  // shelf number in the query, which used to make two products of one.
+  const base23='https://www.23-65.com/product/detail.html?product_no=1813';
+  assert.equal(dedupeKey({brand:'23.65',style:'',colorway:'',url:`${base23}&cate_no=376&display_group=1`}),
+               dedupeKey({brand:'23.65',style:'',colorway:'',url:`${base23}&cate_no=381&display_group=1`}));
 });

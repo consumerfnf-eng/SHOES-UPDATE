@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
-import {curateCatalog,canonicalBrand,canonicalUrl,isOfficialProductUrl} from './curation.mjs';
+import {curateCatalog,canonicalBrand,canonicalUrl,isOfficialProductUrl,labelVariantColours} from './curation.mjs';
 import {mergePreserving} from './collect-evidence.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {productPresentation} from './product-presentation.mjs';
@@ -106,12 +106,27 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   // Expired records still enter the archive independently of this display filter.
   result.snapshot.products=result.snapshot.products.filter(p=>isPublishedFootwear(p)&&p.releaseStatus==='released');
   if(maintenance&&Array.isArray(prior.products)){const priorIds=new Set(prior.products.map(p=>p.id));result.snapshot.products=result.snapshot.products.filter(p=>priorIds.has(p.id));}
+  // Where several colours of one shoe are published with no colour recorded,
+  // the cards are identical. The brand's own URLs already tell them apart.
+  labelVariantColours(result.snapshot.products);
   const photoReviews=await readJson(path.join(directory,'data/product-presentation.json'),null);
   if(photoReviews){
     result.snapshot.products=result.snapshot.products.flatMap(p=>{
       const presented=productPresentation(p,photoReviews);
       if(presented)return [presented];
       result.review.held.push({id:p.id,brand:p.brand,name:p.name,reason:'representative-photo-review-required'});return [];
+    });
+  }
+  // A photograph shared by a shelf-full of products is a photograph of none of
+  // them. Havaianas' 38 records all pointed at one image URL: whatever that
+  // picture shows, it is not evidence of 38 different shoes.
+  const photoUse=new Map();
+  for(const p of result.snapshot.products)if(p.presentation?.image)photoUse.set(p.presentation.image,(photoUse.get(p.presentation.image)||0)+1);
+  const shared=new Set([...photoUse].filter(([,n])=>n>=4).map(([image])=>image));
+  if(shared.size){
+    result.snapshot.products=result.snapshot.products.filter(p=>{
+      if(!p.presentation||!shared.has(p.presentation.image))return true;
+      result.review.held.push({id:p.id,brand:p.brand,name:p.name,reason:'shared-representative-photo'});return false;
     });
   }
   const photoCache=await readJson(path.join(directory,'data/photo-cache.json'),{images:{}});

@@ -5,6 +5,8 @@ import os from 'node:os';
 import path from 'node:path';
 import {parseArrivalListing,isNewListing,listingProduct,listingFollowups,collectNewArrivals} from '../scripts/new-arrivals.mjs';
 import {releaseState} from '../public/assets/release-window.mjs';
+import {hasArrivalEvidence as hasArrival} from '../public/assets/publication-window.mjs';
+import {releaseDateLabel} from '../public/assets/catalog-view.mjs';
 import {publicationWindow} from '../public/assets/publication-window.mjs';
 import {curateProduct,officialHybridReview} from '../scripts/curation.mjs';
 import {publishCurated,atomicJson} from '../scripts/publish-curated.mjs';
@@ -158,4 +160,30 @@ NEW
 [![OOahh sport](https://www.oofos.com/cdn/ooahh.jpg)**OOahh Sport Flex Sneaker**](${pdp})`;
  const [row]=parseArrivalListing(text,{brand:'OOFOS',url:home,checkedAt:now.toISOString(),basis:'catalogue'});
  assert.equal(row.arrivalEvidence.kind,'new-badge');
+});
+
+test("a catalogue sighting publishes as a sighting, and the card says so",()=>{
+ // Brands with no New section and nothing on their site but what they sell now
+ // were asked to be uploaded in full. The listing is the evidence, and it is
+ // never called a release date: the card says 목록 확인.
+ const listing='https://en.rockfish-weatherwear.co.kr/NODE/product/list.html?cate_no=626';
+ const pdp='https://en.rockfish-weatherwear.co.kr/product/cloudy-sneaker-black/4201/category/542/display/1/';
+ const text=`# NEW
+[![Cloudy sneaker](https://en.rockfish-weatherwear.co.kr/web/product/cloudy.jpg)**Cloudy Sneaker**](${pdp})`;
+ const [row]=parseArrivalListing(text,{brand:'Rockfish Weatherwear',url:listing,checkedAt:now.toISOString(),basis:'catalogue'});
+ const product=listingProduct(row,now.toISOString());
+ assert.equal(product.arrivalEvidence.kind,'catalogue-listing');
+ assert.equal(hasArrival(product,today),true);
+ assert.match(releaseDateLabel(product),/목록 확인/);
+ assert.doesNotMatch(releaseDateLabel(product),/NEW/);
+});
+
+test("a listing card's own wording is not the shoe's name, and a price in won is a price",()=>{
+ const pdp='https://www.shopmelissa.com/products/hip-sneaker-38130-by100';
+ const text=`# Sneakers
+NEW
+[![Hip sneaker](https://www.shopmelissa.com/cdn/hip.jpg)+2 colors View Hip Sneaker in other colors 179,000원](${pdp})`;
+ const [row]=parseArrivalListing(text,{brand:'Melissa',url:'https://www.shopmelissa.com/collections/adult-sneakers',checkedAt:now.toISOString()});
+ assert.equal(row.name,'Hip Sneaker');
+ assert.equal(listingProduct(row,now.toISOString()).priceLabel,'179,000원');
 });

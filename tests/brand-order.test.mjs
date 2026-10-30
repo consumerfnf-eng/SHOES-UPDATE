@@ -32,12 +32,12 @@ test('the order is stable and total - sorting twice changes nothing', () => {
   assert.equal(compareByBrandGroup({name: 'Nike'}, {name: 'Nike'}), 0);
 });
 
-test('every house named for LUX reads as LUX', () => {
+test('every house named for LUX reads as LUX, including the two added later', () => {
   const named = ['Louis Vuitton','Dior','Balenciaga','Prada','Gucci','Celine','Saint Laurent',
     'Hermès','Chanel','Miu Miu','Alexander McQueen','Fendi','Valentino Garavani','Givenchy',
     'Maison Margiela','Bottega Veneta','Loewe','Lanvin','Rick Owens','Jil Sander','Off-White',
     'AMIRI','Loro Piana','Brunello Cucinelli','Zegna','Moncler','The Row','Golden Goose',
-    'Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry'];
+    'Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry','PANE','ALOHAS'];
   assert.deepEqual(BRAND_GROUPS[0].priority, named);
   for (const name of named) assert.equal(displayBrandGroup({name}), 'LUX', name);
 });

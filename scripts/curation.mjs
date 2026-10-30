@@ -16,7 +16,7 @@ export function brandPolicy(name) { return brandMap.get(key(canonicalBrand(name)
 export function kstDay(now = new Date()) { return new Date(new Date(now).getTime() + 9 * 3600000).toISOString().slice(0, 10); }
 export function httpUrl(x) { try { const u = new URL(x); return u.protocol === 'https:' && !u.username && !u.password; } catch { return false; } }
 export function canonicalUrl(x) {
-  try { const u = new URL(x); u.hash = ''; for(const name of [...u.searchParams.keys()])if(/^(?:utm_|gclid$|fbclid$|ref$|referrer$|campaign$|affiliate$|variant$)/i.test(name))u.searchParams.delete(name);u.searchParams.sort();u.hostname = u.hostname.replace(/^www\./, ''); u.pathname = u.pathname.replace(/\/collections\/[^/]+\/products\//, '/products/').replace(/\/$/, ''); return u.href; } catch { return ''; }
+  try { const u = new URL(x); u.hash = ''; for(const name of [...u.searchParams.keys()])if(/^(?:utm_|gclid$|fbclid$|ref$|referrer$|campaign$|affiliate$|variant$|cate_no$|display_group$|c$)/i.test(name))u.searchParams.delete(name);u.searchParams.sort();u.hostname = u.hostname.replace(/^www\./, ''); u.pathname = u.pathname.replace(/\/collections\/[^/]+\/products\//, '/products/').replace(/\/$/, ''); return u.href; } catch { return ''; }
 }
 /** The style a product is identified by, with a size variant removed.
  *
@@ -37,6 +37,49 @@ export function productStyle(p) {
   let path = '';
   try { path = new URL(p.url).pathname.toLowerCase(); } catch { return style; }
   return path.includes(trimmed.toLowerCase()) || path.includes(key(trimmed)) ? trimmed : style;
+}
+/** Colour names read off the brand's own product URLs.
+ *
+ *  Half the catalogue carries no colourway, and where several colours of one
+ *  shoe are published the cards are then identical: brand, name and nothing
+ *  else - 109 groups of them, 315 cards. They are not duplicates. The colour
+ *  is simply missing, and on a Shopify store it is sitting in the URL:
+ *  KEEN publishes jasper-iii-bungee-brindle-evening-primrose beside
+ *  jasper-iii-bungee-birch-black.
+ *
+ *  So for a group of products that share a brand and a name and have no
+ *  colour, the part of each URL's slug that differs across the group is that
+ *  product's variant label - by construction, since the store used it to tell
+ *  them apart. Only letters qualify: Axel Arigato's slugs end in an article
+ *  number (f4500001), which distinguishes the shoes but names nothing.
+ */
+export function labelVariantColours(products) {
+  const slugWords = p => { try {
+    return decodeURIComponent(new URL(p.url).pathname).split('/').filter(Boolean).pop()
+      .replace(/\.html?$/i, '').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  } catch { return []; } };
+  const groups = new Map();
+  for (const p of products) {
+    if (p.colorway) continue;
+    const id = `${key(canonicalBrand(p.brand))}|${key(p.name)}`;
+    (groups.get(id) || groups.set(id, []).get(id)).push(p);
+  }
+  for (const group of groups.values()) {
+    if (group.length < 2) continue;
+    const words = group.map(slugWords);
+    if (words.some(w => !w.length)) continue;
+    const shared = new Set(words[0].filter(w => words.every(list => list.includes(w))));
+    const labels = words.map(list => list.filter(w => !shared.has(w)));
+    // Every product in the group must get its own all-letter label, or none
+    // does: a half-labelled group reads worse than an unlabelled one.
+    if (labels.some(l => !l.length || l.length > 4 || l.some(w => !/^[a-z]{3,}$/.test(w)))) continue;
+    if (new Set(labels.map(l => l.join(' '))).size !== group.length) continue;
+    group.forEach((p, i) => {
+      p.colorway = labels[i].map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+      p.colorwaySource = 'official-url-variant';
+    });
+  }
+  return products;
 }
 export function dedupeKey(p) { return `${key(canonicalBrand(p.brand))}|${key(productStyle(p)) || canonicalUrl(p.url)}|${key(p.colorway)}`; }
 const officialSources=JSON.parse(fs.readFileSync(new URL('../config/daily_sources.json',import.meta.url),'utf8'));
@@ -70,7 +113,10 @@ export function officialEvidenceFor(p,today){
 // it. Everything still here is a dress or heeled shoe, or a boot - shapes
 // nobody has asked the catalogue to carry.
 const excluded = /\b(oxfords?|derby|derbies|pumps?|stilettos?|wedge|heels|(?:high|kitten|block|wedge)[ -]?heels?|heeled|escarpins?|decolletes?|slingbacks?|dress (?:shoes?|sandals?)|ballerina flats?|ballet flats?|chelsea|boots?|snowclog)\b|구두|슬링백|(?:하이|키튼|블록|웨지)힐|펌프스|부츠|방한|발레 플랫/i;
-const performance = /\b(?:soccer|football|baseball|track|golf)\s+(?:boots?|cleats?|spikes?|shoes?)|\b(?:racing spikes|competition spikes|basketball shoes)\b|축구화|야구화|스파이크/i;
+// Basketball and golf shoes are part of the catalogue: both silhouettes are
+// worn as sneakers and a Kobe Protro is a sneaker release. What stays out is
+// studded and spiked footwear, which is not worn anywhere but a pitch.
+const performance = /\b(?:soccer|football|baseball|track)\s+(?:boots?|cleats?|spikes?)|\bcleats?\b|\b(?:racing spikes|competition spikes)\b|축구화|야구화|스파이크/i;
 const sneakerStructure = /\b(?:sneakers?|sneakerina|running (?:shoes?|heritage)|trainers?|sneaker (?:sole|midsole|outsole|construction))\b|스니커|운동화|러닝화|スニーカ(?:ー|リーナ)|运动鞋|運動鞋|跑鞋/i;
 const namedHybrid = /\b(?:mules?|mary[ -]?jane|ballet|ballerinas?|sneakerina)\b|메리제인|발레리나|발레|뮬|バレエ|バレリーナ|スニーカリーナ|メリージェーン|ミュール|芭蕾|玛丽珍|瑪麗珍|穆勒/i;
 const otherHybrid = /\b(?:clogs?|sandals?|slides?|espadrilles?|fisherman|hybrids?)\b|클로그|샌들|슬라이드|에스파드리유|피셔맨|혼합|하이브리드|クロッグ|サンダル|エスパドリーユ|ハイブリッド|凉鞋|涼鞋|混合/i;
@@ -92,6 +138,11 @@ export function inPublishedScope(category) {
   return ['sneaker', 'hybrid', 'jelly', 'clog', 'loafer', 'slipper', 'platform-slipper', 'platform-sandal', 'platform-shoe'].includes(category);
 }
 
+// A kids' shoe is not what this catalogue is for, and the retail classifier has
+// always refused them. The official side never looked, so 31 reached cards -
+// and Nike's GS models arrived as a second card beside the adult shoe of the
+// same name, which is where a third of the duplicate pairs came from.
+const kids = /\b(?:kids?|toddlers?|infants?|juniors?|youth|little kids?|big kids?|grade school|pre-?school)\b|\((?:gs|ps|td)\)|\bbaby\s+(?!blue\b)|키즈|아동|주니어|유아|베이비|어린이/i;
 export function classifyFootwear(p) {
   // Negative gates run first for every record; legacy verification cannot bypass them.
   // Include the normalized source category/type. Several official product feeds
@@ -103,6 +154,7 @@ export function classifyFootwear(p) {
   const context = `${title} ${p.description || ''} ${p.category || ''} ${structure?.description||''} ${structure?.officialCategory||''}`;
   const review=p.footwearReview;
   if(/パンプス|スリングバック|ハイヒール|革靴|高跟|皮鞋|(?:^|[\s/])힐(?:[\s/]|$)/.test(title))return {reason:'excluded-footwear'};
+  if(kids.test(`${title} ${p.description||''}`))return {reason:'kids-sizing'};
   const reviewedPlatform=review?.approved===true&&review.type==='platform'&&review.flatSole===true&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url);
   const reviewedJelly=review?.approved===true&&review.type==='jelly'&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url)&&review.flatSole===true;
   if(/goadome/i.test(title)&&!p.hybridReview?.approved)return {reason:'hybrid-review-required'};
@@ -146,7 +198,7 @@ export function classifyFootwear(p) {
     if (backless) return { category: platform ? 'platform-slipper' : 'slipper' };
     return { category: platform ? 'platform-sandal' : 'sandal' };
   }
-  if (/sneaker|running shoe|trail running|training shoes?|trainers?|court(?:-type)? shoe|tennis shoes?|스니커|운동화|러닝화|트레이닝화|트레일화/i.test(context)||/\btraining\b[^.!?]{0,45}\bshoes?\b/i.test(title)) return { category: 'sneaker' };
+  if (/sneaker|running shoe|trail running|training shoes?|basketball shoes?|golf shoes?|trainers?|court(?:-type)? shoe|tennis shoes?|스니커|운동화|러닝화|트레이닝화|트레일화|농구화|골프화/i.test(context)||/\btraining\b[^.!?]{0,45}\bshoes?\b/i.test(title)) return { category: 'sneaker' };
   // A platform shoe is in scope because of its sole, not because the brand's
   // copy happens to say "casual" or "street". Requiring those words held 26
   // records whose own titles said platform - Melissa's Possession and Sun

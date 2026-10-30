@@ -607,6 +607,11 @@
       "name": "Maison Mihara Yasuhiro Official daily source",
       "url": "https://www.miharayasuhiro.jp/",
       "basis": "catalogue"
+    },
+    {
+      "name": "Maison Mihara Yasuhiro Official shoes",
+      "url": "https://www.miharayasuhiro.jp/lp/shoes.php",
+      "basis": "catalogue"
     }
   ],
   "Marine Serre": [
@@ -884,6 +889,11 @@
     {
       "name": "ROA Official daily source",
       "url": "https://www.roa-hiking.com/"
+    },
+    {
+      "name": "ROA Official all products",
+      "url": "https://www.roa-hiking.com/collections/all-products?sort_by=created-descending",
+      "basis": "catalogue"
     }
   ],
   "Roger Vivier": [
@@ -1035,6 +1045,16 @@
     {
       "name": "Umbro Official global style source",
       "url": "https://www.umbro.com/en/style/?categories=1726"
+    },
+    {
+      "name": "Umbro Official Korea category 201303000",
+      "url": "https://www.umbro.co.kr/UMBRO/category/201303000",
+      "basis": "catalogue"
+    },
+    {
+      "name": "Umbro Official Korea category 201302000",
+      "url": "https://www.umbro.co.kr/UMBRO/category/201302000",
+      "basis": "catalogue"
     }
   ],
   "Undercover": [
@@ -1198,6 +1218,16 @@
       "name": "Le Coq Sportif Official Korea daily source",
       "url": "https://www.lecoqsportif.co.kr/",
       "basis": "catalogue"
+    },
+    {
+      "name": "Le Coq Sportif Official New Arrival",
+      "url": "https://www.lecoqsportif.co.kr/LECOQSPORTIF/NewArrival",
+      "basis": "catalogue"
+    },
+    {
+      "name": "Le Coq Sportif Official shoes category",
+      "url": "https://www.lecoqsportif.co.kr/LECOQSPORTIF/Category/203000000",
+      "basis": "catalogue"
     }
   ],
   "Jordan": [
@@ -1245,12 +1275,47 @@
       "name": "Rockfish Weatherwear Official public source",
       "url": "https://en.rockfish-weatherwear.co.kr/",
       "basis": "catalogue"
+    },
+    {
+      "name": "Rockfish Weatherwear Official New",
+      "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/list.html?cate_no=626",
+      "basis": "catalogue"
+    },
+    {
+      "name": "Rockfish Weatherwear Official Shoes",
+      "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/list.html?cate_no=487",
+      "basis": "catalogue"
     }
   ],
   "23.65": [
     {
       "name": "23.65 Official daily source",
       "url": "https://www.23-65.com/",
+      "basis": "catalogue"
+    },
+    {
+      "name": "23.65 Official New",
+      "url": "https://www.23-65.com/product/list.html?cate_no=376",
+      "basis": "catalogue"
+    },
+    {
+      "name": "23.65 Official Sneakers",
+      "url": "https://www.23-65.com/product/list.html?cate_no=381",
+      "basis": "catalogue"
+    },
+    {
+      "name": "23.65 Official Sandal/Slipper",
+      "url": "https://www.23-65.com/product/list.html?cate_no=382",
+      "basis": "catalogue"
+    },
+    {
+      "name": "23.65 Official Mary Jane",
+      "url": "https://www.23-65.com/product/list.html?cate_no=383",
+      "basis": "catalogue"
+    },
+    {
+      "name": "23.65 Official Moccasin",
+      "url": "https://www.23-65.com/product/list.html?cate_no=384",
       "basis": "catalogue"
     }
   ],
@@ -1268,6 +1333,21 @@
     {
       "name": "OOFOS Official public source",
       "url": "https://www.oofos.com/",
+      "basis": "catalogue"
+    },
+    {
+      "name": "OOFOS Official Shoes",
+      "url": "https://www.oofos.com/collections/all-shoes?sort_by=created-descending",
+      "basis": "catalogue"
+    },
+    {
+      "name": "OOFOS Official Clogs",
+      "url": "https://www.oofos.com/collections/all-clogs?sort_by=created-descending",
+      "basis": "catalogue"
+    },
+    {
+      "name": "OOFOS Official All",
+      "url": "https://www.oofos.com/collections/all?sort_by=created-descending",
       "basis": "catalogue"
     }
   ],
