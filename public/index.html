@@ -54,6 +54,27 @@
           <div id="catwalk-grid" class="catwalk-grid"></div>
           <div id="catwalk-more" class="catwalk-more" hidden></div>
         </section>
+        <div id="catwalk-viewer" class="catwalk-viewer" role="dialog" aria-modal="true"
+             aria-labelledby="catwalk-viewer-brand" hidden>
+          <div class="catwalk-viewer-inner">
+            <figure class="catwalk-viewer-photo"><img id="catwalk-viewer-img" alt=""></figure>
+            <aside class="catwalk-viewer-info">
+              <button id="catwalk-viewer-close" class="catwalk-viewer-close" aria-label="닫기">✕</button>
+              <h3 id="catwalk-viewer-brand"></h3>
+              <dl id="catwalk-viewer-meta"></dl>
+              <div class="catwalk-viewer-actions">
+                <a id="catwalk-viewer-save" class="secondary-button" download>고화질 저장</a>
+                <a id="catwalk-viewer-origin" class="text-button" target="_blank" rel="noopener noreferrer">WGSN 원본 ↗</a>
+              </div>
+              <p class="catwalk-viewer-note">WGSN 구독 자료입니다. 내부 참고용으로만 사용하세요.</p>
+              <div class="catwalk-viewer-nav">
+                <button id="catwalk-prev" class="secondary-button">← 이전</button>
+                <span id="catwalk-position" class="muted"></span>
+                <button id="catwalk-next" class="secondary-button">다음 →</button>
+              </div>
+            </aside>
+          </div>
+        </div>
         <section id="analysis" class="analysis" aria-labelledby="analysis-title" hidden>
           <div class="analysis-head">
             <div>
@@ -66,7 +87,6 @@
             </div>
           </div>
           <div id="rank-boards" class="rank-boards" hidden></div>
-          <section id="wgsn-runway" class="wgsn-runway" aria-labelledby="wgsn-runway-title" hidden></section>
           <div class="analysis-grid">
             <article class="panel wide" id="panel-category">
               <header><h3>스니커즈 카테고리</h3><button class="text-button" data-dl="category">CSV</button></header>

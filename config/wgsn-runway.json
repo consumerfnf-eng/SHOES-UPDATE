@@ -78,9 +78,9 @@
   },
   "librarySearch": {
     "note": "The saved search the user actually wants collected: WGSN's Fashion Design image library narrowed to footwear tags, where every result is a shoe shot on its own. This is NOT the catwalks search the rest of this file describes - those shelves return whole collections, 1,565 of whose 3,648 images are head-to-toe looks with the shoe at a few hundred pixels. 3,253 results at the time it was shared.",
-    "url": "https://www.wgsn.com/library/results/30dba7bae6937da6c7fee0a2afcbd400",
+    "url": "https://www.wgsn.com/library/results/14de91459be576037a896127a99050f1",
     "sharedOn": "2026-10-30",
-    "expectedResults": 3253,
+    "expectedResults": 247,
     "section": "Fashion Design > Image Library & Design Resources",
     "imageType": [
       "Details & Accessories",
@@ -145,6 +145,36 @@
     ],
     "caption": "Brand / Season / City, as the library prints it under each result.",
     "dedupe": "One shoe, one card. The library returns several frames of one look - the October catwalk import had 151 pairs within hamming 4 of each other - so a perceptual hash has to collapse them at collection time, not only the SHA-256 that catches a byte-identical file.",
-    "status": "not yet collected - needs the logged-in browser session"
+    "status": "collected 2026-10-30: 247 records, 70 shows, Spring/Summer 2027",
+    "seasonFilter": [
+      "2913181"
+    ],
+    "supersedes": {
+      "url": "https://www.wgsn.com/library/results/30dba7bae6937da6c7fee0a2afcbd400",
+      "results": 3253,
+      "why": "That search carries no `seasons` filter, so its 3,253 results span 26 seasons from S/S 2016 to S/S 2027 and 443 brands - only 267 of them are S/S 2027. Check history's filter.seasons before trusting a saved search's result count as a season's size."
+    },
+    "api": {
+      "definition": "GET /api/cherry/history/<hash>",
+      "query": "POST /api/cherry/search/query",
+      "bodyKey": "filters (NOT `filter`, which is the key history returns - passing it through unrenamed silently drops every filter and returns the whole 15M-image library)",
+      "params": {
+        "limit": "max 200",
+        "offset": "page through data.count",
+        "sort": [
+          {
+            "field": "add_date"
+          }
+        ]
+      },
+      "lang": "'en' captions the city Paris, 'ko' captions it 파리",
+      "caption": "results[].caption is [brand, season, city] - no reconstruction needed"
+    },
+    "highResolution": {
+      "url": "the rendition URL with /large_ or /media_ replaced by /original_",
+      "signedIn": "2574x3861, about 2.0 MB",
+      "anonymous": "508x552, about 12 KB at the identical URL",
+      "consequence": "A scraper without the session cookie silently collects the low-resolution file. The originals are fetched in the browser and downsized to 1,400px there."
+    }
   }
 }

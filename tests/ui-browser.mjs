@@ -35,8 +35,6 @@ try{
  // measures the fixture, and the tab is checked on its own.
  await context.route('**/data/catwalk.json',r=>r.fulfill({contentType:'application/json',
    body:JSON.stringify({schemaVersion:1,provider:'WGSN',season:'Spring/Summer 2027',builtAt:at,shelves:[],looks:[]})}));
- await context.route('**/data/wgsn-runway.json',r=>r.fulfill({contentType:'application/json',
-   body:JSON.stringify({schemaVersion:1,provider:'WGSN',season:'Spring/Summer 2027',importedAt:at,shelves:[],shows:[]})}));
  const page=await context.newPage(),errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push({url:r.url(),method:r.method()}));
  await page.goto(url);await page.locator('.product-card').first().waitFor();
  assert.equal(await page.locator('#result-count').textContent(),'48');assert.equal(await page.locator('.product-card').count(),40);

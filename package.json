@@ -21,7 +21,8 @@
     "ranks": "node scripts/collect-rank-boards.mjs",
     "wgsn": "node scripts/import-wgsn-runway.mjs",
     "catwalk": "python scripts/build_catwalk.py",
-    "internal": "node scripts/deploy-internal.mjs"
+    "internal": "node scripts/deploy-internal.mjs",
+    "catwalk:library": "python scripts/build_catwalk_library.py"
   },
   "dependencies": {
     "playwright": "^1.55.0"

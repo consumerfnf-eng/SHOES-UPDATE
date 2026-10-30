@@ -14,7 +14,7 @@ const PAGE_SIZE = 40;
 const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter']];
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter'};
-let catalog = null, overlay = null, trends = null, rankBoards = null, wgsnRunway = null, catwalk = null, catwalkShown = 0, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
+let catalog = null, overlay = null, trends = null, rankBoards = null, catwalk = null, catwalkShown = 0, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
 const activeVariant = new Map();
 function groupKey(p){ return variantGroupKey(p); }
 function colorGroupOf(p){
@@ -217,13 +217,6 @@ async function loadSupplements() {
       if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.boards)) { rankBoards = snapshot; changed = true; }
     }
   } catch { rankBoards = null; }
-  try {
-    const runway = await fetch('./data/wgsn-runway.json', {cache:'no-cache'});
-    if (runway.ok) {
-      const snapshot = await runway.json();
-      if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.shows)) { wgsnRunway = snapshot; changed = true; }
-    }
-  } catch { wgsnRunway = null; }
   try {
     const walk = await fetch('./data/catwalk.json', {cache:'no-cache'});
     if (walk.ok) {
@@ -436,36 +429,6 @@ function renderRankBoards(){
   }).join('');
   bindImageErrors(host);
 }
-// WGSN's S/S27 catwalk shelves, as a board of what exists rather than a
-// gallery of it. WGSN is a subscription source: the collection runs on a
-// person's own logged-in machine and the images stay there, so what publishes
-// is the show list, how much of each shelf was read, and a filtered deep link
-// that opens in WGSN for a reader who has their own subscription.
-function renderWgsnRunway(){
-  const host=$('wgsn-runway');
-  if(!host)return;
-  const shows=(wgsnRunway?.shows||[]).filter(show=>show.total);
-  host.hidden=!shows.length;
-  if(!shows.length)return;
-  const labels={fullLength:'전신',details:'디테일',closeUps:'부분'};
-  const sum=field=>shows.reduce((n,s)=>n+(s.counts?.[field]||0),0);
-  const footwear=(wgsnRunway.shelves||[]).find(s=>s.footwearShelf);
-  host.innerHTML=`<header class="wgsn-head">
-      <div><h3 id="wgsn-runway-title">WGSN 런웨이 · ${esc(wgsnRunway.season)}
-        <span class="rank-size">${shows.length}개 쇼</span></h3>
-      <p class="muted">전신 ${sum('fullLength').toLocaleString()}장 · 디테일 ${sum('details').toLocaleString()}장 · 부분 ${sum('closeUps').toLocaleString()}장${
-        footwear?` · 신발은 ${esc(footwear.label.replace(/\s*\(.*$/,''))} 선반에서 확인합니다`:''}</p>
-      <p class="muted">내부 참고 자료입니다. WGSN은 구독 출처이므로 사진은 수집한 PC에만 두고, 여기에는 쇼 목록과 수량, WGSN 원본으로 가는 링크만 올립니다. 링크는 본인 구독 계정으로만 열립니다.</p></div>
-    </header>
-    <ol class="wgsn-list">${shows.map(show=>`<li class="wgsn-show">
-      <span class="wgsn-brand">${esc(show.brand)}</span>
-      <span class="wgsn-counts">${Object.entries(show.counts||{}).filter(([,n])=>n)
-        .map(([field,n])=>`${esc(labels[field]||field)} ${n}`).join(' · ')}</span>
-      <span class="wgsn-markets">${(show.markets||[]).map(m=>esc(m)).join(' / ')}</span>
-      <span class="wgsn-links">${(show.links||[]).map(link=>
-        `<a class="text-button" href="${esc(safeUrl(link.url))}" target="_blank" rel="noopener noreferrer">${esc(link.label)} ↗</a>`).join('')}</span>
-    </li>`).join('')}</ol>`;
-}
 // The catwalk tab. One card per photograph, captioned the way WGSN captions
 // it: the brand, the season, the city. A look is not a product - it has no
 // price, no colourway and nothing to select or export - so it gets its own
@@ -488,8 +451,11 @@ function renderCatwalkFilters(looks){
   const footwear=(catwalk?.shelves||[]).find(s=>s.footwearShelf);
   const chip=(id,label,count)=>`<button class="catwalk-chip${state.catwalkShow===id?' active':''}" data-catwalk="${esc(id)}" aria-pressed="${state.catwalkShow===id}">${esc(label)}${count!=null?` <span>${count.toLocaleString()}</span>`:''}</button>`;
   const shelfId=footwear?.id;
+  // The shelf chip earns its place only when there is another shelf to filter
+  // against: the library search returns footwear and nothing else.
+  const several=(catwalk?.shelves||[]).length>1;
   host.innerHTML=chip('all','전체',(catwalk?.looks||[]).length)
-    +(footwear?chip('footwear','신발 디테일',(catwalk.looks||[]).filter(l=>l.shelf===shelfId).length):'')
+    +(footwear&&several?chip('footwear',footwear.label.replace(/\s*\(.*$/,''),(catwalk.looks||[]).filter(l=>l.shelf===shelfId).length):'')
     +brands.map(b=>chip(b,b,(catwalk.looks||[]).filter(l=>l.brand===b).length)).join('');
 }
 function renderCatwalk(){
@@ -500,15 +466,16 @@ function renderCatwalk(){
   const cities=[...new Set(looks.map(l=>l.city).filter(Boolean))];
   $('catwalk-scope').textContent=`${catwalk.season} · ${new Set(looks.map(l=>l.brand)).size}개 쇼 · ${looks.length.toLocaleString()}장`
     +(cities.length?` · ${cities.sort().join(' · ')}`:'');
-  $('catwalk-note').textContent='WGSN 구독 자료입니다. 내부 참고용으로만 사용하세요.';
+  $('catwalk-note').textContent='신발만 클로즈업된 컷입니다. 카드를 누르면 크게 보고 고화질로 저장할 수 있습니다. '
+    +'WGSN 구독 자료이므로 내부 참고용으로만 사용하세요.';
   renderCatwalkFilters(looks);
   $('catwalk-grid').innerHTML=looks.slice(0,shown).map((look,i)=>`<article class="catwalk-card">
-      <a class="catwalk-photo" href="${esc(safeUrl(shelfUrl(look.shelf)))}" target="_blank" rel="noopener noreferrer"
-         aria-label="${esc(look.brand)} ${esc(look.season)} WGSN에서 보기">
+      <button class="catwalk-photo" data-look="${esc(look.id)}"
+         aria-label="${esc(look.brand)} ${esc(look.season)} 크게 보기">
         <img src="${esc(look.image)}" alt="${esc(look.brand+' '+look.season+(look.city?' '+look.city:''))}"
              width="${look.width}" height="${look.height}"
              loading="${i<12?'eager':'lazy'}" decoding="async" referrerpolicy="no-referrer">
-      </a>
+      </button>
       <div class="catwalk-copy">
         <p class="catwalk-brand">${esc(look.brand)}</p>
         <p class="catwalk-season">${esc(look.season)}</p>
@@ -519,6 +486,58 @@ function renderCatwalk(){
   more.hidden=shown>=looks.length;
   more.innerHTML=more.hidden?'':`<button class="secondary-button" id="catwalk-more-button">${(looks.length-shown).toLocaleString()}장 더 보기</button>`;
   bindImageErrors($('catwalk-grid'));
+}
+// Click a card to see the look large, with its caption beside it. The picture
+// on the page is the 1,400px rendition the collection downsized from WGSN's
+// own 2,574px original - that original is only served to a signed-in session,
+// so "WGSN 원본" is a link into WGSN rather than a file this site holds.
+let viewerIndex = -1;
+function viewerList(){ return catwalkLooks().slice(0, Math.max(catwalkShown || CATWALK_PAGE, 0)); }
+function openViewer(id){
+  const list = viewerList();
+  const at = list.findIndex(l => l.id === id);
+  if (at < 0) return;
+  viewerIndex = at;
+  showViewer();
+}
+function showViewer(){
+  const list = viewerList(), look = list[viewerIndex];
+  if (!look) return;
+  const box = $('catwalk-viewer');
+  $('catwalk-viewer-img').src = look.image;
+  $('catwalk-viewer-img').alt = `${look.brand} ${look.season}${look.city ? ' ' + look.city : ''}`;
+  $('catwalk-viewer-brand').textContent = look.brand;
+  const rows = [['시즌', look.season], ['도시', look.city || '미확인'], ['품목', look.imageType || ''],
+                ['이 화면', `${look.width}×${look.height}`],
+                ['WGSN 원본', look.originalWidth ? `${look.originalWidth}×${look.originalHeight}` : '']];
+  $('catwalk-viewer-meta').innerHTML = rows.filter(([, v]) => v)
+    .map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(String(v))}</dd>`).join('');
+  const save = $('catwalk-viewer-save');
+  save.href = look.image;
+  save.setAttribute('download', `${look.brand.replace(/[^\p{L}\p{N}]+/gu, '-')}-${look.id}.jpg`);
+  const origin = $('catwalk-viewer-origin');
+  const originUrl = safeUrl(look.originalUrl) || safeUrl(shelfUrl(look.shelf));
+  origin.href = originUrl;
+  origin.hidden = !originUrl;
+  $('catwalk-position').textContent = `${viewerIndex + 1} / ${list.length}`;
+  $('catwalk-prev').disabled = viewerIndex <= 0;
+  $('catwalk-next').disabled = viewerIndex >= list.length - 1;
+  box.hidden = false;
+  document.body.classList.add('viewer-open');
+  $('catwalk-viewer-close').focus();
+}
+function closeViewer(){
+  $('catwalk-viewer').hidden = true;
+  document.body.classList.remove('viewer-open');
+  const card = document.querySelector(`[data-look="${viewerList()[viewerIndex]?.id}"]`);
+  card?.focus();
+}
+function stepViewer(delta){
+  const list = viewerList();
+  const next = viewerIndex + delta;
+  if (next < 0 || next >= list.length) return;
+  viewerIndex = next;
+  showViewer();
 }
 function renderAnalysis(){
   const section=$('analysis');
@@ -537,10 +556,8 @@ function renderAnalysis(){
     document.querySelector(sel)?.classList.toggle('hidden-by-analysis',on||walk);
   if(walk)renderCatwalk();
   $('rank-boards').hidden=!on||!(rankBoards?.boards||[]).some(b=>b.items?.length);
-  $('wgsn-runway').hidden=!on||!(wgsnRunway?.shows||[]).some(s=>s.total);
   if(!on)return;
   renderRankBoards();
-  renderWgsnRunway();
   const rows=analysisScope();
   $('analysis-scope').textContent=`현재 필터 기준 ${rows.length.toLocaleString()}개 상품 · ${RATE_NOTE}`;
 
@@ -969,9 +986,22 @@ renderBrands();loadCatalog();
 document.addEventListener('click',event=>{
   const chip=event.target.closest('[data-catwalk]');
   if(chip){state.catwalkShow=chip.dataset.catwalk;catwalkShown=0;renderCatwalk();window.scrollTo({top:$('catwalk').offsetTop-80,behavior:'smooth'});return;}
+  const photo=event.target.closest('[data-look]');
+  if(photo){openViewer(photo.dataset.look);return;}
+  if(event.target.closest('#catwalk-viewer-close'))return closeViewer();
+  if(event.target.closest('#catwalk-prev'))return stepViewer(-1);
+  if(event.target.closest('#catwalk-next'))return stepViewer(1);
+  if(event.target.id==='catwalk-viewer')return closeViewer();
   if(event.target.closest('#catwalk-more-button')){
     const looks=catwalkLooks();
     catwalkShown=Math.min((catwalkShown||CATWALK_PAGE)+CATWALK_PAGE,looks.length);
     renderCatwalk();
   }
+});
+// Esc closes the viewer; the arrows walk the shelf.
+document.addEventListener('keydown',event=>{
+  if($('catwalk-viewer')?.hidden!==false)return;
+  if(event.key==='Escape'){event.preventDefault();closeViewer();}
+  if(event.key==='ArrowLeft'){event.preventDefault();stepViewer(-1);}
+  if(event.key==='ArrowRight'){event.preventDefault();stepViewer(1);}
 });

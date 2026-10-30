@@ -94,3 +94,81 @@ WGSN은 구독 자료다. 이 레포는 이미 `config/forecast-sources.json`에
 ## 5. 다음 시즌에 바꿀 것
 
 `seasons` ID 하나만 바꾸면 된다. F/W 27-28 ID는 그 시즌 검색 URL에서 읽어 `config/wgsn-runway.json`의 `filters.seasons`에 추가한다. 브랜드 ID는 전신 검색 URL의 `brands`에서 그대로 읽힌다.
+
+---
+
+# 부록: 이미지 라이브러리 수집 (실제로 쓰는 경로)
+
+위 캣워크 검색은 컬렉션 전체를 돌려준다. **신발만** 필요하면 Fashion Design의 이미지 라이브러리 저장 검색을 쓴다. 2026-10-30에 확인한 내용.
+
+## API
+
+검색 화면은 전부 이 두 엔드포인트로 돌아간다.
+
+```
+GET  /api/cherry/history/<saved-search-hash>   저장 검색의 필터 정의
+POST /api/cherry/search/query                  결과
+```
+
+`query`의 본문은 이 모양이다. **키가 `filters`이고 `filter`가 아니다** — `history`가 돌려주는 키 이름과 다르므로 그대로 넘기면 필터가 통째로 무시되고 라이브러리 전체(1,500만 건)가 돌아온다.
+
+```json
+{
+  "filters": { "...history가 준 filter 그대로..." },
+  "q": [],
+  "log": false,
+  "lang": "en",
+  "params": {"limit": 200, "offset": 0, "object_id": null, "sort": [{"field": "add_date"}]}
+}
+```
+
+- `limit` 최대 200. 247건이면 두 번, 3,253건이면 17번.
+- `lang: "en"` 이면 도시가 `Paris`, `"ko"` 면 `파리`. 카드에는 영문을 쓴다.
+- 응답: `data.count` 총 건수, `data.results[]`.
+
+## 레코드
+
+```json
+{
+  "id": 42109268,
+  "name": "agnb_prs_det_ss27_232",
+  "rel_image_id": "image.42109268",
+  "caption": ["Agnes B", "Spring/Summer 2027", "Paris"],
+  "size": {"original": {"width": 2574, "height": 3861}},
+  "urls": {"thumbnail": "...thumb_*.jpg", "detail": "...media_*.jpg", "large": "...large_*.jpg",
+            "download": "...", "email": "..."}
+}
+```
+
+**`caption`이 브랜드·시즌·도시다.** 캣워크 수집 때처럼 도시를 rename 기록에서 역산할 필요가 없다.
+
+## 고화질은 로그인 세션에서만 나온다
+
+중요한 함정이다. `thumbnail`/`detail`/`large`는 전부 **508×552, 12KB**로 같은 것이 나온다. 진짜 원본은 URL의 렌디션 접두사를 바꾼 주소다.
+
+```
+https://media.wgsn.com/ss_image_store/86/29/01/24/original_agnb_prs_det_ss27_232.jpg
+```
+
+- 로그인 세션(브라우저) → **2,574×3,861, 2.0MB**
+- 쿠키 없이(curl/Python) → 같은 주소인데 **508×552, 12KB**
+
+즉 Python으로 긁으면 조용히 저화질을 받는다. 그래서 **원본 수집은 브라우저 안에서** 하고, 거기서 1,400px로 줄여 로컬로 넘긴다. 세션 쿠키를 파일로 빼내지 않아도 되고, 500MB를 그대로 옮기지도 않는다.
+
+## 절차
+
+1. Chrome에 Claude 확장 연결 + WGSN 로그인 + `www.wgsn.com` 사이트 권한 허용.
+2. 저장 검색 URL을 연다. 예: `https://www.wgsn.com/library/results/14de91459be576037a896127a99050f1`
+3. 메타데이터 수집 — `history`로 필터를 받아 `query`를 페이지네이션하고, `caption`·`urls`·`size`를 뽑아 JSON 배열로 로컬에 넘긴다.
+4. 이미지 수집 — 각 레코드의 `original_` 주소를 **브라우저에서** `fetch(..., {credentials:'include'})`로 받고, `OffscreenCanvas`로 긴 변 1,400px·JPEG 0.86으로 줄여 로컬로 POST.
+5. 카드 생성:
+
+```bash
+npm run catwalk:library -- <records.json> <images-dir> --season "Spring/Summer 2027" --fresh
+```
+
+`--fresh`는 이전 수집물을 지우고 새로 깐다. 같은 룩의 다른 프레임은 지각해시로 합쳐지고(브랜드 안에서만, 해밍 6), 합쳐져서 안 쓰이게 된 파일은 지운다.
+
+## 저장 검색이 시즌을 가두지 않는다
+
+처음 받은 `30dba7bae6937da6c7fee0a2afcbd400`은 **3,253건이었지만 2016~2027년 26개 시즌 전체**였다 — S/S27은 그중 267장뿐. 시즌을 가두려면 필터에 `seasons`가 있어야 한다. `14de91459be576037a896127a99050f1`에는 `"seasons": ["2913181"]`이 들어 있고 **247건**이 나온다. 저장 검색을 받으면 `history`의 `filter.seasons`를 먼저 확인할 것.

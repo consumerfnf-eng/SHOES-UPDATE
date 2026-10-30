@@ -195,27 +195,6 @@
 @media (max-width:760px){.rank-list{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}}
 @media (max-width:420px){.rank-list{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}}
 
-/* --- WGSN catwalk board (데이터 분석) ----------------------------------- */
-/* A list, not a grid: there is no photograph to carry a card. WGSN is a
-   subscription source, so what this board shows is which S/S27 shows were
-   read, how much of each shelf, and a filtered link that opens in WGSN for a
-   reader who has their own subscription. */
-.wgsn-runway{border:1px solid #e6e1d8;border-radius:14px;background:#fffffe;padding:18px 18px 10px;margin:0 0 22px}
-.wgsn-head h3{margin:0 0 4px;font-size:16px}
-.wgsn-head p{margin:1px 0;font-size:11.5px;line-height:1.45;max-width:72ch}
-.wgsn-list{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:2px}
-.wgsn-show{display:grid;gap:4px 14px;align-items:baseline;padding:8px 2px;border-top:1px solid #f0ece4;
-  grid-template-columns:minmax(140px,1.2fr) minmax(150px,1.4fr) minmax(90px,.6fr) auto}
-.wgsn-show:first-child{border-top:0}
-.wgsn-brand{font-weight:600;font-size:13px;min-width:0;overflow-wrap:anywhere}
-.wgsn-counts,.wgsn-markets{font-size:11.5px;color:#6f675c}
-.wgsn-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
-.wgsn-links .text-button{font-size:11.5px;white-space:nowrap}
-@media (max-width:720px){
-  .wgsn-show{grid-template-columns:1fr}
-  .wgsn-links{justify-content:flex-start}
-}
-
 /* --- CATWALK -------------------------------------------------------------
    A look is not a product: no price, no colourway, nothing to select or
    export. The card is the photograph with WGSN's own caption under it - the
@@ -243,4 +222,37 @@
 .catwalk-more{margin:24px 0 0;display:flex;justify-content:center}
 @media (max-width:520px){
   .catwalk-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px 12px}
+}
+
+/* --- CATWALK viewer ------------------------------------------------------
+   The look large, with WGSN's own caption beside it rather than under it:
+   a shoe photographed on its own is taller than it is wide, so the room is
+   to the right of it, not below. */
+body.viewer-open{overflow:hidden}
+.catwalk-viewer{position:fixed;inset:0;z-index:70;background:rgba(18,16,14,.82);
+  display:flex;align-items:center;justify-content:center;padding:32px}
+.catwalk-viewer-inner{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:0;
+  background:#fffffe;border-radius:14px;overflow:hidden;max-width:1120px;width:100%;
+  max-height:calc(100vh - 64px)}
+.catwalk-viewer-photo{margin:0;background:#17150f;display:flex;align-items:center;justify-content:center;min-height:0}
+.catwalk-viewer-photo img{max-width:100%;max-height:calc(100vh - 64px);width:auto;height:auto;display:block}
+.catwalk-viewer-info{position:relative;padding:22px 22px 18px;display:flex;flex-direction:column;gap:14px;overflow-y:auto}
+.catwalk-viewer-close{position:absolute;top:12px;right:12px;appearance:none;border:0;background:transparent;
+  font-size:15px;line-height:1;color:#6f675c;cursor:pointer;padding:6px}
+.catwalk-viewer-close:hover{color:#1c1a17}
+.catwalk-viewer-info h3{margin:6px 30px 0 0;font-size:17px;line-height:1.3;overflow-wrap:anywhere}
+.catwalk-viewer-info dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:5px 12px;font-size:12px}
+.catwalk-viewer-info dt{color:#8a8275}
+.catwalk-viewer-info dd{margin:0;color:#2b2823}
+.catwalk-viewer-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:2px}
+.catwalk-viewer-note{margin:0;font-size:11px;line-height:1.5;color:#8a8275}
+.catwalk-viewer-nav{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding-top:12px;border-top:1px solid #f0ece4;font-size:11.5px}
+.catwalk-viewer-nav button[disabled]{opacity:.4;cursor:default}
+.catwalk-photo{appearance:none;border:1px solid #ece7df;background:#f4f1ec;padding:0;cursor:zoom-in;
+  border-radius:8px;overflow:hidden;line-height:0;display:block;width:100%}
+@media (max-width:860px){
+  .catwalk-viewer{padding:0}
+  .catwalk-viewer-inner{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;border-radius:0;max-height:100vh}
+  .catwalk-viewer-photo img{max-height:58vh}
 }
