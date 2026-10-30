@@ -525,7 +525,12 @@ function renderAnalysis(){
   if(!section)return;
   const on=state.source==='analysis',walk=state.source==='catwalk';
   section.hidden=!on;
-  $('catwalk').hidden=!walk||!catwalk;
+  // The tab offers itself only when there are looks behind it. Without this
+  // the button was there with an empty page under it whenever the snapshot
+  // had not been published.
+  const walkTab=document.querySelector('[data-source="catwalk"]');
+  if(walkTab)walkTab.hidden=!(catwalk?.looks||[]).length;
+  $('catwalk').hidden=!walk||!(catwalk?.looks||[]).length;
   // The grid's own chrome - count, sort, page selection, pagination -
   // belongs to the grid, not to a distribution or to a wall of runway looks.
   for(const sel of ['#product-grid','.results-bar','.selection-row','#pagination','#selection-bar','#empty-state'])
