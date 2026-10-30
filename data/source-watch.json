@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-30T01:07:39.480Z",
+  "brands": {
+    "adidas": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Nike": {
+      "watchingSince": "2026-09-01",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Reebok": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "ASICS": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "New Balance": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0,
+      "lastFailedAt": "2026-10-29"
+    },
+    "Brooks": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Crocs": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0,
+      "lastFailedAt": "2026-10-29"
+    },
+    "Converse": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Melissa": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Jordan Brand": {
+      "watchingSince": "2026-09-13",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "ANTA": {
+      "watchingSince": "2026-09-13",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Diesel": {
+      "watchingSince": "2026-09-09",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Hermès": {
+      "watchingSince": "2026-09-09",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Salomon": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "grounds": {
+      "watchingSince": "2026-09-09",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Prada": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Louis Vuitton": {
+      "watchingSince": "2026-09-08",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Cecilie Bahnsen": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "The Row": {
+      "watchingSince": "2026-09-08",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Miu Miu": {
+      "watchingSince": "2026-09-04",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Maison Margiela": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Dolce & Gabbana": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Dior": {
+      "watchingSince": "2026-09-04",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Saint Laurent": {
+      "watchingSince": "2026-09-08",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "KEEN": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Valentino Garavani": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Brunello Cucinelli": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "ALOHAS": {
+      "watchingSince": "2026-09-08",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Lemaire": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Rick Owens": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Moncler": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Dries Van Noten": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Tod's": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Jimmy Choo": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Gucci": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "On": {
+      "watchingSince": "2026-08-01",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Loewe": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Bottega Veneta": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Givenchy": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Alexander McQueen": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Golden Goose": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Jacquemus": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Axel Arigato": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Jordan": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "NikeSKIMS": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "PANE x HEAD": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Pierre Hardy": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "PANE": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Rockfish Weatherwear": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Vibram": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Balenciaga": {
+      "watchingSince": "2026-09-04",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "AMIRI": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Acne Studios": {
+      "watchingSince": "2026-09-04",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Mizuno": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Ganni": {
+      "watchingSince": "2026-09-04",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Off-White": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Zegna": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Y-3": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "PUMA": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Santoni": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Common Projects": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0,
+      "lastFailedAt": "2026-10-29"
+    },
+    "Versace": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Lanvin": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Christian Louboutin": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Burberry": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "MM6 Maison Margiela": {
+      "watchingSince": "2026-09-02",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "SATISFY": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Celine": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0,
+      "lastFailedAt": "2026-10-29"
+    },
+    "Skechers": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Shoepen": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Vans": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0,
+      "lastFailedAt": "2026-10-29"
+    },
+    "HOKA": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Arc'teryx": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "KOLON SPORT": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Hunter": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Saucony": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Merrell": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Onitsuka Tiger": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "OOFOS": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "23.65": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Havaianas": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "UGG": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "National Geographic": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Le Coq Sportif": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "The North Face": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "FILA": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Under Armour": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Eider": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Repetto": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Simone Rocha": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Staud": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "norda": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Toteme": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Aeyde": {
+      "watchingSince": "2026-09-07",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Chanel": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Fendi": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Berluti": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Tory Burch": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "DSQUARED2": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Kenzo": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Visvim": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Marine Serre": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Palm Angels": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Thom Browne": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Alo": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Song for the Mute": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Martine Rose": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Roger Vivier": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Proenza Schouler": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Bally": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Feng Chen Wang": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Stella McCartney": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Balmain": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Casablanca": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Coperni": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Fear of God": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Rhude": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "ROA": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Wales Bonner": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Yohji Yamamoto": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0
+    },
+    "Lululemon": {
+      "watchingSince": "2026-09-23",
+      "lastReadAt": "",
+      "reads": 0,
+      "lastFailedAt": "2026-10-29"
+    },
+    "Oakley Factory Team": {
+      "watchingSince": "2026-10-06",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Umbro": {
+      "watchingSince": "2026-10-29",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    },
+    "Maison Mihara Yasuhiro": {
+      "watchingSince": "2026-10-29",
+      "lastReadAt": "2026-10-29",
+      "reads": 1
+    }
+  }
+}

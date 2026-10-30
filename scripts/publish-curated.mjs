@@ -96,7 +96,11 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
     ...(await readJson(path.join(directory,'data/model-first-listed.json'),{})),
     ...(await readJson(path.join(directory,'data/model-launch-dates.json'),{dates:{}})).dates,
   };
-  const result=curateCatalog(products,{now,previous:prior,collection:effectiveCollection,firstListed});
+  // When we started watching each brand, so a shoe that appeared after we
+  // began looking can be published on that evidence rather than on a release
+  // date its brand never printed.
+  const watch=await readJson(path.join(directory,'data/source-watch.json'),{brands:{}});
+  const result=curateCatalog(products,{now,previous:prior,collection:effectiveCollection,firstListed,watch});
   result.queue.products=result.queue.products.filter(p=>p.firstPublishedAt);
   // Preserve other records internally; publish the six requested footwear types.
   // Expired records still enter the archive independently of this display filter.

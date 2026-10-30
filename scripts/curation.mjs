@@ -3,6 +3,7 @@ import {productKeywordIds,productSearchConceptIds,productCollaborationBrands} fr
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {validateSocialMetrics,qualifyingSocialMetric,withSocialComparisons} from './social-metrics.mjs';
 import {hasArrivalEvidence} from '../public/assets/publication-window.mjs';
+import {hasObservedArrival, observedArrivalDay} from '../public/assets/observed-arrival.mjs';
 import {validCalendarDay as validDay,calendarShift as shiftMonth,releaseWindow,releaseState,releaseSortKey} from '../public/assets/release-window.mjs';
 export {validDay,shiftMonth};
 
@@ -199,7 +200,7 @@ export function colorwayFromStyleSlug(style, name) {
   return words.length && words.length <= 4 ? words.join(' ') : '';
 }
 
-export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:00')) {
+export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:00'), watch=null) {
   const brand = canonicalBrand(raw.brand), policy = brandPolicy(brand);
   if (!policy || !['mandatory','core','conditional'].includes(policy.policy)) return { reason: 'brand-excluded-or-unverified' };
   const type = classifyFootwear(raw); if (!type.category) return type;
@@ -227,8 +228,13 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   const e = raw.dateEvidence;
   const release=releaseWindow(raw);
   const arrival=hasArrivalEvidence(raw,today)&&isOfficialProductUrl(brand,raw.arrivalEvidence.url)&&!!officialEvidenceFor(raw,today);
-  if (!arrival&&(!release || !e || !['day','month'].includes(e.precision) || !httpUrl(e.url) || !Number.isFinite(Date.parse(e.verifiedAt)) || !e.excerpt || e.verified!==true)) return { reason: 'release-day-evidence-required' };
-  const state=releaseState(raw,today),future=state==='upcoming';
+  // A shoe that turned up while we were watching the brand is a new listing
+  // on our own evidence. It is the weakest of the three bases and the only
+  // one that is ours rather than the brand's, so it is tried last and the
+  // record carries the day we saw it - shown as 최초 확인, never as 출시일.
+  const observed = !arrival && hasObservedArrival(raw, today, watch);
+  if (!arrival&&!observed&&(!release || !e || !['day','month'].includes(e.precision) || !httpUrl(e.url) || !Number.isFinite(Date.parse(e.verifiedAt)) || !e.excerpt || e.verified!==true)) return { reason: 'release-day-evidence-required' };
+  const state=observed&&!release?'released':releaseState(raw,today),future=state==='upcoming';
   if(state==='uncertain'||state==='invalid')return {reason:release?.precision==='month'?'release-month-window-uncertain':'upcoming-evidence-or-range'};
   if (!httpUrl(raw.url) || !httpUrl(raw.image)) return { reason: 'product-url-or-image-required' };
   if (!Number.isFinite(Date.parse(raw.productVerifiedAt)) || !httpUrl(raw.productEvidenceUrl)) return { reason: 'product-verification-required' };
@@ -241,7 +247,7 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   const product = { id: raw.id, brand, name: cleanName, category: type.category, productType: type.category, fitReasons: fit.fitReasons,
     modelKey:raw.modelGroup||`${key(brand)}|${key(String(raw.name).split(/ — | – /)[0])}`,
     releaseDate: raw.releaseDate||'', releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release?.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),
-    ...(arrival?{arrivalEvidence:raw.arrivalEvidence}:{}),...(raw.firstPublishedAt?{firstPublishedAt:raw.firstPublishedAt}:{}),
+    ...(arrival?{arrivalEvidence:raw.arrivalEvidence}:{}),...(observed?{observedArrivalAt:observedArrivalDay(raw)}:{}),...(raw.firstPublishedAt?{firstPublishedAt:raw.firstPublishedAt}:{}),
     url: raw.url, image: raw.image, style: raw.style || '',...(raw.styleType==='official-product-id'?{styleType:raw.styleType}:{}),colorway, colors: raw.colors || [],
     gender: raw.gender || '', material: raw.material || '', priceLabel: raw.priceLabel || '',
     description:[type.category==='sneaker'?'스니커즈':type.category==='clog'?'여름 클로그':type.category==='hybrid'?'검토된 혼합형 스니커즈':type.category==='jelly'?'플랫 젤리 슈즈':type.category==='platform-shoe'?'캐주얼 플랫폼 슈즈':'캐주얼 샌들',...fit.fitReasons].join(' · '),
@@ -289,11 +295,11 @@ export function launchedBefore(product, cutoffDay, firstListed = {}) {
   return earliest && earliest < cutoffDay ? earliest : '';
 }
 
-export function curateCatalog(rawProducts, { now = new Date(), previous = {}, collection = {} , firstListed = {} } = {}) {
+export function curateCatalog(rawProducts, { now = new Date(), previous = {}, collection = {} , firstListed = {}, watch = null } = {}) {
   const today = kstDay(now), products = [], expired = [], held = [], seen = new Set();
   const cutoffDay = shiftMonth(today, -3);
   for (const raw of rawProducts) {
-    const result = curateProduct(raw, today,now);
+    const result = curateProduct(raw, today,now,watch);
     if (!result.product) { held.push({ id:raw.id, brand:raw.brand, name:raw.name, reason:result.reason }); continue; }
     // Only a live listing can wrongly claim to be new; an expired one is on
     // its way to the archive and must not be diverted.

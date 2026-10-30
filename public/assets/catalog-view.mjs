@@ -13,7 +13,7 @@ export function validDay(value) {
 export function releaseState(product, today = kstToday()) {
   const state=windowState(product,today);return ['released','upcoming'].includes(state)?state:null;
 }
-export function releaseDateLabel(product){const range=releaseWindow(product);if(range?.precision==='month'){const [year,month]=product.releaseDate.split('-');return `${year}년 ${Number(month)}월 (일자 미공개)`;}return product.arrivalEvidence?`NEW · ${product.arrivalEvidence.verifiedAt.slice(0,10)} 확인`:product.releaseDate||'출시일 미공개';}
+export function releaseDateLabel(product){const range=releaseWindow(product);if(range?.precision==='month'){const [year,month]=product.releaseDate.split('-');return `${year}년 ${Number(month)}월 (일자 미공개)`;}return product.arrivalEvidence?`NEW · ${product.arrivalEvidence.verifiedAt.slice(0,10)} 확인`:product.releaseDate||(product.observedArrivalAt?`${product.observedArrivalAt.slice(0,10)} 최초 확인 (출시일 미공개)`:'출시일 미공개');}
 export function safeUrl(value) {
   try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password ? url.href : ''; } catch { return ''; }
 }
@@ -173,6 +173,16 @@ export function filterProducts(products, state, today = kstToday()) {
       if(aa&&bb)return bb.value-aa.value||aa.comparison.rank-bb.comparison.rank||a.id.localeCompare(b.id);
     }
     const recency=p=>isOverlay(p)?overlayWindowDay(p):releaseSortKey(p);
+    // 출시일 최신순 sorts by the date each product actually has - a published
+    // release date, else the day it was confirmed new, else the day we first
+    // saw it - and sends the ones with no date at all to the end rather than
+    // mixing them in at the top where an empty string would put them.
+    if(state.sort==='release'){
+      const key=p=>releaseSortKey(p)||(isOverlay(p)?overlayWindowDay(p):'');
+      const ka=key(a),kb=key(b);
+      if(!ka!==!kb)return ka?-1:1;
+      return kb.localeCompare(ka)||a.brand.localeCompare(b.brand)||a.name.localeCompare(b.name);
+    }
     return state.sort==='brand'?a.brand.localeCompare(b.brand,'en')||a.name.localeCompare(b.name):state.sort==='sources'?(b.sourceSignals?.length||0)-(a.sourceSignals?.length||0)||recency(b).localeCompare(recency(a)):recency(b).localeCompare(recency(a))||a.brand.localeCompare(b.brand);
   });
 }

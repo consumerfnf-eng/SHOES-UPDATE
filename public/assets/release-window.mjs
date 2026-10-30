@@ -27,4 +27,7 @@ export function releaseState(product,asOf){
   if(range.precision==='month')return 'uncertain';
   return range.start<=calendarShift(asOf,3)&&product.dateEvidence?.official===true?'upcoming':'uncertain';
 }
-export function releaseSortKey(product){return product.firstPublishedAt?.slice(0,10)||product.arrivalEvidence?.verifiedAt?.slice(0,10)||releaseWindow(product)?.start||'';}
+// Newest first means newest by whatever date is actually known: a published
+// release date where the brand gave one, otherwise the day it was confirmed
+// on a new-arrivals page, otherwise the day we first saw it.
+export function releaseSortKey(product){return releaseWindow(product)?.start||product.observedArrivalAt?.slice(0,10)||product.arrivalEvidence?.verifiedAt?.slice(0,10)||product.firstPublishedAt?.slice(0,10)||'';}
