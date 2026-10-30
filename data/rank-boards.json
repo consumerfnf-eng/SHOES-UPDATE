@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T06:32:29.635Z",
+  "checkedAt": "2026-10-30T08:16:02.476Z",
   "boards": [
     {
       "id": "musinsa-sneaker-ranking",
@@ -8,35 +8,33 @@
       "retailer": "Musinsa",
       "basis": "무신사 스니커즈 랭킹 · 스토어가 집계한 판매 순위",
       "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
-      "checkedAt": "2026-10-30T06:32:29.635Z",
+      "checkedAt": "2026-10-30T08:16:02.476Z",
       "size": 15,
-      "comparedWith": "2026-10-30T06:04:54.724Z",
+      "comparedWith": "2026-10-30T06:32:29.635Z",
       "items": [
         {
           "rank": 1,
-          "key": "7284480",
-          "brand": "나이키",
-          "name": "에어 조던 1 브루클린 로우 W - 블랙:메탈릭 실버 / IQ4927-001",
-          "priceLabel": "209,000원",
+          "key": "3696619",
+          "brand": "스부",
+          "name": "윈터 샌들 - 크림 스노우 도트 / KR-150",
+          "priceLabel": "65,000원",
           "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20260909/7284480/7284480_17893694308743_500.jpg",
-          "url": "https://www.musinsa.com/products/7284480",
+          "image": "https://image.msscdn.net/images/goods_img/20231108/3696619/3696619_16995066919833_500.jpg",
+          "url": "https://www.musinsa.com/products/3696619",
           "soldOut": false,
           "movement": "new"
         },
         {
           "rank": 2,
-          "key": "7460361",
-          "brand": "온루",
-          "name": "[ONRU x kinchi x 스토커즈] DUAL/WKRS - 808",
-          "priceLabel": "146,300원",
-          "discountRatio": 30,
-          "image": "https://image.msscdn.net/images/goods_img/20261006/7460361/7460361_17923779227501_500.jpg",
-          "url": "https://www.musinsa.com/products/7460361",
+          "key": "3696622",
+          "brand": "스부",
+          "name": "윈터 샌들 - 스타 / KR-170",
+          "priceLabel": "65,000원",
+          "discountRatio": 0,
+          "image": "https://image.msscdn.net/images/goods_img/20231108/3696622/3696622_16995065035611_500.jpg",
+          "url": "https://www.musinsa.com/products/3696622",
           "soldOut": false,
-          "movement": "down",
-          "previousRank": 1,
-          "change": 1
+          "movement": "new"
         },
         {
           "rank": 3,
@@ -48,12 +46,63 @@
           "image": "https://image.msscdn.net/images/goods_img/20261016/7542730/7542730_17924710191021_500.jpg",
           "url": "https://www.musinsa.com/products/7542730",
           "soldOut": false,
-          "movement": "down",
-          "previousRank": 2,
-          "change": 1
+          "movement": "same",
+          "previousRank": 3
         },
         {
           "rank": 4,
+          "key": "7261205",
+          "brand": "킨치",
+          "name": "TYPE2 BOOTS - 808 (a)",
+          "priceLabel": "296,100원",
+          "discountRatio": 10,
+          "image": "https://image.msscdn.net/images/prd_img/20260907/7261205/detail_7261205_17889422014664_500.jpg",
+          "url": "https://www.musinsa.com/products/7261205",
+          "soldOut": false,
+          "movement": "up",
+          "previousRank": 14,
+          "change": 10
+        },
+        {
+          "rank": 5,
+          "key": "4409450",
+          "brand": "아디다스",
+          "name": "도쿄 - 블랙 / JI0183",
+          "priceLabel": "117,990원",
+          "discountRatio": 15,
+          "image": "https://image.msscdn.net/images/goods_img/20240905/4409450/4409450_17700190316137_500.jpg",
+          "url": "https://www.musinsa.com/products/4409450",
+          "soldOut": false,
+          "movement": "new"
+        },
+        {
+          "rank": 6,
+          "key": "7426316",
+          "brand": "디퍼슈",
+          "name": "쿠바 스니커즈 7CM [스웨이드 아이보리]",
+          "priceLabel": "104,400원",
+          "discountRatio": 19,
+          "image": "https://image.msscdn.net/images/goods_img/20260930/7426316/7426316_17907434818300_500.jpg",
+          "url": "https://www.musinsa.com/products/7426316",
+          "soldOut": false,
+          "movement": "new"
+        },
+        {
+          "rank": 7,
+          "key": "7284480",
+          "brand": "나이키",
+          "name": "에어 조던 1 브루클린 로우 W - 블랙:메탈릭 실버 / IQ4927-001",
+          "priceLabel": "209,000원",
+          "discountRatio": 0,
+          "image": "https://image.msscdn.net/images/goods_img/20260909/7284480/7284480_17893694308743_500.jpg",
+          "url": "https://www.musinsa.com/products/7284480",
+          "soldOut": false,
+          "movement": "down",
+          "previousRank": 1,
+          "change": 6
+        },
+        {
+          "rank": 8,
           "key": "3901126",
           "brand": "뉴발란스",
           "name": "NBPFGF733K / W480SK5 (BLACK)",
@@ -63,24 +112,23 @@
           "url": "https://www.musinsa.com/products/3901126",
           "soldOut": false,
           "movement": "down",
-          "previousRank": 3,
-          "change": 1
+          "previousRank": 4,
+          "change": 4
         },
         {
-          "rank": 5,
-          "key": "5334806",
-          "brand": "어그",
-          "name": "[WOMEN] 타스만 II - 체스넛 / 1174470-CHE",
-          "priceLabel": "198,000원",
+          "rank": 9,
+          "key": "3976349",
+          "brand": "나이키",
+          "name": "에어 포스 1 07 M - 블랙 / CW2288-001",
+          "priceLabel": "149,000원",
           "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20250819/5334806/5334806_17574081587534_500.jpg",
-          "url": "https://www.musinsa.com/products/5334806",
+          "image": "https://image.msscdn.net/images/goods_img/20240321/3976349/3976349_17115804555461_500.jpg",
+          "url": "https://www.musinsa.com/products/3976349",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 5
+          "movement": "new"
         },
         {
-          "rank": 6,
+          "rank": 10,
           "key": "7407568",
           "brand": "뉴발란스",
           "name": "NBPDGF762C / MT10O6L5 (CHARCOAL)",
@@ -89,159 +137,118 @@
           "image": "https://image.msscdn.net/images/goods_img/20260928/7407568/7407568_17930883132622_500.jpg",
           "url": "https://www.musinsa.com/products/7407568",
           "soldOut": false,
-          "movement": "up",
-          "previousRank": 15,
-          "change": 9
-        },
-        {
-          "rank": 7,
-          "key": "4741660",
-          "brand": "살로몬",
-          "name": "XT-위스퍼_L47762000",
-          "priceLabel": "230,000원",
-          "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20250123/4741660/4741660_17857223023770_500.jpg",
-          "url": "https://www.musinsa.com/products/4741660",
-          "soldOut": false,
-          "movement": "new"
-        },
-        {
-          "rank": 8,
-          "key": "4678344",
-          "brand": "뉴발란스",
-          "name": "NBPDGF733B / U740BM2 (BLACK)",
-          "priceLabel": "149,000원",
-          "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20241223/4678344/4678344_17356097869270_500.jpg",
-          "url": "https://www.musinsa.com/products/4678344",
-          "soldOut": false,
           "movement": "down",
           "previousRank": 6,
-          "change": 2
-        },
-        {
-          "rank": 9,
-          "key": "7260774",
-          "brand": "아식스",
-          "name": "젤 카야노 12.1 MSS - 블랙/블랙 / 1203B424-001",
-          "priceLabel": "209,000원",
-          "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20260907/7260774/7260774_17899567121035_500.jpg",
-          "url": "https://www.musinsa.com/products/7260774",
-          "soldOut": false,
-          "movement": "new"
-        },
-        {
-          "rank": 10,
-          "key": "7276916",
-          "brand": "뉴발란스",
-          "name": "NBPDGF717B / U530JPB (BLACK)",
-          "priceLabel": "139,000원",
-          "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20260908/7276916/7276916_17889187390391_500.jpg",
-          "url": "https://www.musinsa.com/products/7276916",
-          "soldOut": false,
-          "movement": "new"
+          "change": 4
         },
         {
           "rank": 11,
-          "key": "5334814",
-          "brand": "어그",
-          "name": "[WOMEN] 타즈 II - 블랙 / 1174471-BLK",
-          "priceLabel": "228,000원",
+          "key": "4371012",
+          "brand": "나이키",
+          "name": "에어 포스 1 07 WB M - 플랙스:검 라이트 브라운:블랙:위트 / CJ9179-200",
+          "priceLabel": "169,000원",
           "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20250819/5334814/5334814_17574082145332_500.jpg",
-          "url": "https://www.musinsa.com/products/5334814",
+          "image": "https://image.msscdn.net/images/goods_img/20240826/4371012/4371012_17255868621694_500.jpg",
+          "url": "https://www.musinsa.com/products/4371012",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 11
+          "movement": "new"
         },
         {
           "rank": 12,
-          "key": "4442080",
-          "brand": "나이키",
-          "name": "에어 조던 1 로우 W - 울프 그레이:화이트 / DC0774-105",
-          "priceLabel": "134,100원",
-          "discountRatio": 10,
-          "image": "https://image.msscdn.net/images/goods_img/20240918/4442080/4442080_17271359077800_500.jpg",
-          "url": "https://www.musinsa.com/products/4442080",
+          "key": "7516547",
+          "brand": "노스페이스",
+          "name": "NS85S31B 눕시 뮬 REAL BLACK",
+          "priceLabel": "67,640원",
+          "discountRatio": 24,
+          "image": "https://image.msscdn.net/images/goods_img/20261014/7516547/7516547_17919617458276_500.jpg",
+          "url": "https://www.musinsa.com/products/7516547",
           "soldOut": false,
           "movement": "new"
         },
         {
           "rank": 13,
-          "key": "4751231",
-          "brand": "뉴발란스",
-          "name": "NBPDGF703S / M1906REH (SILVER)",
-          "priceLabel": "189,000원",
+          "key": "5359809",
+          "brand": "아디다스",
+          "name": "오즈가이아 IG6045",
+          "priceLabel": "109,000원",
           "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20250203/4751231/4751231_17864054040432_500.jpg",
-          "url": "https://www.musinsa.com/products/4751231",
+          "image": "https://image.msscdn.net/images/goods_img/20250825/5359809/5359809_17561099344778_500.jpg",
+          "url": "https://www.musinsa.com/products/5359809",
           "soldOut": false,
           "movement": "new"
         },
         {
           "rank": 14,
-          "key": "7261205",
-          "brand": "킨치",
-          "name": "TYPE2 BOOTS - 808 (a)",
-          "priceLabel": "296,100원",
-          "discountRatio": 10,
-          "image": "https://image.msscdn.net/images/prd_img/20260907/7261205/detail_7261205_17889422014664_500.jpg",
-          "url": "https://www.musinsa.com/products/7261205",
+          "key": "957758",
+          "brand": "반스",
+          "name": "컴피쿠시 올드스쿨 - (클래식) 블랙:트루 화이트/VN0A3WMAVNE1",
+          "priceLabel": "56,800원",
+          "discountRatio": 36,
+          "image": "https://image.msscdn.net/images/goods_img/20190219/957758/957758_1_500.jpg",
+          "url": "https://www.musinsa.com/products/957758",
           "soldOut": false,
-          "movement": "down",
-          "previousRank": 9,
-          "change": 5
+          "movement": "new"
         },
         {
           "rank": 15,
-          "key": "7542966",
-          "brand": "뉴발란스",
-          "name": "NBPDGF056C / U204L9G0 (CHARCOAL)",
-          "priceLabel": "159,000원",
+          "key": "5334806",
+          "brand": "어그",
+          "name": "[WOMEN] 타스만 II - 체스넛 / 1174470-CHE",
+          "priceLabel": "198,000원",
           "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20261016/7542966/7542966_17926320685490_500.jpg",
-          "url": "https://www.musinsa.com/products/7542966",
+          "image": "https://image.msscdn.net/images/goods_img/20250819/5334806/5334806_17574081587534_500.jpg",
+          "url": "https://www.musinsa.com/products/5334806",
           "soldOut": false,
-          "movement": "new"
+          "movement": "down",
+          "previousRank": 5,
+          "change": 10
         }
       ],
       "departed": [
         {
-          "key": "4741662",
-          "rank": 4,
-          "name": "살로몬 XT-6 GTX_L47450600"
+          "key": "7460361",
+          "rank": 2,
+          "name": "온루 [ONRU x kinchi x 스토커즈] DUAL/WKRS - 808"
         },
         {
-          "key": "5437435",
+          "key": "4741660",
           "rank": 7,
-          "name": "어그 [WOMEN] 클래식 울트라 미니 플랫폼 - 블랙 / 1135092-BLK"
+          "name": "살로몬 XT-위스퍼_L47762000"
         },
         {
-          "key": "595039",
+          "key": "4678344",
           "rank": 8,
-          "name": "닥터마틴 1461 3홀 블랙 스무스 / 11838002"
+          "name": "뉴발란스 NBPDGF733B / U740BM2 (BLACK)"
         },
         {
-          "key": "4371012",
+          "key": "7260774",
+          "rank": 9,
+          "name": "아식스 젤 카야노 12.1 MSS - 블랙/블랙 / 1203B424-001"
+        },
+        {
+          "key": "7276916",
           "rank": 10,
-          "name": "나이키 에어 포스 1 07 WB M - 플랙스:검 라이트 브라운:블랙:위트 / CJ9179-200"
+          "name": "뉴발란스 NBPDGF717B / U530JPB (BLACK)"
         },
         {
-          "key": "3976350",
+          "key": "5334814",
+          "rank": 11,
+          "name": "어그 [WOMEN] 타즈 II - 블랙 / 1174471-BLK"
+        },
+        {
+          "key": "4442080",
           "rank": 12,
-          "name": "나이키 에어 포스 1 07 M - 화이트 / CW2288-111"
+          "name": "나이키 에어 조던 1 로우 W - 울프 그레이:화이트 / DC0774-105"
         },
         {
-          "key": "7516547",
+          "key": "4751231",
           "rank": 13,
-          "name": "노스페이스 NS85S31B 눕시 뮬 REAL BLACK"
+          "name": "뉴발란스 NBPDGF703S / M1906REH (SILVER)"
         },
         {
-          "key": "1590036",
-          "rank": 14,
-          "name": "닥터마틴 1460 8홀 가우초 브라운 / 11822203"
+          "key": "7542966",
+          "rank": 15,
+          "name": "뉴발란스 NBPDGF056C / U204L9G0 (CHARCOAL)"
         }
       ]
     },
@@ -421,7 +428,9 @@
           "previousRank": 15
         }
       ],
-      "departed": []
+      "departed": [],
+      "staleSince": "2026-10-30T08:16:02.476Z",
+      "error": "no ranked products in the response"
     }
   ],
   "history": [
@@ -527,6 +536,45 @@
           "7460361": 2,
           "7542730": 3,
           "7542966": 15
+        },
+        "ssense-sneakers-trending": {
+          "262270M237004": 1,
+          "262011M236014": 2,
+          "262011M236013": 3,
+          "262011M237106": 4,
+          "262011M237051": 5,
+          "262011M237118": 6,
+          "262011M237074": 7,
+          "262011M237073": 8,
+          "262921M237046": 9,
+          "262921M237045": 10,
+          "262921M237042": 11,
+          "262921M237022": 12,
+          "262921M237030": 13,
+          "262921M237041": 14,
+          "262921M237029": 15
+        }
+      }
+    },
+    {
+      "checkedAt": "2026-10-30T08:16:02.476Z",
+      "boards": {
+        "musinsa-sneaker-ranking": {
+          "957758": 14,
+          "3696619": 1,
+          "3696622": 2,
+          "3901126": 8,
+          "3976349": 9,
+          "4371012": 11,
+          "4409450": 5,
+          "5334806": 15,
+          "5359809": 13,
+          "7261205": 4,
+          "7284480": 7,
+          "7407568": 10,
+          "7426316": 6,
+          "7516547": 12,
+          "7542730": 3
         },
         "ssense-sneakers-trending": {
           "262270M237004": 1,
