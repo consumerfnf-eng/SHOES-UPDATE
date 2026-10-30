@@ -21,8 +21,14 @@ export function markdownLinks(text){
   return out;
 }
 const newPath=/(?:^|[\/_-])(?:new)(?:\/|$)|(?:^|[\/_-])(?:new[\s_-]?(?:in|arrivals?|shoes)|newness|nouveautes|novita|신상품)(?:[\/_-]|$)/i;
+// A URL keeps its path percent-encoded, so a Korean store's own word for new
+// arrivals never matched: Golden Goose's women's listing is
+// /kr/ko/ls/여성/여성-신상품-w-ko_kr, which URL.pathname spells
+// /kr/ko/ls/%EC%97%AC%EC%84%B1/%EC%97%AC%EC%84%B1-%EC%8B%A0%EC%83%81%ED%92%88-w-ko_kr.
+// Decode before matching; a malformed escape is left as it was written.
+function readablePath(pathname){try{return decodeURIComponent(pathname);}catch{return pathname;}}
 export function isNewListing(url,text=''){
-  try{const u=new URL(url);return (!isProductLink(url)||/\/(?:new-arrivals?|new-in)\.html$/i.test(u.pathname))&&(newPath.test(u.pathname.replace(/\.html$/i,''))||newPath.test(u.searchParams.get('cgid')||'')||/^#\s+(?:new arrivals?|new in(?:\s+shoes)?|new shoes|신상품)\s*$/im.test(text));}catch{return false;}
+  try{const u=new URL(url),path=readablePath(u.pathname);return (!isProductLink(url)||/\/(?:new-arrivals?|new-in)\.html$/i.test(u.pathname))&&(newPath.test(path.replace(/\.html$/i,''))||newPath.test(u.searchParams.get('cgid')||'')||/^#\s+(?:new arrivals?|new in(?:\s+shoes)?|new shoes|신상품)\s*$/im.test(text));}catch{return false;}
 }
 const productPath=/\/(?:products?|produtos|p|pr|pd|t)\/|\/[^/]+\.html(?:$|\?)|(?:-p-|\/p-)[a-z0-9]|\/(?:men|women)\/footwear\/[^/]+\/[^/?]+|\/[0-9]{6,}(?:[.?/]|$)/i;
 function isProductLink(url){try{const u=new URL(url);return productPath.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}

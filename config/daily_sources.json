@@ -410,8 +410,20 @@
   ],
   "Golden Goose": [
     {
-      "name": "Golden Goose Official daily source",
-      "url": "https://www.goldengoose.com/"
+      "name": "Golden Goose Official New Arrivals (women, KR)",
+      "url": "https://www.goldengoose.com/kr/ko/ls/여성/여성-신상품-w-ko_kr"
+    },
+    {
+      "name": "Golden Goose Official New Arrivals (men, KR)",
+      "url": "https://www.goldengoose.com/kr/ko/ls/남성/남성-신상품-m-ko_kr"
+    },
+    {
+      "name": "Golden Goose Official sneakers (women, KR)",
+      "url": "https://www.goldengoose.com/kr/ko/ls/여성/스니커즈-w-ko_kr"
+    },
+    {
+      "name": "Golden Goose Official sneakers (men, KR)",
+      "url": "https://www.goldengoose.com/kr/ko/ls/남성/스니커즈-m-ko_kr"
     }
   ],
   "Gucci": [

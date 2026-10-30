@@ -80,6 +80,23 @@ test('a New badge binds to its own product and newest sorting does not prove New
  assert(!isNewListing('https://www.miumiu.com/us/en/p/new-balance-sneakers/ABC123'));
  assert.equal(parseArrivalListing(md,{...context,url:'https://www.prada.com/us/en/womens/new-in/c/10111US'}).length,2);
 });
+test("a Korean store's own word for new arrivals is read through the percent-encoded path",()=>{
+ // Golden Goose's women's listing, exactly as the store writes it. URL.pathname
+ // keeps it escaped, so matching the raw pathname never saw 신상품 and the whole
+ // brand read as a listing with no New section.
+ const women='https://www.goldengoose.com/kr/ko/ls/여성/여성-신상품-w-ko_kr';
+ assert(isNewListing(women));
+ assert(isNewListing(new URL(women).href));
+ assert(isNewListing('https://www.goldengoose.com/kr/ko/ls/%EB%82%A8%EC%84%B1/%EB%82%A8%EC%84%B1-%EC%8B%A0%EC%83%81%ED%92%88-m-ko_kr'));
+ // A plain sneakers category is still not a New listing, and a broken escape
+ // is matched as written rather than throwing.
+ assert(!isNewListing('https://www.goldengoose.com/kr/ko/ls/여성/스니커즈-w-ko_kr'));
+ assert(!isNewListing('https://www.goldengoose.com/kr/ko/ls/%E0%A4%A'));
+ const context={brand:'Golden Goose',url:women,checkedAt:now.toISOString()};
+ const md=`# 여성 신상품\n\n[![Golden Goose - 여성 슈퍼스타](https://www.goldengoose.com/star.jpg) 여성 퍼플 스웨이드 슈퍼스타](https://www.goldengoose.com/kr/ko/여성-슈퍼스타-cod-GWF01153.F009126.25836.html)`;
+ const [row]=parseArrivalListing(md,context);
+ assert.equal(row.arrivalEvidence.kind,'new-arrivals-listing');
+});
 test('navigation popups do not truncate products and category redirects are never product evidence',()=>{
  const md=`## SUBSCRIBE TO OUR NEWSLETTER\nNavigation\n## New Arrivals\n[![Runner sneakers](https://www.prada.com/ABC123_SLS.jpg) **Runner sneakers**](${url})\n[![Court](https://www.prada.com/court.jpg) Court Sneakers](https://www.prada.com/geored?urlInn=mens/shoes/court/c/11007.html)`;
  const rows=parseArrivalListing(md,{brand:'Prada',url:'https://www.prada.com/new/',checkedAt:now.toISOString()});assert.equal(rows.length,1);assert.equal(rows[0].url,url);
