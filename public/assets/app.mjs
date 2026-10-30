@@ -14,7 +14,7 @@ const PAGE_SIZE = 40;
 const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter']];
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter'};
-let catalog = null, overlay = null, trends = null, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
+let catalog = null, overlay = null, trends = null, rankBoards = null, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
 const activeVariant = new Map();
 function groupKey(p){ return variantGroupKey(p); }
 function colorGroupOf(p){
@@ -207,6 +207,13 @@ async function loadSupplements() {
     }
   } catch { overlay = null; }
   try {
+    const ranked = await fetch('./data/rank-boards.json', {cache:'no-cache'});
+    if (ranked.ok) {
+      const snapshot = await ranked.json();
+      if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.boards)) { rankBoards = snapshot; changed = true; }
+    }
+  } catch { rankBoards = null; }
+  try {
     const ranking = await fetch('./data/trend-keywords.json', {cache:'no-cache'});
     if (ranking.ok) {
       const snapshot = await ranking.json();
@@ -358,6 +365,60 @@ const bar=(label,count,total,swatch)=>{
     +`<span class="dist-track"><span class="dist-fill" style="width:${Math.max(1.5,pct)}%"></span></span>`
     +`<span class="dist-value">${count.toLocaleString()}<small>${pct.toFixed(1)}%</small></span></div>`;
 };
+// Two boards read from the shops themselves: what Musinsa's own sales ranking
+// says is selling, and what SSENSE puts first when its sneakers page is left
+// in the order it arrives in - which the site labels TRENDING.
+//
+// A rank on its own says little; what moved is the point. Each reading is
+// compared with the one before it, so a card can say it climbed four places,
+// arrived this week, or slipped two - and the board says which shoes dropped
+// out of it entirely.
+const MOVEMENT={
+  up:{mark:'▲',label:'상승'},
+  down:{mark:'▼',label:'하락'},
+  new:{mark:'NEW',label:'신규 진입'},
+  same:{mark:'–',label:'변동 없음'},
+  first:{mark:'·',label:'첫 집계'},
+};
+function movementMarkup(item){
+  const move=MOVEMENT[item.movement]||MOVEMENT.first;
+  const amount=item.movement==='up'||item.movement==='down'?String(item.change||0):'';
+  const title=item.previousRank?`지난 집계 ${item.previousRank}위`:move.label;
+  return `<span class="rank-move ${esc(item.movement||'first')}" title="${esc(title)}">${esc(move.mark)}${amount?' '+esc(amount):''}</span>`;
+}
+function renderRankBoards(){
+  const host=$('rank-boards');
+  if(!host)return;
+  const boards=(rankBoards?.boards||[]).filter(board=>board.items?.length);
+  host.hidden=!boards.length;
+  if(!boards.length)return;
+  host.innerHTML=boards.map(board=>{
+    const moved=board.items.filter(i=>i.movement==='up'||i.movement==='down').length;
+    const fresh=board.items.filter(i=>i.movement==='new').length;
+    const summary=board.comparedWith
+      ? `${dateText(board.comparedWith)} 집계 대비 · 신규 ${fresh}개 · 순위 변동 ${moved}개${board.departed?.length?` · 이탈 ${board.departed.length}개`:''}`
+      : '첫 집계입니다. 다음 주부터 순위 변동을 표시합니다.';
+    return `<article class="rank-board">
+      <header class="rank-board-head">
+        <div><h3>${esc(board.label)} <span class="rank-size">TOP ${board.items.length}</span></h3>
+        <p class="muted">${esc(board.basis)} · ${esc(dateText(board.checkedAt,true))} 확인${board.staleSince?' · 이번 회차 수집 실패, 직전 집계를 표시합니다':''}</p>
+        <p class="muted">${esc(summary)}</p></div>
+        <a class="text-button" href="${esc(safeUrl(board.sourceUrl))}" target="_blank" rel="noopener noreferrer">원본 랭킹 ↗</a>
+      </header>
+      <ol class="rank-list">${board.items.map(item=>`<li class="rank-item">
+        <span class="rank-number">${item.rank}</span>
+        ${movementMarkup(item)}
+        <a class="rank-photo" href="${esc(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer">${
+          safeUrl(item.image)?`<img src="${esc(item.image)}" alt="${esc(item.brand+' '+item.name)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`:'<span class="image-missing">사진 없음</span>'}</a>
+        <span class="rank-copy"><span class="rank-brand">${esc(item.brand||'브랜드 미표기')}</span>
+          <a class="rank-name" href="${esc(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer">${esc(item.name)}</a>
+          <span class="rank-price">${esc(item.priceLabel||'가격 미표기')}${item.discountRatio?` <small>${item.discountRatio}%</small>`:''}${item.soldOut?' <small>품절</small>':''}</span></span>
+      </li>`).join('')}</ol>
+      ${board.departed?.length?`<p class="rank-departed">이번 집계에서 빠짐: ${board.departed.map(d=>`${d.rank}위 ${esc(d.name||d.key)}`).join(' · ')}</p>`:''}
+    </article>`;
+  }).join('');
+  bindImageErrors(host);
+}
 function renderAnalysis(){
   const section=$('analysis');
   if(!section)return;
@@ -367,7 +428,9 @@ function renderAnalysis(){
   // belongs to the grid, not to a distribution.
   for(const sel of ['#product-grid','.results-bar','.selection-row','#pagination','#selection-bar','#empty-state'])
     document.querySelector(sel)?.classList.toggle('hidden-by-analysis',on);
+  $('rank-boards').hidden=!on||!(rankBoards?.boards||[]).some(b=>b.items?.length);
   if(!on)return;
+  renderRankBoards();
   const rows=analysisScope();
   $('analysis-scope').textContent=`현재 필터 기준 ${rows.length.toLocaleString()}개 상품 · ${RATE_NOTE}`;
 

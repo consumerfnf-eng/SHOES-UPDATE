@@ -55,6 +55,12 @@ jobs:
           else
             npm run weekly -- --only-if-stale
           fi
+      - name: Read each retailer's own ranking board
+        # Not part of the catalogue: two boards read straight from the shops,
+        # compared with the previous week's reading. A board that cannot be
+        # read keeps the last one that could, so this never fails the run.
+        continue-on-error: true
+        run: npm run ranks
       - name: Cache verified official photos before publication
         run: npm run photos
       - name: Read each product's colour off its own cached photo
@@ -76,7 +82,7 @@ jobs:
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json public/data/catalog.json public/images
+          git add data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json public/data/catalog.json public/data/rank-boards.json public/images
           if ! git diff --cached --quiet; then
             git commit -m "weekly curated shoes update $(date -u +%F)"
             # main moves while this runs (the daily workflow, or a person

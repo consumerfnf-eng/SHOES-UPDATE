@@ -10,6 +10,17 @@ for(const folder of ['collector','internal']){try{await fs.access(new URL(`publi
 try{await fs.access(new URL('public/data/catalog-source.json',root));throw Error('Raw source must not be deployed');}catch(e){if(e.code!=='ENOENT')throw e;}
 // Check all shipped text, including external JS modules; moving a crawler out of HTML
 // must not accidentally move it into another public asset.
+// The retailer boards are published as their own file: a reader on the data
+// tab should not wait for them, and the grid does not use them at all.
+try {
+  const boards = await fs.readFile(new URL('data/rank-boards.json', root), 'utf8');
+  const parsed = JSON.parse(boards);
+  const published = {schemaVersion: parsed.schemaVersion, checkedAt: parsed.checkedAt, boards: parsed.boards};
+  await fs.writeFile(new URL('public/data/rank-boards.json', root), JSON.stringify(published) + '\n');
+  console.log(`Published ${parsed.boards.filter(b => b.items?.length).length} retailer ranking boards.`);
+} catch (error) {
+  if (error.code !== 'ENOENT') throw error;
+}
 const publicRoot=fileURLToPath(new URL('public/',root));
 async function inspect(directory){for(const entry of await fs.readdir(directory,{withFileTypes:true})){
   const filename=path.join(directory,entry.name),relative=path.relative(publicRoot,filename).replaceAll('\\','/');
