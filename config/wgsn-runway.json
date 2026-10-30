@@ -29,17 +29,44 @@
     {
       "id": "women-full-length",
       "label": "여성 전신",
-      "filters": {"seasons": ["2913181"], "market": ["49153"], "view": ["19087"]}
+      "filters": {
+        "seasons": [
+          "2913181"
+        ],
+        "market": [
+          "49153"
+        ],
+        "view": [
+          "19087"
+        ]
+      }
     },
     {
       "id": "men-full-length",
       "label": "남성 전신",
-      "filters": {"seasons": ["2913181"], "market": ["49154"], "view": ["19087"]}
+      "filters": {
+        "seasons": [
+          "2913181"
+        ],
+        "market": [
+          "49154"
+        ],
+        "view": [
+          "19087"
+        ]
+      }
     },
     {
       "id": "details",
       "label": "디테일 (신발·액세서리 클로즈업)",
-      "filters": {"seasons": ["2913181"], "image_type": ["873591"]},
+      "filters": {
+        "seasons": [
+          "2913181"
+        ],
+        "image_type": [
+          "873591"
+        ]
+      },
       "footwearShelf": true,
       "basis": "The Details shelf is where a shoe is photographed on its own; a full-length look carries it at a few hundred pixels."
     }
@@ -48,5 +75,76 @@
     "longEdge": 2000,
     "shortEdge": 1000,
     "note": "The October collection's own floor. No upscaling."
+  },
+  "librarySearch": {
+    "note": "The saved search the user actually wants collected: WGSN's Fashion Design image library narrowed to footwear tags, where every result is a shoe shot on its own. This is NOT the catwalks search the rest of this file describes - those shelves return whole collections, 1,565 of whose 3,648 images are head-to-toe looks with the shoe at a few hundred pixels. 3,253 results at the time it was shared.",
+    "url": "https://www.wgsn.com/library/results/30dba7bae6937da6c7fee0a2afcbd400",
+    "sharedOn": "2026-10-30",
+    "expectedResults": 3253,
+    "section": "Fashion Design > Image Library & Design Resources",
+    "imageType": [
+      "Details & Accessories",
+      "Backstage"
+    ],
+    "tags": [
+      "Catwalks",
+      "Women",
+      "Men",
+      "Winter/Snow Boots",
+      "Wellington/Rain Boots",
+      "Walking/Hiking Boots",
+      "Thongs/Flip-Flops",
+      "Tennis/Court",
+      "Sports Sandals/Active Sandals",
+      "Sport Shoes",
+      "Soccer/Football",
+      "Sneakers",
+      "Slipper Boots",
+      "Slip-on",
+      "Slide Slippers",
+      "Skateboarding",
+      "Sheepskin/Shearling Boots",
+      "Running/Performance",
+      "Riding Boots",
+      "Retro Runners",
+      "Recovery Slides",
+      "Plimsolls",
+      "Outdoor/Hiking",
+      "Novelty Slippers",
+      "Monk Shoes",
+      "Moccasins/Driving Shoes",
+      "Moccasins/Drivers",
+      "Moccasin Slippers",
+      "Mid/Calf Boots",
+      "Mary Janes",
+      "Lifestyle Sneakers",
+      "Knee/Over-The-Knee",
+      "Hiking Boots",
+      "Hi-Tops",
+      "Gym/Training Shoes",
+      "Flats/Ballet",
+      "Fisherman Sandals",
+      "Espadrilles",
+      "Desert/Chukka/Moccasin Boots",
+      "Desert Boots/Chukkas",
+      "Deck/Boat Shoes",
+      "Chelsea Boots",
+      "Cap Toe/Spectator",
+      "Brothel Creepers/Platforms",
+      "Brogue/Wingtip",
+      "Basketball/High-Tops",
+      "Barefoot/Five-Toe",
+      "Ballet Flats",
+      "Ballerina Slippers",
+      "Apron Toe Boots",
+      "Active/Sport",
+      "Sandal Slippers",
+      "Details & Accessories",
+      "Side View",
+      "Backstage"
+    ],
+    "caption": "Brand / Season / City, as the library prints it under each result.",
+    "dedupe": "One shoe, one card. The library returns several frames of one look - the October catwalk import had 151 pairs within hamming 4 of each other - so a perceptual hash has to collapse them at collection time, not only the SHA-256 that catches a byte-identical file.",
+    "status": "not yet collected - needs the logged-in browser session"
   }
 }

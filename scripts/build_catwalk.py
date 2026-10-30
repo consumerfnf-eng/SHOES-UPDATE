@@ -49,6 +49,18 @@ CONFIG = os.path.join(ROOT, 'config', 'wgsn-runway.json')
 CARD_WIDTH = 480
 WEBP_QUALITY = 80
 
+# One shoe, one card. The file name is the photograph's SHA-256, so a
+# byte-identical copy can never become two cards - but the library returns
+# several frames of one look, and those are different bytes. A perceptual hash
+# is what sees them: the October catwalk set had 151 pairs within hamming 4 of
+# each other, nearly all consecutive frames of one model walking.
+#
+# Compared within a brand only. At distance 4 the set already contained a
+# cross-brand pair (an AGNES B look against an MSGM one), so a global
+# comparison at a threshold loose enough to catch consecutive frames would
+# start merging different shoes.
+SAME_LOOK = 6
+
 
 def read_json(path, fallback=None):
     try:
@@ -90,6 +102,41 @@ def resolve_city(image, by_sha, by_brand):
     return '', ''
 
 
+def _phash(path):
+    from PIL import Image
+    sys.path.insert(0, os.path.join(ROOT, 'scripts', 'monthly'))
+    from image_signals import dhash
+    with Image.open(path) as im:
+        return dhash(im)
+
+
+def _hamming(a, b):
+    if not a or not b or len(a) != len(b):
+        return 99
+    return bin(int(a, 16) ^ int(b, 16)).count('1')
+
+
+def collapse_same_look(looks, status):
+    """Drop a look whose photograph is another frame of one already kept.
+
+    The survivor is the first by card id, which is the SHA-256 and therefore
+    stable: the same set collapses the same way on every rebuild.
+    """
+    kept, dropped = [], []
+    by_brand = collections.defaultdict(list)
+    for look in looks:
+        twin = next((k for k in by_brand[look['brand']]
+                     if _hamming(k['phash'], look['phash']) <= SAME_LOOK), None)
+        if twin is None:
+            by_brand[look['brand']].append(look)
+            kept.append(look)
+            continue
+        twin.setdefault('alsoShotAs', []).append(look['id'])
+        dropped.append(look)
+    status['sameLookCollapsed'] = len(dropped)
+    return kept, dropped
+
+
 def card_id(image):
     """The photograph's own SHA-256, shortened - stable across rebuilds."""
     return (image.get('sha256') or '')[:16]
@@ -106,12 +153,12 @@ def render(source_root, image, force=False):
     out = os.path.join(OUT_IMAGES, name)
     if os.path.exists(out) and not force:
         with Image.open(out) as done:
-            return f'/catwalk/{name}', done.width, done.height
+            return f'/catwalk/{name}', done.width, done.height, _phash(out)
     with Image.open(local) as original:
         card = original.convert('RGB')
         card.thumbnail((CARD_WIDTH, CARD_WIDTH * 4), Image.LANCZOS)
         card.save(out, 'WEBP', quality=WEBP_QUALITY, method=6)
-        return f'/catwalk/{name}', card.width, card.height
+        return f'/catwalk/{name}', card.width, card.height, _phash(out)
 
 
 def main():
@@ -122,6 +169,8 @@ def main():
     parser.add_argument('--cities', action='append', default=[],
                         help='a rename record carrying brand/city/sha256; repeatable')
     parser.add_argument('--force', action='store_true', help='re-render photos already rendered')
+    parser.add_argument('--keep-every-frame', action='store_true',
+                        help='do not collapse several frames of one look into a single card')
     args = parser.parse_args()
 
     try:
@@ -176,20 +225,25 @@ def main():
         if not rendered:
             skipped += 1
             continue
-        path, width, height = rendered
+        path, width, height, phash = rendered
         city, evidence = resolve_city(image, by_sha, by_brand)
-        counts[city or '(미확인)'] += 1
         looks.append({
             'id': card_id(image), 'brand': image.get('brand') or '', 'season': image.get('season') or season,
             'city': city, 'cityEvidence': evidence,
             'market': image.get('category') or '', 'imageType': image.get('image_type') or '',
             'shelf': shelf_of(image) or '',
-            'image': path, 'width': width, 'height': height,
+            'image': path, 'width': width, 'height': height, 'phash': phash,
         })
         if index % 250 == 0:
             print(f'  {index}/{len(images)} rendered', flush=True)
 
     looks.sort(key=lambda look: (look['brand'].lower(), look['imageType'], look['id']))
+    collapse = {}
+    if not args.keep_every_frame:
+        looks, duplicates = collapse_same_look(looks, collapse)
+        print(f"{collapse['sameLookCollapsed']} further frames of a look already kept were dropped.")
+    for look in looks:
+        look.pop('phash', None)
     payload = {
         'schemaVersion': 1, 'provider': config['provider'], 'season': season, 'seasonId': season_id,
         'builtAt': __import__('datetime').datetime.now().astimezone().isoformat(),
@@ -207,6 +261,9 @@ def main():
         json.dump(payload, f, ensure_ascii=False, separators=(',', ':'))
         f.write('\n')
 
+    # Counted after the collapse, so the number reported is the number of cards.
+    for look in looks:
+        counts[look['city'] or '(미확인)'] += 1
     brands = len({look['brand'] for look in looks})
     print(f'{len(looks)} catwalk cards from {brands} shows ({skipped} skipped). '
           f'Cities: {dict(counts.most_common())}')
