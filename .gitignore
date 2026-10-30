@@ -24,3 +24,13 @@ reports/
 data/monthly-staging-*.json
 
 logs/*.txt
+
+# WGSN catwalk renditions and the snapshot that indexes them. This repository
+# is public, so committing them would redistribute subscription imagery to
+# anyone on github.com no matter what access control the site itself carries.
+# They are built locally by `npm run catwalk` and deployed only to the
+# access-controlled internal project by `npm run internal` - see
+# docs/internal-deployment.md. The public build simply has no catwalk.json,
+# and the tab hides itself when there is none.
+public/catwalk/
+public/data/catwalk.json
