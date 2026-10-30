@@ -4,10 +4,11 @@ import {curateProduct,POLICY,validDay,httpUrl,shiftMonth,validateSignals,popular
 import {validateSocialMetrics,withSocialComparisons} from './social-metrics.mjs';
 import {releaseWindow,releaseState} from '../public/assets/release-window.mjs';
 import {hasArrivalEvidence,publicationWindow} from '../public/assets/publication-window.mjs';
+import {hasObservedArrival} from '../public/assets/observed-arrival.mjs';
 import {SEARCH_CONCEPTS,validPublicSearchConcepts,productCollaborationBrands} from './keyword-taxonomy.mjs';
 import {buildKeywordCatalog,KEYWORD_METHOD} from './search-keywords.mjs';
 import {buildStyleTrendBoard} from './style-trend-board.mjs';
-export function validateSnapshot(catalog) {
+export function validateSnapshot(catalog, {watch=null}={}) {
   assert.equal(catalog.schemaVersion,1);assert(Array.isArray(catalog.products));assert(Array.isArray(catalog.brands));assert(Array.isArray(catalog.keywords));
   assert(Number.isFinite(Date.parse(catalog.publishedAt)),'Invalid publication timestamp');assert(validDay(catalog.asOf),'Invalid catalog date');
   // Older snapshots used keywordCheckedAt for both collection and evaluation.
@@ -33,10 +34,17 @@ export function validateSnapshot(catalog) {
     assert(p.fitReasons===undefined||Array.isArray(p.fitReasons),'Invalid selection reasons');
     const release=releaseWindow(p),state=releaseState(p,catalog.asOf);
     const arrival=hasArrivalEvidence(p,catalog.asOf);
-    assert(release||arrival,'Missing release or official New Arrivals evidence');
+    // A shoe that turned up on a brand's shelf while we were watching it is
+    // dated by that observation, which is the third thing a record can stand
+    // on. Curation has published on it since the watch was written down; this
+    // list had only the first two, so the first run where the watch actually
+    // carried a product failed the build and 1,133 products never left CI.
+    const observed=!!p.observedArrivalAt&&validDay(p.observedArrivalAt)
+      &&(!watch||hasObservedArrival(p,catalog.asOf,watch));
+    assert(release||arrival||observed,'Missing release, New Arrivals or observed-arrival evidence');
     assert(['released','upcoming'].includes(state),'Product outside confirmed publication window');
     assert.equal(p.releaseStatus,state,'Wrong release state');
-    if(!arrival){
+    if(!arrival&&!observed){
       assert(p.dateEvidence?.verified===true&&['day','month'].includes(p.dateEvidence.precision),'Missing release evidence');
       assert(httpUrl(p.dateEvidence.url)&&p.dateEvidence.excerpt&&Number.isFinite(Date.parse(p.dateEvidence.verifiedAt)),'Invalid release provenance');
     }
@@ -80,4 +88,8 @@ export function validateSnapshot(catalog) {
   if(catalog.styleTrendKeywords?.method==='verified-style-board-v1')assert.deepEqual(catalog.styleTrendKeywords,buildStyleTrendBoard(catalog.products,catalog.styleTrendKeywords.observations,{now:keywordEvaluatedAt,updated:catalog.styleTrendKeywords.updated,sourceRanks:catalog.sourceRanks}),'Style board must match fresh evidence and bilingual product attributes');
   return true;
 }
-if(process.argv[1]?.endsWith('validate_catalog.mjs')){const c=JSON.parse(await fs.readFile(new URL('../public/data/catalog.json',import.meta.url),'utf8'));validateSnapshot(c);console.log(`PASS: ${c.products.length} products; mandatory25; exact dates, taxonomy and calendar window.`);}
+if(process.argv[1]?.endsWith('validate_catalog.mjs')){const c=JSON.parse(await fs.readFile(new URL('../public/data/catalog.json',import.meta.url),'utf8'));
+  // The same watch curation published on, so an observed arrival is checked
+  // against the record of when we started reading that brand's shelf.
+  const watch=await fs.readFile(new URL('../data/source-watch.json',import.meta.url),'utf8').then(JSON.parse).catch(()=>null);
+  validateSnapshot(c,{watch});console.log(`PASS: ${c.products.length} products; mandatory25; exact dates, taxonomy and calendar window.`);}

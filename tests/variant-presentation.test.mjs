@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {variantGroupName,variantGroupKey,groupProductVariants,preferWomenVariants,productAudience,uniqueColorVariants,variantColorLabel} from '../public/assets/catalog-view.mjs';
+import {variantGroupName,variantGroupKey,groupProductVariants,preferWomenVariants,productAudience,uniqueColorVariants,variantColorLabel,variantMaterialLabel} from '../public/assets/catalog-view.mjs';
 import {officialVariantLabels,parseArrivalListing,listingProduct,adidasProductColor,collectNewArrivals} from '../scripts/new-arrivals.mjs';
 import fs from 'node:fs';
 import {applyReviewedEvidence} from '../scripts/publish-curated.mjs';
@@ -121,7 +121,16 @@ test('category delimiters and dangling color prepositions do not split otherwise
  assert.equal(groupProductVariants(salomon).length,1);assert.equal(variantGroupName(salomon[0]),'XT-6');
  const gucci=[{brand:'Gucci',name:"Women's Drip sneaker",colorway:'White Suede'},{brand:'Gucci',name:"Men's Drip sneaker in sand and brown GG canvas",colorway:'Sand and Brown GG Canvas'}];
  assert.equal(groupProductVariants(gucci).length,1);assert.equal(variantGroupName(gucci[1]),'Drip sneaker');
- assert.equal(variantGroupName({name:'Runner in Suede',colorway:'White'}),'Runner in Suede','Unmatched material descriptions stay intact');
+ // A material the name ends in is the variant, not the model: Lanvin's Curb
+ // reaches us as Curb Snake, Curb Felt and Curb Velvet, and they are one
+ // Curb in three materials. The preposition holding it on goes with it.
+ assert.equal(variantGroupName({name:'Runner in Suede',colorway:'White'}),'Runner');
+ assert.equal(variantMaterialLabel({name:'Runner in Suede'}),'Suede');
+ // Taking the material away must leave a model behind; when the material is
+ // the whole name, the name stands.
+ assert.equal(variantGroupName({name:'Suede Sneakers'}),'Suede Sneakers');
+ // And it is read off the end only: 29CM's 어반트렉 메시 Ver. 3 keeps its 메시.
+ assert.equal(variantGroupName({name:'어반트렉 메시 Ver. 3'}),'어반트렉 메시 Ver. 3');
 });
 test('duplicate color labels normalize separators without merging different colors with the same chip fill',()=>{
  const rows=[{id:'m',colorway:'Solar Turbo / Core Black / Lucid Red'},{id:'w',colorway:'SOLAR TURBO/Core Black/Lucid Red'},{id:'other',colorway:'Lucid Red / Core Black / Solar Turbo'}];

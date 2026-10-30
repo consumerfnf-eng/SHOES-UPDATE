@@ -202,7 +202,7 @@ import {compareByBrandGroup} from './brand-groups.mjs';
 export {releaseWindow,releaseSortKey};
 // A comma is a separator too: Musinsa writes "어반트렉 메시 Ver. 3, 버건디",
 // and lifting the colour off the end leaves the comma behind.
-const trimModelSeparators = value => value.replace(/\s+/g,' ').replace(/[\s|·—–,/-]+$/u,'').trim();
+const trimModelSeparators = value => value.replace(/\s+/g,' ').replace(/[&+]\s*$/,'').replace(/[\s|·—–,/-]+$/u,'').trim();
 const audienceLabel = "(?:men(?:['’]s|s)?|women(?:['’]s|s)?|unisex|남성(?:용)?|여성(?:용)?|남녀공용)";
 function withoutAudienceLabel(value) {
   // Only audience labels at the edges or immediately before a footwear suffix
@@ -249,6 +249,62 @@ const memo = (cache, p, compute) => {
 };
 export function variantGroupName(p) { return memo(NAME_CACHE, p, computeVariantGroupName); }
 export function variantGroupKey(p) { return memo(KEY_CACHE, p, computeVariantGroupKey); }
+// What a shoe is made of is not which shoe it is.
+//
+// Lanvin's Curb reaches SSENSE as Curb Snake, Curb Felt, Curb Velvet, Curb
+// Faux Fur, Curb Dino-Effect and Curb Metallic Technical Fabric - one
+// silhouette in six materials, and six cards. The retailer's own product code
+// does not separate them either: 262254M237 is shared by every Lanvin men's
+// sneaker it sells, so the code says brand and category and nothing about the
+// model. The name is what carries the model, once the material is taken off
+// it the way the colour already is.
+//
+// Only the tail of a name is read this way. "Leather Court" keeps its
+// leather, because a material in front of the model is part of how the shoe
+// is known; "Court Leather Sneakers" does not.
+const CATEGORY_SUFFIX = /\s+(?:running\s+)?(?:shoes?|sneakers?|trainers?)\s*$/i;
+const MATERIAL_WORDS = ['leather','nappa leather','full leather','used leather','calfskin','suede','nubuck',
+  'nylon','mesh','canvas','textile','knit','felt','velvet','satin','denim','shearling','faux fur','fur',
+  'patent','patent leather','perforated','quilted','snake','croc','crocodile','python','dino-effect',
+  'metallic','metallic technical fabric','technical fabric','rubber','raffia','linen','wool','cotton',
+  '가죽','스웨이드','누벅','나일론','메시','캔버스','니트','펠트','벨벳','데님','퍼','인조퍼','스네이크'];
+const escapeWord = word => word.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&');
+// Read only off the end of a name. 29CM lists '어반트렉 메시 Ver. 3', whose
+// 메시 is in the middle of the model's own name, and taking it out there
+// merged two different shoes. A material is taken off only while it is the
+// last thing the name says, one word at a time, so 'Felt & Nappa Leather'
+// comes off whole and nothing in front of the model is touched.
+const MATERIAL_SUFFIX = new RegExp('(?:^|[\\s|—–-])(?:' +
+  MATERIAL_WORDS.slice().sort((a, b) => b.length - a.length).map(escapeWord).join('|') +
+  ')\\s*$', 'i');
+const TRAILING_JOINER = /[&+,]\s*$|\s+(?:and|und|et|in|with|en)\s*$/i;
+/** The material words a name ends in, outermost first, as one label. */
+export function variantMaterialLabel(p) {
+  let name = String(p?.name || '').replace(CATEGORY_SUFFIX, ' ').trim();
+  const found = [];
+  for (let i = 0; i < 6; i++) {
+    const match = name.match(MATERIAL_SUFFIX);
+    if (!match) { const joiner = name.match(TRAILING_JOINER); if (!joiner) break; name = name.slice(0, -joiner[0].length).trim(); continue; }
+    found.unshift(match[0].replace(/^[\\s|—–-]+/, '').trim());
+    name = name.slice(0, match.index).trim();
+  }
+  if (!found.length || !lettersIn(name)) return '';
+  return found.map(w => w.replace(/\\b[a-z]/g, c => c.toUpperCase())).join(' ');
+}
+/** The name with its trailing material removed, or unchanged when removing it
+ *  would leave no model behind. */
+function withoutTrailingMaterial(value) {
+  let name = String(value || '').replace(CATEGORY_SUFFIX, ' ').trim();
+  let changed = false;
+  for (let i = 0; i < 6; i++) {
+    const match = name.match(MATERIAL_SUFFIX);
+    if (!match) { const joiner = name.match(TRAILING_JOINER); if (!joiner) break; name = name.slice(0, -joiner[0].length).trim(); continue; }
+    const next = name.slice(0, match.index).trim();
+    if (lettersIn(next) < 2) break;
+    name = next; changed = true;
+  }
+  return changed ? name : String(value || '');
+}
 function computeVariantGroupName(p) {
   // When the collection step resolved this listing to a model, that name is
   // the card's name. It is the only one that is right for a card standing
@@ -265,13 +321,44 @@ function computeVariantGroupName(p) {
   // A declared trailing color can leave "sneaker in" behind (e.g. Gucci).
   if (base !== p.name) base = base.replace(/\s+in\s*$/i,'');
   base = withoutLeadingNoise(base.replace(TRAILING_STYLE_CODE,' '));
+  // Then the material, by the same reasoning as the colour: Curb Snake and
+  // Curb Velvet are one Curb.
+  base = withoutTrailingMaterial(base);
   return withoutAudienceLabel(trimModelSeparators(base))||p.name;
+}
+// Three Footwear News pieces about the Celine x Reebok Freestyle Lo ran as
+// three cards. Two of them share a photograph - the same file, the same
+// perceptual hash - and all three name the collaboration in their own words:
+// "the Celine x Reebok Freestyle Lo", "Celine and Reebok's collaboration",
+// "Celine and Reebok's Freestyle Lo Sneaker".
+//
+// An article is still one card by default, because a publisher's tag is not a
+// model and keying 42 pieces on it merged them into one "Michael Jordan" card.
+// But where two pieces are provably about the same shoe, the newest stands for
+// them: a collaboration the article names itself, or failing that an identical
+// photograph.
+function collaborationPartner(brand, text) {
+  const name = String(brand || '').trim();
+  if (!name || !text) return '';
+  const pattern = new RegExp(escapeWord(name) + "(?:['’]s)?" + '\\s*(?:x|×|and|&)\\s*' +
+    '([\\p{Lu}][\\p{L}\\d.&\'’-]+)', 'iu');
+  // "Celine and Reebok's Freestyle Lo" names Reebok, not Reeboks.
+  const found = (text.match(pattern)?.[1] || '').replace(/['’]s$/i, '');
+  return /^(?:the|a|an|its|his|her|their|new|more|other|this|that)$/i.test(found) ? '' : found;
+}
+function newsletterSubjectKey(p) {
+  const brand = String(p?.brand || '').normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu, '').toLowerCase();
+  if (!brand) return '';
+  const partner = collaborationPartner(p.brand, [p.fullName, p.name, p.excerpt].filter(Boolean).join(' · '));
+  if (partner) return `subject|${brand}|${partner.toLowerCase().replace(/[^a-z0-9]+/g, '')}`;
+  if (/^[0-9a-f]{12,}$/i.test(String(p?.photoHash || ''))) return `subject|${brand}|${String(p.photoHash).toLowerCase()}`;
+  return '';
 }
 function computeVariantGroupKey(p) {
   // A newsletter item is an article, not a SKU. Grouping those by model name
   // merged 42 separate Footwear News pieces into one "Michael Jordan" card,
   // because the publisher's tag is the model name. One article, one card.
-  if (isOverlay(p) && overlayKind(p) === 'newsletter') return `article|${p.id}`;
+  if (isOverlay(p) && overlayKind(p) === 'newsletter') return newsletterSubjectKey(p) || `article|${p.id}`;
   // The collection pipeline resolved this listing to a model by reading the
   // colour out of its name - "OLLA 양털슬립온 실브라운" and "OLLA 양털슬립온
   // 초콜릿" are one shoe. Nothing in the record says 실브라운 is a colour, so
@@ -347,6 +434,13 @@ const CODE_LIST=/^[A-Z0-9]{2,6}(?:\s*[,/]\s*[A-Z0-9]{2,6})*$/;
 // 29CM pins its own code to each colour name: "CHARCOAL(B02)", "(19)BLACK".
 const INLINE_CODE=/[([]\s*[A-Za-z]{0,3}\d{1,4}[A-Za-z]{0,2}\s*[)\]]/g;
 export function variantColorLabel(p){
+  // A card standing for one silhouette in six materials needs the material on
+  // the chip, or six chips read as six unnamed colours of the same shoe.
+  const material=variantMaterialLabel(p);
+  const shade=rawColorLabel(p);
+  return material&&shade?`${material} · ${shade}`:material||shade;
+}
+function rawColorLabel(p){
   const color=String(p.colorway||'').replace(SELLER_NOTICE,' ').replace(AUDIENCE_TAG,' ')
     .replace(INLINE_CODE,' ').replace(/\s*,\s*/g,', ')
     .replace(/\s{2,}/g,' ').replace(/^[\s,/|-]+|[\s,/|-]+$/g,'');
