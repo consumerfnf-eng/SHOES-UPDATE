@@ -235,6 +235,25 @@ export function inPublishedScope(category) {
 // and Nike's GS models arrived as a second card beside the adult shoe of the
 // same name, which is where a third of the duplicate pairs came from.
 const kids = /\b(?:kids?|toddlers?|infants?|juniors?|youth|little kids?|big kids?|grade school|pre-?school)\b|\((?:gs|ps|td)\)|\bbaby\s+(?!blue\b)|키즈|아동|주니어|유아|베이비|어린이/i;
+// FILA's own shop lists its whole catalogue, and twelve down jackets, hoodies
+// and knit zip-ups reached cards as "sneakers" because the sport-brand rule
+// below asked only whether the page said "shoes" somewhere - and FILA's
+// shipping boilerplate says it on every page it serves. A record named for a
+// garment is not footwear unless its own name or its shop's category says so.
+// Nike's Sock Dart is a shoe, so the garment words are asked for in the plural
+// or as their Korean nouns, and any footwear word in the filing wins.
+const apparel = /\b(?:jackets?|hoodies?|hoody|sweatshirts?|sweaters?|cardigans?|t-?shirts?|tees?|jerseys?|pants|trousers|shorts|leggings|parkas?|coats?|vests?|puffers?|tracksuits?|track tops?|backpacks?|handbags?|totes?|caps?|beanies|gloves|socks|scarves|mufflers?|belts?|wallets?|sunglasses|watches)\b|패딩|점퍼|집업|후드티|후드집업|맨투맨|스웨트|니트|가디건|트랙탑|트랙수트|티셔츠|셔츠|팬츠|바지|반바지|레깅스|자켓|재킷|코트|조끼|가방|백팩|모자|비니|장갑|양말|목도리|머플러|벨트|지갑|우산|다운(?:재킷|자켓)?\s*$|경량\s*다운|헤비\s*다운|롱다운|후드\s*다운/i;
+const footwearWord = /\b(?:shoes?|footwear|sneakers?|trainers?|boots?|sandals?|clogs?|slippers?|slides?|loafers?|mules?|flip[- ]?flops?)\b|신발|슈즈|스니커|운동화|샌들|슬리퍼|클로그|로퍼|쪼리|구두/i;
+// A sole, an upper or a sport is the brand describing footwear. "Shoes" on its
+// own, in free text, is a page describing itself.
+const sportCue = /\b(?:midsole|outsole|insole|cushion\w*|mesh|knit upper|upper|rubber (?:sole|outsole)|lace[- ]?up|lacing|gore-?tex|waterproof|drop \d|heel[- ]to[- ]toe|running|trail|court|training|skate|basketball|golf|tennis|walking|jogging|lightweight)\b|아웃솔|미드솔|쿠션|메쉬|어퍼|러닝|트레일|트레이닝|운동/i;
+// The brand's own URL is where it filed the product, and for a shop that sends
+// no category field it is the only statement of form it makes:
+// brooksrunning.com keeps the Ghost 18 under /womens/shoes/road-running-shoes/,
+// Nike's slug ends "-basketball-shoes", Converse's "-baby-toddler-low-top-shoe".
+// All three arrived with no category, no productType and a description holding
+// the page's own furniture ("Use arrow keys to pan, + and - to zoom").
+const urlWords = url => { try { return decodeURIComponent(String(url || '')).replace(/[?#].*$/, '').replace(/[^\p{L}\p{N}]+/gu, ' '); } catch { return String(url || '').replace(/[^\p{L}\p{N}]+/gu, ' '); } };
 export function classifyFootwear(p) {
   // Negative gates run first for every record; legacy verification cannot bypass them.
   // Include the normalized source category/type. Several official product feeds
@@ -246,7 +265,16 @@ export function classifyFootwear(p) {
   const context = `${title} ${p.description || ''} ${p.category || ''} ${structure?.description||''} ${structure?.officialCategory||''}`;
   const review=p.footwearReview;
   if(/パンプス|スリングバック|ハイヒール|革靴|高跟|皮鞋|(?:^|[\s/])힐(?:[\s/]|$)/.test(title))return {reason:'excluded-footwear'};
-  if(kids.test(`${title} ${p.description||''}`))return {reason:'kids-sizing'};
+  const path = urlWords(p.url);
+  if(kids.test(`${title} ${p.description||''} ${path}`))return {reason:'kids-sizing'};
+  // Read from the name and the shop's own category only - never the
+  // description, which is where the boilerplate lives.
+  const filed = `${p.name || ''} ${p.officialCategory || ''} ${p.category || ''} ${p.productType || ''} ${path}`;
+  // On files two hoodies with productType "sneaker" and sends them from
+  // /products/climate-zip-hoodie-w/womens/mallow-apparel-. Where the field and
+  // the path disagree, the path is what the shop actually filed it under.
+  if (/\bapparel\b|\bclothing\b|\bclothes\b|의류/i.test(path) && !footwearWord.test(path)) return { reason: 'not-footwear' };
+  if (apparel.test(filed) && !footwearWord.test(filed)) return { reason: 'not-footwear' };
   const reviewedPlatform=review?.approved===true&&review.type==='platform'&&review.flatSole===true&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url);
   const reviewedJelly=review?.approved===true&&review.type==='jelly'&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url)&&review.flatSole===true;
   if(/goadome/i.test(title)&&!p.hybridReview?.approved)return {reason:'hybrid-review-required'};
@@ -290,7 +318,14 @@ export function classifyFootwear(p) {
     if (backless) return { category: platform ? 'platform-slipper' : 'slipper' };
     return { category: platform ? 'platform-sandal' : 'sandal' };
   }
-  if (/sneaker|running shoe|trail running|training shoes?|basketball shoes?|golf shoes?|trainers?|court(?:-type)? shoe|tennis shoes?|스니커|운동화|러닝화|트레이닝화|트레일화|농구화|골프화/i.test(context)||/\btraining\b[^.!?]{0,45}\bshoes?\b/i.test(title)) return { category: 'sneaker' };
+  // A shop that files a shoe as a clog has said what it is. 22 Crocs and
+  // OOFOS records carry productType 'muleclog', which no word boundary in the
+  // clog test could match, and clogs are in scope.
+  if(/\bmuleclog\b|\bclogmule\b/i.test(`${p.productType||''} ${p.category||''}`)&&!/\bsneaker|스니커/i.test(title))return {category:'clog'};
+  // A path that names the form outright says it for any house: a shoe filed
+  // under /sneakers/ is a sneaker whoever sells it.
+  if (/\b(?:sneakers?|trainers?)\b/i.test(path)) return { category: 'sneaker' };
+  if (/sneaker|running shoe|trail running|training shoes?|basketball shoes?|golf shoes?|skate shoes?|jogging shoes?|slip[- ]?ons?|high[- ]?tops?|low[- ]?tops?|plimsolls?|trainers?|court(?:-type)? shoe|tennis shoes?|스니커|운동화|러닝화|트레이닝화|트레일화|농구화|골프화|슬립온|스케이트화|조깅화/i.test(context)||/\btraining\b[^.!?]{0,45}\bshoes?\b/i.test(title)) return { category: 'sneaker' };
   // A platform shoe is in scope because of its sole, not because the brand's
   // copy happens to say "casual" or "street". Requiring those words held 26
   // records whose own titles said platform - Melissa's Possession and Sun
@@ -298,6 +333,19 @@ export function classifyFootwear(p) {
   // shape itself: the raised sole is the whole point of a platform. Heeled and
   // dress platforms are still refused by the exclusion gate above.
   if (/\bplatform\b|플랫폼|통굽/i.test(title)||reviewedPlatform)return {category:'platform-shoe'};
+  // A brand that sells nothing but sport footwear, filing a product as a
+  // "shoe", has said enough: Brooks' Ghost 18, Vans' Old Skool Shoe, Onitsuka
+  // Tiger's CALIFORNIA 78 EX and Skechers' GO RUN all reached here with the
+  // dress, heel, boot and loafer gates already passed and nothing left to say
+  // but "shoe". For a house that also sells dress shoes this would prove
+  // nothing, which is why it is asked of the brand's own policy group.
+  if (['outdoor','athleisure'].includes(brandPolicy(p.brand)?.group)
+    // The word is read from the name and the shop's own category, where it is
+    // a statement of form; from the description it counts only alongside a
+    // sole, an upper or a sport.
+    && (footwearWord.test(filed)
+      || footwearWord.test(p.description || '') && sportCue.test(p.description || '')))
+    return { category: 'sneaker' };
   if(p.productVerifiedAt&&/\b(?:Air Max (?!Phenomena)|Air Force 1|Air Jordan \d|Air Bakin|Dunk Low|Dunk High|Cortez|Vomero|Pegasus|Shox|P-6000)\b/i.test(p.name||''))return {category:'sneaker'};
   return { reason: 'footwear-type-unverified' };
 }

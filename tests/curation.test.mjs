@@ -28,7 +28,10 @@ test('no grandfather exemption and actual structure required',()=>{
   // other shoe is - not for being a loafer.
   for(const name of ['Classic leather loafer','Leather moccasin'])
     assert.notEqual(curateProduct(product({name,catalogVerification:'official-catalog-2026-09-23'}),day).reason,'excluded-footwear',name);
-  assert.equal(curateProduct(product({name:'Fashion 001',officialCategory:'Shoes',description:'Classic calf leather',productType:'sneaker'}),day).reason,'footwear-type-unverified');
+  // Asked of a house that sells heels beside its sneakers, where a bare
+  // "Shoes" category is a department and not a form. Nike's own "Shoes" is
+  // read as the statement it is, and tested in tests/footwear-scope.
+  assert.equal(curateProduct(product({brand:'Gucci',url:'https://www.gucci.com/t/fashion-001',productEvidenceUrl:'https://www.gucci.com/t/fashion-001',name:'Fashion 001',officialCategory:'Shoes',description:'Classic calf leather',productType:'sneaker'}),day).reason,'footwear-type-unverified');
   assert.equal(curateProduct(product({name:'Shoe 001',officialCategory:'Shoes',description:'An elegant slingback pump.'}),day).reason,'excluded-footwear');
 });
 test('summer forms and reviewed hybrids pass, unreviewed hybrids do not',()=>{

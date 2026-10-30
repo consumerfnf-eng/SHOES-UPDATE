@@ -342,7 +342,7 @@ def read_wordpress(source, cutoff_iso, status):
 
 OG_IMAGE_RE = re.compile(r'<meta[^>]+property="og:image"[^>]+content="([^"]+)"')
 OG_IMAGE_ALT_RE = re.compile(r'<meta[^>]+content="([^"]+)"[^>]+property="og:image"')
-BODY_RE = re.compile(r'<(?:article|main)[^>]*>(.*?)</(?:article|main)>', re.S)
+BODY_RE = re.compile(r'<(?:article|main)\b[^>]*>(.*?)</(?:article|main)>', re.S)
 
 
 def enrich_articles(articles, status, limit=160, workers=4):

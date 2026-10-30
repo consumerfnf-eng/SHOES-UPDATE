@@ -61,7 +61,10 @@ test('all reviewed sneaker mixtures publish without a fixed silhouette allowlist
   }
   const unknown={...base,name:'Unusual construction',hybridReview:{approved:true,sneakerSole:true,url:base.url,type:'reviewed experimental form'}};
   assert.equal(classifyFootwear(unknown).category,'hybrid');
-  assert.equal(classifyFootwear({...unknown,hybridReview:{...unknown.hybridReview,url:'https://example.com/shoe'}}).reason,'footwear-type-unverified');
+  // A review hosted anywhere but the brand's own product page proves nothing.
+  // Asked of a house that also sells dress shoes, where a bare "Shoes" category
+  // says nothing about the form, the record has nothing left to publish on.
+  assert.equal(classifyFootwear({...unknown,brand:'Gucci',url:'https://www.gucci.com/t/example',hybridReview:{...unknown.hybridReview,url:'https://example.com/shoe'}}).reason,'footwear-type-unverified');
   assert.equal(officialHybridReview({...base,name:'Sandal sneaker',url:'https://example.com/shoe'},'A cushioned sneaker sole.'),null);
   assert.equal(officialHybridReview({...base,name:'Sandal'},'Flexible leather straps and a flat sole.'),null);
   assert.equal(officialHybridReview({...base,name:'Summer clog'},'A design inspired by the colors of running shoes and sporting heritage.'),null);
@@ -226,4 +229,26 @@ test("the page's own furniture is not a colour, and the name states one",()=>{
   // A sentence is not a colour.
   assert.equal(colorwayFromName('Sneaker in a padded nappa leather with a rubber sole'),'');
   assert.equal(colorwayFromName('Air Force 1'),'');
+});
+
+test("a sport brand's own filing names the form, and a garment page never does",()=>{
+  // Brooks sends no category, no productType and a description holding the
+  // page's furniture ("Use arrow keys to pan"). Its path is the only statement
+  // of form it makes, and it is a clear one.
+  assert.equal(classifyFootwear({brand:'Brooks',name:'Ghost 18',url:'https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/ghost-18/120482.html'}).category,'sneaker');
+  assert.equal(classifyFootwear({brand:'Vans',name:'Old Skool Shoe',url:'https://www.vans.com/en-us/shoes-c00081/old-skool-shoe'}).category,'sneaker');
+  assert.equal(classifyFootwear({brand:'Onitsuka Tiger',name:'CALIFORNIA 78 EX',officialCategory:'Shoes',url:'https://www.onitsukatiger.com/kr/ko-kr/p/california-78-ex'}).category,'sneaker');
+  // FILA's shop lists its whole catalogue, and twelve garments reached cards as
+  // sneakers when "shoes" anywhere on the page was enough.
+  for(const name of ['에어플로우 후드 경량 다운','기모 그래픽 후드티','[차정원 착용] 1911 여성 니트트랙 집업','에센셜 롱다운'])
+    assert.equal(classifyFootwear({brand:'FILA',name,url:'https://www.fila.co.kr/products/1100fs264dj01x012091'}).reason,'not-footwear',name);
+  // On files its hoodies with productType "sneaker"; the path says apparel.
+  assert.equal(classifyFootwear({brand:'On',name:'Climate Zip Hoodie Women',category:'sports',productType:'sneaker',url:'https://www.on.com/en-us/products/climate-zip-hoodie-w-1wg3076/womens/mallow-apparel-1WG30764978'}).reason,'not-footwear');
+  // A toddler's shoe says so in its path and nowhere else.
+  assert.equal(classifyFootwear({brand:'Converse',name:'Converse x Hello Kitty One Strap',url:'https://www.converse.com/shop/p/converse-x-hello-kitty-one-strap-baby-toddler-low-top-shoe/A21840F.html'}).reason,'kids-sizing');
+  // A house that also sells heels states nothing with a bare "Shoes".
+  assert.equal(classifyFootwear({brand:'Gucci',name:'Fashion 001',officialCategory:'Shoes',description:'Classic calf leather',url:'https://www.gucci.com/t/fashion-001'}).reason,'footwear-type-unverified');
+  // Every regex in the classifier reads as written: a stray control character
+  // where a word boundary should be disabled the clog and apparel rules twice.
+  assert.equal(classifyFootwear({brand:'Crocs',name:'클래식 카무플라주 클로그',productType:'muleclog',category:'casual',url:'https://www.crocs.co.kr/p/classic-camo-clog'}).category,'clog');
 });

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T06:31:00.811Z",
+  "checkedAt": "2026-10-30T07:43:05.765Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -138,7 +138,7 @@
       "id": "daily-20260921-nike-mind-001-purple-smoke-hq4307-500",
       "brand": "Nike",
       "name": "Mind 001 — Purple Smoke",
-      "reason": "footwear-type-unverified"
+      "reason": "product-verification-required"
     },
     {
       "id": "daily-20260921-amine-new-balance-992-u992ne",
@@ -2070,7 +2070,7 @@
       "id": "xlsx-1a17f8959dad6132",
       "brand": "Crocs",
       "name": "클래식 카무플라주 클로그 - 블랙 / 슬레이트 그레이 / 211936-0DD",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "xlsx-bf0cb53091f104d0",
@@ -2082,19 +2082,19 @@
       "id": "xlsx-20ede035492ef956",
       "brand": "Crocs",
       "name": "퀵 트레일 클로그 - 블랙 / 212809-001",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "xlsx-f78f8c6a7c8bcace",
       "brand": "Crocs",
       "name": "베이 클로그 - 콰츠 / 206302-6UR",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "xlsx-432d8d9c611869dc",
       "brand": "Crocs",
       "name": "에코 메리 제인 클로그 - 블랙 / 211996-001",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "xlsx-419d681592bf2462",
@@ -2136,7 +2136,7 @@
       "id": "xlsx-8e2699e84a1af46d",
       "brand": "OOFOS",
       "name": "[OOcloog] 블랙 남여공용 클로그",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "xlsx-3a5e73076ead1063",
@@ -2226,7 +2226,7 @@
       "id": "xlsx-c39a28602323bbf5",
       "brand": "OOFOS",
       "name": "[OOcloog +] 아이보리 남여공용 클로그",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "xlsx-d3b1d3a65216416a",
@@ -2256,7 +2256,7 @@
       "id": "xlsx-b4a027640a57b50a",
       "brand": "OOFOS",
       "name": "[OOFOS x UNAFFECTED] [OOcloog] 블랙 남여공용 클로그",
-      "reason": "footwear-type-unverified"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "xlsx-7dc761f7512e54d5",
@@ -3948,7 +3948,7 @@
       "id": "new-20260923-99824bfa30963517",
       "brand": "Pierre Hardy",
       "name": "BASKETS JUMP",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ac83b8e68620e153",
@@ -6120,25 +6120,25 @@
       "id": "new-20260923-0cc0d31ae9ef2a5f",
       "brand": "Converse",
       "name": "Chuck Taylor All Star Leopard Hay Day/Black/White",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b3e320ae3da3901c",
       "brand": "Converse",
       "name": "Chuck Taylor All Star Leopard Hay Day/Honey Stick/Black",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-d062f184cbd04323",
       "brand": "Converse",
       "name": "Chuck Taylor All Star Leopard Hay Day/Honey Stick/Black",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-916b4958493f6294",
       "brand": "Converse",
       "name": "Chuck Taylor All Star Easy-On Leopard Hay Day/Black/Honey Stick",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-0db2f010aeb91775",
@@ -8664,19 +8664,19 @@
       "id": "new-20260923-b383d99eef666ff5",
       "brand": "Nike",
       "name": "Air Jordan 9 Retro",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-1e7e1306df9c70e2",
       "brand": "Nike",
       "name": "Jordan 9 Retro",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b8d3d7a2d753ffc2",
       "brand": "Nike",
       "name": "Jordan 9 Retro",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-39b38d29025a38a7",
@@ -8694,13 +8694,13 @@
       "id": "new-20260923-9017086873762ea9",
       "brand": "Nike",
       "name": "Kobe III Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-7bfff580f6a873c5",
       "brand": "Nike",
       "name": "Jordan DMSN 95 Realtree",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-452d4e04776ac135",
@@ -8718,7 +8718,7 @@
       "id": "new-20260923-7bc0241b0198442b",
       "brand": "Nike",
       "name": "Air Jordan 1 Low SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-278e023946511d85",
@@ -8760,7 +8760,7 @@
       "id": "new-20260923-5046d1c1c5db394b",
       "brand": "Nike",
       "name": "Jordan 23/7.2 EasyOn",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-5a985b515a1d4eee",
@@ -8784,13 +8784,13 @@
       "id": "new-20260923-7d5f4bfe58616a68",
       "brand": "Nike",
       "name": "Jordan Hydrip",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b78d486db28c2806",
       "brand": "Nike",
       "name": "Jordan True Flight",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-a1196365449df014",
@@ -8802,7 +8802,7 @@
       "id": "new-20260923-d825f428775a2b5d",
       "brand": "Nike",
       "name": "Air Jordan Sixty Plus Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-872bc39860cb8f30",
@@ -8838,7 +8838,7 @@
       "id": "new-20260923-70fc0afdcc7192b0",
       "brand": "Nike",
       "name": "A'Two \"Nike Nights\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-1c55de5723ea3ada",
@@ -8850,13 +8850,13 @@
       "id": "new-20260923-1f867d740a455285",
       "brand": "Nike",
       "name": "Nike Air Max 270",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-252bb3b583330813",
       "brand": "Nike",
       "name": "Nike ACG Pegasus Trail",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-a485408a28bc99b2",
@@ -8880,13 +8880,13 @@
       "id": "new-20260923-c795f36d01c07a37",
       "brand": "Nike",
       "name": "Nike Stratos Shift 2000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-3dbf4a6b105acd9d",
       "brand": "Nike",
       "name": "Nike Jr. Mercurial Superfly 11 Club",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f1ebd68d13aa4776",
@@ -8904,7 +8904,7 @@
       "id": "new-20260923-474f598c40dfd99a",
       "brand": "Nike",
       "name": "Jordan Son of Mars",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-bccc71e435d8379d",
@@ -8916,25 +8916,25 @@
       "id": "new-20260923-24d35a40c7c6191c",
       "brand": "Nike",
       "name": "Jordan Trunner Flow",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-5f8bccced8d63278",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-963d5c3cc17b6a5d",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-2048c2e5584377dd",
       "brand": "Nike",
       "name": "Jordan 23/7.2 EasyOn",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8823648077d49896",
@@ -8946,19 +8946,19 @@
       "id": "new-20260923-2e05e692e67b1e3e",
       "brand": "Nike",
       "name": "Nike P-6000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-773e9acc4e5b72ba",
       "brand": "Nike",
       "name": "Nike Stratos Shift 2000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f12c31b660a77df3",
       "brand": "Nike",
       "name": "Nike Stratos Shift 2000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-bc5f424f2d5ef9cc",
@@ -8970,25 +8970,25 @@
       "id": "new-20260923-02803d5b9e0c93cf",
       "brand": "Nike",
       "name": "Nike Court Borough Mid 2",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-a984d0589830492a",
       "brand": "Nike",
       "name": "Jordan 1 Low Alt SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-e00147854e219b0f",
       "brand": "Nike",
       "name": "Nike Air Max Moto 2K",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ce7a3b4436f7e02f",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-99eebab7e4862a9a",
@@ -9000,13 +9000,13 @@
       "id": "new-20260923-3f87b928869fda30",
       "brand": "Nike",
       "name": "Nike Pegasus 42 GORE-TEX",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b2804bf5ee301027",
       "brand": "Nike",
       "name": "Nike Flex Runner 4",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-9a919a9a3a788195",
@@ -9018,13 +9018,13 @@
       "id": "new-20260923-81e3284bc4013816",
       "brand": "Nike",
       "name": "Nike Cosmic Runner SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-cdbe8a23dfea4789",
       "brand": "Nike",
       "name": "Jordan True Flight",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8777bd3e753c5f24",
@@ -9036,7 +9036,7 @@
       "id": "new-20260923-aa852659bfd4e3d4",
       "brand": "Nike",
       "name": "Jordan 1 Mid SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-92c9ea7d2e09c08b",
@@ -9048,7 +9048,7 @@
       "id": "new-20260923-a290edbd3c366c1f",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b88d7cbbbb3f1698",
@@ -9060,13 +9060,13 @@
       "id": "new-20260923-42a294071ee0b1c9",
       "brand": "Nike",
       "name": "Nike Cross Turf",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-23dd7eb1b35b5604",
       "brand": "Nike",
       "name": "Nike Free Ride",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-303d848d57ebdd09",
@@ -9078,19 +9078,19 @@
       "id": "new-20260923-67b3070392068664",
       "brand": "Nike",
       "name": "Nike Free Ride",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-1a77b36057e62615",
       "brand": "Nike",
       "name": "Nike S.T. Dynamite",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-eeaf587e1e2757cc",
       "brand": "Nike",
       "name": "Air Jordan Sixty Plus Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-c47c2c2608c0f2a0",
@@ -9102,25 +9102,25 @@
       "id": "new-20260923-74142421e3e1c464",
       "brand": "Nike",
       "name": "Jordan 1 Mid",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-5c755020ba9808c9",
       "brand": "Nike",
       "name": "Nike Stratos Shift 2000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-cc14d71de90ffc5d",
       "brand": "Nike",
       "name": "Nike Swoosh 1 Essential",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4727a4293235f533",
       "brand": "Nike",
       "name": "Jordan Spizike Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-9fce2375bee5cef2",
@@ -9132,13 +9132,13 @@
       "id": "new-20260923-f7b2580f76ec8738",
       "brand": "Nike",
       "name": "Nike Terrascout",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4e06dcb34692f5da",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-e6fb6beb6c56bfab",
@@ -9192,7 +9192,7 @@
       "id": "new-20260923-6c2ddc06561239f2",
       "brand": "Nike",
       "name": "Jordan DMSN 95",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f8276e0cdcce4d80",
@@ -9228,19 +9228,19 @@
       "id": "new-20260923-6bc2f866999a24e7",
       "brand": "Nike",
       "name": "Jordan Son of Mars Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-2dd1ff78828a206f",
       "brand": "Nike",
       "name": "Jordan Son of Mars Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b973f9f0b43bb4da",
       "brand": "Nike",
       "name": "Jordan Son of Mars Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f7d7cab0e35460a4",
@@ -9318,7 +9318,7 @@
       "id": "new-20260923-5979169064e5ec8e",
       "brand": "Nike",
       "name": "Nike Jr. Mercurial Superfly 11 Academy \"Sam Kerr\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-3159d186c644c6f9",
@@ -9336,7 +9336,7 @@
       "id": "new-20260923-9495d17b0ced5655",
       "brand": "Nike",
       "name": "Air Jordan 4 Retro \"Tour Yellow\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-825d603666280479",
@@ -9354,31 +9354,31 @@
       "id": "new-20260923-d4ae5241aaf47ffd",
       "brand": "Nike",
       "name": "Caitlin 1 \"Caitlin Blue\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-3a43506fe35c6713",
       "brand": "Nike",
       "name": "Jordan 4 Retro \"Tour Yellow\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-966b0e44924be43b",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b55b3a9554ece1e7",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-0b3b52cc4000bc87",
       "brand": "Nike",
       "name": "Nike Dunk Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ff281ddc15314f15",
@@ -9402,13 +9402,13 @@
       "id": "new-20260923-726df6e42818f6d1",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-9653eac5082fab25",
       "brand": "Nike",
       "name": "Jordan Trunner O/S SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8463d652f0111d5d",
@@ -9420,7 +9420,7 @@
       "id": "new-20260923-493657356254e3e4",
       "brand": "Nike",
       "name": "Nike Force 1 Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-9c1af128b36e93aa",
@@ -9438,13 +9438,13 @@
       "id": "new-20260923-06db4a37f3ca45ed",
       "brand": "Nike",
       "name": "Nike P-6000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8d6af28a6c5cf66b",
       "brand": "Nike",
       "name": "Nike Cosmic Runner SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4b3903951e72763d",
@@ -9468,7 +9468,7 @@
       "id": "new-20260923-c6354715242cee61",
       "brand": "Nike",
       "name": "Nike Dunk Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-daccbba195923b36",
@@ -9486,13 +9486,13 @@
       "id": "new-20260923-cd270289ba888446",
       "brand": "Nike",
       "name": "Nike Court Borough Mid 2",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-7f78973c3ce29b8c",
       "brand": "Nike",
       "name": "Jordan Son of Mars Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f04eb0b1e73a32cb",
@@ -9510,7 +9510,7 @@
       "id": "new-20260923-a2fdb35f7de62cc0",
       "brand": "Nike",
       "name": "Jordan Son of Mars",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f9eaab4962a8f159",
@@ -9528,7 +9528,7 @@
       "id": "new-20260923-711f211933eba2cc",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-05e048a2e0e926b7",
@@ -9552,13 +9552,13 @@
       "id": "new-20260923-c11c200dd39625c7",
       "brand": "Nike",
       "name": "Jordan Son of Mars Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b8f1e4368bd76268",
       "brand": "Nike",
       "name": "Nike Dunk Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-532c48c880a99877",
@@ -9576,19 +9576,19 @@
       "id": "new-20260923-81e3aad80ca2338f",
       "brand": "Nike",
       "name": "Nike Cross Turf",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-70ecb14c65f1306c",
       "brand": "Nike",
       "name": "Nike Star Runner 5",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b1eb3aef6d34dd21",
       "brand": "Nike",
       "name": "Nike Dunk Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-439131e66d8c5939",
@@ -9606,13 +9606,13 @@
       "id": "new-20260923-789332a53bebfdf6",
       "brand": "Nike",
       "name": "Jordan Trunner Flow",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-6d01c811fa9b4335",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-2cfcab7d3f548d9c",
@@ -9630,19 +9630,19 @@
       "id": "new-20260923-7e47585ce6627161",
       "brand": "Nike",
       "name": "Nike V5 RNR",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b8c70a0aaf992f46",
       "brand": "Nike",
       "name": "Nike Cosmic Runner SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f2e7889ec179ba9d",
       "brand": "Nike",
       "name": "Nike Team Hustle D 12",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-0f151fa220afed1a",
@@ -9666,7 +9666,7 @@
       "id": "new-20260923-af5d7f91b7f75a59",
       "brand": "Nike",
       "name": "Nike Dunk Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-af2b3bc6f61e2fd0",
@@ -9690,7 +9690,7 @@
       "id": "new-20260923-dfd060bacb5faddd",
       "brand": "Nike",
       "name": "Nike Team Hustle D 12",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-5c1ed4eedad21709",
@@ -9714,7 +9714,7 @@
       "id": "new-20260923-d776d0054f8971f1",
       "brand": "Nike",
       "name": "Jordan Trunner Flow",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-84f710f36cf74c00",
@@ -9726,7 +9726,7 @@
       "id": "new-20260923-a911475999d9f70b",
       "brand": "Nike",
       "name": "Jordan Max Aura",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-a46bc199a29889bb",
@@ -9744,19 +9744,19 @@
       "id": "new-20260923-4ea9f2048705b330",
       "brand": "Nike",
       "name": "Nike Stratos Shift 2000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ca0a826c6f859c70",
       "brand": "Nike",
       "name": "Jordan Son of Mars",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-7e9bd96539f4b1b7",
       "brand": "Nike",
       "name": "Nike Force 1 Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4ff536fdc83a5e40",
@@ -9786,7 +9786,7 @@
       "id": "new-20260923-d39d7fa0a7dedff2",
       "brand": "Nike",
       "name": "Nike Flex Runner 4",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-c72a69abb7a6360c",
@@ -9798,7 +9798,7 @@
       "id": "new-20260923-5f094c530b7d1ac7",
       "brand": "Nike",
       "name": "Nike Free Ride",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-a3cf3db5f6a26fc4",
@@ -9834,7 +9834,7 @@
       "id": "new-20260923-73fd8b0a008cb7c1",
       "brand": "Nike",
       "name": "Nike Team Hustle D 12",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-c9a287d25792e36c",
@@ -9846,7 +9846,7 @@
       "id": "new-20260923-6f74207e187dfb5c",
       "brand": "Nike",
       "name": "Air Jordan Sixty Plus Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8acd791369454619",
@@ -9912,13 +9912,13 @@
       "id": "new-20260923-ba67f160742d96b1",
       "brand": "Nike",
       "name": "Nike Stellar Ride",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-30615e05cfe52a6e",
       "brand": "Nike",
       "name": "Nike V5 RNR",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-5916a276798dae2e",
@@ -9936,13 +9936,13 @@
       "id": "new-20260923-09034dcc63eaed29",
       "brand": "Nike",
       "name": "Nike Star Runner 5",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-bc34c0265395e58f",
       "brand": "Nike",
       "name": "Nike Flex Runner 4",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f7aeaa3471e02b21",
@@ -9960,19 +9960,19 @@
       "id": "new-20260923-8d96a3cf14510e04",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4b6043340158b717",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-a9a629edcb9f6341",
       "brand": "Nike",
       "name": "Nike P-6000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-d581e372496c41d6",
@@ -9990,19 +9990,19 @@
       "id": "new-20260923-349adeed194ee2da",
       "brand": "Nike",
       "name": "Nike Team Hustle D 12",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-0479e0c525a3bb98",
       "brand": "Nike",
       "name": "Nike Stellar Ride",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8e9c2a39ce264038",
       "brand": "Nike",
       "name": "Nike Stellar Ride",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-6ffd79e681d1ff5c",
@@ -10098,7 +10098,7 @@
       "id": "new-20260923-cd92bdb375034ea4",
       "brand": "Nike",
       "name": "Nike Air Max 270",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-3dbb94413a1cc834",
@@ -10116,7 +10116,7 @@
       "id": "new-20260923-eaa4e7b3db356933",
       "brand": "Nike",
       "name": "Nike Star Runner 5",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-7b4b9c69bf27e39d",
@@ -10188,7 +10188,7 @@
       "id": "new-20260923-d0ea26b47a1dff29",
       "brand": "Nike",
       "name": "Air Jordan 1 Low SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-32a575403013796d",
@@ -10212,31 +10212,31 @@
       "id": "new-20260923-e1d06ad808b1adb4",
       "brand": "Nike",
       "name": "Nike Star Runner 5",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-15633ab809f60a83",
       "brand": "Nike",
       "name": "Nike Stellar Ride",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-eb471b4a5683ecad",
       "brand": "Nike",
       "name": "Nike Stellar Ride",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-7c099a8edf7ec708",
       "brand": "Nike",
       "name": "Nike Stellar Ride",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-0fa175b62c1e7bde",
       "brand": "Nike",
       "name": "Nike V5 RNR",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4db9ec9652a50d2b",
@@ -10248,7 +10248,7 @@
       "id": "new-20260923-ea2ded39165e2cbc",
       "brand": "Nike",
       "name": "Nike Flex Runner 4",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-2abc8539bccfd7d4",
@@ -10266,19 +10266,19 @@
       "id": "new-20260923-c229eba10ea92b13",
       "brand": "Nike",
       "name": "Air Jordan 1 Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-e9a895041cde076e",
       "brand": "Nike",
       "name": "Jordan 1 Mid",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-fd5a781c292e4ce3",
       "brand": "Nike",
       "name": "Jordan 1 Low Alt",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-fd1a97bcf9279ffd",
@@ -10302,7 +10302,7 @@
       "id": "new-20260923-ac6e79233f60fdd1",
       "brand": "Nike",
       "name": "Nike Swoosh 1 Essential",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-d7f297029ce56469",
@@ -10368,7 +10368,7 @@
       "id": "new-20260923-a18850ed2c0fd8a9",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-a3684dc5273078dd",
@@ -10410,31 +10410,31 @@
       "id": "new-20260923-833637bc7ff6da85",
       "brand": "Nike",
       "name": "Nike Pegasus 42",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-0e1818fb3148c782",
       "brand": "Nike",
       "name": "Nike Pegasus 42 GORE-TEX",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-9cebae198376d92e",
       "brand": "Nike",
       "name": "Nike Stratos Shift 2000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-2dd66364a5aea3f7",
       "brand": "Nike",
       "name": "Nike Little Rift",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-988df9269910774a",
       "brand": "Nike",
       "name": "Nike Rift",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4f4dca3f8f07dd14",
@@ -10446,25 +10446,25 @@
       "id": "new-20260923-dbe57d280b0bc158",
       "brand": "Nike",
       "name": "Jordan 6 Rings",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b7114793ef5ff868",
       "brand": "Nike",
       "name": "Jordan 6 Rings",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-632738138a68e41a",
       "brand": "Nike",
       "name": "Jordan 6 Rings",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-c6d47b3899a36601",
       "brand": "Nike",
       "name": "Jordan True Flight",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f513711450849be5",
@@ -10494,7 +10494,7 @@
       "id": "new-20260923-effc5a198d95e0ec",
       "brand": "Nike",
       "name": "Air Jordan 1 Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-17e583b043210f3b",
@@ -10506,13 +10506,13 @@
       "id": "new-20260923-998871cebb82fabf",
       "brand": "Nike",
       "name": "Nike Air Max 270",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-0563ad284655ffb3",
       "brand": "Nike",
       "name": "Nike Air Max 270",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ab9243b46bc0f8f2",
@@ -10530,13 +10530,13 @@
       "id": "new-20260923-a76fe1ac1f31fe80",
       "brand": "Nike",
       "name": "Jordan Max Aura",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ecfd381f485ca72a",
       "brand": "Nike",
       "name": "Jordan Air Max Aura",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b0672b8c126086ef",
@@ -10566,7 +10566,7 @@
       "id": "new-20260923-60655765ad8d5635",
       "brand": "Nike",
       "name": "Jordan 1 Low Alt",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-fbcc6963701d1b04",
@@ -10584,7 +10584,7 @@
       "id": "new-20260923-ddf4eab96a77444a",
       "brand": "Nike",
       "name": "Nike Rift 2",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8315518639d4461c",
@@ -10626,7 +10626,7 @@
       "id": "new-20260923-7e27c7a005eb0c97",
       "brand": "Nike",
       "name": "Nike Vomero 5",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b17199106523c9ea",
@@ -10662,7 +10662,7 @@
       "id": "new-20260923-c64247beec188439",
       "brand": "Nike",
       "name": "Nike Cosmic Runner",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-acbf403265222f2c",
@@ -10686,13 +10686,13 @@
       "id": "new-20260923-aba8e040e97a54e2",
       "brand": "Nike",
       "name": "Nike Jr. Phantom 6 High Club",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b270ccacaa20bdb8",
       "brand": "Nike",
       "name": "Nike Vomero 18",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-200b9fead89c992c",
@@ -10794,13 +10794,13 @@
       "id": "new-20260923-8501be8bdce2ecc3",
       "brand": "Nike",
       "name": "Nike Jr. Tiempo Maestro Flex",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-5c6af7cf95fb839f",
       "brand": "Nike",
       "name": "Nike Flex Runner 4",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-1f39266279e871ae",
@@ -10818,13 +10818,13 @@
       "id": "new-20260923-f8b329222a0f7dfc",
       "brand": "Nike",
       "name": "Nike Pegasus 42",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f2fa71151fac1832",
       "brand": "Nike",
       "name": "Nike Force 1 Low EasyOn",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-64d853533c3a0264",
@@ -10860,13 +10860,13 @@
       "id": "new-20260923-5718ffb0cf167060",
       "brand": "Nike",
       "name": "Nike Vomero 5",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-eae065ac549fc95f",
       "brand": "Nike",
       "name": "Nike Vomero 5",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-92e0063f1ccd4fbb",
@@ -10890,13 +10890,13 @@
       "id": "new-20260923-04486e92f9d20795",
       "brand": "Nike",
       "name": "Jordan 1 Mid SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-2099532667ea07db",
       "brand": "Nike",
       "name": "Jordan 1 Mid SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-acca706bda050260",
@@ -10938,13 +10938,13 @@
       "id": "new-20260923-bb5929bfb3bf3469",
       "brand": "Nike",
       "name": "Nike V5 RNR SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-67bfd2ff5479a65e",
       "brand": "Nike",
       "name": "Nike Air Max 90 SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b75d465736914c32",
@@ -10956,37 +10956,43 @@
       "id": "new-20260923-ffc8a65a06bfc19f",
       "brand": "Nike",
       "name": "Air Jordan 1 Low SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f74439f25585dec0",
       "brand": "Nike",
       "name": "Air Jordan 1 Mid SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "new-20260923-7d1841a5d6b4c14c",
+      "brand": "Nike",
+      "name": "Air Jordan 1 Low SE",
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-833a29eafcca7db6",
       "brand": "Nike",
       "name": "Jordan 1 Mid SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-1975d242defad2e6",
       "brand": "Nike",
       "name": "Jordan 1 Mid SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-fc3728eaacfc0700",
       "brand": "Nike",
       "name": "Air Jordan 1 Mid SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-7c3ae3a7c95818a8",
       "brand": "Nike",
       "name": "Jordan 1 Low Alt SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-01dc816f1c725b55",
@@ -10998,19 +11004,19 @@
       "id": "new-20260923-4976404503fed9b8",
       "brand": "Nike",
       "name": "Nike Court Borough Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-063d15e43ebc6bfe",
       "brand": "Nike",
       "name": "Nike Dunk Low Suede",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8704b3613f891082",
       "brand": "Nike",
       "name": "Jordan All Game",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-c2734be703ada7df",
@@ -11046,13 +11052,13 @@
       "id": "new-20260923-b2489f059eeca09e",
       "brand": "Nike",
       "name": "Nike Stratos Shift 2000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-e2894d56525ecb5a",
       "brand": "Nike",
       "name": "NIke Air Force 1",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-33eba184d25221d3",
@@ -11088,7 +11094,7 @@
       "id": "new-20260923-75069760099f9b3b",
       "brand": "Nike",
       "name": "Nike P-6000",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b21012667dade292",
@@ -11100,7 +11106,7 @@
       "id": "new-20260923-e9e1841a1374feed",
       "brand": "Nike",
       "name": "Nike Dunk Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-82941f2521782d05",
@@ -11118,7 +11124,7 @@
       "id": "new-20260923-759654d8377c28a1",
       "brand": "Nike",
       "name": "Jordan Spizike Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-c86c817fbad13c20",
@@ -11136,19 +11142,19 @@
       "id": "new-20260923-0fd29eb2a73bee1c",
       "brand": "Nike",
       "name": "Jordan 1 Low SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-512e72937c83ea3c",
       "brand": "Nike",
       "name": "Nike S.T. Dynamite",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-fb11854461e7114f",
       "brand": "Nike",
       "name": "Nike S.T. Dynamite",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-02f3782a877537ee",
@@ -11184,13 +11190,13 @@
       "id": "new-20260923-732055b74339293f",
       "brand": "Nike",
       "name": "Jordan 1 Mid SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-472a0e22e63ac2eb",
       "brand": "Nike",
       "name": "Jordan 1 Mid SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ab647ab0797ff9d9",
@@ -11202,7 +11208,7 @@
       "id": "new-20260923-447e73836293de1c",
       "brand": "Nike",
       "name": "Nike V5 RNR",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f1ba5d46a9aca90f",
@@ -11220,7 +11226,7 @@
       "id": "new-20260923-5529faa70b554251",
       "brand": "Nike",
       "name": "Jordan 4 Retro \"Tour Yellow\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-bd1f599dcf3d6f0c",
@@ -11262,13 +11268,13 @@
       "id": "new-20260923-d90e7e890d617587",
       "brand": "Nike",
       "name": "Kobe III Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-703f6239774dea24",
       "brand": "Nike",
       "name": "Kobe 3 Protro Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8228fdbbf6a8f233",
@@ -11298,25 +11304,25 @@
       "id": "new-20260923-b67a91a3ce602d5d",
       "brand": "Nike",
       "name": "Nike Little Posite Pro Premium",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-2684135c744cc9f3",
       "brand": "Nike",
       "name": "Nike Little Posite Pro Premium",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-341621210c47df36",
       "brand": "Nike",
       "name": "Nike Little Posite Pro Premium",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8bf0232831cb05ca",
       "brand": "Nike",
       "name": "Jordan 12 Retro \"Idols Become Rivals\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-7d1988a65e064294",
@@ -11334,7 +11340,7 @@
       "id": "new-20260923-ea61d89bd27d4c95",
       "brand": "Nike",
       "name": "Sabrina 4 SE \"Nike Nights\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-7a5650d86b8c404d",
@@ -11346,7 +11352,7 @@
       "id": "new-20260923-3999defb823a18aa",
       "brand": "Nike",
       "name": "Sabrina 4 \"Eyes on the Prize\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ea60780c9cb68c58",
@@ -11460,7 +11466,7 @@
       "id": "new-20260923-f00c9ce0fb58ea4b",
       "brand": "Nike",
       "name": "Sabrina 4 \"The Switch\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f58e65e17724f36a",
@@ -11496,13 +11502,13 @@
       "id": "new-20260923-52cf96d734367a45",
       "brand": "Nike",
       "name": "Nike Force 1 Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f96c5615204cbffe",
       "brand": "Nike",
       "name": "Nike Air Max Fire",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-5ba94faa7d1ac2b8",
@@ -11514,7 +11520,7 @@
       "id": "new-20260923-e0371ec660070832",
       "brand": "Nike",
       "name": "Nike Tennis Essential",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-04cd087bd9fa6a71",
@@ -11550,7 +11556,7 @@
       "id": "new-20260923-19d844024fffcd0b",
       "brand": "Nike",
       "name": "Jordan All Game",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-397e6fd904630888",
@@ -11568,7 +11574,7 @@
       "id": "new-20260923-5b611f085faaa0a3",
       "brand": "Nike",
       "name": "Giannis Immortality 5",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-13f4d787d0a94bb0",
@@ -11586,7 +11592,7 @@
       "id": "new-20260923-a4320bc4b03d4983",
       "brand": "Nike",
       "name": "Nike Tennis Essential",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-452ae34dcd80ce42",
@@ -11598,7 +11604,7 @@
       "id": "new-20260923-5cfef03bf97a3f87",
       "brand": "Nike",
       "name": "Sabrina 4 \"The Switch\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4b915cec46881af4",
@@ -11628,19 +11634,25 @@
       "id": "new-20260923-b8d58505699c6f9a",
       "brand": "Nike",
       "name": "Nike Tennis Essential",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "new-20260923-4819253c162ff664",
+      "brand": "Nike",
+      "name": "Nike Air Max 95 Recraft",
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-33512498276b5b1d",
       "brand": "Nike",
       "name": "Nike Force 1 Low EasyOn",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-9b1f44c9faeeff58",
       "brand": "Nike",
       "name": "Nike Tennis Essential",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-312b8557cc6c4d8c",
@@ -11652,7 +11664,7 @@
       "id": "new-20260923-94cbaaccedb6d980",
       "brand": "Nike",
       "name": "Nike Tennis Essential",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4af9a6156bf7ea57",
@@ -11670,13 +11682,13 @@
       "id": "new-20260923-4348f5adeb5ebb40",
       "brand": "Nike",
       "name": "Sabrina 4 \"Eyes on the Prize\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-0fbff1519b2625a6",
       "brand": "Nike",
       "name": "Jordan All Game",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-0b90be4275fa7fd7",
@@ -11688,7 +11700,7 @@
       "id": "new-20260923-81329e2b2824973d",
       "brand": "Nike",
       "name": "Sabrina 4 \"Limelight Glow\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-6e9033741d3f1d24",
@@ -11772,7 +11784,7 @@
       "id": "new-20260923-f8297a92cfcb6a5b",
       "brand": "Nike",
       "name": "Nike Air More Uptempo",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-dc243e2100e50335",
@@ -11796,13 +11808,13 @@
       "id": "new-20260923-394879e733ee34f2",
       "brand": "Nike",
       "name": "Jordan 12 Retro \"Idols Become Rivals\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-9f275aa94c0d2b97",
       "brand": "Nike",
       "name": "Air Jordan 12 Retro \"Idols Become Rivals\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-51fb17e68d38d8ea",
@@ -11820,13 +11832,13 @@
       "id": "new-20260923-6ad064b182aa388c",
       "brand": "Nike",
       "name": "Nike Air Max Invigor",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-563a0c5e11206c15",
       "brand": "Nike",
       "name": "Air Jordan 7 Retro \"Tennis Day\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-2f7e90df275b0273",
@@ -11856,19 +11868,19 @@
       "id": "new-20260923-ea556a8bef0cbda4",
       "brand": "Nike",
       "name": "Nike Diamond Turf II",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-1f00c90095d03e71",
       "brand": "Nike",
       "name": "Nike Diamond Turf II",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b21f93e23e769a67",
       "brand": "Nike",
       "name": "Nike Air Diamond Turf II",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-c7e4ee37d3360774",
@@ -11892,13 +11904,13 @@
       "id": "new-20260923-df3d27691b978536",
       "brand": "Nike",
       "name": "Jordan 1 Retro High OG \"Nails and Grails\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-d56af9422c978e07",
       "brand": "Nike",
       "name": "Jordan 1 Retro High OG \"Nails and Grails\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-6bdccaddf087d1e7",
@@ -11928,13 +11940,13 @@
       "id": "new-20260923-c219abfd980c2fc0",
       "brand": "Nike",
       "name": "Giannis Immortality 5 SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f90abbce383946ca",
       "brand": "Nike",
       "name": "Giannis Immortality 5 SE",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-c627fea6fe4e20e0",
@@ -11952,7 +11964,7 @@
       "id": "new-20260923-d3c2e0bc6032832e",
       "brand": "Nike",
       "name": "Air Jordan 8 Retro \"Chrome\"",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-a14cb95aaf9762ec",
@@ -12900,13 +12912,13 @@
       "id": "live-615fe5376f55e089",
       "brand": "Nike",
       "name": "Jordan 6 Retro Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-fc6eca730f486508",
       "brand": "Nike",
       "name": "Jordan 6 Retro Low",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-c7e5b96093c239b6",
@@ -13398,9 +13410,7 @@
     },
     {
       "id": "official-nike-fz1363-002",
-      "brand": "Nike",
-      "name": "Nike General Purpose",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "official-nike-iq5365-600",
@@ -13589,42 +13599,6 @@
       "brand": "Nike",
       "name": "Air Jordan 1 Retro Low OG \"Howard\"",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "official-nike-iv6246-100",
-      "brand": "Nike",
-      "name": "Nike Air Foamposite Pro Premium",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "official-nike-a23976c-084",
-      "brand": "Nike",
-      "name": "SHAI 001",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "official-nike-a23975c-004",
-      "brand": "Nike",
-      "name": "SHAI 001",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "official-nike-iq8161-001",
-      "brand": "Nike",
-      "name": "Nike Cryoshot Mercurial Vapor 1 OG",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "official-nike-iq6827-200",
-      "brand": "Nike",
-      "name": "Nike SB Zoom Air Paul Rodriguez Low",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "official-nike-im2523-600",
-      "brand": "Nike",
-      "name": "Nike Blazy",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "verified-grounds-10268749758770",
@@ -14548,55 +14522,55 @@
       "id": "live-3b108527b618ceee",
       "brand": "On",
       "name": "New color Climate Zip Hoodie Women – Cool weather running",
-      "reason": "product-verification-required"
+      "reason": "not-footwear"
     },
     {
       "id": "live-672dbeccd1955c81",
       "brand": "On",
       "name": "New Weather Hoodie Women – Cool weather performance running, training",
-      "reason": "product-verification-required"
+      "reason": "not-footwear"
     },
     {
       "id": "live-ef6913d881156e2d",
       "brand": "On",
       "name": "New color Core Bra Women – Running, low-intensity workouts, light support",
-      "reason": "product-verification-required"
+      "reason": "not-footwear"
     },
     {
       "id": "live-7cfb1c1dc078f5d0",
       "brand": "On",
       "name": "New color Performance Crop Lumos Women – Reflective elements, anytime performance running",
-      "reason": "product-verification-required"
+      "reason": "not-footwear"
     },
     {
       "id": "live-14f5d00667b33927",
       "brand": "On",
       "name": "New color Performance Long-T Lumos Women – Reflective elements, anytime performance running",
-      "reason": "product-verification-required"
+      "reason": "not-footwear"
     },
     {
       "id": "live-57df83734d16a305",
       "brand": "On",
       "name": "New Performance Tights Lumos Women – Reflective elements, anytime performance running",
-      "reason": "product-verification-required"
+      "reason": "not-footwear"
     },
     {
       "id": "live-8890affe220ecbaa",
       "brand": "On",
       "name": "New color Core-T Women – Lightweight, versatile, running",
-      "reason": "product-verification-required"
+      "reason": "not-footwear"
     },
     {
       "id": "live-d42c15c41bcb89e3",
       "brand": "On",
       "name": "New color Performance Long-T Lumos Men – Reflective elements, anytime performance running",
-      "reason": "product-verification-required"
+      "reason": "not-footwear"
     },
     {
       "id": "live-afef077d97cb0da6",
       "brand": "On",
       "name": "New color Core-T Men – Lightweight, versatile, running",
-      "reason": "product-verification-required"
+      "reason": "not-footwear"
     },
     {
       "id": "live-a676d618a2db5b31",
@@ -15427,28 +15401,16 @@
       "reason": "re-release-launched-2026-07-06"
     },
     {
-      "id": "arrival-8c11f938f8fa73efae79",
-      "brand": "FILA",
-      "name": "[한소희 착용 ] 휠라 에샤페 실버문",
-      "reason": "footwear-type-unverified"
+      "id": "arrival-14c1cc25b80878d18ec4",
+      "brand": "Nike",
+      "name": "Air Jordan 1 High OG \"Royal\"",
+      "reason": "kids-sizing"
     },
     {
-      "id": "arrival-403a0e990355c4bee2ca",
-      "brand": "FILA",
-      "name": "[차정원 착용 ] 휠라 에샤페 LX 말차",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-39f7df7bb07e86be421b",
-      "brand": "FILA",
-      "name": "[한소희 착용 ] 휠라 글리오 LX 에스프레소",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-d5c774fe84722acf037b",
-      "brand": "FILA",
-      "name": "[우즈 착용 ] 하레핀 1998 말차",
-      "reason": "footwear-type-unverified"
+      "id": "arrival-6e5ca4c3be88a7635515",
+      "brand": "Nike",
+      "name": "Nike Air Max 90",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-b32989ab4eb73430409f",
@@ -15461,12 +15423,6 @@
       "brand": "Cecilie Bahnsen",
       "name": "CBBlaise Shoes",
       "reason": "re-release-launched-2026-02-09"
-    },
-    {
-      "id": "arrival-3d39dc707b5ca1c66628",
-      "brand": "FILA",
-      "name": "휠라 에샤페 LX 퍼플",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-8d0b2abd78458118cbe3",
@@ -15541,16 +15497,64 @@
       "reason": "re-release-launched-2025-08-13"
     },
     {
+      "id": "arrival-7d35e226807bfaa46955",
+      "brand": "On",
+      "name": "Image 373: On Weather Jacket Insulated Brume & Hare Women – Performance running, outdoor, trail running Jackets",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-a6e40e415ae3aec7f48a",
+      "brand": "On",
+      "name": "Image 410: On Trail-T Solar Brume Women – Trail running, UPF40+, warm and sunny weather running Trail running Tops and t-shirts",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-ed77755b36cf4082da1c",
+      "brand": "On",
+      "name": "Image 410: On Weather Jacket Insulated Brume & Hare Men – Performance running, outdoor, trail running Jackets",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-01e7f7a8ad6fce17d8e8",
+      "brand": "Nike",
+      "name": "Air Jordan 5 Retro \"Halloween\"",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-9ea57aa844acc2ab737f",
       "brand": "Nike",
       "name": "Nike P-6000",
-      "reason": "re-release-launched-2026-06-29"
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-ef479976bdfef23ca317",
+      "brand": "Nike",
+      "name": "Nike Air Max 90",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-4c615f9405c8c52400b1",
       "brand": "Nike",
       "name": "Nike P-6000",
       "reason": "re-release-launched-2026-06-29"
+    },
+    {
+      "id": "arrival-8c6b5a679ac0a23f4550",
+      "brand": "Nike",
+      "name": "Nike Air Max 270",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-7945e0d95f3d5ea4eb56",
+      "brand": "Nike",
+      "name": "Air Jordan 1 Low SE",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-bf4109dc57e64ed612fd",
+      "brand": "Nike",
+      "name": "Air Jordan 6 Retro Low",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-7b6e3f9095f96ae75dde",
@@ -15561,8 +15565,22 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-642dbf4d6a6843ba7874",
+      "brand": "Nike",
+      "name": "Nike Air Max 95 Big Bubble",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-34c6efb03f2bce7e1f1d",
+      "brand": "Nike",
+      "name": "Air Jordan 1 Low SE",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-2e3b24ce7bdef54af469",
-      "reason": "duplicate-product-color"
+      "brand": "Nike",
+      "name": "Air Jordan 5 Retro 'Halloween'",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-08911cb1eaae1a000e31",
@@ -15733,6 +15751,18 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-c54295a0aa134b476760",
+      "brand": "Melissa",
+      "name": "+2 colors View Bloomy Sneaker in other colors",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-992ba4f4e60a0423f613",
+      "brand": "Melissa",
+      "name": "+2 colors View Bloomy Sneaker in other colors",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-b949098a865645331c6a",
       "brand": "Melissa",
       "name": "Image 74: Side and angled view of a pair of blue X Beat baby sneakers with beige trim",
@@ -15814,73 +15844,55 @@
       "id": "arrival-2dd016a8e8fcb7827353",
       "brand": "FILA",
       "name": "에어플로우 후드 경량 다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-ffe4420b5c3df1472654",
       "brand": "FILA",
       "name": "[한소희 착용] 1911 니트트랙 집업",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-2931c64dfb8da67035fc",
       "brand": "FILA",
       "name": "에어플로우 후드 경량 다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-0eb28fa2352cd5718f2d",
       "brand": "FILA",
       "name": "에어플로우 후드 경량 다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-946fda7b897233cfcdc5",
       "brand": "FILA",
       "name": "에어플로우 후드 경량 다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-4a58bf4fdb1688a9ebde",
       "brand": "FILA",
       "name": "에어플로우 후드 경량 다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-d66e159a7e14a1445df1",
       "brand": "FILA",
       "name": "[우즈 에디션] 에어플로우 경량다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-62629d128b506e5e3516",
       "brand": "FILA",
       "name": "[우즈 착용] 1911 니트트랙 집업",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-32c06ce84d32a9bb305e",
-      "brand": "Nike",
-      "name": "Caitlin 1 \"Midnight Fever\"",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-ac41097e7a8ece4aae06",
-      "brand": "Nike",
-      "name": "Nike Mind 002",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-9d7c931032932b8ab96a",
-      "brand": "Nike",
-      "name": "Nike Mind 001",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-4db5bcf05b82d9b6f307",
       "brand": "SATISFY",
       "name": "AmbientWarp™ Running Cap",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-4f10efd1d4f27ced0384",
@@ -15892,13 +15904,7 @@
       "id": "arrival-60c6aaa4109e17f1ad9e",
       "brand": "Converse",
       "name": "Converse x Hello Kitty&reg; and Friends One Strap My Melody&trade; & Kuromi&trade;",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-57c79ef7883d3fda22c0",
-      "brand": "Onitsuka Tiger",
-      "name": "MEXICO 66 SLIP-ON",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-db70465ce0ab123d09c8",
@@ -15907,148 +15913,26 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-4c036370b5107c841fe1",
-      "brand": "Onitsuka Tiger",
-      "name": "CALIFORNIA 78 EX",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-19a3d567cadc6734affc",
-      "brand": "Vans",
-      "name": "Classic Slip-On Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-bde316172b7870183ea4",
-      "brand": "Vans",
-      "name": "Old Skool Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-3942c0d82100ac6da8f5",
-      "brand": "Onitsuka Tiger",
-      "name": "CALIFORNIA 78 EX",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-8293c84ae4b5a8c9d36b",
-      "brand": "Brooks",
-      "name": "Ghost 18",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-9a73ee6568e3916b90ee",
-      "brand": "Brooks",
-      "name": "Ghost 18",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-33c19cd16a2bb13e85e9",
-      "brand": "Vans",
-      "name": "Van Doren Approved Skate Authentic Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-a4e279f1333cd0e6655e",
-      "brand": "Brooks",
-      "name": "Ghost Max 4",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-0c06e341b3028110ba13",
-      "brand": "Vans",
-      "name": "Skate Half Cab Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-d17b354df7a036ec8856",
-      "brand": "Vans",
-      "name": "OTW Era 95 Vibram",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1e8fd1059a2a2b7368ce",
-      "brand": "Brooks",
-      "name": "Ghost Max 4",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-69b883bc8d19b69e76f8",
       "brand": "Vans",
       "name": "Premium Old Skool 36 Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-ecb3bbe7d77466c73e37",
-      "brand": "Brooks",
-      "name": "Glycerin 23",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-f9e7fdd2612e3e118d6f",
-      "brand": "Vans",
-      "name": "OTW Era 95 Vibram",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-82c5762f3725da4c44db",
-      "brand": "Brooks",
-      "name": "Glycerin 23",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-9df6cc2496dcb7e16d5a",
-      "brand": "Vans",
-      "name": "Sk8-Hi Waterproof Insulated Shoe",
-      "reason": "footwear-type-unverified"
+      "reason": "re-release-launched-2024-10-03"
     },
     {
       "id": "arrival-285bf220797fe3945a95",
-      "brand": "Brooks",
-      "name": "Glycerin 23",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-bcf265776249ab1ebb55",
-      "brand": "Brooks",
-      "name": "Glycerin 23",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-5bf3192b0a77c0fa8c14",
-      "brand": "Brooks",
-      "name": "Hyperion Elite 6",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-12e8cc671255044f1b69",
-      "brand": "Brooks",
-      "name": "Hyperion Elite 6",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-ae8ee427ce874138b565",
-      "brand": "Brooks",
-      "name": "Cascadia Elite",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-6b14e314c330ae830cfd",
       "brand": "Brooks",
       "name": "Dash Reflective Short Sleeve",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-4cdece31f19ea70e2df9",
       "brand": "Brooks",
       "name": "Dash Reflective Short",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-efdc176b33485fbb483c",
-      "brand": "Skechers",
-      "name": "UNO - Corazon Conmigo",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-89adedd6bb4a6b0a53f6",
@@ -16063,40 +15947,16 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-d28fe6b9fce71488679c",
-      "brand": "Skechers",
-      "name": "UNO - Compañero Eterno",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-d9de9ebf38dc91a91c59",
-      "brand": "The North Face",
-      "name": "Glenclyffe™ Urban Low",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-057420ace096e9b303dc",
       "brand": "Under Armour",
       "name": "UA D. Fox 3",
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-7aca1d9ddf72703cc81f",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO RUN Ascend",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-8c44c58766172b002eb7",
       "brand": "Under Armour",
       "name": "UA D. Fox 3",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-088ae5fce92812bf86a8",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO RUN Ascend",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-359ed3c46d06f3e1d2f1",
@@ -16109,12 +15969,6 @@
       "brand": "Under Armour",
       "name": "UA HB Racer 2",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-0813a121d11bc6fce2a5",
-      "brand": "Skechers",
-      "name": "GO RUN Ascend - Spike",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-148b8266d9182a33ecc1",
@@ -16130,9 +15984,7 @@
     },
     {
       "id": "arrival-fc68ce97cdd9611e97d1",
-      "brand": "Skechers",
-      "name": "GO RUN Ascend - Spike",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-76ad32a2dd0fbc782f8e",
@@ -16147,52 +15999,20 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-6f926014327d2d9a5644",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-c6cb7be0bf8086b3c53b",
       "brand": "The North Face",
       "name": "Men’s THERMOBALL™ Traction Mule V",
       "reason": "hybrid-review-required"
     },
     {
-      "id": "arrival-cafc4a56a6dcac202f8c",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-a3d8118471d64726084f",
-      "brand": "Merrell",
-      "name": "Men's Jungle Moc X Harris Tweed",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-1edecb95beca5343d781",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-e6087938a8c4ed6e9bd2",
       "brand": "National Geographic",
       "name": "Unisex Two-Layer Color-Block Hooded Windbreaker",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-a8a9f6578f9d8171869a",
-      "brand": "Merrell",
-      "name": "Men's Relay Lace X Harris Tweed",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-42d2dfdf84df1485d29b",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-b5370afdfd72d3a4c77d",
@@ -16208,9 +16028,7 @@
     },
     {
       "id": "arrival-8a2efa0fb9030f7d2615",
-      "brand": "Skechers",
-      "name": "GO WALK Flex Plus - Star",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-135a17543b833535cfe0",
@@ -16228,48 +16046,36 @@
       "id": "arrival-4136c35c62ad4336110a",
       "brand": "National Geographic",
       "name": "Robic Air Lightweight Backpack",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-db938e227fbb34dd85dc",
       "brand": "National Geographic",
       "name": "Daily Light Backpack",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-c22a191cd35d51bfdea2",
-      "brand": "KEEN",
-      "name": "Men's Targhee IV Waterproof Hiking Shoe",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-9bdd48f8707a886e917d",
       "brand": "National Geographic",
       "name": "Urban Prime Backpack",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-7a82abf0673717d202d5",
       "brand": "National Geographic",
       "name": "Urban Simple Backpack",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-9248bdc80acf553955b8",
       "brand": "National Geographic",
       "name": "Uniti Backpack",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-0dc0d2fdb651a93a7484",
       "brand": "National Geographic",
       "name": "Men's Airflow Short Sleeve Poloshirt - Black",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-dda480a98157ba3c7017",
-      "brand": "KEEN",
-      "name": "Men's Targhee IV Wide Waterproof Hiking Shoe",
       "reason": "footwear-type-unverified"
     },
     {
@@ -16297,34 +16103,10 @@
       "reason": "hybrid-review-required"
     },
     {
-      "id": "arrival-c4ef71ddbe4d50002de7",
-      "brand": "OOFOS",
-      "name": "Women's Primaloft Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-cf6be25196b49a78b032",
-      "brand": "norda",
-      "name": "005",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-6126bd4d60a5ea1164f6",
       "brand": "Alo",
       "name": "Street Essential Tee",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-0f882288c484b53c246e",
-      "brand": "OOFOS",
-      "name": "Women's Lace-Up Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-d2ce783c2810b467f2c9",
-      "brand": "norda",
-      "name": "005",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-af975422abfa4aa3613b",
@@ -16343,12 +16125,6 @@
       "brand": "Havaianas",
       "name": "Havaianas Zellerfeld Top Toe Mule",
       "reason": "hybrid-review-required"
-    },
-    {
-      "id": "arrival-46fd3e0431c3fa853a02",
-      "brand": "OOFOS",
-      "name": "Women's Lace-Up Shoe",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-c21df4490c7734fe1806",
@@ -16393,22 +16169,16 @@
       "reason": "duplicate-product-color"
     },
     {
-      "id": "official-nike-487471-300",
-      "brand": "Jordan",
-      "name": "Air Jordan 14 Retro \"Forest Green\"",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "official-nike-ct8013-105",
-      "brand": "Jordan",
-      "name": "Air Jordan 12 Retro \"Fireside\"",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "official-nike-hq2410-200",
+      "id": "arrival-e71e5b6b6fd12355fe88",
       "brand": "Nike",
-      "name": "Nike First Sight Shadow",
-      "reason": "footwear-type-unverified"
+      "name": "Nike Air Force 1",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-18be37b03c9b3e6273e1",
+      "brand": "Nike",
+      "name": "Nike Air Max Plus",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-ce5763908515a1ea044e",
@@ -16419,6 +16189,24 @@
       "brand": "Nike",
       "name": "Nike P-6000",
       "reason": "re-release-launched-2026-06-29"
+    },
+    {
+      "id": "arrival-624eb0125fa70bd86b7d",
+      "brand": "Nike",
+      "name": "Nike Air Max 90",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-d7b40513fd60fad10d85",
+      "brand": "Nike",
+      "name": "Nike Air Max 90",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-66179ce86c7b2abbfb9c",
+      "brand": "Nike",
+      "name": "Nike Air Max 95 Big Bubble",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-7131c8feb87b0daa7544",
@@ -16458,7 +16246,7 @@
       "id": "arrival-18bbc29998ccf27c2043",
       "brand": "Balenciaga",
       "name": "Women's Rodeo Handbag Mini in Rose Quartz",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-70be25ae4931e672ab86",
@@ -16482,96 +16270,66 @@
       "id": "arrival-43b916af386030e52b08",
       "brand": "FILA",
       "name": "에어플로우 후드 헤비 다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-8295e6052d3eb31dd413",
       "brand": "FILA",
       "name": "에어플로우 후드 헤비 다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-688d216663b307813672",
       "brand": "FILA",
       "name": "에어플로우 후드 헤비 다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-f42e0c01f63f99338b68",
       "brand": "FILA",
       "name": "프리미엄 롱다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-ad49304eb2fa0153f760",
       "brand": "FILA",
       "name": "에센셜 롱다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-3a15d01f4f6bf105b5ad",
       "brand": "FILA",
       "name": "에센셜 롱다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-e41dc128c2993cf2df67",
       "brand": "FILA",
       "name": "베이직 후드 다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-1cf36646f035114d1780",
       "brand": "FILA",
       "name": "기모 그래픽 맨투맨",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-bc03d540ded1198e67bc",
       "brand": "FILA",
       "name": "기모 그래픽 맨투맨",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-031023000e15a86ea329",
       "brand": "FILA",
       "name": "기모 그래픽 맨투맨",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-f84e7ff3a61e24dcd308",
-      "brand": "Nike",
-      "name": "Air Jordan 41 \"Ruby\"",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1a6f34a032b8dc73f0f8",
-      "brand": "Nike",
-      "name": "Ja 4 \"Zombie\"",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-125db035ce09587d811d",
       "brand": "Axel Arigato",
       "name": "Daze Runner",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-4b15632373dd758e4fd1",
-      "brand": "Nike",
-      "name": "Nike Air Griffey Max 1",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-225ec9779206237a8e6a",
-      "brand": "Nike",
-      "name": "Giannis Freak 8 \"Trick Question\"",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-4cdd45fee998eef75684",
-      "brand": "Nike",
-      "name": "NikeSKIMS Rift Satin",
       "reason": "footwear-type-unverified"
     },
     {
@@ -16581,57 +16339,9 @@
       "reason": "hybrid-review-required"
     },
     {
-      "id": "arrival-1901b7e369fe37ccb00e",
-      "brand": "Vans",
-      "name": "VANSZA Authentic Kickdown Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1bedbb20c5e90c8ca52d",
-      "brand": "Vans",
-      "name": "Skate Half Cab Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-ccc6cf8bd93bb8f1807c",
-      "brand": "Vans",
-      "name": "Skate Chukka Low Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-b3be7b585c81ffa0a38c",
-      "brand": "Onitsuka Tiger",
-      "name": "MEXICO 66 BOXING",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-cee79efe15fa1e792e73",
-      "brand": "Vans",
-      "name": "Premium Sk8-Hi Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1c36c8077fc7af46204b",
-      "brand": "Vans",
-      "name": "Skate Old Skool Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-6ae86d132b0d3bc8c8e4",
-      "brand": "Onitsuka Tiger",
-      "name": "HMR PEAK G-TX",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-5d9e53a54f800712a3c0",
       "brand": "Saucony",
       "name": "Evelynn World X Saucony ProGrid Triumph 4",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-d0e64ce085ddb4040613",
-      "brand": "Vans",
-      "name": "Half Cab GORE-TEX Insulated Shoe",
       "reason": "footwear-type-unverified"
     },
     {
@@ -16641,70 +16351,28 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-1b3c394222a530a93f19",
-      "brand": "Onitsuka Tiger",
-      "name": "HMR PEAK",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-254020228052a89d917d",
-      "brand": "Vans",
-      "name": "Classic Slip-On Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-48a7d72956ef465d607f",
-      "brand": "Vans",
-      "name": "Premium Era Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-c3f5816e3e3f4e465b4c",
-      "brand": "Onitsuka Tiger",
-      "name": "MEXICO 66 SD SLIP-ON",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-4ed6571f49548800adbe",
-      "brand": "Brooks",
-      "name": "Ghost Max 4",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-462a0a769aef8a32c5ba",
-      "brand": "Onitsuka Tiger",
-      "name": "MEXICO 66 SD SLIP-ON",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-421fe49f781e8b958909",
       "brand": "Brooks",
       "name": "Momentum Thermal Tight",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-2bd6109a2573eb426075",
       "brand": "Brooks",
       "name": "Momentum Thermal Tight",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-f30cbf6f4260696fd281",
       "brand": "Brooks",
       "name": "Momentum Thermal Tight",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-b7ea764ecbd20979c64b",
       "brand": "Brooks",
       "name": "Momentum Thermal Tight",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1addcd196836279d2e09",
-      "brand": "Brooks",
-      "name": "Hyperion Elite 6",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-27adfaecc2bc5b8670b5",
@@ -16716,7 +16384,7 @@
       "id": "arrival-9d93b866fef7c1caa928",
       "brand": "Brooks",
       "name": "Momentum Thermal Vest",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-b2e055bbb8fb8accfb4e",
@@ -16728,7 +16396,7 @@
       "id": "arrival-d0076caf096a3a63fabe",
       "brand": "Brooks",
       "name": "Momentum Thermal Vest",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-a1c528c2f24ce1b9b8bd",
@@ -16740,41 +16408,25 @@
       "id": "arrival-024fa734491b3cd99c91",
       "brand": "Brooks",
       "name": "Momentum Thermal 1/4 Zip",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-5cbbfffe45838472b1fc",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: Max Cushioning Glide-Step - Cavara",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-922bd5ce56fb938dba50",
       "brand": "Brooks",
       "name": "Momentum Thermal 1/4 Zip",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
-      "id": "arrival-d329e17895c3ffb6c74f",
-      "brand": "Brooks",
-      "name": "Adrenaline GTS 10",
-      "reason": "footwear-type-unverified"
+      "id": "arrival-1f0af57ea375b70f42da",
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-00469faca0d211284787",
       "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-aa4610fd57f0099f0e5f",
-      "brand": "Brooks",
-      "name": "Adrenaline GTS 10",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-a86f119f3a86916a588f",
-      "brand": "Skechers",
-      "name": "Arch Fit Arcade - Arcata",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-bad610908c7e4f169cac",
@@ -16783,40 +16435,14 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-feda5ceebc6f6dd1355a",
-      "brand": "Skechers",
-      "name": "Arch Fit Arcade - Arcata",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-f685d3783f86a51e7f41",
-      "brand": "Skechers",
-      "name": "Arch Fit Arcade - Arcata",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-f2d4d04742eae22fb15e",
-      "brand": "Reebok",
-      "name": "BB 1000 Shoes",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1ee738740a4decd07de7",
-      "brand": "Skechers",
-      "name": "BOBS B Cute 2.0 - Rosy Whiskers",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-6204647ea2a75c8b5a95",
-      "brand": "Skechers",
-      "name": "BOBS B Cute 2.0 - Bows N Bones",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-9c8ee57d4320b407207c",
       "brand": "Reebok",
       "name": "Women's Oversized Crewneck Sweatshirt",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-22ef32c9c538de760041",
@@ -16831,10 +16457,12 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-0ec26cccc31ef16f5cf4",
+      "reason": "duplicate-product-color"
+    },
+    {
       "id": "arrival-f2388d6eba5bb70caeef",
-      "brand": "Skechers",
-      "name": "Hotshot HI - Cozy Fit Hidden Wild",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-c49b4da58851483bb55d",
@@ -16843,22 +16471,8 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-322a8d176aa78fb289b2",
-      "brand": "The North Face",
-      "name": "Men’s VECTIV™ Enduris 4 Shoes",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-e0d99d2cbc29dbfd7595",
-      "brand": "Skechers",
-      "name": "Hotshot HI -Cozy Fit Hidden Wild",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-9878d73d98c7edb23924",
-      "brand": "The North Face",
-      "name": "Women’s VECTIV™ Enduris 4 Shoes",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-233a9c73840bfd4a5614",
@@ -16868,15 +16482,7 @@
     },
     {
       "id": "arrival-cd2bd076591b6abaf6b8",
-      "brand": "Skechers",
-      "name": "Wilshire Blvd - Zip Stride",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-89b73e19cca28b67ac9d",
-      "brand": "The North Face",
-      "name": "Verto Approach",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-06ffef77c657e12c49b6",
@@ -16891,12 +16497,6 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-a817cdcf0143f94c9c61",
-      "brand": "The North Face",
-      "name": "Verto Approach GORE-TEX",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-91c34e955571df9739be",
       "brand": "Under Armour",
       "name": "UA Flex",
@@ -16906,7 +16506,7 @@
       "id": "arrival-e515123bfcab65cd059d",
       "brand": "National Geographic",
       "name": "Ultimate Backpack",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-8a868f1d7775c01d6149",
@@ -16939,28 +16539,10 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-a40590bb41efc0198823",
-      "brand": "OOFOS",
-      "name": "Men's Lace-Up Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-ba17497117016a979271",
       "brand": "Havaianas",
       "name": "Kids' Slim Glitter II",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-d483ee6fa9dc458c74d9",
-      "brand": "OOFOS",
-      "name": "Men's Lace-Up Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-e68cb6028caf53a36a6a",
-      "brand": "OOFOS",
-      "name": "Men's Lace-Up Shoe",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-a814dfd9c460d1be9421",
@@ -16975,12 +16557,6 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-65fc1dce511b6dc6e0f7",
-      "brand": "OOFOS",
-      "name": "Men's Slip-On Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-b9615accc0caad6f0912",
       "reason": "duplicate-product-color"
     },
@@ -16989,22 +16565,10 @@
       "reason": "duplicate-product-color"
     },
     {
-      "id": "official-nike-iq5700-900",
-      "brand": "Jordan",
-      "name": "Air Jordan 11 Retro \"Green Screen\"",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "official-nike-ja7792-400",
       "brand": "Jordan",
       "name": "Jordan 11 Retro MCS \"Space Jam\"",
       "reason": "excluded-footwear"
-    },
-    {
-      "id": "official-nike-iz1800-200",
-      "brand": "Jordan",
-      "name": "Air Jordan 11 Retro \"Magic Ball\"",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-0298ab531668cd38e182",
@@ -17063,10 +16627,22 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-a8d3a94f3cc2d88dc83e",
+      "brand": "Nike",
+      "name": "Nike Air Max Solo",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-caaeac625e9d97553929",
+      "brand": "Nike",
+      "name": "Nike Air Max 270",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-0165eaccce5fbc812edd",
       "brand": "Nike",
       "name": "Nike P-6000",
-      "reason": "re-release-launched-2026-06-29"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-254336f35f5e0cba3875",
@@ -17077,10 +16653,22 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-0d8b2618a6bfee84b9d7",
+      "brand": "Nike",
+      "name": "Nike Air Max Plus",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-97596ca38a54348fa845",
       "brand": "Nike",
       "name": "Nike P-6000",
-      "reason": "re-release-launched-2026-06-29"
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-781d8bc77d2d3bb253f6",
+      "brand": "Nike",
+      "name": "Air Jordan 1 Mid SE",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-7f7ce227faf3a1555e51",
@@ -17092,7 +16680,7 @@
       "id": "arrival-9ab9937606b2987ecfde",
       "brand": "Balenciaga",
       "name": "Women's Rodeo Handbag Mini in Black",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-c26504e3d28bad455302",
@@ -17128,19 +16716,13 @@
       "id": "arrival-a16a4290e37420424738",
       "brand": "FILA",
       "name": "1911 여성 니트트랙 집업",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-517166543c7ab3860601",
-      "brand": "On",
-      "name": "Limited edition Cloudmonster BB",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-9ba7309e6f9ab41d72b8",
       "brand": "FILA",
       "name": "[차정원 착용] 1911 여성 니트트랙 집업",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-a300e0c1fe6926d86584",
@@ -17152,31 +16734,31 @@
       "id": "arrival-e321c3b3a847a8bddb71",
       "brand": "FILA",
       "name": "1911 여성 니트트랙 집업",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-3968602a4d8980c54181",
       "brand": "FILA",
       "name": "에어플로우 여성 헤비다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-a285dd63d97ecb8e3fbd",
       "brand": "FILA",
       "name": "에어플로우 여성 헤비다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-9da2f1579b155df6f7b1",
       "brand": "FILA",
       "name": "에어플로우 여성 헤비다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-98999a500157c27fd491",
       "brand": "FILA",
       "name": "에어플로우 여성 헤비다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-98c3ad999b310f924b2f",
@@ -17188,13 +16770,13 @@
       "id": "arrival-5cc77d5cf17bf9ea7233",
       "brand": "FILA",
       "name": "에어플로우 여성 헤비다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-385a0f498f390cc4306e",
       "brand": "FILA",
       "name": "에어플로우 여성 헤비다운",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-3328f94305f9be914199",
@@ -17215,154 +16797,44 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-e508a15d9b736fa1345c",
-      "brand": "Nike",
-      "name": "Air Jordan 14 Retro \"Forest Green\"",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-f1cc4bd3da5e44ef9815",
       "brand": "Nike",
       "name": "Nike Hybrid RN",
       "reason": "hybrid-review-required"
     },
     {
-      "id": "arrival-cb22627f7e6b694ae8c8",
-      "brand": "Nike",
-      "name": "Nike Winflo 12",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-0fdb20661eeb23c7d28d",
       "brand": "Nike",
       "name": "Nike Calm 2.0",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-fb92b064320289aaf9fd",
-      "brand": "Nike",
-      "name": "Nike Winflo 12",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-7c340ff1d6a6021d1488",
-      "brand": "Onitsuka Tiger",
-      "name": "HMR PEAK G-TX",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-945bf0143409e9e047fc",
-      "brand": "Vans",
-      "name": "Skate Rowan Z3 Shoe by Atiba",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-0ff91d2aee7021fae21b",
-      "brand": "Onitsuka Tiger",
-      "name": "HMR PEAK",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-ef7dc153fc2676ca582b",
-      "brand": "Vans",
-      "name": "Court Low Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-238a41fb7f595edaf3fe",
-      "brand": "Onitsuka Tiger",
-      "name": "HMR PEAK",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-4857dedb934d7cbe52c8",
       "brand": "Vans",
       "name": "Premium Old Skool Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-088c9a0ae4d60c39e83c",
-      "brand": "Onitsuka Tiger",
-      "name": "HMR PEAK",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-3e0a7ae4cfad33aeb01b",
-      "brand": "Vans",
-      "name": "Skate Old Skool Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-a79b63ec5dd90121b7b7",
-      "brand": "Onitsuka Tiger",
-      "name": "HMR PEAK",
-      "reason": "footwear-type-unverified"
+      "reason": "re-release-launched-2025-05-07"
     },
     {
       "id": "arrival-c3475331ee7ccddfb8f8",
       "brand": "Vans",
       "name": "Premium Authentic Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1f228c20bdc8a9865a3c",
-      "brand": "Vans",
-      "name": "Authentic Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-4675e66b910efcd0531a",
-      "brand": "Onitsuka Tiger",
-      "name": "HMR PEAK",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-31d2f1d06117193d6dda",
-      "brand": "Vans",
-      "name": "Authentic Shoe",
-      "reason": "footwear-type-unverified"
+      "reason": "re-release-launched-2025-04-24"
     },
     {
       "id": "arrival-d489fe3ff4ee905bd0dc",
       "brand": "Onitsuka Tiger",
       "name": "OVERSIZED GRAPHIC TEE",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-dd7ee4db19abe4ada197",
-      "brand": "Vans",
-      "name": "Premium AVE Rapid Shoe by Atiba",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-71457c7a7133b6756ae5",
       "brand": "Onitsuka Tiger",
       "name": "OVERSIZED GRAPHIC TEE",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-9db8fea1e3a2337f6764",
-      "brand": "Vans",
-      "name": "Premium AVE Rapid Shoe",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-57ffd2f9ab6c7097b419",
-      "brand": "Brooks",
-      "name": "Adrenaline GTS 10",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-9f54d32daedb87514678",
-      "brand": "Vans",
-      "name": "Skate Half Cab Shoe by Atiba",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-f37303dc125a2598ec3f",
-      "brand": "Brooks",
-      "name": "Adrenaline GTS 10",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-5f1da20292ef028de6a9",
@@ -17374,7 +16846,7 @@
       "id": "arrival-6da45b32dd64d9afc59c",
       "brand": "Brooks",
       "name": "Momentum Thermal Tight",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-1a70fc6c737b66746f25",
@@ -17386,7 +16858,7 @@
       "id": "arrival-7f7a41a73433a1730bbe",
       "brand": "Brooks",
       "name": "Momentum Thermal Tight",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-4afddba2d3bce85f7a4c",
@@ -17398,7 +16870,7 @@
       "id": "arrival-85495ace1318a3ea5fb7",
       "brand": "Brooks",
       "name": "Momentum Thermal 1/4 Zip",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-c38638d4cb0b58b2c36a",
@@ -17410,43 +16882,43 @@
       "id": "arrival-70aa8a46a38f75040af6",
       "brand": "Brooks",
       "name": "Momentum Thermal 1/4 Zip",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-8b25f210949bfd763c27",
       "brand": "Brooks",
       "name": "Momentum Thermal 1/4 Zip",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-31d196ed741e265d3ee7",
-      "brand": "Skechers",
-      "name": "Cleo Style - Rare Glow",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-97238b977c20c37d9467",
       "brand": "Brooks",
       "name": "Momentum Thermal 1/4 Zip",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-e3b34800440ba72b2cea",
-      "brand": "Skechers",
-      "name": "Cleo Style - Rare Glow",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-ca5704935f838cfcdef7",
       "brand": "Reebok",
       "name": "Reebok x A Herd of Bison Graphic Tee",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-09ae444fab211d969d2a",
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-5053247f64442c9a4abf",
       "brand": "Brooks",
       "name": "Momentum Thermal Vest",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-b7504214a0e2f6fd74c9",
@@ -17456,43 +16928,23 @@
       "id": "arrival-73a22b6cf351d245a813",
       "brand": "Brooks",
       "name": "Momentum Thermal Vest",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-5ff8469e8d3c1c19e122",
-      "brand": "Skechers",
-      "name": "UNO - Compañero Eterno",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-b60502f3d8f2f18ab997",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-347ee85a31910fe9b09c",
       "brand": "Reebok",
       "name": "Women's Crewneck Sweatshirt",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-edd3d95e6846c80d34f6",
       "brand": "Brooks",
       "name": "Momentum Thermal Jogger 2.0",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-33f416987cfbeaad1df7",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-a839aa167bc16d8d72f5",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-7271b7558e4e499e8e23",
@@ -17507,12 +16959,6 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-e6eab169471c55c70f9d",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Relaxed Fit: D'Lux Walker 3.0 - Loyde",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-a4f0d709a901b2e21543",
       "brand": "The North Face",
       "name": "Base Camp™ THERMOBALL™ Mules",
@@ -17520,21 +16966,13 @@
     },
     {
       "id": "arrival-fa1a9922cb94feec972c",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Relaxed Fit: D'Lux Walker 3.0 - Loyde",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-916320e57bdead72d4b5",
       "brand": "Under Armour",
       "name": "UA FLX TR",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-ed6d7544de28879a3f7f",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-671934637297d8fae12c",
@@ -17547,12 +16985,6 @@
       "brand": "Under Armour",
       "name": "UA Charged Commit TR 5",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-36cd5e32f3b52841f925",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-8df4563f016403650a75",
@@ -17603,22 +17035,10 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-4afcc47fedb6002e7e82",
-      "brand": "The North Face",
-      "name": "Men’s Ultra 112 Waterproof Shoes",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-12404fc9ad8c2308b02f",
       "brand": "Under Armour",
       "name": "UA HB-LO",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-7f046b92f11a25e51b74",
-      "brand": "The North Face",
-      "name": "Women’s Hedgehog 3 Waterproof Shoes",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-93d7e2c36368d709125f",
@@ -17628,9 +17048,7 @@
     },
     {
       "id": "arrival-f783d9446d6af97025e6",
-      "brand": "The North Face",
-      "name": "Glenclyffe™ Urban Low",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-78ca7f4810474fcb9a7c",
@@ -17645,69 +17063,9 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-1cdda21a5f8cff060f26",
-      "brand": "Crocs",
-      "name": "클래식 언퍼게터블 스웨이드 클로그",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-f9e74b9742fed6225341",
-      "brand": "Crocs",
-      "name": "언퍼게터블 퀼티드 비건 스웨이드",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-10fc085e8103773c8986",
-      "brand": "OOFOS",
-      "name": "Men's Primaloft Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-c3fd897d781dae57af3f",
-      "brand": "Crocs",
-      "name": "클래식 두들 퍼 라인드 클로그",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-87dfb2596f53f8152406",
-      "brand": "OOFOS",
-      "name": "Men's Primaloft Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1d4de6a10bafe12f2e42",
-      "brand": "Crocs",
-      "name": "베이 라인드 메탈 미니즈 클로그",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-92a7d805522d5cc81b1b",
-      "brand": "OOFOS",
-      "name": "Men's Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-f5212a3e40b199866a54",
       "brand": "Crocs",
       "name": "텐트 모크",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-677940fdbd8da74c295a",
-      "brand": "OOFOS",
-      "name": "Men's Lace-Up Shoe",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-091dd58d96db3ee78ec4",
-      "brand": "Crocs",
-      "name": "파타 x 크록스 클래식 클로그",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-db8db2c64a7bc921d7be",
-      "brand": "Crocs",
-      "name": "에코 II 크롬",
       "reason": "footwear-type-unverified"
     },
     {
@@ -17765,18 +17123,6 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "official-nike-a23933c-832",
-      "brand": "Nike",
-      "name": "SHAI 001 Lace Up",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "official-nike-iv7023-700",
-      "brand": "Nike",
-      "name": "Nike Blazy \"Tie Dye\"",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-64ceeb1ca08035dda9c8",
       "brand": "Bottega Veneta",
       "name": "Orbit Flash Sneaker",
@@ -17791,6 +17137,24 @@
       "brand": "Nike",
       "name": "Nike P-6000",
       "reason": "re-release-launched-2026-06-29"
+    },
+    {
+      "id": "arrival-2ac8fa5771f1f2139cdf",
+      "brand": "Nike",
+      "name": "Air Jordan 1 Low SE 'Magic Ball'",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-9881ab6ce90b72a36ead",
+      "brand": "Nike",
+      "name": "Air Jordan 3 Retro \"Space Jam\"",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-68d9325d8cfc0b2f081f",
+      "brand": "Nike",
+      "name": "Nike Air Max Plus",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-b804f21eef534e7b7433",
@@ -17846,19 +17210,19 @@
       "id": "arrival-adc248ce997411ebdad9",
       "brand": "FILA",
       "name": "기모 그래픽 후드티",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-9707b66ee1f4da4c619f",
       "brand": "FILA",
       "name": "기모 그래픽 후드티",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-ac761c2f874f03f19318",
       "brand": "FILA",
       "name": "기모 그래픽 후드티",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-7d42f139426b964b1455",
@@ -17888,7 +17252,7 @@
       "id": "arrival-221840c170637a5292b5",
       "brand": "On",
       "name": "Cloud X Tempo",
-      "reason": "footwear-type-unverified"
+      "reason": "re-release-launched-2026-07-20"
     },
     {
       "id": "arrival-0546be3a881eb16b8758",
@@ -17897,88 +17261,34 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-573f499ab09a9ad7c03c",
-      "brand": "On",
-      "name": "Women's Cloud X Tempo Ivory | Ice",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-6bb00fbd61faa44ae587",
-      "brand": "On",
-      "name": "Women's Cloud X Tempo Ivory | Camellia",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-1bc0ce3c2b95c89e16ea",
       "brand": "FILA",
       "name": "에센셜 쉐르파 후드집업",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-483a282187a857f3c65d",
-      "brand": "On",
-      "name": "Women's Cloud X Tempo Ivory | Storm",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-90e927adcd1b9c489104",
-      "brand": "Nike",
-      "name": "Nike Run Swift 3",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-45b061f11c5d71ee550e",
-      "brand": "Nike",
-      "name": "Nike Run Swift 3",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-cdf2cb4311b436b993ba",
-      "brand": "Nike",
-      "name": "Kobe 3 Low Protro \"Mamba Eterno\"",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-665677f003f9141b1f96",
       "brand": "Onitsuka Tiger",
       "name": "WOMEN'S GRAPHIC TEE",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-6e7456ff47cd4c44a5c5",
-      "brand": "Nike",
-      "name": "Nike Run Defy",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-7c5eb26f21e32b2fcf23",
       "brand": "Onitsuka Tiger",
       "name": "WOMEN'S GRAPHIC TEE",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-b44d1c38b2a0055f9e13",
-      "brand": "Nike",
-      "name": "Nike Interact Run",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-d5bf717403d663e06bd7",
       "brand": "Onitsuka Tiger",
       "name": "OVERSIZED GRAPHIC TEE",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-a51e1fd1e68656e0c121",
       "brand": "Nike",
       "name": "NikeLab | Running",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-875f424a18bd41bc29a1",
-      "brand": "Onitsuka Tiger",
-      "name": "MEXICO 66 PARATY",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-5fa6a5fa04d756633d5f",
@@ -17987,124 +17297,28 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-534281f67af7d06464ee",
-      "brand": "Onitsuka Tiger",
-      "name": "MEXICO 66 PARATY",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-4646f708f520f8e8f6f3",
-      "brand": "Onitsuka Tiger",
-      "name": "MEXICO 66 PARATY",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-e4ef188c918a9e0d6029",
-      "brand": "Converse",
-      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star Lift Double Stack My Melody™ & Kuromi™",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-cbdeba776d23c7cae5c7",
-      "brand": "Converse",
-      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™ & Kuromi™",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-79c2917e9bdad12dfc00",
-      "brand": "Onitsuka Tiger",
-      "name": "MEXICO 66 PARATY",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1edbf6c0122e87824a1e",
-      "brand": "Converse",
-      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-451a35f6fcc86b64a729",
       "brand": "Converse",
       "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™ & Kuromi™",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-f63a4a42a919dab8de75",
-      "brand": "Converse",
-      "name": "Converse x Hello Kitty® and Friends Chuck 70 My Melody™ & Kuromi™",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-32f122f4f2d1cf61a44f",
       "brand": "Converse",
       "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™ & Kuromi™",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-a47070c18f1c085a0515",
-      "brand": "Onitsuka Tiger",
-      "name": "MEXICO 66 PARATY",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-941563cfd923dff4bcd5",
-      "brand": "Brooks",
-      "name": "Ghost 18",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-0ff335f378354e0a8e23",
       "brand": "Onitsuka Tiger",
       "name": "SHORT SLEEVE TEE",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-182dfc0ce8b3dd6e18ee",
-      "brand": "Converse",
-      "name": "SHAI 001 Lace Up",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-14f0b988ed3a8f5939ce",
-      "brand": "Brooks",
-      "name": "Ghost 18",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-26ead1c247819dbdbf50",
       "brand": "Converse",
       "name": "SHAI 001 Lace Up",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-72866ff43fe0dafd5d1c",
-      "brand": "Brooks",
-      "name": "Ghost 18",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-c1b341afbc49177a204f",
-      "brand": "Converse",
-      "name": "SHAI 001 Lace Up",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-b0ab272a1f23230e2885",
-      "brand": "Brooks",
-      "name": "Ghost Max 4",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-3ff2adb74d0dec007dbf",
-      "brand": "Converse",
-      "name": "SHAI 001 Lace Up",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-22c18cfdfe4e4202fc5e",
-      "brand": "Brooks",
-      "name": "Ghost Max 4",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-de1b3c171c5ee9cc24fc",
@@ -18116,73 +17330,43 @@
       "id": "arrival-23f794e6cf065d97b342",
       "brand": "Brooks",
       "name": "Momentum Thermal Vest",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1886454fe20eccc327b3",
-      "brand": "Converse",
-      "name": "Converse x GOLF le FLEUR Pro Leather",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-24c1b35536deba7a6d7c",
       "brand": "Brooks",
       "name": "Momentum Thermal Jogger 2.0",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-40fc0800d0af50e0ad02",
-      "brand": "Converse",
-      "name": "Converse x GOLF le FLEUR Pro Leather",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-786c3376e8a8cd38c7bb",
       "brand": "Brooks",
       "name": "Momentum Thermal Jogger 2.0",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-d3e96a59f2501aa5fd9b",
       "brand": "Brooks",
       "name": "Momentum Thermal Jogger 2.0",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-a8d3a56d9ca6a4c1ade9",
       "brand": "Brooks",
       "name": "Momentum Thermal Jogger 2.0",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-43e4c2a4c7a42d363872",
-      "brand": "Converse",
-      "name": "Chuck 70 Día de Muertos",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-cb969f8576335897ecbe",
       "brand": "Brooks",
       "name": "Momentum Thermal Jogger 2.0",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1f14b39d6b6c79e8c417",
-      "brand": "Converse",
-      "name": "Chuck Taylor All Star Velvet Ruffle",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-6ec3aee6f2b541930326",
       "brand": "Brooks",
       "name": "Momentum Thermal Hybrid Glove",
       "reason": "hybrid-review-required"
-    },
-    {
-      "id": "arrival-f74c25de90f735dfeaad",
-      "brand": "Reebok",
-      "name": "Club C Revenge Vintage Shoes",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-4a6d5dfe126f71ec306f",
@@ -18203,40 +17387,20 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-1095e516807e834f6907",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-9ce285cfa23057c8e19c",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-04aff8a7501d6544cae0",
       "brand": "Under Armour",
       "name": "ColdGear® NEOLAST™",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-2a4f4a405c51d1e8f6ba",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-665b80c32537278941f1",
       "brand": "Under Armour",
       "name": "UA Vanish Elite Jacquard",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-2accdd081476535ce849",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-f5502b3b2cc83e58d670",
@@ -18246,51 +17410,23 @@
     },
     {
       "id": "arrival-7f752a23f76a1bcaed03",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-d09f437148676271492d",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Relaxed Fit: Glide-Step - Fater",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-284b3558e0a730448447",
       "brand": "Under Armour",
       "name": "UA Utility Pro Pinstripe",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-1182ee3b54a78fbe64b3",
-      "brand": "Skechers",
-      "name": "Work Slip-Resistant Relaxed Fit: Consistent 2.0",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-698187706592c990156d",
-      "brand": "Skechers",
-      "name": "GO RUN Now - Lightdrive",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-07c1652670440dae2bf7",
-      "brand": "Skechers",
-      "name": "Sprinta",
-      "reason": "footwear-type-unverified"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-7b116e4e0b45527d70c3",
       "brand": "Under Armour",
       "name": "ColdGear® Printed",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-5a9b6ba05d3fa09be8cd",
-      "brand": "Skechers",
-      "name": "Sprinta",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-42068d793d68ee3cf24a",
@@ -18299,16 +17435,10 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-143dc4160a7ed45df54e",
-      "brand": "Under Armour",
-      "name": "UA x Sharpie HeatGear®",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-022635e6aafb54660008",
       "brand": "Under Armour",
       "name": "UA Cozy",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-34c1eb385f7249c0625e",
@@ -18327,12 +17457,6 @@
       "brand": "Skechers",
       "name": "Skechers SKX_2 Jr Youth TF",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-f4796afe68bbea2f32c4",
-      "brand": "KEEN",
-      "name": "Men's Targhee Apex Waterproof Hiking Shoe",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-80f0a80ae966f3f91069",
@@ -18399,18 +17523,6 @@
       "brand": "Havaianas",
       "name": "Kids' Slim Flip Flops",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-b041d0ee6db49031edd1",
-      "brand": "Havaianas",
-      "name": "Havaianas Fantasia",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-54e86503520d083532a5",
-      "brand": "Havaianas",
-      "name": "Havaianas Square",
-      "reason": "footwear-type-unverified"
     },
     {
       "id": "official-nike-io6260-800",
@@ -18503,24 +17615,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-7d35e226807bfaa46955",
-      "brand": "On",
-      "name": "Image 373: On Weather Jacket Insulated Brume & Hare Women – Performance running, outdoor, trail running Jackets",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-a6e40e415ae3aec7f48a",
-      "brand": "On",
-      "name": "Image 410: On Trail-T Solar Brume Women – Trail running, UPF40+, warm and sunny weather running Trail running Tops and t-shirts",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-ed77755b36cf4082da1c",
-      "brand": "On",
-      "name": "Image 410: On Weather Jacket Insulated Brume & Hare Men – Performance running, outdoor, trail running Jackets",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-5353c04d245573da5530",
       "brand": "Prada",
       "name": "Leather sneakers",
@@ -18599,6 +17693,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "official-nike-a23933c-832",
+      "brand": "Nike",
+      "name": "SHAI 001 Lace Up",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-a1acd601af88b6da68c7",
       "brand": "Prada",
       "name": "Speedrock leather and mesh fabric sneakers",
@@ -18629,6 +17729,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "official-nike-hq2410-200",
+      "brand": "Nike",
+      "name": "Nike First Sight Shadow",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "official-nike-iv7509-001",
       "brand": "Nike",
       "name": "Nike Vomero Premium SP",
@@ -18638,6 +17744,12 @@
       "id": "arrival-04d023cd0bbee3168c99",
       "brand": "Onitsuka Tiger",
       "name": "MEXICO 66",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-ct8013-105",
+      "brand": "Jordan",
+      "name": "Air Jordan 12 Retro \"Fireside\"",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18665,9 +17777,45 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "official-nike-iv6246-100",
+      "brand": "Nike",
+      "name": "Nike Air Foamposite Pro Premium",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-im2523-600",
+      "brand": "Nike",
+      "name": "Nike Blazy",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-iq8161-001",
+      "brand": "Nike",
+      "name": "Nike Cryoshot Mercurial Vapor 1 OG",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-iq6827-200",
+      "brand": "Nike",
+      "name": "Nike SB Zoom Air Paul Rodriguez Low",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "official-nike-iq5495-005",
       "brand": "Jordan",
       "name": "Air Jordan 1 High OG \"Royal\"",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-a23976c-084",
+      "brand": "Nike",
+      "name": "SHAI 001",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-a23975c-004",
+      "brand": "Nike",
+      "name": "SHAI 001",
       "reason": "representative-photo-review-required"
     },
     {
@@ -18755,6 +17903,78 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-a86f119f3a86916a588f",
+      "brand": "Skechers",
+      "name": "Arch Fit Arcade - Arcata",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-feda5ceebc6f6dd1355a",
+      "brand": "Skechers",
+      "name": "Arch Fit Arcade - Arcata",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-f685d3783f86a51e7f41",
+      "brand": "Skechers",
+      "name": "Arch Fit Arcade - Arcata",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-43e4c2a4c7a42d363872",
+      "brand": "Converse",
+      "name": "Chuck 70 Día de Muertos",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-1f14b39d6b6c79e8c417",
+      "brand": "Converse",
+      "name": "Chuck Taylor All Star Velvet Ruffle",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-1886454fe20eccc327b3",
+      "brand": "Converse",
+      "name": "Converse x GOLF le FLEUR Pro Leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-40fc0800d0af50e0ad02",
+      "brand": "Converse",
+      "name": "Converse x GOLF le FLEUR Pro Leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-f63a4a42a919dab8de75",
+      "brand": "Converse",
+      "name": "Converse x Hello Kitty® and Friends Chuck 70 My Melody™ & Kuromi™",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-e4ef188c918a9e0d6029",
+      "brand": "Converse",
+      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star Lift Double Stack My Melody™ & Kuromi™",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-1edbf6c0122e87824a1e",
+      "brand": "Converse",
+      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-cbdeba776d23c7cae5c7",
+      "brand": "Converse",
+      "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™ & Kuromi™",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-9fc7f6c1e81f377572f0",
+      "brand": "Skechers",
+      "name": "Hotshot - Cozy Fit Wild Style",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-ccd8979e36e6dda42901",
       "brand": "Melissa",
       "name": "M Slide",
@@ -18803,6 +18023,24 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-a40590bb41efc0198823",
+      "brand": "OOFOS",
+      "name": "Men's Lace-Up Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-d483ee6fa9dc458c74d9",
+      "brand": "OOFOS",
+      "name": "Men's Lace-Up Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-e68cb6028caf53a36a6a",
+      "brand": "OOFOS",
+      "name": "Men's Lace-Up Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-7d18a5a1399ff144e61f",
       "brand": "OOFOS",
       "name": "Men's Slip-On Leather Shoe",
@@ -18818,6 +18056,12 @@
       "id": "arrival-bb38e3dcbeab723a891a",
       "brand": "OOFOS",
       "name": "Men's Slip-On Leather Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-65fc1dce511b6dc6e0f7",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Shoe",
       "reason": "shared-representative-photo"
     },
     {
@@ -18899,6 +18143,108 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-875f424a18bd41bc29a1",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 PARATY",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-534281f67af7d06464ee",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 PARATY",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-4646f708f520f8e8f6f3",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 PARATY",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-79c2917e9bdad12dfc00",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 PARATY",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-a47070c18f1c085a0515",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 PARATY",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-1095e516807e834f6907",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-2a4f4a405c51d1e8f6ba",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-2accdd081476535ce849",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-e6eab169471c55c70f9d",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Relaxed Fit: D'Lux Walker 3.0 - Loyde",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-d09f437148676271492d",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Relaxed Fit: Glide-Step - Fater",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-b60502f3d8f2f18ab997",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-33f416987cfbeaad1df7",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-a839aa167bc16d8d72f5",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-a4af7579189e8362ec3b",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit Arcade - See Ya There",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-126ae65ae8269367a546",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit Arcade - See Ya There",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-ed6d7544de28879a3f7f",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-36cd5e32f3b52841f925",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-0dce895ded2a95ffe941",
       "brand": "Melissa",
       "name": "Sun Capri Platform",
@@ -18956,6 +18302,12 @@
       "id": "arrival-342b1e3a8025f5e1574d",
       "brand": "Havaianas",
       "name": "Women's High Platform Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-690b7c0bcb04b4203237",
+      "brand": "OOFOS",
+      "name": "Women's Lace-Up Shoe",
       "reason": "shared-representative-photo"
     },
     {
@@ -19091,9 +18443,63 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-b3be7b585c81ffa0a38c",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 BOXING",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-c3f5816e3e3f4e465b4c",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 SD SLIP-ON",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-462a0a769aef8a32c5ba",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 SD SLIP-ON",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-8d86763bd49dbe8a23a4",
       "brand": "Havaianas",
       "name": "Women's Slim Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-57c79ef7883d3fda22c0",
+      "brand": "Onitsuka Tiger",
+      "name": "MEXICO 66 SLIP-ON",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-7aca1d9ddf72703cc81f",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO RUN Ascend",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-088ae5fce92812bf86a8",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO RUN Ascend",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-6f926014327d2d9a5644",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-cafc4a56a6dcac202f8c",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-42d2dfdf84df1485d29b",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
       "reason": "shared-representative-photo"
     }
   ]
