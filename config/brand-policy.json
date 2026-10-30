@@ -164,6 +164,14 @@
       "mandatory": true
     },
     {
+      "id": "autry",
+      "name": "Autry",
+      "group": "contemporary",
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Sneakers are the brand's whole product line; its official store sells nothing else."
+    },
+    {
       "id": "pane",
       "name": "PANE",
       "group": "contemporary",
@@ -454,8 +462,9 @@
       "id": "maison-margiela",
       "name": "Maison Margiela",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Replica and Tabi sneakers are standing categories on maisonmargiela.com, not occasional pieces."
     },
     {
       "id": "mm6-maison-margiela",
@@ -475,15 +484,17 @@
       "id": "rick-owens",
       "name": "Rick Owens",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Geobasket and Ramones are standing sneaker categories on rickowens.eu; 198 collected records were all held for per-model review."
     },
     {
       "id": "jil-sander",
       "name": "Jil Sander",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Standing sneakers category on jilsander.com."
     },
     {
       "id": "alaia",
@@ -524,8 +535,9 @@
       "id": "fendi",
       "name": "Fendi",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Standing sneakers category on fendi.com (Fendi Match, Faster)."
     },
     {
       "id": "ganni",
@@ -538,8 +550,9 @@
       "id": "givenchy",
       "name": "Givenchy",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Standing sneakers category on givenchy.com; the TK-MX/TK-360 family is a continuous line."
     },
     {
       "id": "versace",
@@ -552,8 +565,9 @@
       "id": "valentino-garavani",
       "name": "Valentino Garavani",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Standing sneakers category on valentino.com; the Rockstud and One Stud trainers are a continuous line."
     },
     {
       "id": "dolce-gabbana",
@@ -566,15 +580,17 @@
       "id": "alexander-mcqueen",
       "name": "Alexander McQueen",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "The Oversized Sneaker is the house's best-known shoe and has its own category on alexandermcqueen.com."
     },
     {
       "id": "lanvin",
       "name": "Lanvin",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Curb is a standing sneaker line with its own category on lanvin.com."
     },
     {
       "id": "lemaire",
@@ -699,8 +715,9 @@
       "id": "chanel",
       "name": "Chanel",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Standing sneakers category on chanel.com; a continuous line since the 2014 tweed trainer."
     },
     {
       "id": "thom-browne",
@@ -720,8 +737,9 @@
       "id": "amiri",
       "name": "AMIRI",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Skel Top and MA are standing sneaker lines; amiri.com publishes separate new men's and women's sneaker listings."
     },
     {
       "id": "rhude",
@@ -741,8 +759,9 @@
       "id": "off-white",
       "name": "Off-White",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Out Of Office is a standing sneaker line with its own category on off---white.com."
     },
     {
       "id": "palm-angels",
@@ -895,8 +914,9 @@
       "id": "the-row",
       "name": "The Row",
       "group": "luxury",
-      "policy": "exclude",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Standing sneakers category on therow.com (Owen, Dune, Marie H); 15 collected records were held brand-excluded."
     },
     {
       "id": "khaite",
@@ -930,22 +950,25 @@
       "id": "loro-piana",
       "name": "Loro Piana",
       "group": "luxury",
-      "policy": "exclude",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Standing sneakers category on loropiana.com (Flexy Walk, 360 Flexy Wind)."
     },
     {
       "id": "brunello-cucinelli",
       "name": "Brunello Cucinelli",
       "group": "luxury",
-      "policy": "exclude",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Standing sneakers category on brunellocucinelli.com."
     },
     {
       "id": "zegna",
       "name": "Zegna",
       "group": "luxury",
-      "policy": "exclude",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "scopeNote": "Triple Stitch is a standing sneaker line with its own category on zegna.com."
     },
     {
       "id": "santoni",

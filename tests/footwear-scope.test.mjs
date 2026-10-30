@@ -25,7 +25,19 @@ test('dress exclusions win even with sneaker words, category labels and review a
   assert.equal(classifyFootwear({...base,name:'Jelly shoe',description:'Jelly upper'}).reason,'flat-structure-unverified');
   assert.equal(classifyFootwear({...base,name:'Jellyfish sneaker'}).category,'sneaker');
   assert(!isPublishedFootwear({category:'sandal',name:'Flat sandal'}));
-  assert.equal(classifyFootwear({...base,name:'Platform sandal',description:'Casual rubber outsole and 60mm heel.'}).reason,'flat-platform-unverified');
+  // A platform sandal no longer has to prove its sole is flat before it can
+  // be classified - the raised sole is the point of 통굽쪼리, not a doubt
+  // about it - but a strappy sandal still does not reach a card.
+  assert.equal(classifyFootwear({...base,name:'Platform sandal',description:'Casual rubber outsole and 60mm heel.'}).category,'platform-sandal');
+  // Slides, thongs, slippers and clogs do, by name, and 통굽 counts as platform.
+  assert.equal(classifyFootwear({...base,name:'Pool slide'}).category,'slipper');
+  assert.equal(classifyFootwear({...base,name:'쪼리'}).category,'slipper');
+  assert.equal(classifyFootwear({...base,name:'통굽 쪼리'}).category,'platform-slipper');
+  assert.equal(classifyFootwear({...base,name:'Clog'}).category,'clog');
+  for(const t of [{category:'slipper'},{category:'platform-slipper'},{category:'clog'}])
+    assert(isPublishedFootwear({...t,name:'x'}),JSON.stringify(t)+' should reach a card');
+  // ...and a dress sandal is still refused however it is worded.
+  assert.equal(classifyFootwear({...base,name:'Dress sandal'}).reason,'excluded-footwear');
   for(const name of ['ジェリーパンプス','スリングバック スニーカー','皮鞋','플랫폼 힐'])assert.equal(classifyFootwear({...base,name}).reason,'excluded-footwear');
   assert.equal(classifyFootwear({...base,name:'Running sneaker',description:'A ballerina inspired color scheme.'}).category,'sneaker');
 });

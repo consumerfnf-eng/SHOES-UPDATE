@@ -62,6 +62,12 @@ export function officialHybridReview(p, description, checkedAt) {
   if(!sneakerStructure.test(`${p.name||''} ${p.officialCategory||''}`)&&!construction.test(description||''))return null;
   return {approved:true,url:p.url,type:'hybrid',sneakerSole:true,checkedAt,method:'official-product-sneaker-description'};
 }
+/** Does a classified category reach a card? Kept next to the classifier so
+ *  the gate above and the browser filter cannot drift apart. */
+export function inPublishedScope(category) {
+  return ['sneaker', 'hybrid', 'jelly', 'clog', 'slipper', 'platform-slipper', 'platform-sandal', 'platform-shoe'].includes(category);
+}
+
 export function classifyFootwear(p) {
   // Negative gates run first for every record; legacy verification cannot bypass them.
   // Include the normalized source category/type. Several official product feeds
@@ -95,14 +101,23 @@ export function classifyFootwear(p) {
     if (!sneakerStructure.test(context) && !reviewedSneakerBase)return {reason:'sneaker-structure-unverified'};
     return { category: 'hybrid' };
   }
-  if (/\b(?:clog|클로그)\b/i.test(title)) {
-    if (!/ventilat|croslite|eva|summer|drain|breath|vented|여름|통기|배수/i.test(context)) return { reason: 'summer-structure-unverified' };
-    return { category: 'clog' };
-  }
-  if (/sandal|slide|샌들|슬라이드/i.test(title)) {
-    if (!/sport|outdoor|eva|foam|cushion|casual|flat|recovery|스포츠|캐주얼|플랫|쿠셔닝/i.test(context)) return { reason: 'casual-sandal-unverified' };
-    if(/platform|플랫폼/i.test(context)&&!reviewedPlatform&&!/\bflat\b|level sole|통굽|평평한|플랫/i.test(context))return {reason:'flat-platform-unverified'};
-    return { category: /platform|플랫폼/i.test(context) ? 'platform-sandal' : 'sandal' };
+  // Clogs, slides, thongs and slippers are part of the catalogue rather than
+  // a summer exception to it. They used to need their construction confirmed
+  // first - a clog had to mention ventilation or drainage, a sandal had to
+  // mention foam or recovery - which held 23 records on wording their brands
+  // simply had not used. A clog is a clog; the word is the brand's own.
+  if (/\b(?:clog|클로그|クロッグ)\b/i.test(title)) return { category: 'clog' };
+  // A slide, a thong and a slipper are asked for by name. A strappy summer
+  // sandal is not, and dress sandals stay excluded above, so the two are
+  // separated rather than swept together: what was named reaches a card,
+  // what was not keeps the category it always had.
+  const backless = /\b(?:flip[- ]?flops?|thongs?|slippers?|slides?)\b|쪼리|조리|슬리퍼|슬라이드|スライド|ビーチサンダル|拖鞋/i.test(title);
+  if (backless || /sandal|샌들|espadrilles?|에스파드리유|サンダル|凉鞋|涼鞋/i.test(title)) {
+    // 통굽쪼리 counts, and the raised sole no longer has to be proved flat
+    // before the record can be shown.
+    const platform = /platform|플랫폼|통굽|wedge sole/i.test(context);
+    if (backless) return { category: platform ? 'platform-slipper' : 'slipper' };
+    return { category: platform ? 'platform-sandal' : 'sandal' };
   }
   if (/sneaker|running shoe|trail running|training shoes?|trainers?|court(?:-type)? shoe|tennis shoes?|스니커|운동화|러닝화|트레이닝화|트레일화/i.test(context)||/\btraining\b[^.!?]{0,45}\bshoes?\b/i.test(title)) return { category: 'sneaker' };
   if (/\bplatform\b|플랫폼/i.test(title)&&(reviewedPlatform||/\bflat\b|level sole|플랫|통굽|평평한/i.test(context))&&/casual|street|sport|캐주얼/i.test(context))return {category:'platform-shoe'};
@@ -187,8 +202,21 @@ export function colorwayFromStyleSlug(style, name) {
 export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:00')) {
   const brand = canonicalBrand(raw.brand), policy = brandPolicy(brand);
   if (!policy || !['mandatory','core','conditional'].includes(policy.policy)) return { reason: 'brand-excluded-or-unverified' };
-  if (policy.policy === 'conditional' && (!raw.modelReview?.approved || !httpUrl(raw.modelReview.url))) return { reason: 'conditional-model-review-required' };
   const type = classifyFootwear(raw); if (!type.category) return type;
+  // A conditional brand is one that mostly makes something else - a fashion
+  // house whose shoe page is nine parts heels - so each model used to need
+  // signing off by hand before it could publish. 532 records sat on that,
+  // 198 of them Rick Owens, and nobody was ever going to sign off 532 shoes.
+  //
+  // The question the sign-off was really asking is "is this one of ours?",
+  // and the classifier above already answers it: everything it refuses to
+  // place is held anyway, and loafers, heels and boots are refused outright
+  // whatever the brand. So a conditional brand now publishes whatever
+  // classifies into the catalogue's own scope, and the hand review is kept
+  // only for what falls outside it.
+  if (policy.policy === 'conditional' && !inPublishedScope(type.category)
+      && (!raw.modelReview?.approved || !httpUrl(raw.modelReview.url)))
+    return { reason: 'conditional-model-review-required' };
   // Brand fit was a keyword guess about whether a shoe was MLB-ish or
   // DISCOVERY-ish, and it was the single largest reason a verified product
   // never reached the page: 1,600 of 2,933 held records. A shoe that is
