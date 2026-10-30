@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T08:16:04.261Z",
+  "checkedAt": "2026-10-30T09:42:33.061Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -2196,7 +2196,7 @@
       "id": "xlsx-7d925f85c9977ced",
       "brand": "National Geographic",
       "name": "N262USD380 썬라잇 V2 BLACK",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "xlsx-1ad645ce49e4397e",
@@ -14588,73 +14588,73 @@
       "id": "live-45471cee8415275a",
       "brand": "National Geographic",
       "name": "Betta Sandals W/ Logo On Strap",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-38a180ff9b1bc6db",
       "brand": "National Geographic",
       "name": "Kids Sandals W/ Logo On Strap- Pink",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-6c491ed119c3e703",
       "brand": "National Geographic",
       "name": "Kids Sandals W/ Logo On Strap- Blue",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-2e16f7673017b27f",
       "brand": "National Geographic",
       "name": "Unisex Rover City Sneakers- Black",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-6ed4f195b7fba8af",
       "brand": "National Geographic",
       "name": "Unisex Rover City Sneakers- Grey",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-c82296ec7ccc2cbf",
       "brand": "National Geographic",
       "name": "Unisex Rover City Sneakers- Brown",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-18d005f18bd43e5f",
       "brand": "National Geographic",
       "name": "Kids Contour Freeze Sandals",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-fb6c52dd7e3a3394",
       "brand": "National Geographic",
       "name": "Kids Blitz Sandal",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-e4af3f1b000633bf",
       "brand": "National Geographic",
       "name": "Ripple V2 Slides- White",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-d0c42399a19e005d",
       "brand": "National Geographic",
       "name": "Ripple V2 Slides- Black",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-12b26a0d3183db76",
       "brand": "National Geographic",
       "name": "Kids Cielo Dial Sneakers",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-3627e2bb63e296c9",
       "brand": "National Geographic",
       "name": "Kids Cielo Sneakers",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-92d35b8654e5d715",
@@ -15992,13 +15992,13 @@
       "id": "arrival-e6087938a8c4ed6e9bd2",
       "brand": "National Geographic",
       "name": "Unisex Two-Layer Color-Block Hooded Windbreaker",
-      "reason": "not-footwear"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-b5370afdfd72d3a4c77d",
       "brand": "National Geographic",
       "name": "Kids Toddler Seersucker Hood Jumper",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-70edc5b058f72630843a",
@@ -16014,49 +16014,55 @@
       "id": "arrival-135a17543b833535cfe0",
       "brand": "National Geographic",
       "name": "Kids Adventure Woven Mix Sweatshirt",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-675e2d1659734c5e3091",
       "brand": "National Geographic",
       "name": "Kids Half-Zip Pique Sweatshirt",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-4136c35c62ad4336110a",
       "brand": "National Geographic",
       "name": "Robic Air Lightweight Backpack",
-      "reason": "not-footwear"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-db938e227fbb34dd85dc",
       "brand": "National Geographic",
       "name": "Daily Light Backpack",
-      "reason": "not-footwear"
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-2d1f97b3cfecf1c58542",
+      "brand": "National Geographic",
+      "name": "Sunlight Sandals",
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-9bdd48f8707a886e917d",
       "brand": "National Geographic",
       "name": "Urban Prime Backpack",
-      "reason": "not-footwear"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-7a82abf0673717d202d5",
       "brand": "National Geographic",
       "name": "Urban Simple Backpack",
-      "reason": "not-footwear"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-9248bdc80acf553955b8",
       "brand": "National Geographic",
       "name": "Uniti Backpack",
-      "reason": "not-footwear"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-0dc0d2fdb651a93a7484",
       "brand": "National Geographic",
       "name": "Men's Airflow Short Sleeve Poloshirt - Black",
-      "reason": "footwear-type-unverified"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-92bb58cfd0a1f1c99fe9",
@@ -16482,7 +16488,7 @@
       "id": "arrival-e515123bfcab65cd059d",
       "brand": "National Geographic",
       "name": "Ultimate Backpack",
-      "reason": "not-footwear"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-8a868f1d7775c01d6149",
@@ -18469,6 +18475,86 @@
       "brand": "Skechers",
       "name": "Skechers Slip-ins: GO WALK 8 -Nova",
       "reason": "shared-representative-photo"
+    },
+    {
+      "id": "live-fb518061bb0db473",
+      "brand": "On",
+      "name": "Cloudvista 3 Waterproof",
+      "colorway": "Black",
+      "reason": "duplicate-product-url",
+      "url": "https://on.com/en-us/products/cloudvista-3-waterproof-m-3mg3025/mens/silver-ore-shoes-3MG30255317"
+    },
+    {
+      "id": "new-20260923-19918d424820ab2e",
+      "brand": "Nike",
+      "name": "Nike Pegasus Plus 2",
+      "colorway": "Midnight Navy/Racer Blue/Grey Mist/Black",
+      "reason": "duplicate-product-url",
+      "url": "https://nike.com/t/pegasus-plus-2-mens-road-running-shoes-p9ePl101/IM2541-400"
+    },
+    {
+      "id": "new-20260923-a0b21e5a752af27e",
+      "brand": "Nike",
+      "name": "Nike Pegasus Plus 2",
+      "colorway": "Gridiron/Persian Violet/True Berry/Metallic Silver",
+      "reason": "duplicate-product-url",
+      "url": "https://nike.com/t/pegasus-plus-2-womens-road-running-shoes-IApQlsjO/IM2543-004"
+    },
+    {
+      "id": "verified-saucony-s101074-1004",
+      "brand": "Saucony",
+      "name": "ProGrid V2 Mule",
+      "colorway": "Trek / Black",
+      "reason": "duplicate-product-url",
+      "url": "https://saucony.com/en/progrid-v2-mule/61289U.html"
+    },
+    {
+      "id": "arrival-d329e17895c3ffb6c74f",
+      "brand": "Brooks",
+      "name": "Adrenaline GTS 10",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Ghost 18",
+      "image": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png"
+    },
+    {
+      "id": "arrival-b0ab272a1f23230e2885",
+      "brand": "Brooks",
+      "name": "Ghost Max 4",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Ghost 18",
+      "image": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png"
+    },
+    {
+      "id": "arrival-b041d0ee6db49031edd1",
+      "brand": "Havaianas",
+      "name": "Havaianas Fantasia",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Havaianas Square",
+      "image": "https://www.havaianas-store.com/dw/image/v2/BLPJ_PRD/on/demandware.static/-/Sites-siteMasterCatalog_Havaianas/default/dw681a1ade/images/2025/4147115_0090_A.jpg?sw=420&sh=420"
+    },
+    {
+      "id": "arrival-5a25066175f2836fb486",
+      "brand": "Nike",
+      "name": "Nike Air Max Plus 'Check'",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Nike Air Max Plus",
+      "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/95c83bbb-a21e-4bb8-8d89-13a2330148af/WMNS+AIR+MAX+PLUS.png"
+    },
+    {
+      "id": "arrival-254336f35f5e0cba3875",
+      "brand": "Nike",
+      "name": "Nike Shox TL 'Check'",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Nike Shox TL",
+      "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png"
+    },
+    {
+      "id": "arrival-b9d25970a807dc2bcf41",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes-Manu Bay",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Women’s Shoes-Manu Bay",
+      "image": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000"
     }
   ]
 }
