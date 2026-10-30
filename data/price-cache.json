@@ -1,0 +1,3304 @@
+{
+  "schemaVersion": 1,
+  "prices": {
+    "https://www.fila.co.kr/products/1100fs263ru04x003461": {
+      "priceLabel": "179,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:03.547Z"
+    },
+    "https://www.fila.co.kr/products/1100fs261od03x087370": {
+      "priceLabel": "119,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:03.659Z"
+    },
+    "https://www.fila.co.kr/products/1100fs263od03x078217": {
+      "priceLabel": "119,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:03.679Z"
+    },
+    "https://www.fila.co.kr/products/1100fs261od03x095370": {
+      "priceLabel": "139,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:03.685Z"
+    },
+    "https://www.fila.co.kr/products/1100fs263ru02x098260": {
+      "priceLabel": "179,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:03.817Z"
+    },
+    "https://www.fila.co.kr/products/11001xm02348h063": {
+      "priceLabel": "109,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:03.863Z"
+    },
+    "https://www.nike.com/t/air-force-1-university-of-texas-mens-shoes-OVDZkCFq/JF5456-800": {
+      "priceLabel": "$125",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:20.808Z"
+    },
+    "https://www.fila.co.kr/products/1100fs261od03x087662": {
+      "priceLabel": "119,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:04.233Z"
+    },
+    "https://www.nike.com/t/air-force-1-university-of-oregon-mens-lifestyle-shoes-GE3sXpVM/JF5453-300": {
+      "priceLabel": "$125",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:20.830Z"
+    },
+    "https://www.nike.com/t/air-jordan-1-high-og-royal-mens-shoes-p8vLeLAd/IQ5495-005": {
+      "priceLabel": "$185",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:21.366Z"
+    },
+    "https://www.nike.com/t/air-jordan-1-low-method-of-make-womens-shoes-xwLRuBB5/IZ6155-202": {
+      "priceLabel": "$140",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:21.066Z"
+    },
+    "https://www.nike.com/t/air-jordan-1-mid-utility-mens-shoes-xSc4ZTYy/IX6982-001": {
+      "priceLabel": "$140",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:21.668Z"
+    },
+    "https://www.nike.com/at/en/t/air-jordan-1-low-se-lola-bunny-womens-shoes-ZjBdYsDC/IX6038-100": {
+      "priceLabel": "€139.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:21.286Z"
+    },
+    "https://www.nike.com/t/air-jordan-3-retro-fireside-womens-shoes-IDfppfZK/CK9246-200": {
+      "priceLabel": "$205",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:04.856Z"
+    },
+    "https://www.nike.com/at/en/t/air-jordan-3-retro-fireside-womens-shoes-6bc6Vk/CK9246-200": {
+      "priceLabel": "€209.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:22.146Z"
+    },
+    "https://www.nike.com/at/en/t/air-jordan-1-low-se-magic-ball-mens-shoes-WXHEyb1r/IX6375-001": {
+      "priceLabel": "€139.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:21.834Z"
+    },
+    "https://www.nike.com/t/air-jordan-9-retro-boots-yMVLobe1/AR4491-012": {
+      "priceLabel": "$230",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:22.412Z"
+    },
+    "https://www.nike.com/t/air-jordan-5-retro-halloween-mens-shoes-6R2lWr5e/HQ7978-001": {
+      "priceLabel": "$215",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:22.724Z"
+    },
+    "https://www.nike.com/t/air-force-1-university-of-georgia-mens-shoes-1cRFfPBp/JF5457-600": {
+      "priceLabel": "$125",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:21.269Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-runner-f4500001": {
+      "priceLabel": "SEK 2,800",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.174Z"
+    },
+    "https://www.axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602005": {
+      "priceLabel": "SEK 2,850",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:23.031Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-runner-f4500006": {
+      "priceLabel": "SEK 2,800",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.181Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-runner-f4500007": {
+      "priceLabel": "SEK 2,800",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.196Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-runner-f4500008": {
+      "priceLabel": "SEK 2,800",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.178Z"
+    },
+    "https://www.axelarigato.com/women/footwear/flair/flair-runner-f4592001": {
+      "priceLabel": "SEK 2,800",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.534Z"
+    },
+    "https://www.axelarigato.com/women/footwear/flair/flair-runner-f4592003": {
+      "priceLabel": "SEK 2,800",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.468Z"
+    },
+    "https://www.axelarigato.com/women/footwear/flair/flair-runner-f4617001": {
+      "priceLabel": "SEK 2,800",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.490Z"
+    },
+    "https://www.axelarigato.com/women/footwear/flair/flair-runner-f4592002": {
+      "priceLabel": "SEK 2,800",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.571Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-suede-runner-f4499004": {
+      "priceLabel": "SEK 2,950",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.231Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-suede-runner-f4499006": {
+      "priceLabel": "SEK 2,950",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.529Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-suede-runner-f4499005": {
+      "priceLabel": "SEK 2,950",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:24.558Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/hmr-peak/p/1183c750-200.html": {
+      "priceLabel": "SEK 2,750",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:26.271Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/hmr-peak/p/1183c764-001.html": {
+      "priceLabel": "SEK 3,110",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:26.033Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/hmr-peak/p/1183c750-001.html": {
+      "priceLabel": "SEK 2,750",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:26.152Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/hmr-peak/p/1183c764-600.html": {
+      "priceLabel": "SEK 3,110",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:26.029Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/hmr-peak/p/1183c750-100.html": {
+      "priceLabel": "SEK 2,750",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:26.111Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/hmr-peak-g-tx/p/1183c763-001.html": {
+      "priceLabel": "SEK 3,710",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:26.218Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/hmr-peak/p/1183c764-200.html": {
+      "priceLabel": "SEK 3,110",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:26.060Z"
+    },
+    "https://usa.mizuno.com/running-hyperwarp-elite-2-unisex": {
+      "priceLabel": "$275",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:27.694Z"
+    },
+    "https://usa.mizuno.com/running-hyperwarp-pure-2-unisex": {
+      "priceLabel": "$300",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:27.872Z"
+    },
+    "https://usa.mizuno.com/running-hyperwarp-pacer-unisex": {
+      "priceLabel": "$160",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:27.588Z"
+    },
+    "https://usa.mizuno.com/running-hyperwarp-pure-running-shoe/": {
+      "priceLabel": "$300",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:27.751Z"
+    },
+    "https://usa.mizuno.com/running-hyperwarp-racer": {
+      "priceLabel": "$200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:27.914Z"
+    },
+    "https://www.salomon.com/en-us/product/xt-mm6-maison-margiela-li8660/L45447900": {
+      "priceLabel": "$495",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:28.160Z"
+    },
+    "https://www.salomon.com/en-us/product/xt-mm6-maison-margiela-li8660/L45448000": {
+      "priceLabel": "$495",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:28.292Z"
+    },
+    "https://www.salomon.com/en-us/product/xt-mm6-maison-margiela-li8660/L45447800": {
+      "priceLabel": "$495",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:28.343Z"
+    },
+    "https://www.nike.com/t/kobe-air-force-1-low-mens-shoes-ZjtWaNqY/IB0018-104": {
+      "priceLabel": "$125",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:28.412Z"
+    },
+    "https://www.nike.com/t/kobe-dunk-low-protro-shoes-EjzVx292/IQ3922-001": {
+      "priceLabel": "$130",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:28.434Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/hmr-peak-g-tx/p/1183c763-200.html": {
+      "priceLabel": "SEK 3,710",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:26.197Z"
+    },
+    "https://www.bottegaveneta.com/755915V2X404025.html": {
+      "priceLabel": "1,590,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:28.555Z"
+    },
+    "https://usa.mizuno.com/running-mizuno-sky-prime-mens": {
+      "priceLabel": "$200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:32.945Z"
+    },
+    "https://usa.mizuno.com/running-mizuno-neo-vista-3-mens/": {
+      "priceLabel": "$200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:32.778Z"
+    },
+    "https://usa.mizuno.com/running-wave-rider-30-mens/": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.269Z"
+    },
+    "https://usa.mizuno.com/running-wave-rider-30-2e-mens/": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.095Z"
+    },
+    "https://usa.mizuno.com/running-mizuno-neo-vista-2-uni-origami/": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.518Z"
+    },
+    "https://usa.mizuno.com/running-mizuno-neo-accera-unisex/": {
+      "priceLabel": "$200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.375Z"
+    },
+    "https://usa.mizuno.com/running-mizuno-neo-vista-3-unisex/": {
+      "priceLabel": "$200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.889Z"
+    },
+    "https://usa.mizuno.com/running-wave-rider-29-uni-origami/": {
+      "priceLabel": "$99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.491Z"
+    },
+    "https://usa.mizuno.com/running-neo-vista-3-tsukiakari-pack/": {
+      "priceLabel": "$200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.143Z"
+    },
+    "https://www.nike.com/at/en/t/air-force-1-07-lv8-mens-shoes-yzCadBK2/IV3472-002": {
+      "priceLabel": "€119.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.858Z"
+    },
+    "https://www.nike.com/t/air-force-1-07-mens-shoes-XVPIszaq/FJ4146-007": {
+      "priceLabel": "$115",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.982Z"
+    },
+    "https://usa.mizuno.com/running-neo-zen-2-tsukiakari-pack/": {
+      "priceLabel": "$160",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.202Z"
+    },
+    "https://www.nike.com/t/air-force-1-07-se-womens-shoes-5qInrh2d/IV5103-600": {
+      "priceLabel": "$115",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.704Z"
+    },
+    "https://www.nike.com/at/en/t/air-force-1-07-se-leopard-womens-shoes-XOevZdXR/JA5714-900": {
+      "priceLabel": "€129.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.848Z"
+    },
+    "https://www.nike.com/t/air-force-1-mid-07-gore-tex-vibram-mens-shoes-JNrJFwJw/IO1875-100": {
+      "priceLabel": "$180",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.349Z"
+    },
+    "https://www.nike.com/at/en/t/air-force-1-mid-07-gore-tex-vibram-mens-shoes-dfEJzjWe/IO1875-001": {
+      "priceLabel": "€199.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.082Z"
+    },
+    "https://www.nike.com/t/air-force-1-07-se-velvet-womens-shoes-4Oagi5vs/IX5100-400": {
+      "priceLabel": "$125",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:35.975Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-mens-shoes-Q5C5KDfv/IM9616-002": {
+      "priceLabel": "€149.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.130Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-premium-mens-shoes-hd05amdk/IQ7130-002": {
+      "priceLabel": "€149.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.357Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-womens-shoes-ZreoI7yM/IX7437-236": {
+      "priceLabel": "€159.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.297Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-95-big-bubble-gore-tex-mens-winterized-shoes-ivQWsWfW/IO1877-002": {
+      "priceLabel": "€209.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.596Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-95-mens-golf-shoes-F1Z7EdQo/IQ3467-100": {
+      "priceLabel": "€219.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.483Z"
+    },
+    "https://www.nike.com/t/air-max-moto-2k-womens-shoes-with-reflective-accents-xfKLxDbe/HQ2056-011": {
+      "priceLabel": "$135",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.502Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-plus-mens-shoes-Nr4g5r/DD4004-001": {
+      "priceLabel": "€199.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.607Z"
+    },
+    "https://www.nike.com/t/pegasus-plus-2-womens-road-running-shoes-IApQlsjO/IM2543-004": {
+      "priceLabel": "$170",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:03:03.028Z"
+    },
+    "https://www.nike.com/t/pegasus-plus-2-mens-road-running-shoes-p9ePl101/IM2541-400": {
+      "priceLabel": "$170",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:03:02.772Z"
+    },
+    "https://www.nike.com/at/en/t/p-6000-cordura-shoes-8JpK2egZ/IQ6449-001": {
+      "priceLabel": "€129.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.713Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-plus-mens-shoes-XrRCF9wm/DM0032-045": {
+      "priceLabel": "€189.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.476Z"
+    },
+    "https://www.nike.com/at/en/t/pegasus-premium-womens-road-running-shoes-ZIEXAQjZ/IQ7609-600": {
+      "priceLabel": "€209.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.661Z"
+    },
+    "https://www.nike.com/t/shox-z-patent-leather-womens-shoes-iq6ab1dg/IQ0164-600": {
+      "priceLabel": "$140",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:37.174Z"
+    },
+    "https://www.nike.com/t/vomero-premium-mens-road-running-shoes-l11miwwa/JA4059-010": {
+      "priceLabel": "$240",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:37.036Z"
+    },
+    "https://www.nike.com/t/vomero-premium-sp-mens-road-running-shoes-cS11eA4s/IV7509-001": {
+      "priceLabel": "$230",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:37.201Z"
+    },
+    "https://www.nike.com/t/vomero-plus-mens-road-running-shoes-rzBMcB0u/IZ2570-355": {
+      "priceLabel": "$180",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.958Z"
+    },
+    "https://www.nike.com/at/en/t/vomero-plus-womens-road-running-shoes-hJ7172Tr/IX8605-600": {
+      "priceLabel": "€179.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.816Z"
+    },
+    "https://www.nike.com/t/zoom-vomero-5-womens-shoes-81TPKW/IX7042-010": {
+      "priceLabel": "$170",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:37.470Z"
+    },
+    "https://www.bottegaveneta.com/en-us/orbit-sneaker-silver-white-optic-white-rubber-741357V2X401425.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:23.069Z"
+    },
+    "https://www.bottegaveneta.com/en-us/orbit-sneaker-black-silver-755915V2X401350.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:23.315Z"
+    },
+    "https://www.bottegaveneta.com/en-us/orbit-sneaker-white-terra-pink-755915V2X409038.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:23.654Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-mens-shoes-blush": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:23.676Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-mens-shoes-lacquer": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:23.849Z"
+    },
+    "https://www.bottegaveneta.com/en-us/orbit-sneaker-bark-green-shamrock-741357V2X403801.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.067Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-mens-shoes-obsidian": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.095Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-mens-shoes-pristine": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.308Z"
+    },
+    "https://www.bottegaveneta.com/en-us/orbit-sneaker-black-silver-741357V2X401350.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.319Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-mens-shoes-suntan": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.380Z"
+    },
+    "https://www.bottegaveneta.com/en-us/orbit-sneaker-silver-white-optic-white-rubber-755915V2X401425.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.403Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-men-s-shoes-travertine": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.452Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-ginger-chestnut": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.590Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-achromate": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.774Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-airliner": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.810Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-artichoke": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.888Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-aragon": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:37.569Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-lychee-blush": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:24.958Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-boogie-woogie": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:25.028Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-cloudine": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:25.205Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-crimson": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:25.287Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-boromir": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:25.316Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-dusk-indigo": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:25.438Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-fudge": {
+      "priceLabel": "252,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:25.490Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-fog-rock": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:25.541Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-gaily": {
+      "priceLabel": "259,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:25.635Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-gimli": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:37.633Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-gooseberry": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:25.981Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-hop-point": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.008Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-gandal": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.013Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-ground-ginger": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.047Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-home-court": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.079Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-hornet": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.252Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-mint": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.425Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-mocha-mousse": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.431Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-moonless-night": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.442Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-mystique": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.456Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-legolas": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:37.776Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-noctra": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.649Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-rio-de-janeiro": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.906Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-pine-mist": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.913Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-pelican": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.945Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-ripe": {
+      "priceLabel": "259,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:26.979Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-percheron": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.024Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-shale": {
+      "priceLabel": "252,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.198Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-spice-blaze": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.301Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-tyrian": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.365Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-verse": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.382Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-men-s-shoes-willow-creek": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.410Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-siphlophis": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.421Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-achromate": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.809Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ginger-chestnut": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.826Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-wolf-moon": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.830Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-airliner": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.860Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-lychee-blush": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:27.909Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-aragon": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:37.873Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-artichoke": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.178Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-boogie-woogie": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.226Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-cloudine": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.281Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-boromir": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.376Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-dusk-indigo": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.438Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-crimson": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.481Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-fudge": {
+      "priceLabel": "252,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.627Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gaily": {
+      "priceLabel": "259,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.655Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-fog-rock": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.707Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gandalf": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.945Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gimli": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:37.959Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gooseberry": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:28.974Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ground-ginger": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:29.158Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-home-court": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:29.183Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-hop-point": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:29.223Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-hornet": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:29.382Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-mint": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:29.392Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-legolas": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:38.042Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-mystique": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:29.639Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-mocha-mousse": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:29.655Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-moonless-night": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:29.696Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-noctra": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:29.944Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-pelican": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:29.946Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-percheron": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.043Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-rio-de-janeiro": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.085Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ripe": {
+      "priceLabel": "259,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.093Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-pine-mist": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.155Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-shale": {
+      "priceLabel": "252,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.391Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-siphlophis": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.399Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-spice-blaze": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.448Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-verse": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.601Z"
+    },
+    "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-willow-creek": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.616Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-tyrian": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.632Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-womens-shoes-blush-1": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.921Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-wolf-moon": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:30.962Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-womens-shoes-obsidian": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.051Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-womens-shoes-suntan": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.156Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-womens-shoes-pristine": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.175Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-women-s-shoes-travertine": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.457Z"
+    },
+    "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-crimson-ink": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.559Z"
+    },
+    "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-gray-moss": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.561Z"
+    },
+    "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-imperial-purple": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.641Z"
+    },
+    "https://www.paneshoes.com/products/pane-light-training-womens-shoes-lacquer": {
+      "priceLabel": "245,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.704Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-juniper": {
+      "priceLabel": "232,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.872Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-opaque": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.885Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-rowan": {
+      "priceLabel": "232,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.920Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-porcelain": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:31.999Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-sterling": {
+      "priceLabel": "232,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.124Z"
+    },
+    "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-silk-cyan": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.215Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-code-retro": {
+      "priceLabel": "225,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.379Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-hologram-fade": {
+      "priceLabel": "225,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.461Z"
+    },
+    "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-manu-bay": {
+      "priceLabel": "232,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:38.149Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-raw-sample": {
+      "priceLabel": "225,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.534Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-analogue-glitch": {
+      "priceLabel": "225,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.543Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-time-traveler": {
+      "priceLabel": "225,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.560Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-analogue-glitch": {
+      "priceLabel": "225,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.790Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-code-retro": {
+      "priceLabel": "225,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.896Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-hologram-fade": {
+      "priceLabel": "225,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.907Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-raw-sample": {
+      "priceLabel": "225,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:32.977Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-time-traveler": {
+      "priceLabel": "225,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:33.017Z"
+    },
+    "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-crimson-ink": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:33.042Z"
+    },
+    "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-gray-moss": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:33.285Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-juniper": {
+      "priceLabel": "232,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:33.325Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-porcelain": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:33.357Z"
+    },
+    "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-imperial-purple": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:33.407Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-opaque": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:33.422Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-rowan": {
+      "priceLabel": "232,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:33.479Z"
+    },
+    "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-sterling": {
+      "priceLabel": "232,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:33.767Z"
+    },
+    "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-manu-bay": {
+      "priceLabel": "232,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:38.321Z"
+    },
+    "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-silk-cyan": {
+      "priceLabel": "239,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:33.862Z"
+    },
+    "https://www.bottegaveneta.com/en-us/serena-sneaker-dark-caramel-20-876113V3QE09866.html": {
+      "priceLabel": "$1,200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:34.087Z"
+    },
+    "https://www.bottegaveneta.com/en-us/serena-sneaker-mineral-876153V6VE01670.html": {
+      "priceLabel": "$1,200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:34.145Z"
+    },
+    "https://www.bottegaveneta.com/en-us/serena-sneaker-obsidian-gray-876113V6VE01684.html": {
+      "priceLabel": "$1,200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:34.324Z"
+    },
+    "https://www.bottegaveneta.com/en-us/serena-sneaker-alabaster-867848V2ED09117.html": {
+      "priceLabel": "$1,200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:34.623Z"
+    },
+    "https://www.bottegaveneta.com/en-us/shot-sneaker-bark-green-alabaster-A007BYV6VC09063.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:34.669Z"
+    },
+    "https://www.bottegaveneta.com/en-us/shot-sneaker-oat-cocoa-alabaster-A009YPV7BB12782.html": {
+      "priceLabel": "$1,050",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:34.729Z"
+    },
+    "https://www.axelarigato.com/women/footwear/squish/squish-sneaker-f4081002": {
+      "priceLabel": "SEK 3,000",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:35.072Z"
+    },
+    "https://www.bottegaveneta.com/en-us/shot-sneaker-obsidian-gray-cardinal-A007OIV74J31663.html": {
+      "priceLabel": "$1,050",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:35.273Z"
+    },
+    "https://www.axelarigato.com/women/footwear/squish/squish-sneaker-f4081004": {
+      "priceLabel": "SEK 3,000",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:35.357Z"
+    },
+    "https://www.bottegaveneta.com/en-us/shot-sneaker-black-alabaster-A009YHV5U221003.html": {
+      "priceLabel": "$990",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:35.389Z"
+    },
+    "https://www.bottegaveneta.com/en-us/shot-sneaker-bark-green-alabaster-A007CFV6VC09063.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:35.469Z"
+    },
+    "https://www.bottegaveneta.com/en-us/shot-sneaker-alabaster-silica-gray-A007BYV6VC09263.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:35.815Z"
+    },
+    "https://www.bottegaveneta.com/en-us/shot-sneaker-oat-cocoa-alabaster-A009YGV7BB12782.html": {
+      "priceLabel": "$1,050",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:35.962Z"
+    },
+    "https://alohas.com/en-us/products/tb-205-bara-nylon-yellow-sneakers": {
+      "priceLabel": "€154",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:39.948Z"
+    },
+    "https://alohas.com/en-us/products/tb-205-bara-nylon-blue-sneakers": {
+      "priceLabel": "€154",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:39.886Z"
+    },
+    "https://alohas.com/en-us/products/tb-205-bara-nylon-brown-sneakers": {
+      "priceLabel": "€154",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:39.655Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-club-brushed-dark-chocolate-leather-sneakers": {
+      "priceLabel": "€24,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:37.208Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-club-nylon-black-sneakers": {
+      "priceLabel": "€195.50",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:37.218Z"
+    },
+    "https://alohas.com/en-us/products/tb-205-bara-nylon-cream-sneakers": {
+      "priceLabel": "€154",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:39.803Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-club-suede-raspberry-leather-sneakers": {
+      "priceLabel": "€23,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:38.581Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-club-onix-deep-burgundy-leather-sneakers": {
+      "priceLabel": "€240",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:38.759Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-recycled-pale-blue-recycled-leather-sneakers": {
+      "priceLabel": "€22,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:38.859Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-crochet-cream-leather-sneakers": {
+      "priceLabel": "€21,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:38.903Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-rife-chocolate-brown-leather-sneakers": {
+      "priceLabel": "€17,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:39.055Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-rife-cocoa-off-white-leather-sneakers": {
+      "priceLabel": "€22,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:39.205Z"
+    },
+    "https://www.bottegaveneta.com/en-us/tide-sneaker-alabaster-867864V6IJ19197.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:39.835Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-rife-grain-cream-leather-sneakers": {
+      "priceLabel": "€20,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:40.265Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-rife-taupe-leather-sneakers": {
+      "priceLabel": "€22,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:40.362Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-rife-sheen-red-leather-sneakers": {
+      "priceLabel": "€20,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:40.374Z"
+    },
+    "https://alohas.com/en-us/products/tb-490-rife-shimmer-silver-cream-leather-sneakers": {
+      "priceLabel": "€22,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:40.494Z"
+    },
+    "https://alohas.com/en-us/products/tb-61-aera-dark-brown-sneakers": {
+      "priceLabel": "€20,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:02:40.678Z"
+    },
+    "https://usa.mizuno.com/running-wave-rider-30-uni-disclosure/": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:39.369Z"
+    },
+    "https://usa.mizuno.com/running-wave-rider-30-tsukiakari-pack/": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:40.225Z"
+    },
+    "https://usa.mizuno.com/running-mizuno-neo-zen-2-womens": {
+      "priceLabel": "$160",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:44.449Z"
+    },
+    "https://usa.mizuno.com/running-mizuno-sky-prime-womens": {
+      "priceLabel": "$200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:44.457Z"
+    },
+    "https://usa.mizuno.com/running-mizuno-neo-vista-3-womens/": {
+      "priceLabel": "$200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:44.583Z"
+    },
+    "https://www.axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602002": {
+      "priceLabel": "SEK 2,850",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:46.173Z"
+    },
+    "https://www.axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602003": {
+      "priceLabel": "SEK 2,850",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:46.264Z"
+    },
+    "https://www.axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602004": {
+      "priceLabel": "SEK 2,850",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:46.507Z"
+    },
+    "https://usa.mizuno.com/running-wave-inspire-22-womens": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:46.793Z"
+    },
+    "https://usa.mizuno.com/running-wave-rider-30-d-womens/": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:46.404Z"
+    },
+    "https://www.salomon.com/en-us/product/xt-whisper-kraft-li9260/L45397200": {
+      "priceLabel": "$145",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:46.180Z"
+    },
+    "https://www.axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602006": {
+      "priceLabel": "SEK 2,850",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:46.499Z"
+    },
+    "https://usa.mizuno.com/running-wave-rider-30-womens/": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:46.249Z"
+    },
+    "https://www.shopmelissa.com/products/bend-39510-bv723": {
+      "priceLabel": "$129",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:47.017Z"
+    },
+    "https://www.shopmelissa.com/products/camp-38025-bv528": {
+      "priceLabel": "$129",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:47.093Z"
+    },
+    "https://www.shopmelissa.com/products/bend-39510-bs481": {
+      "priceLabel": "$129",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:47.280Z"
+    },
+    "https://www.shopmelissa.com/products/bend-39510-bs516": {
+      "priceLabel": "$129",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:46.729Z"
+    },
+    "https://www.shopmelissa.com/products/camp-38025-bv529": {
+      "priceLabel": "$129",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:47.477Z"
+    },
+    "https://www.shopmelissa.com/products/camp-38025-bv527": {
+      "priceLabel": "$129",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:47.286Z"
+    },
+    "https://www.shopmelissa.com/products/camp-38025-bv522": {
+      "priceLabel": "$129",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:47.694Z"
+    },
+    "https://www.shopmelissa.com/products/loop-39507-br234": {
+      "priceLabel": "$169",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:47.894Z"
+    },
+    "https://www.salomon.com/en-us/product/aero-glide-4-li9420/L49228600": {
+      "priceLabel": "$160",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:47.656Z"
+    },
+    "https://www.shopmelissa.com/products/loop-39507-bv886": {
+      "priceLabel": "$169",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.026Z"
+    },
+    "https://www.shopmelissa.com/products/loop-39507-br238": {
+      "priceLabel": "$169",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.106Z"
+    },
+    "https://www.salomon.com/en-us/product/aero-glide-4-li9421/L49228800": {
+      "priceLabel": "$160",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.092Z"
+    },
+    "https://www.salomon.com/en-us/product/xt-6-gore-tex-lg9333/L49306800": {
+      "priceLabel": "$200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:48.996Z"
+    },
+    "https://www.nike.com/t/air-force-1-07-lv8-mens-shoes-5PBzpHVE/IV3472-700": {
+      "priceLabel": "$125",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.389Z"
+    },
+    "https://www.nike.com/t/pegasus-42-gore-tex-mens-waterproof-road-running-shoes-KRQlyT6f/IQ0450-400": {
+      "priceLabel": "$165",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.421Z"
+    },
+    "https://www.nike.com/at/en/t/pegasus-plus-2-womens-road-running-shoes-MUQZWOKx/IM2543-310": {
+      "priceLabel": "€169.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.378Z"
+    },
+    "https://www.nike.com/t/vomero-18-mens-road-running-shoes-48sql4gK/IZ2534-325": {
+      "priceLabel": "$155",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.429Z"
+    },
+    "https://www.nike.com/t/vomero-18-gore-tex-mens-waterproof-road-running-shoes-with-reflective-accents-HzOmdRVa/HQ7001-004": {
+      "priceLabel": "$175",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.589Z"
+    },
+    "https://www.axelarigato.com/women/footwear/squish/squish-sneaker-f4081003": {
+      "priceLabel": "SEK 3,000",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:49.806Z"
+    },
+    "https://www.nike.com/t/vomero-plus-womens-road-running-shoes-8AH6updi/HV8154-109": {
+      "priceLabel": "$180",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.228Z"
+    },
+    "https://www.axelarigato.com/men/footwear/zane/zane-sneaker-f4357001": {
+      "priceLabel": "SEK 2,700",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.723Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-95-big-bubble-gore-tex-mens-winterized-shoes-ivQWsWfW/IO1877-300": {
+      "priceLabel": "€209.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.402Z"
+    },
+    "https://www.bottegaveneta.com/en-us/serena-sneaker-alabaster-grass-green-867850V5JG39179.html": {
+      "priceLabel": "$950",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:50.152Z"
+    },
+    "https://www.axelarigato.com/men/footwear/zane/zane-sneaker-f4357002": {
+      "priceLabel": "SEK 2,700",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.799Z"
+    },
+    "https://www.bottegaveneta.com/en-us/serena-sneaker-alabaster-876153V6VE09117.html": {
+      "priceLabel": "$1,200",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:50.596Z"
+    },
+    "https://www.nike.com/t/air-force-1-low-retro-halloween-mens-shoes-KOrbBBtx/IV4884-200": {
+      "priceLabel": "$140",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.741Z"
+    },
+    "https://www.aloyoga.com/products/a0891u-alo-sunset-sneaker-black-ivory": {
+      "priceLabel": "318,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:51.154Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-mens-shoes-iKVFLe0S/IZ9645-325": {
+      "priceLabel": "€149.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.699Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-270-mens-shoes-fTat1UHa/AH8050-037": {
+      "priceLabel": "€159.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.471Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/moage-co/p/1183b555-104.html": {
+      "priceLabel": "SEK 2,630",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:07:49.017Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-plus-mens-shoes-wRkOBMX4/IM5983-002": {
+      "priceLabel": "€189.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.811Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-95-big-bubble-premium-mens-shoes-J12n6jp1/IQ0229-001": {
+      "priceLabel": "€189.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.944Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-premium-mens-shoes-hd05amdk/IQ7130-001": {
+      "priceLabel": "€149.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.964Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-check-womens-shoes-ZreoI7yM/IR5598-002": {
+      "priceLabel": "€159.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.460Z"
+    },
+    "https://www.nike.com/t/dunk-low-premium-halloween-mens-shoes-v2T3Eybu/IX5169-300": {
+      "priceLabel": "$130",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.124Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-plus-womens-shoes-wAjTYWhG/IR5731-600": {
+      "priceLabel": "€199.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.950Z"
+    },
+    "https://www.nike.com/t/air-max-torch-4-mens-shoes-NP9gd38r/CN2159-002": {
+      "priceLabel": "$70.97",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.928Z"
+    },
+    "https://www.nike.com/at/en/t/p-6000-cordura-shoes-8JpK2egZ/IQ6449-400": {
+      "priceLabel": "€129.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.079Z"
+    },
+    "https://www.nike.com/t/air-jordan-1-element-low-a-t-mens-shoes-cLGkgX/FV4227-004": {
+      "priceLabel": "$205",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:02:53.748Z"
+    },
+    "https://www.nike.com/at/en/t/shox-tl-womens-shoes-kmDWPDRl/IM5167-002": {
+      "priceLabel": "€179.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.453Z"
+    },
+    "https://www.nike.com/at/en/t/air-force-1-gore-tex-vibram-mens-shoes-6lfSRsaO/HV5953-200": {
+      "priceLabel": "€159.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.520Z"
+    },
+    "https://www.nike.com/t/air-jordan-1-low-se-womens-shoes-jxMXgH/IQ5498-200": {
+      "priceLabel": "$130",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.618Z"
+    },
+    "https://www.nike.com/at/en/t/air-jordan-1-low-a-t-mens-shoes-PefcygXl/FV4227-202": {
+      "priceLabel": "€199.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.490Z"
+    },
+    "https://www.nike.com/at/en/t/air-jordan-1-low-se-womens-shoes-awP1nbvG/IQ5162-001": {
+      "priceLabel": "€139.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.613Z"
+    },
+    "https://www.nike.com/at/en/t/air-jordan-1-low-se-mens-shoes-sMQ4UMpn/IX6983-001": {
+      "priceLabel": "€139.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.610Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/gsm/p/1183c436-600.html": {
+      "priceLabel": "SEK 1,910",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:07:48.837Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/gsm/p/1183c436-200.html": {
+      "priceLabel": "SEK 1,910",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:07:48.739Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-001.html": {
+      "priceLabel": "SEK 4,070",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:07:52.644Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/california-78-ex/p/1183a355-302.html": {
+      "priceLabel": "SEK 1,670",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.697Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/california-78-ex/p/1183a355-250.html": {
+      "priceLabel": "SEK 1,670",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.679Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-002.html": {
+      "priceLabel": "SEK 4,070",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:07:52.760Z"
+    },
+    "https://usa.mizuno.com/running-wave-inspire-22-mens": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:54.042Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-200.html": {
+      "priceLabel": "SEK 4,070",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:07:52.900Z"
+    },
+    "https://www.nike.com/at/en/t/air-force-1-07-womens-shoes-v0ot8Z6a/HV4406-600": {
+      "priceLabel": "€119.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:53.667Z"
+    },
+    "https://www.nike.com/t/air-force-1-07-mens-shoes-XVPIszaq/IX7257-133": {
+      "priceLabel": "$125",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:53.605Z"
+    },
+    "https://www.nike.com/t/air-force-1-luxe-mens-shoes-7Fvcvq/DB4109-001": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:53.937Z"
+    },
+    "https://www.nike.com/t/air-force-1-07-se-womens-shoes-5qInrh2d/IV5103-601": {
+      "priceLabel": "$115",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:55.547Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-95-big-bubble-premium-mens-shoes-J12n6jp1/IQ0229-002": {
+      "priceLabel": "€189.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:54.097Z"
+    },
+    "https://www.nike.com/t/air-max-metro-mens-shoes-bWvVBEWx/IW4935-003": {
+      "priceLabel": "$130",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:54.620Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-mens-shoes-exykZV6r/IM9616-101": {
+      "priceLabel": "€149.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:54.136Z"
+    },
+    "https://www.nike.com/t/air-max-metro-womens-shoes-bWvVBEWx/IW4934-200": {
+      "priceLabel": "$130",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:54.423Z"
+    },
+    "https://www.nike.com/t/vomero-plus-womens-road-running-shoes-8AH6updi/HV8154-007": {
+      "priceLabel": "$180",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:03:01.324Z"
+    },
+    "https://www.nike.com/at/en/t/dunk-low-retro-mens-shoes-1fXTLnJI/IX7260-133": {
+      "priceLabel": "€129.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:55.066Z"
+    },
+    "https://www.nike.com/t/pegasus-plus-2-mens-road-running-shoes-p9ePl101/IM2541-100": {
+      "priceLabel": "$170",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:03:01.530Z"
+    },
+    "https://www.nike.com/t/vomero-premium-womens-road-running-shoes-HACQbkxM/HM5973-004": {
+      "priceLabel": "$230",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:55.084Z"
+    },
+    "https://www.nike.com/t/zoom-vomero-roam-mens-winterized-shoes-98VRD2uY/HJ4646-400": {
+      "priceLabel": "$190",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:03:01.822Z"
+    },
+    "https://www.nike.com/t/air-jordan-1-mid-se-womens-shoes-wkMdft/IQ5161-001": {
+      "priceLabel": "$140",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:55.588Z"
+    },
+    "https://www.bottegaveneta.com/en-us/orbit-sneaker-gloss-silver-755915V2X406151.html": {
+      "priceLabel": "$1,100",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:03:03.042Z"
+    },
+    "https://www.nike.com/t/air-max-moto-2k-womens-shoes-xfKLxDbe/IR4333-200": {
+      "priceLabel": "$135",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:55.776Z"
+    },
+    "https://alohas.com/en-us/products/tb-61-aera-cream-sneakers": {
+      "priceLabel": "€20,000",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:03:03.206Z"
+    },
+    "https://www.salomon.com/en-us/product/xt-6-lg4239/L49212100": {
+      "priceLabel": "$185",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:03:03.758Z"
+    },
+    "https://www.nike.com/t/vomero-plus-x-distance-mens-road-running-shoes-TWnkdn7u/IQ7318-100": {
+      "priceLabel": "$190",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:55.714Z"
+    },
+    "https://www.on.com/en-kr/products/cloud-x-tempo-pro-m-3mh1033/mens/white-celeste-shoes-3MH10335109": {
+      "priceLabel": "259,000원",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:03:04.184Z"
+    },
+    "https://www.onitsukatiger.com/se/en-se/gsm-nm/p/1183c471-250.html": {
+      "priceLabel": "SEK 4,070",
+      "basis": "Open Graph product price",
+      "checkedAt": "2026-10-30T08:07:52.852Z"
+    },
+    "https://www.nike.com/at/en/t/sb-dunk-low-pro-skate-shoes-Ka315fWD/HQ1625-201": {
+      "priceLabel": "€119.99",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:55.493Z"
+    },
+    "https://www.nike.com/t/air-jordan-14-retro-forest-green-mens-shoes-T4qFPi4l/487471-300": {
+      "priceLabel": "$215",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:22.385Z"
+    },
+    "https://www.havaianas-store.com/gb/en/havaianas-fantasia/4147115-BLACK.html": {
+      "priceLabel": "£10.50",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:26.596Z"
+    },
+    "https://www.havaianas-store.com/gb/en/havaianas-square/4148301-DARK_BROWN.html": {
+      "priceLabel": "£30",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:26.791Z"
+    },
+    "https://www.nike.com/t/kobe-3-low-protro-mamba-eterno-basketball-shoes-BEmJD5qx/IO6260-800": {
+      "priceLabel": "$190",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:29.108Z"
+    },
+    "https://www.on.com/en-us/products/cloudmonster-bb-m-3mg3124/mens/sienna-sienna-shoes-3MG31246884": {
+      "priceLabel": "$180",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:29.747Z"
+    },
+    "https://www.oofos.com/products/mens-roam-ripstop-alpine-moss": {
+      "priceLabel": "$129.95",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:32.458Z"
+    },
+    "https://www.oofos.com/products/mens-roam-ripstop-black": {
+      "priceLabel": "$129.95",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:33.975Z"
+    },
+    "https://www.nike.com/t/run-defy-womens-road-running-shoes-rdVJVc/HM9593-007": {
+      "priceLabel": "$65",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:36.991Z"
+    },
+    "https://www.nike.com/t/interact-run-womens-road-running-shoes-v5LlQl/FD2292-600": {
+      "priceLabel": "$85",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:38.290Z"
+    },
+    "https://www.reebok.com/products/reebok-reebok-x-bbc-board-flip-skate-shoes-black-orange-blue-164528": {
+      "priceLabel": "$150",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:38.524Z"
+    },
+    "https://www.underarmour.com/en-us/p/ua_hb_racer_2_womens_running_shoes/6010216.html?dwvar_6010216_color=219": {
+      "priceLabel": "$180",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:39.635Z"
+    },
+    "https://www.oofos.com/products/womens-roam-ripstop-nomad": {
+      "priceLabel": "$129.95",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:44.039Z"
+    },
+    "https://www.oofos.com/products/womens-roam-ripstop-black": {
+      "priceLabel": "$129.95",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:44.167Z"
+    },
+    "https://www.oofos.com/products/womens-roam-thermo-black": {
+      "priceLabel": "$139.95",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:44.638Z"
+    },
+    "https://www.vans.com/en-us/p/shoes/crosspath-6135/crosspath-xc-shoe-VN000EJJCD3": {
+      "priceLabel": "$145",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:48.085Z"
+    },
+    "https://www.nike.com/t/air-jordan-41-ruby-basketball-shoes-qzivKdRh/HV6474-601": {
+      "priceLabel": "$205",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.005Z"
+    },
+    "https://www.nike.com/t/air-griffey-max-1-mens-shoes-kGbBsDph/JA1091-100": {
+      "priceLabel": "$180",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:49.556Z"
+    },
+    "https://www.nike.com/t/nikeskims-rift-satin-womens-shoes-uxrT1kE0/IQ7158-201": {
+      "priceLabel": "$160",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:50.471Z"
+    },
+    "https://www.nike.com/t/mind-002-mens-pregame-shoes-aJCAcNKH/HQ4308-003": {
+      "priceLabel": "$145",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:55.015Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800": {
+      "priceLabel": "CAD 275",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:56.350Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-protective-li1345/L45405100": {
+      "priceLabel": "CAD 230",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:56.364Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L49192300": {
+      "priceLabel": "CAD 210",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:56.418Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L45397700": {
+      "priceLabel": "CAD 210",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:56.453Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210700": {
+      "priceLabel": "CAD 275",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:57.084Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213700": {
+      "priceLabel": "CAD 230",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:57.100Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213200": {
+      "priceLabel": "CAD 230",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:57.166Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49211100": {
+      "priceLabel": "CAD 230",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:57.263Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215400": {
+      "priceLabel": "CAD 250",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:57.661Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215200": {
+      "priceLabel": "CAD 250",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:57.698Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49214800": {
+      "priceLabel": "CAD 250",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:07:57.710Z"
+    },
+    "https://www.nike.com/t/giannis-freak-8-trick-question-basketball-shoes-tqR0ZyML/IO7945-300": {
+      "priceLabel": "$130",
+      "basis": "schema.org Product/Offer",
+      "checkedAt": "2026-10-30T08:08:04.109Z"
+    }
+  },
+  "misses": {
+    "https://www.brooksrunning.com/en_us/featured/unisex-lifestyle-shoes/adrenaline-gts-10/100058.html?dwvar_100058_color=498": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:21.906Z"
+    },
+    "https://www.brooksrunning.com/en_us/featured/unisex-lifestyle-shoes/adrenaline-gts-10/1000581D498.050.html?dwvar_1000581D498.050_color=498": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:22.034Z"
+    },
+    "https://www.brooksrunning.com/en_us/featured/unisex-lifestyle-shoes/adrenaline-gts-10/1000581D552.050.html?dwvar_1000581D552.050_color=552": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:22.267Z"
+    },
+    "https://www.keenfootwear.com/products/all-gender-uneek-lea-green-spring": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:22.508Z"
+    },
+    "https://www.keenfootwear.com/products/all-gender-uneek-lea-tangerine-cream": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:22.529Z"
+    },
+    "https://www.keenfootwear.com/products/all-gender-uneek-lea-terrain-roasted-pecan": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:22.614Z"
+    },
+    "https://www.keenfootwear.com/products/all-gender-uneek-lea-terrain-bison": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:22.778Z"
+    },
+    "https://www.brooksrunning.com/en_us/featured/unisex-running-shoes/cascadia-elite/1000551D622.050.html?dwvar_1000551D622.050_color=622": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:23.139Z"
+    },
+    "https://www.loewe.com/usa/en/women/shoes/sneakers/cloudsolo-hiker-sneaker/L929282X52-3969.html": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:23.595Z"
+    },
+    "https://www.loewe.com/usa/en/women/shoes/sneakers/cloudtilt-cosmic-sneaker/L929282X49-6140.html": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:23.689Z"
+    },
+    "https://www.loewe.com/usa/en/women/shoes/sneakers/cloudsolo-hiker-sneaker/L929282X52-6931.html": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:23.819Z"
+    },
+    "https://www.dior.com/en_us/fashion/products/KCK596ONE_S10B": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:23.863Z"
+    },
+    "https://www.loewe.com/usa/en/women/shoes/sneakers/cloudsolo-hiker-sneaker/L929282X52-2150.html": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:23.904Z"
+    },
+    "https://www.dior.com/en_us/fashion/products/KCK554OFS_S10B": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:23.920Z"
+    },
+    "https://www.dior.com/en_us/fashion/products/KCK554TFS_S19W": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:23.981Z"
+    },
+    "https://www.loewe.com/usa/en/women/shoes/sneakers/cloudtilt-cosmic-sneaker/L929282X49-2100.html": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:24.014Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN386AIR_H62R": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:24.017Z"
+    },
+    "https://www.loewe.com/usa/en/women/shoes/sneakers/cloudtilt-cosmic-sneaker/L929282X49-9120.html": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:24.039Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN386AIR_H231": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:24.072Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN386AIR_H068": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:24.079Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN386AIR_H969": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:24.082Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN386AIR_H148": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:24.095Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN386AJR_H52L": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:24.106Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN386AIR_H52D": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:24.179Z"
+    },
+    "https://www.loewe.com/usa/en/women/shoes/sneakers/cloudtilt-cosmic-sneaker/L929282X49-2540.html": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:24.648Z"
+    },
+    "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-max-4/110496.html?dwvar_110496_color=056": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:25.586Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/ghost-max-4/120485.html?dwvar_120485_color=143": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:25.604Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/ghost-18/120482.html?dwvar_120482_color=143": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:25.642Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/ghost-18/1204821B143.090.html?dwvar_1204821B143.090_color=143": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:25.904Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/ghost-max-4/1204851B143.085.html?dwvar_1204851B143.085_color=143": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:25.964Z"
+    },
+    "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-max-4/1104961D056.070.html?dwvar_1104961D056.070_color=056": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:26.420Z"
+    },
+    "https://www.brooksrunning.com/en_us/featured/unisex-running-shoes/hyperion-elite-6/100054.html?dwvar_100054_color=699": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:27.163Z"
+    },
+    "https://www.brooksrunning.com/en_us/featured/unisex-running-shoes/hyperion-elite-6/1000541D699.060.html?dwvar_1000541D699.060_color=699": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:27.194Z"
+    },
+    "https://www.brooksrunning.com/en_us/featured/unisex-running-shoes/cascadia-elite/100055.html?dwvar_100055_color=622": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:27.952Z"
+    },
+    "https://www.keenfootwear.com/products/mens-a86-triple-earth": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:28.724Z"
+    },
+    "https://www.keenfootwear.com/products/mens-a86-triple-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:28.774Z"
+    },
+    "https://www.keenfootwear.com/products/mens-a86-bright-cobalt-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:28.792Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-hw-flux-safari": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:28.910Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-iii-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.048Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-iii-brindle-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.119Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-km-lite-black-steel-grey": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.124Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-km-lite-khaki-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.214Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-merko-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.434Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-km-lite-canteen-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.439Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-merko-birch-plaza-taupe": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.445Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-merko-steel-grey-vapor": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.454Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-nylon-waterproof-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.599Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-nylon-waterproof-canteen-canteen": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.764Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-rocks-sp-black-evening-primrose": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.776Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-se1-flux-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.814Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-rocks-sp-magnet-faded-denim": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:29.830Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-se1-flux-plaza-taupe": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.047Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-dark-olive-naval-academy": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.054Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-bison-violet-quartz": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.108Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-se2-txt-flux-chocolate": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.116Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-se2-txt-flux-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.121Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-aquifer-lemon-grass": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.188Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-magnet-faded-denim": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.430Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-hw-flux-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.489Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-doe-black-star-white": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.507Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-hw-flux-chocolate": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.548Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-chipmunk-huckleberry": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.573Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-evening-primrose-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.682Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-abbey-stone-lily-pad": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.800Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-magnet-steel-grey": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.880Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-black-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.887Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-khaki-huckleberry": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.893Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-huckleberry-lemon-grass": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:30.977Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-terrain-java": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.083Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-waterproof-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.129Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-waterproof-steel-grey-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.206Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-waterproof-dark-olive-golden-cypress": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.224Z"
+    },
+    "https://www.merrell.com/US/en/jungle-moc-x-harris-tweed/62380M.html?dwvar_62380M_color=J00005586": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.290Z"
+    },
+    "https://www.keenfootwear.com/products/mens-km1-leather-court-vintage-indigo-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.379Z"
+    },
+    "https://www.keenfootwear.com/products/mens-km4-leather-sneaker-birch-chipmunk": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.480Z"
+    },
+    "https://www.keenfootwear.com/products/mens-km4-leather-sneaker-steel-grey-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.488Z"
+    },
+    "https://www.keenfootwear.com/products/mens-km4-leather-sneaker-dark-earth-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.533Z"
+    },
+    "https://www.keenfootwear.com/products/mens-km4-leather-sneaker-black-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.595Z"
+    },
+    "https://www.keenfootwear.com/products/mens-knx-pablo-keen-maple-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.648Z"
+    },
+    "https://www.keenfootwear.com/products/mens-knx-pablo-black-star-white": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.718Z"
+    },
+    "https://www.keenfootwear.com/products/mens-ks-mino-huckleberry-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.840Z"
+    },
+    "https://www.keenfootwear.com/products/mens-ks86-leather-birch-star-white": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.857Z"
+    },
+    "https://www.keenfootwear.com/products/mens-knx-pablo-birch-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.888Z"
+    },
+    "https://www.keenfootwear.com/products/mens-ks86-chipmunk-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:31.952Z"
+    },
+    "https://www.keenfootwear.com/products/mens-roam-leather-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:32.257Z"
+    },
+    "https://www.keenfootwear.com/products/mens-roam-leather-chipmunk-dark-earth": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:32.325Z"
+    },
+    "https://www.keenfootwear.com/products/mens-roam-alloy-evening-primrose": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:32.660Z"
+    },
+    "https://www.keenfootwear.com/products/mens-roam-brindle-dark-earth": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:32.702Z"
+    },
+    "https://www.keenfootwear.com/products/mens-roam-camo-safety-orange": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:32.822Z"
+    },
+    "https://www.keenfootwear.com/products/mens-roam-naval-academy-symphonic-sunset": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.007Z"
+    },
+    "https://www.keenfootwear.com/products/mens-roam-waterproof-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.156Z"
+    },
+    "https://www.keenfootwear.com/products/mens-seek-steel-grey-alloy": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.251Z"
+    },
+    "https://www.keenfootwear.com/products/mens-roam-waterproof-dark-olive-burnt-brick": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.275Z"
+    },
+    "https://www.keenfootwear.com/products/mens-seek-abbey-stone-gold": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.297Z"
+    },
+    "https://www.keenfootwear.com/products/mens-seek-baltic-evening-primrose": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.391Z"
+    },
+    "https://www.merrell.com/US/en/relay-lace-x-harris-tweed/62392M.html?dwvar_62392M_color=J00005589": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.527Z"
+    },
+    "https://www.keenfootwear.com/products/mens-seek-chipmunk-symphonic-sunset": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.548Z"
+    },
+    "https://www.keenfootwear.com/products/mens-targhee-apex-waterproof-java-dark-earth": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.665Z"
+    },
+    "https://www.keenfootwear.com/products/mens-targhee-iv-waterproof-magnet-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.748Z"
+    },
+    "https://www.keenfootwear.com/products/mens-uneek-360-brindle-scarlet-ibis": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.858Z"
+    },
+    "https://www.keenfootwear.com/products/mens-targhee-iv-waterproof-wide-magnet-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.904Z"
+    },
+    "https://www.keenfootwear.com/products/mens-uneek-360-n-hoolywood-steel-grey": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.911Z"
+    },
+    "https://www.keenfootwear.com/products/mens-uneek-trekker-java-roasted-pecan": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:33.995Z"
+    },
+    "https://www.keenfootwear.com/products/mens-uneek-trekker-safari-mediterranea": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:34.114Z"
+    },
+    "https://www.keenfootwear.com/products/mens-uneek-trekker-black-keen-maple": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:34.235Z"
+    },
+    "https://www.keenfootwear.com/products/mens-wander-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:34.263Z"
+    },
+    "https://www.keenfootwear.com/products/mens-uneek-trekker-mediterranea-rooibos-tea": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:34.298Z"
+    },
+    "https://www.keenfootwear.com/products/mens-wander-safari-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:34.315Z"
+    },
+    "https://www.keenfootwear.com/products/mens-wander-fossil-orange-carrot-curl": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:34.372Z"
+    },
+    "https://www.keenfootwear.com/products/mens-wander-star-white-desert-sage": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:34.530Z"
+    },
+    "https://www.keenfootwear.com/products/mens-wander-black-magnet": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:34.564Z"
+    },
+    "https://www.merrell.com/US/en/wrapt-sneaker/60644M.html?dwvar_60644M_color=J00005167": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:35.021Z"
+    },
+    "https://www.merrell.com/US/en/moab-2-slide-x-harris-tweed/62389U.html?dwvar_62389U_color=J00005588": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:35.462Z"
+    },
+    "https://www.underarmour.com/en-us/p/ua_charged%2B_assert_11_mens_running_shoes/6006723.html?dwvar_6006723_color=448": {
+      "reason": "http-418",
+      "checkedAt": "2026-10-30T08:07:38.400Z"
+    },
+    "https://www.underarmour.com/en-us/p/ua_surge_5_mens_running_shoes/6010459.html?dwvar_6010459_color=001": {
+      "reason": "http-418",
+      "checkedAt": "2026-10-30T08:07:38.543Z"
+    },
+    "https://www.underarmour.com/en-us/p/ua_x_sharpie_heatgear_mens_short_sleeve/6018539.html?dwvar_6018539_color=400": {
+      "reason": "http-418",
+      "checkedAt": "2026-10-30T08:07:38.579Z"
+    },
+    "https://www.keenfootwear.com/products/womens-a86-black-silver": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:39.983Z"
+    },
+    "https://www.keenfootwear.com/products/womens-a86-birch-silver": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:39.993Z"
+    },
+    "https://www.keenfootwear.com/products/womens-a86-swedish-blue-shocking-pink": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.178Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-decon-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.219Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-iii-cameo-rose-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.276Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-decon-birch-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.317Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-km-lite-granite-green-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.377Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-km-lite-plaza-taupe-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.540Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-km-lite-cameo-rose-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.575Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-km-lite-brindle-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.596Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-merko-steel-grey-vapor": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.619Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-merko-birch-plaza-taupe": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.689Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-nylon-fig-rosy-touch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.934Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-nylon-waterproof-canteen-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.953Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-nylon-waterproof-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.960Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-rocks-sp-cork-cameo-rose": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.965Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-merko-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:40.970Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-rocks-sp-safari-purple-haze": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.026Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-se1-flux-plaza-taupe": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.267Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-rocks-sp-collina-strada-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.279Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-se1-flux-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.282Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-se2-txt-flux-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.297Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-se2-txt-flux-chocolate": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.312Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-rocks-sp-collina-strada-strada-plaid-seashell-pink": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.325Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-java-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.590Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-aquifer-mediterranea": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.598Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-birch-cameo-rose": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.608Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-safari-mediterranea": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.633Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-cameo-rose-safari": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.642Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-safari-aquifer": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.683Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-cow-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.919Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-lemon-grass-mediterranea": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.932Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-mediterranea-aquifer": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.949Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-alloy-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:41.957Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-dark-earth-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.001Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-faded-denim-magnet": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.008Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-doe-black-star-white": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.269Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-terrain-java": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.278Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-cow-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.285Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-desert-sage-lemon-grass": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.295Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-wild-scenic-green": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.303Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-khaki-abbey-stone": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.358Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-alloy-mediterranea": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.583Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-brindle-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.603Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-chipmunk-symphonic-sunset": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.618Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-waterproof-steel-grey-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.626Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-huckleberry-cameo-rose": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.644Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-zionic-waterproof-black-violet-quartz": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.690Z"
+    },
+    "https://www.keenfootwear.com/products/womens-km1-leather-court-vintage-indigo-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.911Z"
+    },
+    "https://www.keenfootwear.com/products/womens-km4-leather-sneaker-desert-sage-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.930Z"
+    },
+    "https://www.keenfootwear.com/products/womens-km4-leather-sneaker-black-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.976Z"
+    },
+    "https://www.keenfootwear.com/products/womens-km4-leather-sneaker-huckleberry-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:42.980Z"
+    },
+    "https://www.keenfootwear.com/products/womens-km4-leather-sneaker-birch-huckleberry": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:43.014Z"
+    },
+    "https://www.keenfootwear.com/products/womens-ks-mino-chocolate-lab-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:43.023Z"
+    },
+    "https://www.keenfootwear.com/products/womens-ks86-plaza-taupe-khaki": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:43.244Z"
+    },
+    "https://www.keenfootwear.com/products/womens-ks86-mediterranea-brittany-blue": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:43.261Z"
+    },
+    "https://www.keenfootwear.com/products/womens-ks86-bison-birch": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:43.278Z"
+    },
+    "https://www.keenfootwear.com/products/womens-ks86-naval-academy-lavender-lustre": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:43.310Z"
+    },
+    "https://www.keenfootwear.com/products/womens-ks86-utility-safari-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:43.384Z"
+    },
+    "https://www.keenfootwear.com/products/womens-ks86-utility-esd-magnet-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:43.394Z"
+    },
+    "https://www.keenfootwear.com/products/womens-ks86-utility-magnet-gum": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:43.597Z"
+    },
+    "https://www.keenfootwear.com/products/womens-ks86-utility-ltr-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:43.619Z"
+    },
+    "https://www.keenfootwear.com/products/womens-roam-huckleberry-symphonic-sunset": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:44.400Z"
+    },
+    "https://www.keenfootwear.com/products/womens-roam-plaza-taupe-dark-earth": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:44.544Z"
+    },
+    "https://www.keenfootwear.com/products/womens-roam-aquifer-mediterranea": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:44.751Z"
+    },
+    "https://www.keenfootwear.com/products/womens-roam-waterproof-huckleberry-ballad-blue": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:44.768Z"
+    },
+    "https://www.keenfootwear.com/products/womens-roam-waterproof-faded-denim-lemon-grass": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:44.831Z"
+    },
+    "https://www.keenfootwear.com/products/womens-seek-black-rose-gold": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:44.921Z"
+    },
+    "https://www.keenfootwear.com/products/womens-roam-waterproof-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:44.953Z"
+    },
+    "https://www.keenfootwear.com/products/womens-seek-magnet-scenic-green": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.114Z"
+    },
+    "https://www.keenfootwear.com/products/womens-seek-baltic-evening-primrose": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.133Z"
+    },
+    "https://www.keenfootwear.com/products/womens-uneek-360-cameo-rose-safari": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.152Z"
+    },
+    "https://www.keenfootwear.com/products/womens-seek-abbey-stone-gold": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.161Z"
+    },
+    "https://www.keenfootwear.com/products/womens-uneek-trekker-plaza-taupe-cameo-rose": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.238Z"
+    },
+    "https://www.keenfootwear.com/products/womens-uneek-trekker-naval-academy-roasted-pecan": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.250Z"
+    },
+    "https://www.keenfootwear.com/products/womens-wander-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.498Z"
+    },
+    "https://www.keenfootwear.com/products/womens-uneek-trekker-huckleberry-lemon-grass": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.511Z"
+    },
+    "https://www.keenfootwear.com/products/womens-uneek-trekker-violet-quartz-aquifer": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.515Z"
+    },
+    "https://www.keenfootwear.com/products/womens-uneek-trekker-birch-peach-tree": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.532Z"
+    },
+    "https://www.keenfootwear.com/products/womens-wander-black-magnet": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.644Z"
+    },
+    "https://www.keenfootwear.com/products/womens-wander-birch-star-white": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.661Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN272ZIJ_H80G": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:45.766Z"
+    },
+    "https://www.keenfootwear.com/products/womens-wander-huckleberry-symphonic-sunset": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:45.864Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN348ZSA_H50T": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:46.408Z"
+    },
+    "https://www.brooksrunning.com/en_us/featured/unisex-running-shoes/hyperion-elite-6/1000541D699.050.html?dwvar_1000541D699.050_color=699": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:47.639Z"
+    },
+    "https://jp.louisvuitton.com/jpn-jp/products/lv-sneakerina-nvprod7720026v/1AKYLQ": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:48.012Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/ghost-18/1204821B143.080.html?dwvar_1204821B143.080_color=143": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:48.123Z"
+    },
+    "https://www.celine.com/en-us/women/shoes/sneakers/rocker-sneaker-in-tumbled-calfskin-368935535C.38NO.html": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:48.483Z"
+    },
+    "https://www.celine.com/en-us/women/shoes/sneakers/rocker-sneaker-in-tumbled-calfskin-368935535C.GDL8.html": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:48.485Z"
+    },
+    "https://www.gucci.com/us/en/pr/women/shoes-for-women/sneakers-for-women/womens-gucci-tempo-sneaker-p-A00CRPFAGQX9646": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:48.531Z"
+    },
+    "https://shop.lululemon.com/p/beyondfeel-m-running-shoe/yr8o3zlvdj?fp=1&color=77208": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:48.809Z"
+    },
+    "https://shop.lululemon.com/p/mens-cityverse-perforated-sneaker/abc1zcpint?fp=1&color=77041": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:48.878Z"
+    },
+    "https://shop.lululemon.com/p/mens-beyondfeel-waterproof-running-shoe/kjsar8czu7?fp=1&color=82580": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:48.894Z"
+    },
+    "https://shop.lululemon.com/p/cityverse-mens-sneaker/c8c7iy8hxw?fp=1&color=73429": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:48.935Z"
+    },
+    "https://shop.lululemon.com/p/men-cityverse-wool-blend-sneaker/b3kktz8vjx?fp=1&color=80929": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:48.940Z"
+    },
+    "https://shop.lululemon.com/p/mens-split-shift-running-shoe/f1xsu22ay5?fp=1&color=84211": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:48.953Z"
+    },
+    "https://shop.lululemon.com/p/mens-wildfeel-trail-running-shoe/u86hgdfsxm?fp=1&color=79495": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:49.027Z"
+    },
+    "https://www.underarmour.com/en-us/p/ua_hb_trainer_sport_unisex_training_shoes/6010299.html?dwvar_6010299_color=698": {
+      "reason": "http-418",
+      "checkedAt": "2026-10-30T08:07:50.010Z"
+    },
+    "https://shop.lululemon.com/p/beyondfeel-w-running-shoe/mpm3d26o2a?fp=1&color=80949": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:50.115Z"
+    },
+    "https://shop.lululemon.com/p/w-beyondfeel-waterproof-running-shoe/rujrj6c8ov?fp=1&color=82578": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:50.154Z"
+    },
+    "https://shop.lululemon.com/p/cityverse-womens-sneaker/ccr6cv3oks?fp=1&color=80894": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:50.187Z"
+    },
+    "https://shop.lululemon.com/p/womens-cityverse-perforated-sneaker/aha2j15svd?fp=1&color=77041": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:50.196Z"
+    },
+    "https://shop.lululemon.com/p/womens-split-shift-running-shoe/jmx0fjz3pg?fp=1&color=84211": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:50.270Z"
+    },
+    "https://shop.lululemon.com/p/women-mary-train-workout-shoe/nug4h6m7xr?fp=1&color=4310": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:50.336Z"
+    },
+    "https://shop.lululemon.com/p/womens-wildfeel-trail-running-shoe/afq2detv78?fp=1&color=75571": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:50.351Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN342ABF_H80F": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:50.587Z"
+    },
+    "https://www.underarmour.com/en-us/p/unless_govy_unisex_shoes/6017056.html?dwvar_6017056_color=403": {
+      "reason": "http-404",
+      "checkedAt": "2026-10-30T08:07:50.800Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN348AHD_H698": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:50.833Z"
+    },
+    "https://www.dior.com/en_hk/fashion/products/3SN364AEL_H800": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:50.902Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/trail-shoes/cascadia-20-gtx/120477.html?dwvar_120477_color=030": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:51.476Z"
+    },
+    "https://www.brooksrunning.com/en_us/mens/shoes/trail-shoes/cascadia-20/110489.html?dwvar_110489_color=099": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:51.562Z"
+    },
+    "https://www.brooksrunning.com/en_us/mens/shoes/trail-shoes/cascadia-20-gtx/110488.html?dwvar_110488_color=030": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:51.595Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/trail-shoes/cascadia-20/120478.html?dwvar_120478_color=217": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:51.759Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/ghost-max-4/1204851B143.095.html?dwvar_1204851B143.095_color=143": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:52.544Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/ghost-trail/120464.html?dwvar_120464_color=595": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:52.570Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/glycerin-23/120465.html?dwvar_120465_color=487": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:52.831Z"
+    },
+    "https://shop.lululemon.com/p/mens-beyondfeel-waterproof-running-shoe/kjsar8czu7?fp=1&color=82581": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:52.934Z"
+    },
+    "https://www.asics.com/us/en-us/gt-1000-15/p/ANA_1011C230-020.html": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:52.994Z"
+    },
+    "https://shop.lululemon.com/p/mens-split-shift-running-shoe/f1xsu22ay5?fp=1&color=80945": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:53.033Z"
+    },
+    "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-trail/110475.html?dwvar_110475_color=319": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:53.208Z"
+    },
+    "https://www.keenfootwear.com/products/mens-jasper-zionic-18-east-black-black": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:53.311Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/glycerin-23/1204651B487.080.html?dwvar_1204651B487.080_color=487": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:53.410Z"
+    },
+    "https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/glycerin-23/1204651B157.100.html?dwvar_1204651B157.100_color=157": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:54.166Z"
+    },
+    "https://www.nike.com/t/mind-001-womens-pregame-mules-KmvgDgKS/HQ4309-100": {
+      "reason": "http-404",
+      "checkedAt": "2026-10-30T08:07:54.566Z"
+    },
+    "https://shop.lululemon.com/p/w-beyondfeel-waterproof-running-shoe/rujrj6c8ov?fp=1&color=82581": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:55.072Z"
+    },
+    "https://shop.lululemon.com/p/womens-split-shift-running-shoe/jmx0fjz3pg?fp=1&color=82585": {
+      "reason": "http-400",
+      "checkedAt": "2026-10-30T08:07:55.193Z"
+    },
+    "https://www.keenfootwear.com/products/womens-jasper-birch-winter-green": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:55.360Z"
+    },
+    "https://www.adidas.com/us/adizero-evo-sl-woven-running-shoes/KJ4984.html": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:55.473Z"
+    },
+    "https://www.adidas.com/us/hyperboost-edge-running-shoes/KJ0817.html": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:55.637Z"
+    },
+    "https://us.louisvuitton.com/eng-us/products/time-out-sneaker-nvprod7430109v/1AKGBM": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:55.685Z"
+    },
+    "https://www.salomon.com/en-ca/product/aero-blaze-4-grvl-li9273/L45401400": {
+      "reason": "http-404",
+      "checkedAt": "2026-10-30T08:07:56.496Z"
+    },
+    "https://www.salomon.com/en-ca/product/genesis-2-gtx-li9188/L49302000": {
+      "reason": "http-404",
+      "checkedAt": "2026-10-30T08:07:56.964Z"
+    },
+    "https://www.nike.com/tw/launch/t/air-max-plus-one-piece-gomu-gomu": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:58.127Z"
+    },
+    "https://www.adidas.ae/en/adidas-x-tyrrell-winston-climacool-4d-shoes/KJ7669.html": {
+      "reason": "http-403",
+      "checkedAt": "2026-10-30T08:07:58.163Z"
+    },
+    "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0304_F_A045": {
+      "reason": "no-price-on-page",
+      "checkedAt": "2026-10-30T08:07:58.599Z"
+    }
+  },
+  "checkedAt": "2026-10-30T08:08:04.110Z",
+  "colors": {
+    "https://www.nike.com/t/air-force-1-university-of-texas-mens-shoes-OVDZkCFq/JF5456-800": {
+      "colorway": "Desert Orange/Desert Orange",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:20.808Z"
+    },
+    "https://www.nike.com/t/air-force-1-university-of-oregon-mens-lifestyle-shoes-GE3sXpVM/JF5453-300": {
+      "colorway": "Apple Green/Apple Green",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:20.830Z"
+    },
+    "https://www.nike.com/t/air-force-1-university-of-georgia-mens-shoes-1cRFfPBp/JF5457-600": {
+      "colorway": "University Red/University Red",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:21.269Z"
+    },
+    "https://www.nike.com/at/en/t/air-jordan-1-low-se-lola-bunny-womens-shoes-ZjBdYsDC/IX6038-100": {
+      "colorway": "White/Laser Pink/Yellow Zest/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:21.286Z"
+    },
+    "https://www.nike.com/t/air-jordan-1-high-og-royal-mens-shoes-p8vLeLAd/IQ5495-005": {
+      "colorway": "Black/White/Game Royal",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:21.366Z"
+    },
+    "https://www.nike.com/t/air-jordan-9-retro-boots-yMVLobe1/AR4491-012": {
+      "colorway": "Black/True Red/Light Olive",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:22.412Z"
+    },
+    "https://www.nike.com/t/air-jordan-5-retro-halloween-mens-shoes-6R2lWr5e/HQ7978-001": {
+      "colorway": "Black/Picante Red/Glow In The Dark/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:22.724Z"
+    },
+    "https://www.axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602005": {
+      "colorway": "White/White",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:23.031Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-runner-f4500001": {
+      "colorway": "Off White/Beige",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.174Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-runner-f4500008": {
+      "colorway": "Light Green/Dark Green",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.178Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-runner-f4500006": {
+      "colorway": "Red/Dark Burgundy",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.181Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-runner-f4500007": {
+      "colorway": "Dark Blue/Off White",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.196Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-suede-runner-f4499004": {
+      "colorway": "Dark Brown/Tan",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.231Z"
+    },
+    "https://www.axelarigato.com/women/footwear/flair/flair-runner-f4592003": {
+      "colorway": "Dark Burgundy/Light Pink",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.468Z"
+    },
+    "https://www.axelarigato.com/women/footwear/flair/flair-runner-f4617001": {
+      "colorway": "Light Blue/Blue",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.490Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-suede-runner-f4499006": {
+      "colorway": "Dark Grey/Off White",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.529Z"
+    },
+    "https://www.axelarigato.com/women/footwear/flair/flair-runner-f4592001": {
+      "colorway": "Light Green/Light Blue",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.534Z"
+    },
+    "https://www.axelarigato.com/men/footwear/flair/flair-suede-runner-f4499005": {
+      "colorway": "Black/Grey",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.558Z"
+    },
+    "https://www.axelarigato.com/women/footwear/flair/flair-runner-f4592002": {
+      "colorway": "Off White/Taupe",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:24.571Z"
+    },
+    "https://www.havaianas-store.com/gb/en/havaianas-fantasia/4147115-BLACK.html": {
+      "colorway": "BLACK",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:26.596Z"
+    },
+    "https://www.havaianas-store.com/gb/en/havaianas-square/4148301-DARK_BROWN.html": {
+      "colorway": "DARK BROWN",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:26.791Z"
+    },
+    "https://www.salomon.com/en-us/product/xt-mm6-maison-margiela-li8660/L45447900": {
+      "colorway": "Tapioca / Sea Foam / Violet Tulip",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:28.160Z"
+    },
+    "https://www.salomon.com/en-us/product/xt-mm6-maison-margiela-li8660/L45448000": {
+      "colorway": "Scarab / Bistro Green / Green Milieu",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:28.292Z"
+    },
+    "https://www.salomon.com/en-us/product/xt-mm6-maison-margiela-li8660/L45447800": {
+      "colorway": "Vanilla Ice / Ftw Silver / Lemon",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:28.343Z"
+    },
+    "https://www.nike.com/t/kobe-air-force-1-low-mens-shoes-ZjtWaNqY/IB0018-104": {
+      "colorway": "Sail/Emerald Green/Hyper Purple",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:28.412Z"
+    },
+    "https://www.nike.com/t/kobe-dunk-low-protro-shoes-EjzVx292/IQ3922-001": {
+      "colorway": "Anthracite/Sundial/Anthracite",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:28.434Z"
+    },
+    "https://www.bottegaveneta.com/755915V2X404025.html": {
+      "colorway": "블랙/실버",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:28.555Z"
+    },
+    "https://www.nike.com/t/kobe-3-low-protro-mamba-eterno-basketball-shoes-BEmJD5qx/IO6260-800": {
+      "colorway": "Safety Orange/Sundial/Picante Red",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:29.108Z"
+    },
+    "https://www.nike.com/at/en/t/air-force-1-07-se-leopard-womens-shoes-XOevZdXR/JA5714-900": {
+      "colorway": "Multi-Colour/Bucktan/Desert Ochre/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:35.848Z"
+    },
+    "https://www.nike.com/at/en/t/air-force-1-07-lv8-mens-shoes-yzCadBK2/IV3472-002": {
+      "colorway": "Black/Anthracite/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:35.858Z"
+    },
+    "https://www.nike.com/t/air-force-1-07-se-velvet-womens-shoes-4Oagi5vs/IX5100-400": {
+      "colorway": "Dark Obsidian/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:35.975Z"
+    },
+    "https://www.nike.com/at/en/t/air-force-1-mid-07-gore-tex-vibram-mens-shoes-dfEJzjWe/IO1875-001": {
+      "colorway": "Black/Smoke Grey/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:36.082Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-mens-shoes-Q5C5KDfv/IM9616-002": {
+      "colorway": "Black/Chrome Yellow/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:36.130Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-womens-shoes-ZreoI7yM/IX7437-236": {
+      "colorway": "Cream II/Cave Stone/Cream II",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:36.297Z"
+    },
+    "https://www.nike.com/t/air-force-1-mid-07-gore-tex-vibram-mens-shoes-JNrJFwJw/IO1875-100": {
+      "colorway": "Summit White/Blue Tint/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:36.349Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-95-mens-golf-shoes-F1Z7EdQo/IQ3467-100": {
+      "colorway": "White/Metallic Silver",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:36.483Z"
+    },
+    "https://www.nike.com/t/air-max-moto-2k-womens-shoes-with-reflective-accents-xfKLxDbe/HQ2056-011": {
+      "colorway": "Grey Fog/Metallic Silver/White",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:36.502Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-95-big-bubble-gore-tex-mens-winterized-shoes-ivQWsWfW/IO1877-002": {
+      "colorway": "Black/Black/Diffused Blue/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:36.596Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-plus-mens-shoes-Nr4g5r/DD4004-001": {
+      "colorway": "Black/Black/Limelight",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:36.607Z"
+    },
+    "https://www.nike.com/at/en/t/p-6000-cordura-shoes-8JpK2egZ/IQ6449-001": {
+      "colorway": "Anthracite/Metallic Silver/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:36.713Z"
+    },
+    "https://www.nike.com/t/vomero-premium-mens-road-running-shoes-l11miwwa/JA4059-010": {
+      "colorway": "Black/Black/Lemon Venom",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:37.036Z"
+    },
+    "https://www.nike.com/t/shox-z-patent-leather-womens-shoes-iq6ab1dg/IQ0164-600": {
+      "colorway": "Mystic Dates/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:37.174Z"
+    },
+    "https://www.nike.com/t/vomero-premium-sp-mens-road-running-shoes-cS11eA4s/IV7509-001": {
+      "colorway": "Black/Iron Grey/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:37.201Z"
+    },
+    "https://www.nike.com/t/zoom-vomero-5-womens-shoes-81TPKW/IX7042-010": {
+      "colorway": "Black/Medium Soft Pink/Metallic Silver",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:37.470Z"
+    },
+    "https://www.nike.com/t/interact-run-womens-road-running-shoes-v5LlQl/FD2292-600": {
+      "colorway": "Pink Oxford/Sanddrift/Terra Blush/White",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:38.290Z"
+    },
+    "https://www.underarmour.com/en-us/p/ua_hb_racer_2_womens_running_shoes/6010216.html?dwvar_6010216_color=219": {
+      "colorway": "Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:39.635Z"
+    },
+    "https://www.axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602002": {
+      "colorway": "Green/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:46.173Z"
+    },
+    "https://www.salomon.com/en-us/product/xt-whisper-kraft-li9260/L45397200": {
+      "colorway": "White / Vanilla Ice / White Pepper",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:46.180Z"
+    },
+    "https://www.axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602003": {
+      "colorway": "Dark Blue/Dark Blue",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:46.264Z"
+    },
+    "https://www.axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602006": {
+      "colorway": "Light Blue/Dark Blue",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:46.499Z"
+    },
+    "https://www.axelarigato.com/men/footwear/clean-90/clean-90-bee-bird-perf-sneaker-f4602004": {
+      "colorway": "Dark Brown/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:46.507Z"
+    },
+    "https://www.shopmelissa.com/products/bend-39510-bs516": {
+      "colorway": "Beige/Blue/Red",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:46.729Z"
+    },
+    "https://www.shopmelissa.com/products/bend-39510-bv723": {
+      "colorway": "Beige/Blue/Red",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:47.017Z"
+    },
+    "https://www.shopmelissa.com/products/camp-38025-bv528": {
+      "colorway": "Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:47.093Z"
+    },
+    "https://www.shopmelissa.com/products/bend-39510-bs481": {
+      "colorway": "Beige/Blue/Red",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:47.280Z"
+    },
+    "https://www.shopmelissa.com/products/camp-38025-bv527": {
+      "colorway": "Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:47.286Z"
+    },
+    "https://www.shopmelissa.com/products/camp-38025-bv529": {
+      "colorway": "Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:47.477Z"
+    },
+    "https://www.salomon.com/en-us/product/aero-glide-4-li9420/L49228600": {
+      "colorway": "Gray Violet / Safety Yellow / Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:47.656Z"
+    },
+    "https://www.shopmelissa.com/products/camp-38025-bv522": {
+      "colorway": "Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:47.694Z"
+    },
+    "https://www.shopmelissa.com/products/loop-39507-br234": {
+      "colorway": "Orange/Green/Pink",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:47.894Z"
+    },
+    "https://www.shopmelissa.com/products/loop-39507-bv886": {
+      "colorway": "Orange/Green/Pink",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:48.026Z"
+    },
+    "https://www.vans.com/en-us/p/shoes/crosspath-6135/crosspath-xc-shoe-VN000EJJCD3": {
+      "colorway": "Marshmallow White",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:48.085Z"
+    },
+    "https://www.salomon.com/en-us/product/aero-glide-4-li9421/L49228800": {
+      "colorway": "Gray Violet / Ojos Del Salar / Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:48.092Z"
+    },
+    "https://www.shopmelissa.com/products/loop-39507-br238": {
+      "colorway": "Orange/Green/Pink",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:48.106Z"
+    },
+    "https://www.nike.com/t/air-force-1-07-lv8-mens-shoes-5PBzpHVE/IV3472-700": {
+      "colorway": "Wheat/Wheat",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:48.389Z"
+    },
+    "https://www.axelarigato.com/men/footwear/zane/zane-sneaker-f4357001": {
+      "colorway": "Dark Green/Gum",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:48.723Z"
+    },
+    "https://www.axelarigato.com/men/footwear/zane/zane-sneaker-f4357002": {
+      "colorway": "Dark Blue/Dark Gum",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:48.799Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-check-womens-shoes-ZreoI7yM/IR5598-002": {
+      "colorway": "Black/Tough Red/Yellow Ochre/Team Red",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:49.460Z"
+    },
+    "https://www.nike.com/t/air-griffey-max-1-mens-shoes-kGbBsDph/JA1091-100": {
+      "colorway": "White/Black/Varsity Red",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:49.556Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-mens-shoes-iKVFLe0S/IZ9645-325": {
+      "colorway": "Cargo Khaki/Black/Off-Noir/Total Orange",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:49.699Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-plus-mens-shoes-wRkOBMX4/IM5983-002": {
+      "colorway": "Black/Black/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:49.811Z"
+    },
+    "https://www.nike.com/t/air-max-torch-4-mens-shoes-NP9gd38r/CN2159-002": {
+      "colorway": "Black/Metallic Gold",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:49.928Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-plus-womens-shoes-wAjTYWhG/IR5731-600": {
+      "colorway": "Tough Red/White/Yellow Ochre/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:49.950Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-premium-mens-shoes-hd05amdk/IQ7130-001": {
+      "colorway": "Black/Cinnamon/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:49.964Z"
+    },
+    "https://www.nike.com/t/dunk-low-premium-halloween-mens-shoes-v2T3Eybu/IX5169-300": {
+      "colorway": "Bog Green/Black/Luminous Green/Bog Green",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:50.124Z"
+    },
+    "https://www.nike.com/at/en/t/shox-tl-womens-shoes-kmDWPDRl/IM5167-002": {
+      "colorway": "Black/Tough Red/Yellow Ochre/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:50.453Z"
+    },
+    "https://www.nike.com/t/nikeskims-rift-satin-womens-shoes-uxrT1kE0/IQ7158-201": {
+      "colorway": "Shadow Brown/Shadow Brown/Shadow Brown",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:50.471Z"
+    },
+    "https://www.nike.com/at/en/t/air-jordan-1-low-se-mens-shoes-sMQ4UMpn/IX6983-001": {
+      "colorway": "Black/White/Anthracite",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:50.610Z"
+    },
+    "https://www.nike.com/at/en/t/air-jordan-1-low-se-womens-shoes-awP1nbvG/IQ5162-001": {
+      "colorway": "Black/Velvet Brown/Chalk",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:50.613Z"
+    },
+    "https://www.nike.com/t/air-force-1-07-mens-shoes-XVPIszaq/IX7257-133": {
+      "colorway": "Summit White/Yellow Ochre/Midnight Navy",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:53.605Z"
+    },
+    "https://www.nike.com/at/en/t/air-force-1-07-womens-shoes-v0ot8Z6a/HV4406-600": {
+      "colorway": "Burgundy Crush/Black/Burgundy Crush",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:53.667Z"
+    },
+    "https://www.nike.com/t/air-force-1-luxe-mens-shoes-7Fvcvq/DB4109-001": {
+      "colorway": "Black/Bucktan/Gum Yellow/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:53.937Z"
+    },
+    "https://www.nike.com/at/en/t/air-max-90-mens-shoes-exykZV6r/IM9616-101": {
+      "colorway": "White/Tough Red/White",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:54.136Z"
+    },
+    "https://www.nike.com/t/air-force-1-07-se-womens-shoes-5qInrh2d/IV5103-601": {
+      "colorway": "Black/Metallic Silver/Anthracite/Black",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:55.547Z"
+    },
+    "https://www.nike.com/t/air-jordan-1-mid-se-womens-shoes-wkMdft/IQ5161-001": {
+      "colorway": "Black/Velvet Brown/Chalk",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:55.588Z"
+    },
+    "https://www.nike.com/t/vomero-plus-x-distance-mens-road-running-shoes-TWnkdn7u/IQ7318-100": {
+      "colorway": "White/Black/Volt/Metallic Silver",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:55.714Z"
+    },
+    "https://www.nike.com/t/air-max-moto-2k-womens-shoes-xfKLxDbe/IR4333-200": {
+      "colorway": "Velvet Brown/Enigma Stone/Velvet Brown",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:55.776Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210800": {
+      "colorway": "Paloma / Cloudburst / Ftw Silver",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:56.350Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-protective-li1345/L45405100": {
+      "colorway": "Shadow Gray / Iron / Lilac Ash",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:56.364Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L49192300": {
+      "colorway": "Gray Violet / Black / Ftw Silver",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:56.418Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-whisper-gore-tex-li9305/L45397700": {
+      "colorway": "Black / Black / Ftw Silver",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:56.453Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-4-og-gore-tex-li8806/L49210700": {
+      "colorway": "Coyote Brown / Willow / Dragon Fire",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:57.084Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49213200": {
+      "colorway": "Peat / Icicle / Lime Cream",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:57.166Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-lg4239/L49211100": {
+      "colorway": "Spellbound / Maritime Blue / Pearl Blue",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:57.263Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215400": {
+      "colorway": "Black / Cloudburst / Dark Gull Gray",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:57.661Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49215200": {
+      "colorway": "Bitter Chocolate / Iron / Vanilla Ice",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:57.698Z"
+    },
+    "https://www.salomon.com/en-ca/product/xt-6-gore-tex-lg9333/L49214800": {
+      "colorway": "Tradewinds / Stormy Weather / Bog",
+      "basis": "schema.org Product colour",
+      "checkedAt": "2026-10-30T08:07:57.710Z"
+    }
+  }
+}

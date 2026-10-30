@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T07:49:00.550Z",
+  "checkedAt": "2026-10-30T08:10:07.930Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -15557,14 +15557,6 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-7b6e3f9095f96ae75dde",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-909b312c881a7db5bd2d",
-      "reason": "duplicate-product-color"
-    },
-    {
       "id": "arrival-642dbf4d6a6843ba7874",
       "brand": "Nike",
       "name": "Nike Air Max 95 Big Bubble",
@@ -15597,19 +15589,7 @@
       "reason": "duplicate-product-color"
     },
     {
-      "id": "arrival-8a1971cda3325af15d75",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-9c97ff99a3a5e021778b",
-      "reason": "duplicate-product-color"
-    },
-    {
       "id": "arrival-194113a9b787183014d7",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-46dc1d50366ed8ad066f",
       "reason": "duplicate-product-color"
     },
     {
@@ -16181,10 +16161,6 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-ce5763908515a1ea044e",
-      "reason": "duplicate-product-color"
-    },
-    {
       "id": "arrival-8f870a59d609d62e28fa",
       "brand": "Nike",
       "name": "Nike P-6000",
@@ -16643,14 +16619,6 @@
       "brand": "Nike",
       "name": "Nike P-6000",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-254336f35f5e0cba3875",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-5a25066175f2836fb486",
-      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-0d8b2618a6bfee84b9d7",

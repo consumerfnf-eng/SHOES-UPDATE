@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-29T20:03:59.843535+09:00",
+  "checkedAt": "2026-10-30T17:07:37.341756+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -192,6 +192,33 @@
         }
       ]
     },
+    "retail-balardi": {
+      "status": "ok",
+      "basis": "dated",
+      "items": 960,
+      "creditsUsed": 0,
+      "diagnostics": [
+        {
+          "collection": "womens-sneakers",
+          "label": "여성 스니커즈 · 최신순",
+          "pages": 40,
+          "candidates": 9833,
+          "kept": 960,
+          "tooOld": 8539,
+          "dropped": {
+            "excluded-silhouette": 90,
+            "kids": 10,
+            "sandal-or-clog": 13,
+            "no-sneaker-evidence": 196,
+            "no-url-or-image": 2
+          },
+          "errors": [],
+          "pageCapHit": true,
+          "pageSize": 48,
+          "pageCap": 20
+        }
+      ]
+    },
     "retail-wconcept": {
       "status": "ok",
       "basis": "delta",
@@ -290,7 +317,7 @@
     "newsletter": {
       "status": "ok",
       "items": 620,
-      "matchedToRetail": 319,
+      "matchedToRetail": 333,
       "unidentifiedArticles": 59,
       "diagnostics": [
         {
@@ -448,25 +475,25 @@
     "requested": 0,
     "new": 0,
     "rereadForVersion": 0,
-    "cached": 4152,
-    "readable": 4152,
+    "cached": 5080,
+    "readable": 5073,
     "stillOnOldVersion": 10,
     "failures": {},
-    "duplicatePhotosMerged": 137
+    "duplicatePhotosMerged": 143
   },
   "modelGrouping": {
     "step": "model grouping",
-    "colourwayFromOwnName": 168,
-    "modelGroupsAssigned": 1555,
+    "colourwayFromOwnName": 222,
+    "modelGroupsAssigned": 1567,
     "groupedByStyleCode": 299,
-    "groupedByColourSlot": 29,
+    "groupedByColourSlot": 47,
     "joinedToExistingModel": 21,
-    "colourwaysRecoveredFromName": 443
+    "colourwaysRecoveredFromName": 458
   },
-  "rereleasesExcluded": 274,
-  "modelsIndexed": 7502,
-  "publishedRetail": 3389,
-  "publishedNewsletter": 620,
-  "retailCollected": 19022,
-  "heldOutsideWindow": 15633
+  "rereleasesExcluded": 311,
+  "modelsIndexed": 9033,
+  "publishedRetail": 4285,
+  "publishedNewsletter": 614,
+  "retailCollected": 19982,
+  "heldOutsideWindow": 15697
 }

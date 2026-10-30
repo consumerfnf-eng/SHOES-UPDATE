@@ -6282,6 +6282,24 @@
       "sha256": "d0918e9888ab4d979258857575e81298ff954fe9a53feca681cce5ef15187de7",
       "sourceUrl": "https://static.nike.com/a/images/t_PDP_144_v1/f_auto,q_auto:eco,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b5844208-c7ca-491a-998c-2aac99abf3eb/NIKE+MIND+002.png",
       "checkedAt": "2026-10-30T07:49:00.528Z"
+    },
+    "https://cdn.dam.salomon.com/0bcc429b-9f44-48bc-a36e-b3790089a1a0/L49192300/PNG-2000px-max-72dpi.png?width=2918&fit=cover&optimize=medium&bg-color=transparent&format=pjpg&auto=avif&pad=0.12%2C0.12%2C0.12%2C0.12": {
+      "path": "/images/4decd6cb356e8116601c1abb64cc15ed87868e0de34f55a5fc0fa77d3f57796b.jpg",
+      "sha256": "4decd6cb356e8116601c1abb64cc15ed87868e0de34f55a5fc0fa77d3f57796b",
+      "sourceUrl": "https://cdn.dam.salomon.com/0bcc429b-9f44-48bc-a36e-b3790089a1a0/L49192300/PNG-2000px-max-72dpi.png?width=2918&fit=cover&optimize=medium&bg-color=transparent&format=pjpg&auto=avif&pad=0.12%2C0.12%2C0.12%2C0.12",
+      "checkedAt": "2026-10-30T08:10:07.685Z"
+    },
+    "https://cdn.dam.salomon.com/bd42f406-b469-4120-b0b1-b372008d8a8c/L49210800/PNG-2000px-max-72dpi.png?width=2918&fit=cover&optimize=medium&bg-color=transparent&format=pjpg&auto=avif&pad=0.12%2C0.12%2C0.12%2C0.12": {
+      "path": "/images/36a4cd339b15b1e8fad0b69c03823f8ea53cf186ceb70ebeeba86ae3314e3d90.jpg",
+      "sha256": "36a4cd339b15b1e8fad0b69c03823f8ea53cf186ceb70ebeeba86ae3314e3d90",
+      "sourceUrl": "https://cdn.dam.salomon.com/bd42f406-b469-4120-b0b1-b372008d8a8c/L49210800/PNG-2000px-max-72dpi.png?width=2918&fit=cover&optimize=medium&bg-color=transparent&format=pjpg&auto=avif&pad=0.12%2C0.12%2C0.12%2C0.12",
+      "checkedAt": "2026-10-30T08:10:07.695Z"
+    },
+    "https://cdn.dam.salomon.com/c7db5eeb-a298-435d-86a6-b37900897ee4/L45405100/PNG-2000px-max-72dpi.png?width=2918&fit=cover&optimize=medium&bg-color=transparent&format=pjpg&auto=avif&pad=0.12%2C0.12%2C0.12%2C0.12": {
+      "path": "/images/1feecbb49121509b72c6d22ce2e61598fd1859a71ecad43774304452879451d7.jpg",
+      "sha256": "1feecbb49121509b72c6d22ce2e61598fd1859a71ecad43774304452879451d7",
+      "sourceUrl": "https://cdn.dam.salomon.com/c7db5eeb-a298-435d-86a6-b37900897ee4/L45405100/PNG-2000px-max-72dpi.png?width=2918&fit=cover&optimize=medium&bg-color=transparent&format=pjpg&auto=avif&pad=0.12%2C0.12%2C0.12%2C0.12",
+      "checkedAt": "2026-10-30T08:10:07.919Z"
     }
   },
   "unavailable": {}

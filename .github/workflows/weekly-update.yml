@@ -88,16 +88,52 @@ jobs:
             # main moves while this runs (the daily workflow, or a person
             # pushing) - an hour of collection must not be thrown away to a
             # non-fast-forward rejection, so rebase onto whatever landed and
-            # retry. A real conflict aborts the rebase rather than resolving
-            # it blindly.
+            # retry.
+            #
+            # Every path this step commits is generated, and a line-by-line
+            # merge of two JSON snapshots means nothing, so three attempts at
+            # a textual rebase is three attempts at the same impossible merge:
+            # run 41011572077 collected for an hour and twenty minutes and
+            # then threw all of it away because three commits had landed on
+            # main in the meantime. On a conflict in those files this run's
+            # copies win - it holds the newer collection - and the catalogue
+            # is then rebuilt with whatever code just landed, which is the
+            # half of the conflict that actually matters. A conflict anywhere
+            # else is a real one and still aborts.
+            generated='data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json public/data/catalog.json public/data/rank-boards.json'
             published=0
             for attempt in 1 2 3; do
               git fetch origin main
-              if git rebase origin/main; then
-                if git push origin HEAD:main; then published=1; break; fi
-              else
-                git rebase --abort
+              if ! git rebase origin/main; then
+                conflicts=$(git diff --name-only --diff-filter=U)
+                unexpected=''
+                for f in $conflicts; do
+                  case " $generated " in
+                    *" $f "*) ;;
+                    *) case "$f" in public/images/*) ;; *) unexpected="$unexpected $f";; esac;;
+                  esac
+                done
+                if [ -n "$unexpected" ]; then
+                  git rebase --abort
+                  echo "::error::Conflict outside the generated snapshot:$unexpected"
+                  exit 1
+                fi
+                for f in $conflicts; do
+                  git checkout --theirs -- "$f" 2>/dev/null || git checkout --ours -- "$f"
+                  git add -- "$f"
+                done
+                if ! GIT_EDITOR=true git rebase --continue; then
+                  git rebase --abort
+                  sleep 10
+                  continue
+                fi
+                npm run curate
+                npm run photos
+                npm run build
+                git add $generated public/images
+                git commit --amend --no-edit
               fi
+              if git push origin HEAD:main; then published=1; break; fi
               sleep 10
             done
             if [ "$published" != 1 ]; then

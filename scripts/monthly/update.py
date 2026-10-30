@@ -63,6 +63,8 @@ RETAIL_COLLECTORS = [
      'report': 'retail-musinsa', 'basis': 'dated'},
     {'script': 'collect_29cm.py', 'staging': 'monthly-staging-29cm.json',
      'report': 'retail-29cm', 'basis': 'dated'},
+    {'script': 'collect_balardi.py', 'staging': 'monthly-staging-balardi.json',
+     'report': 'retail-balardi', 'basis': 'dated'},
     {'script': 'collect_wconcept.py', 'staging': 'monthly-staging-wconcept.json',
      'report': 'retail-wconcept', 'basis': 'delta'},
     {'script': 'collect_lyst_scrapingbee.py', 'staging': 'monthly-staging-lyst.json',

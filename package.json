@@ -9,6 +9,7 @@
     "curate": "node scripts/publish-curated.mjs",
     "keywords": "node scripts/refresh-keywords.mjs",
     "photos": "node scripts/cache-product-photos.mjs",
+    "prices": "node scripts/collect-prices.mjs",
     "colors": "python scripts/photo_body_colors.py",
     "audit": "node scripts/audit-duplicates.mjs",
     "categories": "node scripts/build-model-categories.mjs",
