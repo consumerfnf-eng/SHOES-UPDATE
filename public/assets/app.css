@@ -215,3 +215,32 @@
   .wgsn-show{grid-template-columns:1fr}
   .wgsn-links{justify-content:flex-start}
 }
+
+/* --- CATWALK -------------------------------------------------------------
+   A look is not a product: no price, no colourway, nothing to select or
+   export. The card is the photograph with WGSN's own caption under it - the
+   brand, the season, the city - so the grid is narrower and taller than the
+   product grid and carries none of its chrome. */
+.catwalk{margin:0 0 28px}
+.catwalk-head h2{margin:0 0 4px;font-size:18px;letter-spacing:.02em}
+.catwalk-head p{margin:1px 0;font-size:11.5px;line-height:1.45;max-width:78ch}
+#catwalk-note{color:#8a8275}
+.catwalk-filters{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 18px}
+.catwalk-chip{appearance:none;border:1px solid #e2ddd4;background:#fffffe;border-radius:999px;
+  padding:5px 11px;font:inherit;font-size:11.5px;color:#4a443c;cursor:pointer;line-height:1.3}
+.catwalk-chip span{color:#9a9287;font-size:10.5px;margin-left:3px}
+.catwalk-chip:hover{border-color:#c9c2b6}
+.catwalk-chip.active{background:#1c1a17;border-color:#1c1a17;color:#fff}
+.catwalk-chip.active span{color:#bdb6a9}
+.catwalk-grid{display:grid;gap:22px 16px;grid-template-columns:repeat(auto-fill,minmax(168px,1fr))}
+.catwalk-card{display:grid;gap:8px;min-width:0}
+.catwalk-photo{display:block;background:#f4f1ec;border:1px solid #ece7df;border-radius:8px;overflow:hidden;line-height:0}
+.catwalk-photo img{width:100%;height:auto;display:block}
+.catwalk-photo:hover{border-color:#cdc6ba}
+.catwalk-copy{display:grid;gap:1px}
+.catwalk-brand{margin:0;font-weight:600;font-size:12.5px;color:#1c1a17;overflow-wrap:anywhere}
+.catwalk-season,.catwalk-city{margin:0;font-size:11.5px;color:#6f675c}
+.catwalk-more{margin:24px 0 0;display:flex;justify-content:center}
+@media (max-width:520px){
+  .catwalk-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px 12px}
+}

@@ -11,10 +11,10 @@ const sourceNames = {magazine:'매거진',newsletter:'뉴스레터',media:'매�
 const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:'캐주얼 샌들','platform-sandal':'플랫폼 샌들','platform-shoe':'플랫폼 슈즈',jelly:'젤리 슈즈',hybrid:'혼합형 스니커즈'};
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
-const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
+const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter']];
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter'};
-let catalog = null, overlay = null, trends = null, rankBoards = null, wgsnRunway = null, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
+let catalog = null, overlay = null, trends = null, rankBoards = null, wgsnRunway = null, catwalk = null, catwalkShown = 0, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
 const activeVariant = new Map();
 function groupKey(p){ return variantGroupKey(p); }
 function colorGroupOf(p){
@@ -225,6 +225,13 @@ async function loadSupplements() {
     }
   } catch { wgsnRunway = null; }
   try {
+    const walk = await fetch('./data/catwalk.json', {cache:'no-cache'});
+    if (walk.ok) {
+      const snapshot = await walk.json();
+      if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.looks)) { catwalk = snapshot; changed = true; }
+    }
+  } catch { catwalk = null; }
+  try {
     const ranking = await fetch('./data/trend-keywords.json', {cache:'no-cache'});
     if (ranking.ok) {
       const snapshot = await ranking.json();
@@ -304,7 +311,7 @@ function renderKeywords() {
     }).join(''):'<p class="keyword-empty">확인된 Shoes Trend Keyword가 아직 없습니다.</p>';
     $(target).querySelectorAll('.keyword-select').forEach(button=>button.addEventListener('click',()=>{
       const k=list[Number(button.dataset.keyword)];clearTimeout(searchTimer);
-      Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',release:'released',socialGroup:'',sort:'newest',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
+      Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',release:'released',socialGroup:'',sort:'newest',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
       syncFilterControls();renderBrands();renderKeywords();render();$('results').scrollIntoView({block:'start'});$('results').focus({preventScroll:true});
     }));
   }
@@ -459,15 +466,71 @@ function renderWgsnRunway(){
         `<a class="text-button" href="${esc(safeUrl(link.url))}" target="_blank" rel="noopener noreferrer">${esc(link.label)} ↗</a>`).join('')}</span>
     </li>`).join('')}</ol>`;
 }
+// The catwalk tab. One card per photograph, captioned the way WGSN captions
+// it: the brand, the season, the city. A look is not a product - it has no
+// price, no colourway and nothing to select or export - so it gets its own
+// grid rather than being forced through the product card.
+const CATWALK_PAGE = 120;
+function catwalkLooks(){
+  const looks=catwalk?.looks||[];
+  if(state.catwalkShow==='footwear'){
+    const shelf=(catwalk.shelves||[]).find(s=>s.footwearShelf)?.id;
+    return looks.filter(l=>l.shelf===shelf);
+  }
+  if(state.catwalkShow&&state.catwalkShow!=='all')return looks.filter(l=>l.brand===state.catwalkShow);
+  return looks;
+}
+const shelfUrl=id=>(catwalk?.shelves||[]).find(s=>s.id===id)?.searchUrl||'';
+function renderCatwalkFilters(looks){
+  const host=$('catwalk-filters');
+  if(!host)return;
+  const brands=[...new Set((catwalk?.looks||[]).map(l=>l.brand))].sort((a,b)=>a.localeCompare(b));
+  const footwear=(catwalk?.shelves||[]).find(s=>s.footwearShelf);
+  const chip=(id,label,count)=>`<button class="catwalk-chip${state.catwalkShow===id?' active':''}" data-catwalk="${esc(id)}" aria-pressed="${state.catwalkShow===id}">${esc(label)}${count!=null?` <span>${count.toLocaleString()}</span>`:''}</button>`;
+  const shelfId=footwear?.id;
+  host.innerHTML=chip('all','전체',(catwalk?.looks||[]).length)
+    +(footwear?chip('footwear','신발 디테일',(catwalk.looks||[]).filter(l=>l.shelf===shelfId).length):'')
+    +brands.map(b=>chip(b,b,(catwalk.looks||[]).filter(l=>l.brand===b).length)).join('');
+}
+function renderCatwalk(){
+  const section=$('catwalk');
+  if(!section||!catwalk)return;
+  const looks=catwalkLooks();
+  const shown=Math.min(catwalkShown||CATWALK_PAGE,looks.length);
+  const cities=[...new Set(looks.map(l=>l.city).filter(Boolean))];
+  $('catwalk-scope').textContent=`${catwalk.season} · ${new Set(looks.map(l=>l.brand)).size}개 쇼 · ${looks.length.toLocaleString()}장`
+    +(cities.length?` · ${cities.sort().join(' · ')}`:'');
+  $('catwalk-note').textContent='WGSN 구독 자료입니다. 내부 참고용으로만 사용하세요.';
+  renderCatwalkFilters(looks);
+  $('catwalk-grid').innerHTML=looks.slice(0,shown).map((look,i)=>`<article class="catwalk-card">
+      <a class="catwalk-photo" href="${esc(safeUrl(shelfUrl(look.shelf)))}" target="_blank" rel="noopener noreferrer"
+         aria-label="${esc(look.brand)} ${esc(look.season)} WGSN에서 보기">
+        <img src="${esc(look.image)}" alt="${esc(look.brand+' '+look.season+(look.city?' '+look.city:''))}"
+             width="${look.width}" height="${look.height}"
+             loading="${i<12?'eager':'lazy'}" decoding="async" referrerpolicy="no-referrer">
+      </a>
+      <div class="catwalk-copy">
+        <p class="catwalk-brand">${esc(look.brand)}</p>
+        <p class="catwalk-season">${esc(look.season)}</p>
+        ${look.city?`<p class="catwalk-city">${esc(look.city)}</p>`:''}
+      </div>
+    </article>`).join('');
+  const more=$('catwalk-more');
+  more.hidden=shown>=looks.length;
+  more.innerHTML=more.hidden?'':`<button class="secondary-button" id="catwalk-more-button">${(looks.length-shown).toLocaleString()}장 더 보기</button>`;
+  bindImageErrors($('catwalk-grid'));
+}
 function renderAnalysis(){
   const section=$('analysis');
   if(!section)return;
-  const on=state.source==='analysis';
+  const on=state.source==='analysis',walk=state.source==='catwalk';
   section.hidden=!on;
+  $('catwalk').hidden=!walk||!catwalk;
   // The grid's own chrome - count, sort, page selection, pagination -
-  // belongs to the grid, not to a distribution.
+  // belongs to the grid, not to a distribution or to a wall of runway looks.
   for(const sel of ['#product-grid','.results-bar','.selection-row','#pagination','#selection-bar','#empty-state'])
-    document.querySelector(sel)?.classList.toggle('hidden-by-analysis',on);
+    document.querySelector(sel)?.classList.toggle('hidden-by-analysis',on||walk);
+  if(walk)renderCatwalk();
   $('rank-boards').hidden=!on||!(rankBoards?.boards||[]).some(b=>b.items?.length);
   $('wgsn-runway').hidden=!on||!(wgsnRunway?.shows||[]).some(s=>s.total);
   if(!on)return;
@@ -538,7 +601,7 @@ function render() {
   if (!catalog) return;
   renderSocialGroups();
   renderAnalysis();
-  if(state.source==='analysis')return;
+  if(state.source==='analysis'||state.source==='catwalk')return;
   filtered = filterProducts(products,{...state,isFresh,isSaved},today);
   if(state.source==='sns'&&state.sort==='newest')
     filtered=[...filtered].sort((a,b)=>(b.snsTrendMatches||0)-(a.snsTrendMatches||0));
@@ -841,7 +904,7 @@ function syncFilterControls() {
 }
 function resetFilters() {
   clearTimeout(searchTimer);
-  Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
+  Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
   syncFilterControls();renderBrands();renderKeywords();render();
 }
 function openExport() {
@@ -879,7 +942,7 @@ $('dl-analysis-xlsx')?.addEventListener('click',()=>{
 document.querySelectorAll('[data-dl]').forEach(button=>button.addEventListener('click',()=>
   downloadText(`shoes-${button.dataset.dl}-${today}.csv`,analysisCsv(analysisScope(),button.dataset.dl))));
 for(const [id,key] of [['category-filter','category'],['release-filter','release'],['sort','sort']])$(id).addEventListener('change',()=>{state[key]=$(id).value;state.page=1;render();});
-document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(socialComparisonGroups(products,today)[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});render();}));
+document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';if(state.source!=='catwalk'){state.catwalkShow='all';catwalkShown=0;}if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(socialComparisonGroups(products,today)[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});render();}));
 $('social-group').addEventListener('change',()=>{state.socialGroup=$('social-group').value;state.sort=state.socialGroup?'social':'newest';state.page=1;render();});
 $('reset-filters').addEventListener('click',resetFilters);$('empty-reset').addEventListener('click',()=> $('empty-reset').dataset.retry?loadCatalog():resetFilters());
 $('select-page').addEventListener('change',()=>{visible.forEach(p=>$('select-page').checked?selected.add(p.id):selected.delete(p.id));updateSelection();});
@@ -896,3 +959,14 @@ document.addEventListener('keydown',event=>{if(event.key==='/'&&!event.ctrlKey&&
 function refreshDate() { if(!catalog)return;const next=kstToday();if(next===today){renderKeywords();return;}today=next;rebuildProducts();selected=new Set([...selected].filter(id=>products.some(p=>p.id===id)));renderBrands();renderKeywords();render();if($('detail-dialog').open&&!products.some(p=>p.id===activeDetailId))$('detail-dialog').close(); }
 setInterval(refreshDate,60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshDate();});
 renderBrands();loadCatalog();
+// The catwalk's own controls. Delegated, because the chips and the button are
+// rebuilt on every render.
+document.addEventListener('click',event=>{
+  const chip=event.target.closest('[data-catwalk]');
+  if(chip){state.catwalkShow=chip.dataset.catwalk;catwalkShown=0;renderCatwalk();window.scrollTo({top:$('catwalk').offsetTop-80,behavior:'smooth'});return;}
+  if(event.target.closest('#catwalk-more-button')){
+    const looks=catwalkLooks();
+    catwalkShown=Math.min((catwalkShown||CATWALK_PAGE)+CATWALK_PAGE,looks.length);
+    renderCatwalk();
+  }
+});

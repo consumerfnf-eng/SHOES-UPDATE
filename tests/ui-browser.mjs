@@ -31,6 +31,12 @@ try{
    body:JSON.stringify({schemaVersion:2,publishedAt:at,asOf:today,periodStart:today,sources:{},retail:[],newsletter:[],sourceStatus:[]})}));
  await context.route('**/data/trend-keywords.json',r=>r.fulfill({contentType:'application/json',
    body:JSON.stringify({schemaVersion:1,generatedAt:at,asOf:today,displayCount:20,keywords:[],candidates:[],sourceStatus:{}})}));
+ // The catwalk snapshot is 3,648 looks and 928 KB of real data; this file
+ // measures the fixture, and the tab is checked on its own.
+ await context.route('**/data/catwalk.json',r=>r.fulfill({contentType:'application/json',
+   body:JSON.stringify({schemaVersion:1,provider:'WGSN',season:'Spring/Summer 2027',builtAt:at,shelves:[],looks:[]})}));
+ await context.route('**/data/wgsn-runway.json',r=>r.fulfill({contentType:'application/json',
+   body:JSON.stringify({schemaVersion:1,provider:'WGSN',season:'Spring/Summer 2027',importedAt:at,shelves:[],shows:[]})}));
  const page=await context.newPage(),errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push({url:r.url(),method:r.method()}));
  await page.goto(url);await page.locator('.product-card').first().waitFor();
  assert.equal(await page.locator('#result-count').textContent(),'48');assert.equal(await page.locator('.product-card').count(),40);
