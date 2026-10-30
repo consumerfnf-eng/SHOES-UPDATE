@@ -115,7 +115,11 @@ export function listingFollowups(text,url,brand,sectionEvidence){
 }
 export function listingProduct(candidate,checkedAt){
   if(candidate.needsProductTitle)return null;
-  const chosen=candidate.linkedImages?.find(i=>/_SLS\.|_PM1_Side|_nb_02_i|_SBG_E02|_A\.(?:jpg|png)/i.test(i.url))||candidate.linkedImages?.[0];
+  // Each brand's lateral slot, by its own filename. _A is Bottega Veneta's
+  // lateral and Balenciaga's outsole, so the generic preference cannot be
+  // shared: Balenciaga's is _X on its older models and _F on the newer ones.
+  const lateral=candidate.brand==='Balenciaga'?/_[XF]\.jpg$/i:/_SLS\.|_PM1_Side|_nb_02_i|_SBG_E02|_A\.(?:jpg|png)/i;
+  const chosen=candidate.linkedImages?.find(i=>lateral.test(i.url))||candidate.linkedImages?.find(i=>candidate.brand!=='Balenciaga'||!/_A\.jpg$/i.test(i.url))||candidate.linkedImages?.[0];
   if(!chosen)return null;
   const last=new URL(candidate.url).pathname.split('/').filter(Boolean).pop().replace(/\.html$/i,'');
   const code=/^[A-Z0-9][A-Z0-9_.-]{4,}$/.test(last)?last:last.match(/(?:-p-|[-_])([A-Z0-9_]{7,})$/)?.[1]||'';

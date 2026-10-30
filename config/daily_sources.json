@@ -23,6 +23,18 @@
     {
       "name": "Alexander McQueen Official daily source",
       "url": "https://www.alexandermcqueen.com/"
+    },
+    {
+      "name": "Alexander McQueen Official New In (women)",
+      "url": "https://www.alexandermcqueen.com/en-us/ca/women/women-new-in/seasonal-edit"
+    },
+    {
+      "name": "Alexander McQueen Official sneakers (men)",
+      "url": "https://www.alexandermcqueen.com/en-us/ca/men/shoes/sneakers"
+    },
+    {
+      "name": "Alexander McQueen Official sneakers (women)",
+      "url": "https://www.alexandermcqueen.com/en-us/ca/women/shoes/sneakers"
     }
   ],
   "Alo": [
@@ -370,6 +382,22 @@
     {
       "name": "Fendi Official daily source",
       "url": "https://www.fendi.com/"
+    },
+    {
+      "name": "Fendi Official New In (men)",
+      "url": "https://www.fendi.com/us-en/man/new-in"
+    },
+    {
+      "name": "Fendi Official New In (women)",
+      "url": "https://www.fendi.com/us-en/woman/new-in"
+    },
+    {
+      "name": "Fendi Official sneakers (men)",
+      "url": "https://www.fendi.com/us-en/man/shoes/sneakers"
+    },
+    {
+      "name": "Fendi Official sneakers (women)",
+      "url": "https://www.fendi.com/us-en/woman/shoes/sneakers"
     }
   ],
   "Feng Chen Wang": [
@@ -418,6 +446,14 @@
     {
       "name": "Givenchy Official daily source",
       "url": "https://www.givenchy.com/"
+    },
+    {
+      "name": "Givenchy Official sneakers (men)",
+      "url": "https://www.givenchy.com/us/en-US/men/shoes/sneakers"
+    },
+    {
+      "name": "Givenchy Official sneakers (women)",
+      "url": "https://www.givenchy.com/us/en-US/women/shoes/sneakers"
     }
   ],
   "Golden Goose": [
@@ -486,6 +522,18 @@
     {
       "name": "Jil Sander Official daily source",
       "url": "https://www.jilsander.com/"
+    },
+    {
+      "name": "Jil Sander Official sneakers (men)",
+      "url": "https://www.jilsander.com/en-us/men/shoes/sneakers"
+    },
+    {
+      "name": "Jil Sander Official sneakers (women)",
+      "url": "https://www.jilsander.com/en-us/women/shoes/sneakers"
+    },
+    {
+      "name": "Jil Sander Official shoes (women)",
+      "url": "https://www.jilsander.com/en-us/women/shoes/view-all"
     }
   ],
   "Jimmy Choo": [
@@ -1383,6 +1431,22 @@
     {
       "name": "Melissa Official US sneakers (newest first)",
       "url": "https://www.shopmelissa.com/collections/adult-sneakers?sort_by=created-descending"
+    }
+  ],
+  "Autry": [
+    {
+      "name": "Autry Official new arrivals (women)",
+      "url": "https://www.autry-usa.com/ko/여성/신상품/"
+    },
+    {
+      "name": "Autry Official sneakers (women)",
+      "url": "https://www.autry-usa.com/ko/여성/스니커즈/",
+      "basis": "catalogue"
+    },
+    {
+      "name": "Autry Official sneakers (men)",
+      "url": "https://www.autry-usa.com/ko/남성/스니커즈/",
+      "basis": "catalogue"
     }
   ]
 }

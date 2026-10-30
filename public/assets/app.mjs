@@ -53,6 +53,83 @@ function dateText(value, time = false) {
   return new Intl.DateTimeFormat('ko-KR', {timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit',...(time ? {hour:'2-digit',minute:'2-digit',hour12:false} : {})}).format(date);
 }
 function popup(message) { $('toast').textContent = message; $('toast').hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => $('toast').hidden = true, 4500); }
+// Saving a card's photograph.
+//
+// The picture on the card is a cached, web-sized copy; the brand's own CDN
+// holds the full-resolution original and serves it with a permissive CORS
+// header, so the page can fetch it, re-encode it once if it is not already a
+// JPEG, and hand it over. Each candidate is tried in turn and the local copy
+// is the last of them, so a save always produces a file.
+const RESOLUTION_PARAMS=['width','wid','w','sw','height'];
+function highestResolution(url){
+  try{
+    const u=new URL(url,location.href);
+    // Kering's DAM names its renditions in the path; Original is the largest.
+    u.pathname=u.pathname.replace(/\/(?:Thumbnail|Small|Medium|Large)\/(?=[^/]+$)/,'/Original/');
+    // Shopify writes the rendition into the filename as _750x or _750x750.
+    u.pathname=u.pathname.replace(/_\d{2,4}x(?:\d{2,4})?(?=\.(?:jpe?g|png|webp)$)/i,'');
+    for(const name of RESOLUTION_PARAMS)if(u.searchParams.has(name))u.searchParams.set(name,'2048');
+    return u.href===url?'':u.href;
+  }catch{return '';}
+}
+async function asJpeg(blob){
+  if(blob.type==='image/jpeg')return blob;
+  const bitmap=await createImageBitmap(blob);
+  const canvas=document.createElement('canvas');
+  canvas.width=bitmap.width;canvas.height=bitmap.height;
+  const context=canvas.getContext('2d');
+  // JPEG has no transparency, and an unpainted canvas would come out black.
+  context.fillStyle='#ffffff';context.fillRect(0,0,canvas.width,canvas.height);
+  context.drawImage(bitmap,0,0);bitmap.close?.();
+  return await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',0.95));
+}
+async function photoAsJpeg(product){
+  const original=safeUrl(product.presentation?.image)||officialImageUrl(product,today)||safeUrl(product.image);
+  const cached=product.presentation?.cachedPath;
+  const candidates=[highestResolution(original),original,/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/.test(cached||'')?cached:''].filter(Boolean);
+  for(const candidate of candidates){
+    try{
+      const response=await fetch(candidate,{mode:'cors',referrerPolicy:'no-referrer'});
+      if(!response.ok)continue;
+      const blob=await response.blob();
+      if(!blob.type.startsWith('image/')||!blob.size)continue;
+      return await asJpeg(blob);
+    }catch{}
+  }
+  return null;
+}
+const fileSafe=value=>String(value||'').replace(/[\/:*?"<>|]+/g,' ').replace(/\s+/g,' ').trim().slice(0,70);
+function photoFileName(product,taken){
+  const parts=[product.brand,variantGroupName(product),variantColorLabel(product)||product.colorway,product.style].map(fileSafe).filter(Boolean);
+  let name=parts.join('_')||product.id;
+  if(taken.has(name)){let n=2;while(taken.has(`${name}_${n}`))n++;name=`${name}_${n}`;}
+  taken.add(name);return `${name}.jpg`;
+}
+let saving=false;
+async function downloadPhotos(list){
+  if(saving)return;
+  const items=list.filter(Boolean);
+  if(!items.length){popup('사진을 저장할 상품을 먼저 선택해 주세요.');return;}
+  saving=true;
+  const bar=$('download-photos');if(bar)bar.disabled=true;
+  const taken=new Set();let saved=0,failed=0;
+  for(const [index,product] of items.entries()){
+    if(items.length>1&&bar)bar.textContent=`사진 저장 중 ${index+1}/${items.length}`;
+    const blob=await photoAsJpeg(product);
+    if(!blob){failed++;continue;}
+    const href=URL.createObjectURL(blob);
+    const link=document.createElement('a');
+    link.href=href;link.download=photoFileName(product,taken);
+    document.body.appendChild(link);link.click();link.remove();
+    setTimeout(()=>URL.revokeObjectURL(href),10000);
+    saved++;
+    // A browser drops downloads fired in the same tick as one another.
+    if(index<items.length-1)await new Promise(resolve=>setTimeout(resolve,400));
+  }
+  if(bar){bar.disabled=false;bar.textContent='사진 JPG 저장 ↓';}
+  saving=false;
+  popup(failed?`사진 ${saved}장을 저장했습니다. ${failed}장은 원본을 받지 못했습니다.`:`사진 ${saved}장을 JPG로 저장했습니다.`);
+}
 function imageMarkup(p, eager = false) {
   const cached=p.presentation?.cachedPath;
   const url = /^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(cached||'')?cached:safeUrl(p.presentation?.image) || officialImageUrl(p,today) || safeUrl(p.image);
@@ -374,13 +451,14 @@ function render() {
     const meta=over?`<span>${esc(overlayDateLabel(p))}</span>${p.priceLabel?`<span>${esc(p.priceLabel)}</span>`:''}`:`<span>${esc(releaseDateLabel(p))}</span>`;
     const link=over?(url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} ${esc(sourceLabelOf(p))}에서 보기">${esc(sourceLabelOf(p))} ↗</a>`:'')
                    :(url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} 공식 상품 보기">공식 상품 ↗</a>`:'');
-    return `<article class="product-card ${selected.has(p.id)?'selected':''}" data-id="${esc(p.id)}" data-group="${esc(groupKey(p))}"><div class="card-visual"><label class="card-checkbox"><input type="checkbox" data-select="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 선택" ${selected.has(p.id)?'checked':''}></label><button class="card-save ${isSaved(p)?'on':''}" data-save="${esc(p.id)}" aria-pressed="${isSaved(p)}" aria-label="${esc(p.name)} 저장"${isSaved(p)?' title="저장함에 있음"':''}>★</button><button class="card-open" data-detail="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 상세정보">${imageMarkup(p,i<4)}</button>${release==='upcoming'?'<span class="release-badge upcoming">발매 예정</span>':''}</div><div class="card-copy"><p class="card-brand">${brandLine}</p><button class="card-name" data-detail="${esc(p.id)}">${esc(variantGroupName(p))}</button><div class="card-meta">${meta}</div>${colorChipsMarkup(group,p.id)}</div><div class="card-footer">${link}</div></article>`;
+    return `<article class="product-card ${selected.has(p.id)?'selected':''}" data-id="${esc(p.id)}" data-group="${esc(groupKey(p))}"><div class="card-visual"><label class="card-checkbox"><input type="checkbox" data-select="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 선택" ${selected.has(p.id)?'checked':''}></label><button class="card-photo" data-photo="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 사진 JPG 저장" title="사진 JPG 저장">↓</button><button class="card-save ${isSaved(p)?'on':''}" data-save="${esc(p.id)}" aria-pressed="${isSaved(p)}" aria-label="${esc(p.name)} 저장"${isSaved(p)?' title="저장함에 있음"':''}>★</button><button class="card-open" data-detail="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 상세정보">${imageMarkup(p,i<4)}</button>${release==='upcoming'?'<span class="release-badge upcoming">발매 예정</span>':''}</div><div class="card-copy"><p class="card-brand">${brandLine}</p><button class="card-name" data-detail="${esc(p.id)}">${esc(variantGroupName(p))}</button><div class="card-meta">${meta}</div>${colorChipsMarkup(group,p.id)}</div><div class="card-footer">${link}</div></article>`;
   }).join('');
   bindImageErrors($('product-grid'));
   $('product-grid').querySelectorAll('[data-detail]').forEach(button=>button.addEventListener('click',()=>openDetail(button.dataset.detail)));
   $('product-grid').querySelectorAll('[data-select]').forEach(input=>input.addEventListener('change',()=>toggleSelection(input.dataset.select,input.checked)));
   $('product-grid').querySelectorAll('[data-save]').forEach(button=>button.addEventListener('click',()=>{
     const p=products.find(x=>x.id===button.dataset.save);toggleSaved(button.dataset.save,p?variantGroupName(p):'');}));
+  $('product-grid').querySelectorAll('[data-photo]').forEach(button=>button.addEventListener('click',()=>{const p=products.find(x=>x.id===button.dataset.photo);downloadPhotos([p]);}));
   $('product-grid').querySelectorAll('[data-variant]').forEach(button=>button.addEventListener('click',()=>{activeVariant.set(button.closest('.product-card').dataset.group,button.dataset.variant);render();}));
   $('empty-state').hidden = filtered.length>0;
   $('empty-reset').textContent='필터 초기화'; delete $('empty-reset').dataset.retry;
@@ -647,8 +725,8 @@ function openDetail(id) {
   const url=reviewedProductPageUrl(p,today), evidence=safeUrl(p.dateEvidence?.url);
   const signals=(p.sourceSignals||[]).filter(s=>safeUrl(s.url));
   const data=[...(p.arrivalEvidence?[[p.arrivalEvidence.kind==='catalogue-listing'?'목록 근거':'신상품 근거',`<a href="${esc(safeUrl(p.arrivalEvidence.url))}" target="_blank" rel="noopener noreferrer">${p.arrivalEvidence.kind==='catalogue-listing'?'공식 상품 목록 ↗':'공식 New·New Arrivals ↗'}</a> · ${esc(dateText(p.arrivalEvidence.verifiedAt,true))} 확인`]]:[]),...(p.firstPublishedAt?[['사이트 최초 게시',esc(dateText(p.firstPublishedAt,true))]]:[]),['출시일',`${esc(p.releaseDate?dateText(p.releaseDate):'미공개')}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">출시일 근거 ↗</a>`:''}`],['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'미확인')],[p.styleType==='official-product-id'?'상품 ID':'스타일 코드',esc(p.style||'미확인')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'미확인')],['소재',esc(p.material||'미확인')],['가격',esc(p.priceLabel||'공식 상품에서 확인')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
-  $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2>${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button><button id="detail-save" class="secondary-button" aria-pressed="${isSaved(p)}">${isSaved(p)?'★ 저장됨':'☆ 저장'}</button></div><div class="memo-box"><label for="detail-memo">메모</label><textarea id="detail-memo" rows="2" placeholder="${isSaved(p)?'이 상품에 대한 메모를 남겨 두세요':'저장하면 메모를 남길 수 있습니다'}" ${isSaved(p)?'':'disabled'}>${esc(saved[id]?.memo||'')}</textarea></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 검증 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):'<p class="muted">확인 가능한 공식 상품·출시·이미지 근거가 아직 없습니다.</p>'}`;
-  bindImageErrors($('detail-content'));$('detail-select').addEventListener('click',()=>toggleSelection(id,!selected.has(id)));
+  $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2>${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button><button id="detail-save" class="secondary-button" aria-pressed="${isSaved(p)}">${isSaved(p)?'★ 저장됨':'☆ 저장'}</button><button id="detail-photo" class="secondary-button">사진 JPG 저장 ↓</button></div><div class="memo-box"><label for="detail-memo">메모</label><textarea id="detail-memo" rows="2" placeholder="${isSaved(p)?'이 상품에 대한 메모를 남겨 두세요':'저장하면 메모를 남길 수 있습니다'}" ${isSaved(p)?'':'disabled'}>${esc(saved[id]?.memo||'')}</textarea></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 검증 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):'<p class="muted">확인 가능한 공식 상품·출시·이미지 근거가 아직 없습니다.</p>'}`;
+  bindImageErrors($('detail-content'));$('detail-select').addEventListener('click',()=>toggleSelection(id,!selected.has(id)));$('detail-photo')?.addEventListener('click',()=>downloadPhotos([p]));
   $('detail-content').querySelectorAll('[data-variant]').forEach(button=>button.addEventListener('click',()=>{openDetail(button.dataset.variant);render();}));
   if(!$('detail-dialog').open)$('detail-dialog').showModal();
 }
@@ -687,6 +765,7 @@ $('fresh-only')?.addEventListener('change',e=>{state.freshOnly=e.target.checked;
 $('saved-only')?.addEventListener('change',e=>{state.savedOnly=e.target.checked;state.page=1;render();});
 $('compare-close')?.addEventListener('click',()=>$('compare-dialog').close());
 $('compare-open')?.addEventListener('click',openCompare);
+$('download-photos')?.addEventListener('click',()=>downloadPhotos(products.filter(p=>selected.has(p.id))));
 $('dl-analysis-all')?.addEventListener('click',()=>downloadText(`shoes-analysis-${today}.csv`,analysisCsv(analysisScope(),'all')));
 $('dl-analysis-xlsx')?.addEventListener('click',()=>{
   downloadText(`shoes-analysis-${today}.xlsx`,xlsxBytes(analysisRows(analysisScope(),'all').map(r=>r.map(String))),

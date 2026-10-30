@@ -45,7 +45,17 @@ export function productPresentation(product,reviews){
     // the code is checked against the product path. Verified on the live
     // Balenciaga PDP 2026-10-30: _X is the lateral view, shoe only.
     const keringCode=asset.replace(/^(?:Small|Medium|Large|Thumbnail)-/i,'').split('_')[0].toLowerCase();
-    const keringSide=(product.brand==='Balenciaga'&&image.hostname==='balenciaga.dam.kering.com'&&/_X\.jpg$/.test(asset)||product.brand==='Bottega Veneta'&&image.hostname==='bottega-veneta.dam.kering.com'&&/_A\.jpg$/.test(asset))&&!!keringCode&&productPath.includes(keringCode);
+    // Balenciaga uses two schemes across its models: the older ones file the
+    // lateral as _X, the newer ones as _F. Opened both on 2026-10-30 against
+    // Track Trail Laces 800590WTRHK1594 - _F is the lateral still, shoe only,
+    // and _A on the same product is the pair of outsoles seen from below,
+    // which is what was reaching the cards. _A is the lateral for Bottega
+    // Veneta and only for Bottega Veneta.
+    const balenciagaAsset=product.brand==='Balenciaga'&&image.hostname==='balenciaga.dam.kering.com';
+    const keringSide=(balenciagaAsset&&/_[XF]\.jpg$/.test(asset)||product.brand==='Bottega Veneta'&&image.hostname==='bottega-veneta.dam.kering.com'&&/_A\.jpg$/.test(asset))&&!!keringCode&&productPath.includes(keringCode);
+    // A sole is not a representative photograph of a shoe, so it does not
+    // fall through to the brand's-own-photo allowance below either.
+    if(balenciagaAsset&&/_A\.jpg$/.test(asset))return null;
     const pumaSide=product.brand==='PUMA'&&image.hostname==='images.puma.com'&&image.pathname.includes('/global/'+style+'/'+new URL(product.url).searchParams.get('swatch')+'/sv01/');
     // Under Armour's Scene7 renditions are <style>-<colour>_DEFAULT (one shoe,
     // lateral) and _PAIR (both shoes, three-quarter). Opened both on

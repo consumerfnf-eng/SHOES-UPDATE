@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
-import {curateCatalog,canonicalBrand,canonicalUrl,isOfficialProductUrl,labelVariantColours} from './curation.mjs';
+import {curateCatalog,canonicalBrand,canonicalUrl,isOfficialProductUrl,labelVariantColours,labelUrlVariantColours,preferLateralView} from './curation.mjs';
 import {mergePreserving} from './collect-evidence.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {productPresentation} from './product-presentation.mjs';
@@ -100,6 +100,9 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   // began looking can be published on that evidence rather than on a release
   // date its brand never printed.
   const watch=await readJson(path.join(directory,'data/source-watch.json'),{brands:{}});
+  // A sole is not a representative photograph. Where the record already holds
+  // the lateral still, take it before anything is curated from the other one.
+  preferLateralView(products);
   const result=curateCatalog(products,{now,previous:prior,collection:effectiveCollection,firstListed,watch});
   result.queue.products=result.queue.products.filter(p=>p.firstPublishedAt);
   // Preserve other records internally; publish the six requested footwear types.
@@ -108,7 +111,7 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   if(maintenance&&Array.isArray(prior.products)){const priorIds=new Set(prior.products.map(p=>p.id));result.snapshot.products=result.snapshot.products.filter(p=>priorIds.has(p.id));}
   // Where several colours of one shoe are published with no colour recorded,
   // the cards are identical. The brand's own URLs already tell them apart.
-  labelVariantColours(result.snapshot.products);
+  labelVariantColours(labelUrlVariantColours(result.snapshot.products));
   const photoReviews=await readJson(path.join(directory,'data/product-presentation.json'),null);
   if(photoReviews){
     result.snapshot.products=result.snapshot.products.flatMap(p=>{

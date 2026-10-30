@@ -81,6 +81,98 @@ export function labelVariantColours(products) {
   }
   return products;
 }
+/** Colour names read off the shelf a product's URL sits on.
+ *
+ *  On publishes one page per colourway under one model directory, and writes
+ *  the pair of shades into the title rather than a colour field:
+ *  "Women's Cloudrunner 3 Black | Ivory" and "… Ghost | Verdite" are the same
+ *  shoe, nine times over, and the card could not know it - the grid strips a
+ *  colour out of a name only when the record says which words are the colour.
+ *
+ *  The store does say. All nine live under /products/cloudrunner-3-w-3wg1005/
+ *  womens/ and differ only in the last segment: black-ivory-shoes,
+ *  ghost-verdite-shoes. So for products sharing a brand and a URL directory,
+ *  the last segment is that product's colour - once the category word the
+ *  store appends to it is taken off.
+ */
+const STYLE_TAIL = /[-_](?=[A-Za-z0-9]*[A-Za-z])(?=[A-Za-z0-9]*\d)[A-Za-z0-9]{6,}$/;
+const CATEGORY_TAIL = /[-_](?:shoes?|sneakers?|trainers?|runners?|sandals?|slides?|clogs?|slippers?|boots?)$/i;
+export function labelUrlVariantColours(products) {
+  const parts = p => { try {
+    const path = decodeURIComponent(new URL(p.url).pathname).replace(/\/+$/, '');
+    const segments = path.split('/').filter(Boolean);
+    // The directory has to be specific to a model. On's is
+    // /en-us/products/cloudrunner-3-w-3wg1005/womens; a Shopify store's is
+    // /products for its entire catalogue, and 180 unrelated KEEN shoes are
+    // not colourways of each other.
+    return segments.length > 3 ? [segments.slice(0, -1).join('/'), segments.at(-1)] : null;
+  } catch { return null; } };
+  const groups = new Map();
+  for (const p of products) {
+    if (p.colorway) continue;
+    const split = parts(p);
+    if (!split) continue;
+    const id = `${key(canonicalBrand(p.brand))}|${split[0].toLowerCase()}`;
+    (groups.get(id) || groups.set(id, []).get(id)).push([p, split[1]]);
+  }
+  for (const group of groups.values()) {
+    if (group.length < 2 || group.length > 24) continue;
+    // On writes the article number after the category word
+    // (black-ivory-shoes-3WG10051430), so the code comes off first.
+    const words = group.map(([, tail]) => tail.replace(STYLE_TAIL, '').replace(CATEGORY_TAIL, '')
+      .toLowerCase().split(/[^a-z]+/).filter(Boolean));
+    // Every product in the group must get its own all-letter label or none
+    // does, and a label has to say something: a segment that is only the
+    // category word leaves nothing behind.
+    if (words.some(w => !w.length || w.length > 4 || w.some(x => x.length < 3))) continue;
+    if (new Set(words.map(w => w.join(' '))).size !== group.length) continue;
+    group.forEach(([p], i) => {
+      const named = words[i].map(w => w[0].toUpperCase() + w.slice(1));
+      // Each shade separately as well, because the name writes the pair with a
+      // separator of its own ("Black | Ivory") and the grid removes the words
+      // it is given one at a time.
+      p.colorway = named.join(' ');
+      p.colors = [...new Set([...(p.colors || []).filter(c => typeof c === 'string' ? c : c?.name), ...named])];
+      p.colorwaySource = 'official-url-variant';
+    });
+  }
+  return products;
+}
+/** The lateral still, when the record already carries one.
+ *
+ *  Balenciaga's Track Trail Laces reached a card showing the pair of outsoles
+ *  seen from below. _A is the lateral view for Bottega Veneta and the sole for
+ *  Balenciaga, and the collector's preference list did not know the
+ *  difference. Every one of the 27 affected records collected the lateral
+ *  still too - _F, from the same listing page and the same content hash - and
+ *  simply did not choose it.
+ *
+ *  Choosing it here, before curation, keeps the image evidence pointing at the
+ *  picture actually shown: both move together or neither does.
+ */
+const LATERAL_SLOT = {
+  Balenciaga: {host: 'balenciaga.dam.kering.com', lateral: /_[XF]\.jpg(?:[?#]|$)/i, refused: /_A\.jpg(?:[?#]|$)/i},
+  // Reebok writes the view into the filename: SLC and FLT are the lateral
+  // stills, TPP is the pair seen from directly above. Checked
+  // 100260646_TPP_eCom against 100292268_SLC_eCom on 2026-10-30.
+  Reebok: {host: 'www.reebok.com', lateral: /_(?:SLC|FLT)_eCom/i, refused: /_TPP_eCom/i},
+};
+export function preferLateralView(products) {
+  for (const p of products) {
+    const slot = LATERAL_SLOT[canonicalBrand(p.brand)];
+    if (!slot || !p.image || !Array.isArray(p.imageCandidates)) continue;
+    let host = '';
+    try { host = new URL(p.image).hostname; } catch { continue; }
+    if (host !== slot.host || !slot.refused.test(p.image) || slot.lateral.test(p.image)) continue;
+    const better = p.imageCandidates.find(i => { try {
+      return new URL(i.url).hostname === slot.host && slot.lateral.test(i.url);
+    } catch { return false; } });
+    if (!better) continue;
+    if (p.officialImageEvidence?.url === p.image) p.officialImageEvidence = {...p.officialImageEvidence, url: better.url};
+    p.image = better.url;
+  }
+  return products;
+}
 export function dedupeKey(p) { return `${key(canonicalBrand(p.brand))}|${key(productStyle(p)) || canonicalUrl(p.url)}|${key(p.colorway)}`; }
 const officialSources=JSON.parse(fs.readFileSync(new URL('../config/daily_sources.json',import.meta.url),'utf8'));
 const socialSources=JSON.parse(fs.readFileSync(new URL('../config/social-metric-sources.json',import.meta.url),'utf8'));

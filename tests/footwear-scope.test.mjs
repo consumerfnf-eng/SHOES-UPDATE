@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {classifyFootwear,officialHybridReview,dedupeKey,productStyle,inPublishedScope,labelVariantColours} from '../scripts/curation.mjs';
+import {classifyFootwear,officialHybridReview,dedupeKey,productStyle,inPublishedScope,labelVariantColours,labelUrlVariantColours,preferLateralView} from '../scripts/curation.mjs';
 import {collectOfficialEvidence} from '../scripts/collect-evidence.mjs';
 import {footwearTypes,isPublishedFootwear} from '../public/assets/footwear-policy.mjs';
 import {categoryMatches} from '../public/assets/catalog-view.mjs';
@@ -167,4 +167,39 @@ test('one shelf or another is the same product',()=>{
   const base23='https://www.23-65.com/product/detail.html?product_no=1813';
   assert.equal(dedupeKey({brand:'23.65',style:'',colorway:'',url:`${base23}&cate_no=376&display_group=1`}),
                dedupeKey({brand:'23.65',style:'',colorway:'',url:`${base23}&cate_no=381&display_group=1`}));
+});
+
+test('one model listed once per colour is one card',()=>{
+  // On writes the pair of shades into the title and leaves the colour field
+  // empty, so "Women's Cloudrunner 3 Black | Ivory" and "… Ghost | Verdite"
+  // were nine cards of one shoe. All nine live under the same model directory
+  // and differ only in the last segment.
+  const on=tail=>({brand:'On',name:"Women's Cloudrunner 3 "+tail.split('-').slice(0,2).map(w=>w[0].toUpperCase()+w.slice(1)).join(' | '),
+    colorway:'',url:'https://www.on.com/en-us/products/cloudrunner-3-w-3wg1005/womens/'+tail});
+  const group=[on('black-ivory-shoes-3WG10051430'),on('ghost-verdite-shoes-3WG10055248'),on('frost-glacier-shoes-3WG10051421')];
+  labelUrlVariantColours(group);
+  assert.deepEqual(group.map(p=>p.colorway),['Black Ivory','Ghost Verdite','Frost Glacier']);
+  // The store's whole catalogue is not one model: 180 unrelated KEEN shoes
+  // share /products as their directory and must not become colourways.
+  const keen=slug=>({brand:'KEEN',name:slug,colorway:'',url:'https://www.keenfootwear.com/products/'+slug});
+  const unrelated=[keen('uneek-black'),keen('jasper-birch')];
+  labelUrlVariantColours(unrelated);
+  assert.deepEqual(unrelated.map(p=>p.colorway),['','']);
+});
+
+test('a sole is not the photograph of a shoe',()=>{
+  // _A is Bottega Veneta's lateral still and Balenciaga's pair of outsoles
+  // seen from below, and 27 Balenciaga records went to cards showing it while
+  // carrying the lateral _F from the same page all along.
+  const asset=suffix=>`https://balenciaga.dam.kering.com/asset/4e0b2d73/Medium/800590WTRHK1594_${suffix}.jpg?v=4`;
+  const record={brand:'Balenciaga',image:asset('A'),
+    officialImageEvidence:{verified:true,url:asset('A')},
+    imageCandidates:[{url:asset('G')},{url:asset('F')},{url:asset('A')}]};
+  preferLateralView([record]);
+  assert.equal(record.image,asset('F'));
+  assert.equal(record.officialImageEvidence.url,asset('F'),'the evidence must point at the picture shown');
+  // Bottega Veneta keeps its own reading of _A.
+  const bottega={brand:'Bottega Veneta',image:'https://bottega-veneta.dam.kering.com/asset/x/Medium/789_A.jpg',imageCandidates:[]};
+  preferLateralView([bottega]);
+  assert.match(bottega.image,/_A\.jpg$/);
 });

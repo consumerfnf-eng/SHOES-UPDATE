@@ -124,6 +124,12 @@
 .toggle-filter{flex-direction:row!important;align-items:center;gap:7px!important;font-size:12px!important;
   color:#4d5765!important;padding-bottom:8px;cursor:pointer;white-space:nowrap}
 .toggle-filter input{width:15px;height:15px}
+.card-photo{position:absolute;right:9px;bottom:43px;z-index:1;width:28px;height:28px;border-radius:8px;
+  border:1px solid #ddd8cf;background:#fffffe;color:#6b6257;font-size:14px;line-height:1;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .15s,color .15s,border-color .15s}
+.product-card:hover .card-photo,.product-card:focus-within .card-photo{opacity:1}
+.card-photo:hover{color:#1f1d1a;border-color:#b9b2a6}
+@media (hover:none){.card-photo{opacity:1}}
 .card-save{position:absolute;right:9px;bottom:9px;z-index:1;width:28px;height:28px;border-radius:8px;
   background:#ffffffe6;border:1px solid #e3e6ea;color:#b9c2cd;font-size:14px;line-height:1}
 .card-save:hover{color:#f0a500;border-color:#e4cf9a}
