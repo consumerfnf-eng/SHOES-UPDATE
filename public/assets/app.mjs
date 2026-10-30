@@ -1,7 +1,7 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes } from './export.mjs';
 import { groupedBrands } from './brand-groups.mjs';
 import { analysisCsv, analysisRows, priceDistribution, materialDistribution, colourDistribution,
-         priceKrw, priceBand, colourFamily, materialsOf, RATE_NOTE } from './analysis.mjs';
+         priceKrw, priceBand, colourFamily, materialsOf, RATE_NOTE,categoryDistribution} from './analysis.mjs';
 import {isPublishedFootwear} from './footwear-policy.mjs';
 import { hasVisual, productImageUrl, kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, preferWomenVariants, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch, isOverlay, overlayKind, overlayReleaseState, overlayWindowDay, retailerId, trendTerms, trendTermGroups, trendKeywordMatches } from './catalog-view.mjs';
 
@@ -273,6 +273,13 @@ function renderAnalysis(){
   if(!on)return;
   const rows=analysisScope();
   $('analysis-scope').textContent=`현재 필터 기준 ${rows.length.toLocaleString()}개 상품 · ${RATE_NOTE}`;
+
+  const category=categoryDistribution(rows);
+  document.querySelector('#panel-category .panel-body').innerHTML=
+    category.rows.map(r=>bar(r.name,r.count,category.placed)).join('')||'<p class="muted">분류된 상품이 없습니다.</p>';
+  document.querySelector('#panel-category .panel-note').textContent=
+    `상점이 적어 둔 분류와 상품명에서 읽은 ${category.placed.toLocaleString()}건 기준 · `
+    +`이름만으로는 종류를 알 수 없는 ${category.unplaced.toLocaleString()}건은 제외했습니다`;
 
   const price=priceDistribution(rows);
   document.querySelector('#panel-price .panel-body').innerHTML=

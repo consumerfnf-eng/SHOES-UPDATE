@@ -99,7 +99,6 @@ export function colourFamily(hex) {
   return '핑크';
 }
 
-// --- distributions ----------------------------------------------------------
 const tally = (rows, keyOf) => {
   const counts = new Map();
   for (const row of rows) for (const k of [].concat(keyOf(row) || [])) {
@@ -108,6 +107,103 @@ const tally = (rows, keyOf) => {
   }
   return counts;
 };
+
+// --- sneaker category --------------------------------------------------------
+// What kind of sneaker it is - a running shoe, a mule, a ballet sneaker.
+//
+// Two sources, in this order:
+//
+// 1. The filing the shop itself did. Musinsa files 러닝화, 테니스화, 농구화 and
+//    피트니스화 as categories of their own, and the collector already records
+//    mule/ballet/mary-jane/platform in footwearTypes. That is the retailer's
+//    own word for the product, so nothing beats it.
+// 2. Failing that, the words in the product's own name. Ordered, first match
+//    wins, because a name can carry two ("레트로 러닝"); silhouette comes before
+//    activity, since a mule is a mule whatever it was built for.
+//
+// Nothing is read from the photograph and nothing is inferred from a model
+// name we happen to recognise. Most of the catalogue is filed by its shop as
+// plain 스니커즈 with a model name that says nothing more - those stay in
+// 기타·미분류 and the count is shown, because a visible unknown is worth more
+// than a confident wrong bucket.
+//
+// 트레이너 is deliberately absent: Korean listings use it the way British
+// English uses "trainers", for sneakers in general. Only 트레이닝/training/gym
+// count as gym shoes. 아웃도어 and 데일리 are absent for the same reason - they
+// were pulling running shoes into 트레일 off a line in the description.
+export const SNEAKER_CATEGORIES = [
+  ['뮬·슬립온', /뮬|\bmule\b|슬립온|슬립인|slip[- ]?on|백리스|backless/i],
+  ['발레·메리제인', /발레|\bballet\b|메리제인|메리 제인|mary[- ]?jane|발레리나/i],
+  ['로퍼·더비', /로퍼|\bloafer/i],
+  ['플랫폼·청키', /플랫폼|\bplatform\b|청키|\bchunky\b|어글리|통굽/i],
+  ['러닝', /러닝|런닝|\brunning\b|\brunner\b|마라톤|marathon/i],
+  ['트레일·하이킹', /트레일|\btrail\b|하이킹|\bhiking\b|트레킹|trekking|등산|고프코어|\bgorp/i],
+  ['테니스·코트', /테니스|\btennis\b|코트화/i],
+  ['농구', /농구|basketball/i],
+  ['스케이트·보드', /스케이트보드|skateboard|\bskate\b|보드화/i],
+  ['축구·풋살', /축구|\bfootball\b|\bsoccer\b|풋살|futsal/i],
+  ['워킹', /워킹화|walking shoe|\bwalking\b/i],
+  ['트레이닝·짐', /트레이닝|\btraining\b|피트니스|fitness|\bgym\b|크로스핏|crossfit/i],
+  ['레트로·클래식', /레트로|\bretro\b|클래식|\bclassic\b|빈티지|vintage|헤리티지|heritage|올드스쿨|old[- ]?school/i],
+  ['캔버스', /캔버스|\bcanvas\b/i],
+];
+export const UNPLACED_CATEGORY = '기타·미분류';
+
+// The shop's own filing, where it is specific enough to be a kind of sneaker.
+// "여성슈즈 · 스니커즈" and "sneakers" are not - they say it is a sneaker,
+// which is the one thing already known about every record here.
+const SOURCE_LABELS = [
+  [/러닝화|running shoes?$/i, '러닝'],
+  [/테니스화/i, '테니스·코트'],
+  [/농구화/i, '농구'],
+  [/피트니스화|트레이닝화/i, '트레이닝·짐'],
+  [/등산화|트레킹화|하이킹화/i, '트레일·하이킹'],
+  [/워킹화/i, '워킹'],
+  [/플랫슈즈|\bflats\b/i, '발레·메리제인'],
+];
+const TYPE_LABELS = [
+  ['mule-sneaker', '뮬·슬립온'], ['slip-on', '뮬·슬립온'],
+  ['ballet-sneaker', '발레·메리제인'], ['mary-jane-sneaker', '발레·메리제인'],
+  ['platform', '플랫폼·청키'], ['running', '러닝'], ['trail', '트레일·하이킹'],
+];
+
+function fromSourceLabel(product) {
+  for (const type of [].concat(product?.footwearTypes || [])) {
+    const hit = TYPE_LABELS.find(([key]) => key === type);
+    if (hit) return hit[1];
+  }
+  const label = String(product?.officialCategory || '');
+  return (SOURCE_LABELS.find(([re]) => re.test(label)) || [])[1] || '';
+}
+
+/** The words a category is read from, kept in one place so the screen, the CSV
+ *  and the briefing all classify a product the same way. A newsletter record's
+ *  officialCategory is the publication that ran the story, not a category, so
+ *  only the retail/official filing is read here. */
+export function categoryText(product) {
+  return [product?.name, product?.fullName,
+    (product?.footwearTypes || []).join(' '), (product?.keywordTags || []).join(' '),
+  ].filter(Boolean).join(' ');
+}
+
+export function sneakerCategory(product) {
+  return fromSourceLabel(product)
+    || (SNEAKER_CATEGORIES.find(([, re]) => re.test(categoryText(product))) || [UNPLACED_CATEGORY])[0];
+}
+
+export function categoryDistribution(products) {
+  const counts = tally(products, sneakerCategory);
+  const placed = products.filter(p => sneakerCategory(p) !== UNPLACED_CATEGORY).length;
+  const order = SNEAKER_CATEGORIES.map(([name]) => name);
+  return {
+    placed, unplaced: products.length - placed,
+    rows: [...counts].filter(([name]) => name !== UNPLACED_CATEGORY)
+      .map(([name, count]) => ({name, count}))
+      .sort((a, b) => b.count - a.count || order.indexOf(a.name) - order.indexOf(b.name)),
+  };
+}
+
+// --- distributions ----------------------------------------------------------
 
 export function priceDistribution(products, {by = 'brand'} = {}) {
   const priced = products.map(p => ({p, krw: priceKrw(p)})).filter(x => x.krw != null);
@@ -167,15 +263,21 @@ export function analysisRows(products, kind) {
     return [['소재', '건수', '비중(%)'],
       ...d.rows.map(r => [r.name, r.count, (r.count / Math.max(1, d.stated) * 100).toFixed(1)])];
   }
+  if (kind === 'category') {
+    const d = categoryDistribution(products);
+    return [['카테고리', '건수', '비중(%)'],
+      ...d.rows.map(r => [r.name, r.count, (r.count / Math.max(1, d.placed) * 100).toFixed(1)]),
+      [UNPLACED_CATEGORY, d.unplaced, '']];
+  }
   if (kind === 'colour') {
     const d = colourDistribution(products);
     return [['컬러 계열', '건수', '비중(%)'],
       ...d.rows.map(r => [r.name, r.count, (r.count / Math.max(1, d.read) * 100).toFixed(1)])];
   }
-  return [['브랜드', '상품명', '컬러', '컬러계열', '가격(원)', '가격대', '소재', '카테고리', '등록일', 'URL'],
+  return [['브랜드', '상품명', '컬러', '컬러계열', '가격(원)', '가격대', '소재', '스니커즈 카테고리', '등록일', 'URL'],
     ...products.map(p => [p.brand, p.name, p.colorway || '', colourFamily(p.bodyColor),
       priceKrw(p) ?? '', priceBand(priceKrw(p)), materialsOf(p).join(' / '),
-      p.category || '', (p.listedAt || p.publishedAt || p.firstPublishedAt || '').slice(0, 10), p.url || ''])];
+      sneakerCategory(p), (p.listedAt || p.publishedAt || p.firstPublishedAt || '').slice(0, 10), p.url || ''])];
 }
 
 export function analysisCsv(products, kind) {
