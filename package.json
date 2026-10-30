@@ -18,7 +18,8 @@
     "build": "node scripts/validate_catalog.mjs && node scripts/build.mjs",
     "test": "node --test tests/*.test.mjs",
     "test:ui": "node tests/ui-browser.mjs",
-    "ranks": "node scripts/collect-rank-boards.mjs"
+    "ranks": "node scripts/collect-rank-boards.mjs",
+    "wgsn": "node scripts/import-wgsn-runway.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"

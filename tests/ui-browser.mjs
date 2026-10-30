@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
 import assert from 'node:assert/strict';
-import {kstToday,shiftCalendarMonths,variantGroupKey,preferWomenVariants} from '../public/assets/catalog-view.mjs';
+import {kstToday,shiftCalendarMonths,variantGroupKey,variantGroupName,preferWomenVariants} from '../public/assets/catalog-view.mjs';
 import {EXPORT_COLUMNS} from '../public/assets/export.mjs';
 const root=path.resolve('public'),out=await fs.mkdtemp(path.join(os.tmpdir(),'shoes-ui-'));
 const mime={'.html':'text/html','.css':'text/css','.mjs':'text/javascript','.json':'application/json'};
@@ -100,11 +100,28 @@ try{
  const adidasCard=variantPage.locator('.product-card').filter({has:variantPage.locator('.card-name').filter({hasText:'ADIZERO ADIOS PRO 5'})});
  assert.equal(await adidasCard.count(),1);assert.equal(await adidasCard.locator('.color-chip').count(),1,'Previously fixed adidas duplicate color stays collapsed');
  assert.equal(await adidasCard.getAttribute('data-id'),variantProducts.find(p=>p.style==='KI8293').id,'adidas representative is the confirmed female SKU');
- for(const [name,count] of [['Pane Light Training Nogi Shoes',22],['Pane Zephyr Training Shoes',4],['Pane Zephyr Training Pouching Shoes',5]]){
+ // Counted from the fixture, not written down. A hardcoded chip count is the
+ // fourth time a test here would have been bound to mutable data: it says the
+ // Zephyr has four colourways, and the moment the colour-removal boundary was
+ // fixed to admit "Crimson Ink" beside "Juniper" it had nine. What is being
+ // tested is the property - one card per model, every colourway a chip of it -
+ // so the expected number is the fixture's own answer to it.
+ const paneChips=name=>preferWomenVariants(variantProducts)
+   .filter(p=>variantGroupName(p)===name).length;
+ for(const [name,count] of ['Pane Light Training Nogi Shoes','Pane Zephyr Training Shoes',
+                            'Pane Zephyr Training Pouching Shoes'].map(n=>[n,paneChips(n)])){
+  assert(count>1,`${name} must stand for several colourways for this to test anything`);
   const card=variantPage.locator('.product-card').filter({has:variantPage.getByRole('button',{name,exact:true})});
   assert.equal(await card.count(),1);assert.equal(await card.locator('.color-chip').count(),count);
   const colors=card.locator('.color-chip'),firstId=await colors.first().getAttribute('data-variant'),secondId=await colors.nth(1).getAttribute('data-variant');
-  assert(variantProducts.find(p=>p.id===firstId).name.includes('Women'));
+  // The women's listing leads the card where the model has one. The Zephyr is
+  // a men's-only line, and a card cannot be represented by a listing that
+  // does not exist - so the property is conditional on the group, not on the
+  // model happening to be made for both.
+  const members=preferWomenVariants(variantProducts).filter(p=>variantGroupName(p)===name);
+  if(members.some(p=>p.name.includes('Women')))
+   assert(variantProducts.find(p=>p.id===firstId).name.includes('Women'),
+     `${name}: the women's listing leads the card`);
   await colors.nth(1).click();
   assert.equal(await card.locator('.card-open img').getAttribute('src'),variantProducts.find(p=>p.id===secondId).image);
   await card.locator('.card-name').click();

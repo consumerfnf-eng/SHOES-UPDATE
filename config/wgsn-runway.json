@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "provider": "WGSN",
+  "note": "WGSN's catwalk library is a subscription source. Nothing here is a public URL and nothing is redistributed: the board this builds carries show names, counts and deep links into WGSN, and only a subscriber's own session can open them. The image files stay on the collecting machine. See docs/wgsn-runway-automation.md.",
+  "licence": {
+    "internalReferenceOnly": true,
+    "publishImages": false,
+    "basis": "Subscription content. config/forecast-sources.json already excludes WGSN's paid reports from the public keyword modules; the same rule is applied to its catwalk imagery, so the published board states what exists and links to the source rather than reproducing it."
+  },
+  "searchEndpoint": "https://www.wgsn.com/fashion/catwalks/search",
+  "originalDownloadControl": "https://www.wgsn.com/myfolders/download_original?item_id=image.{imageId}",
+  "note_filters": "The search page carries its whole state in one URL parameter, `filters`, holding URL-encoded JSON of WGSN's own numeric ids. These were read back off the source URLs recorded with the October 2026 collection, so they are the ids WGSN actually served, not a guess.",
+  "filters": {
+    "seasons": {
+      "2913181": "Spring/Summer 2027"
+    },
+    "market": {
+      "49153": "Womenswear",
+      "49154": "Menswear"
+    },
+    "view": {
+      "19087": "Full Length"
+    },
+    "image_type": {
+      "873591": "Details"
+    }
+  },
+  "shelves": [
+    {
+      "id": "women-full-length",
+      "label": "여성 전신",
+      "filters": {"seasons": ["2913181"], "market": ["49153"], "view": ["19087"]}
+    },
+    {
+      "id": "men-full-length",
+      "label": "남성 전신",
+      "filters": {"seasons": ["2913181"], "market": ["49154"], "view": ["19087"]}
+    },
+    {
+      "id": "details",
+      "label": "디테일 (신발·액세서리 클로즈업)",
+      "filters": {"seasons": ["2913181"], "image_type": ["873591"]},
+      "footwearShelf": true,
+      "basis": "The Details shelf is where a shoe is photographed on its own; a full-length look carries it at a few hundred pixels."
+    }
+  ],
+  "resolutionFloor": {
+    "longEdge": 2000,
+    "shortEdge": 1000,
+    "note": "The October collection's own floor. No upscaling."
+  }
+}
