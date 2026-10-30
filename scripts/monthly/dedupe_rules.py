@@ -199,6 +199,42 @@ def drop_already_official(items, official_keys, status=None):
     return kept
 
 
+# --- brands that must not appear at all -----------------------------------
+
+def excluded_brand_keys():
+    """Every spelling of a brand that must not publish, folded.
+
+    The official catalogue answers this through config/brand-policy.json: a
+    brand with no entry there is never collected. The retail run publishes
+    what the shops list, so without this it had no lever - removing Oakley
+    Factory Team from the brand policy left 29CM free to keep listing it.
+    """
+    data = read_json(os.path.join(ROOT, 'config', 'excluded-brands.json'), {})
+    keys = set()
+    for entry in data.get('brands') or []:
+        for spelling in [entry.get('name'), *(entry.get('spellings') or [])]:
+            if not spelling:
+                continue
+            keys.add(_fold(spelling))
+            keys.add(_fold(canonical_brand(spelling)))
+    return {k for k in keys if k}
+
+
+def drop_excluded_brands(items, keys, status=None):
+    """Listings of a removed brand, in any of its spellings."""
+    status = status if status is not None else {}
+    if not keys:
+        status['excludedBrandDropped'] = 0
+        return items
+    def excluded(item):
+        return any(_fold(value) in keys for value in
+                   (item.get('brand'), item.get('brandKo'), item.get('brandAsListed'),
+                    canonical_brand(item.get('brand') or '')) if value)
+    kept = [i for i in items if not excluded(i)]
+    status['excludedBrandDropped'] = len(items) - len(kept)
+    return kept
+
+
 # --- rule 3: lines that are never new -------------------------------------
 
 def evergreen_keys():

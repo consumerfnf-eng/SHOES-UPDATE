@@ -312,13 +312,6 @@
       "mandatory": false
     },
     {
-      "id": "national-geographic",
-      "name": "National Geographic",
-      "group": "outdoor",
-      "policy": "core",
-      "mandatory": false
-    },
-    {
       "id": "le-coq-sportif",
       "name": "Le Coq Sportif",
       "group": "outdoor",

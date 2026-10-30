@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "note": "Brands that must not appear anywhere on the page. The official catalogue already answers this through config/brand-policy.json - a brand with no entry there is never collected - but the retail run publishes whatever the shops list, so it had no lever at all: removing Oakley Factory Team from the brand policy left 29CM free to keep listing it. An entry here is matched on the canonical brand and on the spellings given, so a licensee's own trading name is caught too.",
+  "brands": [
+    {
+      "name": "National Geographic",
+      "spellings": ["National Geographic", "National Geographic Apparel", "NATIONAL GEOGRAPHIC APPAREL",
+                    "내셔널지오그래픽", "내셔널 지오그래픽", "내셔널지오그래픽어패럴"],
+      "removedOn": "2026-10-30",
+      "basis": "Removed at the user's request."
+    },
+    {
+      "name": "Oakley Factory Team",
+      "spellings": ["Oakley Factory Team", "Oakley", "오클리", "오클리 팩토리 팀"],
+      "removedOn": "2026-10-30",
+      "basis": "Removed from the brand policy and the collection sources on 2026-10-30 (cc88d81). Listed here so the retail run drops it too."
+    }
+  ]
+}

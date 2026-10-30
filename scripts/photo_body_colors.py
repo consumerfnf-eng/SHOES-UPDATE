@@ -1,4 +1,4 @@
-"""Give every official-catalog product the colour of its own photograph.
+"""Read two things off every official-catalog product's own photograph.
 
 Why
 ---
@@ -17,6 +17,15 @@ browser will load.
 
 A reviewer's hex always outranks this. `bodyColor` is the fallback the view
 reaches for when nothing better was ever stated, never an override.
+
+The second thing is a perceptual hash, kept in data/official-photo-signals.json
+by cached path. Byte-identical photographs are already visible - the cache
+names its files by SHA-256, so two products sharing a shot share a filename -
+but a brand that re-encodes or resizes one shot per colourway defeats that,
+and the published catalogue carried no hash at all, so nothing could tell a
+re-encoded copy of one shoe's photo from a photo of another shoe. The store
+is durable because publishing rewrites catalog.json: the gate in
+publish-curated.mjs reads it on the next run.
 """
 import json
 import os
@@ -29,9 +38,10 @@ import sys
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, os.path.join(ROOT, 'scripts', 'monthly'))
 
-from image_signals import body_colour  # noqa: E402
+from image_signals import body_colour, dhash  # noqa: E402
 
 CATALOG = os.path.join(ROOT, 'public', 'data', 'catalog.json')
+SIGNALS = os.path.join(ROOT, 'data', 'official-photo-signals.json')
 PUBLIC = os.path.join(ROOT, 'public')
 CACHED_PATH = re.compile(r'^/images/[a-f0-9]{64}\.(?:jpg|png|webp)$')
 
@@ -53,6 +63,10 @@ def main():
         return 0
 
     catalog = json.load(open(CATALOG, encoding='utf-8'))
+    try:
+        signals = json.load(open(SIGNALS, encoding='utf-8')).get('photos', {})
+    except (OSError, ValueError):
+        signals = {}
     read, unreadable, missing, changed = 0, 0, 0, 0
     for product in catalog.get('products', []):
         local = cached_photo(product)
@@ -61,9 +75,12 @@ def main():
             # A product whose photo is gone keeps whatever it last read: the
             # alternative is a card that loses its chip for a cache miss.
             continue
+        cached_path = (product.get('presentation') or {}).get('cachedPath') or ''
         try:
             with Image.open(local) as image:
                 colour = body_colour(image)
+            with Image.open(local) as image:
+                phash = dhash(image)
         except Exception as error:
             unreadable += 1
             print(f'  unreadable: {product.get("id")} ({type(error).__name__})')
@@ -75,14 +92,30 @@ def main():
         if product.get('bodyColor') != colour:
             product['bodyColor'] = colour
             changed += 1
+        if phash:
+            product['photoHash'] = phash
+            # Keyed by the cached path, which is the photo's SHA-256: the same
+            # file always answers with the same hash, so the store survives a
+            # product being renumbered or republished.
+            signals[cached_path] = {'phash': phash, 'body': colour}
 
     with open(CATALOG, 'w', encoding='utf-8') as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
         f.write('\n')
+    # Durable, because publishing rewrites catalog.json: the shared-photo gate
+    # in publish-curated.mjs reads this store on the next run.
+    with open(SIGNALS, 'w', encoding='utf-8') as f:
+        json.dump({'schemaVersion': 1,
+                   'note': 'Perceptual hash and body colour of each cached official photo, keyed '
+                           'by its cached path - which is the photo\'s own SHA-256, so the same '
+                           'file always answers with the same entry.',
+                   'photos': signals}, f, indent=2, ensure_ascii=False)
+        f.write('\n')
 
     total = len(catalog.get('products', []))
     print(f'Read the body colour of {read}/{total} official photos '
-          f'({changed} changed, {unreadable} unreadable, {missing} not cached).')
+          f'({changed} changed, {unreadable} unreadable, {missing} not cached); '
+          f'{len(signals)} photo hashes stored.')
     return 0
 
 

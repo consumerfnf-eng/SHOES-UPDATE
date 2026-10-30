@@ -71,6 +71,43 @@ test('two different models cannot both be the shoe in one photograph', () => {
   assert.ok(held.every(h => h.reason === 'photo-shared-across-models'));
 });
 
+test('a re-encoded copy of one shot is still that shot', () => {
+  // Byte-identical copies already share a cached path, because the cache
+  // names its files by SHA-256. A brand that re-encodes or resizes one shot
+  // per colourway defeats that, so the perceptual hash is what groups them.
+  const held = [];
+  const products = [
+    {id: 'a', brand: 'Vans', name: 'OTW Era 95 Vibram', photoHash: '1e1e6763694b0307',
+     presentation: {image: 'https://cdn.vans/a.jpg'}},
+    {id: 'b', brand: 'Vans', name: 'Classic Slip-On Shoe', photoHash: '1e1e6763694b0305',
+     presentation: {image: 'https://cdn.vans/b.jpg'}},
+  ];
+  assert.equal(holdPhotosSharedAcrossModels(products, held).length, 1);
+  assert.equal(held[0].reason, 'photo-shared-across-models');
+});
+
+test('the keeper is the women\'s listing, and the name without the shop\'s furniture', () => {
+  // The record cannot say which model the picture shows, so the choice falls
+  // to the preferences the rest of the page already uses. Before this the
+  // Zephyr's women's listing was held for its men's twin.
+  const image = 'https://cdn.pane/manu-bay.jpg';
+  for (const order of [0, 1]) {
+    const held = [];
+    const pair = [
+      {id: 'm', brand: 'PANE', name: 'Pane Zephyr Training Men’s Shoes-Manu Bay', presentation: {image}},
+      {id: 'w', brand: 'PANE', name: 'Pane Zephyr Training Women’s Shoes-Manu Bay', presentation: {image}},
+    ];
+    const kept = holdPhotosSharedAcrossModels(order ? pair.reverse() : pair, held);
+    assert.deepEqual(kept.map(p => p.id), ['w'], 'the women\'s listing survives whichever order it arrives in');
+  }
+  const held = [];
+  const quoted = [
+    {id: 'check', brand: 'Nike', name: "Nike Air Max Plus 'Check'", presentation: {image: 'https://cdn.nike/x.jpg'}},
+    {id: 'plain', brand: 'Nike', name: 'Nike Shox TL', presentation: {image: 'https://cdn.nike/x.jpg'}},
+  ];
+  assert.deepEqual(holdPhotosSharedAcrossModels(quoted, held).map(p => p.id), ['plain']);
+});
+
 test('two colour chips of one model may share a shot', () => {
   const held = [];
   const image = 'https://cdn.brooks/ghost-18.jpg';

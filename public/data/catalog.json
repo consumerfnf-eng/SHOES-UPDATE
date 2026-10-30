@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-30T09:17:10.432Z",
+  "publishedAt": "2026-10-30T09:37:42.031Z",
   "periodStart": "2026-07-30",
   "asOf": "2026-10-30",
   "brands": [
@@ -309,13 +309,6 @@
     {
       "id": "eider",
       "name": "Eider",
-      "group": "outdoor",
-      "policy": "core",
-      "mandatory": false
-    },
-    {
-      "id": "national-geographic",
-      "name": "National Geographic",
       "group": "outdoor",
       "policy": "core",
       "mandatory": false
@@ -1600,96 +1593,6 @@
         "checkedAt": "2026-10-07T09:36:32.356Z",
         "method": "brand-own-product-photo",
         "cachedPath": "/images/6bc8c3dcfe82105474c79c42c007fa52f539844bd93ff100f9f364b4ef1d289c.webp"
-      }
-    },
-    {
-      "id": "arrival-d329e17895c3ffb6c74f",
-      "brand": "Brooks",
-      "name": "Adrenaline GTS 10",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "brooks|adrenalinegts10",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Brooks",
-        "productUrl": "https://www.brooksrunning.com/en_us/featured/unisex-lifestyle-shoes/adrenaline-gts-10/100058.html?dwvar_100058_color=498",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.brooksrunning.com/en_us/featured/new-arrivals/mens_unisex/?prefn1=productType&prefv1=Shoes",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "excerpt": "Official New / New Arrivals listing: Image 215: Adrenaline GTS 10 image number 1",
-        "contentHash": "80b245b03e398ec1a4273bb58d7743b2a6d3d42d1b3355854767d86062a43312",
-        "style": "100058"
-      },
-      "firstPublishedAt": "2026-10-30T07:43:05.765Z",
-      "url": "https://www.brooksrunning.com/en_us/featured/unisex-lifestyle-shoes/adrenaline-gts-10/100058.html?dwvar_100058_color=498",
-      "image": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png",
-      "style": "100058",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "$160",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.brooksrunning.com/en_us/featured/unisex-lifestyle-shoes/adrenaline-gts-10/100058.html?dwvar_100058_color=498",
-        "verifiedAt": "2026-10-25T00:39:28.323Z",
-        "brand": "Brooks",
-        "style": "100058",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "2c64b0deb73e0e76d6348d5e5984ed582c40e40cdd00ea629148f9c15547f25a"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png",
-        "sourceUrl": "https://www.brooksrunning.com/en_us/featured/unisex-lifestyle-shoes/adrenaline-gts-10/100058.html?dwvar_100058_color=498",
-        "verifiedAt": "2026-10-25T00:39:28.323Z",
-        "brand": "Brooks",
-        "style": "100058",
-        "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "2c64b0deb73e0e76d6348d5e5984ed582c40e40cdd00ea629148f9c15547f25a"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "US",
-      "lastVerifiedAt": "2026-10-25T00:39:28.323Z",
-      "productEvidenceUrl": "https://www.brooksrunning.com/en_us/featured/unisex-lifestyle-shoes/adrenaline-gts-10/100058.html?dwvar_100058_color=498",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "attribute:running",
-        "brand:brooks"
-      ],
-      "presentation": {
-        "image": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.brooksrunning.com/en_us/featured/unisex-lifestyle-shoes/adrenaline-gts-10/100058.html?dwvar_100058_color=498",
-        "checkedAt": "2026-10-25T00:39:28.323Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/f527deac6f80aec6a0f86140ff779cbd7d4ed7092d0e5ca3ef30b18b224d4d6f.webp"
       }
     },
     {
@@ -7551,6 +7454,96 @@
       }
     },
     {
+      "id": "arrival-14f0b988ed3a8f5939ce",
+      "brand": "Brooks",
+      "name": "Ghost 18",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "brooks|ghost18",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Brooks",
+        "productUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-18/110493.html?dwvar_110493_color=056",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.brooksrunning.com/en_us/featured/new-arrivals/mens_unisex/?prefn1=productType&prefv1=Shoes",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 187: Ghost 18 image number 1",
+        "contentHash": "80b245b03e398ec1a4273bb58d7743b2a6d3d42d1b3355854767d86062a43312",
+        "style": "110493"
+      },
+      "firstPublishedAt": "2026-10-30T07:43:05.765Z",
+      "url": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-18/110493.html?dwvar_110493_color=056",
+      "image": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png",
+      "style": "110493",
+      "colorway": "ado Springs, CO, US",
+      "colors": [],
+      "gender": "Men",
+      "material": "",
+      "priceLabel": "$150.00",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-18/110493.html?dwvar_110493_color=056",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "Brooks",
+        "style": "110493",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "b59dc4e615dd80bdb74813464fb1bc4720e898f63efacda819617aa35b4710cb"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png",
+        "sourceUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-18/110493.html?dwvar_110493_color=056",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "Brooks",
+        "style": "110493",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "b59dc4e615dd80bdb74813464fb1bc4720e898f63efacda819617aa35b4710cb"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "US",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-18/110493.html?dwvar_110493_color=056",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "attribute:running",
+        "brand:brooks"
+      ],
+      "presentation": {
+        "image": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-18/110493.html?dwvar_110493_color=056",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/f527deac6f80aec6a0f86140ff779cbd7d4ed7092d0e5ca3ef30b18b224d4d6f.webp"
+      }
+    },
+    {
       "id": "arrival-72866ff43fe0dafd5d1c",
       "brand": "Brooks",
       "name": "Ghost 18",
@@ -8193,34 +8186,34 @@
       }
     },
     {
-      "id": "arrival-b041d0ee6db49031edd1",
+      "id": "arrival-54e86503520d083532a5",
       "brand": "Havaianas",
-      "name": "Havaianas Fantasia",
+      "name": "Havaianas Square",
       "category": "sneaker",
       "productType": "sneaker",
       "fitReasons": [
         "일상 스포츠 캐주얼·실루엣 참고",
         "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
       ],
-      "modelKey": "havaianas|havaianasfantasia",
+      "modelKey": "havaianas|havaianassquare",
       "releaseDate": "",
       "releaseStatus": "released",
       "arrivalEvidence": {
         "verified": true,
         "brand": "Havaianas",
-        "productUrl": "https://www.havaianas-store.com/gb/en/havaianas-fantasia/4147115-BLACK.html",
+        "productUrl": "https://www.havaianas-store.com/gb/en/havaianas-square/4148301-DARK_BROWN.html",
         "kind": "new-arrivals-listing",
         "url": "https://www.havaianas-store.com/gb/en/new-arrivals",
         "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "excerpt": "Official New / New Arrivals listing: Image 70: Havaianas Fantasia",
+        "excerpt": "Official New / New Arrivals listing: Image 72: Havaianas Square",
         "contentHash": "45a95ca5a9a47c4090b3e5ef9bd700f04a98e1b46e4a2830b204963d7abe858a",
-        "style": "4147115-BLACK"
+        "style": "4148301-DARK_BROWN"
       },
       "firstPublishedAt": "2026-10-30T06:40:41.423Z",
-      "url": "https://www.havaianas-store.com/gb/en/havaianas-fantasia/4147115-BLACK.html",
+      "url": "https://www.havaianas-store.com/gb/en/havaianas-square/4148301-DARK_BROWN.html",
       "image": "https://www.havaianas-store.com/dw/image/v2/BLPJ_PRD/on/demandware.static/-/Sites-siteMasterCatalog_Havaianas/default/dw681a1ade/images/2025/4147115_0090_A.jpg?sw=420&sh=420",
-      "style": "4147115-BLACK",
-      "colorway": "BLACK",
+      "style": "4148301-DARK_BROWN",
+      "colorway": "DARK BROWN",
       "colors": [],
       "gender": "",
       "material": "",
@@ -8231,22 +8224,22 @@
       "socialMetrics": [],
       "officialProductEvidence": {
         "verified": true,
-        "url": "https://www.havaianas-store.com/gb/en/havaianas-fantasia/4147115-BLACK.html",
+        "url": "https://www.havaianas-store.com/gb/en/havaianas-square/4148301-DARK_BROWN.html",
         "verifiedAt": "2026-10-29T11:12:59.189Z",
         "brand": "Havaianas",
-        "style": "4147115-BLACK",
+        "style": "4148301-DARK_BROWN",
         "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "d1a360d5dd4827f1b9a48394b56ba55ef6c4bf3523fdc492dd17b88fbf7cd8da"
+        "contentHash": "0020e6a30b473fc52d2780c74f490219d68313e1e397269743edc66ae23f0e99"
       },
       "officialImageEvidence": {
         "verified": true,
         "url": "https://www.havaianas-store.com/dw/image/v2/BLPJ_PRD/on/demandware.static/-/Sites-siteMasterCatalog_Havaianas/default/dw681a1ade/images/2025/4147115_0090_A.jpg?sw=420&sh=420",
-        "sourceUrl": "https://www.havaianas-store.com/gb/en/havaianas-fantasia/4147115-BLACK.html",
+        "sourceUrl": "https://www.havaianas-store.com/gb/en/havaianas-square/4148301-DARK_BROWN.html",
         "verifiedAt": "2026-10-29T11:12:59.189Z",
         "brand": "Havaianas",
-        "style": "4147115-BLACK",
+        "style": "4148301-DARK_BROWN",
         "verificationMethod": "official-new-arrivals-and-product-page",
-        "contentHash": "d1a360d5dd4827f1b9a48394b56ba55ef6c4bf3523fdc492dd17b88fbf7cd8da"
+        "contentHash": "0020e6a30b473fc52d2780c74f490219d68313e1e397269743edc66ae23f0e99"
       },
       "collaborationBrands": [],
       "popularity": {
@@ -8260,18 +8253,21 @@
       "archiveGroup": "outdoor",
       "country": "GB",
       "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
-      "productEvidenceUrl": "https://www.havaianas-store.com/gb/en/havaianas-fantasia/4147115-BLACK.html",
+      "productEvidenceUrl": "https://www.havaianas-store.com/gb/en/havaianas-square/4148301-DARK_BROWN.html",
       "eligibility": {
         "passed": true,
         "checkedAt": "2026-10-30"
       },
       "keywordTags": [
+        "low-profile",
+        "brown",
         "recovery-sandal"
       ],
       "searchConceptIds": [
         "category:footwear",
         "category:sneakers",
-        "color:black",
+        "color:brown",
+        "shape:low-profile",
         "brand:havaianas"
       ],
       "presentation": {
@@ -8279,7 +8275,7 @@
         "scale": 1,
         "offsetY": 0,
         "view": "product-photo",
-        "sourceUrl": "https://www.havaianas-store.com/gb/en/havaianas-fantasia/4147115-BLACK.html",
+        "sourceUrl": "https://www.havaianas-store.com/gb/en/havaianas-square/4148301-DARK_BROWN.html",
         "checkedAt": "2026-10-29T11:12:59.189Z",
         "method": "brand-own-product-photo",
         "cachedPath": "/images/c936fc7890599f56ba24ade9fa7ca53a9bd7bfab9ac1d2e6e402bebed97143dd.webp"
@@ -22684,99 +22680,6 @@
       }
     },
     {
-      "id": "arrival-5a25066175f2836fb486",
-      "brand": "Nike",
-      "name": "Nike Air Max Plus 'Check'",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고"
-      ],
-      "modelKey": "nike|nikeairmaxpluscheck",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Nike",
-        "productUrl": "https://www.nike.com/at/en/t/air-max-plus-check-womens-shoes-wAjTYWhG/IR5731-600",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.nike.com/at/en/w/new-performance-3k7dgz3n82y",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "excerpt": "Official New / New Arrivals listing: Nike Air Max Plus 'Check'",
-        "contentHash": "21bc50b7c1e9dd502d519433711406db74a647103a277cbeee04d4c2be602e33",
-        "style": "IR5731-600"
-      },
-      "firstPublishedAt": "2026-10-30T08:09:45.556Z",
-      "url": "https://www.nike.com/at/en/t/air-max-plus-check-womens-shoes-wAjTYWhG/IR5731-600",
-      "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/95c83bbb-a21e-4bb8-8d89-13a2330148af/WMNS+AIR+MAX+PLUS.png",
-      "style": "IR5731-600",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.nike.com/at/en/t/air-max-plus-check-womens-shoes-wAjTYWhG/IR5731-600",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "brand": "Nike",
-        "style": "IR5731-600",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "21bc50b7c1e9dd502d519433711406db74a647103a277cbeee04d4c2be602e33"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/95c83bbb-a21e-4bb8-8d89-13a2330148af/WMNS+AIR+MAX+PLUS.png",
-        "sourceUrl": "https://www.nike.com/at/en/w/new-performance-3k7dgz3n82y",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "brand": "Nike",
-        "style": "IR5731-600",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "21bc50b7c1e9dd502d519433711406db74a647103a277cbeee04d4c2be602e33"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "GL",
-      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
-      "productEvidenceUrl": "https://www.nike.com/at/en/w/new-performance-3k7dgz3n82y",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "model:air-max",
-        "brand:nike"
-      ],
-      "presentation": {
-        "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/95c83bbb-a21e-4bb8-8d89-13a2330148af/WMNS+AIR+MAX+PLUS.png",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.nike.com/at/en/w/new-performance-3k7dgz3n82y",
-        "checkedAt": "2026-10-29T11:12:59.189Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/413aeb999e60e2c703583c8654571a0da720d605cd6daa20ae5a27ec155b1155.webp"
-      }
-    },
-    {
       "id": "arrival-b44d1c38b2a0055f9e13",
       "brand": "Nike",
       "name": "Nike Interact Run",
@@ -23513,98 +23416,6 @@
         "checkedAt": "2026-10-29T11:12:59.189Z",
         "method": "brand-own-product-photo",
         "cachedPath": "/images/db6cbc655cb3d1ec8852eac876d27621c3e102e921565691e4a3bb445c38853d.webp"
-      }
-    },
-    {
-      "id": "arrival-254336f35f5e0cba3875",
-      "brand": "Nike",
-      "name": "Nike Shox TL 'Check'",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "공식 스니커즈 실루엣·컬러 참고"
-      ],
-      "modelKey": "nike|nikeshoxtlcheck",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "Nike",
-        "productUrl": "https://www.nike.com/at/en/t/shox-tl-check-womens-shoes-kmDWPDRl/IM5167-002",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.nike.com/at/en/w/new-shoes-3n82yzy7ok",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "excerpt": "Official New / New Arrivals listing: Nike Shox TL 'Check'",
-        "contentHash": "c3998432bbea8697ca0c490c867bd8110afd81d56b35ec539fff45ba02fbfe0b",
-        "style": "IM5167-002"
-      },
-      "firstPublishedAt": "2026-10-30T08:09:45.556Z",
-      "url": "https://www.nike.com/at/en/t/shox-tl-check-womens-shoes-kmDWPDRl/IM5167-002",
-      "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png",
-      "style": "IM5167-002",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "",
-      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.nike.com/at/en/t/shox-tl-check-womens-shoes-kmDWPDRl/IM5167-002",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "brand": "Nike",
-        "style": "IM5167-002",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "c3998432bbea8697ca0c490c867bd8110afd81d56b35ec539fff45ba02fbfe0b"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png",
-        "sourceUrl": "https://www.nike.com/at/en/w/new-shoes-3n82yzy7ok",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "brand": "Nike",
-        "style": "IM5167-002",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "c3998432bbea8697ca0c490c867bd8110afd81d56b35ec539fff45ba02fbfe0b"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "outdoor",
-      "country": "GL",
-      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
-      "productEvidenceUrl": "https://www.nike.com/at/en/w/new-shoes-3n82yzy7ok",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:nike"
-      ],
-      "presentation": {
-        "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.nike.com/at/en/w/new-shoes-3n82yzy7ok",
-        "checkedAt": "2026-10-29T11:12:59.189Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/0251722b81daf69bbb38eebe71fb179d71107bbf00bb12754c71c2c6d6e31d62.webp"
       }
     },
     {
@@ -29335,6 +29146,196 @@
       }
     },
     {
+      "id": "arrival-3d938923976bc5e9ad9a",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes - Ginger Chestnut",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoesgingerchestnut",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ginger-chestnut",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 119: Pane Light Training Nogi Men’s Shoes - Ginger Chestnut",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8",
+        "style": "pane-light-training-nogi-women-s-shoes-ginger-chestnut"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ginger-chestnut",
+      "image": "https://paneshoes.com/cdn/shop/files/1_65e14f21-1eaf-44ba-873d-6651e83b2a67.jpg?v=1789547622&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-ginger-chestnut",
+      "styleType": "official-product-id",
+      "colorway": "Ginger Chestnut",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ginger-chestnut",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-ginger-chestnut",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_65e14f21-1eaf-44ba-873d-6651e83b2a67.jpg?v=1789547622&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-ginger-chestnut",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_65e14f21-1eaf-44ba-873d-6651e83b2a67.jpg?v=1789547622&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "cachedPath": "/images/35d43e594b40ae3a2631cb50b71237d751a0ac390f02aa77e0d522fc2db1d01b.webp"
+      },
+      "colorSwatches": [
+        "#c8a02b"
+      ]
+    },
+    {
+      "id": "arrival-61f016595fa76a5cbf7b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes - Lychee Blush",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoeslycheeblush",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-lychee-blush",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 115: Pane Light Training Nogi Men’s Shoes - Lychee Blush",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8",
+        "style": "pane-light-training-nogi-women-s-shoes-lychee-blush"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-lychee-blush",
+      "image": "https://paneshoes.com/cdn/shop/files/1_45eeed76-6f77-40b6-b287-7624fe4eb8fc.jpg?v=1789549195&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-lychee-blush",
+      "styleType": "official-product-id",
+      "colorway": "Lychee Blush",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-lychee-blush",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-lychee-blush",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_45eeed76-6f77-40b6-b287-7624fe4eb8fc.jpg?v=1789549195&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-lychee-blush",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_45eeed76-6f77-40b6-b287-7624fe4eb8fc.jpg?v=1789549195&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "cachedPath": "/images/f83df97e0bc9c8b42ea4c9212b03959498af7e4c0318b05a9b0f23f9a95a5b9e.webp"
+      },
+      "colorSwatches": [
+        "#a26066"
+      ]
+    },
+    {
       "id": "arrival-223419c34dfd3e433f5a",
       "brand": "PANE",
       "name": "Pane Light Training Nogi Women’s Shoes – Achromate",
@@ -29793,6 +29794,101 @@
         "method": "brand-own-product-photo",
         "cachedPath": "/images/4d86931c8f0396ce094fa6d4c9ad4511220ae3f1a76d9b66ea07631f99276c80.webp"
       }
+    },
+    {
+      "id": "arrival-521d94f0b5e7daa0b72e",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Boromir",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-boromir",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 87: Pane Light Training Nogi Men’s Shoes – Boromir",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8",
+        "style": "pane-light-training-nogi-women-s-shoes-boromir"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-boromir",
+      "image": "https://paneshoes.com/cdn/shop/files/1_8dcf8142-642f-4715-8741-213296aac9bd.jpg?v=1790820442&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-boromir",
+      "styleType": "official-product-id",
+      "colorway": "Boromir",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-boromir",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-boromir",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_8dcf8142-642f-4715-8741-213296aac9bd.jpg?v=1790820442&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-boromir",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_8dcf8142-642f-4715-8741-213296aac9bd.jpg?v=1790820442&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "cachedPath": "/images/a56c8a9678ab9a938a5f1ffc292691f3e17c12494d3111d975a657f4dbe12ec4.webp"
+      },
+      "colorSwatches": [
+        "#533434"
+      ]
     },
     {
       "id": "new-20260923-dcfeec74baea92fc",
@@ -30365,6 +30461,101 @@
       }
     },
     {
+      "id": "arrival-17bf963e364a46c295f5",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Gandalf",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gandalf",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 91: Pane Light Training Nogi Men’s Shoes – Gandalf",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8",
+        "style": "pane-light-training-nogi-women-s-shoes-gandalf"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gandalf",
+      "image": "https://paneshoes.com/cdn/shop/files/1_83524d48-9ad4-4c83-8d95-31be6d75466a.jpg?v=1790819923&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-gandalf",
+      "styleType": "official-product-id",
+      "colorway": "Gandalf",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gandalf",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-gandalf",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_83524d48-9ad4-4c83-8d95-31be6d75466a.jpg?v=1790819923&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-gandalf",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_83524d48-9ad4-4c83-8d95-31be6d75466a.jpg?v=1790819923&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "cachedPath": "/images/52729d46480e24ffc69a0eb89fc46b1216ca87947e053e6a439688677e228c2b.webp"
+      },
+      "colorSwatches": [
+        "#bbb5ac"
+      ]
+    },
+    {
       "id": "arrival-515eb2bd376cb056c93c",
       "brand": "PANE",
       "name": "Pane Light Training Nogi Women’s Shoes – Gimli",
@@ -30454,6 +30645,190 @@
         "checkedAt": "2026-10-29T11:12:59.189Z",
         "method": "brand-own-product-photo",
         "cachedPath": "/images/69b8e61ad5a3e871ebcbe4591ad3c4d13e252c56c02064e2adfe323074bde79e.webp"
+      }
+    },
+    {
+      "id": "arrival-e37715eeae2a4ad657a1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Gooseberry",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gooseberry",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 125: Pane Light Training Nogi Men’s Shoes – Gooseberry",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2",
+        "style": "pane-light-training-nogi-women-s-shoes-gooseberry"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gooseberry",
+      "image": "https://paneshoes.com/cdn/shop/files/5269_5728eb31-449f-4f06-8ab8-cb4eb135c4a9.jpg?v=1791791768&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-gooseberry",
+      "styleType": "official-product-id",
+      "colorway": "Gooseberry",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gooseberry",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-gooseberry",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5269_5728eb31-449f-4f06-8ab8-cb4eb135c4a9.jpg?v=1791791768&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-gooseberry",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5269_5728eb31-449f-4f06-8ab8-cb4eb135c4a9.jpg?v=1791791768&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/3604dcb16f615263dad5ae1700870de897a0953033011d803850a0849bb6e905.webp"
+      }
+    },
+    {
+      "id": "arrival-2b63a9728548e8936508",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Ground Ginger",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ground-ginger",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 121: Pane Light Training Nogi Men’s Shoes – Ground Ginger",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2",
+        "style": "pane-light-training-nogi-women-s-shoes-ground-ginger"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ground-ginger",
+      "image": "https://paneshoes.com/cdn/shop/files/5270.png?v=1792660215&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-ground-ginger",
+      "styleType": "official-product-id",
+      "colorway": "Ground Ginger",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ground-ginger",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-ground-ginger",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5270.png?v=1792660215&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-ground-ginger",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5270.png?v=1792660215&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/4540e7ceb94d028b515066f435d1de4dab18871a2185a6e3e72bdcfac90f9118.webp"
       }
     },
     {
@@ -30646,6 +31021,98 @@
       "colorSwatches": [
         "#eee9d9"
       ]
+    },
+    {
+      "id": "arrival-9760be99d50c95692e58",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Hornet",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-hornet",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 61: Pane Light Training Nogi Women’s Shoes – Hornet",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483",
+        "style": "pane-light-training-nogi-women-s-shoes-hornet"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-hornet",
+      "image": "https://paneshoes.com/cdn/shop/files/5215_26c3c8a3-9bb6-4844-b5f6-a7871465c0dd.jpg?v=1791791102&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-hornet",
+      "styleType": "official-product-id",
+      "colorway": "Hornet",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-hornet",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-hornet",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5215_26c3c8a3-9bb6-4844-b5f6-a7871465c0dd.jpg?v=1791791102&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-hornet",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5215_26c3c8a3-9bb6-4844-b5f6-a7871465c0dd.jpg?v=1791791102&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/8e62d23b03ceaeb44d6e528f87db364813c4bfe732397ec6851037ee8dcaf2ab.webp"
+      }
     },
     {
       "id": "arrival-9d756d84788744aeafa0",
@@ -31025,6 +31492,98 @@
       ]
     },
     {
+      "id": "arrival-9dca2336aa57fe1df298",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Mystique",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-mystique",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 57: Pane Light Training Nogi Women’s Shoes – Mystique Mystique",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483",
+        "style": "pane-light-training-nogi-women-s-shoes-mystique"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-mystique",
+      "image": "https://paneshoes.com/cdn/shop/files/5274-1.jpg?v=1755853196&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-mystique",
+      "styleType": "official-product-id",
+      "colorway": "Mystique",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-mystique",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-mystique",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5274-1.jpg?v=1755853196&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-mystique",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5274-1.jpg?v=1755853196&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/540369980fffba7f77c148276f45d23ee23506bb3a672b502ab80a37c0820ac2.webp"
+      }
+    },
+    {
       "id": "arrival-24332c2574af6e242f48",
       "brand": "PANE",
       "name": "Pane Light Training Nogi Women’s Shoes – Noctra",
@@ -31117,6 +31676,196 @@
       },
       "colorSwatches": [
         "#ab6956"
+      ]
+    },
+    {
+      "id": "arrival-8fcdd535268d3c5d29b7",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Pelican",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-pelican",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 109: Pane Light Training Nogi Women’s Shoes – Pelican",
+        "contentHash": "b1760367801f0621e8dd23c117da7713e165bb7ce5a605bc6a6971653df61a74",
+        "style": "pane-light-training-nogi-women-s-shoes-pelican"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-pelican",
+      "image": "https://paneshoes.com/cdn/shop/files/5198_bb2a219b-3815-4628-bc6a-5760ccf43468.jpg?v=1786955474&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-pelican",
+      "styleType": "official-product-id",
+      "colorway": "Pelican",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-pelican",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-pelican",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b1760367801f0621e8dd23c117da7713e165bb7ce5a605bc6a6971653df61a74"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5198_bb2a219b-3815-4628-bc6a-5760ccf43468.jpg?v=1786955474&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-pelican",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b1760367801f0621e8dd23c117da7713e165bb7ce5a605bc6a6971653df61a74"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5198_bb2a219b-3815-4628-bc6a-5760ccf43468.jpg?v=1786955474&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=2",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://paneshoes.com/collections/new-arrivals-1?page=2",
+        "cachedPath": "/images/f306f575f1e653a197825b9643288e037217555c04e61f2b51940b4e98baf953.webp"
+      },
+      "colorSwatches": [
+        "#c7bfb3"
+      ]
+    },
+    {
+      "id": "arrival-ec287137301a78574bea",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Percheron",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-percheron",
+        "kind": "new-badge",
+        "url": "https://www.paneshoes.com/collections/women-s?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official product New badge: Image 89: Pane Light Training Nogi Women’s Shoes – Percheron",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845",
+        "style": "pane-light-training-nogi-women-s-shoes-percheron"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-percheron",
+      "image": "https://paneshoes.com/cdn/shop/files/1_a9b5bf44-ae95-4e32-a1b2-5f323808b691.jpg?v=1786525714&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-percheron",
+      "styleType": "official-product-id",
+      "colorway": "Percheron",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-percheron",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-percheron",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_a9b5bf44-ae95-4e32-a1b2-5f323808b691.jpg?v=1786525714&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/women-s?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-percheron",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/women-s?page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_a9b5bf44-ae95-4e32-a1b2-5f323808b691.jpg?v=1786525714&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "cachedPath": "/images/145c6640bb0cd4c174a82c42b9a69f4c16d16766d8ad73eae76dc330edc208ab.webp"
+      },
+      "colorSwatches": [
+        "#3e4a5a"
       ]
     },
     {
@@ -31497,6 +32246,101 @@
       ]
     },
     {
+      "id": "arrival-519450b4db0c47dc0c0a",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Siphlophis",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-siphlophis",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 83: Pane Light Training Nogi Men’s Shoes – Siphlophis",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8",
+        "style": "pane-light-training-nogi-women-s-shoes-siphlophis"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-siphlophis",
+      "image": "https://paneshoes.com/cdn/shop/files/1_3182d3a7-0366-4a69-b36a-58bb809e3fc4.jpg?v=1790820897&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-siphlophis",
+      "styleType": "official-product-id",
+      "colorway": "Siphlophis",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-siphlophis",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-siphlophis",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_3182d3a7-0366-4a69-b36a-58bb809e3fc4.jpg?v=1790820897&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-siphlophis",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_3182d3a7-0366-4a69-b36a-58bb809e3fc4.jpg?v=1790820897&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "cachedPath": "/images/179b838f4237462b91949b154785c614bc5db91c1a5efe715637b59f1dd777d2.webp"
+      },
+      "colorSwatches": [
+        "#662634"
+      ]
+    },
+    {
       "id": "arrival-51fb51c07b77d7d93002",
       "brand": "PANE",
       "name": "Pane Light Training Nogi Women’s Shoes – Spice Blaze",
@@ -31682,6 +32526,837 @@
       "colorSwatches": [
         "#eee9d9"
       ]
+    },
+    {
+      "id": "arrival-83a1a2c29a12b358420b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Verse",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-verse",
+        "kind": "new-badge",
+        "url": "https://www.paneshoes.com/collections/women-s?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official product New badge: Image 83: Pane Light Training Nogi Women’s Shoes – Verse Verse",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845",
+        "style": "pane-light-training-nogi-women-s-shoes-verse"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-verse",
+      "image": "https://paneshoes.com/cdn/shop/files/9_74453bda-faf0-4f21-8cdf-16891ef3e88c.jpg?v=1776740307&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-verse",
+      "styleType": "official-product-id",
+      "colorway": "Verse",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-verse",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-verse",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/9_74453bda-faf0-4f21-8cdf-16891ef3e88c.jpg?v=1776740307&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/women-s?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-verse",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/women-s?page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/9_74453bda-faf0-4f21-8cdf-16891ef3e88c.jpg?v=1776740307&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "cachedPath": "/images/48cbf156ff649f5d3e7e4d788e699b4f095eb487af3bc88009c9564bad0646dd.webp"
+      },
+      "colorSwatches": [
+        "#e8e7dc"
+      ]
+    },
+    {
+      "id": "arrival-bc3fe9c986635026f778",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Willow Creek",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-willow-creek",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 75: Pane Light Training Nogi Women’s Shoes – Willow Creek",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483",
+        "style": "pane-light-training-nogi-women-s-shoes-willow-creek"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-willow-creek",
+      "image": "https://paneshoes.com/cdn/shop/files/5217_4c0111df-60c3-4e5d-babd-f6383dfe57d1.jpg?v=1791791483&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-willow-creek",
+      "styleType": "official-product-id",
+      "colorway": "Willow Creek",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-light-training-nogi-women-s-shoes-willow-creek",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-willow-creek",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5217_4c0111df-60c3-4e5d-babd-f6383dfe57d1.jpg?v=1791791483&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-willow-creek",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5217_4c0111df-60c3-4e5d-babd-f6383dfe57d1.jpg?v=1791791483&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/b5de54ae9b6d9de8ae4c335d066367b4bee26d08d6d182576ed282b2ec6a4019.webp"
+      }
+    },
+    {
+      "id": "arrival-d57e3318e922bd1678c1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Wolf Moon",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-wolf-moon",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 93: Pane Light Training Nogi Men’s Shoes – Wolf Moon Wolf Moon",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2",
+        "style": "pane-light-training-nogi-women-s-shoes-wolf-moon"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-wolf-moon",
+      "image": "https://paneshoes.com/cdn/shop/files/1_f566aa02-880b-4b60-bd4f-3bdb68b01595.jpg?v=1765122502&width=2000",
+      "style": "pane-light-training-nogi-women-s-shoes-wolf-moon",
+      "styleType": "official-product-id",
+      "colorway": "Wolf Moon",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-wolf-moon",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-wolf-moon",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_f566aa02-880b-4b60-bd4f-3bdb68b01595.jpg?v=1765122502&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-nogi-women-s-shoes-wolf-moon",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_f566aa02-880b-4b60-bd4f-3bdb68b01595.jpg?v=1765122502&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/a9dbbf89d8335c7805c208a7de4b28a7c24ff54639baecdacf6236c9d43b3e20.webp"
+      }
+    },
+    {
+      "id": "arrival-b5a6055d12e17dbf4d2c",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Blush",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingwomensshoesblush",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-blush-1",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 51: Pane Light Training Men's Shoes - Blush",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8",
+        "style": "pane-light-training-womens-shoes-blush-1"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-blush-1",
+      "image": "https://paneshoes.com/cdn/shop/files/1_3ce1ce97-71b6-4ba2-b5a1-9f86c36140c4.png?v=1793205888&width=2000",
+      "style": "pane-light-training-womens-shoes-blush-1",
+      "styleType": "official-product-id",
+      "colorway": "Blush",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-blush-1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-womens-shoes-blush-1",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_3ce1ce97-71b6-4ba2-b5a1-9f86c36140c4.png?v=1793205888&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-womens-shoes-blush-1",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_3ce1ce97-71b6-4ba2-b5a1-9f86c36140c4.png?v=1793205888&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/672c279603a9ff2ae050f07f07a2646165b9b19323d54b663e1b3f79a90fb30c.webp"
+      }
+    },
+    {
+      "id": "arrival-465e5f3537f9cd8a724d",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Lacquer",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingwomensshoeslacquer",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-lacquer",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 59: Pane Light Training Men's Shoes - Lacquer",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8",
+        "style": "pane-light-training-womens-shoes-lacquer"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-lacquer",
+      "image": "https://paneshoes.com/cdn/shop/files/1_5b34bd3c-586b-465b-b84e-798ef7224591.png?v=1793205082&width=2000",
+      "style": "pane-light-training-womens-shoes-lacquer",
+      "styleType": "official-product-id",
+      "colorway": "Lacquer",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-lacquer",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-womens-shoes-lacquer",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_5b34bd3c-586b-465b-b84e-798ef7224591.png?v=1793205082&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-womens-shoes-lacquer",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_5b34bd3c-586b-465b-b84e-798ef7224591.png?v=1793205082&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/29e7f3dfa9e52b1bbcdd6909ee039ae64588496f520d7fb6235f8d891714446b.webp"
+      }
+    },
+    {
+      "id": "arrival-79a57c41e7315bc91349",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Obsidian",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingwomensshoesobsidian",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-obsidian",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 55: Pane Light Training Men's Shoes - Obsidian",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8",
+        "style": "pane-light-training-womens-shoes-obsidian"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-obsidian",
+      "image": "https://paneshoes.com/cdn/shop/files/1_4ae0cc58-d38e-4e17-b79a-5086ea89e2ac.png?v=1793205546&width=2000",
+      "style": "pane-light-training-womens-shoes-obsidian",
+      "styleType": "official-product-id",
+      "colorway": "Obsidian",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-obsidian",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-womens-shoes-obsidian",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_4ae0cc58-d38e-4e17-b79a-5086ea89e2ac.png?v=1793205546&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-womens-shoes-obsidian",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_4ae0cc58-d38e-4e17-b79a-5086ea89e2ac.png?v=1793205546&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/df323ea2c4be539c0f7c90c4e9bf702042590ea6dcec612978be543213201647.webp"
+      }
+    },
+    {
+      "id": "arrival-d4c44588182156e9e3ad",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Pristine",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingwomensshoespristine",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-pristine",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 67: Pane Light Training Men's Shoes - Pristine",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8",
+        "style": "pane-light-training-womens-shoes-pristine"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-pristine",
+      "image": "https://paneshoes.com/cdn/shop/files/1_8acd5228-2e69-4f83-9361-17c86d1510b8.png?v=1793203721&width=2000",
+      "style": "pane-light-training-womens-shoes-pristine",
+      "styleType": "official-product-id",
+      "colorway": "Pristine",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-pristine",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-womens-shoes-pristine",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_8acd5228-2e69-4f83-9361-17c86d1510b8.png?v=1793203721&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-womens-shoes-pristine",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_8acd5228-2e69-4f83-9361-17c86d1510b8.png?v=1793203721&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/35a93f77e9e8d5ba6fb3bdeccc44d3c279818e4485aedb35108b1e37ef03d261.webp"
+      }
+    },
+    {
+      "id": "arrival-9952613cb125dfb795fb",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Suntan",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingwomensshoessuntan",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-suntan",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 65: Pane Light Training Women's Shoes - Suntan",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8",
+        "style": "pane-light-training-womens-shoes-suntan"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-suntan",
+      "image": "https://paneshoes.com/cdn/shop/files/1_e4591558-55f9-4784-8e7d-e4c7e811c603.png?v=1793204378&width=2000",
+      "style": "pane-light-training-womens-shoes-suntan",
+      "styleType": "official-product-id",
+      "colorway": "Suntan",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "245,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-suntan",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-womens-shoes-suntan",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_e4591558-55f9-4784-8e7d-e4c7e811c603.png?v=1793204378&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-womens-shoes-suntan",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b0ce5fad53a778b74cc740d67692a82dbd4d4edc856bb2d0e57b7045f9b940b8"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_e4591558-55f9-4784-8e7d-e4c7e811c603.png?v=1793204378&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=1",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/3a580901b498bfb7d29bb6c524dbda7e58a618dc130a73f003406c502792e630.webp"
+      }
+    },
+    {
+      "id": "arrival-0f45ec52b6c12485cb11",
+      "brand": "PANE",
+      "name": "Pane Light Training Women’s Shoes – Travertine",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panelighttrainingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-light-training-women-s-shoes-travertine",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 129: Pane Light Training Men’s Shoes – Travertine Travertine",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2",
+        "style": "pane-light-training-women-s-shoes-travertine"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.paneshoes.com/products/pane-light-training-women-s-shoes-travertine",
+      "image": "https://paneshoes.com/cdn/shop/files/5096-1.jpg?v=1757922786&width=2000",
+      "style": "pane-light-training-women-s-shoes-travertine",
+      "styleType": "official-product-id",
+      "colorway": "Travertine",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "239,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-light-training-women-s-shoes-travertine",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-women-s-shoes-travertine",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5096-1.jpg?v=1757922786&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-light-training-women-s-shoes-travertine",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5096-1.jpg?v=1757922786&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/2538dec05349d3bce9c538d5462ae02d4716e3bc4afbf007ad824b9b9a10a341.webp"
+      }
     },
     {
       "id": "new-20260923-9d4f3d8a63e71a0c",
@@ -32527,98 +34202,6 @@
       }
     },
     {
-      "id": "arrival-b9d25970a807dc2bcf41",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Men’s Shoes-Manu Bay",
-      "category": "sneaker",
-      "productType": "sneaker",
-      "fitReasons": [
-        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
-      ],
-      "modelKey": "pane|panezephyrtrainingmensshoesmanubay",
-      "releaseDate": "",
-      "releaseStatus": "released",
-      "arrivalEvidence": {
-        "verified": true,
-        "brand": "PANE",
-        "productUrl": "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-manu-bay",
-        "kind": "new-arrivals-listing",
-        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "excerpt": "Official New / New Arrivals listing: Image 91: Pane Zephyr Training Men’s Shoes-Manu Bay Manu Bay",
-        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2",
-        "style": "pane-zephyr-training-men-s-shoes-manu-bay"
-      },
-      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
-      "url": "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-manu-bay",
-      "image": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000",
-      "style": "pane-zephyr-training-men-s-shoes-manu-bay",
-      "styleType": "official-product-id",
-      "colorway": "",
-      "colors": [],
-      "gender": "",
-      "material": "",
-      "priceLabel": "232,000원",
-      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
-      "officialCategory": "스니커즈",
-      "sourceSignals": [],
-      "socialMetrics": [],
-      "officialProductEvidence": {
-        "verified": true,
-        "url": "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-manu-bay",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "brand": "PANE",
-        "style": "pane-zephyr-training-men-s-shoes-manu-bay",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
-      },
-      "officialImageEvidence": {
-        "verified": true,
-        "url": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000",
-        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
-        "verifiedAt": "2026-10-29T11:12:59.189Z",
-        "brand": "PANE",
-        "style": "pane-zephyr-training-men-s-shoes-manu-bay",
-        "identifierType": "official-product-id",
-        "verificationMethod": "official-new-listing-sku-image",
-        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
-      },
-      "collaborationBrands": [],
-      "popularity": {
-        "magazine": false,
-        "newsletter": false,
-        "media": false,
-        "sns": false,
-        "brand": true,
-        "ecommerce": false
-      },
-      "archiveGroup": "contemporary",
-      "country": "GL",
-      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
-      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
-      "eligibility": {
-        "passed": true,
-        "checkedAt": "2026-10-30"
-      },
-      "keywordTags": [],
-      "searchConceptIds": [
-        "category:footwear",
-        "category:sneakers",
-        "brand:pane"
-      ],
-      "presentation": {
-        "image": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000",
-        "scale": 1,
-        "offsetY": 0,
-        "view": "product-photo",
-        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
-        "checkedAt": "2026-10-29T11:12:59.189Z",
-        "method": "brand-own-product-photo",
-        "cachedPath": "/images/ea3181941d9d910851a7597b96ee9e58c014b7c8c3cacf29dda85a91810d6df3.webp"
-      }
-    },
-    {
       "id": "arrival-cd8f4dd7458e9c30d364",
       "brand": "PANE",
       "name": "Pane Zephyr Training Pouching Men’s Shoes – Analogue glitch",
@@ -33094,6 +34677,1418 @@
       "colorSwatches": [
         "#58b4d2"
       ]
+    },
+    {
+      "id": "arrival-b3582a461fa10b2cdc4b",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Analogue glitch",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingpouchingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-analogue-glitch",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 79: Pane Zephyr Training Pouching Men’s Shoes – Analogue glitch Analogue glitch",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-analogue-glitch"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-analogue-glitch",
+      "image": "https://paneshoes.com/cdn/shop/files/5424_fdedfded-c219-4226-b2c5-3a07fc367459.jpg?v=1779804781&width=2000",
+      "style": "pane-zephyr-training-pouching-women-s-shoes-analogue-glitch",
+      "styleType": "official-product-id",
+      "colorway": "Analogue glitch",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "225,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-analogue-glitch",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-analogue-glitch",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5424_fdedfded-c219-4226-b2c5-3a07fc367459.jpg?v=1779804781&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-analogue-glitch",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5424_fdedfded-c219-4226-b2c5-3a07fc367459.jpg?v=1779804781&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "cachedPath": "/images/f382054c0ae172ed2ecdcd12f3414b5b9cec93aea8a52db1b2bc30b42daaf50e.webp"
+      },
+      "colorSwatches": [
+        "#26292a"
+      ]
+    },
+    {
+      "id": "arrival-fc3a8b00f7ceb19390a2",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Code Retro",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "일상 스포츠 캐주얼·실루엣 참고",
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingpouchingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-code-retro",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 77: Pane Zephyr Training Pouching Men’s Shoes – Code Retro Code Retro",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-code-retro"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-code-retro",
+      "image": "https://paneshoes.com/cdn/shop/files/5429_67eabdae-f282-4978-9ff2-ff8e2efa8e64.jpg?v=1779804709&width=2000",
+      "style": "pane-zephyr-training-pouching-women-s-shoes-code-retro",
+      "styleType": "official-product-id",
+      "colorway": "Code Retro",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "225,000원",
+      "description": "스니커즈 · 일상 스포츠 캐주얼·실루엣 참고 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-code-retro",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-code-retro",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5429_67eabdae-f282-4978-9ff2-ff8e2efa8e64.jpg?v=1779804709&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-code-retro",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5429_67eabdae-f282-4978-9ff2-ff8e2efa8e64.jpg?v=1779804709&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "cachedPath": "/images/bb998ad606a3385666a43a919c47b1daf4c8777a6bf2dbacef2540aeebff216e.webp"
+      },
+      "colorSwatches": [
+        "#ceb944"
+      ]
+    },
+    {
+      "id": "arrival-44d185b9dcc0855912ef",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Hologram Fade",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingpouchingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-hologram-fade",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 85: Pane Zephyr Training Pouching Men’s Shoes – Hologram Fade Hologram Fade",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-hologram-fade"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-hologram-fade",
+      "image": "https://paneshoes.com/cdn/shop/files/5413_9d80ac6f-0c10-491a-984e-a1c6ca4f79d9.jpg?v=1779784297&width=2000",
+      "style": "pane-zephyr-training-pouching-women-s-shoes-hologram-fade",
+      "styleType": "official-product-id",
+      "colorway": "Hologram Fade",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "225,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-hologram-fade",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-hologram-fade",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5413_9d80ac6f-0c10-491a-984e-a1c6ca4f79d9.jpg?v=1779784297&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-hologram-fade",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5413_9d80ac6f-0c10-491a-984e-a1c6ca4f79d9.jpg?v=1779784297&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "cachedPath": "/images/5e3fc134e0965a23249119e7babde492cc7e61d291983fcb5d22e8bc9cff9909.webp"
+      },
+      "colorSwatches": [
+        "#c0aea6"
+      ]
+    },
+    {
+      "id": "arrival-dfef0a8ada3636aef5fa",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Raw Sample",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingpouchingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-raw-sample",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 81: Pane Zephyr Training Pouching Men’s Shoes – Raw Sample Raw Sample",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-raw-sample"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-raw-sample",
+      "image": "https://paneshoes.com/cdn/shop/files/5423_89b413df-c7bf-48b3-b416-299fe127ee5b.jpg?v=1779804846&width=2000",
+      "style": "pane-zephyr-training-pouching-women-s-shoes-raw-sample",
+      "styleType": "official-product-id",
+      "colorway": "Raw Sample",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "225,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-raw-sample",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-raw-sample",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5423_89b413df-c7bf-48b3-b416-299fe127ee5b.jpg?v=1779804846&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-raw-sample",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5423_89b413df-c7bf-48b3-b416-299fe127ee5b.jpg?v=1779804846&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "cachedPath": "/images/dd01ebdb07b7361663e025ee816425591964629b3e3a58a2aa477b630e49e0f8.webp"
+      },
+      "colorSwatches": [
+        "#334b71"
+      ]
+    },
+    {
+      "id": "arrival-36b667db36ff69699272",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Time Traveler",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingpouchingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-time-traveler",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 83: Pane Zephyr Training Pouching Men’s Shoes – Time Traveler Time Traveler",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-time-traveler"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-time-traveler",
+      "image": "https://paneshoes.com/cdn/shop/files/5414_ef972336-e50c-42f0-8c68-98235038d6a8.jpg?v=1779804636&width=2000",
+      "style": "pane-zephyr-training-pouching-women-s-shoes-time-traveler",
+      "styleType": "official-product-id",
+      "colorway": "Time Traveler",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "225,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-time-traveler",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-time-traveler",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5414_ef972336-e50c-42f0-8c68-98235038d6a8.jpg?v=1779804636&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-pouching-women-s-shoes-time-traveler",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "4ca8f526fa5796e8b60f33a00df82fe04d5c959f1c9e320e38a4ffe319d0f3c9"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5414_ef972336-e50c-42f0-8c68-98235038d6a8.jpg?v=1779804636&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://paneshoes.com/collections/new-arrivals-1?page=3",
+        "cachedPath": "/images/0119de5b9de961e384e5d34a6ab3c6d5d66757c658d5998c7b2187f6abaab368.webp"
+      },
+      "colorSwatches": [
+        "#58b4d2"
+      ]
+    },
+    {
+      "id": "new-20260923-55d72bde31a66e94",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Crimson Ink",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-crimson-ink",
+        "kind": "new-badge",
+        "url": "https://www.paneshoes.com/collections/women-s?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official product New badge: Image 37: Pane Zephyr Training Women’s Shoes – Crimson Ink",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845",
+        "style": "pane-zephyr-training-women-s-shoes-crimson-ink"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-crimson-ink",
+      "image": "https://paneshoes.com/cdn/shop/files/1_32cb4b71-79b9-45b7-ba7c-fee3740640b9.jpg?v=1787125016&width=2000",
+      "style": "pane-zephyr-training-women-s-shoes-crimson-ink",
+      "styleType": "official-product-id",
+      "colorway": "Crimson Ink",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "239,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-crimson-ink",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-crimson-ink",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_32cb4b71-79b9-45b7-ba7c-fee3740640b9.jpg?v=1787125016&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/women-s?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-crimson-ink",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/women-s?page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "red-crimson"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:red",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_32cb4b71-79b9-45b7-ba7c-fee3740640b9.jpg?v=1787125016&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "cachedPath": "/images/af4a4e5b6ba73f344c5a22db0ae48a71c9e76b50dd55918825000aa14ae83c31.webp"
+      },
+      "colorSwatches": [
+        "#4d3031"
+      ]
+    },
+    {
+      "id": "new-20260923-9d29fb4817fa10e0",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Gray Moss",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-gray-moss",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 77: Pane Zephyr Training Women’s Shoes – Gray Moss",
+        "contentHash": "b1760367801f0621e8dd23c117da7713e165bb7ce5a605bc6a6971653df61a74",
+        "style": "pane-zephyr-training-women-s-shoes-gray-moss"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-gray-moss",
+      "image": "https://paneshoes.com/cdn/shop/files/1_42368fc0-843b-416a-bb5c-435317c597ed.jpg?v=1787124587&width=2000",
+      "style": "pane-zephyr-training-women-s-shoes-gray-moss",
+      "styleType": "official-product-id",
+      "colorway": "Gray Moss",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "239,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-gray-moss",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-gray-moss",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b1760367801f0621e8dd23c117da7713e165bb7ce5a605bc6a6971653df61a74"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_42368fc0-843b-416a-bb5c-435317c597ed.jpg?v=1787124587&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-gray-moss",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b1760367801f0621e8dd23c117da7713e165bb7ce5a605bc6a6971653df61a74"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_42368fc0-843b-416a-bb5c-435317c597ed.jpg?v=1787124587&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "cachedPath": "/images/e69c95c1d4b4e4279e9c476b2a9e8e2fb6ffe35c64956567019a7402ea5e1c24.webp"
+      },
+      "colorSwatches": [
+        "#807679"
+      ]
+    },
+    {
+      "id": "new-20260923-a8e13d96a0ce226a",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Imperial Purple",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-imperial-purple",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 67: Pane Zephyr Training Men’s Shoes – Imperial Purple",
+        "contentHash": "b1760367801f0621e8dd23c117da7713e165bb7ce5a605bc6a6971653df61a74",
+        "style": "pane-zephyr-training-women-s-shoes-imperial-purple"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-imperial-purple",
+      "image": "https://paneshoes.com/cdn/shop/files/1_89b6f997-9c34-40b0-b764-6d9531f67106.jpg?v=1787125781&width=2000",
+      "style": "pane-zephyr-training-women-s-shoes-imperial-purple",
+      "styleType": "official-product-id",
+      "colorway": "Imperial Purple",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "239,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-imperial-purple",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-imperial-purple",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b1760367801f0621e8dd23c117da7713e165bb7ce5a605bc6a6971653df61a74"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_89b6f997-9c34-40b0-b764-6d9531f67106.jpg?v=1787125781&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-imperial-purple",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "b1760367801f0621e8dd23c117da7713e165bb7ce5a605bc6a6971653df61a74"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_89b6f997-9c34-40b0-b764-6d9531f67106.jpg?v=1787125781&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "cachedPath": "/images/943e5eb9da8ca2d6696bf0d7886b2e26b9819b55bbc8ae12bcfaf594ffc9aefa.webp"
+      },
+      "colorSwatches": [
+        "#69497e"
+      ]
+    },
+    {
+      "id": "arrival-7840e4e335aa9dd763c3",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Juniper",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-juniper",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 51: Pane Zephyr Training Women’s Shoes – Juniper",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483",
+        "style": "pane-zephyr-training-women-s-shoes-juniper"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-juniper",
+      "image": "https://paneshoes.com/cdn/shop/files/5332_f96d8236-77c6-404e-89f1-29140105110c.jpg?v=1779804982&width=2000",
+      "style": "pane-zephyr-training-women-s-shoes-juniper",
+      "styleType": "official-product-id",
+      "colorway": "Juniper",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "232,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-juniper",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-juniper",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5332_f96d8236-77c6-404e-89f1-29140105110c.jpg?v=1779804982&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-juniper",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5332_f96d8236-77c6-404e-89f1-29140105110c.jpg?v=1779804982&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/f37b1350e20bdbcfe6ce7b9b82e10e783257753e0914284c3e1c4c192ce897f3.webp"
+      }
+    },
+    {
+      "id": "manual-23d6bbc4f594cb24",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Opaque",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|zephyr training women’s shoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-opaque",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 45: Pane Zephyr Training Men’s Shoes – Opaque Opaque",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483",
+        "style": "pane-zephyr-training-women-s-shoes-opaque"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-opaque",
+      "image": "https://paneshoes.com/cdn/shop/files/062a2dff172035137ad5866a7b9673ec.jpg?v=1776240018&width=2000",
+      "style": "pane-zephyr-training-women-s-shoes-opaque",
+      "styleType": "official-product-id",
+      "colorway": "Opaque",
+      "colors": [],
+      "gender": "Unisex",
+      "material": "",
+      "priceLabel": "239,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-opaque",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-opaque",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/062a2dff172035137ad5866a7b9673ec.jpg?v=1776240018&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-opaque",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/062a2dff172035137ad5866a7b9673ec.jpg?v=1776240018&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/824908b6dab3258ffcecb9b34255eb1976644252dc7f45baae4dfa7109d81595.webp"
+      }
+    },
+    {
+      "id": "arrival-cd1aa5306ad2c6844ca1",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Porcelain",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-porcelain",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 47: Pane Zephyr Training Women’s Shoes – Porcelain Porcelain",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483",
+        "style": "pane-zephyr-training-women-s-shoes-porcelain"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-porcelain",
+      "image": "https://paneshoes.com/cdn/shop/files/5324-1.jpg?v=1755850040&width=2000",
+      "style": "pane-zephyr-training-women-s-shoes-porcelain",
+      "styleType": "official-product-id",
+      "colorway": "Porcelain",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "239,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-porcelain",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-porcelain",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5324-1.jpg?v=1755850040&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-porcelain",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5324-1.jpg?v=1755850040&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/1b05adf97c8369eeb8c4da81e2932eaccafa4a98a9d9baa9bf9103583f420eac.webp"
+      }
+    },
+    {
+      "id": "manual-a160d12c6a67f5b9",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Rowan",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|zephyr training women’s shoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-rowan",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 53: Pane Zephyr Training Women’s Shoes – Rowan Rowan",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483",
+        "style": "pane-zephyr-training-women-s-shoes-rowan"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-rowan",
+      "image": "https://paneshoes.com/cdn/shop/files/5331_b74490d4-f9b2-4bcd-8ffb-4d08eed28348.jpg?v=1779804910&width=2000",
+      "style": "pane-zephyr-training-women-s-shoes-rowan",
+      "styleType": "official-product-id",
+      "colorway": "Rowan",
+      "colors": [],
+      "gender": "Unisex",
+      "material": "",
+      "priceLabel": "232,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-rowan",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-rowan",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5331_b74490d4-f9b2-4bcd-8ffb-4d08eed28348.jpg?v=1779804910&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-rowan",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5331_b74490d4-f9b2-4bcd-8ffb-4d08eed28348.jpg?v=1779804910&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/5f471c4f6d7a91030738e3c9bb3806ad5b3adb759373fec96be6db8355e82c50.webp"
+      }
+    },
+    {
+      "id": "xlsx-96e68f24261b0dec",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Silk Cyan",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|pane zephyr training shoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-silk-cyan",
+        "kind": "new-badge",
+        "url": "https://www.paneshoes.com/collections/women-s?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official product New badge: Image 65: Pane Zephyr Training Women’s Shoes – Silk Cyan",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845",
+        "style": "pane-zephyr-training-women-s-shoes-silk-cyan"
+      },
+      "firstPublishedAt": "2026-10-07T08:52:24.382Z",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-silk-cyan",
+      "image": "https://paneshoes.com/cdn/shop/files/1_7b7fe3eb-becb-4ac3-8f2e-4d727b3596dc.jpg?v=1787128449&width=2000",
+      "style": "pane-zephyr-training-women-s-shoes-silk-cyan",
+      "styleType": "official-product-id",
+      "colorway": "Silk Cyan",
+      "colors": [],
+      "gender": "Women",
+      "material": "",
+      "priceLabel": "239,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-silk-cyan",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-silk-cyan",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/1_7b7fe3eb-becb-4ac3-8f2e-4d727b3596dc.jpg?v=1787128449&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/women-s?page=2",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-silk-cyan",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fdd244463d424b237213e3ead3474bf2710f2735bb23d65d8d4d9a4067510845"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/women-s?page=2",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/1_7b7fe3eb-becb-4ac3-8f2e-4d727b3596dc.jpg?v=1787128449&width=2000",
+        "scale": 1.05,
+        "offsetY": 0,
+        "view": "three-quarter",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "checkedAt": "2026-10-07T08:41:32.894Z",
+        "officialProductUrl": "https://www.paneshoes.com/collections/new-arrivals-1",
+        "cachedPath": "/images/4a0c20dad3926cff1a419a21923361d91f90ad3af607c19e384b390184fa2308.webp"
+      },
+      "colorSwatches": [
+        "#254d4a"
+      ]
+    },
+    {
+      "id": "arrival-afc095e50dc7fd94fc67",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Sterling",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-sterling",
+        "kind": "new-arrivals-listing",
+        "url": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 49: Pane Zephyr Training Women’s Shoes – Sterling Sterling",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483",
+        "style": "pane-zephyr-training-women-s-shoes-sterling"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-sterling",
+      "image": "https://paneshoes.com/cdn/shop/files/5342_c173931a-919c-4d60-8879-c644c714dc5d.jpg?v=1779805025&width=2000",
+      "style": "pane-zephyr-training-women-s-shoes-sterling",
+      "styleType": "official-product-id",
+      "colorway": "Sterling",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "232,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-sterling",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-sterling",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5342_c173931a-919c-4d60-8879-c644c714dc5d.jpg?v=1779805025&width=2000",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-sterling",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "39ff0e58283f5830cf2ffb338dd35558f77f092b51abff21e7f454285ce1c483"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5342_c173931a-919c-4d60-8879-c644c714dc5d.jpg?v=1779805025&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://paneshoes.com/collections/new-arrivals-1?filter.p.m.custom.gender=Women%E2%80%99s&page=3",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/c0ea9bfcfd18786098d473ffe7ef93c36172a1ef037e043c98801a9a0697cf25.webp"
+      }
+    },
+    {
+      "id": "arrival-f32d5bea56e5880848a5",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes-Manu Bay",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "활동성·쿠셔닝·통기 또는 아웃도어 구조 참고"
+      ],
+      "modelKey": "pane|panezephyrtrainingwomensshoesmanubay",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "PANE",
+        "productUrl": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-manu-bay",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "excerpt": "Official New / New Arrivals listing: Image 89: Pane Zephyr Training Men’s Shoes-Manu Bay Manu Bay",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2",
+        "style": "pane-zephyr-training-women-s-shoes-manu-bay"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-manu-bay",
+      "image": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000",
+      "style": "pane-zephyr-training-women-s-shoes-manu-bay",
+      "styleType": "official-product-id",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "232,000원",
+      "description": "스니커즈 · 활동성·쿠셔닝·통기 또는 아웃도어 구조 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-manu-bay",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-manu-bay",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "verifiedAt": "2026-10-29T11:12:59.189Z",
+        "brand": "PANE",
+        "style": "pane-zephyr-training-women-s-shoes-manu-bay",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "e17b682d3f1c3ab96b55c570c501a3f87db0c202e4e972ed1c7a9cdceffb31c2"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "contemporary",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-29T11:12:59.189Z",
+      "productEvidenceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "brand:pane"
+      ],
+      "presentation": {
+        "image": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.paneshoes.com/collections/new-arrivals-1?page=4",
+        "checkedAt": "2026-10-29T11:12:59.189Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/ea3181941d9d910851a7597b96ee9e58c014b7c8c3cacf29dda85a91810d6df3.webp"
+      }
     },
     {
       "id": "arrival-76b57121179418dbb501",
@@ -61844,6 +64839,101 @@
       }
     },
     {
+      "id": "arrival-5ac5b3d986f19473c88c",
+      "brand": "Onitsuka Tiger",
+      "name": "GSM",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고"
+      ],
+      "modelKey": "onitsukatiger|gsm",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Onitsuka Tiger",
+        "productUrl": "https://www.onitsukatiger.com/se/en-se/gsm/p/1183c436-600.html",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.onitsukatiger.com/se/en-se/new-arrivals/new-arrivals/?ot_size=6922",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "excerpt": "Official New / New Arrivals listing: Image 69: GSM",
+        "contentHash": "ba241ea504a03d9c6fd33d800b47cca96feb5a9326ba3023f45c7c7b639b67bc",
+        "style": "1183c436-600"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.onitsukatiger.com/se/en-se/gsm/p/1183c436-600.html",
+      "image": "https://media.ot-eur-prod.com/media/catalog/category/NewIn_GSM.jpg",
+      "style": "1183c436-600",
+      "styleType": "official-product-id",
+      "colorway": "",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "SEK 1,910",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.onitsukatiger.com/se/en-se/gsm/p/1183c436-600.html",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "brand": "Onitsuka Tiger",
+        "style": "1183c436-600",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "dc943add0de3aba2b22784c93250c57898a2e7db6571c06c6c0e195644f74556"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://media.ot-eur-prod.com/media/catalog/category/NewIn_GSM.jpg",
+        "sourceUrl": "https://www.onitsukatiger.com/se/en-se/gsm/p/1183c436-600.html",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "brand": "Onitsuka Tiger",
+        "style": "1183c436-600",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "dc943add0de3aba2b22784c93250c57898a2e7db6571c06c6c0e195644f74556"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-25T00:39:28.323Z",
+      "productEvidenceUrl": "https://www.onitsukatiger.com/se/en-se/gsm/p/1183c436-600.html",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "suede"
+      ],
+      "searchConceptIds": [
+        "style:nostalgic-style",
+        "category:footwear",
+        "category:sneakers",
+        "brand:onitsukatiger"
+      ],
+      "presentation": {
+        "image": "https://media.ot-eur-prod.com/media/catalog/category/NewIn_GSM.jpg",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.onitsukatiger.com/se/en-se/gsm/p/1183c436-600.html",
+        "checkedAt": "2026-10-25T00:39:28.323Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/7f287814ddd3b1906d37245c1a92fccd6e680c3117566444b00edd80a7daf3b9.webp"
+      }
+    },
+    {
       "id": "arrival-1a6f34a032b8dc73f0f8",
       "brand": "Nike",
       "name": "Ja 4 \"Zombie\"",
@@ -63452,6 +66542,104 @@
       }
     },
     {
+      "id": "arrival-e402ee959895d43adf47",
+      "brand": "Nike",
+      "name": "Nike Air Max Plus",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고"
+      ],
+      "modelKey": "nike|nikeairmaxplus",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Nike",
+        "productUrl": "https://www.nike.com/at/en/t/air-max-plus-womens-shoes-wAjTYWhG/IR5731-600",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.nike.com/at/en/w/new-performance-3k7dgz3n82y",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "excerpt": "Official New / New Arrivals listing: Nike Air Max Plus",
+        "contentHash": "004db64e07f4658a66416bb386904a729438d6a7df15ed37e847aed153f46ffc",
+        "style": "IR5731-600"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.nike.com/at/en/t/air-max-plus-womens-shoes-wAjTYWhG/IR5731-600",
+      "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/95c83bbb-a21e-4bb8-8d89-13a2330148af/WMNS+AIR+MAX+PLUS.png",
+      "style": "IR5731-600",
+      "styleType": "official-product-id",
+      "colorway": "Tough Red/White/Yellow Ochre/Black",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "€199.99",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.nike.com/at/en/t/air-max-plus-womens-shoes-wAjTYWhG/IR5731-600",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "brand": "Nike",
+        "style": "IR5731-600",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "004db64e07f4658a66416bb386904a729438d6a7df15ed37e847aed153f46ffc"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/95c83bbb-a21e-4bb8-8d89-13a2330148af/WMNS+AIR+MAX+PLUS.png",
+        "sourceUrl": "https://www.nike.com/at/en/w/new-performance-3k7dgz3n82y",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "brand": "Nike",
+        "style": "IR5731-600",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "004db64e07f4658a66416bb386904a729438d6a7df15ed37e847aed153f46ffc"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-25T00:39:28.323Z",
+      "productEvidenceUrl": "https://www.nike.com/at/en/w/new-performance-3k7dgz3n82y",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "red-crimson"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:red",
+        "color:black",
+        "color:white",
+        "model:air-max",
+        "brand:nike"
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/95c83bbb-a21e-4bb8-8d89-13a2330148af/WMNS+AIR+MAX+PLUS.png",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.nike.com/at/en/w/new-performance-3k7dgz3n82y",
+        "checkedAt": "2026-10-25T00:39:28.323Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/413aeb999e60e2c703583c8654571a0da720d605cd6daa20ae5a27ec155b1155.webp"
+      }
+    },
+    {
       "id": "arrival-29653c22f6a1eefd8e58",
       "brand": "Nike",
       "name": "Nike Air Max Torch 4",
@@ -63755,6 +66943,102 @@
         "checkedAt": "2026-10-25T00:39:28.323Z",
         "method": "brand-own-product-photo",
         "cachedPath": "/images/332654db83d27066a6ccddda04f4d29e7c6963ab1d0875434faf13e92aad430a.webp"
+      }
+    },
+    {
+      "id": "arrival-4fbff54ecf556dd7f425",
+      "brand": "Nike",
+      "name": "Nike Shox TL",
+      "category": "sneaker",
+      "productType": "sneaker",
+      "fitReasons": [
+        "공식 스니커즈 실루엣·컬러 참고"
+      ],
+      "modelKey": "nike|nikeshoxtl",
+      "releaseDate": "",
+      "releaseStatus": "released",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Nike",
+        "productUrl": "https://www.nike.com/at/en/t/shox-tl-womens-shoes-kmDWPDRl/IM5167-002",
+        "kind": "new-arrivals-listing",
+        "url": "https://www.nike.com/at/en/w/new-shoes-3n82yzy7ok",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "excerpt": "Official New / New Arrivals listing: Nike Shox TL",
+        "contentHash": "8b6d08a7a411fc28c79a60b8c996c93328c5f155a00552b57a5cbc03e32f0e1e",
+        "style": "IM5167-002"
+      },
+      "firstPublishedAt": "2026-10-30T01:46:14.371Z",
+      "url": "https://www.nike.com/at/en/t/shox-tl-womens-shoes-kmDWPDRl/IM5167-002",
+      "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png",
+      "style": "IM5167-002",
+      "styleType": "official-product-id",
+      "colorway": "Black/Tough Red/Yellow Ochre/Black",
+      "colors": [],
+      "gender": "",
+      "material": "",
+      "priceLabel": "€179.99",
+      "description": "스니커즈 · 공식 스니커즈 실루엣·컬러 참고",
+      "officialCategory": "스니커즈",
+      "sourceSignals": [],
+      "socialMetrics": [],
+      "officialProductEvidence": {
+        "verified": true,
+        "url": "https://www.nike.com/at/en/t/shox-tl-womens-shoes-kmDWPDRl/IM5167-002",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "brand": "Nike",
+        "style": "IM5167-002",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "8b6d08a7a411fc28c79a60b8c996c93328c5f155a00552b57a5cbc03e32f0e1e"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "url": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png",
+        "sourceUrl": "https://www.nike.com/at/en/w/new-shoes-3n82yzy7ok",
+        "verifiedAt": "2026-10-25T00:39:28.323Z",
+        "brand": "Nike",
+        "style": "IM5167-002",
+        "identifierType": "official-product-id",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "8b6d08a7a411fc28c79a60b8c996c93328c5f155a00552b57a5cbc03e32f0e1e"
+      },
+      "collaborationBrands": [],
+      "popularity": {
+        "magazine": false,
+        "newsletter": false,
+        "media": false,
+        "sns": false,
+        "brand": true,
+        "ecommerce": false
+      },
+      "archiveGroup": "outdoor",
+      "country": "GL",
+      "lastVerifiedAt": "2026-10-25T00:39:28.323Z",
+      "productEvidenceUrl": "https://www.nike.com/at/en/w/new-shoes-3n82yzy7ok",
+      "eligibility": {
+        "passed": true,
+        "checkedAt": "2026-10-30"
+      },
+      "keywordTags": [
+        "red-crimson"
+      ],
+      "searchConceptIds": [
+        "category:footwear",
+        "category:sneakers",
+        "color:red",
+        "color:black",
+        "brand:nike"
+      ],
+      "presentation": {
+        "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png",
+        "scale": 1,
+        "offsetY": 0,
+        "view": "product-photo",
+        "sourceUrl": "https://www.nike.com/at/en/w/new-shoes-3n82yzy7ok",
+        "checkedAt": "2026-10-25T00:39:28.323Z",
+        "method": "brand-own-product-photo",
+        "cachedPath": "/images/0251722b81daf69bbb38eebe71fb179d71107bbf00bb12754c71c2c6d6e31d62.webp"
       }
     },
     {
@@ -82246,7 +85530,7 @@
     }
   ],
   "keywordMethod": "verified-style-source-rank-v2",
-  "keywordCheckedAt": "2026-10-30T09:17:10.432Z",
+  "keywordCheckedAt": "2026-10-30T09:37:42.031Z",
   "sourceRanks": [
     {
       "platform": "wgsn-ss27-colours",
@@ -85022,8 +88306,8 @@
     ],
     "counts": {
       "source": 4024,
-      "published": 871,
-      "held": 2931,
+      "published": 906,
+      "held": 2932,
       "expired": 0
     },
     "selectionBasis": "official-new-arrivals",
@@ -85061,7 +88345,7 @@
     ]
   },
   "retentionBasis": "first-published",
-  "keywordEvaluatedAt": "2026-10-30T09:17:10.432Z",
+  "keywordEvaluatedAt": "2026-10-30T09:37:42.031Z",
   "styleTrendKeywords": {
     "method": "verified-style-board-v1",
     "updated": "2026-10-29T12:01:18.605Z",
@@ -86378,6 +89662,7 @@
           "arrival-452966633658173542dd",
           "arrival-4cdd45fee998eef75684",
           "arrival-504ed9106226b08f52e8",
+          "arrival-54e86503520d083532a5",
           "arrival-54f8872d84a145f71750",
           "arrival-553083c6a7764c1f3acc",
           "arrival-66fbd257d6ae792093a5",
@@ -86414,7 +89699,7 @@
           "verified-puma-406687-02",
           "zip-cecilie-asics-black-coffee"
         ],
-        "matchedProductCount": 46,
+        "matchedProductCount": 47,
         "sourceCount": 5,
         "editorialCount": 2,
         "retailCount": 22,
@@ -86855,6 +90140,7 @@
           "arrival-441303590dc2d152b931",
           "arrival-47f4d62807e5a83b15c1",
           "arrival-594be1fe28d65756f146",
+          "arrival-5ac5b3d986f19473c88c",
           "arrival-5b91572ccbb3c20b2062",
           "arrival-5dc19c77012be507d15f",
           "arrival-61343cec96fd61f471a7",
@@ -86895,6 +90181,7 @@
           "arrival-f74c25de90f735dfeaad",
           "arrival-fa252f0f11a4a54f4a5c",
           "arrival-fac6bf4cc0f4bf5dfbfe",
+          "arrival-fc3a8b00f7ceb19390a2",
           "daily-20260915-nike-air-foamposite-pro-im5204-001",
           "daily-20260915-nike-sb-af1-yuto-io8439-100",
           "daily-20260916-converse-palmes-green-a24756c",
@@ -86936,7 +90223,7 @@
           "verified-new-balance-ugtr4dy",
           "verified-new-balance-w327apc"
         ],
-        "matchedProductCount": 99,
+        "matchedProductCount": 101,
         "sourceCount": 4,
         "editorialCount": 3,
         "retailCount": 1,
@@ -87097,6 +90384,7 @@
           "arrival-33c19cd16a2bb13e85e9",
           "arrival-4229e273d1921d9aa5c8",
           "arrival-452966633658173542dd",
+          "arrival-54e86503520d083532a5",
           "arrival-6db20bbff4eb4d0f2fab",
           "arrival-8ec64ae04dcd8e1cc2bf",
           "arrival-90dfb3c17486b98de552",
@@ -87111,7 +90399,7 @@
           "verified-new-balance-u204v2pt",
           "verified-new-balance-u204v2w0"
         ],
-        "matchedProductCount": 22,
+        "matchedProductCount": 23,
         "sourceCount": 3,
         "editorialCount": 4,
         "retailCount": 0,
@@ -87185,6 +90473,7 @@
           "arrival-1a6f34a032b8dc73f0f8",
           "arrival-2ac1dbd185526505f209",
           "arrival-4b15632373dd758e4fd1",
+          "arrival-4fbff54ecf556dd7f425",
           "arrival-57acc5af07331d8df879",
           "arrival-5c76a8d1beca65b19c7c",
           "arrival-5fb112044e905878f44e",
@@ -87201,9 +90490,11 @@
           "arrival-cdf2cb4311b436b993ba",
           "arrival-d78c33a24ea2fb09996f",
           "arrival-e1c087634a28cead5caa",
+          "arrival-e402ee959895d43adf47",
           "arrival-e90650f01f166c81af1e",
           "live-1c0e8a0418f4ae7a",
           "new-20260923-0e5d08e58e39521f",
+          "new-20260923-55d72bde31a66e94",
           "new-20260923-9d4f3d8a63e71a0c",
           "new-20260923-f28d3395e6c72a4a",
           "official-nike-hq7978-001",
@@ -87212,7 +90503,7 @@
           "verified-new-balance-u18902uh",
           "verified-new-balance-u90608ol"
         ],
-        "matchedProductCount": 34,
+        "matchedProductCount": 37,
         "sourceCount": 3,
         "editorialCount": 1,
         "retailCount": 5,

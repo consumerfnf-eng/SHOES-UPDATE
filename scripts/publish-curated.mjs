@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
-import {curateCatalog,canonicalBrand,canonicalUrl,isOfficialProductUrl,labelVariantColours,labelUrlVariantColours,labelNameVariantColours,modelIdentityKeys,preferLateralView} from './curation.mjs';
+import {curateCatalog,canonicalBrand,canonicalUrl,isOfficialProductUrl,labelVariantColours,labelUrlVariantColours,labelNameVariantColours,preferLateralView} from './curation.mjs';
 import {mergePreserving} from './collect-evidence.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {productPresentation} from './product-presentation.mjs';
@@ -9,6 +9,7 @@ import {withSocialComparisons} from './social-metrics.mjs';
 import {buildStyleTrendBoard} from './style-trend-board.mjs';
 import {isPublishedFootwear} from '../public/assets/footwear-policy.mjs';
 import {publicationState} from '../public/assets/publication-window.mjs';
+import {variantGroupKey} from '../public/assets/catalog-view.mjs';
 import {kstDay} from './curation.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
@@ -52,16 +53,49 @@ export function keepOnePerProductUrl(products,held) {
  *  held with the reason, rather than three cards being published of which two
  *  show the wrong shoe.
  */
-export function holdPhotosSharedAcrossModels(products,held) {
+const PHOTO_SAME_SHOT=2;   // hamming distance at or under this is the same shot
+export function photoHamming(a,b) {
+  if(!a||!b||a.length!==b.length)return 99;
+  let d=0;for(let i=0;i<a.length;i++){let x=parseInt(a[i],16)^parseInt(b[i],16);while(x){d+=x&1;x>>=1;}}
+  return d;
+}
+export function holdPhotosSharedAcrossModels(products,held,signals={}) {
+  // Grouped by what the photograph *is*, not by the URL it came from. The
+  // cache names its files by SHA-256, so two products sharing a byte-identical
+  // shot already share a path - but a brand that re-encodes or resizes one
+  // shot per colourway defeats that, and the catalogue carried no perceptual
+  // hash at all until `npm run colors` started storing one. Where a hash is
+  // known, a near-identical shot joins the same group as an identical one.
+  const hashOf=p=>p.photoHash||signals[p.presentation?.cachedPath]?.phash||'';
+  const representative=new Map();
+  const keyFor=p=>{
+    const hash=hashOf(p);
+    if(!hash)return p.presentation?.image||'';
+    for(const [known,groupKey] of representative)
+      if(photoHamming(known,hash)<=PHOTO_SAME_SHOT)return groupKey;
+    representative.set(hash,'hash:'+hash);
+    return 'hash:'+hash;
+  };
   const groups=new Map();
-  for(const p of products){const i=p.presentation?.image;if(!i)continue;(groups.get(i)||groups.set(i,[]).get(i)).push(p);}
+  for(const p of products){const i=p.presentation?.image;if(!i)continue;const k=keyFor(p);(groups.get(k)||groups.set(k,[]).get(k)).push(p);}
   const drop=new Set();
   for(const group of groups.values()){
     if(group.length<2)continue;
-    const identity=p=>`${canonicalBrand(p.brand)}|${modelIdentityKeys(p)[0]||p.name}`;
+    // The card's own identity, so a men's and a women's listing of one model
+    // count as one model: KEEN photographs the Jasper once and both listings
+    // carry a near-identical copy of that shot, which is not two models
+    // claiming one photograph.
+    const identity=p=>variantGroupKey(p)||`${canonicalBrand(p.brand)}|${p.name}`;
     const models=[...new Set(group.map(identity))];
     if(models.length<2)continue;
-    const keep=group[0];
+    // Which of them the picture shows is not knowable from the record - these
+    // are hashed CDN paths - so the keeper is chosen by the same preferences
+    // the rest of the page uses: the women's listing before the men's, and a
+    // name without the shop's own listing furniture before one with it.
+    // Without this the Zephyr's women's listing was held for its men's twin.
+    const womens=/\bwomen(?:'?s)?\b/i,mens=/\bmen(?:'?s)?\b/i,furniture=/['"“”‘’()[\]]/;
+    const rank=p=>(womens.test(p.name)?0:mens.test(p.name)?2:1)*10+(furniture.test(p.name)?1:0);
+    const keep=[...group].sort((a,b)=>rank(a)-rank(b)||a.name.length-b.name.length)[0];
     for(const p of group){
       if(p===keep||identity(p)===identity(keep))continue;
       held.push({id:p.id,brand:p.brand,name:p.name,reason:'photo-shared-across-models',
@@ -201,7 +235,8 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   // published the Adrenaline GTS 10, the Ghost 18 and the Ghost Max 4 with a
   // single image between them, and the n>=4 rule above - written for
   // Havaianas' 38 - never saw a group of three.
-  result.snapshot.products=holdPhotosSharedAcrossModels(result.snapshot.products,result.review.held);
+  const photoSignals=(await readJson(path.join(directory,'data/official-photo-signals.json'),{photos:{}})).photos||{};
+  result.snapshot.products=holdPhotosSharedAcrossModels(result.snapshot.products,result.review.held,photoSignals);
   const photoCache=await readJson(path.join(directory,'data/photo-cache.json'),{images:{}});
   // A photograph the brand's CDN will not serve costs that one product its
   // card, the same answer the catalogue already gives a product with no

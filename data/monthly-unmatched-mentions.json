@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-30T18:05:15.499194+09:00",
+  "checkedAt": "2026-10-30T18:31:18.989004+09:00",
   "note": "SNS mentions here reference a model not found among this run's verified retail items and not registered in monthly-model-aliases.json. They are held, not auto-productized. Newsletter articles without an identifiable brand are held in monthly-staging-newsletter.json under unidentifiedArticles.",
   "sns": [],
   "mediaNotMatchedToRetail": 301

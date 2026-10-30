@@ -42,8 +42,8 @@ import subprocess
 import sys
 
 from brand_identity import canonical_brand
-from dedupe_rules import (drop_already_official, evergreen_keys, is_evergreen,
-                          official_identity_keys, prefer_women)
+from dedupe_rules import (drop_already_official, drop_excluded_brands, evergreen_keys,
+                          excluded_brand_keys, is_evergreen, official_identity_keys, prefer_women)
 from footwear_scope import clean_colour_value, colour_from_style, is_stated_value
 from image_signals import colour_distance, signals_for
 from model_grouping import assign_model_groups
@@ -680,7 +680,11 @@ def main():
     before_evergreen = len(published_retail)
     published_retail = [p for p in published_retail if not is_evergreen(p, evergreen)]
     evergreens = before_evergreen - len(published_retail)
-    published_newsletter = [n for n in newsletter_items
+    # A removed brand must not reach the page from any shop.
+    brand_status = {'step': 'excluded brands'}
+    excluded = excluded_brand_keys()
+    published_retail = drop_excluded_brands(published_retail, excluded, brand_status)
+    published_newsletter = [n for n in drop_excluded_brands(newsletter_items, excluded, {})
                             if not n.get('publishedAt') or n['publishedAt'][:10] >= cutoff_day]
 
     collected_by_source = {}
@@ -801,6 +805,7 @@ def main():
         'alreadyOfficial': official_status,
         'rereleasesExcluded': rereleases,
         'evergreenExcluded': evergreens,
+        'excludedBrands': brand_status,
         'retiredSourcesDropped': len(retired),
         'modelsIndexed': len(model_index),
         'publishedRetail': len(published_retail),

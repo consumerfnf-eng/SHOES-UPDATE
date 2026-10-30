@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-30T18:05:15.499194+09:00",
+  "checkedAt": "2026-10-30T18:31:18.989004+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -458,11 +458,11 @@
   "modelGrouping": {
     "step": "model grouping",
     "colourwayFromOwnName": 156,
-    "modelGroupsAssigned": 1473,
+    "modelGroupsAssigned": 1470,
     "groupedByStyleCode": 279,
     "groupedByColourSlot": 29,
     "joinedToExistingModel": 18,
-    "colourwaysRecoveredFromName": 414
+    "colourwaysRecoveredFromName": 411
   },
   "audienceMerge": {
     "step": "audience merge",
@@ -597,10 +597,14 @@
   },
   "rereleasesExcluded": 270,
   "evergreenExcluded": 128,
+  "excludedBrands": {
+    "step": "excluded brands",
+    "excludedBrandDropped": 4
+  },
   "retiredSourcesDropped": 0,
   "modelsIndexed": 9034,
-  "publishedRetail": 3106,
+  "publishedRetail": 3102,
   "publishedNewsletter": 613,
   "retailCollected": 19022,
-  "heldOutsideWindow": 15916
+  "heldOutsideWindow": 15920
 }
