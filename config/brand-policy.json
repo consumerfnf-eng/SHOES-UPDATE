@@ -431,13 +431,6 @@
       "mandatory": false
     },
     {
-      "id": "oakley-factory-team",
-      "name": "Oakley Factory Team",
-      "group": "outdoor",
-      "policy": "core",
-      "mandatory": false
-    },
-    {
       "id": "dries-van-noten",
       "name": "Dries Van Noten",
       "group": "contemporary",

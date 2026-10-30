@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {variantGroupName,variantGroupKey,groupProductVariants,preferWomenVariants,productAudience,uniqueColorVariants,variantColorLabel,variantMaterialLabel} from '../public/assets/catalog-view.mjs';
+import {variantGroupName,variantGroupKey,groupProductVariants,preferWomenVariants,productAudience,uniqueColorVariants,variantColorLabel,variantMaterialLabel,styleFamily,unifyVariantGroups} from '../public/assets/catalog-view.mjs';
 import {officialVariantLabels,parseArrivalListing,listingProduct,adidasProductColor,collectNewArrivals} from '../scripts/new-arrivals.mjs';
 import fs from 'node:fs';
 import {applyReviewedEvidence} from '../scripts/publish-curated.mjs';
@@ -168,4 +168,40 @@ test('a listing gallery made of bullet separators retains the On model and its o
  const url='https://www.on.com/en-us/products/cloudvista-3-m-3mg3004/mens/grain-saffron-shoes-3MG30045160',source='https://www.on.com/en-us/shop/new-arrivals/shoes';
  const text=`# New Arrivals\n[- ![On Cloudvista 3 Grain & Saffron Men Shoes](https://images.ctfassets.net/shoe.png)](${url})\n[![Grain | Saffron](https://images.ctfassets.net/shoe.png)](${url})\n[New color Cloudvista 3 Men – Trail Running $160.00](${url})`;
  const [candidate]=parseArrivalListing(text,{brand:'On',url:source,checkedAt:'2026-10-07T01:00:00Z'}),p=listingProduct(candidate,'2026-10-07T01:00:00Z');assert.equal(p.name,'Cloudvista 3');assert.equal(p.colorway,'Grain | Saffron');
+});
+
+test("a style code that ends in a colour code names the design, not the colour",()=>{
+ // Balenciaga's 865849WTSDN1000 and ...4000 are the Triple S.2 Denim in black
+ // and in blue, and the brand's own page shows them as two chips on one
+ // product. Eleven characters of style and model, four digits of colour.
+ assert.equal(styleFamily({style:'865849WTSDN1000'}),'865849WTSDN');
+ assert.equal(styleFamily({style:'865849WTSDN4000'}),'865849WTSDN');
+ // ...and the model characters still separate the models that share a style.
+ assert.notEqual(styleFamily({style:'865849WTR2G4917'}),styleFamily({style:'865849WTSDN1000'}));
+ // Nike writes the colour after the dash, Loewe after it in four digits, Dior
+ // after an underscore. A collector that carries the code at the end of a slug
+ // is read the same way.
+ assert.equal(styleFamily({style:'CW2288-111'}),'CW2288');
+ assert.equal(styleFamily({style:'L929282X52-9999'}),'L929282X52');
+ assert.equal(styleFamily({style:'3SN386AIR_A999'}),'3SN386AIR');
+ assert.equal(styleFamily({style:'3xl-tulle-sneaker-white-pink-734731W3XPT9050'}),'734731W3XPT');
+ // SSENSE's own code says brand and category, not design: 262476M237 is on
+ // every Valentino sneaker it sells, so the digits after it are a sequence.
+ assert.equal(styleFamily({style:'262476M237001'}),'');
+});
+
+test('the name and the code together only ever merge cards, never split one',()=>{
+ const balenciaga=[{brand:'Balenciaga',name:"Men's Triple S.2 Denim Sneaker in Black",colorway:'Black',style:'865849WTSDN1000',id:'a'},
+                   {brand:'Balenciaga',name:"Men's Triple S.2 Denim Sneaker in Blue",colorway:'Blue',style:'865849WTSDN4000',id:'b'}];
+ // Nike files one P-6000 under two style numbers; only the name joins those.
+ const nike=[{brand:'Nike',name:'P-6000 M',colorway:'White',style:'IX6221-100',id:'c'},
+             {brand:'Nike',name:'P-6000 M',colorway:'Black',style:'IX6999-010',id:'d'}];
+ // Valentino's Stud Up reaches SSENSE twice, once with its material in front.
+ const valentino=[{brand:'Valentino Garavani',name:'Leather & Nylon Stud Up Sneakers',colorway:'White',style:'262476M237001',id:'e'},
+                  {brand:'Valentino Garavani',name:'Stud Up Sneakers',colorway:'Black',style:'262476M237000',id:'f'}];
+ const all=[...balenciaga,...nike,...valentino];
+ unifyVariantGroups(all);
+ for(const pair of [balenciaga,nike,valentino])
+   assert.equal(new Set(pair.map(variantGroupKey)).size,1,`${pair[0].brand} should be one card`);
+ assert.equal(new Set(all.map(variantGroupKey)).size,3,'three shoes, three cards');
 });

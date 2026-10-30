@@ -351,8 +351,34 @@ export function popularity(signals, today, {product,socialMetrics=[],officialEli
 // back on two cards - one spelled with the swatches, one without.
 // Cleaned here as well as at collection, so re-curating the stored source
 // repairs what is already published without re-crawling anyone.
+// A product name has to be readable here, which means Latin letters or Hangul.
+// Louis Vuitton's Japanese store calls the LV Sneakerina "LV スニーカリーナ",
+// and the katakana reached a card untouched. These are the footwear words that
+// actually turn up, written the way the brand writes them in English; a name
+// with kana or Han characters left in it after this is reported rather than
+// shown, because guessing at a model name is worse than not having read it.
+const KANA_TERMS = [
+  ['スニーカリーナ', 'Sneakerina'], ['スニーカー', 'Sneaker'], ['ローファー', 'Loafer'],
+  ['サンダル', 'Sandal'], ['ブーツ', 'Boot'], ['スリッポン', 'Slip-On'], ['スライド', 'Slide'],
+  ['クロッグ', 'Clog'], ['バレエ', 'Ballet'], ['バレリーナ', 'Ballerina'], ['ミュール', 'Mule'],
+  ['メリージェーン', 'Mary Jane'], ['エスパドリーユ', 'Espadrille'], ['モカシン', 'Moccasin'],
+  ['トレーナー', 'Trainer'], ['ランニングシューズ', 'Running Shoes'], ['シューズ', 'Shoes'],
+  ['レザー', 'Leather'], ['スエード', 'Suede'], ['ナイロン', 'Nylon'], ['キャンバス', 'Canvas'],
+  ['メンズ', ''], ['ウィメンズ', ''], ['レディース', ''], ['新作', ''],
+];
+const CJK_LETTERS = /[぀-ヿ㐀-䶿一-鿿]/;
+export function inLatinOrHangul(value) {
+  return !CJK_LETTERS.test(String(value || ''));
+}
+export function readableName(name) {
+  let out = String(name || '');
+  if (inLatinOrHangul(out)) return out;
+  for (const [kana, english] of KANA_TERMS) out = out.split(kana).join(english ? ' ' + english + ' ' : ' ');
+  return out.replace(/\s{2,}/g, ' ').trim();
+}
+
 export function cleanProductName(name) {
-  return String(name || '')
+  return readableName(name)
     // Melissa's swatch link reads "+2 colors View Bloomy Sneaker in other
     // colors", with the shoe's name in the middle of the card's own wording.
     .replace(/^\+\d+\s*colou?rs?\s*/i, '')
@@ -371,6 +397,19 @@ export function cleanProductName(name) {
 // every colour word in the slug instead would read the "denim" of the model
 // name as a colour.
 const SLUG_CODE = /^[a-z0-9]*\d[a-z0-9]*$/i;
+// The page's own furniture, read as a colour. Balenciaga's listing puts a
+// "Close the dialog" control inside the card, and 22 records took it as their
+// colourway - which then showed as the chip's label and stopped the colour
+// being lifted out of the name. The name states the colour itself: these
+// listings are titled "... Sneaker in Black", "... in White/dark Blue/grey".
+const PAGE_FURNITURE = /close the dialog|quick view|shop now|add to (?:bag|cart)|view (?:product|details)|select (?:a )?size|선택하세요|자세히 보기/i;
+export function colorwayFromName(name) {
+  const tail = String(name || '').match(/\sin\s+([^,(]+)$/i)?.[1] || '';
+  const words = tail.trim().replace(/\s+/g, ' ');
+  // A colour, not a sentence: at most four words, letters and separators only.
+  return /^[\p{L}][\p{L}\s/&-]{1,40}$/u.test(words) && words.split(/[\s/]+/).length <= 5 ? words : '';
+}
+
 export function colorwayFromStyleSlug(style, name) {
   const slug = String(style || '').toLowerCase();
   const head = cleanProductName(name).toLowerCase().replace(/[^a-z0-9.]+/g, '-').replace(/^-|-$/g, '');
@@ -424,7 +463,9 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   const socialMetrics=validateSocialMetrics({...raw,...(official||{}),brand},today,{officialEligible:!!official,now});
   const visibleSignals = validateSignals(raw.sourceSignals, today), hot = popularity(visibleSignals, today,{product:raw,socialMetrics,officialEligible:!!official});
   const cleanName = cleanProductName(raw.name) || raw.name;
-  const colorway = String(raw.colorway || '').trim() || colorwayFromStyleSlug(raw.style, cleanName);
+  const declared = String(raw.colorway || '').trim();
+  const colorway = (PAGE_FURNITURE.test(declared) ? '' : declared)
+    || colorwayFromName(cleanName) || colorwayFromStyleSlug(raw.style, cleanName);
   const product = { id: raw.id, brand, name: cleanName, category: type.category, productType: type.category, fitReasons: fit.fitReasons,
     modelKey:raw.modelGroup||`${key(brand)}|${key(String(raw.name).split(/ — | – /)[0])}`,
     releaseDate: raw.releaseDate||'', releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release?.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),

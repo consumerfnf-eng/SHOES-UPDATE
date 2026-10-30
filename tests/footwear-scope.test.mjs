@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {classifyFootwear,officialHybridReview,dedupeKey,productStyle,inPublishedScope,labelVariantColours,labelUrlVariantColours,preferLateralView} from '../scripts/curation.mjs';
+import {classifyFootwear,officialHybridReview,dedupeKey,productStyle,inPublishedScope,labelVariantColours,labelUrlVariantColours,preferLateralView,cleanProductName,colorwayFromName,inLatinOrHangul} from '../scripts/curation.mjs';
 import {collectOfficialEvidence} from '../scripts/collect-evidence.mjs';
 import {footwearTypes,isPublishedFootwear} from '../public/assets/footwear-policy.mjs';
 import {categoryMatches} from '../public/assets/catalog-view.mjs';
@@ -202,4 +202,28 @@ test('a sole is not the photograph of a shoe',()=>{
   const bottega={brand:'Bottega Veneta',image:'https://bottega-veneta.dam.kering.com/asset/x/Medium/789_A.jpg',imageCandidates:[]};
   preferLateralView([bottega]);
   assert.match(bottega.image,/_A\.jpg$/);
+});
+
+test('a product name is Latin or Hangul, never kana',()=>{
+  // Louis Vuitton's Japanese store calls it LV スニーカリーナ, and the katakana
+  // reached a card untouched.
+  assert.equal(cleanProductName('LV スニーカリーナ'),'LV Sneakerina');
+  assert.equal(cleanProductName('LV ローファー'),'LV Loafer');
+  assert.equal(inLatinOrHangul('LV Sneakerina'),true);
+  assert.equal(inLatinOrHangul('나이키 스니커즈'),true,'Hangul is readable here');
+  assert.equal(inLatinOrHangul('LV スニーカリーナ'),false);
+  // An English or Korean name is left exactly as it is.
+  assert.equal(cleanProductName('Air Force 1'),'Air Force 1');
+  assert.equal(cleanProductName('나이키 에어포스1'),'나이키 에어포스1');
+});
+
+test("the page's own furniture is not a colour, and the name states one",()=>{
+  // Balenciaga's listing puts a "Close the dialog" control inside the card and
+  // 22 records took it as their colourway, which then stopped the colour being
+  // lifted out of the name.
+  assert.equal(colorwayFromName("Men's Triple S.2 Denim Sneaker in Black"),'Black');
+  assert.equal(colorwayFromName("Men's Hamptons Worn-out Sneaker in White/dark Blue/grey"),'White/dark Blue/grey');
+  // A sentence is not a colour.
+  assert.equal(colorwayFromName('Sneaker in a padded nappa leather with a rubber sole'),'');
+  assert.equal(colorwayFromName('Air Force 1'),'');
 });

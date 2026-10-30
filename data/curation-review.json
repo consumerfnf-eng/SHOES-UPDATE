@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T05:44:47.331Z",
+  "checkedAt": "2026-10-30T06:31:00.811Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -13708,7 +13708,7 @@
       "id": "live-236df41d253752bc",
       "brand": "Oakley Factory Team",
       "name": "Aquaterra Hybrid",
-      "reason": "hybrid-review-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-8c5551cfd592de91",

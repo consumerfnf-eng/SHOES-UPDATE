@@ -239,7 +239,7 @@ function withoutLeadingNoise(value){
 // seconds doing it. The answer cannot change while the record exists, so it
 // is computed once per record and kept on a WeakMap, which releases with the
 // record itself.
-const NAME_CACHE = new WeakMap(), KEY_CACHE = new WeakMap();
+let NAME_CACHE = new WeakMap(), KEY_CACHE = new WeakMap();
 const memo = (cache, p, compute) => {
   if (!p || typeof p !== 'object') return compute(p);
   if (cache.has(p)) return cache.get(p);
@@ -291,6 +291,30 @@ export function variantMaterialLabel(p) {
   if (!found.length || !lettersIn(name)) return '';
   return found.map(w => w.replace(/\\b[a-z]/g, c => c.toUpperCase())).join(' ');
 }
+const MATERIAL_PREFIX = new RegExp('^(?:' +
+  MATERIAL_WORDS.slice().sort((a, b) => b.length - a.length).map(escapeWord).join('|') +
+  ')(?=$|[\\s|—–-])', 'i');
+const LEADING_JOINER = /^[&+,]\s*|^(?:and|und|et)\s+/i;
+/** The same for a material the name opens with. SSENSE lists Valentino's
+ *  Stud Up twice - "Leather & Nylon Stud Up Sneakers" in white and "Stud Up
+ *  Sneakers" in black - and the retailer's product code cannot separate them
+ *  either: 262476M237 is on every Valentino sneaker it sells, so the digits
+ *  after it are a sequence and not a colour. The name is all there is, and it
+ *  says the same shoe twice. */
+function withoutLeadingMaterial(value) {
+  let name = String(value || '').trim();
+  let changed = false;
+  for (let i = 0; i < 6; i++) {
+    const match = name.match(MATERIAL_PREFIX);
+    if (!match) { const joiner = name.match(LEADING_JOINER); if (!joiner) break; name = name.slice(joiner[0].length).trim(); continue; }
+    const next = name.slice(match[0].length).trim().replace(LEADING_JOINER, '').trim();
+    // What is left has to be a model, not just the word "Sneakers".
+    const bare = next.replace(CATEGORY_SUFFIX, '').replace(/^(?:running\s+)?(?:shoes?|sneakers?|trainers?)$/i, '');
+    if (lettersIn(bare) < 2) break;
+    name = next; changed = true;
+  }
+  return changed ? name : String(value || '');
+}
 /** The name with its trailing material removed, or unchanged when removing it
  *  would leave no model behind. */
 function withoutTrailingMaterial(value) {
@@ -323,7 +347,7 @@ function computeVariantGroupName(p) {
   base = withoutLeadingNoise(base.replace(TRAILING_STYLE_CODE,' '));
   // Then the material, by the same reasoning as the colour: Curb Snake and
   // Curb Velvet are one Curb.
-  base = withoutTrailingMaterial(base);
+  base = withoutTrailingMaterial(withoutLeadingMaterial(base));
   return withoutAudienceLabel(trimModelSeparators(base))||p.name;
 }
 // Three Footwear News pieces about the Celine x Reebok Freestyle Lo ran as
@@ -354,6 +378,80 @@ function newsletterSubjectKey(p) {
   if (/^[0-9a-f]{12,}$/i.test(String(p?.photoHash || ''))) return `subject|${brand}|${String(p.photoHash).toLowerCase()}`;
   return '';
 }
+// A style code that ends in a colour code.
+//
+// Balenciaga's 865849WTSDN1000 and 865849WTSDN4000 are the Triple S.2 Denim in
+// black and in blue, and the brand's own product page shows them as two chips
+// on one product. Eleven characters of style and model, then four digits of
+// colour. Nike writes the colour as the three digits after the dash -
+// CW2288-111 and CW2288-100 are one Air Force 1 - Loewe as four digits after
+// it, Dior after an underscore.
+//
+// Checked against the live catalogue before being trusted: every one of these
+// shapes groups products whose names agree, and the code is stricter than the
+// name, which still carries the colour when the colour field was never filled.
+// Only exact shapes qualify; a code that does not match one is not guessed at.
+const STYLE_FAMILIES = [
+  /^([A-Z0-9]{11})(\d{4})$/,          // Kering: Balenciaga, Bottega Veneta, Gucci, Saint Laurent
+  /^([A-Z]{2}\d{4})-(\d{3})$/,        // Nike, Jordan, Converse
+  /^([A-Z0-9]{10})-(\d{4})$/,         // Loewe
+  /^([0-9A-Z]{6,9}[A-Z]{3})_([A-Z0-9]{4})$/, // Dior
+];
+/** The style code itself, which some collectors carry at the end of a slug. */
+export function bareStyleCode(style) {
+  const value = String(style || '').trim().toUpperCase();
+  if (!value) return '';
+  if (!/[^A-Z0-9_-]/.test(value) && !value.includes('--')) {
+    const tail = value.split('-').at(-1);
+    if (STYLE_FAMILIES.some(re => re.test(value))) return value;
+    if (tail && STYLE_FAMILIES.some(re => re.test(tail))) return tail;
+    return value;
+  }
+  return value;
+}
+/** The part of a style code that names the design rather than the colour. */
+export function styleFamily(p) {
+  const code = bareStyleCode(p?.style);
+  for (const pattern of STYLE_FAMILIES) {
+    const match = code.match(pattern);
+    if (match) return match[1];
+  }
+  return '';
+}
+// Which records are the same shoe, taking the name and the style code
+// together.
+//
+// Each says something the other does not. Balenciaga's 865849WTSDN1000 and
+// ...4000 are one Triple S.2 Denim and the code is the only place that is
+// stated outright. Nike files one P-6000 under two style numbers, where the
+// name is the only thing that joins them. So neither overrides the other:
+// records are joined when either agrees, which can only ever merge cards and
+// never split one that was already whole.
+let UNIFIED = new WeakMap();
+export function unifyVariantGroups(products) {
+  UNIFIED = new WeakMap();
+  NAME_CACHE = new WeakMap();
+  KEY_CACHE = new WeakMap();
+  const parent = new Map();
+  const find = key => { let k = key; while (parent.get(k) !== k) { parent.set(k, parent.get(parent.get(k))); k = parent.get(k); } return k; };
+  const add = key => { if (!parent.has(key)) parent.set(key, key); return find(key); };
+  const union = (a, b) => { const x = add(a), y = add(b); if (x !== y) parent.set(x, y); };
+  const brandKey = p => String(p?.brand || '').normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu, '').toLowerCase();
+  const rows = [];
+  for (const product of products || []) {
+    // An article is one card by default and is keyed on itself; joining those
+    // by a shared model name is what merged 42 pieces into one Jordan card.
+    if (isOverlay(product) && overlayKind(product) === 'newsletter') continue;
+    const name = computeVariantGroupKey(product);
+    const family = styleFamily(product);
+    const code = family ? `style|${brandKey(product)}|${family}` : '';
+    rows.push({product, name, code});
+    add(name);
+    if (code) union(name, code);
+  }
+  for (const {product, name} of rows) UNIFIED.set(product, find(name));
+  return UNIFIED;
+}
 function computeVariantGroupKey(p) {
   // A newsletter item is an article, not a SKU. Grouping those by model name
   // merged 42 separate Footwear News pieces into one "Michael Jordan" card,
@@ -364,6 +462,13 @@ function computeVariantGroupKey(p) {
   // 초콜릿" are one shoe. Nothing in the record says 실브라운 is a colour, so
   // that answer cannot be re-derived here; it is used as given.
   if (p.modelGroupId) return `model|${p.modelGroupId}`;
+  // Two records are the same shoe if either the name or the brand's own style
+  // code says so, and unifyVariantGroups has already worked out which records
+  // that joins up. Asking the code alone would split as often as it merges:
+  // Nike files one P-6000 under two style numbers, and the name had them
+  // together. Asking the name alone misses what only the code knows.
+  const unified = UNIFIED.get(p);
+  if (unified) return unified;
   if (!p?.name) return p?.modelKey || p?.id;
   const normalize = value => String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'');
   const name = variantGroupName(p);

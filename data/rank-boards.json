@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T06:04:54.724Z",
+  "checkedAt": "2026-10-30T06:32:29.635Z",
   "boards": [
     {
       "id": "musinsa-sneaker-ranking",
@@ -8,12 +8,24 @@
       "retailer": "Musinsa",
       "basis": "무신사 스니커즈 랭킹 · 스토어가 집계한 판매 순위",
       "sourceUrl": "https://www.musinsa.com/main/sneaker/ranking?categoryCode=103004",
-      "checkedAt": "2026-10-30T06:04:54.724Z",
+      "checkedAt": "2026-10-30T06:32:29.635Z",
       "size": 15,
-      "comparedWith": "2026-10-30T06:04:25.226Z",
+      "comparedWith": "2026-10-30T06:04:54.724Z",
       "items": [
         {
           "rank": 1,
+          "key": "7284480",
+          "brand": "나이키",
+          "name": "에어 조던 1 브루클린 로우 W - 블랙:메탈릭 실버 / IQ4927-001",
+          "priceLabel": "209,000원",
+          "discountRatio": 0,
+          "image": "https://image.msscdn.net/images/goods_img/20260909/7284480/7284480_17893694308743_500.jpg",
+          "url": "https://www.musinsa.com/products/7284480",
+          "soldOut": false,
+          "movement": "new"
+        },
+        {
+          "rank": 2,
           "key": "7460361",
           "brand": "온루",
           "name": "[ONRU x kinchi x 스토커즈] DUAL/WKRS - 808",
@@ -22,11 +34,12 @@
           "image": "https://image.msscdn.net/images/goods_img/20261006/7460361/7460361_17923779227501_500.jpg",
           "url": "https://www.musinsa.com/products/7460361",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 1
+          "movement": "down",
+          "previousRank": 1,
+          "change": 1
         },
         {
-          "rank": 2,
+          "rank": 3,
           "key": "7542730",
           "brand": "뉴발란스",
           "name": "NBRJGF030B / Winter Rover / SD2520BK (BLACK)",
@@ -35,11 +48,12 @@
           "image": "https://image.msscdn.net/images/goods_img/20261016/7542730/7542730_17924710191021_500.jpg",
           "url": "https://www.musinsa.com/products/7542730",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 2
+          "movement": "down",
+          "previousRank": 2,
+          "change": 1
         },
         {
-          "rank": 3,
+          "rank": 4,
           "key": "3901126",
           "brand": "뉴발란스",
           "name": "NBPFGF733K / W480SK5 (BLACK)",
@@ -48,21 +62,9 @@
           "image": "https://image.msscdn.net/images/goods_img/20240226/3901126/3901126_17479644701162_500.jpg",
           "url": "https://www.musinsa.com/products/3901126",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 3
-        },
-        {
-          "rank": 4,
-          "key": "4741662",
-          "brand": "살로몬",
-          "name": "XT-6 GTX_L47450600",
-          "priceLabel": "295,000원",
-          "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20250123/4741662/4741662_17857222660244_500.jpg",
-          "url": "https://www.musinsa.com/products/4741662",
-          "soldOut": false,
-          "movement": "same",
-          "previousRank": 4
+          "movement": "down",
+          "previousRank": 3,
+          "change": 1
         },
         {
           "rank": 5,
@@ -79,6 +81,32 @@
         },
         {
           "rank": 6,
+          "key": "7407568",
+          "brand": "뉴발란스",
+          "name": "NBPDGF762C / MT10O6L5 (CHARCOAL)",
+          "priceLabel": "189,000원",
+          "discountRatio": 0,
+          "image": "https://image.msscdn.net/images/goods_img/20260928/7407568/7407568_17930883132622_500.jpg",
+          "url": "https://www.musinsa.com/products/7407568",
+          "soldOut": false,
+          "movement": "up",
+          "previousRank": 15,
+          "change": 9
+        },
+        {
+          "rank": 7,
+          "key": "4741660",
+          "brand": "살로몬",
+          "name": "XT-위스퍼_L47762000",
+          "priceLabel": "230,000원",
+          "discountRatio": 0,
+          "image": "https://image.msscdn.net/images/goods_img/20250123/4741660/4741660_17857223023770_500.jpg",
+          "url": "https://www.musinsa.com/products/4741660",
+          "soldOut": false,
+          "movement": "new"
+        },
+        {
+          "rank": 8,
           "key": "4678344",
           "brand": "뉴발란스",
           "name": "NBPDGF733B / U740BM2 (BLACK)",
@@ -87,60 +115,33 @@
           "image": "https://image.msscdn.net/images/goods_img/20241223/4678344/4678344_17356097869270_500.jpg",
           "url": "https://www.musinsa.com/products/4678344",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 6
-        },
-        {
-          "rank": 7,
-          "key": "5437435",
-          "brand": "어그",
-          "name": "[WOMEN] 클래식 울트라 미니 플랫폼 - 블랙 / 1135092-BLK",
-          "priceLabel": "278,000원",
-          "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20250910/5437435/5437435_17604244218197_500.jpg",
-          "url": "https://www.musinsa.com/products/5437435",
-          "soldOut": false,
-          "movement": "same",
-          "previousRank": 7
-        },
-        {
-          "rank": 8,
-          "key": "595039",
-          "brand": "닥터마틴",
-          "name": "1461 3홀 블랙 스무스 / 11838002",
-          "priceLabel": "229,000원",
-          "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20170728/595039/595039_5_500.jpg",
-          "url": "https://www.musinsa.com/products/595039",
-          "soldOut": false,
-          "movement": "same",
-          "previousRank": 8
+          "movement": "down",
+          "previousRank": 6,
+          "change": 2
         },
         {
           "rank": 9,
-          "key": "7261205",
-          "brand": "킨치",
-          "name": "TYPE2 BOOTS - 808 (a)",
-          "priceLabel": "296,100원",
-          "discountRatio": 10,
-          "image": "https://image.msscdn.net/images/prd_img/20260907/7261205/detail_7261205_17889422014664_500.jpg",
-          "url": "https://www.musinsa.com/products/7261205",
+          "key": "7260774",
+          "brand": "아식스",
+          "name": "젤 카야노 12.1 MSS - 블랙/블랙 / 1203B424-001",
+          "priceLabel": "209,000원",
+          "discountRatio": 0,
+          "image": "https://image.msscdn.net/images/goods_img/20260907/7260774/7260774_17899567121035_500.jpg",
+          "url": "https://www.musinsa.com/products/7260774",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 9
+          "movement": "new"
         },
         {
           "rank": 10,
-          "key": "4371012",
-          "brand": "나이키",
-          "name": "에어 포스 1 07 WB M - 플랙스:검 라이트 브라운:블랙:위트 / CJ9179-200",
-          "priceLabel": "169,000원",
+          "key": "7276916",
+          "brand": "뉴발란스",
+          "name": "NBPDGF717B / U530JPB (BLACK)",
+          "priceLabel": "139,000원",
           "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20240826/4371012/4371012_17255868621694_500.jpg",
-          "url": "https://www.musinsa.com/products/4371012",
+          "image": "https://image.msscdn.net/images/goods_img/20260908/7276916/7276916_17889187390391_500.jpg",
+          "url": "https://www.musinsa.com/products/7276916",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 10
+          "movement": "new"
         },
         {
           "rank": 11,
@@ -157,58 +158,92 @@
         },
         {
           "rank": 12,
-          "key": "3976350",
+          "key": "4442080",
           "brand": "나이키",
-          "name": "에어 포스 1 07 M - 화이트 / CW2288-111",
-          "priceLabel": "149,000원",
-          "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20240321/3976350/3976350_17115804993997_500.jpg",
-          "url": "https://www.musinsa.com/products/3976350",
+          "name": "에어 조던 1 로우 W - 울프 그레이:화이트 / DC0774-105",
+          "priceLabel": "134,100원",
+          "discountRatio": 10,
+          "image": "https://image.msscdn.net/images/goods_img/20240918/4442080/4442080_17271359077800_500.jpg",
+          "url": "https://www.musinsa.com/products/4442080",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 12
+          "movement": "new"
         },
         {
           "rank": 13,
-          "key": "7516547",
-          "brand": "노스페이스",
-          "name": "NS85S31B 눕시 뮬 REAL BLACK",
-          "priceLabel": "67,640원",
-          "discountRatio": 24,
-          "image": "https://image.msscdn.net/images/goods_img/20261014/7516547/7516547_17919617458276_500.jpg",
-          "url": "https://www.musinsa.com/products/7516547",
+          "key": "4751231",
+          "brand": "뉴발란스",
+          "name": "NBPDGF703S / M1906REH (SILVER)",
+          "priceLabel": "189,000원",
+          "discountRatio": 0,
+          "image": "https://image.msscdn.net/images/goods_img/20250203/4751231/4751231_17864054040432_500.jpg",
+          "url": "https://www.musinsa.com/products/4751231",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 13
+          "movement": "new"
         },
         {
           "rank": 14,
-          "key": "1590036",
-          "brand": "닥터마틴",
-          "name": "1460 8홀 가우초 브라운 / 11822203",
-          "priceLabel": "260,000원",
-          "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20200908/1590036/1590036_2_500.jpg",
-          "url": "https://www.musinsa.com/products/1590036",
+          "key": "7261205",
+          "brand": "킨치",
+          "name": "TYPE2 BOOTS - 808 (a)",
+          "priceLabel": "296,100원",
+          "discountRatio": 10,
+          "image": "https://image.msscdn.net/images/prd_img/20260907/7261205/detail_7261205_17889422014664_500.jpg",
+          "url": "https://www.musinsa.com/products/7261205",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 14
+          "movement": "down",
+          "previousRank": 9,
+          "change": 5
         },
         {
           "rank": 15,
-          "key": "7407568",
+          "key": "7542966",
           "brand": "뉴발란스",
-          "name": "NBPDGF762C / MT10O6L5 (CHARCOAL)",
-          "priceLabel": "189,000원",
+          "name": "NBPDGF056C / U204L9G0 (CHARCOAL)",
+          "priceLabel": "159,000원",
           "discountRatio": 0,
-          "image": "https://image.msscdn.net/images/goods_img/20260928/7407568/7407568_17930883132622_500.jpg",
-          "url": "https://www.musinsa.com/products/7407568",
+          "image": "https://image.msscdn.net/images/goods_img/20261016/7542966/7542966_17926320685490_500.jpg",
+          "url": "https://www.musinsa.com/products/7542966",
           "soldOut": false,
-          "movement": "same",
-          "previousRank": 15
+          "movement": "new"
         }
       ],
-      "departed": []
+      "departed": [
+        {
+          "key": "4741662",
+          "rank": 4,
+          "name": "살로몬 XT-6 GTX_L47450600"
+        },
+        {
+          "key": "5437435",
+          "rank": 7,
+          "name": "어그 [WOMEN] 클래식 울트라 미니 플랫폼 - 블랙 / 1135092-BLK"
+        },
+        {
+          "key": "595039",
+          "rank": 8,
+          "name": "닥터마틴 1461 3홀 블랙 스무스 / 11838002"
+        },
+        {
+          "key": "4371012",
+          "rank": 10,
+          "name": "나이키 에어 포스 1 07 WB M - 플랙스:검 라이트 브라운:블랙:위트 / CJ9179-200"
+        },
+        {
+          "key": "3976350",
+          "rank": 12,
+          "name": "나이키 에어 포스 1 07 M - 화이트 / CW2288-111"
+        },
+        {
+          "key": "7516547",
+          "rank": 13,
+          "name": "노스페이스 NS85S31B 눕시 뮬 REAL BLACK"
+        },
+        {
+          "key": "1590036",
+          "rank": 14,
+          "name": "닥터마틴 1460 8홀 가우초 브라운 / 11822203"
+        }
+      ]
     },
     {
       "id": "ssense-sneakers-trending",
@@ -216,9 +251,9 @@
       "retailer": "SSENSE",
       "basis": "SSENSE 스니커즈 기본 정렬(TRENDING) · 노출 순서",
       "sourceUrl": "https://www.ssense.com/en-us/men/sneakers",
-      "checkedAt": "2026-10-30T06:04:54.724Z",
+      "checkedAt": "2026-10-30T06:32:29.635Z",
       "size": 15,
-      "comparedWith": "2026-10-30T06:04:12.102Z",
+      "comparedWith": "2026-10-30T06:04:54.724Z",
       "items": [
         {
           "rank": 1,
@@ -228,7 +263,8 @@
           "priceLabel": "USD 1,030",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262270M237004_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/salvatore-ferragamo/white-gancini-sneakers/19403311",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 1
         },
         {
           "rank": 2,
@@ -238,7 +274,8 @@
           "priceLabel": "USD 200",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262011M236014_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/nike/black-gt-future-sneakers/19375141",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 2
         },
         {
           "rank": 3,
@@ -248,7 +285,8 @@
           "priceLabel": "USD 200",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262011M236013_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/nike/red-gt-future-sneakers/19375131",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 3
         },
         {
           "rank": 4,
@@ -258,7 +296,8 @@
           "priceLabel": "USD 180",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262011M237106_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/nike/black-air-max-95-big-bubble-sneakers/19374721",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 4
         },
         {
           "rank": 5,
@@ -268,7 +307,8 @@
           "priceLabel": "USD 135",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262011M237051_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/nike/black-zoom-skylon-11-sneakers/19372431",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 5
         },
         {
           "rank": 6,
@@ -278,7 +318,8 @@
           "priceLabel": "USD 95",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262011M237118_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/nike/black-v5-rnr-sneakers/19374971",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 6
         },
         {
           "rank": 7,
@@ -288,7 +329,8 @@
           "priceLabel": "USD 95",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262011M237074_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/nike/black-waffle-racer-sneakers/19373241",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 7
         },
         {
           "rank": 8,
@@ -298,7 +340,8 @@
           "priceLabel": "USD 95",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262011M237073_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/nike/white-waffle-racer-sneakers/19373221",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 8
         },
         {
           "rank": 9,
@@ -308,7 +351,8 @@
           "priceLabel": "USD 175",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262921M237046_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/saucony/khaki-progrid-omni-9-sneakers/19401861",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 9
         },
         {
           "rank": 10,
@@ -318,7 +362,8 @@
           "priceLabel": "USD 175",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262921M237045_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/saucony/white-progrid-omni-9-sneakers/19401851",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 10
         },
         {
           "rank": 11,
@@ -328,7 +373,8 @@
           "priceLabel": "USD 175",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262921M237042_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/saucony/silver-progrid-v2-space-cowboy-sneakers/19401821",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 11
         },
         {
           "rank": 12,
@@ -338,7 +384,8 @@
           "priceLabel": "USD 145",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262921M237022_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/saucony/off-white-progrid-omni-9-sneakers/19401621",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 12
         },
         {
           "rank": 13,
@@ -348,7 +395,8 @@
           "priceLabel": "USD 135",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262921M237030_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/saucony/white-and-blue-progrid-ride-1-sneakers/19401701",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 13
         },
         {
           "rank": 14,
@@ -358,7 +406,8 @@
           "priceLabel": "USD 125",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262921M237041_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/saucony/black-586i-space-cowboy-sneakers/19401811",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 14
         },
         {
           "rank": 15,
@@ -368,7 +417,8 @@
           "priceLabel": "USD 105",
           "image": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262921M237029_1.jpg",
           "url": "https://www.ssense.com/en-us/men/product/saucony/black-racer-80-sneakers/19401691",
-          "movement": "first"
+          "movement": "same",
+          "previousRank": 15
         }
       ],
       "departed": []
@@ -438,6 +488,45 @@
           "7460361": 1,
           "7516547": 13,
           "7542730": 2
+        },
+        "ssense-sneakers-trending": {
+          "262270M237004": 1,
+          "262011M236014": 2,
+          "262011M236013": 3,
+          "262011M237106": 4,
+          "262011M237051": 5,
+          "262011M237118": 6,
+          "262011M237074": 7,
+          "262011M237073": 8,
+          "262921M237046": 9,
+          "262921M237045": 10,
+          "262921M237042": 11,
+          "262921M237022": 12,
+          "262921M237030": 13,
+          "262921M237041": 14,
+          "262921M237029": 15
+        }
+      }
+    },
+    {
+      "checkedAt": "2026-10-30T06:32:29.635Z",
+      "boards": {
+        "musinsa-sneaker-ranking": {
+          "3901126": 4,
+          "4442080": 12,
+          "4678344": 8,
+          "4741660": 7,
+          "4751231": 13,
+          "5334806": 5,
+          "5334814": 11,
+          "7260774": 9,
+          "7261205": 14,
+          "7276916": 10,
+          "7284480": 1,
+          "7407568": 6,
+          "7460361": 2,
+          "7542730": 3,
+          "7542966": 15
         },
         "ssense-sneakers-trending": {
           "262270M237004": 1,

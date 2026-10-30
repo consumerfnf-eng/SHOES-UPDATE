@@ -3,7 +3,7 @@ import { groupedBrands } from './brand-groups.mjs';
 import { analysisCsv, analysisRows, priceDistribution, materialDistribution, colourDistribution,
          priceKrw, priceBand, colourFamily, materialsOf, RATE_NOTE,categoryDistribution,useModelCategories} from './analysis.mjs';
 import {isPublishedFootwear} from './footwear-policy.mjs';
-import { hasVisual, productImageUrl, kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, preferWomenVariants, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch, isOverlay, overlayKind, overlayReleaseState, overlayWindowDay, retailerId, trendTerms, trendTermGroups, trendKeywordMatches } from './catalog-view.mjs';
+import { hasVisual, productImageUrl, kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, preferWomenVariants, unifyVariantGroups, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch, isOverlay, overlayKind, overlayReleaseState, overlayWindowDay, retailerId, trendTerms, trendTermGroups, trendKeywordMatches } from './catalog-view.mjs';
 
 const $ = id => document.getElementById(id);
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -187,6 +187,10 @@ function rebuildProducts() {
   // How many of this week's trending hashtags name each item. One match puts
   // it on the SNS tab; the count is what orders it there, so the items the
   // most hashtags are talking about come first.
+  // Which records are the same shoe, worked out once over the whole list -
+  // the official catalogue and the retail overlay together - so a card is the
+  // same card whichever tab it is seen from.
+  unifyVariantGroups(products);
   const keywordTerms=(trends?.keywords||[]).map(k=>trendTermGroups(k)).filter(t=>t.length);
   if(keywordTerms.length)for(const p of products){
     const hits=keywordTerms.filter(terms=>trendKeywordMatches(p,terms)).length;
@@ -406,10 +410,9 @@ function renderRankBoards(){
         <a class="text-button" href="${esc(safeUrl(board.sourceUrl))}" target="_blank" rel="noopener noreferrer">원본 랭킹 ↗</a>
       </header>
       <ol class="rank-list">${board.items.map(item=>`<li class="rank-item">
-        <span class="rank-number">${item.rank}</span>
-        ${movementMarkup(item)}
         <a class="rank-photo" href="${esc(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer">${
-          safeUrl(item.image)?`<img src="${esc(item.image)}" alt="${esc(item.brand+' '+item.name)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`:'<span class="image-missing">사진 없음</span>'}</a>
+          safeUrl(item.image)?`<img src="${esc(item.image)}" alt="${esc(item.brand+' '+item.name)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`:'<span class="image-missing">사진 없음</span>'}
+          <span class="rank-number">${item.rank}</span>${movementMarkup(item)}</a>
         <span class="rank-copy"><span class="rank-brand">${esc(item.brand||'브랜드 미표기')}</span>
           <a class="rank-name" href="${esc(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer">${esc(item.name)}</a>
           <span class="rank-price">${esc(item.priceLabel||'가격 미표기')}${item.discountRatio?` <small>${item.discountRatio}%</small>`:''}${item.soldOut?' <small>품절</small>':''}</span></span>
