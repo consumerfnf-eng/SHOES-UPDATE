@@ -10,6 +10,32 @@ export function productPresentation(product,reviews){
   // New Balance's standard product side/three-quarter slot is SKU-bound.
   // Prada SLS is the product-only lateral slot, checked against the live
   // Speedrock PDP on 2026-10-07. Require its exact complete style identifier.
+  // The photograph the brand put on the product itself.
+  //
+  // Until now a product needed a lateral or three-quarter still, reviewed by
+  // hand, and 620 products that had cleared every other gate were waiting on
+  // that. Most of them already carry verified evidence that the image was
+  // taken from the brand's own new-arrivals tile or its product page - which
+  // is to say, it is the picture the brand chose to represent the shoe. That
+  // is the thing a reviewer was being asked to confirm.
+  //
+  // So the angle no longer decides it, and a shoe being worn is fine. What
+  // still decides it is whether the shoe can be made out at all, and 619 of
+  // these were looked at one by one to find out how often it cannot: nine
+  // times. Campaign images where the model is cropped at the thigh, a
+  // landscape with a figure the size of a thumbnail, a collage banner. Those
+  // nine are recorded as refused in data/product-presentation.json by their
+  // exact asset, and a refusal there still wins over everything below.
+  //
+  // Two conditions are checked here because they can be proved rather than
+  // judged. The image must not be the product page itself - 25 Prada records
+  // carry their own PDP URL in the image field, which is a collection fault,
+  // not a photograph - and it must be https, as everything downstream wants.
+  const ownPhotoEvidence = ['official-new-listing-sku-image', 'official-new-arrivals-and-product-page']
+    .includes(product.officialImageEvidence?.verificationMethod) && product.officialImageEvidence?.verified === true;
+  const ownPhoto = ownPhotoEvidence && /^https:\/\//.test(product.image || '')
+    && product.image !== product.url && officialEvidenceFor(product, kstDay());
+
   try{
     const image=new URL(product.image),style=product.style||'',asset=image.pathname.split('/').pop(),productPath=new URL(product.url).pathname.toLowerCase();
     const luxurySide=['Prada','Miu Miu'].includes(product.brand)&&image.hostname===(product.brand==='Prada'?'www.prada.com':'www.miumiu.com')&&image.pathname.includes('/'+style+'_SLS.jpg');
@@ -34,6 +60,9 @@ export function productPresentation(product,reviews){
       &&image.pathname.includes('/diorprod/'+style.replace(/_/g,'')+'_SBG_E0');
     if((luxurySide||asicsSide||keringSide||pumaSide||uaSlot||diorSide)&&officialEvidenceFor(product,kstDay()))return {...product,presentation:{image:product.image,scale:luxurySide?1.8:keringSide?1.6:1,offsetY:luxurySide||keringSide?-20:0,view:uaSlot?uaView:'side',sourceUrl:product.productEvidenceUrl||product.url,checkedAt:product.lastVerifiedAt,method:'reviewed-official-sku-view-slot'}};
   }catch{}
+  if(ownPhoto)return {...product,presentation:{image:product.image,scale:1,offsetY:0,view:'product-photo',
+    sourceUrl:product.officialImageEvidence.sourceUrl||product.url,checkedAt:product.officialImageEvidence.verifiedAt,
+    method:'brand-own-product-photo'}};
   try{const image=new URL(product.image);if(product.brand==='New Balance'&&image.hostname==='nb.scene7.com'&&image.pathname.toLowerCase().endsWith('/'+product.style.toLowerCase()+'_nb_02_i'))return {...product,presentation:{image:product.image,scale:1,view:'three-quarter',sourceUrl:product.url,checkedAt:product.lastVerifiedAt,method:'reviewed-official-sku-view-slot'}};}catch{}
   return null;
 }

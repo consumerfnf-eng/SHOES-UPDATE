@@ -52,3 +52,41 @@ test('SKU-bound view slots pass only for the brand, host and slot they belong to
  assert.equal(productPresentation({...bal,image:bal.image.replace('_X.jpg','_Z.jpg')},{products:[]}),null);
  assert.equal(productPresentation({...bal,url:'https://www.balenciaga.com/en-us/other-shoe-000000.html'},{products:[]}),null,'the code still has to appear in the product path');
 });
+
+// The brand's own representative photo, at whatever angle, once the angle
+// stopped deciding it. What still decides it is that the shoe can be seen -
+// which is a judgement, so it is recorded per asset rather than guessed here.
+test("a brand's own product photo is accepted, and a refusal still wins", () => {
+ const today=new Date().toISOString();
+ const base={id:'own',brand:'KEEN',style:'uneek-lea-tangerine',
+   url:'https://www.keenfootwear.com/p/uneek-lea.html',
+   image:'https://cdn.shopify.com/s/files/1/0607/3263/7348/files/9ac2a618.jpg',
+   lastVerifiedAt:today,
+   productEvidenceUrl:'https://www.keenfootwear.com/p/uneek-lea.html',
+   officialProductEvidence:{verified:true,verificationMethod:'official-new-arrivals-and-product-page',verifiedAt:today,
+     contentHash:'h',identifierType:'brand-style-code',brand:'KEEN',style:'uneek-lea-tangerine',
+     url:'https://www.keenfootwear.com/p/uneek-lea.html',sourceUrl:'https://www.keenfootwear.com/p/uneek-lea.html'},
+   officialImageEvidence:{verified:true,verificationMethod:'official-new-arrivals-and-product-page',verifiedAt:today,
+     contentHash:'h',identifierType:'brand-style-code',brand:'KEEN',style:'uneek-lea-tangerine',
+     url:'https://cdn.shopify.com/s/files/1/0607/3263/7348/files/9ac2a618.jpg',
+     sourceUrl:'https://www.keenfootwear.com/p/uneek-lea.html'}};
+ const out=productPresentation(base,{products:[]});
+ assert(out,'a brand photo with verified evidence is accepted');
+ assert.equal(out.presentation.view,'product-photo');
+ assert.equal(out.presentation.method,'brand-own-product-photo');
+ assert.equal(out.presentation.image,base.image,'the brand photo is used as it stands');
+ // A reviewed refusal for this exact asset keeps it out however good the
+ // evidence looks - that is how the nine that showed no shoe are held back.
+ const refusal={id:base.id,brand:base.brand,style:base.style,originalImage:base.image,approved:false};
+ assert.equal(productPresentation(base,{products:[refusal]}),null);
+ // ...and it is tied to the asset, so a different photo - carrying its own
+ // evidence, since the evidence binds to the exact asset too - is judged afresh.
+ const other=base.image.replace('9ac2a618','other');
+ assert.notEqual(productPresentation({...base,image:other,
+   officialImageEvidence:{...base.officialImageEvidence,url:other}},{products:[refusal]}),null);
+ // A product page URL sitting in the image field is not a photograph.
+ assert.equal(productPresentation({...base,image:base.url},{products:[]}),null);
+ // Nor is anything without the brand's own verified image evidence.
+ assert.equal(productPresentation({...base,officialImageEvidence:undefined},{products:[]}),null);
+ assert.equal(productPresentation({...base,officialImageEvidence:{...base.officialImageEvidence,verified:false}},{products:[]}),null);
+});

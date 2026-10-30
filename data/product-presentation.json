@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-07T09:38:20.803Z",
+  "checkedAt": "2026-10-30T00:36:46.447Z",
   "policy": "Exact-variant official side or three-quarter shoe-only photograph; new unreviewed assets are held.",
   "products": [
     {
@@ -3740,6 +3740,312 @@
       "colorSwatches": [
         "#8d777e"
       ]
+    },
+    {
+      "id": "arrival-7d35e226807bfaa46955",
+      "brand": "On",
+      "style": "brume-hare-apparel-1WE30085011",
+      "originalImage": "https://images.ctfassets.net/hnk2vsx53n6l/59hKW8v2gY6zItY0K7ga4t/fc46d115f6761063a0b92322e7f70d9f/5885149f68fa0de5dc85529d102e92bad9a23991.jpg?fm=webp",
+      "approved": false,
+      "reason": "apparel shot, cropped at the thigh - no shoe in frame",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-a6e40e415ae3aec7f48a",
+      "brand": "On",
+      "style": "brume-apparel-1WG30394939",
+      "originalImage": "https://images.ctfassets.net/hnk2vsx53n6l/6XThehQY0Rn5PNBRTu8Bl8/467a9e7e839b01e0ccff44e63b48b9b8/77b1e15d55cddbec7bb351fd96e756f25ad29d85.jpg?fm=webp",
+      "approved": false,
+      "reason": "apparel shot, cropped at the thigh - no shoe in frame",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-ed77755b36cf4082da1c",
+      "brand": "On",
+      "style": "brume-hare-apparel-1ME30085011",
+      "originalImage": "https://images.ctfassets.net/hnk2vsx53n6l/45kifv079hKZBHwMvBfV4v/5be4ac23c0fe66ec5ce3b1f0e12f3bab/7513fc66def1046d52adfd3b0ed070f7d38836dc.jpg?fm=webp",
+      "approved": false,
+      "reason": "apparel shot, cropped at the ankle - no shoe in frame",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-b5d201f464f2036d9f03",
+      "brand": "KEEN",
+      "style": "mens-roam-waterproof-steel-grey-black",
+      "originalImage": "https://www.keenfootwear.com/cdn/shop/collections/M_New_Arrivals.jpg?v=1782947199&width=1200",
+      "approved": false,
+      "reason": "landscape photograph, figure the size of a thumbnail - no shoe",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-8777604cc5d013913d28",
+      "brand": "Onitsuka Tiger",
+      "style": "1182a722-200",
+      "originalImage": "https://media.ot-eur-prod.com/media/catalog/category/NewIn_Golf.jpg",
+      "approved": false,
+      "reason": "golfer on a course; shoes present but far too small to make out",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-82afaf2ae8d49f3ce39b",
+      "brand": "Onitsuka Tiger",
+      "style": "1182a722-201",
+      "originalImage": "https://media.ot-eur-prod.com/media/catalog/category/NewIn_Golf.jpg",
+      "approved": false,
+      "reason": "golfer on a course; shoes present but far too small to make out",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-12404fc9ad8c2308b02f",
+      "brand": "Under Armour",
+      "style": "6005922",
+      "originalImage": "https://underarmour.scene7.com/is/image/Underarmour/FW26_Q3_Brand_WLF_Launch_Fleece_M_HP_Hero_3_1",
+      "approved": false,
+      "reason": "collage banner of campaign crops - no shoe",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-04d023cd0bbee3168c99",
+      "brand": "Onitsuka Tiger",
+      "style": "1183c102-205",
+      "originalImage": "https://media.ot-eur-prod.com/media/catalog/category/NewIn_Golf.jpg",
+      "approved": false,
+      "reason": "golfer on a course; shoes present but far too small to make out",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-99a70a6e3f71e923f148",
+      "brand": "Onitsuka Tiger",
+      "style": "1183c102-702",
+      "originalImage": "https://media.ot-eur-prod.com/media/catalog/category/NewIn_Golf.jpg",
+      "approved": false,
+      "reason": "golfer on a course; shoes present but far too small to make out",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-14410c0b4466b5b90943",
+      "brand": "Prada",
+      "style": "10297US",
+      "originalImage": "https://www.prada.com/us/en/mens/shoes/americas-cup/c/10297US.html",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-dbe0d8582a76768d4596",
+      "brand": "Prada",
+      "style": "2EE490_2HKD_F0316_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/collapse-antiqued-nappa-leather-sneakers-with-hooks/2EE490_2HKD_F0316_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-10d2f41135d0832e852d",
+      "brand": "Prada",
+      "style": "2EE490_2HKD_F0002_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/collapse-antiqued-nappa-leather-sneakers-with-hooks/2EE490_2HKD_F0002_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-f91df1ffdec2cf7ac323",
+      "brand": "Prada",
+      "style": "2EE490_2HKD_F0K74_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/collapse-antiqued-nappa-leather-sneakers-with-hooks/2EE490_2HKD_F0K74_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-3983c04bbc2d68472485",
+      "brand": "Prada",
+      "style": "2EE483_070_F0632_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/court-leather-sneakers/2EE483_070_F0632_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-fc23d27c2addb23d3efc",
+      "brand": "Prada",
+      "style": "2EE483_070_F0F24_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/court-leather-sneakers/2EE483_070_F0F24_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-0ea14260dd1e5d2b4b1a",
+      "brand": "Prada",
+      "style": "2EE483_070_F0009_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/court-leather-sneakers/2EE483_070_F0009_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-41d6dffd386c46d7e110",
+      "brand": "Prada",
+      "style": "2EE483_3LFV_F0002_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/court-re-nylon-sneakers/2EE483_3LFV_F0002_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-8c4a4fe47f33320c6e20",
+      "brand": "Prada",
+      "style": "2EE483_3LFV_F0632_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/court-re-nylon-sneakers/2EE483_3LFV_F0632_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-0e5d0b379f96492e3fd2",
+      "brand": "Prada",
+      "style": "2EE483_3LFV_F0164_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/court-re-nylon-sneakers/2EE483_3LFV_F0164_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-0ddc04c6bebf89571bb0",
+      "brand": "Prada",
+      "style": "2TE218_070_F0009_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/high-top-leather-sneakers/2TE218_070_F0009_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-6a124c67a55f595916d8",
+      "brand": "Prada",
+      "style": "2TE218_3LFV_F0632_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/high-top-re-nylon-sneakers/2TE218_3LFV_F0632_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-5353c04d245573da5530",
+      "brand": "Prada",
+      "style": "2EG452_3ZR1_F075A_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/leather-sneakers/2EG452_3ZR1_F075A_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-160278a3bc32edbc9a5c",
+      "brand": "Prada",
+      "style": "10693US",
+      "originalImage": "https://www.prada.com/us/en/womens/shoes/americas-cup/c/10693US.html",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-d1e741b49ef35a017cb9",
+      "brand": "Prada",
+      "style": "4E3400_3LNG_F0YB4_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/prada-americas-cup-metallic-leather-and-bike-fabric-sneakers/4E3400_3LNG_F0YB4_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-c02689fe2495cf1b6cec",
+      "brand": "Prada",
+      "style": "4E3400_3LNG_F05NO_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/prada-americas-cup-metallic-leather-and-bike-fabric-sneakers/4E3400_3LNG_F05NO_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-289598dbbb4e01e81732",
+      "brand": "Prada",
+      "style": "PS0906_3ZPV_F05NK",
+      "originalImage": "https://www.prada.com/us/en/p/prada-americas-cup-original-sneakers-in-brushed-leather-and-bike-fabric/PS0906_3ZPV_F05NK",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-515fe7051b0bb458c9d9",
+      "brand": "Prada",
+      "style": "PS0906_3ZPV_F0EQ7",
+      "originalImage": "https://www.prada.com/us/en/p/prada-americas-cup-original-sneakers-in-brushed-leather-and-bike-fabric/PS0906_3ZPV_F0EQ7",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-12e810498be1897e33c5",
+      "brand": "Prada",
+      "style": "2EE479_3ANK_F073E_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/prax-suede-and-re-nylon-sneakers/2EE479_3ANK_F073E_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-3b5eb2d1f9dba5b505bc",
+      "brand": "Prada",
+      "style": "2EE479_3ANK_F0E2Q_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/prax-suede-and-re-nylon-sneakers/2EE479_3ANK_F0E2Q_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-a1acd601af88b6da68c7",
+      "brand": "Prada",
+      "style": "2EE487_3H0K_F0002_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/speedrock-leather-and-mesh-fabric-sneakers/2EE487_3H0K_F0002_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-925323163048818ce236",
+      "brand": "Prada",
+      "style": "2EE364_3LJ6_F0002_F_D003",
+      "originalImage": "https://www.prada.com/us/en/p/downtown-leather-sneakers/2EE364_3LJ6_F0002_F_D003",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-73c17ae4da4e28b24c0a",
+      "brand": "Prada",
+      "style": "2EE479_3ANK_F0334_F_G000",
+      "originalImage": "https://www.prada.com/us/en/p/prax-suede-and-re-nylon-sneakers/2EE479_3ANK_F0334_F_G000",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-7c19abdacd92360f2f0a",
+      "brand": "Prada",
+      "style": "1E490O_3ZM0_F0007_F_005",
+      "originalImage": "https://www.prada.com/us/en/p/speedrock-mesh-fabric-sneakers/1E490O_3ZM0_F0007_F_005",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
+    },
+    {
+      "id": "arrival-df6baad18926d4fa9919",
+      "brand": "Prada",
+      "style": "1E490O_3ZM0_F0161_F_005",
+      "originalImage": "https://www.prada.com/us/en/p/speedrock-mesh-fabric-sneakers/1E490O_3ZM0_F0161_F_005",
+      "approved": false,
+      "reason": "the image field holds the product page URL, not an image",
+      "checkedAt": "2026-10-30T00:36:46.447Z"
     }
   ]
 }

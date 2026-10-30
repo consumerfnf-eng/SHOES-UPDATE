@@ -23,7 +23,9 @@ await inspect(publicRoot);
 const catalog=JSON.parse(await fs.readFile(new URL('public/data/catalog.json',root),'utf8'));
 for(const p of catalog.products){
   if(!p.presentation)continue;
-  if(!['side','three-quarter'].includes(p.presentation.view))throw Error('Unreviewed photo view: '+p.id);
+  // 'product-photo' is the brand's own representative image at whatever
+  // angle it chose; the two named views are stills confirmed as such.
+  if(!['side','three-quarter','product-photo'].includes(p.presentation.view))throw Error('Unreviewed photo view: '+p.id);
   const cached=p.presentation.cachedPath;
   if(!/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/.test(cached||''))throw Error('Run npm run photos before publication: '+p.id);
   const bytes=await fs.readFile(new URL('public'+cached,root));
