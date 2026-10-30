@@ -73,6 +73,21 @@ export function productPresentation(product,reviews){
   if(ownPhoto)return {...product,presentation:{image:product.image,scale:1,offsetY:0,view:'product-photo',
     sourceUrl:product.officialImageEvidence.sourceUrl||product.url,checkedAt:product.officialImageEvidence.verifiedAt,
     method:'brand-own-product-photo'}};
+  // The photograph on a maison's own shelf card, for the records that have no
+  // product-page read behind them (see the maison rule in scripts/curation.mjs).
+  // It is the same claim as the allowance above - the picture the brand chose
+  // to represent this shoe, on its own page, bound to this product's link -
+  // arrived at by reading the shelf rather than the product page. A refusal
+  // recorded in data/product-presentation.json still wins: that is checked at
+  // the top of this function and these assets are reviewable by asset like
+  // any other.
+  const shelfPhoto = String(product.publicationBasis||'').startsWith('maison-shelf')
+    && product.arrivalEvidence?.verified === true
+    && product.arrivalEvidence.productUrl === product.url
+    && /^https:\/\//.test(product.image||'') && product.image !== product.url;
+  if(shelfPhoto)return {...product,presentation:{image:product.image,scale:1,offsetY:0,view:'product-photo',
+    sourceUrl:product.arrivalEvidence.url,checkedAt:product.arrivalEvidence.verifiedAt,
+    method:'brand-own-shelf-photo'}};
   try{const image=new URL(product.image);if(product.brand==='New Balance'&&image.hostname==='nb.scene7.com'&&image.pathname.toLowerCase().endsWith('/'+product.style.toLowerCase()+'_nb_02_i'))return {...product,presentation:{image:product.image,scale:1,view:'three-quarter',sourceUrl:product.url,checkedAt:product.lastVerifiedAt,method:'reviewed-official-sku-view-slot'}};}catch{}
   return null;
 }

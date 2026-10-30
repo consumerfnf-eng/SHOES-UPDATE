@@ -18,7 +18,13 @@ export function publicationState(product,today) {
 // no New section and nothing on its site but what it currently sells, that is
 // the whole of what can be known, and it is what the card says - 목록 확인,
 // never a release date.
-export const ARRIVAL_KINDS=['new-arrivals-listing','new-badge','catalogue-listing'];
+//
+// `catalogue-latest-listing` says even less: the shelf was read newest first,
+// but we have not established that the shop holds only this season. It is
+// taken on the same terms and leaned on no harder - what keeps those records
+// honest is the three-month window and the retail launch index, not this
+// evidence.
+export const ARRIVAL_KINDS=['new-arrivals-listing','new-badge','catalogue-listing','catalogue-latest-listing'];
 export function hasArrivalEvidence(product,today) {
   const e=product?.arrivalEvidence;
   if(!e||e.verified!==true||!ARRIVAL_KINDS.includes(e.kind)||e.brand!==product.brand||e.style!==product.style||e.productUrl!==product.url||!e.excerpt||!e.contentHash)return false;

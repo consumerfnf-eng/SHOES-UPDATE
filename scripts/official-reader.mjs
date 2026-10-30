@@ -36,6 +36,28 @@ export function pacedOfficialFetch({fetchImpl=fetch,sleep=delay,intervalMs=2500,
 export function assertReadableOfficial(text){
   if(/^Title:.*(?:Just a moment|Access Denied|Pardon Our Interruption|Page Not Found|captcha|robot check|sign in|log in|login|ログイン|로그인)/im.test(text)||/powered and protected by[\s\S]{0,500}akamai|YOUR ACCESS TO .{1,80} IS TEMPORARILY RESTRICTED|verify (?:that )?you are human|enable javascript and cookies to continue/i.test(text))throw Error('OFFICIAL_ACCESS_CHALLENGE');
   if(/(?:^|\n)#{1,3}\s*(?:\*\*)?PAGE NOT FOUND/i.test(text))throw Error('OFFICIAL_PAGE_NOT_FOUND');
+  // The reader says so when it met a challenge it could not get past, and
+  // hands back the warning with an empty body. hoka.com answered that way
+  // every week and it counted as a read listing page with no new shoes.
+  if(/^Warning:.*(?:requiring CAPTCHA|please make sure you are authorized)/im.test(text))throw Error('OFFICIAL_ACCESS_CHALLENGE');
+  // A redirect off the brand's own site is not the brand's page.
+  // adidas.com/us/shoes-new_arrivals redirected the reader to a doubleclick
+  // tracking pixel; the reader returned it, 200 and all, and the collection
+  // wrote down "adidas: 1 New listing page, 0 candidates" for three weeks.
+  const source=text.match(/^URL Source:\s*(\S+)$/im)?.[1],final=text.match(/^Final URL:\s*(\S+)$/im)?.[1];
+  if(source&&final){
+    try{
+      const host=u=>new URL(u).hostname.replace(/^www\./,'');
+      const a=host(source),b=host(final);
+      if(a!==b&&!a.endsWith('.'+b)&&!b.endsWith('.'+a))throw Error(`OFFICIAL_REDIRECTED_OFF_SITE: ${b}`);
+    }catch(e){if(/^OFFICIAL_REDIRECTED_OFF_SITE/.test(e.message))throw e;}
+  }
+  // A page with no link in it has no product in it. valentino.com answers the
+  // plain reader with its page furniture and nothing else - its grid is drawn
+  // in the browser - and fifteen such pages a week were recorded as responses,
+  // which is why the renderer was never asked for the one page that needed it.
+  const body=text.split(/^Markdown Content:\s*$/im)[1];
+  if(body!==undefined&&!/\]\(https:\/\//.test(body))throw Error('OFFICIAL_NO_LINKS_IN_PAGE');
   return text;
 }
 

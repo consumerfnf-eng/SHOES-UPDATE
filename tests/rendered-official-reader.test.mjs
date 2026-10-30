@@ -3,7 +3,12 @@ import assert from 'node:assert/strict';
 import {createRenderedOfficialReader} from '../scripts/rendered-official-reader.mjs';
 import {createOfficialReader} from '../scripts/official-reader.mjs';
 const target='https://official.example/jp/sneakers';
-const text='Public official sneaker catalogue with shoe specifications and product links. '.repeat(4);
+// A page with a product link on it, because a page without one is not a
+// readable listing and assertReadableOfficial now says so: valentino.com
+// answers the plain reader with its page furniture and nothing else, and
+// fifteen such pages a week were being counted as successful reads.
+const text='Public official sneaker catalogue with shoe specifications and product links. '.repeat(4)
+  +'\n[Runner sneaker](https://official.example/jp/p/runner-sneaker)\n';
 const page=(override={})=>Response.json({success:true,data:{markdown:text,metadata:{url:target,statusCode:200,title:'Official Sneakers'},...override}});
 test('rendered detail mode reads HTML galleries omitted from markdown and caches by mode',async()=>{
  const requests=[],client=createRenderedOfficialReader({origins:[target],sleep:async()=>{},fetchImpl:async(_,options)=>{requests.push(JSON.parse(options.body));return page({html:'<h1>Runner sneakers</h1><p>Official product description with rubber outsole and mesh upper. Verified shoes are available in the official catalogue.</p><img alt="Runner side" src="https://official.example/runner-side.jpg">'});}});

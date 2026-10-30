@@ -69,10 +69,6 @@
     {
       "name": "AMIRI Official daily source",
       "url": "https://www.amiri.com/collections/new-womens-sneaker"
-    },
-    {
-      "name": "AMIRI Official daily source",
-      "url": "https://www.amiri.com/collections/kids-new-arrivals"
     }
   ],
   "ASICS": [
@@ -178,6 +174,14 @@
     {
       "name": "Brunello Cucinelli Official daily source",
       "url": "https://www.brunellocucinelli.com/"
+    },
+    {
+      "url": "https://www.brunellocucinelli.com/en/man/shoes/sneakers.html",
+      "name": "Brunello Cucinelli Official sneakers (men)"
+    },
+    {
+      "url": "https://www.brunellocucinelli.com/en/woman/shoes/sneakers.html",
+      "name": "Brunello Cucinelli Official sneakers (women)"
     }
   ],
   "Burberry": [
@@ -588,6 +592,14 @@
     {
       "name": "Lanvin Official daily source",
       "url": "https://www.lanvin.com/"
+    },
+    {
+      "url": "https://us.lanvin.com/collections/men-sneakers",
+      "name": "Lanvin Official sneakers (men)"
+    },
+    {
+      "url": "https://us.lanvin.com/collections/women-sneakers",
+      "name": "Lanvin Official sneakers (women)"
     }
   ],
   "Loewe": [
@@ -600,6 +612,14 @@
     {
       "name": "Loro Piana Official daily source",
       "url": "https://www.loropiana.com/"
+    },
+    {
+      "url": "https://www.loropiana.com/en/c/man/shoes",
+      "name": "Loro Piana Official shoes (men)"
+    },
+    {
+      "url": "https://www.loropiana.com/en/c/woman/shoes",
+      "name": "Loro Piana Official shoes (women)"
     }
   ],
   "Louis Vuitton": [
@@ -648,6 +668,14 @@
     {
       "name": "Maison Margiela Official daily source",
       "url": "https://www.maisonmargiela.com/"
+    },
+    {
+      "url": "https://www.maisonmargiela.com/en-us/maison-margiela/men/shoes/sneakers/",
+      "name": "Maison Margiela Official sneakers (men)"
+    },
+    {
+      "url": "https://www.maisonmargiela.com/en-us/maison-margiela/women/shoes/sneakers/",
+      "name": "Maison Margiela Official sneakers (women)"
     }
   ],
   "Maison Mihara Yasuhiro": [
@@ -882,10 +910,6 @@
     {
       "name": "Reebok Official daily source",
       "url": "https://www.reebok.com/collections/mens-new-arrivals"
-    },
-    {
-      "name": "Reebok Official daily source",
-      "url": "https://www.reebok.com/collections/kids-new-arrivals"
     }
   ],
   "Repetto": [
@@ -916,6 +940,14 @@
     {
       "name": "Rick Owens Official daily source",
       "url": "https://www.rickowens.eu/collections/new-arrivals-men-1"
+    },
+    {
+      "url": "https://www.rickowens.eu/collections/men-sneakers",
+      "name": "Rick Owens Official sneakers (men)"
+    },
+    {
+      "url": "https://www.rickowens.eu/collections/women-sneakers",
+      "name": "Rick Owens Official sneakers (women)"
     }
   ],
   "ROA": [
@@ -1113,6 +1145,14 @@
     {
       "name": "Valentino Garavani Official daily source",
       "url": "https://www.valentino.com/"
+    },
+    {
+      "url": "https://www.valentino.com/en-us/men/shoes/sneakers",
+      "name": "Valentino Garavani Official sneakers (men)"
+    },
+    {
+      "url": "https://www.valentino.com/en-us/women/shoes/sneakers",
+      "name": "Valentino Garavani Official sneakers (women)"
     }
   ],
   "Vans": [
@@ -1187,6 +1227,21 @@
     {
       "name": "Zegna Official daily source",
       "url": "https://www.zegna.com/"
+    },
+    {
+      "url": "https://www.zegna.com/us-en/shoes/sneakers/",
+      "name": "Zegna Official sneaker shelf",
+      "basis": "catalogue"
+    },
+    {
+      "url": "https://www.zegna.com/us-en/triple-stitch-sneakers/",
+      "name": "Zegna Official Triple Stitch collection",
+      "basis": "catalogue"
+    },
+    {
+      "url": "https://www.zegna.com/us-en/232-sneakers/",
+      "name": "Zegna Official 232 Sneaker collection",
+      "basis": "catalogue"
     }
   ],
   "adidas": [
@@ -1256,6 +1311,11 @@
       "name": "Le Coq Sportif Official shoes category",
       "url": "https://www.lecoqsportif.co.kr/LECOQSPORTIF/Category/203000000",
       "basis": "catalogue"
+    },
+    {
+      "url": "https://dk-on.com/lecoqsportif",
+      "name": "Le Coq Sportif Official Korea store (moved from lecoqsportif.co.kr)",
+      "basis": "catalogue"
     }
   ],
   "Jordan": [
@@ -1284,6 +1344,10 @@
     {
       "name": "Arc'teryx Official public source",
       "url": "https://arcteryx.com/us/en/c/mens/footwear/shoes"
+    },
+    {
+      "url": "https://arcteryx.com/us/en/c/womens/footwear/shoes",
+      "name": "Arc'teryx Official women's shoes"
     }
   ],
   "The North Face": [

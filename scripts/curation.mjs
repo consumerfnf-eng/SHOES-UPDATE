@@ -4,6 +4,7 @@ import {buildKeywordCatalog} from './search-keywords.mjs';
 import {validateSocialMetrics,qualifyingSocialMetric,withSocialComparisons} from './social-metrics.mjs';
 import {hasArrivalEvidence} from '../public/assets/publication-window.mjs';
 import {hasObservedArrival, observedArrivalDay} from '../public/assets/observed-arrival.mjs';
+import {isLuxuryMaison} from './luxury-shelves.mjs';
 import {validCalendarDay as validDay,calendarShift as shiftMonth,releaseWindow,releaseState,releaseSortKey} from '../public/assets/release-window.mjs';
 export {validDay,shiftMonth};
 
@@ -575,13 +576,47 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   // one that is ours rather than the brand's, so it is tried last and the
   // record carries the day we saw it - shown as 최초 확인, never as 출시일.
   const observed = !arrival && hasObservedArrival(raw, today, watch);
-  if (!arrival&&!observed&&(!release || !e || !['day','month'].includes(e.precision) || !httpUrl(e.url) || !Number.isFinite(Date.parse(e.verifiedAt)) || !e.excerpt || e.verified!==true)) return { reason: 'release-day-evidence-required' };
+  // A maison's shop is not dated and does not badge anything as new. YSL,
+  // Zegna, Chanel, Fendi, Margiela, Rick Owens and AMIRI print no release
+  // date, no NEW section and - on the pages that answer at all - no product
+  // page the reader can reach a second time, so every shoe they sell failed
+  // either release-day-evidence-required or product-verification-required.
+  // Eleven maisons published nothing for that reason while the sports
+  // catalogue published 582 shoes.
+  //
+  // For a maison's *sneaker* - the one category this catalogue is about - the
+  // shelf it is standing on is the claim, and the shelf is the brand's own
+  // page. The record says which basis carried it so the page can show that,
+  // and the three-month window still decides how long it stays: a shoe the
+  // retail index knows was launched earlier is held by launchedBefore()
+  // whatever brought it in.
+  // What is dropped is the *requirement* for a product-page proof, not the
+  // checks on the listing evidence itself: it still has to be verified, to be
+  // about this shoe at this style code, and to have been read from a page on
+  // the brand's own site. And a record that carries product-page evidence
+  // which does not match is a broken record rather than a missing one - that
+  // is held exactly as before, because a card whose photograph is evidence of
+  // some other shoe is worse than no card.
+  const claimsOfficialEvidence = !!(raw.officialProductEvidence||raw.officialImageEvidence);
+  const maisonShelf = isLuxuryMaison(brand) && inPublishedScope(type.category)
+    && hasArrivalEvidence(raw, today)
+    && isOfficialProductUrl(brand, raw.url) && isOfficialProductUrl(brand, raw.arrivalEvidence.url)
+    && !(claimsOfficialEvidence && !officialEvidenceFor(raw, today));
+  if (!arrival&&!observed&&!maisonShelf&&(!release || !e || !['day','month'].includes(e.precision) || !httpUrl(e.url) || !Number.isFinite(Date.parse(e.verifiedAt)) || !e.excerpt || e.verified!==true)) return { reason: 'release-day-evidence-required' };
+  // No override for a maison record: releaseState already answers 'released'
+  // off the same arrival evidence maisonShelf requires, and once the record
+  // has been published it answers with the three-month publication window -
+  // which forcing 'released' here would have defeated, keeping every maison
+  // shoe on the page for ever.
   const state=observed&&!release?'released':releaseState(raw,today),future=state==='upcoming';
   if(state==='uncertain'||state==='invalid')return {reason:release?.precision==='month'?'release-month-window-uncertain':'upcoming-evidence-or-range'};
   if (!httpUrl(raw.url) || !httpUrl(raw.image)) return { reason: 'product-url-or-image-required' };
-  if (!Number.isFinite(Date.parse(raw.productVerifiedAt)) || !httpUrl(raw.productEvidenceUrl)) return { reason: 'product-verification-required' };
+  if (!maisonShelf&&(!Number.isFinite(Date.parse(raw.productVerifiedAt)) || !httpUrl(raw.productEvidenceUrl))) return { reason: 'product-verification-required' };
   const official=officialEvidenceFor(raw,today);
-  if(raw.styleType==='official-product-id'&&!official)return {reason:'official-product-id-evidence-required'};
+  // A maison shelf record has no product-page evidence by construction, so
+  // this gate - which asks for evidence that the style code is the brand's
+  // own product id - has nothing to ask it of. It does not claim one.
+  if(raw.styleType==='official-product-id'&&!official&&!maisonShelf)return {reason:'official-product-id-evidence-required'};
   const socialMetrics=validateSocialMetrics({...raw,...(official||{}),brand},today,{officialEligible:!!official,now});
   const visibleSignals = validateSignals(raw.sourceSignals, today), hot = popularity(visibleSignals, today,{product:raw,socialMetrics,officialEligible:!!official});
   const cleanName = cleanProductName(raw.name) || raw.name;
@@ -591,7 +626,7 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   const product = { id: raw.id, brand, name: cleanName, category: type.category, productType: type.category, fitReasons: fit.fitReasons,
     modelKey:raw.modelGroup||`${key(brand)}|${key(String(raw.name).split(/ — | – /)[0])}`,
     releaseDate: raw.releaseDate||'', releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release?.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),
-    ...(arrival?{arrivalEvidence:raw.arrivalEvidence}:{}),...(observed?{observedArrivalAt:observedArrivalDay(raw)}:{}),...(raw.firstPublishedAt?{firstPublishedAt:raw.firstPublishedAt}:{}),
+    ...(arrival||maisonShelf?{arrivalEvidence:raw.arrivalEvidence}:{}),...(observed?{observedArrivalAt:observedArrivalDay(raw)}:{}),...(raw.firstPublishedAt?{firstPublishedAt:raw.firstPublishedAt}:{}),
     url: raw.url, image: raw.image, style: raw.style || '',...(raw.styleType==='official-product-id'?{styleType:raw.styleType}:{}),colorway, colors: raw.colors || [],
     gender: raw.gender || '', material: raw.material || '', priceLabel: raw.priceLabel || '',
     description:[type.category==='sneaker'?'스니커즈':type.category==='clog'?'여름 클로그':type.category==='hybrid'?'검토된 혼합형 스니커즈':type.category==='jelly'?'플랫 젤리 슈즈':type.category==='platform-shoe'?'캐주얼 플랫폼 슈즈':'캐주얼 샌들',...fit.fitReasons].join(' · '),
@@ -599,7 +634,19 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
     officialCategory:type.category==='sneaker'?'스니커즈':raw.officialCategory||'',
     hybridReview:raw.hybridReview,modelReview:raw.modelReview,footwearReview:raw.footwearReview,
     sourceSignals: visibleSignals, socialMetrics,...(official||{}),collaborationBrands:official?productCollaborationBrands(raw):[],popularity: hot, archiveGroup: raw.archiveGroup || policy.group,
-    country: raw.country || '', lastVerifiedAt: raw.productVerifiedAt, productEvidenceUrl: raw.productEvidenceUrl,
+    country: raw.country || '',
+    // A maison record's proof is the shelf it was read from, not a second
+    // read of its product page. Say which, rather than leaving the fields the
+    // page shows as 확인 출처 empty.
+    lastVerifiedAt: raw.productVerifiedAt||(maisonShelf?raw.arrivalEvidence.verifiedAt:undefined),
+    productEvidenceUrl: raw.productEvidenceUrl||(maisonShelf?raw.arrivalEvidence.url:undefined),
+    // Says what is behind the record: a maison shelf and no product-page
+    // read. Not gated on `observed` - that answers a different question, what
+    // dates the record, and a shoe can be both newly sighted and unverified.
+    // What this field is read for is the photograph (see
+    // scripts/product-presentation.mjs): with no officialImageEvidence to
+    // point at, the shelf card is where the picture came from.
+    ...(maisonShelf&&!arrival?{publicationBasis:raw.arrivalEvidence.kind==='catalogue-latest-listing'?'maison-shelf-latest':'maison-shelf'}:{}),
     eligibility: { passed: true, checkedAt: today }, keywordTags: productKeywordIds({...raw,name:cleanName,sourceSignals:visibleSignals}) };
   // Read from the cleaned name, not the raw one. A listing's alt text
   // describes the photograph - "Side view of a black and beige X Bend sneaker

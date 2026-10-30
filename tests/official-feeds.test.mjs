@@ -53,7 +53,11 @@ test('default evidence verification does not stop at 100 and missing identities 
 });
 test('weekly manual force is explicit and does not change scheduled retry guards',()=>{
  const workflow=fs.readFileSync(new URL('../.github/workflows/weekly-update.yml',import.meta.url),'utf8');
- assert.match(workflow,/force:[\s\S]*?type: boolean[\s\S]*?default: false/);
+ // Starting the run by hand defaults to collecting. The dispatch of
+ // 2026-10-30 17:15 was made because sixteen maisons had just been added to
+ // the brand list, and with force defaulting off it exited on "this week is
+ // already done" without fetching one of them.
+ assert.match(workflow,/force:[\s\S]*?type: boolean[\s\S]*?default: true/);
  assert.match(workflow,/github\.event_name.*workflow_dispatch.*inputs\.force/);
  assert.match(workflow,/npm run weekly -- --only-if-stale/);
  assert.match(workflow,/ref: main/,'Queued retries must load the completed publication before the stale guard');

@@ -7,10 +7,17 @@ on:
   workflow_dispatch:
     inputs:
       force:
+        # Default true. Starting this by hand is a request to collect, and the
+        # old default meant the opposite: the 2026-10-30 17:15 dispatch, asked
+        # for precisely because sixteen maisons had just been added, exited in
+        # 0.3 seconds on "this week already has a completed collection" and
+        # reported success. The staleness guard now notices a changed brand
+        # list on its own (scripts/collection-scope.mjs), so leaving this on
+        # only costs a re-collection nobody has to argue with.
         description: 'Run a fresh collection even when this week already completed'
         required: false
         type: boolean
-        default: false
+        default: true
 permissions:
   contents: write
 concurrency:
@@ -44,11 +51,28 @@ jobs:
       - run: python -m pip install 'Pillow>=10,<14'
       - run: npm ci
       - run: npx playwright install --with-deps chromium
+      - name: Decide which maisons' shops hold only this season
+        # Before collecting, not during: the determination changes which
+        # shelves the collection reads, and a shop with no New section has to
+        # be understood before it can be read. Never fails the run - a maison
+        # with no determination is collected exactly as it was.
+        continue-on-error: true
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          SCRAPINGBEE_API_KEY: ${{ secrets.SCRAPINGBEE_API_KEY }}
+          SCRAPINGBEE_SHELF_CREDITS: ${{ vars.SCRAPINGBEE_SHELF_CREDITS || '400' }}
+        run: node scripts/classify-luxury-shelf.mjs
       - name: Collect and verify complete weekly snapshot
         env:
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           SCRAPINGBEE_API_KEY: ${{ secrets.SCRAPINGBEE_API_KEY }}
+          # Overridable without editing the collection. The defaults in
+          # scripts/weekly-update.mjs are what a luxury-first pass needs; a
+          # tighter account can lower them in repository variables.
+          SCRAPINGBEE_OFFICIAL_CREDITS: ${{ vars.SCRAPINGBEE_OFFICIAL_CREDITS || '800' }}
+          OFFICIAL_NEW_BUDGET_MINUTES: ${{ vars.OFFICIAL_NEW_BUDGET_MINUTES || '150' }}
         run: |
           if [ "${{ github.event_name }}" = 'workflow_dispatch' ] && [ "${{ inputs.force }}" = 'true' ]; then
             npm run weekly
@@ -82,7 +106,7 @@ jobs:
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json public/data/catalog.json public/data/rank-boards.json public/images
+          git add data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json public/images
           if ! git diff --cached --quiet; then
             git commit -m "weekly curated shoes update $(date -u +%F)"
             # main moves while this runs (the daily workflow, or a person
@@ -91,16 +115,23 @@ jobs:
             # retry.
             #
             # Every path this step commits is generated, and a line-by-line
-            # merge of two JSON snapshots means nothing, so three attempts at
-            # a textual rebase is three attempts at the same impossible merge:
-            # run 41011572077 collected for an hour and twenty minutes and
-            # then threw all of it away because three commits had landed on
-            # main in the meantime. On a conflict in those files this run's
-            # copies win - it holds the newer collection - and the catalogue
-            # is then rebuilt with whatever code just landed, which is the
-            # half of the conflict that actually matters. A conflict anywhere
-            # else is a real one and still aborts.
-            generated='data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json public/data/catalog.json public/data/rank-boards.json'
+            # merge of two JSON snapshots means nothing: run 41011572077
+            # collected for an hour and twenty minutes and then threw all of
+            # it away because three commits had landed on main in the
+            # meantime and git was asked, three times, to merge two versions
+            # of catalog.json.
+            #
+            # So a conflict is not merged. The collection is re-applied: the
+            # tree is reset to whatever main now holds, and every record this
+            # run verified - which `onProgress` has been writing to
+            # logs/weekly-progress.json all along - is merged back in by
+            # product id and republished on top of the code that just landed.
+            # That is the same operation the collection itself performs, so
+            # the result does not depend on which commit won a text merge, and
+            # re-running it is harmless. A conflict outside the generated
+            # snapshot is a real one and still stops the run.
+            generated='data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json'
+            cp logs/weekly-progress.json "$RUNNER_TEMP/weekly-progress.json"
             published=0
             for attempt in 1 2 3; do
               git fetch origin main
@@ -113,25 +144,18 @@ jobs:
                     *) case "$f" in public/images/*) ;; *) unexpected="$unexpected $f";; esac;;
                   esac
                 done
+                git rebase --abort
                 if [ -n "$unexpected" ]; then
-                  git rebase --abort
                   echo "::error::Conflict outside the generated snapshot:$unexpected"
                   exit 1
                 fi
-                for f in $conflicts; do
-                  git checkout --theirs -- "$f" 2>/dev/null || git checkout --ours -- "$f"
-                  git add -- "$f"
-                done
-                if ! GIT_EDITOR=true git rebase --continue; then
-                  git rebase --abort
-                  sleep 10
-                  continue
-                fi
-                npm run curate
+                echo "Re-applying the collection onto origin/main instead of merging generated JSON."
+                git reset --hard origin/main
+                node scripts/recover-collection.mjs "$RUNNER_TEMP/weekly-progress.json"
                 npm run photos
                 npm run build
                 git add $generated public/images
-                git commit --amend --no-edit
+                git commit -m "weekly curated shoes update $(date -u +%F)" || true
               fi
               if git push origin HEAD:main; then published=1; break; fi
               sleep 10

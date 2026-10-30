@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-30T11:34:28.309Z",
+  "brands": {
+    "The Row": {
+      "brand": "The Row",
+      "basis": "undetermined",
+      "reason": "the shop keeps more than this season",
+      "shelves": [
+        "https://www.therow.com/collections/women-sneakers",
+        "https://www.therow.com/collections/men-shoes",
+        "https://www.therow.com/collections/women-shoes"
+      ],
+      "latest": {},
+      "evidence": {
+        "verified": true,
+        "kind": "official-shelf-basis",
+        "url": "https://www.therow.com/collections/men-shoes?sort_by=created-descending",
+        "pagesRead": [
+          "https://www.therow.com/collections/men-shoes?sort_by=created-descending",
+          "https://www.therow.com/"
+        ],
+        "checkedAt": "2026-10-30T11:34:53.909Z",
+        "excerpt": "/william-eggleston) Galerie [Objects](https://www.therow.com/pages/galerie) [Vintage](https://www.therow.com/collections/galerie-desert-vintage) [Saved](htt",
+        "contentHash": "595916210aace950071a9c5166beb63176a92e8bee6b1e1de2ff52dfea9887e4"
+      },
+      "archiveSeenAt": [
+        "https://www.therow.com/collections/men-shoes?sort_by=created-descending"
+      ]
+    },
+    "Zegna": {
+      "brand": "Zegna",
+      "basis": "current-season-only",
+      "reason": "no outlet, clearance, past-season or resale section on the pages read",
+      "shelves": [
+        "https://www.zegna.com/us-en/232-sneakers/",
+        "https://www.zegna.com/us-en/shoes/sneakers/",
+        "https://www.zegna.com/us-en/triple-stitch-sneakers/",
+        "https://www.zegna.com/us-en/shoes/"
+      ],
+      "latest": {},
+      "evidence": {
+        "verified": true,
+        "kind": "official-shelf-basis",
+        "url": "https://www.zegna.com/us-en/shoes/sneakers/",
+        "pagesRead": [
+          "https://www.zegna.com/us-en/shoes/sneakers/",
+          "https://www.zegna.com/us-en/triple-stitch-sneakers/",
+          "https://www.zegna.com/us-en/232-sneakers/",
+          "https://www.zegna.com/us-en/new-in/"
+        ],
+        "checkedAt": "2026-10-30T11:35:07.054Z",
+        "excerpt": "No archive or outlet section across 4 official page(s)",
+        "contentHash": "217fabd17df378baddbe23790e0fad5da1a92b3dee95dc8c6239bc3c77134bb7"
+      }
+    },
+    "Givenchy": {
+      "brand": "Givenchy",
+      "basis": "current-season-only",
+      "reason": "no outlet, clearance, past-season or resale section on the pages read",
+      "shelves": [
+        "https://www.givenchy.com/us/en-US/men/shoes/sneakers/",
+        "https://www.givenchy.com/us/en-US/women/shoes/sneakers/",
+        "https://www.givenchy.com/us/en-US/men/shoes/",
+        "https://www.givenchy.com/us/en-US/women/shoes/"
+      ],
+      "latest": {},
+      "evidence": {
+        "verified": true,
+        "kind": "official-shelf-basis",
+        "url": "https://www.givenchy.com/us/en-US/men/shoes/sneakers",
+        "pagesRead": [
+          "https://www.givenchy.com/us/en-US/men/shoes/sneakers",
+          "https://www.givenchy.com/us/en-US/women/shoes/sneakers",
+          "https://www.givenchy.com/"
+        ],
+        "checkedAt": "2026-10-30T11:35:16.770Z",
+        "excerpt": "No archive or outlet section across 3 official page(s)",
+        "contentHash": "5dcb57c30fb325251ae2221ac3758bdba2966e1dc50469d534a43ad631c67a8d"
+      }
+    },
+    "Alexander McQueen": {
+      "brand": "Alexander McQueen",
+      "basis": "current-season-only",
+      "reason": "no outlet, clearance, past-season or resale section on the pages read",
+      "shelves": [
+        "https://www.alexandermcqueen.com/en-us/ca/men/shoes/sneakers",
+        "https://www.alexandermcqueen.com/en-us/ca/women/shoes/sneakers",
+        "https://www.alexandermcqueen.com/en-us/ca/men/shoes",
+        "https://www.alexandermcqueen.com/en-us/ca/women/shoes",
+        "https://www.alexandermcqueen.com/en-us/ca/women/shoes/flat-shoes"
+      ],
+      "latest": {},
+      "evidence": {
+        "verified": true,
+        "kind": "official-shelf-basis",
+        "url": "https://www.alexandermcqueen.com/en-us/ca/men/shoes/sneakers",
+        "pagesRead": [
+          "https://www.alexandermcqueen.com/en-us/ca/men/shoes/sneakers",
+          "https://www.alexandermcqueen.com/en-us/ca/women/shoes/sneakers",
+          "https://www.alexandermcqueen.com/",
+          "https://www.alexandermcqueen.com/en-us/ca/women/women-new-in/seasonal-edit"
+        ],
+        "checkedAt": "2026-10-30T11:35:29.638Z",
+        "excerpt": "No archive or outlet section across 4 official page(s)",
+        "contentHash": "9532ee09f7ca748bf7163eefb4492b64c470a0aa1b447f377703bbab7174c035"
+      }
+    },
+    "Maison Margiela": {
+      "brand": "Maison Margiela",
+      "basis": "current-season-only",
+      "reason": "no outlet, clearance, past-season or resale section on the pages read",
+      "shelves": [
+        "https://www.maisonmargiela.com/en-us/maison-margiela/men/shoes/sneakers/",
+        "https://www.maisonmargiela.com/en-us/maison-margiela/women/shoes/sneakers/",
+        "https://www.maisonmargiela.com/en-us/mm6/men/shoes/sneakers/",
+        "https://www.maisonmargiela.com/en-us/mm6/women/shoes/sneakers/",
+        "https://www.maisonmargiela.com/en-us/maison-margiela/men/shoes/",
+        "https://www.maisonmargiela.com/en-us/maison-margiela/women/shoes/"
+      ],
+      "latest": {},
+      "evidence": {
+        "verified": true,
+        "kind": "official-shelf-basis",
+        "url": "https://www.maisonmargiela.com/en-us/maison-margiela/men/shoes/sneakers/",
+        "pagesRead": [
+          "https://www.maisonmargiela.com/en-us/maison-margiela/men/shoes/sneakers/",
+          "https://www.maisonmargiela.com/en-us/maison-margiela/women/shoes/sneakers/",
+          "https://www.maisonmargiela.com/en-us/maison-margiela/men/featured/new-arrivals/",
+          "https://www.maisonmargiela.com/"
+        ],
+        "checkedAt": "2026-10-30T11:35:42.971Z",
+        "excerpt": "No archive or outlet section across 4 official page(s)",
+        "contentHash": "3cef9d9d244f801b2bdf3268551c6fedfb228bd3686f99f5332fd85d063ae5ec"
+      }
+    },
+    "Rick Owens": {
+      "brand": "Rick Owens",
+      "basis": "undetermined",
+      "reason": "the shop keeps more than this season",
+      "shelves": [],
+      "latest": {},
+      "evidence": {
+        "verified": true,
+        "kind": "official-shelf-basis",
+        "url": "https://www.rickowens.eu/collections/men-sneakers",
+        "pagesRead": [
+          "https://www.rickowens.eu/collections/men-sneakers",
+          "https://www.rickowens.eu/collections/women-sneakers",
+          "https://www.rickowens.eu/collections/homepage-new-arrivals",
+          "https://www.rickowens.eu/collections/new-arrivals-women-all"
+        ],
+        "checkedAt": "2026-10-30T11:35:55.095Z",
+        "excerpt": "94lcolcy11861) Wishlist +Wishlist - * [![Image 19: RR02F4897_LCDLVS_3911 | VINTAGE SNEAKS](https://www.rickowens.eu/cdn/shop/files/RR02F4897_LCDLVS_3911_01",
+        "contentHash": "a2ec42ef27938e03d7ba4f1ef31d686bec2d1101aa7af5afcb2e966833c1d5df"
+      },
+      "archiveSeenAt": [
+        "https://www.rickowens.eu/collections/men-sneakers",
+        "https://www.rickowens.eu/collections/women-sneakers",
+        "https://www.rickowens.eu/collections/homepage-new-arrivals"
+      ]
+    },
+    "Jil Sander": {
+      "brand": "Jil Sander",
+      "basis": "current-season-only",
+      "reason": "no outlet, clearance, past-season or resale section on the pages read",
+      "shelves": [
+        "https://www.jilsander.com/en-us/men/highlights/the-j-sneakers",
+        "https://www.jilsander.com/en-us/men/shoes/sneakers",
+        "https://www.jilsander.com/en-us/women/shoes/sneakers",
+        "https://www.jilsander.com/en-us/men/highlights/the-hood-shoes",
+        "https://www.jilsander.com/en-us/men/shoes",
+        "https://www.jilsander.com/en-us/women/highlights/the-arc-shoes",
+        "https://www.jilsander.com/en-us/women/highlights/the-cage-shoes",
+        "https://www.jilsander.com/en-us/women/highlights/the-elyss-shoes"
+      ],
+      "latest": {},
+      "evidence": {
+        "verified": true,
+        "kind": "official-shelf-basis",
+        "url": "https://www.jilsander.com/en-us/men/shoes/sneakers",
+        "pagesRead": [
+          "https://www.jilsander.com/en-us/men/shoes/sneakers",
+          "https://www.jilsander.com/en-us/women/shoes/sneakers",
+          "https://www.jilsander.com/en-us/women/shoes/view-all",
+          "https://www.jilsander.com/"
+        ],
+        "checkedAt": "2026-10-30T11:36:07.916Z",
+        "excerpt": "No archive or outlet section across 4 official page(s)",
+        "contentHash": "76447f407b6d2eee3733d1d5f1622cf4a8c47a71afe1ca257f621d72c396bac6"
+      }
+    },
+    "Lanvin": {
+      "brand": "Lanvin",
+      "basis": "current-season-only",
+      "reason": "no outlet, clearance, past-season or resale section on the pages read",
+      "shelves": [],
+      "latest": {},
+      "evidence": {
+        "verified": true,
+        "kind": "official-shelf-basis",
+        "url": "https://us.lanvin.com/collections/men-new-in",
+        "pagesRead": [
+          "https://us.lanvin.com/collections/men-new-in",
+          "https://us.lanvin.com/collections/women-new-in"
+        ],
+        "checkedAt": "2026-10-30T11:36:21.232Z",
+        "excerpt": "No archive or outlet section across 2 official page(s)",
+        "contentHash": "235b6683a5ce91b744859cf7c65d96dd77d2f05803540eb9eb81bf7e8f914ba4"
+      }
+    },
+    "AMIRI": {
+      "brand": "AMIRI",
+      "basis": "current-season-only",
+      "reason": "no outlet, clearance, past-season or resale section on the pages read",
+      "shelves": [],
+      "latest": {},
+      "evidence": {
+        "verified": true,
+        "kind": "official-shelf-basis",
+        "url": "https://www.amiri.com/collections/new-mens-footwear",
+        "pagesRead": [
+          "https://www.amiri.com/collections/new-mens-footwear",
+          "https://www.amiri.com/collections/new-womens-sneaker"
+        ],
+        "checkedAt": "2026-10-30T11:36:27.500Z",
+        "excerpt": "No archive or outlet section across 2 official page(s)",
+        "contentHash": "9cb59e06201396c4946fb5da09ea09160d8cc02728514871fc123ada908b836b"
+      }
+    },
+    "Off-White": {
+      "brand": "Off-White",
+      "basis": "undetermined",
+      "reason": "the shop keeps more than this season",
+      "shelves": [
+        "https://www.off---white.com/en-us/lab/men/sneakers/",
+        "https://www.off---white.com/en-us/lab/women/sneakers/",
+        "https://www.off---white.com/en-us/men/shoes/sneakers/",
+        "https://www.off---white.com/en-us/sneakers/",
+        "https://www.off---white.com/en-us/women/icons/be-right-back-sneakers/",
+        "https://www.off---white.com/en-us/women/icons/out-of-office-sneakers/"
+      ],
+      "latest": {},
+      "evidence": {
+        "verified": true,
+        "kind": "official-shelf-basis",
+        "url": "https://www.off---white.com/en-us/new-in/men-new-in/shoes/",
+        "pagesRead": [
+          "https://www.off---white.com/en-us/new-in/men-new-in/shoes/",
+          "https://www.off---white.com/en-us/new-in/women-new-in/",
+          "https://www.off---white.com/en-us/new-in/men-new-in/"
+        ],
+        "checkedAt": "2026-10-30T11:36:37.521Z",
+        "excerpt": "ml) $650 SHOW [![Image 172: OFF WHITE Bacco Arrow Skate Short Sleeve T-Shirt VINTAGE BLACK 44MAA120F26J019](https://www.off---white.com/dw/image/v2/BGDG_PRD/",
+        "contentHash": "db8c06af9d1454bde4e60bedce42cfb9d9529c6b9d33770e8023b2c4ad647aa9"
+      },
+      "archiveSeenAt": [
+        "https://www.off---white.com/en-us/new-in/men-new-in/"
+      ]
+    }
+  },
+  "unreadable": [
+    {
+      "brand": "The Row",
+      "url": "https://www.therow.com/collections/women-sneakers?sort_by=created-descending",
+      "error": "Source returned no usable page; official HTML: fetch failed; rendered-public-official: RENDERED_OFFICIAL_NO_READER_CONFIGURED"
+    },
+    {
+      "brand": "Lanvin",
+      "url": "https://us.lanvin.com/collections/men-sneakers",
+      "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_400; rendered-public-official: RENDERED_OFFICIAL_NO_READER_CONFIGURED"
+    },
+    {
+      "brand": "Lanvin",
+      "url": "https://us.lanvin.com/collections/women-sneakers",
+      "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_400; rendered-public-official: RENDERED_OFFICIAL_NO_READER_CONFIGURED"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import {createHash} from 'node:crypto';
 import {canonicalUrl,isOfficialProductUrl,classifyFootwear,officialHybridReview,officialEvidenceFor,kstDay} from './curation.mjs';
+import {isLuxuryMaison} from './luxury-shelves.mjs';
 import {assertReadableOfficial} from './official-reader.mjs';
 
 const digest=s=>createHash('sha256').update(s).digest('hex');
@@ -30,7 +31,19 @@ function readablePath(pathname){try{return decodeURIComponent(pathname);}catch{r
 export function isNewListing(url,text=''){
   try{const u=new URL(url),path=readablePath(u.pathname);return (!isProductLink(url)||/\/(?:new-arrivals?|new-in)\.html$/i.test(u.pathname))&&(newPath.test(path.replace(/\.html$/i,''))||newPath.test(u.searchParams.get('cgid')||'')||/^#\s+(?:new arrivals?|new in(?:\s+shoes)?|new shoes|신상품)\s*$/im.test(text));}catch{return false;}
 }
-const productPath=/\/(?:products?|produtos|p|pr|pd|t)\/|\/[^/]+\.html(?:$|\?)|(?:-p-|\/p-)[a-z0-9]|\/(?:men|women)\/footwear\/[^/]+\/[^/?]+|\/[0-9]{6,}(?:[.?/]|$)/i;
+// Arc'teryx files a product under /shop, with the style number on the end of
+// the slug: /shop/mens/kragg-shoe-0078. Its own category pages live under /c
+// (/c/mens/footwear/shoes), so /shop plus a trailing number is a product and
+// nothing else is. Fifteen listing pages were read every week and every
+// product link on them was discarded for not looking like one.
+const productPath=/\/(?:products?|produtos|p|pr|pd|t)\/|\/[^/]+\.html(?:$|\?)|(?:-p-|\/p-)[a-z0-9]|\/(?:men|women)\/footwear\/[^/]+\/[^/?]+|\/shop\/[^/]+\/[a-z0-9][a-z0-9-]*-\d{3,}(?:[.?/]|$)|\/[0-9]{6,}(?:[.?/]|$)/i;
+// A kids' shelf is a kids' shelf whatever else the URL says. 353 of the
+// sports catalogue's 1,888 held records are kids-sizing - FILA's and AMIRI's
+// children's New listings, read in full every week and then refused one at a
+// time by the curator. Not reading them leaves the budget for shelves whose
+// shoes can publish.
+const kidsListing=/(?:^|[\/_-])(?:kids?|kid-new|junior|juniors|youth|boys?|girls?|children|toddler|infant|baby|bebe|enfant|bambino|키즈|아동|주니어|유아)(?:[\/_-]|$)/i;
+export function isKidsListing(url){try{return kidsListing.test(readablePath(new URL(url).pathname))||kidsListing.test(new URL(url).search);}catch{return false;}}
 function isProductLink(url){try{const u=new URL(url);return productPath.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
 function colorLabel(alt,brand){
   if(brand==='Cecilie Bahnsen'&&/\b[A-Z]+\/[A-Z]+$/.test(alt))return alt.split(/\s+/).at(-1);
@@ -63,7 +76,12 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence,ba
   const footer=[...text.matchAll(/\n#{1,3}\s*(?:You may (?:also |be )|Recommended|Related|Recently viewed|What's Trending|Fearlessly Independent|Stay in the loop|Subscribe)/gi)].find(m=>m.index>firstProduct)?.index??text.length;
   text=text.slice(heading>=0&&heading<firstProduct?heading:0,footer);
   const links=markdownLinks(text).filter(l=>!l.image&&isOfficialProductUrl(brand,l.url)&&isProductLink(l.url));
-  const catalogue=basis==='catalogue';
+  // `catalogue-latest` is the same instruction with a weaker claim behind it:
+  // take every shoe on the shelf, but this shelf is only sorted newest first,
+  // not known to hold this season alone - so the record says so, and the
+  // three-month window dates it from the retail index.
+  const catalogue=basis==='catalogue'||basis==='catalogue-latest';
+  const catalogueKind=basis==='catalogue-latest'?'catalogue-latest-listing':'catalogue-listing';
   const rows=new Map(),isNew=!catalogue&&(isNewListing(url,text)||sectionEvidence?.kind==='new-arrivals-navigation'&&sectionEvidence.targetUrl===url&&isOfficialProductUrl(brand,sectionEvidence.url)&&!!sectionEvidence.contentHash);
   for(let i=0;i<links.length;i++){
     const link=links[i],key=canonicalUrl(link.url),previous=links[i-1],next=links.slice(i+1).find(l=>canonicalUrl(l.url)!==key);
@@ -93,7 +111,7 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence,ba
     if(!name||/^(?:shop now|quick view|discover|view product|add to bag|new|coming soon|\+?\d+)$/i.test(name))continue;
     const block=text.slice(link.start,next?.start||link.end+1600);
     const images=imageUrls(link.label).concat(imageUrls(block));
-    const row=rows.get(key)||{brand,name,url:link.url,images:[],linkedImages:[],cardDescription:clean(link.label),arrivalEvidence:{verified:true,brand,productUrl:link.url,kind:isNew?'new-arrivals-listing':badge?'new-badge':'catalogue-listing',url,verifiedAt:checkedAt,excerpt:(isNew?'Official New / New Arrivals listing: ':badge?'Official product New badge: ':'Official catalogue listing, dated by the source watch: ')+name,contentHash:sourceHash}};
+    const row=rows.get(key)||{brand,name,url:link.url,images:[],linkedImages:[],cardDescription:clean(link.label),arrivalEvidence:{verified:true,brand,productUrl:link.url,kind:isNew?'new-arrivals-listing':badge?'new-badge':catalogueKind,url,verifiedAt:checkedAt,excerpt:(isNew?'Official New / New Arrivals listing: ':badge?'Official product New badge: ':catalogueKind==='catalogue-latest-listing'?'Official sneaker shelf read newest first: ':'Official catalogue listing, dated by the source watch: ')+name,contentHash:sourceHash}};
     if(labelText&&/sneaker|trainer|shoe/i.test(name))row.name=name;
     if(imageDerivedName)row.needsProductTitle=true;
     if(labelText.length>row.cardDescription.length)row.cardDescription=labelText;
@@ -104,8 +122,18 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence,ba
 }
 export function listingFollowups(text,url,brand,sectionEvidence){
   const parentNew=isNewListing(url,text)||sectionEvidence?.kind==='new-arrivals-navigation';
-  const footwearFilter=l=>parentNew&&/sneakers?|shoes?|footwear/i.test(clean(l.label))&&new URL(l.url).searchParams.has('cgid');
-  const links=markdownLinks(text),result=links.filter(l=>!l.image&&isOfficialProductUrl(brand,l.url)&&!isProductLink(l.url)&&canonicalUrl(l.url)!==canonicalUrl(url))
+  // A New page that is an editorial hub rather than a grid. Zegna's
+  // /us-en/new-in/ is fifteen pages of campaign imagery whose only way
+  // through to a shoe is a "Sneakers" link to /us-en/shoes/sneakers/ - no
+  // cgid, no "new" in the path - so requiring a cgid meant reading the hub
+  // every week and following nothing out of it. Any same-origin footwear
+  // shelf linked from a New page is now followed.
+  const footwearFilter=l=>{
+    if(!parentNew)return false;
+    try{return /sneakers?|shoes?|footwear|trainers?|스니커즈|신발|슈즈/i.test(clean(l.label)+' '+readablePath(new URL(l.url).pathname))
+      &&new URL(l.url).origin===new URL(url).origin;}catch{return false;}
+  };
+  const links=markdownLinks(text),result=links.filter(l=>!l.image&&isOfficialProductUrl(brand,l.url)&&!isProductLink(l.url)&&!isKidsListing(l.url)&&canonicalUrl(l.url)!==canonicalUrl(url))
     .filter(l=>footwearFilter(l)||isNewListing(l.url)&&!/[?&](?:prefn|filter\.|srule=)/i.test(l.url)||/^(?:new|new arrivals?|new in(?: shoes)?|신상품|新作)$/i.test(clean(l.label))||/^(?:next|next page|load more|view more|다음|더 보기|次へ|\d+)$/i.test(clean(l.label))&&new URL(l.url).origin===new URL(url).origin)
     .map(l=>({url:l.url,name:clean(l.label)||'Official listing continuation',...(footwearFilter(l)||/^(?:new|new arrivals?|new in(?: shoes)?|신상품|新作)$/i.test(clean(l.label))?{sectionEvidence:{kind:'new-arrivals-navigation',url,targetUrl:l.url,contentHash:digest(text)}}:{})})).sort((a,b)=>Number(/sneaker|shoes|footwear/i.test(b.name))-Number(/sneaker|shoes|footwear/i.test(a.name)));
   const count=Number(text.match(/\b([\d,]+)\s+(?:products|items)\b/i)?.[1]?.replaceAll(',',''));
@@ -133,6 +161,61 @@ export function listingProduct(candidate,checkedAt){
   const base={verified:true,brand:p.brand,style,verifiedAt:checkedAt,verificationMethod:method,contentHash:p.arrivalEvidence.contentHash,...(!sku?{identifierType:'official-product-id'}:{})};
   p.officialProductEvidence={...base,url:p.url};p.officialImageEvidence={...base,url:p.image,sourceUrl:p.arrivalEvidence.url};
   const hybrid=officialHybridReview(p,p.name+' '+p.description,checkedAt);if(hybrid)p.hybridReview=hybrid;
+  const labeled=officialVariantLabels(p,candidate);
+  return classifyFootwear(labeled).category?labeled:null;
+}
+/** A maison's card, taken on the shelf's authority alone.
+ *
+ *  `listingProduct` refuses a card it cannot bind an image to and refuses one
+ *  whose name it had to read off an image, and then the product page is read
+ *  to settle it. On a maison's shop that second read is the one that does not
+ *  happen: 212 Margiela candidates, 133 AMIRI, 112 Mihara, 62 Rick Owens and
+ *  39 Chanel were found on the brands' own shelves and none of them ever
+ *  became a record, because ysl.com and chanel.com answer a product request
+ *  with a 403 and the render budget was five pages a run.
+ *
+ *  So the card publishes on what the shelf actually shows: this shoe, at this
+ *  URL, in this photograph, on the brand's own page, read on this day. No
+ *  officialProductEvidence is written - there was no product page read, and
+ *  claiming one would be a lie - which is exactly the condition the curator's
+ *  maison rule looks for. Everything else still applies: the footwear
+ *  classifier, the three-month window and the retail launch index.
+ */
+// What a shelf card says where the shoe's name should be, when it is not
+// saying the shoe's name: a pre-order flag, a carousel slide number, a bare
+// colour, a button. Margiela's cards read "Preorder" and AMIRI's read
+// "Image 23: View 1 - A black shearling slipper", and neither is a product.
+const CARD_FURNITURE=/^(?:pre[- ]?order|new(?: in)?|image\s*\d+\b.*|view\s*\d+|shop now|quick view|sold out|coming soon|men(?:'s)? sizing.*|women(?:'s)? sizing.*|[a-z\s]{0,12}(?:black|white|cream|brown|grey|gray|beige|ivory|tan|navy|silver|gold)\s*)$/i;
+/** The brand's own words for the shoe, out of its own product URL.
+ *  /en-us/tabi-ankle-boots-tapestry-S39WU0250P9369HB715.html -> Tabi Ankle Boots Tapestry
+ */
+export function nameFromProductSlug(url){
+  try{
+    const last=new URL(url).pathname.split('/').filter(Boolean).pop().replace(/\.html$/i,'');
+    const words=last.split(/[-_]/).filter(w=>w&&!/^[A-Z0-9]{6,}$/.test(w)&&!/^\d+$/.test(w)&&!/^p$/i.test(w));
+    if(words.length<2)return '';
+    const name=words.map(w=>w[0].toUpperCase()+w.slice(1)).join(' ');
+    return /[\p{L}]{3}/u.test(name)?name:'';
+  }catch{return '';}
+}
+export function maisonShelfProduct(candidate,checkedAt){
+  const chosen=candidate.linkedImages?.[0]||candidate.images?.[0];
+  if(!chosen)return null;
+  const card=String(candidate.name||'').trim();
+  // A card title that is page furniture is replaced by the brand's own slug,
+  // never published as the shoe's name and never used to refuse the shoe.
+  const name=CARD_FURNITURE.test(card)||!card?nameFromProductSlug(candidate.url):card;
+  if(!name)return null;
+  const last=new URL(candidate.url).pathname.split('/').filter(Boolean).pop().replace(/\.html$/i,'');
+  const code=/^[A-Z0-9][A-Z0-9_.-]{4,}$/.test(last)?last:last.match(/(?:-p-|[-_])([A-Z0-9_]{7,})$/)?.[1]||'';
+  const style=code||last;
+  const p={id:`arrival-${digest(candidate.brand+'|'+canonicalUrl(candidate.url)).slice(0,20)}`,
+    brand:candidate.brand,name,style,
+    url:candidate.url,image:chosen.url,description:candidate.cardDescription,
+    colorway:colorLabel(chosen.alt,candidate.brand),colors:[],
+    priceLabel:candidate.cardDescription?.match(/(?:[$€£₩¥]\s?[0-9,.]+|[0-9][0-9,.]*\s?(?:원|円|USD|EUR|GBP|KRW|JPY))/)?.[0]||'',
+    country:region(candidate.url),firstSeen:checkedAt,
+    arrivalEvidence:{...candidate.arrivalEvidence,style},sourceSignals:[],imageCandidates:candidate.linkedImages||[]};
   const labeled=officialVariantLabels(p,candidate);
   return classifyFootwear(labeled).category?labeled:null;
 }
@@ -216,12 +299,13 @@ function pageProduct(candidate,text,checkedAt,existing){
   return p;
 }
 function region(url){const u=new URL(url),m=(u.hostname+'/'+u.pathname).match(/(?:^|[./_-])(us|uk|gb|jp|kr|ca|hk|cn|au|fr|it|de|dk)(?:[./_-]|$)/i);return m?(m[1].toUpperCase()==='UK'?'GB':m[1].toUpperCase()):'GL';}
-export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,maxDetailMsPerBrand=Infinity,canReadDetails=()=>true,clock=Date.now,onProgress,log=console.log}={}){
+export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,maxDetailMsPerBrand=Infinity,canReadDetails=()=>true,clock=Date.now,onProgress,log=console.log,carriedPending=[]}={}){
   const checkedAt=new Date(now).toISOString(),products=[],coverage=[],work=[];
+  const stillPending=()=>work.flatMap(w=>[...(w.pending||w.candidates.values()),...(w.inflight?[w.inflight]:[])].map(candidate=>({brand:w.brand,candidate})));
   let progressTail=Promise.resolve();
   async function checkpoint(phase){
     if(!onProgress)return;
-    const snapshot=structuredClone({checkedAt,phase,products,coverage,pending:work.flatMap(w=>[...(w.pending||w.candidates.values()),...(w.inflight?[w.inflight]:[])].map(candidate=>({brand:w.brand,candidate})))});
+    const snapshot=structuredClone({checkedAt,phase,products,coverage,pending:stillPending()});
     progressTail=progressTail.then(()=>onProgress(snapshot));await progressTail;
   }
   let discoveryCursor=0;
@@ -229,7 +313,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
     const configured=sources[brand]||[],queue=[...configured].sort((a,b)=>Number(isNewListing(b.url))-Number(isNewListing(a.url))),seen=new Set(),candidates=new Map();
     const status={brand,attempts:0,responses:0,listingPages:0,candidates:0,verified:0,errors:[],checkedAt,exhaustive:false};
     while(queue.length&&seen.size<maxPagesPerBrand){
-      const source=queue.shift(),key=canonicalUrl(source.url);if(seen.has(key)||!isOfficialProductUrl(brand,source.url))continue;seen.add(key);status.attempts++;
+      const source=queue.shift(),key=canonicalUrl(source.url);if(seen.has(key)||!isOfficialProductUrl(brand,source.url)||isKidsListing(source.url))continue;seen.add(key);status.attempts++;
       try{
         const text=assertReadableOfficial(await read(`https://r.jina.ai/${source.url}`));status.responses++;
         const rows=parseArrivalListing(text,{brand,url:source.url,checkedAt,sectionEvidence:source.sectionEvidence,basis:source.basis});if(isNewListing(source.url,text)||rows.length)status.listingPages++;
@@ -268,6 +352,19 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
     }
     status.detailPending=item.pending.length;
   }
+  // Last run's unchecked candidates, ahead of this run's. They were found by
+  // a listing read we have already paid for, and a candidate that has waited
+  // a week is the one most likely to drop out of the brand's New section
+  // before anybody checks it. A brand this run did not reach keeps its queue
+  // for the run after - carriedPending is returned untouched for those.
+  const byBrand=new Map(work.map(item=>[item.brand,item]));
+  for(const entry of carriedPending){
+    const item=byBrand.get(entry.brand),candidate=entry.candidate;
+    if(!item||!candidate?.url)continue;
+    const key=canonicalUrl(candidate.url);
+    if(item.candidates.has(key)||item.pending.some(c=>canonicalUrl(c.url)===key))continue;
+    item.pending.unshift(candidate);item.status.detailPending=item.pending.length;
+  }
   await checkpoint('listing-proofs');
   let cursor=0;
   async function verifyBrands(){while(cursor<work.length){
@@ -282,6 +379,19 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
       }catch(e){status.errors.push({url:candidate.url,error:e.message});}
       finally{delete item.inflight;}
     }
+    // A maison's leftovers are not left over. Whatever the clock or the
+    // render budget stopped us checking still has the brand's own shelf
+    // behind it, and for these shops that is all there will ever be.
+    if(isLuxuryMaison(brand)&&item.pending.length){
+      const taken=[];
+      for(const candidate of item.pending){
+        try{const p=maisonShelfProduct(candidate,checkedAt);if(p){accept(p,candidate,status);taken.push(candidate);}}
+        catch(e){status.errors.push({url:candidate.url,error:e.message});}
+      }
+      const done=new Set(taken.map(c=>canonicalUrl(c.url)));
+      item.pending=item.pending.filter(c=>!done.has(canonicalUrl(c.url)));
+      if(taken.length)status.shelfBasisProofs=(status.shelfBasisProofs||0)+taken.length;
+    }
     status.detailPending=item.pending.length;
     if(status.detailPending)status.errors.push({error:'product-follow-up-deferred',reason:'detail-time-budget',remaining:status.detailPending});
     // Dynamic pagination may hide additional items: never equate a response with completeness.
@@ -291,5 +401,10 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
   }}
   await Promise.all(Array.from({length:3},()=>verifyBrands()));
   await checkpoint('complete');
-  return {products,coverage,checkedAt};
+  // Everything still unchecked, including carried candidates for brands this
+  // run never reached, so a brand dropped from the list for one week does not
+  // lose the queue it had built up.
+  const reached=new Set(work.map(w=>w.brand));
+  return {products,coverage,checkedAt,
+    pending:[...stillPending(),...carriedPending.filter(e=>!reached.has(e.brand))]};
 }

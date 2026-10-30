@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T09:42:33.061Z",
+  "checkedAt": "2026-10-30T11:37:32.817Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -4023,19 +4023,7 @@
       "reason": "release-day-evidence-required"
     },
     {
-      "id": "new-20260923-0fda1288f102d2da",
-      "brand": "Reebok",
-      "name": "Reese's x Angel Reese 1 Basketball Shoes",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-9a640d8ea2bece62",
-      "brand": "Reebok",
-      "name": "Angel Reese 1 Basketball Shoes",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-ee0b9e7a4fbb469f",
       "brand": "Reebok",
       "name": "Angel Reese 1 Basketball Shoes",
       "reason": "product-verification-required"
@@ -6405,12 +6393,6 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-b648421e54c0ecc0",
-      "brand": "Off-White",
-      "name": "OFF WHITE End Of Play Sneakers BLACK/WHITE OF05968001",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-f4f4a2dd29f4c0bd",
       "brand": "Off-White",
       "name": "Out Of Office Sneakers",
@@ -6419,8 +6401,8 @@
     {
       "id": "new-20260923-421c876af219ac54",
       "brand": "Off-White",
-      "name": "OFF WHITE Be Right Back Sneakers GRAY/BLUE OF05747430",
-      "reason": "product-verification-required"
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
     },
     {
       "id": "new-20260923-8c9e272a9bab708b",
@@ -6497,20 +6479,8 @@
     {
       "id": "new-20260923-31a3fa1dd75a39cb",
       "brand": "Off-White",
-      "name": "OFF WHITE Be Right Back Sneakers GRAY/RED OF05747609",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-13324a6bc24f8702",
-      "brand": "Off-White",
-      "name": "OFF WHITE End of Play Sneakers YELLOW/BLACK OF05773706",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-16eeb4fbb4532846",
-      "brand": "Off-White",
-      "name": "OFF WHITE End Of Play Sneakers SAGE/GREY OF05968310",
-      "reason": "product-verification-required"
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
     },
     {
       "id": "new-20260923-5d9fcf14f7f25f0b",
@@ -6527,8 +6497,8 @@
     {
       "id": "new-20260923-f21cd61c30ec2c0c",
       "brand": "Off-White",
-      "name": "OFF WHITE Be Right Back Sneakers BLACK/SILVER OF05751001",
-      "reason": "product-verification-required"
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
     },
     {
       "id": "new-20260923-fadc618942e43957",
@@ -6599,14 +6569,8 @@
     {
       "id": "new-20260923-d671f12a93a1aeeb",
       "brand": "Off-White",
-      "name": "OFF WHITE Be Right Back Sneakers LIGHT GREY/SILVER OF05752025",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-697a7cf3a98f2083",
-      "brand": "Off-White",
-      "name": "OFF WHITE End of Play Sneakers CREAM WHITE/NEO BLUE OF05762430",
-      "reason": "product-verification-required"
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
     },
     {
       "id": "new-20260923-e44e34727dd54d5b",
@@ -6615,21 +6579,9 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-d43eeaac6e752bbe",
-      "brand": "Off-White",
-      "name": "OFF WHITE End of Play Sneakers BEIGE/PINK OF05772267",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-e3d834e8ead889d9",
       "brand": "Off-White",
       "name": "OFF WHITE Be Right Back Knit Sneakers BLACK/SILVER OF06208001",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-194da8ea97d79e80",
-      "brand": "Off-White",
-      "name": "OFF WHITE End of Play Sneakers BROWN/BLACK OF05772210",
       "reason": "product-verification-required"
     },
     {
@@ -13209,12 +13161,6 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "live-e59654acc4ff118a",
-      "brand": "Reebok",
-      "name": "Angel Reese 1 Basketball Shoes",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "live-0061a2806452f63d",
       "brand": "Reebok",
       "name": "Brutus Low Shoes",
@@ -13502,12 +13448,6 @@
       "id": "live-546f9614e9f65524",
       "brand": "Alo",
       "name": "Trail (Unisex)",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-6bb78125add6fe04",
-      "brand": "Reebok",
-      "name": "x Manors Club C Revenge Golf Shoes",
       "reason": "product-verification-required"
     },
     {
@@ -17499,16 +17439,676 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "official-nike-io6260-800",
-      "brand": "Nike",
-      "name": "Kobe 3 Low Protro \"Mamba Eterno\"",
-      "reason": "representative-photo-review-required"
+      "id": "arrival-11a76ed69c119b5866b9",
+      "reason": "duplicate-product-color"
     },
     {
-      "id": "official-nike-iq3922-001",
-      "brand": "Nike",
-      "name": "Kobe Dunk Low Protro",
-      "reason": "representative-photo-review-required"
+      "id": "arrival-d66e0f22b40e38c6b9b6",
+      "brand": "Converse",
+      "name": "![Image 132: Chuck Taylor All Star EVA Lift Platform Cherry Blossoms Black/White/Black](//:0)",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-5c19075a8e2f1900926b",
+      "brand": "Converse",
+      "name": "![Image 283: Chuck Taylor All Star EVA Lift Platform Velvet Bows Petal Pit/Black/White](//:0)",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-528640dab1276deea331",
+      "brand": "Converse",
+      "name": "Image 175: Chuck Taylor All Star EVA Lift Platform Cherry Blossoms Black/White/Black",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-9249a3504128904e9c8e",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-d613cfcf6b3f8cd3ff0a",
+      "brand": "Converse",
+      "name": "Image 195: Chuck Taylor All Star EVA Lift Platform Velvet Bows Petal Pit/Black/White",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-e0f9d9cdc16df008accf",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-b92ead0e3b119b7f82b4",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-24f65f88d51190794cfa",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-a342d4e7fec463258c5d",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-09425af46aae5ad7abd6",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-058acf07ade2be572e91",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-318d1bbaf0e8ae2ea1ca",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-9d164d434b8c089cf52a",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-a8c79906fa29309ddff6",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-c51e45bc23de44fad993",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-51bde25ac5c8f859ac5d",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-a267d5011fb3aeae5dbb",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-5973e63b0e55654e6fde",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-0666a21312e049427e7a",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-7533c6bb52c1c16747df",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-dae573f6b39af92bf7b1",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-f5d4d8dd7166b9f89fbc",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-fb3e72b5aa0f60ead828",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-1a558541750dbef44d89",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-c3a759f85ec3aab74d9b",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-6ed229d0d1fe45df0a66",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-f0d503fd247f36c880d4",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-3847aaa64e250abce8d4",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-0497c50a3217ad78105e",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-c99eff1105c8fc2c1210",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-e7ab6946f9fdf5039a8b",
+      "brand": "Off-White",
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
+    },
+    {
+      "id": "arrival-c84ef010c7d3878c1561",
+      "brand": "Off-White",
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
+    },
+    {
+      "id": "arrival-e1f9c74fe1306a960bcc",
+      "brand": "Off-White",
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
+    },
+    {
+      "id": "arrival-e935c84e3fc7666ace78",
+      "brand": "Off-White",
+      "name": "Out Of Office Sneakers",
+      "reason": "re-release-launched-2026-03-20"
+    },
+    {
+      "id": "arrival-b88422d213637671fb0e",
+      "brand": "Off-White",
+      "name": "![Image 66: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-af22d27cae24a2a70c60",
+      "brand": "Off-White",
+      "name": "![Image 80: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-dd81ff5e37210a728524",
+      "brand": "Off-White",
+      "name": "![Image 87: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-8a74f9f671a6bd03cacf",
+      "brand": "Off-White",
+      "name": "![Image 93: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-d253b37c926fe1192dc7",
+      "brand": "Off-White",
+      "name": "![Image 109: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-7ff0c830b7ac1a6b0264",
+      "brand": "Off-White",
+      "name": "![Image 123: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-f0a39e8ec60ea50cb1c2",
+      "brand": "Off-White",
+      "name": "![Image 129: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-6a94eb4267c400112853",
+      "brand": "Off-White",
+      "name": "![Image 143: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-453ffaf97dec9a51dc98",
+      "brand": "Off-White",
+      "name": "![Image 149: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-217a79b686deb1e161b6",
+      "brand": "Off-White",
+      "name": "![Image 163: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-4cecb5e32c9e6ca50f87",
+      "brand": "Off-White",
+      "name": "![Image 177: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-a68af4ce184df96ab78f",
+      "brand": "Off-White",
+      "name": "![Image 192: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-39d6d7cb575e76bef7fe",
+      "brand": "Off-White",
+      "name": "![Image 206: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-2eb21914ec7fa5df5d58",
+      "brand": "Off-White",
+      "name": "![Image 212: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-57c085886a6e6eac99ec",
+      "brand": "Off-White",
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
+    },
+    {
+      "id": "arrival-ef9cfd0ba908e1313171",
+      "brand": "Off-White",
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
+    },
+    {
+      "id": "arrival-91efdfc29b7e9b62c513",
+      "brand": "Off-White",
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
+    },
+    {
+      "id": "arrival-0faf8629c4f8c9915b12",
+      "brand": "Off-White",
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
+    },
+    {
+      "id": "arrival-89c1e6b8ec233fa542c6",
+      "brand": "Off-White",
+      "name": "Out Of Office Sneakers",
+      "reason": "re-release-launched-2026-03-20"
+    },
+    {
+      "id": "arrival-ae632c3d543670cedbbd",
+      "brand": "Off-White",
+      "name": "Vulcanized Low Sneakers",
+      "reason": "re-release-launched-2026-03-24"
+    },
+    {
+      "id": "arrival-33b5600c04d81a18d19d",
+      "brand": "Off-White",
+      "name": "Be Right Back Sneakers",
+      "reason": "re-release-launched-2026-03-20"
+    },
+    {
+      "id": "arrival-c68d3795041b0da1873d",
+      "brand": "Off-White",
+      "name": "End Of Play Sneakers",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-822fe787a77a32deed3e",
+      "brand": "Off-White",
+      "name": "Be Right Back Sneakers",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-90a3d40ae02ce5bfddf6",
+      "brand": "Off-White",
+      "name": "Out Of Office Sneakers",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-5ea54e12a32cbe3994a3",
+      "brand": "Off-White",
+      "name": "Vulcanized Low Sneakers",
+      "reason": "re-release-launched-2026-03-24"
+    },
+    {
+      "id": "arrival-c830534de71b7964917f",
+      "brand": "Balenciaga",
+      "name": "Women's Low Crotch Baggy Jeans in Dirty Vintage Blue",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-e902702b4c026ff03802",
+      "brand": "Balenciaga",
+      "name": "Women's Rodeo Handbag Mini in Silver",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-dd676d806c2f563721dd",
+      "brand": "Balenciaga",
+      "name": "Women's Draped Cape Dress in Bottle Green",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-cc79f6eda3709bd49d2e",
+      "brand": "Balenciaga",
+      "name": "Women's Venom Mule in Black",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-ed28758013dd67fbda89",
+      "brand": "Balenciaga",
+      "name": "Snowboard in Silver",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-81a2bc35433b12ccdb42",
+      "brand": "Balenciaga",
+      "name": "Women's Short Cape in Burgundy",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-41db7a01224e4847068d",
+      "brand": "The Row",
+      "name": "Elor Turtleneck",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-011b199c47e199472986",
+      "brand": "The Row",
+      "name": "Gurio Skirt",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-5226c52b9dcebb0c7e0d",
+      "brand": "Bottega Veneta",
+      "name": "Cherry Mule",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-18c3193f44d5e52481d4",
+      "brand": "Bottega Veneta",
+      "name": "Gino Lace-Up Shoe",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-01a3e0095ba361e16c35",
+      "brand": "The Row",
+      "name": "Lowe Pant",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-ac7d05b3287c53f5788d",
+      "brand": "On",
+      "name": "Cloudzone",
+      "reason": "re-release-launched-2025-07-25"
+    },
+    {
+      "id": "arrival-38a035cedeb8ed4d25b7",
+      "brand": "Salomon",
+      "name": "CROSSDERBY MM6 MAISON MARGIELA",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-e8ffa5038225888b7792",
+      "brand": "Autry",
+      "name": "유니섹스 올오버 풀집업 테디",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-f7b13d71031133f5eadf",
+      "brand": "Autry",
+      "name": "유니섹스 올오버 풀집업 테디",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-3d6f941bb0689f182551",
+      "brand": "Vans",
+      "name": "Premium Classic Slip-On Shoe",
+      "reason": "re-release-launched-2025-12-04"
+    },
+    {
+      "id": "arrival-58e8e2ea5a87876f89f2",
+      "brand": "Onitsuka Tiger",
+      "name": "OVERSIZED TEE",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-23660592df1969efc081",
+      "brand": "Onitsuka Tiger",
+      "name": "OVERSIZED TEE",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-c331bfa183ba71175189",
+      "brand": "Onitsuka Tiger",
+      "name": "WOMEN'S RINGER TEE",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-c88777fd2439da8c2392",
+      "brand": "Vans",
+      "name": "Premium Authentic Ease Shoe",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-ef20424d7e8e07db2516",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Hybrid Glove",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-eb6a5c4a3cb81bf6d7c6",
+      "brand": "Brooks",
+      "name": "Notch Thermal Beanie 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-79656c5bdff4e253a151",
+      "brand": "Brooks",
+      "name": "Notch Thermal Beanie 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-4bebecbefcece9cedefe",
+      "brand": "Brooks",
+      "name": "Notch Thermal Beanie 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-93b4c6e48b6b64d1728e",
+      "brand": "Brooks",
+      "name": "Notch Thermal Beanie 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-13ee31cbbdf65ecb2ddd",
+      "brand": "Brooks",
+      "name": "Notch Thermal Beanie 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-a2ce7bd174d07ae71c12",
+      "brand": "Brooks",
+      "name": "Notch Thermal Beanie 2.0",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-8f55cf90196d4a8e672a",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Vest",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-444ea94039bb5067ac9e",
+      "brand": "Brooks",
+      "name": "Momentum Thermal Vest",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-1deb0b481c27717620ff",
+      "brand": "Under Armour",
+      "name": "UA Harper 11 Pro Turf",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-d9a2f0d04abe64c53bce",
+      "brand": "Skechers",
+      "name": "Skechers SKX_2 Jr Youth TF",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-55b10562603684202580",
+      "brand": "Under Armour",
+      "name": "UA HB Runner 2",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-b51fdcbfef7bd5b09072",
+      "brand": "Skechers",
+      "name": "Skechers SKX_2 Jr Youth TF",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-46b2a892a9c6d3fc6a7b",
+      "brand": "Skechers",
+      "name": "S-Lights: Meteor-Lights 3.0",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-ee2f7bd060e7eb2432e2",
+      "brand": "Skechers",
+      "name": "S-Lights: Meteor-Lights 3.0",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-69da21a73da1983f8359",
+      "brand": "Under Armour",
+      "name": "UA Magnetico Select 6 FG Jr.",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-e9f799762b2a19b0f670",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-401562e7f16a06f82123",
+      "brand": "KOLON SPORT",
+      "name": "[KOLON SPORT](https://www.kolonsport.com/Product/JKTBX26102MML)",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-7eefebdadaa2aaaea686",
+      "brand": "Under Armour",
+      "name": "The Bouncy Tee",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-69ba5d55a6c83c42d2b4",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-b8c88dd124a592c2fe99",
+      "brand": "Skechers",
+      "name": "S-Lights: Divine Heart Lights",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-221a42746231d685f379",
+      "brand": "Under Armour",
+      "name": "ColdGear® Infrared Basecamp Fleece",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-26b8963ef0dd8b60cf9a",
+      "brand": "Skechers",
+      "name": "S-Lights: Divine Heart Lights",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-cda201aa7db3f8eb5cd3",
+      "brand": "KOLON SPORT",
+      "name": "[KOLON SPORT](https://www.kolonsport.com/Product/QELAX26003BOC)",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-c124a1f36cd0a2b4857d",
+      "brand": "Under Armour",
+      "name": "UA Vanish Woven 2.0",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-32392cda93ff74167fe6",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-cae3f019024b654173b5",
+      "brand": "Under Armour",
+      "name": "ColdGear® NEOLAST™",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-11666f5c76198c2fd12f",
+      "brand": "KOLON SPORT",
+      "name": "[KOLON SPORT](https://www.kolonsport.com/Product/QEBXX26701CRE)",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-501fbff83fdba1a273c3",
+      "brand": "KOLON SPORT",
+      "name": "[KOLON SPORT](https://www.kolonsport.com/Product/TVPOW26692CGY)",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-e5953a1f3cdb16c6a3d3",
+      "brand": "KOLON SPORT",
+      "name": "[KOLON SPORT](https://www.kolonsport.com/Product/TVPOW26502NAY)",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-dad14a064463e7e1ac99",
+      "brand": "Alo",
+      "name": "7\" Double Take Short",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-eeb7ed268a6248f3f4fb",
+      "brand": "Rockfish Weatherwear",
+      "name": "ENGINEERED BOOTS_VE - BROWN",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-77e6b0f45f77c697b07d",
+      "brand": "Alo",
+      "name": "Conquer 1/4 Zip Reform Long Sleeve",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-06acc6d7b199afd8076d",
+      "brand": "Rockfish Weatherwear",
+      "name": "ENGINEERED BOOTS_VE - BLACK",
+      "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-18b2693f21da4dd985e0",
+      "brand": "Rockfish Weatherwear",
+      "name": "CURLY FUR MULES - IVORY",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-fa0bc52ccd74b601abf3",
+      "brand": "Rockfish Weatherwear",
+      "name": "CURLY FUR MULES - BEIGE",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-92eef52736f0bd3306b0",
+      "brand": "Rockfish Weatherwear",
+      "name": "CURLY FUR MULES - PINK",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-feedb23a75cd2d5b6ba7",
+      "brand": "Rockfish Weatherwear",
+      "name": "CURLY FUR MULES - KHAKI GREY",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-b5135a25c554af9c76b2",
+      "brand": "Maison Margiela",
+      "name": "Future Sneaker",
+      "reason": "re-release-launched-2026-05-29"
+    },
+    {
+      "id": "arrival-ce8deaa4514ddc1d72ce",
+      "brand": "Maison Margiela",
+      "name": "Replica Sneakers",
+      "reason": "re-release-launched-2025-12-02"
+    },
+    {
+      "id": "arrival-75944333d4a274873b86",
+      "brand": "Maison Margiela",
+      "name": "Anatomic Numeric Sandals",
+      "reason": "product-verification-required"
+    },
+    {
+      "id": "arrival-3f51a5bfd9bef358987d",
+      "brand": "Maison Margiela",
+      "name": "Anatomic Numeric Sandals",
+      "reason": "product-verification-required"
     },
     {
       "id": "arrival-14410c0b4466b5b90943",
@@ -17553,6 +18153,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-c3e55534b37393434b86",
+      "brand": "Prada",
+      "name": "Court leather sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "arrival-41d6dffd386c46d7e110",
       "brand": "Prada",
       "name": "Court Re-Nylon sneakers",
@@ -17566,6 +18172,12 @@
     },
     {
       "id": "arrival-0e5d0b379f96492e3fd2",
+      "brand": "Prada",
+      "name": "Court Re-Nylon sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-c4d63cae8ef2001880ec",
       "brand": "Prada",
       "name": "Court Re-Nylon sneakers",
       "reason": "representative-photo-review-required"
@@ -17586,6 +18198,18 @@
       "id": "arrival-6a124c67a55f595916d8",
       "brand": "Prada",
       "name": "High-top Re-Nylon sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-io6260-800",
+      "brand": "Nike",
+      "name": "Kobe 3 Low Protro \"Mamba Eterno\"",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-iq3922-001",
+      "brand": "Nike",
+      "name": "Kobe Dunk Low Protro",
       "reason": "representative-photo-review-required"
     },
     {
@@ -17610,6 +18234,12 @@
       "id": "arrival-82afaf2ae8d49f3ce39b",
       "brand": "Onitsuka Tiger",
       "name": "MEXICO 66 TGRS",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "arrival-83b4b6fcc15140e90fe2",
+      "brand": "Prada",
+      "name": "Patent leather and technical fabric Prada America's Cup sneakers",
       "reason": "representative-photo-review-required"
     },
     {
@@ -17667,13 +18297,13 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "official-nike-a23933c-832",
-      "brand": "Nike",
-      "name": "SHAI 001 Lace Up",
+      "id": "arrival-a1acd601af88b6da68c7",
+      "brand": "Prada",
+      "name": "Speedrock leather and mesh fabric sneakers",
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-a1acd601af88b6da68c7",
+      "id": "arrival-66d67ef0d277edaec452",
       "brand": "Prada",
       "name": "Speedrock leather and mesh fabric sneakers",
       "reason": "representative-photo-review-required"
@@ -17688,6 +18318,12 @@
       "id": "arrival-df6baad18926d4fa9919",
       "brand": "Prada",
       "name": "Speedrock mesh fabric sneakers",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "official-nike-a23933c-832",
+      "brand": "Nike",
+      "name": "SHAI 001 Lace Up",
       "reason": "representative-photo-review-required"
     },
     {
@@ -17877,6 +18513,12 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "arrival-d329e17895c3ffb6c74f",
+      "brand": "Brooks",
+      "name": "Adrenaline GTS 10",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-a86f119f3a86916a588f",
       "brand": "Skechers",
       "name": "Arch Fit Arcade - Arcata",
@@ -17895,9 +18537,39 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-e26e6c012b40c1f63576",
+      "brand": "Converse",
+      "name": "Chuck 70 Canvas",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-06e60e3c4a2b88d3ffad",
+      "brand": "Converse",
+      "name": "Chuck 70 Canvas",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-43e4c2a4c7a42d363872",
       "brand": "Converse",
       "name": "Chuck 70 Día de Muertos",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-5e93ab5404d0243004c6",
+      "brand": "Converse",
+      "name": "Chuck Taylor All Star Cherry Blossoms",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-facc4c5df9d944be5789",
+      "brand": "Converse",
+      "name": "Chuck Taylor All Star Cherry Blossoms",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-b6753c909355e112c786",
+      "brand": "Converse",
+      "name": "Chuck Taylor All Star Cherry Garden",
       "reason": "shared-representative-photo"
     },
     {
@@ -17943,9 +18615,183 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-507d2a9add5907cf2ec3",
+      "brand": "Givenchy",
+      "name": "Gent loafers in brushed leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-fb139e48f6b7af2728d9",
+      "brand": "Givenchy",
+      "name": "Gent loafers in brushed leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-14f0b988ed3a8f5939ce",
+      "brand": "Brooks",
+      "name": "Ghost 18",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-b0ab272a1f23230e2885",
+      "brand": "Brooks",
+      "name": "Ghost Max 4",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-3c150f14a089d5b1bc80",
+      "brand": "Givenchy",
+      "name": "Givenchy Puffy Yard sneakers in nappa leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-d6ba049efbc462a87848",
+      "brand": "Givenchy",
+      "name": "Givenchy Puffy Yard sneakers in nappa leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-6226e37bdeadae4e0bab",
+      "brand": "Givenchy",
+      "name": "Givenchy Puffy Yard sneakers in nappa leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-10fa3a6661ca658a3367",
+      "brand": "Givenchy",
+      "name": "Givenchy Yard high-top sneakers in leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-4681d86eb5bb934b0ca3",
+      "brand": "Givenchy",
+      "name": "Givenchy Yard high-top sneakers in leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-7f37876f468c32fe1670",
+      "brand": "Givenchy",
+      "name": "Glide sneakers in leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-3fc29e95ca90f139681f",
+      "brand": "Givenchy",
+      "name": "Glide sneakers in leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-b6b1c0f51348bbdbfc31",
+      "brand": "Brooks",
+      "name": "Glycerin 23",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-d70ed00cd30072a176bc",
+      "brand": "Havaianas",
+      "name": "Havaianas Brasil Twist",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-30fcc0d2f2009dbfa0b9",
+      "brand": "Havaianas",
+      "name": "Havaianas Elegance",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-b041d0ee6db49031edd1",
+      "brand": "Havaianas",
+      "name": "Havaianas Fantasia",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-2ba02a33be8193ffe546",
+      "brand": "Havaianas",
+      "name": "Havaianas Fantasia",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-128541c16b66aae666e7",
+      "brand": "Havaianas",
+      "name": "Havaianas Fantasia",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-c07f362f7730c2c16e76",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim BLACK",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-7d2f03721e273c98cad7",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Glitter II",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-c3e89402d419b648ef7c",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Glitter II",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-04490cc269e90dc0f955",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Glitter II",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-d0c6e735b75402cfdd7e",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Glow",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-fa21464f05a285581f37",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Point",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-576d662ae5ee8c4916b3",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Square Sparkle",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-54e86503520d083532a5",
+      "brand": "Havaianas",
+      "name": "Havaianas Square",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-c9fa1afa791a375dbc60",
+      "brand": "Havaianas",
+      "name": "Havaianas Square",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-9fc7f6c1e81f377572f0",
       "brand": "Skechers",
       "name": "Hotshot - Cozy Fit Wild Style",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-5bf3192b0a77c0fa8c14",
+      "brand": "Brooks",
+      "name": "Hyperion Elite 6",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-21e9210f4882a64cc74b",
+      "brand": "Brooks",
+      "name": "Hyperion Elite 6",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-b08e618e621c38d892d1",
+      "brand": "Givenchy",
+      "name": "Label loafers in nappa leather",
       "reason": "shared-representative-photo"
     },
     {
@@ -18147,6 +18993,24 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-0c769ad070ceda1fb426",
+      "brand": "Givenchy",
+      "name": "New City sneakers in suede",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-c7ed01092eefacc78d62",
+      "brand": "Givenchy",
+      "name": "Pinch loafers in brushed leather",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-91d94a6058e40e51b0cb",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins John Deere Waterproof Relaxed Fit: Respected - Tanzier",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-1095e516807e834f6907",
       "brand": "Skechers",
       "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
@@ -18219,12 +19083,6 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-0dce895ded2a95ffe941",
-      "brand": "Melissa",
-      "name": "Sun Capri Platform",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-119d34cbfe696c1cfd41",
       "brand": "Melissa",
       "name": "Sun Capri Platform",
@@ -18240,36 +19098,6 @@
       "id": "arrival-d7331f4cdd173d02c3a1",
       "brand": "Melissa",
       "name": "Sun Capri Platform",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-2e2d45e274040cb5ef21",
-      "brand": "Melissa",
-      "name": "Wave Platform",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-b84a51a53a56d69ff9b5",
-      "brand": "Havaianas",
-      "name": "Women's Brazil Twist Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-a9b9a5e3b7a7e9dbf8dd",
-      "brand": "Havaianas",
-      "name": "Women's FARM Rio Flor de Fita Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-e7abdcfbcc6d08a153ee",
-      "brand": "Havaianas",
-      "name": "Women's FARM Rio Nina Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-dd538fb61dfa8e7be0b7",
-      "brand": "Havaianas",
-      "name": "Women's FARM Rio Sweet Forest Flip Flops",
       "reason": "shared-representative-photo"
     },
     {
@@ -18291,18 +19119,6 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-2a4e8f28bc1e74b3da7a",
-      "brand": "Havaianas",
-      "name": "Women's Maxi Puffed Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-671c88ac803a645386c0",
-      "brand": "Havaianas",
-      "name": "Women's Maxi Puffed Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-5af1e88b724cc630a280",
       "brand": "Havaianas",
       "name": "Women's Over Puffed Flip Flops",
@@ -18315,12 +19131,6 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-aaf805fbae621024f194",
-      "brand": "Havaianas",
-      "name": "Women's Over Puffed Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-6bb85ede7fb082ee18e2",
       "brand": "Havaianas",
       "name": "Women's Puffed Up Flip Flops",
@@ -18328,18 +19138,6 @@
     },
     {
       "id": "arrival-ae7bb42faa62d26f4f13",
-      "brand": "Havaianas",
-      "name": "Women's Puffed Up Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-3af7763e8391195dd8e0",
-      "brand": "Havaianas",
-      "name": "Women's Puffed Up Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-0fb6138f976c9f3e4a59",
       "brand": "Havaianas",
       "name": "Women's Puffed Up Flip Flops",
       "reason": "shared-representative-photo"
@@ -18358,12 +19156,6 @@
     },
     {
       "id": "arrival-29cc51250904ab5b6b5e",
-      "brand": "Havaianas",
-      "name": "Women's Slim Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-d8aac04615484f3361cf",
       "brand": "Havaianas",
       "name": "Women's Slim Flip Flops",
       "reason": "shared-representative-photo"
@@ -18405,6 +19197,84 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-12e8cc671255044f1b69",
+      "brand": "Brooks",
+      "name": "Hyperion Elite 6",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-0dce895ded2a95ffe941",
+      "brand": "Melissa",
+      "name": "Sun Capri Platform",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-2e2d45e274040cb5ef21",
+      "brand": "Melissa",
+      "name": "Wave Platform",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-b84a51a53a56d69ff9b5",
+      "brand": "Havaianas",
+      "name": "Women's Brazil Twist Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-a9b9a5e3b7a7e9dbf8dd",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Flor de Fita Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-e7abdcfbcc6d08a153ee",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Nina Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-dd538fb61dfa8e7be0b7",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Sweet Forest Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-2a4e8f28bc1e74b3da7a",
+      "brand": "Havaianas",
+      "name": "Women's Maxi Puffed Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-671c88ac803a645386c0",
+      "brand": "Havaianas",
+      "name": "Women's Maxi Puffed Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-aaf805fbae621024f194",
+      "brand": "Havaianas",
+      "name": "Women's Over Puffed Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-3af7763e8391195dd8e0",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-0fb6138f976c9f3e4a59",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-d8aac04615484f3361cf",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-35ae96329380f5c9b52a",
       "brand": "Havaianas",
       "name": "Women's Summer Bliss Slim Flip Flops",
@@ -18414,6 +19284,12 @@
       "id": "arrival-737fbd9492217af98539",
       "brand": "Havaianas",
       "name": "Women's Tradicional Flip Flops",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-1addcd196836279d2e09",
+      "brand": "Brooks",
+      "name": "Hyperion Elite 6",
       "reason": "shared-representative-photo"
     },
     {
@@ -18509,28 +19385,20 @@
       "url": "https://saucony.com/en/progrid-v2-mule/61289U.html"
     },
     {
-      "id": "arrival-d329e17895c3ffb6c74f",
-      "brand": "Brooks",
-      "name": "Adrenaline GTS 10",
+      "id": "arrival-46c279c44a68e7af75dc",
+      "brand": "Alo",
+      "name": "ALO Vapor Crewneck Short Sleeve",
       "reason": "photo-shared-across-models",
-      "sharedWith": "Ghost 18",
-      "image": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png"
+      "sharedWith": "ALO Sunset Sneaker",
+      "image": "https://cdn.shopify.com/s/files/1/2185/2813/files/assets_aa96744e7fe74e2a90d22918299c1f1d_945ee81d107449348da7f44c34f9ffa5.jpg?v=1790099131"
     },
     {
-      "id": "arrival-b0ab272a1f23230e2885",
-      "brand": "Brooks",
-      "name": "Ghost Max 4",
+      "id": "arrival-b9d25970a807dc2bcf41",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes-Manu Bay",
       "reason": "photo-shared-across-models",
-      "sharedWith": "Ghost 18",
-      "image": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png"
-    },
-    {
-      "id": "arrival-b041d0ee6db49031edd1",
-      "brand": "Havaianas",
-      "name": "Havaianas Fantasia",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Havaianas Square",
-      "image": "https://www.havaianas-store.com/dw/image/v2/BLPJ_PRD/on/demandware.static/-/Sites-siteMasterCatalog_Havaianas/default/dw681a1ade/images/2025/4147115_0090_A.jpg?sw=420&sh=420"
+      "sharedWith": "Pane Zephyr Training Women’s Shoes-Manu Bay",
+      "image": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000"
     },
     {
       "id": "arrival-5a25066175f2836fb486",
@@ -18549,12 +19417,484 @@
       "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png"
     },
     {
-      "id": "arrival-b9d25970a807dc2bcf41",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Men’s Shoes-Manu Bay",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Pane Zephyr Training Women’s Shoes-Manu Bay",
-      "image": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000"
+      "id": "arrival-6fee3fd49a124a1317f5",
+      "brand": "Autry",
+      "name": "실버 스웨이드 및 MUSTANG SUGAR MEDALIST LOW 스니커즈",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-0d4b67464aad7af106bb",
+      "brand": "Autry",
+      "name": "플래티넘 스웨이드 및 베이지 SUGAR MEDALIST LOW 스니커즈",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-e5ed596e39438b71af4c",
+      "brand": "Autry",
+      "name": "화이트 및 핑크 가죽 소재 \"CHANGBIN X AUTRY\" MEDALIST LOW 스니커즈",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-8bf757d5db59235c3cc7",
+      "brand": "Autry",
+      "name": "CLC 스니커즈 슈퍼 빈티지 가죽 화이트 앤 플래티넘",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-9bf9eb316e0e8c7b8829",
+      "brand": "Autry",
+      "name": "DALLAS 로우 스니커즈 가죽 앤 스웨이드 마시멜로우 블랙 앤 코블스톤",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-6c54e2f6a5c2a0826a64",
+      "brand": "Autry",
+      "name": "DALLAS 로우 스니커즈 가죽 앤 스웨이드 마시멜로우 앤 크림",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-ca1b938efdcb2ca5b508",
+      "brand": "Autry",
+      "name": "DALLAS 로우 스니커즈 슈퍼 빈티지 가죽 블랙",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-9732e88677a4339c5beb",
+      "brand": "Autry",
+      "name": "HYPERWAY 스니커즈 \"CHANGBIN X AUTRY\" 스웨이드 앤 메시 블랙 앤 핑크",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-34f44b674f4a6d8ae1a1",
+      "brand": "Autry",
+      "name": "HYPERWAY 스니커즈 슈퍼 빈티지 메쉬 앤 스웨이드 브라운 앤 실버",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-92530c035f1ae25414db",
+      "brand": "Autry",
+      "name": "HYPERWAY 스니커즈 슈퍼 빈티지 메쉬 앤 스웨이드 브라운 앤 실버",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-11f15f0a6a870b3a0aa7",
+      "brand": "Autry",
+      "name": "HYPERWAY 스니커즈 슈퍼 빈티지 메쉬 앤 스웨이드 샌드 앤 실버",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-913a8a62646e0ff39b61",
+      "brand": "Autry",
+      "name": "HYPERWAY 스니커즈 슈퍼 빈티지 메쉬 앤 스웨이드 샌드 앤 실버",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-9c2cafad78ea544612eb",
+      "brand": "Autry",
+      "name": "HYPERWAY 스니커즈 슈퍼 빈티지 메쉬 앤 스웨이드 파우더 앤 실버",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-14d3a0f577cacb78c419",
+      "brand": "Autry",
+      "name": "HYPERWAY 스니커즈 합성가죽 앤 메쉬 실버 화이트 앤 아이리쉬 크림",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-712f9206bae587b2ec27",
+      "brand": "Autry",
+      "name": "MALGA CORTINA 슈퍼 빈티지 스웨이드 체스트넛 앤 플레임 스칼렛",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-2ec91846c88e2e62a70a",
+      "brand": "Autry",
+      "name": "MALGA CORTINA 슈퍼 빈티지 스웨이드 체스트넛 앤 플레임 스칼렛",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-5947f57b457da118b812",
+      "brand": "Autry",
+      "name": "MALGA COURMAYEUR 슈퍼 빈티지 스웨이드 아이스 앤 레몬 드롭",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-8d97daa7b01e9a1edea9",
+      "brand": "Autry",
+      "name": "MALGA ST. MORITZ 슈퍼 빈티지 스웨이드 쿠키 앤 데자뷰 블루",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-d612baac92f8427af868",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 \"JEAN-MICHEL BASQUIAT x AUTRY\" 가죽 화이트 앤 블랙",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-111621f8288531c25cdb",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 \"JEAN-MICHEL BASQUIAT x AUTRY\" 가죽 화이트 앤 블랙",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-94bb28eb2b417794178f",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 \"SNOOPY X AUTRY\" 가죽 화이트",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-ffc44eb7a460232c3de8",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 \"SNOOPY X AUTRY\" 가죽 화이트",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-37fa15be34956e936196",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 \"SNOOPY X AUTRY\" 가죽 화이트",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-19f54dac18ff687c8ec3",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 \"SNOOPY X AUTRY\" 가죽 화이트",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-bd297b5caa72a05257a7",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 가죽 마시멜로 앤 아이보리",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-c0e129f20d4207147193",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 가죽 앤 스웨이드 코버트 그린 앤 리코리스",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-e8e733fa2ba6750768ba",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 가죽 화이트 앤 레오파드",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-73236d4fcbdf4dbda8f7",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 가죽 화이트 앤 슬리커 레터링 디테일",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-46f1abd354f051c50285",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 가죽 화이트 앤 초콜릿 칩 루렉스 디테일",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-5be6383695cefd1df01f",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 실버 플래티넘 앤 블랙",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-ff389442b2c5be533779",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 앤 드래곤 메쉬 화이트 앤 탄자나이트",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-850ce9466054b7f5ef12",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 앤 스웨이드 화이트 앤 골드",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-0e360903177b651ef894",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 윈터 앤 블랙",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-f5b75fbdc742a4a0a5c4",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 화이트 블루 스페이스 앤 블루",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-5c40100c52a7766077fe",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 화이트 앤 스웨이드 로즈 칸넬",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-db728ee583091ec232ff",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 화이트 앤 스웨이드 툰드라",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-f94ecdc8c90e79a63f4c",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 나파 가죽 앤 스웨이드 화이트 앤 파우더",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-97e773a3b586cc177c9a",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 스웨이드 비스킷 앤 캥거루",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-5c0ccbfff388b665e1d0",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 스웨이드 앤 가죽 화이트",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-86bfcd09f7f13e54382d",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 스웨이드 앤틸로프 앤 밀리터리",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-011875f836ed9568afbf",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 스웨이드 에빌레오 앤 플래티넘",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-d98bed37b540820854e7",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 스웨이드 파드 앤 페더",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-7abfc96e2fc18bbd1244",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 포니 헤어 텍스쳐 레오파드 앤 블랙",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-598d559d160267550227",
+      "brand": "Autry",
+      "name": "MEDALIST 로우 스니커즈 포니 헤어 텍스쳐 지브라 레오파드 앤 아이보리",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-428212935bfc49e6fb5b",
+      "brand": "Autry",
+      "name": "MEDALIST 슈퍼 빈티지 로우 스니커즈 가죽 라임스토널 화이트 앤 블루",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-7ad8d56dfc22a13860cd",
+      "brand": "Autry",
+      "name": "MEDALIST 스니커즈 슈퍼 빈티지 스웨이드 트리컬러 화이트 샌드 앤 그레이 그린",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-496ae0f00bd8900ef207",
+      "brand": "Autry",
+      "name": "MEDALIST SUPER VINTAGE 로우 스니커즈 스페이스 블루 실버 가죽 스웨이드",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-cb84ee0e37bf7693a710",
+      "brand": "Autry",
+      "name": "REELWIND 로우 스니커즈 나일론 스웨이드 가죽 라운지 앤 코도반",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-70e96d3ad95e29ca1eff",
+      "brand": "Autry",
+      "name": "REELWIND 로우 스니커즈 나일론 스웨이드 가죽 로즈 앤 데저트 샌드",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-403a8b2aec880caf50cc",
+      "brand": "Autry",
+      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 딥 그린 슈가 앤 퀸스",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-d67680062d4e07df43b3",
+      "brand": "Autry",
+      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 블랙",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-535f8d6d8d36a5432d57",
+      "brand": "Autry",
+      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 코코넛 앤 루타바가",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-87397e64f3681f7e7879",
+      "brand": "Autry",
+      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 폼 슈가 앤 커버트 그린",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-0707f4405237c386508e",
+      "brand": "Autry",
+      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 플래티넘 루타바가 앤 브라운",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-62c93295bf1c509dacbf",
+      "brand": "Autry",
+      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 화이트 앤 스카이 슈가",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-a8bf429a763504e70b3d",
+      "brand": "Autry",
+      "name": "SANDY 'HOTEL CORAZÓN' 캔버스 노마드",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-a72284aa02a130d79df1",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 가죽 블랙",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-2f45671b6334e624e8fe",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 가죽 화이트 앤 브론즈 그린",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-ee9fbfad829c5202cb2e",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 가죽 화이트 앤 초콜릿",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-0c765c3284f87ab066e0",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 라미네이티드 가죽 실버 앤 블랙",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-f69bf8e29d97fd53d296",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 라미네이티드 가죽 플래티넘 앤 마시멜로우",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-5512d600e72caa3205e9",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 벨벳 호손 로즈 앤 그레이프 자수",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-ccf91771eec47c7802df",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 블랙 스웨이드",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-aeef00ae6ec6361a5235",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 스웨이드 무스탕",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-450fdb073616f58cdff9",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 스웨이드 무스탕",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-f219862d5bd991cd23c0",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 스웨이드 캐스터리",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-eac089e935c940f44428",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 스웨이드 폼",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-5be741167aba05511fb2",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 스웨이드 폼",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-979cdd5bce1db98174a1",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 체크 패브릭 앤 스웨이드 그레이, 블랙 앤 시라",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-a95b556b655e41388de0",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 체크 패브릭 앤 스웨이드 블랙, 아이보리 앤 쿠키",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-0f40b9144f6a34e3044f",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 체크 패브릭 앤 스웨이드 핑크 파우더 앤 초콜릿",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-8677bdbb13fa68debd51",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 크래클 가죽 화이트 앤 샌드",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-e3fe496d4f05c8981466",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 패브릭 앤 스웨이드 브라운 앤 베이지 하운드투스",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-137627dd6a0ef629647a",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 포니 헤어 텍스처 가죽 레오파드 앤 블랙",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-f6fe5163375e0cfe10a1",
+      "brand": "Autry",
+      "name": "WINDSCAPE 로우 스니커즈 포니 헤어 텍스처 가죽 밀리터리",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-61abebebab2c3be3045b",
+      "brand": "Autry",
+      "name": "WINDSCAPE 스니커즈 스웨이드 화이트",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-7845298d5b87a75384c6",
+      "brand": "Autry",
+      "name": "WINDSPIN 스니커즈 가죽 본 화이트 앤 장식",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-68aa7e4f8578c3e3371c",
+      "brand": "Autry",
+      "name": "WINDSPIN 스니커즈 메쉬 앤 스웨이드 실크",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-19ddd37acfd2ae1ee8e8",
+      "brand": "Autry",
+      "name": "WINDSPIN 스니커즈 슈퍼 빈티지 가죽 마시멜로우 앤 레오파드",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-e04f81e4517003bbbc88",
+      "brand": "Autry",
+      "name": "WINDSPIN 스니커즈 스웨이드 앤 가죽 자스민 앤 루타바가",
+      "reason": "photo-unavailable"
     }
   ]
 }
