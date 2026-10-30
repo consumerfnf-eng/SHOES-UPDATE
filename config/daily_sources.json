@@ -37,6 +37,10 @@
     {
       "name": "Alo Official daily source",
       "url": "https://www.aloyoga.com/en-kr/collections/sneakers"
+    },
+    {
+      "name": "Alo Official newest first (newest first)",
+      "url": "https://www.aloyoga.com/en-kr/collections/sneakers?sort_by=created-descending"
     }
   ],
   "Amina Muaddi": [
@@ -400,6 +404,14 @@
     {
       "name": "FILA Official daily source",
       "url": "https://www.fila.com/"
+    },
+    {
+      "name": "FILA Official New Arrivals (newest first)",
+      "url": "https://www.fila.co.kr/collections/women-new?sort_by=created-descending"
+    },
+    {
+      "name": "FILA Official New Arrivals (newest first)",
+      "url": "https://www.fila.co.kr/collections/men-new?sort_by=created-descending"
     }
   ],
   "Givenchy": [
@@ -593,7 +605,8 @@
   "Maison Mihara Yasuhiro": [
     {
       "name": "Maison Mihara Yasuhiro Official daily source",
-      "url": "https://www.miharayasuhiro.jp/"
+      "url": "https://www.miharayasuhiro.jp/",
+      "basis": "catalogue"
     }
   ],
   "Marine Serre": [
@@ -606,6 +619,10 @@
     {
       "name": "Martine Rose Official daily source",
       "url": "https://www.martine-rose.com/collections/shoes"
+    },
+    {
+      "name": "Martine Rose Official newest first (newest first)",
+      "url": "https://www.martine-rose.com/collections/shoes?sort_by=created-descending"
     }
   ],
   "Miu Miu": [
@@ -680,6 +697,10 @@
     {
       "name": "norda Official daily source",
       "url": "https://nordarun.com/collections/footwear"
+    },
+    {
+      "name": "norda Official newest first (newest first)",
+      "url": "https://nordarun.com/collections/footwear?sort_by=created-descending"
     }
   ],
   "Oakley Factory Team": [
@@ -857,7 +878,8 @@
   "ROA": [
     {
       "name": "ROA Official daily source",
-      "url": "https://www.roa-hiking.com/collections/shoes"
+      "url": "https://www.roa-hiking.com/collections/shoes",
+      "basis": "catalogue"
     },
     {
       "name": "ROA Official daily source",
@@ -934,6 +956,10 @@
     {
       "name": "Simone Rocha Official daily source",
       "url": "https://www.simonerocha.com/"
+    },
+    {
+      "name": "Simone Rocha Official newest first (newest first)",
+      "url": "https://www.simonerocha.com/collections/womenswear?sort_by=created-descending"
     }
   ],
   "Song for the Mute": [
@@ -1003,7 +1029,8 @@
   "Umbro": [
     {
       "name": "Umbro Official Korea daily source",
-      "url": "https://www.umbro.co.kr/"
+      "url": "https://www.umbro.co.kr/",
+      "basis": "catalogue"
     },
     {
       "name": "Umbro Official global style source",
@@ -1077,7 +1104,7 @@
   "Y-3": [
     {
       "name": "Y-3 Official daily source",
-      "url": "https://www.adidas.com/"
+      "url": "https://www.adidas.com/us/y-3"
     }
   ],
   "Yohji Yamamoto": [
@@ -1088,6 +1115,10 @@
     {
       "name": "Yohji Yamamoto Official daily source",
       "url": "https://www.theshopyohjiyamamoto.com/"
+    },
+    {
+      "name": "Yohji Yamamoto Official newest first (newest first)",
+      "url": "https://www.theshopyohjiyamamoto.com/collections/new?sort_by=created-descending"
     }
   ],
   "Zegna": [
@@ -1110,6 +1141,10 @@
     {
       "name": "SATISFY Official public source",
       "url": "https://satisfyrunning.com/collections/shop-all"
+    },
+    {
+      "name": "SATISFY Official newest first (newest first)",
+      "url": "https://satisfyrunning.com/collections/shop-all?sort_by=created-descending"
     }
   ],
   "KOLON SPORT": [
@@ -1136,6 +1171,10 @@
     {
       "name": "National Geographic Official public source",
       "url": "https://natgeostore.ph/collections/footwear"
+    },
+    {
+      "name": "National Geographic Official newest first (newest first)",
+      "url": "https://natgeostore.ph/collections/footwear?sort_by=created-descending"
     }
   ],
   "Havaianas": [
@@ -1157,7 +1196,8 @@
   "Le Coq Sportif": [
     {
       "name": "Le Coq Sportif Official Korea daily source",
-      "url": "https://www.lecoqsportif.co.kr/"
+      "url": "https://www.lecoqsportif.co.kr/",
+      "basis": "catalogue"
     }
   ],
   "Jordan": [
@@ -1203,25 +1243,32 @@
   "Rockfish Weatherwear": [
     {
       "name": "Rockfish Weatherwear Official public source",
-      "url": "https://en.rockfish-weatherwear.co.kr/"
+      "url": "https://en.rockfish-weatherwear.co.kr/",
+      "basis": "catalogue"
     }
   ],
   "23.65": [
     {
       "name": "23.65 Official daily source",
-      "url": "https://www.23-65.com/"
+      "url": "https://www.23-65.com/",
+      "basis": "catalogue"
     }
   ],
   "KEEN": [
     {
       "name": "KEEN Official public source",
       "url": "https://www.keenfootwear.com/collections/shoes"
+    },
+    {
+      "name": "KEEN Official newest first (newest first)",
+      "url": "https://www.keenfootwear.com/collections/shoes?sort_by=created-descending"
     }
   ],
   "OOFOS": [
     {
       "name": "OOFOS Official public source",
-      "url": "https://www.oofos.com/"
+      "url": "https://www.oofos.com/",
+      "basis": "catalogue"
     }
   ],
   "Crocs": [
@@ -1242,12 +1289,20 @@
     {
       "name": "ALOHAS Official US sneakers",
       "url": "https://alohas.com/en-us/collections/sneakers"
+    },
+    {
+      "name": "ALOHAS Official US sneakers (newest first)",
+      "url": "https://alohas.com/en-us/collections/sneakers?sort_by=created-descending"
     }
   ],
   "Melissa": [
     {
       "name": "Melissa Official US sneakers",
       "url": "https://www.shopmelissa.com/collections/adult-sneakers"
+    },
+    {
+      "name": "Melissa Official US sneakers (newest first)",
+      "url": "https://www.shopmelissa.com/collections/adult-sneakers?sort_by=created-descending"
     }
   ]
 }

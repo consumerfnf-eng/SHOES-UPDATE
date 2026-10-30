@@ -43,19 +43,34 @@ const imageUrls=text=>markdownLinks(text).flatMap(l=>l.image?[l]:markdownLinks(l
   const u=new URL(i.url),size=Number(u.searchParams.get('width')||u.searchParams.get('wid')||u.searchParams.get('w'));
   return !(size&&size<160)&&!/(?:^|[\/_])(?:40x40|60x60|80x80)(?:[\/_]|$)/i.test(u.pathname);
 });
-export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence}){
+/** A source can declare that it is not a New section at all.
+ *
+ *  Some brands have no New category and no newest-first sort - their shop is
+ *  simply what they currently sell, and some of them only ever add to it. A
+ *  product on such a page carries no newness claim, so taking only the cards
+ *  with a NEW badge takes nothing: Rockfish Weatherwear's own home page lists
+ *  its whole range and returned 0 candidates every week for that reason.
+ *
+ *  Declaring `basis: 'catalogue'` on the source takes every product on the
+ *  page instead, and says so in the evidence: the kind is `catalogue-listing`,
+ *  which the arrival-evidence gate does not accept. What dates these records
+ *  is the source watch - we read this brand's shelf every week, and a shoe
+ *  that was not on it last week and is on it now was newly listed - which is
+ *  the one claim the page actually supports. */
+export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence,basis}){
   const sourceHash=digest(text),heading=text.search(/^#{1,2}\s+.+$/m);
   const firstProduct=markdownLinks(text).find(l=>!l.image&&isOfficialProductUrl(brand,l.url)&&isProductLink(l.url)&&(/!\[/.test(l.label)||/sneaker|shoe|trainer/i.test(l.label)))?.start??Infinity;
   const footer=[...text.matchAll(/\n#{1,3}\s*(?:You may (?:also |be )|Recommended|Related|Recently viewed|What's Trending|Fearlessly Independent|Stay in the loop|Subscribe)/gi)].find(m=>m.index>firstProduct)?.index??text.length;
   text=text.slice(heading>=0&&heading<firstProduct?heading:0,footer);
   const links=markdownLinks(text).filter(l=>!l.image&&isOfficialProductUrl(brand,l.url)&&isProductLink(l.url));
-  const rows=new Map(),isNew=isNewListing(url,text)||sectionEvidence?.kind==='new-arrivals-navigation'&&sectionEvidence.targetUrl===url&&isOfficialProductUrl(brand,sectionEvidence.url)&&!!sectionEvidence.contentHash;
+  const catalogue=basis==='catalogue';
+  const rows=new Map(),isNew=!catalogue&&(isNewListing(url,text)||sectionEvidence?.kind==='new-arrivals-navigation'&&sectionEvidence.targetUrl===url&&isOfficialProductUrl(brand,sectionEvidence.url)&&!!sectionEvidence.contentHash);
   for(let i=0;i<links.length;i++){
     const link=links[i],key=canonicalUrl(link.url),previous=links[i-1],next=links.slice(i+1).find(l=>canonicalUrl(l.url)!==key);
     // A badge belongs only to the immediately following card, never an entire category.
     const before=text.slice(previous?.end||0,link.start).slice(-160);
     const badge=/(?:^|\n)\s*(?:[-*]\s*)?(?:\*\*)?(?:new|new in|new arrival|new season|신상품|신제품|新作)(?:\*\*)?\s*(?:\n|$)/i.test(before)||/^\s*(?:\*\*)?(?:new(?: in| arrival)?|신상품|新作)(?:\*\*)?[\s\\]*(?:\n|!\[)/i.test(link.label);
-    if(!isNew&&!badge&&!rows.has(key))continue;
+    if(!isNew&&!badge&&!catalogue&&!rows.has(key))continue;
     const labelText=clean(link.label).replace(/\b(?:Next slide|Previous slide|App Access)\s*/gi,'').trim();
     let name=link.label.match(/\*\*([^*]+)\*\*/)?.[1]||labelText.split(/(?:\$|€|£|₩)\s*[\d,.]/)[0]||imageUrls(link.label)[0]?.alt;
     name=clean(name).replace(/\s+E\d{2}$/,'');
@@ -74,7 +89,7 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence}){
     if(!name||/^(?:shop now|quick view|discover|view product|add to bag|new|coming soon|\+?\d+)$/i.test(name))continue;
     const block=text.slice(link.start,next?.start||link.end+1600);
     const images=imageUrls(link.label).concat(imageUrls(block));
-    const row=rows.get(key)||{brand,name,url:link.url,images:[],linkedImages:[],cardDescription:clean(link.label),arrivalEvidence:{verified:true,brand,productUrl:link.url,kind:isNew?'new-arrivals-listing':'new-badge',url,verifiedAt:checkedAt,excerpt:(isNew?'Official New / New Arrivals listing: ':'Official product New badge: ')+name,contentHash:sourceHash}};
+    const row=rows.get(key)||{brand,name,url:link.url,images:[],linkedImages:[],cardDescription:clean(link.label),arrivalEvidence:{verified:true,brand,productUrl:link.url,kind:isNew?'new-arrivals-listing':badge?'new-badge':'catalogue-listing',url,verifiedAt:checkedAt,excerpt:(isNew?'Official New / New Arrivals listing: ':badge?'Official product New badge: ':'Official catalogue listing, dated by the source watch: ')+name,contentHash:sourceHash}};
     if(labelText&&/sneaker|trainer|shoe/i.test(name))row.name=name;
     if(imageDerivedName)row.needsProductTitle=true;
     if(labelText.length>row.cardDescription.length)row.cardDescription=labelText;
@@ -209,7 +224,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
       const source=queue.shift(),key=canonicalUrl(source.url);if(seen.has(key)||!isOfficialProductUrl(brand,source.url))continue;seen.add(key);status.attempts++;
       try{
         const text=assertReadableOfficial(await read(`https://r.jina.ai/${source.url}`));status.responses++;
-        const rows=parseArrivalListing(text,{brand,url:source.url,checkedAt,sectionEvidence:source.sectionEvidence});if(isNewListing(source.url,text)||rows.length)status.listingPages++;
+        const rows=parseArrivalListing(text,{brand,url:source.url,checkedAt,sectionEvidence:source.sectionEvidence,basis:source.basis});if(isNewListing(source.url,text)||rows.length)status.listingPages++;
         for(const p of rows)candidates.set(canonicalUrl(p.url),p);
         const followups=listingFollowups(text,source.url,brand,source.sectionEvidence);
         for(const next of followups)if(!seen.has(canonicalUrl(next.url))&&!queue.some(q=>canonicalUrl(q.url)===canonicalUrl(next.url)))queue.push(next);

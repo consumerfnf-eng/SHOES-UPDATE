@@ -128,3 +128,34 @@ test('legacy release-based queue entries wait for their migrated publication ann
   const due=await publishCurated({directory:dir,now:new Date('2027-01-07T00:00:00Z'),maintenance:true});assert.equal(due.queue.deferred.length,0);assert.equal(due.queue.products.length,1);assert.equal(due.queue.products[0].firstPublishedAt,now.toISOString());
  }finally{await fs.rm(dir,{recursive:true,force:true});}
 });
+
+test('a brand with no New section is read as a catalogue, dated by the watch rather than claimed as new',()=>{
+ // Rockfish Weatherwear's own home page lists its whole range with no New
+ // category and no newest-first sort, so every week it returned nothing: the
+ // parser only kept cards carrying a NEW badge.
+ const home='https://en.rockfish-weatherwear.co.kr/';
+ const pdp='https://en.rockfish-weatherwear.co.kr/product/cloudy-sneaker-black/4201/category/542/display/1/';
+ const text=`# ROCKFISH
+[![Cloudy sneaker black](https://en.rockfish-weatherwear.co.kr/web/product/cloudy.jpg)**Cloudy Sneaker**](${pdp})`;
+ const none=parseArrivalListing(text,{brand:'Rockfish Weatherwear',url:home,checkedAt:now.toISOString()});
+ assert.equal(none.length,0,'an undeclared home page still proves nothing');
+ const [row]=parseArrivalListing(text,{brand:'Rockfish Weatherwear',url:home,checkedAt:now.toISOString(),basis:'catalogue'});
+ assert.equal(row.url,pdp);
+ // The evidence says what it is. `catalogue-listing` is not one of the kinds
+ // the arrival gate accepts, so the record waits for the source watch to date
+ // it instead of being published as a new arrival.
+ assert.equal(row.arrivalEvidence.kind,'catalogue-listing');
+ const product=listingProduct(row,now.toISOString());
+ assert.equal(publicationWindow(product)||null,null);
+ assert.equal(product.firstSeen,now.toISOString());
+});
+
+test('a NEW badge on a catalogue page is still a NEW badge',()=>{
+ const home='https://www.oofos.com/';
+ const pdp='https://www.oofos.com/products/ooahh-sport-flex-sneaker';
+ const text=`# OOFOS
+NEW
+[![OOahh sport](https://www.oofos.com/cdn/ooahh.jpg)**OOahh Sport Flex Sneaker**](${pdp})`;
+ const [row]=parseArrivalListing(text,{brand:'OOFOS',url:home,checkedAt:now.toISOString(),basis:'catalogue'});
+ assert.equal(row.arrivalEvidence.kind,'new-badge');
+});
