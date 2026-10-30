@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-30T17:07:37.341756+09:00",
+  "checkedAt": "2026-10-30T18:05:15.499194+09:00",
   "sources": {
     "retail-ssense": {
       "status": "ok",
@@ -192,33 +192,6 @@
         }
       ]
     },
-    "retail-balardi": {
-      "status": "ok",
-      "basis": "dated",
-      "items": 960,
-      "creditsUsed": 0,
-      "diagnostics": [
-        {
-          "collection": "womens-sneakers",
-          "label": "여성 스니커즈 · 최신순",
-          "pages": 40,
-          "candidates": 9833,
-          "kept": 960,
-          "tooOld": 8539,
-          "dropped": {
-            "excluded-silhouette": 90,
-            "kids": 10,
-            "sandal-or-clog": 13,
-            "no-sneaker-evidence": 196,
-            "no-url-or-image": 2
-          },
-          "errors": [],
-          "pageCapHit": true,
-          "pageSize": 48,
-          "pageCap": 20
-        }
-      ]
-    },
     "retail-wconcept": {
       "status": "ok",
       "basis": "delta",
@@ -317,7 +290,7 @@
     "newsletter": {
       "status": "ok",
       "items": 620,
-      "matchedToRetail": 333,
+      "matchedToRetail": 319,
       "unidentifiedArticles": 59,
       "diagnostics": [
         {
@@ -475,25 +448,159 @@
     "requested": 0,
     "new": 0,
     "rereadForVersion": 0,
-    "cached": 5080,
-    "readable": 5073,
+    "cached": 5082,
+    "readable": 5075,
     "stillOnOldVersion": 10,
     "failures": {},
-    "duplicatePhotosMerged": 143
+    "identicalPhotosMerged": 101,
+    "duplicatePhotosMerged": 165
   },
   "modelGrouping": {
     "step": "model grouping",
-    "colourwayFromOwnName": 222,
-    "modelGroupsAssigned": 1567,
-    "groupedByStyleCode": 299,
-    "groupedByColourSlot": 47,
-    "joinedToExistingModel": 21,
-    "colourwaysRecoveredFromName": 458
+    "colourwayFromOwnName": 156,
+    "modelGroupsAssigned": 1473,
+    "groupedByStyleCode": 279,
+    "groupedByColourSlot": 29,
+    "joinedToExistingModel": 18,
+    "colourwaysRecoveredFromName": 414
   },
-  "rereleasesExcluded": 311,
-  "modelsIndexed": 9033,
-  "publishedRetail": 4285,
-  "publishedNewsletter": 614,
-  "retailCollected": 19982,
-  "heldOutsideWindow": 15697
+  "audienceMerge": {
+    "step": "audience merge",
+    "mensDuplicatesDropped": 83,
+    "mensKeptAsOnlyColourway": 63
+  },
+  "alreadyOfficial": {
+    "step": "already on the official page",
+    "alreadyOfficialDropped": 28,
+    "alreadyOfficialExamples": [
+      {
+        "id": "weekly-ssense-807673e08201eaffe64d",
+        "brand": "On",
+        "name": "Cloudvista 3 Waterproof Sneakers",
+        "matchedOn": "on|cloudvista3waterproof"
+      },
+      {
+        "id": "weekly-ssense-827500bd37143d01d8fe",
+        "brand": "KEEN",
+        "name": "Jasper Rocks Sneakers",
+        "matchedOn": "keen|jasperrocks"
+      },
+      {
+        "id": "weekly-ssense-aad65c170dc82c6268d0",
+        "brand": "KEEN",
+        "name": "Jasper Nylon Waterproof Sneakers",
+        "matchedOn": "keen|jaspernylonwaterproof"
+      },
+      {
+        "id": "weekly-ssense-4fa2b86f940a728529d9",
+        "brand": "KEEN",
+        "name": "Jasper Rocks Sneakers",
+        "matchedOn": "keen|jasperrocks"
+      },
+      {
+        "id": "weekly-ssense-ef789a352aabc1138d78",
+        "brand": "On",
+        "name": "Cloudvista 3 Waterproof Sneakers",
+        "matchedOn": "on|cloudvista3waterproof"
+      },
+      {
+        "id": "weekly-ssense-feb47c93f9bae580673a",
+        "brand": "KEEN",
+        "name": "UNEEK 360 Sneakers",
+        "matchedOn": "keen|uneek360"
+      },
+      {
+        "id": "weekly-ssense-d4faf5eaf4cf69b3434b",
+        "brand": "KEEN",
+        "name": "Jasper Rocks Sneakers",
+        "matchedOn": "keen|jasperrocks"
+      },
+      {
+        "id": "weekly-ssense-c2800d2a1d6e2db3d976",
+        "brand": "KEEN",
+        "name": "Jasper Merko Sneakers",
+        "matchedOn": "keen|jaspermerko"
+      },
+      {
+        "id": "weekly-ssense-8febd0a9faf4ab776d1f",
+        "brand": "PUMA",
+        "name": "Speedcat OG Sneakers",
+        "matchedOn": "puma|speedcatog"
+      },
+      {
+        "id": "weekly-ssense-d35a9d7a87a8ff885817",
+        "brand": "PUMA",
+        "name": "Speedcat OG Sneakers",
+        "matchedOn": "puma|speedcatog"
+      },
+      {
+        "id": "weekly-ssense-50b06ae4e2d734b8f413",
+        "brand": "PUMA",
+        "name": "Speedcat OG Sneakers",
+        "matchedOn": "puma|speedcatog"
+      },
+      {
+        "id": "weekly-ssense-4ff89b2b7f9c2f8c3138",
+        "brand": "On",
+        "name": "Cloudvista 3 Sneakers",
+        "matchedOn": "on|cloudvista3"
+      },
+      {
+        "id": "weekly-ssense-50dbf2c6abd7d3c541a5",
+        "brand": "Bottega Veneta",
+        "name": "Shot Sneakers",
+        "matchedOn": "bottegaveneta|shot"
+      },
+      {
+        "id": "weekly-ssense-011375e8e279397fa998",
+        "brand": "On",
+        "name": "Cloudvista 3 Sneakers",
+        "matchedOn": "on|cloudvista3"
+      },
+      {
+        "id": "weekly-ssense-96d3640eff58eef5c8af",
+        "brand": "On",
+        "name": "Cloudvista 3 Sneakers",
+        "matchedOn": "on|cloudvista3"
+      },
+      {
+        "id": "weekly-musinsa-72cf9e9cca9ecdddc3a4",
+        "brand": "Nike",
+        "name": "에어 조던 1 로우 SE W",
+        "matchedOn": "style:iq5498200"
+      },
+      {
+        "id": "weekly-musinsa-fd2154cc6fa968cbb464",
+        "brand": "Nike",
+        "name": "에어 조던 1 로우 SE W",
+        "matchedOn": "style:iq5162001"
+      },
+      {
+        "id": "weekly-musinsa-3452a451ebb9a9eaf203",
+        "brand": "Nike",
+        "name": "에어 조던 3 레트로 스포츠 르네상스 W",
+        "matchedOn": "style:ck9246200"
+      },
+      {
+        "id": "weekly-musinsa-ca5c570c93b9dcca295a",
+        "brand": "Nike",
+        "name": "에어 조던 1 엘리먼트 로우 A/T M",
+        "matchedOn": "style:fv4227004"
+      },
+      {
+        "id": "weekly-musinsa-b7c9b43885236071349b",
+        "brand": "Nike",
+        "name": "에어 맥스 95 빅 버블 GORE-TEX M",
+        "matchedOn": "style:io1877002"
+      }
+    ]
+  },
+  "rereleasesExcluded": 270,
+  "evergreenExcluded": 128,
+  "retiredSourcesDropped": 0,
+  "modelsIndexed": 9034,
+  "publishedRetail": 3106,
+  "publishedNewsletter": 613,
+  "retailCollected": 19022,
+  "heldOutsideWindow": 15916
 }

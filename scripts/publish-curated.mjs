@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
-import {curateCatalog,canonicalBrand,canonicalUrl,isOfficialProductUrl,labelVariantColours,labelUrlVariantColours,preferLateralView} from './curation.mjs';
+import {curateCatalog,canonicalBrand,canonicalUrl,isOfficialProductUrl,labelVariantColours,labelUrlVariantColours,labelNameVariantColours,modelIdentityKeys,preferLateralView} from './curation.mjs';
 import {mergePreserving} from './collect-evidence.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {productPresentation} from './product-presentation.mjs';
@@ -12,6 +12,65 @@ import {publicationState} from '../public/assets/publication-window.mjs';
 import {kstDay} from './curation.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
+
+/** The colour words a brand's own product slug states, folded. */
+function slugWords(url) {
+  try { return new URL(url).pathname.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().split(' '); }
+  catch { return []; }
+}
+/** One canonical product URL publishes once.
+ *
+ *  The record kept is the one the page is evidence *for*: a brand writes the
+ *  colour into its own slug - "triple-s.2-sneaker-black-dark-grey-865849..." -
+ *  so the record whose colourway appears there is the one that page shows.
+ *  With nothing to choose between them the first is kept, which is the order
+ *  the collection already decided.
+ */
+export function keepOnePerProductUrl(products,held) {
+  const groups=new Map();
+  for(const p of products){const u=canonicalUrl(p.url);if(!u)continue;(groups.get(u)||groups.set(u,[]).get(u)).push(p);}
+  const drop=new Set();
+  for(const [url,group] of groups){
+    if(group.length<2)continue;
+    const words=new Set(slugWords(url));
+    const scored=group.map(p=>({p,score:String(p.colorway||'').toLowerCase().split(/[^a-z0-9]+/)
+      .filter(w=>w.length>2&&words.has(w)).length}));
+    const best=scored.reduce((a,b)=>b.score>a.score?b:a,scored[0]);
+    for(const {p} of scored){
+      if(p===best.p)continue;
+      held.push({id:p.id,brand:p.brand,name:p.name,colorway:p.colorway,reason:'duplicate-product-url',url});
+      drop.add(p.id);
+    }
+  }
+  return products.filter(p=>!drop.has(p.id));
+}
+/** A photograph shared by two different models is wrong for at least one.
+ *
+ *  Colour chips of one card may legitimately share a shot; two *models* may
+ *  not. Which of them the picture actually shows is not knowable from the
+ *  record - these are hashed CDN paths - so one is kept and the others are
+ *  held with the reason, rather than three cards being published of which two
+ *  show the wrong shoe.
+ */
+export function holdPhotosSharedAcrossModels(products,held) {
+  const groups=new Map();
+  for(const p of products){const i=p.presentation?.image;if(!i)continue;(groups.get(i)||groups.set(i,[]).get(i)).push(p);}
+  const drop=new Set();
+  for(const group of groups.values()){
+    if(group.length<2)continue;
+    const identity=p=>`${canonicalBrand(p.brand)}|${modelIdentityKeys(p)[0]||p.name}`;
+    const models=[...new Set(group.map(identity))];
+    if(models.length<2)continue;
+    const keep=group[0];
+    for(const p of group){
+      if(p===keep||identity(p)===identity(keep))continue;
+      held.push({id:p.id,brand:p.brand,name:p.name,reason:'photo-shared-across-models',
+                 sharedWith:keep.name,image:p.presentation.image});
+      drop.add(p.id);
+    }
+  }
+  return products.filter(p=>!drop.has(p.id));
+}
 export async function readJson(file,fallback) {try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(e){if(e.code==='ENOENT'&&fallback!==undefined)return fallback;throw e;}}
 export async function atomicJson(file,value) {file=file instanceof URL?fileURLToPath(file):file;await fs.mkdir(path.dirname(file),{recursive:true});const tmp=`${file}.tmp`;await fs.writeFile(tmp,JSON.stringify(value,null,2));await fs.rename(tmp,file);}
 function compatibleEvidenceIdentity(product,evidence) {
@@ -111,7 +170,7 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   if(maintenance&&Array.isArray(prior.products)){const priorIds=new Set(prior.products.map(p=>p.id));result.snapshot.products=result.snapshot.products.filter(p=>priorIds.has(p.id));}
   // Where several colours of one shoe are published with no colour recorded,
   // the cards are identical. The brand's own URLs already tell them apart.
-  labelVariantColours(labelUrlVariantColours(result.snapshot.products));
+  labelNameVariantColours(labelVariantColours(labelUrlVariantColours(result.snapshot.products)));
   const photoReviews=await readJson(path.join(directory,'data/product-presentation.json'),null);
   if(photoReviews){
     result.snapshot.products=result.snapshot.products.flatMap(p=>{
@@ -132,6 +191,17 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
       result.review.held.push({id:p.id,brand:p.brand,name:p.name,reason:'shared-representative-photo'});return false;
     });
   }
+  // One product URL publishes once. Balenciaga's colour swatches sit inside
+  // one product page, so five records - Triple S.2 in five colourways - were
+  // reading the same page and every one of them kept that page as its URL.
+  // The page's own slug names one of those colours, and that is the record
+  // the page is evidence for; the rest have no URL of their own.
+  result.snapshot.products=keepOnePerProductUrl(result.snapshot.products,result.review.held);
+  // Two different models cannot both be the shoe in one photograph. Brooks
+  // published the Adrenaline GTS 10, the Ghost 18 and the Ghost Max 4 with a
+  // single image between them, and the n>=4 rule above - written for
+  // Havaianas' 38 - never saw a group of three.
+  result.snapshot.products=holdPhotosSharedAcrossModels(result.snapshot.products,result.review.held);
   const photoCache=await readJson(path.join(directory,'data/photo-cache.json'),{images:{}});
   // A photograph the brand's CDN will not serve costs that one product its
   // card, the same answer the catalogue already gives a product with no

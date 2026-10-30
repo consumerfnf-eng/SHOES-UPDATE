@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T08:10:07.930Z",
+  "checkedAt": "2026-10-30T09:17:10.432Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -18469,6 +18469,366 @@
       "brand": "Skechers",
       "name": "Skechers Slip-ins: GO WALK 8 -Nova",
       "reason": "shared-representative-photo"
+    },
+    {
+      "id": "live-fb518061bb0db473",
+      "brand": "On",
+      "name": "Cloudvista 3 Waterproof",
+      "colorway": "Black",
+      "reason": "duplicate-product-url",
+      "url": "https://on.com/en-us/products/cloudvista-3-waterproof-m-3mg3025/mens/silver-ore-shoes-3MG30255317"
+    },
+    {
+      "id": "new-20260923-19918d424820ab2e",
+      "brand": "Nike",
+      "name": "Nike Pegasus Plus 2",
+      "colorway": "Midnight Navy/Racer Blue/Grey Mist/Black",
+      "reason": "duplicate-product-url",
+      "url": "https://nike.com/t/pegasus-plus-2-mens-road-running-shoes-p9ePl101/IM2541-400"
+    },
+    {
+      "id": "new-20260923-a0b21e5a752af27e",
+      "brand": "Nike",
+      "name": "Nike Pegasus Plus 2",
+      "colorway": "Gridiron/Persian Violet/True Berry/Metallic Silver",
+      "reason": "duplicate-product-url",
+      "url": "https://nike.com/t/pegasus-plus-2-womens-road-running-shoes-IApQlsjO/IM2543-004"
+    },
+    {
+      "id": "verified-saucony-s101074-1004",
+      "brand": "Saucony",
+      "name": "ProGrid V2 Mule",
+      "colorway": "Trek / Black",
+      "reason": "duplicate-product-url",
+      "url": "https://saucony.com/en/progrid-v2-mule/61289U.html"
+    },
+    {
+      "id": "arrival-14f0b988ed3a8f5939ce",
+      "brand": "Brooks",
+      "name": "Ghost 18",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Adrenaline GTS 10",
+      "image": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png"
+    },
+    {
+      "id": "arrival-b0ab272a1f23230e2885",
+      "brand": "Brooks",
+      "name": "Ghost Max 4",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Adrenaline GTS 10",
+      "image": "https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dw6cece686/images/navigation/2026/F26/F26-Americas-NewArrivals-NavSpotlight-W-XL.png"
+    },
+    {
+      "id": "arrival-54e86503520d083532a5",
+      "brand": "Havaianas",
+      "name": "Havaianas Square",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Havaianas Fantasia",
+      "image": "https://www.havaianas-store.com/dw/image/v2/BLPJ_PRD/on/demandware.static/-/Sites-siteMasterCatalog_Havaianas/default/dw681a1ade/images/2025/4147115_0090_A.jpg?sw=420&sh=420"
+    },
+    {
+      "id": "arrival-e402ee959895d43adf47",
+      "brand": "Nike",
+      "name": "Nike Air Max Plus",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Nike Air Max Plus 'Check'",
+      "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/95c83bbb-a21e-4bb8-8d89-13a2330148af/WMNS+AIR+MAX+PLUS.png"
+    },
+    {
+      "id": "arrival-4fbff54ecf556dd7f425",
+      "brand": "Nike",
+      "name": "Nike Shox TL",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Nike Shox TL 'Check'",
+      "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png"
+    },
+    {
+      "id": "arrival-b5a6055d12e17dbf4d2c",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Blush",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Men's Shoes - Blush",
+      "image": "https://paneshoes.com/cdn/shop/files/1_3ce1ce97-71b6-4ba2-b5a1-9f86c36140c4.png?v=1793205888&width=2000"
+    },
+    {
+      "id": "arrival-465e5f3537f9cd8a724d",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Lacquer",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Men's Shoes - Lacquer",
+      "image": "https://paneshoes.com/cdn/shop/files/1_5b34bd3c-586b-465b-b84e-798ef7224591.png?v=1793205082&width=2000"
+    },
+    {
+      "id": "arrival-79a57c41e7315bc91349",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Obsidian",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Men's Shoes - Obsidian",
+      "image": "https://paneshoes.com/cdn/shop/files/1_4ae0cc58-d38e-4e17-b79a-5086ea89e2ac.png?v=1793205546&width=2000"
+    },
+    {
+      "id": "arrival-d4c44588182156e9e3ad",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Pristine",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Men's Shoes - Pristine",
+      "image": "https://paneshoes.com/cdn/shop/files/1_8acd5228-2e69-4f83-9361-17c86d1510b8.png?v=1793203721&width=2000"
+    },
+    {
+      "id": "arrival-9952613cb125dfb795fb",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Suntan",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Men's Shoes - Suntan",
+      "image": "https://paneshoes.com/cdn/shop/files/1_e4591558-55f9-4784-8e7d-e4c7e811c603.png?v=1793204378&width=2000"
+    },
+    {
+      "id": "arrival-0f45ec52b6c12485cb11",
+      "brand": "PANE",
+      "name": "Pane Light Training Women’s Shoes – Travertine",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Men’s Shoes – Travertine",
+      "image": "https://paneshoes.com/cdn/shop/files/5096-1.jpg?v=1757922786&width=2000"
+    },
+    {
+      "id": "arrival-3d938923976bc5e9ad9a",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes - Ginger Chestnut",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes - Ginger Chestnut",
+      "image": "https://paneshoes.com/cdn/shop/files/1_65e14f21-1eaf-44ba-873d-6651e83b2a67.jpg?v=1789547622&width=2000"
+    },
+    {
+      "id": "arrival-61f016595fa76a5cbf7b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes - Lychee Blush",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes - Lychee Blush",
+      "image": "https://paneshoes.com/cdn/shop/files/1_45eeed76-6f77-40b6-b287-7624fe4eb8fc.jpg?v=1789549195&width=2000"
+    },
+    {
+      "id": "arrival-521d94f0b5e7daa0b72e",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Boromir",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Boromir",
+      "image": "https://paneshoes.com/cdn/shop/files/1_8dcf8142-642f-4715-8741-213296aac9bd.jpg?v=1790820442&width=2000"
+    },
+    {
+      "id": "arrival-17bf963e364a46c295f5",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Gandalf",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Gandalf",
+      "image": "https://paneshoes.com/cdn/shop/files/1_83524d48-9ad4-4c83-8d95-31be6d75466a.jpg?v=1790819923&width=2000"
+    },
+    {
+      "id": "arrival-e37715eeae2a4ad657a1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Gooseberry",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Gooseberry",
+      "image": "https://paneshoes.com/cdn/shop/files/5269_5728eb31-449f-4f06-8ab8-cb4eb135c4a9.jpg?v=1791791768&width=2000"
+    },
+    {
+      "id": "arrival-2b63a9728548e8936508",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Ground Ginger",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Ground Ginger",
+      "image": "https://paneshoes.com/cdn/shop/files/5270.png?v=1792660215&width=2000"
+    },
+    {
+      "id": "arrival-9760be99d50c95692e58",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Hornet",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Hornet",
+      "image": "https://paneshoes.com/cdn/shop/files/5215_26c3c8a3-9bb6-4844-b5f6-a7871465c0dd.jpg?v=1791791102&width=2000"
+    },
+    {
+      "id": "arrival-9dca2336aa57fe1df298",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Mystique",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Mystique",
+      "image": "https://paneshoes.com/cdn/shop/files/5274-1.jpg?v=1755853196&width=2000"
+    },
+    {
+      "id": "arrival-8fcdd535268d3c5d29b7",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Pelican",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Pelican",
+      "image": "https://paneshoes.com/cdn/shop/files/5198_bb2a219b-3815-4628-bc6a-5760ccf43468.jpg?v=1786955474&width=2000"
+    },
+    {
+      "id": "arrival-ec287137301a78574bea",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Percheron",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Percheron",
+      "image": "https://paneshoes.com/cdn/shop/files/1_a9b5bf44-ae95-4e32-a1b2-5f323808b691.jpg?v=1786525714&width=2000"
+    },
+    {
+      "id": "arrival-519450b4db0c47dc0c0a",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Siphlophis",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Siphlophis",
+      "image": "https://paneshoes.com/cdn/shop/files/1_3182d3a7-0366-4a69-b36a-58bb809e3fc4.jpg?v=1790820897&width=2000"
+    },
+    {
+      "id": "arrival-83a1a2c29a12b358420b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Verse",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Verse",
+      "image": "https://paneshoes.com/cdn/shop/files/9_74453bda-faf0-4f21-8cdf-16891ef3e88c.jpg?v=1776740307&width=2000"
+    },
+    {
+      "id": "arrival-bc3fe9c986635026f778",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Willow Creek",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Willow Creek",
+      "image": "https://paneshoes.com/cdn/shop/files/5217_4c0111df-60c3-4e5d-babd-f6383dfe57d1.jpg?v=1791791483&width=2000"
+    },
+    {
+      "id": "arrival-d57e3318e922bd1678c1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Wolf Moon",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Light Training Nogi Men’s Shoes – Wolf Moon",
+      "image": "https://paneshoes.com/cdn/shop/files/1_f566aa02-880b-4b60-bd4f-3bdb68b01595.jpg?v=1765122502&width=2000"
+    },
+    {
+      "id": "new-20260923-55d72bde31a66e94",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Crimson Ink",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Men’s Shoes – Crimson Ink",
+      "image": "https://paneshoes.com/cdn/shop/files/1_32cb4b71-79b9-45b7-ba7c-fee3740640b9.jpg?v=1787125016&width=2000"
+    },
+    {
+      "id": "new-20260923-9d29fb4817fa10e0",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Gray Moss",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Men’s Shoes – Gray Moss",
+      "image": "https://paneshoes.com/cdn/shop/files/1_42368fc0-843b-416a-bb5c-435317c597ed.jpg?v=1787124587&width=2000"
+    },
+    {
+      "id": "new-20260923-a8e13d96a0ce226a",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Imperial Purple",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Men’s Shoes – Imperial Purple",
+      "image": "https://paneshoes.com/cdn/shop/files/1_89b6f997-9c34-40b0-b764-6d9531f67106.jpg?v=1787125781&width=2000"
+    },
+    {
+      "id": "arrival-7840e4e335aa9dd763c3",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Juniper",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Men’s Shoes – Juniper",
+      "image": "https://paneshoes.com/cdn/shop/files/5332_f96d8236-77c6-404e-89f1-29140105110c.jpg?v=1779804982&width=2000"
+    },
+    {
+      "id": "manual-23d6bbc4f594cb24",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Opaque",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Men’s Shoes – Opaque",
+      "image": "https://paneshoes.com/cdn/shop/files/062a2dff172035137ad5866a7b9673ec.jpg?v=1776240018&width=2000"
+    },
+    {
+      "id": "arrival-cd1aa5306ad2c6844ca1",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Porcelain",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Men’s Shoes – Porcelain",
+      "image": "https://paneshoes.com/cdn/shop/files/5324-1.jpg?v=1755850040&width=2000"
+    },
+    {
+      "id": "manual-a160d12c6a67f5b9",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Rowan",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Men’s Shoes – Rowan",
+      "image": "https://paneshoes.com/cdn/shop/files/5331_b74490d4-f9b2-4bcd-8ffb-4d08eed28348.jpg?v=1779804910&width=2000"
+    },
+    {
+      "id": "xlsx-96e68f24261b0dec",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Silk Cyan",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Men’s Shoes – Silk Cyan",
+      "image": "https://paneshoes.com/cdn/shop/files/1_7b7fe3eb-becb-4ac3-8f2e-4d727b3596dc.jpg?v=1787128449&width=2000"
+    },
+    {
+      "id": "arrival-afc095e50dc7fd94fc67",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Sterling",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Men’s Shoes – Sterling",
+      "image": "https://paneshoes.com/cdn/shop/files/5342_c173931a-919c-4d60-8879-c644c714dc5d.jpg?v=1779805025&width=2000"
+    },
+    {
+      "id": "arrival-f32d5bea56e5880848a5",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes-Manu Bay",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Men’s Shoes-Manu Bay",
+      "image": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000"
+    },
+    {
+      "id": "arrival-b3582a461fa10b2cdc4b",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Analogue glitch",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Pouching Men’s Shoes – Analogue glitch",
+      "image": "https://paneshoes.com/cdn/shop/files/5424_fdedfded-c219-4226-b2c5-3a07fc367459.jpg?v=1779804781&width=2000"
+    },
+    {
+      "id": "arrival-fc3a8b00f7ceb19390a2",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Code Retro",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Pouching Men’s Shoes – Code Retro",
+      "image": "https://paneshoes.com/cdn/shop/files/5429_67eabdae-f282-4978-9ff2-ff8e2efa8e64.jpg?v=1779804709&width=2000"
+    },
+    {
+      "id": "arrival-44d185b9dcc0855912ef",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Hologram Fade",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Pouching Men’s Shoes – Hologram Fade",
+      "image": "https://paneshoes.com/cdn/shop/files/5413_9d80ac6f-0c10-491a-984e-a1c6ca4f79d9.jpg?v=1779784297&width=2000"
+    },
+    {
+      "id": "arrival-dfef0a8ada3636aef5fa",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Raw Sample",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Pouching Men’s Shoes – Raw Sample",
+      "image": "https://paneshoes.com/cdn/shop/files/5423_89b413df-c7bf-48b3-b416-299fe127ee5b.jpg?v=1779804846&width=2000"
+    },
+    {
+      "id": "arrival-36b667db36ff69699272",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Time Traveler",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Pane Zephyr Training Pouching Men’s Shoes – Time Traveler",
+      "image": "https://paneshoes.com/cdn/shop/files/5414_ef972336-e50c-42f0-8c68-98235038d6a8.jpg?v=1779804636&width=2000"
+    },
+    {
+      "id": "arrival-5ac5b3d986f19473c88c",
+      "brand": "Onitsuka Tiger",
+      "name": "GSM",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "GSM",
+      "image": "https://media.ot-eur-prod.com/media/catalog/category/NewIn_GSM.jpg"
     }
   ]
 }

@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "note": "Lines that are on sale continuously and are therefore never a new release, however fresh this week's listing looks. A retailer's listing date is the date of that listing: Balardi stamped the Balenciaga Speed 2.0 - a 2021 model on a 2016 silhouette - with 2026-09-16, and the re-release gate could not overturn it because no source carries an older date for a model only that one shop listed. An entry here is absolute: the model is excluded from NEW on every source, official and retail, with no date needed. `names` are matched against the audience-free title, so one spelling covers its colourways; `styles` pin a single colourway.",
+  "models": [
+    {
+      "brand": "Balenciaga",
+      "names": [
+        "Speed",
+        "Speed 2 0",
+        "Speed 2.0",
+        "스피드",
+        "스피드 2.0",
+        "Speed Trainer",
+        "Speed Lace Up"
+      ],
+      "styles": [
+        "392159_1108"
+      ],
+      "since": "2016",
+      "basis": "Speed Trainer 2016; Speed 2.0 2021. Continuously stocked since."
+    },
+    {
+      "brand": "Balenciaga",
+      "names": [
+        "Triple S",
+        "트리플 S",
+        "트리플 에스"
+      ],
+      "since": "2017",
+      "basis": "Triple S 2017. The S.2 is dated separately in model-launch-dates.json."
+    },
+    {
+      "brand": "Balenciaga",
+      "names": [
+        "Track",
+        "트랙"
+      ],
+      "since": "2018",
+      "basis": "Track 2018, Track.2 2019. Permanent line."
+    },
+    {
+      "brand": "Balenciaga",
+      "names": [
+        "Runner",
+        "러너"
+      ],
+      "since": "2022",
+      "basis": "Runner 2022. Permanent line."
+    },
+    {
+      "brand": "Balenciaga",
+      "names": [
+        "Arena",
+        "아레나"
+      ],
+      "since": "2012",
+      "basis": "Arena low/high, continuously stocked."
+    },
+    {
+      "brand": "Veja",
+      "names": [
+        "Esplar",
+        "에스플라",
+        "Campo",
+        "캄포",
+        "V-10",
+        "V 10",
+        "V-12",
+        "Recife",
+        "Nova"
+      ],
+      "since": "2005",
+      "basis": "Veja's core lines are carried every season."
+    },
+    {
+      "brand": "Autry",
+      "names": [
+        "Medalist",
+        "Medialist",
+        "메달리스트"
+      ],
+      "since": "1982",
+      "basis": "Medalist is Autry's permanent silhouette; only collaborations are dated releases."
+    },
+    {
+      "brand": "Converse",
+      "names": [
+        "Chuck 70",
+        "척 70",
+        "Chuck Taylor",
+        "척 테일러",
+        "All Star",
+        "올스타",
+        "Jack Purcell",
+        "잭 퍼셀",
+        "One Star",
+        "원스타"
+      ],
+      "since": "1917",
+      "basis": "Permanent catalogue. Collaborations carry their own names and are not matched by these."
+    },
+    {
+      "brand": "Nike",
+      "names": [
+        "Air Force 1",
+        "에어포스 1",
+        "에어 포스 1",
+        "Air Max 90",
+        "에어맥스 90",
+        "Air Max 1",
+        "에어맥스 1",
+        "Air Max Plus",
+        "에어맥스 플러스",
+        "Dunk Low",
+        "덩크 로우",
+        "Dunk High",
+        "Blazer",
+        "블레이저",
+        "Cortez",
+        "코르테즈",
+        "Killshot",
+        "Shox TL"
+      ],
+      "since": "1982",
+      "basis": "Permanent Nike catalogue lines. Dated collaborations and Retro releases carry their own suffixes."
+    },
+    {
+      "brand": "Jordan",
+      "names": [
+        "Air Jordan 1 Low",
+        "Air Jordan 1 Mid",
+        "에어조던 1 로우",
+        "에어조던 1 미드"
+      ],
+      "since": "1985",
+      "basis": "AJ1 Low/Mid are general-release staples. Numbered Retro drops are dated releases and are not matched by these."
+    },
+    {
+      "brand": "adidas",
+      "names": [
+        "Samba",
+        "삼바",
+        "Gazelle",
+        "가젤",
+        "Campus",
+        "캠퍼스",
+        "Stan Smith",
+        "스탠스미스",
+        "스탠 스미스",
+        "Superstar",
+        "슈퍼스타",
+        "Spezial",
+        "스페지얼"
+      ],
+      "since": "1949",
+      "basis": "Permanent adidas Originals catalogue."
+    },
+    {
+      "brand": "New Balance",
+      "names": [
+        "327",
+        "530",
+        "550",
+        "574",
+        "990",
+        "991",
+        "992",
+        "993",
+        "2002",
+        "1906"
+      ],
+      "since": "1988",
+      "basis": "Permanent New Balance lines, re-listed continuously in every colourway."
+    },
+    {
+      "brand": "Vans",
+      "names": [
+        "Old Skool",
+        "올드스쿨",
+        "Authentic",
+        "어센틱",
+        "Sk8-Hi",
+        "Slip-On",
+        "슬립온",
+        "Era"
+      ],
+      "since": "1966",
+      "basis": "Permanent Vans catalogue."
+    },
+    {
+      "brand": "Common Projects",
+      "names": [
+        "Original Achilles",
+        "Achilles",
+        "아킬레스",
+        "BBall",
+        "Retro"
+      ],
+      "since": "2004",
+      "basis": "Permanent catalogue, re-listed every season."
+    },
+    {
+      "brand": "Maison Margiela",
+      "names": [
+        "Replica",
+        "레플리카",
+        "Tabi Sneaker"
+      ],
+      "since": "1988",
+      "basis": "Replica is a permanent line."
+    },
+    {
+      "brand": "Golden Goose",
+      "names": [
+        "Superstar",
+        "수퍼스타",
+        "슈퍼스타",
+        "Ball Star",
+        "볼스타",
+        "Mid Star",
+        "Hi Star",
+        "Purestar"
+      ],
+      "since": "2007",
+      "basis": "Permanent Golden Goose silhouettes."
+    },
+    {
+      "brand": "Gucci",
+      "names": [
+        "Ace",
+        "에이스",
+        "Rhyton",
+        "라이톤",
+        "Screener"
+      ],
+      "since": "2015",
+      "basis": "Permanent Gucci sneaker lines."
+    },
+    {
+      "brand": "Prada",
+      "names": [
+        "America's Cup",
+        "Downtown",
+        "Collapse"
+      ],
+      "since": "1997",
+      "basis": "America's Cup is a permanent line."
+    },
+    {
+      "brand": "Alexander McQueen",
+      "names": [
+        "Oversized Sneaker",
+        "오버사이즈",
+        "Deck"
+      ],
+      "since": "2013",
+      "basis": "Oversized Sneaker is carried continuously."
+    },
+    {
+      "brand": "Salomon",
+      "names": [
+        "XT-6",
+        "XT 6",
+        "XT-4",
+        "XT 4",
+        "ACS Pro",
+        "Speedcross"
+      ],
+      "since": "2013",
+      "basis": "Permanent Salomon Sportstyle lines; seasonal colourways are not new models."
+    },
+    {
+      "brand": "ASICS",
+      "names": [
+        "GEL-KAYANO 14",
+        "젤 카야노 14",
+        "GEL-1130",
+        "GEL-NYC",
+        "Onitsuka"
+      ],
+      "since": "2002",
+      "basis": "Permanent ASICS Sportstyle lines."
+    },
+    {
+      "brand": "PUMA",
+      "names": [
+        "Suede Classic",
+        "스웨이드 클래식",
+        "Palermo",
+        "팔레르모"
+      ],
+      "since": "1968",
+      "basis": "Permanent PUMA catalogue. The Speedcat relaunch and its 2026 sub-models are dated in model-first-listed.json and are deliberately not listed here."
+    }
+  ]
+}

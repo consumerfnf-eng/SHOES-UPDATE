@@ -336,14 +336,23 @@ function computeVariantGroupName(p) {
   if (p?.modelName) return withoutAudienceLabel(trimModelSeparators(p.modelName));
   if (!p?.name) return p?.modelKey || p?.id || '';
   let base = String(p.name);
-  const colors = [p.colorway, ...(p.colors || []).map(c => typeof c === 'string' ? c : c?.name)].filter(Boolean)
+  // nameColorway is a colour the brand only wrote into the name, proved to be
+  // the variant label by the group it sits in - see labelNameVariantColours.
+  const colors = [p.colorway, p.nameColorway, ...(p.colors || []).map(c => typeof c === 'string' ? c : c?.name)].filter(Boolean)
     .flatMap(value => String(value).split(/[\/,·]+/)).map(value => value.trim())
     // Two letters is noise in a Latin name and a whole colour in Korean:
     // 블랙, 실버, 카키 are all two syllables.
     .filter(value => value.length > 2 || /^[가-힣]{2}$/.test(value)).sort((a,b)=>b.length-a.length);
-  for (const color of colors) base = base.replace(new RegExp(`(?:^|[\\s|—–-])${color.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}(?=$|[\\s|—–-])`,'ig'),' ');
-  // A declared trailing color can leave "sneaker in" behind (e.g. Gucci).
-  if (base !== p.name) base = base.replace(/\s+in\s*$/i,'');
+  // The separators the colourway was just split on have to count as word
+  // boundaries here too, or a multi-shade colour is never found in the name.
+  // Balenciaga states "Black/dark Grey" and titles the listing "... Sneaker
+  // in Black/dark Grey": split on the slash, "dark Grey" is preceded by one,
+  // which the old boundary did not admit - so four colourways of the Triple
+  // S.2 kept their shades in the card name and stood as four cards.
+  for (const color of colors) base = base.replace(new RegExp(`(?:^|[\\s|/,·—–-])${color.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}(?=$|[\\s|/,·—–-])`,'ig'),' ');
+  // A declared trailing color can leave "sneaker in" behind (e.g. Gucci), and
+  // a multi-shade one leaves the separators that stood between its words.
+  if (base !== p.name) base = base.replace(/[\s|/,·—–-]{2,}/g,' ').replace(/\s+in\s*[\s|/,·—–-]*$/i,'');
   base = withoutLeadingNoise(base.replace(TRAILING_STYLE_CODE,' '));
   // Then the material, by the same reasoning as the colour: Curb Snake and
   // Curb Velvet are one Curb.

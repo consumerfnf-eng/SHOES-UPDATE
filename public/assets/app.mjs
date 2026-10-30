@@ -12,8 +12,8 @@ const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
 const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
-const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-balardi','Balardi'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter']];
-const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-balardi':'Balardi','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter'};
+const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter']];
+const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter'};
 let catalog = null, overlay = null, trends = null, rankBoards = null, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
 const activeVariant = new Map();
 function groupKey(p){ return variantGroupKey(p); }
@@ -698,7 +698,7 @@ function renderTrendKeywords() {
   }));
 }
 const SOURCE_NOTES={
-  retail:'SSENSE·Farfetch·Mytheresa·Net-a-Porter·Lyst·무신사·29CM·W컨셉·Balardi에서 매주 수집합니다. 각 리테일러가 밝힌 등록일 기준 최근 3개월 상품만 표시하고, 날짜를 제공하지 않는 곳은 지난 확인 대비 새로 등장한 상품만 올립니다. 최신순으로 정렬됩니다.',
+  retail:'SSENSE·Farfetch·Mytheresa·Net-a-Porter·Lyst·무신사·29CM·W컨셉에서 매주 수집합니다. 각 리테일러가 밝힌 등록일 기준 최근 3개월 상품만 표시하고, 날짜를 제공하지 않는 곳은 지난 확인 대비 새로 등장한 상품만 올립니다. 최신순으로 정렬됩니다.',
   newsletter:'Sneaker News·Highsnobiety·Sneaker Freaker·Hypebeast·Hypebeast Korea·Concept Kicks·Footwear News의 최근 3개월 기사 중 브랜드가 확인된 신상 신발입니다. 기사에 적힌 발매일이 아직 오지 않은 아이템은 발매 예정으로 표시합니다.',
 };
 function renderSourceNote(){

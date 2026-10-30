@@ -81,6 +81,50 @@ export function labelVariantColours(products) {
   }
   return products;
 }
+/** Colour names a brand only ever wrote into the product's own name.
+ *
+ *  ALOHAS publishes the Tb.205 Bara Nylon four times - Blue Sneakers, Brown
+ *  Sneakers, Cream Sneakers, Yellow Sneakers - with the colour field empty
+ *  every time, and Palmes' Jack Purcell PDM twice as "— Green Canvas" and
+ *  "— Navy Suede" with a colourway that names neither. Four cards and two
+ *  cards, for two shoes.
+ *
+ *  Taking a colour word out of any name on its own would be a guess: a model
+ *  can be called Black Sheep. What makes it evidence is the group - two or
+ *  more products of one brand whose names are identical once the colour word
+ *  is removed, each left with a different one. The brand used that word to
+ *  tell them apart, so that is what the word is.
+ */
+const COLOUR_WORDS = new Set(Object.values(JSON.parse(
+  fs.readFileSync(new URL('../config/colour-words.json', import.meta.url), 'utf8')))
+  .flatMap(list => Array.isArray(list) ? list : []).map(w => String(w).toLowerCase()));
+export function labelNameVariantColours(products) {
+  const split = name => {
+    const words = String(name || '').split(/\s+/);
+    const at = words.findIndex(w => COLOUR_WORDS.has(w.toLowerCase().replace(/[^\p{L}]/gu, '')));
+    return at < 0 ? null : [words.filter((_, i) => i !== at).join(' '), words[at]];
+  };
+  const groups = new Map();
+  for (const p of products) {
+    if (p.colorway && p.colorway.split(/\s+/).some(w => key(p.name).includes(key(w)))) continue;
+    const parts = split(p.name);
+    if (!parts) continue;
+    const id = `${key(canonicalBrand(p.brand))}|${key(parts[0])}`;
+    (groups.get(id) || groups.set(id, []).get(id)).push([p, parts[1]]);
+  }
+  for (const group of groups.values()) {
+    if (group.length < 2) continue;
+    const labels = group.map(([, word]) => word.toLowerCase());
+    // Each product has to end up with a colour of its own, or the word was
+    // not what told them apart.
+    if (new Set(labels).size !== group.length) continue;
+    for (const [p, word] of group) {
+      p.nameColorway = word;
+      if (!p.colorway) { p.colorway = word; p.colorwaySource = 'official-name-variant'; }
+    }
+  }
+  return products;
+}
 /** Colour names read off the shelf a product's URL sits on.
  *
  *  On publishes one page per colourway under one model directory, and writes
@@ -425,8 +469,38 @@ export function readableName(name) {
   return out.replace(/\s{2,}/g, ' ').trim();
 }
 
+// A shop's own image furniture, scraped as a product name. These are alt
+// attributes: Salomon's reads "Image 4: Main product image of XT-MM6 MAISON
+// MARGIELA - Unisex · Sneakers", Brooks' "Image 183: Cascadia Elite image
+// number 1" and Melissa's "Image 163: Side view of a black and beige X Bend
+// sneaker with yellow sole". The shoe's name is in there; the gallery's
+// bookkeeping around it is not part of it.
+const IMAGE_FURNITURE = [
+  [/^\s*(?:image|이미지)\s*\d+\s*[:.\-]\s*/i, ''],
+  [/^\s*(?:main|alternate|alternative|hover|secondary|additional)?\s*product image of\s+/i, ''],
+  [/^\s*(?:side|front|back|rear|top|bottom|three[-\s]?quarter|angled|detail|close[-\s]?up)\s+view\s+of\s+(?:an|a|the)?\s*/i, ''],
+  [/\s+image\s+number\s+\d+\s*$/i, ''],
+  [/\s+with\s+(?:a\s+)?[a-z\s]*(?:sole|laces|strap|buckle|upper|heel)\s*$/i, ''],
+  // "- Unisex · Sneakers", "- Men · Road running": the audience and the shop's
+  // own category, in the shop's own separators. The category word varies by
+  // shelf, so it is read as whatever short phrase follows the separator.
+  [/\s*[-–—]\s*(?:men|women|unisex|kids|men's|women's)\s*[·•|,]\s*[\p{L}][\p{L}\s/-]{2,24}\s*$/iu, ''],
+  [/\s*[·•|]\s*(?:sneakers?|shoes?|trainers?)\s*$/i, ''],
+];
 export function cleanProductName(name) {
-  return readableName(name)
+  let text = String(name || '');
+  for (const [pattern, replacement] of IMAGE_FURNITURE) text = text.replace(pattern, replacement);
+  // What a view description leaves behind is the colours the photo shows and
+  // the silhouette noun - "black and beige X Bend sneaker" - and the model's
+  // own name sits between them. Only stripped where the furniture fired: a
+  // leading colour is SSENSE's own naming convention, where "Purple Speedcat
+  // Croc Sneakers" is the product's name as the shop states it.
+  if (text !== String(name || '')) {
+    text = text.replace(/\s+(?:sneakers?|shoes?|trainers?)\s*$/i, '')
+      .replace(/^(?:(?:black|white|grey|gray|brown|beige|navy|blue|red|green|pink|purple|yellow|orange|silver|gold|ivory|cream|khaki|olive|charcoal|burgundy|tan|sand|stone|taupe|coral|peach|camel|mocha|light|dark|metallic|matte)\b[\s&,]*(?:and\s+)?)+/i, '')
+      .trim();
+  }
+  return readableName(text)
     // Melissa's swatch link reads "+2 colors View Bloomy Sneaker in other
     // colors", with the shoe's name in the middle of the card's own wording.
     .replace(/^\+\d+\s*colou?rs?\s*/i, '')
@@ -526,8 +600,13 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
     hybridReview:raw.hybridReview,modelReview:raw.modelReview,footwearReview:raw.footwearReview,
     sourceSignals: visibleSignals, socialMetrics,...(official||{}),collaborationBrands:official?productCollaborationBrands(raw):[],popularity: hot, archiveGroup: raw.archiveGroup || policy.group,
     country: raw.country || '', lastVerifiedAt: raw.productVerifiedAt, productEvidenceUrl: raw.productEvidenceUrl,
-    eligibility: { passed: true, checkedAt: today }, keywordTags: productKeywordIds({...raw,sourceSignals:visibleSignals}) };
-  product.searchConceptIds=productSearchConceptIds({...raw,category:type.category,keywordTags:product.keywordTags});
+    eligibility: { passed: true, checkedAt: today }, keywordTags: productKeywordIds({...raw,name:cleanName,sourceSignals:visibleSignals}) };
+  // Read from the cleaned name, not the raw one. A listing's alt text
+  // describes the photograph - "Side view of a black and beige X Bend sneaker
+  // with yellow sole" - and reading colours off that gave Melissa's X Loop a
+  // black concept while its colourway said Orange/Green/Pink. The colour of
+  // the shoe is the colourway; the colours in the furniture are the studio's.
+  product.searchConceptIds=productSearchConceptIds({...raw,name:cleanName,category:type.category,keywordTags:product.keywordTags});
   return { product, expired: state==='expired' };
 }
 export function rankKeywords(products, now, sourceRanks=[]) {return buildKeywordCatalog(products,sourceRanks,{now}).keywords;}

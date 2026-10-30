@@ -42,6 +42,8 @@ import subprocess
 import sys
 
 from brand_identity import canonical_brand
+from dedupe_rules import (drop_already_official, evergreen_keys, is_evergreen,
+                          official_identity_keys, prefer_women)
 from footwear_scope import clean_colour_value, colour_from_style, is_stated_value
 from image_signals import colour_distance, signals_for
 from model_grouping import assign_model_groups
@@ -63,8 +65,6 @@ RETAIL_COLLECTORS = [
      'report': 'retail-musinsa', 'basis': 'dated'},
     {'script': 'collect_29cm.py', 'staging': 'monthly-staging-29cm.json',
      'report': 'retail-29cm', 'basis': 'dated'},
-    {'script': 'collect_balardi.py', 'staging': 'monthly-staging-balardi.json',
-     'report': 'retail-balardi', 'basis': 'dated'},
     {'script': 'collect_wconcept.py', 'staging': 'monthly-staging-wconcept.json',
      'report': 'retail-wconcept', 'basis': 'delta'},
     {'script': 'collect_lyst_scrapingbee.py', 'staging': 'monthly-staging-lyst.json',
@@ -279,6 +279,16 @@ def normalize_retail_item(item, basis, previous, now, is_baseline):
         # A colour the retailer stated in the wrong field still counts:
         # New Balance writes "MT10O6L5 (CHARCOAL)" into `style`.
         item['colorway'] = colour_from_style(item.get('style'))
+    # A style field holding nothing but a colour name is not a style code.
+    # 29CM files KEEN's 재스퍼 under "BLACK", "SAFARI" and "MAGNET" and EPT's
+    # whole shelf under "black", and a code is matched on as an identity: six
+    # unrelated KEEN models were answering to one "style" and the first-listed
+    # index was dating them off each other.
+    if style_is_colour_only(item.get('style')):
+        if not item['colorway']:
+            item['colorway'] = clean_colour_value(item['style'])
+        item['styleAsListed'] = item['style']
+        item['style'] = ''
     if not item['colorway']:
         item['colorway'] = derive_colorway(item.get('fullName') or item.get('name', ''))
     for field in ('material', 'countryOrigin'):
@@ -353,32 +363,74 @@ def drop_duplicate_photos(items, status):
 
     The same shot gets re-hosted - one retailer's image reused by another,
     or one product listed twice - and each copy was becoming its own card or
-    its own colour chip. Identical hashes within one brand are one listing;
-    the duplicates' links are kept on the survivor rather than thrown away.
-    A different angle of the same shoe does NOT hash alike and is handled by
-    the colour merge in the view, not here.
+    its own colour chip. The duplicates' links are kept on the survivor
+    rather than thrown away. A different angle of the same shoe does NOT
+    hash alike and is handled by the colour merge in the view, not here.
+
+    Two passes, because the model name can be the thing that is wrong:
+
+      distance 0, grouped by brand. A byte-identical hash is the same
+      photograph whatever each shop called it, and the naming is exactly
+      what differs - 29CM's "goodnews 라나 스니커즈-아이보리" and Musinsa's
+      "GOODNEWS 굿뉴스 라나 여성 스니커즈-아이보리" are one listing whose model
+      keys never matched, so they were never compared.
+
+      distance 1-2, grouped by brand *and* model. A near hash across two
+      different models is a collision, not a duplicate: before the model
+      guard, a Nike Tennis Classic absorbed an Air Force 1 and an Air Max 90.
     """
-    # Grouped by brand *and model*, not brand alone. A hash match across two
-    # different models is a hash collision, not a duplicate listing - before
-    # this, a Nike Tennis Classic absorbed an Air Force 1 and an Air Max 90.
-    by_brand = {}
-    for item in items:
-        if item.get('photoHash'):
-            by_brand.setdefault(model_key(item) or f"id:{item['id']}", []).append(item)
     drop, merged = set(), 0
-    for group in by_brand.values():
-        kept = []
-        for item in group:
-            twin = next((k for k in kept if _same_shot(k['photoHash'], item['photoHash'])), None)
-            if twin is None:
-                kept.append(item)
+
+    def collapse(group_key, exact_only):
+        nonlocal merged
+        groups = {}
+        for item in items:
+            if item['id'] in drop or not item.get('photoHash'):
                 continue
-            twin.setdefault('alsoListedAt', []).append(
-                {'source': item.get('source'), 'url': item.get('url'), 'priceLabel': item.get('priceLabel')})
-            drop.add(item['id'])
-            merged += 1
+            groups.setdefault(group_key(item), []).append(item)
+        for group in groups.values():
+            kept = []
+            for item in group:
+                twin = next((k for k in kept
+                             if (k['photoHash'] == item['photoHash'] if exact_only
+                                 else _same_shot(k['photoHash'], item['photoHash']))), None)
+                if twin is None:
+                    kept.append(item)
+                    continue
+                twin.setdefault('alsoListedAt', []).append(
+                    {'source': item.get('source'), 'url': item.get('url'),
+                     'priceLabel': item.get('priceLabel')})
+                drop.add(item['id'])
+                merged += 1
+
+    before = merged
+    collapse(lambda i: _brand_only_key(i) or f"id:{i['id']}", exact_only=True)
+    # The brand spelling can be the thing that differs: Musinsa calls one
+    # label "leey" and 29CM calls it "Yeel", so the brand group never held
+    # both copies of their identical photograph. An identical photo under an
+    # identical product name is one product whatever the shops call the label.
+    collapse(lambda i: 'title:' + _title_key(i) if _title_key(i) else f"id:{i['id']}",
+             exact_only=True)
+    status['identicalPhotosMerged'] = status.get('identicalPhotosMerged', 0) + (merged - before)
+    collapse(lambda i: model_key(i) or f"id:{i['id']}", exact_only=False)
     status['duplicatePhotosMerged'] = status.get('duplicatePhotosMerged', 0) + merged
     return [i for i in items if i['id'] not in drop]
+
+
+def _brand_only_key(item):
+    """The brand, folded, in any script - the widest group an exact hash match
+    is allowed to reach across."""
+    return ''.join(c for c in (canonical_brand(item.get('brand') or '')).lower() if c.isalnum())
+
+
+def _title_key(item):
+    """The product name alone, folded, with no brand in it.
+
+    Long enough to be a name and not a category: "스니커즈" on its own says
+    nothing about which shoe it is.
+    """
+    folded = ''.join(c for c in (item.get('name') or '').lower() if c.isalnum())
+    return folded if len(folded) >= 8 else ''
 
 
 def _same_shot(a, b):
@@ -387,6 +439,44 @@ def _same_shot(a, b):
 
 MODEL_INDEX_FILE = 'model-first-listed.json'
 MIN_MODEL_KEY = 3
+
+
+_COLOUR_ONLY = None
+
+
+def style_is_colour_only(value):
+    """Whether a style field holds something that is not a style code.
+
+    Two tests, and either is enough:
+
+      no digit anywhere. Manufacturers' codes carry them - FS263RU02X098,
+      1042A332-400, SKZF261WATH - and a few words of plain letters is a
+      colour, a size or a category instead. This catches a brand's own colour
+      names, which no general colour list has: 29CM files KEEN's 재스퍼 under
+      "AQUIFER", "MAGNET" and "SAFARI".
+
+      every word is a colour, per config/colour-words.json - the same list the
+      colour chips read, so a word counts as a colour here exactly when it
+      counts as one there.
+
+    It matters because a code is matched on as an identity: six unrelated KEEN
+    models answered to one "BLACK" and the first-listed index was dating them
+    off each other.
+    """
+    global _COLOUR_ONLY
+    if _COLOUR_ONLY is None:
+        words = read_json(os.path.join(ROOT, 'config', 'colour-words.json'), {})
+        _COLOUR_ONLY = {w.strip().lower() for w in
+                        (words.get('derived') or []) + (words.get('supplement') or []) if w}
+    text = (value or '').strip().lower()
+    if not text:
+        return False
+    parts = [p for p in re.split(r'[\s/,·|&_-]+', text) if p]
+    if not parts:
+        return False
+    if not any(c.isdigit() for c in text):
+        return len(parts) <= 3
+    return all(p in _COLOUR_ONLY for p in parts)
 
 
 def style_key(item):
@@ -581,6 +671,15 @@ def main():
     in_window = [p for p in retail_items if retail_is_published(p, cutoff_day, cutoff_iso)]
     published_retail = [p for p in in_window if not is_rerelease(p, model_index, cutoff_day)]
     rereleases = len(in_window) - len(published_retail)
+    # A line that has been on sale for years needs no date to be ruled out.
+    # The index can only answer with the earliest listing *some source* has
+    # shown, which for a model one shop carries alone is that shop's own
+    # listing date - Balardi stamped the 2021 Balenciaga Speed 2.0 with
+    # 2026-09-16 and the gate above had nothing older to overturn it with.
+    evergreen = evergreen_keys()
+    before_evergreen = len(published_retail)
+    published_retail = [p for p in published_retail if not is_evergreen(p, evergreen)]
+    evergreens = before_evergreen - len(published_retail)
     published_newsletter = [n for n in newsletter_items
                             if not n.get('publishedAt') or n['publishedAt'][:10] >= cutoff_day]
 
@@ -594,6 +693,15 @@ def main():
     published_retail += [c for c in carried if str(c.get('source', '')).startswith('retail-')]
     published_newsletter += [c for c in carried if str(c.get('source', '')).startswith('newsletter-')]
 
+    # A retired source must not survive as carried-forward stock. Balardi was
+    # removed because its "newest" listing is a re-release more often than
+    # not, and its 913 published items would otherwise have been carried for
+    # another three months after the collector was deleted.
+    live_sources = {c['report'] for c in RETAIL_COLLECTORS} | {
+        'retail-farfetch', 'retail-mytheresa', 'retail-netaporter'}
+    retired = [p for p in published_retail if p.get('source') not in live_sources]
+    published_retail = [p for p in published_retail if p.get('source') in live_sources]
+
     photo_status = {'step': 'photo signals'}
     published_retail = attach_photo_signals(published_retail, photo_status)
     published_newsletter = attach_photo_signals(published_newsletter, photo_status)
@@ -606,6 +714,21 @@ def main():
     # articles about one shoe are two pieces of writing, not two colours.
     grouping_status = {'step': 'model grouping'}
     assign_model_groups(published_retail, grouping_status)
+
+    # One design, one card, and the women's listing is the one kept: Jaclar's
+    # 페이스 로우 arrived once under 남성 and once under 여성 with the same
+    # photograph. Runs after the grouping, which is what establishes that two
+    # listings are the same model in the first place.
+    audience_status = {'step': 'audience merge'}
+    published_retail = prefer_women(published_retail, audience_status)
+
+    # The brand's own catalogue is the better record of a shoe it already
+    # publishes - its own photo, its style code, its release evidence - so a
+    # retailer's copy of the same shoe is dropped rather than shown twice.
+    official_status = {'step': 'already on the official page'}
+    published_retail = drop_already_official(
+        published_retail, official_identity_keys(os.path.join(PUBLIC_DATA, 'catalog.json')),
+        official_status)
 
     atomic_write_json(os.path.join(DATA, 'monthly-catalog-source.json'), {
         'lastRunAt': now.isoformat(),
@@ -674,7 +797,11 @@ def main():
         'carriedForward': carried_sources,
         'photoSignals': photo_status,
         'modelGrouping': grouping_status,
+        'audienceMerge': audience_status,
+        'alreadyOfficial': official_status,
         'rereleasesExcluded': rereleases,
+        'evergreenExcluded': evergreens,
+        'retiredSourcesDropped': len(retired),
         'modelsIndexed': len(model_index),
         'publishedRetail': len(published_retail),
         'publishedNewsletter': len(published_newsletter),
