@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T04:30:40.717Z",
+  "checkedAt": "2026-10-30T05:44:47.331Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -3198,25 +3198,25 @@
       "id": "new-20260923-9f319175194a7dde",
       "brand": "AMIRI",
       "name": "KIDS - KIDS' SUNSET SKATE - Black",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-31a61b0da21f2b54",
       "brand": "AMIRI",
       "name": "KIDS - KIDS' SUNSET SKATE - Garden Rose",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b3f5e0447093327d",
       "brand": "AMIRI",
       "name": "KIDS - KIDS' SKEL TOP LOW - Black Skyline Blue",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ea0c605fbff9d5d7",
       "brand": "AMIRI",
       "name": "KIDS- KIDS' SKEL TOP LOW TODDLER - Black Skyline Blue",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-9a967b29107cd439",
@@ -4026,19 +4026,19 @@
       "id": "new-20260923-0fda1288f102d2da",
       "brand": "Reebok",
       "name": "Reese's x Angel Reese 1 Basketball Shoes",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-9a640d8ea2bece62",
       "brand": "Reebok",
       "name": "Angel Reese 1 Basketball Shoes",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-ee0b9e7a4fbb469f",
       "brand": "Reebok",
       "name": "Angel Reese 1 Basketball Shoes",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-13de027a785672da",
@@ -4320,7 +4320,7 @@
       "id": "new-20260923-ad9e1a1986cd450d",
       "brand": "Reebok",
       "name": "Engine A 26 Basketball Shoes",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-b58692296f3f01d8",
@@ -4344,7 +4344,7 @@
       "id": "new-20260923-0ae49f4cf7245c76",
       "brand": "Reebok",
       "name": "Engine A 26 Basketball Shoes",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-e6544c542e584881",
@@ -4368,37 +4368,37 @@
       "id": "new-20260923-1fddeb4ff73ce8ec",
       "brand": "Reebok",
       "name": "Reese's x Angel Reese 1 Basketball Shoes - Big Kids",
-      "reason": "excluded-footwear"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ced113eae966c1e8",
       "brand": "Reebok",
       "name": "Classic Nylon Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-62f728570b863a6d",
       "brand": "Reebok",
       "name": "Zone Breaker Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f9cef9ebbb458920",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-6f068fe0a55a4bee",
       "brand": "Reebok",
       "name": "Classic Nylon Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8dcab45cae05ab70",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-5d8ea58af172f9eb",
@@ -4410,25 +4410,25 @@
       "id": "new-20260923-f7a4a819c5cfac39",
       "brand": "Reebok",
       "name": "Zig Dynamica 6 Running Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-6591a30807290b88",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4107ff05f2ab2313",
       "brand": "Reebok",
       "name": "Zone Breaker Shoes - Toddler",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-e87c3f18d6fd0e27",
       "brand": "Reebok",
       "name": "Rush Runner 6.0 Running Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-4918e7f30078bca3",
@@ -4440,25 +4440,25 @@
       "id": "new-20260923-7da4c6f1e0deacfd",
       "brand": "Reebok",
       "name": "Rush Runner 6.0 Running Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-49df3efeaeffcc00",
       "brand": "Reebok",
       "name": "Zig Dynamica 6 Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-8ace6d057eabe54c",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-38a8781671f275e3",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-c16cb9c67c53ed39",
@@ -4473,40 +4473,46 @@
       "reason": "product-verification-required"
     },
     {
+      "id": "new-20260923-137840d4262e6512",
+      "brand": "Reebok",
+      "name": "Energen Running Shoes - Little Kids",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "new-20260923-7c13aee74489a670",
       "brand": "Reebok",
       "name": "Angel Reese 1 Basketball Shoes - Big Kids",
-      "reason": "excluded-footwear"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-b90a54d53c5683d2",
       "brand": "Reebok",
       "name": "Pyro Storm Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-97400228bbde07ea",
       "brand": "Reebok",
       "name": "Zone Breaker Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-f47330df139a4f1a",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-15220289db9e6a08",
       "brand": "Reebok",
       "name": "Zig Dynamica 6 Running Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-0358d7820bf79225",
       "brand": "Reebok",
       "name": "Zig Dynamica 6 Running Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-ba48953e16f24c82",
@@ -5682,7 +5688,7 @@
       "id": "new-20260923-5bd14aef2aad3d8d",
       "brand": "Rick Owens",
       "name": "BABY VINTAGE SNEAKS",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-78d738a1ed63e1c5",
@@ -5736,7 +5742,7 @@
       "id": "new-20260923-b2f6c2faa5db4a8d",
       "brand": "Rick Owens",
       "name": "BABY VINTAGE SNEAKS",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "new-20260923-bbfc4f4a69e94fb1",
@@ -8769,12 +8775,6 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-48fbf75e74344814",
-      "brand": "Nike",
-      "name": "Caitlin 1 \"Caitlin Blue\"",
-      "reason": "excluded-footwear"
-    },
-    {
       "id": "new-20260923-792f0ce4565ae17b",
       "brand": "Nike",
       "name": "Ja 4 \"Dark Mode\"",
@@ -11781,12 +11781,6 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-8ab87e8b5ba3c0fb",
-      "brand": "Nike",
-      "name": "Caitlin 1 \"Warning Code\"",
-      "reason": "excluded-footwear"
-    },
-    {
       "id": "new-20260923-99685f67e312b6a9",
       "brand": "Nike",
       "name": "Air Jordan 1 Retro Low OG \"Howard\"",
@@ -11809,12 +11803,6 @@
       "brand": "Nike",
       "name": "Air Jordan 12 Retro \"Idols Become Rivals\"",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-7a2d1ca2fb703f3b",
-      "brand": "Nike",
-      "name": "Kobe 10 Protro \"Blue Lagoon\"",
-      "reason": "excluded-footwear"
     },
     {
       "id": "new-20260923-51fb17e68d38d8ea",
@@ -12864,7 +12852,7 @@
       "id": "live-eee9e38f22a63c23",
       "brand": "Reebok",
       "name": "Women's Club C Revenge Golf Shoes",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "live-6901ec3607fe9d66",
@@ -13212,7 +13200,7 @@
       "id": "live-e59654acc4ff118a",
       "brand": "Reebok",
       "name": "Angel Reese 1 Basketball Shoes",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "live-0061a2806452f63d",
@@ -13402,15 +13390,11 @@
     },
     {
       "id": "official-nike-ih7423-400",
-      "brand": "Nike",
-      "name": "Caitlin 1 \"Caitlin Blue\"",
-      "reason": "excluded-footwear"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "official-nike-ih7423-700",
-      "brand": "Nike",
-      "name": "Caitlin 1 \"Warning Code\"",
-      "reason": "excluded-footwear"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "official-nike-fz1363-002",
@@ -13424,9 +13408,7 @@
     },
     {
       "id": "official-nike-iq5339-400",
-      "brand": "Nike",
-      "name": "Kobe 10 Protro \"Blue Lagoon\"",
-      "reason": "excluded-footwear"
+      "reason": "duplicate-product-color"
     },
     {
       "id": "live-64413604d50e0492",
@@ -13516,7 +13498,7 @@
       "id": "live-6bb78125add6fe04",
       "brand": "Reebok",
       "name": "x Manors Club C Revenge Golf Shoes",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "live-9a008d0b5759c8ff",
@@ -13594,7 +13576,7 @@
       "id": "live-f4a37b306be5b322",
       "brand": "On",
       "name": "New color Cloudsurfer Youth Youth – Running, 8-12 year olds",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-5feeb3a91e19bbde",
@@ -14227,172 +14209,190 @@
       "reason": "product-verification-required"
     },
     {
+      "id": "live-3e579ab3fdd3630d",
+      "brand": "Reebok",
+      "name": "Blitzr Run 1V Running Shoes - Little Kids",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "live-1e6f388397641d27",
+      "brand": "Reebok",
+      "name": "Blitzr Run Running Shoes - Big Kids",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "live-a3f0f247ee5251ce",
       "brand": "Reebok",
       "name": "Charge Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-b8fd840560b18791",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-3f0b7e7b5b92eede",
       "brand": "Reebok",
       "name": "Zig Dynamica 6 Running Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-2d1c86139faa2d37",
       "brand": "Reebok",
       "name": "Charge Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-9b273fd47bc7b5b9",
       "brand": "Reebok",
       "name": "Reese's x Angel Reese 1 Basketball Shoes - Big Kids  Available Tues., October 20th @ 10:00 AM ET",
-      "reason": "excluded-footwear"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-e1289035bb6ca7f0",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-47bd030558a79eeb",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-df75ee309e1b65ef",
       "brand": "Reebok",
       "name": "Strike Multi-Ground Soccer Shoes - Big Kids",
-      "reason": "excluded-footwear"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-ec463bd42bf7fd19",
       "brand": "Reebok",
       "name": "Zig Dynamica 6 Running Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-24ac0a42033592af",
       "brand": "Reebok",
       "name": "Charge Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-afe4b384b2054350",
       "brand": "Reebok",
       "name": "Charge Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-b4157663d8686160",
       "brand": "Reebok",
       "name": "Charge Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-3b0a1fe718dff776",
       "brand": "Reebok",
       "name": "Charge Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-d5317ff97667bc23",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-97a728fe020549cd",
       "brand": "Reebok",
       "name": "Zone Breaker Shoes - Toddler",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-1e33602aae9a2d86",
       "brand": "Reebok",
       "name": "Zig Dynamica 6 Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-7027a8b4297b9d8c",
       "brand": "Reebok",
       "name": "Angel Reese 1 Basketball Shoes - Big Kids",
-      "reason": "excluded-footwear"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-df6f96e05248f68a",
       "brand": "Reebok",
       "name": "Zig Dynamica 6 Running Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-004b8cba134dd541",
       "brand": "Reebok",
       "name": "Zone Breaker Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-9c2d53920ffc0260",
       "brand": "Reebok",
       "name": "Pyro Storm Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-4e8e222f7c21c17d",
       "brand": "Reebok",
       "name": "Charge Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-bbb5fa4f767f6bbd",
       "brand": "Reebok",
       "name": "Zone Breaker Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-8cd1d881c5c1960d",
       "brand": "Reebok",
       "name": "Pyro Storm 1V Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-18ef163bd43c049d",
       "brand": "Reebok",
       "name": "Forte Pitch Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-9d9543c2d07101c5",
       "brand": "Reebok",
       "name": "Charge Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-4543b462f1a25416",
       "brand": "Reebok",
       "name": "Forte Match T Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "live-8f30ced85e4bd770",
+      "brand": "Reebok",
+      "name": "Blitzr Run 1V Running Shoes - Little Kids",
+      "reason": "kids-sizing"
     },
     {
       "id": "live-10411008f4d57443",
       "brand": "Reebok",
       "name": "Classic Nylon Shoes - Little Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-0c4a468aab616f9f",
       "brand": "Reebok",
       "name": "Classic Nylon Shoes - Big Kids",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-98e2c06e6b81092a",
@@ -14404,7 +14404,7 @@
       "id": "live-5a6bbaa582bf5e13",
       "brand": "Reebok",
       "name": "Engine A 26 Basketball Shoes  Available Fri., October 9th @ 10:00 AM ET",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "live-a5003301ab72dc6b",
@@ -14422,7 +14422,7 @@
       "id": "live-ac1060abfb9d50d3",
       "brand": "Reebok",
       "name": "Engine A 26 Basketball Shoes  Available Fri., October 9th @ 10:00 AM ET",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "live-5235e05884c76c0b",
@@ -14458,7 +14458,7 @@
       "id": "live-cedb6cb533f05e8d",
       "brand": "Reebok",
       "name": "x Manors Club C Revenge Golf Shoes",
-      "reason": "excluded-footwear"
+      "reason": "product-verification-required"
     },
     {
       "id": "live-111827e74d3704e5",
@@ -14620,13 +14620,13 @@
       "id": "live-38a180ff9b1bc6db",
       "brand": "National Geographic",
       "name": "Kids Sandals W/ Logo On Strap- Pink",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-6c491ed119c3e703",
       "brand": "National Geographic",
       "name": "Kids Sandals W/ Logo On Strap- Blue",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-2e16f7673017b27f",
@@ -14650,13 +14650,13 @@
       "id": "live-18d005f18bd43e5f",
       "brand": "National Geographic",
       "name": "Kids Contour Freeze Sandals",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-fb6c52dd7e3a3394",
       "brand": "National Geographic",
       "name": "Kids Blitz Sandal",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-e4af3f1b000633bf",
@@ -14674,13 +14674,13 @@
       "id": "live-12b26a0d3183db76",
       "brand": "National Geographic",
       "name": "Kids Cielo Dial Sneakers",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-3627e2bb63e296c9",
       "brand": "National Geographic",
       "name": "Kids Cielo Sneakers",
-      "reason": "product-verification-required"
+      "reason": "kids-sizing"
     },
     {
       "id": "live-92d35b8654e5d715",
@@ -15451,6 +15451,12 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-b32989ab4eb73430409f",
+      "brand": "PUMA",
+      "name": "Speedcat Ballet Dress-Up",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-0527b5dfb0912bea1f28",
       "brand": "Cecilie Bahnsen",
       "name": "CBBlaise Shoes",
@@ -15587,6 +15593,162 @@
     {
       "id": "arrival-46dc1d50366ed8ad066f",
       "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-7691d006df63b7ba5a9d",
+      "brand": "KEEN",
+      "name": "Big Kids' Jasper Zionic Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-8440d5923250dbd31575",
+      "brand": "KEEN",
+      "name": "Big Kids' Jasper Zionic Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-2c18aad7c3e1cfa8a0d3",
+      "brand": "KEEN",
+      "name": "Big Kids' Jasper Zionic Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-e0db952b5f9aea5004a2",
+      "brand": "KEEN",
+      "name": "Big Kids' Jasper Zionic Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-e36f42720fc89fa29399",
+      "brand": "KEEN",
+      "name": "Big Kids' Jasper Zionic Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-ad8147b49a1ade433506",
+      "brand": "KEEN",
+      "name": "Little Kids' Jasper Zionic Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-0ce80459df70e0a81f6a",
+      "brand": "KEEN",
+      "name": "Little Kids' Jasper Zionic Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-e83abfcb1776f1af4b2f",
+      "brand": "KEEN",
+      "name": "Little Kids' Jasper Zionic Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-dd94e2c3b4fb891d6533",
+      "brand": "KEEN",
+      "name": "Little Kids' Jasper Zionic Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-9fcfa8610b88a774d293",
+      "brand": "KEEN",
+      "name": "Little Kids' Jasper Zionic Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-a9faff15f74041c84b8c",
+      "brand": "KEEN",
+      "name": "Little Kids' Jasper III Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-d2a2699b57a762d55bb1",
+      "brand": "KEEN",
+      "name": "Little Kids' Jasper III Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-bebf5a812cf90d3a34c7",
+      "brand": "KEEN",
+      "name": "Little Kids' Jasper III Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-93bfe29ca6cfad9054e7",
+      "brand": "KEEN",
+      "name": "Little Kids' KS86 Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-9f2ba6943bfc332e531a",
+      "brand": "KEEN",
+      "name": "Little Kids' KS86 Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-5d4e7e0559a54c7f1cd6",
+      "brand": "KEEN",
+      "name": "Big Kids' KS86 Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-5855255981d18e2429fd",
+      "brand": "KEEN",
+      "name": "Big Kids' KS86 Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-6937e6ea33f864e539a8",
+      "brand": "KEEN",
+      "name": "Big Kids' Jasper III Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-9ca2e9282428907ae9c9",
+      "brand": "KEEN",
+      "name": "Big Kids' Jasper III Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-cfe63a3362f33677c348",
+      "brand": "KEEN",
+      "name": "Big Kids' Jasper III Sneaker",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-84bd5398e86ea297c938",
+      "brand": "Melissa",
+      "name": "Image 215: Back and angled view of a pair of off white X Beat kids sneakers with black trim",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-10255e420f2f35f004e4",
+      "brand": "Melissa",
+      "name": "Image 216: Back and angled view of a pair of pink X Beat kids sneakers",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-99f838c5ddf48d080f77",
+      "brand": "Melissa",
+      "name": "Image 212: Back and angled view of a pair of blue X Beat kids sneakers with beige trim",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-b949098a865645331c6a",
+      "brand": "Melissa",
+      "name": "Image 74: Side and angled view of a pair of blue X Beat baby sneakers with beige trim",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-2f986b63dfd3f36976f1",
+      "brand": "Melissa",
+      "name": "Image 77: Side and angled view of a pair of off white X Beat baby sneakers with black trim",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-8f4001ecce0c02daf270",
+      "brand": "Melissa",
+      "name": "Image 79: Side and angled view of a pair of pink X Beat baby sneakers",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-7e7af9cef273c3a3eae8",
@@ -15742,7 +15904,7 @@
       "id": "arrival-db70465ce0ab123d09c8",
       "brand": "Vans",
       "name": "Premium Authentic Ease Shoe",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-4c036370b5107c841fe1",
@@ -15895,6 +16057,12 @@
       "reason": "hybrid-review-required"
     },
     {
+      "id": "arrival-57655a45b80f8e417442",
+      "brand": "Under Armour",
+      "name": "UA HB Runner 2",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-d28fe6b9fce71488679c",
       "brand": "Skechers",
       "name": "UNO - Compañero Eterno",
@@ -15910,7 +16078,7 @@
       "id": "arrival-057420ace096e9b303dc",
       "brand": "Under Armour",
       "name": "UA D. Fox 3",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-7aca1d9ddf72703cc81f",
@@ -15922,7 +16090,7 @@
       "id": "arrival-8c44c58766172b002eb7",
       "brand": "Under Armour",
       "name": "UA D. Fox 3",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-088ae5fce92812bf86a8",
@@ -15937,6 +16105,12 @@
       "reason": "hybrid-review-required"
     },
     {
+      "id": "arrival-d8d9cbdee7e2422bd19f",
+      "brand": "Under Armour",
+      "name": "UA HB Racer 2",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-0813a121d11bc6fce2a5",
       "brand": "Skechers",
       "name": "GO RUN Ascend - Spike",
@@ -15949,6 +16123,12 @@
       "reason": "hybrid-review-required"
     },
     {
+      "id": "arrival-c526018e9f1e88229452",
+      "brand": "Under Armour",
+      "name": "UA HB Racer 2",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-fc68ce97cdd9611e97d1",
       "brand": "Skechers",
       "name": "GO RUN Ascend - Spike",
@@ -15959,6 +16139,12 @@
       "brand": "The North Face",
       "name": "Hedgehog RVST Thermoball Mule",
       "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-2cde94743e306cd640ac",
+      "brand": "Under Armour",
+      "name": "UA Charged+ Ascend",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-6f926014327d2d9a5644",
@@ -16012,7 +16198,7 @@
       "id": "arrival-b5370afdfd72d3a4c77d",
       "brand": "National Geographic",
       "name": "Kids Toddler Seersucker Hood Jumper",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-70edc5b058f72630843a",
@@ -16030,13 +16216,13 @@
       "id": "arrival-135a17543b833535cfe0",
       "brand": "National Geographic",
       "name": "Kids Adventure Woven Mix Sweatshirt",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-675e2d1659734c5e3091",
       "brand": "National Geographic",
       "name": "Kids Half-Zip Pique Sweatshirt",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-4136c35c62ad4336110a",
@@ -16219,12 +16405,6 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "official-nike-io6260-800",
-      "brand": "Nike",
-      "name": "Kobe 3 Low Protro \"Mamba Eterno\"",
-      "reason": "excluded-footwear"
-    },
-    {
       "id": "official-nike-hq2410-200",
       "brand": "Nike",
       "name": "Nike First Sight Shadow",
@@ -16243,6 +16423,24 @@
     {
       "id": "arrival-7131c8feb87b0daa7544",
       "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-d3798bd6d7fe4cce0ac0",
+      "brand": "Reebok",
+      "name": "Blitzr Run Running Shoes - Big Kids",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-5ae29460e3713aaad3ae",
+      "brand": "Melissa",
+      "name": "+2 colors View Hip Sneaker in other colors",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-9a198d788e2cdc8f2fff",
+      "brand": "Melissa",
+      "name": "+2 colors View Hip Sneaker in other colors",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-1a0f272d45059585668b",
@@ -16344,12 +16542,6 @@
       "id": "arrival-f84e7ff3a61e24dcd308",
       "brand": "Nike",
       "name": "Air Jordan 41 \"Ruby\"",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1529629f8f059353dec9",
-      "brand": "Nike",
-      "name": "A'Two \"Potion No. 22\"",
       "reason": "footwear-type-unverified"
     },
     {
@@ -16585,6 +16777,12 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-bad610908c7e4f169cac",
+      "brand": "Under Armour",
+      "name": "UA x RaKai Arc 96",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-feda5ceebc6f6dd1355a",
       "brand": "Skechers",
       "name": "Arch Fit Arcade - Arcata",
@@ -16622,7 +16820,15 @@
     },
     {
       "id": "arrival-22ef32c9c538de760041",
-      "reason": "duplicate-product-color"
+      "brand": "Under Armour",
+      "name": "UA x RaKai Arc 96",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-29932e56b023fc7ef446",
+      "brand": "Under Armour",
+      "name": "UA Harper 11 Pro Turf",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-f2388d6eba5bb70caeef",
@@ -16634,7 +16840,7 @@
       "id": "arrival-c49b4da58851483bb55d",
       "brand": "Under Armour",
       "name": "UA Nova SlipSpeed™ Sharpie",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-322a8d176aa78fb289b2",
@@ -16658,7 +16864,7 @@
       "id": "arrival-233a9c73840bfd4a5614",
       "brand": "Under Armour",
       "name": "UA Harper 11 Pro TPU Low KOD",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-cd2bd076591b6abaf6b8",
@@ -16676,7 +16882,13 @@
       "id": "arrival-06ffef77c657e12c49b6",
       "brand": "Under Armour",
       "name": "UA Blur Pro Lax",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-3aa785714c62bb794f44",
+      "brand": "Under Armour",
+      "name": "UA Velociti Pace",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-a817cdcf0143f94c9c61",
@@ -16685,10 +16897,28 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-91c34e955571df9739be",
+      "brand": "Under Armour",
+      "name": "UA Flex",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-e515123bfcab65cd059d",
       "brand": "National Geographic",
       "name": "Ultimate Backpack",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-8a868f1d7775c01d6149",
+      "brand": "Under Armour",
+      "name": "UA Glyde Sola Pro TPU QOD",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-fff1e2c3f7efeb7599cc",
+      "brand": "Under Armour",
+      "name": "UA Velociti SPD 5",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-2913591d5dde78548734",
@@ -16706,7 +16936,7 @@
       "id": "arrival-7bfda6e44489345f234a",
       "brand": "Havaianas",
       "name": "Kids' Slim Glitter II",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-a40590bb41efc0198823",
@@ -16718,7 +16948,7 @@
       "id": "arrival-ba17497117016a979271",
       "brand": "Havaianas",
       "name": "Kids' Slim Glitter II",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-d483ee6fa9dc458c74d9",
@@ -17265,6 +17495,18 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-7271b7558e4e499e8e23",
+      "brand": "Under Armour",
+      "name": "UA Surge 5",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-267864bc959a29913ab5",
+      "brand": "Under Armour",
+      "name": "UA HB Runner 2",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-e6eab169471c55c70f9d",
       "brand": "Skechers",
       "name": "Skechers Slip-ins Relaxed Fit: D'Lux Walker 3.0 - Loyde",
@@ -17283,6 +17525,12 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-916320e57bdead72d4b5",
+      "brand": "Under Armour",
+      "name": "UA FLX TR",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-ed6d7544de28879a3f7f",
       "brand": "Skechers",
       "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
@@ -17292,7 +17540,13 @@
       "id": "arrival-671934637297d8fae12c",
       "brand": "The North Face",
       "name": "Baby Tent Mules",
-      "reason": "hybrid-review-required"
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-d44670ededb09392aa6c",
+      "brand": "Under Armour",
+      "name": "UA Charged Commit TR 5",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-36cd5e32f3b52841f925",
@@ -17307,10 +17561,22 @@
       "reason": "hybrid-review-required"
     },
     {
+      "id": "arrival-c81e710821453efb81fb",
+      "brand": "Under Armour",
+      "name": "UA Surge 5",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-44823a1ca9c8468bff0b",
       "brand": "The North Face",
       "name": "THERMOBALL™ Traction Mules Leather",
       "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-13bcf319fd557699372b",
+      "brand": "Under Armour",
+      "name": "UA Turbo Go",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-2fc2a9ee12ed2d675080",
@@ -17322,7 +17588,7 @@
       "id": "arrival-cf603673e8c302455686",
       "brand": "Under Armour",
       "name": "UA Shadow Elite 4 FG Mach",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-fd8b57073e7505ebf8d3",
@@ -17331,16 +17597,34 @@
       "reason": "hybrid-review-required"
     },
     {
+      "id": "arrival-c056b7d3cb39967ca2ca",
+      "brand": "Under Armour",
+      "name": "UA Flare",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-4afcc47fedb6002e7e82",
       "brand": "The North Face",
       "name": "Men’s Ultra 112 Waterproof Shoes",
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-12404fc9ad8c2308b02f",
+      "brand": "Under Armour",
+      "name": "UA HB-LO",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-7f046b92f11a25e51b74",
       "brand": "The North Face",
       "name": "Women’s Hedgehog 3 Waterproof Shoes",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-93d7e2c36368d709125f",
+      "brand": "Under Armour",
+      "name": "UA FLX TR",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-f783d9446d6af97025e6",
@@ -17352,13 +17636,13 @@
       "id": "arrival-78ca7f4810474fcb9a7c",
       "brand": "Under Armour",
       "name": "UA Radiant TR",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-1088846e7797d82f8c71",
       "brand": "Crocs",
       "name": "멜로우 2 슈즈 키즈",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-1cdda21a5f8cff060f26",
@@ -17790,7 +18074,7 @@
       "id": "arrival-26ead1c247819dbdbf50",
       "brand": "Converse",
       "name": "SHAI 001 Lace Up",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-72866ff43fe0dafd5d1c",
@@ -17826,7 +18110,7 @@
       "id": "arrival-de1b3c171c5ee9cc24fc",
       "brand": "Converse",
       "name": "SHAI 001 Lace Up",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-23f794e6cf065d97b342",
@@ -17914,11 +18198,9 @@
     },
     {
       "id": "arrival-9fd34bb5895da117ac7a",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-fa6ea2343ddefd3d30da",
-      "reason": "duplicate-product-color"
+      "brand": "Under Armour",
+      "name": "UA Surge 5",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-1095e516807e834f6907",
@@ -18012,7 +18294,9 @@
     },
     {
       "id": "arrival-42068d793d68ee3cf24a",
-      "reason": "duplicate-product-color"
+      "brand": "Under Armour",
+      "name": "UA Turbo Go",
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-143dc4160a7ed45df54e",
@@ -18030,23 +18314,19 @@
       "id": "arrival-34c1eb385f7249c0625e",
       "brand": "Skechers",
       "name": "S-Lights: Wave 92 Lights",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-1f18d01c2e67aaf0dae5",
-      "reason": "duplicate-product-color"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-ccd4bd15a9976ff9d83b",
       "brand": "Skechers",
       "name": "S-Lights: Wave 92 Lights",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-486e6fc197e17873b4e3",
       "brand": "Skechers",
       "name": "Skechers SKX_2 Jr Youth TF",
-      "reason": "footwear-type-unverified"
+      "reason": "kids-sizing"
     },
     {
       "id": "arrival-f4796afe68bbea2f32c4",
@@ -18091,6 +18371,36 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-f5537639647101eea7eb",
+      "brand": "Havaianas",
+      "name": "Kids' Fluffy Flip Flops",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-64aa1fedb48a16061840",
+      "brand": "Havaianas",
+      "name": "Baby Disney's Classics Flip Flop Sandals",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-9a3871a69c9cdbc66e92",
+      "brand": "Havaianas",
+      "name": "Baby Peppa Pig Flip Flop Sandals",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-99f3eeaa41f0072fdfaf",
+      "brand": "Havaianas",
+      "name": "Kids' Slim Flip Flops",
+      "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-ce48f5dedc5e9067a72d",
+      "brand": "Havaianas",
+      "name": "Kids' Slim Flip Flops",
+      "reason": "kids-sizing"
+    },
+    {
       "id": "arrival-b041d0ee6db49031edd1",
       "brand": "Havaianas",
       "name": "Havaianas Fantasia",
@@ -18103,10 +18413,10 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "official-nike-io6259-800",
+      "id": "official-nike-io6260-800",
       "brand": "Nike",
-      "name": "Kobe 8 Protro \"Shanghai Fireworks\"",
-      "reason": "excluded-footwear"
+      "name": "Kobe 3 Low Protro \"Mamba Eterno\"",
+      "reason": "representative-photo-review-required"
     },
     {
       "id": "official-nike-iq3922-001",
@@ -18307,12 +18617,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-12404fc9ad8c2308b02f",
-      "brand": "Under Armour",
-      "name": "UA HB-LO",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "official-nike-iv7022-002",
       "brand": "Nike",
       "name": "Nike Air Max Ecstasy Plus",
@@ -18385,6 +18689,24 @@
       "reason": "representative-photo-review-required"
     },
     {
+      "id": "new-20260923-7a2d1ca2fb703f3b",
+      "brand": "Nike",
+      "name": "Kobe 10 Protro \"Blue Lagoon\"",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "new-20260923-48fbf75e74344814",
+      "brand": "Nike",
+      "name": "Caitlin 1 \"Caitlin Blue\"",
+      "reason": "representative-photo-review-required"
+    },
+    {
+      "id": "new-20260923-8ab87e8b5ba3c0fb",
+      "brand": "Nike",
+      "name": "Caitlin 1 \"Warning Code\"",
+      "reason": "representative-photo-review-required"
+    },
+    {
       "id": "daily-20260921-tom-sachs-nikecraft-gps-fz1363-002",
       "brand": "Nike",
       "name": "Nike General Purpose",
@@ -18433,232 +18755,346 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-64aa1fedb48a16061840",
-      "brand": "Havaianas",
-      "name": "Baby Disney's Classics Flip Flop Sandals",
-      "reason": "photo-unavailable"
+      "id": "arrival-ccd8979e36e6dda42901",
+      "brand": "Melissa",
+      "name": "M Slide",
+      "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-9a3871a69c9cdbc66e92",
-      "brand": "Havaianas",
-      "name": "Baby Peppa Pig Flip Flop Sandals",
-      "reason": "photo-unavailable"
+      "id": "arrival-8782a14d0c185f84cd18",
+      "brand": "Melissa",
+      "name": "M Slide",
+      "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-f5537639647101eea7eb",
-      "brand": "Havaianas",
-      "name": "Kids' Fluffy Flip Flops",
-      "reason": "photo-unavailable"
+      "id": "arrival-f41be09d96e442572153",
+      "brand": "Melissa",
+      "name": "M Slide",
+      "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-99f3eeaa41f0072fdfaf",
-      "brand": "Havaianas",
-      "name": "Kids' Slim Flip Flops",
-      "reason": "photo-unavailable"
+      "id": "arrival-a567676b2afe8ec303fd",
+      "brand": "Melissa",
+      "name": "M Slide",
+      "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-ce48f5dedc5e9067a72d",
-      "brand": "Havaianas",
-      "name": "Kids' Slim Flip Flops",
-      "reason": "photo-unavailable"
+      "id": "arrival-913aba55282599c63cb9",
+      "brand": "Melissa",
+      "name": "M Slide",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-23c1565365e13094ce1c",
+      "brand": "Melissa",
+      "name": "M Slide",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-e0ba684e7dff580db599",
+      "brand": "Melissa",
+      "name": "M Slide",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-89f849d7aa9a70458f9c",
+      "brand": "Melissa",
+      "name": "M Slide",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-7d18a5a1399ff144e61f",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Leather Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-dc5ea7ee5d35dd015155",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Leather Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-bb38e3dcbeab723a891a",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Leather Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-faaea81e9dbd95e02094",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-4ce99d7daf5cdc03f044",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-88ea430314e71af78002",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-294cf75560e08429e8ca",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Suede Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-4cb72829ba553c7af69e",
+      "brand": "OOFOS",
+      "name": "Men's Slip-On Suede Shoe",
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-2ca410cb75545871db58",
       "brand": "Havaianas",
       "name": "Men's Surfer Coast Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-76846170820daa2804c5",
       "brand": "Havaianas",
       "name": "Men's Surfer Coast Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-703ef95c2aa9ef92eacc",
       "brand": "Havaianas",
       "name": "Men's Surfer Coast Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-ae97055dd5d7f9154976",
       "brand": "Havaianas",
       "name": "Men's Track Plus Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-1aa5b5f35467db697a6f",
       "brand": "Havaianas",
       "name": "Men's Track Plus Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-6aed4814acbfc3d1311c",
       "brand": "Havaianas",
       "name": "Men's Track Plus Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-3a62e1c911054ec8ca04",
       "brand": "Havaianas",
       "name": "Men's Urban Print Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-6f35ed194da83d6848ad",
       "brand": "Havaianas",
       "name": "Men's Urban Print Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-0dce895ded2a95ffe941",
+      "brand": "Melissa",
+      "name": "Sun Capri Platform",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-119d34cbfe696c1cfd41",
+      "brand": "Melissa",
+      "name": "Sun Capri Platform",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-8b9c8d9dd5da38726ada",
+      "brand": "Melissa",
+      "name": "Sun Capri Platform",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-d7331f4cdd173d02c3a1",
+      "brand": "Melissa",
+      "name": "Sun Capri Platform",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-2e2d45e274040cb5ef21",
+      "brand": "Melissa",
+      "name": "Wave Platform",
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-b84a51a53a56d69ff9b5",
       "brand": "Havaianas",
       "name": "Women's Brazil Twist Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-a9b9a5e3b7a7e9dbf8dd",
       "brand": "Havaianas",
       "name": "Women's FARM Rio Flor de Fita Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-e7abdcfbcc6d08a153ee",
       "brand": "Havaianas",
       "name": "Women's FARM Rio Nina Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-dd538fb61dfa8e7be0b7",
       "brand": "Havaianas",
       "name": "Women's FARM Rio Sweet Forest Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-342b1e3a8025f5e1574d",
       "brand": "Havaianas",
       "name": "Women's High Platform Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-f69a1031a571e1791e35",
       "brand": "Havaianas",
       "name": "Women's Maxi Puffed Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-2a4e8f28bc1e74b3da7a",
       "brand": "Havaianas",
       "name": "Women's Maxi Puffed Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-671c88ac803a645386c0",
       "brand": "Havaianas",
       "name": "Women's Maxi Puffed Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-5af1e88b724cc630a280",
       "brand": "Havaianas",
       "name": "Women's Over Puffed Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-dc1b34a095696f5f344e",
       "brand": "Havaianas",
       "name": "Women's Over Puffed Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-aaf805fbae621024f194",
       "brand": "Havaianas",
       "name": "Women's Over Puffed Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-6bb85ede7fb082ee18e2",
       "brand": "Havaianas",
       "name": "Women's Puffed Up Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-ae7bb42faa62d26f4f13",
       "brand": "Havaianas",
       "name": "Women's Puffed Up Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-3af7763e8391195dd8e0",
       "brand": "Havaianas",
       "name": "Women's Puffed Up Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-0fb6138f976c9f3e4a59",
       "brand": "Havaianas",
       "name": "Women's Puffed Up Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-00c488fe4b32723fd08f",
       "brand": "Havaianas",
       "name": "Women's Slim Flatform Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-91790fb2457d81e1e156",
       "brand": "Havaianas",
       "name": "Women's Slim Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-29cc51250904ab5b6b5e",
       "brand": "Havaianas",
       "name": "Women's Slim Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-d8aac04615484f3361cf",
       "brand": "Havaianas",
       "name": "Women's Slim Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-bb800b6f69ce992f6073",
       "brand": "Havaianas",
       "name": "Women's Slim Palette Glow Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-cfbc7549aa5113190af9",
+      "brand": "OOFOS",
+      "name": "Women's Slip-On Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-0ed149ad509b09faeb7d",
+      "brand": "OOFOS",
+      "name": "Women's Slip-On Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-c43f62d14687b68d70ee",
+      "brand": "OOFOS",
+      "name": "Women's Slip-On Shoe",
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-a34aeb6d41a32449cc1b",
       "brand": "Havaianas",
       "name": "Women's Summer Bliss Slim Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-ddf35e73894b73e6b2dd",
       "brand": "Havaianas",
       "name": "Women's Summer Bliss Slim Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-35ae96329380f5c9b52a",
       "brand": "Havaianas",
       "name": "Women's Summer Bliss Slim Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-737fbd9492217af98539",
       "brand": "Havaianas",
       "name": "Women's Tradicional Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     },
     {
       "id": "arrival-8d86763bd49dbe8a23a4",
       "brand": "Havaianas",
       "name": "Women's Slim Flip Flops",
-      "reason": "photo-unavailable"
+      "reason": "shared-representative-photo"
     }
   ]
 }

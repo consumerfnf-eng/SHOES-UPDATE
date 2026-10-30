@@ -5328,12 +5328,163 @@
       "sha256": "72529161f0fc30261deec7cd515e31630da57e11ea74ac6d5614986bec5938bb",
       "sourceUrl": "https://media.crocs.com/images/f_auto%2Cq_auto%2Cw_900%2Ch_900%2Cc_pad%2Cb_transparent/products/214360_1NK_ALT100/crocs",
       "checkedAt": "2026-10-30T04:25:03.927Z"
+    },
+    "https://balenciaga.dam.kering.com/m/6db6c82cc101a7ba/Medium-841765WCURB9141_F.jpg?v=2": {
+      "path": "/images/701430c5fe0a131f20971aa9a29261d23b4b7126c70ddf29c1d460a72504d18e.jpg",
+      "sha256": "701430c5fe0a131f20971aa9a29261d23b4b7126c70ddf29c1d460a72504d18e",
+      "sourceUrl": "https://balenciaga.dam.kering.com/m/6db6c82cc101a7ba/Medium-841765WCURB9141_F.jpg?v=2",
+      "checkedAt": "2026-10-30T05:41:37.635Z"
+    },
+    "https://balenciaga.dam.kering.com/m/5fb8086a8efbc039/Medium-841765WCURB1000_F.jpg?v=2": {
+      "path": "/images/01343e4a686bd982b1720613738a56a4e585065d97d2eb1bda5abf1788030100.jpg",
+      "sha256": "01343e4a686bd982b1720613738a56a4e585065d97d2eb1bda5abf1788030100",
+      "sourceUrl": "https://balenciaga.dam.kering.com/m/5fb8086a8efbc039/Medium-841765WCURB1000_F.jpg?v=2",
+      "checkedAt": "2026-10-30T05:41:37.638Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/fc9e4afe-69ab-48c5-976d-ca32980d0a92/Medium/A004VIWASYM1000_F.jpg?v=1": {
+      "path": "/images/5cbf1ae102d747724377504a20b8c71f98279b1826bac13b4d3d2921b8e1f6bc.jpg",
+      "sha256": "5cbf1ae102d747724377504a20b8c71f98279b1826bac13b4d3d2921b8e1f6bc",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/fc9e4afe-69ab-48c5-976d-ca32980d0a92/Medium/A004VIWASYM1000_F.jpg?v=1",
+      "checkedAt": "2026-10-30T05:41:37.653Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/e6216387-2bcb-4218-9298-1513e00f6d2c/Medium/865849WTSDN4000_F.jpg?v=2": {
+      "path": "/images/fff877e738161e4fded95226238bbde6cd501added242f367fd38b18c215a749.jpg",
+      "sha256": "fff877e738161e4fded95226238bbde6cd501added242f367fd38b18c215a749",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/e6216387-2bcb-4218-9298-1513e00f6d2c/Medium/865849WTSDN4000_F.jpg?v=2",
+      "checkedAt": "2026-10-30T05:41:37.732Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/98e5ddfd-030e-40a8-8b9e-abcb37f95300/Medium/865849WTSDN1000_F.jpg?v=1": {
+      "path": "/images/3afea8658d5d6f09d488ba17e6eefc2603a5076ceddf912dad0edaa6dc5d71ca.jpg",
+      "sha256": "3afea8658d5d6f09d488ba17e6eefc2603a5076ceddf912dad0edaa6dc5d71ca",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/98e5ddfd-030e-40a8-8b9e-abcb37f95300/Medium/865849WTSDN1000_F.jpg?v=1",
+      "checkedAt": "2026-10-30T05:41:37.748Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/4dce213e-5a68-4fa6-8e9b-ceff1fdd81cf/Medium/865849WTR2G4917_F.jpg?v=2": {
+      "path": "/images/3c6251922b06dd2d4a9ecb4d4d9f941c39586a35b948ed8ac630d3251c28635b.jpg",
+      "sha256": "3c6251922b06dd2d4a9ecb4d4d9f941c39586a35b948ed8ac630d3251c28635b",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/4dce213e-5a68-4fa6-8e9b-ceff1fdd81cf/Medium/865849WTR2G4917_F.jpg?v=2",
+      "checkedAt": "2026-10-30T05:41:37.750Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/9d795c3a-04ec-4a0a-b196-f75241f2d9e7/Thumbnail/Thumbnail_865849WTRS21011_X.jpg": {
+      "path": "/images/076adc12bfc8cbb22e159220c1231be89fa37faa1ea0d5415ebd039f2b9256a5.jpg",
+      "sha256": "076adc12bfc8cbb22e159220c1231be89fa37faa1ea0d5415ebd039f2b9256a5",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/9d795c3a-04ec-4a0a-b196-f75241f2d9e7/Thumbnail/Thumbnail_865849WTRS21011_X.jpg",
+      "checkedAt": "2026-10-30T05:41:37.794Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/fa2ee112-abf4-4874-a041-f339bb34d504/Medium/865849WTR2G4491_F.jpg?v=2": {
+      "path": "/images/a4809960c00e7f75d110c16cfda2f80e9f9b96101963526c2514be8e7645a4e7.jpg",
+      "sha256": "a4809960c00e7f75d110c16cfda2f80e9f9b96101963526c2514be8e7645a4e7",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/fa2ee112-abf4-4874-a041-f339bb34d504/Medium/865849WTR2G4491_F.jpg?v=2",
+      "checkedAt": "2026-10-30T05:41:37.795Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/c1fdd35d-057e-4feb-a734-4c90729d5ed5/Medium/865849WTR2G1800_F.jpg?v=6": {
+      "path": "/images/a61ec28623e3aa2e2a200ac43e6648ff39489ba34d5a8d993b2402e0efbf1e78.jpg",
+      "sha256": "a61ec28623e3aa2e2a200ac43e6648ff39489ba34d5a8d993b2402e0efbf1e78",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/c1fdd35d-057e-4feb-a734-4c90729d5ed5/Medium/865849WTR2G1800_F.jpg?v=6",
+      "checkedAt": "2026-10-30T05:41:37.817Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/8beaa946-c691-4dd5-9af9-752d45ee7a00/Medium/865849WTRS21133_F.jpg?v=4": {
+      "path": "/images/f91cc06b7f7720b1930d07d88dd3d6dcd699b6465a1b9c4c6141c0b3448b565f.jpg",
+      "sha256": "f91cc06b7f7720b1930d07d88dd3d6dcd699b6465a1b9c4c6141c0b3448b565f",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/8beaa946-c691-4dd5-9af9-752d45ee7a00/Medium/865849WTRS21133_F.jpg?v=4",
+      "checkedAt": "2026-10-30T05:41:37.939Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/ca1e02ca-61dd-4568-a95e-33457684db95/Medium/865849WTRS29191_F.jpg?v=1": {
+      "path": "/images/8c0c007faaff1139b933033611c1f34d91c510a82b997cb17f1b6b290538964a.jpg",
+      "sha256": "8c0c007faaff1139b933033611c1f34d91c510a82b997cb17f1b6b290538964a",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/ca1e02ca-61dd-4568-a95e-33457684db95/Medium/865849WTRS29191_F.jpg?v=1",
+      "checkedAt": "2026-10-30T05:41:37.939Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/eb377b26-4151-46b7-85e4-947d554f2aee/Medium/865849WTRS24497_F.jpg?v=4": {
+      "path": "/images/f33505669c4e2a6c687b2833b317a8b8d3e4518c9c5e208af3189b207f56d310.jpg",
+      "sha256": "f33505669c4e2a6c687b2833b317a8b8d3e4518c9c5e208af3189b207f56d310",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/eb377b26-4151-46b7-85e4-947d554f2aee/Medium/865849WTRS24497_F.jpg?v=4",
+      "checkedAt": "2026-10-30T05:41:37.939Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/d43f79e2-f353-4213-90ee-85e25cd6e093/Medium/865849WTRS21169_F.jpg?v=2": {
+      "path": "/images/878a67d70492ba4477901be1e992970dd6e53aee384aa2f66ff95bf1ed98b837.jpg",
+      "sha256": "878a67d70492ba4477901be1e992970dd6e53aee384aa2f66ff95bf1ed98b837",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/d43f79e2-f353-4213-90ee-85e25cd6e093/Medium/865849WTRS21169_F.jpg?v=2",
+      "checkedAt": "2026-10-30T05:41:38.091Z"
+    },
+    "https://underarmour.scene7.com/is/image/Underarmour/6010216-219_PAIR?rp=standard-30pad%7Cpdp&qlt=85&bgc=f0f0f0&wid=800&hei=1000&size=770%2C970&op_usm=1.75%2C0.3%2C2%2C0": {
+      "path": "/images/8f830a01a7256343607c2744655a5f74d9c6e468ede9ca12097327a5feb93a6c.webp",
+      "sha256": "8f830a01a7256343607c2744655a5f74d9c6e468ede9ca12097327a5feb93a6c",
+      "sourceUrl": "https://underarmour.scene7.com/is/image/Underarmour/6010216-219_PAIR?rp=standard-30pad%7Cpdp&qlt=85&bgc=f0f0f0&wid=800&hei=1000&size=770%2C970&op_usm=1.75%2C0.3%2C2%2C0",
+      "checkedAt": "2026-10-30T05:41:38.374Z"
+    },
+    "https://www.reebok.com/cdn/shop/files/100260646_FLT_eCom.jpg?v=1786448964&width=800": {
+      "path": "/images/705df24631909edca3e92ddc6462a2b46eb01a6abccfcc11f9730407b4fcf7bc.webp",
+      "sha256": "705df24631909edca3e92ddc6462a2b46eb01a6abccfcc11f9730407b4fcf7bc",
+      "sourceUrl": "https://www.reebok.com/cdn/shop/files/100260646_FLT_eCom.jpg?v=1786448964&width=800",
+      "checkedAt": "2026-10-30T05:41:38.472Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/119ca376-9c21-43e9-bf0a-b18b69f75c4c/Medium/865704WSTGL1160_F.jpg?v=1": {
+      "path": "/images/20f45b768579581068002f8d5c86246fa5dddb2cdc11b145b21b45ca7096b53c.jpg",
+      "sha256": "20f45b768579581068002f8d5c86246fa5dddb2cdc11b145b21b45ca7096b53c",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/119ca376-9c21-43e9-bf0a-b18b69f75c4c/Medium/865704WSTGL1160_F.jpg?v=1",
+      "checkedAt": "2026-10-30T05:41:38.550Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/06a0d4d2-f384-4bf3-bef5-00e8cbeffc58/Medium/865704WSTGL5690_F.jpg?v=1": {
+      "path": "/images/bd2aeb096aa22718bfee4df47caf42ceb010005de6e16077ebac55c4c9e06d09.jpg",
+      "sha256": "bd2aeb096aa22718bfee4df47caf42ceb010005de6e16077ebac55c4c9e06d09",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/06a0d4d2-f384-4bf3-bef5-00e8cbeffc58/Medium/865704WSTGL5690_F.jpg?v=1",
+      "checkedAt": "2026-10-30T05:41:38.579Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/21599c9b-41b2-40d1-ad12-b081735bc2c3/Medium/865704WSTGL5159_F.jpg?v=3": {
+      "path": "/images/4d4a9e8db3e3246a3083e54068f2174639bdaa108a522427c431110579391c3a.jpg",
+      "sha256": "4d4a9e8db3e3246a3083e54068f2174639bdaa108a522427c431110579391c3a",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/21599c9b-41b2-40d1-ad12-b081735bc2c3/Medium/865704WSTGL5159_F.jpg?v=3",
+      "checkedAt": "2026-10-30T05:41:38.607Z"
+    },
+    "https://underarmour.scene7.com/is/image/Underarmour/6010459-001_SOLE?rp=standard-30pad%7Cpdp&qlt=85&bgc=f0f0f0&wid=800&hei=1000&size=770%2C970&op_usm=1.75%2C0.3%2C2%2C0": {
+      "path": "/images/4f743c1afcdcb299e77488ab576b090052529890b5e5960ad186c5015188a7a9.webp",
+      "sha256": "4f743c1afcdcb299e77488ab576b090052529890b5e5960ad186c5015188a7a9",
+      "sourceUrl": "https://underarmour.scene7.com/is/image/Underarmour/6010459-001_SOLE?rp=standard-30pad%7Cpdp&qlt=85&bgc=f0f0f0&wid=800&hei=1000&size=770%2C970&op_usm=1.75%2C0.3%2C2%2C0",
+      "checkedAt": "2026-10-30T05:41:38.621Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/8a4a7e69-f692-496d-937a-b6640ebf68c2/Medium/865704WSTGL9114_F.jpg?v=3": {
+      "path": "/images/a91c54732218123cdad7a5e95bcbd77e3848a3d22498a32a9ca41dae0a63f5e1.jpg",
+      "sha256": "a91c54732218123cdad7a5e95bcbd77e3848a3d22498a32a9ca41dae0a63f5e1",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/8a4a7e69-f692-496d-937a-b6640ebf68c2/Medium/865704WSTGL9114_F.jpg?v=3",
+      "checkedAt": "2026-10-30T05:41:38.657Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/1da293ef-5d2b-432e-9306-f6903171bb7f/Medium/800590WTRHK5500_F.jpg?v=1": {
+      "path": "/images/6064773ef27c0e44751d9fdde3e09d74efec405637f17a808f5b15f6e0921b1e.jpg",
+      "sha256": "6064773ef27c0e44751d9fdde3e09d74efec405637f17a808f5b15f6e0921b1e",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/1da293ef-5d2b-432e-9306-f6903171bb7f/Medium/800590WTRHK5500_F.jpg?v=1",
+      "checkedAt": "2026-10-30T05:41:38.681Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/44984388-e933-4f89-ae76-f96ed4f1c576/Medium/800590WTRHK1594_F.jpg?v=4": {
+      "path": "/images/e1b4816c6aa685f6a01453b32f5dcbed2e82d6221e1df52d4eae1b7101c75fec.jpg",
+      "sha256": "e1b4816c6aa685f6a01453b32f5dcbed2e82d6221e1df52d4eae1b7101c75fec",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/44984388-e933-4f89-ae76-f96ed4f1c576/Medium/800590WTRHK1594_F.jpg?v=4",
+      "checkedAt": "2026-10-30T05:41:38.718Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/079a6d33-5266-4d9b-b2c8-d4c44c785e85/Medium/800590WTRHK9745_F.jpg?v=2": {
+      "path": "/images/937b4c12345b04554b06ee90b3427fca335db117dc2231785bba8610d2fb704a.jpg",
+      "sha256": "937b4c12345b04554b06ee90b3427fca335db117dc2231785bba8610d2fb704a",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/079a6d33-5266-4d9b-b2c8-d4c44c785e85/Medium/800590WTRHK9745_F.jpg?v=2",
+      "checkedAt": "2026-10-30T05:41:38.755Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/c0029c6a-a324-4421-b4af-658ee58ee665/Medium/800590WTRHK6119_F.jpg?v=3": {
+      "path": "/images/4f6e89ea71891c4071d1a46fb71d28e10c2ca1ecef89e7a78166ab340e64bcc3.jpg",
+      "sha256": "4f6e89ea71891c4071d1a46fb71d28e10c2ca1ecef89e7a78166ab340e64bcc3",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/c0029c6a-a324-4421-b4af-658ee58ee665/Medium/800590WTRHK6119_F.jpg?v=3",
+      "checkedAt": "2026-10-30T05:41:38.942Z"
+    },
+    "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3a34a9b6-a22b-469b-a8aa-86ff357c4aa1/A%27TWO+HALLOWEEN.png": {
+      "path": "/images/087dfe8b8fe9f08e12b7546573f9e1c4ba1a59fafe45f461354451075f1b6a3b.webp",
+      "sha256": "087dfe8b8fe9f08e12b7546573f9e1c4ba1a59fafe45f461354451075f1b6a3b",
+      "sourceUrl": "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3a34a9b6-a22b-469b-a8aa-86ff357c4aa1/A%27TWO+HALLOWEEN.png",
+      "checkedAt": "2026-10-30T05:41:39.360Z"
+    },
+    "https://balenciaga.dam.kering.com/asset/95f6b362-6aac-4056-bba6-dd876f10fa2d/Medium/800590WTRHK9751_F.jpg?v=6": {
+      "path": "/images/03bc7dafe07b29a3270d384fd2deb88f2629322300a819ee4bc53b5611445ecf.jpg",
+      "sha256": "03bc7dafe07b29a3270d384fd2deb88f2629322300a819ee4bc53b5611445ecf",
+      "sourceUrl": "https://balenciaga.dam.kering.com/asset/95f6b362-6aac-4056-bba6-dd876f10fa2d/Medium/800590WTRHK9751_F.jpg?v=6",
+      "checkedAt": "2026-10-30T05:41:40.750Z"
     }
   },
-  "unavailable": {
-    "https://www.havaianas.com/cdn/shop/files/4000030-slim-0090-0.png?v=1732553673&width=300": {
-      "error": "HTTP 403",
-      "checkedAt": "2026-10-30T04:30:40.705Z"
-    }
-  }
+  "unavailable": {}
 }

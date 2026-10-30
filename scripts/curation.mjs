@@ -353,6 +353,11 @@ export function popularity(signals, today, {product,socialMetrics=[],officialEli
 // repairs what is already published without re-crawling anyone.
 export function cleanProductName(name) {
   return String(name || '')
+    // Melissa's swatch link reads "+2 colors View Bloomy Sneaker in other
+    // colors", with the shoe's name in the middle of the card's own wording.
+    .replace(/^\+\d+\s*colou?rs?\s*/i, '')
+    .replace(/^view\s+/i, '')
+    .replace(/\s+in other colou?rs?\b.*$/i, '')
     .replace(/^(?:\d{1,2}\s+){1,8}/, '')
     .replace(/\s+\d{1,2}\s+colou?rs?$/i, '')
     .replace(/\s+(?:Men|Women|Unisex)(?:'?s)?$/i, '')
