@@ -45,12 +45,31 @@ export function officialHtmlMarkdown(html,url){
   const title=decodeText(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]||'');
   if(/access denied|just a moment|captcha|robot check|pardon our interruption/i.test(title))throw Error('OFFICIAL_ACCESS_CHALLENGE');
   const clean=t=>decodeText(t.replace(/<[^>]*>/g,' ')).replace(/\s+/g,' ').trim();
-  const absolute=value=>{try{const u=new URL(decodeText(value),url);return u.protocol==='https:'&&!u.username&&!u.password?u.href:'';}catch{return '';}};
+  // An empty src or href is not an address. `new URL('', page)` resolves to the
+  // page itself, so a lazy-loaded <img> with no src was being written down as a
+  // photograph of the product page: 35 of 49 Prada records carried their own
+  // product URL in the image field and could never show a picture.
+  const absolute=value=>{if(!String(value||'').trim())return '';try{const u=new URL(decodeText(value),url);return u.protocol==='https:'&&!u.username&&!u.password?u.href:'';}catch{return '';}};
   const attr=(tag,name)=>tag.match(new RegExp(`(?:^|\\s)${name}=["']([^"']+)["']`,'i'))?.[1]||'';
   let body=html.replace(/<(script|style|nav|footer|aside)\b[^>]*>[\s\S]*?<\/\1>/gi,'');
+  // Prada's gallery is a <picture> whose <img> has no src at all: the real
+  // renditions sit in the sibling <source srcset>. Hand those candidates to
+  // the <img> so the one reader below still sees a single tag to read.
+  body=body.replace(/<picture\b[^>]*>([\s\S]*?)<\/picture>/gi,(whole,inner)=>{
+    const img=inner.match(/<img\b[^>]*>/i);if(!img)return whole;
+    if(['src','srcset','data-src','data-srcset'].some(name=>attr(img[0],name)))return inner;
+    const candidates=[...inner.matchAll(/<source\b[^>]*>/gi)].map(m=>attr(m[0],'data-srcset')||attr(m[0],'srcset')).filter(Boolean).join(', ');
+    return candidates?img[0].replace(/<img\b/i,`<img srcset="${candidates.replaceAll('"','&quot;')}"`):inner;
+  });
   body=body.replace(/<img\b[^>]*>/gi,tag=>{
-    const responsive=[...(attr(tag,'data-srcset')||attr(tag,'srcset')).matchAll(/(?:^|,\s*)(https:\/\/\S+)\s+(\d+)w/g)].map(m=>({url:m[1],width:Number(m[2])})).sort((a,b)=>a.width-b.width);
-    const preferred=responsive.filter(i=>i.width>=600&&i.width<=1600).at(-1)||responsive.at(-1);
+    // A srcset describes its candidates by width ("1200w") or by pixel density
+    // ("2x", or nothing at all for 1x). Only widths were read before, so a
+    // density-only srcset counted as no candidates and fell through to src.
+    const candidates=[...(attr(tag,'data-srcset')||attr(tag,'srcset')).matchAll(/(?:^|,)\s*(https:\/\/[^\s,]+)(?:\s+(\d+(?:\.\d+)?)(w|x))?/g)]
+      .map(m=>({url:m[1],width:m[3]==='w'?Number(m[2]):0,density:m[3]==='x'?Number(m[2]):1}));
+    const byWidth=candidates.filter(i=>i.width).sort((a,b)=>a.width-b.width);
+    const preferred=byWidth.filter(i=>i.width>=600&&i.width<=1600).at(-1)||byWidth.at(-1)
+      ||candidates.filter(i=>!i.width).sort((a,b)=>a.density-b.density)[0];
     const src=absolute(preferred?.url||attr(tag,'src'))||absolute(attr(tag,'data-src'));
     return src?`![${clean(attr(tag,'alt'))}](${src})`:'';
   })

@@ -12,6 +12,27 @@ test('lazy gallery images preserve card binding and a usable responsive image in
  assert(text.includes('[![Lazy sneaker side](https://shoe.example/lazy.jpg?w=1300&h=1300)Lazy sneaker](https://shoe.example/products/lazy)'));
  assert(!text.includes('base64'));assert(!text.includes('w=4096'));
 });
+test('an empty src is not a photograph of the page it sits on',()=>{
+ const text=officialHtmlMarkdown(html+'<a href="/products/empty"><img src="" alt="Empty placeholder">Empty sneaker</a>',url);
+ assert(!text.includes('![Empty placeholder]'));
+ // Nothing in the page may claim the page's own address as an image.
+ assert(!/!\[[^\]]*\]\(https:\/\/shoe\.example\/products\/(?:abc|empty)\)/.test(text),text);
+ // An empty href is not a link either: it resolved to the document itself.
+ assert(!officialHtmlMarkdown(html+'<a href="">Nowhere</a>',url).includes('[Nowhere]('));
+});
+test('a picture element reads the renditions its sources name when its img carries no src',()=>{
+ const picture='<a href="/products/prax"><picture>'
+  +'<source media="(min-width: 1440px)" srcset="https://shoe.example/prax_SLR.jpg?w=1000, https://shoe.example/prax_SLR.jpg?w=2000 2x">'
+  +'<source media="(min-width: 768px)" data-srcset="https://shoe.example/prax_SLS.jpg?w=1200, https://shoe.example/prax_SLS.jpg?w=2400 2x">'
+  +'<img alt="Prax sneakers" draggable="false"></picture>Prax sneakers</a>';
+ const text=officialHtmlMarkdown(html+picture,url);
+ // A density srcset names no widths, so the 1x candidate is the one the page shows.
+ assert(text.includes('![Prax sneakers](https://shoe.example/prax_SLR.jpg?w=1000)'),text);
+ assert(!text.includes('prax_SLR.jpg?w=2000'));
+ // A picture whose img already has its own source is left exactly as it was.
+ const own=officialHtmlMarkdown(html+'<picture><source srcset="https://shoe.example/ignored.jpg 900w"><img src="/own.jpg" alt="Own"></picture>',url);
+ assert(own.includes('![Own](https://shoe.example/own.jpg)'));assert(!own.includes('ignored.jpg'));
+});
 test('official requests honor cooldowns and retry transient failures without retrying denials',async()=>{
  let time=0,calls=0;const waits=[];const sleep=async ms=>{waits.push(ms);time+=ms;};
  const f=pacedOfficialFetch({now:()=>time,sleep,fetchImpl:async()=>++calls===1?new Response('',{status:429,headers:{'Retry-After':'8'}}):new Response('ok')});
