@@ -21,7 +21,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {priceDistribution, colourDistribution, materialDistribution, priceKrw, RATE_NOTE, categoryDistribution}
+import {priceDistribution, colourDistribution, materialDistribution, priceKrw, RATE_NOTE, categoryDistribution, colourFamily, sneakerCategory}
   from '../public/assets/analysis.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -49,13 +49,52 @@ export function brandWatch(history, current, {dropRatio = DROP_RATIO} = {}) {
   return rows.sort((a, b) => (b.typical - b.count) - (a.typical - a.count));
 }
 
-export function buildBriefing({catalog, overlay, trends, report, coverage, history, diagnostics}) {
-  const asOf = catalog.asOf || day(new Date().toISOString());
-  const products = [...(catalog.products || []), ...(overlay.retail || []), ...(overlay.newsletter || [])];
-  const fresh = products.filter(p => {
+/** Listed within seven days of the week's as-of date. One definition, used by
+ *  the briefing and by the week's stored shape so the two cannot disagree. */
+export function freshThisWeek(products, asOf) {
+  return products.filter(p => {
     const d = day(p.listedAt || p.publishedAt || p.firstPublishedAt);
     return d && (Date.parse(asOf) - Date.parse(d)) / 86400000 <= 7;
   });
+}
+
+/** How the shape of the catalogue moved since the weeks before it.
+ *
+ *  Reported as a share rather than a count, because the catalogue itself
+ *  grows: 브라운 rising from 600 to 640 while everything rose 10% is not
+ *  brown gaining ground. Compared against the mean of the stored weeks rather
+ *  than against last week alone, so one odd drop does not read as a trend.
+ *
+ *  Nothing is reported until there are at least three weeks to average, and
+ *  "not enough weeks yet" is said out loud rather than shown as no movement.
+ */
+export function shapeTrend(weeks, field, {minWeeks = 3, minShare = 0.02, minMove = 0.15} = {}) {
+  const stored = (weeks || []).filter(w => w?.[field] && Object.keys(w[field]).length);
+  if (stored.length < minWeeks) return {ready: false, weeks: stored.length, needs: minWeeks, rows: []};
+  const share = counts => {
+    const total = Object.values(counts).reduce((a, b) => a + b, 0) || 1;
+    return Object.fromEntries(Object.entries(counts).map(([k, v]) => [k, v / total]));
+  };
+  const latest = share(stored.at(-1)[field]);
+  const earlier = stored.slice(0, -1).map(w => share(w[field]));
+  const rows = [];
+  for (const [name, now] of Object.entries(latest)) {
+    if (name === '기타·미분류' || now < minShare) continue;
+    const before = earlier.map(w => w[name] || 0);
+    const mean = before.reduce((a, b) => a + b, 0) / before.length;
+    if (!mean) continue;
+    const move = (now - mean) / mean;
+    if (Math.abs(move) < minMove) continue;
+    rows.push({name, now, mean, move});
+  }
+  rows.sort((a, b) => Math.abs(b.move) - Math.abs(a.move));
+  return {ready: true, weeks: stored.length, rows};
+}
+
+export function buildBriefing({catalog, overlay, trends, report, coverage, history, diagnostics}) {
+  const asOf = catalog.asOf || day(new Date().toISOString());
+  const products = [...(catalog.products || []), ...(overlay.retail || []), ...(overlay.newsletter || [])];
+  const fresh = freshThisWeek(products, asOf);
 
   const current = {};
   for (const p of products) if (p.brand) current[p.brand] = (current[p.brand] || 0) + 1;
@@ -88,6 +127,8 @@ export function buildBriefing({catalog, overlay, trends, report, coverage, histo
              official: (catalog.products || []).length, retail: (overlay.retail || []).length,
              newsletter: (overlay.newsletter || []).length},
     price, colour, material, category, topBrands, keywords, silent, empty, watch, failures,
+    colourTrend: shapeTrend(history?.weeks, 'colours'),
+    categoryTrend: shapeTrend(history?.weeks, 'categories'),
     rereleases: report?.rereleasesExcluded ?? null,
     collected: report?.retailCollected ?? null,
   };
@@ -152,6 +193,17 @@ export function briefingHtml(b) {
 </div>`;
 }
 
+const pct = x => `${(x * 100).toFixed(1)}%`;
+const trendLines = (title, trend) => {
+  if (!trend) return [];
+  if (!trend.ready)
+    return [`${title}: 비교할 주가 아직 부족합니다 (${trend.weeks}/${trend.needs}주 누적)`];
+  if (!trend.rows.length) return [`${title}: 뚜렷한 변화 없음`];
+  return [`${title} (최근 ${trend.weeks}주 평균 대비):`,
+    ...trend.rows.slice(0, 6).map(r =>
+      `  ${r.move > 0 ? '▲' : '▼'} ${r.name} ${pct(r.now)} (평소 ${pct(r.mean)}, ${r.move > 0 ? '+' : ''}${(r.move * 100).toFixed(0)}%)`)];
+};
+
 export function briefingText(b) {
   const lines = [
     `SHOES RESEARCH 주간 브리핑 · ${b.asOf}`, '',
@@ -165,6 +217,8 @@ export function briefingText(b) {
     '카테고리: ' + b.category.rows.slice(0, 8).map(x => `${x.name} ${x.count}`).join(' / ')
       + ` (분류 ${num(b.category.placed)}건 · 이름만으로 알 수 없는 ${num(b.category.unplaced)}건 제외)`, '',
     'SNS 키워드: ' + (b.keywords.join(' ') || '없음'), '',
+    ...trendLines('컬러 흐름', b.colourTrend),
+    ...trendLines('카테고리 흐름', b.categoryTrend), '',
     '살펴볼 것:',
     ...(b.watch.length ? b.watch.map(w => `  - ${w.brand}: 이번 주 ${w.count}건 (평소 ${w.typical}건)`) : ['  급감한 브랜드 없음']),
     '',
@@ -189,10 +243,29 @@ export async function main() {
                                diagnostics: {firecrawl: diagnostics.renderedOfficial,
                                              scrapingbee: diagnostics.scrapingBeeOfficial}});
 
-  // Keep this week's per-brand counts so next week can see a fall.
-  const counts = {};
-  for (const p of [...(catalog.products || []), ...(overlay.retail || [])]) if (p.brand) counts[p.brand] = (counts[p.brand] || 0) + 1;
-  const weeks = [...(history.weeks || []).filter(w => w.asOf !== brief.asOf), {asOf: brief.asOf, brands: counts}].slice(-12);
+  // Keep this week's shape so next week can see a change. Brands answer "did
+  // a source go quiet"; colour and category answer "what is the market doing",
+  // which is the question a season is planned on. Neither costs a request:
+  // every record already carries a body colour read from its own photograph,
+  // and the category comes from the same classifier the page uses.
+  const everything = [...(catalog.products || []), ...(overlay.retail || [])];
+  const fresh = freshThisWeek([...everything, ...(overlay.newsletter || [])], brief.asOf);
+  const tallyBy = (rows, of) => {
+    const counts = {};
+    for (const row of rows) { const k = of(row); if (k) counts[k] = (counts[k] || 0) + 1; }
+    return counts;
+  };
+  const week = {
+    asOf: brief.asOf,
+    brands: tallyBy(everything, p => p.brand),
+    colours: tallyBy(everything, p => colourFamily(p.bodyColor)),
+    categories: tallyBy(everything, p => sneakerCategory(p)),
+    fresh: {
+      colours: tallyBy(fresh, p => colourFamily(p.bodyColor)),
+      categories: tallyBy(fresh, p => sneakerCategory(p)),
+    },
+  };
+  const weeks = [...(history.weeks || []).filter(w => w.asOf !== brief.asOf), week].slice(-12);
   await fs.mkdir(path.join(root, 'data'), {recursive: true});
   await fs.writeFile(path.join(root, HISTORY_FILE), JSON.stringify({schemaVersion: 1, weeks}, null, 2));
 
