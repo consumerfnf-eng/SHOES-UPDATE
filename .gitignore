@@ -63,3 +63,10 @@ scripts/update-catwalk.mjs
 scripts/register-catwalk-task.ps1
 tests/catwalk-collect.test.mjs
 docs/wgsn-runway-automation.md
+
+# The curation board's data: which brands this collection cannot verify, and
+# why. That is our own QA state, not something to publish on a site anyone can
+# open, so it is built locally and uploaded to the internal deployment only -
+# the same route the catwalk renditions take. The board hides itself when the
+# file is absent, so the public build simply has no board.
+public/data/curation-summary.json

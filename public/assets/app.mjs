@@ -13,10 +13,10 @@ const sourceNames = {magazine:'매거진',newsletter:'뉴스레터',media:'매�
 const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:'캐주얼 샌들','platform-sandal':'플랫폼 샌들','platform-shoe':'플랫폼 슈즈',jelly:'젤리 슈즈',hybrid:'혼합형 스니커즈'};
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
-const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
+const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter'],['retail-mrporter','MR PORTER'],['retail-kith','Kith']];
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter','retail-mrporter':'MR PORTER','retail-kith':'Kith'};
-let catalog = null, overlay = null, trends = null, rankBoards = null, catwalk = null, catwalkShown = 0, catwalkPicked = new Set(), catwalkAnchor = '', products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
+let catalog = null, overlay = null, trends = null, rankBoards = null, curation = null, catwalk = null, catwalkShown = 0, catwalkPicked = new Set(), catwalkAnchor = '', catwalkShowsOpen = false, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
 const activeVariant = new Map();
 function groupKey(p){ return variantGroupKey(p); }
 function colorGroupOf(p){
@@ -227,6 +227,15 @@ async function loadSupplements() {
     }
   } catch { rankBoards = null; }
   try {
+    // Internal only - the public build has no such file and the board, like
+    // the catwalk tab, simply does not appear.
+    const review = await fetch('./data/curation-summary.json', {cache:'no-cache'});
+    if (review.ok) {
+      const snapshot = await review.json();
+      if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.reasons)) { curation = snapshot; changed = true; }
+    }
+  } catch { curation = null; }
+  try {
     const walk = await fetch('./data/catwalk.json', {cache:'no-cache'});
     if (walk.ok) {
       const snapshot = await walk.json();
@@ -251,10 +260,10 @@ async function loadCatalog() {
   const controller = new AbortController(), timeout = setTimeout(() => controller.abort(), 20000);
   // The model dictionary is a convenience, not a requirement: if it does not
   // load, the category panel simply places fewer records and says so.
-  try{
-    const dictionary = await fetch('./data/model-categories.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null);
-    if(dictionary?.entries)useModelCategories(dictionary.entries,p=>`${p.brand}|${variantGroupKey(p)}`);
-  }catch{}
+  // Started, not awaited: a 0.2MB dictionary that only annotates categories
+  // was holding the 4.8MB catalogue - and the first card on screen - behind it.
+  const dictionary = fetch('./data/model-categories.json',{cache:'no-cache'})
+    .then(r=>r.ok?r.json():null).catch(()=>null);
   try {
     const response = await fetch('./data/catalog.json', {signal:controller.signal,cache:'no-cache'});
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -265,6 +274,9 @@ async function loadCatalog() {
     // grid only ever sees a product's brand name. Carry the lookup on state so
     // a luxury house nobody named in the LUX list still sorts with LUX.
     state.brandGroups = new Map(value.brands.map(b => [b.name, b.group]));
+    // Applied before the products are built, whichever of the two arrived first.
+    const entries = (await dictionary)?.entries;
+    if(entries)useModelCategories(entries,p=>`${p.brand}|${variantGroupKey(p)}`);
     // This view is the sneaker reference set. Other footwear records remain in
     // the internal snapshot/archive but never enter the public product grid.
     rebuildProducts();
@@ -301,7 +313,15 @@ function renderBrands() {
   const search = $('brand-search').value.toLocaleLowerCase();
   const groups = groupedBrands(brands.filter(b => b.name.toLocaleLowerCase().includes(search)));
   $('brand-list').innerHTML = groups.filter(g=>g.brands.length).map(group => `<section class="brand-group" aria-label="${group.name}"><h3 class="brand-group-label">${group.name}</h3>${group.brands.map(b =>
-    `<label class="brand-option"><input type="checkbox" data-brand="${esc(b.name)}" ${state.brands.has(b.name)?'checked':''}><span class="brand-name">${esc(b.name)}</span><span class="brand-count">${brandCounts.get(b.name)||0}</span></label>`
+    (() => {
+      const shown = brandCounts.get(b.name) || 0;
+      // A brand with nothing on screen reads the same whether it released
+      // nothing or whether everything it released is stuck in review. The
+      // badge tells those apart, and only where it has something to say.
+      const waiting = shown ? 0 : (curation?.brands || []).find(x => x.brand === b.name)?.held || 0;
+      const why = waiting ? (curation.brands.find(x => x.brand === b.name)?.topReasonLabel || '') : '';
+      return `<label class="brand-option"><input type="checkbox" data-brand="${esc(b.name)}" ${state.brands.has(b.name)?'checked':''}><span class="brand-name">${esc(b.name)}</span>${waiting?`<span class="brand-held" title="${esc(`검수 대기 ${waiting}건 · ${why}`)}">검수 ${waiting}</span>`:''}<span class="brand-count">${shown}</span></label>`;
+    })()
   ).join('')}</section>`).join('') || '<p class="muted">일치하는 브랜드가 없습니다.</p>';
   $('brand-list').querySelectorAll('input').forEach(input => input.addEventListener('change', () => { input.checked ? state.brands.add(input.dataset.brand) : state.brands.delete(input.dataset.brand); state.page=1; render(); }));
 }
@@ -316,7 +336,7 @@ function renderKeywords() {
     }).join(''):'<p class="keyword-empty">확인된 Shoes Trend Keyword가 아직 없습니다.</p>';
     $(target).querySelectorAll('.keyword-select').forEach(button=>button.addEventListener('click',()=>{
       const k=list[Number(button.dataset.keyword)];clearTimeout(searchTimer);
-      Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',release:'released',socialGroup:'',sort:'newest',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
+      Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',socialGroup:'',sort:'newest',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
       syncFilterControls();renderBrands();renderKeywords();render();$('results').scrollIntoView({block:'start'});$('results').focus({preventScroll:true});
     }));
   }
@@ -410,6 +430,33 @@ function movementMarkup(item){
   const title=item.previousRank?`지난 집계 ${item.previousRank}위`:move.label;
   return `<span class="rank-move ${esc(item.movement||'first')}" title="${esc(title)}">${esc(move.mark)}${amount?' '+esc(amount):''}</span>`;
 }
+// What the catalogue is not showing, and why. Published here counts the
+// official catalogue only - the retail and newsletter overlays are a separate
+// feed and never pass through this queue.
+function renderCurationBoard(){
+  const host=$('curation-board');
+  if(!host)return;
+  const reasons=(curation?.reasons||[]).filter(r=>r.count);
+  host.hidden=!reasons.length;
+  if(host.hidden){host.innerHTML='';return;}
+  const {held=0,published=0,brandsHoldingEverything=0}=curation.totals||{};
+  const total=reasons.reduce((n,r)=>n+r.count,0)||1;
+  const silent=(curation.brands||[]).filter(b=>!b.published).slice(0,12);
+  host.innerHTML=`<article class="rank-board">
+    <header class="rank-board-head">
+      <div><h3>검수 보류 <span class="rank-size">${held.toLocaleString()}건</span></h3>
+      <p class="muted">공식 카탈로그 게시 ${published.toLocaleString()}건 대비 보류 ${held.toLocaleString()}건 · 한 건도 게시되지 않은 브랜드 ${brandsHoldingEverything}개</p>
+      <p class="muted">아래 사유가 풀리면 그만큼 게시됩니다. 수집이 실패한 것이 아니라 근거가 모자라 대기 중인 항목입니다.</p></div>
+      <span class="muted">${esc(dateText(curation.builtAt,true))} 기준</span>
+    </header>
+    <ol class="curation-reasons">${reasons.map(r=>`<li>
+      <span class="curation-reason">${esc(r.label)}</span>
+      <span class="curation-bar"><i style="width:${Math.max(2,Math.round(r.count/total*100))}%"></i></span>
+      <span class="curation-count">${r.count.toLocaleString()}</span>
+    </li>`).join('')}</ol>
+    ${silent.length?`<p class="curation-silent"><strong>게시 0건인 브랜드</strong> ${silent.map(b=>`${esc(b.brand)} <span>${b.held}</span>`).join(' · ')}${curation.brands.filter(b=>!b.published).length>silent.length?` 외 ${curation.brands.filter(b=>!b.published).length-silent.length}개`:''}</p>`:''}
+  </article>`;
+}
 function renderRankBoards(){
   const host=$('rank-boards');
   if(!host)return;
@@ -476,8 +523,22 @@ function seasonLooks(){
   if(!season)return all;
   return all.filter(l=>(l.season||catwalk?.season||'')===season);
 }
-function catwalkLooks(){
+// A season's four fashion weeks are the axis this board is read along - Paris
+// against New York - so the city narrows before the show does, and the show
+// chips below it count only what the chosen city actually holds.
+function cityLooks(){
   const looks=seasonLooks();
+  return state.catwalkCity?looks.filter(l=>(l.city||'')===state.catwalkCity):looks;
+}
+const findText=()=>state.catwalkFind.trim().toLocaleLowerCase();
+function catwalkLooks(){
+  const looks=cityLooks();
+  // Typing narrows the grid as well as the chips: 70 shows is too many to find
+  // one by eye, and a search that only hid chips would leave the photographs
+  // below it unchanged, which reads as the search having done nothing.
+  const find=findText();
+  if(find&&(!state.catwalkShow||state.catwalkShow==='all'))
+    return looks.filter(l=>`${l.brand} ${l.city||''}`.toLocaleLowerCase().includes(find));
   if(state.catwalkShow==='footwear'){
     const shelf=(catwalk.shelves||[]).find(s=>s.footwearShelf)?.id;
     return looks.filter(l=>l.shelf===shelf);
@@ -485,21 +546,52 @@ function catwalkLooks(){
   if(state.catwalkShow&&state.catwalkShow!=='all')return looks.filter(l=>l.brand===state.catwalkShow);
   return looks;
 }
+const CHIPS_COLLAPSED = 12;
 const shelfUrl=id=>(catwalk?.shelves||[]).find(s=>s.id===id)?.searchUrl||'';
+// The cities of one season, in the order the week actually ran them.
+function renderCatwalkCities(){
+  const host=$('catwalk-cities');
+  if(!host)return;
+  const within=seasonLooks();
+  const order=['New York','London','Milan','Paris'];
+  const cities=[...new Set(within.map(l=>l.city).filter(Boolean))]
+    .sort((a,b)=>(order.indexOf(a)+1||99)-(order.indexOf(b)+1||99)||a.localeCompare(b));
+  host.hidden=cities.length<2;
+  if(host.hidden){host.innerHTML='';return;}
+  const chip=(id,label,count)=>`<button class="catwalk-chip${state.catwalkCity===id?' active':''}" data-catwalk-city="${esc(id)}" aria-pressed="${state.catwalkCity===id}">${esc(label)} <span>${count.toLocaleString()}</span></button>`;
+  host.innerHTML=chip('','전체 도시',within.length)
+    +cities.map(c=>chip(c,c,within.filter(l=>l.city===c).length)).join('');
+}
 function renderCatwalkFilters(looks){
   const host=$('catwalk-filters');
   if(!host)return;
-  const within=seasonLooks();
-  const brands=[...new Set(within.map(l=>l.brand))].sort((a,b)=>a.localeCompare(b));
+  const within=cityLooks();
+  const find=findText();
+  // Busiest show first. Alphabetical order put the twelve visible chips in the
+  // A's; what a viewer wants to see without expanding is where the season's
+  // footwear actually is.
+  const brands=[...new Set(within.map(l=>l.brand))]
+    .map(name=>({name,count:within.filter(l=>l.brand===name).length}))
+    .sort((a,b)=>b.count-a.count||a.name.localeCompare(b.name))
+    .filter(b=>!find||b.name.toLocaleLowerCase().includes(find));
   const footwear=(catwalk?.shelves||[]).find(s=>s.footwearShelf);
   const chip=(id,label,count)=>`<button class="catwalk-chip${state.catwalkShow===id?' active':''}" data-catwalk="${esc(id)}" aria-pressed="${state.catwalkShow===id}">${esc(label)}${count!=null?` <span>${count.toLocaleString()}</span>`:''}</button>`;
   const shelfId=footwear?.id;
   // The shelf chip earns its place only when there is another shelf to filter
   // against: the library search returns footwear and nothing else.
   const several=(catwalk?.shelves||[]).length>1;
+  // Seventy chips pushed the first photograph 2,000px down a phone. A dozen
+  // are shown; the rest are a button away, and the search finds any of them.
+  const shown=catwalkShowsOpen?brands:brands.slice(0,CHIPS_COLLAPSED);
+  const hidden=brands.length-shown.length;
   host.innerHTML=chip('all','전체',within.length)
     +(footwear&&several?chip('footwear',footwear.label.replace(/\s*\(.*$/,''),within.filter(l=>l.shelf===shelfId).length):'')
-    +brands.map(b=>chip(b,b,within.filter(l=>l.brand===b).length)).join('');
+    +shown.map(b=>chip(b.name,b.name,b.count)).join('')
+    +(hidden>0?`<button class="catwalk-chip catwalk-chip-more" data-catwalk-more="open">+${hidden.toLocaleString()}개 쇼 더보기</button>`:'')
+    +(catwalkShowsOpen&&brands.length>CHIPS_COLLAPSED?'<button class="catwalk-chip catwalk-chip-more" data-catwalk-more="close">접기</button>':'')
+    +(find&&!brands.length?'<span class="muted">일치하는 쇼가 없습니다.</span>':'');
+  const box=$('catwalk-find');
+  if(box&&box.value!==state.catwalkFind)box.value=state.catwalkFind;
 }
 // Past seasons stay on the site, each behind its own tab, until the third
 // collection after them pushes one off. The row hides itself while there is
@@ -519,10 +611,12 @@ function renderCatwalk(){
   const shown=Math.min(catwalkShown||CATWALK_PAGE,looks.length);
   const cities=[...new Set(looks.map(l=>l.city).filter(Boolean))];
   $('catwalk-scope').textContent=`${activeSeason()||catwalk.season||''} · ${new Set(looks.map(l=>l.brand)).size}개 쇼 · ${looks.length.toLocaleString()}장`
-    +(cities.length?` · ${cities.sort().join(' · ')}`:'');
+    +(cities.length?` · ${cities.sort().join(' · ')}`:'')
+    +(state.catwalkCity||findText()?' · 필터 적용 중':'');
   $('catwalk-note').textContent='신발만 클로즈업된 컷입니다. 카드를 누르면 크게 보고 고화질로 저장할 수 있습니다. '
     +'WGSN 구독 자료이므로 내부 참고용으로만 사용하세요.';
   renderCatwalkSeasonTabs();
+  renderCatwalkCities();
   renderCatwalkFilters(looks);
   $('catwalk-grid').innerHTML=looks.slice(0,shown).map((look,i)=>`<article class="catwalk-card${catwalkPicked.has(look.id)?' picked':''}">
       <label class="catwalk-check"><input type="checkbox" data-look-select="${esc(look.id)}"
@@ -660,9 +754,13 @@ function showViewer(){
   $('catwalk-viewer-img').src = look.image;
   $('catwalk-viewer-img').alt = `${look.brand} ${look.season}${look.city ? ' ' + look.city : ''}`;
   $('catwalk-viewer-brand').textContent = look.brand;
+  // "WGSN 원본" used to read as the better file to go and get. It is not:
+  // that URL answers a WGSN session with 2,574px and everyone else with a
+  // 508px stand-in, which is smaller than what this page already holds. So the
+  // row says which copy is the best one actually available here.
   const rows = [['시즌', look.season], ['도시', look.city || '미확인'], ['품목', look.imageType || ''],
-                ['이 화면', `${look.width}×${look.height}`],
-                ['WGSN 원본', look.originalWidth ? `${look.originalWidth}×${look.originalHeight}` : '']];
+                ['이 사이트 (최고 화질)', `${look.width}×${look.height}`],
+                ['WGSN 보유 원본', look.originalWidth ? `${look.originalWidth}×${look.originalHeight} · 구독 계정 필요` : '']];
   $('catwalk-viewer-meta').innerHTML = rows.filter(([, v]) => v)
     .map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(String(v))}</dd>`).join('');
   const save = $('catwalk-viewer-save');
@@ -707,10 +805,19 @@ function renderAnalysis(){
   // belongs to the grid, not to a distribution or to a wall of runway looks.
   for(const sel of ['#product-grid','.results-bar','.selection-row','#pagination','#selection-bar','#empty-state'])
     document.querySelector(sel)?.classList.toggle('hidden-by-analysis',on||walk);
+  // The product chrome above the grid does nothing on the catwalk: the keyword
+  // board filters products and switches tab when touched, and 품목/출시 상태
+  // never applied to a runway photograph. Left in place they pushed the first
+  // photograph 2,600px down a phone - two and a half screens of controls that
+  // could not be used where they stood.
+  for(const sel of ['.trends','.filters','#active-filters'])
+    document.querySelector(sel)?.classList.toggle('hidden-by-analysis',walk);
   if(walk)renderCatwalk();
   $('rank-boards').hidden=!on||!(rankBoards?.boards||[]).some(b=>b.items?.length);
+  $('curation-board').hidden=!on||!(curation?.reasons||[]).length;
   if(!on)return;
   renderRankBoards();
+  renderCurationBoard();
   const rows=analysisScope();
   $('analysis-scope').textContent=`현재 필터 기준 ${rows.length.toLocaleString()}개 상품 · ${RATE_NOTE}`;
 
@@ -1079,7 +1186,7 @@ function syncFilterControls() {
 }
 function resetFilters() {
   clearTimeout(searchTimer);
-  Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
+  Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
   syncFilterControls();renderBrands();renderKeywords();render();
 }
 function openExport() {
@@ -1117,9 +1224,13 @@ $('dl-analysis-xlsx')?.addEventListener('click',()=>{
 document.querySelectorAll('[data-dl]').forEach(button=>button.addEventListener('click',()=>
   downloadText(`shoes-${button.dataset.dl}-${today}.csv`,analysisCsv(analysisScope(),button.dataset.dl))));
 for(const [id,key] of [['category-filter','category'],['release-filter','release'],['sort','sort']])$(id).addEventListener('change',()=>{state[key]=$(id).value;state.page=1;render();});
-document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';if(state.source!=='catwalk'){state.catwalkShow='all';state.catwalkSeason='';catwalkShown=0;catwalkPicked.clear();catwalkAnchor='';$('catwalk-selection-bar').hidden=true;}if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(socialComparisonGroups(products,today)[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});render();}));
+document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';if(state.source!=='catwalk'){state.catwalkShow='all';state.catwalkSeason='';state.catwalkCity='';state.catwalkFind='';catwalkShown=0;catwalkPicked.clear();catwalkAnchor='';$('catwalk-selection-bar').hidden=true;}if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(socialComparisonGroups(products,today)[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});render();}));
 $('social-group').addEventListener('change',()=>{state.socialGroup=$('social-group').value;state.sort=state.socialGroup?'social':'newest';state.page=1;render();});
 $('reset-filters').addEventListener('click',resetFilters);$('empty-reset').addEventListener('click',()=> $('empty-reset').dataset.retry?loadCatalog():resetFilters());
+$('catwalk-find')?.addEventListener('input',event=>{
+  state.catwalkFind=event.target.value;state.catwalkShow='all';catwalkShown=0;catwalkAnchor='';catwalkShowsOpen=false;
+  renderCatwalk();
+});
 $('select-page').addEventListener('change',()=>{visible.forEach(p=>$('select-page').checked?selected.add(p.id):selected.delete(p.id));updateSelection();});
 $('clear-selection').addEventListener('click',()=>{selected.clear();updateSelection();});$('export-open').addEventListener('click',openExport);
 $('all-columns').addEventListener('click',()=> $('export-columns').querySelectorAll('input').forEach(i=>i.checked=true));$('no-columns').addEventListener('click',()=> $('export-columns').querySelectorAll('input').forEach(i=>i.checked=false));
@@ -1137,9 +1248,16 @@ renderBrands();loadCatalog();
 // The catwalk's own controls. Delegated, because the chips and the button are
 // rebuilt on every render.
 document.addEventListener('click',event=>{
+  const cityChip=event.target.closest('[data-catwalk-city]');
+  if(cityChip){
+    state.catwalkCity=cityChip.dataset.catwalkCity;state.catwalkShow='all';catwalkShown=0;catwalkAnchor='';
+    catwalkShowsOpen=false;renderCatwalk();return;
+  }
+  const more=event.target.closest('[data-catwalk-more]');
+  if(more){catwalkShowsOpen=more.dataset.catwalkMore==='open';renderCatwalk();return;}
   const seasonTab=event.target.closest('[data-catwalk-season]');
   if(seasonTab){
-    state.catwalkSeason=seasonTab.dataset.catwalkSeason;state.catwalkShow='all';catwalkShown=0;catwalkAnchor='';
+    state.catwalkSeason=seasonTab.dataset.catwalkSeason;state.catwalkShow='all';state.catwalkCity='';catwalkShown=0;catwalkAnchor='';catwalkShowsOpen=false;
     renderCatwalk();window.scrollTo({top:$('catwalk').offsetTop-80,behavior:'smooth'});return;
   }
   const chip=event.target.closest('[data-catwalk]');

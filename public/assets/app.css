@@ -225,13 +225,42 @@
 .catwalk-chip:hover{border-color:#c9c2b6}
 .catwalk-chip.active{background:#1c1a17;border-color:#1c1a17;color:#fff}
 .catwalk-chip.active span{color:#bdb6a9}
+/* --- curation board ------------------------------------------------------
+   Why the catalogue is smaller than the collection. Shares the rank board's
+   frame so the analysis tab reads as one surface. */
+.curation-board{margin:0 0 20px}
+.curation-reasons{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:7px}
+.curation-reasons li{display:grid;grid-template-columns:minmax(120px,210px) 1fr auto;gap:12px;align-items:center;font-size:12px}
+.curation-reason{color:#41505f;overflow-wrap:anywhere}
+.curation-bar{background:#eef1f6;border-radius:999px;height:9px;overflow:hidden}
+.curation-bar i{display:block;height:100%;background:var(--blue);border-radius:999px}
+.curation-count{font-variant-numeric:tabular-nums;color:#5c6a7a;min-width:44px;text-align:right}
+.curation-silent{margin:15px 0 0;font-size:11px;line-height:2;color:#6b7788}
+.curation-silent strong{display:block;font-size:11px;color:#41505f;font-weight:600;margin-bottom:3px}
+.curation-silent span{color:#97a2b1}
+.brand-held{font-size:9px;color:#8a6d1f;background:#fdf3d8;border-radius:4px;padding:2px 5px;white-space:nowrap}
+@media (max-width:640px){.curation-reasons li{grid-template-columns:minmax(96px,1fr) 1fr auto;font-size:11px}}
+.catwalk-cities{margin:14px 0 0}
+.catwalk-find-row{margin:14px 0 0}
+.catwalk-find{display:inline-flex;align-items:center;gap:8px;border:1px solid #e2ddd4;background:#fffffe;
+  border-radius:999px;padding:0 14px;height:38px;width:min(340px,100%)}
+.catwalk-find:focus-within{border-color:#b8b0a3;box-shadow:0 1px 4px #1c1a1712}
+.catwalk-find svg{flex-shrink:0;color:#9a9287;stroke-width:2}
+.catwalk-find input{border:0;background:transparent;outline:none;width:100%;height:100%;font:inherit;
+  font-size:12.5px;color:#2b2823;min-width:0}
+.catwalk-chip-more{border-style:dashed;color:#6f675c}
+.catwalk-chip-more:hover{border-color:#b8b0a3;background:#faf8f4}
 .catwalk-grid{display:grid;gap:22px 16px;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));
   align-items:start}   /* a landscape close-up is shorter; it must not stretch to the row */
 .catwalk-pick-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 16px;font-size:11.5px;color:#6f675c}
 .catwalk-pick-row label{display:flex;align-items:center;gap:7px;cursor:pointer}
 .catwalk-pick-row input{width:15px;height:15px;accent-color:#1c1a17}
 #catwalk-picked-hint{color:#8a8275}
-.catwalk-card{display:grid;gap:8px;min-width:0;position:relative}
+/* A season is one page of a few hundred photographs. Letting the browser skip
+   layout and paint for the cards that are off screen keeps a long scroll cheap;
+   the reserved height stops the scrollbar from jumping as they come into view. */
+.catwalk-card{display:grid;gap:8px;min-width:0;position:relative;
+  content-visibility:auto;contain-intrinsic-size:auto 420px}
 /* Over the top-left of the photograph, on its own ground so the picture
    behind it never swallows the box, and outside the zoom button so a tick
    does not also open the viewer. */
@@ -260,6 +289,13 @@
   .catwalk-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px 12px}
   .catwalk-check{left:6px;top:6px;width:26px;height:26px}
   .catwalk-pick-row{font-size:10.5px;gap:10px}
+  /* One line that scrolls sideways rather than a wall that pushes the first
+     photograph below two screenfuls of chips. */
+  .catwalk-filters,.catwalk-cities,.catwalk-seasons{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+    padding-bottom:2px;-webkit-overflow-scrolling:touch}
+  .catwalk-filters::-webkit-scrollbar,.catwalk-cities::-webkit-scrollbar,.catwalk-seasons::-webkit-scrollbar{display:none}
+  .catwalk-chip,.catwalk-season-tab{white-space:nowrap;flex:0 0 auto}
+  .catwalk-find{width:100%}
 }
 
 /* --- CATWALK viewer ------------------------------------------------------

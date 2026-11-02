@@ -28,7 +28,8 @@
     "catwalk:collect": "node scripts/collect-catwalk-season.mjs",
     "catwalk:compose": "node scripts/build-catwalk-snapshot.mjs",
     "catwalk:login": "node scripts/wgsn-login.mjs",
-    "catwalk:update": "node scripts/update-catwalk.mjs"
+    "catwalk:update": "node scripts/update-catwalk.mjs",
+    "curation": "node scripts/build-curation-summary.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"
