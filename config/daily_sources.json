@@ -496,6 +496,11 @@
   ],
   "Hermès": [
     {
+      "name": "Hermès Official sneaker assortment",
+      "url": "https://www.hermes.com/us/en/category/women/shoes/sneakers/",
+      "basis": "catalogue"
+    },
+    {
       "name": "Hermès Official regional New Arrivals check",
       "url": "https://www.hermes.com/us/en/category/men/shoes/sneakers/"
     },
@@ -609,6 +614,16 @@
     }
   ],
   "Loro Piana": [
+    {
+      "name": "Loro Piana Official sneaker assortment",
+      "url": "https://us.loropiana.com/en/c/shoes/man/sneakers",
+      "basis": "catalogue"
+    },
+    {
+      "name": "Loro Piana Official sneaker assortment",
+      "url": "https://us.loropiana.com/en/c/shoes/woman/sneakers",
+      "basis": "catalogue"
+    },
     {
       "name": "Loro Piana Official daily source",
       "url": "https://www.loropiana.com/"
@@ -979,6 +994,16 @@
     }
   ],
   "Saint Laurent": [
+    {
+      "name": "Saint Laurent Official sneaker assortment",
+      "url": "https://www.ysl.com/en-us/ca/shop-men/shoes/sneakers",
+      "basis": "catalogue"
+    },
+    {
+      "name": "Saint Laurent Official sneaker assortment",
+      "url": "https://www.ysl.com/en-us/ca/shop-women/shoes/sneakers",
+      "basis": "catalogue"
+    },
     {
       "name": "Official New Arrivals regional collection",
       "url": "https://www.ysl.com/en-us/collections/men-shoes-new-arrivals-fall-26"
