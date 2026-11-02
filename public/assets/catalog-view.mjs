@@ -600,6 +600,14 @@ export function variantColorLabel(p){
   const shade=rawColorLabel(p);
   return material&&shade?`${material} · ${shade}`:material||shade;
 }
+// A body-colour estimate cannot describe every panel or print. Keep each full
+// physical variant, and show its actual product code when labels coincide.
+export function variantChipLabel(p,variants){
+  const label=variantColorLabel(p);
+  if(!label||!variants.some(q=>q.id!==p.id&&canonicalColorKey(variantColorLabel(q))===canonicalColorKey(label)))return label;
+  const code=p.manufacturerStyle||p.style||p.productVariantId;
+  return code?`${label} · ${code}`:label;
+}
 // The shop's alt text, answered into the colour field: 23.65 returns "블랙
 // 컬러가 돋보이는 스니커즈 제품" for five listings, one of which is the brown
 // one, so the sentence cannot be trusted even for the colour it names. The
@@ -699,7 +707,19 @@ export function uniqueColorVariants(group,activeId){
     unnamed.push(p);
     seen.set(`body:${p.id}`,p);
   }
-  return [...seen.values()];
+  // Different feeds/size runs can give one photographed physical variant
+  // different article IDs. Fold only an identical cached image AND label
+  // (including its declared material), within this already-resolved model.
+  const photographs=new Map();
+  for(const p of seen.values()){
+    const photo=p.presentation?.cachedPath;
+    const key=/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/.test(photo||'')?
+      JSON.stringify([p.brand,photo,canonicalColorKey(variantColorLabel(p)),canonicalColorKey(p.material||'')]):'id:'+p.id;
+    const prior=photographs.get(key);
+    const official=q=>!q.overlay&&!String(q.source||'').startsWith('retail-');
+    if(!prior||(official(p)&&!official(prior))||(official(p)===official(prior)&&p.id===activeId))photographs.set(key,p);
+  }
+  return [...photographs.values()];
 }
 export function groupProductVariants(products) {
   const groups = new Map();
@@ -749,7 +769,8 @@ export function colorSwatch(product) {
   // off the product photo, then a recognised colour word, then nothing -
   // a neutral pattern rather than a guessed colour.
   const named=[...new Set((product.colorway||'').split(/[^a-z가-힣]+/i).map(colorHex).filter(Boolean))].slice(0,3);
-  const colors=reviewed.length?reviewed:(named.length?named:(HEX6.test(product.bodyColor||'')?[product.bodyColor]:[]));
+  const inferred=product.colorEvidence?.method==='upper-image-analysis'&&HEX6.test(product.bodyColor||'');
+  const colors=reviewed.length?reviewed:(inferred?[product.bodyColor]:(named.length?named:(HEX6.test(product.bodyColor||'')?[product.bodyColor]:[])));
   if(!colors.length)return 'repeating-linear-gradient(45deg,#eee 0 4px,#bbb 4px 8px)';
   return colors.length===1?colors[0]:`linear-gradient(135deg,${colors.map((c,i)=>`${c} ${Math.round(i/colors.length*100)}% ${Math.round((i+1)/colors.length*100)}%`).join(',')})`;
 }

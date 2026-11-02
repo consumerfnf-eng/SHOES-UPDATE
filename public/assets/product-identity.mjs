@@ -254,7 +254,18 @@ function shopListingPointer(p, code) {
 }
 export function manufacturerCode(p) {
   if(boundDesignReview(p)?.physicalVariantId)return 'reviewed-variant|'+p.designReview.physicalVariantId;
-  if(p.productVariantId&&!shopListingPointer(p,p.productVariantId))return 'official-variant|'+String(p.productVariantId).normalize('NFC').trim().toLowerCase();
+  // These shops publish a model-level article and select its physical colour
+  // in the PDP URL. Tracking/category parameters never identify a variant.
+  const colourParameter={'The North Face':'color',PUMA:'swatch',Crocs:'cid',Lululemon:'color'}[p.brand];
+  if(colourParameter||p.brand==='Under Armour'){
+    try{
+      const params=new URL(p.url).searchParams;
+      const colour=colourParameter?params.get(colourParameter):[...params].find(([key])=>/^dwvar_.+_color$/i.test(key))?.[1];
+      if(colour&&p.style)return identityFold(p.manufacturerStyle||p.style)+'|colour|'+identityFold(colour);
+    }catch{}
+  }
+  const listedStyle=p.manufacturerStyle||p.style||'';
+  if(p.productVariantId&&!shopListingPointer(p,p.productVariantId)&&(/^\d+$/.test(p.productVariantId)||identityFold(p.productVariantId)!==identityFold(listedStyle)))return 'official-variant|'+String(p.productVariantId).normalize('NFC').trim().toLowerCase();
   if(p.styleType==='retailer-product-id'||/^\d{6}[MFU]\d{6}$/.test(p.style||''))return '';
   const raw=p.manufacturerStyle||p.style||'';
   if(p.brand==='Balenciaga') {

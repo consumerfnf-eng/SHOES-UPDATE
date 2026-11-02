@@ -526,6 +526,36 @@
         "colour": "BLACK",
         "visualReview": "Same buckle placement, side strap, closed toe, outsole tread profile, suede upper and declared colour; size-only retail options."
       }
+    },
+    {
+      "retailId": "weekly-ssense-a873cc2810b71c358f09",
+      "retailStyle": "262270M237001",
+      "retailUrl": "https://www.ssense.com/en-us/men/product/salvatore-ferragamo/white-sebastien-sneakers/19403281",
+      "retailImage": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262270M237001_1.jpg",
+      "officialId": "arrival-6b2e64fdc4923117c373",
+      "officialStyle": "795173",
+      "officialUrl": "https://www.ferragamo.com/shop/kor/ko/men/%EC%8A%88%EC%A6%88--9/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-9/sebastien-795173--9",
+      "officialImage": "https://cdn.ferragamo.com/wcsstore/FerragamoCatalogAssetStore/images/products/795173/795173_01_preview_r20.jpg",
+      "brand": "Ferragamo",
+      "verified": true,
+      "method": "reviewed-model-material-supplier-colour-and-physical-photos",
+      "checkedAt": "2026-11-03",
+      "reason": "Both primary PDPs, model and upper/sole geometry reviewed. Supplier Bianco (Ferragamo) / Black-Beige (Givenchy) and panel/trim colours match; official physical variant retained."
+    },
+    {
+      "retailId": "weekly-ssense-59fecc2a5fb1ac2ff1bc",
+      "retailStyle": "262278M237013",
+      "retailUrl": "https://www.ssense.com/en-us/men/product/givenchy/beige-glide-leather-sneakers/19302641",
+      "retailImage": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262278M237013_1.jpg",
+      "officialId": "arrival-54822c523a9b6fc24779",
+      "officialStyle": "BH00B6H1XX-007",
+      "officialUrl": "https://www.givenchy.com/eur/glide-sneakers-in-leather/BH00B6H1XX-007.html",
+      "officialImage": "https://assets.givenchy.com/asset/3fd1fb39-5678-4dbe-8180-11eec47d916f/High-Resolution-JPG/BH00B6H1XX007-03-04.jpg?imwidth=1024",
+      "brand": "Givenchy",
+      "verified": true,
+      "method": "reviewed-model-material-supplier-colour-and-physical-photos",
+      "checkedAt": "2026-11-03",
+      "reason": "Both primary PDPs, model and upper/sole geometry reviewed. Supplier Bianco (Ferragamo) / Black-Beige (Givenchy) and panel/trim colours match; official physical variant retained."
     }
   ]
 }

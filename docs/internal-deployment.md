@@ -2,6 +2,8 @@
 
 공식 신상품·리테일·뉴스레터·분석·CATWALK의 운영 주소는 https://shoes-update-internal.pages.dev/ 이다. 기존 https://shoes-update.pages.dev/ 요청은 경로와 검색 조건을 유지해 내부 주소로 이동한다.
 
+기존 `shoes-update` Pages 프로젝트의 자동 빌드는 `npm run build:redirect`, 출력 폴더는 `public-redirect`를 사용한다. 이 폴더에는 이동 안내와 리디렉션 설정 3개 파일만 들어가며 상품·사진·CATWALK를 올리지 않는다. 내부 프로젝트는 아래의 전체 자료 배포를 사용한다.
+
 ## 전체 자료 배포
 
 ```powershell

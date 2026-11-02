@@ -60,7 +60,7 @@ export async function finalizeCatalogIdentity() {
   }
   c.products=c.products.filter(p=>!redundant.has(p.id));
   for(const p of [...c.products,...m.retail]) {
-    p.name=repairSourceLabels(p).name;
+    Object.assign(p,repairSourceLabels(p));
     const design=designReviews.products.find(r=>r.verified&&r.id===p.id&&r.brand===p.brand&&r.style===p.style&&r.url===p.url&&r.image===p.image);
     if(design)p.designReview=design;
     if(p.modelName===p.name&&!p.modelGroupId)delete p.modelName;

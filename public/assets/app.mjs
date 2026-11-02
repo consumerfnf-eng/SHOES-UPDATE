@@ -7,6 +7,7 @@ import { analysisCsv, analysisRows, priceDistribution, materialDistribution, col
          priceKrw, priceBand, colourFamily, materialsOf, RATE_NOTE,categoryDistribution,useModelCategories} from './analysis.mjs';
 import {isPublishedFootwear} from './footwear-policy.mjs';
 import {preferOfficialVariants} from './product-identity.mjs';
+import {variantChipLabel} from './catalog-view.mjs';
 import { hasVisual, productImageUrl, kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, preferWomenVariants, unifyVariantGroups, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch, isOverlay, overlayKind, overlayReleaseState, overlayWindowDay, retailerId, trendTerms, trendTermGroups, trendKeywordMatches } from './catalog-view.mjs';
 
 const $ = id => document.getElementById(id);
@@ -37,9 +38,9 @@ function colorChipsMarkup(group, activeId){
   const active=group.find(p=>p.id===activeId)||group[0];
   return `<div class="color-chips" role="group" aria-label="색상 선택">${choices.map(p=>{
     const swatch = colorSwatch(p);
-    const label = variantColorLabel(p) || `색상명 미확인 · ${p.style || p.id}`;
+    const label = variantChipLabel(p,choices) || `색상명 미확인 · ${p.style || p.id}`;
     return `<button type="button" class="color-chip ${p.id===activeId?'active':''}" data-variant="${esc(p.id)}" aria-pressed="${p.id===activeId}" aria-label="${esc(label)} 색상 선택" title="${esc(label)}"><span class="swatch-fill" style="background:${esc(swatch)}"></span></button>`;
-  }).join('')}</div><p class="selected-color" aria-live="polite">${esc(variantColorLabel(active)||'색상명 미확인')}</p>`;
+  }).join('')}</div><p class="selected-color" aria-live="polite">${esc(variantChipLabel(active,choices)||'색상명 미확인')}</p>`;
 }
 
 function outboundUrl(p){ return isOverlay(p)?safeUrl(p.url):reviewedProductPageUrl(p,today); }

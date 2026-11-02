@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "officialVariants": 7018,
-  "retailVariants": 3193,
+  "retailVariants": 3191,
   "officialDuplicatesRemoved": [
     {
       "id": "weekly-musinsa-b756164aca92c0558509",
@@ -227,6 +227,16 @@
       "id": "weekly-29cm-4ff1ad08ccea1ebc3b81",
       "officialId": "arrival-43005fe655b037f82add",
       "reason": "reviewed-primary-product-name-colour-material-and-buckle-sole-geometry"
+    },
+    {
+      "id": "weekly-ssense-a873cc2810b71c358f09",
+      "officialId": "arrival-6b2e64fdc4923117c373",
+      "reason": "reviewed-model-material-supplier-colour-and-physical-photos"
+    },
+    {
+      "id": "weekly-ssense-59fecc2a5fb1ac2ff1bc",
+      "officialId": "arrival-54822c523a9b6fc24779",
+      "reason": "reviewed-model-material-supplier-colour-and-physical-photos"
     }
   ],
   "officialSourceDuplicatesRemoved": [
@@ -7800,8 +7810,7 @@
       "name": "Sebastien Sneakers",
       "ids": [
         "arrival-1378dbca42fcc71b23af",
-        "arrival-6b2e64fdc4923117c373",
-        "weekly-ssense-a873cc2810b71c358f09"
+        "arrival-6b2e64fdc4923117c373"
       ],
       "variants": [
         {
@@ -7813,11 +7822,6 @@
           "id": "arrival-6b2e64fdc4923117c373",
           "style": "795173",
           "color": "화이트"
-        },
-        {
-          "id": "weekly-ssense-a873cc2810b71c358f09",
-          "style": "262270M237001",
-          "color": "White"
         }
       ]
     },
@@ -26398,8 +26402,7 @@
         "arrival-5097f7c186352d9802d6",
         "arrival-96cb87ee28a63bc89f6d",
         "arrival-bd1df6ca6f24fa9f59d9",
-        "arrival-4fd16db4ef355b0d2bec",
-        "weekly-ssense-59fecc2a5fb1ac2ff1bc"
+        "arrival-4fd16db4ef355b0d2bec"
       ],
       "variants": [
         {
@@ -26441,11 +26444,6 @@
           "id": "arrival-4fd16db4ef355b0d2bec",
           "style": "BH00BDH1YP-027",
           "color": "nylon suede · Black"
-        },
-        {
-          "id": "weekly-ssense-59fecc2a5fb1ac2ff1bc",
-          "style": "262278M237013",
-          "color": "Leather · Beige"
         }
       ]
     },
@@ -42892,12 +42890,12 @@
         {
           "id": "arrival-67c22a765042f2dbb023",
           "style": "WVLW-YG02-2026.2_2026",
-          "color": "suede / nylon · Grey"
+          "color": "suede / nylon · Leprechaun / White"
         },
         {
           "id": "arrival-b9f57f0c2a0f09c164b2",
           "style": "WVLM-YG02-2026.2_2026",
-          "color": "suede / nylon · Olive"
+          "color": "suede / nylon · Leprechaun / White"
         },
         {
           "id": "arrival-fc4fe6ccf1d314d03b0f",
@@ -42907,12 +42905,12 @@
         {
           "id": "arrival-9c44eda8770afc43d164",
           "style": "WVLW-YG04-2026.2_2026",
-          "color": "suede / nylon · Taupe"
+          "color": "suede / nylon · White / Black"
         },
         {
           "id": "arrival-cac3613ecff90b760de6",
           "style": "WVLM-YG04-2026.2_2026",
-          "color": "suede / nylon · Light Grey"
+          "color": "suede / nylon · White / Black"
         },
         {
           "id": "arrival-0e6f660ec996f4bd7ce3",
@@ -49322,7 +49320,7 @@
         {
           "id": "arrival-baf262e7a586e51732b2",
           "style": "3026727",
-          "color": ""
+          "color": "ado Sage / Black"
         }
       ]
     },
@@ -51256,12 +51254,12 @@
         {
           "id": "arrival-3c2951c8ca801a8a4467",
           "style": "LDLM-CO03-2025.1_2025",
-          "color": "suede · Beige"
+          "color": "suede · Elm / White"
         },
         {
           "id": "arrival-b572d8d75c0fd7ea6a2a",
           "style": "LDLW-CO03-2025.1_2025",
-          "color": "suede · Light Grey"
+          "color": "suede · Elm / White"
         },
         {
           "id": "arrival-861e79891688171d9ea6",
@@ -51286,12 +51284,12 @@
         {
           "id": "arrival-0199ea99f7149d3c836e",
           "style": "LDLW-RU11-2025.2_2025",
-          "color": "nylon / leather · Brown"
+          "color": "nylon / leather · Brown Sugar / Reflex"
         },
         {
           "id": "arrival-2594990fb5ad606be539",
           "style": "LDLM-RU11-2025.2_2025",
-          "color": "nylon / leather · Red"
+          "color": "nylon / leather · Brown Sugar / Reflex"
         },
         {
           "id": "arrival-81402ec5eb12110b8876",
@@ -92382,5 +92380,5 @@
       ]
     }
   ],
-  "checkedAt": "2026-11-02T14:30:56.965Z"
+  "checkedAt": "2026-11-02T15:23:07.729Z"
 }

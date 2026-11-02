@@ -4,7 +4,7 @@ export function repairSourceLabels(raw){
  const label=p.sourceLabelReview;
  if(label?.verified===true&&label.brand===p.brand&&label.style===p.style&&label.url===p.url&&label.image===p.image){
    p.name=label.name;
-   if(label.colorway)p.colorway=label.colorway;
+   if(label.colorway){p.colorway=label.colorway;p.colorEvidence={method:'official-product-attribute',url:label.url,label:label.colorway,reviewed:true};}
  }
  if(p.brand==='On'){
    try{const u=new URL(p.url);if(/(?:^|\.)on\.com$/i.test(u.hostname)&&u.pathname.includes('/products/')){
@@ -36,7 +36,14 @@ export function repairSourceLabels(raw){
      if(header?.startsWith(colour))p.material=header.slice(colour.length).trim();
    }
  }
- if(p.brand==='Converse')p.name=String(p.name||'').replace(/!\[(?:Image\s*\d+:\s*)?([^\]]+)\]\([^)]*\)/gi,'$1').replace(/^Image\s*\d+:\s*/i,'').trim();
+ if(p.brand==='Converse'){
+   p.name=String(p.name||'').replace(/!\[(?:Image\s*\d+:\s*)?([^\]]+)\]\([^)]*\)/gi,'$1').replace(/^Image\s*\d+:\s*/i,'').trim();
+   try{p.name=decodeURIComponent(p.name);}catch{}
+ }
+ if(p.brand==='Under Armour'){
+   const colour=String(p.colorway||'').match(/^(.+?)\s*-\s*\d{3}\s*(?:\(|!?\[|$)/)?.[1]?.trim();
+   if(colour){p.colorway=colour;p.colorEvidence={method:'official-product-attribute',url:p.url,label:colour};}
+ }
  try{
    const number=new URL(p.url).searchParams.get('product_no');
    if(number&&p.styleType==='official-product-id'&&p.style==='detail'){

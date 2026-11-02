@@ -70,3 +70,4 @@ docs/wgsn-runway-automation.md
 # the same route the catwalk renditions take. The board hides itself when the
 # file is absent, so the public build simply has no board.
 public/data/curation-summary.json
+public-redirect/

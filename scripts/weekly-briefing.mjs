@@ -237,7 +237,9 @@ export async function main() {
   const report = await read('data/monthly-run-report.json', {});
   const diagnostics = await read('logs/weekly-diagnostics.json', {});
   const history = await read(HISTORY_FILE, {weeks: []});
-  const coverage = catalog.sourceStatus?.coverage || [];
+  // Delivery omits operator diagnostics. The private collection retains them.
+  const source = await read('data/catalog-source.json', {});
+  const coverage = catalog.sourceStatus?.coverage || source.collection?.coverage || [];
 
   const brief = buildBriefing({catalog, overlay, trends, report, coverage, history,
                                diagnostics: {firecrawl: diagnostics.renderedOfficial,
