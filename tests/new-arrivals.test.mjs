@@ -187,3 +187,81 @@ NEW
  assert.equal(row.name,'Hip Sneaker');
  assert.equal(listingProduct(row,now.toISOString()).priceLabel,'179,000원');
 });
+
+// --- draining the queue ------------------------------------------------------
+// The catalogue's largest hold is product-verification-required: a candidate
+// found on a listing whose own product page was never read. Discovery refills
+// that queue faster than verification empties it, and the budget used to be
+// spent brand by brand in configuration order.
+const shop = {
+  Prada: {listing:'https://www.prada.com/us/en/women/new-in.html', pdp:'https://www.prada.com/us/en/p/runner/ABC123',
+          detail:'# Runner sneaker\nProduct code: ABC123\n![Runner sneaker side](https://www.prada.com/ABC123_SLS.jpg)\nRunner sneaker with rubber outsole.'},
+  Gucci: {listing:'https://www.gucci.com/us/en/ca/women/new-in-c-women-newin', pdp:'https://www.gucci.com/us/en/pr/p/XYZ789',
+          detail:'# Screener sneaker\nProduct code: XYZ789\n![Screener sneaker side](https://www.gucci.com/XYZ789_SLS.jpg)\nScreener sneaker with rubber outsole.'},
+};
+const listingFor = brand => `# New In\n[${brand === 'Prada' ? 'Runner sneaker' : 'Screener sneaker'}](${shop[brand].pdp})`;
+// Discovery with the detail budget already spent: the candidate is found and
+// left in the queue, which is exactly the state the weekly run saves.
+async function queueFor(brands){
+  const run = await collectNewArrivals({
+    brands, sources:Object.fromEntries(brands.map(b=>[b,[{url:shop[b].listing}]])), now, log:()=>{},
+    canReadDetails:()=>false,
+    read:async target=>{const brand=brands.find(b=>target.endsWith(shop[b].listing));
+      if(brand)return listingFor(brand);
+      throw new Error(`a product page was read with no detail budget: ${target}`);},
+  });
+  assert.equal(run.products.length,0,'nothing verified yet');
+  assert(run.pending.length,'the candidates are queued');
+  return run.pending;
+}
+
+test('a verification run reads no listing and empties the queue it was given', async () => {
+  const carriedPending = await queueFor(['Prada']);
+  const read = [];
+  const run = await collectNewArrivals({
+    skipDiscovery:true, brands:['Prada'], sources:{Prada:[{url:shop.Prada.listing}]}, now, log:()=>{},
+    carriedPending,
+    read:async target=>{read.push(target);return shop.Prada.detail;},
+  });
+  // Not one listing was fetched: every read went to a queued product page.
+  assert(read.length,'the queued product page was read');
+  assert(!read.some(u=>u.includes('new-in')),`a listing was read: ${read.join(' ')}`);
+  assert.equal(run.products.length,1);
+  assert.equal(run.products[0].style,'ABC123');
+  assert.equal(run.pending.length,0,'the queue is shorter than it started');
+  // The brand reports as a verification pass, not as an unavailable source -
+  // the weekly run treats "every source unavailable" as a failure.
+  assert.equal(run.coverage[0].status,'verification-only');
+  assert.equal(run.coverage[0].responses,0);
+});
+
+test('a verification run that checks nothing returns the queue untouched', async () => {
+  const carriedPending = await queueFor(['Prada']);
+  const run = await collectNewArrivals({skipDiscovery:true, brands:[], sources:{}, now, log:()=>{},
+    canReadDetails:()=>false, carriedPending,
+    read:async target=>{throw new Error(`nothing should be read: ${target}`);}});
+  assert.equal(run.products.length,0);
+  assert.equal(run.pending.length,carriedPending.length,'nothing was lost');
+  assert.deepEqual(run.pending.map(e=>e.brand),carriedPending.map(e=>e.brand));
+});
+
+test('the verification budget goes to the brands with least on the site', async () => {
+  const carriedPending = await queueFor(['Prada','Gucci']);
+  // Prada already publishes 400 products; Gucci publishes none, and a single
+  // proof is the difference between it being on the site and being a bare "0".
+  const existing = Array.from({length:400},(_,i)=>({brand:'Prada',url:`https://www.prada.com/us/en/p/old/OLD${i}`,id:`prada-${i}`}));
+  const read = [];
+  let allowed = 1;                       // one product page, then the clock stops
+  const run = await collectNewArrivals({
+    skipDiscovery:true, brands:['Prada','Gucci'], sources:{}, existing, now, log:()=>{},
+    carriedPending, canReadDetails:()=>allowed>0,
+    read:async target=>{read.push(target);allowed--;
+      return target.includes('gucci')?shop.Gucci.detail:shop.Prada.detail;},
+  });
+  assert.equal(read.length,1,`the budget allowed exactly one product page, read ${read.length}`);
+  assert(read[0].includes('gucci.com'),`the emptiest brand went first, not ${read[0]}`);
+  assert.equal(run.products.length,1);
+  assert.equal(run.products[0].brand,'Gucci');
+  // Prada keeps its queue for the next pass rather than losing it.
+  assert.deepEqual(run.pending.map(e=>e.brand),['Prada']);
+});

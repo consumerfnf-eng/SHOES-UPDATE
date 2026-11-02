@@ -27,10 +27,16 @@ const weekStart=sunday.toISOString().slice(0,10);
 // only what it currently sells. See scripts/luxury-shelves.mjs.
 const shelfBasis=await readJson(new URL('data/luxury-shelf-basis.json',root),{brands:{}});
 const officialSources=withLuxuryShelves(await readJson(new URL('config/daily_sources.json',root)),shelfBasis);
+// A run that reads no listing and only checks the product pages already
+// queued. Discovery is what keeps refilling that queue - the listings find
+// candidates far faster than their product pages can be checked - so a pass
+// that only verifies is the one that makes the backlog shorter rather than
+// longer. It deliberately does not count as this week's collection.
+const verifyOnly=process.argv.includes('--verify-only');
 const policy=await readJson(new URL('config/brand-policy.json',root));
 const collectedBrands=collectedBrandList(policy);
 const fingerprint=brandFingerprint(collectedBrands,officialSources);
-if(process.argv.includes('--only-if-stale')&&source.collection?.selectionBasis==='official-new-arrivals'&&source.collection?.lastSuccessfulCollectionAt&&kstDay(source.collection.lastSuccessfulCollectionAt)>=weekStart){
+if(!verifyOnly&&process.argv.includes('--only-if-stale')&&source.collection?.selectionBasis==='official-new-arrivals'&&source.collection?.lastSuccessfulCollectionAt&&kstDay(source.collection.lastSuccessfulCollectionAt)>=weekStart){
   if(source.collection.brandFingerprint===fingerprint){console.log('This week already has a completed New Arrivals collection over the same brands and shelves; no duplicate collection.');process.exit(0);}
   console.log(`The collected brand list or its shelves changed since the last completed collection (${source.collection.brandFingerprint||'none recorded'} -> ${fingerprint}); collecting again.`);
 }
@@ -97,27 +103,48 @@ try {
   // backlog reset to zero every Sunday instead of draining.
   const carried=await readJson(new URL('data/pending-candidates.json',root),{candidates:[]});
   const run=await collectNewArrivals({read:phaseBudget.wrap(reader.read),readDetails:phaseBudget.wrap(renderedCombined.readHtml),sources:officialSources,brands:collectedBrands,existing:source.products,now,
-    carriedPending:carried.candidates,
+    carriedPending:carried.candidates,skipDiscovery:verifyOnly,
     maxDetailMsPerBrand:Number(process.env.OFFICIAL_DETAIL_MS_PER_BRAND||240_000),canReadDetails:()=>!phaseBudget.exhausted(),
     onProgress:progress=>atomicJson(new URL('logs/weekly-progress.json',root),{...progress,brandFingerprint:fingerprint})});
   await atomicJson(new URL('data/pending-candidates.json',root),
     {schemaVersion:1,savedAt:new Date().toISOString(),checkedAt:run.checkedAt,candidates:run.pending||[]});
-  if(!run.coverage.some(c=>c.responses))throw Error('ALL_OFFICIAL_SOURCES_UNAVAILABLE');
+  // No listing was read on purpose in a verification run, so "every source
+  // unavailable" is not a failure there - it is the whole point.
+  if(!verifyOnly&&!run.coverage.some(c=>c.responses))throw Error('ALL_OFFICIAL_SOURCES_UNAVAILABLE');
+  if(verifyOnly)console.log(`Verification pass: ${carried.candidates.length} queued, ${run.products.length} verified, ${run.pending.length} still waiting.`);
   const combined=mergePreserving(source.products,run.products);
   const verified={products:run.products,diagnostics:run.coverage};
   phaseBudget=createCollectionBudget({durationMs:10*60_000,label:'OFFICIAL_CALENDAR'});
-  const structured=await collectStructuredFeeds({read:phaseBudget.wrap(reader.read),fetchHtml:phaseBudget.wrap(url=>readPublicSource(url,{maxBytes:6_000_000})),now});
+  const structured=verifyOnly?{products:[],diagnostics:[]}
+    :await collectStructuredFeeds({read:phaseBudget.wrap(reader.read),fetchHtml:phaseBudget.wrap(url=>readPublicSource(url,{maxBytes:6_000_000})),now});
   // A crawl response alone cannot establish a newly completed verified catalog.
   // Daily maintenance still expires old records if all live product verification is unavailable.
-  if(!run.products.length&&!structured.products.length)throw Error('NO_OFFICIAL_PRODUCT_PROOFS: keeping the previous snapshot and collection date');
+  // A verification pass that drained nothing is a quiet week, not a failure:
+  // the catalogue it would publish is the one already on the site.
+  if(!verifyOnly&&!run.products.length&&!structured.products.length)throw Error('NO_OFFICIAL_PRODUCT_PROOFS: keeping the previous snapshot and collection date');
   const staged=mergePreserving(combined,[...verified.products,...structured.products]);
   const evidence=await readJson(new URL('data/release-evidence.json',root),{products:[]});
   const withEvidence=applyReviewedEvidence(staged,evidence.products);
   const eligibleIds=new Set(curateCatalog(withEvidence,{now}).snapshot.products.map(p=>p.id));
   phaseBudget=createCollectionBudget({durationMs:10*60_000,label:'SIGNAL'});
-  const signalNow=new Date(),signals=await collectSignals({products:withEvidence.filter(p=>eligibleIds.has(p.id)),read:phaseBudget.wrap(reader.read),readPublic:phaseBudget.wrap(readPublicSource),now:signalNow});
-  const keywordNow=new Date(),[search,forecast,editorial,style,market]=await Promise.all([collectSearchKeywords({now:keywordNow}),collectForecastKeywords({now:keywordNow}),collectEditorialKeywords({now:keywordNow}),collectStyleEditorials({now:keywordNow}),collectStyleMarket({now:keywordNow,previousObservations:source.collection?.styleObservations||[]})]);
-  const collection={checkedAt:now.toISOString(),lastSuccessfulCollectionAt:new Date().toISOString(),brandFingerprint:fingerprint,coverage:run.coverage,unavailableBrands:run.coverage.filter(x=>!x.responses).map(x=>x.brand),scope:'weekly',selectionBasis:'official-new-arrivals',catalogExhaustive:false,sourceDirectory:signals.sourceDirectory,keywordCheckedAt:keywordNow.toISOString(),sourceRanks:[...search.sourceRanks,...forecast.sourceRanks,...editorial.sourceRanks,...style.sourceRanks],styleObservations:[...style.observations,...market.observations],styleMarketStatus:market.diagnostics,searchRankStatus:search.searchRankStatus,forecastStatus:forecast.forecastStatus,editorialStatus:[...editorial.editorialStatus,...style.editorialStatus]};
+  const signalNow=new Date(),signals=verifyOnly?{products:[],diagnostics:[],sourceDirectory:source.collection?.sourceDirectory}
+    :await collectSignals({products:withEvidence.filter(p=>eligibleIds.has(p.id)),read:phaseBudget.wrap(reader.read),readPublic:phaseBudget.wrap(readPublicSource),now:signalNow});
+  // Keywords are collected once a week with the catalogue. A verification pass
+  // carries the last run's forward rather than re-reading every source.
+  const keywordNow=new Date(),[search,forecast,editorial,style,market]=verifyOnly
+    ?[{sourceRanks:[],diagnostics:[],searchRankStatus:source.collection?.searchRankStatus},
+      {sourceRanks:[],diagnostics:[],forecastStatus:source.collection?.forecastStatus},
+      {sourceRanks:[],diagnostics:[],editorialStatus:[]},
+      {sourceRanks:[],diagnostics:[],observations:[],editorialStatus:[]},
+      {diagnostics:[],observations:[]}]
+    :await Promise.all([collectSearchKeywords({now:keywordNow}),collectForecastKeywords({now:keywordNow}),collectEditorialKeywords({now:keywordNow}),collectStyleEditorials({now:keywordNow}),collectStyleMarket({now:keywordNow,previousObservations:source.collection?.styleObservations||[]})]);
+  // A verification pass keeps the previous collection's date, fingerprint and
+  // keyword work: it read no listing, so claiming this week's collection would
+  // make --only-if-stale skip the real one.
+  const previous=source.collection||{};
+  const collection=verifyOnly?{...previous,checkedAt:now.toISOString(),lastVerificationPassAt:new Date().toISOString(),
+      verificationPass:{queued:carried.candidates.length,verified:run.products.length,stillWaiting:run.pending.length}}
+    :{checkedAt:now.toISOString(),lastSuccessfulCollectionAt:new Date().toISOString(),brandFingerprint:fingerprint,coverage:run.coverage,unavailableBrands:run.coverage.filter(x=>!x.responses).map(x=>x.brand),scope:'weekly',selectionBasis:'official-new-arrivals',catalogExhaustive:false,sourceDirectory:signals.sourceDirectory,keywordCheckedAt:keywordNow.toISOString(),sourceRanks:[...search.sourceRanks,...forecast.sourceRanks,...editorial.sourceRanks,...style.sourceRanks],styleObservations:[...style.observations,...market.observations],styleMarketStatus:market.diagnostics,searchRankStatus:search.searchRankStatus,forecastStatus:forecast.forecastStatus,editorialStatus:[...editorial.editorialStatus,...style.editorialStatus]};
   await atomicJson(new URL('logs/weekly-diagnostics.json',root),{checkedAt:now.toISOString(),releaseChecks:[...verified.diagnostics,...structured.diagnostics],signalChecks:signals.diagnostics,keywordChecks:[...search.diagnostics,...forecast.diagnostics,...editorial.diagnostics,...style.diagnostics,...market.diagnostics],crawler:client.stats,officialFallbacks:reader.diagnostics,renderedOfficial:rendered.stats,sitemap:sitemap.stats,scrapingBeeOfficial:scrapingBee.stats});
   const result=await publishCurated({now:new Date(),incoming:[...run.products,...verified.products,...structured.products,...signals.products],collection});
   console.log(`Weekly snapshot complete: ${result.snapshot.products.length} public products; ${result.review.held.length} held for verification.`);

@@ -40,8 +40,11 @@ export async function importTrendReport({input,directory=path.resolve('.'),apply
   const payload=JSON.parse(await fs.readFile(input,'utf8'));
   const catalog=JSON.parse(await fs.readFile(path.join(directory,'public/data/catalog.json'),'utf8'));
   const prepared=prepareTrendImport(payload,catalog,{now});
-  const output=path.join(directory,'public/data/comprehensive-trends.json');
-  if(apply){const temporary=output+'.tmp';await fs.writeFile(temporary,JSON.stringify(prepared,null,2)+'\n');await fs.rename(temporary,output);}
+  // Not under public/: nothing on the site fetches this report, so a copy in
+  // the web root was a megabyte uploaded to every deployment - and carried in
+  // a public repository - for no reader at all.
+  const output=path.join(directory,'data/comprehensive-trends.json');
+  if(apply){await fs.mkdir(path.dirname(output),{recursive:true});const temporary=output+'.tmp';await fs.writeFile(temporary,JSON.stringify(prepared,null,2)+'\n');await fs.rename(temporary,output);}
   return {applied:apply,models:prepared.items.length,variants:prepared.items.reduce((n,i)=>n+i.variants.length,0),output};
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(path.resolve(process.argv[1])).href){

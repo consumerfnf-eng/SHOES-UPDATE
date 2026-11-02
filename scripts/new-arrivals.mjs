@@ -323,7 +323,7 @@ export function pageProduct(candidate,text,checkedAt,existing){
   return p;
 }
 function region(url){const u=new URL(url),m=(u.hostname+'/'+u.pathname).match(/(?:^|[./_-])(us|uk|gb|jp|kr|ca|hk|cn|au|fr|it|de|dk)(?:[./_-]|$)/i);return m?(m[1].toUpperCase()==='UK'?'GB':m[1].toUpperCase()):'GL';}
-export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,maxDetailMsPerBrand=Infinity,canReadDetails=()=>true,clock=Date.now,onProgress,log=console.log,carriedPending=[],catalogueBrands=[]}={}){
+export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,maxDetailMsPerBrand=Infinity,canReadDetails=()=>true,clock=Date.now,onProgress,log=console.log,carriedPending=[],catalogueBrands=[],skipDiscovery=false}={}){
   const checkedAt=new Date(now).toISOString(),products=[],coverage=[],work=[];
   const stillPending=()=>work.flatMap(w=>[...(w.pending||w.candidates.values()),...(w.inflight?[w.inflight]:[])].map(candidate=>({brand:w.brand,candidate})));
   let progressTail=Promise.resolve();
@@ -364,7 +364,12 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
     log(`${brand}: listing discovery checked (${status.responses}/${status.attempts} responses).`);
     await checkpoint('listing-discovery');
   }}
-  await Promise.all(Array.from({length:4},()=>discoverBrands()));
+  // A verification run reads no listing at all. Discovery is what refills the
+  // queue, and while it ran in the same budget the queue could only grow: the
+  // listings yield candidates far faster than product pages can be checked, so
+  // a run that does both ends with more waiting than it started with. This mode
+  // exists to make the queue shorter.
+  if(!skipDiscovery)await Promise.all(Array.from({length:4},()=>discoverBrands()));
   // Resolve every brand's exact linked listing photos before doing ANY slower
   // PDP work, so a large assortment cannot starve another brand's ready proofs.
   const oldByUrl=new Map(existing.map(p=>[p.brand+'|'+canonicalUrl(p.url),p]));
@@ -375,7 +380,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
     products.push(p);status.verified++;
   };
   for(const item of work){
-    const {brand,status,candidates}=item;item.pending=[];
+    const {brand,status,candidates}=item;item.pending=item.pending||[];
     for(const candidate of candidates.values()){
       const old=oldByUrl.get(brand+'|'+canonicalUrl(candidate.url));
       // Avoid product requests for clearly unrelated clothing and ordinary dress shoes.
@@ -397,12 +402,40 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
   // for the run after - carriedPending is returned untouched for those.
   const byBrand=new Map(work.map(item=>[item.brand,item]));
   for(const entry of carriedPending){
-    const item=byBrand.get(entry.brand),candidate=entry.candidate;
-    if(!item||!candidate?.url)continue;
+    const candidate=entry?.candidate;
+    if(!candidate?.url)continue;
+    let item=byBrand.get(entry.brand);
+    // In a verification run there was no discovery, so the brand has no work
+    // item yet; the queue itself is the work. `verification-only` keeps that
+    // status out of the unavailable-source count, which is about listings.
+    if(!item&&skipDiscovery&&entry.brand){
+      item={brand:entry.brand,candidates:new Map(),pending:[],
+            status:{brand:entry.brand,attempts:0,responses:0,listingPages:0,candidates:0,verified:0,
+                    errors:[],checkedAt,exhaustive:false,verificationOnly:true}};
+      work.push(item);coverage.push(item.status);byBrand.set(entry.brand,item);
+    }
+    if(!item)continue;
     const key=canonicalUrl(candidate.url);
     if(item.candidates.has(key)||item.pending.some(c=>canonicalUrl(c.url)===key))continue;
     item.pending.unshift(candidate);item.status.detailPending=item.pending.length;
   }
+  // --- B: who gets the budget ------------------------------------------------
+  // Verification is the scarce resource - the clock runs out long before the
+  // queue does - and it used to be spent in whatever order the brands were
+  // configured in. That gave On's 768 waiting candidates the budget while a
+  // maison with one candidate and nothing on the site at all waited behind
+  // them. The brands publishing least go first: one verified product is the
+  // difference between a brand being on the site and being a bare "0", and is
+  // worth more there than it is on a brand already showing hundreds.
+  const publishedBy=new Map();
+  for(const product of existing){const brand=product?.brand;if(brand)publishedBy.set(brand,(publishedBy.get(brand)||0)+1);}
+  const carriedBy=new Map();
+  for(const entry of carriedPending){if(entry?.brand)carriedBy.set(entry.brand,(carriedBy.get(entry.brand)||0)+1);}
+  work.sort((a,b)=>
+    Number((b.pending?.length||0)>0)-Number((a.pending?.length||0)>0)   // nothing to check costs nothing: last
+    ||(publishedBy.get(a.brand)||0)-(publishedBy.get(b.brand)||0)       // the emptiest brand first
+    ||(carriedBy.get(b.brand)||0)-(carriedBy.get(a.brand)||0)           // then whoever has waited longest
+    ||String(a.brand).localeCompare(String(b.brand)));
   await checkpoint('listing-proofs');
   let cursor=0;
   async function verifyBrands(){while(cursor<work.length){
@@ -433,7 +466,8 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
     status.detailPending=item.pending.length;
     if(status.detailPending)status.errors.push({error:'product-follow-up-deferred',reason:'detail-time-budget',remaining:status.detailPending});
     // Dynamic pagination may hide additional items: never equate a response with completeness.
-    status.status=!status.responses?'unavailable':!status.listingPages?'new-section-unconfirmed':status.errors.length||status.truncated?'partial':'checked';
+    status.status=status.verificationOnly?'verification-only'
+      :!status.responses?'unavailable':!status.listingPages?'new-section-unconfirmed':status.errors.length||status.truncated?'partial':'checked';
     log(`${brand}: ${status.listingPages} New listing pages, ${status.candidates} candidates, ${status.verified} product proofs, ${status.errors.length} unresolved checks`);
     await checkpoint('product-verification');
   }}
