@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {parseArrivalListing,listingFollowups} from '../scripts/new-arrivals.mjs';
+import {parseArrivalListing,listingFollowups,maisonShelfProduct} from '../scripts/new-arrivals.mjs';
 import {curateProduct} from '../scripts/curation.mjs';
 import {releaseState} from '../public/assets/release-window.mjs';
 const today='2026-11-02',url='https://www.ysl.com/en-us/p/court-classic-sneaker-ABC123.html',shelf='https://www.ysl.com/en-us/ca/shop-women/shoes/sneakers';
@@ -29,4 +29,12 @@ test('bare numbered pagination follows the same official shelf only',()=>{
  const shelf='https://us.loropiana.com/en/c/shoes/man/sneakers';
  const rows=listingFollowups(`${shelf}?page=2\nhttps://evil.test/?page=2\nhttps://us.loropiana.com/en/c/man?page=2\n${shelf}?page=1`,shelf,'Loro Piana');
  assert.deepEqual(rows.map(r=>r.url),[shelf+'?page=2']);
+});
+
+test('Jil Sander shoe names inherit sneaker type only from the exact official sneaker shelf',()=>{
+ const p='https://www.jilsander.com/en-us/elbe-lace-up-shoe/J32WS0073P7892001.html';
+ const text=`# Sneakers\n[![Elbe Lace-Up Shoe](https://www.jilsander.com/images/ELBE.jpg) Elbe Lace-Up Shoe](${p})`;
+ const rows=parseArrivalListing(text,{brand:'Jil Sander',url:'https://www.jilsander.com/en-us/men/shoes/sneakers',checkedAt:'2026-11-02T00:00:00Z',basis:'assortment'});
+ assert.equal(maisonShelfProduct(rows[0],'2026-11-02T00:00:00Z').officialCategory,'Sneakers');
+ assert.equal(maisonShelfProduct({...rows[0],arrivalEvidence:{...rows[0].arrivalEvidence,url:'https://www.jilsander.com/en-us/men/shoes'}},'2026-11-02T00:00:00Z'),null);
 });

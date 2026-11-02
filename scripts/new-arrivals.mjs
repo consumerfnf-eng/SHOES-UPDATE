@@ -235,6 +235,11 @@ export function maisonShelfProduct(candidate,checkedAt){
 // labels accidentally parsed as a color. Never borrow a neighbouring swatch.
 export function officialVariantLabels(product,candidate){
   const p={...product},last=new URL(p.url).pathname.split('/').filter(Boolean).pop().replace(/\.html$/i,'');
+  // Jil Sander calls its sneaker models "Elbe Lace-Up Shoe". The exact
+  // official sneaker category supplies the type absent from those names.
+  if(p.brand==='Jil Sander'&&/\bshoe\b/i.test(p.name||'')){
+    try{if(/\/shoes\/sneakers\/?$/.test(new URL(candidate?.arrivalEvidence?.url).pathname))p.officialCategory='Sneakers';}catch{}
+  }
   if(p.brand==='On'){
     const title=candidate?.cardDescription?.replace(/^New(?:\s+color)?\s+/i,'').split(/\s+(?:Men|Women|Unisex)\s*[–—-]/)[0]?.trim();
     if(title&&/Cloud/i.test(title))p.name=title;
