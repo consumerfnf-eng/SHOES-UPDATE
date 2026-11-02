@@ -15,8 +15,9 @@ export function releaseWindow(product){
   if(product.verifiedReleaseWindow&&(product.verifiedReleaseWindow.start!==range.start||product.verifiedReleaseWindow.end!==range.end))return null;
   return range;
 }
-import {publicationState,hasArrivalEvidence} from './publication-window.mjs';
+import {publicationState,hasArrivalEvidence,hasAssortmentEvidence} from './publication-window.mjs';
 export function releaseState(product,asOf){
+  if(validCalendarDay(asOf)&&hasAssortmentEvidence(product,asOf))return 'released';
   if(product?.firstPublishedAt)return publicationState(product,asOf);
   if(validCalendarDay(asOf)&&hasArrivalEvidence(product,asOf))return 'released';
   if(!validCalendarDay(asOf))return 'invalid';const range=releaseWindow(product);if(!range)return 'invalid';

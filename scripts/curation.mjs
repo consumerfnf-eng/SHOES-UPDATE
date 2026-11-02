@@ -1,3 +1,4 @@
+import {displayBrandGroup} from '../public/assets/brand-groups.mjs';
 import fs from 'node:fs';
 import {productKeywordIds,productSearchConceptIds,productCollaborationBrands} from './keyword-taxonomy.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
@@ -599,7 +600,9 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   // is held exactly as before, because a card whose photograph is evidence of
   // some other shoe is worse than no card.
   const claimsOfficialEvidence = !!(raw.officialProductEvidence||raw.officialImageEvidence);
-  const maisonShelf = isLuxuryMaison(brand) && inPublishedScope(type.category)
+  const assortment=raw.arrivalEvidence?.kind==='official-assortment-listing';
+  if(assortment&&(displayBrandGroup(policy)!=='LUX'||!(type.category==='sneaker'||type.category==='hybrid'||type.category.endsWith('-sneaker'))))return {reason:'assortment-requires-lux-sneaker'};
+  const maisonShelf = (isLuxuryMaison(brand)||assortment) && inPublishedScope(type.category)
     && hasArrivalEvidence(raw, today)
     && isOfficialProductUrl(brand, raw.url) && isOfficialProductUrl(brand, raw.arrivalEvidence.url)
     && !(claimsOfficialEvidence && !officialEvidenceFor(raw, today));
@@ -700,7 +703,7 @@ export function curateCatalog(rawProducts, { now = new Date(), previous = {}, co
     if (!result.product) { held.push({ id:raw.id, brand:raw.brand, name:raw.name, reason:result.reason }); continue; }
     // Only a live listing can wrongly claim to be new; an expired one is on
     // its way to the archive and must not be diverted.
-    const launched = result.expired ? '' : launchedBefore(result.product, cutoffDay, firstListed);
+    const launched = result.expired || result.product.arrivalEvidence?.kind==='official-assortment-listing' ? '' : launchedBefore(result.product, cutoffDay, firstListed);
     if (launched) { held.push({ id:raw.id, brand:raw.brand, name:result.product.name, reason:`re-release-launched-${launched}` }); continue; }
     const k = dedupeKey(result.product); if (seen.has(k)) { held.push({ id:raw.id, reason:'duplicate-product-color' }); continue; } seen.add(k);
     (result.expired ? expired : products).push(result.product);

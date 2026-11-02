@@ -7,6 +7,7 @@ export function publicationWindow(product) {
   return {start,end:calendarShift(start,3)};
 }
 export function publicationState(product,today) {
+  if(validCalendarDay(today)&&hasAssortmentEvidence(product,today))return 'released';
   const window=publicationWindow(product);
   if(!window||!validCalendarDay(today)||window.start>today)return 'invalid';
   return today>=window.end?'expired':'released';
@@ -24,7 +25,7 @@ export function publicationState(product,today) {
 // taken on the same terms and leaned on no harder - what keeps those records
 // honest is the three-month window and the retail launch index, not this
 // evidence.
-export const ARRIVAL_KINDS=['new-arrivals-listing','new-badge','catalogue-listing','catalogue-latest-listing'];
+export const ARRIVAL_KINDS=['official-assortment-listing','new-arrivals-listing','new-badge','catalogue-listing','catalogue-latest-listing'];
 export function hasArrivalEvidence(product,today) {
   const e=product?.arrivalEvidence;
   if(!e||e.verified!==true||!ARRIVAL_KINDS.includes(e.kind)||e.brand!==product.brand||e.style!==product.style||e.productUrl!==product.url||!e.excerpt||!e.contentHash)return false;
@@ -33,3 +34,5 @@ export function hasArrivalEvidence(product,today) {
   const day=new Date(Date.parse(e.verifiedAt)+9*3600000).toISOString().slice(0,10);
   return day<=today&&(!!publicationWindow(product)||day>=calendarShift(today,-3));
 }
+
+export function hasAssortmentEvidence(product,today){return product?.arrivalEvidence?.kind==='official-assortment-listing'&&hasArrivalEvidence(product,today);}

@@ -1,3 +1,4 @@
+import {sneakerShelfLinks} from './luxury-shelves.mjs';
 import {createHash} from 'node:crypto';
 import {canonicalUrl,isOfficialProductUrl,classifyFootwear,officialHybridReview,officialEvidenceFor,kstDay} from './curation.mjs';
 import {isLuxuryMaison} from './luxury-shelves.mjs';
@@ -80,8 +81,8 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence,ba
   // take every shoe on the shelf, but this shelf is only sorted newest first,
   // not known to hold this season alone - so the record says so, and the
   // three-month window dates it from the retail index.
-  const catalogue=basis==='catalogue'||basis==='catalogue-latest';
-  const catalogueKind=basis==='catalogue-latest'?'catalogue-latest-listing':'catalogue-listing';
+  const catalogue=basis==='catalogue'||basis==='catalogue-latest'||basis==='assortment';
+  const catalogueKind=basis==='assortment'?'official-assortment-listing':basis==='catalogue-latest'?'catalogue-latest-listing':'catalogue-listing';
   const rows=new Map(),isNew=!catalogue&&(isNewListing(url,text)||sectionEvidence?.kind==='new-arrivals-navigation'&&sectionEvidence.targetUrl===url&&isOfficialProductUrl(brand,sectionEvidence.url)&&!!sectionEvidence.contentHash);
   for(let i=0;i<links.length;i++){
     const link=links[i],key=canonicalUrl(link.url),previous=links[i-1],next=links.slice(i+1).find(l=>canonicalUrl(l.url)!==key);
@@ -299,7 +300,7 @@ function pageProduct(candidate,text,checkedAt,existing){
   return p;
 }
 function region(url){const u=new URL(url),m=(u.hostname+'/'+u.pathname).match(/(?:^|[./_-])(us|uk|gb|jp|kr|ca|hk|cn|au|fr|it|de|dk)(?:[./_-]|$)/i);return m?(m[1].toUpperCase()==='UK'?'GB':m[1].toUpperCase()):'GL';}
-export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,maxDetailMsPerBrand=Infinity,canReadDetails=()=>true,clock=Date.now,onProgress,log=console.log,carriedPending=[]}={}){
+export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,maxDetailMsPerBrand=Infinity,canReadDetails=()=>true,clock=Date.now,onProgress,log=console.log,carriedPending=[],catalogueBrands=[]}={}){
   const checkedAt=new Date(now).toISOString(),products=[],coverage=[],work=[];
   const stillPending=()=>work.flatMap(w=>[...(w.pending||w.candidates.values()),...(w.inflight?[w.inflight]:[])].map(candidate=>({brand:w.brand,candidate})));
   let progressTail=Promise.resolve();
@@ -310,7 +311,8 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
   }
   let discoveryCursor=0;
   async function discoverBrands(){while(discoveryCursor<brands.length){const brand=brands[discoveryCursor++];
-    const configured=sources[brand]||[],queue=[...configured].sort((a,b)=>Number(isNewListing(b.url))-Number(isNewListing(a.url))),seen=new Set(),candidates=new Map();
+    const full=catalogueBrands.includes(brand);
+    const configured=(sources[brand]||[]).map(s=>full?{...s,basis:'assortment'}:s),queue=[...configured].sort((a,b)=>Number(isNewListing(b.url))-Number(isNewListing(a.url))),seen=new Set(),candidates=new Map();
     const status={brand,attempts:0,responses:0,listingPages:0,candidates:0,verified:0,errors:[],checkedAt,exhaustive:false};
     while(queue.length&&seen.size<maxPagesPerBrand){
       const source=queue.shift(),key=canonicalUrl(source.url);if(seen.has(key)||!isOfficialProductUrl(brand,source.url)||isKidsListing(source.url))continue;seen.add(key);status.attempts++;
@@ -319,6 +321,10 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
         const rows=parseArrivalListing(text,{brand,url:source.url,checkedAt,sectionEvidence:source.sectionEvidence,basis:source.basis});if(isNewListing(source.url,text)||rows.length)status.listingPages++;
         for(const p of rows)candidates.set(canonicalUrl(p.url),p);
         const followups=listingFollowups(text,source.url,brand,source.sectionEvidence);
+        if(full){
+          followups.push(...sneakerShelfLinks(markdownLinks(text),{origin:new URL(source.url).origin,pageUrl:source.url,limit:100}).map(url=>({url})));
+          for(const next of followups)next.basis='assortment';
+        }
         for(const next of followups)if(!seen.has(canonicalUrl(next.url))&&!queue.some(q=>canonicalUrl(q.url)===canonicalUrl(next.url)))queue.push(next);
       }catch(e){status.errors.push({url:source.url,error:e.message});}
     }
@@ -333,6 +339,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
   const oldByUrl=new Map(existing.map(p=>[p.brand+'|'+canonicalUrl(p.url),p]));
   const accept=(p,candidate,status)=>{
     p=officialVariantLabels(p,candidate);
+    if(catalogueBrands.includes(p.brand)&&!['sneaker','hybrid','ballet-sneaker','mary-jane-sneaker','mule-sneaker'].includes(classifyFootwear(p).category))return;
     if(classifyFootwear(p).reason==='excluded-footwear')return;
     products.push(p);status.verified++;
   };
@@ -382,7 +389,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
     // A maison's leftovers are not left over. Whatever the clock or the
     // render budget stopped us checking still has the brand's own shelf
     // behind it, and for these shops that is all there will ever be.
-    if(isLuxuryMaison(brand)&&item.pending.length){
+    if((isLuxuryMaison(brand)||catalogueBrands.includes(brand))&&item.pending.length){
       const taken=[];
       for(const candidate of item.pending){
         try{const p=maisonShelfProduct(candidate,checkedAt);if(p){accept(p,candidate,status);taken.push(candidate);}}

@@ -1,0 +1,52 @@
+name: Full LUX Official Sneaker Assortment
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: shoes-publication
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 210
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Collect all LUX official sneakers regardless of release date
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          SCRAPINGBEE_API_KEY: ${{ secrets.SCRAPINGBEE_API_KEY }}
+          SCRAPINGBEE_OFFICIAL_CREDITS: '800'
+          NODE_OPTIONS: --max-http-header-size=65536
+        run: node scripts/collect-lux-assortment.mjs --publish
+      - run: npm run photos
+      - run: npm run build
+      - name: Push only validated catalogue and coverage
+        run: |
+          git config user.name 'Shoes Dashboard Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/catalog-source.json data/publication-history.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/lux-assortment-report.json public/data/catalog.json public/data/lux-assortment-report.json public/data/rank-boards.json public/images
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update all-release-date LUX assortment and coverage'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Save detailed coverage even after failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lux-assortment-${{ github.run_id }}
+          path: |
+            logs/lux-assortment-progress.json
+            logs/lux-assortment-report.json
+          retention-days: 30
