@@ -450,6 +450,82 @@
       "officialStyle": "810699E003138018",
       "officialUrl": "https://www.stellamccartney.com/kr/ko/%EC%97%AC%EC%84%B1/%EC%8A%88%EC%A6%88/%EB%A0%88%EC%98%A4%ED%8C%8C%EB%93%9C-%EB%B2%A8%EB%B2%B3-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-810699E003138018.html",
       "officialImage": "https://www.stellamccartney.com/dw/image/v2/BCWD_PRD/on/demandware.static/-/Sites-master_catalog/default/dw7f1053fd/figurino/810699E00313/810699E003138018_X.jpg?sw=1920&sh=2362"
+    },
+    {
+      "verified": true,
+      "brand": "23.65",
+      "retailId": "weekly-29cm-5aca0e1c806b20244186",
+      "retailUrl": "https://www.29cm.co.kr/products/4263628",
+      "retailImage": "https://img.29cm.co.kr/item/202610/11f1c154f55926cb8aaeef23e9582634.jpg",
+      "officialId": "arrival-7f22eb8a12602da18b1e",
+      "officialStyle": "1849",
+      "officialUrl": "https://www.23-65.com/product/detail.html?product_no=1849&cate_no=376&display_group=1",
+      "officialImage": "https://www.23-65.com/web/product/medium/202609/f505794e6a0bd138fa912285a341fc12.png",
+      "method": "reviewed-primary-product-name-colour-material-and-buckle-sole-geometry",
+      "verifiedAt": "2026-11-02T13:11:20.251Z",
+      "evidence": {
+        "retailProductEndpoint": "https://bff-api.29cm.co.kr/api/v5/product-detail/4263628",
+        "officialProductUrl": "https://www.23-65.com/product/detail.html?product_no=1849&cate_no=376&display_group=1",
+        "colour": "BEIGE",
+        "visualReview": "Same buckle placement, side strap, closed toe, outsole tread profile, suede upper and declared colour; size-only retail options."
+      }
+    },
+    {
+      "verified": true,
+      "brand": "23.65",
+      "retailId": "weekly-29cm-1e46557b266831402eab",
+      "retailUrl": "https://www.29cm.co.kr/products/4263619",
+      "retailImage": "https://img.29cm.co.kr/item/202610/11f1bd793de472338aaee7fd3f5d3b8e.jpg",
+      "officialId": "arrival-5bf7900eee0498cffa29",
+      "officialStyle": "1848",
+      "officialUrl": "https://www.23-65.com/product/detail.html?product_no=1848&cate_no=376&display_group=1",
+      "officialImage": "https://www.23-65.com/web/product/medium/202609/6b3986b01f2110bff7715ebc2a2a145a.png",
+      "method": "reviewed-primary-product-name-colour-material-and-buckle-sole-geometry",
+      "verifiedAt": "2026-11-02T13:11:20.254Z",
+      "evidence": {
+        "retailProductEndpoint": "https://bff-api.29cm.co.kr/api/v5/product-detail/4263619",
+        "officialProductUrl": "https://www.23-65.com/product/detail.html?product_no=1848&cate_no=376&display_group=1",
+        "colour": "MOCHA BROWN",
+        "visualReview": "Same buckle placement, side strap, closed toe, outsole tread profile, suede upper and declared colour; size-only retail options."
+      }
+    },
+    {
+      "verified": true,
+      "brand": "23.65",
+      "retailId": "weekly-29cm-7e4e5a6eecef46b65755",
+      "retailUrl": "https://www.29cm.co.kr/products/4263766",
+      "retailImage": "https://img.29cm.co.kr/item/202610/11f1bd78b7079af28aae31aae7759af6.jpg",
+      "officialId": "arrival-5973e63b0e55654e6fde",
+      "officialStyle": "1851",
+      "officialUrl": "https://www.23-65.com/product/detail.html?product_no=1851&cate_no=376&display_group=1",
+      "officialImage": "https://www.23-65.com/web/product/medium/202609/a84a7e0e4c5f783ffc17e3b2e2170c07.png",
+      "method": "reviewed-primary-product-name-colour-material-and-buckle-sole-geometry",
+      "verifiedAt": "2026-11-02T13:11:20.254Z",
+      "evidence": {
+        "retailProductEndpoint": "https://bff-api.29cm.co.kr/api/v5/product-detail/4263766",
+        "officialProductUrl": "https://www.23-65.com/product/detail.html?product_no=1851&cate_no=376&display_group=1",
+        "colour": "CHARCOAL",
+        "visualReview": "Same buckle placement, side strap, closed toe, outsole tread profile, suede upper and declared colour; size-only retail options."
+      }
+    },
+    {
+      "verified": true,
+      "brand": "23.65",
+      "retailId": "weekly-29cm-4ff1ad08ccea1ebc3b81",
+      "retailUrl": "https://www.29cm.co.kr/products/4263748",
+      "retailImage": "https://img.29cm.co.kr/item/202609/11f1bb13b17ae5d490ede5ecab62c475.jpg",
+      "officialId": "arrival-43005fe655b037f82add",
+      "officialStyle": "1850",
+      "officialUrl": "https://www.23-65.com/product/detail.html?product_no=1850&cate_no=376&display_group=1",
+      "officialImage": "https://www.23-65.com/web/product/medium/202609/0c7a6a2fbf344c0803f9d50dae67feed.png",
+      "method": "reviewed-primary-product-name-colour-material-and-buckle-sole-geometry",
+      "verifiedAt": "2026-11-02T13:11:20.254Z",
+      "evidence": {
+        "retailProductEndpoint": "https://bff-api.29cm.co.kr/api/v5/product-detail/4263748",
+        "officialProductUrl": "https://www.23-65.com/product/detail.html?product_no=1850&cate_no=376&display_group=1",
+        "colour": "BLACK",
+        "visualReview": "Same buckle placement, side strap, closed toe, outsole tread profile, suede upper and declared colour; size-only retail options."
+      }
     }
   ]
 }

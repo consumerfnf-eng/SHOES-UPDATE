@@ -1,6 +1,6 @@
 import {footwearTypes,FOOTWEAR_TYPES} from './footwear-policy.mjs';
 import {hasArrivalEvidence} from './publication-window.mjs';
-import {reviewedDesignName,manufacturerCode} from './product-identity.mjs';
+import {reviewedDesignName,manufacturerCode,identityFold,titleColorLabel} from './product-identity.mjs';
 export function kstToday(now = new Date()) {
   const shifted = new Date(now.getTime() + 9 * 60 * 60 * 1000);
   return shifted.toISOString().slice(0, 10);
@@ -337,7 +337,15 @@ function computeVariantGroupName(p) {
   // for four colourways: every listing's own name ends in its own shade.
   const reviewed=reviewedDesignName(p);
   if(reviewed)return withoutAudienceLabel(trimModelSeparators(withoutTrailingMaterial(withoutLeadingMaterial(reviewed))));
-  if (p?.modelName) return withoutAudienceLabel(trimModelSeparators(withoutTrailingMaterial(withoutLeadingMaterial(p.modelName))));
+  // A modelName the feed copied out of the listing's own title is not a model
+  // the collection step resolved: ALOHAS states "Tb.205 Bara Nylon Blue
+  // Sneakers" in both fields, and taking it as the model skipped the colour
+  // subtraction below, so four shades of one article stood as four cards.
+  // Where the two fields differ the modelName says something the title does
+  // not, and it is used as given. Where they agree it says nothing more, and
+  // the title's own colour is lifted off it exactly as any other title's is.
+  const resolvedModel=p?.modelName&&identityFold(p.modelName)!==identityFold(p.name||'')?p.modelName:'';
+  if (resolvedModel) return withoutAudienceLabel(trimModelSeparators(withoutTrailingMaterial(withoutLeadingMaterial(resolvedModel))));
   if (!p?.name) return p?.modelKey || p?.id || '';
   let base = String(p.name);
   // nameColorway is a colour the brand only wrote into the name, proved to be
@@ -353,7 +361,13 @@ function computeVariantGroupName(p) {
   // in Black/dark Grey": split on the slash, "dark Grey" is preceded by one,
   // which the old boundary did not admit - so four colourways of the Triple
   // S.2 kept their shades in the card name and stood as four cards.
-  for (const color of colors) base = base.replace(new RegExp(`(?:^|[\\s|/,·—–-])${color.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}(?=$|[\\s|/,·—–-])`,'ig'),' ');
+  // A shade modifier in front of the declared colour belongs to it. PREMIATA
+  // states "브라운" for a listing titled "진한 브라운 여성 베스코인 스니커즈",
+  // and lifting only the colour out left the 진한 ("deep") stranded in the
+  // card's name. The modifier comes off only together with the colour, so a
+  // model actually called "Light Grey" keeps its own words.
+  const SHADE = '(?:(?:진한|짙은|밝은|연한|탁한|dark|light|deep|pale|bright|soft)\\s+)?';
+  for (const color of colors) base = base.replace(new RegExp(`(?:^|[\\s|/,·—–-])${SHADE}${color.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}(?=$|[\\s|/,·—–-])`,'ig'),' ');
   // A declared trailing color can leave "sneaker in" behind (e.g. Gucci), and
   // a multi-shade one leaves the separators that stood between its words.
   if (base !== p.name) base = base.replace(/[\s|/,·—–-]{2,}/g,' ').replace(/\s+in\s*[\s|/,·—–-]*$/i,'');
@@ -406,6 +420,14 @@ function newsletterSubjectKey(p) {
 // Only exact shapes qualify; a code that does not match one is not guessed at.
 const STYLE_FAMILIES = [
   /^([A-Z0-9]{11})(\d{4})$/,          // Kering: Balenciaga, Bottega Veneta, Gucci, Saint Laurent
+  // The same Kering code with the colour slot absent. Alexander McQueen's
+  // Korean listings carry 553680WIAKR where the US ones carry
+  // 553680WIAKR2000, and without this the one Oversized Sneaker stood as a
+  // Korean card of 27 colourways and an English card of 23, with the same
+  // article codes on both. Eleven characters, the seventh of them the W of
+  // the house's footwear class, so a shop's own eleven-digit sequence - all
+  // digits, no W - is not read as a design.
+  /^([A-Z0-9]{6}W[A-Z0-9]{4})$/,
   /^([A-Z]{2}\d{4})-(\d{3})$/,        // Nike, Jordan, Converse
   /^([A-Z0-9]{10})-(\d{4})$/,         // Loewe
   /^([0-9A-Z]{6,9}[A-Z]{3})_([A-Z0-9]{4})$/, // Dior
@@ -429,9 +451,18 @@ export function styleFamily(p) {
   if(['Prada','Miu Miu'].includes(p?.brand)&&/^[A-Z0-9]{6}_/.test(code))return code.slice(0,6);
   if(p?.brand==='Chanel')return String(p.url||'').match(/\/p\/(G\d{5})/i)?.[1]||'';
   if(p?.brand==='Golden Goose'){
-    const match=code.match(/^(G[MW]F\d{5})\.[A-Z0-9]+\.[A-Z0-9]+$/);
-    if(match)return match[1];
+    // The M/W letter is the size run, not the article; GMF00117 and GWF00117
+    // are one shoe in two fits.
+    const match=code.match(/^G[MW]F(\d{5})\.[A-Z0-9]+\.[A-Z0-9]+$/);
+    if(match)return 'GUF'+match[1];
   }
+  // The first four characters of a Rick Owens SKU are its line and season;
+  // the F-number is the design.
+  if(p?.brand==='Rick Owens'){const match=code.match(/^[A-Z]{2}\d{2}(F\d{4})_[A-Z0-9]+_[A-Z0-9]+$/);if(match)return match[1];}
+  // ALOHAS sells one article in a dozen shades and numbers them s101316-10,
+  // -11, -12. The six digits are the article; the two after the dash are the
+  // colour, and the colour is what the card holds together.
+  if(p?.brand==='ALOHAS'){const match=code.match(/^(S\d{6})-\d{2}$/);if(match)return match[1];}
   for (const pattern of STYLE_FAMILIES) {
     const match = code.match(pattern);
     if (match) return match[1];
@@ -511,11 +542,11 @@ function computeVariantGroupKey(p) {
 // Named colours are an approximate navigation aid; the official photo stays
 // the colour reference. Shared by the chips and by the colour-field cleaning
 // below, which needs to know whether "BLACK" is a word or a product code.
-const COLOR_HEX={black:'#242424',white:'#f7f7f2',ivory:'#eee9d8',cream:'#ece1c6',beige:'#c9b89e',butter:'#eddf9d',brown:'#70472f',chocolate:'#493329',burgundy:'#632a39',oxblood:'#581f2c',red:'#cf303a',navy:'#27374d',blue:'#4479ad',green:'#53745c',sage:'#a5ad8d',silver:'#bac0c5',grey:'#989ba0',gray:'#989ba0',pink:'#e4a9bb',orange:'#e17a31',yellow:'#e6c953',violet:'#a69bb4',purple:'#866799',sand:'#cbbb9d',peanut:'#ac865e',angora:'#e8dfcd',meteorite:'#45474a',pumpernickel:'#504137',bayberry:'#55624c',turtledove:'#c8c4b5',morel:'#988b79',cocoa:'#795e50',walnut:'#796252',cortado:'#a6886b',khaki:'#9b8b5e',taupe:'#8a7968',olive:'#6e7446',charcoal:'#3a3b3c',gold:'#b99746',tan:'#c8a165',camel:'#b08457',rust:'#9a4a29',mint:'#a7d8c4',lilac:'#c7b3d9',coral:'#e8836b',teal:'#2f7d78',maroon:'#5c1a24',multicolor:'#8f8f8f',denim:'#3f5c84',stone:'#b7b2a8',bone:'#e4ded0',sail:'#efeade',gum:'#b98a52',블랙:'#242424',화이트:'#f7f7f2',그레이:'#989ba0',블루:'#4479ad',브라운:'#70472f',베이지:'#c9b89e',실버:'#bac0c5',핑크:'#e4a9bb',네이비:'#27374d',레드:'#cf303a',그린:'#53745c',옐로우:'#e6c953',퍼플:'#866799',오렌지:'#e17a31',골드:'#b99746',크림:'#ece1c6',아이보리:'#eee9d8',카키:'#9b8b5e',버건디:'#632a39',민트:'#a7d8c4',차콜:'#3a3b3c',올리브:'#6e7446',와인:'#632a39',모카:'#795e50',검정:'#242424',검:'#242424',흰색:'#f7f7f2',회색:'#989ba0',파랑:'#4479ad',초록:'#53745c',노랑:'#e6c953',빨강:'#cf303a',보라:'#866799',연청:'#8fb0d6',진청:'#27374d',탄:'#c8a165'};
+const COLOR_HEX={mocha:'#795e50',mochabrown:'#795e50',black:'#242424',white:'#f7f7f2',ivory:'#eee9d8',cream:'#ece1c6',beige:'#c9b89e',butter:'#eddf9d',brown:'#70472f',chocolate:'#493329',burgundy:'#632a39',oxblood:'#581f2c',red:'#cf303a',navy:'#27374d',blue:'#4479ad',green:'#53745c',sage:'#a5ad8d',silver:'#bac0c5',grey:'#989ba0',gray:'#989ba0',pink:'#e4a9bb',orange:'#e17a31',yellow:'#e6c953',violet:'#a69bb4',purple:'#866799',sand:'#cbbb9d',peanut:'#ac865e',angora:'#e8dfcd',meteorite:'#45474a',pumpernickel:'#504137',bayberry:'#55624c',turtledove:'#c8c4b5',morel:'#988b79',cocoa:'#795e50',walnut:'#796252',cortado:'#a6886b',khaki:'#9b8b5e',taupe:'#8a7968',olive:'#6e7446',charcoal:'#3a3b3c',gold:'#b99746',tan:'#c8a165',camel:'#b08457',rust:'#9a4a29',mint:'#a7d8c4',lilac:'#c7b3d9',coral:'#e8836b',teal:'#2f7d78',maroon:'#5c1a24',multicolor:'#8f8f8f',denim:'#3f5c84',stone:'#b7b2a8',bone:'#e4ded0',sail:'#efeade',gum:'#b98a52',블랙:'#242424',화이트:'#f7f7f2',그레이:'#989ba0',블루:'#4479ad',브라운:'#70472f',베이지:'#c9b89e',실버:'#bac0c5',핑크:'#e4a9bb',네이비:'#27374d',레드:'#cf303a',그린:'#53745c',옐로우:'#e6c953',퍼플:'#866799',오렌지:'#e17a31',골드:'#b99746',크림:'#ece1c6',아이보리:'#eee9d8',카키:'#9b8b5e',버건디:'#632a39',민트:'#a7d8c4',차콜:'#3a3b3c',올리브:'#6e7446',와인:'#632a39',모카:'#795e50',검정:'#242424',검:'#242424',흰색:'#f7f7f2',회색:'#989ba0',파랑:'#4479ad',초록:'#53745c',노랑:'#e6c953',빨강:'#cf303a',보라:'#866799',연청:'#8fb0d6',진청:'#27374d',탄:'#c8a165'};
 // The same shade, written in two languages. Musinsa lists OLLA's slip-on as
 // 히커리 II and 29CM lists the identical shoe as HICKORY II; without this
 // one colourway draws two chips on the one card.
-const COLOR_SYNONYM={블랙:'black',검정:'black',검:'black',화이트:'white',흰색:'white',오프화이트:'offwhite',아이보리:'ivory',크림:'cream',그레이:'grey',회색:'grey',차콜:'charcoal',실버:'silver',블루:'blue',파랑:'blue',네이비:'navy',진청:'navy',연청:'denim',데님:'denim',레드:'red',빨강:'red',와인:'wine',버건디:'burgundy',마룬:'maroon',핑크:'pink',코랄:'coral',오렌지:'orange',옐로우:'yellow',노랑:'yellow',그린:'green',초록:'green',올리브:'olive',카키:'khaki',세이지:'sage',민트:'mint',퍼플:'purple',보라:'purple',바이올렛:'violet',라벤더:'lavender',라일락:'lilac',브라운:'brown',실브라운:'sealbrown',초콜릿:'chocolate',초콜렛:'chocolate',모카:'mocha',커피:'coffee',코냑:'cognac',카멜:'camel',탄:'tan',베이지:'beige',샌드:'sand',스톤:'stone',토프:'taupe',그레이지:'greige',누드:'nude',라떼:'latte',오트밀:'oatmeal',머스타드:'mustard',골드:'gold',브론즈:'bronze',퓨터:'pewter',히커리:'hickory',체스트넛:'chestnut',테라코타:'terracotta',브릭:'brick',러스트:'rust',피치:'peach',살구:'apricot',터콰이즈:'turquoise',틸:'teal',멀티컬러:'multicolor',메탈릭:'metallic',펄:'pearl',
+const COLOR_SYNONYM={gray:'grey',블랙:'black',검정:'black',검:'black',화이트:'white',흰색:'white',오프화이트:'offwhite',아이보리:'ivory',크림:'cream',그레이:'grey',회색:'grey',차콜:'charcoal',실버:'silver',블루:'blue',파랑:'blue',네이비:'navy',진청:'navy',연청:'denim',데님:'denim',레드:'red',빨강:'red',와인:'wine',버건디:'burgundy',마룬:'maroon',핑크:'pink',코랄:'coral',오렌지:'orange',옐로우:'yellow',노랑:'yellow',그린:'green',초록:'green',올리브:'olive',카키:'khaki',세이지:'sage',민트:'mint',퍼플:'purple',보라:'purple',바이올렛:'violet',라벤더:'lavender',라일락:'lilac',브라운:'brown',실브라운:'sealbrown',초콜릿:'chocolate',초콜렛:'chocolate',모카:'mocha',커피:'coffee',코냑:'cognac',카멜:'camel',탄:'tan',베이지:'beige',샌드:'sand',스톤:'stone',토프:'taupe',그레이지:'greige',누드:'nude',라떼:'latte',오트밀:'oatmeal',머스타드:'mustard',골드:'gold',브론즈:'bronze',퓨터:'pewter',히커리:'hickory',체스트넛:'chestnut',테라코타:'terracotta',브릭:'brick',러스트:'rust',피치:'peach',살구:'apricot',터콰이즈:'turquoise',틸:'teal',멀티컬러:'multicolor',메탈릭:'metallic',펄:'pearl',
 // Abbreviations retailers use instead of the word: "에버라스트 다이나믹
 // 트레킹화 BLK / BRN / IVY" is one shoe in three colours. Kept apart from
 // the model and technology suffixes of the same shape - GTX, OG, DMX, LS.
@@ -569,13 +600,25 @@ export function variantColorLabel(p){
   const shade=rawColorLabel(p);
   return material&&shade?`${material} · ${shade}`:material||shade;
 }
+// The shop's alt text, answered into the colour field: 23.65 returns "블랙
+// 컬러가 돋보이는 스니커즈 제품" for five listings, one of which is the brown
+// one, so the sentence cannot be trusted even for the colour it names. The
+// title says the colour instead, and titleColorLabel reads it there.
+const COLOR_PROSE=/제품|이미지|돋보이는|제안하는|연출|스타일링|감각적|컬러가|컬러의|패턴이/;
 function rawColorLabel(p){
   const color=String(p.colorway||'').replace(SELLER_NOTICE,' ').replace(AUDIENCE_TAG,' ')
-    .replace(INLINE_CODE,' ').replace(/\s*,\s*/g,', ')
+    .replace(INLINE_CODE,' ')
+    // A hex is the swatch, not the colour's name. Gucci states
+    // "White,#336633|Green" and the chip read "White, #336633|Green".
+    .replace(/#[0-9a-f]{3,8}\b/gi,' ')
+    .replace(/\s*,\s*/g,', ')
+    // What the hex stood between is now two separators with nothing in them.
+    .replace(/\s*[,/|]\s*(?:[,/|]\s*)+/g,', ')
     .replace(/\s{2,}/g,' ').replace(/^[\s,/|-]+|[\s,/|-]+$/g,'');
-  if(!color||COLOR_PLACEHOLDER.test(color))return '';
-  if(CODE_LIST.test(color)&&!color.split(/[,/]/).some(part=>colorHex(part.trim())))return '';
-  return !/(?:https?:|!\[|^image\s*\d+$|^(?:women|men)\s*\||^sneakers?\s*[·|]|미표기)/i.test(color)?color:'';
+  const stated=!color||COLOR_PLACEHOLDER.test(color)||COLOR_PROSE.test(color)?'':color;
+  if(!stated)return titleColorLabel(p);
+  if(CODE_LIST.test(stated)&&!stated.split(/[,/]/).some(part=>colorHex(part.trim())))return titleColorLabel(p);
+  return !/(?:https?:|!\[|^image\s*\d+$|^(?:women|men)\s*\||^sneakers?\s*[·|]|미표기)/i.test(stated)?stated:titleColorLabel(p);
 }
 // Plain RGB distance between two #rrggbb values, or a large number when
 // either is missing. Enough to tell one shoe's two angles from two
@@ -593,6 +636,8 @@ export const SAME_BODY_COLOR = 42;
 
 export function uniqueColorVariants(group,activeId){
   const seen=new Map();
+  const boundGenderTwins=new Map();
+  const titleKeys=new Map();
   const unnamed=[];
   for(const p of group){
     // Folded to one spelling first: Musinsa writes 히커리 II where 29CM writes
@@ -603,18 +648,39 @@ export function uniqueColorVariants(group,activeId){
       // A coarse image-inferred "black" is not proof that two factory variants
       // are identical. Preserve their complete code (including material).
       const inferred=p.colorEvidence?.method==='upper-image-analysis';
-      const factory=manufacturerCode(p)||p.productVariantId||(/\d/.test(p.style||'')?p.style:'');
-      const key=factory?`variant:${p.brand||''}|${factory}`:`color:${color}${inferred?'|'+p.id:''}`;
+      const factory=manufacturerCode(p);
+      // A legacy men's/women's suffix is not another colour when both rows
+      // point to exactly the same PDP and photograph. Different full factory
+      // codes and different declared materials remain separate variants.
+      const rawCode=String(p.manufacturerStyle||p.style||''),genderBase=rawCode.replace(/-(?:W|M)$/i,'');
+      const photo=p.presentation?.cachedPath||p.presentation?.image||p.image;
+      const material=String(p.material||'').trim().toLowerCase();
+      const url=safeUrl(p.url);
+      const binding=!inferred&&url&&photo?JSON.stringify([p.brand,url,photo,color,material,genderBase.toLowerCase()]):'';
+      let key=factory?`variant:${p.brand||''}|${factory}`:`color:${color}${inferred?'|'+p.id:''}`;
+      if(binding){if(boundGenderTwins.has(binding))key=boundGenderTwins.get(binding);else boundGenderTwins.set(binding,key);}
       if(!seen.has(key)||p.id===activeId)seen.set(key,p);
       continue;
     }
-    // No colour name, but the two listings are word-for-word the same title:
-    // Musinsa and 29CM both carry "페이스 로우 미드 브라운" and only one of
-    // them fills the colour field. One title is one colourway, whichever
-    // retailer happened to describe it.
+    // No colour name. Two things can still say that two listings are one
+    // colourway, and either is enough, exactly as for the cards themselves.
+    //
+    // A word-for-word identical title: Musinsa and 29CM both carry "페이스
+    // 로우 미드 브라운" and only one of them fills the colour field.
+    //
+    // Or the house's own article code, which is what the title cannot do.
+    // Golden Goose describes GMF00117.F005821.10361 and GWF00117.F005821.10361
+    // in different Korean words - "남성 그린 스타 화이트 나파 볼스타" and
+    // "그린 레더 스타와 힐탭 화이트 나파 레더 여성 볼스타" - for the same
+    // article, material and colour in two size runs, and they drew two blank
+    // chips. Reading the code can only ever join two chips: a listing that
+    // states a different material or colour slot keeps its own.
     const title=String(p.name||'').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'');
-    if(title){
-      const key=`title:${title}`;
+    const article=p.colorEvidence?.method==='upper-image-analysis'?'':manufacturerCode(p);
+    if(title||article){
+      const byTitle=title?`title:${title}`:'';
+      const key=byTitle&&titleKeys.get(byTitle)||(article?`variant:${p.brand||''}|${article}`:byTitle);
+      if(byTitle&&!titleKeys.has(byTitle))titleKeys.set(byTitle,key);
       if(!seen.has(key)||p.id===activeId)seen.set(key,p);
       continue;
     }

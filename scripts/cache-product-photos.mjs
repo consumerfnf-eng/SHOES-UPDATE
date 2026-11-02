@@ -3,7 +3,8 @@ import {readJson,atomicJson,publishCurated} from './publish-curated.mjs';
 const root=new URL('../',import.meta.url),catalog=await readJson(new URL('public/data/catalog.json',root));
 const reviews=await readJson(new URL('data/product-presentation.json',root),{products:[]});
 const cache=await readJson(new URL('data/photo-cache.json',root),{schemaVersion:1,images:{}});
-const sources=[...new Set([...catalog.products.map(p=>p.presentation?.image),...reviews.products.filter(p=>p.approved).map(p=>p.image),...Object.keys(cache.unavailable||{})].filter(Boolean))];
+const activeIds=new Set(catalog.products.map(p=>p.id));
+const sources=[...new Set([...catalog.products.map(p=>p.presentation?.image||p.image),...reviews.products.filter(p=>p.approved&&activeIds.has(p.id)).map(p=>p.image)].filter(Boolean))];
 await fs.mkdir(new URL('public/images/',root),{recursive:true});let next=0;
 // A photo we cannot fetch costs that one product its card. It used to stop the
 // whole run, which in CI meant a single 403 from one brand's CDN threw away an
@@ -27,7 +28,7 @@ async function worker(){while(next<sources.length){const url=sources[next++],kno
  }catch(error){failures.set(url,error.message);}
 }}
 await Promise.all(Array.from({length:3},worker));
-const dropped=catalog.products.filter(p=>p.presentation&&!cache.images[p.presentation.image]);
+const dropped=catalog.products.filter(p=>p.presentation&&!cache.images[p.presentation.image||p.image]);
 // Striking those products out of the published list by hand left the snapshot
 // disagreeing with itself: the keyword catalogue, the style board and the
 // social comparisons had all been computed over products that were no longer

@@ -27,6 +27,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Pillow>=10,<14'
       - name: Expire products by calendar date without crawling
         run: npm run daily
       - name: Validate snapshot before archive writes
@@ -46,7 +50,7 @@ jobs:
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add public/data/catalog.json data/archive-queue.json data/curation-review.json data/publication-history.json
+          git add public/data/catalog.json public/data/catalog-ui.json data/card-thumbnails.json data/archive-queue.json data/curation-review.json data/publication-history.json public/data/monthly-catalog.json data/product-identity-audit.json public/images
           if ! git diff --cached --quiet; then
             git commit -m "shoes expiry maintenance $(date -u +%F)"
             # See weekly-update.yml: main can move during a run, so rebase

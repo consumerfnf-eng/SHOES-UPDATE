@@ -5,6 +5,9 @@ import {unifyVariantGroups,groupProductVariants,variantGroupName,variantColorLab
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {buildStyleTrendBoard} from './style-trend-board.mjs';
 import {productPresentation} from './product-presentation.mjs';
+import {isExcludedBrand} from '../public/assets/brand-exclusions.mjs';
+import {repairSourceLabels} from './repair-source-labels.mjs';
+import {canonicalBrand} from './curation.mjs';
 const root=new URL('../',import.meta.url);
 const read=async(path,fallback)=>{try{return JSON.parse(await fs.readFile(new URL(path,root),'utf8'));}catch(e){if(e.code==='ENOENT')return fallback;throw e;}};
 export async function finalizeCatalogIdentity() {
@@ -13,12 +16,19 @@ export async function finalizeCatalogIdentity() {
   const bally=await read('data/bally-regional-retail.json',{products:[]});
   supplement.products.push(...bally.products);
   const photos=await read('data/product-photo-analysis.json',{photos:{}});
+  const cache=await read('data/photo-cache.json',{images:{}});
   const designReviews=await read('data/product-variant-reviews.json',{products:[]});
   const presentationReviews=await read('data/product-presentation.json',{products:[]});
   const ballyRefreshed=bally.schemaVersion===1&&Array.isArray(bally.pages)&&bally.pages.length>0;
   const byId=new Map(m.retail.filter(p=>!ballyRefreshed||p.source!=='retail-bally-uae').map(p=>[p.id,p]));
   for(const p of supplement.products)byId.set(p.id,productPresentation(p,presentationReviews)||p);
-  m.retail=[...byId.values()];
+  m.retail=[...byId.values()].filter(p=>!isExcludedBrand(p.brand));
+  for(const p of [...m.retail,...(m.newsletter||[])]){
+    const canonical=canonicalBrand(p.brand);
+    if(canonical!==p.brand){p.brandAsListed??=p.brand;p.brand=canonical;}
+  }
+  m.newsletter=(m.newsletter||[]).filter(p=>!isExcludedBrand(p.brand));
+  c.products=c.products.filter(p=>!isExcludedBrand(p.brand));
   for(const p of supplement.products){const e=p.availabilityEvidence;m.sources[p.source]={label:p.retailer,listingUrl:e.listingUrl,checkedAt:e.verifiedAt,basis:'current-assortment'};}
   let correctedNames=0, inferredColours=0;
   const officialDropped=[];
@@ -34,7 +44,23 @@ export async function finalizeCatalogIdentity() {
   }
   const officialDropIds=new Set(officialDropped.map(p=>p.id));
   c.products=c.products.filter(p=>!officialDropIds.has(p.id));
+  // A full physical-variant code together with the exact same photograph
+  // proves duplicate official records, including regional punctuation variants.
+  // A shared model prefix or approximate image similarity proves neither.
+  const exactOfficial=new Map(),redundant=new Set();
+  for(const p of c.products){
+    const code=manufacturerCode(p),photo=p.presentation?.cachedPath||p.presentation?.image||p.image;
+    if(!code||!photo)continue;
+    const key=JSON.stringify([p.brand,code,photo]);
+    const prior=exactOfficial.get(key);
+    if(!prior){exactOfficial.set(key,p);continue;}
+    prior.alternateOfficialUrls=[...new Set([...(prior.alternateOfficialUrls||[]),...(p.alternateOfficialUrls||[]),p.url].filter(url=>url&&url!==prior.url))];
+    for(const field of ['firstSeen','firstPublishedAt'])if(p[field]&&(!prior[field]||p[field]<prior[field]))prior[field]=p[field];
+    redundant.add(p.id);officialDropped.push({id:p.id,officialId:prior.id,brand:p.brand,code,reason:'exact-official-variant-code-and-product-photo'});
+  }
+  c.products=c.products.filter(p=>!redundant.has(p.id));
   for(const p of [...c.products,...m.retail]) {
+    p.name=repairSourceLabels(p).name;
     const design=designReviews.products.find(r=>r.verified&&r.id===p.id&&r.brand===p.brand&&r.style===p.style&&r.url===p.url&&r.image===p.image);
     if(design)p.designReview=design;
     if(p.modelName===p.name&&!p.modelGroupId)delete p.modelName;
@@ -46,13 +72,15 @@ export async function finalizeCatalogIdentity() {
     if(materialOnly)p.colorway='';
     if(p.brand==='Golden Goose'&&String(p.colorway).includes(p.name))p.colorway='';
     if(a&&!a.needsReview){
-      const cached=p.presentation?.image===a.presentation.image?p.presentation?.cachedPath:'';
+      const cached=(p.presentation?.image||p.image)===a.presentation.image?p.presentation?.cachedPath:'';
       p.presentation={...p.presentation,...a.presentation,...(cached?{cachedPath:cached}:{})};
       p.bodyColor=a.bodyColor;p.photoHash=a.photoHash;
       if(!p.colorway||/미표기|미확인|unknown|not (?:specified|available)|^image\b/i.test(p.colorway)||p.colorEvidence?.method==='upper-image-analysis'&&p.colorEvidence.image===(p.presentation.image||p.image)){
         p.colorway=a.colorName;p.colorEvidence={method:'upper-image-analysis',image:p.presentation.image||p.image,hex:a.bodyColor,label:a.colorName};inferredColours++;
       }
     }
+    const cached=cache.images[p.presentation?.image||p.image];
+    if(cached?.path)p.presentation={image:p.image,view:'product-photo',scale:1,...p.presentation,cachedPath:cached.path};
   }
   const dropped=[];
   const decisions=await read('data/reviewed-retail-duplicates.json',{products:[]});

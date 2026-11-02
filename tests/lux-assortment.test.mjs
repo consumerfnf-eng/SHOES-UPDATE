@@ -17,13 +17,11 @@ test('assortment pages collect unbadged cards while normal collection still requ
  assert.equal(parseArrivalListing(text,{brand:'Saint Laurent',url:shelf,checkedAt:'2026-11-02T00:00:00Z',basis:'assortment'})[0].arrivalEvidence.kind,'official-assortment-listing');
 });
 
-test('Zegna dotted product URLs are products rather than lost category links',()=>{
+test('retired Zegna cannot be rediscovered from a stale source',()=>{
  const product='https://www.zegna.com/us-en/shoes/sneakers/product.white-suede-232-sneakers.37109540/';
  const text=`# Sneakers\n[![White Suede 232 Sneakers](https://productimage.zegna.com/is/image/zegna/232-F) White Suede 232 Sneakers](${product})`;
  const rows=parseArrivalListing(text,{brand:'Zegna',url:'https://www.zegna.com/us-en/shoes/sneakers/',checkedAt:'2026-11-02T00:00:00Z',basis:'assortment'});
- assert.equal(rows.length,1);
- assert.equal(rows[0].url,product);
- assert.equal(rows[0].linkedImages.length,1);
+ assert.equal(rows.length,0);
 });
 
 test('bare numbered pagination follows the same official shelf only',()=>{

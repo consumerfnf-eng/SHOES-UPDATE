@@ -4,16 +4,68 @@
   "brands": [
     {
       "name": "National Geographic",
-      "spellings": ["National Geographic", "National Geographic Apparel", "NATIONAL GEOGRAPHIC APPAREL",
-                    "내셔널지오그래픽", "내셔널 지오그래픽", "내셔널지오그래픽어패럴"],
+      "spellings": [
+        "National Geographic",
+        "National Geographic Apparel",
+        "NATIONAL GEOGRAPHIC APPAREL",
+        "내셔널지오그래픽",
+        "내셔널 지오그래픽",
+        "내셔널지오그래픽어패럴"
+      ],
       "removedOn": "2026-10-30",
       "basis": "Removed at the user's request."
     },
     {
       "name": "Oakley Factory Team",
-      "spellings": ["Oakley Factory Team", "Oakley", "오클리", "오클리 팩토리 팀"],
+      "spellings": [
+        "Oakley Factory Team",
+        "Oakley",
+        "오클리",
+        "오클리 팩토리 팀"
+      ],
       "removedOn": "2026-10-30",
       "basis": "Removed from the brand policy and the collection sources on 2026-10-30 (cc88d81). Listed here so the retail run drops it too."
+    },
+    {
+      "name": "Zegna",
+      "spellings": [
+        "Zegna",
+        "Ermenegildo Zegna",
+        "제냐",
+        "에르메네질도 제냐"
+      ],
+      "removedOn": "2026-11-02",
+      "basis": "User requested removal from site and all future collection."
+    },
+    {
+      "name": "Goyard",
+      "spellings": [
+        "Goyard",
+        "고야드"
+      ],
+      "removedOn": "2026-11-02",
+      "basis": "User requested removal from site and all future collection."
+    },
+    {
+      "name": "Arc'teryx",
+      "spellings": [
+        "Arc'teryx",
+        "Arcteryx",
+        "Arc’teryx",
+        "아크테릭스"
+      ],
+      "removedOn": "2026-11-02",
+      "basis": "User requested removal from site and all future collection."
+    },
+    {
+      "name": "ROA",
+      "spellings": [
+        "ROA",
+        "ROA Hiking",
+        "로아"
+      ],
+      "removedOn": "2026-11-02",
+      "basis": "User requested removal from site and all future collection."
     }
   ]
 }

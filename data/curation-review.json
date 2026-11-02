@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-02T09:17:57.570Z",
+  "checkedAt": "2026-11-02T14:07:48.556Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -387,12 +387,6 @@
       "reason": "product-url-or-image-required"
     },
     {
-      "id": "zip3-f147917916fa0fd2",
-      "brand": "The Row",
-      "name": "Clement Sneakers",
-      "reason": "release-day-evidence-required"
-    },
-    {
       "id": "zip3-0298d8502d0ad01a",
       "brand": "Miu Miu",
       "name": "Plume Satin Sneakers",
@@ -517,12 +511,6 @@
       "brand": "Brunello Cucinelli",
       "name": "Suede Sneakers",
       "reason": "product-url-or-image-required"
-    },
-    {
-      "id": "zip3-58dd2214605a35bb",
-      "brand": "ALOHAS",
-      "name": "Tb.490 Crochet Leather Sneakers",
-      "reason": "release-day-evidence-required"
     },
     {
       "id": "zip3-c70c66ee095a0136",
@@ -831,40 +819,10 @@
       "reason": "product-url-or-image-required"
     },
     {
-      "id": "manual-3a38c4d6609f3be2",
-      "brand": "Axel Arigato",
-      "name": "Daze Bask Runner",
-      "reason": "product-url-or-image-required"
-    },
-    {
       "id": "manual-ea821c8dacfef70f",
       "brand": "Axel Arigato",
       "name": "Slow Runner",
       "reason": "product-url-or-image-required"
-    },
-    {
-      "id": "manual-7465d5d1e9cb8e5a",
-      "brand": "Axel Arigato",
-      "name": "Dice T-Toe Sneaker",
-      "reason": "product-url-or-image-required"
-    },
-    {
-      "id": "manual-d78a6cc2cc535fdb",
-      "brand": "Axel Arigato",
-      "name": "Eris Sneaker",
-      "reason": "product-url-or-image-required"
-    },
-    {
-      "id": "manual-b999a9c4524f6904",
-      "brand": "Axel Arigato",
-      "name": "Slow Ballet Sneaker - metallic/silver family",
-      "reason": "hybrid-review-required"
-    },
-    {
-      "id": "manual-c8781bd7f160348f",
-      "brand": "Axel Arigato",
-      "name": "Slow Ballet Sneaker - black family",
-      "reason": "hybrid-review-required"
     },
     {
       "id": "manual-b3bb5f9a3987c96b",
@@ -1079,7 +1037,7 @@
     {
       "id": "official-95bab6a3570f3c06",
       "brand": "On",
-      "name": "Cloud 6 Waterproof",
+      "name": "Cloud 6 Wp - espresso black",
       "reason": "product-verification-required"
     },
     {
@@ -1097,7 +1055,7 @@
     {
       "id": "official-f035d2cf4ccab45b",
       "brand": "On",
-      "name": "Cloudboost",
+      "name": "Cloud Boost - black white",
       "reason": "product-verification-required"
     },
     {
@@ -1109,7 +1067,7 @@
     {
       "id": "official-c03c92c5666c348d",
       "brand": "On",
-      "name": "Cloudventure Peak",
+      "name": "Cloudventure Peak - white black",
       "reason": "product-verification-required"
     },
     {
@@ -1157,7 +1115,7 @@
     {
       "id": "official-07e0815cc6b3a65c",
       "brand": "On",
-      "name": "Cloudflow 5",
+      "name": "Cloudflow 5 - white black",
       "reason": "product-verification-required"
     },
     {
@@ -1171,12 +1129,6 @@
       "brand": "Nike",
       "name": "Nike Air Max 90 (Green Bay Packers)",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "official-d648201905028343",
-      "brand": "Balenciaga",
-      "name": "3XL Gel Clearsole Sneaker",
-      "reason": "release-day-evidence-required"
     },
     {
       "id": "official-19dd893db165cc7e",
@@ -1290,7 +1242,7 @@
       "id": "p041",
       "brand": "Zegna",
       "name": "232 Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "p042",
@@ -1350,7 +1302,7 @@
       "id": "p052",
       "brand": "Zegna",
       "name": "Triple Stitch Leather Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "p053",
@@ -1405,12 +1357,6 @@
       "brand": "Nike",
       "name": "Pegasus Premium Sneakers",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "p063",
-      "brand": "Axel Arigato",
-      "name": "Daze Runner Suede Sneakers",
-      "reason": "release-day-evidence-required"
     },
     {
       "id": "p064",
@@ -1704,7 +1650,7 @@
       "id": "xlsx-802a737acd08c6d0",
       "brand": "Arc'teryx",
       "name": "버텍스 알파인 GTX 여성",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "xlsx-b23aff1e993d574a",
@@ -1884,13 +1830,13 @@
       "id": "xlsx-642fbae317c33050",
       "brand": "Arc'teryx",
       "name": "크래그 여성 - BLACK/BLACK / AFQSW10081",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "xlsx-9b746236d1c09589",
       "brand": "Arc'teryx",
       "name": "크래그 남성 - BLACK/BLACK / AFQSM10078",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "xlsx-b63b4e3235127a4b",
@@ -2727,21 +2673,9 @@
       "reason": "product-url-or-image-required"
     },
     {
-      "id": "xlsx-e42d7b82037b0e4d",
-      "brand": "Axel Arigato",
-      "name": "Daze Flat Runner",
-      "reason": "product-url-or-image-required"
-    },
-    {
       "id": "xlsx-0ed02997bc5114ad",
       "brand": "Axel Arigato",
       "name": "Dice T-Toe Sneaker",
-      "reason": "product-url-or-image-required"
-    },
-    {
-      "id": "xlsx-855709a65a1ddec1",
-      "brand": "Axel Arigato",
-      "name": "Eris Sneaker",
       "reason": "product-url-or-image-required"
     },
     {
@@ -2964,42 +2898,6 @@
       "id": "new-20260923-0163b1c0b568cb45",
       "brand": "AMIRI",
       "name": "STARS COURT LOW - Black",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-46d75f3ff18ea5ae",
-      "brand": "AMIRI",
-      "name": "WOMEN - WOMEN'S LIZARD EMBOSSED PACIFIC BONES - Plum",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-59b3a9b591cdcfeb",
-      "brand": "AMIRI",
-      "name": "WOMEN - WOMEN'S LIZARD EMBOSSED PACIFIC FLAT - Alabaster",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-e365ad63b433ec74",
-      "brand": "AMIRI",
-      "name": "WOMEN - WOMEN'S NEWPORT - Fossil",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-03d18b9ad4722880",
-      "brand": "AMIRI",
-      "name": "WOMEN - WOMEN'S GLITTER PACIFIC BONES - Silver Grey",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-afb7878f64e66983",
-      "brand": "AMIRI",
-      "name": "WOMEN - WOMEN'S PACIFIC FLAT - Brown",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-af1d8ca51e424bc7",
-      "brand": "AMIRI",
-      "name": "WOMEN - WOMEN'S PACIFIC FLAT - Alabaster",
       "reason": "product-verification-required"
     },
     {
@@ -3504,30 +3402,6 @@
       "id": "new-20260923-8aa287b93103fbee",
       "brand": "PANE",
       "name": "PANE x HEAD Pace Nostalgia Men’s Shoes – Court Verde",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-a93e1d1083b01344",
-      "brand": "PANE",
-      "name": "Pane Pace Nostalgia 2.0 Men’s Shoes – Chestnut Blaze",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-c699e6bda2da89ce",
-      "brand": "PANE",
-      "name": "Pane Pace Nostalgia 2.0 Women’s Shoes – Chestnut Blaze",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-83bb61c332916124",
-      "brand": "PANE",
-      "name": "Pane Pace Nostalgia 2.0 Men’s Shoes – Pastel Drift",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-075f964950a3d608",
-      "brand": "PANE",
-      "name": "Pane Pace Nostalgia 2.0 Women’s Shoes – Pastel Drift",
       "reason": "product-verification-required"
     },
     {
@@ -4770,49 +4644,49 @@
       "id": "new-20260923-0b6c63855ef63d86",
       "brand": "ROA",
       "name": "Cingino",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "new-20260923-8d0e4f0edc6193ee",
       "brand": "ROA",
       "name": "Cingino",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "new-20260923-30893cd2517bff23",
       "brand": "ROA",
       "name": "Cingino",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "new-20260923-f3807d29ef3e3d51",
       "brand": "ROA",
       "name": "Cingino",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "new-20260923-74ea22d65787039a",
       "brand": "ROA",
       "name": "Katharina Light",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "new-20260923-32daef78b75cb1b3",
       "brand": "ROA",
       "name": "Sella",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "new-20260923-86bbe503b772b8ab",
       "brand": "ROA",
       "name": "Sella",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "new-20260923-f5bf7a302d47d323",
       "brand": "ROA",
       "name": "ROA x And Wander Sella",
-      "reason": "release-day-evidence-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "new-20260923-de86cd4ee51017be",
@@ -4831,30 +4705,6 @@
       "brand": "Simone Rocha",
       "name": "Embellished Bow Ballet Runner",
       "reason": "hybrid-review-required"
-    },
-    {
-      "id": "new-20260923-cd71a9316f74e850",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "new-20260923-38064818654e916a",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "new-20260923-d43f63945229dadf",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "new-20260923-c1196fafdf4600e4",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "new-20260923-3bc245b7156c9568",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "new-20260923-7740a9ab5c0f6152",
-      "reason": "duplicate-product-color"
     },
     {
       "id": "new-20260923-e6784b43ec44b92c",
@@ -4933,24 +4783,6 @@
       "brand": "Yohji Yamamoto",
       "name": "LEATHER MOSSER SMOOTH MILITARY HIGH-TOP SNEAKERS",
       "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-a9a0be3a03ac8dc5",
-      "brand": "Axel Arigato",
-      "name": "Clay Sneaker",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-a3196eefd4afb35d",
-      "brand": "Axel Arigato",
-      "name": "Clay Sneaker",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-f340eff85ea71244",
-      "brand": "Axel Arigato",
-      "name": "Clay Sneaker",
-      "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-15cfc1751cdba973",
@@ -5223,12 +5055,6 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-e0c147c580a7febf",
-      "brand": "Off-White",
-      "name": "OFF WHITE Vulcanized Low Sneakers WHITE/NEO BLUE OF06006101",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-8c9e272a9bab708b",
       "brand": "Off-White",
       "name": "Vulcanized Low Leather Sneakers",
@@ -5339,421 +5165,343 @@
     {
       "id": "new-20260923-b1dfc069bae5debf",
       "brand": "On",
-      "name": "Women's Cloudmonster 3 FP Movement Ivory | Pearl",
+      "name": "Cloudmonster 3 - dustrose doe",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-e610c227fcb348c9",
       "brand": "On",
-      "name": "Women's Cloud 6 Waterproof Black | Black",
+      "name": "Cloud 6 Wp - black black",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-bb1d8c5acfa97ace",
-      "brand": "On",
-      "name": "Cloudtilt",
-      "reason": "re-release-launched-2026-02-20"
     },
     {
       "id": "new-20260923-c75c6a7e20557b2e",
       "brand": "On",
-      "name": "Women's Cloudtilt Black | Ivory",
+      "name": "Cloudtilt - bloom sakura",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-c233809ebe667d59",
       "brand": "On",
-      "name": "Women's Cloudtilt Black | Ivory",
+      "name": "Cloudtilt - pearl ice",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-dd3edf8e94824dde",
       "brand": "On",
-      "name": "Women's Cloudnova 2 Ivory | Maroon",
+      "name": "Cloudnova 2 - grain ivory",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-4a8aee0ea2094b37",
       "brand": "On",
-      "name": "Women's Cloudnova 2 Ivory | Maroon",
+      "name": "Cloudnova 2 - ivory maroon",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-006b351e2e967544",
       "brand": "On",
-      "name": "Women's Cloudnova 2 Ivory | Maroon",
+      "name": "Cloudnova 2 - oyster ivory",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-011e3b1bac163dde",
       "brand": "On",
-      "name": "Women's Cloudnova 2 Ivory | Maroon",
+      "name": "Cloudnova 2 - ivory pink",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-f4c8339cebd505bf",
       "brand": "On",
-      "name": "Women's Cloudnova 2 Ivory | Maroon",
+      "name": "Cloudnova 2 - fade black",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-9644b0b0a3fedffd",
       "brand": "On",
-      "name": "Women's Cloudnova 2 Ivory | Maroon",
+      "name": "Cloudnova 2 - ice sand",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-f776cbee48252a84",
       "brand": "On",
-      "name": "Women's Cloudnova 2 Ivory | Maroon",
+      "name": "Cloudnova 2 - all white",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-feeeccef840a083b",
       "brand": "On",
-      "name": "Women's Cloudnova 2 Ivory | Maroon",
+      "name": "Cloudnova 2 - all black",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-7a05e2cb1bd50e3e",
       "brand": "On",
-      "name": "Women's Cloudrunner 3 Max LN1 Fresco | Gild",
+      "name": "Cloudrunner 3 Max Ln1 - fresco gild",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-cc4549dc1d9086bb",
       "brand": "On",
-      "name": "Women's Cloudswift 4 Surf | White",
+      "name": "Cloudswift 4 - ember eclipse",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-c733db51ae2b17ac",
       "brand": "On",
-      "name": "Women's Cloudsurfer Max Horizon | Ivory",
+      "name": "Cloudsurfer Max - horizon ivory",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-cab14843528734cd",
       "brand": "On",
-      "name": "Women's Cloudsurfer Max Horizon | Ivory",
+      "name": "Cloudsurfer Max - sailor thistle",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-a022d44e1678c01a",
       "brand": "On",
-      "name": "Women's Cloudhorizon 2 Waterproof Black | Black",
+      "name": "Cloudhorizon 2 Wp - nocturne pebble",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-d28a1bbbb202269f",
       "brand": "On",
-      "name": "Women's Cloudhorizon 2 Waterproof Black | Black",
+      "name": "Cloudhorizon 2 Wp - brume grain",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-bc6fa1f8e7c0d6e4",
       "brand": "On",
-      "name": "Women's Cloudhorizon 2 Black | Black",
+      "name": "Cloudhorizon 2 - ash ember",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-aae5bdafebf14078",
       "brand": "On",
-      "name": "Women's Cloudsoma White | White",
+      "name": "Cloudsoma - urchin agave",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-ea4de2b8be36f9b3",
-      "brand": "On",
-      "name": "Cloudsoma",
-      "reason": "re-release-launched-2026-03-16"
     },
     {
       "id": "new-20260923-004a0e408cd3aee1",
       "brand": "On",
-      "name": "Women's Cloudsoma White | White",
+      "name": "Cloudsoma - sakura safari",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-59b13c578ce0138a",
       "brand": "On",
-      "name": "Women's Cloudsoma White | White",
+      "name": "Cloudsoma - sandstone tangerine",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-4a875b18d0e079b3",
       "brand": "On",
-      "name": "Women's Cloudvista 3 Waterproof Black | Black",
+      "name": "Cloudvista 3 Waterproof - ether grain",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-5a2d3e979663200f",
-      "brand": "On",
-      "name": "Cloudpulse 2",
-      "reason": "re-release-launched-2026-02-20"
     },
     {
       "id": "new-20260923-926347cdea2b2e1b",
       "brand": "On",
-      "name": "Women's Cloudmonster 3 Sakura | Ivory",
+      "name": "Cloudmonster 3 - ether ivory",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-14f534c61834ea9d",
       "brand": "On",
-      "name": "Women's Cloudmonster 3 Sakura | Ivory",
+      "name": "Cloudmonster 3 - ivory tin",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-35fb5b66c142b28a",
-      "brand": "On",
-      "name": "Cloudmonster 3",
-      "reason": "re-release-launched-2026-03-12"
     },
     {
       "id": "new-20260923-b9741528b4c50613",
       "brand": "On",
-      "name": "Women's Cloudmonster 3 Sakura | Ivory",
+      "name": "Cloudmonster 3 - nebula ivory",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-c1069ecbd50a8bfe",
       "brand": "On",
-      "name": "Women's Cloudmonster 3 Sakura | Ivory",
+      "name": "Cloudmonster 3 - white white",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-4c6d3d5411e652c7",
       "brand": "On",
-      "name": "Women's Cloudrunner 3 Waterproof Black | Black",
+      "name": "Cloudrunner 3 Wp - pollen haze",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-dcf78996fba45b49",
       "brand": "On",
-      "name": "Women's Cloudvista 3 Pearl | Cinder",
+      "name": "Cloudvista 3 - ivory acacia",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-613f294f0c32e5b0",
-      "brand": "On",
-      "name": "Cloudflow 5 AD",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "new-20260923-504065710b303dd3",
-      "brand": "On",
-      "name": "Cloudboom Max",
-      "reason": "re-release-launched-2026-02-20"
     },
     {
       "id": "new-20260923-d06327424487e7e0",
       "brand": "On",
-      "name": "Women's Cloudrunner 3 Sunstone | Ivory",
+      "name": "Cloudrunner 3 - white ivory",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-9af2e07f10646a5f",
       "brand": "On",
-      "name": "Men's Cloud 6 Brume | Olive",
+      "name": "Cloud 6 - brume olive",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-c1a3aaef3c4a1b88",
       "brand": "On",
-      "name": "Men's Cloud 6 Brume | Olive",
+      "name": "Cloud 6 - chai sand",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-3225292944c170f0",
       "brand": "On",
-      "name": "Men's Cloudrunner 3 Max LN1 Fresco | Gild",
+      "name": "Cloudrunner 3 Max Ln1 - fresco gild",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-8e631b23451cfcd1",
-      "brand": "On",
-      "name": "Cloudrock Low Waterproof",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "new-20260923-082ecfe31a4b6d0a",
-      "brand": "On",
-      "name": "Cloud 6 Waterproof",
-      "reason": "re-release-launched-2025-06-20"
     },
     {
       "id": "new-20260923-38dd1689264215d3",
       "brand": "On",
-      "name": "Men's Cloudpulse 2 Obsidian | Black",
+      "name": "Cloudpulse 2 - obsidian black",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-c06735878df2c968",
-      "brand": "On",
-      "name": "Cloudpulse 2",
-      "reason": "re-release-launched-2026-02-20"
     },
     {
       "id": "new-20260923-74bbd85e62bfa501",
       "brand": "On",
-      "name": "Men's Cloudrunner 3 Sailor | Ivory",
+      "name": "Cloudrunner 3 - platinum squash",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-bcc7642d99e3c2c6",
       "brand": "On",
-      "name": "Men's Cloudrunner 3 Sailor | Ivory",
+      "name": "Cloudrunner 3 - sailor ivory",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-378fc67072eecdf2",
       "brand": "On",
-      "name": "Men's Cloudrunner 3 Sailor | Ivory",
+      "name": "Cloudrunner 3 - tin iceberg",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-6d895b161fbc0fc5",
       "brand": "On",
-      "name": "Men's Cloudrunner 3 Sailor | Ivory",
+      "name": "Cloudrunner 3 - black black",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-38c22ddc3fac2660",
       "brand": "On",
-      "name": "Men's Cloudrunner 3 Sailor | Ivory",
+      "name": "Cloudrunner 3 - linen ivory",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-db0054df40a15359",
       "brand": "On",
-      "name": "Men's Cloudrunner 3 Sailor | Ivory",
+      "name": "Cloudrunner 3 - ivory robin",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-43d1f51df8fb4fe6",
       "brand": "On",
-      "name": "Men's Cloudswift 4 Alloy | Glacier",
+      "name": "Cloudswift 4 - eclipse ember",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-212b16cb54406e40",
       "brand": "On",
-      "name": "Men's Cloudhorizon 2 Waterproof Rock | Alloy",
+      "name": "Cloudhorizon 2 Wp - graphite pebble",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-8efcb591598d4a78",
       "brand": "On",
-      "name": "Men's Cloudhorizon 2 Winter | Grain",
+      "name": "Cloudhorizon 2 - graphite eclipse",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-4570aa240903972a",
-      "brand": "On",
-      "name": "Cloudhorizon 2",
-      "reason": "re-release-launched-2026-03-31"
-    },
-    {
-      "id": "new-20260923-87d13df1f96932e6",
-      "brand": "On",
-      "name": "Cloud 6 Geo Waterproof",
-      "reason": "re-release-launched-2026-02-20"
     },
     {
       "id": "new-20260923-41cd2c762eb90c7b",
       "brand": "On",
-      "name": "Men's Cloudpulse Next Rock | Eclipse",
+      "name": "Cloudpulse Next - rock eclipse",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-3d1b45adb078fa1e",
       "brand": "On",
-      "name": "Women's Cloud 6 Wide White | White",
+      "name": "Cloud 6 Wide - pearl white",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-ba52595ed49757b7",
       "brand": "On",
-      "name": "Men's Cloudsoma White | White",
+      "name": "Cloudsoma - urchin agave",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-104f75f6744fec4d",
-      "brand": "On",
-      "name": "Cloudsoma",
-      "reason": "re-release-launched-2026-03-16"
     },
     {
       "id": "new-20260923-4ef609dae6788023",
       "brand": "On",
-      "name": "Men's Cloudsoma White | White",
+      "name": "Cloudsoma - sandstone tangerine",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-790a4b4d528e2438",
       "brand": "On",
-      "name": "Men's Cloudsurfer Max Dust | Ivory",
+      "name": "Cloudsurfer Max - dust ivory",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-3d83a7b323c9a46c",
       "brand": "On",
-      "name": "Men's Cloudsurfer Max Dust | Ivory",
+      "name": "Cloudsurfer Max - sienna dew",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-a10fd40302192d21",
       "brand": "On",
-      "name": "Men's Cloudsurfer Max Dust | Ivory",
+      "name": "Cloudsurfer Max - wolf sailor",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-31980c2fac7a9bcf",
       "brand": "On",
-      "name": "Men's Cloudrunner 3 Waterproof Black | Black",
+      "name": "Cloudrunner 3 Wp - pollen haze",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-ee52b3caa2a5a16a",
       "brand": "On",
-      "name": "Men's Cloudvista 3 Black | Black",
+      "name": "Cloudvista 3 - brume acacia",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-aeecbb2c3bc1e058",
       "brand": "On",
-      "name": "Men's Cloudmonster 3 Wolf | Wolf",
+      "name": "Cloudmonster 3 - alloy glacier",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-aaf1c7ea97901eaa",
       "brand": "On",
-      "name": "Men's Cloudmonster 3 Wolf | Wolf",
+      "name": "Cloudmonster 3 - black black",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-47df1e8ee1708e95",
       "brand": "On",
-      "name": "Men's Cloudmonster 3 Wolf | Wolf",
+      "name": "Cloudmonster 3 - twilight white",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-a59a7245074f72f0",
-      "brand": "On",
-      "name": "Cloudflow 5 AD",
-      "reason": "re-release-launched-2026-02-20"
     },
     {
       "id": "new-20260923-7ccdc02d68d77e23",
       "brand": "On",
-      "name": "Cloudleap Black | White",
+      "name": "Cloudleap - black eclipse",
       "reason": "product-verification-required"
     },
     {
       "id": "new-20260923-719aa9935c660361",
       "brand": "On",
-      "name": "Women's Cloudtilt Moon Winter | Kasha",
+      "name": "Cloudtilt Moon - white frost",
       "reason": "product-verification-required"
     },
     {
@@ -5796,13 +5544,13 @@
       "id": "new-20260923-1049f09652f2cd2f",
       "brand": "Zegna",
       "name": "Dark Brown Leather and Suede Triple Stitch™ Monte Sneakers",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "new-20260923-6340902a8a48bef1",
       "brand": "Zegna",
       "name": "Black Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "new-20260923-2542835d36b11388",
@@ -5832,12 +5580,6 @@
       "id": "new-20260923-db4cea5d465db0e7",
       "brand": "Dior",
       "name": "Dior Qixi Dior Saltwind Sneaker Multicolor Dior Oblique Pastel Jacquard E02",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-c16f1ba3f51338db",
-      "brand": "Golden Goose",
-      "name": "Ball Star Donna in nappa con stella e talloncino glitter argento",
       "reason": "product-verification-required"
     },
     {
@@ -10218,7 +9960,7 @@
       "id": "live-a09de951e6a34626",
       "brand": "ROA",
       "name": "Fedaia Clog",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-1cf0cfd56db12135",
@@ -10269,27 +10011,13 @@
       "reason": "release-day-evidence-required"
     },
     {
-      "id": "live-6e36fbd575c32c53",
-      "brand": "On",
-      "name": "Cloudhorizon 2 Waterproof",
-      "reason": "re-release-launched-2026-03-31"
-    },
-    {
-      "id": "live-54e29bf1bffc246c",
-      "brand": "On",
-      "name": "Cloudhorizon 2",
-      "reason": "re-release-launched-2026-03-31"
-    },
-    {
-      "id": "live-73dfe16cab9a83e3",
-      "brand": "On",
-      "name": "Cloudswift 4",
-      "reason": "re-release-launched-2025-03-03"
+      "id": "live-fb518061bb0db473",
+      "reason": "duplicate-product-color"
     },
     {
       "id": "live-f28198fe31fdbd9a",
       "brand": "On",
-      "name": "New color Cloudhorizon 2 Waterproof Men – Hiking, walking, trails, wet-weather hiking",
+      "name": "Cloudhorizon 2 Wp - graphite pebble",
       "reason": "product-verification-required"
     },
     {
@@ -10517,6 +10245,10 @@
       "reason": "product-verification-required"
     },
     {
+      "id": "live-f85bdb1fa2340b4b",
+      "reason": "duplicate-product-color"
+    },
+    {
       "id": "live-b7c38e01ff16564f",
       "brand": "Balenciaga",
       "name": "black hydra mary jane sneaker",
@@ -10567,31 +10299,19 @@
     {
       "id": "live-cacdefe36308f0ec",
       "brand": "On",
-      "name": "Bestseller Cloudrunner 3 Everyday running, stable ride",
+      "name": "Cloudrunner 3 - white ivory",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "live-fcc27c2cac826acc",
-      "brand": "On",
-      "name": "Cloudultra 3",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "live-9133099b8e8e842a",
-      "brand": "On",
-      "name": "Cloudaway 2",
-      "reason": "re-release-launched-2026-02-20"
     },
     {
       "id": "live-f4a37b306be5b322",
       "brand": "On",
-      "name": "New color Cloudsurfer Youth Youth – Running, 8-12 year olds",
+      "name": "Cloudsurfer Youth - black riviera",
       "reason": "kids-sizing"
     },
     {
       "id": "live-5feeb3a91e19bbde",
       "brand": "On",
-      "name": "New color Cloudrunner 3 Women – Everyday running, stable ride",
+      "name": "Cloudrunner 3 - agave mistletoe",
       "reason": "product-verification-required"
     },
     {
@@ -11443,55 +11163,55 @@
     {
       "id": "live-3b108527b618ceee",
       "brand": "On",
-      "name": "New color Climate Zip Hoodie Women – Cool weather running",
+      "name": "Climate Zip Hoodie",
       "reason": "not-footwear"
     },
     {
       "id": "live-672dbeccd1955c81",
       "brand": "On",
-      "name": "New Weather Hoodie Women – Cool weather performance running, training",
+      "name": "Weather Hoodie",
       "reason": "not-footwear"
     },
     {
       "id": "live-ef6913d881156e2d",
       "brand": "On",
-      "name": "New color Core Bra Women – Running, low-intensity workouts, light support",
+      "name": "Core Bra",
       "reason": "not-footwear"
     },
     {
       "id": "live-7cfb1c1dc078f5d0",
       "brand": "On",
-      "name": "New color Performance Crop Lumos Women – Reflective elements, anytime performance running",
+      "name": "Performance Crop Lumos",
       "reason": "not-footwear"
     },
     {
       "id": "live-14f5d00667b33927",
       "brand": "On",
-      "name": "New color Performance Long-T Lumos Women – Reflective elements, anytime performance running",
+      "name": "Performance Long T Lumos",
       "reason": "not-footwear"
     },
     {
       "id": "live-57df83734d16a305",
       "brand": "On",
-      "name": "New Performance Tights Lumos Women – Reflective elements, anytime performance running",
+      "name": "Performance Tights Lumos",
       "reason": "not-footwear"
     },
     {
       "id": "live-8890affe220ecbaa",
       "brand": "On",
-      "name": "New color Core-T Women – Lightweight, versatile, running",
+      "name": "Core T",
       "reason": "not-footwear"
     },
     {
       "id": "live-d42c15c41bcb89e3",
       "brand": "On",
-      "name": "New color Performance Long-T Lumos Men – Reflective elements, anytime performance running",
+      "name": "Performance Long T Lumos",
       "reason": "not-footwear"
     },
     {
       "id": "live-afef077d97cb0da6",
       "brand": "On",
-      "name": "New color Core-T Men – Lightweight, versatile, running",
+      "name": "Core T",
       "reason": "not-footwear"
     },
     {
@@ -11594,31 +11314,49 @@
       "id": "live-c4384c332e376b60",
       "brand": "Arc'teryx",
       "name": "Vertex Speed Shoe Men's Hybrid shoe for vertical technical mountain runs  (19)",
-      "reason": "hybrid-review-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-1546c94c2aaa5fda",
       "brand": "Arc'teryx",
       "name": "Vertex Speed Low Shoe Men's Low-profile shoe for vertical technical mountain runs  (36)",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-088e0e7551073d11",
       "brand": "Arc'teryx",
       "name": "Kragg Aura Shoe Men's Ventilated pull-on shoe for approaches and recovery  (14)",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-d016520f0b809ca5",
       "brand": "Arc'teryx",
       "name": "Norvan LD 4 Shoe Men's Adaptable, long-distance mountain running shoe  (119)",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "live-97bc8426e94c0498",
+      "brand": "Arc'teryx",
+      "name": "Norvan LD 4 GTX Shoe Men's Adaptable, waterproof mountain running shoe",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "live-1f1d45e5e5a154b2",
+      "brand": "Arc'teryx",
+      "name": "Revised Kragg Shoe Men's Pull-on shoe for approaches and recovery",
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-87b730a63f15bd72",
       "brand": "Arc'teryx",
       "name": "Sylan 2 Shoe Men's Propulsive trail running shoe for confident speed  (90)",
-      "reason": "product-verification-required"
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "live-dab1b2c095183a21",
+      "brand": "Arc'teryx",
+      "name": "New Kopec 2 Low GTX Shoe Men's Lightweight yet sturdy shoe for day hikes",
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "live-533a8738a5d09f54",
@@ -12155,12 +11893,6 @@
       "reason": "hybrid-review-required"
     },
     {
-      "id": "arrival-f61c08d4e0fa7918f486",
-      "brand": "Balenciaga",
-      "name": "track trail laces sneaker",
-      "reason": "re-release-launched-2026-07-06"
-    },
-    {
       "id": "arrival-14c1cc25b80878d18ec4",
       "brand": "Nike",
       "name": "Air Jordan 1 High OG \"Royal\"",
@@ -12187,19 +11919,19 @@
     {
       "id": "arrival-7d35e226807bfaa46955",
       "brand": "On",
-      "name": "Image 373: On Weather Jacket Insulated Brume & Hare Women – Performance running, outdoor, trail running Jackets",
+      "name": "Weather Jacket Insulated",
       "reason": "not-footwear"
     },
     {
       "id": "arrival-a6e40e415ae3aec7f48a",
       "brand": "On",
-      "name": "Image 410: On Trail-T Solar Brume Women – Trail running, UPF40+, warm and sunny weather running Trail running Tops and t-shirts",
+      "name": "Trail T Solar",
       "reason": "not-footwear"
     },
     {
       "id": "arrival-ed77755b36cf4082da1c",
       "brand": "On",
-      "name": "Image 410: On Weather Jacket Insulated Brume & Hare Men – Performance running, outdoor, trail running Jackets",
+      "name": "Weather Jacket Insulated",
       "reason": "not-footwear"
     },
     {
@@ -12447,6 +12179,22 @@
       "brand": "Balenciaga",
       "name": "Women's Cropped Peacoat in Navy",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-f462f04d3201d7694c23",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-a0a3795c3c99526552ad",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-5fb112044e905878f44e",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-e4b9bb7ef5b9e756625a",
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-4f3f5b2c3b31d6334282",
@@ -13327,12 +13075,6 @@
       "reason": "not-footwear"
     },
     {
-      "id": "arrival-a300e0c1fe6926d86584",
-      "brand": "On",
-      "name": "Cloudnova 2",
-      "reason": "re-release-launched-2025-03-19"
-    },
-    {
       "id": "arrival-e321c3b3a847a8bddb71",
       "brand": "FILA",
       "name": "1911 여성 니트트랙 집업",
@@ -13385,12 +13127,6 @@
       "brand": "FILA",
       "name": "푸퍼 미니 토트백",
       "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-15b9f4f5f1040555f344",
-      "brand": "On",
-      "name": "Cloudrunner 3",
-      "reason": "re-release-launched-2026-03-12"
     },
     {
       "id": "arrival-26d678c3976d9e729bf7",
@@ -13853,12 +13589,6 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-221840c170637a5292b5",
-      "brand": "On",
-      "name": "Cloud X Tempo",
-      "reason": "re-release-launched-2026-07-20"
-    },
-    {
       "id": "arrival-0546be3a881eb16b8758",
       "brand": "FILA",
       "name": "마이크로플리스 아노락",
@@ -14135,19 +13865,19 @@
     {
       "id": "arrival-d66e0f22b40e38c6b9b6",
       "brand": "Converse",
-      "name": "![Image 132: Chuck Taylor All Star EVA Lift Platform Cherry Blossoms Black/White/Black](//:0)",
+      "name": "Chuck Taylor All Star EVA Lift Platform Cherry Blossoms Black/White/Black",
       "reason": "kids-sizing"
     },
     {
       "id": "arrival-5c19075a8e2f1900926b",
       "brand": "Converse",
-      "name": "![Image 283: Chuck Taylor All Star EVA Lift Platform Velvet Bows Petal Pit/Black/White](//:0)",
+      "name": "Chuck Taylor All Star EVA Lift Platform Velvet Bows Petal Pit/Black/White",
       "reason": "kids-sizing"
     },
     {
       "id": "arrival-528640dab1276deea331",
       "brand": "Converse",
-      "name": "Image 175: Chuck Taylor All Star EVA Lift Platform Cherry Blossoms Black/White/Black",
+      "name": "Chuck Taylor All Star EVA Lift Platform Cherry Blossoms Black/White/Black",
       "reason": "kids-sizing"
     },
     {
@@ -14157,12 +13887,8 @@
     {
       "id": "arrival-d613cfcf6b3f8cd3ff0a",
       "brand": "Converse",
-      "name": "Image 195: Chuck Taylor All Star EVA Lift Platform Velvet Bows Petal Pit/Black/White",
+      "name": "Chuck Taylor All Star EVA Lift Platform Velvet Bows Petal Pit/Black/White",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "arrival-e0f9d9cdc16df008accf",
-      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-b92ead0e3b119b7f82b4",
@@ -14173,92 +13899,46 @@
       "reason": "duplicate-product-color"
     },
     {
-      "id": "arrival-a342d4e7fec463258c5d",
-      "reason": "duplicate-product-color"
-    },
-    {
       "id": "arrival-09425af46aae5ad7abd6",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-058acf07ade2be572e91",
-      "reason": "duplicate-product-color"
+      "brand": "23.65",
+      "name": "Image 2: AROA 스니커즈 1+1 프로모션",
+      "reason": "promotional-bundle-not-physical-variant"
     },
     {
       "id": "arrival-318d1bbaf0e8ae2ea1ca",
-      "reason": "duplicate-product-color"
+      "brand": "23.65",
+      "name": "Image 8: 너티 모카신 1+1",
+      "reason": "promotional-bundle-not-physical-variant"
     },
     {
       "id": "arrival-9d164d434b8c089cf52a",
-      "reason": "duplicate-product-color"
+      "brand": "23.65",
+      "name": "Image 26: AROA 스니커즈 1+1 프로모션",
+      "reason": "promotional-bundle-not-physical-variant"
     },
     {
       "id": "arrival-a8c79906fa29309ddff6",
-      "reason": "duplicate-product-color"
+      "brand": "23.65",
+      "name": "Image 28: CORE 스니커즈 1+1 프로모션",
+      "reason": "promotional-bundle-not-physical-variant"
     },
     {
-      "id": "arrival-c51e45bc23de44fad993",
-      "reason": "duplicate-product-color"
+      "id": "arrival-99903771b1a70a36b331",
+      "brand": "23.65",
+      "name": "Image 19: KIDNEY 1+1 - 일상의 가벼운 발걸음을 제안하는 편안한 라이프스타일 슈즈 제품 이미지",
+      "reason": "promotional-bundle-not-physical-variant"
     },
     {
       "id": "arrival-51bde25ac5c8f859ac5d",
-      "reason": "duplicate-product-color"
+      "brand": "23.65",
+      "name": "Image 8: KIDNEY 1+1 - 일상의 가벼운 발걸음을 제안하는 편안한 라이프스타일 슈즈 제품 이미지",
+      "reason": "promotional-bundle-not-physical-variant"
     },
     {
       "id": "arrival-a267d5011fb3aeae5dbb",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-5973e63b0e55654e6fde",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-0666a21312e049427e7a",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-7533c6bb52c1c16747df",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-dae573f6b39af92bf7b1",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-f5d4d8dd7166b9f89fbc",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-fb3e72b5aa0f60ead828",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-1a558541750dbef44d89",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-c3a759f85ec3aab74d9b",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-6ed229d0d1fe45df0a66",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-f0d503fd247f36c880d4",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-3847aaa64e250abce8d4",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-0497c50a3217ad78105e",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-c99eff1105c8fc2c1210",
-      "reason": "duplicate-product-color"
+      "brand": "23.65",
+      "name": "PIGLET 1+1 V3 스니커즈",
+      "reason": "promotional-bundle-not-physical-variant"
     },
     {
       "id": "arrival-b88422d213637671fb0e",
@@ -14363,6 +14043,12 @@
       "reason": "not-footwear"
     },
     {
+      "id": "arrival-0e6551e317818c184555",
+      "brand": "Off-White",
+      "name": "![Image 172: OFF WHITE Be Right Back Sneakers CREAM WHITE/NEO BLUE OF05750455](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "excluded-footwear"
+    },
+    {
       "id": "arrival-c68d3795041b0da1873d",
       "brand": "Off-White",
       "name": "End Of Play Sneakers",
@@ -14451,12 +14137,6 @@
       "brand": "The Row",
       "name": "Lowe Pant",
       "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-ac7d05b3287c53f5788d",
-      "brand": "On",
-      "name": "Cloudzone",
-      "reason": "re-release-launched-2025-07-25"
     },
     {
       "id": "arrival-38a035cedeb8ed4d25b7",
@@ -14755,192 +14435,6 @@
     {
       "id": "arrival-9e2513738c3d204b9967",
       "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-3871947d3b8a3b00a59b",
-      "brand": "On",
-      "name": "Cloudzone",
-      "reason": "re-release-launched-2025-07-25"
-    },
-    {
-      "id": "arrival-6f5748edc3adf2df2083",
-      "brand": "On",
-      "name": "Cloud X Tempo",
-      "reason": "re-release-launched-2026-07-20"
-    },
-    {
-      "id": "arrival-0ebb26b3ab70701d0de1",
-      "brand": "On",
-      "name": "Cloudswift 4 AD",
-      "reason": "re-release-launched-2025-05-23"
-    },
-    {
-      "id": "arrival-faebc6121cd42bd1b47d",
-      "brand": "On",
-      "name": "Cloudzone Moon",
-      "reason": "re-release-launched-2025-08-07"
-    },
-    {
-      "id": "arrival-e102067b8b833fd0907e",
-      "brand": "On",
-      "name": "Cloudsurfer Max",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "arrival-b38a870fb48c82ef1088",
-      "brand": "On",
-      "name": "Cloudsurfer Max",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "arrival-e9e1f17f618ebe6b638c",
-      "brand": "On",
-      "name": "Cloudtilt",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "arrival-803e1bd59bf8545c7fe6",
-      "brand": "On",
-      "name": "Cloudrock Low Waterproof",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "arrival-6624856a4d588b2b4374",
-      "brand": "On",
-      "name": "Cloudmonster 1",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "arrival-c57288677a16d991a458",
-      "brand": "On",
-      "name": "Cloudsurfer Next",
-      "reason": "re-release-launched-2025-03-19"
-    },
-    {
-      "id": "arrival-4ccec24e6e08aec91148",
-      "brand": "On",
-      "name": "Cloudswift Amp",
-      "reason": "re-release-launched-2026-04-10"
-    },
-    {
-      "id": "arrival-6adf48a2b8f59e226ada",
-      "brand": "On",
-      "name": "Cloudtilt Remix",
-      "reason": "re-release-launched-2026-03-12"
-    },
-    {
-      "id": "arrival-030a74550d90a5ad8e46",
-      "brand": "On",
-      "name": "Cloudtilt Moon",
-      "reason": "re-release-launched-2025-09-12"
-    },
-    {
-      "id": "arrival-cb61431ba11af0fde62a",
-      "brand": "On",
-      "name": "Cloudmonster 1",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "arrival-f5c431a7fda01c950f5e",
-      "brand": "On",
-      "name": "Cloudmonster Void",
-      "reason": "re-release-launched-2025-03-19"
-    },
-    {
-      "id": "arrival-a38555c95eedbb94df9d",
-      "brand": "On",
-      "name": "Cloudswift 4 AD",
-      "reason": "re-release-launched-2025-05-23"
-    },
-    {
-      "id": "arrival-3597f7c652818d7a0889",
-      "brand": "On",
-      "name": "Cloudnova 2",
-      "reason": "re-release-launched-2025-03-19"
-    },
-    {
-      "id": "arrival-34596aac97fc3f375b26",
-      "brand": "On",
-      "name": "Cloudswift Amp",
-      "reason": "re-release-launched-2026-04-10"
-    },
-    {
-      "id": "arrival-1e2a11447d18a6ef59b2",
-      "brand": "On",
-      "name": "Cloudboom Max",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "arrival-d6d9a070ea864faddb41",
-      "brand": "On",
-      "name": "Cloudmonster 3 Hyper",
-      "reason": "re-release-launched-2026-07-20"
-    },
-    {
-      "id": "arrival-4e54729e052c4440c21c",
-      "brand": "On",
-      "name": "Cloudultra 3",
-      "reason": "re-release-launched-2026-02-20"
-    },
-    {
-      "id": "arrival-7a278de54d5de74807ab",
-      "brand": "On",
-      "name": "Cloudultra Peak",
-      "reason": "re-release-launched-2026-07-20"
-    },
-    {
-      "id": "arrival-9ad7740f0992d6fac36c",
-      "brand": "On",
-      "name": "Cloudflow 5",
-      "reason": "re-release-launched-2025-07-25"
-    },
-    {
-      "id": "arrival-9c4b8140fe7b6c5cc075",
-      "brand": "On",
-      "name": "Cloudflow 5",
-      "reason": "re-release-launched-2025-07-25"
-    },
-    {
-      "id": "arrival-a533f04f9b5e1804315c",
-      "brand": "On",
-      "name": "Cloudultra Peak",
-      "reason": "re-release-launched-2026-07-20"
-    },
-    {
-      "id": "arrival-7f1999531a0aaeb98a83",
-      "brand": "On",
-      "name": "Cloudsurfer Next",
-      "reason": "re-release-launched-2025-03-19"
-    },
-    {
-      "id": "arrival-1837b0f52f3e91c45f3b",
-      "brand": "On",
-      "name": "Cloudmonster 2",
-      "reason": "re-release-launched-2025-03-19"
-    },
-    {
-      "id": "arrival-6183ad042ae889ecbd11",
-      "brand": "On",
-      "name": "Cloudmonster 2",
-      "reason": "re-release-launched-2025-03-19"
-    },
-    {
-      "id": "arrival-17b8ff3158be8acd992b",
-      "brand": "On",
-      "name": "Cloudsoma Hike",
-      "reason": "re-release-launched-2026-07-16"
-    },
-    {
-      "id": "arrival-5400dfb919b034d49fcb",
-      "brand": "On",
-      "name": "Cloudsoma Hike",
-      "reason": "re-release-launched-2026-07-16"
-    },
-    {
-      "id": "arrival-c6da120dbe1972fdeeea",
-      "brand": "On",
-      "name": "Cloudhorizon 2 Waterproof",
-      "reason": "re-release-launched-2026-03-31"
     },
     {
       "id": "arrival-75b231153c7ac6c1abda",
@@ -16393,8 +15887,118 @@
       "reason": "duplicate-product-color"
     },
     {
-      "id": "arrival-d8576d1e6da275a70400",
-      "reason": "duplicate-product-color"
+      "id": "arrival-17f4e244aadc72937216",
+      "brand": "Arc'teryx",
+      "name": "Kragg Mid Shoe Women's Pull-on mid-height approach shoe for cool weather",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-0db08785458920947b2f",
+      "brand": "Arc'teryx",
+      "name": "New Kragg Mid Shoe Men's Pull-on mid-height approach shoe for cool weather",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-d5b51d219ff96a23c279",
+      "brand": "Arc'teryx",
+      "name": "Kopec 2 Low GTX Shoe Women's Lightweight yet sturdy shoe for day hikes",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-d56fe740bdeea0af71a5",
+      "brand": "Arc'teryx",
+      "name": "Norvan LD 4 GTX Shoe Women's Adaptable, waterproof mountain running shoe",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-01b21aada6a3f63e07e4",
+      "brand": "Arc'teryx",
+      "name": "Norvan LD 4 Shoe Women's Adaptable, long-distance mountain running shoe",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-367b9e35d7cda162de9e",
+      "brand": "Arc'teryx",
+      "name": "Sylan 2 Shoe Women's Propulsive trail running shoe for confident speed",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-1bab28a30a4bf255e015",
+      "brand": "Arc'teryx",
+      "name": "Kragg Shoe Women's Pull-on shoe for approaches and recovery",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-741c1ea8974bdb80fa75",
+      "brand": "Arc'teryx",
+      "name": "Konseal Shoe Women's Sturdy approach shoe for rugged, technical terrain",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-cf393d66c4dc77c2d5c5",
+      "brand": "Arc'teryx",
+      "name": "Konseal GTX Shoe Women's Waterproof approach shoe for rugged, technical terrain",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-5acdf25f214f1558cd2e",
+      "brand": "Arc'teryx",
+      "name": "Norvan 4 Nivalis GTX Shoe Women's Adaptable mountain running shoe for winter",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-19df0fc920363b2e669c",
+      "brand": "Arc'teryx",
+      "name": "Kragg Aura Shoe Women's Ventilated pull-on shoe for approaches and recovery",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-1bd7d353ecbc7babf73e",
+      "brand": "Arc'teryx",
+      "name": "Vertex Speed Low Shoe Women's Low-profile shoe for vertical technical mountain runs",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-73c76e65070a00dddb0c",
+      "brand": "Arc'teryx",
+      "name": "Norvan LD 4 Shoe Men's Adaptable, long-distance mountain running shoe",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-c59686b69c91c727647a",
+      "brand": "Arc'teryx",
+      "name": "Sylan 2 Shoe Men's Propulsive trail running shoe for confident speed",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-511115734fa7f1058eb8",
+      "brand": "Arc'teryx",
+      "name": "Konseal Shoe Men's Sturdy approach shoe for rugged, technical terrain",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-c3d114df4bb48c7c04ca",
+      "brand": "Arc'teryx",
+      "name": "Konseal GTX Shoe Men's Waterproof approach shoe for rugged, technical terrain",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-f97152999780a8636641",
+      "brand": "Arc'teryx",
+      "name": "Norvan 4 Nivalis GTX Shoe Men's Adaptable mountain running shoe for winter",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-1887109061d0c6255044",
+      "brand": "Arc'teryx",
+      "name": "Kragg Aura Shoe Men's Ventilated pull-on shoe for approaches and recovery",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-f15b9ae392343a9806be",
+      "brand": "Arc'teryx",
+      "name": "Vertex Speed Low Shoe Men's Low-profile shoe for vertical technical mountain runs",
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-2b995d9d2fde03ec085f",
@@ -16403,6 +16007,12 @@
     {
       "id": "arrival-82166f50788fbbdc900f",
       "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-94a5d9dd72299fb1cb5a",
+      "brand": "Off-White",
+      "name": "![Image 141: OFF WHITE Be Right Back Sneakers CREAM WHITE/NEO BLUE OF05750455](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "excluded-footwear"
     },
     {
       "id": "arrival-d45c63bda5e9eceb18ca",
@@ -16459,6 +16069,14 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-dd06118e2197129a50c4",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-9eabd4053f185ebdd0a0",
+      "reason": "duplicate-product-color"
+    },
+    {
       "id": "arrival-1ea63d6e74479c8fd133",
       "reason": "duplicate-product-color"
     },
@@ -16480,6 +16098,18 @@
     },
     {
       "id": "arrival-e274557c829a77111946",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-a9aa0c1899e293bab496",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-97c9f9aff7592c461382",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-376ea2e8849a39222e18",
       "reason": "duplicate-product-color"
     },
     {
@@ -17410,7 +17040,7 @@
       "id": "arrival-a5d70a1ef78da281950a",
       "brand": "ROA",
       "name": "Aair Floweave Running Cap",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-bf6f6684d11616da5067",
@@ -17422,7 +17052,7 @@
       "id": "arrival-d4dc61ef57e34761b3fb",
       "brand": "ROA",
       "name": "Helder 5 Inch 2-in-1 Running Shorts",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-835d287a11d753e58d7f",
@@ -17434,7 +17064,7 @@
       "id": "arrival-cbedc44947d2adfd41b2",
       "brand": "ROA",
       "name": "Helder 5 Inch 2-in-1 Running Shorts",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-84905d66882c99fb0bfd",
@@ -17446,7 +17076,7 @@
       "id": "arrival-71582b3a394f5292a25e",
       "brand": "ROA",
       "name": "Gator Running Cap",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-7360c189bcca401a23f5",
@@ -17458,25 +17088,25 @@
       "id": "arrival-3faf006fbc3bba8c507e",
       "brand": "ROA",
       "name": "Gator Running Cap",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-31e85e564725275eda3b",
       "brand": "ROA",
       "name": "Aair Floweave Running Cap",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-278d007ef3bb0551ad0b",
       "brand": "ROA",
       "name": "Shida Running Jacket",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-c86f585c2f0bb5a3941b",
       "brand": "ROA",
       "name": "Helder 5 Inch 2-in-1 Running Shorts",
-      "reason": "kids-sizing"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-8e8d899868b8b3a64046",
@@ -17500,13 +17130,25 @@
       "id": "arrival-fd0ad060f0480f0611a9",
       "brand": "Arc'teryx",
       "name": "Incendia One Piece Women's",
-      "reason": "footwear-type-unverified"
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-bdaa0f339ae9a66c9071",
       "brand": "Merrell",
       "name": "Big Kid's Ridge Trek",
       "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-7f8e5892b512fd521dbc",
+      "brand": "Arc'teryx",
+      "name": "Rush Bib Pant Women's",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-5462719ae7eda37ad226",
+      "brand": "Arc'teryx",
+      "name": "Sentinel Pant Women's",
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-a47667d44309252062c5",
@@ -18475,10 +18117,6 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-a2373b6c8fce63532b30",
-      "reason": "duplicate-product-color"
-    },
-    {
       "id": "arrival-20818c641f816abbbba2",
       "brand": "Chanel",
       "name": "ROUGE COCO HYDRA GLOSS Hydrating and Smoothing High-Shine Lipgloss",
@@ -18489,10 +18127,6 @@
       "brand": "Lanvin",
       "name": "FITTED MIDI DRESS IN SATIN",
       "reason": "not-footwear"
-    },
-    {
-      "id": "arrival-23cfb0bdb8f99b9dc12b",
-      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-9404491c202ba8244179",
@@ -18519,10 +18153,6 @@
       "reason": "not-footwear"
     },
     {
-      "id": "arrival-5c0763d423607831f9ad",
-      "reason": "duplicate-product-color"
-    },
-    {
       "id": "arrival-d9396c67853f2b2f958f",
       "brand": "Lanvin",
       "name": "VINYL STRAIGHT SKIRT WITH CUT-OUTS",
@@ -18545,10 +18175,6 @@
       "brand": "Off-White",
       "name": "Off Stamp Balloon Dress",
       "reason": "not-footwear"
-    },
-    {
-      "id": "arrival-6a3fd97e8c0a47cfc417",
-      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-af846ade9cdcb4d7c2b1",
@@ -18581,38 +18207,10 @@
       "reason": "not-footwear"
     },
     {
-      "id": "arrival-f6548b4b703ea4e0e41a",
-      "reason": "duplicate-product-color"
-    },
-    {
       "id": "arrival-46f0f9e4b28fb64152e0",
       "brand": "Lanvin",
       "name": "MIDNIGHT STEP MULE IN PONY",
       "reason": "hybrid-review-required"
-    },
-    {
-      "id": "arrival-9aca73a1428b80103164",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-149da32c76e4993a0422",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-ddcbfb7aa09330e5c5c7",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-47b4d8aef3841c2c8e8e",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-3ea26b3ad39964a3dc44",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-3fb707743ed97209a5bd",
-      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-e3c7e687dcc3eb50a52f",
@@ -18667,6 +18265,246 @@
       "brand": "Loro Piana",
       "name": "Nantucket Walk Sneaker Cotton",
       "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-12429b67d90ca05d6a29",
+      "brand": "Zegna",
+      "name": "White Suede 232 Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-59058bed6390e1cd9fec",
+      "brand": "Zegna",
+      "name": "Grey Mélange Suede 232 Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-d2b296d451fb0f49e784",
+      "brand": "Zegna",
+      "name": "Dark Olive Green Suede 232 Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-6c25aaaade06938a4774",
+      "brand": "Zegna",
+      "name": "Dark Brown 232 Suede Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-f8d37e4cdc669c749916",
+      "brand": "Zegna",
+      "name": "Dark Beige Suede 232 Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-2cb538d721a77946bb1e",
+      "brand": "Zegna",
+      "name": "White Leather 232 Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-c75d9ab4acc8f62fa22e",
+      "brand": "Zegna",
+      "name": "Dark Brown Suede Triple Stitch™ Vetta Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-df53540ccd9d863e01d1",
+      "brand": "Zegna",
+      "name": "Grey Suede Triple Stitch™ Vetta Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-b635953e7fe40dde23a3",
+      "brand": "Zegna",
+      "name": "Dark Foliage Suede Triple Stitch™ Vetta Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-dcb0dfb80d13dabea8b2",
+      "brand": "Zegna",
+      "name": "Navy Blue Suede Triple Stitch™ Vetta Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-d7192d6cb90d5a72641f",
+      "brand": "Zegna",
+      "name": "Brown Suede Triple Stitch™ Vetta Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-24d2c51d5e9016f6d763",
+      "brand": "Zegna",
+      "name": "Black Leather Triple Stitch™ Vetta Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-def0c2868fb54f86ccdf",
+      "brand": "Zegna",
+      "name": "Dark Brown Leather Triple Stitch™ Vetta Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-11407fee09ca945f92a4",
+      "brand": "Zegna",
+      "name": "Black Leather Triple Stitch™ Vetta Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-78973251c38a5ba2082e",
+      "brand": "Zegna",
+      "name": "Dark Olive Green Triple Stitch™ Monte SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-555830b9e03150937e53",
+      "brand": "Zegna",
+      "name": "Black Leather Triple Stitch™ Monte Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-4e17bd1f9da41ab53c38",
+      "brand": "Zegna",
+      "name": "Grey Mélange Leather and Suede Triple Stitch™ Monte Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-4dba5e258fa3308c1496",
+      "brand": "Zegna",
+      "name": "Dark Beige Leather and Suede Triple Stitch™ Monte Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-9b9bcbabb95a07fe43ab",
+      "brand": "Zegna",
+      "name": "Dark Olive Green Leather and Suede Triple Stitch™ Monte Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-ce75d73c010b66e68ddf",
+      "brand": "Zegna",
+      "name": "Dark Brown Leather and Suede Triple Stitch™ Monte Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-8e24c959c90c26fc2003",
+      "brand": "Zegna",
+      "name": "Navy Blue Leather and Suede Triple Stitch™ Monte Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-02169a9a5b11a6a3bc3c",
+      "brand": "Zegna",
+      "name": "Light Taupe Leather and Suede Triple Stitch™ Monte Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-2733a6c09aafb83b72ad",
+      "brand": "Zegna",
+      "name": "Black Leather Triple Stitch™ Monte Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-b22161bab5164a7b38ff",
+      "brand": "Zegna",
+      "name": "Dark Orange Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-70436c04c6ad7fecf974",
+      "brand": "Zegna",
+      "name": "Dark Olive Green Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-ce70f7e6d2195ec252ec",
+      "brand": "Zegna",
+      "name": "Light Blue Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-866c2b7ffbb9c7dc9c81",
+      "brand": "Zegna",
+      "name": "Grey Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-581f27f8942156a92bbb",
+      "brand": "Zegna",
+      "name": "Brown Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-8768df7332722ec4e055",
+      "brand": "Zegna",
+      "name": "Black Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-e8f4d658be10e5fa2cb9",
+      "brand": "Zegna",
+      "name": "Light Brown Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-887523808687ed1fc9e6",
+      "brand": "Zegna",
+      "name": "Dark Olive Green Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-c79fd41ef2ce5dd856d9",
+      "brand": "Zegna",
+      "name": "Grey Mélange Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-473a413997118470c711",
+      "brand": "Zegna",
+      "name": "Blue Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-4c0936829d977527be55",
+      "brand": "Zegna",
+      "name": "Light Green Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-07bc33f45f2b7e6f3775",
+      "brand": "Zegna",
+      "name": "Dark Brown Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-4578187eb6186588fc43",
+      "brand": "Zegna",
+      "name": "White Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-fc0008d2683802c43221",
+      "brand": "Zegna",
+      "name": "Blue Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-b4ba1080959c8d1661e0",
+      "brand": "Zegna",
+      "name": "Black Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-88320c12f15078568839",
+      "brand": "Zegna",
+      "name": "Light Taupe Triple Stitch™ SECONDSKIN Sneakers",
+      "reason": "brand-excluded-or-unverified"
+    },
+    {
+      "id": "arrival-da379ff3b5a9d286f515",
+      "brand": "Zegna",
+      "name": "Dark Olive Green Leather 232 Sneakers",
+      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "arrival-6f17ca43dbdaaf717c1b",
@@ -18771,6 +18609,14 @@
       "reason": "not-product-page"
     },
     {
+      "id": "arrival-9f6421c21300289c2297",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-3fa7c640e7a342583534",
+      "reason": "duplicate-product-color"
+    },
+    {
       "id": "arrival-856f84cb441008029508",
       "reason": "duplicate-product-color"
     },
@@ -18800,50 +18646,6 @@
     },
     {
       "id": "arrival-09e19dcc1f107ec2e3dc",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "amiri-dac233086f351d6f4e17",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "amiri-8ad1a59e187e348ff545",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "amiri-ea994b604bcc5fb450a0",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "amiri-cca65a6d414ae14fe0d9",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "amiri-235dcf1d6a9c95b974fc",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "amiri-935985e22dcee5fe8818",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "amiri-e259fe620405cfdc8d41",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "amiri-9057d058340bdcd9a2b0",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "amiri-cc29af128f13d01dbdef",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "amiri-7fddba5969d78ee20dc4",
-      "reason": "duplicate-product-color"
-    },
-    {
-      "id": "arrival-0bab34a306b7467f822f",
       "reason": "duplicate-product-color"
     },
     {
@@ -18919,28 +18721,40 @@
       "reason": "excluded-footwear"
     },
     {
-      "id": "mihara-7498-1",
-      "brand": "Maison Mihara Yasuhiro",
-      "name": "Spike Sole Sneaker Sandals",
-      "reason": "hybrid-review-required"
+      "id": "arrival-8a7fae2ada7620bd2981",
+      "brand": "Maison Margiela",
+      "name": "Shoes",
+      "reason": "not-product-page"
     },
     {
-      "id": "mihara-7498-16",
-      "brand": "Maison Mihara Yasuhiro",
-      "name": "Spike Sole Sneaker Sandals",
-      "reason": "hybrid-review-required"
+      "id": "arrival-72c60add1322373d4658",
+      "brand": "Maison Margiela",
+      "name": "슈즈",
+      "reason": "not-product-page"
     },
     {
-      "id": "mihara-7498-40",
-      "brand": "Maison Mihara Yasuhiro",
-      "name": "Spike Sole Sneaker Sandals",
-      "reason": "hybrid-review-required"
+      "id": "arrival-b0d2d346a4e4d96771c5",
+      "brand": "Louis Vuitton",
+      "name": "Vivienne Sneaker Charms Set",
+      "reason": "not-footwear-accessory"
     },
     {
-      "id": "mihara-7498-77",
-      "brand": "Maison Mihara Yasuhiro",
-      "name": "Spike Sole Sneaker Sandals",
-      "reason": "hybrid-review-required"
+      "id": "arrival-2458fc8a265d7b1b680a",
+      "brand": "Louis Vuitton",
+      "name": "Vivienne Sneaker Charms Set",
+      "reason": "not-footwear-accessory"
+    },
+    {
+      "id": "arrival-ad646f8dd07fc82c9684",
+      "brand": "Louis Vuitton",
+      "name": "Blooming Pearl Sneaker Chain",
+      "reason": "not-footwear-accessory"
+    },
+    {
+      "id": "arrival-9e39639ed5a02e1465c0",
+      "brand": "Louis Vuitton",
+      "name": "Floragram Mix Sneaker Charms",
+      "reason": "not-footwear-accessory"
     },
     {
       "id": "arrival-14410c0b4466b5b90943",
@@ -19339,6 +19153,12 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-5c0763d423607831f9ad",
+      "brand": "AMIRI",
+      "name": "Crystal MA-1",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-14f0b988ed3a8f5939ce",
       "brand": "Brooks",
       "name": "Ghost 18",
@@ -19729,6 +19549,12 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-6a3fd97e8c0a47cfc417",
+      "brand": "AMIRI",
+      "name": "Metallic M-tech",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-0b56dbe12e1a2ae4a740",
       "brand": "Onitsuka Tiger",
       "name": "MEXICO 66",
@@ -19921,6 +19747,18 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-f6548b4b703ea4e0e41a",
+      "brand": "AMIRI",
+      "name": "Python Embossed MA Skyline",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-9aca73a1428b80103164",
+      "brand": "AMIRI",
+      "name": "Python Embossed MA Skyline",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-d539b7e82d33e85b24d6",
       "brand": "Onitsuka Tiger",
       "name": "SERRANO",
@@ -20005,6 +19843,18 @@
       "reason": "shared-representative-photo"
     },
     {
+      "id": "arrival-a2373b6c8fce63532b30",
+      "brand": "AMIRI",
+      "name": "Stars Court Low",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-23cfb0bdb8f99b9dc12b",
+      "brand": "AMIRI",
+      "name": "Stars Court Low",
+      "reason": "shared-representative-photo"
+    },
+    {
       "id": "arrival-119d34cbfe696c1cfd41",
       "brand": "Melissa",
       "name": "Sun Capri Platform",
@@ -20020,6 +19870,12 @@
       "id": "arrival-d7331f4cdd173d02c3a1",
       "brand": "Melissa",
       "name": "Sun Capri Platform",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-ddcbfb7aa09330e5c5c7",
+      "brand": "AMIRI",
+      "name": "Women's Glitter Stars Court Low",
       "reason": "shared-representative-photo"
     },
     {
@@ -20056,6 +19912,18 @@
       "id": "arrival-8f089bde6fb31cf0d729",
       "brand": "OOFOS",
       "name": "Women's Lace-Up Shoe",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-47b4d8aef3841c2c8e8e",
+      "brand": "AMIRI",
+      "name": "Women's Metallic M-tech",
+      "reason": "shared-representative-photo"
+    },
+    {
+      "id": "arrival-149da32c76e4993a0422",
+      "brand": "AMIRI",
+      "name": "Women's Python Embossed Coastline",
       "reason": "shared-representative-photo"
     },
     {
@@ -20503,14 +20371,6 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "live-fb518061bb0db473",
-      "brand": "On",
-      "name": "Cloudvista 3 Waterproof",
-      "colorway": "Black",
-      "reason": "duplicate-product-url",
-      "url": "https://on.com/en-us/products/cloudvista-3-waterproof-m-3mg3025/mens/silver-ore-shoes-3MG30255317"
-    },
-    {
       "id": "live-b5099d442efd6b71",
       "brand": "Dior",
       "name": "Dior Ribbon Sneaker White and Beige Suede Calfskin",
@@ -20551,132 +20411,36 @@
       "url": "https://saucony.com/en/progrid-v2-mule/61289U.html"
     },
     {
-      "id": "arrival-de0f158b88ca986b0298",
-      "brand": "Converse",
-      "name": "![Image 124: Chuck Taylor Throwback Archive Leaf Camo Blonde Espresso/Olive Android](//:0)",
+      "id": "arrival-34afafec1d703a04f4b1",
+      "brand": "Alexander McQueen",
+      "name": "Men's Oversized Sneaker in Black",
       "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck Taylor Throwback Archive Leaf Camo Blonde Espresso/Olive Android",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw5c7b9fe9/images/a_08/A22299C_A_08X1.jpg?sw=406&strip=false"
+      "sharedWith": "오버사이즈 스니커즈",
+      "image": "https://amq-mcq.dam.kering.com/asset/e3c6691c-a20e-4e8e-a4fe-9542cbc5e453/eCom/A00BPXWIAMR1000_F.jpg?v=1"
     },
     {
-      "id": "arrival-f9616eee74994d83b70f",
-      "brand": "Converse",
-      "name": "![Image 144: Chuck Taylor All Star Lift Platform Silver Studs Black/Vintage White/Black](//:0)",
+      "id": "arrival-e0bdb873ee633daaf027",
+      "brand": "Alexander McQueen",
+      "name": "오버사이즈 스니커즈",
       "reason": "photo-shared-across-models",
-      "sharedWith": "![Image 135: Chuck Taylor All Star Lift Platform Silver Studs Black/Vintage White/Black](//:0)",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw3dfa6e04/images/a_08/A24144C_A_08X1.jpg?sw=406&strip=false"
+      "sharedWith": "Women's Oversized Sneaker in White/Black",
+      "image": "https://amq-mcq.dam.kering.com/asset/d1ff6814-75a9-4c27-a8af-4ec5ec60fb6e/eCom/A00BPWWIAMR9061_F.jpg?v=5"
     },
     {
-      "id": "arrival-cd7b5db7801e6ea0a262",
-      "brand": "Converse",
-      "name": "![Image 151: Chuck Taylor All Star Cherry Blossoms Cold Touch/White/Brick Snack](//:0)",
+      "id": "arrival-e1d37f98ebd7eb2538c2",
+      "brand": "Alexander McQueen",
+      "name": "오버사이즈 스니커즈",
       "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck Taylor All Star Cherry Blossoms Cold Touch/White/Brick Snack",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwcbcc58ad/images/a_08/A24133C_A_08X1.jpg?sw=406&strip=false"
+      "sharedWith": "Women's Oversized Sneaker in White/Gold",
+      "image": "https://amq-mcq.dam.kering.com/asset/f1c49ad5-2832-4b90-ac81-76c54706b749/eCom/553770WIAMO9091_F.jpg?v=8"
     },
     {
-      "id": "arrival-d9ca83189be858582ea1",
-      "brand": "Converse",
-      "name": "![Image 216: Chuck Taylor All Star Canvas Black](//:0)",
+      "id": "arrival-1e203f842eb9443800ac",
+      "brand": "Alexander McQueen",
+      "name": "오버사이즈 스니커즈",
       "reason": "photo-shared-across-models",
-      "sharedWith": "![Image 155: Chuck Taylor All Star Canvas Black](//:0)",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwf3842d4f/images/a_08/M9166C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-baccbfc4d4e745f9f6ba",
-      "brand": "Converse",
-      "name": "![Image 163: Chuck Taylor All Star Deep Bordeaux/Vintage White](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck Taylor All Star Deep Bordeaux/Vintage White",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw82fad589/images/a_08/A24146C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-62d15f1f482099673b79",
-      "brand": "Converse",
-      "name": "![Image 163: Chuck Taylor Throwback Heavy Duty Obsidian/Obsidian/Obsidian](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck Taylor Throwback Heavy Duty Obsidian/Obsidian/Obsidian",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwfaa1c955/images/a_08/A23941C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-ec8de27875fc5648794e",
-      "brand": "Converse",
-      "name": "![Image 172: Chuck Taylor All Star Velvet Ruffle Deep Bordeaux/Vintage White](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck Taylor All Star Velvet Ruffle Deep Bordeaux/Vintage White",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw3e5a0fb1/images/a_08/A24148C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-818b954907bdb214722b",
-      "brand": "Converse",
-      "name": "![Image 173: Chuck Taylor Throwback Heavy Duty Natural Linen/Natural Linen](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck Taylor Throwback Heavy Duty Natural Linen/Natural Linen",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw8231053e/images/a_08/A23948C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-367c114f81247fc12233",
-      "brand": "Converse",
-      "name": "![Image 182: Chuck Taylor All Star Partywear Steely Pine/Vintage White](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck Taylor All Star Partywear Steely Pine/Vintage White",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw11a90776/images/a_08/A24801C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-afb6719096a277bb80f1",
-      "brand": "Converse",
-      "name": "![Image 227: Chuck Taylor Throwback Distressed Studs Black/Silver/White](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck Taylor Throwback Distressed Studs Black/Silver/White",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw60b4acc7/images/a_08/A24088C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-b4909bd851e6393bc797",
-      "brand": "Converse",
-      "name": "![Image 236: Chuck Taylor Throwback Distressed Studs Black/Silver/White](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck Taylor Throwback Distressed Studs Black/Silver/White",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw7393343b/images/a_08/A24089C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-ec7b1f64f2c18f6c3948",
-      "brand": "Converse",
-      "name": "![Image 268: Chuck Taylor All Star Cherry Blossoms Light Grey/White/Black](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck Taylor All Star Cherry Blossoms Light Grey/White/Black",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw93bb2a4c/images/a_08/A24135C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-5857915917e9574d0eec",
-      "brand": "Converse",
-      "name": "![Image 280: Converse x Hello Kitty® and Friends Chuck Taylor All Star Lift Double Stack My Melody™ & Kuromi™ White/Pink/Purple](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Converse x Hello Kitty® and Friends Chuck Taylor All Star Lift Double Stack My Melody™ & Kuromi™ White/Pink/Purple",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw05f2cfba/images/a_08/A21835C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-e9911f0b08f4de2fd5bc",
-      "brand": "Converse",
-      "name": "![Image 289: Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™ & Kuromi™ Black/White/Brown](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™ & Kuromi™ Black/White/Brown",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwd7023fa8/images/a_08/A24938C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-f488dc466eda9611ffe2",
-      "brand": "Converse",
-      "name": "![Image 290: Chuck 70 GORE-TEX Hairy Suede Rusted Bolt/Rusted Bolt/Black](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Chuck 70 GORE-TEX Hairy Suede Rusted Bolt/Rusted Bolt/Black",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwaa3de08d/images/a_08/A20525C_A_08X1.jpg?sw=406&strip=false"
-    },
-    {
-      "id": "arrival-3382f01b444591a38eed",
-      "brand": "Converse",
-      "name": "![Image 305: Converse x Hello Kitty® and Friends Chuck 70 My Melody™ & Kuromi™ Black/Egret/Brown](//:0)",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Converse x Hello Kitty® and Friends Chuck 70 My Melody™ & Kuromi™ Black/Egret/Brown",
-      "image": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw581f8396/images/a_08/A21834C_A_08X1.jpg?sw=406&strip=false"
+      "sharedWith": "Women's Oversized Sneaker in White/Red",
+      "image": "https://amq-mcq.dam.kering.com/asset/842b454e-8d6a-4d5f-82e9-8d5816b24c0b/eCom/A00BOAWIAMM9165_F.jpg?v=2"
     },
     {
       "id": "arrival-b2fde47c2ef48f154455",
@@ -20693,6 +20457,14 @@
       "reason": "photo-shared-across-models",
       "sharedWith": "ALO Sunset Sneaker",
       "image": "https://cdn.shopify.com/s/files/1/2185/2813/files/assets_aa96744e7fe74e2a90d22918299c1f1d_945ee81d107449348da7f44c34f9ffa5.jpg?v=1790099131"
+    },
+    {
+      "id": "live-7bd61ae367a5879e",
+      "brand": "The Row",
+      "name": "Clement Sneakers",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Clement 스니커즈",
+      "image": "https://cdn.shopify.com/s/files/1/0552/0313/5593/files/F1863L1032MDWG.jpg?v=1781475506"
     },
     {
       "id": "arrival-28a8e9491268540327e1",

@@ -304,9 +304,13 @@ const sportCue = /\b(?:midsole|outsole|insole|cushion\w*|mesh|knit upper|upper|r
 // the page's own furniture ("Use arrow keys to pan, + and - to zoom").
 const urlWords = url => { try { return decodeURIComponent(String(url || '')).replace(/[?#].*$/, '').replace(/[^\p{L}\p{N}]+/gu, ' '); } catch { return String(url || '').replace(/[^\p{L}\p{N}]+/gu, ' '); } };
 export function classifyFootwear(p) {
+  if(/\b(?:shoe|sneaker)[ -](?:charms?|chains?|laces?)\b|\b(?:charms?|chains?)\s+for\s+(?:sneakers?|shoes?)\b/i.test(p.name||''))return {reason:'not-footwear'};
+  if(p.styleType==='official-product-id'&&!p.manufacturerStyle&&/\b1\s*\+\s*1\b|\b(?:shoe|sneaker) bundle\b/i.test(p.name||''))return {reason:'promotional-bundle-not-physical-variant'};
   // A sneaker recommendation inside an accessory/editorial page is not that
   // page's product. The shop's explicit URL department outranks stray text.
   try { const path=decodeURIComponent(new URL(p.url).pathname);
+    if(p.brand==='Maison Margiela'&&/\/(?:shoes|슈즈|sneakers)\/?$/i.test(path))return {reason:'not-product-page'};
+    if(p.brand==='Off-White'&&/(?:^|[-/])(?:boots?|booties?|booty)(?:[-/]|$)/i.test(path))return {reason:'excluded-footwear'};
     if(p.brand==='Golden Goose'&&/-cod-GUZ\d/i.test(path))return {reason:'not-footwear'};
     if(/\/(?:stories|editorial|magazine)\//i.test(path))return {reason:'not-product-page'};
     if(/miharayasuhiro\.jp$/.test(new URL(p.url).hostname)&&path==='/products/list.php')return {reason:'not-product-page'};
@@ -324,8 +328,12 @@ export function classifyFootwear(p) {
   if(/パンプス|スリングバック|ハイヒール|革靴|高跟|皮鞋|(?:^|[\s/])힐(?:[\s/]|$)/.test(title))return {reason:'excluded-footwear'};
   const path = urlWords(p.url);
   const adultLouisJunior=p.brand==='Christian Louboutin'&&/\bLouis\s+Junior\b/i.test(p.name||'')&&(/\b(?:Men|Women)\b/i.test(p.name||'')||/^(?:Men|Women)$/i.test(p.gender||''))&&p.officialProductEvidence?.verified===true&&isOfficialProductUrl(p.brand,p.url);
+  // "Kid" is this adult Hermès model's name, confirmed by its official
+  // Women/Men > Sneakers breadcrumb. An actual Kids department never qualifies.
+  const adultHermesKid=p.brand==='Hermès'&&/^Kid sneakers?$/i.test(String(p.name||'').trim())&&p.arrivalEvidence?.verified===true&&isOfficialProductUrl(p.brand,p.arrivalEvidence.url)&&/\/category\/(?:women|men)\/shoes\/sneakers\//.test(p.arrivalEvidence.url)&&p.officialProductEvidence?.verified===true;
   const sizingText=`${title} ${p.description||''} ${path}`;
-  if(kids.test(adultLouisJunior?sizingText.replace(/\blouis junior\b/gi,'Louis'):sizingText))return {reason:'kids-sizing'};
+  const ageText=adultLouisJunior?sizingText.replace(/\blouis junior\b/gi,'Louis'):adultHermesKid?sizingText.replace(/\bkid(?=[ -]sneaker\b)/gi,'Model'):sizingText;
+  if(kids.test(ageText))return {reason:'kids-sizing'};
   // Read from the name and the shop's own category only - never the
   // description, which is where the boilerplate lives.
   const filed = `${p.name || ''} ${p.officialCategory || ''} ${p.category || ''} ${p.productType || ''} ${path}`;
@@ -341,8 +349,10 @@ export function classifyFootwear(p) {
   const reviewedJelly=review?.approved===true&&review.type==='jelly'&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url)&&review.flatSole===true;
   if(/goadome/i.test(title)&&!p.hybridReview?.approved)return {reason:'hybrid-review-required'};
   const reviewedSneakerHybrid=p.hybridReview?.approved===true&&p.hybridReview.sneakerSole===true&&p.hybridReview.url===p.url&&isOfficialProductUrl(p.brand,p.url);
+  const wedgeRunner=p.officialProductEvidence?.verified===true&&isOfficialProductUrl(p.brand,p.url)&&/\bwedge runner\b/i.test(p.name||'')&&sneakerStructure.test(p.description||'');
+  const exclusionTitle=`${title} ${p.category||''} ${p.productType||''}`;
   const exclusionDescription=reviewedSneakerHybrid?String(p.description||'').replace(/\bballet flats?\b/gi,''):p.description||'';
-  if (excluded.test(`${title} ${p.category||''} ${p.productType||''}`) || performance.test(title) || /\b(?:oxford shoes?|derby shoes|ballet flats?|high[ -]heeled|stilettos?|slingbacks?|(?:kitten|block|wedge) heels?|dress sandals?)\b|슬링백|하이힐|정장 구두/i.test(exclusionDescription)) return { reason: 'excluded-footwear' };
+  if (excluded.test(wedgeRunner?exclusionTitle.replace(/\bwedge(?=\s+runner\b)/gi,'Platform'):exclusionTitle) || performance.test(title) || /\b(?:oxford shoes?|derby shoes|ballet flats?|high[ -]heeled|stilettos?|slingbacks?|(?:kitten|block|wedge) heels?|dress sandals?)\b|슬링백|하이힐|정장 구두/i.test(exclusionDescription)) return { reason: 'excluded-footwear' };
   // Jelly names alone (for example Jellyfish) are not proof of jelly construction.
   if (/\bjelly\b|젤리/i.test(title)||reviewedJelly) {
     if (!reviewedJelly&&!/\b(?:pvc|tpu|melflex|jelly upper|jelly material|jelly construction)\b|젤리 소재/i.test(context))return {reason:'jelly-structure-unverified'};
@@ -645,8 +655,12 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   const declared = String(raw.colorway || '').trim();
   const colorway = (PAGE_FURNITURE.test(declared) ? '' : declared)
     || colorwayFromName(cleanName) || colorwayFromStyleSlug(raw.style, cleanName);
+  const modelEvidence=raw.modelNameEvidence;
+  const boundModelName=modelEvidence?.verified===true&&modelEvidence.brand===brand&&modelEvidence.style===raw.style&&modelEvidence.url===raw.url&&modelEvidence.image===raw.image&&modelEvidence.modelName===raw.modelName&&modelEvidence.sourceUrl===raw.arrivalEvidence?.url&&modelEvidence.contentHash===raw.arrivalEvidence?.contentHash;
   const product = { id: raw.id, brand, name: cleanName, category: type.category, productType: type.category, fitReasons: fit.fitReasons,
     modelKey:raw.modelGroup||`${key(brand)}|${key(String(raw.name).split(/ — | – /)[0])}`,
+    ...(boundModelName?{modelName:raw.modelName,modelNameEvidence:modelEvidence}:{}),
+    ...(raw.colorEvidence?.method?.startsWith('official-')&&isOfficialProductUrl(brand,raw.colorEvidence.url)?{colorEvidence:raw.colorEvidence}:{}),
     releaseDate: raw.releaseDate||'', releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release?.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),
     ...(arrival||maisonShelf?{arrivalEvidence:raw.arrivalEvidence}:{}),...(observed?{observedArrivalAt:observedArrivalDay(raw)}:{}),...(raw.firstPublishedAt?{firstPublishedAt:raw.firstPublishedAt}:{}),
     url: raw.url, image: raw.image, style: raw.style || '',...(raw.styleType==='official-product-id'?{styleType:raw.styleType}:{}),...(raw.manufacturerStyle?{manufacturerStyle:raw.manufacturerStyle}:{}),...(raw.productVariantId?{productVariantId:raw.productVariantId}:{}),colorway, colors: raw.colors || [],

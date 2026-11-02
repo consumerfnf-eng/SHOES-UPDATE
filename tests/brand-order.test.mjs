@@ -36,9 +36,9 @@ test('every house named for LUX reads as LUX, preserving the original order and 
   const named = ['Louis Vuitton','Dior','Balenciaga','Prada','Gucci','Celine','Saint Laurent',
     'Hermès','Chanel','Miu Miu','Alexander McQueen','Fendi','Valentino Garavani','Givenchy',
     'Maison Margiela','Bottega Veneta','Loewe','Lanvin','Rick Owens','Jil Sander','Off-White',
-    'AMIRI','Loro Piana','Brunello Cucinelli','Zegna','Moncler','The Row','Golden Goose',
+    'AMIRI','Loro Piana','Brunello Cucinelli','Moncler','The Row','Golden Goose',
     'Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry','PANE','ALOHAS',
-    'Goyard','Burberry','Versace','Balmain','Ferragamo','Jimmy Choo','Christian Louboutin',
+    'Burberry','Versace','Balmain','Ferragamo','Jimmy Choo','Christian Louboutin',
     'MCM','Coach','Tory Burch','Bally','Stella McCartney','Kenzo'];
   assert.deepEqual(BRAND_GROUPS[0].priority, named);
   for (const name of named) assert.equal(displayBrandGroup({name}), 'LUX', name);

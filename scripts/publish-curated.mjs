@@ -11,6 +11,8 @@ import {isPublishedFootwear} from '../public/assets/footwear-policy.mjs';
 import {publicationState} from '../public/assets/publication-window.mjs';
 import {variantGroupKey} from '../public/assets/catalog-view.mjs';
 import {kstDay} from './curation.mjs';
+import {repairSourceLabels} from './repair-source-labels.mjs';
+import {publicPublicationStatus} from './publication-status.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 
@@ -173,7 +175,7 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   const history=await readJson(historyFile,{schemaVersion:1,entries:{}});
   // Previous public rows are proof even in a fresh checkout; raw firstSeen is not.
   for(const p of prior.products||[])if(!history.entries[p.id])history.entries[p.id]={firstPublishedAt:p.firstPublishedAt||prior.publishedAt,brand:p.brand,style:p.style,url:p.url};
-  const products=applyReviewedEvidence(applyReviewedEvidence(mergePreserving(dropInlineImages(source.products),dropInlineImages(incoming)),evidence.products),socialPatches).map(p=>{
+  const products=applyReviewedEvidence(applyReviewedEvidence(mergePreserving(dropInlineImages(source.products),dropInlineImages(incoming)),evidence.products),socialPatches).map(repairSourceLabels).map(p=>{
     const {firstPublishedAt,...unpublished}=p;
     return history.entries[p.id]?{...p,firstPublishedAt:history.entries[p.id].firstPublishedAt}:unpublished;
   });
@@ -285,6 +287,7 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   await atomicJson(historyFile,history);
   await atomicJson(path.join(directory,'data/archive-queue.json'),result.queue);
   await atomicJson(path.join(directory,'data/curation-review.json'),result.review);
+  publicPublicationStatus(result.snapshot);
   // Public catalog is the last write: observers can only see a fully serialized snapshot.
   await atomicJson(path.join(directory,'public/data/catalog.json'),result.snapshot);
   return result;

@@ -30,6 +30,7 @@ from curl_cffi import requests as curl_requests
 
 from common import BROWSER_HEADERS, atomic_write_json, canonical_url, derive_colorway, kst_now, short_id
 from footwear_scope import classify
+from dedupe_rules import drop_excluded_brands, excluded_brand_keys
 from scrapingbee_client import ScrapingBeeClient
 
 CATEGORIES = [
@@ -184,7 +185,7 @@ def enrich_with_product_pages(items, bee, status):
     and creationDate is a real per-item date rather than a position in a sort.
     A page that fails to load just leaves that item as the listing had it.
     """
-    targets = items[:DETAIL_BUDGET]
+    targets = drop_excluded_brands(items, excluded_brand_keys())[:DETAIL_BUDGET]
     status['detailsRequested'] = len(targets)
     status['detailsFilled'] = 0
 

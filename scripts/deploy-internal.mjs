@@ -25,6 +25,7 @@ import {spawnSync} from 'node:child_process';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {prepareDeploymentAssets,removeDeploymentAssets} from './deployment-assets.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const PROJECT = process.env.INTERNAL_PAGES_PROJECT || 'shoes-update-internal';
@@ -67,8 +68,21 @@ if (!passwordIsSet(PROJECT)) {
 
 // A Pages project serves whatever is uploaded, so the upload is the whole
 // public/ folder - the same site, with the catwalk files present.
-const args = ['wrangler', 'pages', 'deploy', 'public',
+const staged=await prepareDeploymentAssets(path.join(root,'public'));
+// Compile the password middleware explicitly: the upload directory is temporary
+// and must never rely on Wrangler discovering a neighbouring functions folder.
+const worker=path.join(staged.directory,'_worker.js');
+const compiled=spawnSync('npx',['wrangler','pages','functions','build',path.join(root,'functions'),
+  '--outfile',worker,'--project-directory',root,'--build-output-directory',staged.directory],
+  {cwd:root,stdio:'inherit',shell:process.platform==='win32'});
+if(compiled.status!==0)throw Error('Internal password middleware compilation failed; upload cancelled');
+if(!(await fs.readFile(worker,'utf8')).includes('INTERNAL_SITE_PASSWORD'))throw Error('Password gate absent from compiled worker; upload cancelled');
+await fs.mkdir(path.join(root,'logs'),{recursive:true});
+await fs.writeFile(path.join(root,'logs/internal-assets-receipt.json'),JSON.stringify(staged.manifest,null,2)+'\n');
+console.log(`  serving ${staged.manifest.referencedPhotos} referenced photos; ${staged.manifest.unusedPhotosOmitted} unused cached files omitted from upload`);
+const args = ['wrangler', 'pages', 'deploy', staged.directory,
               '--project-name', PROJECT, '--branch', 'main', '--commit-dirty=true'];
 console.log(`\n> npx ${args.join(' ')}\n`);
 const run = spawnSync('npx', args, {cwd: root, stdio: 'inherit', shell: process.platform === 'win32'});
+if(run.status===0)await removeDeploymentAssets(staged.directory);
 process.exit(run.status ?? 1);

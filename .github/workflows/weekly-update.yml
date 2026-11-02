@@ -141,7 +141,7 @@ jobs:
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/product-identity-audit.json public/data/monthly-catalog.json data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json public/images
+          git add data/product-identity-audit.json public/data/monthly-catalog.json data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/catalog-ui.json data/card-thumbnails.json public/data/rank-boards.json public/images
           if ! git diff --cached --quiet; then
             git commit -m "${VERIFY_ONLY:+verification pass }${VERIFY_ONLY:-weekly curated }shoes update $(date -u +%F)"
             # main moves while this runs (the daily workflow, or a person
@@ -165,7 +165,7 @@ jobs:
             # the result does not depend on which commit won a text merge, and
             # re-running it is harmless. A conflict outside the generated
             # snapshot is a real one and still stops the run.
-            generated='data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json'
+            generated='data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/catalog-ui.json data/card-thumbnails.json public/data/rank-boards.json'
             cp logs/weekly-progress.json "$RUNNER_TEMP/weekly-progress.json"
             published=0
             for attempt in 1 2 3; do

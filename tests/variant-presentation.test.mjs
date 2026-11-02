@@ -208,8 +208,9 @@ test('the name and the code together only ever merge cards, never split one',()=
 });
 
 test('Golden Goose material and colour suffixes share the model code without merging different models',()=>{
- assert.equal(styleFamily({brand:'Golden Goose',style:'GWF00101.F009331.12606'}),'GWF00101');
- assert.equal(styleFamily({brand:'Golden Goose',style:'GWF00101.F009114.83522'}),'GWF00101');
- assert.notEqual(styleFamily({brand:'Golden Goose',style:'GWF00117.F009344.12615'}),'GWF00101');
+ assert.equal(styleFamily({brand:'Golden Goose',style:'GWF00101.F009331.12606'}),'GUF00101');
+ assert.equal(styleFamily({brand:'Golden Goose',style:'GWF00101.F009114.83522'}),'GUF00101');
+ assert.equal(styleFamily({brand:'Golden Goose',style:'GMF00101.F009331.12606'}),'GUF00101');
+ assert.notEqual(styleFamily({brand:'Golden Goose',style:'GWF00117.F009344.12615'}),'GUF00101');
  assert.equal(styleFamily({brand:'Nike',style:'GWF00101.F009331.12606'}),'');
 });

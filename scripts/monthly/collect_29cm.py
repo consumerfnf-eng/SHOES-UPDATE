@@ -31,6 +31,7 @@ from curl_cffi import requests as curl_requests
 
 from common import atomic_write_json, kst_now, kst_three_months_ago, short_id
 from footwear_scope import classify, is_stated_value, split_ko_listing_title
+from dedupe_rules import drop_excluded_brands, excluded_brand_keys
 
 API = 'https://search-api.29cm.co.kr/api/v4/products/category'
 PRODUCT_URL = 'https://www.29cm.co.kr/products/{}'
@@ -206,7 +207,7 @@ def enrich_with_details(items, status):
     "제품 주소재" is the retailer's own declared material rather than anything
     inferred from a title.
     """
-    targets = sorted(items, key=lambda i: i.get('listedAt') or '', reverse=True)[:DETAIL_BUDGET]
+    targets = sorted(drop_excluded_brands(items, excluded_brand_keys()), key=lambda i: i.get('listedAt') or '', reverse=True)[:DETAIL_BUDGET]
     outcome = {}
     status.update({'detailsRequested': len(targets), 'detailsFilled': 0,
                    'detailsPlaceholder': 0, 'detailsFailed': outcome})

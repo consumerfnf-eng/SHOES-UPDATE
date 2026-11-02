@@ -1,3 +1,4 @@
+import {isExcludedBrand} from './brand-exclusions.mjs';
 // Display categories only. Archive destinations continue to use the existing
 // sheet routing rules, independently of this two-group browsing layout.
 export const BRAND_GROUPS = [
@@ -7,10 +8,10 @@ export const BRAND_GROUPS = [
     'Louis Vuitton','Dior','Balenciaga','Prada','Gucci','Celine','Saint Laurent','Hermès',
     'Chanel','Miu Miu','Alexander McQueen','Fendi','Valentino Garavani','Givenchy',
     'Maison Margiela','Bottega Veneta','Loewe','Lanvin','Rick Owens','Jil Sander',
-    'Off-White','AMIRI','Loro Piana','Brunello Cucinelli','Zegna','Moncler','The Row',
+    'Off-White','AMIRI','Loro Piana','Brunello Cucinelli','Moncler','The Row',
     'Golden Goose','Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry','PANE',
     'ALOHAS',
-    "Goyard","Burberry","Versace","Balmain","Ferragamo","Jimmy Choo","Christian Louboutin","MCM","Coach","Tory Burch","Bally","Stella McCartney","Kenzo"
+    "Burberry","Versace","Balmain","Ferragamo","Jimmy Choo","Christian Louboutin","MCM","Coach","Tory Burch","Bally","Stella McCartney","Kenzo"
   ]},
   {name:'SPORTS', priority:['Rockfish Weatherwear','On','Cecilie Bahnsen','ASICS','FILA',
     'Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Onitsuka Tiger']}
@@ -30,7 +31,7 @@ export function displayBrandGroup(brand) {
 export function groupedBrands(brands) {
   return BRAND_GROUPS.map(group => {
     const priority = new Map(group.priority.map((name,i)=>[key(name),i]));
-    return {...group, brands:brands.filter(b=>displayBrandGroup(b)===group.name).sort((a,b)=>(priority.get(key(a.name))??Infinity)-(priority.get(key(b.name))??Infinity)||a.name.localeCompare(b.name,'en'))};
+    return {...group, brands:brands.filter(b=>!isExcludedBrand(b.name)&&displayBrandGroup(b)===group.name).sort((a,b)=>(priority.get(key(a.name))??Infinity)-(priority.get(key(b.name))??Infinity)||a.name.localeCompare(b.name,'en'))};
   });
 }
 

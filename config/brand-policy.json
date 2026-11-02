@@ -259,7 +259,7 @@
       "id": "arc-teryx",
       "name": "Arc'teryx",
       "group": "outdoor",
-      "policy": "core",
+      "policy": "exclude",
       "mandatory": false
     },
     {
@@ -294,7 +294,7 @@
       "id": "roa",
       "name": "ROA",
       "group": "outdoor",
-      "policy": "core",
+      "policy": "exclude",
       "mandatory": false
     },
     {
@@ -952,7 +952,7 @@
       "id": "zegna",
       "name": "Zegna",
       "group": "luxury",
-      "policy": "core",
+      "policy": "exclude",
       "mandatory": false,
       "scopeNote": "Triple Stitch is a standing sneaker line with its own category on zegna.com."
     },
@@ -1114,7 +1114,7 @@
       "id": "goyard",
       "name": "Goyard",
       "group": "luxury",
-      "policy": "core",
+      "policy": "exclude",
       "mandatory": false
     },
     {

@@ -18,7 +18,7 @@ import {fileURLToPath} from 'node:url';
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 const REVIEW = path.join(ROOT, 'data', 'curation-review.json');
 const CATALOG = path.join(ROOT, 'public', 'data', 'catalog.json');
-const OUT = path.join(ROOT, 'public', 'data', 'curation-summary.json');
+const OUT = path.join(ROOT, 'logs', 'curation-summary-private.json');
 
 // What a hold actually means, in the words a merchandiser would use. A reason
 // with no entry here is still counted and shown under its own code rather than
@@ -74,6 +74,7 @@ async function main() {
   if (!held) { console.error(`No curation queue at ${path.relative(ROOT, REVIEW)} - nothing to summarise.`); return 2; }
   const catalog = await fs.readFile(CATALOG, 'utf8').then(JSON.parse).catch(() => ({products: []}));
   const summary = summarise(held, catalog.products ?? []);
+  await fs.mkdir(path.dirname(OUT),{recursive:true});
   await fs.writeFile(OUT, JSON.stringify(summary) + '\n', 'utf8');
   const {totals} = summary;
   console.log(`held ${totals.held.toLocaleString()} · published ${totals.published.toLocaleString()} `

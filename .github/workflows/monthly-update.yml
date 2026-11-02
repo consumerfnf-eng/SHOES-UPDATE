@@ -76,6 +76,8 @@ jobs:
       # only ever grows stale.
       - name: Rebuild the colour vocabulary from what was collected
         run: python scripts/monthly/build_colour_words.py
+      - name: Validate the complete catalogue and rebuild current card renditions
+        run: npm run build
       - name: Run offline retail/newsletter tests before publishing
         run: python -m unittest discover -s tests -p 'test_monthly_*.py' -v
       # Written after both Sunday collections have published, so the figures
@@ -106,7 +108,7 @@ jobs:
           # image-signals.json is the photo-analysis cache and
           # model-first-listed.json is the re-release index: both only work
           # if they survive between runs, so they are committed too.
-          git add data/bally-regional-retail.json data/common-projects-retail.json data/product-photo-analysis.json data/product-identity-audit.json public/data/catalog.json public/images config/colour-words.json data/collection-history.json public/data/model-categories.json data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json data/trend-history.csv data/image-signals.json data/model-first-listed.json config/trend-seed-hashtags.json public/data/monthly-catalog.json public/data/trend-keywords.json
+          git add data/bally-regional-retail.json data/common-projects-retail.json data/product-photo-analysis.json data/product-identity-audit.json public/data/catalog.json public/data/catalog-ui.json data/card-thumbnails.json public/images config/colour-words.json data/collection-history.json public/data/model-categories.json data/monthly-catalog-source.json data/monthly-run-report.json data/monthly-unmatched-mentions.json data/trend-history.csv data/image-signals.json data/model-first-listed.json config/trend-seed-hashtags.json public/data/monthly-catalog.json public/data/trend-keywords.json
           if ! git diff --cached --quiet; then
             git commit -m "weekly retail/newsletter shoes update $(date -u +%F)"
             # See weekly-update.yml: main can move during a long collection,

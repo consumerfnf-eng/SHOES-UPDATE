@@ -696,6 +696,10 @@ def main():
         previous_payload, published_retail + published_newsletter, collected_by_source, cutoff_day)
     published_retail += [c for c in carried if str(c.get('source', '')).startswith('retail-')]
     published_newsletter += [c for c in carried if str(c.get('source', '')).startswith('newsletter-')]
+    # A cached prior payload must not reintroduce a brand removed this week,
+    # including before the photo downloader sees the carried records.
+    published_retail = drop_excluded_brands(published_retail, excluded)
+    published_newsletter = drop_excluded_brands(published_newsletter, excluded)
 
     # A retired source must not survive as carried-forward stock. Balardi was
     # removed because its "newest" listing is a re-release more often than

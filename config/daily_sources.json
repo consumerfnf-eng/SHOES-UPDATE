@@ -997,22 +997,6 @@
       "name": "Rick Owens Official sneakers (women)"
     }
   ],
-  "ROA": [
-    {
-      "name": "ROA Official daily source",
-      "url": "https://www.roa-hiking.com/collections/shoes",
-      "basis": "catalogue"
-    },
-    {
-      "name": "ROA Official daily source",
-      "url": "https://www.roa-hiking.com/"
-    },
-    {
-      "name": "ROA Official all products",
-      "url": "https://www.roa-hiking.com/collections/all-products?sort_by=created-descending",
-      "basis": "catalogue"
-    }
-  ],
   "Roger Vivier": [
     {
       "name": "Roger Vivier Official daily source",
@@ -1163,6 +1147,11 @@
       "name": "Tory Burch Official sneakers",
       "url": "https://www.toryburch.com/en-us/shoes/sneakers/",
       "basis": "assortment"
+    },
+    {
+      "name": "Tory Burch Official Korea sneakers",
+      "url": "https://www.toryburch.co.kr/public/display/category/2d/view?dspCtgryNo=TRYA24A04",
+      "basis": "assortment"
     }
   ],
   "Umbro": [
@@ -1280,31 +1269,6 @@
       "url": "https://www.theshopyohjiyamamoto.com/collections/new?sort_by=created-descending"
     }
   ],
-  "Zegna": [
-    {
-      "name": "Zegna Official daily source",
-      "url": "https://www.zegna.com/us-en/new-in/"
-    },
-    {
-      "name": "Zegna Official daily source",
-      "url": "https://www.zegna.com/"
-    },
-    {
-      "url": "https://www.zegna.com/us-en/shoes/sneakers/",
-      "name": "Zegna Official sneaker shelf",
-      "basis": "catalogue"
-    },
-    {
-      "url": "https://www.zegna.com/us-en/triple-stitch-sneakers/",
-      "name": "Zegna Official Triple Stitch collection",
-      "basis": "catalogue"
-    },
-    {
-      "url": "https://www.zegna.com/us-en/232-sneakers/",
-      "name": "Zegna Official 232 Sneaker collection",
-      "basis": "catalogue"
-    }
-  ],
   "adidas": [
     {
       "name": "adidas Official daily source",
@@ -1399,16 +1363,6 @@
     {
       "name": "Under Armour Official public source",
       "url": "https://www.underarmour.com/en-us/"
-    }
-  ],
-  "Arc'teryx": [
-    {
-      "name": "Arc'teryx Official public source",
-      "url": "https://arcteryx.com/us/en/c/mens/footwear/shoes"
-    },
-    {
-      "url": "https://arcteryx.com/us/en/c/womens/footwear/shoes",
-      "name": "Arc'teryx Official women's shoes"
     }
   ],
   "The North Face": [
@@ -1580,13 +1534,6 @@
     {
       "name": "Coach official regional entry",
       "url": "https://www.coach.com/",
-      "basis": "assortment"
-    }
-  ],
-  "Goyard": [
-    {
-      "name": "Goyard Official sneaker assortment",
-      "url": "https://www.goyard.com/kr_ko/",
       "basis": "assortment"
     }
   ]

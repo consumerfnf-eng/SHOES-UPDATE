@@ -86,8 +86,9 @@ def main():
     expansion=ROOT/'config/lux-brand-expansion.json'
     if expansion.exists():lux.update(json.loads(expansion.read_text(encoding='utf-8')).get('addedToLux',[]))
     rows={}
+    retail_ids={p['id'] for p in monthly['retail']}
     for p in catalog['products']+monthly['retail']:
-        if p in monthly['retail'] and p['brand'] not in lux and p.get('colorway') and not __import__('re').search(r'미표기|미확인|unknown|^image',p['colorway'],__import__('re').I):continue
+        if p['id'] in retail_ids and p['brand'] not in lux and p.get('colorway') and not __import__('re').search(r'미표기|미확인|unknown|^image',p['colorway'],__import__('re').I):continue
         url=(p.get('presentation') or {}).get('image') or p['image'];rows[url]=p
     def work(pair):
         url,p=pair

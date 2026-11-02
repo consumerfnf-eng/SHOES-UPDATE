@@ -3,6 +3,7 @@ import {createHash} from 'node:crypto';
 import {canonicalUrl,isOfficialProductUrl,classifyFootwear,officialHybridReview,officialEvidenceFor,kstDay} from './curation.mjs';
 import {isLuxuryMaison} from './luxury-shelves.mjs';
 import {assertReadableOfficial} from './official-reader.mjs';
+import {isExcludedBrand} from '../public/assets/brand-exclusions.mjs';
 
 const digest=s=>createHash('sha256').update(s).digest('hex');
 const clean=s=>{s=String(s||'');for(const m of markdownLinks(s).filter(l=>l.image).reverse())s=s.slice(0,m.start-1)+s.slice(m.end);return s.replace(/[\\*#\n]+/g,' ').replace(/\s+/g,' ').trim();};
@@ -122,7 +123,18 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence,ba
   }
   return [...rows.values()].filter(p=>classifyFootwear({...p,description:'',officialCategory:''}).reason!=='excluded-footwear');
 }
+// Facets are subsets of a shelf, not more pages. Following every size pair
+// produced hundreds of redundant requests and exhausted the verification time.
+function selectedListingFacets(raw){
+  const u=new URL(raw),out=[];
+  for(const [k,v]of u.searchParams){
+    if(/^(?:size|colou?r|width|material|gender)$/i.test(k)||/^filter\./i.test(k))out.push(k+'='+v);
+    if(/^prefn\d*$/i.test(k)&&/size|colou?r|width|material|gender/i.test(v))out.push(v+'='+u.searchParams.get(k.replace(/^prefn/i,'prefv')));
+  }
+  return out.sort().join('&');
+}
 export function listingFollowups(text,url,brand,sectionEvidence){
+  const facets=selectedListingFacets(url);
   const parentNew=isNewListing(url,text)||sectionEvidence?.kind==='new-arrivals-navigation';
   // A New page that is an editorial hub rather than a grid. Zegna's
   // /us-en/new-in/ is fifteen pages of campaign imagery whose only way
@@ -136,17 +148,18 @@ export function listingFollowups(text,url,brand,sectionEvidence){
       &&new URL(l.url).origin===new URL(url).origin;}catch{return false;}
   };
   const links=markdownLinks(text),result=links.filter(l=>!l.image&&isOfficialProductUrl(brand,l.url)&&!isProductLink(l.url)&&!isKidsListing(l.url)&&canonicalUrl(l.url)!==canonicalUrl(url))
+    .filter(l=>selectedListingFacets(l.url)===facets)
     .filter(l=>footwearFilter(l)||isNewListing(l.url)&&!/[?&](?:prefn|filter\.|srule=)/i.test(l.url)||/^(?:new|new arrivals?|new in(?: shoes)?|신상품|新作)$/i.test(clean(l.label))||/^(?:next|next page|load more|view more|다음|더 보기|次へ|\d+)$/i.test(clean(l.label))&&new URL(l.url).origin===new URL(url).origin)
     .map(l=>({url:l.url,name:clean(l.label)||'Official listing continuation',...(footwearFilter(l)||/^(?:new|new arrivals?|new in(?: shoes)?|신상품|新作)$/i.test(clean(l.label))?{sectionEvidence:{kind:'new-arrivals-navigation',url,targetUrl:l.url,contentHash:digest(text)}}:{})})).sort((a,b)=>Number(/sneaker|shoes|footwear/i.test(b.name))-Number(/sneaker|shoes|footwear/i.test(a.name)));
   const count=Number(text.match(/\b([\d,]+)\s+(?:products|items)\b/i)?.[1]?.replaceAll(',',''));
-  const ajax=links.find(l=>isNewListing(l.url)&&/\/searchajax\?/.test(l.url)&&new URL(l.url).searchParams.has('start'));
+  const ajax=links.find(l=>selectedListingFacets(l.url)===facets&&isNewListing(l.url)&&/\/searchajax\?/.test(l.url)&&new URL(l.url).searchParams.has('start'));
   if(count&&ajax){const next=new URL(ajax.url),size=Number(next.searchParams.get('sz'));const offset=Number(new URL(url).searchParams.get('start')||0)+size;if(size>0&&offset<count&&offset<2000){next.searchParams.set('start',String(offset));result.push({url:next.href,name:'Official New Arrivals next product page'});}}
   // Some stores print pagination as bare URLs, not Markdown anchors. Only
   // follow a page-number change on this exact shelf, never arbitrary links.
   for(const match of text.matchAll(/https:\/\/[^\s<>"\])]+/g)){
     try{
       const next=new URL(match[0].replaceAll('&amp;','&')),current=new URL(url);
-      if(next.origin!==current.origin||next.pathname!==current.pathname)continue;
+      if(next.origin!==current.origin||next.pathname!==current.pathname||selectedListingFacets(next.href)!==facets)continue;
       const page=['page','pageNumber','pagination','p'].find(k=>/^\d+$/.test(next.searchParams.get(k)||''));
       if(!page||Number(next.searchParams.get(page))<2||canonicalUrl(next.href)===canonicalUrl(url))continue;
       if(!result.some(r=>canonicalUrl(r.url)===canonicalUrl(next.href)))result.push({url:next.href,name:'Official listing next product page'});
@@ -166,7 +179,8 @@ export function listingProduct(candidate,checkedAt){
   const code=/^[A-Z0-9][A-Z0-9_.-]{4,}$/.test(last)?last:last.match(/(?:-p-|[-_])([A-Z0-9_]{7,})$/)?.[1]||'';
   let sku=['Prada','Miu Miu','Dior','Louis Vuitton','Gucci','ASICS'].includes(candidate.brand)?code.replace(/^ANA_/,''):'';
   if(candidate.brand==='New Balance')sku=[...new URL(candidate.url).searchParams].find(([k])=>/_style$/.test(k))?.[1]||'';
-  const style=sku||last,method='official-new-listing-sku-image';
+  const productNumber=new URL(candidate.url).searchParams.get('product_no');
+  const style=sku||productNumber||last,method='official-new-listing-sku-image';
   const p={id:`arrival-${digest(candidate.brand+'|'+canonicalUrl(candidate.url)).slice(0,20)}`,brand:candidate.brand,name:candidate.name,style,...(!sku?{styleType:'official-product-id'}:{}),url:candidate.url,image:chosen.url,
     description:candidate.cardDescription,colorway:colorLabel(chosen.alt,candidate.brand),colors:[],priceLabel:candidate.cardDescription?.match(/(?:[$€£₩¥]\s?[0-9,.]+|[0-9][0-9,.]*\s?(?:원|円|USD|EUR|GBP|KRW|JPY))/)?.[0]||'',
     country:region(candidate.url),firstSeen:checkedAt,productVerifiedAt:checkedAt,productEvidenceUrl:candidate.arrivalEvidence.url,
@@ -292,7 +306,8 @@ export function pageProduct(candidate,text,checkedAt,existing){
   const fromUrl=/^[A-Z0-9][A-Z0-9_.-]{4,}$/.test(last)?last:last.match(/(?:-p-|[-_])([A-Z0-9_.]{7,})$/)?.[1]||'';
   const variant=candidate.brand==='New Balance'?[...new URL(url).searchParams].find(([k])=>/_style$/.test(k))?.[1]:'';
   const verifiedVariant=variant&&body.toLowerCase().includes(variant.toLowerCase())?variant:'';
-  const style=verifiedVariant||fromUrl||code||last;
+  const productNumber=new URL(url).searchParams.get('product_no');
+  const style=verifiedVariant||fromUrl||code||productNumber||last;
   const styleType=verifiedVariant||code||fromUrl?undefined:'official-product-id';
   // LV's colour picker includes other variants' large photographs after the
   // heading. Only its current variant gallery before H1 is identity evidence.
@@ -337,6 +352,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
   }
   let discoveryCursor=0;
   async function discoverBrands(){while(discoveryCursor<brands.length){const brand=brands[discoveryCursor++];
+    if(isExcludedBrand(brand))continue;
     const full=catalogueBrands.includes(brand);
     const configured=(sources[brand]||[]).map(s=>full?{...s,basis:'assortment'}:s),queue=[...configured].sort((a,b)=>Number(isNewListing(b.url))-Number(isNewListing(a.url))),seen=new Set(),candidates=new Map();
     const status={brand,attempts:0,responses:0,listingPages:0,candidates:0,verified:0,errors:[],checkedAt,exhaustive:false};

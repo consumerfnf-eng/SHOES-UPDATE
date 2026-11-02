@@ -38,7 +38,7 @@ test('the collected brand list puts the maisons first',()=>{
     {name:'Dior',group:'luxury',policy:'mandatory',mandatory:true},
     {name:'Chloé',group:'luxury',policy:'conditional'},
   ]});
-  assert.deepEqual(list,['Autry','Zegna','Dior','Nike']);
+  assert.deepEqual(list,['Autry','Dior','Nike']);
 });
 
 test('a shop with an outlet cannot have its shelf taken whole',()=>{
@@ -65,20 +65,20 @@ test('the newest-first control is the same shelf reordered, not a different shel
 
 test('a determined shelf becomes a catalogue source, and an undetermined one is read newest first',()=>{
   const shelf='https://www.zegna.com/us-en/shoes/sneakers/';
-  const determined=luxuryShelfSources('Zegna',{basis:'current-season-only',shelves:[shelf],latest:{}});
+  const determined=luxuryShelfSources('Loro Piana',{basis:'current-season-only',shelves:[shelf],latest:{}});
   assert.equal(determined[0].basis,'catalogue');
   assert.equal(determined[0].url,shelf);
-  const undetermined=luxuryShelfSources('Zegna',{basis:'undetermined',shelves:[shelf],latest:{[shelf]:shelf+'?sort=new'}});
+  const undetermined=luxuryShelfSources('Loro Piana',{basis:'undetermined',shelves:[shelf],latest:{[shelf]:shelf+'?sort=new'}});
   assert.equal(undetermined[0].basis,'catalogue-latest');
   assert.equal(undetermined[0].url,shelf+'?sort=new');
   // Not a maison, nothing added - this rule is about shops with no New section.
   assert.deepEqual(luxuryShelfSources('Nike',{basis:'current-season-only',shelves:[shelf]}),[]);
   assert(isLuxuryMaison('Saint Laurent')&&isLuxuryMaison('Maison Margiela')&&!isLuxuryMaison('KEEN'));
-  const merged=withLuxuryShelves({Zegna:[{url:'https://www.zegna.com/us-en/new-in/'}]},
-    {brands:{Zegna:{basis:'current-season-only',shelves:[shelf],latest:{}}}});
-  assert.equal(merged.Zegna.length,2);
+  const merged=withLuxuryShelves({'Loro Piana':[{url:'https://www.zegna.com/us-en/new-in/'}]},
+    {brands:{'Loro Piana':{basis:'current-season-only',shelves:[shelf],latest:{}}}});
+  assert.equal(merged['Loro Piana'].length,2);
   // Folding it in twice does not add it twice.
-  assert.equal(withLuxuryShelves(merged,{brands:{Zegna:{basis:'current-season-only',shelves:[shelf],latest:{}}}}).Zegna.length,2);
+  assert.equal(withLuxuryShelves(merged,{brands:{'Loro Piana':{basis:'current-season-only',shelves:[shelf],latest:{}}}})['Loro Piana'].length,2);
 });
 
 test('a maison sneaker publishes on the shelf it stands on, with no product-page proof',()=>{
@@ -119,14 +119,10 @@ test('a kids shelf is a kids shelf whatever else the URL says',()=>{
     assert(!isKidsListing(url),url);
 });
 
-test("Arc'teryx files a product under /shop with its style number on the slug",async()=>{
-  const shelf="https://arcteryx.com/us/en/c/mens/footwear/shoes";
-  const run=await collectNewArrivals({sources:{"Arc'teryx":[{url:shelf,basis:'catalogue'}]},brands:["Arc'teryx"],now,log:()=>{},
-    read:async target=>target.endsWith(shelf)
-      ? `# Shoes\n[![Kragg Shoe](https://arcteryx.com/kragg.jpg) **Kragg Shoe** $190](https://arcteryx.com/shop/mens/kragg-shoe-0078)\n[Shoes](${shelf})`
-      : '# Kragg Shoe\nApproach shoe with a rubber outsole.'});
-  const arc=run.coverage.find(c=>c.brand==="Arc'teryx");
-  assert.equal(arc.candidates,1,'fifteen listing pages a week found none of these');
+test("retired Arc'teryx is skipped without a network read",async()=>{
+ let reads=0;
+ const run=await collectNewArrivals({sources:{"Arc'teryx":[{url:"https://arcteryx.com/us/en/c/mens/footwear/shoes",basis:'catalogue'}]},brands:["Arc'teryx"],now,log:()=>{},read:async()=>{reads++;throw Error('must not crawl');}});
+ assert.equal(reads,0);assert.equal(run.coverage.length,0);assert.equal(run.products.length,0);
 });
 
 test('a blocked page is not a page that had no new shoes',()=>{

@@ -5,6 +5,9 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {readJson,atomicJson,publishCurated} from './publish-curated.mjs';
 import {finalizeCatalogIdentity} from './finalize-catalog-identity.mjs';
+import {encodeCatalog,decodeCatalog} from '../public/assets/catalog-wire.mjs';
+import {publicPublicationStatus} from './publication-status.mjs';
+import assert from 'node:assert/strict';
 const root=new URL('../',import.meta.url),html=await fs.readFile(new URL('public/index.html',root),'utf8');
 if(Buffer.byteLength(html)>250000)throw Error('Public HTML must remain below 250 KB; crawler/data belongs outside UI.');
 if(/SEED_PRODUCTS|__MLB_RUN_SERVER|scheduleDaily\(|s\.jina\.ai|r\.jina\.ai|JINA_API_KEY/.test(html))throw Error('Collection runtime found in public page');
@@ -26,7 +29,7 @@ try {
 const publicRoot=fileURLToPath(new URL('public/',root));
 async function inspect(directory){for(const entry of await fs.readdir(directory,{withFileTypes:true})){
   const filename=path.join(directory,entry.name),relative=path.relative(publicRoot,filename).replaceAll('\\','/');
-  if(/(?:^|\/)(?:collector|internal|archive-audit|backups|\.env)(?:\/|$)|(?:catalog-source|archive-ledger|archive-report|archive-queue|curation-review)\.json$/.test(relative))throw Error('Private data under public: '+relative);
+  if(/(?:^|\/)(?:collector|internal|archive-audit|backups|\.env)(?:\/|$)|(?:catalog-source|archive-ledger|archive-report|archive-queue|curation-review|curation-summary)\.json$/.test(relative))throw Error('Private data under public: '+relative);
   if(entry.isDirectory()){await inspect(filename);continue;}
   if(!/\.(?:html|m?js|json|css)$/.test(entry.name))continue;
   const text=await fs.readFile(filename,'utf8');
@@ -50,6 +53,7 @@ if(missing.length){
 }
 await finalizeCatalogIdentity();
 catalog=JSON.parse(await fs.readFile(new URL('public/data/catalog.json',root),'utf8'));
+publicPublicationStatus(catalog);
 const monthly=await readJson(new URL('public/data/monthly-catalog.json',root),{retail:[]});
 for(const p of monthly.retail||[]){
   const cached=p.presentation?.cachedPath;if(!cached)continue;
@@ -68,5 +72,25 @@ for(const p of catalog.products){
   if(createHash('sha256').update(bytes).digest('hex')!==path.basename(cached).split('.')[0])throw Error('Official photo cache checksum mismatch: '+p.id);
 }
 const commit=process.env.CF_PAGES_COMMIT_SHA||execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
+execFileSync('python',['scripts/build-card-thumbnails.py'],{cwd:root,stdio:'inherit'});
+catalog=JSON.parse(await fs.readFile(new URL('public/data/catalog.json',root),'utf8'));
+publicPublicationStatus(catalog);
+await fs.writeFile(new URL('public/data/catalog.json',root),JSON.stringify(catalog)+'\n');
+const wire=encodeCatalog(catalog);
+assert.deepEqual(decodeCatalog(JSON.parse(JSON.stringify(wire))),catalog,'The delivered catalogue must preserve every product fact');
+await fs.writeFile(new URL('public/data/catalog-ui.json',root),JSON.stringify(wire)+'\n');
+// The canonical local JSON is retained for collectors. Direct Upload serves
+// its lossless wire representation at both catalogue URLs (see staging).
+for(const name of ['catalog-ui.json','monthly-catalog.json'])if((await fs.stat(new URL('public/data/'+name,root))).size>25*1024*1024)throw Error('Pages individual asset limit exceeded: '+name);
+const checkedRenditions=new Set();
+const renderedMonthly=await readJson(new URL('public/data/monthly-catalog.json',root),{retail:[]});
+for(const p of [...catalog.products,...renderedMonthly.retail]){
+ const rendered=p.presentation?.thumbnail;if(!rendered)continue;
+ if(!/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/.test(rendered.path)||!(rendered.width>0&&rendered.height>0))throw Error('Invalid card rendition: '+p.id);
+ if(checkedRenditions.has(rendered.path))continue;
+ const bytes=await fs.readFile(new URL('public'+rendered.path,root));
+ if(createHash('sha256').update(bytes).digest('hex')!==path.basename(rendered.path).split('.')[0])throw Error('Card rendition checksum mismatch: '+p.id);
+ checkedRenditions.add(rendered.path);
+}
 await fs.writeFile(new URL('public/deployment.json',root),JSON.stringify({commit,builtAt:new Date().toISOString()},null,2));
 console.log(`Validated lightweight static dashboard for ${commit}; HTML ${Buffer.byteLength(html)} bytes.`);

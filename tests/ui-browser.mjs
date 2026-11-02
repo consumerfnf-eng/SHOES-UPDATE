@@ -23,7 +23,7 @@ try{
  // All UI checks run against local code and fixtures; never contact live sites.
  await context.route('**/*',r=>new URL(r.request().url()).origin===new URL(url).origin?r.continue():r.abort());
  await context.route('https://example.org/**',r=>r.fulfill({contentType:'image/svg+xml',body:`<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><rect width="400" height="300" fill="${r.request().url().includes('black')?'#222':'#ddd'}"/></svg>`}));
- await context.route('**/data/catalog.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(fixture)}));
+ await context.route('**/data/catalog-ui.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(fixture)}));
  // The page loads the retail/newsletter overlay and the SNS keyword board
  // alongside the catalog. Unmocked, the real published files answered and
  // every count in this file was measuring live data instead of the fixture.
@@ -56,44 +56,50 @@ try{
  const [xlsx]=await Promise.all([page.waitForEvent('download'),page.locator('#download-xlsx').click()]);const xlsxPath=path.join(out,'selected.xlsx');await xlsx.saveAs(xlsxPath);assert.equal((await fs.readFile(xlsxPath)).subarray(0,2).toString(),'PK');
  await page.locator('#search').fill('no-match');await page.locator('#keyword-list .keyword-select').click();assert.equal(await page.locator('#result-count').textContent(),'48');assert.equal(await page.locator('#search').inputValue(),'');assert.equal(await page.locator('#release-filter').inputValue(),'released');
  await page.getByRole('button',{name:'2페이지',exact:true}).click();assert.equal(await page.locator('.product-card').count(),8);
- assert.equal(requests.filter(r=>r.url.endsWith('/data/catalog.json')).length,1);assert(requests.every(r=>r.method==='GET'),'Visit never starts a collection');
+ assert.equal(requests.filter(r=>r.url.endsWith('/data/catalog-ui.json')).length,1);assert(requests.every(r=>r.method==='GET'),'Visit never starts a collection');
  await page.screenshot({path:path.join(out,'desktop.png')});await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:path.join(out,'mobile.png')});
  // Use the reported catalog names/colors, with local fixture photos and dates
  // so grouping regressions do not depend on external sites or release windows.
- const actual=JSON.parse(await fs.readFile(path.join(root,'data/catalog.json'),'utf8')).products;
+ const actual=JSON.parse(await fs.readFile(new URL('./fixtures/variant-ui-catalog.json',import.meta.url),'utf8')).products;
  const variantProducts=actual.filter(p=>p.brand==='ASICS'||p.brand==='PANE'||p.brand==='adidas'&&['KI8294','KI8293'].includes(p.style)).map(p=>({
-  ...products[0],id:p.id,brand:p.brand,name:p.name,style:p.style,modelKey:p.modelKey,colorway:p.colorway,gender:p.gender,
-  image:`https://example.org/${p.id}.svg`,presentation:{image:`https://example.org/${p.id}.svg`,scale:1}
+  ...products[0],id:p.id,brand:p.brand,name:p.name,style:p.style,manufacturerStyle:p.manufacturerStyle,productVariantId:p.productVariantId,modelKey:p.modelKey,colorway:p.colorway,gender:p.gender,
+  url:p.url,designReview:p.designReview?{...p.designReview,image:`https://example.org/${encodeURIComponent(p.presentation?.cachedPath||p.image)}.svg`}:undefined,
+  // Keep the source's exact shared-photo identity while serving local SVGs.
+  // Replacing each photograph with its row ID invented different variants.
+  image:`https://example.org/${encodeURIComponent(p.presentation?.cachedPath||p.image)}.svg`,presentation:{image:`https://example.org/${encodeURIComponent(p.presentation?.cachedPath||p.image)}.svg`,scale:1}
  }));
  const variantFixture={...fixture,products:variantProducts,brands:['ASICS','PANE','adidas'].map(name=>({name,mandatory:true})),keywords:[],styleTrendKeywords:{updated:at,items:[]}};
  const variantPage=await context.newPage();variantPage.on('pageerror',e=>errors.push(e.message));
- await variantPage.route('**/data/catalog.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(variantFixture)}));
+ await variantPage.route('**/data/catalog-ui.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(variantFixture)}));
  await variantPage.goto(url);await variantPage.locator('.product-card').first().waitFor();
- // Counted from the fixture, not written down. The fixture is built from the
- // live catalog's ASICS/PANE/adidas listings, so a hard-coded 11 only held
+ // Counted from the fixture, not written down. The fixture is frozen from
+ // verified ASICS/PANE/adidas listings, so a hard-coded 11 only held
  // until those brands' line-ups changed - which is the third time a test here
  // has been bound to mutable data (see 62e4b70).
  const expectedCards=new Set(preferWomenVariants(variantProducts).map(variantGroupKey)).size;
  assert.equal(await variantPage.locator('#result-count').textContent(),String(expectedCards),
    `one card per model group (${variantProducts.length} listings)`);
  const cardFor=id=>variantPage.locator('.product-card').filter({has:variantPage.locator(`[data-variant="${id}"]`)});
+ // These current men's Orange Glow and women's Lavender Glow are different
+ // colourways. One model card must preserve both instead of discarding the men.
  for(const model of ['GEL-KAYANO 33 LITE-SHOW','GT-2000 15 LITE-SHOW']){
   const pair=variantProducts.filter(p=>p.brand==='ASICS'&&p.name.startsWith(model));
   assert.equal(pair.length,2);
   const men=pair.find(p=>p.name.includes("Men's")),women=pair.find(p=>p.name.includes("Women's")),card=cardFor(women.id);
-  assert.equal(await card.count(),1);assert.equal(await card.locator('.color-chip').count(),1);
-  assert.equal(await cardFor(men.id).count(),0,'Male counterpart has no card or color chip');
+  assert.notEqual(men.colorway,women.colorway);
+  assert.equal(await card.count(),1);assert.equal(await card.locator('.color-chip').count(),2);
+  assert.equal(await cardFor(men.id).count(),1,'The other active colour remains on the same card');
   assert(!(await card.locator('.card-name').textContent()).match(/Men|Women/));
   await card.locator(`[data-variant="${women.id}"]`).click();
   assert.equal(await card.locator('.card-open img').getAttribute('src'),women.image);
   assert.equal(await card.locator(`[data-variant="${women.id}"]`).getAttribute('aria-pressed'),'true');
   await card.locator('.card-name').click();
-  assert.equal(await variantPage.locator('#detail-content .color-chip').count(),1);
+  assert.equal(await variantPage.locator('#detail-content .color-chip').count(),2);
   assert.equal(await variantPage.locator('.detail-visual img').getAttribute('src'),women.image);
-  assert.equal(await variantPage.locator(`#detail-content [data-variant="${men.id}"]`).count(),0);
+  assert.equal(await variantPage.locator(`#detail-content [data-variant="${men.id}"]`).count(),1);
   await variantPage.getByRole('button',{name:'상세정보 닫기',exact:true}).click();
  }
- // The fixture is built from the live catalog, so which ASICS models it
+ // The fixture preserves source catalog identities, so which ASICS models it
  // holds changes week to week - a re-release withdrawn from NEW took
  // GEL-KAYANO 14 out of it. Assert the property (one card per model,
  // generations never merged) for the models actually present.
@@ -112,8 +118,8 @@ try{
  // so the expected number is the fixture's own answer to it.
  const paneChips=name=>preferWomenVariants(variantProducts)
    .filter(p=>variantGroupName(p)===name).length;
- for(const [name,count] of ['Pane Light Training Nogi Shoes','Pane Zephyr Training Shoes',
-                            'Pane Zephyr Training Pouching Shoes'].map(n=>[n,paneChips(n)])){
+ for(const [name,count] of ['Pane Light Training Nogi','Pane Zephyr Training',
+                            'Pane Zephyr Training Pouching'].map(n=>[n,paneChips(n)])){
   assert(count>1,`${name} must stand for several colourways for this to test anything`);
   const card=variantPage.locator('.product-card').filter({has:variantPage.getByRole('button',{name,exact:true})});
   assert.equal(await card.count(),1);assert.equal(await card.locator('.color-chip').count(),count);
@@ -135,11 +141,11 @@ try{
   await variantPage.getByRole('button',{name:'상세정보 닫기',exact:true}).click();
  }
  await variantPage.locator('#search').fill('Lite Show/Orange Glow');
- await variantPage.waitForFunction(()=>document.getElementById('result-count').textContent==='0');
+ await variantPage.waitForFunction(()=>document.getElementById('result-count').textContent==='2');
  const kayanoWomen=variantProducts.find(p=>p.name.startsWith('GEL-KAYANO 33 LITE-SHOW Women'));
  await variantPage.locator('#search').fill('GEL-KAYANO 33 LITE-SHOW Women');
  await variantPage.waitForFunction(()=>document.getElementById('result-count').textContent==='1');
- assert.equal(await variantPage.locator('.product-card .color-chip').count(),1,'Search only exposes female colors');
+ assert.equal(await variantPage.locator('.product-card .color-chip').count(),2,'Matching a model retains its other active colour; selecting exports only the chosen variant');
  assert.equal(await variantPage.locator(`[data-variant="${kayanoWomen.id}"]`).count(),1);
  await variantPage.locator('.card-name').click();
  await variantPage.locator('#detail-select').click();await variantPage.getByRole('button',{name:'상세정보 닫기',exact:true}).click();
@@ -166,7 +172,7 @@ try{
    shows:new Set(walkLooks.filter(l=>l.season===label).map(l=>l.brand)).size});
  const walkContext=await browser.newContext({viewport:{width:1440,height:1000},acceptDownloads:true});
  await walkContext.route('**/*',r=>new URL(r.request().url()).origin===new URL(url).origin?r.continue():r.abort());
- await walkContext.route('**/data/catalog.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(fixture)}));
+ await walkContext.route('**/data/catalog-ui.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(fixture)}));
  await walkContext.route('**/data/monthly-catalog.json',r=>r.fulfill({contentType:'application/json',
    body:JSON.stringify({schemaVersion:2,publishedAt:at,asOf:today,periodStart:today,sources:{},retail:[],newsletter:[],sourceStatus:[]})}));
  await walkContext.route('**/data/trend-keywords.json',r=>r.fulfill({contentType:'application/json',
@@ -259,5 +265,5 @@ try{
  assert(await walk.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'the catwalk fits a phone');
  await walk.screenshot({path:path.join(out,'catwalk-picking-mobile.png')});
  assert.deepEqual(errors,[]);
- console.log(JSON.stringify({passed:true,browser:process.env.UI_BROWSER_CHANNEL||'chromium',screenshots:out,downloads:[csvPath,xlsxPath,womenPath,zipPath,onePath],checks:'women-only counterparts, male-only editions retained, adidas female representative, female card/detail color switching, suppressed male-color search, female CSV export, 17-column CSV/XLSX, pagination, mobile, catwalk season tabs (3 seasons, newest first, per-season chips/select-all), multi-select + Shift range + cross-season ZIP archive with 목록.csv + single-look JPG, local fixtures only'},null,2));
+ console.log(JSON.stringify({passed:true,browser:process.env.UI_BROWSER_CHANNEL||'chromium',screenshots:out,downloads:[csvPath,xlsxPath,womenPath,zipPath,onePath],checks:'women-only counterparts, male-only editions retained, adidas female representative, female card/detail color switching, male-exclusive colour search retained, female CSV export, 17-column CSV/XLSX, pagination, mobile, catwalk season tabs (3 seasons, newest first, per-season chips/select-all), multi-select + Shift range + cross-season ZIP archive with 목록.csv + single-look JPG, local fixtures only'},null,2));
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

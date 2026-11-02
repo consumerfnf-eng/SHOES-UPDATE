@@ -1,4 +1,6 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes, zipStored, catwalkFileName, catwalkManifestRows } from './export.mjs';
+import {decodeCatalog} from './catalog-wire.mjs';
+import {isExcludedBrand} from './brand-exclusions.mjs';
 import { groupedBrands } from './brand-groups.mjs';
 import { sortSeasons } from './catwalk-seasons.mjs';
 import { analysisCsv, analysisRows, priceDistribution, materialDistribution, colourDistribution,
@@ -16,13 +18,14 @@ const PAGE_SIZE = 40;
 const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter'],['retail-mrporter','MR PORTER'],['retail-kith','Kith'],['retail-bally-uae','Bally UAE']];
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter','retail-mrporter':'MR PORTER','retail-kith':'Kith','retail-bally-uae':'Bally UAE'};
-let catalog = null, overlay = null, trends = null, rankBoards = null, curation = null, catwalk = null, catwalkShown = 0, catwalkPicked = new Set(), catwalkAnchor = '', catwalkShowsOpen = false, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
+let catalog = null, overlay = null, trends = null, rankBoards = null, catwalk = null, catwalkShown = 0, catwalkPicked = new Set(), catwalkAnchor = '', catwalkShowsOpen = false, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
 const activeVariant = new Map();
+let productGroups = new Map();
 function groupKey(p){ return variantGroupKey(p); }
 function colorGroupOf(p){
   const key=groupKey(p);
   const published=v=>isOverlay(v)?!!overlayReleaseState(v,today):releaseState(v,today)==='released';
-  return products.filter(v=>groupKey(v)===key&&published(v)&&sourceMatches(v,state.source,today));
+  return (productGroups.get(key)||[]).filter(v=>published(v)&&sourceMatches(v,state.source,today));
 }
 function activeOf(group){
   const chosen = activeVariant.get(groupKey(group[0]));
@@ -134,6 +137,9 @@ async function downloadPhotos(list){
   popup(failed?`사진 ${saved}장을 저장했습니다. ${failed}장은 원본을 받지 못했습니다.`:`사진 ${saved}장을 JPG로 저장했습니다.`);
 }
 function imageMarkup(p, eager = false) {
+  const thumbnail=p.presentation?.thumbnail;
+  const transform=`transform:translateY(${Math.max(-45,Math.min(45,Number(p.presentation?.offsetY)||0))}%) scale(${Math.min(2.7,Math.max(1,Number(p.presentation?.scale)||1))})`;
+  if(/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/.test(thumbnail?.path||''))return `<img class="card-thumbnail" style="${p.presentation?.frame?'':transform}" src="${esc(thumbnail.path)}" width="${thumbnail.width}" height="${thumbnail.height}" alt="${esc(p.brand+' '+p.name)}" loading="${eager?'eager':'lazy'}" fetchpriority="${eager?'high':'auto'}" decoding="async">`;
   const cached=p.presentation?.cachedPath;
   const url = /^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(cached||'')?cached:safeUrl(p.presentation?.image) || officialImageUrl(p,today) || safeUrl(p.image);
   const frame=p.presentation?.frame;
@@ -181,14 +187,16 @@ function overlayProducts() {
   if (!overlay) return [];
   const sources = overlay.sources || {};
   return [...(overlay.retail || []), ...(overlay.newsletter || [])]
-    .filter(item => item && typeof item.id === 'string' && typeof item.name === 'string' && typeof item.brand === 'string')
+    .filter(item => item && !isExcludedBrand(item.brand) && typeof item.id === 'string' && typeof item.name === 'string' && typeof item.brand === 'string')
     .map(item => adaptOverlay(item, sources))
     .filter(item => isPublishedFootwear(item) && overlayReleaseState(item, today));
 }
 
 function rebuildProducts() {
-  const eligible = catalog.products.filter(p => p && isPublishedFootwear(p) && releaseState(p,today)==='released' && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string');
-  products = preferWomenVariants(eligible).map(p => ({...p,keywords:[...(p.keywords||[]),...[...catalog.keywords,...(catalog.forecastKeywords||[])].filter(k=>k.productIds?.includes(p.id)).flatMap(k=>[k.label,...(k.aliases||[])])]}));
+  const eligible = catalog.products.filter(p => p && !isExcludedBrand(p.brand) && isPublishedFootwear(p) && releaseState(p,today)==='released' && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string');
+  const keywordLabels=new Map();
+  for(const k of [...catalog.keywords,...(catalog.forecastKeywords||[])])for(const id of k.productIds||[]){if(!keywordLabels.has(id))keywordLabels.set(id,new Set());for(const label of [k.label,...(k.aliases||[])])keywordLabels.get(id).add(label);}
+  products = preferWomenVariants(eligible).map(p => ({...p,keywords:[...new Set([...(p.keywords||[]),...(keywordLabels.get(p.id)||[])])]}));
   products = products.concat(overlayProducts());
   products = preferOfficialVariants(products);
   // Mark everything this week's trend keywords actually match, so the SNS tab
@@ -206,53 +214,21 @@ function rebuildProducts() {
     if(hits){p.snsTrending=true;p.snsTrendMatches=hits;}
   }
   brandCounts = new Map();
-  groupProductVariants(products).forEach(group => [...new Set(group.flatMap(p=>productBrandNames(p,today)))].forEach(brand=>brandCounts.set(brand,(brandCounts.get(brand)||0)+1)));
+  const allGroups=groupProductVariants(products);
+  productGroups=new Map(allGroups.map(group=>[groupKey(group[0]),group]));
+  allGroups.forEach(group => [...new Set(group.flatMap(p=>productBrandNames(p,today)))].forEach(brand=>brandCounts.set(brand,(brandCounts.get(brand)||0)+1)));
 }
 // Additive snapshots, fetched after the first paint. A failure here leaves the
 // official catalogue exactly as it rendered.
 async function loadSupplements() {
-  let changed = false;
-  try {
-    const extra = await fetch('./data/monthly-catalog.json', {cache:'no-cache'});
-    if (extra.ok) {
-      const snapshot = await extra.json();
-      if (snapshot.schemaVersion === 2 && Array.isArray(snapshot.retail)) { overlay = snapshot; changed = true; }
-    }
-  } catch { overlay = null; }
-  try {
-    const ranked = await fetch('./data/rank-boards.json', {cache:'no-cache'});
-    if (ranked.ok) {
-      const snapshot = await ranked.json();
-      if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.boards)) { rankBoards = snapshot; changed = true; }
-    }
-  } catch { rankBoards = null; }
-  try {
-    // Internal only - the public build has no such file and the board, like
-    // the catwalk tab, simply does not appear.
-    const review = await fetch('./data/curation-summary.json', {cache:'no-cache'});
-    if (review.ok) {
-      const snapshot = await review.json();
-      if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.reasons)) { curation = snapshot; changed = true; }
-    }
-  } catch { curation = null; }
-  try {
-    const walk = await fetch('./data/catwalk.json', {cache:'no-cache'});
-    if (walk.ok) {
-      const snapshot = await walk.json();
-      // v2 keeps several seasons side by side and lists them; v1 held one
-      // season inline. Both are read - a page refreshed before the next
-      // collection is still looking at a v1 file.
-      if ([1, 2].includes(snapshot.schemaVersion) && Array.isArray(snapshot.looks)) { catwalk = snapshot; changed = true; }
-    }
-  } catch { catwalk = null; }
-  try {
-    const ranking = await fetch('./data/trend-keywords.json', {cache:'no-cache'});
-    if (ranking.ok) {
-      const snapshot = await ranking.json();
-      if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.keywords)) { trends = snapshot; changed = true; }
-    }
-  } catch { trends = null; }
-  return changed;
+  const jobs=[
+    ['./data/monthly-catalog.json', s=>s.schemaVersion===2&&Array.isArray(s.retail), s=>overlay=s],
+    ['./data/rank-boards.json', s=>s.schemaVersion===1&&Array.isArray(s.boards), s=>rankBoards=s],
+    ['./data/catwalk.json', s=>[1,2].includes(s.schemaVersion)&&Array.isArray(s.looks), s=>catwalk=s],
+    ['./data/trend-keywords.json', s=>s.schemaVersion===1&&Array.isArray(s.keywords), s=>trends=s],
+  ];
+  const results=await Promise.allSettled(jobs.map(async([url,valid,assign])=>{const response=await fetch(url,{cache:'no-cache'});if(!response.ok)return false;const value=await response.json();if(!valid(value))return false;assign(value);return true;}));
+  return results.some(r=>r.status==='fulfilled'&&r.value);
 }
 async function loadCatalog() {
   $('product-grid').setAttribute('aria-busy','true'); $('product-grid').innerHTML = Array.from({length:8}, () => '<div class="skeleton" aria-hidden="true"></div>').join('');
@@ -265,9 +241,10 @@ async function loadCatalog() {
   const dictionary = fetch('./data/model-categories.json',{cache:'no-cache'})
     .then(r=>r.ok?r.json():null).catch(()=>null);
   try {
-    const response = await fetch('./data/catalog.json', {signal:controller.signal,cache:'no-cache'});
+    let response = await fetch('./data/catalog-ui.json', {signal:controller.signal,cache:'no-cache'});
+    if(response.status===404)response=await fetch('./data/catalog.json',{signal:controller.signal,cache:'no-cache'});
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const value = await response.json();
+    const value = decodeCatalog(await response.json());
     if (value.schemaVersion !== 1 || !Array.isArray(value.products) || !Array.isArray(value.brands) || !Array.isArray(value.keywords)) throw new Error('Invalid snapshot');
     catalog = value;
     // The grid's LUX-first ordering needs each brand's policy group, and the
@@ -282,13 +259,8 @@ async function loadCatalog() {
     rebuildProducts();
     const collection = value.sourceStatus?.lastSuccessfulCollectionAt;
     $('update-label').textContent = collection ? `${dateText(collection, true)} 신상품 확인` : value.publishedAt ? `${dateText(value.publishedAt, true)} 게시` : '첫 검증 완료본 게시 대기';
-    const unavailable = value.sourceStatus?.unavailableBrands || [];
     const notice = [];
-    if(value.sourceStatus?.selectionBasis==='official-new-arrivals'&&value.sourceStatus?.catalogExhaustive===false)notice.push('공식 New·New Arrivals에서 상품과 사진을 확인한 항목을 표시합니다. 일부 브랜드와 다음 페이지는 추가 확인이 필요합니다.');
-    if (!products.length) notice.push('공식 New·New Arrivals·품목·상품 정보를 확인한 신상품을 준비하고 있습니다. 기존 기록은 보존되며, 검증을 마친 상품부터 게시됩니다.');
-    const recheck=value.sourceStatus?.discoveryRecheck;
-    if(recheck){const remaining=recheck.brands.filter(b=>b.status==='unavailable').map(b=>b.brand);notice.push(`${dateText(recheck.checkedAt)} 수집 경로 재확인: ${recheck.brands.length-remaining.length}/${recheck.brands.length}개 브랜드의 공개 페이지를 읽었습니다. ${remaining.length?`자동 수집 재확인 필요: ${remaining.join(', ')}. `:''}공식 신상품 여부와 사진 검증을 마친 상품만 표시합니다.`);}
-    else if (unavailable.length) notice.push(`최근 전체 수집에서 ${unavailable.length}개 브랜드의 신상품 목록을 읽지 못했습니다. 검색 인증·수집 경로·사이트 응답 문제를 포함하며, 기존에 확인한 공식 상품은 표시합니다.`);
+    if(!products.length)notice.push('확인된 스니커즈 정보를 준비하고 있습니다.');
     $('catalog-notice').textContent = notice.join(' '); $('catalog-notice').className = 'notice'; $('catalog-notice').hidden = !notice.length;
     renderBrands(); renderKeywords(); render();
     // The retail overlay and the trend board are 4 MB between them, more than
@@ -307,23 +279,12 @@ async function loadCatalog() {
 }
 
 function renderBrands() {
-  const brands = [...(catalog?.brands || [])];
-  const normalized = name => name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
-  for (const name of mandatory) if (!brands.some(b => normalized(b.name) === normalized(name))) brands.push({name,mandatory:true,group:'',policy:'mandatory'});
-  const search = $('brand-search').value.toLocaleLowerCase();
-  const groups = groupedBrands(brands.filter(b => b.name.toLocaleLowerCase().includes(search)));
-  $('brand-list').innerHTML = groups.filter(g=>g.brands.length).map(group => `<section class="brand-group" aria-label="${group.name}"><h3 class="brand-group-label">${group.name}</h3>${group.brands.map(b =>
-    (() => {
-      const shown = brandCounts.get(b.name) || 0;
-      // A brand with nothing on screen reads the same whether it released
-      // nothing or whether everything it released is stuck in review. The
-      // badge tells those apart, and only where it has something to say.
-      const waiting = shown ? 0 : (curation?.brands || []).find(x => x.brand === b.name)?.held || 0;
-      const why = waiting ? (curation.brands.find(x => x.brand === b.name)?.topReasonLabel || '') : '';
-      return `<label class="brand-option"><input type="checkbox" data-brand="${esc(b.name)}" ${state.brands.has(b.name)?'checked':''}><span class="brand-name">${esc(b.name)}</span>${waiting?`<span class="brand-held" title="${esc(`검수 대기 ${waiting}건 · ${why}`)}">검수 ${waiting}</span>`:''}<span class="brand-count">${shown}</span></label>`;
-    })()
-  ).join('')}</section>`).join('') || '<p class="muted">일치하는 브랜드가 없습니다.</p>';
-  $('brand-list').querySelectorAll('input').forEach(input => input.addEventListener('change', () => { input.checked ? state.brands.add(input.dataset.brand) : state.brands.delete(input.dataset.brand); state.page=1; render(); }));
+  const byName=new Map((catalog?.brands||[]).map(b=>[b.name,b]));
+  for(const name of brandCounts.keys())if(!byName.has(name))byName.set(name,{name,group:state.brandGroups.get(name)||''});
+  const search=$('brand-search').value.toLocaleLowerCase();
+  const groups=groupedBrands([...byName.values()].filter(b=>!isExcludedBrand(b.name)&&(brandCounts.get(b.name)||0)>0&&b.name.toLocaleLowerCase().includes(search)));
+  $('brand-list').innerHTML=groups.filter(g=>g.brands.length).map(group=>`<section class="brand-group" aria-label="${group.name}"><h3 class="brand-group-label">${group.name}</h3>${group.brands.map(b=>`<label class="brand-option"><input type="checkbox" data-brand="${esc(b.name)}" ${state.brands.has(b.name)?'checked':''}><span class="brand-name">${esc(b.name)}</span><span class="brand-count">${brandCounts.get(b.name)}</span></label>`).join('')}</section>`).join('')||'<p class="muted">일치하는 브랜드가 없습니다.</p>';
+  $('brand-list').querySelectorAll('input').forEach(input=>input.addEventListener('change',()=>{input.checked?state.brands.add(input.dataset.brand):state.brands.delete(input.dataset.brand);state.page=1;render();}));
 }
 const ECOMMERCE_PLATFORMS=new Set(['musinsa','29cm','eql','wconcept']);
 function renderKeywords() {
@@ -429,33 +390,6 @@ function movementMarkup(item){
   const amount=item.movement==='up'||item.movement==='down'?String(item.change||0):'';
   const title=item.previousRank?`지난 집계 ${item.previousRank}위`:move.label;
   return `<span class="rank-move ${esc(item.movement||'first')}" title="${esc(title)}">${esc(move.mark)}${amount?' '+esc(amount):''}</span>`;
-}
-// What the catalogue is not showing, and why. Published here counts the
-// official catalogue only - the retail and newsletter overlays are a separate
-// feed and never pass through this queue.
-function renderCurationBoard(){
-  const host=$('curation-board');
-  if(!host)return;
-  const reasons=(curation?.reasons||[]).filter(r=>r.count);
-  host.hidden=!reasons.length;
-  if(host.hidden){host.innerHTML='';return;}
-  const {held=0,published=0,brandsHoldingEverything=0}=curation.totals||{};
-  const total=reasons.reduce((n,r)=>n+r.count,0)||1;
-  const silent=(curation.brands||[]).filter(b=>!b.published).slice(0,12);
-  host.innerHTML=`<article class="rank-board">
-    <header class="rank-board-head">
-      <div><h3>검수 보류 <span class="rank-size">${held.toLocaleString()}건</span></h3>
-      <p class="muted">공식 카탈로그 게시 ${published.toLocaleString()}건 대비 보류 ${held.toLocaleString()}건 · 한 건도 게시되지 않은 브랜드 ${brandsHoldingEverything}개</p>
-      <p class="muted">아래 사유가 풀리면 그만큼 게시됩니다. 수집이 실패한 것이 아니라 근거가 모자라 대기 중인 항목입니다.</p></div>
-      <span class="muted">${esc(dateText(curation.builtAt,true))} 기준</span>
-    </header>
-    <ol class="curation-reasons">${reasons.map(r=>`<li>
-      <span class="curation-reason">${esc(r.label)}</span>
-      <span class="curation-bar"><i style="width:${Math.max(2,Math.round(r.count/total*100))}%"></i></span>
-      <span class="curation-count">${r.count.toLocaleString()}</span>
-    </li>`).join('')}</ol>
-    ${silent.length?`<p class="curation-silent"><strong>게시 0건인 브랜드</strong> ${silent.map(b=>`${esc(b.brand)} <span>${b.held}</span>`).join(' · ')}${curation.brands.filter(b=>!b.published).length>silent.length?` 외 ${curation.brands.filter(b=>!b.published).length-silent.length}개`:''}</p>`:''}
-  </article>`;
 }
 function renderRankBoards(){
   const host=$('rank-boards');
@@ -814,10 +748,8 @@ function renderAnalysis(){
     document.querySelector(sel)?.classList.toggle('hidden-by-analysis',walk);
   if(walk)renderCatwalk();
   $('rank-boards').hidden=!on||!(rankBoards?.boards||[]).some(b=>b.items?.length);
-  $('curation-board').hidden=!on||!(curation?.reasons||[]).length;
   if(!on)return;
   renderRankBoards();
-  renderCurationBoard();
   const rows=analysisScope();
   $('analysis-scope').textContent=`현재 필터 기준 ${rows.length.toLocaleString()}개 상품 · ${RATE_NOTE}`;
 
@@ -901,7 +833,7 @@ function render() {
     const meta=over?`<span>${esc(overlayDateLabel(p))}</span>${p.priceLabel?`<span>${esc(p.priceLabel)}</span>`:''}`:`<span>${esc(releaseDateLabel(p))}</span>`;
     const link=over?(url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} ${esc(sourceLabelOf(p))}에서 보기">${esc(sourceLabelOf(p))} ↗</a>`:'')
                    :(url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} 공식 상품 보기">공식 상품 ↗</a>`:'');
-    return `<article class="product-card ${selected.has(p.id)?'selected':''}" data-id="${esc(p.id)}" data-group="${esc(groupKey(p))}"><div class="card-visual"><label class="card-checkbox"><input type="checkbox" data-select="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 선택" ${selected.has(p.id)?'checked':''}></label><button class="card-photo" data-photo="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 사진 JPG 저장" title="사진 JPG 저장">↓</button><button class="card-save ${isSaved(p)?'on':''}" data-save="${esc(p.id)}" aria-pressed="${isSaved(p)}" aria-label="${esc(p.name)} 저장"${isSaved(p)?' title="저장함에 있음"':''}>★</button><button class="card-open" data-detail="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 상세정보">${imageMarkup(p,i<4)}</button>${release==='upcoming'?'<span class="release-badge upcoming">발매 예정</span>':''}</div><div class="card-copy"><p class="card-brand">${brandLine}</p><button class="card-name" data-detail="${esc(p.id)}">${esc(variantGroupName(p))}</button><div class="card-meta">${meta}</div>${colorChipsMarkup(group,p.id)}</div><div class="card-footer">${link}</div></article>`;
+    return `<article class="product-card ${selected.has(p.id)?'selected':''}" data-id="${esc(p.id)}" data-brand="${esc(p.brand)}" data-group="${esc(groupKey(p))}"><div class="card-visual"><label class="card-checkbox"><input type="checkbox" data-select="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 선택" ${selected.has(p.id)?'checked':''}></label><button class="card-photo" data-photo="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 사진 JPG 저장" title="사진 JPG 저장">↓</button><button class="card-save ${isSaved(p)?'on':''}" data-save="${esc(p.id)}" aria-pressed="${isSaved(p)}" aria-label="${esc(p.name)} 저장"${isSaved(p)?' title="저장함에 있음"':''}>★</button><button class="card-open" data-detail="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 상세정보">${imageMarkup(p,i<4)}</button>${release==='upcoming'?'<span class="release-badge upcoming">발매 예정</span>':''}</div><div class="card-copy"><p class="card-brand">${brandLine}</p><button class="card-name" data-detail="${esc(p.id)}">${esc(variantGroupName(p))}</button><div class="card-meta">${meta}</div>${colorChipsMarkup(group,p.id)}</div><div class="card-footer">${link}</div></article>`;
   }).join('');
   bindImageErrors($('product-grid'));
   $('product-grid').querySelectorAll('[data-detail]').forEach(button=>button.addEventListener('click',()=>openDetail(button.dataset.detail)));
@@ -1133,7 +1065,7 @@ function overlayDetailMarkup(p,id,group){
     ['소재',esc(p.material||'리테일러 미표기 · 상품 페이지에서 확인')],
     ...(p.countryOrigin?[['제조국',esc(p.countryOrigin)]]:[]),
     [kind==='newsletter'?'기사 출처':'판매처',esc(label)],
-    ['스타일 코드',esc(p.style||'미확인')],
+    ['제품 코드',esc(p.manufacturerStyle||p.style||'미확인')],
     ['가격',esc(p.priceLabel||'상품 페이지에서 확인')],
     ['성별',esc(p.gender==='women'?'여성':p.gender==='men'?'남성':'미표기')],
     [kind==='newsletter'?'발행':'등록',esc(overlayDateLabel(p))],
@@ -1174,7 +1106,7 @@ function openDetail(id) {
   }
   const url=reviewedProductPageUrl(p,today), evidence=safeUrl(p.dateEvidence?.url);
   const signals=(p.sourceSignals||[]).filter(s=>safeUrl(s.url));
-  const data=[...(p.arrivalEvidence?[[p.arrivalEvidence.kind==='catalogue-listing'?'목록 근거':'신상품 근거',`<a href="${esc(safeUrl(p.arrivalEvidence.url))}" target="_blank" rel="noopener noreferrer">${p.arrivalEvidence.kind==='catalogue-listing'?'공식 상품 목록 ↗':'공식 New·New Arrivals ↗'}</a> · ${esc(dateText(p.arrivalEvidence.verifiedAt,true))} 확인`]]:[]),...(p.firstPublishedAt?[['사이트 최초 게시',esc(dateText(p.firstPublishedAt,true))]]:[]),['출시일',`${esc(p.releaseDate?dateText(p.releaseDate):'미공개')}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">출시일 근거 ↗</a>`:''}`],['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'미확인')],[p.styleType==='official-product-id'?'상품 ID':'스타일 코드',esc(p.style||'미확인')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'미확인')],['소재',esc(p.material||'미확인')],['가격',esc(p.priceLabel||'공식 상품에서 확인')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
+  const data=[...(p.arrivalEvidence?[[p.arrivalEvidence.kind==='catalogue-listing'?'목록 근거':'신상품 근거',`<a href="${esc(safeUrl(p.arrivalEvidence.url))}" target="_blank" rel="noopener noreferrer">${p.arrivalEvidence.kind==='catalogue-listing'?'공식 상품 목록 ↗':'공식 New·New Arrivals ↗'}</a> · ${esc(dateText(p.arrivalEvidence.verifiedAt,true))} 확인`]]:[]),...(p.firstPublishedAt?[['사이트 최초 게시',esc(dateText(p.firstPublishedAt,true))]]:[]),['출시일',`${esc(p.releaseDate?dateText(p.releaseDate):'미공개')}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">출시일 근거 ↗</a>`:''}`],['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'미확인')],[p.manufacturerStyle?'제품 코드':p.styleType==='official-product-id'?'상품 ID':'스타일 코드',esc(p.manufacturerStyle||p.style||'미확인')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'미확인')],['소재',esc(p.material||'미확인')],['가격',esc(p.priceLabel||'공식 상품에서 확인')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
   $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2>${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button><button id="detail-save" class="secondary-button" aria-pressed="${isSaved(p)}">${isSaved(p)?'★ 저장됨':'☆ 저장'}</button><button id="detail-photo" class="secondary-button">사진 JPG 저장 ↓</button></div><div class="memo-box"><label for="detail-memo">메모</label><textarea id="detail-memo" rows="2" placeholder="${isSaved(p)?'이 상품에 대한 메모를 남겨 두세요':'저장하면 메모를 남길 수 있습니다'}" ${isSaved(p)?'':'disabled'}>${esc(saved[id]?.memo||'')}</textarea></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 검증 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):'<p class="muted">확인 가능한 공식 상품·출시·이미지 근거가 아직 없습니다.</p>'}`;
   bindImageErrors($('detail-content'));$('detail-select').addEventListener('click',()=>toggleSelection(id,!selected.has(id)));$('detail-photo')?.addEventListener('click',()=>downloadPhotos([p]));
   $('detail-content').querySelectorAll('[data-variant]').forEach(button=>button.addEventListener('click',()=>{openDetail(button.dataset.variant);render();}));

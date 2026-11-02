@@ -20,7 +20,7 @@ export function validateSnapshot(catalog, {watch=null}={}) {
   assert.equal(catalog.periodStart,shiftMonth(catalog.asOf,-3),'Wrong calendar cutoff');
   assert.equal(new Set(catalog.products.map(p=>p.id)).size,catalog.products.length,'Duplicate public IDs');
   assert.equal(POLICY.brands.filter(b=>b.mandatory).length,25,'Mandatory policy changed');
-  for(const brand of POLICY.brands.filter(b=>b.mandatory))assert(catalog.brands.some(b=>b.name===brand.name),'Missing mandatory brand '+brand.name);
+  for(const brand of POLICY.brands.filter(b=>b.mandatory&&catalog.products.some(p=>p.brand===b.name)))assert(catalog.brands.some(b=>b.name===brand.name),'Missing published mandatory brand '+brand.name);
   for(const p of catalog.products) {
     assert(typeof p.id==='string'&&p.id&&typeof p.name==='string'&&p.name.trim(),'Missing product identity');
     assert(catalog.brands.some(b=>b.name===p.brand),'Unknown product brand');

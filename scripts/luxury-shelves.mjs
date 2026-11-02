@@ -29,10 +29,11 @@
  *  on the page - but their shops behave exactly like the luxury group's and
  *  every one of them returned zero shoes for the same reason.
  */
+import {isExcludedBrand} from '../public/assets/brand-exclusions.mjs';
 export const LUXURY_MAISONS=new Set(['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine',
-  'Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','The Row','Loro Piana','Brunello Cucinelli','Zegna',
+  'Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','The Row','Loro Piana','Brunello Cucinelli',
   'Chanel','Fendi','Givenchy','Valentino Garavani','Alexander McQueen','Maison Margiela','Rick Owens','Jil Sander',
-  'Lanvin','AMIRI','Off-White','Golden Goose','Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry',"Goyard","Burberry","Versace","Balmain","Ferragamo","Jimmy Choo","Christian Louboutin","MCM","Coach","Tory Burch","Bally","Stella McCartney","Kenzo"]);
+  'Lanvin','AMIRI','Off-White','Golden Goose','Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry',"Burberry","Versace","Balmain","Ferragamo","Jimmy Choo","Christian Louboutin","MCM","Coach","Tory Burch","Bally","Stella McCartney","Kenzo"]);
 
 export function isLuxuryMaison(brand){return LUXURY_MAISONS.has(brand);}
 
@@ -126,7 +127,7 @@ export function luxuryShelfSources(brand,record){
 
 /** The collection's sources with every maison's determined shelf folded in. */
 export function withLuxuryShelves(sources,basisFile={}){
-  const out={...sources};
+  const out=Object.fromEntries(Object.entries(sources).filter(([brand])=>!isExcludedBrand(brand)));
   for(const [brand,record] of Object.entries(basisFile.brands||{})){
     const extra=luxuryShelfSources(brand,record);
     if(!extra.length)continue;

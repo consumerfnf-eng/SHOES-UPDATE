@@ -333,3 +333,9 @@ body.viewer-open{overflow:hidden}
 .product-frame{display:block;width:100%;height:100%;padding:10px;overflow:hidden;mix-blend-mode:multiply}
 
 .color-chips{max-height:108px;overflow-y:auto;align-content:flex-start;padding:3px;scrollbar-gutter:stable}.color-chip:focus-visible{outline:2px solid var(--blue);outline-offset:1px}
+
+/* Fill the card with the complete verified Dior side frame. */
+.product-card[data-brand="Dior"] .card-visual{aspect-ratio:2/1;height:auto}
+.product-card[data-brand="Dior"] .card-open,.product-card[data-brand="Dior"] .card-thumbnail{padding:0}
+.card-thumbnail{object-fit:contain}
+.shell>main{min-width:0;max-width:100%}

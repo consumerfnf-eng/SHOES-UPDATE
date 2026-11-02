@@ -1,0 +1,2345 @@
+{
+  "sourceBaseline": "86626e7",
+  "capturedAt": "2026-11-02",
+  "description": "Frozen source identities and declared colours; UI tests replace photos with local SVGs and dates with the current day.",
+  "products": [
+    {
+      "id": "arrival-6116e298c23a2b38267b",
+      "brand": "PANE",
+      "name": "Pane Light Training Men's Shoes - Blush",
+      "style": "15448395022449",
+      "productVariantId": "15448395022449",
+      "modelKey": "pane|panelighttrainingmensshoesblush",
+      "colorway": "Blush",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-mens-shoes-blush",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_3ce1ce97-71b6-4ba2-b5a1-9f86c36140c4.png?v=1793205888",
+      "presentation": {
+        "cachedPath": "/images/672c279603a9ff2ae050f07f07a2646165b9b19323d54b663e1b3f79a90fb30c.webp"
+      }
+    },
+    {
+      "id": "arrival-190436c37ee310706d0d",
+      "brand": "PANE",
+      "name": "Pane Light Training Men's Shoes - Lacquer",
+      "style": "15448376049777",
+      "productVariantId": "15448376049777",
+      "modelKey": "pane|panelighttrainingmensshoeslacquer",
+      "colorway": "Lacquer",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-mens-shoes-lacquer",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_5b34bd3c-586b-465b-b84e-798ef7224591.png?v=1793205082",
+      "presentation": {
+        "cachedPath": "/images/29e7f3dfa9e52b1bbcdd6909ee039ae64588496f520d7fb6235f8d891714446b.webp"
+      }
+    },
+    {
+      "id": "arrival-819f5219b158ccff7b07",
+      "brand": "PANE",
+      "name": "Pane Light Training Men's Shoes - Obsidian",
+      "style": "15448392532081",
+      "productVariantId": "15448392532081",
+      "modelKey": "pane|panelighttrainingmensshoesobsidian",
+      "colorway": "Obsidian",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-mens-shoes-obsidian",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_4ae0cc58-d38e-4e17-b79a-5086ea89e2ac.png?v=1793205546",
+      "presentation": {
+        "cachedPath": "/images/df323ea2c4be539c0f7c90c4e9bf702042590ea6dcec612978be543213201647.webp"
+      }
+    },
+    {
+      "id": "arrival-541016da17ca8d801761",
+      "brand": "PANE",
+      "name": "Pane Light Training Men's Shoes - Pristine",
+      "style": "15446838018161",
+      "productVariantId": "15446838018161",
+      "modelKey": "pane|panelighttrainingmensshoespristine",
+      "colorway": "Pristine",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-mens-shoes-pristine",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_8acd5228-2e69-4f83-9361-17c86d1510b8.png?v=1793203721",
+      "presentation": {
+        "cachedPath": "/images/35a93f77e9e8d5ba6fb3bdeccc44d3c279818e4485aedb35108b1e37ef03d261.webp"
+      }
+    },
+    {
+      "id": "arrival-9c0cc5f8b788101ebcf3",
+      "brand": "PANE",
+      "name": "Pane Light Training Men's Shoes - Suntan",
+      "style": "15448364941425",
+      "productVariantId": "15448364941425",
+      "modelKey": "pane|panelighttrainingmensshoessuntan",
+      "colorway": "Suntan",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-mens-shoes-suntan",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_e4591558-55f9-4784-8e7d-e4c7e811c603.png?v=1793204378",
+      "presentation": {
+        "cachedPath": "/images/3a580901b498bfb7d29bb6c524dbda7e58a618dc130a73f003406c502792e630.webp"
+      }
+    },
+    {
+      "id": "arrival-188f23223c96a71a2dee",
+      "brand": "PANE",
+      "name": "Pane Light Training Men’s Shoes – Travertine",
+      "style": "7475808895089",
+      "productVariantId": "7475808895089",
+      "modelKey": "pane|panelighttrainingmensshoes",
+      "colorway": "Travertine",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-men-s-shoes-travertine",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5096-1.jpg?v=1757922786",
+      "presentation": {
+        "cachedPath": "/images/2538dec05349d3bce9c538d5462ae02d4716e3bc4afbf007ad824b9b9a10a341.webp"
+      }
+    },
+    {
+      "id": "arrival-631c1e6f71eb89f53940",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes - Ginger Chestnut",
+      "style": "7836645720177",
+      "productVariantId": "7836645720177",
+      "modelKey": "pane|panelighttrainingnogimensshoesgingerchestnut",
+      "colorway": "Ginger Chestnut",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-ginger-chestnut",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_65e14f21-1eaf-44ba-873d-6651e83b2a67.jpg?v=1789547622",
+      "presentation": {
+        "cachedPath": "/images/35d43e594b40ae3a2631cb50b71237d751a0ac390f02aa77e0d522fc2db1d01b.webp"
+      }
+    },
+    {
+      "id": "arrival-c277c0db27d3432c64dd",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes - Lychee Blush",
+      "style": "7836648996977",
+      "productVariantId": "7836648996977",
+      "modelKey": "pane|panelighttrainingnogimensshoeslycheeblush",
+      "colorway": "Lychee Blush",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-lychee-blush",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_45eeed76-6f77-40b6-b287-7624fe4eb8fc.jpg?v=1789549195",
+      "presentation": {
+        "cachedPath": "/images/f83df97e0bc9c8b42ea4c9212b03959498af7e4c0318b05a9b0f23f9a95a5b9e.webp"
+      }
+    },
+    {
+      "id": "arrival-3252817b19906fdd85e1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Achromate",
+      "style": "7460763467889",
+      "productVariantId": "7460763467889",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Achromate",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-achromate",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5274_9109f96b-8b9d-4db4-942e-2f594477612b.jpg?v=1779806452",
+      "presentation": {
+        "cachedPath": "/images/b5d77fff5944c496228dc5cf4b5d4922a7f36c847f4391fe3c8e014d0b3bbb88.webp"
+      }
+    },
+    {
+      "id": "arrival-f59e1206a2d331d57f1d",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Airliner",
+      "style": "7460764188785",
+      "productVariantId": "7460764188785",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Airliner",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-airliner",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5214_5e20a4e3-c743-4c0c-a0cf-d02bae0bb238.jpg?v=1779806405",
+      "presentation": {
+        "cachedPath": "/images/26c127928ae2ec0aab9073b15a4cb30806f729f743c1f2e8cc219124d05c634a.webp"
+      }
+    },
+    {
+      "id": "arrival-2bbd015a6a9f1934a28f",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Aragon",
+      "style": "15402783932529",
+      "productVariantId": "15402783932529",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Aragon",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-aragon",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/Pane_Nogi_Aragon_main_1_a287e725-49b2-4c9c-a348-ab46e8699fba.jpg?v=1791394372",
+      "presentation": {
+        "cachedPath": "/images/7c10ee9a2005265d449dd23d11169af0de453d56b67c2278e1947809dffc8872.webp"
+      }
+    },
+    {
+      "id": "arrival-4a2c6bc13907eb54384a",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Artichoke",
+      "style": "7460772577393",
+      "productVariantId": "7460772577393",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Artichoke",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-artichoke",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5213_7d02b4ad-33d2-4654-b69a-32dd0ac7a7e8.jpg?v=1779806370",
+      "presentation": {
+        "cachedPath": "/images/def4cf9171c8843052a12de9f8c0ba3c3a39dba7bdd00c990d0f2fc1aa0ee023.webp"
+      }
+    },
+    {
+      "id": "arrival-b48b4a9531f3e9ca23e7",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Boogie Woogie",
+      "style": "7460826579057",
+      "productVariantId": "7460826579057",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Boogie Woogie",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-boogie-woogie",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5190_8d4cbd3a-ef87-4742-a455-122f8f67d192.jpg?v=1779806308",
+      "presentation": {
+        "cachedPath": "/images/4d86931c8f0396ce094fa6d4c9ad4511220ae3f1a76d9b66ea07631f99276c80.webp"
+      }
+    },
+    {
+      "id": "arrival-2f6910850693f37529c1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Boromir",
+      "style": "15396188225649",
+      "productVariantId": "15396188225649",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Boromir",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-boromir",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_8dcf8142-642f-4715-8741-213296aac9bd.jpg?v=1790820442",
+      "presentation": {
+        "cachedPath": "/images/a56c8a9678ab9a938a5f1ffc292691f3e17c12494d3111d975a657f4dbe12ec4.webp"
+      }
+    },
+    {
+      "id": "new-20260923-543725d4a1749c4a",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Cloudine",
+      "style": "7632084697201",
+      "productVariantId": "7632084697201",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Cloudine",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-cloudine",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5439-1.jpg?v=1779805773",
+      "presentation": {
+        "cachedPath": "/images/568fc428a1a60acdc15b3614d378ac6b49a207d76df502aa8c43192bdc169515.webp"
+      }
+    },
+    {
+      "id": "arrival-9a17252e2cdc92db0640",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Crimson",
+      "style": "7632084664433",
+      "productVariantId": "7632084664433",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Crimson",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-crimson",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5192.jpg?v=1779805793",
+      "presentation": {
+        "cachedPath": "/images/bb030b666525f1f6658831d3784645dc6153e6691f19d0373ecec411ed62366a.webp"
+      }
+    },
+    {
+      "id": "arrival-e7c1f93629735b678d53",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Dusk Indigo",
+      "style": "7645575381105",
+      "productVariantId": "7645575381105",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Dusk Indigo",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-dusk-indigo",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5366_4b51877a-cee4-4fc2-bbad-3015b354cd98.jpg?v=1779805582",
+      "presentation": {
+        "cachedPath": "/images/7644387469a6d243f7a6489df440d1cdf8ac2a5c41aab0f81956e0ab42e59b6b.webp"
+      }
+    },
+    {
+      "id": "arrival-43da4f96c638c3596fe6",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Fog Rock",
+      "style": "7645575610481",
+      "productVariantId": "7645575610481",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Fog Rock",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-fog-rock",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5368_1720c64c-7843-48bd-9549-4d3606b9f21d.jpg?v=1779805544",
+      "presentation": {
+        "cachedPath": "/images/de77cea3393c600ddcdaeee537824fc238d47bdde7dc146457222128654841c9.webp"
+      }
+    },
+    {
+      "id": "arrival-d37e1446ce6172b6ea96",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Fudge",
+      "style": "7622460309617",
+      "productVariantId": "7622460309617",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Fudge",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-fudge",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5389.jpg?v=1779806079",
+      "presentation": {
+        "cachedPath": "/images/01f61f2d1dce8cadbb29edbc7e573c6544273324d7d45994e2cf56a1e544b5c2.webp"
+      }
+    },
+    {
+      "id": "arrival-b9f2be4ace094fda6f5b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Gaily",
+      "style": "7460887036017",
+      "productVariantId": "7460887036017",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Gaily",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-gaily",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5222_882ce307-3434-4de5-b278-8e892160b663.jpg?v=1779806254",
+      "presentation": {
+        "cachedPath": "/images/c0f8f4284396e34e3c773dde8a58b6eaf1be1d7a4295026c7dd781ae83e71809.webp"
+      }
+    },
+    {
+      "id": "arrival-726f460277beaee2be8c",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Gandalf",
+      "style": "15396187340913",
+      "productVariantId": "15396187340913",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Gandalf",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-gandal",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_83524d48-9ad4-4c83-8d95-31be6d75466a.jpg?v=1790819923",
+      "presentation": {
+        "cachedPath": "/images/52729d46480e24ffc69a0eb89fc46b1216ca87947e053e6a439688677e228c2b.webp"
+      }
+    },
+    {
+      "id": "arrival-d048a8f50aaf583cfeb3",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Gimli",
+      "style": "15402781311089",
+      "productVariantId": "15402781311089",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Gimli",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-gimli",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/Pane_Nogi_Gimli_main_1_8367f4b6-5e75-4ed7-b4b2-42e043374bdf.jpg?v=1791394355",
+      "presentation": {
+        "cachedPath": "/images/69b8e61ad5a3e871ebcbe4591ad3c4d13e252c56c02064e2adfe323074bde79e.webp"
+      }
+    },
+    {
+      "id": "arrival-4de686e6c95ec6c754d6",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Gooseberry",
+      "style": "7476717027441",
+      "productVariantId": "7476717027441",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Gooseberry",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-gooseberry",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5269_5728eb31-449f-4f06-8ab8-cb4eb135c4a9.jpg?v=1791791768",
+      "presentation": {
+        "cachedPath": "/images/3604dcb16f615263dad5ae1700870de897a0953033011d803850a0849bb6e905.webp"
+      }
+    },
+    {
+      "id": "arrival-14b4fe6437ca260c4f9e",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Ground Ginger",
+      "style": "7476780531825",
+      "productVariantId": "7476780531825",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Ground Ginger",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-ground-ginger",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5270.png?v=1792660215",
+      "presentation": {
+        "cachedPath": "/images/4540e7ceb94d028b515066f435d1de4dab18871a2185a6e3e72bdcfac90f9118.webp"
+      }
+    },
+    {
+      "id": "new-20260923-fb0055cbc6657935",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Home Court",
+      "style": "7645575315569",
+      "productVariantId": "7645575315569",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Home Court",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-home-court",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5441_f7dbf8e9-e478-4299-b139-8a2e1371211a.jpg?v=1779805603",
+      "presentation": {
+        "cachedPath": "/images/c4fd0593fc80c6684d4a48c642ad22a528275d29704eb53e0a8ff96ab5a848d3.webp"
+      }
+    },
+    {
+      "id": "arrival-7cb2670962f67f1123c1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Hop Point",
+      "style": "7645575250033",
+      "productVariantId": "7645575250033",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Hop Point",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-hop-point",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5395_ad27d349-ae59-4723-b390-a8d742b22199.jpg?v=1779805618",
+      "presentation": {
+        "cachedPath": "/images/2082c1ffb88cea4d18e07f788609da353e958543d7f94dbcbb7a0520d4819553.webp"
+      }
+    },
+    {
+      "id": "arrival-1ceb3eec191ab1e3ff6f",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Hornet",
+      "style": "7460769890417",
+      "productVariantId": "7460769890417",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Hornet",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-hornet",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5215_26c3c8a3-9bb6-4844-b5f6-a7871465c0dd.jpg?v=1791791102",
+      "presentation": {
+        "cachedPath": "/images/8e62d23b03ceaeb44d6e528f87db364813c4bfe732397ec6851037ee8dcaf2ab.webp"
+      }
+    },
+    {
+      "id": "arrival-a1e9dbf8058e9b4e3688",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Legolas",
+      "style": "15402776658033",
+      "productVariantId": "15402776658033",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Legolas",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-legolas",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/Pane_Nogi_Legolas_main_1_8afe065a-3111-4ead-82f0-237a1fe6139e.jpg?v=1791394336",
+      "presentation": {
+        "cachedPath": "/images/ded9a5dd916b628548e8dce2689d179f6f6202a2271f6533ec625bc15d5aa2ee.webp"
+      }
+    },
+    {
+      "id": "arrival-5128895af6eabda889fd",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Mint",
+      "style": "7460819206257",
+      "productVariantId": "7460819206257",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Mint",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-mint",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5221_0955a42d-5bff-4022-92d2-5bd74a4a8fec.jpg?v=1779806351",
+      "presentation": {
+        "cachedPath": "/images/396e2d4df5e034a6762161f5e59902614c69b65635b778778bfef62db6f27d09.webp"
+      }
+    },
+    {
+      "id": "arrival-98c0c5025c603830f71b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Mocha Mousse",
+      "style": "7635051937905",
+      "productVariantId": "7635051937905",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Mocha Mousse",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-mocha-mousse",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5337_8d082c08-c39c-4405-9ed9-23d2283b11b1.jpg?v=1779805720",
+      "presentation": {
+        "cachedPath": "/images/cae16115d5c5b7bbff88b1b23164c6ccf5ce84469e954b982c65824c033e7ad5.webp"
+      }
+    },
+    {
+      "id": "arrival-bb9578816ffa46aa61ee",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Moonless Night",
+      "style": "7635052134513",
+      "productVariantId": "7635052134513",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Moonless Night",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-moonless-night",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5339_b85e8029-86ad-42be-97b7-806458241019.jpg?v=1779805706",
+      "presentation": {
+        "cachedPath": "/images/d2df9d38a76beabba8b74b9c61aecac9fc00b66d83bfba336abf405d4ae1709f.webp"
+      }
+    },
+    {
+      "id": "arrival-59f1c53971e699ebd0f2",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Mystique",
+      "style": "7460763697265",
+      "productVariantId": "7460763697265",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Mystique",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-mystique",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5274-1.jpg?v=1755853196",
+      "presentation": {
+        "cachedPath": "/images/540369980fffba7f77c148276f45d23ee23506bb3a672b502ab80a37c0820ac2.webp"
+      }
+    },
+    {
+      "id": "arrival-a26b3beab94c4e6f2408",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Noctra",
+      "style": "7632084729969",
+      "productVariantId": "7632084729969",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Noctra",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-noctra",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5440.jpg?v=1779805751",
+      "presentation": {
+        "cachedPath": "/images/c73762db70bd654c236c86607e09b899a9e6b2469fda3f43e41af34730982f9f.webp"
+      }
+    },
+    {
+      "id": "arrival-6e17f7638c50c29f6185",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Pelican",
+      "style": "7684779507825",
+      "productVariantId": "7684779507825",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Pelican",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-pelican",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5198_bb2a219b-3815-4628-bc6a-5760ccf43468.jpg?v=1786955474",
+      "presentation": {
+        "cachedPath": "/images/f306f575f1e653a197825b9643288e037217555c04e61f2b51940b4e98baf953.webp"
+      }
+    },
+    {
+      "id": "arrival-3df1e6d5ba133894cd4c",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Percheron",
+      "style": "7797738930289",
+      "productVariantId": "7797738930289",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Percheron",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-percheron",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_a9b5bf44-ae95-4e32-a1b2-5f323808b691.jpg?v=1786525714",
+      "presentation": {
+        "cachedPath": "/images/145c6640bb0cd4c174a82c42b9a69f4c16d16766d8ad73eae76dc330edc208ab.webp"
+      }
+    },
+    {
+      "id": "arrival-35780e35f123458e9c4b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Pine Mist",
+      "style": "7645575479409",
+      "productVariantId": "7645575479409",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Pine Mist",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-pine-mist",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5367_0c5f6161-561f-48cc-b94f-9739932478ed.jpg?v=1779805567",
+      "presentation": {
+        "cachedPath": "/images/1d8e46a37a35e667fcb19362ee93bcdfdbee74e24ddbe6b727662193c9c2c7bd.webp"
+      }
+    },
+    {
+      "id": "arrival-cbe255c8a85fa0056e84",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Rio De Janeiro",
+      "style": "7628239601777",
+      "productVariantId": "7628239601777",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Rio De Janeiro",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-rio-de-janeiro",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5196_9ce82261-4e28-4920-8dfc-fcbd7b0909e6.jpg?v=1779806059",
+      "presentation": {
+        "cachedPath": "/images/f4300f80e9a91e81069811071be7986fab777e9dc3b14f2dfa373b5723048cd5.webp"
+      }
+    },
+    {
+      "id": "arrival-08c52c0485c47a3a1b74",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Ripe",
+      "style": "7460832084081",
+      "productVariantId": "7460832084081",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Ripe",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-ripe",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5223_85cb342e-375d-4f51-b263-2f0bfdaa38b4.jpg?v=1779806287",
+      "presentation": {
+        "cachedPath": "/images/5d66657bbe31d7446d04649e7bc41c23d22c075f91cc723cf8ff166f82f79c24.webp"
+      }
+    },
+    {
+      "id": "arrival-4656ca331d7586589a0c",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Shale",
+      "style": "7622460178545",
+      "productVariantId": "7622460178545",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Shale",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-shale",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5390.jpg?v=1779806098",
+      "presentation": {
+        "cachedPath": "/images/fcb03a9c227a96e13cf68b7ed5f1cd51431cbb99bfc5d66649e7b255842235c1.webp"
+      }
+    },
+    {
+      "id": "arrival-1fa2ebd761fcafaa6be5",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Siphlophis",
+      "style": "15396188881009",
+      "productVariantId": "15396188881009",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Siphlophis",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-siphlophis",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_3182d3a7-0366-4a69-b36a-58bb809e3fc4.jpg?v=1790820897",
+      "presentation": {
+        "cachedPath": "/images/179b838f4237462b91949b154785c614bc5db91c1a5efe715637b59f1dd777d2.webp"
+      }
+    },
+    {
+      "id": "arrival-d80c6765b26c6a8963de",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Spice Blaze",
+      "style": "7460823302257",
+      "productVariantId": "7460823302257",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Spice Blaze",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-spice-blaze",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5193_34fa93fb-5a92-4201-a4da-aedd3822e33b.jpg?v=1779806330",
+      "presentation": {
+        "cachedPath": "/images/991bebe9f9afc599e1ec6e54417dd060449315c2d59769a7a75910ed378a7bc9.webp"
+      }
+    },
+    {
+      "id": "arrival-dbf6bf55320ab2db12aa",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Tyrian",
+      "style": "7645575151729",
+      "productVariantId": "7645575151729",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Tyrian",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-tyrian",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5394_17508ae7-d216-4db3-a1d5-7922f92e49cb.jpg?v=1779805634",
+      "presentation": {
+        "cachedPath": "/images/3d0f5bf2cc178cc6f5860382f6dc87c3323a3a1f369d2a3c24b58d0329288ec9.webp"
+      }
+    },
+    {
+      "id": "arrival-6326a87cde8010ea917f",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Verse",
+      "style": "7632084631665",
+      "productVariantId": "7632084631665",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Verse",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-verse",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/9_74453bda-faf0-4f21-8cdf-16891ef3e88c.jpg?v=1776740307",
+      "presentation": {
+        "cachedPath": "/images/48cbf156ff649f5d3e7e4d788e699b4f095eb487af3bc88009c9564bad0646dd.webp"
+      }
+    },
+    {
+      "id": "arrival-76745e13eff28af4eaa4",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Willow Creek",
+      "style": "7461045502065",
+      "productVariantId": "7461045502065",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Willow Creek",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-willow-creek",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5217_4c0111df-60c3-4e5d-babd-f6383dfe57d1.jpg?v=1791791483",
+      "presentation": {
+        "cachedPath": "/images/b5de54ae9b6d9de8ae4c335d066367b4bee26d08d6d182576ed282b2ec6a4019.webp"
+      }
+    },
+    {
+      "id": "arrival-eacc16979a8c54622cca",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Men’s Shoes – Wolf Moon",
+      "style": "7551745458289",
+      "productVariantId": "7551745458289",
+      "modelKey": "pane|panelighttrainingnogimensshoes",
+      "colorway": "Wolf Moon",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-men-s-shoes-wolf-moon",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_f566aa02-880b-4b60-bd4f-3bdb68b01595.jpg?v=1765122502",
+      "presentation": {
+        "cachedPath": "/images/a9dbbf89d8335c7805c208a7de4b28a7c24ff54639baecdacf6236c9d43b3e20.webp"
+      }
+    },
+    {
+      "id": "arrival-3d938923976bc5e9ad9a",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes - Ginger Chestnut",
+      "style": "7836648407153",
+      "productVariantId": "7836648407153",
+      "modelKey": "pane|panelighttrainingnogiwomensshoesgingerchestnut",
+      "colorway": "Ginger Chestnut",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ginger-chestnut",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_65e14f21-1eaf-44ba-873d-6651e83b2a67.jpg?v=1789547622",
+      "presentation": {
+        "cachedPath": "/images/35d43e594b40ae3a2631cb50b71237d751a0ac390f02aa77e0d522fc2db1d01b.webp"
+      }
+    },
+    {
+      "id": "arrival-61f016595fa76a5cbf7b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes - Lychee Blush",
+      "style": "7836656894065",
+      "productVariantId": "7836656894065",
+      "modelKey": "pane|panelighttrainingnogiwomensshoeslycheeblush",
+      "colorway": "Lychee Blush",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-lychee-blush",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_45eeed76-6f77-40b6-b287-7624fe4eb8fc.jpg?v=1789549195",
+      "presentation": {
+        "cachedPath": "/images/f83df97e0bc9c8b42ea4c9212b03959498af7e4c0318b05a9b0f23f9a95a5b9e.webp"
+      }
+    },
+    {
+      "id": "arrival-223419c34dfd3e433f5a",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Achromate",
+      "style": "7457683308657",
+      "productVariantId": "7457683308657",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Achromate",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-achromate",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5274_f787f120-7a42-4a08-8518-574c67aea08a.jpg?v=1779806470",
+      "presentation": {
+        "cachedPath": "/images/b5d77fff5944c496228dc5cf4b5d4922a7f36c847f4391fe3c8e014d0b3bbb88.webp"
+      }
+    },
+    {
+      "id": "arrival-5eff3cb2ef95c5a1bf49",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Airliner",
+      "style": "7457683243121",
+      "productVariantId": "7457683243121",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Airliner",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-airliner",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5214_36fe4ab6-c1ef-423a-8dfc-d5fdc5da5f4d.jpg?v=1779806519",
+      "presentation": {
+        "cachedPath": "/images/26c127928ae2ec0aab9073b15a4cb30806f729f743c1f2e8cc219124d05c634a.webp"
+      }
+    },
+    {
+      "id": "arrival-a42f66acdec7f4334b8e",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Aragon",
+      "style": "15402784325745",
+      "productVariantId": "15402784325745",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Aragon",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-aragon",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/Pane_Nogi_Aragon_main_1_314e7d38-7af9-4abe-9bb7-3dd95d7ff054.jpg?v=1791394377",
+      "presentation": {
+        "cachedPath": "/images/7c10ee9a2005265d449dd23d11169af0de453d56b67c2278e1947809dffc8872.webp"
+      }
+    },
+    {
+      "id": "arrival-618341fdbb68414e5885",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Artichoke",
+      "style": "7457683079281",
+      "productVariantId": "7457683079281",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Artichoke",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-artichoke",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5213_bf6f93fa-a649-47d5-acd5-d8323fc06ba6.jpg?v=1779806549",
+      "presentation": {
+        "cachedPath": "/images/def4cf9171c8843052a12de9f8c0ba3c3a39dba7bdd00c990d0f2fc1aa0ee023.webp"
+      }
+    },
+    {
+      "id": "arrival-4111e755d6bb3c08ef68",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Boogie Woogie",
+      "style": "7457682915441",
+      "productVariantId": "7457682915441",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Boogie Woogie",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-boogie-woogie",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5190_f45ee60d-e97c-4f92-8068-72e7f8750daf.jpg?v=1779806609",
+      "presentation": {
+        "cachedPath": "/images/4d86931c8f0396ce094fa6d4c9ad4511220ae3f1a76d9b66ea07631f99276c80.webp"
+      }
+    },
+    {
+      "id": "arrival-521d94f0b5e7daa0b72e",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Boromir",
+      "style": "15396188258417",
+      "productVariantId": "15396188258417",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Boromir",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-boromir",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_8dcf8142-642f-4715-8741-213296aac9bd.jpg?v=1790820442",
+      "presentation": {
+        "cachedPath": "/images/a56c8a9678ab9a938a5f1ffc292691f3e17c12494d3111d975a657f4dbe12ec4.webp"
+      }
+    },
+    {
+      "id": "new-20260923-dcfeec74baea92fc",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Cloudine",
+      "style": "7632084271217",
+      "productVariantId": "7632084271217",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Cloudine",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-cloudine",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5439-1_40473982-63e9-4ff3-9f32-1af065283d34.jpg?v=1779805905",
+      "presentation": {
+        "cachedPath": "/images/568fc428a1a60acdc15b3614d378ac6b49a207d76df502aa8c43192bdc169515.webp"
+      }
+    },
+    {
+      "id": "arrival-c9a9a279f6164dfb4697",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Crimson",
+      "style": "7632084238449",
+      "productVariantId": "7632084238449",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Crimson",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-crimson",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5192_4db94845-1443-4658-b90d-cb0cfff3ee5e.jpg?v=1779805987",
+      "presentation": {
+        "cachedPath": "/images/bb030b666525f1f6658831d3784645dc6153e6691f19d0373ecec411ed62366a.webp"
+      }
+    },
+    {
+      "id": "arrival-6e10cd359149161d6eb3",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Dusk Indigo",
+      "style": "7645576265841",
+      "productVariantId": "7645576265841",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Dusk Indigo",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-dusk-indigo",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5366.jpg?v=1779805431",
+      "presentation": {
+        "cachedPath": "/images/7644387469a6d243f7a6489df440d1cdf8ac2a5c41aab0f81956e0ab42e59b6b.webp"
+      }
+    },
+    {
+      "id": "arrival-e80a3e7bbf058942e1fb",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Fog Rock",
+      "style": "7645576462449",
+      "productVariantId": "7645576462449",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Fog Rock",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-fog-rock",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5368.jpg?v=1779805216",
+      "presentation": {
+        "cachedPath": "/images/de77cea3393c600ddcdaeee537824fc238d47bdde7dc146457222128654841c9.webp"
+      }
+    },
+    {
+      "id": "arrival-7ffb98f1e3c5e2247d3b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Fudge",
+      "style": "7622460113009",
+      "productVariantId": "7622460113009",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Fudge",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-fudge",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5389_b65156a8-48c8-48a4-9cb1-31b637eefbf9.jpg?v=1779806122",
+      "presentation": {
+        "cachedPath": "/images/01f61f2d1dce8cadbb29edbc7e573c6544273324d7d45994e2cf56a1e544b5c2.webp"
+      }
+    },
+    {
+      "id": "arrival-4e432aecc7bfe71d61eb",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Gaily",
+      "style": "7457682522225",
+      "productVariantId": "7457682522225",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Gaily",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gaily",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5222_bde716b2-49e8-4421-ae9f-d3659ebca739.jpg?v=1779806645",
+      "presentation": {
+        "cachedPath": "/images/c0f8f4284396e34e3c773dde8a58b6eaf1be1d7a4295026c7dd781ae83e71809.webp"
+      }
+    },
+    {
+      "id": "arrival-17bf963e364a46c295f5",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Gandalf",
+      "style": "15396187439217",
+      "productVariantId": "15396187439217",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Gandalf",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gandalf",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_83524d48-9ad4-4c83-8d95-31be6d75466a.jpg?v=1790819923",
+      "presentation": {
+        "cachedPath": "/images/52729d46480e24ffc69a0eb89fc46b1216ca87947e053e6a439688677e228c2b.webp"
+      }
+    },
+    {
+      "id": "arrival-515eb2bd376cb056c93c",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Gimli",
+      "style": "15402783572081",
+      "productVariantId": "15402783572081",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Gimli",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gimli",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/Pane_Nogi_Gimli_main_1_9db5ee48-98df-4efc-a413-93e80c92e1a8.jpg?v=1791394361",
+      "presentation": {
+        "cachedPath": "/images/69b8e61ad5a3e871ebcbe4591ad3c4d13e252c56c02064e2adfe323074bde79e.webp"
+      }
+    },
+    {
+      "id": "arrival-e37715eeae2a4ad657a1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Gooseberry",
+      "style": "7476775714929",
+      "productVariantId": "7476775714929",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Gooseberry",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-gooseberry",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5269_5728eb31-449f-4f06-8ab8-cb4eb135c4a9.jpg?v=1791791768",
+      "presentation": {
+        "cachedPath": "/images/3604dcb16f615263dad5ae1700870de897a0953033011d803850a0849bb6e905.webp"
+      }
+    },
+    {
+      "id": "arrival-2b63a9728548e8936508",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Ground Ginger",
+      "style": "7476781711473",
+      "productVariantId": "7476781711473",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Ground Ginger",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ground-ginger",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5270.png?v=1792660215",
+      "presentation": {
+        "cachedPath": "/images/4540e7ceb94d028b515066f435d1de4dab18871a2185a6e3e72bdcfac90f9118.webp"
+      }
+    },
+    {
+      "id": "new-20260923-0c4cdf0b3d5c2728",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Home Court",
+      "style": "7645576233073",
+      "productVariantId": "7645576233073",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Home Court",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-home-court",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5441.jpg?v=1779805453",
+      "presentation": {
+        "cachedPath": "/images/c4fd0593fc80c6684d4a48c642ad22a528275d29704eb53e0a8ff96ab5a848d3.webp"
+      }
+    },
+    {
+      "id": "arrival-981c6dd34f6272458478",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Hop Point",
+      "style": "7645576200305",
+      "productVariantId": "7645576200305",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Hop Point",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-hop-point",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5395.jpg?v=1779805478",
+      "presentation": {
+        "cachedPath": "/images/2082c1ffb88cea4d18e07f788609da353e958543d7f94dbcbb7a0520d4819553.webp"
+      }
+    },
+    {
+      "id": "arrival-9760be99d50c95692e58",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Hornet",
+      "style": "7457683177585",
+      "productVariantId": "7457683177585",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Hornet",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-hornet",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5215_26c3c8a3-9bb6-4844-b5f6-a7871465c0dd.jpg?v=1791791102",
+      "presentation": {
+        "cachedPath": "/images/8e62d23b03ceaeb44d6e528f87db364813c4bfe732397ec6851037ee8dcaf2ab.webp"
+      }
+    },
+    {
+      "id": "arrival-9d756d84788744aeafa0",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Legolas",
+      "style": "15402778165361",
+      "productVariantId": "15402778165361",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Legolas",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-legolas",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/Pane_Nogi_Legolas_main_1_4d9c5e05-5240-43bf-95c5-ef60b872ea5f.jpg?v=1791394349",
+      "presentation": {
+        "cachedPath": "/images/ded9a5dd916b628548e8dce2689d179f6f6202a2271f6533ec625bc15d5aa2ee.webp"
+      }
+    },
+    {
+      "id": "arrival-49a5a635d8666526d953",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Mint",
+      "style": "7457683046513",
+      "productVariantId": "7457683046513",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Mint",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-mint",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5221_8f76c02e-52ef-49d5-bd17-6b1bbef8ddf4.jpg?v=1779806570",
+      "presentation": {
+        "cachedPath": "/images/396e2d4df5e034a6762161f5e59902614c69b65635b778778bfef62db6f27d09.webp"
+      }
+    },
+    {
+      "id": "arrival-cb05bb153e5c16f50593",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Mocha Mousse",
+      "style": "7635052396657",
+      "productVariantId": "7635052396657",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Mocha Mousse",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-mocha-mousse",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5337.jpg?v=1779805684",
+      "presentation": {
+        "cachedPath": "/images/cae16115d5c5b7bbff88b1b23164c6ccf5ce84469e954b982c65824c033e7ad5.webp"
+      }
+    },
+    {
+      "id": "manual-981323eac05ed152",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Moonless Night",
+      "style": "7635052527729",
+      "productVariantId": "7635052527729",
+      "modelKey": "pane|light training nogi women’s shoes",
+      "colorway": "Moonless Night",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-moonless-night",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5339.jpg?v=1779805666",
+      "presentation": {
+        "cachedPath": "/images/d2df9d38a76beabba8b74b9c61aecac9fc00b66d83bfba336abf405d4ae1709f.webp"
+      }
+    },
+    {
+      "id": "arrival-9dca2336aa57fe1df298",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Mystique",
+      "style": "7457683275889",
+      "productVariantId": "7457683275889",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Mystique",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-mystique",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5274-1.jpg?v=1755853196",
+      "presentation": {
+        "cachedPath": "/images/540369980fffba7f77c148276f45d23ee23506bb3a672b502ab80a37c0820ac2.webp"
+      }
+    },
+    {
+      "id": "arrival-24332c2574af6e242f48",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Noctra",
+      "style": "7632084336753",
+      "productVariantId": "7632084336753",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Noctra",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-noctra",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5440_d1287385-f2c6-443d-9a4f-b1a44a9e7d5a.jpg?v=1779805878",
+      "presentation": {
+        "cachedPath": "/images/c73762db70bd654c236c86607e09b899a9e6b2469fda3f43e41af34730982f9f.webp"
+      }
+    },
+    {
+      "id": "arrival-8fcdd535268d3c5d29b7",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Pelican",
+      "style": "7684737695857",
+      "productVariantId": "7684737695857",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Pelican",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-pelican",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5198_bb2a219b-3815-4628-bc6a-5760ccf43468.jpg?v=1786955474",
+      "presentation": {
+        "cachedPath": "/images/f306f575f1e653a197825b9643288e037217555c04e61f2b51940b4e98baf953.webp"
+      }
+    },
+    {
+      "id": "arrival-ec287137301a78574bea",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Percheron",
+      "style": "7797756199025",
+      "productVariantId": "7797756199025",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Percheron",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-percheron",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_a9b5bf44-ae95-4e32-a1b2-5f323808b691.jpg?v=1786525714",
+      "presentation": {
+        "cachedPath": "/images/145c6640bb0cd4c174a82c42b9a69f4c16d16766d8ad73eae76dc330edc208ab.webp"
+      }
+    },
+    {
+      "id": "arrival-1a73ae60ad373f6c6dd8",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Pine Mist",
+      "style": "7645576331377",
+      "productVariantId": "7645576331377",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Pine Mist",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-pine-mist",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5367.jpg?v=1779805306",
+      "presentation": {
+        "cachedPath": "/images/1d8e46a37a35e667fcb19362ee93bcdfdbee74e24ddbe6b727662193c9c2c7bd.webp"
+      }
+    },
+    {
+      "id": "arrival-b7506711385a69044372",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Rio De Janeiro",
+      "style": "7628239634545",
+      "productVariantId": "7628239634545",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Rio De Janeiro",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-rio-de-janeiro",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5196_e1ce1237-eeae-45b3-a21f-67ae054a6081.jpg?v=1779806019",
+      "presentation": {
+        "cachedPath": "/images/f4300f80e9a91e81069811071be7986fab777e9dc3b14f2dfa373b5723048cd5.webp"
+      }
+    },
+    {
+      "id": "arrival-f43e395f247148acdf2e",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Ripe",
+      "style": "7457682718833",
+      "productVariantId": "7457682718833",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Ripe",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-ripe",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5223_9ce25705-2f7b-4413-bfaa-132b638000af.jpg?v=1779806627",
+      "presentation": {
+        "cachedPath": "/images/5d66657bbe31d7446d04649e7bc41c23d22c075f91cc723cf8ff166f82f79c24.webp"
+      }
+    },
+    {
+      "id": "arrival-3d9ad88b97fb83d07045",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Shale",
+      "style": "7622459949169",
+      "productVariantId": "7622459949169",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Shale",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-shale",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5390_d609b45a-54e8-4f86-8b3b-629075fd7846.jpg?v=1779806141",
+      "presentation": {
+        "cachedPath": "/images/fcb03a9c227a96e13cf68b7ed5f1cd51431cbb99bfc5d66649e7b255842235c1.webp"
+      }
+    },
+    {
+      "id": "arrival-519450b4db0c47dc0c0a",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Siphlophis",
+      "style": "15396188913777",
+      "productVariantId": "15396188913777",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Siphlophis",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-siphlophis",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_3182d3a7-0366-4a69-b36a-58bb809e3fc4.jpg?v=1790820897",
+      "presentation": {
+        "cachedPath": "/images/179b838f4237462b91949b154785c614bc5db91c1a5efe715637b59f1dd777d2.webp"
+      }
+    },
+    {
+      "id": "arrival-51fb51c07b77d7d93002",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Spice Blaze",
+      "style": "7457682980977",
+      "productVariantId": "7457682980977",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Spice Blaze",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-spice-blaze",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5193_3007b6d7-e51b-4b5c-9e34-5b01b2cd1c71.jpg?v=1779806589",
+      "presentation": {
+        "cachedPath": "/images/991bebe9f9afc599e1ec6e54417dd060449315c2d59769a7a75910ed378a7bc9.webp"
+      }
+    },
+    {
+      "id": "arrival-2b60f35b112f79aa3219",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Tyrian",
+      "style": "7645576069233",
+      "productVariantId": "7645576069233",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Tyrian",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-tyrian",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5394.jpg?v=1779805511",
+      "presentation": {
+        "cachedPath": "/images/3d0f5bf2cc178cc6f5860382f6dc87c3323a3a1f369d2a3c24b58d0329288ec9.webp"
+      }
+    },
+    {
+      "id": "arrival-83a1a2c29a12b358420b",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Verse",
+      "style": "7632083910769",
+      "productVariantId": "7632083910769",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Verse",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-verse",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/9_74453bda-faf0-4f21-8cdf-16891ef3e88c.jpg?v=1776740307",
+      "presentation": {
+        "cachedPath": "/images/48cbf156ff649f5d3e7e4d788e699b4f095eb487af3bc88009c9564bad0646dd.webp"
+      }
+    },
+    {
+      "id": "arrival-bc3fe9c986635026f778",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Willow Creek",
+      "style": "7457682358385",
+      "productVariantId": "7457682358385",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Willow Creek",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-willow-creek",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5217_4c0111df-60c3-4e5d-babd-f6383dfe57d1.jpg?v=1791791483",
+      "presentation": {
+        "cachedPath": "/images/b5de54ae9b6d9de8ae4c335d066367b4bee26d08d6d182576ed282b2ec6a4019.webp"
+      }
+    },
+    {
+      "id": "arrival-d57e3318e922bd1678c1",
+      "brand": "PANE",
+      "name": "Pane Light Training Nogi Women’s Shoes – Wolf Moon",
+      "style": "7551745884273",
+      "productVariantId": "7551745884273",
+      "modelKey": "pane|panelighttrainingnogiwomensshoes",
+      "colorway": "Wolf Moon",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-nogi-women-s-shoes-wolf-moon",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_f566aa02-880b-4b60-bd4f-3bdb68b01595.jpg?v=1765122502",
+      "presentation": {
+        "cachedPath": "/images/a9dbbf89d8335c7805c208a7de4b28a7c24ff54639baecdacf6236c9d43b3e20.webp"
+      }
+    },
+    {
+      "id": "arrival-b5a6055d12e17dbf4d2c",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Blush",
+      "style": "15448398168177",
+      "productVariantId": "15448398168177",
+      "modelKey": "pane|panelighttrainingwomensshoesblush",
+      "colorway": "Blush",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-blush-1",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_3ce1ce97-71b6-4ba2-b5a1-9f86c36140c4.png?v=1793205888",
+      "presentation": {
+        "cachedPath": "/images/672c279603a9ff2ae050f07f07a2646165b9b19323d54b663e1b3f79a90fb30c.webp"
+      }
+    },
+    {
+      "id": "arrival-465e5f3537f9cd8a724d",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Lacquer",
+      "style": "15448376213617",
+      "productVariantId": "15448376213617",
+      "modelKey": "pane|panelighttrainingwomensshoeslacquer",
+      "colorway": "Lacquer",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-lacquer",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_5b34bd3c-586b-465b-b84e-798ef7224591.png?v=1793205082",
+      "presentation": {
+        "cachedPath": "/images/29e7f3dfa9e52b1bbcdd6909ee039ae64588496f520d7fb6235f8d891714446b.webp"
+      }
+    },
+    {
+      "id": "arrival-79a57c41e7315bc91349",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Obsidian",
+      "style": "15448392630385",
+      "productVariantId": "15448392630385",
+      "modelKey": "pane|panelighttrainingwomensshoesobsidian",
+      "colorway": "Obsidian",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-obsidian",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_4ae0cc58-d38e-4e17-b79a-5086ea89e2ac.png?v=1793205546",
+      "presentation": {
+        "cachedPath": "/images/df323ea2c4be539c0f7c90c4e9bf702042590ea6dcec612978be543213201647.webp"
+      }
+    },
+    {
+      "id": "arrival-d4c44588182156e9e3ad",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Pristine",
+      "style": "15446838083697",
+      "productVariantId": "15446838083697",
+      "modelKey": "pane|panelighttrainingwomensshoespristine",
+      "colorway": "Pristine",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-pristine",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_8acd5228-2e69-4f83-9361-17c86d1510b8.png?v=1793203721",
+      "presentation": {
+        "cachedPath": "/images/35a93f77e9e8d5ba6fb3bdeccc44d3c279818e4485aedb35108b1e37ef03d261.webp"
+      }
+    },
+    {
+      "id": "arrival-9952613cb125dfb795fb",
+      "brand": "PANE",
+      "name": "Pane Light Training Women's Shoes - Suntan",
+      "style": "15448364810353",
+      "productVariantId": "15448364810353",
+      "modelKey": "pane|panelighttrainingwomensshoessuntan",
+      "colorway": "Suntan",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-womens-shoes-suntan",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_e4591558-55f9-4784-8e7d-e4c7e811c603.png?v=1793204378",
+      "presentation": {
+        "cachedPath": "/images/3a580901b498bfb7d29bb6c524dbda7e58a618dc130a73f003406c502792e630.webp"
+      }
+    },
+    {
+      "id": "arrival-0f45ec52b6c12485cb11",
+      "brand": "PANE",
+      "name": "Pane Light Training Women’s Shoes – Travertine",
+      "style": "7475809026161",
+      "productVariantId": "7475809026161",
+      "modelKey": "pane|panelighttrainingwomensshoes",
+      "colorway": "Travertine",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-light-training-women-s-shoes-travertine",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5096-1.jpg?v=1757922786",
+      "presentation": {
+        "cachedPath": "/images/2538dec05349d3bce9c538d5462ae02d4716e3bc4afbf007ad824b9b9a10a341.webp"
+      }
+    },
+    {
+      "id": "new-20260923-a93e1d1083b01344",
+      "brand": "PANE",
+      "name": "Pane Pace Nostalgia 2.0 Men’s Shoes – Chestnut Blaze",
+      "style": "7706327285873",
+      "productVariantId": "7706327285873",
+      "modelKey": "pane|panepacenostalgia20mensshoes",
+      "colorway": "Chestnut Blaze",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-pace-nostalgia-2-0-men-s-shoes-chestnut-blaze",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_c730b552-f27b-4877-84dc-510d52f7d7a3.jpg?v=1781754010",
+      "presentation": {
+        "cachedPath": "/images/9f7da57a2d460c4c156ba54be71f3b7b07d3e20e168c650310b4bf62ab6d5e33.webp"
+      }
+    },
+    {
+      "id": "new-20260923-83bb61c332916124",
+      "brand": "PANE",
+      "name": "Pane Pace Nostalgia 2.0 Men’s Shoes – Pastel Drift",
+      "style": "7706271416433",
+      "productVariantId": "7706271416433",
+      "modelKey": "pane|panepacenostalgia20mensshoes",
+      "colorway": "Pastel Drift",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-pace-nostalgia-2-0-men-s-shoes-pastel-drift",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_2a46e063-bea8-4fc0-8766-53751b6689d3.jpg?v=1781750973",
+      "presentation": {
+        "cachedPath": "/images/0c0952b8560cb2c14e78a45d94661c79014fc81406bf69f7d0de521dd1b28395.webp"
+      }
+    },
+    {
+      "id": "new-20260923-c699e6bda2da89ce",
+      "brand": "PANE",
+      "name": "Pane Pace Nostalgia 2.0 Women’s Shoes – Chestnut Blaze",
+      "style": "7706303365233",
+      "productVariantId": "7706303365233",
+      "modelKey": "pane|panepacenostalgia20womensshoes",
+      "colorway": "Chestnut Blaze",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-pace-nostalgia-2-0-women-s-shoes-chestnut-blaze",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_c730b552-f27b-4877-84dc-510d52f7d7a3.jpg?v=1781754010",
+      "presentation": {
+        "cachedPath": "/images/9f7da57a2d460c4c156ba54be71f3b7b07d3e20e168c650310b4bf62ab6d5e33.webp"
+      }
+    },
+    {
+      "id": "new-20260923-075f964950a3d608",
+      "brand": "PANE",
+      "name": "Pane Pace Nostalgia 2.0 Women’s Shoes – Pastel Drift",
+      "style": "7706220888177",
+      "productVariantId": "7706220888177",
+      "modelKey": "pane|panepacenostalgia20womensshoes",
+      "colorway": "Pastel Drift",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-pace-nostalgia-2-0-women-s-shoes-pastel-drift",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/1_2a46e063-bea8-4fc0-8766-53751b6689d3.jpg?v=1781750973",
+      "presentation": {
+        "cachedPath": "/images/0c0952b8560cb2c14e78a45d94661c79014fc81406bf69f7d0de521dd1b28395.webp"
+      }
+    },
+    {
+      "id": "new-20260923-9d4f3d8a63e71a0c",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Crimson Ink",
+      "style": "pane-zephyr-training-men-s-shoes-crimson-ink",
+      "modelKey": "pane|panezephyrtrainingmensshoes",
+      "colorway": "Crimson Ink",
+      "gender": "",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-crimson-ink",
+      "image": "https://paneshoes.com/cdn/shop/files/1_32cb4b71-79b9-45b7-ba7c-fee3740640b9.jpg?v=1787125016&width=2000",
+      "presentation": {
+        "cachedPath": "/images/af4a4e5b6ba73f344c5a22db0ae48a71c9e76b50dd55918825000aa14ae83c31.webp"
+      }
+    },
+    {
+      "id": "new-20260923-1fab5b6b78b13618",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Gray Moss",
+      "style": "pane-zephyr-training-men-s-shoes-gray-moss",
+      "modelKey": "pane|panezephyrtrainingmensshoes",
+      "colorway": "Gray Moss",
+      "gender": "",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-gray-moss",
+      "image": "https://paneshoes.com/cdn/shop/files/1_42368fc0-843b-416a-bb5c-435317c597ed.jpg?v=1787124587&width=2000",
+      "presentation": {
+        "cachedPath": "/images/e69c95c1d4b4e4279e9c476b2a9e8e2fb6ffe35c64956567019a7402ea5e1c24.webp"
+      }
+    },
+    {
+      "id": "new-20260923-88c7f38c914647b8",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Imperial Purple",
+      "style": "pane-zephyr-training-men-s-shoes-imperial-purple",
+      "modelKey": "pane|panezephyrtrainingmensshoes",
+      "colorway": "Imperial Purple",
+      "gender": "",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-imperial-purple",
+      "image": "https://paneshoes.com/cdn/shop/files/1_89b6f997-9c34-40b0-b764-6d9531f67106.jpg?v=1787125781&width=2000",
+      "presentation": {
+        "cachedPath": "/images/943e5eb9da8ca2d6696bf0d7886b2e26b9819b55bbc8ae12bcfaf594ffc9aefa.webp"
+      }
+    },
+    {
+      "id": "arrival-5b600c549722d19873af",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Juniper",
+      "style": "7460760715377",
+      "productVariantId": "7460760715377",
+      "modelKey": "pane|panezephyrtrainingmensshoes",
+      "colorway": "Juniper",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-juniper",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5332_f96d8236-77c6-404e-89f1-29140105110c.jpg?v=1779804982",
+      "presentation": {
+        "cachedPath": "/images/f37b1350e20bdbcfe6ce7b9b82e10e783257753e0914284c3e1c4c192ce897f3.webp"
+      }
+    },
+    {
+      "id": "arrival-371f6c0ec4da94054eeb",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Opaque",
+      "style": "7457684062321",
+      "productVariantId": "7457684062321",
+      "modelKey": "pane|panezephyrtrainingmensshoes",
+      "colorway": "Opaque",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-opaque",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/062a2dff172035137ad5866a7b9673ec.jpg?v=1776240018",
+      "presentation": {
+        "cachedPath": "/images/824908b6dab3258ffcecb9b34255eb1976644252dc7f45baae4dfa7109d81595.webp"
+      }
+    },
+    {
+      "id": "arrival-c8130381cee39d9ee9d5",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Porcelain",
+      "style": "7460732141681",
+      "productVariantId": "7460732141681",
+      "modelKey": "pane|panezephyrtrainingmensshoes",
+      "colorway": "Porcelain",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-porcelain",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5324-1.jpg?v=1755850040",
+      "presentation": {
+        "cachedPath": "/images/1b05adf97c8369eeb8c4da81e2932eaccafa4a98a9d9baa9bf9103583f420eac.webp"
+      }
+    },
+    {
+      "id": "arrival-f823056a6c6784bd22ea",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Rowan",
+      "style": "7460763271281",
+      "productVariantId": "7460763271281",
+      "modelKey": "pane|panezephyrtrainingmensshoes",
+      "colorway": "Rowan",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-rowan",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5331_b74490d4-f9b2-4bcd-8ffb-4d08eed28348.jpg?v=1779804910",
+      "presentation": {
+        "cachedPath": "/images/5f471c4f6d7a91030738e3c9bb3806ad5b3adb759373fec96be6db8355e82c50.webp"
+      }
+    },
+    {
+      "id": "new-20260923-5bb11cd3432a6894",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Silk Cyan",
+      "style": "pane-zephyr-training-men-s-shoes-silk-cyan",
+      "modelKey": "pane|panezephyrtrainingmensshoes",
+      "colorway": "Silk Cyan",
+      "gender": "",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-silk-cyan",
+      "image": "https://paneshoes.com/cdn/shop/files/1_7b7fe3eb-becb-4ac3-8f2e-4d727b3596dc.jpg?v=1787128449&width=2000",
+      "presentation": {
+        "cachedPath": "/images/4a0c20dad3926cff1a419a21923361d91f90ad3af607c19e384b390184fa2308.webp"
+      }
+    },
+    {
+      "id": "arrival-86bc69db3aa4328124b2",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes – Sterling",
+      "style": "7460760420465",
+      "productVariantId": "7460760420465",
+      "modelKey": "pane|panezephyrtrainingmensshoes",
+      "colorway": "Sterling",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-sterling",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5342_c173931a-919c-4d60-8879-c644c714dc5d.jpg?v=1779805025",
+      "presentation": {
+        "cachedPath": "/images/c0ea9bfcfd18786098d473ffe7ef93c36172a1ef037e043c98801a9a0697cf25.webp"
+      }
+    },
+    {
+      "id": "arrival-b9d25970a807dc2bcf41",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Men’s Shoes-Manu Bay",
+      "style": "7577021448305",
+      "productVariantId": "7577021448305",
+      "modelKey": "pane|panezephyrtrainingmensshoesmanubay",
+      "colorway": "Manu Bay",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-men-s-shoes-manu-bay",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097",
+      "presentation": {
+        "cachedPath": "/images/ea3181941d9d910851a7597b96ee9e58c014b7c8c3cacf29dda85a91810d6df3.webp"
+      }
+    },
+    {
+      "id": "arrival-cd8f4dd7458e9c30d364",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Men’s Shoes – Analogue glitch",
+      "style": "7604872314993",
+      "productVariantId": "7604872314993",
+      "modelKey": "pane|panezephyrtrainingpouchingmensshoes",
+      "colorway": "Analogue glitch",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-analogue-glitch",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5424_fdedfded-c219-4226-b2c5-3a07fc367459.jpg?v=1779804781",
+      "presentation": {
+        "cachedPath": "/images/f382054c0ae172ed2ecdcd12f3414b5b9cec93aea8a52db1b2bc30b42daaf50e.webp"
+      }
+    },
+    {
+      "id": "arrival-61343cec96fd61f471a7",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Men’s Shoes – Code Retro",
+      "style": "7604872380529",
+      "productVariantId": "7604872380529",
+      "modelKey": "pane|panezephyrtrainingpouchingmensshoes",
+      "colorway": "Code Retro",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-code-retro",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5429_67eabdae-f282-4978-9ff2-ff8e2efa8e64.jpg?v=1779804709",
+      "presentation": {
+        "cachedPath": "/images/bb998ad606a3385666a43a919c47b1daf4c8777a6bf2dbacef2540aeebff216e.webp"
+      }
+    },
+    {
+      "id": "arrival-f1f956a5aeed6117a576",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Men’s Shoes – Hologram Fade",
+      "style": "7604871790705",
+      "productVariantId": "7604871790705",
+      "modelKey": "pane|panezephyrtrainingpouchingmensshoes",
+      "colorway": "Hologram Fade",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-hologram-fade",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5413_9d80ac6f-0c10-491a-984e-a1c6ca4f79d9.jpg?v=1779784297",
+      "presentation": {
+        "cachedPath": "/images/5e3fc134e0965a23249119e7babde492cc7e61d291983fcb5d22e8bc9cff9909.webp"
+      }
+    },
+    {
+      "id": "arrival-91a49281b69ba63591a8",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Men’s Shoes – Raw Sample",
+      "style": "7604872216689",
+      "productVariantId": "7604872216689",
+      "modelKey": "pane|panezephyrtrainingpouchingmensshoes",
+      "colorway": "Raw Sample",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-raw-sample",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5423_89b413df-c7bf-48b3-b416-299fe127ee5b.jpg?v=1779804846",
+      "presentation": {
+        "cachedPath": "/images/dd01ebdb07b7361663e025ee816425591964629b3e3a58a2aa477b630e49e0f8.webp"
+      }
+    },
+    {
+      "id": "arrival-5427eae4818b42c91725",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Men’s Shoes – Time Traveler",
+      "style": "7604872085617",
+      "productVariantId": "7604872085617",
+      "modelKey": "pane|panezephyrtrainingpouchingmensshoes",
+      "colorway": "Time Traveler",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-pouching-men-s-shoes-time-traveler",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5414_ef972336-e50c-42f0-8c68-98235038d6a8.jpg?v=1779804636",
+      "presentation": {
+        "cachedPath": "/images/0119de5b9de961e384e5d34a6ab3c6d5d66757c658d5998c7b2187f6abaab368.webp"
+      }
+    },
+    {
+      "id": "arrival-b3582a461fa10b2cdc4b",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Analogue glitch",
+      "style": "7604872970353",
+      "productVariantId": "7604872970353",
+      "modelKey": "pane|panezephyrtrainingpouchingwomensshoes",
+      "colorway": "Analogue glitch",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-analogue-glitch",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5424_fdedfded-c219-4226-b2c5-3a07fc367459.jpg?v=1779804781",
+      "presentation": {
+        "cachedPath": "/images/f382054c0ae172ed2ecdcd12f3414b5b9cec93aea8a52db1b2bc30b42daaf50e.webp"
+      }
+    },
+    {
+      "id": "arrival-fc3a8b00f7ceb19390a2",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Code Retro",
+      "style": "7604873003121",
+      "productVariantId": "7604873003121",
+      "modelKey": "pane|panezephyrtrainingpouchingwomensshoes",
+      "colorway": "Code Retro",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-code-retro",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5429_67eabdae-f282-4978-9ff2-ff8e2efa8e64.jpg?v=1779804709",
+      "presentation": {
+        "cachedPath": "/images/bb998ad606a3385666a43a919c47b1daf4c8777a6bf2dbacef2540aeebff216e.webp"
+      }
+    },
+    {
+      "id": "arrival-44d185b9dcc0855912ef",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Hologram Fade",
+      "style": "7604872773745",
+      "productVariantId": "7604872773745",
+      "modelKey": "pane|panezephyrtrainingpouchingwomensshoes",
+      "colorway": "Hologram Fade",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-hologram-fade",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5413_9d80ac6f-0c10-491a-984e-a1c6ca4f79d9.jpg?v=1779784297",
+      "presentation": {
+        "cachedPath": "/images/5e3fc134e0965a23249119e7babde492cc7e61d291983fcb5d22e8bc9cff9909.webp"
+      }
+    },
+    {
+      "id": "arrival-dfef0a8ada3636aef5fa",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Raw Sample",
+      "style": "7604872872049",
+      "productVariantId": "7604872872049",
+      "modelKey": "pane|panezephyrtrainingpouchingwomensshoes",
+      "colorway": "Raw Sample",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-raw-sample",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5423_89b413df-c7bf-48b3-b416-299fe127ee5b.jpg?v=1779804846",
+      "presentation": {
+        "cachedPath": "/images/dd01ebdb07b7361663e025ee816425591964629b3e3a58a2aa477b630e49e0f8.webp"
+      }
+    },
+    {
+      "id": "arrival-36b667db36ff69699272",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Pouching Women’s Shoes – Time Traveler",
+      "style": "7604872839281",
+      "productVariantId": "7604872839281",
+      "modelKey": "pane|panezephyrtrainingpouchingwomensshoes",
+      "colorway": "Time Traveler",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-pouching-women-s-shoes-time-traveler",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5414_ef972336-e50c-42f0-8c68-98235038d6a8.jpg?v=1779804636",
+      "presentation": {
+        "cachedPath": "/images/0119de5b9de961e384e5d34a6ab3c6d5d66757c658d5998c7b2187f6abaab368.webp"
+      }
+    },
+    {
+      "id": "new-20260923-55d72bde31a66e94",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Crimson Ink",
+      "style": "pane-zephyr-training-women-s-shoes-crimson-ink",
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "colorway": "Crimson Ink",
+      "gender": "",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-crimson-ink",
+      "image": "https://paneshoes.com/cdn/shop/files/1_32cb4b71-79b9-45b7-ba7c-fee3740640b9.jpg?v=1787125016&width=2000",
+      "presentation": {
+        "cachedPath": "/images/af4a4e5b6ba73f344c5a22db0ae48a71c9e76b50dd55918825000aa14ae83c31.webp"
+      }
+    },
+    {
+      "id": "new-20260923-9d29fb4817fa10e0",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Gray Moss",
+      "style": "pane-zephyr-training-women-s-shoes-gray-moss",
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "colorway": "Gray Moss",
+      "gender": "",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-gray-moss",
+      "image": "https://paneshoes.com/cdn/shop/files/1_42368fc0-843b-416a-bb5c-435317c597ed.jpg?v=1787124587&width=2000",
+      "presentation": {
+        "cachedPath": "/images/e69c95c1d4b4e4279e9c476b2a9e8e2fb6ffe35c64956567019a7402ea5e1c24.webp"
+      }
+    },
+    {
+      "id": "new-20260923-a8e13d96a0ce226a",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Imperial Purple",
+      "style": "pane-zephyr-training-women-s-shoes-imperial-purple",
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "colorway": "Imperial Purple",
+      "gender": "",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-imperial-purple",
+      "image": "https://paneshoes.com/cdn/shop/files/1_89b6f997-9c34-40b0-b764-6d9531f67106.jpg?v=1787125781&width=2000",
+      "presentation": {
+        "cachedPath": "/images/943e5eb9da8ca2d6696bf0d7886b2e26b9819b55bbc8ae12bcfaf594ffc9aefa.webp"
+      }
+    },
+    {
+      "id": "arrival-7840e4e335aa9dd763c3",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Juniper",
+      "style": "7457683406961",
+      "productVariantId": "7457683406961",
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "colorway": "Juniper",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-juniper",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5332_f96d8236-77c6-404e-89f1-29140105110c.jpg?v=1779804982",
+      "presentation": {
+        "cachedPath": "/images/f37b1350e20bdbcfe6ce7b9b82e10e783257753e0914284c3e1c4c192ce897f3.webp"
+      }
+    },
+    {
+      "id": "manual-23d6bbc4f594cb24",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Opaque",
+      "style": "7459676487793",
+      "productVariantId": "7459676487793",
+      "modelKey": "pane|zephyr training women’s shoes",
+      "colorway": "Opaque",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-opaque",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/062a2dff172035137ad5866a7b9673ec.jpg?v=1776240018",
+      "presentation": {
+        "cachedPath": "/images/824908b6dab3258ffcecb9b34255eb1976644252dc7f45baae4dfa7109d81595.webp"
+      }
+    },
+    {
+      "id": "arrival-cd1aa5306ad2c6844ca1",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Porcelain",
+      "style": "7457683931249",
+      "productVariantId": "7457683931249",
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "colorway": "Porcelain",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-porcelain",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5324-1.jpg?v=1755850040",
+      "presentation": {
+        "cachedPath": "/images/1b05adf97c8369eeb8c4da81e2932eaccafa4a98a9d9baa9bf9103583f420eac.webp"
+      }
+    },
+    {
+      "id": "manual-a160d12c6a67f5b9",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Rowan",
+      "style": "7457683374193",
+      "productVariantId": "7457683374193",
+      "modelKey": "pane|zephyr training women’s shoes",
+      "colorway": "Rowan",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-rowan",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5331_b74490d4-f9b2-4bcd-8ffb-4d08eed28348.jpg?v=1779804910",
+      "presentation": {
+        "cachedPath": "/images/5f471c4f6d7a91030738e3c9bb3806ad5b3adb759373fec96be6db8355e82c50.webp"
+      }
+    },
+    {
+      "id": "xlsx-96e68f24261b0dec",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Silk Cyan",
+      "style": "pane-zephyr-training-women-s-shoes-silk-cyan",
+      "modelKey": "pane|pane zephyr training shoes",
+      "colorway": "Silk Cyan",
+      "gender": "Women",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-silk-cyan",
+      "image": "https://paneshoes.com/cdn/shop/files/1_7b7fe3eb-becb-4ac3-8f2e-4d727b3596dc.jpg?v=1787128449&width=2000",
+      "presentation": {
+        "cachedPath": "/images/4a0c20dad3926cff1a419a21923361d91f90ad3af607c19e384b390184fa2308.webp"
+      }
+    },
+    {
+      "id": "arrival-afc095e50dc7fd94fc67",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes – Sterling",
+      "style": "7457683505265",
+      "productVariantId": "7457683505265",
+      "modelKey": "pane|panezephyrtrainingwomensshoes",
+      "colorway": "Sterling",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-sterling",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5342_c173931a-919c-4d60-8879-c644c714dc5d.jpg?v=1779805025",
+      "presentation": {
+        "cachedPath": "/images/c0ea9bfcfd18786098d473ffe7ef93c36172a1ef037e043c98801a9a0697cf25.webp"
+      }
+    },
+    {
+      "id": "arrival-f32d5bea56e5880848a5",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training Women’s Shoes-Manu Bay",
+      "style": "7577046941809",
+      "productVariantId": "7577046941809",
+      "modelKey": "pane|panezephyrtrainingwomensshoesmanubay",
+      "colorway": "Manu Bay",
+      "gender": "",
+      "url": "https://www.paneshoes.com/products/pane-zephyr-training-women-s-shoes-manu-bay",
+      "image": "https://cdn.shopify.com/s/files/1/0624/9696/4721/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097",
+      "presentation": {
+        "cachedPath": "/images/ea3181941d9d910851a7597b96ee9e58c014b7c8c3cacf29dda85a91810d6df3.webp"
+      }
+    },
+    {
+      "id": "arrival-2992c7eb50b10208a47f",
+      "brand": "ASICS",
+      "name": "BLAZEBLAST Men's Running Shoes",
+      "style": "1011C276-001",
+      "modelKey": "asics|blazeblastmensrunningshoes",
+      "colorway": "Black/Sandstorm",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/blazeblast/p/ANA_1011C276-001.html",
+      "image": "https://images.asics.com/is/image/asics/1011C276_001_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/b690c53f626c3fc1e89018e9cc1363e66f5c90977e4cf878b55168c0a6fa15fa.webp"
+      }
+    },
+    {
+      "id": "arrival-51209236f4c2f74ebe98",
+      "brand": "ASICS",
+      "name": "BLAZEBLAST Women's Running Shoes",
+      "style": "1012C037-500",
+      "modelKey": "asics|blazeblastwomensrunningshoes",
+      "colorway": "Dark Aubergine/Rose Dust",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/blazeblast/p/ANA_1012C037-500.html",
+      "image": "https://images.asics.com/is/image/asics/1012C037_500_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/bc9cc80b9d5de149b2fb24dadfdc911d8f729e8da03912dd8b121e95d344eb75.webp"
+      }
+    },
+    {
+      "id": "arrival-0062cf6f1ee1548b8c2b",
+      "brand": "ASICS",
+      "name": "BLOOMSTRIDE Women's Running Shoes",
+      "style": "1012C019-250",
+      "modelKey": "asics|bloomstridewomensrunningshoes",
+      "colorway": "Oatmeal/Greige",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/bloomstride/p/ANA_1012C019-250.html",
+      "image": "https://images.asics.com/is/image/asics/1012C019_250_SL_LT_GLB-1?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/fad10f6f562559e6f131df7291c25524ec0921ac746396e042ad4e1c7f58bbb9.webp"
+      }
+    },
+    {
+      "id": "arrival-108dad1033ccc8a8d4a2",
+      "brand": "ASICS",
+      "name": "BLOOMSTRIDE Women's Running Shoes",
+      "style": "1012C019-500",
+      "modelKey": "asics|bloomstridewomensrunningshoes",
+      "colorway": "Dahlia/Ube",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/bloomstride/p/ANA_1012C019-500.html",
+      "image": "https://images.asics.com/is/image/asics/1012C019_500_SL_LT_GLB-1?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/6ec85961be1d4463d48b966271bdf86a1f620dd38334331560a6bc0138b425ea.webp"
+      }
+    },
+    {
+      "id": "arrival-c6664a0b56408428130b",
+      "brand": "ASICS",
+      "name": "GEL-CUMULUS 28 LITE-SHOW Women's Running Shoes",
+      "style": "1012C075-400",
+      "modelKey": "asics|gelcumulus28liteshowwomensrunningshoes",
+      "colorway": "Lite Show/Lavender Glow",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-cumulus-28-lite-show/p/ANA_1012C075-400.html",
+      "image": "https://images.asics.com/is/image/asics/1012C075_400_SL_LT_GLB-1?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/7e1590d4abf457af0eefd9716edd7ae165c1119a919f4ee5d2dc0c536aa2ba9e.webp"
+      }
+    },
+    {
+      "id": "arrival-723b6eacc691962a7df1",
+      "brand": "ASICS",
+      "name": "GEL-DS TRAINER LOOP Sportstyle Shoes",
+      "style": "1203A821-001",
+      "modelKey": "asics|geldstrainerloopsportstyleshoes",
+      "colorway": "Black/Gunmetal",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-ds-trainer-loop/p/ANA_1203A821-001.html",
+      "image": "https://images.asics.com/is/image/asics/1203A821_001_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/a851212e4b9ae35e6379a3da1c0c8d9743824bbc48c1d4d5f6a6ea27c1a706d7.webp"
+      }
+    },
+    {
+      "id": "arrival-e144220d6976e62daabb",
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 33 LITE-SHOW Men's Running Shoes",
+      "style": "1011C315-400",
+      "modelKey": "asics|gelkayano33liteshowmensrunningshoes",
+      "colorway": "Lite Show/Orange Glow",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-kayano-33-lite-show/p/ANA_1011C315-400.html",
+      "image": "https://images.asics.com/is/image/asics/1011C315_400_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/51c3287fb0747b1879ea0ee1b0b34d7bde034ffa27c60dc3fcff502feeb7c6d3.webp"
+      }
+    },
+    {
+      "id": "arrival-00a4f193a1d26d1f0312",
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 33 LITE-SHOW Women's Running Shoes",
+      "style": "1012C073-400",
+      "modelKey": "asics|gelkayano33liteshowwomensrunningshoes",
+      "colorway": "Lite Show/Lavender Glow",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-kayano-33-lite-show/p/ANA_1012C073-400.html",
+      "image": "https://images.asics.com/is/image/asics/1012C073_400_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/41722d73ac205b643a2ecc169d903cccfbb56ae5c7ad0b61e91ee903b063f614.webp"
+      }
+    },
+    {
+      "id": "arrival-2aa99c05fe6811dce70c",
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 33 Men's Running Shoes",
+      "style": "1011C167-100",
+      "modelKey": "asics|gelkayano33mensrunningshoes",
+      "colorway": "White/Energy Aqua",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-kayano-33/p/ANA_1011C167-100.html",
+      "image": "https://images.asics.com/is/image/asics/1011C167_100_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/63354934d7400951fa7ceff2fa95a65de9f97e6d4e7e909494a1875ed3b8e405.webp"
+      }
+    },
+    {
+      "id": "arrival-ffa4b7d01542b7073a54",
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 33 Women's Running Shoes",
+      "style": "1012B939-100",
+      "modelKey": "asics|gelkayano33womensrunningshoes",
+      "colorway": "White/Hazy Lilac",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-kayano-33/p/ANA_1012B939-100.html",
+      "image": "https://images.asics.com/is/image/asics/1012B939_100_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/c33f6679e6eeed5b4378bb67855eb991cba4087a458a50ca950bc9c6feb2fdac.webp"
+      }
+    },
+    {
+      "id": "arrival-146374cdaa129ce872ad",
+      "brand": "ASICS",
+      "name": "GEL-NIMBUS 28 TR Men's Trail Running Shoes",
+      "style": "1011C309-250",
+      "modelKey": "asics|gelnimbus28trmenstrailrunningshoes",
+      "colorway": "Simply Taupe/Ocean Haze",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-nimbus-28-tr/p/ANA_1011C309-250.html",
+      "image": "https://images.asics.com/is/image/asics/1011C309_250_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/e4f22dbe701bc38fa70e03be3f49f86284e62751d42b1a183a3a4fec922f4e91.webp"
+      }
+    },
+    {
+      "id": "arrival-5ef31049366c269a97bc",
+      "brand": "ASICS",
+      "name": "GEL-NIMBUS 28 TR Women's Running Shoes",
+      "style": "1012C069-250",
+      "modelKey": "asics|gelnimbus28trwomensrunningshoes",
+      "colorway": "Simply Taupe/Fresh Air",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-nimbus-28-tr/p/ANA_1012C069-250.html",
+      "image": "https://images.asics.com/is/image/asics/1012C069_250_SL_LT_GLB-1?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/fe128381029b966656023981440f9f74679e50f21bbf7c0e2b4bc39d787f0f21.webp"
+      }
+    },
+    {
+      "id": "arrival-b8c4f5b997ce2c690f8b",
+      "brand": "ASICS",
+      "name": "GT-2000 15 LITE-SHOW Men's Running Shoes",
+      "style": "1011C314-400",
+      "modelKey": "asics|gt200015liteshowmensrunningshoes",
+      "colorway": "Lite Show/Orange Glow",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gt-2000-15-lite-show/p/ANA_1011C314-400.html",
+      "image": "https://images.asics.com/is/image/asics/1011C314_400_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/e0333710304755ea5a9dfbf5362bda57a8ef5d591ba82508b4aaef9e9fe88875.jpg"
+      }
+    },
+    {
+      "id": "arrival-496833d7a29ae484efcc",
+      "brand": "ASICS",
+      "name": "GT-2000 15 LITE-SHOW Women's Running Shoes",
+      "style": "1012C074-400",
+      "modelKey": "asics|gt200015liteshowwomensrunningshoes",
+      "colorway": "Lite Show/Lavender Glow",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gt-2000-15-lite-show/p/ANA_1012C074-400.html",
+      "image": "https://images.asics.com/is/image/asics/1012C074_400_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/1f687844a0e8031367cf0fc648bb979ce6b69665789b174b86436288a49dc67a.webp"
+      }
+    },
+    {
+      "id": "arrival-88da657fd9b352657214",
+      "brand": "ASICS",
+      "name": "GT-2000 15 TR Men's Running Shoes",
+      "style": "1011C308-250",
+      "modelKey": "asics|gt200015trmensrunningshoes",
+      "colorway": "Simply Taupe/Foggy Teal",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gt-2000-15-tr/p/ANA_1011C308-250.html",
+      "image": "https://images.asics.com/is/image/asics/1011C308_250_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/4b19fa757f3e6645eed540fa9ef6dda03e4a92d946898422db1a6f6f55462c4f.webp"
+      }
+    },
+    {
+      "id": "arrival-45dc27609d7284bd31d9",
+      "brand": "ASICS",
+      "name": "GT-2000 15 TR Women's Running Shoes",
+      "style": "1012C067-250",
+      "modelKey": "asics|gt200015trwomensrunningshoes",
+      "colorway": "Simply Taupe/Bluebell",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gt-2000-15-tr/p/ANA_1012C067-250.html",
+      "image": "https://images.asics.com/is/image/asics/1012C067_250_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/e80a28a8c980a2250b89ad274983fd0a6292a6318b71151db211055d318ca229.webp"
+      }
+    },
+    {
+      "id": "arrival-b9fc8fafe7b094228a83",
+      "brand": "ASICS",
+      "name": "KIKO KOSTADINOV x LYASA FF II Women’s Sportstyle Shoes & Sneakers",
+      "style": "1202A544-020",
+      "modelKey": "asics|kikokostadinovxlyasaffiiwomenssportstyleshoessneakers",
+      "colorway": "Clay Grey/Jasper Green",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/kiko-kostadinov-x-lyasa-ff-ii/p/ANA_1202A544-020.html",
+      "image": "https://images.asics.com/is/image/asics/1202A544_020_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/86b6ddcc53d405cfe2279a6482c080eba109d886d69ea1e956974574e7967841.webp"
+      }
+    },
+    {
+      "id": "arrival-094dabb5fe527a44e150",
+      "brand": "ASICS",
+      "name": "KIKO KOSTADINOV x LYASA FF II Women’s Sportstyle Shoes & Sneakers",
+      "style": "1202A544-200",
+      "modelKey": "asics|kikokostadinovxlyasaffiiwomenssportstyleshoessneakers",
+      "colorway": "Reddish Brown/Asics Blue",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/kiko-kostadinov-x-lyasa-ff-ii/p/ANA_1202A544-200.html",
+      "image": "https://images.asics.com/is/image/asics/1202A544_200_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/ec0d1ffdf34cee04569ce3c2e84ddfe3b5129a818082cad356025e4abdfb2d16.webp"
+      }
+    },
+    {
+      "id": "arrival-41550f7662df428ed977",
+      "brand": "ASICS",
+      "name": "Member Access NOVABLAST 6 TENKA Men's Running Shoes",
+      "style": "1011C313-800",
+      "modelKey": "asics|memberaccessnovablast6tenkamensrunningshoes",
+      "colorway": "Energy Orange/White",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/novablast-6-tenka/p/ANA_1011C313-800.html",
+      "image": "https://images.asics.com/is/image/asics/1011C313_800_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/3df0b970448720f36f7fea322d2cea24c1846f36f25ea56f5dd3fa70636c5e60.webp"
+      }
+    },
+    {
+      "id": "arrival-74e48f643aac9d063cb4",
+      "brand": "ASICS",
+      "name": "Member Access SONICBLAST 2 TENKA Men's Running Shoes",
+      "style": "1011C311-800",
+      "modelKey": "asics|memberaccesssonicblast2tenkamensrunningshoes",
+      "colorway": "Stadium Orange/White",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/sonicblast-2-tenka/p/ANA_1011C311-800.html",
+      "image": "https://images.asics.com/is/image/asics/1011C311_800_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/df052e322136af1e96e8b5fe4d7ddeb8e6ec60f6f6f59ffc7ef6b34b542bed95.webp"
+      }
+    },
+    {
+      "id": "arrival-746ff580c5acf849f324",
+      "brand": "ASICS",
+      "name": "Member Access SONICBLAST 2 TENKA Women's Running Shoes",
+      "style": "1012C071-700",
+      "modelKey": "asics|memberaccesssonicblast2tenkawomensrunningshoes",
+      "colorway": "Sun Coral/White",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/sonicblast-2-tenka/p/ANA_1012C071-700.html",
+      "image": "https://images.asics.com/is/image/asics/1012C071_700_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/efe84a967055b9e6427f42b16372f2cf861a3a7400de995f8bb439d45631aeb8.webp"
+      }
+    },
+    {
+      "id": "arrival-f90eb8142f6c5340dc45",
+      "brand": "ASICS",
+      "name": "METAFUJI TRAIL 2 Trail Running Shoes & Hiking Shoes",
+      "style": "1013A178-750",
+      "modelKey": "asics|metafujitrail2trailrunningshoeshikingshoes",
+      "colorway": "Illuminate Yellow/Dark Aubergine",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/metafuji-trail-2/p/ANA_1013A178-750.html",
+      "image": "https://images.asics.com/is/image/asics/1013A178_750_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/56425081157211ffa8b122d0b166a4d389930f6ed0dbf92bd6a00339313e01c8.webp"
+      }
+    },
+    {
+      "id": "arrival-7501765132ade66b8ab4",
+      "brand": "ASICS",
+      "name": "NOVABLAST 6 LITE-SHOW Women's Running Shoes",
+      "style": "1012C077-400",
+      "modelKey": "asics|novablast6liteshowwomensrunningshoes",
+      "colorway": "Lite Show/Lavender Glow",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/novablast-6-lite-show/p/ANA_1012C077-400.html",
+      "image": "https://images.asics.com/is/image/asics/1012C077_400_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/75697a11e2edd97504c83b194cbf69b9e13ecf9f2402c423fa77305c38b36714.jpg"
+      }
+    },
+    {
+      "id": "arrival-37712390135a37102ded",
+      "brand": "ASICS",
+      "name": "SONICBLAST 2 Men's Running Shoes",
+      "style": "1011C244-400",
+      "modelKey": "asics|sonicblast2mensrunningshoes",
+      "colorway": "Energy Aqua/Illuminate Yellow",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/sonicblast-2/p/ANA_1011C244-400.html",
+      "image": "https://images.asics.com/is/image/asics/1011C244_400_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/b5f290a5d1376ca701c3e97a72b947aabfab69f8c99a75c4b40b1acf0aca6137.webp"
+      }
+    },
+    {
+      "id": "arrival-e28cc22d1eea61d1d948",
+      "brand": "ASICS",
+      "name": "SONICBLAST 2 Women's Running Shoes",
+      "style": "1012C009-750",
+      "modelKey": "asics|sonicblast2womensrunningshoes",
+      "colorway": "Illuminate Yellow/Hazy Lilac",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/sonicblast-2/p/ANA_1012C009-750.html",
+      "image": "https://images.asics.com/is/image/asics/1012C009_750_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/cdfab8dfe25f46c3c662fe6b6806bf6b25c0c81721b2c4401e2554bb6b394e00.webp"
+      }
+    },
+    {
+      "id": "arrival-2db183d1a4ede1ec5098",
+      "brand": "ASICS",
+      "name": "YOGIRI SPEED Running Shoes",
+      "style": "1013A196-400",
+      "modelKey": "asics|yogirispeedrunningshoes",
+      "colorway": "Aquarium/White",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/yogiri-speed/p/ANA_1013A196-400.html",
+      "image": "https://images.asics.com/is/image/asics/1013A196_400_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/1ca7e23b7faaaf438d4983a57745de9b70c75109b7421714c88de581140bda95.webp"
+      }
+    },
+    {
+      "id": "arrival-1c918b79cee10930e5e4",
+      "brand": "ASICS",
+      "name": "GEL-DS TRAINER SP Sportstyle Shoes",
+      "style": "1203B057-001",
+      "modelKey": "asics|geldstrainerspsportstyleshoes",
+      "colorway": "Black/Gunmetal",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-ds-trainer-sp/p/ANA_1203B057-001.html",
+      "image": "https://images.asics.com/is/image/asics/1203B057_001_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/059f1174a3c77acac5e336eacf56eec87fbe0198426efa11be6ba32fbded79f4.webp"
+      }
+    },
+    {
+      "id": "arrival-00d436f1c4d978b7fc10",
+      "brand": "ASICS",
+      "name": "GEL-DS TRAINER SP Sportstyle Shoes",
+      "style": "1203B057-020",
+      "modelKey": "asics|geldstrainerspsportstyleshoes",
+      "colorway": "Glacier Grey/Pure Silver",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-ds-trainer-sp/p/ANA_1203B057-020.html",
+      "image": "https://images.asics.com/is/image/asics/1203B057_020_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/8a338956c176b7bdd7e5cb1081a3cee4fb2abfa93595b5f973bbf89dccf12192.webp"
+      }
+    },
+    {
+      "id": "arrival-0b38dd1fa9ffc31400a6",
+      "brand": "ASICS",
+      "name": "GT-1000 15 Men's Running Shoes •",
+      "style": "1011C230-020",
+      "modelKey": "asics|gt100015mensrunningshoes6colors",
+      "colorway": "White",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gt-1000-15/p/ANA_1011C230-020.html",
+      "image": "https://images.asics.com/is/image/asics/1011C230_020_SL_LT_GLB?$eazoom$",
+      "presentation": {
+        "cachedPath": "/images/e0f6411074c24793749f8b99ebd213aec388a13a8f225d09088e76111981b843.webp"
+      }
+    },
+    {
+      "id": "arrival-a9090e8e1f7afd336173",
+      "brand": "ASICS",
+      "name": "SUPERBLAST 3 Running Shoes",
+      "style": "1013A177-101",
+      "modelKey": "asics|superblast3runningshoes",
+      "colorway": "White/Orange Glow",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/superblast-3/p/ANA_1013A177-101.html",
+      "image": "https://images.asics.com/is/image/asics/1013A177_101_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/baa43eae1e6353a5c11da994da008f0115e6887ec39f2eacd200e3b9d7d7cd1a.webp"
+      }
+    },
+    {
+      "id": "arrival-0238571a5a035485e194",
+      "brand": "adidas",
+      "name": "ADIZERO ADIOS PRO 5 Running Shoes",
+      "style": "KI8294",
+      "modelKey": "adidas|adizeroadiospro5runningshoes",
+      "colorway": "Solar Turbo / Core Black / Lucid Red",
+      "gender": "Men",
+      "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8294.html",
+      "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/7fbc7763ad5049dcba9e078156375ac6_9366/ADIZERO_ADIOS_PRO_5_Running_Shoes_Pink_KI8294_00_plp_standard.jpg",
+      "presentation": {
+        "cachedPath": "/images/86e3adae0bd115a2740437c1ca79b7cf7522d44e7ba97e5b66ccfacc8450b2a0.jpg"
+      },
+      "designReview": {
+        "verified": true,
+        "id": "arrival-0238571a5a035485e194",
+        "brand": "adidas",
+        "style": "KI8294",
+        "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8294.html",
+        "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/7fbc7763ad5049dcba9e078156375ac6_9366/ADIZERO_ADIOS_PRO_5_Running_Shoes_Pink_KI8294_00_plp_standard.jpg",
+        "checkedAt": "2026-11-02T13:30:05.410Z",
+        "physicalVariantId": "adidas-adizero-adios-pro-5-solar-turbo-core-black-lucid-red",
+        "method": "reviewed-official-name-declared-colour-and-exact-upper-sole-geometry",
+        "reason": "KI8293 women and KI8294 men: identical declared Solar Turbo/Core Black/Lucid Red, woven upper panels, three stripes, heel and midsole; size runs differ."
+      }
+    },
+    {
+      "id": "arrival-9e8e0b0a5146e2dbaee6",
+      "brand": "adidas",
+      "name": "ADIZERO ADIOS PRO 5 Running Shoes",
+      "style": "KI8293",
+      "modelKey": "adidas|adizeroadiospro5runningshoes",
+      "colorway": "Solar Turbo / Core Black / Lucid Red",
+      "gender": "Women",
+      "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8293.html",
+      "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d8e0f841b9a14a75807f270e64e6a0b2_9366/ADIZERO_ADIOS_PRO_5_Running_Shoes_Pink_KI8293_00_plp_standard.jpg",
+      "presentation": {
+        "cachedPath": "/images/c49d155f3b964380dffec9db0f75e0dbbd774caf3a246212c3a30132f09bd315.jpg"
+      },
+      "designReview": {
+        "verified": true,
+        "id": "arrival-9e8e0b0a5146e2dbaee6",
+        "brand": "adidas",
+        "style": "KI8293",
+        "url": "https://www.adidas.com/us/adizero-adios-pro-5-running-shoes/KI8293.html",
+        "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d8e0f841b9a14a75807f270e64e6a0b2_9366/ADIZERO_ADIOS_PRO_5_Running_Shoes_Pink_KI8293_00_plp_standard.jpg",
+        "checkedAt": "2026-11-02T13:30:05.413Z",
+        "physicalVariantId": "adidas-adizero-adios-pro-5-solar-turbo-core-black-lucid-red",
+        "method": "reviewed-official-name-declared-colour-and-exact-upper-sole-geometry",
+        "reason": "KI8293 women and KI8294 men: identical declared Solar Turbo/Core Black/Lucid Red, woven upper panels, three stripes, heel and midsole; size runs differ."
+      }
+    },
+    {
+      "id": "arrival-6f1d21152fdb6a18995f",
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 33 Men's Running Shoes",
+      "style": "1011C167-101",
+      "modelKey": "asics|gelkayano33mensrunningshoes",
+      "colorway": "White/Stadium Orange",
+      "gender": "",
+      "url": "https://www.asics.com/us/en-us/gel-kayano-33/p/ANA_1011C167-101.html",
+      "image": "https://images.asics.com/is/image/asics/1011C167_101_SL_LT_GLB?$sfcc-product$",
+      "presentation": {
+        "cachedPath": "/images/3ca419e620d289e91857ecf166d92a5fdfbb74475267d9ad5e992c0e96da9872.webp"
+      }
+    }
+  ]
+}
