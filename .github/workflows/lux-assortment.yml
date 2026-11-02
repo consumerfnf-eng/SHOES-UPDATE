@@ -29,6 +29,12 @@ jobs:
           NODE_OPTIONS: --max-http-header-size=65536
         run: node scripts/collect-lux-assortment.mjs --publish
       - run: npm run photos
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Pillow>=10,<14'
+      - name: Optimize newly downloaded product photos for publication
+        run: python scripts/optimize-photo-cache.py
       - run: npm run build
       - name: Push only validated catalogue and coverage
         run: |
