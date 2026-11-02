@@ -7481,6 +7481,58 @@
       "noPerson": true,
       "checkedAt": "2026-11-02",
       "reason": "Exact SKU gallery image read from official product page; replaced campaign/packaging photo."
+    },
+    {
+      "id": "arrival-31f1ad6e8f408db1fa5d",
+      "brand": "Ferragamo",
+      "style": "786896",
+      "originalImage": "https://cdn.ferragamo.com/wcsstore/FerragamoCatalogAssetStore/images/products/786896/786896_01_preview_r20.jpg",
+      "image": "https://cdn.ferragamo.com/wcsstore/FerragamoCatalogAssetStore/images/products/786896/786896_03_preview_r20.jpg",
+      "sourceUrl": "https://www.ferragamo.com/shop/kor/ko/men/%EC%8A%88%EC%A6%88--9/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-9",
+      "approved": true,
+      "view": "three-quarter",
+      "noPerson": true,
+      "checkedAt": "2026-11-02T09:16:48.267766+00:00",
+      "reason": "Visually reviewed exact product gallery; whole shoe with side visible. Replaced worn or rear view with actual same-article gallery still."
+    },
+    {
+      "id": "arrival-563143f3187af703e783",
+      "brand": "Ferragamo",
+      "style": "787042",
+      "originalImage": "https://cdn.ferragamo.com/wcsstore/FerragamoCatalogAssetStore/images/products/787042/787042_01_preview_r20.jpg",
+      "image": "https://cdn.ferragamo.com/wcsstore/FerragamoCatalogAssetStore/images/products/787042/787042_03_preview_r20.jpg",
+      "sourceUrl": "https://www.ferragamo.com/shop/kor/ko/men/%EC%8A%88%EC%A6%88--9/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-9",
+      "approved": true,
+      "view": "three-quarter",
+      "noPerson": true,
+      "checkedAt": "2026-11-02T09:16:48.267766+00:00",
+      "reason": "Visually reviewed exact product gallery; whole shoe with side visible. Replaced worn or rear view with actual same-article gallery still."
+    },
+    {
+      "id": "arrival-15ad238871c6a5e9d6f2",
+      "brand": "Ferragamo",
+      "style": "798546",
+      "originalImage": "https://cdn.ferragamo.com/wcsstore/FerragamoCatalogAssetStore/images/products/798546/798546_04_preview_r20.jpg",
+      "image": "https://cdn.ferragamo.com/wcsstore/FerragamoCatalogAssetStore/images/products/798546/798546_00_preview_r20.jpg",
+      "sourceUrl": "https://www.ferragamo.com/shop/kor/ko/women-9/%EC%8A%88%EC%A6%88-9/sneakers-9",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "checkedAt": "2026-11-02T09:16:48.267766+00:00",
+      "reason": "Visually reviewed exact product gallery; whole shoe with side visible. Replaced worn or rear view with actual same-article gallery still."
+    },
+    {
+      "id": "bally-uae-8807966703868:BLACK",
+      "brand": "Bally",
+      "style": "8807966703868:BLACK",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0C8_VT002_U901_1.jpg?v=1730198488",
+      "image": "https://cdn2.jomashop.com/media/catalog/product/cache/b3e31d40bbb1abcc90b26106659d5d3f/b/a/bally-flick-ribbon-lowtop-sneakers-msk0c8vt002u901_1.jpg?width=800&height=800",
+      "sourceUrl": "https://www.jomashop.com/bally-flick-ribbon-low-top-sneakers-msk0c8-vt002-u901.html",
+      "approved": true,
+      "view": "side",
+      "noPerson": true,
+      "checkedAt": "2026-11-02T09:16:48.267766+00:00",
+      "reason": "Visually reviewed exact product gallery; whole shoe with side visible. Factory reference MSK0C8-VT002-U901 matches Bally UAE product URL; alternate retailer photo only, availability remains Bally UAE."
     }
   ]
 }

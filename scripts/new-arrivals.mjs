@@ -45,7 +45,7 @@ const productPath=/\/(?:products?|produtos|p|pr|pd|t)\/|\/[^/]+\.html(?:$|\?)|(?
 // shoes can publish.
 const kidsListing=/(?:^|[\/_-])(?:kids?|kid-new|junior|juniors|youth|boys?|girls?|children|toddler|infant|baby|bebe|enfant|bambino|키즈|아동|주니어|유아)(?:[\/_-]|$)/i;
 export function isKidsListing(url){try{return kidsListing.test(readablePath(new URL(url).pathname))||kidsListing.test(new URL(url).search);}catch{return false;}}
-function isProductLink(url){try{const u=new URL(url);if(/(?:prada|miumiu)\.com$/.test(u.hostname)&&/\/c\/[^/]+\.html$/.test(u.pathname)||/(?:^|\.)miharayasuhiro\.jp$/.test(u.hostname)&&u.pathname==='/products/list.php'||/\/stories\//.test(u.pathname))return false;return productPath.test(u.pathname)||u.hostname.endsWith('valentino.com')&&/\/product-[^/]+/.test(u.pathname)||u.hostname.endsWith('zegna.com')&&/\/product\.[^/]+\.\d+\/?$/.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
+function isProductLink(url){try{const u=new URL(url);if(/(?:prada|miumiu)\.com$/.test(u.hostname)&&/\/c\/[^/]+\.html$/.test(u.pathname)||/(?:^|\.)miharayasuhiro\.jp$/.test(u.hostname)&&u.pathname==='/products/list.php'||/\/stories\//.test(u.pathname))return false;return /(?:^|\.)burberry\.com$/.test(u.hostname)&&/-p\d{8,}\/?$/.test(u.pathname)||/(?:^|\.)ferragamo\.com$/.test(u.hostname)&&/-\d{6}--\d+\/?$/.test(u.pathname)||productPath.test(u.pathname)||u.hostname.endsWith('valentino.com')&&/\/product-[^/]+/.test(u.pathname)||u.hostname.endsWith('zegna.com')&&/\/product\.[^/]+\.\d+\/?$/.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
 function colorLabel(alt,brand){
   if(brand==='Cecilie Bahnsen'&&/\b[A-Z]+\/[A-Z]+$/.test(alt))return alt.split(/\s+/).at(-1);
   let color=['ASICS','PUMA','Onitsuka Tiger'].includes(brand)?alt.split(',')[1]?.trim().replace(/\s+\d+$/,'')||'':alt.split(/\s[-—–]\s/)[1]||'';
@@ -115,7 +115,7 @@ export function parseArrivalListing(text,{brand,url,checkedAt,sectionEvidence,ba
     const images=imageUrls(link.label).concat(imageUrls(block));
     const row=rows.get(key)||{brand,name,url:link.url,images:[],linkedImages:[],cardDescription:clean(link.label),arrivalEvidence:{verified:true,brand,productUrl:link.url,kind:isNew?'new-arrivals-listing':badge?'new-badge':catalogueKind,url,verifiedAt:checkedAt,excerpt:(isNew?'Official New / New Arrivals listing: ':badge?'Official product New badge: ':catalogueKind==='catalogue-latest-listing'?'Official sneaker shelf read newest first: ':'Official catalogue listing, dated by the source watch: ')+name,contentHash:sourceHash}};
     if(labelText&&/sneaker|trainer|shoe/i.test(name))row.name=name;
-    if(imageDerivedName)row.needsProductTitle=true;
+    if(imageDerivedName||/^(?:하드웨어|(?:바디\s*)?메인컬러|색상|colou?r|hardware)\s*:/i.test(name))row.needsProductTitle=true;
     if(labelText.length>row.cardDescription.length)row.cardDescription=labelText;
     row.images=[...new Map([...row.images,...images].map(image=>[image.url,image])).values()];
     row.linkedImages=[...new Map([...row.linkedImages,...imageUrls(link.label)].map(image=>[image.url,image])).values()];rows.set(key,row);
@@ -301,7 +301,10 @@ export function pageProduct(candidate,text,checkedAt,existing){
   const cbStyle=candidate.brand==='Cecilie Bahnsen'?last.match(/^\d-\d{2}ftw\d+/i)?.[0]?.replace(/[^a-z0-9]/gi,'').toLowerCase():'';
   const exactStyle=style.replace(/[^a-z0-9]/gi,'').toLowerCase();
   const images=imageUrls(gallery),own=images.filter(i=>candidate.linkedImages?.some(c=>canonicalUrl(c.url)===canonicalUrl(i.url))||i.url.toLowerCase().replace(/[^a-z0-9]/g,'').includes(exactStyle)||lvSlug&&i.url.includes('louis-vuitton-'+lvSlug+'--')||cbStyle&&i.url.toLowerCase().replace(/[^a-z0-9]/g,'').includes(cbStyle)||styleType==='official-product-id'&&tokens.filter(t=>i.alt.toLowerCase().includes(t)).length>=Math.min(2,tokens.length));
-  const chosen=(candidate.brand==='Moncler'?own.find(i=>i.url.includes('/'+style+'_1/image/')):null)||own.find(i=>/_SLS\.|_PM1_Side|_Side\.|_nb_02_i|_SBG_E02|_A\.(?:jpg|png)/i.test(i.url))||own.find(i=>/_SLR\.|_PM2_/i.test(i.url))||own[0];
+  // Tory's current-colour side gallery contains several thumbnail sizes.
+  // Use only observed same-colour assets, preferring the largest rendition.
+  const torySide=candidate.brand==='Tory Burch'?own.filter(i=>{const u=new URL(candidate.url),article=u.pathname.split('/').at(-1).replace('.html',''),colour=u.searchParams.get('color');return !!colour&&i.url.includes('_'+article+'_'+colour+'_SLSID.');}).sort((a,b)=>{const area=i=>{const m=i.url.match(/(?:pdp|grid)-(\d+)x(\d+)/i);return m?Number(m[1])*Number(m[2]):0;};return area(b)-area(a);})[0]:null;
+  const chosen=torySide||(candidate.brand==='Moncler'?own.find(i=>i.url.includes('/'+style+'_1/image/')):null)||own.find(i=>/_SLS\.|_PM1_Side|_Side\.|_nb_02_i|_SBG_E02|_A\.(?:jpg|png)/i.test(i.url))||own.find(i=>/_SLR\.|_PM2_/i.test(i.url))||own[0];
   if(!chosen)return null;
   const detail=body.slice(body.indexOf('# '+heading)).split(/\n#{1,4}\s*(?:Contact us|Shipping|Delivery|Free shipping|SUBSCRIBE)/i)[0];
   const description=detail.split('\n').filter(l=>!l.includes('https://')&&l.trim().length>30).join(' ').slice(0,6000);

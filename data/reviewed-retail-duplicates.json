@@ -405,6 +405,51 @@
       "method": "reviewed-model-material-colour-and-exact-variant-photos",
       "checkedAt": "2026-11-02",
       "reason": "Official full model gallery compared: same upper material/pattern, body and accent colours, sole, trim and design; official variant retained."
+    },
+    {
+      "brand": "Versace",
+      "verified": true,
+      "method": "reviewed-model-material-colour-and-exact-variant-photos",
+      "checkedAt": "2026-11-02",
+      "reason": "Compared current official and retailer photos: identical upper material, panel construction, accent positions, lacing, sole and colour; retain official product.",
+      "retailId": "weekly-ssense-a835b5a90b3a9e467c98",
+      "retailStyle": "262404M237015",
+      "retailUrl": "https://www.ssense.com/en-us/men/product/versace/black-and-gold-icaro-leather-sneakers/19760211",
+      "retailImage": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262404M237015_1.jpg",
+      "officialId": "arrival-f867b55d73a66ab12dce",
+      "officialStyle": "1A19106_6BL5J",
+      "officialUrl": "https://www.versace.com/us/en/men/shoes/sneakers/icaro-leather-sneakers-black-gold/1026188-1A19106_6BL5J.html",
+      "officialImage": "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw36aab837/original/90_1026188-1A19106_6BL5J_20_Icaro~Leather~Sneakers-Sneakers-Versace-online-store_0_0.jpg?sw=550&q=85&strip=true"
+    },
+    {
+      "brand": "Stella McCartney",
+      "verified": true,
+      "method": "reviewed-model-material-colour-and-exact-variant-photos",
+      "checkedAt": "2026-11-02",
+      "reason": "Compared current official and retailer photos: identical upper material, panel construction, accent positions, lacing, sole and colour; retain official product.",
+      "retailId": "weekly-ssense-aa538b7f0c7c182df0cf",
+      "retailStyle": "262471F128000",
+      "retailUrl": "https://www.ssense.com/en-us/women/product/stella-mccartney/beige-alter-suede-and-alter-mat-mesh-sneakers/19368471",
+      "retailImage": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262471F128000_1.jpg",
+      "officialId": "arrival-abcb75cde3e782d8ef8a",
+      "officialStyle": "810701E003218411",
+      "officialUrl": "https://www.stellamccartney.com/kr/ko/%EC%97%AC%EC%84%B1/%EC%8A%88%EC%A6%88/%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EB%B0%8F-%EB%A9%94%EC%89%AC-%ED%8C%A8%EB%84%90-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-810701E003218411.html",
+      "officialImage": "https://www.stellamccartney.com/dw/image/v2/BCWD_PRD/on/demandware.static/-/Sites-master_catalog/default/dw9960b17f/figurino/810701E00321/810701E003218411_X.jpg?sw=1920&sh=2362"
+    },
+    {
+      "brand": "Stella McCartney",
+      "verified": true,
+      "method": "reviewed-model-material-colour-and-exact-variant-photos",
+      "checkedAt": "2026-11-02",
+      "reason": "Compared current official and retailer photos: identical upper material, panel construction, accent positions, lacing, sole and colour; retain official product.",
+      "retailId": "weekly-ssense-cbb79b83e8f858acd0fa",
+      "retailStyle": "262471F128002",
+      "retailUrl": "https://www.ssense.com/en-us/women/product/stella-mccartney/black-and-beige-leopard-velvet-sneakers/19368491",
+      "retailImage": "https://img.ssensemedia.com/image/upload/b_white,c_lpad,g_south,ar_2:3/f_auto,c_limit,w_768,q_85/262471F128002_1.jpg",
+      "officialId": "arrival-6ba63439bc48ace9c378",
+      "officialStyle": "810699E003138018",
+      "officialUrl": "https://www.stellamccartney.com/kr/ko/%EC%97%AC%EC%84%B1/%EC%8A%88%EC%A6%88/%EB%A0%88%EC%98%A4%ED%8C%8C%EB%93%9C-%EB%B2%A8%EB%B2%B3-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-810699E003138018.html",
+      "officialImage": "https://www.stellamccartney.com/dw/image/v2/BCWD_PRD/on/demandware.static/-/Sites-master_catalog/default/dw7f1053fd/figurino/810699E00313/810699E003138018_X.jpg?sw=1920&sh=2362"
     }
   ]
 }

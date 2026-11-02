@@ -4,15 +4,20 @@ import {reviewedDesignName,preferOfficialVariants,identityFold,manufacturerCode}
 import {unifyVariantGroups,groupProductVariants,variantGroupName,variantColorLabel} from '../public/assets/catalog-view.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {buildStyleTrendBoard} from './style-trend-board.mjs';
+import {productPresentation} from './product-presentation.mjs';
 const root=new URL('../',import.meta.url);
 const read=async(path,fallback)=>{try{return JSON.parse(await fs.readFile(new URL(path,root),'utf8'));}catch(e){if(e.code==='ENOENT')return fallback;throw e;}};
 export async function finalizeCatalogIdentity() {
   const c=await read('public/data/catalog.json',{}),m=await read('public/data/monthly-catalog.json',{schemaVersion:2,retail:[],newsletter:[],sources:{}});
   const supplement=await read('data/common-projects-retail.json',{products:[]});
+  const bally=await read('data/bally-regional-retail.json',{products:[]});
+  supplement.products.push(...bally.products);
   const photos=await read('data/product-photo-analysis.json',{photos:{}});
   const designReviews=await read('data/product-variant-reviews.json',{products:[]});
-  const byId=new Map(m.retail.map(p=>[p.id,p]));
-  for(const p of supplement.products)byId.set(p.id,p);
+  const presentationReviews=await read('data/product-presentation.json',{products:[]});
+  const ballyRefreshed=bally.schemaVersion===1&&Array.isArray(bally.pages)&&bally.pages.length>0;
+  const byId=new Map(m.retail.filter(p=>!ballyRefreshed||p.source!=='retail-bally-uae').map(p=>[p.id,p]));
+  for(const p of supplement.products)byId.set(p.id,productPresentation(p,presentationReviews)||p);
   m.retail=[...byId.values()];
   for(const p of supplement.products){const e=p.availabilityEvidence;m.sources[p.source]={label:p.retailer,listingUrl:e.listingUrl,checkedAt:e.verifiedAt,basis:'current-assortment'};}
   let correctedNames=0, inferredColours=0;

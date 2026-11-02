@@ -323,7 +323,9 @@ export function classifyFootwear(p) {
   const review=p.footwearReview;
   if(/パンプス|スリングバック|ハイヒール|革靴|高跟|皮鞋|(?:^|[\s/])힐(?:[\s/]|$)/.test(title))return {reason:'excluded-footwear'};
   const path = urlWords(p.url);
-  if(kids.test(`${title} ${p.description||''} ${path}`))return {reason:'kids-sizing'};
+  const adultLouisJunior=p.brand==='Christian Louboutin'&&/\bLouis\s+Junior\b/i.test(p.name||'')&&(/\b(?:Men|Women)\b/i.test(p.name||'')||/^(?:Men|Women)$/i.test(p.gender||''))&&p.officialProductEvidence?.verified===true&&isOfficialProductUrl(p.brand,p.url);
+  const sizingText=`${title} ${p.description||''} ${path}`;
+  if(kids.test(adultLouisJunior?sizingText.replace(/\blouis junior\b/gi,'Louis'):sizingText))return {reason:'kids-sizing'};
   // Read from the name and the shop's own category only - never the
   // description, which is where the boilerplate lives.
   const filed = `${p.name || ''} ${p.officialCategory || ''} ${p.category || ''} ${p.productType || ''} ${path}`;
@@ -338,7 +340,9 @@ export function classifyFootwear(p) {
   const reviewedPlatform=review?.approved===true&&review.type==='platform'&&review.flatSole===true&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url);
   const reviewedJelly=review?.approved===true&&review.type==='jelly'&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url)&&review.flatSole===true;
   if(/goadome/i.test(title)&&!p.hybridReview?.approved)return {reason:'hybrid-review-required'};
-  if (excluded.test(`${title} ${p.category||''} ${p.productType||''}`) || performance.test(title) || /\b(?:oxford shoes?|derby shoes|ballet flats?|high[ -]heeled|stilettos?|slingbacks?|(?:kitten|block|wedge) heels?|dress sandals?)\b|슬링백|하이힐|정장 구두/i.test(p.description || '')) return { reason: 'excluded-footwear' };
+  const reviewedSneakerHybrid=p.hybridReview?.approved===true&&p.hybridReview.sneakerSole===true&&p.hybridReview.url===p.url&&isOfficialProductUrl(p.brand,p.url);
+  const exclusionDescription=reviewedSneakerHybrid?String(p.description||'').replace(/\bballet flats?\b/gi,''):p.description||'';
+  if (excluded.test(`${title} ${p.category||''} ${p.productType||''}`) || performance.test(title) || /\b(?:oxford shoes?|derby shoes|ballet flats?|high[ -]heeled|stilettos?|slingbacks?|(?:kitten|block|wedge) heels?|dress sandals?)\b|슬링백|하이힐|정장 구두/i.test(exclusionDescription)) return { reason: 'excluded-footwear' };
   // Jelly names alone (for example Jellyfish) are not proof of jelly construction.
   if (/\bjelly\b|젤리/i.test(title)||reviewedJelly) {
     if (!reviewedJelly&&!/\b(?:pvc|tpu|melflex|jelly upper|jelly material|jelly construction)\b|젤리 소재/i.test(context))return {reason:'jelly-structure-unverified'};

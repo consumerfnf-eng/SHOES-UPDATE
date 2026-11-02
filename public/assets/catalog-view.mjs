@@ -707,7 +707,8 @@ export function overlayWindowDay(product) {
 
 export function overlayReleaseState(product, today = kstToday()) {
   const proof=product?.availabilityEvidence;
-  if(proof?.verified===true&&proof.kind==='retail-current-assortment'&&product.brand==='Common Projects'&&proof.productUrl===product.url&&/^https:\/\/(?:www\.mrporter\.com|kith\.com)\//.test(product.url||'')) {
+  const trustedAssortment=product.brand==='Common Projects'&&/^https:\/\/(?:www\.mrporter\.com|kith\.com)\//.test(product.url||'')||product.brand==='Bally'&&/^https:\/\/www\.bally\.ae\/products\//.test(product.url||'');
+  if(proof?.verified===true&&proof.kind==='retail-current-assortment'&&trustedAssortment&&proof.productUrl===product.url) {
     const checked=String(proof.verifiedAt||'').slice(0,10);
     return validDay(checked)&&checked<=today&&checked>=shiftCalendarMonths(today,-1)?'released':null;
   }

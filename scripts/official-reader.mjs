@@ -73,6 +73,12 @@ export function officialHtmlMarkdown(html,url){
   // product URL in the image field and could never show a picture.
   const absolute=value=>{if(!String(value||'').trim())return '';try{const u=new URL(decodeText(value),url);return u.protocol==='https:'&&!u.username&&!u.password?u.href:'';}catch{return '';}};
   const attr=(tag,name)=>tag.match(new RegExp(`(?:^|\\s)${name}=["']([^"']+)["']`,'i'))?.[1]||'';
+  const current=new URL(url),continuations=new Set();
+  for(const m of html.matchAll(/<(?:a|button|div)\b[^>]*\bdata-url=["'][^"']+["'][^>]*>/gi)){
+    const target=absolute(attr(m[0],'data-url'));if(!target)continue;
+    const next=new URL(target),start=Number(next.searchParams.get('start'));
+    if(next.origin===current.origin&&/Search-UpdateGrid$/.test(next.pathname)&&start>Number(current.searchParams.get('start')||0)&&Number(next.searchParams.get('sz'))>0)continuations.add(target);
+  }
   let body=html.replace(/<(script|style|nav|footer|aside)\b[^>]*>[\s\S]*?<\/\1>/gi,'')
     .replace(/<([a-z][\w-]*)\b(?=[^>]*\shidden(?=[\s=>]))[^>]*>[\s\S]*?<\/\1>/gi,'');
   // Prada's gallery is a <picture> whose <img> has no src at all: the real
@@ -103,6 +109,7 @@ export function officialHtmlMarkdown(html,url){
   // Embedded catalogue JSON is not a visible product description. Leaving a
   // megabyte of hydration data here also turns Markdown link scanning quadratic.
   body=body.split('\n').filter(line=>!(line.length>10000&&/^\s*(?:\[\s*\{|\{")/.test(line))).join('\n');
+  body+='\n'+[...continuations].map(target=>`[Load more](${target})`).join('\n');
   if(body.length<150||!/\]\(https:\/\//.test(body))throw Error('OFFICIAL_HTML_NO_CONTENT');
   return assertReadableOfficial(`Title: ${title}\nURL Source: ${url}\nMarkdown Content:\n${body}`);
 }

@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T09:15:45.115Z",
+  "target": "https://shoes-update-internal.pages.dev/",
+  "requested": [
+    "Louis Vuitton",
+    "Dior",
+    "Gucci",
+    "Fendi",
+    "Celine",
+    "Goyard",
+    "Prada",
+    "Loewe",
+    "Burberry",
+    "Givenchy",
+    "Valentino Garavani",
+    "Versace",
+    "Balmain",
+    "Ferragamo",
+    "Jimmy Choo",
+    "Christian Louboutin",
+    "MCM",
+    "Coach",
+    "Tory Burch",
+    "Bally",
+    "Stella McCartney",
+    "Kenzo"
+  ],
+  "alreadyListed": [
+    "Louis Vuitton",
+    "Dior",
+    "Gucci",
+    "Fendi",
+    "Celine",
+    "Prada",
+    "Loewe",
+    "Givenchy",
+    "Valentino Garavani"
+  ],
+  "addedToLux": [
+    "Goyard",
+    "Burberry",
+    "Versace",
+    "Balmain",
+    "Ferragamo",
+    "Jimmy Choo",
+    "Christian Louboutin",
+    "MCM",
+    "Coach",
+    "Tory Burch",
+    "Bally",
+    "Stella McCartney",
+    "Kenzo"
+  ],
+  "officialVariants": 404,
+  "regionalRetailVariants": 77,
+  "modelCards": 137,
+  "physicalColourChips": 473,
+  "baselineOfficialVariantsPreserved": 5444,
+  "unresolvedCollectedCandidates": 0,
+  "missingVerifiedOfficialVariants": 0,
+  "uncachedNewPhotos": 0,
+  "unlabelledNewColours": 0,
+  "newExactRetailDuplicatesRemoved": 3,
+  "newExactRetailDuplicateIds": [
+    "weekly-ssense-a835b5a90b3a9e467c98",
+    "weekly-ssense-aa538b7f0c7c182df0cf",
+    "weekly-ssense-cbb79b83e8f858acd0fa"
+  ],
+  "brands": [
+    {
+      "brand": "Goyard",
+      "officialVariants": 0,
+      "regionalRetailVariants": 0,
+      "modelCards": 0,
+      "physicalColourChips": 0,
+      "sources": [],
+      "status": "no-official-sneaker-found"
+    },
+    {
+      "brand": "Burberry",
+      "officialVariants": 37,
+      "regionalRetailVariants": 0,
+      "modelCards": 11,
+      "physicalColourChips": 37,
+      "sources": [
+        "https://us.burberry.com/l/womens-shoes/sneakers/",
+        "https://us.burberry.com/l/mens-shoes/sneakers/"
+      ],
+      "status": "verified-official-assortment"
+    },
+    {
+      "brand": "Versace",
+      "officialVariants": 60,
+      "regionalRetailVariants": 0,
+      "modelCards": 9,
+      "physicalColourChips": 60,
+      "sources": [
+        "https://www.versace.com/us/en/men/shoes/sneakers/",
+        "https://www.versace.com/us/en/women/shoes/sneakers/"
+      ],
+      "status": "verified-official-assortment"
+    },
+    {
+      "brand": "Balmain",
+      "officialVariants": 28,
+      "regionalRetailVariants": 0,
+      "modelCards": 6,
+      "physicalColourChips": 28,
+      "sources": [
+        "https://balmain.com/fr-fr/collections/women-sneakers",
+        "https://balmain.com/fr-fr/collections/men-sneakers"
+      ],
+      "status": "verified-official-assortment"
+    },
+    {
+      "brand": "Ferragamo",
+      "officialVariants": 35,
+      "regionalRetailVariants": 0,
+      "modelCards": 15,
+      "physicalColourChips": 35,
+      "sources": [
+        "https://www.ferragamo.com/shop/kor/ko/men/%EC%8A%88%EC%A6%88--9/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-9",
+        "https://www.ferragamo.com/shop/kor/ko/women-9/%EC%8A%88%EC%A6%88-9/sneakers-9"
+      ],
+      "status": "verified-official-assortment"
+    },
+    {
+      "brand": "Jimmy Choo",
+      "officialVariants": 73,
+      "regionalRetailVariants": 0,
+      "modelCards": 12,
+      "physicalColourChips": 73,
+      "sources": [
+        "https://www.jimmychoo.com/kr/ko_KR/%EC%97%AC%EC%84%B1-%EC%A0%9C%ED%92%88-%EB%AA%A8%EB%91%90-%EB%B3%B4%EA%B8%B0/%EC%8A%88%EC%A6%88/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/",
+        "https://www.jimmychoo.com/kr/ko_KR/%EB%82%A8%EC%84%B1-%EC%A0%9C%ED%92%88-%EB%AA%A8%EB%91%90-%EB%B3%B4%EA%B8%B0/%EC%8A%88%EC%A6%88/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/"
+      ],
+      "status": "verified-official-assortment"
+    },
+    {
+      "brand": "Christian Louboutin",
+      "officialVariants": 57,
+      "regionalRetailVariants": 0,
+      "modelCards": 23,
+      "physicalColourChips": 57,
+      "sources": [
+        "https://apac.christianlouboutin.com/au_en/gentlemen/shoes/sneakers/",
+        "https://apac.christianlouboutin.com/au_en/ladies/shoes/sneakers/",
+        "https://apac.christianlouboutin.com/au_en/gentlemen/shoes/sneakers/?srule=default&preferences=%5Bobject%20Object%5D&start=40"
+      ],
+      "status": "verified-official-assortment"
+    },
+    {
+      "brand": "MCM",
+      "officialVariants": 20,
+      "regionalRetailVariants": 0,
+      "modelCards": 7,
+      "physicalColourChips": 20,
+      "sources": [
+        "https://us.mcmworldwide.com/en_US/men/shoes/sneakers",
+        "https://us.mcmworldwide.com/en_US/women/shoes/sneakers"
+      ],
+      "status": "verified-official-assortment"
+    },
+    {
+      "brand": "Coach",
+      "officialVariants": 25,
+      "regionalRetailVariants": 0,
+      "modelCards": 7,
+      "physicalColourChips": 25,
+      "sources": [
+        "https://korea.coach.com/shop/women/shoes/sneakers",
+        "https://korea.coach.com/shop/men/shoes/sneakers"
+      ],
+      "status": "verified-official-assortment"
+    },
+    {
+      "brand": "Tory Burch",
+      "officialVariants": 22,
+      "regionalRetailVariants": 0,
+      "modelCards": 11,
+      "physicalColourChips": 22,
+      "sources": [
+        "https://www.toryburch.com/en-us/shoes/sneakers/"
+      ],
+      "status": "verified-official-assortment"
+    },
+    {
+      "brand": "Bally",
+      "officialVariants": 0,
+      "regionalRetailVariants": 77,
+      "modelCards": 27,
+      "physicalColourChips": 77,
+      "sources": [
+        "https://www.bally.ae/products.json?limit=250&page=1",
+        "https://www.bally.ae/products.json?limit=250&page=2",
+        "https://www.bally.ae/products.json?limit=250&page=3",
+        "https://www.bally.ae/products.json?limit=250&page=4",
+        "https://www.bally.ae/products.json?limit=250&page=5",
+        "https://www.bally.ae/products.json?limit=250&page=6",
+        "https://www.bally.ae/products.json?limit=250&page=7"
+      ],
+      "status": "verified-regional-retail"
+    },
+    {
+      "brand": "Stella McCartney",
+      "officialVariants": 16,
+      "regionalRetailVariants": 0,
+      "modelCards": 5,
+      "physicalColourChips": 16,
+      "sources": [
+        "https://www.stellamccartney.com/kr/ko/%EC%97%AC%EC%84%B1/%EC%8A%88%EC%A6%88/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88"
+      ],
+      "status": "verified-official-assortment"
+    },
+    {
+      "brand": "Kenzo",
+      "officialVariants": 31,
+      "regionalRetailVariants": 0,
+      "modelCards": 4,
+      "physicalColourChips": 23,
+      "sources": [
+        "https://www.kenzo.com/en-kr/c-shoes/men/sneakers",
+        "https://www.kenzo.com/en-kr/c-shoes/women/sneakers"
+      ],
+      "status": "verified-official-assortment"
+    }
+  ],
+  "excluded": [
+    {
+      "brand": "Jimmy Choo",
+      "url": "https://www.jimmychoo.com/kr/ko_KR/%EC%97%AC%EC%84%B1-%EC%A0%9C%ED%92%88-%EB%AA%A8%EB%91%90-%EB%B3%B4%EA%B8%B0/%EC%8A%88%EC%A6%88/%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C-%EC%8A%AC%EB%A7%81/%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%84%B8-%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EB%94%94%ED%85%8C%EC%9D%BC-%EC%8B%A4%EB%B2%84-%EB%A9%94%ED%83%88%EB%A6%AD-%EA%B0%80%EC%A3%BD-%EC%8A%AC%EB%A6%AC%ED%8D%BC-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-DIAMONDMAXICRYSTALNLH0C8772.html",
+      "name": "다이아몬드 슬링 크리스털 스트랩 디테일 실버 메탈릭 가죽 슬리퍼 스니커즈",
+      "reason": "slipper"
+    },
+    {
+      "brand": "Ferragamo",
+      "url": "https://www.ferragamo.com/shop/kor/ko/men/%EC%8A%88%EC%A6%88--9/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-9/alfie-1-789153--9",
+      "name": "더비 슬립온",
+      "reason": "not-verified-as-sneaker"
+    },
+    {
+      "brand": "Tory Burch",
+      "url": "https://www.toryburch.com/en-us/shoes/flats/romy-sport-mary-jane/178301.html?color=006",
+      "reason": "not-product-page"
+    },
+    {
+      "brand": "Tory Burch",
+      "url": "https://www.toryburch.com/en-us/shoes/flats/romy-sport-mary-jane/178301.html?color=375",
+      "reason": "not-product-page"
+    },
+    {
+      "brand": "Christian Louboutin",
+      "url": "https://apac.christianlouboutin.com/au_en/cuir-fetiche-lextrait-translucide-8435415119733.html",
+      "name": "Cuir Fetiche L'Extrait Eau de Parfum 80ml",
+      "reason": "verified-not-sneaker"
+    },
+    {
+      "brand": "Tory Burch",
+      "url": "https://www.toryburch.com/en-us/blog/torys-blog.html",
+      "reason": "not-product-page"
+    },
+    {
+      "brand": "Stella McCartney",
+      "name": "Sneak-Elyse",
+      "url": "https://www.stellamccartney.com/kr/ko/%EC%97%AC%EC%84%B1/%EC%8A%88%EC%A6%88/sneak-elyse-810078E000851065.html",
+      "reason": "reviewed-wedge-heel-not-sneaker",
+      "verifiedAt": "2026-11-02T09:13:39.507730+00:00",
+      "contentHash": "ce59ab5db4889fef6fcfaf8949a705de9b35313fb46f3230e42e838713ed010f"
+    },
+    {
+      "brand": "Stella McCartney",
+      "name": "Sneak Elyse 플랫폼 슈즈",
+      "url": "https://www.stellamccartney.com/kr/ko/%EC%97%AC%EC%84%B1/%EC%9B%A8%EC%A7%80%ED%9E%90/sneak-elyse-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%8A%88%EC%A6%88-810078E000549222.html",
+      "reason": "reviewed-wedge-heel-not-sneaker",
+      "verifiedAt": "2026-11-02T09:13:39.507730+00:00",
+      "contentHash": "918e30807fd68b141a2b8645f1251c617b00e083bfb03d41fff88bbb986e0ce0"
+    },
+    {
+      "brand": "Stella McCartney",
+      "name": "Sneakelyse 플러시 라이닝 클로그",
+      "url": "https://www.stellamccartney.com/kr/ko/%EC%97%AC%EC%84%B1/the-apr%C3%A8s-ski-edit/sneakelyse-%ED%94%8C%EB%9F%AC%EC%8B%9C-%EB%9D%BC%EC%9D%B4%EB%8B%9D-%ED%81%B4%EB%A1%9C%EA%B7%B8-810782E003541000.html",
+      "reason": "reviewed-clog-not-sneaker",
+      "verifiedAt": "2026-11-02T09:13:39.507730+00:00",
+      "contentHash": "ad1aee32846f5fdb371c0d4ac7250b6ab2debc28998be5848f8980e942ad51ad"
+    }
+  ],
+  "exceptions": [
+    {
+      "brand": "Goyard",
+      "url": "https://www.goyard.com/kr_ko/",
+      "reason": "No official sneaker product verified in the inspected official catalogue; brand is registered with zero products."
+    },
+    {
+      "brand": "Bally",
+      "url": "https://www.bally.ae/",
+      "reason": "Global bally.com sneaker shelves were empty. 77 available regional-store variants are labelled retail-bally-uae, never misrepresented as global official products."
+    }
+  ],
+  "scope": "Inspected configured regional official sneaker shelves, observed pagination and linked products, plus all nine public Bally UAE catalogue pages (2166 products). These are current assortment observations, not invented release dates or a worldwide inventory guarantee.",
+  "validation": {
+    "nodeTests": 383,
+    "pythonTests": 233,
+    "build": "passed"
+  }
+}

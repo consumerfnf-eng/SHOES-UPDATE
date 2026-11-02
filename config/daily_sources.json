@@ -124,26 +124,26 @@
   ],
   "Bally": [
     {
-      "name": "Bally Official daily source",
-      "url": "https://www.bally.com/collections/men-new-arrivals"
+      "name": "Bally Official sneaker assortment",
+      "url": "https://www.bally.com/en-ca/collections/men-shoes-sneakers",
+      "basis": "assortment"
     },
     {
-      "name": "Bally Official daily source",
-      "url": "https://www.bally.com/"
+      "name": "Bally Official sneaker assortment",
+      "url": "https://www.bally.com/en-ca/collections/women-shoes-sneakers",
+      "basis": "assortment"
     }
   ],
   "Balmain": [
     {
-      "name": "Balmain Official daily source",
-      "url": "https://balmain.com/collections/men-shoes-view-all?sort_by=created-descending"
+      "name": "Balmain Official sneaker assortment",
+      "url": "https://balmain.com/fr-fr/collections/women-sneakers",
+      "basis": "assortment"
     },
     {
-      "name": "Balmain Official daily source",
-      "url": "https://balmain.com/collections/women-shoes-view-all?sort_by=created-descending"
-    },
-    {
-      "name": "Balmain Official daily source",
-      "url": "https://balmain.com/collections/women-sneakers?sort_by=created-descending"
+      "name": "Balmain Official sneaker assortment",
+      "url": "https://balmain.com/fr-fr/collections/men-sneakers",
+      "basis": "assortment"
     }
   ],
   "Berluti": [
@@ -182,8 +182,14 @@
   ],
   "Burberry": [
     {
-      "name": "Burberry Official daily source",
-      "url": "https://www.burberry.com/"
+      "name": "Burberry Official womens sneakers",
+      "url": "https://us.burberry.com/l/womens-shoes/sneakers/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Burberry Official mens sneakers",
+      "url": "https://us.burberry.com/l/mens-shoes/sneakers/",
+      "basis": "assortment"
     }
   ],
   "Casablanca": [
@@ -259,8 +265,14 @@
   ],
   "Christian Louboutin": [
     {
-      "name": "Christian Louboutin Official daily source",
-      "url": "https://www.christianlouboutin.com/"
+      "name": "Christian Louboutin Official sneaker assortment",
+      "url": "https://apac.christianlouboutin.com/au_en/ladies/shoes/sneakers/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Christian Louboutin Official sneaker assortment",
+      "url": "https://apac.christianlouboutin.com/au_en/gentlemen/shoes/sneakers/",
+      "basis": "assortment"
     }
   ],
   "Comme des Garçons Homme Plus": [
@@ -422,8 +434,14 @@
   ],
   "Ferragamo": [
     {
-      "name": "Ferragamo Official daily source",
-      "url": "https://www.ferragamo.com/"
+      "name": "Ferragamo Official sneaker assortment",
+      "url": "https://www.ferragamo.com/shop/kor/ko/women-9/%EC%8A%88%EC%A6%88-9/sneakers-9",
+      "basis": "assortment"
+    },
+    {
+      "name": "Ferragamo Official sneaker assortment",
+      "url": "https://www.ferragamo.com/shop/kor/ko/men/%EC%8A%88%EC%A6%88--9/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-9",
+      "basis": "assortment"
     }
   ],
   "FILA": [
@@ -553,12 +571,14 @@
   ],
   "Jimmy Choo": [
     {
-      "name": "Jimmy Choo Official daily source",
-      "url": "https://www.jimmychoo.com/en/men/new-arrivals/"
+      "name": "Jimmy Choo Official sneaker assortment",
+      "url": "https://www.jimmychoo.com/kr/ko_KR/%EC%97%AC%EC%84%B1-%EC%A0%9C%ED%92%88-%EB%AA%A8%EB%91%90-%EB%B3%B4%EA%B8%B0/%EC%8A%88%EC%A6%88/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/",
+      "basis": "assortment"
     },
     {
-      "name": "Jimmy Choo Official daily source",
-      "url": "https://www.jimmychoo.com/"
+      "name": "Jimmy Choo Official sneaker assortment",
+      "url": "https://www.jimmychoo.com/kr/ko_KR/%EB%82%A8%EC%84%B1-%EC%A0%9C%ED%92%88-%EB%AA%A8%EB%91%90-%EB%B3%B4%EA%B8%B0/%EC%8A%88%EC%A6%88/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/",
+      "basis": "assortment"
     }
   ],
   "Junya Watanabe": [
@@ -569,8 +589,14 @@
   ],
   "Kenzo": [
     {
-      "name": "Kenzo Official daily source",
-      "url": "https://www.kenzo.com/"
+      "name": "Kenzo Official sneaker assortment",
+      "url": "https://www.kenzo.com/en-kr/c-shoes/men/sneakers",
+      "basis": "assortment"
+    },
+    {
+      "name": "Kenzo Official sneaker assortment",
+      "url": "https://www.kenzo.com/en-kr/c-shoes/women/sneakers",
+      "basis": "assortment"
     }
   ],
   "Khaite": [
@@ -1087,8 +1113,9 @@
   ],
   "Stella McCartney": [
     {
-      "name": "Stella McCartney Official daily source",
-      "url": "https://www.stellamccartney.com/"
+      "name": "Stella McCartney Official sneaker assortment",
+      "url": "https://www.stellamccartney.com/kr/ko/%EC%97%AC%EC%84%B1/%EC%8A%88%EC%A6%88/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88",
+      "basis": "assortment"
     }
   ],
   "Stone Island": [
@@ -1133,8 +1160,9 @@
   ],
   "Tory Burch": [
     {
-      "name": "Tory Burch Official daily source",
-      "url": "https://www.toryburch.com/"
+      "name": "Tory Burch Official sneakers",
+      "url": "https://www.toryburch.com/en-us/shoes/sneakers/",
+      "basis": "assortment"
     }
   ],
   "Umbro": [
@@ -1194,12 +1222,14 @@
   ],
   "Versace": [
     {
-      "name": "Versace Official daily source",
-      "url": "https://www.versace.com/us/en/men/new-arrivals-for-him/"
+      "name": "Versace Official sneaker assortment",
+      "url": "https://www.versace.com/us/en/women/shoes/sneakers/",
+      "basis": "assortment"
     },
     {
-      "name": "Versace Official daily source",
-      "url": "https://www.versace.com/"
+      "name": "Versace Official sneaker assortment",
+      "url": "https://www.versace.com/us/en/men/shoes/sneakers/",
+      "basis": "assortment"
     }
   ],
   "VETEMENTS": [
@@ -1522,6 +1552,42 @@
       "name": "Autry Official sneakers (men)",
       "url": "https://www.autry-usa.com/ko/남성/스니커즈/",
       "basis": "catalogue"
+    }
+  ],
+  "MCM": [
+    {
+      "name": "MCM Official sneaker assortment",
+      "url": "https://us.mcmworldwide.com/en_US/women/shoes/sneakers",
+      "basis": "assortment"
+    },
+    {
+      "name": "MCM Official sneaker assortment",
+      "url": "https://us.mcmworldwide.com/en_US/men/shoes/sneakers",
+      "basis": "assortment"
+    }
+  ],
+  "Coach": [
+    {
+      "name": "Coach Official sneaker assortment",
+      "url": "https://korea.coach.com/shop/women/shoes/sneakers",
+      "basis": "assortment"
+    },
+    {
+      "name": "Coach Official sneaker assortment",
+      "url": "https://korea.coach.com/shop/men/shoes/sneakers",
+      "basis": "assortment"
+    },
+    {
+      "name": "Coach official regional entry",
+      "url": "https://www.coach.com/",
+      "basis": "assortment"
+    }
+  ],
+  "Goyard": [
+    {
+      "name": "Goyard Official sneaker assortment",
+      "url": "https://www.goyard.com/kr_ko/",
+      "basis": "assortment"
     }
   ]
 }

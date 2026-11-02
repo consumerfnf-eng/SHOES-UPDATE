@@ -83,6 +83,8 @@ def main():
     target=ROOT/'data/product-photo-analysis.json'
     store=json.loads(target.read_text(encoding='utf-8')) if target.exists() else {'schemaVersion':1,'method':'upper-image-analysis','photos':{}}
     lux=set(['Louis Vuitton','Dior','Balenciaga','Prada','Gucci','Celine','Saint Laurent','Hermès','Chanel','Miu Miu','Alexander McQueen','Fendi','Valentino Garavani','Givenchy','Maison Margiela','Bottega Veneta','Loewe','Lanvin','Rick Owens','Jil Sander','Off-White','AMIRI','Loro Piana','Brunello Cucinelli','Zegna','Moncler','The Row','Golden Goose','Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry','PANE','ALOHAS'])
+    expansion=ROOT/'config/lux-brand-expansion.json'
+    if expansion.exists():lux.update(json.loads(expansion.read_text(encoding='utf-8')).get('addedToLux',[]))
     rows={}
     for p in catalog['products']+monthly['retail']:
         if p in monthly['retail'] and p['brand'] not in lux and p.get('colorway') and not __import__('re').search(r'미표기|미확인|unknown|^image',p['colorway'],__import__('re').I):continue

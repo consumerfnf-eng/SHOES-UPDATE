@@ -14,6 +14,58 @@ function productSlug(p) {
 export function reviewedDesignName(p) {
   if(boundDesignReview(p)?.modelName)return p.designReview.modelName;
   let name=String(p.name||p.modelName||'').trim();
+  if(p.brand==='Burberry') {
+    const core=name.match(/\b(?:Knight Runner|Harrow|Eclipse|Matrix|Terrace|Set|Union|Regis)\b/i)?.[0];
+    if(core)return core+' Sneakers';
+    if(/\bcheck\b/i.test(name))return 'Check Sneakers '+String(p.style||'');
+  }
+  if(p.brand==='Versace') {
+    const core=name.match(/\b(?:Greca Court|La Greca|Biggie Basket|Trigreca|Odissea|Mercury|Galaxia|Goliath|Icaro|Greca)\b/i)?.[0];
+    if(core)return core+(/\bplatform\b/i.test(name)?' Platform':'')+' Sneakers';
+  }
+  if(p.brand==='Balmain') {
+    const core=name.match(/\b(?:Racing Mid[ -]Top|Racing Low|Racer 45|B-Court|B-East|B-Bold|Unicorn|Swan)\b/i)?.[0];
+    if(core)return core+(/\btennis\b/i.test(name)?' Tennis':'')+' Sneakers';
+  }
+  if(p.brand==='Coach') {
+    try{const slug=decodeURIComponent(new URL(p.url).pathname).split('/products/')[1]?.split('/')[0];const model=slug?.match(/^(.+?\bsneakers?)\b/i)?.[1];if(model)return titleCase(model.replaceAll('-',' '));}catch{}
+  }
+  if(p.brand==='Bally') {
+    const model=name.match(/^([A-Za-z]{3,})(?:\s*-\s*[A-Za-z]+)*\s*-\s*Sneakers?$/i)?.[1];
+    if(model&&!/^(?:Low|High|Men|Women|Leather|Bally|Lace|Slip)$/i.test(model)){
+      // Sonney court and runner constructions are different, despite the shared name.
+      if(/^Sonney$/i.test(model))return 'Sonney '+(/Sonney-B/i.test(name)?'Court':'Runner')+' Sneakers';
+      if(/^Roget$/i.test(model)&&/\/quest-msk0ez/i.test(p.url||''))return 'Quest Sneakers';
+      return titleCase(model)+' Sneakers';
+    }
+  }
+  if(p.brand==='Christian Louboutin') {
+    if(/\bLouis Junior\b/i.test(name)&&!/Canopy/i.test(name))return 'Louis Junior '+(/high[ -]top/i.test(name)?'High-Top ':'')+'Sneakers';
+    const core=name.match(/\b(?:Bsktball 1 Retro|Bsktball 1 Perla|Bsktball 1|Chambelisneak|Eleonora Flex|Eleonora|F\.A\.V(?: Fique A Vontade)?|Loubishark|Louis Jr(?: Spikes)? Canopy|Mara Open|Mara|Retero|Seavaste 2|SK VI|So Flo Uomo|So Flo(?: Perla)?|St Louis CL|St Louis|Tactical Skate|TCT Hiker|The Butterfly|Trailnrun)\b/i)?.[0];
+    if(core)return core.replace(/ Spikes| Perla(?=\s*$)/gi,m=>/^So Flo/i.test(core)?'':m).replace(/Louis Jr(?: Spikes)? Canopy/i,'Louis Jr Canopy')+(/high[ -]top/i.test(name)?' High-Top':'')+' Sneakers';
+  }
+  if(p.brand==='Jimmy Choo') {
+    try{
+      let model=decodeURIComponent(new URL(p.url).pathname).split('/').filter(Boolean).at(-2);
+      const terms={'다이아몬드':'Diamond','라이트':'Light','맥시':'Maxi','플렉스':'Flex','레트로':'Retro','써니':'Sunny','뮬':'Mule','런':'Run','하이탑':'High-Top','벨레스':'Veles','플로렌트':'Florent'};
+      for(const [ko,en] of Object.entries(terms))model=model.replaceAll(ko,en);
+      model=model.replace(/-(?:m|f)(?=-|$)/gi,'').replaceAll('-',' ');
+      if(/^(?:Diamond|Sunny|Veles|Florent)\b/i.test(model))return titleCase(model)+' Sneakers';
+    }catch{}
+  }
+  if(p.brand==='Ferragamo') {
+    try{const model=decodeURIComponent(new URL(p.url).pathname).split('/').at(-1).match(/^(.+)-\d{6}--\d+$/)?.[1];if(model)return titleCase(model.replaceAll('-',' '))+' Sneakers';}catch{}
+  }
+  if(p.brand==='MCM') {
+    const core=name.match(/^(.+?\bSneakers?)\b/i)?.[1];
+    if(core)return core;
+    if(/^Skywander Lo\b/i.test(name))return 'Skywander Lo Sneakers';
+  }
+  if(p.brand==='Kenzo') {
+    const model=name.match(/['“]([^'”]+)['”]/)?.[1];
+    if(model)return model+(/high[ -]?top/i.test(name)?' High-Top':/low[ -]?top/i.test(name)?' Low-Top':/slip[ -]?on/i.test(name)?' Slip-On':'')+' Sneakers';
+  }
+  if(p.brand==='Stella McCartney'&&/^Sneak[ -]?Elyse/i.test(name))return 'Sneak Elyse Trainers';
   if(p.brand==='Chanel') {
     const ref=String(p.url||'').match(/\/p\/(G\d{5})[A-Z0-9]+\//i)?.[1];
     return ref ? `Sneakers ${ref.toUpperCase()}` : '';

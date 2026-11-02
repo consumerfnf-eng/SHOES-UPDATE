@@ -1,0 +1,3741 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T08:34:13.975431+00:00",
+  "source": "Bally UAE regional store; separate from bally.com official records",
+  "pages": [
+    {
+      "url": "https://www.bally.ae/products.json?limit=250&page=1",
+      "count": 250,
+      "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+    },
+    {
+      "url": "https://www.bally.ae/products.json?limit=250&page=2",
+      "count": 250,
+      "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+    },
+    {
+      "url": "https://www.bally.ae/products.json?limit=250&page=3",
+      "count": 250,
+      "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+    },
+    {
+      "url": "https://www.bally.ae/products.json?limit=250&page=4",
+      "count": 250,
+      "contentHash": "eeab65718f4c4a7d1c7274594931902fe3f233d07e300df84877df2cf1b3b658"
+    },
+    {
+      "url": "https://www.bally.ae/products.json?limit=250&page=5",
+      "count": 250,
+      "contentHash": "b5d86c7d87369ab3c3cdec6356e1c57015dad1c1fea7f6d5ace0c7884bb6d9e1"
+    },
+    {
+      "url": "https://www.bally.ae/products.json?limit=250&page=6",
+      "count": 250,
+      "contentHash": "4a6298a929e0217fe95e52ebbcfb13502904646ea85081bd9794bdce60d04d24"
+    },
+    {
+      "url": "https://www.bally.ae/products.json?limit=250&page=7",
+      "count": 250,
+      "contentHash": "4e3f8bf641fdd46b2dfbc562ea5c20bcd95a92b68d94f4d23a073b12e4012316"
+    },
+    {
+      "url": "https://www.bally.ae/products.json?limit=250&page=8",
+      "count": 250,
+      "contentHash": "e5ba7e61eef45b20f0939c07a32fecdb8fea0791a269954df2a4b2e7516a8033"
+    },
+    {
+      "url": "https://www.bally.ae/products.json?limit=250&page=9",
+      "count": 166,
+      "contentHash": "8b8cab92dc40ce63054c99419b753cf0b38c8a0db07ba69a3a7dfcf317731d2a"
+    }
+  ],
+  "products": [
+    {
+      "id": "bally-uae-9243528134908:BEIGE",
+      "brand": "Bally",
+      "name": "Roget - Sneaker",
+      "url": "https://www.bally.ae/products/roget-msk0f7su013u8o1",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU013_U8O1_01.jpg?v=1771138022",
+      "style": "9243528134908:BEIGE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BEIGE",
+      "material": "",
+      "listedAt": "2026-02-15T10:46:59+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/roget-msk0f7su013u8o1",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU013_U8O1_01.jpg?v=1771138022",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU013_U8O1_02.jpg?v=1771138022",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU013_U8O1_03.jpg?v=1771138023",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU013_U8O1_04.jpg?v=1771138022",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU013_U8O1_05.jpg?v=1771138022",
+          "alt": "Roget - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9243528102140:WHITE",
+      "brand": "Bally",
+      "name": "Roget - Sneaker",
+      "url": "https://www.bally.ae/products/roget-msk0f7vt168u0a1",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT168_U0A1_01.jpg?v=1771138021",
+      "style": "9243528102140:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2026-02-15T10:46:57+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/roget-msk0f7vt168u0a1",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT168_U0A1_01.jpg?v=1771138021",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT168_U0A1_02.jpg?v=1771138020",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT168_U0A1_03.jpg?v=1771138020",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT168_U0A1_04.jpg?v=1771138020",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT168_U0A1_05.jpg?v=1771138020",
+          "alt": "Roget - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9243527446780:BLACK",
+      "brand": "Bally",
+      "name": "Lift-TSP - Sneaker",
+      "url": "https://www.bally.ae/products/lift-tsp-msk0gdvt012i988",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0GD_VT012_I988_01.jpg?v=1771137988",
+      "style": "9243527446780:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2026-02-15T10:46:25+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/lift-tsp-msk0gdvt012i988",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0GD_VT012_I988_01.jpg?v=1771137988",
+          "alt": "Lift-TSP - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0GD_VT012_I988_02.jpg?v=1771137988",
+          "alt": "Lift-TSP - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0GD_VT012_I988_03.jpg?v=1771137988",
+          "alt": "Lift-TSP - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0GD_VT012_I988_04.jpg?v=1771137989",
+          "alt": "Lift-TSP - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0GD_VT012_I988_05.jpg?v=1771137988",
+          "alt": "Lift-TSP - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9206474866940:BROWN",
+      "brand": "Bally",
+      "name": "Romy-M - Sneaker",
+      "url": "https://www.bally.ae/products/romy-m-msk0f8su012u8m2",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F8_SU012_U8M2_01.jpg?v=1767506486",
+      "style": "9206474866940:BROWN",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BROWN",
+      "material": "",
+      "listedAt": "2026-01-04T10:01:22+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/romy-m-msk0f8su012u8m2",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F8_SU012_U8M2_01.jpg?v=1767506486",
+          "alt": "Romy-M - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F8_SU012_U8M2_02.jpg?v=1767506486",
+          "alt": "Romy-M - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F8_SU012_U8M2_03.jpg?v=1767506486",
+          "alt": "Romy-M - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F8_SU012_U8M2_04.jpg?v=1767506486",
+          "alt": "Romy-M - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F8_SU012_U8M2_05.jpg?v=1767506486",
+          "alt": "Romy-M - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9206474604796:BLACK",
+      "brand": "Bally",
+      "name": "Darnell-T - Sneaker",
+      "url": "https://www.bally.ae/products/darnell-t-msk0cfte178u901",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE178_U901_01.jpg?v=1767506472",
+      "style": "9206474604796:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2026-01-04T10:01:08+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darnell-t-msk0cfte178u901",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE178_U901_01.jpg?v=1767506472",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE178_U901_02.jpg?v=1767506472",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE178_U901_03.jpg?v=1767506472",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE178_U901_04.jpg?v=1767506472",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE178_U901_05.jpg?v=1767506472",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE178_U901_06.jpg?v=1767506472",
+          "alt": "Darnell-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9114867237116:BROWN",
+      "brand": "Bally",
+      "name": "Roget - Sneaker",
+      "url": "https://www.bally.ae/products/roget-msk0f7vt006u5d9",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U8N1_01.jpg?v=1759644726",
+      "style": "9114867237116:BROWN",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BROWN",
+      "material": "",
+      "listedAt": "2025-10-05T10:12:02+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/roget-msk0f7vt006u5d9",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U6B9_01.jpg?v=1759644726",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U8N1_01.jpg?v=1759644726",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U6B9_02.jpg?v=1759644726",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U8N1_02.jpg?v=1759644726",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U6B9_03.jpg?v=1759644726",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U8N1_03.jpg?v=1759644726",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U6B9_04.jpg?v=1759644726",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U8N1_04.jpg?v=1759644727",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U6B9_05.jpg?v=1759644728",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U8N1_05.jpg?v=1759644727",
+          "alt": "Roget - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9114867204348:BLUE",
+      "brand": "Bally",
+      "name": "Roget - Sneaker",
+      "url": "https://www.bally.ae/products/quest-msk0ezsu005u8i8",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U5D9_01.jpg?v=1759644724",
+      "style": "9114867204348:BLUE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLUE",
+      "material": "",
+      "listedAt": "2025-10-05T10:12:01+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/quest-msk0ezsu005u8i8",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U5D9_01.jpg?v=1759644724",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U5D9_02.jpg?v=1759644724",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U5D9_03.jpg?v=1759644724",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U5D9_04.jpg?v=1759644724",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT006_U5D9_05.jpg?v=1759644725",
+          "alt": "Roget - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9114864550140:GREY",
+      "brand": "Bally",
+      "name": "Darnell-T-Fur - Sneaker",
+      "url": "https://www.bally.ae/products/darnell-t-fur-msk0evte091u6a7",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0EV_TE091_U7B2_01.jpg?v=1759644629",
+      "style": "9114864550140:GREY",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "GREY",
+      "material": "",
+      "listedAt": "2025-10-05T10:10:26+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darnell-t-fur-msk0evte091u6a7",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0EV_TE091_U7B2_01.jpg?v=1759644629",
+          "alt": "Darnell-T-Fur - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0EV_TE091_U7B2_02.jpg?v=1759644630",
+          "alt": "Darnell-T-Fur - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0EV_TE091_U7B2_03.jpg?v=1759644629",
+          "alt": "Darnell-T-Fur - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0EV_TE091_U7B2_04.jpg?v=1759644629",
+          "alt": "Darnell-T-Fur - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0EV_TE091_U7B2_05.jpg?v=1759644630",
+          "alt": "Darnell-T-Fur - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9073580900604:BLACK",
+      "brand": "Bally",
+      "name": "Rudys - Sneaker",
+      "url": "https://www.bally.ae/products/rudys-msk0e6vt907u901",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U901_01.jpg?v=1756216322",
+      "style": "9073580900604:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2025-08-26T17:51:59+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/rudys-msk0e6vt907u901",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U901_01.jpg?v=1756216322",
+          "alt": "Rudys - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U901_02.jpg?v=1756216322",
+          "alt": "Rudys - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U901_03.jpg?v=1756216322",
+          "alt": "Rudys - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U901_04.jpg?v=1756216322",
+          "alt": "Rudys - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U901_05.jpg?v=1756216323",
+          "alt": "Rudys - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9073580802300:WHITE",
+      "brand": "Bally",
+      "name": "Rudys - Sneaker",
+      "url": "https://www.bally.ae/products/rudys-msk0e6vt907u001",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U001_01.jpg?v=1756216320",
+      "style": "9073580802300:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-08-26T17:51:56+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/rudys-msk0e6vt907u001",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U001_01.jpg?v=1756216320",
+          "alt": "Rudys - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U001_02.jpg?v=1756216321",
+          "alt": "Rudys - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U001_03.jpg?v=1756216320",
+          "alt": "Rudys - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U001_04.jpg?v=1756216320",
+          "alt": "Rudys - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E6_VT907_U001_05.jpg?v=1756216320",
+          "alt": "Rudys - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9073580507388:BROWN",
+      "brand": "Bally",
+      "name": "Roget - Sneaker",
+      "url": "https://www.bally.ae/products/roget-msk0f7su009i8k7",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU009_I8K7_01.jpg?v=1756216315",
+      "style": "9073580507388:BROWN",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BROWN",
+      "material": "",
+      "listedAt": "2025-08-26T17:51:51+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/roget-msk0f7su009i8k7",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU009_I8K7_01.jpg?v=1756216315",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU009_I8K7_02.jpg?v=1756216315",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU009_I8K7_03.jpg?v=1756216315",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU009_I8K7_04.jpg?v=1756216315",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU009_I8K7_06.jpg?v=1756216315",
+          "alt": "Roget - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9073580310780:NAVY",
+      "brand": "Bally",
+      "name": "Roget - Sneaker",
+      "url": "https://www.bally.ae/products/roget-msk0f7su005i5u2",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU005_I5U2_01.jpg?v=1756216311",
+      "style": "9073580310780:NAVY",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "NAVY",
+      "material": "",
+      "listedAt": "2025-08-26T17:51:47+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/roget-msk0f7su005i5u2",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU005_I5U2_01.jpg?v=1756216311",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU005_I5U2_02.jpg?v=1756216312",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU005_I5U2_03.jpg?v=1756216311",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU005_I5U2_04.jpg?v=1756216311",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_SU005_I5U2_05.jpg?v=1756216311",
+          "alt": "Roget - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9073580146940:WHITE",
+      "brand": "Bally",
+      "name": "Roget - Sneaker",
+      "url": "https://www.bally.ae/products/roget-msk0f7vt013i013",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT013_I013_01.jpg?v=1756216307",
+      "style": "9073580146940:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-08-26T17:51:43+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/roget-msk0f7vt013i013",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT013_I013_01.jpg?v=1756216307",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT013_I013_02.jpg?v=1756216307",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT013_I013_03.jpg?v=1756216307",
+          "alt": "Roget - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0F7_VT013_I013_04.jpg?v=1756216307",
+          "alt": "Roget - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9073576935676:GREY",
+      "brand": "Bally",
+      "name": "Dewan-T-Fur-W - Sneaker",
+      "url": "https://www.bally.ae/products/dewan-t-fur-w-wk00chte060u7b2",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00CH_TE060_U7B2_01.jpg?v=1756216255",
+      "style": "9073576935676:GREY",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "GREY",
+      "material": "",
+      "listedAt": "2025-08-26T17:50:51+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dewan-t-fur-w-wk00chte060u7b2",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00CH_TE060_U7B2_01.jpg?v=1756216255",
+          "alt": "Dewan-T-Fur-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00CH_TE060_U7B2_02.jpg?v=1756216255",
+          "alt": "Dewan-T-Fur-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00CH_TE060_U7B2_03.jpg?v=1756216255",
+          "alt": "Dewan-T-Fur-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00CH_TE060_U7B2_04.jpg?v=1756216255",
+          "alt": "Dewan-T-Fur-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00CH_TE060_U7B2_05.jpg?v=1756216255",
+          "alt": "Dewan-T-Fur-W - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9073576640764:WHITE",
+      "brand": "Bally",
+      "name": "Dewan-T - Sneaker",
+      "url": "https://www.bally.ae/products/dewan-t-msk09vte132u001",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_U001_01.jpg?v=1756216248",
+      "style": "9073576640764:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-08-26T17:50:45+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dewan-t-msk09vte132u001",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_U001_01.jpg?v=1756216248",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_U001_02.jpg?v=1756216248",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_U001_03.jpg?v=1756216248",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_U001_04.jpg?v=1756216249",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_U001_05.jpg?v=1756216249",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_U001_06.jpg?v=1756216249",
+          "alt": "Dewan-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9073576575228:BLACK",
+      "brand": "Bally",
+      "name": "Dewan-T - Sneaker",
+      "url": "https://www.bally.ae/products/dewan-t-msk09vte132i903",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_I903_01.jpg?v=1756216246",
+      "style": "9073576575228:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2025-08-26T17:50:42+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dewan-t-msk09vte132i903",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_I903_01.jpg?v=1756216246",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_I903_02.jpg?v=1756216246",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_I903_03.jpg?v=1756216246",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_I903_04.jpg?v=1756216246",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_I903_05.jpg?v=1756216249",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE132_I903_06.jpg?v=1756216247",
+          "alt": "Dewan-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-9073576509692:BEIGE",
+      "brand": "Bally",
+      "name": "Danyk - Sneaker",
+      "url": "https://www.bally.ae/products/danyk-msk0e4su005i8v2",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E4_SU005_I8V2_01.jpg?v=1756216244",
+      "style": "9073576509692:BEIGE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BEIGE",
+      "material": "",
+      "listedAt": "2025-08-26T17:50:40+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/danyk-msk0e4su005i8v2",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E4_SU005_I8V2_01.jpg?v=1756216244",
+          "alt": "Danyk - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E4_SU005_I8V2_02.jpg?v=1756216244",
+          "alt": "Danyk - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E4_SU005_I8V2_03.jpg?v=1756216244",
+          "alt": "Danyk - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E4_SU005_I8V2_04.jpg?v=1756216244",
+          "alt": "Danyk - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E4_SU005_I8V2_05.jpg?v=1756216244",
+          "alt": "Danyk - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0E4_SU005_I8V2_06.jpg?v=1756216244",
+          "alt": "Danyk - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8962125594876:WHITE",
+      "brand": "Bally",
+      "name": "Thiago-Ribbon-W - Sneaker",
+      "url": "https://www.bally.ae/products/thiago-ribbon-w-wk00b2vt012i0t2",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B2_VT012_I0T2_1.jpg?v=1746339812",
+      "style": "8962125594876:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-05-04T10:23:23+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/thiago-ribbon-w-wk00b2vt012i0t2",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "de089cfe34882a9730163fb7a8f9653d80f037454386e10a01f65006550cafc1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B2_VT012_I0T2_1.jpg?v=1746339812",
+          "alt": "Thiago-Ribbon-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B2_VT012_I0T2_2.jpg?v=1746339812",
+          "alt": "Thiago-Ribbon-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B2_VT012_I0T2_3.jpg?v=1746339812",
+          "alt": "Thiago-Ribbon-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B2_VT012_I0T2_4.jpg?v=1746339812",
+          "alt": "Thiago-Ribbon-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B2_VT012_I0T2_5.jpg?v=1746339812",
+          "alt": "Thiago-Ribbon-W - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891353530620:BLACK",
+      "brand": "Bally",
+      "name": "Tyger - Sneaker",
+      "url": "https://www.bally.ae/products/tyger-msk0bjvt179u901",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT179_U901_1.jpg?v=1738477835",
+      "style": "8891353530620:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2025-02-02T10:30:23+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/tyger-msk0bjvt179u901",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT179_U901_1.jpg?v=1738477835",
+          "alt": "Tyger - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT179_U901_2.jpg?v=1738477835",
+          "alt": "Tyger - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT179_U901_3.jpg?v=1738477835",
+          "alt": "Tyger - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT179_U901_4.jpg?v=1738477835",
+          "alt": "Tyger - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT179_U901_5.jpg?v=1738477835",
+          "alt": "Tyger - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT179_U901_6.jpg?v=1738477835",
+          "alt": "Tyger - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891353497852:BLACK",
+      "brand": "Bally",
+      "name": "Turyn-U - Sneaker",
+      "url": "https://www.bally.ae/products/turyn-u-msk0csvt005u901",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CS_VT005_U901_1.jpg?v=1738477821",
+      "style": "8891353497852:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2025-02-02T10:30:08+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/turyn-u-msk0csvt005u901",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CS_VT005_U901_1.jpg?v=1738477821",
+          "alt": "Turyn-U - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CS_VT005_U901_2.jpg?v=1738477821",
+          "alt": "Turyn-U - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CS_VT005_U901_3.jpg?v=1738477821",
+          "alt": "Turyn-U - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CS_VT005_U901_4.jpg?v=1738477821",
+          "alt": "Turyn-U - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CS_VT005_U901_5.jpg?v=1738477821",
+          "alt": "Turyn-U - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CS_VT005_U901_6.jpg?v=1738477821",
+          "alt": "Turyn-U - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891353465084:WHITE",
+      "brand": "Bally",
+      "name": "Thiago-W - Sneaker",
+      "url": "https://www.bally.ae/products/thiago-w-wk00b0vt031i013",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT031_I013_1.jpg?v=1738477806",
+      "style": "8891353465084:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-02-02T10:29:54+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/thiago-w-wk00b0vt031i013",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT031_I013_1.jpg?v=1738477806",
+          "alt": "Thiago-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT031_I013_2.jpg?v=1738477806",
+          "alt": "Thiago-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT031_I013_3.jpg?v=1738477806",
+          "alt": "Thiago-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT031_I013_4.jpg?v=1738477806",
+          "alt": "Thiago-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT031_I013_5.jpg?v=1738477806",
+          "alt": "Thiago-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT031_I013_6.jpg?v=1738477806",
+          "alt": "Thiago-W - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891353432316:WHITE",
+      "brand": "Bally",
+      "name": "Thiago-W - Sneaker",
+      "url": "https://www.bally.ae/products/thiago-w-wk00b0vt168i0l9",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT168_I0L9_1.jpg?v=1738477793",
+      "style": "8891353432316:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-02-02T10:29:43+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/thiago-w-wk00b0vt168i0l9",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT168_I0L9_1.jpg?v=1738477793",
+          "alt": "Thiago-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT168_I0L9_2.jpg?v=1738477793",
+          "alt": "Thiago-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT168_I0L9_3.jpg?v=1738477793",
+          "alt": "Thiago-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT168_I0L9_4.jpg?v=1738477793",
+          "alt": "Thiago-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00B0_VT168_I0L9_5.jpg?v=1738477793",
+          "alt": "Thiago-W - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891353366780:WHITE",
+      "brand": "Bally",
+      "name": "Thiago-Ribbon - Sneaker",
+      "url": "https://www.bally.ae/products/thiago-ribbon-msk0cavt012i0t2",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CA_VT012_I0T2_1.jpg?v=1738477781",
+      "style": "8891353366780:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-02-02T10:29:31+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/thiago-ribbon-msk0cavt012i0t2",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CA_VT012_I0T2_1.jpg?v=1738477781",
+          "alt": "Thiago-Ribbon - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CA_VT012_I0T2_2.jpg?v=1738477781",
+          "alt": "Thiago-Ribbon - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CA_VT012_I0T2_3.jpg?v=1738477781",
+          "alt": "Thiago-Ribbon - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CA_VT012_I0T2_4.jpg?v=1738477781",
+          "alt": "Thiago-Ribbon - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CA_VT012_I0T2_5.jpg?v=1738477781",
+          "alt": "Thiago-Ribbon - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891352973564:BLUE",
+      "brand": "Bally",
+      "name": "Ryo - Sneaker",
+      "url": "https://www.bally.ae/products/ryo-msk0clvt049i5p8",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I5P8_1.jpg?v=1738477698",
+      "style": "8891352973564:BLUE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLUE",
+      "material": "",
+      "listedAt": "2025-02-02T10:28:08+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/ryo-msk0clvt049i5p8",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I5P8_1.jpg?v=1738477698",
+          "alt": "Ryo - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I5P8_2.jpg?v=1738477698",
+          "alt": "Ryo - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I5P8_3.jpg?v=1738477698",
+          "alt": "Ryo - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I5P8_4.jpg?v=1738477698",
+          "alt": "Ryo - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I5P8_5.jpg?v=1738477698",
+          "alt": "Ryo - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891352908028:WHITE",
+      "brand": "Bally",
+      "name": "Ryo - Sneaker",
+      "url": "https://www.bally.ae/products/ryo-msk0clvt049i0t2",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I0T2_1.jpg?v=1738477687",
+      "style": "8891352908028:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-02-02T10:27:56+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/ryo-msk0clvt049i0t2",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I0T2_1.jpg?v=1738477687",
+          "alt": "Ryo - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I0T2_2.jpg?v=1738477687",
+          "alt": "Ryo - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I0T2_3.jpg?v=1738477687",
+          "alt": "Ryo - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I0T2_4.jpg?v=1738477687",
+          "alt": "Ryo - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CL_VT049_I0T2_5.jpg?v=1738477687",
+          "alt": "Ryo - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891352842492:BLUE",
+      "brand": "Bally",
+      "name": "Roar - Sneaker",
+      "url": "https://www.bally.ae/products/roar-msk0dtvt834u590",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U590_1.jpg?v=1738477674",
+      "style": "8891352842492:BLUE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLUE",
+      "material": "",
+      "listedAt": "2025-02-02T10:27:45+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/roar-msk0dtvt834u590",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U590_1.jpg?v=1738477674",
+          "alt": "Roar - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U590_2.jpg?v=1738477674",
+          "alt": "Roar - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U590_3.jpg?v=1738477674",
+          "alt": "Roar - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U590_4.jpg?v=1738477674",
+          "alt": "Roar - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U590_5.jpg?v=1738477674",
+          "alt": "Roar - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891352809724:WHITE",
+      "brand": "Bally",
+      "name": "Roar - Sneaker",
+      "url": "https://www.bally.ae/products/roar-msk0dtvt834u001",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U001_1.jpg?v=1738477663",
+      "style": "8891352809724:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-02-02T10:27:33+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/roar-msk0dtvt834u001",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U001_1.jpg?v=1738477663",
+          "alt": "Roar - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U001_2.jpg?v=1738477663",
+          "alt": "Roar - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U001_3.jpg?v=1738477663",
+          "alt": "Roar - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U001_4.jpg?v=1738477663",
+          "alt": "Roar - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0DT_VT834_U001_5.jpg?v=1738477663",
+          "alt": "Roar - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891352776956:BLACK",
+      "brand": "Bally",
+      "name": "Rebby - Sneaker",
+      "url": "https://www.bally.ae/products/rebby-msk08yvt179i9s1",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I9S1_1.jpg?v=1738477652",
+      "style": "8891352776956:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2025-02-02T10:27:22+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/rebby-msk08yvt179i9s1",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I9S1_1.jpg?v=1738477652",
+          "alt": "Rebby - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I9S1_2.jpg?v=1738477652",
+          "alt": "Rebby - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I9S1_3.jpg?v=1738477652",
+          "alt": "Rebby - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I9S1_4.jpg?v=1738477652",
+          "alt": "Rebby - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I9S1_5.jpg?v=1738477652",
+          "alt": "Rebby - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891350548732:BROWN",
+      "brand": "Bally",
+      "name": "Dewan-T - Sneaker",
+      "url": "https://www.bally.ae/products/dewan-t-msk09vte032u804",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U804_1.jpg?v=1738476990",
+      "style": "8891350548732:BROWN",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BROWN",
+      "material": "",
+      "listedAt": "2025-02-02T10:16:17+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dewan-t-msk09vte032u804",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U804_1.jpg?v=1738476990",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U804_2.jpg?v=1738476990",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U804_3.jpg?v=1738476990",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U804_4.jpg?v=1738476990",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U804_5.jpg?v=1738476990",
+          "alt": "Dewan-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891350483196:WHITE",
+      "brand": "Bally",
+      "name": "Dennys-W - Sneaker",
+      "url": "https://www.bally.ae/products/dennys-w-wk00bgvt856i0v9",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BG_VT856_I0V9_1.jpg?v=1738476962",
+      "style": "8891350483196:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-02-02T10:15:50+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dennys-w-wk00bgvt856i0v9",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BG_VT856_I0V9_1.jpg?v=1738476962",
+          "alt": "Dennys-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BG_VT856_I0V9_2.jpg?v=1738476962",
+          "alt": "Dennys-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BG_VT856_I0V9_3.jpg?v=1738476962",
+          "alt": "Dennys-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BG_VT856_I0V9_4.jpg?v=1738476962",
+          "alt": "Dennys-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BG_VT856_I0V9_5.jpg?v=1738476962",
+          "alt": "Dennys-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BG_VT856_I0V9_6.jpg?v=1738476962",
+          "alt": "Dennys-W - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891350221052:BLACK",
+      "brand": "Bally",
+      "name": "Darsyl - Sneaker",
+      "url": "https://www.bally.ae/products/darsyl-msk09svt238i903",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_I903_1.jpg?v=1738476863",
+      "style": "8891350221052:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2025-02-02T10:14:13+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darsyl-msk09svt238i903",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_I903_1.jpg?v=1738476863",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_I903_2.jpg?v=1738476863",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_I903_3.jpg?v=1738476863",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_I903_4.jpg?v=1738476863",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_I903_5.jpg?v=1738476863",
+          "alt": "Darsyl - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891350188284:BLUE",
+      "brand": "Bally",
+      "name": "Darsyl - Sneaker",
+      "url": "https://www.bally.ae/products/darsyl-msk09svt592i5s9",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I5S9_1.jpg?v=1738476852",
+      "style": "8891350188284:BLUE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLUE",
+      "material": "",
+      "listedAt": "2025-02-02T10:14:04+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darsyl-msk09svt592i5s9",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I5S9_1.jpg?v=1738476852",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I5S9_2.jpg?v=1738476852",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I5S9_3.jpg?v=1738476852",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I5S9_4.jpg?v=1738476852",
+          "alt": "Darsyl - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891350122748:WHITE",
+      "brand": "Bally",
+      "name": "Darnell-T-W - Sneaker",
+      "url": "https://www.bally.ae/products/darnell-t-w-wk00bfte078u001",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_U001_1.jpg?v=1738476842",
+      "style": "8891350122748:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-02-02T10:13:51+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darnell-t-w-wk00bfte078u001",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_U001_1.jpg?v=1738476842",
+          "alt": "Darnell-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_U001_2.jpg?v=1738476842",
+          "alt": "Darnell-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_U001_3.jpg?v=1738476842",
+          "alt": "Darnell-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_U001_4.jpg?v=1738476842",
+          "alt": "Darnell-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_U001_5.jpg?v=1738476842",
+          "alt": "Darnell-T-W - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891350089980:BLACK",
+      "brand": "Bally",
+      "name": "Darnell-T-W - Sneaker",
+      "url": "https://www.bally.ae/products/darnell-t-w-wk00bfte078i905",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_I905_1.jpg?v=1738476829",
+      "style": "8891350089980:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2025-02-02T10:13:39+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darnell-t-w-wk00bfte078i905",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_I905_1.jpg?v=1738476829",
+          "alt": "Darnell-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_I905_2.jpg?v=1738476829",
+          "alt": "Darnell-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_I905_3.jpg?v=1738476829",
+          "alt": "Darnell-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_I905_4.jpg?v=1738476829",
+          "alt": "Darnell-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK00BF_TE078_I905_5.jpg?v=1738476829",
+          "alt": "Darnell-T-W - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891350057212:BLACK",
+      "brand": "Bally",
+      "name": "Darnell-T - Sneaker",
+      "url": "https://www.bally.ae/products/darnell-t-msk0cfte078u901",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U901_1.jpg?v=1738476818",
+      "style": "8891350057212:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2025-02-02T10:13:27+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darnell-t-msk0cfte078u901",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U901_1.jpg?v=1738476818",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U901_2.jpg?v=1738476818",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U901_3.jpg?v=1738476818",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U901_4.jpg?v=1738476818",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U901_5.jpg?v=1738476818",
+          "alt": "Darnell-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891350024444:BROWN",
+      "brand": "Bally",
+      "name": "Darnell-T - Sneaker",
+      "url": "https://www.bally.ae/products/darnell-t-msk0cfte078u8b7",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U8B7_1.jpg?v=1738476806",
+      "style": "8891350024444:BROWN",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BROWN",
+      "material": "",
+      "listedAt": "2025-02-02T10:13:16+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darnell-t-msk0cfte078u8b7",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U8B7_1.jpg?v=1738476806",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U8B7_2.jpg?v=1738476806",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U8B7_3.jpg?v=1738476806",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U8B7_4.jpg?v=1738476806",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U8B7_5.jpg?v=1738476806",
+          "alt": "Darnell-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891349958908:BLUE",
+      "brand": "Bally",
+      "name": "Darnell-T - Sneaker",
+      "url": "https://www.bally.ae/products/darnell-t-msk0cfte078u590",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U590_1.jpg?v=1738476794",
+      "style": "8891349958908:BLUE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLUE",
+      "material": "",
+      "listedAt": "2025-02-02T10:13:02+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darnell-t-msk0cfte078u590",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U590_1.jpg?v=1738476794",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U590_2.jpg?v=1738476794",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U590_3.jpg?v=1738476794",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U590_4.jpg?v=1738476794",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U590_5.jpg?v=1738476794",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U590_6.jpg?v=1738476794",
+          "alt": "Darnell-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8891349893372:WHITE",
+      "brand": "Bally",
+      "name": "Darnell-T - Sneaker",
+      "url": "https://www.bally.ae/products/darnell-t-msk0cfte078u001",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U001_1.jpg?v=1738476780",
+      "style": "8891349893372:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2025-02-02T10:12:47+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darnell-t-msk0cfte078u001",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U001_1.jpg?v=1738476780",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U001_2.jpg?v=1738476780",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U001_3.jpg?v=1738476780",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U001_4.jpg?v=1738476780",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U001_5.jpg?v=1738476780",
+          "alt": "Darnell-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0CF_TE078_U001_6.jpg?v=1738476780",
+          "alt": "Darnell-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8807966998780:RED",
+      "brand": "Bally",
+      "name": "Thiago - Sneaker",
+      "url": "https://www.bally.ae/products/thiago-msk0d5vt153i3o1",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0D5_VT153_I3O1_1.jpg?v=1730198567",
+      "style": "8807966998780:RED",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "RED",
+      "material": "",
+      "listedAt": "2024-10-29T14:42:34+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/thiago-msk0d5vt153i3o1",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0D5_VT153_I3O1_1.jpg?v=1730198567",
+          "alt": "Thiago - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0D5_VT153_I3O1_2.jpg?v=1730198567",
+          "alt": "Thiago - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0D5_VT153_I3O1_3.jpg?v=1730198567",
+          "alt": "Thiago - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0D5_VT153_I3O1_4.jpg?v=1730198567",
+          "alt": "Thiago - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0D5_VT153_I3O1_5.jpg?v=1730198567",
+          "alt": "Thiago - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8807966900476:BLUE",
+      "brand": "Bally",
+      "name": "Rayan - Sneaker",
+      "url": "https://www.bally.ae/products/rayan-msk0asnk005u590",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U590_1.jpg?v=1730198539",
+      "style": "8807966900476:BLUE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLUE",
+      "material": "",
+      "listedAt": "2024-10-29T14:42:06+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/rayan-msk0asnk005u590",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U590_1.jpg?v=1730198539",
+          "alt": "Rayan - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U590_2.jpg?v=1730198539",
+          "alt": "Rayan - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U590_3.jpg?v=1730198539",
+          "alt": "Rayan - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U590_4.jpg?v=1730198539",
+          "alt": "Rayan - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U590_5.jpg?v=1730198539",
+          "alt": "Rayan - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8807966834940:BROWN",
+      "brand": "Bally",
+      "name": "Rayan - Sneaker",
+      "url": "https://www.bally.ae/products/rayan-msk0asnk005u804",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U804_1.jpg?v=1730198524",
+      "style": "8807966834940:BROWN",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BROWN",
+      "material": "",
+      "listedAt": "2024-10-29T14:41:52+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/rayan-msk0asnk005u804",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U804_1.jpg?v=1730198524",
+          "alt": "Rayan - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U804_2.jpg?v=1730198524",
+          "alt": "Rayan - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U804_3.jpg?v=1730198524",
+          "alt": "Rayan - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U804_4.jpg?v=1730198524",
+          "alt": "Rayan - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AS_NK005_U804_5.jpg?v=1730198524",
+          "alt": "Rayan - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8807966769404:BROWN",
+      "brand": "Bally",
+      "name": "Dressy - Sneaker",
+      "url": "https://www.bally.ae/products/dressy-msk0alnk005u804",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U804_1.jpg?v=1730198510",
+      "style": "8807966769404:BROWN",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BROWN",
+      "material": "",
+      "listedAt": "2024-10-29T14:41:37+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dressy-msk0alnk005u804",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U804_1.jpg?v=1730198510",
+          "alt": "Dressy - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U804_2.jpg?v=1730198510",
+          "alt": "Dressy - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U804_3.jpg?v=1730198510",
+          "alt": "Dressy - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U804_4.jpg?v=1730198510",
+          "alt": "Dressy - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U804_5.jpg?v=1730198510",
+          "alt": "Dressy - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8807966703868:BLACK",
+      "brand": "Bally",
+      "name": "Flick-Ribbon - Sneaker",
+      "url": "https://www.bally.ae/products/flick-ribbon-msk0c8vt002u901",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0C8_VT002_U901_1.jpg?v=1730198488",
+      "style": "8807966703868:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-10-29T14:41:22+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/flick-ribbon-msk0c8vt002u901",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0C8_VT002_U901_1.jpg?v=1730198488",
+          "alt": "Flick-Ribbon - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0C8_VT002_U901_2.jpg?v=1730198488",
+          "alt": "Flick-Ribbon - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8807965360380:BLUE",
+      "brand": "Bally",
+      "name": "Dressy - Sneaker",
+      "url": "https://www.bally.ae/products/dressy-msk0alnk005u590",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U590_1.jpg?v=1730198294",
+      "style": "8807965360380:BLUE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLUE",
+      "material": "",
+      "listedAt": "2024-10-29T14:38:02+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dressy-msk0alnk005u590",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U590_1.jpg?v=1730198294",
+          "alt": "Dressy - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U590_2.jpg?v=1730198294",
+          "alt": "Dressy - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U590_3.jpg?v=1730198294",
+          "alt": "Dressy - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U590_4.jpg?v=1730198294",
+          "alt": "Dressy - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U590_5.jpg?v=1730198294",
+          "alt": "Dressy - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8807964999932:WHITE",
+      "brand": "Bally",
+      "name": "Flick-Ribbon - Sneaker",
+      "url": "https://www.bally.ae/products/flick-ribbon-msk0c8vt002i007",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0C8_VT002_I007_1.jpg?v=1730198188",
+      "style": "8807964999932:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-10-29T14:36:16+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/flick-ribbon-msk0c8vt002i007",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0C8_VT002_I007_1.jpg?v=1730198188",
+          "alt": "Flick-Ribbon - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0C8_VT002_I007_2.jpg?v=1730198188",
+          "alt": "Flick-Ribbon - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0C8_VT002_I007_3.jpg?v=1730198188",
+          "alt": "Flick-Ribbon - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0C8_VT002_I007_4.jpg?v=1730198188",
+          "alt": "Flick-Ribbon - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0C8_VT002_I007_5.jpg?v=1730198188",
+          "alt": "Flick-Ribbon - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8807964442876:BLACK",
+      "brand": "Bally",
+      "name": "Darwey-T - Sneaker",
+      "url": "https://www.bally.ae/products/darwey-t-msk0abte027i905",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I905_1.jpg?v=1730198022",
+      "style": "8807964442876:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-10-29T14:33:30+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darwey-t-msk0abte027i905",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I905_1.jpg?v=1730198022",
+          "alt": "Darwey-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I905_2.jpg?v=1730198022",
+          "alt": "Darwey-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I905_3.jpg?v=1730198022",
+          "alt": "Darwey-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I905_4.jpg?v=1730198022",
+          "alt": "Darwey-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I905_5.jpg?v=1730198022",
+          "alt": "Darwey-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8807963754748:BLACK",
+      "brand": "Bally",
+      "name": "Daryel-T - Sneaker",
+      "url": "https://www.bally.ae/products/daryel-t-msk09wte036u901",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09W_TE036_U901_1.jpg?v=1730197900",
+      "style": "8807963754748:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-10-29T14:31:29+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/daryel-t-msk09wte036u901",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09W_TE036_U901_1.jpg?v=1730197900",
+          "alt": "Daryel-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09W_TE036_U901_2.jpg?v=1730197900",
+          "alt": "Daryel-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09W_TE036_U901_3.jpg?v=1730197900",
+          "alt": "Daryel-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09W_TE036_U901_4.jpg?v=1730197900",
+          "alt": "Daryel-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09W_TE036_U901_5.jpg?v=1730197900",
+          "alt": "Daryel-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8807963459836:BLACK",
+      "brand": "Bally",
+      "name": "Darwey-T - Sneaker",
+      "url": "https://www.bally.ae/products/darwey-t-msk0abte027i903",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I903_1.jpg?v=1730197829",
+      "style": "8807963459836:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-10-29T14:30:19+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darwey-t-msk0abte027i903",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=2",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "7517e34920aa726d8b6417e521ee1bc4e2eacc69ddd8d843d18d0cf0cf3a75f2"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I903_1.jpg?v=1730197829",
+          "alt": "Darwey-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I903_2.jpg?v=1730197829",
+          "alt": "Darwey-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I903_3.jpg?v=1730197829",
+          "alt": "Darwey-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I903_4.jpg?v=1730197829",
+          "alt": "Darwey-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AB_TE027_I903_5.jpg?v=1730197829",
+          "alt": "Darwey-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743941865724:WHITE",
+      "brand": "Bally",
+      "name": "Tyger - Sneakers",
+      "url": "https://www.bally.ae/products/tyger-msk0bjvt031u001",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT031_U001_1.jpg?v=1725002681",
+      "style": "8743941865724:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-08-30T11:24:29+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/tyger-msk0bjvt031u001",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT031_U001_1.jpg?v=1725002681",
+          "alt": "Tyger - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT031_U001_2.jpg?v=1725002681",
+          "alt": "Tyger - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT031_U001_3.jpg?v=1725002681",
+          "alt": "Tyger - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT031_U001_4.jpg?v=1725002681",
+          "alt": "Tyger - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BJ_VT031_U001_5.jpg?v=1725002681",
+          "alt": "Tyger - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743941538044:WHITE",
+      "brand": "Bally",
+      "name": "Sonney-B-W - Sneakers",
+      "url": "https://www.bally.ae/products/sonney-b-w-wk005rvt013i0l8",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT013_I0L8_1.jpg?v=1725002628",
+      "style": "8743941538044:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-08-30T11:23:36+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/sonney-b-w-wk005rvt013i0l8",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT013_I0L8_1.jpg?v=1725002628",
+          "alt": "Sonney-B-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT013_I0L8_2.jpg?v=1725002628",
+          "alt": "Sonney-B-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT013_I0L8_3.jpg?v=1725002628",
+          "alt": "Sonney-B-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT013_I0L8_4.jpg?v=1725002628",
+          "alt": "Sonney-B-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT013_I0L8_5.jpg?v=1725002628",
+          "alt": "Sonney-B-W - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743941439740:WHITE",
+      "brand": "Bally",
+      "name": "Sonney-B-W - Sneakers",
+      "url": "https://www.bally.ae/products/sonney-b-w-wk005rvt214i0i5",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT214_I0I5_1.jpg?v=1725002614",
+      "style": "8743941439740:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-08-30T11:23:24+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/sonney-b-w-wk005rvt214i0i5",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT214_I0I5_1.jpg?v=1725002614",
+          "alt": "Sonney-B-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT214_I0I5_2.jpg?v=1725002614",
+          "alt": "Sonney-B-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT214_I0I5_3.jpg?v=1725002614",
+          "alt": "Sonney-B-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK005R_VT214_I0I5_4.jpg?v=1725002614",
+          "alt": "Sonney-B-W - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743940325628:BLACK",
+      "brand": "Bally",
+      "name": "Regys-W - Sneakers",
+      "url": "https://www.bally.ae/products/regys-w-wk009uvt711i905",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_I905_1.jpg?v=1725002416",
+      "style": "8743940325628:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-08-30T11:20:01+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/regys-w-wk009uvt711i905",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_I905_1.jpg?v=1725002416",
+          "alt": "Regys-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_I905_2.jpg?v=1725002416",
+          "alt": "Regys-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_I905_3.jpg?v=1725002416",
+          "alt": "Regys-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_I905_4.jpg?v=1725002416",
+          "alt": "Regys-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_I905_5.jpg?v=1725002416",
+          "alt": "Regys-W - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743940260092:WHITE",
+      "brand": "Bally",
+      "name": "Regys-W - Sneakers",
+      "url": "https://www.bally.ae/products/regys-w-wk009uvt711u001",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_U001_1.jpg?v=1725002399",
+      "style": "8743940260092:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-08-30T11:19:43+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/regys-w-wk009uvt711u001",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_U001_1.jpg?v=1725002399",
+          "alt": "Regys-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_U001_2.jpg?v=1725002399",
+          "alt": "Regys-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_U001_3.jpg?v=1725002399",
+          "alt": "Regys-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_U001_4.jpg?v=1725002399",
+          "alt": "Regys-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK009U_VT711_U001_5.jpg?v=1725002399",
+          "alt": "Regys-W - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743940129020:WHITE",
+      "brand": "Bally",
+      "name": "Rebby-W - Sneakers",
+      "url": "https://www.bally.ae/products/rebby-w-wk008avt179i0i0",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008A_VT179_I0I0_1.jpg?v=1725002381",
+      "style": "8743940129020:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-08-30T11:19:26+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/rebby-w-wk008avt179i0i0",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008A_VT179_I0I0_1.jpg?v=1725002381",
+          "alt": "Rebby-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008A_VT179_I0I0_2.jpg?v=1725002381",
+          "alt": "Rebby-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008A_VT179_I0I0_3.jpg?v=1725002381",
+          "alt": "Rebby-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008A_VT179_I0I0_4.jpg?v=1725002381",
+          "alt": "Rebby-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008A_VT179_I0I0_5.jpg?v=1725002381",
+          "alt": "Rebby-W - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743939997948:BLUE",
+      "brand": "Bally",
+      "name": "Rebby - Sneakers",
+      "url": "https://www.bally.ae/products/rebby-msk08yvt179i5l8",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I5L8_1.jpg?v=1725002364",
+      "style": "8743939997948:BLUE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLUE",
+      "material": "",
+      "listedAt": "2024-08-30T11:19:10+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/rebby-msk08yvt179i5l8",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I5L8_1.jpg?v=1725002364",
+          "alt": "Rebby - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I5L8_2.jpg?v=1725002364",
+          "alt": "Rebby - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I5L8_3.jpg?v=1725002364",
+          "alt": "Rebby - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I5L8_4.jpg?v=1725002364",
+          "alt": "Rebby - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK08Y_VT179_I5L8_5.jpg?v=1725002364",
+          "alt": "Rebby - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743932264700:BLACK",
+      "brand": "Bally",
+      "name": "Freyne-T - Sneakers",
+      "url": "https://www.bally.ae/products/freyne-t-msk0bfte036i9q1",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BF_TE036_I9Q1_1.jpg?v=1725001276",
+      "style": "8743932264700:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-08-30T11:01:02+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/freyne-t-msk0bfte036i9q1",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BF_TE036_I9Q1_1.jpg?v=1725001276",
+          "alt": "Freyne-T - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BF_TE036_I9Q1_2.jpg?v=1725001276",
+          "alt": "Freyne-T - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BF_TE036_I9Q1_3.jpg?v=1725001276",
+          "alt": "Freyne-T - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BF_TE036_I9Q1_4.jpg?v=1725001277",
+          "alt": "Freyne-T - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0BF_TE036_I9Q1_5.jpg?v=1725001277",
+          "alt": "Freyne-T - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743932035324:BROWN",
+      "brand": "Bally",
+      "name": "Dressy - Sneakers",
+      "url": "https://www.bally.ae/products/dressy-msk0alnk005u852",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U852_1.jpg?v=1725001238",
+      "style": "8743932035324:BROWN",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BROWN",
+      "material": "",
+      "listedAt": "2024-08-30T11:00:24+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dressy-msk0alnk005u852",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U852_1.jpg?v=1725001238",
+          "alt": "Dressy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U852_2.jpg?v=1725001238",
+          "alt": "Dressy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U852_3.jpg?v=1725001238",
+          "alt": "Dressy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U852_4.jpg?v=1725001238",
+          "alt": "Dressy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK0AL_NK005_U852_5.jpg?v=1725001238",
+          "alt": "Dressy - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743931937020:GREY",
+      "brand": "Bally",
+      "name": "Dewy - Sneakers",
+      "url": "https://www.bally.ae/products/dewy-msk09uvt711i7l4",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT711_I7L4_1.jpg?v=1725001221",
+      "style": "8743931937020:GREY",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "GREY",
+      "material": "",
+      "listedAt": "2024-08-30T11:00:06+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dewy-msk09uvt711i7l4",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT711_I7L4_1.jpg?v=1725001221",
+          "alt": "Dewy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT711_I7L4_2.jpg?v=1725001221",
+          "alt": "Dewy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT711_I7L4_3.jpg?v=1725001221",
+          "alt": "Dewy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT711_I7L4_4.jpg?v=1725001221",
+          "alt": "Dewy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT711_I7L4_5.jpg?v=1725001221",
+          "alt": "Dewy - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743931871484:WHITE",
+      "brand": "Bally",
+      "name": "Dewy - Sneakers",
+      "url": "https://www.bally.ae/products/dewy-msk09uvt595i0o9",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT595_I0O9_1.jpg?v=1725001203",
+      "style": "8743931871484:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-08-30T10:59:43+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dewy-msk09uvt595i0o9",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT595_I0O9_1.jpg?v=1725001203",
+          "alt": "Dewy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT595_I0O9_2.jpg?v=1725001203",
+          "alt": "Dewy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT595_I0O9_3.jpg?v=1725001203",
+          "alt": "Dewy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT595_I0O9_4.jpg?v=1725001203",
+          "alt": "Dewy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT595_I0O9_5.jpg?v=1725001203",
+          "alt": "Dewy - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09U_VT595_I0O9_6.jpg?v=1725001203",
+          "alt": "Dewy - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743931379964:WHITE",
+      "brand": "Bally",
+      "name": "Dewan-T - Sneakers",
+      "url": "https://www.bally.ae/products/dewan-t-msk09vte032u001",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U001_1.jpg?v=1725001110",
+      "style": "8743931379964:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-08-30T10:58:16+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dewan-t-msk09vte032u001",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U001_1.jpg?v=1725001110",
+          "alt": "Dewan-T - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U001_2.jpg?v=1725001110",
+          "alt": "Dewan-T - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U001_3.jpg?v=1725001110",
+          "alt": "Dewan-T - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U001_4.jpg?v=1725001110",
+          "alt": "Dewan-T - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09V_TE032_U001_5.jpg?v=1725001110",
+          "alt": "Dewan-T - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743931085052:BURGUNDY",
+      "brand": "Bally",
+      "name": "Daryel-T-W - Sneakers",
+      "url": "https://www.bally.ae/products/daryel-t-w-wk008kte041i8q9",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I8Q9_1.jpg?v=1725001095",
+      "style": "8743931085052:BURGUNDY",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "BURGUNDY",
+      "material": "",
+      "listedAt": "2024-08-30T10:58:01+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/daryel-t-w-wk008kte041i8q9",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I8Q9_1.jpg?v=1725001095",
+          "alt": "Daryel-T-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I8Q9_2.jpg?v=1725001095",
+          "alt": "Daryel-T-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I8Q9_3.jpg?v=1725001095",
+          "alt": "Daryel-T-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I8Q9_4.jpg?v=1725001095",
+          "alt": "Daryel-T-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I8Q9_5.jpg?v=1725001095",
+          "alt": "Daryel-T-W - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743930691836:GREY",
+      "brand": "Bally",
+      "name": "Daryel-T-W - Sneakers",
+      "url": "https://www.bally.ae/products/daryel-t-w-wk008kte041i7i8",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I7I8_1.jpg?v=1725001079",
+      "style": "8743930691836:GREY",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "GREY",
+      "material": "",
+      "listedAt": "2024-08-30T10:57:45+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/daryel-t-w-wk008kte041i7i8",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I7I8_1.jpg?v=1725001079",
+          "alt": "Daryel-T-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I7I8_2.jpg?v=1725001079",
+          "alt": "Daryel-T-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I7I8_3.jpg?v=1725001079",
+          "alt": "Daryel-T-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I7I8_4.jpg?v=1725001079",
+          "alt": "Daryel-T-W - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE041_I7I8_5.jpg?v=1725001079",
+          "alt": "Daryel-T-W - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743929774332:BLACK",
+      "brand": "Bally",
+      "name": "Darsyl - Sneakers",
+      "url": "https://www.bally.ae/products/darsyl-msk09svt592i920",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I920_1.jpg?v=1725001047",
+      "style": "8743929774332:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-08-30T10:57:13+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darsyl-msk09svt592i920",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I920_1.jpg?v=1725001047",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I920_2.jpg?v=1725001047",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I920_3.jpg?v=1725001047",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I920_4.jpg?v=1725001047",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT592_I920_5.jpg?v=1725001047",
+          "alt": "Darsyl - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743928594684:BLACK",
+      "brand": "Bally",
+      "name": "Darsyl - Sneakers",
+      "url": "https://www.bally.ae/products/darsyl-msk09svt238u901",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U901_1.jpg?v=1725001031",
+      "style": "8743928594684:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-08-30T10:56:57+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darsyl-msk09svt238u901",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U901_1.jpg?v=1725001031",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U901_2.jpg?v=1725001031",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U901_3.jpg?v=1725001031",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U901_4.jpg?v=1725001031",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U901_5.jpg?v=1725001031",
+          "alt": "Darsyl - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8743927480572:GREY",
+      "brand": "Bally",
+      "name": "Darsyl - Sneakers",
+      "url": "https://www.bally.ae/products/darsyl-msk09svt238u795",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U795_1.jpg?v=1725001002",
+      "style": "8743927480572:GREY",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "GREY",
+      "material": "",
+      "listedAt": "2024-08-30T10:56:30+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darsyl-msk09svt238u795",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U795_1.jpg?v=1725001002",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U795_2.jpg?v=1725001002",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U795_3.jpg?v=1725001002",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U795_4.jpg?v=1725001002",
+          "alt": "Darsyl - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/MSK09S_VT238_U795_5.jpg?v=1725001002",
+          "alt": "Darsyl - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8537237094652:WHITE",
+      "brand": "Bally",
+      "name": "Dewan-T-W - Sneaker",
+      "url": "https://www.bally.ae/products/dewan-t-w-wk008jte032u001",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008J_TE032_U001_1_44162264-c135-4a0b-8353-61d37b8d7f70.jpg?v=1738477003",
+      "style": "8537237094652:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-05-16T16:23:16+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dewan-t-w-wk008jte032u001",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=3",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "d1c7279ef38509a4b45379c8a598b2e35454f84db7d113cc67d277df9c7021cb"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008J_TE032_U001_1_44162264-c135-4a0b-8353-61d37b8d7f70.jpg?v=1738477003",
+          "alt": "Dewan-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008J_TE032_U001_2_63f146c7-5ad8-45a3-af6e-86d5d65d0b93.jpg?v=1738477003",
+          "alt": "Dewan-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008J_TE032_U001_3_a246f7f5-ef9e-4efd-8d8a-5bfb3c3275b5.jpg?v=1738477003",
+          "alt": "Dewan-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008J_TE032_U001_4_84085dd7-9b45-4dd2-9f24-382eca004542.jpg?v=1738477003",
+          "alt": "Dewan-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008J_TE032_U001_5_f7d4be08-488c-4c10-9e66-284be2333499.jpg?v=1738477003",
+          "alt": "Dewan-T-W - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8362524410108:BLACK",
+      "brand": "Bally",
+      "name": "Daryel-T-W - Sneaker",
+      "url": "https://www.bally.ae/products/daryel-t-w-wk008kte036i905",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE036_I905_1.jpg?v=1711522642",
+      "style": "8362524410108:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneakers",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-03-27T10:57:10+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/daryel-t-w-wk008kte036i905",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=4",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "eeab65718f4c4a7d1c7274594931902fe3f233d07e300df84877df2cf1b3b658"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE036_I905_1.jpg?v=1711522642",
+          "alt": "Daryel-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE036_I905_2.jpg?v=1711522642",
+          "alt": "Daryel-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE036_I905_3.jpg?v=1711522642",
+          "alt": "Daryel-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE036_I905_4.jpg?v=1711522642",
+          "alt": "Daryel-T-W - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/files/WK008K_TE036_I905_5.jpg?v=1711522642",
+          "alt": "Daryel-T-W - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-7661305463036:BLACK",
+      "brand": "Bally",
+      "name": "Davyn - Sneakers",
+      "url": "https://www.bally.ae/products/davyn-901-msk059t",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/DAVYN_U901F.jpg?v=1671713393",
+      "style": "7661305463036:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-02-12T10:53:06+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/davyn-901-msk059t",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=5",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "b5d86c7d87369ab3c3cdec6356e1c57015dad1c1fea7f6d5ace0c7884bb6d9e1"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/DAVYN_U901F.jpg?v=1671713393",
+          "alt": "Davyn - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/DAVYN_U901A.jpg?v=1671713400",
+          "alt": "Davyn - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/DAVYN_U901D.jpg?v=1671713407",
+          "alt": "Davyn - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/DAVYN_U901E.jpg?v=1671713415",
+          "alt": "Davyn - Sneakers"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/DAVYN_U901R.jpg?v=1671713421",
+          "alt": "Davyn - Sneakers"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8108209471740:MULTICOLOR",
+      "brand": "Bally",
+      "name": "Sonney-T - Sneaker",
+      "url": "https://www.bally.ae/products/sonney-t-msk06rte002i654",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I654_ST2.jpg?v=1692262024",
+      "style": "8108209471740:MULTICOLOR",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "MULTICOLOR",
+      "material": "",
+      "listedAt": "2024-02-12T10:49:47+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/sonney-t-msk06rte002i654",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=6",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "4a6298a929e0217fe95e52ebbcfb13502904646ea85081bd9794bdce60d04d24"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I654_ST3.jpg?v=1692262024",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I654_ST4.jpg?v=1692262024",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I654_ST5.jpg?v=1692262024",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I654_ST2.jpg?v=1692262024",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I654_ST6.jpg?v=1691758533",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I654_ST10.jpg?v=1691758533",
+          "alt": "Sonney-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8108209340668:BLUE",
+      "brand": "Bally",
+      "name": "Sonney-T - Sneaker",
+      "url": "https://www.bally.ae/products/sonney-t-msk06rte002i5h8",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I5H8_ST1.jpg?v=1691758519",
+      "style": "8108209340668:BLUE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLUE",
+      "material": "",
+      "listedAt": "2024-02-12T10:49:47+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/sonney-t-msk06rte002i5h8",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=6",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "4a6298a929e0217fe95e52ebbcfb13502904646ea85081bd9794bdce60d04d24"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I5H8_ST1.jpg?v=1691758519",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I5H8_ST2.jpg?v=1691758519",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I5H8_ST3.jpg?v=1691758519",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I5H8_ST4.jpg?v=1691758519",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I5H8_ST5.jpg?v=1691758519",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I5H8_ST6.jpg?v=1691758519",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I5H8_ST7.jpg?v=1691758519",
+          "alt": "Sonney-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK06R_TE002_I5H8_ST10.jpg?v=1691758519",
+          "alt": "Sonney-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8267510251772:WHITE",
+      "brand": "Bally",
+      "name": "Rebby - Sneaker",
+      "url": "https://www.bally.ae/products/rebby-msk08yvt179i0i0",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK08Y_VT179_I0I0_1.jpg?v=1706785150",
+      "style": "8267510251772:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-02-01T14:58:57+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/rebby-msk08yvt179i0i0",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=7",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "4e3f8bf641fdd46b2dfbc562ea5c20bcd95a92b68d94f4d23a073b12e4012316"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK08Y_VT179_I0I0_1.jpg?v=1706785150",
+          "alt": "Rebby - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK08Y_VT179_I0I0_2.jpg?v=1706785150",
+          "alt": "Rebby - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK08Y_VT179_I0I0_3.jpg?v=1706785150",
+          "alt": "Rebby - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK08Y_VT179_I0I0_4.jpg?v=1706785150",
+          "alt": "Rebby - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK08Y_VT179_I0I0_5.jpg?v=1706785150",
+          "alt": "Rebby - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK08Y_VT179_I0I0_6.jpg?v=1706785150",
+          "alt": "Rebby - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8267508089084:BLACK",
+      "brand": "Bally",
+      "name": "Darsyl - Sneaker",
+      "url": "https://www.bally.ae/products/darsyl-msk09svt592i970",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I970_1.jpg?v=1706784984",
+      "style": "8267508089084:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-02-01T14:56:10+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darsyl-msk09svt592i970",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=7",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "4e3f8bf641fdd46b2dfbc562ea5c20bcd95a92b68d94f4d23a073b12e4012316"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I970_1.jpg?v=1706784984",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I970_2.jpg?v=1706784984",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I970_3.jpg?v=1706784984",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I970_4.jpg?v=1706784984",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I970_5.jpg?v=1706784984",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I970_6.jpg?v=1706784984",
+          "alt": "Darsyl - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8267507859708:BLUE",
+      "brand": "Bally",
+      "name": "Darsyl - Sneaker",
+      "url": "https://www.bally.ae/products/darsyl-msk09svt238u505",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT238_U505_1.jpg?v=1706784955",
+      "style": "8267507859708:BLUE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLUE",
+      "material": "",
+      "listedAt": "2024-02-01T14:55:44+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darsyl-msk09svt238u505",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=7",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "4e3f8bf641fdd46b2dfbc562ea5c20bcd95a92b68d94f4d23a073b12e4012316"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT238_U505_1.jpg?v=1706784955",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT238_U505_2.jpg?v=1706784955",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT238_U505_3.jpg?v=1706784955",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT238_U505_4.jpg?v=1706784955",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT238_U505_5.jpg?v=1706784955",
+          "alt": "Darsyl - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8267507728636:WHITE",
+      "brand": "Bally",
+      "name": "Darsyl - Sneaker",
+      "url": "https://www.bally.ae/products/darsyl-msk09svt592i0o9",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I0O9_1.jpg?v=1706784942",
+      "style": "8267507728636:WHITE",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "WHITE",
+      "material": "",
+      "listedAt": "2024-02-01T14:55:29+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/darsyl-msk09svt592i0o9",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=7",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "4e3f8bf641fdd46b2dfbc562ea5c20bcd95a92b68d94f4d23a073b12e4012316"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I0O9_1.jpg?v=1706784942",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I0O9_2.jpg?v=1706784942",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I0O9_3.jpg?v=1706784942",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I0O9_4.jpg?v=1706784942",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I0O9_5.jpg?v=1706784942",
+          "alt": "Darsyl - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09S_VT592_I0O9_6.jpg?v=1706784942",
+          "alt": "Darsyl - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8267504845052:BLACK",
+      "brand": "Bally",
+      "name": "Dewan-T - Sneaker",
+      "url": "https://www.bally.ae/products/dewan-t-msk09vte032i903",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_I903_1.jpg?v=1706784718",
+      "style": "8267504845052:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-02-01T14:51:46+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dewan-t-msk09vte032i903",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=7",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "4e3f8bf641fdd46b2dfbc562ea5c20bcd95a92b68d94f4d23a073b12e4012316"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_I903_1.jpg?v=1706784718",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_I903_2.jpg?v=1706784718",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_I903_3.jpg?v=1706784718",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_I903_4.jpg?v=1706784718",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_I903_5.jpg?v=1706784718",
+          "alt": "Dewan-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8267504713980:BLACK",
+      "brand": "Bally",
+      "name": "Dewan-T - Sneaker",
+      "url": "https://www.bally.ae/products/dewan-t-msk09vte032u901",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_U901_1.jpg?v=1706784703",
+      "style": "8267504713980:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-02-01T14:51:31+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/dewan-t-msk09vte032u901",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=7",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "4e3f8bf641fdd46b2dfbc562ea5c20bcd95a92b68d94f4d23a073b12e4012316"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_U901_1.jpg?v=1706784703",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_U901_2.jpg?v=1706784703",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_U901_3.jpg?v=1706784703",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_U901_4.jpg?v=1706784703",
+          "alt": "Dewan-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09V_TE032_U901_5.jpg?v=1706784703",
+          "alt": "Dewan-T - Sneaker"
+        }
+      ]
+    },
+    {
+      "id": "bally-uae-8267504550140:BLACK",
+      "brand": "Bally",
+      "name": "Daryel-T - Sneaker",
+      "url": "https://www.bally.ae/products/daryel-t-msk09wte036i905",
+      "image": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09W_TE036_I905_1.jpg?v=1706784689",
+      "style": "8267504550140:BLACK",
+      "styleType": "retailer-product-id",
+      "source": "retail-bally-uae",
+      "retailer": "Bally UAE (regional store)",
+      "category": "sneaker",
+      "officialCategory": "Sneaker",
+      "colorway": "BLACK",
+      "material": "",
+      "listedAt": "2024-02-01T14:51:18+04:00",
+      "newnessBasis": "current-assortment",
+      "availabilityEvidence": {
+        "verified": true,
+        "kind": "retail-current-assortment",
+        "productUrl": "https://www.bally.ae/products/daryel-t-msk09wte036i905",
+        "listingUrl": "https://www.bally.ae/products.json?limit=250&page=7",
+        "verifiedAt": "2026-11-02T08:34:13.975431+00:00",
+        "contentHash": "4e3f8bf641fdd46b2dfbc562ea5c20bcd95a92b68d94f4d23a073b12e4012316"
+      },
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09W_TE036_I905_1.jpg?v=1706784689",
+          "alt": "Daryel-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09W_TE036_I905_2.jpg?v=1706784689",
+          "alt": "Daryel-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09W_TE036_I905_3.jpg?v=1706784689",
+          "alt": "Daryel-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09W_TE036_I905_4.jpg?v=1706784689",
+          "alt": "Daryel-T - Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0477/2914/8057/products/MSK09W_TE036_I905_5.jpg?v=1706784689",
+          "alt": "Daryel-T - Sneaker"
+        }
+      ]
+    }
+  ]
+}

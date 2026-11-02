@@ -9,7 +9,8 @@ export const BRAND_GROUPS = [
     'Maison Margiela','Bottega Veneta','Loewe','Lanvin','Rick Owens','Jil Sander',
     'Off-White','AMIRI','Loro Piana','Brunello Cucinelli','Zegna','Moncler','The Row',
     'Golden Goose','Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry','PANE',
-    'ALOHAS'
+    'ALOHAS',
+    "Goyard","Burberry","Versace","Balmain","Ferragamo","Jimmy Choo","Christian Louboutin","MCM","Coach","Tory Burch","Bally","Stella McCartney","Kenzo"
   ]},
   {name:'SPORTS', priority:['Rockfish Weatherwear','On','Cecilie Bahnsen','ASICS','FILA',
     'Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Onitsuka Tiger']}

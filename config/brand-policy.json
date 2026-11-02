@@ -544,7 +544,7 @@
       "id": "versace",
       "name": "Versace",
       "group": "contemporary",
-      "policy": "conditional",
+      "policy": "core",
       "mandatory": false
     },
     {
@@ -596,14 +596,14 @@
       "id": "burberry",
       "name": "Burberry",
       "group": "contemporary",
-      "policy": "conditional",
+      "policy": "core",
       "mandatory": false
     },
     {
       "id": "tory-burch",
       "name": "Tory Burch",
       "group": "contemporary",
-      "policy": "conditional",
+      "policy": "core",
       "mandatory": false
     },
     {
@@ -624,7 +624,7 @@
       "id": "stella-mccartney",
       "name": "Stella McCartney",
       "group": "contemporary",
-      "policy": "conditional",
+      "policy": "core",
       "mandatory": false
     },
     {
@@ -716,7 +716,7 @@
       "id": "kenzo",
       "name": "Kenzo",
       "group": "contemporary",
-      "policy": "conditional",
+      "policy": "core",
       "mandatory": false
     },
     {
@@ -774,7 +774,7 @@
       "id": "balmain",
       "name": "Balmain",
       "group": "contemporary",
-      "policy": "conditional",
+      "policy": "core",
       "mandatory": false
     },
     {
@@ -915,7 +915,7 @@
       "id": "ferragamo",
       "name": "Ferragamo",
       "group": "luxury",
-      "policy": "exclude",
+      "policy": "core",
       "mandatory": false
     },
     {
@@ -929,7 +929,7 @@
       "id": "bally",
       "name": "Bally",
       "group": "luxury",
-      "policy": "exclude",
+      "policy": "core",
       "mandatory": false
     },
     {
@@ -988,14 +988,14 @@
       "id": "jimmy-choo",
       "name": "Jimmy Choo",
       "group": "luxury",
-      "policy": "exclude",
+      "policy": "core",
       "mandatory": false
     },
     {
       "id": "christian-louboutin",
       "name": "Christian Louboutin",
       "group": "luxury",
-      "policy": "exclude",
+      "policy": "core",
       "mandatory": false
     },
     {
@@ -1109,13 +1109,36 @@
       "group": "luxury",
       "policy": "supplier",
       "mandatory": false
+    },
+    {
+      "id": "goyard",
+      "name": "Goyard",
+      "group": "luxury",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "mcm",
+      "name": "MCM",
+      "group": "luxury",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "coach",
+      "name": "Coach",
+      "group": "luxury",
+      "policy": "core",
+      "mandatory": false
     }
   ],
   "aliases": {
     "Jordan Brand": "Jordan",
     "AXEL ARIATO": "Axel Arigato",
     "HERMES": "Hermès",
-    "ONITSUKATIGER": "Onitsuka Tiger"
+    "ONITSUKATIGER": "Onitsuka Tiger",
+    "Salvatore Ferragamo": "Ferragamo",
+    "SALVATORE FERRAGAMO": "Ferragamo"
   },
   "collaborations": {
     "Cecilie Bahnsen × ASICS": "ASICS",

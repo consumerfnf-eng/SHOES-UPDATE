@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-02T06:58:20.925Z",
+  "checkedAt": "2026-11-02T09:17:57.570Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -613,12 +613,6 @@
       "brand": "Prada",
       "name": "Downtown Bold suede-trimmed platform sneakers",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "myt-679f0f1fc92d6406",
-      "brand": "Jimmy Choo",
-      "name": "Sunny leather and suede sneakers",
-      "reason": "brand-excluded-or-unverified"
     },
     {
       "id": "myt-f57f9abb1fbccafa",
@@ -1389,12 +1383,6 @@
       "reason": "release-day-evidence-required"
     },
     {
-      "id": "p058",
-      "brand": "Versace",
-      "name": "Icaro Leather Sneakers",
-      "reason": "release-day-evidence-required"
-    },
-    {
       "id": "p059",
       "brand": "Lanvin",
       "name": "Zigzag Lace-Up Sneakers",
@@ -1452,24 +1440,6 @@
       "id": "p068",
       "brand": "Golden Goose",
       "name": "Superstar Distressed-Finish Sneakers",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "p069",
-      "brand": "Christian Louboutin",
-      "name": "Louis Junior Sneakers",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "p070",
-      "brand": "Burberry",
-      "name": "Check Slides",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "p071",
-      "brand": "Burberry",
-      "name": "Check Sneakers",
       "reason": "release-day-evidence-required"
     },
     {
@@ -2835,21 +2805,9 @@
       "reason": "brand-excluded-or-unverified"
     },
     {
-      "id": "daily-20260923-toryburch-tb176839300",
-      "brand": "Tory Burch",
-      "name": "Field Sneaker Dark Olive",
-      "reason": "release-day-evidence-required"
-    },
-    {
       "id": "daily-20260923-dsquared2-snm04862380884",
       "brand": "DSQUARED2",
       "name": "DC-642 Sneakers",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "daily-20260923-kenzo-fg65sn122f5391",
-      "brand": "Kenzo",
-      "name": "KENZO Striker Low-Top Sneakers",
       "reason": "release-day-evidence-required"
     },
     {
@@ -2919,21 +2877,9 @@
       "reason": "release-day-evidence-required"
     },
     {
-      "id": "daily-20260923-bally-msk0f6vt005u00",
-      "brand": "Bally",
-      "name": "Retro Crest Sneaker in White Leather",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
       "id": "daily-20260923-fengchenwang-a08857ca08858c",
       "brand": "Feng Chen Wang",
       "name": "Converse x Feng Chen Wang Chuck Taylor 70 2-in-1",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "daily-20260923-stellamccartney-94032099999910",
-      "brand": "Stella McCartney",
-      "name": "adidas by Stella McCartney Solarglide Running Trainers",
       "reason": "release-day-evidence-required"
     },
     {
@@ -3079,132 +3025,6 @@
       "brand": "AMIRI",
       "name": "KIDS- KIDS' SKEL TOP LOW TODDLER - Black Skyline Blue",
       "reason": "kids-sizing"
-    },
-    {
-      "id": "new-20260923-9a967b29107cd439",
-      "brand": "Bally",
-      "name": "Manto Runner Sneaker in Navy Blue Leather",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-2af821d317169b1f",
-      "brand": "Bally",
-      "name": "Retro Crest Sneaker in Beige Suede and Blue Leather",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-d6b5778cb1571a9b",
-      "brand": "Bally",
-      "name": "Manto Runner Sneaker in Brown Suede",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-5ede403732c88a4b",
-      "brand": "Bally",
-      "name": "Bally Lift Sneaker in Amber Brown Leather",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-b144c08fa16881b7",
-      "brand": "Balmain",
-      "name": "Baskets B-Court en cuir lisse",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-f7a6aa11a0ab06b6",
-      "brand": "Balmain",
-      "name": "Baskets Racing Mid-Top en nylon et cuir",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-9cdadb97063487f2",
-      "brand": "Balmain",
-      "name": "Baskets Balmain Swan en cuir suédé et lisse",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-0b625242f60e7aff",
-      "brand": "Balmain",
-      "name": "Baskets Racing Low en nylon et cuir",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-dafbcec6275db47a",
-      "brand": "Balmain",
-      "name": "Baskets Racer 45 en mesh et cuir suédé",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-b52dff60610efcdb",
-      "brand": "Balmain",
-      "name": "Baskets B-Court en jacquard monogramme",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-3fd33c449e49d77a",
-      "brand": "Balmain",
-      "name": "Baskets B-Court en cuir de veau",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-565abe07ff998624",
-      "brand": "Balmain",
-      "name": "Baskets Racer 45 en cuir de veau, daim et nylon",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-ed04e7e5b60869ea",
-      "brand": "Balmain",
-      "name": "Baskets B-Court en cuir lisse",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-e80b99d212518d3c",
-      "brand": "Balmain",
-      "name": "Basket Racer 45 en nylon et cuir suédé",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-aed710aad342006c",
-      "brand": "Balmain",
-      "name": "Baskets Balmain Swan en cuir lisse et suédé",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-523fc2a9da543329",
-      "brand": "Balmain",
-      "name": "Baskets Balmain Swan en cuir lisse et suédé",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-41082f4d57edfcb4",
-      "brand": "Balmain",
-      "name": "Baskets Racer 45 en daim et agneau",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-d1562ec0443cafd3",
-      "brand": "Balmain",
-      "name": "Baskets Racer 45 en jacquard monogramme",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-e2c8374b47b21663",
-      "brand": "Balmain",
-      "name": "Baskets Balmain Swan en cuir suédé et lisse",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-ff40f0e360e17138",
-      "brand": "Balmain",
-      "name": "Baskets B-Court en cuir et jacquard Monogramme",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-952eb0226fb93fa1",
-      "brand": "Balmain",
-      "name": "Baskets Balmain Swan en cuir lisse et suédé",
-      "reason": "release-day-evidence-required"
     },
     {
       "id": "new-20260923-28b3ed127cd6d309",
@@ -5367,72 +5187,6 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-cc459db00e0e34e7",
-      "brand": "Jimmy Choo",
-      "name": "써니 M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-bdb9c97dfe080a3e",
-      "brand": "Jimmy Choo",
-      "name": "써니 M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-eff7496f733d2fa2",
-      "brand": "Jimmy Choo",
-      "name": "써니 M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-358d122a5a1faa0e",
-      "brand": "Jimmy Choo",
-      "name": "써니 M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-13c8a4c3a20c0a11",
-      "brand": "Jimmy Choo",
-      "name": "다이아몬드 라이트 플렉스 M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-af4c506e684516bb",
-      "brand": "Jimmy Choo",
-      "name": "다이아몬드 라이트 플렉스 M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-6d3304ccc6830a80",
-      "brand": "Jimmy Choo",
-      "name": "다이아몬드 플렉스 M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-6b6df3c035977ac6",
-      "brand": "Jimmy Choo",
-      "name": "다이아몬드 플렉스 M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-4675bdffad1bec08",
-      "brand": "Jimmy Choo",
-      "name": "다이아몬드 플렉스 C M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-92f499cf4e2efc33",
-      "brand": "Jimmy Choo",
-      "name": "다이아몬드 맥시 레트로 M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-ca0860f60afb4348",
-      "brand": "Jimmy Choo",
-      "name": "다이아몬드 맥시 레트로 M",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
       "id": "new-20260923-a156c4e334e4ff08",
       "brand": "Maison Margiela",
       "name": "Replica Sneakers Suede",
@@ -6036,18 +5790,6 @@
       "id": "new-20260923-dbf599b0e112d077",
       "brand": "Valentino Garavani",
       "name": "Stud Up Sneaker in Split Leather and Nylon with Butterfly Embroidery",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-bc643c8370123567",
-      "brand": "Versace",
-      "name": "Icaro Leather Sneakers",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-de8eda7bc2b92886",
-      "brand": "Versace",
-      "name": "Biggie Basket Jacquard Leather Sneakers",
       "reason": "product-verification-required"
     },
     {
@@ -9831,36 +9573,6 @@
       "reason": "release-day-evidence-required"
     },
     {
-      "id": "live-3b2647ca298420eb",
-      "brand": "Versace",
-      "name": "Icaro Leather Sneakers",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-385030030bdb81ea",
-      "brand": "Bally",
-      "name": "Lift Sneaker in Amber Brown Leather",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "live-94792fbb59bbb97d",
-      "brand": "Bally",
-      "name": "Manto Runner Sneaker in Brown Suede",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "live-305e26afd78bb1d3",
-      "brand": "Bally",
-      "name": "Retro Crest Sneaker in Beige Suede and Blue Leather",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "live-a3bd489760b9031f",
-      "brand": "Bally",
-      "name": "Manto Runner Sneaker in Navy Blue Leather",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
       "id": "live-fee78c7163847c96",
       "brand": "Diesel",
       "name": "Slip-on sneaker in Melflex®",
@@ -10278,108 +9990,6 @@
       "id": "live-b2ecd5036fca148b",
       "brand": "Valentino Garavani",
       "name": "Runway",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-9df7307517e97a1d",
-      "brand": "Balmain",
-      "name": "Baskets Balmain Swan en cuir lisse et suédé Baskets en cuir",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-432546fec7def827",
-      "brand": "Balmain",
-      "name": "Baskets Balmain Swan en cuir lisse et suédé Baskets en cuir",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-71a1b571b9d882ef",
-      "brand": "Balmain",
-      "name": "Baskets Racing Mid-Top en nylon et cuir Baskets en nylon",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-a6377271abf2e5f7",
-      "brand": "Balmain",
-      "name": "Baskets Racing Mid-Top en nylon et cuir Baskets en nylon",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-9e099e993e2f4a76",
-      "brand": "Balmain",
-      "name": "Baskets B-Court en cuir lisse Baskets en cuir",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-c987bc5309c3eaea",
-      "brand": "Balmain",
-      "name": "Baskets B-Court en cuir lisse Baskets en cuir",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-edd3793bbe328136",
-      "brand": "Balmain",
-      "name": "Baskets B-Court en cuir lisse Baskets en cuir",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-fc2329c8f57e847b",
-      "brand": "Balmain",
-      "name": "Baskets B-Court en cuir lisse Baskets en cuir",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-ec580605d0a8196f",
-      "brand": "Balmain",
-      "name": "Baskets B-Court en cuir et jacquard Monogramme Baskets en jacquard",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-a65efbd1f55ddd54",
-      "brand": "Balmain",
-      "name": "Baskets Balmain Swan en cuir suédé et lisse Baskets en cuir",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-d7b076444e341095",
-      "brand": "Balmain",
-      "name": "Baskets Balmain Swan en cuir suédé et lisse Baskets en cuir",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-b3988374cf202f46",
-      "brand": "Balmain",
-      "name": "Baskets Racer 45 en mesh et cuir suédé Baskets en mesh",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-02cb611e30cd879e",
-      "brand": "Balmain",
-      "name": "Baskets Racer 45 en mesh et cuir suédé Baskets en mesh",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-49e4f43ff524b640",
-      "brand": "Balmain",
-      "name": "Baskets Racing Low en nylon et cuir Baskets en nylon",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-d8df708603ab61e8",
-      "brand": "Balmain",
-      "name": "Baskets Racing Low en nylon et cuir Baskets en nylon",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-d0c612a785d7fc06",
-      "brand": "Balmain",
-      "name": "Baskets Racer 45 en jacquard monogramme Baskets Racer 45",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-cd0425ff14ece1a0",
-      "brand": "Balmain",
-      "name": "Baskets Racer 45 en daim et agneau Baskets Racer 45",
       "reason": "product-verification-required"
     },
     {

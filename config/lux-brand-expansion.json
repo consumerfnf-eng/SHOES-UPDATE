@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "requested": [
+    "Louis Vuitton",
+    "Dior",
+    "Gucci",
+    "Fendi",
+    "Celine",
+    "Goyard",
+    "Prada",
+    "Loewe",
+    "Burberry",
+    "Givenchy",
+    "Valentino Garavani",
+    "Versace",
+    "Balmain",
+    "Ferragamo",
+    "Jimmy Choo",
+    "Christian Louboutin",
+    "MCM",
+    "Coach",
+    "Tory Burch",
+    "Bally",
+    "Stella McCartney",
+    "Kenzo"
+  ],
+  "alreadyListed": [
+    "Louis Vuitton",
+    "Dior",
+    "Gucci",
+    "Fendi",
+    "Celine",
+    "Prada",
+    "Loewe",
+    "Givenchy",
+    "Valentino Garavani"
+  ],
+  "addedToLux": [
+    "Goyard",
+    "Burberry",
+    "Versace",
+    "Balmain",
+    "Ferragamo",
+    "Jimmy Choo",
+    "Christian Louboutin",
+    "MCM",
+    "Coach",
+    "Tory Burch",
+    "Bally",
+    "Stella McCartney",
+    "Kenzo"
+  ]
+}
