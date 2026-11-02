@@ -11,6 +11,7 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parent.parent
 IMAGES = ROOT / 'public' / 'images'
 BACKUP = ROOT / 'logs' / 'backups' / 'original-product-photos'
+ALREADY_OPTIMIZED = set()
 
 def atomic_json(path, value):
     temporary = path.with_suffix(path.suffix + '.optimize.tmp')
@@ -19,7 +20,7 @@ def atomic_json(path, value):
 
 def optimize(relative):
     source = (ROOT / relative).resolve()
-    if source.parent != IMAGES.resolve() or source.stat().st_size < 250_000:
+    if source.parent != IMAGES.resolve() or '/images/' + source.name in ALREADY_OPTIMIZED or source.stat().st_size < 250_000:
         return None
     original = source.read_bytes()
     with Image.open(io.BytesIO(original)) as opened:
@@ -39,13 +40,14 @@ def optimize(relative):
     return ('/images/' + source.name, '/images/' + target.name, digest, len(original), len(encoded))
 
 if __name__ == '__main__':
+    cache_file = ROOT / 'data' / 'photo-cache.json'
+    cache = json.loads(cache_file.read_text(encoding='utf-8'))
+    ALREADY_OPTIMIZED = {entry['path'] for entry in cache['images'].values() if entry.get('transform')}
     # Only untracked downloads from this collection; existing published assets remain valid.
     paths = subprocess.check_output(['git', 'ls-files', '--others', '--exclude-standard', 'public/images'], cwd=ROOT, text=True).splitlines()
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         changes = [result for result in executor.map(optimize, paths) if result]
     mapping = {old: (new, digest) for old, new, digest, _, _ in changes}
-    cache_file = ROOT / 'data' / 'photo-cache.json'
-    cache = json.loads(cache_file.read_text(encoding='utf-8'))
     for entry in cache['images'].values():
         if entry.get('path') in mapping:
             old = entry['path']
