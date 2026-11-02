@@ -3,7 +3,7 @@ import {readJson,atomicJson,publishCurated} from './publish-curated.mjs';
 const root=new URL('../',import.meta.url),catalog=await readJson(new URL('public/data/catalog.json',root));
 const reviews=await readJson(new URL('data/product-presentation.json',root),{products:[]});
 const cache=await readJson(new URL('data/photo-cache.json',root),{schemaVersion:1,images:{}});
-const sources=[...new Set([...catalog.products.map(p=>p.presentation?.image),...reviews.products.filter(p=>p.approved).map(p=>p.image)].filter(Boolean))];
+const sources=[...new Set([...catalog.products.map(p=>p.presentation?.image),...reviews.products.filter(p=>p.approved).map(p=>p.image),...Object.keys(cache.unavailable||{})].filter(Boolean))];
 await fs.mkdir(new URL('public/images/',root),{recursive:true});let next=0;
 // A photo we cannot fetch costs that one product its card. It used to stop the
 // whole run, which in CI meant a single 403 from one brand's CDN threw away an
@@ -14,6 +14,7 @@ await fs.mkdir(new URL('public/images/',root),{recursive:true});let next=0;
 const failures=new Map();
 async function worker(){while(next<sources.length){const url=sources[next++],known=cache.images[url];
  if(known&&/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/.test(known.path)){try{const b=await fs.readFile(new URL('public'+known.path,root));if(createHash('sha256').update(b).digest('hex')===known.sha256)continue;}catch{}}
+ delete cache.images[url]; // An absent or corrupt local file is not a usable cache hit.
  try{
   if(!url.startsWith('https://'))throw Error('not an https URL');
   const response=await fetch(url,{signal:AbortSignal.timeout(30000),headers:{'User-Agent':'Mozilla/5.0','Accept':'image/webp,image/*,*/*;q=0.8'}});

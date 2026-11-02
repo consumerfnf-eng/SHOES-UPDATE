@@ -53,7 +53,7 @@ function colorLabel(alt,brand){
   return /\b(?:women|men|unisex|image|view|united states)\b|\|/.test(color.toLowerCase())?'':color;
 }
 const imageUrls=text=>markdownLinks(text).flatMap(l=>l.image?[l]:markdownLinks(l.label).filter(child=>child.image)).map(l=>({alt:l.label,url:l.url})).filter(i=>{
-  if(/(?:placeholder|fallback|logo|swatch|icon|LOOK_|lookbook|campaign|lifestyle|cardPayment|packaging|_MDL\b|variantthumbnail)/i.test(i.url+' '+i.alt)||/[.]svg(?:[?\/]|$)/i.test(i.url))return false;
+  if(/(?:placeholder|fallback|logo|swatch|icon|LOOK_|lookbook|campaign|lifestyle|cardPayment|packaging|_MDL\b|variantthumbnail)/i.test(i.url+' '+i.alt)||/\/(?:undefined|null)(?:[?/#]|$)/i.test(i.url)||/[.]svg(?:[?\/]|$)/i.test(i.url))return false;
   const u=new URL(i.url),size=Number(u.searchParams.get('width')||u.searchParams.get('wid')||u.searchParams.get('w'));
   return !(size&&size<160)&&!/(?:^|[\/_])(?:40x40|60x60|80x80)(?:[\/_]|$)/i.test(u.pathname);
 });
