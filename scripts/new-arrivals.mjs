@@ -331,7 +331,13 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
         const text=assertReadableOfficial(await read(`https://r.jina.ai/${source.url}`));status.responses++;
         const rows=parseArrivalListing(text,{brand,url:source.url,checkedAt,sectionEvidence:source.sectionEvidence,basis:source.basis});if(isNewListing(source.url,text)||rows.length)status.listingPages++;
         for(const p of rows)candidates.set(canonicalUrl(p.url),p);
-        const followups=listingFollowups(text,source.url,brand,source.sectionEvidence);
+        let followups=listingFollowups(text,source.url,brand,source.sectionEvidence);
+        // Loro Piana emits a next-page URL even beyond its last product page.
+        // Do not spend the entire run following empty pages indefinitely.
+        if(!rows.length){
+          const current=new URL(source.url);
+          followups=followups.filter(next=>new URL(next.url).pathname!==current.pathname);
+        }
         if(full){
           followups.push(...sneakerShelfLinks(markdownLinks(text),{origin:new URL(source.url).origin,pageUrl:source.url,limit:100}).map(url=>({url})));
           for(const next of followups)next.basis='assortment';
