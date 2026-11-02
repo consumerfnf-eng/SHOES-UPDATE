@@ -6,6 +6,14 @@ test('Scene7 crop coordinates remain inside a srcset URL',()=>{
  assert(text.includes(url));
  assert(!text.includes('crop=0)'));
 });
+
+test('large hydration payloads do not become product descriptions or Markdown link work',()=>{
+ const payload=JSON.stringify([{Name:'not-visible-catalogue-payload',data:'x'.repeat(12000)}]);
+ const text=officialHtmlMarkdown(`<h1>Usable Sneaker</h1><p>${'Actual product description. '.repeat(8)}</p><a href="/p/SHOE123"><img src="https://shoe.example/SHOE123.jpg" alt="Own shoe"></a><div hidden>${payload}</div>`,'https://shoe.example/');
+ assert(text.includes('Usable Sneaker'));
+ assert(text.includes('https://shoe.example/SHOE123.jpg'));
+ assert(!text.includes('not-visible-catalogue-payload'));
+});
 import assert from 'node:assert/strict';
 import {createOfficialReader,officialHtmlMarkdown,assertReadableOfficial,pacedOfficialFetch} from '../scripts/official-reader.mjs';
 const url='https://shoe.example/products/abc';

@@ -99,6 +99,9 @@ export function officialHtmlMarkdown(html,url){
     .replace(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi,(_,level,text)=>`\n${'#'.repeat(Number(level))} ${clean(text)}\n`)
     .replace(/<(?:li)\b[^>]*>/gi,'\n* ').replace(/<\/(?:p|div|section|li)>|<br\s*\/?>/gi,'\n').replace(/<[^>]*>/g,' ');
   body=decodeText(body).replace(/[ \t]+/g,' ').replace(/\n{3,}/g,'\n\n').trim();
+  // Embedded catalogue JSON is not a visible product description. Leaving a
+  // megabyte of hydration data here also turns Markdown link scanning quadratic.
+  body=body.split('\n').filter(line=>!(line.length>10000&&/^\s*(?:\[\s*\{|\{")/.test(line))).join('\n');
   if(body.length<150||!/\]\(https:\/\//.test(body))throw Error('OFFICIAL_HTML_NO_CONTENT');
   return assertReadableOfficial(`Title: ${title}\nURL Source: ${url}\nMarkdown Content:\n${body}`);
 }

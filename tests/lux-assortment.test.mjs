@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {parseArrivalListing,listingFollowups,maisonShelfProduct,listingProduct,collectNewArrivals} from '../scripts/new-arrivals.mjs';
+import {parseArrivalListing,listingFollowups,maisonShelfProduct,listingProduct,collectNewArrivals,pageProduct} from '../scripts/new-arrivals.mjs';
 import {curateProduct} from '../scripts/curation.mjs';
 import {releaseState} from '../public/assets/release-window.mjs';
 const today='2026-11-02',url='https://www.ysl.com/en-us/p/court-classic-sneaker-ABC123.html',shelf='https://www.ysl.com/en-us/ca/shop-women/shoes/sneakers';
@@ -57,4 +57,13 @@ test('a store that repeats the same products on the next page does not spend the
  }});
  assert.equal(reads,2);
  assert.equal(run.coverage[0].repeatedListingPages,1);
+});
+
+test('a product page cannot bind a navigation image or an earlier product code to a sneaker',()=>{
+ const style='4E3400_3LNG_F0YB4_F_G000';
+ const candidate={brand:'Prada',name:'Prada America Cup Sneakers',url:'https://www.prada.com/us/en/p/america-cup/'+style,images:[{url:'https://www.prada.com/PS0906_SLS.jpg'}],linkedImages:[],arrivalEvidence:{url:'https://www.prada.com/us/en/men/shoes/sneakers',kind:'official-assortment-listing'}};
+ const before=`Product code: PS0906\n![Prada America Cup Sneakers](https://www.prada.com/PS0906_SLS.jpg)\n# Prada America Cup Sneakers\nProduct code: ${style}\n`;
+ assert.equal(pageProduct(candidate,before,'2026-11-02T00:00:00Z'),null);
+ const p=pageProduct(candidate,before+`![Actual](https://www.prada.com/${style}_SLS.jpg)`,'2026-11-02T00:00:00Z');
+ assert.equal(p.style,style);assert(p.image.includes(style));
 });

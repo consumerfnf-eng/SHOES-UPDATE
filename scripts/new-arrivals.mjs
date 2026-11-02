@@ -271,7 +271,7 @@ export function adidasProductColor(text,url){
   const own=markdownLinks(text).find(l=>!l.image&&canonicalUrl(l.url)===canonicalUrl(url)&&/!\[Product colou?r:/i.test(l.label));
   return own?.label.match(/!\[Product colou?r:\s*([^\]]+)\]/i)?.[1]?.trim()||'';
 }
-function pageProduct(candidate,text,checkedAt,existing){
+export function pageProduct(candidate,text,checkedAt,existing){
   const url=candidate.url;
   if(existing&&officialEvidenceFor(existing,kstDay(checkedAt))){
     const p={...existing,arrivalEvidence:{...candidate.arrivalEvidence,style:existing.style,productUrl:existing.url}};
@@ -285,19 +285,21 @@ function pageProduct(candidate,text,checkedAt,existing){
   if(!heading)return null;
   const tokens=clean(candidate.name).toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(t=>t.length>2);
   if(!tokens.length||tokens.filter(t=>heading.toLowerCase().includes(t)).length<Math.min(2,tokens.length)&&!clean(candidate.name).toLowerCase().includes(clean(heading).toLowerCase()))return null;
-  const code=body.match(/(?:^|\n)[\s*-]*(?:product (?:code|id)|style (?:code|no\.?|number|#)|sku|reference|品番|제품 코드|상품코드)\s*:?\s*([A-Z0-9][A-Z0-9_.-]{3,70})/i)?.[1];
+  const itemBody=body.slice(body.indexOf('# '+heading));
+  const code=itemBody.match(/(?:^|\n)[\s*-]*(?:product (?:code|id)|style (?:code|no\.?|number|#)|sku|reference|品番|제품 코드|상품코드)\s*:?\s*([A-Z0-9][A-Z0-9_.-]{3,70})/i)?.[1];
   const last=new URL(url).pathname.split('/').filter(Boolean).pop().replace(/\.html$/i,'');
   const fromUrl=/^[A-Z0-9][A-Z0-9_.-]{4,}$/.test(last)?last:last.match(/(?:-p-|[-_])([A-Z0-9_]{7,})$/)?.[1]||'';
   const variant=candidate.brand==='New Balance'?[...new URL(url).searchParams].find(([k])=>/_style$/.test(k))?.[1]:'';
   const verifiedVariant=variant&&body.toLowerCase().includes(variant.toLowerCase())?variant:'';
-  const style=verifiedVariant||code||fromUrl||last;
+  const style=verifiedVariant||fromUrl||code||last;
   const styleType=verifiedVariant||code||fromUrl?undefined:'official-product-id';
   // LV's colour picker includes other variants' large photographs after the
   // heading. Only its current variant gallery before H1 is identity evidence.
   const gallery=candidate.brand==='Louis Vuitton'?body.slice(0,body.indexOf('# '+heading)):body;
   const lvSlug=candidate.brand==='Louis Vuitton'&&gallery.includes(style)?new URL(url).pathname.match(/\/products\/(.+)-nvprod/)?.[1]:'';
   const cbStyle=candidate.brand==='Cecilie Bahnsen'?last.match(/^\d-\d{2}ftw\d+/i)?.[0]?.replace(/[^a-z0-9]/gi,'').toLowerCase():'';
-  const images=imageUrls(gallery),own=images.filter(i=>candidate.images.some(c=>canonicalUrl(c.url)===canonicalUrl(i.url))||i.url.toLowerCase().includes(style.replace(/_/g,'').toLowerCase())||i.url.toLowerCase().includes(style.toLowerCase())||lvSlug&&i.url.includes('louis-vuitton-'+lvSlug+'--')||cbStyle&&i.url.toLowerCase().replace(/[^a-z0-9]/g,'').includes(cbStyle)||tokens.filter(t=>i.alt.toLowerCase().includes(t)).length>=Math.min(2,tokens.length));
+  const exactStyle=style.replace(/[^a-z0-9]/gi,'').toLowerCase();
+  const images=imageUrls(gallery),own=images.filter(i=>candidate.linkedImages?.some(c=>canonicalUrl(c.url)===canonicalUrl(i.url))||i.url.toLowerCase().replace(/[^a-z0-9]/g,'').includes(exactStyle)||lvSlug&&i.url.includes('louis-vuitton-'+lvSlug+'--')||cbStyle&&i.url.toLowerCase().replace(/[^a-z0-9]/g,'').includes(cbStyle)||styleType==='official-product-id'&&tokens.filter(t=>i.alt.toLowerCase().includes(t)).length>=Math.min(2,tokens.length));
   const chosen=(candidate.brand==='Moncler'?own.find(i=>i.url.includes('/'+style+'_1/image/')):null)||own.find(i=>/_SLS\.|_PM1_Side|_Side\.|_nb_02_i|_SBG_E02|_A\.(?:jpg|png)/i.test(i.url))||own.find(i=>/_SLR\.|_PM2_/i.test(i.url))||own[0];
   if(!chosen)return null;
   const detail=body.slice(body.indexOf('# '+heading)).split(/\n#{1,4}\s*(?:Contact us|Shipping|Delivery|Free shipping|SUBSCRIBE)/i)[0];
