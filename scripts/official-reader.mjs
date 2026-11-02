@@ -87,7 +87,7 @@ export function officialHtmlMarkdown(html,url){
     // A srcset describes its candidates by width ("1200w") or by pixel density
     // ("2x", or nothing at all for 1x). Only widths were read before, so a
     // density-only srcset counted as no candidates and fell through to src.
-    const candidates=[...(attr(tag,'data-srcset')||attr(tag,'srcset')).matchAll(/(?:^|,)\s*(https:\/\/[^\s,]+)(?:\s+(\d+(?:\.\d+)?)(w|x))?/g)]
+    const candidates=[...(attr(tag,'data-srcset')||attr(tag,'srcset')).matchAll(/(?:^|,)\s*(https:\/\/\S+?)(?:\s+(\d+(?:\.\d+)?)(w|x))?(?=\s*(?:,\s*https:\/\/|$))/g)]
       .map(m=>({url:m[1],width:m[3]==='w'?Number(m[2]):0,density:m[3]==='x'?Number(m[2]):1}));
     const byWidth=candidates.filter(i=>i.width).sort((a,b)=>a.width-b.width);
     const preferred=byWidth.filter(i=>i.width>=600&&i.width<=1600).at(-1)||byWidth.at(-1)

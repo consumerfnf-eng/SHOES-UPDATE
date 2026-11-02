@@ -1,4 +1,11 @@
 import test from 'node:test';
+
+test('Scene7 crop coordinates remain inside a srcset URL',()=>{
+ const url='https://assets.christiandior.com/is/image/diorprod/TEST_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1200';
+ const text=officialHtmlMarkdown(`<h1>Sneakers</h1><a href="https://www.dior.com/en_us/fashion/products/TEST"><img alt="Test sneaker" srcset="${url} 1200w, https://assets.christiandior.com/large.jpg 2400w"></a>`,'https://www.dior.com/en_us/fashion');
+ assert(text.includes(url));
+ assert(!text.includes('crop=0)'));
+});
 import assert from 'node:assert/strict';
 import {createOfficialReader,officialHtmlMarkdown,assertReadableOfficial,pacedOfficialFetch} from '../scripts/official-reader.mjs';
 const url='https://shoe.example/products/abc';
