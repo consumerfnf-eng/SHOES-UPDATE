@@ -48,6 +48,7 @@ if __name__ == '__main__':
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         changes = [result for result in executor.map(optimize, paths) if result]
     mapping = {old: (new, digest) for old, new, digest, _, _ in changes}
+    cache.setdefault('optimizedPaths', {}).update({old: {'path': new, 'sha256': digest} for old, (new, digest) in mapping.items()})
     for entry in cache['images'].values():
         if entry.get('path') in mapping:
             old = entry['path']
@@ -61,4 +62,16 @@ if __name__ == '__main__':
         if presentation.get('cachedPath') in mapping:
             presentation['cachedPath'] = mapping[presentation['cachedPath']][0]
     atomic_json(catalog_file, catalog)
+    def replace_paths(value):
+        if isinstance(value, str):
+            return mapping.get(value, (value, None))[0]
+        if isinstance(value, list):
+            return [replace_paths(v) for v in value]
+        if isinstance(value, dict):
+            return {k: replace_paths(v) for k, v in value.items()}
+        return value
+    for relative in ['public/data/monthly-catalog.json', 'data/product-photo-analysis.json', 'data/product-photo-reviews.json']:
+        target = ROOT / relative
+        if target.exists():
+            atomic_json(target, replace_paths(json.loads(target.read_text(encoding='utf-8'))))
     print(json.dumps({'optimized': len(changes), 'originalMB': round(sum(r[3] for r in changes)/1048576), 'publishedMB': round(sum(r[4] for r in changes)/1048576)}))

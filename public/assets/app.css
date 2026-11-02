@@ -257,3 +257,6 @@ body.viewer-open{overflow:hidden}
   .catwalk-viewer-inner{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;border-radius:0;max-height:100vh}
   .catwalk-viewer-photo img{max-height:58vh}
 }
+.product-frame{display:block;width:100%;height:100%;padding:10px;overflow:hidden;mix-blend-mode:multiply}
+
+.color-chips{max-height:108px;overflow-y:auto;align-content:flex-start;padding:3px;scrollbar-gutter:stable}.color-chip:focus-visible{outline:2px solid var(--blue);outline-offset:1px}

@@ -1,62 +1,28 @@
-# 내부 전용 배포 (WGSN CATWALK)
+# 기본 배포: shoes-update-internal.pages.dev
 
-WGSN 캣워크 사진을 사이트에서 보되 공개하지는 않기 위한 배포 경로.
+공식 신상품·리테일·뉴스레터·분석·CATWALK의 운영 주소는 https://shoes-update-internal.pages.dev/ 이다. 기존 https://shoes-update.pages.dev/ 요청은 경로와 검색 조건을 유지해 내부 주소로 이동한다.
 
-## 왜 `/internal/` 경로가 아니라 별도 프로젝트인가
+## 전체 자료 배포
 
-이 저장소는 **public GitHub repo**다. `public/internal/` 아래에 넣으면 Cloudflare에 무슨 접근 제어를 걸어도 `github.com/consumerfnf-eng/SHOES-UPDATE` 에서 사진이 그대로 받아진다. 사이트를 막는 것과 저장소를 막는 것은 다른 문제다.
-
-그래서 렌더링된 사진과 그 색인은 **git에 들어가지 않는다** (`.gitignore`의 `public/catwalk/`, `public/data/catwalk.json`). 대신 이 PC에서 내부 프로젝트로 직접 업로드한다. 결과적으로 사진이 존재하는 곳은 두 군데뿐이다 — 수집한 PC와 접근 제어가 걸린 배포.
-
-## 페이지 쪽에 분기 코드가 없다
-
-공개 빌드에는 `public/data/catwalk.json`이 없고, CATWALK 탭은 **룩이 없으면 탭 자체가 보이지 않는다** (`renderAnalysis`). 내부 빌드에는 그 파일이 있으니 탭이 나타난다. 같은 코드, 같은 `public/` 폴더, 파일 하나의 유무가 전부다.
-
-| | 공개 `shoes-update.pages.dev` | 내부 `shoes-update-internal.pages.dev` |
-|---|---|---|
-| 공식 신상 · 리테일 · 뉴스레터 · 데이터 분석 | ○ | ○ |
-| WGSN 런웨이 보드 (쇼 목록·수량·링크) | ○ | ○ |
-| **CATWALK 탭 (사진 3,648장)** | **탭 자체가 없음** | **○** |
-| 로그인 | 없음 | @fnfcorp.com 메일 일회용 코드 |
-
-## 처음 한 번만
-
-```bash
-npx wrangler login                                        # 브라우저로 Cloudflare 로그인
-npx wrangler pages project create shoes-update-internal --production-branch main
+```powershell
+npm run build
+npm test
+npm run deploy
 ```
 
-그다음 **Cloudflare Access로 잠근다. 이게 이 배포를 "내부"로 만드는 유일한 장치다.**
+`deploy`와 `internal`은 모두 `scripts/deploy-internal.mjs`를 실행하며, `shoes-update-internal` 프로젝트의 `main`에 `public/` 전체와 Pages Functions를 올린다. 기존 `INTERNAL_SITE_PASSWORD` 시크릿은 유지한다. 공유 비밀번호를 코드·로그·Git에 넣지 않는다. 비밀번호가 없는 내부 도메인은 미들웨어에서 503으로 차단한다. 인증 없이 상품 JSON·사진·CATWALK를 요청해도 401이 나와야 한다.
 
-1. Cloudflare 대시보드 → **Zero Trust** → **Access** → **Applications** → **Add an application** → **Self-hosted**
-2. Application domain: `shoes-update-internal.pages.dev` (경로는 비워 전체 보호)
-3. Session duration: 24시간 정도
-4. **Add a policy**
-   - Policy name: `F&F 사내`
-   - Action: **Allow**
-   - Include → **Emails ending in** → `@fnfcorp.com`
-5. Authentication: **One-time PIN** 만 켜도 된다 (메일로 코드 수신 → 입력). SSO가 있으면 그쪽을 쓴다.
-6. Save
+CATWALK 색인 `public/data/catwalk.json`과 `public/catwalk/`는 gitignored 자료다. 배포 전에 수집 PC의 최신 파일이 있는지 확인한다. 배포 스크립트는 색인·사진·기존 비밀번호 시크릿이 없으면 업로드를 중단한다. 저장소가 공개이므로 CATWALK 자료는 커밋하지 않는다.
 
-무료 플랜에서 Zero Trust 사용자 50명까지 포함된다.
+## 배포 후 확인
 
-## 매번
+1. Wrangler 배포 성공 및 production deployment의 커밋을 확인한다.
+2. 로그인된 브라우저에서 `/deployment.json`의 커밋, 상품 목록, 컬러칩, 사진과 CATWALK를 확인한다.
+3. 로그아웃 요청의 상품 JSON·이미지·CATWALK가 401인지 확인한다.
+4. 이전 공개 주소가 내부 주소로 이동하는지 확인한다.
 
-```bash
-npm run catwalk -- "C:\Users\AC0950\Desktop\런웨이추가크롤링"    # 사진 렌더링 (이미 된 건 건너뜀)
-npm run internal -- --access-policy-in-place                    # 내부 프로젝트로 업로드
-```
+## 수집 자동화와 배포 자동화의 차이
 
-`--access-policy-in-place` 플래그가 없으면 배포를 거부한다. 접근 제어가 걸리기 전에 구독 이미지가 올라가는 사고를 막기 위한 장치이고, 위 Access 정책을 실제로 만든 다음에만 붙인다.
+현재 내부 프로젝트는 Cloudflare Direct Upload 방식이다. GitHub 수집 워크플로의 커밋·푸시만으로 내부 배포가 바뀌지는 않는다. 기본 업로드는 위 `npm run deploy` 명령이다. CI에서 내부 배포까지 자동화하려면 프로젝트 범위 배포 자격 증명과 비공개 CATWALK 보존 경로를 별도로 구성해야 한다. 개인 OAuth 토큰이나 CATWALK 자료를 공개 저장소에 넣어 해결하지 않는다.
 
-프로젝트 이름을 바꾸려면 `INTERNAL_PAGES_PROJECT` 환경변수로 넘긴다.
-
-## 공개 사이트에서 들어가는 길
-
-공개 사이트 헤더의 `Retail Archive ↗` 옆에 내부 주소 링크를 두면 된다. 링크 자체는 공개돼도 무방하다 — 열면 Access가 먼저 묻는다. 필요하면 말해달라, 바로 넣겠다.
-
-## 주의
-
-- 사진을 다시 렌더링해도 파일명은 사진의 SHA-256이라 바뀌지 않는다. 이미 있는 건 건너뛰므로 재배포가 싸다.
-- 배포본에는 `public/` 전체가 올라간다. 즉 내부 주소에서도 공개 사이트의 모든 기능이 그대로 동작한다.
-- WGSN 자료의 성격과 그 근거는 `config/wgsn-runway.json`의 `licence` 블록, 수집 자동화는 `docs/wgsn-runway-automation.md`.
+프로젝트 변경은 `INTERNAL_PAGES_PROJECT` 환경변수로 지정한다. 비밀번호 변경이 필요한 경우에만 사용자가 `npm run internal:set-password`를 실행한다.

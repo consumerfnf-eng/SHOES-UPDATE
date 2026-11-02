@@ -45,7 +45,7 @@ const productPath=/\/(?:products?|produtos|p|pr|pd|t)\/|\/[^/]+\.html(?:$|\?)|(?
 // shoes can publish.
 const kidsListing=/(?:^|[\/_-])(?:kids?|kid-new|junior|juniors|youth|boys?|girls?|children|toddler|infant|baby|bebe|enfant|bambino|키즈|아동|주니어|유아)(?:[\/_-]|$)/i;
 export function isKidsListing(url){try{return kidsListing.test(readablePath(new URL(url).pathname))||kidsListing.test(new URL(url).search);}catch{return false;}}
-function isProductLink(url){try{const u=new URL(url);if(/(?:prada|miumiu)\.com$/.test(u.hostname)&&/\/c\/[^/]+\.html$/.test(u.pathname))return false;return productPath.test(u.pathname)||u.hostname.endsWith('valentino.com')&&/\/product-[^/]+/.test(u.pathname)||u.hostname.endsWith('zegna.com')&&/\/product\.[^/]+\.\d+\/?$/.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
+function isProductLink(url){try{const u=new URL(url);if(/(?:prada|miumiu)\.com$/.test(u.hostname)&&/\/c\/[^/]+\.html$/.test(u.pathname)||/(?:^|\.)miharayasuhiro\.jp$/.test(u.hostname)&&u.pathname==='/products/list.php'||/\/stories\//.test(u.pathname))return false;return productPath.test(u.pathname)||u.hostname.endsWith('valentino.com')&&/\/product-[^/]+/.test(u.pathname)||u.hostname.endsWith('zegna.com')&&/\/product\.[^/]+\.\d+\/?$/.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
 function colorLabel(alt,brand){
   if(brand==='Cecilie Bahnsen'&&/\b[A-Z]+\/[A-Z]+$/.test(alt))return alt.split(/\s+/).at(-1);
   let color=['ASICS','PUMA','Onitsuka Tiger'].includes(brand)?alt.split(',')[1]?.trim().replace(/\s+\d+$/,'')||'':alt.split(/\s[-—–]\s/)[1]||'';
@@ -55,6 +55,7 @@ function colorLabel(alt,brand){
 const imageUrls=text=>markdownLinks(text).flatMap(l=>l.image?[l]:markdownLinks(l.label).filter(child=>child.image)).map(l=>({alt:l.label,url:l.url})).filter(i=>{
   if(/(?:placeholder|fallback|logo|swatch|icon|LOOK_|lookbook|campaign|lifestyle|cardPayment|packaging|_MDL\b|variantthumbnail)/i.test(i.url+' '+i.alt)||/\/(?:new[-_])?menu\/|\/(?:undefined|null)(?:[?/#]|$)/i.test(i.url)||/[.]svg(?:[?\/]|$)/i.test(i.url))return false;
   const u=new URL(i.url),size=Number(u.searchParams.get('width')||u.searchParams.get('wid')||u.searchParams.get('w'));
+  if(/(?:^|\.)(?:bing\.net|teads\.tv|doubleclick\.net|google-analytics\.com|facebook\.com|t\.co|twitter\.com)$/i.test(u.hostname))return false;
   return !(size&&size<160)&&!/(?:^|[\/_])(?:40x40|60x60|80x80)(?:[\/_]|$)/i.test(u.pathname);
 });
 /** A source can declare that it is not a New section at all.

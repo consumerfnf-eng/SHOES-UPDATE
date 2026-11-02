@@ -4,6 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {readJson,atomicJson,publishCurated} from './publish-curated.mjs';
+import {finalizeCatalogIdentity} from './finalize-catalog-identity.mjs';
 const root=new URL('../',import.meta.url),html=await fs.readFile(new URL('public/index.html',root),'utf8');
 if(Buffer.byteLength(html)>250000)throw Error('Public HTML must remain below 250 KB; crawler/data belongs outside UI.');
 if(/SEED_PRODUCTS|__MLB_RUN_SERVER|scheduleDaily\(|s\.jina\.ai|r\.jina\.ai|JINA_API_KEY/.test(html))throw Error('Collection runtime found in public page');
@@ -46,6 +47,15 @@ if(missing.length){
   await atomicJson(new URL('data/photo-cache.json',root),cache);
   console.log(`Held ${missing.length} product(s) with no cached photo at build time: ${missing.map(p=>p.id).join(', ')}`);
   catalog=(await publishCurated({})).snapshot;
+}
+await finalizeCatalogIdentity();
+catalog=JSON.parse(await fs.readFile(new URL('public/data/catalog.json',root),'utf8'));
+const monthly=await readJson(new URL('public/data/monthly-catalog.json',root),{retail:[]});
+for(const p of monthly.retail||[]){
+  const cached=p.presentation?.cachedPath;if(!cached)continue;
+  if(!/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/.test(cached))throw Error('Invalid retail photo cache: '+p.id);
+  const bytes=await fs.readFile(new URL('public'+cached,root));
+  if(createHash('sha256').update(bytes).digest('hex')!==path.basename(cached).split('.')[0])throw Error('Retail photo cache checksum mismatch: '+p.id);
 }
 for(const p of catalog.products){
   if(!p.presentation)continue;

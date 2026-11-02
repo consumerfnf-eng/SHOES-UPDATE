@@ -69,12 +69,9 @@ export function holdPhotosSharedAcrossModels(products,held,signals={}) {
   const hashOf=p=>p.photoHash||signals[p.presentation?.cachedPath]?.phash||'';
   const representative=new Map();
   const keyFor=p=>{
-    const hash=hashOf(p);
-    if(!hash)return p.presentation?.image||'';
-    for(const [known,groupKey] of representative)
-      if(photoHamming(known,hash)<=PHOTO_SAME_SHOT)return groupKey;
-    representative.set(hash,'hash:'+hash);
-    return 'hash:'+hash;
+    // A 64-bit dHash can collide across different designs and colours. It is
+    // an audit hint, never sufficient evidence for deleting a verified SKU.
+    return p.presentation?.cachedPath||p.presentation?.image||'';
   };
   const groups=new Map();
   for(const p of products){const i=p.presentation?.image;if(!i)continue;const k=keyFor(p);(groups.get(k)||groups.set(k,[]).get(k)).push(p);}

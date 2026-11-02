@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {variantGroupName,variantGroupKey,groupProductVariants,preferWomenVariants,productAudience,uniqueColorVariants,variantColorLabel,variantMaterialLabel,styleFamily,unifyVariantGroups} from '../public/assets/catalog-view.mjs';
 import {officialVariantLabels,parseArrivalListing,listingProduct,adidasProductColor,collectNewArrivals} from '../scripts/new-arrivals.mjs';
 import fs from 'node:fs';
+import {manufacturerCode} from '../public/assets/product-identity.mjs';
 import {applyReviewedEvidence} from '../scripts/publish-curated.mjs';
 
 test('the card title stays at model level while declared color names consolidate variants',()=>{
@@ -37,11 +38,11 @@ test('editions, generations, materials, widths, collaborations and brands keep s
  assert.equal(variantGroupName({name:'Superwomen Running Shoes'}),'Superwomen Running Shoes','Do not remove an embedded gender substring');
 });
 
-test('women counterparts exclusively supply colors while male-only editions and original records remain',()=>{
+test('all gender-exclusive colours and materials survive a female model counterpart',()=>{
  const make=(id,name,colorway,gender='')=>({id,name,colorway,gender,brand:'ASICS'});
  const rows=[make('m',"Runner 33 Men's Running Shoes",'Orange'),make('w1',"Runner 33 Women's Running Shoes",'Lavender'),make('w2',"Runner 33 Women's Running Shoes",'White'),make('unknown','Runner 33','Black'),make('unisex','Runner 33','Grey','unisex'),make('edition',"Runner 33 GTX Men's Running Shoes",'Orange'),make('only',"Runner 14 Men's Running Shoes",'White')];
  const before=structuredClone(rows),selected=preferWomenVariants(rows);
- assert.deepEqual(selected.map(p=>p.id),['w1','w2','edition','only']);
+ assert.deepEqual(selected.map(p=>p.id),rows.map(p=>p.id));
  assert.deepEqual(rows,before);
  assert.deepEqual(preferWomenVariants(selected),selected,'Selection is idempotent');
  assert.deepEqual(preferWomenVariants(rows.filter(p=>!p.id.startsWith('w'))).map(p=>p.id),['m','unknown','unisex','edition','only']);
@@ -58,14 +59,14 @@ test('audience uses explicit product metadata and URL path without guessing from
  assert.equal(variantGroupKey({brand:'A',name:'여성용 Runner Shoes'}),variantGroupKey({brand:'A',name:'남성용 Runner Shoes'}));
 });
 
-test('reported live duplicates use female products only, including the reviewed adidas SKU',()=>{
+test('exact duplicate variants prefer women without suppressing other catalogue colours',()=>{
  const rows=JSON.parse(fs.readFileSync(new URL('../public/data/catalog.json',import.meta.url))).products;
  const selected=preferWomenVariants(rows);
  for(const group of groupProductVariants(rows).filter(g=>g.some(p=>productAudience(p)==='women'))){
   const shown=selected.filter(p=>variantGroupKey(p)===variantGroupKey(group[0]));
-  assert(shown.length>0);assert(shown.every(p=>productAudience(p)==='women'),group[0].name);
+  assert(shown.length>0);for(const p of group.filter(p=>!selected.includes(p)))assert(group.some(w=>productAudience(w)==='women'&&(manufacturerCode(w)&&manufacturerCode(w)===manufacturerCode(p)||w.presentation?.cachedPath&&w.presentation.cachedPath===p.presentation?.cachedPath)),p.id);
  }
- assert.deepEqual(selected.filter(p=>p.brand==='adidas'&&['KI8294','KI8293'].includes(p.style)).map(p=>p.style),['KI8293']);
+ assert(selected.some(p=>p.brand==='adidas'&&p.style==='KI8293'));
 });
 
 test('reviewed gender survives a later blank listing without refreshing product verification',()=>{
@@ -146,11 +147,11 @@ test('adidas colors come from the current variant link, never another swatch or 
  assert.equal(adidasProductColor(text,url),'Solar Turbo / Core Black / Lucid Red');
  assert.equal(adidasProductColor(text,'https://www.adidas.com/us/shoes/MISSING.html'),'');
 });
-test('the reported ADIOS PRO 5 variants retain their official color evidence and one chip',()=>{
+test('the ADIOS PRO 5 source codes retain colour evidence without assuming SKU equivalence',()=>{
  const catalog=JSON.parse(fs.readFileSync(new URL('../data/catalog-source.json',import.meta.url)));
  const evidence=JSON.parse(fs.readFileSync(new URL('../data/release-evidence.json',import.meta.url)));
  const rows=applyReviewedEvidence(catalog.products.filter(p=>p.brand==='adidas'&&['KI8294','KI8293'].includes(p.style)),evidence.products.filter(e=>e.brand==='adidas'&&['KI8294','KI8293'].includes(e.style)));
- assert.equal(rows.length,2);assert.equal(uniqueColorVariants(rows).length,1);
+ assert.equal(rows.length,2);assert.equal(uniqueColorVariants(rows).length,2,'Different complete factory codes need explicit equivalence evidence before a chip is hidden');
  for(const p of rows){const e=evidence.products.find(e=>e.id===p.id);assert.equal(e.colorway,p.colorway);assert.equal(e.colorwayEvidence.url,p.url);assert(e.colorwayEvidence.verified);}
 });
 test('a current-product color picker below recommendations is still bound to the exact PDP',async()=>{

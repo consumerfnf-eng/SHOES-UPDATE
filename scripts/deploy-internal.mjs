@@ -17,9 +17,10 @@
 // --------------------
 //   npx wrangler login                     once, in a browser
 //   npx wrangler pages project create shoes-update-internal --production-branch main
-// then put the project behind Cloudflare Access - see docs/internal-deployment.md.
-// Access is what makes this internal; this script will not deploy without
-// being told the policy is in place.
+//   npm run internal:set-password
+// then re-run this script. The password (functions/_middleware.js) is what
+// makes this project internal; this script will not deploy without one set
+// on the project - see docs/internal-deployment.md.
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -36,8 +37,11 @@ async function count(dir) {
   try { return (await fs.readdir(path.join(root, dir))).length; } catch { return 0; }
 }
 
-const confirmed = process.argv.includes('--access-policy-in-place')
-  || process.env.INTERNAL_ACCESS_POLICY_IN_PLACE === 'true';
+function passwordIsSet(project) {
+  const list = spawnSync('npx', ['wrangler', 'pages', 'secret', 'list', '--project-name', project],
+    {cwd: root, encoding: 'utf8', shell: process.platform === 'win32'});
+  return list.status === 0 && /INTERNAL_SITE_PASSWORD/.test(list.stdout ?? '');
+}
 
 const snapshot = await exists('public/data/catwalk.json');
 const renditions = await count('public/catwalk');
@@ -51,10 +55,13 @@ if (!snapshot || !renditions) {
     + '  npm run catwalk -- "<the collection folder>"');
   process.exit(2);
 }
-if (!confirmed) {
-  console.error('\nRefusing to deploy: this project must sit behind Cloudflare Access before\n'
-    + 'subscription imagery goes on it. Set the policy (docs/internal-deployment.md),\n'
-    + 'then re-run with --access-policy-in-place.');
+console.log('  checking INTERNAL_SITE_PASSWORD is set on the project...');
+if (!passwordIsSet(PROJECT)) {
+  console.error('\nRefusing to deploy: no INTERNAL_SITE_PASSWORD secret is set on this project,\n'
+    + 'so the password gate (functions/_middleware.js) would pass every request through.\n'
+    + 'Set one first:\n'
+    + '  npm run internal:set-password\n'
+    + 'then re-run this script. See docs/internal-deployment.md.');
   process.exit(3);
 }
 

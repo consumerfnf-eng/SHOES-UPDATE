@@ -22,7 +22,9 @@
     "wgsn": "node scripts/import-wgsn-runway.mjs",
     "catwalk": "python scripts/build_catwalk.py",
     "internal": "node scripts/deploy-internal.mjs",
-    "catwalk:library": "python scripts/build_catwalk_library.py"
+    "catwalk:library": "python scripts/build_catwalk_library.py",
+    "deploy": "node scripts/deploy-internal.mjs",
+    "internal:set-password": "node scripts/set-internal-password.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"

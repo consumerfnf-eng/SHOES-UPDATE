@@ -37,19 +37,30 @@ jobs:
       - name: Reconcile Rick Owens official sneaker collections
         continue-on-error: true
         run: node scripts/collect-rick-assortment.mjs --publish
+      - name: Reconcile every official Mihara colour gallery
+        run: |
+          python scripts/collect-mihara-assortment.py
+          node scripts/import-mihara-assortment.mjs --publish
       - run: npm run photos
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install 'Pillow>=10,<14'
+      - run: python -m pip install 'Pillow>=10,<14' curl_cffi
       - name: Optimize newly downloaded product photos for publication
         run: python scripts/optimize-photo-cache.py
+      - name: Refresh verified Common Projects stockist assortment
+        continue-on-error: true
+        run: python scripts/monthly/common_projects.py
+      - name: Reconcile identity and read exact shoe upper photos
+        run: |
+          node scripts/finalize-catalog-identity.mjs
+          python scripts/analyze-product-photos.py
       - run: npm run build
       - name: Push only validated catalogue and coverage
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/catalog-source.json data/publication-history.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/lux-assortment-report.json public/data/catalog.json public/data/lux-assortment-report.json public/data/rank-boards.json public/images
+          git add data/mihara-official-assortment.json data/mihara-assortment-report.json data/common-projects-retail.json data/product-photo-analysis.json data/product-identity-audit.json public/data/monthly-catalog.json data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/catalog-source.json data/publication-history.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/lux-assortment-report.json public/data/catalog.json public/data/lux-assortment-report.json public/data/rank-boards.json public/images
           if ! git diff --cached --quiet; then
             git commit -m 'Update all-release-date LUX assortment and coverage'
             git fetch origin main

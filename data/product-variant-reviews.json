@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "products": [
+    {
+      "verified": true,
+      "id": "common-mrporter-46376663163149597",
+      "brand": "Common Projects",
+      "style": "46376663163149597",
+      "url": "https://www.mrporter.com/en-us/mens/product/common-projects/shoes/low-top-sneakers/suede-trimmed-leather-sneakers/46376663163149597",
+      "image": "https://www.mrporter.com/variants/images/46376663163149597/in/w358_q60.jpg",
+      "checkedAt": "2026-11-02",
+      "modelName": "Winter Driving Sneakers",
+      "method": "reviewed-retailer-name-code-and-exact-shoe-photo",
+      "reason": "Rounded driving upper and textured rubber nubs match the Winter Driving silhouette; retailer omitted the model name."
+    },
+    {
+      "verified": true,
+      "id": "common-mrporter-3024088872901549",
+      "brand": "Common Projects",
+      "style": "3024088872901549",
+      "url": "https://www.mrporter.com/en-us/mens/product/common-projects/shoes/low-top-sneakers/original-achilles-leather-sneakers/3024088872901549",
+      "image": "https://www.mrporter.com/variants/images/3024088872901549/in/w358_q60.jpg",
+      "checkedAt": "2026-11-02",
+      "physicalVariantId": "common-projects-original-achilles-low-1528-0506",
+      "method": "reviewed-retailer-name-code-and-exact-shoe-photo",
+      "reason": "Original Achilles Low white smooth leather: matching collar, eyelets, panels, heel, toe and white sole; Kith declares CP1528-0506. Full-grain and high-top variants are kept separately."
+    },
+    {
+      "verified": true,
+      "id": "common-kith-2069342060672",
+      "brand": "Common Projects",
+      "style": "CP1528-0506",
+      "url": "https://kith.com/products/cp1528-0506",
+      "image": "https://cdn.shopify.com/s/files/1/0094/2252/files/CP1528-0506CommonProjectsOriginalAchillesLowWhite_3451.jpg?v=1746019673",
+      "checkedAt": "2026-11-02",
+      "physicalVariantId": "common-projects-original-achilles-low-1528-0506",
+      "method": "reviewed-retailer-name-code-and-exact-shoe-photo",
+      "reason": "Original Achilles Low white smooth leather: matching collar, eyelets, panels, heel, toe and white sole; Kith declares CP1528-0506. Full-grain and high-top variants are kept separately."
+    }
+  ]
+}

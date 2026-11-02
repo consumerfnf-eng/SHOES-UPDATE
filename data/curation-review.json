@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-02T05:18:33.532Z",
+  "checkedAt": "2026-11-02T06:58:20.925Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -5520,7 +5520,7 @@
       "id": "new-20260923-425ff2e52ab5b48f",
       "brand": "Off-White",
       "name": "OFF WHITE Low Top 3.0 Off Court Sneakers WHITE/LT BLUE OF05760455",
-      "reason": "product-verification-required"
+      "reason": "not-footwear"
     },
     {
       "id": "new-20260923-fe0baaa5036204f8",
@@ -10239,18 +10239,6 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "live-534b039d7df9011e",
-      "brand": "ALOHAS",
-      "name": "Tb.69 Rife Sheen Taupe Vegan Sneakers",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "live-1994f833eb71980d",
-      "brand": "ALOHAS",
-      "name": "Tb.69 Rife Sheen Brown Vegan Sneakers",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "live-ef59a949b3aaca6e",
       "brand": "Coperni",
       "name": "Black",
@@ -12669,12 +12657,6 @@
       "reason": "re-release-launched-2026-06-29"
     },
     {
-      "id": "arrival-f32d5bea56e5880848a5",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-7758c7e4885c7606f0ad",
       "reason": "duplicate-product-color"
     },
@@ -14161,12 +14143,6 @@
       "reason": "kids-sizing"
     },
     {
-      "id": "arrival-b9d25970a807dc2bcf41",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-b804f21eef534e7b7433",
       "brand": "Balenciaga",
       "name": "Women's Cropped Crewneck in Dark Yellow",
@@ -14384,19 +14360,19 @@
       "id": "arrival-6ec3aee6f2b541930326",
       "brand": "Brooks",
       "name": "Momentum Thermal Hybrid Glove",
-      "reason": "hybrid-review-required"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-4a6d5dfe126f71ec306f",
       "brand": "Brooks",
       "name": "Momentum Thermal Hybrid Glove",
-      "reason": "hybrid-review-required"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-77557e39141c42754a89",
       "brand": "Brooks",
       "name": "Momentum Thermal Hybrid Glove",
-      "reason": "hybrid-review-required"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-9fd34bb5895da117ac7a",
@@ -14729,6 +14705,12 @@
       "reason": "not-footwear"
     },
     {
+      "id": "arrival-9c9e5bb74e512ae13fdd",
+      "brand": "Off-White",
+      "name": "![Image 108: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
       "id": "arrival-217a79b686deb1e161b6",
       "brand": "Off-White",
       "name": "![Image 163: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
@@ -14747,6 +14729,12 @@
       "reason": "not-footwear"
     },
     {
+      "id": "arrival-6bb8eb4bf3f5e0fd52e4",
+      "brand": "Off-White",
+      "name": "![Image 151: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
       "id": "arrival-39d6d7cb575e76bef7fe",
       "brand": "Off-White",
       "name": "![Image 206: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
@@ -14756,6 +14744,12 @@
       "id": "arrival-2eb21914ec7fa5df5d58",
       "brand": "Off-White",
       "name": "![Image 212: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-7c86c93fe57b4bc85f1b",
+      "brand": "Off-White",
+      "name": "![Image 171: OFF WHITE Be Right Back Trail Low Sneakers BLUE/BEIGE OF05800430](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
       "reason": "not-footwear"
     },
     {
@@ -14906,43 +14900,43 @@
       "id": "arrival-ef20424d7e8e07db2516",
       "brand": "Brooks",
       "name": "Momentum Thermal Hybrid Glove",
-      "reason": "hybrid-review-required"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-eb6a5c4a3cb81bf6d7c6",
       "brand": "Brooks",
       "name": "Notch Thermal Beanie 2.0",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-79656c5bdff4e253a151",
       "brand": "Brooks",
       "name": "Notch Thermal Beanie 2.0",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-4bebecbefcece9cedefe",
       "brand": "Brooks",
       "name": "Notch Thermal Beanie 2.0",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-93b4c6e48b6b64d1728e",
       "brand": "Brooks",
       "name": "Notch Thermal Beanie 2.0",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-13ee31cbbdf65ecb2ddd",
       "brand": "Brooks",
       "name": "Notch Thermal Beanie 2.0",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-a2ce7bd174d07ae71c12",
       "brand": "Brooks",
       "name": "Notch Thermal Beanie 2.0",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-8f55cf90196d4a8e672a",
@@ -16801,6 +16795,36 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-d45c63bda5e9eceb18ca",
+      "brand": "Off-White",
+      "name": "![Image 106: OFF WHITE Be Right Back Sneakers GREY - SILVER OWIA289C99FAB001](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-eb6efc75ca74b3516fd3",
+      "brand": "Off-White",
+      "name": "![Image 120: OFF WHITE Be Right Back Sneakers GREY - SILVER OWIA289C99FAB001](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-91752638802490cbb92e",
+      "brand": "Off-White",
+      "name": "![Image 153: OFF WHITE Be Right Back Sneakers GREY - SILVER OWIA289C99FAB001](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-b63fc697f48d3f3fe36c",
+      "brand": "Off-White",
+      "name": "![Image 173: OFF WHITE Be Right Back Sneakers GREY - SILVER OWIA289C99FAB001](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-dbbd060660f839faa5cf",
+      "brand": "Off-White",
+      "name": "![Image 212: OFF WHITE Be Right Back Sneakers GREY - SILVER OWIA289C99FAB001](blob:http://localhost/fd459dc71e29c375fea41be965db0c5d)",
+      "reason": "not-footwear"
+    },
+    {
       "id": "arrival-e97fd79028398045029a",
       "reason": "duplicate-product-color"
     },
@@ -17486,7 +17510,7 @@
       "id": "arrival-01dc2961d731206aed1e",
       "brand": "Brooks",
       "name": "Momentum Thermal Headband",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-8e0a11d257bfda1436f9",
@@ -17498,13 +17522,13 @@
       "id": "arrival-c412e2b458e751baa6b8",
       "brand": "Brooks",
       "name": "Momentum Thermal Headband",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-88126868af14eeccb10b",
       "brand": "Brooks",
       "name": "Momentum Thermal Headband",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-4cfefdcbec1a675a0cff",
@@ -17516,7 +17540,7 @@
       "id": "arrival-54a5f3269f8213907cce",
       "brand": "Brooks",
       "name": "Momentum Thermal Headband",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-4cade75825211b8b6a0f",
@@ -17534,7 +17558,7 @@
       "id": "arrival-a70757d7e7a2dd6a4be1",
       "brand": "Brooks",
       "name": "Momentum Thermal Headband",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-556a3539d073986c0117",
@@ -17552,7 +17576,7 @@
       "id": "arrival-f3ab648fa4c71d5f279f",
       "brand": "Brooks",
       "name": "Momentum Thermal Headband",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-a668903954b3e54090a4",
@@ -18100,13 +18124,13 @@
       "id": "arrival-bf412e1e5f8ee28d126e",
       "brand": "Maison Mihara Yasuhiro",
       "name": "[![Image 27: Maison MIHARA YASUHIRO ONLINE STORE / 商品一覧ページ](https://en.miharayasuhiro.jp/user_data/packages/mihara/images/logo_b.png)](https://en.miharayasuhiro.jp/)",
-      "reason": "footwear-type-unverified"
+      "reason": "not-product-page"
     },
     {
       "id": "arrival-d5d740442d7cb22bc3ee",
       "brand": "Maison Mihara Yasuhiro",
       "name": "[![Image 11: Maison MIHARA YASUHIRO ONLINE STORE / 商品一覧ページ](https://en.miharayasuhiro.jp/user_data/packages/mihara/images/logo_b.png)](https://en.miharayasuhiro.jp/)",
-      "reason": "footwear-type-unverified"
+      "reason": "not-product-page"
     },
     {
       "id": "arrival-3a6e520cd1bc19312d7f",
@@ -18121,6 +18145,12 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-4a99e56fc9e4b5d71cae",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "[![Image 5: Maison MIHARA YASUHIRO ONLINE STORE / 商品一覧ページ](https://en.miharayasuhiro.jp/user_data/packages/mihara/images/logo_b.png)](https://en.miharayasuhiro.jp/)",
+      "reason": "not-product-page"
+    },
+    {
       "id": "arrival-451da9bb7b29ef04b062",
       "brand": "Rick Owens",
       "name": "GETH JEANS",
@@ -18130,7 +18160,7 @@
       "id": "arrival-0d7c48beac5aa85387d9",
       "brand": "Maison Mihara Yasuhiro",
       "name": "[![Image 19: Maison MIHARA YASUHIRO ONLINE STORE / ](https://miharayasuhiro.jp/user_data/packages/mihara/images/logo_b.png)](https://miharayasuhiro.jp/)",
-      "reason": "kids-sizing"
+      "reason": "not-product-page"
     },
     {
       "id": "arrival-d60b2cc9fad64760c000",
@@ -18142,7 +18172,7 @@
       "id": "arrival-88e850df6e527761dd07",
       "brand": "Maison Mihara Yasuhiro",
       "name": "[![Image 5: Maison MIHARA YASUHIRO ONLINE STORE / 商品一覧ページ](https://en.miharayasuhiro.jp/user_data/packages/mihara/images/logo_b.png)](https://en.miharayasuhiro.jp/)",
-      "reason": "footwear-type-unverified"
+      "reason": "not-product-page"
     },
     {
       "id": "arrival-037c276b090bca9e1c5e",
@@ -18283,6 +18313,12 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-d2f54457821bfe4e51ad",
+      "brand": "Golden Goose",
+      "name": "Disney | Golden Goose Skins 미키 마우스와 친구들에서 영감을 받은 2개 핀 디테일의 화이트 슈레이스",
+      "reason": "not-footwear"
+    },
+    {
       "id": "arrival-9f892523273a1e181461",
       "brand": "Givenchy",
       "name": "Joggers in wool with Givenchy Paris patch",
@@ -18293,6 +18329,12 @@
       "brand": "Givenchy",
       "name": "Couture Seam aviator blouson in leather and shearling",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-aab57896b8ad8d2f3c48",
+      "brand": "Golden Goose",
+      "name": "Disney | Golden Goose Skins 미키 마우스와 친구들에서 영감을 받은 2개 핀 디테일의 화이트 & 레드 스트라이프 슈레이스",
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-2b40ffa422dc67b0495a",
@@ -18478,7 +18520,7 @@
       "id": "arrival-c145a7ea3430665bb98b",
       "brand": "Chanel",
       "name": "LES EAUX DE CHANEL LE VOYAGE Collection of 6 Travel Sprays",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-cee2f872497ca45da3fa",
@@ -18490,7 +18532,7 @@
       "id": "arrival-003cecf2e8b8b612f069",
       "brand": "Chanel",
       "name": "COCO MADEMOISELLE CRUSH ABSOLU Ambery – Intense",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-771540703d42bd59243d",
@@ -18502,7 +18544,7 @@
       "id": "arrival-bbe1d7652b6acb6aa610",
       "brand": "Chanel",
       "name": "N°5 Eau de Parfum Purse Spray",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-680a11853d255761e1a7",
@@ -18514,7 +18556,7 @@
       "id": "arrival-aa04b793ab82875dbe7d",
       "brand": "Chanel",
       "name": "COCO MADEMOISELLE Eau de Parfum Purse Spray",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-d98a1982ed1f97e22b11",
@@ -18532,13 +18574,13 @@
       "id": "arrival-bff9352af79572984a0a",
       "brand": "Chanel",
       "name": "N°5 The Starry Body Oil",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-3a7d9fc546157b243424",
       "brand": "Chanel",
       "name": "COCO MADEMOISELLE The Shimmering Body Oil",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-970af8797d3fe1573961",
@@ -18550,19 +18592,19 @@
       "id": "arrival-1b3d2dea926bea2dcfae",
       "brand": "Chanel",
       "name": "BLEU DE CHANEL L’EXCLUSIF LE COFFRET 3.4 fl. oz. Parfum L’Huile Set",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-751aa2ff2e2a881ca7c3",
       "brand": "Chanel",
       "name": "LES EXCLUSIFS DE CHANEL – DUO SET 1957 and GARDÉNIA Eaux de Parfum",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-2182bdba049a6a85d978",
       "brand": "Chanel",
       "name": "LES EXCLUSIFS DE CHANEL – DISCOVERY SET 5 Eaux de Parfum",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-52d53aa4d651f2f53118",
@@ -18574,7 +18616,7 @@
       "id": "arrival-22a0a4905ae38b46d043",
       "brand": "Chanel",
       "name": "N°5 The Winter Case",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-3d05acc4cb58cee2b5bd",
@@ -18586,7 +18628,7 @@
       "id": "arrival-a6d117edbcda80fc81b4",
       "brand": "Chanel",
       "name": "COCO MADEMOISELLE 1.7 fl. oz. Eau de Parfum Twist and Spray Set",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-e22e1b5c7d6a48242720",
@@ -18610,7 +18652,7 @@
       "id": "arrival-8f33cee2c828eef9ce4c",
       "brand": "Chanel",
       "name": "COCO MADEMOISELLE 3.4 fl. oz. Eau de Parfum Twist and Spray Set",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-6fd8f45776e328e9ca03",
@@ -18634,7 +18676,7 @@
       "id": "arrival-f305d317057b4f24d107",
       "brand": "Chanel",
       "name": "N°5 3.4 fl. oz. Eau de Parfum Twist and Spray Set",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-44253466c68bc0044509",
@@ -18646,7 +18688,7 @@
       "id": "arrival-754064823395d2117cb2",
       "brand": "Chanel",
       "name": "CHANCE EAU TENDRE 3.4 fl. oz. Eau de Toilette Twist and Spray Set",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-2ce5f3a51266ffa91ac9",
@@ -18664,7 +18706,7 @@
       "id": "arrival-57529faaa01e3dcbd595",
       "brand": "Chanel",
       "name": "BLEU DE CHANEL 3.4 fl. oz. Eau de Parfum Twist and Spray Set",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-ad954656d01367ff0e3c",
@@ -18676,7 +18718,7 @@
       "id": "arrival-ec3876ab7a00a30b531b",
       "brand": "Chanel",
       "name": "BLEU DE CHANEL 3.4 fl. oz. Eau de Toilette Twist and Spray Set",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-29b0554740bd21ba04ef",
@@ -18694,7 +18736,7 @@
       "id": "arrival-1df7751fdfd57666f150",
       "brand": "Chanel",
       "name": "BLEU DE CHANEL 3.4 fl. oz. Parfum Twist and Spray Set",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-5a1bab5c44f5acfdd362",
@@ -18712,7 +18754,7 @@
       "id": "arrival-5212b97590a90597a07e",
       "brand": "Chanel",
       "name": "THE CHANEL CHALET 8 Products and 5 Exclusive Holiday Tree Ornaments",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-3ac4c3156ed573a6f5df",
@@ -18724,7 +18766,7 @@
       "id": "arrival-0cf99f24d460208b0386",
       "brand": "Chanel",
       "name": "COCO MADEMOISELLE CRUSH ABSOLU Ambery – Intense",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-83f4961fd7bd63b4caad",
@@ -18742,7 +18784,7 @@
       "id": "arrival-b43c126667e3d3f582ac",
       "brand": "Chanel",
       "name": "COCO MADEMOISELLE CRUSH ABSOLU Ambery – Intense",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-28978dda2916d6a7e728",
@@ -18754,7 +18796,7 @@
       "id": "arrival-d40715afc33f83318ea6",
       "brand": "Chanel",
       "name": "GABRIELLE CHANEL ESSENCE Eau de Parfum Purse Spray Refill Set",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-b0cf8855eb3a327873c2",
@@ -18766,7 +18808,7 @@
       "id": "arrival-f8d36ef5d4fa6bc5e9d5",
       "brand": "Lanvin",
       "name": "CATCH BY LANVIN EVENING CLUTCH",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-872529319f94020253d9",
@@ -18790,7 +18832,7 @@
       "id": "arrival-52fc885d29b170ae97bb",
       "brand": "Lanvin",
       "name": "FRINGED SKIRT IN DOUBLE-FACED CASHMERE WOOL",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-b0693571c4c58db14219",
@@ -18836,7 +18878,7 @@
       "id": "arrival-3f0c2308f2e3bb1db3ae",
       "brand": "Lanvin",
       "name": "FITTED MIDI DRESS IN SATIN",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-23cfb0bdb8f99b9dc12b",
@@ -18846,7 +18888,7 @@
       "id": "arrival-9404491c202ba8244179",
       "brand": "Lanvin",
       "name": "SHORT WOOL PULLOVER WITH PIERCING DETAIL",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-28fb2c466520632be2f0",
@@ -18864,7 +18906,7 @@
       "id": "arrival-b3e4c0d292f9e3033abf",
       "brand": "Lanvin",
       "name": "GODET-FLARE DRESS IN SILK AND COTTON",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-5c0763d423607831f9ad",
@@ -18874,7 +18916,7 @@
       "id": "arrival-d9396c67853f2b2f958f",
       "brand": "Lanvin",
       "name": "VINYL STRAIGHT SKIRT WITH CUT-OUTS",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-eada069f5b40c43ee67b",
@@ -18886,13 +18928,13 @@
       "id": "arrival-8f11d6eb9cb71df760eb",
       "brand": "Lanvin",
       "name": "ASYMMETRICAL KNIT DRESS",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-4ac6857ce6de357d7dbe",
       "brand": "Off-White",
       "name": "Off Stamp Balloon Dress",
-      "reason": "kids-sizing"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-6a3fd97e8c0a47cfc417",
@@ -18908,7 +18950,7 @@
       "id": "arrival-e45b13e008e4cf84f028",
       "brand": "Off-White",
       "name": "Off Stamp Plain Rib Pant",
-      "reason": "kids-sizing"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-3421aeea2af29e4656e2",
@@ -18926,7 +18968,7 @@
       "id": "arrival-fb503029d79c22288c4b",
       "brand": "Off-White",
       "name": "Arrow Track Pant",
-      "reason": "kids-sizing"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-f6548b4b703ea4e0e41a",
@@ -18984,7 +19026,7 @@
       "id": "arrival-7949ad071a86fca3c0a2",
       "brand": "Off-White",
       "name": "Bling Dollar Ring",
-      "reason": "footwear-type-unverified"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-50059e8efca0092e689e",
@@ -19009,6 +19051,114 @@
       "brand": "Off-White",
       "name": "Half Arrow Slim Relaxed Jeans",
       "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-b0bc7e4f18fc3cff9ae6",
+      "brand": "Loro Piana",
+      "name": "Nantucket Walk Sneaker Cotton",
+      "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-6f17ca43dbdaaf717c1b",
+      "brand": "Golden Goose",
+      "name": "2026/10/30|스니커즈 스토리 골든구스 슈퍼스타 및 볼스타: 어떤 것을 선택해야 하나요? 동일한 이탈리아 장인 정신, 디테일에 대한 동일한 세심함, 그리고 수작업으로 완성한 동일한 아이코닉 디스트레스드 마감.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-d8575999cf3c12ab040b",
+      "brand": "Golden Goose",
+      "name": "2025/08/28|스니커즈 스토리 포티 투 포티 투는 이러한 세 가지 가치를 매일 걸을 때마다 지켜가기 위해 제작된 스니커즈입니다.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-9ca8b7e8064200390170",
+      "brand": "Golden Goose",
+      "name": "2025/04/15|스니커즈 스토리 True-Star 불완전함의 아름다움을 기념하는 운동화.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-c3136a7ef87fe4457754",
+      "brand": "Golden Goose",
+      "name": "2025/04/01|스니커즈 스토리 마라톤 골든구스 마라톤은 기능성 슈즈는 아니지만 클래식 런닝 스니커즈의 실루엣을 간직하고 있습니다. 모든 특징을 알아보세요!",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-d877589885a270bb5fb1",
+      "brand": "Golden Goose",
+      "name": "2025/01/29|스니커즈 스토리 라이트스타 Y2K 스타일의 부활을 상징하는 스니커즈",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-d4e77eb751f6d1c23d35",
+      "brand": "Golden Goose",
+      "name": "2024/11/07|스니커즈 스토리 스타단 농구 세계에서 영감을 받은 스타단 스니커즈는 골든구스의 가장 상징적인 디자인 중 하나로, 90년대 특유의 미학을 떠올리게 합니다.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-36f90382cfcca5aa7314",
+      "brand": "Golden Goose",
+      "name": "2024/06/25|스니커즈 스토리 Ball Star 영감 넘치는 80년대의 미국 컬리지 컬처와 활기찬 농구 미학, 다재다능함과 레트로 스타일을 고스란히 담아시대와 드레스 코드의 한계를 뛰어넘는 아이코닉한 볼스타 컬렉션을 만나보세요.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-cb2606e04a2fa9189ea1",
+      "brand": "Golden Goose",
+      "name": "2024/06/22|스니커즈 스토리 Super-Star 이 모든 것은 한쪽 면에 스타 로고가 있어 슈퍼스타라는 이름으로 알려졌으며 브랜드의 가장 아이코닉한 모델 중 하나가 된 최초의 골든구스 스니커즈에서 시작되었습니다.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-1b9c9c6b196966802423",
+      "brand": "Golden Goose",
+      "name": "2024/06/15|스니커즈 스토리 Mid Star 미드스타 컬렉션은 80년대와 90년대 스케이트보드 씬에서 영감을 발견하고, 온종일 걸을 수 있는 편안함과 우아한 룩에 어울리는 스마트한 매력이 돋보이는 독특한 디자인의 활용도 높은 데일리 스니커즈를 선보입니다.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-0094fc06d6538a1ced45",
+      "brand": "Golden Goose",
+      "name": "2024/06/06|스니커즈 스토리 Ball Star Pro 아이코닉한 전작의 영향을 엿볼 수 있는 볼스타 프로는 전설적인 1980년대의 아메리칸 컬리지 패션에서 영감을 받은 볼스타 스니커즈를 빈티지하면서도 시대를 초월한 스타일로 재해석한 버전입니다.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-fc421936e135328cf04f",
+      "brand": "Golden Goose",
+      "name": "2026/08/03|스니커즈 신는 방법 골든구스 스니커즈 세탁 방법 골든구스 스니커즈는 삶의 모든 단계에서 골든 러버의 여정에 함께할 수 있도록 디자인됩니다.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-2338840d661316982ecf",
+      "brand": "Golden Goose",
+      "name": "2025/09/19|스니커즈 신는 방법 SKINS 모든 스니커즈가 개성에 대한 찬미를 전하는 골든구스의 생동감 넘치는 세계에서, 이제 표현의 새로운 차원이 탄생합니다: 스킨.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-ba411ccf00e369def089",
+      "brand": "Golden Goose",
+      "name": "2024/07/16|스니커즈 신는 방법 스니커즈 슈레이스 묶는 방법 불완전하고 불규칙한 레이스업 스타일이 골든구스 스니커즈의 특별한 끈 묶는 방법입니다.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-47add191d0180df9e321",
+      "brand": "Golden Goose",
+      "name": "2024/07/07|스니커즈 신는 방법 골든구스 슈즈 커스터마이징 방법 골든구스 고객은 코-크리에이션 서비스를 사용하여 스니커즈나 레디 투 웨어 의류와 같은 골든구스 제품을 커스터마이징할 수 있습니다.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-4cdc67c9b97c102525c4",
+      "brand": "Golden Goose",
+      "name": "2024/07/04|스니커즈 신는 방법 스니커즈에 어울리는 룩 아웃핏 아이디어의 결정적 요소에서, 독특함과 진정성이라는 개념의 기본이 되는 것은 ‘틀에서 벗어난 생각(think outside the box)’이라는 사고방식입니다.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-c8fecdcedd857151cbd0",
+      "brand": "Golden Goose",
+      "name": "2024/07/01|스니커즈 신는 방법 골든구스의 스니커즈가 낡아 보이는 이유 골든구스 스니커즈는 수작업으로 제작된 리브드인 룩이 특징이며, 한 켤레 한 켤레가 각각 독특합니다.",
+      "reason": "not-product-page"
+    },
+    {
+      "id": "arrival-8b29831d5d7473aca3a1",
+      "brand": "Golden Goose",
+      "name": "2024/06/28|스니커즈 신는 방법 스니커즈 제작 방법 스니커즈의 핵심 요소인 장인 정신",
+      "reason": "not-product-page"
     },
     {
       "id": "arrival-856f84cb441008029508",
@@ -19081,6 +19231,106 @@
     {
       "id": "amiri-7fddba5969d78ee20dc4",
       "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-0bab34a306b7467f822f",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "mihara-8732-1",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Suede Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-8732-16",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Suede Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-8732-29",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Suede Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-8732-36",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Suede Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-8733-1",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Leather Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-8733-16",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Leather Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-8733-40",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Leather Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-8733-77",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Leather Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-7497-1",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-7497-16",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-7497-40",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-7497-77",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Sneaker Pumps",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "mihara-7498-1",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Sneaker Sandals",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "mihara-7498-16",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Sneaker Sandals",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "mihara-7498-40",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Sneaker Sandals",
+      "reason": "hybrid-review-required"
+    },
+    {
+      "id": "mihara-7498-77",
+      "brand": "Maison Mihara Yasuhiro",
+      "name": "Spike Sole Sneaker Sandals",
+      "reason": "hybrid-review-required"
     },
     {
       "id": "arrival-14410c0b4466b5b90943",
@@ -20833,6 +21083,14 @@
       "reason": "photo-shared-across-models",
       "sharedWith": "ALO Sunset Sneaker",
       "image": "https://cdn.shopify.com/s/files/1/2185/2813/files/assets_aa96744e7fe74e2a90d22918299c1f1d_945ee81d107449348da7f44c34f9ffa5.jpg?v=1790099131"
+    },
+    {
+      "id": "arrival-28a8e9491268540327e1",
+      "brand": "Balenciaga",
+      "name": "Men's Triple S.2 Denim Sneaker in Blue",
+      "reason": "photo-shared-across-models",
+      "sharedWith": "Sneakers For Men - Men | Balenciaga United States EN",
+      "image": "https://balenciaga.dam.kering.com/asset/e6216387-2bcb-4218-9298-1513e00f6d2c/Medium/865849WTSDN4000_F.jpg?v=2"
     },
     {
       "id": "arrival-5a25066175f2836fb486",

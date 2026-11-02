@@ -3,6 +3,7 @@ import { groupedBrands } from './brand-groups.mjs';
 import { analysisCsv, analysisRows, priceDistribution, materialDistribution, colourDistribution,
          priceKrw, priceBand, colourFamily, materialsOf, RATE_NOTE,categoryDistribution,useModelCategories} from './analysis.mjs';
 import {isPublishedFootwear} from './footwear-policy.mjs';
+import {preferOfficialVariants} from './product-identity.mjs';
 import { hasVisual, productImageUrl, kstToday, releaseState, releaseDateLabel, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, reviewedProductPageUrl, officialImageUrl, visibleSocialMetrics, sourceMatches, productBrandNames, socialComparisonGroups, groupProductVariants, preferWomenVariants, unifyVariantGroups, variantGroupKey, variantGroupName, variantColorLabel, uniqueColorVariants, colorSwatch, isOverlay, overlayKind, overlayReleaseState, overlayWindowDay, retailerId, trendTerms, trendTermGroups, trendKeywordMatches } from './catalog-view.mjs';
 
 const $ = id => document.getElementById(id);
@@ -12,8 +13,8 @@ const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
 const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
-const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter']];
-const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter'};
+const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter'],['retail-mrporter','MR PORTER'],['retail-kith','Kith']];
+const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter','retail-mrporter':'MR PORTER','retail-kith':'Kith'};
 let catalog = null, overlay = null, trends = null, rankBoards = null, catwalk = null, catwalkShown = 0, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
 const activeVariant = new Map();
 function groupKey(p){ return variantGroupKey(p); }
@@ -39,6 +40,7 @@ function colorChipsMarkup(group, activeId){
 
 function outboundUrl(p){ return isOverlay(p)?safeUrl(p.url):reviewedProductPageUrl(p,today); }
 function overlayDateLabel(p){
+  if(p.availabilityEvidence?.kind==='retail-current-assortment')return `${dateText(p.availabilityEvidence.verifiedAt.slice(0,10))} 판매 확인 · 발매일 미공개`;
   const day=overlayWindowDay(p);
   if(!day)return '등록일 미확인';
   if(overlayKind(p)==='newsletter')return `${dateText(day)} 기사`;
@@ -133,6 +135,11 @@ async function downloadPhotos(list){
 function imageMarkup(p, eager = false) {
   const cached=p.presentation?.cachedPath;
   const url = /^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(cached||'')?cached:safeUrl(p.presentation?.image) || officialImageUrl(p,today) || safeUrl(p.image);
+  const frame=p.presentation?.frame;
+  if(url&&frame&&[frame.x,frame.y,frame.width,frame.height,frame.imageWidth,frame.imageHeight].every(Number.isFinite)&&frame.width>0&&frame.height>0){
+    const w=frame.imageWidth,h=frame.imageHeight;
+    return `<svg class="product-frame" viewBox="${frame.x*w} ${frame.y*h} ${frame.width*w} ${frame.height*h}" role="img" aria-label="${esc(p.brand+' '+p.name)}" preserveAspectRatio="xMidYMid meet"><image href="${esc(url)}" width="${w}" height="${h}"/></svg>`;
+  }
   return url ? `<img style="transform:translateY(${Math.max(-45,Math.min(45,Number(p.presentation?.offsetY)||0))}%) scale(${Math.min(2.7,Math.max(1,Number(p.presentation?.scale)||1))})" src="${esc(url)}" alt="${esc(p.brand + ' ' + p.name)}" loading="${eager ? 'eager' : 'lazy'}" decoding="async" referrerpolicy="no-referrer">` : '<span class="image-missing">공식 이미지 확인 중</span>';
 }
 function bindImageErrors(container) { container.querySelectorAll('img').forEach(img => img.addEventListener('error', () => { const span = document.createElement('span'); span.className = 'image-missing'; span.textContent = '이미지를 표시할 수 없습니다'; img.replaceWith(span); }, {once:true})); }
@@ -165,7 +172,7 @@ function adaptOverlay(item, sources) {
     fit: [],
     colors: hexes.length ? hexes.map((hex, i) => ({name: i === 0 ? (item.colorway || '') : '', hex}))
                          : (item.colorway ? [{name: item.colorway}] : []),
-    presentation: {image: item.image || ''},
+    presentation: {...item.presentation,image: item.presentation?.image || item.image || ''},
   };
 }
 
@@ -182,6 +189,7 @@ function rebuildProducts() {
   const eligible = catalog.products.filter(p => p && isPublishedFootwear(p) && releaseState(p,today)==='released' && typeof p.id === 'string' && typeof p.name === 'string' && typeof p.brand === 'string');
   products = preferWomenVariants(eligible).map(p => ({...p,keywords:[...(p.keywords||[]),...[...catalog.keywords,...(catalog.forecastKeywords||[])].filter(k=>k.productIds?.includes(p.id)).flatMap(k=>[k.label,...(k.aliases||[])])]}));
   products = products.concat(overlayProducts());
+  products = preferOfficialVariants(products);
   // Mark everything this week's trend keywords actually match, so the SNS tab
   // can show the real items behind a hashtag instead of only the hashtag.
   // How many of this week's trending hashtags name each item. One match puts
@@ -657,7 +665,7 @@ function render() {
   $('empty-reset').textContent='필터 초기화'; delete $('empty-reset').dataset.retry;
   if (!filtered.length) {
     $('empty-title').textContent = state.source==='sns'?'공개 SNS 지표를 확인한 상품이 없습니다':state.source==='brand'?'공식 정보 확인을 마친 출시 상품이 없습니다':state.source==='retail'?'조건에 맞는 리테일 신상이 없습니다':state.source==='newsletter'?'조건에 맞는 뉴스레터 신상이 없습니다':state.source==='all' ? '조건에 맞는 상품이 없습니다' : `${sourceNames[state.source]} 선정 기준을 충족한 상품이 없습니다`;
-    $('empty-description').textContent = state.source==='retail' ? '리테일러가 밝힌 등록일 기준 최근 3개월 상품만 표시합니다. 리테일러·품목·브랜드 필터를 줄여 보세요.' : state.source==='newsletter' ? '최근 3개월 기사 중 브랜드가 확인된 신상 신발만 표시합니다. 필터를 줄여 보세요.' : state.source==='sns' ? '최근 3개월에 확인한 검색량·해시태그 게시물 수와 공식 상품 정보를 갖춘 상품부터 표시합니다. 공개되지 않은 수치는 미공개로 구분합니다.' : state.source==='media' ? '매거진·뉴스레터를 합쳐 최근 30일 이내 독립된 출처 2곳 이상이 직접 소개한 상품을 보여줍니다.' : state.source==='ecommerce' ? '국가·카테고리·확인일이 있는 실제 랭킹의 상품이 필요합니다.' : state.source==='brand'?'브랜드 탭에는 공식 상품 페이지와 공식 이미지를 확인한 공식 신상품 · 게시 후 3개월 상품만 표시합니다.':'필터를 줄여 보세요. 공식 New·New Arrivals 근거가 없거나 게시 후 3개월이 지난 상품은 표시하지 않습니다.';
+    $('empty-description').textContent = state.source==='retail' ? '최근 3개월 등록 상품과 LUX 현재 판매 확인 상품을 표시합니다. 리테일러·품목·브랜드 필터를 줄여 보세요.' : state.source==='newsletter' ? '최근 3개월 기사 중 브랜드가 확인된 신상 신발만 표시합니다. 필터를 줄여 보세요.' : state.source==='sns' ? '최근 3개월에 확인한 검색량·해시태그 게시물 수와 공식 상품 정보를 갖춘 상품부터 표시합니다. 공개되지 않은 수치는 미공개로 구분합니다.' : state.source==='media' ? '매거진·뉴스레터를 합쳐 최근 30일 이내 독립된 출처 2곳 이상이 직접 소개한 상품을 보여줍니다.' : state.source==='ecommerce' ? '국가·카테고리·확인일이 있는 실제 랭킹의 상품이 필요합니다.' : state.source==='brand'?'브랜드 탭에는 공식 상품 페이지와 공식 이미지를 확인한 공식 신상품 · 게시 후 3개월 상품만 표시합니다.':'필터를 줄여 보세요. 공식 New·New Arrivals 근거가 없거나 게시 후 3개월이 지난 상품은 표시하지 않습니다.';
   }
   $('page-range').textContent = groups.length ? `${(state.page-1)*PAGE_SIZE+1}–${Math.min(state.page*PAGE_SIZE,groups.length)} / ${groups.length.toLocaleString()}` : '0개 상품';
   $('mobile-brand-count').textContent=state.brands.size?String(state.brands.size):'';
@@ -678,7 +686,7 @@ function renderSourceDescription() {
     const rows=products.filter(p=>isOverlay(p)&&overlayKind(p)===kind&&overlayReleaseState(p,today));
     const labels=[...new Set(rows.map(sourceLabelOf).filter(Boolean))].sort();
     $('result-description').innerHTML=labels.length
-      ?`확인된 출처: ${labels.map(esc).join(' · ')}<span class="source-context">${kind==='retail'?'리테일러가 밝힌 등록일 기준 최근 3개월 상품입니다. 개별 상품 페이지는 카드를 눌러 확인하세요.':'기사에서 브랜드가 확인된 신상 신발입니다. 원문은 카드를 눌러 확인하세요.'}</span>`
+      ?`확인된 출처: ${labels.map(esc).join(' · ')}<span class="source-context">${kind==='retail'?'최근 3개월 등록 또는 LUX 현재 판매 근거를 확인했습니다. 개별 상품 페이지는 카드를 눌러 확인하세요.':'기사에서 브랜드가 확인된 신상 신발입니다. 원문은 카드를 눌러 확인하세요.'}</span>`
       :'아직 게시된 상품이 없습니다.';
     return;
   }
@@ -825,7 +833,7 @@ function renderTrendKeywords() {
   }));
 }
 const SOURCE_NOTES={
-  retail:'SSENSE·Farfetch·Mytheresa·Net-a-Porter·Lyst·무신사·29CM·W컨셉에서 매주 수집합니다. 각 리테일러가 밝힌 등록일 기준 최근 3개월 상품만 표시하고, 날짜를 제공하지 않는 곳은 지난 확인 대비 새로 등장한 상품만 올립니다. 최신순으로 정렬됩니다.',
+  retail:'SSENSE·Farfetch·Mytheresa·Net-a-Porter·Lyst·무신사·29CM·W컨셉에서 매주 수집합니다. 각 리테일러의 최근 3개월 등록 상품을 표시합니다. Common Projects는 MR PORTER·Kith의 현재 판매 상품을 발매일 미공개로 구분하며, 날짜를 제공하지 않는 곳은 지난 확인 대비 새로 등장한 상품만 올립니다. 최신순으로 정렬됩니다.',
   newsletter:'Sneaker News·Highsnobiety·Sneaker Freaker·Hypebeast·Hypebeast Korea·Concept Kicks·Footwear News의 최근 3개월 기사 중 브랜드가 확인된 신상 신발입니다. 기사에 적힌 발매일이 아직 오지 않은 아이템은 발매 예정으로 표시합니다.',
 };
 function renderSourceNote(){

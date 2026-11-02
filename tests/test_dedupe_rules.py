@@ -74,8 +74,8 @@ def test_retail_copy_of_an_official_product_is_dropped():
     ]
     status = {}
     kept = D.drop_already_official(items, official_keys, status)
-    assert [i['id'] for i in kept] == ['r3']
-    assert status['alreadyOfficialDropped'] == 2
+    assert [i['id'] for i in kept] == ['r1', 'r3']
+    assert status['alreadyOfficialDropped'] == 1
 
 
 def test_a_colour_word_in_the_style_field_is_not_a_style_code():

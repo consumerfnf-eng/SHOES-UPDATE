@@ -1,5 +1,6 @@
 import {footwearTypes,FOOTWEAR_TYPES} from './footwear-policy.mjs';
 import {hasArrivalEvidence} from './publication-window.mjs';
+import {reviewedDesignName,manufacturerCode} from './product-identity.mjs';
 export function kstToday(now = new Date()) {
   const shifted = new Date(now.getTime() + 9 * 60 * 60 * 1000);
   return shifted.toISOString().slice(0, 10);
@@ -277,6 +278,10 @@ const MATERIAL_SUFFIX = new RegExp('(?:^|[\\s|—–-])(?:' +
 const TRAILING_JOINER = /[&+,]\s*$|\s+(?:and|und|et|in|with|en)\s*$/i;
 /** The material words a name ends in, outermost first, as one label. */
 export function variantMaterialLabel(p) {
+  if(reviewedDesignName(p)) {
+    const terms=String(p.name||'').match(/\b(?:metallic technical fabric|full.grain leather|patent leather|calfskin|lambskin|leather|suede|nubuck|canvas|mesh|nylon|knit|felt|velvet|faux fur|snake|denim|satin|shearling|crystal|metallic)\b/gi)||[];
+    if(terms.length)return [...new Set(terms.map(s=>s.toLowerCase()))].join(' / ');
+  }
   let name = String(p?.name || '').replace(CATEGORY_SUFFIX, ' ').trim();
   const found = [];
   for (let i = 0; i < 6; i++) {
@@ -330,7 +335,9 @@ function computeVariantGroupName(p) {
   // When the collection step resolved this listing to a model, that name is
   // the card's name. It is the only one that is right for a card standing
   // for four colourways: every listing's own name ends in its own shade.
-  if (p?.modelName) return withoutAudienceLabel(trimModelSeparators(p.modelName));
+  const reviewed=reviewedDesignName(p);
+  if(reviewed)return withoutAudienceLabel(trimModelSeparators(withoutTrailingMaterial(withoutLeadingMaterial(reviewed))));
+  if (p?.modelName) return withoutAudienceLabel(trimModelSeparators(withoutTrailingMaterial(withoutLeadingMaterial(p.modelName))));
   if (!p?.name) return p?.modelKey || p?.id || '';
   let base = String(p.name);
   // nameColorway is a colour the brand only wrote into the name, proved to be
@@ -418,6 +425,9 @@ export function bareStyleCode(style) {
 /** The part of a style code that names the design rather than the colour. */
 export function styleFamily(p) {
   const code = bareStyleCode(p?.style);
+  if(p?.brand==='Dior') {const match=code.match(/^((?:\dSN|KCK)\d{3})[A-Z]{3}_[A-Z0-9]{4}$/);if(match)return match[1];}
+  if(['Prada','Miu Miu'].includes(p?.brand)&&/^[A-Z0-9]{6}_/.test(code))return code.slice(0,6);
+  if(p?.brand==='Chanel')return String(p.url||'').match(/\/p\/(G\d{5})/i)?.[1]||'';
   if(p?.brand==='Golden Goose'){
     const match=code.match(/^(G[MW]F\d{5})\.[A-Z0-9]+\.[A-Z0-9]+$/);
     if(match)return match[1];
@@ -452,9 +462,11 @@ export function unifyVariantGroups(products) {
     // An article is one card by default and is keyed on itself; joining those
     // by a shared model name is what merged 42 pieces into one Jordan card.
     if (isOverlay(product) && overlayKind(product) === 'newsletter') continue;
-    const name = computeVariantGroupKey(product);
+    // Reconcile retail model IDs with official names in the same namespace.
+    const name = computeVariantGroupKey({...product,modelGroupId:undefined});
     const family = styleFamily(product);
-    const code = family ? `style|${brandKey(product)}|${family}` : '';
+    const shape=variantGroupName(product).match(/\b(?:high[ -]top|mid[ -]top|low[ -]top|platform|mule|zip)\b/gi)?.join(' ').toLowerCase()||'';
+    const code = family ? `style|${brandKey(product)}|${family}|${shape}` : '';
     rows.push({product, name, code});
     add(name);
     if (code) union(name, code);
@@ -471,14 +483,14 @@ function computeVariantGroupKey(p) {
   // colour out of its name - "OLLA 양털슬립온 실브라운" and "OLLA 양털슬립온
   // 초콜릿" are one shoe. Nothing in the record says 실브라운 is a colour, so
   // that answer cannot be re-derived here; it is used as given.
+  const unified = UNIFIED.get(p);
+  if (unified) return unified;
   if (p.modelGroupId) return `model|${p.modelGroupId}`;
   // Two records are the same shoe if either the name or the brand's own style
   // code says so, and unifyVariantGroups has already worked out which records
   // that joins up. Asking the code alone would split as often as it merges:
   // Nike files one P-6000 under two style numbers, and the name had them
   // together. Asking the name alone misses what only the code knows.
-  const unified = UNIFIED.get(p);
-  if (unified) return unified;
   if (!p?.name) return p?.modelKey || p?.id;
   const normalize = value => String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'');
   const name = variantGroupName(p);
@@ -486,6 +498,8 @@ function computeVariantGroupKey(p) {
   // "Trail", "LITE-SHOW", "GTX", "Waterproof", etc. remain model identity.
   const model = trimModelSeparators(name.replace(/\s+(?:running\s+)?(?:shoes?|sneakers?)$/i,''));
   const normalized = normalize(model || name);
+  if(/^(?:sneakers?|trainers?|shoes?|leather|suede|nylon|mesh|canvas|runner|runners)$/.test(normalized))
+    return `unspecified-design|${normalize(p.brand)}|${styleFamily(p)||manufacturerCode(p)||normalize(p.id)}`;
   // A listing whose whole name is its brand states no model, so it has
   // nothing to be grouped by: 29CM returns twelve different NEPA shoes all
   // named "네파", and keyed on the name alone they became one card holding
@@ -586,7 +600,11 @@ export function uniqueColorVariants(group,activeId){
     // exactly the duplication the card exists to remove.
     const color=canonicalColorKey(variantColorLabel(p));
     if(color){
-      const key=`color:${color}`;
+      // A coarse image-inferred "black" is not proof that two factory variants
+      // are identical. Preserve their complete code (including material).
+      const inferred=p.colorEvidence?.method==='upper-image-analysis';
+      const factory=manufacturerCode(p)||p.productVariantId||(/\d/.test(p.style||'')?p.style:'');
+      const key=factory?`variant:${p.brand||''}|${factory}`:`color:${color}${inferred?'|'+p.id:''}`;
       if(!seen.has(key)||p.id===activeId)seen.set(key,p);
       continue;
     }
@@ -647,10 +665,14 @@ export function productAudience(product) {
 }
 
 export function preferWomenVariants(products) {
-  const womenModels = new Set(products.filter(p => !isOverlay(p) && productAudience(p) === 'women').map(variantGroupKey));
-  // Apply to the eligible catalog BEFORE search/source filters: a male-only
-  // color search must not bring a suppressed counterpart back into the grid.
-  return products.filter(p => isOverlay(p) || !womenModels.has(variantGroupKey(p)) || productAudience(p) === 'women');
+  const signatures=p=>{
+    const brand=variantGroupKey(p),code=manufacturerCode(p),photo=p.presentation?.cachedPath||p.image;
+    return [...(code?[brand+'|code|'+code]:[]),...(photo?[brand+'|photo|'+photo]:[])];
+  };
+  const womenVariants=new Set(products.filter(p=>!isOverlay(p)&&productAudience(p)==='women').flatMap(signatures));
+  // A women's model listing cannot retire men's exclusive colours/materials.
+  // Prefer it only for an exact physical variant, never an entire model.
+  return products.filter(p=>isOverlay(p)||productAudience(p)==='women'||!signatures(p).some(s=>womenVariants.has(s)));
 }
 
 // Named colors are an approximate navigation aid; the official photo is the
@@ -684,6 +706,11 @@ export function overlayWindowDay(product) {
 }
 
 export function overlayReleaseState(product, today = kstToday()) {
+  const proof=product?.availabilityEvidence;
+  if(proof?.verified===true&&proof.kind==='retail-current-assortment'&&product.brand==='Common Projects'&&proof.productUrl===product.url&&/^https:\/\/(?:www\.mrporter\.com|kith\.com)\//.test(product.url||'')) {
+    const checked=String(proof.verifiedAt||'').slice(0,10);
+    return validDay(checked)&&checked<=today&&checked>=shiftCalendarMonths(today,-1)?'released':null;
+  }
   const day = overlayWindowDay(product);
   if (!validDay(day) || day > today) return null;
   if (day < shiftCalendarMonths(today, -3)) return null;

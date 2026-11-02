@@ -189,7 +189,7 @@ export function briefingHtml(b) {
   ${list([...b.failures, ...b.silent.map(s => `${s}: 응답 없음`), ...b.empty.map(s => `${s}: 응답했으나 발행 0건`)],
          '실패한 소스가 없습니다.')}
 
-  <p style="margin:26px 0 0;font-size:12px"><a href="https://shoes-update.pages.dev/" style="color:#0b57d0">사이트에서 보기 ↗</a></p>
+  <p style="margin:26px 0 0;font-size:12px"><a href="https://shoes-update-internal.pages.dev/" style="color:#0b57d0">사이트에서 보기 ↗</a></p>
 </div>`;
 }
 
@@ -225,7 +225,7 @@ export function briefingText(b) {
     '수집 실패:',
     ...([...b.failures, ...b.silent.map(s => `${s}: 응답 없음`), ...b.empty.map(s => `${s}: 발행 0건`)]
         .map(s => `  - ${s}`).slice(0, 40) || []),
-    '', 'https://shoes-update.pages.dev/',
+    '', 'https://shoes-update-internal.pages.dev/',
   ];
   return lines.filter(l => l !== '').join('\n');
 }

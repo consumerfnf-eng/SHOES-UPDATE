@@ -71,7 +71,7 @@ test('two different models cannot both be the shoe in one photograph', () => {
   assert.ok(held.every(h => h.reason === 'photo-shared-across-models'));
 });
 
-test('a re-encoded copy of one shot is still that shot', () => {
+test('a perceptual-hash collision alone cannot delete another verified design', () => {
   // Byte-identical copies already share a cached path, because the cache
   // names its files by SHA-256. A brand that re-encodes or resizes one shot
   // per colourway defeats that, so the perceptual hash is what groups them.
@@ -82,8 +82,8 @@ test('a re-encoded copy of one shot is still that shot', () => {
     {id: 'b', brand: 'Vans', name: 'Classic Slip-On Shoe', photoHash: '1e1e6763694b0305',
      presentation: {image: 'https://cdn.vans/b.jpg'}},
   ];
-  assert.equal(holdPhotosSharedAcrossModels(products, held).length, 1);
-  assert.equal(held[0].reason, 'photo-shared-across-models');
+  assert.equal(holdPhotosSharedAcrossModels(products, held).length, 2);
+  assert.equal(held.length, 0);
 });
 
 test('the keeper is the women\'s listing, and the name without the shop\'s furniture', () => {
@@ -98,7 +98,7 @@ test('the keeper is the women\'s listing, and the name without the shop\'s furni
       {id: 'w', brand: 'PANE', name: 'Pane Zephyr Training Women’s Shoes-Manu Bay', presentation: {image}},
     ];
     const kept = holdPhotosSharedAcrossModels(order ? pair.reverse() : pair, held);
-    assert.deepEqual(kept.map(p => p.id), ['w'], 'the women\'s listing survives whichever order it arrives in');
+    assert.equal(kept.length,2,'same-model source variants survive the photo binding gate; audience preference happens in the view');
   }
   const held = [];
   const quoted = [

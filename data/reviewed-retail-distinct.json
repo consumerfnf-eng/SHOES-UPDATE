@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-11-02T07:23:26.145Z",
+  "products": [
+    {
+      "retailId": "weekly-ssense-b6e710ab2442dc62c5be",
+      "brand": "Lanvin",
+      "retailUrl": "https://www.ssense.com/en-us/men/product/lanvin/black-and-off-white-bumpr-used-leather-sneakers/19540891",
+      "verified": true,
+      "reason": "Compared complete current model gallery: body/accent colours, printed pattern or trim differs from official variants; retail-only physical variant retained",
+      "comparedOfficialIds": [
+        "arrival-f79e5f344f2df3e47c9c"
+      ]
+    },
+    {
+      "retailId": "weekly-ssense-ee9ee84a667ab9e445cc",
+      "brand": "Lanvin",
+      "retailUrl": "https://www.ssense.com/en-us/men/product/lanvin/off-white-and-orange-curb-snake-leather-sneakers/19539711",
+      "verified": true,
+      "reason": "Compared complete current model gallery: body/accent colours, printed pattern or trim differs from official variants; retail-only physical variant retained",
+      "comparedOfficialIds": [
+        "arrival-6955aebca7d25847c7d1",
+        "arrival-7f54dde733176b7edf06"
+      ]
+    },
+    {
+      "retailId": "weekly-ssense-8e6ba23a92de8ba76553",
+      "brand": "Lanvin",
+      "retailUrl": "https://www.ssense.com/en-us/men/product/lanvin/black-and-green-curb-felt-sneakers/19540591",
+      "verified": true,
+      "reason": "Compared complete current model gallery: body/accent colours, printed pattern or trim differs from official variants; retail-only physical variant retained",
+      "comparedOfficialIds": [
+        "arrival-8c721ecde15a8900bfb8",
+        "arrival-dc4f6ce2b518c10b2998"
+      ]
+    },
+    {
+      "retailId": "weekly-ssense-7ecced0c9fab9bb682f7",
+      "brand": "Lanvin",
+      "retailUrl": "https://www.ssense.com/en-us/men/product/lanvin/khaki-dbb1-sneakers/19541051",
+      "verified": true,
+      "reason": "Compared complete current model gallery: body/accent colours, printed pattern or trim differs from official variants; retail-only physical variant retained",
+      "comparedOfficialIds": [
+        "arrival-6a6c2c84a35fe0b3daa9",
+        "arrival-61fc29a179378f769603"
+      ]
+    },
+    {
+      "retailId": "weekly-ssense-55c563c2d018adbdd1f3",
+      "brand": "Off-White",
+      "retailUrl": "https://www.ssense.com/en-us/women/product/off-white/tan-end-of-play-sneakers/19337471",
+      "verified": true,
+      "reason": "Compared complete current model gallery: body/accent colours, printed pattern or trim differs from official variants; retail-only physical variant retained",
+      "comparedOfficialIds": [
+        "new-20260923-bcd396f0666afe6d",
+        "new-20260923-697a7cf3a98f2083"
+      ]
+    },
+    {
+      "retailId": "weekly-ssense-3579bdaf7cb8e1d530f6",
+      "brand": "Givenchy",
+      "retailUrl": "https://www.ssense.com/en-us/men/product/givenchy/black-givenchy-yard-leather-sneakers/19302651",
+      "verified": true,
+      "reason": "Compared complete current model gallery: body/accent colours, printed pattern or trim differs from official variants; retail-only physical variant retained",
+      "comparedOfficialIds": [
+        "arrival-e0ac4ca4f0c70d9f25a1"
+      ]
+    }
+  ]
+}

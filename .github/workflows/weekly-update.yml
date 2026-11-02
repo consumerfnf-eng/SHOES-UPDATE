@@ -117,7 +117,7 @@ jobs:
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json public/images
+          git add data/product-identity-audit.json public/data/monthly-catalog.json data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json public/images
           if ! git diff --cached --quiet; then
             git commit -m "weekly curated shoes update $(date -u +%F)"
             # main moves while this runs (the daily workflow, or a person

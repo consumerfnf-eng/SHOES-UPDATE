@@ -18,7 +18,7 @@ export function brandPolicy(name) { return brandMap.get(key(canonicalBrand(name)
 export function kstDay(now = new Date()) { return new Date(new Date(now).getTime() + 9 * 3600000).toISOString().slice(0, 10); }
 export function httpUrl(x) { try { const u = new URL(x); return u.protocol === 'https:' && !u.username && !u.password; } catch { return false; } }
 export function canonicalUrl(x) {
-  try { const u = new URL(x); u.hash = ''; for(const name of [...u.searchParams.keys()])if(/^(?:utm_|gclid$|fbclid$|ref$|referrer$|campaign$|affiliate$|variant$|cate_no$|display_group$|c$)/i.test(name))u.searchParams.delete(name);u.searchParams.sort();u.hostname = u.hostname.replace(/^www\./, ''); u.pathname = u.pathname.replace(/\/collections\/[^/]+\/products\//, '/products/').replace(/\/$/, ''); return u.href; } catch { return ''; }
+  try { const u = new URL(x); u.hash = ''; const miharaColour=/(?:^|\.)miharayasuhiro\.jp$/i.test(u.hostname)&&u.pathname==='/products/detail.php'&&u.searchParams.has('product_id');for(const name of [...u.searchParams.keys()])if(/^(?:utm_|gclid$|fbclid$|ref$|referrer$|campaign$|affiliate$|variant$|cate_no$|display_group$|c$)/i.test(name)&&!(name==='c'&&miharaColour))u.searchParams.delete(name);u.searchParams.sort();u.hostname = u.hostname.replace(/^www\./, ''); u.pathname = u.pathname.replace(/\/collections\/[^/]+\/products\//, '/products/').replace(/\/$/, ''); return u.href; } catch { return ''; }
 }
 /** The style a product is identified by, with a size variant removed.
  *
@@ -202,6 +202,9 @@ const LATERAL_SLOT = {
   // stills, TPP is the pair seen from directly above. Checked
   // 100260646_TPP_eCom against 100292268_SLC_eCom on 2026-10-30.
   Reebok: {host: 'www.reebok.com', lateral: /_(?:SLC|FLT)_eCom/i, refused: /_TPP_eCom/i},
+  Moncler: {host:'moncler-cdn.thron.com',lateral:/_F\/image\//,refused:/_\d\/image\//},
+  'Maison Margiela': {host:'www.maisonmargiela.com',lateral:/_E\.(?:webp|jpg)/i,refused:/_[LFDRA]\.(?:webp|jpg)/i},
+  'Jil Sander': {host:'www.jilsander.com',lateral:/_F\.jpg/i,refused:/_E\.jpg/i},
 };
 export function preferLateralView(products) {
   for (const p of products) {
@@ -219,7 +222,7 @@ export function preferLateralView(products) {
   }
   return products;
 }
-export function dedupeKey(p) { return `${key(canonicalBrand(p.brand))}|${key(productStyle(p)) || canonicalUrl(p.url)}|${key(p.colorway)}`; }
+export function dedupeKey(p) { return `${key(canonicalBrand(p.brand))}|${p.productVariantId?'variant:'+encodeURIComponent(p.productVariantId):key(productStyle(p)) || canonicalUrl(p.url)}|${key(p.colorway)}`; }
 const officialSources=JSON.parse(fs.readFileSync(new URL('../config/daily_sources.json',import.meta.url),'utf8'));
 const socialSources=JSON.parse(fs.readFileSync(new URL('../config/social-metric-sources.json',import.meta.url),'utf8'));
 const officialDomainOverrides={'Nike':['nike.com'],'Jordan':['nike.com'],'PUMA':['puma.com'],'adidas':['adidas.com','adidas.ae','adidas.jp','adidas.fr','adidas.co.uk'],'Converse':['converse.com','palmes.co']};
@@ -301,6 +304,14 @@ const sportCue = /\b(?:midsole|outsole|insole|cushion\w*|mesh|knit upper|upper|r
 // the page's own furniture ("Use arrow keys to pan, + and - to zoom").
 const urlWords = url => { try { return decodeURIComponent(String(url || '')).replace(/[?#].*$/, '').replace(/[^\p{L}\p{N}]+/gu, ' '); } catch { return String(url || '').replace(/[^\p{L}\p{N}]+/gu, ' '); } };
 export function classifyFootwear(p) {
+  // A sneaker recommendation inside an accessory/editorial page is not that
+  // page's product. The shop's explicit URL department outranks stray text.
+  try { const path=decodeURIComponent(new URL(p.url).pathname);
+    if(p.brand==='Golden Goose'&&/-cod-GUZ\d/i.test(path))return {reason:'not-footwear'};
+    if(/\/(?:stories|editorial|magazine)\//i.test(path))return {reason:'not-product-page'};
+    if(/miharayasuhiro\.jp$/.test(new URL(p.url).hostname)&&path==='/products/list.php')return {reason:'not-product-page'};
+    if(/\/(?:accessories|eyewear|bags|clothing|ready-to-wear|fragrance|beauty)\//i.test(path))return {reason:'not-footwear'};
+  } catch {}
   // Negative gates run first for every record; legacy verification cannot bypass them.
   // Include the normalized source category/type. Several official product feeds
   // describe a shoe as `category: casual` while declaring `productType: sneaker`;
@@ -321,6 +332,9 @@ export function classifyFootwear(p) {
   // the path disagree, the path is what the shop actually filed it under.
   if (/\bapparel\b|\bclothing\b|\bclothes\b|의류/i.test(path) && !footwearWord.test(path)) return { reason: 'not-footwear' };
   if (apparel.test(filed) && !footwearWord.test(filed)) return { reason: 'not-footwear' };
+  // "Slide" is Golden Goose's closed high-top sneaker, not a backless slide.
+  // The exact factory families and official gallery were checked together.
+  if(p.brand==='Golden Goose'&&/-cod-G[MW]F(?:00115|00116|00211)\./i.test(p.url||'')&&/sneaker|스니커즈/i.test(p.officialCategory||''))return {category:'sneaker'};
   const reviewedPlatform=review?.approved===true&&review.type==='platform'&&review.flatSole===true&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url);
   const reviewedJelly=review?.approved===true&&review.type==='jelly'&&review.brand===canonicalBrand(p.brand)&&review.style===p.style&&review.url===p.url&&isOfficialProductUrl(p.brand,p.url)&&review.flatSole===true;
   if(/goadome/i.test(title)&&!p.hybridReview?.approved)return {reason:'hybrid-review-required'};
@@ -631,7 +645,7 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
     modelKey:raw.modelGroup||`${key(brand)}|${key(String(raw.name).split(/ — | – /)[0])}`,
     releaseDate: raw.releaseDate||'', releaseStatus: future ? 'upcoming' : 'released', dateEvidence: e,...(release?.precision==='month'?{verifiedReleaseWindow:{start:release.start,end:release.end}}:{}),
     ...(arrival||maisonShelf?{arrivalEvidence:raw.arrivalEvidence}:{}),...(observed?{observedArrivalAt:observedArrivalDay(raw)}:{}),...(raw.firstPublishedAt?{firstPublishedAt:raw.firstPublishedAt}:{}),
-    url: raw.url, image: raw.image, style: raw.style || '',...(raw.styleType==='official-product-id'?{styleType:raw.styleType}:{}),colorway, colors: raw.colors || [],
+    url: raw.url, image: raw.image, style: raw.style || '',...(raw.styleType==='official-product-id'?{styleType:raw.styleType}:{}),...(raw.manufacturerStyle?{manufacturerStyle:raw.manufacturerStyle}:{}),...(raw.productVariantId?{productVariantId:raw.productVariantId}:{}),colorway, colors: raw.colors || [],
     gender: raw.gender || '', material: raw.material || '', priceLabel: raw.priceLabel || '',
     description:[type.category==='sneaker'?'스니커즈':type.category==='clog'?'여름 클로그':type.category==='hybrid'?'검토된 혼합형 스니커즈':type.category==='jelly'?'플랫 젤리 슈즈':type.category==='platform-shoe'?'캐주얼 플랫폼 슈즈':'캐주얼 샌들',...fit.fitReasons].join(' · '),
     footwearStructure:raw.footwearStructure||(['jelly','platform-shoe','platform-sandal'].includes(type.category)?{category:type.category,description:raw.description,officialCategory:raw.officialCategory}:undefined),

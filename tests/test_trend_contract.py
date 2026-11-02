@@ -86,7 +86,7 @@ const a=make('a','SKU001','White'),b=make('b','SKU002','White'),c=make('c','SKU0
 const reviews={products:[a,b,c].map(p=>({id:p.id,brand:p.brand,style:p.style,originalImage:p.image,image:p.image,approved:true,noPerson:true,view:'side',sourceUrl:p.url,checkedAt:at}))};
 const run=(products,review=reviews)=>exportTrendModels({products},now,review);
 const models=run([a,b,c]);
-assert.equal(models.length,1);assert.equal(models[0].variants.length,3);assert.equal(models[0].colorVariants.length,2);
+assert.equal(models.length,1);assert.equal(models[0].variants.length,3);assert.equal(models[0].colorVariants.length,3);
 assert.deepEqual(models[0].allVariantIds,models[0].variants.map(p=>p.id));
 assert.equal(run([{...a,presentation:{image:'https://example.com/full-body.jpg',view:'side'}}]).length,0);
 assert.equal(run([{...a,image:'https://static.nike.com/replaced.jpg'}]).length,0);
@@ -111,14 +111,15 @@ assert.equal(run([{...dated,releaseDate:'2026-01-01'}]).length,0);
 assert.equal(run([{...dated,releaseDate:'2026-11-01'}]).length,0);
 assert.equal(run([{...dated,releaseDate:'2026-07',dateEvidence:{...dated.dateEvidence,precision:'month'}}]).length,0);
 const womenModels=run([{...a,gender:'Men'},{...b,gender:'Women'},{...c,gender:'Women'}]);
-assert.deepEqual(womenModels[0].allVariantIds,['b','c']);
-assert.equal(womenModels[0].colorVariants.length,2);
+assert.deepEqual(womenModels[0].allVariantIds,['a','b','c']);
+assert.equal(womenModels[0].colorVariants.length,3);
+assert.deepEqual(run([{...a,gender:'Men'},{...a,id:'same-w',gender:'Women'}],{products:[...reviews.products,{...reviews.products[0],id:'same-w'}]})[0].allVariantIds,['same-w']);
 assert.deepEqual(run([{...a,gender:'Men'}])[0].allVariantIds,['a']);
 console.log(JSON.stringify({variants:models[0].variants.length,colorVariants:models[0].colorVariants.length}));
 """
         result = subprocess.run(["node", "--input-type=module"], input=script, text=True, encoding="utf-8", capture_output=True, cwd=ROOT)
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(json.loads(result.stdout), {"variants": 3, "colorVariants": 2})
+        self.assertEqual(json.loads(result.stdout), {"variants": 3, "colorVariants": 3})
 
 
 if __name__ == "__main__":

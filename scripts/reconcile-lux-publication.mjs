@@ -2,6 +2,7 @@ import {readJson,atomicJson} from './publish-curated.mjs';
 import {canonicalUrl,classifyFootwear} from './curation.mjs';
 import {displayBrandGroup} from '../public/assets/brand-groups.mjs';
 import {fileURLToPath} from 'node:url';
+import {samePhysicalVariant} from '../public/assets/product-identity.mjs';
 
 export function reconcileLux(catalog,progress,review={held:[]},scopeReviews={products:[]}) {
  const brands=catalog.brands.filter(b=>displayBrandGroup(b)==='LUX').map(b=>b.name);
@@ -10,13 +11,14 @@ export function reconcileLux(catalog,progress,review={held:[]},scopeReviews={pro
  const held=new Map(review.held.map(p=>[p.id,p.reason]));
  const scopeExclusion=p=>scopeReviews.products?.find(r=>r.verified===true&&r.outOfScope===true&&r.id===p.id&&r.brand===p.brand&&r.style===p.style&&canonicalUrl(r.url)===canonicalUrl(p.url));
  const sneakerCategories=new Set(['sneaker','hybrid','ballet-sneaker','mary-jane-sneaker','mule-sneaker']);
- const outside=p=>{const type=classifyFootwear(p);const categoryPage=['Prada','Miu Miu'].includes(p.brand)&&/\/c\/[^/]+\.html$/.test(new URL(p.url).pathname);return categoryPage||type.category&&!sneakerCategories.has(type.category)||['kids-sizing','not-footwear','excluded-footwear'].includes(type.reason);};
+ const outside=p=>{const type=classifyFootwear(p);const categoryPage=['Prada','Miu Miu'].includes(p.brand)&&/\/c\/[^/]+\.html$/.test(new URL(p.url).pathname);return categoryPage||type.category&&!sneakerCategories.has(type.category)||['kids-sizing','not-footwear','excluded-footwear','not-product-page'].includes(type.reason);};
  return {schemaVersion:1,checkedAt:new Date().toISOString(),publishedAt:catalog.publishedAt,
   brands:brands.map(brand=>{
    const verified=(progress.products||[]).filter(p=>p.brand===brand);
    const coverage=progress.coverage?.find(c=>c.brand===brand);
    const absent=verified.filter(p=>!published.has(key(p)));
-   const excluded=absent.filter(p=>scopeExclusion(p)||outside(p)||['duplicate-product-color','duplicate-product-url'].includes(held.get(p.id))).map(p=>({id:p.id,name:p.name,url:p.url,reason:scopeExclusion(p)?.reason||held.get(p.id)||'outside-sneaker-scope'}));
+   const duplicate=p=>catalog.products.some(o=>samePhysicalVariant(o,p));
+   const excluded=absent.filter(p=>scopeExclusion(p)||outside(p)||duplicate(p)||['duplicate-product-color','duplicate-product-url'].includes(held.get(p.id))).map(p=>({id:p.id,name:p.name,url:p.url,reason:scopeExclusion(p)?.reason||(duplicate(p)?'exact-variant-published-under-another-source-id':held.get(p.id))||'outside-sneaker-scope'}));
    const excludedIds=new Set(excluded.map(p=>p.id));
    const unclassified=absent.filter(p=>!excludedIds.has(p.id)&&held.get(p.id)==='footwear-type-unverified').map(p=>({id:p.id,name:p.name,url:p.url,reason:'footwear-type-unverified'}));
    const unclassifiedIds=new Set(unclassified.map(p=>p.id));

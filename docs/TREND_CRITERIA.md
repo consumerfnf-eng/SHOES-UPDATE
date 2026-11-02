@@ -1,6 +1,6 @@
 # SHOES — MLB · DISCOVERY Research: 수집·판정 기준
 
-이 문서는 실제로 구현되어 `shoes-update.pages.dev`에 반영 중인 기준을 설명합니다. 희망 사항이 아니라 코드와 일치하는 현재 상태입니다.
+이 문서는 실제로 구현되어 `shoes-update-internal.pages.dev`에 반영 중인 기준을 설명합니다. 희망 사항이 아니라 코드와 일치하는 현재 상태입니다.
 
 ## 1. 브랜드 공식 신상품 (매주 일요일 08:00 KST, `scripts/weekly-update.mjs`)
 

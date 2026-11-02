@@ -85,8 +85,7 @@ def _same_colour(a, b):
     """
     if a.get('photoHash') and a['photoHash'] == b.get('photoHash'):
         return True
-    if a.get('bodyColor') and b.get('bodyColor'):
-        return colour_distance(a['bodyColor'], b['bodyColor']) <= COLOUR_SAME_SHOE
+    # Similar RGB values cannot prove a material/colour variant is identical.
     ca, cb = _colour_token(a), _colour_token(b)
     return bool(ca) and ca == cb
 
@@ -166,7 +165,8 @@ def _identity_keys(brand, name, style):
         keys.append(f'{canonical}|{model}')
     folded_style = _fold(style)
     if len(folded_style) >= 6 and not _colour_only(style):
-        keys.append(f'style:{folded_style}')
+        if not re.fullmatch(r'\d{6}[MFU]\d{6}', str(style or ''), re.I):
+            keys.append(f'style:{canonical}:{folded_style}')
     return keys
 
 
@@ -176,6 +176,8 @@ def official_identity_keys(catalog_path):
     keys = set()
     for product in catalog.get('products') or []:
         keys.update(_identity_keys(product.get('brand'), product.get('name'), product.get('style')))
+        if product.get('image'):
+            keys.add('photo:' + _fold(product.get('brand')) + ':' + product['image'])
     return keys
 
 
@@ -188,7 +190,11 @@ def drop_already_official(items, official_keys, status=None):
     kept, dropped = [], []
     for item in items:
         keys = _identity_keys(item.get('brand'), item.get('name'), item.get('style'))
-        hit = next((k for k in keys if k in official_keys), '')
+        # A shared model name does not establish the same physical variant.
+        # Retailer-only colours and materials must survive.
+        if item.get('image'):
+            keys.append('photo:' + _fold(item.get('brand')) + ':' + item['image'])
+        hit = next((k for k in keys if k.startswith(('style:', 'photo:')) and k in official_keys), '')
         if hit:
             dropped.append({'id': item['id'], 'brand': item.get('brand'),
                             'name': item.get('name'), 'matchedOn': hit})

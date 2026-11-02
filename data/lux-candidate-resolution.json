@@ -1,0 +1,2855 @@
+{
+  "checkedAt": "2026-11-02T07:40:20.047Z",
+  "candidates": [
+    {
+      "id": "live-534b039d7df9011e",
+      "brand": "ALOHAS",
+      "filterBrands": [
+        "ALOHAS"
+      ],
+      "category": "casual",
+      "name": "Tb.69 Rife Sheen Taupe Vegan Sneakers",
+      "url": "https://alohas.com/en-us/products/tb-69-rife-sheen-taupe-sneakers",
+      "image": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-69-rife-sheen-grey-leather-sneakers-1_a0d76567-df8c-4f09-9929-7ad1b401cc44.jpg?v=1741075070",
+      "evidence": "live_official",
+      "releaseLabel": "2026-10-06 2026 CATEGORY QA 공식 최신순 #27 · LIVE",
+      "releaseDate": "",
+      "style": "tb-69-rife-sheen-taupe-sneakers",
+      "colorway": "",
+      "colors": [],
+      "primaryColor": {
+        "name": "Taupe",
+        "hex": "#9A8878",
+        "accuracy": "approx"
+      },
+      "source": "ALOHAS Official US sneakers",
+      "note": "동일 상품 문맥에서 제품명·PDP URL·직접 제품 이미지·컬러가 함께 확인되고 2026 허용 카테고리 QA를 통과한 항목만 등록",
+      "rank": 27,
+      "productType": "sneaker",
+      "firstSeen": "2026-09-23T07:08:07.225Z",
+      "observedAt": "2026-10-06T08:59:11.773Z",
+      "status": "published",
+      "autoColor": false,
+      "modelGroup": "ALOHAS|tb 69 rife sheen taupe vegan sneakers",
+      "qaStatus": "PASS-2026-DAILY",
+      "seasonQa": "2026_CATEGORY_ELIGIBLE",
+      "imageValidation": "same-context-direct-product-image",
+      "styleType": "official-product-id",
+      "description": " Taupe satin sneakers \n The new Tb.69 sneakers, crafted from taupe satin, redefine contemporary footwear with a silhouette inspired by classic soccer boots. This style introduces a refined and streamlined profile, featuring a sleek sole with cleats for an athletic edge, complemented by matching laces. Designed as a vegan alternative, please note that the delicate satin material requires careful handling and protection to maintain its appearance. ",
+      "officialCategory": "Sneakers",
+      "productVerifiedAt": "2026-11-02T05:42:19.933Z",
+      "productEvidenceUrl": "https://alohas.com/en-us/products/tb-69-rife-sheen-taupe-sneakers.js",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-69-rife-sheen-taupe-sneakers",
+        "productUrl": "https://alohas.com/en-us/products/tb-69-rife-sheen-taupe-sneakers",
+        "kind": "official-assortment-listing",
+        "url": "https://alohas.com/en-us/products/tb-69-rife-sheen-taupe-sneakers.js",
+        "verifiedAt": "2026-11-02T05:42:19.933Z",
+        "contentHash": "6c4cda9707e571e25f5adb25bee5952b44f3dd686b7e478c94341e2f8c9d342a",
+        "excerpt": "Tb.69 Rife Sheen Taupe Vegan Sneakers"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-69-rife-sheen-taupe-sneakers",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-11-02T05:42:19.933Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6c4cda9707e571e25f5adb25bee5952b44f3dd686b7e478c94341e2f8c9d342a",
+        "url": "https://alohas.com/en-us/products/tb-69-rife-sheen-taupe-sneakers"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-69-rife-sheen-taupe-sneakers",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-11-02T05:42:19.933Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6c4cda9707e571e25f5adb25bee5952b44f3dd686b7e478c94341e2f8c9d342a",
+        "url": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-69-rife-sheen-grey-leather-sneakers-1_a0d76567-df8c-4f09-9929-7ad1b401cc44.jpg?v=1741075070",
+        "sourceUrl": "https://alohas.com/en-us/products/tb-69-rife-sheen-taupe-sneakers.js"
+      }
+    },
+    {
+      "id": "arrival-d1f3cffe3463eab3dea1",
+      "brand": "Miu Miu",
+      "name": "Gymnasium suede and shearling sneakers",
+      "url": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0F24_F_ZF05",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0F24/5E428E_Z0G_F0F24_F_ZF05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E428E_Z0G_F0F24_F_ZF05",
+      "styleType": "sku",
+      "description": "# Gymnasium suede and shearling sneakers # Gymnasium suede and shearling sneakers  The sporty essence of Gymnasium sneakers finds a new interpretation in the elegance of suede and soft sheepskin, in a seasonal variant that plays with classic references and Miu Miu's design research. * Product code: 5E428E_Z0G_F0F24_F_ZF05 * Removable shearling-covered insole * Screen-printed logo on the tongue, insole, and heel  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Desert Beige",
+      "colors": [],
+      "priceLabel": "$ 1,320",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:19.668Z",
+      "productVerifiedAt": "2026-11-02T05:42:19.668Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0F24_F_ZF05",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0F24_F_ZF05",
+        "url": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0F24_F_ZF05",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:19.668Z",
+        "contentHash": "50193c09ea5977e745bb7d3877548cc8a6ca78521c01ff6d8fd568598c14cd84",
+        "excerpt": "Current official product page",
+        "style": "5E428E_Z0G_F0F24_F_ZF05"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E428E_Z0G_F0F24_F_ZF05",
+        "verifiedAt": "2026-11-02T05:42:19.668Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "50193c09ea5977e745bb7d3877548cc8a6ca78521c01ff6d8fd568598c14cd84",
+        "url": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0F24_F_ZF05"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E428E_Z0G_F0F24_F_ZF05",
+        "verifiedAt": "2026-11-02T05:42:19.668Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "50193c09ea5977e745bb7d3877548cc8a6ca78521c01ff6d8fd568598c14cd84",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0F24/5E428E_Z0G_F0F24_F_ZF05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0F24_F_ZF05"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Gymnasium suede and shearling sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0F24/5E428E_Z0G_F0F24_F_ZF05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Gymnasium suede and shearling sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0F24/5E428E_Z0G_F0F24_F_ZF05_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Gymnasium suede and shearling sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0F24/5E428E_Z0G_F0F24_F_ZF05_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-901a73a5663bc0ec13db",
+      "brand": "Prada",
+      "name": "Prada Court suede sneakers",
+      "url": "https://www.prada.com/us/en/p/prada-court-suede-sneakers/2EE483_XTY_F0276_F_G000",
+      "image": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE483/XTYF0276/2EE483_XTY_F0276_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg",
+      "style": "2EE483_XTY_F0276_F_G000",
+      "styleType": "sku",
+      "description": " The size you selected is available  Send me a notification Enter your email address and we will notify you if the product becomes available again.   These sneakers, with a design that captures the essence of contemporary style, combine sporty functionality and minimalist elegance. Tonal details provide uniformity and sophistication to the shoe made of suede and enriched with the sleek but unmistakable geometric shape of the triangle logo.  * Product code: 2EE483_XTY_F0276_F_G000 * Conceptual triangle produced with High-Frequency embossing * Prada Milano logo embossed in front of the laces * Tread with all-over triangle pattern * Removable fabric-covered insole",
+      "colorway": "Steel Gray",
+      "colors": [],
+      "priceLabel": "$ 950",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:19.761Z",
+      "productVerifiedAt": "2026-11-02T05:42:19.761Z",
+      "productEvidenceUrl": "https://www.prada.com/us/en/p/prada-court-suede-sneakers/2EE483_XTY_F0276_F_G000",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Prada",
+        "productUrl": "https://www.prada.com/us/en/p/prada-court-suede-sneakers/2EE483_XTY_F0276_F_G000",
+        "url": "https://www.prada.com/us/en/p/prada-court-suede-sneakers/2EE483_XTY_F0276_F_G000",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:19.761Z",
+        "contentHash": "aef0248b1f65002569db2dfb563b5240639f6f7b8d7d7837058dbae6fc2bbfd3",
+        "excerpt": "Current official product page",
+        "style": "2EE483_XTY_F0276_F_G000"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Prada",
+        "style": "2EE483_XTY_F0276_F_G000",
+        "verifiedAt": "2026-11-02T05:42:19.761Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "aef0248b1f65002569db2dfb563b5240639f6f7b8d7d7837058dbae6fc2bbfd3",
+        "url": "https://www.prada.com/us/en/p/prada-court-suede-sneakers/2EE483_XTY_F0276_F_G000"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Prada",
+        "style": "2EE483_XTY_F0276_F_G000",
+        "verifiedAt": "2026-11-02T05:42:19.761Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "aef0248b1f65002569db2dfb563b5240639f6f7b8d7d7837058dbae6fc2bbfd3",
+        "url": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE483/XTYF0276/2EE483_XTY_F0276_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg",
+        "sourceUrl": "https://www.prada.com/us/en/p/prada-court-suede-sneakers/2EE483_XTY_F0276_F_G000"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Prada Court suede sneakers - Steel Gray",
+          "url": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE483/XTYF0276/2EE483_XTY_F0276_F_G000_SLR.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg"
+        },
+        {
+          "alt": "Prada Court suede sneakers - Steel Gray",
+          "url": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE483/XTYF0276/2EE483_XTY_F0276_F_G000_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg"
+        },
+        {
+          "alt": "Prada Court suede sneakers - Steel Gray",
+          "url": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE483/XTYF0276/2EE483_XTY_F0276_F_G000_SLT.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg"
+        },
+        {
+          "alt": "Prada Court suede sneakers - Steel Gray",
+          "url": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE483/XTYF0276/2EE483_XTY_F0276_F_G000_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg"
+        },
+        {
+          "alt": "Prada Court suede sneakers - Steel Gray",
+          "url": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE483/XTYF0276/2EE483_XTY_F0276_F_G000_SLD.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg"
+        },
+        {
+          "alt": "Prada Court suede sneakers - Steel Gray",
+          "url": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE483/XTYF0276/2EE483_XTY_F0276_F_G000_SLDA.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg"
+        },
+        {
+          "alt": "Prada Court suede sneakers - Steel Gray",
+          "url": "https://www.prada.com/content/dam/pradabkg_products/2/2EE/2EE483/XTYF0276/2EE483_XTY_F0276_F_G000_MDLA.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "live-1994f833eb71980d",
+      "brand": "ALOHAS",
+      "filterBrands": [
+        "ALOHAS"
+      ],
+      "category": "casual",
+      "name": "Tb.69 Rife Sheen Brown Vegan Sneakers",
+      "url": "https://alohas.com/en-us/products/tb-69-rife-sheen-brown-sneakers",
+      "image": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-69-rife-sheen-brown-leather-sneakers-1.jpg?v=1739266187",
+      "evidence": "live_official",
+      "releaseLabel": "2026-10-06 2026 CATEGORY QA 공식 최신순 #29 · LIVE",
+      "releaseDate": "",
+      "style": "tb-69-rife-sheen-brown-sneakers",
+      "colorway": "",
+      "colors": [],
+      "primaryColor": {
+        "name": "Brown",
+        "hex": "#654A3B",
+        "accuracy": "approx"
+      },
+      "source": "ALOHAS Official US sneakers",
+      "note": "동일 상품 문맥에서 제품명·PDP URL·직접 제품 이미지·컬러가 함께 확인되고 2026 허용 카테고리 QA를 통과한 항목만 등록",
+      "rank": 29,
+      "productType": "sneaker",
+      "firstSeen": "2026-09-23T07:08:07.218Z",
+      "observedAt": "2026-10-06T08:59:11.783Z",
+      "status": "published",
+      "autoColor": false,
+      "modelGroup": "ALOHAS|tb 69 rife sheen brown vegan sneakers",
+      "qaStatus": "PASS-2026-DAILY",
+      "seasonQa": "2026_CATEGORY_ELIGIBLE",
+      "imageValidation": "same-context-direct-product-image",
+      "styleType": "official-product-id",
+      "description": " Brown satin sneakers \n The new Tb.69 sneakers, crafted from brown satin, redefine contemporary footwear with a silhouette inspired by classic soccer boots. This style introduces a refined and streamlined profile, featuring a sleek sole with cleats for an athletic edge, complemented by matching laces. Designed as a vegan alternative, please note that the delicate satin material requires careful handling and protection to maintain its appearance. ",
+      "officialCategory": "Sneakers",
+      "productVerifiedAt": "2026-11-02T05:42:21.867Z",
+      "productEvidenceUrl": "https://alohas.com/en-us/products/tb-69-rife-sheen-brown-sneakers.js",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-69-rife-sheen-brown-sneakers",
+        "productUrl": "https://alohas.com/en-us/products/tb-69-rife-sheen-brown-sneakers",
+        "kind": "official-assortment-listing",
+        "url": "https://alohas.com/en-us/products/tb-69-rife-sheen-brown-sneakers.js",
+        "verifiedAt": "2026-11-02T05:42:21.867Z",
+        "contentHash": "96ef58b442610a1517e4a1e51c07f90484cf148f355b2db44314eec18420c6c1",
+        "excerpt": "Tb.69 Rife Sheen Brown Vegan Sneakers"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-69-rife-sheen-brown-sneakers",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-11-02T05:42:21.867Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "96ef58b442610a1517e4a1e51c07f90484cf148f355b2db44314eec18420c6c1",
+        "url": "https://alohas.com/en-us/products/tb-69-rife-sheen-brown-sneakers"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-69-rife-sheen-brown-sneakers",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-11-02T05:42:21.867Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "96ef58b442610a1517e4a1e51c07f90484cf148f355b2db44314eec18420c6c1",
+        "url": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-69-rife-sheen-brown-leather-sneakers-1.jpg?v=1739266187",
+        "sourceUrl": "https://alohas.com/en-us/products/tb-69-rife-sheen-brown-sneakers.js"
+      }
+    },
+    {
+      "id": "arrival-598d466e9bb9821c29da",
+      "brand": "Givenchy",
+      "name": "Givenchy Puffy Yard sneakers in nappa leather",
+      "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-116.html",
+      "image": "https://assets.givenchy.com/asset/438cced8-d431-429a-a4e1-5543c07a2cbc/High-Resolution-JPG/BE004YE2K9116-03-02.jpg?imwidth=1500",
+      "style": "BE004YE2K9-116",
+      "styleType": "sku",
+      "description": "# Givenchy Puffy Yard sneakers in nappa leather  Add to Bag Product added to bag  * Ground day delivery within 4-6 business days - Free * Express delivery within 2 business days - $15 * Next day air delivery within 1-2 business days - $20 * Saturday delivery for the orders placed on Friday before 2:00 pm ET (subject to postal code eligibility for this service) - $20 * Premium delivery service only in New York City, messenger service between 11.00 am and 6.00 pm, Monday through Saturday - $25 * Free returns online or in-store within 14 days   Our team of advisors will assist you in English or Spanish from Monday to Saturday from 10:00 am to 9:00 pm (Eastern time) (toll-free number for all calls from USA).  All fields marked with an * are mandatory.   Product details Care Information Contact us Free shipping & returns Complimentary gift wrapping  * Low bicolor sneakers in puffy nappa lambskin. * Tonal Givenchy Paris label on the tongue. * Givenchy Paris-engraved silvery-finish metal piece on the front. * Debossed Givenchy signature on the side of the sole. * Tonal detail with debossed Givenchy Paris signature on the heel. * Givenchy Paris signature printed on the leather insole. * Raised Givenchy signature under the sole. * Elastic for easy slip-on without fastening. * Quilted construction for optimal comfort.  Discover the Givenchy Puffy Yard sneakers, a soft, voluminous take on classic low-top sneakers, reinterpreting everyday footwear in bicolor puffy nappa leather. These women’s sneakers combine a quilted construction offering a padded silhouette and optimal comfort, with an elastic insert for easy slip-on wear. Tonal Givenchy Paris signatures are subtly layered throughout the design, while a silvery-finish metal detail on the front contrasts with the bicolor leather. Featuring a rubber sole, these designer sneakers blend everyday ease with a relaxed attitude. Teamed with tailored pants, jeans or dresses, these black and white sneakers bring a distinctive finishing touch to versatile looks.  100% lambskin leather. Lining: 100% polyamide.  Our team of advisors will assist you in English or Spanish from Monday to Saturday from 10:00 am to 9:00 pm (Eastern time) (toll-free number for all calls from USA).  Each pair of shoes crafted in our workshops is unique, made from exceptional materials. These materials, carefully selected over several years, require regular maintenance to fully appreciate their beauty and comfort over time.  To preserve their brilliance, we recommend avoiding exposure to heat and light sources, as well as contact with liquid or chemical products such as perfumes, creams, household detergents, etc.  When not in use, we advise storing your Givenchy shoes carefully in their original packaging, in a dry and cool place. Moisture could damage them.  Feel free to visit our dedicated page or contact our Givenchy teams directly if you would like further information.  Our team of advisors will assist you in English or Spanish from Monday to Saturday from 10:00 am to 9:00 pm (Eastern time) (toll-free number for all calls from USA).  All fields marked with an * are mandatory.   Area code +1 +12423 +12463 +12643 +12683 +12843 +13 +13403 +13453 +14413 +14733 +16493 +16643 +16703 +16713 +16843 +17213 +17583 +17673 +17843 +1787 +1809 +1829 +18493 +18683 +18693 +18763 +19393 +20 +211 +212 +213 +216 +218 +220 +221 +222 +223 +224 +225 +226 +227 +228 +229 +230 +231 +232 +233 +234 +235 +236 +237 +238 +239 +240 +241 +242 +243 +244 +245 +246 +247 +248 +249 +250 +251 +252 +253 +254 +255 +256 +257 +258 +260 +261 +262 +263 +264 +265 +266 +267 +268 +269 +27 +290 +291 +297 +298 +299 +30 +31 +32 +33 +34 +350 +351 +352 +353 +354 +355 +356 +357 +358 +359 +36 +370 +371 +372 +373 +374 +375 +376 +377 +378 +379 +380 +381 +382 +383 +385 +386 +387 +389 +39 +40 +41 +420 +421 +423 +43 +44 +45 +46 +47 +48 +49 +500 +501 +502 +503 +504 +505 +506 +507 +508 +509 +51 +52 +53 +54 +55 +56 +57 +58 +590 +591 +592 +593 +594 +595 +596 +597 +598 +599 +60 +61 +62 +63 +64 +65 +66 +670 +672 +673 +674 +675 +676 +677 +678 +679 +680 +681 +682 +683 +685 +686 +687 +688 +689 +690 +691 +692 +7 +800 +81 +82 +84 +850 +852 +853 +855 +856 +86 +880 +881 +886 +90 +91 +92 +93 +94 +95 +960 +961 +962 +963 +964 +965 +966 +967 +968 +970 +971 +972 +973 +974 +975 +976 +977 +98 +992 +993 +994 +995 +996 +998   Country / Region Afghanistan Albania Algeria American Samoa Andorra Angola Anguilla Antarctica Antigua and Barbuda Argentina Armenia Aruba Australia Austria Azerbaijan Bahamas Bahrain Bangladesh Barbados Belarus Belgium Belize Benin Bermuda Bhutan Bolivia Bosnia and Herzegovina Botswana Bouvet Island Brazil British Indian Ocean Territory British Virgin Islands Brunei Darussalam Bulgaria Burkina Faso Burma Burundi Cambodia Cameroon Canada Cape Verde Cayman Islands Central African Republic Chad Chili China Mainland Christmas Island Coconut Islands Colombia Comoros Cook Islands Costa Rica Croatia Cuba Cyprus Czech Republic Democratic Republic of Congo Denmark Djibouti Dominica Dominican Republic East Timor East Timor Ecuador Egypt El Salvador Equatorial Guinea Eritrea Estonia Ethiopia Falkland Islands Faroe Islands Fiji Finland France French Polynesia French Southern and Antarctic Lands Gabon Gambia Georgia Germany Ghana Gibraltar Granada Greece Greenland Guadeloupe Guam Guatemala Guinea Guinea-Bissau Guyana Guyana Haiti Heard and McDonald Islands Honduras Hong Kong SAR Hungary Iceland India Indonesia Iran Iraq Ireland Israel Italy Ivory Coast Jamaica Japan Jordan Kazakhstan Kenya Kiribati Kuwait Kyrgyzstan Laos Latvia Lebanon Lesotho Liberia Libya Liechtenstein Lithuania Luxembourg Macau SAR Macedonia Madagascar Malawi Malaysia Maldives Mali Malta Marshall Islands Martinique Mauritania Mauritius Mayotte Mexico Micronesia Moldova Monaco Mongolia Montenegro Montserrat Morocco Mozambique Namibia Nauru Nepal Netherlands Netherlands Antilles New Caledonia New Zealand Nicaragua Nigeria Nigeria Niue Norfolk Island North Korea Northern Mariana Is",
+      "colorway": "white/black",
+      "colors": [],
+      "priceLabel": "$950",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:19.783Z",
+      "productVerifiedAt": "2026-11-02T05:42:19.783Z",
+      "productEvidenceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-116.html",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "productUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-116.html",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-116.html",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:19.783Z",
+        "contentHash": "9bb03dce487c8f85a7d78f515a244ecaee2181728a24f3db4fee1d3d9b5d7356",
+        "excerpt": "Current official product page",
+        "style": "BE004YE2K9-116"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BE004YE2K9-116",
+        "verifiedAt": "2026-11-02T05:42:19.783Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "9bb03dce487c8f85a7d78f515a244ecaee2181728a24f3db4fee1d3d9b5d7356",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-116.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BE004YE2K9-116",
+        "verifiedAt": "2026-11-02T05:42:19.783Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "9bb03dce487c8f85a7d78f515a244ecaee2181728a24f3db4fee1d3d9b5d7356",
+        "url": "https://assets.givenchy.com/asset/438cced8-d431-429a-a4e1-5543c07a2cbc/High-Resolution-JPG/BE004YE2K9116-03-02.jpg?imwidth=1500",
+        "sourceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-116.html"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-1, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/438cced8-d431-429a-a4e1-5543c07a2cbc/High-Resolution-JPG/BE004YE2K9116-03-02.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-2, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/958096e8-6470-49b0-85d0-6a2e3b297199/High-Resolution-JPG/BE004YE2K9116-03-04.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-3, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/f474c82a-3cff-406c-830c-0ac0db039bc9/High-Resolution-JPG/BE004YE2K9116-03-05.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-4, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/ddb6a03a-3a11-4f98-a215-0ba5ba5b4c9a/High-Resolution-JPG/BE004YE2K9116-03-12.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-5, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/0fc70b94-e451-4c15-98fa-3764bf0085e9/High-Resolution-JPG/BE004YE2K9116-03-15.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-1, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/438cced8-d431-429a-a4e1-5543c07a2cbc/High-Resolution-JPG/BE004YE2K9116-03-02.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-2, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/958096e8-6470-49b0-85d0-6a2e3b297199/High-Resolution-JPG/BE004YE2K9116-03-04.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-3, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/f474c82a-3cff-406c-830c-0ac0db039bc9/High-Resolution-JPG/BE004YE2K9116-03-05.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-4, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/ddb6a03a-3a11-4f98-a215-0ba5ba5b4c9a/High-Resolution-JPG/BE004YE2K9116-03-12.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-5, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/0fc70b94-e451-4c15-98fa-3764bf0085e9/High-Resolution-JPG/BE004YE2K9116-03-15.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Select Color: WHITE/BLACK",
+          "url": "https://assets.givenchy.com/asset/438cced8-d431-429a-a4e1-5543c07a2cbc/High-Resolution-JPG/BE004YE2K9116-03-02.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather",
+          "url": "https://assets.givenchy.com/asset/958096e8-6470-49b0-85d0-6a2e3b297199/High-Resolution-JPG/BE004YE2K9116-03-04.jpg?imwidth=1500"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-0c1ce39e079a0d287572",
+      "brand": "Miu Miu",
+      "name": "Gymnasium suede and shearling sneakers",
+      "url": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0003_F_ZF05",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0003/5E428E_Z0G_F0003_F_ZF05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E428E_Z0G_F0003_F_ZF05",
+      "styleType": "sku",
+      "description": "# Gymnasium suede and shearling sneakers # Gymnasium suede and shearling sneakers  The sporty essence of Gymnasium sneakers finds a new interpretation in the elegance of suede and soft sheepskin, in a seasonal variant that plays with classic references and Miu Miu's design research. * Product code: 5E428E_Z0G_F0003_F_ZF05 * Removable shearling-covered insole * Screen-printed logo on the tongue, insole, and heel  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Dark Brown",
+      "colors": [],
+      "priceLabel": "$ 1,320",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:22.068Z",
+      "productVerifiedAt": "2026-11-02T05:42:22.068Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0003_F_ZF05",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0003_F_ZF05",
+        "url": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0003_F_ZF05",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:22.068Z",
+        "contentHash": "2a22a033351db8cd111949b4d23c0bf3cafa9ebc4f3c3f22a63d046a8f0af195",
+        "excerpt": "Current official product page",
+        "style": "5E428E_Z0G_F0003_F_ZF05"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E428E_Z0G_F0003_F_ZF05",
+        "verifiedAt": "2026-11-02T05:42:22.068Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "2a22a033351db8cd111949b4d23c0bf3cafa9ebc4f3c3f22a63d046a8f0af195",
+        "url": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0003_F_ZF05"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E428E_Z0G_F0003_F_ZF05",
+        "verifiedAt": "2026-11-02T05:42:22.068Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "2a22a033351db8cd111949b4d23c0bf3cafa9ebc4f3c3f22a63d046a8f0af195",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0003/5E428E_Z0G_F0003_F_ZF05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0003_F_ZF05"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Gymnasium suede and shearling sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0003/5E428E_Z0G_F0003_F_ZF05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Gymnasium suede and shearling sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0003/5E428E_Z0G_F0003_F_ZF05_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Gymnasium suede and shearling sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0003/5E428E_Z0G_F0003_F_ZF05_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Gymnasium suede and shearling sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E428E/Z0GF0003/5E428E_Z0G_F0003_F_ZF05_MDLA.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "brand": "ALOHAS",
+      "name": "Tb.25 Chocolate Brown Sneakers",
+      "url": "https://alohas.com/en-us/products/tb-25-chocolate-brown-sneakers",
+      "images": [
+        {
+          "alt": "Image 49: Tb.25 Chocolate Brown Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-25-chocolate-brown-sneakers-8.jpg?v=1768402624&width=1946"
+        },
+        {
+          "alt": "Image 51: Tb.25 Chocolate Brown Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-25-chocolate-brown-sneakers-20.jpg?v=1768468452&width=1946"
+        },
+        {
+          "alt": "Image 53: Tb.25 Chocolate Brown Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-25-chocolate-brown-sneakers-5.jpg?v=1768468552&width=1946"
+        },
+        {
+          "alt": "Image 55: Tb.25 Chocolate Brown Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-25-chocolate-brown-sneakers-1.jpg?v=1768468552&width=1946"
+        },
+        {
+          "alt": "Image 57: Tb.25 Chocolate Brown Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-25-chocolate-brown-sneakers-2.jpg?v=1768468452&width=1946"
+        },
+        {
+          "alt": "Image 59: Tb.25 Chocolate Brown Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-25-chocolate-brown-sneakers-3.jpg?v=1768468452&width=1946"
+        },
+        {
+          "alt": "Image 60: chocolate brown",
+          "url": "https://alohas.com/cdn/shop/files/miniature_S101266-07_200x.png?v=7026111360939995265"
+        }
+      ],
+      "linkedImages": [],
+      "cardDescription": "British Indian Ocean Territory",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-25-chocolate-brown-sneakers",
+        "productUrl": "https://alohas.com/en-us/products/tb-25-chocolate-brown-sneakers",
+        "kind": "official-assortment-listing",
+        "url": "https://alohas.com/en-us/products/tb-25-chocolate-brown-sneakers.js",
+        "verifiedAt": "2026-11-02T05:42:24.160Z",
+        "contentHash": "70d55cec3ff409203f23aa33c543e7f667975be3c61ed2d5d7ab35c99daa0d77",
+        "excerpt": "Tb.25 Chocolate Brown Sneakers"
+      },
+      "id": "alohas-10283808129360",
+      "style": "tb-25-chocolate-brown-sneakers",
+      "styleType": "official-product-id",
+      "image": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-25-chocolate-brown-sneakers-8.jpg?v=1768402624",
+      "description": " Chocolate brown suede and nylon sneakers \n The Tb.25 sneakers bring a softer perspective to everyday footwear. Crafted from a mix of chocolate brown suede and nylon, it combines a lightweight feel with a relaxed, low-profile silhouette. Finished with expressive stitching and white contrast round laces, it keeps things simple and gets on with it. They tend to stay on longer than planned. ",
+      "officialCategory": "Sneakers",
+      "colors": [],
+      "colorway": "",
+      "productVerifiedAt": "2026-11-02T05:42:24.160Z",
+      "productEvidenceUrl": "https://alohas.com/en-us/products/tb-25-chocolate-brown-sneakers.js",
+      "firstSeen": "2026-11-02T05:42:24.160Z",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-25-chocolate-brown-sneakers",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-11-02T05:42:24.160Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "70d55cec3ff409203f23aa33c543e7f667975be3c61ed2d5d7ab35c99daa0d77",
+        "url": "https://alohas.com/en-us/products/tb-25-chocolate-brown-sneakers"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-25-chocolate-brown-sneakers",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-11-02T05:42:24.160Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "70d55cec3ff409203f23aa33c543e7f667975be3c61ed2d5d7ab35c99daa0d77",
+        "url": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-25-chocolate-brown-sneakers-8.jpg?v=1768402624",
+        "sourceUrl": "https://alohas.com/en-us/products/tb-25-chocolate-brown-sneakers.js"
+      },
+      "status": "published"
+    },
+    {
+      "id": "arrival-4e21f5a0c3568eecc48b",
+      "brand": "Miu Miu",
+      "name": "Suede and shearling sneakers",
+      "url": "https://www.miumiu.com/us/en/p/suede-and-shearling-sneakers/5E389E_Z0G_F0F24_F_ZF05",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E3/5E389E/Z0GF0F24/5E389E_Z0G_F0F24_F_ZF05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E389E_Z0G_F0F24_F_ZF05",
+      "styleType": "sku",
+      "description": " These practical and casual sneakers with a bold platform sole express the season's character in a suede version with shearling lining, which adds a sophisticated and elegant twist to their distinctive identity. * Product code: 5E389E_Z0G_F0F24_F_ZF05 * Removable leather-covered insole * Screen-printed logo on tongue and insole  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Desert Beige",
+      "colors": [],
+      "priceLabel": "$ 1,320",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:24.553Z",
+      "productVerifiedAt": "2026-11-02T05:42:24.553Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/suede-and-shearling-sneakers/5E389E_Z0G_F0F24_F_ZF05",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/suede-and-shearling-sneakers/5E389E_Z0G_F0F24_F_ZF05",
+        "url": "https://www.miumiu.com/us/en/p/suede-and-shearling-sneakers/5E389E_Z0G_F0F24_F_ZF05",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:24.553Z",
+        "contentHash": "065343ff1647505b1a046346a9a2d2a847c77afd8fa7f9422c9b227a580c47a6",
+        "excerpt": "Current official product page",
+        "style": "5E389E_Z0G_F0F24_F_ZF05"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E389E_Z0G_F0F24_F_ZF05",
+        "verifiedAt": "2026-11-02T05:42:24.553Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "065343ff1647505b1a046346a9a2d2a847c77afd8fa7f9422c9b227a580c47a6",
+        "url": "https://www.miumiu.com/us/en/p/suede-and-shearling-sneakers/5E389E_Z0G_F0F24_F_ZF05"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E389E_Z0G_F0F24_F_ZF05",
+        "verifiedAt": "2026-11-02T05:42:24.553Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "065343ff1647505b1a046346a9a2d2a847c77afd8fa7f9422c9b227a580c47a6",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E3/5E389E/Z0GF0F24/5E389E_Z0G_F0F24_F_ZF05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/suede-and-shearling-sneakers/5E389E_Z0G_F0F24_F_ZF05"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Suede and shearling sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E3/5E389E/Z0GF0F24/5E389E_Z0G_F0F24_F_ZF05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Suede and shearling sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E3/5E389E/Z0GF0F24/5E389E_Z0G_F0F24_F_ZF05_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Suede and shearling sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E3/5E389E/Z0GF0F24/5E389E_Z0G_F0F24_F_ZF05_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "brand": "ALOHAS",
+      "name": "Tb.24 Suede Chocolate Brown Leather Sneakers",
+      "url": "https://alohas.com/en-us/products/tb-24-suede-chocolate-brown-leather-sneakers",
+      "images": [
+        {
+          "alt": "Image 59: Tb.24 Suede Chocolate Brown Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-24-suede-chocolate-brown-leather-sneakers-1.jpg?v=1763377015&width=1946"
+        },
+        {
+          "alt": "Image 61: Tb.24 Suede Chocolate Brown Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-24-suede-chocolate-brown-leather-sneakers-20.jpg?v=1763385285&width=1946"
+        },
+        {
+          "alt": "Image 63: Tb.24 Suede Chocolate Brown Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-24-suede-chocolate-brown-leather-sneakers-6.jpg?v=1763385285&width=1946"
+        },
+        {
+          "alt": "Image 65: Tb.24 Suede Chocolate Brown Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-24-suede-chocolate-brown-leather-sneakers-5.jpg?v=1763463312&width=1946"
+        },
+        {
+          "alt": "Image 67: Tb.24 Suede Chocolate Brown Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-24-suede-chocolate-brown-leather-sneakers-3.jpg?v=1763385285&width=1946"
+        },
+        {
+          "alt": "Image 69: Tb.24 Suede Chocolate Brown Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-24-suede-chocolate-brown-leather-sneakers-4.jpg?v=1763463316&width=1946"
+        },
+        {
+          "alt": "Image 71: Tb.24 Suede Chocolate Brown Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-24-suede-chocolate-brown-leather-sneakers-2.jpg?v=1763385285&width=1946"
+        },
+        {
+          "alt": "Image 72: chocolate brown",
+          "url": "https://alohas.com/cdn/shop/files/miniature_S101120-03_200x.png?v=7969359400314290494"
+        }
+      ],
+      "linkedImages": [],
+      "cardDescription": "Tb.24 Suede Chocolate Brown Leather Sneakers",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-24-suede-chocolate-brown-leather-sneakers",
+        "productUrl": "https://alohas.com/en-us/products/tb-24-suede-chocolate-brown-leather-sneakers",
+        "kind": "official-assortment-listing",
+        "url": "https://alohas.com/en-us/products/tb-24-suede-chocolate-brown-leather-sneakers.js",
+        "verifiedAt": "2026-11-02T05:42:26.044Z",
+        "contentHash": "7ab9baa073122074365515d68ad9db9dcc43f70d4918f79b89525d73d36fa3c9",
+        "excerpt": "Tb.24 Suede Chocolate Brown Leather Sneakers"
+      },
+      "id": "alohas-10187276976464",
+      "style": "tb-24-suede-chocolate-brown-leather-sneakers",
+      "styleType": "official-product-id",
+      "image": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-24-suede-chocolate-brown-leather-sneakers-1.jpg?v=1763377015",
+      "description": " Chocolate brown minimalist sneakers \n The TB.24 sneakers are crafted from chocolate brown leather in a minimalist silhouette defined by clean monochrome panels and subtle stitching. Designed with a slim, brown rubber sole that enhances their sleek profile, they come with two sets of laces—one tonal and one striped white—for versatile styling.  ",
+      "officialCategory": "Sneakers",
+      "colors": [],
+      "colorway": "",
+      "productVerifiedAt": "2026-11-02T05:42:26.044Z",
+      "productEvidenceUrl": "https://alohas.com/en-us/products/tb-24-suede-chocolate-brown-leather-sneakers.js",
+      "firstSeen": "2026-11-02T05:42:26.044Z",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-24-suede-chocolate-brown-leather-sneakers",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-11-02T05:42:26.044Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "7ab9baa073122074365515d68ad9db9dcc43f70d4918f79b89525d73d36fa3c9",
+        "url": "https://alohas.com/en-us/products/tb-24-suede-chocolate-brown-leather-sneakers"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-24-suede-chocolate-brown-leather-sneakers",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-11-02T05:42:26.044Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "7ab9baa073122074365515d68ad9db9dcc43f70d4918f79b89525d73d36fa3c9",
+        "url": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-24-suede-chocolate-brown-leather-sneakers-1.jpg?v=1763377015",
+        "sourceUrl": "https://alohas.com/en-us/products/tb-24-suede-chocolate-brown-leather-sneakers.js"
+      },
+      "status": "published"
+    },
+    {
+      "id": "arrival-f591e8d62e776fdd3515",
+      "brand": "Givenchy",
+      "name": "Givenchy Puffy Yard sneakers in nappa leather",
+      "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-100.html",
+      "image": "https://assets.givenchy.com/asset/6f7a8085-cd66-443e-9fe5-fdc0f6b9f42e/High-Resolution-JPG/BE004YE2K9100-03-02.jpg?imwidth=1500",
+      "style": "BE004YE2K9-100",
+      "styleType": "sku",
+      "description": "# Givenchy Puffy Yard sneakers in nappa leather  Add to Bag Product added to bag  * Ground day delivery within 4-6 business days - Free * Express delivery within 2 business days - $15 * Next day air delivery within 1-2 business days - $20 * Saturday delivery for the orders placed on Friday before 2:00 pm ET (subject to postal code eligibility for this service) - $20 * Premium delivery service only in New York City, messenger service between 11.00 am and 6.00 pm, Monday through Saturday - $25 * Free returns online or in-store within 14 days   Our team of advisors will assist you in English or Spanish from Monday to Saturday from 10:00 am to 9:00 pm (Eastern time) (toll-free number for all calls from USA).  All fields marked with an * are mandatory.   Product details Care Information Contact us Free shipping & returns Complimentary gift wrapping  * Low sneakers in puffy nappa lambskin. * Tonal Givenchy Paris label on the tongue. * Givenchy Paris-engraved silvery-finish metal piece on the front. * Debossed Givenchy signature on the side of the sole. * Tonal detail with debossed Givenchy Paris signature on the heel. * Givenchy Paris signature printed on the leather insole. * Raised Givenchy signature under the sole. * Elastic for easy slip-on without fastening. * Quilted construction for optimal comfort.  Discover the Givenchy Puffy Yard sneakers, a soft, voluminous take on classic low-top sneakers, reinterpreting everyday footwear in puffy nappa leather. These women’s sneakers combine a quilted construction offering a padded silhouette and optimal comfort, with an elastic insert for easy slip-on wear. Tonal Givenchy Paris signatures are subtly layered throughout the design, while a silvery-finish metal detail on the front contrasts with the white leather. Featuring a rubber sole, these white designer sneakers blend everyday ease with a relaxed attitude. Teamed with tailored pants, jeans or dresses, these white sneakers bring a distinctive finishing touch to versatile looks.  100% lambskin leather. Lining: 100% polyamide.  Our team of advisors will assist you in English or Spanish from Monday to Saturday from 10:00 am to 9:00 pm (Eastern time) (toll-free number for all calls from USA).  Each pair of shoes crafted in our workshops is unique, made from exceptional materials. These materials, carefully selected over several years, require regular maintenance to fully appreciate their beauty and comfort over time.  To preserve their brilliance, we recommend avoiding exposure to heat and light sources, as well as contact with liquid or chemical products such as perfumes, creams, household detergents, etc.  When not in use, we advise storing your Givenchy shoes carefully in their original packaging, in a dry and cool place. Moisture could damage them.  Feel free to visit our dedicated page or contact our Givenchy teams directly if you would like further information.  Our team of advisors will assist you in English or Spanish from Monday to Saturday from 10:00 am to 9:00 pm (Eastern time) (toll-free number for all calls from USA).  All fields marked with an * are mandatory.   Area code +1 +12423 +12463 +12643 +12683 +12843 +13 +13403 +13453 +14413 +14733 +16493 +16643 +16703 +16713 +16843 +17213 +17583 +17673 +17843 +1787 +1809 +1829 +18493 +18683 +18693 +18763 +19393 +20 +211 +212 +213 +216 +218 +220 +221 +222 +223 +224 +225 +226 +227 +228 +229 +230 +231 +232 +233 +234 +235 +236 +237 +238 +239 +240 +241 +242 +243 +244 +245 +246 +247 +248 +249 +250 +251 +252 +253 +254 +255 +256 +257 +258 +260 +261 +262 +263 +264 +265 +266 +267 +268 +269 +27 +290 +291 +297 +298 +299 +30 +31 +32 +33 +34 +350 +351 +352 +353 +354 +355 +356 +357 +358 +359 +36 +370 +371 +372 +373 +374 +375 +376 +377 +378 +379 +380 +381 +382 +383 +385 +386 +387 +389 +39 +40 +41 +420 +421 +423 +43 +44 +45 +46 +47 +48 +49 +500 +501 +502 +503 +504 +505 +506 +507 +508 +509 +51 +52 +53 +54 +55 +56 +57 +58 +590 +591 +592 +593 +594 +595 +596 +597 +598 +599 +60 +61 +62 +63 +64 +65 +66 +670 +672 +673 +674 +675 +676 +677 +678 +679 +680 +681 +682 +683 +685 +686 +687 +688 +689 +690 +691 +692 +7 +800 +81 +82 +84 +850 +852 +853 +855 +856 +86 +880 +881 +886 +90 +91 +92 +93 +94 +95 +960 +961 +962 +963 +964 +965 +966 +967 +968 +970 +971 +972 +973 +974 +975 +976 +977 +98 +992 +993 +994 +995 +996 +998   Country / Region Afghanistan Albania Algeria American Samoa Andorra Angola Anguilla Antarctica Antigua and Barbuda Argentina Armenia Aruba Australia Austria Azerbaijan Bahamas Bahrain Bangladesh Barbados Belarus Belgium Belize Benin Bermuda Bhutan Bolivia Bosnia and Herzegovina Botswana Bouvet Island Brazil British Indian Ocean Territory British Virgin Islands Brunei Darussalam Bulgaria Burkina Faso Burma Burundi Cambodia Cameroon Canada Cape Verde Cayman Islands Central African Republic Chad Chili China Mainland Christmas Island Coconut Islands Colombia Comoros Cook Islands Costa Rica Croatia Cuba Cyprus Czech Republic Democratic Republic of Congo Denmark Djibouti Dominica Dominican Republic East Timor East Timor Ecuador Egypt El Salvador Equatorial Guinea Eritrea Estonia Ethiopia Falkland Islands Faroe Islands Fiji Finland France French Polynesia French Southern and Antarctic Lands Gabon Gambia Georgia Germany Ghana Gibraltar Granada Greece Greenland Guadeloupe Guam Guatemala Guinea Guinea-Bissau Guyana Guyana Haiti Heard and McDonald Islands Honduras Hong Kong SAR Hungary Iceland India Indonesia Iran Iraq Ireland Israel Italy Ivory Coast Jamaica Japan Jordan Kazakhstan Kenya Kiribati Kuwait Kyrgyzstan Laos Latvia Lebanon Lesotho Liberia Libya Liechtenstein Lithuania Luxembourg Macau SAR Macedonia Madagascar Malawi Malaysia Maldives Mali Malta Marshall Islands Martinique Mauritania Mauritius Mayotte Mexico Micronesia Moldova Monaco Mongolia Montenegro Montserrat Morocco Mozambique Namibia Nauru Nepal Netherlands Netherlands Antilles New Caledonia New Zealand Nicaragua Nigeria Nigeria Niue Norfolk Island North Korea Northern Mariana Islands Norway Oman Oran",
+      "colorway": "white",
+      "colors": [],
+      "priceLabel": "$950",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:23.767Z",
+      "productVerifiedAt": "2026-11-02T05:42:23.767Z",
+      "productEvidenceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-100.html",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "productUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-100.html",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-100.html",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:23.767Z",
+        "contentHash": "8d7f19d554d4b50fe48730776bd9208987539ca353e9c36748dd980350d7b015",
+        "excerpt": "Current official product page",
+        "style": "BE004YE2K9-100"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BE004YE2K9-100",
+        "verifiedAt": "2026-11-02T05:42:23.767Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "8d7f19d554d4b50fe48730776bd9208987539ca353e9c36748dd980350d7b015",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-100.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BE004YE2K9-100",
+        "verifiedAt": "2026-11-02T05:42:23.767Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "8d7f19d554d4b50fe48730776bd9208987539ca353e9c36748dd980350d7b015",
+        "url": "https://assets.givenchy.com/asset/6f7a8085-cd66-443e-9fe5-fdc0f6b9f42e/High-Resolution-JPG/BE004YE2K9100-03-02.jpg?imwidth=1500",
+        "sourceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-100.html"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-1, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/6f7a8085-cd66-443e-9fe5-fdc0f6b9f42e/High-Resolution-JPG/BE004YE2K9100-03-02.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-2, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/395a6133-1ba9-441f-b76d-128f43a36a2f/High-Resolution-JPG/BE004YE2K9100-03-04.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-3, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/bdd0423f-1cf6-4fb7-aa7f-276392e21eac/High-Resolution-JPG/BE004YE2K9100-03-05.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-4, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/c98ffe6f-a6de-4a33-ae84-6dde3d14e375/High-Resolution-JPG/BE004YE2K9100-03-12.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-5, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/1dd570d2-1996-4426-857d-a4d6bb30a779/High-Resolution-JPG/BE004YE2K9100-03-15.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-1, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/6f7a8085-cd66-443e-9fe5-fdc0f6b9f42e/High-Resolution-JPG/BE004YE2K9100-03-02.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-2, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/395a6133-1ba9-441f-b76d-128f43a36a2f/High-Resolution-JPG/BE004YE2K9100-03-04.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-3, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/bdd0423f-1cf6-4fb7-aa7f-276392e21eac/High-Resolution-JPG/BE004YE2K9100-03-05.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-4, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/c98ffe6f-a6de-4a33-ae84-6dde3d14e375/High-Resolution-JPG/BE004YE2K9100-03-12.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-5, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/1dd570d2-1996-4426-857d-a4d6bb30a779/High-Resolution-JPG/BE004YE2K9100-03-15.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Select Color: white",
+          "url": "https://assets.givenchy.com/asset/6f7a8085-cd66-443e-9fe5-fdc0f6b9f42e/High-Resolution-JPG/BE004YE2K9100-03-02.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather",
+          "url": "https://assets.givenchy.com/asset/395a6133-1ba9-441f-b76d-128f43a36a2f/High-Resolution-JPG/BE004YE2K9100-03-04.jpg?imwidth=1500"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-54e651baf54dd330b1bd",
+      "brand": "Miu Miu",
+      "name": "Bubble technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0003_F_A045",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0003/5E806E_3M0K_F0003_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E806E_3M0K_F0003_F_A045",
+      "styleType": "sku",
+      "description": "# Bubble technical fabric and suede sneakers # Bubble technical fabric and suede sneakers  The Miu Miu archive of the early 2000s inspired the new Bubble sneakers with a bold, contemporary personality. The sole with a distinctive pattern adds volume to the soft, fluid lines. The contrast between the technical fabric and suede completes the silhouette with refined textures.  * Product code: 5E806E_3M0K_F0003_F_A045 * Logo embroidered on the upper and screen-printed on the insole and heel counter  Main material: Recycled Polyamide  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Dark Brown",
+      "colors": [],
+      "priceLabel": "$ 1,170",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:26.853Z",
+      "productVerifiedAt": "2026-11-02T05:42:26.853Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0003_F_A045",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0003_F_A045",
+        "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0003_F_A045",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:26.853Z",
+        "contentHash": "6bd0852339b32d11459df217028850925840e110dfcd52ca3c6ec7e4032ea9f1",
+        "excerpt": "Current official product page",
+        "style": "5E806E_3M0K_F0003_F_A045"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E806E_3M0K_F0003_F_A045",
+        "verifiedAt": "2026-11-02T05:42:26.853Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "6bd0852339b32d11459df217028850925840e110dfcd52ca3c6ec7e4032ea9f1",
+        "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0003_F_A045"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E806E_3M0K_F0003_F_A045",
+        "verifiedAt": "2026-11-02T05:42:26.853Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "6bd0852339b32d11459df217028850925840e110dfcd52ca3c6ec7e4032ea9f1",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0003/5E806E_3M0K_F0003_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0003_F_A045"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Bubble technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0003/5E806E_3M0K_F0003_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Bubble technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0003/5E806E_3M0K_F0003_F_A045_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Bubble technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0003/5E806E_3M0K_F0003_F_A045_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "brand": "ALOHAS",
+      "name": "Tb.99 Silver Leather Sneakers",
+      "url": "https://alohas.com/en-us/products/tb-99-silver-leather-sneakers",
+      "images": [
+        {
+          "alt": "Image 35",
+          "url": "https://brxcdn.com/eu2-app-storage/fc2770b0-f286-11ef-9ee4-7eaf68de5be4/media/original/5bee3344-746d-11f1-bf7c-9e021921996a"
+        },
+        {
+          "alt": "Image 60: Tb.99 Silver Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-99-silver-leather-sneakers-2.jpg?v=1745397861&width=1946"
+        },
+        {
+          "alt": "Image 62: Tb.99 Silver Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-99-silver-leather-sneakers-28.jpg?v=1749544731&width=1946"
+        },
+        {
+          "alt": "Image 64: Tb.99 Silver Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-99-silver-leather-sneakers-8.jpg?v=1748858381&width=1946"
+        },
+        {
+          "alt": "Image 66: Tb.99 Silver Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-99-silver-leather-sneakers-1.jpg?v=1748858381&width=1946"
+        },
+        {
+          "alt": "Image 68: Tb.99 Silver Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-99-silver-leather-sneakers-7.jpg?v=1748858381&width=1946"
+        },
+        {
+          "alt": "Image 70: Tb.99 Silver Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-99-silver-leather-sneakers-3.jpg?v=1748858381&width=1946"
+        },
+        {
+          "alt": "Image 72: Tb.99 Silver Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-99-silver-leather-sneakers-5.jpg?v=1748858381&width=1946"
+        },
+        {
+          "alt": "Image 74: Tb.99 Silver Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-99-silver-leather-sneakers-20.jpg?v=1748858381&width=1946"
+        },
+        {
+          "alt": "Image 76: Tb.99 Silver Leather Sneakers",
+          "url": "https://alohas.com/cdn/shop/files/tb-99-silver-leather-sneakers-4.jpg?v=1748858381&width=1946"
+        }
+      ],
+      "linkedImages": [],
+      "cardDescription": "British Indian Ocean Territory",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-99-silver-leather-sneakers",
+        "productUrl": "https://alohas.com/en-us/products/tb-99-silver-leather-sneakers",
+        "kind": "official-assortment-listing",
+        "url": "https://alohas.com/en-us/products/tb-99-silver-leather-sneakers.js",
+        "verifiedAt": "2026-11-02T05:42:27.922Z",
+        "contentHash": "ffa810b910f72408820683fc821fa081899768d81de917c45227ef42645e8e6e",
+        "excerpt": "Tb.99 Silver Leather Sneakers"
+      },
+      "id": "alohas-9739299782992",
+      "style": "tb-99-silver-leather-sneakers",
+      "styleType": "official-product-id",
+      "image": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-99-silver-leather-sneakers-2.jpg?v=1745397861",
+      "description": " Padded low-top metallic silver sneakers with fold-over tongue \n The TB.99 sneakers take inspiration from classic soccer boots, blending a sporty approach with contemporary flair. Crafted from metallic silver leather, they feature matching stitching and laces for a unified look. The cushioned silhouette is enhanced by a long tongue that folds over the laces, adding character. Finished with studs, this design brings a bold, statement finish. ",
+      "officialCategory": "Sneakers",
+      "colors": [],
+      "colorway": "",
+      "productVerifiedAt": "2026-11-02T05:42:27.922Z",
+      "productEvidenceUrl": "https://alohas.com/en-us/products/tb-99-silver-leather-sneakers.js",
+      "firstSeen": "2026-11-02T05:42:27.922Z",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-99-silver-leather-sneakers",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-11-02T05:42:27.922Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "ffa810b910f72408820683fc821fa081899768d81de917c45227ef42645e8e6e",
+        "url": "https://alohas.com/en-us/products/tb-99-silver-leather-sneakers"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ALOHAS",
+        "style": "tb-99-silver-leather-sneakers",
+        "identifierType": "official-product-id",
+        "verifiedAt": "2026-11-02T05:42:27.922Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "ffa810b910f72408820683fc821fa081899768d81de917c45227ef42645e8e6e",
+        "url": "https://cdn.shopify.com/s/files/1/0762/7039/files/tb-99-silver-leather-sneakers-2.jpg?v=1745397861",
+        "sourceUrl": "https://alohas.com/en-us/products/tb-99-silver-leather-sneakers.js"
+      },
+      "status": "published"
+    },
+    {
+      "id": "arrival-69b0f1d6e8f998a676d0",
+      "brand": "Givenchy",
+      "name": "Givenchy Puffy Yard sneakers in nappa leather",
+      "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2KP-657.html",
+      "image": "https://assets.givenchy.com/asset/121e2f37-fc0c-4fa8-a12a-4b44828111b1/High-Resolution-JPG/BE004YE2KP657-03-02.jpg?imwidth=1500",
+      "style": "BE004YE2KP-657",
+      "styleType": "sku",
+      "description": "# Givenchy Puffy Yard sneakers in nappa leather  Add to Bag Product added to bag  * Ground day delivery within 4-6 business days - Free * Express delivery within 2 business days - $15 * Next day air delivery within 1-2 business days - $20 * Saturday delivery for the orders placed on Friday before 2:00 pm ET (subject to postal code eligibility for this service) - $20 * Premium delivery service only in New York City, messenger service between 11.00 am and 6.00 pm, Monday through Saturday - $25 * Free returns online or in-store within 14 days   Our team of advisors will assist you in English or Spanish from Monday to Saturday from 10:00 am to 9:00 pm (Eastern time) (toll-free number for all calls from USA).  All fields marked with an * are mandatory.   Product details Care Information Contact us Free shipping & returns Complimentary gift wrapping  * Low sneakers in puffy nappa lambskin. * Tonal Givenchy Paris label on the tongue. * Givenchy Paris-engraved silvery-finish metal piece on the front. * Debossed Givenchy signature on the side of the sole. * Tonal detail with debossed Givenchy Paris signature on the heel. * Givenchy Paris signature printed on the leather insole. * Raised Givenchy signature under the sole. * Elastic for easy slip-on without fastening. * Quilted construction for optimal comfort.  Discover the Givenchy Puffy Yard sneakers, a soft, voluminous take on classic low-top sneakers, reinterpreting everyday footwear in nude pink puffy nappa leather. These women’s sneakers combine a quilted construction offering a padded silhouette and optimal comfort, with an elastic insert for easy slip-on wear. Tonal Givenchy Paris signatures are subtly layered throughout the design, while a silvery-finish metal detail on the front contrasts with the pink leather. Featuring a rubber sole, these designer sneakers blend everyday ease with a relaxed attitude. Teamed with tailored pants, jeans or dresses, these nude sneakers bring a distinctive finishing touch to versatile looks.  Our team of advisors will assist you in English or Spanish from Monday to Saturday from 10:00 am to 9:00 pm (Eastern time) (toll-free number for all calls from USA).  Each pair of shoes crafted in our workshops is unique, made from exceptional materials. These materials, carefully selected over several years, require regular maintenance to fully appreciate their beauty and comfort over time.  To preserve their brilliance, we recommend avoiding exposure to heat and light sources, as well as contact with liquid or chemical products such as perfumes, creams, household detergents, etc.  When not in use, we advise storing your Givenchy shoes carefully in their original packaging, in a dry and cool place. Moisture could damage them.  Feel free to visit our dedicated page or contact our Givenchy teams directly if you would like further information.  Our team of advisors will assist you in English or Spanish from Monday to Saturday from 10:00 am to 9:00 pm (Eastern time) (toll-free number for all calls from USA).  All fields marked with an * are mandatory.   Area code +1 +12423 +12463 +12643 +12683 +12843 +13 +13403 +13453 +14413 +14733 +16493 +16643 +16703 +16713 +16843 +17213 +17583 +17673 +17843 +1787 +1809 +1829 +18493 +18683 +18693 +18763 +19393 +20 +211 +212 +213 +216 +218 +220 +221 +222 +223 +224 +225 +226 +227 +228 +229 +230 +231 +232 +233 +234 +235 +236 +237 +238 +239 +240 +241 +242 +243 +244 +245 +246 +247 +248 +249 +250 +251 +252 +253 +254 +255 +256 +257 +258 +260 +261 +262 +263 +264 +265 +266 +267 +268 +269 +27 +290 +291 +297 +298 +299 +30 +31 +32 +33 +34 +350 +351 +352 +353 +354 +355 +356 +357 +358 +359 +36 +370 +371 +372 +373 +374 +375 +376 +377 +378 +379 +380 +381 +382 +383 +385 +386 +387 +389 +39 +40 +41 +420 +421 +423 +43 +44 +45 +46 +47 +48 +49 +500 +501 +502 +503 +504 +505 +506 +507 +508 +509 +51 +52 +53 +54 +55 +56 +57 +58 +590 +591 +592 +593 +594 +595 +596 +597 +598 +599 +60 +61 +62 +63 +64 +65 +66 +670 +672 +673 +674 +675 +676 +677 +678 +679 +680 +681 +682 +683 +685 +686 +687 +688 +689 +690 +691 +692 +7 +800 +81 +82 +84 +850 +852 +853 +855 +856 +86 +880 +881 +886 +90 +91 +92 +93 +94 +95 +960 +961 +962 +963 +964 +965 +966 +967 +968 +970 +971 +972 +973 +974 +975 +976 +977 +98 +992 +993 +994 +995 +996 +998   Country / Region Afghanistan Albania Algeria American Samoa Andorra Angola Anguilla Antarctica Antigua and Barbuda Argentina Armenia Aruba Australia Austria Azerbaijan Bahamas Bahrain Bangladesh Barbados Belarus Belgium Belize Benin Bermuda Bhutan Bolivia Bosnia and Herzegovina Botswana Bouvet Island Brazil British Indian Ocean Territory British Virgin Islands Brunei Darussalam Bulgaria Burkina Faso Burma Burundi Cambodia Cameroon Canada Cape Verde Cayman Islands Central African Republic Chad Chili China Mainland Christmas Island Coconut Islands Colombia Comoros Cook Islands Costa Rica Croatia Cuba Cyprus Czech Republic Democratic Republic of Congo Denmark Djibouti Dominica Dominican Republic East Timor East Timor Ecuador Egypt El Salvador Equatorial Guinea Eritrea Estonia Ethiopia Falkland Islands Faroe Islands Fiji Finland France French Polynesia French Southern and Antarctic Lands Gabon Gambia Georgia Germany Ghana Gibraltar Granada Greece Greenland Guadeloupe Guam Guatemala Guinea Guinea-Bissau Guyana Guyana Haiti Heard and McDonald Islands Honduras Hong Kong SAR Hungary Iceland India Indonesia Iran Iraq Ireland Israel Italy Ivory Coast Jamaica Japan Jordan Kazakhstan Kenya Kiribati Kuwait Kyrgyzstan Laos Latvia Lebanon Lesotho Liberia Libya Liechtenstein Lithuania Luxembourg Macau SAR Macedonia Madagascar Malawi Malaysia Maldives Mali Malta Marshall Islands Martinique Mauritania Mauritius Mayotte Mexico Micronesia Moldova Monaco Mongolia Montenegro Montserrat Morocco Mozambique Namibia Nauru Nepal Netherlands Netherlands Antilles New Caledonia New Zealand Nicaragua Nigeria Nigeria Niue Norfolk Island North Korea Northern Mariana Islands Norway Oman Orange Pakistan Palau Palestine Panama Papua New G",
+      "colorway": "nude pink",
+      "colors": [],
+      "priceLabel": "$950",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:27.883Z",
+      "productVerifiedAt": "2026-11-02T05:42:27.883Z",
+      "productEvidenceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2KP-657.html",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "productUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2KP-657.html",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2KP-657.html",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:27.883Z",
+        "contentHash": "1bf686b4072f986466e9d085e5cc7a89c0e943e6042f00c3344d33e5ee24c506",
+        "excerpt": "Current official product page",
+        "style": "BE004YE2KP-657"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BE004YE2KP-657",
+        "verifiedAt": "2026-11-02T05:42:27.883Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "1bf686b4072f986466e9d085e5cc7a89c0e943e6042f00c3344d33e5ee24c506",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2KP-657.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BE004YE2KP-657",
+        "verifiedAt": "2026-11-02T05:42:27.883Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "1bf686b4072f986466e9d085e5cc7a89c0e943e6042f00c3344d33e5ee24c506",
+        "url": "https://assets.givenchy.com/asset/121e2f37-fc0c-4fa8-a12a-4b44828111b1/High-Resolution-JPG/BE004YE2KP657-03-02.jpg?imwidth=1500",
+        "sourceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2KP-657.html"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-1, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/121e2f37-fc0c-4fa8-a12a-4b44828111b1/High-Resolution-JPG/BE004YE2KP657-03-02.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-2, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/de60239c-c87a-4593-a5fe-719572b75d74/High-Resolution-JPG/BE004YE2KP657-03-04.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-3, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/d05c865a-2118-47ca-9b92-54ae6df5cc15/High-Resolution-JPG/BE004YE2KP657-03-05.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-4, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/af414a5e-0043-42e1-8dbc-6605ddbf3488/High-Resolution-JPG/BE004YE2KP657-03-12.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-5, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/36e82083-f24b-45ae-9689-7fc836cdbeea/High-Resolution-JPG/BE004YE2KP657-03-15.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-1, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/121e2f37-fc0c-4fa8-a12a-4b44828111b1/High-Resolution-JPG/BE004YE2KP657-03-02.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-2, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/de60239c-c87a-4593-a5fe-719572b75d74/High-Resolution-JPG/BE004YE2KP657-03-04.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-3, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/d05c865a-2118-47ca-9b92-54ae6df5cc15/High-Resolution-JPG/BE004YE2KP657-03-05.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-4, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/af414a5e-0043-42e1-8dbc-6605ddbf3488/High-Resolution-JPG/BE004YE2KP657-03-12.jpg?imwidth=1500"
+        },
+        {
+          "alt": "Givenchy Puffy Yard sneakers in nappa leather View-5, Display in full screen",
+          "url": "https://assets.givenchy.com/asset/36e82083-f24b-45ae-9689-7fc836cdbeea/High-Resolution-JPG/BE004YE2KP657-03-15.jpg?imwidth=1500"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-fe726e9bc2c83b5a24dc",
+      "brand": "Miu Miu",
+      "name": "Bubble technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0424_F_A045",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0424/5E806E_3M0K_F0424_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E806E_3M0K_F0424_F_A045",
+      "styleType": "sku",
+      "description": "# Bubble technical fabric and suede sneakers # Bubble technical fabric and suede sneakers  The Miu Miu archive of the early 2000s inspired the new Bubble sneakers with a bold, contemporary personality. The sole with a distinctive pattern adds volume to the soft, fluid lines. The contrast between the technical fabric and suede completes the silhouette with refined textures.  * Product code: 5E806E_3M0K_F0424_F_A045 * Logo embroidered on the upper and screen-printed on the insole and heel counter  Main material: Recycled Polyamide  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Cloudy Gray",
+      "colors": [],
+      "priceLabel": "$ 1,170",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:29.237Z",
+      "productVerifiedAt": "2026-11-02T05:42:29.237Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0424_F_A045",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0424_F_A045",
+        "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0424_F_A045",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:29.237Z",
+        "contentHash": "7b6b8a3e42be8b3080698383fbd0bd643f68af481420b3f2029577ad2ca5c736",
+        "excerpt": "Current official product page",
+        "style": "5E806E_3M0K_F0424_F_A045"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E806E_3M0K_F0424_F_A045",
+        "verifiedAt": "2026-11-02T05:42:29.237Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "7b6b8a3e42be8b3080698383fbd0bd643f68af481420b3f2029577ad2ca5c736",
+        "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0424_F_A045"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E806E_3M0K_F0424_F_A045",
+        "verifiedAt": "2026-11-02T05:42:29.237Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "7b6b8a3e42be8b3080698383fbd0bd643f68af481420b3f2029577ad2ca5c736",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0424/5E806E_3M0K_F0424_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0424_F_A045"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Bubble technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0424/5E806E_3M0K_F0424_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Bubble technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0424/5E806E_3M0K_F0424_F_A045_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Bubble technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0424/5E806E_3M0K_F0424_F_A045_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-9921546b1ed54f472421",
+      "brand": "Miu Miu",
+      "name": "Bubble technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0304_F_A045",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0304/5E806E_3M0K_F0304_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E806E_3M0K_F0304_F_A045",
+      "styleType": "sku",
+      "description": "# Bubble technical fabric and suede sneakers # Bubble technical fabric and suede sneakers  The Miu Miu archive of the early 2000s inspired the new Bubble sneakers with a bold, contemporary personality. The sole with a distinctive pattern adds volume to the soft, fluid lines. The contrast between the technical fabric and suede completes the silhouette with refined textures.  * Product code: 5E806E_3M0K_F0304_F_A045 * Logo embroidered on the upper and screen-printed on the insole and heel counter  Main material: Recycled Polyamide  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Ivory",
+      "colors": [],
+      "priceLabel": "$ 1,170",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:31.651Z",
+      "productVerifiedAt": "2026-11-02T05:42:31.651Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0304_F_A045",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0304_F_A045",
+        "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0304_F_A045",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:31.651Z",
+        "contentHash": "cb0b5e2903977a978c7cf5e5106c71c509fb212cb3f42223d7641471b22da3f0",
+        "excerpt": "Current official product page",
+        "style": "5E806E_3M0K_F0304_F_A045"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E806E_3M0K_F0304_F_A045",
+        "verifiedAt": "2026-11-02T05:42:31.651Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "cb0b5e2903977a978c7cf5e5106c71c509fb212cb3f42223d7641471b22da3f0",
+        "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0304_F_A045"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E806E_3M0K_F0304_F_A045",
+        "verifiedAt": "2026-11-02T05:42:31.651Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "cb0b5e2903977a978c7cf5e5106c71c509fb212cb3f42223d7641471b22da3f0",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0304/5E806E_3M0K_F0304_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0304_F_A045"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Bubble technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0304/5E806E_3M0K_F0304_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Bubble technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0304/5E806E_3M0K_F0304_F_A045_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Bubble technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E806E/3M0KF0304/5E806E_3M0K_F0304_F_A045_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-3e9644729fcc0c46fcd0",
+      "brand": "Miu Miu",
+      "name": "Bubble embroidered technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0007_F_A045",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E808E/3ZR4F0007/5E808E_3ZR4_F0007_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E808E_3ZR4_F0007_F_A045",
+      "styleType": "sku",
+      "description": "# Bubble embroidered technical fabric and suede sneakers # Bubble embroidered technical fabric and suede sneakers  The Miu Miu archive of the early 2000s inspired the new Bubble sneakers with a bold, contemporary personality. The sole with a distinctive pattern adds volume to the soft, fluid lines. The contrast between the technical fabric and delicate embroidery with crystals and sequins adds a luminous and refined touch to the design.  * Product code: 5E808E_3ZR4_F0007_F_A045 * Upper embroidered with crystals and sequins * Logo embroidered on the upper and screen-printed on the insole and heel counter  Main material: Recycled Polyamide  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Burgundy",
+      "colors": [],
+      "priceLabel": "$ 2,300",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:33.967Z",
+      "productVerifiedAt": "2026-11-02T05:42:33.967Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0007_F_A045",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0007_F_A045",
+        "url": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0007_F_A045",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:33.967Z",
+        "contentHash": "5c4a8ed229813fb6e2ad615b54efc30fb17c290c09cb1d18a442251c5565d6e5",
+        "excerpt": "Current official product page",
+        "style": "5E808E_3ZR4_F0007_F_A045"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E808E_3ZR4_F0007_F_A045",
+        "verifiedAt": "2026-11-02T05:42:33.967Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "5c4a8ed229813fb6e2ad615b54efc30fb17c290c09cb1d18a442251c5565d6e5",
+        "url": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0007_F_A045"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E808E_3ZR4_F0007_F_A045",
+        "verifiedAt": "2026-11-02T05:42:33.967Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "5c4a8ed229813fb6e2ad615b54efc30fb17c290c09cb1d18a442251c5565d6e5",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E808E/3ZR4F0007/5E808E_3ZR4_F0007_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0007_F_A045"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Bubble embroidered technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E808E/3ZR4F0007/5E808E_3ZR4_F0007_F_A045_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Bubble embroidered technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E808E/3ZR4F0007/5E808E_3ZR4_F0007_F_A045_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Bubble embroidered technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E8/5E808E/3ZR4F0007/5E808E_3ZR4_F0007_F_A045_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-7883b9b12a643961deb2",
+      "brand": "Miu Miu",
+      "name": "New Balance X Miu Miu 530 SL sneakers in printed leather and technical fabric",
+      "url": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-sneakers-in-printed-leather-and-technical-fabric/5E165E_3ZS1_F0D23_F_BB05",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E165E/3ZS1F0D23/5E165E_3ZS1_F0D23_F_BB05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E165E_3ZS1_F0D23_F_BB05",
+      "styleType": "sku",
+      "description": "# New Balance X Miu Miu 530 SL sneakers in printed leather and technical fabric # New Balance X Miu Miu 530 SL sneakers in printed leather and technical fabric  The New Balance X Miu Miu collection draws inspiration from sportswear, reinterpreted through functional materials and refined details. In this version, the 530 SL sneakers combine animal-print leather with the lightness of technical fabric, expressing Miu Miu's experimental approach to design. The double lace detail adds an iconic touch, creating a balance between contrasting elements and a casual attitude. * Product code: 5E165E_3ZS1_F0D23_F_BB05 * Leather and fabric lace-up fastening * Removable fabric-covered insole * Screen-printed logo on the tongue, heel tab, and insole  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Honey/Brown",
+      "colors": [],
+      "priceLabel": "$ 1,320",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:38.618Z",
+      "productVerifiedAt": "2026-11-02T05:42:38.618Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-sneakers-in-printed-leather-and-technical-fabric/5E165E_3ZS1_F0D23_F_BB05",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-sneakers-in-printed-leather-and-technical-fabric/5E165E_3ZS1_F0D23_F_BB05",
+        "url": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-sneakers-in-printed-leather-and-technical-fabric/5E165E_3ZS1_F0D23_F_BB05",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:38.618Z",
+        "contentHash": "12a2336b80353c3d4b42f6746fe11410c0c067c5a828d40828ad4f4f3df5cb7b",
+        "excerpt": "Current official product page",
+        "style": "5E165E_3ZS1_F0D23_F_BB05"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E165E_3ZS1_F0D23_F_BB05",
+        "verifiedAt": "2026-11-02T05:42:38.618Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "12a2336b80353c3d4b42f6746fe11410c0c067c5a828d40828ad4f4f3df5cb7b",
+        "url": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-sneakers-in-printed-leather-and-technical-fabric/5E165E_3ZS1_F0D23_F_BB05"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E165E_3ZS1_F0D23_F_BB05",
+        "verifiedAt": "2026-11-02T05:42:38.618Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "12a2336b80353c3d4b42f6746fe11410c0c067c5a828d40828ad4f4f3df5cb7b",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E165E/3ZS1F0D23/5E165E_3ZS1_F0D23_F_BB05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-sneakers-in-printed-leather-and-technical-fabric/5E165E_3ZS1_F0D23_F_BB05"
+      },
+      "imageCandidates": [
+        {
+          "alt": "New Balance X Miu Miu 530 SL sneakers in printed leather and technical fabric",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E165E/3ZS1F0D23/5E165E_3ZS1_F0D23_F_BB05_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "New Balance X Miu Miu 530 SL sneakers in printed leather and technical fabric",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E165E/3ZS1F0D23/5E165E_3ZS1_F0D23_F_BB05_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "New Balance X Miu Miu 530 SL sneakers in printed leather and technical fabric",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E165E/3ZS1F0D23/5E165E_3ZS1_F0D23_F_BB05_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-386c1636b46e553ae1d7",
+      "brand": "Miu Miu",
+      "name": "Tyre technical fabric sneakers",
+      "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-sneakers/5T848E_FKS_F063H_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5T8/5T848E/FKSF063H/5T848E_FKS_F063H_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5T848E_FKS_F063H_F_005",
+      "styleType": "sku",
+      "description": "# Tyre technical fabric sneakers # Tyre technical fabric sneakers  The iconic Tyre sneakers evolve through new sporting inspirations, reinterpreting the silhouette with outdoor references and a mountain-inspired aesthetic. Technical fabric combines with rubber inserts and laces enhanced by metal details, accentuating their functional character. Refined colour combinations complete the design, expressing Miu Miu’s bold and distinctive attitude. * Product code: 5T848E_FKS_F063H_F_005 * Upper with metal D-ring eyelets * Removable fabric-covered insole * Screen-printed logo on the tongue, heel counter, and insole  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Hematite",
+      "colors": [],
+      "priceLabel": "$ 1,250",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:41.006Z",
+      "productVerifiedAt": "2026-11-02T05:42:41.006Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-sneakers/5T848E_FKS_F063H_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-sneakers/5T848E_FKS_F063H_F_005",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-sneakers/5T848E_FKS_F063H_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:41.006Z",
+        "contentHash": "6c4bbe335d660b12d38f596c37bb95acd396eac215d8712f243a2dcfa03b57f3",
+        "excerpt": "Current official product page",
+        "style": "5T848E_FKS_F063H_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5T848E_FKS_F063H_F_005",
+        "verifiedAt": "2026-11-02T05:42:41.006Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "6c4bbe335d660b12d38f596c37bb95acd396eac215d8712f243a2dcfa03b57f3",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-sneakers/5T848E_FKS_F063H_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5T848E_FKS_F063H_F_005",
+        "verifiedAt": "2026-11-02T05:42:41.006Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "6c4bbe335d660b12d38f596c37bb95acd396eac215d8712f243a2dcfa03b57f3",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5T8/5T848E/FKSF063H/5T848E_FKS_F063H_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-sneakers/5T848E_FKS_F063H_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Tyre technical fabric sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5T8/5T848E/FKSF063H/5T848E_FKS_F063H_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5T8/5T848E/FKSF063H/5T848E_FKS_F063H_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5T8/5T848E/FKSF063H/5T848E_FKS_F063H_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-ac8b9dcb760e22169858",
+      "brand": "Miu Miu",
+      "name": "Tyre technical fabric and leather sneakers",
+      "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0242_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0242/5E760E_FKS_F0242_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E760E_FKS_F0242_F_005",
+      "styleType": "sku",
+      "description": "# Tyre technical fabric and leather sneakers # Tyre technical fabric and leather sneakers  Inspired by classic hiking boots, the silhouette of these Tyre sneakers stands out for the lightness of the technical fabric and the iconic two-tone laces, striking a perfect balance between a sporty spirit and an urban attitude. * Product code: 5E760E_FKS_F0242_F_005 * Removable fabric-covered insole * Screen-printed logo on the tongue and heel tab  Main material: Recycled Polyamide  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Raw White",
+      "colors": [],
+      "priceLabel": "$ 1,200",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:43.430Z",
+      "productVerifiedAt": "2026-11-02T05:42:43.430Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0242_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0242_F_005",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0242_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:43.430Z",
+        "contentHash": "b5eae888a992c52f1c1aeb07fc9fa3f69093ded52f7139d2038321b7f1b55aad",
+        "excerpt": "Current official product page",
+        "style": "5E760E_FKS_F0242_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E760E_FKS_F0242_F_005",
+        "verifiedAt": "2026-11-02T05:42:43.430Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "b5eae888a992c52f1c1aeb07fc9fa3f69093ded52f7139d2038321b7f1b55aad",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0242_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E760E_FKS_F0242_F_005",
+        "verifiedAt": "2026-11-02T05:42:43.430Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "b5eae888a992c52f1c1aeb07fc9fa3f69093ded52f7139d2038321b7f1b55aad",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0242/5E760E_FKS_F0242_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0242_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Tyre technical fabric and leather sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0242/5E760E_FKS_F0242_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and leather sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0242/5E760E_FKS_F0242_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and leather sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0242/5E760E_FKS_F0242_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-1e6ec8a25d8f30fc1866",
+      "brand": "Moncler",
+      "name": "Moncler Altive Nubuck & Suede Sneakers",
+      "url": "https://www.moncler.com/en-us/women/shoes/sneakers/moncler-altive-nubuck-and-suede-sneakers-white-L209B4M00150N0565001.html",
+      "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_1/image/moncler-altive-nubuck-and-suede-sneakers-women-white-moncler-1.jpg?w=1300&q_auto=highest",
+      "style": "L209B4M00150N0565001",
+      "styleType": "sku",
+      "description": "# Moncler Altive Nubuck & Suede Sneakers  An elevated take on the city sneaker, the Moncler Altive for women are crafted from nubuck and suede.  Comfort and protection meet in an effortless way in the Moncler Altive sneakers. The plush style boasts a nubuck and suede upper, paired with an EVA midsole for flexibility, while the Vibram tread offer optimal balance of traction and stability. OrthoLite® insoles enhance the shoe's breathability, provide long-term cushioning and are easily washable.  Product code: L209B4M00150N0565001 * Nylon, nubuck and suede upper  Over-packing and folds can permanently ruin embroideries, artwork, pearls, studs, leather inserts and other delicate parts. We advise careful storage and to take the piece out from storage and let it breathe from time to time.  The care icons have been updated in line with the latest regulations  UPPER: 100% Polyamide / Nylon; SOLE: 100% Elastodiene;UPPER: COW; LINING: COW",
+      "colorway": "White",
+      "colors": [],
+      "priceLabel": "$650.00",
+      "country": "US",
+      "gender": "Women",
+      "firstSeen": "2026-11-02T05:42:19.734Z",
+      "productVerifiedAt": "2026-11-02T05:42:19.734Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/moncler-altive-nubuck-and-suede-sneakers-white-L209B4M00150N0565001.html",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "productUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/moncler-altive-nubuck-and-suede-sneakers-white-L209B4M00150N0565001.html",
+        "url": "https://www.moncler.com/en-us/women/shoes/sneakers/moncler-altive-nubuck-and-suede-sneakers-white-L209B4M00150N0565001.html",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:19.734Z",
+        "contentHash": "0c7670a94cd231d921d78a17095eb00d6ab78046427f0570e402617d8811046d",
+        "excerpt": "Current official product page",
+        "style": "L209B4M00150N0565001"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "style": "L209B4M00150N0565001",
+        "verifiedAt": "2026-11-02T05:42:19.734Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "0c7670a94cd231d921d78a17095eb00d6ab78046427f0570e402617d8811046d",
+        "url": "https://www.moncler.com/en-us/women/shoes/sneakers/moncler-altive-nubuck-and-suede-sneakers-white-L209B4M00150N0565001.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "style": "L209B4M00150N0565001",
+        "verifiedAt": "2026-11-02T05:42:19.734Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "0c7670a94cd231d921d78a17095eb00d6ab78046427f0570e402617d8811046d",
+        "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_1/image/moncler-altive-nubuck-and-suede-sneakers-women-white-moncler-1.jpg?w=1300&q_auto=highest",
+        "sourceUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/moncler-altive-nubuck-and-suede-sneakers-white-L209B4M00150N0565001.html"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler 0",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_F/image/moncler-altive-nubuck-and-suede-sneakers-women-white-moncler-0.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler 1",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_1/image/moncler-altive-nubuck-and-suede-sneakers-women-white-moncler-1.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler 2",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_2/image/moncler-altive-nubuck-and-suede-sneakers-women-white-moncler-2.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler 3",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_3/image/moncler-altive-nubuck-and-suede-sneakers-women-white-moncler-3.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler 4",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_4/image/moncler-altive-nubuck-and-suede-sneakers-women-white-moncler-4.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler 5",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_5/image/moncler-altive-nubuck-and-suede-sneakers-women-white-moncler-5.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler 6",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_6/image/moncler-altive-nubuck-and-suede-sneakers-women-white-moncler-6.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler 7",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_7/image/moncler-altive-nubuck-and-suede-sneakers-women-white-moncler-7.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_F/image/L209B4M00150N0565001_F"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_F/image/L209B4M00150N0565001_F"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_F/image/L209B4M00150N0565001_F"
+        },
+        {
+          "alt": "Moncler Altive Nubuck & Suede Sneakers Women White Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00150N0565001_F/image/L209B4M00150N0565001_F"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-d43c8be3113be0eb2f00",
+      "brand": "Miu Miu",
+      "name": "Tyre technical fabric and leather sneakers",
+      "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0161_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0161/5E760E_FKS_F0161_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E760E_FKS_F0161_F_005",
+      "styleType": "sku",
+      "description": "# Tyre technical fabric and leather sneakers # Tyre technical fabric and leather sneakers  Inspired by classic hiking boots, the silhouette of these Tyre sneakers stands out for the lightness of the technical fabric and the iconic two-tone laces, striking a perfect balance between a sporty spirit and an urban attitude. * Product code: 5E760E_FKS_F0161_F_005 * Removable fabric-covered insole * Screen-printed logo on the tongue and heel tab  Main material: Recycled Polyamide  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Forest Green",
+      "colors": [],
+      "priceLabel": "$ 1,200",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:45.964Z",
+      "productVerifiedAt": "2026-11-02T05:42:45.964Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0161_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0161_F_005",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0161_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:45.964Z",
+        "contentHash": "a9c79cdf431e7aed24885549fcf0545f809f1715fc44071596a6abedcddc4fec",
+        "excerpt": "Current official product page",
+        "style": "5E760E_FKS_F0161_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E760E_FKS_F0161_F_005",
+        "verifiedAt": "2026-11-02T05:42:45.964Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "a9c79cdf431e7aed24885549fcf0545f809f1715fc44071596a6abedcddc4fec",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0161_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E760E_FKS_F0161_F_005",
+        "verifiedAt": "2026-11-02T05:42:45.964Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "a9c79cdf431e7aed24885549fcf0545f809f1715fc44071596a6abedcddc4fec",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0161/5E760E_FKS_F0161_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0161_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Tyre technical fabric and leather sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0161/5E760E_FKS_F0161_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and leather sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0161/5E760E_FKS_F0161_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and leather sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0161/5E760E_FKS_F0161_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-dda78125e3c79bac848f",
+      "brand": "Miu Miu",
+      "name": "Plume suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0008_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0008/5E114E_054_F0008_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E114E_054_F0008_F_005",
+      "styleType": "sku",
+      "description": " Refined workmanship and materials meet the sleek and extremely light design in these new Miu Miu suede sneakers. The logo stands out on the tongue and on the back thanks to its iconic character. * Product code: 5E114E_054_F0008_F_005 * Screen-printed logo on the tongue and heel * Removable leather-covered insole  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Navy",
+      "colors": [],
+      "priceLabel": "$ 995",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:48.297Z",
+      "productVerifiedAt": "2026-11-02T05:42:48.297Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0008_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0008_F_005",
+        "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0008_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:48.297Z",
+        "contentHash": "20c9e82b72ea801dbdec2d65d88e415c570811a1d1a7bd633f3f64eedcfe8e70",
+        "excerpt": "Current official product page",
+        "style": "5E114E_054_F0008_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_054_F0008_F_005",
+        "verifiedAt": "2026-11-02T05:42:48.297Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "20c9e82b72ea801dbdec2d65d88e415c570811a1d1a7bd633f3f64eedcfe8e70",
+        "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0008_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_054_F0008_F_005",
+        "verifiedAt": "2026-11-02T05:42:48.297Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "20c9e82b72ea801dbdec2d65d88e415c570811a1d1a7bd633f3f64eedcfe8e70",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0008/5E114E_054_F0008_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0008_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0008/5E114E_054_F0008_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0008/5E114E_054_F0008_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0008/5E114E_054_F0008_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-a86b792f979e6e88aed9",
+      "brand": "Miu Miu",
+      "name": "Plume suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0007_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0007/5E114E_054_F0007_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E114E_054_F0007_F_005",
+      "styleType": "sku",
+      "description": " Refined workmanship and materials meet the sleek and extremely light design in these new Miu Miu suede sneakers. The logo stands out on the tongue and on the back thanks to its iconic character. * Product code: 5E114E_054_F0007_F_005 * Screen-printed logo on the tongue and heel * Removable leather-covered insole  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Burgundy",
+      "colors": [],
+      "priceLabel": "$ 995",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:53.399Z",
+      "productVerifiedAt": "2026-11-02T05:42:53.399Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0007_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0007_F_005",
+        "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0007_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:53.399Z",
+        "contentHash": "8da50576f000bf44d540b37edd4da0834413b88a247e3a5f50f0a4e8e574d625",
+        "excerpt": "Current official product page",
+        "style": "5E114E_054_F0007_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_054_F0007_F_005",
+        "verifiedAt": "2026-11-02T05:42:53.399Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "8da50576f000bf44d540b37edd4da0834413b88a247e3a5f50f0a4e8e574d625",
+        "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0007_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_054_F0007_F_005",
+        "verifiedAt": "2026-11-02T05:42:53.399Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "8da50576f000bf44d540b37edd4da0834413b88a247e3a5f50f0a4e8e574d625",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0007/5E114E_054_F0007_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0007_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0007/5E114E_054_F0007_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0007/5E114E_054_F0007_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0007/5E114E_054_F0007_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-c5f87df034f228690920",
+      "brand": "Miu Miu",
+      "name": "Plume suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0571_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0571/5E114E_054_F0571_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E114E_054_F0571_F_005",
+      "styleType": "sku",
+      "description": " Refined workmanship and materials meet the sleek and extremely light design in these new Miu Miu suede sneakers. The logo stands out on the tongue and on the back thanks to its iconic character. * Product code: 5E114E_054_F0571_F_005 * Screen-printed logo on the tongue and heel * Removable leather-covered insole  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Oleander Green",
+      "colors": [],
+      "priceLabel": "$ 995",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:42:59.395Z",
+      "productVerifiedAt": "2026-11-02T05:42:59.395Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0571_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0571_F_005",
+        "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0571_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:59.395Z",
+        "contentHash": "0f4767d82c2efdfb64eea9a90eb00d51b8dc2578d31ee4388733a1837b9eea44",
+        "excerpt": "Current official product page",
+        "style": "5E114E_054_F0571_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_054_F0571_F_005",
+        "verifiedAt": "2026-11-02T05:42:59.395Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "0f4767d82c2efdfb64eea9a90eb00d51b8dc2578d31ee4388733a1837b9eea44",
+        "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0571_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_054_F0571_F_005",
+        "verifiedAt": "2026-11-02T05:42:59.395Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "0f4767d82c2efdfb64eea9a90eb00d51b8dc2578d31ee4388733a1837b9eea44",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0571/5E114E_054_F0571_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0571_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0571/5E114E_054_F0571_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0571/5E114E_054_F0571_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F0571/5E114E_054_F0571_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-b3d979d60fdabb2c54d5",
+      "brand": "Miu Miu",
+      "name": "Suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/suede-sneakers/5E389E_054_F0F24_F_D005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E3/5E389E/054F0F24/5E389E_054_F0F24_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E389E_054_F0F24_F_D005",
+      "styleType": "sku",
+      "description": " These suede sneakers express Miu Miu's bold essence through a sporty silhouette. The embroidered lettering logo and flatform sole define its iconic, casual character. * Product code: 5E389E_054_F0F24_F_D005 * Removable leather-covered insole * Screen-printed logo on the tongue and insole  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Desert Beige",
+      "colors": [],
+      "priceLabel": "$ 1,100",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:43:04.679Z",
+      "productVerifiedAt": "2026-11-02T05:43:04.679Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/suede-sneakers/5E389E_054_F0F24_F_D005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/suede-sneakers/5E389E_054_F0F24_F_D005",
+        "url": "https://www.miumiu.com/us/en/p/suede-sneakers/5E389E_054_F0F24_F_D005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:04.679Z",
+        "contentHash": "2fd0ed53e51bd59b27cea4c7f1cc3d350762f1cf5159debefc031095d4a6febf",
+        "excerpt": "Current official product page",
+        "style": "5E389E_054_F0F24_F_D005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E389E_054_F0F24_F_D005",
+        "verifiedAt": "2026-11-02T05:43:04.679Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "2fd0ed53e51bd59b27cea4c7f1cc3d350762f1cf5159debefc031095d4a6febf",
+        "url": "https://www.miumiu.com/us/en/p/suede-sneakers/5E389E_054_F0F24_F_D005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E389E_054_F0F24_F_D005",
+        "verifiedAt": "2026-11-02T05:43:04.679Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "2fd0ed53e51bd59b27cea4c7f1cc3d350762f1cf5159debefc031095d4a6febf",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E3/5E389E/054F0F24/5E389E_054_F0F24_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/suede-sneakers/5E389E_054_F0F24_F_D005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E3/5E389E/054F0F24/5E389E_054_F0F24_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E3/5E389E/054F0F24/5E389E_054_F0F24_F_D005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E3/5E389E/054F0F24/5E389E_054_F0F24_F_D005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-0bab34a306b7467f822f",
+      "brand": "Moncler",
+      "name": "Vera Leisure Padded Sneakers",
+      "url": "https://www.moncler.com/en-us/women/shoes/sneakers/vera-leisure-padded-sneakers-brown-L209B4M00090M9244243.html",
+      "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_1/image/vera-leisure-padded-sneakers-women-brown-moncler-1.jpg?w=1300&q_auto=highest",
+      "style": "L209B4M00090M9244243",
+      "styleType": "sku",
+      "description": " Comfort meets Moncler DNA in the Vera Leisure low top sneakers for women, crafted from padded nylon.  Subtly nodding to Moncler's signature puffers, the Vera Leisure sneakers take leisure to new heights. Crafted from padded nylon, the shoe comes in a sleek, low-top silhouette with corded laces. The model features elastic at each side and a soft heel construction, allowing it to double as a slip-on sabot style when the back is folded down.  Product code: L209B4M00090M9244243  Over-packing and folds can permanently ruin embroideries, artwork, pearls, studs, leather inserts and other delicate parts. We advise careful storage and to take the piece out from storage and let it breathe from time to time.  The care icons have been updated in line with the latest regulations  UPPER: 100% Polyester; SOLE: 100% Elastodiene;UPPER: LAMB; LINING: COW",
+      "colorway": "Brown",
+      "colors": [],
+      "priceLabel": "$600.00",
+      "country": "US",
+      "gender": "Women",
+      "firstSeen": "2026-11-02T05:42:46.152Z",
+      "productVerifiedAt": "2026-11-02T05:42:46.152Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/vera-leisure-padded-sneakers-brown-L209B4M00090M9244243.html",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "productUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/vera-leisure-padded-sneakers-brown-L209B4M00090M9244243.html",
+        "url": "https://www.moncler.com/en-us/women/shoes/sneakers/vera-leisure-padded-sneakers-brown-L209B4M00090M9244243.html",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:42:46.152Z",
+        "contentHash": "13bba684b9790a592252d76b36bf9f8e11c09a63a245f34a637c167dd7eb8827",
+        "excerpt": "Current official product page",
+        "style": "L209B4M00090M9244243"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "style": "L209B4M00090M9244243",
+        "verifiedAt": "2026-11-02T05:42:46.152Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "13bba684b9790a592252d76b36bf9f8e11c09a63a245f34a637c167dd7eb8827",
+        "url": "https://www.moncler.com/en-us/women/shoes/sneakers/vera-leisure-padded-sneakers-brown-L209B4M00090M9244243.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "style": "L209B4M00090M9244243",
+        "verifiedAt": "2026-11-02T05:42:46.152Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "13bba684b9790a592252d76b36bf9f8e11c09a63a245f34a637c167dd7eb8827",
+        "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_1/image/vera-leisure-padded-sneakers-women-brown-moncler-1.jpg?w=1300&q_auto=highest",
+        "sourceUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/vera-leisure-padded-sneakers-brown-L209B4M00090M9244243.html"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler 0",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_F/image/vera-leisure-padded-sneakers-women-brown-moncler-0.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler 1",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_1/image/vera-leisure-padded-sneakers-women-brown-moncler-1.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler 2",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_2/image/vera-leisure-padded-sneakers-women-brown-moncler-2.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler 3",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_3/image/vera-leisure-padded-sneakers-women-brown-moncler-3.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler 4",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_4/image/vera-leisure-padded-sneakers-women-brown-moncler-4.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler 5",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_5/image/vera-leisure-padded-sneakers-women-brown-moncler-5.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler 6",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_6/image/vera-leisure-padded-sneakers-women-brown-moncler-6.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler 7",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_7/image/vera-leisure-padded-sneakers-women-brown-moncler-7.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler 8",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_8/image/vera-leisure-padded-sneakers-women-brown-moncler-8.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler 9",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_9/image/vera-leisure-padded-sneakers-women-brown-moncler-9.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_F/image/L209B4M00090M9244243_F"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_F/image/L209B4M00090M9244243_F"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_F/image/L209B4M00090M9244243_F"
+        },
+        {
+          "alt": "Vera Leisure Padded Sneakers Women Brown Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L209B4M00090M9244243_F/image/L209B4M00090M9244243_F"
+        }
+      ],
+      "status": "verified-product"
+    },
+    {
+      "id": "arrival-836e33cfd0eae4914593",
+      "brand": "Miu Miu",
+      "name": "Tyre technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_ZJM_F0304_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/ZJMF0304/5E417E_ZJM_F0304_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E417E_ZJM_F0304_F_005",
+      "styleType": "sku",
+      "description": "# Tyre technical fabric and suede sneakers # Tyre technical fabric and suede sneakers  Tyre combines elegance and sporty functionality. The dynamic rubber sole, which is flexible and scuff-proof, recalls the pattern on tires. Made of technical fabric and suede, these sneakers express Miu Miu's bold identity.  * Product code: 5E417E_ZJM_F0304_F_005 * Screen-printed logo on the tongue, heel collar, and insole * EVA and rubber sole with logo * Removable leather-covered insole  Main material: Recycled Polyamide  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Ivory",
+      "colors": [],
+      "priceLabel": "$ 1,170",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:43:10.377Z",
+      "productVerifiedAt": "2026-11-02T05:43:10.377Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_ZJM_F0304_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_ZJM_F0304_F_005",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_ZJM_F0304_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:10.377Z",
+        "contentHash": "ceb191411a8f5b97c2d3521d4f90cd3ca8cafdbdb270078dd17878e2911a5868",
+        "excerpt": "Current official product page",
+        "style": "5E417E_ZJM_F0304_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E417E_ZJM_F0304_F_005",
+        "verifiedAt": "2026-11-02T05:43:10.377Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "ceb191411a8f5b97c2d3521d4f90cd3ca8cafdbdb270078dd17878e2911a5868",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_ZJM_F0304_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E417E_ZJM_F0304_F_005",
+        "verifiedAt": "2026-11-02T05:43:10.377Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "ceb191411a8f5b97c2d3521d4f90cd3ca8cafdbdb270078dd17878e2911a5868",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/ZJMF0304/5E417E_ZJM_F0304_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_ZJM_F0304_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/ZJMF0304/5E417E_ZJM_F0304_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/ZJMF0304/5E417E_ZJM_F0304_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/ZJMF0304/5E417E_ZJM_F0304_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-2f6fcb9295cbcaada7f1",
+      "brand": "Miu Miu",
+      "name": "Tyre technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F0R3K_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF0R3K/5E417E_LYW_F0R3K_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E417E_LYW_F0R3K_F_005",
+      "styleType": "sku",
+      "description": "# Tyre technical fabric and suede sneakers # Tyre technical fabric and suede sneakers  Tyre combines elegance and sporty functionality. The dynamic, flexible and abrasion-resistant sole recalls the design of pneumatic tires. These sneakers made of technical fabric and suede express Miu Miu's bold identity.  * Product code: 5E417E_LYW_F0R3K_F_005 * Upper with padding and stitching * Removable fabric-covered insole * Screen-printed logo on the tongue, insole, and heel counter  Main material: Recycled Polyamide  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "White/Granite Gray",
+      "colors": [],
+      "priceLabel": "$ 1,170",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:43:12.912Z",
+      "productVerifiedAt": "2026-11-02T05:43:12.912Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F0R3K_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F0R3K_F_005",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F0R3K_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:12.912Z",
+        "contentHash": "e27c886b1f2bc130b78e30defa16b1b4bcbad1a5b86977947c23249ff06cfc39",
+        "excerpt": "Current official product page",
+        "style": "5E417E_LYW_F0R3K_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E417E_LYW_F0R3K_F_005",
+        "verifiedAt": "2026-11-02T05:43:12.912Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "e27c886b1f2bc130b78e30defa16b1b4bcbad1a5b86977947c23249ff06cfc39",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F0R3K_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E417E_LYW_F0R3K_F_005",
+        "verifiedAt": "2026-11-02T05:43:12.912Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "e27c886b1f2bc130b78e30defa16b1b4bcbad1a5b86977947c23249ff06cfc39",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF0R3K/5E417E_LYW_F0R3K_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F0R3K_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF0R3K/5E417E_LYW_F0R3K_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF0R3K/5E417E_LYW_F0R3K_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF0R3K/5E417E_LYW_F0R3K_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF0R3K/5E417E_LYW_F0R3K_F_005_MDR.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-641d605ca5d8785a0e45",
+      "brand": "Miu Miu",
+      "name": "Tyre technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0D5X_F_D005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/3ZOFF0D5X/5E417E_3ZOF_F0D5X_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E417E_3ZOF_F0D5X_F_D005",
+      "styleType": "sku",
+      "description": "# Tyre technical fabric and suede sneakers # Tyre technical fabric and suede sneakers  Tyre combines elegance and sporty functionality. The dynamic, flexible and abrasion-resistant sole recalls the design of road tires. Made of technical fabric and suede, these sneakers express Miu Miu's bold identity. * Product code: 5E417E_3ZOF_F0D5X_F_D005 * Upper with padding and stitching * Removable fabric-covered insole * Screen-printed logo on the tongue, insole and heel counter  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Aluminum/White",
+      "colors": [],
+      "priceLabel": "$ 1,170",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:43:16.015Z",
+      "productVerifiedAt": "2026-11-02T05:43:16.015Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0D5X_F_D005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0D5X_F_D005",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0D5X_F_D005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:16.015Z",
+        "contentHash": "187f5c36409464a7a4ea6aa869e446c05d404a9165ebbd615b4a9c832efdd8db",
+        "excerpt": "Current official product page",
+        "style": "5E417E_3ZOF_F0D5X_F_D005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E417E_3ZOF_F0D5X_F_D005",
+        "verifiedAt": "2026-11-02T05:43:16.015Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "187f5c36409464a7a4ea6aa869e446c05d404a9165ebbd615b4a9c832efdd8db",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0D5X_F_D005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E417E_3ZOF_F0D5X_F_D005",
+        "verifiedAt": "2026-11-02T05:43:16.015Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "187f5c36409464a7a4ea6aa869e446c05d404a9165ebbd615b4a9c832efdd8db",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/3ZOFF0D5X/5E417E_3ZOF_F0D5X_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0D5X_F_D005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/3ZOFF0D5X/5E417E_3ZOF_F0D5X_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/3ZOFF0D5X/5E417E_3ZOF_F0D5X_F_D005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/3ZOFF0D5X/5E417E_3ZOF_F0D5X_F_D005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-b36824270fe5ecbf8752",
+      "brand": "Miu Miu",
+      "name": "Tyre technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0P1O_F_D005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/3ZOFF0P1O/5E417E_3ZOF_F0P1O_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E417E_3ZOF_F0P1O_F_D005",
+      "styleType": "sku",
+      "description": "# Tyre technical fabric and suede sneakers # Tyre technical fabric and suede sneakers  Tyre combines elegance and sporty functionality. The dynamic, flexible and abrasion-resistant sole recalls the design of road tires. Made of technical fabric and suede, these sneakers express Miu Miu's bold identity. * Product code: 5E417E_3ZOF_F0P1O_F_D005 * Upper with padding and stitching * Removable fabric-covered insole * Screen-printed logo on the tongue, insole and heel counter  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Aluminum/Bordeaux",
+      "colors": [],
+      "priceLabel": "$ 1,170",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:43:18.429Z",
+      "productVerifiedAt": "2026-11-02T05:43:18.429Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0P1O_F_D005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0P1O_F_D005",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0P1O_F_D005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:18.429Z",
+        "contentHash": "985dc61fd3be2eeec327d0cfca3774fadbd27889ef8377e117445973f2c6f27a",
+        "excerpt": "Current official product page",
+        "style": "5E417E_3ZOF_F0P1O_F_D005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E417E_3ZOF_F0P1O_F_D005",
+        "verifiedAt": "2026-11-02T05:43:18.429Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "985dc61fd3be2eeec327d0cfca3774fadbd27889ef8377e117445973f2c6f27a",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0P1O_F_D005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E417E_3ZOF_F0P1O_F_D005",
+        "verifiedAt": "2026-11-02T05:43:18.429Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "985dc61fd3be2eeec327d0cfca3774fadbd27889ef8377e117445973f2c6f27a",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/3ZOFF0P1O/5E417E_3ZOF_F0P1O_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0P1O_F_D005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/3ZOFF0P1O/5E417E_3ZOF_F0P1O_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/3ZOFF0P1O/5E417E_3ZOF_F0P1O_F_D005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/3ZOFF0P1O/5E417E_3ZOF_F0P1O_F_D005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-80876c799cea0e6e34c9",
+      "brand": "Miu Miu",
+      "name": "Tyre technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F02GM_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF02GM/5E417E_LYW_F02GM_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E417E_LYW_F02GM_F_005",
+      "styleType": "sku",
+      "description": "# Tyre technical fabric and suede sneakers # Tyre technical fabric and suede sneakers  Tyre combines elegance and sporty functionality. The dynamic, flexible and abrasion-resistant sole recalls the design of pneumatic tires. These sneakers made of technical fabric and suede express Miu Miu's bold identity.  * Product code: 5E417E_LYW_F02GM_F_005 * Upper with padding and stitching * Removable fabric-covered insole * Screen-printed logo on the tongue, insole, and heel counter  Main material: Recycled Polyamide  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Cornflower Blue/Astral",
+      "colors": [],
+      "priceLabel": "$ 1,170",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:43:20.985Z",
+      "productVerifiedAt": "2026-11-02T05:43:20.985Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F02GM_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F02GM_F_005",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F02GM_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:20.985Z",
+        "contentHash": "16c93ca7129ad08be46f0f2e7f24182608f4adb8460285b9a043d1c498b2a385",
+        "excerpt": "Current official product page",
+        "style": "5E417E_LYW_F02GM_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E417E_LYW_F02GM_F_005",
+        "verifiedAt": "2026-11-02T05:43:20.985Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "16c93ca7129ad08be46f0f2e7f24182608f4adb8460285b9a043d1c498b2a385",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F02GM_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E417E_LYW_F02GM_F_005",
+        "verifiedAt": "2026-11-02T05:43:20.985Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "16c93ca7129ad08be46f0f2e7f24182608f4adb8460285b9a043d1c498b2a385",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF02GM/5E417E_LYW_F02GM_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F02GM_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF02GM/5E417E_LYW_F02GM_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF02GM/5E417E_LYW_F02GM_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E4/5E417E/LYWF02GM/5E417E_LYW_F02GM_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-23497fe2856a8178648e",
+      "brand": "Miu Miu",
+      "name": "Tyre technical fabric and leather sneakers",
+      "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0037_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0037/5E760E_FKS_F0037_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E760E_FKS_F0037_F_005",
+      "styleType": "sku",
+      "description": "# Tyre technical fabric and leather sneakers # Tyre technical fabric and leather sneakers  Inspired by classic hiking boots, the silhouette of these Tyre sneakers stands out for the lightness of the technical fabric and the iconic two-tone laces, striking a perfect balance between a sporty spirit and an urban attitude. * Product code: 5E760E_FKS_F0037_F_005 * Removable fabric-covered insole * Screen-printed logo on the tongue and heel tab  Main material: Recycled Polyamide  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Mustard",
+      "colors": [],
+      "priceLabel": "$ 1,200",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:43:23.488Z",
+      "productVerifiedAt": "2026-11-02T05:43:23.488Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0037_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0037_F_005",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0037_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:23.488Z",
+        "contentHash": "983236b414838f19d866c6739d2385690177350162b65a3260a7223e708a6a47",
+        "excerpt": "Current official product page",
+        "style": "5E760E_FKS_F0037_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E760E_FKS_F0037_F_005",
+        "verifiedAt": "2026-11-02T05:43:23.488Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "983236b414838f19d866c6739d2385690177350162b65a3260a7223e708a6a47",
+        "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0037_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E760E_FKS_F0037_F_005",
+        "verifiedAt": "2026-11-02T05:43:23.488Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "983236b414838f19d866c6739d2385690177350162b65a3260a7223e708a6a47",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0037/5E760E_FKS_F0037_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0037_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Tyre technical fabric and leather sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0037/5E760E_FKS_F0037_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and leather sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0037/5E760E_FKS_F0037_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Tyre technical fabric and leather sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E7/5E760E/FKSF0037/5E760E_FKS_F0037_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-35e7d0b65541d06319ed",
+      "brand": "Miu Miu",
+      "name": "Plume suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F065Y_F_005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F065Y/5E114E_054_F065Y_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E114E_054_F065Y_F_005",
+      "styleType": "sku",
+      "description": " Refined workmanship and materials meet the sleek and extremely light design in these new Miu Miu suede sneakers. The logo stands out on the tongue and on the back thanks to its iconic character. * Product code: 5E114E_054_F065Y_F_005 * Screen-printed logo on the tongue and heel * Removable leather-covered insole  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Sunny Yellow",
+      "colors": [],
+      "priceLabel": "$ 995",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:43:28.898Z",
+      "productVerifiedAt": "2026-11-02T05:43:28.898Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F065Y_F_005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F065Y_F_005",
+        "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F065Y_F_005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:28.898Z",
+        "contentHash": "d98ccf1d6b5d967dd4341cad82aa1a96f445e7197466e993d5ff3ff964290e84",
+        "excerpt": "Current official product page",
+        "style": "5E114E_054_F065Y_F_005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_054_F065Y_F_005",
+        "verifiedAt": "2026-11-02T05:43:28.898Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "d98ccf1d6b5d967dd4341cad82aa1a96f445e7197466e993d5ff3ff964290e84",
+        "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F065Y_F_005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_054_F065Y_F_005",
+        "verifiedAt": "2026-11-02T05:43:28.898Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "d98ccf1d6b5d967dd4341cad82aa1a96f445e7197466e993d5ff3ff964290e84",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F065Y/5E114E_054_F065Y_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F065Y_F_005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F065Y/5E114E_054_F065Y_F_005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F065Y/5E114E_054_F065Y_F_005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/054F065Y/5E114E_054_F065Y_F_005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-c5aeac9a1d3e76d74648",
+      "brand": "Moncler",
+      "name": "Trailgrip LP Suede & Nubuck Sneaker",
+      "url": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-grey-L109B4M00230M8467926.html",
+      "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_1/image/trailgrip-lp-suede-and-nubuck-sneaker-women-grey-moncler-1.jpg?w=1300&q_auto=highest",
+      "style": "L109B4M00230M8467926",
+      "styleType": "sku",
+      "description": "# Trailgrip LP Suede & Nubuck Sneaker  Forged for a closer connection to the trail, the women’s Trailgrip LP sneaker brings mountain‑born lightness to a sleek suede and nubuck construction.  The Trailgrip LP re-energizes the signature shoe in a low-profile silhouette with an unmistakable nod to grip. Lighter and more flexible, the sneaker pairs suede, nubuck and microfiber with an EVA midsole that softens impact and supports fluid motion. A washable OrthoLite® insole ensures breathable, long‑lasting cushioning, while a rubber sole completes the design with traction engineered for shifting terrain.  Product code: L109B4M00230M8467926 * Suede, nubuck and microfiber upper  Over-packing and folds can permanently ruin embroideries, artwork, pearls, studs, leather inserts and other delicate parts. We advise careful storage and to take the piece out from storage and let it breathe from time to time.  The care icons have been updated in line with the latest regulations  UPPER: 100% Polyester; LINING: 100% Polyester; SOLE: 100% Elastodiene;UPPER: COW",
+      "colorway": "",
+      "colors": [],
+      "priceLabel": "$660.00",
+      "country": "US",
+      "gender": "Women",
+      "firstSeen": "2026-11-02T05:43:12.004Z",
+      "productVerifiedAt": "2026-11-02T05:43:12.004Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-grey-L109B4M00230M8467926.html",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "productUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-grey-L109B4M00230M8467926.html",
+        "url": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-grey-L109B4M00230M8467926.html",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:12.004Z",
+        "contentHash": "60905afec9d32ccc5f8f506961d419d36f5239cd52d7ad63c128a42325668cdd",
+        "excerpt": "Current official product page",
+        "style": "L109B4M00230M8467926"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "style": "L109B4M00230M8467926",
+        "verifiedAt": "2026-11-02T05:43:12.004Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "60905afec9d32ccc5f8f506961d419d36f5239cd52d7ad63c128a42325668cdd",
+        "url": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-grey-L109B4M00230M8467926.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "style": "L109B4M00230M8467926",
+        "verifiedAt": "2026-11-02T05:43:12.004Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "60905afec9d32ccc5f8f506961d419d36f5239cd52d7ad63c128a42325668cdd",
+        "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_1/image/trailgrip-lp-suede-and-nubuck-sneaker-women-grey-moncler-1.jpg?w=1300&q_auto=highest",
+        "sourceUrl": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-grey-L109B4M00230M8467926.html"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler 0",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_F/image/trailgrip-lp-suede-and-nubuck-sneaker-women-grey-moncler-0.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler 1",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_1/image/trailgrip-lp-suede-and-nubuck-sneaker-women-grey-moncler-1.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler 2",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_2/image/trailgrip-lp-suede-and-nubuck-sneaker-women-grey-moncler-2.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler 3",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_3/image/trailgrip-lp-suede-and-nubuck-sneaker-women-grey-moncler-3.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler 4",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_4/image/trailgrip-lp-suede-and-nubuck-sneaker-women-grey-moncler-4.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler 5",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_5/image/trailgrip-lp-suede-and-nubuck-sneaker-women-grey-moncler-5.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler 6",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_6/image/trailgrip-lp-suede-and-nubuck-sneaker-women-grey-moncler-6.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_F/image/L109B4M00230M8467926_F"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_F/image/L109B4M00230M8467926_F"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_F/image/L109B4M00230M8467926_F"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Women Grey Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_F/image/L109B4M00230M8467926_F"
+        },
+        {
+          "alt": "Slide 1 - Designed to Grip",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109B4M00230M8467926_16/image/slide-1-designed-to-grip.jpg?w=2500&q_auto=highest"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-bb3b8eaaa61c72092233",
+      "brand": "Miu Miu",
+      "name": "Plume technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0009_F_D005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/D7CF0009/5E114E_D7C_F0009_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E114E_D7C_F0009_F_D005",
+      "styleType": "sku",
+      "description": "# Plume technical fabric and suede sneakers # Plume technical fabric and suede sneakers  The combination of technical fabric and soft suede characterizes this version of Plume sneakers decorated with tonal stitching that enhances the ultra-light, deconstructed lines.  * Product code: 5E114E_D7C_F0009_F_D005 * Upper with decorative stitching * Removable leather-covered insole * Screen-printed logo on tongue and heel counter  Main material: Recycled Polyamide Recycled Polyester  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "White",
+      "colors": [],
+      "priceLabel": "$ 995",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:43:35.142Z",
+      "productVerifiedAt": "2026-11-02T05:43:35.142Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0009_F_D005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0009_F_D005",
+        "url": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0009_F_D005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:35.142Z",
+        "contentHash": "0f13f09ab6e58d56ffb2854b656ce3db270e313d8ec5dfcf21ffa96270c6da17",
+        "excerpt": "Current official product page",
+        "style": "5E114E_D7C_F0009_F_D005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_D7C_F0009_F_D005",
+        "verifiedAt": "2026-11-02T05:43:35.142Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "0f13f09ab6e58d56ffb2854b656ce3db270e313d8ec5dfcf21ffa96270c6da17",
+        "url": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0009_F_D005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_D7C_F0009_F_D005",
+        "verifiedAt": "2026-11-02T05:43:35.142Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "0f13f09ab6e58d56ffb2854b656ce3db270e313d8ec5dfcf21ffa96270c6da17",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/D7CF0009/5E114E_D7C_F0009_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0009_F_D005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Plume technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/D7CF0009/5E114E_D7C_F0009_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/D7CF0009/5E114E_D7C_F0009_F_D005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/D7CF0009/5E114E_D7C_F0009_F_D005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-873f6a279c02481dace6",
+      "brand": "Miu Miu",
+      "name": "Plume technical fabric and suede sneakers",
+      "url": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0008_F_D005",
+      "image": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/D7CF0008/5E114E_D7C_F0008_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+      "style": "5E114E_D7C_F0008_F_D005",
+      "styleType": "sku",
+      "description": "# Plume technical fabric and suede sneakers # Plume technical fabric and suede sneakers  The combination of technical fabric and soft suede characterizes this version of Plume sneakers decorated with tonal stitching that enhances the ultra-light, deconstructed lines.  * Product code: 5E114E_D7C_F0008_F_D005 * Upper with decorative stitching * Removable leather-covered insole * Screen-printed logo on tongue and heel counter  Main material: Recycled Polyamide Recycled Polyester  Need more information about the product? +1-888-964-8648 Monday through Saturday 9 am - 8 pm, Sunday 11 am - 8 pm",
+      "colorway": "Navy",
+      "colors": [],
+      "priceLabel": "$ 995",
+      "country": "US",
+      "gender": "",
+      "firstSeen": "2026-11-02T05:43:37.250Z",
+      "productVerifiedAt": "2026-11-02T05:43:37.250Z",
+      "productEvidenceUrl": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0008_F_D005",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "productUrl": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0008_F_D005",
+        "url": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0008_F_D005",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:37.250Z",
+        "contentHash": "7b99cf75ba3db3974c381365658ae37556424f4c2e8a85f1efd7216ed405b80c",
+        "excerpt": "Current official product page",
+        "style": "5E114E_D7C_F0008_F_D005"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_D7C_F0008_F_D005",
+        "verifiedAt": "2026-11-02T05:43:37.250Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "7b99cf75ba3db3974c381365658ae37556424f4c2e8a85f1efd7216ed405b80c",
+        "url": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0008_F_D005"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Miu Miu",
+        "style": "5E114E_D7C_F0008_F_D005",
+        "verifiedAt": "2026-11-02T05:43:37.250Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "7b99cf75ba3db3974c381365658ae37556424f4c2e8a85f1efd7216ed405b80c",
+        "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/D7CF0008/5E114E_D7C_F0008_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg",
+        "sourceUrl": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0008_F_D005"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Plume technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/D7CF0008/5E114E_D7C_F0008_F_D005_SLS.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/D7CF0008/5E114E_D7C_F0008_F_D005_SLQ.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        },
+        {
+          "alt": "Plume technical fabric and suede sneakers",
+          "url": "https://www.miumiu.com/content/dam/miumiubkg_products/5/5E1/5E114E/D7CF0008/5E114E_D7C_F0008_F_D005_SLT.jpg/_jcr_content/renditions/cq5dam.web.hE7E3DA.800.800.jpg"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "arrival-5e89477581957643fbc8",
+      "brand": "Moncler",
+      "name": "Trailgrip LP Suede & Nubuck Sneaker",
+      "url": "https://www.moncler.com/en-us/men/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-navy-blue-L109A4M00290M8467P70.html",
+      "image": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_1/image/trailgrip-lp-suede-and-nubuck-sneaker-men-navy-blue-moncler-1.jpg?w=1300&q_auto=highest",
+      "style": "L109A4M00290M8467P70",
+      "styleType": "sku",
+      "description": "# Trailgrip LP Suede & Nubuck Sneaker  Forged for a closer connection to the trail, the men's Trailgrip LP sneaker brings mountain‑born lightness to a sleek suede and nubuck construction.  The Trailgrip LP re-energizes the signature shoe in a low-profile silhouette with an unmistakable nod to grip. Lighter and more flexible, the sneaker pairs suede, nubuck and microfiber with an EVA midsole that softens impact and supports fluid motion. A washable OrthoLite® insole ensures breathable, long‑lasting cushioning, while a rubber sole completes the design with traction engineered for shifting terrain.  Product code: L109A4M00290M8467P70 * Suede, nubuck and microfiber upper  Over-packing and folds can permanently ruin embroideries, artwork, pearls, studs, leather inserts and other delicate parts. We advise careful storage and to take the piece out from storage and let it breathe from time to time.  The care icons have been updated in line with the latest regulations  UPPER: 100% Polyester; LINING: 100% Polyester; SOLE: 100% Elastodiene;UPPER: COW",
+      "colorway": "Navy Blue",
+      "colors": [],
+      "priceLabel": "$660.00",
+      "country": "US",
+      "gender": "Men",
+      "firstSeen": "2026-11-02T05:43:35.221Z",
+      "productVerifiedAt": "2026-11-02T05:43:35.221Z",
+      "productEvidenceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-navy-blue-L109A4M00290M8467P70.html",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "productUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-navy-blue-L109A4M00290M8467P70.html",
+        "url": "https://www.moncler.com/en-us/men/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-navy-blue-L109A4M00290M8467P70.html",
+        "kind": "official-assortment-listing",
+        "verifiedAt": "2026-11-02T05:43:35.221Z",
+        "contentHash": "eb803346282092c8ea7b159ab856929c3f666cdbfeee5c924b74db23aa29c9c7",
+        "excerpt": "Current official product page",
+        "style": "L109A4M00290M8467P70"
+      },
+      "sourceSignals": [],
+      "officialCategory": "Sneakers",
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "style": "L109A4M00290M8467P70",
+        "verifiedAt": "2026-11-02T05:43:35.221Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "eb803346282092c8ea7b159ab856929c3f666cdbfeee5c924b74db23aa29c9c7",
+        "url": "https://www.moncler.com/en-us/men/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-navy-blue-L109A4M00290M8467P70.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Moncler",
+        "style": "L109A4M00290M8467P70",
+        "verifiedAt": "2026-11-02T05:43:35.221Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "eb803346282092c8ea7b159ab856929c3f666cdbfeee5c924b74db23aa29c9c7",
+        "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_1/image/trailgrip-lp-suede-and-nubuck-sneaker-men-navy-blue-moncler-1.jpg?w=1300&q_auto=highest",
+        "sourceUrl": "https://www.moncler.com/en-us/men/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-navy-blue-L109A4M00290M8467P70.html"
+      },
+      "imageCandidates": [
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler 0",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_F/image/trailgrip-lp-suede-and-nubuck-sneaker-men-navy-blue-moncler-0.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler 1",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_1/image/trailgrip-lp-suede-and-nubuck-sneaker-men-navy-blue-moncler-1.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler 2",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_2/image/trailgrip-lp-suede-and-nubuck-sneaker-men-navy-blue-moncler-2.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler 3",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_3/image/trailgrip-lp-suede-and-nubuck-sneaker-men-navy-blue-moncler-3.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler 4",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_4/image/trailgrip-lp-suede-and-nubuck-sneaker-men-navy-blue-moncler-4.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler 5",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_5/image/trailgrip-lp-suede-and-nubuck-sneaker-men-navy-blue-moncler-5.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler 6",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_6/image/trailgrip-lp-suede-and-nubuck-sneaker-men-navy-blue-moncler-6.jpg?w=1300&q_auto=highest"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_F/image/L109A4M00290M8467P70_F"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_F/image/L109A4M00290M8467P70_F"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_F/image/L109A4M00290M8467P70_F"
+        },
+        {
+          "alt": "Trailgrip LP Suede & Nubuck Sneaker Men Navy Blue Moncler",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_F/image/L109A4M00290M8467P70_F"
+        },
+        {
+          "alt": "Slide 1 - Designed to Grip",
+          "url": "https://moncler-cdn.thron.com/api/v1/content-delivery/shares/dpx6uv/contents/L109A4M00290M8467P70_16/image/slide-1-designed-to-grip.jpg?w=2500&q_auto=highest"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "brand": "Hermès",
+      "url": "https://www.hermes.com/us/en/product/jet-sneaker-H242925ZHAD/",
+      "name": "Jet sneaker",
+      "error": "HTTP_403",
+      "status": "published",
+      "id": "arrival-9080fd7eea0bbde861ff"
+    },
+    {
+      "brand": "Dior",
+      "url": "https://www.dior.com/en_hk/fashion/products/3SN272AFD_H710",
+      "name": "B27 Uptown Low-Top Sneaker Beige Grained Calfskin and Beige Dior Gravity Grained Leather  +1",
+      "error": "HTTP_403",
+      "status": "published",
+      "id": "arrival-18911dba9d9880dfabef"
+    },
+    {
+      "brand": "Dior",
+      "url": "https://www.dior.com/en_hk/fashion/products/3SN356ZRH_H960",
+      "name": "B01 Matchpoint Sneaker Black and White Smooth Calfskin with Black Suede Calfskin",
+      "error": "HOST_DEFERRED_AFTER_DENIAL",
+      "status": "published",
+      "id": "arrival-a87bebe9a470d45b81c5"
+    },
+    {
+      "brand": "Golden Goose",
+      "url": "https://www.goldengoose.com/kr/ko/stories/marathon-speed.html",
+      "error": "The operation was aborted due to timeout",
+      "status": "editorial-replaced-by-linked-exact-products",
+      "reason": "Official category or editorial page; collect the linked actual sneaker products separately.",
+      "linkedProducts": [
+        {
+          "style": "GMF00892.F007405.90179",
+          "url": "https://www.goldengoose.com/kr/ko/%EB%82%A8%EC%84%B1-%EB%B8%94%EB%9E%99-%EB%A0%88%EB%8D%94-%EC%96%B4%ED%8D%BC-%26-%EC%8B%A4%EB%B2%84-%EC%8A%A4%ED%83%80-%EB%A7%88%EB%9D%BC%ED%86%A4-%EC%8A%A4%ED%94%BC%EB%93%9C-cod-GMF00892.F007405.90179.html"
+        },
+        {
+          "style": "GMF00892.F007833.50962",
+          "url": "https://www.goldengoose.com/kr/ko/%EB%82%A8%EC%84%B1-%ED%94%84%EB%A6%B0%ED%8A%B8-%EC%8A%A4%ED%83%80-%26-%EC%8B%A4%EB%B2%84-%EB%A0%88%EB%8D%94-%ED%9E%90%ED%83%AD-%EB%B8%94%EB%A3%A8-%EB%82%98%ED%8C%8C-%EB%A7%88%EB%9D%BC%ED%86%A4%EC%8A%A4%ED%94%BC%EB%93%9C-cod-GMF00892.F007833.50962.html"
+        },
+        {
+          "style": "GWF00923.F007409.55671",
+          "url": "https://www.goldengoose.com/kr/ko/%EB%B8%94%EB%9E%99-%EB%A0%88%EB%8D%94-%EC%8A%A4%ED%83%80-%EB%B2%A0%EC%9D%B4%EC%A7%80-%26-%EB%B8%94%EB%9E%99-%EB%A0%88%EC%98%A4%ED%8C%8C%EB%93%9C-%ED%94%84%EB%A6%B0%ED%8A%B8-%ED%8F%AC%EB%8B%88%EC%8A%A4%ED%82%A8-%EC%97%AC%EC%84%B1-%EB%A7%88%EB%9D%BC%ED%86%A4-%EC%8A%A4%ED%94%BC%EB%93%9C-cod-GWF00923.F007409.55671.html"
+        },
+        {
+          "style": "GWF00892.F007837.55599",
+          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%EB%B8%8C%EB%9D%BC%EC%9A%B4-%EC%8A%A4%EB%84%A4%EC%9D%B4%ED%81%AC-%ED%94%84%EB%A6%B0%ED%8A%B8-%EB%A0%88%EB%8D%94%2C-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%80%2C-%EC%8B%A4%EB%B2%84-%EB%A0%88%EB%8D%94-%ED%9E%90%ED%83%AD-%EB%A7%88%EB%9D%BC%ED%86%A4-cod-GWF00892.F007837.55599.html"
+        },
+        {
+          "style": "GWF00892.F007406.15331",
+          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%ED%86%A0%EB%B0%94%EC%BD%94-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EC%96%B4%ED%8D%BC-%26-%EC%8B%A4%EB%B2%84-%EC%8A%A4%ED%83%80-%EB%A7%88%EB%9D%BC%ED%86%A4-%EC%8A%A4%ED%94%BC%EB%93%9C-cod-GWF00892.F007406.15331.html"
+        },
+        {
+          "style": "GWF00976.F007828.25788",
+          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%ED%8D%BC%ED%8F%AC%EB%A0%88%EC%9D%B4%ED%8B%B0%EB%93%9C-%EC%8A%A4%ED%83%80-%26-%ED%99%94%EC%9D%B4%ED%8A%B8-%EB%A0%88%EB%8D%94-%ED%9E%90%ED%83%AD-%ED%95%91%ED%81%AC-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EB%A7%88%EB%9D%BC%ED%86%A4%EC%8A%A4%ED%94%BC%EB%93%9C-cod-GWF00976.F007828.25788.html"
+        }
+      ]
+    },
+    {
+      "brand": "Maison Mihara Yasuhiro",
+      "url": "https://en.miharayasuhiro.jp/products/list.php?category_id=27&sex_id=1",
+      "error": "The operation was aborted due to timeout",
+      "status": "category-replaced-by-complete-official-assortment",
+      "reason": "Official category or editorial page; collect the linked actual sneaker products separately.",
+      "verifiedVariants": 524,
+      "pages": 8
+    },
+    {
+      "brand": "Maison Mihara Yasuhiro",
+      "url": "https://en.miharayasuhiro.jp/products/list.php?category_id=27&sex_id=2",
+      "error": "EXACT_PRODUCT_TITLE_IMAGE_UNVERIFIED",
+      "status": "category-replaced-by-complete-official-assortment",
+      "reason": "Official category or editorial page; collect the linked actual sneaker products separately.",
+      "verifiedVariants": 524,
+      "pages": 8
+    },
+    {
+      "brand": "Maison Mihara Yasuhiro",
+      "url": "https://en.miharayasuhiro.jp/products/list.php?category_id=27&sex_id=4",
+      "error": "EXACT_PRODUCT_TITLE_IMAGE_UNVERIFIED",
+      "status": "category-replaced-by-complete-official-assortment",
+      "reason": "Official category or editorial page; collect the linked actual sneaker products separately.",
+      "verifiedVariants": 524,
+      "pages": 8
+    },
+    {
+      "brand": "PANE",
+      "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-manu-bay",
+      "error": "FOOTWEAR_TYPE_UNVERIFIED",
+      "status": "published",
+      "reason": "Exact product JSON and photo verified; preserve sneaker classification when normalizing its model name.",
+      "id": "arrival-b9d25970a807dc2bcf41"
+    }
+  ],
+  "unresolved": []
+}
