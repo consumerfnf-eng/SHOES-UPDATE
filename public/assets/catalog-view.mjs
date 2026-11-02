@@ -173,10 +173,7 @@ export function filterProducts(products, state, today = kstToday()) {
       if(aa&&bb)return bb.value-aa.value||aa.comparison.rank-bb.comparison.rank||a.id.localeCompare(b.id);
     }
     const recency=p=>isOverlay(p)?overlayWindowDay(p):releaseSortKey(p);
-    // 출시일 최신순 sorts by the date each product actually has - a published
-    // release date, else the day it was confirmed new, else the day we first
-    // saw it - and sends the ones with no date at all to the end rather than
-    // mixing them in at the top where an empty string would put them.
+    // Release sorting uses release dates only; discovery is not a release.
     // LUX first, all of it, then SPORTS with Rockfish Weatherwear leading.
     // Inside a brand the newest comes first, so the ordering is "which house,
     // then what is new from it" rather than one flat date list.
@@ -189,7 +186,7 @@ export function filterProducts(products, state, today = kstToday()) {
       return rb.localeCompare(ra)||a.name.localeCompare(b.name);
     }
     if(state.sort==='release'){
-      const key=p=>releaseSortKey(p)||(isOverlay(p)?overlayWindowDay(p):'');
+      const key=p=>releaseWindow(p)?.start||'';
       const ka=key(a),kb=key(b);
       if(!ka!==!kb)return ka?-1:1;
       return kb.localeCompare(ka)||a.brand.localeCompare(b.brand)||a.name.localeCompare(b.name);
@@ -421,6 +418,10 @@ export function bareStyleCode(style) {
 /** The part of a style code that names the design rather than the colour. */
 export function styleFamily(p) {
   const code = bareStyleCode(p?.style);
+  if(p?.brand==='Golden Goose'){
+    const match=code.match(/^(G[MW]F\d{5})\.[A-Z0-9]+\.[A-Z0-9]+$/);
+    if(match)return match[1];
+  }
   for (const pattern of STYLE_FAMILIES) {
     const match = code.match(pattern);
     if (match) return match[1];

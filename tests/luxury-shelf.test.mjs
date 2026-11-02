@@ -38,7 +38,7 @@ test('the collected brand list puts the maisons first',()=>{
     {name:'Dior',group:'luxury',policy:'mandatory',mandatory:true},
     {name:'Chloé',group:'luxury',policy:'conditional'},
   ]});
-  assert.deepEqual(list,['Zegna','Dior','Nike','Autry']);
+  assert.deepEqual(list,['Autry','Zegna','Dior','Nike']);
 });
 
 test('a shop with an outlet cannot have its shelf taken whole',()=>{
@@ -48,7 +48,7 @@ test('a shop with an outlet cannot have its shelf taken whole',()=>{
   assert.equal(withOutlet.basis,'undetermined');
   const currentOnly=classifyShelfPages('Fendi',[{url:shelf,
     text:`# Sneakers\n[Sneakers](${shelf})\n[Store locator](https://www.example-maison.com/us/stores)`}]);
-  assert.equal(currentOnly.basis,'current-season-only');
+  assert.equal(currentOnly.basis,'undetermined');
   assert.deepEqual(currentOnly.shelves,[shelf]);
   assert.equal(currentOnly.evidence.verified,true);
   assert.equal(currentOnly.evidence.url,shelf);
@@ -91,14 +91,17 @@ test('a maison sneaker publishes on the shelf it stands on, with no product-page
   const raw={id:'ysl-1',brand:'Saint Laurent',name:'Court Classic sneaker',style:'ABC123',url,
     image:'https://www.ysl.com/ABC123_A.jpg',description:'Leather sneakers with a rubber sole',
     arrivalEvidence:{...rows[0].arrivalEvidence,style:'ABC123'}};
+  assert.equal(curateProduct(raw,today,now).reason,'latest-shelf-recent-release-evidence-required');
+  raw.releaseDate='2026-10-15';
+  raw.dateEvidence={verified:true,precision:'day',url,excerpt:'Released October 15, 2026',verifiedAt:now.toISOString()};
   const result=curateProduct(raw,today,now);
   assert(result.product,result.reason);
   assert.equal(result.product.publicationBasis,'maison-shelf-latest');
   assert.equal(result.product.productEvidenceUrl,shelf,'the shelf is the proof, and the record says so');
-  assert.equal(result.product.releaseDate,'','no release date is invented');
+  assert.equal(result.product.releaseDate,'2026-10-15');
   // The same shoe from a brand that is not a maison still needs its proof.
   assert.equal(curateProduct({...raw,brand:'KEEN',arrivalEvidence:{...raw.arrivalEvidence,brand:'KEEN'}},today,now).reason,
-    'release-day-evidence-required');
+    'product-verification-required');
   // Listing evidence is still checked: it has to be about this shoe.
   for(const patch of [{verified:false},{style:'OTHER'},{productUrl:'https://www.ysl.com/en-us/p/other.html'},
                       {url:'https://retailer.example/sneakers'},{kind:'newest'}])

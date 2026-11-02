@@ -5,13 +5,8 @@
 //   node scripts/classify-luxury-shelf.mjs            # every maison
 //   node scripts/classify-luxury-shelf.mjs "Zegna" "Saint Laurent"
 //
-// The test is deliberately one-sided. A shop that offers an outlet, a
-// clearance section, a past-season shelf or a resale programme is keeping
-// more than this season, so its shelf cannot be taken whole - that is
-// `undetermined`, and the shelf is read newest first instead. A shop whose
-// own pages offer none of those, on a page we actually read, is selling this
-// season and nothing else: `current-season-only`. A shop we could not read at
-// all gets no determination and keeps the behaviour it had.
+// Absence of archive links does not prove every product is new.
+// Automated discovery records shelves as undetermined pending affirmative evidence.
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {createOfficialReader} from './official-reader.mjs';
@@ -57,8 +52,8 @@ export function classifyShelfPages(brand,pages){
   if(!read.length)return null;
   return {
     brand,
-    basis:archive.length?'undetermined':'current-season-only',
-    reason:archive.length?'the shop keeps more than this season':'no outlet, clearance, past-season or resale section on the pages read',
+    basis:'undetermined',
+    reason:archive.length?'the shop keeps more than this season':'no affirmative evidence that every sneaker is newly released',
     shelves,latest,
     evidence:{verified:true,kind:'official-shelf-basis',url:read[0],pagesRead:read,
       checkedAt:new Date().toISOString(),

@@ -118,3 +118,10 @@ test('Same-model colorways group into one card in input order; distinct models s
   assert.deepEqual(groupProductVariants([b,a]),[[b,a]],'group order follows first-seen input order, not a sort inside the group');
   assert.deepEqual(groupProductVariants([]),[]);
 });
+
+test('release sorting puts unknown releases after dated products even when discovered later',()=>{
+ const base={brand:'Nike',name:'Runner',image:'https://static.nike.com/test.jpg',category:'sneaker',firstPublishedAt:'2026-09-20T00:00:00Z'};
+ const rows=[{...base,id:'unknown',observedArrivalAt:'2026-09-28T00:00:00Z'}, {...base,id:'older',releaseDate:'2026-08-01'}, {...base,id:'newer',releaseDate:'2026-09-01'}];
+ const state={search:'',brands:new Set(),category:'all',release:'all',source:'all',sort:'release'};
+ assert.deepEqual(filterProducts(rows,state,'2026-09-28').map(p=>p.id),['newer','older','unknown']);
+});

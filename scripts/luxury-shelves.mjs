@@ -32,7 +32,7 @@
 export const LUXURY_MAISONS=new Set(['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine',
   'Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','The Row','Loro Piana','Brunello Cucinelli','Zegna',
   'Chanel','Fendi','Givenchy','Valentino Garavani','Alexander McQueen','Maison Margiela','Rick Owens','Jil Sander',
-  'Lanvin','AMIRI','Off-White']);
+  'Lanvin','AMIRI','Off-White','Golden Goose','Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry']);
 
 export function isLuxuryMaison(brand){return LUXURY_MAISONS.has(brand);}
 

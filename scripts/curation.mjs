@@ -570,6 +570,7 @@ export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:0
   const fit = fitFor(raw, type.category, today);
   const e = raw.dateEvidence;
   const release=releaseWindow(raw);
+  if(raw.arrivalEvidence?.kind==='catalogue-latest-listing' && (!release || e?.verified!==true || !httpUrl(e?.url) || !e?.excerpt || !Number.isFinite(Date.parse(e?.verifiedAt)) || release.start<shiftMonth(today,-3) || release.end>today)) return {reason:'latest-shelf-recent-release-evidence-required'};
   const arrival=hasArrivalEvidence(raw,today)&&isOfficialProductUrl(brand,raw.arrivalEvidence.url)&&!!officialEvidenceFor(raw,today);
   // A shoe that turned up while we were watching the brand is a new listing
   // on our own evidence. It is the weakest of the three bases and the only

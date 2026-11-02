@@ -1,4 +1,5 @@
 import {createHash} from 'node:crypto';
+import {isLuxuryMaison} from './luxury-shelves.mjs';
 
 /** The brands a weekly collection covers, in the order it reads them.
  *
@@ -8,7 +9,7 @@ import {createHash} from 'node:crypto';
  */
 export function collectedBrandList(policy) {
   return policy.brands.filter(b=>b.mandatory||b.policy==='core')
-    .sort((a,b)=>Number(b.group==='luxury')-Number(a.group==='luxury')).map(b=>b.name);
+    .sort((a,b)=>Number(isLuxuryMaison(b.name))-Number(isLuxuryMaison(a.name))).map(b=>b.name);
 }
 
 /** What a run was asked to collect, as one value.
