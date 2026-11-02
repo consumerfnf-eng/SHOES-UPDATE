@@ -140,6 +140,17 @@ export function listingFollowups(text,url,brand,sectionEvidence){
   const count=Number(text.match(/\b([\d,]+)\s+(?:products|items)\b/i)?.[1]?.replaceAll(',',''));
   const ajax=links.find(l=>isNewListing(l.url)&&/\/searchajax\?/.test(l.url)&&new URL(l.url).searchParams.has('start'));
   if(count&&ajax){const next=new URL(ajax.url),size=Number(next.searchParams.get('sz'));const offset=Number(new URL(url).searchParams.get('start')||0)+size;if(size>0&&offset<count&&offset<2000){next.searchParams.set('start',String(offset));result.push({url:next.href,name:'Official New Arrivals next product page'});}}
+  // Some stores print pagination as bare URLs, not Markdown anchors. Only
+  // follow a page-number change on this exact shelf, never arbitrary links.
+  for(const match of text.matchAll(/https:\/\/[^\s<>"\])]+/g)){
+    try{
+      const next=new URL(match[0].replaceAll('&amp;','&')),current=new URL(url);
+      if(next.origin!==current.origin||next.pathname!==current.pathname)continue;
+      const page=['page','pageNumber','p'].find(k=>/^\d+$/.test(next.searchParams.get(k)||''));
+      if(!page||Number(next.searchParams.get(page))<2||canonicalUrl(next.href)===canonicalUrl(url))continue;
+      if(!result.some(r=>canonicalUrl(r.url)===canonicalUrl(next.href)))result.push({url:next.href,name:'Official listing next product page'});
+    }catch{}
+  }
   return result;
 }
 export function listingProduct(candidate,checkedAt){

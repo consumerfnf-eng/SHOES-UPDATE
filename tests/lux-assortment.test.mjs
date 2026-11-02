@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {parseArrivalListing} from '../scripts/new-arrivals.mjs';
+import {parseArrivalListing,listingFollowups} from '../scripts/new-arrivals.mjs';
 import {curateProduct} from '../scripts/curation.mjs';
 import {releaseState} from '../public/assets/release-window.mjs';
 const today='2026-11-02',url='https://www.ysl.com/en-us/p/court-classic-sneaker-ABC123.html',shelf='https://www.ysl.com/en-us/ca/shop-women/shoes/sneakers';
@@ -23,4 +23,10 @@ test('Zegna dotted product URLs are products rather than lost category links',()
  assert.equal(rows.length,1);
  assert.equal(rows[0].url,product);
  assert.equal(rows[0].linkedImages.length,1);
+});
+
+test('bare numbered pagination follows the same official shelf only',()=>{
+ const shelf='https://us.loropiana.com/en/c/shoes/man/sneakers';
+ const rows=listingFollowups(`${shelf}?page=2\nhttps://evil.test/?page=2\nhttps://us.loropiana.com/en/c/man?page=2\n${shelf}?page=1`,shelf,'Loro Piana');
+ assert.deepEqual(rows.map(r=>r.url),[shelf+'?page=2']);
 });
