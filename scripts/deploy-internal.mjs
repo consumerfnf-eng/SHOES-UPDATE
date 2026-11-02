@@ -71,12 +71,17 @@ if (!passwordIsSet(PROJECT)) {
 const staged=await prepareDeploymentAssets(path.join(root,'public'));
 // Compile the password middleware explicitly: the upload directory is temporary
 // and must never rely on Wrangler discovering a neighbouring functions folder.
+// Wrangler's deprecated --outfile emits multipart upload data, not JavaScript.
+// Advanced-mode Pages accepts an _worker.js directory with an index.js module.
 const worker=path.join(staged.directory,'_worker.js');
 const compiled=spawnSync('npx',['wrangler','pages','functions','build',path.join(root,'functions'),
-  '--outfile',worker,'--project-directory',root,'--build-output-directory',staged.directory],
+  '--outdir',worker,'--project-directory',root,'--build-output-directory',staged.directory],
   {cwd:root,stdio:'inherit',shell:process.platform==='win32'});
 if(compiled.status!==0)throw Error('Internal password middleware compilation failed; upload cancelled');
-if(!(await fs.readFile(worker,'utf8')).includes('INTERNAL_SITE_PASSWORD'))throw Error('Password gate absent from compiled worker; upload cancelled');
+const workerSource=await fs.readFile(path.join(worker,'index.js'),'utf8');
+if(!workerSource.includes('INTERNAL_SITE_PASSWORD'))throw Error('Password gate absent from compiled worker; upload cancelled');
+const syntax=spawnSync(process.execPath,['--input-type=module','--check'],{input:workerSource,encoding:'utf8'});
+if(syntax.status!==0)throw Error('Compiled password worker is not a JavaScript module; upload cancelled');
 await fs.mkdir(path.join(root,'logs'),{recursive:true});
 await fs.writeFile(path.join(root,'logs/internal-assets-receipt.json'),JSON.stringify(staged.manifest,null,2)+'\n');
 console.log(`  serving ${staged.manifest.referencedPhotos} referenced photos; ${staged.manifest.unusedPhotosOmitted} unused cached files omitted from upload`);
