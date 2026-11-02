@@ -73,7 +73,8 @@ export function officialHtmlMarkdown(html,url){
   // product URL in the image field and could never show a picture.
   const absolute=value=>{if(!String(value||'').trim())return '';try{const u=new URL(decodeText(value),url);return u.protocol==='https:'&&!u.username&&!u.password?u.href:'';}catch{return '';}};
   const attr=(tag,name)=>tag.match(new RegExp(`(?:^|\\s)${name}=["']([^"']+)["']`,'i'))?.[1]||'';
-  let body=html.replace(/<(script|style|nav|footer|aside)\b[^>]*>[\s\S]*?<\/\1>/gi,'');
+  let body=html.replace(/<(script|style|nav|footer|aside)\b[^>]*>[\s\S]*?<\/\1>/gi,'')
+    .replace(/<([a-z][\w-]*)\b(?=[^>]*\shidden(?=[\s=>]))[^>]*>[\s\S]*?<\/\1>/gi,'');
   // Prada's gallery is a <picture> whose <img> has no src at all: the real
   // renditions sit in the sibling <source srcset>. Hand those candidates to
   // the <img> so the one reader below still sees a single tag to read.
