@@ -19567,10 +19567,10 @@
       "colorName": "White",
       "photoHash": "f5d8d4dbe88f9737",
       "frame": {
-        "x": 0,
-        "y": 0.6145833333333334,
-        "width": 0.8333333333333334,
-        "height": 0.3854166666666667,
+        "x": 0.15,
+        "y": 0.62,
+        "width": 0.72,
+        "height": 0.27,
         "imageWidth": 640,
         "imageHeight": 800
       },
@@ -19578,14 +19578,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN272AFDH710_SBG_E02?$r4x5_raw$&crop=0,0,4000,5000&wid=1600&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/0a5e565f41c887a8b1224083e46a4e5f1a0a689ee50be649f8a09a604ed0eb04.webp",
         "frame": {
-          "x": 0,
-          "y": 0.6145833333333334,
-          "width": 0.8333333333333334,
-          "height": 0.3854166666666667,
+          "x": 0.15,
+          "y": 0.62,
+          "width": 0.72,
+          "height": 0.27,
           "imageWidth": 640,
           "imageHeight": 800
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN272AHIH60I_SBG_E02-1?%24r2x3_raw%24=&wid=1280": {
       "version": 1,
@@ -30482,10 +30485,10 @@
       "colorName": "Light Grey",
       "photoHash": "c080a0c0183f2ffe",
       "frame": {
-        "x": 0.0625,
-        "y": 0.46875,
-        "width": 0.9375,
-        "height": 0.53125,
+        "x": 0.15,
+        "y": 0.49,
+        "width": 0.72,
+        "height": 0.27,
         "imageWidth": 1024,
         "imageHeight": 1280
       },
@@ -30493,14 +30496,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN352ACLH065_SBG_E02-7?%24r2x3_raw%24=&wid=1280",
         "cachedPath": "/images/54a87f05df46b4210f09ee4bb6d53b2d318eeb358db5376a7862c2c2feb7ea2e.webp",
         "frame": {
-          "x": 0.0625,
-          "y": 0.46875,
-          "width": 0.9375,
-          "height": 0.53125,
+          "x": 0.15,
+          "y": 0.49,
+          "width": 0.72,
+          "height": 0.27,
           "imageWidth": 1024,
           "imageHeight": 1280
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN352ACLH066_SBG_E02-11?%24r2x3_raw%24=&wid=1280": {
       "version": 1,
@@ -31668,10 +31674,10 @@
       "colorName": "Black",
       "photoHash": "f0e0f0f09e0f26f0",
       "frame": {
-        "x": 0,
-        "y": 0.4895833333333333,
-        "width": 0.8333333333333334,
-        "height": 0.5104166666666666,
+        "x": 0.15,
+        "y": 0.49,
+        "width": 0.72,
+        "height": 0.27,
         "imageWidth": 1024,
         "imageHeight": 1280
       },
@@ -31679,14 +31685,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN364AAZH981_SBG_E02-2?%24r2x3_raw%24=&wid=1280",
         "cachedPath": "/images/c3abd7ba58d4858cffb5c27ae9cbe338edbf0cece12467e4fae60864c9ed087a.webp",
         "frame": {
-          "x": 0,
-          "y": 0.4895833333333333,
-          "width": 0.8333333333333334,
-          "height": 0.5104166666666666,
+          "x": 0.15,
+          "y": 0.49,
+          "width": 0.72,
+          "height": 0.27,
           "imageWidth": 1024,
           "imageHeight": 1280
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN364AAZH736_SBG_E02-1?%24r2x3_raw%24=&wid=1280": {
       "version": 1,
@@ -133487,10 +133496,10 @@
       "colorName": "Black",
       "photoHash": "f8f0fce4181e3f33",
       "frame": {
-        "x": 0.0,
-        "y": 0.0,
-        "width": 0.90625,
-        "height": 0.78125,
+        "x": 0.1,
+        "y": 0.42,
+        "width": 0.79,
+        "height": 0.34,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -133498,14 +133507,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SH126ZSAH969_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/b3b4b3af267fea7b9a95137298d311da607e21a1db3b1c33d5d8244ddcb6e1d1.webp",
         "frame": {
-          "x": 0.0,
-          "y": 0.0,
-          "width": 0.90625,
-          "height": 0.78125,
+          "x": 0.1,
+          "y": 0.42,
+          "width": 0.79,
+          "height": 0.34,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SH126ZSAH961_SBG_E02-4?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -133513,10 +133525,10 @@
       "colorName": "Black",
       "photoHash": "e8f8e4303e2fa8f4",
       "frame": {
-        "x": 0.0,
-        "y": 0.0,
-        "width": 0.8645833333333334,
-        "height": 0.78125,
+        "x": 0.1,
+        "y": 0.42,
+        "width": 0.79,
+        "height": 0.34,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -133524,14 +133536,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SH126ZSAH961_SBG_E02-4?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/6c11dde65144f42f5b17951b49e00a1f4bb186011626f420f8d42bbd62614881.webp",
         "frame": {
-          "x": 0.0,
-          "y": 0.0,
-          "width": 0.8645833333333334,
-          "height": 0.78125,
+          "x": 0.1,
+          "y": 0.42,
+          "width": 0.79,
+          "height": 0.34,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://media.christiandior.com/cdn-cgi/image/width=3000,format=auto,quality=80/pm_11872_1394_1394091-de7cj1fn0d-whr.jpg": {
       "version": 1,
@@ -133565,10 +133580,10 @@
       "colorName": "White / Black",
       "photoHash": "f0e8f8f8f0d83e3f",
       "frame": {
-        "x": 0.09765625,
-        "y": 0.5104166666666666,
-        "width": 0.71484375,
-        "height": 0.25,
+        "x": 0.08,
+        "y": 0.5,
+        "width": 0.84,
+        "height": 0.27,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -133578,14 +133593,16 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN249YJPH069_SBG_E02-6?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/9a11c90cadb91c908305f0d606a9ac3503e2d9d308b273a5ae12caa91544faf6.webp",
         "frame": {
-          "x": 0.09765625,
-          "y": 0.5104166666666666,
-          "width": 0.71484375,
-          "height": 0.25,
+          "x": 0.08,
+          "y": 0.5,
+          "width": 0.84,
+          "height": 0.27,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN249ZSAH969_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -133593,10 +133610,10 @@
       "colorName": "Black",
       "photoHash": "f8f8f8f01f3f37f0",
       "frame": {
-        "x": 0.09375,
-        "y": 0.4375,
-        "width": 0.90625,
-        "height": 0.5625,
+        "x": 0.1,
+        "y": 0.51,
+        "width": 0.79,
+        "height": 0.25,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -133604,14 +133621,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN249ZSAH969_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/2c02a484f946f46ac7637aed58ac514e1900e759acbe62f8f03f874ed7c76fcf.webp",
         "frame": {
-          "x": 0.09375,
-          "y": 0.4375,
-          "width": 0.90625,
-          "height": 0.5625,
+          "x": 0.1,
+          "y": 0.51,
+          "width": 0.79,
+          "height": 0.25,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SH118YJPH069_SBG_E02-5?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -133619,10 +133639,10 @@
       "colorName": "White",
       "photoHash": "f0f0c8303e3f2cc2",
       "frame": {
-        "x": 0.09375,
-        "y": 0.4166666666666667,
-        "width": 0.90625,
-        "height": 0.4270833333333333,
+        "x": 0.08,
+        "y": 0.43,
+        "width": 0.84,
+        "height": 0.34,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -133630,14 +133650,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SH118YJPH069_SBG_E02-5?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/887569f2d99b70211851e2a8fcb040eea33cc70f893120f20ca509671f847537.webp",
         "frame": {
-          "x": 0.09375,
-          "y": 0.4166666666666667,
-          "width": 0.90625,
-          "height": 0.4270833333333333,
+          "x": 0.08,
+          "y": 0.43,
+          "width": 0.84,
+          "height": 0.34,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN249ZSAH961_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -133803,10 +133826,10 @@
       "colorName": "Light Grey",
       "photoHash": "f8f0f0d81f37cbf7",
       "frame": {
-        "x": 0.03125,
-        "y": 0.4791666666666667,
-        "width": 0.96875,
-        "height": 0.5208333333333334,
+        "x": 0.08,
+        "y": 0.5,
+        "width": 0.84,
+        "height": 0.27,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -133814,14 +133837,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN272ZIJH052_SBG_E02-5?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/adb23c8d3592097c5b6664e4eefbd26ddd550e9dafd49958edf2ee3764db6236.webp",
         "frame": {
-          "x": 0.03125,
-          "y": 0.4791666666666667,
-          "width": 0.96875,
-          "height": 0.5208333333333334,
+          "x": 0.08,
+          "y": 0.5,
+          "width": 0.84,
+          "height": 0.27,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN272ZIRH165_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -133829,10 +133855,10 @@
       "colorName": "White",
       "photoHash": "f8f8f8f01c0f73e0",
       "frame": {
-        "x": 0.0,
-        "y": 0.0,
-        "width": 0.8958333333333334,
-        "height": 0.78125,
+        "x": 0.1,
+        "y": 0.51,
+        "width": 0.79,
+        "height": 0.25,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -133840,14 +133866,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN272ZIRH165_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/b4c25bf669bd34b5e51440b35ce21ce0d44d0a8774af27eb0ecba456348746b1.webp",
         "frame": {
-          "x": 0.0,
-          "y": 0.0,
-          "width": 0.8958333333333334,
-          "height": 0.78125,
+          "x": 0.1,
+          "y": 0.51,
+          "width": 0.79,
+          "height": 0.25,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN272ZAYH645_SBG_E02-4?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -133937,10 +133966,10 @@
       "colorName": "White",
       "photoHash": "f4fcfed81f37eef8",
       "frame": {
-        "x": 0.0,
-        "y": 0.21875,
-        "width": 1.0,
-        "height": 0.6458333333333334,
+        "x": 0.1,
+        "y": 0.51,
+        "width": 0.79,
+        "height": 0.25,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -133948,14 +133977,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN272AEDH513_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/cca0559c082851b14fd566be2cfe88efe96a90389d7903877603d7d162da653e.webp",
         "frame": {
-          "x": 0.0,
-          "y": 0.21875,
-          "width": 1.0,
-          "height": 0.6458333333333334,
+          "x": 0.1,
+          "y": 0.51,
+          "width": 0.79,
+          "height": 0.25,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN272ZAYH877_SBG_E02-2?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -133989,10 +134021,10 @@
       "colorName": "White",
       "photoHash": "fcfcfcf43e7ffaf0",
       "frame": {
-        "x": 0.10416666666666667,
+        "x": 0.1,
         "y": 0.5,
-        "width": 0.4375,
-        "height": 0.2708333333333333,
+        "width": 0.79,
+        "height": 0.26,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -134000,14 +134032,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN272ZSBH000_SBG_E02-6?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/98ae81374f16ca9dcb0a5347d8e07cdb6e68de811babf14ee63f5f130d9ef224.webp",
         "frame": {
-          "x": 0.10416666666666667,
+          "x": 0.1,
           "y": 0.5,
-          "width": 0.4375,
-          "height": 0.2708333333333333,
+          "width": 0.79,
+          "height": 0.26,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN303ZAYH836_SBG_E02-6?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -134015,10 +134050,10 @@
       "colorName": "White",
       "photoHash": "f8f0e8e01e3fdbd5",
       "frame": {
-        "x": 0.09375,
-        "y": 0.3958333333333333,
-        "width": 0.90625,
-        "height": 0.4791666666666667,
+        "x": 0.08,
+        "y": 0.54,
+        "width": 0.84,
+        "height": 0.23,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -134026,14 +134061,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN303ZAYH836_SBG_E02-6?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/b3a9828a7dfc0c9722d0d5af4b3bbbda9a300ee5eea4b39f2e464a99f69dda24.webp",
         "frame": {
-          "x": 0.09375,
-          "y": 0.3958333333333333,
-          "width": 0.90625,
-          "height": 0.4791666666666667,
+          "x": 0.08,
+          "y": 0.54,
+          "width": 0.84,
+          "height": 0.23,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN303ZAYH960_SBG_E02-4?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -134093,10 +134131,10 @@
       "colorName": "White",
       "photoHash": "f8fcf8d81f37cbe4",
       "frame": {
-        "x": 0.0,
-        "y": 0.0,
-        "width": 0.8958333333333334,
-        "height": 0.78125,
+        "x": 0.1,
+        "y": 0.5,
+        "width": 0.79,
+        "height": 0.26,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -134104,14 +134142,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN272ZACH580_SBG_E02-5?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/84a64a45116d9445245d6a5e142b43f9b7a3565313a8f8d59bd464c2d8d5de19.webp",
         "frame": {
-          "x": 0.0,
-          "y": 0.0,
-          "width": 0.8958333333333334,
-          "height": 0.78125,
+          "x": 0.1,
+          "y": 0.5,
+          "width": 0.79,
+          "height": 0.26,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN303ZAYH000_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -134119,10 +134160,10 @@
       "colorName": "Light Grey",
       "photoHash": "fcf8f8d03e6e66f4",
       "frame": {
-        "x": 0.10416666666666667,
-        "y": 0.5208333333333334,
-        "width": 0.4791666666666667,
-        "height": 0.25,
+        "x": 0.08,
+        "y": 0.54,
+        "width": 0.84,
+        "height": 0.23,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -134130,14 +134171,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/3SN303ZAYH000_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/c73d664ee17f556b1d7bcc68ebe6cf201b2e8a914b0e4c847d7f0e16675a2a16.webp",
         "frame": {
-          "x": 0.10416666666666667,
-          "y": 0.5208333333333334,
-          "width": 0.4791666666666667,
-          "height": 0.25,
+          "x": 0.08,
+          "y": 0.54,
+          "width": 0.84,
+          "height": 0.23,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/3SN318ZXUH860_SBG_E02-4?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -140441,10 +140485,10 @@
       "colorName": "White",
       "photoHash": "fcf8fcf83c6e5afc",
       "frame": {
-        "x": 0.0,
-        "y": 0.0,
-        "width": 1.0,
-        "height": 0.8229166666666666,
+        "x": 0.1,
+        "y": 0.5,
+        "width": 0.79,
+        "height": 0.26,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -140452,14 +140496,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/KCK414TRMS10W_SBG_E02-5?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/751161f3a27f6157c6b785c814d072284ad28b4d6a6e3159d72244e0041d24cb.webp",
         "frame": {
-          "x": 0.0,
-          "y": 0.0,
-          "width": 1.0,
-          "height": 0.8229166666666666,
+          "x": 0.1,
+          "y": 0.5,
+          "width": 0.79,
+          "height": 0.26,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/KCK361CLDS19W_SBG_E02-5?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -140573,10 +140620,10 @@
       "colorName": "Light Grey",
       "photoHash": "fffffffe2f6e7f3f",
       "frame": {
-        "x": 0.052083333333333336,
-        "y": 0.4791666666666667,
-        "width": 0.53125,
-        "height": 0.2916666666666667,
+        "x": 0.08,
+        "y": 0.48,
+        "width": 0.84,
+        "height": 0.28,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -140584,14 +140631,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/KCK413CLDS19W_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/f079cc574295f26a1a9967fc4d7d9c3f91ef21f750ce653a9895b255329ac8d1.webp",
         "frame": {
-          "x": 0.052083333333333336,
-          "y": 0.4791666666666667,
-          "width": 0.53125,
-          "height": 0.2916666666666667,
+          "x": 0.08,
+          "y": 0.48,
+          "width": 0.84,
+          "height": 0.28,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/KCK443OLDS11W_SBG_E02-1?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -140625,10 +140675,10 @@
       "colorName": "White",
       "photoHash": "fefff7df3f6f7fff",
       "frame": {
-        "x": 0.0,
-        "y": 0.0,
-        "width": 1.0,
-        "height": 0.90625,
+        "x": 0.1,
+        "y": 0.49,
+        "width": 0.79,
+        "height": 0.27,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -140636,14 +140686,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/KCK557OLAS10W_SBG_E02-1?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/275a1713d6b10a5e3cc4922584303fbde1a5880d635b4e53cd7503f7933ad731.webp",
         "frame": {
-          "x": 0.0,
-          "y": 0.0,
-          "width": 1.0,
-          "height": 0.90625,
+          "x": 0.1,
+          "y": 0.49,
+          "width": 0.79,
+          "height": 0.27,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://assets.christiandior.com/is/image/diorprod/KCK365OBUS29W_SBG_E02-3?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80": {
       "version": 1,
@@ -140781,10 +140834,10 @@
       "colorName": "White",
       "photoHash": "f9fbf5e42f3f7ffe",
       "frame": {
-        "x": 0.0,
-        "y": 0.0,
-        "width": 0.8854166666666666,
-        "height": 1.0,
+        "x": 0.1,
+        "y": 0.55,
+        "width": 0.79,
+        "height": 0.21,
         "imageWidth": 1334,
         "imageHeight": 2000
       },
@@ -140792,14 +140845,17 @@
         "image": "https://assets.christiandior.com/is/image/diorprod/KCK535BAFS43L_SBG_E02-1?$r2x3_raw$&crop=0,0,4000,5000&wid=1334&hei=2000&scale=1&bfc=on&qlt=80",
         "cachedPath": "/images/a5e617502c76b271197d1452dbe04e0cacfe07ec197f3d00a5e1764469a60590.webp",
         "frame": {
-          "x": 0.0,
-          "y": 0.0,
-          "width": 0.8854166666666666,
-          "height": 1.0,
+          "x": 0.1,
+          "y": 0.55,
+          "width": 0.79,
+          "height": 0.21,
           "imageWidth": 1334,
           "imageHeight": 2000
         }
-      }
+      },
+      "reviewed": true,
+      "frameReviewMethod": "whole-shoe-manual-studio-margin-review-2026-11-02",
+      "needsReview": false
     },
     "https://cdn.shopify.com/s/files/1/0655/9278/7001/files/DS02F6820_RUB_09ALL_01.jpg?v=1785159980": {
       "version": 1,
