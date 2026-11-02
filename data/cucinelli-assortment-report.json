@@ -1,0 +1,377 @@
+{
+  "checkedAt": "2026-11-02T04:04:23.753Z",
+  "pages": [
+    {
+      "url": "https://shop.brunellocucinelli.com/en-ae/men/shoes/?start=84&sz=92",
+      "loaded": 92,
+      "advertisedTotal": 92,
+      "uniqueProducts": 91
+    },
+    {
+      "url": "https://shop.brunellocucinelli.com/en-ae/women/shoes/?start=42&sz=63",
+      "loaded": 63,
+      "advertisedTotal": 63,
+      "uniqueProducts": 63
+    }
+  ],
+  "verifiedSneakers": 65,
+  "excluded": [
+    {
+      "style": "262MZUNLOI339CAB82",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUNKMI339CEL33",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUCCLB702C6784",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUFOXR662C9837",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUNSMQ677COL80",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUVRNF721C8033",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUATMR674C9843",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSUMC937C101",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUFOXU678C9840",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSSAR682C8057",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZURYMR683CLG50",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUFXER667CIB43",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUFOXR660C9840",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUFOXR663C9836",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUANRW668CRB01",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUANSG680C8417",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "271MZUIVGB684C4202",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUCRTE705C8434",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSOLT709C7962",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUDBDS890CKJ26",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUBMLE818C9855",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSORR675CWF40",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZURCCS890CUX81",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZURCCS890CMR73",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSOLE670C9834",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSOLE784C9832",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSOLF673C7959",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSOLX810C7959",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUDERG665C7959",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUVHRR676CQV46",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZURCCS890CSD16",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSOLT709C7959",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUFXEU678CKC46",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSOLE818C9832",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSOLE817C7962",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUHVSP335C4230",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUHVSP335C4298",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSXRR676CVK68",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUSOLE670C9832",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUOXSF673CKC46",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZUHVSN335C2692",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG3437C9795",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC3440C9885",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSLC3440C101",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "271MZ85G3446C2131",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG3407C8187",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZFAC3256C8778",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "271MZSKC3447C2086",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "271MZGAC3279C8279",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSLC3433C9968",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC3178C8849",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG3408C9773",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSKC3431C8279",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSAC3358C8279",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSKC2828C101",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC2500C8769",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZMIG1390C6351",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZ57G3373C016",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSKG2370C101",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG2370C5859",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG3034C7284",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC3358C9773",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZRAC3424C2390",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG3123C9795",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZOLG3308C101",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSKC3430C8279",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSLC3359C101",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG3308C9885",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG2569C5859",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG3300C5859",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG3410C9795",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSKC3345C4187",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC3320C9773",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSKC3344C101",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC3316C9795",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC3256C9795",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSLC3050C9122",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSKC2828C8922",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSAG3408C8279",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSLC3050C101",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSKC3369C4187",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSKC3369C8279",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC3368C8769",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC3080C9773",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC2600C9795",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSLC3370C9122",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG2569C9795",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFC3256C5859",
+      "reason": "not-in-official-sneaker-category"
+    },
+    {
+      "style": "262MZSFG3409C8769",
+      "reason": "not-in-official-sneaker-category"
+    }
+  ],
+  "scope": "Rendered official UAE men and women shoe listings; other regions and undisplayed variants are not independently reconciled"
+}

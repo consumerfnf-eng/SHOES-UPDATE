@@ -45,7 +45,7 @@ const productPath=/\/(?:products?|produtos|p|pr|pd|t)\/|\/[^/]+\.html(?:$|\?)|(?
 // shoes can publish.
 const kidsListing=/(?:^|[\/_-])(?:kids?|kid-new|junior|juniors|youth|boys?|girls?|children|toddler|infant|baby|bebe|enfant|bambino|키즈|아동|주니어|유아)(?:[\/_-]|$)/i;
 export function isKidsListing(url){try{return kidsListing.test(readablePath(new URL(url).pathname))||kidsListing.test(new URL(url).search);}catch{return false;}}
-function isProductLink(url){try{const u=new URL(url);return productPath.test(u.pathname)||u.hostname.endsWith('valentino.com')&&/\/product-[^/]+/.test(u.pathname)||u.hostname.endsWith('zegna.com')&&/\/product\.[^/]+\.\d+\/?$/.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
+function isProductLink(url){try{const u=new URL(url);if(/(?:prada|miumiu)\.com$/.test(u.hostname)&&/\/c\/[^/]+\.html$/.test(u.pathname))return false;return productPath.test(u.pathname)||u.hostname.endsWith('valentino.com')&&/\/product-[^/]+/.test(u.pathname)||u.hostname.endsWith('zegna.com')&&/\/product\.[^/]+\.\d+\/?$/.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
 function colorLabel(alt,brand){
   if(brand==='Cecilie Bahnsen'&&/\b[A-Z]+\/[A-Z]+$/.test(alt))return alt.split(/\s+/).at(-1);
   let color=['ASICS','PUMA','Onitsuka Tiger'].includes(brand)?alt.split(',')[1]?.trim().replace(/\s+\d+$/,'')||'':alt.split(/\s[-—–]\s/)[1]||'';
@@ -53,7 +53,7 @@ function colorLabel(alt,brand){
   return /\b(?:women|men|unisex|image|view|united states)\b|\|/.test(color.toLowerCase())?'':color;
 }
 const imageUrls=text=>markdownLinks(text).flatMap(l=>l.image?[l]:markdownLinks(l.label).filter(child=>child.image)).map(l=>({alt:l.label,url:l.url})).filter(i=>{
-  if(/(?:placeholder|fallback|logo|swatch|icon|LOOK_|lookbook|campaign|lifestyle|cardPayment|packaging|_MDL\b|variantthumbnail)/i.test(i.url+' '+i.alt)||/\/Menu\/|\/(?:undefined|null)(?:[?/#]|$)/i.test(i.url)||/[.]svg(?:[?\/]|$)/i.test(i.url))return false;
+  if(/(?:placeholder|fallback|logo|swatch|icon|LOOK_|lookbook|campaign|lifestyle|cardPayment|packaging|_MDL\b|variantthumbnail)/i.test(i.url+' '+i.alt)||/\/(?:new[-_])?menu\/|\/(?:undefined|null)(?:[?/#]|$)/i.test(i.url)||/[.]svg(?:[?\/]|$)/i.test(i.url))return false;
   const u=new URL(i.url),size=Number(u.searchParams.get('width')||u.searchParams.get('wid')||u.searchParams.get('w'));
   return !(size&&size<160)&&!/(?:^|[\/_])(?:40x40|60x60|80x80)(?:[\/_]|$)/i.test(u.pathname);
 });
@@ -288,7 +288,7 @@ export function pageProduct(candidate,text,checkedAt,existing){
   const itemBody=body.slice(body.indexOf('# '+heading));
   const code=itemBody.match(/(?:^|\n)[\s*-]*(?:product (?:code|id)|style (?:code|no\.?|number|#)|sku|reference|品番|제품 코드|상품코드)\s*:?\s*([A-Z0-9][A-Z0-9_.-]{3,70})/i)?.[1];
   const last=new URL(url).pathname.split('/').filter(Boolean).pop().replace(/\.html$/i,'');
-  const fromUrl=/^[A-Z0-9][A-Z0-9_.-]{4,}$/.test(last)?last:last.match(/(?:-p-|[-_])([A-Z0-9_]{7,})$/)?.[1]||'';
+  const fromUrl=/^[A-Z0-9][A-Z0-9_.-]{4,}$/.test(last)?last:last.match(/(?:-p-|[-_])([A-Z0-9_.]{7,})$/)?.[1]||'';
   const variant=candidate.brand==='New Balance'?[...new URL(url).searchParams].find(([k])=>/_style$/.test(k))?.[1]:'';
   const verifiedVariant=variant&&body.toLowerCase().includes(variant.toLowerCase())?variant:'';
   const style=verifiedVariant||fromUrl||code||last;
@@ -304,7 +304,7 @@ export function pageProduct(candidate,text,checkedAt,existing){
   if(!chosen)return null;
   const detail=body.slice(body.indexOf('# '+heading)).split(/\n#{1,4}\s*(?:Contact us|Shipping|Delivery|Free shipping|SUBSCRIBE)/i)[0];
   const description=detail.split('\n').filter(l=>!l.includes('https://')&&l.trim().length>30).join(' ').slice(0,6000);
-  const p={id:existing?.id||`arrival-${digest(candidate.brand+'|'+canonicalUrl(url)).slice(0,20)}`,brand:candidate.brand,name:clean(heading),url,image:chosen.url,style,...(styleType?{styleType}:{}),description,
+  const p={id:existing?.id||`arrival-${digest(candidate.brand+'|'+canonicalUrl(url)).slice(0,20)}`,brand:candidate.brand,name:clean(heading),url,image:chosen.url,style,styleType:styleType||'sku',description,
     colorway:body.match(/(?:^|\n)\s*[-*]?\s*#{0,3}\s*(?:Colors?|Colours?|색상)\s*:?\s*([^\n]{2,90})/i)?.[1]?.trim()||colorLabel(chosen.alt,candidate.brand),colors:[],
     priceLabel:body.match(/(?:[$€£₩¥]\s?[0-9,.]+|[0-9][0-9,.]*\s?(?:원|円|USD|EUR|GBP|KRW|JPY))/)?.[0]||'',country:region(url),gender:/\/women|\/womens|shop-women/i.test(url)?'Women':/\/men|\/mens|shop-men/i.test(url)?'Men':'',
     firstSeen:checkedAt,productVerifiedAt:checkedAt,productEvidenceUrl:url,arrivalEvidence:{...candidate.arrivalEvidence,style},sourceSignals:[]};

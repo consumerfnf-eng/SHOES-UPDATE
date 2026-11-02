@@ -1,0 +1,265 @@
+{
+  "checkedAt": "2026-11-02T04:52:31.795Z",
+  "products": [
+    {
+      "id": "arrival-c0b033712701672a32c7",
+      "brand": "Givenchy",
+      "name": "Givenchy Puffy Yard sneakers in nappa leather",
+      "style": "BH00B7H1XT-100",
+      "styleType": "sku",
+      "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-100.html",
+      "image": "https://assets.givenchy.com/asset/a6729f20-1866-491a-9960-46eaecf79215/High-Resolution-JPG/BH00B7H1XT100-03-02.jpg?imwidth=1024",
+      "description": "Givenchy Puffy Yard sneakers in nappa leather $950",
+      "colorway": "White",
+      "colors": [],
+      "priceLabel": "$950",
+      "country": "US",
+      "firstSeen": "2026-11-02T02:35:46.117Z",
+      "productVerifiedAt": "2026-11-02T04:49:47.537Z",
+      "productEvidenceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-100.html",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BH00B7H1XT-100",
+        "productUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-100.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-100.html",
+        "verifiedAt": "2026-11-02T04:49:47.537Z",
+        "contentHash": "ed96c3c1dd34bb3513d30ff9cf5171bbab568779d877047ff6aa0cf00437bbb7",
+        "excerpt": "Rendered official product title, colour, SKU and loaded product photograph"
+      },
+      "sourceSignals": [],
+      "imageCandidates": [
+        {
+          "alt": "Image 122: Givenchy Puffy Yard sneakers in nappa leather",
+          "url": "https://www.givenchy.com/us/en-US/men/discover/spring-2027/"
+        }
+      ],
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BH00B7H1XT-100",
+        "verifiedAt": "2026-11-02T04:49:47.537Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "ed96c3c1dd34bb3513d30ff9cf5171bbab568779d877047ff6aa0cf00437bbb7",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-100.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BH00B7H1XT-100",
+        "verifiedAt": "2026-11-02T04:49:47.537Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "ed96c3c1dd34bb3513d30ff9cf5171bbab568779d877047ff6aa0cf00437bbb7",
+        "url": "https://assets.givenchy.com/asset/a6729f20-1866-491a-9960-46eaecf79215/High-Resolution-JPG/BH00B7H1XT100-03-02.jpg?imwidth=1024",
+        "sourceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-100.html"
+      },
+      "firstPublishedAt": "2026-11-02T03:34:44.671Z",
+      "checkedAt": "2026-11-02T04:49:47.537Z",
+      "officialCategory": "Sneakers",
+      "gender": "Men"
+    },
+    {
+      "brand": "Givenchy",
+      "name": "Givenchy Puffy Yard sneakers in nappa leather",
+      "style": "BH00B7H1XT-400",
+      "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-400.html",
+      "image": "https://assets.givenchy.com/asset/e7145b9a-1316-4fad-ad7c-f7473605f762/High-Resolution-JPG/BH00B7H1XT400-03-02.jpg?imwidth=1024",
+      "colorway": "Blue",
+      "checkedAt": "2026-11-02T04:50:03.093Z",
+      "id": "arrival-47cb5ab327545b6c37bc",
+      "styleType": "sku",
+      "officialCategory": "Sneakers",
+      "gender": "Men",
+      "firstSeen": "2026-11-02T04:50:03.093Z",
+      "productVerifiedAt": "2026-11-02T04:50:03.093Z",
+      "productEvidenceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-400.html",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BH00B7H1XT-400",
+        "productUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-400.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-400.html",
+        "verifiedAt": "2026-11-02T04:50:03.093Z",
+        "contentHash": "42a4d1e99956959bbb6d59ed489a67ed2f14171245d26fe96bad0d35e3292185",
+        "excerpt": "Rendered official product title, colour, SKU and loaded product photograph"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BH00B7H1XT-400",
+        "verifiedAt": "2026-11-02T04:50:03.093Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "42a4d1e99956959bbb6d59ed489a67ed2f14171245d26fe96bad0d35e3292185",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-400.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BH00B7H1XT-400",
+        "verifiedAt": "2026-11-02T04:50:03.093Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "42a4d1e99956959bbb6d59ed489a67ed2f14171245d26fe96bad0d35e3292185",
+        "url": "https://assets.givenchy.com/asset/e7145b9a-1316-4fad-ad7c-f7473605f762/High-Resolution-JPG/BH00B7H1XT400-03-02.jpg?imwidth=1024",
+        "sourceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-400.html"
+      }
+    },
+    {
+      "brand": "Givenchy",
+      "name": "Givenchy Puffy Yard sneakers in nappa leather",
+      "style": "BH00B7H1XT-640",
+      "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-640.html",
+      "image": "https://assets.givenchy.com/asset/97dae969-3d4d-46f7-96fa-64cbf3860605/High-Resolution-JPG/BH00B7H1XT640-03-02.jpg?imwidth=1024",
+      "colorway": "Vermillon",
+      "checkedAt": "2026-11-02T04:50:19.920Z",
+      "id": "arrival-16ccb0d0fb007c64c0b9",
+      "styleType": "sku",
+      "officialCategory": "Sneakers",
+      "gender": "Men",
+      "firstSeen": "2026-11-02T04:50:19.920Z",
+      "productVerifiedAt": "2026-11-02T04:50:19.920Z",
+      "productEvidenceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-640.html",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BH00B7H1XT-640",
+        "productUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-640.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-640.html",
+        "verifiedAt": "2026-11-02T04:50:19.920Z",
+        "contentHash": "3c5fe1efaf12aa5e4bad2c666462e3d5ccaa0228ec405e45f73ea428515e6310",
+        "excerpt": "Rendered official product title, colour, SKU and loaded product photograph"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BH00B7H1XT-640",
+        "verifiedAt": "2026-11-02T04:50:19.920Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "3c5fe1efaf12aa5e4bad2c666462e3d5ccaa0228ec405e45f73ea428515e6310",
+        "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-640.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Givenchy",
+        "style": "BH00B7H1XT-640",
+        "verifiedAt": "2026-11-02T04:50:19.920Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "3c5fe1efaf12aa5e4bad2c666462e3d5ccaa0228ec405e45f73ea428515e6310",
+        "url": "https://assets.givenchy.com/asset/97dae969-3d4d-46f7-96fa-64cbf3860605/High-Resolution-JPG/BH00B7H1XT640-03-02.jpg?imwidth=1024",
+        "sourceUrl": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BH00B7H1XT-640.html"
+      }
+    },
+    {
+      "id": "official-0fa57fb7f002ec08",
+      "brand": "Dior",
+      "filterBrands": [
+        "Dior"
+      ],
+      "category": "luxury",
+      "name": "Dior Ribbon Sneaker",
+      "url": "https://www.dior.com/en_us/fashion/products/KCK553SUE_S69W",
+      "image": "https://assets.christiandior.com/is/image/diorprod/KCK553SUES69W_SBG_E03-2?$r4x5_raw$&crop=0,0,4000,5000&wid=640&hei=800&scale=0.4000&bfc=on&qlt=80",
+      "evidence": "official_latest",
+      "releaseLabel": "2026.09.04 공식 최신순 #9",
+      "releaseDate": "",
+      "style": "KCK553SUE_S69W",
+      "colorway": "White and Beige Suede Calfskin",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "#F0EFE9",
+          "accuracy": "name"
+        }
+      ],
+      "source": "Dior Official",
+      "note": "Dior 공식 홈페이지 슈즈/런치 최신순 상위 노출 상품. 2026.09.04 KST 확인.",
+      "rank": 204,
+      "productType": "sneaker",
+      "firstSeen": "2026-09-04T10:00:00+09:00",
+      "observedAt": "2026-09-15T07:58:53+09:00",
+      "isSeed": true,
+      "status": "official_snapshot",
+      "officialListingUrl": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers",
+      "gender": "Women",
+      "newness": "",
+      "autoColor": false,
+      "modelGroup": "dior|dior ribbon sneaker",
+      "primaryColor": {
+        "name": "White",
+        "hex": "#F0EFE9",
+        "accuracy": "name"
+      },
+      "dataQuality": "cleaned-existing",
+      "qaStatus": "PASS",
+      "qaCheckedAt": "2026-09-15T07:58:53+09:00",
+      "researchStrictReasons": {
+        "#QuietPrecision": "화이트·베이지 스웨이드의 저채도 톤과 정교한 패널 마감."
+      },
+      "researchMatchMode": "strict-source-led-v2",
+      "variantColors": [
+        {
+          "name": "Beige",
+          "hex": "#C5B294",
+          "accuracy": "name"
+        },
+        {
+          "name": "Multicolour",
+          "hex": "#8C8278",
+          "accuracy": "name"
+        },
+        {
+          "name": "Silver",
+          "hex": "#B9BCC2",
+          "accuracy": "name"
+        },
+        {
+          "name": "Black",
+          "hex": "#181818",
+          "accuracy": "name"
+        }
+      ],
+      "seasonQa": "SS_COMPATIBLE_NO_WINTER_SIGNAL",
+      "seasonQaReason": "Season-neutral permitted shoe type; no FW, winter, fur, fleece, padded or insulated signal.",
+      "checkedAt": "2026-11-02T04:46:40.806Z",
+      "styleType": "sku",
+      "officialCategory": "Sneakers",
+      "productVerifiedAt": "2026-11-02T04:46:40.806Z",
+      "productEvidenceUrl": "https://www.dior.com/en_us/fashion/products/KCK553SUE_S69W",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Dior",
+        "style": "KCK553SUE_S69W",
+        "productUrl": "https://www.dior.com/en_us/fashion/products/KCK553SUE_S69W",
+        "kind": "official-assortment-listing",
+        "url": "https://www.dior.com/en_us/fashion/products/KCK553SUE_S69W",
+        "verifiedAt": "2026-11-02T04:46:40.806Z",
+        "contentHash": "7b7a7ef49160bb36168b9007ee07f7d9687639008b5554b135b65c5d1a395e48",
+        "excerpt": "Rendered official product title, colour, SKU and loaded product photograph"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Dior",
+        "style": "KCK553SUE_S69W",
+        "verifiedAt": "2026-11-02T04:46:40.806Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "7b7a7ef49160bb36168b9007ee07f7d9687639008b5554b135b65c5d1a395e48",
+        "url": "https://www.dior.com/en_us/fashion/products/KCK553SUE_S69W"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Dior",
+        "style": "KCK553SUE_S69W",
+        "verifiedAt": "2026-11-02T04:46:40.806Z",
+        "verificationMethod": "official-new-arrivals-and-product-page",
+        "contentHash": "7b7a7ef49160bb36168b9007ee07f7d9687639008b5554b135b65c5d1a395e48",
+        "url": "https://assets.christiandior.com/is/image/diorprod/KCK553SUES69W_SBG_E03-2?$r4x5_raw$&crop=0,0,4000,5000&wid=640&hei=800&scale=0.4000&bfc=on&qlt=80",
+        "sourceUrl": "https://www.dior.com/en_us/fashion/products/KCK553SUE_S69W"
+      }
+    }
+  ]
+}

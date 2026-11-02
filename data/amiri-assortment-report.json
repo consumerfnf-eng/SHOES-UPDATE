@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-11-02T05:02:21.547Z",
+  "pages": [
+    {
+      "url": "https://amiri.com/collections/mens-footwear/products.json?limit=250&page=1",
+      "records": 88,
+      "checkedAt": "2026-11-02T05:02:21.547Z"
+    },
+    {
+      "url": "https://amiri.com/collections/womens-sneakers/products.json?limit=250&page=1",
+      "records": 40,
+      "checkedAt": "2026-11-02T05:02:21.547Z"
+    }
+  ],
+  "verifiedSneakers": 111,
+  "excluded": [
+    {
+      "id": 7682686484545,
+      "title": "MA QUAD POOL SLIDE - Midnight Blue",
+      "type": "Casual"
+    },
+    {
+      "id": 10322861588545,
+      "title": "BREAKWATER SUEDE BOOT - Black",
+      "type": "Boots"
+    },
+    {
+      "id": 7868905979969,
+      "title": "SUEDE RYDER BOOT - Cognac",
+      "type": "Boots"
+    },
+    {
+      "id": 10322861719617,
+      "title": "BREAKWATER SUEDE BOOT - Tan",
+      "type": "Boots"
+    },
+    {
+      "id": 7868905685057,
+      "title": "LEATHER RYDER BOOT - Black Gold",
+      "type": "Boots"
+    },
+    {
+      "id": 7868905848897,
+      "title": "PYTHON EMBOSSED RYDER BOOT - Brown",
+      "type": "Boots"
+    },
+    {
+      "id": 7548512829505,
+      "title": "MA QUAD POOL SLIDE - Black",
+      "type": "Casual"
+    },
+    {
+      "id": 7780918427713,
+      "title": "SLIP ON LOAFER - Black",
+      "type": "Formal"
+    },
+    {
+      "id": 7548512763969,
+      "title": "MA QUAD POOL SLIDE - True Red",
+      "type": "Casual"
+    },
+    {
+      "id": 7063433543745,
+      "title": "MA-1 - Alabaster",
+      "type": "Footwear"
+    },
+    {
+      "id": 7598454898753,
+      "title": "MA SLIP ON LOAFER - BLACK",
+      "type": "Formal"
+    },
+    {
+      "id": 6558736547905,
+      "title": "BANDANA BUCKLE BOOT - BLACK",
+      "type": "Boots"
+    },
+    {
+      "id": 6558736580673,
+      "title": "BANDANA BUCKLE BOOT - COGNAC",
+      "type": "Boots"
+    },
+    {
+      "id": 7548511092801,
+      "title": "WOMEN - WOMEN'S GLITTER STARS COURT LOW - Silver",
+      "type": "Footwear"
+    },
+    {
+      "id": 7619530915905,
+      "title": "WOMEN - WOMEN'S MA QUAD STARS COURT LOW - Pink",
+      "type": "Footwear"
+    },
+    {
+      "id": 7619530948673,
+      "title": "WOMEN - WOMEN'S MA QUAD STARS COURT LOW - Alabaster",
+      "type": "Footwear"
+    },
+    {
+      "id": 7619527213121,
+      "title": "WOMEN - WOMEN'S MA QUAD STARS COURT LOW - GREY",
+      "type": "Footwear"
+    }
+  ],
+  "scope": "Official adult men footwear and women sneaker collections; all available pages read, other regions not independently reconciled"
+}

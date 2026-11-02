@@ -31,6 +31,12 @@ jobs:
       - name: Reconcile the Fendi official regional sneaker catalogue
         continue-on-error: true
         run: node scripts/collect-fendi-assortment.mjs --publish
+      - name: Reconcile AMIRI official sneaker collections
+        continue-on-error: true
+        run: node scripts/collect-amiri-assortment.mjs --publish
+      - name: Reconcile Rick Owens official sneaker collections
+        continue-on-error: true
+        run: node scripts/collect-rick-assortment.mjs --publish
       - run: npm run photos
       - uses: actions/setup-python@v5
         with:
@@ -43,7 +49,7 @@ jobs:
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/fendi-assortment-report.json data/catalog-source.json data/publication-history.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/lux-assortment-report.json public/data/catalog.json public/data/lux-assortment-report.json public/data/rank-boards.json public/images
+          git add data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/catalog-source.json data/publication-history.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/lux-assortment-report.json public/data/catalog.json public/data/lux-assortment-report.json public/data/rank-boards.json public/images
           if ! git diff --cached --quiet; then
             git commit -m 'Update all-release-date LUX assortment and coverage'
             git fetch origin main

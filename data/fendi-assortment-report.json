@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-11-02T03:23:17.475Z",
+  "officialSearchTotal": 57,
+  "uniqueSkuCount": 57,
+  "acceptedAdultSneakers": 55,
+  "excluded": [
+    {
+      "sku": "JMR574AY2QF1XI2",
+      "name": "儿童运动鞋",
+      "collection": "Kids",
+      "categories": [
+        "新款上市",
+        "童装甄礼",
+        "鞋履"
+      ],
+      "reason": "adult-sneaker-category-unconfirmed"
+    },
+    {
+      "sku": "JMR592AY0TF1XIR",
+      "name": "儿童运动鞋",
+      "collection": "Kids",
+      "categories": [
+        "童装甄礼",
+        "鞋履"
+      ],
+      "reason": "adult-sneaker-category-unconfirmed"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://www.fendi.cn/rest/default/V3/applet/search/products?q=%E8%BF%90%E5%8A%A8%E9%9E%8B&page=1&currentPage=1",
+      "page": 1,
+      "count": 16,
+      "total": 57
+    },
+    {
+      "url": "https://www.fendi.cn/rest/default/V3/applet/search/products?q=%E8%BF%90%E5%8A%A8%E9%9E%8B&page=2&currentPage=2",
+      "page": 2,
+      "count": 16,
+      "total": 57
+    },
+    {
+      "url": "https://www.fendi.cn/rest/default/V3/applet/search/products?q=%E8%BF%90%E5%8A%A8%E9%9E%8B&page=3&currentPage=3",
+      "page": 3,
+      "count": 16,
+      "total": 57
+    },
+    {
+      "url": "https://www.fendi.cn/rest/default/V3/applet/search/products?q=%E8%BF%90%E5%8A%A8%E9%9E%8B&page=4&currentPage=4",
+      "page": 4,
+      "count": 9,
+      "total": 57
+    }
+  ],
+  "scope": "Fendi China official sneaker search; other regions are not reconciled"
+}

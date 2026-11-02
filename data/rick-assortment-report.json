@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-11-02T05:13:28.812Z",
+  "pages": [
+    {
+      "url": "https://www.rickowens.eu/collections/men-sneakers/products.json?limit=250&page=1",
+      "records": 94,
+      "checkedAt": "2026-11-02T05:13:28.812Z"
+    },
+    {
+      "url": "https://www.rickowens.eu/collections/women-sneakers/products.json?limit=250&page=1",
+      "records": 56,
+      "checkedAt": "2026-11-02T05:13:28.812Z"
+    }
+  ],
+  "verifiedSneakers": 135,
+  "excluded": [
+    {
+      "id": 15035935129976,
+      "title": "RU02F4854_LBEFGF_999 | FRINGED MEGA BUMPER LUNAR",
+      "type": "SHOES"
+    },
+    {
+      "id": 15035913765240,
+      "title": "RU02F4886_LOO_911 | SNEAKWADERS",
+      "type": "SHOES"
+    },
+    {
+      "id": 15046056804728,
+      "title": "DU02F6813_BMC_911 | ELEPHANT BOOT",
+      "type": "SHOES"
+    },
+    {
+      "id": 15039037702520,
+      "title": "DU02F6820_RUB_09ALL | SNEAKWADERS",
+      "type": "SHOES"
+    },
+    {
+      "id": 15050909122936,
+      "title": "DU02F6838_NBFD_781 | MEGA BUMPER LUNAR",
+      "type": "SHOES"
+    },
+    {
+      "id": 15045047386488,
+      "title": "RU02F4853_LBS_341 | MEGA BUMPER LOW LUNAR",
+      "type": "SHOES"
+    },
+    {
+      "id": 15038183735672,
+      "title": "RU02F4853_LBS_91 | MEGA BUMPER LOW LUNAR",
+      "type": "SHOES"
+    },
+    {
+      "id": 15035812905336,
+      "title": "RP02F5828_LOO_911 | SNEAKWADERS",
+      "type": "SHOES"
+    },
+    {
+      "id": 15035814117752,
+      "title": "RP02F5857_LHL_231 | MEGA BUMPER LUNAR",
+      "type": "SHOES"
+    },
+    {
+      "id": 15046055952760,
+      "title": "DS02F6813_BMC_911 | ELEPHANT BOOT",
+      "type": "SHOES"
+    },
+    {
+      "id": 15065111953784,
+      "title": "DS02F6813_NBFD_7811 | ELEPHANT BOOT",
+      "type": "SHOES"
+    },
+    {
+      "id": 15044219601272,
+      "title": "DS02F6820_RUB_09ALL | SNEAKWADERS",
+      "type": "SHOES"
+    },
+    {
+      "id": 15046057591160,
+      "title": "DS02F6838_NBFD_781 | MEGA BUMPER LUNAR",
+      "type": "SHOES"
+    },
+    {
+      "id": 15044733600120,
+      "title": "RP02F5852_LBS_91 | MEGA BUMPER LOW LUNAR",
+      "type": "SHOES"
+    },
+    {
+      "id": 15036913058168,
+      "title": "DS02F6814_BMC_911 | ELEPHANT LOW BOOT",
+      "type": "SHOES"
+    }
+  ],
+  "scope": "Official adult men footwear and women sneaker collections; all available pages read, other regions not independently reconciled"
+}

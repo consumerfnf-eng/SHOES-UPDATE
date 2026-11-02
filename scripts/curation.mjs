@@ -371,7 +371,7 @@ export function classifyFootwear(p) {
   // A path that names the form outright says it for any house: a shoe filed
   // under /sneakers/ is a sneaker whoever sells it.
   if (/\b(?:sneakers?|trainers?)\b/i.test(path)) return { category: 'sneaker' };
-  if (/sneaker|running shoe|trail running|training shoes?|basketball shoes?|golf shoes?|skate shoes?|jogging shoes?|slip[- ]?ons?|high[- ]?tops?|low[- ]?tops?|plimsolls?|trainers?|court(?:-type)? shoe|tennis shoes?|스니커|운동화|러닝화|트레이닝화|트레일화|농구화|골프화|슬립온|스케이트화|조깅화/i.test(context)||/\btraining\b[^.!?]{0,45}\bshoes?\b/i.test(title)) return { category: 'sneaker' };
+  if (/\bsneaks\b|sneaker|running shoe|trail running|training shoes?|basketball shoes?|golf shoes?|skate shoes?|jogging shoes?|slip[- ]?ons?|high[- ]?tops?|low[- ]?tops?|plimsolls?|trainers?|court(?:-type)? shoe|tennis shoes?|스니커|운동화|러닝화|트레이닝화|트레일화|농구화|골프화|슬립온|스케이트화|조깅화/i.test(context)||/\btraining\b[^.!?]{0,45}\bshoes?\b/i.test(title)) return { category: 'sneaker' };
   // A platform shoe is in scope because of its sole, not because the brand's
   // copy happens to say "casual" or "street". Requiring those words held 26
   // records whose own titles said platform - Melissa's Possession and Sun

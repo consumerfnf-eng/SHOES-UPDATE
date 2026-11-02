@@ -88,6 +88,12 @@ jobs:
       - name: Reconcile Fendi official regional sneaker catalogue
         continue-on-error: true
         run: node scripts/collect-fendi-assortment.mjs --publish
+      - name: Reconcile AMIRI official sneaker collections
+        continue-on-error: true
+        run: node scripts/collect-amiri-assortment.mjs --publish
+      - name: Reconcile Rick Owens official sneaker collections
+        continue-on-error: true
+        run: node scripts/collect-rick-assortment.mjs --publish
       - name: Cache verified official photos before publication
         run: npm run photos
       - name: Optimize newly downloaded product photos before colour analysis
@@ -111,7 +117,7 @@ jobs:
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/fendi-assortment-report.json data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json public/images
+          git add data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json public/images
           if ! git diff --cached --quiet; then
             git commit -m "weekly curated shoes update $(date -u +%F)"
             # main moves while this runs (the daily workflow, or a person
@@ -135,7 +141,7 @@ jobs:
             # the result does not depend on which commit won a text merge, and
             # re-running it is harmless. A conflict outside the generated
             # snapshot is a real one and still stops the run.
-            generated='data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json'
+            generated='data/rick-assortment-report.json data/amiri-assortment-report.json data/fendi-assortment-report.json data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json'
             cp logs/weekly-progress.json "$RUNNER_TEMP/weekly-progress.json"
             published=0
             for attempt in 1 2 3; do
@@ -157,6 +163,9 @@ jobs:
                 echo "Re-applying the collection onto origin/main instead of merging generated JSON."
                 git reset --hard origin/main
                 node scripts/recover-collection.mjs "$RUNNER_TEMP/weekly-progress.json"
+                node scripts/collect-fendi-assortment.mjs --publish || true
+                node scripts/collect-amiri-assortment.mjs --publish || true
+                node scripts/collect-rick-assortment.mjs --publish || true
                 npm run photos
                 npm run build
                 git add $generated public/images

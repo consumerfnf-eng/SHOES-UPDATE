@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-02T03:12:06.685Z",
+  "checkedAt": "2026-11-02T05:18:33.532Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -1105,12 +1105,6 @@
       "brand": "On",
       "name": "Cloudboost",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "official-0fa57fb7f002ec08",
-      "brand": "Dior",
-      "name": "Dior Ribbon Sneaker",
-      "reason": "release-day-evidence-required"
     },
     {
       "id": "official-770032586373fd8e",
@@ -3003,24 +2997,6 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-20128a7ebbf99f51",
-      "brand": "AMIRI",
-      "name": "PYTHON EMBOSSED MA COURT HI - Black",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-88b525ea7b659d85",
-      "brand": "AMIRI",
-      "name": "MA-94 - Dark Blue",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-a9a906e1670744db",
-      "brand": "AMIRI",
-      "name": "METALLIC M-TECH - Black Silver",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-f5e93cfddcc85b5c",
       "brand": "AMIRI",
       "name": "CLASSIC LOW - Taupe Alabaster",
@@ -3039,63 +3015,9 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-e2a285e8a50b376a",
-      "brand": "AMIRI",
-      "name": "SUEDE BLVD - Fossil",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-e4a4eaadb6d840ac",
-      "brand": "AMIRI",
-      "name": "PYTHON EMBOSSED MA SKYLINE - CREAM",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-ba1b05abb8fba698",
-      "brand": "AMIRI",
-      "name": "PYTHON EMBOSSED MA SKYLINE - BLACK",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-e7589b6fcce2afb7",
-      "brand": "AMIRI",
-      "name": "STARS COURT LOW - Plum",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-be1c8623bf87ebbc",
-      "brand": "AMIRI",
-      "name": "MA-94 - Taupe",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-d82210b9c3ee8fb4",
-      "brand": "AMIRI",
-      "name": "STARS COURT LOW - Dark Blue",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-c5d5d17d2857ca85",
-      "brand": "AMIRI",
-      "name": "CRYSTAL MA-1 - Silver Grey",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-0163b1c0b568cb45",
       "brand": "AMIRI",
       "name": "STARS COURT LOW - Black",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-b151b2d901d68cd4",
-      "brand": "AMIRI",
-      "name": "WOMEN - WOMEN'S METALLIC M-TECH - White Silver",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-b93de463a9585ae0",
-      "brand": "AMIRI",
-      "name": "WOMEN - WOMEN'S PYTHON EMBOSSED COASTLINE - Brown",
       "reason": "product-verification-required"
     },
     {
@@ -3114,12 +3036,6 @@
       "id": "new-20260923-e365ad63b433ec74",
       "brand": "AMIRI",
       "name": "WOMEN - WOMEN'S NEWPORT - Fossil",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-1074713084197980",
-      "brand": "AMIRI",
-      "name": "WOMEN - WOMEN'S GLITTER STARS COURT LOW - Grey",
       "reason": "product-verification-required"
     },
     {
@@ -4533,63 +4449,9 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-ed1dc830cddc0899",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-5429fe0184e25483",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-eb77e28d6b94b0f0",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-5968934d80309fb4",
-      "brand": "Rick Owens",
-      "name": "CARGO SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-f39409b2aefb4dda",
       "brand": "Rick Owens",
       "name": "MEGA BUMPER GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-e80db24e73b4d92c",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-dc576c77eec1b9cb",
-      "brand": "Rick Owens",
-      "name": "LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-53e7823360bcf8e1",
-      "brand": "Rick Owens",
-      "name": "MEGALACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-ca178b982ff76bd8",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-f68034a335acd164",
-      "brand": "Rick Owens",
-      "name": "LOW SNEAKS",
       "reason": "product-verification-required"
     },
     {
@@ -4623,21 +4485,9 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-87ad1887f249d507",
-      "brand": "Rick Owens",
-      "name": "VINTAGE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-1b58e3f2ed7111a6",
       "brand": "Rick Owens",
       "name": "MINIMAL SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-3d32d999cb31f639",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER JUMBOLACE SNEAKS",
       "reason": "product-verification-required"
     },
     {
@@ -4647,189 +4497,15 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-66e8fcf9e27a95b4",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-a24fb6dcd7fbdc39",
-      "brand": "Rick Owens",
-      "name": "MEGALACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-06bf7583b0ff3ca7",
       "brand": "Rick Owens",
       "name": "MEGA BUMPER SNEAKS",
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-69c806a17e16febc",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-21a9dc71220ffa15",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-b1d4a9800ba56632",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-10185d70d42fc5dc",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-086d752b43b687df",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-a9f4cdc37da273d8",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-ae64a3a1c111541a",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-33a32af7f8eedf60",
-      "brand": "Rick Owens",
-      "name": "MEGALACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-00c1026231480a69",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-2ca4def61573640a",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-231e6db67bee9b97",
-      "brand": "Rick Owens",
-      "name": "MINIMAL SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-c9d146aaa4396286",
-      "brand": "Rick Owens",
-      "name": "QUILTED MINIMAL SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-a0b6a8a2b3fbcef8",
       "brand": "Rick Owens",
       "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-4e92b5c77ac19fd3",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-ae4dc34087bfc9ac",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-412b2fe0cdb720a1",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-7d1d7f6cbe1829f4",
-      "brand": "Rick Owens",
-      "name": "VINTAGE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-60e72f3652404a41",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-73557ca9de357c52",
-      "brand": "Rick Owens",
-      "name": "LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-e19d1edefe58a54e",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-230b2835719f8d64",
-      "brand": "Rick Owens",
-      "name": "HIGH STOCKING SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-bff15242daae8ae7",
-      "brand": "Rick Owens",
-      "name": "HIGH STOCKING SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-313c1d59a41d52ad",
-      "brand": "Rick Owens",
-      "name": "QUILTED MINIMAL HIGH SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-d9cba25d6026106c",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-25a77367cb76258d",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-299e454663542105",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-369838fdd752cd5c",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-25c63b7417654109",
-      "brand": "Rick Owens",
-      "name": "LOW SNEAKS",
       "reason": "product-verification-required"
     },
     {
@@ -4917,33 +4593,9 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-4d3f140925f50cbd",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE ABSTRACT LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-19d6a788789bfa5f",
       "brand": "Rick Owens",
       "name": "MEGALACE GETH RUNNER",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-cdf27f7f2e0a5d24",
-      "brand": "Rick Owens",
-      "name": "VINTAGE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-5cc7e49756f6bbb5",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-8dfc1aab46dd663e",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER SNEAKS",
       "reason": "product-verification-required"
     },
     {
@@ -4953,81 +4605,9 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-270a07f671ce5082",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-2f54ff428b5d0297",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-d541ab0f1d1dcd2e",
-      "brand": "Rick Owens",
-      "name": "VINTAGE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-60ea6d5c9aefc8fb",
-      "brand": "Rick Owens",
-      "name": "VINTAGE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-390cefa9078251ad",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-ba86d061d3dc63bb",
-      "brand": "Rick Owens",
-      "name": "LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-cb1c3ed9c9648734",
-      "brand": "Rick Owens",
-      "name": "LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-40c0ffec14c2ca1b",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-7da6877eb6e84844",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-d8a4dc6db136fddd",
       "brand": "Rick Owens",
       "name": "MOTO TURBOGEO",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-b8066eb9a9dcc439",
-      "brand": "Rick Owens",
-      "name": "TOWER LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-f41b15f394405ce5",
-      "brand": "Rick Owens",
-      "name": "MEGALACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-84b7a4e350f8f893",
-      "brand": "Rick Owens",
-      "name": "TOWER LOW SNEAKS",
       "reason": "product-verification-required"
     },
     {
@@ -5043,18 +4623,6 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-60a40bcea6048f9b",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-32a118b9cb05f80b",
-      "brand": "Rick Owens",
-      "name": "VINTAGE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-61c36ea35680a505",
       "brand": "Rick Owens",
       "name": "MINIMAL SNEAKS",
@@ -5067,57 +4635,9 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-cdfcf561d786feb8",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE ABSTRACT SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-c7e85d16c3045c2f",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-3865bdc69f8c3b28",
       "brand": "Rick Owens",
       "name": "STRAP LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-1efe3e4bc61286a7",
-      "brand": "Rick Owens",
-      "name": "GETH RUNNER",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-1f29ba16fb893596",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-e46fd505623075ea",
-      "brand": "Rick Owens",
-      "name": "LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-314c916deed56401",
-      "brand": "Rick Owens",
-      "name": "QUILTED MINIMAL SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-a60364ed7f57dd7e",
-      "brand": "Rick Owens",
-      "name": "QUILTED MINIMAL HIGH SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-1f2bf92b4bc62b25",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER SNEAKS",
       "reason": "product-verification-required"
     },
     {
@@ -5127,57 +4647,9 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-667adbdb5d09aa6d",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-ceab4fda187e1a60",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-2c56544ef8f69ac0",
-      "brand": "Rick Owens",
-      "name": "LACELESS VINTAGE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-53582d3a5c631d7c",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-b6ae75f20e4d42ce",
-      "brand": "Rick Owens",
-      "name": "LACELESS VINTAGE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-30eb669679494389",
-      "brand": "Rick Owens",
-      "name": "CARGO SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-41f5b70a351a32a2",
       "brand": "Rick Owens",
       "name": "VINTAGE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-aefab0068f0a57a0",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-d2bd5d0d6573e0b2",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
       "reason": "product-verification-required"
     },
     {
@@ -5187,231 +4659,9 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-83da8e729a10b2de",
-      "brand": "Rick Owens",
-      "name": "VEGAN SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-0a7472c2fa87e749",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE ABSTRACT LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-c68417cf6dbfb428",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE ABSTRACT SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-97371f39b511be70",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-3272899dd58be7b3",
-      "brand": "Rick Owens",
-      "name": "VEGAN SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-636c2c7802b96687",
-      "brand": "Rick Owens",
-      "name": "MEGA GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-6be9f77cbad8c0cf",
-      "brand": "Rick Owens",
-      "name": "GETH RUNNER",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-bef4cd22c795e3e5",
       "brand": "Rick Owens",
       "name": "EXTREME LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-8e9e600bf3d02159",
-      "brand": "Rick Owens",
-      "name": "CARGO SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-44f22d05d765811d",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-d2800373eac9a8e5",
-      "brand": "Rick Owens",
-      "name": "MEGALACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-10eb9fb54c3dda06",
-      "brand": "Rick Owens",
-      "name": "LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-76cc9cadd5ee780b",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-80b3ae8f795a15f4",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-b296079c98fd6e01",
-      "brand": "Rick Owens",
-      "name": "LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-e02a9bc44a6292d2",
-      "brand": "Rick Owens",
-      "name": "MINIMAL SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-7e6d51f79327d654",
-      "brand": "Rick Owens",
-      "name": "MEGA GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-2c8dec50e8438840",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-8c442b944f9b99ba",
-      "brand": "Rick Owens",
-      "name": "SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-230e35e7423e2a39",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-2a022463f39a7957",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE LOW SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-cf278761ee249629",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-ed43828274a7db8f",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-65e5deea9089a9b3",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-3bde8e6bc210c6e6",
-      "brand": "Rick Owens",
-      "name": "MINIMAL SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-a49a94757c4b5768",
-      "brand": "Rick Owens",
-      "name": "QUILTED MINIMAL SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-f1dcb1b4435ed000",
-      "brand": "Rick Owens",
-      "name": "QUILTED MINIMAL HIGH SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-853fcfb771df3d12",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-e6e0ee55126b1d03",
-      "brand": "Rick Owens",
-      "name": "GETH RUNNER",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-0794947e552a5c4b",
-      "brand": "Rick Owens",
-      "name": "GETH RUNNER",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-f6161d2ba4d3fe90",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-c75c71cc86389d18",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-4b7715e21df3d623",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-6250e32e801c2db1",
-      "brand": "Rick Owens",
-      "name": "GEOBASKET",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-36d8c66cf06466ba",
-      "brand": "Rick Owens",
-      "name": "JUMBOLACE SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-a5f38ac1f5de03d6",
-      "brand": "Rick Owens",
-      "name": "MEGA BUMPER SNEAKS",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-4e2f152da1223e15",
-      "brand": "Rick Owens",
-      "name": "GETH RUNNER",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-fb4c585f966a6a54",
-      "brand": "Rick Owens",
-      "name": "MINIMAL SNEAKS",
       "reason": "product-verification-required"
     },
     {
@@ -13337,72 +12587,6 @@
       "reason": "re-release-launched-2026-02-09"
     },
     {
-      "id": "arrival-410b562a6366af2d888a",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
-      "id": "arrival-233cd630dbbf5c25380d",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
-      "id": "arrival-753cdb8ec2daa9568f75",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
-      "id": "arrival-dda986d6d43101bfe1e7",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
-      "id": "arrival-71f9baf4159c60cb65df",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
-      "id": "arrival-ae30da4b61f7e2c5227f",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
-      "id": "arrival-a988605f2759722e27b2",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
-      "id": "arrival-ff03196516e32e93d678",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
-      "id": "arrival-b5764f726c30bb57b1ac",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
-      "id": "arrival-59f2ce34196268ccb3a5",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
-      "id": "arrival-6d337d6d36b846db24bb",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
       "id": "arrival-7d35e226807bfaa46955",
       "brand": "On",
       "name": "Image 373: On Weather Jacket Insulated Brume & Hare Women – Performance running, outdoor, trail running Jackets",
@@ -13483,6 +12667,12 @@
       "brand": "Nike",
       "name": "Nike P-6000",
       "reason": "re-release-launched-2026-06-29"
+    },
+    {
+      "id": "arrival-f32d5bea56e5880848a5",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training",
+      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-7758c7e4885c7606f0ad",
@@ -13665,12 +12855,6 @@
       "brand": "Balenciaga",
       "name": "Women's Cropped Peacoat in Navy",
       "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-fe34b6529d294dccf72e",
-      "brand": "Moncler",
-      "name": "Vera Leisure Suede Sneakers",
-      "reason": "re-release-launched-2026-01-22"
     },
     {
       "id": "arrival-4f3f5b2c3b31d6334282",
@@ -14453,42 +13637,6 @@
       "reason": "excluded-footwear"
     },
     {
-      "id": "arrival-f84fa2e82c654f672361",
-      "brand": "Balenciaga",
-      "name": "Men's Runner Led Sneaker in Black",
-      "reason": "official-product-id-evidence-required"
-    },
-    {
-      "id": "arrival-557f22a5e16cba9b4f13",
-      "brand": "Balenciaga",
-      "name": "Men's Hamptons Stickers Sneaker in Black/multicolor",
-      "reason": "official-product-id-evidence-required"
-    },
-    {
-      "id": "arrival-91f0ad5d993b43a0a8d1",
-      "brand": "Balenciaga",
-      "name": "Men's Hamptons Worn-out Sneaker in Black",
-      "reason": "official-product-id-evidence-required"
-    },
-    {
-      "id": "arrival-3f4271c34b46d590d012",
-      "brand": "Balenciaga",
-      "name": "Men's Pace Sneaker in Black",
-      "reason": "official-product-id-evidence-required"
-    },
-    {
-      "id": "arrival-66fbd257d6ae792093a5",
-      "brand": "Balenciaga",
-      "name": "Men's Pace Sneaker in Brown",
-      "reason": "official-product-id-evidence-required"
-    },
-    {
-      "id": "arrival-c966ddf2447c66c0beb6",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
       "id": "arrival-6c65d79ff5c8d777349b",
       "reason": "duplicate-product-color"
     },
@@ -14985,12 +14133,6 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-64ceeb1ca08035dda9c8",
-      "brand": "Bottega Veneta",
-      "name": "Orbit Flash Sneaker",
-      "reason": "re-release-launched-2025-08-13"
-    },
-    {
       "id": "arrival-96028b665a32f70520d8",
       "reason": "duplicate-product-color"
     },
@@ -15017,6 +14159,12 @@
       "brand": "Nike",
       "name": "Nike Air Max Plus",
       "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-b9d25970a807dc2bcf41",
+      "brand": "PANE",
+      "name": "Pane Zephyr Training",
+      "reason": "footwear-type-unverified"
     },
     {
       "id": "arrival-b804f21eef534e7b7433",
@@ -15051,10 +14199,18 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-8f938d34c588592480df",
+      "reason": "duplicate-product-color"
+    },
+    {
       "id": "arrival-4b87285662c8d984ca0c",
       "brand": "Prada",
       "name": "Shuffle antiqued leather boat shoes",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-a837293ff913511f3bcc",
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-929a66d18acb32ebb99a",
@@ -17633,6 +16789,10 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-d8576d1e6da275a70400",
+      "reason": "duplicate-product-color"
+    },
+    {
       "id": "arrival-2b995d9d2fde03ec085f",
       "reason": "duplicate-product-color"
     },
@@ -17650,6 +16810,10 @@
     },
     {
       "id": "arrival-b674647c4893beb3c73c",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-be456a781c308f0f2547",
       "reason": "duplicate-product-color"
     },
     {
@@ -19077,12 +18241,6 @@
       "reason": "footwear-type-unverified"
     },
     {
-      "id": "arrival-440ddeb8a5d3eae4b8d4",
-      "brand": "Rick Owens",
-      "name": "VINTAGE SNEAKS",
-      "reason": "footwear-type-unverified"
-    },
-    {
       "id": "arrival-72cc9ec4fa119982cab5",
       "brand": "Rick Owens",
       "name": "TURTLE",
@@ -19098,12 +18256,6 @@
       "id": "arrival-6fcc1759fdb1c53ef27a",
       "brand": "Rick Owens",
       "name": "LEVEL LUPETTO",
-      "reason": "footwear-type-unverified"
-    },
-    {
-      "id": "arrival-a27b4c8aa0f8890f854f",
-      "brand": "Rick Owens",
-      "name": "MINIMAL SNEAKS",
       "reason": "footwear-type-unverified"
     },
     {
@@ -19671,6 +18823,10 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-a2373b6c8fce63532b30",
+      "reason": "duplicate-product-color"
+    },
+    {
       "id": "arrival-20818c641f816abbbba2",
       "brand": "Chanel",
       "name": "ROUGE COCO HYDRA GLOSS Hydrating and Smoothing High-Shine Lipgloss",
@@ -19681,6 +18837,10 @@
       "brand": "Lanvin",
       "name": "FITTED MIDI DRESS IN SATIN",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-23cfb0bdb8f99b9dc12b",
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-9404491c202ba8244179",
@@ -19707,6 +18867,10 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-5c0763d423607831f9ad",
+      "reason": "duplicate-product-color"
+    },
+    {
       "id": "arrival-d9396c67853f2b2f958f",
       "brand": "Lanvin",
       "name": "VINYL STRAIGHT SKIRT WITH CUT-OUTS",
@@ -19729,6 +18893,10 @@
       "brand": "Off-White",
       "name": "Off Stamp Balloon Dress",
       "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-6a3fd97e8c0a47cfc417",
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-af846ade9cdcb4d7c2b1",
@@ -19761,10 +18929,34 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-f6548b4b703ea4e0e41a",
+      "reason": "duplicate-product-color"
+    },
+    {
       "id": "arrival-46f0f9e4b28fb64152e0",
       "brand": "Lanvin",
       "name": "MIDNIGHT STEP MULE IN PONY",
       "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-9aca73a1428b80103164",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-149da32c76e4993a0422",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-ddcbfb7aa09330e5c5c7",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-47b4d8aef3841c2c8e8e",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-3ea26b3ad39964a3dc44",
+      "reason": "duplicate-product-color"
     },
     {
       "id": "arrival-3fb707743ed97209a5bd",
@@ -19819,6 +19011,78 @@
       "reason": "not-footwear"
     },
     {
+      "id": "arrival-856f84cb441008029508",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-20d30f02a00d69538244",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-037ae74b795bf6e8c81a",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-46228294f06b607eea48",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-e80ebdb257ac22d69d3a",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-bf4239a1a323e95f0f70",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-c2483b288d8fe093e2b2",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-09e19dcc1f107ec2e3dc",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "amiri-dac233086f351d6f4e17",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "amiri-8ad1a59e187e348ff545",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "amiri-ea994b604bcc5fb450a0",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "amiri-cca65a6d414ae14fe0d9",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "amiri-235dcf1d6a9c95b974fc",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "amiri-935985e22dcee5fe8818",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "amiri-e259fe620405cfdc8d41",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "amiri-9057d058340bdcd9a2b0",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "amiri-cc29af128f13d01dbdef",
+      "reason": "duplicate-product-color"
+    },
+    {
+      "id": "amiri-7fddba5969d78ee20dc4",
+      "reason": "duplicate-product-color"
+    },
+    {
       "id": "arrival-14410c0b4466b5b90943",
       "brand": "Prada",
       "name": "America’s Cup",
@@ -19831,159 +19095,9 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-10d2f41135d0832e852d",
-      "brand": "Prada",
-      "name": "Collapse antiqued nappa leather sneakers with hooks",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-3983c04bbc2d68472485",
-      "brand": "Prada",
-      "name": "Court leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-fc23d27c2addb23d3efc",
-      "brand": "Prada",
-      "name": "Court leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-0ea14260dd1e5d2b4b1a",
-      "brand": "Prada",
-      "name": "Court leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-c3e55534b37393434b86",
-      "brand": "Prada",
-      "name": "Court leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-3cc55a17654808e64bcf",
-      "brand": "Prada",
-      "name": "Court leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-bfe2cb3bb11b3bb789c4",
-      "brand": "Prada",
-      "name": "Court leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-7eecef7f4e7080a633d5",
-      "brand": "Prada",
-      "name": "Court leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-41d6dffd386c46d7e110",
-      "brand": "Prada",
-      "name": "Court Re-Nylon sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-8c4a4fe47f33320c6e20",
-      "brand": "Prada",
-      "name": "Court Re-Nylon sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-c4d63cae8ef2001880ec",
-      "brand": "Prada",
-      "name": "Court Re-Nylon sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-3de96fecf6bc9aa8d328",
-      "brand": "Prada",
-      "name": "Court Re-Nylon sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-e1064b229449f4aa5469",
-      "brand": "Prada",
-      "name": "Downtown Bold nappa leather and suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-898a10f11f0c9c7b5437",
-      "brand": "Prada",
-      "name": "Downtown Bold nappa leather and suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-237b2f058f0406c8c787",
-      "brand": "Prada",
-      "name": "Downtown Bold Re-Nylon and suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-5222c2fe426d22f4270b",
-      "brand": "Prada",
-      "name": "Downtown Bold Re-Nylon and suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-768e52426aeebee6503f",
-      "brand": "Prada",
-      "name": "Downtown Bold Re-Nylon and suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-0ddc04c6bebf89571bb0",
-      "brand": "Prada",
-      "name": "High-top leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-6a124c67a55f595916d8",
-      "brand": "Prada",
-      "name": "High-top Re-Nylon sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-b5d201f464f2036d9f03",
       "brand": "KEEN",
       "name": "Men's Roam Waterproof Trail Running Shoe",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-82b8c922a550bc603a2c",
-      "brand": "Prada",
-      "name": "Mesh fabric and suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-af259a3b3e0037f4a37f",
-      "brand": "Prada",
-      "name": "Mesh fabric and suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-5d77d0bf0309d5cd85b6",
-      "brand": "Prada",
-      "name": "Mesh fabric and suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-9fc189fcf1422d0e03a8",
-      "brand": "Prada",
-      "name": "Mesh fabric and suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-804a82f756c22cd80779",
-      "brand": "Prada",
-      "name": "Mesh fabric and suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-c94ff2c7d6fb81ad7bf5",
-      "brand": "Prada",
-      "name": "Mesh fabric and suede sneakers",
       "reason": "representative-photo-review-required"
     },
     {
@@ -20005,51 +19119,9 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-8e0de5b2a9af064667a5",
-      "brand": "Prada",
-      "name": "Nappa leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-99ae407414491b297b77",
-      "brand": "Prada",
-      "name": "Nappa leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-83b4b6fcc15140e90fe2",
-      "brand": "Prada",
-      "name": "Patent leather and technical fabric Prada America's Cup sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "arrival-160278a3bc32edbc9a5c",
       "brand": "Prada",
       "name": "Prada America's Cup",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-c02689fe2495cf1b6cec",
-      "brand": "Prada",
-      "name": "Prada America's Cup metallic leather and bike fabric sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-289598dbbb4e01e81732",
-      "brand": "Prada",
-      "name": "Prada America's Cup Original sneakers in brushed leather and bike fabric",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-515fe7051b0bb458c9d9",
-      "brand": "Prada",
-      "name": "Prada America's Cup Original sneakers in brushed leather and bike fabric",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-3b5eb2d1f9dba5b505bc",
-      "brand": "Prada",
-      "name": "Prax suede and Re-Nylon sneakers",
       "reason": "representative-photo-review-required"
     },
     {
@@ -20059,69 +19131,9 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-66d67ef0d277edaec452",
-      "brand": "Prada",
-      "name": "Speedrock leather and mesh fabric sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-7c19abdacd92360f2f0a",
-      "brand": "Prada",
-      "name": "Speedrock mesh fabric sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-df6baad18926d4fa9919",
-      "brand": "Prada",
-      "name": "Speedrock mesh fabric sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-a49662c4454c4741cf8c",
-      "brand": "Prada",
-      "name": "Speedrock mesh fabric sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-fe50ee6fbe232cd797cf",
-      "brand": "Prada",
-      "name": "Speedrock technical mesh and leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-fef14dcc7bc7e768c06e",
-      "brand": "Prada",
-      "name": "Speedrock technical mesh and leather sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-77d669f9305780d87a79",
-      "brand": "Prada",
-      "name": "Suede sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
       "id": "official-nike-487471-300",
       "brand": "Jordan",
       "name": "Air Jordan 14 Retro \"Forest Green\"",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-f91df1ffdec2cf7ac323",
-      "brand": "Prada",
-      "name": "Collapse antiqued nappa leather sneakers with hooks",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-0e5d0b379f96492e3fd2",
-      "brand": "Prada",
-      "name": "Court Re-Nylon sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-925323163048818ce236",
-      "brand": "Prada",
-      "name": "Downtown leather sneakers",
       "reason": "representative-photo-review-required"
     },
     {
@@ -20146,12 +19158,6 @@
       "id": "arrival-d1e741b49ef35a017cb9",
       "brand": "Prada",
       "name": "Prada America's Cup metallic leather and bike fabric sneakers",
-      "reason": "representative-photo-review-required"
-    },
-    {
-      "id": "arrival-73c17ae4da4e28b24c0a",
-      "brand": "Prada",
-      "name": "Prax suede and Re-Nylon sneakers",
       "reason": "representative-photo-review-required"
     },
     {
@@ -20353,78 +19359,6 @@
       "reason": "representative-photo-review-required"
     },
     {
-      "id": "arrival-6939e6a1ac418fecb81f",
-      "brand": "Golden Goose",
-      "name": "여성 글리터 스타 화이트 레더 & 펄 스웨이드 미드스타",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-a34c2e27c711c132cd84",
-      "brand": "Golden Goose",
-      "name": "여성 레오파드 프린트 스타 화이트 레더 슈퍼스타",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-533b05980b716b73eb84",
-      "brand": "Golden Goose",
-      "name": "여성 스와로브스키 스타 베이지 & 브라운 스웨이드 슈퍼스타 LTD",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-02453b0948d89e07fd60",
-      "brand": "Golden Goose",
-      "name": "여성 실버 스타 네이비 블루 스웨이드 슈퍼스타",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-4a538e1f7b75007ad4e4",
-      "brand": "Golden Goose",
-      "name": "여성 올드 로즈 스타 화이트 레더 & 펄 스웨이드 볼스타",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-10518138ee0f00dabf63",
-      "brand": "Golden Goose",
-      "name": "여성 탠 레더 스타 베이지 시어링 트루스타",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-d7a6932b2f4d1926b5b0",
-      "brand": "Golden Goose",
-      "name": "여성 톤 온 톤 스타 파우더 핑크 벨벳 슈퍼스타 LTD",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-11f6b1aa32fcc923adc6",
-      "brand": "Golden Goose",
-      "name": "여성 퍼플 스타 & 시어링 안감 퍼플 스웨이드 슈퍼스타",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-18417dd6002de4c54793",
-      "brand": "Golden Goose",
-      "name": "여성 펄 스타 & 브론즈 스와로브스키 베이지 스웨이드 슈퍼스타",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-a16bbb77c4547b476a55",
-      "brand": "Golden Goose",
-      "name": "여성 플래티넘 글리터 스타 화이트 레더 볼스타",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-2e9d8a251278652eca77",
-      "brand": "Golden Goose",
-      "name": "여성 화이트 스타 & 시어링 안감 베이지와 브라운 스웨이드 볼스타 LTD",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-2737461c3c10386ad1e4",
-      "brand": "Golden Goose",
-      "name": "톤온톤 스타 디테일의 펄 그레이 스웨이드 여성 슈퍼스타 사봇",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-6dbced871509995fea20",
       "brand": "Nike",
       "name": "ACG Pegasus Trail GORE-TEX By You",
@@ -20542,12 +19476,6 @@
       "id": "arrival-cbdeba776d23c7cae5c7",
       "brand": "Converse",
       "name": "Converse x Hello Kitty® and Friends Chuck Taylor All Star My Melody™ & Kuromi™",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-5c0763d423607831f9ad",
-      "brand": "AMIRI",
-      "name": "Crystal MA-1",
       "reason": "shared-representative-photo"
     },
     {
@@ -20941,12 +19869,6 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-6a3fd97e8c0a47cfc417",
-      "brand": "AMIRI",
-      "name": "Metallic M-tech",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-0b56dbe12e1a2ae4a740",
       "brand": "Onitsuka Tiger",
       "name": "MEXICO 66",
@@ -21139,18 +20061,6 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-f6548b4b703ea4e0e41a",
-      "brand": "AMIRI",
-      "name": "Python Embossed MA Skyline",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-9aca73a1428b80103164",
-      "brand": "AMIRI",
-      "name": "Python Embossed MA Skyline",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-d539b7e82d33e85b24d6",
       "brand": "Onitsuka Tiger",
       "name": "SERRANO",
@@ -21235,18 +20145,6 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-a2373b6c8fce63532b30",
-      "brand": "AMIRI",
-      "name": "Stars Court Low",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-23cfb0bdb8f99b9dc12b",
-      "brand": "AMIRI",
-      "name": "Stars Court Low",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-119d34cbfe696c1cfd41",
       "brand": "Melissa",
       "name": "Sun Capri Platform",
@@ -21262,12 +20160,6 @@
       "id": "arrival-d7331f4cdd173d02c3a1",
       "brand": "Melissa",
       "name": "Sun Capri Platform",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-ddcbfb7aa09330e5c5c7",
-      "brand": "AMIRI",
-      "name": "Women's Glitter Stars Court Low",
       "reason": "shared-representative-photo"
     },
     {
@@ -21304,18 +20196,6 @@
       "id": "arrival-8f089bde6fb31cf0d729",
       "brand": "OOFOS",
       "name": "Women's Lace-Up Shoe",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-47b4d8aef3841c2c8e8e",
-      "brand": "AMIRI",
-      "name": "Women's Metallic M-tech",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-149da32c76e4993a0422",
-      "brand": "AMIRI",
-      "name": "Women's Python Embossed Coastline",
       "reason": "shared-representative-photo"
     },
     {
@@ -21382,48 +20262,6 @@
       "id": "arrival-fb139e48f6b7af2728d9",
       "brand": "Givenchy",
       "name": "Gent loafers in brushed leather",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-3c150f14a089d5b1bc80",
-      "brand": "Givenchy",
-      "name": "Givenchy Puffy Yard sneakers in nappa leather",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-d6ba049efbc462a87848",
-      "brand": "Givenchy",
-      "name": "Givenchy Puffy Yard sneakers in nappa leather",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-6226e37bdeadae4e0bab",
-      "brand": "Givenchy",
-      "name": "Givenchy Puffy Yard sneakers in nappa leather",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-10fa3a6661ca658a3367",
-      "brand": "Givenchy",
-      "name": "Givenchy Yard high-top sneakers in leather",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-4681d86eb5bb934b0ca3",
-      "brand": "Givenchy",
-      "name": "Givenchy Yard high-top sneakers in leather",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-7f37876f468c32fe1670",
-      "brand": "Givenchy",
-      "name": "Glide sneakers in leather",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-3fc29e95ca90f139681f",
-      "brand": "Givenchy",
-      "name": "Glide sneakers in leather",
       "reason": "shared-representative-photo"
     },
     {
@@ -21550,12 +20388,6 @@
       "id": "arrival-204690d9bf99290b847a",
       "brand": "Onitsuka Tiger",
       "name": "MEXICO 66 GOLF",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-0c769ad070ceda1fb426",
-      "brand": "Givenchy",
-      "name": "New City sneakers in suede",
       "reason": "shared-representative-photo"
     },
     {
@@ -21819,6 +20651,22 @@
       "url": "https://on.com/en-us/products/cloudvista-3-waterproof-m-3mg3025/mens/silver-ore-shoes-3MG30255317"
     },
     {
+      "id": "live-b5099d442efd6b71",
+      "brand": "Dior",
+      "name": "Dior Ribbon Sneaker White and Beige Suede Calfskin",
+      "colorway": "Beige",
+      "reason": "duplicate-product-url",
+      "url": "https://dior.com/en_us/fashion/products/KCK553SUE_S69W"
+    },
+    {
+      "id": "arrival-402c988bec3277ca8acf",
+      "brand": "Dior",
+      "name": "Dior Ribbon Sneaker White and Beige Suede Calfskin",
+      "colorway": "",
+      "reason": "duplicate-product-url",
+      "url": "https://dior.com/en_us/fashion/products/KCK553SUE_S69W"
+    },
+    {
       "id": "new-20260923-19918d424820ab2e",
       "brand": "Nike",
       "name": "Nike Pegasus Plus 2",
@@ -21987,14 +20835,6 @@
       "image": "https://cdn.shopify.com/s/files/1/2185/2813/files/assets_aa96744e7fe74e2a90d22918299c1f1d_945ee81d107449348da7f44c34f9ffa5.jpg?v=1790099131"
     },
     {
-      "id": "arrival-b9d25970a807dc2bcf41",
-      "brand": "PANE",
-      "name": "Pane Zephyr Training Men’s Shoes-Manu Bay",
-      "reason": "photo-shared-across-models",
-      "sharedWith": "Pane Zephyr Training Women’s Shoes-Manu Bay",
-      "image": "https://paneshoes.com/cdn/shop/files/5345_ace6d91b-9889-4593-9f24-a772deda31c7.jpg?v=1779805097&width=2000"
-    },
-    {
       "id": "arrival-5a25066175f2836fb486",
       "brand": "Nike",
       "name": "Nike Air Max Plus 'Check'",
@@ -22011,759 +20851,9 @@
       "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png"
     },
     {
-      "id": "arrival-c47cb5976daa62a49091",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 다이키리 그린 앤 마시멜로우",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-40c8b4ee5a8e1aae08dc",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 마시멜로 앤 핑크 돌핀",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-bf5a2db1703b2de1dd83",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 마시멜로 앤드 템프스트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-a42beedc1396acb4fb85",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 마시멜로우 앤 피그",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-c7cfe5214cd0aa99fb0c",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 피렌체 앤 마시멜로우",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-619c3d82d37686d68baa",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-2299593617a61154bb32",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-a9eeb8adc34c3eafaec0",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 화이트 앤 골드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-6d0b75b8e5f04b5a2837",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 화이트 앤 스페이스",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-1090f8540492afe42cbc",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 화이트 앤 실버",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-72f9561c2fa79e1306ea",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 슈퍼 빈티지 가죽 마시멜로",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-26a98c17e607488a57bf",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 슈퍼 빈티지 가죽 마시멜로 앤 참",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-ca1b938efdcb2ca5b508",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 슈퍼 빈티지 가죽 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-8c9402b580139bf6d0a2",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 스웨이드 실크",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-5e54aafac76550aaf13a",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 스웨이드 피넛",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-df77fbb630f513a36896",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 스웨이드 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "live-b5099d442efd6b71",
-      "brand": "Dior",
-      "name": "Dior Ribbon Sneaker White and Beige Suede Calfskin",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-bd297b5caa72a05257a7",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 가죽 마시멜로 앤 아이보리",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-993728dbbac817c2240f",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 가죽 화이트 앤 스웨이드 레오파드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-907fe87dd6c09e65b83c",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 슈퍼 소프트 가죽 화이트 앤 시어링",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-dd6a6c160d483cf0616f",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 스웨이드 앤 가죽 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-f20ed3febba4e6db24a6",
-      "brand": "Autry",
-      "name": "MEDALIST 플랫폼 스니커즈 가죽 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-3d2528860fe8b12ef9c4",
-      "brand": "Autry",
-      "name": "MEDALIST 플랫폼 스니커즈 가죽 화이트 앤 레오파드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-3a02a3e608546f572816",
-      "brand": "Autry",
-      "name": "MEDALIST 플랫폼 스니커즈 가죽 화이트 앤 메탈릭 실버",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-f0889df7c25da1559162",
-      "brand": "Autry",
-      "name": "MEDALIST 플랫폼 스니커즈 가죽 화이트 앤 메탈릭 플래티넘",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-13638eb39e282e4d7e63",
-      "brand": "Autry",
-      "name": "MEDALIST 플랫폼 스니커즈 가죽 화이트 앤 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-ce0d748333364fba0c57",
-      "brand": "Autry",
-      "name": "MEDALIST 플랫폼 스니커즈 가죽 화이트 앤 파우더 핑크",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-cc2a5b35aa7b483e6fc8",
-      "brand": "Autry",
-      "name": "MEDALIST 플랫폼 스니커즈 가죽 화이트 앤드 메탈 실버",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-c9e22a5abecb49527971",
-      "brand": "Autry",
-      "name": "MEDALIST 플랫폼 스니커즈 스웨이드 앤 가죽 실버 앤 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-b1656e5783eb88cd5d3e",
-      "brand": "Autry",
-      "name": "MEDALIST 플랫폼 스니커즈 스웨이드 앤 가죽 페더 그레이 앤 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-4921693394be71b23198",
-      "brand": "Autry",
-      "name": "MEDALIST 플랫폼 스니커즈스웨이드 가죽 화이트 앤드 플래티넘",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-0edf5467241e91ffda45",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 '레오파드 프린트' 브라운 앤 베이지",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-3237f1152df1946ba593",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 '지브라 프린트' 아이보리 앤 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-55c2be37776f30a86461",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 스페이스 블루",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-bf2c469a1cda7e1426bf",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 스페이스 블루",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-e6c6f873ee640bba7833",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 시 그라스",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-c2139f73a0de3af9bd01",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 실버",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-fc8f8e549aeaa764702d",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 아이보리",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-d98e2c106a270ad6c234",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 아이보리 블랙 앤 실버",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-6381a6bec2b580c9ac86",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 아이보리 블랙 앤 파우더",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-2caed7454723418845c5",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 코버트 그린",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-7912fb80a50f2a21534e",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 크렘브륄레",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-c6c9a800d186851ff50b",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 플래티넘",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-ca19ff6d35a49bd5125c",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-441d9c275c2eebfc33bb",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 니트 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-93cfee1437935ade8bf9",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 로우 스니커즈 패브릭 블랙 컬러",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-ea128133af2f9da12bf8",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 뮬 스니커즈 레오파드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-3ff7937a61c12ffcd5ff",
-      "brand": "Autry",
-      "name": "MEDALIST EASEKNIT 뮬 스니커즈 아이보리",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-6fee3fd49a124a1317f5",
-      "brand": "Autry",
-      "name": "실버 스웨이드 및 MUSTANG SUGAR MEDALIST LOW 스니커즈",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-0d4b67464aad7af106bb",
-      "brand": "Autry",
-      "name": "플래티넘 스웨이드 및 베이지 SUGAR MEDALIST LOW 스니커즈",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-e5ed596e39438b71af4c",
-      "brand": "Autry",
-      "name": "화이트 및 핑크 가죽 소재 \"CHANGBIN X AUTRY\" MEDALIST LOW 스니커즈",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-8bf757d5db59235c3cc7",
-      "brand": "Autry",
-      "name": "CLC 스니커즈 슈퍼 빈티지 가죽 화이트 앤 플래티넘",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-9bf9eb316e0e8c7b8829",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 앤 스웨이드 마시멜로우 블랙 앤 코블스톤",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-6c54e2f6a5c2a0826a64",
-      "brand": "Autry",
-      "name": "DALLAS 로우 스니커즈 가죽 앤 스웨이드 마시멜로우 앤 크림",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-9732e88677a4339c5beb",
-      "brand": "Autry",
-      "name": "HYPERWAY 스니커즈 \"CHANGBIN X AUTRY\" 스웨이드 앤 메시 블랙 앤 핑크",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-34f44b674f4a6d8ae1a1",
-      "brand": "Autry",
-      "name": "HYPERWAY 스니커즈 슈퍼 빈티지 메쉬 앤 스웨이드 브라운 앤 실버",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-92530c035f1ae25414db",
-      "brand": "Autry",
-      "name": "HYPERWAY 스니커즈 슈퍼 빈티지 메쉬 앤 스웨이드 브라운 앤 실버",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-11f15f0a6a870b3a0aa7",
-      "brand": "Autry",
-      "name": "HYPERWAY 스니커즈 슈퍼 빈티지 메쉬 앤 스웨이드 샌드 앤 실버",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-913a8a62646e0ff39b61",
-      "brand": "Autry",
-      "name": "HYPERWAY 스니커즈 슈퍼 빈티지 메쉬 앤 스웨이드 샌드 앤 실버",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-9c2cafad78ea544612eb",
-      "brand": "Autry",
-      "name": "HYPERWAY 스니커즈 슈퍼 빈티지 메쉬 앤 스웨이드 파우더 앤 실버",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-14d3a0f577cacb78c419",
-      "brand": "Autry",
-      "name": "HYPERWAY 스니커즈 합성가죽 앤 메쉬 실버 화이트 앤 아이리쉬 크림",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-712f9206bae587b2ec27",
-      "brand": "Autry",
-      "name": "MALGA CORTINA 슈퍼 빈티지 스웨이드 체스트넛 앤 플레임 스칼렛",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-2ec91846c88e2e62a70a",
-      "brand": "Autry",
-      "name": "MALGA CORTINA 슈퍼 빈티지 스웨이드 체스트넛 앤 플레임 스칼렛",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-5947f57b457da118b812",
-      "brand": "Autry",
-      "name": "MALGA COURMAYEUR 슈퍼 빈티지 스웨이드 아이스 앤 레몬 드롭",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-8d97daa7b01e9a1edea9",
-      "brand": "Autry",
-      "name": "MALGA ST. MORITZ 슈퍼 빈티지 스웨이드 쿠키 앤 데자뷰 블루",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-d612baac92f8427af868",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 \"JEAN-MICHEL BASQUIAT x AUTRY\" 가죽 화이트 앤 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-111621f8288531c25cdb",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 \"JEAN-MICHEL BASQUIAT x AUTRY\" 가죽 화이트 앤 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-94bb28eb2b417794178f",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 \"SNOOPY X AUTRY\" 가죽 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-ffc44eb7a460232c3de8",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 \"SNOOPY X AUTRY\" 가죽 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-37fa15be34956e936196",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 \"SNOOPY X AUTRY\" 가죽 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-19f54dac18ff687c8ec3",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 \"SNOOPY X AUTRY\" 가죽 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-c0e129f20d4207147193",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 가죽 앤 스웨이드 코버트 그린 앤 리코리스",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-e8e733fa2ba6750768ba",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 가죽 화이트 앤 레오파드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-73236d4fcbdf4dbda8f7",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 가죽 화이트 앤 슬리커 레터링 디테일",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-46f1abd354f051c50285",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 가죽 화이트 앤 초콜릿 칩 루렉스 디테일",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-5be6383695cefd1df01f",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 실버 플래티넘 앤 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-ff389442b2c5be533779",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 앤 드래곤 메쉬 화이트 앤 탄자나이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-850ce9466054b7f5ef12",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 앤 스웨이드 화이트 앤 골드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-0e360903177b651ef894",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 윈터 앤 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-f5b75fbdc742a4a0a5c4",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 화이트 블루 스페이스 앤 블루",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-5c40100c52a7766077fe",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 화이트 앤 스웨이드 로즈 칸넬",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-db728ee583091ec232ff",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 가죽 화이트 앤 스웨이드 툰드라",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-f94ecdc8c90e79a63f4c",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 슈퍼 빈티지 나파 가죽 앤 스웨이드 화이트 앤 파우더",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-97e773a3b586cc177c9a",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 스웨이드 비스킷 앤 캥거루",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-5c0ccbfff388b665e1d0",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 스웨이드 앤 가죽 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-86bfcd09f7f13e54382d",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 스웨이드 앤틸로프 앤 밀리터리",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-011875f836ed9568afbf",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 스웨이드 에빌레오 앤 플래티넘",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-d98bed37b540820854e7",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 스웨이드 파드 앤 페더",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-7abfc96e2fc18bbd1244",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 포니 헤어 텍스쳐 레오파드 앤 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-598d559d160267550227",
-      "brand": "Autry",
-      "name": "MEDALIST 로우 스니커즈 포니 헤어 텍스쳐 지브라 레오파드 앤 아이보리",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-428212935bfc49e6fb5b",
-      "brand": "Autry",
-      "name": "MEDALIST 슈퍼 빈티지 로우 스니커즈 가죽 라임스토널 화이트 앤 블루",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-7ad8d56dfc22a13860cd",
-      "brand": "Autry",
-      "name": "MEDALIST 스니커즈 슈퍼 빈티지 스웨이드 트리컬러 화이트 샌드 앤 그레이 그린",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-496ae0f00bd8900ef207",
-      "brand": "Autry",
-      "name": "MEDALIST SUPER VINTAGE 로우 스니커즈 스페이스 블루 실버 가죽 스웨이드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-cb84ee0e37bf7693a710",
-      "brand": "Autry",
-      "name": "REELWIND 로우 스니커즈 나일론 스웨이드 가죽 라운지 앤 코도반",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-70e96d3ad95e29ca1eff",
-      "brand": "Autry",
-      "name": "REELWIND 로우 스니커즈 나일론 스웨이드 가죽 로즈 앤 데저트 샌드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-403a8b2aec880caf50cc",
-      "brand": "Autry",
-      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 딥 그린 슈가 앤 퀸스",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-d67680062d4e07df43b3",
-      "brand": "Autry",
-      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-535f8d6d8d36a5432d57",
-      "brand": "Autry",
-      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 코코넛 앤 루타바가",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-87397e64f3681f7e7879",
-      "brand": "Autry",
-      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 폼 슈가 앤 커버트 그린",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-0707f4405237c386508e",
-      "brand": "Autry",
-      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 플래티넘 루타바가 앤 브라운",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-62c93295bf1c509dacbf",
-      "brand": "Autry",
-      "name": "REELWIND 로우 스니커즈 나일론 앤 스웨이드 화이트 앤 스카이 슈가",
-      "reason": "photo-unavailable"
-    },
-    {
       "id": "arrival-a8bf429a763504e70b3d",
       "brand": "Autry",
       "name": "SANDY 'HOTEL CORAZÓN' 캔버스 노마드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-a72284aa02a130d79df1",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 가죽 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-2f45671b6334e624e8fe",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 가죽 화이트 앤 브론즈 그린",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-ee9fbfad829c5202cb2e",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 가죽 화이트 앤 초콜릿",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-0c765c3284f87ab066e0",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 라미네이티드 가죽 실버 앤 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-f69bf8e29d97fd53d296",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 라미네이티드 가죽 플래티넘 앤 마시멜로우",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-5512d600e72caa3205e9",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 벨벳 호손 로즈 앤 그레이프 자수",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-ccf91771eec47c7802df",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 블랙 스웨이드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-aeef00ae6ec6361a5235",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 스웨이드 무스탕",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-450fdb073616f58cdff9",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 스웨이드 무스탕",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-f219862d5bd991cd23c0",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 스웨이드 캐스터리",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-eac089e935c940f44428",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 스웨이드 폼",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-5be741167aba05511fb2",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 스웨이드 폼",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-979cdd5bce1db98174a1",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 체크 패브릭 앤 스웨이드 그레이, 블랙 앤 시라",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-a95b556b655e41388de0",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 체크 패브릭 앤 스웨이드 블랙, 아이보리 앤 쿠키",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-0f40b9144f6a34e3044f",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 체크 패브릭 앤 스웨이드 핑크 파우더 앤 초콜릿",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-8677bdbb13fa68debd51",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 크래클 가죽 화이트 앤 샌드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-e3fe496d4f05c8981466",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 패브릭 앤 스웨이드 브라운 앤 베이지 하운드투스",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-137627dd6a0ef629647a",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 포니 헤어 텍스처 가죽 레오파드 앤 블랙",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-f6fe5163375e0cfe10a1",
-      "brand": "Autry",
-      "name": "WINDSCAPE 로우 스니커즈 포니 헤어 텍스처 가죽 밀리터리",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-61abebebab2c3be3045b",
-      "brand": "Autry",
-      "name": "WINDSCAPE 스니커즈 스웨이드 화이트",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-7845298d5b87a75384c6",
-      "brand": "Autry",
-      "name": "WINDSPIN 스니커즈 가죽 본 화이트 앤 장식",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-68aa7e4f8578c3e3371c",
-      "brand": "Autry",
-      "name": "WINDSPIN 스니커즈 메쉬 앤 스웨이드 실크",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-19ddd37acfd2ae1ee8e8",
-      "brand": "Autry",
-      "name": "WINDSPIN 스니커즈 슈퍼 빈티지 가죽 마시멜로우 앤 레오파드",
-      "reason": "photo-unavailable"
-    },
-    {
-      "id": "arrival-e04f81e4517003bbbc88",
-      "brand": "Autry",
-      "name": "WINDSPIN 스니커즈 스웨이드 앤 가죽 자스민 앤 루타바가",
       "reason": "photo-unavailable"
     }
   ]

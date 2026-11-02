@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-11-02T05:20:34.439Z",
+  "publishedAt": "2026-11-02T05:18:33.532Z",
+  "overallComplete": false,
+  "totalPublished": 4920,
+  "luxPublishedFootwear": 2640,
+  "luxPublishedSneakers": 2535,
+  "verifiedSneakerPublicationOmissions": 0,
+  "unverifiedSourceCandidates": 45,
+  "unclassifiedRecords": 97,
+  "officialCatalogueUnavailable": [
+    "Common Projects"
+  ],
+  "countsUnit": "Product/colour/SKU records; the website groups these into model cards.",
+  "scope": "Verified official records are published; unread source candidates, unclassified items and regional/undisplayed variants prevent a global completeness claim.",
+  "brandReport": "/data/lux-publication-reconciliation.json"
+}

@@ -1,163 +1,174 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-02T03:14:11.573Z",
-  "publishedAt": "2026-11-02T03:12:06.685Z",
+  "checkedAt": "2026-11-02T05:19:46.515Z",
+  "publishedAt": "2026-11-02T05:18:33.532Z",
   "brands": [
     {
       "brand": "Louis Vuitton",
       "published": 3,
+      "publishedSneakers": 3,
       "verified": 0,
       "missing": [],
+      "excluded": [],
+      "unclassified": [],
       "pending": 0,
       "pages": 0,
       "truncated": false,
       "errors": [
         {
           "url": "https://jp.louisvuitton.com/jpn-jp/women/shoes/new-in-shoes/_/N-tmyjnh4",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.jp.louisvuitton.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://us.louisvuitton.com/eng-us/women/shoes/new-in-shoes/_/N-tmyjnh4",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.us.louisvuitton.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://us.louisvuitton.com/eng-us/women/shoes/all-shoes/_/N-t1mcbujj",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.us.louisvuitton.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://jp.louisvuitton.com/jpn-jp/men/shoes/sneakers/_/N-t1fud07g",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.jp.louisvuitton.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://br.louisvuitton.com/por-br/produtos/lv-drop-300-sneaker-nvprod7730141v/1AKP2J",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.br.louisvuitton.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         }
       ],
       "scopeComplete": false
     },
     {
       "brand": "Miu Miu",
-      "published": 3,
-      "verified": 4,
-      "missing": [
+      "published": 35,
+      "publishedSneakers": 35,
+      "verified": 36,
+      "missing": [],
+      "excluded": [
         {
           "id": "arrival-c22dcff6f576256d9203",
           "name": "Printed leather mules",
           "url": "https://www.miumiu.com/us/en/p/printed-leather-mules/5R838E_6UP_F0151_F_DD80",
-          "reason": "hybrid-review-required"
+          "reason": "reviewed-heeled-dress-footwear"
         },
         {
           "id": "arrival-274ca59f6bf29f1d9e8b",
           "name": "Crocodile embossed calfskin Deck shoes",
           "url": "https://www.miumiu.com/us/en/p/crocodile-embossed-calfskin-deck-shoes/5D123E_3ZRQ_F0038_F_005",
-          "reason": "footwear-type-unverified"
+          "reason": "reviewed-boat-or-moccasin-shoe-without-sneaker-sole"
         }
       ],
-      "pending": 22,
-      "pages": 16,
-      "truncated": true,
+      "unclassified": [],
+      "pending": 24,
+      "pages": 53,
+      "truncated": false,
       "errors": [
         {
           "url": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0F24_F_ZF05",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://www.miumiu.com/us/en/p/gymnasium-suede-and-shearling-sneakers/5E428E_Z0G_F0003_F_ZF05",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://www.miumiu.com/us/en/p/suede-and-shearling-sneakers/5E389E_Z0G_F0F24_F_ZF05",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.miumiu.com/us/en/p/suede-and-shearling-sneakers/5E389E_Z0G_F0003_F_ZF05",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.miumiu.com/us/en/p/suede-and-shearling-mules/5R763E_Z0G_F0003_F_ZF40",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.miumiu.com/us/en/p/leather-lace-up-shoes/5E964D_B4L_F0002_F_055",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.miumiu.com/us/en/p/laced-fume-leather-shoes/5E964D_3KY8_F0038_F_055",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0003_F_A045",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0007_F_A045",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0424_F_A045",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://www.miumiu.com/us/en/p/bubble-technical-fabric-and-suede-sneakers/5E806E_3M0K_F0304_F_A045",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0003_F_A045",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://www.miumiu.com/us/en/p/bubble-embroidered-technical-fabric-and-suede-sneakers/5E808E_3ZR4_F0007_F_A045",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-sneakers-in-printed-leather-and-technical-fabric/5E165E_3ZS1_F0D23_F_BB05",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-suede-sneakers/5E165E_Z5O_F0401_F_D005",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-suede-sneakers/5E165E_Z5O_F0379_F_D005",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.miumiu.com/us/en/p/new-balance-x-miu-miu-530-sl-suede-and-mesh-sneakers/5E165E_3D8C_F0009_F_BD05",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-sneakers/5T848E_FKS_F0161_F_005",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-sneakers/5T848E_FKS_F063H_F_005",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0242_F_005",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0161_F_005",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
-          "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0F24_F_005",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0008_F_005",
+          "error": "The operation was aborted due to timeout"
         },
         {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 22
+          "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0007_F_005",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F0571_F_005",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/suede-sneakers/5E389E_054_F0F24_F_D005",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_ZJM_F0304_F_005",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F0R3K_F_005",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0D5X_F_D005",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_3ZOF_F0P1O_F_D005",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-suede-sneakers/5E417E_LYW_F02GM_F_005",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/tyre-technical-fabric-and-leather-sneakers/5E760E_FKS_F0037_F_005",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/plume-suede-sneakers/5E114E_054_F065Y_F_005",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0009_F_D005",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.miumiu.com/us/en/p/plume-technical-fabric-and-suede-sneakers/5E114E_D7C_F0008_F_D005",
+          "error": "The operation was aborted due to timeout"
         }
       ],
       "scopeComplete": false
     },
     {
       "brand": "Prada",
-      "published": 5,
-      "verified": 49,
-      "missing": [
+      "published": 132,
+      "publishedSneakers": 132,
+      "verified": 137,
+      "missing": [],
+      "excluded": [
         {
           "id": "arrival-1a0f272d45059585668b",
           "name": "Prada Codes",
@@ -183,280 +194,46 @@
           "reason": "representative-photo-review-required"
         },
         {
-          "id": "arrival-289598dbbb4e01e81732",
-          "name": "Prada America's Cup Original sneakers in brushed leather and bike fabric",
-          "url": "https://www.prada.com/us/en/p/prada-americas-cup-original-sneakers-in-brushed-leather-and-bike-fabric/PS0906_3ZPV_F05NK",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-41d6dffd386c46d7e110",
-          "name": "Court Re-Nylon sneakers",
-          "url": "https://www.prada.com/us/en/p/court-re-nylon-sneakers/2EE483_3LFV_F0002_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-3983c04bbc2d68472485",
-          "name": "Court leather sneakers",
-          "url": "https://www.prada.com/us/en/p/court-leather-sneakers/2EE483_070_F0632_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-515fe7051b0bb458c9d9",
-          "name": "Prada America's Cup Original sneakers in brushed leather and bike fabric",
-          "url": "https://www.prada.com/us/en/p/prada-americas-cup-original-sneakers-in-brushed-leather-and-bike-fabric/PS0906_3ZPV_F0EQ7",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-3b5eb2d1f9dba5b505bc",
-          "name": "Prax suede and Re-Nylon sneakers",
-          "url": "https://www.prada.com/us/en/p/prax-suede-and-re-nylon-sneakers/2EE479_3ANK_F0E2Q_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-7c19abdacd92360f2f0a",
-          "name": "Speedrock mesh fabric sneakers",
-          "url": "https://www.prada.com/us/en/p/speedrock-mesh-fabric-sneakers/1E490O_3ZM0_F0007_F_005",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-df6baad18926d4fa9919",
-          "name": "Speedrock mesh fabric sneakers",
-          "url": "https://www.prada.com/us/en/p/speedrock-mesh-fabric-sneakers/1E490O_3ZM0_F0161_F_005",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-8c4a4fe47f33320c6e20",
-          "name": "Court Re-Nylon sneakers",
-          "url": "https://www.prada.com/us/en/p/court-re-nylon-sneakers/2EE483_3LFV_F0632_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-6a124c67a55f595916d8",
-          "name": "High-top Re-Nylon sneakers",
-          "url": "https://www.prada.com/us/en/p/high-top-re-nylon-sneakers/2TE218_3LFV_F0632_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-c4d63cae8ef2001880ec",
-          "name": "Court Re-Nylon sneakers",
-          "url": "https://www.prada.com/us/en/p/court-re-nylon-sneakers/2EE483_3LFV_F0393_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-0ddc04c6bebf89571bb0",
-          "name": "High-top leather sneakers",
-          "url": "https://www.prada.com/us/en/p/high-top-leather-sneakers/2TE218_070_F0009_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-0ea14260dd1e5d2b4b1a",
-          "name": "Court leather sneakers",
-          "url": "https://www.prada.com/us/en/p/court-leather-sneakers/2EE483_070_F0009_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-fc23d27c2addb23d3efc",
-          "name": "Court leather sneakers",
-          "url": "https://www.prada.com/us/en/p/court-leather-sneakers/2EE483_070_F0F24_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-c3e55534b37393434b86",
-          "name": "Court leather sneakers",
-          "url": "https://www.prada.com/us/en/p/court-leather-sneakers/2EE483_070_F0K74_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-10d2f41135d0832e852d",
-          "name": "Collapse antiqued nappa leather sneakers with hooks",
-          "url": "https://www.prada.com/us/en/p/collapse-antiqued-nappa-leather-sneakers-with-hooks/2EE490_2HKD_F0002_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-66d67ef0d277edaec452",
-          "name": "Speedrock leather and mesh fabric sneakers",
-          "url": "https://www.prada.com/us/en/p/speedrock-leather-and-mesh-fabric-sneakers/2EE468_3ZM0_F0002_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
           "id": "arrival-da8976679844fe93bdd3",
           "name": "Shuffle antiqued leather laced shoes",
           "url": "https://www.prada.com/us/en/p/shuffle-antiqued-leather-laced-shoes/2EG504_7V6_F0002_F_G012",
-          "reason": "footwear-type-unverified"
+          "reason": "reviewed-lace-up-dress-shoe-without-sneaker-sole"
         },
         {
           "id": "arrival-f05522abfda8a9873283",
           "name": "Waxed suede lace-up shoes",
           "url": "https://www.prada.com/us/en/p/waxed-suede-lace-up-shoes/2EE416_0B2_F0E2Q_F_G001",
-          "reason": "footwear-type-unverified"
+          "reason": "reviewed-lace-up-dress-shoe-without-sneaker-sole"
         },
         {
           "id": "arrival-66062eeb55b24acea0b6",
           "name": "Leather mules",
           "url": "https://www.prada.com/us/en/p/leather-mules/2S3002_070_F0038_F_G001",
-          "reason": "hybrid-review-required"
+          "reason": "reviewed-flat-leather-mule-without-sneaker-sole"
         },
         {
           "id": "arrival-22ebf522b2eec9586de8",
           "name": "Leather mules",
           "url": "https://www.prada.com/us/en/p/leather-mules/2S3002_070_F0002_F_G001",
-          "reason": "hybrid-review-required"
-        },
-        {
-          "id": "arrival-c02689fe2495cf1b6cec",
-          "name": "Prada America's Cup metallic leather and bike fabric sneakers",
-          "url": "https://www.prada.com/us/en/p/prada-americas-cup-metallic-leather-and-bike-fabric-sneakers/4E3400_3LNG_F05NO_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-83b4b6fcc15140e90fe2",
-          "name": "Patent leather and technical fabric Prada America's Cup sneakers",
-          "url": "https://www.prada.com/us/en/p/patent-leather-and-technical-fabric-prada-americas-cup-sneakers/4E3400_ASZ_F0I89_F_G000",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-a49662c4454c4741cf8c",
-          "name": "Speedrock mesh fabric sneakers",
-          "url": "https://www.prada.com/us/en/p/speedrock-mesh-fabric-sneakers/1E490O_3ZM0_F0F24_F_005",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-fe50ee6fbe232cd797cf",
-          "name": "Speedrock technical mesh and leather sneakers",
-          "url": "https://www.prada.com/us/en/p/speedrock-technical-mesh-and-leather-sneakers/1E538O_3H0K_F0002_F_005",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-fef14dcc7bc7e768c06e",
-          "name": "Speedrock technical mesh and leather sneakers",
-          "url": "https://www.prada.com/us/en/p/speedrock-technical-mesh-and-leather-sneakers/1E538O_3H0K_F0518_F_005",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-3cc55a17654808e64bcf",
-          "name": "Court leather sneakers",
-          "url": "https://www.prada.com/us/en/p/court-leather-sneakers/1E530O_070_F0009_F_030",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-bfe2cb3bb11b3bb789c4",
-          "name": "Court leather sneakers",
-          "url": "https://www.prada.com/us/en/p/court-leather-sneakers/1E530O_070_F0F24_F_030",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-7eecef7f4e7080a633d5",
-          "name": "Court leather sneakers",
-          "url": "https://www.prada.com/us/en/p/court-leather-sneakers/1E530O_070_F0K74_F_030",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-3de96fecf6bc9aa8d328",
-          "name": "Court Re-Nylon sneakers",
-          "url": "https://www.prada.com/us/en/p/court-re-nylon-sneakers/1E530O_3LFV_F0164_F_D030",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-82b8c922a550bc603a2c",
-          "name": "Mesh fabric and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/mesh-fabric-and-suede-sneakers/1E506O_3KU1_F0009_F_045",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-af259a3b3e0037f4a37f",
-          "name": "Mesh fabric and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/mesh-fabric-and-suede-sneakers/1E506O_3KU1_F0F24_F_045",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-5d77d0bf0309d5cd85b6",
-          "name": "Mesh fabric and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/mesh-fabric-and-suede-sneakers/1E506O_3KU1_F0632_F_045",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-9fc189fcf1422d0e03a8",
-          "name": "Mesh fabric and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/mesh-fabric-and-suede-sneakers/1E503O_3ZO7_F0002_F_045",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-77d669f9305780d87a79",
-          "name": "Suede sneakers",
-          "url": "https://www.prada.com/us/en/p/suede-sneakers/1E152O_054_F0324_F_020",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-8e0de5b2a9af064667a5",
-          "name": "Nappa leather sneakers",
-          "url": "https://www.prada.com/us/en/p/nappa-leather-sneakers/1E152O_038_F0304_F_020",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-99ae407414491b297b77",
-          "name": "Nappa leather sneakers",
-          "url": "https://www.prada.com/us/en/p/nappa-leather-sneakers/1E152O_038_F0632_F_020",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-804a82f756c22cd80779",
-          "name": "Mesh fabric and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/mesh-fabric-and-suede-sneakers/1E503O_3ZO7_F0009_F_045",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-c94ff2c7d6fb81ad7bf5",
-          "name": "Mesh fabric and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/mesh-fabric-and-suede-sneakers/1E503O_3ZO7_F0324_F_045",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-237b2f058f0406c8c787",
-          "name": "Downtown Bold Re-Nylon and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/downtown-bold-re-nylon-and-suede-sneakers/1E792M_ZJM_F0003_F_BC50",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-5222c2fe426d22f4270b",
-          "name": "Downtown Bold Re-Nylon and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/downtown-bold-re-nylon-and-suede-sneakers/1E792M_ZJM_F0007_F_BC50",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-768e52426aeebee6503f",
-          "name": "Downtown Bold Re-Nylon and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/downtown-bold-re-nylon-and-suede-sneakers/1E792M_ZJM_F0002_F_BC50",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-e1064b229449f4aa5469",
-          "name": "Downtown Bold nappa leather and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/downtown-bold-nappa-leather-and-suede-sneakers/1E792M_MLO_F0F24_F_D050",
-          "reason": "representative-photo-review-required"
-        },
-        {
-          "id": "arrival-898a10f11f0c9c7b5437",
-          "name": "Downtown Bold nappa leather and suede sneakers",
-          "url": "https://www.prada.com/us/en/p/downtown-bold-nappa-leather-and-suede-sneakers/1E792M_Y5T_F0944_F_D050",
-          "reason": "representative-photo-review-required"
+          "reason": "reviewed-flat-leather-mule-without-sneaker-sole"
         }
       ],
-      "pending": 85,
-      "pages": 16,
-      "truncated": true,
+      "unclassified": [],
+      "pending": 1,
+      "pages": 71,
+      "truncated": false,
       "errors": [
         {
-          "url": "https://www.prada.com/us/en/womens/shoes/winter-edit/c/10837US.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "url": "https://www.prada.com/content/dam/pradaspa/ecommerce/2026/10/holiday-26/m/new-in/loop_DT.mp4#t=0.001",
+          "error": "Source HTTP 422; official HTML: OFFICIAL_HTML_NO_CONTENT; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
-          "url": "https://www.prada.com/us/en/womens/shoes/new-formal/c/10686US.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "url": "https://www.prada.com/content/dam/pradaspa/ecommerce/2026/10/holiday-26/w/new-in/loop_DT.mp4#t=0.001",
+          "error": "Source HTTP 422; official HTML: OFFICIAL_HTML_NO_CONTENT; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 85
+          "url": "https://www.prada.com/us/en/p/prada-court-suede-sneakers/2EE483_XTY_F0276_F_G000",
+          "error": "The operation was aborted due to timeout"
         }
       ],
       "scopeComplete": false
@@ -464,77 +241,56 @@
     {
       "brand": "Gucci",
       "published": 12,
+      "publishedSneakers": 8,
       "verified": 0,
       "missing": [],
-      "pending": 4,
+      "excluded": [],
+      "unclassified": [],
+      "pending": 0,
       "pages": 0,
       "truncated": false,
       "errors": [
         {
           "url": "https://www.gucci.com/us/en/ca/whats-new/new-in/this-week-women-c-new-women",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_HTTP_401; locale-alternate: www.gucci.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_HTTP_401"
         },
         {
           "url": "https://www.gucci.com/us/en/ca/women/shoes-for-women-c-women-shoes?sort=newest",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.gucci.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.gucci.com/us/en/pr/jewelry-watches/silver-jewelry/silver-rings/gucci-trademark-ring-p-A00AJIJ84008106",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.gucci.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.gucci.com/us/en/pr/men/wallets-and-small-accessories-for-men/card-holders-for-men/card-case-with-web-p-A00CPBAAHKF1071",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.gucci.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.gucci.com/us/en/pr/men/travel-for-men/trolleys-for-men/cabin-trolleys/gucci-porter-light-cabin-plus-trolley-p-8403379AAKS1083",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.gucci.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.gucci.com/us/en/pr/men/accessories-for-men/ties-for-men/ties-for-men/gg-silk-jacquard-tie-p-A00D234E0094100",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.gucci.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.gucci.com/us/en/pr/women/ready-to-wear-for-women/skirts-for-women/printed-silk-twill-skirt-p-A008BEZAV351072",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.gucci.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 4
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         }
       ],
       "scopeComplete": false
     },
     {
       "brand": "Dior",
-      "published": 93,
-      "verified": 90,
-      "missing": [
+      "published": 113,
+      "publishedSneakers": 113,
+      "verified": 111,
+      "missing": [],
+      "excluded": [],
+      "unclassified": [],
+      "pending": 2,
+      "pages": 13,
+      "truncated": false,
+      "errors": [
         {
-          "id": "live-b5099d442efd6b71",
-          "name": "Dior Ribbon Sneaker White and Beige Suede Calfskin",
-          "url": "https://www.dior.com/en_us/fashion/products/KCK553SUE_S69W",
-          "reason": "photo-unavailable"
+          "url": "https://www.dior.com/en_hk/fashion/products/3SN272AFD_H710",
+          "error": "PUBLIC_SOURCE_HTTP_403"
+        },
+        {
+          "url": "https://www.dior.com/en_hk/fashion/products/3SN356ZRH_H960",
+          "error": "OFFICIAL_HOST_DEFERRED_AFTER_DENIAL"
         }
       ],
-      "pending": 0,
-      "pages": 10,
-      "truncated": false,
-      "errors": [],
       "scopeComplete": false
     },
     {
       "brand": "Balenciaga",
-      "published": 73,
+      "published": 75,
+      "publishedSneakers": 73,
       "verified": 90,
-      "missing": [
-        {
-          "id": "arrival-c830534de71b7964917f",
-          "name": "Women's Low Crotch Baggy Jeans in Dirty Vintage Blue",
-          "url": "https://www.balenciaga.com/en-us/low-crotch-baggy-jeans-dirty-vintage-blue-872166TUW584129.html",
-          "reason": "footwear-type-unverified"
-        },
+      "missing": [],
+      "excluded": [
         {
           "id": "arrival-e902702b4c026ff03802",
           "name": "Women's Rodeo Handbag Mini in Silver",
@@ -542,16 +298,10 @@
           "reason": "not-footwear"
         },
         {
-          "id": "arrival-dd676d806c2f563721dd",
-          "name": "Women's Draped Cape Dress in Bottle Green",
-          "url": "https://www.balenciaga.com/en-us/draped-cape-dress-bottle-green-A009PETVN034440.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
           "id": "arrival-cc79f6eda3709bd49d2e",
           "name": "Women's Venom Mule in Black",
           "url": "https://www.balenciaga.com/en-us/venom-mule-black-866571WBEQ41081.html",
-          "reason": "hybrid-review-required"
+          "reason": "reviewed-dress-mule-with-lug-heel"
         },
         {
           "id": "arrival-58325eaeff063c40acfc",
@@ -566,10 +316,16 @@
           "reason": "duplicate-product-color"
         },
         {
-          "id": "arrival-f84fa2e82c654f672361",
-          "name": "Men's Runner Led Sneaker in Black",
-          "url": "https://www.balenciaga.com/en-us/runner-led-sneaker-black-A0011YWRNLD1000.html",
-          "reason": "official-product-id-evidence-required"
+          "id": "arrival-8f938d34c588592480df",
+          "name": "Men's Hamptons Worn-out Sneaker in Black",
+          "url": "https://www.balenciaga.com/en-us/hamptons-worn-out-sneaker-black-841765WCURB1000.html?dwvar_841765WCURB1000_color=1000",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "arrival-a837293ff913511f3bcc",
+          "name": "Men's Pace Sneaker in Black",
+          "url": "https://www.balenciaga.com/en-us/pace-sneaker-black-A004VIWASYM1000.html?dwvar_A004VIWASYM1000_color=1000",
+          "reason": "duplicate-product-color"
         },
         {
           "id": "arrival-e97fd79028398045029a",
@@ -590,22 +346,10 @@
           "reason": "duplicate-product-color"
         },
         {
-          "id": "arrival-557f22a5e16cba9b4f13",
-          "name": "Men's Hamptons Stickers Sneaker in Black/multicolor",
-          "url": "https://www.balenciaga.com/en-us/hamptons-stickers-sneaker-black-multicolor-841765WHPSM1080.html",
-          "reason": "official-product-id-evidence-required"
-        },
-        {
-          "id": "arrival-91f0ad5d993b43a0a8d1",
-          "name": "Men's Hamptons Worn-out Sneaker in Black",
-          "url": "https://www.balenciaga.com/en-us/hamptons-worn-out-sneaker-black-841765WCURB1000.html",
-          "reason": "official-product-id-evidence-required"
-        },
-        {
-          "id": "arrival-3f4271c34b46d590d012",
-          "name": "Men's Pace Sneaker in Black",
-          "url": "https://www.balenciaga.com/en-us/pace-sneaker-black-A004VIWASYM1000.html",
-          "reason": "official-product-id-evidence-required"
+          "id": "arrival-be456a781c308f0f2547",
+          "name": "Men's Pace Sneaker in Brown",
+          "url": "https://www.balenciaga.com/en-us/pace-sneaker-black-A004VIWASYM1000.html?dwvar_A004VIWASYM1000_color=2000",
+          "reason": "duplicate-product-color"
         },
         {
           "id": "arrival-53763d01e7c8868c85da",
@@ -618,12 +362,6 @@
           "name": "Men's Pace Sneaker in Brown",
           "url": "https://www.balenciaga.com/en-us/pace-sneaker-brown-A004VIWASYM2000.html?dwvar_A004VIWASYM2000_color=2000",
           "reason": "duplicate-product-color"
-        },
-        {
-          "id": "arrival-66fbd257d6ae792093a5",
-          "name": "Men's Pace Sneaker in Brown",
-          "url": "https://www.balenciaga.com/en-us/pace-sneaker-brown-A004VIWASYM2000.html",
-          "reason": "official-product-id-evidence-required"
         },
         {
           "id": "arrival-1ea63d6e74479c8fd133",
@@ -662,83 +400,61 @@
           "reason": "duplicate-product-color"
         }
       ],
-      "pending": 46,
-      "pages": 16,
-      "truncated": true,
-      "errors": [
+      "unclassified": [
         {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 46
+          "id": "arrival-c830534de71b7964917f",
+          "name": "Women's Low Crotch Baggy Jeans in Dirty Vintage Blue",
+          "url": "https://www.balenciaga.com/en-us/low-crotch-baggy-jeans-dirty-vintage-blue-872166TUW584129.html",
+          "reason": "footwear-type-unverified"
+        },
+        {
+          "id": "arrival-dd676d806c2f563721dd",
+          "name": "Women's Draped Cape Dress in Bottle Green",
+          "url": "https://www.balenciaga.com/en-us/draped-cape-dress-bottle-green-A009PETVN034440.html",
+          "reason": "footwear-type-unverified"
         }
       ],
+      "pending": 0,
+      "pages": 2,
+      "truncated": false,
+      "errors": [],
       "scopeComplete": false
     },
     {
       "brand": "Celine",
       "published": 10,
+      "publishedSneakers": 10,
       "verified": 0,
       "missing": [],
-      "pending": 16,
+      "excluded": [],
+      "unclassified": [],
+      "pending": 0,
       "pages": 0,
       "truncated": false,
       "errors": [
         {
           "url": "https://www.celine.com/en-us/new/new-collection-men/?start=60&sz=100",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.celine.com/en-us/new/?start=20&sz=100",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.celine.com/en-us/new/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.celine.com/en-us/men/shoes/sneakers/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.celine.com/en-us/women/shoes/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.celine.com/ja-jp/ウィメンズ/シューズ/スニーカー/?start=17&sz=20",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.celine.com/en-us/women/handbags/mini-bags/little-bucket-in-toile-triomphe-L109U4X85.03MI.html",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.celine.com/en-us/women/accessories/hats-and-gloves/brim-in-felt-AA0PQ2P70.19CO.html",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.celine.com/en-us/women/shoes/boots-and-ankle-boots/pointed-jazz-heel-369125267C.38NO.html",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.celine.com/en-us/women/sunglasses/rectangular/francoise-lunettes-EP001CPLB.19KE.html",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.celine.com/en-us/women/ready-to-wear/dresses-and-skirts/dress-in-shine-tweed-RR0U74X12.18NO.html",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.celine.com/en-us/women/shoes/boots-and-ankle-boots/shiny-leather-sock-booty-369145265C.02WD.html",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.celine.com/en-us/women/ready-to-wear/dresses-and-skirts/dress-in-viscose-and-wool-natte-RR0R43D68.38NO.html",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.celine.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 16
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         }
       ],
       "scopeComplete": false
@@ -746,63 +462,34 @@
     {
       "brand": "Saint Laurent",
       "published": 18,
+      "publishedSneakers": 18,
       "verified": 18,
       "missing": [],
+      "excluded": [],
+      "unclassified": [],
       "pending": 0,
-      "pages": 3,
-      "truncated": true,
+      "pages": 0,
+      "truncated": false,
       "errors": [
         {
+          "url": "https://www.ysl.com/en-us/collections/men-shoes-new-arrivals-fall-26",
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
+        },
+        {
           "url": "https://www.ysl.com/en-us/collections/women-fall-26-shoes-new-arrivals",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: OFFICIAL_PAGE_NOT_FOUND; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.ysl.com/en-us/collections/women-summer-26-shoes-new-arrivals",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.ysl.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.ysl.com/en-us/ca/shop-women/shoes",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.ysl.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.ysl.com/en-jp/ca/shop-women/shoes/sneakers",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.ysl.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.ysl.com/ko-kr/ca/%EC%8B%A0%EC%83%81%ED%92%88/highlights",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: OFFICIAL_PAGE_NOT_FOUND; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.ysl.com/ko-kr/collections/women-fall-26-handbags-new-arrivals",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: OFFICIAL_PAGE_NOT_FOUND; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.ysl.com/ko-kr/ca/%EC%8B%A0%EC%83%81%ED%92%88/highlights/icare-women",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.ysl.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.ysl.com/ko-kr/ca/%EC%8B%A0%EC%83%81%ED%92%88/highlights/jamie-women",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.ysl.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.ysl.com/ko-kr/ca/%EC%8B%A0%EC%83%81%ED%92%88/highlights/le-5-a-7-women",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.ysl.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.ysl.com/ko-kr/ca/%EC%8B%A0%EC%83%81%ED%92%88/highlights/loulou-bag-women",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: OFFICIAL_PAGE_NOT_FOUND; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.ysl.com/ko-kr/ca/%EC%8B%A0%EC%83%81%ED%92%88/highlights/cassandre-women",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.ysl.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.ysl.com/ko-kr/ca/%EC%8B%A0%EC%83%81%ED%92%88/highlights/niki-women",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: OFFICIAL_PAGE_NOT_FOUND; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.ysl.com/ko-kr/ca/%EC%8B%A0%EC%83%81%ED%92%88/highlights/kate-women",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: OFFICIAL_PAGE_NOT_FOUND; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         }
       ],
       "scopeComplete": false
@@ -810,106 +497,118 @@
     {
       "brand": "Hermès",
       "published": 75,
+      "publishedSneakers": 75,
       "verified": 75,
       "missing": [],
-      "pending": 6,
-      "pages": 5,
+      "excluded": [],
+      "unclassified": [],
+      "pending": 1,
+      "pages": 4,
       "truncated": false,
       "errors": [
         {
-          "url": "https://www.hermes.com/us/en/product/match-sneaker-H261863ZH90/",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.hermes.com/us/en/product/mix-mule-H261951ZH1R/",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.hermes.com/us/en/product/next-sneaker-H262891ZH90/",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.hermes.com/us/en/product/bouncing-sneaker-H242810ZH90/",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.hermes.com/us/en/product/master-sneaker-H261881ZHD8/",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "url": "https://www.hermes.com/us/en/category/men/shoes/derbies-and-oxford-shoes/",
+          "error": "OFFICIAL_ACCESS_CHALLENGE; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.hermes.com/us/en/product/jet-sneaker-H242925ZHAD/",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 6
+          "error": "PUBLIC_SOURCE_HTTP_403"
         }
       ],
       "scopeComplete": false
     },
     {
       "brand": "Moncler",
-      "published": 18,
-      "verified": 13,
+      "published": 54,
+      "publishedSneakers": 54,
+      "verified": 57,
       "missing": [],
-      "pending": 0,
-      "pages": 16,
-      "truncated": true,
+      "excluded": [
+        {
+          "id": "arrival-856f84cb441008029508",
+          "name": "Trailgrip LP Suede & Nubuck Sneaker",
+          "url": "https://www.moncler.com/en-gb/women/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-beige-and-white-L209B4M00070M846721O.html",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "arrival-20d30f02a00d69538244",
+          "name": "Trailgrip LP Suede & Nubuck Trainer",
+          "url": "https://www.moncler.com/en-gb/women/shoes/sneakers/trailgrip-lp-suede-and-nubuck-trainers-light-beige-L109B4M00230M8467201.html",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "arrival-037ae74b795bf6e8c81a",
+          "name": "Vera Leisure Padded Trainers",
+          "url": "https://www.moncler.com/en-gb/women/shoes/sneakers/vera-leisure-padded-trainers-black-L109B4M00200M9244999.html",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "arrival-46228294f06b607eea48",
+          "name": "Trailgrip Lite3 Trainers",
+          "url": "https://www.moncler.com/en-gb/women/shoes/sneakers/trailgrip-lite3-trainers-white-L109B4M00120M844691Q.html",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "arrival-e80ebdb257ac22d69d3a",
+          "name": "Vera Leisure Suede Trainers",
+          "url": "https://www.moncler.com/en-gb/women/shoes/sneakers/vera-leisure-suede-trainers-beige-L109B4M00200M946524I.html",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "arrival-bf4239a1a323e95f0f70",
+          "name": "Moncler CityTrek Sneakers",
+          "url": "https://www.moncler.com/en-gb/women/shoes/sneakers/moncler-city-trek-sneakers-light-pink-L209B4M00210N118151P.html",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "arrival-c2483b288d8fe093e2b2",
+          "name": "Vera Leisure Padded Trainers",
+          "url": "https://www.moncler.com/en-gb/women/shoes/sneakers/vera-leisure-padded-trainers-light-beige-L109B4M00200M924420A.html",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "arrival-09e19dcc1f107ec2e3dc",
+          "name": "Moncler Altive Nubuck & Suede Trainers",
+          "url": "https://www.moncler.com/en-gb/women/shoes/sneakers/moncler-altive-nubuck-and-suede-trainers-sand-beige-L209B4M00150N0565200.html",
+          "reason": "duplicate-product-color"
+        }
+      ],
+      "unclassified": [],
+      "pending": 4,
+      "pages": 60,
+      "truncated": false,
       "errors": [
         {
-          "url": "https://www.moncler.com/en-us/women/shoes/sneakers/moncler-city-trek-sneakers-black-L209B4M00210N0633999.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-gtx-sneakers-black-L209B4M00100M7208999.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-gtx-sneakers-light-pink-L209B4M00020M988451P.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
           "url": "https://www.moncler.com/en-us/women/shoes/sneakers/moncler-altive-nubuck-and-suede-sneakers-white-L209B4M00150N0565001.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "error": "The operation was aborted due to timeout"
         },
         {
-          "url": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-gtx-sneakers-white-L209B4M00100M7208001.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "url": "https://www.moncler.com/en-us/women/shoes/sneakers/vera-leisure-padded-sneakers-brown-L209B4M00090M9244243.html",
+          "error": "The operation was aborted due to timeout"
         },
         {
-          "url": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lite3-nubuck-and-suede-sneakers-black-L209B4M00080M7242999.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "url": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-grey-L109B4M00230M8467926.html",
+          "error": "The operation was aborted due to timeout"
         },
         {
-          "url": "https://www.moncler.com/en-us/women/shoes/sneakers/trailgrip-gtx-sneakers-grey-L209B4M00020M988492P.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "url": "https://www.moncler.com/en-us/men/shoes/sneakers/trailgrip-lp-suede-and-nubuck-sneaker-navy-blue-L109A4M00290M8467P70.html",
+          "error": "The operation was aborted due to timeout"
         }
       ],
       "scopeComplete": false
     },
     {
       "brand": "Bottega Veneta",
-      "published": 33,
-      "verified": 22,
-      "missing": [
-        {
-          "id": "arrival-3fb456624b11f27eb37a",
-          "name": "Sardine Hair Comb",
-          "url": "https://www.bottegaveneta.com/en-us/sardine-hair-comb-espresso-872975V2BEB2009.html",
-          "reason": "footwear-type-unverified"
-        },
+      "published": 84,
+      "publishedSneakers": 73,
+      "verified": 73,
+      "missing": [],
+      "excluded": [
         {
           "id": "arrival-18c3193f44d5e52481d4",
           "name": "Gino Lace-Up Shoe",
           "url": "https://www.bottegaveneta.com/en-us/gino--lace-up-shoe-black-A007B3V3OA01000.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-b4656058f40864c5f998",
-          "name": "Mitre Aviator Eyeglasses",
-          "url": "https://www.bottegaveneta.com/en-us/mitre-aviator-eyeglasses-havana-transparent-A00AJCV2Q301511.html",
-          "reason": "footwear-type-unverified"
+          "reason": "reviewed-lace-up-dress-shoe-without-sneaker-sole"
         },
         {
           "id": "arrival-c0a460dbc7e744107044",
@@ -922,6 +621,20 @@
           "name": "Crepe Viscose Jersey Dress",
           "url": "https://www.bottegaveneta.com/en-us/crepe-viscose-jersey-dress-azurite-A009YAV6NJ04170.html",
           "reason": "not-footwear"
+        }
+      ],
+      "unclassified": [
+        {
+          "id": "arrival-3fb456624b11f27eb37a",
+          "name": "Sardine Hair Comb",
+          "url": "https://www.bottegaveneta.com/en-us/sardine-hair-comb-espresso-872975V2BEB2009.html",
+          "reason": "footwear-type-unverified"
+        },
+        {
+          "id": "arrival-b4656058f40864c5f998",
+          "name": "Mitre Aviator Eyeglasses",
+          "url": "https://www.bottegaveneta.com/en-us/mitre-aviator-eyeglasses-havana-transparent-A00AJCV2Q301511.html",
+          "reason": "footwear-type-unverified"
         },
         {
           "id": "arrival-ac93ff7f0a2b5eb3ee96",
@@ -936,118 +649,27 @@
           "reason": "footwear-type-unverified"
         }
       ],
-      "pending": 33,
-      "pages": 16,
-      "truncated": true,
-      "errors": [
-        {
-          "url": "https://www.bottegaveneta.com/en-us/tarik-mule-deep-mahogany-786883V3HB06176.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/odyssey-intrecciato-cabin-suitcase-obsidian-gray-radar-A00AJTV56Y21701.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/intrecciato-cabin-duffle-obsidian-gray-radar-A006VTV3AF01701.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/andiamo-clutch-25-deep-mahogany-A005POV0HW06147.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/dog-charm-supermoon-silver-807068V7BL18037.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/dog-charm-space-blue-807068V2OL14317.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/claw-earcuff--yellow-gold-A005U1VAHU08120.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/andiamo-pouch-on-chain-supermoon-silver-844107V4PJ28034.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/andiamo-clutch-25-radar-A005POV0HW06306.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/small-andiamo-radar-A0069UV75D06355.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/baby-campana-radar-A005PEV0HW06306.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/summer-2027.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/fragrances-leather-accessories.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/winter-2026.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/initials.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/by-collection.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/giftsforher.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/giftsforhim.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/clips.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/made-to-order.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/people.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.bottegaveneta.com/en-us/for-the-arts.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 33
-        }
-      ],
+      "pending": 0,
+      "pages": 94,
+      "truncated": false,
+      "errors": [],
       "scopeComplete": false
     },
     {
       "brand": "Loewe",
       "published": 34,
+      "publishedSneakers": 18,
       "verified": 35,
-      "missing": [
+      "missing": [],
+      "excluded": [
         {
           "id": "arrival-1591e9a39076bee08885",
           "name": "Pebble Soft ballerina",
           "url": "https://www.loewe.com/usa/en/women/shoes/flats/pebble-soft-ballerina-in-nappa-lambskin/L815466X46-1100.html",
-          "reason": "hybrid-review-required"
+          "reason": "reviewed-conventional-ballet-flat"
         }
       ],
+      "unclassified": [],
       "pending": 0,
       "pages": 11,
       "truncated": false,
@@ -1056,9 +678,12 @@
     },
     {
       "brand": "Axel Arigato",
-      "published": 21,
-      "verified": 14,
+      "published": 28,
+      "publishedSneakers": 28,
+      "verified": 21,
       "missing": [],
+      "excluded": [],
+      "unclassified": [],
       "pending": 0,
       "pages": 3,
       "truncated": false,
@@ -1067,552 +692,119 @@
     },
     {
       "brand": "Autry",
-      "published": 0,
-      "verified": 47,
-      "missing": [
-        {
-          "id": "arrival-bd297b5caa72a05257a7",
-          "name": "Image 72: MEDALIST 로우 스니커즈 가죽 마시멜로 앤 아이보리",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/medalist/%EB%A7%88%EC%8B%9C%EB%A9%9C%EB%A1%9C%EC%99%80-%EC%95%84%EC%9D%B4%EB%B3%B4%EB%A6%AC-%EA%B0%80%EC%A3%BD%EC%9D%98-medalist-low-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-848319.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-907fe87dd6c09e65b83c",
-          "name": "Image 80: MEDALIST 로우 스니커즈 슈퍼 소프트 가죽 화이트 앤 시어링",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/medalist/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-medalist-low-%EC%8A%88%ED%8D%BC-%EC%86%8C%ED%94%84%ED%8A%B8-%ED%99%94%EC%9D%B4%ED%8A%B8-%EA%B0%80%EC%A3%BD-%EB%B0%8F-%EC%8B%9C%EC%96%B4%EB%A7%81-3106.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-993728dbbac817c2240f",
-          "name": "Image 86: MEDALIST 로우 스니커즈 가죽 화이트 앤 스웨이드 레오파드",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/medalist/%ED%99%94%EC%9D%B4%ED%8A%B8-%EA%B0%80%EC%A3%BD%EA%B3%BC-%ED%91%9C%EB%B2%94-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C%EB%A1%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A7%84-medalist-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-848153.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-dd6a6c160d483cf0616f",
-          "name": "Image 100: MEDALIST 로우 스니커즈 스웨이드 앤 가죽 화이트",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/medalist/%ED%99%94%EC%9D%B4%ED%8A%B8-%EA%B0%80%EC%A3%BD-%EB%B0%8F-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C%EB%A1%9C-%EC%A0%9C%EC%9E%91%EB%90%9C-medalist-low-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-847763.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-cc2a5b35aa7b483e6fc8",
-          "name": "Image 73: MEDALIST 플랫폼 스니커즈 가죽 화이트 앤드 메탈 실버",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/platform/medalist-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%EA%B0%80%EC%A3%BD-%ED%99%94%EC%9D%B4%ED%8A%B8-%EC%95%A4%EB%93%9C-%EB%A9%94%ED%83%88-%EC%8B%A4%EB%B2%84-839776.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-f20ed3febba4e6db24a6",
-          "name": "Image 79: MEDALIST 플랫폼 스니커즈 가죽 화이트",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/platform/%ED%99%94%EC%9D%B4%ED%8A%B8-%EA%B0%80%EC%A3%BD-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%AC%EB%A8%B8-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-4065.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-b1656e5783eb88cd5d3e",
-          "name": "Image 85: MEDALIST 플랫폼 스니커즈 스웨이드 앤 가죽 페더 그레이 앤 화이트",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/platform/%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C%EC%99%80-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EB%90%9C-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%ED%8E%98%EB%8D%94-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EB%B0%8F-%ED%99%94%EC%9D%B4%ED%8A%B8-848374.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-ce0d748333364fba0c57",
-          "name": "Image 91: MEDALIST 플랫폼 스니커즈 가죽 화이트 앤 파우더 핑크",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/platform/%ED%99%94%EC%9D%B4%ED%8A%B8-%EB%B0%8F-%ED%8C%8C%EC%9A%B0%EB%8D%94-%ED%95%91%ED%81%AC-%EC%BB%AC%EB%9F%AC%EC%9D%98-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-5050.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-4921693394be71b23198",
-          "name": "Image 97: MEDALIST 플랫폼 스니커즈스웨이드 가죽 화이트 앤드 플래티넘",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/platform/medalist-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EA%B0%80%EC%A3%BD-%ED%99%94%EC%9D%B4%ED%8A%B8-%EC%95%A4%EB%93%9C-%ED%94%8C%EB%9E%98%ED%8B%B0%EB%84%98-839785.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-c9e22a5abecb49527971",
-          "name": "Image 103: MEDALIST 플랫폼 스니커즈 스웨이드 앤 가죽 실버 앤 화이트",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/platform/%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EB%B0%8F-%EC%9D%80%EC%83%89%EA%B3%BC-%ED%9D%B0%EC%83%89-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EC%A0%9C%EC%9E%91%EB%90%9C-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-844313.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-3d2528860fe8b12ef9c4",
-          "name": "Image 109: MEDALIST 플랫폼 스니커즈 가죽 화이트 앤 레오파드",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/platform/leopard-%ED%8C%A8%ED%84%B4%EC%9D%98-%ED%9D%B0%EC%83%89-%EA%B0%80%EC%A3%BD-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-844333.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-13638eb39e282e4d7e63",
-          "name": "Image 116: MEDALIST 플랫폼 스니커즈 가죽 화이트 앤 블랙",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/platform/%ED%9D%B0%EC%83%89%EA%B3%BC-%EA%B2%80%EC%9D%80%EC%83%89-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EB%90%9C-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-4066.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-f0889df7c25da1559162",
-          "name": "Image 122: MEDALIST 플랫폼 스니커즈 가죽 화이트 앤 메탈릭 플래티넘",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/platform/%ED%99%94%EC%9D%B4%ED%8A%B8-%EA%B0%80%EC%A3%BD%EA%B3%BC-%EB%A9%94%ED%83%88%EB%A6%AD-%ED%94%8C%EB%9E%98%ED%8B%B0%EB%84%98%EC%9C%BC%EB%A1%9C-%EC%A0%9C%EC%9E%91%EB%90%9C-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-4069.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-3a02a3e608546f572816",
-          "name": "Image 128: MEDALIST 플랫폼 스니커즈 가죽 화이트 앤 메탈릭 실버",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/platform/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%ED%99%94%EC%9D%B4%ED%8A%B8-%EA%B0%80%EC%A3%BD-%EB%B0%8F-%EB%A9%94%ED%83%88%EB%A6%AD-%EC%8B%A4%EB%B2%84-4070.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-ca1b938efdcb2ca5b508",
-          "name": "Image 73: DALLAS 로우 스니커즈 슈퍼 빈티지 가죽 블랙",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%EA%B2%80%EC%A0%95%EC%83%89-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EB%90%9C-autry-sneakers-dallas-low-super-vintage-849107.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-72f9561c2fa79e1306ea",
-          "name": "Image 79: DALLAS 로우 스니커즈 슈퍼 빈티지 가죽 마시멜로",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%EB%A7%88%EC%8B%9C%EB%A9%9C%EB%A1%9C-%EA%B0%80%EC%A3%BD%EC%9D%98-%EC%8A%88%ED%8D%BC-%EB%B9%88%ED%8B%B0%EC%A7%80-%EB%8B%AC%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-849098.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-26a98c17e607488a57bf",
-          "name": "Image 86: DALLAS 로우 스니커즈 슈퍼 빈티지 가죽 마시멜로 앤 참",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%EB%A7%88%EC%8B%9C%EB%A9%9C%EB%A1%9C-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A0-autry-sneakers-dallas-low-super-vintage%EC%99%80-%EC%B0%A8%EB%A6%BC-849116.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-619c3d82d37686d68baa",
-          "name": "Image 92: DALLAS 로우 스니커즈 가죽 화이트",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%ED%99%94%EC%9D%B4%ED%8A%B8-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EB%90%9C-%EB%8B%AC%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-4238.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-6d0b75b8e5f04b5a2837",
-          "name": "Image 98: DALLAS 로우 스니커즈 가죽 화이트 앤 스페이스",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%ED%9D%B0%EC%83%89-%EA%B0%80%EC%A3%BD%EA%B3%BC-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EB%8B%AC%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-4241.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-1090f8540492afe42cbc",
-          "name": "Image 104: DALLAS 로우 스니커즈 가죽 화이트 앤 실버",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%ED%99%94%EC%9D%B4%ED%8A%B8-%EB%B0%8F-%EC%8B%A4%EB%B2%84-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EC%A0%9C%EC%9E%91%EB%90%9C-%EB%8B%AC%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-4244.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-a9eeb8adc34c3eafaec0",
-          "name": "Image 110: DALLAS 로우 스니커즈 가죽 화이트 앤 골드",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%ED%99%94%EC%9D%B4%ED%8A%B8-%EA%B3%A8%EB%93%9C-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EB%8B%AC%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-4245.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-bf5a2db1703b2de1dd83",
-          "name": "Image 116: DALLAS 로우 스니커즈 가죽 마시멜로 앤드 템프스트",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/dallas-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%EA%B0%80%EC%A3%BD-%EB%A7%88%EC%8B%9C%EB%A9%9C%EB%A1%9C-%EC%95%A4%EB%93%9C-%ED%85%9C%ED%94%84%EC%8A%A4%ED%8A%B8-839191.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-c47cb5976daa62a49091",
-          "name": "Image 123: DALLAS 로우 스니커즈 가죽 다이키리 그린 앤 마시멜로우",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%EB%8B%A4%EC%9D%B4%ED%82%A4%EB%A6%AC-%EA%B7%B8%EB%A6%B0%EA%B3%BC-%EB%A7%88%EC%8B%9C%EB%A9%9C%EB%A1%9C%EC%9A%B0-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EB%90%9C-%EB%8C%88%EB%9F%AC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-842834.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-c7cfe5214cd0aa99fb0c",
-          "name": "Image 129: DALLAS 로우 스니커즈 가죽 피렌체 앤 마시멜로우",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%ED%94%BC%EB%A0%8C%EC%B2%B4%EC%99%80-%EB%A7%88%EC%8B%9C%EB%A9%9C%EB%A1%9C%EC%9A%B0%EB%A1%9C-%EC%A0%9C%EC%9E%91%EB%90%9C-%EB%8B%AC%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-842844.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-2299593617a61154bb32",
-          "name": "Image 135: DALLAS 로우 스니커즈 가죽 화이트",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%ED%99%94%EC%9D%B4%ED%8A%B8-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EB%90%9C-%EB%8B%AC%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-848423.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-40c8b4ee5a8e1aae08dc",
-          "name": "Image 142: DALLAS 로우 스니커즈 가죽 마시멜로 앤 핑크 돌핀",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%EB%A7%88%EC%8B%9C%EB%A9%9C%EB%A1%9C%EC%99%80-%ED%95%91%ED%81%AC-%EB%8F%8C%EA%B3%A0%EB%9E%98-%EA%B0%80%EC%A3%BD%EC%9C%BC%EB%A1%9C-%EB%90%9C-%EB%8B%AC%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-848432.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-a42beedc1396acb4fb85",
-          "name": "Image 148: DALLAS 로우 스니커즈 가죽 마시멜로우 앤 피그",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%EB%A7%88%EC%8B%9C%EB%A9%9C%EB%A1%9C%EC%9A%B0-%EA%B0%80%EC%A3%BD%EA%B3%BC-%ED%94%BC%EA%B7%9C%EC%96%B4%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EB%8B%AC%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-848441.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-5e54aafac76550aaf13a",
-          "name": "Image 154: DALLAS 로우 스니커즈 스웨이드 피넛",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%ED%94%BC%EB%84%9B%EC%9C%BC%EB%A1%9C-%EB%90%9C-%EB%8B%AC%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-842854.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-8c9402b580139bf6d0a2",
-          "name": "Image 160: DALLAS 로우 스니커즈 스웨이드 실크",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EC%8B%A4%ED%81%AC%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EB%8C%88%EB%9F%AC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-842864.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-df77fbb630f513a36896",
-          "name": "Image 166: DALLAS 로우 스니커즈 스웨이드 화이트",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/dallas/%ED%99%94%EC%9D%B4%ED%8A%B8-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EB%8D%B8%EB%9D%BC%EC%8A%A4-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-842874.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-ea128133af2f9da12bf8",
-          "name": "Image 72: MEDALIST EASEKNIT 뮬 스니커즈 레오파드",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/mule/%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A6%88%EB%8B%88%ED%8A%B8-%EB%AE%AC-%EB%A0%88%EC%98%A4%ED%8C%8C%EB%93%9C-844233.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-3ff7937a61c12ffcd5ff",
-          "name": "Image 78: MEDALIST EASEKNIT 뮬 스니커즈 아이보리",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/mule/%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A7%80%EB%8B%88%ED%8A%B8-%EB%AE%AC-%EC%95%84%EC%9D%B4%EB%B3%B4%EB%A6%AC-844243.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-0edf5467241e91ffda45",
-          "name": "Image 84: MEDALIST EASEKNIT 로우 스니커즈 니트 '레오파드 프린트' 브라운 앤 베이지",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A7%80%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%EB%B8%8C%EB%9D%BC%EC%9A%B4-%EB%B0%8F-%EB%B2%A0%EC%9D%B4%EC%A7%80-%EB%A0%88%EC%98%A4%ED%8C%8C%EB%93%9C-%ED%94%84%EB%A6%B0%ED%8A%B8-843785.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-3237f1152df1946ba593",
-          "name": "Image 90: MEDALIST EASEKNIT 로우 스니커즈 니트 '지브라 프린트' 아이보리 앤 블랙",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%EB%AC%B4%EA%B4%91-%ED%99%94%EC%9D%B4%ED%8A%B8%EC%99%80-%EB%B8%94%EB%9E%99%EC%9D%98-%ED%91%9C%EB%B2%94-%EB%AC%B4%EB%8A%AC-%EB%8B%88%ED%8A%B8-low-medalist-easeknit-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-843795.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-d98e2c106a270ad6c234",
-          "name": "Image 97: MEDALIST EASEKNIT 로우 스니커즈 니트 아이보리 블랙 앤 실버",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%EC%95%84%EC%9D%B4%EB%B3%B4%EB%A6%AC-%EB%B8%94%EB%9E%99-%EC%8B%A4%EB%B2%84%EC%9D%98-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A6%88%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-843805.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-6381a6bec2b580c9ac86",
-          "name": "Image 103: MEDALIST EASEKNIT 로우 스니커즈 니트 아이보리 블랙 앤 파우더",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%EB%A7%A4%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A6%88%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%EC%95%84%EC%9D%B4%EB%B3%B4%EB%A6%AC-%EB%B8%94%EB%9E%99%EA%B3%BC-%ED%8C%8C%EC%9A%B0%EB%8D%94-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-843815.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-ca19ff6d35a49bd5125c",
-          "name": "Image 109: MEDALIST EASEKNIT 로우 스니커즈 니트 화이트",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%ED%99%94%EC%9D%B4%ED%8A%B8-%EC%83%89%EC%83%81%EC%9D%98-%EB%8B%88%ED%8A%B8-%EC%86%8C%EC%9E%AC-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A6%88%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-3986.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-fc8f8e549aeaa764702d",
-          "name": "Image 115: MEDALIST EASEKNIT 로우 스니커즈 니트 아이보리",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%EC%95%84%EC%9D%B4%EB%B3%B4%EB%A6%AC-%EC%83%89%EC%83%81%EC%9D%98-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A6%88%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-3989.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-7912fb80a50f2a21534e",
-          "name": "Image 121: MEDALIST EASEKNIT 로우 스니커즈 니트 크렘브륄레",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/medalist-easeknit-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%EB%8B%88%ED%8A%B8-%ED%81%AC%EB%A0%98%EB%B8%8C%EB%A5%84%EB%A0%88-5030.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-2caed7454723418845c5",
-          "name": "Image 127: MEDALIST EASEKNIT 로우 스니커즈 니트 코버트 그린",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/medalist-easeknit-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%EB%8B%88%ED%8A%B8-%EC%BD%94%EB%B2%84%ED%8A%B8-%EA%B7%B8%EB%A6%B0-5034.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-93cfee1437935ade8bf9",
-          "name": "Image 133: MEDALIST EASEKNIT 로우 스니커즈 패브릭 블랙 컬러",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/medalist-easeknit-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%ED%8C%A8%EB%B8%8C%EB%A6%AD-%EB%B8%94%EB%9E%99-%EC%BB%AC%EB%9F%AC-4626.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-e6c6f873ee640bba7833",
-          "name": "Image 139: MEDALIST EASEKNIT 로우 스니커즈 니트 시 그라스",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A7%80-%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%ED%95%B4%EC%B4%88%EC%83%89-843887.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-55c2be37776f30a86461",
-          "name": "Image 145: MEDALIST EASEKNIT 로우 스니커즈 니트 스페이스 블루",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A6%88%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%A3%A8-843897.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-441d9c275c2eebfc33bb",
-          "name": "Image 151: MEDALIST EASEKNIT 로우 스니커즈 니트 화이트",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A7%80%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%ED%99%94%EC%9D%B4%ED%8A%B8-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-843907.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-bf2c469a1cda7e1426bf",
-          "name": "Image 157: MEDALIST EASEKNIT 로우 스니커즈 니트 스페이스 블루",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A6%88%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%A3%A8-843917.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-c2139f73a0de3af9bd01",
-          "name": "Image 163: MEDALIST EASEKNIT 로우 스니커즈 니트 실버",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A7%80%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%EB%8B%88%ED%8A%B8-%EC%8B%A4%EB%B2%84-%EC%9A%B4%EB%8F%99%ED%99%94-843937.html",
-          "reason": "photo-unavailable"
-        },
-        {
-          "id": "arrival-c6c9a800d186851ff50b",
-          "name": "Image 170: MEDALIST EASEKNIT 로우 스니커즈 니트 플래티넘",
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/easeknit/%ED%94%8C%EB%9E%98%ED%8B%B0%EB%84%98-%EB%8B%88%ED%8A%B8%EB%A1%9C-%EC%A0%9C%EC%9E%91%EB%90%9C-%EB%A9%94%EB%8B%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%A7%80%EB%8B%88%ED%8A%B8-%EB%A1%9C%EC%9A%B0-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-843947.html",
-          "reason": "photo-unavailable"
-        }
-      ],
+      "published": 763,
+      "publishedSneakers": 763,
+      "verified": 763,
+      "missing": [],
+      "excluded": [],
+      "unclassified": [],
       "pending": 0,
-      "pages": 4,
-      "truncated": true,
-      "errors": [
-        {
-          "url": "https://www.autry-usa.com/ko/여성/스니커즈/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/남성/스니커즈/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/medalist/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/reelwind/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/hyperway/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/windscape/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/super-vintage/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/windspin/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/wildpace/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/med-way/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/clc/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/malga/",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.autry-usa.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        }
-      ],
+      "pages": 2,
+      "truncated": false,
+      "errors": [],
       "scopeComplete": false
     },
     {
       "brand": "PANE",
-      "published": 119,
+      "published": 118,
+      "publishedSneakers": 118,
       "verified": 120,
-      "missing": [
+      "missing": [],
+      "excluded": [],
+      "unclassified": [
+        {
+          "id": "arrival-f32d5bea56e5880848a5",
+          "name": "Pane Zephyr Training",
+          "url": "https://paneshoes.com/products/pane-zephyr-training-women-s-shoes-manu-bay",
+          "reason": "footwear-type-unverified"
+        },
         {
           "id": "arrival-b9d25970a807dc2bcf41",
-          "name": "Pane Zephyr Training Men’s Shoes-Manu Bay",
+          "name": "Pane Zephyr Training",
           "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-manu-bay",
-          "reason": "photo-shared-across-models"
+          "reason": "footwear-type-unverified"
         }
       ],
-      "pending": 101,
-      "pages": 16,
-      "truncated": true,
+      "pending": 1,
+      "pages": 20,
+      "truncated": false,
       "errors": [
         {
-          "url": "https://paneshoes.com/products/pane-crest-kick-men-s-shoes-rose-mist",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-women-s-shoes-rose-mist",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-men-s-shoes-scalene",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-women-s-shoes-scalene",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-men-s-shoes-aspis",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-women-s-shoes-aspis",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-men-s-shoes-viper",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-women-s-shoes-viper",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-lume-arter-men-s-shoes-glacial-tarn",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-lume-arter-men-s-shoes-ember-haze",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-lume-arter-men-s-shoes-pine-ridge",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-lume-arter-men-s-shoes-slitstone",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-lume-arter-men-s-shoes-scoria",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-men-s-shoes-crimson-moon",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-women-s-shoes-crimson-moon",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-women-s-shoes-amber-glow",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://paneshoes.com/products/pane-crest-kick-women-s-shoes-moss-star",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 101
+          "url": "https://paneshoes.com/products/pane-zephyr-training-men-s-shoes-manu-bay",
+          "error": "FOOTWEAR_TYPE_UNVERIFIED"
         }
       ],
       "scopeComplete": false
     },
     {
       "brand": "ALOHAS",
-      "published": 47,
-      "verified": 47,
+      "published": 50,
+      "publishedSneakers": 37,
+      "verified": 50,
       "missing": [],
-      "pending": 0,
-      "pages": 16,
-      "truncated": true,
-      "errors": [],
+      "excluded": [],
+      "unclassified": [],
+      "pending": 5,
+      "pages": 57,
+      "truncated": false,
+      "errors": [
+        {
+          "url": "https://alohas.com/en-us/products/tb-69-rife-sheen-taupe-sneakers",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://alohas.com/en-us/products/tb-69-rife-sheen-brown-sneakers",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://alohas.com/en-us/products/tb-25-chocolate-brown-sneakers",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://alohas.com/en-us/products/tb-24-suede-chocolate-brown-leather-sneakers",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://alohas.com/en-us/products/tb-99-silver-leather-sneakers",
+          "error": "fetch failed"
+        }
+      ],
       "scopeComplete": false
     },
     {
       "brand": "Common Projects",
       "published": 0,
+      "publishedSneakers": 0,
       "verified": 0,
       "missing": [],
+      "excluded": [],
+      "unclassified": [],
       "pending": 0,
       "pages": 0,
-      "truncated": false,
+      "truncated": true,
       "errors": [
         {
           "url": "https://www.commonprojects.com/",
-          "error": "Source HTTP 422; official HTML: fetch failed; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.commonprojects.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Official catalogue unavailable: browser connection timeout and direct reader fetch failure."
         }
       ],
       "scopeComplete": false
     },
     {
       "brand": "Golden Goose",
-      "published": 50,
-      "verified": 62,
-      "missing": [
-        {
-          "id": "arrival-11f6b1aa32fcc923adc6",
-          "name": "여성 퍼플 스타 & 시어링 안감 퍼플 스웨이드 슈퍼스타",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%ED%8D%BC%ED%94%8C-%EC%8A%A4%ED%83%80-%26-%EC%8B%9C%EC%96%B4%EB%A7%81-%EC%95%88%EA%B0%90-%ED%8D%BC%ED%94%8C-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EC%8A%88%ED%8D%BC%EC%8A%A4%ED%83%80-cod-GWF01153.F009126.25836.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-a16bbb77c4547b476a55",
-          "name": "여성 플래티넘 글리터 스타 화이트 레더 볼스타",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%ED%94%8C%EB%9E%98%ED%8B%B0%EB%84%98-%EA%B8%80%EB%A6%AC%ED%84%B0-%EC%8A%A4%ED%83%80-%ED%99%94%EC%9D%B4%ED%8A%B8-%EB%A0%88%EB%8D%94-%EB%B3%BC%EC%8A%A4%ED%83%80-cod-GWF00117.F009344.12615.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-a34c2e27c711c132cd84",
-          "name": "여성 레오파드 프린트 스타 화이트 레더 슈퍼스타",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%EB%A0%88%EC%98%A4%ED%8C%8C%EB%93%9C-%ED%94%84%EB%A6%B0%ED%8A%B8-%EC%8A%A4%ED%83%80-%ED%99%94%EC%9D%B4%ED%8A%B8-%EB%A0%88%EB%8D%94-%EC%8A%88%ED%8D%BC%EC%8A%A4%ED%83%80-cod-GWF00101.F009331.12606.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-2e9d8a251278652eca77",
-          "name": "여성 화이트 스타 & 시어링 안감 베이지와 브라운 스웨이드 볼스타 LTD",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%ED%99%94%EC%9D%B4%ED%8A%B8-%EC%8A%A4%ED%83%80-%26-%EC%8B%9C%EC%96%B4%EB%A7%81-%EC%95%88%EA%B0%90-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%99%80-%EB%B8%8C%EB%9D%BC%EC%9A%B4-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EB%B3%BC%EC%8A%A4%ED%83%80-ltd-cod-GWF00771.F009119.81868.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-d7a6932b2f4d1926b5b0",
-          "name": "여성 톤 온 톤 스타 파우더 핑크 벨벳 슈퍼스타 LTD",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%ED%86%A4-%EC%98%A8-%ED%86%A4-%EC%8A%A4%ED%83%80-%ED%8C%8C%EC%9A%B0%EB%8D%94-%ED%95%91%ED%81%AC-%EB%B2%A8%EB%B2%B3-%EC%8A%88%ED%8D%BC%EC%8A%A4%ED%83%80-ltd-cod-GWF00101.F009114.83522.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-10518138ee0f00dabf63",
-          "name": "여성 탠 레더 스타 베이지 시어링 트루스타",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%ED%83%A0-%EB%A0%88%EB%8D%94-%EC%8A%A4%ED%83%80-%EB%B2%A0%EC%9D%B4%EC%A7%80-%EC%8B%9C%EC%96%B4%EB%A7%81-%ED%8A%B8%EB%A3%A8%EC%8A%A4%ED%83%80-cod-GWF00922.F007983.15851.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-2737461c3c10386ad1e4",
-          "name": "톤온톤 스타 디테일의 펄 그레이 스웨이드 여성 슈퍼스타 사봇",
-          "url": "https://www.goldengoose.com/kr/ko/%ED%86%A4%EC%98%A8%ED%86%A4-%EC%8A%A4%ED%83%80-%EB%94%94%ED%85%8C%EC%9D%BC%EC%9D%98-%ED%8E%84-%EA%B7%B8%EB%A0%88%EC%9D%B4-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EC%97%AC%EC%84%B1-%EC%8A%88%ED%8D%BC%EC%8A%A4%ED%83%80-%EC%82%AC%EB%B4%87-cod-GWF01203.F009413.16193.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-4a538e1f7b75007ad4e4",
-          "name": "여성 올드 로즈 스타 화이트 레더 & 펄 스웨이드 볼스타",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%EC%98%AC%EB%93%9C-%EB%A1%9C%EC%A6%88-%EC%8A%A4%ED%83%80-%ED%99%94%EC%9D%B4%ED%8A%B8-%EB%A0%88%EB%8D%94-%26-%ED%8E%84-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EB%B3%BC%EC%8A%A4%ED%83%80-cod-GWF00117.F009342.12614.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-533b05980b716b73eb84",
-          "name": "여성 스와로브스키 스타 베이지 & 브라운 스웨이드 슈퍼스타 LTD",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4-%EC%8A%A4%ED%83%80-%EB%B2%A0%EC%9D%B4%EC%A7%80-%26-%EB%B8%8C%EB%9D%BC%EC%9A%B4-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EC%8A%88%ED%8D%BC%EC%8A%A4%ED%83%80-ltd-cod-GWF00103.F009156.15400.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-6939e6a1ac418fecb81f",
-          "name": "여성 글리터 스타 화이트 레더 & 펄 스웨이드 미드스타",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%EA%B8%80%EB%A6%AC%ED%84%B0-%EC%8A%A4%ED%83%80-%ED%99%94%EC%9D%B4%ED%8A%B8-%EB%A0%88%EB%8D%94-%26-%ED%8E%84-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EB%AF%B8%EB%93%9C%EC%8A%A4%ED%83%80-cod-GWF00122.F009341.11604.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-18417dd6002de4c54793",
-          "name": "여성 펄 스타 & 브론즈 스와로브스키 베이지 스웨이드 슈퍼스타",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%ED%8E%84-%EC%8A%A4%ED%83%80-%26-%EB%B8%8C%EB%A1%A0%EC%A6%88-%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4-%EB%B2%A0%EC%9D%B4%EC%A7%80-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EC%8A%88%ED%8D%BC%EC%8A%A4%ED%83%80-cod-GWF01002.F009103.16144.html",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-02453b0948d89e07fd60",
-          "name": "여성 실버 스타 네이비 블루 스웨이드 슈퍼스타",
-          "url": "https://www.goldengoose.com/kr/ko/%EC%97%AC%EC%84%B1-%EC%8B%A4%EB%B2%84-%EC%8A%A4%ED%83%80-%EB%84%A4%EC%9D%B4%EB%B9%84-%EB%B8%94%EB%A3%A8-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EC%8A%88%ED%8D%BC%EC%8A%A4%ED%83%80-cod-GWF01016.F009052.51166.html",
-          "reason": "shared-representative-photo"
-        }
-      ],
-      "pending": 243,
-      "pages": 16,
-      "truncated": true,
+      "published": 88,
+      "publishedSneakers": 66,
+      "verified": 88,
+      "missing": [],
+      "excluded": [],
+      "unclassified": [],
+      "pending": 1,
+      "pages": 72,
+      "truncated": false,
       "errors": [
         {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 243
+          "url": "https://www.goldengoose.com/kr/ko/stories/marathon-speed.html",
+          "error": "The operation was aborted due to timeout"
         }
       ],
       "scopeComplete": false
@@ -1620,8 +812,18 @@
     {
       "brand": "Maison Mihara Yasuhiro",
       "published": 1,
+      "publishedSneakers": 1,
       "verified": 5,
-      "missing": [
+      "missing": [],
+      "excluded": [
+        {
+          "id": "arrival-0d7c48beac5aa85387d9",
+          "name": "[![Image 19: Maison MIHARA YASUHIRO ONLINE STORE / ](https://miharayasuhiro.jp/user_data/packages/mihara/images/logo_b.png)](https://miharayasuhiro.jp/)",
+          "url": "https://miharayasuhiro.jp/products/list.php?sex_id=2",
+          "reason": "kids-sizing"
+        }
+      ],
+      "unclassified": [
         {
           "id": "arrival-bf412e1e5f8ee28d126e",
           "name": "[![Image 27: Maison MIHARA YASUHIRO ONLINE STORE / 商品一覧ページ](https://en.miharayasuhiro.jp/user_data/packages/mihara/images/logo_b.png)](https://en.miharayasuhiro.jp/)",
@@ -1635,131 +837,38 @@
           "reason": "footwear-type-unverified"
         },
         {
-          "id": "arrival-0d7c48beac5aa85387d9",
-          "name": "[![Image 19: Maison MIHARA YASUHIRO ONLINE STORE / ](https://miharayasuhiro.jp/user_data/packages/mihara/images/logo_b.png)](https://miharayasuhiro.jp/)",
-          "url": "https://miharayasuhiro.jp/products/list.php?sex_id=2",
-          "reason": "kids-sizing"
-        },
-        {
           "id": "arrival-88e850df6e527761dd07",
           "name": "[![Image 5: Maison MIHARA YASUHIRO ONLINE STORE / 商品一覧ページ](https://en.miharayasuhiro.jp/user_data/packages/mihara/images/logo_b.png)](https://en.miharayasuhiro.jp/)",
           "url": "https://en.miharayasuhiro.jp/products/list.php?mode=search&search.x=0&search.y=0&name=LEON",
           "reason": "footwear-type-unverified"
         }
       ],
-      "pending": 7,
+      "pending": 3,
       "pages": 2,
       "truncated": false,
       "errors": [
         {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=2253&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=6032&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8986&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8512&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/list.php?sex_id=1",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
           "url": "https://en.miharayasuhiro.jp/products/list.php?category_id=27&sex_id=1",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
+          "error": "The operation was aborted due to timeout"
         },
         {
           "url": "https://en.miharayasuhiro.jp/products/list.php?category_id=27&sex_id=2",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
+          "error": "EXACT_PRODUCT_TITLE_IMAGE_UNVERIFIED"
         },
         {
           "url": "https://en.miharayasuhiro.jp/products/list.php?category_id=27&sex_id=4",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/list.php?category_id=5&maker_id=13",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/list.php?category_id=5&maker_id=200",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/list.php?maker_id=200",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8502&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8501&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8504&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8503&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8508&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8507&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8981&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8984&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8732&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8733&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8523&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8520&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "url": "https://en.miharayasuhiro.jp/products/detail.php?product_id=8513&c=",
-          "error": "scrapingbee: SCRAPINGBEE_URL_NOT_ALLOWED"
-        },
-        {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 7
+          "error": "EXACT_PRODUCT_TITLE_IMAGE_UNVERIFIED"
         }
       ],
       "scopeComplete": false
     },
     {
       "brand": "Maison Margiela",
-      "published": 61,
-      "verified": 65,
-      "missing": [
+      "published": 98,
+      "publishedSneakers": 92,
+      "verified": 102,
+      "missing": [],
+      "excluded": [
         {
           "id": "arrival-f56589cd429171e905e3",
           "name": "Tabi Numbers Crossed Sandal",
@@ -1797,135 +906,34 @@
           "reason": "product-verification-required"
         }
       ],
-      "pending": 254,
-      "pages": 11,
+      "unclassified": [],
+      "pending": 0,
+      "pages": 13,
       "truncated": false,
-      "errors": [
-        {
-          "url": "https://www.maisonmargiela.com/en-us/mm-x-gentle-monster-mm306-l2-S33YC0086M10183962.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/mm-x-gentle-monster-mm306-01%28g%29-S33YC0085M10183961.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/mm-x-gentle-monster-mm305-01-S33YC0089M10181900.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/mm-x-gentle-monster-mm305-l2-S33YC0090M10181741.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/mm-x-gentle-monster-mm303-l2-S33YC0082M10178741.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/mm-x-gentle-monster-mm317-01-S33YC0096M10199900.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/mm-x-gentle-monster-mm315-S33YC0094M10197900.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/mm-x-gentle-monster-mm316-S33YC0095M10198900.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/fusion-velvet-blazer-S67BN0089S53941134.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/box-bag-medium-SB2WD0103P9366T2167.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/box-bag-medium-SB2WD0103P9366T7519.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/velvet-wide-leg-trousers-S67KA0101S53941134.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/four-stitches-wallet-SA3UI0010P4455T6033.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/argyle-virgin-wool-sweater-S67HN0017M13339002S.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/fusion-leather-wide-leg-trousers-S67KA0103M07047140.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/heel-less-western-ankle-boots-flames-S57WU0301P7789T2335.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/v-neck-cotton-jacket-S67AM0123M35907119.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/v-neck-cotton-jacket-S67AM0123M35907144.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/deep-v-neck-cotton-sweatshirt-S67GU0041S25520140.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/fusion-draped-cupro-coat-S67AH0063M20274121.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/tapestry-panel-jeans-S67LA0054M30066964.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/chandelier-signet-ring-SM2UQ0039P9406122.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/assemblage-silk-print-shirt-S67DT0035M36162002S.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/distressed-assemblage-denim-jacket-S67AM0126M30066964.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/5ac-soft-pouch-SB2WF0007P8991HB671.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/distressed-collarless-denim-jacket-S67AM0128M30066965.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/wool-wide-leg-trousers-S67KA0101M35524144.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.maisonmargiela.com/en-us/link-big-chain-bracelet-SM2UY0032P9426771.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 254
-        }
-      ],
+      "errors": [],
       "scopeComplete": false
     },
     {
       "brand": "Rick Owens",
-      "published": 1,
-      "verified": 21,
-      "missing": [
+      "published": 136,
+      "publishedSneakers": 135,
+      "verified": 154,
+      "missing": [],
+      "excluded": [
+        {
+          "id": "arrival-0e79367b513174a18af2",
+          "name": "FLARED GLOVES",
+          "url": "https://www.rickowens.eu/products/ro02f5452lbe09",
+          "reason": "not-footwear"
+        },
+        {
+          "id": "arrival-724825f84100310e255e",
+          "name": "NASKA CARDIGAN",
+          "url": "https://www.rickowens.eu/products/rp02f5644vi09",
+          "reason": "not-footwear"
+        }
+      ],
+      "unclassified": [
         {
           "id": "arrival-624adbf7115fa744f3b8",
           "name": "2 PIECE JUMBO BIKER",
@@ -1943,12 +951,6 @@
           "name": "HOODED DRESS",
           "url": "https://www.rickowens.eu/products/rp02f5649m34",
           "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-0e79367b513174a18af2",
-          "name": "FLARED GLOVES",
-          "url": "https://www.rickowens.eu/products/ro02f5452lbe09",
-          "reason": "not-footwear"
         },
         {
           "id": "arrival-7141356591460eee5b69",
@@ -1999,33 +1001,15 @@
           "reason": "footwear-type-unverified"
         },
         {
-          "id": "arrival-440ddeb8a5d3eae4b8d4",
-          "name": "VINTAGE SNEAKS",
-          "url": "https://www.rickowens.eu/products/ru02f4897lhllvs911",
-          "reason": "footwear-type-unverified"
-        },
-        {
           "id": "arrival-72cc9ec4fa119982cab5",
           "name": "TURTLE",
           "url": "https://www.rickowens.eu/products/rr02f4678ribwse86",
           "reason": "footwear-type-unverified"
         },
         {
-          "id": "arrival-724825f84100310e255e",
-          "name": "NASKA CARDIGAN",
-          "url": "https://www.rickowens.eu/products/rp02f5644vi09",
-          "reason": "not-footwear"
-        },
-        {
           "id": "arrival-6fcc1759fdb1c53ef27a",
           "name": "LEVEL LUPETTO",
           "url": "https://www.rickowens.eu/products/ru02f4625ws09",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-a27b4c8aa0f8890f854f",
-          "name": "MINIMAL SNEAKS",
-          "url": "https://www.rickowens.eu/products/ru02f4889lke99",
           "reason": "footwear-type-unverified"
         },
         {
@@ -2047,31 +1031,75 @@
           "reason": "footwear-type-unverified"
         }
       ],
-      "pending": 38,
-      "pages": 5,
+      "pending": 0,
+      "pages": 2,
       "truncated": false,
-      "errors": [
-        {
-          "url": "https://www.rickowens.eu/products/du02f6803dolvs8611",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.rickowens.eu/products/rp02f5632m09",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 38
-        }
-      ],
+      "errors": [],
       "scopeComplete": false
     },
     {
       "brand": "Jil Sander",
       "published": 10,
+      "publishedSneakers": 10,
       "verified": 21,
-      "missing": [
+      "missing": [],
+      "excluded": [
+        {
+          "id": "arrival-43a3de1859d38952e6d1",
+          "name": "Hood Lace-Up Shoe",
+          "url": "https://www.jilsander.com/en-us/hood-lace-up-shoe/J32ZJ0026P7698210.html",
+          "reason": "reviewed-boat-or-moccasin-shoe-without-sneaker-sole"
+        },
+        {
+          "id": "arrival-7a5d3d249061edd44208",
+          "name": "Hood Lace-Up Shoe",
+          "url": "https://www.jilsander.com/en-us/hood-lace-up-shoe/J32ZJ0026P7698001.html",
+          "reason": "reviewed-boat-or-moccasin-shoe-without-sneaker-sole"
+        },
+        {
+          "id": "arrival-3d8598ec87b5abc3f72f",
+          "name": "Hood Lace-Up Shoe",
+          "url": "https://www.jilsander.com/en-us/hood-lace-up-shoe/J33ZJ0029P7698001.html",
+          "reason": "reviewed-boat-or-moccasin-shoe-without-sneaker-sole"
+        },
+        {
+          "id": "arrival-cdae2656c11aaa398fb4",
+          "name": "Hood Lace-Up Shoe",
+          "url": "https://www.jilsander.com/en-us/hood-lace-up-shoe/J32ZJ0022P7692010.html",
+          "reason": "reviewed-boat-or-moccasin-shoe-without-sneaker-sole"
+        },
+        {
+          "id": "arrival-3bc711003b577fea30c1",
+          "name": "Hood Lace-Up Shoe",
+          "url": "https://www.jilsander.com/en-us/hood-lace-up-shoe/J32ZJ0022P7692243.html",
+          "reason": "reviewed-boat-or-moccasin-shoe-without-sneaker-sole"
+        },
+        {
+          "id": "arrival-771540703d42bd59243d",
+          "name": "Lace-Up Shoe",
+          "url": "https://www.jilsander.com/en-us/lace-up-shoe/J33ZJ0028P7690648.html",
+          "reason": "reviewed-lace-up-dress-shoe-without-sneaker-sole"
+        },
+        {
+          "id": "arrival-d98a1982ed1f97e22b11",
+          "name": "Lace-Up Shoe",
+          "url": "https://www.jilsander.com/en-us/lace-up-shoe/J33ZJ0023P7032001.html",
+          "reason": "reviewed-lace-up-dress-shoe-without-sneaker-sole"
+        },
+        {
+          "id": "arrival-970af8797d3fe1573961",
+          "name": "Lace-Up Shoe",
+          "url": "https://www.jilsander.com/en-us/lace-up-shoe/J32WQ0050P7690001.html",
+          "reason": "reviewed-lace-up-dress-shoe-without-sneaker-sole"
+        },
+        {
+          "id": "arrival-52d53aa4d651f2f53118",
+          "name": "Hamburg Lace-Up Shoe",
+          "url": "https://www.jilsander.com/en-us/hamburg-lace-up-shoe/J32WQ0040P7696001.html",
+          "reason": "reviewed-lace-up-dress-shoe-without-sneaker-sole"
+        }
+      ],
+      "unclassified": [
         {
           "id": "arrival-f612906eb3b749193847",
           "name": "JIL SANDER AND OLIVER PEOPLES EYEWEAR COLLABORATION - COLLECTION 2",
@@ -2083,63 +1111,9 @@
           "name": "About Jil Sander | Jil Sander Official Online Store",
           "url": "https://www.jilsander.com/en-us/about.html",
           "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-43a3de1859d38952e6d1",
-          "name": "Hood Lace-Up Shoe",
-          "url": "https://www.jilsander.com/en-us/hood-lace-up-shoe/J32ZJ0026P7698210.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-7a5d3d249061edd44208",
-          "name": "Hood Lace-Up Shoe",
-          "url": "https://www.jilsander.com/en-us/hood-lace-up-shoe/J32ZJ0026P7698001.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-3d8598ec87b5abc3f72f",
-          "name": "Hood Lace-Up Shoe",
-          "url": "https://www.jilsander.com/en-us/hood-lace-up-shoe/J33ZJ0029P7698001.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-cdae2656c11aaa398fb4",
-          "name": "Hood Lace-Up Shoe",
-          "url": "https://www.jilsander.com/en-us/hood-lace-up-shoe/J32ZJ0022P7692010.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-3bc711003b577fea30c1",
-          "name": "Hood Lace-Up Shoe",
-          "url": "https://www.jilsander.com/en-us/hood-lace-up-shoe/J32ZJ0022P7692243.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-771540703d42bd59243d",
-          "name": "Lace-Up Shoe",
-          "url": "https://www.jilsander.com/en-us/lace-up-shoe/J33ZJ0028P7690648.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-d98a1982ed1f97e22b11",
-          "name": "Lace-Up Shoe",
-          "url": "https://www.jilsander.com/en-us/lace-up-shoe/J33ZJ0023P7032001.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-970af8797d3fe1573961",
-          "name": "Lace-Up Shoe",
-          "url": "https://www.jilsander.com/en-us/lace-up-shoe/J32WQ0050P7690001.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-52d53aa4d651f2f53118",
-          "name": "Hamburg Lace-Up Shoe",
-          "url": "https://www.jilsander.com/en-us/hamburg-lace-up-shoe/J32WQ0040P7696001.html",
-          "reason": "footwear-type-unverified"
         }
       ],
-      "pending": 2,
+      "pending": 0,
       "pages": 16,
       "truncated": true,
       "errors": [
@@ -2173,41 +1147,60 @@
     },
     {
       "brand": "Fendi",
-      "published": 0,
-      "verified": 0,
+      "published": 55,
+      "publishedSneakers": 55,
+      "verified": 55,
       "missing": [],
+      "excluded": [],
+      "unclassified": [],
       "pending": 0,
       "pages": 0,
       "truncated": false,
       "errors": [
         {
           "url": "https://www.fendi.com/us-en/man/new-in",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.fendi.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.fendi.com/us-en/woman/new-in",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.fendi.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.fendi.com/",
-          "error": "Source returned no usable page; official HTML: fetch failed; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.fendi.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: fetch failed; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.fendi.com/us-en/man/shoes/sneakers",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.fendi.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         },
         {
           "url": "https://www.fendi.com/us-en/woman/shoes/sneakers",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.fendi.com: Source returned no usable page; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
+          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_403; rendered-public-official: SCRAPINGBEE_QUOTA_STOPPED"
         }
       ],
       "scopeComplete": false
     },
     {
       "brand": "Givenchy",
-      "published": 3,
-      "verified": 15,
-      "missing": [
+      "published": 18,
+      "publishedSneakers": 17,
+      "verified": 30,
+      "missing": [],
+      "excluded": [
+        {
+          "id": "arrival-2b40ffa422dc67b0495a",
+          "name": "Cardigan in cotton with Givenchy Paris gros grain",
+          "url": "https://www.givenchy.com/us/en-US/cardigan-in-cotton-with-givenchy-paris-gros-grain/BMK00W3YSK-001.html",
+          "reason": "not-footwear"
+        },
+        {
+          "id": "arrival-198c1f82912bb53e6ef7",
+          "name": "Couture Seam polo sweatshirt in fleece",
+          "url": "https://www.givenchy.com/us/en-US/couture-seam-polo-sweatshirt-in-fleece/BMJ0QJ3YTA-001.html",
+          "reason": "not-footwear"
+        }
+      ],
+      "unclassified": [
         {
           "id": "arrival-c085eb7de4bd15c54162",
           "name": "Polo in cotton with Givenchy Paris embroidery",
@@ -2227,22 +1220,10 @@
           "reason": "footwear-type-unverified"
         },
         {
-          "id": "arrival-2b40ffa422dc67b0495a",
-          "name": "Cardigan in cotton with Givenchy Paris gros grain",
-          "url": "https://www.givenchy.com/us/en-US/cardigan-in-cotton-with-givenchy-paris-gros-grain/BMK00W3YSK-001.html",
-          "reason": "not-footwear"
-        },
-        {
           "id": "arrival-158d5fec8b9f9a1d6aa6",
           "name": "Polo in piqué cotton with Givenchy Paris embroidery",
           "url": "https://www.givenchy.com/us/en-US/polo-in-pique-cotton-with-givenchy-paris-embroidery/BML01J31EP-700.html",
           "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-198c1f82912bb53e6ef7",
-          "name": "Couture Seam polo sweatshirt in fleece",
-          "url": "https://www.givenchy.com/us/en-US/couture-seam-polo-sweatshirt-in-fleece/BMJ0QJ3YTA-001.html",
-          "reason": "not-footwear"
         },
         {
           "id": "arrival-1e84fe2e92bf5deb09a8",
@@ -2293,90 +1274,96 @@
           "reason": "footwear-type-unverified"
         }
       ],
-      "pending": 37,
-      "pages": 16,
-      "truncated": true,
+      "pending": 3,
+      "pages": 104,
+      "truncated": false,
       "errors": [
         {
-          "url": "https://www.givenchy.com/us/en-US/joggers-in-wool-with-givenchy-paris-gros-grain/BM51N03YS8-065.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-116.html",
+          "error": "The operation was aborted due to timeout"
         },
         {
-          "url": "https://www.givenchy.com/us/en-US/polo-in-pique-cotton-with-givenchy-paris-embroidery/BML01J31EP-001.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
+          "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2K9-100.html",
+          "error": "The operation was aborted due to timeout"
         },
         {
-          "url": "https://www.givenchy.com/us/en-US/couture-seam-joggers-with-givenchy-paris-embroidery/BM51PM16RJ-403.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.givenchy.com/us/en-US/couture-seam-polo-sweatshirt-in-fleece/BMJ0QJ3YTA-055.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.givenchy.com/us/en-US/givenchy-shadow-small-square-in-silk/BP00FZG002-303.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.givenchy.com/us/en-US/windbreaker-with-givenchy-paris-print/BM01L916ZW-001.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.givenchy.com/us/en-US/couture-seam-straight-fit-shadow-washed-jeans/BM51P95YD3-420.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://www.givenchy.com/us/en-US/couture-seam-checked-overshirt-in-cotton/BM616C16ZJ-123.html",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 37
+          "url": "https://www.givenchy.com/us/en-US/givenchy-puffy-yard-sneakers-in-nappa-leather/BE004YE2KP-657.html",
+          "error": "The operation was aborted due to timeout"
         }
       ],
       "scopeComplete": false
     },
     {
       "brand": "Valentino Garavani",
-      "published": 0,
-      "verified": 0,
+      "published": 72,
+      "publishedSneakers": 72,
+      "verified": 72,
       "missing": [],
+      "excluded": [],
+      "unclassified": [],
       "pending": 0,
-      "pages": 16,
-      "truncated": true,
+      "pages": 4,
+      "truncated": false,
       "errors": [],
       "scopeComplete": false
     },
     {
       "brand": "Alexander McQueen",
       "published": 25,
+      "publishedSneakers": 23,
       "verified": 44,
-      "missing": [
+      "missing": [],
+      "excluded": [
         {
           "id": "arrival-01df2c71f89cb519abc3",
           "name": "Image 30: Koko Sandal | Alexander McQueen - image 1",
           "url": "https://www.alexandermcqueen.com/en-us/pr/koko-sandal-876318W4AEA1205.html",
-          "reason": "not-published-after-curation"
+          "reason": "outside-sneaker-scope"
         },
         {
           "id": "arrival-2b6e870f7ab570ab2d00",
           "name": "Image 42: Koko Sandal | Alexander McQueen - image 1",
           "url": "https://www.alexandermcqueen.com/en-us/pr/koko-sandal-876318W4AD51710.html",
-          "reason": "not-published-after-curation"
+          "reason": "outside-sneaker-scope"
         },
         {
           "id": "arrival-bf204063a0de5c44a536",
           "name": "Image 47: Skull Sandal | Alexander McQueen - image 1",
           "url": "https://www.alexandermcqueen.com/en-us/pr/skull-sandal-874553WHAF58200.html",
-          "reason": "not-published-after-curation"
+          "reason": "outside-sneaker-scope"
         },
         {
           "id": "arrival-307d1469d704ce8f5e92",
           "name": "Image 102: Rosa Sandal | Alexander McQueen - image 1",
           "url": "https://www.alexandermcqueen.com/en-us/pr/rosa-sandal-A0008JWHAFU1000.html",
-          "reason": "not-published-after-curation"
+          "reason": "outside-sneaker-scope"
         },
+        {
+          "id": "arrival-bceabcca16f522158897",
+          "name": "Women's Niko Mary Jane in Black",
+          "url": "https://www.alexandermcqueen.com/en-us/pr/niko-mary-jane-876311WIAK91000.html",
+          "reason": "reviewed-heeled-dress-footwear"
+        },
+        {
+          "id": "arrival-40e3979ffdb7a0854e5f",
+          "name": "Women's Horn Heel Mule in Brown",
+          "url": "https://www.alexandermcqueen.com/en-us/pr/horn-heel-mule-866004WHAFA2000.html",
+          "reason": "reviewed-heeled-dress-footwear"
+        },
+        {
+          "id": "arrival-2ce5f3a51266ffa91ac9",
+          "name": "Women's Horn Heel Mule in Black",
+          "url": "https://www.alexandermcqueen.com/en-us/pr/horn-heel-mule-866004WHAFA1000.html",
+          "reason": "reviewed-heeled-dress-footwear"
+        },
+        {
+          "id": "arrival-29b0554740bd21ba04ef",
+          "name": "Women's Lexie Mule in Black",
+          "url": "https://www.alexandermcqueen.com/en-us/pr/lexie-mule-874558WHAFT1080.html",
+          "reason": "reviewed-heeled-dress-footwear"
+        }
+      ],
+      "unclassified": [
         {
           "id": "arrival-a69621c4f43e8865c942",
           "name": "Women's Jewelled Mini in Black",
@@ -2442,33 +1429,9 @@
           "name": "Women's Metallic Cable Knit Jumper in Silver",
           "url": "https://www.alexandermcqueen.com/en-us/pr/metallic-cable-knit-jumper-A008MSQ1BIP1063.html",
           "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-bceabcca16f522158897",
-          "name": "Women's Niko Mary Jane in Black",
-          "url": "https://www.alexandermcqueen.com/en-us/pr/niko-mary-jane-876311WIAK91000.html",
-          "reason": "hybrid-review-required"
-        },
-        {
-          "id": "arrival-40e3979ffdb7a0854e5f",
-          "name": "Women's Horn Heel Mule in Brown",
-          "url": "https://www.alexandermcqueen.com/en-us/pr/horn-heel-mule-866004WHAFA2000.html",
-          "reason": "hybrid-review-required"
-        },
-        {
-          "id": "arrival-2ce5f3a51266ffa91ac9",
-          "name": "Women's Horn Heel Mule in Black",
-          "url": "https://www.alexandermcqueen.com/en-us/pr/horn-heel-mule-866004WHAFA1000.html",
-          "reason": "hybrid-review-required"
-        },
-        {
-          "id": "arrival-29b0554740bd21ba04ef",
-          "name": "Women's Lexie Mule in Black",
-          "url": "https://www.alexandermcqueen.com/en-us/pr/lexie-mule-874558WHAFT1080.html",
-          "reason": "hybrid-review-required"
         }
       ],
-      "pending": 21,
+      "pending": 0,
       "pages": 11,
       "truncated": false,
       "errors": [
@@ -2483,8 +1446,10 @@
     {
       "brand": "Lanvin",
       "published": 40,
+      "publishedSneakers": 40,
       "verified": 53,
-      "missing": [
+      "missing": [],
+      "excluded": [
         {
           "id": "arrival-f376eb827d801d86c9be",
           "name": "DRAPED JUMPSUIT IN CREPE JERSEY",
@@ -2498,6 +1463,32 @@
           "reason": "not-footwear"
         },
         {
+          "id": "arrival-3973b6626a62f4efacd1",
+          "name": "LANVIN SIGNATURE COLLAR IN CASHMERE",
+          "url": "https://www.lanvin.com/en-us/woman/accessories/silks-and-scarves/lanvin-signature-collar-in-cashmere-AMSAVCO43WSIH2610.html",
+          "reason": "not-footwear"
+        },
+        {
+          "id": "arrival-af846ade9cdcb4d7c2b1",
+          "name": "MIDNIGHT STEP MULE IN SUEDE",
+          "url": "https://www.lanvin.com/en-us/woman/shoes/pumps/midnight-step-mule-in-suede-FWPUGA0DSUEDA2610.html",
+          "reason": "reviewed-heeled-dress-footwear"
+        },
+        {
+          "id": "arrival-2577a73c75f5361d5d8b",
+          "name": "MIDNIGHT STEP MULES IN SATIN",
+          "url": "https://www.lanvin.com/en-us/woman/shoes/pumps/midnight-step-mules-in-satin-FWPUGA0DSATIH2530.html",
+          "reason": "reviewed-heeled-dress-footwear"
+        },
+        {
+          "id": "arrival-46f0f9e4b28fb64152e0",
+          "name": "MIDNIGHT STEP MULE IN PONY",
+          "url": "https://www.lanvin.com/en-us/woman/shoes/pumps/midnight-step-mule-in-pony-FWPUGA0DPOCAA2650.html",
+          "reason": "reviewed-heeled-dress-footwear"
+        }
+      ],
+      "unclassified": [
+        {
           "id": "arrival-f8d36ef5d4fa6bc5e9d5",
           "name": "CATCH BY LANVIN EVENING CLUTCH",
           "url": "https://www.lanvin.com/en-us/woman/bags/catch/catch-by-lanvin-evening-clutch-LWBGLPPDRASOH2610.html",
@@ -2508,12 +1499,6 @@
           "name": "FRINGED SKIRT IN DOUBLE-FACED CASHMERE WOOL",
           "url": "https://www.lanvin.com/en-us/woman/ready-to-wear/skirts/fringed-skirt-in-double-faced-cashmere-wool-RWST05056373A2610.html",
           "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-3973b6626a62f4efacd1",
-          "name": "LANVIN SIGNATURE COLLAR IN CASHMERE",
-          "url": "https://www.lanvin.com/en-us/woman/accessories/silks-and-scarves/lanvin-signature-collar-in-cashmere-AMSAVCO43WSIH2610.html",
-          "reason": "not-footwear"
         },
         {
           "id": "arrival-3f0c2308f2e3bb1db3ae",
@@ -2544,24 +1529,6 @@
           "name": "ASYMMETRICAL KNIT DRESS",
           "url": "https://www.lanvin.com/en-us/woman/ready-to-wear/dresses/asymmetrical-knit-dress-RWDR0023K126A261040.html",
           "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-af846ade9cdcb4d7c2b1",
-          "name": "MIDNIGHT STEP MULE IN SUEDE",
-          "url": "https://www.lanvin.com/en-us/woman/shoes/pumps/midnight-step-mule-in-suede-FWPUGA0DSUEDA2610.html",
-          "reason": "hybrid-review-required"
-        },
-        {
-          "id": "arrival-2577a73c75f5361d5d8b",
-          "name": "MIDNIGHT STEP MULES IN SATIN",
-          "url": "https://www.lanvin.com/en-us/woman/shoes/pumps/midnight-step-mules-in-satin-FWPUGA0DSATIH2530.html",
-          "reason": "hybrid-review-required"
-        },
-        {
-          "id": "arrival-46f0f9e4b28fb64152e0",
-          "name": "MIDNIGHT STEP MULE IN PONY",
-          "url": "https://www.lanvin.com/en-us/woman/shoes/pumps/midnight-step-mule-in-pony-FWPUGA0DPOCAA2650.html",
-          "reason": "hybrid-review-required"
         }
       ],
       "pending": 0,
@@ -2586,8 +1553,11 @@
     {
       "brand": "Chanel",
       "published": 15,
+      "publishedSneakers": 15,
       "verified": 42,
-      "missing": [
+      "missing": [],
+      "excluded": [],
+      "unclassified": [
         {
           "id": "arrival-c145a7ea3430665bb98b",
           "name": "LES EAUX DE CHANEL LE VOYAGE Collection of 6 Travel Sprays",
@@ -2751,7 +1721,7 @@
           "reason": "footwear-type-unverified"
         }
       ],
-      "pending": 11,
+      "pending": 0,
       "pages": 5,
       "truncated": false,
       "errors": [
@@ -2769,9 +1739,17 @@
     },
     {
       "brand": "AMIRI",
-      "published": 50,
-      "verified": 79,
-      "missing": [
+      "published": 104,
+      "publishedSneakers": 99,
+      "verified": 145,
+      "missing": [],
+      "excluded": [
+        {
+          "id": "arrival-d8576d1e6da275a70400",
+          "name": "WOMEN - WOMEN'S MA COURT HI - Black/White",
+          "url": "https://amiri.com/collections/womens-sneakers/products/ma-court-hi-black-white-3",
+          "reason": "duplicate-product-color"
+        },
         {
           "id": "arrival-3d05acc4cb58cee2b5bd",
           "name": "Kids' Sport Track Short",
@@ -2863,115 +1841,99 @@
           "reason": "kids-sizing"
         },
         {
+          "id": "arrival-3ea26b3ad39964a3dc44",
+          "name": "WOMEN- WOMEN'S M-TECH - White Black",
+          "url": "https://amiri.com/collections/womens-sneakers/products/m-tech-white-black-1",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "arrival-3fb707743ed97209a5bd",
+          "name": "BLVD - Black",
+          "url": "https://amiri.com/collections/mens-sneakers/products/blvd-black",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "amiri-dac233086f351d6f4e17",
+          "name": "CLASSIC LOW - Black",
+          "url": "https://amiri.com/products/classic-low-black-1",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "amiri-8ad1a59e187e348ff545",
+          "name": "SKEL TOP LOW - Black",
+          "url": "https://amiri.com/products/skel-top-low-black-3",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "amiri-ea994b604bcc5fb450a0",
+          "name": "SKEL-TOP LOW - Alabaster",
+          "url": "https://amiri.com/products/skel-top-low-alabaster-1",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "amiri-cca65a6d414ae14fe0d9",
+          "name": "CRYSTAL MA-1 - Black",
+          "url": "https://amiri.com/products/crystal-ma-1-black",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "amiri-235dcf1d6a9c95b974fc",
+          "name": "CRYSTAL CLASSIC LOW - Black",
+          "url": "https://amiri.com/products/crystal-classic-low-black",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "amiri-935985e22dcee5fe8818",
+          "name": "STARS COURT LOW - Black",
+          "url": "https://amiri.com/products/stars-court-low-black-2",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "amiri-e259fe620405cfdc8d41",
+          "name": "LAGUNA - Black",
+          "url": "https://amiri.com/products/laguna-black-1",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "amiri-9057d058340bdcd9a2b0",
+          "name": "CLASSIC LOW - Black",
+          "url": "https://amiri.com/products/classic-low-black-2",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "amiri-cc29af128f13d01dbdef",
+          "name": "WOMEN - WOMEN'S MA QUAD COURT LOW - Grey",
+          "url": "https://amiri.com/products/ma-quad-court-low-grey",
+          "reason": "duplicate-product-color"
+        },
+        {
+          "id": "amiri-7fddba5969d78ee20dc4",
+          "name": "WOMEN - WOMEN'S SKEL TOP LOW - Alabaster",
+          "url": "https://amiri.com/products/skel-top-low-alabaster-3",
+          "reason": "duplicate-product-color"
+        }
+      ],
+      "unclassified": [
+        {
           "id": "arrival-18003f80e3b34c70a417",
           "name": "Single Breasted Sport Blazer",
           "url": "https://amiri.com/collections/mens-footwear/products/sb-blazer-grey-melange",
           "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-a2373b6c8fce63532b30",
-          "name": "Stars Court Low",
-          "url": "https://amiri.com/collections/mens-footwear/products/stars-court-low-dark-blue",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-23cfb0bdb8f99b9dc12b",
-          "name": "Stars Court Low",
-          "url": "https://amiri.com/collections/mens-footwear/products/stars-court-low-plum",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-28fb2c466520632be2f0",
-          "name": "Python Embossed MA Court Hi",
-          "url": "https://amiri.com/collections/mens-footwear/products/python-ma-court-hi-black",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-5c0763d423607831f9ad",
-          "name": "Crystal MA-1",
-          "url": "https://amiri.com/collections/mens-footwear/products/crystal-ma-1-silver-grey",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-eada069f5b40c43ee67b",
-          "name": "MA-94",
-          "url": "https://amiri.com/collections/mens-footwear/products/ma-94-dark-blue",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-6a3fd97e8c0a47cfc417",
-          "name": "Metallic M-tech",
-          "url": "https://amiri.com/collections/mens-footwear/products/metallic-m-tech-black-silver",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-3421aeea2af29e4656e2",
-          "name": "Suede Blvd",
-          "url": "https://amiri.com/collections/mens-footwear/products/suede-blvd-fossil",
-          "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-f6548b4b703ea4e0e41a",
-          "name": "Python Embossed MA Skyline",
-          "url": "https://amiri.com/collections/mens-footwear/products/python-ma-skyline-cream",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-9aca73a1428b80103164",
-          "name": "Python Embossed MA Skyline",
-          "url": "https://amiri.com/collections/mens-footwear/products/python-ma-skyline-black",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-149da32c76e4993a0422",
-          "name": "Women's Python Embossed Coastline",
-          "url": "https://amiri.com/collections/womens-sneakers/products/python-coastline-brown",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-ddcbfb7aa09330e5c5c7",
-          "name": "Women's Glitter Stars Court Low",
-          "url": "https://amiri.com/collections/womens-sneakers/products/glitter-stars-court-low-grey",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-47b4d8aef3841c2c8e8e",
-          "name": "Women's Metallic M-tech",
-          "url": "https://amiri.com/collections/womens-sneakers/products/metallic-m-tech-white-silver-1",
-          "reason": "shared-representative-photo"
-        },
-        {
-          "id": "arrival-3fb707743ed97209a5bd",
-          "name": "Blvd Black",
-          "url": "https://amiri.com/collections/mens-sneakers/products/blvd-black",
-          "reason": "duplicate-product-color"
         }
       ],
-      "pending": 47,
-      "pages": 16,
-      "truncated": true,
-      "errors": [
-        {
-          "url": "https://amiri.com/collections/kids-ready-to-wear-new-arrivals/products/ma-quad-flames-os-tee-ivory",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "url": "https://amiri.com/collections/mens-footwear/products/crystal-ma-skyline-black",
-          "error": "scrapingbee: SCRAPINGBEE_QUOTA_STOPPED"
-        },
-        {
-          "error": "product-follow-up-deferred",
-          "reason": "detail-time-budget",
-          "remaining": 47
-        }
-      ],
+      "pending": 0,
+      "pages": 2,
+      "truncated": false,
+      "errors": [],
       "scopeComplete": false
     },
     {
       "brand": "Off-White",
       "published": 119,
+      "publishedSneakers": 118,
       "verified": 131,
-      "missing": [
+      "missing": [],
+      "excluded": [
         {
           "id": "arrival-2b995d9d2fde03ec085f",
           "name": "Be Right Back Trail Low Sneakers",
@@ -3027,12 +1989,6 @@
           "reason": "not-footwear"
         },
         {
-          "id": "arrival-7949ad071a86fca3c0a2",
-          "name": "Bling Dollar Ring",
-          "url": "https://www.off---white.com/en-us/men/accessories/jewelry/bling-dollar-ring-OMOC07XS26MET0017200.html",
-          "reason": "footwear-type-unverified"
-        },
-        {
           "id": "arrival-50059e8efca0092e689e",
           "name": "Arrows Undershirts 3-Pack",
           "url": "https://www.off---white.com/en-us/men/clothing/underwear/arrows-undershirts-3-pack-OW9100050BLK.html",
@@ -3057,7 +2013,15 @@
           "reason": "not-footwear"
         }
       ],
-      "pending": 38,
+      "unclassified": [
+        {
+          "id": "arrival-7949ad071a86fca3c0a2",
+          "name": "Bling Dollar Ring",
+          "url": "https://www.off---white.com/en-us/men/accessories/jewelry/bling-dollar-ring-OMOC07XS26MET0017200.html",
+          "reason": "footwear-type-unverified"
+        }
+      ],
+      "pending": 0,
       "pages": 16,
       "truncated": true,
       "errors": [
@@ -3148,8 +2112,10 @@
     {
       "brand": "The Row",
       "published": 34,
+      "publishedSneakers": 13,
       "verified": 54,
-      "missing": [
+      "missing": [],
+      "excluded": [
         {
           "id": "new-20260923-38064818654e916a",
           "name": "Clement Sneakers",
@@ -3214,14 +2180,28 @@
           "id": "arrival-f0456bff0b9238a8f11a",
           "name": "Malick Cross Sandal",
           "url": "https://www.therow.com/products/malick-cross-black-1",
-          "reason": "not-published-after-curation"
+          "reason": "outside-sneaker-scope"
         },
         {
           "id": "arrival-05cb0e9d6784ff2c3788",
           "name": "Charlie Sandal",
           "url": "https://www.therow.com/products/charlie-sandal-black",
-          "reason": "not-published-after-curation"
+          "reason": "outside-sneaker-scope"
         },
+        {
+          "id": "arrival-17b10d08a2d7e44a4783",
+          "name": "Noli Cardigan",
+          "url": "https://www.therow.com/products/noli-cardigan-charcoal-melange",
+          "reason": "not-footwear"
+        },
+        {
+          "id": "arrival-8d1e0cd3f361d9131975",
+          "name": "Theo Mocassin Lacquer Brown",
+          "url": "https://www.therow.com/products/theo-mocassin-lacquer-brown-1",
+          "reason": "duplicate-product-color"
+        }
+      ],
+      "unclassified": [
         {
           "id": "arrival-3b80cd1a404b28533d05",
           "name": "Peggy Clutch",
@@ -3275,21 +2255,9 @@
           "name": "Kenton Corduroy Pant",
           "url": "https://www.therow.com/products/kenton-pant-black-1",
           "reason": "footwear-type-unverified"
-        },
-        {
-          "id": "arrival-17b10d08a2d7e44a4783",
-          "name": "Noli Cardigan",
-          "url": "https://www.therow.com/products/noli-cardigan-charcoal-melange",
-          "reason": "not-footwear"
-        },
-        {
-          "id": "arrival-8d1e0cd3f361d9131975",
-          "name": "Theo Mocassin Lacquer Brown",
-          "url": "https://www.therow.com/products/theo-mocassin-lacquer-brown-1",
-          "reason": "duplicate-product-color"
         }
       ],
-      "pending": 58,
+      "pending": 0,
       "pages": 9,
       "truncated": false,
       "errors": [
@@ -3360,8 +2328,11 @@
     {
       "brand": "Loro Piana",
       "published": 116,
+      "publishedSneakers": 116,
       "verified": 116,
       "missing": [],
+      "excluded": [],
+      "unclassified": [],
       "pending": 0,
       "pages": 0,
       "truncated": false,
@@ -3383,29 +2354,26 @@
     },
     {
       "brand": "Brunello Cucinelli",
-      "published": 0,
-      "verified": 0,
+      "published": 65,
+      "publishedSneakers": 65,
+      "verified": 65,
       "missing": [],
+      "excluded": [],
+      "unclassified": [],
       "pending": 0,
-      "pages": 1,
+      "pages": 2,
       "truncated": false,
-      "errors": [
-        {
-          "url": "https://www.brunellocucinelli.com/en/man/shoes/sneakers.html",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_404; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.brunellocucinelli.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        },
-        {
-          "url": "https://www.brunellocucinelli.com/en/woman/shoes/sneakers.html",
-          "error": "Source returned no usable page; official HTML: PUBLIC_SOURCE_HTTP_404; rendered-public-official: scrapingbee: SCRAPINGBEE_QUOTA_STOPPED; locale-alternate: www.brunellocucinelli.co.jp: Source HTTP 422; official-sitemap: SITEMAP_NO_PRODUCT_LINKS"
-        }
-      ],
+      "errors": [],
       "scopeComplete": false
     },
     {
       "brand": "Zegna",
       "published": 40,
+      "publishedSneakers": 40,
       "verified": 40,
       "missing": [],
+      "excluded": [],
+      "unclassified": [],
       "pending": 0,
       "pages": 16,
       "truncated": true,

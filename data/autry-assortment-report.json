@@ -1,0 +1,128 @@
+{
+  "checkedAt": "2026-11-02T04:50:38.524Z",
+  "pages": [
+    {
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/",
+      "loaded": 484,
+      "advertisedTotal": 484
+    },
+    {
+      "url": "https://www.autry-usa.com/ko/%EB%82%A8%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/",
+      "loaded": 297,
+      "advertisedTotal": 297
+    }
+  ],
+  "verifiedSneakers": 763,
+  "excluded": [
+    {
+      "id": "839236",
+      "name": "MALGA BOOTS IN LEATHER COLOR NATURAL LEATHER AND GRAY",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/malga/malga-boots-%EA%B0%80%EC%A3%BD-%EB%82%B4%EC%B6%94%EB%9F%B4-%EB%A0%88%EB%8D%94-%EC%95%A4%EB%93%9C-%EA%B7%B8%EB%A0%88%EC%9D%B4-839236.html",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "839254",
+      "name": "MALGA BOOTS IN SUEDE COLOR PEPPER",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/malga/malga-boots-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%ED%8E%98%ED%8D%BC-839254.html",
+      "reason": "excluded-footwear"
+    },
+    {
+      "id": "841186",
+      "name": "SANDY ESPADRILLES IN TAOS TAUPE SUEDE",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrillas-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EB%B8%8C%EB%9D%BC%EC%9A%B4-%EA%B7%B8%EB%A0%88%EC%9D%B4-841186.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841196",
+      "name": "SANDY ESPADRILLES IN EARTH SUEDE",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrilles-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EC%96%B4%EC%8A%A4-841196.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841206",
+      "name": "SANDY ESPADRILLES IN MOSS SUEDE",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrillas-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EB%AA%A8%EC%8A%A4-841206.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841216",
+      "name": "SANDY ESPADRILLES IN IVORY CANVAS",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrillas-%EC%BA%94%EB%B2%84%EC%8A%A4-%EC%95%84%EC%9D%B4%EB%B3%B4%EB%A6%AC-841216.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841226",
+      "name": "SANDY ESPADRILLES IN BLACK CANVAS",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrillas-%EC%BA%94%EB%B2%84%EC%8A%A4-%EB%B8%94%EB%9E%99-841226.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841236",
+      "name": "SANDY ESPADRILLES IN PASTEL YELLOW CANVAS",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrillas-%EC%BA%94%EB%B2%84%EC%8A%A4-%ED%8C%8C%EC%8A%A4%ED%85%94-%EC%98%90%EB%A1%9C%EC%9A%B0-841236.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841991",
+      "name": "SANDY ESPADRILLES IN PINK CANVAS",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/espadrillas-sandy-%ED%95%91%ED%81%AC-%EC%BA%94%EB%B2%84%EC%8A%A4%EB%A1%9C-841991.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "842000",
+      "name": "SANDY ESPADRILLES IN SILVER CANVAS",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/espadrillas-sandy-%EC%8B%A4%EB%B2%84-%EC%BA%94%EB%B2%84%EC%8A%A4%EB%A1%9C-842000.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "842009",
+      "name": "SANDY ESPADRILLES IN GOLD CANVAS",
+      "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/espadrillas-sandy-%EA%B3%A8%EB%93%9C-%EC%BA%94%EB%B2%84%EC%8A%A4%EB%A1%9C-842009.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "847609",
+      "name": "'HOTEL CORAZÓN' ESPADRILLES SANDY IN NOMAD CANVAS",
+      "url": "https://www.autry-usa.com/ko/%EB%82%A8%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-hotel-coraz%C3%B3n-%EC%BA%94%EB%B2%84%EC%8A%A4-%EB%85%B8%EB%A7%88%EB%93%9C-847609.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841246",
+      "name": "SANDY ESPADRILLES IN TAOS TAUPE SUEDE",
+      "url": "https://www.autry-usa.com/ko/%EB%82%A8%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrillas-%EC%BA%94%EB%B2%84%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B4-%EA%B7%B8%EB%A0%88%EC%9D%B4-841246.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841256",
+      "name": "SANDY ESPADRILLES IN EARTH SUEDE",
+      "url": "https://www.autry-usa.com/ko/%EB%82%A8%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrilles-%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C-%EC%96%B4%EC%8A%A4-841256.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841266",
+      "name": "SANDY ESPADRILLES IN MOSS SUEDE",
+      "url": "https://www.autry-usa.com/ko/%EB%82%A8%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrillas-%EC%BA%94%EB%B2%84%EC%8A%A4-%EB%AA%A8%EC%8A%A4-841266.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841276",
+      "name": "SANDY ESPADRILLES IN IVORY CANVAS",
+      "url": "https://www.autry-usa.com/ko/%EB%82%A8%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrillas-%EC%BA%94%EB%B2%84%EC%8A%A4-%EC%95%84%EC%9D%B4%EB%B3%B4%EB%A6%AC-841276.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841286",
+      "name": "SANDY ESPADRILLES IN MILITARY CANVAS",
+      "url": "https://www.autry-usa.com/ko/%EB%82%A8%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrillas-%EC%BA%94%EB%B2%84%EC%8A%A4-%EB%B0%80%EB%A6%AC%ED%84%B0%EB%A6%AC-841286.html",
+      "reason": "sandal"
+    },
+    {
+      "id": "841296",
+      "name": "SANDY ESPADRILLES IN DENIM CANVAS",
+      "url": "https://www.autry-usa.com/ko/%EB%82%A8%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/sandy/sandy-espadrillas-%EC%BA%94%EB%B2%84%EC%8A%A4-%EB%8D%B0%EB%8B%98-841296.html",
+      "reason": "sandal"
+    }
+  ],
+  "missingPhotos": [],
+  "scope": "Official Korean adult women and men sneaker listings; other regions and undisplayed variants are not independently reconciled"
+}

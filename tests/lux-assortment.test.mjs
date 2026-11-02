@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {parseArrivalListing,listingFollowups,maisonShelfProduct,listingProduct,collectNewArrivals,pageProduct} from '../scripts/new-arrivals.mjs';
 import {curateProduct} from '../scripts/curation.mjs';
+import {mergePreserving} from '../scripts/collect-evidence.mjs';
 import {releaseState} from '../public/assets/release-window.mjs';
 const today='2026-11-02',url='https://www.ysl.com/en-us/p/court-classic-sneaker-ABC123.html',shelf='https://www.ysl.com/en-us/ca/shop-women/shoes/sneakers';
 const raw={id:'lux-all',brand:'Saint Laurent',name:'Court Classic sneaker',style:'ABC123',url,image:'https://www.ysl.com/ABC123_A.jpg',description:'Leather sneakers with a rubber sole',releaseDate:'2020-01-01',firstPublishedAt:'2020-01-02T00:00:00Z',arrivalEvidence:{verified:true,brand:'Saint Laurent',style:'ABC123',productUrl:url,kind:'official-assortment-listing',url:shelf,verifiedAt:'2026-11-02T00:00:00Z',excerpt:'Official current sneaker card',contentHash:'a'.repeat(64)}};
@@ -66,4 +67,23 @@ test('a product page cannot bind a navigation image or an earlier product code t
  assert.equal(pageProduct(candidate,before,'2026-11-02T00:00:00Z'),null);
  const p=pageProduct(candidate,before+`![Actual](https://www.prada.com/${style}_SLS.jpg)`,'2026-11-02T00:00:00Z');
  assert.equal(p.style,style);assert(p.image.includes(style));
+ const merged=mergePreserving([{...p,styleType:'official-product-id'}],[p])[0];
+ assert.equal(merged.styleType,'sku','a verified SKU must replace the earlier provisional identifier type');
+});
+
+test('Golden Goose dotted SKU binds its own photo and ignores the new menu image',()=>{
+ const style='GWF00101.F009114.83522',menu='https://static2.goldengoose.com/public/NEW-MENU/menu-mountain-m.jpg';
+ const candidate={brand:'Golden Goose',name:'Super-Star sneakers',url:'https://www.goldengoose.com/kr/ko/korean-slug-cod-'+style+'.html',linkedImages:[{url:menu}],arrivalEvidence:{kind:'official-assortment-listing'}};
+ const p=pageProduct(candidate,`![Super-Star sneakers](${menu})\n# Super-Star sneakers\n![Super-Star sneakers](https://static2.goldengoose.com/${style}_1.jpg)`,'2026-11-02T00:00:00Z');
+ assert.equal(p.style,style);assert.equal(p.styleType,'sku');assert(!p.image.includes('NEW-MENU'));
+});
+test('Prada category landing pages are not sneaker product records',()=>{
+ const rows=parseArrivalListing('# Sneakers\n[America’s Cup](https://www.prada.com/us/en/mens/shoes/americas-cup/c/10297US.html)',{brand:'Prada',url:'https://www.prada.com/us/en/mens/shoes/sneakers',checkedAt:'2026-11-02T00:00:00Z',basis:'assortment'});
+ assert.equal(rows.length,0);
+});
+
+test('official Sneaks names classify as sneakers while apparel keeps its negative gate',async()=>{
+ const {classifyFootwear}=await import('../scripts/curation.mjs');
+ assert.equal(classifyFootwear({brand:'Rick Owens',name:'VINTAGE SNEAKS'}).category,'sneaker');
+ assert.equal(classifyFootwear({brand:'Rick Owens',name:'SNEAKS PRINT T-SHIRT',url:'https://www.rickowens.eu/collections/clothing/products/tee'}).reason,'not-footwear');
 });
