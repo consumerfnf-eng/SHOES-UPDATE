@@ -10169,12 +10169,12 @@
         {
           "id": "arrival-4a31b8a448ab30d1b2df",
           "style": "3SN279ZRB_H068",
-          "color": "mesh · White"
+          "color": "mesh · Dark Gray"
         },
         {
           "id": "arrival-a8cb749833940d3d596a",
           "style": "3SN279ZRD_H868",
-          "color": "mesh · White"
+          "color": "mesh · Light Gray"
         },
         {
           "id": "arrival-5c43db461f4d5dd1463b",
@@ -10302,7 +10302,7 @@
         {
           "id": "arrival-b9d6ef3029cfe4e1db35",
           "style": "3SN323AAY_H134",
-          "color": "suede / calfskin / mesh · White"
+          "color": "suede / calfskin / mesh · Beige"
         },
         {
           "id": "arrival-bcc2fd99bd31f7af4e9d",
@@ -10327,7 +10327,7 @@
         {
           "id": "arrival-41c33384b70d3c05b46d",
           "style": "3SN323ZCY_H860",
-          "color": "mesh · White"
+          "color": "mesh · Light Gray"
         },
         {
           "id": "arrival-bdc2784f06d12635517a",
@@ -15325,7 +15325,7 @@
         {
           "id": "arrival-92619fd2ffe216df81a4",
           "style": "curb-sneakers-in-monochrome-suede-FUSKDK12DRASE2612",
-          "color": "suede · MONOCHROME SUEDE"
+          "color": "suede · Grey"
         },
         {
           "id": "arrival-884c374c20e0facdae5c",
@@ -15965,7 +15965,7 @@
         {
           "id": "arrival-e48f3038879910032c37",
           "style": "3SN352ACU_H112",
-          "color": "suede / calfskin · White"
+          "color": "suede / calfskin · Beige"
         },
         {
           "id": "arrival-898f06fe070bafbe064a",
@@ -15980,7 +15980,7 @@
         {
           "id": "arrival-b2e5e62196dcfc4ac311",
           "style": "3SN352ACU_H895",
-          "color": "suede / calfskin · White"
+          "color": "suede / calfskin · Black"
         },
         {
           "id": "arrival-3c4912bcd7d5fb0657df",
@@ -16053,7 +16053,7 @@
         {
           "id": "arrival-ccd13f5bc13f338de28d",
           "style": "KCK554TFS_S19W",
-          "color": "White"
+          "color": "White / Black"
         },
         {
           "id": "arrival-5dc19c77012be507d15f",
@@ -16063,7 +16063,7 @@
         {
           "id": "arrival-594be1fe28d65756f146",
           "style": "3SN386AIR_H62R",
-          "color": "White"
+          "color": "Dark Green"
         },
         {
           "id": "arrival-a782c34b58bd25a8b83c",
@@ -16083,12 +16083,12 @@
         {
           "id": "arrival-b054aefbe52e8c2704f1",
           "style": "3SN386AIR_H969",
-          "color": "White"
+          "color": "Black"
         },
         {
           "id": "arrival-f568c3a249046cb892e3",
           "style": "3SN386AIR_H52D",
-          "color": "White"
+          "color": "Blue"
         },
         {
           "id": "arrival-2fa9db43c73fd4a45ff8",
@@ -16152,7 +16152,7 @@
         {
           "id": "arrival-d02e3d5814ee8288ab05",
           "style": "KCK573OLF_S60U",
-          "color": "Cotton · Charcoal"
+          "color": "Cotton · Dark Blue"
         }
       ]
     },
@@ -16207,7 +16207,7 @@
         {
           "id": "arrival-d78122e947ead9cc3ae7",
           "style": "3SN348ZSA_H50T",
-          "color": "White"
+          "color": "Dark Gray"
         },
         {
           "id": "arrival-e126fd1f520f6625cc7f",
@@ -16217,7 +16217,7 @@
         {
           "id": "arrival-665d3c10d8e9fa2421ca",
           "style": "3SN348AGB_H577",
-          "color": "White"
+          "color": "Blue"
         },
         {
           "id": "arrival-447c6ba7afe9ae4d84d9",
@@ -16335,7 +16335,7 @@
         {
           "id": "arrival-9e206a0ee3db74509f20",
           "style": "3SN364AEL_H800",
-          "color": "White"
+          "color": "Dark Gray"
         },
         {
           "id": "arrival-b372f60692d96d47b79d",
@@ -16395,7 +16395,7 @@
         {
           "id": "arrival-4718857e91d813781b44",
           "style": "KCK365OBU_S47W",
-          "color": "Rubber · White"
+          "color": "Rubber · Ivory"
         },
         {
           "id": "arrival-f50cba9fcd480647a974",
@@ -84119,5 +84119,5 @@
       ]
     }
   ],
-  "checkedAt": "2026-11-02T07:42:15.167Z"
+  "checkedAt": "2026-11-02T08:00:10.178Z"
 }

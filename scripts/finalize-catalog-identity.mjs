@@ -37,14 +37,14 @@ export async function finalizeCatalogIdentity() {
     if(reviewed&&reviewed!==p.modelName){p.modelName=reviewed;correctedNames++;}
     const a=photos.photos[p.presentation?.image||p.image];
     p.colorway=String(p.colorway||'').replace(/(?:OWIA|OMIA|OF|LABF)\d[A-Z0-9]*/gi,'').trim();
-    const materialOnly=/^(?:(?:and|mixed|fibers?|full|grain|grained|calfskin|lambskin|leather|suede|nubuck|nylon|mesh|technical|fabric|metallic|dino|snake|effect|felt|nappa|faux|fur|velvet|canvas|cotton|wool|cashmere|wish|sneakers?)\b[\s®™&/.,'-]*)+$/i.test(p.colorway||'');
+    const materialOnly=/^(?:(?:and|monochrome|mixed|fibers?|full|grain|grained|calfskin|lambskin|leather|suede|nubuck|nylon|mesh|technical|fabric|metallic|dino|snake|effect|felt|nappa|faux|fur|velvet|canvas|cotton|wool|cashmere|wish|sneakers?)\b[\s®™&/.,'-]*)+$/i.test(p.colorway||'');
     if(materialOnly)p.colorway='';
     if(p.brand==='Golden Goose'&&String(p.colorway).includes(p.name))p.colorway='';
     if(a&&!a.needsReview){
       const cached=p.presentation?.image===a.presentation.image?p.presentation?.cachedPath:'';
       p.presentation={...p.presentation,...a.presentation,...(cached?{cachedPath:cached}:{})};
       p.bodyColor=a.bodyColor;p.photoHash=a.photoHash;
-      if(!p.colorway||/미표기|미확인|unknown|not (?:specified|available)|^image\b/i.test(p.colorway)){
+      if(!p.colorway||/미표기|미확인|unknown|not (?:specified|available)|^image\b/i.test(p.colorway)||p.colorEvidence?.method==='upper-image-analysis'&&p.colorEvidence.image===(p.presentation.image||p.image)){
         p.colorway=a.colorName;p.colorEvidence={method:'upper-image-analysis',image:p.presentation.image||p.image,hex:a.bodyColor,label:a.colorName};inferredColours++;
       }
     }
