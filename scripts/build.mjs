@@ -3,6 +3,7 @@ import {execFileSync} from 'node:child_process';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
+import {readJson,atomicJson,publishCurated} from './publish-curated.mjs';
 const root=new URL('../',import.meta.url),html=await fs.readFile(new URL('public/index.html',root),'utf8');
 if(Buffer.byteLength(html)>250000)throw Error('Public HTML must remain below 250 KB; crawler/data belongs outside UI.');
 if(/SEED_PRODUCTS|__MLB_RUN_SERVER|scheduleDaily\(|s\.jina\.ai|r\.jina\.ai|JINA_API_KEY/.test(html))throw Error('Collection runtime found in public page');
@@ -31,7 +32,21 @@ async function inspect(directory){for(const entry of await fs.readdir(directory,
   if(/JINA_API_KEY|GOOGLE_SERVICE_ACCOUNT_JSON|ARCHIVE_BACKUP_KEY|BEGIN (?:RSA )?PRIVATE KEY|s\.jina\.ai|r\.jina\.ai|__MLB_RUN_SERVER|SEED_PRODUCTS/.test(text))throw Error('Secret/collection runtime in public: '+relative);
 }}
 await inspect(publicRoot);
-const catalog=JSON.parse(await fs.readFile(new URL('public/data/catalog.json',root),'utf8'));
+let catalog=JSON.parse(await fs.readFile(new URL('public/data/catalog.json',root),'utf8'));
+// A presentation can be assigned after `npm run photos` already ran (a later
+// re-curation inside that same step, or a recovered collection) and reach this
+// file with no cached image. That used to abort the whole weekly deploy over
+// one shoe; now it is held the same way an unfetchable photo already is
+// (cache-product-photos.mjs), and the snapshot is rebuilt so every section -
+// keywords, style board, counts - still agrees with the products left in it.
+const missing=catalog.products.filter(p=>p.presentation&&!/^\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/.test(p.presentation.cachedPath||''));
+if(missing.length){
+  const cache=await readJson(new URL('data/photo-cache.json',root),{schemaVersion:1,images:{},unavailable:{}});
+  cache.unavailable={...cache.unavailable,...Object.fromEntries(missing.map(p=>[p.presentation.image,{error:'no cached image at build time',checkedAt:new Date().toISOString()}]))};
+  await atomicJson(new URL('data/photo-cache.json',root),cache);
+  console.log(`Held ${missing.length} product(s) with no cached photo at build time: ${missing.map(p=>p.id).join(', ')}`);
+  catalog=(await publishCurated({})).snapshot;
+}
 for(const p of catalog.products){
   if(!p.presentation)continue;
   // 'product-photo' is the brand's own representative image at whatever
