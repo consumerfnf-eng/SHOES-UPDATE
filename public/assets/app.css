@@ -205,6 +205,19 @@
 .catwalk-head h2{margin:0 0 4px;font-size:18px;letter-spacing:.02em}
 .catwalk-head p{margin:1px 0;font-size:11.5px;line-height:1.45;max-width:78ch}
 #catwalk-note{color:#8a8275}
+/* The season row reads as a heading rather than as another filter: the shows
+   below it belong to whichever season is lit here. */
+.catwalk-seasons{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;align-items:center}
+.catwalk-season-tab{appearance:none;border:1px solid #ddd6ca;background:#fffffe;border-radius:8px;
+  padding:7px 13px;font:inherit;font-size:12.5px;color:#4a443c;cursor:pointer;line-height:1.3;
+  display:inline-flex;align-items:center;gap:6px}
+.catwalk-season-tab em{font-style:normal;font-size:9.5px;letter-spacing:.04em;color:#8a8275;
+  background:#f4f1ec;border-radius:4px;padding:2px 5px}
+.catwalk-season-tab span{color:#9a9287;font-size:11px;font-variant-numeric:tabular-nums}
+.catwalk-season-tab:hover{border-color:#c0b8aa}
+.catwalk-season-tab.active{background:#1c1a17;border-color:#1c1a17;color:#fff}
+.catwalk-season-tab.active em{background:#35312b;color:#cdc6b9}
+.catwalk-season-tab.active span{color:#bdb6a9}
 .catwalk-filters{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 18px}
 .catwalk-chip{appearance:none;border:1px solid #e2ddd4;background:#fffffe;border-radius:999px;
   padding:5px 11px;font:inherit;font-size:11.5px;color:#4a443c;cursor:pointer;line-height:1.3}

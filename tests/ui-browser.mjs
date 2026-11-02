@@ -151,14 +151,19 @@ try{
  assert(await variantPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
  assert.equal(await variantPage.locator('.color-chip').first().evaluate(el=>getComputedStyle(el).borderRadius),'50%');
  await variantPage.screenshot({path:path.join(out,'asics-variants-mobile.png')});
- // --- CATWALK: pick several looks, take them away as one archive ------------
+ // --- CATWALK: seasons side by side, and a set of looks taken away ---------
  // A fixture rather than the real snapshot: public/catwalk and its index are
  // gitignored WGSN subscription imagery, so CI has neither to measure.
  const jpeg=id=>Buffer.concat([Buffer.from([0xFF,0xD8,0xFF,0xE0]),Buffer.from(`look-${id}-`.repeat(40))]);
- const show=(id,brand,city)=>({id:String(id),brand,season:'Spring/Summer 2027',city,imageType:'신발 클로즈업',
+ const show=(id,brand,city,season)=>({id:String(id),brand,season,city,imageType:'신발 클로즈업',
    shelf:'library-footwear',image:`/catwalk/${id}.jpg`,width:933,height:1400,
-   originalWidth:2574,originalHeight:3861,originalUrl:`https://media.wgsn.com/${id}.jpg`});
- const walkLooks=[show(1,'AARON ESH','London'),show(2,'AARON ESH','London'),show(3,'Agnes b','Paris'),show(4,'Agnes b','Paris')];
+   originalWidth:2574,originalHeight:3861,originalUrl:`https://images.example.invalid/${id}.jpg`});
+ const CURRENT='Spring/Summer 2028',MIDDLE='Autumn/Winter 2027',OLDEST='Spring/Summer 2027';
+ const walkLooks=[show(1,'AARON ESH','London',CURRENT),show(2,'AARON ESH','London',CURRENT),
+   show(3,'Agnes b','Paris',CURRENT),show(4,'Agnes b','Paris',CURRENT),
+   show(5,'Casablanca','Milan',MIDDLE),show(6,'Dries Van Noten','Paris',OLDEST)];
+ const season=(label,looks)=>({season:label,seasonId:`id-${label}`,collectedAt:at,looks,
+   shows:new Set(walkLooks.filter(l=>l.season===label).map(l=>l.brand)).size});
  const walkContext=await browser.newContext({viewport:{width:1440,height:1000},acceptDownloads:true});
  await walkContext.route('**/*',r=>new URL(r.request().url()).origin===new URL(url).origin?r.continue():r.abort());
  await walkContext.route('**/data/catalog.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(fixture)}));
@@ -167,15 +172,27 @@ try{
  await walkContext.route('**/data/trend-keywords.json',r=>r.fulfill({contentType:'application/json',
    body:JSON.stringify({schemaVersion:1,generatedAt:at,asOf:today,displayCount:20,keywords:[],candidates:[],sourceStatus:{}})}));
  await walkContext.route('**/data/catwalk.json',r=>r.fulfill({contentType:'application/json',
-   body:JSON.stringify({schemaVersion:1,provider:'WGSN',season:'Spring/Summer 2027',builtAt:at,cardWidth:480,
-     shelves:[{id:'library-footwear',label:'신발 클로즈업',footwearShelf:true,searchUrl:'https://www.wgsn.com/library/results/x'}],looks:walkLooks})}));
+   body:JSON.stringify({schemaVersion:2,provider:'WGSN',currentSeason:CURRENT,builtAt:at,cardWidth:480,
+     seasons:[season(CURRENT,4),season(MIDDLE,1),season(OLDEST,1)],
+     shelves:[{id:'library-footwear',label:'신발 클로즈업',footwearShelf:true,searchUrl:'https://library.example.invalid/results/x'}],looks:walkLooks})}));
  await walkContext.route('**/catwalk/*.jpg',r=>r.fulfill({contentType:'image/jpeg',
    body:jpeg(new URL(r.request().url()).pathname.replace(/\D/g,''))}));
  const walk=await walkContext.newPage();walk.on('pageerror',e=>errors.push(e.message));
  await walk.goto(url);await walk.locator('.product-card').first().waitFor();
  await walk.locator('[data-source="catwalk"]').click();
  await walk.locator('.catwalk-card').first().waitFor();
- assert.equal(await walk.locator('.catwalk-card').count(),4);
+
+ // Three seasons, newest first, and the grid opens on the current one.
+ assert.deepEqual(await walk.locator('.catwalk-season-tab').evaluateAll(els=>els.map(e=>e.dataset.catwalkSeason)),
+   [CURRENT,MIDDLE,OLDEST],'the season tabs are in calendar order');
+ assert.equal(await walk.locator('.catwalk-season-tab.active').getAttribute('data-catwalk-season'),CURRENT);
+ assert.equal(await walk.locator('.catwalk-season-tab').first().locator('em').textContent(),'최신');
+ assert.equal(await walk.locator('.catwalk-card').count(),4,'only the current season is on screen');
+ assert((await walk.locator('#catwalk-scope').textContent()).startsWith(CURRENT));
+ // The show chips count within the season, not across all three.
+ assert.equal(await walk.locator('[data-catwalk="all"] span').textContent(),'4');
+ assert.equal(await walk.locator('[data-catwalk="Casablanca"]').count(),0,"a show from another season is not offered here");
+
  assert.equal(await walk.locator('#catwalk-selection-bar').isVisible(),false,'the bar waits until something is picked');
  // Tick the first, then Shift-click the third: the span between them fills in,
  // and ticking a box must not also open the viewer underneath it.
@@ -184,39 +201,63 @@ try{
  assert.equal(await walk.locator('#catwalk-viewer').isVisible(),false,'a tick is not a zoom');
  assert.equal(await walk.locator('.catwalk-card.picked').count(),3);
  assert.equal(await walk.locator('#catwalk-selection-count').textContent(),'3장 선택');
+
+ // A past season is a tab away, and what was picked in the current one stays
+ // picked: an archive may deliberately span seasons.
+ await walk.locator(`[data-catwalk-season="${OLDEST}"]`).click();
+ await walk.locator('.catwalk-card').first().waitFor();
+ assert.equal(await walk.locator('.catwalk-card').count(),1);
+ assert((await walk.locator('#catwalk-scope').textContent()).startsWith(OLDEST));
+ assert.equal(await walk.locator('#catwalk-selection-count').textContent(),'3장 선택','picks survive the season change');
+ assert.equal(await walk.locator('.catwalk-card.picked').count(),0,'none of them is in this season');
+ await walk.locator('[data-look-select="6"]').click();
+ assert.equal(await walk.locator('#catwalk-selection-count').textContent(),'4장 선택');
+
  const [zipDownload]=await Promise.all([walk.waitForEvent('download'),walk.locator('#catwalk-download').click()]);
- assert.equal(zipDownload.suggestedFilename(),'CATWALK_Spring Summer 2027_3장.zip');
- const zipPath=path.join(out,'catwalk-3.zip');await zipDownload.saveAs(zipPath);
+ assert.equal(zipDownload.suggestedFilename(),'CATWALK_4장.zip');
+ const zipPath=path.join(out,'catwalk-4.zip');await zipDownload.saveAs(zipPath);
  const archive=await fs.readFile(zipPath);
  assert.equal(archive.subarray(0,2).toString(),'PK');
  const eocd=archive.lastIndexOf(Buffer.from([0x50,0x4B,0x05,0x06]));
- assert.equal(archive.readUInt16LE(eocd+10),4,'three photographs and the index that captions them');
+ assert.equal(archive.readUInt16LE(eocd+10),5,'four photographs and the index that captions them');
  // Stored, not deflated, so a photograph's bytes sit in the archive verbatim.
- for(const id of ['1','2','3'])assert(archive.includes(jpeg(id)),`look ${id} stored byte for byte`);
+ for(const id of ['1','2','3','6'])assert(archive.includes(jpeg(id)),`look ${id} stored byte for byte`);
  assert(!archive.includes(jpeg('4')),'an unticked look stays out of the archive');
- assert(archive.includes(Buffer.from('AARON ESH_Spring Summer 2027_London_1.jpg','utf8')),'the file name carries the show');
+ assert(archive.includes(Buffer.from('AARON ESH_Spring Summer 2028_London_1.jpg','utf8')),'the file name carries the show');
+ assert(archive.includes(Buffer.from(`Dries Van Noten_${OLDEST.replace('/',' ')}_Paris_6.jpg`,'utf8')),'and the season each look walked in');
  assert(archive.includes(Buffer.from('목록.csv','utf8')));
  assert(archive.includes(Buffer.from('2574x3861','utf8')),'the index records what WGSN holds at full size');
- // Everything on screen at once, then a single look on its own: one photograph
- // is a photograph, not an archive.
+
+ // Select-all reflects the season on screen, not the whole snapshot: this
+ // season's only look is already picked, so the control reads checked and
+ // clicking it releases this season while leaving the other one picked.
+ assert.equal(await walk.locator('#catwalk-select-all').isChecked(),true);
  await walk.locator('#catwalk-select-all').click();
- assert.equal(await walk.locator('#catwalk-selection-count').textContent(),'4장 선택');
+ assert.equal(await walk.locator('#catwalk-selection-count').textContent(),'3장 선택','only the season on screen was released');
  await walk.locator('#catwalk-clear-picks').click();
  assert.equal(await walk.locator('#catwalk-selection-bar').isVisible(),false);
- assert.equal(await walk.locator('.catwalk-card.picked').count(),0);
+ await walk.locator(`[data-catwalk-season="${CURRENT}"]`).click();
+ await walk.locator('#catwalk-select-all').click();
+ assert.equal(await walk.locator('#catwalk-selection-count').textContent(),'4장 선택','every look in the current season, and none beyond it');
+ await walk.locator('#catwalk-clear-picks').click();
+
+ // One look on its own is a photograph, not an archive.
  await walk.locator('[data-look-select="2"]').click();
  const [oneDownload]=await Promise.all([walk.waitForEvent('download'),walk.locator('#catwalk-download').click()]);
- assert.equal(oneDownload.suggestedFilename(),'AARON ESH_Spring Summer 2027_London_2.jpg');
+ assert.equal(oneDownload.suggestedFilename(),'AARON ESH_Spring Summer 2028_London_2.jpg');
  const onePath=path.join(out,'catwalk-1.jpg');await oneDownload.saveAs(onePath);
  assert.deepEqual(await fs.readFile(onePath),jpeg('2'),'the single save is the rendition itself, unaltered');
- // Leaving the tab drops the picks, as it already drops the filter and the page.
+
+ // Leaving the tab drops the picks and the chosen season, as it already drops
+ // the show filter and the page.
  await walk.locator('[data-source="all"]').click();
  await walk.locator('[data-source="catwalk"]').click();
  assert.equal(await walk.locator('.catwalk-card.picked').count(),0);
  assert.equal(await walk.locator('#catwalk-selection-bar').isVisible(),false);
+ assert.equal(await walk.locator('.catwalk-season-tab.active').getAttribute('data-catwalk-season'),CURRENT,'back on the current season');
  await walk.setViewportSize({width:390,height:844});
  assert(await walk.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'the catwalk fits a phone');
  await walk.screenshot({path:path.join(out,'catwalk-picking-mobile.png')});
  assert.deepEqual(errors,[]);
- console.log(JSON.stringify({passed:true,browser:process.env.UI_BROWSER_CHANNEL||'chromium',screenshots:out,downloads:[csvPath,xlsxPath,womenPath,zipPath,onePath],checks:'women-only counterparts, male-only editions retained, adidas female representative, female card/detail color switching, suppressed male-color search, female CSV export, 17-column CSV/XLSX, pagination, mobile, catwalk multi-select + Shift range + ZIP archive with 목록.csv + single-look JPG, local fixtures only'},null,2));
+ console.log(JSON.stringify({passed:true,browser:process.env.UI_BROWSER_CHANNEL||'chromium',screenshots:out,downloads:[csvPath,xlsxPath,womenPath,zipPath,onePath],checks:'women-only counterparts, male-only editions retained, adidas female representative, female card/detail color switching, suppressed male-color search, female CSV export, 17-column CSV/XLSX, pagination, mobile, catwalk season tabs (3 seasons, newest first, per-season chips/select-all), multi-select + Shift range + cross-season ZIP archive with 목록.csv + single-look JPG, local fixtures only'},null,2));
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

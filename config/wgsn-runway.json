@@ -7,8 +7,6 @@
     "publishImages": false,
     "basis": "Subscription content. config/forecast-sources.json already excludes WGSN's paid reports from the public keyword modules; the same rule is applied to its catwalk imagery, so the published board states what exists and links to the source rather than reproducing it."
   },
-  "searchEndpoint": "https://www.wgsn.com/fashion/catwalks/search",
-  "originalDownloadControl": "https://www.wgsn.com/myfolders/download_original?item_id=image.{imageId}",
   "note_filters": "The search page carries its whole state in one URL parameter, `filters`, holding URL-encoded JSON of WGSN's own numeric ids. These were read back off the source URLs recorded with the October 2026 collection, so they are the ids WGSN actually served, not a guess.",
   "filters": {
     "seasons": {
@@ -78,10 +76,7 @@
   },
   "librarySearch": {
     "note": "The saved search the user actually wants collected: WGSN's Fashion Design image library narrowed to footwear tags, where every result is a shoe shot on its own. This is NOT the catwalks search the rest of this file describes - those shelves return whole collections, 1,565 of whose 3,648 images are head-to-toe looks with the shoe at a few hundred pixels. 3,253 results at the time it was shared.",
-    "url": "https://www.wgsn.com/library/results/14de91459be576037a896127a99050f1",
-    "sharedOn": "2026-10-30",
     "expectedResults": 247,
-    "section": "Fashion Design > Image Library & Design Resources",
     "imageType": [
       "Details & Accessories",
       "Backstage"
@@ -148,33 +143,7 @@
     "status": "collected 2026-10-30: 247 records, 70 shows, Spring/Summer 2027",
     "seasonFilter": [
       "2913181"
-    ],
-    "supersedes": {
-      "url": "https://www.wgsn.com/library/results/30dba7bae6937da6c7fee0a2afcbd400",
-      "results": 3253,
-      "why": "That search carries no `seasons` filter, so its 3,253 results span 26 seasons from S/S 2016 to S/S 2027 and 443 brands - only 267 of them are S/S 2027. Check history's filter.seasons before trusting a saved search's result count as a season's size."
-    },
-    "api": {
-      "definition": "GET /api/cherry/history/<hash>",
-      "query": "POST /api/cherry/search/query",
-      "bodyKey": "filters (NOT `filter`, which is the key history returns - passing it through unrenamed silently drops every filter and returns the whole 15M-image library)",
-      "params": {
-        "limit": "max 200",
-        "offset": "page through data.count",
-        "sort": [
-          {
-            "field": "add_date"
-          }
-        ]
-      },
-      "lang": "'en' captions the city Paris, 'ko' captions it 파리",
-      "caption": "results[].caption is [brand, season, city] - no reconstruction needed"
-    },
-    "highResolution": {
-      "url": "the rendition URL with /large_ or /media_ replaced by /original_",
-      "signedIn": "2574x3861, about 2.0 MB",
-      "anonymous": "508x552, about 12 KB at the identical URL",
-      "consequence": "A scraper without the session cookie silently collects the low-resolution file. The originals are fetched in the browser and downsized to 1,400px there."
-    }
-  }
+    ]
+  },
+  "note_local": "The saved-search URL, WGSN's API endpoints and the download control live in config/wgsn-runway.local.json, which is gitignored: this repository is public and those identify a subscription account. Collection only runs on the PC that holds that file and a signed-in session."
 }

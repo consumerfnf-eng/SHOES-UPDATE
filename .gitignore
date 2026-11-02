@@ -34,3 +34,32 @@ logs/*.txt
 # and the tab hides itself when there is none.
 public/catwalk/
 public/data/catwalk.json
+
+# Per-season WGSN fragments composed into public/data/catwalk.json, and the
+# runway index built from the same source. Both carry WGSN's own metadata and
+# original-image URLs for subscription content, so neither belongs in a public
+# repository - the same rule as the renditions above.
+data/catwalk/
+data/wgsn-runway.json
+
+# The weekly catwalk run's working files. catwalk-originals holds WGSN
+# renditions downsized from the subscription originals, and the .log/.html
+# outputs quote what was collected - none of it belongs in a public repository.
+logs/catwalk-originals/
+logs/*.log
+logs/*.html
+
+# WGSN collection: the code that talks to WGSN's own endpoints, the session
+# helper, the weekly runner and its documentation. This repository is public
+# and belongs to an organisation account; a public description of how to call
+# a subscription service's private API is a liability even though it exposes
+# no credential and no imagery. Collection only ever runs on the PC that holds
+# config/wgsn-runway.local.json and a signed-in browser profile, so nothing is
+# lost by keeping these out of the repository.
+config/wgsn-runway.local.json
+scripts/collect-catwalk-season.mjs
+scripts/wgsn-login.mjs
+scripts/update-catwalk.mjs
+scripts/register-catwalk-task.ps1
+tests/catwalk-collect.test.mjs
+docs/wgsn-runway-automation.md

@@ -1,5 +1,6 @@
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes, zipStored, catwalkFileName, catwalkManifestRows } from './export.mjs';
 import { groupedBrands } from './brand-groups.mjs';
+import { sortSeasons } from './catwalk-seasons.mjs';
 import { analysisCsv, analysisRows, priceDistribution, materialDistribution, colourDistribution,
          priceKrw, priceBand, colourFamily, materialsOf, RATE_NOTE,categoryDistribution,useModelCategories} from './analysis.mjs';
 import {isPublishedFootwear} from './footwear-policy.mjs';
@@ -12,7 +13,7 @@ const sourceNames = {magazine:'매거진',newsletter:'뉴스레터',media:'매�
 const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:'캐주얼 샌들','platform-sandal':'플랫폼 샌들','platform-shoe':'플랫폼 슈즈',jelly:'젤리 슈즈',hybrid:'혼합형 스니커즈'};
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
-const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
+const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter'],['retail-mrporter','MR PORTER'],['retail-kith','Kith']];
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter','retail-mrporter':'MR PORTER','retail-kith':'Kith'};
 let catalog = null, overlay = null, trends = null, rankBoards = null, catwalk = null, catwalkShown = 0, catwalkPicked = new Set(), catwalkAnchor = '', products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
@@ -229,7 +230,10 @@ async function loadSupplements() {
     const walk = await fetch('./data/catwalk.json', {cache:'no-cache'});
     if (walk.ok) {
       const snapshot = await walk.json();
-      if (snapshot.schemaVersion === 1 && Array.isArray(snapshot.looks)) { catwalk = snapshot; changed = true; }
+      // v2 keeps several seasons side by side and lists them; v1 held one
+      // season inline. Both are read - a page refreshed before the next
+      // collection is still looking at a v1 file.
+      if ([1, 2].includes(snapshot.schemaVersion) && Array.isArray(snapshot.looks)) { catwalk = snapshot; changed = true; }
     }
   } catch { catwalk = null; }
   try {
@@ -312,7 +316,7 @@ function renderKeywords() {
     }).join(''):'<p class="keyword-empty">확인된 Shoes Trend Keyword가 아직 없습니다.</p>';
     $(target).querySelectorAll('.keyword-select').forEach(button=>button.addEventListener('click',()=>{
       const k=list[Number(button.dataset.keyword)];clearTimeout(searchTimer);
-      Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',release:'released',socialGroup:'',sort:'newest',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
+      Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',release:'released',socialGroup:'',sort:'newest',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordProductIds(k,products,today)});
       syncFilterControls();renderBrands();renderKeywords();render();$('results').scrollIntoView({block:'start'});$('results').focus({preventScroll:true});
     }));
   }
@@ -448,8 +452,32 @@ function renderRankBoards(){
 // handles comfortably with lazy loading, and paging them split the viewer's
 // own range - it walked 1/120 of a 247-look season.
 const CATWALK_PAGE = 400;
+// The seasons the snapshot holds, newest first. A v2 snapshot lists them
+// itself; a v1 one held a single season, named on the file or on its looks, so
+// the list is derived rather than demanded - the page keeps working against a
+// snapshot built before seasons were kept side by side.
+function catwalkSeasons(){
+  const listed=(catwalk?.seasons||[]).filter(s=>s&&s.season);
+  if(listed.length)return listed.map(s=>({season:s.season,looks:s.looks??0,shows:s.shows??0}));
+  const all=catwalk?.looks||[];
+  const of=look=>look.season||catwalk?.season||'';
+  return sortSeasons([...all.map(of),catwalk?.season]).map(season=>({
+    season,looks:all.filter(l=>of(l)===season).length,
+    shows:new Set(all.filter(l=>of(l)===season).map(l=>l.brand)).size}));
+}
+// The current season until somebody picks another, and never a season the
+// snapshot no longer carries - the oldest falls off every third collection.
+function activeSeason(){
+  const seasons=catwalkSeasons();
+  return seasons.find(s=>s.season===state.catwalkSeason)?.season||seasons[0]?.season||'';
+}
+function seasonLooks(){
+  const all=catwalk?.looks||[], season=activeSeason();
+  if(!season)return all;
+  return all.filter(l=>(l.season||catwalk?.season||'')===season);
+}
 function catwalkLooks(){
-  const looks=catwalk?.looks||[];
+  const looks=seasonLooks();
   if(state.catwalkShow==='footwear'){
     const shelf=(catwalk.shelves||[]).find(s=>s.footwearShelf)?.id;
     return looks.filter(l=>l.shelf===shelf);
@@ -461,16 +489,28 @@ const shelfUrl=id=>(catwalk?.shelves||[]).find(s=>s.id===id)?.searchUrl||'';
 function renderCatwalkFilters(looks){
   const host=$('catwalk-filters');
   if(!host)return;
-  const brands=[...new Set((catwalk?.looks||[]).map(l=>l.brand))].sort((a,b)=>a.localeCompare(b));
+  const within=seasonLooks();
+  const brands=[...new Set(within.map(l=>l.brand))].sort((a,b)=>a.localeCompare(b));
   const footwear=(catwalk?.shelves||[]).find(s=>s.footwearShelf);
   const chip=(id,label,count)=>`<button class="catwalk-chip${state.catwalkShow===id?' active':''}" data-catwalk="${esc(id)}" aria-pressed="${state.catwalkShow===id}">${esc(label)}${count!=null?` <span>${count.toLocaleString()}</span>`:''}</button>`;
   const shelfId=footwear?.id;
   // The shelf chip earns its place only when there is another shelf to filter
   // against: the library search returns footwear and nothing else.
   const several=(catwalk?.shelves||[]).length>1;
-  host.innerHTML=chip('all','전체',(catwalk?.looks||[]).length)
-    +(footwear&&several?chip('footwear',footwear.label.replace(/\s*\(.*$/,''),(catwalk.looks||[]).filter(l=>l.shelf===shelfId).length):'')
-    +brands.map(b=>chip(b,b,(catwalk.looks||[]).filter(l=>l.brand===b).length)).join('');
+  host.innerHTML=chip('all','전체',within.length)
+    +(footwear&&several?chip('footwear',footwear.label.replace(/\s*\(.*$/,''),within.filter(l=>l.shelf===shelfId).length):'')
+    +brands.map(b=>chip(b,b,within.filter(l=>l.brand===b).length)).join('');
+}
+// Past seasons stay on the site, each behind its own tab, until the third
+// collection after them pushes one off. The row hides itself while there is
+// only one season to be in, so nothing is offered that cannot be chosen.
+function renderCatwalkSeasonTabs(){
+  const host=$('catwalk-seasons');
+  if(!host)return;
+  const seasons=catwalkSeasons(), current=activeSeason();
+  host.hidden=seasons.length<2;
+  if(host.hidden){host.innerHTML='';return;}
+  host.innerHTML=seasons.map((s,i)=>`<button class="catwalk-season-tab${s.season===current?' active':''}" data-catwalk-season="${esc(s.season)}" aria-pressed="${s.season===current}">${esc(s.season)}${i===0?'<em>최신</em>':''} <span>${(s.looks||0).toLocaleString()}</span></button>`).join('');
 }
 function renderCatwalk(){
   const section=$('catwalk');
@@ -478,10 +518,11 @@ function renderCatwalk(){
   const looks=catwalkLooks();
   const shown=Math.min(catwalkShown||CATWALK_PAGE,looks.length);
   const cities=[...new Set(looks.map(l=>l.city).filter(Boolean))];
-  $('catwalk-scope').textContent=`${catwalk.season} · ${new Set(looks.map(l=>l.brand)).size}개 쇼 · ${looks.length.toLocaleString()}장`
+  $('catwalk-scope').textContent=`${activeSeason()||catwalk.season||''} · ${new Set(looks.map(l=>l.brand)).size}개 쇼 · ${looks.length.toLocaleString()}장`
     +(cities.length?` · ${cities.sort().join(' · ')}`:'');
   $('catwalk-note').textContent='신발만 클로즈업된 컷입니다. 카드를 누르면 크게 보고 고화질로 저장할 수 있습니다. '
     +'WGSN 구독 자료이므로 내부 참고용으로만 사용하세요.';
+  renderCatwalkSeasonTabs();
   renderCatwalkFilters(looks);
   $('catwalk-grid').innerHTML=looks.slice(0,shown).map((look,i)=>`<article class="catwalk-card${catwalkPicked.has(look.id)?' picked':''}">
       <label class="catwalk-check"><input type="checkbox" data-look-select="${esc(look.id)}"
@@ -584,7 +625,10 @@ async function downloadCatwalkPicks(){
     }else{
       if(button)button.textContent='압축하는 중…';
       files['목록.csv']=csvBytes(catwalkManifestRows(entries));
-      const season=fileSafe(catwalk?.season);
+      // Named for the season when every look in it walked the same one; a
+      // deliberate mix of seasons is named for nothing but its size.
+      const seasons=new Set(entries.map(e=>e.look.season||catwalk?.season||''));
+      const season=seasons.size===1?fileSafe([...seasons][0]):'';
       downloadBlob(`CATWALK_${season?season+'_':''}${entries.length}장.zip`,
         [zipStored(files)],'application/zip',30000);
     }
@@ -1035,7 +1079,7 @@ function syncFilterControls() {
 }
 function resetFilters() {
   clearTimeout(searchTimer);
-  Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
+  Object.assign(state,{search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
   syncFilterControls();renderBrands();renderKeywords();render();
 }
 function openExport() {
@@ -1073,7 +1117,7 @@ $('dl-analysis-xlsx')?.addEventListener('click',()=>{
 document.querySelectorAll('[data-dl]').forEach(button=>button.addEventListener('click',()=>
   downloadText(`shoes-${button.dataset.dl}-${today}.csv`,analysisCsv(analysisScope(),button.dataset.dl))));
 for(const [id,key] of [['category-filter','category'],['release-filter','release'],['sort','sort']])$(id).addEventListener('change',()=>{state[key]=$(id).value;state.page=1;render();});
-document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';if(state.source!=='catwalk'){state.catwalkShow='all';catwalkShown=0;catwalkPicked.clear();catwalkAnchor='';$('catwalk-selection-bar').hidden=true;}if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(socialComparisonGroups(products,today)[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});render();}));
+document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';if(state.source!=='catwalk'){state.catwalkShow='all';state.catwalkSeason='';catwalkShown=0;catwalkPicked.clear();catwalkAnchor='';$('catwalk-selection-bar').hidden=true;}if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(socialComparisonGroups(products,today)[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});render();}));
 $('social-group').addEventListener('change',()=>{state.socialGroup=$('social-group').value;state.sort=state.socialGroup?'social':'newest';state.page=1;render();});
 $('reset-filters').addEventListener('click',resetFilters);$('empty-reset').addEventListener('click',()=> $('empty-reset').dataset.retry?loadCatalog():resetFilters());
 $('select-page').addEventListener('change',()=>{visible.forEach(p=>$('select-page').checked?selected.add(p.id):selected.delete(p.id));updateSelection();});
@@ -1093,6 +1137,11 @@ renderBrands();loadCatalog();
 // The catwalk's own controls. Delegated, because the chips and the button are
 // rebuilt on every render.
 document.addEventListener('click',event=>{
+  const seasonTab=event.target.closest('[data-catwalk-season]');
+  if(seasonTab){
+    state.catwalkSeason=seasonTab.dataset.catwalkSeason;state.catwalkShow='all';catwalkShown=0;catwalkAnchor='';
+    renderCatwalk();window.scrollTo({top:$('catwalk').offsetTop-80,behavior:'smooth'});return;
+  }
   const chip=event.target.closest('[data-catwalk]');
   if(chip){state.catwalkShow=chip.dataset.catwalk;catwalkShown=0;renderCatwalk();window.scrollTo({top:$('catwalk').offsetTop-80,behavior:'smooth'});return;}
   const tick=event.target.closest('[data-look-select]');

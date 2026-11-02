@@ -24,7 +24,11 @@
     "internal": "node scripts/deploy-internal.mjs",
     "catwalk:library": "python scripts/build_catwalk_library.py",
     "deploy": "node scripts/deploy-internal.mjs",
-    "internal:set-password": "node scripts/set-internal-password.mjs"
+    "internal:set-password": "node scripts/set-internal-password.mjs",
+    "catwalk:collect": "node scripts/collect-catwalk-season.mjs",
+    "catwalk:compose": "node scripts/build-catwalk-snapshot.mjs",
+    "catwalk:login": "node scripts/wgsn-login.mjs",
+    "catwalk:update": "node scripts/update-catwalk.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"

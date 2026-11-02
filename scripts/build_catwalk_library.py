@@ -71,9 +71,14 @@ def main():
     parser.add_argument('records', help='the JSON array collected from the library search')
     parser.add_argument('images', help='folder of <id>.jpg handed over by the browser')
     parser.add_argument('--season', default='Spring/Summer 2027')
+    parser.add_argument('--season-id', default='')
     parser.add_argument('--keep-every-frame', action='store_true')
+    parser.add_argument('--fragment', default='',
+                        help='write this season as a fragment for build-catwalk-snapshot.mjs to compose, '
+                             'instead of overwriting the whole snapshot. Seasons are kept side by side, '
+                             'so only the composer may write public/data/catwalk.json.')
     parser.add_argument('--fresh', action='store_true',
-                        help='clear public/catwalk first - use when replacing a previous collection')
+                        help='re-copy this season\'s renditions even if a file of the same size is already there')
     args = parser.parse_args()
 
     from PIL import Image
@@ -83,8 +88,6 @@ def main():
             if not args.season or r.get('season') == args.season]
     print(f'{len(rows)} records for {args.season or "every season"}')
 
-    if args.fresh and os.path.isdir(OUT_IMAGES):
-        shutil.rmtree(OUT_IMAGES)
     os.makedirs(OUT_IMAGES, exist_ok=True)
 
     looks, missing = [], []
@@ -95,7 +98,7 @@ def main():
             missing.append(row.get('name'))
             continue
         target = os.path.join(OUT_IMAGES, f'{card_id}.jpg')
-        if not os.path.exists(target) or os.path.getsize(target) != os.path.getsize(source):
+        if args.fresh or not os.path.exists(target) or os.path.getsize(target) != os.path.getsize(source):
             shutil.copyfile(source, target)
         try:
             with Image.open(target) as im:
@@ -138,10 +141,27 @@ def main():
 
     config = read_json(CONFIG)
     library = config.get('librarySearch', {})
+    now = __import__('datetime').datetime.now().astimezone().isoformat()
+
+    # One season on its own, for build-catwalk-snapshot.mjs to compose with the
+    # other seasons being kept. Nothing else may write the snapshot: a season
+    # collected months after the last one must not erase it.
+    if args.fragment:
+        fragment = {'season': args.season,
+                    'seasonId': args.season_id or next(iter(config['filters']['seasons'])),
+                    'collectedAt': now, 'looks': looks}
+        os.makedirs(os.path.dirname(os.path.abspath(args.fragment)), exist_ok=True)
+        with io.open(args.fragment, 'w', encoding='utf-8') as f:
+            json.dump(fragment, f, ensure_ascii=False, separators=(',', ':'))
+            f.write('\n')
+        print(f"\n{len(looks)} cards -> {args.fragment}")
+        print('  compose the snapshot with: node scripts/build-catwalk-snapshot.mjs')
+        return 0
+
     payload = {
         'schemaVersion': 1, 'provider': 'WGSN', 'season': args.season,
         'seasonId': next(iter(config['filters']['seasons'])),
-        'builtAt': __import__('datetime').datetime.now().astimezone().isoformat(),
+        'builtAt': now,
         'licence': config['licence'], 'cardWidth': 480,
         'source': {'kind': 'image-library-saved-search', 'url': library.get('url', ''),
                    'tagCount': len(library.get('tags') or []),
