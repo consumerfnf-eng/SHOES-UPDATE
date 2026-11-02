@@ -125,3 +125,7 @@ test('release sorting puts unknown releases after dated products even when disco
  const state={search:'',brands:new Set(),category:'all',release:'all',source:'all',sort:'release'};
  assert.deepEqual(filterProducts(rows,state,'2026-09-28').map(p=>p.id),['newer','older','unknown']);
 });
+
+test('known release dates remain visible on cards carrying NEW evidence',()=>{
+ assert.equal(releaseDateLabel({releaseDate:'2026-10-15',arrivalEvidence:{verifiedAt:'2026-11-02T00:00:00Z',kind:'new-arrivals-listing'}}),'2026-10-15');
+});
