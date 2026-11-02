@@ -407,6 +407,11 @@
     {
       "name": "Fendi Official sneakers (women)",
       "url": "https://www.fendi.com/us-en/woman/shoes/sneakers"
+    },
+    {
+      "name": "Fendi official China sneaker catalogue API",
+      "url": "https://www.fendi.cn/rest/default/V3/applet/search/products?q=%E8%BF%90%E5%8A%A8%E9%9E%8B",
+      "basis": "assortment"
     }
   ],
   "Feng Chen Wang": [

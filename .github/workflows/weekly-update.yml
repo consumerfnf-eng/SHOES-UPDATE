@@ -85,8 +85,13 @@ jobs:
         # read keeps the last one that could, so this never fails the run.
         continue-on-error: true
         run: npm run ranks
+      - name: Reconcile Fendi official regional sneaker catalogue
+        continue-on-error: true
+        run: node scripts/collect-fendi-assortment.mjs --publish
       - name: Cache verified official photos before publication
         run: npm run photos
+      - name: Optimize newly downloaded product photos before colour analysis
+        run: python scripts/optimize-photo-cache.py
       - name: Read each product's colour off its own cached photo
         run: npm run colors
       - name: Validate snapshot before archive writes
@@ -106,7 +111,7 @@ jobs:
         run: |
           git config user.name 'Shoes Dashboard Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json public/images
+          git add data/fendi-assortment-report.json data/publication-history.json data/catalog-source.json data/curation-review.json data/archive-queue.json data/photo-cache.json data/rank-boards.json data/pending-candidates.json data/luxury-shelf-basis.json public/data/catalog.json public/data/rank-boards.json public/images
           if ! git diff --cached --quiet; then
             git commit -m "weekly curated shoes update $(date -u +%F)"
             # main moves while this runs (the daily workflow, or a person

@@ -45,7 +45,7 @@ const productPath=/\/(?:products?|produtos|p|pr|pd|t)\/|\/[^/]+\.html(?:$|\?)|(?
 // shoes can publish.
 const kidsListing=/(?:^|[\/_-])(?:kids?|kid-new|junior|juniors|youth|boys?|girls?|children|toddler|infant|baby|bebe|enfant|bambino|키즈|아동|주니어|유아)(?:[\/_-]|$)/i;
 export function isKidsListing(url){try{return kidsListing.test(readablePath(new URL(url).pathname))||kidsListing.test(new URL(url).search);}catch{return false;}}
-function isProductLink(url){try{const u=new URL(url);return productPath.test(u.pathname)||u.hostname.endsWith('zegna.com')&&/\/product\.[^/]+\.\d+\/?$/.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
+function isProductLink(url){try{const u=new URL(url);return productPath.test(u.pathname)||u.hostname.endsWith('valentino.com')&&/\/product-[^/]+/.test(u.pathname)||u.hostname.endsWith('zegna.com')&&/\/product\.[^/]+\.\d+\/?$/.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
 function colorLabel(alt,brand){
   if(brand==='Cecilie Bahnsen'&&/\b[A-Z]+\/[A-Z]+$/.test(alt))return alt.split(/\s+/).at(-1);
   let color=['ASICS','PUMA','Onitsuka Tiger'].includes(brand)?alt.split(',')[1]?.trim().replace(/\s+\d+$/,'')||'':alt.split(/\s[-—–]\s/)[1]||'';
@@ -146,7 +146,7 @@ export function listingFollowups(text,url,brand,sectionEvidence){
     try{
       const next=new URL(match[0].replaceAll('&amp;','&')),current=new URL(url);
       if(next.origin!==current.origin||next.pathname!==current.pathname)continue;
-      const page=['page','pageNumber','p'].find(k=>/^\d+$/.test(next.searchParams.get(k)||''));
+      const page=['page','pageNumber','pagination','p'].find(k=>/^\d+$/.test(next.searchParams.get(k)||''));
       if(!page||Number(next.searchParams.get(page))<2||canonicalUrl(next.href)===canonicalUrl(url))continue;
       if(!result.some(r=>canonicalUrl(r.url)===canonicalUrl(next.href)))result.push({url:next.href,name:'Official listing next product page'});
     }catch{}
@@ -235,6 +235,10 @@ export function maisonShelfProduct(candidate,checkedAt){
 // labels accidentally parsed as a color. Never borrow a neighbouring swatch.
 export function officialVariantLabels(product,candidate){
   const p={...product},last=new URL(p.url).pathname.split('/').filter(Boolean).pop().replace(/\.html$/i,'');
+  if(p.brand==='Valentino Garavani'){
+    const alt=candidate?.linkedImages?.map(i=>i.alt.replace(/^Image\s+\d+:\s*/i,'')).find(a=>/^Valentino Garavani\s+-\s+/i.test(a));
+    if(alt){const parts=alt.split(/\s+-\s+/);p.name=parts[1];if(parts[2])p.colorway=parts[2];}
+  }
   // Jil Sander calls its sneaker models "Elbe Lace-Up Shoe". The exact
   // official sneaker category supplies the type absent from those names.
   if(p.brand==='Jil Sander'&&/\bshoe\b/i.test(p.name||'')){
@@ -335,11 +339,13 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
       try{
         const text=assertReadableOfficial(await read(`https://r.jina.ai/${source.url}`));status.responses++;
         const rows=parseArrivalListing(text,{brand,url:source.url,checkedAt,sectionEvidence:source.sectionEvidence,basis:source.basis});if(isNewListing(source.url,text)||rows.length)status.listingPages++;
+        const hasNewCards=rows.some(p=>!candidates.has(canonicalUrl(p.url)));
+        if(rows.length&&!hasNewCards)status.repeatedListingPages=(status.repeatedListingPages||0)+1;
         for(const p of rows)candidates.set(canonicalUrl(p.url),p);
         let followups=listingFollowups(text,source.url,brand,source.sectionEvidence);
         // Loro Piana emits a next-page URL even beyond its last product page.
         // Do not spend the entire run following empty pages indefinitely.
-        if(!rows.length){
+        if(!rows.length||!hasNewCards){
           const current=new URL(source.url);
           followups=followups.filter(next=>new URL(next.url).pathname!==current.pathname);
         }
