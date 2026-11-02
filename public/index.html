@@ -51,6 +51,10 @@
             </div>
           </div>
           <div id="catwalk-filters" class="catwalk-filters" role="group" aria-label="쇼 선택"></div>
+          <div class="catwalk-pick-row">
+            <label><input type="checkbox" id="catwalk-select-all"> 보이는 사진 전체 선택</label>
+            <span id="catwalk-picked-hint"></span>
+          </div>
           <div id="catwalk-grid" class="catwalk-grid"></div>
           <div id="catwalk-more" class="catwalk-more" hidden></div>
         </section>
@@ -124,6 +128,7 @@
     </main>
   </div>
   <div id="selection-bar" class="selection-bar" hidden><div><strong id="selection-count">0개 선택</strong><button id="clear-selection" class="text-button">선택 해제</button></div><button id="compare-open" class="secondary-button">비교 보기</button><button id="download-photos" class="secondary-button">사진 JPG 저장 ↓</button><button id="export-open" class="primary-button">선택 정보 다운로드 <span aria-hidden="true">↓</span></button></div>
+  <div id="catwalk-selection-bar" class="selection-bar catwalk-selection-bar" hidden><div><strong id="catwalk-selection-count">0장 선택</strong><button id="catwalk-clear-picks" class="text-button">선택 해제</button></div><button id="catwalk-download" class="primary-button">선택 사진 저장 <span aria-hidden="true">↓</span></button></div>
   <dialog id="compare-dialog" class="compare-dialog" aria-labelledby="compare-title">
   <button class="close-button" id="compare-close" aria-label="비교 닫기">×</button>
   <h2 id="compare-title">선택 상품 비교</h2>

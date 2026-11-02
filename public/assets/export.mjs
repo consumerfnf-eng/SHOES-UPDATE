@@ -49,10 +49,16 @@ const xml = value => safeCell(value).replace(/[\u0000-\u0008\u000B\u000C\u000E-\
 function columnName(n) { let name = ''; for (++n; n; n = Math.floor((n - 1) / 26)) name = String.fromCharCode(65 + (n - 1) % 26) + name; return name; }
 const crcTable = Array.from({length:256}, (_, n) => { for (let i=0;i<8;i++) n = n & 1 ? 0xEDB88320 ^ (n >>> 1) : n >>> 1; return n >>> 0; });
 function crc32(bytes) { let c = 0xFFFFFFFF; for (const b of bytes) c = crcTable[(c ^ b) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
-function zipStored(files) {
+// Store-only (method 0) because every caller packs content that is either
+// already compressed - a JPEG - or small enough that deflating it would buy
+// nothing worth a compressor. Content may be a string or raw bytes, so the
+// same writer serves the OOXML parts below and a folder of runway photographs.
+export function zipStored(files) {
   const encoder = new TextEncoder(), chunks = [], directory = []; let offset = 0;
   for (const [filename, content] of Object.entries(files)) {
-    const name = encoder.encode(filename), data = encoder.encode(content), crc = crc32(data);
+    const name = encoder.encode(filename);
+    const data = typeof content === 'string' ? encoder.encode(content) : new Uint8Array(content);
+    const crc = crc32(data);
     const local = new Uint8Array(30 + name.length), l = new DataView(local.buffer);
     l.setUint32(0, 0x04034B50, true); l.setUint16(4, 20, true); l.setUint16(6, 0x800, true);
     l.setUint16(12, 33, true); l.setUint32(14, crc, true); l.setUint32(18, data.length, true);
@@ -82,4 +88,34 @@ export function xlsxBytes(rows) {
     'xl/styles.xml': '<?xml version="1.0" encoding="UTF-8"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="11"/><name val="Calibri"/></font><font><b/><sz val="11"/><name val="Calibri"/></font></fonts><fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills><borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="2"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>',
     'xl/worksheets/sheet1.xml': `<?xml version="1.0" encoding="UTF-8"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><dimension ref="${range}"/><sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/><cols><col min="1" max="${rows[0].length}" width="22" customWidth="1"/></cols><sheetData>${sheet}</sheetData><autoFilter ref="${range}"/></worksheet>`,
   });
+}
+
+// --- CATWALK ---------------------------------------------------------------
+// A look leaves the site as a file in somebody's folder, where none of the
+// page's captions travel with it, so the show has to live in the file name
+// itself: brand, season, city, and WGSN's own image id to keep two looks
+// from one show apart. `taken` keeps a repeated name from overwriting an
+// earlier entry inside the same archive.
+export const fileSafe = value =>
+  String(value ?? '').replace(/[\/:*?"<>|]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 70);
+
+export function catwalkFileName(look, taken = new Set()) {
+  const caption = [look?.brand, look?.season, look?.city].map(fileSafe).filter(Boolean).join('_');
+  let name = [caption, fileSafe(look?.id)].filter(Boolean).join('_') || 'look';
+  if (taken.has(name)) { let n = 2; while (taken.has(`${name}_${n}`)) n++; name = `${name}_${n}`; }
+  taken.add(name);
+  return `${name}.jpg`;
+}
+
+export const CATWALK_MANIFEST_COLUMNS = ['파일명', '브랜드', '시즌', '도시', '품목', '이미지 해상도', 'WGSN 원본 해상도', 'WGSN 이미지 ID', 'WGSN 원본 주소'];
+
+// The archive carries its own index, so the show information survives even
+// when the photographs are filed somewhere this site cannot caption them.
+export function catwalkManifestRows(entries) {
+  return [CATWALK_MANIFEST_COLUMNS, ...entries.map(({name, look}) => [
+    name, look.brand ?? '', look.season ?? '', look.city ?? '', look.imageType ?? '',
+    look.width && look.height ? `${look.width}x${look.height}` : '',
+    look.originalWidth && look.originalHeight ? `${look.originalWidth}x${look.originalHeight}` : '',
+    look.id ?? '', look.originalUrl ?? '',
+  ])];
 }

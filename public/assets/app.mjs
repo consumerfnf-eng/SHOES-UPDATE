@@ -1,4 +1,4 @@
-import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes } from './export.mjs';
+import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes, zipStored, catwalkFileName, catwalkManifestRows } from './export.mjs';
 import { groupedBrands } from './brand-groups.mjs';
 import { analysisCsv, analysisRows, priceDistribution, materialDistribution, colourDistribution,
          priceKrw, priceBand, colourFamily, materialsOf, RATE_NOTE,categoryDistribution,useModelCategories} from './analysis.mjs';
@@ -15,7 +15,7 @@ const PAGE_SIZE = 40;
 const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),category:'all',source:'all',catwalkShow:'all',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter'],['retail-mrporter','MR PORTER'],['retail-kith','Kith']];
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter','retail-mrporter':'MR PORTER','retail-kith':'Kith'};
-let catalog = null, overlay = null, trends = null, rankBoards = null, catwalk = null, catwalkShown = 0, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
+let catalog = null, overlay = null, trends = null, rankBoards = null, catwalk = null, catwalkShown = 0, catwalkPicked = new Set(), catwalkAnchor = '', products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
 const activeVariant = new Map();
 function groupKey(p){ return variantGroupKey(p); }
 function colorGroupOf(p){
@@ -368,11 +368,12 @@ function isFresh(p, asOf = today){
 }
 
 // --- downloads --------------------------------------------------------------
-function downloadText(name, text, type='text/csv;charset=utf-8'){
-  const blob=new Blob([text],{type}), url=URL.createObjectURL(blob);
+function downloadBlob(name, parts, type, revokeAfter=1000){
+  const url=URL.createObjectURL(new Blob(parts,{type}));
   const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);
-  a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),revokeAfter);
 }
+function downloadText(name, text, type='text/csv;charset=utf-8'){ downloadBlob(name,[text],type); }
 const scopeState=()=>({...state,isFresh,isSaved,
   source:state.source==='analysis'?'all':state.source});
 const analysisScope=()=>filterProducts(products,scopeState(),today);
@@ -438,9 +439,11 @@ function renderRankBoards(){
   bindImageErrors(host);
 }
 // The catwalk tab. One card per photograph, captioned the way WGSN captions
-// it: the brand, the season, the city. A look is not a product - it has no
-// price, no colourway and nothing to select or export - so it gets its own
-// grid rather than being forced through the product card.
+// it: the brand, the season, the city. A look is not a product - no price, no
+// colourway, nothing to compare - so it gets its own grid rather than being
+// forced through the product card. What it does share with a product is being
+// worth taking away in bulk: tick the looks you want and they come down as
+// one archive, each file named for the show it walked in.
 // The whole season at once. 247 cards of about 180KB is a page the browser
 // handles comfortably with lazy loading, and paging them split the viewer's
 // own range - it walked 1/120 of a 247-look season.
@@ -480,7 +483,10 @@ function renderCatwalk(){
   $('catwalk-note').textContent='신발만 클로즈업된 컷입니다. 카드를 누르면 크게 보고 고화질로 저장할 수 있습니다. '
     +'WGSN 구독 자료이므로 내부 참고용으로만 사용하세요.';
   renderCatwalkFilters(looks);
-  $('catwalk-grid').innerHTML=looks.slice(0,shown).map((look,i)=>`<article class="catwalk-card">
+  $('catwalk-grid').innerHTML=looks.slice(0,shown).map((look,i)=>`<article class="catwalk-card${catwalkPicked.has(look.id)?' picked':''}">
+      <label class="catwalk-check"><input type="checkbox" data-look-select="${esc(look.id)}"
+        ${catwalkPicked.has(look.id)?'checked':''}
+        aria-label="${esc(look.brand)} ${esc(look.season)} 선택"></label>
       <button class="catwalk-photo" data-look="${esc(look.id)}"
          aria-label="${esc(look.brand)} ${esc(look.season)} 크게 보기">
         <img src="${esc(look.image)}" alt="${esc(look.brand+' '+look.season+(look.city?' '+look.city:''))}"
@@ -497,6 +503,98 @@ function renderCatwalk(){
   more.hidden=shown>=looks.length;
   more.innerHTML=more.hidden?'':`<button class="secondary-button" id="catwalk-more-button">${(looks.length-shown).toLocaleString()}장 더 보기</button>`;
   bindImageErrors($('catwalk-grid'));
+  renderCatwalkPicks();
+}
+// --- picking looks to take away ---------------------------------------------
+// The looks on screen, in the order they are on screen: that is what "select
+// all" means and what a Shift-click spans. A filter chip or an unexpanded
+// page narrows it, so a tick never reaches a card the viewer cannot see.
+function catwalkOnScreen(){
+  const looks=catwalkLooks();
+  return looks.slice(0,Math.min(catwalkShown||CATWALK_PAGE,looks.length));
+}
+function pickCatwalk(id,checked,extend){
+  const looks=catwalkOnScreen();
+  // Shift-click fills in from the last card touched, the way a file list does:
+  // picking forty out of 247 runway shots one tick at a time is not a feature.
+  const from=extend?looks.findIndex(l=>l.id===catwalkAnchor):-1, to=looks.findIndex(l=>l.id===id);
+  if(from>=0&&to>=0)for(const look of looks.slice(Math.min(from,to),Math.max(from,to)+1))
+    checked?catwalkPicked.add(look.id):catwalkPicked.delete(look.id);
+  checked?catwalkPicked.add(id):catwalkPicked.delete(id);
+  catwalkAnchor=id;
+  renderCatwalkPicks();
+}
+function renderCatwalkPicks(){
+  if(!$('catwalk-grid'))return;
+  const looks=catwalkOnScreen(), count=catwalkPicked.size;
+  const bar=$('catwalk-selection-bar');
+  if(bar)bar.hidden=state.source!=='catwalk'||!count;
+  const label=$('catwalk-selection-count');
+  if(label)label.textContent=`${count.toLocaleString()}장 선택`;
+  const all=$('catwalk-select-all');
+  if(all){
+    all.disabled=!looks.length;
+    all.checked=!!looks.length&&looks.every(l=>catwalkPicked.has(l.id));
+    all.indeterminate=!all.checked&&looks.some(l=>catwalkPicked.has(l.id));
+  }
+  const hint=$('catwalk-picked-hint');
+  if(hint)hint.textContent=count
+    ?`${count.toLocaleString()}장 선택 · Shift를 누른 채 클릭하면 사이 구간이 한 번에 선택됩니다.`
+    :'사진을 골라 한 번에 내려받을 수 있습니다. Shift를 누른 채 클릭하면 사이 구간이 모두 선택됩니다.';
+  for(const input of $('catwalk-grid').querySelectorAll('[data-look-select]')){
+    input.checked=catwalkPicked.has(input.dataset.lookSelect);
+    input.closest('.catwalk-card')?.classList.toggle('picked',input.checked);
+  }
+}
+// The renditions are this site's own files, so they come back byte for byte -
+// no canvas, no re-encode, nothing that would cost the picture the quality it
+// is being downloaded for.
+async function lookBytes(look){
+  try{
+    const response=await fetch(look.image,{cache:'force-cache'});
+    if(!response.ok)return null;
+    const buffer=await response.arrayBuffer();
+    return buffer.byteLength?new Uint8Array(buffer):null;
+  }catch{return null;}
+}
+// Several looks leave as one archive rather than as several downloads: a
+// browser throttles - and then asks about - a run of separate saves, and a
+// folder of loose files loses the show each photograph came from. The archive
+// carries 목록.csv so the captions travel with the pictures.
+async function downloadCatwalkPicks(){
+  if(saving)return;
+  const picked=(catwalk?.looks||[]).filter(l=>catwalkPicked.has(l.id));
+  if(!picked.length){popup('저장할 사진을 먼저 선택해 주세요.');return;}
+  saving=true;
+  const button=$('catwalk-download'), label=button?.innerHTML;
+  if(button)button.disabled=true;
+  const taken=new Set(), files={}, entries=[];
+  let failed=0;
+  try{
+    for(const [index,look] of picked.entries()){
+      if(button)button.textContent=`사진 모으는 중 ${index+1}/${picked.length}`;
+      const bytes=await lookBytes(look);
+      if(!bytes){failed++;continue;}
+      const name=catwalkFileName(look,taken);
+      files[name]=bytes;entries.push({name,look});
+    }
+    if(!entries.length){popup('사진을 받지 못했습니다. 잠시 후 다시 시도해 주세요.');return;}
+    if(entries.length===1){
+      downloadBlob(entries[0].name,[files[entries[0].name]],'image/jpeg',10000);
+    }else{
+      if(button)button.textContent='압축하는 중…';
+      files['목록.csv']=csvBytes(catwalkManifestRows(entries));
+      const season=fileSafe(catwalk?.season);
+      downloadBlob(`CATWALK_${season?season+'_':''}${entries.length}장.zip`,
+        [zipStored(files)],'application/zip',30000);
+    }
+    popup(failed
+      ?`사진 ${entries.length}장을 저장했습니다. ${failed}장은 받지 못했습니다.`
+      :`사진 ${entries.length}장을 저장했습니다.`);
+  }finally{
+    if(button){button.disabled=false;button.innerHTML=label;}
+    saving=false;
+  }
 }
 // Click a card to see the look large, with its caption beside it. The picture
 // on the page is the 1,400px rendition the collection downsized from WGSN's
@@ -975,7 +1073,7 @@ $('dl-analysis-xlsx')?.addEventListener('click',()=>{
 document.querySelectorAll('[data-dl]').forEach(button=>button.addEventListener('click',()=>
   downloadText(`shoes-${button.dataset.dl}-${today}.csv`,analysisCsv(analysisScope(),button.dataset.dl))));
 for(const [id,key] of [['category-filter','category'],['release-filter','release'],['sort','sort']])$(id).addEventListener('change',()=>{state[key]=$(id).value;state.page=1;render();});
-document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';if(state.source!=='catwalk'){state.catwalkShow='all';catwalkShown=0;}if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(socialComparisonGroups(products,today)[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});render();}));
+document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';if(state.source!=='catwalk'){state.catwalkShow='all';catwalkShown=0;catwalkPicked.clear();catwalkAnchor='';$('catwalk-selection-bar').hidden=true;}if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(socialComparisonGroups(products,today)[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});render();}));
 $('social-group').addEventListener('change',()=>{state.socialGroup=$('social-group').value;state.sort=state.socialGroup?'social':'newest';state.page=1;render();});
 $('reset-filters').addEventListener('click',resetFilters);$('empty-reset').addEventListener('click',()=> $('empty-reset').dataset.retry?loadCatalog():resetFilters());
 $('select-page').addEventListener('change',()=>{visible.forEach(p=>$('select-page').checked?selected.add(p.id):selected.delete(p.id));updateSelection();});
@@ -997,6 +1095,15 @@ renderBrands();loadCatalog();
 document.addEventListener('click',event=>{
   const chip=event.target.closest('[data-catwalk]');
   if(chip){state.catwalkShow=chip.dataset.catwalk;catwalkShown=0;renderCatwalk();window.scrollTo({top:$('catwalk').offsetTop-80,behavior:'smooth'});return;}
+  const tick=event.target.closest('[data-look-select]');
+  if(tick){pickCatwalk(tick.dataset.lookSelect,tick.checked,event.shiftKey);return;}
+  if(event.target.id==='catwalk-select-all'){
+    for(const look of catwalkOnScreen())
+      event.target.checked?catwalkPicked.add(look.id):catwalkPicked.delete(look.id);
+    catwalkAnchor='';renderCatwalk();return;
+  }
+  if(event.target.closest('#catwalk-clear-picks')){catwalkPicked.clear();catwalkAnchor='';renderCatwalk();return;}
+  if(event.target.closest('#catwalk-download'))return void downloadCatwalkPicks();
   const photo=event.target.closest('[data-look]');
   if(photo){openViewer(photo.dataset.look);return;}
   if(event.target.closest('#catwalk-viewer-close'))return closeViewer();

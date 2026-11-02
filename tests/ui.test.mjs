@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { EXPORT_COLUMNS, productRecord, exportRows, csvBytes, xlsxBytes } from '../public/assets/export.mjs';
+import { EXPORT_COLUMNS, productRecord, exportRows, csvBytes, xlsxBytes, zipStored, fileSafe, catwalkFileName, catwalkManifestRows, CATWALK_MANIFEST_COLUMNS } from '../public/assets/export.mjs';
 import { kstToday, shiftCalendarMonths, releaseState, safeUrl, filterProducts, keywordProductIds, sourceContext, trendKeywords, officialImageUrl, officialProductUrl, reviewedProductPageUrl, sourceMatches, visibleSocialMetrics, releaseDateLabel, releaseSortKey, socialComparisonGroups, groupProductVariants } from '../public/assets/catalog-view.mjs';
 
 function official(product){return {...product,officialProductEvidence:{verified:true,url:product.url,brand:product.brand,style:product.style,verifiedAt:'2026-09-27T00:00:00Z'},officialImageEvidence:{verified:true,url:product.image,sourceUrl:product.url,brand:product.brand,style:product.style,verifiedAt:'2026-09-27T00:00:00Z'}};}
@@ -128,4 +128,75 @@ test('release sorting puts unknown releases after dated products even when disco
 
 test('known release dates remain visible on cards carrying NEW evidence',()=>{
  assert.equal(releaseDateLabel({releaseDate:'2026-10-15',arrivalEvidence:{verifiedAt:'2026-11-02T00:00:00Z',kind:'new-arrivals-listing'}}),'2026-10-15');
+});
+
+// --- CATWALK archive -------------------------------------------------------
+// Reads a stored-method archive back the way an unzipper does: through the
+// central directory, not by trusting the order the writer happened to use.
+function unzip(bytes) {
+  const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+  let end = bytes.length - 22;
+  while (end >= 0 && view.getUint32(end, true) !== 0x06054B50) end--;
+  assert(end >= 0, 'no end-of-central-directory record');
+  const count = view.getUint16(end + 10, true);
+  let at = view.getUint32(end + 16, true);
+  const files = {};
+  for (let i = 0; i < count; i++) {
+    assert.equal(view.getUint32(at, true), 0x02014B50, 'central directory signature');
+    const flags = view.getUint16(at + 8, true), method = view.getUint16(at + 10, true);
+    const size = view.getUint32(at + 24, true), nameLength = view.getUint16(at + 28, true);
+    const offset = view.getUint32(at + 42, true);
+    assert.equal(method, 0, 'stored, not deflated');
+    assert.equal(flags & 0x800, 0x800, 'file name declared UTF-8');
+    const name = new TextDecoder().decode(bytes.subarray(at + 46, at + 46 + nameLength));
+    assert.equal(view.getUint32(offset, true), 0x04034B50, 'local header signature');
+    const localName = view.getUint16(offset + 26, true), extra = view.getUint16(offset + 28, true);
+    const start = offset + 30 + localName + extra;
+    files[name] = bytes.subarray(start, start + size);
+    at += 46 + nameLength + view.getUint16(at + 30, true) + view.getUint16(at + 32, true);
+  }
+  assert.equal(Object.keys(files).length, count, 'every directory entry read');
+  return files;
+}
+
+test('A catwalk archive stores photographs byte for byte and names each file for its show', () => {
+  // JPEG-shaped bytes, including the 0x50 0x4B pair a naive reader would mistake
+  // for a header signature, and a byte run long enough to matter.
+  const photo = id => Uint8Array.from({length: 600}, (_, i) => (i * 31 + id) % 256);
+  const looks = [
+    {id: '41953737', brand: 'AARON ESH', season: 'Spring/Summer 2027', city: 'London', imageType: '신발 클로즈업', width: 933, height: 1400, originalWidth: 2574, originalHeight: 3861, originalUrl: 'https://media.wgsn.com/a.jpg'},
+    {id: '41643958', brand: 'Agnes b', season: 'Spring/Summer 2027', city: 'Paris', imageType: '신발 클로즈업', width: 1400, height: 933},
+  ];
+  const taken = new Set(), files = {}, entries = [];
+  for (const look of looks) { const name = catwalkFileName(look, taken); files[name] = photo(Number(look.id) % 97); entries.push({name, look}); }
+  // The season carries a slash WGSN writes in its caption; a file name cannot.
+  assert.equal(entries[0].name, 'AARON ESH_Spring Summer 2027_London_41953737.jpg');
+  assert.equal(entries[1].name, 'Agnes b_Spring Summer 2027_Paris_41643958.jpg');
+  assert.equal(fileSafe('Spring/Summer 2027'), 'Spring Summer 2027');
+  // The same look twice must not overwrite itself inside one archive.
+  assert.equal(catwalkFileName(looks[0], taken), 'AARON ESH_Spring Summer 2027_London_41953737_2.jpg');
+  assert.equal(catwalkFileName({}, new Set()), 'look.jpg');
+
+  files['목록.csv'] = csvBytes(catwalkManifestRows(entries));
+  const read = unzip(zipStored(files));
+  assert.deepEqual(Object.keys(read).sort(), [...entries.map(e => e.name), '목록.csv'].sort());
+  for (const {name} of entries) assert.deepEqual([...read[name]], [...files[name]], `${name} unchanged`);
+
+  // The index opens with a BOM so Excel reads the Korean headings. TextDecoder
+  // swallows a leading one, so the bytes are checked before it decodes them.
+  assert.deepEqual([...read['목록.csv'].subarray(0, 3)], [0xEF, 0xBB, 0xBF]);
+  const manifest = new TextDecoder().decode(read['목록.csv']);
+  const rows = manifest.split('\r\n').map(line => line.slice(1, -1).split('","'));
+  assert.deepEqual(rows[0], CATWALK_MANIFEST_COLUMNS);
+  assert.deepEqual(rows[1], ['AARON ESH_Spring Summer 2027_London_41953737.jpg', 'AARON ESH',
+    'Spring/Summer 2027', 'London', '신발 클로즈업', '933x1400', '2574x3861', '41953737', 'https://media.wgsn.com/a.jpg']);
+  // A look WGSN gave no original for leaves those cells empty rather than 'undefined'.
+  assert.deepEqual(rows[2].slice(5), ['1400x933', '', '41643958', '']);
+});
+
+test('A workbook still packs correctly now that the archive writer also takes bytes', () => {
+  const book = unzip(xlsxBytes([['시즌', '브랜드'], ['SS27', 'Nike']]));
+  assert(Object.keys(book).includes('xl/worksheets/sheet1.xml'));
+  const sheet = new TextDecoder().decode(book['xl/worksheets/sheet1.xml']);
+  assert(sheet.includes('시즌') && sheet.includes('Nike'), 'cells survive the packing');
 });
