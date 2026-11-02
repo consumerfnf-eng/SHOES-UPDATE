@@ -1,7 +1,8 @@
 import {displayBrandGroup} from '../public/assets/brand-groups.mjs';
 import {collectNewArrivals} from './new-arrivals.mjs';
 import {createJinaClient} from './jina_client.mjs';
-import {createOfficialReader} from './official-reader.mjs';
+import {createOfficialReader,officialHtmlMarkdown,pacedOfficialFetch} from './official-reader.mjs';
+import {readPublicSource} from './source-feeds.mjs';
 import {createRenderedOfficialReader} from './rendered-official-reader.mjs';
 import {createScrapingBeeReader} from './scrapingbee-reader.mjs';
 import {createCollectionBudget} from './collection-budget.mjs';
@@ -25,7 +26,20 @@ const renderedRead=async url=>{
  }throw error;
 };
 const reader=createOfficialReader({read:client.read,origins,renderedRead});
-const run=await collectNewArrivals({read:budget.wrap(reader.read),sources,brands,catalogueBrands:brands,existing:source.products,now,
+const allowedOrigins=new Set(origins.map(u=>new URL(u).origin)),officialFetch=pacedOfficialFetch();
+const directRead=budget.wrap(async url=>{
+ if(!allowedOrigins.has(new URL(url).origin))throw Error('LUX_DIRECT_ORIGIN_NOT_ALLOWED');
+ return officialHtmlMarkdown(await readPublicSource(url,{fetchImpl:officialFetch,maxBytes:6_000_000,headers:{Accept:'text/html'}}),url);
+});
+const read=budget.wrap(async url=>{
+ const target=url.replace(/^https:\/\/r\.jina\.ai\//,'');
+ // Jil Sander's text renderer replaces its product images with blob URLs.
+ if(new URL(target).hostname==='www.jilsander.com'){
+  try{return await directRead(target);}catch{}
+ }
+ return reader.read(url);
+});
+const run=await collectNewArrivals({read,readDetails:directRead,sources,brands,catalogueBrands:brands,existing:source.products,now,
  maxPagesPerBrand:Number(process.env.LUX_MAX_PAGES||512),maxDetailMsPerBrand:Number(process.env.LUX_DETAIL_MS||120000),canReadDetails:()=>!budget.exhausted(),
  onProgress:p=>atomicJson(new URL('logs/lux-assortment-progress.json',root),p)});
 const report={schemaVersion:1,checkedAt:run.checkedAt,scope:'official-lux-sneakers-all-release-dates',publicationRequested:apply,brands:run.coverage.map(c=>({...c,
