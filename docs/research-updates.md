@@ -6,8 +6,9 @@ the internal project with an empty research library. `deploy-internal.mjs`
 checks both collections before uploading; the old public project remains a
 redirect to the internal site.
 
-Forecast uses three consecutive half-year seasons. Before July 2027 the window
-is 27SS, 27AW and 28SS; it advances every January and July in Asia/Seoul.
+Forecast uses three consecutive half-year seasons. The initial window in
+November 2026 is 27SS, 27AW and 28SS. On 1 January 2027 it advances to 27AW,
+28SS and 28AW; it advances again every January and July in Asia/Seoul.
 Only titles containing the word Sneaker or Sneakers qualify. The first year
 of A/W 27/28 maps to 27AW. Key Silhouettes keyword chips are extracted only
 from Fashion silhouette and Core updates headings.

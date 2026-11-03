@@ -2,7 +2,10 @@
 export function forecastSeasons(now=new Date()) {
   const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit'}).formatToParts(new Date(now));
   const year=Number(parts.find(p=>p.type==='year').value),month=Number(parts.find(p=>p.type==='month').value);
-  const start=Math.max(2027*2,year*2+(month>=7?1:0));
+  // The initial window was requested in the second half of 2026. Its next
+  // January boundary must advance to 27AW, rather than keep 27SS until July.
+  const elapsed=Math.max(0,year*2+(month>=7?1:0)-(2026*2+1));
+  const start=2027*2+elapsed;
   return [0,1,2].map(offset=>{const n=start+offset;return `${String(Math.floor(n/2)).slice(-2)}${n%2?'AW':'SS'}`;});
 }
 export function reportSeason(title){const m=String(title).match(/\b(S\s*\/\s*S|A\s*\/\s*W|F\s*\/\s*W)\s*(\d{2})(?:\s*\/\s*\d{2})?/i);return m?`${m[2]}${/^S/i.test(m[1])?'SS':'AW'}`:'';}
