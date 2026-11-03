@@ -5,7 +5,7 @@ import {composeSnapshot} from '../scripts/build-catwalk-snapshot.mjs';
 import {validateProposalConfig} from '../scripts/build-season-proposals.mjs';
 import {proposalAsset,proposalsForSeason} from '../public/assets/research-brief.mjs';
 import {proposalSheet,BOARD_SIZE} from '../public/assets/proposal-template.mjs';
-import {brandPriceRows,comparisonBrand,mlbBenchmark,PRICE_BRANDS} from '../public/assets/brand-prices.mjs';
+import {brandPriceRows,comparisonBrand,mlbBenchmark,PRICE_BRANDS,priceCounts,priceComparisonMarkup} from '../public/assets/brand-prices.mjs';
 import {priceKrw} from '../public/assets/analysis.mjs';
 test('CATWALK exclusions persist across collections and runway precedes feed stably',()=>{
  assert.equal(isAllowedFeedLook({collection:'fashion-feed',hashtags:['#HeeledPump']}),false);
@@ -27,6 +27,21 @@ test('price comparison includes only nine requested brands, omits unpriced rows 
  const benchmark=mlbBenchmark({products:[{style:'a',listPrice:99000},{style:'b',listPrice:149000},{style:'c',listPrice:199000},{style:'b',listPrice:149000}]});assert.equal(benchmark.count,3);assert.equal(benchmark.median,149000);
  const rows=brandPriceRows([base,{...base,id:'black',colorway:'Black',priceLabel:'200,000원'},{brand:'FILA',name:'No price'},{brand:'Prada',name:'Luxury',priceLabel:'USD 950'},{brand:'National Geographic',name:'Excluded',priceLabel:'159,000원'},{brand:'AKIII CLASSIC',name:'Excluded',priceLabel:'99,000원'}],benchmark);
  assert.equal(rows.length,1);assert.equal(rows[0].name,'Nike');assert.equal(rows[0].models,1);assert.equal(rows[0].median,150000);assert.equal(PRICE_BRANDS.length,9);
+ const scoped=brandPriceRows([base,{...base,style:'OTHER',name:'Distinct Runner',priceLabel:'USD 900'}, {...base,style:'NEWS',name:'News Reference',priceLabel:'USD 1200',source:'newsletter-sneaker-news'}],benchmark);assert.equal(scoped[0].median,100000);assert.equal(scoped[0].models,2);assert.equal(scoped[0].basis,'한국 원화 표시가');
  assert.equal(comparisonBrand({brand:'adidas',name:'Performance Runner'}),'');assert.equal(comparisonBrand({brand:'adidas',url:'https://www.ssense.com/en-us/men/product/adidas-originals/shoe/123'}),'Adidas Originals');
+ assert.equal(priceKrw({priceLabel:'SEK 4,070'}),null);assert.equal(priceKrw({priceLabel:'14\nEUR'}),null);assert.equal(priceKrw({priceLabel:'USD 1200',source:'newsletter-footwear-news'}),null);assert.equal(priceKrw({priceLabel:'CNY ¥1000'}),193000);
  assert.equal(priceKrw({priceLabel:'USD 90'}),124200);assert.equal(priceKrw({priceLabel:'30% OFF USD 140'}),193200);
+});
+
+test('price bands have exclusive boundaries and median bars use a common MLB baseline without coverage ratios',()=>{
+ assert.deepEqual(priceCounts([99000,100000,149000,150000,199000,200000,299000,300000]),[1,2,2,2,1]);
+ const benchmark=mlbBenchmark({products:[{style:'a',listPrice:99000},{style:'b',listPrice:149000},{style:'c',listPrice:199000}]});
+ const rows=brandPriceRows([{brand:'FILA',name:'Low',priceLabel:'99,000원'},{brand:'Nike',name:'High',priceLabel:'199,000원'}],benchmark);
+ const html=priceComparisonMarkup(rows,benchmark);
+ assert(html.includes('MLB보다 50,000원 저렴'));assert(html.includes('MLB보다 50,000원 높음'));assert(html.includes('MLB 중앙값 149,000원'));
+ assert.equal([...html.matchAll(/class="price-mlb-line" style="left:74.500%"/g)].length,3);
+ assert(html.includes('width:49.500%'));assert(html.includes('width:99.500%'));assert(html.includes('가격대별 상품 개수'));
+ assert(!/가격 확인 모델|전체 모델|가격대 내 모델|지수 100|\d+\s*\/\s*\d+개 모델/.test(html));
+ assert(html.includes('FILA 10만원 미만 1개'));assert(html.includes('MLB 15–20만원 1개'));
+ assert(!priceComparisonMarkup(rows,null).includes('price-mlb-line'));
 });

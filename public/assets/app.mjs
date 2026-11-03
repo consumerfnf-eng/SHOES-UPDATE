@@ -801,7 +801,7 @@ function renderAnalysis(){
   document.querySelector('#panel-price .panel-body').innerHTML=
     price.bands.map(b=>bar(b.label,b.count,price.priced)).join('')||'<p class="muted">가격 정보가 없습니다.</p>';
   document.querySelector('#panel-price .panel-note').textContent=
-    `가격 확인 ${price.priced.toLocaleString()}건 · 미기재 ${price.missing.toLocaleString()}건`;
+    `가격 확인 ${price.priced.toLocaleString()}건 · 미기재·비교 제외 ${price.missing.toLocaleString()}건 · 기사 금액·미지원 통화 제외`;
 
   const colour=colourDistribution(rows);
   document.querySelector('#panel-colour .panel-body').innerHTML=

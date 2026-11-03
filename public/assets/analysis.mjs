@@ -25,6 +25,13 @@ const CURRENCY = [
 export function priceKrw(product) {
   const label = String(product?.priceLabel || '').trim();
   if (!label) return null;
+  // Article amounts are not bound to a saleable product. A currency without
+  // a configured conversion must remain unknown, never default to USD.
+  if(String(product?.source||'').startsWith('newsletter-'))return null;
+  const leadingCode=label.match(/^\s*([A-Z]{3})\s*(?=[$€£¥₩]?\s*\d)/)?.[1];
+  if(leadingCode&&!Object.hasOwn(RATES_KRW,leadingCode)&&leadingCode!=='RMB')return null;
+  if(/(?:HK|SG|AU|CA|NZ|NT|R|C)\$|[₹₽₺₫฿₱]/.test(label))return null;
+  if(/^\d{1,2}\s*\n\s*(?:EUR|USD|GBP|JPY|CNY|KRW)$/.test(label))return null;
   // Prefer the amount attached to an explicit currency, including $90.
   // For unmarked amounts retain the legacy three-digit threshold: "$ 1,250", "119,000원",
   // "USD 1030". A two-digit number is usually a size or a discount percent.
@@ -34,7 +41,10 @@ export function priceKrw(product) {
   if (!found) return null;
   const digits = Number((marked?found[1]:found[0]).replace(/[,.](?=\d{3}\b)/g, '').replace(/,/g, ''));
   if (!Number.isFinite(digits) || digits <= 0) return null;
-  const currency = (CURRENCY.find(([re]) => re.test(label)) || [, digits >= 10000 ? 'KRW' : 'USD'])[1];
+  const stated=label.match(/\b(KRW|USD|EUR|GBP|JPY|CNY|RMB)\b/i)?.[1]?.toUpperCase();
+  const markedCurrency=CURRENCY.find(([re])=>re.test(label))?.[1];
+  if(!stated&&!markedCurrency&&!/^[\d\s,.]+$/.test(label))return null;
+  const currency=stated?(stated==='RMB'?'CNY':stated):((/¥|￥/.test(label)&&product?.country==='CN')?'CNY':markedCurrency)||(digits>=10000?'KRW':'USD');
   const krw = Math.round(digits * (RATES_KRW[currency] ?? 1));
   return krw >= 5000 && krw <= 20_000_000 ? krw : null;
 }
