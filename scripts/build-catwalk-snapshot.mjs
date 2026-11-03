@@ -57,7 +57,7 @@ export function composeSnapshot(fragments, {kept = SEASONS_KEPT, config = {}, bu
     bySeason.get(season).push(fragment);
   }
   const {keep,drop}=retainSeasons([...bySeason.keys()],kept);
-  const looks=keep.flatMap(season=>[...new Map(bySeason.get(season).flatMap(f=>f.looks.map(l=>({...l,season}))).map(l=>[l.id,l])).values()]);
+  const looks=keep.flatMap(season=>[...new Map(bySeason.get(season).flatMap(f=>f.looks.map(l=>({...l,season,...(f.collection==='fashion-feed'&&f.sourceUrl?{sourceFeedUrl:f.sourceUrl}:{})}))).map(l=>[l.id,l])).values()]);
   const seasons=keep.map(season=>{const fs=bySeason.get(season),ls=looks.filter(l=>l.season===season);return {season,seasonId:String(fs[0].seasonId??''),collectedAt:fs.map(f=>f.collectedAt||'').sort().at(-1),looks:ls.length,shows:new Set(ls.map(l=>l.brand)).size,cities:[...new Set(ls.map(l=>l.city).filter(Boolean))].sort()};});
   const library = config.librarySearch ?? {};
   return {
@@ -68,7 +68,7 @@ export function composeSnapshot(fragments, {kept = SEASONS_KEPT, config = {}, bu
       licence: config.licence ?? {}, cardWidth: 480,
       source: {kind: 'image-library-saved-search', url: library.url ?? '',
                tagCount: (library.tags ?? []).length,
-               note: "Every result is a shoe photographed on its own; brand, season and city are WGSN's own caption."},
+               note: looks.some(l=>l.collection==='fashion-feed')?'Runway close-ups and Fashion Feed stories retain their separate collections and source captions.':"Every result is a shoe photographed on its own; brand, season and city are WGSN's own caption."},
       shelves: [{id: 'library-footwear', label: '신발 클로즈업', footwearShelf: true, searchUrl: library.url ?? ''}],
       looks,
     },

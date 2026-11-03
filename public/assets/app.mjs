@@ -739,7 +739,7 @@ function showViewer(){
   save.href = look.image;
   save.setAttribute('download', `${look.brand.replace(/[^\p{L}\p{N}]+/gu, '-')}-${look.id}.jpg`);
   const origin = $('catwalk-viewer-origin');
-  const originUrl = safeUrl(look.originalUrl) || safeUrl(shelfUrl(look.shelf));
+  const originUrl = safeUrl(look.sourceFeedUrl) || safeUrl(look.originalUrl) || safeUrl(shelfUrl(look.shelf));
   origin.href = originUrl;
   origin.hidden = !originUrl;
   $('catwalk-position').textContent = `${viewerIndex + 1} / ${list.length}`;

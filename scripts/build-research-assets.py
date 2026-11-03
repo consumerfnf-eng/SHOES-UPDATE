@@ -115,7 +115,7 @@ if '--feed' in sys.argv:
         name = 'thumb-'+hashlib.sha256(encoded).hexdigest()[:24]+'.jpg'
         (ROOT/'public/catwalk'/name).write_bytes(encoded)
         look['thumbnail'] = '/catwalk/'+name
-    fragment = {'season': FEED_SEASON, 'collection': 'fashion-feed', 'collectedAt': NOW, 'looks': looks}
+    fragment = {'season': FEED_SEASON, 'collection': 'fashion-feed', 'sourceUrl': FEED_SOURCE.get('url', ''), 'collectedAt': NOW, 'looks': looks}
     fragments = ROOT/'data/catwalk'
     fragments.mkdir(parents=True, exist_ok=True)
     (fragments/('fashion-feed-'+SEASON_KEY+'.json')).write_text(json.dumps(fragment, ensure_ascii=False), encoding='utf-8')
