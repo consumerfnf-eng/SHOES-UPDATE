@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "officialVariants": 7175,
+  "officialVariants": 7171,
   "retailVariants": 0,
   "officialDuplicatesRemoved": [
     {
@@ -1506,6 +1506,34 @@
       "brand": "adidas",
       "code": "reviewed-variant|adidas-adizero-adios-pro-5-solar-turbo-core-black-lucid-red",
       "reason": "reviewed-same-physical-variant"
+    },
+    {
+      "id": "arrival-e5f1a9219227555ef48f",
+      "officialId": "arrival-b71798e176262e33136d",
+      "brand": "Rockfish Weatherwear",
+      "code": "reviewed-variant|rockfish-official-product-4319",
+      "reason": "reviewed-same-physical-variant"
+    },
+    {
+      "id": "arrival-78949bd39f8e75d821d9",
+      "officialId": "arrival-14d6be0e21387aeefd1d",
+      "brand": "Rockfish Weatherwear",
+      "code": "reviewed-variant|rockfish-official-product-4320",
+      "reason": "reviewed-same-physical-variant"
+    },
+    {
+      "id": "arrival-9988e42448b19614cd6d",
+      "officialId": "arrival-837efcf816eeae31a5ad",
+      "brand": "Rockfish Weatherwear",
+      "code": "reviewed-variant|rockfish-official-product-4318",
+      "reason": "reviewed-same-physical-variant"
+    },
+    {
+      "id": "arrival-35a2f52b019b5f05db20",
+      "officialId": "arrival-181222a6378213f11bf5",
+      "brand": "Rockfish Weatherwear",
+      "code": "reviewed-variant|rockfish-official-product-4325",
+      "reason": "reviewed-same-physical-variant"
     }
   ],
   "officialSourceDuplicateHistory": [
@@ -2886,6 +2914,34 @@
       "officialId": "arrival-9e8e0b0a5146e2dbaee6",
       "brand": "adidas",
       "code": "reviewed-variant|adidas-adizero-adios-pro-5-solar-turbo-core-black-lucid-red",
+      "reason": "reviewed-same-physical-variant"
+    },
+    {
+      "id": "arrival-e5f1a9219227555ef48f",
+      "officialId": "arrival-b71798e176262e33136d",
+      "brand": "Rockfish Weatherwear",
+      "code": "reviewed-variant|rockfish-official-product-4319",
+      "reason": "reviewed-same-physical-variant"
+    },
+    {
+      "id": "arrival-78949bd39f8e75d821d9",
+      "officialId": "arrival-14d6be0e21387aeefd1d",
+      "brand": "Rockfish Weatherwear",
+      "code": "reviewed-variant|rockfish-official-product-4320",
+      "reason": "reviewed-same-physical-variant"
+    },
+    {
+      "id": "arrival-9988e42448b19614cd6d",
+      "officialId": "arrival-837efcf816eeae31a5ad",
+      "brand": "Rockfish Weatherwear",
+      "code": "reviewed-variant|rockfish-official-product-4318",
+      "reason": "reviewed-same-physical-variant"
+    },
+    {
+      "id": "arrival-35a2f52b019b5f05db20",
+      "officialId": "arrival-181222a6378213f11bf5",
+      "brand": "Rockfish Weatherwear",
+      "code": "reviewed-variant|rockfish-official-product-4325",
       "reason": "reviewed-same-physical-variant"
     }
   ],
@@ -8754,7 +8810,7 @@
     },
     {
       "brand": "Nike",
-      "name": "/Anthracite/Laser Crimson",
+      "name": "Hybrid Rn Training Shoes",
       "ids": [
         "arrival-143415bfd34f4ac4f422",
         "new-20260923-1c55de5723ea3ada",
@@ -8786,49 +8842,79 @@
     },
     {
       "brand": "Melissa",
-      "name": "/beige Motion",
+      "name": "Motion",
       "ids": [
-        "arrival-ad65627e476673d7cc5d"
+        "arrival-ad65627e476673d7cc5d",
+        "arrival-6c30bd18788990bbf60b",
+        "arrival-33e00d2f1c4af7ccb0ca",
+        "arrival-6522391bee623402da31"
       ],
       "variants": [
         {
           "id": "arrival-ad65627e476673d7cc5d",
           "style": "motion-36120-bt011",
           "color": "Pink"
+        },
+        {
+          "id": "arrival-6c30bd18788990bbf60b",
+          "style": "36120-BT009-5",
+          "color": "Copper"
+        },
+        {
+          "id": "arrival-33e00d2f1c4af7ccb0ca",
+          "style": "motion-36120-bt008",
+          "color": "Grey"
+        },
+        {
+          "id": "arrival-6522391bee623402da31",
+          "style": "motion-36120-bt014",
+          "color": "Beige"
         }
       ]
     },
     {
       "brand": "Merrell",
-      "name": "/Beluga",
+      "name": "Wrapt Sneaker",
       "ids": [
-        "arrival-0151943f6f957f181583"
+        "arrival-0151943f6f957f181583",
+        "live-a6a650f3d0fc4e40"
       ],
       "variants": [
         {
           "id": "arrival-0151943f6f957f181583",
           "style": "60644M",
           "color": "Taupe"
+        },
+        {
+          "id": "live-a6a650f3d0fc4e40",
+          "style": "60644M",
+          "color": "White"
         }
       ]
     },
     {
       "brand": "Melissa",
-      "name": "/Clear Tortoise Melissa Cozy slide with two and transparent tortoise straps with a buckle detail.",
+      "name": "Cozy",
       "ids": [
-        "arrival-5c8e169780bf46a523a0"
+        "arrival-5c8e169780bf46a523a0",
+        "arrival-8127e2fe01980e50dfd9"
       ],
       "variants": [
         {
           "id": "arrival-5c8e169780bf46a523a0",
           "style": "cozy-33913-an716",
           "color": "Black"
+        },
+        {
+          "id": "arrival-8127e2fe01980e50dfd9",
+          "style": "cozy-33913-an709",
+          "color": "Pink"
         }
       ]
     },
     {
       "brand": "Nike",
-      "name": "/Cobalt Bliss/Photon Dust/Black",
+      "name": "Ja 4 Phantom Basketball Shoes",
       "ids": [
         "arrival-590d18e581b77bdd0f7c"
       ],
@@ -8842,7 +8928,7 @@
     },
     {
       "brand": "Nike",
-      "name": "/Energy/Metallic Cool Grey",
+      "name": "Pegasus Premium Road Running Shoes",
       "ids": [
         "arrival-0275ddfb67ac776b0867",
         "arrival-a7320d2b2ee0fe1d6f0b",
@@ -8880,57 +8966,73 @@
     },
     {
       "brand": "Nike",
-      "name": "/Gum Light Brown/Deep Royal Blue",
+      "name": "Dunk Low Retro Shoes",
       "ids": [
-        "arrival-d5c7cc5a19ee39caef1d"
+        "arrival-d5c7cc5a19ee39caef1d",
+        "arrival-b1ecf676aef94459d00c"
       ],
       "variants": [
         {
           "id": "arrival-d5c7cc5a19ee39caef1d",
           "style": "HF5441-121",
           "color": "White"
-        }
-      ]
-    },
-    {
-      "brand": "Nike",
-      "name": "/Light Khaki/Black Spruce/Emerald Green",
-      "ids": [
-        "arrival-ee3ee510bad98521d770"
-      ],
-      "variants": [
+        },
         {
-          "id": "arrival-ee3ee510bad98521d770",
-          "style": "IZ6158-232",
-          "color": "Beige"
-        }
-      ]
-    },
-    {
-      "brand": "Nike",
-      "name": "/Medium Soft Pink/Metallic Silver",
-      "ids": [
-        "arrival-372a5787771d6e846d7f"
-      ],
-      "variants": [
-        {
-          "id": "arrival-372a5787771d6e846d7f",
-          "style": "IX7053-010",
+          "id": "arrival-b1ecf676aef94459d00c",
+          "style": "DD1391-102",
           "color": "White"
         }
       ]
     },
     {
       "brand": "Nike",
-      "name": "/Metallic Silver/Black/Mystic Dates",
+      "name": "Jordan Trunner O S Shoes",
       "ids": [
+        "arrival-ee3ee510bad98521d770",
+        "arrival-5dc8de9b99bd2cf7be5c",
+        "arrival-b9e12a7a8c13cf0f4fd7"
+      ],
+      "variants": [
+        {
+          "id": "arrival-ee3ee510bad98521d770",
+          "style": "IZ6158-232",
+          "color": "Beige"
+        },
+        {
+          "id": "arrival-5dc8de9b99bd2cf7be5c",
+          "style": "IW0769-012",
+          "color": "Light Grey"
+        },
+        {
+          "id": "arrival-b9e12a7a8c13cf0f4fd7",
+          "style": "IB3722-013",
+          "color": "Light Grey"
+        }
+      ]
+    },
+    {
+      "brand": "Nike",
+      "name": "P 6000 Shoes",
+      "ids": [
+        "arrival-372a5787771d6e846d7f",
         "arrival-001714b1478f95cabc44",
+        "arrival-f94a63dace13f567b7fe",
         "arrival-4c615f9405c8c52400b1"
       ],
       "variants": [
         {
+          "id": "arrival-372a5787771d6e846d7f",
+          "style": "IX7053-010",
+          "color": "White"
+        },
+        {
           "id": "arrival-001714b1478f95cabc44",
           "style": "BV1021-112",
+          "color": "White"
+        },
+        {
+          "id": "arrival-f94a63dace13f567b7fe",
+          "style": "JA3786-010",
           "color": "White"
         },
         {
@@ -8941,22 +9043,8 @@
       ]
     },
     {
-      "brand": "Nike",
-      "name": "/Metallic Silver Hyper Pink",
-      "ids": [
-        "arrival-f94a63dace13f567b7fe"
-      ],
-      "variants": [
-        {
-          "id": "arrival-f94a63dace13f567b7fe",
-          "style": "JA3786-010",
-          "color": "White"
-        }
-      ]
-    },
-    {
       "brand": "Melissa",
-      "name": "/pink Cozy Platform slide sandal with two buckle straps.",
+      "name": "Cozy Platform",
       "ids": [
         "arrival-c27496b7c698c3c7a76e"
       ],
@@ -8969,22 +9057,8 @@
       ]
     },
     {
-      "brand": "Melissa",
-      "name": "Melissa Cozy slide with two and beige straps with a buckle detail.",
-      "ids": [
-        "arrival-8127e2fe01980e50dfd9"
-      ],
-      "variants": [
-        {
-          "id": "arrival-8127e2fe01980e50dfd9",
-          "style": "cozy-33913-an709",
-          "color": "Pink"
-        }
-      ]
-    },
-    {
       "brand": "Nike",
-      "name": "/Velvet Brown/Coconut Milk",
+      "name": "Air Force 1 07 Shoes",
       "ids": [
         "arrival-9862f43023830bbe59f5",
         "arrival-56c12765336ae34d9cd4",
@@ -9028,7 +9102,7 @@
     },
     {
       "brand": "Nike",
-      "name": "Black",
+      "name": "V5 Rnr Shoes With Reflective Accents",
       "ids": [
         "arrival-c0ad1e227a48ba5f92a5",
         "arrival-7a051df5852dc6b11f32"
@@ -9042,20 +9116,6 @@
         {
           "id": "arrival-7a051df5852dc6b11f32",
           "style": "HQ7901-116",
-          "color": "White"
-        }
-      ]
-    },
-    {
-      "brand": "Nike",
-      "name": "University Blue",
-      "ids": [
-        "arrival-b1ecf676aef94459d00c"
-      ],
-      "variants": [
-        {
-          "id": "arrival-b1ecf676aef94459d00c",
-          "style": "DD1391-102",
           "color": "White"
         }
       ]
@@ -16317,8 +16377,7 @@
         "arrival-b71798e176262e33136d",
         "arrival-562876f7b1fe041a09b3",
         "arrival-14d6be0e21387aeefd1d",
-        "arrival-e5f1a9219227555ef48f",
-        "arrival-78949bd39f8e75d821d9"
+        "arrival-837efcf816eeae31a5ad"
       ],
       "variants": [
         {
@@ -16337,34 +16396,9 @@
           "color": "BROWN"
         },
         {
-          "id": "arrival-e5f1a9219227555ef48f",
-          "style": "1",
-          "color": "BEIGE"
-        },
-        {
-          "id": "arrival-78949bd39f8e75d821d9",
-          "style": "1",
-          "color": "BROWN"
-        }
-      ]
-    },
-    {
-      "brand": "Rockfish Weatherwear",
-      "name": "BRYN VELCRO SNEAKERS V2 - GREY",
-      "ids": [
-        "arrival-837efcf816eeae31a5ad",
-        "arrival-9988e42448b19614cd6d"
-      ],
-      "variants": [
-        {
           "id": "arrival-837efcf816eeae31a5ad",
           "style": "4318",
-          "color": "Black"
-        },
-        {
-          "id": "arrival-9988e42448b19614cd6d",
-          "style": "1",
-          "color": "Black"
+          "color": "Charcoal / Grey"
         }
       ]
     },
@@ -31612,26 +31646,6 @@
     },
     {
       "brand": "Nike",
-      "name": "Jordan Trunner O/S",
-      "ids": [
-        "arrival-5dc8de9b99bd2cf7be5c",
-        "arrival-b9e12a7a8c13cf0f4fd7"
-      ],
-      "variants": [
-        {
-          "id": "arrival-5dc8de9b99bd2cf7be5c",
-          "style": "IW0769-012",
-          "color": "Light Grey"
-        },
-        {
-          "id": "arrival-b9e12a7a8c13cf0f4fd7",
-          "style": "IB3722-013",
-          "color": "Light Grey"
-        }
-      ]
-    },
-    {
-      "brand": "Nike",
       "name": "Jordan Winterized 6 Rings",
       "ids": [
         "arrival-b4afebbe8fd34d579bd1"
@@ -39559,20 +39573,6 @@
       ]
     },
     {
-      "brand": "Merrell",
-      "name": "Wrapt Sneaker",
-      "ids": [
-        "live-a6a650f3d0fc4e40"
-      ],
-      "variants": [
-        {
-          "id": "live-a6a650f3d0fc4e40",
-          "style": "60644M",
-          "color": "White"
-        }
-      ]
-    },
-    {
       "brand": "Loro Piana",
       "name": "Mera Trail Walk Pecora Nera®",
       "ids": [
@@ -40215,32 +40215,6 @@
           "id": "arrival-ae8740114e19dfd46747",
           "style": "8058304013754",
           "color": "acqua"
-        }
-      ]
-    },
-    {
-      "brand": "Melissa",
-      "name": "Motion",
-      "ids": [
-        "arrival-6c30bd18788990bbf60b",
-        "arrival-33e00d2f1c4af7ccb0ca",
-        "arrival-6522391bee623402da31"
-      ],
-      "variants": [
-        {
-          "id": "arrival-6c30bd18788990bbf60b",
-          "style": "36120-BT009-5",
-          "color": "Copper"
-        },
-        {
-          "id": "arrival-33e00d2f1c4af7ccb0ca",
-          "style": "motion-36120-bt008",
-          "color": "Grey"
-        },
-        {
-          "id": "arrival-6522391bee623402da31",
-          "style": "motion-36120-bt014",
-          "color": "Beige"
         }
       ]
     },
@@ -44772,35 +44746,21 @@
     },
     {
       "brand": "Rockfish Weatherwear",
-      "name": "PUFFIN RIBBON BANDING SNEAKERS - GREY",
+      "name": "PUFFIN RIBBON BANDING SNEAKERS",
       "ids": [
-        "arrival-e0f9d9cdc16df008accf"
+        "arrival-e0f9d9cdc16df008accf",
+        "arrival-181222a6378213f11bf5"
       ],
       "variants": [
         {
           "id": "arrival-e0f9d9cdc16df008accf",
           "style": "4324",
-          "color": "Charcoal"
-        }
-      ]
-    },
-    {
-      "brand": "Rockfish Weatherwear",
-      "name": "PUFFIN RIBBON BANDING SNEAKERS",
-      "ids": [
-        "arrival-181222a6378213f11bf5",
-        "arrival-35a2f52b019b5f05db20"
-      ],
-      "variants": [
+          "color": "Silver / Black"
+        },
         {
           "id": "arrival-181222a6378213f11bf5",
           "style": "4325",
-          "color": "METALLIC BLUE"
-        },
-        {
-          "id": "arrival-35a2f52b019b5f05db20",
-          "style": "1",
-          "color": "METALLIC BLUE"
+          "color": "metallic · Metallic Blue / White"
         }
       ]
     },
@@ -57962,26 +57922,14 @@
     },
     {
       "brand": "Melissa",
-      "name": "X Loop",
+      "name": "Loop",
       "ids": [
-        "arrival-0bdb63e7d3fb0a317a93",
-        "arrival-83926b655b48f07b2de7",
-        "arrival-b1f73719d7a481d78f4f"
+        "arrival-0bdb63e7d3fb0a317a93"
       ],
       "variants": [
         {
           "id": "arrival-0bdb63e7d3fb0a317a93",
           "style": "loop-39507-br234",
-          "color": "Orange/Green/Pink"
-        },
-        {
-          "id": "arrival-83926b655b48f07b2de7",
-          "style": "loop-39507-bv886",
-          "color": "Orange/Green/Pink"
-        },
-        {
-          "id": "arrival-b1f73719d7a481d78f4f",
-          "style": "loop-39507-br238",
           "color": "Orange/Green/Pink"
         }
       ]
@@ -58553,6 +58501,26 @@
           "id": "arrival-0bae2c72c7907868d9d5",
           "style": "bend-39510-bs481",
           "color": "Beige/Blue/Red"
+        }
+      ]
+    },
+    {
+      "brand": "Melissa",
+      "name": "X Loop",
+      "ids": [
+        "arrival-83926b655b48f07b2de7",
+        "arrival-b1f73719d7a481d78f4f"
+      ],
+      "variants": [
+        {
+          "id": "arrival-83926b655b48f07b2de7",
+          "style": "loop-39507-bv886",
+          "color": "Orange/Green/Pink"
+        },
+        {
+          "id": "arrival-b1f73719d7a481d78f4f",
+          "style": "loop-39507-br238",
+          "color": "Orange/Green/Pink"
         }
       ]
     },
@@ -60077,5 +60045,5 @@
       ]
     }
   ],
-  "checkedAt": "2026-11-03T02:03:50.396Z"
+  "checkedAt": "2026-11-03T02:30:04.266Z"
 }

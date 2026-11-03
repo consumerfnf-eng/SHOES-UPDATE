@@ -12,6 +12,15 @@ import {curateProduct,officialHybridReview} from '../scripts/curation.mjs';
 import {publishCurated,atomicJson} from '../scripts/publish-curated.mjs';
 import {eligibilityReason} from '../scripts/archive-expired.mjs';
 const now=new Date('2026-10-07T01:00:00Z'),today='2026-10-07';
+
+test('Cafe24 product paths use the product number rather than the final display-group number',()=>{
+ const source='https://en.rockfish-weatherwear.co.kr/category/new/626/';
+ for(const [number,color] of [['4319','BEIGE'],['4318','GREY']]){
+  const pdp=`https://en.rockfish-weatherwear.co.kr/product/bryn-velcro-sneakers-v2-${color.toLowerCase()}/${number}/category/626/display/1/`;
+  const rows=parseArrivalListing(`# New In\n[![BRYN VELCRO SNEAKERS V2 - ${color}](https://en.rockfish-weatherwear.co.kr/web/product/${number}.jpg) BRYN VELCRO SNEAKERS V2 - ${color}](${pdp})`,{brand:'Rockfish Weatherwear',url:source,checkedAt:now.toISOString()});
+  const p=listingProduct(rows[0],now.toISOString());assert(p);assert.equal(p.style,number);assert.equal(p.officialProductEvidence.style,number);
+ }
+});
 test('an incomplete product image gallery gets a rendered detail retry without trusting a different product',async()=>{
  const source='https://www.prada.com/us/en/women/new-in.html',pdp='https://www.prada.com/us/en/p/runner-sneaker/ABC123';let retries=0;
  const run=await collectNewArrivals({sources:{Prada:[{url:source}]},brands:['Prada'],now,log:()=>{},read:async target=>target.endsWith(source)?`# New In\n[Runner sneaker](${pdp})`:'# Runner sneaker\nABC123\n![Runner sneaker](<Base64-Image-Removed>)',readDetails:async target=>{assert.equal(target,pdp);retries++;return `# Runner sneaker\nProduct code: ABC123\n![Runner sneaker side](https://www.prada.com/ABC123_SLS.jpg)\nRunner sneaker with rubber outsole.`;}});

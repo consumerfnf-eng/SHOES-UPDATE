@@ -117,7 +117,7 @@ export async function finalizeCatalogIdentity() {
       }
     }
     const colour=colourReviews.products.find(r=>r.verified&&r.id===p.id&&r.brand===p.brand&&r.style===p.style&&r.url===p.url&&r.image===p.image&&r.presentationImage===(p.presentation?.image||p.image));
-    if(colour){p.colorSwatches=colour.colorSwatches;p.colourReview=colour;if(colour.colorName&&/^(?:black|white|brown|blue|grey|gray|yellow|green|red|purple|silver|gold|블랙|화이트|브라운|블루|그레이|레드|그린)$/i.test(p.colorway)){p.sourceColorway??=p.colorway;p.colorway=colour.colorName;p.colorEvidence={method:'reviewed-shoe-upper-photo',image:colour.presentationImage,hex:colour.colorSwatches[0],label:colour.colorName};}}
+    if(colour){p.colorSwatches=colour.colorSwatches;p.colourReview=colour;if(colour.colorName&&(colour.replaceColorName===true||/^(?:black|white|brown|blue|grey|gray|yellow|green|red|purple|silver|gold|블랙|화이트|브라운|블루|그레이|레드|그린)$/i.test(p.colorway))){p.sourceColorway??=p.colorway;p.colorway=colour.colorName;p.colorEvidence={method:'reviewed-shoe-upper-photo',image:colour.presentationImage,hex:colour.colorSwatches[0],label:colour.colorName};}}
     const cached=cache.images[p.presentation?.image||p.image];
     if(cached?.path)p.presentation={image:p.image,view:'product-photo',scale:1,...p.presentation,cachedPath:cached.path};
     p.keywordTags=productKeywordIds(p);p.searchConceptIds=productSearchConceptIds(p);

@@ -179,7 +179,7 @@ export function listingProduct(candidate,checkedAt){
   const code=/^[A-Z0-9][A-Z0-9_.-]{4,}$/.test(last)?last:last.match(/(?:-p-|[-_])([A-Z0-9_]{7,})$/)?.[1]||'';
   let sku=['Prada','Miu Miu','Dior','Louis Vuitton','Gucci','ASICS'].includes(candidate.brand)?code.replace(/^ANA_/,''):'';
   if(candidate.brand==='New Balance')sku=[...new URL(candidate.url).searchParams].find(([k])=>/_style$/.test(k))?.[1]||'';
-  const productNumber=new URL(candidate.url).searchParams.get('product_no');
+  const productNumber=new URL(candidate.url).searchParams.get('product_no')||new URL(candidate.url).pathname.match(/^\/product\/[^/]+\/(\d+)(?:\/|$)/)?.[1];
   const style=sku||productNumber||last,method='official-new-listing-sku-image';
   const p={id:`arrival-${digest(candidate.brand+'|'+canonicalUrl(candidate.url)).slice(0,20)}`,brand:candidate.brand,name:candidate.name,style,...(!sku?{styleType:'official-product-id'}:{}),url:candidate.url,image:chosen.url,
     description:candidate.cardDescription,colorway:colorLabel(chosen.alt,candidate.brand),colors:[],priceLabel:candidate.cardDescription?.match(/(?:[$€£₩¥]\s?[0-9,.]+|[0-9][0-9,.]*\s?(?:원|円|USD|EUR|GBP|KRW|JPY))/)?.[0]||'',
@@ -306,7 +306,7 @@ export function pageProduct(candidate,text,checkedAt,existing){
   const fromUrl=/^[A-Z0-9][A-Z0-9_.-]{4,}$/.test(last)?last:last.match(/(?:-p-|[-_])([A-Z0-9_.]{7,})$/)?.[1]||'';
   const variant=candidate.brand==='New Balance'?[...new URL(url).searchParams].find(([k])=>/_style$/.test(k))?.[1]:'';
   const verifiedVariant=variant&&body.toLowerCase().includes(variant.toLowerCase())?variant:'';
-  const productNumber=new URL(url).searchParams.get('product_no');
+  const productNumber=new URL(url).searchParams.get('product_no')||new URL(url).pathname.match(/^\/product\/[^/]+\/(\d+)(?:\/|$)/)?.[1];
   const style=verifiedVariant||fromUrl||code||productNumber||last;
   const styleType=verifiedVariant||code||fromUrl?undefined:'official-product-id';
   // LV's colour picker includes other variants' large photographs after the

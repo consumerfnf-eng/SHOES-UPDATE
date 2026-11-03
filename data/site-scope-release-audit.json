@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-03T02:09:00.801Z",
+  "checkedAt": "2026-11-03T02:34:48.710Z",
   "baseline": "cbaa5ca818f8e35da6cc19f462505a092a799d48",
   "counts": {
-    "official": 7175,
+    "official": 7171,
     "officialByGroup": {
       "LUX": 4897,
       "SPORTS": 1908,
-      "CASUAL": 370
+      "CASUAL": 366
     },
     "retail": 0,
     "newsletter": 609,
@@ -18,7 +18,7 @@
     "rawRetailAfter": 3191,
     "rawRetailLost": 0,
     "removedBeforePublication": {
-      "reviewed-same-physical-variant": 8,
+      "reviewed-same-physical-variant": 12,
       "site-brand-excluded": 55,
       "exact-official-full-manufacturer-code": 1
     },
@@ -34,7 +34,7 @@
     "cardPhotosAfterBytes": 53668654,
     "cardPhotoReductionPct": 58.8,
     "wireBeforeBytes": 18435085,
-    "wireAfterBytes": 9812878,
+    "wireAfterBytes": 9815546,
     "wireReductionPct": 46.8,
     "premiumLooks": 247,
     "premiumHash": "e81f02fde7c2079cdfb2c995eaa98309021e40f316dd096f2642cccf765c1442",
@@ -480,7 +480,7 @@
       "group": "SPORTS",
       "brand": "Nike",
       "officialVariants": 176,
-      "officialModels": 136,
+      "officialModels": 130,
       "newsletterArticles": 250
     },
     {
@@ -648,7 +648,7 @@
       "group": "SPORTS",
       "brand": "Merrell",
       "officialVariants": 7,
-      "officialModels": 7,
+      "officialModels": 6,
       "newsletterArticles": 1
     },
     {
@@ -745,8 +745,8 @@
     {
       "group": "CASUAL",
       "brand": "Rockfish Weatherwear",
-      "officialVariants": 18,
-      "officialModels": 5,
+      "officialVariants": 14,
+      "officialModels": 3,
       "newsletterArticles": 0
     },
     {
@@ -844,7 +844,7 @@
       "group": "CASUAL",
       "brand": "Melissa",
       "officialVariants": 151,
-      "officialModels": 87,
+      "officialModels": 86,
       "newsletterArticles": 0
     },
     {
@@ -1190,6 +1190,27 @@
       "reason": "site-brand-excluded"
     },
     {
+      "id": "arrival-e5f1a9219227555ef48f",
+      "brand": "Rockfish Weatherwear",
+      "style": "1",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-b71798e176262e33136d"
+    },
+    {
+      "id": "arrival-78949bd39f8e75d821d9",
+      "brand": "Rockfish Weatherwear",
+      "style": "1",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-14d6be0e21387aeefd1d"
+    },
+    {
+      "id": "arrival-9988e42448b19614cd6d",
+      "brand": "Rockfish Weatherwear",
+      "style": "1",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-837efcf816eeae31a5ad"
+    },
+    {
       "id": "arrival-eed929bae737d8d6106d",
       "brand": "Skechers",
       "style": "Color",
@@ -1206,6 +1227,13 @@
       "brand": "Skechers",
       "style": "Color",
       "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-35a2f52b019b5f05db20",
+      "brand": "Rockfish Weatherwear",
+      "style": "1",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-181222a6378213f11bf5"
     },
     {
       "id": "arrival-13d92c1b94052d3cb5f6",

@@ -27,6 +27,19 @@ import fs from 'node:fs';
 import {unifyVariantGroups,groupProductVariants,uniqueColorVariants,variantGroupName,overlayReleaseState} from '../public/assets/catalog-view.mjs';
 import {preferOfficialVariants,manufacturerCode} from '../public/assets/product-identity.mjs';
 
+test('Rockfish reviewed colour finishes share three cards and retain distinct physical colours',()=>{
+ const c=JSON.parse(fs.readFileSync(new URL('../public/data/catalog.json',import.meta.url)));
+ const rows=c.products.filter(p=>p.brand==='Rockfish Weatherwear');
+ const groups=groupProductVariants(rows);
+ assert.equal(rows.length,14);assert.equal(groups.length,3);
+ const bryn=groups.find(g=>variantGroupName(g[0])==='BRYN VELCRO SNEAKERS V2');
+ const puffin=groups.find(g=>variantGroupName(g[0])==='PUFFIN RIBBON BANDING SNEAKERS');
+ assert.equal(uniqueColorVariants(bryn).length,4);assert.equal(uniqueColorVariants(puffin).length,2);
+ assert.equal(bryn.find(p=>p.name.endsWith('GREY')).colorway,'Charcoal / Grey');
+ assert.equal(puffin.find(p=>p.name.endsWith('GREY')).colorway,'Silver / Black');
+ assert(puffin.every(p=>p.colorSwatches.length===2));
+});
+
 test('the exact reported Lanvin listings share Curb while high top and Glen remain separate',()=>{
  const m=JSON.parse(fs.readFileSync(new URL('../public/data/monthly-catalog.json',import.meta.url)));
  m.retail.push(...JSON.parse(fs.readFileSync(new URL('./fixtures/lanvin-curb-variants.json',import.meta.url))));

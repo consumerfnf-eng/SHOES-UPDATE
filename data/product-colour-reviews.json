@@ -3379,42 +3379,6 @@
       "colorName": "White / Red"
     },
     {
-      "id": "arrival-837efcf816eeae31a5ad",
-      "brand": "Rockfish Weatherwear",
-      "style": "4318",
-      "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4318&cate_no=626&display_group=1",
-      "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/687e370ad815dcb3fb4eb04e9c4f280d.jpg",
-      "verified": true,
-      "method": "manual-upper-photo-review",
-      "checkedAt": "2026-11-03",
-      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/687e370ad815dcb3fb4eb04e9c4f280d.jpg",
-      "cachedPath": "/images/0036d3893de0826a8aa9c94ddea8092e971d2080a86e30b6deee459cb808d7a0.jpg",
-      "colorSwatches": [
-        "#35383d"
-      ],
-      "reason": "Compared official shoe photograph against existing chip; selected main upper tones, excluding background and outsole.",
-      "contactSheetIndex": 249,
-      "colorName": "Black"
-    },
-    {
-      "id": "arrival-9988e42448b19614cd6d",
-      "brand": "Rockfish Weatherwear",
-      "style": "1",
-      "url": "https://en.rockfish-weatherwear.co.kr/product/bryn-velcro-sneakers-v2-grey/4318/category/626/display/1/",
-      "image": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/273d547195d246ceb19943c1ce8d983d.jpg",
-      "verified": true,
-      "method": "manual-upper-photo-review",
-      "checkedAt": "2026-11-03",
-      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/273d547195d246ceb19943c1ce8d983d.jpg",
-      "cachedPath": "/images/0036d3893de0826a8aa9c94ddea8092e971d2080a86e30b6deee459cb808d7a0.jpg",
-      "colorSwatches": [
-        "#35383d"
-      ],
-      "reason": "Compared official shoe photograph against existing chip; selected main upper tones, excluding background and outsole.",
-      "contactSheetIndex": 250,
-      "colorName": "Black"
-    },
-    {
       "id": "arrival-403a0e990355c4bee2ca",
       "brand": "FILA",
       "style": "FS261OD03X087370",
@@ -3727,24 +3691,6 @@
       "reason": "Compared official shoe photograph against existing chip; selected main upper tones, excluding background and outsole.",
       "contactSheetIndex": 270,
       "colorName": "Yellow"
-    },
-    {
-      "id": "arrival-e0f9d9cdc16df008accf",
-      "brand": "Rockfish Weatherwear",
-      "style": "4324",
-      "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4324&cate_no=626&display_group=1",
-      "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/c2b2c9c6663e8225f3a8e92d9da1d49f.jpg",
-      "verified": true,
-      "method": "manual-upper-photo-review",
-      "checkedAt": "2026-11-03",
-      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/c2b2c9c6663e8225f3a8e92d9da1d49f.jpg",
-      "cachedPath": "/images/d02add57845ee611243350e958ba7005e85f7c0d99b58402782009b73adcf61d.jpg",
-      "colorSwatches": [
-        "#393c40"
-      ],
-      "reason": "Compared official shoe photograph against existing chip; selected main upper tones, excluding background and outsole.",
-      "contactSheetIndex": 271,
-      "colorName": "Charcoal"
     },
     {
       "id": "arrival-d38d81819443f05a754d",
@@ -4204,6 +4150,101 @@
       ],
       "reason": "Exact shared official photograph shows brown/black animal-print upper with cream accents.",
       "colorName": "Burgundy / Black / Beige"
+    },
+    {
+      "id": "arrival-837efcf816eeae31a5ad",
+      "brand": "Rockfish Weatherwear",
+      "style": "4318",
+      "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4318&cate_no=626&display_group=1",
+      "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/687e370ad815dcb3fb4eb04e9c4f280d.jpg",
+      "verified": true,
+      "checkedAt": "2026-11-03",
+      "method": "manual-upper-photo-review",
+      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/687e370ad815dcb3fb4eb04e9c4f280d.jpg",
+      "cachedPath": "/images/0036d3893de0826a8aa9c94ddea8092e971d2080a86e30b6deee459cb808d7a0.jpg",
+      "colorSwatches": [
+        "#35383d",
+        "#88909a"
+      ],
+      "colorName": "Charcoal / Grey",
+      "replaceColorName": true,
+      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour."
+    },
+    {
+      "id": "arrival-e0f9d9cdc16df008accf",
+      "brand": "Rockfish Weatherwear",
+      "style": "4324",
+      "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4324&cate_no=626&display_group=1",
+      "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/c2b2c9c6663e8225f3a8e92d9da1d49f.jpg",
+      "verified": true,
+      "checkedAt": "2026-11-03",
+      "method": "manual-upper-photo-review",
+      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/c2b2c9c6663e8225f3a8e92d9da1d49f.jpg",
+      "cachedPath": "/images/d02add57845ee611243350e958ba7005e85f7c0d99b58402782009b73adcf61d.jpg",
+      "colorSwatches": [
+        "#a6abb1",
+        "#303135"
+      ],
+      "colorName": "Silver / Black",
+      "replaceColorName": true,
+      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour."
+    },
+    {
+      "id": "arrival-181222a6378213f11bf5",
+      "brand": "Rockfish Weatherwear",
+      "style": "4325",
+      "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4325&cate_no=626&display_group=1",
+      "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/9c5d527b57c1fbd63babf934612ad884.jpg",
+      "verified": true,
+      "checkedAt": "2026-11-03",
+      "method": "manual-upper-photo-review",
+      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/9c5d527b57c1fbd63babf934612ad884.jpg",
+      "cachedPath": "/images/309e7aa23390a966801994519845857de63da7709542a0145f6d48118d0e784f.jpg",
+      "colorSwatches": [
+        "#809aaf",
+        "#e4e4e1"
+      ],
+      "colorName": "Metallic Blue / White",
+      "replaceColorName": true,
+      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour."
+    },
+    {
+      "id": "arrival-9988e42448b19614cd6d",
+      "brand": "Rockfish Weatherwear",
+      "style": "1",
+      "url": "https://en.rockfish-weatherwear.co.kr/product/bryn-velcro-sneakers-v2-grey/4318/category/626/display/1/",
+      "image": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/273d547195d246ceb19943c1ce8d983d.jpg",
+      "verified": true,
+      "checkedAt": "2026-11-03",
+      "method": "manual-upper-photo-review",
+      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/273d547195d246ceb19943c1ce8d983d.jpg",
+      "cachedPath": "/images/0036d3893de0826a8aa9c94ddea8092e971d2080a86e30b6deee459cb808d7a0.jpg",
+      "colorSwatches": [
+        "#35383d",
+        "#88909a"
+      ],
+      "colorName": "Charcoal / Grey",
+      "replaceColorName": true,
+      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour."
+    },
+    {
+      "id": "arrival-35a2f52b019b5f05db20",
+      "brand": "Rockfish Weatherwear",
+      "style": "1",
+      "url": "https://en.rockfish-weatherwear.co.kr/product/puffin-ribbon-banding-sneakers-metallic-blue/4325/category/626/display/1/",
+      "image": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/9a53ac95bc2ea32c3a2189fa369446e7.jpg",
+      "verified": true,
+      "checkedAt": "2026-11-03",
+      "method": "manual-upper-photo-review",
+      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/9a53ac95bc2ea32c3a2189fa369446e7.jpg",
+      "cachedPath": "/images/309e7aa23390a966801994519845857de63da7709542a0145f6d48118d0e784f.jpg",
+      "colorSwatches": [
+        "#809aaf",
+        "#e4e4e1"
+      ],
+      "colorName": "Metallic Blue / White",
+      "replaceColorName": true,
+      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour."
     }
   ]
 }

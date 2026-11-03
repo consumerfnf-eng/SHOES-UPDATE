@@ -365,7 +365,9 @@ export function classifyFootwear(p) {
   // mixed forms. Plain summer sandals/clogs keep their own separate gates.
   const hybridTitle=`${title} ${p.hybridReview?.approved?p.hybridReview.type||'':''}`;
   const reviewedSneakerBase=p.hybridReview?.approved===true&&p.hybridReview.sneakerSole===true&&p.hybridReview.url===p.url&&isOfficialProductUrl(p.brand,p.url);
-  if (namedHybrid.test(hybridTitle) || sneakerHybridCandidate(p) && (sneakerStructure.test(p.name||'') || reviewedSneakerBase || /\bhybrids?\b|하이브리드|혼합|ハイブリッド|混合/i.test(hybridTitle) || p.category==='hybrid')) {
+  // Hybrid RN is Nike's named training shoe, not a claim of a mixed shoe form.
+  const namedTrainingShoe=p.brand==='Nike'&&isOfficialProductUrl(p.brand,p.url)&&/\/t\/hybrid-rn-(?:womens|mens)-training-shoes-/i.test(p.url)&&/^Hybrid RN\b/i.test(p.name||'');
+  if (!namedTrainingShoe&&(namedHybrid.test(hybridTitle) || sneakerHybridCandidate(p) && (sneakerStructure.test(p.name||'') || reviewedSneakerBase || /\bhybrids?\b|하이브리드|혼합|ハイブリッド|混合/i.test(hybridTitle) || p.category==='hybrid'))) {
     if (!p.hybridReview?.approved || !httpUrl(p.hybridReview.url)) return { reason: 'hybrid-review-required' };
     if (!sneakerStructure.test(context) && !reviewedSneakerBase)return {reason:'sneaker-structure-unverified'};
     return { category: 'hybrid' };
