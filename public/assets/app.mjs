@@ -581,7 +581,7 @@ function renderCatwalk(){
   $('catwalk-collections').querySelectorAll('button').forEach(b=>b.onclick=()=>{state.catwalkCollection=b.dataset.collection;state.catwalkShow='all';state.catwalkCity='';state.catwalkFind='';$('catwalk-find').value='';renderCatwalk();});
   const shown=Math.min(catwalkShown||CATWALK_PAGE,looks.length);
   const cities=[...new Set(looks.map(l=>l.city).filter(Boolean))];
-  $('catwalk-scope').textContent=`${activeSeason()||catwalk.season||''} · ${new Set(looks.map(l=>l.brand)).size}개 쇼 · ${looks.length.toLocaleString()}장`
+  $('catwalk-scope').textContent=`${activeSeason()||catwalk.season||''} · ${new Set(looks.map(l=>l.brand)).size}${state.catwalkCollection==='runway'?'개 쇼':'개 브랜드·출처'} · ${looks.length.toLocaleString()}장`
     +(cities.length?` · ${cities.sort().join(' · ')}`:'')
     +(state.catwalkCity||findText()?' · 필터 적용 중':'');
   $('catwalk-note').textContent='신발만 클로즈업된 컷입니다. 카드를 누르면 크게 보고 고화질로 저장할 수 있습니다. '
