@@ -43,5 +43,5 @@ export function hasObservedArrival(product, today, watch) {
 /** What the card says. Never 출시일 - the date is ours, not the brand's. */
 export function observedArrivalLabel(product) {
   const seen = observedArrivalDay(product);
-  return seen ? `${seen} 최초 확인 (출시일 미공개)` : '';
+  return seen ? `${seen} 최초 확인` : '';
 }

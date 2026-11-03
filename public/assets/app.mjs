@@ -54,8 +54,8 @@ function colorChipsMarkup(group, activeId){
 function outboundUrl(p){ return isOverlay(p)?safeUrl(p.url):reviewedProductPageUrl(p,today); }
 function overlayDateLabel(p){
   if(overlayKind(p)==='retail'){
-    if(p.retailRestoration){const day=String(p.listedAt||p.firstDetectedAsNewAt||'').slice(0,10);return `${day?dateText(day)+' 목록 확인 · ':''}기존 리테일 · 출시일 미확인`;}
-    return p.releaseEvidence?.date?`${dateText(p.releaseEvidence.date)} 최초 발매`:'발매일 미확인';
+    if(p.retailRestoration){const day=String(p.listedAt||p.firstDetectedAsNewAt||'').slice(0,10);return `${day?dateText(day)+' 목록 확인 · ':''}기존 리테일`;}
+    return p.releaseEvidence?.date?`${dateText(p.releaseEvidence.date)} 최초 발매`:'';
   }
   const day=overlayWindowDay(p);
   if(!day)return '등록일 미확인';
@@ -794,14 +794,13 @@ function renderAnalysis(){
   document.querySelector('#panel-category .panel-body').innerHTML=
     category.rows.map(r=>bar(r.name,r.count,category.placed)).join('')||'<p class="muted">분류된 상품이 없습니다.</p>';
   document.querySelector('#panel-category .panel-note').textContent=
-    `상점 분류 · 같은 모델의 다른 기록 · 상품명에서 읽은 ${category.placed.toLocaleString()}건 기준 · `
-    +`이름만으로는 종류를 알 수 없는 ${category.unplaced.toLocaleString()}건은 제외했습니다`;
+    `상점 분류 · 같은 모델의 다른 기록 · 상품명에서 읽은 ${category.placed.toLocaleString()}건 기준`;
 
   const price=priceDistribution(rows,{includeGroups:false});
   document.querySelector('#panel-price .panel-body').innerHTML=
     price.bands.map(b=>bar(b.label,b.count,price.priced)).join('')||'<p class="muted">가격 정보가 없습니다.</p>';
   document.querySelector('#panel-price .panel-note').textContent=
-    `가격 확인 ${price.priced.toLocaleString()}건 · 미기재·비교 제외 ${price.missing.toLocaleString()}건 · 기사 금액·미지원 통화 제외`;
+    `가격 확인 ${price.priced.toLocaleString()}건 · 기사 금액·미지원 통화 제외`;
 
   const colour=colourDistribution(rows);
   document.querySelector('#panel-colour .panel-body').innerHTML=
@@ -1142,7 +1141,7 @@ function openDetail(id) {
   }
   const url=reviewedProductPageUrl(p,today), evidence=safeUrl(p.dateEvidence?.url);
   const signals=(p.sourceSignals||[]).filter(s=>safeUrl(s.url));
-  const data=[...(p.arrivalEvidence?[[p.arrivalEvidence.kind==='catalogue-listing'?'목록 근거':'신상품 근거',`<a href="${esc(safeUrl(p.arrivalEvidence.url))}" target="_blank" rel="noopener noreferrer">${p.arrivalEvidence.kind==='catalogue-listing'?'공식 상품 목록 ↗':'공식 New·New Arrivals ↗'}</a> · ${esc(dateText(p.arrivalEvidence.verifiedAt,true))} 확인`]]:[]),...(p.firstPublishedAt?[['사이트 최초 게시',esc(dateText(p.firstPublishedAt,true))]]:[]),['출시일',`${esc(p.releaseDate?dateText(p.releaseDate):'미공개')}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">출시일 근거 ↗</a>`:''}`],['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'미확인')],[p.manufacturerStyle?'제품 코드':p.styleType==='official-product-id'?'상품 ID':'스타일 코드',esc(p.manufacturerStyle||p.style||'미확인')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'미확인')],['소재',esc(p.material||'미확인')],['가격',esc(p.priceLabel||'공식 상품에서 확인')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
+  const data=[...(p.arrivalEvidence?[[p.arrivalEvidence.kind==='catalogue-listing'?'목록 근거':'신상품 근거',`<a href="${esc(safeUrl(p.arrivalEvidence.url))}" target="_blank" rel="noopener noreferrer">${p.arrivalEvidence.kind==='catalogue-listing'?'공식 상품 목록 ↗':'공식 New·New Arrivals ↗'}</a> · ${esc(dateText(p.arrivalEvidence.verifiedAt,true))} 확인`]]:[]),...(p.firstPublishedAt?[['사이트 최초 게시',esc(dateText(p.firstPublishedAt,true))]]:[]),...(p.releaseDate?[["출시일",`${esc(dateText(p.releaseDate))}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">출시일 근거 ↗</a>`:''}`]]:[]),['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'미확인')],[p.manufacturerStyle?'제품 코드':p.styleType==='official-product-id'?'상품 ID':'스타일 코드',esc(p.manufacturerStyle||p.style||'미확인')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'미확인')],['소재',esc(p.material||'미확인')],['가격',esc(p.priceLabel||'공식 상품에서 확인')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
   $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2>${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button><button id="detail-save" class="secondary-button" aria-pressed="${isSaved(p)}">${isSaved(p)?'★ 저장됨':'☆ 저장'}</button><button id="detail-photo" class="secondary-button">사진 JPG 저장 ↓</button></div><div class="memo-box"><label for="detail-memo">메모</label><textarea id="detail-memo" rows="2" placeholder="${isSaved(p)?'이 상품에 대한 메모를 남겨 두세요':'저장하면 메모를 남길 수 있습니다'}" ${isSaved(p)?'':'disabled'}>${esc(saved[id]?.memo||'')}</textarea></div><dl class="detail-data">${data.map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl><h3>기획 참고 요소</h3>${p.fitReasons?.length?`<ul class="reasons">${p.fitReasons.map(reason=>`<li>${esc(typeof reason==='string'?reason:reason.text||reason.reason||'')}</li>`).join('')}</ul>`:'<p class="muted">확인된 선정 이유가 아직 없습니다.</p>'}<h3>출처와 검증 근거</h3>${signals.length?signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):'<p class="muted">확인 가능한 공식 상품·출시·이미지 근거가 아직 없습니다.</p>'}`;
   bindImageErrors($('detail-content'));$('detail-select').addEventListener('click',()=>toggleSelection(id,!selected.has(id)));$('detail-photo')?.addEventListener('click',()=>downloadPhotos([p]));
   $('detail-content').querySelectorAll('[data-variant]').forEach(button=>button.addEventListener('click',()=>{openDetail(button.dataset.variant);render();}));

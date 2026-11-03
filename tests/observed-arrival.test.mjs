@@ -28,10 +28,10 @@ test('the sighting still has to be inside the three-month window', () => {
   assert(!hasObservedArrival(shoe('2026-12-01T08:00:00+09:00'), TODAY, watch), 'not in the future either');
 });
 
-test('the label says what the date is, and what it is not', () => {
+test('the label identifies an observation rather than a launch date', () => {
   const label = observedArrivalLabel(shoe('2026-10-24T08:00:00+09:00'));
   assert(label.includes('최초 확인'));
-  assert(label.includes('출시일 미공개'), 'it must never read as a launch date');
+  assert(!label.includes('출시일'), 'the observation must not be labelled as a release');
   assert(!/^\d{4}-\d{2}-\d{2}$/.test(label), 'a bare date would be read as a release date');
 });
 
