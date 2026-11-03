@@ -858,7 +858,12 @@ function render() {
   renderBrandGroupTabs();
   renderSocialGroups();
   renderAnalysis();
-  if(['analysis','catwalk','forecast'].includes(state.source))return;
+  if(['analysis','catwalk','forecast'].includes(state.source)){
+    // Controls from a previous retailer/SNS tab must not follow a reader into
+    // research views, whose render ends before the product-grid controls run.
+    for(const id of ['retailer-tabs','sns-trends','source-note'])$(id).hidden=true;
+    return;
+  }
   filtered = filterProducts(products,{...state,isFresh,isSaved},today);
   if(state.source==='sns'&&state.sort==='newest')
     filtered=[...filtered].sort((a,b)=>(b.snsTrendMatches||0)-(a.snsTrendMatches||0));

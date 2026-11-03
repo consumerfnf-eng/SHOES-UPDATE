@@ -20,7 +20,10 @@ try{
  await context.route('**/fake.svg',r=>r.fulfill({contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1400"><rect width="2200" height="1400" fill="white"/></svg>'}));
  await context.route('**/data/rank-boards.json',r=>json(r,{schemaVersion:1,boards:['Musinsa','29CM'].map(id=>({id,label:id,basis:'원문 기준',sourceUrl:'https://example.org',checkedAt:'2026-11-03',items:Array.from({length:15},(_,i)=>({rank:i+1,key:String(i),brand:'Market reference',name:'Shoe '+(i+1),url:'https://example.org',image:'/fake.svg'}))}))}));
  const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(origin);
+ await page.locator('[data-source="retail"]').click();await page.locator('#retailer-tabs').waitFor({state:'visible'});
  await page.locator('[data-source="forecast"]').click();await page.locator('.forecast-card').waitFor();
+ assert.equal(await page.locator('#retailer-tabs').isVisible(),false,'Retailer filters do not persist on Forecast');
+ assert.equal(await page.locator('#source-note').isVisible(),false);
  assert.equal(await page.locator('.forecast-card').count(),1,'Footwear-only title is excluded');
  await page.locator('[data-season="27AW"]').click();assert.equal(await page.locator('.forecast-keyword').count(),2);
  assert.deepEqual(await page.locator('.forecast-keyword').allTextContents(),['#ballet_sneaker','#dad_sneaker']);
