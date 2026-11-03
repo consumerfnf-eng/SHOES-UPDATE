@@ -48,6 +48,11 @@ function passwordIsSet(project) {
 const snapshot = await exists('public/data/catwalk.json');
 const renditions = await count('public/catwalk');
 const appHtml=await fs.readFile(path.join(root,'public/index.html'),'utf8');
+if(appHtml.includes('id="user-guide-open"')){
+ const guideHtml=await fs.readFile(path.join(root,'public/guides/shoes-user-guide.html'),'utf8').catch(()=>{throw Error('User guide missing; run npm run guide before deployment');});
+ const guidePdf=await fs.readFile(path.join(root,'public/guides/shoes-user-guide.pdf')).catch(()=>{throw Error('User guide PDF missing; run npm run guide before deployment');});
+ if((guideHtml.match(/class="page"/g)||[]).length!==3||!guideHtml.includes('id="guide-pdf-download"')||guidePdf.subarray(0,5).toString()!=='%PDF-'||guidePdf.length<10000)throw Error('User guide HTML/PDF incomplete; run npm run guide before deployment');
+}
 if(appHtml.includes('id="weekly-insight-cards"')){
  await buildWeeklyInsights();
  const weekly=JSON.parse(await fs.readFile(path.join(root,'public/data/weekly-insights.json'),'utf8'));

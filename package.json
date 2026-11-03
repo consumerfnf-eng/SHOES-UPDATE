@@ -31,7 +31,8 @@
     "catwalk:login": "node scripts/wgsn-login.mjs",
     "catwalk:update": "node scripts/update-catwalk.mjs",
     "curation": "node scripts/build-curation-summary.mjs",
-    "verify": "node scripts/weekly-update.mjs --verify-only"
+    "verify": "node scripts/weekly-update.mjs --verify-only",
+    "guide": "python -X utf8 scripts/build-user-guide.py && node scripts/render-user-guide.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"
