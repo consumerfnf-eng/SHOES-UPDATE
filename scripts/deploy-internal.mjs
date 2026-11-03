@@ -47,6 +47,10 @@ function passwordIsSet(project) {
 const snapshot = await exists('public/data/catwalk.json');
 const renditions = await count('public/catwalk');
 const appHtml=await fs.readFile(path.join(root,'public/index.html'),'utf8');
+if(appHtml.includes('data-source="brief"')){
+ const brief=JSON.parse(await fs.readFile(path.join(root,'public/data/research-brief.json'),'utf8'));
+ if(brief.schemaVersion!==1||!Array.isArray(brief.ideas))throw Error('Research brief missing or invalid; run npm run build before deployment');
+}
 if(appHtml.includes('data-source="forecast"')){
  if(!await exists('public/data/forecast.json')||!await count('public/forecast'))throw Error('Forecast assets missing; refusing to erase the existing internal research library');
  const research=JSON.parse(await fs.readFile(path.join(root,'public/data/forecast.json'),'utf8'));

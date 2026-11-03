@@ -1,4 +1,5 @@
 import {buildCatalogChunks} from './build-catalog-chunks.mjs';
+import {buildResearchBrief} from './build-research-brief.mjs';
 import {isSiteBrandAllowed,canonicalSiteBrand} from '../public/assets/site-brand-policy.mjs';
 import fs from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
@@ -76,6 +77,7 @@ for(const p of catalog.products){
 }
 const commit=process.env.CF_PAGES_COMMIT_SHA||execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
 execFileSync('python',['scripts/build-card-thumbnails.py'],{cwd:root,stdio:'inherit'});
+await buildResearchBrief();
 catalog=JSON.parse(await fs.readFile(new URL('public/data/catalog.json',root),'utf8'));
 publicPublicationStatus(catalog);
 await fs.writeFile(new URL('public/data/catalog.json',root),JSON.stringify(catalog)+'\n');

@@ -9,6 +9,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image, ImageOps
 from curl_cffi import requests
+from research_policy import allowed_feed_record
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = Path(sys.argv[1])
@@ -103,8 +104,9 @@ if '--feed' in sys.argv:
     expected = FEED_SOURCE['expectedCount']
     assert expected > 0 and len(inventory) == expected, f'Expected {expected} feed images, found {len(inventory)}'
     assert len({r['url'] for r in inventory}) == expected
+    accepted = [record for record in inventory if allowed_feed_record(record)]
     with ThreadPoolExecutor(max_workers=2) as pool:
-        looks = list(pool.map(feed_asset, inventory))
+        looks = list(pool.map(feed_asset, accepted))
     for look in looks:
         with Image.open(ROOT/'public'/look['image'].lstrip('/')) as opened:
             card = opened.copy()
@@ -119,7 +121,7 @@ if '--feed' in sys.argv:
     fragments = ROOT/'data/catwalk'
     fragments.mkdir(parents=True, exist_ok=True)
     (fragments/('fashion-feed-'+SEASON_KEY+'.json')).write_text(json.dumps(fragment, ensure_ascii=False), encoding='utf-8')
-    print(f'Feed: {len(looks)} images and card thumbnails built', flush=True)
+    print(f'Feed: {len(looks)} published; {len(inventory)-len(accepted)} excluded by hashtag policy', flush=True)
 else:
     records = json.loads((WORK/'reports.json').read_text(encoding='utf-8'))
     # Download concurrently, render sequentially: MuPDF documents are not shared

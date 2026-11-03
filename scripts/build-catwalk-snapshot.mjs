@@ -17,6 +17,9 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {retainSeasons, SEASONS_KEPT} from '../public/assets/catwalk-seasons.mjs';
+import {isAllowedFeedLook} from '../public/assets/research-policy.mjs';
+import {readFileSync} from 'node:fs';
+const publicationPolicy=JSON.parse(readFileSync(new URL('../config/research-publication.json',import.meta.url),'utf8'));
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 export const FRAGMENTS = path.join(ROOT, 'data', 'catwalk');
@@ -57,12 +60,13 @@ export function composeSnapshot(fragments, {kept = SEASONS_KEPT, config = {}, bu
     bySeason.get(season).push(fragment);
   }
   const {keep,drop}=retainSeasons([...bySeason.keys()],kept);
-  const looks=keep.flatMap(season=>[...new Map(bySeason.get(season).flatMap(f=>f.looks.map(l=>({...l,season,...(f.collection==='fashion-feed'&&f.sourceUrl?{sourceFeedUrl:f.sourceUrl}:{})}))).map(l=>[l.id,l])).values()]);
+  const looks=keep.flatMap(season=>[...new Map(bySeason.get(season).flatMap(f=>f.looks.map(l=>({...l,season,...(f.collection==='fashion-feed'?{collection:'fashion-feed'}:{}),...(f.collection==='fashion-feed'&&f.sourceUrl?{sourceFeedUrl:f.sourceUrl}:{})})).filter(l=>isAllowedFeedLook(l,publicationPolicy.excludedFeedHashtags))).map(l=>[l.id,l])).values()]);
   const seasons=keep.map(season=>{const fs=bySeason.get(season),ls=looks.filter(l=>l.season===season);return {season,seasonId:String(fs[0].seasonId??''),collectedAt:fs.map(f=>f.collectedAt||'').sort().at(-1),looks:ls.length,shows:new Set(ls.map(l=>l.brand)).size,cities:[...new Set(ls.map(l=>l.city).filter(Boolean))].sort()};});
   const library = config.librarySearch ?? {};
   return {
     snapshot: {
       schemaVersion: 2, provider: 'WGSN',
+      publicationPolicy,
       currentSeason: keep[0] ?? '', seasons,
       builtAt: builtAt ?? new Date().toISOString(),
       licence: config.licence ?? {}, cardWidth: 480,

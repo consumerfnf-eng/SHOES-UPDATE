@@ -252,6 +252,11 @@ const memo = (cache, p, compute) => {
 };
 export function variantGroupName(p) { return memo(NAME_CACHE, p, computeVariantGroupName); }
 export function variantGroupKey(p) { return memo(KEY_CACHE, p, computeVariantGroupKey); }
+// Adopt only the identity results computed by our dedicated catalogue worker.
+// Raw source fields never seed these caches or bypass identity verification.
+export function adoptPreparedVariantCaches(groups,names){
+  for(const [key,items] of groups)for(const p of items){KEY_CACHE.set(p,key);if(names?.has(p.id))NAME_CACHE.set(p,names.get(p.id));}
+}
 // What a shoe is made of is not which shoe it is.
 //
 // Lanvin's Curb reaches SSENSE as Curb Snake, Curb Felt, Curb Velvet, Curb
