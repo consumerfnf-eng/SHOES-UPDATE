@@ -1,0 +1,33 @@
+import {chromium} from 'playwright';
+import {createServer} from 'node:http';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+const root=path.resolve('public');
+const server=createServer(async(req,res)=>{try{const u=new URL(req.url,'http://local'),file=path.resolve(root,'.'+(u.pathname==='/'?'/index.html':u.pathname));if(!file.startsWith(root+path.sep))throw Error('path');const mime={'.mjs':'text/javascript','.css':'text/css','.html':'text/html'};res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/json'}).end(await fs.readFile(file));}catch{res.writeHead(404).end();}});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin=`http://127.0.0.1:${server.address().port}`;
+let browser;
+try{
+ browser=await chromium.launch({headless:true});const context=await browser.newContext({viewport:{width:1280,height:900}});
+ await context.route('**/*',route=>new URL(route.request().url()).origin===origin?route.continue():route.abort());
+ const json=(route,value)=>route.fulfill({contentType:'application/json',body:JSON.stringify(value)});
+ await context.route('**/data/catalog-index.json',r=>r.fulfill({status:404,body:''}));
+ await context.route('**/data/catalog-ui.json',r=>json(r,{schemaVersion:1,brands:[],keywords:[],products:[]}));
+ await context.route('**/data/monthly-catalog.json',r=>json(r,{schemaVersion:2,retail:[],newsletter:[]}));
+ await context.route('**/data/trend-keywords.json',r=>json(r,{schemaVersion:1,keywords:[]}));
+ const reports=[['a','Sneaker Materials Forecast S/S 27'],['b','Key Silhouettes: Sneakers A/W 27/28'],['c','Key Silhouettes: Sneakers S/S 28'],['x','Footwear Forecast S/S 27']].map(([id,title])=>({id,title,url:'https://example.org/'+id,cover:'/fake.svg',pages:['/fake.svg','/fake.svg'],headings:['Fashion silhouette: the ballet sneaker','Core updates: the dad sneaker']}));
+ await context.route('**/data/forecast.json',r=>json(r,{schemaVersion:1,checkedAt:'2026-11-03',reports}));
+ await context.route('**/fake.svg',r=>r.fulfill({contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1400"><rect width="2200" height="1400" fill="white"/></svg>'}));
+ await context.route('**/data/rank-boards.json',r=>json(r,{schemaVersion:1,boards:['Musinsa','29CM'].map(id=>({id,label:id,basis:'원문 기준',sourceUrl:'https://example.org',checkedAt:'2026-11-03',items:Array.from({length:15},(_,i)=>({rank:i+1,key:String(i),brand:'Market reference',name:'Shoe '+(i+1),url:'https://example.org',image:'/fake.svg'}))}))}));
+ const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(origin);
+ await page.locator('[data-source="forecast"]').click();await page.locator('.forecast-card').waitFor();
+ assert.equal(await page.locator('.forecast-card').count(),1,'Footwear-only title is excluded');
+ await page.locator('[data-season="27AW"]').click();assert.equal(await page.locator('.forecast-keyword').count(),2);
+ assert.deepEqual(await page.locator('.forecast-keyword').allTextContents(),['#ballet_sneaker','#dad_sneaker']);
+ await page.locator('[data-report="b"]').click();assert.equal(await page.locator('#forecast-viewer').isVisible(),true);
+ assert.equal(await page.locator('#forecast-position').textContent(),'1 / 2');await page.locator('#forecast-next').click();assert.equal(await page.locator('#forecast-position').textContent(),'2 / 2');
+ assert.equal(await page.locator('#forecast-original').getAttribute('href'),'https://example.org/b');await page.keyboard.press('Escape');assert.equal(await page.locator('#forecast-viewer').isVisible(),false);
+ await page.locator('[data-source="analysis"]').click();await page.locator('.rank-board').first().waitFor();assert.equal(await page.locator('.rank-item').count(),30,'Both native top-15 boards remain complete across brand scopes');
+ await page.locator('[data-source="forecast"]').click();await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ assert.deepEqual(errors,[]);console.log('PASS: Forecast season/title/heading filters, high-resolution viewer navigation, source link, Escape/focus, complete retailer ranks and mobile width');
+}finally{await browser?.close();await new Promise(r=>server.close(r));}

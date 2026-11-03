@@ -7,6 +7,12 @@ const look = (id, brand, city) => ({id: String(id), brand, city, image: `/catwal
 const fragment = (season, seasonId, ids, collectedAt = '2026-10-30T00:00:00Z') =>
   ({season, seasonId, collectedAt, looks: ids.map(id => look(id, `Brand ${id}`, 'Paris'))});
 
+test('Fashion Feed collection never replaces the runway collection of the same season',()=>{
+ const season='Spring/Summer 2027';
+ const {snapshot}=composeSnapshot([fragment(season,'1',[1,2]),{...fragment(season,'2',[3]),collection:'fashion-feed'},{...fragment(season,'2',[4],'2026-11-03T00:00:00Z'),collection:'fashion-feed'}]);
+ assert.deepEqual(snapshot.looks.map(l=>l.id),['1','2','4']);assert.equal(snapshot.seasons[0].looks,3);
+});
+
 test('the snapshot holds three seasons, newest first, and names the files the fourth leaves behind', () => {
   const {snapshot, keep, drop, referenced} = composeSnapshot([
     fragment('Spring/Summer 2027', '2913181', [1, 2]),

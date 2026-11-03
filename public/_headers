@@ -13,3 +13,12 @@
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+
+/data/catalog-index.json
+  Cache-Control: private, max-age=0, must-revalidate
+/data/catalog-brands/*
+  Cache-Control: private, max-age=31536000, immutable
+/forecast/*
+  Cache-Control: private, max-age=86400
+/catwalk/*
+  Cache-Control: private, max-age=86400

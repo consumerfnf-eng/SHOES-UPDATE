@@ -44,25 +44,21 @@ export async function readConfig() {
 // newest season first, and within a season in the order the builder settled
 // on, so the grid does not reshuffle itself between runs.
 export function composeSnapshot(fragments, {kept = SEASONS_KEPT, config = {}, builtAt} = {}) {
-  const bySeason = new Map();
-  for (const fragment of fragments) {
-    const season = String(fragment?.season ?? '').trim();
-    if (!season || !Array.isArray(fragment.looks) || !fragment.looks.length) continue;
-    // Two fragments for one season: the later collection wins outright rather
-    // than being merged, so a re-collection cannot leave half of an old one.
-    const existing = bySeason.get(season);
-    if (!existing || String(fragment.collectedAt ?? '') >= String(existing.collectedAt ?? '')) bySeason.set(season, fragment);
+  const byCollection = new Map();
+  for(const fragment of fragments){
+    const season=String(fragment?.season??'').trim();if(!season||!fragment.looks?.length)continue;
+    const key=season+'|'+(fragment.collection||'runway'),before=byCollection.get(key);
+    if(!before||String(fragment.collectedAt??'')>=String(before.collectedAt??''))byCollection.set(key,fragment);
   }
-  const {keep, drop} = retainSeasons([...bySeason.keys()], kept);
-  const seasons = keep.map(season => {
-    const fragment = bySeason.get(season);
-    return {
-      season, seasonId: String(fragment.seasonId ?? ''), collectedAt: fragment.collectedAt ?? '',
-      looks: fragment.looks.length, shows: new Set(fragment.looks.map(l => l.brand)).size,
-      cities: [...new Set(fragment.looks.map(l => l.city).filter(Boolean))].sort(),
-    };
-  });
-  const looks = keep.flatMap(season => bySeason.get(season).looks.map(look => ({...look, season})));
+  const bySeason=new Map();
+  for(const fragment of byCollection.values()){
+    const season=fragment.season;
+    if(!bySeason.has(season))bySeason.set(season,[]);
+    bySeason.get(season).push(fragment);
+  }
+  const {keep,drop}=retainSeasons([...bySeason.keys()],kept);
+  const looks=keep.flatMap(season=>[...new Map(bySeason.get(season).flatMap(f=>f.looks.map(l=>({...l,season}))).map(l=>[l.id,l])).values()]);
+  const seasons=keep.map(season=>{const fs=bySeason.get(season),ls=looks.filter(l=>l.season===season);return {season,seasonId:String(fs[0].seasonId??''),collectedAt:fs.map(f=>f.collectedAt||'').sort().at(-1),looks:ls.length,shows:new Set(ls.map(l=>l.brand)).size,cities:[...new Set(ls.map(l=>l.city).filter(Boolean))].sort()};});
   const library = config.librarySearch ?? {};
   return {
     snapshot: {
@@ -79,7 +75,7 @@ export function composeSnapshot(fragments, {kept = SEASONS_KEPT, config = {}, bu
     keep, drop,
     // Every file the kept seasons still point at. Anything else under
     // public/catwalk is a rendition no card can reach any more.
-    referenced: new Set(looks.map(l => String(l.image ?? '').replace(/^\/catwalk\//, '')).filter(Boolean)),
+    referenced: new Set(looks.flatMap(l => [l.image,l.thumbnail]).map(value=>String(value??'').replace(/^\/catwalk\//, '')).filter(Boolean)),
   };
 }
 
@@ -126,6 +122,18 @@ async function main() {
   // likely to be a broken collection than a real instruction to clear the tab.
   if (!snapshot.looks.length) { console.error('Refusing to publish an empty catwalk: no looks survived composition.'); return 3; }
 
+  // A partial download or full disk must leave the previous index intact.
+  for(const name of referenced){
+    if(path.basename(name)!==name)throw Error('Invalid local CATWALK asset: '+name);
+    const stat=await fs.stat(path.join(IMAGES,name));
+    if(!stat.isFile()||!stat.size)throw Error('Missing or empty CATWALK asset: '+name);
+  }
+  if(apply){
+    const temporary=SNAPSHOT+'.tmp';
+    await fs.writeFile(temporary,JSON.stringify(snapshot)+'\n','utf8');
+    await fs.rename(temporary,SNAPSHOT);
+  }
+
   let removed = 0;
   const files = await fs.readdir(IMAGES).catch(() => []);
   for (const name of files) {
@@ -133,9 +141,7 @@ async function main() {
     removed++;
     if (apply) await fs.rm(path.join(IMAGES, name), {force: true});
   }
-  for (const season of drop) if (apply) await fs.rm(seasonFile(season), {force: true});
-
-  if (apply) await fs.writeFile(SNAPSHOT, JSON.stringify(snapshot) + '\n', 'utf8');
+  for(const fragment of fragments.filter(f=>drop.includes(f.season)))if(apply&&path.dirname(fragment.file)===FRAGMENTS)await fs.rm(fragment.file,{force:true});
   console.log(`${snapshot.looks.length.toLocaleString()} looks across ${keep.length} season(s); `
     + `${removed.toLocaleString()} rendition(s) ${apply ? 'deleted' : 'would be deleted'}`);
   for (const season of snapshot.seasons) console.log(`  ${season.season}: ${season.looks} looks, ${season.shows} shows`);

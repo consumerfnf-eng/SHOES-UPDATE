@@ -162,6 +162,10 @@ export async function collectRankBoards({directory = root, now = new Date(), fet
 
   const collected = [];
   for (const board of boards) {
+    // A browser-observed board has an explicit UI category/gender/period scope.
+    // The older unscoped HTTP adapter must not replace it with a different list.
+    const observed=(stored?.boards||[]).find(b=>b.id===board.id&&b.observationMethod==='reviewed-dom');
+    if(observed){collected.push(observed);continue;}
     try {
       const body = await fetchText(board.apiUrl, board.id.startsWith('musinsa') ? 'application/json' : 'text/html');
       const parsed = board.id.startsWith('musinsa') ? board.read(JSON.parse(body)) : board.read(body);
@@ -183,6 +187,9 @@ export async function collectRankBoards({directory = root, now = new Date(), fet
            sourceUrl: board.pageUrl, checkedAt, size: BOARD_SIZE, items: [], departed: [], error: error.message});
     }
   }
+
+  // Additional browser-collected retailers survive the legacy HTTP job.
+  for(const board of stored?.boards||[])if(!collected.some(b=>b.id===board.id))collected.push(board);
 
   const snapshot = {schemaVersion: 1, checkedAt, boards: collected,
     history: [...history, {checkedAt, boards: Object.fromEntries(collected.filter(b => b.items.length)

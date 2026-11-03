@@ -71,3 +71,11 @@ docs/wgsn-runway-automation.md
 # file is absent, so the public build simply has no board.
 public/data/curation-summary.json
 public-redirect/
+
+# Internal WGSN Forecast and feed assets.
+public/forecast/
+public/data/forecast.json
+data/wgsn-fashion/
+logs/20261103/forecast-work/
+public/data/catalog-index.json
+public/data/catalog-brands/

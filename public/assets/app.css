@@ -341,3 +341,14 @@ body.viewer-open{overflow:hidden}
 .shell>main{min-width:0;max-width:100%}
 
 .brand-group-tabs{display:flex;flex-wrap:wrap;gap:8px;padding:16px 22px 4px}.brand-group-tabs[hidden]{display:none}.brand-group-tab{min-height:40px;padding:8px 18px;border:1px solid #d8dfe9;border-radius:24px;background:#fff;color:#3f4b5f;font:inherit;font-weight:600;cursor:pointer}.brand-group-tab.active{background:#eaf0ff;color:#2553c4;border-color:#7295ed}.brand-group-tab:focus-visible{outline:2px solid #2553c4;outline-offset:3px}.brand-group-tab:disabled{opacity:.4;cursor:default}
+
+/* Keep the catalogue within reach while retaining the full keyword board. */
+#keyword-list:not(.expanded) .keyword:nth-child(n+6){display:none}
+.trends{margin-bottom:24px}.source-tabs{position:sticky;top:88px;background:var(--surface,#fff);z-index:4;padding-top:8px}
+#results{scroll-margin-top:160px}.catwalk-hashtags{font-size:12px;line-height:1.7;overflow-wrap:anywhere}
+.forecast-seasons,.forecast-keywords{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.forecast-keyword{font-size:13px;background:#e8f0fe;color:#174ea6;border-radius:20px;padding:8px 12px}.forecast-seasons .active{background:#0b57d0;color:white}
+.forecast-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.forecast-card{border:1px solid #dde3eb;background:white;border-radius:16px;overflow:hidden}.forecast-card>button{width:100%;text-align:left;padding:0;border:0;background:transparent;cursor:pointer}.forecast-card img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top}.forecast-card h3{font-size:16px;line-height:1.5;margin:16px}.forecast-card span,.forecast-card>a{display:block;margin:16px;color:#0b57d0;font-size:13px}.forecast-viewer{width:min(1480px,96vw);max-width:96vw;max-height:94vh;border:0;border-radius:16px;padding:18px;background:#eef1f5}.forecast-viewer::backdrop{background:#101828bb}.forecast-viewer header{display:flex;align-items:center;justify-content:space-between;gap:20px}.forecast-viewer h2{font-size:18px}.forecast-viewer nav{display:flex;align-items:center;gap:14px;padding:12px 0;position:sticky;top:-18px;background:#eef1f5;z-index:1}.forecast-viewer>img{display:block;width:100%;height:auto;background:white}.forecast-viewer a{margin-left:auto}
+@media(max-width:900px){.forecast-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.forecast-grid{grid-template-columns:1fr}.forecast-viewer{padding:10px}.forecast-viewer nav{gap:6px;flex-wrap:wrap}.source-tabs{top:72px}}
+
+.research-wide .shell{grid-template-columns:minmax(0,1fr)}.research-wide .sidebar{display:none}

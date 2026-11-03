@@ -23,6 +23,7 @@ try{
  // All UI checks run against local code and fixtures; never contact live sites.
  await context.route('**/*',r=>new URL(r.request().url()).origin===new URL(url).origin?r.continue():r.abort());
  await context.route('https://example.org/**',r=>r.fulfill({contentType:'image/svg+xml',body:`<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><rect width="400" height="300" fill="${r.request().url().includes('black')?'#222':'#ddd'}"/></svg>`}));
+ await context.route('**/data/catalog-index.json',r=>r.fulfill({status:404,body:''}));
  await context.route('**/data/catalog-ui.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(fixture)}));
  // The page loads the retail/newsletter overlay and the SNS keyword board
  // alongside the catalog. Unmocked, the real published files answered and
@@ -189,6 +190,7 @@ try{
    shows:new Set(walkLooks.filter(l=>l.season===label).map(l=>l.brand)).size});
  const walkContext=await browser.newContext({viewport:{width:1440,height:1000},acceptDownloads:true});
  await walkContext.route('**/*',r=>new URL(r.request().url()).origin===new URL(url).origin?r.continue():r.abort());
+ await walkContext.route('**/data/catalog-index.json',r=>r.fulfill({status:404,body:''}));
  await walkContext.route('**/data/catalog-ui.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify(fixture)}));
  await walkContext.route('**/data/monthly-catalog.json',r=>r.fulfill({contentType:'application/json',
    body:JSON.stringify({schemaVersion:2,publishedAt:at,asOf:today,periodStart:today,sources:{},retail:[],newsletter:[],sourceStatus:[]})}));
