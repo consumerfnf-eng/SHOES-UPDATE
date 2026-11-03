@@ -31,6 +31,7 @@ export function validateProposalConfig(config,forecasts){
   if(ids.has(idea.id)||!/^[a-z0-9-]+$/.test(idea.id))throw Error('Duplicate or invalid proposal id');ids.add(idea.id);
   if(idea.references.length!==6||new Set(idea.references.map(r=>r.kind+':'+r.id)).size!==6)throw Error('Six distinct reviewed references required: '+idea.id);
   if(idea.tags.length<3||idea.strategies.length<4||!idea.pattern||!idea.insight)throw Error('Incomplete design proposal: '+idea.id);
+  if(/[\u3040-\u30ff\u4e00-\u9fff]/u.test(JSON.stringify([idea.title,idea.subtitle,idea.tags,idea.insight,idea.strategies])))throw Error('Proposal copy must use Korean and English: '+idea.id);
   for(const f of idea.forecast){const report=forecasts.find(r=>r.id===f.id);if(!report||reportSeason(report.title)!==idea.season.replace('FW','AW')||!Number.isInteger(f.page)||f.page<1||f.page>report.pages.length)throw Error('Wrong season or page in forecast evidence: '+idea.id);}
  }
 }

@@ -370,3 +370,5 @@ body.viewer-open{overflow:hidden}
 @media(max-width:600px){.season-proposal-card{padding:14px}.season-proposal-card h3{font-size:19px}.season-proposal-card header{flex-direction:column;gap:8px}.proposal-summary-actions .secondary-button,.proposal-summary-actions .primary-button{font-size:11px;padding:10px}.proposal-viewer{padding:12px}.proposal-viewer header div{gap:4px}.proposal-viewer header button,.proposal-viewer header a{font-size:10px;padding:8px}.proposal-viewer h2{font-size:14px}}
 
 .proposal-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:12px 0}.proposal-controls .forecast-seasons{margin:0}.proposal-controls .proposal-summary-actions{margin:0}.research-brief .proposal-note{margin:8px 0 12px}.research-brief .brief-heading h2{margin-bottom:4px}.research-brief .brief-heading p{margin-top:4px;margin-bottom:4px}@media(max-width:700px){.proposal-controls{align-items:flex-start;gap:10px}.proposal-controls .proposal-summary-actions span{display:none}}
+
+.proposal-viewer img:not(.actual-size){width:auto;max-width:100%;max-height:72vh;margin:0 auto;object-fit:contain}

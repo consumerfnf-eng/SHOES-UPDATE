@@ -22,3 +22,11 @@
   Cache-Control: private, max-age=86400
 /catwalk/*
   Cache-Control: private, max-age=86400
+/proposals/*
+  Cache-Control: private, max-age=0, must-revalidate
+/data/season-proposals.json
+  Cache-Control: private, max-age=0, must-revalidate
+/data/mlb-price-benchmark.json
+  Cache-Control: private, max-age=0, must-revalidate
+/data/rank-boards.json
+  Cache-Control: private, max-age=0, must-revalidate
