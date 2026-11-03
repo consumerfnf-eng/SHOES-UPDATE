@@ -1278,7 +1278,7 @@ bindBrandPrices();
 
 function boardProduct(p){return {sourceKey:'product:'+p.id,kind:'product',name:variantGroupName(p),brand:p.brand,color:variantColorLabel(p),style:p.manufacturerStyle||p.style,sourceUrl:outboundUrl(p)||safeUrl(p.url),imageUrl:productImageUrl(p,today),frame:p.presentation?.frame};}
 function boardShow(look){return {sourceKey:'show:'+look.id,kind:'show',name:look.brand+(look.collection==='fashion-feed'?' · Fashion Feed':''),brand:look.brand,sourceSeason:look.season,sourceUrl:look.sourceUrl||look.originalUrl,imageUrl:look.image};}
-bindReferenceBoards({onNavigate:()=>{if($('detail-dialog').open)$('detail-dialog').close();if($('catwalk-viewer')?.hidden===false)closeViewer();document.querySelector('[data-source="boards"]').click();}});
+bindReferenceBoards({getTagContext:()=>({keywords:catalog?.styleTrendKeywords?.items||[],products}),onStatus:popup,onNavigate:()=>{if($('detail-dialog').open)$('detail-dialog').close();if($('catwalk-viewer')?.hidden===false)closeViewer();document.querySelector('[data-source="boards"]').click();}});
 document.querySelector('[data-source="boards"]').addEventListener('click',()=>requestAnimationFrame(()=>$('reference-boards').scrollIntoView({block:'start'})));
 document.addEventListener('click',event=>{
  const product=event.target.closest('[data-board-product]'),show=event.target.closest('[data-board-show]');
