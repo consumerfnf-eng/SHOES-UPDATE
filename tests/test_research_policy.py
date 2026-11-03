@@ -13,6 +13,10 @@ class ResearchPolicyTest(unittest.TestCase):
         self.assertFalse(allowed_feed_record({'hashtags':['#heeledpump']}))
         self.assertFalse(allowed_feed_record({'hashtags':['＃ＨｅｅｌｅｄＰｕｍｐ']}))
 
+    def test_new_catwalk_exclusions(self):
+        for tag in ['#slingback', '#WedgeHeels', '#WEDGEHEELS']:
+            self.assertFalse(allowed_feed_record({'hashtags':[tag]}))
+
     def test_other_footwear_is_preserved(self):
         self.assertTrue(allowed_feed_record({'hashtags':['#Sneakers','#HeeledSandal']}))
 

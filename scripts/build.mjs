@@ -1,5 +1,5 @@
 import {buildCatalogChunks} from './build-catalog-chunks.mjs';
-import {buildResearchBrief} from './build-research-brief.mjs';
+import {buildSeasonProposals} from './build-season-proposals.mjs';
 import {isSiteBrandAllowed,canonicalSiteBrand} from '../public/assets/site-brand-policy.mjs';
 import fs from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
@@ -26,6 +26,7 @@ try {
   const scopedBoards=parsed.boards.filter(board=>board.items?.length);
   const published = {schemaVersion: parsed.schemaVersion, checkedAt: parsed.checkedAt, boards: scopedBoards};
   await fs.writeFile(new URL('public/data/rank-boards.json', root), JSON.stringify(published) + '\n');
+  execFileSync('python',['scripts/build-rank-thumbnails.py'],{cwd:root,stdio:'inherit'});
   console.log(`Published ${parsed.boards.filter(b => b.items?.length).length} retailer ranking boards.`);
 } catch (error) {
   if (error.code !== 'ENOENT') throw error;
@@ -77,7 +78,8 @@ for(const p of catalog.products){
 }
 const commit=process.env.CF_PAGES_COMMIT_SHA||execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
 execFileSync('python',['scripts/build-card-thumbnails.py'],{cwd:root,stdio:'inherit'});
-await buildResearchBrief();
+await fs.copyFile(new URL('data/mlb-price-benchmark.json',root),new URL('public/data/mlb-price-benchmark.json',root));
+await buildSeasonProposals();
 catalog=JSON.parse(await fs.readFile(new URL('public/data/catalog.json',root),'utf8'));
 publicPublicationStatus(catalog);
 await fs.writeFile(new URL('public/data/catalog.json',root),JSON.stringify(catalog)+'\n');

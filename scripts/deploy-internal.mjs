@@ -48,8 +48,10 @@ const snapshot = await exists('public/data/catwalk.json');
 const renditions = await count('public/catwalk');
 const appHtml=await fs.readFile(path.join(root,'public/index.html'),'utf8');
 if(appHtml.includes('data-source="brief"')){
- const brief=JSON.parse(await fs.readFile(path.join(root,'public/data/research-brief.json'),'utf8'));
- if(brief.schemaVersion!==1||!Array.isArray(brief.ideas))throw Error('Research brief missing or invalid; run npm run build before deployment');
+ const brief=JSON.parse(await fs.readFile(path.join(root,'public/data/season-proposals.json'),'utf8'));
+ if(brief.schemaVersion!==2||!Array.isArray(brief.ideas)||['27SS','27FW','28SS'].some(s=>brief.ideas.filter(i=>i.season===s).length<5))throw Error('Season proposals missing or incomplete; run npm run build before deployment');
+ for(const board of [...brief.ideas,...Object.values(brief.seasonBoards)])for(const asset of [board.download,board.preview])if(!await exists('public/'+asset.replace(/^\//,'')))throw Error('Proposal asset missing: '+asset);
+ for(const idea of brief.ideas)for(const ref of idea.references)for(const asset of [ref.image,ref.original])if(!await exists('public/'+asset.replace(/^\//,'')))throw Error('Proposal reference missing: '+asset);
 }
 if(appHtml.includes('data-source="forecast"')){
  if(!await exists('public/data/forecast.json')||!await count('public/forecast'))throw Error('Forecast assets missing; refusing to erase the existing internal research library');

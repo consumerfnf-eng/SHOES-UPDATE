@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "brand": "MLB",
+  "currency": "KRW",
+  "checkedAt": "2026-11-03T06:48:26.642Z",
+  "scope": "한국 공식몰 성인 스니커즈·운동화 목록의 첫 노출 상품, 스타일코드별 중복 제거. 키즈·샌들·뮬·부츠·패딩 메리제인 제외. 전체 MLB 판매상품을 대표하는 모집단이 아닌 비교 표본.",
+  "basis": "공식몰 표시 정상가; 세일가는 별도 보존",
+  "sourceUrls": [
+    "https://www.mlb-korea.com/display/MBMB04B07",
+    "https://www.mlb-korea.com/display/MBMB04B01"
+  ],
+  "products": [
+    {
+      "name": "커브 라이너 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXM096N-50IVS?category=MBMB04B07",
+      "style": "3ASXM096N",
+      "listPrice": 149000,
+      "salePrice": null
+    },
+    {
+      "name": "청키라이너 엠보 모노그램 쿠퍼스 타운 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXE015N-50CRS?category=MBMB04B01",
+      "style": "3ASXE015N",
+      "listPrice": 169000,
+      "salePrice": null
+    },
+    {
+      "name": "청키라이너 포켓 모노그램 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXP025N-50NYS?category=MBMB04B01",
+      "style": "3ASXP025N",
+      "listPrice": 159000,
+      "salePrice": null
+    },
+    {
+      "name": "베이스 로우 SD 보스턴 레드삭스",
+      "url": "https://www.mlb-korea.com/product-detail/3ACVWL16N-43BRS?category=MBMB04B07",
+      "style": "3ACVWL16N",
+      "listPrice": 129000,
+      "salePrice": null
+    },
+    {
+      "name": "청키라이너 PK 모노그램 SL 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXL256N-50BKL?category=MBMB04B07",
+      "style": "3ASXL256N",
+      "listPrice": 169000,
+      "salePrice": null
+    },
+    {
+      "name": "보드 라이너 SD 보스턴 레드삭스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXBC36N-43BRS?category=MBMB04B07",
+      "style": "3ASXBC36N",
+      "listPrice": 159000,
+      "salePrice": null
+    },
+    {
+      "name": "청키라이너 데님 포켓 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXD015N-50NYS?category=MBMB04B07",
+      "style": "3ASXD015N",
+      "listPrice": 139000,
+      "salePrice": null
+    },
+    {
+      "name": "베이스 로우 FUR 보스턴 레드삭스",
+      "url": "https://www.mlb-korea.com/product-detail/3ACVBL16N-43BRD?category=MBMB04B07",
+      "style": "3ACVBL16N",
+      "listPrice": 139000,
+      "salePrice": null
+    },
+    {
+      "name": "청키라이너 데님 모노그램 SL 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXM016N-50PKS?category=MBMB04B07",
+      "style": "3ASXM016N",
+      "listPrice": 159000,
+      "salePrice": null
+    },
+    {
+      "name": "베이스 로우 LT 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ACVWL26N-50BKS?category=MBMB04B07",
+      "style": "3ACVWL26N",
+      "listPrice": 129000,
+      "salePrice": null
+    },
+    {
+      "name": "루키 라이너 LA다저스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXS016N-07SBL?category=MBMB04B07",
+      "style": "3ASXS016N",
+      "listPrice": 149000,
+      "salePrice": null
+    },
+    {
+      "name": "트로피 라이트 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ACVTL16N-50BRS?category=MBMB04B07",
+      "style": "3ACVTL16N",
+      "listPrice": 139000,
+      "salePrice": null
+    },
+    {
+      "name": "[30% OFF]호퍼 LA다저스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXHSN3N-07GNS?category=MBMB04B01",
+      "style": "3ASXHSN3N",
+      "listPrice": 139000,
+      "salePrice": 97300
+    },
+    {
+      "name": "슬릭 메리제인 새틴 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXMJS6N-50BKS?category=MBMB04B07",
+      "style": "3ASXMJS6N",
+      "listPrice": 119000,
+      "salePrice": null
+    },
+    {
+      "name": "청키라이너 PK 모노그램 SL 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXL156N-50PKD?category=MBMB04B07",
+      "style": "3ASXL156N",
+      "listPrice": 169000,
+      "salePrice": null
+    },
+    {
+      "name": "클러비 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXCB16N-50BKS?category=MBMB04B07",
+      "style": "3ASXCB16N",
+      "listPrice": 149000,
+      "salePrice": null
+    },
+    {
+      "name": "청키 라이너 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXCA12N-50WHS?category=MBMB04B07",
+      "style": "3ASXCA12N",
+      "listPrice": 139000,
+      "salePrice": null
+    },
+    {
+      "name": "청키라이너 포켓 모노그램 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXM056N-50BKS?category=MBMB04B01",
+      "style": "3ASXM056N",
+      "listPrice": 169000,
+      "salePrice": null
+    },
+    {
+      "name": "청키라이너 베이직 SL 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXL116N-50BKS?category=MBMB04B07",
+      "style": "3ASXL116N",
+      "listPrice": 139000,
+      "salePrice": null
+    },
+    {
+      "name": "커브라이너 모노그램 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXL206N-50BKS?category=MBMB04B07",
+      "style": "3ASXL206N",
+      "listPrice": 159000,
+      "salePrice": null
+    },
+    {
+      "name": "클러비 SD 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXCB26N-50YES?category=MBMB04B07",
+      "style": "3ASXCB26N",
+      "listPrice": 149000,
+      "salePrice": null
+    },
+    {
+      "name": "러니 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXC016N-50BKS?category=MBMB04B01",
+      "style": "3ASXC016N",
+      "listPrice": 149000,
+      "salePrice": null
+    },
+    {
+      "name": "[30% OFF]청키클래식 A 보스턴 레드삭스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXCCB3N-43CRS?category=MBMB04B01",
+      "style": "3ASXCCB3N",
+      "listPrice": 139000,
+      "salePrice": 97300
+    },
+    {
+      "name": "청키라이너 포켓 SD 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXP015N-50BLS?category=MBMB04B07",
+      "style": "3ASXP015N",
+      "listPrice": 169000,
+      "salePrice": null
+    },
+    {
+      "name": "[30% OFF]청키클래식 바시티 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXCCV3N-50BKS?category=MBMB04B07",
+      "style": "3ASXCCV3N",
+      "listPrice": 149000,
+      "salePrice": 104300
+    },
+    {
+      "name": "슬릭 파우더 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXCE26N-50PKS?category=MBMB04B07",
+      "style": "3ASXCE26N",
+      "listPrice": 129000,
+      "salePrice": null
+    },
+    {
+      "name": "[30% OFF]빅볼청키 P 메가 보스턴 레드삭스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHC2B2N-43RDS?category=MBMB04B01",
+      "style": "3ASHC2B2N",
+      "listPrice": 119000,
+      "salePrice": 83300
+    },
+    {
+      "name": "빅볼청키 A 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHC104N-50BGS?category=MBMB04B01",
+      "style": "3ASHC104N",
+      "listPrice": 99000,
+      "salePrice": null
+    },
+    {
+      "name": "카고 청키 SD 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHC055N-50GRS?category=MBMB04B01",
+      "style": "3ASHC055N",
+      "listPrice": 149000,
+      "salePrice": null
+    },
+    {
+      "name": "위너 청키 DT 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHWC36N-50WHS?category=MBMB04B01",
+      "style": "3ASHWC36N",
+      "listPrice": 189000,
+      "salePrice": null
+    },
+    {
+      "name": "범프 청키 GTX 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHBCK6N-50CGL?category=MBMB04B01",
+      "style": "3ASHBCK6N",
+      "listPrice": 199000,
+      "salePrice": null
+    },
+    {
+      "name": "위너 청키 NB 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHW015N-50BKD?category=MBMB04B01",
+      "style": "3ASHW015N",
+      "listPrice": 179000,
+      "salePrice": null
+    },
+    {
+      "name": "범프 청키 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHB025N-50MTS?category=MBMB04B01",
+      "style": "3ASHB025N",
+      "listPrice": 159000,
+      "salePrice": null
+    },
+    {
+      "name": "카고 청키 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHW075N-50CGS?category=MBMB04B01",
+      "style": "3ASHW075N",
+      "listPrice": 149000,
+      "salePrice": null
+    },
+    {
+      "name": "위너러너 신세틱 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHWC96N-50GRL?category=MBMB04B01",
+      "style": "3ASHWC96N",
+      "listPrice": 189000,
+      "salePrice": null
+    },
+    {
+      "name": "빅볼청키 크랙 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHCV16N-50IVS?category=MBMB04B01",
+      "style": "3ASHCV16N",
+      "listPrice": 129000,
+      "salePrice": null
+    },
+    {
+      "name": "위너 청키 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHWD15N-50GRL?category=MBMB04B01",
+      "style": "3ASHWD15N",
+      "listPrice": 179000,
+      "salePrice": null
+    },
+    {
+      "name": "위너 청키 LA다저스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHWC26N-07PKS?category=MBMB04B01",
+      "style": "3ASHWC26N",
+      "listPrice": 179000,
+      "salePrice": null
+    },
+    {
+      "name": "청키라이너 엠보 모노그램 쿠퍼스 타운 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASXE035N-50CGS?category=MBMB04B01",
+      "style": "3ASXE035N",
+      "listPrice": 169000,
+      "salePrice": null
+    },
+    {
+      "name": "모션 청키 뉴욕양키스",
+      "url": "https://www.mlb-korea.com/product-detail/3ASHMC16N-50WHS?category=MBMB04B01",
+      "style": "3ASHMC16N",
+      "listPrice": 169000,
+      "salePrice": null
+    }
+  ]
+}

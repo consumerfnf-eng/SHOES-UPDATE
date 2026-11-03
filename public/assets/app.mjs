@@ -1,6 +1,7 @@
+import {renderBrandPrices,bindBrandPrices} from './brand-prices.mjs';
 import {adoptPreparedVariantCaches} from './catalog-view.mjs';
 import {prepareCatalog} from './catalog-runtime.mjs';
-import {isAllowedFeedLook} from './research-policy.mjs';
+import {isAllowedFeedLook,runwayFirst} from './research-policy.mjs';
 import {renderForecast,bindForecast} from './forecast.mjs';
 import {renderResearchBrief,bindResearchBrief} from './research-brief.mjs';
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes, zipStored, catwalkFileName, catwalkManifestRows } from './export.mjs';
@@ -28,6 +29,7 @@ const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신
 let catalog = null, overlay = null, trends = null, rankBoards = null, catwalk = null, catwalkShown = 0, catwalkPicked = new Set(), catwalkAnchor = '', catwalkShowsOpen = false, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
 const activeVariant = new Map();
 let productGroups = new Map();
+let filteredViewCache=null,savedRevision=0;
 function groupKey(p){ return variantGroupKey(p); }
 function colorGroupOf(p){
   const key=groupKey(p);
@@ -242,7 +244,7 @@ async function loadCatalog() {
     $('catalog-notice').textContent = notice.join(' '); $('catalog-notice').className = 'notice'; $('catalog-notice').hidden = !notice.length;
     renderBrands(); renderKeywords(); render();
     if(manifest)startCatalogWorker(manifest);
-    void dictionary.then(value=>{if(value?.entries){useModelCategories(value.entries,p=>`${p.brand}|${variantGroupKey(p)}`);if(state.source==='analysis')render();}});
+    void dictionary.then(value=>{if(value?.entries){useModelCategories(value.entries,p=>`${p.brand}|${variantGroupKey(p)}`);categoryRevision++;if(state.source==='analysis')render();}});
     // The retail overlay and the trend board are 4 MB between them, more than
     // the catalogue itself, and both add to this view rather than define it.
     // Waiting for them before the first paint spent four seconds showing a
@@ -266,7 +268,7 @@ function startCatalogWorker(manifest){
    const message=event.data;
    if(message.type==='progress'){$('catalog-notice').hidden=false;$('catalog-notice').textContent=`공식 상품 ${message.count.toLocaleString()} / ${manifest.total.toLocaleString()}건 불러오는 중`;return;}
    if(message.type==='ready'){
-    finished=true;workerReady=true;catalog.products=message.rawProducts;overlay=message.overlay;trends=message.trends;
+    finished=true;workerReady=true;trends=message.trends;
     applyPrepared(message.prepared);
     if(state.keywordId)state.keywordIds=keywordViews.get(state.keywordId)?.ids||new Set();
     renderBrands();renderKeywords();render();
@@ -346,6 +348,7 @@ function loadSaved(){
   catch{ saved = {}; }                       // private window, blocked storage
 }
 function persistSaved(){
+  savedRevision++;
   try{ localStorage.setItem(SAVED_KEY, JSON.stringify(saved)); }catch{ /* read-only is fine */ }
   const n=Object.keys(saved).length;
   const label=$('saved-count'); if(label)label.textContent=n?`(${n})`:'';
@@ -410,12 +413,15 @@ function movementMarkup(item){
   const title=item.previousRank?`지난 집계 ${item.previousRank}위`:move.label;
   return `<span class="rank-move ${esc(item.movement||'first')}" title="${esc(title)}">${esc(move.mark)}${amount?' '+esc(amount):''}</span>`;
 }
+let renderedRankBoards=null,renderedAnalysis=null,categoryRevision=0;
 function renderRankBoards(){
   const host=$('rank-boards');
   if(!host)return;
   const boards=(rankBoards?.boards||[]).filter(board=>board.items?.length);
   host.hidden=!boards.length;
   if(!boards.length)return;
+  if(renderedRankBoards===rankBoards)return;
+  renderedRankBoards=rankBoards;
   host.innerHTML=boards.map(board=>{
     const moved=board.items.filter(i=>i.movement==='up'||i.movement==='down').length;
     const fresh=board.items.filter(i=>i.movement==='new').length;
@@ -431,7 +437,7 @@ function renderRankBoards(){
       </header>
       <ol class="rank-list">${board.items.map(item=>`<li class="rank-item">
         <a class="rank-photo" href="${esc(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer">${
-          safeUrl(item.image)?`<img src="${esc(item.image)}" alt="${esc(item.brand+' '+item.name)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`:'<span class="image-missing">사진 없음</span>'}
+          (item.thumbnail||safeUrl(item.image))?`<img width="320" height="240" src="${esc(item.thumbnail||item.image)}" alt="${esc(item.brand+' '+item.name)}" loading="${item.rank<=3?'eager':'lazy'}" fetchpriority="${item.rank<=3?'high':'auto'}" decoding="async" referrerpolicy="no-referrer">`:'<span class="image-missing">사진 없음</span>'}
           <span class="rank-number">${item.rank}</span>${movementMarkup(item)}</a>
         <span class="rank-copy"><span class="rank-brand">${esc(item.brand||'브랜드 미표기')}</span>
           <a class="rank-name" href="${esc(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer">${esc(item.name)}</a>
@@ -472,9 +478,9 @@ function activeSeason(){
   return seasons.find(s=>s.season===state.catwalkSeason)?.season||seasons[0]?.season||'';
 }
 function seasonLooks(){
-  const all=(catwalk?.looks||[]).filter(l=>isAllowedFeedLook(l,catwalk?.publicationPolicy?.excludedFeedHashtags)).filter(l=>state.catwalkCollection==='all'||(l.collection||'runway')===state.catwalkCollection), season=activeSeason();
+  const all=(catwalk?.looks||[]).filter(l=>isAllowedFeedLook(l,catwalk?.publicationPolicy?.excludedFeedHashtags,catwalk?.publicationPolicy?.excludedCatwalkHashtags)).filter(l=>state.catwalkCollection==='all'||(l.collection||'runway')===state.catwalkCollection), season=activeSeason();
   if(!season)return all;
-  return all.filter(l=>(l.season||catwalk?.season||'')===season);
+  return runwayFirst(all.filter(l=>(l.season||catwalk?.season||'')===season));
 }
 // A season's four fashion weeks are the axis this board is read along - Paris
 // against New York - so the city narrows before the show does, and the show
@@ -779,7 +785,9 @@ function renderAnalysis(){
   $('rank-boards').hidden=!on||!(rankBoards?.boards||[]).some(b=>b.items?.length);
   if(!on)return;
   renderRankBoards();
-  const rows=analysisScope();
+  const rows=analysisScope(),stamp=rows.map(p=>p.id).join('|');
+  if(renderedAnalysis?.products===products&&renderedAnalysis.stamp===stamp&&renderedAnalysis.revision===categoryRevision)return;
+  renderedAnalysis={products,stamp,revision:categoryRevision};
   $('analysis-scope').textContent=`현재 필터 기준 ${rows.length.toLocaleString()}개 상품 · ${RATE_NOTE}`;
 
   const category=categoryDistribution(rows);
@@ -789,7 +797,7 @@ function renderAnalysis(){
     `상점 분류 · 같은 모델의 다른 기록 · 상품명에서 읽은 ${category.placed.toLocaleString()}건 기준 · `
     +`이름만으로는 종류를 알 수 없는 ${category.unplaced.toLocaleString()}건은 제외했습니다`;
 
-  const price=priceDistribution(rows);
+  const price=priceDistribution(rows,{includeGroups:false});
   document.querySelector('#panel-price .panel-body').innerHTML=
     price.bands.map(b=>bar(b.label,b.count,price.priced)).join('')||'<p class="muted">가격 정보가 없습니다.</p>';
   document.querySelector('#panel-price .panel-note').textContent=
@@ -807,18 +815,7 @@ function renderAnalysis(){
   document.querySelector('#panel-material .panel-note').textContent=
     `소재 기재 ${material.stated.toLocaleString()}건 · 한 상품이 여러 소재에 포함될 수 있습니다`;
 
-  const top=price.groups.slice(0,14);
-  const widest=Math.max(1,...top.map(g=>g.high));
-  document.querySelector('#panel-brand .panel-body').innerHTML=top.length?
-    `<table class="dist-table"><tr><th>브랜드</th><th>건수</th><th>최저</th><th>중앙값</th><th>최고</th><th></th></tr>`
-    +top.map(g=>`<tr><td>${esc(g.name)}</td><td class="n">${g.count}</td>`
-      +`<td class="n">${Math.round(g.low/10000).toLocaleString()}만</td>`
-      +`<td class="n"><b>${Math.round(g.median/10000).toLocaleString()}만</b></td>`
-      +`<td class="n">${Math.round(g.high/10000).toLocaleString()}만</td>`
-      +`<td><span class="range-track"><span class="range-fill" style="left:${g.low/widest*100}%;width:${Math.max(2,(g.high-g.low)/widest*100)}%"></span>`
-      +`<span class="range-dot" style="left:${g.median/widest*100}%"></span></span></td></tr>`).join('')
-    +'</table>':'<p class="muted">가격 정보가 없습니다.</p>';
-  document.querySelector('#panel-brand .panel-note').textContent='막대는 최저~최고, 점은 중앙값입니다.';
+  renderBrandPrices(products);
 }
 
 // --- compare ----------------------------------------------------------------
@@ -851,10 +848,14 @@ function render() {
     for(const id of ['retailer-tabs','sns-trends','source-note'])$(id).hidden=true;
     return;
   }
-  filtered = filterProducts(products,{...state,isFresh,isSaved},today);
-  if(state.source==='sns'&&state.sort==='newest')
-    filtered=[...filtered].sort((a,b)=>(b.snsTrendMatches||0)-(a.snsTrendMatches||0));
-  const groups = groupProductVariants(filtered);
+  const filterKey=JSON.stringify([today,state.search,[...state.brands].sort(),state.brandGroup,state.category,state.source,state.release,state.sort,state.socialGroup,state.retailer,state.trendTerms,state.freshOnly,state.savedOnly,savedRevision]);
+  if(filteredViewCache?.products!==products||filteredViewCache.key!==filterKey||filteredViewCache.keywordIds!==state.keywordIds){
+    let rows=filterProducts(products,{...state,isFresh,isSaved},today);
+    if(state.source==='sns'&&state.sort==='newest')rows=[...rows].sort((a,b)=>(b.snsTrendMatches||0)-(a.snsTrendMatches||0));
+    filteredViewCache={products,key:filterKey,keywordIds:state.keywordIds,rows,groups:groupProductVariants(rows)};
+  }
+  filtered=filteredViewCache.rows;
+  const groups=filteredViewCache.groups;
   groupCount = groups.length;
   state.page = Math.min(state.page,Math.max(1,Math.ceil(groups.length/PAGE_SIZE)));
   const pageGroups = groups.slice((state.page-1)*PAGE_SIZE,state.page*PAGE_SIZE).map(matches=>[matches[0],...colorGroupOf(matches[0]).filter(p=>p.id!==matches[0].id)]);
@@ -1264,3 +1265,4 @@ document.querySelectorAll('[data-brand-group]').forEach(button=>button.addEventL
 
 bindForecast();
 bindResearchBrief();
+bindBrandPrices();

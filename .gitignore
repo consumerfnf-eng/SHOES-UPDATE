@@ -82,3 +82,12 @@ public/data/catalog-brands/
 public/data/research-brief.json
 data/research-history.json
 logs/20261103/brief-work/
+
+# Internal season proposals and source-backed research artifacts.
+logs/20261103/proposal-work/
+public/proposals/
+public/data/season-proposals.json
+data/season-proposals.json
+
+logs/rank-images/
+data/proposal-reference-upgrades.json

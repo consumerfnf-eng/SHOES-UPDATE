@@ -14,10 +14,10 @@ async function load({catalog,manifest,today}){
  const supplements=await supplemental;
  if(supplements[0].status==='fulfilled')overlay=supplements[0].value;else failed=true;
  if(supplements[1].status==='fulfilled')trends=supplements[1].value;
- self.postMessage({type:'ready',rawProducts:snapshot.products,overlay,trends,prepared:prepareCatalog(snapshot,overlay,trends,today),failed});
+ self.postMessage({type:'ready',trends,prepared:prepareCatalog(snapshot,overlay,trends,today),failed});
 }
 self.onmessage=event=>{
  const message=event.data;
- const task=message.type==='load'?load(message):Promise.resolve().then(()=>self.postMessage({type:'ready',rawProducts:snapshot.products,overlay,trends,prepared:prepareCatalog(snapshot,overlay,trends,message.today),failed:false}));
+ const task=message.type==='load'?load(message):Promise.resolve().then(()=>self.postMessage({type:'ready',trends,prepared:prepareCatalog(snapshot,overlay,trends,message.today),failed:false}));
  task.catch(error=>self.postMessage({type:'error',message:error.message}));
 };

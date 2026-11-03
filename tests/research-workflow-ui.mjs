@@ -18,20 +18,18 @@ try{
  for(let i=0;i<2;i++)await context.route('**/data/fixture-'+i+'.json',r=>json(r,{products:[products[i]]}));
  await context.route('**/data/monthly-catalog.json',r=>json(r,{schemaVersion:2,retail:[],newsletter:[]}));
  await context.route('**/data/trend-keywords.json',r=>json(r,{keywords:[]}));
- const brief=JSON.parse(await fs.readFile('public/data/research-brief.json','utf8'));assert.equal(brief.ideas.length,5);
- await context.route('**/data/research-brief.json',r=>json(r,brief));
+ const idea=(season,i)=>({id:'mock-'+season.toLowerCase()+'-'+i,season,title:'MLB '+season+' Item '+i,subtitle:'Sneaker direction',tags:['Mesh','Retro','MLB'],insight:'Independent season design hypothesis',preview:'/proposals/mock-'+season.toLowerCase()+'-'+i+'/preview.webp',download:'/proposals/mock-'+season.toLowerCase()+'-'+i+'/board.png',references:[],forecast:[],evidence:{officialModels:1,retailModels:1,articles:0,ranking:[],social:[],articleSources:[]}});
+ const brief={schemaVersion:2,asOf:today,seasons:['27SS','27FW','28SS'],coverage:{officialRecords:2,retailRecords:0,newsletterRecords:0,rankItems:30,styleKeywords:15,socialKeywords:0,catwalkLooks:3,forecastReports:3,forecastPages:60},sourceDates:{keywords:at,social:at,forecast:today},method:'Published source evidence, not sales',ideas:['27SS','27FW','28SS'].flatMap(season=>Array.from({length:6},(_,i)=>idea(season,i))),seasonBoards:Object.fromEntries(['27SS','27FW','28SS'].map(season=>[season,{download:'/proposals/season-'+season.toLowerCase()+'/board.png'}]))};
+ await context.route('**/data/season-proposals.json',r=>json(r,brief));
+ await context.route('**/proposals/**',r=>r.fulfill({contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="4800" height="2700"><rect width="4800" height="2700" fill="white"/></svg>'}));
  const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(origin);
- await page.waitForFunction(()=>document.querySelector('#result-count').textContent==='2').catch(async e=>{console.log({errors,body:(await page.locator('body').innerText()).slice(0,1500),workers:page.workers().map(w=>w.url())});throw e;});
- assert.equal(page.workers().length,1,'The catalogue is actually prepared in the module worker');
- assert.equal(await page.locator('#keyword-list .keyword:visible').count(),15,'All 15 ranks are visible without expanding');
+ await page.waitForFunction(()=>document.querySelector('#result-count').textContent==='2');
+ assert.equal(page.workers().length,1,'Catalogue preparation still runs in the module worker');assert.equal(await page.locator('#keyword-list .keyword:visible').count(),15);
  await page.locator('#keyword-list .keyword-select').nth(14).click();assert.equal(await page.locator('#result-count').textContent(),'2');
- await page.locator('[data-source="brief"]').click();await page.locator('.brief-card').first().waitFor();
- assert.equal(await page.locator('.brief-card').count(),5);assert.equal(await page.locator('#brand-group-tabs').isVisible(),false);assert.equal(await page.locator('#product-grid').isVisible(),false);
- await page.locator('[data-brief-view="review"]').click();const metric=page.locator('[data-review-field="metric"]').first();await metric.fill('Same exposure, 7 days, preference rate');await metric.press('Tab');
- assert((await page.locator('#review-save-status').textContent()).includes('이 브라우저'));
- const downloaded=page.waitForEvent('download');await page.locator('#review-export').click();const backup=await downloaded;const backupData=await fs.readFile(await backup.path(),'utf8');assert(backupData.includes('Same exposure'));
- await page.reload();await page.waitForFunction(()=>document.querySelector('#result-count').textContent==='2');await page.locator('[data-source="brief"]').click();await page.locator('.brief-card').first().waitFor();await page.locator('[data-brief-view="review"]').click();assert.equal(await metric.inputValue(),'Same exposure, 7 days, preference rate');
- const dl=page.waitForEvent('download');await page.locator('#brief-html').click();const exported=await dl;assert((await fs.readFile(await exported.path(),'utf8')).includes('SHOES 주간 기획 브리프'));
- for(const width of [1280,900,390]){await page.setViewportSize({width,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`No horizontal overflow at ${width}`);assert.equal(await page.locator('.source-tab:visible').count(),9);}
- assert.deepEqual(errors,[]);console.log('PASS: real module worker, all 15 visible keywords, TOP5 brief, source isolation, persistent review notes, JSON backup, HTML export and responsive menu');
+ await page.locator('[data-source="brief"]').click();await page.locator('.season-proposal-card').first().waitFor();assert.equal(await page.locator('.season-proposal-card').count(),6);assert.equal(await page.locator('#brand-group-tabs').isVisible(),false);assert.equal(await page.locator('#review-panel').count(),0,'The old review board was removed');
+ for(const season of ['27SS','27FW','28SS']){await page.locator('[data-proposal-season="'+season+'"]').click();assert.equal(await page.locator('.season-proposal-card').count(),6);assert((await page.locator('.season-proposal-card h3').first().textContent()).includes(season));}
+ await page.locator('[data-proposal]').first().click();assert.equal(await page.locator('#proposal-viewer').isVisible(),true);await page.locator('#proposal-zoom').click();assert((await page.locator('#proposal-viewer-image').getAttribute('class')).includes('actual-size'));await page.keyboard.press('Escape');assert.equal(await page.locator('#proposal-viewer').isVisible(),false);
+ const dl=page.waitForEvent('download');await page.locator('#proposal-season-download').click();const exported=await dl;assert(exported.suggestedFilename().includes('28SS-SEASON-4800'));
+ for(const width of [1280,900,390]){await page.setViewportSize({width,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No page overflow at '+width);assert.equal(await page.locator('.source-tab:visible').count(),9);}
+ assert.deepEqual(errors,[]);console.log('PASS: compact module worker, all 15 visible keywords, 18 seasonal proposals, old brief removed, season-specific viewer/download, zoom/Escape and responsive navigation');
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

@@ -25,11 +25,14 @@ const CURRENCY = [
 export function priceKrw(product) {
   const label = String(product?.priceLabel || '').trim();
   if (!label) return null;
-  // The first number with at least three digits: "$ 1,250", "119,000원",
+  // Prefer the amount attached to an explicit currency, including $90.
+  // For unmarked amounts retain the legacy three-digit threshold: "$ 1,250", "119,000원",
   // "USD 1030". A two-digit number is usually a size or a discount percent.
-  const found = label.replace(/\s/g, '').match(/\d[\d,.]{2,}/);
+  const compact=label.replace(/\s/g,'');
+  const marked=compact.match(/(?:USD|US\$|EUR|GBP|JPY|CNY|RMB|KRW|[$€£¥₩])([\d,.]+)/i)||compact.match(/([\d,.]+)(?:USD|EUR|GBP|JPY|CNY|RMB|KRW|원|엔|위안)/i);
+  const found = marked||compact.match(/\d[\d,.]{2,}/);
   if (!found) return null;
-  const digits = Number(found[0].replace(/[,.](?=\d{3}\b)/g, '').replace(/,/g, ''));
+  const digits = Number((marked?found[1]:found[0]).replace(/[,.](?=\d{3}\b)/g, '').replace(/,/g, ''));
   if (!Number.isFinite(digits) || digits <= 0) return null;
   const currency = (CURRENCY.find(([re]) => re.test(label)) || [, digits >= 10000 ? 'KRW' : 'USD'])[1];
   const krw = Math.round(digits * (RATES_KRW[currency] ?? 1));
@@ -223,19 +226,19 @@ export function categoryDistribution(products) {
 
 // --- distributions ----------------------------------------------------------
 
-export function priceDistribution(products, {by = 'brand'} = {}) {
+export function priceDistribution(products, {by = 'brand', includeGroups = true} = {}) {
   const priced = products.map(p => ({p, krw: priceKrw(p)})).filter(x => x.krw != null);
   const bands = PRICE_BANDS.map(([, , label]) => ({
     label, count: priced.filter(x => priceBand(x.krw) === label).length,
   }));
-  const groups = [...tally(priced, x => String(x.p[by] || '')).keys()].map(name => {
+  const groups = includeGroups ? [...tally(priced, x => String(x.p[by] || '')).keys()].map(name => {
     const rows = priced.filter(x => String(x.p[by] || '') === name).map(x => x.krw).sort((a, b) => a - b);
     return {
       name, count: rows.length,
       median: rows[Math.floor(rows.length / 2)],
       low: rows[0], high: rows[rows.length - 1],
     };
-  }).sort((a, b) => b.count - a.count);
+  }).sort((a, b) => b.count - a.count) : [];
   return {priced: priced.length, missing: products.length - priced.length, bands, groups};
 }
 
