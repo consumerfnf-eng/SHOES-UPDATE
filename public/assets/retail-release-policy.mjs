@@ -53,3 +53,15 @@ export function retailReleaseEligibility(product,today){
 }
 
 export default retailReleaseEligibility;
+
+// A one-time user-authorized restoration is a historical listing, not proof
+// of first release. Its exact identity must still match the restored record.
+export function isRestoredRetail(product){
+ const r=product?.retailRestoration;
+ return !!r&&r.snapshotId==='retail-restored-20261103'&&String(product.source||'').startsWith('retail-')&&
+  ['id','brand','url','image'].every(k=>typeof product[k]==='string'&&product[k]&&r[k]===product[k])&&r.style===(product.style||'');
+}
+export function retailPublicationEligibility(product,today){
+ if(isRestoredRetail(product))return {eligible:true,reason:'user-restored-retail-listing',releaseDate:null,cutoff:null};
+ return retailReleaseEligibility(product,today);
+}

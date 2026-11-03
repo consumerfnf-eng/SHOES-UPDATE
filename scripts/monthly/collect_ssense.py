@@ -235,6 +235,8 @@ def main():
             seen.add(item['url'])
             items.append(item)
 
+    from dedupe_rules import drop_excluded_brands, excluded_brand_keys
+    items = drop_excluded_brands(items, excluded_brand_keys())
     detail_status = {'step': 'product-page enrichment'}
     if items:
         enrich_with_product_pages(items, bee, detail_status)

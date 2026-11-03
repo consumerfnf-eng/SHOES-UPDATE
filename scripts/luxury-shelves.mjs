@@ -37,6 +37,7 @@ export const LUXURY_MAISONS=new Set(['Louis Vuitton','Miu Miu','Prada','Gucci','
   'Lanvin','AMIRI','Off-White','Golden Goose','Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry',"Burberry","Versace","Balmain","Ferragamo","Jimmy Choo","Christian Louboutin","MCM","Coach","Tory Burch","Bally","Stella McCartney","Kenzo"]);
 
 for(const name of SITE_BRAND_GROUPS.find(g=>g.name==='LUX').priority)LUXURY_MAISONS.add(name);
+for(const name of [...LUXURY_MAISONS])if(isExcludedBrand(name))LUXURY_MAISONS.delete(name);
 export function isLuxuryMaison(brand){return LUXURY_MAISONS.has(brand);}
 
 /** Words a shop uses for the parts of itself that are not this season. */

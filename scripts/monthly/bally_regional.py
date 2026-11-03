@@ -5,6 +5,9 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 
 def collect():
+ excluded=json.loads((ROOT/'config/excluded-brands.json').read_text(encoding='utf-8'))
+ if any(b.get('name')=='Bally' for b in excluded.get('brands',[])):
+  print('Bally collection disabled by site brand policy');return
  from curl_cffi import requests
  checked=datetime.now(timezone.utc).isoformat();rows=[];pages=[]
  for page in range(1,13):

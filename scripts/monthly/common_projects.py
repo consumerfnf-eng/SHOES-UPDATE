@@ -59,6 +59,10 @@ def make_item(retailer, product_id, name, url, image, color, material, manufactu
 
 
 def main():
+    excluded = json.loads((ROOT / 'config/excluded-brands.json').read_text(encoding='utf-8'))
+    if any(b.get('name') == 'Common Projects' for b in excluded.get('brands', [])):
+        print('Common Projects collection disabled by site brand policy')
+        return
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--from-cache', action='store_true')

@@ -459,14 +459,6 @@
       "siteScopeReason": "not-in-user-brand-list"
     },
     {
-      "id": "common-projects",
-      "name": "Common Projects",
-      "group": "contemporary",
-      "policy": "core",
-      "mandatory": false,
-      "siteGroup": "LUX"
-    },
-    {
       "id": "golden-goose",
       "name": "Golden Goose",
       "group": "contemporary",
@@ -1059,14 +1051,6 @@
       "siteGroup": "CASUAL"
     },
     {
-      "id": "martine-rose",
-      "name": "Martine Rose",
-      "group": "contemporary",
-      "policy": "core",
-      "mandatory": false,
-      "siteGroup": "LUX"
-    },
-    {
       "id": "the-row",
       "name": "The Row",
       "group": "luxury",
@@ -1100,14 +1084,6 @@
       "mandatory": false,
       "previousPolicy": "exclude",
       "siteScopeReason": "not-in-user-brand-list"
-    },
-    {
-      "id": "bally",
-      "name": "Bally",
-      "group": "luxury",
-      "policy": "core",
-      "mandatory": false,
-      "siteGroup": "LUX"
     },
     {
       "id": "loro-piana",
@@ -1391,24 +1367,8 @@
       "mandatory": false
     },
     {
-      "id": "viviennewestwood",
-      "name": "Vivienne Westwood",
-      "group": "contemporary",
-      "siteGroup": "LUX",
-      "policy": "core",
-      "mandatory": false
-    },
-    {
       "id": "tomford",
       "name": "TOM FORD",
-      "group": "contemporary",
-      "siteGroup": "LUX",
-      "policy": "core",
-      "mandatory": false
-    },
-    {
-      "id": "marcjacobs",
-      "name": "Marc Jacobs",
       "group": "contemporary",
       "siteGroup": "LUX",
       "policy": "core",

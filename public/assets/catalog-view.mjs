@@ -2,7 +2,7 @@ import {footwearTypes,FOOTWEAR_TYPES} from './footwear-policy.mjs';
 import {hasArrivalEvidence} from './publication-window.mjs';
 import {reviewedDesignName,manufacturerCode,identityFold,titleColorLabel} from './product-identity.mjs';
 import {siteBrandGroup,isSiteBrandAllowed} from './site-brand-policy.mjs';
-import {retailReleaseEligibility} from './retail-release-policy.mjs';
+import {retailPublicationEligibility} from './retail-release-policy.mjs';
 export function kstToday(now = new Date()) {
   const shifted = new Date(now.getTime() + 9 * 60 * 60 * 1000);
   return shifted.toISOString().slice(0, 10);
@@ -799,7 +799,7 @@ export function overlayWindowDay(product) {
 }
 
 export function overlayReleaseState(product, today = kstToday()) {
-  if(String(product?.source||'').startsWith('retail-'))return retailReleaseEligibility(product,today).eligible?'released':null;
+  if(String(product?.source||'').startsWith('retail-'))return retailPublicationEligibility(product,today).eligible?'released':null;
   const day = overlayWindowDay(product);
   if (!validDay(day) || day > today) return null;
   if (day < shiftCalendarMonths(today, -3)) return null;

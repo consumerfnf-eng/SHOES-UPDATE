@@ -18,8 +18,8 @@ const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
 const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),brandGroup:'all',category:'all',source:'all',catwalkShow:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
-const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter'],['retail-mrporter','MR PORTER'],['retail-kith','Kith'],['retail-bally-uae','Bally UAE']];
-const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter','retail-mrporter':'MR PORTER','retail-kith':'Kith','retail-bally-uae':'Bally UAE'};
+const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter'],['retail-mrporter','MR PORTER'],['retail-kith','Kith']];
+const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter','retail-mrporter':'MR PORTER','retail-kith':'Kith'};
 let catalog = null, overlay = null, trends = null, rankBoards = null, catwalk = null, catwalkShown = 0, catwalkPicked = new Set(), catwalkAnchor = '', catwalkShowsOpen = false, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
 const activeVariant = new Map();
 let productGroups = new Map();
@@ -46,7 +46,10 @@ function colorChipsMarkup(group, activeId){
 
 function outboundUrl(p){ return isOverlay(p)?safeUrl(p.url):reviewedProductPageUrl(p,today); }
 function overlayDateLabel(p){
-  if(overlayKind(p)==='retail')return p.releaseEvidence?.date?`${dateText(p.releaseEvidence.date)} 최초 발매`:'발매일 미확인';
+  if(overlayKind(p)==='retail'){
+    if(p.retailRestoration){const day=String(p.listedAt||p.firstDetectedAsNewAt||'').slice(0,10);return `${day?dateText(day)+' 목록 확인 · ':''}기존 리테일 · 출시일 미확인`;}
+    return p.releaseEvidence?.date?`${dateText(p.releaseEvidence.date)} 최초 발매`:'발매일 미확인';
+  }
   const day=overlayWindowDay(p);
   if(!day)return '등록일 미확인';
   if(overlayKind(p)==='newsletter')return `${dateText(day)} 기사`;
@@ -857,7 +860,7 @@ function render() {
   $('empty-reset').textContent='필터 초기화'; delete $('empty-reset').dataset.retry;
   if (!filtered.length) {
     $('empty-title').textContent = state.source==='sns'?'공개 SNS 지표를 확인한 상품이 없습니다':state.source==='brand'?'공식 정보 확인을 마친 출시 상품이 없습니다':state.source==='retail'?'조건에 맞는 리테일 신상이 없습니다':state.source==='newsletter'?'조건에 맞는 뉴스레터 신상이 없습니다':state.source==='all' ? '조건에 맞는 상품이 없습니다' : `${sourceNames[state.source]} 선정 기준을 충족한 상품이 없습니다`;
-    $('empty-description').textContent = state.source==='retail' ? '최근 3개월 내 최초 출시일이 확인된 상품만 표시합니다. 재발매·재입고와 출시일 미확인 상품은 제외합니다.' : state.source==='newsletter' ? '최근 3개월 기사 중 브랜드가 확인된 신상 신발만 표시합니다. 필터를 줄여 보세요.' : state.source==='sns' ? '최근 3개월에 확인한 검색량·해시태그 게시물 수와 공식 상품 정보를 갖춘 상품부터 표시합니다. 공개되지 않은 수치는 미공개로 구분합니다.' : state.source==='media' ? '매거진·뉴스레터를 합쳐 최근 30일 이내 독립된 출처 2곳 이상이 직접 소개한 상품을 보여줍니다.' : state.source==='ecommerce' ? '국가·카테고리·확인일이 있는 실제 랭킹의 상품이 필요합니다.' : state.source==='brand'?'브랜드 공식 상품 탭은 LUX 공식 홈페이지의 스니커즈만 표시합니다.':'필터를 줄여 보세요. 공식 New·New Arrivals 근거가 없거나 게시 후 3개월이 지난 상품은 표시하지 않습니다.';
+    $('empty-description').textContent = state.source==='retail' ? '기존 브랜드 범위에 맞는 리테일 목록을 복원했습니다. 브랜드·검색 필터를 줄여 보세요.' : state.source==='newsletter' ? '최근 3개월 기사 중 브랜드가 확인된 신상 신발만 표시합니다. 필터를 줄여 보세요.' : state.source==='sns' ? '최근 3개월에 확인한 검색량·해시태그 게시물 수와 공식 상품 정보를 갖춘 상품부터 표시합니다. 공개되지 않은 수치는 미공개로 구분합니다.' : state.source==='media' ? '매거진·뉴스레터를 합쳐 최근 30일 이내 독립된 출처 2곳 이상이 직접 소개한 상품을 보여줍니다.' : state.source==='ecommerce' ? '국가·카테고리·확인일이 있는 실제 랭킹의 상품이 필요합니다.' : state.source==='brand'?'브랜드 공식 상품 탭은 LUX 공식 홈페이지의 스니커즈만 표시합니다.':'필터를 줄여 보세요. 공식 New·New Arrivals 근거가 없거나 게시 후 3개월이 지난 상품은 표시하지 않습니다.';
   }
   $('page-range').textContent = groups.length ? `${(state.page-1)*PAGE_SIZE+1}–${Math.min(state.page*PAGE_SIZE,groups.length)} / ${groups.length.toLocaleString()}` : '0개 상품';
   $('mobile-brand-count').textContent=state.brands.size?String(state.brands.size):'';
@@ -866,7 +869,7 @@ function render() {
 function renderSourceDescription() {
   if (state.source === 'all') {
     const narrowed=state.brands.size||state.category!=='all'||state.search||state.release!=='all';
-    $('result-description').textContent=state.keywordLabel?`${state.keywordLabel} ${narrowed?'관련 상품 · 선택한 필터 적용':'전체 상품 · 선택한 브랜드 그룹'}`:'LUX 공식 상품과 검증된 신상품입니다. 브랜드 그룹별로 확인할 수 있습니다.';
+    $('result-description').textContent=state.keywordLabel?`${state.keywordLabel} ${narrowed?'관련 상품 · 선택한 필터 적용':'전체 상품 · 선택한 브랜드 그룹'}`:'LUX 공식 상품과 리테일·뉴스레터 목록입니다. 브랜드 그룹별로 확인할 수 있습니다.';
     return;
   }
   if(state.source==='brand'){
@@ -878,7 +881,7 @@ function renderSourceDescription() {
     const rows=products.filter(p=>isOverlay(p)&&overlayKind(p)===kind&&overlayReleaseState(p,today));
     const labels=[...new Set(rows.map(sourceLabelOf).filter(Boolean))].sort();
     $('result-description').innerHTML=labels.length
-      ?`확인된 출처: ${labels.map(esc).join(' · ')}<span class="source-context">${kind==='retail'?'최근 3개월 내 최초 출시 근거를 확인했습니다. 재발매·재입고 상품은 제외합니다.':'기사에서 브랜드가 확인된 신상 신발입니다. 원문은 카드를 눌러 확인하세요.'}</span>`
+      ?`확인된 출처: ${labels.map(esc).join(' · ')}<span class="source-context">${kind==='retail'?'기존 리테일 목록을 복원했습니다. 목록 확인일과 실제 출시일은 다르며, 같은 모델의 색상·소재는 한 카드에 표시합니다.':'기사에서 브랜드가 확인된 신상 신발입니다. 원문은 카드를 눌러 확인하세요.'}</span>`
       :'아직 게시된 상품이 없습니다.';
     return;
   }
@@ -1025,7 +1028,7 @@ function renderTrendKeywords() {
   }));
 }
 const SOURCE_NOTES={
-  retail:'브랜드·제품코드·상품 페이지에 연결된 최초 출시일을 확인한 상품 중 최근 3개월 신규 출시만 표시합니다. 재발매·재입고를 제외하며 리테일 등록일·판매 확인일·최초 수집일은 출시일로 사용하지 않습니다.',
+  retail:'기존 리테일 원본 중 허용 브랜드 목록을 복원했습니다. 목록 확인일은 출시일이 아닙니다. 공식 상품과 동일한 변형은 공식 출처를 우선하며, 이후 신규 수집에는 최초 출시 검증 기준을 적용합니다.',
   newsletter:'Sneaker News·Highsnobiety·Sneaker Freaker·Hypebeast·Hypebeast Korea·Concept Kicks·Footwear News의 최근 3개월 기사 중 브랜드가 확인된 신상 신발입니다. 기사에 적힌 발매일이 아직 오지 않은 아이템은 발매 예정으로 표시합니다.',
 };
 function renderSourceNote(){

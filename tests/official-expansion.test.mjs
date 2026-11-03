@@ -408,8 +408,8 @@ test('assemble reports what it read and claims no more than that', () => {
   assert.deepEqual(output.coverage.scope.brands, ['Toga Pulla', 'Toga Virilis']);
   assert.equal(output.coverage.scope.brandsRead, 2);
   assert.deepEqual(output.coverage.scope.nonCatalogueLinesSeen, ['Toga']);
-  assert.equal(output.coverage.scope.luxBrandsRegistered, 62);
-  assert.equal(output.coverage.scope.luxBrandsNotRead, 60);
+  assert.equal(output.coverage.scope.luxBrandsRegistered, 57);
+  assert.equal(output.coverage.scope.luxBrandsNotRead, 55);
   assert.match(output.coverage.scope.claim, /not a reading of all registered LUX brands/);
   // A brand whose configured source carries no assortment basis is reported.
   assert.deepEqual(output.coverage.brandsWithoutConfiguredAssortmentSource, ['Toga Pulla']);

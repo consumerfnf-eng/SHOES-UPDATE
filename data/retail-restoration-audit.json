@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-03T02:57:51.039Z",
+  "supersedesReleaseAudit": "00c3d809",
+  "groups": [
+    {
+      "name": "LUX",
+      "brands": 57
+    },
+    {
+      "name": "SPORTS",
+      "brands": 38
+    },
+    {
+      "name": "CASUAL",
+      "brands": 16
+    }
+  ],
+  "originalRetail": 3191,
+  "restoredRetail": 1939,
+  "removedFiveBrandRecords": 152,
+  "otherOutOfScopeRecords": 1100,
+  "originalArchiveHash": "cb776021eb5260786a97f8f3d4db33b23d925abc2a63c3cc7568b94ffa95832f",
+  "originalArchiveUnchanged": true,
+  "officialRecords": 7171,
+  "newsletterRecords": 608,
+  "removedBrands": [
+    "Common Projects",
+    "Bally",
+    "Martine Rose",
+    "Vivienne Westwood",
+    "Marc Jacobs"
+  ],
+  "premiumLooks": 247,
+  "premiumHash": "e81f02fde7c2079cdfb2c995eaa98309021e40f316dd096f2642cccf765c1442",
+  "rawJsonBytes": {
+    "public/data/catalog-ui.json": 9815546,
+    "public/data/monthly-catalog.json": 3570259
+  },
+  "newRetailCollectionRequiresFirstReleaseProof": true,
+  "restoredListingsHaveNoReleaseAgeGate": true
+}

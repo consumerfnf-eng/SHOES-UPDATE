@@ -5,7 +5,8 @@ import {fileURLToPath} from 'node:url';
 import {reviewedDesignName,preferOfficialVariants,identityFold,manufacturerCode} from '../public/assets/product-identity.mjs';
 import {unifyVariantGroups,groupProductVariants,variantGroupName,variantColorLabel,kstToday,productAudience} from '../public/assets/catalog-view.mjs';
 import {canonicalSiteBrand,isSiteBrandAllowed,siteBrandGroup} from '../public/assets/site-brand-policy.mjs';
-import {retailReleaseEligibility} from '../public/assets/retail-release-policy.mjs';
+import {retailPublicationEligibility} from '../public/assets/retail-release-policy.mjs';
+import {restoreRetailSnapshot} from './restore-retail-snapshot.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {buildStyleTrendBoard} from './style-trend-board.mjs';
 import {productPresentation} from './product-presentation.mjs';
@@ -17,22 +18,18 @@ const root=new URL('../',import.meta.url);
 const read=async(path,fallback)=>{try{return JSON.parse(await fs.readFile(new URL(path,root),'utf8'));}catch(e){if(e.code==='ENOENT')return fallback;throw e;}};
 export async function finalizeCatalogIdentity() {
   const c=await read('public/data/catalog.json',{}),m=await read('public/data/monthly-catalog.json',{schemaVersion:2,retail:[],newsletter:[],sources:{}});
-  const supplement=await read('data/common-projects-retail.json',{products:[]});
-  const bally=await read('data/bally-regional-retail.json',{products:[]});
-  supplement.products.push(...bally.products);
   const rawRetail=await read('data/retail-source.json',{products:[]});
-  const rawById=new Map([...rawRetail.products,...m.retail,...supplement.products].map(p=>[p.id,p]));
+  const rawById=new Map(rawRetail.products.map(p=>[p.id,p]));
+  for(const p of m.retail)if(!rawById.has(p.id))rawById.set(p.id,p);
   await fs.writeFile(new URL('data/retail-source.json',root),JSON.stringify({schemaVersion:1,products:[...rawById.values()]},null,2)+'\n');
+  m.retail=restoreRetailSnapshot(m.retail,rawRetail.products,await read('config/retail-restoration.json',{}));
   const photos=await read('data/product-photo-analysis.json',{photos:{}});
   const photoAttributes=await read('data/official-photo-attributes.json',{products:[]});
   const colourReviews=await read('data/product-colour-reviews.json',{products:[]});
   const cache=await read('data/photo-cache.json',{images:{}});
   const designReviews=await read('data/product-variant-reviews.json',{products:[]});
   const presentationReviews=await read('data/product-presentation.json',{products:[]});
-  const ballyRefreshed=bally.schemaVersion===1&&Array.isArray(bally.pages)&&bally.pages.length>0;
-  const byId=new Map(m.retail.filter(p=>!ballyRefreshed||p.source!=='retail-bally-uae').map(p=>[p.id,p]));
-  for(const p of supplement.products)byId.set(p.id,productPresentation(p,presentationReviews)||p);
-  m.retail=[...byId.values()].filter(p=>!isExcludedBrand(p.brand));
+  m.retail=m.retail.filter(p=>!isExcludedBrand(p.brand)).map(p=>productPresentation(p,presentationReviews)||p);
   for(const p of [...m.retail,...(m.newsletter||[])]){
     const canonical=canonicalBrand(p.brand);
     if(canonical!==p.brand){p.brandAsListed??=p.brand;p.brand=canonical;}
@@ -51,14 +48,14 @@ export async function finalizeCatalogIdentity() {
   c.products=c.products.filter(p=>isSiteBrandAllowed(p.brand));
   m.retail=m.retail.filter(p=>isSiteBrandAllowed(p.brand));
   m.newsletter=m.newsletter.filter(p=>isSiteBrandAllowed(p.brand));
-  const releaseRemoved=m.retail.map(p=>({id:p.id,brand:p.brand,...retailReleaseEligibility(p,kstToday())})).filter(p=>!p.eligible);
-  m.retail=m.retail.filter(p=>retailReleaseEligibility(p,kstToday()).eligible);
+  const releaseRemoved=m.retail.map(p=>({id:p.id,brand:p.brand,...retailPublicationEligibility(p,kstToday())})).filter(p=>!p.eligible);
+  m.retail=m.retail.filter(p=>retailPublicationEligibility(p,kstToday()).eligible);
   const scopePrior=await read('data/publication-scope-review.json',{});
   const siteRemovalHistory=[...new Map([...(scopePrior.siteRemovalHistory||scopePrior.siteRemoved||[]),...siteRemoved].map(p=>[p.id,p])).values()];
   const retailReleaseRemovalHistory=[...new Map([...(scopePrior.retailReleaseRemovalHistory||scopePrior.retailReleaseRemoved||[]),...releaseRemoved].map(p=>[p.id,p])).values()];
   await fs.writeFile(new URL('data/publication-scope-review.json',root),JSON.stringify({checkedAt:new Date().toISOString(),siteRemoved,retailReleaseRemoved:releaseRemoved,siteRemovalHistory,retailReleaseRemovalHistory},null,2)+'\n');
   c.brands=[...new Map((c.brands||[]).map(b=>{const name=canonicalSiteBrand(b.name);return [name,{...b,name,siteGroup:siteBrandGroup(name)}];})).values()].filter(b=>isSiteBrandAllowed(b.name));
-  for(const p of supplement.products){const e=p.availabilityEvidence;m.sources[p.source]={label:p.retailer,listingUrl:e.listingUrl,checkedAt:e.verifiedAt,basis:'current-assortment'};}
+  for(const key of Object.keys(m.sources||{}))if(key==='retail-bally-uae')delete m.sources[key];
   let correctedNames=0, inferredColours=0;
   const officialDropped=[];
   // Kering collectors can save the same full colour/material SKU as a slug,

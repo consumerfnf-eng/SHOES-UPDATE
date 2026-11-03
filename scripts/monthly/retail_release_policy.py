@@ -118,3 +118,16 @@ def retail_release_eligibility(product, today: str) -> dict:
     if release_date < cutoff:
         return _verdict(False, "release-outside-three-calendar-months", release_date, cutoff)
     return _verdict(True, "release-verified-within-three-calendar-months", release_date, cutoff)
+
+
+def retail_publication_eligibility(product, today: str) -> dict:
+    """Preserve the exact user-restored snapshot without inventing release proof."""
+    if isinstance(product, dict):
+        proof = product.get('retailRestoration')
+        if (isinstance(proof, dict) and proof.get('snapshotId') == 'retail-restored-20261103'
+                and str(product.get('source', '')).startswith('retail-')
+                and all(isinstance(product.get(k), str) and product[k] and proof.get(k) == product[k]
+                        for k in ('id', 'brand', 'url', 'image'))
+                and proof.get('style') == (product.get('style') or '')):
+            return _verdict(True, 'user-restored-retail-listing', None, None)
+    return retail_release_eligibility(product, today)
