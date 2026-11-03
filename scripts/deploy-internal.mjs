@@ -26,6 +26,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {prepareDeploymentAssets,removeDeploymentAssets} from './deployment-assets.mjs';
+import {buildWeeklyInsights} from './build-weekly-insights.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const PROJECT = process.env.INTERNAL_PAGES_PROJECT || 'shoes-update-internal';
@@ -47,6 +48,12 @@ function passwordIsSet(project) {
 const snapshot = await exists('public/data/catwalk.json');
 const renditions = await count('public/catwalk');
 const appHtml=await fs.readFile(path.join(root,'public/index.html'),'utf8');
+if(appHtml.includes('id="weekly-insight-cards"')){
+ await buildWeeklyInsights();
+ const weekly=JSON.parse(await fs.readFile(path.join(root,'public/data/weekly-insights.json'),'utf8'));
+ if(weekly.schemaVersion!==1||!Array.isArray(weekly.cards))throw Error('Weekly insight snapshot missing or invalid');
+ for(const card of weekly.cards)for(const ref of card.images)if(!await exists('public/'+ref.image.replace(/^\//,'')))throw Error('Weekly insight reference missing: '+ref.image);
+}
 if(appHtml.includes('data-source="brief"')){
  const brief=JSON.parse(await fs.readFile(path.join(root,'public/data/season-proposals.json'),'utf8'));
  if(brief.schemaVersion!==2||!Array.isArray(brief.ideas)||['27SS','27FW','28SS'].some(s=>brief.ideas.filter(i=>i.season===s).length<5))throw Error('Season proposals missing or incomplete; run npm run build before deployment');

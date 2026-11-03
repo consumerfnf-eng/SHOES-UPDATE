@@ -1,5 +1,6 @@
 import {buildCatalogChunks} from './build-catalog-chunks.mjs';
 import {buildSeasonProposals} from './build-season-proposals.mjs';
+import {buildWeeklyInsights} from './build-weekly-insights.mjs';
 import {isSiteBrandAllowed,canonicalSiteBrand} from '../public/assets/site-brand-policy.mjs';
 import fs from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
@@ -80,6 +81,7 @@ const commit=process.env.CF_PAGES_COMMIT_SHA||execFileSync('git',['rev-parse','H
 execFileSync('python',['scripts/build-card-thumbnails.py'],{cwd:root,stdio:'inherit'});
 await fs.copyFile(new URL('data/mlb-price-benchmark.json',root),new URL('public/data/mlb-price-benchmark.json',root));
 await buildSeasonProposals();
+await buildWeeklyInsights();
 catalog=JSON.parse(await fs.readFile(new URL('public/data/catalog.json',root),'utf8'));
 publicPublicationStatus(catalog);
 await fs.writeFile(new URL('public/data/catalog.json',root),JSON.stringify(catalog)+'\n');

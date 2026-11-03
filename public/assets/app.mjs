@@ -4,6 +4,7 @@ import {prepareCatalog} from './catalog-runtime.mjs';
 import {isAllowedFeedLook,runwayFirst} from './research-policy.mjs';
 import {renderForecast,bindForecast} from './forecast.mjs';
 import {renderResearchBrief,bindResearchBrief} from './research-brief.mjs';
+import {renderWeeklyInsights} from './weekly-insights.mjs';
 import { EXPORT_COLUMNS, exportRows, csvBytes, xlsxBytes, zipStored, catwalkFileName, catwalkManifestRows } from './export.mjs';
 import {decodeCatalog} from './catalog-wire.mjs';
 import {isExcludedBrand} from './brand-exclusions.mjs';
@@ -787,6 +788,7 @@ function renderAnalysis(){
   if(walk)renderCatwalk();
   $('rank-boards').hidden=!on||!(rankBoards?.boards||[]).some(b=>b.items?.length);
   if(!on)return;
+  void renderWeeklyInsights();
   renderRankBoards();
   const rows=analysisScope(),stamp=rows.map(p=>p.id).join('|');
   if(renderedAnalysis?.products===products&&renderedAnalysis.stamp===stamp&&renderedAnalysis.revision===categoryRevision)return;

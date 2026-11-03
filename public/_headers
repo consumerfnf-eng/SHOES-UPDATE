@@ -30,3 +30,5 @@
   Cache-Control: private, max-age=0, must-revalidate
 /data/rank-boards.json
   Cache-Control: private, max-age=0, must-revalidate
+/data/weekly-insights.json
+  Cache-Control: private, max-age=0, must-revalidate
