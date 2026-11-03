@@ -39,6 +39,39 @@
   ],
   "Alo": [
     {
+      "name": "Alo official New",
+      "url": "https://www.aloyoga.com/ko-kr/collections/mens-new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.aloyoga.com/ko-kr/collections/new-arrivals",
+        "targetUrl": "https://www.aloyoga.com/ko-kr/collections/mens-new-arrivals",
+        "contentHash": "bfd0394bb25d087c2dce4f050b578240f99a52c9cd19f8ea1a82f6d0b45cdbe1",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Alo official New",
+      "url": "https://www.aloyoga.com/ko-kr/collections/new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.aloyoga.com/ko-kr/collections/new-arrivals",
+        "targetUrl": "https://www.aloyoga.com/ko-kr/collections/new-arrivals",
+        "contentHash": "bfd0394bb25d087c2dce4f050b578240f99a52c9cd19f8ea1a82f6d0b45cdbe1",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Alo official New",
+      "url": "https://www.aloyoga.com/ko-kr/collections/new-arrivals#MainContent",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.aloyoga.com/ko-kr/collections/new-arrivals",
+        "targetUrl": "https://www.aloyoga.com/ko-kr/collections/new-arrivals#MainContent",
+        "contentHash": "bfd0394bb25d087c2dce4f050b578240f99a52c9cd19f8ea1a82f6d0b45cdbe1",
+        "excerpt": "Skip to content"
+      }
+    },
+    {
       "name": "Alo Official daily source",
       "url": "https://www.aloyoga.com/collections/new-arrivals"
     },
@@ -53,6 +86,17 @@
     {
       "name": "Alo Official newest first (newest first)",
       "url": "https://www.aloyoga.com/en-kr/collections/sneakers?sort_by=created-descending"
+    },
+    {
+      "name": "Alo Korea official New Shoes",
+      "url": "https://www.aloyoga.com/ko-kr/collections/new-arrivals?Product+Type=Accessories%3AShoes%3ABoots%2CAccessories%3AShoes%3ASlides%2CAccessories%3AShoes%3ASneakers%2CAccessories%3AShoes%3ASlippers",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.aloyoga.com/ko-kr/collections/new-arrivals",
+        "targetUrl": "https://www.aloyoga.com/ko-kr/collections/new-arrivals?Product+Type=Accessories%3AShoes%3ABoots%2CAccessories%3AShoes%3ASlides%2CAccessories%3AShoes%3ASneakers%2CAccessories%3AShoes%3ASlippers",
+        "contentHash": "50aa0d4b51a3744fb57493c5f037a03b929d67f208b4799f2a7ebfb56f1d8e47",
+        "excerpt": "여성 신제품 · 신발 필터 4개 · 14개 제품"
+      }
     }
   ],
   "Amina Muaddi": [
@@ -72,6 +116,50 @@
     }
   ],
   "ASICS": [
+    {
+      "name": "ASICS official New",
+      "url": "https://www.asics.com/us/en-us/sportstyle-new-arrivals/c/aa90000023/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.asics.com/us/en-us/releases/",
+        "targetUrl": "https://www.asics.com/us/en-us/sportstyle-new-arrivals/c/aa90000023/",
+        "contentHash": "dbd28c51e1f8fc9e6273401bb6cbbf84157e69462a13ae0a72453bc2afac49eb",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "ASICS official New",
+      "url": "https://www.asics.com/us/en-us/sports-new-arrivals/c/aa90000136/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.asics.com/us/en-us/releases/",
+        "targetUrl": "https://www.asics.com/us/en-us/sports-new-arrivals/c/aa90000136/",
+        "contentHash": "dbd28c51e1f8fc9e6273401bb6cbbf84157e69462a13ae0a72453bc2afac49eb",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "ASICS official New",
+      "url": "https://www.asics.com/us/en-us/womens-new-arrivals/c/aa20101000/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.asics.com/us/en-us/releases/",
+        "targetUrl": "https://www.asics.com/us/en-us/womens-new-arrivals/c/aa20101000/",
+        "contentHash": "dbd28c51e1f8fc9e6273401bb6cbbf84157e69462a13ae0a72453bc2afac49eb",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "ASICS official New",
+      "url": "https://www.asics.com/us/en-us/mens-new-arrivals/c/aa10101000/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.asics.com/us/en-us/releases/",
+        "targetUrl": "https://www.asics.com/us/en-us/mens-new-arrivals/c/aa10101000/",
+        "contentHash": "dbd28c51e1f8fc9e6273401bb6cbbf84157e69462a13ae0a72453bc2afac49eb",
+        "excerpt": "New Arrivals"
+      }
+    },
     {
       "name": "ASICS Official daily source",
       "url": "https://www.asics.com/us/en-us/releases/"
@@ -290,6 +378,72 @@
   ],
   "Converse": [
     {
+      "name": "Converse official New",
+      "url": "https://www.converse.com/shop/custom-print-shoes",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.converse.com/shop/new-arrivals/f/shoes",
+        "targetUrl": "https://www.converse.com/shop/custom-print-shoes",
+        "contentHash": "0fdf5ec0114d66f8e4a000a189677a36d019e8ede4f010caaf79f24127a2ef24",
+        "excerpt": "New In Custom Prints"
+      }
+    },
+    {
+      "name": "Converse official New",
+      "url": "https://www.converse.com/shop/custom-new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.converse.com/shop/new-arrivals/f/shoes",
+        "targetUrl": "https://www.converse.com/shop/custom-new-arrivals",
+        "contentHash": "0fdf5ec0114d66f8e4a000a189677a36d019e8ede4f010caaf79f24127a2ef24",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Converse official New",
+      "url": "https://www.converse.com/shop/mens-new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.converse.com/shop/new-arrivals/f/shoes",
+        "targetUrl": "https://www.converse.com/shop/mens-new-arrivals",
+        "contentHash": "0fdf5ec0114d66f8e4a000a189677a36d019e8ede4f010caaf79f24127a2ef24",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Converse official New",
+      "url": "https://www.converse.com/shop/custom-shoes",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.converse.com/shop/new-arrivals/f/shoes",
+        "targetUrl": "https://www.converse.com/shop/custom-shoes",
+        "contentHash": "0fdf5ec0114d66f8e4a000a189677a36d019e8ede4f010caaf79f24127a2ef24",
+        "excerpt": "New In Custom"
+      }
+    },
+    {
+      "name": "Converse official New",
+      "url": "https://www.converse.com/shop/new-arrivals/f/shoes#0",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.converse.com/shop/new-arrivals/f/shoes",
+        "targetUrl": "https://www.converse.com/shop/new-arrivals/f/shoes#0",
+        "contentHash": "0fdf5ec0114d66f8e4a000a189677a36d019e8ede4f010caaf79f24127a2ef24",
+        "excerpt": "Do Not Sell or Share My Personal Information"
+      }
+    },
+    {
+      "name": "Converse official New",
+      "url": "https://www.converse.com/shop/new-arrivals/f/shoes#main",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.converse.com/shop/new-arrivals/f/shoes",
+        "targetUrl": "https://www.converse.com/shop/new-arrivals/f/shoes#main",
+        "contentHash": "0fdf5ec0114d66f8e4a000a189677a36d019e8ede4f010caaf79f24127a2ef24",
+        "excerpt": "Skip To Main Content"
+      }
+    },
+    {
       "name": "Converse Official daily source",
       "url": "https://www.converse.com/shop/new-arrivals/shoes"
     },
@@ -325,6 +479,72 @@
     }
   ],
   "Diesel": [
+    {
+      "name": "Diesel official New",
+      "url": "https://kr.diesel.com/en/woman/new-arrivals/underwear-and-swimwear/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kr.diesel.com/en/man/new-arrivals/",
+        "targetUrl": "https://kr.diesel.com/en/woman/new-arrivals/underwear-and-swimwear/",
+        "contentHash": "763c74d148c5852c5d517bc3067250ff3846453428e880b05e308a41f10155e0",
+        "excerpt": "New in"
+      }
+    },
+    {
+      "name": "Diesel official New",
+      "url": "https://kr.diesel.com/en/man/new-arrivals/underwear-and-swimwear/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kr.diesel.com/en/man/new-arrivals/",
+        "targetUrl": "https://kr.diesel.com/en/man/new-arrivals/underwear-and-swimwear/",
+        "contentHash": "763c74d148c5852c5d517bc3067250ff3846453428e880b05e308a41f10155e0",
+        "excerpt": "New in"
+      }
+    },
+    {
+      "name": "Diesel official New",
+      "url": "https://kr.diesel.com/en/woman/new-arrivals/denim/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kr.diesel.com/en/man/new-arrivals/",
+        "targetUrl": "https://kr.diesel.com/en/woman/new-arrivals/denim/",
+        "contentHash": "763c74d148c5852c5d517bc3067250ff3846453428e880b05e308a41f10155e0",
+        "excerpt": "Denim for her"
+      }
+    },
+    {
+      "name": "Diesel official New",
+      "url": "https://kr.diesel.com/en/man/new-arrivals/denim/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kr.diesel.com/en/man/new-arrivals/",
+        "targetUrl": "https://kr.diesel.com/en/man/new-arrivals/denim/",
+        "contentHash": "763c74d148c5852c5d517bc3067250ff3846453428e880b05e308a41f10155e0",
+        "excerpt": "Denim for him"
+      }
+    },
+    {
+      "name": "Diesel official New",
+      "url": "https://kr.diesel.com/en/woman/accessories/new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kr.diesel.com/en/man/new-arrivals/",
+        "targetUrl": "https://kr.diesel.com/en/woman/accessories/new-arrivals/",
+        "contentHash": "763c74d148c5852c5d517bc3067250ff3846453428e880b05e308a41f10155e0",
+        "excerpt": "Bags New In"
+      }
+    },
+    {
+      "name": "Diesel official New",
+      "url": "https://kr.diesel.com/en/search-show?cgid=diesel-whatsnew_new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kr.diesel.com/en/man/new-arrivals/",
+        "targetUrl": "https://kr.diesel.com/en/search-show?cgid=diesel-whatsnew_new-arrivals",
+        "contentHash": "763c74d148c5852c5d517bc3067250ff3846453428e880b05e308a41f10155e0",
+        "excerpt": "New arrivals"
+      }
+    },
     {
       "name": "Diesel Official daily source",
       "url": "https://kr.diesel.com/en/man/new-arrivals/"
@@ -810,6 +1030,83 @@
   ],
   "Mizuno": [
     {
+      "name": "Mizuno official New",
+      "url": "https://usa.mizuno.com/volleyball/featured/new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://usa.mizuno.com/running/featured/new-arrivals/",
+        "targetUrl": "https://usa.mizuno.com/volleyball/featured/new-arrivals/",
+        "contentHash": "1c4aa2330aa72ba82d07131f920ba41127f863716b01aa1548233d22ebdc746d",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Mizuno official New",
+      "url": "https://usa.mizuno.com/softball/featured/new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://usa.mizuno.com/running/featured/new-arrivals/",
+        "targetUrl": "https://usa.mizuno.com/softball/featured/new-arrivals/",
+        "contentHash": "1c4aa2330aa72ba82d07131f920ba41127f863716b01aa1548233d22ebdc746d",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Mizuno official New",
+      "url": "https://usa.mizuno.com/baseball/featured/new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://usa.mizuno.com/running/featured/new-arrivals/",
+        "targetUrl": "https://usa.mizuno.com/baseball/featured/new-arrivals/",
+        "contentHash": "1c4aa2330aa72ba82d07131f920ba41127f863716b01aa1548233d22ebdc746d",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Mizuno official New",
+      "url": "https://usa.mizuno.com/golf/featured/new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://usa.mizuno.com/running/featured/new-arrivals/",
+        "targetUrl": "https://usa.mizuno.com/golf/featured/new-arrivals/",
+        "contentHash": "1c4aa2330aa72ba82d07131f920ba41127f863716b01aa1548233d22ebdc746d",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Mizuno official New",
+      "url": "https://usa.mizuno.com/running/mens-shoes/new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://usa.mizuno.com/running/featured/new-arrivals/",
+        "targetUrl": "https://usa.mizuno.com/running/mens-shoes/new-arrivals/",
+        "contentHash": "1c4aa2330aa72ba82d07131f920ba41127f863716b01aa1548233d22ebdc746d",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Mizuno official New",
+      "url": "https://usa.mizuno.com/running/womens-shoes/new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://usa.mizuno.com/running/featured/new-arrivals/",
+        "targetUrl": "https://usa.mizuno.com/running/womens-shoes/new-arrivals/",
+        "contentHash": "1c4aa2330aa72ba82d07131f920ba41127f863716b01aa1548233d22ebdc746d",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Mizuno official New",
+      "url": "https://usa.mizuno.com/running/featured/new-arrivals/#main-content",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://usa.mizuno.com/running/featured/new-arrivals/",
+        "targetUrl": "https://usa.mizuno.com/running/featured/new-arrivals/#main-content",
+        "contentHash": "1c4aa2330aa72ba82d07131f920ba41127f863716b01aa1548233d22ebdc746d",
+        "excerpt": "Skip to main content"
+      }
+    },
+    {
       "name": "Mizuno Official regional New Arrivals check",
       "url": "https://usa.mizuno.com/running/featured/new-arrivals/"
     },
@@ -855,6 +1152,39 @@
   ],
   "Nike": [
     {
+      "name": "Nike official New",
+      "url": "https://www.nike.com/w/new-jordan-37eefz3n82y",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
+        "targetUrl": "https://www.nike.com/w/new-jordan-37eefz3n82y",
+        "contentHash": "35d6c10079576c029d4e396fcf81590f88945789c57d9581d7317217b5c0cd60",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Nike official New",
+      "url": "https://www.nike.com/w/new-womens-3n82yz5e1x6",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
+        "targetUrl": "https://www.nike.com/w/new-womens-3n82yz5e1x6",
+        "contentHash": "35d6c10079576c029d4e396fcf81590f88945789c57d9581d7317217b5c0cd60",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Nike official New",
+      "url": "https://www.nike.com/w/new-mens-3n82yznik1",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.nike.com/w/new-shoes-3n82yzy7ok",
+        "targetUrl": "https://www.nike.com/w/new-mens-3n82yznik1",
+        "contentHash": "35d6c10079576c029d4e396fcf81590f88945789c57d9581d7317217b5c0cd60",
+        "excerpt": ".css-101v3r5{font:var(--podium-cds-typography-body3-strong);display:undefined;}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.css-101v3r5{text-align:left;}[dir=\"rtl\"] .css-101v3r5{text-align:right;}} New Arrivals"
+      }
+    },
+    {
       "name": "Nike Official daily source",
       "url": "https://www.nike.com/w/new-shoes-3n82yzy7ok"
     },
@@ -864,6 +1194,28 @@
     }
   ],
   "norda": [
+    {
+      "name": "norda official New",
+      "url": "https://nordarun.com/collections/new-arrivals/women",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://nordarun.com/collections/mens-trail-running-shoes-1?sort_by=created-descending",
+        "targetUrl": "https://nordarun.com/collections/new-arrivals/women",
+        "contentHash": "70c82098d47be7af991274c2393b6d0ebca1ec7c195189db6ac9fdd4a907b593",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "norda official New",
+      "url": "https://nordarun.com/collections/new-arrivals/men",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://nordarun.com/collections/mens-trail-running-shoes-1?sort_by=created-descending",
+        "targetUrl": "https://nordarun.com/collections/new-arrivals/men",
+        "contentHash": "70c82098d47be7af991274c2393b6d0ebca1ec7c195189db6ac9fdd4a907b593",
+        "excerpt": "New Arrivals"
+      }
+    },
     {
       "name": "norda Official daily source",
       "url": "https://www.nordarun.com/collections/mens-trail-running-shoes-1?sort_by=created-descending"
@@ -985,6 +1337,17 @@
   ],
   "PUMA": [
     {
+      "name": "PUMA official New",
+      "url": "https://us.puma.com/us/en/men/new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://us.puma.com/us/en/launch-calendar",
+        "targetUrl": "https://us.puma.com/us/en/men/new-arrivals",
+        "contentHash": "7f35f86c029c3842f33bf9e3add6b5c3ed979092d3b2cd8240ed0ed4750cdd5d",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
       "name": "PUMA Official daily source",
       "url": "https://us.puma.com/us/en/launch-calendar"
     },
@@ -1000,6 +1363,72 @@
     }
   ],
   "Reebok": [
+    {
+      "name": "Reebok official New",
+      "url": "https://www.reebok.com/collections/new-arrivals-clothing",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.reebok.com/collections/womens-new-arrivals",
+        "targetUrl": "https://www.reebok.com/collections/new-arrivals-clothing",
+        "contentHash": "76a4c962b0ac94d102cce3ba5fe6dc0d86c7fc0534413c32b4493e23f5ed231d",
+        "excerpt": "Clothing"
+      }
+    },
+    {
+      "name": "Reebok official New",
+      "url": "https://www.reebok.com/collections/sport-style",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.reebok.com/collections/womens-new-arrivals",
+        "targetUrl": "https://www.reebok.com/collections/sport-style",
+        "contentHash": "76a4c962b0ac94d102cce3ba5fe6dc0d86c7fc0534413c32b4493e23f5ed231d",
+        "excerpt": "Shop All LTD New Arrivals Classics Apparel LTD Shoes Explore"
+      }
+    },
+    {
+      "name": "Reebok official New",
+      "url": "https://www.reebok.com/products/reebok-engine-a-basketball-shoes-red-red-red-134989",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.reebok.com/collections/womens-new-arrivals",
+        "targetUrl": "https://www.reebok.com/products/reebok-engine-a-basketball-shoes-red-red-red-134989",
+        "contentHash": "76a4c962b0ac94d102cce3ba5fe6dc0d86c7fc0534413c32b4493e23f5ed231d",
+        "excerpt": "Darius Acuff New Arrivals Best Sellers Soccer Find Your Training Shoe Find Your Running Shoe Sportstyle Train for Sport Collaborations Collegiate Colorways Gifts For Him Shoes"
+      }
+    },
+    {
+      "name": "Reebok official New",
+      "url": "https://www.reebok.com/collections/womens-new-arrivals#",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.reebok.com/collections/womens-new-arrivals",
+        "targetUrl": "https://www.reebok.com/collections/womens-new-arrivals#",
+        "contentHash": "76a4c962b0ac94d102cce3ba5fe6dc0d86c7fc0534413c32b4493e23f5ed231d",
+        "excerpt": "Accessibility Toolbar"
+      }
+    },
+    {
+      "name": "Reebok official New",
+      "url": "https://www.reebok.com/collections/new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.reebok.com/collections/womens-new-arrivals",
+        "targetUrl": "https://www.reebok.com/collections/new-arrivals",
+        "contentHash": "76a4c962b0ac94d102cce3ba5fe6dc0d86c7fc0534413c32b4493e23f5ed231d",
+        "excerpt": "Shop New Arrivals"
+      }
+    },
+    {
+      "name": "Reebok official New",
+      "url": "https://www.reebok.com/collections/womens-new-arrivals#MainContent",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.reebok.com/collections/womens-new-arrivals",
+        "targetUrl": "https://www.reebok.com/collections/womens-new-arrivals#MainContent",
+        "contentHash": "76a4c962b0ac94d102cce3ba5fe6dc0d86c7fc0534413c32b4493e23f5ed231d",
+        "excerpt": "Skip to content"
+      }
+    },
     {
       "name": "Reebok Official daily source",
       "url": "https://www.reebok.com/collections/womens-new-arrivals"
@@ -1093,6 +1522,17 @@
   ],
   "Salomon": [
     {
+      "name": "Salomon official New",
+      "url": "https://www.salomon.com/en-us/c/new/inspiration/new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.salomon.com/en-us/c/women/shoes",
+        "targetUrl": "https://www.salomon.com/en-us/c/new/inspiration/new-arrivals",
+        "contentHash": "876ace5f72383803d881919f33793233ea95476bdbd308b2404fde000f2e0799",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
       "name": "Salomon Official daily source",
       "url": "https://www.salomon.com/en-us/c/women/shoes"
     },
@@ -1108,6 +1548,83 @@
     }
   ],
   "Saucony": [
+    {
+      "name": "Saucony official New",
+      "url": "https://www.saucony.com/en/new-arrivals/?prefn1=genericSizeType&prefv1=M&prefn2=isOnSale&prefv2=false",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.saucony.com/en/new-arrivals/",
+        "targetUrl": "https://www.saucony.com/en/new-arrivals/?prefn1=genericSizeType&prefv1=M&prefn2=isOnSale&prefv2=false",
+        "contentHash": "fdcbc513378e2b94b6ed26a0ebc5db1e85f1596a2a8b862759ae75f347bd2992",
+        "excerpt": "Men's (147)"
+      }
+    },
+    {
+      "name": "Saucony official New",
+      "url": "https://www.saucony.com/en/new-arrivals/?prefn1=genericSizeType&prefv1=B&prefn2=isOnSale&prefv2=false",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.saucony.com/en/new-arrivals/",
+        "targetUrl": "https://www.saucony.com/en/new-arrivals/?prefn1=genericSizeType&prefv1=B&prefn2=isOnSale&prefv2=false",
+        "contentHash": "fdcbc513378e2b94b6ed26a0ebc5db1e85f1596a2a8b862759ae75f347bd2992",
+        "excerpt": "Little Kid's (22)"
+      }
+    },
+    {
+      "name": "Saucony official New",
+      "url": "https://www.saucony.com/en/new-arrivals/?prefn1=genericSizeType&prefv1=K&prefn2=isOnSale&prefv2=false",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.saucony.com/en/new-arrivals/",
+        "targetUrl": "https://www.saucony.com/en/new-arrivals/?prefn1=genericSizeType&prefv1=K&prefn2=isOnSale&prefv2=false",
+        "contentHash": "fdcbc513378e2b94b6ed26a0ebc5db1e85f1596a2a8b862759ae75f347bd2992",
+        "excerpt": "Big Kid's (28)"
+      }
+    },
+    {
+      "name": "Saucony official New",
+      "url": "https://www.saucony.com/en/new-arrivals/#",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.saucony.com/en/new-arrivals/",
+        "targetUrl": "https://www.saucony.com/en/new-arrivals/#",
+        "contentHash": "fdcbc513378e2b94b6ed26a0ebc5db1e85f1596a2a8b862759ae75f347bd2992",
+        "excerpt": ""
+      }
+    },
+    {
+      "name": "Saucony official New",
+      "url": "https://www.saucony.com/en/womens-new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.saucony.com/en/new-arrivals/",
+        "targetUrl": "https://www.saucony.com/en/womens-new-arrivals/",
+        "contentHash": "fdcbc513378e2b94b6ed26a0ebc5db1e85f1596a2a8b862759ae75f347bd2992",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Saucony official New",
+      "url": "https://www.saucony.com/en/mens-new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.saucony.com/en/new-arrivals/",
+        "targetUrl": "https://www.saucony.com/en/mens-new-arrivals/",
+        "contentHash": "fdcbc513378e2b94b6ed26a0ebc5db1e85f1596a2a8b862759ae75f347bd2992",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Saucony official New",
+      "url": "https://www.saucony.com/en/new-arrivals/#main",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.saucony.com/en/new-arrivals/",
+        "targetUrl": "https://www.saucony.com/en/new-arrivals/#main",
+        "contentHash": "fdcbc513378e2b94b6ed26a0ebc5db1e85f1596a2a8b862759ae75f347bd2992",
+        "excerpt": "Skip to content"
+      }
+    },
     {
       "name": "Saucony Official daily source",
       "url": "https://www.saucony.com/en/new-arrivals/"
@@ -1279,6 +1796,17 @@
   ],
   "Vans": [
     {
+      "name": "Vans official New",
+      "url": "https://www.vans.com/en-us/c/new-arrivals-5250",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.vans.com/en-us/c/shoes-00081",
+        "targetUrl": "https://www.vans.com/en-us/c/new-arrivals-5250",
+        "contentHash": "a07fbe88396eb7d3b026f466471c434a4799be7df44f13ab2b538d5e8bccd09a",
+        "excerpt": "New Arrivals section"
+      }
+    },
+    {
       "name": "Vans Official daily source",
       "url": "https://www.vans.com/en-us/categories/shoes-c00081"
     }
@@ -1379,6 +1907,17 @@
   ],
   "SATISFY": [
     {
+      "name": "SATISFY official New",
+      "url": "https://satisfyrunning.com/collections/shop-new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://satisfyrunning.com/collections/shop-all",
+        "targetUrl": "https://satisfyrunning.com/collections/shop-new-arrivals",
+        "contentHash": "adc992aee0808e8bd1892462aca96720da6a4f5c0cc98bf3e5a58cdd61cdd440",
+        "excerpt": "NEW ARRIVALS"
+      }
+    },
+    {
       "name": "SATISFY Official public source",
       "url": "https://satisfyrunning.com/collections/shop-all"
     },
@@ -1388,6 +1927,94 @@
     }
   ],
   "KOLON SPORT": [
+    {
+      "name": "KOLON SPORT official New",
+      "url": "https://www.kolonsport.com/Product/TVPOW26532CAM",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.kolonsport.com/",
+        "targetUrl": "https://www.kolonsport.com/Product/TVPOW26532CAM",
+        "contentHash": "239ef5eeb56c0c73d61060127681163856ec854b0c3b5157c518364cc11cd449",
+        "excerpt": "관심상품 추가 TVPOW26532CAM KOLON SPORT [ 26FW 신상품 ] 여성 리버시블 플리스 스커트 (SET-UP) 198,000 원 신상품"
+      }
+    },
+    {
+      "name": "KOLON SPORT official New",
+      "url": "https://www.kolonsport.com/Product/KEXCX26210OTX",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.kolonsport.com/",
+        "targetUrl": "https://www.kolonsport.com/Product/KEXCX26210OTX",
+        "contentHash": "239ef5eeb56c0c73d61060127681163856ec854b0c3b5157c518364cc11cd449",
+        "excerpt": "관심상품 추가 KEXCX26210OTX KOLON SPORT 에어로라이트 X3 풋프린트 75,000 원 신상품"
+      }
+    },
+    {
+      "name": "KOLON SPORT official New",
+      "url": "https://www.kolonsport.com/Product/TVJDW26582PBU",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.kolonsport.com/",
+        "targetUrl": "https://www.kolonsport.com/Product/TVJDW26582PBU",
+        "contentHash": "239ef5eeb56c0c73d61060127681163856ec854b0c3b5157c518364cc11cd449",
+        "excerpt": "관심상품 추가 TVJDW26582PBU KOLON SPORT [ 26FW 신상품 ] 여성 뉴볼륨 스탠다드 후드 미드 다운 재킷 520,000 원 신상품"
+      }
+    },
+    {
+      "name": "KOLON SPORT official New",
+      "url": "https://www.kolonsport.com/Product/KEXBX26200WHX",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.kolonsport.com/",
+        "targetUrl": "https://www.kolonsport.com/Product/KEXBX26200WHX",
+        "contentHash": "239ef5eeb56c0c73d61060127681163856ec854b0c3b5157c518364cc11cd449",
+        "excerpt": "관심상품 추가 KEXBX26200WHX KOLON SPORT 에어로라이트 X3 780,000 원 베스트 신상품"
+      }
+    },
+    {
+      "name": "KOLON SPORT official New",
+      "url": "https://www.kolonsport.com/Product/JKJFW26322GRI",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.kolonsport.com/",
+        "targetUrl": "https://www.kolonsport.com/Product/JKJFW26322GRI",
+        "contentHash": "239ef5eeb56c0c73d61060127681163856ec854b0c3b5157c518364cc11cd449",
+        "excerpt": "관심상품 추가 JKJFW26322GRI KOLON SPORT [ 26FW 신상품 ] 여성 프리마로프트 액티브 이볼브 UL 후드 재킷 220,000 원 신상품"
+      }
+    },
+    {
+      "name": "KOLON SPORT official New",
+      "url": "https://www.kolonsport.com/Product/JKPNW26242BLK",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.kolonsport.com/",
+        "targetUrl": "https://www.kolonsport.com/Product/JKPNW26242BLK",
+        "contentHash": "239ef5eeb56c0c73d61060127681163856ec854b0c3b5157c518364cc11cd449",
+        "excerpt": "관심상품 추가 JKPNW26242BLK KOLON SPORT [ 26FW 신상품 ] 여성 WIGO PRO 레귤러핏 팬츠 270,000 원 신상품"
+      }
+    },
+    {
+      "name": "KOLON SPORT official New",
+      "url": "https://www.kolonsport.com/Product/TVJDW26562IVO",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.kolonsport.com/",
+        "targetUrl": "https://www.kolonsport.com/Product/TVJDW26562IVO",
+        "contentHash": "239ef5eeb56c0c73d61060127681163856ec854b0c3b5157c518364cc11cd449",
+        "excerpt": "관심상품 추가 TVJDW26562IVO KOLON SPORT [ 26FW 신상품 ] 여성 롱 후드 경량 다운 재킷 770,000 원 신상품"
+      }
+    },
+    {
+      "name": "KOLON SPORT official New",
+      "url": "https://www.kolonsport.com/Special/251362?itm_bc=PC_3099_%ED%99%88&itm_ba=3_7284e_MainBanner_%EB%A9%94%EC%9D%B8%20%EB%B0%B0%EB%84%88&itm_bl=2_%EC%A0%95%EA%B8%B0%EC%82%AC%EC%9D%80%ED%92%88%20%EC%88%84%EB%8D%94%EB%B0%B1%20%EA%B8%B0%ED%9A%8D%EC%A0%84_%ED%92%80%EC%82%AC%EC%9D%B4%EC%A6%88_261023",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.kolonsport.com/",
+        "targetUrl": "https://www.kolonsport.com/Special/251362?itm_bc=PC_3099_%ED%99%88&itm_ba=3_7284e_MainBanner_%EB%A9%94%EC%9D%B8%20%EB%B0%B0%EB%84%88&itm_bl=2_%EC%A0%95%EA%B8%B0%EC%82%AC%EC%9D%80%ED%92%88%20%EC%88%84%EB%8D%94%EB%B0%B1%20%EA%B8%B0%ED%9A%8D%EC%A0%84_%ED%92%80%EC%82%AC%EC%9D%B4%EC%A6%88_261023",
+        "contentHash": "239ef5eeb56c0c73d61060127681163856ec854b0c3b5157c518364cc11cd449",
+        "excerpt": "정기사은품 숄더백 기획전_풀사이즈 LIGHT LAYERS, LONGER WALKS 밖에 머물기 좋은 계절, 가을을 더 오래. 신상품 40만원 이상 구매 시 숄더백 GIFT"
+      }
+    },
     {
       "name": "KOLON SPORT Official new arrivals",
       "url": "https://www.kolonsport.com/shop/list.php?ct_id=10"
@@ -1418,6 +2045,39 @@
     }
   ],
   "Merrell": [
+    {
+      "name": "Merrell official New",
+      "url": "https://www.merrell.com/US/en/kid-featured-new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.merrell.com/US/en/mens-shoes/",
+        "targetUrl": "https://www.merrell.com/US/en/kid-featured-new-arrivals/",
+        "contentHash": "997616afd171723aa5e2e3c827c7326776b147a106fd03a6f97cdc5b0a2c909c",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Merrell official New",
+      "url": "https://www.merrell.com/US/en/new-arrivals-footwear-clothing/?prefn1=genericSizeType&prefv1=W&prefn2=genericSizeType&prefv2=U",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.merrell.com/US/en/mens-shoes/",
+        "targetUrl": "https://www.merrell.com/US/en/new-arrivals-footwear-clothing/?prefn1=genericSizeType&prefv1=W&prefn2=genericSizeType&prefv2=U",
+        "contentHash": "997616afd171723aa5e2e3c827c7326776b147a106fd03a6f97cdc5b0a2c909c",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "Merrell official New",
+      "url": "https://www.merrell.com/US/en/new-arrivals-footwear-clothing/?prefn1=genericSizeType&prefv1=M&prefn2=genericSizeType&prefv2=U",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.merrell.com/US/en/mens-shoes/",
+        "targetUrl": "https://www.merrell.com/US/en/new-arrivals-footwear-clothing/?prefn1=genericSizeType&prefv1=M&prefn2=genericSizeType&prefv2=U",
+        "contentHash": "997616afd171723aa5e2e3c827c7326776b147a106fd03a6f97cdc5b0a2c909c",
+        "excerpt": "New Arrivals"
+      }
+    },
     {
       "name": "Merrell Official public source",
       "url": "https://www.merrell.com/US/en/mens-shoes/"
@@ -1468,6 +2128,50 @@
     }
   ],
   "The North Face": [
+    {
+      "name": "The North Face official New",
+      "url": "https://www.thenorthface.com/en-us/c/bags-and-gear/featured/new-arrivals-226139",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.thenorthface.com/en-us/c/shop-all/footwear-747784",
+        "targetUrl": "https://www.thenorthface.com/en-us/c/bags-and-gear/featured/new-arrivals-226139",
+        "contentHash": "fb17ff272afc02986e0be7d466c06ce031a3f0420331a39273bc0936b95a1f53",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "The North Face official New",
+      "url": "https://www.thenorthface.com/en-us/c/shop-all/footwear-new-arrivals-829848",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.thenorthface.com/en-us/c/shop-all/footwear-747784",
+        "targetUrl": "https://www.thenorthface.com/en-us/c/shop-all/footwear-new-arrivals-829848",
+        "contentHash": "fb17ff272afc02986e0be7d466c06ce031a3f0420331a39273bc0936b95a1f53",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "The North Face official New",
+      "url": "https://www.thenorthface.com/en-us/c/womens/womens-featured/womens-new-arrivals-226114",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.thenorthface.com/en-us/c/shop-all/footwear-747784",
+        "targetUrl": "https://www.thenorthface.com/en-us/c/womens/womens-featured/womens-new-arrivals-226114",
+        "contentHash": "fb17ff272afc02986e0be7d466c06ce031a3f0420331a39273bc0936b95a1f53",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "The North Face official New",
+      "url": "https://www.thenorthface.com/en-us/c/mens/mens-featured/mens-new-arrivals-226102",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.thenorthface.com/en-us/c/shop-all/footwear-747784",
+        "targetUrl": "https://www.thenorthface.com/en-us/c/mens/mens-featured/mens-new-arrivals-226102",
+        "contentHash": "fb17ff272afc02986e0be7d466c06ce031a3f0420331a39273bc0936b95a1f53",
+        "excerpt": "New Arrivals"
+      }
+    },
     {
       "name": "The North Face Official public source",
       "url": "https://www.thenorthface.com/en-us/c/shop-all/footwear-747784"
@@ -1530,6 +2234,28 @@
   ],
   "KEEN": [
     {
+      "name": "KEEN official New",
+      "url": "https://www.keenfootwear.com/collections/womens-new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.keenfootwear.com/collections/shoes",
+        "targetUrl": "https://www.keenfootwear.com/collections/womens-new-arrivals",
+        "contentHash": "2a7959277c4fb685710f4cb7f6d911b954ab8d505f342bbd67037eb6e5723fa4",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "KEEN official New",
+      "url": "https://www.keenfootwear.com/collections/mens-new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.keenfootwear.com/collections/shoes",
+        "targetUrl": "https://www.keenfootwear.com/collections/mens-new-arrivals",
+        "contentHash": "2a7959277c4fb685710f4cb7f6d911b954ab8d505f342bbd67037eb6e5723fa4",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
       "name": "KEEN Official public source",
       "url": "https://www.keenfootwear.com/collections/shoes"
     },
@@ -1539,6 +2265,28 @@
     }
   ],
   "OOFOS": [
+    {
+      "name": "OOFOS official New",
+      "url": "https://www.oofos.com/collections/new?filter.v.t.shopify.target-gender=gid%3A%2F%2Fshopify%2FTaxonomyValue%2F19",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.oofos.com/",
+        "targetUrl": "https://www.oofos.com/collections/new?filter.v.t.shopify.target-gender=gid%3A%2F%2Fshopify%2FTaxonomyValue%2F19",
+        "contentHash": "8f18b26972894c243948ef2ce7fa68aeb71531ccf4eeb761c38a1911c2a32ca3",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "OOFOS official New",
+      "url": "https://www.oofos.com/collections/new?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.v.t.shopify.target-gender=gid%3A%2F%2Fshopify%2FTaxonomyValue%2F18",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.oofos.com/",
+        "targetUrl": "https://www.oofos.com/collections/new?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.v.t.shopify.target-gender=gid%3A%2F%2Fshopify%2FTaxonomyValue%2F18",
+        "contentHash": "8f18b26972894c243948ef2ce7fa68aeb71531ccf4eeb761c38a1911c2a32ca3",
+        "excerpt": "New Arrivals"
+      }
+    },
     {
       "name": "OOFOS Official public source",
       "url": "https://www.oofos.com/",
@@ -1585,6 +2333,17 @@
     }
   ],
   "Melissa": [
+    {
+      "name": "Melissa official New",
+      "url": "https://www.shopmelissa.com/collections/new-in-adults",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.shopmelissa.com/collections/adult-sneakers",
+        "targetUrl": "https://www.shopmelissa.com/collections/new-in-adults",
+        "contentHash": "956deb2b1ddb055f4d2558793566b6ba37e42448736876d48594f8e16f73ad85",
+        "excerpt": "New Arrivals"
+      }
+    },
     {
       "name": "Melissa Official US sneakers",
       "url": "https://www.shopmelissa.com/collections/adult-sneakers"
@@ -1708,6 +2467,341 @@
       "name": "TOM FORD official assortment",
       "url": "https://www.tomfordfashion.com/",
       "basis": "assortment"
+    }
+  ],
+  "diadora": [
+    {
+      "name": "diadora official navigation",
+      "url": "https://www.diadora.com/",
+      "basis": "catalogue"
+    }
+  ],
+  "K-SWISS": [
+    {
+      "name": "K-SWISS official New",
+      "url": "https://kswiss.com/collections/rublo-collection",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kswiss.com/",
+        "targetUrl": "https://kswiss.com/collections/rublo-collection",
+        "contentHash": "3b195aec82d70e35eda5c90012df29e5b704d407d84facada5a7f8a5a7504f12",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "K-SWISS official New",
+      "url": "https://kswiss.com/collections/womens-new",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kswiss.com/",
+        "targetUrl": "https://kswiss.com/collections/womens-new",
+        "contentHash": "3b195aec82d70e35eda5c90012df29e5b704d407d84facada5a7f8a5a7504f12",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "K-SWISS official New",
+      "url": "https://kswiss.com/collections/mens-new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kswiss.com/",
+        "targetUrl": "https://kswiss.com/collections/mens-new-arrivals",
+        "contentHash": "3b195aec82d70e35eda5c90012df29e5b704d407d84facada5a7f8a5a7504f12",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "K-SWISS official New",
+      "url": "https://kswiss.com/collections/padel-new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kswiss.com/",
+        "targetUrl": "https://kswiss.com/collections/padel-new-arrivals",
+        "contentHash": "3b195aec82d70e35eda5c90012df29e5b704d407d84facada5a7f8a5a7504f12",
+        "excerpt": "Padel"
+      }
+    },
+    {
+      "name": "K-SWISS official New",
+      "url": "https://kswiss.com/collections/pickleball-new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kswiss.com/",
+        "targetUrl": "https://kswiss.com/collections/pickleball-new-arrivals",
+        "contentHash": "3b195aec82d70e35eda5c90012df29e5b704d407d84facada5a7f8a5a7504f12",
+        "excerpt": "Pickleball"
+      }
+    },
+    {
+      "name": "K-SWISS official New",
+      "url": "https://kswiss.com/collections/tennis-new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kswiss.com/",
+        "targetUrl": "https://kswiss.com/collections/tennis-new-arrivals",
+        "contentHash": "3b195aec82d70e35eda5c90012df29e5b704d407d84facada5a7f8a5a7504f12",
+        "excerpt": "Tennis"
+      }
+    },
+    {
+      "name": "K-SWISS official New",
+      "url": "https://kswiss.com/collections/new-arrivals",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://kswiss.com/",
+        "targetUrl": "https://kswiss.com/collections/new-arrivals",
+        "contentHash": "3b195aec82d70e35eda5c90012df29e5b704d407d84facada5a7f8a5a7504f12",
+        "excerpt": "New Arrivals"
+      }
+    },
+    {
+      "name": "K-SWISS official navigation",
+      "url": "https://kswiss.com/",
+      "basis": "catalogue"
+    }
+  ],
+  "NEPA": [
+    {
+      "name": "NEPA official navigation",
+      "url": "https://www.nplus.co.kr/main/main.asp",
+      "basis": "catalogue"
+    }
+  ],
+  "DESCENTE": [
+    {
+      "name": "DESCENTE official navigation",
+      "url": "https://dk-on.com/descente",
+      "basis": "catalogue"
+    }
+  ],
+  "spyder": [
+    {
+      "name": "spyder official navigation",
+      "url": "https://www.spyder.co.kr/",
+      "basis": "catalogue"
+    }
+  ],
+  "goalstudio": [
+    {
+      "name": "goalstudio official navigation",
+      "url": "https://www.goalstudio.com/",
+      "basis": "catalogue"
+    }
+  ],
+  "Timberland": [
+    {
+      "name": "Timberland official navigation",
+      "url": "https://www.timberland.com/en-us",
+      "basis": "catalogue"
+    }
+  ],
+  "LACOSTE": [
+    {
+      "name": "LACOSTE official New",
+      "url": "https://www.lacoste.com/kr/lacoste/women/new/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.lacoste.com/kr/",
+        "targetUrl": "https://www.lacoste.com/kr/lacoste/women/new/",
+        "contentHash": "072bc7bc419678cb29f2f4f40af0e3e4727341b3e315a8f87d0ef7fe2c43c1c8",
+        "excerpt": "여성 신상품 전체보기"
+      }
+    },
+    {
+      "name": "LACOSTE official New",
+      "url": "https://www.lacoste.com/kr/lacoste/men/new/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.lacoste.com/kr/",
+        "targetUrl": "https://www.lacoste.com/kr/lacoste/men/new/",
+        "contentHash": "072bc7bc419678cb29f2f4f40af0e3e4727341b3e315a8f87d0ef7fe2c43c1c8",
+        "excerpt": "남성 신상품 전체보기"
+      }
+    },
+    {
+      "name": "LACOSTE official navigation",
+      "url": "https://www.lacoste.com/kr/",
+      "basis": "catalogue"
+    }
+  ],
+  "TOMMY HILFIGER": [
+    {
+      "name": "TOMMY HILFIGER official New",
+      "url": "https://www.hfashionmall.com/display/brand/getThemeBrand?brndCtgryNo=BDMA08&themeCtgryNo=THMA18A05",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.hfashionmall.com/display/brand?brndCtgryNo=BDMA08",
+        "targetUrl": "https://www.hfashionmall.com/display/brand/getThemeBrand?brndCtgryNo=BDMA08&themeCtgryNo=THMA18A05",
+        "contentHash": "010429d8ddd85cc2a7067260c5dde67dc41811753373ac98d48b559f2e3cec67",
+        "excerpt": "신상품"
+      }
+    },
+    {
+      "name": "TOMMY HILFIGER official navigation",
+      "url": "https://www.hfashionmall.com/display/brand?brndCtgryNo=BDMA08",
+      "basis": "catalogue"
+    }
+  ],
+  "Calvin Klein Jeans": [
+    {
+      "name": "Calvin Klein Jeans official New",
+      "url": "https://www.calvinklein.co.kr/ko/underwear/featured/new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.calvinklein.co.kr/ko/home/",
+        "targetUrl": "https://www.calvinklein.co.kr/ko/underwear/featured/new-arrivals/",
+        "contentHash": "dda10e65782beec811e8cc475a1813034101949c003b1376a6ecf16e36cdc629",
+        "excerpt": "신상품 NEW"
+      }
+    },
+    {
+      "name": "Calvin Klein Jeans official New",
+      "url": "https://www.calvinklein.co.kr/ko/women/featured/new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.calvinklein.co.kr/ko/home/",
+        "targetUrl": "https://www.calvinklein.co.kr/ko/women/featured/new-arrivals/",
+        "contentHash": "dda10e65782beec811e8cc475a1813034101949c003b1376a6ecf16e36cdc629",
+        "excerpt": "신상품 NEW"
+      }
+    },
+    {
+      "name": "Calvin Klein Jeans official New",
+      "url": "https://www.calvinklein.co.kr/ko/men/featured/new-arrivals/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.calvinklein.co.kr/ko/home/",
+        "targetUrl": "https://www.calvinklein.co.kr/ko/men/featured/new-arrivals/",
+        "contentHash": "dda10e65782beec811e8cc475a1813034101949c003b1376a6ecf16e36cdc629",
+        "excerpt": "신상품 NEW"
+      }
+    },
+    {
+      "name": "Calvin Klein Jeans official navigation",
+      "url": "https://www.calvinklein.co.kr/ko/home/",
+      "basis": "catalogue"
+    }
+  ],
+  "DR.MARTENS": [
+    {
+      "name": "DR.MARTENS official navigation",
+      "url": "https://www.drmartens.com/",
+      "basis": "catalogue"
+    }
+  ],
+  "Birkenstock": [
+    {
+      "name": "Birkenstock official New",
+      "url": "https://www.birkenstock.com/kr/%EC%8B%A0%EC%A0%9C%ED%92%88/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%BB%AC%EB%A0%89%EC%85%98/",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.birkenstock.com/kr",
+        "targetUrl": "https://www.birkenstock.com/kr/%EC%8B%A0%EC%A0%9C%ED%92%88/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%BB%AC%EB%A0%89%EC%85%98/",
+        "contentHash": "a1b90c3dead3ff32575556a83a5c7186c81019c23675a127d9dc2c5274394fe7",
+        "excerpt": "신제품"
+      }
+    },
+    {
+      "name": "Birkenstock official navigation",
+      "url": "https://www.birkenstock.com/kr",
+      "basis": "catalogue"
+    }
+  ],
+  "fitflop": [
+    {
+      "name": "fitflop official New",
+      "url": "https://www.fitflop.com/uk/en/shop/mens-new-arrivals-view-all-uk",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.fitflop.com/uk/en/",
+        "targetUrl": "https://www.fitflop.com/uk/en/shop/mens-new-arrivals-view-all-uk",
+        "contentHash": "ba57b5e6c9bfd207d1fc550c63996aee4f7e350ab81c9c4cd6cf81225715959f",
+        "excerpt": "Mens New In"
+      }
+    },
+    {
+      "name": "fitflop official New",
+      "url": "https://www.fitflop.com/uk/en/shop/womens-new-arrivals-boots-uk",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.fitflop.com/uk/en/",
+        "targetUrl": "https://www.fitflop.com/uk/en/shop/womens-new-arrivals-boots-uk",
+        "contentHash": "ba57b5e6c9bfd207d1fc550c63996aee4f7e350ab81c9c4cd6cf81225715959f",
+        "excerpt": "Boots"
+      }
+    },
+    {
+      "name": "fitflop official New",
+      "url": "https://www.fitflop.com/uk/en/shop/womens-new-arrivals-sneakers-uk",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.fitflop.com/uk/en/",
+        "targetUrl": "https://www.fitflop.com/uk/en/shop/womens-new-arrivals-sneakers-uk",
+        "contentHash": "ba57b5e6c9bfd207d1fc550c63996aee4f7e350ab81c9c4cd6cf81225715959f",
+        "excerpt": "Trainers"
+      }
+    },
+    {
+      "name": "fitflop official New",
+      "url": "https://www.fitflop.com/uk/en/shop/womens-new-arrivals-shoes-uk",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.fitflop.com/uk/en/",
+        "targetUrl": "https://www.fitflop.com/uk/en/shop/womens-new-arrivals-shoes-uk",
+        "contentHash": "ba57b5e6c9bfd207d1fc550c63996aee4f7e350ab81c9c4cd6cf81225715959f",
+        "excerpt": "Shoes"
+      }
+    },
+    {
+      "name": "fitflop official New",
+      "url": "https://www.fitflop.com/uk/en/shop/womens-new-arrivals-view-all-uk",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.fitflop.com/uk/en/",
+        "targetUrl": "https://www.fitflop.com/uk/en/shop/womens-new-arrivals-view-all-uk",
+        "contentHash": "ba57b5e6c9bfd207d1fc550c63996aee4f7e350ab81c9c4cd6cf81225715959f",
+        "excerpt": "All New In"
+      }
+    },
+    {
+      "name": "fitflop official New",
+      "url": "https://www.fitflop.com/uk/en/#NewInBarComponentUK",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.fitflop.com/uk/en/",
+        "targetUrl": "https://www.fitflop.com/uk/en/#NewInBarComponentUK",
+        "contentHash": "ba57b5e6c9bfd207d1fc550c63996aee4f7e350ab81c9c4cd6cf81225715959f",
+        "excerpt": "NEW IN"
+      }
+    },
+    {
+      "name": "fitflop official navigation",
+      "url": "https://www.fitflop.com/uk/en/",
+      "basis": "catalogue"
+    }
+  ],
+  "ASH": [
+    {
+      "name": "ASH official navigation",
+      "url": "https://ash.com/",
+      "basis": "catalogue"
+    }
+  ],
+  "FILA China": [
+    {
+      "name": "FILA China official women footwear / New sort",
+      "url": "https://www.fila.com.cn/list/j2_4_22-e1",
+      "basis": "catalogue-latest"
+    },
+    {
+      "name": "FILA China official men footwear / New sort",
+      "url": "https://www.fila.com.cn/list/j1_4_22-e1",
+      "basis": "catalogue-latest"
+    },
+    {
+      "name": "FILA China official home",
+      "url": "https://www.fila.cn/",
+      "basis": "catalogue"
     }
   ]
 }

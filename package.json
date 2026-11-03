@@ -32,7 +32,10 @@
     "catwalk:update": "node scripts/update-catwalk.mjs",
     "curation": "node scripts/build-curation-summary.mjs",
     "verify": "node scripts/weekly-update.mjs --verify-only",
-    "guide": "python -X utf8 scripts/build-user-guide.py && node scripts/render-user-guide.mjs"
+    "guide": "python -X utf8 scripts/build-user-guide.py && node scripts/render-user-guide.mjs",
+    "sports:collect": "node scripts/collect-sports-casual.mjs",
+    "sports:prepare": "node scripts/prepare-sports-casual.mjs && python -X utf8 scripts/cache-sports-casual-photos.py reports/sports-casual-prepared.json reports/sports-casual-cached.json",
+    "sports:publish": "node scripts/publish-sports-casual.mjs --prepared reports/sports-casual-cached.json --raw data/sports-casual-new.json,data/fila-china-new.json,data/official-new-feeds.json"
   },
   "dependencies": {
     "playwright": "^1.55.0"

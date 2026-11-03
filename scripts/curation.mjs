@@ -342,6 +342,9 @@ export function classifyFootwear(p) {
   // the path disagree, the path is what the shop actually filed it under.
   if (/\bapparel\b|\bclothing\b|\bclothes\b|의류/i.test(path) && !footwearWord.test(path)) return { reason: 'not-footwear' };
   if (apparel.test(filed) && !footwearWord.test(filed)) return { reason: 'not-footwear' };
+  // The owner's Alo-specific scope includes the official platform boots.
+  // Require the exact New collection product binding and its stated platform.
+  if(p.brand==='Alo'&&review?.approved===true&&review.type==='platform-boot'&&review.platform===true&&review.brand===p.brand&&review.style===p.style&&review.url===p.url&&p.officialProductEvidence?.verified===true&&isOfficialProductUrl(p.brand,p.url)&&/\bplatform\b/i.test(context)&&/\bboot\b/i.test(p.name||''))return {category:'platform-shoe'};
   // "Slide" is Golden Goose's closed high-top sneaker, not a backless slide.
   // The exact factory families and official gallery were checked together.
   if(p.brand==='Golden Goose'&&/-cod-G[MW]F(?:00115|00116|00211)\./i.test(p.url||'')&&/sneaker|스니커즈/i.test(p.officialCategory||''))return {category:'sneaker'};
@@ -354,7 +357,8 @@ export function classifyFootwear(p) {
   const exclusionDescription=reviewedSneakerHybrid?String(p.description||'').replace(/\bballet flats?\b/gi,''):p.description||'';
   if (excluded.test(wedgeRunner?exclusionTitle.replace(/\bwedge(?=\s+runner\b)/gi,'Platform'):exclusionTitle) || performance.test(title) || /\b(?:oxford shoes?|derby shoes|ballet flats?|high[ -]heeled|stilettos?|slingbacks?|(?:kitten|block|wedge) heels?|dress sandals?)\b|슬링백|하이힐|정장 구두/i.test(exclusionDescription)) return { reason: 'excluded-footwear' };
   // Jelly names alone (for example Jellyfish) are not proof of jelly construction.
-  if (/\bjelly\b|젤리/i.test(title)||reviewedJelly) {
+  const jellyTitle=p.brand==='Calvin Klein Jeans'&&p.officialProductEvidence?.verified===true&&isOfficialProductUrl(p.brand,p.url)?title.replace(/젤리\s*레이스|\bjelly[- ]laces?\b/gi,'Laces'):title;
+  if (/\bjelly\b|젤리/i.test(jellyTitle)||reviewedJelly) {
     if (!reviewedJelly&&!/\b(?:pvc|tpu|melflex|jelly upper|jelly material|jelly construction)\b|젤리 소재/i.test(context))return {reason:'jelly-structure-unverified'};
     if (!reviewedJelly&&!/\b(?:flat|low.profile|sneakers?|trainers?|flexible sole)\b|플랫|스니커|평평한/i.test(context))return {reason:'flat-structure-unverified'};
     return {category:'jelly'};

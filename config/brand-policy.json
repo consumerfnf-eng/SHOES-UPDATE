@@ -1517,6 +1517,14 @@
       "siteGroup": "CASUAL",
       "policy": "core",
       "mandatory": false
+    },
+    {
+      "id": "fila-china",
+      "name": "FILA China",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
     }
   ],
   "aliases": {

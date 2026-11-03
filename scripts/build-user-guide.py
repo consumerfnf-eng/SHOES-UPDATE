@@ -15,7 +15,7 @@ p1=head(1,'상품 탐색과 시장 신호 비교','이 사이트의 장점 · �
 p1+='<div class="flow">조사 동선 단축 · 출처별 탐색 → 공통 신호 확인 → MLB 적용안 → 제안서 제작</div>'
 p1+='<nav class="menu-map"><b>상품 탐색</b> 전체 · 브랜드 공식 상품 · SNS 인기 신상 · 리테일 상품 · 뉴스레터<br><b>트렌드 리서치</b> CATWALK · 데이터 분석 · Forecast · 업무 브리프 · 레퍼런스 보드</nav>'
 p1+='<section><h2><em>01</em>상품·브랜드·컬러 탐색</h2>'+photo('01-products.jpg',(305,310,925,350),'상품 카드 · 컬러칩 · 원문 연결')
-p1+='<div class="notes two">'+item('출처와 필터 선택','공식·SNS·리테일·뉴스레터 선택 후 LUX·SPORTS·CASUAL, 브랜드, 품목, 검색어로 범위 설정')+item('스타일·변형 비교','SHOES TREND KEYWORD 1–15위와 선정 기준 확인 · 같은 모델의 컬러칩 선택으로 사진·컬러 비교')+item('저장과 상세 확인','별표로 저장함 등록 · 상품명·사진 선택으로 상세 확인 · 원문 연결 및 사진 JPG 저장')+item('선택 자료 활용','현재 페이지·개별 상품 선택 후 보드 담기 · CSV·XLSX 내보내기 · 정렬 및 필터 초기화 활용')+'</div></section>'
+p1+='<div class="notes two">'+item('출처와 필터 선택','공식·SNS·리테일·뉴스레터 선택 후 LUX·SPORTS·CASUAL, 브랜드·품목·검색어로 범위 설정 · FILA China 개별 선택')+item('스타일·변형 비교','SHOES TREND KEYWORD 1–15위와 선정 기준 확인 · 같은 모델의 컬러칩 선택으로 사진·컬러 비교')+item('저장과 상세 확인','별표로 저장함 등록 · 상품명·사진 선택으로 상세 확인 · 원문 연결 및 사진 JPG 저장')+item('선택 자료 활용','현재 페이지·개별 상품 선택 후 보드 담기 · CSV·XLSX 내보내기 · 정렬 및 필터 초기화 활용')+'</div></section>'
 p1+='<section><h2><em>02</em>데이터 분석과 MLB 적용안 확인</h2>'+photo('02-analysis.jpg',(320,632,1000,290),'주간 공통 신호의 상품·런웨이 레퍼런스')
 p1+='<div class="notes two">'+item('주간 핵심 인사이트','주목할 변화 → 공식·랭킹·런웨이·Forecast 근거 → MLB 적용 아이템의 순서로 확인')+item('랭킹·가격 비교','무신사·29CM·SSENSE 1–15위 확인 · 브랜드별 중앙값 오름차순과 MLB 기준선·차액·최저/최고 가격 비교')+'</div><p class="callout">랭킹은 스토어 원문 순위 기준 · 판매수량과 구분 · 이전 시즌 자료는 상단 Retail Archive 연결</p></section>'+foot(1)
 p2=head(2,'런웨이·Forecast와 시즌 제안','이 사이트의 장점 · 쇼 사진·시즌 예측·기존 제안의 연결을 통한 근거 중심의 MLB 아이템 기획')

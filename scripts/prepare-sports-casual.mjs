@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+import {curateCatalog} from './curation.mjs';
+import {productPresentation} from './product-presentation.mjs';
+import {officialTabScope} from '../public/assets/official-tab-scope.mjs';
+const read=async file=>JSON.parse(await fs.readFile(file,'utf8'));
+const newFeeds=await read('data/official-new-feeds.json').catch(e=>{if(e.code==='ENOENT')return{products:[]};throw e;});
+const raw=[...(await read('data/sports-casual-new.json')).products,...(await read('data/fila-china-new.json')).products,...newFeeds.products];
+const reviews=await read('data/product-presentation.json'),filaRaw=new Map(raw.filter(p=>['FILA China','Alo'].includes(p.brand)).map(p=>[p.id,p]));
+const curated=curateCatalog(raw,{now:new Date()}),today=new Date(Date.now()+9*3600000).toISOString().slice(0,10);
+const aloPhotos=await read('data/alo-product-presentation.json').catch(e=>{if(e.code==='ENOENT')return{products:[]};throw e;});
+const products=curated.snapshot.products.filter(p=>officialTabScope(p,today)).map(p=>{const row=productPresentation(p,reviews);if(row&&filaRaw.has(p.id))row.modelGroupId=filaRaw.get(p.id).modelGroup;const photo=row&&aloPhotos.products.find(r=>r.approved&&r.brand===row.brand&&r.style===row.style&&r.url===row.url&&r.image===row.image);if(photo?.frame)row.presentation.frame=photo.frame;return row;}).filter(Boolean);
+await fs.mkdir('reports',{recursive:true});await fs.writeFile('reports/sports-casual-prepared.json',JSON.stringify({products}));
+await fs.writeFile('reports/sports-casual-collection-review.json',JSON.stringify(curated.review,null,2));
+console.log('Prepared '+products.length+' SPORTS/CASUAL photo bindings; LUX untouched');

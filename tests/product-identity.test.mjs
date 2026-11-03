@@ -29,7 +29,7 @@ import {preferOfficialVariants,manufacturerCode} from '../public/assets/product-
 
 test('Rockfish reviewed colour finishes share three cards and retain distinct physical colours',()=>{
  const c=JSON.parse(fs.readFileSync(new URL('../public/data/catalog.json',import.meta.url)));
- const rows=c.products.filter(p=>p.brand==='Rockfish Weatherwear');
+ const rows=c.products.filter(p=>p.brand==='Rockfish Weatherwear'&&/^(?:BRYN VELCRO SNEAKERS V2|ORIGINAL WINTER SLIPPERS|PUFFIN RIBBON BANDING SNEAKERS)\b/.test(p.name));
  const groups=groupProductVariants(rows);
  assert.equal(rows.length,14);assert.equal(groups.length,3);
  const bryn=groups.find(g=>variantGroupName(g[0])==='BRYN VELCRO SNEAKERS V2');

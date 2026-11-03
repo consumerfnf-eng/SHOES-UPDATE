@@ -32,7 +32,8 @@ export function productPresentation(product,reviews){
   // carry their own PDP URL in the image field, which is a collection fault,
   // not a photograph - and it must be https, as everything downstream wants.
   const ownPhotoEvidence = ['official-new-listing-sku-image', 'official-new-arrivals-and-product-page']
-    .includes(product.officialImageEvidence?.verificationMethod) && product.officialImageEvidence?.verified === true;
+    .includes(product.officialImageEvidence?.verificationMethod) && product.officialImageEvidence?.verified === true
+    || product.brand==='FILA China'&&product.officialImageEvidence?.verificationMethod==='official-fila-china-product-json'&&product.officialImageEvidence?.verified===true;
   const ownPhoto = ownPhotoEvidence && /^https:\/\//.test(product.image || '')
     && product.image !== product.url && officialEvidenceFor(product, kstDay());
 

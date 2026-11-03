@@ -68,7 +68,7 @@ test('server collection scans later official pages and retains more than 18 cand
   const fixture=(start,end)=>Array.from({length:end-start},(_,i)=>{const n=start+i;return `![Black sneaker](https://static.nike.com/a/images/t_default/full-${n}.jpg)\n[Runner Sneaker Black ${n}](https://www.nike.com/t/runner-full-fixture${n})\nColor: Black\nStyle: QA${n}-001\nOfficial sneaker.${' '.repeat(5000)}`;}).join('\n');
   try{
     const state=await runDaily({brands:['Nike'],output:path.join(dir,'state.json'),read:async url=>{calls.push(url);return url.includes('/w/new')?fixture(101,113):url.startsWith('https://r.jina.ai/https://www.nike.com/')?fixture(113,124):text;}});
-    assert.equal(state.coverage[0].found,23);assert.equal(state.liveProducts.length,23);assert(calls.some(u=>u.includes('/a/kobe-ad-protro-release-info')));assert(calls.some(u=>u.includes('/w/new')));assert.equal(state.coverage[0].attempts,3);
+    assert.equal(state.coverage[0].found,23);assert.equal(state.liveProducts.length,23);assert(calls.some(u=>u.includes('/a/kobe-ad-protro-release-info')));assert(calls.some(u=>u.includes('/w/new')));assert.equal(state.coverage[0].attempts,calls.length,'Every listing and followed pagination request is counted');assert(calls.length>JSON.parse(await fs.readFile(new URL('../config/daily_sources.json',import.meta.url),'utf8')).Nike.length,'Later listing pages are followed');
   }finally{await fs.rm(dir,{recursive:true,force:true});}
 });
 

@@ -1,5 +1,6 @@
 import {footwearTypes,FOOTWEAR_TYPES} from './footwear-policy.mjs';
 import {hasArrivalEvidence} from './publication-window.mjs';
+import {officialTabScope} from './official-tab-scope.mjs';
 import {reviewedDesignName,manufacturerCode,identityFold,titleColorLabel} from './product-identity.mjs';
 import {siteBrandGroup,isSiteBrandAllowed} from './site-brand-policy.mjs';
 import {retailPublicationEligibility} from './retail-release-policy.mjs';
@@ -16,7 +17,7 @@ export function validDay(value) {
 export function releaseState(product, today = kstToday()) {
   const state=windowState(product,today);return ['released','upcoming'].includes(state)?state:null;
 }
-export function releaseDateLabel(product){const range=releaseWindow(product);if(range?.precision==='day')return range.start;if(range?.precision==='month'){const [year,month]=product.releaseDate.split('-');return `${year}년 ${Number(month)}월 (일자 미공개)`;}if(product.arrivalEvidence?.kind==='official-assortment-listing')return `${product.arrivalEvidence.verifiedAt.slice(0,10)} 공식 판매 확인`;if(product.arrivalEvidence)return product.arrivalEvidence.kind==='catalogue-listing'?`${product.arrivalEvidence.verifiedAt.slice(0,10)} 목록 확인`:`NEW · ${product.arrivalEvidence.verifiedAt.slice(0,10)} 확인`;return product.releaseDate||(product.observedArrivalAt?`${product.observedArrivalAt.slice(0,10)} 최초 확인`:'');}
+export function releaseDateLabel(product){const range=releaseWindow(product);if(range?.precision==='day')return product.brand==='FILA China'&&product.dateEvidence?.kind==='official-sale-start'?range.start+' 공식 판매 개시':range.start;if(range?.precision==='month'){const [year,month]=product.releaseDate.split('-');return `${year}년 ${Number(month)}월 (일자 미공개)`;}if(product.arrivalEvidence?.kind==='official-assortment-listing')return `${product.arrivalEvidence.verifiedAt.slice(0,10)} 공식 판매 확인`;if(product.arrivalEvidence)return product.arrivalEvidence.kind==='catalogue-listing'?`${product.arrivalEvidence.verifiedAt.slice(0,10)} 목록 확인`:`NEW · ${product.arrivalEvidence.verifiedAt.slice(0,10)} 확인`;return product.releaseDate||(product.observedArrivalAt?`${product.observedArrivalAt.slice(0,10)} 최초 확인`:'');}
 export function safeUrl(value) {
   try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password ? url.href : ''; } catch { return ''; }
 }
@@ -78,7 +79,7 @@ export function sourceMatches(product, type, today = kstToday()) {
   }
   if(['retail','newsletter'].includes(type))return false;
   if(type==='media')return product.popularity?.media===true;
-  if(type==='brand')return siteBrandGroup(product.brand)==='LUX'&&releaseState(product,today)==='released'&&!!officialProductUrl(product,today)&&!!officialImageUrl(product,today);
+  if(type==='brand')return officialTabScope(product,today)&&releaseState(product,today)==='released'&&!!officialProductUrl(product,today)&&!!officialImageUrl(product,today);
   if(type==='sns')return !!officialImageUrl(product,today)&&visibleSocialMetrics(product,today).some(m=>['search-count','hashtag-post-count'].includes(m.metric)&&m.value>0);
   return product.popularity?.[type]===true;
 }
@@ -159,7 +160,6 @@ export function filterProducts(products, state, today = kstToday()) {
     return release && hasVisual(p, today)
       && isSiteBrandAllowed(p.brand)
       && (!state.brandGroup||state.brandGroup==='all'||siteBrandGroup(p.brand)===state.brandGroup)
-      && (state.source!=='brand'||siteBrandGroup(p.brand)==='LUX')
       // "이번 주 신규" and "저장함" are reader's filters, not evidence rules:
       // a caller that does not set them sees exactly what it saw before.
       && (!state.freshOnly || typeof state.isFresh !== 'function' || state.isFresh(p))
@@ -500,6 +500,11 @@ export function unifyVariantGroups(products) {
   const brandKey = p => String(p?.brand || '').normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu, '').toLowerCase();
   const rows = [];
   for (const product of products || []) {
+    // Reviewed China product-code families distinguish repeated marketing
+    // names, while the gender/material codes in a family share one card.
+    if(product.brand==='FILA China'&&product.modelGroupId?.startsWith('filachina|')||product.brand==='Alo'&&/^alo\|A\d{4}U$/.test(product.modelGroupId||'')||product.brand==='K-SWISS'&&product.modelGroupId?.startsWith('kswiss|')){
+      const name='model|'+product.modelGroupId;rows.push({product,name,code:''});add(name);continue;
+    }
     // An article is one card by default and is keyed on itself; joining those
     // by a shared model name is what merged 42 pieces into one Jordan card.
     if (isOverlay(product) && overlayKind(product) === 'newsletter') continue;

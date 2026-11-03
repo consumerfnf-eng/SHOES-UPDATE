@@ -1,0 +1,17 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {officialTabScope} from '../public/assets/official-tab-scope.mjs';
+import {sourceMatches,filterProducts} from '../public/assets/catalog-view.mjs';
+import {classifyFootwear} from '../scripts/curation.mjs';
+const today='2026-11-03',at=today+'T01:00:00Z';
+const shoe=brand=>({brand,id:brand,name:'Court Sneaker',category:'sneaker',style:'SKU',url:'https://brand.example/p',image:'https://brand.example/p.jpg',releaseDate:today,dateEvidence:{verified:true,official:true,precision:'day'},officialProductEvidence:{verified:true,brand,style:'SKU',url:'https://brand.example/p',verifiedAt:at},officialImageEvidence:{verified:true,brand,style:'SKU',url:'https://brand.example/p.jpg',sourceUrl:'https://brand.example/p',verifiedAt:at}});
+test('SPORTS and CASUAL enter the official tab with verified recent launches',()=>{for(const brand of ['Nike','Converse','FILA China'])assert(sourceMatches(shoe(brand),'brand',today));});
+test('LUX retains its existing scope and evidence gate',()=>{assert(officialTabScope({...shoe('Prada'),releaseDate:'2020-01-01'},today));assert(sourceMatches(shoe('Prada'),'brand',today));assert(!sourceMatches({...shoe('Prada'),officialImageEvidence:null},'brand',today));});
+test('general stock, uncertain old launches, non-sneakers and overlays do not qualify',()=>{assert(!officialTabScope({...shoe('Nike'),releaseDate:'2026-07-03'},today));assert(!officialTabScope({...shoe('Nike'),dateEvidence:{verified:false}},today));assert(!officialTabScope({...shoe('Nike'),category:'sandal'},today));assert(!sourceMatches({...shoe('Nike'),overlay:true,source:'retail-test'},'brand',today));});
+test('New listing proof qualifies without inventing a launch date; catalogue-latest alone does not',()=>{const p={...shoe('Vans'),releaseDate:'',arrivalEvidence:{kind:'new-arrivals-listing',verified:true,brand:'Vans',style:'SKU',productUrl:'https://brand.example/p',url:'https://brand.example/new-arrivals',verifiedAt:at,excerpt:'Court Sneaker — NEW',contentHash:'hash'}};assert(officialTabScope(p,today));assert(!officialTabScope({...p,arrivalEvidence:{...p.arrivalEvidence,kind:'catalogue-latest-listing'}},today));assert(!officialTabScope({...p,arrivalEvidence:{...p.arrivalEvidence,verifiedAt:'2026-07-01T00:00:00Z'}},today));});
+test('official group filtering does not independently exclude sports/casual',()=>{const items=[shoe('Prada'),shoe('Nike'),shoe('Converse')],state={search:'',brands:new Set(),brandGroup:'SPORTS',category:'all',source:'brand',release:'released',sort:'group'};assert.deepEqual(filterProducts(items,state,today).map(p=>p.brand),['Nike']);});
+test('Calvin Klein jelly laces do not claim a jelly upper for a leather sneaker',()=>{
+ const p={brand:'Calvin Klein Jeans',name:'로우 프로 러너 스웨이드 젤리 레이스 스니커즈',officialCategory:'Sneakers',category:'sneaker',url:'https://www.calvinklein.co.kr/ko/runner/SEA-HW0324709W.html',officialProductEvidence:{verified:true}};
+ assert.equal(classifyFootwear(p).category,'sneaker');
+ assert.equal(classifyFootwear({...p,name:'Jelly sneakers'}).reason,'jelly-structure-unverified');
+});
+test('Aluminum colour is not mistaken for a metal safety toe',()=>{assert(officialTabScope({...shoe('SATISFY'),name:'TheROCKER Aluminum',url:'https://satisfyrunning.com/products/therocker-aluminum'},today));assert(!officialTabScope({...shoe('KEEN'),name:'Steel Toe Work Shoe'},today));});

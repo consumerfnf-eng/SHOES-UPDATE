@@ -48,10 +48,10 @@ try{
  await page.locator('[data-brand-group="CASUAL"]').click();
  assert.equal(await page.locator('.product-card[data-brand="Nike"]').count(),0);
  await page.locator('[data-source="brand"]').click();
- assert.equal(await page.locator('[data-brand-group="LUX"]').getAttribute('aria-pressed'),'true');
- assert.equal(await page.locator('[data-brand-group="SPORTS"]').isDisabled(),true);
- assert.equal(await page.locator('[data-brand-group="CASUAL"]').isDisabled(),true);
- assert.equal(await page.locator('#brand-list [data-brand="Nike"]').count(),0,'Official sidebar contains only current LUX results');
+ assert.equal(await page.locator('[data-brand-group="CASUAL"]').getAttribute('aria-pressed'),'true');
+ assert.equal(await page.locator('[data-brand-group="SPORTS"]').isDisabled(),false);
+ assert.equal(await page.locator('[data-brand-group="CASUAL"]').isDisabled(),false);
+ assert.equal(await page.locator('#brand-list [data-brand="Nike"]').count(),0,'Unverified fixture products do not qualify for the official tab');
  await page.locator('[data-source="all"]').click();
  await page.locator('[data-brand-group="all"]').click();
  assert.equal(await page.locator('#result-count').textContent(),'48');

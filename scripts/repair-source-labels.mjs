@@ -1,6 +1,18 @@
 import {reviewedDesignName} from '../public/assets/product-identity.mjs';
 export function repairSourceLabels(raw){
  const p={...raw};
+ if(p.brand==='K-SWISS'){
+  const source=[p.name,p.sourceName].find(s=>/^(\d{5}-\d{3}-[MW])\s*\|\s*/i.test(s||'')),prefix=source?.match(/^(\d{5}-\d{3}-[MW])\s*\|\s*/i);
+  if(prefix){
+   p.sourceName??=p.name;p.manufacturerStyle=prefix[1].toUpperCase();p.productVariantId=p.manufacturerStyle;
+   const parts=source.slice(prefix[0].length).split(/\s*\|\s*/);p.name=parts.shift().trim();p.modelName=p.name;
+   if(parts.length){p.colorway=parts.join(' / ');p.colors=[p.colorway];p.colorEvidence={method:'official-title-field',url:p.url,label:p.colorway};}
+   p.modelGroupId='kswiss|'+p.name.toLowerCase().replace(/[^a-z0-9]+/g,'');
+  }
+ }
+ if(p.brand==='Alo'&&p.officialProductEvidence?.verified===true){
+  try{const u=new URL(p.url),code=u.pathname.match(/\/products\/(a\d{4}u)-/i)?.[1];if(/(?:^|\.)aloyoga\.com$/.test(u.hostname)&&code)p.modelGroupId='alo|'+code.toUpperCase();}catch{}
+ }
  const label=p.sourceLabelReview;
  if(label?.verified===true&&label.brand===p.brand&&label.style===p.style&&label.url===p.url&&label.image===p.image){
    p.name=label.name;
