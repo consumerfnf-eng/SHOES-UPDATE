@@ -29,7 +29,7 @@ def build():
     monthly_file = PUBLIC / 'data/monthly-catalog.json'
     catalog = json.loads(catalog_file.read_text(encoding='utf-8'))
     monthly = json.loads(monthly_file.read_text(encoding='utf-8'))
-    cache = json.loads(CACHE.read_text(encoding='utf-8')) if CACHE.exists() else {'version': 1, 'images': {}}
+    cache = json.loads(CACHE.read_text(encoding='utf-8')) if CACHE.exists() else {'version': 2, 'images': {}}
     jobs = {}
     bindings = []
     for p in catalog['products'] + monthly.get('retail', []):
@@ -38,7 +38,7 @@ def build():
         if not PHOTO.fullmatch(path):
             continue
         frame = presentation.get('frame')
-        key = hashlib.sha256(json.dumps([1, path, frame], sort_keys=True).encode()).hexdigest()
+        key = hashlib.sha256(json.dumps([2, path, frame], sort_keys=True).encode()).hexdigest()
         jobs[key] = (path, frame)
         bindings.append((presentation, key))
 
@@ -47,9 +47,9 @@ def build():
         source = PUBLIC / path.lstrip('/')
         # Already-small source assets need no second download or re-encoding.
         # Reusing their immutable path also avoids doubling the Pages file count.
-        if not frame and source.stat().st_size <= 60_000:
+        if not frame and source.stat().st_size <= 18_000:
             with Image.open(source) as opened:
-                if opened.width <= 800 and opened.height <= 1000:
+                if opened.width <= 512 and opened.height <= 640:
                     return key, {'path': path, 'width': opened.width, 'height': opened.height}, 0, 0
         known = cache['images'].get(key)
         if known and PHOTO.fullmatch(known.get('path', '')) and (PUBLIC / known['path'].lstrip('/')).exists():
@@ -62,9 +62,9 @@ def build():
             canvas = Image.new('RGBA', image.size, 'white')
             canvas.alpha_composite(image)
             image = canvas.convert('RGB')
-            image.thumbnail((800, 1000), Image.Resampling.LANCZOS)
+            image.thumbnail((512, 640), Image.Resampling.LANCZOS)
             buffer = io.BytesIO()
-            image.save(buffer, 'WEBP', quality=83, method=4)
+            image.save(buffer, 'WEBP', quality=78, method=4)
             encoded = buffer.getvalue()
             target = '/images/' + hashlib.sha256(encoded).hexdigest() + '.webp'
             (PUBLIC / target.lstrip('/')).write_bytes(encoded)

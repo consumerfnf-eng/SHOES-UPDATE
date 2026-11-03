@@ -30,11 +30,13 @@
  *  every one of them returned zero shoes for the same reason.
  */
 import {isExcludedBrand} from '../public/assets/brand-exclusions.mjs';
+import {SITE_BRAND_GROUPS} from '../public/assets/site-brand-policy.mjs';
 export const LUXURY_MAISONS=new Set(['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine',
   'Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','The Row','Loro Piana','Brunello Cucinelli',
   'Chanel','Fendi','Givenchy','Valentino Garavani','Alexander McQueen','Maison Margiela','Rick Owens','Jil Sander',
   'Lanvin','AMIRI','Off-White','Golden Goose','Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry',"Burberry","Versace","Balmain","Ferragamo","Jimmy Choo","Christian Louboutin","MCM","Coach","Tory Burch","Bally","Stella McCartney","Kenzo"]);
 
+for(const name of SITE_BRAND_GROUPS.find(g=>g.name==='LUX').priority)LUXURY_MAISONS.add(name);
 export function isLuxuryMaison(brand){return LUXURY_MAISONS.has(brand);}
 
 /** Words a shop uses for the parts of itself that are not this season. */

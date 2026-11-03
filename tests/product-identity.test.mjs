@@ -53,9 +53,9 @@ test('model grain preserves Chanel designs, Mihara generations/heights and infer
  const variants=['8508:1','8508:16'].map((productVariantId,i)=>({id:String(i),brand:'Maison Mihara Yasuhiro',colorway:'Black',manufacturerStyle:'A17FW709',productVariantId,colorEvidence:{method:'upper-image-analysis'}}));
  assert.equal(uniqueColorVariants(variants).length,2);
 });
-test('Common Projects availability is shown without fabricating a recent release',()=>{
+test('Common Projects availability is excluded without verified first release',()=>{
  const url='https://kith.com/products/cp1528-0506',p={brand:'Common Projects',url,listedAt:'2019-01-01',availabilityEvidence:{verified:true,kind:'retail-current-assortment',productUrl:url,verifiedAt:'2026-11-02T00:00:00Z'}};
- assert.equal(overlayReleaseState(p,'2026-11-02'),'released');
+ assert.equal(overlayReleaseState(p,'2026-11-02'),null,'Current availability never establishes first release');
  assert.equal(overlayReleaseState({...p,brand:'Nike'},'2026-11-02'),null);
  assert.equal(overlayReleaseState(p,'2027-01-02'),null);
 });

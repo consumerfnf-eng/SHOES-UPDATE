@@ -1,3 +1,5 @@
+import {collectOfficialInventory} from './collect-official-inventory.mjs';
+import {reconcileOfficialAssortment} from './reconcile-official-assortment.mjs';
 import fs from 'node:fs/promises';
 import {createOfficialReader} from './official-reader.mjs';
 import {createRenderedOfficialReader} from './rendered-official-reader.mjs';
@@ -110,7 +112,11 @@ try {
     {schemaVersion:1,savedAt:new Date().toISOString(),checkedAt:run.checkedAt,candidates:run.pending||[]});
   // No listing was read on purpose in a verification run, so "every source
   // unavailable" is not a failure there - it is the whole point.
-  if(!verifyOnly&&!run.coverage.some(c=>c.responses))throw Error('ALL_OFFICIAL_SOURCES_UNAVAILABLE');
+  const inventory=verifyOnly?{products:[],diagnostics:[]}:await collectOfficialInventory({now});
+  const inventoryMerge=reconcileOfficialAssortment(source.products,inventory.products);
+  const inventoryIds=new Set([...inventoryMerge.added,...inventoryMerge.updated].map(p=>p.id));
+  const inventoryIncoming=inventoryMerge.products.filter(p=>inventoryIds.has(p.id));
+  if(!verifyOnly&&!run.coverage.some(c=>c.responses)&&!inventory.products.length)throw Error('ALL_OFFICIAL_SOURCES_UNAVAILABLE');
   if(verifyOnly)console.log(`Verification pass: ${carried.candidates.length} queued, ${run.products.length} verified, ${run.pending.length} still waiting.`);
   const combined=mergePreserving(source.products,run.products);
   const verified={products:run.products,diagnostics:run.coverage};
@@ -121,8 +127,8 @@ try {
   // Daily maintenance still expires old records if all live product verification is unavailable.
   // A verification pass that drained nothing is a quiet week, not a failure:
   // the catalogue it would publish is the one already on the site.
-  if(!verifyOnly&&!run.products.length&&!structured.products.length)throw Error('NO_OFFICIAL_PRODUCT_PROOFS: keeping the previous snapshot and collection date');
-  const staged=mergePreserving(combined,[...verified.products,...structured.products]);
+  if(!verifyOnly&&!run.products.length&&!structured.products.length&&!inventoryIncoming.length)throw Error('NO_OFFICIAL_PRODUCT_PROOFS: keeping the previous snapshot and collection date');
+  const staged=mergePreserving(combined,[...verified.products,...structured.products,...inventoryIncoming]);
   const evidence=await readJson(new URL('data/release-evidence.json',root),{products:[]});
   const withEvidence=applyReviewedEvidence(staged,evidence.products);
   const eligibleIds=new Set(curateCatalog(withEvidence,{now}).snapshot.products.map(p=>p.id));
@@ -145,7 +151,7 @@ try {
   const collection=verifyOnly?{...previous,checkedAt:now.toISOString(),lastVerificationPassAt:new Date().toISOString(),
       verificationPass:{queued:carried.candidates.length,verified:run.products.length,stillWaiting:run.pending.length}}
     :{checkedAt:now.toISOString(),lastSuccessfulCollectionAt:new Date().toISOString(),brandFingerprint:fingerprint,coverage:run.coverage,unavailableBrands:run.coverage.filter(x=>!x.responses).map(x=>x.brand),scope:'weekly',selectionBasis:'official-new-arrivals',catalogExhaustive:false,sourceDirectory:signals.sourceDirectory,keywordCheckedAt:keywordNow.toISOString(),sourceRanks:[...search.sourceRanks,...forecast.sourceRanks,...editorial.sourceRanks,...style.sourceRanks],styleObservations:[...style.observations,...market.observations],styleMarketStatus:market.diagnostics,searchRankStatus:search.searchRankStatus,forecastStatus:forecast.forecastStatus,editorialStatus:[...editorial.editorialStatus,...style.editorialStatus]};
-  await atomicJson(new URL('logs/weekly-diagnostics.json',root),{checkedAt:now.toISOString(),releaseChecks:[...verified.diagnostics,...structured.diagnostics],signalChecks:signals.diagnostics,keywordChecks:[...search.diagnostics,...forecast.diagnostics,...editorial.diagnostics,...style.diagnostics,...market.diagnostics],crawler:client.stats,officialFallbacks:reader.diagnostics,renderedOfficial:rendered.stats,sitemap:sitemap.stats,scrapingBeeOfficial:scrapingBee.stats});
-  const result=await publishCurated({now:new Date(),incoming:[...run.products,...verified.products,...structured.products,...signals.products],collection});
+  await atomicJson(new URL('logs/weekly-diagnostics.json',root),{checkedAt:now.toISOString(),releaseChecks:[...verified.diagnostics,...structured.diagnostics,...inventory.diagnostics],signalChecks:signals.diagnostics,keywordChecks:[...search.diagnostics,...forecast.diagnostics,...editorial.diagnostics,...style.diagnostics,...market.diagnostics],crawler:client.stats,officialFallbacks:reader.diagnostics,renderedOfficial:rendered.stats,sitemap:sitemap.stats,scrapingBeeOfficial:scrapingBee.stats});
+  const result=await publishCurated({now:new Date(),incoming:[...run.products,...verified.products,...structured.products,...signals.products,...inventoryIncoming],collection});
   console.log(`Weekly snapshot complete: ${result.snapshot.products.length} public products; ${result.review.held.length} held for verification.`);
 } catch(e) {await fs.mkdir(new URL('logs/',root),{recursive:true});await atomicJson(new URL('logs/weekly-error.json',root),{error:e.message,at:new Date().toISOString()});throw e;}

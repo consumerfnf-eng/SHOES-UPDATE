@@ -1,4 +1,4 @@
-import {displayBrandGroup} from '../public/assets/brand-groups.mjs';
+import {displayBrandGroup,canonicalSiteBrand,isSiteBrandAllowed} from '../public/assets/brand-groups.mjs';
 import fs from 'node:fs';
 import {productKeywordIds,productSearchConceptIds,productCollaborationBrands} from './keyword-taxonomy.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
@@ -13,7 +13,7 @@ export const POLICY = JSON.parse(fs.readFileSync(new URL('../config/brand-policy
 const key = x => String(x || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').normalize('NFC').toLowerCase().replace(/[^a-z0-9가-힣]/g, '');
 const brandMap = new Map(POLICY.brands.map(b => [key(b.name), b]));
 for (const [a, b] of Object.entries(POLICY.aliases)) brandMap.set(key(a), brandMap.get(key(b)));
-export function canonicalBrand(name) { return brandMap.get(key(POLICY.collaborations[name] || name))?.name || name; }
+export function canonicalBrand(name) { const canonical=canonicalSiteBrand(POLICY.collaborations[name]||name);return brandMap.get(key(canonical))?.name||canonical; }
 export function brandPolicy(name) { return brandMap.get(key(canonicalBrand(name))); }
 export function kstDay(now = new Date()) { return new Date(new Date(now).getTime() + 9 * 3600000).toISOString().slice(0, 10); }
 export function httpUrl(x) { try { const u = new URL(x); return u.protocol === 'https:' && !u.username && !u.password; } catch { return false; } }
@@ -574,6 +574,7 @@ export function colorwayFromStyleSlug(style, name) {
 
 export function curateProduct(raw, today, now=new Date(today+'T23:59:59.999+09:00'), watch=null) {
   const brand = canonicalBrand(raw.brand), policy = brandPolicy(brand);
+  if(!isSiteBrandAllowed(brand))return {reason:'site-brand-excluded'};
   if (!policy || !['mandatory','core','conditional'].includes(policy.policy)) return { reason: 'brand-excluded-or-unverified' };
   const type = classifyFootwear(raw); if (!type.category) return type;
   // A conditional brand is one that mostly makes something else - a fashion
@@ -757,6 +758,7 @@ export function curateCatalog(rawProducts, { now = new Date(), previous = {}, co
     products:products.sort((a,b) => releaseSortKey(b).localeCompare(releaseSortKey(a)) || a.name.localeCompare(b.name)),
     ...keywordState,searchRankStatus:collection.searchRankStatus||previous.searchRankStatus||[],forecastStatus:collection.forecastStatus||previous.forecastStatus||[],editorialStatus:collection.editorialStatus||previous.editorialStatus||[],socialMetricStatus:collection.socialMetricStatus||previous.socialMetricStatus||socialSources.sources,sourceDirectory, sourceStatus:{ checkedAt:collection.checkedAt || previous.sourceStatus?.checkedAt || null,
       lastSuccessfulCollectionAt:collection.lastSuccessfulCollectionAt || previous.sourceStatus?.lastSuccessfulCollectionAt || null,
+      lastVerifiedAdditionAt:collection.officialExpansion?.checkedAt || previous.sourceStatus?.lastVerifiedAdditionAt || null,
       unavailableBrands:collection.unavailableBrands || previous.sourceStatus?.unavailableBrands || [], coverage:collection.coverage || previous.sourceStatus?.coverage || [],
       notes:['출시일·품목·적합성을 확인한 상품만 표시합니다. 확인일을 출시일로 사용하지 않습니다.','SNS는 확인된 검색량·해시태그 게시물량을 지표와 기간별로 구분합니다. 미공개 수치는 0으로 대체하지 않습니다.'],
       counts:{ source:rawProducts.length, published:products.length, held:held.length, expired:expired.length } } };

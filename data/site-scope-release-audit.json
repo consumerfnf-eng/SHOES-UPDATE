@@ -1,0 +1,2093 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T02:09:00.801Z",
+  "baseline": "cbaa5ca818f8e35da6cc19f462505a092a799d48",
+  "counts": {
+    "official": 7175,
+    "officialByGroup": {
+      "LUX": 4897,
+      "SPORTS": 1908,
+      "CASUAL": 370
+    },
+    "retail": 0,
+    "newsletter": 609,
+    "rawOfficialBefore": 10785,
+    "rawOfficialAfter": 11031,
+    "rawOfficialLost": 0,
+    "retailBefore": 3191,
+    "rawRetailAfter": 3191,
+    "rawRetailLost": 0,
+    "removedBeforePublication": {
+      "reviewed-same-physical-variant": 8,
+      "site-brand-excluded": 55,
+      "exact-official-full-manufacturer-code": 1
+    },
+    "trackZip": [
+      {
+        "name": "Track Zip Sneaker",
+        "records": 1,
+        "chips": 1
+      }
+    ],
+    "comparedCardPhotos": 6722,
+    "cardPhotosBeforeBytes": 130395796,
+    "cardPhotosAfterBytes": 53668654,
+    "cardPhotoReductionPct": 58.8,
+    "wireBeforeBytes": 18435085,
+    "wireAfterBytes": 9812878,
+    "wireReductionPct": 46.8,
+    "premiumLooks": 247,
+    "premiumHash": "e81f02fde7c2079cdfb2c995eaa98309021e40f316dd096f2642cccf765c1442",
+    "newOfficialSourceVariants": 270,
+    "expansionAmbiguous": 0
+  },
+  "brands": [
+    {
+      "group": "LUX",
+      "brand": "Louis Vuitton",
+      "officialVariants": 278,
+      "officialModels": 32,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Dior",
+      "officialVariants": 173,
+      "officialModels": 24,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Balenciaga",
+      "officialVariants": 71,
+      "officialModels": 32,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Prada",
+      "officialVariants": 133,
+      "officialModels": 21,
+      "newsletterArticles": 2
+    },
+    {
+      "group": "LUX",
+      "brand": "Gucci",
+      "officialVariants": 102,
+      "officialModels": 27,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Celine",
+      "officialVariants": 30,
+      "officialModels": 5,
+      "newsletterArticles": 3
+    },
+    {
+      "group": "LUX",
+      "brand": "Saint Laurent",
+      "officialVariants": 18,
+      "officialModels": 4,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Hermès",
+      "officialVariants": 82,
+      "officialModels": 15,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Chanel",
+      "officialVariants": 15,
+      "officialModels": 13,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Miu Miu",
+      "officialVariants": 59,
+      "officialModels": 9,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Alexander McQueen",
+      "officialVariants": 53,
+      "officialModels": 4,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Fendi",
+      "officialVariants": 57,
+      "officialModels": 16,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Valentino Garavani",
+      "officialVariants": 83,
+      "officialModels": 25,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Givenchy",
+      "officialVariants": 41,
+      "officialModels": 9,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Maison Margiela",
+      "officialVariants": 151,
+      "officialModels": 52,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Bottega Veneta",
+      "officialVariants": 97,
+      "officialModels": 13,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Loewe",
+      "officialVariants": 34,
+      "officialModels": 7,
+      "newsletterArticles": 2
+    },
+    {
+      "group": "LUX",
+      "brand": "Lanvin",
+      "officialVariants": 40,
+      "officialModels": 9,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Rick Owens",
+      "officialVariants": 133,
+      "officialModels": 51,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Jil Sander",
+      "officialVariants": 19,
+      "officialModels": 8,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Off-White",
+      "officialVariants": 112,
+      "officialModels": 13,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "AMIRI",
+      "officialVariants": 127,
+      "officialModels": 43,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Loro Piana",
+      "officialVariants": 116,
+      "officialModels": 13,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Brunello Cucinelli",
+      "officialVariants": 65,
+      "officialModels": 34,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Moncler",
+      "officialVariants": 57,
+      "officialModels": 13,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "The Row",
+      "officialVariants": 40,
+      "officialModels": 20,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Golden Goose",
+      "officialVariants": 253,
+      "officialModels": 52,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Maison Mihara Yasuhiro",
+      "officialVariants": 528,
+      "officialModels": 44,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Common Projects",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Axel Arigato",
+      "officialVariants": 398,
+      "officialModels": 27,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Autry",
+      "officialVariants": 662,
+      "officialModels": 56,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "PANE",
+      "officialVariants": 124,
+      "officialModels": 5,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "ALOHAS",
+      "officialVariants": 77,
+      "officialModels": 33,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Burberry",
+      "officialVariants": 48,
+      "officialModels": 16,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Versace",
+      "officialVariants": 63,
+      "officialModels": 9,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Balmain",
+      "officialVariants": 28,
+      "officialModels": 6,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Ferragamo",
+      "officialVariants": 41,
+      "officialModels": 16,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Jimmy Choo",
+      "officialVariants": 73,
+      "officialModels": 12,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Christian Louboutin",
+      "officialVariants": 59,
+      "officialModels": 23,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "MCM",
+      "officialVariants": 20,
+      "officialModels": 7,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Coach",
+      "officialVariants": 37,
+      "officialModels": 10,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Tory Burch",
+      "officialVariants": 38,
+      "officialModels": 14,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Bally",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Stella McCartney",
+      "officialVariants": 16,
+      "officialModels": 5,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Kenzo",
+      "officialVariants": 23,
+      "officialModels": 4,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Cecilie Bahnsen",
+      "officialVariants": 15,
+      "officialModels": 4,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Kiko Kostadinov",
+      "officialVariants": 2,
+      "officialModels": 1,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Simone Rocha",
+      "officialVariants": 10,
+      "officialModels": 5,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Wales Bonner",
+      "officialVariants": 17,
+      "officialModels": 6,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Magliano",
+      "officialVariants": 7,
+      "officialModels": 2,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Martine Rose",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Lemaire",
+      "officialVariants": 7,
+      "officialModels": 2,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Marni",
+      "officialVariants": 23,
+      "officialModels": 8,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Dries Van Noten",
+      "officialVariants": 29,
+      "officialModels": 13,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Jacquemus",
+      "officialVariants": 32,
+      "officialModels": 3,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Toga Pulla",
+      "officialVariants": 5,
+      "officialModels": 2,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Toga Virilis",
+      "officialVariants": 6,
+      "officialModels": 2,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "MM6 Maison Margiela",
+      "officialVariants": 18,
+      "officialModels": 7,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "LUX",
+      "brand": "Vivienne Westwood",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Marine Serre",
+      "officialVariants": 8,
+      "officialModels": 3,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "TOM FORD",
+      "officialVariants": 44,
+      "officialModels": 10,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "LUX",
+      "brand": "Marc Jacobs",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Nike",
+      "officialVariants": 176,
+      "officialModels": 136,
+      "newsletterArticles": 250
+    },
+    {
+      "group": "SPORTS",
+      "brand": "adidas",
+      "officialVariants": 9,
+      "officialModels": 7,
+      "newsletterArticles": 55
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Under Armour",
+      "officialVariants": 110,
+      "officialModels": 92,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "SPORTS",
+      "brand": "PUMA",
+      "officialVariants": 12,
+      "officialModels": 8,
+      "newsletterArticles": 9
+    },
+    {
+      "group": "SPORTS",
+      "brand": "New Balance",
+      "officialVariants": 24,
+      "officialModels": 19,
+      "newsletterArticles": 55
+    },
+    {
+      "group": "SPORTS",
+      "brand": "ASICS",
+      "officialVariants": 31,
+      "officialModels": 20,
+      "newsletterArticles": 14
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Reebok",
+      "officialVariants": 217,
+      "officialModels": 74,
+      "newsletterArticles": 15
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Mizuno",
+      "officialVariants": 30,
+      "officialModels": 24,
+      "newsletterArticles": 3
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Umbro",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "FILA",
+      "officialVariants": 7,
+      "officialModels": 7,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "diadora",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Le Coq Sportif",
+      "officialVariants": 1,
+      "officialModels": 1,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Jordan",
+      "officialVariants": 4,
+      "officialModels": 4,
+      "newsletterArticles": 99
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Y-3",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "SATISFY",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Onitsuka Tiger",
+      "officialVariants": 23,
+      "officialModels": 10,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "K-SWISS",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "On",
+      "officialVariants": 762,
+      "officialModels": 100,
+      "newsletterArticles": 13
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Salomon",
+      "officialVariants": 24,
+      "officialModels": 10,
+      "newsletterArticles": 14
+    },
+    {
+      "group": "SPORTS",
+      "brand": "HOKA",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Brooks",
+      "officialVariants": 74,
+      "officialModels": 30,
+      "newsletterArticles": 3
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Saucony",
+      "officialVariants": 5,
+      "officialModels": 5,
+      "newsletterArticles": 6
+    },
+    {
+      "group": "SPORTS",
+      "brand": "norda",
+      "officialVariants": 3,
+      "officialModels": 2,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "SPORTS",
+      "brand": "KEEN",
+      "officialVariants": 327,
+      "officialModels": 87,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Merrell",
+      "officialVariants": 7,
+      "officialModels": 7,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Lululemon",
+      "officialVariants": 18,
+      "officialModels": 7,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "SPORTS",
+      "brand": "Alo",
+      "officialVariants": 1,
+      "officialModels": 1,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "SPORTS",
+      "brand": "OOFOS",
+      "officialVariants": 9,
+      "officialModels": 5,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "The North Face",
+      "officialVariants": 24,
+      "officialModels": 18,
+      "newsletterArticles": 2
+    },
+    {
+      "group": "SPORTS",
+      "brand": "COLUMBIA",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "KOLON SPORT",
+      "officialVariants": 10,
+      "officialModels": 7,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "K2",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "NEPA",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "BLACKYAK",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "DESCENTE",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "DYNAFIT",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "spyder",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "SPORTS",
+      "brand": "goalstudio",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "Rockfish Weatherwear",
+      "officialVariants": 18,
+      "officialModels": 5,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "Converse",
+      "officialVariants": 150,
+      "officialModels": 70,
+      "newsletterArticles": 10
+    },
+    {
+      "group": "CASUAL",
+      "brand": "Vans",
+      "officialVariants": 38,
+      "officialModels": 28,
+      "newsletterArticles": 25
+    },
+    {
+      "group": "CASUAL",
+      "brand": "Crocs",
+      "officialVariants": 13,
+      "officialModels": 12,
+      "newsletterArticles": 6
+    },
+    {
+      "group": "CASUAL",
+      "brand": "Timberland",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 2
+    },
+    {
+      "group": "CASUAL",
+      "brand": "UGG",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "LACOSTE",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "POLO RALPH LAUREN",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "TOMMY HILFIGER",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "Calvin Klein Jeans",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "Diesel",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "DR.MARTENS",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "Birkenstock",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 1
+    },
+    {
+      "group": "CASUAL",
+      "brand": "fitflop",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "Melissa",
+      "officialVariants": 151,
+      "officialModels": 87,
+      "newsletterArticles": 0
+    },
+    {
+      "group": "CASUAL",
+      "brand": "ASH",
+      "officialVariants": 0,
+      "officialModels": 0,
+      "newsletterArticles": 0
+    }
+  ],
+  "officialZeroBrands": [
+    "Common Projects",
+    "Bally",
+    "Martine Rose",
+    "Vivienne Westwood",
+    "Marc Jacobs"
+  ],
+  "removals": [
+    {
+      "id": "arrival-7b599a8bb04ec21ebf4f",
+      "brand": "Kenzo",
+      "style": "FG55SN122F55.99",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-cc4ef9049d62c5f88b49"
+    },
+    {
+      "id": "arrival-faf90888ea62ef21881e",
+      "brand": "Kenzo",
+      "style": "FG55SN122F55.79",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-8cc10603a073db73bdb0"
+    },
+    {
+      "id": "arrival-5e19b92646872010e3dd",
+      "brand": "Kenzo",
+      "style": "FG65SN122F53.91",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-6e254705f7462a0f4bd1"
+    },
+    {
+      "id": "arrival-933eb227f54030dac561",
+      "brand": "Kenzo",
+      "style": "FG65SN122F53.23",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-cfab36968d5c772925dc"
+    },
+    {
+      "id": "arrival-879f9e304488c0d39123",
+      "brand": "Kenzo",
+      "style": "FG55SN122F55.03",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-f1d229969665aa5d794f"
+    },
+    {
+      "id": "arrival-7d1c6db1aabaec0c176c",
+      "brand": "Kenzo",
+      "style": "FG55SN122F55.51",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-3b4dd3a515efcb13cd27"
+    },
+    {
+      "id": "arrival-9e835b43b9976469eee1",
+      "brand": "Kenzo",
+      "style": "FG55SN122F55.34",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-cc7a5031cdc838c53e40"
+    },
+    {
+      "id": "arrival-0497c50a3217ad78105e",
+      "brand": "23.65",
+      "style": "1831",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c99eff1105c8fc2c1210",
+      "brand": "23.65",
+      "style": "1830",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-7f22eb8a12602da18b1e",
+      "brand": "23.65",
+      "style": "1849",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-43005fe655b037f82add",
+      "brand": "23.65",
+      "style": "1850",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-5973e63b0e55654e6fde",
+      "brand": "23.65",
+      "style": "1851",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-5bf7900eee0498cffa29",
+      "brand": "23.65",
+      "style": "1848",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-1ee738740a4decd07de7",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-0e01595047986c96c5a9",
+      "brand": "23.65",
+      "style": "1840",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-ccab965d0cd151a7d0f3",
+      "brand": "23.65",
+      "style": "1844",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-6f0377f41848a97b3a8e",
+      "brand": "23.65",
+      "style": "1842",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-119ebafdeda839d00ed1",
+      "brand": "23.65",
+      "style": "1843",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-769c8671faee84ef4b61",
+      "brand": "23.65",
+      "style": "1841",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-b87a17ae6cab2412b76d",
+      "brand": "23.65",
+      "style": "1845",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-7533c6bb52c1c16747df",
+      "brand": "23.65",
+      "style": "1857",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-dae573f6b39af92bf7b1",
+      "brand": "23.65",
+      "style": "1856",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-0666a21312e049427e7a",
+      "brand": "23.65",
+      "style": "1858",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c3a759f85ec3aab74d9b",
+      "brand": "23.65",
+      "style": "1852",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-1a558541750dbef44d89",
+      "brand": "23.65",
+      "style": "1853",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-fb3e72b5aa0f60ead828",
+      "brand": "23.65",
+      "style": "1854",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-f5d4d8dd7166b9f89fbc",
+      "brand": "23.65",
+      "style": "1855",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-aef3c07742bfa2525760",
+      "brand": "Skechers",
+      "style": "233144_WHT",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-ad37129b0f12e5b8d08c",
+      "brand": "Skechers",
+      "style": "233144_BBK",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-db769341e41ce905fddf",
+      "brand": "Skechers",
+      "style": "233166_BBK",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-070ec8f284b8b92c89ca",
+      "brand": "Skechers",
+      "style": "233166_WHT",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-698187706592c990156d",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-a00b5aee8da7feace7a1",
+      "brand": "Havaianas",
+      "style": "4148806-ROSE_GUM",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-004c397e260244145b78",
+      "brand": "Havaianas",
+      "style": "4149947-BLACK",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-1b5cdf7946aee8665c5c",
+      "brand": "Havaianas",
+      "style": "4149947-RUST",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-bbc659ebbffe0448b4a7",
+      "brand": "Havaianas",
+      "style": "4149947-BUTTERCREAM",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-d5e655db9745d5a67aee",
+      "brand": "Havaianas",
+      "style": "4149947-OLIVE_GREEN",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-81ca620ac27aa46b07f2",
+      "brand": "23.65",
+      "style": "1818",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-092b588cbbaca7490398",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-766c44e6ef5663959088",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c51e45bc23de44fad993",
+      "brand": "23.65",
+      "style": "1611",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-5d334baff3ffd74b13db",
+      "brand": "23.65",
+      "style": "1609",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-a342d4e7fec463258c5d",
+      "brand": "23.65",
+      "style": "1792",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-058acf07ade2be572e91",
+      "brand": "23.65",
+      "style": "1866",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-cf13ee3ab9b322a81cdb",
+      "brand": "23.65",
+      "style": "1791",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c3c5806349cd76e303e4",
+      "brand": "23.65",
+      "style": "1833",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-6ed229d0d1fe45df0a66",
+      "brand": "23.65",
+      "style": "1834",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-f0d503fd247f36c880d4",
+      "brand": "23.65",
+      "style": "1836",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-3847aaa64e250abce8d4",
+      "brand": "23.65",
+      "style": "1835",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-9dfa89c50f9dc013d18b",
+      "brand": "Balenciaga",
+      "style": "track-zip-sneaker-black-542023WTKZM1018",
+      "reason": "exact-official-full-manufacturer-code",
+      "officialId": "arrival-882dfe52be7da18abd80"
+    },
+    {
+      "id": "arrival-d5de5a08da22695a87cf",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-d28fe6b9fce71488679c",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-efdc176b33485fbb483c",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-eed929bae737d8d6106d",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-7d49c0383e59f5ac43f4",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-69bf01f97d0e04664b43",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-13d92c1b94052d3cb5f6",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-aa265a54d664e311953b",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-47f4d62807e5a83b15c1",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-07c1652670440dae2bf7",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-5a9b6ba05d3fa09be8cd",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-f27be4ac7c07774478d4",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-0813a121d11bc6fce2a5",
+      "brand": "Skechers",
+      "style": "Color",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-0238571a5a035485e194",
+      "brand": "adidas",
+      "style": "KI8294",
+      "reason": "reviewed-same-physical-variant",
+      "officialId": "arrival-9e8e0b0a5146e2dbaee6"
+    }
+  ],
+  "coverage": {
+    "catalogExhaustive": false,
+    "primaryApiAndListingBrands": [
+      "Cecilie Bahnsen",
+      "Dries Van Noten",
+      "Kiko Kostadinov",
+      "Lemaire",
+      "MM6 Maison Margiela",
+      "Magliano",
+      "Marine Serre",
+      "Marni",
+      "Martine Rose",
+      "Simone Rocha",
+      "TOM FORD",
+      "Toga Pulla",
+      "Toga Virilis",
+      "Wales Bonner"
+    ],
+    "jacquemusScope": "Observed first-party men/women product tiles and observed pagination; no claim that every selectable colour outside those tiles was read.",
+    "entryChecks": {
+      "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+      "brands": [
+        {
+          "brand": "Louis Vuitton",
+          "url": "https://jp.louisvuitton.com/jpn-jp/men/shoes/sneakers/_/N-t1fud07g",
+          "finalUrl": "https://jp.louisvuitton.com/jpn-jp/men/shoes/sneakers/_/N-t1fud07g",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 403,
+          "title": "LOUIS VUITTON",
+          "status": "blocked",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "6ec71fa7130c01a72b402f0ed8eb59a9fe9978e60dfb93f11b2ff5156ef8afee",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Dior",
+          "url": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers",
+          "finalUrl": "https://www.dior.com/en_us/fashion/womens-fashion/shoes/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 403,
+          "title": "Page unavailable",
+          "status": "blocked",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "7ad9ee5bd8b5b7395bdce59eb084bf316a31efe533049efd74440057f788dfb9",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Balenciaga",
+          "url": "https://www.balenciaga.com/en-us/women/discover-women",
+          "finalUrl": "https://www.balenciaga.com/en-us/women/discover-women",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Women's New Arrivals | Balenciaga US",
+          "status": "entry-readable",
+          "observedProductLinks": 24,
+          "exhaustive": false,
+          "contentHash": "b9a315c131386917738ec020d2927455268186b4e863354a0a2b02f0e8ecd20e",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Prada",
+          "url": "https://www.prada.com/us/en/mens/new-in/c/10182US",
+          "finalUrl": "https://www.prada.com/us/en/mens/new-in/c/10182US",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Men's New In Collection | PRADA - United States",
+          "status": "entry-readable",
+          "observedProductLinks": 34,
+          "exhaustive": false,
+          "contentHash": "4e6cb32a3944b7c66c2228f3890edb90e3765bf7851402bb3dd86cc4319dc43a",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Gucci",
+          "url": "https://www.gucci.com/us/en/ca/whats-new/new-in/this-week-women-c-new-women",
+          "finalUrl": "https://www.gucci.com/us/en/ca/whats-new/new-in/this-week-women-c-new-women",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 403,
+          "title": "Access Denied",
+          "status": "blocked",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "e0811dd467a8fb3dd317e7a5f463fd741c2a9bebb207126dc79c00b830fcaebe",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Celine",
+          "url": "https://www.celine.com/en-us/men/shoes/sneakers/",
+          "finalUrl": "https://www.celine.com/en-us/men/shoes/sneakers/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "SNEAKERS MEN | CELINE",
+          "status": "entry-readable",
+          "observedProductLinks": 36,
+          "exhaustive": false,
+          "contentHash": "f111864cbb70171bfd93217d56057b37299b6b1ef7b7a047bd89bdeb5e2aa5ca",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Saint Laurent",
+          "url": "https://www.ysl.com/en-us/ca/shop-men/shoes/sneakers",
+          "finalUrl": "https://www.ysl.com/en-us/ca/shop-men/shoes/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Sneakers for Men | Saint Laurent | YSL US",
+          "status": "entry-readable",
+          "observedProductLinks": 12,
+          "exhaustive": false,
+          "contentHash": "529f3f732214f62cfd4063e1f141bbb3ccdf3fbe4344c0e42f737d2f078afcda",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Hermès",
+          "url": "https://www.hermes.com/us/en/category/women/shoes/sneakers/",
+          "finalUrl": "https://www.hermes.com/us/en/category/women/shoes/sneakers/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Women's leather sneakers & trainers | Hermès USA",
+          "status": "entry-readable",
+          "observedProductLinks": 40,
+          "exhaustive": false,
+          "contentHash": "98dd2fefd2eae95994874b535e9fa5340ea0748ac7a252200a18a4d167ea4dcd",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Chanel",
+          "url": "https://www.chanel.com/us/fashion/shoes/c/1x1x5x8/sneakers//",
+          "finalUrl": "https://www.chanel.com/us/fashion/shoes/c/1x1x5x8/sneakers//",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 403,
+          "title": "Access Denied",
+          "status": "blocked",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "0182bccd075446419c9c253498282360a97ea56ee07c7057887d3cb5323628cd",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Miu Miu",
+          "url": "https://www.miumiu.com/us/en/new-arrivals/shoes/c/10202US",
+          "finalUrl": "https://www.miumiu.com/us/en/new-arrivals/shoes/c/10202US",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Women's Shoes Collection | Miu Miu - US",
+          "status": "entry-readable",
+          "observedProductLinks": 15,
+          "exhaustive": false,
+          "contentHash": "c88942874d81365f51e65e20786aa046dec9d740a4bd4d503fb226189ec1385b",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Alexander McQueen",
+          "url": "https://www.alexandermcqueen.com/en-us/ca/men/shoes/sneakers",
+          "finalUrl": "https://www.alexandermcqueen.com/en-us/ca/men/shoes/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Men's Designer Sneakers | McQueen US",
+          "status": "entry-readable",
+          "observedProductLinks": 26,
+          "exhaustive": false,
+          "contentHash": "fcc27240ad32ed14fdfce939b810430490c70c2035dadf86333a82ff0bc35514",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Fendi",
+          "url": "https://www.fendi.com/us-en/man/shoes/sneakers",
+          "finalUrl": "https://www.fendi.com/us-en/man/shoes/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 403,
+          "title": "Access Denied",
+          "status": "blocked",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "78ac0d7f8df54b5439914bad162c139ce2d60bea7c3c859a0643ff41a30e695e",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Valentino Garavani",
+          "url": "https://www.valentino.com/en-us/men/shoes/sneakers",
+          "finalUrl": "https://www.valentino.com/en-us/men/shoes/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Valentino Garavani Men's Designer Sneakers & Luxury Trainers",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "8fadb326fb8b6eb61fe4dcbf19cb06a63a79ea5854cd445960deff588bba1ab3",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Givenchy",
+          "url": "https://www.givenchy.com/us/en-US/men/shoes/sneakers",
+          "finalUrl": "https://www.givenchy.com/us/en-US/men/shoes/sneakers/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Men's Designer Sneakers | GIVENCHY US",
+          "status": "entry-readable",
+          "observedProductLinks": 33,
+          "exhaustive": false,
+          "contentHash": "c7680384ae7c74833eac250d643472cd8d6dbc459c23c6ab0e5b2de1e30f951e",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Maison Margiela",
+          "url": "https://www.maisonmargiela.com/en-us/maison-margiela/men/shoes/sneakers/",
+          "finalUrl": "https://www.maisonmargiela.com/en-us/maison-margiela/men/shoes/sneakers/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Men's Sneakers | Maison Margiela Official",
+          "status": "entry-readable",
+          "observedProductLinks": 166,
+          "exhaustive": false,
+          "contentHash": "838ac253efc3f90f2b815013d0469511da099c1cc7b50c8d7378fe4a07cfd639",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Bottega Veneta",
+          "url": "https://www.bottegaveneta.com/en-us/men-collection-us/men-new-arrivals",
+          "finalUrl": "https://www.bottegaveneta.com/en-us/men-collection-us/men-new-arrivals",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Men's Men new arrivals | Bottega Veneta ® US",
+          "status": "entry-readable",
+          "observedProductLinks": 54,
+          "exhaustive": false,
+          "contentHash": "3c30f50d34aa4453efc4d84b1d85c47b2dddf3d565e8df64dd6143ac5a6f6b0f",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Loewe",
+          "url": "https://www.loewe.com/usa/en/women/shoes",
+          "finalUrl": "https://www.loewe.com/int/en/women/shoes",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Women's designer Shoes & Footwear - LOEWE - LOEWE International official website",
+          "status": "entry-readable",
+          "observedProductLinks": 26,
+          "exhaustive": false,
+          "contentHash": "cb96e02dbb48a647678af83bb2caee52c733fec70cdf9439625a9cd903c8bb20",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Lanvin",
+          "url": "https://us.lanvin.com/collections/men-sneakers",
+          "finalUrl": "https://us.lanvin.com/collections/men-sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 400,
+          "title": "",
+          "status": "blocked",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Rick Owens",
+          "url": "https://www.rickowens.eu/collections/men-sneakers",
+          "finalUrl": "https://www.rickowens.eu/collections/men-sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "MENS SNEAKERS | RICK OWENS",
+          "status": "entry-readable",
+          "observedProductLinks": 31,
+          "exhaustive": false,
+          "contentHash": "87ba521655ad9f117f07959f65f2b4babf91aef18f9a811848d8ab97e62c8bcb",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Jil Sander",
+          "url": "https://www.jilsander.com/en-us/men/shoes/sneakers",
+          "finalUrl": "https://www.jilsander.com/en-us/men/shoes/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Designer Sneakers for Men | Jil Sander Official Online Store",
+          "status": "entry-readable",
+          "observedProductLinks": 27,
+          "exhaustive": false,
+          "contentHash": "a01d36d920d966c3dcec5b06ec5086a2d94b73fad94d994efe53cf2c2affa84c",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Off-White",
+          "url": "https://www.off---white.com/en-us/new-in/men-new-in/shoes/",
+          "finalUrl": "https://www.off---white.com/en-us/new-in/men-new-in/shoes/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Off-White™ New Season Men's Shoes and Sneakers",
+          "status": "entry-readable",
+          "observedProductLinks": 24,
+          "exhaustive": false,
+          "contentHash": "8dfffa7a75a9b58910f6a65be84751481148578970a83f664be794a8430a906b",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "AMIRI",
+          "url": "https://www.amiri.com/collections/new-womens-sneaker",
+          "finalUrl": "https://amiri.com/en-kr/collections/new-womens-sneaker",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "NEW IN WOMEN'S SNEAKERS\n – AMIRI",
+          "status": "entry-readable",
+          "observedProductLinks": 15,
+          "exhaustive": false,
+          "contentHash": "80f0695b74ef6047b5aa87934d77a5f8d1e4f4c890cfb23a4ecf0337c536f38d",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Loro Piana",
+          "url": "https://us.loropiana.com/en/c/shoes/man/sneakers",
+          "finalUrl": "https://us.loropiana.com/en/c/shoes/man/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "d36b083c929b678ec8cb0c8a5406c76c1d19d958a0978943b582d6586e1e2904",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Brunello Cucinelli",
+          "url": "https://shop.brunellocucinelli.com/en-ae/men/shoes/",
+          "finalUrl": "https://shop.brunellocucinelli.com/en-ae/men/shoes/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 403,
+          "title": "Access Denied",
+          "status": "blocked",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "49abc94ac44e5666cbe30241ff4c0431c756551b7a1a4835ef27307b91d39f5a",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Moncler",
+          "url": "https://www.moncler.com/en-us/women/new-in/view-all-new-arrivals",
+          "finalUrl": "https://www.moncler.com/en-us/women/new-in/view-all-new-arrivals",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Women's Clothing - New Down Jackets, Dresses & Shoes | Moncler",
+          "status": "entry-readable",
+          "observedProductLinks": 48,
+          "exhaustive": false,
+          "contentHash": "6c9f82b9d3c5bdd0d57e5e10564c8067668f890052b77cc4d0e74d22d5626108",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "The Row",
+          "url": "https://www.therow.com/collections/women-sneakers?sort_by=created-descending",
+          "finalUrl": "https://www.therow.com/ko-kr/collections/women-sneakers?sort_by=created-descending",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "여성 스니커즈: 레이스업 및 트레이너 l The Row",
+          "status": "entry-readable",
+          "observedProductLinks": 7,
+          "exhaustive": false,
+          "contentHash": "d9dca1267ee57803cba7b578e491403607c4dbf4be215771c9ef4d5ad4bfaaac",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Golden Goose",
+          "url": "https://www.goldengoose.com/kr/ko/ls/여성/스니커즈-w-ko_kr",
+          "finalUrl": "https://www.goldengoose.com/kr/ko/ls/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-w-ko_kr",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "여성용 럭셔리 스니커즈 | Golden Goose KR",
+          "status": "entry-readable",
+          "observedProductLinks": 64,
+          "exhaustive": false,
+          "contentHash": "ae85518200f6f84877cc99c415624007ee17a87fa0942536b09a23d05d290e26",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Maison Mihara Yasuhiro",
+          "url": "https://www.miharayasuhiro.jp/",
+          "finalUrl": "https://miharayasuhiro.jp:443/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Maison MIHARA YASUHIRO ONLINE STORE（メゾンミハラヤスヒロオンラインストア）",
+          "status": "entry-readable",
+          "observedProductLinks": 92,
+          "exhaustive": false,
+          "contentHash": "270b61e44fefc7be1364a459715408101c81ba7b82fedf1f8a788172da49104b",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Common Projects",
+          "url": "https://www.commonprojects.com/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "status": "request-failed",
+          "error": "Failed to perform, curl: (28) Failed to connect to www.commonprojects.com port 443 after 21050 ms: Could not connect to server. See https://",
+          "exhaustive": false
+        },
+        {
+          "brand": "Axel Arigato",
+          "url": "https://www.axelarigato.com/men/new-arrivals",
+          "finalUrl": "https://axelarigato.com/men/new-arrivals",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "AXEL ARIGATO - New Arrivals For Men",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "01485bf7253c8c644dfdb8ddc2388c27043937b5695a27916bf55a1401889b59",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Autry",
+          "url": "https://www.autry-usa.com/ko/여성/스니커즈/",
+          "finalUrl": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 403,
+          "title": "Just a moment...",
+          "status": "blocked",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "c522c4d84c7d9302cd60f795f5127d5b278a85bd8780ebdfe07a2dd86eead25b",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "PANE",
+          "url": "https://www.paneshoes.com/collections/new-arrivals-1",
+          "finalUrl": "https://paneshoes.com/collections/new-arrivals-1",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "NEW ARRIVALS",
+          "status": "entry-readable",
+          "observedProductLinks": 48,
+          "exhaustive": false,
+          "contentHash": "858b5c669ac0644459eea43cd5815ca04c2eada1605c7709bc2879181b481a02",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "ALOHAS",
+          "url": "https://alohas.com/en-us/collections/sneakers",
+          "finalUrl": "https://alohas.com/collections/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Sneakers | ALOHAS",
+          "status": "entry-readable",
+          "observedProductLinks": 17,
+          "exhaustive": false,
+          "contentHash": "3de79e83e0f0c65b87f504db706404386a6a9eb67c461a7a92d0aebb51345d16",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Burberry",
+          "url": "https://us.burberry.com/l/womens-shoes/sneakers/",
+          "finalUrl": "https://us.burberry.com/l/womens-shoes/sneakers/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Women’s Designer Sneakers | Burberry®",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "da3b28aa4907cf5962124b36d3559459cda3996518459d7fcebac714dea63195",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Versace",
+          "url": "https://www.versace.com/us/en/women/shoes/sneakers/",
+          "finalUrl": "https://www.versace.com/us/en/women/shoes/sneakers/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Women's Designer Sneakers & Tennis Shoes | VERSACE US",
+          "status": "entry-readable",
+          "observedProductLinks": 53,
+          "exhaustive": false,
+          "contentHash": "5d52258ad48a7baff58df4fafb080765dca76e21ba620d41e2706b54e115cd2e",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Balmain",
+          "url": "https://balmain.com/fr-fr/collections/women-sneakers",
+          "finalUrl": "https://balmain.com/fr-fr/collections/women-sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Sneakers Women",
+          "status": "entry-readable",
+          "observedProductLinks": 14,
+          "exhaustive": false,
+          "contentHash": "a8228289aa06ed6fd663ce18359fd9462de7bb41fd9828c8f6c056d1dbde6f70",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Ferragamo",
+          "url": "https://www.ferragamo.com/shop/kor/ko/women-9/%EC%8A%88%EC%A6%88-9/sneakers-9",
+          "finalUrl": "https://www.ferragamo.com/shop/kor/ko/women-9/%EC%8A%88%EC%A6%88-9/sneakers-9",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "여성 운동화 및 슬립온 | Ferragamo KR",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "858fd8bc37d18c8d9bdcdf549260bea344ee56d2432af6fb9a169779354ce262",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Jimmy Choo",
+          "url": "https://www.jimmychoo.com/kr/ko_KR/%EC%97%AC%EC%84%B1-%EC%A0%9C%ED%92%88-%EB%AA%A8%EB%91%90-%EB%B3%B4%EA%B8%B0/%EC%8A%88%EC%A6%88/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/",
+          "finalUrl": "https://www.jimmychoo.com/kr/ko_KR/%EC%97%AC%EC%84%B1-%EC%A0%9C%ED%92%88-%EB%AA%A8%EB%91%90-%EB%B3%B4%EA%B8%B0/%EC%8A%88%EC%A6%88/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "여성 디자이너 스니커즈 | 청키 스니커즈 | 지미추",
+          "status": "entry-readable",
+          "observedProductLinks": 59,
+          "exhaustive": false,
+          "contentHash": "64582ee32b3fa960855d864435b8fd82491b59a79bdc03908c2b468e755842eb",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Christian Louboutin",
+          "url": "https://apac.christianlouboutin.com/au_en/ladies/shoes/sneakers/",
+          "finalUrl": "https://apac.christianlouboutin.com/au_en/ladies/shoes/sneakers/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Sneakers - Christian Louboutin",
+          "status": "entry-readable",
+          "observedProductLinks": 29,
+          "exhaustive": false,
+          "contentHash": "d3b9a529db280a1b073c8e3f6bae3f35e1cc542e4a0e9c9dd2fd137e9b58c899",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "MCM",
+          "url": "https://us.mcmworldwide.com/en_US/women/shoes/sneakers",
+          "finalUrl": "https://us.mcmworldwide.com/en_US/women/shoes/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Designer Leather Sneakers For Women | MCM® US",
+          "status": "entry-readable",
+          "observedProductLinks": 52,
+          "exhaustive": false,
+          "contentHash": "f05e4924aeefabbbb5f48a0857b84b241590e070409f10f5e689ad9f575df784",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Coach",
+          "url": "https://korea.coach.com/shop/women/shoes/sneakers",
+          "finalUrl": "https://korea.coach.com/shop/women/shoes/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "스니커즈 | COACH®",
+          "status": "entry-readable",
+          "observedProductLinks": 21,
+          "exhaustive": false,
+          "contentHash": "b9790c6155341ce28f7053a7ed8fb97f7ecef5b59d726c469802b1328bfee929",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Tory Burch",
+          "url": "https://www.toryburch.com/en-us/shoes/sneakers/",
+          "finalUrl": "https://www.toryburch.co.kr/public/display/main/view",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Tory Burch - 토리버치",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "e374148afc19166db4e7d2e5b3ed13c2a5525d500a7e2e49303641c423b4db65",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Bally",
+          "url": "https://www.bally.com/en-ca/collections/men-shoes-sneakers",
+          "finalUrl": "https://www.bally.com/en-ca/collections/men-shoes-sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Men's Sneakers | Bally Global CA",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "7abb1dfc5864a6386eda9469a7219f4a84c1c69036dc54483b8e36e538b7b185",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Stella McCartney",
+          "url": "https://www.stellamccartney.com/kr/ko/%EC%97%AC%EC%84%B1/%EC%8A%88%EC%A6%88/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88",
+          "finalUrl": "https://www.stellamccartney.com/kr/ko/%EC%97%AC%EC%84%B1/%EC%8A%88%EC%A6%88/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "스니커즈 | Stella McCartney KR",
+          "status": "entry-readable",
+          "observedProductLinks": 43,
+          "exhaustive": false,
+          "contentHash": "930ef25e8001e5f19e6a8ee59d25c458f8a43c20ac83242397da07fc09b09bcb",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Kenzo",
+          "url": "https://www.kenzo.com/en-kr/c-shoes/men/sneakers",
+          "finalUrl": "https://www.kenzo.com/en-kr/c-shoes/men/sneakers",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Sneakers for Men | KENZO",
+          "status": "entry-readable",
+          "observedProductLinks": 32,
+          "exhaustive": false,
+          "contentHash": "fdabb9d8b6385c7bd08335eff925cfa1ed2f11db77688b414d53348a7a219128",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Cecilie Bahnsen",
+          "url": "https://www.ceciliebahnsen.com/collections/new-in",
+          "finalUrl": "https://ceciliebahnsen.com/collections/new-in",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "New In | Dresses, Tops, Skirts & Shoes for Women | Cecilie Bahnsen",
+          "status": "entry-readable",
+          "observedProductLinks": 20,
+          "exhaustive": false,
+          "contentHash": "d809b2314c22e5c9f294ad7a756156beb31a561b8a624834f7d9a0f8629880f9",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Kiko Kostadinov",
+          "url": "https://www.kikokostadinov.com/",
+          "finalUrl": "https://kikokostadinov.com/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "KIKO KOSTADINOV – Shop",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "9a322d15d33fbfb60d014e4e37fcb66b1b58035f50b80fd13d633785abff5fc0",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Simone Rocha",
+          "url": "https://www.simonerocha.com/collections/womenswear",
+          "finalUrl": "https://simonerocha.com/collections/womenswear",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Women's New Arrivals\n – Simone Rocha",
+          "status": "entry-readable",
+          "observedProductLinks": 40,
+          "exhaustive": false,
+          "contentHash": "10c750290fceb84769d2f33a8453ac524fa1674ba364b3416adf0d0cc4b48cc2",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Wales Bonner",
+          "url": "https://www.walesbonner.com/collections/footwear?sort_by=created-descending",
+          "finalUrl": "https://walesbonner.com/collections/footwear?sort_by=created-descending",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Footwear\n – Wales Bonner",
+          "status": "entry-readable",
+          "observedProductLinks": 20,
+          "exhaustive": false,
+          "contentHash": "a764360f568b6092c16809abd7880e8ead012d9b1d2189cac965fefaf4b024b5",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Magliano",
+          "url": "https://magliano.website/",
+          "finalUrl": "https://magliano.website/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Magliano – Official Website",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "86e9da3700cafc42f854a517099338ae4adf7fa0444fc2bf3285714a488d6c71",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Martine Rose",
+          "url": "https://www.martine-rose.com/collections/shoes",
+          "finalUrl": "https://www.martine-rose.com/collections/shoes",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Shoes | Martine Rose",
+          "status": "entry-readable",
+          "observedProductLinks": 4,
+          "exhaustive": false,
+          "contentHash": "5eb3523e41f055e73bd5ce3e26b74a9ac1da3af899d24ed51ec258fc44ba135f",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Lemaire",
+          "url": "https://www.lemaire.fr/",
+          "finalUrl": "https://www.lemaire.fr/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Official Online Store | LEMAIRE",
+          "status": "entry-readable",
+          "observedProductLinks": 2,
+          "exhaustive": false,
+          "contentHash": "3826e97f847032be09e8f0d8c48fe9d784cc87d5614354302f24fcb0256f808e",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Marni",
+          "url": "https://www.marni.com/ko-kr/",
+          "finalUrl": "https://www.marni.com/ko-kr/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "마르니 | 공식 온라인 스토어 | 한국",
+          "status": "entry-readable",
+          "observedProductLinks": 16,
+          "exhaustive": false,
+          "contentHash": "d977eef2deb63681f2d01e1fdcddfdc44f531fddd16a5ba4d419c33513779e2c",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Dries Van Noten",
+          "url": "https://www.driesvannoten.com/collections/sneakers?sort_by=created-descending",
+          "finalUrl": "https://www.driesvannoten.com/collections/sneakers?sort_by=created-descending",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Sneakers | Dries Van Noten",
+          "status": "entry-readable",
+          "observedProductLinks": 36,
+          "exhaustive": false,
+          "contentHash": "e0b811b65d77159556603cd4918ec4917a97c712ec3d7413389521279f8eb426",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Jacquemus",
+          "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+          "finalUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 403,
+          "title": "Site en cours de maintenance",
+          "status": "blocked",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "bcd51aa282224fe6b6bd1ed6b63a21ae76d7a41e303dffa0d54f3b2b51691093",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Toga Pulla",
+          "url": "https://int.toga.jp/",
+          "finalUrl": "https://int.toga.jp/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "TOGA ARCHIVES | OFFICIAL ONLINE STORE\n\n | TOGA ONLINE STORE",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "f7a5a26f3ccd3b0fbd32b154b1f66478f7aec8abf3635647e10ea32ea8126a0c",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Toga Virilis",
+          "url": "https://int.toga.jp/",
+          "finalUrl": "https://int.toga.jp/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "TOGA ARCHIVES | OFFICIAL ONLINE STORE\n\n | TOGA ONLINE STORE",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "9e86b31897db36cfe8aa83674f9f69cf3fbeaa0821b7200663cc844c5340e2d2",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "MM6 Maison Margiela",
+          "url": "https://www.maisonmargiela.com/ko-kr/",
+          "finalUrl": "https://www.maisonmargiela.com/ko-kr/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Maison Margiela",
+          "status": "entry-readable",
+          "observedProductLinks": 77,
+          "exhaustive": false,
+          "contentHash": "c003c9b8b86e18aa3cba76cdaf9c5c01b8ae9ddec0611e8becb26c0110363a5c",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Vivienne Westwood",
+          "url": "https://www.viviennewestwood.com/en-us/men/shoes/trainers/",
+          "finalUrl": "https://viviennewestwood.kr/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "",
+          "status": "entry-readable",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "c8499afe579e6c1abbb77de9179d96889e7a2c8a8c22d9244e06a3fe33b860bf",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Marine Serre",
+          "url": "https://www.marineserre.com/",
+          "finalUrl": "https://www.marineserre.com/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "Marine Serre - Official Website",
+          "status": "entry-readable",
+          "observedProductLinks": 33,
+          "exhaustive": false,
+          "contentHash": "9f926b956cb5f4b4be4b75310231ce099d707a2a7e9bfd5189172cdd640e8f7d",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "TOM FORD",
+          "url": "https://www.tomfordfashion.com/",
+          "finalUrl": "https://www.tomfordfashion.com/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 200,
+          "title": "TOM FORD Fashion Online Store",
+          "status": "entry-readable",
+          "observedProductLinks": 9,
+          "exhaustive": false,
+          "contentHash": "d70aa3e7f384b16a8f9125dacd4e6758ab45e9f6ce2b62313db98c767a6e51ae",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        },
+        {
+          "brand": "Marc Jacobs",
+          "url": "https://www.marcjacobs.com/us-en/the-marc-jacobs/shoes/sneakers/",
+          "finalUrl": "https://www.marcjacobs.com/us-en/the-marc-jacobs/shoes/sneakers/",
+          "checkedAt": "2026-11-03T01:46:58.187599+00:00",
+          "httpStatus": 403,
+          "title": "Access Denied",
+          "status": "blocked",
+          "observedProductLinks": 0,
+          "exhaustive": false,
+          "contentHash": "9a2fd88813938c65e7c2a43ecf544c0b2255340eb7ff53de57e9c0fa9399fbb7",
+          "note": "Entry availability check only; HTTP 200 and visible first-page links never prove a complete inventory."
+        }
+      ],
+      "catalogExhaustive": false
+    },
+    "limitations": [
+      "Entry readability does not prove complete inventory.",
+      "Blocked sources and regional redirects prevent a 100% all-LUX claim.",
+      "Jacquemus verification covers observed listing tiles, not every additional PDP-only colour.",
+      "Prior source-specific gaps: Common Projects, Saint Laurent completeness, two Hermès Kid colour pages, Bally global inventory."
+    ]
+  }
+}

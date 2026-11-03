@@ -209,15 +209,34 @@
   "Cecilie Bahnsen": [
     {
       "name": "Cecilie Bahnsen Official daily source",
-      "url": "https://www.ceciliebahnsen.com/collections/new-in"
+      "url": "https://www.ceciliebahnsen.com/collections/new-in",
+      "basis": "assortment"
     },
     {
       "name": "Cecilie Bahnsen Official daily source",
-      "url": "https://www.ceciliebahnsen.com/collections/shoes?sort_by=created-descending"
+      "url": "https://www.ceciliebahnsen.com/collections/shoes?sort_by=created-descending",
+      "basis": "assortment"
     },
     {
       "name": "Cecilie Bahnsen Official daily source",
-      "url": "https://www.ceciliebahnsen.com/"
+      "url": "https://www.ceciliebahnsen.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Cecilie Bahnsen official assortment",
+      "url": "https://ceciliebahnsen.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Cecilie Bahnsen official assortment",
+      "url": "https://ceciliebahnsen.com/collections/shoes-accessories?filter.p.m.custom.subcategories=gid%3A%2F%2Fshopify%2FMetaobject%2F493730234698",
+      "basis": "assortment"
+    },
+    {
+      "name": "Cecilie Bahnsen official product inventory",
+      "url": "https://ceciliebahnsen.com/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
     }
   ],
   "Celine": [
@@ -364,15 +383,34 @@
   "Dries Van Noten": [
     {
       "name": "Dries Van Noten Official daily source",
-      "url": "https://www.driesvannoten.com/collections/sneakers?sort_by=created-descending"
+      "url": "https://www.driesvannoten.com/collections/sneakers?sort_by=created-descending",
+      "basis": "assortment"
     },
     {
       "name": "Dries Van Noten Official daily source",
-      "url": "https://www.driesvannoten.com/collections/women-shoes?sort_by=created-descending"
+      "url": "https://www.driesvannoten.com/collections/women-shoes?sort_by=created-descending",
+      "basis": "assortment"
     },
     {
       "name": "Dries Van Noten Official daily source",
-      "url": "https://www.driesvannoten.com/"
+      "url": "https://www.driesvannoten.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Dries Van Noten official assortment",
+      "url": "https://www.driesvannoten.com/collections/women-shoes",
+      "basis": "assortment"
+    },
+    {
+      "name": "Dries Van Noten official assortment",
+      "url": "https://www.driesvannoten.com/collections/men-shoes",
+      "basis": "assortment"
+    },
+    {
+      "name": "Dries Van Noten official product inventory",
+      "url": "https://www.driesvannoten.com/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
     }
   ],
   "DSQUARED2": [
@@ -548,7 +586,23 @@
   "Jacquemus": [
     {
       "name": "Jacquemus Official daily source",
-      "url": "https://www.jacquemus.com/"
+      "url": "https://www.jacquemus.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Jacquemus official assortment",
+      "url": "https://www.jacquemus.com/ko_kr",
+      "basis": "assortment"
+    },
+    {
+      "name": "Jacquemus official sneakers",
+      "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+      "basis": "assortment"
+    },
+    {
+      "name": "Jacquemus official sneakers",
+      "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "basis": "assortment"
     }
   ],
   "Jil Sander": [
@@ -608,7 +662,19 @@
   "Kiko Kostadinov": [
     {
       "name": "Kiko Kostadinov Official daily source",
-      "url": "https://www.kikokostadinov.com/"
+      "url": "https://www.kikokostadinov.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Kiko Kostadinov official assortment",
+      "url": "https://kikokostadinov.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Kiko Kostadinov official product inventory",
+      "url": "https://kikokostadinov.com/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
     }
   ],
   "Kolor": [
@@ -740,17 +806,37 @@
   "Marine Serre": [
     {
       "name": "Marine Serre Official daily source",
-      "url": "https://www.marineserre.com/"
+      "url": "https://www.marineserre.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Marine Serre official product inventory",
+      "url": "https://www.marineserre.com/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
     }
   ],
   "Martine Rose": [
     {
       "name": "Martine Rose Official daily source",
-      "url": "https://www.martine-rose.com/collections/shoes"
+      "url": "https://www.martine-rose.com/collections/shoes",
+      "basis": "assortment"
     },
     {
       "name": "Martine Rose Official newest first (newest first)",
-      "url": "https://www.martine-rose.com/collections/shoes?sort_by=created-descending"
+      "url": "https://www.martine-rose.com/collections/shoes?sort_by=created-descending",
+      "basis": "assortment"
+    },
+    {
+      "name": "Martine Rose official assortment",
+      "url": "https://www.martine-rose.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Martine Rose official product inventory",
+      "url": "https://www.martine-rose.com/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
     }
   ],
   "Miu Miu": [
@@ -781,6 +867,11 @@
     {
       "name": "MM6 Maison Margiela Official daily source",
       "url": "https://www.maisonmargiela.com/"
+    },
+    {
+      "name": "MM6 Maison Margiela official assortment",
+      "url": "https://www.maisonmargiela.com/ko-kr/",
+      "basis": "assortment"
     }
   ],
   "Moncler": [
@@ -1072,15 +1163,39 @@
   "Simone Rocha": [
     {
       "name": "Simone Rocha Official daily source",
-      "url": "https://www.simonerocha.com/collections/womenswear"
+      "url": "https://www.simonerocha.com/collections/womenswear",
+      "basis": "assortment"
     },
     {
       "name": "Simone Rocha Official daily source",
-      "url": "https://www.simonerocha.com/"
+      "url": "https://www.simonerocha.com/",
+      "basis": "assortment"
     },
     {
       "name": "Simone Rocha Official newest first (newest first)",
-      "url": "https://www.simonerocha.com/collections/womenswear?sort_by=created-descending"
+      "url": "https://www.simonerocha.com/collections/womenswear?sort_by=created-descending",
+      "basis": "assortment"
+    },
+    {
+      "name": "Simone Rocha official assortment",
+      "url": "https://simonerocha.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Simone Rocha official assortment",
+      "url": "https://simonerocha.com/collections/shoes",
+      "basis": "assortment"
+    },
+    {
+      "name": "Simone Rocha official assortment",
+      "url": "https://simonerocha.com/collections/men-shoes",
+      "basis": "assortment"
+    },
+    {
+      "name": "Simone Rocha official product inventory",
+      "url": "https://simonerocha.com/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
     }
   ],
   "Song for the Mute": [
@@ -1236,11 +1351,39 @@
   "Wales Bonner": [
     {
       "name": "Wales Bonner Official daily source",
-      "url": "https://www.walesbonner.com/collections/footwear?sort_by=created-descending"
+      "url": "https://www.walesbonner.com/collections/footwear?sort_by=created-descending",
+      "basis": "assortment"
     },
     {
       "name": "Wales Bonner Official daily source",
-      "url": "https://www.walesbonner.com/"
+      "url": "https://www.walesbonner.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Wales Bonner official assortment",
+      "url": "https://walesbonner.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Wales Bonner official assortment",
+      "url": "https://walesbonner.com/collections/footwear-menswear",
+      "basis": "assortment"
+    },
+    {
+      "name": "Wales Bonner official assortment",
+      "url": "https://walesbonner.com/collections/footwear-womenswear",
+      "basis": "assortment"
+    },
+    {
+      "name": "Wales Bonner official assortment",
+      "url": "https://walesbonner.com/collections/footwear",
+      "basis": "assortment"
+    },
+    {
+      "name": "Wales Bonner official product inventory",
+      "url": "https://walesbonner.com/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
     }
   ],
   "Willy Chavarria": [
@@ -1534,6 +1677,106 @@
     {
       "name": "Coach official regional entry",
       "url": "https://www.coach.com/",
+      "basis": "assortment"
+    }
+  ],
+  "Magliano": [
+    {
+      "name": "Magliano official assortment",
+      "url": "https://magliano.website/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Magliano official product inventory",
+      "url": "https://magliano.website/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
+    }
+  ],
+  "Lemaire": [
+    {
+      "name": "Lemaire official assortment",
+      "url": "https://www.lemaire.fr/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Lemaire official assortment",
+      "url": "https://www.lemaire.fr/collections/shoes",
+      "basis": "assortment"
+    },
+    {
+      "name": "Lemaire official product inventory",
+      "url": "https://www.lemaire.fr/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
+    }
+  ],
+  "Marni": [
+    {
+      "name": "Marni official assortment",
+      "url": "https://www.marni.com/ko-kr/",
+      "basis": "assortment"
+    }
+  ],
+  "Toga Pulla": [
+    {
+      "name": "Toga Pulla official assortment",
+      "url": "https://int.toga.jp/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Toga Pulla official product inventory",
+      "url": "https://int.toga.jp/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
+    }
+  ],
+  "Toga Virilis": [
+    {
+      "name": "Toga Virilis official assortment",
+      "url": "https://int.toga.jp/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Toga Virilis official product inventory",
+      "url": "https://int.toga.jp/products.json?limit=250&page=1",
+      "basis": "assortment",
+      "adapter": "shopify-inventory"
+    }
+  ],
+  "Vivienne Westwood": [
+    {
+      "name": "Vivienne Westwood official assortment",
+      "url": "https://viviennewestwood.kr/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Vivienne Westwood official sneakers",
+      "url": "https://www.viviennewestwood.com/en-us/men/shoes/trainers/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Vivienne Westwood official sneakers",
+      "url": "https://www.viviennewestwood.com/en-us/women/shoes/trainers/",
+      "basis": "assortment"
+    }
+  ],
+  "TOM FORD": [
+    {
+      "name": "TOM FORD official assortment",
+      "url": "https://www.tomfordfashion.com/",
+      "basis": "assortment"
+    }
+  ],
+  "Marc Jacobs": [
+    {
+      "name": "Marc Jacobs official assortment",
+      "url": "https://www.marcjacobs.com/",
+      "basis": "assortment"
+    },
+    {
+      "name": "Marc Jacobs official sneakers",
+      "url": "https://www.marcjacobs.com/us-en/the-marc-jacobs/shoes/sneakers/",
       "basis": "assortment"
     }
   ]

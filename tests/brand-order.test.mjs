@@ -1,64 +1,9 @@
-import test from 'node:test';
-import assert from 'node:assert/strict';
-import {compareByBrandGroup, displayBrandGroup, brandGroupRank, BRAND_GROUPS} from '../public/assets/brand-groups.mjs';
-
-const order = names => names.map(name => ({name})).sort(compareByBrandGroup).map(b => b.name);
-
-test('every LUX brand comes before any SPORTS brand', () => {
-  const sorted = order(['Nike', 'Gucci', 'adidas', 'Prada', 'Rockfish Weatherwear', 'Louis Vuitton']);
-  const firstSports = sorted.findIndex(n => displayBrandGroup({name: n}) === 'SPORTS');
-  const lastLux = sorted.map(n => displayBrandGroup({name: n})).lastIndexOf('LUX');
-  assert(lastLux < firstSports, `LUX must not be interleaved: ${sorted.join(' · ')}`);
-});
-
-test('Rockfish leads SPORTS', () => {
-  const sorted = order(['Nike', 'On', 'adidas', 'Rockfish Weatherwear', 'ASICS']);
-  assert.equal(sorted[0], 'Rockfish Weatherwear');
-  // ...and the rest keep the order the priority list gives them.
-  assert.deepEqual(sorted, ['Rockfish Weatherwear', 'On', 'ASICS', 'New Balance', 'adidas', 'Nike']
-    .filter(n => sorted.includes(n)));
-});
-
-test('a brand nobody listed lands alphabetically after the listed ones, not at the top', () => {
-  const sorted = order(['Zzz Brand', 'Nike', 'Aaa Brand', 'On']);
-  assert.deepEqual(sorted, ['On', 'Nike', 'Aaa Brand', 'Zzz Brand']);
-  assert.equal(brandGroupRank({name: 'Aaa Brand'}).priority, Number.MAX_SAFE_INTEGER);
-});
-
-test('the order is stable and total - sorting twice changes nothing', () => {
-  const names = ['Nike', 'Gucci', 'Rockfish Weatherwear', 'Aaa Brand', 'Dior', 'On'];
-  assert.deepEqual(order(order(names)), order(names));
-  // A brand compared with itself is a tie, which a total order requires.
-  assert.equal(compareByBrandGroup({name: 'Nike'}, {name: 'Nike'}), 0);
-});
-
-test('every house named for LUX reads as LUX, preserving the original order and requested expansion', () => {
-  const named = ['Louis Vuitton','Dior','Balenciaga','Prada','Gucci','Celine','Saint Laurent',
-    'Hermès','Chanel','Miu Miu','Alexander McQueen','Fendi','Valentino Garavani','Givenchy',
-    'Maison Margiela','Bottega Veneta','Loewe','Lanvin','Rick Owens','Jil Sander','Off-White',
-    'AMIRI','Loro Piana','Brunello Cucinelli','Moncler','The Row','Golden Goose',
-    'Maison Mihara Yasuhiro','Common Projects','Axel Arigato','Autry','PANE','ALOHAS',
-    'Burberry','Versace','Balmain','Ferragamo','Jimmy Choo','Christian Louboutin',
-    'MCM','Coach','Tory Burch','Bally','Stella McCartney','Kenzo'];
-  assert.deepEqual(BRAND_GROUPS[0].priority, named);
-  for (const name of named) assert.equal(displayBrandGroup({name}), 'LUX', name);
-});
-
-test("Valentino's own name and its shoe line's name reach the same group", () => {
-  assert.equal(displayBrandGroup({name: 'Valentino'}), 'LUX');
-  assert.equal(displayBrandGroup({name: 'Valentino Garavani'}), 'LUX');
-});
-
-test('a luxury house nobody named follows its policy group instead of dropping into SPORTS', () => {
-  assert.equal(displayBrandGroup({name: "Tod's", group: 'luxury'}), 'LUX');
-  assert.equal(displayBrandGroup({name: 'Ferragamo', group: 'luxury'}), 'LUX');
-  // ...and a contemporary brand with no listing is still SPORTS.
-  assert.equal(displayBrandGroup({name: 'Some Label', group: 'contemporary'}), 'SPORTS');
-});
-
-test('the named order is the order on the page, and sports still follows all of it', () => {
-  const sorted = ['Nike', 'Axel Arigato', 'Autry', 'Dior', 'Louis Vuitton', 'Rockfish Weatherwear']
-    .map(name => ({name})).sort(compareByBrandGroup).map(b => b.name);
-  assert.deepEqual(sorted, ['Louis Vuitton', 'Dior', 'Axel Arigato', 'Autry',
-    'Rockfish Weatherwear', 'Nike']);
-});
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+import{compareByBrandGroup,displayBrandGroup,brandGroupRank,BRAND_GROUPS,groupedBrands}from'../public/assets/brand-groups.mjs';
+import{canonicalSiteBrand,isSiteBrandAllowed}from'../public/assets/site-brand-policy.mjs';
+const order=names=>names.map(name=>({name})).sort(compareByBrandGroup).map(b=>b.name);
+test('all three explicit categories retain requested counts and order',()=>{assert.deepEqual(BRAND_GROUPS.map(g=>[g.name,g.priority.length]),[['LUX',62],['SPORTS',38],['CASUAL',16]]);assert.deepEqual(order(['Rockfish Weatherwear','On','Nike','Gucci','adidas']),['Gucci','Nike','adidas','On','Rockfish Weatherwear']);});
+test('removed and unknown brands never enter sidebar groups',()=>{for(const name of ['Zegna','Goyard',"Tod’s",'ROA','Arc’teryx','Unknown'])assert.equal(isSiteBrandAllowed(name),false,name);assert.deepEqual(groupedBrands([{name:'Unknown'},{name:'Nike'},{name:'Rockfish Weatherwear'}]).filter(g=>g.brands.length).map(g=>[g.name,g.brands.map(b=>b.name)]),[['SPORTS',['Nike']],['CASUAL',['Rockfish Weatherwear']]]);assert.equal(displayBrandGroup({name:'Unknown',group:'luxury'}),'');assert.equal(brandGroupRank({name:'Unknown'}).priority,Number.MAX_SAFE_INTEGER);});
+test('McQueen aliases one existing LUX brand and retains independent Toga lines',()=>{assert.equal(canonicalSiteBrand('McQueen'),'Alexander McQueen');assert.equal(displayBrandGroup({name:'McQueen'}),'LUX');assert.equal(displayBrandGroup({name:'Toga Pulla'}),'LUX');assert.equal(displayBrandGroup({name:'Toga Virilis'}),'LUX');assert.equal(displayBrandGroup({name:'Rockfish Weatherwear'}),'CASUAL');});
+test('source config and generated browser policy stay synchronized',()=>{const config=JSON.parse(fs.readFileSync(new URL('../config/site-brand-groups.json',import.meta.url)));assert.deepEqual(BRAND_GROUPS,config.groups);for(const g of config.groups)for(const name of g.priority)assert.equal(displayBrandGroup({name}),g.name,name);});
+test('sorting remains stable and total',()=>{const x=['Nike','Dior','Rockfish Weatherwear','On'];assert.deepEqual(order(order(x)),order(x));assert.equal(compareByBrandGroup({name:'Nike'},{name:'Nike'}),0);});

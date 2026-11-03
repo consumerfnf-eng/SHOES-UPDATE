@@ -38,6 +38,23 @@ try{
  const page=await context.newPage(),errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push({url:r.url(),method:r.method()}));
  await page.goto(url);await page.locator('.product-card').first().waitFor();
  assert.equal(await page.locator('#result-count').textContent(),'48');assert.equal(await page.locator('.product-card').count(),40);
+ assert.equal(await page.locator('#brand-group-tabs button').count(),4);
+ await page.locator('[data-brand-group="LUX"]').click();
+ assert.equal(await page.locator('[data-brand-group="LUX"]').getAttribute('aria-pressed'),'true');
+ assert.equal(await page.locator('.product-card[data-brand="Nike"]').count(),0);
+ await page.locator('[data-brand-group="SPORTS"]').click();
+ assert.equal(await page.locator('.product-card[data-brand="Prada"]').count(),0);
+ await page.locator('[data-brand-group="CASUAL"]').click();
+ assert.equal(await page.locator('.product-card[data-brand="Nike"]').count(),0);
+ await page.locator('[data-source="brand"]').click();
+ assert.equal(await page.locator('[data-brand-group="LUX"]').getAttribute('aria-pressed'),'true');
+ assert.equal(await page.locator('[data-brand-group="SPORTS"]').isDisabled(),true);
+ assert.equal(await page.locator('[data-brand-group="CASUAL"]').isDisabled(),true);
+ assert.equal(await page.locator('#brand-list [data-brand="Nike"]').count(),0,'Official sidebar contains only current LUX results');
+ await page.locator('[data-source="all"]').click();
+ await page.locator('[data-brand-group="all"]').click();
+ assert.equal(await page.locator('#result-count').textContent(),'48');
+
  assert.equal(await page.locator('#keyword-list a,#style-status a').count(),0,'No source links under style keywords');
  assert.equal(await page.locator('#ecommerce-keyword-list,#editorial-keyword-list').count(),0);
  assert.equal(await page.locator('[data-source="sns"]').count(),1);

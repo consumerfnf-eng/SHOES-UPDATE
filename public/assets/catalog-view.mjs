@@ -1,6 +1,8 @@
 import {footwearTypes,FOOTWEAR_TYPES} from './footwear-policy.mjs';
 import {hasArrivalEvidence} from './publication-window.mjs';
 import {reviewedDesignName,manufacturerCode,identityFold,titleColorLabel} from './product-identity.mjs';
+import {siteBrandGroup,isSiteBrandAllowed} from './site-brand-policy.mjs';
+import {retailReleaseEligibility} from './retail-release-policy.mjs';
 export function kstToday(now = new Date()) {
   const shifted = new Date(now.getTime() + 9 * 60 * 60 * 1000);
   return shifted.toISOString().slice(0, 10);
@@ -76,7 +78,7 @@ export function sourceMatches(product, type, today = kstToday()) {
   }
   if(['retail','newsletter'].includes(type))return false;
   if(type==='media')return product.popularity?.media===true;
-  if(type==='brand')return releaseState(product,today)==='released'&&!!officialProductUrl(product,today)&&!!officialImageUrl(product,today);
+  if(type==='brand')return siteBrandGroup(product.brand)==='LUX'&&releaseState(product,today)==='released'&&!!officialProductUrl(product,today)&&!!officialImageUrl(product,today);
   if(type==='sns')return !!officialImageUrl(product,today)&&visibleSocialMetrics(product,today).some(m=>['search-count','hashtag-post-count'].includes(m.metric)&&m.value>0);
   return product.popularity?.[type]===true;
 }
@@ -155,6 +157,9 @@ export function filterProducts(products, state, today = kstToday()) {
   return products.filter(p => {
     const release = isOverlay(p) ? overlayReleaseState(p, today) : releaseState(p, today);
     return release && hasVisual(p, today)
+      && isSiteBrandAllowed(p.brand)
+      && (!state.brandGroup||state.brandGroup==='all'||siteBrandGroup(p.brand)===state.brandGroup)
+      && (state.source!=='brand'||siteBrandGroup(p.brand)==='LUX')
       // "이번 주 신규" and "저장함" are reader's filters, not evidence rules:
       // a caller that does not set them sees exactly what it saw before.
       && (!state.freshOnly || typeof state.isFresh !== 'function' || state.isFresh(p))
@@ -788,17 +793,13 @@ export function overlayWindowDay(product) {
   // The one date the source actually stated, in priority order: the retailer's
   // listing date, the article's publish date, or - only for a source that
   // publishes no date at all - the run that first saw the item appear.
+  if(String(product?.source||'').startsWith('retail-')&&product?.releaseEvidence?.date)return product.releaseEvidence.date;
   const value = product?.listedAt || product?.publishedAt || product?.firstDetectedAsNewAt || '';
   return String(value).slice(0, 10);
 }
 
 export function overlayReleaseState(product, today = kstToday()) {
-  const proof=product?.availabilityEvidence;
-  const trustedAssortment=product.brand==='Common Projects'&&/^https:\/\/(?:www\.mrporter\.com|kith\.com)\//.test(product.url||'')||product.brand==='Bally'&&/^https:\/\/www\.bally\.ae\/products\//.test(product.url||'');
-  if(proof?.verified===true&&proof.kind==='retail-current-assortment'&&trustedAssortment&&proof.productUrl===product.url) {
-    const checked=String(proof.verifiedAt||'').slice(0,10);
-    return validDay(checked)&&checked<=today&&checked>=shiftCalendarMonths(today,-1)?'released':null;
-  }
+  if(String(product?.source||'').startsWith('retail-'))return retailReleaseEligibility(product,today).eligible?'released':null;
   const day = overlayWindowDay(product);
   if (!validDay(day) || day > today) return null;
   if (day < shiftCalendarMonths(today, -3)) return null;

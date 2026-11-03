@@ -1,7 +1,7 @@
 // Collection queues stay in data/curation-review.json, outside delivery.
 export function publicPublicationStatus(snapshot){
  const status=snapshot.sourceStatus||{};
- snapshot.sourceStatus=Object.fromEntries(['checkedAt','lastSuccessfulCollectionAt','selectionBasis','catalogExhaustive'].filter(k=>status[k]!==undefined).map(k=>[k,status[k]]));
+ snapshot.sourceStatus=Object.fromEntries(['checkedAt','lastSuccessfulCollectionAt','lastVerifiedAdditionAt','selectionBasis','catalogExhaustive'].filter(k=>status[k]!==undefined).map(k=>[k,status[k]]));
  snapshot.sourceStatus.counts={published:snapshot.products.length};
  const published=new Set(snapshot.products.map(p=>p.brand));
  snapshot.brands=(snapshot.brands||[]).filter(b=>published.has(b.name));

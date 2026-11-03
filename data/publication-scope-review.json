@@ -1,0 +1,2185 @@
+{
+  "checkedAt": "2026-11-03T02:04:40.629Z",
+  "siteRemoved": [],
+  "retailReleaseRemoved": [
+    {
+      "id": "common-mrporter-46376663163149566",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149542",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149567",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149564",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149587",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149605",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149563",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149598",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149558",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149599",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149592",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149589",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149584",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149590",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149585",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149578",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149554",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149562",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149549",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149604",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149556",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149540",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149573",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149560",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149586",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149594",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149561",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149588",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149597",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119474",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119477",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119478",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119470",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119475",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119476",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119479",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119471",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-3024088872901548",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-3024088872901549",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-1647597353128482",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-3024088872826616",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-1647597309795935",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-3024088872901572",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-3024088872826630",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-4068790126622114",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-4068790126622113",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-1647597339698231",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-4068790126622115",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-1647597341253690",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-1647597344136824",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8286394351744",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-2069342060672",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8285788569728",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8286394384512",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8285782704256",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8286656233600",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8286656266368",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8285788766336",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8286381375616",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9243528134908:BEIGE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9243528102140:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9243527446780:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9206474866940:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9206474604796:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9114867237116:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9114867204348:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9114864550140:GREY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073580900604:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073580802300:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073580507388:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073580310780:NAVY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073580146940:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073576935676:GREY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073576640764:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073576575228:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073576509692:BEIGE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8962125594876:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891353530620:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891353497852:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891353465084:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891353432316:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891353366780:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891352973564:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891352908028:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891352842492:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891352809724:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891352776956:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350548732:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350483196:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350221052:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350188284:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350122748:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350089980:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350057212:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350024444:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891349958908:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891349893372:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807966998780:RED",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807966900476:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807966834940:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807966769404:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807966703868:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807965360380:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807964999932:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807964442876:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807963754748:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807963459836:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743941865724:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743941538044:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743941439740:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743940325628:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743940260092:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743940129020:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743939997948:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743932264700:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743932035324:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743931937020:GREY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743931871484:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743931379964:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743931085052:BURGUNDY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743930691836:GREY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743929774332:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743928594684:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743927480572:GREY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8537237094652:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8362524410108:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-7661305463036:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8108209471740:MULTICOLOR",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8108209340668:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267510251772:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267508089084:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267507859708:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267507728636:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267504845052:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267504713980:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267504550140:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    }
+  ],
+  "siteRemovalHistory": [],
+  "retailReleaseRemovalHistory": [
+    {
+      "id": "common-mrporter-46376663163149566",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149542",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149567",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149564",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149587",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149605",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149563",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149598",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149558",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149599",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149592",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149589",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149584",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149590",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149585",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149578",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149554",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149562",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149549",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149604",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149556",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149540",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149573",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149560",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149586",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149594",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149561",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149588",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163149597",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119474",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119477",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119478",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119470",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119475",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119476",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119479",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-46376663163119471",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-3024088872901548",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-3024088872901549",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-1647597353128482",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-3024088872826616",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-1647597309795935",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-3024088872901572",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-3024088872826630",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-4068790126622114",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-4068790126622113",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-1647597339698231",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-4068790126622115",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-1647597341253690",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-mrporter-1647597344136824",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8286394351744",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-2069342060672",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8285788569728",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8286394384512",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8285782704256",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8286656233600",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8286656266368",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8285788766336",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "common-kith-8286381375616",
+      "brand": "Common Projects",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9243528134908:BEIGE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9243528102140:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9243527446780:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9206474866940:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9206474604796:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9114867237116:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9114867204348:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9114864550140:GREY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073580900604:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073580802300:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073580507388:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073580310780:NAVY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073580146940:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073576935676:GREY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073576640764:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073576575228:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-9073576509692:BEIGE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8962125594876:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891353530620:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891353497852:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891353465084:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891353432316:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891353366780:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891352973564:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891352908028:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891352842492:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891352809724:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891352776956:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350548732:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350483196:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350221052:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350188284:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350122748:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350089980:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350057212:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891350024444:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891349958908:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8891349893372:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807966998780:RED",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807966900476:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807966834940:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807966769404:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807966703868:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807965360380:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807964999932:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807964442876:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807963754748:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8807963459836:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743941865724:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743941538044:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743941439740:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743940325628:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743940260092:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743940129020:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743939997948:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743932264700:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743932035324:BROWN",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743931937020:GREY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743931871484:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743931379964:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743931085052:BURGUNDY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743930691836:GREY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743929774332:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743928594684:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8743927480572:GREY",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8537237094652:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8362524410108:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-7661305463036:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8108209471740:MULTICOLOR",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8108209340668:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267510251772:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267508089084:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267507859708:BLUE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267507728636:WHITE",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267504845052:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267504713980:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    },
+    {
+      "id": "bally-uae-8267504550140:BLACK",
+      "brand": "Bally",
+      "eligible": false,
+      "reason": "release-date-unverified",
+      "releaseDate": null,
+      "cutoff": "2026-08-03"
+    }
+  ]
+}

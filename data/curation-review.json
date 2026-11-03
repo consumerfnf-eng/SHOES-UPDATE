@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-02T14:07:48.556Z",
+  "checkedAt": "2026-11-03T01:41:02.328Z",
   "held": [
     {
       "id": "daily-20260922-adidas-ki2857",
@@ -288,7 +288,7 @@
       "id": "daily-20260913-anta-kai-3-alchemist-8126d1102-12",
       "brand": "ANTA",
       "name": "ANTA KAI 3 'The Alchemist'",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260912-adidas-hyperboost-edge-kh5376",
@@ -342,7 +342,7 @@
       "id": "zip4-grounds-jewelry-aurora",
       "brand": "grounds",
       "name": "Jewelry Aurora",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "ecom-musinsa-jordan-willow-6686327",
@@ -402,7 +402,7 @@
       "id": "zip3-3a62d4a059c4e0f6",
       "brand": "Dolce & Gabbana",
       "name": "DG Athletic Lace Sneakers",
-      "reason": "product-url-or-image-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "zip3-ec66cb50ce882ce7",
@@ -570,7 +570,7 @@
       "id": "myt-33721e3beb47f314",
       "brand": "Tod's",
       "name": "Leather-trimmed knitted slip-on shoes",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "myt-1f41ab5e8a73c1af",
@@ -774,7 +774,7 @@
       "id": "myt-4cca2c763d869f28",
       "brand": "Tod's",
       "name": "Knitted sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "myt-fae4c4d5a807fca3",
@@ -906,7 +906,7 @@
       "id": "manual-c4aef5caed6ed993",
       "brand": "Pierre Hardy",
       "name": "BRASILIA Sandal - Silver/Taupe",
-      "reason": "conditional-model-review-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "manual-03bcedfc3a022fee",
@@ -972,7 +972,7 @@
       "id": "manual-4410ed4079f577a0",
       "brand": "Vibram",
       "name": "Women's Furoshiki - Blue / Green",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "official-ffdfc47460ba47c6",
@@ -1158,7 +1158,7 @@
       "id": "manual-acne-cd0018-dwh",
       "brand": "Acne Studios",
       "name": "Leather Velcro Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "p081",
@@ -1176,7 +1176,7 @@
       "id": "manual-ganni-s2900",
       "brand": "Ganni",
       "name": "GANNI x New Balance T500 Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "p030",
@@ -1242,7 +1242,7 @@
       "id": "p041",
       "brand": "Zegna",
       "name": "232 Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "p042",
@@ -1302,7 +1302,7 @@
       "id": "p052",
       "brand": "Zegna",
       "name": "Triple Stitch Leather Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "p053",
@@ -1314,13 +1314,13 @@
       "id": "p054",
       "brand": "Santoni",
       "name": "Easy Bounce Mountain Panelled Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "p055",
       "brand": "Tod's",
       "name": "Suede Gommino-Detail Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "p056",
@@ -1368,7 +1368,7 @@
       "id": "p065",
       "brand": "Dolce & Gabbana",
       "name": "Logo-Patch Low-Top Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "p066",
@@ -1398,7 +1398,7 @@
       "id": "p073",
       "brand": "Dolce & Gabbana",
       "name": "Rubber Beachwear Slides",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "p074",
@@ -1422,7 +1422,7 @@
       "id": "p077",
       "brand": "Dolce & Gabbana",
       "name": "Portofino Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "p078",
@@ -1572,7 +1572,7 @@
       "id": "xlsx-15f7d403c9ff7991",
       "brand": "Skechers",
       "name": "남성 고워크 아치핏 2.0(슬립인스)_SP0MWCGY221",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-ae2708b9f4a26698",
@@ -1596,7 +1596,7 @@
       "id": "xlsx-81cbccd0d9b87830",
       "brand": "Shoepen",
       "name": "투밴드 메리제인 플랫 스니커즈 HPWPDGA311",
-      "reason": "hybrid-review-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-07ab529fc63b0d3d",
@@ -1650,7 +1650,7 @@
       "id": "xlsx-802a737acd08c6d0",
       "brand": "Arc'teryx",
       "name": "버텍스 알파인 GTX 여성",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-b23aff1e993d574a",
@@ -1692,19 +1692,19 @@
       "id": "xlsx-e032a000cd907e14",
       "brand": "Skechers",
       "name": "여성 맥스쿠셔닝 엘리트 3(와이드)_SP0WRCGY021",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-e6e78a116ded5241",
       "brand": "Skechers",
       "name": "남성 맥스쿠셔닝 프리미어 3(와이드)_SP0MRCGY021",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-0ec98218bfc5940f",
       "brand": "Hunter",
       "name": "[UNISEX] 트래블 2.0 방수 레이스 스니커즈 - 블랙/화이트월로우 UFF7147RENBWG",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-836cb206819957d2",
@@ -1758,7 +1758,7 @@
       "id": "xlsx-65c6c08b711b0e0c",
       "brand": "Skechers",
       "name": "여성 맥스쿠셔닝 아치핏 2.0(슬립인스)_SP0WRCGY061",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-9263821941a9e80f",
@@ -1830,13 +1830,13 @@
       "id": "xlsx-642fbae317c33050",
       "brand": "Arc'teryx",
       "name": "크래그 여성 - BLACK/BLACK / AFQSW10081",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-9b746236d1c09589",
       "brand": "Arc'teryx",
       "name": "크래그 남성 - BLACK/BLACK / AFQSM10078",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-b63b4e3235127a4b",
@@ -1872,7 +1872,7 @@
       "id": "xlsx-e5f70f38c55a414c",
       "brand": "Skechers",
       "name": "남성 맥스쿠셔닝 아치핏 2.0(와이드 슬립인스)_SP0MRCGY071",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-2bd7ad8387862061",
@@ -2010,7 +2010,7 @@
       "id": "xlsx-1a4283555fbab833",
       "brand": "23.65",
       "name": "FEROA 플리플랍 - 도트블랙",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-0cdd71d020a82bc4",
@@ -2028,7 +2028,7 @@
       "id": "xlsx-c51d11a828125249",
       "brand": "Havaianas",
       "name": "슬림 글로스 플립플랍 Ice Grey",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-aef47b1a2db99608",
@@ -2046,13 +2046,13 @@
       "id": "xlsx-ea4e1896924ea796",
       "brand": "UGG",
       "name": "[Women] 골든게이즈 토 포스트 - 위트 필드 / 1175134-WTFL",
-      "reason": "conditional-model-review-required"
+      "reason": "release-day-evidence-required"
     },
     {
       "id": "xlsx-7d925f85c9977ced",
       "brand": "National Geographic",
       "name": "N262USD380 썬라잇 V2 BLACK",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-1ad645ce49e4397e",
@@ -2238,31 +2238,31 @@
       "id": "xlsx-5d0e44e2181c9f98",
       "brand": "Shoepen",
       "name": "벨크로 플랫 스니커즈 HPWPDFF913",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-57b45323d1ad77c5",
       "brand": "23.65",
       "name": "[2팩] PUFFY 스니커즈 - 4컬러",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-63129c4fc167ba0a",
       "brand": "23.65",
       "name": "[2팩] PIGLET V3 스니커즈 - 2컬러",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-acd46194aa7dabf2",
       "brand": "23.65",
       "name": "KIDNEY 스니커즈 - 블랙",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-0b3c6e8d999f6bdf",
       "brand": "23.65",
       "name": "KIDNEY 스니커즈 - 그레이 도트",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-f590649e1e3527be",
@@ -2334,7 +2334,7 @@
       "id": "xlsx-9f1c0a8a76a5c2fb",
       "brand": "Eider",
       "name": "클로우_Dark Grey",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-cd7f43bad514eb66",
@@ -2394,25 +2394,25 @@
       "id": "xlsx-f32b809a2d2813b4",
       "brand": "Repetto",
       "name": "Sabots Opéra - Repetto x Birkenstock",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-1e5b9bd8df0ada67",
       "brand": "Repetto",
       "name": "Dance sneakers Ruban",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-6f389d69f4760a80",
       "brand": "Repetto",
       "name": "Sneakers Sophia",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-db0424ce5bb48e93",
       "brand": "Repetto",
       "name": "Dance sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-79a3a10122a2aaf3",
@@ -2454,55 +2454,55 @@
       "id": "xlsx-5b5654f758fad284",
       "brand": "Staud",
       "name": "FREJA THONG | RED ROSE",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-f0022f47b5d26965",
       "brand": "Staud",
       "name": "FREJA THONG | WOOD BEADS",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-1a97224c28117328",
       "brand": "Staud",
       "name": "FISH FLOP | NATURAL",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-7775d46bd2889bd7",
       "brand": "Staud",
       "name": "JUNO THONG | ARTIST STRIPE",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-b191e1658e8e4bfe",
       "brand": "Staud",
       "name": "NOVA THONG | COBALT",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-e578e38775358169",
       "brand": "Staud",
       "name": "NOVA THONG | ESPRESSO",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-706359583a4decf9",
       "brand": "Staud",
       "name": "BIRKENSTOCK LOMA SUEDE | FADED KHAKI",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-ba473d9d503fc4eb",
       "brand": "Staud",
       "name": "BIRKENSTOCK LOMA SUEDE | PEPPER",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-d2a1fa0c4cb795a8",
       "brand": "Staud",
       "name": "BIRKENSTOCK LOMA SUEDE | CHARCOAL",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-d7e6142de755babe",
@@ -2634,37 +2634,37 @@
       "id": "xlsx-37eb4ca266723881",
       "brand": "Toteme",
       "name": "Flex nappa sneakers black",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-fa8ac9d31d7aedc8",
       "brand": "Toteme",
       "name": "Flex nappa sneakers off-white",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-fda5031c8607d969",
       "brand": "Toteme",
       "name": "Flex sneakers desert/buttercup",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-77b84e8f810950a3",
       "brand": "Toteme",
       "name": "Flex sneakers off-white/stone",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-d3d71f6a59dbd507",
       "brand": "Toteme",
       "name": "Slim lizard-embossed bandeau slides black",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-3ad9e746f8b668a9",
       "brand": "Aeyde",
       "name": "Uma Slim Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "xlsx-e4b1f5b535a21fe8",
@@ -2736,25 +2736,25 @@
       "id": "daily-20260923-berluti-s6738002",
       "brand": "Berluti",
       "name": "Shadow Sneaker Sea Blue",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260923-dsquared2-snm04862380884",
       "brand": "DSQUARED2",
       "name": "DC-642 Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260923-visvim-0226901001001",
       "brand": "Visvim",
       "name": "SKAGWAY HI (N.D.)",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260923-visvim-0126201001001",
       "brand": "Visvim",
       "name": "FKT RUNNER",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260923-marineserre-wsn002arwov005",
@@ -2766,19 +2766,19 @@
       "id": "daily-20260923-palmangels-pmia099f25lea0",
       "brand": "Palm Angels",
       "name": "New Palm 1 Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260923-thombrowne-mfe018bl006400",
       "brand": "Thom Browne",
       "name": "Soft Leather Tech Sneakers with RWB Stripe Soles",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260923-thombrowne-mfd271df048803",
       "brand": "Thom Browne",
       "name": "Double Tech Nylon Alumni Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260923-alo-a0685u",
@@ -2790,7 +2790,7 @@
       "id": "daily-20260923-songforthemute-ki5185",
       "brand": "Song for the Mute",
       "name": "adidas Originals x Song For The Mute Supernova Rise 3",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260923-martinerose-mr4shox",
@@ -2802,19 +2802,19 @@
       "id": "daily-20260923-rogervivier-rvm50624160kot",
       "brand": "Roger Vivier",
       "name": "Viv' Run Man Sneakers in fabric White",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260923-proenzaschouler-arcadiasneaker",
       "brand": "Proenza Schouler",
       "name": "Arcadia Sneakers in Brushed Calf Suede Chocolate",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "daily-20260923-fengchenwang-a08857ca08858c",
       "brand": "Feng Chen Wang",
       "name": "Converse x Feng Chen Wang Chuck Taylor 70 2-in-1",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-18437b4cd62e4ea7",
@@ -2928,19 +2928,19 @@
       "id": "new-20260923-28b3ed127cd6d309",
       "brand": "Casablanca",
       "name": "Men's White & Green Khopesh Sneaker",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-46bd1b3def72f111",
       "brand": "Casablanca",
       "name": "Men's Blue & Green Del Mar Sneaker",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-45b52c7e8418dc44",
       "brand": "Casablanca",
       "name": "Women's White & Green Khopesh Sneaker",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-b2b7995846087d14",
@@ -3000,60 +3000,24 @@
       "id": "new-20260923-f62b5b2ea8e6e9e3",
       "brand": "Coperni",
       "name": "5T Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-bdb563e05dedbc88",
       "brand": "Coperni",
       "name": "5T Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-88585077c89094cd",
       "brand": "Coperni",
       "name": "5T Sneakers",
-      "reason": "release-day-evidence-required"
-    },
-    {
-      "id": "new-20260923-97e210253b2c6985",
-      "brand": "Dries Van Noten",
-      "name": "Leather ballerina sneakers",
-      "reason": "hybrid-review-required"
-    },
-    {
-      "id": "new-20260923-26c237743726bf23",
-      "brand": "Dries Van Noten",
-      "name": "Patchwork ballerina sneakers",
-      "reason": "hybrid-review-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-8289e56fbe316c59",
       "brand": "Dries Van Noten",
       "name": "Leather high top sneakers",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-1ec7990fc6b2f1dd",
-      "brand": "Dries Van Noten",
-      "name": "Patchwork ballerina sneakers",
-      "reason": "hybrid-review-required"
-    },
-    {
-      "id": "new-20260923-7899e8dc25728339",
-      "brand": "Dries Van Noten",
-      "name": "Leather ballerina sneakers",
-      "reason": "hybrid-review-required"
-    },
-    {
-      "id": "new-20260923-7523e9f8cf5b9fe6",
-      "brand": "Dries Van Noten",
-      "name": "Suede high top sneakers",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-fc542ad4ead95b22",
-      "brand": "Dries Van Noten",
-      "name": "Suede sneakers",
       "reason": "product-verification-required"
     },
     {
@@ -3063,52 +3027,10 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-f34989ffb87bbff2",
-      "brand": "Dries Van Noten",
-      "name": "Suede sneakers",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-a9e63b14f7937457",
-      "brand": "Dries Van Noten",
-      "name": "Suede sneakers",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-8ca30b073103b893",
       "brand": "Dries Van Noten",
       "name": "Suede sneakers",
       "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-58ea5f1b2932a331",
-      "brand": "Dries Van Noten",
-      "name": "Suede sneakers",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-fc118eafc19927fb",
-      "brand": "Dries Van Noten",
-      "name": "Leather sneakers",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-fd45eb191d9dbf3f",
-      "brand": "Dries Van Noten",
-      "name": "Leather sneakers",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-4f6751cfd29566d7",
-      "brand": "Dries Van Noten",
-      "name": "Leather sneakers",
-      "reason": "product-verification-required"
-    },
-    {
-      "id": "new-20260923-7f29d8e94bd01e2a",
-      "brand": "Dries Van Noten",
-      "name": "Leather ballerina sneakers",
-      "reason": "hybrid-review-required"
     },
     {
       "id": "new-20260923-8047c090dfc77aef",
@@ -3123,64 +3045,58 @@
       "reason": "product-verification-required"
     },
     {
-      "id": "new-20260923-e7a580e760abe046",
-      "brand": "Dries Van Noten",
-      "name": "Suede sneakers",
-      "reason": "product-verification-required"
-    },
-    {
       "id": "new-20260923-3a8b403b745c4254",
       "brand": "Fear of God",
       "name": "Athletics III Basketball",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-c939cfb72b39f799",
       "brand": "Fear of God",
       "name": "Athletics III Basketball",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-3d9608fa3302e50b",
       "brand": "Fear of God",
       "name": "Suede 101",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-a145553b1a51b9d3",
       "brand": "Fear of God",
       "name": "Suede 101",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-5f577123d0eccfdd",
       "brand": "Fear of God",
       "name": "Derrick Rose II Basketball",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-6e0a2e643f4a4a25",
       "brand": "Fear of God",
       "name": "Derrick Rose II Basketball Hi",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-a383622bb2f72d1e",
       "brand": "Fear of God",
       "name": "Basketball Sneaker",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-879cb06e1cb4ac39",
       "brand": "Feng Chen Wang",
       "name": "CONVERSE X FENG CHEN WANG 2-IN-1 CHUCK 70",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-60742926609e7f64",
       "brand": "Feng Chen Wang",
       "name": "CONVERSE X FENG CHEN WANG 2-IN-1 CHUCK 70",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-2779b52cfafa61d8",
@@ -3456,127 +3372,127 @@
       "id": "new-20260923-3e5f8f50032988e9",
       "brand": "Pierre Hardy",
       "name": "SLIDER SNEAKERS",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-a73132bdf7def316",
       "brand": "Pierre Hardy",
       "name": "SLIDER SNEAKERS",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-3162dfe5db378076",
       "brand": "Pierre Hardy",
       "name": "BASKETS ISA",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-50dd4ae8a1883a05",
       "brand": "Pierre Hardy",
       "name": "BASKETS ISA",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-a69c7a7e9cbefa29",
       "brand": "Pierre Hardy",
       "name": "BASKETS TREK COMET",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-a39315e8d818e833",
       "brand": "Pierre Hardy",
       "name": "BASKETS TREK COMET",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-8139f0260ec4d2c2",
       "brand": "Pierre Hardy",
       "name": "BASKETS TREK COMET",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-0b6a0b0cc4389f4a",
       "brand": "Pierre Hardy",
       "name": "BASKETS JUMP",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-99824bfa30963517",
       "brand": "Pierre Hardy",
       "name": "BASKETS JUMP",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-ac83b8e68620e153",
       "brand": "Pierre Hardy",
       "name": "BASKETS TREK COMET",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-3e7bdbad0b587fc1",
       "brand": "Pierre Hardy",
       "name": "BASKETS TREK COMET",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-1dfebc79c333e0d9",
       "brand": "Pierre Hardy",
       "name": "BASKETS JUMP",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-0b215e7477ba9cb7",
       "brand": "Pierre Hardy",
       "name": "BASKETS JUMP",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-62d6fe3197970ecd",
       "brand": "Pierre Hardy",
       "name": "BASKETS SLIDER",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-e79cdf41c1f6d1af",
       "brand": "Pierre Hardy",
       "name": "BASKETS TREK COMET",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-49060e7861027528",
       "brand": "Pierre Hardy",
       "name": "BASKETS STREET LIFE",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-c195c82700c651bb",
       "brand": "Pierre Hardy",
       "name": "BASKETS SLIDER",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-40b6efe8c1fafbce",
       "brand": "Pierre Hardy",
       "name": "BASKETS STREET LIFE",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-b28dc9fcc14b2bc1",
       "brand": "Pierre Hardy",
       "name": "BASKETS SLIDER",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-f5d7a0ee5c0ac228",
       "brand": "Pierre Hardy",
       "name": "BASKETS JUMP",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-319f9ffbd814d543",
       "brand": "Proenza Schouler",
       "name": "Arcadia Zip High Tops",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-9a640d8ea2bece62",
@@ -4134,7 +4050,7 @@
       "id": "new-20260923-fa18e83fede9d115",
       "brand": "Rhude",
       "name": "RHECESS-HI (WOMENS)",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-6ff53b9fd1f1de55",
@@ -4644,97 +4560,79 @@
       "id": "new-20260923-0b6c63855ef63d86",
       "brand": "ROA",
       "name": "Cingino",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-8d0e4f0edc6193ee",
       "brand": "ROA",
       "name": "Cingino",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-30893cd2517bff23",
       "brand": "ROA",
       "name": "Cingino",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-f3807d29ef3e3d51",
       "brand": "ROA",
       "name": "Cingino",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-74ea22d65787039a",
       "brand": "ROA",
       "name": "Katharina Light",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-32daef78b75cb1b3",
       "brand": "ROA",
       "name": "Sella",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-86bbe503b772b8ab",
       "brand": "ROA",
       "name": "Sella",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-f5bf7a302d47d323",
       "brand": "ROA",
       "name": "ROA x And Wander Sella",
-      "reason": "brand-excluded-or-unverified"
-    },
-    {
-      "id": "new-20260923-de86cd4ee51017be",
-      "brand": "Simone Rocha",
-      "name": "Turbo Embellished Ballet Runner",
-      "reason": "hybrid-review-required"
-    },
-    {
-      "id": "new-20260923-84a94ab805b89e9e",
-      "brand": "Simone Rocha",
-      "name": "Turbo Embellished Ballet Runner",
-      "reason": "hybrid-review-required"
-    },
-    {
-      "id": "new-20260923-060922696f686692",
-      "brand": "Simone Rocha",
-      "name": "Embellished Bow Ballet Runner",
-      "reason": "hybrid-review-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-e6784b43ec44b92c",
       "brand": "Thom Browne",
       "name": "CANVAS HERITAGE SNEAKERS WITH VULCANIZED SOLES",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-d2aa5dea1fe96e5a",
       "brand": "Thom Browne",
       "name": "SOFT LEATHER TECH SNEAKERS WITH RWB STRIPE SOLES",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-16c5a06cd745e184",
       "brand": "Thom Browne",
       "name": "ASICS GEL-KAYANO 14 RUNNING SOLE",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-68d992756649fe0e",
       "brand": "Thom Browne",
       "name": "PEBBLE GRAIN TREAD SOLE LONGWING COLLEGIATE SNEAKERS",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-c01c72b5f0f049eb",
       "brand": "Thom Browne",
       "name": "ASICS GEL-KAYANO 14 RUNNING SOLE",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-6127a6917803e506",
@@ -4755,34 +4653,28 @@
       "reason": "release-day-evidence-required"
     },
     {
-      "id": "new-20260923-10b9e91f106be38f",
-      "brand": "Wales Bonner",
-      "name": "Women's Paris Trainer",
-      "reason": "release-day-evidence-required"
-    },
-    {
       "id": "new-20260923-4f4f8421ab085b0a",
       "brand": "Yohji Yamamoto",
       "name": "S'YTE LOGO COTTON CANVAS SNEAKERS - ORIGIN",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-362efb1acf246b6d",
       "brand": "Yohji Yamamoto",
       "name": "S'YTE LOGO COTTON CANVAS SNEAKERS - ORIGIN",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-d66456dd376152df",
       "brand": "Yohji Yamamoto",
       "name": "SOFT OIL PE MESH MID-TOP SNEAKERS",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-1039d8cd92751a6d",
       "brand": "Yohji Yamamoto",
       "name": "LEATHER MOSSER SMOOTH MILITARY HIGH-TOP SNEAKERS",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-15cfc1751cdba973",
@@ -5544,13 +5436,13 @@
       "id": "new-20260923-1049f09652f2cd2f",
       "brand": "Zegna",
       "name": "Dark Brown Leather and Suede Triple Stitch™ Monte Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-6340902a8a48bef1",
       "brand": "Zegna",
       "name": "Black Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-2542835d36b11388",
@@ -5652,49 +5544,49 @@
       "id": "new-20260923-9a43cb9e4380f4f5",
       "brand": "Acne Studios",
       "name": "Leather Velcro Sneakers - Grey/optic white",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-d00e9495c4ddb097",
       "brand": "Acne Studios",
       "name": "Leather sneakers - White/white",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-b812cc10a8a3f4ae",
       "brand": "Acne Studios",
       "name": "Leather sneakers - Black/white",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-0dda62402bec5ca6",
       "brand": "Acne Studios",
       "name": "Velcro strap platform sneakers - Optic white/pink",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-6e1dfc610a4d4e33",
       "brand": "Acne Studios",
       "name": "Velcro strap sneakers - Optic white/ecru",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-bfbd7bea616c9418",
       "brand": "Acne Studios",
       "name": "Velcro strap platform sneakers - Optic white/optic white",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-33e689c7f7d0fa91",
       "brand": "Acne Studios",
       "name": "Leather sneakers - Black/white",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-96dca73d01f4e5b5",
       "brand": "Acne Studios",
       "name": "Leather sneakers - White/white",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-26c2aa3658c543c4",
@@ -5778,31 +5670,31 @@
       "id": "new-20260923-35d715d803271977",
       "brand": "Berluti",
       "name": "stellar sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-9414e5847c938247",
       "brand": "Berluti",
       "name": "stellar sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-1bd80af6e6de1753",
       "brand": "Berluti",
       "name": "stellar sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-94be0dc00a1e8269",
       "brand": "Berluti",
       "name": "fast track sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-1643bf38b8c358ed",
       "brand": "Berluti",
       "name": "shadow sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "new-20260923-b383d99eef666ff5",
@@ -9312,7 +9204,7 @@
       "id": "live-fc65775de33ce3f8",
       "brand": "DSQUARED2",
       "name": "Faster Sneakers",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-fee78c7163847c96",
@@ -9438,127 +9330,127 @@
       "id": "live-02cc48c86383a530",
       "brand": "Berluti",
       "name": "Stellar Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-4b81ae042403b8d1",
       "brand": "Berluti",
       "name": "Stellar Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-b3da2dfac1b0112c",
       "brand": "Berluti",
       "name": "Playoff Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-445b6b5b05913d56",
       "brand": "Berluti",
       "name": "Shadow Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-6000074390ce43f7",
       "brand": "Berluti",
       "name": "Playtime Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-8cac1dd7c09b8c45",
       "brand": "Berluti",
       "name": "Shadow Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-759f0cae67450bdd",
       "brand": "Berluti",
       "name": "Shadow Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-a55586787118c788",
       "brand": "Berluti",
       "name": "Shadow Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-b38a290c31e6b854",
       "brand": "Berluti",
       "name": "Playtime Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-3dfac4905cd75c4b",
       "brand": "Berluti",
       "name": "Stellar Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-426eb549174fbca6",
       "brand": "Berluti",
       "name": "Shadow Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-e190717e8d087335",
       "brand": "Berluti",
       "name": "Shadow Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-4d23848b9804141c",
       "brand": "Berluti",
       "name": "Shadow Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-a817ee2feea3acc3",
       "brand": "Berluti",
       "name": "Playtime Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-efa217ad0601e7d3",
       "brand": "Berluti",
       "name": "Shadow Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-1257cef7ef321312",
       "brand": "Berluti",
       "name": "Stellar Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-62095a6d3fd3f244",
       "brand": "Berluti",
       "name": "Stellar Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-f417c435edc766aa",
       "brand": "Berluti",
       "name": "Shadow Sneaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-5fbde39be956077f",
       "brand": "Fear of God",
       "name": "Suede Lace Up Runner",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-1c067397b0db61a0",
       "brand": "Fear of God",
       "name": "Suede Lace Up Runner",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-22cf4fc4ffde1f3d",
       "brand": "Fear of God",
       "name": "Suede Lace Up Runner",
-      "reason": "release-day-evidence-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-609187cdafcd5c80",
@@ -9696,7 +9588,7 @@
       "id": "live-ef59a949b3aaca6e",
       "brand": "Coperni",
       "name": "Black",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-072be9e87e3e2ecc",
@@ -9744,37 +9636,37 @@
       "id": "live-ac6aa89db88edf46",
       "brand": "Pierre Hardy",
       "name": "STREET LIFE",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-8ee42f0828213447",
       "brand": "Berluti",
       "name": "Navy Blue",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-88f2705a3f6658f9",
       "brand": "Berluti",
       "name": "Nero Sfumato",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-f4764c185db49f58",
       "brand": "Berluti",
       "name": "Beige",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-3af6008bd27b6ad2",
       "brand": "Berluti",
       "name": "Aveiro",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-c42c9c86ed8a8643",
       "brand": "Berluti",
       "name": "Saint Emilion Tri",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-73763a37811a294f",
@@ -9960,7 +9852,7 @@
       "id": "live-a09de951e6a34626",
       "brand": "ROA",
       "name": "Fedaia Clog",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-1cf0cfd56db12135",
@@ -10324,49 +10216,49 @@
       "id": "verified-grounds-10268749758770",
       "brand": "grounds",
       "name": "GRAFFITI 2046",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "verified-grounds-10268751200562",
       "brand": "grounds",
       "name": "GRAFFITI 2046 BEENAWHILE",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "verified-grounds-10268771287346",
       "brand": "grounds",
       "name": "GRAFFITI 2046",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "verified-grounds-10268772991282",
       "brand": "grounds",
       "name": "GRAFFITI 2046",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "verified-grounds-10268748677426",
       "brand": "grounds",
       "name": "GRAFFITI NOA BEENAWHILE",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "verified-grounds-10268747170098",
       "brand": "grounds",
       "name": "GRAFFITI NOA BEENAWHILE",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "verified-grounds-10268728688946",
       "brand": "grounds",
       "name": "GRAFFITI NOA",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-236df41d253752bc",
       "brand": "Oakley Factory Team",
       "name": "Aquaterra Hybrid",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-8c5551cfd592de91",
@@ -11218,73 +11110,73 @@
       "id": "live-45471cee8415275a",
       "brand": "National Geographic",
       "name": "Betta Sandals W/ Logo On Strap",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-38a180ff9b1bc6db",
       "brand": "National Geographic",
       "name": "Kids Sandals W/ Logo On Strap- Pink",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-6c491ed119c3e703",
       "brand": "National Geographic",
       "name": "Kids Sandals W/ Logo On Strap- Blue",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-2e16f7673017b27f",
       "brand": "National Geographic",
       "name": "Unisex Rover City Sneakers- Black",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-6ed4f195b7fba8af",
       "brand": "National Geographic",
       "name": "Unisex Rover City Sneakers- Grey",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-c82296ec7ccc2cbf",
       "brand": "National Geographic",
       "name": "Unisex Rover City Sneakers- Brown",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-18d005f18bd43e5f",
       "brand": "National Geographic",
       "name": "Kids Contour Freeze Sandals",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-fb6c52dd7e3a3394",
       "brand": "National Geographic",
       "name": "Kids Blitz Sandal",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-e4af3f1b000633bf",
       "brand": "National Geographic",
       "name": "Ripple V2 Slides- White",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-d0c42399a19e005d",
       "brand": "National Geographic",
       "name": "Ripple V2 Slides- Black",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-12b26a0d3183db76",
       "brand": "National Geographic",
       "name": "Kids Cielo Dial Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-3627e2bb63e296c9",
       "brand": "National Geographic",
       "name": "Kids Cielo Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-92d35b8654e5d715",
@@ -11308,55 +11200,55 @@
       "id": "live-8f5594d9a385957f",
       "brand": "Havaianas",
       "name": "Top KidSuper Runner",
-      "reason": "product-verification-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-c4384c332e376b60",
       "brand": "Arc'teryx",
       "name": "Vertex Speed Shoe Men's Hybrid shoe for vertical technical mountain runs  (19)",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-1546c94c2aaa5fda",
       "brand": "Arc'teryx",
       "name": "Vertex Speed Low Shoe Men's Low-profile shoe for vertical technical mountain runs  (36)",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-088e0e7551073d11",
       "brand": "Arc'teryx",
       "name": "Kragg Aura Shoe Men's Ventilated pull-on shoe for approaches and recovery  (14)",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-d016520f0b809ca5",
       "brand": "Arc'teryx",
       "name": "Norvan LD 4 Shoe Men's Adaptable, long-distance mountain running shoe  (119)",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-97bc8426e94c0498",
       "brand": "Arc'teryx",
       "name": "Norvan LD 4 GTX Shoe Men's Adaptable, waterproof mountain running shoe",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-1f1d45e5e5a154b2",
       "brand": "Arc'teryx",
       "name": "Revised Kragg Shoe Men's Pull-on shoe for approaches and recovery",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-87b730a63f15bd72",
       "brand": "Arc'teryx",
       "name": "Sylan 2 Shoe Men's Propulsive trail running shoe for confident speed  (90)",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-dab1b2c095183a21",
       "brand": "Arc'teryx",
       "name": "New Kopec 2 Low GTX Shoe Men's Lightweight yet sturdy shoe for day hikes",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "live-533a8738a5d09f54",
@@ -12339,10 +12231,22 @@
       "reason": "not-footwear"
     },
     {
+      "id": "arrival-efdc176b33485fbb483c",
+      "brand": "Skechers",
+      "name": "UNO - Corazon Conmigo",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-89adedd6bb4a6b0a53f6",
       "brand": "The North Face",
       "name": "Women’s THERMOBALL™ Traction Mule V",
       "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-d5de5a08da22695a87cf",
+      "brand": "Skechers",
+      "name": "UNO - Alma De Guerrero",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-57655a45b80f8e417442",
@@ -12351,16 +12255,34 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-d28fe6b9fce71488679c",
+      "brand": "Skechers",
+      "name": "UNO - Compañero Eterno",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-057420ace096e9b303dc",
       "brand": "Under Armour",
       "name": "UA D. Fox 3",
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-7aca1d9ddf72703cc81f",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO RUN Ascend",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-8c44c58766172b002eb7",
       "brand": "Under Armour",
       "name": "UA D. Fox 3",
       "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-088ae5fce92812bf86a8",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO RUN Ascend",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-359ed3c46d06f3e1d2f1",
@@ -12373,6 +12295,12 @@
       "brand": "Under Armour",
       "name": "UA HB Racer 2",
       "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-0813a121d11bc6fce2a5",
+      "brand": "Skechers",
+      "name": "GO RUN Ascend - Spike",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-148b8266d9182a33ecc1",
@@ -12388,7 +12316,9 @@
     },
     {
       "id": "arrival-fc68ce97cdd9611e97d1",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "GO RUN Ascend - Spike",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-76ad32a2dd0fbc782f8e",
@@ -12403,26 +12333,46 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-6f926014327d2d9a5644",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-c6cb7be0bf8086b3c53b",
       "brand": "The North Face",
       "name": "Men’s THERMOBALL™ Traction Mule V",
       "reason": "hybrid-review-required"
     },
     {
+      "id": "arrival-cafc4a56a6dcac202f8c",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-1edecb95beca5343d781",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-e6087938a8c4ed6e9bd2",
       "brand": "National Geographic",
       "name": "Unisex Two-Layer Color-Block Hooded Windbreaker",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-42d2dfdf84df1485d29b",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-b5370afdfd72d3a4c77d",
       "brand": "National Geographic",
       "name": "Kids Toddler Seersucker Hood Jumper",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-70edc5b058f72630843a",
@@ -12432,61 +12382,63 @@
     },
     {
       "id": "arrival-8a2efa0fb9030f7d2615",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "GO WALK Flex Plus - Star",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-135a17543b833535cfe0",
       "brand": "National Geographic",
       "name": "Kids Adventure Woven Mix Sweatshirt",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-675e2d1659734c5e3091",
       "brand": "National Geographic",
       "name": "Kids Half-Zip Pique Sweatshirt",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-4136c35c62ad4336110a",
       "brand": "National Geographic",
       "name": "Robic Air Lightweight Backpack",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-db938e227fbb34dd85dc",
       "brand": "National Geographic",
       "name": "Daily Light Backpack",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-2d1f97b3cfecf1c58542",
       "brand": "National Geographic",
       "name": "Sunlight Sandals",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-9bdd48f8707a886e917d",
       "brand": "National Geographic",
       "name": "Urban Prime Backpack",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-7a82abf0673717d202d5",
       "brand": "National Geographic",
       "name": "Urban Simple Backpack",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-9248bdc80acf553955b8",
       "brand": "National Geographic",
       "name": "Uniti Backpack",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-0dc0d2fdb651a93a7484",
       "brand": "National Geographic",
       "name": "Men's Airflow Short Sleeve Poloshirt - Black",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-92bb58cfd0a1f1c99fe9",
@@ -12522,7 +12474,7 @@
       "id": "arrival-af975422abfa4aa3613b",
       "brand": "Havaianas",
       "name": "Havaianas Zellerfeld Top Toe Mule",
-      "reason": "hybrid-review-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-2927f4745ad60ff8063a",
@@ -12534,19 +12486,19 @@
       "id": "arrival-40626bb5c47c7636b459",
       "brand": "Havaianas",
       "name": "Havaianas Zellerfeld Top Toe Mule",
-      "reason": "hybrid-review-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-c21df4490c7734fe1806",
       "brand": "Havaianas",
       "name": "Havaianas Zellerfeld Top Toe Mule",
-      "reason": "hybrid-review-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-b71bc70ba4d493df4607",
       "brand": "Havaianas",
       "name": "Havaianas Zellerfeld Top Toe Mule",
-      "reason": "hybrid-review-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-32903ed080396542cb0c",
@@ -12556,7 +12508,7 @@
       "id": "arrival-c80e8b7768d5b63f4a78",
       "brand": "Havaianas",
       "name": "Havaianas Zellerfeld Top Toe Mule",
-      "reason": "hybrid-review-required"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-2589084ba8d9b603abb5",
@@ -12567,16 +12519,52 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-91790fb2457d81e1e156",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-29cc51250904ab5b6b5e",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-38e342d1d0a15f0a04e0",
       "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-8d86763bd49dbe8a23a4",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flip Flops",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-006521b4ce8bd7faac80",
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-2ca410cb75545871db58",
+      "brand": "Havaianas",
+      "name": "Men's Surfer Coast Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-6865054883bd9156e8f9",
       "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-76846170820daa2804c5",
+      "brand": "Havaianas",
+      "name": "Men's Surfer Coast Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-5af1e88b724cc630a280",
+      "brand": "Havaianas",
+      "name": "Women's Over Puffed Flip Flops",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-e71e5b6b6fd12355fe88",
@@ -12818,7 +12806,15 @@
     },
     {
       "id": "arrival-5cbbfffe45838472b1fc",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Max Cushioning Glide-Step - Cavara",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-a4af7579189e8362ec3b",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit Arcade - See Ya There",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-922bd5ce56fb938dba50",
@@ -12828,11 +12824,21 @@
     },
     {
       "id": "arrival-1f0af57ea375b70f42da",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit Arcade - See Ya There",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-00469faca0d211284787",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit Arcade - See Ya There",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-a86f119f3a86916a588f",
+      "brand": "Skechers",
+      "name": "Arch Fit Arcade - Arcata",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-bad610908c7e4f169cac",
@@ -12841,8 +12847,34 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-feda5ceebc6f6dd1355a",
+      "brand": "Skechers",
+      "name": "Arch Fit Arcade - Arcata",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-f685d3783f86a51e7f41",
+      "brand": "Skechers",
+      "name": "Arch Fit Arcade - Arcata",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-1ee738740a4decd07de7",
+      "brand": "Skechers",
+      "name": "BOBS B Cute 2.0 - Rosy Whiskers",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-6204647ea2a75c8b5a95",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "BOBS B Cute 2.0 - Bows N Bones",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-47f4d62807e5a83b15c1",
+      "brand": "Skechers",
+      "name": "SKX 92 - Gilded Glow",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-9c8ee57d4320b407207c",
@@ -12857,6 +12889,12 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-9fc7f6c1e81f377572f0",
+      "brand": "Skechers",
+      "name": "Hotshot - Cozy Fit Wild Style",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-29932e56b023fc7ef446",
       "brand": "Under Armour",
       "name": "UA Harper 11 Pro Turf",
@@ -12864,11 +12902,15 @@
     },
     {
       "id": "arrival-0ec26cccc31ef16f5cf4",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Hotshot - Cozy Fit Wild Style",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-f2388d6eba5bb70caeef",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Hotshot HI - Cozy Fit Hidden Wild",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-c49b4da58851483bb55d",
@@ -12878,7 +12920,9 @@
     },
     {
       "id": "arrival-e0d99d2cbc29dbfd7595",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Hotshot HI -Cozy Fit Hidden Wild",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-233a9c73840bfd4a5614",
@@ -12888,7 +12932,9 @@
     },
     {
       "id": "arrival-cd2bd076591b6abaf6b8",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Wilshire Blvd - Zip Stride",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-06ffef77c657e12c49b6",
@@ -12912,7 +12958,7 @@
       "id": "arrival-e515123bfcab65cd059d",
       "brand": "National Geographic",
       "name": "Ultimate Backpack",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-8a868f1d7775c01d6149",
@@ -12927,6 +12973,12 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-a34aeb6d41a32449cc1b",
+      "brand": "Havaianas",
+      "name": "Women's Summer Bliss Slim Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-2913591d5dde78548734",
       "brand": "Alo",
       "name": "Satin Smooth Talker Button Up",
@@ -12939,16 +12991,28 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-ddf35e73894b73e6b2dd",
+      "brand": "Havaianas",
+      "name": "Women's Summer Bliss Slim Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-7bfda6e44489345f234a",
       "brand": "Havaianas",
       "name": "Kids' Slim Glitter II",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-ba17497117016a979271",
       "brand": "Havaianas",
       "name": "Kids' Slim Glitter II",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-342b1e3a8025f5e1574d",
+      "brand": "Havaianas",
+      "name": "Women's High Platform Flip Flops",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-a814dfd9c460d1be9421",
@@ -12957,10 +13021,46 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-703ef95c2aa9ef92eacc",
+      "brand": "Havaianas",
+      "name": "Men's Surfer Coast Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-e0388f1a1430964563f5",
       "brand": "Alo",
       "name": "Satin High-Waist Smooth Talker Pant (Regular)",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-ae97055dd5d7f9154976",
+      "brand": "Havaianas",
+      "name": "Men's Track Plus Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-3a62e1c911054ec8ca04",
+      "brand": "Havaianas",
+      "name": "Men's Urban Print Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-dc1b34a095696f5f344e",
+      "brand": "Havaianas",
+      "name": "Women's Over Puffed Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-6bb85ede7fb082ee18e2",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-bb800b6f69ce992f6073",
+      "brand": "Havaianas",
+      "name": "Women's Slim Palette Glow Flip Flops",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-b9615accc0caad6f0912",
@@ -13223,6 +13323,12 @@
       "reason": "not-footwear"
     },
     {
+      "id": "arrival-126ae65ae8269367a546",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit Arcade - See Ya There",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-8b25f210949bfd763c27",
       "brand": "Brooks",
       "name": "Momentum Thermal 1/4 Zip",
@@ -13230,7 +13336,9 @@
     },
     {
       "id": "arrival-31d196ed741e265d3ee7",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Cleo Style - Rare Glow",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-97238b977c20c37d9467",
@@ -13240,7 +13348,9 @@
     },
     {
       "id": "arrival-e3b34800440ba72b2cea",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Cleo Style - Rare Glow",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-ca5704935f838cfcdef7",
@@ -13250,7 +13360,9 @@
     },
     {
       "id": "arrival-09ae444fab211d969d2a",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "UNO - Alma De Guerrero",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-5053247f64442c9a4abf",
@@ -13260,7 +13372,9 @@
     },
     {
       "id": "arrival-b7504214a0e2f6fd74c9",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "UNO - Alma De Guerrero",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-73a22b6cf351d245a813",
@@ -13270,7 +13384,15 @@
     },
     {
       "id": "arrival-5ff8469e8d3c1c19e122",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "UNO - Compañero Eterno",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-b60502f3d8f2f18ab997",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-347ee85a31910fe9b09c",
@@ -13285,16 +13407,46 @@
       "reason": "not-footwear"
     },
     {
+      "id": "arrival-33f416987cfbeaad1df7",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-a839aa167bc16d8d72f5",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-092b588cbbaca7490398",
+      "brand": "Skechers",
+      "name": "Max Cushioning Endeavour - Thread Path",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-7271b7558e4e499e8e23",
       "brand": "Under Armour",
       "name": "UA Surge 5",
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-766c44e6ef5663959088",
+      "brand": "Skechers",
+      "name": "Max Cushioning Endeavour - Thread Path",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-267864bc959a29913ab5",
       "brand": "Under Armour",
       "name": "UA HB Runner 2",
       "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-e6eab169471c55c70f9d",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Relaxed Fit: D'Lux Walker 3.0 - Loyde",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-a4f0d709a901b2e21543",
@@ -13304,13 +13456,21 @@
     },
     {
       "id": "arrival-fa1a9922cb94feec972c",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Relaxed Fit: D'Lux Walker 3.0 - Loyde",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-916320e57bdead72d4b5",
       "brand": "Under Armour",
       "name": "UA FLX TR",
       "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-ed6d7544de28879a3f7f",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-671934637297d8fae12c",
@@ -13323,6 +13483,12 @@
       "brand": "Under Armour",
       "name": "UA Charged Commit TR 5",
       "reason": "kids-sizing"
+    },
+    {
+      "id": "arrival-36cd5e32f3b52841f925",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-8df4563f016403650a75",
@@ -13401,10 +13567,46 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-00c488fe4b32723fd08f",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flatform Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-f69a1031a571e1791e35",
+      "brand": "Havaianas",
+      "name": "Women's Maxi Puffed Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-f5212a3e40b199866a54",
       "brand": "Crocs",
       "name": "텐트 모크",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-6f35ed194da83d6848ad",
+      "brand": "Havaianas",
+      "name": "Men's Urban Print Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-ae7bb42faa62d26f4f13",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-1aa5b5f35467db697a6f",
+      "brand": "Havaianas",
+      "name": "Men's Track Plus Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-6aed4814acbfc3d1311c",
+      "brand": "Havaianas",
+      "name": "Men's Track Plus Flip Flops",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-a42612e03b6f8ab2721b",
@@ -13413,16 +13615,40 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-2a4e8f28bc1e74b3da7a",
+      "brand": "Havaianas",
+      "name": "Women's Maxi Puffed Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-fe2d109c240e7a0ae96d",
       "brand": "Melissa",
       "name": "Possession",
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-671c88ac803a645386c0",
+      "brand": "Havaianas",
+      "name": "Women's Maxi Puffed Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-232a996eee46ea8524dd",
       "brand": "Melissa",
       "name": "Possession",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-aaf805fbae621024f194",
+      "brand": "Havaianas",
+      "name": "Women's Over Puffed Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-e1ffe5d6d3e834277131",
+      "brand": "Havaianas",
+      "name": "Women's Luna Puffed Sandals",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-c82e47a4d2283642e80b",
@@ -13437,10 +13663,22 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-3af7763e8391195dd8e0",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-0a229c730518887d26c2",
       "brand": "Melissa",
       "name": "Possession",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-e7abdcfbcc6d08a153ee",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Nina Flip Flops",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-1bfb4c154d07302f49c8",
@@ -13721,8 +13959,16 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-1095e516807e834f6907",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-9ce285cfa23057c8e19c",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-04aff8a7501d6544cae0",
@@ -13731,10 +13977,22 @@
       "reason": "not-footwear"
     },
     {
+      "id": "arrival-2a4f4a405c51d1e8f6ba",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-665b80c32537278941f1",
       "brand": "Under Armour",
       "name": "UA Vanish Elite Jacquard",
       "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-2accdd081476535ce849",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-f5502b3b2cc83e58d670",
@@ -13744,7 +14002,15 @@
     },
     {
       "id": "arrival-7f752a23f76a1bcaed03",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-d09f437148676271492d",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins Relaxed Fit: Glide-Step - Fater",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-284b3558e0a730448447",
@@ -13754,13 +14020,33 @@
     },
     {
       "id": "arrival-1182ee3b54a78fbe64b3",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Work Slip-Resistant Relaxed Fit: Consistent 2.0",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-698187706592c990156d",
+      "brand": "Skechers",
+      "name": "GO RUN Now - Lightdrive",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-07c1652670440dae2bf7",
+      "brand": "Skechers",
+      "name": "Sprinta",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-7b116e4e0b45527d70c3",
       "brand": "Under Armour",
       "name": "ColdGear® Printed",
       "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-5a9b6ba05d3fa09be8cd",
+      "brand": "Skechers",
+      "name": "Sprinta",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-42068d793d68ee3cf24a",
@@ -13778,19 +14064,19 @@
       "id": "arrival-34c1eb385f7249c0625e",
       "brand": "Skechers",
       "name": "S-Lights: Wave 92 Lights",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-ccd4bd15a9976ff9d83b",
       "brand": "Skechers",
       "name": "S-Lights: Wave 92 Lights",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-486e6fc197e17873b4e3",
       "brand": "Skechers",
       "name": "Skechers SKX_2 Jr Youth TF",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-80f0a80ae966f3f91069",
@@ -13815,6 +14101,12 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-013b58b36eac41b2485c",
+      "brand": "Havaianas",
+      "name": "Women's Luna Puffed Sandals",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-5153b086e1da44819cf6",
       "reason": "duplicate-product-color"
     },
@@ -13825,38 +14117,98 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-0fb6138f976c9f3e4a59",
+      "brand": "Havaianas",
+      "name": "Women's Puffed Up Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-c39318219262a1cb6304",
       "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-37dcf8809404e3e4be4f",
+      "brand": "Havaianas",
+      "name": "Women's Luna Puffed Sandals",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-35ae96329380f5c9b52a",
+      "brand": "Havaianas",
+      "name": "Women's Summer Bliss Slim Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-b84a51a53a56d69ff9b5",
+      "brand": "Havaianas",
+      "name": "Women's Brazil Twist Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-d8aac04615484f3361cf",
+      "brand": "Havaianas",
+      "name": "Women's Slim Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-a9b9a5e3b7a7e9dbf8dd",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Flor de Fita Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-dd538fb61dfa8e7be0b7",
+      "brand": "Havaianas",
+      "name": "Women's FARM Rio Sweet Forest Flip Flops",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-737fbd9492217af98539",
+      "brand": "Havaianas",
+      "name": "Women's Tradicional Flip Flops",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-f5537639647101eea7eb",
       "brand": "Havaianas",
       "name": "Kids' Fluffy Flip Flops",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-64aa1fedb48a16061840",
       "brand": "Havaianas",
       "name": "Baby Disney's Classics Flip Flop Sandals",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-9a3871a69c9cdbc66e92",
       "brand": "Havaianas",
       "name": "Baby Peppa Pig Flip Flop Sandals",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-99f3eeaa41f0072fdfaf",
       "brand": "Havaianas",
       "name": "Kids' Slim Flip Flops",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-ce48f5dedc5e9067a72d",
       "brand": "Havaianas",
       "name": "Kids' Slim Flip Flops",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-b041d0ee6db49031edd1",
+      "brand": "Havaianas",
+      "name": "Havaianas Fantasia",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-54e86503520d083532a5",
+      "brand": "Havaianas",
+      "name": "Havaianas Square",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-11a76ed69c119b5866b9",
@@ -13891,6 +14243,30 @@
       "reason": "kids-sizing"
     },
     {
+      "id": "arrival-004c397e260244145b78",
+      "brand": "Havaianas",
+      "name": "Image 124: Havaianas Slide Strap",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-1b5cdf7946aee8665c5c",
+      "brand": "Havaianas",
+      "name": "Image 132: Havaianas Slide Strap",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-bbc659ebbffe0448b4a7",
+      "brand": "Havaianas",
+      "name": "Image 225: Havaianas Slide Strap",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-d5e655db9745d5a67aee",
+      "brand": "Havaianas",
+      "name": "Image 233: Havaianas Slide Strap",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-b92ead0e3b119b7f82b4",
       "reason": "duplicate-product-color"
     },
@@ -13899,46 +14275,220 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-cf13ee3ab9b322a81cdb",
+      "brand": "23.65",
+      "name": "NUTTY MOCHA BROWN",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-a342d4e7fec463258c5d",
+      "brand": "23.65",
+      "name": "NUTTY BROWN",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-09425af46aae5ad7abd6",
       "brand": "23.65",
       "name": "Image 2: AROA 스니커즈 1+1 프로모션",
-      "reason": "promotional-bundle-not-physical-variant"
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-058acf07ade2be572e91",
+      "brand": "23.65",
+      "name": "NUTTY CHARCOAL",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-318d1bbaf0e8ae2ea1ca",
       "brand": "23.65",
       "name": "Image 8: 너티 모카신 1+1",
-      "reason": "promotional-bundle-not-physical-variant"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-9d164d434b8c089cf52a",
       "brand": "23.65",
       "name": "Image 26: AROA 스니커즈 1+1 프로모션",
-      "reason": "promotional-bundle-not-physical-variant"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-a8c79906fa29309ddff6",
       "brand": "23.65",
       "name": "Image 28: CORE 스니커즈 1+1 프로모션",
-      "reason": "promotional-bundle-not-physical-variant"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-99903771b1a70a36b331",
       "brand": "23.65",
       "name": "Image 19: KIDNEY 1+1 - 일상의 가벼운 발걸음을 제안하는 편안한 라이프스타일 슈즈 제품 이미지",
-      "reason": "promotional-bundle-not-physical-variant"
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-5d334baff3ffd74b13db",
+      "brand": "23.65",
+      "name": "NUTTY BLACK",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c51e45bc23de44fad993",
+      "brand": "23.65",
+      "name": "NUTTY BEIGE",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-51bde25ac5c8f859ac5d",
       "brand": "23.65",
       "name": "Image 8: KIDNEY 1+1 - 일상의 가벼운 발걸음을 제안하는 편안한 라이프스타일 슈즈 제품 이미지",
-      "reason": "promotional-bundle-not-physical-variant"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-a267d5011fb3aeae5dbb",
       "brand": "23.65",
       "name": "PIGLET 1+1 V3 스니커즈",
-      "reason": "promotional-bundle-not-physical-variant"
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-0e01595047986c96c5a9",
+      "brand": "23.65",
+      "name": "CORE 스니커즈 - BLACK",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-769c8671faee84ef4b61",
+      "brand": "23.65",
+      "name": "CORE 스니커즈 - MOCHA BROWN",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-6f0377f41848a97b3a8e",
+      "brand": "23.65",
+      "name": "CORE 스니커즈 - BLACK SUEDE",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-119ebafdeda839d00ed1",
+      "brand": "23.65",
+      "name": "CORE 스니커즈 - CHARCOAL",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-ccab965d0cd151a7d0f3",
+      "brand": "23.65",
+      "name": "CORE 스니커즈 - BLACK DOT",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-b87a17ae6cab2412b76d",
+      "brand": "23.65",
+      "name": "CORE 스니커즈 - MOCHA BROWN DOT",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-5bf7900eee0498cffa29",
+      "brand": "23.65",
+      "name": "Aroa 스니커즈 - MOCHA BROWN",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-7f22eb8a12602da18b1e",
+      "brand": "23.65",
+      "name": "Aroa 스니커즈 - BEIGE",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-43005fe655b037f82add",
+      "brand": "23.65",
+      "name": "Aroa 스니커즈 - BLACK",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-5973e63b0e55654e6fde",
+      "brand": "23.65",
+      "name": "Aroa 스니커즈 - CHARCOAL",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c3c5806349cd76e303e4",
+      "brand": "23.65",
+      "name": "PUFFY 스니커즈 - BLACK",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-0666a21312e049427e7a",
+      "brand": "23.65",
+      "name": "DONKEY 스니커즈 - CHARCOAL",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-7533c6bb52c1c16747df",
+      "brand": "23.65",
+      "name": "DONKEY 스니커즈 - BLACK",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-dae573f6b39af92bf7b1",
+      "brand": "23.65",
+      "name": "DONKEY 스니커즈 - BROWN",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-f5d4d8dd7166b9f89fbc",
+      "brand": "23.65",
+      "name": "DONKEY MULE - CHARCOAL",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-fb3e72b5aa0f60ead828",
+      "brand": "23.65",
+      "name": "DONKEY MULE - BROWN",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-1a558541750dbef44d89",
+      "brand": "23.65",
+      "name": "DONKEY MULE - BLACK",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c3a759f85ec3aab74d9b",
+      "brand": "23.65",
+      "name": "DONKEY MULE - BEIGE",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-81ca620ac27aa46b07f2",
+      "brand": "23.65",
+      "name": "KIDNEY - BLACK",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-6ed229d0d1fe45df0a66",
+      "brand": "23.65",
+      "name": "PUFFY 스니커즈 - CREAM",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-f0d503fd247f36c880d4",
+      "brand": "23.65",
+      "name": "PUFFY 스니커즈 - NAVY",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-3847aaa64e250abce8d4",
+      "brand": "23.65",
+      "name": "PUFFY 스니커즈 - RED",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-0497c50a3217ad78105e",
+      "brand": "23.65",
+      "name": "메리노 스니커즈 - 그레이",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c99eff1105c8fc2c1210",
+      "brand": "23.65",
+      "name": "메리노 스니커즈 - 블랙",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-b88422d213637671fb0e",
@@ -14250,7 +14800,7 @@
       "id": "arrival-d9a2f0d04abe64c53bce",
       "brand": "Skechers",
       "name": "Skechers SKX_2 Jr Youth TF",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-55b10562603684202580",
@@ -14262,19 +14812,19 @@
       "id": "arrival-b51fdcbfef7bd5b09072",
       "brand": "Skechers",
       "name": "Skechers SKX_2 Jr Youth TF",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-46b2a892a9c6d3fc6a7b",
       "brand": "Skechers",
       "name": "S-Lights: Meteor-Lights 3.0",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-ee2f7bd060e7eb2432e2",
       "brand": "Skechers",
       "name": "S-Lights: Meteor-Lights 3.0",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-69da21a73da1983f8359",
@@ -14284,7 +14834,9 @@
     },
     {
       "id": "arrival-e9f799762b2a19b0f670",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Sport Court 92 - Cozy Fit Daze",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-401562e7f16a06f82123",
@@ -14299,14 +14851,22 @@
       "reason": "not-footwear"
     },
     {
+      "id": "arrival-eed929bae737d8d6106d",
+      "brand": "Skechers",
+      "name": "Comfy Flex 4.0 - Dream Stride",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-69ba5d55a6c83c42d2b4",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Comfy Flex 4.0 - Dream Stride",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-b8c88dd124a592c2fe99",
       "brand": "Skechers",
       "name": "S-Lights: Divine Heart Lights",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-221a42746231d685f379",
@@ -14318,13 +14878,19 @@
       "id": "arrival-26b8963ef0dd8b60cf9a",
       "brand": "Skechers",
       "name": "S-Lights: Divine Heart Lights",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-cda201aa7db3f8eb5cd3",
       "brand": "KOLON SPORT",
       "name": "[KOLON SPORT](https://www.kolonsport.com/Product/QELAX26003BOC)",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-13d92c1b94052d3cb5f6",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins John Deere Waterproof Relaxed Fit: Respected - Tanzier",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-c124a1f36cd0a2b4857d",
@@ -14334,13 +14900,21 @@
     },
     {
       "id": "arrival-32392cda93ff74167fe6",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins John Deere Waterproof Relaxed Fit: Respected - Tanzier",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-cae3f019024b654173b5",
       "brand": "Under Armour",
       "name": "ColdGear® NEOLAST™",
       "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-91d94a6058e40e51b0cb",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins John Deere Waterproof Relaxed Fit: Respected - Tanzier",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-11666f5c76198c2fd12f",
@@ -14361,10 +14935,70 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-7d2f03721e273c98cad7",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Glitter II",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c9fa1afa791a375dbc60",
+      "brand": "Havaianas",
+      "name": "Havaianas Square",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-2ba02a33be8193ffe546",
+      "brand": "Havaianas",
+      "name": "Havaianas Fantasia",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-128541c16b66aae666e7",
+      "brand": "Havaianas",
+      "name": "Havaianas Fantasia",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-d0c6e735b75402cfdd7e",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Glow",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-576d662ae5ee8c4916b3",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Square Sparkle",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c3e89402d419b648ef7c",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Glitter II",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-fa21464f05a285581f37",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Point",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-04490cc269e90dc0f955",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Glitter II",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-dad14a064463e7e1ac99",
       "brand": "Alo",
       "name": "7\" Double Take Short",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-d70ed00cd30072a176bc",
+      "brand": "Havaianas",
+      "name": "Havaianas Brasil Twist",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-eeb7ed268a6248f3f4fb",
@@ -14385,6 +15019,12 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-c07f362f7730c2c16e76",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim BLACK",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-18b2693f21da4dd985e0",
       "brand": "Rockfish Weatherwear",
       "name": "CURLY FUR MULES - IVORY",
@@ -14395,6 +15035,12 @@
       "brand": "Rockfish Weatherwear",
       "name": "CURLY FUR MULES - BEIGE",
       "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-30fcc0d2f2009dbfa0b9",
+      "brand": "Havaianas",
+      "name": "Havaianas Elegance",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-92eef52736f0bd3306b0",
@@ -15867,6 +16513,30 @@
       "reason": "duplicate-product-color"
     },
     {
+      "id": "arrival-db769341e41ce905fddf",
+      "brand": "Skechers",
+      "name": "Image 39: GO 3D Arch Fit Horizon - 3D AirNex Slide",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-070ec8f284b8b92c89ca",
+      "brand": "Skechers",
+      "name": "Image 41: GO 3D Arch Fit Horizon - 3D AirNex Slide, WHITE, full",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-aef3c07742bfa2525760",
+      "brand": "Skechers",
+      "name": "Image 42: GO 3D Arch Fit - 3D AirNex Clog",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-ad37129b0f12e5b8d08c",
+      "brand": "Skechers",
+      "name": "Image 44: GO 3D Arch Fit - 3D AirNex Clog, BLACK, full",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-08cdbf029bda6e201837",
       "reason": "duplicate-product-color"
     },
@@ -15890,115 +16560,115 @@
       "id": "arrival-17f4e244aadc72937216",
       "brand": "Arc'teryx",
       "name": "Kragg Mid Shoe Women's Pull-on mid-height approach shoe for cool weather",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-0db08785458920947b2f",
       "brand": "Arc'teryx",
       "name": "New Kragg Mid Shoe Men's Pull-on mid-height approach shoe for cool weather",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-d5b51d219ff96a23c279",
       "brand": "Arc'teryx",
       "name": "Kopec 2 Low GTX Shoe Women's Lightweight yet sturdy shoe for day hikes",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-d56fe740bdeea0af71a5",
       "brand": "Arc'teryx",
       "name": "Norvan LD 4 GTX Shoe Women's Adaptable, waterproof mountain running shoe",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-01b21aada6a3f63e07e4",
       "brand": "Arc'teryx",
       "name": "Norvan LD 4 Shoe Women's Adaptable, long-distance mountain running shoe",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-367b9e35d7cda162de9e",
       "brand": "Arc'teryx",
       "name": "Sylan 2 Shoe Women's Propulsive trail running shoe for confident speed",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-1bab28a30a4bf255e015",
       "brand": "Arc'teryx",
       "name": "Kragg Shoe Women's Pull-on shoe for approaches and recovery",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-741c1ea8974bdb80fa75",
       "brand": "Arc'teryx",
       "name": "Konseal Shoe Women's Sturdy approach shoe for rugged, technical terrain",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-cf393d66c4dc77c2d5c5",
       "brand": "Arc'teryx",
       "name": "Konseal GTX Shoe Women's Waterproof approach shoe for rugged, technical terrain",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-5acdf25f214f1558cd2e",
       "brand": "Arc'teryx",
       "name": "Norvan 4 Nivalis GTX Shoe Women's Adaptable mountain running shoe for winter",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-19df0fc920363b2e669c",
       "brand": "Arc'teryx",
       "name": "Kragg Aura Shoe Women's Ventilated pull-on shoe for approaches and recovery",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-1bd7d353ecbc7babf73e",
       "brand": "Arc'teryx",
       "name": "Vertex Speed Low Shoe Women's Low-profile shoe for vertical technical mountain runs",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-73c76e65070a00dddb0c",
       "brand": "Arc'teryx",
       "name": "Norvan LD 4 Shoe Men's Adaptable, long-distance mountain running shoe",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-c59686b69c91c727647a",
       "brand": "Arc'teryx",
       "name": "Sylan 2 Shoe Men's Propulsive trail running shoe for confident speed",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-511115734fa7f1058eb8",
       "brand": "Arc'teryx",
       "name": "Konseal Shoe Men's Sturdy approach shoe for rugged, technical terrain",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-c3d114df4bb48c7c04ca",
       "brand": "Arc'teryx",
       "name": "Konseal GTX Shoe Men's Waterproof approach shoe for rugged, technical terrain",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-f97152999780a8636641",
       "brand": "Arc'teryx",
       "name": "Norvan 4 Nivalis GTX Shoe Men's Adaptable mountain running shoe for winter",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-1887109061d0c6255044",
       "brand": "Arc'teryx",
       "name": "Kragg Aura Shoe Men's Ventilated pull-on shoe for approaches and recovery",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-f15b9ae392343a9806be",
       "brand": "Arc'teryx",
       "name": "Vertex Speed Low Shoe Men's Low-profile shoe for vertical technical mountain runs",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-2b995d9d2fde03ec085f",
@@ -16804,7 +17474,7 @@
       "id": "arrival-556a3539d073986c0117",
       "brand": "Skechers",
       "name": "S-Lights Waterproof: Storm Blazer - Glow Trail",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-80460e7c0075870ce57e",
@@ -16828,7 +17498,7 @@
       "id": "arrival-e94d23cd94db0e232b2e",
       "brand": "Skechers",
       "name": "S-Lights Waterproof: Storm Blazer - Glow Trail",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-49a84fc0d496220f9844",
@@ -16848,7 +17518,15 @@
     },
     {
       "id": "arrival-edfe3029b8e968819a1a",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Keepsakes Cozy - Street Hiker Star",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-69bf01f97d0e04664b43",
+      "brand": "Skechers",
+      "name": "Keepsakes Cozy - Street Hiker Star",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-72d054860be56dfd081c",
@@ -16858,7 +17536,9 @@
     },
     {
       "id": "arrival-d7483ec69b55103bdfc8",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Keepsakes Cozy - Cozy Cascade",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-80b9f0e523cd74299fa8",
@@ -16870,13 +17550,25 @@
       "id": "arrival-80ae0cca91bc137f89ab",
       "brand": "Skechers",
       "name": "Twinkle Toes: Heart Steps - Shimmering Star",
-      "reason": "kids-sizing"
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-f27be4ac7c07774478d4",
+      "brand": "Skechers",
+      "name": "Waterproof: Play Scene - Hydro Scouts",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-42b79c174c36a3e6dac2",
       "brand": "Under Armour",
       "name": "UA Cozy Fleece",
       "reason": "not-footwear"
+    },
+    {
+      "id": "arrival-aa265a54d664e311953b",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Quick Street - Dino Trot",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-d5391508c378a5392f59",
@@ -16886,19 +17578,31 @@
     },
     {
       "id": "arrival-c370e0629f7115c41fe0",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins: Arcade - Cozy Fit Charming Daze",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-608e9fc101cac8bcc5b1",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Keepsakes Cozy - Sweet Hug",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-94daaf2b477217d9c8e1",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins GOLF: Rover 2",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-9063d650ff541a6393bb",
       "reason": "duplicate-product-color"
+    },
+    {
+      "id": "arrival-520713e554ab7edca86e",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins GOLF: Rover 2",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-88e4be4bdb2bb8f696c1",
@@ -16912,11 +17616,15 @@
     },
     {
       "id": "arrival-9567493d7d04083b7833",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins GOLF: Rover 2",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-667e6afacc86ecb39633",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins GOLF: Rover 2",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-4ddb2ba7eb94ee1fe8f5",
@@ -16926,7 +17634,15 @@
     },
     {
       "id": "arrival-99bd7ea2b7cadb028511",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins GOLF Waterproof: Rival 2",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-85d220a1c06e5dae7e2e",
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins GOLF Waterproof: Rival 2",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-0fc769ae0f2743cf263e",
@@ -16942,7 +17658,9 @@
     },
     {
       "id": "arrival-88b1b4149fc113186bb4",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Skechers Slip-ins GOLF Waterproof: Rival 2",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-c45b15c4b789dcf65d35",
@@ -16952,7 +17670,15 @@
     },
     {
       "id": "arrival-b7aa606234c40b670b16",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "GO WALK Max Cushioning Flex - Oswaldo",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-7d49c0383e59f5ac43f4",
+      "brand": "Skechers",
+      "name": "GO WALK Max Cushioning Flex - Oswaldo",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-a0ada723ed9dcb6a5ecf",
@@ -16968,7 +17694,9 @@
     },
     {
       "id": "arrival-31743d0ae64f765e8c83",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "GO WALK Max Cushioning Flex - Oswaldo",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-1a329720ad906a476fb3",
@@ -16978,7 +17706,9 @@
     },
     {
       "id": "arrival-dab269f2708dc2665e8f",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "BOBS Sport Arch Fit Elev8",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-8fa2991bc43fddc22617",
@@ -16988,7 +17718,9 @@
     },
     {
       "id": "arrival-e0c14131548d0549c11b",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "BOBS Sport Arch Fit Elev8",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-723a64c71c8257ff5b25",
@@ -16998,7 +17730,9 @@
     },
     {
       "id": "arrival-4113da91427408849ad4",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "BOBS Sport Arch Fit Elev8",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-1d0a01b5bdef387bde62",
@@ -17008,7 +17742,9 @@
     },
     {
       "id": "arrival-23dc193c104801e2b041",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Keepsakes Cozy - Street Hiker Vibe",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-1ab6463a5dcf310e6c88",
@@ -17022,7 +17758,9 @@
     },
     {
       "id": "arrival-44352885a643b51b41e6",
-      "reason": "duplicate-product-color"
+      "brand": "Skechers",
+      "name": "Keepsakes Cozy - Street Hiker Vibe",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-3194b6410d117281f469",
@@ -17040,7 +17778,7 @@
       "id": "arrival-a5d70a1ef78da281950a",
       "brand": "ROA",
       "name": "Aair Floweave Running Cap",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-bf6f6684d11616da5067",
@@ -17052,7 +17790,7 @@
       "id": "arrival-d4dc61ef57e34761b3fb",
       "brand": "ROA",
       "name": "Helder 5 Inch 2-in-1 Running Shorts",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-835d287a11d753e58d7f",
@@ -17064,7 +17802,7 @@
       "id": "arrival-cbedc44947d2adfd41b2",
       "brand": "ROA",
       "name": "Helder 5 Inch 2-in-1 Running Shorts",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-84905d66882c99fb0bfd",
@@ -17076,7 +17814,7 @@
       "id": "arrival-71582b3a394f5292a25e",
       "brand": "ROA",
       "name": "Gator Running Cap",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-7360c189bcca401a23f5",
@@ -17088,25 +17826,25 @@
       "id": "arrival-3faf006fbc3bba8c507e",
       "brand": "ROA",
       "name": "Gator Running Cap",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-31e85e564725275eda3b",
       "brand": "ROA",
       "name": "Aair Floweave Running Cap",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-278d007ef3bb0551ad0b",
       "brand": "ROA",
       "name": "Shida Running Jacket",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-c86f585c2f0bb5a3941b",
       "brand": "ROA",
       "name": "Helder 5 Inch 2-in-1 Running Shorts",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-8e8d899868b8b3a64046",
@@ -17130,7 +17868,7 @@
       "id": "arrival-fd0ad060f0480f0611a9",
       "brand": "Arc'teryx",
       "name": "Incendia One Piece Women's",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-bdaa0f339ae9a66c9071",
@@ -17142,13 +17880,13 @@
       "id": "arrival-7f8e5892b512fd521dbc",
       "brand": "Arc'teryx",
       "name": "Rush Bib Pant Women's",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-5462719ae7eda37ad226",
       "brand": "Arc'teryx",
       "name": "Sentinel Pant Women's",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-a47667d44309252062c5",
@@ -17181,10 +17919,34 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-faa6fd131e3667be0868",
+      "brand": "Havaianas",
+      "name": "Havaianas Aqua Metallic",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-b9c6cb14052002666552",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Glitter II",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-8f5d86976b1df4ec5377",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Crystal Sw II",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-cb7df3f76b28b41aa0c2",
       "brand": "Havaianas",
       "name": "Havaianas Square Velvet",
-      "reason": "footwear-type-unverified"
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-821e9adccabee76387f4",
+      "brand": "Havaianas",
+      "name": "Havaianas Aqua",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-28fd7ca9ee4667dcf1c2",
@@ -17193,10 +17955,16 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-89016fc663e85090d2de",
+      "brand": "Havaianas",
+      "name": "Havaianas Origine IV Fall",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-a923af6168eafb9573e1",
       "brand": "Havaianas",
       "name": "Havaianas Square Velvet",
-      "reason": "footwear-type-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-0163f7246cbeff00d28e",
@@ -17205,16 +17973,34 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-e7e2ffa3e25b3ec02213",
+      "brand": "Havaianas",
+      "name": "Havaianas Origine IV Fall",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-ed006d5af2165696c9b1",
       "brand": "Rockfish Weatherwear",
       "name": "FLEECE SCARF - BEIGE",
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-10f428997d107e6d2fa3",
+      "brand": "Havaianas",
+      "name": "Havaianas Aqua Glow",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-546eb366df698c6e9d93",
       "brand": "Rockfish Weatherwear",
       "name": "FLEECE SCARF - IVORY",
       "reason": "footwear-type-unverified"
+    },
+    {
+      "id": "arrival-47cc2921f1a6a45f360c",
+      "brand": "Havaianas",
+      "name": "Havaianas Brasil Twist",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-e9adbf33ea89a134a374",
@@ -17229,10 +18015,28 @@
       "reason": "footwear-type-unverified"
     },
     {
+      "id": "arrival-a00b5aee8da7feace7a1",
+      "brand": "Havaianas",
+      "name": "Havaianas Aqua",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-26fdf9b247996991513d",
+      "brand": "Havaianas",
+      "name": "Havaianas Aqua",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-04ff31e3d7402ff30004",
       "brand": "Havaianas",
       "name": "Havaianas Charms Vini Jr.",
-      "reason": "footwear-type-unverified"
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-ec8c518e749073aef2fd",
+      "brand": "Havaianas",
+      "name": "Havaianas Luna",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-7e9c838e9cc7b4c76c09",
@@ -17241,10 +18045,22 @@
       "reason": "hybrid-review-required"
     },
     {
+      "id": "arrival-1d0d3f9bf3b5f7b573e2",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Animals",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-c5f05cbd7b29b6208e86",
       "brand": "Rockfish Weatherwear",
       "name": "CLOUDY PLATFORM FUR MULES - CHESTNUT",
       "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-0424b4024de391f76f45",
+      "brand": "Havaianas",
+      "name": "Havaianas Slim Point Glitter",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-f9bd7d8c4957ab0244aa",
@@ -17259,10 +18075,22 @@
       "reason": "hybrid-review-required"
     },
     {
+      "id": "arrival-6eccedf535e0cf6acb42",
+      "brand": "Havaianas",
+      "name": "Havaianas Flash Urban",
+      "reason": "site-brand-excluded"
+    },
+    {
       "id": "arrival-57a3c913122618766d37",
       "brand": "Rockfish Weatherwear",
       "name": "CLOUDY PLATFORM FUR MULES - SAND",
       "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-b903e6860b546f8f9191",
+      "brand": "Havaianas",
+      "name": "Havaianas Maxi Puffed Up",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-254684f40ad098836f1b",
@@ -17274,13 +18102,31 @@
       "id": "arrival-816a7641cad2f590a79c",
       "brand": "Havaianas",
       "name": "Havaianas Backpack Colours II",
-      "reason": "not-footwear"
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-0610f00a447d36a2ea33",
+      "brand": "Havaianas",
+      "name": "Havaianas Surfer Coast",
+      "reason": "site-brand-excluded"
+    },
+    {
+      "id": "arrival-c8f6acf1d408c93db79b",
+      "brand": "Havaianas",
+      "name": "Havaianas Brasil Mix",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-09bcb63faf10ee6f9e0e",
       "brand": "Rockfish Weatherwear",
       "name": "ORIGINAL WINTER FUR MULES - CHESTNUT",
       "reason": "hybrid-review-required"
+    },
+    {
+      "id": "arrival-22eac474b8c813e0683a",
+      "brand": "Havaianas",
+      "name": "Havaianas Simpsons",
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-f554d801d93f4603c65c",
@@ -17292,7 +18138,7 @@
       "id": "arrival-967ffcde542607f4c9da",
       "brand": "Havaianas",
       "name": "Havaianas Brasil",
-      "reason": "footwear-type-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-ad34b6cdb77d462494c6",
@@ -18270,241 +19116,241 @@
       "id": "arrival-12429b67d90ca05d6a29",
       "brand": "Zegna",
       "name": "White Suede 232 Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-59058bed6390e1cd9fec",
       "brand": "Zegna",
       "name": "Grey Mélange Suede 232 Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-d2b296d451fb0f49e784",
       "brand": "Zegna",
       "name": "Dark Olive Green Suede 232 Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-6c25aaaade06938a4774",
       "brand": "Zegna",
       "name": "Dark Brown 232 Suede Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-f8d37e4cdc669c749916",
       "brand": "Zegna",
       "name": "Dark Beige Suede 232 Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-2cb538d721a77946bb1e",
       "brand": "Zegna",
       "name": "White Leather 232 Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-c75d9ab4acc8f62fa22e",
       "brand": "Zegna",
       "name": "Dark Brown Suede Triple Stitch™ Vetta Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-df53540ccd9d863e01d1",
       "brand": "Zegna",
       "name": "Grey Suede Triple Stitch™ Vetta Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-b635953e7fe40dde23a3",
       "brand": "Zegna",
       "name": "Dark Foliage Suede Triple Stitch™ Vetta Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-dcb0dfb80d13dabea8b2",
       "brand": "Zegna",
       "name": "Navy Blue Suede Triple Stitch™ Vetta Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-d7192d6cb90d5a72641f",
       "brand": "Zegna",
       "name": "Brown Suede Triple Stitch™ Vetta Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-24d2c51d5e9016f6d763",
       "brand": "Zegna",
       "name": "Black Leather Triple Stitch™ Vetta Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-def0c2868fb54f86ccdf",
       "brand": "Zegna",
       "name": "Dark Brown Leather Triple Stitch™ Vetta Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-11407fee09ca945f92a4",
       "brand": "Zegna",
       "name": "Black Leather Triple Stitch™ Vetta Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-78973251c38a5ba2082e",
       "brand": "Zegna",
       "name": "Dark Olive Green Triple Stitch™ Monte SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-555830b9e03150937e53",
       "brand": "Zegna",
       "name": "Black Leather Triple Stitch™ Monte Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-4e17bd1f9da41ab53c38",
       "brand": "Zegna",
       "name": "Grey Mélange Leather and Suede Triple Stitch™ Monte Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-4dba5e258fa3308c1496",
       "brand": "Zegna",
       "name": "Dark Beige Leather and Suede Triple Stitch™ Monte Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-9b9bcbabb95a07fe43ab",
       "brand": "Zegna",
       "name": "Dark Olive Green Leather and Suede Triple Stitch™ Monte Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-ce75d73c010b66e68ddf",
       "brand": "Zegna",
       "name": "Dark Brown Leather and Suede Triple Stitch™ Monte Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-8e24c959c90c26fc2003",
       "brand": "Zegna",
       "name": "Navy Blue Leather and Suede Triple Stitch™ Monte Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-02169a9a5b11a6a3bc3c",
       "brand": "Zegna",
       "name": "Light Taupe Leather and Suede Triple Stitch™ Monte Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-2733a6c09aafb83b72ad",
       "brand": "Zegna",
       "name": "Black Leather Triple Stitch™ Monte Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-b22161bab5164a7b38ff",
       "brand": "Zegna",
       "name": "Dark Orange Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-70436c04c6ad7fecf974",
       "brand": "Zegna",
       "name": "Dark Olive Green Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-ce70f7e6d2195ec252ec",
       "brand": "Zegna",
       "name": "Light Blue Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-866c2b7ffbb9c7dc9c81",
       "brand": "Zegna",
       "name": "Grey Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-581f27f8942156a92bbb",
       "brand": "Zegna",
       "name": "Brown Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-8768df7332722ec4e055",
       "brand": "Zegna",
       "name": "Black Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-e8f4d658be10e5fa2cb9",
       "brand": "Zegna",
       "name": "Light Brown Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-887523808687ed1fc9e6",
       "brand": "Zegna",
       "name": "Dark Olive Green Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-c79fd41ef2ce5dd856d9",
       "brand": "Zegna",
       "name": "Grey Mélange Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-473a413997118470c711",
       "brand": "Zegna",
       "name": "Blue Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-4c0936829d977527be55",
       "brand": "Zegna",
       "name": "Light Green Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-07bc33f45f2b7e6f3775",
       "brand": "Zegna",
       "name": "Dark Brown Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-4578187eb6186588fc43",
       "brand": "Zegna",
       "name": "White Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-fc0008d2683802c43221",
       "brand": "Zegna",
       "name": "Blue Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-b4ba1080959c8d1661e0",
       "brand": "Zegna",
       "name": "Black Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-88320c12f15078568839",
       "brand": "Zegna",
       "name": "Light Taupe Triple Stitch™ SECONDSKIN Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-da379ff3b5a9d286f515",
       "brand": "Zegna",
       "name": "Dark Olive Green Leather 232 Sneakers",
-      "reason": "brand-excluded-or-unverified"
+      "reason": "site-brand-excluded"
     },
     {
       "id": "arrival-6f17ca43dbdaaf717c1b",
@@ -18736,25 +19582,25 @@
       "id": "arrival-b0d2d346a4e4d96771c5",
       "brand": "Louis Vuitton",
       "name": "Vivienne Sneaker Charms Set",
-      "reason": "not-footwear-accessory"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-2458fc8a265d7b1b680a",
       "brand": "Louis Vuitton",
       "name": "Vivienne Sneaker Charms Set",
-      "reason": "not-footwear-accessory"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-ad646f8dd07fc82c9684",
       "brand": "Louis Vuitton",
       "name": "Blooming Pearl Sneaker Chain",
-      "reason": "not-footwear-accessory"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-9e39639ed5a02e1465c0",
       "brand": "Louis Vuitton",
       "name": "Floragram Mix Sneaker Charms",
-      "reason": "not-footwear-accessory"
+      "reason": "not-footwear"
     },
     {
       "id": "arrival-14410c0b4466b5b90943",
@@ -19057,24 +19903,6 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-a86f119f3a86916a588f",
-      "brand": "Skechers",
-      "name": "Arch Fit Arcade - Arcata",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-feda5ceebc6f6dd1355a",
-      "brand": "Skechers",
-      "name": "Arch Fit Arcade - Arcata",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-f685d3783f86a51e7f41",
-      "brand": "Skechers",
-      "name": "Arch Fit Arcade - Arcata",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-e26e6c012b40c1f63576",
       "brand": "Converse",
       "name": "Chuck 70 Canvas",
@@ -19180,186 +20008,6 @@
       "id": "arrival-163e367fbfd8fab25ce6",
       "brand": "Onitsuka Tiger",
       "name": "GSM SD",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-821e9adccabee76387f4",
-      "brand": "Havaianas",
-      "name": "Havaianas Aqua",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-26fdf9b247996991513d",
-      "brand": "Havaianas",
-      "name": "Havaianas Aqua",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-10f428997d107e6d2fa3",
-      "brand": "Havaianas",
-      "name": "Havaianas Aqua Glow",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-c8f6acf1d408c93db79b",
-      "brand": "Havaianas",
-      "name": "Havaianas Brasil Mix",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-d70ed00cd30072a176bc",
-      "brand": "Havaianas",
-      "name": "Havaianas Brasil Twist",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-47cc2921f1a6a45f360c",
-      "brand": "Havaianas",
-      "name": "Havaianas Brasil Twist",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-30fcc0d2f2009dbfa0b9",
-      "brand": "Havaianas",
-      "name": "Havaianas Elegance",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-b041d0ee6db49031edd1",
-      "brand": "Havaianas",
-      "name": "Havaianas Fantasia",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-2ba02a33be8193ffe546",
-      "brand": "Havaianas",
-      "name": "Havaianas Fantasia",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-128541c16b66aae666e7",
-      "brand": "Havaianas",
-      "name": "Havaianas Fantasia",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-6eccedf535e0cf6acb42",
-      "brand": "Havaianas",
-      "name": "Havaianas Flash Urban",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-ec8c518e749073aef2fd",
-      "brand": "Havaianas",
-      "name": "Havaianas Luna",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-b903e6860b546f8f9191",
-      "brand": "Havaianas",
-      "name": "Havaianas Maxi Puffed Up",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-89016fc663e85090d2de",
-      "brand": "Havaianas",
-      "name": "Havaianas Origine IV Fall",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-e7e2ffa3e25b3ec02213",
-      "brand": "Havaianas",
-      "name": "Havaianas Origine IV Fall",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-22eac474b8c813e0683a",
-      "brand": "Havaianas",
-      "name": "Havaianas Simpsons",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-1d0d3f9bf3b5f7b573e2",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim Animals",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-c07f362f7730c2c16e76",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim BLACK",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-8f5d86976b1df4ec5377",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim Crystal Sw II",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-7d2f03721e273c98cad7",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim Glitter II",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-c3e89402d419b648ef7c",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim Glitter II",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-04490cc269e90dc0f955",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim Glitter II",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-b9c6cb14052002666552",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim Glitter II",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-d0c6e735b75402cfdd7e",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim Glow",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-fa21464f05a285581f37",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim Point",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-0424b4024de391f76f45",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim Point Glitter",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-576d662ae5ee8c4916b3",
-      "brand": "Havaianas",
-      "name": "Havaianas Slim Square Sparkle",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-54e86503520d083532a5",
-      "brand": "Havaianas",
-      "name": "Havaianas Square",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-c9fa1afa791a375dbc60",
-      "brand": "Havaianas",
-      "name": "Havaianas Square",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-0610f00a447d36a2ea33",
-      "brand": "Havaianas",
-      "name": "Havaianas Surfer Coast",
       "reason": "shared-representative-photo"
     },
     {
@@ -19771,78 +20419,6 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-1095e516807e834f6907",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-2a4f4a405c51d1e8f6ba",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-2accdd081476535ce849",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Martha Stewart: Arch Fit Ultra Flex 3.0 - Metallic Grace",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-e6eab169471c55c70f9d",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Relaxed Fit: D'Lux Walker 3.0 - Loyde",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-d09f437148676271492d",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins Relaxed Fit: Glide-Step - Fater",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-b60502f3d8f2f18ab997",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-33f416987cfbeaad1df7",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-a839aa167bc16d8d72f5",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: Arch Fit 3.0 - Fiddow",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-a4af7579189e8362ec3b",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: Arch Fit Arcade - See Ya There",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-126ae65ae8269367a546",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: Arch Fit Arcade - See Ya There",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-ed6d7544de28879a3f7f",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-36cd5e32f3b52841f925",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: BOBS Sport Arc Waves Remix - Feel Grounded",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-a2373b6c8fce63532b30",
       "brand": "AMIRI",
       "name": "Stars Court Low",
@@ -20023,69 +20599,9 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-faa6fd131e3667be0868",
-      "brand": "Havaianas",
-      "name": "Havaianas Aqua Metallic",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-9fc7f6c1e81f377572f0",
-      "brand": "Skechers",
-      "name": "Hotshot - Cozy Fit Wild Style",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-b08e618e621c38d892d1",
       "brand": "Givenchy",
       "name": "Label loafers in nappa leather",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-2ca410cb75545871db58",
-      "brand": "Havaianas",
-      "name": "Men's Surfer Coast Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-76846170820daa2804c5",
-      "brand": "Havaianas",
-      "name": "Men's Surfer Coast Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-703ef95c2aa9ef92eacc",
-      "brand": "Havaianas",
-      "name": "Men's Surfer Coast Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-ae97055dd5d7f9154976",
-      "brand": "Havaianas",
-      "name": "Men's Track Plus Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-1aa5b5f35467db697a6f",
-      "brand": "Havaianas",
-      "name": "Men's Track Plus Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-6aed4814acbfc3d1311c",
-      "brand": "Havaianas",
-      "name": "Men's Track Plus Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-3a62e1c911054ec8ca04",
-      "brand": "Havaianas",
-      "name": "Men's Urban Print Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-6f35ed194da83d6848ad",
-      "brand": "Havaianas",
-      "name": "Men's Urban Print Flip Flops",
       "reason": "shared-representative-photo"
     },
     {
@@ -20125,96 +20641,6 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-85d220a1c06e5dae7e2e",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins GOLF Waterproof: Rival 2",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-520713e554ab7edca86e",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins GOLF: Rover 2",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-91d94a6058e40e51b0cb",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins John Deere Waterproof Relaxed Fit: Respected - Tanzier",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-342b1e3a8025f5e1574d",
-      "brand": "Havaianas",
-      "name": "Women's High Platform Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-f69a1031a571e1791e35",
-      "brand": "Havaianas",
-      "name": "Women's Maxi Puffed Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-5af1e88b724cc630a280",
-      "brand": "Havaianas",
-      "name": "Women's Over Puffed Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-dc1b34a095696f5f344e",
-      "brand": "Havaianas",
-      "name": "Women's Over Puffed Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-6bb85ede7fb082ee18e2",
-      "brand": "Havaianas",
-      "name": "Women's Puffed Up Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-ae7bb42faa62d26f4f13",
-      "brand": "Havaianas",
-      "name": "Women's Puffed Up Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-00c488fe4b32723fd08f",
-      "brand": "Havaianas",
-      "name": "Women's Slim Flatform Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-91790fb2457d81e1e156",
-      "brand": "Havaianas",
-      "name": "Women's Slim Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-29cc51250904ab5b6b5e",
-      "brand": "Havaianas",
-      "name": "Women's Slim Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-bb800b6f69ce992f6073",
-      "brand": "Havaianas",
-      "name": "Women's Slim Palette Glow Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-a34aeb6d41a32449cc1b",
-      "brand": "Havaianas",
-      "name": "Women's Summer Bliss Slim Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-ddf35e73894b73e6b2dd",
-      "brand": "Havaianas",
-      "name": "Women's Summer Bliss Slim Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-12e8cc671255044f1b69",
       "brand": "Brooks",
       "name": "Hyperion Elite 6",
@@ -20230,78 +20656,6 @@
       "id": "arrival-2e2d45e274040cb5ef21",
       "brand": "Melissa",
       "name": "Wave Platform",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-b84a51a53a56d69ff9b5",
-      "brand": "Havaianas",
-      "name": "Women's Brazil Twist Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-a9b9a5e3b7a7e9dbf8dd",
-      "brand": "Havaianas",
-      "name": "Women's FARM Rio Flor de Fita Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-e7abdcfbcc6d08a153ee",
-      "brand": "Havaianas",
-      "name": "Women's FARM Rio Nina Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-dd538fb61dfa8e7be0b7",
-      "brand": "Havaianas",
-      "name": "Women's FARM Rio Sweet Forest Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-2a4e8f28bc1e74b3da7a",
-      "brand": "Havaianas",
-      "name": "Women's Maxi Puffed Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-671c88ac803a645386c0",
-      "brand": "Havaianas",
-      "name": "Women's Maxi Puffed Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-aaf805fbae621024f194",
-      "brand": "Havaianas",
-      "name": "Women's Over Puffed Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-3af7763e8391195dd8e0",
-      "brand": "Havaianas",
-      "name": "Women's Puffed Up Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-0fb6138f976c9f3e4a59",
-      "brand": "Havaianas",
-      "name": "Women's Puffed Up Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-d8aac04615484f3361cf",
-      "brand": "Havaianas",
-      "name": "Women's Slim Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-35ae96329380f5c9b52a",
-      "brand": "Havaianas",
-      "name": "Women's Summer Bliss Slim Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-737fbd9492217af98539",
-      "brand": "Havaianas",
-      "name": "Women's Tradicional Flip Flops",
       "reason": "shared-representative-photo"
     },
     {
@@ -20329,45 +20683,9 @@
       "reason": "shared-representative-photo"
     },
     {
-      "id": "arrival-8d86763bd49dbe8a23a4",
-      "brand": "Havaianas",
-      "name": "Women's Slim Flip Flops",
-      "reason": "shared-representative-photo"
-    },
-    {
       "id": "arrival-57c79ef7883d3fda22c0",
       "brand": "Onitsuka Tiger",
       "name": "MEXICO 66 SLIP-ON",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-7aca1d9ddf72703cc81f",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO RUN Ascend",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-088ae5fce92812bf86a8",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO RUN Ascend",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-6f926014327d2d9a5644",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-cafc4a56a6dcac202f8c",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
-      "reason": "shared-representative-photo"
-    },
-    {
-      "id": "arrival-42d2dfdf84df1485d29b",
-      "brand": "Skechers",
-      "name": "Skechers Slip-ins: GO WALK 8 -Nova",
       "reason": "shared-representative-photo"
     },
     {
@@ -20489,6 +20807,24 @@
       "reason": "photo-shared-across-models",
       "sharedWith": "Nike Shox TL",
       "image": "https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fb141b5a-1ad3-4762-b5ba-e190c5baa13b/W+NIKE+SHOX+TL.png"
+    },
+    {
+      "id": "arrival-a7a5065492452131d9f4",
+      "brand": "Simone Rocha",
+      "name": "adidas Originals by Simone Rocha Climacool",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-6a043d98fee28bc5436f",
+      "brand": "Wales Bonner",
+      "name": "Jewel Mary Jane",
+      "reason": "photo-unavailable"
+    },
+    {
+      "id": "arrival-69ed91028d0d8827a44d",
+      "brand": "Wales Bonner",
+      "name": "Women's Jewel Mary Jane",
+      "reason": "photo-unavailable"
     },
     {
       "id": "arrival-a8bf429a763504e70b3d",

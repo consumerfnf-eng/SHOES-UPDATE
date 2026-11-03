@@ -1,0 +1,3431 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T01:29:50.017027+00:00",
+  "products": [
+    {
+      "id": "arrival-1c1268e60a72bdbcf607",
+      "brand": "Jacquemus",
+      "name": "The Féfé",
+      "modelName": "The Féfé",
+      "style": "FOM00212AW00829110",
+      "manufacturerStyle": "FOM00212AW00829110",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829110.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw696996e0/26EFOM00212AW00829110_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw696996e0/26EFOM00212AW00829110_17.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw0b7195cd/26EFOM00212AW00829110_18.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw9078de11/26EFOM00212AW00829110_20.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3a7f4257/26EFOM00212AW00829110_21.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Féfé"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Off-White",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829110",
+        "productUrl": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829110.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Féfé Off-White",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829110",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829110.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829110",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw696996e0/26EFOM00212AW00829110_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-4a0d6892d9b545e2599d",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC43M13193",
+      "manufacturerStyle": "FOM00175AC43M13193",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M13193.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw307a108c/26HFOM00175AC43M13193_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw307a108c/26HFOM00175AC43M13193_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwad3a74a1/26HFOM00175AC43M13193_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2f7cce4b/26HFOM00175AC43M13193_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw87848aef/26HFOM00175AC43M13193_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw371aacda/26HFOM00175AC43M13193_25.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Taupe",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC43M13193",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M13193.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Taupe",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC43M13193",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M13193.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC43M13193",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw307a108c/26HFOM00175AC43M13193_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-c5fd2145bd37e9235e61",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC09A06526",
+      "manufacturerStyle": "FOM00175AC09A06526",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A06526.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw809e95c8/25HFOM00175AC09A06526_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw809e95c8/25HFOM00175AC09A06526_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2cf5f85d/25HFOM00175AC09A06526_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6c30550d/25HFOM00175AC09A06526_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwbac0445f/25HFOM00175AC09A06526_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Pale Khaki",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC09A06526",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A06526.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Pale Khaki",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC09A06526",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A06526.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC09A06526",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw809e95c8/25HFOM00175AC09A06526_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-c17afc4a09b659003f75",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AW00255130",
+      "manufacturerStyle": "FOM00175AW00255130",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00255130.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw9e082a9a/26EFOM00175AW00255130_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw9e082a9a/26EFOM00175AW00255130_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw47fbbc54/26EFOM00175AW00255130_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw12ed16b3/26EFOM00175AW00255130_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dweb8ff77c/26EFOM00175AW00255130_22.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc0aad0dc/26EFOM00175AW00255130_23.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Light Beige",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AW00255130",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00255130.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Light Beige",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AW00255130",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00255130.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AW00255130",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw9e082a9a/26EFOM00175AW00255130_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-4cf27078e25f867ae319",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC24A01030",
+      "manufacturerStyle": "FOM00175AC24A01030",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC24A01030.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw868d2d9b/26HFOM00175AC24A01030_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw868d2d9b/26HFOM00175AC24A01030_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw31fa1680/26HFOM00175AC24A01030_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7d644435/26HFOM00175AC24A01030_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw89090a88/26HFOM00175AC24A01030_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb67b3efd/26HFOM00175AC24A01030_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Multi-Blue",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC24A01030",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC24A01030.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Multi-Blue",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC24A01030",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC24A01030.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC24A01030",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw868d2d9b/26HFOM00175AC24A01030_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-50dff1120cb711f4a4ea",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC39A04560",
+      "manufacturerStyle": "FOM00175AC39A04560",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC39A04560.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7c29ee29/26EFOM00175AC39A04560_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7c29ee29/26EFOM00175AC39A04560_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4e1df0a7/26EFOM00175AC39A04560_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw9158d9f1/26EFOM00175AC39A04560_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb8dac0af/26EFOM00175AC39A04560_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4148b8cf/26EFOM00175AC39A04560_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Khaki",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC39A04560",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC39A04560.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Khaki",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC39A04560",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC39A04560.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC39A04560",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7c29ee29/26EFOM00175AC39A04560_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-a726572318d494cae374",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC09A06205",
+      "manufacturerStyle": "FOM00175AC09A06205",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A06205.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4134dad9/25HFOM00175AC09A06205_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4134dad9/25HFOM00175AC09A06205_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw97aebf07/25HFOM00175AC09A06205_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3149a197/25HFOM00175AC09A06205_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw0ace6b99/25HFOM00175AC09A06205_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6f8175cf/25HFOM00175AC09A06205_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Pale Yellow",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC09A06205",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A06205.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Pale Yellow",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC09A06205",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A06205.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC09A06205",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4134dad9/25HFOM00175AC09A06205_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-c7d3ab3732818d595912",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC40A01830",
+      "manufacturerStyle": "FOM00175AC40A01830",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC40A01830.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwefaeab7b/25HFOM00175AC40A01830_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwefaeab7b/25HFOM00175AC40A01830_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwed410251/25HFOM00175AC40A01830_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc9c119ae/25HFOM00175AC40A01830_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb60da23d/25HFOM00175AC40A01830_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb992ab93/25HFOM00175AC40A01830_25.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Camel",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC40A01830",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC40A01830.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Camel",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC40A01830",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC40A01830.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC40A01830",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwefaeab7b/25HFOM00175AC40A01830_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-629fc99ecb68bbbac256",
+      "brand": "Jacquemus",
+      "name": "The Féfé",
+      "modelName": "The Féfé",
+      "style": "FOM00212AW00594850",
+      "manufacturerStyle": "FOM00212AW00594850",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00594850.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd1ebb64f/26HFOM00212AW00594850_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd1ebb64f/26HFOM00212AW00594850_17.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6eb30fef/26HFOM00212AW00594850_18.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw382099d6/26HFOM00212AW00594850_19.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Féfé"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Brown",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00594850",
+        "productUrl": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00594850.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Féfé Brown",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00594850",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00594850.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00594850",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd1ebb64f/26HFOM00212AW00594850_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-424352408a64ebbd442d",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC09A14880",
+      "manufacturerStyle": "FOM00175AC09A14880",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A14880.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7a9a2426/26EFOM00175AC09A14880_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7a9a2426/26EFOM00175AC09A14880_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwfcbef080/26EFOM00175AC09A14880_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7ab3eb8d/26EFOM00175AC09A14880_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw303dade0/26EFOM00175AC09A14880_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Dark Brown",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC09A14880",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A14880.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Dark Brown",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC09A14880",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A14880.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC09A14880",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7a9a2426/26EFOM00175AC09A14880_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-5d14ecc18fe20a0b0410",
+      "brand": "Jacquemus",
+      "name": "The Féfé",
+      "modelName": "The Féfé",
+      "style": "FOM00212AW00829210",
+      "manufacturerStyle": "FOM00212AW00829210",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829210.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwdf01851d/26EFOM00212AW00829210_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwdf01851d/26EFOM00212AW00829210_17.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc03208df/26EFOM00212AW00829210_18.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw62b91849/26EFOM00212AW00829210_20.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw55d5dcb5/26EFOM00212AW00829210_21.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Féfé"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Light Yellow",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829210",
+        "productUrl": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829210.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Féfé Light Yellow",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829210",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829210.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829210",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwdf01851d/26EFOM00212AW00829210_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12"
+      }
+    },
+    {
+      "id": "arrival-7ef94cf53933addc215c",
+      "brand": "Jacquemus",
+      "name": "The Féfé",
+      "modelName": "The Féfé",
+      "style": "FOM00212AW008291FY",
+      "manufacturerStyle": "FOM00212AW008291FY",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW008291FY.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw18057fa2/26EFOM00212AW008291FY_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw18057fa2/26EFOM00212AW008291FY_17.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwdd1be2ef/26EFOM00212AW008291FY_18.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw5609e92b/26EFOM00212AW008291FY_20.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd66e527f/26EFOM00212AW008291FY_21.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Féfé"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Natural/Black",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW008291FY",
+        "productUrl": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW008291FY.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Féfé Natural/Black",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW008291FY",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW008291FY.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW008291FY",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw18057fa2/26EFOM00212AW008291FY_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12"
+      }
+    },
+    {
+      "id": "arrival-60866aa50f03272e5937",
+      "brand": "Jacquemus",
+      "name": "The Féfé",
+      "modelName": "The Féfé",
+      "style": "FOM00212AW00829560",
+      "manufacturerStyle": "FOM00212AW00829560",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829560.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw87d24c77/26EFOM00212AW00829560_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw87d24c77/26EFOM00212AW00829560_17.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw9c5da600/26EFOM00212AW00829560_18.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe86d10e0/26EFOM00212AW00829560_20.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw837e9fc5/26EFOM00212AW00829560_21.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Féfé"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Khaki",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829560",
+        "productUrl": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829560.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Féfé Khaki",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829560",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829560.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829560",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw87d24c77/26EFOM00212AW00829560_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12"
+      }
+    },
+    {
+      "id": "arrival-1a93869485de36c8aa52",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC04C03980",
+      "manufacturerStyle": "FOM00175AC04C03980",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC04C03980.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw20a4f994/26HFOM00175AC04C03980_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw20a4f994/26HFOM00175AC04C03980_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwfb57a725/26HFOM00175AC04C03980_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw53522572/26HFOM00175AC04C03980_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw8c36bfeb/26HFOM00175AC04C03980_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Silver",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC04C03980",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC04C03980.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Silver",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC04C03980",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC04C03980.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC04C03980",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw20a4f994/26HFOM00175AC04C03980_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12"
+      }
+    },
+    {
+      "id": "arrival-1bb15bf09da3592a64a2",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC04C03280",
+      "manufacturerStyle": "FOM00175AC04C03280",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC04C03280.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwf479a0f7/26HFOM00175AC04C03280_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwf479a0f7/26HFOM00175AC04C03280_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw074e81e6/26HFOM00175AC04C03280_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwfcca0ea0/26HFOM00175AC04C03280_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwcc98e62f/26HFOM00175AC04C03280_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Gold",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC04C03280",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC04C03280.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Gold",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC04C03280",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC04C03280.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC04C03280",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwf479a0f7/26HFOM00175AC04C03280_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12"
+      }
+    },
+    {
+      "id": "arrival-74bac1b2645044f034b9",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AE00082220",
+      "manufacturerStyle": "FOM00175AE00082220",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AE00082220.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwa3315866/26EFOM00175AE00082220_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwa3315866/26EFOM00175AE00082220_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb1547973/26EFOM00175AE00082220_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw8ad79dac/26EFOM00175AE00082220_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd63846e0/26EFOM00175AE00082220_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3614e2db/26EFOM00175AE00082220_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Dusty Yellow",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AE00082220",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AE00082220.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Dusty Yellow",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AE00082220",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AE00082220.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AE00082220",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwa3315866/26EFOM00175AE00082220_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12"
+      }
+    },
+    {
+      "id": "arrival-338e902bcc47769078f8",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC43M061JT",
+      "manufacturerStyle": "FOM00175AC43M061JT",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M061JT.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb52094c1/26HFOM00175AC43M061JT_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb52094c1/26HFOM00175AC43M061JT_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw1fedefcb/26HFOM00175AC43M061JT_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe2dfe6e9/26HFOM00175AC43M061JT_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd6ef33ce/26HFOM00175AC43M061JT_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw266557f0/26HFOM00175AC43M061JT_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw33458695/26HFOM00175AC43M061JT_22.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "White / Red",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC43M061JT",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M061JT.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis White / Red",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC43M061JT",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M061JT.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC43M061JT",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb52094c1/26HFOM00175AC43M061JT_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men"
+      }
+    },
+    {
+      "id": "arrival-fd8d3cb9584670bc4c13",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AW00255990",
+      "manufacturerStyle": "FOM00175AW00255990",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00255990.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw323d9f39/26EFOM00175AW00255990_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw323d9f39/26EFOM00175AW00255990_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw687e1a46/26EFOM00175AW00255990_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw1ed730f1/26EFOM00175AW00255990_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw8af7d16f/26EFOM00175AW00255990_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwba322be1/26EFOM00175AW00255990_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Black",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AW00255990",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00255990.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Black",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AW00255990",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00255990.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AW00255990",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw323d9f39/26EFOM00175AW00255990_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men"
+      }
+    },
+    {
+      "id": "arrival-ed1c1d830c8a6bc5f795",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC01C23750",
+      "manufacturerStyle": "FOM00175AC01C23750",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC01C23750.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw53250f33/26EFOM00175AC01C23750_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw53250f33/26EFOM00175AC01C23750_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw49a67105/26EFOM00175AC01C23750_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwcf5a1fc0/26EFOM00175AC01C23750_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb9e7b559/26EFOM00175AC01C23750_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw5d5c1dae/26EFOM00175AC01C23750_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Orange",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC01C23750",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC01C23750.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Orange",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC01C23750",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC01C23750.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC01C23750",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw53250f33/26EFOM00175AC01C23750_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men"
+      }
+    },
+    {
+      "id": "arrival-b2ef32a9dced8668de56",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AW00271210",
+      "manufacturerStyle": "FOM00175AW00271210",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00271210.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3b69d3d7/26EFOM00175AW00271210_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3b69d3d7/26EFOM00175AW00271210_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw86f0149e/26EFOM00175AW00271210_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb417de2c/26EFOM00175AW00271210_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6270baf9/26EFOM00175AW00271210_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Light Yellow",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AW00271210",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00271210.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Light Yellow",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AW00271210",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00271210.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AW00271210",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3b69d3d7/26EFOM00175AW00271210_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men"
+      }
+    },
+    {
+      "id": "arrival-e74ff34ad6624d0d20e3",
+      "brand": "Jacquemus",
+      "name": "Moon Shoe Jacquemus + Nike",
+      "modelName": "Moon Shoe Jacquemus + Nike",
+      "style": "FOU00176BW00712030",
+      "manufacturerStyle": "FOU00176BW00712030",
+      "url": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712030.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc98d12c3/26HFOU00176BW00712030_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc98d12c3/26HFOU00176BW00712030_17.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw09d62c60/26HFOU00176BW00712030_18.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb8b3ffe6/26HFOU00176BW00712030_19.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwa618011c/26HFOU00176BW00712030_20.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw68347de5/26HFOU00176BW00712030_21.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Multi-Blue",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712030",
+        "productUrl": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712030.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "Moon Shoe Jacquemus + Nike Multi-Blue",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712030",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712030.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712030",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc98d12c3/26HFOU00176BW00712030_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    },
+    {
+      "id": "arrival-2b67f03ca69eb43f8d04",
+      "brand": "Jacquemus",
+      "name": "The Féfé",
+      "modelName": "The Féfé",
+      "style": "FOM00212AW00829390",
+      "manufacturerStyle": "FOM00212AW00829390",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829390.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw06c30e69/26EFOM00212AW00829390_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw06c30e69/26EFOM00212AW00829390_17.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwa9feeb23/26EFOM00212AW00829390_18.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe5b1112e/26EFOM00212AW00829390_20.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe9ea9346/26EFOM00212AW00829390_21.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Féfé"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Dark Navy",
+      "gender": "Men",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829390",
+        "productUrl": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829390.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Féfé Dark Navy",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829390",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829390.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00212AW00829390",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw06c30e69/26EFOM00212AW00829390_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men"
+      }
+    },
+    {
+      "id": "arrival-172d00413bdd028cee32",
+      "brand": "Jacquemus",
+      "name": "Moon Shoe Jacquemus + Nike",
+      "modelName": "Moon Shoe Jacquemus + Nike",
+      "style": "FOU00176BW00712405",
+      "manufacturerStyle": "FOU00176BW00712405",
+      "url": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712405.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe5afc943/25HFOU00176BW00712405_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe5afc943/25HFOU00176BW00712405_17.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6b9e2c1a/25HFOU00176BW00712405_18.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw64661a97/25HFOU00176BW00712405_21.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw307d68b8/25HFOU00176BW00712405_25.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw37f4e093/25HFOU00176BW00712405_26.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe88dd8dd/25HFOU00176BW00712405_29.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw00c65e05/25HFOU00176BW00712405_30.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Pale Pink",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712405",
+        "productUrl": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712405.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "Moon Shoe Jacquemus + Nike Pale Pink",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712405",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712405.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712405",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe5afc943/25HFOU00176BW00712405_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    },
+    {
+      "id": "arrival-75b7820c51a78f3441d9",
+      "brand": "Jacquemus",
+      "name": "Moon Shoe Jacquemus + Nike",
+      "modelName": "Moon Shoe Jacquemus + Nike",
+      "style": "FOU00176BW00712855",
+      "manufacturerStyle": "FOU00176BW00712855",
+      "url": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712855.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw51346e54/25HFOU00176BW00712855_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw51346e54/25HFOU00176BW00712855_17.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw194d1072/25HFOU00176BW00712855_21.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw21d32f7e/25HFOU00176BW00712855_22.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd33818e1/25HFOU00176BW00712855_23.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw0c106994/25HFOU00176BW00712855_26.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwccb9eb41/25HFOU00176BW00712855_30.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Medium Brown",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712855",
+        "productUrl": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712855.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "Moon Shoe Jacquemus + Nike Medium Brown",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712855",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712855.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712855",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw51346e54/25HFOU00176BW00712855_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    },
+    {
+      "id": "arrival-41bf88e8388b9ba024b5",
+      "brand": "Jacquemus",
+      "name": "Moon Shoe Jacquemus + Nike",
+      "modelName": "Moon Shoe Jacquemus + Nike",
+      "style": "FOU00176BW00712100",
+      "manufacturerStyle": "FOU00176BW00712100",
+      "url": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712100.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw871b98e3/25HFOU00176BW00712100_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw871b98e3/25HFOU00176BW00712100_17.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb462e154/25HFOU00176BW00712100_19.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw323ea180/25HFOU00176BW00712100_20.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw33b8711a/25HFOU00176BW00712100_23.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw290e129a/25HFOU00176BW00712100_24.jpg?sw=500&q=100",
+          "alt": "Moon Shoe Jacquemus + Nike"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "White",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712100",
+        "productUrl": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712100.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "Moon Shoe Jacquemus + Nike White",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712100",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/en_us/moon-shoe-jacquemus-%2B-nike/FOU00176BW00712100.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOU00176BW00712100",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw871b98e3/25HFOU00176BW00712100_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    },
+    {
+      "id": "arrival-e2fda2eefef0021ca4a5",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC40A01830",
+      "manufacturerStyle": "FOW00175AC40A01830",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC40A01830.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd2e4e373/25HFOW00175AC40A01830_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd2e4e373/25HFOW00175AC40A01830_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw51383604/25HFOW00175AC40A01830_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw21398971/25HFOW00175AC40A01830_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw0bb3f3eb/25HFOW00175AC40A01830_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwda44a63a/25HFOW00175AC40A01830_27.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwa4b4ddb8/25HFOW00175AC40A01830_32.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Camel",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC40A01830",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC40A01830.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Camel",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC40A01830",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC40A01830.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC40A01830",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd2e4e373/25HFOW00175AC40A01830_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-ed9fa607ab303157a4dc",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC07A10880",
+      "manufacturerStyle": "FOW00175AC07A10880",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC07A10880.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw5ef93a01/25HFOW00175AC07A10880_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw5ef93a01/25HFOW00175AC07A10880_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe1b9f322/25HFOW00175AC07A10880_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd7620633/25HFOW00175AC07A10880_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw00817ab1/25HFOW00175AC07A10880_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7f255d22/25HFOW00175AC07A10880_27.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwec6714fa/FW25-LES-TENNIS-DARK-BROWN-EDITO-1.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2c0b698e/25HFOW00175AC07A10880_32.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Dark Brown",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC07A10880",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC07A10880.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Dark Brown",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC07A10880",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC07A10880.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC07A10880",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw5ef93a01/25HFOW00175AC07A10880_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-1263d1e96798d238a8d3",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC03C12880",
+      "manufacturerStyle": "FOW00175AC03C12880",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC03C12880.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe8e4fd14/26HFOW00175AC03C12880_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe8e4fd14/26HFOW00175AC03C12880_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4d63c41a/26HFOW00175AC03C12880_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw452b1d42/26HFOW00175AC03C12880_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe54a3913/26HFOW00175AC03C12880_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2fad5596/26HFOW00175AC03C12880_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Dark Brown",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC03C12880",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC03C12880.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Dark Brown",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC03C12880",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC03C12880.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC03C12880",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe8e4fd14/26HFOW00175AC03C12880_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-5936bda69ccfecbd4a9d",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC07A10120",
+      "manufacturerStyle": "FOW00175AC07A10120",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC07A10120.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwf05ca005/25HFOW00175AC07A10120_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwf05ca005/25HFOW00175AC07A10120_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe3b692e0/25HFOW00175AC07A10120_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe0e025e0/25HFOW00175AC07A10120_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2b4c2245/25HFOW00175AC07A10120_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw01c473b2/25HFOW00175AC07A10120_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Ivory",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC07A10120",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC07A10120.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Ivory",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC07A10120",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC07A10120.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC07A10120",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwf05ca005/25HFOW00175AC07A10120_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-86d352d81f3d6ee84681",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC09A15150",
+      "manufacturerStyle": "FOW00175AC09A15150",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A15150.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3ada0fd7/26HFOW00175AC09A15150_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3ada0fd7/26HFOW00175AC09A15150_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwcf400717/26HFOW00175AC09A15150_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwdb809c03/26HFOW00175AC09A15150_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc19d25dc/26HFOW00175AC09A15150_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Beige",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC09A15150",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A15150.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Beige",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC09A15150",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A15150.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC09A15150",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3ada0fd7/26HFOW00175AC09A15150_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-51cbdefb0eac1dff585f",
+      "brand": "Jacquemus",
+      "name": "The Féfé",
+      "modelName": "The Féfé",
+      "style": "FOW00212AW00829210",
+      "manufacturerStyle": "FOW00212AW00829210",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829210.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6ad95fc7/26EFOW00212AW00829210_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6ad95fc7/26EFOW00212AW00829210_17.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc1adc9bd/26EFOW00212AW00829210_18.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3e1b99da/26EFOW00212AW00829210_20.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2ea0ec29/26EFOW00212AW00829210_21.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Féfé"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Light Yellow",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00212AW00829210",
+        "productUrl": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829210.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Féfé Light Yellow",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00212AW00829210",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829210.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00212AW00829210",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6ad95fc7/26EFOW00212AW00829210_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-1e8b051435f88e32b359",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC09A06205",
+      "manufacturerStyle": "FOW00175AC09A06205",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A06205.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd9009199/25HFOW00175AC09A06205_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd9009199/25HFOW00175AC09A06205_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw3ab01761/25HFOW00175AC09A06205_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe1e4d114/25HFOW00175AC09A06205_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd60b7a3b/25HFOW00175AC09A06205_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb1cf755e/25HFOW00175AC09A06205_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Pale Yellow",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC09A06205",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A06205.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Pale Yellow",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC09A06205",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A06205.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC09A06205",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd9009199/25HFOW00175AC09A06205_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-a0af156f197932b39ad8",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AW00255130",
+      "manufacturerStyle": "FOW00175AW00255130",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AW00255130.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2ea23a3d/26EFOW00175AW00255130_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2ea23a3d/26EFOW00175AW00255130_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwec4b4b27/26EFOW00175AW00255130_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw96c19c72/26EFOW00175AW00255130_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwcfc65e5c/26EFOW00175AW00255130_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb2eedfba/26EFOW00175AW00255130_22.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Light Beige",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AW00255130",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AW00255130.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Light Beige",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AW00255130",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AW00255130.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AW00255130",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2ea23a3d/26EFOW00175AW00255130_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-b880f20ce7a1e0112074",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC32G01150",
+      "manufacturerStyle": "FOW00175AC32G01150",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC32G01150.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw053cb6cc/26HFOW00175AC32G01150_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw053cb6cc/26HFOW00175AC32G01150_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb3a21f86/26HFOW00175AC32G01150_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwa45e42cf/26HFOW00175AC32G01150_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw5bc07690/26HFOW00175AC32G01150_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Beige",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC32G01150",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC32G01150.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Beige",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC32G01150",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC32G01150.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC32G01150",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw053cb6cc/26HFOW00175AC32G01150_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-7aa868980c62c33b4f81",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AE00082220",
+      "manufacturerStyle": "FOW00175AE00082220",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AE00082220.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw06d0e356/26EFOW00175AE00082220_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw06d0e356/26EFOW00175AE00082220_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwdcdf7e60/26EFOW00175AE00082220_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw47b6e622/26EFOW00175AE00082220_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw42b50f58/26EFOW00175AE00082220_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Dusty Yellow",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AE00082220",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AE00082220.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Dusty Yellow",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AE00082220",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AE00082220.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AE00082220",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw06d0e356/26EFOW00175AE00082220_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12"
+      }
+    },
+    {
+      "id": "arrival-5624768cbf168b88e11e",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC09A14880",
+      "manufacturerStyle": "FOW00175AC09A14880",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A14880.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4437c99c/26EFOW00175AC09A14880_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4437c99c/26EFOW00175AC09A14880_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw428f8e8b/26EFOW00175AC09A14880_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4b095303/26EFOW00175AC09A14880_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw03cded2f/26EFOW00175AC09A14880_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Dark Brown",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=24&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC09A14880",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A14880.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=24&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Dark Brown",
+        "contentHash": "fa9b2533591e1b6bb421eaee379af865ab2fc37c4d578ed14e35d60103f77e3d"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC09A14880",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fa9b2533591e1b6bb421eaee379af865ab2fc37c4d578ed14e35d60103f77e3d",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A14880.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC09A14880",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fa9b2533591e1b6bb421eaee379af865ab2fc37c4d578ed14e35d60103f77e3d",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4437c99c/26EFOW00175AC09A14880_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=24&sz=12"
+      }
+    },
+    {
+      "id": "arrival-59a32b13874e6d9298ee",
+      "brand": "Jacquemus",
+      "name": "The Féfé",
+      "modelName": "The Féfé",
+      "style": "FOW00212AW00829390",
+      "manufacturerStyle": "FOW00212AW00829390",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829390.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe08a4837/26EFOW00212AW00829390_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe08a4837/26EFOW00212AW00829390_17.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw16c98180/26EFOW00212AW00829390_18.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb76a7555/26EFOW00212AW00829390_19.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwbf138e78/26EFOW00212AW00829390_20.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw43eb9204/26EFOW00212AW00829390_21.jpg?sw=500&q=100",
+          "alt": "The Féfé"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Féfé"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Dark Navy",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=24&sz=12",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00212AW00829390",
+        "productUrl": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829390.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=24&sz=12",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Féfé Dark Navy",
+        "contentHash": "fa9b2533591e1b6bb421eaee379af865ab2fc37c4d578ed14e35d60103f77e3d"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00212AW00829390",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fa9b2533591e1b6bb421eaee379af865ab2fc37c4d578ed14e35d60103f77e3d",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829390.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00212AW00829390",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "fa9b2533591e1b6bb421eaee379af865ab2fc37c4d578ed14e35d60103f77e3d",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe08a4837/26EFOW00212AW00829390_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=24&sz=12"
+      }
+    },
+    {
+      "id": "arrival-30d45f1788827775baef",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC04C03980",
+      "manufacturerStyle": "FOW00175AC04C03980",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC04C03980.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb2f6b153/26HFOW00175AC04C03980_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb2f6b153/26HFOW00175AC04C03980_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw05eedbde/26HFOW00175AC04C03980_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4cfa57dc/26HFOW00175AC04C03980_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc924bad9/26HFOW00175AC04C03980_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Silver",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC04C03980",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC04C03980.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Silver",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC04C03980",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC04C03980.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC04C03980",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb2f6b153/26HFOW00175AC04C03980_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    },
+    {
+      "id": "arrival-11acdae88f276a9a110b",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC43M061JT",
+      "manufacturerStyle": "FOW00175AC43M061JT",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43M061JT.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw928c12c5/26HFOW00175AC43M061JT_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw928c12c5/26HFOW00175AC43M061JT_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw5b2a669b/26HFOW00175AC43M061JT_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw09154783/26HFOW00175AC43M061JT_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw82607002/26HFOW00175AC43M061JT_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "White / Red",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43M061JT",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43M061JT.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis White / Red",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43M061JT",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43M061JT.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43M061JT",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw928c12c5/26HFOW00175AC43M061JT_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    },
+    {
+      "id": "arrival-7a314af2b1fc861c5ec1",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AW00271210",
+      "manufacturerStyle": "FOW00175AW00271210",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AW00271210.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb4f940a9/26EFOW00175AW00271210_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb4f940a9/26EFOW00175AW00271210_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6d6aa903/26EFOW00175AW00271210_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw58d90c38/26EFOW00175AW00271210_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc00744cc/26EFOW00175AW00271210_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Light Yellow",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AW00271210",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AW00271210.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Light Yellow",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AW00271210",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AW00271210.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AW00271210",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb4f940a9/26EFOW00175AW00271210_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    },
+    {
+      "id": "arrival-6b44de26310f54d2f3c4",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC43O01410",
+      "manufacturerStyle": "FOW00175AC43O01410",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43O01410.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw49a0c726/25HFOW00175AC43O01410_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw49a0c726/25HFOW00175AC43O01410_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6d1664b6/25HFOW00175AC43O01410_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc8483655/25HFOW00175AC43O01410_19.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw85c533e9/25HFOW00175AC43O01410_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw0c97e41e/25HFOW00175AC43O01410_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Light Pink",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43O01410",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43O01410.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Light Pink",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43O01410",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43O01410.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43O01410",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw49a0c726/25HFOW00175AC43O01410_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    },
+    {
+      "id": "arrival-22f6dc9eb44a4637bdc9",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC43M13193",
+      "manufacturerStyle": "FOW00175AC43M13193",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43M13193.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw364f7f70/26HFOW00175AC43M13193_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw364f7f70/26HFOW00175AC43M13193_17.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7f7cba4e/26HFOW00175AC43M13193_18.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw92e2fd06/26HFOW00175AC43M13193_20.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwae5fadd3/26HFOW00175AC43M13193_21.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7edcfa26/26HFOW00175AC43M13193_25.jpg?sw=500&q=100",
+          "alt": "The Tennis"
+        },
+        {
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg",
+          "alt": "The Tennis"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Taupe",
+      "gender": "Women",
+      "colors": [],
+      "firstSeen": "2026-11-03T01:18:56.381041+00:00",
+      "productVerifiedAt": "2026-11-03T01:18:56.381041+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43M13193",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43M13193.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "excerpt": "The Tennis Taupe",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43M13193",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43M13193.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43M13193",
+        "verifiedAt": "2026-11-03T01:18:56.381041+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw364f7f70/26HFOW00175AC43M13193_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    },
+    {
+      "id": "arrival-3c88895088df3807d90e",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC03C12880",
+      "manufacturerStyle": "FOM00175AC03C12880",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC03C12880.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwbcf6d8a5/26HFOM00175AC03C12880_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwbcf6d8a5/26HFOM00175AC03C12880_17.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw8601708b/26HFOM00175AC03C12880_18.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc7fbcaf0/26HFOM00175AC03C12880_19.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwc6605c85/26HFOM00175AC03C12880_20.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw44739c28/26HFOM00175AC03C12880_21.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "previous image",
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg"
+        },
+        {
+          "alt": "next image",
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Dark Brown",
+      "colors": [],
+      "gender": "Men",
+      "firstSeen": "2026-11-03T01:29:50.017027+00:00",
+      "productVerifiedAt": "2026-11-03T01:29:50.017027+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC03C12880",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC03C12880.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "excerpt": "The Tennis Dark Brown",
+        "contentHash": "a15807b5c937d3644ed55fe8885d5b7fd3e697be0ea61b5696d16d2252b9562b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC03C12880",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "a15807b5c937d3644ed55fe8885d5b7fd3e697be0ea61b5696d16d2252b9562b",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC03C12880.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC03C12880",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "a15807b5c937d3644ed55fe8885d5b7fd3e697be0ea61b5696d16d2252b9562b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwbcf6d8a5/26HFOM00175AC03C12880_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men"
+      }
+    },
+    {
+      "id": "arrival-90063fba9fe59555e7c4",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOM00175AC07A10880",
+      "manufacturerStyle": "FOM00175AC07A10880",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC07A10880.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw64459c9b/25HFOM00175AC07A10880_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw64459c9b/25HFOM00175AC07A10880_17.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwff71837f/25HFOM00175AC07A10880_18.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw180e3a7d/25HFOM00175AC07A10880_19.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw47e79892/25HFOM00175AC07A10880_21.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwaa1a175b/25HFOM00175AC07A10880_25.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwec6714fa/FW25-LES-TENNIS-DARK-BROWN-EDITO-1.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "previous image",
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg"
+        },
+        {
+          "alt": "next image",
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Dark Brown",
+      "colors": [],
+      "gender": "Men",
+      "firstSeen": "2026-11-03T01:29:50.017027+00:00",
+      "productVerifiedAt": "2026-11-03T01:29:50.017027+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC07A10880",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC07A10880.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "excerpt": "The Tennis Dark Brown",
+        "contentHash": "a15807b5c937d3644ed55fe8885d5b7fd3e697be0ea61b5696d16d2252b9562b"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC07A10880",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "a15807b5c937d3644ed55fe8885d5b7fd3e697be0ea61b5696d16d2252b9562b",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC07A10880.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOM00175AC07A10880",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "a15807b5c937d3644ed55fe8885d5b7fd3e697be0ea61b5696d16d2252b9562b",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw64459c9b/25HFOM00175AC07A10880_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-men"
+      }
+    },
+    {
+      "id": "arrival-1a0094df087318bd90ef",
+      "brand": "Jacquemus",
+      "name": "The Féfé",
+      "modelName": "The Féfé",
+      "style": "FOW00212AW00829110",
+      "manufacturerStyle": "FOW00212AW00829110",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829110.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw47ed6431/26EFOW00212AW00829110_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "alt": "The Féfé",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw47ed6431/26EFOW00212AW00829110_17.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Féfé",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw1bace30e/26EFOW00212AW00829110_18.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Féfé",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw21093766/26EFOW00212AW00829110_20.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Féfé",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd8b54af6/26EFOW00212AW00829110_21.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "previous image",
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg"
+        },
+        {
+          "alt": "next image",
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Off-White",
+      "colors": [],
+      "gender": "Women",
+      "firstSeen": "2026-11-03T01:29:50.017027+00:00",
+      "productVerifiedAt": "2026-11-03T01:29:50.017027+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00212AW00829110",
+        "productUrl": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829110.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "excerpt": "The Féfé Off-White",
+        "contentHash": "aaaac9e504732da66ba42360675cd455b78b1bf97417e0736709282f7909d1d8"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00212AW00829110",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "aaaac9e504732da66ba42360675cd455b78b1bf97417e0736709282f7909d1d8",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829110.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00212AW00829110",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "aaaac9e504732da66ba42360675cd455b78b1bf97417e0736709282f7909d1d8",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw47ed6431/26EFOW00212AW00829110_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    },
+    {
+      "id": "arrival-9748d1f9d80e4a64a21a",
+      "brand": "Jacquemus",
+      "name": "The Tennis",
+      "modelName": "The Tennis",
+      "style": "FOW00175AC43O01110",
+      "manufacturerStyle": "FOW00175AC43O01110",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43O01110.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw36bee786/25HFOW00175AC43O01110_17.jpg?sw=500&q=100",
+      "imageCandidates": [
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw36bee786/25HFOW00175AC43O01110_17.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2c93db43/25HFOW00175AC43O01110_18.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7c12b1ce/25HFOW00175AC43O01110_19.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7d679ddb/25HFOW00175AC43O01110_21.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw6c7cc6bf/25HFOW00175AC43O01110_27.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwdf58e578/fw25-tennis-off-white-edito-2.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "The Tennis",
+          "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw9aec85d3/25HFOM00175AC43O01110_32_women.jpg?sw=500&q=100"
+        },
+        {
+          "alt": "previous image",
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg"
+        },
+        {
+          "alt": "next image",
+          "url": "https://www.jacquemus.com/on/demandware.static/Sites-JacquemusUS-Site/-/default/dw55e0c620/images/polygon.svg"
+        }
+      ],
+      "officialCategory": "Sneakers",
+      "colorway": "Off-White",
+      "colors": [],
+      "gender": "Women",
+      "firstSeen": "2026-11-03T01:29:50.017027+00:00",
+      "productVerifiedAt": "2026-11-03T01:29:50.017027+00:00",
+      "productEvidenceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "sourceSignals": [],
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43O01110",
+        "productUrl": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43O01110.html",
+        "kind": "official-assortment-listing",
+        "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "excerpt": "The Tennis Off-White",
+        "contentHash": "aaaac9e504732da66ba42360675cd455b78b1bf97417e0736709282f7909d1d8"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43O01110",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "aaaac9e504732da66ba42360675cd455b78b1bf97417e0736709282f7909d1d8",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43O01110.html"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "Jacquemus",
+        "style": "FOW00175AC43O01110",
+        "verifiedAt": "2026-11-03T01:29:50.017027+00:00",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "aaaac9e504732da66ba42360675cd455b78b1bf97417e0736709282f7909d1d8",
+        "url": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw36bee786/25HFOW00175AC43O01110_17.jpg?sw=500&q=100",
+        "sourceUrl": "https://www.jacquemus.com/en_us/sneakers-shoes-women"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=12&sz=12",
+      "file": "logs\\20261103\\jacquemus-men-page2.html",
+      "contentHash": "fe43836c2a7a0077efc2fa417deb3f0099088b097d0b3211edadd1f9f4bafaaf",
+      "tiles": 10
+    },
+    {
+      "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_men&start=24&sz=12",
+      "file": "logs\\20261103\\jacquemus-men-page3.html",
+      "contentHash": "fbabfa587cb58d9e89631bc0b5655f7fff92b7b91503371900226808e8978da7",
+      "tiles": 6
+    },
+    {
+      "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+      "file": "logs\\20261103\\jacquemus-men-rendered.html",
+      "contentHash": "80fa9d5ec36d458bf659067c352fcd7f7ce9ef7d212dbc0ff8715fad9461ba99",
+      "tiles": 9
+    },
+    {
+      "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=12&sz=12",
+      "file": "logs\\20261103\\jacquemus-women-page2.html",
+      "contentHash": "f379fedfb7fe0711986a4a356d784eea13fffdbbcd5f1d85cc555ce36630e84e",
+      "tiles": 10
+    },
+    {
+      "url": "https://www.jacquemus.com/on/demandware.store/Sites-JacquemusUS-Site/en_US/Search-UpdateGrid?cgid=Sneakers_shoes_women&start=24&sz=12",
+      "file": "logs\\20261103\\jacquemus-women-page3.html",
+      "contentHash": "fa9b2533591e1b6bb421eaee379af865ab2fc37c4d578ed14e35d60103f77e3d",
+      "tiles": 2
+    },
+    {
+      "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "file": "logs\\20261103\\jacquemus-women-rendered.html",
+      "contentHash": "cbab4bb1479fdf6985ed3e709fe40b0272c568feca095662362f41fcd54fe96b",
+      "tiles": 9
+    },
+    {
+      "url": "https://www.jacquemus.com/en_us/sneakers-shoes-men",
+      "file": "logs\\20261103\\jacquemus-men-rendered-cards.json",
+      "contentHash": "a15807b5c937d3644ed55fe8885d5b7fd3e697be0ea61b5696d16d2252b9562b",
+      "tiles": 11,
+      "method": "rendered-dom-product-records"
+    },
+    {
+      "url": "https://www.jacquemus.com/en_us/sneakers-shoes-women",
+      "file": "logs\\20261103\\jacquemus-women-rendered-cards.json",
+      "contentHash": "aaaac9e504732da66ba42360675cd455b78b1bf97417e0736709282f7909d1d8",
+      "tiles": 11,
+      "method": "rendered-dom-product-records"
+    }
+  ],
+  "scope": "Observed first-party men/women product tiles and observed pagination; no claim that every selectable colour outside those tiles was read."
+}

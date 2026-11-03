@@ -1,5 +1,6 @@
 import {createHash} from 'node:crypto';
 import {isExcludedBrand} from '../public/assets/brand-exclusions.mjs';
+import {isSiteBrandAllowed} from '../public/assets/site-brand-policy.mjs';
 import {isLuxuryMaison} from './luxury-shelves.mjs';
 
 /** The brands a weekly collection covers, in the order it reads them.
@@ -9,7 +10,7 @@ import {isLuxuryMaison} from './luxury-shelves.mjs';
  *  the one kind of shop that did not need them.
  */
 export function collectedBrandList(policy) {
-  return policy.brands.filter(b=>!isExcludedBrand(b.name)&&(b.mandatory||b.policy==='core'))
+  return policy.brands.filter(b=>!isExcludedBrand(b.name)&&isSiteBrandAllowed(b.name)&&(b.mandatory||b.policy==='core'))
     .sort((a,b)=>Number(isLuxuryMaison(b.name))-Number(isLuxuryMaison(a.name))).map(b=>b.name);
 }
 

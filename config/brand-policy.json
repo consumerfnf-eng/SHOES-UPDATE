@@ -7,161 +7,184 @@
       "name": "Louis Vuitton",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "miu-miu",
       "name": "Miu Miu",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "prada",
       "name": "Prada",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "gucci",
       "name": "Gucci",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "dior",
       "name": "Dior",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "balenciaga",
       "name": "Balenciaga",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "celine",
       "name": "Celine",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "saint-laurent",
       "name": "Saint Laurent",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "hermes",
       "name": "Hermès",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "moncler",
       "name": "Moncler",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "bottega-veneta",
       "name": "Bottega Veneta",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "loewe",
       "name": "Loewe",
       "group": "luxury",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "on",
       "name": "On",
       "group": "outdoor",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "cecilie-bahnsen",
       "name": "Cecilie Bahnsen",
       "group": "contemporary",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "asics",
       "name": "ASICS",
       "group": "outdoor",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "fila",
       "name": "FILA",
       "group": "outdoor",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "mizuno",
       "name": "Mizuno",
       "group": "outdoor",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "new-balance",
       "name": "New Balance",
       "group": "outdoor",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "salomon",
       "name": "Salomon",
       "group": "outdoor",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "adidas",
       "name": "adidas",
       "group": "outdoor",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "nike",
       "name": "Nike",
       "group": "outdoor",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "puma",
       "name": "PUMA",
       "group": "outdoor",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "axel-arigato",
       "name": "Axel Arigato",
       "group": "contemporary",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "autry",
@@ -169,280 +192,327 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Sneakers are the brand's whole product line; its official store sells nothing else."
+      "scopeNote": "Sneakers are the brand's whole product line; its official store sells nothing else.",
+      "siteGroup": "LUX"
     },
     {
       "id": "pane",
       "name": "PANE",
       "group": "contemporary",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "LUX"
     },
     {
       "id": "onitsuka-tiger",
       "name": "Onitsuka Tiger",
       "group": "outdoor",
       "policy": "mandatory",
-      "mandatory": true
+      "mandatory": true,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "satisfy",
       "name": "SATISFY",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "jordan",
       "name": "Jordan",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "converse",
       "name": "Converse",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "CASUAL"
     },
     {
       "id": "vans",
       "name": "Vans",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "CASUAL"
     },
     {
       "id": "reebok",
       "name": "Reebok",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "saucony",
       "name": "Saucony",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "hoka",
       "name": "HOKA",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "brooks",
       "name": "Brooks",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "skechers",
       "name": "Skechers",
       "group": "outdoor",
-      "policy": "core",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "core",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "under-armour",
       "name": "Under Armour",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "arc-teryx",
       "name": "Arc'teryx",
       "group": "outdoor",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "the-north-face",
       "name": "The North Face",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "kolon-sport",
       "name": "KOLON SPORT",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "merrell",
       "name": "Merrell",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "keen",
       "name": "KEEN",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "roa",
       "name": "ROA",
       "group": "outdoor",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "norda",
       "name": "norda",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "eider",
       "name": "Eider",
       "group": "outdoor",
-      "policy": "core",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "core",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "le-coq-sportif",
       "name": "Le Coq Sportif",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "umbro",
       "name": "Umbro",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "alo",
       "name": "Alo",
       "group": "athleisure",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "lululemon",
       "name": "Lululemon",
       "group": "athleisure",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "crocs",
       "name": "Crocs",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "CASUAL"
     },
     {
       "id": "oofos",
       "name": "OOFOS",
       "group": "outdoor",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "havaianas",
       "name": "Havaianas",
       "group": "outdoor",
-      "policy": "core",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "core",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "melissa",
       "name": "Melissa",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "CASUAL"
     },
     {
       "id": "rockfish-weatherwear",
       "name": "Rockfish Weatherwear",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "CASUAL"
     },
     {
       "id": "23-65",
       "name": "23.65",
       "group": "contemporary",
-      "policy": "core",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "core",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "alohas",
       "name": "ALOHAS",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "grounds",
       "name": "grounds",
       "group": "contemporary",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "common-projects",
       "name": "Common Projects",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "golden-goose",
       "name": "Golden Goose",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "maison-mihara-yasuhiro",
       "name": "Maison Mihara Yasuhiro",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "y-3",
       "name": "Y-3",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "SPORTS"
     },
     {
       "id": "dries-van-noten",
       "name": "Dries Van Noten",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "wales-bonner",
       "name": "Wales Bonner",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "simone-rocha",
       "name": "Simone Rocha",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "maison-margiela",
@@ -450,21 +520,25 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Replica and Tabi sneakers are standing categories on maisonmargiela.com, not occasional pieces."
+      "scopeNote": "Replica and Tabi sneakers are standing categories on maisonmargiela.com, not occasional pieces.",
+      "siteGroup": "LUX"
     },
     {
       "id": "mm6-maison-margiela",
       "name": "MM6 Maison Margiela",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "sacai",
       "name": "sacai",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "rick-owens",
@@ -472,7 +546,8 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Geobasket and Ramones are standing sneaker categories on rickowens.eu; 198 collected records were all held for per-model review."
+      "scopeNote": "Geobasket and Ramones are standing sneaker categories on rickowens.eu; 198 collected records were all held for per-model review.",
+      "siteGroup": "LUX"
     },
     {
       "id": "jil-sander",
@@ -480,42 +555,52 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Standing sneakers category on jilsander.com."
+      "scopeNote": "Standing sneakers category on jilsander.com.",
+      "siteGroup": "LUX"
     },
     {
       "id": "alaia",
       "name": "Alaïa",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "acne-studios",
       "name": "Acne Studios",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "coperni",
       "name": "Coperni",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "courreges",
       "name": "Courrèges",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "jacquemus",
       "name": "Jacquemus",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "fendi",
@@ -523,14 +608,17 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Standing sneakers category on fendi.com (Fendi Match, Faster)."
+      "scopeNote": "Standing sneakers category on fendi.com (Fendi Match, Faster).",
+      "siteGroup": "LUX"
     },
     {
       "id": "ganni",
       "name": "Ganni",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "givenchy",
@@ -538,14 +626,16 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Standing sneakers category on givenchy.com; the TK-MX/TK-360 family is a continuous line."
+      "scopeNote": "Standing sneakers category on givenchy.com; the TK-MX/TK-360 family is a continuous line.",
+      "siteGroup": "LUX"
     },
     {
       "id": "versace",
       "name": "Versace",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "valentino-garavani",
@@ -553,14 +643,17 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Standing sneakers category on valentino.com; the Rockstud and One Stud trainers are a continuous line."
+      "scopeNote": "Standing sneakers category on valentino.com; the Rockstud and One Stud trainers are a continuous line.",
+      "siteGroup": "LUX"
     },
     {
       "id": "dolce-gabbana",
       "name": "Dolce & Gabbana",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "alexander-mcqueen",
@@ -568,7 +661,8 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "The Oversized Sneaker is the house's best-known shoe and has its own category on alexandermcqueen.com."
+      "scopeNote": "The Oversized Sneaker is the house's best-known shoe and has its own category on alexandermcqueen.com.",
+      "siteGroup": "LUX"
     },
     {
       "id": "lanvin",
@@ -576,126 +670,155 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Curb is a standing sneaker line with its own category on lanvin.com."
+      "scopeNote": "Curb is a standing sneaker line with its own category on lanvin.com.",
+      "siteGroup": "LUX"
     },
     {
       "id": "lemaire",
       "name": "Lemaire",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "stone-island",
       "name": "Stone Island",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "burberry",
       "name": "Burberry",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "tory-burch",
       "name": "Tory Burch",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "marine-serre",
       "name": "Marine Serre",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "chloe",
       "name": "Chloé",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "stella-mccartney",
       "name": "Stella McCartney",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "proenza-schouler",
       "name": "Proenza Schouler",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "junya-watanabe",
       "name": "Junya Watanabe",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "comme-des-garcons-homme-plus",
       "name": "Comme des Garçons Homme Plus",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "yohji-yamamoto",
       "name": "Yohji Yamamoto",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "kiko-kostadinov",
       "name": "Kiko Kostadinov",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "craig-green",
       "name": "Craig Green",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "undercover",
       "name": "Undercover",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "kolor",
       "name": "Kolor",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "visvim",
       "name": "Visvim",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "hender-scheme",
       "name": "Hender Scheme",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "chanel",
@@ -703,21 +826,25 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Standing sneakers category on chanel.com; a continuous line since the 2014 tweed trainer."
+      "scopeNote": "Standing sneakers category on chanel.com; a continuous line since the 2014 tweed trainer.",
+      "siteGroup": "LUX"
     },
     {
       "id": "thom-browne",
       "name": "Thom Browne",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "kenzo",
       "name": "Kenzo",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "amiri",
@@ -725,21 +852,26 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Skel Top and MA are standing sneaker lines; amiri.com publishes separate new men's and women's sneaker listings."
+      "scopeNote": "Skel Top and MA are standing sneaker lines; amiri.com publishes separate new men's and women's sneaker listings.",
+      "siteGroup": "LUX"
     },
     {
       "id": "rhude",
       "name": "Rhude",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "fear-of-god",
       "name": "Fear of God",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "off-white",
@@ -747,154 +879,192 @@
       "group": "contemporary",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Out Of Office is a standing sneaker line with its own category on off---white.com."
+      "scopeNote": "Out Of Office is a standing sneaker line with its own category on off---white.com.",
+      "siteGroup": "LUX"
     },
     {
       "id": "palm-angels",
       "name": "Palm Angels",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "casablanca",
       "name": "Casablanca",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "dsquared2",
       "name": "DSQUARED2",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "balmain",
       "name": "Balmain",
       "group": "contemporary",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "pierre-hardy",
       "name": "Pierre Hardy",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "rabanne",
       "name": "Rabanne",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "ottolinger",
       "name": "Ottolinger",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "avavav",
       "name": "Avavav",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "feng-chen-wang",
       "name": "Feng Chen Wang",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "saul-nash",
       "name": "Saul Nash",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "issey-miyake",
       "name": "Issey Miyake",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "vetements",
       "name": "VETEMENTS",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "willy-chavarria",
       "name": "Willy Chavarria",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "soshiotsuki",
       "name": "Soshiotsuki",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "song-for-the-mute",
       "name": "Song for the Mute",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "hunter",
       "name": "Hunter",
       "group": "outdoor",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "shoepen",
       "name": "Shoepen",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "conditional",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "timberland",
       "name": "Timberland",
       "group": "outdoor",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "CASUAL"
     },
     {
       "id": "ugg",
       "name": "UGG",
       "group": "outdoor",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "CASUAL"
     },
     {
       "id": "diesel",
       "name": "Diesel",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "CASUAL"
     },
     {
       "id": "martine-rose",
       "name": "Martine Rose",
       "group": "contemporary",
-      "policy": "conditional",
-      "mandatory": false
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "the-row",
@@ -902,35 +1072,42 @@
       "group": "luxury",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Standing sneakers category on therow.com (Owen, Dune, Marie H); 15 collected records were held brand-excluded."
+      "scopeNote": "Standing sneakers category on therow.com (Owen, Dune, Marie H); 15 collected records were held brand-excluded.",
+      "siteGroup": "LUX"
     },
     {
       "id": "khaite",
       "name": "Khaite",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "ferragamo",
       "name": "Ferragamo",
       "group": "luxury",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "tod-s",
       "name": "Tod's",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "bally",
       "name": "Bally",
       "group": "luxury",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "loro-piana",
@@ -938,7 +1115,8 @@
       "group": "luxury",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Standing sneakers category on loropiana.com (Flexy Walk, 360 Flexy Wind)."
+      "scopeNote": "Standing sneakers category on loropiana.com (Flexy Walk, 360 Flexy Wind).",
+      "siteGroup": "LUX"
     },
     {
       "id": "brunello-cucinelli",
@@ -946,7 +1124,8 @@
       "group": "luxury",
       "policy": "core",
       "mandatory": false,
-      "scopeNote": "Standing sneakers category on brunellocucinelli.com."
+      "scopeNote": "Standing sneakers category on brunellocucinelli.com.",
+      "siteGroup": "LUX"
     },
     {
       "id": "zegna",
@@ -954,180 +1133,428 @@
       "group": "luxury",
       "policy": "exclude",
       "mandatory": false,
-      "scopeNote": "Triple Stitch is a standing sneaker line with its own category on zegna.com."
+      "scopeNote": "Triple Stitch is a standing sneaker line with its own category on zegna.com.",
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "santoni",
       "name": "Santoni",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "berluti",
       "name": "Berluti",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "repetto",
       "name": "Repetto",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "roger-vivier",
       "name": "Roger Vivier",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "jimmy-choo",
       "name": "Jimmy Choo",
       "group": "luxury",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "christian-louboutin",
       "name": "Christian Louboutin",
       "group": "luxury",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "mach-mach",
       "name": "Mach & Mach",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "amina-muaddi",
       "name": "Amina Muaddi",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "aeyde",
       "name": "Aeyde",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "staud",
       "name": "Staud",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "toteme",
       "name": "Toteme",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "carlotha-ray",
       "name": "Carlotha Ray",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "yeel",
       "name": "Yeel",
       "group": "luxury",
-      "policy": "unverified",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "unverified",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "s-e-o",
       "name": "s/e/o",
       "group": "luxury",
-      "policy": "unverified",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "unverified",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "leey-x-hardworkup",
       "name": "Leey x Hardworkup",
       "group": "luxury",
-      "policy": "collab",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "collab",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "nike-x-jacquemus",
       "name": "Nike x Jacquemus",
       "group": "luxury",
-      "policy": "collab",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "collab",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "nikeskims",
       "name": "NikeSKIMS",
       "group": "luxury",
-      "policy": "collab",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "collab",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "pane-x-head",
       "name": "PANE x HEAD",
       "group": "luxury",
-      "policy": "collab",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "collab",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "repetto-x-marine-serre",
       "name": "Repetto x Marine Serre",
       "group": "luxury",
-      "policy": "collab",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "collab",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "cecilie-bahnsen-asics",
       "name": "Cecilie Bahnsen × ASICS",
       "group": "luxury",
-      "policy": "collab",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "collab",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "ganni-x-new-balance",
       "name": "Ganni x New Balance",
       "group": "luxury",
-      "policy": "collab",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "collab",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "vibram",
       "name": "Vibram",
       "group": "luxury",
-      "policy": "supplier",
-      "mandatory": false
+      "policy": "exclude",
+      "mandatory": false,
+      "previousPolicy": "supplier",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "goyard",
       "name": "Goyard",
       "group": "luxury",
       "policy": "exclude",
-      "mandatory": false
+      "mandatory": false,
+      "previousPolicy": "exclude",
+      "siteScopeReason": "not-in-user-brand-list"
     },
     {
       "id": "mcm",
       "name": "MCM",
       "group": "luxury",
       "policy": "core",
-      "mandatory": false
+      "mandatory": false,
+      "siteGroup": "LUX"
     },
     {
       "id": "coach",
       "name": "Coach",
       "group": "luxury",
+      "policy": "core",
+      "mandatory": false,
+      "siteGroup": "LUX"
+    },
+    {
+      "id": "magliano",
+      "name": "Magliano",
+      "group": "contemporary",
+      "siteGroup": "LUX",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "marni",
+      "name": "Marni",
+      "group": "contemporary",
+      "siteGroup": "LUX",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "togapulla",
+      "name": "Toga Pulla",
+      "group": "contemporary",
+      "siteGroup": "LUX",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "togavirilis",
+      "name": "Toga Virilis",
+      "group": "contemporary",
+      "siteGroup": "LUX",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "viviennewestwood",
+      "name": "Vivienne Westwood",
+      "group": "contemporary",
+      "siteGroup": "LUX",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "tomford",
+      "name": "TOM FORD",
+      "group": "contemporary",
+      "siteGroup": "LUX",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "marcjacobs",
+      "name": "Marc Jacobs",
+      "group": "contemporary",
+      "siteGroup": "LUX",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "diadora",
+      "name": "diadora",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "kswiss",
+      "name": "K-SWISS",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "columbia",
+      "name": "COLUMBIA",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "k2",
+      "name": "K2",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "nepa",
+      "name": "NEPA",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "blackyak",
+      "name": "BLACKYAK",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "descente",
+      "name": "DESCENTE",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "dynafit",
+      "name": "DYNAFIT",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "spyder",
+      "name": "spyder",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "goalstudio",
+      "name": "goalstudio",
+      "group": "sportswear",
+      "siteGroup": "SPORTS",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "lacoste",
+      "name": "LACOSTE",
+      "group": "casual",
+      "siteGroup": "CASUAL",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "poloralphlauren",
+      "name": "POLO RALPH LAUREN",
+      "group": "casual",
+      "siteGroup": "CASUAL",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "tommyhilfiger",
+      "name": "TOMMY HILFIGER",
+      "group": "casual",
+      "siteGroup": "CASUAL",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "calvinkleinjeans",
+      "name": "Calvin Klein Jeans",
+      "group": "casual",
+      "siteGroup": "CASUAL",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "drmartens",
+      "name": "DR.MARTENS",
+      "group": "casual",
+      "siteGroup": "CASUAL",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "birkenstock",
+      "name": "Birkenstock",
+      "group": "casual",
+      "siteGroup": "CASUAL",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "fitflop",
+      "name": "fitflop",
+      "group": "casual",
+      "siteGroup": "CASUAL",
+      "policy": "core",
+      "mandatory": false
+    },
+    {
+      "id": "ash",
+      "name": "ASH",
+      "group": "casual",
+      "siteGroup": "CASUAL",
       "policy": "core",
       "mandatory": false
     }
@@ -1138,7 +1565,26 @@
     "HERMES": "Hermès",
     "ONITSUKATIGER": "Onitsuka Tiger",
     "Salvatore Ferragamo": "Ferragamo",
-    "SALVATORE FERRAGAMO": "Ferragamo"
+    "SALVATORE FERRAGAMO": "Ferragamo",
+    "McQueen": "Alexander McQueen",
+    "Alexander Mcqueen": "Alexander McQueen",
+    "K Swiss": "K-SWISS",
+    "KSWISS": "K-SWISS",
+    "Alo Yoga": "Alo",
+    "Columbia": "COLUMBIA",
+    "Lacoste": "LACOSTE",
+    "Polo Ralph Lauren": "POLO RALPH LAUREN",
+    "Tommy Hilfiger": "TOMMY HILFIGER",
+    "Dr. Martens": "DR.MARTENS",
+    "Dr Martens": "DR.MARTENS",
+    "FitFlop": "fitflop",
+    "Goal Studio": "goalstudio",
+    "Goalstudio": "goalstudio",
+    "Spyder": "spyder",
+    "NEPA": "NEPA",
+    "K2 Korea": "K2",
+    "TOM FORD": "TOM FORD",
+    "Tom Ford": "TOM FORD"
   },
   "collaborations": {
     "Cecilie Bahnsen × ASICS": "ASICS",

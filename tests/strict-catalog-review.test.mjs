@@ -55,8 +55,8 @@ test('a shelf refresh preserves checked factory codes and side photos; structure
  const fresh={...old,id:'new',name:'메달리스트 화이트',style:'851090',styleType:'official-product-id',image:'https://example.org/thumb.jpg',arrivalEvidence:{url:'https://www.autry-usa.com/ko/sneakers/',contentHash:'clp'},officialProductEvidence:{verificationMethod:'official-new-listing-sku-image'}};
  const result=reconcileOfficialAssortment([old],[fresh],{publishedIds:new Set(['old'])});
  assert.equal(result.added.length,0);assert.equal(result.products[0].style,old.style);assert.equal(result.products[0].image,old.image);assert.equal(result.products[0].name,old.name);
- const api={...fresh,brand:'ALOHAS',name:'Tb.490 Forest Green',colorway:'Forest Green',arrivalEvidence:{url:'https://alohas.com/collections/sneakers/products.json?page=1',contentHash:'api'}};
- const corrected=reconcileOfficialAssortment([{...old,brand:'ALOHAS'}],[api],{publishedIds:new Set(['old'])});assert.equal(corrected.products[0].colorway,'Forest Green');
+ const api={...fresh,productVariantId:'same-exact-variant',brand:'ALOHAS',name:'Tb.490 Forest Green',colorway:'Forest Green',arrivalEvidence:{url:'https://alohas.com/collections/sneakers/products.json?page=1',contentHash:'api'}};
+ const corrected=reconcileOfficialAssortment([{...old,brand:'ALOHAS',productVariantId:'same-exact-variant'}],[api],{publishedIds:new Set(['old'])});assert.equal(corrected.products[0].colorway,'Forest Green');
 });
 test('wire delivery preserves full facts and false evidence values, including old snapshots',()=>{
  const url='https://example.org/products/a-long-exact-product-reference',image='https://example.org/media/a-long-exact-product-photograph.jpg',at='2026-11-02T10:00:00Z';

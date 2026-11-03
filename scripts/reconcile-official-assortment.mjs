@@ -8,8 +8,8 @@ function shopifyHandle(p){try{return new URL(p.url).pathname.match(/\/products\/
 // Keep existing IDs/publication history when a current primary source supplies
 // better variant facts. A numeric retailer ID is never a manufacturer match.
 export function reconcileOfficialAssortment(existing,incoming,{publishedIds=new Set()}={}){
- const rows=existing.map(repairSourceLabels),byUrl=new Map(),byCode=new Map(),byHandle=new Map();
- const index=p=>{const brand=p.brand+'|',u=productUrl(p),code=manufacturerCode(p),handle=shopifyHandle(p);for(const[map,key]of[[byUrl,u],[byCode,code],[byHandle,handle]])if(key&&!map.has(brand+key))map.set(brand+key,p);};
+ const rows=existing.map(repairSourceLabels),byUrl=new Map(),byCode=new Map(),byHandle=new Map(),byFactory=new Map(),byVariant=new Map();
+ const index=p=>{const brand=p.brand+'|',u=productUrl(p),code=manufacturerCode(p),handle=shopifyHandle(p);for(const[map,key]of[[byUrl,u],[byCode,code],[byHandle,handle],[byFactory,p.manufacturerStyle],[byVariant,p.productVariantId]])if(key&&!map.has(brand+key))map.set(brand+key,p);};
  [...rows].sort((a,b)=>Number(publishedIds.has(b.id))-Number(publishedIds.has(a.id))).forEach(index);
  const added=[],updated=[];
  for(const raw of incoming){
@@ -17,9 +17,24 @@ export function reconcileOfficialAssortment(existing,incoming,{publishedIds=new 
   const structured=/\/products\.json(?:\?|$)/.test(p.arrivalEvidence?.url||'');
   if(structured&&p.modelName)p.modelNameEvidence={verified:true,brand:p.brand,style:p.style,url:p.url,image:p.image,sourceUrl:p.arrivalEvidence.url,contentHash:p.arrivalEvidence.contentHash,modelName:p.modelName,method:'official-product-attribute'};
   if(p.colorway&&p.officialProductEvidence?.verified)p.colorEvidence={method:'official-product-attribute',url:p.productEvidenceUrl||p.arrivalEvidence?.url,label:p.colorway,contentHash:p.officialProductEvidence.contentHash};
-  const old=(url&&byUrl.get(brand+url))||(code&&byCode.get(brand+code))||(handle&&byHandle.get(brand+handle));
+  const compatible=prior=>{
+    if(!prior)return false;
+    if(p.productVariantId&&prior.productVariantId&&p.productVariantId===prior.productVariantId)return true;
+    if(!p.productVariantId||!prior.productVariantId)return !p.colorway||!prior.colorway||p.colorway.toLowerCase()===prior.colorway.toLowerCase();
+    if(p.manufacturerStyle&&prior.manufacturerStyle&&p.manufacturerStyle===prior.manufacturerStyle)return true;
+    return p.image===prior.image&&p.colorway===prior.colorway;
+  };
+  const fromUrl=url&&byUrl.get(brand+url),fromHandle=handle&&byHandle.get(brand+handle);
+  const old=(p.productVariantId&&byVariant.get(brand+p.productVariantId))||(code&&byCode.get(brand+code))||(p.manufacturerStyle&&byFactory.get(brand+p.manufacturerStyle))||(compatible(fromUrl)&&fromUrl)||(compatible(fromHandle)&&fromHandle);
   if(old){
     const id=old.id,firstSeen=old.firstSeen,firstPublishedAt=old.firstPublishedAt;
+    // A feed's numeric physical-option pointer cannot replace a checked house
+    // style code or its bound PDP/photo/release evidence. Keep both facts.
+    if(structured&&p.styleType==='official-product-id'&&old.style&&old.styleType!=='official-product-id'&&!p.manufacturerStyle){
+      old.assortmentRecheck=p.arrivalEvidence;
+      if(p.colorway){old.colorway=p.colorway;old.colorEvidence=p.colorEvidence;}
+      updated.push({id,brand:p.brand,style:old.style,url:old.url});index(old);continue;
+    }
     const readPdp=p.officialProductEvidence?.verificationMethod==='official-new-arrivals-and-product-page';
     // A rendered shelf must not overwrite a previously checked factory code,
     // English model name or approved side photograph with a six-digit shop ID

@@ -12,18 +12,10 @@ public/data/catalog.json or the official daily/weekly scripts.
                that names an identifiable brand becomes an item, including
                ones whose stated release date is still in the future.
 
-What counts as "new" is decided per source by what that source actually
-publishes, never by a single blanket rule:
-
-  dated      29CM gives every listing a real visibleBeginTimestamp, and every
-             article carries a publish date -> a true 3-month window.
-  new-sort   SSENSE (sort=latest-desc) and 무신사 (sortCode=NEW) order their own
-             listings newest-first -> the top of that order is the new arrivals.
-  delta      W컨셉, Lyst, Farfetch, Mytheresa, Net-a-Porter expose neither a date
-             nor a working newest sort -> the only honest signal is what they
-             are showing now that they were not showing at the last check, so
-             those publish on a week-over-week delta and the first run records
-             a baseline instead of publishing one.
+Retail publication requires a verified first release within three calendar months.
+Listing dates, newest-sort placement, first discovery and current availability
+are discovery signals only. Restocks and reissues never qualify. Unverified
+candidates remain in the private source archive; newsletters use article dates.
 
 Design rules carried over from this repo's pipeline philosophy:
   - Never fabricate: a blocked source keeps 0 items and is reported as such;
@@ -42,6 +34,7 @@ import subprocess
 import sys
 
 from brand_identity import canonical_brand
+from retail_release_policy import retail_release_eligibility
 from dedupe_rules import (drop_already_official, drop_excluded_brands, evergreen_keys,
                           excluded_brand_keys, is_evergreen, official_identity_keys, prefer_women)
 from footwear_scope import clean_colour_value, colour_from_style, is_stated_value
@@ -699,6 +692,15 @@ def main():
     # A cached prior payload must not reintroduce a brand removed this week,
     # including before the photo downloader sees the carried records.
     published_retail = drop_excluded_brands(published_retail, excluded)
+    # The original release date, never a listing/upload date or current stock,
+    # decides retail eligibility. This guard runs again after carry-forward.
+    retail_release_rejected = [dict(p, releaseReview=retail_release_eligibility(p, today))
+                               for p in published_retail
+                               if not retail_release_eligibility(p, today)['eligible']]
+    if retail_release_rejected:
+        atomic_write_json(os.path.join(DATA, 'retail-release-review.json'),
+                          {'checkedAt': today, 'products': retail_release_rejected})
+    published_retail = [p for p in published_retail if retail_release_eligibility(p, today)['eligible']]
     published_newsletter = drop_excluded_brands(published_newsletter, excluded)
 
     # A retired source must not survive as carried-forward stock. Balardi was

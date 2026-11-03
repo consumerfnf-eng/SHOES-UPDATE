@@ -339,3 +339,5 @@ body.viewer-open{overflow:hidden}
 .product-card[data-brand="Dior"] .card-open,.product-card[data-brand="Dior"] .card-thumbnail{padding:0}
 .card-thumbnail{object-fit:contain}
 .shell>main{min-width:0;max-width:100%}
+
+.brand-group-tabs{display:flex;flex-wrap:wrap;gap:8px;padding:16px 22px 4px}.brand-group-tabs[hidden]{display:none}.brand-group-tab{min-height:40px;padding:8px 18px;border:1px solid #d8dfe9;border-radius:24px;background:#fff;color:#3f4b5f;font:inherit;font-weight:600;cursor:pointer}.brand-group-tab.active{background:#eaf0ff;color:#2553c4;border-color:#7295ed}.brand-group-tab:focus-visible{outline:2px solid #2553c4;outline-offset:3px}.brand-group-tab:disabled{opacity:.4;cursor:default}

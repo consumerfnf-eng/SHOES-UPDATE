@@ -39,7 +39,8 @@ test('Verified release months retain unknown days and share conservative eligibi
 test('Merged media uses combined independent-source qualification; brand requires exact official product and photo of released items',()=>{
   const base=official({id:'a',name:'Runner',brand:'Nike',style:'AA100',url:'https://nike.example/runner',image:'https://nike.example/runner.jpg',releaseDate:'2026-09-01'});
   assert(sourceMatches({...base,popularity:{media:true}},'media','2026-09-28'));assert(!sourceMatches({...base,popularity:{magazine:true}},'media','2026-09-28'));assert(!sourceMatches({...base,popularity:{newsletter:true}},'media','2026-09-28'));
-  assert(sourceMatches(base,'brand','2026-09-28'));assert(!sourceMatches({...base,releaseDate:'2026-10-01'},'brand','2026-09-28'));
+  assert(!sourceMatches(base,'brand','2026-09-28'),'Official product tab only includes LUX');
+  const lux=official({...base,brand:'Prada'});assert(sourceMatches(lux,'brand','2026-09-28'));assert(!sourceMatches({...lux,releaseDate:'2026-10-01'},'brand','2026-09-28'));
   assert.equal(officialImageUrl(base,'2026-09-28'),base.image);assert.equal(officialProductUrl(base,'2026-09-28'),base.url);
   for(const patch of [{officialImageEvidence:{...base.officialImageEvidence,verified:false}},{officialImageEvidence:{...base.officialImageEvidence,url:'https://sns.example/photo.jpg'}},{officialImageEvidence:{...base.officialImageEvidence,style:'OTHER'}},{officialImageEvidence:{...base.officialImageEvidence,sourceUrl:'https://different.example/'}},{officialProductEvidence:{...base.officialProductEvidence,brand:'adidas'}},{officialProductEvidence:{...base.officialProductEvidence,verifiedAt:'2026-10-01'}}])assert.equal(officialImageUrl({...base,...patch},'2026-09-28'),'');
   assert.equal(officialImageUrl({...base,officialImageEvidence:undefined,thumbnail:'https://sns.example/fallback.jpg'},'2026-09-28'),'','Never fall back to unverified thumbnails');

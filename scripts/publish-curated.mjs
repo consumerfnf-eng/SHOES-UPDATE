@@ -21,7 +21,9 @@ function slugWords(url) {
   try { return new URL(url).pathname.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().split(' '); }
   catch { return []; }
 }
-/** One canonical product URL publishes once.
+/** One canonical product URL and physical colour/material option publishes once.
+ * Shopify variant query parameters are size-oriented and canonicalUrl removes
+ * them; the assembler provides a separate physical option ID to retain colours.
  *
  *  The record kept is the one the page is evidence *for*: a brand writes the
  *  colour into its own slug - "triple-s.2-sneaker-black-dark-grey-865849..." -
@@ -31,7 +33,7 @@ function slugWords(url) {
  */
 export function keepOnePerProductUrl(products,held) {
   const groups=new Map();
-  for(const p of products){const u=canonicalUrl(p.url);if(!u)continue;(groups.get(u)||groups.set(u,[]).get(u)).push(p);}
+  for(const p of products){const u=canonicalUrl(p.url);if(!u)continue;const identity=p.styleType==='official-product-id'&&p.productVariantId?u+'|physical:'+p.productVariantId:u;(groups.get(identity)||groups.set(identity,[]).get(identity)).push(p);}
   const drop=new Set();
   for(const [url,group] of groups){
     if(group.length<2)continue;
@@ -204,6 +206,9 @@ export async function publishCurated({directory=root,now=new Date(),incoming=[],
   // Where several colours of one shoe are published with no colour recorded,
   // the cards are identical. The brand's own URLs already tell them apart.
   labelNameVariantColours(labelVariantColours(labelUrlVariantColours(result.snapshot.products)));
+  const designReviews=await readJson(path.join(directory,'data/product-variant-reviews.json'),{products:[]});
+  const designById=new Map(designReviews.products.map(r=>[r.id,r]));
+  for(const p of result.snapshot.products){const r=designById.get(p.id);if(r?.verified&&r.brand===p.brand&&r.style===p.style&&r.url===p.url&&r.image===p.image)p.designReview=r;}
   const photoReviews=await readJson(path.join(directory,'data/product-presentation.json'),null);
   if(photoReviews){
     result.snapshot.products=result.snapshot.products.flatMap(p=>{

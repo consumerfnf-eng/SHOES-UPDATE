@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "brand": "Cecilie Bahnsen",
+      "root": "https://ceciliebahnsen.com"
+    },
+    {
+      "brand": "Kiko Kostadinov",
+      "root": "https://kikokostadinov.com"
+    },
+    {
+      "brand": "Simone Rocha",
+      "root": "https://simonerocha.com"
+    },
+    {
+      "brand": "Wales Bonner",
+      "root": "https://walesbonner.com"
+    },
+    {
+      "brand": "Magliano",
+      "root": "https://magliano.website"
+    },
+    {
+      "brand": "Martine Rose",
+      "root": "https://www.martine-rose.com"
+    },
+    {
+      "brand": "Lemaire",
+      "root": "https://www.lemaire.fr"
+    },
+    {
+      "brand": "Dries Van Noten",
+      "root": "https://www.driesvannoten.com"
+    },
+    {
+      "brand": "Toga",
+      "root": "https://int.toga.jp"
+    },
+    {
+      "brand": "Marine Serre",
+      "root": "https://www.marineserre.com"
+    }
+  ]
+}

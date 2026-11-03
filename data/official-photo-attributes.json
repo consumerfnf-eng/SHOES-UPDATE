@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 1,
+  "products": [
+    {
+      "id": "arrival-0a1f4d0478fc8ba5616a",
+      "brand": "TOM FORD",
+      "style": "J1644-LCL457N-NRC",
+      "url": "https://www.tomfordfashion.com/en-us/suede-aston-sneaker/J1644-LCL457N-NRC.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1644-LCL457N_NRC_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1644-LCL457N_NRC_OS_A?w=1280",
+      "colorway": "BLACK + AMBER",
+      "colorSwatches": [
+        "#292828"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-aston-sneaker/J1644-LCL457N-NRC.html",
+      "contentHash": "12e756a86c0ec7e200e2fd6aa2ed320db8c3d2f0fcfa3473ed58a0c23d781c99",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-d750fb7a1879a043b18e",
+      "brand": "TOM FORD",
+      "style": "J1644-LCL457N-URD",
+      "url": "https://www.tomfordfashion.com/en-us/suede-aston-sneaker/J1644-LCL457N-URD.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1644-LCL457N_URD_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1644-LCL457N_URD_OS_A?w=1280",
+      "colorway": "BLUETTE + AMBER",
+      "colorSwatches": [
+        "#3d5285"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-aston-sneaker/J1644-LCL457N-URD.html",
+      "contentHash": "b4cf48faf1a16d2684fedf5a2c19a6728ff5ae8d3814cd201120ddb3ffecf18a",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-17fb040ffebd55623e86",
+      "brand": "TOM FORD",
+      "style": "J1645-LCL123C-GNI",
+      "url": "https://www.tomfordfashion.com/en-us/dean-sneaker/J1645-LCL123C-GNI.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1645-LCL123C_GNI_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1645-LCL123C_GNI_OS_A?w=1280",
+      "colorway": "KHAKI + BLACK",
+      "colorSwatches": [
+        "#514c37"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/dean-sneaker/J1645-LCL123C-GNI.html",
+      "contentHash": "4c9f8ddac0390377699fdd8a352c92525f10a7b7e0212222b549a1ce77f1f39b",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-17ae25d5b3ebe831984b",
+      "brand": "TOM FORD",
+      "style": "J1645-LCL123C-NNP",
+      "url": "https://www.tomfordfashion.com/en-us/dean-sneaker/J1645-LCL123C-NNP.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1645-LCL123C_NNP_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1645-LCL123C_NNP_OS_A?w=1280",
+      "colorway": "BLACK",
+      "colorSwatches": [
+        "#252729"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/dean-sneaker/J1645-LCL123C-NNP.html",
+      "contentHash": "5eb2aaf755ef1144c9a4367fadbb7aef506a65af43e07a08730be75fb204e960",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-f09d71182134d4d1bf65",
+      "brand": "TOM FORD",
+      "style": "J1045-LCL249L-BGC8",
+      "url": "https://www.tomfordfashion.com/en-us/high-shine-leather-warwick-sneaker/J1045-LCL249L-BGC8.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1045-LCL249L_BGC8_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1045-LCL249L_3NW02_OS_A?w=1280",
+      "colorway": "BLACK + CREAM",
+      "colorSwatches": [
+        "#232426"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/high-shine-leather-warwick-sneaker/J1045-LCL249L-BGC8.html",
+      "contentHash": "fc8432b11c3b577f89d82123cb95770315d637c622338b043dc61a8ec67ca799",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-5c029fe820a90c23894c",
+      "brand": "TOM FORD",
+      "style": "J1507-LCL045L-WWF",
+      "url": "https://www.tomfordfashion.com/en-us/grain-leather-warwick-sneaker/J1507-LCL045L-WWF.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL045L_WWF_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL045L_3WW06_OS_A?w=1280",
+      "colorway": "BUTTER + CREAM",
+      "colorSwatches": [
+        "#e0ddbf"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/grain-leather-warwick-sneaker/J1507-LCL045L-WWF.html",
+      "contentHash": "b6441759d5aab02aba070f18a2861771c3f047e2b0220816744a4d692aae52f6",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-ad44c638e3050967bc84",
+      "brand": "TOM FORD",
+      "style": "J1591-LCL529L-WWQ",
+      "url": "https://www.tomfordfashion.com/en-us/printed-alligator-warwick-sneaker/J1591-LCL529L-WWQ.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1591-LCL529L_WWQ_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1591-LCL529L_WWQ_OS_A?w=1280",
+      "colorway": "IVORY + CREAM",
+      "colorSwatches": [
+        "#e6e2c9"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/printed-alligator-warwick-sneaker/J1591-LCL529L-WWQ.html",
+      "contentHash": "0c16ce72986d423ae762cd7ac133ccd497b9183cd4b6482ba94006f61e4c6fd1",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-26a9f787e4c4f02f0cfa",
+      "brand": "TOM FORD",
+      "style": "J1591-LCL529L-UWD",
+      "url": "https://www.tomfordfashion.com/en-us/printed-alligator-warwick-sneaker/J1591-LCL529L-UWD.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1591-LCL529L_UWD_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1591-LCL529L_UWD_OS_A?w=1280",
+      "colorway": "MIDNIGHT + CREAM",
+      "colorSwatches": [
+        "#172b43"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/printed-alligator-warwick-sneaker/J1591-LCL529L-UWD.html",
+      "contentHash": "2e01ee27fb468df32c8f818e6c663e973a219f8c99e49f41d981717f2fe4f730",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-9e5b3d1f6c234b64ae1f",
+      "brand": "TOM FORD",
+      "style": "J1507-LCL423N-BFX6",
+      "url": "https://www.tomfordfashion.com/en-us/suede-warwick-sneaker/J1507-LCL423N-BFX6.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL423N_BFX6_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL423N_3LW05_OS_A?w=1280",
+      "colorway": "MIDNIGHT BLUE + CREAM",
+      "colorSwatches": [
+        "#233147"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-warwick-sneaker/J1507-LCL423N-BFX6.html",
+      "contentHash": "4f83186b2c29dd7e34ee162f1e891504b2ed1f904cc304924f2be18cea45faf8",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-e118de1fef1bb84a5ebc",
+      "brand": "TOM FORD",
+      "style": "J1507-LCL423N-EWG",
+      "url": "https://www.tomfordfashion.com/en-us/suede-warwick-sneaker/J1507-LCL423N-EWG.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL423N_EWG_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL423N_EWG_OS_A?w=1280",
+      "colorway": "WHISKY + CREAM",
+      "colorSwatches": [
+        "#a16e3c"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-warwick-sneaker/J1507-LCL423N-EWG.html",
+      "contentHash": "7ec478549864062fd163485d67ed03808ca41155ed40faa38fdbfb40e4120b09",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-d40d923c3bd79bcd98e5",
+      "brand": "TOM FORD",
+      "style": "J1507-LCL423N-BFD6",
+      "url": "https://www.tomfordfashion.com/en-us/suede-warwick-sneaker/J1507-LCL423N-BFD6.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL423N_BFD6_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL423N_3BW16_OS_A?w=1280",
+      "colorway": "BRUNETTE + CREAM",
+      "colorSwatches": [
+        "#563c2d"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-warwick-sneaker/J1507-LCL423N-BFD6.html",
+      "contentHash": "0c4c1193bbae10d2cbb1cb17470dd1fef05868634dd6bcdb25e38a291d285615",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-d7d095135de0ee7f70a5",
+      "brand": "TOM FORD",
+      "style": "J1507-LCL423N-JWB",
+      "url": "https://www.tomfordfashion.com/en-us/suede-warwick-sneaker/J1507-LCL423N-JWB.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL423N_JWB_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL423N_3JW03_OS_A?w=1280",
+      "colorway": "PALE SAND + CREAM",
+      "colorSwatches": [
+        "#bb9565"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-warwick-sneaker/J1507-LCL423N-JWB.html",
+      "contentHash": "7809b152f035a089df35b155e82b21914ac9da77cf53638f57eb32bd51f3e377",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-cf78f5a78e33fb5ce019",
+      "brand": "TOM FORD",
+      "style": "J0974-LCL528N-WWA",
+      "url": "https://www.tomfordfashion.com/en-us/suede-and-printed-alligator-cambridge-sneaker/J0974-LCL528N-WWA.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J0974-LCL528N_WWA_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J0974-LCL528N_WWA_OS_A?w=1280",
+      "colorway": "OPTICAL WHITE + CREAM",
+      "colorSwatches": [
+        "#f2efdf"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-and-printed-alligator-cambridge-sneaker/J0974-LCL528N-WWA.html",
+      "contentHash": "b9557b07c4b03bc99dd9676827b91740bb9cf718fd35ddcdcb179c031c681559",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-163473f56ef90add4c35",
+      "brand": "TOM FORD",
+      "style": "J0974-LCL032N-WWD",
+      "url": "https://www.tomfordfashion.com/en-us/suede-cambridge-sneaker/J0974-LCL032N-WWD.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J0974-LCL032N_WWD_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J0974-LCL032N_3WW01_OS_A?w=1280",
+      "colorway": "MARBLE + CREAM",
+      "colorSwatches": [
+        "#c8c5b1"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-cambridge-sneaker/J0974-LCL032N-WWD.html",
+      "contentHash": "ecc6771d27cfbfe9d18cf12c9bcaf250cf0063f9f6487170d36b821e3b208cd0",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-02854c8461257140e512",
+      "brand": "TOM FORD",
+      "style": "J0974-LCL032N-NWB",
+      "url": "https://www.tomfordfashion.com/en-us/suede-cambridge-sneaker/J0974-LCL032N-NWB.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J0974-LCL032N_NWB_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J0974-LCL032N_3NW02_OS_A?w=1280",
+      "colorway": "BLACK + CREAM",
+      "colorSwatches": [
+        "#272b2c"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-cambridge-sneaker/J0974-LCL032N-NWB.html",
+      "contentHash": "8bf30a4de9ec7d85e47a98c95444302e296e053b8dd0961cb8efa6f038657f4c",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-937f35f0abad74f54a15",
+      "brand": "TOM FORD",
+      "style": "J0974-LCL123N-GWG",
+      "url": "https://www.tomfordfashion.com/en-us/suede-cambridge-sneaker/J0974-LCL123N-GWG.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J0974-LCL123N_GWG_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J0974-LCL123N_GWG_OS_A?w=1280",
+      "colorway": "KHAKI + CREAM",
+      "colorSwatches": [
+        "#65523c"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-cambridge-sneaker/J0974-LCL123N-GWG.html",
+      "contentHash": "20883e7d67bf867ddb00b5069206c0d2339589ee78af4842dd9fb92a3709cf0f",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-206f415cb03b116d069c",
+      "brand": "TOM FORD",
+      "style": "J0974-LCL528N-RWB",
+      "url": "https://www.tomfordfashion.com/en-us/suede-and-printed-alligator-cambridge-sneaker/J0974-LCL528N-RWB.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J0974-LCL528N_RWB_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J0974-LCL528N_RWB_OS_A?w=1280",
+      "colorway": "SCARLET + CREAM",
+      "colorSwatches": [
+        "#b82239"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-and-printed-alligator-cambridge-sneaker/J0974-LCL528N-RWB.html",
+      "contentHash": "9bf82e7f85630db95205a5932b3d5e19f9f1a850032bac3d0fa4eb720ff2eaf6",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-a6f24e2eb721705586d4",
+      "brand": "TOM FORD",
+      "style": "J1511-LCL046N-ERE",
+      "url": "https://www.tomfordfashion.com/en-us/suede-mick-sneaker%C2%A0/J1511-LCL046N-ERE.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL046N_ERE_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL046N_ERE_OS_A?w=1280",
+      "colorway": "WHISKY + AMBER",
+      "colorSwatches": [
+        "#975d39"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-mick-sneaker%C2%A0/J1511-LCL046N-ERE.html",
+      "contentHash": "23c4f4baf6f436c4509164f0fbc7b94456ef8d5a33885319462c4c2c7680ea38",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-5f5349997518b7e12384",
+      "brand": "TOM FORD",
+      "style": "J1511-LCL046N-TRA",
+      "url": "https://www.tomfordfashion.com/en-us/suede-mick-sneaker%C2%A0/J1511-LCL046N-TRA.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL046N_TRA_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL046N_TRA_OS_A?w=1280",
+      "colorway": "ANTHRACITE + AMBER",
+      "colorSwatches": [
+        "#3f3836"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-mick-sneaker%C2%A0/J1511-LCL046N-TRA.html",
+      "contentHash": "d79f15d5328d026fc38e6bad35dafa63d99503cb23dc02a8598d71638658609b",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-4a50a00ba9b79ef39513",
+      "brand": "TOM FORD",
+      "style": "J1511-LCL456N-WNM",
+      "url": "https://www.tomfordfashion.com/en-us/suede-mick-sneakers/J1511-LCL456N-WNM.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL456N_WNM_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL456N_5W023_OS_A?w=1280",
+      "colorway": "OPTICAL WHITE/BLACK+AMBER",
+      "colorSwatches": [
+        "#e6e4d7"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-mick-sneakers/J1511-LCL456N-WNM.html",
+      "contentHash": "e46959050bd22194e3e96d15125fdc79f64a763bea1b3f15cf9cb12fba1d6cdf",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-d2172ad65f54be457a84",
+      "brand": "TOM FORD",
+      "style": "J1511-LCL046N-RRH",
+      "url": "https://www.tomfordfashion.com/en-us/suede-mick-sneaker%C2%A0/J1511-LCL046N-RRH.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL046N_RRH_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL046N_RRH_OS_A?w=1280",
+      "colorway": "SCARLET + AMBER",
+      "colorSwatches": [
+        "#b52433"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-mick-sneaker%C2%A0/J1511-LCL046N-RRH.html",
+      "contentHash": "27bd2eef16111c8c54dd7da7e56a9bd16dc66326ad8075bc6b3c241a2754b659",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-5c08f34766a07f339068",
+      "brand": "TOM FORD",
+      "style": "J1511-LCL046N-ERA",
+      "url": "https://www.tomfordfashion.com/en-us/suede-mick-sneaker%C2%A0/J1511-LCL046N-ERA.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL046N_ERA_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL046N_ERA_OS_A?w=1280",
+      "colorway": "DARK TAN + AMBER",
+      "colorSwatches": [
+        "#96704a"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-mick-sneaker%C2%A0/J1511-LCL046N-ERA.html",
+      "contentHash": "5062f963710d46ce44c524348f9da54f545ac5d9651e21552098faf46fce0597",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-4a6fc7af97b00a4fb1b4",
+      "brand": "TOM FORD",
+      "style": "J1511-LCL046N-GRD",
+      "url": "https://www.tomfordfashion.com/en-us/suede-mick-sneaker%C2%A0/J1511-LCL046N-GRD.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL046N_GRD_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1511-LCL046N_GRD_OS_A?w=1280",
+      "colorway": "EMERALD + AMBER",
+      "colorSwatches": [
+        "#2b6951"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-mick-sneaker%C2%A0/J1511-LCL046N-GRD.html",
+      "contentHash": "6d8cc8cefc389a6498b2fb2cbf3e36566de6d966ebb7e5da96f22a734bd8a51a",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-df851c546b54db7a75b8",
+      "brand": "TOM FORD",
+      "style": "J1595-ICL128N-REA",
+      "url": "https://www.tomfordfashion.com/en-us/perforated-suede-brook-sneaker/J1595-ICL128N-REA.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1595-ICL128N_REA_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1595-ICL128N_REA_OS_A?w=1280",
+      "colorway": "BERRY/BISCUIT + WHITE",
+      "colorSwatches": [
+        "#9c2352"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/perforated-suede-brook-sneaker/J1595-ICL128N-REA.html",
+      "contentHash": "1f3a301e3d202049c22740c06e32aa31acc9e9224f1494460ca7562f17b17838",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-e82cb551b69297455f98",
+      "brand": "TOM FORD",
+      "style": "J1595-ICL128N-EEL",
+      "url": "https://www.tomfordfashion.com/en-us/perforated-suede-brook-sneaker/J1595-ICL128N-EEL.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1595-ICL128N_EEL_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1595-ICL128N_EEL_OS_A?w=1280",
+      "colorway": "CAMEL/BISCUIT + WHITE",
+      "colorSwatches": [
+        "#c5a571"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/perforated-suede-brook-sneaker/J1595-ICL128N-EEL.html",
+      "contentHash": "6480563ab508190b908f5dcd9dd8a20bb125da6a7551e857e8e854821ba4c07e",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-66531dd1125b1f85dff5",
+      "brand": "TOM FORD",
+      "style": "J1595-ICL128N-URA",
+      "url": "https://www.tomfordfashion.com/en-us/perforated-suede-brook-sneaker/J1595-ICL128N-URA.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1595-ICL128N_URA_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1595-ICL128N_URA_OS_A?w=1280",
+      "colorway": "LIGHT BLUE/RUST + WHITE",
+      "colorSwatches": [
+        "#8bd2e3"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/perforated-suede-brook-sneaker/J1595-ICL128N-URA.html",
+      "contentHash": "28b911f324b7536c70043fc26bb7322ae0ccb41c577baa1695f7cd0648f2600f",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-364b588ea8e874290b4d",
+      "brand": "TOM FORD",
+      "style": "J1597-LCL532N-WWH",
+      "url": "https://www.tomfordfashion.com/en-us/grain-leather-and-suede-blake-sneaker/J1597-LCL532N-WWH.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1597-LCL532N_WWH_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1597-LCL532N_WWH_OS_A?w=1280",
+      "colorway": "WHITE + CREAM",
+      "colorSwatches": [
+        "#e8e5d4"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/grain-leather-and-suede-blake-sneaker/J1597-LCL532N-WWH.html",
+      "contentHash": "22c0678c553ee86507729ccbe40f55f446c7148a668c73608a3b163d72cc6739",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-9f30ccf33a0d1ca11c7d",
+      "brand": "TOM FORD",
+      "style": "J1597-LCL046N-NWB",
+      "url": "https://www.tomfordfashion.com/en-us/suede-blake-sneaker/J1597-LCL046N-NWB.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1597-LCL046N_NWB_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1597-LCL046N_NWB_OS_A?w=1280",
+      "colorway": "BLACK + CREAM",
+      "colorSwatches": [
+        "#232927"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-blake-sneaker/J1597-LCL046N-NWB.html",
+      "contentHash": "51954725c9be04e209a249a9ed9fa1c3465055c30efd3ea5903c81f46bcb2adf",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-aea2d4d031b49f8f192c",
+      "brand": "TOM FORD",
+      "style": "J1434-LCL215L-EWE",
+      "url": "https://www.tomfordfashion.com/en-us/nubuck-jude-sneaker/J1434-LCL215L-EWE.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1434-LCL215L_EWE_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1434-LCL215L_EWE_OS_A?w=1280",
+      "colorway": "OLIVE BROWN + CREAM",
+      "colorSwatches": [
+        "#6d543d"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/nubuck-jude-sneaker/J1434-LCL215L-EWE.html",
+      "contentHash": "0fefb082f66f8f84332f7e7d8c15b6816739e1b61f7936f770d66729f7037d25",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-03d7f7fb00a1d047d030",
+      "brand": "TOM FORD",
+      "style": "J1368-LCL123N-BGC8",
+      "url": "https://www.tomfordfashion.com/en-us/suede-jude-slip-on-sneaker/J1368-LCL123N-BGC8.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1368-LCL123N_BGC8_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1368-LCL123N_3NW02_OS_A?w=1280",
+      "colorway": "BLACK + CREAM",
+      "colorSwatches": [
+        "#242627"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-jude-slip-on-sneaker/J1368-LCL123N-BGC8.html",
+      "contentHash": "98d81ac811340f91a72cccb16ae794b762dd1afc3fef9c48f2b1b4476076e6d1",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-b4611c86885b37e0c289",
+      "brand": "TOM FORD",
+      "style": "J1379-LCL046N-WNO",
+      "url": "https://www.tomfordfashion.com/en-us/suede-jarvis-sneaker/J1379-LCL046N-WNO.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1379-LCL046N_WNO_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1379-LCL046N_5W027_OS_A?w=1280",
+      "colorway": "OPTICAL WHITE/BLACK + IVORY",
+      "colorSwatches": [
+        "#e7e6d5"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-jarvis-sneaker/J1379-LCL046N-WNO.html",
+      "contentHash": "f0140d6155277eb1b70e85d0aeba9bbc29c7967ed0df63ed98d6a79dab5fd832",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-eb99b8c7e1c5ed41b1f5",
+      "brand": "TOM FORD",
+      "style": "J1379-LCL535N-UWI",
+      "url": "https://www.tomfordfashion.com/en-us/suede-jarvis-sneaker/J1379-LCL535N-UWI.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1379-LCL535N_UWI_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1379-LCL535N_UWI_OS_A?w=1280",
+      "colorway": "COBALT/OFF WHITE + IVORY",
+      "colorSwatches": [
+        "#34759b"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-jarvis-sneaker/J1379-LCL535N-UWI.html",
+      "contentHash": "dceace1603d7d5e142628e75c5fbfb863f5738c26d41c2ab74508afe72e749ea",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-499b1b292dea4cbf0cf4",
+      "brand": "TOM FORD",
+      "style": "J1584-LCL215N-ERB",
+      "url": "https://www.tomfordfashion.com/en-us/nubuck-archer-sneaker/J1584-LCL215N-ERB.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1584-LCL215N_ERB_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1584-LCL215N_ERB_OS_A?w=1280",
+      "colorway": "OLIVE BROWN",
+      "colorSwatches": [
+        "#714c36"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/nubuck-archer-sneaker/J1584-LCL215N-ERB.html",
+      "contentHash": "c03f074a5f3e0cc177bd7db32cc2cdd14233ab5da1e546c1b7111080ace81c22",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-5176b5a02b66ecabd034",
+      "brand": "TOM FORD",
+      "style": "J1558-LCL457N-W028",
+      "url": "https://www.tomfordfashion.com/en-us/suede-archer-sneaker/J1558-LCL457N-W028.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1558-LCL457N_W028_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1558-LCL457N_5W028_OS_A?w=1280",
+      "colorway": "OPTICAL WHITE/WHITE + AMBER",
+      "colorSwatches": [
+        "#e3e3d9"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-archer-sneaker/J1558-LCL457N-W028.html",
+      "contentHash": "9227ce0f58eef17fbca63669435cec7981700f97c73088b89644484ac9d5d432",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-28b485eb90703f0cb0e4",
+      "brand": "TOM FORD",
+      "style": "J1584-LCL046N-URC",
+      "url": "https://www.tomfordfashion.com/en-us/archer-sneaker/J1584-LCL046N-URC.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1584-LCL046N_URC_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1584-LCL046N_URC_OS_A?w=1280",
+      "colorway": "MIDNIGHT BLUE + AMBER",
+      "colorSwatches": [
+        "#23364b"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/archer-sneaker/J1584-LCL046N-URC.html",
+      "contentHash": "563c75f2519d725a31c0c4435868efeb1c39618455eda97b43690a339cd850a0",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-4cb890ed6cd0ce5eaa37",
+      "brand": "TOM FORD",
+      "style": "J1584-LCL046N-GRD",
+      "url": "https://www.tomfordfashion.com/en-us/archer-sneaker/J1584-LCL046N-GRD.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1584-LCL046N_GRD_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1584-LCL046N_GRD_OS_A?w=1280",
+      "colorway": "EMERALD + AMBER",
+      "colorSwatches": [
+        "#2f7351"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/archer-sneaker/J1584-LCL046N-GRD.html",
+      "contentHash": "002eb3b3e713a0f8f420d2ffdda084aaa8fd1df9eb2e373f53fb99c0ab8eb060",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-d8b2a432f3f3c3e601c2",
+      "brand": "TOM FORD",
+      "style": "J1368-LCL123N-WWD",
+      "url": "https://www.tomfordfashion.com/en-us/suede-jude-slip-on-sneaker/J1368-LCL123N-WWD.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1368-LCL123N_WWD_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1368-LCL123N_3WW03_OS_A?w=1280",
+      "colorway": "MARBLE + CREAM",
+      "colorSwatches": [
+        "#e2e3d5"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-jude-slip-on-sneaker/J1368-LCL123N-WWD.html",
+      "contentHash": "d77a4ca07ab2ece8a06df14d3b4292293662b7229575b865e56d3df3b861a461",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-18197ccfb54dc400a7ca",
+      "brand": "TOM FORD",
+      "style": "J1368-ICL124N-EWD",
+      "url": "https://www.tomfordfashion.com/en-us/perforated-suede-jude-slip-on-sneaker/J1368-ICL124N-EWD.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1368-ICL124N_EWD_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1368-ICL124N_EWD_OS_A?w=1280",
+      "colorway": "WALNUT + CREAM",
+      "colorSwatches": [
+        "#6a3c2e"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/perforated-suede-jude-slip-on-sneaker/J1368-ICL124N-EWD.html",
+      "contentHash": "4630091708bbedfa3a244f51b3479167e5795e455ff21a1aed3476dfe8b1f46f",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-fb285b2c4feb9fc844e9",
+      "brand": "TOM FORD",
+      "style": "J1368-LCL123N-EWG",
+      "url": "https://www.tomfordfashion.com/en-us/suede-jude-slip-on-sneaker/J1368-LCL123N-EWG.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1368-LCL123N_EWG_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1368-LCL123N_EWG_OS_A?w=1280",
+      "colorway": "WHISKY + CREAM",
+      "colorSwatches": [
+        "#9b684b"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-jude-slip-on-sneaker/J1368-LCL123N-EWG.html",
+      "contentHash": "7032bb5a9096b4599b814fab8b874639d36ac9e8c77cf382b548424587d6d84e",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-f4fdb2703a4f5499c959",
+      "brand": "TOM FORD",
+      "style": "J1368-FCA053N-EJC",
+      "url": "https://www.tomfordfashion.com/en-us/leopard-print-hair-calf-jude-slip-on-sneaker/J1368-FCA053N-EJC.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1368-FCA053N_EJC_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1368-FCA053N_EJC_OS_A?w=1280",
+      "colorway": "BROWN/BEIGE + CREAM",
+      "colorSwatches": [
+        "#96794d"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/leopard-print-hair-calf-jude-slip-on-sneaker/J1368-FCA053N-EJC.html",
+      "contentHash": "0785b0aea67e6ded72f38e14b9d30ad4640621518c067653d9cf53a00b339e47",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-e5b6153926dc934c666e",
+      "brand": "TOM FORD",
+      "style": "J1591-LCL403C-BGC8",
+      "url": "https://www.tomfordfashion.com/en-us/printed-croc-warwick-sneaker/J1591-LCL403C-BGC8.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1591-LCL403C_BGC8_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1591-LCL403C_3NW02_OS_A?w=1280",
+      "colorway": "BLACK + CREAM",
+      "colorSwatches": [
+        "#323333"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/printed-croc-warwick-sneaker/J1591-LCL403C-BGC8.html",
+      "contentHash": "97bf06d8d64b5ae0cd858cff149c6ee809b047a91afaf0b896842536d86caceb",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-3c09374a9742dd5d16f7",
+      "brand": "TOM FORD",
+      "style": "W3306-LCL068N-BDM4",
+      "url": "https://www.tomfordfashion.com/en-us/suede-leather-jarvis-sneaker/W3306-LCL068N-BDM4.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/W3306-LCL068N_BDM4_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/W3306-LCL068N_1W008_OS_A?w=1280",
+      "colorway": "OPTICAL WHITE",
+      "colorSwatches": [
+        "#e7e6de"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-leather-jarvis-sneaker/W3306-LCL068N-BDM4.html",
+      "contentHash": "ef2f0582dd5809ef4a549740d2a535060deeb16a4f41ffc13b20dca0c182a5fd",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-ef8f68fba37d6a341883",
+      "brand": "TOM FORD",
+      "style": "W3306-LCL068N-BGN6",
+      "url": "https://www.tomfordfashion.com/en-us/suede-leather-jarvis-sneaker/W3306-LCL068N-BGN6.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/W3306-LCL068N_BGN6_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/W3306-LCL068N_3WN09_OS_A?w=1280",
+      "colorway": "OPTICAL WHITE + BLACK",
+      "colorSwatches": [
+        "#e3e4de"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/suede-leather-jarvis-sneaker/W3306-LCL068N-BGN6.html",
+      "contentHash": "e3236d606466a44f3b6dd0201c08eaed4c1fdbc0907bca0cd0ef5836251f3cf2",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    },
+    {
+      "id": "arrival-013d3adfec3bd4293a95",
+      "brand": "TOM FORD",
+      "style": "J1507-LCL460N-BGC8",
+      "url": "https://www.tomfordfashion.com/en-us/soft-grain-leather-warwick-sneaker/J1507-LCL460N-BGC8.html",
+      "image": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL460N_BGC8_APPENDGRID",
+      "presentationImage": "https://cdn.media.amplience.net/i/tom_ford/J1507-LCL460N_3NW02_OS_A?w=1280",
+      "colorway": "BLACK + CREAM",
+      "colorSwatches": [
+        "#2b2e2e"
+      ],
+      "sourceUrl": "https://www.tomfordfashion.com/en-us/soft-grain-leather-warwick-sneaker/J1507-LCL460N-BGC8.html",
+      "contentHash": "acc53b57ff92666745e2452d76876c5884113ecf5a9bca89011cd80dd84f234a",
+      "verifiedAt": "2026-11-03T01:28:01.940786+00:00",
+      "verified": true,
+      "method": "official-product-photo-caption"
+    }
+  ]
+}

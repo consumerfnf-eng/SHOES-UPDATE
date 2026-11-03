@@ -7,13 +7,12 @@ import {
 } from '../public/assets/catalog-view.mjs';
 
 const TODAY = '2026-10-29';
-const retail = (over = {}) => ({
-  id: 'r1', overlay: true, source: 'retail-29cm', brand: 'PUMA', name: 'Speedcat',
-  // A card with no photograph is no longer published, so every fixture that
-  // expects to appear in the grid carries one.
-  image: 'https://example.org/speedcat.jpg',
-  listedAt: '2026-10-01T00:00:00+09:00', category: 'sneaker', footwearTypes: ['sneaker'], ...over,
-});
+// Synthetic first-release proof for tests of filtering, never deployed.
+const retail = (over = {}) => {
+ const p={id:'r1',overlay:true,source:'retail-29cm',brand:'PUMA',name:'Speedcat',style:'FA-123',url:'https://retailer.example/speedcat-fa123',image:'https://example.org/speedcat.jpg',listedAt:'2026-10-01T00:00:00+09:00',category:'sneaker',footwearTypes:['sneaker'],...over};
+ if(!Object.hasOwn(over,'releaseEvidence'))p.releaseEvidence={verified:true,kind:'first-release',firstRelease:true,authority:'brand-official',date:String(p.listedAt).slice(0,10),brand:p.brand,style:p.style,productUrl:p.url,url:'https://brand.example/news/fa123-first-release'};
+ return p;
+};
 const article = (over = {}) => ({
   id: 'n1', overlay: true, source: 'newsletter-hypebeast', brand: 'Nike', name: 'Air Max 95',
   image: 'https://example.org/am95.jpg',
@@ -38,7 +37,8 @@ test('an overlay record is recognised and classified by its source', () => {
 test('the window date is the one the source actually stated', () => {
   assert.equal(overlayWindowDay(retail()), '2026-10-01');
   assert.equal(overlayWindowDay(article()), '2026-10-20');
-  assert.equal(overlayWindowDay(retail({ listedAt: '', firstDetectedAsNewAt: '2026-10-05T00:00:00+09:00' })), '2026-10-05');
+  assert.equal(overlayWindowDay(retail({ listedAt: '', firstDetectedAsNewAt: '2026-10-05T00:00:00+09:00',releaseEvidence:undefined })), '2026-10-05');
+  assert.equal(overlayReleaseState(retail({listedAt:'2026-10-01',releaseEvidence:undefined}),TODAY),null,'Listing date is not release proof');
   assert.equal(overlayWindowDay(retail({ listedAt: '' })), '');
 });
 
@@ -82,7 +82,7 @@ test('the retailer sub-filter narrows the retail tab to one source', () => {
   assert.deepEqual(filterProducts(items, state({ source: 'retail', retailer: 'retail-ssense' }), TODAY).map(p => p.id), ['b']);
 });
 
-test('retail is ordered newest first by the date each source stated', () => {
+test('retail is ordered newest first by the verified first-release date', () => {
   const items = [
     retail({ id: 'old', listedAt: '2026-08-01T00:00:00+09:00' }),
     retail({ id: 'new', listedAt: '2026-10-20T00:00:00+09:00' }),
@@ -92,8 +92,8 @@ test('retail is ordered newest first by the date each source stated', () => {
 });
 
 test('the same model from two retailers is one card, kept as two colour chips', () => {
-  const a = retail({ id: 'a', source: 'retail-29cm', colorway: 'Black' });
-  const b = retail({ id: 'b', source: 'retail-ssense', colorway: 'White' });
+  const a = retail({ id: 'a', source: 'retail-29cm', colorway: 'Black',style:'FA123-BLACK' });
+  const b = retail({ id: 'b', source: 'retail-ssense', colorway: 'White',style:'FA123-WHITE' });
   assert.equal(variantGroupKey(a), variantGroupKey(b));
   assert.deepEqual(uniqueColorVariants([a, b], 'a').map(p => p.id), ['a', 'b']);
 });

@@ -207,6 +207,11 @@ def drop_already_official(items, official_keys, status=None):
 
 # --- brands that must not appear at all -----------------------------------
 
+class SiteExcludedKeys(set):
+    """A production deny set that also carries the user's explicit site scope."""
+    allowed = None
+
+
 def excluded_brand_keys():
     """Every spelling of a brand that must not publish, folded.
 
@@ -223,7 +228,11 @@ def excluded_brand_keys():
                 continue
             keys.add(_fold(spelling))
             keys.add(_fold(canonical_brand(spelling)))
-    return {k for k in keys if k}
+    result = SiteExcludedKeys(k for k in keys if k)
+    groups = read_json(os.path.join(ROOT, 'config', 'site-brand-groups.json'), {})
+    if groups.get('groups'):
+        result.allowed = {_fold(canonical_brand(name)) for group in groups['groups'] for name in group['priority']}
+    return result
 
 
 def drop_excluded_brands(items, keys, status=None):
@@ -233,6 +242,8 @@ def drop_excluded_brands(items, keys, status=None):
         status['excludedBrandDropped'] = 0
         return items
     def excluded(item):
+        if getattr(keys, 'allowed', None) is not None and _fold(canonical_brand(item.get('brand') or '')) not in keys.allowed:
+            return True
         return any(_fold(value) in keys for value in
                    (item.get('brand'), item.get('brandKo'), item.get('brandAsListed'),
                     canonical_brand(item.get('brand') or '')) if value)

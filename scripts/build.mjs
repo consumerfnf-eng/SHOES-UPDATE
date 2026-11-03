@@ -1,3 +1,4 @@
+import {isSiteBrandAllowed,canonicalSiteBrand} from '../public/assets/site-brand-policy.mjs';
 import fs from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import path from 'node:path';
@@ -20,7 +21,8 @@ try{await fs.access(new URL('public/data/catalog-source.json',root));throw Error
 try {
   const boards = await fs.readFile(new URL('data/rank-boards.json', root), 'utf8');
   const parsed = JSON.parse(boards);
-  const published = {schemaVersion: parsed.schemaVersion, checkedAt: parsed.checkedAt, boards: parsed.boards};
+  const scopedBoards=parsed.boards.map(board=>({...board,items:(board.items||[]).filter(item=>isSiteBrandAllowed(item.brand)).map(item=>({...item,brand:canonicalSiteBrand(item.brand)})),departed:(board.departed||[]).filter(item=>isSiteBrandAllowed(item.brand))})).filter(board=>board.items.length);
+  const published = {schemaVersion: parsed.schemaVersion, checkedAt: parsed.checkedAt, boards: scopedBoards};
   await fs.writeFile(new URL('public/data/rank-boards.json', root), JSON.stringify(published) + '\n');
   console.log(`Published ${parsed.boards.filter(b => b.items?.length).length} retailer ranking boards.`);
 } catch (error) {
