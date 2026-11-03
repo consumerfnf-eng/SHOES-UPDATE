@@ -5,7 +5,7 @@ import {composeSnapshot} from '../scripts/build-catwalk-snapshot.mjs';
 import {validateProposalConfig} from '../scripts/build-season-proposals.mjs';
 import {proposalAsset,proposalsForSeason} from '../public/assets/research-brief.mjs';
 import {proposalSheet,BOARD_SIZE} from '../public/assets/proposal-template.mjs';
-import {brandPriceRows,comparisonBrand,mlbBenchmark,PRICE_BRANDS,priceCounts,priceComparisonMarkup} from '../public/assets/brand-prices.mjs';
+import {brandPriceRows,comparisonBrand,mlbBenchmark,PRICE_BRANDS,priceComparisonMarkup} from '../public/assets/brand-prices.mjs';
 import {priceKrw} from '../public/assets/analysis.mjs';
 test('CATWALK exclusions persist across collections and runway precedes feed stably',()=>{
  assert.equal(isAllowedFeedLook({collection:'fashion-feed',hashtags:['#HeeledPump']}),false);
@@ -33,15 +33,15 @@ test('price comparison includes only nine requested brands, omits unpriced rows 
  assert.equal(priceKrw({priceLabel:'USD 90'}),124200);assert.equal(priceKrw({priceLabel:'30% OFF USD 140'}),193200);
 });
 
-test('price bands have exclusive boundaries and median bars use a common MLB baseline without coverage ratios',()=>{
- assert.deepEqual(priceCounts([99000,100000,149000,150000,199000,200000,299000,300000]),[1,2,2,2,1]);
+test('median bars sort from cheapest to highest with the MLB baseline and no count table',()=>{
  const benchmark=mlbBenchmark({products:[{style:'a',listPrice:99000},{style:'b',listPrice:149000},{style:'c',listPrice:199000}]});
- const rows=brandPriceRows([{brand:'FILA',name:'Low',priceLabel:'99,000원'},{brand:'Nike',name:'High',priceLabel:'199,000원'}],benchmark);
+ const rows=brandPriceRows([{brand:'Nike',name:'High',priceLabel:'199,000원'},{brand:'FILA',name:'Low',priceLabel:'99,000원'}],benchmark);
+ assert.deepEqual(rows.map(r=>r.name),['FILA','Nike']);
  const html=priceComparisonMarkup(rows,benchmark);
  assert(html.includes('MLB보다 50,000원 저렴'));assert(html.includes('MLB보다 50,000원 높음'));assert(html.includes('MLB 중앙값 149,000원'));
  assert.equal([...html.matchAll(/class="price-mlb-line" style="left:74.500%"/g)].length,3);
- assert(html.includes('width:49.500%'));assert(html.includes('width:99.500%'));assert(html.includes('가격대별 상품 개수'));
+ assert(html.includes('width:49.500%'));assert(html.includes('width:99.500%'));assert(!html.includes('가격대별 상품 개수'));assert(!html.includes('<table'));
  assert(!/가격 확인 모델|전체 모델|가격대 내 모델|지수 100|\d+\s*\/\s*\d+개 모델/.test(html));
- assert(html.includes('FILA 10만원 미만 1개'));assert(html.includes('MLB 15–20만원 1개'));
+ assert(html.indexOf('data-price-brand="FILA"')<html.indexOf('data-price-reference="MLB"'));assert(html.indexOf('data-price-reference="MLB"')<html.indexOf('data-price-brand="Nike"'));
  assert(!priceComparisonMarkup(rows,null).includes('price-mlb-line'));
 });

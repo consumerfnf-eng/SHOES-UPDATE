@@ -425,14 +425,17 @@ function renderRankBoards(){
   host.innerHTML=boards.map(board=>{
     const moved=board.items.filter(i=>i.movement==='up'||i.movement==='down').length;
     const fresh=board.items.filter(i=>i.movement==='new').length;
+    const is29cm=board.id==='29cm-sneakers-best';
+    const concise=is29cm||board.id==='ssense-sneakers-trending';
+    const basis=is29cm?String(board.basis||'').replace(/\s*·\s*원문 URL[\s\S]*$/,''):board.basis;
     const summary=board.comparedWith
       ? `${dateText(board.comparedWith)} 집계 대비 · 신규 ${fresh}개 · 순위 변동 ${moved}개${board.departed?.length?` · 이탈 ${board.departed.length}개`:''}`
-      : '첫 집계입니다. 다음 주부터 순위 변동을 표시합니다.';
+      : is29cm?'':'첫 집계입니다. 다음 주부터 순위 변동을 표시합니다.';
     return `<article class="rank-board">
       <header class="rank-board-head">
         <div><h3>${esc(board.label)} <span class="rank-size">원문 1–${board.items.length}위 · 브랜드 필터와 별도</span></h3>
-        <p class="muted">${esc(board.basis)} · ${esc(dateText(board.checkedAt,true))} 확인${board.staleSince?' · 이번 회차 수집 실패, 직전 집계를 표시합니다':''}</p>
-        <p class="muted">${esc(summary)}</p></div>
+        <p class="muted">${esc(basis)}${concise?'':` · ${esc(dateText(board.checkedAt,true))} 확인${board.staleSince?' · 이번 회차 수집 실패, 직전 집계를 표시합니다':''}`}</p>
+        ${summary?`<p class="muted">${esc(summary)}</p>`:''}</div>
         <a class="text-button" href="${esc(safeUrl(board.sourceUrl))}" target="_blank" rel="noopener noreferrer">원본 랭킹 ↗</a>
       </header>
       <ol class="rank-list">${board.items.map(item=>`<li class="rank-item">

@@ -18,7 +18,7 @@ try{
  const reports=[['a','Sneaker Materials Forecast S/S 27'],['b','Key Silhouettes: Sneakers A/W 27/28'],['c','Key Silhouettes: Sneakers S/S 28'],['x','Footwear Forecast S/S 27']].map(([id,title])=>({id,title,url:'https://example.org/'+id,cover:'/fake.svg',pages:['/fake.svg','/fake.svg'],headings:['Fashion silhouette: the ballet sneaker','Core updates: the dad sneaker']}));
  await context.route('**/data/forecast.json',r=>json(r,{schemaVersion:1,checkedAt:'2026-11-03',reports}));
  await context.route('**/fake.svg',r=>r.fulfill({contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1400"><rect width="2200" height="1400" fill="white"/></svg>'}));
- await context.route('**/data/rank-boards.json',r=>json(r,{schemaVersion:1,boards:['Musinsa','29CM'].map(id=>({id,label:id,basis:'원문 기준',sourceUrl:'https://example.org',checkedAt:'2026-11-03',items:Array.from({length:15},(_,i)=>({rank:i+1,key:String(i),brand:'Market reference',name:'Shoe '+(i+1),url:'https://example.org',image:'/fake.svg'}))}))}));
+ await context.route('**/data/rank-boards.json',r=>json(r,{schemaVersion:1,boards:[['musinsa-sneaker-ranking','Musinsa'],['29cm-sneakers-best','29CM'],['ssense-sneakers-trending','SSENSE']].map(([id,label])=>({id,label,basis:id==='29cm-sneakers-best'?'여성슈즈 > 스니커즈 · 실시간 인기순(POPULARITY) · 원문 URL 성별 F·연령 30 필터 · 판매수량 순위와 구분':'원문 기준',sourceUrl:'https://example.org',checkedAt:'2026-11-03',staleSince:id==='ssense-sneakers-trending'?'2026-10-30':null,items:Array.from({length:15},(_,i)=>({rank:i+1,key:String(i),brand:'Market reference',name:'Shoe '+(i+1),url:'https://example.org',image:'/fake.svg'}))}))}));
  const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(origin);
  await page.locator('[data-source="retail"]').click();await page.locator('#retailer-tabs').waitFor({state:'visible'});
  await page.locator('[data-source="forecast"]').click();await page.locator('.forecast-card').waitFor();
@@ -30,7 +30,9 @@ try{
  await page.locator('[data-report="b"]').click();assert.equal(await page.locator('#forecast-viewer').isVisible(),true);
  assert.equal(await page.locator('#forecast-position').textContent(),'1 / 2');await page.locator('#forecast-next').click();assert.equal(await page.locator('#forecast-position').textContent(),'2 / 2');
  assert.equal(await page.locator('#forecast-original').getAttribute('href'),'https://example.org/b');await page.keyboard.press('Escape');assert.equal(await page.locator('#forecast-viewer').isVisible(),false);
- await page.locator('[data-source="analysis"]').click();await page.locator('.rank-board').first().waitFor();assert.equal(await page.locator('.rank-item').count(),30,'Both native top-15 boards remain complete across brand scopes');
+ await page.locator('[data-source="analysis"]').click();await page.locator('.rank-board').first().waitFor();assert.equal(await page.locator('.rank-item').count(),45,'All native top-15 boards remain complete across brand scopes');
+ const header29=await page.locator('.rank-board').filter({hasText:'29CM'}).locator('header').innerText(),headerSsense=await page.locator('.rank-board').filter({hasText:'SSENSE'}).locator('header').innerText();
+ assert(header29.includes('실시간 인기순'));assert(!/원문 URL|성별 F|연령 30|판매수량 순위와 구분|첫 집계|확인/.test(header29));assert(!/확인|수집 실패|직전 집계/.test(headerSsense));assert((await page.locator('.rank-board').filter({hasText:'Musinsa'}).locator('header').innerText()).includes('확인'));
  await page.locator('[data-source="forecast"]').click();await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
  assert.deepEqual(errors,[]);console.log('PASS: Forecast season/title/heading filters, high-resolution viewer navigation, source link, Escape/focus, complete retailer ranks and mobile width');
 }finally{await browser?.close();await new Promise(r=>server.close(r));}
