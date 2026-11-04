@@ -503,7 +503,7 @@ export function unifyVariantGroups(products) {
   for (const product of products || []) {
     // Reviewed China product-code families distinguish repeated marketing
     // names, while the gender/material codes in a family share one card.
-    if(product.brand==='FILA China'&&product.modelGroupId?.startsWith('filachina|')||product.brand==='Alo'&&/^alo\|A\d{4}U$/.test(product.modelGroupId||'')||product.brand==='K-SWISS'&&product.modelGroupId?.startsWith('kswiss|')){
+    if(product.brand==='FILA China'&&product.modelGroupId?.startsWith('filachina|')||product.brand==='Alo'&&/^alo\|A\d{4}U$/.test(product.modelGroupId||'')||product.brand==='K-SWISS'&&product.modelGroupId?.startsWith('kswiss|')||product.brand==='Converse'&&product.modelGroupId?.startsWith('converse|')||product.brand==='ASICS'&&product.modelGroupId?.startsWith('asics|')||product.brand==='PUMA'&&product.modelGroupId?.startsWith('puma|')||product.brand==='adidas'&&product.modelGroupId?.startsWith('adidas|')||product.brand==='New Balance'&&product.modelGroupId?.startsWith('newbalance|')||product.brand==='COLUMBIA'&&product.modelGroupId?.startsWith('columbia|')||['DESCENTE','Le Coq Sportif','Umbro'].includes(product.brand)&&product.modelGroupId?.startsWith('dkon|')){
       const name='model|'+product.modelGroupId;rows.push({product,name,code:''});add(name);continue;
     }
     // An article is one card by default and is keyed on itself; joining those

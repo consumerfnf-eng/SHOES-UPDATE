@@ -1,14 +1,21 @@
 import fs from 'node:fs/promises';
+import {reviewScopedNew} from './review-scoped-new.mjs';
+import {dedupeScopedPrepared} from './scoped-prepared.mjs';
 import {curateCatalog} from './curation.mjs';
 import {productPresentation} from './product-presentation.mjs';
 import {officialTabScope} from '../public/assets/official-tab-scope.mjs';
 const read=async file=>JSON.parse(await fs.readFile(file,'utf8'));
 const newFeeds=await read('data/official-new-feeds.json').catch(e=>{if(e.code==='ENOENT')return{products:[]};throw e;});
-const raw=[...(await read('data/sports-casual-new.json')).products,...(await read('data/fila-china-new.json')).products,...newFeeds.products];
-const reviews=await read('data/product-presentation.json'),filaRaw=new Map(raw.filter(p=>['FILA China','Alo'].includes(p.brand)).map(p=>[p.id,p]));
-const curated=curateCatalog(raw,{now:new Date()}),today=new Date(Date.now()+9*3600000).toISOString().slice(0,10);
+const puma=await read('data/puma-korea-new.json').catch(e=>{if(e.code==='ENOENT')return{products:[]};throw e;});
+const rendered=await read('data/rendered-official-new.json').catch(e=>{if(e.code==='ENOENT')return{products:[]};throw e;});
+const extra=[];for(const file of ['data/asics-complete-new.json','data/ash-complete-new.json','data/adidas-complete-new.json','data/newbalance-complete-new.json','data/converse-complete-new.json','data/scoped-photo-repairs.json','data/columbia-new.json','data/dkon-new.json']){const d=await read(file).catch(e=>{if(e.code==='ENOENT')return{products:[]};throw e;});extra.push(...d.products);}
+const raw=[...extra,...puma.products,...rendered.products,...(await read('data/sports-casual-new.json')).products,...(await read('data/fila-china-new.json')).products,...newFeeds.products];
+const reviews=await read('data/product-presentation.json'),filaRaw=new Map(raw.filter(p=>['FILA China','Alo','PUMA','ASICS','ASH','adidas','New Balance','Converse','COLUMBIA','DESCENTE','Le Coq Sportif','Umbro'].includes(p.brand)).map(p=>[p.id,p]));
+const scoped=reviewScopedNew(raw);
+await fs.writeFile('reports/scoped-new-primary-review.json',JSON.stringify({held:scoped.held,repaired:scoped.repaired},null,2));
+const curated=curateCatalog(scoped.products,{now:new Date()}),today=new Date(Date.now()+9*3600000).toISOString().slice(0,10);
 const aloPhotos=await read('data/alo-product-presentation.json').catch(e=>{if(e.code==='ENOENT')return{products:[]};throw e;});
-const products=curated.snapshot.products.filter(p=>officialTabScope(p,today)).map(p=>{const row=productPresentation(p,reviews);if(row&&filaRaw.has(p.id))row.modelGroupId=filaRaw.get(p.id).modelGroup;const photo=row&&aloPhotos.products.find(r=>r.approved&&r.brand===row.brand&&r.style===row.style&&r.url===row.url&&r.image===row.image);if(photo?.frame)row.presentation.frame=photo.frame;return row;}).filter(Boolean);
-await fs.mkdir('reports',{recursive:true});await fs.writeFile('reports/sports-casual-prepared.json',JSON.stringify({products}));
+const products=curated.snapshot.products.filter(p=>officialTabScope(p,today)).map(p=>{const row=productPresentation(p,reviews);if(row&&filaRaw.has(p.id))row.modelGroupId=filaRaw.get(p.id).modelGroup||filaRaw.get(p.id).modelGroupId;const photo=row&&aloPhotos.products.find(r=>r.approved&&r.brand===row.brand&&r.style===row.style&&r.url===row.url&&r.image===row.image);if(photo?.frame)row.presentation.frame=photo.frame;if(row)row.scopedNewReview={verified:true,brand:row.brand,style:row.style,url:row.url,image:row.presentation.image,checkedAt:new Date().toISOString()};return row;}).filter(Boolean);
+await fs.mkdir('reports',{recursive:true});await fs.writeFile('reports/sports-casual-prepared.json',JSON.stringify({products:dedupeScopedPrepared(products)}));
 await fs.writeFile('reports/sports-casual-collection-review.json',JSON.stringify(curated.review,null,2));
 console.log('Prepared '+products.length+' SPORTS/CASUAL photo bindings; LUX untouched');

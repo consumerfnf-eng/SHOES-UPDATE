@@ -1,0 +1,22 @@
+import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {pacedOfficialFetch} from './official-reader.mjs';
+import {siteBrandGroup} from '../public/assets/site-brand-policy.mjs';
+const file=process.argv[2]||'reports/sports-casual-prepared.json';
+const {products}=JSON.parse(await fs.readFile(file,'utf8'));
+if(!products.every(p=>['SPORTS','CASUAL'].includes(siteBrandGroup(p.brand))))throw Error('Scoped photo download cannot contain LUX');
+const cache=JSON.parse(await fs.readFile('data/photo-cache.json','utf8'));
+const images={},errors=[],urls=[...new Set(products.map(p=>p.presentation.image))];
+const read=pacedOfficialFetch({intervalMs:500});let cursor=0;
+await Promise.all(Array.from({length:4},async()=>{while(cursor<urls.length){const url=urls[cursor++],old=cache.images[url];
+ if(old?.path&&await fs.stat('public'+old.path).catch(()=>false))continue;
+ try{const response=await read(url);if(!response.ok)throw Error('HTTP '+response.status);
+  const ext={'image/jpeg':'jpg','image/png':'png','image/webp':'webp'}[response.headers.get('content-type')?.split(';')[0]];
+  if(!ext)throw Error('Not a supported product image');
+  const bytes=Buffer.from(await response.arrayBuffer());if(bytes.length>20*1024*1024)throw Error('Image exceeds size limit');
+  const path='/images/'+createHash('sha256').update(bytes).digest('hex')+'.'+ext;
+  await fs.writeFile('public'+path,bytes);images[url]={path,bytes:bytes.length};
+ }catch(e){errors.push({url,error:e.message});}
+}}));
+await fs.writeFile('reports/sports-casual-photo-downloads.json',JSON.stringify({images,errors}));
+console.log(JSON.stringify({downloaded:Object.keys(images).length,errors:errors.length}));

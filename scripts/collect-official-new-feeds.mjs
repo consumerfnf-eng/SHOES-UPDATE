@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';import {createHash} from 'node:crypto';import {pathToFileURL} from 'node:url';
 import {readShopifyInventory} from './collect-official-inventory.mjs';import {shopifyRows} from './assemble-official-expansion.mjs';
+import {pacedOfficialFetch} from './official-reader.mjs';
 import {SITE_BRAND_GROUPS} from '../public/assets/site-brand-policy.mjs';import {isNewListing} from './new-arrivals.mjs';
 const hash=s=>createHash('sha256').update(s).digest('hex'),plain=s=>String(s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
 export function aloNewRows(feed,{at,today}){
@@ -12,8 +13,11 @@ export function aloNewRows(feed,{at,today}){
   const code=new URL(image).pathname.split('/').at(-1).match(/^(A\d{4}U)_(\d{2,5})_/i),model=code?.[1]?.toUpperCase(),colourCode=code?.[2];
   if(!model||!variants.every(v=>!v.sku||v.sku.toUpperCase().startsWith(model)))continue;
   const style=model+colourCode;if(!variants.every(v=>!v.sku||v.sku.toUpperCase().startsWith(style)))continue;
+  // Official descriptions confirm the same 2.5-inch Aspen construction,
+  // toggle and sole; A1172U changes the exterior from suede to faux fur.
+  const designModel=model==='A1172U'&&/^ALO Aspen Lace-Up Boot - /i.test(p.title)&&/2\.5.{0,8}platform wedge/i.test(description)&&/adjustable metal toggle/i.test(description)?'A1128U':model;
   const url=feed.root+'/products/'+p.handle,listing=pageByIndex[index],proof={verified:true,brand:'Alo',style,verifiedAt:at,verificationMethod:'official-new-listing-sku-image',contentHash:listing.hash};
-  const row={id:'alo-new-'+p.id,brand:'Alo',name:p.title,style,manufacturerStyle:style,productVariantId:String(p.id),modelGroup:'alo|'+model,modelGroupId:'alo|'+model,url,image,description,officialCategory:type,productType:isBoot?'platform-shoe':/loafer/i.test(p.title)?'loafer':/(?:Slippers|Slides)$/i.test(type)?'slipper':'sneaker',colorway:colours[0],colors:[colours[0]],gender:'Unisex',country:'KR',priceLabel:'KRW '+variants[0].price,productVerifiedAt:at,productEvidenceUrl:listing.url,firstSeen:at,sourceSignals:[],sizesCollapsed:variants.length,
+  const row={id:'alo-new-'+p.id,brand:'Alo',name:p.title,style,manufacturerStyle:style,productVariantId:String(p.id),modelGroup:'alo|'+designModel,modelGroupId:'alo|'+designModel,url,image,description,officialCategory:type,productType:isBoot?'platform-shoe':/loafer/i.test(p.title)?'loafer':/(?:Slippers|Slides)$/i.test(type)?'slipper':'sneaker',colorway:colours[0],colors:[colours[0]],gender:'Unisex',country:'KR',priceLabel:'KRW '+variants[0].price,productVerifiedAt:at,productEvidenceUrl:listing.url,firstSeen:at,sourceSignals:[],sizesCollapsed:variants.length,
    arrivalEvidence:{verified:true,brand:'Alo',style,productUrl:url,kind:'new-arrivals-listing',url:listing.url,verifiedAt:at,excerpt:p.title,contentHash:listing.hash},officialProductEvidence:{...proof,url},officialImageEvidence:{...proof,url:image,sourceUrl:listing.url},typeEvidence:{field:'product_type and body_html',excerpt:type+' — '+description,url:listing.url,contentHash:listing.hash}};
   if(isBoot)row.footwearReview={approved:true,brand:'Alo',style,url,type:'platform-boot',platform:true,checkedAt:at,method:'official-new-collection-platform-description'};
   rows.push(row);
@@ -30,6 +34,8 @@ export function satisfyNewRows(feed,{at}){
  });
 }
 export async function collectOfficialNewFeeds({sources,now=new Date(),read,onProgress=console.log}={}){
+ const fetchOfficial=pacedOfficialFetch();
+ read??=async url=>{const r=await fetchOfficial(url,{headers:{Accept:'application/json','User-Agent':'Mozilla/5.0'}});if(!r.ok)throw Error('HTTP '+r.status);return r.text();};
  sources??=JSON.parse(await fs.readFile('config/daily_sources.json','utf8'));
  const allowed=SITE_BRAND_GROUPS.filter(g=>g.name!=='LUX').flatMap(g=>g.priority),jobs=[];
  for(const brand of allowed){const seen=new Set();for(const s of sources[brand]||[]){const u=new URL(s.url),match=u.pathname.match(/^(.*?)\/collections\/([^/]+)/);if(!match||!isNewListing(s.url)||/clothing/.test(u.pathname)||brand==='Alo'&&!match[1].includes('ko-kr'))continue;const root=u.origin+match[1]+'/collections/'+match[2];if(seen.has(root))continue;seen.add(root);jobs.push({brand,root,productRoot:u.origin+match[1]});}}

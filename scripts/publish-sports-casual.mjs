@@ -13,18 +13,21 @@ import {encodeCatalog} from '../public/assets/catalog-wire.mjs';
 import {buildCatalogChunks} from './build-catalog-chunks.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {buildStyleTrendBoard} from './style-trend-board.mjs';
-import {curateProduct} from './curation.mjs';
+import {curateProduct,shiftMonth} from './curation.mjs';
+import {reviewScopedNew} from './review-scoped-new.mjs';
+import {dedupeScopedPrepared,bindPreparedRaw} from './scoped-prepared.mjs';
 
 export const luxDigest=products=>createHash('sha256').update(JSON.stringify(products.filter(p=>siteBrandGroup(p.brand)==='LUX'))).digest('hex');
 const permitted=p=>['SPORTS','CASUAL'].includes(siteBrandGroup(p.brand));
 export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date().toISOString(),brandPolicy=[]}={}){
  assert(products.every(permitted)&&raw.every(permitted),'SPORTS/CASUAL updates cannot contain LUX or excluded brands');
+ const freshReviewed=p=>{const r=p.scopedNewReview;return r?.verified===true&&r.brand===p.brand&&r.style===p.style&&r.url===p.url&&r.image===(p.presentation?.image||p.image)&&Number.isFinite(Date.parse(r.checkedAt));};
  const before={published:luxDigest(catalog.products),source:luxDigest(source.products)};
  const snapshot=structuredClone(catalog),nextSource=structuredClone(source),added=[],duplicates=[],held=[],refreshed=[];
  const ids=new Set(snapshot.products.map(p=>p.id));
  for(const input of products){
   const existingId=snapshot.products.find(p=>p.id===input.id);
-  if(existingId){assert.equal(existingId.brand,input.brand,'A scoped update cannot reuse another brand ID');if(sourceMatches(existingId,'brand',today))continue;}
+  if(existingId){assert.equal(existingId.brand,input.brand,'A scoped update cannot reuse another brand ID');if(sourceMatches(existingId,'brand',today)&&!freshReviewed(input))continue;}
   const p=normalizeDisplayLanguage(repairSourceLabels(input));
   p.name=p.name.replace(/^Product Name\s*:\s*/i,'').trim();
   if(p.brand==='Calvin Klein Jeans'&&/^사이즈 선택/.test(p.name)){
@@ -36,8 +39,10 @@ export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date
   const match=existingId||snapshot.products.find(old=>old.brand===p.brand&&samePhysicalVariant(old,p));
   if(match){
    const reason=existingId?'same-official-record':samePhysicalVariant(match,p);duplicates.push({id:p.id,existingId:match.id,reason});
-   if(!sourceMatches(match,'brand',today)){
+   if(!sourceMatches(match,'brand',today)||freshReviewed(p)){
     const fromId=p.id;p.id=match.id;p.firstPublishedAt=match.firstPublishedAt||at;
+    p.sourceSignals=[...new Map([...(match.sourceSignals||[]),...(p.sourceSignals||[])].map(signal=>[signal.type+'|'+signal.url,signal])).values()];
+    if(p.style===match.style&&!p.dateEvidence&&match.dateEvidence?.verified)for(const field of ['releaseDate','releaseDateEnd','releaseDatePrecision','dateEvidence'])if(match[field]!==undefined)p[field]=structuredClone(match[field]);
     if((match.presentation?.image||match.image)===(p.presentation?.image||p.image)){
      if(match.presentation?.frame)p.presentation={...p.presentation,...match.presentation};
      const colour=match.colourReview;if(colour?.verified&&colour.style===p.style&&colour.url===p.url&&colour.image===p.image)for(const field of ['colourReview','colorway','colorSwatches','colorEvidence'])if(match[field]!==undefined)p[field]=match[field];
@@ -53,14 +58,14 @@ export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date
  }
  const sourceIds=new Set(nextSource.products.map(p=>p.id));
  for(const p of raw)if(!sourceIds.has(p.id)){nextSource.products.push(p);sourceIds.add(p.id);}
- snapshot.publishedAt=at;snapshot.asOf=today;
+ snapshot.publishedAt=at;snapshot.asOf=today;snapshot.periodStart=shiftMonth(today,-3);
  for(const b of brandPolicy)if(permitted({brand:b.name})&&!snapshot.brands.some(old=>old.name===b.name))snapshot.brands.push(b);
  snapshot.sourceStatus={...snapshot.sourceStatus,lastSportsCasualUpdateAt:at};
  if(snapshot.sourceStatus.counts)snapshot.sourceStatus.counts={...snapshot.sourceStatus.counts,source:nextSource.products.length,published:snapshot.products.length};
  if(snapshot.keywordCheckedAt){
   const checked=snapshot.keywordCheckedAt;
-  Object.assign(snapshot,buildKeywordCatalog(snapshot.products,snapshot.sourceRanks,{now:snapshot.keywordEvaluatedAt||checked}));snapshot.keywordCheckedAt=checked;
-  if(snapshot.styleTrendKeywords?.method==='verified-style-board-v1')snapshot.styleTrendKeywords=buildStyleTrendBoard(snapshot.products,snapshot.styleTrendKeywords.observations,{now:snapshot.keywordEvaluatedAt||checked,updated:snapshot.styleTrendKeywords.updated,sourceRanks:snapshot.sourceRanks});
+  Object.assign(snapshot,buildKeywordCatalog(snapshot.products,snapshot.sourceRanks,{now:at}));snapshot.keywordCheckedAt=checked;snapshot.keywordEvaluatedAt=at;
+  if(snapshot.styleTrendKeywords?.method==='verified-style-board-v1')snapshot.styleTrendKeywords=buildStyleTrendBoard(snapshot.products,snapshot.styleTrendKeywords.observations,{now:at,updated:snapshot.styleTrendKeywords.updated,sourceRanks:snapshot.sourceRanks});
  }
  const after={published:luxDigest(snapshot.products),source:luxDigest(nextSource.products)};
  assert.deepEqual(after,before,'Existing LUX product objects and order must be identical');
@@ -70,7 +75,12 @@ export async function publishSportsCasual({preparedFiles,rawFiles,today=new Date
  const read=async file=>JSON.parse(await fs.readFile(file,'utf8'));
  const catalog=await read('public/data/catalog.json'),source=await read('data/catalog-source.json'),policy=await read('config/brand-policy.json');
  const reviews=await read('data/sports-casual-photo-reviews.json').catch(()=>({products:[]}));
- const prepared=(await Promise.all(preparedFiles.map(read))).flatMap(d=>d.products).filter(p=>!reviews.products.some(r=>r.approved===false&&r.brand===p.brand&&r.image===(p.presentation?.image||p.image))),raw=(await Promise.all(rawFiles.map(read))).flatMap(d=>d.products);
+ const prepared=dedupeScopedPrepared((await Promise.all(preparedFiles.map(read))).flatMap(d=>d.products).filter(p=>!reviews.products.some(r=>r.approved===false&&r.brand===p.brand&&r.image===(p.presentation?.image||p.image))));
+ const incomingRaw=(await Promise.all(rawFiles.map(read))).flatMap(d=>d.products);
+ assert(incomingRaw.every(permitted),'SPORTS/CASUAL raw input cannot contain LUX or excluded brands');
+ // Keep rejected garments, navigation images and uncached candidates out of
+ // the canonical source too; a later full curation must not reintroduce them.
+ const raw=bindPreparedRaw(prepared,reviewScopedNew(incomingRaw).products);
  const result=scopedSportsMerge(catalog,source,prepared,raw,{today,brandPolicy:policy.brands});
  // Verify all new originals and card renditions before writing either snapshot.
  for(const {id} of [...result.report.added,...result.report.refreshed]){const p=result.snapshot.products.find(p=>p.id===id);for(const asset of [p.presentation.cachedPath,p.presentation.thumbnail?.path].filter(Boolean)){

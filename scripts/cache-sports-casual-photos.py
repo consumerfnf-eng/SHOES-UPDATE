@@ -14,10 +14,13 @@ groups=json.loads(Path('config/site-brand-groups.json').read_text(encoding='utf8
 allowed={b for group in groups['groups'] if group['name'] in ['SPORTS','CASUAL'] for b in group['priority']}
 assert all(p['brand'] in allowed for p in d['products']),'LUX and excluded brands cannot enter scoped photo preparation'
 frames={p['presentation']['image']:p['presentation'].get('frame') for p in d['products']}
+manifest=Path('reports/sports-casual-photo-downloads.json')
+downloads=json.loads(manifest.read_text(encoding='utf-8')).get('images',{}) if manifest.exists() else {}
 def photo(url):
- old=cache.get('images',{}).get(url,{})
+ old=cache.get('images',{}).get(url,{}) or downloads.get(url,{})
  if old.get('path') and (public/old['path'].lstrip('/')).exists():
   data=(public/old['path'].lstrip('/')).read_bytes();im=Image.open(io.BytesIO(data));path=old['path']
+  if url in downloads and (min(im.size)<180 or im.width*im.height>40000000):raise ValueError('Invalid/too small product image')
  else:
   req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0','Accept':'image/webp,image/jpeg,image/png,*/*'})
   with urllib.request.urlopen(req,timeout=25) as response:data=response.read(20*1024*1024)

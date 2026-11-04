@@ -31,7 +31,7 @@ const newPath=/(?:^|[\/_-])(?:new)(?:\/|$)|(?:^|[\/_-])(?:new[\s_-]?(?:in|arriva
 // Decode before matching; a malformed escape is left as it was written.
 function readablePath(pathname){try{return decodeURIComponent(pathname);}catch{return pathname;}}
 export function isNewListing(url,text=''){
-  try{const u=new URL(url),path=readablePath(u.pathname);return (!isProductLink(url)||/\/(?:new-arrivals?|new-in)\.html$/i.test(u.pathname))&&(newPath.test(path.replace(/\.html$/i,''))||newPath.test(u.searchParams.get('cgid')||'')||/^#\s+(?:new arrivals?|new in(?:\s+shoes)?|new shoes|신상품)\s*$/im.test(text));}catch{return false;}
+  try{const u=new URL(url),path=readablePath(u.pathname);return (!isProductLink(url)||/\/(?:c|category)\//i.test(u.pathname)||/\/(?:new-arrivals?|new-in)\.html$/i.test(u.pathname))&&(newPath.test(path.replace(/\.html$/i,''))||newPath.test(u.searchParams.get('cgid')||'')||/^#\s+(?:new arrivals?|new in(?:\s+shoes)?|new shoes|신상품)\s*$/im.test(text));}catch{return false;}
 }
 // Arc'teryx files a product under /shop, with the style number on the end of
 // the slug: /shop/mens/kragg-shoe-0078. Its own category pages live under /c
@@ -341,8 +341,9 @@ export function pageProduct(candidate,text,checkedAt,existing){
   return p;
 }
 function region(url){const u=new URL(url),m=(u.hostname+'/'+u.pathname).match(/(?:^|[./_-])(us|uk|gb|jp|kr|ca|hk|cn|au|fr|it|de|dk)(?:[./_-]|$)/i);return m?(m[1].toUpperCase()==='UK'?'GB':m[1].toUpperCase()):'GL';}
-export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,maxDetailMsPerBrand=Infinity,canReadDetails=()=>true,clock=Date.now,onProgress,log=console.log,carriedPending=[],catalogueBrands=[],skipDiscovery=false}={}){
+export async function collectNewArrivals({read,readDetails,sources,brands,existing=[],now=new Date(),maxPagesPerBrand=16,maxDetailMsPerBrand=Infinity,canReadDetails=()=>true,clock=Date.now,onProgress,log=console.log,carriedPending=[],catalogueBrands=[],skipDiscovery=false,initialDiscovery,allowListingFollowup=()=>true,filterCandidate=()=>true}={}){
   const checkedAt=new Date(now).toISOString(),products=[],coverage=[],work=[];
+  if(initialDiscovery){products.push(...(initialDiscovery.products||[]));for(const status of initialDiscovery.coverage||[]){const candidates=new Map((initialDiscovery.pending||[]).filter(e=>e.brand===status.brand).map(e=>[canonicalUrl(e.candidate.url),e.candidate]));coverage.push({...status});work.push({brand:status.brand,status:coverage.at(-1),candidates});}}
   const stillPending=()=>work.flatMap(w=>[...(w.pending||w.candidates.values()),...(w.inflight?[w.inflight]:[])].map(candidate=>({brand:w.brand,candidate})));
   let progressTail=Promise.resolve();
   async function checkpoint(phase){
@@ -375,7 +376,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
           followups.push(...sneakerShelfLinks(markdownLinks(text),{origin:new URL(source.url).origin,pageUrl:source.url,limit:100}).map(url=>({url})));
           for(const next of followups)next.basis='assortment';
         }
-        for(const next of followups)if(!seen.has(canonicalUrl(next.url))&&!queue.some(q=>canonicalUrl(q.url)===canonicalUrl(next.url)))queue.push(next);
+        for(const next of followups.filter(next=>allowListingFollowup(next,source)))if(!seen.has(canonicalUrl(next.url))&&!queue.some(q=>canonicalUrl(q.url)===canonicalUrl(next.url)))queue.push(next);
       }catch(e){status.errors.push({url:source.url,error:e.message});}
     }
     status.truncated=queue.some(s=>!seen.has(canonicalUrl(s.url)));status.candidates=candidates.size;
@@ -401,6 +402,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
   for(const item of work){
     const {brand,status,candidates}=item;item.pending=item.pending||[];
     for(const candidate of candidates.values()){
+      if(!filterCandidate(candidate,brand)){status.excludedNonFootwear=(status.excludedNonFootwear||0)+1;continue;}
       const old=oldByUrl.get(brand+'|'+canonicalUrl(candidate.url));
       // Avoid product requests for clearly unrelated clothing and ordinary dress shoes.
       const footwearHint=/sneaker|sneakerina|trainers?|running|shoes?|ballet|mary.jane|mule|jelly|platform|スニーカー|슈즈|스니커|运动鞋|運動鞋/i.test(candidate.name+' '+candidate.cardDescription+' '+new URL(candidate.url).pathname);
@@ -422,7 +424,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
   const byBrand=new Map(work.map(item=>[item.brand,item]));
   for(const entry of carriedPending){
     const candidate=entry?.candidate;
-    if(!candidate?.url)continue;
+    if(!candidate?.url||!filterCandidate(candidate,entry.brand))continue;
     let item=byBrand.get(entry.brand);
     // In a verification run there was no discovery, so the brand has no work
     // item yet; the queue itself is the work. `verification-only` keeps that
@@ -467,7 +469,7 @@ export async function collectNewArrivals({read,readDetails,sources,brands,existi
         if(!p&&readDetails&&canReadDetails())p=pageProduct(candidate,assertReadableOfficial(await readDetails(candidate.url)),checkedAt,null);
         if(p)accept(p,candidate,status);else status.errors.push({url:candidate.url,error:'product-identity-image-unverified'});
       }catch(e){status.errors.push({url:candidate.url,error:e.message});}
-      finally{delete item.inflight;}
+      finally{delete item.inflight;item.detailAttempts=(item.detailAttempts||0)+1;if(item.detailAttempts%10===0){status.detailPending=item.pending.length;log(`${brand}: ${status.verified} verified; ${status.detailPending} details remaining`);await checkpoint('product-verification');}}
     }
     // A maison's leftovers are not left over. Whatever the clock or the
     // render budget stopped us checking still has the brand's own shelf

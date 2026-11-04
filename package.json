@@ -34,8 +34,8 @@
     "verify": "node scripts/weekly-update.mjs --verify-only",
     "guide": "python -X utf8 scripts/build-user-guide.py && node scripts/render-user-guide.mjs",
     "sports:collect": "node scripts/collect-sports-casual.mjs",
-    "sports:prepare": "node scripts/prepare-sports-casual.mjs && python -X utf8 scripts/cache-sports-casual-photos.py reports/sports-casual-prepared.json reports/sports-casual-cached.json",
-    "sports:publish": "node scripts/publish-sports-casual.mjs --prepared reports/sports-casual-cached.json --raw data/sports-casual-new.json,data/fila-china-new.json,data/official-new-feeds.json"
+    "sports:prepare": "node scripts/prepare-sports-casual.mjs && node scripts/download-scoped-photos.mjs && python -X utf8 scripts/cache-sports-casual-photos.py reports/sports-casual-prepared.json reports/sports-casual-cached.json",
+    "sports:publish": "node scripts/publish-sports-casual.mjs --prepared reports/sports-casual-cached.json --raw data/sports-casual-new.json,data/fila-china-new.json,data/official-new-feeds.json,data/puma-korea-new.json,data/rendered-official-new.json,data/asics-complete-new.json,data/ash-complete-new.json,data/adidas-complete-new.json,data/newbalance-complete-new.json,data/converse-complete-new.json,data/scoped-photo-repairs.json,data/columbia-new.json,data/dkon-new.json"
   },
   "dependencies": {
     "playwright": "^1.55.0"

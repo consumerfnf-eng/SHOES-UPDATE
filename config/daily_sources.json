@@ -1142,6 +1142,10 @@
   ],
   "New Balance": [
     {
+      "name": "New Balance Official mens New Arrivals",
+      "url": "https://www.newbalance.com/men/featured/new-arrivals/"
+    },
+    {
       "name": "New Balance Official daily source",
       "url": "https://www.newbalance.com/nb-launches/"
     },
@@ -1336,6 +1340,10 @@
     }
   ],
   "PUMA": [
+    {
+      "name": "PUMA Korea Official New shoes",
+      "url": "https://kr.puma.com/kr/ko/%EC%8B%A0%EC%83%81%ED%92%88/%EC%8B%A0%EB%B0%9C"
+    },
     {
       "name": "PUMA official New",
       "url": "https://us.puma.com/us/en/men/new-arrivals",
@@ -1747,6 +1755,10 @@
   ],
   "Umbro": [
     {
+      "name": "Umbro Korea official New arrivals",
+      "url": "https://dk-on.com/UMBRO/newArrival"
+    },
+    {
       "name": "Umbro Official Korea daily source",
       "url": "https://www.umbro.co.kr/",
       "basis": "catalogue"
@@ -2085,6 +2097,10 @@
   ],
   "Le Coq Sportif": [
     {
+      "name": "Le Coq Sportif Korea official New arrivals",
+      "url": "https://dk-on.com/LECOQSPORTIF/newArrival"
+    },
+    {
       "name": "Le Coq Sportif Official Korea daily source",
       "url": "https://www.lecoqsportif.co.kr/",
       "basis": "catalogue"
@@ -2122,6 +2138,10 @@
     }
   ],
   "Under Armour": [
+    {
+      "name": "Under Armour Official New shoes",
+      "url": "https://www.underarmour.com/en-us/c/shoes/new-arrivals/"
+    },
     {
       "name": "Under Armour Official public source",
       "url": "https://www.underarmour.com/en-us/"
@@ -2471,6 +2491,10 @@
   ],
   "diadora": [
     {
+      "name": "diadora Official source verified 2026-11-04",
+      "url": "https://www.diadora.com/en/us/shoes-new_arrivals/"
+    },
+    {
       "name": "diadora official navigation",
       "url": "https://www.diadora.com/",
       "basis": "catalogue"
@@ -2569,6 +2593,10 @@
   ],
   "DESCENTE": [
     {
+      "name": "DESCENTE Korea official New arrivals",
+      "url": "https://dk-on.com/DESCENTE/newArrival"
+    },
+    {
       "name": "DESCENTE official navigation",
       "url": "https://dk-on.com/descente",
       "basis": "catalogue"
@@ -2589,6 +2617,10 @@
     }
   ],
   "Timberland": [
+    {
+      "name": "Timberland Official source verified 2026-11-04",
+      "url": "https://www.timberland.com/en-ca/c/footwear/new-arrivals-0101"
+    },
     {
       "name": "Timberland official navigation",
       "url": "https://www.timberland.com/en-us",
@@ -2683,6 +2715,10 @@
     }
   ],
   "DR.MARTENS": [
+    {
+      "name": "DR.MARTENS Official source verified 2026-11-04",
+      "url": "https://www.drmartens.com/us/en/unisex/new-arrivals/c/04150000"
+    },
     {
       "name": "DR.MARTENS official navigation",
       "url": "https://www.drmartens.com/",
@@ -2782,6 +2818,10 @@
   ],
   "ASH": [
     {
+      "name": "ASH Official source verified 2026-11-04",
+      "url": "https://us.ash.com/collections/new-in"
+    },
+    {
       "name": "ASH official navigation",
       "url": "https://ash.com/",
       "basis": "catalogue"
@@ -2802,6 +2842,24 @@
       "name": "FILA China official home",
       "url": "https://www.fila.cn/",
       "basis": "catalogue"
+    }
+  ],
+  "UGG": [
+    {
+      "name": "UGG Official source verified 2026-11-04",
+      "url": "https://www.ugg.com/new-arrivals/"
+    }
+  ],
+  "POLO RALPH LAUREN": [
+    {
+      "name": "POLO RALPH LAUREN Official source verified 2026-11-04",
+      "url": "https://www.ralphlauren.com/men-footwear-shoes"
+    }
+  ],
+  "COLUMBIA": [
+    {
+      "name": "COLUMBIA Korea official footwear / New badges",
+      "url": "https://www.columbiakorea.co.kr/product/list.asp?cno=350"
     }
   ]
 }

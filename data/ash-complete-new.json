@@ -1,0 +1,3704 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-04T09:53:40.619Z",
+  "products": [
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kriss Hybrid Loafer Sneaker",
+      "style": "9976575230250:chestnut",
+      "styleType": "official-product-id",
+      "productVariantId": "9976575230250:chestnut",
+      "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950713642",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS-CHESTNUT-SIDE-FRONT_2d7d3575-0571-4565-b35e-99b747557d58.jpg?v=1784842463",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS-CHESTNUT-SIDE-FRONT_2d7d3575-0571-4565-b35e-99b747557d58.jpg?v=1784842463",
+          "alt": "Kriss Hybrid Loafer Sneaker"
+        }
+      ],
+      "description": "Casual and comfortable, the KRISS Loafer features a soft suede upper paired with a sporty, rubberized sole for a modern twist on a classic design. The sleek moccasin-inspired silhouette is complemented by subtle stitching and a convenient slip-on style, making this loafer the perfect blend of relaxed elegance and all-day comfort. Whether you're running errands or enjoying a weekend stroll, the KRISS is the perfect footwear choice.",
+      "officialCategory": "AS-KRISS",
+      "colorway": "Chestnut",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 9976575230250,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Chestnut"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Chestnut",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Chestnut",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950713642",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-8883897cc2d2c4875de3",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:chestnut",
+        "productUrl": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950713642",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:chestnut",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950713642"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:chestnut",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS-CHESTNUT-SIDE-FRONT_2d7d3575-0571-4565-b35e-99b747557d58.jpg?v=1784842463",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KRISS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kriss Hybrid Loafer Sneaker",
+      "style": "9976575230250:black",
+      "styleType": "official-product-id",
+      "productVariantId": "9976575230250:black",
+      "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52093070704938",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS-BLACK-SIDE-FRONT_7ddaec46-75ff-4b84-a055-4699183af7e1.jpg?v=1778172922",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS-BLACK-SIDE-FRONT_7ddaec46-75ff-4b84-a055-4699183af7e1.jpg?v=1778172922",
+          "alt": "Kriss Hybrid Loafer Sneaker"
+        }
+      ],
+      "description": "Casual and comfortable, the KRISS Loafer features a soft suede upper paired with a sporty, rubberized sole for a modern twist on a classic design. The sleek moccasin-inspired silhouette is complemented by subtle stitching and a convenient slip-on style, making this loafer the perfect blend of relaxed elegance and all-day comfort. Whether you're running errands or enjoying a weekend stroll, the KRISS is the perfect footwear choice.",
+      "officialCategory": "AS-KRISS",
+      "colorway": "Black",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 9976575230250,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Black"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Black",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Black",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52093070704938",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-e27cfcc34fdbdad62099",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:black",
+        "productUrl": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52093070704938",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:black",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52093070704938"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:black",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS-BLACK-SIDE-FRONT_7ddaec46-75ff-4b84-a055-4699183af7e1.jpg?v=1778172922",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KRISS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kriss Hybrid Loafer Sneaker",
+      "style": "9976575230250:desert",
+      "styleType": "official-product-id",
+      "productVariantId": "9976575230250:desert",
+      "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950025514",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KRISS-Desert-3Q_4df81cd8-86b0-44e5-b682-a5daf4e01322.jpg?v=1785160211",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KRISS-Desert-3Q_4df81cd8-86b0-44e5-b682-a5daf4e01322.jpg?v=1785160211",
+          "alt": "Kriss Hybrid Loafer Sneaker"
+        }
+      ],
+      "description": "Casual and comfortable, the KRISS Loafer features a soft suede upper paired with a sporty, rubberized sole for a modern twist on a classic design. The sleek moccasin-inspired silhouette is complemented by subtle stitching and a convenient slip-on style, making this loafer the perfect blend of relaxed elegance and all-day comfort. Whether you're running errands or enjoying a weekend stroll, the KRISS is the perfect footwear choice.",
+      "officialCategory": "AS-KRISS",
+      "colorway": "Desert",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 9976575230250,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Desert"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Desert",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Desert",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950025514",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-5f64ebb6be35f503a777",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:desert",
+        "productUrl": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950025514",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:desert",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950025514"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:desert",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KRISS-Desert-3Q_4df81cd8-86b0-44e5-b682-a5daf4e01322.jpg?v=1785160211",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KRISS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kriss Hybrid Loafer Sneaker",
+      "style": "9976575230250:vapour-grey",
+      "styleType": "official-product-id",
+      "productVariantId": "9976575230250:vapour-grey",
+      "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950254890",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KRISS-Vapour-3Q.jpg?v=1785160158",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KRISS-Vapour-3Q.jpg?v=1785160158",
+          "alt": "Kriss Hybrid Loafer Sneaker"
+        }
+      ],
+      "description": "Casual and comfortable, the KRISS Loafer features a soft suede upper paired with a sporty, rubberized sole for a modern twist on a classic design. The sleek moccasin-inspired silhouette is complemented by subtle stitching and a convenient slip-on style, making this loafer the perfect blend of relaxed elegance and all-day comfort. Whether you're running errands or enjoying a weekend stroll, the KRISS is the perfect footwear choice.",
+      "officialCategory": "AS-KRISS",
+      "colorway": "Vapour Grey",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 9976575230250,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Vapour Grey"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Vapour Grey",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Vapour Grey",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950254890",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-7cf91780a544387e358e",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:vapour-grey",
+        "productUrl": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950254890",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:vapour-grey",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950254890"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:vapour-grey",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KRISS-Vapour-3Q.jpg?v=1785160158",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KRISS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kriss Hybrid Loafer Sneaker",
+      "style": "9976575230250:bronze-pony-horse",
+      "styleType": "official-product-id",
+      "productVariantId": "9976575230250:bronze-pony-horse",
+      "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950484266",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS-PONYHORSEBRONZE-SIDE-FRONT_6112c5e0-d214-4c93-82c6-dbd4ad54abd7.jpg?v=1784842463",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS-PONYHORSEBRONZE-SIDE-FRONT_6112c5e0-d214-4c93-82c6-dbd4ad54abd7.jpg?v=1784842463",
+          "alt": "Kriss Hybrid Loafer Sneaker"
+        }
+      ],
+      "description": "Casual and comfortable, the KRISS Loafer features a soft suede upper paired with a sporty, rubberized sole for a modern twist on a classic design. The sleek moccasin-inspired silhouette is complemented by subtle stitching and a convenient slip-on style, making this loafer the perfect blend of relaxed elegance and all-day comfort. Whether you're running errands or enjoying a weekend stroll, the KRISS is the perfect footwear choice.",
+      "officialCategory": "AS-KRISS",
+      "colorway": "Bronze Pony Horse",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 9976575230250,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Bronze Pony Horse"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Bronze Pony Horse",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Bronze Pony Horse",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950484266",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-355feb5b4520546b82a4",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:bronze-pony-horse",
+        "productUrl": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950484266",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:bronze-pony-horse",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=52154950484266"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:bronze-pony-horse",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS-PONYHORSEBRONZE-SIDE-FRONT_6112c5e0-d214-4c93-82c6-dbd4ad54abd7.jpg?v=1784842463",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KRISS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kriss Hybrid Loafer Sneaker",
+      "style": "9976575230250:off-white",
+      "styleType": "official-product-id",
+      "productVariantId": "9976575230250:off-white",
+      "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070639497514",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS_-_OFF_WHITE_-_3Q-FRONT.jpg?v=1792634081",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS_-_OFF_WHITE_-_3Q-FRONT.jpg?v=1792634081",
+          "alt": "Kriss Hybrid Loafer Sneaker"
+        }
+      ],
+      "description": "Casual and comfortable, the KRISS Loafer features a soft suede upper paired with a sporty, rubberized sole for a modern twist on a classic design. The sleek moccasin-inspired silhouette is complemented by subtle stitching and a convenient slip-on style, making this loafer the perfect blend of relaxed elegance and all-day comfort. Whether you're running errands or enjoying a weekend stroll, the KRISS is the perfect footwear choice.",
+      "officialCategory": "AS-KRISS",
+      "colorway": "Off White",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 9976575230250,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Off White"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Off White",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Off White",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070639497514",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-c6fcff3770022ffc736a",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:off-white",
+        "productUrl": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070639497514",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:off-white",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070639497514"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:off-white",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS_-_OFF_WHITE_-_3Q-FRONT.jpg?v=1792634081",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KRISS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kriss Hybrid Loafer Sneaker",
+      "style": "9976575230250:rose",
+      "styleType": "official-product-id",
+      "productVariantId": "9976575230250:rose",
+      "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070639759658",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS_-_ROSE_-_3Q-FRONT.jpg?v=1792634194",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS_-_ROSE_-_3Q-FRONT.jpg?v=1792634194",
+          "alt": "Kriss Hybrid Loafer Sneaker"
+        }
+      ],
+      "description": "Casual and comfortable, the KRISS Loafer features a soft suede upper paired with a sporty, rubberized sole for a modern twist on a classic design. The sleek moccasin-inspired silhouette is complemented by subtle stitching and a convenient slip-on style, making this loafer the perfect blend of relaxed elegance and all-day comfort. Whether you're running errands or enjoying a weekend stroll, the KRISS is the perfect footwear choice.",
+      "officialCategory": "AS-KRISS",
+      "colorway": "Rose",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 9976575230250,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Rose"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Rose",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Rose",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070639759658",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-af2f1d61326f022cc777",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:rose",
+        "productUrl": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070639759658",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:rose",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070639759658"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:rose",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS_-_ROSE_-_3Q-FRONT.jpg?v=1792634194",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KRISS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kriss Hybrid Loafer Sneaker",
+      "style": "9976575230250:shark",
+      "styleType": "official-product-id",
+      "productVariantId": "9976575230250:shark",
+      "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070640021802",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS_-_SHARK_-_3Q-FRONT.jpg?v=1792634286",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS_-_SHARK_-_3Q-FRONT.jpg?v=1792634286",
+          "alt": "Kriss Hybrid Loafer Sneaker"
+        }
+      ],
+      "description": "Casual and comfortable, the KRISS Loafer features a soft suede upper paired with a sporty, rubberized sole for a modern twist on a classic design. The sleek moccasin-inspired silhouette is complemented by subtle stitching and a convenient slip-on style, making this loafer the perfect blend of relaxed elegance and all-day comfort. Whether you're running errands or enjoying a weekend stroll, the KRISS is the perfect footwear choice.",
+      "officialCategory": "AS-KRISS",
+      "colorway": "Shark",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 9976575230250,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Shark"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Shark",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Shark",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070640021802",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-8a443926d0effb9f4991",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:shark",
+        "productUrl": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070640021802",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kriss Hybrid Loafer Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:shark",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kriss-hybrid-loafer-sneaker?variant=53070640021802"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575230250:shark",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KRISS_-_SHARK_-_3Q-FRONT.jpg?v=1792634286",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KRISS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Moonlight Studs Vintage Studded Sneaker",
+      "style": "10272936231210:off-white-gold",
+      "styleType": "official-product-id",
+      "productVariantId": "10272936231210:off-white-gold",
+      "url": "https://us.ash.com/products/moonlight-studs-vintage-studded-sneaker?variant=52341919940906",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHTSTUD-WHITE-FRONT_9275c514-6cc8-418b-9c42-e85496801f1c.jpg?v=1787609611",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHTSTUD-WHITE-FRONT_9275c514-6cc8-418b-9c42-e85496801f1c.jpg?v=1787609611",
+          "alt": "Moonlight Studs Vintage Studded Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHTSTUD-WHITE-BACK.jpg?v=1787609611",
+          "alt": "Moonlight Studs Vintage Studded Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHTSTUD-WHITE-SIDE.jpg?v=1787609611",
+          "alt": "Moonlight Studs Vintage Studded Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHTSTUD-WHITE-TOP.jpg?v=1787609611",
+          "alt": "Moonlight Studs Vintage Studded Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHTSTUD-WHITE-FRONT.jpg?v=1787609611",
+          "alt": "Moonlight Studs Vintage Studded Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHTSTUD-WHITE-BOTTOM.jpg?v=1787609611",
+          "alt": "Moonlight Studs Vintage Studded Sneaker"
+        }
+      ],
+      "description": "Introducing Moonlight, a sleek, white sneaker with a touch of glamour. Adorned with sparkling studs that outline the brand's iconic logo, it combines sporty charm with an elevated edge. Crafted with premium materials and a cushioned sole, this style offers comfort while making a bold fashion statement. Perfect for adding a little shine to your casual look.",
+      "officialCategory": "AS-MOONLIGHT STUDS",
+      "colorway": "Off-White/Gold",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10272936231210,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Off-White/Gold"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Moonlight Studs Vintage Studded Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Off-White/Gold",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Off-White/Gold",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-3d153a599d8598ca3ed0",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936231210:off-white-gold",
+        "productUrl": "https://us.ash.com/products/moonlight-studs-vintage-studded-sneaker?variant=52341919940906",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Moonlight Studs Vintage Studded Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936231210:off-white-gold",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/moonlight-studs-vintage-studded-sneaker?variant=52341919940906"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936231210:off-white-gold",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHTSTUD-WHITE-FRONT_9275c514-6cc8-418b-9c42-e85496801f1c.jpg?v=1787609611",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-MOONLIGHT STUDS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Viper Chunky Fashion Sneaker",
+      "style": "10272936165674:fandango-clay",
+      "styleType": "official-product-id",
+      "productVariantId": "10272936165674:fandango-clay",
+      "url": "https://us.ash.com/products/viper-chunky-fashion-sneaker?variant=52341919285546",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VIPER-FANDANGOCLAY-SIDE.jpg?v=1787608765",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VIPER-FANDANGOCLAY-SIDE.jpg?v=1787608765",
+          "alt": "Viper Chunky Fashion Sneaker"
+        }
+      ],
+      "description": "The Viper Chunky Fashion Sneaker brings bold energy to a sporty, street-ready silhouette. Designed with a layered mixed-media upper, statement laces, and an exaggerated chunky sole, this sneaker delivers both visual impact and everyday comfort. Playful, modern, and full of ASH attitude, Viper is perfect for adding a high-fashion edge to casual looks.",
+      "officialCategory": "AS-VIPER",
+      "colorway": "Fandango/Clay",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10272936165674,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Fandango/Clay"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Viper Chunky Fashion Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Fandango/Clay",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Fandango/Clay",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-dacc2763555a92fb07e8",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936165674:fandango-clay",
+        "productUrl": "https://us.ash.com/products/viper-chunky-fashion-sneaker?variant=52341919285546",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Viper Chunky Fashion Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936165674:fandango-clay",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/viper-chunky-fashion-sneaker?variant=52341919285546"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936165674:fandango-clay",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VIPER-FANDANGOCLAY-SIDE.jpg?v=1787608765",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-VIPER"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Viper Chunky Fashion Sneaker",
+      "style": "10272936165674:pewter-black",
+      "styleType": "official-product-id",
+      "productVariantId": "10272936165674:pewter-black",
+      "url": "https://us.ash.com/products/viper-chunky-fashion-sneaker?variant=52341919514922",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VIPER-Pewter3-4Front.jpg?v=1787608765",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VIPER-Pewter3-4Front.jpg?v=1787608765",
+          "alt": "Viper Chunky Fashion Sneaker"
+        }
+      ],
+      "description": "The Viper Chunky Fashion Sneaker brings bold energy to a sporty, street-ready silhouette. Designed with a layered mixed-media upper, statement laces, and an exaggerated chunky sole, this sneaker delivers both visual impact and everyday comfort. Playful, modern, and full of ASH attitude, Viper is perfect for adding a high-fashion edge to casual looks.",
+      "officialCategory": "AS-VIPER",
+      "colorway": "Pewter/Black",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10272936165674,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Pewter/Black"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Viper Chunky Fashion Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Pewter/Black",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Pewter/Black",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-90039a4d4fbbb745bb97",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936165674:pewter-black",
+        "productUrl": "https://us.ash.com/products/viper-chunky-fashion-sneaker?variant=52341919514922",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Viper Chunky Fashion Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936165674:pewter-black",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/viper-chunky-fashion-sneaker?variant=52341919514922"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936165674:pewter-black",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VIPER-Pewter3-4Front.jpg?v=1787608765",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-VIPER"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Vapor Pony Haircalf Chunky Fashion Sneaker",
+      "style": "10272936296746:black-edgy-pony",
+      "styleType": "official-product-id",
+      "productVariantId": "10272936296746:black-edgy-pony",
+      "url": "https://us.ash.com/products/vapor-pony-haircalf-chunky-fashion-sneaker?variant=52341920334122",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VAPOR-FRONT.jpg?v=1787610334",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VAPOR-FRONT.jpg?v=1787610334",
+          "alt": "Vapor Pony Haircalf Chunky Fashion Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VAPOR-BACK.jpg?v=1787610335",
+          "alt": "Vapor Pony Haircalf Chunky Fashion Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VAPOR-SIDE.jpg?v=1787610334",
+          "alt": "Vapor Pony Haircalf Chunky Fashion Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VAPOR-FRONT-1.jpg?v=1787610334",
+          "alt": "Vapor Pony Haircalf Chunky Fashion Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VAPOR-TOP.jpg?v=1787610334",
+          "alt": "Vapor Pony Haircalf Chunky Fashion Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VAPOR-BOTTOM.jpg?v=1787610334",
+          "alt": "Vapor Pony Haircalf Chunky Fashion Sneaker"
+        }
+      ],
+      "description": "The Vapor Pony Haircalf Chunky Fashion Sneaker brings bold texture to a sporty, high-impact silhouette. Designed with a haircalf upper, layered paneling, statement laces, and a strap detail across the front, this sneaker delivers a confident mix of fashion and function. Finished with a sculpted chunky sole, Vapor adds standout ASH attitude to everyday casual looks.",
+      "officialCategory": "AS-VAPOR PONY",
+      "colorway": "Black Edgy Pony",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10272936296746,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Black Edgy Pony"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Vapor Pony Haircalf Chunky Fashion Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Black Edgy Pony",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Black Edgy Pony",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-b2cfd8d15f411c2ebc36",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936296746:black-edgy-pony",
+        "productUrl": "https://us.ash.com/products/vapor-pony-haircalf-chunky-fashion-sneaker?variant=52341920334122",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Vapor Pony Haircalf Chunky Fashion Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936296746:black-edgy-pony",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/vapor-pony-haircalf-chunky-fashion-sneaker?variant=52341920334122"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10272936296746:black-edgy-pony",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VAPOR-FRONT.jpg?v=1787610334",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-VAPOR PONY"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kore Bis Fur X-Band Faux Fur Lined Sneaker",
+      "style": "10235974025514:mink-cappuccino",
+      "styleType": "official-product-id",
+      "productVariantId": "10235974025514:mink-cappuccino",
+      "url": "https://us.ash.com/products/kore-bis-fur-x-band-faux-fur-lined-sneaker?variant=52146597495082",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBISFUR-MINK-FRONTSIDE.jpg?v=1785417262",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBISFUR-MINK-FRONTSIDE.jpg?v=1785417262",
+          "alt": "Kore Bis Fur X-Band Faux Fur Lined Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBISFUR-MINK-FRONT-1.jpg?v=1785417262",
+          "alt": "Kore Bis Fur X-Band Faux Fur Lined Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBISFUR-MINK-BACK.jpg?v=1785417262",
+          "alt": "Kore Bis Fur X-Band Faux Fur Lined Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBISFUR-MINK-SIDE.jpg?v=1785417262",
+          "alt": "Kore Bis Fur X-Band Faux Fur Lined Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBISFUR-MINK-TOP.jpg?v=1785417262",
+          "alt": "Kore Bis Fur X-Band Faux Fur Lined Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBISFUR-MINK-BOTTOM.jpg?v=1785417262",
+          "alt": "Kore Bis Fur X-Band Faux Fur Lined Sneaker"
+        }
+      ],
+      "description": "Sporty with a cozy ASH twist, the Kore Bis Fur X-Band Sneaker updates the signature Kore silhouette with plush faux fur lining and soft cross-band detailing. Designed with a low-profile sporty shape and a durable rubber sole, this style blends everyday comfort with a bold, fashion-forward feel. Perfect for casual days, Kore Bis Fur brings warmth, texture, and standout attitude to your off-duty looks.",
+      "officialCategory": "AS-KORE BIS FUR",
+      "colorway": "Mink/Cappuccino",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10235974025514,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Mink/Cappuccino"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kore Bis Fur X-Band Faux Fur Lined Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Mink/Cappuccino",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Mink/Cappuccino",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-5d42952f9059f46e69c7",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974025514:mink-cappuccino",
+        "productUrl": "https://us.ash.com/products/kore-bis-fur-x-band-faux-fur-lined-sneaker?variant=52146597495082",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kore Bis Fur X-Band Faux Fur Lined Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974025514:mink-cappuccino",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kore-bis-fur-x-band-faux-fur-lined-sneaker?variant=52146597495082"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974025514:mink-cappuccino",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBISFUR-MINK-FRONTSIDE.jpg?v=1785417262",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KORE BIS FUR"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Verve Chunky Fashion Sneaker",
+      "style": "10235974091050:mink-pink",
+      "styleType": "official-product-id",
+      "productVariantId": "10235974091050:mink-pink",
+      "url": "https://us.ash.com/products/verve-chunky-fashion-sneaker?variant=52146598183210",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VERVE-MINKPINK-SIDEFRONT.jpg?v=1785418714",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VERVE-MINKPINK-SIDEFRONT.jpg?v=1785418714",
+          "alt": "Verve Chunky Fashion Sneaker"
+        }
+      ],
+      "description": "The Verve Chunky Fashion Sneaker brings bold ASH attitude to a sporty everyday silhouette. Designed with a layered upper, statement laces, and a sculpted chunky sole, this sneaker delivers a confident mix of comfort and high-fashion edge. Modern, playful, and easy to wear, Verve is perfect for adding standout style to casual looks.",
+      "officialCategory": "AS-VERVE",
+      "colorway": "Mink/Pink",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10235974091050,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Mink/Pink"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Verve Chunky Fashion Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Mink/Pink",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Mink/Pink",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-deba68050878c337192b",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974091050:mink-pink",
+        "productUrl": "https://us.ash.com/products/verve-chunky-fashion-sneaker?variant=52146598183210",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Verve Chunky Fashion Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974091050:mink-pink",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/verve-chunky-fashion-sneaker?variant=52146598183210"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974091050:mink-pink",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VERVE-MINKPINK-SIDEFRONT.jpg?v=1785418714",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-VERVE"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Verve Chunky Fashion Sneaker",
+      "style": "10235974091050:black-black-multi",
+      "styleType": "official-product-id",
+      "productVariantId": "10235974091050:black-black-multi",
+      "url": "https://us.ash.com/products/verve-chunky-fashion-sneaker?variant=52146598412586",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VERVE-BLACK-FRONT.jpg?v=1785418715",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VERVE-BLACK-FRONT.jpg?v=1785418715",
+          "alt": "Verve Chunky Fashion Sneaker"
+        }
+      ],
+      "description": "The Verve Chunky Fashion Sneaker brings bold ASH attitude to a sporty everyday silhouette. Designed with a layered upper, statement laces, and a sculpted chunky sole, this sneaker delivers a confident mix of comfort and high-fashion edge. Modern, playful, and easy to wear, Verve is perfect for adding standout style to casual looks.",
+      "officialCategory": "AS-VERVE",
+      "colorway": "Black/Black Multi",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10235974091050,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Black/Black Multi"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Verve Chunky Fashion Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Black/Black Multi",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Black/Black Multi",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-87e37684baa10b4fb8e9",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974091050:black-black-multi",
+        "productUrl": "https://us.ash.com/products/verve-chunky-fashion-sneaker?variant=52146598412586",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Verve Chunky Fashion Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974091050:black-black-multi",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/verve-chunky-fashion-sneaker?variant=52146598412586"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974091050:black-black-multi",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/VERVE-BLACK-FRONT.jpg?v=1785418715",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-VERVE"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Moonlight Vintage Glitter Sneaker",
+      "style": "10235973992746:tmoro-cappuccino",
+      "styleType": "official-product-id",
+      "productVariantId": "10235973992746:tmoro-cappuccino",
+      "url": "https://us.ash.com/products/moonlight-vintage-glitter-sneaker-fw26?variant=52146597036330",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHT-TMORO-FRONT.jpg?v=1785363275",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHT-TMORO-FRONT.jpg?v=1785363275",
+          "alt": "Moonlight Vintage Glitter Sneaker"
+        }
+      ],
+      "description": "Shine bright in the Moonlight Vintage Glitter Sneaker. Blending vintage-inspired design with modern flair, this standout style features a distressed leather and suede upper, perforated detailing, and a bold glitter-accented logo. The contrast heel tab and slightly worn sole add an effortlessly cool vibe, while the cushioned interior keeps you comfy all day long. Whether you're dressing down a blazer or giving denim a fun twist, the Moonlight Sneaker brings a spark of personality to every step.",
+      "officialCategory": "AS-MOONLIGHT",
+      "colorway": "Tmoro/Cappuccino",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10235973992746,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Tmoro/Cappuccino"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Moonlight Vintage Glitter Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Tmoro/Cappuccino",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Tmoro/Cappuccino",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-af7784fb559d27925352",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235973992746:tmoro-cappuccino",
+        "productUrl": "https://us.ash.com/products/moonlight-vintage-glitter-sneaker-fw26?variant=52146597036330",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Moonlight Vintage Glitter Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235973992746:tmoro-cappuccino",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/moonlight-vintage-glitter-sneaker-fw26?variant=52146597036330"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235973992746:tmoro-cappuccino",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHT-TMORO-FRONT.jpg?v=1785363275",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-MOONLIGHT"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Moonlight Vintage Glitter Sneaker",
+      "style": "10235973992746:off-white-rose-brown",
+      "styleType": "official-product-id",
+      "productVariantId": "10235973992746:off-white-rose-brown",
+      "url": "https://us.ash.com/products/moonlight-vintage-glitter-sneaker-fw26?variant=52146597265706",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHT-OFFWHTGLITTER-FRONT_001617af-5b12-43b7-888a-63fb91664e07.jpg?v=1785363275",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHT-OFFWHTGLITTER-FRONT_001617af-5b12-43b7-888a-63fb91664e07.jpg?v=1785363275",
+          "alt": "Moonlight Vintage Glitter Sneaker"
+        }
+      ],
+      "description": "Shine bright in the Moonlight Vintage Glitter Sneaker. Blending vintage-inspired design with modern flair, this standout style features a distressed leather and suede upper, perforated detailing, and a bold glitter-accented logo. The contrast heel tab and slightly worn sole add an effortlessly cool vibe, while the cushioned interior keeps you comfy all day long. Whether you're dressing down a blazer or giving denim a fun twist, the Moonlight Sneaker brings a spark of personality to every step.",
+      "officialCategory": "AS-MOONLIGHT",
+      "colorway": "Off-White/Rose Brown",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10235973992746,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Off-White/Rose Brown"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Moonlight Vintage Glitter Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Off-White/Rose Brown",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Off-White/Rose Brown",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-1de1683656930c114010",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235973992746:off-white-rose-brown",
+        "productUrl": "https://us.ash.com/products/moonlight-vintage-glitter-sneaker-fw26?variant=52146597265706",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Moonlight Vintage Glitter Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235973992746:off-white-rose-brown",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/moonlight-vintage-glitter-sneaker-fw26?variant=52146597265706"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235973992746:off-white-rose-brown",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/MOONLIGHT-OFFWHTGLITTER-FRONT_001617af-5b12-43b7-888a-63fb91664e07.jpg?v=1785363275",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-MOONLIGHT"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Rainbow Studs Platform Hightop",
+      "style": "10235974156586:black",
+      "styleType": "official-product-id",
+      "productVariantId": "10235974156586:black",
+      "url": "https://us.ash.com/products/rainbow-studs-platform-hightop?variant=52146598871338",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/RAINBOWSTUDS-BLACK-SIDEFRONT.jpg?v=1787091547",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/RAINBOWSTUDS-BLACK-SIDEFRONT.jpg?v=1787091547",
+          "alt": "Rainbow Studs Platform Hightop"
+        }
+      ],
+      "description": "Turn heads with the Rainbow Hightop Sneaker, a rebellious twist on a classic silhouette. Designed with bold buckle straps, distressed detailing, and a chunky platform sole, this sneaker brings serious edge to your everyday look. Embellished with stud detailing, it's the perfect mix of grunge and cozy. Whether you're styling it with denim or offsetting a sleek outfit, the Rainbow Hightop makes a fearless fashion statement.",
+      "officialCategory": "AS-RAINBOW STUDS",
+      "colorway": "Black",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10235974156586,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Black"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "body_html",
+        "excerpt": "Turn heads with the Rainbow Hightop Sneaker, a rebellious twist on a classic silhou",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Black",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Black",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-417e004cbcf405a067e4",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974156586:black",
+        "productUrl": "https://us.ash.com/products/rainbow-studs-platform-hightop?variant=52146598871338",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Rainbow Studs Platform Hightop",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974156586:black",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/rainbow-studs-platform-hightop?variant=52146598871338"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974156586:black",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/RAINBOWSTUDS-BLACK-SIDEFRONT.jpg?v=1787091547",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-RAINBOW STUDS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Rainbow Studs Platform Hightop",
+      "style": "10235974156586:off-white",
+      "styleType": "official-product-id",
+      "productVariantId": "10235974156586:off-white",
+      "url": "https://us.ash.com/products/rainbow-studs-platform-hightop?variant=52146599100714",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/RAINBOWSTUDS-OFFWHITE-SIDEFRONT.jpg?v=1787091547",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/RAINBOWSTUDS-OFFWHITE-SIDEFRONT.jpg?v=1787091547",
+          "alt": "Rainbow Studs Platform Hightop"
+        }
+      ],
+      "description": "Turn heads with the Rainbow Hightop Sneaker, a rebellious twist on a classic silhouette. Designed with bold buckle straps, distressed detailing, and a chunky platform sole, this sneaker brings serious edge to your everyday look. Embellished with stud detailing, it's the perfect mix of grunge and cozy. Whether you're styling it with denim or offsetting a sleek outfit, the Rainbow Hightop makes a fearless fashion statement.",
+      "officialCategory": "AS-RAINBOW STUDS",
+      "colorway": "Off-White",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10235974156586,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Off-White"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "body_html",
+        "excerpt": "Turn heads with the Rainbow Hightop Sneaker, a rebellious twist on a classic silhou",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Off-White",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Off-White",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-891d7b02d76b29fa4669",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974156586:off-white",
+        "productUrl": "https://us.ash.com/products/rainbow-studs-platform-hightop?variant=52146599100714",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Rainbow Studs Platform Hightop",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974156586:off-white",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/rainbow-studs-platform-hightop?variant=52146599100714"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235974156586:off-white",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/RAINBOWSTUDS-OFFWHITE-SIDEFRONT.jpg?v=1787091547",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-RAINBOW STUDS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kasar Suede Faux Fur Lined Ballet Sneaker",
+      "style": "10235977990442:mink",
+      "styleType": "official-product-id",
+      "productVariantId": "10235977990442:mink",
+      "url": "https://us.ash.com/products/kasar-suede-faux-fur-lined-ballet-sneaker-fw26?variant=52146610012458",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASARFUR-MINK-FRONT_68690e10-ec81-43ae-ab51-c797724534c2.jpg?v=1785364042",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASARFUR-MINK-FRONT_68690e10-ec81-43ae-ab51-c797724534c2.jpg?v=1785364042",
+          "alt": "Kasar Suede Faux Fur Lined Ballet Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASARFUR-MINK-FRONT-1_701f8dfc-dce4-48aa-803e-7d5600a26fe3.jpg?v=1785364042",
+          "alt": "Kasar Suede Faux Fur Lined Ballet Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASARFUR-MINK-BACK_f4a25c80-95ff-46ca-949b-c2ceeddd63b2.jpg?v=1785364042",
+          "alt": "Kasar Suede Faux Fur Lined Ballet Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASARFUR-MINK-SIDE_28e83e93-ff36-46a7-a572-0d431b28f8bd.jpg?v=1785364042",
+          "alt": "Kasar Suede Faux Fur Lined Ballet Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASARFUR-MINK-TOP_b764052a-b175-47a0-9717-4f720f4724ec.jpg?v=1785364042",
+          "alt": "Kasar Suede Faux Fur Lined Ballet Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASARFUR-MINK-BOTTOM_222cd908-a42e-4dd8-ae33-2d2b49f18438.jpg?v=1785364042",
+          "alt": "Kasar Suede Faux Fur Lined Ballet Sneaker"
+        }
+      ],
+      "description": "The Kasar Suede Sneaker offers a perfect combination of sporty style and cozy comfort. Featuring a rich suede upper, this shoe is lined with soft faux fur for added warmth during colder days. The robust rubber sole ensures excellent grip and durability. Whether you're heading out for a casual stroll or running errands, this sneaker will keep you comfortable and stylish all day long. A must-have for those looking for both performance and fashion in one shoe.",
+      "officialCategory": "AS-KASAR FUR",
+      "colorway": "Mink",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10235977990442,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Mink"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kasar Suede Faux Fur Lined Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Mink",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Mink",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kasar-suede-faux-fur-lined-ballet-sneaker-fw26?variant=52146610012458",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-f5ca0c2e0760235a2c6c",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235977990442:mink",
+        "productUrl": "https://us.ash.com/products/kasar-suede-faux-fur-lined-ballet-sneaker-fw26?variant=52146610012458",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kasar Suede Faux Fur Lined Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235977990442:mink",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kasar-suede-faux-fur-lined-ballet-sneaker-fw26?variant=52146610012458"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10235977990442:mink",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASARFUR-MINK-FRONT_68690e10-ec81-43ae-ab51-c797724534c2.jpg?v=1785364042",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KASAR FUR"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kasar Washed Suede Ballet Sneaker",
+      "style": "10226039357738:washed-chestnut",
+      "styleType": "official-product-id",
+      "productVariantId": "10226039357738:washed-chestnut",
+      "url": "https://us.ash.com/products/kasar-washed-suede-ballet-sneaker-fw26?variant=52117579989290",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASAR-WASHEDCHESNUT-SIDEFRONT.jpg?v=1787091158",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASAR-WASHEDCHESNUT-SIDEFRONT.jpg?v=1787091158",
+          "alt": "Kasar Washed Suede Ballet Sneaker"
+        }
+      ],
+      "description": "The Kasar Washed Suede Ballet Sneaker puts a soft, lived-in spin on a retro running silhouette. Crafted from washed suede in a warm tobacco hue, it features sporty overlay detailing and a plum leather lining that peeks out at the collar for a pop of contrast. A crisp white midsole and gum outsole ground the design with an easy, everyday feel, while the low-profile build keeps it lightweight and comfortable from morning to night. Pair it with denim, joggers, or a casual dress for effortless off-duty style.",
+      "officialCategory": "AS-KASAR",
+      "colorway": "Washed Chestnut",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10226039357738,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Washed Chestnut"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kasar Washed Suede Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Washed Chestnut",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Washed Chestnut",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kasar-washed-suede-ballet-sneaker-fw26?variant=52117579989290",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-aa00b7b6473c267c1749",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10226039357738:washed-chestnut",
+        "productUrl": "https://us.ash.com/products/kasar-washed-suede-ballet-sneaker-fw26?variant=52117579989290",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kasar Washed Suede Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10226039357738:washed-chestnut",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kasar-washed-suede-ballet-sneaker-fw26?variant=52117579989290"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10226039357738:washed-chestnut",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASAR-WASHEDCHESNUT-SIDEFRONT.jpg?v=1787091158",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KASAR"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kasar Washed Suede Ballet Sneaker",
+      "style": "10226039357738:washed-shale",
+      "styleType": "official-product-id",
+      "productVariantId": "10226039357738:washed-shale",
+      "url": "https://us.ash.com/products/kasar-washed-suede-ballet-sneaker-fw26?variant=52117580218666",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASAR-WASHEDSALE-SIDEFRONT_1.jpg?v=1787091158",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASAR-WASHEDSALE-SIDEFRONT_1.jpg?v=1787091158",
+          "alt": "Kasar Washed Suede Ballet Sneaker"
+        }
+      ],
+      "description": "The Kasar Washed Suede Ballet Sneaker puts a soft, lived-in spin on a retro running silhouette. Crafted from washed suede in a warm tobacco hue, it features sporty overlay detailing and a plum leather lining that peeks out at the collar for a pop of contrast. A crisp white midsole and gum outsole ground the design with an easy, everyday feel, while the low-profile build keeps it lightweight and comfortable from morning to night. Pair it with denim, joggers, or a casual dress for effortless off-duty style.",
+      "officialCategory": "AS-KASAR",
+      "colorway": "Washed Shale",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10226039357738,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Washed Shale"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kasar Washed Suede Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Washed Shale",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Washed Shale",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kasar-washed-suede-ballet-sneaker-fw26?variant=52117580218666",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-fe64207174bae4a743cb",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10226039357738:washed-shale",
+        "productUrl": "https://us.ash.com/products/kasar-washed-suede-ballet-sneaker-fw26?variant=52117580218666",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kasar Washed Suede Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10226039357738:washed-shale",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kasar-washed-suede-ballet-sneaker-fw26?variant=52117580218666"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10226039357738:washed-shale",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KASAR-WASHEDSALE-SIDEFRONT_1.jpg?v=1787091158",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KASAR"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kill Bill Ballet Sneaker",
+      "style": "10227387924778:black-edgy-pony",
+      "styleType": "official-product-id",
+      "productVariantId": "10227387924778:black-edgy-pony",
+      "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515458858",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BLACKEDGY-FRONT-SIDE.jpg?v=1784841742",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BLACKEDGY-FRONT-SIDE.jpg?v=1784841742",
+          "alt": "Kill Bill Ballet Sneaker"
+        }
+      ],
+      "description": "Step into bold style with the Kill Bill Ballet Sneaker. Designed with a striking ballet-inspired shape, this sneaker brings an effortlessly chic vibe to everyday wear. The lace-up design offers a secure fit, while the supportive rubber sole adds comfort and grip. Perfect for those seeking a fashionable yet laid-back look, Kill Bill combines modern edge with easy everyday wearability.",
+      "officialCategory": "AS-KILL BILL",
+      "colorway": "Black Edgy Pony",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10227387924778,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Black Edgy Pony"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Black Edgy Pony",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Black Edgy Pony",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515458858",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-0e97f7637ced9a6ac585",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:black-edgy-pony",
+        "productUrl": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515458858",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:black-edgy-pony",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515458858"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:black-edgy-pony",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BLACKEDGY-FRONT-SIDE.jpg?v=1784841742",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KILL BILL"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kill Bill Ballet Sneaker",
+      "style": "10227387924778:off-white-argan",
+      "styleType": "official-product-id",
+      "productVariantId": "10227387924778:off-white-argan",
+      "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515688234",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-WHITE-FRONT.jpg?v=1784841742",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-WHITE-FRONT.jpg?v=1784841742",
+          "alt": "Kill Bill Ballet Sneaker"
+        }
+      ],
+      "description": "Step into bold style with the Kill Bill Ballet Sneaker. Designed with a striking ballet-inspired shape, this sneaker brings an effortlessly chic vibe to everyday wear. The lace-up design offers a secure fit, while the supportive rubber sole adds comfort and grip. Perfect for those seeking a fashionable yet laid-back look, Kill Bill combines modern edge with easy everyday wearability.",
+      "officialCategory": "AS-KILL BILL",
+      "colorway": "Off-White/Argan",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10227387924778,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Off-White/Argan"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Off-White/Argan",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Off-White/Argan",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515688234",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-f1d89e63d3fd74dcc888",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:off-white-argan",
+        "productUrl": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515688234",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:off-white-argan",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515688234"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:off-white-argan",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-WHITE-FRONT.jpg?v=1784841742",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KILL BILL"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kill Bill Ballet Sneaker",
+      "style": "10227387924778:brown-multi-pony-cow",
+      "styleType": "official-product-id",
+      "productVariantId": "10227387924778:brown-multi-pony-cow",
+      "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515917610",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BRNMULTICOW-FRONT.jpg?v=1784841743",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BRNMULTICOW-FRONT.jpg?v=1784841743",
+          "alt": "Kill Bill Ballet Sneaker"
+        }
+      ],
+      "description": "Step into bold style with the Kill Bill Ballet Sneaker. Designed with a striking ballet-inspired shape, this sneaker brings an effortlessly chic vibe to everyday wear. The lace-up design offers a secure fit, while the supportive rubber sole adds comfort and grip. Perfect for those seeking a fashionable yet laid-back look, Kill Bill combines modern edge with easy everyday wearability.",
+      "officialCategory": "AS-KILL BILL",
+      "colorway": "Brown Multi Pony Cow",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10227387924778,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Brown Multi Pony Cow"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Brown Multi Pony Cow",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Brown Multi Pony Cow",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515917610",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-7dd79f218fb8285fe25b",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:brown-multi-pony-cow",
+        "productUrl": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515917610",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:brown-multi-pony-cow",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121515917610"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:brown-multi-pony-cow",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BRNMULTICOW-FRONT.jpg?v=1784841743",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KILL BILL"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kill Bill Ballet Sneaker",
+      "style": "10227387924778:brown-multi-pony-leopard",
+      "styleType": "official-product-id",
+      "productVariantId": "10227387924778:brown-multi-pony-leopard",
+      "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121516146986",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BRNLEPMULTI-FRONT.jpg?v=1784841742",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BRNLEPMULTI-FRONT.jpg?v=1784841742",
+          "alt": "Kill Bill Ballet Sneaker"
+        }
+      ],
+      "description": "Step into bold style with the Kill Bill Ballet Sneaker. Designed with a striking ballet-inspired shape, this sneaker brings an effortlessly chic vibe to everyday wear. The lace-up design offers a secure fit, while the supportive rubber sole adds comfort and grip. Perfect for those seeking a fashionable yet laid-back look, Kill Bill combines modern edge with easy everyday wearability.",
+      "officialCategory": "AS-KILL BILL",
+      "colorway": "Brown Multi Pony Leopard",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10227387924778,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Brown Multi Pony Leopard"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Brown Multi Pony Leopard",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Brown Multi Pony Leopard",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121516146986",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-9d9fd8c4c79cbccf0f54",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:brown-multi-pony-leopard",
+        "productUrl": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121516146986",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:brown-multi-pony-leopard",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121516146986"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:brown-multi-pony-leopard",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BRNLEPMULTI-FRONT.jpg?v=1784841742",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KILL BILL"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kill Bill Ballet Sneaker",
+      "style": "10227387924778:black-naplak",
+      "styleType": "official-product-id",
+      "productVariantId": "10227387924778:black-naplak",
+      "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121516376362",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BLACK-SIDEFRONT.jpg?v=1787090818",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BLACK-SIDEFRONT.jpg?v=1787090818",
+          "alt": "Kill Bill Ballet Sneaker"
+        }
+      ],
+      "description": "Step into bold style with the Kill Bill Ballet Sneaker. Designed with a striking ballet-inspired shape, this sneaker brings an effortlessly chic vibe to everyday wear. The lace-up design offers a secure fit, while the supportive rubber sole adds comfort and grip. Perfect for those seeking a fashionable yet laid-back look, Kill Bill combines modern edge with easy everyday wearability.",
+      "officialCategory": "AS-KILL BILL",
+      "colorway": "Black Naplak",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10227387924778,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Black Naplak"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Black Naplak",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Black Naplak",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121516376362",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-dfcaa5f88ff9087301d2",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:black-naplak",
+        "productUrl": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121516376362",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:black-naplak",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=52121516376362"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:black-naplak",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILLBILL-BLACK-SIDEFRONT.jpg?v=1787090818",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KILL BILL"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kill Bill Ballet Sneaker",
+      "style": "10227387924778:off-white-rose-brown",
+      "styleType": "official-product-id",
+      "productVariantId": "10227387924778:off-white-rose-brown",
+      "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=53072202203434",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILL_BILL_-_OFF_WHITE_ROSE_BROWN_-_3Q_FRONT.jpg?v=1792636789",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILL_BILL_-_OFF_WHITE_ROSE_BROWN_-_3Q_FRONT.jpg?v=1792636789",
+          "alt": "Kill Bill Ballet Sneaker"
+        }
+      ],
+      "description": "Step into bold style with the Kill Bill Ballet Sneaker. Designed with a striking ballet-inspired shape, this sneaker brings an effortlessly chic vibe to everyday wear. The lace-up design offers a secure fit, while the supportive rubber sole adds comfort and grip. Perfect for those seeking a fashionable yet laid-back look, Kill Bill combines modern edge with easy everyday wearability.",
+      "officialCategory": "AS-KILL BILL",
+      "colorway": "Off-White/Rose Brown",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10227387924778,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Off-White/Rose Brown"
+        }
+      ],
+      "sizesCollapsed": 1,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Off-White/Rose Brown",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Off-White/Rose Brown",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=53072202203434",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-7deb09dc5d4e2f73bc33",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:off-white-rose-brown",
+        "productUrl": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=53072202203434",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kill Bill Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:off-white-rose-brown",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kill-bill-ballet-sneaker-copy-3?variant=53072202203434"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10227387924778:off-white-rose-brown",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KILL_BILL_-_OFF_WHITE_ROSE_BROWN_-_3Q_FRONT.jpg?v=1792636789",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KILL BILL"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kore Bis X-Band Sport Sneaker",
+      "style": "10137735364906:black-edgy-pony",
+      "styleType": "official-product-id",
+      "productVariantId": "10137735364906:black-edgy-pony",
+      "url": "https://us.ash.com/products/kore-bis-x-band-sport-sneaker?variant=51563005182250",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBIS-BLACKEDGY-FRONT.jpg?v=1780503539",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBIS-BLACKEDGY-FRONT.jpg?v=1780503539",
+          "alt": "Kore Bis X-Band Sport Sneaker"
+        }
+      ],
+      "description": "Sporty with a bold ASH edge, the Kore Bis X-Band Sport Sneaker brings statement style to an easy everyday silhouette. Designed with a sleek animal-print upper, crisscross elastic straps, and a flexible low-profile fit, this sneaker feels modern, playful, and effortless. Finished with a durable rubber sole for grip and comfort, it’s perfect for casual days that call for a standout touch.",
+      "officialCategory": "AS-KORE BIS",
+      "colorway": "Black Edgy Pony",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10137735364906,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Black Edgy Pony"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kore Bis X-Band Sport Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Black Edgy Pony",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Black Edgy Pony",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-07f55fcbe2b18aed0b82",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10137735364906:black-edgy-pony",
+        "productUrl": "https://us.ash.com/products/kore-bis-x-band-sport-sneaker?variant=51563005182250",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kore Bis X-Band Sport Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10137735364906:black-edgy-pony",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kore-bis-x-band-sport-sneaker?variant=51563005182250"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10137735364906:black-edgy-pony",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBIS-BLACKEDGY-FRONT.jpg?v=1780503539",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KORE BIS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kore Bis X-Band Sport Sneaker",
+      "style": "10137735364906:leopard-pony-hair-calf",
+      "styleType": "official-product-id",
+      "productVariantId": "10137735364906:leopard-pony-hair-calf",
+      "url": "https://us.ash.com/products/kore-bis-x-band-sport-sneaker?variant=51563005411626",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBIS-BRNLEPMULTI-FRONT.jpg?v=1780503542",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBIS-BRNLEPMULTI-FRONT.jpg?v=1780503542",
+          "alt": "Kore Bis X-Band Sport Sneaker"
+        }
+      ],
+      "description": "Sporty with a bold ASH edge, the Kore Bis X-Band Sport Sneaker brings statement style to an easy everyday silhouette. Designed with a sleek animal-print upper, crisscross elastic straps, and a flexible low-profile fit, this sneaker feels modern, playful, and effortless. Finished with a durable rubber sole for grip and comfort, it’s perfect for casual days that call for a standout touch.",
+      "officialCategory": "AS-KORE BIS",
+      "colorway": "Leopard Pony Hair Calf",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10137735364906,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Leopard Pony Hair Calf"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kore Bis X-Band Sport Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Leopard Pony Hair Calf",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Leopard Pony Hair Calf",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-ee3bcb5a59fc2dc88553",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10137735364906:leopard-pony-hair-calf",
+        "productUrl": "https://us.ash.com/products/kore-bis-x-band-sport-sneaker?variant=51563005411626",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kore Bis X-Band Sport Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10137735364906:leopard-pony-hair-calf",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kore-bis-x-band-sport-sneaker?variant=51563005411626"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10137735364906:leopard-pony-hair-calf",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KOREBIS-BRNLEPMULTI-FRONT.jpg?v=1780503542",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KORE BIS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Romie Bis Hybrid Mesh Sneaker",
+      "style": "9976575721770:silver",
+      "styleType": "official-product-id",
+      "productVariantId": "9976575721770:silver",
+      "url": "https://us.ash.com/products/romie-bis-hybrid-mesh-sneaker?variant=50939613085994",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-ROME_BIS-Silver-3Q.jpg?v=1765483348",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-ROME_BIS-Silver-3Q.jpg?v=1765483348",
+          "alt": "Romie Bis Hybrid Mesh Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-ROME_BIS-Silver-PROFILE.jpg?v=1765483361",
+          "alt": "Romie Bis Hybrid Mesh Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-ROME_BIS-Silver-RI3Q.jpg?v=1765483361",
+          "alt": "Romie Bis Hybrid Mesh Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-ROME_BIS-Silver-FRONT.jpg?v=1765483361",
+          "alt": "Romie Bis Hybrid Mesh Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-ROME_BIS-Silver-TOP.jpg?v=1765483361",
+          "alt": "Romie Bis Hybrid Mesh Sneaker"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-ROME_BIS-Silver-BOTTOM.jpg?v=1765483361",
+          "alt": "Romie Bis Hybrid Mesh Sneaker"
+        }
+      ],
+      "description": "Sporty and futuristic, the ROMIE Shoe combines metallic silver panels with breathable mesh for a sleek, modern look. The slip-on design and sturdy, chunky sole provide a comfortable fit and effortless style. Perfect for those who love a bold, athleisure-inspired aesthetic, this shoe seamlessly blends high-performance features with cutting-edge design for all-day wearability.",
+      "officialCategory": "AS-ROMIE BIS",
+      "colorway": "Silver",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 9976575721770,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Silver"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Romie Bis Hybrid Mesh Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Silver",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Silver",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/romie-bis-hybrid-mesh-sneaker?variant=50939613085994",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-0522dbdd870440a56f2a",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575721770:silver",
+        "productUrl": "https://us.ash.com/products/romie-bis-hybrid-mesh-sneaker?variant=50939613085994",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Romie Bis Hybrid Mesh Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575721770:silver",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/romie-bis-hybrid-mesh-sneaker?variant=50939613085994"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "9976575721770:silver",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-ROME_BIS-Silver-3Q.jpg?v=1765483348",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-ROMIE BIS"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kauri Satin Ballet Sneaker",
+      "style": "10376383856938:black-slate",
+      "styleType": "official-product-id",
+      "productVariantId": "10376383856938:black-slate",
+      "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071012725034",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI-BLACKSLATE-3Q-FRONT.jpg?v=1792635203",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI-BLACKSLATE-3Q-FRONT.jpg?v=1792635203",
+          "alt": "Kauri Satin Ballet Sneaker"
+        }
+      ],
+      "description": "Sporty meets graceful in the KAURI Ballet Sneaker. A calf leather upper with satin details takes the shape of a classic ballet flat with a round toe, finished with laces and a rubber sole for a modern, athletic twist. Each pair comes with two sets of laces, one cotton and one satin, so you can switch up the look. With a 0.75\" heel, it keeps you grounded and comfortable from morning errands to evening plans. Product Details Upper Material: 94% Calf Leather + 6% Fabric Lining: Leather/Fabric Lining Material: 80% Pig Leather - 20% Polyester Closure: Laces – includes 2 sets of laces (1 cotton, 1 satin) Sole Type: Rubber Product Style: Round Toe Heel Type: Rubber Heel Height: 0.75 Weight: 2.20 LBS",
+      "officialCategory": "AS-KAURI",
+      "colorway": "Black/Slate",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10376383856938,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Black/Slate"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kauri Satin Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Black/Slate",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Black/Slate",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071012725034",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-dedf4ef0dcc16762b18c",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:black-slate",
+        "productUrl": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071012725034",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kauri Satin Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:black-slate",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071012725034"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:black-slate",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI-BLACKSLATE-3Q-FRONT.jpg?v=1792635203",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KAURI"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kauri Satin Ballet Sneaker",
+      "style": "10376383856938:cappuccino",
+      "styleType": "official-product-id",
+      "productVariantId": "10376383856938:cappuccino",
+      "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071012987178",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_CAPUCCHINO-3Q_FRONT.jpg?v=1792635307",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_CAPUCCHINO-3Q_FRONT.jpg?v=1792635307",
+          "alt": "Kauri Satin Ballet Sneaker"
+        }
+      ],
+      "description": "Sporty meets graceful in the KAURI Ballet Sneaker. A calf leather upper with satin details takes the shape of a classic ballet flat with a round toe, finished with laces and a rubber sole for a modern, athletic twist. Each pair comes with two sets of laces, one cotton and one satin, so you can switch up the look. With a 0.75\" heel, it keeps you grounded and comfortable from morning errands to evening plans. Product Details Upper Material: 94% Calf Leather + 6% Fabric Lining: Leather/Fabric Lining Material: 80% Pig Leather - 20% Polyester Closure: Laces – includes 2 sets of laces (1 cotton, 1 satin) Sole Type: Rubber Product Style: Round Toe Heel Type: Rubber Heel Height: 0.75 Weight: 2.20 LBS",
+      "officialCategory": "AS-KAURI",
+      "colorway": "Cappuccino",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10376383856938,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Cappuccino"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kauri Satin Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Cappuccino",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Cappuccino",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071012987178",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-8c9e39dc29e4dba0a66c",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:cappuccino",
+        "productUrl": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071012987178",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kauri Satin Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:cappuccino",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071012987178"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:cappuccino",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_CAPUCCHINO-3Q_FRONT.jpg?v=1792635307",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KAURI"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kauri Satin Ballet Sneaker",
+      "style": "10376383856938:desert-off-white",
+      "styleType": "official-product-id",
+      "productVariantId": "10376383856938:desert-off-white",
+      "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013249322",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_DESSERT_OFF_WHITE-_3Q_FRONT.jpg?v=1792635428",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_DESSERT_OFF_WHITE-_3Q_FRONT.jpg?v=1792635428",
+          "alt": "Kauri Satin Ballet Sneaker"
+        }
+      ],
+      "description": "Sporty meets graceful in the KAURI Ballet Sneaker. A calf leather upper with satin details takes the shape of a classic ballet flat with a round toe, finished with laces and a rubber sole for a modern, athletic twist. Each pair comes with two sets of laces, one cotton and one satin, so you can switch up the look. With a 0.75\" heel, it keeps you grounded and comfortable from morning errands to evening plans. Product Details Upper Material: 94% Calf Leather + 6% Fabric Lining: Leather/Fabric Lining Material: 80% Pig Leather - 20% Polyester Closure: Laces – includes 2 sets of laces (1 cotton, 1 satin) Sole Type: Rubber Product Style: Round Toe Heel Type: Rubber Heel Height: 0.75 Weight: 2.20 LBS",
+      "officialCategory": "AS-KAURI",
+      "colorway": "Desert/Off White",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10376383856938,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Desert/Off White"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kauri Satin Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Desert/Off White",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Desert/Off White",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013249322",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-70b55876d61ac5358c28",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:desert-off-white",
+        "productUrl": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013249322",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kauri Satin Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:desert-off-white",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013249322"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:desert-off-white",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_DESSERT_OFF_WHITE-_3Q_FRONT.jpg?v=1792635428",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KAURI"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kauri Satin Ballet Sneaker",
+      "style": "10376383856938:off-white-shark",
+      "styleType": "official-product-id",
+      "productVariantId": "10376383856938:off-white-shark",
+      "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013511466",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_SHARK_-_3Q_FRONT.jpg?v=1792635528",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_SHARK_-_3Q_FRONT.jpg?v=1792635528",
+          "alt": "Kauri Satin Ballet Sneaker"
+        }
+      ],
+      "description": "Sporty meets graceful in the KAURI Ballet Sneaker. A calf leather upper with satin details takes the shape of a classic ballet flat with a round toe, finished with laces and a rubber sole for a modern, athletic twist. Each pair comes with two sets of laces, one cotton and one satin, so you can switch up the look. With a 0.75\" heel, it keeps you grounded and comfortable from morning errands to evening plans. Product Details Upper Material: 94% Calf Leather + 6% Fabric Lining: Leather/Fabric Lining Material: 80% Pig Leather - 20% Polyester Closure: Laces – includes 2 sets of laces (1 cotton, 1 satin) Sole Type: Rubber Product Style: Round Toe Heel Type: Rubber Heel Height: 0.75 Weight: 2.20 LBS",
+      "officialCategory": "AS-KAURI",
+      "colorway": "Off White/Shark",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10376383856938,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Off White/Shark"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kauri Satin Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Off White/Shark",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Off White/Shark",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013511466",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-659f881f382636360e2e",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:off-white-shark",
+        "productUrl": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013511466",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kauri Satin Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:off-white-shark",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013511466"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:off-white-shark",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_SHARK_-_3Q_FRONT.jpg?v=1792635528",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KAURI"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kauri Satin Ballet Sneaker",
+      "style": "10376383856938:whisky",
+      "styleType": "official-product-id",
+      "productVariantId": "10376383856938:whisky",
+      "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013773610",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_WHISKY_-_3Q_FRONT.jpg?v=1792635618",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_WHISKY_-_3Q_FRONT.jpg?v=1792635618",
+          "alt": "Kauri Satin Ballet Sneaker"
+        }
+      ],
+      "description": "Sporty meets graceful in the KAURI Ballet Sneaker. A calf leather upper with satin details takes the shape of a classic ballet flat with a round toe, finished with laces and a rubber sole for a modern, athletic twist. Each pair comes with two sets of laces, one cotton and one satin, so you can switch up the look. With a 0.75\" heel, it keeps you grounded and comfortable from morning errands to evening plans. Product Details Upper Material: 94% Calf Leather + 6% Fabric Lining: Leather/Fabric Lining Material: 80% Pig Leather - 20% Polyester Closure: Laces – includes 2 sets of laces (1 cotton, 1 satin) Sole Type: Rubber Product Style: Round Toe Heel Type: Rubber Heel Height: 0.75 Weight: 2.20 LBS",
+      "officialCategory": "AS-KAURI",
+      "colorway": "Whisky",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10376383856938,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Whisky"
+        }
+      ],
+      "sizesCollapsed": 8,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kauri Satin Ballet Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Whisky",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Whisky",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "hybridReview": {
+        "approved": true,
+        "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013773610",
+        "type": "hybrid",
+        "sneakerSole": true,
+        "checkedAt": "2026-11-04T09:53:40.619Z",
+        "method": "official-product-sneaker-description"
+      },
+      "footwearCategory": "hybrid",
+      "id": "arrival-192531cc8594149b924e",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:whisky",
+        "productUrl": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013773610",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kauri Satin Ballet Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:whisky",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kauri-satin-ballet-sneaker?variant=53071013773610"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10376383856938:whisky",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KAURI_-_WHISKY_-_3Q_FRONT.jpg?v=1792635618",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KAURI"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kore Low Profile X-Band Sneaker",
+      "style": "10018048573738:black",
+      "styleType": "official-product-id",
+      "productVariantId": "10018048573738:black",
+      "url": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=51059105235242",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KORE-Black-3Q.jpg?v=1769824377",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KORE-Black-3Q.jpg?v=1769824377",
+          "alt": "Kore Low Profile X-Band Sneaker"
+        }
+      ],
+      "description": "The Kore sneaker combines sporty style with everyday comfort. Featuring a breathable mesh and suede upper, this design ensures a lightweight and flexible fit. The unique cross-strap detail adds an extra touch of flair, while the supportive rubber sole provides durability and grip. Ideal for active days or casual wear, Kore offers both style and comfort in every step.",
+      "officialCategory": "AS-KORE",
+      "colorway": "Black",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10018048573738,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Black"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kore Low Profile X-Band Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Black",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Black",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-f882073022a1f6c92eea",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:black",
+        "productUrl": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=51059105235242",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kore Low Profile X-Band Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:black",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=51059105235242"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:black",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KORE-Black-3Q.jpg?v=1769824377",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KORE"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kore Low Profile X-Band Sneaker",
+      "style": "10018048573738:rose-talc",
+      "styleType": "official-product-id",
+      "productVariantId": "10018048573738:rose-talc",
+      "url": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=51059105464618",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KORE-Rose_Talc-3Q.jpg?v=1769824377",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KORE-Rose_Talc-3Q.jpg?v=1769824377",
+          "alt": "Kore Low Profile X-Band Sneaker"
+        }
+      ],
+      "description": "The Kore sneaker combines sporty style with everyday comfort. Featuring a breathable mesh and suede upper, this design ensures a lightweight and flexible fit. The unique cross-strap detail adds an extra touch of flair, while the supportive rubber sole provides durability and grip. Ideal for active days or casual wear, Kore offers both style and comfort in every step.",
+      "officialCategory": "AS-KORE",
+      "colorway": "Rose / Talc",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10018048573738,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Rose / Talc"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kore Low Profile X-Band Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Rose / Talc",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Rose / Talc",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-18b22a25115e7fcf4c38",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:rose-talc",
+        "productUrl": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=51059105464618",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kore Low Profile X-Band Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:rose-talc",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=51059105464618"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:rose-talc",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KORE-Rose_Talc-3Q.jpg?v=1769824377",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KORE"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kore Low Profile X-Band Sneaker",
+      "style": "10018048573738:silver-white",
+      "styleType": "official-product-id",
+      "productVariantId": "10018048573738:silver-white",
+      "url": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=51059105693994",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KORE-Silver_White-3Q_56bba90e-30e3-4466-a72b-9c4433587d33.jpg?v=1769824065",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KORE-Silver_White-3Q_56bba90e-30e3-4466-a72b-9c4433587d33.jpg?v=1769824065",
+          "alt": "Kore Low Profile X-Band Sneaker"
+        }
+      ],
+      "description": "The Kore sneaker combines sporty style with everyday comfort. Featuring a breathable mesh and suede upper, this design ensures a lightweight and flexible fit. The unique cross-strap detail adds an extra touch of flair, while the supportive rubber sole provides durability and grip. Ideal for active days or casual wear, Kore offers both style and comfort in every step.",
+      "officialCategory": "AS-KORE",
+      "colorway": "Silver / White",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10018048573738,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Silver / White"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kore Low Profile X-Band Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Silver / White",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Silver / White",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-f3f20cb2a569b1e2a517",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:silver-white",
+        "productUrl": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=51059105693994",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kore Low Profile X-Band Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:silver-white",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=51059105693994"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:silver-white",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/AS-KORE-Silver_White-3Q_56bba90e-30e3-4466-a72b-9c4433587d33.jpg?v=1769824065",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KORE"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kore Low Profile X-Band Sneaker",
+      "style": "10018048573738:off-white-argan",
+      "styleType": "official-product-id",
+      "productVariantId": "10018048573738:off-white-argan",
+      "url": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=53344524304682",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KORE_-_OFF_WHITE_-_3Q_FRONT.jpg?v=1793135869",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KORE_-_OFF_WHITE_-_3Q_FRONT.jpg?v=1793135869",
+          "alt": "Kore Low Profile X-Band Sneaker"
+        }
+      ],
+      "description": "The Kore sneaker combines sporty style with everyday comfort. Featuring a breathable mesh and suede upper, this design ensures a lightweight and flexible fit. The unique cross-strap detail adds an extra touch of flair, while the supportive rubber sole provides durability and grip. Ideal for active days or casual wear, Kore offers both style and comfort in every step.",
+      "officialCategory": "AS-KORE",
+      "colorway": "Off-White / Argan",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10018048573738,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Off-White / Argan"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kore Low Profile X-Band Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Off-White / Argan",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Off-White / Argan",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-4f6443d08d5dbae626b1",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:off-white-argan",
+        "productUrl": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=53344524304682",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kore Low Profile X-Band Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:off-white-argan",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=53344524304682"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:off-white-argan",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KORE_-_OFF_WHITE_-_3Q_FRONT.jpg?v=1793135869",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KORE"
+    },
+    {
+      "brand": "ASH",
+      "platform": "shopify",
+      "name": "Kore Low Profile X-Band Sneaker",
+      "style": "10018048573738:rose-mink",
+      "styleType": "official-product-id",
+      "productVariantId": "10018048573738:rose-mink",
+      "url": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=53344524534058",
+      "image": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KORE_-_ROSE_MINK_-_3Q_FRONT.jpg?v=1793135992",
+      "imageCandidates": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KORE_-_ROSE_MINK_-_3Q_FRONT.jpg?v=1793135992",
+          "alt": "Kore Low Profile X-Band Sneaker"
+        }
+      ],
+      "description": "The Kore sneaker combines sporty style with everyday comfort. Featuring a breathable mesh and suede upper, this design ensures a lightweight and flexible fit. The unique cross-strap detail adds an extra touch of flair, while the supportive rubber sole provides durability and grip. Ideal for active days or casual wear, Kore offers both style and comfort in every step.",
+      "officialCategory": "AS-KORE",
+      "colorway": "Rose / Mink",
+      "colors": [],
+      "gender": "",
+      "country": "",
+      "firstSeen": "2026-11-04T09:53:40.619Z",
+      "productVerifiedAt": "2026-11-04T09:53:40.619Z",
+      "productEvidenceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+      "sourceSignals": [],
+      "shopifyProductId": 10018048573738,
+      "variantAxis": [
+        {
+          "name": "Color",
+          "kind": "colour",
+          "value": "Rose / Mink"
+        }
+      ],
+      "sizesCollapsed": 7,
+      "typeEvidence": {
+        "field": "title",
+        "excerpt": "Kore Low Profile X-Band Sneaker",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "colorwayEvidence": {
+        "value": "Rose / Mink",
+        "strategy": "variant-option",
+        "field": "Color",
+        "label": "Rose / Mink",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "footwearCategory": "sneaker",
+      "id": "arrival-33ff323e9386c9187a87",
+      "arrivalEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:rose-mink",
+        "productUrl": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=53344524534058",
+        "kind": "new-arrivals-listing",
+        "url": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "excerpt": "Kore Low Profile X-Band Sneaker",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76"
+      },
+      "officialProductEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:rose-mink",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://us.ash.com/products/kore-low-profile-x-band-sneaker?variant=53344524534058"
+      },
+      "officialImageEvidence": {
+        "verified": true,
+        "brand": "ASH",
+        "style": "10018048573738:rose-mink",
+        "verifiedAt": "2026-11-04T09:53:40.619Z",
+        "verificationMethod": "official-new-listing-sku-image",
+        "contentHash": "6a7f52ec656dffbd73dff7d40c13f6c7a6c2b789244701fe0fafc7e013d29f76",
+        "identifierType": "official-product-id",
+        "url": "https://cdn.shopify.com/s/files/1/0679/5748/9962/files/KORE_-_ROSE_MINK_-_3Q_FRONT.jpg?v=1793135992",
+        "sourceUrl": "https://us.ash.com/collections/new-in/products.json?limit=250&page=1"
+      },
+      "sourceProductType": "AS-KORE"
+    }
+  ],
+  "coverage": [
+    {
+      "brand": "ASH",
+      "url": "https://us.ash.com/collections/new-in",
+      "products": 36,
+      "verified": 41,
+      "exhausted": true,
+      "error": "",
+      "pages": 2
+    }
+  ]
+}

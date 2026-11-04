@@ -9,10 +9,15 @@ try{
  await page.locator('[data-source="brand"]').click();
  await page.locator('[data-brand-group="SPORTS"]').click();await page.waitForFunction(()=>document.querySelectorAll('.product-card').length>0);
  const sports=await page.locator('#result-count').innerText();
+ await page.locator('#brand-list input[data-brand="PUMA"]').check();await page.locator('#search').fill('Achillium');await page.locator('#search').press('Enter');
+ await page.waitForFunction(()=>document.querySelectorAll('.product-card').length===1&&document.querySelector('.card-name')?.textContent.includes('Achillium'));
+ assert.equal(await page.locator('.product-card .color-chip').count(),4,'PUMA Korea New Achillium colors share one card');
+ await page.locator('.product-card img').first().evaluate(img=>img.decode());await fs.mkdir('reports',{recursive:true});await page.screenshot({path:'reports/puma-achillium-new-preview.png'});
+ await page.locator('#search').fill('');await page.locator('#search').press('Enter');await page.locator('#brand-list input[data-brand="PUMA"]').uncheck();
  assert(await page.locator('#brand-list input[data-brand="FILA China"]').count(),'FILA China appears separately');
  await page.locator('#brand-list input[data-brand="FILA China"]').check();
  await page.waitForFunction(()=>[...document.querySelectorAll('.product-card')].every(c=>c.dataset.brand==='FILA China')&&document.querySelectorAll('.product-card').length>0);
- const fila=await page.locator('#result-count').innerText();assert.equal(Number(fila.replaceAll(',','')),66,'Reviewed FILA design families');
+ const fila=await page.locator('#result-count').innerText();assert(Number(fila.replaceAll(',',''))>=66,'Existing reviewed FILA families remain available with new arrivals');
  assert(await page.locator('.product-card .color-chip').count()>0,'FILA variants appear as colour chips');
  await page.locator('.product-card img').first().evaluate(img=>img.decode());
  await fs.mkdir('reports',{recursive:true});await page.locator('#product-grid').scrollIntoViewIfNeeded();await page.screenshot({path:'reports/fila-china-official-live-preview.png'});
