@@ -7,6 +7,7 @@
 // by redirecting it to the internal host. Internal canonical and preview
 // domains fail closed without the existing password secret; other public
 // preview hosts contain no private CATWALK files.
+import {productImageOrigin} from '../server/product-image-origin.mjs';
 export async function onRequest(context) {
   const url=new URL(context.request.url);
   if(url.hostname==='shoes-update.pages.dev') {
@@ -30,7 +31,15 @@ export async function onRequest(context) {
     let supplied = '';
     try { supplied = atob(encoded); } catch { supplied = ''; }
     const colon = supplied.indexOf(':');
-    if (colon >= 0 && supplied.slice(colon + 1) === password) return context.next();
+    if (colon >= 0 && supplied.slice(colon + 1) === password) {
+      const response=await context.next();
+      // Card thumbnails and all existing static files keep the direct path.
+      // Only a missing hashed product original may consult the pinned origin.
+      if(/^\/images\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(url.pathname)&&(response.status===404||response.ok&&!response.headers.get('content-type')?.startsWith('image/'))){
+        const original=await productImageOrigin(context);if(original){await response.body?.cancel();return original;}
+      }
+      return response;
+    }
   }
 
   return new Response('Authentication required.', {

@@ -4,6 +4,9 @@ import os from 'node:os';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 import {decodeCatalog} from '../public/assets/catalog-wire.mjs';
+import {execFileSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+import {deferredProductOriginals} from './deployment-photo-budget.mjs';
 const hashedPhoto=/^images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/;
 const operatorReport=/^data\/lux-[^/]*(?:report|summary|reconciliation)\.json$/;
 async function files(directory,prefix=''){
@@ -23,7 +26,17 @@ export async function prepareDeploymentAssets(publicDirectory){
   const text=await fs.readFile(path.join(source,relative),'utf8');
   for(const match of text.matchAll(/\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)/g))referenced.add(match[0].slice(1));
  }
- const selected=all.filter(relative=>!operatorReport.test(relative)&&(!hashedPhoto.test(relative)||referenced.has(relative)));
+ let selected=all.filter(relative=>!operatorReport.test(relative)&&(!hashedPhoto.test(relative)||referenced.has(relative)));
+ let origins=null;
+ if(selected.length>19900){
+  const catalog=JSON.parse(await fs.readFile(path.join(source,'data/catalog.json'),'utf8')),deferred=deferredProductOriginals(catalog,selected,19900),root=fileURLToPath(new URL('../',import.meta.url));
+  const commit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
+  const tree=execFileSync('git',['ls-tree','-r','--format=%(objectname) %(path)',commit,'--','public/images'],{cwd:root,encoding:'utf8',maxBuffer:10*1024*1024});
+  const blobs=new Map(tree.trim().split('\n').map(line=>[line.slice(41),line.slice(0,40)]));
+  for(const asset of deferred){const bytes=await fs.readFile(path.join(source,asset)),blob=createHash('sha1').update(Buffer.from('blob '+bytes.length+'\0')).update(bytes).digest('hex');assert.equal(blob,blobs.get('public/'+asset),'Only committed immutable public product originals may use the origin cache: '+asset);assert.equal(createHash('sha256').update(bytes).digest('hex'),path.basename(asset).split('.')[0]);}
+  origins={schemaVersion:1,commit,paths:[...deferred].map(p=>'/'+p)};
+  selected=selected.filter(p=>!deferred.has(p));
+ }
  for(const relative of referenced)if(!available.has(relative))throw Error('Referenced deployment photo missing: '+relative);
  const directory=await fs.mkdtemp(path.join(os.tmpdir(),'shoes-internal-assets-'));
  const hasWire=available.has('data/catalog-ui.json');
@@ -31,8 +44,9 @@ export async function prepareDeploymentAssets(publicDirectory){
  // Assets are immutable during an upload. Same-volume hard links avoid copying
  // the full photo library into temporary staging on a nearly-full collector PC.
  let next=0;await Promise.all(Array.from({length:8},async()=>{while(next<selected.length){const relative=selected[next++];const destination=path.join(directory,relative),input=path.join(source,hasWire&&relative==='data/catalog.json'?'data/catalog-ui.json':relative);await fs.mkdir(path.dirname(destination),{recursive:true});if((await fs.stat(input)).size>25*1024*1024)throw Error('Deployment asset exceeds 25 MiB: '+relative);try{await fs.link(input,destination);}catch(error){if(!['EXDEV','EPERM','ENOTSUP'].includes(error.code))throw error;await fs.copyFile(input,destination);}}}));
+ if(origins){await fs.writeFile(path.join(directory,'data/product-image-origins.json'),JSON.stringify(origins)+'\n');selected.push('data/product-image-origins.json');}
  const hashes={};for(const relative of selected.filter(r=>/^(?:data\/.*\.json|deployment\.json)$/.test(r)))hashes[relative]=createHash('sha256').update(await fs.readFile(path.join(directory,relative))).digest('hex');
- return {directory,manifest:{files:selected.length,wireCatalog:hasWire,referencedPhotos:referenced.size,unusedPhotosOmitted:all.filter(p=>hashedPhoto.test(p)&&!referenced.has(p)).length,operatorReportsOmitted:all.filter(p=>operatorReport.test(p)).length,catwalkFiles:selected.filter(p=>p.startsWith('catwalk/')).length,hashes}};
+ return {directory,manifest:{files:selected.length,wireCatalog:hasWire,referencedPhotos:referenced.size,deferredProductOriginals:origins?.paths.length||0,unusedPhotosOmitted:all.filter(p=>hashedPhoto.test(p)&&!referenced.has(p)).length,operatorReportsOmitted:all.filter(p=>operatorReport.test(p)).length,catwalkFiles:selected.filter(p=>p.startsWith('catwalk/')).length,hashes}};
 }
 export async function removeDeploymentAssets(directory){
  const absolute=path.resolve(directory),parent=path.resolve(os.tmpdir());
