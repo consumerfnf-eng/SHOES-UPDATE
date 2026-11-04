@@ -8,6 +8,19 @@ export function openBoardStore(){
 async function read(store,key){const db=await openBoardStore();return new Promise((resolve,reject)=>{const r=db.transaction(store).objectStore(store);const q=key==null?r.getAll():r.get(key);q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error);});}
 export const listBoards=()=>read('boards');
 export const getBoardAsset=id=>read('assets',id);
+export async function permanentlyDeleteBoard(id,revision){
+ const db=await openBoardStore();return new Promise((resolve,reject)=>{
+  const tx=db.transaction(['boards','assets'],'readwrite'),store=tx.objectStore('boards');let reason,removed=[];
+  const request=store.getAll();request.onsuccess=()=>{
+   const rows=request.result,board=rows.find(b=>b.id===id);
+   if((!board?.deletedAt&&!board?.archivedAt)||board.revision!==revision){reason=Error('보드 상태가 변경되었습니다. 새로고침 후 휴지통을 확인하세요.');tx.abort();return;}
+   const retained=new Set(rows.filter(b=>b.id!==id).flatMap(b=>b.entries.map(e=>e.assetId)));
+   removed=[...new Set(board.entries.map(e=>e.assetId))].filter(asset=>!retained.has(asset));
+   store.delete(id);for(const asset of removed)tx.objectStore('assets').delete(asset);
+  };
+  tx.oncomplete=()=>resolve(removed);tx.onabort=()=>reject(reason||tx.error||Error('영구삭제하지 못했습니다.'));tx.onerror=()=>reject(tx.error);
+ });
+}
 export async function saveBoard(board,assets=[]){
  const db=await openBoardStore();return new Promise((resolve,reject)=>{const tx=db.transaction(['boards','assets'],'readwrite'),store=tx.objectStore('boards');let saved,reason;const old=store.get(board.id);
  old.onsuccess=()=>{if((old.result?.revision||0)!==(board.revision||0)){reason=Error('다른 탭에서 이 보드를 수정했습니다. 백업을 저장한 뒤 새로고침하세요.');tx.abort();return;}saved={...structuredClone(board),revision:(board.revision||0)+1,updatedAt:new Date().toISOString()};for(const asset of assets)tx.objectStore('assets').put(asset);store.put(saved);};

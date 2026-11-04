@@ -44,6 +44,7 @@ export function productBrandNames(product, today = kstToday()) {
   return [...new Set([product.brand,...collaborators].filter(Boolean))];
 }
 export function visibleSocialMetrics(product, today = kstToday(), {now=Date.now()} = {}) {
+  if(!product.socialMetrics?.length)return [];
   if(!officialImageUrl(product,today))return [];
   const units={'search-count':'searches','hashtag-post-count':'posts','view-count':'views'};
   const cutoff=shiftCalendarMonths(today,-3);
@@ -80,7 +81,7 @@ export function sourceMatches(product, type, today = kstToday()) {
   if(['retail','newsletter'].includes(type))return false;
   if(type==='media')return product.popularity?.media===true;
   if(type==='brand')return officialTabScope(product,today)&&releaseState(product,today)==='released'&&!!officialProductUrl(product,today)&&!!officialImageUrl(product,today);
-  if(type==='sns')return !!officialImageUrl(product,today)&&visibleSocialMetrics(product,today).some(m=>['search-count','hashtag-post-count'].includes(m.metric)&&m.value>0);
+  if(type==='sns')return !!product.socialMetrics?.length&&!!officialImageUrl(product,today)&&visibleSocialMetrics(product,today).some(m=>['search-count','hashtag-post-count'].includes(m.metric)&&m.value>0);
   return product.popularity?.[type]===true;
 }
 export function categoryMatches(product, key) {
