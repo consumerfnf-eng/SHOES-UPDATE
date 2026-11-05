@@ -36,8 +36,11 @@ export async function syncAdminSnapshot(){
  const schema=await fs.readFile('server/admin-schema.sql','utf8');
  const sql=schema+'\n'+`INSERT OR IGNORE INTO admin_snapshots (id,created_at,data) VALUES (${quote(snapshot.id)},${quote(snapshot.generatedAt)},${quote(JSON.stringify(snapshot))});\n`;
  const file='.secrets/admin-snapshot.sql';await fs.writeFile(file,sql,{mode:0o600});
- const run=spawnSync('npx',['wrangler','d1','execute','shoes-admin-monitor','--remote','--file',file],{stdio:'pipe',encoding:'utf8',shell:process.platform==='win32'});
- if(run.status!==0)throw Error('Administrator snapshot synchronization failed. Check the D1 binding.');
+ let run;for(let attempt=0;attempt<3;attempt++){
+  run=spawnSync('npx',['wrangler','d1','execute','shoes-admin-monitor','--remote','--file',file],{stdio:'pipe',encoding:'utf8',shell:process.platform==='win32'});
+  if(run.status===0)break;if(attempt<2)await new Promise(resolve=>setTimeout(resolve,1000*(attempt+1)));
+ }
+ if(run.status!==0){await fs.writeFile('.secrets/admin-sync-error.log',(run.stderr||'')+'\n'+(run.stdout||''),{mode:0o600});throw Error('Administrator snapshot synchronization failed. Diagnostics: .secrets/admin-sync-error.log');}
  console.log(`Administrator monitoring snapshot: ${snapshot.brands.length} brands`);return snapshot;
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){if(process.argv.includes('--sync'))await syncAdminSnapshot();else{await fs.mkdir('reports',{recursive:true});const s=await buildAdminSnapshot();await fs.writeFile('reports/admin-monitor-snapshot.json',JSON.stringify(s,null,2));console.log('Administrator snapshot prepared for '+s.brands.length+' brands');}}

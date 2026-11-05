@@ -85,3 +85,8 @@ test('owner chooses a separate password; rotation rejects the team password, rev
  assert.equal((await f.request('/api/admin/login',{method:'POST',body:{password}})).status,401);
  assert.equal((await f.request('/api/admin/login',{method:'POST',body:{password:next}})).status,200);
 });
+
+test('protected HTML uses canonical Pages asset URLs instead of redirecting to static files',async()=>{
+ const f=fixture();f.env.ASSETS.fetch=async request=>{const path=new URL(request.url).pathname;return path.endsWith('.html')?Response.redirect(origin+path.replace(/\.html$/,''),308):new Response('<main>Protected canonical page</main>');};
+ assert.equal((await f.request('/admin/login')).status,200);const {cookie}=await f.login();assert.equal((await f.request('/admin/',{cookie})).status,200);
+});

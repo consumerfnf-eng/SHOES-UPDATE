@@ -21,7 +21,10 @@ export function adminPath(raw){
 }
 export function isAdminPath(path){const p=adminPath(path);return p==='/admin'||p.startsWith('/admin/')||p==='/api/admin'||p.startsWith('/api/admin/');}
 async function asset(context,path){
- const url=new URL(path,context.request.url),response=await context.env.ASSETS.fetch(new Request(url,{method:'GET'}));
+ // Pages redirects .html and /index.html requests; use the canonical asset URL
+ // so the private response is rendered here instead of following a static redirect.
+ const canonical=path.replace(/\/index\.html$/,'/').replace(/\.html$/,'');
+ const url=new URL(canonical,context.request.url),response=await context.env.ASSETS.fetch(new Request(url,{method:'GET'}));
  if(!response.ok)return json({error:'관리자 화면을 불러오지 못했습니다.'},503);
  return new Response(context.request.method==='HEAD'?null:response.body,{status:response.status,headers:new Headers([...response.headers,...Object.entries(headers)])});
 }
