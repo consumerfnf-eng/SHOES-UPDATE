@@ -1,6 +1,7 @@
 import {createHash} from 'node:crypto';
 import {setTimeout as sleep} from 'node:timers/promises';
 import {pathToFileURL} from 'node:url';
+import {nikeApiProductExclusion} from '../public/assets/official-category-api.mjs';
 
 export const NIKE_NEW_SOURCES = Object.freeze({
   Nike: 'https://www.nike.com/w/new-shoes-3n82yzy7ok',
@@ -16,7 +17,7 @@ const caller = 'com.nike.commerce.nikedotcom.web';
 const categories = new Set([...Object.values(NIKE_NEW_SOURCES), ...NIKE_ADULT_NEW_SOURCES]);
 const digest = value => createHash('sha256').update(value).digest('hex');
 const child = /\b(?:kids?|children|boys?|girls?|youth|junior|baby|babies|toddlers?|infants?|preschool)\b/i;
-const notSneaker = /\b(?:cleats?|spikes?|(?:duck)?boots?|sandals?|slides?|mules?|clogs?|slippers?|loafers?|socks?|gift\s*cards?)\b/i;
+const ownBrand = row => [row.officialBrand, row.brandName, row.productBrand, row.brand, row.copy?.brand].map(v => typeof v === 'string' ? v : v?.name || v?.brandName || '').find(v => v.trim()) || '';
 const upcoming = /COMING_SOON|coming soon|upcoming|pre[ -]?order|available (?:on|at)/i;
 
 function category(value) {
@@ -127,7 +128,7 @@ function providerPayload(record, expected) {
   return {payload: {canonicalUrl: p.canonical_url, marketplace: p.country, language: p.language,
     productGroupings: p.groups.map(g => ({cardType: g.card_type, products: g.variants?.map(v => ({
       productCode: v.style_color, productType: v.product_type, globalProductId: v.global_product_id, merchProductId: v.merch_product_id,
-      groupKey: v.group_key, copy: {title: v.title, subTitle: v.subtitle}, displayColors: {colorDescription: v.color},
+      groupKey: v.group_key, ...(v.brand_name || v.brand ? {officialBrand: v.brand_name || v.brand} : {}), copy: {title: v.title, subTitle: v.subtitle}, displayColors: {colorDescription: v.color},
       colorwayImages: {squarishURL: v.images?.square, portraitURL: v.images?.portrait}, pdpUrl: {url: v.url},
       prices: {currency: v.price?.currency, currentPrice: v.price?.current}, featuredAttributes: v.attributes, badgeLabel: v.badge,
     }))})), pages: {next: p.next_cursor, totalResources: p.total_resources, totalPages: p.total_pages}},
@@ -182,7 +183,8 @@ function excludedReason(row) {
   const text = `${row.copy?.title ?? ''} ${row.copy?.subTitle ?? ''}`;
   if (row.productType !== 'FOOTWEAR') return 'not-footwear';
   if (child.test(text)) return 'children';
-  if (notSneaker.test(text)) return 'not-sneakers';
+  const excludedType = nikeApiProductExclusion({title: row.copy?.title, subTitle: row.copy?.subTitle, ownBrand: ownBrand(row)});
+  if (excludedType) return excludedType;
   if (upcoming.test(`${row.badgeLabel ?? ''} ${row.badgeAttribute ?? ''} ${(row.featuredAttributes ?? []).join(' ')}`)) return 'upcoming';
   if (row.customization || /\bcustom\b|\bby you\b/i.test(text)) return 'custom-product';
   if (!/\b(?:shoes?|sneakers?)\b/i.test(row.copy?.subTitle ?? '')) return 'unproven-sneaker-type';
@@ -221,6 +223,7 @@ function productRecord(entry, adultEntry, brand, at) {
   const proof = {verified: true, brand, style, verifiedAt: at, verificationMethod: 'official-new-category-json-variant',
     contentHash: page.contentHash, sourceUrl: page.url, categoryUrl: page.sourceUrl, transport: page.transport,
     jsonPointer: pointer, payloadPointer: page.transport === 'nike-com/products/search' ? '/data/alexandria/0/data' : '',
+    ...(ownBrand(row) ? {ownBrand: ownBrand(row)} : {}),
     provenance: page.provenance, globalProductId: row.globalProductId, merchProductId: row.merchProductId, apiVariant};
   const scopeEvidence = {verified: true, style, audience: 'adult', url: adultEntry.page.sourceUrl, sourceUrl: adultEntry.page.url,
     contentHash: adultEntry.page.contentHash, jsonPointer: adultEntry.pointer, transport: adultEntry.page.transport, verifiedAt: at};
@@ -245,6 +248,7 @@ function productRecord(entry, adultEntry, brand, at) {
  */
 export function hasBoundNikeApiVariant(product) {
   try {
+    if (nikeApiProductExclusion({title: product.name, subTitle: product.officialCategory, ownBrand: [product.officialBrand, product.officialProductEvidence?.ownBrand], assignedBrand: product.brand})) return false;
     const p = product.officialProductEvidence, i = product.officialImageEvidence, a = product.arrivalEvidence, v = p?.apiVariant;
     if (!v || v.version !== 1 || v.verified !== true || v.paginationComplete !== true ||
         !Object.hasOwn(NIKE_NEW_SOURCES, product.brand) || v.brand !== product.brand || v.style !== product.style ||
@@ -342,6 +346,8 @@ export async function collectNikeOfficialNew({read = readNikeOfficialJson, readP
       }
       for (const brand of brands) for (const [sku, entry] of maps.get(NIKE_NEW_SOURCES[brand])) {
         if (brand === 'Nike' && jordan.has(sku)) continue;
+        const brandReason = nikeApiProductExclusion({title: entry.row.copy?.title, subTitle: entry.row.copy?.subTitle, ownBrand: ownBrand(entry.row), assignedBrand: brand});
+        if (brandReason) {excluded.push({sourceUrl: entry.page.sourceUrl, style: sku, reason: brandReason}); continue;}
         const adult = adults.get(sku);
         if (!adult) { excluded.push({sourceUrl: entry.page.sourceUrl, style: sku, reason: 'adult-membership-unproven'}); continue; }
         if (identity(entry.row) !== identity(adult.row)) throw Error(`Root/adult variant binding mismatch: ${sku}`);

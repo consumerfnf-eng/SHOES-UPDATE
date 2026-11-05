@@ -305,3 +305,60 @@ test('shared official gates reject altered adult scope, SKU, image, source path 
     }
   });
 });
+
+
+test('Converse VX-1 Heel SKUs and own title/subtitle dress forms are excluded from the Nike wall',async()=>{
+ const heels=['A19133C-100','A19134C-001'].map((sku,i)=>row(i+10,{productCode:sku,copy:{title:'Converse x Vaquera VX-1 Heel',subTitle:'Shoes'},pdpUrl:{url:`https://www.nike.com/launch/r/${sku}`}}));
+ const other=[row(20,{copy:{title:'Nike Dress Heel',subTitle:'Shoes'}}),row(21,{copy:{title:'Nike Dress',subTitle:"Women's Pumps"}}),row(22,{copy:{title:'Converse Chuck 70',subTitle:'Shoes'}}),row(23,{brandName:'Converse'})];
+ const r=await collect({read:fixture({nike:[...heels,...other,row(1)]})});
+ assert.equal(r.exhausted,true);assert.deepEqual(r.products.map(p=>p.style),[row(1).productCode]);
+ for(const p of [...heels,...other])assert.ok(r.excluded.some(e=>e.style===p.productCode),p.productCode);
+});
+
+test('shared proof guard blocks old typed heel/pump and Converse mislabel runs before and after curation',async()=>{
+ const raw=(await collect({read:fixture()})).products[0],today='2026-11-05';
+ const clean=curateCatalog([raw],{now:at}).snapshot.products[0];
+ for(const original of [raw,clean])for(const mutate of [
+  p=>{p.name='Converse x Vaquera VX-1 Heel';},
+  p=>{p.name='Nike Dress Heel';},
+  p=>{p.officialCategory="Women's Heels";},
+  p=>{p.officialCategory="Women's Pumps";},
+  p=>{p.name='Converse Chuck 70';},
+  p=>{p.officialCategory='Converse Shoes';},
+  p=>{p.officialBrand='Converse';},
+  p=>{p.officialProductEvidence.ownBrand='Converse';},
+  p=>{p.officialProductEvidence.ownBrand='Jordan';},
+ ]){
+  const bad=structuredClone(original);mutate(bad);
+  assert.equal(verifiedCategoryApiProof(bad,today),false);
+  assert.equal(officialEvidenceFor(bad,today),null);
+  assert.equal(officialProductUrl(bad,today),'');assert.equal(officialImageUrl(bad,today),'');
+  assert.equal(curateCatalog([bad],{now:at}).snapshot.products.length,0);
+  if(original===raw)assert.equal(hasBoundNikeApiVariant(bad),false);
+ }
+});
+
+test('heel counter construction remains a sneaker and Jordan names never establish brand membership',async()=>{
+ for(const copy of [
+  {title:'Nike Runner',subTitle:"Men's Shoes with heel counter"},
+  {title:'Nike Heel Counter Runner',subTitle:"Men's Shoes"},
+  {title:'Air Jordan 1 Mid SE',subTitle:"Men's Shoes"},
+ ]){
+  const r=await collect({read:fixture({nike:[row(1,{copy})]})});
+  assert.equal(r.products.length,1);assert.equal(r.products[0].brand,'Nike');
+  assert.equal(verifiedCategoryApiProof(r.products[0],'2026-11-05'),true);
+ }
+});
+
+test('explicit Jordan own-brand cannot be assigned Nike without verified Jordan New membership',async()=>{
+ const shoe=row(1,{brandName:'Jordan',copy:{title:'Air Jordan 1 Mid SE',subTitle:"Men's Shoes"}});
+ const noMembership=await collect({read:fixture({nike:[shoe]})});
+ assert.deepEqual(noMembership.products,[]);
+ assert.ok(noMembership.excluded.some(e=>e.reason==='own-brand-requires-jordan-new-membership'));
+ const member=await collect({read:fixture({nike:[shoe],jordan:[shoe]})});
+ assert.equal(member.products.length,1);assert.equal(member.products[0].brand,'Jordan');
+ assert.equal(member.products[0].officialProductEvidence.ownBrand,'Jordan');
+ const curated=curateCatalog(member.products,{now:at}).snapshot.products;
+ assert.equal(curated.length,1);assert.equal(curated[0].officialProductEvidence.ownBrand,'Jordan');
+ assert.equal(verifiedCategoryApiProof(curated[0],'2026-11-05'),true);
+});

@@ -1,0 +1,34 @@
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {buildKeywordCatalog} from './search-keywords.mjs';
+import {buildStyleTrendBoard} from './style-trend-board.mjs';
+import {validateSnapshot} from './validate_catalog.mjs';
+import {buildCatalogChunks} from './build-catalog-chunks.mjs';
+import {encodeCatalog} from '../public/assets/catalog-wire.mjs';
+const read=async file=>JSON.parse(await fs.readFile(file,'utf8'));
+const request=await read('reports/admin-bulk-recheck-request.json');
+const ids=new Set(['nike-new-A19133C-100','nike-new-A19134C-001']);
+const baseline=await read(request.baselineDirectory+'/catalog.json');
+const oldSource=await read(request.baselineDirectory+'/catalog-source.json');
+assert.ok([...baseline.products,...oldSource.products].every(p=>!ids.has(p.id)),'Cannot remove preexisting records');
+const catalog=await read('public/data/catalog.json'),source=await read('data/catalog-source.json');
+const rejected=catalog.products.filter(p=>ids.has(p.id));
+assert.equal(rejected.length,2);
+assert.ok(rejected.every(p=>p.brand==='Nike'&&p.name==='Converse x Vaquera VX-1 Heel'));
+catalog.products=catalog.products.filter(p=>!ids.has(p.id));
+source.products=source.products.filter(p=>!ids.has(p.id));
+const at=catalog.keywordEvaluatedAt??catalog.keywordCheckedAt;
+if(at){
+ const checked=catalog.keywordCheckedAt;
+ Object.assign(catalog,buildKeywordCatalog(catalog.products,catalog.sourceRanks,{now:at}));
+ catalog.keywordCheckedAt=checked;catalog.keywordEvaluatedAt=at;
+ if(catalog.styleTrendKeywords?.method==='verified-style-board-v1')catalog.styleTrendKeywords=buildStyleTrendBoard(catalog.products,catalog.styleTrendKeywords.observations,{now:at,updated:catalog.styleTrendKeywords.updated,sourceRanks:catalog.sourceRanks});
+}
+if(catalog.sourceStatus?.counts)catalog.sourceStatus.counts={...catalog.sourceStatus.counts,source:source.products.length,published:catalog.products.length};
+validateSnapshot(catalog,{watch:await read('data/source-watch.json')});
+await fs.writeFile('public/data/catalog.json',JSON.stringify(catalog)+'\n');
+await fs.writeFile('data/catalog-source.json',JSON.stringify(source)+'\n');
+await buildCatalogChunks(catalog,'public/data');
+await fs.writeFile('public/data/catalog-ui.json',JSON.stringify(encodeCatalog(catalog))+'\n');
+await fs.writeFile('reports/admin-rejected-additions.json',JSON.stringify({reason:'Converse heels are neither Nike-brand products nor eligible sneakers',rejected:rejected.map(({id,brand,name,style})=>({id,brand,name,style}))},null,2));
+console.log(JSON.stringify({rejected:rejected.length,total:catalog.products.length}));
