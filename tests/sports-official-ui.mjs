@@ -13,6 +13,11 @@ try{
  await page.waitForFunction(()=>document.querySelectorAll('.product-card').length===1&&document.querySelector('.card-name')?.textContent.includes('Achillium'));
  assert.equal(await page.locator('.product-card .color-chip').count(),4,'PUMA Korea New Achillium colors share one card');
  await page.locator('.product-card img').first().evaluate(img=>img.decode());await fs.mkdir('reports',{recursive:true});await page.screenshot({path:'reports/puma-achillium-new-preview.png'});
+ await page.getByRole('button',{name:'PUMA Achillium 상세정보',exact:true}).click();
+ const detail=page.getByRole('dialog',{name:'Achillium',exact:true});assert(!/확인 가능한 공식 상품·출시·이미지 근거가 아직 없습니다/.test(await detail.innerText()),'Verified New products must not claim to have no provenance');
+ assert((await detail.getByRole('link',{name:'공식 상품 원문 ↗',exact:true}).getAttribute('href')).includes('407167'));
+ assert((await detail.getByRole('link',{name:'공식 신상품 목록 ↗',exact:true}).getAttribute('href')).startsWith('https://kr.puma.com/'));
+ await detail.getByRole('button',{name:'상세정보 닫기',exact:true}).click();
  await page.locator('#search').fill('');await page.locator('#search').press('Enter');await page.locator('#brand-list input[data-brand="PUMA"]').uncheck();
  assert(await page.locator('#brand-list input[data-brand="FILA China"]').count(),'FILA China appears separately');
  await page.locator('#brand-list input[data-brand="FILA China"]').check();
