@@ -3,6 +3,7 @@ import {onRequest} from '../functions/_middleware.js';
 import {hashPassword,sha256,sessionCookie,ADMIN_COOKIE} from '../server/admin-auth.mjs';
 import {adminDb} from './helpers/admin-db.mjs';
 import {auditCandidates} from '../scripts/admin-monitor-runner.mjs';
+import {SITE_BRAND_GROUPS} from '../public/assets/site-brand-policy.mjs';
 const password='owner-password-fixture-3487234902',runner='runner-fixture-key-2345678901234567890123456789',origin='https://shoes-update-internal.pages.dev';
 const encoded=await hashPassword(password);
 function fixture(){
@@ -89,4 +90,16 @@ test('owner chooses a separate password; rotation rejects the team password, rev
 test('protected HTML uses canonical Pages asset URLs instead of redirecting to static files',async()=>{
  const f=fixture();f.env.ASSETS.fetch=async request=>{const path=new URL(request.url).pathname;return path.endsWith('.html')?Response.redirect(origin+path.replace(/\.html$/,''),308):new Response('<main>Protected canonical page</main>',{headers:{'Cache-Control':'public, max-age=31536000'}});};
  const login=await f.request('/admin/login');assert.equal(login.status,200);assert.equal(login.headers.get('Cache-Control'),'private, no-store, max-age=0');const {cookie}=await f.login();assert.equal((await f.request('/admin/',{cookie})).status,200);
+});
+test('bulk recollection authenticates, selects all 97 attention brands independently of UI filters and deduplicates active jobs',async()=>{
+ const f=fixture(),at=new Date().toISOString(),rows=SITE_BRAND_GROUPS.flatMap(g=>g.priority.map(brand=>({brand,group:g.name}))).map((b,i)=>({...b,officialModels:1,officialRecords:2,status:i<97?'partial':'checked',lastCheckAt:at}));
+ f.db.sqlite.prepare('INSERT INTO admin_snapshots VALUES (?,?,?)').run('bulk-baseline',at,JSON.stringify({brands:rows}));
+ assert.equal((await f.request('/api/admin/recollect-all',{method:'POST',body:{scope:'attention'}})).status,401);
+ const {cookie,csrf}=await f.login();assert.equal((await f.request('/api/admin/recollect-all',{method:'POST',cookie,body:{scope:'attention'}})).status,403);
+ const options={method:'POST',cookie,body:{scope:'attention'},headers:{'X-CSRF-Token':csrf}};
+ const first=await(await f.request('/api/admin/recollect-all',options)).json();assert.equal(first.selected,97);assert.equal(first.queued,97);assert.equal(first.alreadyActive,0);
+ const second=await(await f.request('/api/admin/recollect-all',options)).json();assert.equal(second.queued,0);assert.equal(second.alreadyActive,97);
+ const status=await(await f.request('/api/admin/status',{cookie})).json();assert.equal(status.activeJobs.length,97);assert.equal(status.batch.target_count,97);assert.equal(status.batch.counts.queued,97);assert.equal(status.jobs.length,50,'History limit does not truncate active counts');
+ const all=await(await f.request('/api/admin/recollect-all',{...options,body:{scope:'all'}})).json();assert.equal(all.selected,rows.length);assert.equal(all.queued,rows.length-97);assert.equal(all.alreadyActive,97);
+ assert.equal((await f.request('/api/admin/recollect-all',{...options,body:{scope:'unknown'}})).status,400);
 });

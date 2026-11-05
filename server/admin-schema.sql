@@ -22,3 +22,11 @@ CREATE TABLE IF NOT EXISTS admin_jobs (
 CREATE UNIQUE INDEX IF NOT EXISTS admin_one_active_brand ON admin_jobs(brand)
   WHERE status IN ('queued','running');
 CREATE INDEX IF NOT EXISTS admin_job_queue ON admin_jobs(status, requested_at);
+CREATE TABLE IF NOT EXISTS admin_batches (
+  id TEXT PRIMARY KEY, scope TEXT NOT NULL, created_at TEXT NOT NULL,
+  target_count INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS admin_batch_jobs (
+  batch_id TEXT NOT NULL, job_id TEXT NOT NULL, brand TEXT NOT NULL,
+  PRIMARY KEY(batch_id, brand)
+);

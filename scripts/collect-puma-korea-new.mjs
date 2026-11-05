@@ -1,6 +1,6 @@
 import {createHash} from 'node:crypto';
 import {classifyFootwear} from './curation.mjs';
-const decode=s=>s.replaceAll('&quot;','"').replaceAll('&amp;','&').replaceAll('&nbsp;',' ');
+const decode=s=>s.replaceAll('&quot;','"').replaceAll('&amp;','&').replaceAll('&nbsp;',' ').replaceAll('&lt;','<').replaceAll('&gt;','>').replace(/&#x([a-f0-9]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n)));
 export const PUMA_KR_NEW='https://kr.puma.com/kr/ko/%EC%8B%A0%EC%83%81%ED%92%88/%EC%8B%A0%EB%B0%9C';
 export async function collectPumaKoreaNew({readHtml,at=new Date().toISOString()}={}){
  const pages=[],seen=new Set(),items=new Map();let url=PUMA_KR_NEW,total;
@@ -11,7 +11,7 @@ export async function collectPumaKoreaNew({readHtml,at=new Date().toISOString()}
 export function pumaNewPage(html,url,{at=new Date().toISOString()}={}){
  if(new URL(url).hostname!=='kr.puma.com')throw Error('PUMA Korea official source required');
  const hash=createHash('sha256').update(html).digest('hex'),products=[],excluded=[];
- const links=[...html.matchAll(/href="([^"]+)"/g)].map(m=>decode(m[1]));
+ const links=[...html.matchAll(/href=(["'])(.*?)\1/g)].flatMap(m=>{try{return [new URL(decode(m[2]),url).href];}catch{return [];}});
  const rows=[...html.matchAll(/data-puma-analytics="([^"]*)"/g)].flatMap(m=>{try{return JSON.parse(decode(m[1])).products||[];}catch{return[];}});
  for(const row of rows){
   const style=row.styleID;if(!/^\d{6}_\d{2}$/.test(style||''))continue;

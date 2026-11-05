@@ -1,5 +1,6 @@
 import {SITE_BRAND_GROUPS,isSiteBrandAllowed} from '../public/assets/site-brand-policy.mjs';
 import {checkPassword,hashPassword,passwordHashFor,equalSecret,randomToken,sha256,sessionCookie,sessionFor,sameOrigin,loginRateAllowed,SESSION_SECONDS} from './admin-auth.mjs';
+import {monitoringSnapshot,enqueueBulkRecheck,recentBatch} from './admin-monitor.mjs';
 const brands=new Set(SITE_BRAND_GROUPS.flatMap(g=>g.priority));
 const headers={
  'Cache-Control':'private, no-store, max-age=0','X-Content-Type-Options':'nosniff',
@@ -79,19 +80,14 @@ export async function adminRequest(context){
    return json({ok:true},200,{'Set-Cookie':sessionCookie('',0)});
   }
   if(path==='/api/admin/status'&&request.method==='GET'){
-   const snapshots=(await env.ADMIN_DB.prepare('SELECT data, created_at FROM admin_snapshots ORDER BY created_at DESC LIMIT 2').all()).results;
-   const current=snapshots[0]?JSON.parse(snapshots[0].data):{brands:[]},previous=snapshots[1]?JSON.parse(snapshots[1].data):null;
-   const old=new Map((previous?.brands||[]).map(row=>[row.brand,row]));
-   const checks=new Map((await env.ADMIN_DB.prepare('SELECT brand, checked_at, data FROM admin_checks').all()).results.map(c=>[c.brand,c]));
-   const rows=current.brands.map(row=>{
-    const check=checks.get(row.brand),report=check&&Date.parse(check.checked_at)>Date.parse(row.lastCheckAt||'1970-01-01')?JSON.parse(check.data):null;
-    const failedStatus=report?.errors?.some(e=>/HTTP (?:401|403)|CAPTCHA|forbidden|access.denied/i.test(e))?'blocked':'check-needed';
-    const latest=report?{...row,lastCheckAt:check.checked_at,exhaustive:report.exhaustive,errors:report.errors,status:report.status==='failed'?failedStatus:report.exhaustive?'checked':'partial'}:{...row};
-    if(latest.lastCheckAt&&Date.now()-Date.parse(latest.lastCheckAt)>7*86400000&&latest.status!=='blocked')latest.status='stale';
-    return {...latest,modelDelta:old.has(row.brand)?row.officialModels-old.get(row.brand).officialModels:null,recordDelta:old.has(row.brand)?row.officialRecords-old.get(row.brand).officialRecords:null};
-   });
+   const current=await monitoringSnapshot(env.ADMIN_DB);
    const jobs=(await env.ADMIN_DB.prepare('SELECT id, brand, status, requested_at, started_at, finished_at, result, run_url FROM admin_jobs ORDER BY requested_at DESC LIMIT 50').all()).results.map(j=>({...j,result:j.result?JSON.parse(j.result):null}));
-   return json({...current,brands:rows,comparedAt:snapshots[1]?.created_at||null,jobs,workflowUrl:'https://github.com/consumerfnf-eng/SHOES-UPDATE/actions/workflows/admin-monitor.yml'});
+   const activeJobs=(await env.ADMIN_DB.prepare("SELECT id, brand, status FROM admin_jobs WHERE status IN ('queued','running')").all()).results;
+   return json({...current,jobs,activeJobs,batch:await recentBatch(env.ADMIN_DB),workflowUrl:'https://github.com/consumerfnf-eng/SHOES-UPDATE/actions/workflows/admin-monitor.yml'});
+  }
+  if(path==='/api/admin/recollect-all'&&request.method==='POST'){
+   const input=await body(request);if(!['attention','all'].includes(input.scope))return json({error:'재수집 범위를 선택해 주세요.'},400);
+   const current=await monitoringSnapshot(env.ADMIN_DB);return json(await enqueueBulkRecheck(env.ADMIN_DB,current.brands,input.scope),202);
   }
   if(path==='/api/admin/recollect'&&request.method==='POST'){
    const input=await body(request);if(!brands.has(input.brand)||!isSiteBrandAllowed(input.brand))return json({error:'등록된 브랜드를 선택해 주세요.'},400);

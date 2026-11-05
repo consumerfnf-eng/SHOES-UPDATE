@@ -20,6 +20,7 @@ try{
  const failedJob=(await(await fetch(url+'/api/admin/runner/claim',{method:'POST',headers:runnerHeaders,body:'{}'})).json()).job;
  await fetch(url+'/api/admin/runner/complete',{method:'POST',headers:runnerHeaders,body:JSON.stringify({...failedJob,report:{status:'failed',checkedAt:new Date().toISOString(),listingPages:0,verified:0,discovered:0,exhaustive:false,candidates:[],errors:['Official product URL missing']}})});
  await page.locator('#refresh').click();await page.getByText(/재수집 내역 확인 필요/).waitFor();assert(!(await page.locator('#jobs .job').first().innerText()).includes('수집 확인 0'));
+ await page.getByRole('searchbox',{name:'브랜드 검색'}).fill('PUMA');await page.locator('#bulk-open').click();assert.equal(await page.locator('#bulk-attention-count').innerText(),'2');await page.locator('#bulk-submit').click();await page.waitForFunction(()=>document.querySelector('#stat-jobs').textContent==='2');assert((await page.locator('#batch-progress').innerText()).includes('2개 브랜드'));await page.locator('#brand-search').fill('');
  await fs.mkdir('reports',{recursive:true});await page.screenshot({path:'reports/admin-dashboard-preview.png',fullPage:true});
  for(const width of [390,768,1440]){await page.setViewportSize({width,height:900});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No page overflow at '+width);}
  await page.locator('#password-open').click();await page.getByLabel('현재 관리자 비밀번호',{exact:true}).fill(password);const next='new-owner-ui-password-239847239847';

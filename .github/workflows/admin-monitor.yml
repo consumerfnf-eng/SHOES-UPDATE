@@ -12,7 +12,11 @@ jobs:
   audit:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        worker: [1, 2, 3, 4]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,5 +28,7 @@ jobs:
         env:
           ADMIN_RUNNER_KEY: ${{ secrets.ADMIN_RUNNER_KEY }}
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          ADMIN_DRAIN_SECONDS: '1200'
+          ADMIN_AUDIT_TIMEOUT_SECONDS: '600'
           NODE_OPTIONS: --max-http-header-size=65536
-        run: node scripts/admin-monitor-runner.mjs
+        run: node scripts/drain-admin-queue.mjs

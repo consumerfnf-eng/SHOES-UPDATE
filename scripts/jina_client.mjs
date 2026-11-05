@@ -1,13 +1,13 @@
 import { setTimeout as delay } from 'node:timers/promises';
 
 // Credentials stay in Node, never in the page, snapshot, artifact or console.
-export function createJinaClient({ key = '', fetchImpl = fetch, intervalMs, timeoutMs = 20000, sleep = delay, log = console.log } = {}) {
+export function createJinaClient({ key = '', fetchImpl = fetch, intervalMs, anonymousIntervalMs=3200, timeoutMs = 20000, sleep = delay, log = console.log } = {}) {
   let authenticated = Boolean(key), nextRequest = 0, queue = Promise.resolve();
   const stats = { requests: 0, responses: 0, authFallbacks: 0, rateLimitRetries: 0, errors: {} };
   async function pace() {
     const turn = queue.then(async () => {
       await sleep(Math.max(0, nextRequest - Date.now()));
-      nextRequest = Date.now() + (intervalMs ?? (authenticated ? 1100 : 3200));
+      nextRequest = Date.now() + (intervalMs ?? (authenticated ? 1100 : anonymousIntervalMs));
     });
     queue = turn.catch(() => {});
     await turn;

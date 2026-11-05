@@ -12,19 +12,25 @@ import {collectFilaChina} from './collect-fila-china.mjs';
 import {collectOfficialNewFeeds} from './collect-official-new-feeds.mjs';
 import {officialHtmlMarkdown,pacedOfficialFetch,assertReadableOfficial} from './official-reader.mjs';
 import {createJinaClient} from './jina_client.mjs';
+import {gunzipSync} from 'node:zlib';
+import {collectOfficialInventory} from './collect-official-inventory.mjs';
 const readJson=async file=>JSON.parse(await fs.readFile(file,'utf8'));
 const normalizeUrl=value=>{try{const u=new URL(value);u.hash='';for(const key of [...u.searchParams.keys()])if(/^(utm_|ref$)/.test(key))u.searchParams.delete(key);return u.href.replace(/\/$/,'');}catch{return '';}};
 export function auditCandidates(products,published,brand){
  const urls=new Set(published.filter(p=>p.brand===brand).map(p=>normalizeUrl(p.url))),styles=new Set(published.filter(p=>p.brand===brand).map(p=>String(p.style||'').toLowerCase()));
  return [...new Map(products.filter(p=>p.brand===brand&&!urls.has(normalizeUrl(p.url))&&(!p.style||!styles.has(p.style.toLowerCase()))).map(p=>[normalizeUrl(p.url),{name:p.name,style:p.style||'',url:p.url}])).values()].slice(0,200);
 }
-export async function auditBrand(brand,{readHtml,now=new Date()}={}){
+export async function auditBrand(brand,{readHtml,now=new Date(),onCollected,onProgress}={}){
  if(!isSiteBrandAllowed(brand))throw Error('Brand is not in the permitted collection list');
  const sources=await readJson('config/daily_sources.json'),catalog=await readJson('public/data/catalog.json'),at=now.toISOString();
- const paced=pacedOfficialFetch(),jina=createJinaClient({key:process.env.JINA_API_KEY||'',timeoutMs:20000});
- readHtml??=async url=>{const response=await paced(url,{headers:{'User-Agent':'Mozilla/5.0','Accept':'text/html'}});if(!response.ok)throw Error('Official source HTTP '+response.status);return response.text();};
+ const cachedIndex=await readJson('reports/admin-rendered-index.json').catch(()=>({})),cached=new Map();
+ const rendered=async url=>{if(cached.has(url))return cached.get(url);const entry=cachedIndex[url];if(!entry||!entry.path.startsWith('logs/admin-rendered/')||now-Date.parse(entry.checkedAt)>86400000)return null;try{const value=JSON.parse(gunzipSync(await fs.readFile(entry.path)));cached.set(url,value);return value;}catch{return null;}};
+ const paced=pacedOfficialFetch(),jina=createJinaClient({key:process.env.JINA_API_KEY||'',timeoutMs:20000,anonymousIntervalMs:Number(process.env.ADMIN_ANONYMOUS_INTERVAL_MS||30000),log:()=>{}});
+ readHtml??=async url=>{const page=await rendered(url);if(page?.html)return page.html;const response=await paced(url,{headers:{'User-Agent':'Mozilla/5.0','Accept':'text/html'}});if(!response.ok)throw Error('Official source HTTP '+response.status);return response.text();};
  let result;
- if(brand==='PUMA')result=await collectPumaKoreaNew({readHtml,now});
+ const inventory=siteBrandGroup(brand)==='LUX'?(await readJson('config/official-inventory-sources.json')).sources.filter(s=>s.brand===brand):[];
+ if(inventory.length){const value=await collectOfficialInventory({sources:inventory,read:readHtml,now});result={products:value.products,coverage:value.diagnostics.map(d=>({...d,listingPages:d.pages,total:d.feedProducts,verified:d.verified,exhaustive:d.exhausted,errors:d.error?[d.error]:[],status:d.error?'partial':'checked'}))};}
+ else if(brand==='PUMA')result=await collectPumaKoreaNew({readHtml,now});
  else if(brand==='COLUMBIA')result=await collectColumbiaNew({readHtml,now});
  else if(['Umbro','DESCENTE','Le Coq Sportif'].includes(brand))result=await collectDkonNew({brands:[brand],now});
  else if(['ASICS','adidas','New Balance','Converse'].includes(brand)){
@@ -35,13 +41,14 @@ export async function auditBrand(brand,{readHtml,now=new Date()}={}){
  }else{
   const lux=siteBrandGroup(brand)==='LUX',selected=(sources[brand]||[]).filter(s=>lux||isNewListing(s.url));
   if(!selected.length)throw Error('공식 New 수집 경로 설정 점검 필요');
-  const read=async input=>{const url=input.replace(/^https:\/\/r\.jina\.ai\//,'');try{return assertReadableOfficial(officialHtmlMarkdown(await readHtml(url),url));}catch(error){if(!process.env.JINA_API_KEY)throw error;return jina.read('https://r.jina.ai/'+url);}};
-  result=await collectNewArrivals({sources:{[brand]:selected},brands:[brand],existing:catalog.products.filter(p=>p.brand===brand),read,readDetails:readHtml,now,maxPagesPerBrand:60,maxDetailMsPerBrand:120000,catalogueBrands:lux?[brand]:[],filterCandidate:isScopedSneakerCandidate,log:()=>{}});
+  const read=async input=>{const url=input.replace(/^https:\/\/r\.jina\.ai\//,'');const page=await rendered(url);if(page?.markdown)return assertReadableOfficial(page.markdown);try{return assertReadableOfficial(officialHtmlMarkdown(await readHtml(url),url));}catch{return jina.read('https://r.jina.ai/'+url);}};
+  result=await collectNewArrivals({sources:{[brand]:selected},brands:[brand],existing:catalog.products.filter(p=>p.brand===brand),read,readDetails:readHtml,now,maxPagesPerBrand:60,maxDetailMsPerBrand:120000,catalogueBrands:lux?[brand]:[],filterCandidate:isScopedSneakerCandidate,log:()=>{},onProgress});
  }
  const coverage=Array.isArray(result.coverage)?result.coverage:[result.coverage||{}],errors=coverage.flatMap(c=>[...(c.errors||[]),...(c.error?[c.error]:[])]).concat(result.errors||[]).map(e=>String(e.error||e.message||e).slice(0,240));
+ if(onCollected)await onCollected(result);
  const products=result.products||[],exhaustive=coverage.length>0&&coverage.every(c=>c.exhaustive===true||c.exhausted===true||Number(c.total)>0&&c.total===c.read);
  const failed=coverage.some(c=>['failed','unavailable'].includes(c.status))&&!products.length;
- const today=new Date(now.getTime()+9*3600000).toISOString().slice(0,10),prepared=prepareCatalog(catalog,null,null,today),published=prepared.products.filter(p=>prepared.officialMatches.get(p.id));
+ const today=new Date(now.getTime()+9*3600000).toISOString().slice(0,10),prepared=prepareCatalog({...catalog,products:catalog.products.filter(p=>p.brand===brand)},null,null,today),published=prepared.products.filter(p=>prepared.officialMatches.get(p.id));
  return {status:failed?'failed':exhaustive&&!errors.length?'completed':'partial',checkedAt:at,listingPages:coverage.reduce((n,c)=>n+(Number(c.pages||c.listingPages)||0),0)||Number(result.pages?.length)||0,verified:products.length,discovered:coverage.reduce((n,c)=>n+(Number(c.candidates||c.total||c.read)||0),0)||products.length,exhaustive,errors,candidates:auditCandidates(products,published,brand)};
 }
 export async function pollAdminQueue(){
