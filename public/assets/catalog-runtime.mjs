@@ -2,7 +2,7 @@ import {isExcludedBrand} from './brand-exclusions.mjs';
 import {isSiteBrandAllowed} from './site-brand-policy.mjs';
 import {isPublishedFootwear} from './footwear-policy.mjs';
 import {preferOfficialVariants} from './product-identity.mjs';
-import {releaseState,preferWomenVariants,unifyVariantGroups,groupProductVariants,variantGroupKey,productBrandNames,trendTermGroups,trendKeywordMatches,overlayReleaseState,keywordProductIds} from './catalog-view.mjs';
+import {releaseState,preferWomenVariants,unifyVariantGroups,groupProductVariants,variantGroupKey,productBrandNames,trendTermGroups,trendKeywordMatches,overlayReleaseState,keywordProductIds,sourceMatches} from './catalog-view.mjs';
 import {variantGroupName} from './catalog-view.mjs';
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter','retail-mrporter':'MR PORTER','retail-kith':'Kith'};
 function adaptOverlay(item, sources) {
@@ -55,13 +55,22 @@ export function prepareCatalog(catalog,overlay,trends,today) {
   brandCounts = new Map();
   const allGroups=groupProductVariants(products);
   productGroups=new Map(allGroups.map(group=>[variantGroupKey(group[0]),group]));
-  allGroups.forEach(group => [...new Set(group.flatMap(p=>productBrandNames(p,today)))].forEach(brand=>brandCounts.set(brand,(brandCounts.get(brand)||0)+1)));
+  // Evaluate official provenance in the worker, once per prepared snapshot.
+  // Tab switches read this projection; the underlying evidence rules stay unchanged.
+  const officialMatches=new Map(products.map(p=>[p.id,sourceMatches(p,'brand',today)]));
+  const officialBrandCounts=new Map();
+  for(const group of allGroups){
+    const all=new Set(),official=new Set();
+    for(const p of group)for(const name of productBrandNames(p,today)){all.add(name);if(officialMatches.get(p.id))official.add(name);}
+    for(const name of all)brandCounts.set(name,(brandCounts.get(name)||0)+1);
+    for(const name of official)officialBrandCounts.set(name,(officialBrandCounts.get(name)||0)+1);
+  }
   const keywordViews=new Map();
   for(const keyword of catalog.styleTrendKeywords?.items||[]){
     const ids=keywordProductIds(keyword,products,today);
     keywordViews.set(keyword.id,{ids,count:new Set(products.filter(p=>ids.has(p.id)).map(variantGroupKey)).size});
   }
   const variantNames=new Map(products.map(p=>[p.id,variantGroupName(p)]));
-  return {products,brandCounts,productGroups,keywordViews,variantNames};
+  return {products,brandCounts,productGroups,keywordViews,variantNames,officialMatches,officialBrandCounts,preparedDay:today};
 
 }

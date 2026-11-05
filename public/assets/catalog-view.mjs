@@ -169,7 +169,7 @@ export function filterProducts(products, state, today = kstToday()) {
       && (!state.retailer || state.retailer === 'all' || retailerId(p) === state.retailer)
       && (!state.brands.size || productBrandNames(p,today).some(brand=>state.brands.has(brand)))
       && categoryMatches(p, state.category)
-      && sourceMatches(p,state.source,today)
+      && (state.matchesSource||sourceMatches)(p,state.source,today)
       && (state.source!=='sns'||!state.socialGroup||visibleSocialMetrics(p,today).some(m=>socialGroupKey(m)===state.socialGroup))
       && (!state.keywordIds || state.keywordIds.has(p.id))
       && trendKeywordMatches(p, state.trendTerms)
