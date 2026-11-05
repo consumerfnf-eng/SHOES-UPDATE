@@ -23,6 +23,7 @@
 // on the project - see docs/internal-deployment.md.
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs/promises';
+import {syncAdminSnapshot} from './build-admin-snapshot.mjs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {prepareDeploymentAssets,removeDeploymentAssets} from './deployment-assets.mjs';
@@ -92,6 +93,12 @@ if (!passwordIsSet(PROJECT)) {
 
 // A Pages project serves whatever is uploaded, so the upload is the whole
 // public/ folder - the same site, with the catwalk files present.
+if(await exists('public/admin/index.html')){
+ if(PROJECT!=='shoes-update-internal')throw Error('Administrator tools may only be deployed to the configured internal project');
+ const list=spawnSync('npx',['wrangler','pages','secret','list','--project-name',PROJECT],{cwd:root,encoding:'utf8',shell:process.platform==='win32'});
+ if(list.status!==0||!['ADMIN_PASSWORD_HASH','ADMIN_RUNNER_KEY'].every(name=>list.stdout.includes(name)))throw Error('Administrator secrets missing; run node scripts/setup-admin.mjs before deployment');
+ await syncAdminSnapshot();
+}
 const staged=await prepareDeploymentAssets(path.join(root,'public'));
 // Compile the password middleware explicitly: the upload directory is temporary
 // and must never rely on Wrangler discovering a neighbouring functions folder.
@@ -104,6 +111,7 @@ const compiled=spawnSync('npx',['wrangler','pages','functions','build',path.join
 if(compiled.status!==0)throw Error('Internal password middleware compilation failed; upload cancelled');
 const workerSource=await fs.readFile(path.join(worker,'index.js'),'utf8');
 if(!workerSource.includes('INTERNAL_SITE_PASSWORD'))throw Error('Password gate absent from compiled worker; upload cancelled');
+if(await exists('public/admin/index.html')&&!['ADMIN_PASSWORD_HASH','ADMIN_DB'].every(name=>workerSource.includes(name)))throw Error('Administrator guard absent from compiled worker; upload cancelled');
 const syntax=spawnSync(process.execPath,['--input-type=module','--check'],{input:workerSource,encoding:'utf8'});
 if(syntax.status!==0)throw Error('Compiled password worker is not a JavaScript module; upload cancelled');
 await fs.mkdir(path.join(root,'logs'),{recursive:true});

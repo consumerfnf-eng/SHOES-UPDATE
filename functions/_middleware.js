@@ -8,16 +8,18 @@
 // domains fail closed without the existing password secret; other public
 // preview hosts contain no private CATWALK files.
 import {productImageOrigin} from '../server/product-image-origin.mjs';
+import {adminRequest,adminRunnerRequest,isAdminPath} from '../server/admin.mjs';
 export async function onRequest(context) {
   const url=new URL(context.request.url);
   if(url.hostname==='shoes-update.pages.dev') {
     url.hostname='shoes-update-internal.pages.dev';
     return Response.redirect(url.toString(),302);
   }
+  const runner=await adminRunnerRequest(context);if(runner)return runner;
   const password = context.env.INTERNAL_SITE_PASSWORD;
   if(!password&&(url.hostname==='shoes-update-internal.pages.dev'||url.hostname.endsWith('.shoes-update-internal.pages.dev')))
     return new Response('Internal site authentication is not configured.',{status:503});
-  if (!password) return context.next();
+  if (!password) return isAdminPath(url.pathname)?new Response('Admin authentication is not configured.',{status:503}):context.next();
 
   // The team is handed a password, not an account. Basic auth is only the
   // vehicle for it - browsers have no password-only dialog - so whatever
@@ -32,6 +34,7 @@ export async function onRequest(context) {
     try { supplied = atob(encoded); } catch { supplied = ''; }
     const colon = supplied.indexOf(':');
     if (colon >= 0 && supplied.slice(colon + 1) === password) {
+      const admin=await adminRequest(context);if(admin)return admin;
       const response=await context.next();
       // Card thumbnails and all existing static files keep the direct path.
       // Only a missing hashed product original may consult the pinned origin.

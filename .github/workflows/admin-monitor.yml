@@ -1,0 +1,28 @@
+name: Administrator collection monitor
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: shoes-administrator-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Collect the next administrator-requested official source audit
+        env:
+          ADMIN_RUNNER_KEY: ${{ secrets.ADMIN_RUNNER_KEY }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          NODE_OPTIONS: --max-http-header-size=65536
+        run: node scripts/admin-monitor-runner.mjs

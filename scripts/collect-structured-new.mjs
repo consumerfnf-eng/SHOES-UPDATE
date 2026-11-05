@@ -3,10 +3,10 @@ import {adidasNewPage} from './adidas-new-page.mjs';
 import {newBalanceNewRecords} from './new-balance-new-feed.mjs';
 import {converseNewPage} from './converse-new-page.mjs';
 import {pacedOfficialFetch} from './official-reader.mjs';
-export async function collectStructuredNew({readHtml,now=new Date(),onProgress=()=>{}}={}){
+export async function collectStructuredNew({readHtml,now=new Date(),onProgress=()=>{},brands=['ASICS','adidas','New Balance','Converse']}={}){
  const at=now.toISOString(),fetchOfficial=pacedOfficialFetch(),outputs={},errors=[];
  const json=async(url,options)=>{const r=await fetchOfficial(url,options);if(!r.ok)throw Error('HTTP '+r.status);return r.json();};
- for(const brand of ['ASICS','adidas','New Balance','Converse']){try{
+ for(const brand of brands.filter(b=>['ASICS','adidas','New Balance','Converse'].includes(b))){try{
   let result;
   if(brand==='ASICS'){
    const products=[],excluded=[],missing=[],seen=new Set();let url='https://www.asics.com/us/en-us/sportstyle-new-arrivals/c/aa90000023/',total;

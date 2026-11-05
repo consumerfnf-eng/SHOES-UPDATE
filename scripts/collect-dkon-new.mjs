@@ -13,10 +13,10 @@ export function dkonNewRows(data,{slug,brand,url,at=new Date().toISOString()}){
   products.push({id:'dkon-new-'+style,brand,name,sourceName:p.prodNm,style,manufacturerStyle:style,modelGroupId:'dkon|'+slug+'|'+p.prodCd,url:productUrl,image,colorway:p.colorNm,colors:[p.colorNm],officialCategory:'스니커즈',category:'sneaker',productType:'sneaker',description:name+' · 공식 New 러닝/코트/스니커즈 분류',country:'KR',gender:p.sexCd==='1'?'Men':p.sexCd==='2'?'Women':'Unisex',priceLabel:'KRW '+p.mallSalePrc,firstSeen:at,productVerifiedAt:at,productEvidenceUrl:url,sourceSignals:[],arrivalEvidence:{...proof,kind:'new-arrivals-listing',productUrl,url,excerpt:name+' · 최근 한 달 New'},officialProductEvidence:{...proof,url:productUrl},officialImageEvidence:{...proof,url:image,sourceUrl:url}});
  }return {products,excluded};
 }
-export async function collectDkonNew({readJson,now=new Date()}={}){
+export async function collectDkonNew({readJson,now=new Date(),brands=['Umbro','DESCENTE','Le Coq Sportif']}={}){
  const read=pacedOfficialFetch();readJson??=async url=>{const r=await read(url,{method:'POST',headers:{'X-Requested-With':'XMLHttpRequest'}});if(!r.ok)throw Error('HTTP '+r.status);return r.json();};
  const products=[],excluded=[],coverage=[];
- for(const [brand,slug] of [['Umbro','UMBRO'],['DESCENTE','DESCENTE'],['Le Coq Sportif','LECOQSPORTIF']]){const ids=new Set();let total,pages;
+ for(const [brand,slug] of [['Umbro','UMBRO'],['DESCENTE','DESCENTE'],['Le Coq Sportif','LECOQSPORTIF']].filter(([b])=>brands.includes(b))){const ids=new Set();let total,pages;
   for(let page=1;page<=100;page++){const url='https://dk-on.com/'+slug+'/newArrival/productList?page='+page+'&pageSize=100',data=await readJson(url);total??=Number(data.total);pages=Number(data.totalPage);if(!Number.isFinite(total)||!pages||Number(data.pageInfo.currentPage)!==page)throw Error('Invalid official New page');
    for(const p of data.products){const key=p.prodCd+'|'+p.colorCd;if(ids.has(key))throw Error('Repeated DKON New variant');ids.add(key);}
    const rows=dkonNewRows(data,{slug,brand,url,at:now.toISOString()});products.push(...rows.products);excluded.push(...rows.excluded);
