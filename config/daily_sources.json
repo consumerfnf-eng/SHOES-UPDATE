@@ -887,24 +887,14 @@
   ],
   "Lanvin": [
     {
-      "name": "Lanvin Official daily source",
-      "url": "https://us.lanvin.com/collections/men-new-in"
+      "name": "Lanvin official man sneakers",
+      "url": "https://www.lanvin.com/en-us/man/shoes/sneakers/",
+      "basis": "assortment"
     },
     {
-      "name": "Lanvin Official daily source",
-      "url": "https://us.lanvin.com/collections/women-new-in"
-    },
-    {
-      "name": "Lanvin Official daily source",
-      "url": "https://www.lanvin.com/"
-    },
-    {
-      "url": "https://us.lanvin.com/collections/men-sneakers",
-      "name": "Lanvin Official sneakers (men)"
-    },
-    {
-      "url": "https://us.lanvin.com/collections/women-sneakers",
-      "name": "Lanvin Official sneakers (women)"
+      "name": "Lanvin official woman sneakers",
+      "url": "https://www.lanvin.com/en-us/woman/shoes/sneakers/",
+      "basis": "assortment"
     }
   ],
   "Loewe": [
@@ -915,26 +905,14 @@
   ],
   "Loro Piana": [
     {
-      "name": "Loro Piana Official sneaker assortment",
+      "name": "Loro Piana official man sneakers",
       "url": "https://us.loropiana.com/en/c/shoes/man/sneakers",
-      "basis": "catalogue"
+      "basis": "assortment"
     },
     {
-      "name": "Loro Piana Official sneaker assortment",
+      "name": "Loro Piana official woman sneakers",
       "url": "https://us.loropiana.com/en/c/shoes/woman/sneakers",
-      "basis": "catalogue"
-    },
-    {
-      "name": "Loro Piana Official daily source",
-      "url": "https://www.loropiana.com/"
-    },
-    {
-      "url": "https://www.loropiana.com/en/c/man/shoes",
-      "name": "Loro Piana Official shoes (men)"
-    },
-    {
-      "url": "https://www.loropiana.com/en/c/woman/shoes",
-      "name": "Loro Piana Official shoes (women)"
+      "basis": "assortment"
     }
   ],
   "Louis Vuitton": [
@@ -961,16 +939,8 @@
   ],
   "Lululemon": [
     {
-      "name": "Lululemon Official New shoes",
-      "url": "https://shop.lululemon.com/c/whats-new-sneakers/n1d852zq0cf"
-    },
-    {
-      "name": "Lululemon Official daily source",
-      "url": "https://shop.lululemon.com/c/shoes/n1n4fc"
-    },
-    {
-      "name": "Lululemon Official daily source",
-      "url": "https://shop.lululemon.com/c/sneakers/n1d852zn4fc"
+      "name": "Lululemon official Whats New Shoes",
+      "url": "https://shop.lululemon.com/c/whats-new-shoes/n1colrzq0cf"
     }
   ],
   "Mach & Mach": [
@@ -2510,6 +2480,16 @@
   ],
   "TOM FORD": [
     {
+      "name": "TOM FORD official women sneakers",
+      "url": "https://www.tomfordfashion.com/en-us/women/shoes/sneakers/",
+      "basis": "assortment"
+    },
+    {
+      "name": "TOM FORD official men sneakers",
+      "url": "https://www.tomfordfashion.com/en-us/men/shoes/sneakers/",
+      "basis": "assortment"
+    },
+    {
       "name": "TOM FORD official assortment",
       "url": "https://www.tomfordfashion.com/",
       "basis": "assortment"
@@ -2894,6 +2874,39 @@
     {
       "name": "COLUMBIA Korea official footwear / New badges",
       "url": "https://www.columbiakorea.co.kr/product/list.asp?cno=350"
+    }
+  ],
+  "K2": [
+    {
+      "name": "K2 official FW New footwear",
+      "url": "https://www.k-village.co.kr/k2?cm=1361&cs=12000",
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://www.k-village.co.kr/k2?cm=1033",
+        "targetUrl": "https://www.k-village.co.kr/k2?cm=1361&cs=12000",
+        "contentHash": "7595ad9ac4eeb124dd8e740339c9ad81541667346ad20903573e1debaee2a9a9",
+        "excerpt": "# FW NEW ARRIVAL",
+        "verifiedAt": "2026-11-05T06:47:08.165Z"
+      }
+    },
+    {
+      "name": "K2 official navigation and section discovery",
+      "url": "https://www.k-village.co.kr/k2",
+      "basis": "catalogue"
+    }
+  ],
+  "DYNAFIT": [
+    {
+      "name": "DYNAFIT official navigation and section discovery",
+      "url": "https://www.k-village.co.kr/dynafit",
+      "basis": "catalogue"
+    }
+  ],
+  "BLACKYAK": [
+    {
+      "name": "BLACKYAK official navigation and section discovery",
+      "url": "https://www.byn.kr/blackyak",
+      "basis": "catalogue"
     }
   ]
 }

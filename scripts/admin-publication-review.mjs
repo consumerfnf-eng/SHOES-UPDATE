@@ -1,7 +1,14 @@
 import {siteBrandGroup} from '../public/assets/site-brand-policy.mjs';
 import {samePhysicalVariant} from '../public/assets/product-identity.mjs';
 import {isNewListing} from './new-arrivals.mjs';
-import {isOfficialProductUrl} from './curation.mjs';
+import {isOfficialProductUrl,officialEvidenceFor,kstDay} from './curation.mjs';
+export function bindAdminRawProof(raw,prepared){
+ const copy={...raw};
+ for(const field of ['style','styleType','url','image','officialProductEvidence','officialImageEvidence','arrivalEvidence','productEvidenceUrl','recheckEvidence','sourceTileBinding','sourceSkuBinding','scopeEvidence']){
+  if(prepared[field]!==undefined)copy[field]=structuredClone(prepared[field]);else delete copy[field];
+ }
+ return copy;
+}
 export function preserveAdminBaselineFields(products,baseline,allowedBrands){
  const prior=new Map(baseline.map(p=>[p.id,p]));
  return products.map(p=>{const old=prior.get(p.id);if(!old||!allowedBrands.includes(p.brand))return p;
@@ -32,6 +39,7 @@ export function retainReviewedAdminPhoto(product,existing){
  const old=existing.find(p=>p.brand===product.brand&&samePhysicalVariant(p,product));
  if(!old?.presentation?.cachedPath||!old.image)return product;
  if(old.image!==product.image||old.style!==product.style){
+  if(!officialEvidenceFor(old,kstDay()))return product;
   // A listing-bound image proof cannot be combined with a different listing's
   // hash. Retain the complete reviewed proof envelope and record the new check
   // separately, without pretending the old photograph was verified today.

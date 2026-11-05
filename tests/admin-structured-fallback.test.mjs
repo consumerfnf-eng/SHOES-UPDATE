@@ -19,7 +19,7 @@ function fixture(t,markdown,{html='<title>New shoes</title><h1>New shoes</h1>'}=
     if(file==='config/daily_sources.json')return JSON.stringify({adidas:[{url:source}]});
     if(file==='public/data/catalog.json')return '{"products":[],"keywords":[]}';
     if(file==='reports/admin-rendered-index.json')return JSON.stringify(Object.fromEntries(urls.map((url,i)=>[url,{path:paths[i],checkedAt:now.toISOString()}])));
-    if(paths.includes(file))return gzipSync(JSON.stringify(cache[urls[paths.indexOf(file)]]));
+    if(paths.includes(file)){const url=urls[paths.indexOf(file)];return gzipSync(JSON.stringify({...cache[url],checkedAt:now.toISOString(),metadata:{statusCode:200,sourceURL:url,url}}));}
     return original(file,...args);
   });
   t.mock.method(globalThis,'fetch',async()=>{throw Error('NETWORK_DISABLED');});

@@ -4,6 +4,7 @@ import {officialTabScope} from './official-tab-scope.mjs';
 import {reviewedDesignName,manufacturerCode,identityFold,titleColorLabel} from './product-identity.mjs';
 import {siteBrandGroup,isSiteBrandAllowed} from './site-brand-policy.mjs';
 import {retailPublicationEligibility} from './retail-release-policy.mjs';
+import {verifiedCategoryApiProof} from './official-category-api.mjs';
 export function kstToday(now = new Date()) {
   const shifted = new Date(now.getTime() + 9 * 60 * 60 * 1000);
   return shifted.toISOString().slice(0, 10);
@@ -24,13 +25,14 @@ export function safeUrl(value) {
 const sameIdentity = (evidence, product) => typeof evidence?.brand==='string' && typeof evidence?.style==='string' && !!product.brand && !!product.style && evidence.brand.normalize('NFC').trim().toLowerCase()===product.brand.normalize('NFC').trim().toLowerCase() && evidence.style.replace(/[^a-z0-9]/gi,'').toLowerCase()===product.style.replace(/[^a-z0-9]/gi,'').toLowerCase();
 const verifiedDate = (value, today) => Number.isFinite(Date.parse(value)) && kstToday(new Date(value))<=today;
 export function officialProductUrl(product, today = kstToday()) {
+  if(product.officialProductEvidence?.verificationMethod==='official-new-category-json-variant'&&!verifiedCategoryApiProof(product,today))return '';
   const evidence=product.officialProductEvidence,url=safeUrl(product.url);
   return url && evidence?.verified===true && sameIdentity(evidence,product) && safeUrl(evidence.url)===url && verifiedDate(evidence.verifiedAt,today) ? url : '';
 }
 export function officialImageUrl(product, today = kstToday()) {
   const evidence=product.officialImageEvidence,url=safeUrl(product.image),sourceUrl=officialProductUrl(product,today);
   const listing=evidence?.verificationMethod==='official-new-listing-sku-image'&&hasArrivalEvidence(product,today)&&safeUrl(evidence.sourceUrl)===safeUrl(product.arrivalEvidence.url)&&evidence.contentHash===product.arrivalEvidence.contentHash;
-  return url && sourceUrl && evidence?.verified===true && sameIdentity(evidence,product) && safeUrl(evidence.url)===url && (listing||safeUrl(evidence.sourceUrl)===sourceUrl) && verifiedDate(evidence.verifiedAt,today) ? url : '';
+  return url && sourceUrl && evidence?.verified===true && sameIdentity(evidence,product) && safeUrl(evidence.url)===url && (listing||verifiedCategoryApiProof(product,today)||safeUrl(evidence.sourceUrl)===sourceUrl) && verifiedDate(evidence.verifiedAt,today) ? url : '';
 }
 // A reviewed navigation link does not grant official-proof or popularity eligibility.
 export function reviewedProductPageUrl(product, today = kstToday()) {

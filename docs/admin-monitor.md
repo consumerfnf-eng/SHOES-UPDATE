@@ -64,6 +64,22 @@ between different official image URLs only when cached photo SHA-256 is identica
 Failed image downloads and incomplete source coverage do not become completed
 audits. These local reports and rendered source caches are gitignored.
 
+Follow-up batches preserve a separate published baseline. Resume checkpoints
+retain unread listing URLs, per-page receipts, unverified product candidates and
+whole verified product records. A source configuration change invalidates an old
+checkpoint. Smaller resumed runs are unioned by exact identity instead of
+replacing the larger previous run; proofs are never assembled from different
+captures. Shopify feeds require a real empty terminal page and reject challenges,
+wrong URLs and repeated pages. Rendered receipt ingestion is atomic and serialized.
+
+The Nike/Jordan New collector binds adult-sneaker scope, exact merchandise SKU,
+product URL and image to the official public JSON response. The same proof
+contract is checked by both publication and client image rendering. adidas/Y-3
+requires original page hydration, complete root pagination and the explicit adult
+sneaker facet; cleats and children are excluded. FILA China and Mihara retain
+per-product continuation checkpoints. A successful HTTP response or an editorial
+New section alone never establishes brand-wide completeness.
+
 The runner reads the selected brand's permitted official sources, compares
 collected URLs and codes with the published catalog, and posts review candidates
 back to the private database. These are comparison candidates, not automatically

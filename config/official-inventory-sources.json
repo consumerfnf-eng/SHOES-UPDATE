@@ -26,16 +26,58 @@
       "root": "https://www.lemaire.fr"
     },
     {
-      "brand": "Dries Van Noten",
-      "root": "https://www.driesvannoten.com"
-    },
-    {
       "brand": "Toga",
       "root": "https://int.toga.jp"
     },
     {
       "brand": "Marine Serre",
       "root": "https://www.marineserre.com"
+    },
+    {
+      "brand": "ALOHAS",
+      "root": "https://alohas.com/en-us/collections/sneakers",
+      "productRoot": "https://alohas.com/en-us"
+    },
+    {
+      "brand": "Rick Owens",
+      "root": "https://www.rickowens.eu/collections/men-sneakers",
+      "productRoot": "https://www.rickowens.eu"
+    },
+    {
+      "brand": "Rick Owens",
+      "root": "https://www.rickowens.eu/collections/women-sneakers",
+      "productRoot": "https://www.rickowens.eu"
+    },
+    {
+      "brand": "AMIRI",
+      "root": "https://www.amiri.com"
+    },
+    {
+      "brand": "Dries Van Noten",
+      "root": "https://www.driesvannoten.com/collections/men-shoes",
+      "productRoot": "https://www.driesvannoten.com",
+      "pageSize": 50
+    },
+    {
+      "brand": "Dries Van Noten",
+      "root": "https://www.driesvannoten.com/collections/women-shoes",
+      "productRoot": "https://www.driesvannoten.com",
+      "pageSize": 50
+    },
+    {
+      "brand": "PANE",
+      "root": "https://paneshoes.com",
+      "pageSize": 50
+    },
+    {
+      "brand": "The Row",
+      "root": "https://www.therow.com/collections/women-sneakers",
+      "productRoot": "https://www.therow.com"
+    },
+    {
+      "brand": "The Row",
+      "root": "https://www.therow.com/collections/men-shoes",
+      "productRoot": "https://www.therow.com"
     }
   ]
 }

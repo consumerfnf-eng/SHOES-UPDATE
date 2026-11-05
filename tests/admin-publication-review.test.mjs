@@ -23,6 +23,9 @@ test('locale URLs sharing an exact manufacturer variant collapse, conflicting ID
 });
 test('a recheck retains an existing reviewed shoe photo instead of replacing it with a campaign image',()=>{
  const old={id:'old',brand:'Prada',style:'2EE400_3LKG_F0009',url:'https://www.prada.com/us/en/p/sneakers/2EE400_3LKG_F0009',image:'https://cdn.prada.com/shoe.jpg',presentation:{cachedPath:'/images/shoe.jpg',frame:{x:0,y:0,width:1,height:1}},officialImageEvidence:{verified:true,url:'https://cdn.prada.com/shoe.jpg'},colorway:'White'};
+ const proof={verified:true,brand:old.brand,style:old.style,verifiedAt:'2026-11-05T00:00:00Z',verificationMethod:'official-new-arrivals-and-product-page',contentHash:'a'.repeat(64)};
+ Object.assign(old,{productEvidenceUrl:old.url,officialProductEvidence:{...proof,url:old.url},officialImageEvidence:{...proof,url:old.image,sourceUrl:old.url}});
  const incoming={...old,id:'incoming',image:'https://cdn.prada.com/campaign.jpg',presentation:{cachedPath:'/images/campaign.jpg'},name:'Updated official name'};
  const out=retainReviewedAdminPhoto(incoming,[old]);assert.equal(out.image,old.image);assert.deepEqual(out.presentation,old.presentation);assert.equal(out.name,incoming.name);assert.notEqual(out.presentation,old.presentation);assert.equal(incoming.image,'https://cdn.prada.com/campaign.jpg');
+ const legacy={...old,officialProductEvidence:undefined};assert.equal(retainReviewedAdminPhoto(incoming,[legacy]),incoming,'an unverified legacy envelope cannot replace a new proof');
 });

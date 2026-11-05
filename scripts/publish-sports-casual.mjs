@@ -15,7 +15,7 @@ import {buildKeywordCatalog} from './search-keywords.mjs';
 import {buildStyleTrendBoard} from './style-trend-board.mjs';
 import {curateProduct,shiftMonth} from './curation.mjs';
 import {reviewScopedNew} from './review-scoped-new.mjs';
-import {dedupeScopedPrepared,bindPreparedRaw} from './scoped-prepared.mjs';
+import {dedupeScopedPrepared,bindPreparedRaw,exactOfficialPdpKey,sameExactOfficialPdp,scopedVariantConflict,retainScopedVariantFields} from './scoped-prepared.mjs';
 
 export const luxDigest=products=>createHash('sha256').update(JSON.stringify(products.filter(p=>siteBrandGroup(p.brand)==='LUX'))).digest('hex');
 const permitted=p=>['SPORTS','CASUAL'].includes(siteBrandGroup(p.brand));
@@ -27,14 +27,17 @@ export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date
  const before={published:luxDigest(catalog.products),source:luxDigest(source.products)};
  const snapshot=structuredClone(catalog),nextSource=structuredClone(source),added=[],duplicates=[],held=[],refreshed=[],canonicalRawIds=new Map();
  const ids=new Set(snapshot.products.map(p=>p.id)),positions=new Map(),identityIndex=new Map();
- const identityKeys=p=>{const brand=identityFold(p.brand),code=manufacturerCode(p),photo=p.presentation?.cachedPath||p.image;return [code&&brand+'|code|'+code,photo&&brand+'|photo|'+photo].filter(Boolean);};
+ const identityKeys=p=>{const brand=identityFold(p.brand),pdp=exactOfficialPdpKey(p,today),code=manufacturerCode(p),photo=p.presentation?.cachedPath||p.image;return [pdp&&'pdp|'+pdp,code&&brand+'|code|'+code,photo&&brand+'|photo|'+photo].filter(Boolean);};
  const indexProduct=(p,index)=>{positions.set(p.id,index);for(const key of identityKeys(p)){if(!identityIndex.has(key))identityIndex.set(key,new Set());identityIndex.get(key).add(index);}};
  snapshot.products.forEach(indexProduct);
- const physicalMatch=p=>[...new Set(identityKeys(p).flatMap(key=>[...(identityIndex.get(key)||[])]))].sort((a,b)=>a-b).map(i=>snapshot.products[i]).find(old=>samePhysicalVariant(old,p));
- for(const input of products){
+ const physicalMatch=p=>{
+  const candidates=[...new Set(identityKeys(p).flatMap(key=>[...(identityIndex.get(key)||[])]))].sort((a,b)=>a-b).map(i=>snapshot.products[i]).filter(old=>!scopedVariantConflict(old,p));
+  return candidates.find(old=>sameExactOfficialPdp(old,p,today))||candidates.find(old=>samePhysicalVariant(old,p));
+ };
+ for(const input of dedupeScopedPrepared(products,{today})){
   const existingId=positions.has(input.id)?snapshot.products[positions.get(input.id)]:undefined;
-  if(existingId){assert.equal(existingId.brand,input.brand,'A scoped update cannot reuse another brand ID');if(sourceMatches(existingId,'brand',today)&&!freshReviewed(input))continue;}
-  const p=normalizeDisplayLanguage(repairSourceLabels(input));
+  if(existingId){assert.equal(existingId.brand,input.brand,'A scoped update cannot reuse another brand ID');assert(!scopedVariantConflict(existingId,input),'A scoped update cannot reuse an ID for a different color variant');if(sourceMatches(existingId,'brand',today)&&!freshReviewed(input))continue;}
+  let p=normalizeDisplayLanguage(repairSourceLabels(input));
   p.name=p.name.replace(/^Product Name\s*:\s*/i,'').trim();
   if(p.brand==='Calvin Klein Jeans'&&/^사이즈 선택/.test(p.name)){
    p.sourceName=p.name;p.name=decodeURIComponent(new URL(p.url).pathname).split('/').filter(Boolean).at(-2).replaceAll('-',' ');
@@ -45,23 +48,16 @@ export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date
   const match=existingId||physicalMatch(p);
   if(match){
    canonicalRawIds.set(input.id,match.id);
-   const reason=existingId?'same-official-record':samePhysicalVariant(match,p);duplicates.push({id:p.id,existingId:match.id,reason});
+   const reason=existingId?'same-official-record':sameExactOfficialPdp(match,p,today)?'exact-official-product-url':samePhysicalVariant(match,p);duplicates.push({id:p.id,existingId:match.id,reason});
    if(!sourceMatches(match,'brand',today)||freshReviewed(p)){
-    const fromId=p.id;p.id=match.id;p.firstPublishedAt=match.firstPublishedAt||at;
+    const preserveRelease=p.style===match.style&&!p.dateEvidence&&match.dateEvidence?.verified;
+    const fromId=p.id;p=retainScopedVariantFields({...p,id:match.id},match);p.firstPublishedAt=match.firstPublishedAt||at;
     p.sourceSignals=[...new Map([...(match.sourceSignals||[]),...(p.sourceSignals||[])].map(signal=>[signal.type+'|'+signal.url,signal])).values()];
-    if(p.style===match.style&&!p.dateEvidence&&match.dateEvidence?.verified)for(const field of ['releaseDate','releaseDateEnd','releaseDatePrecision','dateEvidence'])if(match[field]!==undefined)p[field]=structuredClone(match[field]);
-    // Sparse listing records must not erase existing prices or reviewed metadata.
-    for(const [field,value] of Object.entries(match))if(p[field]===undefined&&field!=='styleType')p[field]=structuredClone(value);
-    for(const field of ['priceLabel','price','currency','material','gender','country','description','manufacturerStyle'])if((p[field]===undefined||p[field]===null||p[field]==='')&&match[field]!==undefined)p[field]=structuredClone(match[field]);
-    if((match.presentation?.image||match.image)===(p.presentation?.image||p.image)){
-     if(match.presentation?.frame)p.presentation={...p.presentation,...match.presentation};
-     const colour=match.colourReview;if(colour?.verified&&colour.style===p.style&&colour.url===p.url&&colour.image===p.image)for(const field of ['colourReview','colorway','colorSwatches','colorEvidence'])if(match[field]!==undefined)p[field]=match[field];
-    }
-    if(match.modelGroupId)p.modelGroupId=match.modelGroupId;
+    if(preserveRelease)for(const field of ['releaseDate','releaseDateEnd','releaseDatePrecision','dateEvidence'])if(match[field]!==undefined)p[field]=structuredClone(match[field]);
     p.keywordTags=productKeywordIds(p);p.searchConceptIds=productSearchConceptIds(p);
     const position=positions.get(match.id);snapshot.products[position]=p;indexProduct(p,position);refreshed.push({id:p.id,fromId,brand:p.brand,reason:'fresh-New-evidence-for-existing-variant'});
     const rawRow=raw.find(r=>r.id===fromId),sourceIndex=nextSource.products.findIndex(r=>r.id===p.id);
-    if(rawRow&&sourceIndex>=0){const old=nextSource.products[sourceIndex];assert(permitted(old));const merged={...old,...rawRow,id:p.id,firstSeen:old.firstSeen||rawRow.firstSeen};if(rawRow.officialProductEvidence?.verified&&!rawRow.styleType)delete merged.styleType;for(const field of ['priceLabel','price','currency','material','gender','country','description','manufacturerStyle'])if((merged[field]===undefined||merged[field]===null||merged[field]==='')&&old[field]!==undefined)merged[field]=structuredClone(old[field]);nextSource.products[sourceIndex]=merged;}
+    if(rawRow&&sourceIndex>=0){const old=nextSource.products[sourceIndex];assert(permitted(old));nextSource.products[sourceIndex]=retainScopedVariantFields({...rawRow,id:p.id,firstSeen:old.firstSeen||rawRow.firstSeen},old);}
    }continue;
   }
   p.firstPublishedAt??=at;p.keywordTags=productKeywordIds(p);p.searchConceptIds=productSearchConceptIds(p);

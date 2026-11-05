@@ -74,7 +74,7 @@ test('authorized LUX refresh retains the canonical physical variant and reviewed
  const out=scopedSportsMerge(catalog,source,[prepared],[raw],authorizedLuxOptions);
  assert.deepEqual(out.report.added,[]);assert.deepEqual(out.report.held,[]);
  assert.deepEqual(out.report.refreshed,[{id:old.id,fromId:prepared.id,brand:'Prada',reason:'fresh-New-evidence-for-existing-variant'}]);
- assert.equal(out.report.duplicates[0].reason,'exact-manufacturer-code');
+ assert.equal(out.report.duplicates[0].reason,'exact-official-product-url');
  assert.deepEqual(out.snapshot.products.map(p=>p.id),catalog.products.map(p=>p.id));
  const refreshed=out.snapshot.products[1];
  assert.equal(refreshed.id,old.id);assert.equal(refreshed.modelGroupId,old.modelGroupId);assert.equal(refreshed.firstPublishedAt,old.firstPublishedAt);

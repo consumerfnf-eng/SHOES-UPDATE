@@ -1,5 +1,6 @@
 import {displayBrandGroup,canonicalSiteBrand,isSiteBrandAllowed} from '../public/assets/brand-groups.mjs';
 import fs from 'node:fs';
+import {verifiedCategoryApiProof,CATEGORY_API_FIELDS} from '../public/assets/official-category-api.mjs';
 import {productKeywordIds,productSearchConceptIds,productCollaborationBrands} from './keyword-taxonomy.mjs';
 import {buildKeywordCatalog} from './search-keywords.mjs';
 import {validateSocialMetrics,qualifyingSocialMetric,withSocialComparisons} from './social-metrics.mjs';
@@ -237,9 +238,12 @@ export function officialEvidenceFor(p,today){
   const identity=e=>e?.verified===true&&identifierMatches(e)&&canonicalBrand(e.brand)===canonicalBrand(p.brand)&&key(p.style)&&key(e.style)===key(p.style)&&Number.isFinite(Date.parse(e.verifiedAt))&&kstDay(e.verifiedAt)<=today;
   const partner=canonicalBrand(p.brand)==='ASICS'&&httpUrl(p.url)&&/^(?:www\.)?ceciliebahnsen\.com$/.test(new URL(p.url).hostname)&&productCollaborationBrands(p).includes('Cecilie Bahnsen')&&product?.styleEvidence?.verified===true&&key(product.styleEvidence.style)===key(p.style)&&isOfficialProductUrl('ASICS',product.styleEvidence.url);
   const listing=product?.verificationMethod==='official-new-listing-sku-image'&&image?.verificationMethod===product.verificationMethod&&hasArrivalEvidence(p,today)&&isOfficialProductUrl(p.brand,p.arrivalEvidence.url)&&image.sourceUrl===p.arrivalEvidence.url&&product.contentHash===p.arrivalEvidence.contentHash&&image.contentHash===p.arrivalEvidence.contentHash&&p.productEvidenceUrl===p.arrivalEvidence.url;
-  if(!identity(product)||!identity(image)||!isOfficialProductUrl(p.brand,p.url)&&!partner||product.url!==p.url||image.url!==p.image||(!listing&&image.sourceUrl!==p.url)||!httpUrl(p.image))return null;
+  const api=verifiedCategoryApiProof(p,today);
+  if(product?.verificationMethod==='official-new-category-json-variant'&&!api)return null;
+  if(!identity(product)||!identity(image)||!isOfficialProductUrl(p.brand,p.url)&&!partner||product.url!==p.url||image.url!==p.image||(!listing&&!api&&image.sourceUrl!==p.url)||!httpUrl(p.image))return null;
   const clean=(e,fields)=>Object.fromEntries(fields.filter(k=>e[k]!==undefined).map(k=>[k,e[k]]));
   const verifiedProduct=clean(product,['verified','url','verifiedAt','brand','style','identifierType','verificationMethod','contentHash']);
+  if(api)Object.assign(verifiedProduct,clean(product,CATEGORY_API_FIELDS));
   if(product.verificationMethod==='official-partner-exact-name-color-image-with-reviewed-style'){
     const external=product.externalStyleEvidence;
     if(key(product.matchedName)!==key(p.name)||!product.publisherStyle||external?.verified!==true||key(external.style)!==key(p.style)||!httpUrl(external.url)||!Number.isFinite(Date.parse(external.verifiedAt)))return null;
@@ -248,7 +252,7 @@ export function officialEvidenceFor(p,today){
   if(partner)verifiedProduct.styleEvidence={verified:true,url:product.styleEvidence.url,style:product.styleEvidence.style};
   const model=product.modelIdentity;
   if(model?.verified===true&&model.id&&model.name&&key(model.name)===key(String(p.name).split(/\s[—–]\s/)[0]))verifiedProduct.modelIdentity={id:model.id,name:model.name,verified:true};
-  return {officialProductEvidence:verifiedProduct,officialImageEvidence:clean(image,['verified','url','sourceUrl','verifiedAt','brand','style','identifierType','verificationMethod','contentHash'])};
+  return {officialProductEvidence:verifiedProduct,officialImageEvidence:clean(image,['verified','url','sourceUrl','verifiedAt','brand','style','identifierType','verificationMethod','contentHash',...(api?CATEGORY_API_FIELDS:[])])};
 }
 // Loafers were on this list and are now asked for by name, so they come off
 // it. Everything still here is a dress or heeled shoe, or a boot - shapes
@@ -370,7 +374,7 @@ export function classifyFootwear(p) {
   const hybridTitle=`${title} ${p.hybridReview?.approved?p.hybridReview.type||'':''}`;
   const reviewedSneakerBase=p.hybridReview?.approved===true&&p.hybridReview.sneakerSole===true&&p.hybridReview.url===p.url&&isOfficialProductUrl(p.brand,p.url);
   // Hybrid RN is Nike's named training shoe, not a claim of a mixed shoe form.
-  const namedTrainingShoe=p.brand==='Nike'&&isOfficialProductUrl(p.brand,p.url)&&/\/t\/hybrid-rn-(?:womens|mens)-training-shoes-/i.test(p.url)&&/^Hybrid RN\b/i.test(p.name||'');
+  const namedTrainingShoe=p.brand==='Nike'&&isOfficialProductUrl(p.brand,p.url)&&/\/t\/hybrid-rn-(?:womens|mens)-training-shoes-/i.test(p.url)&&/^(?:Nike\s+)?Hybrid RN\b/i.test(p.name||'');
   if (!namedTrainingShoe&&(namedHybrid.test(hybridTitle) || sneakerHybridCandidate(p) && (sneakerStructure.test(p.name||'') || reviewedSneakerBase || /\bhybrids?\b|하이브리드|혼합|ハイブリッド|混合/i.test(hybridTitle) || p.category==='hybrid'))) {
     if (!p.hybridReview?.approved || !httpUrl(p.hybridReview.url)) return { reason: 'hybrid-review-required' };
     if (!sneakerStructure.test(context) && !reviewedSneakerBase)return {reason:'sneaker-structure-unverified'};

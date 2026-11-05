@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';import {adminD1} from './admin-d1.mjs';import {bulkRecheckPlan} from '../server/admin-monitor.mjs';
+const prior=JSON.parse(await fs.readFile('reports/admin-bulk-recheck-request.json','utf8')),status=JSON.parse(await fs.readFile('reports/admin-recheck-live-status.json','utf8'));
+if(prior.followup)throw Error('Follow-up already registered; resume its batch instead');
+const targets=status.filter(r=>r.status==='failed'||r.result?.status==='partial').map(r=>r.brand);if(targets.length!==95)throw Error('The explicitly requested 95-brand scope has changed');
+const directory='.secrets/admin-followup-before';await fs.mkdir(directory,{recursive:true});
+for(const file of ['catalog.json','catalog-source.json'])await fs.copyFile(file==='catalog.json'?'public/data/catalog.json':'data/catalog-source.json',directory+'/'+file,fs.constants.COPYFILE_EXCL);
+await fs.copyFile('reports/admin-bulk-recheck-request.json','reports/admin-first-request.json',fs.constants.COPYFILE_EXCL);
+const plan=bulkRecheckPlan(targets.map(brand=>({brand,status:'check-needed'})),'attention'),quote=v=>"'"+String(v).replaceAll("'","''")+"'",render=(s)=>{let i=0;return s.sql.replace(/\?/g,()=>quote(s.params[i++]));};
+await adminD1().execute(plan.statements.map(s=>render(s)+';').join('\n'));
+await fs.writeFile('reports/admin-bulk-recheck-request.json',JSON.stringify({followup:true,batchId:plan.id,requestedAt:plan.at,scope:'attention',targets,baselineDirectory:directory,previousBatchId:prior.batchId},null,2));console.log(JSON.stringify({batchId:plan.id,targets:targets.length,baselineDirectory:directory}));
