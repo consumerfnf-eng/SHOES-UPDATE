@@ -31,6 +31,11 @@ const newPath=/(?:^|[\/_-])(?:new)(?:\/|$)|(?:^|[\/_-])(?:new[\s_-]?(?:in|arriva
 // Decode before matching; a malformed escape is left as it was written.
 function readablePath(pathname){try{return decodeURIComponent(pathname);}catch{return pathname;}}
 export function isNewListing(url,text=''){
+  try{
+    const u=new URL(url);
+    if(u.hostname==='www.nike.com'&&/^\/w\/new-jordan-shoes-37eefz3n82yzy7ok\/?$/.test(u.pathname))return true;
+    if(u.hostname==='shop.lululemon.com'&&/^\/c\/whats-new-sneakers\/n1d852zq0cf\/?$/.test(u.pathname))return true;
+  }catch{}
   try{const u=new URL(url),path=readablePath(u.pathname);return (!isProductLink(url)||/\/(?:c|category)\//i.test(u.pathname)||/\/(?:new-arrivals?|new-in)\.html$/i.test(u.pathname))&&(newPath.test(path.replace(/\.html$/i,''))||newPath.test(u.searchParams.get('cgid')||'')||/^#\s+(?:new arrivals?|new in(?:\s+shoes)?|new shoes|신상품)\s*$/im.test(text));}catch{return false;}
 }
 // Arc'teryx files a product under /shop, with the style number on the end of
@@ -46,7 +51,7 @@ const productPath=/\/(?:products?|produtos|p|pr|pd|t)\/|\/[^/]+\.html(?:$|\?)|(?
 // shoes can publish.
 const kidsListing=/(?:^|[\/_-])(?:kids?|kid-new|junior|juniors|youth|boys?|girls?|children|toddler|infant|baby|bebe|enfant|bambino|키즈|아동|주니어|유아)(?:[\/_-]|$)/i;
 export function isKidsListing(url){try{return kidsListing.test(readablePath(new URL(url).pathname))||kidsListing.test(new URL(url).search);}catch{return false;}}
-function isProductLink(url){try{const u=new URL(url);if(/(?:prada|miumiu)\.com$/.test(u.hostname)&&/\/c\/[^/]+\.html$/.test(u.pathname)||/(?:^|\.)miharayasuhiro\.jp$/.test(u.hostname)&&u.pathname==='/products/list.php'||/\/stories\//.test(u.pathname))return false;return /(?:^|\.)burberry\.com$/.test(u.hostname)&&/-p\d{8,}\/?$/.test(u.pathname)||/(?:^|\.)ferragamo\.com$/.test(u.hostname)&&/-\d{6}--\d+\/?$/.test(u.pathname)||productPath.test(u.pathname)||u.hostname.endsWith('valentino.com')&&/\/product-[^/]+/.test(u.pathname)||u.hostname.endsWith('zegna.com')&&/\/product\.[^/]+\.\d+\/?$/.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
+function isProductLink(url){try{const u=new URL(url);if(/^\/(?:NODE\/)?product\/list\.html$/i.test(u.pathname)&&/^\d+$/.test(u.searchParams.get('cate_no')||''))return false;if(/(?:prada|miumiu)\.com$/.test(u.hostname)&&/\/c\/[^/]+\.html$/.test(u.pathname)||/(?:^|\.)miharayasuhiro\.jp$/.test(u.hostname)&&u.pathname==='/products/list.php'||/\/stories\//.test(u.pathname))return false;return /(?:^|\.)burberry\.com$/.test(u.hostname)&&/-p\d{8,}\/?$/.test(u.pathname)||/(?:^|\.)ferragamo\.com$/.test(u.hostname)&&/-\d{6}--\d+\/?$/.test(u.pathname)||productPath.test(u.pathname)||u.hostname.endsWith('valentino.com')&&/\/product-[^/]+/.test(u.pathname)||u.hostname.endsWith('zegna.com')&&/\/product\.[^/]+\.\d+\/?$/.test(u.pathname)||u.hostname==='usa.mizuno.com'&&/^\/running-[^/]+\/?$/.test(u.pathname);}catch{return false;}}
 function colorLabel(alt,brand){
   if(brand==='Cecilie Bahnsen'&&/\b[A-Z]+\/[A-Z]+$/.test(alt))return alt.split(/\s+/).at(-1);
   let color=['ASICS','PUMA','Onitsuka Tiger'].includes(brand)?alt.split(',')[1]?.trim().replace(/\s+\d+$/,'')||'':alt.split(/\s[-—–]\s/)[1]||'';
@@ -135,22 +140,37 @@ function selectedListingFacets(raw){
 }
 export function listingFollowups(text,url,brand,sectionEvidence){
   const facets=selectedListingFacets(url);
-  const parentNew=isNewListing(url,text)||sectionEvidence?.kind==='new-arrivals-navigation';
+  const parentNew=isNewListing(url,text)||sectionEvidence?.kind==='new-arrivals-navigation'&&sectionEvidence.targetUrl===url&&!!sectionEvidence.contentHash&&isOfficialProductUrl(brand,sectionEvidence.url);
+  const withinNewShelf=target=>{
+    if(!parentNew)return false;
+    const current=new URL(url),next=new URL(target),path=current.pathname.replace(/\/$/,'');
+    if(next.origin!==current.origin||!path)return false;
+    const bindings=[...current.searchParams].filter(([key])=>!/^(?:page|pageNumber|pagination|p|start|sz|sort|sort_by|sort_method|srule|utm_.*)$/i.test(key));
+    return (next.pathname===current.pathname||next.pathname.startsWith(path+'/'))&&bindings.every(([key,value])=>next.searchParams.get(key)===value);
+  };
   // A New page that is an editorial hub rather than a grid. Zegna's
   // /us-en/new-in/ is fifteen pages of campaign imagery whose only way
   // through to a shoe is a "Sneakers" link to /us-en/shoes/sneakers/ - no
   // cgid, no "new" in the path - so requiring a cgid meant reading the hub
   // every week and following nothing out of it. Any same-origin footwear
-  // shelf linked from a New page is now followed.
+  // shelf linked from a maison's New page is followed as assortment; sports
+  // and casual stores must preserve the New subset boundary below.
   const footwearFilter=l=>{
     if(!parentNew)return false;
+    // A sports shop's footer links its entire shoe department. Only a path
+    // inside this New shelf, or the same shelf with its category binding
+    // preserved, can inherit New membership. Maisons collect assortment.
+    if(!isLuxuryMaison(brand)&&!isNewListing(l.url)){
+      if(!withinNewShelf(l.url))return false;
+    }
     try{return /sneakers?|shoes?|footwear|trainers?|스니커즈|신발|슈즈/i.test(clean(l.label)+' '+readablePath(new URL(l.url).pathname))
       &&new URL(l.url).origin===new URL(url).origin;}catch{return false;}
   };
   const links=markdownLinks(text),result=links.filter(l=>!l.image&&isOfficialProductUrl(brand,l.url)&&!isProductLink(l.url)&&!isKidsListing(l.url)&&canonicalUrl(l.url)!==canonicalUrl(url))
     .filter(l=>selectedListingFacets(l.url)===facets)
+    .filter(l=>isLuxuryMaison(brand)||!parentNew||!/^(?:next|next page|load more|view more|다음|더 보기|次へ|\d+)$/i.test(clean(l.label))||isNewListing(l.url)||withinNewShelf(l.url))
     .filter(l=>footwearFilter(l)||isNewListing(l.url)&&!/[?&](?:prefn|filter\.|srule=)/i.test(l.url)||/^(?:new|new arrivals?|new in(?: shoes)?|신상품|新作)$/i.test(clean(l.label))||/^(?:next|next page|load more|view more|다음|더 보기|次へ|\d+)$/i.test(clean(l.label))&&new URL(l.url).origin===new URL(url).origin)
-    .map(l=>({url:l.url,name:clean(l.label)||'Official listing continuation',...(footwearFilter(l)||/^(?:new|new arrivals?|new in(?: shoes)?|신상품|新作)$/i.test(clean(l.label))?{sectionEvidence:{kind:'new-arrivals-navigation',url,targetUrl:l.url,contentHash:digest(text)}}:{})})).sort((a,b)=>Number(/sneaker|shoes|footwear/i.test(b.name))-Number(/sneaker|shoes|footwear/i.test(a.name)));
+    .map(l=>({url:l.url,name:clean(l.label)||'Official listing continuation',...(footwearFilter(l)||withinNewShelf(l.url)||/^(?:new|new arrivals?|new in(?: shoes)?|신상품|新作)$/i.test(clean(l.label))?{sectionEvidence:{kind:'new-arrivals-navigation',url,targetUrl:l.url,contentHash:digest(text)}}:{})})).sort((a,b)=>Number(/sneaker|shoes|footwear/i.test(b.name))-Number(/sneaker|shoes|footwear/i.test(a.name)));
   const count=Number(text.match(/\b([\d,]+)\s+(?:products|items)\b/i)?.[1]?.replaceAll(',',''));
   const ajax=links.find(l=>selectedListingFacets(l.url)===facets&&isNewListing(l.url)&&/\/searchajax\?/.test(l.url)&&new URL(l.url).searchParams.has('start'));
   if(count&&ajax){const next=new URL(ajax.url),size=Number(next.searchParams.get('sz'));const offset=Number(new URL(url).searchParams.get('start')||0)+size;if(size>0&&offset<count&&offset<2000){next.searchParams.set('start',String(offset));result.push({url:next.href,name:'Official New Arrivals next product page'});}}
@@ -160,9 +180,10 @@ export function listingFollowups(text,url,brand,sectionEvidence){
     try{
       const next=new URL(match[0].replaceAll('&amp;','&')),current=new URL(url);
       if(next.origin!==current.origin||next.pathname!==current.pathname||selectedListingFacets(next.href)!==facets)continue;
+      if(parentNew&&!isLuxuryMaison(brand)&&!withinNewShelf(next.href))continue;
       const page=['page','pageNumber','pagination','p'].find(k=>/^\d+$/.test(next.searchParams.get(k)||''));
       if(!page||Number(next.searchParams.get(page))<2||canonicalUrl(next.href)===canonicalUrl(url))continue;
-      if(!result.some(r=>canonicalUrl(r.url)===canonicalUrl(next.href)))result.push({url:next.href,name:'Official listing next product page'});
+      if(!result.some(r=>canonicalUrl(r.url)===canonicalUrl(next.href)))result.push({url:next.href,name:'Official listing next product page',...(withinNewShelf(next.href)?{sectionEvidence:{kind:'new-arrivals-navigation',url,targetUrl:next.href,contentHash:digest(text)}}:{})});
     }catch{}
   }
   return result;

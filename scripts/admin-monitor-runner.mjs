@@ -14,6 +14,7 @@ import {officialHtmlMarkdown,pacedOfficialFetch,assertReadableOfficial} from './
 import {createJinaClient} from './jina_client.mjs';
 import {gunzipSync} from 'node:zlib';
 import {collectOfficialInventory} from './collect-official-inventory.mjs';
+import {selectAdminSources,allowAdminListingFollowup,adminReaderMarkdown} from './admin-source-selection.mjs';
 const readJson=async file=>JSON.parse(await fs.readFile(file,'utf8'));
 const normalizeUrl=value=>{try{const u=new URL(value);u.hash='';for(const key of [...u.searchParams.keys()])if(/^(utm_|ref$)/.test(key))u.searchParams.delete(key);return u.href.replace(/\/$/,'');}catch{return '';}};
 export function auditCandidates(products,published,brand){
@@ -27,22 +28,24 @@ export async function auditBrand(brand,{readHtml,now=new Date(),onCollected,onPr
  const rendered=async url=>{if(cached.has(url))return cached.get(url);const entry=cachedIndex[url];if(!entry||!entry.path.startsWith('logs/admin-rendered/')||now-Date.parse(entry.checkedAt)>86400000)return null;try{const value=JSON.parse(gunzipSync(await fs.readFile(entry.path)));cached.set(url,value);return value;}catch{return null;}};
  const paced=pacedOfficialFetch(),jina=createJinaClient({key:process.env.JINA_API_KEY||'',timeoutMs:20000,anonymousIntervalMs:Number(process.env.ADMIN_ANONYMOUS_INTERVAL_MS||30000),log:()=>{}});
  readHtml??=async url=>{const page=await rendered(url);if(page?.html)return page.html;const response=await paced(url,{headers:{'User-Agent':'Mozilla/5.0','Accept':'text/html'}});if(!response.ok)throw Error('Official source HTTP '+response.status);return response.text();};
- let result;
+ let result,structuredErrors=[];
  const inventory=siteBrandGroup(brand)==='LUX'?(await readJson('config/official-inventory-sources.json')).sources.filter(s=>s.brand===brand):[];
  if(inventory.length){const value=await collectOfficialInventory({sources:inventory,read:readHtml,now});result={products:value.products,coverage:value.diagnostics.map(d=>({...d,listingPages:d.pages,total:d.feedProducts,verified:d.verified,exhaustive:d.exhausted,errors:d.error?[d.error]:[],status:d.error?'partial':'checked'}))};}
  else if(brand==='PUMA')result=await collectPumaKoreaNew({readHtml,now});
  else if(brand==='COLUMBIA')result=await collectColumbiaNew({readHtml,now});
  else if(['Umbro','DESCENTE','Le Coq Sportif'].includes(brand))result=await collectDkonNew({brands:[brand],now});
  else if(['ASICS','adidas','New Balance','Converse'].includes(brand)){
-  const structured=await collectStructuredNew({brands:[brand],readHtml,now});result=structured.outputs[brand];if(!result)throw Error(structured.errors.map(e=>e.error).join('; ')||'Official New collection failed');
+  const structured=await collectStructuredNew({brands:[brand],readHtml,now,allowPartial:true});result=structured.outputs[brand];if(!result)structuredErrors=structured.errors.length?structured.errors:[{error:'Official New structured collection returned no output'}];
  }else if(brand==='FILA China')result=await collectFilaChina({read:readHtml,now});
- else if((sources[brand]||[]).some(s=>/\/collections\//.test(s.url)&&isNewListing(s.url))){
+ else if(siteBrandGroup(brand)!=='LUX'&&(sources[brand]||[]).some(s=>/\/collections\//.test(s.url)&&isNewListing(s.url))){
   result=await collectOfficialNewFeeds({sources:{[brand]:sources[brand]},now,onProgress:()=>{}});
- }else{
-  const lux=siteBrandGroup(brand)==='LUX',selected=(sources[brand]||[]).filter(s=>lux||isNewListing(s.url));
+ }
+ if(!result){
+  const lux=siteBrandGroup(brand)==='LUX',selected=selectAdminSources(brand,sources[brand]);
   if(!selected.length)throw Error('공식 New 수집 경로 설정 점검 필요');
-  const read=async input=>{const url=input.replace(/^https:\/\/r\.jina\.ai\//,'');const page=await rendered(url);if(page?.markdown)return assertReadableOfficial(page.markdown);try{return assertReadableOfficial(officialHtmlMarkdown(await readHtml(url),url));}catch{return jina.read('https://r.jina.ai/'+url);}};
-  result=await collectNewArrivals({sources:{[brand]:selected},brands:[brand],existing:catalog.products.filter(p=>p.brand===brand),read,readDetails:readHtml,now,maxPagesPerBrand:60,maxDetailMsPerBrand:120000,catalogueBrands:lux?[brand]:[],filterCandidate:isScopedSneakerCandidate,log:()=>{},onProgress});
+  const read=async input=>{const url=input.replace(/^https:\/\/r\.jina\.ai\//,'');const page=await rendered(url);if(page?.markdown)return assertReadableOfficial(adminReaderMarkdown(page.markdown,url));try{return assertReadableOfficial(officialHtmlMarkdown(await readHtml(url),url));}catch{return jina.read('https://r.jina.ai/'+url);}};
+  result=await collectNewArrivals({sources:{[brand]:selected},brands:[brand],existing:catalog.products.filter(p=>p.brand===brand),read,readDetails:readHtml,now,maxPagesPerBrand:Number(process.env.ADMIN_MAX_LISTING_PAGES||12),maxDetailMsPerBrand:120000,catalogueBrands:lux?[brand]:[],allowListingFollowup:(next,parent)=>allowAdminListingFollowup(brand,selected,next,parent),filterCandidate:isScopedSneakerCandidate,log:()=>{},onProgress});
+  if(structuredErrors.length)result.errors=[...(result.errors||[]),...structuredErrors];
  }
  const coverage=Array.isArray(result.coverage)?result.coverage:[result.coverage||{}],errors=coverage.flatMap(c=>[...(c.errors||[]),...(c.error?[c.error]:[])]).concat(result.errors||[]).map(e=>String(e.error||e.message||e).slice(0,240));
  if(onCollected)await onCollected(result);

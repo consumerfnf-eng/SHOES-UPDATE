@@ -4,7 +4,7 @@ import {spawnSync} from 'node:child_process';
 import {pathToFileURL} from 'node:url';
 import {SITE_BRAND_GROUPS} from '../public/assets/site-brand-policy.mjs';
 import {prepareCatalog} from '../public/assets/catalog-runtime.mjs';
-import {isNewListing} from './new-arrivals.mjs';
+import {selectAdminSources} from './admin-source-selection.mjs';
 const read=async(file,fallback)=>{try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(error){if(error.code==='ENOENT')return fallback;throw error;}};
 const latest=values=>values.filter(v=>Number.isFinite(Date.parse(v))).sort((a,b)=>Date.parse(b)-Date.parse(a))[0]||null;
 const sourceFiles=[['data/sports-casual-new.json',null],['data/puma-korea-new.json','PUMA'],['data/asics-complete-new.json','ASICS'],['data/adidas-complete-new.json','adidas'],['data/newbalance-complete-new.json','New Balance'],['data/converse-complete-new.json','Converse'],['data/fila-china-new.json','FILA China'],['data/official-new-feeds.json',null],['data/columbia-new.json','COLUMBIA'],['data/dkon-new.json',null]];
@@ -20,7 +20,7 @@ export async function buildAdminSnapshot({now=new Date()}={}){
  const rows=SITE_BRAND_GROUPS.flatMap(group=>group.priority.map(brand=>{
   const products=prepared.products.filter(p=>p.brand===brand&&prepared.officialMatches.get(p.id)),checks=coverage.filter(c=>c.brand===brand),lastCheckAt=latest(checks.map(c=>c.checkedAt)),recent=checks.filter(c=>c.checkedAt===lastCheckAt);
   const errors=recent.flatMap(c=>c.errors||[]).map(e=>String(e.error||e.message||e).slice(0,240)).filter(Boolean);
-  const sourceList=(sources[brand]||[]).filter(s=>group.name==='LUX'||isNewListing(s.url)).filter(s=>/^https:\/\//.test(s.url));
+  const sourceList=selectAdminSources(brand,sources[brand]);
   const age=lastCheckAt?(now-Date.parse(lastCheckAt))/86400000:null;
   const blocked=recent.length&&recent.every(c=>['unavailable','failed'].includes(c.status));
   const status=blocked?'blocked':age===null?'check-needed':age>7?'stale':errors.length||recent.some(c=>c.truncated||c.exhaustive!==true)?'partial':'checked';

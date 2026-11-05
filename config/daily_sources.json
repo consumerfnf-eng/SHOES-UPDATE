@@ -961,6 +961,10 @@
   ],
   "Lululemon": [
     {
+      "name": "Lululemon Official New shoes",
+      "url": "https://shop.lululemon.com/c/whats-new-sneakers/n1d852zq0cf"
+    },
+    {
       "name": "Lululemon Official daily source",
       "url": "https://shop.lululemon.com/c/shoes/n1n4fc"
     },
@@ -2123,6 +2127,10 @@
   ],
   "Jordan": [
     {
+      "name": "Jordan Official New shoes",
+      "url": "https://www.nike.com/w/new-jordan-shoes-37eefz3n82yzy7ok"
+    },
+    {
       "name": "Jordan Official public source",
       "url": "https://www.nike.com/launch"
     },
@@ -2132,6 +2140,10 @@
     }
   ],
   "Brooks": [
+    {
+      "name": "Brooks Official New shoes",
+      "url": "https://www.brooksrunning.com/en_us/featured/new-arrivals/"
+    },
     {
       "name": "Brooks Official public source",
       "url": "https://www.brooksrunning.com/en_us/shoes/"
@@ -2205,6 +2217,10 @@
   ],
   "Rockfish Weatherwear": [
     {
+      "name": "Rockfish Weatherwear Official New shoes",
+      "url": "https://en.rockfish-weatherwear.co.kr/category/new/230/"
+    },
+    {
       "name": "Rockfish Weatherwear Official public source",
       "url": "https://en.rockfish-weatherwear.co.kr/",
       "basis": "catalogue"
@@ -2212,7 +2228,13 @@
     {
       "name": "Rockfish Weatherwear Official New",
       "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/list.html?cate_no=626",
-      "basis": "catalogue"
+      "sectionEvidence": {
+        "kind": "new-arrivals-navigation",
+        "url": "https://en.rockfish-weatherwear.co.kr/category/new/230/",
+        "targetUrl": "https://en.rockfish-weatherwear.co.kr/NODE/product/list.html?cate_no=626",
+        "contentHash": "bfdba22d7cad34c9ee71f563d6f51acbbc739a47f4abd20191901d1c68d1942a",
+        "excerpt": "New - New - ROCKFISH WEATHERWEAR; official New navigation links cate_no=626"
+      }
     },
     {
       "name": "Rockfish Weatherwear Official Shoes",
@@ -2329,6 +2351,10 @@
     }
   ],
   "Crocs": [
+    {
+      "name": "Crocs Official New shoes",
+      "url": "https://www.crocs.com/c/men/footwear/new-arrivals"
+    },
     {
       "name": "Crocs Official public source",
       "url": "https://www.crocs.com/c/men/footwear/sneakers"
@@ -2658,6 +2684,10 @@
   ],
   "TOMMY HILFIGER": [
     {
+      "name": "TOMMY HILFIGER Official New shoes",
+      "url": "https://sg.tommy.com/en/shop-all-products/new-arrivals/shoes-bags-and-accessories/"
+    },
+    {
       "name": "TOMMY HILFIGER official New",
       "url": "https://www.hfashionmall.com/display/brand/getThemeBrand?brndCtgryNo=BDMA08&themeCtgryNo=THMA18A05",
       "sectionEvidence": {
@@ -2851,6 +2881,10 @@
     }
   ],
   "POLO RALPH LAUREN": [
+    {
+      "name": "POLO RALPH LAUREN Official New shoes",
+      "url": "https://www.ralphlauren.com/men-clothing-shop-new-arrivals-cg/r/polo-ralph-lauren?prefn1=CategoryCode&prefv1=Shoes"
+    },
     {
       "name": "POLO RALPH LAUREN Official source verified 2026-11-04",
       "url": "https://www.ralphlauren.com/men-footwear-shoes"

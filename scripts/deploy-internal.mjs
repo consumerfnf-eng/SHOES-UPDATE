@@ -99,7 +99,7 @@ if(await exists('public/admin/index.html')){
  if(list.status!==0||!['ADMIN_PASSWORD_HASH','ADMIN_RUNNER_KEY'].every(name=>list.stdout.includes(name)))throw Error('Administrator secrets missing; run node scripts/setup-admin.mjs before deployment');
  await syncAdminSnapshot();
 }
-const staged=await prepareDeploymentAssets(path.join(root,'public'));
+const staged=await prepareDeploymentAssets(path.join(root,'public'),{allowLuxOriginals:true});
 // Compile the password middleware explicitly: the upload directory is temporary
 // and must never rely on Wrangler discovering a neighbouring functions folder.
 // Wrangler's deprecated --outfile emits multipart upload data, not JavaScript.

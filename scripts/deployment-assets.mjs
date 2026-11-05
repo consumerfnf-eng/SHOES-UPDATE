@@ -6,6 +6,7 @@ import assert from 'node:assert/strict';
 import {decodeCatalog} from '../public/assets/catalog-wire.mjs';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
+import {isDeepStrictEqual} from 'node:util';
 import {deferredProductOriginals} from './deployment-photo-budget.mjs';
 const hashedPhoto=/^images\/[a-f0-9]{64}\.(?:jpg|png|webp)$/;
 const operatorReport=/^data\/lux-[^/]*(?:report|summary|reconciliation)\.json$/;
@@ -17,19 +18,40 @@ async function files(directory,prefix=''){
   else out.push(relative);
  }return out;
 }
-export async function prepareDeploymentAssets(publicDirectory){
- const source=path.resolve(publicDirectory),all=await files(source),available=new Set(all),referenced=new Set();
+export async function prepareDeploymentAssets(publicDirectory,{allowLuxOriginals=false}={}){
+ const source=path.resolve(publicDirectory),all=await files(source),available=new Set(all),referenced=new Set(),protectedPaths=new Set();
+ const catalog=available.has('data/catalog.json')?JSON.parse(await fs.readFile(path.join(source,'data/catalog.json'),'utf8')):null;
+ const productsById=new Map((catalog?.products||[]).map(p=>[p.id,p]));
+ const protectedRepresentation=raw=>{
+  const decoded=decodeCatalog(raw),{products,...metadata}=decoded;
+  // Exempt only exact product copies. Unknown or stale rows stay protected.
+  const otherProducts=(products||[]).filter(p=>!isDeepStrictEqual(productsById.get(p.id),p));
+  const wrapperMetadata=raw.wireFormat?Object.fromEntries(Object.entries(raw).filter(([key])=>!['wireFormat','strings','shapes','payload','products'].includes(key))):{};
+  return {metadata,products:otherProducts,wrapperMetadata};
+ };
  for(const relative of all){
   if(/(?:catalog-source|curation-review|curation-summary|archive-queue)\.json$/.test(relative))throw Error('Private collection data in deployment: '+relative);
   if(operatorReport.test(relative))continue;
   if(!/\.(?:json|html|css|m?js|svg)$/.test(relative))continue;
   const text=await fs.readFile(path.join(source,relative),'utf8');
   for(const match of text.matchAll(/\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)/g))referenced.add(match[0].slice(1));
+  // Catalogue products supply candidates; every other reference stays static,
+  // including research/boards and metadata in all catalogue representations.
+  let protectedText=text;
+  if(relative==='data/catalog.json'){
+   const {products,...metadata}=catalog;protectedText=JSON.stringify(metadata);
+  }else if(relative==='data/catalog-ui.json'||/^data\/catalog-brands\/[a-f0-9]{24}\.json$/.test(relative)){
+   protectedText=JSON.stringify(protectedRepresentation(JSON.parse(text)));
+  }else if(relative==='data/catalog-index.json'){
+   const {base,...metadata}=JSON.parse(text);
+   protectedText=JSON.stringify({metadata,base:protectedRepresentation(base)});
+  }
+  for(const match of protectedText.matchAll(/\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)/g))protectedPaths.add(match[0].slice(1));
  }
  let selected=all.filter(relative=>!operatorReport.test(relative)&&(!hashedPhoto.test(relative)||referenced.has(relative)));
  let origins=null;
  if(selected.length>19900){
-  const catalog=JSON.parse(await fs.readFile(path.join(source,'data/catalog.json'),'utf8')),deferred=deferredProductOriginals(catalog,selected,19900),root=fileURLToPath(new URL('../',import.meta.url));
+  const deferred=deferredProductOriginals(catalog,selected,19900,{allowLuxOriginals,protectedPaths}),root=fileURLToPath(new URL('../',import.meta.url));
   const commit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
   const tree=execFileSync('git',['ls-tree','-r','--format=%(objectname) %(path)',commit,'--','public/images'],{cwd:root,encoding:'utf8',maxBuffer:10*1024*1024});
   const blobs=new Map(tree.trim().split('\n').map(line=>[line.slice(41),line.slice(0,40)]));

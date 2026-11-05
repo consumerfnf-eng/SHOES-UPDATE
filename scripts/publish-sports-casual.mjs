@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import {siteBrandGroup} from '../public/assets/site-brand-policy.mjs';
 import {sourceMatches} from '../public/assets/catalog-view.mjs';
-import {samePhysicalVariant} from '../public/assets/product-identity.mjs';
+import {samePhysicalVariant,manufacturerCode,identityFold} from '../public/assets/product-identity.mjs';
 import {normalizeDisplayLanguage,hasForeignDisplayScript} from './normalize-display-language.mjs';
 import {repairSourceLabels} from './repair-source-labels.mjs';
 import {productKeywordIds,productSearchConceptIds} from './keyword-taxonomy.mjs';
@@ -19,14 +19,20 @@ import {dedupeScopedPrepared,bindPreparedRaw} from './scoped-prepared.mjs';
 
 export const luxDigest=products=>createHash('sha256').update(JSON.stringify(products.filter(p=>siteBrandGroup(p.brand)==='LUX'))).digest('hex');
 const permitted=p=>['SPORTS','CASUAL'].includes(siteBrandGroup(p.brand));
-export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date().toISOString(),brandPolicy=[]}={}){
+export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date().toISOString(),brandPolicy=[],includeLux=false,allowedBrands}={}){
+ if(includeLux)assert(Array.isArray(allowedBrands),'LUX updates require an explicit allowedBrands whitelist');
+ const permitted=p=>['SPORTS','CASUAL',...(includeLux?['LUX']:[])].includes(siteBrandGroup(p.brand))&&(!allowedBrands||allowedBrands.includes(p.brand));
  assert(products.every(permitted)&&raw.every(permitted),'SPORTS/CASUAL updates cannot contain LUX or excluded brands');
  const freshReviewed=p=>{const r=p.scopedNewReview;return r?.verified===true&&r.brand===p.brand&&r.style===p.style&&r.url===p.url&&r.image===(p.presentation?.image||p.image)&&Number.isFinite(Date.parse(r.checkedAt));};
  const before={published:luxDigest(catalog.products),source:luxDigest(source.products)};
- const snapshot=structuredClone(catalog),nextSource=structuredClone(source),added=[],duplicates=[],held=[],refreshed=[];
- const ids=new Set(snapshot.products.map(p=>p.id));
+ const snapshot=structuredClone(catalog),nextSource=structuredClone(source),added=[],duplicates=[],held=[],refreshed=[],canonicalRawIds=new Map();
+ const ids=new Set(snapshot.products.map(p=>p.id)),positions=new Map(),identityIndex=new Map();
+ const identityKeys=p=>{const brand=identityFold(p.brand),code=manufacturerCode(p),photo=p.presentation?.cachedPath||p.image;return [code&&brand+'|code|'+code,photo&&brand+'|photo|'+photo].filter(Boolean);};
+ const indexProduct=(p,index)=>{positions.set(p.id,index);for(const key of identityKeys(p)){if(!identityIndex.has(key))identityIndex.set(key,new Set());identityIndex.get(key).add(index);}};
+ snapshot.products.forEach(indexProduct);
+ const physicalMatch=p=>[...new Set(identityKeys(p).flatMap(key=>[...(identityIndex.get(key)||[])]))].sort((a,b)=>a-b).map(i=>snapshot.products[i]).find(old=>samePhysicalVariant(old,p));
  for(const input of products){
-  const existingId=snapshot.products.find(p=>p.id===input.id);
+  const existingId=positions.has(input.id)?snapshot.products[positions.get(input.id)]:undefined;
   if(existingId){assert.equal(existingId.brand,input.brand,'A scoped update cannot reuse another brand ID');if(sourceMatches(existingId,'brand',today)&&!freshReviewed(input))continue;}
   const p=normalizeDisplayLanguage(repairSourceLabels(input));
   p.name=p.name.replace(/^Product Name\s*:\s*/i,'').trim();
@@ -36,31 +42,37 @@ export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date
   if(!sourceMatches(p,'brand',today)||!p.presentation?.cachedPath||hasForeignDisplayScript(p.name)){held.push({id:p.id,brand:p.brand,reason:'official-sneaker-photo-or-language-gate'});continue;}
   const rechecked=curateProduct({...p,productVerifiedAt:p.lastVerifiedAt},today);
   if(!rechecked.product||rechecked.expired){held.push({id:p.id,brand:p.brand,reason:rechecked.reason||'expired-after-label-repair'});continue;}
-  const match=existingId||snapshot.products.find(old=>old.brand===p.brand&&samePhysicalVariant(old,p));
+  const match=existingId||physicalMatch(p);
   if(match){
+   canonicalRawIds.set(input.id,match.id);
    const reason=existingId?'same-official-record':samePhysicalVariant(match,p);duplicates.push({id:p.id,existingId:match.id,reason});
    if(!sourceMatches(match,'brand',today)||freshReviewed(p)){
     const fromId=p.id;p.id=match.id;p.firstPublishedAt=match.firstPublishedAt||at;
     p.sourceSignals=[...new Map([...(match.sourceSignals||[]),...(p.sourceSignals||[])].map(signal=>[signal.type+'|'+signal.url,signal])).values()];
     if(p.style===match.style&&!p.dateEvidence&&match.dateEvidence?.verified)for(const field of ['releaseDate','releaseDateEnd','releaseDatePrecision','dateEvidence'])if(match[field]!==undefined)p[field]=structuredClone(match[field]);
+    // Sparse listing records must not erase existing prices or reviewed metadata.
+    for(const [field,value] of Object.entries(match))if(p[field]===undefined)p[field]=structuredClone(value);
+    for(const field of ['priceLabel','price','currency','material','gender','country','description','manufacturerStyle'])if((p[field]===undefined||p[field]===null||p[field]==='')&&match[field]!==undefined)p[field]=structuredClone(match[field]);
     if((match.presentation?.image||match.image)===(p.presentation?.image||p.image)){
      if(match.presentation?.frame)p.presentation={...p.presentation,...match.presentation};
      const colour=match.colourReview;if(colour?.verified&&colour.style===p.style&&colour.url===p.url&&colour.image===p.image)for(const field of ['colourReview','colorway','colorSwatches','colorEvidence'])if(match[field]!==undefined)p[field]=match[field];
     }
+    if(match.modelGroupId)p.modelGroupId=match.modelGroupId;
     p.keywordTags=productKeywordIds(p);p.searchConceptIds=productSearchConceptIds(p);
-    snapshot.products[snapshot.products.indexOf(match)]=p;refreshed.push({id:p.id,fromId,brand:p.brand,reason:'fresh-New-evidence-for-existing-variant'});
+    const position=positions.get(match.id);snapshot.products[position]=p;indexProduct(p,position);refreshed.push({id:p.id,fromId,brand:p.brand,reason:'fresh-New-evidence-for-existing-variant'});
     const rawRow=raw.find(r=>r.id===fromId),sourceIndex=nextSource.products.findIndex(r=>r.id===p.id);
-    if(rawRow&&sourceIndex>=0){const old=nextSource.products[sourceIndex];assert(permitted(old));nextSource.products[sourceIndex]={...old,...rawRow,id:p.id,firstSeen:old.firstSeen||rawRow.firstSeen};}
+    if(rawRow&&sourceIndex>=0){const old=nextSource.products[sourceIndex];assert(permitted(old));const merged={...old,...rawRow,id:p.id,firstSeen:old.firstSeen||rawRow.firstSeen};for(const field of ['priceLabel','price','currency','material','gender','country','description','manufacturerStyle'])if((merged[field]===undefined||merged[field]===null||merged[field]==='')&&old[field]!==undefined)merged[field]=structuredClone(old[field]);nextSource.products[sourceIndex]=merged;}
    }continue;
   }
   p.firstPublishedAt??=at;p.keywordTags=productKeywordIds(p);p.searchConceptIds=productSearchConceptIds(p);
-  snapshot.products.push(p);ids.add(p.id);added.push({id:p.id,brand:p.brand});
+  snapshot.products.push(p);indexProduct(p,snapshot.products.length-1);ids.add(p.id);canonicalRawIds.set(input.id,p.id);added.push({id:p.id,brand:p.brand});
  }
  const sourceIds=new Set(nextSource.products.map(p=>p.id));
- for(const p of raw)if(!sourceIds.has(p.id)){nextSource.products.push(p);sourceIds.add(p.id);}
+ for(const input of raw){const id=includeLux?canonicalRawIds.get(input.id):input.id;if(!id)continue;const p=id===input.id?input:{...input,id};if(!sourceIds.has(p.id)){nextSource.products.push(p);sourceIds.add(p.id);}}
  snapshot.publishedAt=at;snapshot.asOf=today;snapshot.periodStart=shiftMonth(today,-3);
  for(const b of brandPolicy)if(permitted({brand:b.name})&&!snapshot.brands.some(old=>old.name===b.name))snapshot.brands.push(b);
  snapshot.sourceStatus={...snapshot.sourceStatus,lastSportsCasualUpdateAt:at};
+ if(includeLux)snapshot.sourceStatus={...snapshot.sourceStatus,lastRecheckUpdateAt:at,...(added.length?{lastVerifiedAdditionAt:at}:{})};
  if(snapshot.sourceStatus.counts)snapshot.sourceStatus.counts={...snapshot.sourceStatus.counts,source:nextSource.products.length,published:snapshot.products.length};
  if(snapshot.keywordCheckedAt){
   const checked=snapshot.keywordCheckedAt;
@@ -68,8 +80,9 @@ export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date
   if(snapshot.styleTrendKeywords?.method==='verified-style-board-v1')snapshot.styleTrendKeywords=buildStyleTrendBoard(snapshot.products,snapshot.styleTrendKeywords.observations,{now:at,updated:snapshot.styleTrendKeywords.updated,sourceRanks:snapshot.sourceRanks});
  }
  const after={published:luxDigest(snapshot.products),source:luxDigest(nextSource.products)};
- assert.deepEqual(after,before,'Existing LUX product objects and order must be identical');
- return {snapshot,source:nextSource,report:{checkedAt:at,added,duplicates,held,refreshed,lux:{before,after,unchanged:true}}};
+ if(!includeLux)assert.deepEqual(after,before,'Existing LUX product objects and order must be identical');
+ assert(snapshot.products.length>=catalog.products.length,'A recheck must never remove existing catalog records');
+ return {snapshot,source:nextSource,report:{checkedAt:at,added,duplicates,held,refreshed,lux:{before,after,unchanged:JSON.stringify(before)===JSON.stringify(after),authorizedUpdate:includeLux}}};
 }
 export async function publishSportsCasual({preparedFiles,rawFiles,today=new Date(Date.now()+9*3600000).toISOString().slice(0,10)}={}){
  const read=async file=>JSON.parse(await fs.readFile(file,'utf8'));

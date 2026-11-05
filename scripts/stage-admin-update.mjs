@@ -1,0 +1,9 @@
+import fs from 'node:fs/promises';import {execFileSync} from 'node:child_process';
+const files=['config/daily_sources.json','data/catalog-source.json','data/photo-cache.json','public/data/catalog.json','public/data/catalog-ui.json','docs/admin-monitor.md',
+ 'scripts/admin-d1.mjs','scripts/admin-audit-one.mjs','scripts/admin-monitor-runner.mjs','scripts/admin-source-selection.mjs','scripts/admin-publication-review.mjs','scripts/build-admin-snapshot.mjs','scripts/cache-sports-casual-photos.py','scripts/collect-structured-new.mjs','scripts/deploy-internal.mjs','scripts/deployment-assets.mjs','scripts/deployment-photo-budget.mjs','scripts/ingest-admin-rendered.mjs','scripts/new-arrivals.mjs','scripts/prepare-admin-rechecked.mjs','scripts/publish-admin-rechecked.mjs','scripts/publish-sports-casual.mjs','scripts/retry-admin-rechecks.mjs','scripts/report-admin-recheck.mjs','scripts/stage-admin-update.mjs',
+ 'tests/admin-publication-review.test.mjs','tests/admin-source-selection.test.mjs','tests/admin-structured-fallback.test.mjs','tests/structured-new-partial.test.mjs','tests/deployment-assets.test.mjs','tests/deployment-photo-budget.test.mjs','tests/sports-scoped-publication.test.mjs'];
+const tracked=new Set(execFileSync('git',['ls-files','--','public/images'],{encoding:'utf8',maxBuffer:16*1024*1024}).trim().split('\n'));
+const catalog=await fs.readFile('public/data/catalog.json','utf8');const photos=[...new Set([...catalog.matchAll(/\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)/g)].map(m=>'public'+m[0]))].filter(p=>!tracked.has(p));
+for(const file of [...files,...photos])await fs.access(file);
+for(let at=0;at<files.length+photos.length;at+=100)execFileSync('git',['add','--',...[...files,...photos].slice(at,at+100)],{stdio:'pipe'});
+console.log(JSON.stringify({sourceFiles:files.length,newReferencedPhotos:photos.length}));

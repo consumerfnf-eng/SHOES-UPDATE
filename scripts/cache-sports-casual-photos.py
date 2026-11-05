@@ -11,8 +11,9 @@ def color_name(value):
  return min(palette,key=lambda label:sum((rgb[i]-int(palette[label][1+i*2:3+i*2],16))**2 for i in range(3)))
 source=Path(sys.argv[1]);dest=Path(sys.argv[2]);d=json.loads(source.read_text(encoding='utf-8'));public=Path('public');cachepath=Path('data/photo-cache.json');cache=json.loads(cachepath.read_text(encoding='utf-8'));jobs={p['presentation']['image'] for p in d['products']};done={};errors=[]
 groups=json.loads(Path('config/site-brand-groups.json').read_text(encoding='utf8'))
-allowed={b for group in groups['groups'] if group['name'] in ['SPORTS','CASUAL'] for b in group['priority']}
-assert all(p['brand'] in allowed for p in d['products']),'LUX and excluded brands cannot enter scoped photo preparation'
+allowed_groups=['SPORTS','CASUAL']+(['LUX'] if '--include-lux' in sys.argv[3:] else [])
+allowed={b for group in groups['groups'] if group['name'] in allowed_groups for b in group['priority']}
+assert all(p['brand'] in allowed for p in d['products']),'Explicit LUX permission required; excluded brands cannot enter photo preparation'
 frames={p['presentation']['image']:p['presentation'].get('frame') for p in d['products']}
 manifest=Path('reports/sports-casual-photo-downloads.json')
 downloads=json.loads(manifest.read_text(encoding='utf-8')).get('images',{}) if manifest.exists() else {}

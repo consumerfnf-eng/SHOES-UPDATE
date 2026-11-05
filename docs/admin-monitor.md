@@ -48,6 +48,22 @@ The owner can request a brand audit. D1 enforces one queued/running request per
 brand. `admin-monitor.yml` polls the queue at minutes 7 and 37; GitHub scheduling
 can be delayed. The owner can also open its workflow and run it manually.
 
+**전체 재수집** opens a scope choice for all attention brands or every registered
+brand. Search and group filters never narrow that selection. Existing active
+requests are retained rather than duplicated. Batch progress distinguishes
+complete, partial, failed, running and queued audits; registration is not
+successful collection or publication. Four workflow workers drain independent
+brand leases in parallel. Diagnostic errors and candidates remain owner-only.
+
+For an explicitly authorized operator review, `admin-audit-one.mjs` writes raw
+products and atomic progress files locally. `prepare-admin-rechecked.mjs` rejects
+inherited New labels on general sports/casual catalogues. Publication requires
+the explicit `--include-lux` flag and the original batch's brand whitelist;
+existing IDs and reviewed grouping are retained. Colour/design reviews transfer
+between different official image URLs only when cached photo SHA-256 is identical.
+Failed image downloads and incomplete source coverage do not become completed
+audits. These local reports and rendered source caches are gitignored.
+
 The runner reads the selected brand's permitted official sources, compares
 collected URLs and codes with the published catalog, and posts review candidates
 back to the private database. These are comparison candidates, not automatically
