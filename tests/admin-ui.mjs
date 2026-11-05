@@ -16,6 +16,10 @@ try{
  const runnerHeaders={Authorization:'Bearer '+runner,'Content-Type':'application/json'};const job=(await(await fetch(url+'/api/admin/runner/claim',{method:'POST',headers:runnerHeaders,body:'{}'})).json()).job;
  const report={status:'completed',checkedAt:new Date().toISOString(),listingPages:2,verified:24,discovered:37,exhaustive:true,errors:[],candidates:[{name:'New model',url:'https://kr.puma.com/new',style:'NEW-1'}]};
  assert.equal((await fetch(url+'/api/admin/runner/complete',{method:'POST',headers:runnerHeaders,body:JSON.stringify({...job,report})})).status,200);await page.locator('#refresh').click();await page.getByText(/게시 대조 후보 1건/).waitFor();await page.getByText('게시 대조 후보 보기',{exact:true}).click();assert.equal(await page.getByRole('link',{name:'New model ↗',exact:true}).count(),1);
+ await page.locator('button[data-recollect="PUMA"]').click();await page.waitForFunction(()=>document.querySelector('#stat-jobs').textContent==='1');
+ const failedJob=(await(await fetch(url+'/api/admin/runner/claim',{method:'POST',headers:runnerHeaders,body:'{}'})).json()).job;
+ await fetch(url+'/api/admin/runner/complete',{method:'POST',headers:runnerHeaders,body:JSON.stringify({...failedJob,report:{status:'failed',checkedAt:new Date().toISOString(),listingPages:0,verified:0,discovered:0,exhaustive:false,candidates:[],errors:['Official product URL missing']}})});
+ await page.locator('#refresh').click();await page.getByText(/재수집 내역 확인 필요/).waitFor();assert(!(await page.locator('#jobs .job').first().innerText()).includes('수집 확인 0'));
  await fs.mkdir('reports',{recursive:true});await page.screenshot({path:'reports/admin-dashboard-preview.png',fullPage:true});
  for(const width of [390,768,1440]){await page.setViewportSize({width,height:900});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No page overflow at '+width);}
  await page.locator('#password-open').click();await page.getByLabel('현재 관리자 비밀번호',{exact:true}).fill(password);const next='new-owner-ui-password-239847239847';

@@ -85,7 +85,8 @@ export async function adminRequest(context){
    const checks=new Map((await env.ADMIN_DB.prepare('SELECT brand, checked_at, data FROM admin_checks').all()).results.map(c=>[c.brand,c]));
    const rows=current.brands.map(row=>{
     const check=checks.get(row.brand),report=check&&Date.parse(check.checked_at)>Date.parse(row.lastCheckAt||'1970-01-01')?JSON.parse(check.data):null;
-    const latest=report?{...row,lastCheckAt:check.checked_at,exhaustive:report.exhaustive,errors:report.errors,status:report.status==='failed'?'blocked':report.exhaustive?'checked':'partial'}:{...row};
+    const failedStatus=report?.errors?.some(e=>/HTTP (?:401|403)|CAPTCHA|forbidden|access.denied/i.test(e))?'blocked':'check-needed';
+    const latest=report?{...row,lastCheckAt:check.checked_at,exhaustive:report.exhaustive,errors:report.errors,status:report.status==='failed'?failedStatus:report.exhaustive?'checked':'partial'}:{...row};
     if(latest.lastCheckAt&&Date.now()-Date.parse(latest.lastCheckAt)>7*86400000&&latest.status!=='blocked')latest.status='stale';
     return {...latest,modelDelta:old.has(row.brand)?row.officialModels-old.get(row.brand).officialModels:null,recordDelta:old.has(row.brand)?row.officialRecords-old.get(row.brand).officialRecords:null};
    });
