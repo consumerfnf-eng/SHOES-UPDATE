@@ -252,7 +252,7 @@ const CARD_FURNITURE=/^(?:pre[- ]?order|new(?: in)?|image\s*\d+\b.*|view\s*\d+|s
 export function strictLuxuryTileProduct(candidate,checkedAt){
   if(!isLuxuryMaison(candidate.brand)||!httpUrl(candidate.url)||!isOfficialProductUrl(candidate.brand,candidate.url)||!isProductLink(candidate.url))return null;
   const name=String(candidate.name||'').trim(),arrival=candidate.arrivalEvidence;
-  if(CARD_FURNITURE.test(name)||!/\b(?:sneakers?|trainers?)\b/i.test(name))return null;
+  if(CARD_FURNITURE.test(name)||!/(?:\b(?:sneakers?|trainers?)\b|스니커즈?)/i.test(name))return null;
   if(arrival?.verified!==true||arrival.brand!==candidate.brand||canonicalUrl(arrival.productUrl)!==canonicalUrl(candidate.url)||!isOfficialProductUrl(candidate.brand,arrival.url)||!httpUrl(arrival.url)||!/^[a-f0-9]{64}$/i.test(arrival.contentHash||''))return null;
   const chosen=candidate.linkedImages?.[0];
   if(!chosen||!httpUrl(chosen.url))return null;

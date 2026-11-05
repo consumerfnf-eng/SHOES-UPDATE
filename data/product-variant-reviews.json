@@ -5062,9 +5062,9 @@
     {
       "id": "arrival-1c1268e60a72bdbcf607",
       "brand": "Jacquemus",
-      "style": "FOM00212AW00829110",
-      "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829110.html",
-      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw696996e0/26EFOM00212AW00829110_17.jpg?sw=500&q=100",
+      "style": "FOW00212AW00829110",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829110.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw47ed6431/26EFOW00212AW00829110_17.jpg?sw=500&q=100",
       "verified": true,
       "checkedAt": "2026-11-03T01:31:29.292713+00:00",
       "modelName": "The Féfé",
@@ -5074,14 +5074,22 @@
         "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829110.html"
       ],
       "physicalVariantId": "jacquemus-FO_00212AW00829110",
-      "contactSheetIndex": 63
+      "contactSheetIndex": 63,
+      "retainedFrom": {
+        "id": "arrival-1c1268e60a72bdbcf607",
+        "style": "FOM00212AW00829110",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829110.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw696996e0/26EFOM00212AW00829110_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/b1dd50fce548d578ab14f216621cd1288136d1996dcd194d53a1c5131d5120e9.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-4a0d6892d9b545e2599d",
       "brand": "Jacquemus",
-      "style": "FOM00175AC43M13193",
-      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M13193.html",
-      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw307a108c/26HFOM00175AC43M13193_17.jpg?sw=500&q=100",
+      "style": "FOW00175AC43M13193",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43M13193.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw364f7f70/26HFOW00175AC43M13193_17.jpg?sw=500&q=100",
       "verified": true,
       "checkedAt": "2026-11-03T01:31:29.292713+00:00",
       "modelName": "The Tennis",
@@ -5091,7 +5099,15 @@
         "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M13193.html"
       ],
       "physicalVariantId": "jacquemus-FO_00175AC43M13193",
-      "contactSheetIndex": 90
+      "contactSheetIndex": 90,
+      "retainedFrom": {
+        "id": "arrival-4a0d6892d9b545e2599d",
+        "style": "FOM00175AC43M13193",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M13193.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw307a108c/26HFOM00175AC43M13193_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/70dd8e291cb2ef793c6f525ecd62018d74a4745046554378a0967216ace3ebe6.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-c5fd2145bd37e9235e61",
@@ -5113,9 +5129,9 @@
     {
       "id": "arrival-c17afc4a09b659003f75",
       "brand": "Jacquemus",
-      "style": "FOM00175AW00255130",
-      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00255130.html",
-      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw9e082a9a/26EFOM00175AW00255130_17.jpg?sw=500&q=100",
+      "style": "FOW00175AW00255130",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AW00255130.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2ea23a3d/26EFOW00175AW00255130_17.jpg?sw=500&q=100",
       "verified": true,
       "checkedAt": "2026-11-03T01:31:29.292713+00:00",
       "modelName": "The Tennis",
@@ -5125,7 +5141,15 @@
         "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00255130.html"
       ],
       "physicalVariantId": "jacquemus-FO_00175AW00255130",
-      "contactSheetIndex": 78
+      "contactSheetIndex": 78,
+      "retainedFrom": {
+        "id": "arrival-c17afc4a09b659003f75",
+        "style": "FOM00175AW00255130",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AW00255130.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw9e082a9a/26EFOM00175AW00255130_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/e90c34b639b28d7ddae783765565373f5e6d91f12f8111855f081b64049ce2be.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-4cf27078e25f867ae319",
@@ -5164,9 +5188,9 @@
     {
       "id": "arrival-a726572318d494cae374",
       "brand": "Jacquemus",
-      "style": "FOM00175AC09A06205",
-      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A06205.html",
-      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4134dad9/25HFOM00175AC09A06205_17.jpg?sw=500&q=100",
+      "style": "FOW00175AC09A06205",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A06205.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd9009199/25HFOW00175AC09A06205_17.jpg?sw=500&q=100",
       "verified": true,
       "checkedAt": "2026-11-03T01:31:29.292713+00:00",
       "modelName": "The Tennis",
@@ -5176,14 +5200,22 @@
         "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A06205.html"
       ],
       "physicalVariantId": "jacquemus-FO_00175AC09A06205",
-      "contactSheetIndex": 86
+      "contactSheetIndex": 86,
+      "retainedFrom": {
+        "id": "arrival-a726572318d494cae374",
+        "style": "FOM00175AC09A06205",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A06205.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4134dad9/25HFOM00175AC09A06205_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/1725f774deee5517d6bffb209e661bb8fb960b0d409a25eb8da5234bea5717c9.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-c7d3ab3732818d595912",
       "brand": "Jacquemus",
-      "style": "FOM00175AC40A01830",
-      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC40A01830.html",
-      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwefaeab7b/25HFOM00175AC40A01830_17.jpg?sw=500&q=100",
+      "style": "FOW00175AC40A01830",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC40A01830.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwd2e4e373/25HFOW00175AC40A01830_17.jpg?sw=500&q=100",
       "verified": true,
       "checkedAt": "2026-11-03T01:31:29.292713+00:00",
       "modelName": "The Tennis",
@@ -5193,7 +5225,15 @@
         "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC40A01830.html"
       ],
       "physicalVariantId": "jacquemus-FO_00175AC40A01830",
-      "contactSheetIndex": 67
+      "contactSheetIndex": 67,
+      "retainedFrom": {
+        "id": "arrival-c7d3ab3732818d595912",
+        "style": "FOM00175AC40A01830",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC40A01830.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwefaeab7b/25HFOM00175AC40A01830_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/a51d952727d9d9937e8a255d08763b4c0f3ece1858df423a8f655c16e000ac30.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-629fc99ecb68bbbac256",
@@ -5215,9 +5255,9 @@
     {
       "id": "arrival-424352408a64ebbd442d",
       "brand": "Jacquemus",
-      "style": "FOM00175AC09A14880",
-      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A14880.html",
-      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7a9a2426/26EFOM00175AC09A14880_17.jpg?sw=500&q=100",
+      "style": "FOW00175AC09A14880",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC09A14880.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4437c99c/26EFOW00175AC09A14880_17.jpg?sw=500&q=100",
       "verified": true,
       "checkedAt": "2026-11-03T01:31:29.292713+00:00",
       "modelName": "The Tennis",
@@ -5227,7 +5267,15 @@
         "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A14880.html"
       ],
       "physicalVariantId": "jacquemus-FO_00175AC09A14880",
-      "contactSheetIndex": 69
+      "contactSheetIndex": 69,
+      "retainedFrom": {
+        "id": "arrival-424352408a64ebbd442d",
+        "style": "FOM00175AC09A14880",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC09A14880.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7a9a2426/26EFOM00175AC09A14880_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/21ba53ab49d46d8b6a69100a858140a8e83010e07ce2fd565923fba31d05066e.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-5d14ecc18fe20a0b0410",
@@ -5283,9 +5331,9 @@
     {
       "id": "arrival-1a93869485de36c8aa52",
       "brand": "Jacquemus",
-      "style": "FOM00175AC04C03980",
-      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC04C03980.html",
-      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw20a4f994/26HFOM00175AC04C03980_17.jpg?sw=500&q=100",
+      "style": "FOW00175AC04C03980",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC04C03980.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb2f6b153/26HFOW00175AC04C03980_17.jpg?sw=500&q=100",
       "verified": true,
       "checkedAt": "2026-11-03T01:31:29.292713+00:00",
       "modelName": "The Tennis",
@@ -5295,7 +5343,15 @@
         "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC04C03980.html"
       ],
       "physicalVariantId": "jacquemus-FO_00175AC04C03980",
-      "contactSheetIndex": 88
+      "contactSheetIndex": 88,
+      "retainedFrom": {
+        "id": "arrival-1a93869485de36c8aa52",
+        "style": "FOM00175AC04C03980",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC04C03980.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw20a4f994/26HFOM00175AC04C03980_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/a2d68e08739a5217cc655fb29471806ab27ae64415b00e47ca68467a301fe9d1.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-1bb15bf09da3592a64a2",
@@ -5317,9 +5373,9 @@
     {
       "id": "arrival-74bac1b2645044f034b9",
       "brand": "Jacquemus",
-      "style": "FOM00175AE00082220",
-      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AE00082220.html",
-      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwa3315866/26EFOM00175AE00082220_17.jpg?sw=500&q=100",
+      "style": "FOW00175AE00082220",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AE00082220.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw06d0e356/26EFOW00175AE00082220_17.jpg?sw=500&q=100",
       "verified": true,
       "checkedAt": "2026-11-03T01:31:29.292713+00:00",
       "modelName": "The Tennis",
@@ -5329,14 +5385,22 @@
         "https://www.jacquemus.com/en_us/the-tennis/FOM00175AE00082220.html"
       ],
       "physicalVariantId": "jacquemus-FO_00175AE00082220",
-      "contactSheetIndex": 73
+      "contactSheetIndex": 73,
+      "retainedFrom": {
+        "id": "arrival-74bac1b2645044f034b9",
+        "style": "FOM00175AE00082220",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AE00082220.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwa3315866/26EFOM00175AE00082220_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/da7405e3d7f3c398528d6f9ade427f257e124d0c9997ff25cc2dd3e13cb1a4e1.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-338e902bcc47769078f8",
       "brand": "Jacquemus",
-      "style": "FOM00175AC43M061JT",
-      "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M061JT.html",
-      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb52094c1/26HFOM00175AC43M061JT_17.jpg?sw=500&q=100",
+      "style": "FOW00175AC43M061JT",
+      "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC43M061JT.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw928c12c5/26HFOW00175AC43M061JT_17.jpg?sw=500&q=100",
       "verified": true,
       "checkedAt": "2026-11-03T01:31:29.292713+00:00",
       "modelName": "The Tennis",
@@ -5346,7 +5410,15 @@
         "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M061JT.html"
       ],
       "physicalVariantId": "jacquemus-FO_00175AC43M061JT",
-      "contactSheetIndex": 92
+      "contactSheetIndex": 92,
+      "retainedFrom": {
+        "id": "arrival-338e902bcc47769078f8",
+        "style": "FOM00175AC43M061JT",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOM00175AC43M061JT.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb52094c1/26HFOM00175AC43M061JT_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/3dfdfcc99f1a66dc3e6aa50c8c216a04c60a4183510e6f42928e8958d35d8dca.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-fd8d3cb9584670bc4c13",
@@ -5419,9 +5491,9 @@
     {
       "id": "arrival-2b67f03ca69eb43f8d04",
       "brand": "Jacquemus",
-      "style": "FOM00212AW00829390",
-      "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829390.html",
-      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw06c30e69/26EFOM00212AW00829390_17.jpg?sw=500&q=100",
+      "style": "FOW00212AW00829390",
+      "url": "https://www.jacquemus.com/en_us/the-fefe/FOW00212AW00829390.html",
+      "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwe08a4837/26EFOW00212AW00829390_17.jpg?sw=500&q=100",
       "verified": true,
       "checkedAt": "2026-11-03T01:31:29.292713+00:00",
       "modelName": "The Féfé",
@@ -5431,7 +5503,15 @@
         "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829390.html"
       ],
       "physicalVariantId": "jacquemus-FO_00212AW00829390",
-      "contactSheetIndex": 57
+      "contactSheetIndex": 57,
+      "retainedFrom": {
+        "id": "arrival-2b67f03ca69eb43f8d04",
+        "style": "FOM00212AW00829390",
+        "url": "https://www.jacquemus.com/en_us/the-fefe/FOM00212AW00829390.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw06c30e69/26EFOM00212AW00829390_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/e132b53abbeacc26b737464439fe240ca22ec8701e0c3acf2c67f4b683cbb7a9.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-172d00413bdd028cee32",
@@ -5516,7 +5596,15 @@
         "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC07A10880.html"
       ],
       "physicalVariantId": "jacquemus-FO_00175AC07A10880",
-      "contactSheetIndex": 71
+      "contactSheetIndex": 71,
+      "retainedFrom": {
+        "id": "arrival-ed9fa607ab303157a4dc",
+        "style": "FOW00175AC07A10880",
+        "url": "https://www.jacquemus.com/en_us/the-tennis/FOW00175AC07A10880.html",
+        "image": "https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw5ef93a01/25HFOW00175AC07A10880_17.jpg?sw=500&q=100",
+        "cachedPath": "/images/9cfd0d60465b0dc5ef08f5bac2f40b6bbc32328fab6e2c46016906b0dfa69d38.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-1263d1e96798d238a8d3",

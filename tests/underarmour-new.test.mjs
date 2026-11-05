@@ -158,3 +158,72 @@ test('repeated pages, total drift, missing continuation, wrong scope and page li
 test('checkpoint persistence errors propagate without silently counting a source complete', async () => {
   await assert.rejects(collect({read: async () => page([tile()]), onCheckpoint: async () => {throw Error('storage failed');}}), /storage failed/);
 });
+
+function browserReceipt(tiles = [tile()], options = {}) {
+  const original = page(tiles, options);
+  const body = original.rawHtml.match(/<body>([^]*?)<\/body>/)[1];
+  const html = '<main id="main">' + body
+    .replaceAll('data-testid="product-tile-container"', 'class="ProductTile__product-tile-container"')
+    .replaceAll('data-testid="tile-image"', '')
+    .replace(/<a title="View Color (.+?)-(\d{3})" href=/g, '<a class="ColorCarousel__product-color-swatch" aria-label="$1" href=')
+    .replaceAll('href="https://www.underarmour.com/', 'href="/') + '</main>';
+  return {brand: 'Under Armour', url: options.url ?? root, checkedAt: '2026-11-05T07:55:00Z',
+    transport: 'chrome-rendered-main-dom', extraction: 'DOM markup; scripts and nonessential attributes omitted', html};
+}
+
+test('explicit Chrome main-DOM receipt binds relative card links and own photos without an HTTP 200 claim', async () => {
+  const receipt = browserReceipt(), r = await collect({read: async () => receipt});
+  assert.equal(r.exhausted, true); assert.equal(r.products.length, 1);
+  const p = r.products[0], provenance = p.officialProductEvidence.provenance;
+  assert.equal(p.productVerifiedAt, receipt.checkedAt); assert.equal(p.arrivalEvidence.verifiedAt, receipt.checkedAt);
+  assert.equal(p.officialImageEvidence.verifiedAt, receipt.checkedAt);
+  assert.equal(provenance.transport, 'chrome-rendered-main-dom');
+  assert.equal(provenance.format, 'chrome-rendered-main-dom');
+  assert.equal(provenance.extraction, receipt.extraction);
+  assert.equal(Object.hasOwn(provenance, 'upstreamStatus'), false);
+  assert.equal(Object.hasOwn(provenance, 'status'), false);
+  assert.ok(officialEvidenceFor(p, '2026-11-05'));
+  assert.equal(reviewAdminProducts([p], {}).products.length, 1);
+  assert.equal(reviewScopedNew([p]).products.length, 1);
+  const curated = curateCatalog([p], {now}); assert.deepEqual(curated.review.held, []);
+  assert.equal(officialImageUrl(curated.snapshot.products[0], '2026-11-05'), p.image);
+});
+
+test('Chrome receipt cannot promote sibling swatches or a campaign photograph as an own-photo New colorway', async () => {
+  const receipt = browserReceipt([
+    tile({swatches: [['449', 'Blue'], ['001', 'Black']]}),
+    tile({model: '6010400', image: 'https://underarmour.scene7.com/is/image/Underarmour/FW26_Q3_6010400-449_Campaign'}),
+  ]);
+  const r = await collect({read: async () => receipt});
+  assert.equal(r.exhausted, true); assert.equal(r.complete, false);
+  assert.deepEqual(r.products.map(p => p.productVariantId), ['6010459-449']);
+  assert.deepEqual(new Set(r.unresolved.map(p => p.reason)), new Set(['swatch-only-no-own-photo', 'own-sku-color-shoe-photo-unproven']));
+});
+
+test('strict Chrome receipt rejects missing metadata, HTTP claims, wrong brand/source, future dates and incomplete main', async () => {
+  const valid = browserReceipt();
+  for (const mutate of [
+    r => {delete r.checkedAt;}, r => {delete r.extraction;}, r => {r.checkedAt = '2030-01-01T00:00:00Z';},
+    r => {r.status = 200;}, r => {r.status = 418;}, r => {r.brand = 'Other';},
+    r => {r.url = 'https://www.underarmour.com/en-us/c/shoes/';},
+    r => {r.html = r.html.replace('</main>', '');}, r => {r.html += '<footer>outside receipt</footer>';},
+    r => {r.transport = 'unverified-dom';}, r => {r.rawHtml = r.html;},
+  ]) {
+    const bad = structuredClone(valid); mutate(bad);
+    const r = await collect({read: async () => bad});
+    assert.deepEqual(r.products, []); assert.equal(r.exhausted, false);
+  }
+  // checkedAt/DOM HTML alone cannot bypass the ordinary HTTP reader contract.
+  const unlabeled = structuredClone(valid); delete unlabeled.transport;
+  assert.throws(() => parseUnderArmourNewPage(unlabeled, root, {now}), /HTTP unknown/);
+});
+
+test('Chrome declared total and selected SKU/photo binding still fail closed when DOM cards are incomplete or altered', async () => {
+  const short = browserReceipt([tile()], {total: 2});
+  const r = await collect({read: async () => short});
+  assert.equal(r.exhausted, false); assert.deepEqual(r.products, []);
+  const altered = browserReceipt(); altered.html = altered.html.replace('product-6010459-449-', 'product-6010459-001-');
+  assert.throws(() => parseUnderArmourNewPage(altered, root, {now}), /identity mismatch/);
+  const missingSelected = browserReceipt([tile({swatches: [['001', 'Black']]})]);
+  assert.throws(() => parseUnderArmourNewPage(missingSelected, root, {now}), /selected color label/);
+});

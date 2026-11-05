@@ -314,6 +314,36 @@ test('strict luxury tile recovery remains opt-in',async()=>{
   assert.equal(run.pending.length,1);
 });
 
+test('strict Korean sneaker tile titles recover blocked Dior PDP candidates without any PDP read',async()=>{
+  const source='https://www.dior.com/ko_kr/fashion/mens-fashion/shoes/sneakers';
+  const pdp='https://www.dior.com/ko_kr/fashion/products/3SN318ZRF_H960-b57';
+  for(const name of ['B57 로우탑 스니커즈','B57 로우탑 스니커']){
+    const body=`# Sneakers\n[![${name}](${opaqueImage}) New](${pdp})`;
+    const candidate=parseArrivalListing(body,{brand:'Dior',url:source,checkedAt:now.toISOString(),basis:'assortment'})[0];
+    assert(candidate.needsProductTitle);assert.equal(listingProduct(candidate,now.toISOString()),null);
+    const product=strictLuxuryTileProduct(candidate,now.toISOString());
+    assert(product,name);assert.equal(product.name,name);assert.equal(product.sourceTileBinding.url,pdp);
+    const hash=createHash('sha256').update(body).digest('hex');
+    for(const evidence of [product.arrivalEvidence,product.officialProductEvidence,product.officialImageEvidence,product.sourceTileBinding])assert.equal(evidence.contentHash,hash);
+    assert(officialEvidenceFor(product,'2026-11-05'));
+    const curated=curateProduct(product,'2026-11-05');assert(curated.product,curated.reason);
+    const run=await collectNewArrivals({brands:[],sources:{},now,log:()=>{},skipDiscovery:true,strictLuxuryTileProofs:true,
+      carriedPending:[{brand:'Dior',candidate}],read:async()=>{throw Error('blocked PDP must not be read');}});
+    assert.equal(run.pending.length,0);assert.equal(run.products.length,1);assert.equal(run.candidateOutcomes[0].outcome,'complete');
+  }
+});
+
+test('Korean title support rejects socks, heels, broad shoe names, unbound images and mismatching own alt/hash',()=>{
+  const own=tileCandidate(ownTile.replaceAll('Runner sneaker','B57 스니커즈')),at=now.toISOString();
+  for(const name of ['양말','가죽 슈즈','스니커즈 heels','스니커즈 하이힐','スニーカー']){
+    assert.equal(strictLuxuryTileProduct({...own,name,linkedImages:[{url:opaqueImage,alt:name}]},at),null,name);
+  }
+  assert.equal(strictLuxuryTileProduct({...own,linkedImages:[],images:own.linkedImages},at),null);
+  assert.equal(strictLuxuryTileProduct({...own,linkedImages:[{url:opaqueImage,alt:'다른 스니커즈'}]},at),null);
+  assert.equal(strictLuxuryTileProduct({...own,arrivalEvidence:{...own.arrivalEvidence,contentHash:''}},at),null);
+  assert.equal(strictLuxuryTileProduct({...own,arrivalEvidence:{...own.arrivalEvidence,productUrl:product(2)}},at),null);
+});
+
 test('the strict nested tile proof also validates a luxury assortment source without claiming a PDP read',async()=>{
   const run=await collectNewArrivals({...options,catalogueBrands:[brand],strictLuxuryTileProofs:true,read:async target=>{assert.equal(target,'https://r.jina.ai/'+root);return ownTile;}});
   assert.equal(run.pending.length,0);

@@ -18,3 +18,12 @@ test('rendered cache cannot turn a denial or different category into a valid New
  const pipe='https://www.adidas.com/us/men|women-athletic_sneakers-shoes-new_arrivals';
  assert(validAdminCapture({checkedAt:at,requestedUrl:pipe,metadata:{statusCode:200,url:pipe.replace('|','%7C')}},pipe,new Date(at)));
 });
+
+
+test('explicit incomplete eligibility overrides otherwise exhaustive traversal at every level',()=>{
+ const coverage={total:46,read:46,exhaustive:true,exhausted:true};
+ assert.equal(adminCoverageExhaustive({complete:true,exhaustive:true,exhausted:true,eligibilityComplete:false,coverage}),false);
+ assert.equal(adminCoverageExhaustive({complete:true,exhaustive:true,exhausted:true,coverage:{...coverage,eligibilityComplete:false}}),false);
+ assert.equal(adminCoverageExhaustive({coverage:[coverage,{...coverage,eligibilityComplete:false}]}),false);
+ assert.equal(adminCoverageExhaustive({coverage:{...coverage,eligibilityComplete:true}}),true);
+});

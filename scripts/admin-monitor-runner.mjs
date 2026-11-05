@@ -29,11 +29,13 @@ import {collectSalomonNew,collectSalomonNewVariants,SALOMON_NEW_URL} from './col
 import {collectLululemonNew} from './collect-lululemon-new.mjs';
 import {collectJacquemusOfficial} from './collect-jacquemus-official.mjs';
 import {officialEvidenceFor,kstDay} from './curation.mjs';
+import {collectHokaNew} from './collect-hoka-new.mjs';
+import {collectUggNew} from './collect-ugg-new.mjs';
 const readJson=async file=>JSON.parse(await fs.readFile(file,'utf8'));
 const normalizeUrl=value=>{try{const u=new URL(value);u.hash='';for(const key of [...u.searchParams.keys()])if(/^(utm_|ref$)/.test(key))u.searchParams.delete(key);return u.href.replace(/\/$/,'');}catch{return '';}};
 export function adminCoverageExhaustive(result){
  const coverage=Array.isArray(result.coverage)?result.coverage:[result.coverage||{}];
- return result.complete!==false&&result.exhausted!==false&&result.exhaustive!==false&&coverage.length>0&&coverage.every(c=>c.complete!==false&&c.exhaustive!==false&&c.exhausted!==false&&(c.exhaustive===true||c.exhausted===true||Number(c.total)>0&&c.total===c.read));
+ return result.eligibilityComplete!==false&&result.complete!==false&&result.exhausted!==false&&result.exhaustive!==false&&coverage.length>0&&coverage.every(c=>c.eligibilityComplete!==false&&c.complete!==false&&c.exhaustive!==false&&c.exhausted!==false&&(c.exhaustive===true||c.exhausted===true||Number(c.total)>0&&c.total===c.read));
 }
 export function validAdminCapture(value,requestedUrl,now){
  const status=value?.status??value?.metadata?.statusCode,stamp=Date.parse(value?.checkedAt),time=+now;
@@ -62,6 +64,10 @@ export async function auditBrand(brand,{readHtml,now=new Date(),onCollected,onPr
  let result,structuredErrors=[];
  const inventory=siteBrandGroup(brand)==='LUX'?(await readJson('config/official-inventory-sources.json')).sources.filter(s=>s.brand===brand||s.brand==='Toga'&&['Toga Pulla','Toga Virilis'].includes(brand)):[];
  const readFeed=async url=>await rendered(url)||await readHtml(url);
+ const readRecord=async url=>{const cached=await rendered(url);if(cached)return cached;const response=await paced(url,{redirect:'error',headers:{'User-Agent':'Mozilla/5.0',Accept:'text/html'}});return {rawHtml:await response.text(),checkedAt:new Date().toISOString(),metadata:{statusCode:response.status,sourceURL:url,url:response.url}};};
+ const browserCapture=async name=>stateDirectory?await readJson(path.join(path.dirname(stateDirectory),'manual-'+name+'-browser-dom.json')).catch(()=>null):null;
+ const browserPages=async name=>{const pages=await Promise.all([browserCapture(name),browserCapture(name+'-next')]);return pages[0]?pages.filter(Boolean):undefined;};
+ const browserDetails=async name=>{if(!stateDirectory)return undefined;const directory=path.join(path.dirname(stateDirectory),name+'-detail-dom');let names;try{names=await fs.readdir(directory);}catch(error){if(error.code==='ENOENT')return [];throw error;}return Promise.all(names.filter(name=>/^\d+\.json$/.test(name)).sort((a,b)=>Number(a.slice(0,-5))-Number(b.slice(0,-5))).map(name=>readJson(path.join(directory,name))));};
  if(inventory.length){const value=await collectOfficialInventory({sources:inventory,read:readFeed,now,concurrency:1,onCheckpoint:async feed=>saveState({phase:'official-feed',feed})});result={products:value.products.filter(p=>p.brand===brand),coverage:value.diagnostics.map(d=>({...d,listingPages:d.pages,total:d.feedProducts,verified:d.verified,exhaustive:d.exhausted,errors:d.error?[d.error]:[],status:d.error?'partial':'checked'}))};}
  else if(['Nike','Jordan'].includes(brand)){
   const read=async url=>{const file='reports/admin-nike-api/'+createHash('sha256').update(url).digest('hex')+'.json';const previous=await readJson(file).catch(()=>null);if(previous?.url===url&&previous.status===200&&Date.now()-Date.parse(previous.checkedAt)<3600000)return previous;
@@ -71,19 +77,24 @@ export async function auditBrand(brand,{readHtml,now=new Date(),onCollected,onPr
  }
  else if(brand==='Maison Mihara Yasuhiro')result=await collectMiharaOfficial({readHtml,now,resume:state?.checkpoint,maxDurationMs:480000,maxProductPages:150,onProgress:async progress=>{await saveState(progress);await onProgress?.(progress);}});
  else if(brand==='TOM FORD')result=await collectTomFordOfficial({readHtml,now,resume:state?.checkpoint,onProgress:async progress=>{await saveState(progress);await onProgress?.(progress);}});
+ else if(brand==='HOKA')result=await collectHokaNew({captures:await browserPages('hoka'),now});
+ else if(brand==='UGG')result=await collectUggNew({captures:await browserPages('ugg'),detailCaptures:await browserDetails('ugg'),now});
  else if(brand==='On')result=await collectOnNew({readHtml,at:(await rendered(ON_NEW))?.checkedAt||at,allowPartial:true});
- else if(brand==='Lanvin')result=await collectLanvinOfficial({now,read:async url=>await rendered(url)||{rawHtml:await readHtml(url),metadata:{statusCode:200,sourceURL:url,url}},onProgress:async progress=>onProgress?.(progress)});
- else if(brand==='Lululemon')result=await collectLululemonNew({now,read:async url=>await rendered(url)||{rawHtml:await readHtml(url),metadata:{statusCode:200,sourceURL:url,url}},onCheckpoint:async checkpoint=>saveState({phase:'lululemon-new',checkpoint})});
- else if(brand==='Jacquemus')result=await collectJacquemusOfficial({now,read:async url=>await rendered(url)||{rawHtml:await readHtml(url),metadata:{statusCode:200,sourceURL:url,url}},onProgress:async progress=>{await saveState(progress);await onProgress?.(progress);}});
+ else if(brand==='Lanvin')result=await collectLanvinOfficial({now,read:readRecord,onProgress:async progress=>onProgress?.(progress)});
+ else if(brand==='Lululemon')result=await collectLululemonNew({now,read:readRecord,onCheckpoint:async checkpoint=>saveState({phase:'lululemon-new',checkpoint})});
+ else if(brand==='Jacquemus')result=await collectJacquemusOfficial({now,read:readRecord,onProgress:async progress=>{await saveState(progress);await onProgress?.(progress);}});
  else if(brand==='Salomon'){
   const initialObservedAt=(await rendered(SALOMON_NEW_URL))?.checkedAt;
   const primary=await collectSalomonNew({readHtml,now,initialObservedAt,onProgress:async progress=>onProgress?.(progress)});
   result=primary.products.length?await collectSalomonNewVariants({previous:primary,readHtml,now,onProgress:async progress=>onProgress?.(progress)}):primary;
  }
  else if(brand==='Brunello Cucinelli')result=await collectCucinelliOfficial({now,read:async url=>await rendered(url)||readCucinelliOfficial(url),onProgress:async progress=>{await saveState(progress);await onProgress?.(progress);}});
- else if(brand==='Under Armour')result=await collectUnderArmourNew({now,read:async url=>await rendered(url)||{rawHtml:await readHtml(url),metadata:{statusCode:200,sourceURL:url,url}},onCheckpoint:async checkpoint=>saveState({phase:'underarmour-new',checkpoint})});
+ else if(brand==='Under Armour'){
+  const dom=await browserCapture('underarmour');
+  result=await collectUnderArmourNew({now,...(dom?{sources:[dom.url]}:{}),read:async url=>dom?.url===url?dom:readRecord(url),onCheckpoint:async checkpoint=>saveState({phase:'underarmour-new',checkpoint})});
+ }
  else if(['adidas','Y-3'].includes(brand)){
-  const value=await collectAdidasLiveNew({brands:[brand],now,read:async url=>await rendered(url)||{rawHtml:await readHtml(url),metadata:{statusCode:200,sourceURL:url,url}},onCheckpoint:async checkpoint=>saveState({phase:'adidas-live-new',checkpoint})});
+  const value=await collectAdidasLiveNew({brands:[brand],now,read:readRecord,onCheckpoint:async checkpoint=>saveState({phase:'adidas-live-new',checkpoint})});
   result=value.outputs[brand];
   if(!result&&brand==='adidas'){
    const structured=await collectStructuredNew({brands:[brand],readHtml,now,allowPartial:true});result=structured.outputs[brand];

@@ -55,7 +55,7 @@ function source(value) {
 }
 
 function productUrl(value) {
-  const url = new URL(value), model = url.pathname.match(/^\/en-us\/p\/[^/]+\/(\d{7})\.html$/)?.[1];
+  const url = new URL(value, 'https://www.underarmour.com'), model = url.pathname.match(/^\/en-us\/p\/[^/]+\/(\d{7})\.html$/)?.[1];
   if (url.origin !== 'https://www.underarmour.com' || url.username || url.password || url.hash || !model) throw Error('Invalid official SKU product URL');
   const color = url.searchParams.get(`dwvar_${model}_color`);
   if (!/^\d{3}$/.test(color ?? '') || [...url.searchParams.keys()].some(k => k !== `dwvar_${model}_color`) || url.searchParams.getAll(`dwvar_${model}_color`).length !== 1) throw Error('Exact product color URL binding missing');
@@ -81,7 +81,10 @@ export async function readUnderArmourNewHtml(url, {fetchImpl = fetch} = {}) {
   return {url: response.url, status: response.status, rawHtml: await response.text(), observedAt: new Date().toISOString()};
 }
 
-/** Accepts original HTML or a Firecrawl rendered HTML capture, never markdown or
+/** Accepts original HTML, a Firecrawl rendered HTML capture, or an explicit
+ * {brand,url,checkedAt,transport:'chrome-rendered-main-dom',extraction,html}
+ * receipt of a complete main DOM. A browser receipt makes NO HTTP status claim.
+ * Never consumes markdown or
  * AI-extracted JSON. Hashes the HTML actually inspected and records its format.
  * Cached captures retain cachedAt as verifiedAt; replay time is NOT a fresh read.
  * Only visible SKU/color/photo tuples are proved. Swatch links alone do not
@@ -91,30 +94,43 @@ export function parseUnderArmourNewPage(input, requestedUrl, {now = new Date()} 
   const requested = source(requestedUrl), envelope = unwrap(input);
   if (!envelope || envelope.success === false || envelope.error || envelope.warning) throw Error('Unsuccessful HTML retrieval');
   const record = envelope.data ?? envelope, meta = record.metadata ?? {};
+  const browserDOM = record.transport === 'chrome-rendered-main-dom';
   const urls = [record.url, record.requestedUrl, meta.sourceURL, meta.url].filter(v => v !== undefined);
   const statuses = [record.status, record.statusCode, meta.statusCode].filter(v => v !== undefined);
   if (!urls.length || urls.some(u => new URL(u).href !== requested.href)) throw Error('Official HTML response URL mismatch');
-  if (!statuses.length || statuses.some(s => s !== 200)) throw Error(`HTTP ${statuses.find(s => s !== 200) ?? 'unknown'}: official HTML unavailable`);
+  if (browserDOM) {
+    // The browser receipt attests rendered DOM, not an HTTP response. Do not
+    // manufacture a 200 or silently consume a contradictory HTTP claim.
+    if (record.brand !== brand || record.url !== requested.href || statuses.length || record.rawHtml !== undefined ||
+        typeof record.checkedAt !== 'string' || typeof record.extraction !== 'string' || !/DOM markup/i.test(record.extraction)) throw Error('Invalid Chrome DOM receipt');
+  } else if (!statuses.length || statuses.some(s => s !== 200)) throw Error(`HTTP ${statuses.find(s => s !== 200) ?? 'unknown'}: official HTML unavailable`);
   const html = record.rawHtml ?? record.html;
   if (typeof html !== 'string' || !html.trim()) throw Error('HTML required; markdown cannot bind product tiles');
   const title = text(html.match(/<title\b[^>]*>([^]*?)<\/title>/i)?.[1] ?? '');
   if (/captcha|access denied|client challenge|just a moment|robot|pardon our interruption|verify.{0,30}human/i.test(title) || /verify (?:that )?you are human|YOUR ACCESS.{0,100}RESTRICTED|powered and protected by.{0,80}akamai/i.test(text(html.slice(0,10000)))) throw Error('OFFICIAL_ACCESS_CHALLENGE');
   const nodes = elements(html), inside = (n, root) => n.start >= root.open && n.end <= root.close;
+  if (browserDOM) {
+    const roots = nodes.filter(n => !n.parent), main = roots[0];
+    if (roots.length !== 1 || main.tag !== 'main' || main.attrs.id !== 'main' || !main.closed ||
+        html.slice(0, main.start).trim() || html.slice(main.end).trim()) throw Error('Chrome receipt requires one complete official main DOM');
+  }
   const contents = n => html.slice(n.open, n.close);
   const headings = nodes.filter(n => n.tag === 'h1' && n.closed).map(n => text(contents(n)));
   if (!headings.some(h => /new (?:releases?|arrivals?).*shoes/i.test(h))) throw Error('New shoes page heading missing');
   const counts = [...new Set(nodes.filter(n => n.tag === 'p' && n.closed).map(n => text(contents(n))).filter(t => /^\d[\d,]* Items?$/i.test(t)).map(t => Number(t.match(/^[\d,]+/)[0].replaceAll(',', ''))))];
   if (counts.length !== 1) throw Error('Explicit unique listing total missing');
-  const total = counts[0], tiles = nodes.filter(n => n.attrs['data-testid'] === 'product-tile-container' && (() => {
+  const total = counts[0], tiles = nodes.filter(n => (browserDOM
+    ? n.tag === 'div' && /^product-\d{7}-\d{3}-/.test(n.attrs.id ?? '') && /__product-tile-container(?:\s|$)/.test(n.attrs.class ?? '')
+    : n.attrs['data-testid'] === 'product-tile-container') && (() => {
     for (let p = n.parent; p; p = p.parent) if (/\bproducts_list\b/.test(p.attrs.class ?? '')) return true;
     return false;
   })());
   if (tiles.some(t => !t.closed) || (total > 0 && !tiles.length)) throw Error('Incomplete/missing product tiles');
   const cached = meta.cacheState === 'hit';
-  const observedAt = cached ? meta.cachedAt : record.observedAt ?? meta.cachedAt ?? now.toISOString();
+  const observedAt = browserDOM ? record.checkedAt : cached ? meta.cachedAt : record.observedAt ?? meta.cachedAt ?? now.toISOString();
   if (!Number.isFinite(Date.parse(observedAt)) || Date.parse(observedAt) > now.getTime()) throw Error('Invalid/missing original capture timestamp');
-  const contentHash = sha(html), format = record.rawHtml !== undefined ? 'raw-html' : 'firecrawl-rendered-html';
-  const provenance = {format, sourceUrl: requested.href, upstreamStatus: 200, observedAt,
+  const contentHash = sha(html), format = browserDOM ? 'chrome-rendered-main-dom' : record.rawHtml !== undefined ? 'raw-html' : 'firecrawl-rendered-html';
+  const provenance = {format, sourceUrl: requested.href, ...(browserDOM ? {transport: record.transport, extraction: record.extraction} : {upstreamStatus: 200}), observedAt,
     ...(meta.scrapeId ? {scrapeId: meta.scrapeId} : {}), ...(meta.cacheState ? {cacheState: meta.cacheState} : {}), ...(meta.cachedAt ? {cachedAt: meta.cachedAt} : {})};
   const products = [], excluded = [], unresolved = [], tileIds = [];
   for (const tile of tiles) {
@@ -134,19 +150,23 @@ export function parseUnderArmourNewPage(input, requestedUrl, {now = new Date()} 
     if (reason) {excluded.push({style: bound.model, variant: bound.variant, name, reason}); continue;}
     const imageLink = children.find(n => n.tag === 'a' && /product-image-link/.test(n.attrs.class ?? ''));
     if (!imageLink || productUrl(imageLink.attrs.href).url !== bound.url) throw Error('Own tile photo link differs from product');
-    const img = children.find(n => n.tag === 'img' && inside(n, imageLink) && n.attrs['data-testid'] === 'tile-image');
+    const primaryImages = children.filter(n => n.tag === 'img' && inside(n, imageLink) && (browserDOM || n.attrs['data-testid'] === 'tile-image'));
+    if (browserDOM && primaryImages.length !== 1) throw Error('Ambiguous/missing own Chrome tile photograph');
+    const img = primaryImages[0];
     let image;
     try {image = new URL(img?.attrs.src);} catch {image = null;}
     if (!image || image.origin !== 'https://underarmour.scene7.com' || image.username || image.password || image.hash ||
         !new RegExp(`^/is/image/Underarmour/${bound.variant}_(?:DEFAULT|PAIR)$`).test(image.pathname)) {
       unresolved.push({style: bound.model, variant: bound.variant, name, reason: 'own-sku-color-shoe-photo-unproven', observedImage: img?.attrs.src ?? ''}); continue;
     }
-    const swatches = children.filter(n => n.tag === 'a' && /^View Color /i.test(n.attrs.title ?? ''));
+    const swatches = children.filter(n => n.tag === 'a' && (browserDOM ? /product-color-swatch/.test(n.attrs.class ?? '') : /^View Color /i.test(n.attrs.title ?? '')));
     const colors = new Map();
     for (const swatch of swatches) {
-      const b = productUrl(swatch.attrs.href), label = swatch.attrs.title.match(/^View Color (.+)-(\d{3})$/i);
-      if (b.model !== bound.model || !label || label[2] !== b.color) throw Error('Swatch SKU/color identity mismatch');
-      colors.set(b.color, {url: b.url, colorway: label[1]});
+      const b = productUrl(swatch.attrs.href), label = swatch.attrs.title?.match(/^View Color (.+)-(\d{3})$/i);
+      const colorway = browserDOM ? swatch.attrs['aria-label']?.trim() : label?.[1];
+      if (b.model !== bound.model || !colorway || (!browserDOM && label?.[2] !== b.color)) throw Error('Swatch SKU/color identity mismatch');
+      if (colors.has(b.color) && colors.get(b.color).colorway !== colorway) throw Error('Contradictory original color labels');
+      colors.set(b.color, {url: b.url, colorway});
     }
     const color = colors.get(bound.color);
     if (!color || color.url !== bound.url) throw Error('Own selected color label missing');

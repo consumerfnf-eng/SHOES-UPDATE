@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {dedupeScopedPrepared,bindPreparedRaw,exactOfficialPdpKey,sameExactOfficialPdp,retainScopedVariantFields} from '../scripts/scoped-prepared.mjs';
 import {scopedSportsMerge} from '../scripts/publish-sports-casual.mjs';
-import {curateCatalog,officialEvidenceFor} from '../scripts/curation.mjs';
+import {curateCatalog,officialEvidenceFor,popularity} from '../scripts/curation.mjs';
 import {samePhysicalVariant} from '../public/assets/product-identity.mjs';
 
 const at='2026-11-05T07:14:43.859Z',today='2026-11-05',brand='Lanvin',sku='FUSKDK12ECSKA2610';
@@ -146,4 +146,35 @@ test('saved TOM FORD input: 66 records become 43 proven color PDPs, baseline IDs
   const out=scopedSportsMerge({products:old,brands:[]},{products:source.products.filter(p=>p.brand==='TOM FORD')},incoming,rawRows,{...options,allowedBrands:['TOM FORD']});
   assert.equal(out.report.added.length,0);assert.equal(out.report.refreshed.length,43);assert.equal(out.report.held.length,0);assert.equal(out.snapshot.products.length,44);
   for(const p of fresh.products){const q=out.snapshot.products.find(q=>q.url===p.url);assert.equal(q.id,old.find(o=>o.url===p.url).id);assert.ok(officialEvidenceFor(q,today));}
+});
+
+
+test('exact PDP refresh retains old sourceSignals and recomputes popularity after an empty incoming scrape',()=>{
+ const f=fixture();
+ const signals=['editor-one.example','editor-two.example'].map((host,i)=>({type:'magazine',url:`https://${host}/curb-snake`,title:'Curb Snake sneakers',checkedAt:at,publishedAt:today,modelMatched:true,independent:true,sponsored:false,publisherId:`editor-${i}`}));
+ f.old.sourceSignals=structuredClone(signals);
+ f.old.popularity={magazine:false,newsletter:true,media:false,sns:true,brand:false,ecommerce:true};
+ f.p.sourceSignals=[];f.p.popularity=structuredClone(f.old.popularity);
+ const before=structuredClone(f);
+ const out=scopedSportsMerge(f.catalog,f.source,[f.p],[f.r],options),p=out.snapshot.products[0];
+ assert.equal(out.report.refreshed.length,1);assert.equal(p.id,f.old.id);
+ assert.deepEqual(p.sourceSignals,signals);
+ assert.deepEqual(p.popularity,popularity(signals,today,{product:p,socialMetrics:p.socialMetrics||[],officialEligible:!!officialEvidenceFor(p,today)}));
+ assert.equal(p.popularity.magazine,true);assert.equal(p.popularity.media,true);
+ assert.equal(p.popularity.newsletter,false);assert.equal(p.popularity.sns,false);assert.equal(p.popularity.ecommerce,false);
+ assert.deepEqual(f,before);
+ const again=scopedSportsMerge(out.snapshot,out.source,[f.p],[f.r],options);
+ assert.deepEqual(again.snapshot.products[0].sourceSignals,signals);assert.deepEqual(again.snapshot.products[0].popularity,p.popularity);
+});
+
+test('exact PDP refresh merges independent sourceSignals once and gives refreshed evidence precedence',()=>{
+ const f=fixture();
+ const old={type:'newsletter',url:'https://editor-one.example/curb-snake',title:'Curb Snake',checkedAt:at,publishedAt:today,modelMatched:true,independent:true,sponsored:false,publisherId:'one'};
+ const refreshed={...old,title:'Updated Curb Snake sneaker coverage'};
+ const added={...old,url:'https://editor-two.example/curb-snake',publisherId:'two'};
+ f.old.sourceSignals=[old];f.p.sourceSignals=[refreshed,added];
+ const out=scopedSportsMerge(f.catalog,f.source,[f.p],[f.r],options),p=out.snapshot.products[0];
+ assert.deepEqual(p.sourceSignals,[refreshed,added]);
+ assert.equal(p.popularity.newsletter,true);assert.equal(p.popularity.media,true);assert.equal(p.popularity.magazine,false);
+ assert.deepEqual(p.popularity,popularity(p.sourceSignals,today,{product:p,socialMetrics:p.socialMetrics||[],officialEligible:true}));
 });

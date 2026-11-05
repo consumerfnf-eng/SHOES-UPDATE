@@ -99,3 +99,25 @@ owner write operations. Administrator responses use no-store, noindex, a restric
 CSP and frame denial. Preview deployments have no production D1 binding.
 
 Tests: `node --test tests/admin-access.test.mjs` and `node tests/admin-ui.mjs`.
+
+## Rendered New receipts and final integrity checks
+
+HOKA and UGG can consume operator-captured, sanitized rendered New grids and
+their observed Load More URLs. These receipts retain their real capture time,
+URL and extraction contract; browser DOM is not represented as an HTTP 200
+response. The ordinary unattended path uses the official HTTP reader and reports
+access failures instead of reusing invented response metadata.
+
+UGG optionally accepts matching PDP receipts with expanded own-product Details.
+The original New membership and the later product/selected-image evidence remain
+separate. Traversing all listing pages does not complete a brand while eligibility
+or selected-colour checks remain unresolved. Mixed shoe constructions retain
+their additional sneaker-base checks. `prepare-ugg-detail-replay.mjs` replays
+these local receipts without fetching or replacing a valid report after an
+invalid listing receipt.
+
+After scoped publication, `verify-admin-publication-integrity.mjs` checks the
+batch's immutable baseline: no lost catalog/source IDs, duplicate IDs, erased
+nonempty price labels, or changes to brands outside the requested batch. The
+publisher also runs the full snapshot validator before writing canonical files.
+Merged source signals require recomputed popularity and release status.
