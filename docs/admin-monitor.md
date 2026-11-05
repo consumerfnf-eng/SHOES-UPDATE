@@ -2,8 +2,10 @@
 
 Owner entry: `https://shoes-update-internal.pages.dev/admin/`.
 The normal site has no administrator navigation link. All administrator HTML,
-monitoring data and write APIs are gated on the server, after the existing team
-Basic authentication. A separate owner password establishes an eight-hour session.
+monitoring data and write APIs are gated on the server by independent owner
+authentication. A separate owner password establishes an eight-hour session.
+The normal catalog and research library retain their existing team Basic login;
+administrator sign-in does not require or reuse the team password.
 
 ## Provisioning and deployment
 

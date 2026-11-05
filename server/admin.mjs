@@ -49,9 +49,9 @@ export async function adminRequest(context){
    return json({ok:true},200,{'Set-Cookie':sessionCookie(token)});
   }
   const session=await sessionFor(request,env.ADMIN_DB,passwordHash);
-  if(['/admin/login','/admin/login.html','/admin/admin.css','/admin/login.mjs'].includes(path)&&['GET','HEAD'].includes(request.method)){
+  if(['/admin/login','/admin/login.html','/admin/admin.css','/admin/login.mjs','/admin/Pretendard-Medium.woff2'].includes(path)&&['GET','HEAD'].includes(request.method)){
    if(session&&path.startsWith('/admin/login'))return new Response(null,{status:303,headers:{...headers,Location:'/admin/'}});
-   return asset(context,path==='/admin/login'?'/admin/login.html':path);
+   return asset(context,path==='/admin/login'?'/admin/login.html':path==='/admin/Pretendard-Medium.woff2'?'/assets/fonts/Pretendard-Medium.woff2':path);
   }
   if(!session){
    if(path.startsWith('/api/'))return deny();

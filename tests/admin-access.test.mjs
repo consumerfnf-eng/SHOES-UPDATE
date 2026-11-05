@@ -16,7 +16,7 @@ test('team password alone never exposes administrator HTML or data, including en
  for(const path of ['/%61dmin/index.html','/admin%2findex.html','/api/%61dmin/status','//admin/index.html'])assert.notEqual((await f.request(path)).status,200,path);
  assert.equal((await f.request('/admin/')).headers.get('Cache-Control'),'private, no-store, max-age=0');
  assert.equal(await(await f.request('/')).text(),'NORMAL SITE');
- assert.equal((await f.request('/admin/login',{basic:false})).status,401);
+ assert.equal((await f.request('/admin/login',{basic:false})).status,200);assert.equal((await f.request('/',{basic:false})).status,401);
 });
 test('login requires the distinct administrator secret and same-origin POST',async()=>{
  const f=fixture();assert.equal((await f.request('/api/admin/login',{method:'POST',body:{password:'team-password'}})).status,401);
@@ -30,9 +30,9 @@ test('persistent login rate limit blocks the sixth attempt per 15-minute IP wind
  assert.equal((await f.request('/api/admin/login',{method:'POST',body:{password}})).status,429);
  assert.equal((await f.request('/api/admin/login',{method:'POST',body:{password},headers:{'CF-Connecting-IP':'192.0.2.7'}})).status,200);
 });
-test('sessions expire, cannot be forged, and still require normal site authentication',async()=>{
+test('owner sessions expire, cannot be forged and work independently of the team login',async()=>{
  const f=fixture(),{cookie}=await f.login();assert.equal((await f.request('/admin/',{cookie})).status,200);
- assert.equal((await f.request('/api/admin/status',{cookie,basic:false})).status,401);
+ assert.equal((await f.request('/api/admin/status',{cookie,basic:false})).status,200);
  assert.equal((await f.request('/api/admin/status',{cookie:sessionCookie('a'.repeat(43))})).status,401);
  f.db.sqlite.exec('UPDATE admin_sessions SET expires=1');assert.equal((await f.request('/api/admin/status',{cookie})).status,401);
 });

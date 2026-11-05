@@ -16,6 +16,9 @@ export async function onRequest(context) {
     return Response.redirect(url.toString(),302);
   }
   const runner=await adminRunnerRequest(context);if(runner)return runner;
+  // The owner area has an independent credential and session. Team Basic
+  // authentication remains required for every normal catalog/research asset.
+  const admin=await adminRequest(context);if(admin)return admin;
   const password = context.env.INTERNAL_SITE_PASSWORD;
   if(!password&&(url.hostname==='shoes-update-internal.pages.dev'||url.hostname.endsWith('.shoes-update-internal.pages.dev')))
     return new Response('Internal site authentication is not configured.',{status:503});
@@ -34,7 +37,6 @@ export async function onRequest(context) {
     try { supplied = atob(encoded); } catch { supplied = ''; }
     const colon = supplied.indexOf(':');
     if (colon >= 0 && supplied.slice(colon + 1) === password) {
-      const admin=await adminRequest(context);if(admin)return admin;
       const response=await context.next();
       // Card thumbnails and all existing static files keep the direct path.
       // Only a missing hashed product original may consult the pinned origin.

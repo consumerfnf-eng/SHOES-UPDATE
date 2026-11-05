@@ -10,7 +10,7 @@ if(!state){
  const file=path.join(os.homedir(),'Documents','ChatGPT','shoes internal site','SHOES 관리자 로그인 정보.txt');
  await fs.mkdir(path.dirname(file),{recursive:true});await fs.writeFile(file,'',{mode:0o600});
  if(process.platform==='win32')execFileSync('icacls.exe',[file,'/inheritance:r','/grant:r',`${process.env.USERDOMAIN}\\${process.env.USERNAME}:(R,W)`],{stdio:'pipe'});
- await fs.writeFile(file,`SHOES 관리자 전용 로그인\n\n주소: https://shoes-update-internal.pages.dev/admin/\n초기 관리자 비밀번호: ${password}\n\n기존 사이트 공유 비밀번호로 접속한 후, 초기 관리자 비밀번호로 추가 로그인\n상단 '비밀번호 설정'에서 본인의 새 관리자 비밀번호 지정\n새 비밀번호 설정 후 초기 비밀번호 사용 불가\n관리자 세션: 최대 8시간, 로그아웃 시 서버에서 즉시 폐기\n이 파일은 본인 PC에서 보관하고 다른 사용자에게 공유하지 마세요.\n`);
+ await fs.writeFile(file,`SHOES 관리자 전용 로그인\n\n주소: https://shoes-update-internal.pages.dev/admin/\n초기 관리자 비밀번호: ${password}\n\n위 관리자 전용 주소에서 초기 관리자 비밀번호로 로그인\n상단 '비밀번호 설정'에서 본인의 새 관리자 비밀번호 지정\n새 비밀번호 설정 후 초기 비밀번호 사용 불가\n관리자 세션: 최대 8시간, 로그아웃 시 서버에서 즉시 폐기\n이 파일은 본인 PC에서 보관하고 다른 사용자에게 공유하지 마세요.\n`);
  state={passwordHash,runnerKey,credentialsFile:file};await fs.writeFile(local,JSON.stringify(state),{mode:0o600});
 }
 function run(command,args,input){const result=spawnSync(command,args,{input,encoding:'utf8',stdio:['pipe','pipe','pipe'],shell:process.platform==='win32'&&command==='npx'});if(result.status!==0)throw Error('Administrator provisioning command failed: '+command+' '+args.slice(0,4).join(' '));}
