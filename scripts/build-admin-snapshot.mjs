@@ -33,7 +33,8 @@ export async function buildAdminSnapshot({now=new Date()}={}){
 export async function syncAdminSnapshot(){
  const snapshot=await buildAdminSnapshot();await fs.mkdir('.secrets',{recursive:true});
  const quote=value=>"'"+value.replaceAll("'","''")+"'";
- const sql=`INSERT OR IGNORE INTO admin_snapshots (id,created_at,data) VALUES (${quote(snapshot.id)},${quote(snapshot.generatedAt)},${quote(JSON.stringify(snapshot))});\n`;
+ const schema=await fs.readFile('server/admin-schema.sql','utf8');
+ const sql=schema+'\n'+`INSERT OR IGNORE INTO admin_snapshots (id,created_at,data) VALUES (${quote(snapshot.id)},${quote(snapshot.generatedAt)},${quote(JSON.stringify(snapshot))});\n`;
  const file='.secrets/admin-snapshot.sql';await fs.writeFile(file,sql,{mode:0o600});
  const run=spawnSync('npx',['wrangler','d1','execute','shoes-admin-monitor','--remote','--file',file],{stdio:'pipe',encoding:'utf8',shell:process.platform==='win32'});
  if(run.status!==0)throw Error('Administrator snapshot synchronization failed. Check the D1 binding.');
