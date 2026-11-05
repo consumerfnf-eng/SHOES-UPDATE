@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {scopedSportsMerge,luxDigest} from '../scripts/publish-sports-casual.mjs';
 import {unifyVariantGroups,groupProductVariants} from '../public/assets/catalog-view.mjs';
-import {curateCatalog} from '../scripts/curation.mjs';
+import {curateCatalog,officialEvidenceFor} from '../scripts/curation.mjs';
 import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 const lux={id:'lux',brand:'Prada',name:'Original LUX',presentation:{cachedPath:'/images/original.jpg'},modelGroupId:'unchanged'};
@@ -113,6 +113,15 @@ test('a sparse official recheck cannot erase existing price, material or reviewe
  const out=scopedSportsMerge(catalog,source,[prepared],[raw],authorizedLuxOptions);
  assert.equal(out.snapshot.products[1].priceLabel,'USD 990');assert.equal(out.snapshot.products[1].material,'Reviewed leather');assert.deepEqual(out.snapshot.products[1].notes,{reviewed:'retain'});
  assert.equal(out.source.products[1].priceLabel,'USD 990');assert.equal(out.source.products[1].material,'Reviewed leather');
+});
+test('a fresh manufacturer SKU cannot inherit a former locale listing identifier type',()=>{
+ const {catalog,source,prepared,raw}=luxRecheckFixture();
+ for(const row of [prepared,raw]){delete row.styleType;row.style='2EE4003LKGF0009';for(const field of ['officialProductEvidence','officialImageEvidence']){delete row[field].identifierType;row[field].style=row.style;}row.arrivalEvidence.style=row.style;}
+ prepared.scopedNewReview.style=prepared.style;
+ assert(officialEvidenceFor(prepared,'2026-11-05'));
+ const out=scopedSportsMerge(catalog,source,[prepared],[raw],authorizedLuxOptions);
+ assert.equal(out.report.refreshed.length,1);assert(!Object.hasOwn(out.snapshot.products[1],'styleType'));assert(officialEvidenceFor(out.snapshot.products[1],'2026-11-05'));
+ assert(!Object.hasOwn(out.source.products[1],'styleType'));
 });
 
 test('authorized LUX additions remain scoped and omit held or unprepared raw candidates',()=>{

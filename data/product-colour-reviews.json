@@ -1504,7 +1504,14 @@
       ],
       "reason": "Compared official shoe photograph against existing chip; selected main upper tones, excluding background and outsole.",
       "contactSheetIndex": 130,
-      "colorName": "White / Olive"
+      "colorName": "White / Olive",
+      "retainedFrom": {
+        "id": "new-20260923-32587c9dd88b787f",
+        "url": "https://www.bottegaveneta.com/en-us/shot-sneaker-bark-green-alabaster-A007BYV6VC09063.html",
+        "image": "https://bottega-veneta.dam.kering.com/asset/249fb372-fc58-4aa7-8514-84c8be77f358/Large/A007BYV6VC09063_A.jpg?v=1",
+        "cachedPath": "/images/521612cc4702abca997457092d995dc43f242389bd3bbdfe667147c021441a34.jpg"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-cf6be25196b49a78b032",
@@ -2297,7 +2304,14 @@
       ],
       "reason": "Compared official shoe photograph against existing chip; selected main upper tones, excluding background and outsole.",
       "contactSheetIndex": 178,
-      "colorName": "Black / Light Grey"
+      "colorName": "Black / Light Grey",
+      "retainedFrom": {
+        "id": "new-20260923-9522a7640a5200af",
+        "url": "https://www.bottegaveneta.com/en-us/orbit-sneaker-black-silver-741357V2X401350.html",
+        "image": "https://bottega-veneta.dam.kering.com/asset/23dc3d20-123a-4c99-adc9-45f5268fe3f4/Large/741357V2X401350_A.jpg?v=2",
+        "cachedPath": "/images/aa3cee61247f13a6080cda335d60a638904d5fa731259dadee6a9dcbbdc0643c.jpg"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-3208ab1e297d082010e3",
@@ -3584,7 +3598,7 @@
     {
       "id": "arrival-7abfc96e2fc18bbd1244",
       "brand": "Autry",
-      "style": "AULW-JA04-2026.2_2026",
+      "style": "%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-medalist-%EB%A1%9C%EC%9A%B0%EC%BB%B7-%EB%A0%88%EC%98%A4%ED%8C%8C%EB%93%9C-%EC%86%A1%EC%B9%98-%EC%8A%A4%ED%83%80%EC%9D%BC-%EB%B8%94%EB%9E%99-849624",
       "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/medalist/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-medalist-%EB%A1%9C%EC%9A%B0%EC%BB%B7-%EB%A0%88%EC%98%A4%ED%8C%8C%EB%93%9C-%EC%86%A1%EC%B9%98-%EC%8A%A4%ED%83%80%EC%9D%BC-%EB%B8%94%EB%9E%99-849624.html",
       "image": "https://static.autry-usa.com/articoli/sneakers_medalist_low_effetto_cavallino_leopard_e_nero_849624_thumb_03_20260923130019.jpg",
       "verified": true,
@@ -3599,7 +3613,14 @@
       ],
       "reason": "Compared official shoe photograph against existing chip; selected main upper tones, excluding background and outsole.",
       "contactSheetIndex": 265,
-      "colorName": "Brown / Black / Beige"
+      "colorName": "Brown / Black / Beige",
+      "retainedFrom": {
+        "id": "arrival-7abfc96e2fc18bbd1244",
+        "url": "https://www.autry-usa.com/ko/%EC%97%AC%EC%84%B1/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88/medalist/%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-medalist-%EB%A1%9C%EC%9A%B0%EC%BB%B7-%EB%A0%88%EC%98%A4%ED%8C%8C%EB%93%9C-%EC%86%A1%EC%B9%98-%EC%8A%A4%ED%83%80%EC%9D%BC-%EB%B8%94%EB%9E%99-849624.html",
+        "image": "https://static.autry-usa.com/articoli/sneakers_medalist_low_effetto_cavallino_leopard_e_nero_849624_thumb_03_20260923130019.jpg",
+        "cachedPath": "/images/124049f62d74e684faa1904bf8df4eff169f4bf32e0f1077cba8bac5b8d3862a.webp"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "live-602a2cfb248b43c2",
@@ -4155,12 +4176,12 @@
       "id": "arrival-837efcf816eeae31a5ad",
       "brand": "Rockfish Weatherwear",
       "style": "4318",
-      "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4318&cate_no=626&display_group=1",
-      "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/687e370ad815dcb3fb4eb04e9c4f280d.jpg",
+      "url": "https://en.rockfish-weatherwear.co.kr/product/bryn-velcro-sneakers-v2-grey/4318/category/626/display/1/",
+      "image": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/273d547195d246ceb19943c1ce8d983d.jpg",
       "verified": true,
       "checkedAt": "2026-11-03",
       "method": "manual-upper-photo-review",
-      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/687e370ad815dcb3fb4eb04e9c4f280d.jpg",
+      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/273d547195d246ceb19943c1ce8d983d.jpg",
       "cachedPath": "/images/0036d3893de0826a8aa9c94ddea8092e971d2080a86e30b6deee459cb808d7a0.jpg",
       "colorSwatches": [
         "#35383d",
@@ -4168,18 +4189,25 @@
       ],
       "colorName": "Charcoal / Grey",
       "replaceColorName": true,
-      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour."
+      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour.",
+      "retainedFrom": {
+        "id": "arrival-837efcf816eeae31a5ad",
+        "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4318&cate_no=626&display_group=1",
+        "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/687e370ad815dcb3fb4eb04e9c4f280d.jpg",
+        "cachedPath": "/images/0036d3893de0826a8aa9c94ddea8092e971d2080a86e30b6deee459cb808d7a0.jpg"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-e0f9d9cdc16df008accf",
       "brand": "Rockfish Weatherwear",
       "style": "4324",
-      "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4324&cate_no=626&display_group=1",
-      "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/c2b2c9c6663e8225f3a8e92d9da1d49f.jpg",
+      "url": "https://en.rockfish-weatherwear.co.kr/product/puffin-ribbon-banding-sneakers-grey/4324/category/626/display/1/",
+      "image": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/611b64f520d74e808e4014d7ad79d448.jpg",
       "verified": true,
       "checkedAt": "2026-11-03",
       "method": "manual-upper-photo-review",
-      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/c2b2c9c6663e8225f3a8e92d9da1d49f.jpg",
+      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/611b64f520d74e808e4014d7ad79d448.jpg",
       "cachedPath": "/images/d02add57845ee611243350e958ba7005e85f7c0d99b58402782009b73adcf61d.jpg",
       "colorSwatches": [
         "#a6abb1",
@@ -4187,18 +4215,25 @@
       ],
       "colorName": "Silver / Black",
       "replaceColorName": true,
-      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour."
+      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour.",
+      "retainedFrom": {
+        "id": "arrival-e0f9d9cdc16df008accf",
+        "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4324&cate_no=626&display_group=1",
+        "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/c2b2c9c6663e8225f3a8e92d9da1d49f.jpg",
+        "cachedPath": "/images/d02add57845ee611243350e958ba7005e85f7c0d99b58402782009b73adcf61d.jpg"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-181222a6378213f11bf5",
       "brand": "Rockfish Weatherwear",
       "style": "4325",
-      "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4325&cate_no=626&display_group=1",
-      "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/9c5d527b57c1fbd63babf934612ad884.jpg",
+      "url": "https://en.rockfish-weatherwear.co.kr/product/puffin-ribbon-banding-sneakers-metallic-blue/4325/category/626/display/1/",
+      "image": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/9a53ac95bc2ea32c3a2189fa369446e7.jpg",
       "verified": true,
       "checkedAt": "2026-11-03",
       "method": "manual-upper-photo-review",
-      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/9c5d527b57c1fbd63babf934612ad884.jpg",
+      "presentationImage": "https://en.rockfish-weatherwear.co.kr/web/product/medium/202610/9a53ac95bc2ea32c3a2189fa369446e7.jpg",
       "cachedPath": "/images/309e7aa23390a966801994519845857de63da7709542a0145f6d48118d0e784f.jpg",
       "colorSwatches": [
         "#809aaf",
@@ -4206,7 +4241,14 @@
       ],
       "colorName": "Metallic Blue / White",
       "replaceColorName": true,
-      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour."
+      "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour.",
+      "retainedFrom": {
+        "id": "arrival-181222a6378213f11bf5",
+        "url": "https://en.rockfish-weatherwear.co.kr/NODE/product/detail.html?product_no=4325&cate_no=626&display_group=1",
+        "image": "https://en.rockfish-weatherwear.co.kr/web/product/big/202610/9c5d527b57c1fbd63babf934612ad884.jpg",
+        "cachedPath": "/images/309e7aa23390a966801994519845857de63da7709542a0145f6d48118d0e784f.jpg"
+      },
+      "retentionBasis": "identical-sha256-product-photo"
     },
     {
       "id": "arrival-9988e42448b19614cd6d",

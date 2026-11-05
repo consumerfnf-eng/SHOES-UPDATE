@@ -51,7 +51,7 @@ export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date
     p.sourceSignals=[...new Map([...(match.sourceSignals||[]),...(p.sourceSignals||[])].map(signal=>[signal.type+'|'+signal.url,signal])).values()];
     if(p.style===match.style&&!p.dateEvidence&&match.dateEvidence?.verified)for(const field of ['releaseDate','releaseDateEnd','releaseDatePrecision','dateEvidence'])if(match[field]!==undefined)p[field]=structuredClone(match[field]);
     // Sparse listing records must not erase existing prices or reviewed metadata.
-    for(const [field,value] of Object.entries(match))if(p[field]===undefined)p[field]=structuredClone(value);
+    for(const [field,value] of Object.entries(match))if(p[field]===undefined&&field!=='styleType')p[field]=structuredClone(value);
     for(const field of ['priceLabel','price','currency','material','gender','country','description','manufacturerStyle'])if((p[field]===undefined||p[field]===null||p[field]==='')&&match[field]!==undefined)p[field]=structuredClone(match[field]);
     if((match.presentation?.image||match.image)===(p.presentation?.image||p.image)){
      if(match.presentation?.frame)p.presentation={...p.presentation,...match.presentation};
@@ -61,7 +61,7 @@ export function scopedSportsMerge(catalog,source,products,raw,{today,at=new Date
     p.keywordTags=productKeywordIds(p);p.searchConceptIds=productSearchConceptIds(p);
     const position=positions.get(match.id);snapshot.products[position]=p;indexProduct(p,position);refreshed.push({id:p.id,fromId,brand:p.brand,reason:'fresh-New-evidence-for-existing-variant'});
     const rawRow=raw.find(r=>r.id===fromId),sourceIndex=nextSource.products.findIndex(r=>r.id===p.id);
-    if(rawRow&&sourceIndex>=0){const old=nextSource.products[sourceIndex];assert(permitted(old));const merged={...old,...rawRow,id:p.id,firstSeen:old.firstSeen||rawRow.firstSeen};for(const field of ['priceLabel','price','currency','material','gender','country','description','manufacturerStyle'])if((merged[field]===undefined||merged[field]===null||merged[field]==='')&&old[field]!==undefined)merged[field]=structuredClone(old[field]);nextSource.products[sourceIndex]=merged;}
+    if(rawRow&&sourceIndex>=0){const old=nextSource.products[sourceIndex];assert(permitted(old));const merged={...old,...rawRow,id:p.id,firstSeen:old.firstSeen||rawRow.firstSeen};if(rawRow.officialProductEvidence?.verified&&!rawRow.styleType)delete merged.styleType;for(const field of ['priceLabel','price','currency','material','gender','country','description','manufacturerStyle'])if((merged[field]===undefined||merged[field]===null||merged[field]==='')&&old[field]!==undefined)merged[field]=structuredClone(old[field]);nextSource.products[sourceIndex]=merged;}
    }continue;
   }
   p.firstPublishedAt??=at;p.keywordTags=productKeywordIds(p);p.searchConceptIds=productSearchConceptIds(p);
