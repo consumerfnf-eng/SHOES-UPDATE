@@ -5,10 +5,7 @@ from concurrent.futures import ThreadPoolExecutor,as_completed
 from PIL import Image,ImageOps,ImageDraw
 sys.path.insert(0,str(Path(__file__).resolve().parent/'monthly'))
 from image_signals import body_colour
-palette={'Black':'#242424','White':'#efefeb','Grey':'#8d8d8b','Cream':'#dfd7be','Beige':'#bbab8b','Brown':'#715744','Blue':'#486383','Navy':'#293646','Green':'#647350','Yellow':'#d6ba43','Red':'#aa3639','Pink':'#d3a8b4','Purple':'#85668e','Orange':'#c8773e'}
-def color_name(value):
- rgb=tuple(int(value[i:i+2],16) for i in [1,3,5])
- return min(palette,key=lambda label:sum((rgb[i]-int(palette[label][1+i*2:3+i*2],16))**2 for i in range(3)))
+from product_photo_palette import color_name
 source=Path(sys.argv[1]);dest=Path(sys.argv[2]);d=json.loads(source.read_text(encoding='utf-8'));public=Path('public');cachepath=Path('data/photo-cache.json');cache=json.loads(cachepath.read_text(encoding='utf-8'));jobs={p['presentation']['image'] for p in d['products']};done={};errors=[]
 groups=json.loads(Path('config/site-brand-groups.json').read_text(encoding='utf8'))
 allowed_groups=['SPORTS','CASUAL']+(['LUX'] if '--include-lux' in sys.argv[3:] else [])

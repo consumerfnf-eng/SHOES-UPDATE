@@ -4287,6 +4287,78 @@
       "colorName": "Metallic Blue / White",
       "replaceColorName": true,
       "reason": "Reviewed the mixed upper directly: do not sample the dark outsole as the sole chip colour."
+    },
+    {
+      "id": "ugg-new-1170750-ddc",
+      "brand": "UGG",
+      "style": "1170750-DDC",
+      "url": "https://www.ugg.com/men-shoes-sneakers/lowmel/1170750.html?dwvar_1170750_color=DDC",
+      "image": "https://dms.deckers.com/ugg/image/upload/t_slider-grid-tile-wp/v1778627534/1170750-DDC_1.png?_s=RAABAB0",
+      "verified": true,
+      "method": "manual-upper-photo-review",
+      "checkedAt": "2026-11-05T11:53:06.852Z",
+      "presentationImage": "https://dms.deckers.com/ugg/image/upload/t_slider-grid-tile-wp/v1778627534/1170750-DDC_1.png?_s=RAABAB0",
+      "cachedPath": "/images/6f45751c8be83f327942c444fb16654249cfc19119936eada43f086e34a335f4.webp",
+      "colorSwatches": [
+        "#47332d"
+      ],
+      "colorName": "Brown",
+      "replaceColorName": true,
+      "reason": "Compared the exact original official product photograph; selected the visible main upper, excluding background, outsole and contrast trim."
+    },
+    {
+      "id": "ugg-new-1144032-dyr",
+      "brand": "UGG",
+      "style": "1144032-DYR",
+      "url": "https://www.ugg.com/women-casuals-sneakers/lowmel/1144032.html?dwvar_1144032_color=DYR",
+      "image": "https://dms.deckers.com/ugg/image/upload/t_slider-grid-tile-wp/v1778626949/1144032-DYR_1.png?_s=RAABAB0",
+      "verified": true,
+      "method": "manual-upper-photo-review",
+      "checkedAt": "2026-11-05T11:53:06.867Z",
+      "presentationImage": "https://dms.deckers.com/ugg/image/upload/t_slider-grid-tile-wp/v1778626949/1144032-DYR_1.png?_s=RAABAB0",
+      "cachedPath": "/images/d86c7df673cb3ff2838b66561604028fabdd7e61a7fd615c53c1fade612e147f.webp",
+      "colorSwatches": [
+        "#bb8095"
+      ],
+      "colorName": "Pink",
+      "replaceColorName": true,
+      "reason": "Compared the exact original official product photograph; selected the visible main upper, excluding background, outsole and contrast trim."
+    },
+    {
+      "id": "ugg-new-1180592-bkmp",
+      "brand": "UGG",
+      "style": "1180592-BKMP",
+      "url": "https://www.ugg.com/men-shoes-sneakers/lowmel-contrast/1180592.html?dwvar_1180592_color=BKMP",
+      "image": "https://dms.deckers.com/ugg/image/upload/t_slider-grid-tile-wp/v1780683726/1180592-BKMP_1.png?_s=RAABAB0",
+      "verified": true,
+      "method": "manual-upper-photo-review",
+      "checkedAt": "2026-11-05T11:53:06.878Z",
+      "presentationImage": "https://dms.deckers.com/ugg/image/upload/t_slider-grid-tile-wp/v1780683726/1180592-BKMP_1.png?_s=RAABAB0",
+      "cachedPath": "/images/8416ce5a0cc3b9f42caf5f537693044ff9513c3c5a386f07d9701d6acc8860b0.webp",
+      "colorSwatches": [
+        "#3f3e3c"
+      ],
+      "colorName": "Black",
+      "replaceColorName": true,
+      "reason": "Compared the exact original official product photograph; selected the visible main upper, excluding background, outsole and contrast trim."
+    },
+    {
+      "id": "ugg-new-1175301-mby",
+      "brand": "UGG",
+      "style": "1175301-MBY",
+      "url": "https://www.ugg.com/women-casuals-sneakers/minimel/1175301.html?dwvar_1175301_color=MBY",
+      "image": "https://dms.deckers.com/ugg/image/upload/t_slider-grid-tile-wp/v1780681962/1175301-MBY_1.png?_s=RAABAB0",
+      "verified": true,
+      "method": "manual-upper-photo-review",
+      "checkedAt": "2026-11-05T11:53:06.889Z",
+      "presentationImage": "https://dms.deckers.com/ugg/image/upload/t_slider-grid-tile-wp/v1780681962/1175301-MBY_1.png?_s=RAABAB0",
+      "cachedPath": "/images/e4d53bf40f949b071265ad276cfdaa45076941dd4710a7160d68e26f2518935e.webp",
+      "colorSwatches": [
+        "#989581"
+      ],
+      "colorName": "Green",
+      "replaceColorName": true,
+      "reason": "Compared the exact original official product photograph; selected the visible main upper, excluding background, outsole and contrast trim."
     }
   ]
 }

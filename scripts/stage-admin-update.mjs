@@ -8,6 +8,7 @@ for(const name of ['adidas-live-new','korean-new-sections','mihara-official','ni
  for(const file of ['scripts/collect-'+name+'.mjs','tests/'+name+'.test.mjs']){try{await fs.access(file);files.push(file);}catch{}}
 }
 files.push('scripts/verify-admin-publication-integrity.mjs','scripts/remove-admin-rejected-additions.mjs','tests/scoped-adopted-id-conflicts.test.mjs');
+files.push('scripts/apply-admin-upper-photo-reviews.mjs','scripts/product_photo_palette.py','tests/test_product_photo_palette.py');
 const tracked=new Set(execFileSync('git',['ls-files','--','public/images'],{encoding:'utf8',maxBuffer:16*1024*1024}).trim().split('\n'));
 const catalog=await fs.readFile('public/data/catalog.json','utf8');const photos=[...new Set([...catalog.matchAll(/\/images\/[a-f0-9]{64}\.(?:jpg|png|webp)/g)].map(m=>'public'+m[0]))].filter(p=>!tracked.has(p));
 for(const file of [...files,...photos])await fs.access(file);
