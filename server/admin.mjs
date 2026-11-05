@@ -26,7 +26,8 @@ async function asset(context,path){
  const canonical=path.replace(/\/index\.html$/,'/').replace(/\.html$/,'');
  const url=new URL(canonical,context.request.url),response=await context.env.ASSETS.fetch(new Request(url,{method:'GET'}));
  if(!response.ok)return json({error:'관리자 화면을 불러오지 못했습니다.'},503);
- return new Response(context.request.method==='HEAD'?null:response.body,{status:response.status,headers:new Headers([...response.headers,...Object.entries(headers)])});
+ const protectedHeaders=new Headers(response.headers);for(const [name,value] of Object.entries(headers))protectedHeaders.set(name,value);
+ return new Response(context.request.method==='HEAD'?null:response.body,{status:response.status,headers:protectedHeaders});
 }
 export async function adminRequest(context){
  const {request,env}=context,url=new URL(request.url),path=adminPath(url.pathname);

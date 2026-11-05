@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
 import {siteBrandGroup,isSiteBrandAllowed} from '../public/assets/site-brand-policy.mjs';
+import {prepareCatalog} from '../public/assets/catalog-runtime.mjs';
 import {collectNewArrivals,isNewListing} from './new-arrivals.mjs';
 import {isScopedSneakerCandidate} from './scoped-new-candidates.mjs';
 import {collectPumaKoreaNew} from './collect-puma-korea-new.mjs';
@@ -40,7 +41,8 @@ export async function auditBrand(brand,{readHtml,now=new Date()}={}){
  const coverage=Array.isArray(result.coverage)?result.coverage:[result.coverage||{}],errors=coverage.flatMap(c=>[...(c.errors||[]),...(c.error?[c.error]:[])]).concat(result.errors||[]).map(e=>String(e.error||e.message||e).slice(0,240));
  const products=result.products||[],exhaustive=coverage.length>0&&coverage.every(c=>c.exhaustive===true||c.exhausted===true||Number(c.total)>0&&c.total===c.read);
  const failed=coverage.some(c=>['failed','unavailable'].includes(c.status))&&!products.length;
- return {status:failed?'failed':exhaustive&&!errors.length?'completed':'partial',checkedAt:at,listingPages:coverage.reduce((n,c)=>n+(Number(c.pages||c.listingPages)||0),0)||Number(result.pages?.length)||0,verified:products.length,discovered:coverage.reduce((n,c)=>n+(Number(c.candidates||c.total||c.read)||0),0)||products.length,exhaustive,errors,candidates:auditCandidates(products,catalog.products,brand)};
+ const today=new Date(now.getTime()+9*3600000).toISOString().slice(0,10),prepared=prepareCatalog(catalog,null,null,today),published=prepared.products.filter(p=>prepared.officialMatches.get(p.id));
+ return {status:failed?'failed':exhaustive&&!errors.length?'completed':'partial',checkedAt:at,listingPages:coverage.reduce((n,c)=>n+(Number(c.pages||c.listingPages)||0),0)||Number(result.pages?.length)||0,verified:products.length,discovered:coverage.reduce((n,c)=>n+(Number(c.candidates||c.total||c.read)||0),0)||products.length,exhaustive,errors,candidates:auditCandidates(products,published,brand)};
 }
 export async function pollAdminQueue(){
  const key=process.env.ADMIN_RUNNER_KEY;if(!key)throw Error('ADMIN_RUNNER_KEY is not configured');
