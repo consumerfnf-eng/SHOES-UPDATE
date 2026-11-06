@@ -8,8 +8,8 @@
   <title>SHOES — MLB · DISCOVERY Research</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230b57d0'/%3E%3Cpath d='M9 10h14v4H13v3h10v7H9v-4h10v-1H9z' fill='white'/%3E%3C/svg%3E">
   <link rel="preload" href="./assets/fonts/Pretendard-Medium.woff2" as="font" type="font/woff2" crossorigin>
-  <link href="./assets/app.css?v=20261103-user-guide" rel="stylesheet">
-  <script type="module" src="./assets/app.mjs?v=20261103-season-proposals"></script>
+  <link href="./assets/app.css?v=20261106-visual-silhouette" rel="stylesheet">
+  <script type="module" src="./assets/app.mjs?v=20261106-visual-silhouette"></script>
 </head>
 <body>
   <a class="skip-link" href="#results">상품 목록으로 건너뛰기</a>
@@ -31,7 +31,8 @@
       <section class="catalog" aria-label="슈즈 탐색">
         <div id="brand-group-tabs" class="brand-group-tabs" role="group" aria-label="브랜드 그룹"><button type="button" class="brand-group-tab active" data-brand-group="all" aria-pressed="true">전체 브랜드</button><button type="button" class="brand-group-tab" data-brand-group="LUX" aria-pressed="false">LUX</button><button type="button" class="brand-group-tab" data-brand-group="SPORTS" aria-pressed="false">SPORTS</button><button type="button" class="brand-group-tab" data-brand-group="CASUAL" aria-pressed="false">CASUAL</button></div>
         <div id="retailer-tabs" class="retailer-tabs" role="group" aria-label="리테일러 선택" hidden></div>
-        <div class="filters"><button id="mobile-brands" class="mobile-brands" aria-expanded="false">브랜드 필터 <span id="mobile-brand-count"></span></button><label>품목<select id="category-filter"><option value="all">모든 품목</option><option value="sneaker">스니커즈 전체</option><option value="hybrid">스니커즈 혼합형</option><option value="ballet-sneaker">발레리나 스니커즈</option><option value="mary-jane-sneaker">메리제인 스니커즈</option><option value="mule-sneaker">뮬 스니커즈</option><option value="jelly">젤리 슈즈</option><option value="platform">플랫폼 슈즈</option></select></label><label hidden>출시 상태<select id="release-filter"><option value="released">게시 상품 전체</option></select></label><label id="social-group-label" hidden>지표 비교<select id="social-group"><option value="">전체 지표 · 출시순</option></select></label><label class="toggle-filter"><input type="checkbox" id="fresh-only">이번 주 신규</label><label class="toggle-filter"><input type="checkbox" id="saved-only">저장함 <span id="saved-count"></span></label><button id="reset-filters" class="text-button reset">필터 초기화</button></div>
+        <div class="filters"><button id="mobile-brands" class="mobile-brands" aria-expanded="false">브랜드 필터 <span id="mobile-brand-count"></span></button><label>품목<select id="category-filter"><option value="all">모든 품목</option><option value="sneaker">스니커즈 전체</option><option value="hybrid">스니커즈 혼합형</option><option value="ballet-sneaker">발레리나 스니커즈</option><option value="mary-jane-sneaker">메리제인 스니커즈</option><option value="mule-sneaker">뮬 스니커즈</option><option value="jelly">젤리 슈즈</option><option value="platform">플랫폼 슈즈</option></select></label><label id="silhouette-filter-label" class="visual-filter-label" for="silhouette-filter" hidden>사진 실루엣<select id="silhouette-filter" aria-describedby="silhouette-filter-help" disabled><option value="all">모든 실루엣</option></select></label><label hidden>출시 상태<select id="release-filter"><option value="released">게시 상품 전체</option></select></label><label id="social-group-label" hidden>지표 비교<select id="social-group"><option value="">전체 지표 · 출시순</option></select></label><label class="toggle-filter"><input type="checkbox" id="fresh-only">이번 주 신규</label><label class="toggle-filter"><input type="checkbox" id="saved-only">저장함 <span id="saved-count"></span></label><button id="reset-filters" class="text-button reset">필터 초기화</button></div>
+        <p id="silhouette-filter-help" class="visual-filter-help" role="status" hidden></p>
         <div id="active-filters" class="active-filters"></div>
         <section id="sns-trends" class="sns-trends" aria-labelledby="sns-trends-title" hidden>
           <div class="section-label"><div class="trend-heading"><span class="trend-eyebrow">WEEKLY HOT TRENDS</span><h2 id="sns-trends-title">SNS 인기 스니커즈 키워드</h2><span id="sns-trend-total" class="keyword-total"></span></div><button id="sns-trend-info" class="text-button">선정 기준</button></div>
@@ -114,6 +115,13 @@
           <section class="weekly-insights" aria-labelledby="weekly-insight-title"><header class="weekly-insight-heading"><div><p class="eyebrow">WEEKLY · MLB DESIGN INSIGHTS</p><h3 id="weekly-insight-title">주간 핵심 인사이트 요약</h3><p id="weekly-insight-status" class="muted" role="status"></p></div><span class="weekly-flow">주목할 변화 → 근거 → MLB 적용 아이템</span></header><div id="weekly-insight-cards" class="weekly-insight-grid"></div><details class="weekly-method"><summary>분석 기준</summary><p id="weekly-insight-method"></p></details></section>
           <div id="rank-boards" class="rank-boards" hidden></div>
           <div class="analysis-grid">
+            <article class="panel wide visual-silhouette-panel" id="panel-visual-silhouette" aria-labelledby="visual-silhouette-title" aria-busy="false" hidden>
+              <header><div><p class="visual-eyebrow">PHOTO SILHOUETTE</p><h3 id="visual-silhouette-title">사진 실루엣 · 모델 수</h3></div><span class="visual-basis">모델 기준</span></header>
+              <p class="visual-method">상품 사진의 형태를 분류합니다. 공식 품목·기능 분류와 별도로 살펴보세요.</p>
+              <p id="visual-model-coverage" class="visual-model-coverage" role="status"></p>
+              <div class="panel-body"></div>
+              <p class="panel-note">색상·SKU 중복을 제외한 모델 수입니다.</p>
+            </article>
             <article class="panel wide" id="panel-category">
               <header><h3>스니커즈 카테고리</h3><button class="text-button" data-dl="category">CSV</button></header>
               <div class="panel-body"></div>

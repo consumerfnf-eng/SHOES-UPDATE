@@ -25,7 +25,7 @@ const sourceNames = {magazine:'매거진',newsletter:'뉴스레터',media:'매�
 const productTypeNames = {sneaker:'스니커즈',clog:'여름 클로그',sandal:'캐주얼 샌들','platform-sandal':'플랫폼 샌들','platform-shoe':'플랫폼 슈즈',jelly:'젤리 슈즈',hybrid:'혼합형 스니커즈'};
 const mandatory = ['Louis Vuitton','Miu Miu','Prada','Gucci','Dior','Balenciaga','Celine','Saint Laurent','Hermès','Moncler','Bottega Veneta','Loewe','On','Cecilie Bahnsen','ASICS','FILA','Mizuno','New Balance','Salomon','adidas','Nike','PUMA','Axel Arigato','PANE','Onitsuka Tiger'];
 const PAGE_SIZE = 40;
-const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),brandGroup:'all',category:'all',source:'all',catwalkShow:'all',catwalkCollection:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
+const state = {freshOnly:false,savedOnly:false,search:'',brands:new Set(),brandGroup:'all',category:'all',silhouette:'all',source:'all',catwalkShow:'all',catwalkCollection:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',sort:'group',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''};
 const RETAILER_TABS = [['all','전체'],['retail-29cm','29CM'],['retail-ssense','SSENSE'],['retail-musinsa','무신사'],['retail-wconcept','W컨셉'],['retail-lyst','Lyst'],['retail-farfetch','Farfetch'],['retail-mytheresa','Mytheresa'],['retail-netaporter','Net-a-Porter'],['retail-mrporter','MR PORTER'],['retail-kith','Kith']];
 const OVERLAY_SOURCE_LABELS = {'retail-ssense':'SSENSE','retail-musinsa':'무신사','retail-29cm':'29CM','retail-wconcept':'W컨셉','retail-lyst':'Lyst','retail-farfetch':'Farfetch','retail-mytheresa':'Mytheresa','retail-netaporter':'Net-a-Porter','retail-mrporter':'MR PORTER','retail-kith':'Kith'};
 let catalog = null, overlay = null, trends = null, rankBoards = null, catwalk = null, catwalkShown = 0, catwalkPicked = new Set(), catwalkAnchor = '', catwalkShowsOpen = false, products = [], filtered = [], visible = [], selected = new Set(), today = kstToday(), brandCounts = new Map(), toastTimer, activeDetailId, groupCount = 0;
@@ -36,12 +36,100 @@ const recentFilteredViews=new Map();
 let recentProducts=null,catalogLoading=false;
 const gridMarkup=new WeakMap();
 let officialView=null;
+let visualApi=null,visualLoadPromise=null,visualReviewPromise=null,visualDataStatus='idle',visualRevision=0,visualConsensusCache=null,visualProductRegistration=null;
+const visualModelKey=p=>`${p.brand}|${variantGroupKey(p)}`;
+function syncVisualModelProducts(){
+  if(!visualApi)return;
+  if(visualProductRegistration?.products!==products||visualProductRegistration.revision!==visualRevision){
+    visualApi.useVisualModelProducts(products,{keyOf:visualModelKey});
+    const available=visualApi.visualModelDistribution(products,{keyOf:visualModelKey}).classifiedModels>0;
+    visualProductRegistration={products,revision:visualRevision,available};
+  }
+}
+function hasVerifiedVisualModels(){
+  syncVisualModelProducts();
+  return visualDataStatus==='ready'&&visualProductRegistration?.available===true;
+}
+function visualSilhouetteBadge(product){
+  const classification=visualApi?.visualClassification(product);
+  if(classification?.basis!=='model-design')return '';
+  return `<span class="visual-design-badge" title="동일 모델의 확인된 대표 이미지 기준" aria-label="사진 실루엣 · ${esc(classification.label)} · 동일 모델의 확인된 대표 이미지 기준">사진 실루엣 · ${esc(classification.label)} <span aria-hidden="true">ⓘ</span></span>`;
+}
+function visualModelCategories(rows){
+  const votes=new Map();
+  for(const p of rows){
+    const key=visualModelKey(p),category=visualApi?.visualClassification(p)?.category;
+    if(!votes.has(key))votes.set(key,new Set());
+    if(visualApi?.visualModelConflict?.(p)){votes.get(key).add('__conflict__');votes.get(key).add('__withheld__');}
+    else if(category)votes.get(key).add(category);
+  }
+  return new Map([...votes].map(([key,types])=>[key,types.size===1?[...types][0]:null]));
+}
+function visualConsensusScope(){
+  syncVisualModelProducts();
+  const source=state.source==='analysis'?'all':state.source;
+  const key=`${source}|${today}|${visualRevision}`;
+  if(visualConsensusCache?.products!==products||visualConsensusCache.key!==key){
+    // products already obey the existing gender and publication policies.
+    // Search/color/price narrowing must not hide another allowed model photo.
+    const rows=products.filter(p=>(isOverlay(p)?!!overlayReleaseState(p,today):releaseState(p,today)==='released')&&viewSourceMatches(p,source,today));
+    visualConsensusCache={products,key,rows,categories:visualModelCategories(rows)};
+  }
+  return visualConsensusCache;
+}
+function filterVisualProducts(rows,categories=visualModelCategories(rows)){
+  return state.silhouette==='all'||!hasVerifiedVisualModels()?rows:rows.filter(p=>categories.get(visualModelKey(p))===state.silhouette);
+}
+function visualModelRows(scopeRows,matchingRows){
+  if(state.silhouette==='all')return scopeRows;
+  const models=new Set(matchingRows.map(visualModelKey));
+  return scopeRows.filter(p=>models.has(visualModelKey(p)));
+}
+function renderVisualControls(){
+  const select=$('silhouette-filter'),help=$('silhouette-filter-help'),label=$('silhouette-filter-label');
+  if(!select)return;
+  const available=hasVerifiedVisualModels();
+  if(!available)state.silhouette='all';
+  select.disabled=!available;
+  if(label)label.hidden=!available;
+  select.innerHTML='<option value="all">모든 실루엣</option>'+(available?visualApi.VISUAL_CATEGORIES.map(row=>`<option value="${esc(row.id)}">${esc(row.label)}</option>`).join(''):'');
+  select.value=state.silhouette;
+  if(help){help.hidden=!available;help.textContent=available?'상품 사진의 형태 기준 · 공식 품목과 별개':'';}
+}
+function ensureVisualReviews(api){
+  if(visualReviewPromise)return visualReviewPromise;
+  visualReviewPromise=fetch('/api/visual-classifications',{method:'GET',cache:'no-store',credentials:'same-origin'})
+    .then(async response=>{
+      if(!response.ok)return;
+      api.useVisualClassificationReviews(await response.json());
+      visualRevision++;categoryRevision++;syncVisualModelProducts();renderVisualControls();render();
+    }).catch(()=>{});
+  return visualReviewPromise;
+}
+function ensureVisualData(){
+  if(visualLoadPromise)return visualLoadPromise;
+  visualDataStatus='loading';renderVisualControls();
+  visualLoadPromise=Promise.all([
+    import('./visual-classification.mjs'),
+    fetch('./data/visual-classifications.json',{cache:'no-cache'}).then(response=>{if(!response.ok)throw Error('Visual snapshot unavailable');return response.json();}),
+  ]).then(([api,snapshot])=>{
+    api.useVisualClassifications(snapshot);
+    visualApi=api;visualDataStatus='ready';visualRevision++;syncVisualModelProducts();
+    renderVisualControls();render();
+    return ensureVisualReviews(api);
+  }).catch(()=>{
+    visualDataStatus='unavailable';visualRevision++;
+    renderVisualControls();render();
+  });
+  return visualLoadPromise;
+}
 function viewSourceMatches(p,type,day){return type==='brand'&&officialView?.day===day&&officialView.matches.has(p.id)?officialView.matches.get(p.id):sourceMatches(p,type,day);}
 function groupKey(p){ return variantGroupKey(p); }
 function colorGroupOf(p){
   const key=groupKey(p);
   const published=v=>isOverlay(v)?!!overlayReleaseState(v,today):releaseState(v,today)==='released';
-  return (productGroups.get(key)||[]).filter(v=>published(v)&&viewSourceMatches(v,state.source,today));
+  const allowed=(productGroups.get(key)||[]).filter(v=>published(v)&&viewSourceMatches(v,state.source,today));
+  return state.silhouette==='all'?allowed:filterVisualProducts(allowed,visualConsensusScope().categories);
 }
 function activeOf(group){
   const chosen = activeVariant.get(groupKey(group[0]));
@@ -190,6 +278,8 @@ function applyPrepared(prepared){
  ({products,brandCounts,productGroups,keywordViews}=prepared);
  officialView=prepared.officialMatches?{day:prepared.preparedDay,matches:prepared.officialMatches,counts:prepared.officialBrandCounts}:null;
  adoptPreparedVariantCaches(productGroups,prepared.variantNames);
+ syncVisualModelProducts();
+ renderVisualControls();
  const ids=new Set(products.map(p=>p.id));
  selected=new Set([...selected].filter(id=>ids.has(id)));
  if($('detail-dialog').open&&!ids.has(activeDetailId))$('detail-dialog').close();
@@ -250,6 +340,7 @@ async function loadCatalog() {
     if(!products.length)notice.push('확인된 스니커즈 정보를 준비하고 있습니다.');
     $('catalog-notice').textContent = notice.join(' '); $('catalog-notice').className = 'notice'; $('catalog-notice').hidden = !notice.length;
     renderBrands(); renderKeywords(); render();
+    void ensureVisualData();
     if(manifest){catalogLoading=true;startCatalogWorker(manifest);}
     void dictionary.then(value=>{if(value?.entries){useModelCategories(value.entries,p=>`${p.brand}|${variantGroupKey(p)}`);categoryRevision++;if(state.source==='analysis')render();}});
     // The retail overlay and the trend board are 4 MB between them, more than
@@ -331,7 +422,7 @@ function renderKeywords() {
     }).join(''):'';
     $(target).querySelectorAll('.keyword-select').forEach(button=>button.addEventListener('click',()=>{
       const k=list[Number(button.dataset.keyword)];clearTimeout(searchTimer);
-      Object.assign(state,{search:'',brands:new Set(),brandGroup:'all',category:'all',source:'all',catwalkShow:'all',catwalkCollection:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',socialGroup:'',sort:'newest',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordViews.get(k.id)?.ids||keywordProductIds(k,products,today)});
+      Object.assign(state,{search:'',brands:new Set(),brandGroup:'all',category:'all',silhouette:'all',source:'all',catwalkShow:'all',catwalkCollection:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',socialGroup:'',sort:'newest',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordId:k.id,keywordLabel:k.label,keywordIds:keywordViews.get(k.id)?.ids||keywordProductIds(k,products,today)});
       syncFilterControls();renderBrands();renderKeywords();render();$('results').scrollIntoView({block:'start'});$('results').focus({preventScroll:true});
     }));
   }
@@ -404,8 +495,11 @@ const scopeState=()=>({...state,isFresh,isSaved,matchesSource:viewSourceMatches,
   source:state.source==='analysis'?'all':state.source});
 let analysisRowsCache=null;
 const analysisScope=()=>{
- const key=JSON.stringify([today,state.source,state.search,[...state.brands].sort(),state.brandGroup,state.category,state.release,state.sort,state.retailer,state.trendTerms,state.freshOnly,state.savedOnly,savedRevision]);
- if(analysisRowsCache?.products!==products||analysisRowsCache.key!==key||analysisRowsCache.keywordIds!==state.keywordIds)analysisRowsCache={products,key,keywordIds:state.keywordIds,rows:filterProducts(products,scopeState(),today)};
+ const key=JSON.stringify([today,state.source,state.search,[...state.brands].sort(),state.brandGroup,state.category,state.silhouette,visualRevision,state.release,state.sort,state.retailer,state.trendTerms,state.freshOnly,state.savedOnly,savedRevision]);
+ if(analysisRowsCache?.products!==products||analysisRowsCache.key!==key||analysisRowsCache.keywordIds!==state.keywordIds){
+  const baseRows=filterProducts(products,scopeState(),today);
+  analysisRowsCache={products,key,keywordIds:state.keywordIds,baseRows,rows:state.silhouette==='all'?baseRows:filterVisualProducts(baseRows,visualConsensusScope().categories)};
+ }
  return analysisRowsCache.rows;
 };
 
@@ -436,6 +530,24 @@ function movementMarkup(item){
   const amount=item.movement==='up'||item.movement==='down'?String(item.change||0):'';
   const title=item.previousRank?`지난 집계 ${item.previousRank}위`:move.label;
   return `<span class="rank-move ${esc(item.movement||'first')}" title="${esc(title)}">${esc(move.mark)}${amount?' '+esc(amount):''}</span>`;
+}
+function renderVisualPanel(rows){
+  const panel=$('panel-visual-silhouette');
+  if(!panel)return;
+  const body=panel.querySelector('.panel-body'),note=panel.querySelector('.panel-note'),coverage=$('visual-model-coverage');
+  panel.setAttribute('aria-busy','false');
+  panel.hidden=true;
+  body.innerHTML='';coverage.textContent='';note.textContent='';
+  if(visualDataStatus!=='ready')return;
+  const distribution=visualApi.visualModelDistribution(rows,{keyOf:p=>`${p.brand}|${variantGroupKey(p)}`});
+  if(!distribution.classifiedModels)return;
+  panel.hidden=false;
+  const {classifiedModels,totalModels,conflictedModels}=distribution;
+  const unclassified=Math.max(0,totalModels-classifiedModels-conflictedModels);
+  coverage.textContent=`전체 ${totalModels.toLocaleString()}개 모델 · 분류 ${classifiedModels.toLocaleString()}개 · 미분류 ${unclassified.toLocaleString()}개`;
+  body.innerHTML=distribution.rows.map(row=>`<div data-visual-category="${esc(row.id)}">${bar(row.name,row.count,classifiedModels)}</div>`).join('')
+    ||'';
+  note.textContent=`색상·SKU 중복을 제외한 모델 수 · 비율은 분류된 모델 기준${conflictedModels?` · 사진별 분류가 다른 ${conflictedModels.toLocaleString()}개 모델은 분포에서 제외`:''}`;
 }
 let renderedRankBoards=null,renderedAnalysis=null,categoryRevision=0;
 function renderRankBoards(){
@@ -815,13 +927,15 @@ function renderAnalysis(){
   if(walk)renderCatwalk();
   $('rank-boards').hidden=!on||!(rankBoards?.boards||[]).some(b=>b.items?.length);
   if(!on)return;
+  renderChips();
   void renderWeeklyInsights();
   renderRankBoards();
   const rows=analysisScope(),stamp=rows.map(p=>p.id).join('|');
-  if(renderedAnalysis?.products===products&&renderedAnalysis.stamp===stamp&&renderedAnalysis.revision===categoryRevision)return;
-  renderedAnalysis={products,stamp,revision:categoryRevision};
+  if(renderedAnalysis?.products===products&&renderedAnalysis.stamp===stamp&&renderedAnalysis.revision===categoryRevision&&renderedAnalysis.visualRevision===visualRevision)return;
+  renderedAnalysis={products,stamp,revision:categoryRevision,visualRevision};
   $('analysis-scope').textContent=`현재 필터 기준 ${rows.length.toLocaleString()}개 상품 · ${RATE_NOTE}`;
 
+  renderVisualPanel(visualModelRows(state.silhouette==='all'?analysisRowsCache.baseRows:visualConsensusScope().rows,rows));
   const category=categoryDistribution(rows);
   $('panel-category').hidden=!category.rows.length;
   document.querySelector('#panel-category .panel-body').innerHTML=
@@ -883,11 +997,12 @@ function render() {
     for(const id of ['retailer-tabs','sns-trends','source-note'])$(id).hidden=true;
     return;
   }
-  const filterKey=JSON.stringify([today,state.search,[...state.brands].sort(),state.brandGroup,state.category,state.source,state.release,state.sort,state.socialGroup,state.retailer,state.trendTerms,state.freshOnly,state.savedOnly,savedRevision]);
+  const filterKey=JSON.stringify([today,state.search,[...state.brands].sort(),state.brandGroup,state.category,state.silhouette,visualRevision,state.source,state.release,state.sort,state.socialGroup,state.retailer,state.trendTerms,state.freshOnly,state.savedOnly,savedRevision]);
   if(recentProducts!==products){recentFilteredViews.clear();recentProducts=products;}
   filteredViewCache=recentFilteredViews.get(filterKey)||filteredViewCache;
   if(filteredViewCache?.products!==products||filteredViewCache.key!==filterKey||filteredViewCache.keywordIds!==state.keywordIds){
     let rows=filterProducts(products,{...state,isFresh,isSaved,matchesSource:viewSourceMatches},today);
+    if(state.silhouette!=='all')rows=filterVisualProducts(rows,visualConsensusScope().categories);
     if(state.source==='sns'&&state.sort==='newest')rows=[...rows].sort((a,b)=>(b.snsTrendMatches||0)-(a.snsTrendMatches||0));
     filteredViewCache={products,key:filterKey,keywordIds:state.keywordIds,rows,groups:groupProductVariants(rows)};
     recentFilteredViews.set(filterKey,filteredViewCache);if(recentFilteredViews.size>12)recentFilteredViews.delete(recentFilteredViews.keys().next().value);
@@ -907,7 +1022,7 @@ function render() {
     const meta=over?`<span>${esc(overlayDateLabel(p))}</span>${p.priceLabel?`<span>${esc(p.priceLabel)}</span>`:''}`:`<span>${esc(releaseDateLabel(p))}</span>`;
     const link=over?(url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} ${esc(sourceLabelOf(p))}에서 보기">${esc(sourceLabelOf(p))} ↗</a>`:'')
                    :(url?`<a class="official-small" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} 공식 상품 보기">공식 상품 ↗</a>`:'');
-    return `<article class="product-card ${selected.has(p.id)?'selected':''}" data-id="${esc(p.id)}" data-brand="${esc(p.brand)}" data-group="${esc(groupKey(p))}"><div class="card-visual"><label class="card-checkbox"><input type="checkbox" data-select="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 선택" ${selected.has(p.id)?'checked':''}></label><button class="card-photo" data-photo="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 사진 JPG 저장" title="사진 JPG 저장">↓</button><button class="card-save ${isSaved(p)?'on':''}" data-save="${esc(p.id)}" aria-pressed="${isSaved(p)}" aria-label="${esc(p.name)} 저장"${isSaved(p)?' title="저장함에 있음"':''}>★</button><button class="card-open" data-detail="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 상세정보">${imageMarkup(p,i<4)}</button>${release==='upcoming'?'<span class="release-badge upcoming">발매 예정</span>':''}</div><div class="card-copy"><p class="card-brand">${brandLine}</p><button class="card-name" data-detail="${esc(p.id)}">${esc(variantGroupName(p))}</button><div class="card-meta">${meta}</div>${colorChipsMarkup(group,p.id)}</div><div class="card-footer">${link}<button class="rb-add-source" data-board-product="${esc(p.id)}">보드에 담기 ＋</button></div></article>`;
+    return `<article class="product-card ${selected.has(p.id)?'selected':''}" data-id="${esc(p.id)}" data-brand="${esc(p.brand)}" data-group="${esc(groupKey(p))}"><div class="card-visual"><label class="card-checkbox"><input type="checkbox" data-select="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 선택" ${selected.has(p.id)?'checked':''}></label><button class="card-photo" data-photo="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 사진 JPG 저장" title="사진 JPG 저장">↓</button><button class="card-save ${isSaved(p)?'on':''}" data-save="${esc(p.id)}" aria-pressed="${isSaved(p)}" aria-label="${esc(p.name)} 저장"${isSaved(p)?' title="저장함에 있음"':''}>★</button><button class="card-open" data-detail="${esc(p.id)}" aria-label="${esc(p.brand+' '+p.name)} 상세정보">${imageMarkup(p,i<4)}</button>${release==='upcoming'?'<span class="release-badge upcoming">발매 예정</span>':''}</div><div class="card-copy"><p class="card-brand">${brandLine}</p><button class="card-name" data-detail="${esc(p.id)}">${esc(variantGroupName(p))}</button><div class="card-meta">${meta}</div>${visualSilhouetteBadge(p)}${colorChipsMarkup(group,p.id)}</div><div class="card-footer">${link}<button class="rb-add-source" data-board-product="${esc(p.id)}">보드에 담기 ＋</button></div></article>`;
   });
   const grid=$('product-grid'),existing=new Map([...grid.querySelectorAll('.product-card')].map(card=>[card.dataset.group,card]));
   grid.querySelectorAll('.skeleton').forEach(node=>node.remove());
@@ -941,7 +1056,7 @@ function render() {
 }
 function renderSourceDescription() {
   if (state.source === 'all') {
-    const narrowed=state.brands.size||state.category!=='all'||state.search||state.release!=='all';
+    const narrowed=state.brands.size||state.category!=='all'||state.silhouette!=='all'||state.search||state.release!=='all';
     $('result-description').textContent=state.keywordLabel?`${state.keywordLabel} ${narrowed?'관련 상품 · 선택한 필터 적용':'전체 상품 · 선택한 브랜드 그룹'}`:'브랜드 공식 상품과 리테일·뉴스레터 목록입니다. LUX·SPORTS·CASUAL별로 확인할 수 있습니다.';
     return;
   }
@@ -1118,6 +1233,11 @@ function renderSourceNote(){
 }
 function renderChips() {
   $('active-filters').innerHTML = [...state.brands].map(name=>`<button class="filter-chip" data-remove-brand="${esc(name)}" aria-label="${esc(name)} 필터 해제">${esc(name)}<span aria-hidden="true">×</span></button>`).join('')+(state.keywordLabel?`<button class="filter-chip" id="remove-keyword" aria-label="키워드 필터 해제"># ${esc(state.keywordLabel)}<span aria-hidden="true">×</span></button>`:'')+(state.trendHashtag?`<button class="filter-chip" id="remove-trend" aria-label="SNS 트렌드 키워드 필터 해제"># ${esc(state.trendHashtag)}<span aria-hidden="true">×</span></button>`:'');
+  if(state.silhouette!=='all'){
+    const label=visualApi?.VISUAL_CATEGORIES.find(row=>row.id===state.silhouette)?.label||'';
+    $('active-filters').insertAdjacentHTML('beforeend',`<button type="button" class="filter-chip" id="remove-silhouette" aria-label="사진 실루엣 필터 해제">사진 실루엣 · ${esc(label)}<span aria-hidden="true">×</span></button>`);
+    $('remove-silhouette').addEventListener('click',()=>{state.silhouette='all';$('silhouette-filter').value='all';state.page=1;render();});
+  }
   $('remove-trend')?.addEventListener('click',()=>{state.trendHashtag='';state.trendTerms=null;state.page=1;render();});
   $('active-filters').querySelectorAll('[data-remove-brand]').forEach(b=>b.addEventListener('click',()=>{state.brands.delete(b.dataset.removeBrand);state.page=1;renderBrands();render();}));
   $('remove-keyword')?.addEventListener('click',()=>{state.keywordIds=null;state.keywordLabel='';state.keywordId='';state.page=1;renderKeywords();render();});
@@ -1170,7 +1290,7 @@ function overlayDetailMarkup(p,id,group){
     <p class="card-brand">${esc(p.brand)}${p.brandAsListed&&p.brandAsListed!==p.brand?` · ${esc(p.brandAsListed)}`:''} · ${esc(label)}</p>
     <h2 id="detail-title">${esc(variantGroupName(p))}</h2>
     ${p.fullName&&p.fullName!==p.name?`<p class="muted">${esc(p.fullName)}</p>`:''}
-    ${colorChipsMarkup(group,p.id)}
+    ${visualSilhouetteBadge(p)}${colorChipsMarkup(group,p.id)}
     <div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}에서 보기 ↗</a>`:''}<button class="secondary-button" data-board-product="${esc(id)}">보드에 담기 ＋</button><button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button></div>
     <dl class="detail-data">${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl>
     ${p.excerpt?`<h3>기사 요약</h3><p>${esc(p.excerpt)}</p>`:''}
@@ -1203,7 +1323,7 @@ function openDetail(id) {
     if(p.arrivalEvidence?.verified&&['new-arrivals-listing','new-badge'].includes(p.arrivalEvidence.kind)&&safeUrl(p.arrivalEvidence.url))signals.push({type:'brand',url:p.arrivalEvidence.url,title:'공식 신상품 목록',checkedAt:p.arrivalEvidence.verifiedAt});
   }
   const data=[...(p.arrivalEvidence?.verified===true&&safeUrl(p.arrivalEvidence.url)?[[p.arrivalEvidence.kind==='catalogue-listing'?'목록 근거':'신상품 근거',`<a href="${esc(safeUrl(p.arrivalEvidence.url))}" target="_blank" rel="noopener noreferrer">${p.arrivalEvidence.kind==='catalogue-listing'?'공식 상품 목록 ↗':'공식 New·New Arrivals ↗'}</a> · ${esc(dateText(p.arrivalEvidence.verifiedAt,true))} 확인`]]:[]),...(p.firstPublishedAt?[['사이트 최초 게시',esc(dateText(p.firstPublishedAt,true))]]:[]),...(p.releaseDate?[[p.brand==='FILA China'&&p.dateEvidence?.kind==='official-sale-start'?"공식 판매 개시":"출시일",`${esc(dateText(p.releaseDate))}${releaseState(p,today)==='upcoming'?' (예정)':''}${p.dateEvidence?.region?` · ${esc(p.dateEvidence.region)}`:''}${evidence?`<br><a href="${esc(evidence)}" target="_blank" rel="noopener noreferrer">${p.brand==='FILA China'&&p.dateEvidence?.kind==='official-sale-start'?'판매 개시 근거':'출시일 근거'} ↗</a>`:''}`]]:[]),['품목',esc(productTypeNames[p.productType||p.category]||p.productType||p.category||'')],[p.manufacturerStyle?'제품 코드':p.styleType==='official-product-id'?'상품 ID':'스타일 코드',esc(p.manufacturerStyle||p.style||'')],['컬러웨이',esc(p.colorway||(p.colors||[]).map(c=>typeof c==='string'?c:c.name).filter(Boolean).join(', ')||'')],['소재',esc(p.material||'')],['가격',esc(p.priceLabel||'')],['마지막 검증',esc(dateText(p.lastVerifiedAt||p.verifiedAt||p.dateEvidence?.verifiedAt,true))]];
-  $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2>${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button class="secondary-button" data-board-product="${esc(id)}">보드에 담기 ＋</button><button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button><button id="detail-save" class="secondary-button" aria-pressed="${isSaved(p)}">${isSaved(p)?'★ 저장됨':'☆ 저장'}</button><button id="detail-photo" class="secondary-button">사진 JPG 저장 ↓</button></div><div class="memo-box"><label for="detail-memo">메모</label><textarea id="detail-memo" rows="2" placeholder="${isSaved(p)?'이 상품에 대한 메모를 남겨 두세요':'저장하면 메모를 남길 수 있습니다'}" ${isSaved(p)?'':'disabled'}>${esc(saved[id]?.memo||'')}</textarea></div><dl class="detail-data">${data.filter(([,value])=>value&&!/미확인|미공개|공식 상품에서 확인/.test(value)).map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl>${reasons.length?`<h3>기획 참고 요소</h3><ul class="reasons">${reasons.map(reason=>`<li>${esc(reason)}</li>`).join('')}</ul>`:''}${signals.length?'<h3>출처와 검증 근거</h3>'+signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):''}`;
+  $('detail-content').innerHTML=`<div class="detail-visual">${imageMarkup(p,true,true)}</div><p class="card-brand">${esc(p.brand)}</p><h2 id="detail-title">${esc(variantGroupName(p))}</h2>${visualSilhouetteBadge(p)}${colorChipsMarkup(group,p.id)}<div class="detail-actions">${url?`<a class="primary-button" href="${esc(url)}" target="_blank" rel="noopener noreferrer">공식 상품 보기 ↗</a>`:''}<button class="secondary-button" data-board-product="${esc(id)}">보드에 담기 ＋</button><button id="detail-select" class="secondary-button" aria-pressed="${selected.has(id)}">${selected.has(id)?'선택 해제':'상품 선택'}</button><button id="detail-save" class="secondary-button" aria-pressed="${isSaved(p)}">${isSaved(p)?'★ 저장됨':'☆ 저장'}</button><button id="detail-photo" class="secondary-button">사진 JPG 저장 ↓</button></div><div class="memo-box"><label for="detail-memo">메모</label><textarea id="detail-memo" rows="2" placeholder="${isSaved(p)?'이 상품에 대한 메모를 남겨 두세요':'저장하면 메모를 남길 수 있습니다'}" ${isSaved(p)?'':'disabled'}>${esc(saved[id]?.memo||'')}</textarea></div><dl class="detail-data">${data.filter(([,value])=>value&&!/미확인|미공개|공식 상품에서 확인/.test(value)).map(([label,value])=>`<dt>${label}</dt><dd>${value}</dd>`).join('')}</dl>${reasons.length?`<h3>기획 참고 요소</h3><ul class="reasons">${reasons.map(reason=>`<li>${esc(reason)}</li>`).join('')}</ul>`:''}${signals.length?'<h3>출처와 검증 근거</h3>'+signals.map(s=>`<div class="evidence"><span class="source-badge">${esc(sourceNames[s.type]||s.type)}${s.sponsored?' · 광고/협찬':''}</span><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.account||'원문 확인')} ↗</a><p>${s.account?esc(s.account)+' · ':''}${s.rank?'순위 '+esc(s.rank)+' · ':''}${s.country?esc(s.country)+' · ':''}${s.rankingCategory||s.category?esc(s.rankingCategory||s.category)+' · ':''}${s.publishedAt?(s.type==='ecommerce'?(s.dateBasis==='platform-updated-at'?'순위 집계일 ':'순위 확인일 '):'발행 ')+esc(dateText(s.publishedAt))+' · ':''}확인 ${esc(dateText(s.checkedAt))}</p>${s.rankingPeriod||s.rankingDefinition?`<p class="ranking-context">${s.rankingPeriod?'집계 기간: '+esc(s.rankingPeriod)+' · ':''}${s.rankingDefinition?esc(s.rankingDefinition):''}</p>`:''}</div>`).join(''):''}`;
   $('detail-save')?.addEventListener('click',()=>{const p=products.find(x=>x.id===id);toggleSaved(id,p?variantGroupName(p):'');openDetail(id);});
   $('detail-memo')?.addEventListener('input',e=>setMemo(id,e.target.value));
   bindImageErrors($('detail-content'));$('detail-select').addEventListener('click',()=>toggleSelection(id,!selected.has(id)));$('detail-photo')?.addEventListener('click',()=>downloadPhotos([p]));
@@ -1211,13 +1331,13 @@ function openDetail(id) {
   if(!$('detail-dialog').open)$('detail-dialog').showModal();
 }
 function syncFilterControls() {
-  $('search').value=state.search;$('brand-search').value='';$('category-filter').value=state.category;$('release-filter').value=state.release;$('sort').value=state.sort;
+  $('search').value=state.search;$('brand-search').value='';$('category-filter').value=state.category;$('silhouette-filter').value=state.silhouette;$('release-filter').value=state.release;$('sort').value=state.sort;
   document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b.dataset.source===state.source);b.setAttribute('aria-pressed',String(b.dataset.source===state.source));});
   renderBrandGroupTabs();
 }
 function resetFilters() {
   clearTimeout(searchTimer);
-  Object.assign(state,{search:'',brands:new Set(),brandGroup:'all',category:'all',source:'all',catwalkShow:'all',catwalkCollection:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
+  Object.assign(state,{search:'',brands:new Set(),brandGroup:'all',category:'all',silhouette:'all',source:'all',catwalkShow:'all',catwalkCollection:'all',catwalkSeason:'',catwalkCity:'',catwalkFind:'',release:'released',sort:'newest',socialGroup:'',retailer:'all',trendTerms:null,trendHashtag:'',page:1,keywordIds:null,keywordLabel:'',keywordId:''});
   syncFilterControls();renderBrands();renderKeywords();render();
 }
 function openExport() {
@@ -1254,7 +1374,7 @@ $('dl-analysis-xlsx')?.addEventListener('click',()=>{
 });
 document.querySelectorAll('[data-dl]').forEach(button=>button.addEventListener('click',()=>
   downloadText(`shoes-${button.dataset.dl}-${today}.csv`,analysisCsv(analysisScope(),button.dataset.dl))));
-for(const [id,key] of [['category-filter','category'],['release-filter','release'],['sort','sort']])$(id).addEventListener('change',()=>{state[key]=$(id).value;state.page=1;render();});
+for(const [id,key] of [['category-filter','category'],['silhouette-filter','silhouette'],['release-filter','release'],['sort','sort']])$(id).addEventListener('change',()=>{state[key]=$(id).value;state.page=1;render();});
 document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;state.page=1;if(state.source!=='retail')state.retailer='all';void ensureSourceData();if(state.source!=='catwalk'){state.catwalkCollection='all';state.catwalkShow='all';state.catwalkSeason='';state.catwalkCity='';state.catwalkFind='';catwalkShown=0;catwalkPicked.clear();catwalkAnchor='';$('catwalk-selection-bar').hidden=true;}if(state.source!=='sns'){state.trendHashtag='';state.trendTerms=null;}state.socialGroup=state.source==='sns'?(currentSocialGroups()[0]?.key||''):'';if(state.socialGroup)state.sort='social';else if(state.sort==='social')state.sort='newest';if(state.source==='brand'){state.release='released';$('release-filter').value='released';}document.querySelectorAll('[data-source]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});renderBrands();render();}));
 $('social-group').addEventListener('change',()=>{state.socialGroup=$('social-group').value;state.sort=state.socialGroup?'social':'newest';state.page=1;render();});
 $('reset-filters').addEventListener('click',resetFilters);$('empty-reset').addEventListener('click',()=> $('empty-reset').dataset.retry?loadCatalog():resetFilters());

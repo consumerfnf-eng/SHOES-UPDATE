@@ -30,3 +30,17 @@ CREATE TABLE IF NOT EXISTS admin_batch_jobs (
   batch_id TEXT NOT NULL, job_id TEXT NOT NULL, brand TEXT NOT NULL,
   PRIMARY KEY(batch_id, brand)
 );
+-- Physical photo hashes retain owner decisions across model refreshes.
+CREATE TABLE IF NOT EXISTS visual_classification_candidates (
+ image_hash TEXT PRIMARY KEY, model_version TEXT NOT NULL,
+ data TEXT NOT NULL CHECK(json_valid(data)), updated_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS visual_classification_reviews (
+ image_hash TEXT PRIMARY KEY, category TEXT,
+ status TEXT NOT NULL CHECK(status IN ('approved','excluded')),
+ reviewed_at TEXT NOT NULL, revision INTEGER NOT NULL DEFAULT 1 CHECK(revision>0),
+ CHECK((status='excluded' AND category IS NULL) OR (status='approved' AND category IS NOT NULL AND category IN ('low-profile','chunky','retro-tech-runner','ballet-mary-jane','mule-slipper','court-other','boot','sandal','performance')))
+);
+CREATE TABLE IF NOT EXISTS visual_classification_metadata (
+ id INTEGER PRIMARY KEY CHECK(id=1),data TEXT NOT NULL CHECK(json_valid(data)),updated_at TEXT NOT NULL
+);

@@ -1,0 +1,8 @@
+# Optional offline operator pipeline. Never loaded in visitors' browsers/Workers.
+# Matches the owner's existing trained scikit-learn artifact.
+torch==2.15.0
+open_clip_torch==3.3.0
+scikit-learn==1.8.0
+numpy==2.4.4
+pandas==3.0.2
+Pillow==12.3.0

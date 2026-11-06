@@ -36,3 +36,45 @@ $('password-form').addEventListener('submit',async event=>{
 });
 setInterval(()=>{if(!document.hidden&&(data?.activeJobs||data?.jobs)?.some(j=>['queued','running'].includes(j.status)))void refresh();},30000);
 void refresh();
+
+const visualCategories=[['low-profile','로우 프로파일'],['chunky','청키'],['retro-tech-runner','레트로 테크 러너'],['ballet-mary-jane','발레 · 메리제인'],['mule-slipper','뮬 · 슬리퍼'],['court-other','코트 · 기타'],['boot','부츠'],['sandal','샌들'],['performance','퍼포먼스']];
+const visualLabel=id=>visualCategories.find(c=>c[0]===id)?.[1]||id;
+const visualStatus={auto:'자동 분류','review-needed':'검수 필요',approved:'관리자 승인',excluded:'제외'};
+let visualData=null,visualPage=1,visualLoading=false,visualSaving=false;
+function renderVisual(){
+ const d=visualData;if(!d)return;
+ $('visual-model').textContent=d.model?`모델 ${d.model.version} · ${d.model.encoder} · 검증 ${d.model.validated?'완료':'미완료'} · 동기화 ${date(d.updatedAt)} · 모델 점수는 정확도가 아닙니다. 사진 검수 기준 표본과의 일치율과 구분해 해석해 주세요.`:'동기화된 모델이 없습니다.';
+ $('visual-stats').textContent=Object.entries(d.stats).map(([key,value])=>`${visualStatus[key]||key} ${count(value)}건`).join(' · ');
+ $('visual-page').textContent=`${d.page} / ${Math.max(1,Math.ceil(d.total/20))} 페이지 · 필터 결과 ${count(d.total)}건`;
+ $('visual-prev').disabled=d.page<=1;$('visual-next').disabled=d.page*20>=d.total;
+ $('visual-cards').innerHTML=d.records.map((r,i)=>{
+  const chosen=r.review?.category||r.category,products=r.products||[],name=products.map(p=>`${p.brand} · ${p.name}`).join(' / ');
+  return `<article class="visual-card"><img src="/api/admin/visual-image/${esc(r.imageHash)}" alt="${esc(name)}" loading="lazy" decoding="async" width="320" height="220"><div><h3>${esc(products[0]?.brand||'사진 검수')}</h3><p class="visual-product-name">${esc(name)}</p><p><span class="tag">${esc(visualStatus[r.review?.status||r.status])}</span></p><p class="hint">모델 제안: ${esc(visualLabel(r.category))} · 모델 점수 ${(r.confidence*100).toFixed(1)}% · 점수 차이 ${(r.margin*100).toFixed(1)}% (정확도와 다름)</p><p class="hint">다른 후보 점수: ${r.alternatives.map(a=>`${esc(visualLabel(a.category))} ${(a.score*100).toFixed(1)}%`).join(' · ')||'없음'}</p><label for="visual-category-${i}">승인할 분류</label><select id="visual-category-${i}">${visualCategories.map(([id,label])=>`<option value="${id}" ${id===chosen?'selected':''}>${esc(label)}</option>`).join('')}</select><p class="hint">${r.review?`관리자 검수 ${esc(date(r.review.reviewedAt))} · revision ${r.revision}`:'관리자 검수 전'}</p><div class="visual-actions"><button data-visual-index="${i}" data-visual-action="approved" type="button">분류 승인</button><button data-visual-index="${i}" data-visual-action="excluded" type="button">사진 제외</button></div></div></article>`;
+ }).join('');
+}
+async function loadVisual(){
+ if(visualLoading||visualSaving)return;visualLoading=true;$('visual-refresh').disabled=true;$('visual-brand').disabled=true;$('visual-status').disabled=true;
+ $('visual-prev').disabled=true;$('visual-next').disabled=true;$('visual-cards').replaceChildren();$('visual-message').textContent='사진 검수 목록을 불러오는 중';
+ try{
+  if(!csrf){const session=await api('session');csrf=session.csrf;}
+  const query=new URLSearchParams({page:String(visualPage),brand:$('visual-brand').value,status:$('visual-status').value});
+  visualData=await api('visual-classifications?'+query);renderVisual();$('visual-message').textContent=visualData.records.length?'한 페이지에 사진 20건씩 표시합니다.':'조건에 맞는 사진이 없습니다.';
+  const brands=new Set([...$('visual-brand').options].map(o=>o.value));
+  for(const brand of (data?.brands||[]).map(b=>b.brand).concat(visualData.records.flatMap(r=>r.products.map(p=>p.brand))).sort())if(!brands.has(brand)){const option=document.createElement('option');option.value=brand;option.textContent=brand;$('visual-brand').append(option);brands.add(brand);}
+ }catch(error){$('visual-message').textContent=error.message;}finally{visualLoading=false;$('visual-refresh').disabled=false;$('visual-brand').disabled=false;$('visual-status').disabled=false;}
+}
+$('visual-panel').addEventListener('toggle',()=>{if($('visual-panel').open&&!visualData)void loadVisual();});
+for(const id of ['visual-brand','visual-status'])$(id).addEventListener('change',()=>{visualPage=1;void loadVisual();});
+$('visual-refresh').addEventListener('click',()=>void loadVisual());
+$('visual-prev').addEventListener('click',()=>{visualPage--;void loadVisual();});
+$('visual-next').addEventListener('click',()=>{visualPage++;void loadVisual();});
+$('visual-cards').addEventListener('click',async event=>{
+ const button=event.target.closest('[data-visual-action]');if(!button||visualSaving||visualLoading)return;
+ const index=Number(button.dataset.visualIndex),r=visualData.records[index];if(!r)return;
+ const status=button.dataset.visualAction,category=status==='approved'?$('visual-category-'+index).value:null;
+ visualSaving=true;for(const control of $('visual-panel').querySelectorAll('button,select'))control.disabled=true;
+ try{await api('visual-classifications/review',{method:'POST',body:JSON.stringify({imageHash:r.imageHash,category,status,expectedModelVersion:r.modelVersion,expectedRevision:r.revision})});$('visual-message').textContent='검수 결과를 저장했습니다. 직원 화면을 다시 불러오면 반영됩니다.';}
+ catch(error){$('visual-message').textContent=error.message;}
+ finally{visualSaving=false;for(const control of $('visual-panel').querySelectorAll('button,select'))control.disabled=false;}
+ const message=$('visual-message').textContent;await loadVisual();$('visual-message').textContent=message;
+});

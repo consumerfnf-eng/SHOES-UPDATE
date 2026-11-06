@@ -413,3 +413,18 @@ body,body *,body *::before,body *::after{font-family:Pretendard,sans-serif!impor
 
 .rb-archived-project .rb-permanent-delete{color:#a33c36;background:#fff6f4;border-color:#e7c9c5}
 .rb-preview-sheet{position:relative;line-height:0}.rb-preview-sheet canvas{display:block}.rb-preview-slots{position:absolute;inset:0;pointer-events:none}.rb-preview-slot{position:absolute;pointer-events:auto;cursor:grab;border:2px solid transparent;border-radius:5px;padding:0;background:transparent}.rb-preview-slot span{position:absolute;bottom:6px;left:6px;font-size:11px;line-height:1.4;padding:4px 7px;border-radius:4px;color:white;background:#294155dd;opacity:0}.rb-preview-slot:hover,.rb-preview-slot:focus-visible{border-color:#74a994}.rb-preview-slot:hover span,.rb-preview-slot:focus-visible span{opacity:1}.rb-preview-slot.dragging{opacity:.4;cursor:grabbing}.rb-preview-slot.drop-target{border-color:#397f6d;background:#397f6d22}
+
+/* Photo silhouettes are a separate, optional view over published products. */
+.visual-filter-label{min-width:150px}.visual-filter-label select:disabled{color:#67758a;background:#f4f6f9;cursor:wait}
+.visual-filter-help{font-size:12px;line-height:1.65;color:#52647b;margin:8px 0 0;max-width:72ch}
+.visual-silhouette-panel{padding:22px 24px}.visual-silhouette-panel header{align-items:flex-start;margin-bottom:10px}
+.visual-silhouette-panel h3{font-size:17px;color:#263b53;line-height:1.5}.visual-eyebrow{margin:0 0 5px;font-size:11px;letter-spacing:1.2px;color:#526b87}
+.visual-basis{flex:none;font-size:12px;line-height:1.5;border:1px solid #d8e3f0;border-radius:20px;padding:4px 10px;color:#345c89;background:#f1f6fd}
+.visual-method,.visual-empty{font-size:14px;line-height:1.8;color:#4b5e75;margin:0 0 16px}.visual-model-coverage{font-size:13px;line-height:1.7;color:#34516f;margin:0 0 18px;font-variant-numeric:tabular-nums}
+.visual-silhouette-panel .dist-row{grid-template-columns:minmax(140px,190px) minmax(0,1fr) 90px;gap:16px;margin-bottom:14px}
+.visual-silhouette-panel .dist-label,.visual-silhouette-panel .dist-value{font-size:14px;line-height:1.5;color:#354b64}
+.visual-silhouette-panel .dist-value small{font-size:12px;color:#52647b}.visual-silhouette-panel .dist-track{height:10px}
+.visual-silhouette-panel .panel-note{font-size:12px;color:#52647b;line-height:1.8;margin-top:18px}
+@media(max-width:640px){.visual-filter-label{flex:1 1 150px!important}.filters .visual-filter-label{font-size:12px}.filters #silhouette-filter{font-size:13px;min-height:42px}.visual-filter-help{font-size:12px}.visual-silhouette-panel{padding:18px 15px}.visual-silhouette-panel .dist-row{grid-template-columns:minmax(100px,122px) minmax(0,1fr) 64px;gap:10px}.visual-silhouette-panel .dist-label,.visual-silhouette-panel .dist-value{font-size:13px}.visual-silhouette-panel .dist-value small{font-size:11px}.visual-method,.visual-empty{font-size:13px}}
+
+.visual-design-badge{display:inline-flex;align-items:center;gap:4px;max-width:100%;font-size:11px;line-height:1.6;color:#46617b;background:#f1f5f9;border:1px solid #dce5ee;border-radius:7px;padding:3px 7px;margin:9px 0 3px;overflow-wrap:anywhere}.visual-design-badge>span{flex:none;color:#526b83}.detail-dialog .visual-design-badge{font-size:12px;margin:10px 0}
