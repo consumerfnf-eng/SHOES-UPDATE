@@ -101,7 +101,9 @@ function ensureVisualReviews(api){
   visualReviewPromise=fetch('/api/visual-classifications',{method:'GET',cache:'no-store',credentials:'same-origin'})
     .then(async response=>{
       if(!response.ok)return;
-      api.useVisualClassificationReviews(await response.json());
+      const overlay=await response.json();
+      if(overlay.automatic)api.useVisualClassifications(overlay.automatic);
+      api.useVisualClassificationReviews(overlay);
       visualRevision++;categoryRevision++;syncVisualModelProducts();renderVisualControls();render();
     }).catch(()=>{});
   return visualReviewPromise;

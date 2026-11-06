@@ -33,8 +33,8 @@ test('owner review UI: collapsed loading, 20 lazy images, safe text, filtering, 
   await route.fulfill({status:response.status,headers:Object.fromEntries(response.headers),body:Buffer.from(await response.arrayBuffer())});
  });
  await page.goto(origin+'/admin/');await page.locator('#message').filter({hasText:'관리자 전용 인증'}).waitFor();assert.equal(queueRequests,0);assert.equal(await page.locator('#visual-panel').getAttribute('open'),null);
- await page.locator('#visual-panel>summary').click();await page.locator('.visual-card').nth(19).waitFor();assert.equal(await page.locator('.visual-card').count(),20);assert.equal(await page.locator('.visual-card img[loading=lazy]').count(),20);
- assert.equal(await page.locator('.visual-card select option').first().count(),1);assert.equal(await page.locator('.visual-card select').first().locator('option').count(),9);
+ await page.locator('#visual-panel>summary').click();await page.locator('[data-visual-batch="all"]').click();await page.locator('.visual-card').nth(19).waitFor();assert.equal(await page.locator('.visual-card').count(),20);assert.equal(await page.locator('.visual-card img[loading=lazy]').count(),20);
+ assert.equal(await page.locator('.visual-card select option').first().count(),1);assert.equal(await page.locator('.visual-card select').first().locator('option').count(),10);
  assert((await page.locator('.visual-card').first().innerText()).includes('<img src=x'));assert.equal(await page.evaluate(()=>window.injected),undefined);
  await page.locator('#visual-next').click();await page.waitForFunction(()=>document.querySelectorAll('.visual-card').length===5);
  await page.locator('#visual-brand').selectOption('Nike');await page.waitForFunction(()=>document.querySelectorAll('.visual-card').length===13);

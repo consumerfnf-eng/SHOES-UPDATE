@@ -44,3 +44,17 @@ CREATE TABLE IF NOT EXISTS visual_classification_reviews (
 CREATE TABLE IF NOT EXISTS visual_classification_metadata (
  id INTEGER PRIMARY KEY CHECK(id=1),data TEXT NOT NULL CHECK(json_valid(data)),updated_at TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS visual_review_batches (
+ id TEXT PRIMARY KEY, data TEXT NOT NULL CHECK(json_valid(data)), created_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS visual_review_batch_members (
+ batch_id TEXT NOT NULL, image_hash TEXT NOT NULL,
+ role TEXT NOT NULL CHECK(role IN ('train','calibration','test')), position INTEGER NOT NULL,
+ PRIMARY KEY(batch_id,image_hash)
+);
+CREATE TABLE IF NOT EXISTS visual_training_jobs (
+ id TEXT PRIMARY KEY, batch_id TEXT NOT NULL UNIQUE,
+ status TEXT NOT NULL CHECK(status IN ('queued','running','completed','held','failed')),
+ requested_at TEXT NOT NULL, started_at TEXT, finished_at TEXT,
+ result TEXT CHECK(result IS NULL OR json_valid(result))
+);

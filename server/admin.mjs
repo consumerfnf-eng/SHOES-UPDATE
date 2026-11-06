@@ -1,7 +1,7 @@
 import {SITE_BRAND_GROUPS,isSiteBrandAllowed} from '../public/assets/site-brand-policy.mjs';
 import {checkPassword,hashPassword,passwordHashFor,equalSecret,randomToken,sha256,sessionCookie,sessionFor,sameOrigin,loginRateAllowed,SESSION_SECONDS} from './admin-auth.mjs';
 import {monitoringSnapshot,enqueueBulkRecheck,recentBatch} from './admin-monitor.mjs';
-import {visualQueue,reviewVisualCandidate,visualImage} from './visual-classifications.mjs';
+import {visualQueue,reviewVisualCandidate,visualImage,visualBatchProgress,requestVisualTraining,VisualReviewError} from './visual-classifications.mjs';
 const brands=new Set(SITE_BRAND_GROUPS.flatMap(g=>g.priority));
 const headers={
  'Cache-Control':'private, no-store, max-age=0','X-Content-Type-Options':'nosniff',
@@ -64,8 +64,14 @@ export async function adminRequest(context){
   }else if(!['GET','HEAD'].includes(request.method))return json({error:'허용하지 않는 요청입니다.'},405);
   if(path==='/api/admin/session'&&request.method==='GET')return json({csrf:session.csrf,expires:session.expires});
   if(path.startsWith('/api/admin/visual-image/')&&['GET','HEAD'].includes(request.method))return await visualImage(context,path.slice('/api/admin/visual-image/'.length),headers);
-  if(path==='/api/admin/visual-classifications'||path==='/api/admin/visual-classifications/review'){
+  if(['/api/admin/visual-classifications','/api/admin/visual-classifications/review','/api/admin/visual-classifications/batch','/api/admin/visual-classifications/train'].includes(path)){
    try{
+    if(path==='/api/admin/visual-classifications/batch')return request.method==='GET'?json({batch:await visualBatchProgress(env.ADMIN_DB,url.searchParams.get('batchId')??url.searchParams.get('batch')??'priority')}):json({error:'허용하지 않는 요청입니다.'},405);
+    if(path==='/api/admin/visual-classifications/train'){
+     if(request.method!=='POST')return json({error:'허용하지 않는 요청입니다.'},405);
+     let input;try{input=await body(request);}catch{return json({error:'학습 요청 형식과 크기를 확인해 주세요.'},400);}
+     const result=await requestVisualTraining(env.ADMIN_DB,input);return json({ok:true,...result},result.created||result.retried?202:200);
+    }
     if(request.method==='GET'&&path==='/api/admin/visual-classifications')return json(await visualQueue(env.ADMIN_DB,url));
     if(request.method==='POST'){
      let input;try{input=await body(request);}catch{return json({error:'검수 요청 형식과 크기를 확인해 주세요.'},400);}
@@ -73,7 +79,7 @@ export async function adminRequest(context){
      return review?json({ok:true,review}):json({error:'모델 또는 검수 결과가 변경되었습니다. 목록을 새로고침해 주세요.'},409);
     }
     return json({error:'허용하지 않는 요청입니다.'},405);
-   }catch(error){if(error instanceof TypeError)return json({error:'분류·필터·검수 입력을 확인해 주세요.'},400);throw error;}
+   }catch(error){if(error instanceof VisualReviewError)return json({error:error.message},error.status);if(error instanceof TypeError)return json({error:'분류·필터·검수 입력을 확인해 주세요.'},400);throw error;}
   }
   if(path==='/api/admin/logout'&&request.method==='POST'){
    await env.ADMIN_DB.prepare('DELETE FROM admin_sessions WHERE token_hash = ?').bind(session.token_hash).run();

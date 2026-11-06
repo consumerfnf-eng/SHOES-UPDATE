@@ -164,6 +164,18 @@ test('protected owner overlay is applied after static registration and refreshes
   await h.ui.ensureVisualData();assert.equal(h.requests.filter(r=>r.url==='/api/visual-classifications').length,1);
 });
 
+test('qualified background model activates through the protected overlay before owner decisions',async()=>{
+  const automatic=snapshot(),events=[];
+  const reviews={schemaVersion:1,records:[],automatic};
+  const api={...visualModule,
+    useVisualClassifications(value){events.push(value===automatic?'automatic':'static');return visualModule.useVisualClassifications(value);},
+    useVisualClassificationReviews(value){events.push('owner');assert.equal(value,reviews);},
+  };
+  const h=uiHarness({payload:{...snapshot(),model:{...snapshot().model,validated:false},records:[]},api,reviews,reviewsStatus:200});
+  await h.ui.ensureVisualData();assert.deepEqual(events,['static','automatic','owner']);
+  h.ui.state.silhouette='chunky';assert.equal(h.ui.filterVisualProducts(rows()).length,1);
+});
+
 test('missing/unavailable or rejected owner overlay quietly retains the accepted static snapshot',async()=>{
   for(const status of [401,404,503]){
     const h=uiHarness({reviewsStatus:status});await h.ui.ensureVisualData();

@@ -8,7 +8,12 @@ for(const rows of models.values()){
  const options=[...rows].sort((a,b)=>(reviewed.get(b.imageHash)?1:0)-(reviewed.get(a.imageHash)?1:0)||(reviewed.has(a.imageHash)&&!reviewed.get(a.imageHash)?1:0)-(reviewed.has(b.imageHash)&&!reviewed.get(b.imageHash)?1:0)||a.imageHash.localeCompare(b.imageHash));
  selected.set(options[0].imageHash,options[0]);
 }
+// Keep owner-review photos addressable after candidate refresh, including
+// a reviewed angle that differs from the stable model representative.
+const priority=await read('.secrets/clip/priority-review.json').catch(()=>null);
+const currentByHash=new Map(all.images.map(r=>[r.imageHash,r]));
+for(const row of priority?.images||[])if(currentByHash.has(row.imageHash))selected.set(row.imageHash,currentByHash.get(row.imageHash));
 const images=[...selected.values()].sort((a,b)=>a.imageHash.localeCompare(b.imageHash));
-const manifest={...all,catalogImages:all.images.length,totalModels:models.size,selection:'One stable representative photo per existing verified design group; colour variants share the design label, no product regrouping.',images};
+const manifest={...all,catalogImages:all.images.length,totalModels:models.size,selection:'One stable representative per existing design, plus preserved owner-review photos; extra review angles are not new models.',images};
 await fs.writeFile('.secrets/clip/model-manifest.json',JSON.stringify(manifest));
 console.log(JSON.stringify({catalogImages:all.images.length,models:models.size,representatives:images.length}));
