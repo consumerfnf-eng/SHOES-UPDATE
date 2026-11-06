@@ -84,3 +84,8 @@ test('reviewed reference labels override malformed legacy catalog color text, in
  assert.equal(proposalEntrySource({...reference,color:'White'},product).color,'White');
  const legacy={...reference};delete legacy.color;assert.equal(proposalEntrySource(legacy,{colorway:'Black'}).color,'Black');
 });
+
+test('WGSN feed curation is labelled separately from a photographed runway collection',()=>{
+ const label=proposalPhotoCaption({credit:'Source · WGSN Fashion Feed',sourceSeason:'WGSN 27SS 피드 분류',seasonRelation:'curated-season'},'28SS');
+ assert.match(label,/WGSN 27SS 피드 분류/);assert(!/동일 시즌 출처 사진|이전 시즌 사진/.test(label));
+});

@@ -114,10 +114,12 @@ def main():
     result['frame']=frame;result['cropMode']='frame'
    if r['kind']=='show':
     result['sourceSeason']=shows[r['id']]['season'];result['url']=shows[r['id']].get('sourceFeedUrl') or shows[r['id']].get('originalUrl') or shows[r['id']].get('sourceUrl')
+    if shows[r['id']].get('collection')=='fashion-feed':result['sourceSeason']='WGSN 27SS 피드 분류'
    result['quality']={'width':result['width'],'height':result['height'],'rendition':'출처의 큰 원본' if upgraded else '보유 원본'}
    result['matchEvidence']={'photoRole':r.get('roleLabel','착용 비례와 분위기'),'review':'시각 검수 완료' if reviewed else '후보'}
    if hero:
     result['frame']={'x':0,'y':0,'width':1,'height':1};result['seasonRelation']='same-season' if idea['season']=='27SS' else 'earlier-season'
+    if r.get('collection')=='fashion-feed':result['seasonRelation']='curated-season'
    if audit:
     notes=audit.get('notes',{});result['note']=r.get('reviewedNote') or notes.get(r['key'],r.get('note',''))
    result['note']=caption(result.get('note'),r.get('roleLabel','착용 비례와 분위기')+' 참고')

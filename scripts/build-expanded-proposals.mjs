@@ -46,7 +46,7 @@ export function validateExpandedConfig(config,reports){
   if(!['core-update','new-extension','experimental'].includes(i.designRole)||!Array.isArray(i.tags)||!i.tags.every(nonempty)||!nonempty(i.insight))throw Error('Incomplete proposal copy: '+i.id);
   for(const [field,keys] of Object.entries({construction:['last','upper','closure','sole','distinctive'],mlbFit:['target','carryover','change','reason','feasibility']}))for(const k of keys)if(!nonempty(i[field]?.[k]))throw Error('Missing '+field+'.'+k+': '+i.id);
   if(!Array.isArray(i.references)||i.references.length!==6||new Set(i.references.map(r=>r.kind+':'+r.id)).size!==6)throw Error('Six distinct references required: '+i.id);
-  if(!i.hero||!nonempty(i.hero.sourceSeason)||!nonempty(i.hero.credit)||!['same-season','earlier-season'].includes(i.hero.seasonRelation))throw Error('Hero source season/credit/relation required: '+i.id);
+  if(!i.hero||!nonempty(i.hero.sourceSeason)||!nonempty(i.hero.credit)||!['same-season','earlier-season','curated-season'].includes(i.hero.seasonRelation))throw Error('Hero source season/credit/relation required: '+i.id);
   for(const r of [...i.references,i.hero]){
    if(!nonempty(r.id)||!webUrl(r.url)||!nonempty(r.name))throw Error('Incomplete source identity: '+i.id);
    for(const field of ['image','original'])if(r[field]!=null)expandedPublicFile('/public-root',r[field]);

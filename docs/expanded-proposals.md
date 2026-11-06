@@ -4,6 +4,8 @@ The internal collection contains 35 concepts for each of 27SS, 27FW and 28SS.
 Each season has 10 daily, 10 feminine, 9 active and 6 seasonal concepts. A board
 has one independently editable editorial hero and six component references.
 Actual image seasons remain separate from the planning season.
+Fashion Feed season tags identify WGSN curation, rather than a brand campaign
+release date; these sources use the separate `curated-season` relationship.
 
 ## Private inputs and review
 

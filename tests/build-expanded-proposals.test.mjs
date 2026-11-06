@@ -7,6 +7,7 @@ import {validateProposalConfig} from '../scripts/build-season-proposals.mjs';
 
 test('expanded config validates 105 source-complete ideas and exact category quotas through legacy router',()=>{
  const fixture=proposalFixture();assert.equal(validateExpandedConfig(fixture,reports).ideas,105);assert.equal(validateProposalConfig(fixture,reports).ideas,105);
+ const curated=structuredClone(fixture);curated.ideas[0].hero.seasonRelation='curated-season';curated.ideas[0].hero.sourceSeason='WGSN 27SS 피드 분류';assert.equal(validateExpandedConfig(curated,reports).ideas,105);
  const short=structuredClone(fixture);short.ideas.pop();assert.throws(()=>validateExpandedConfig(short,reports),/105/);
  const quota=structuredClone(fixture);quota.ideas[0].category='active';assert.throws(()=>validateExpandedConfig(quota,reports),/quota/);
  const repeated=structuredClone(fixture);repeated.ideas[1].id=repeated.ideas[0].id;assert.throws(()=>validateExpandedConfig(repeated,reports),/Duplicate/);
