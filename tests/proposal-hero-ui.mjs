@@ -1,0 +1,55 @@
+// Focused browser test; runs only when explicitly invoked with node.
+import {chromium} from 'playwright';
+import {createServer} from 'node:http';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {proposalFixture} from './proposal-hero-fixture.mjs';
+const root=path.resolve('public'),mime={'.html':'text/html','.css':'text/css','.mjs':'text/javascript','.json':'application/json','.woff2':'font/woff2'};
+const server=createServer(async(req,res)=>{try{const file=path.resolve(root,'.'+(req.url==='/'?'/index.html':req.url.split('?')[0]));if(!file.startsWith(root+path.sep))throw Error('path');const data=await fs.readFile(file);res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream'}).end(data);}catch{res.writeHead(404).end();}});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin=`http://127.0.0.1:${server.address().port}`;let browser;
+try{
+ browser=await chromium.launch({headless:true});const context=await browser.newContext({viewport:{width:1600,height:1000}});
+ const painter=await context.newPage(),images=await painter.evaluate(()=>Array.from({length:7},(_,i)=>{const c=document.createElement('canvas');c.width=640;c.height=i?640:900;const x=c.getContext('2d');x.fillStyle='#fafafa';x.fillRect(0,0,c.width,c.height);x.fillStyle=`hsl(${i*42} 50% 40%)`;x.fillRect(100,170,440,280);return c.toDataURL('image/png').split(',')[1];}));await painter.close();
+ const json=(r,v)=>r.fulfill({contentType:'application/json',body:JSON.stringify(v)}),requests=[];
+ await context.route('**/*',r=>new URL(r.request().url()).origin===origin?r.continue():r.abort());
+ await context.route('**/fixture-*.png',r=>r.fulfill({contentType:'image/png',body:Buffer.from(images[Number(new URL(r.request().url()).pathname.match(/fixture-(\d)/)[1])],'base64')}));
+ await context.route('**/proposals/**',r=>{requests.push(new URL(r.request().url()).pathname);return r.fulfill({contentType:'image/png',body:Buffer.from(images[0],'base64')});});
+ await context.route('**/data/catalog-index.json',r=>r.fulfill({status:404,body:''}));
+ await context.route('**/data/catalog-ui.json',r=>json(r,{schemaVersion:1,brands:[],keywords:[],products:[],styleTrendKeywords:{items:[]}}));
+ await context.route('**/data/season-proposals.json',r=>{const data=proposalFixture();data.ideas.find(i=>i.id==='27fw-3').references[0].frame={x:.1,y:.3,width:.8,height:.4};data.ideas.find(i=>i.id==='27fw-3').boardCopy={insight:'간결한 인사이트',application:'정확한 적용안',memo:''};data.seasonBoards={'27SS':{overview:'contact-sheet',total:35,download:'/proposals/season-27ss/board.png',preview:'/proposals/season-27ss/preview.webp',pdf:'/proposals/season-27ss/season.pdf'},'27FW':{previewIdeaId:'27fw-0',download:'/proposals/season-27fw/board.png'}};data.sourceDates={catalog:{checkedAt:'2026-11-06T01:00:00Z',status:'ready'}};return json(r,data);});
+ await context.route('**/data/monthly-catalog.json',r=>json(r,{schemaVersion:2,retail:[],newsletter:[]}));
+ await context.route('**/data/trend-keywords.json',r=>json(r,{schemaVersion:1,keywords:[]}));
+ await context.route('**/data/catwalk.json',r=>json(r,{schemaVersion:1,shelves:[],looks:[]}));
+ const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(origin);await page.locator('[data-source="brief"]').click();
+ await page.waitForFunction(()=>document.querySelectorAll('.season-proposal-card').length===12);
+ assert.match(await page.locator('#proposal-season-view').textContent(),/35개 기획안 한눈에 보기/);assert.equal(await page.locator('#proposal-season-pdf').getAttribute('href'),'/proposals/season-27ss/season.pdf');assert.equal(await page.locator('#proposal-season-pdf').getAttribute('hidden'),null);
+ assert.equal(await page.locator('#proposal-date-note').textContent(),'공식 상품 2026-11-06 확인');
+ assert.match(await page.locator('#proposal-summary-counts').textContent(),/데일리 10개.*페미닌 10개.*액티브 9개.*시즈널 6개/);
+ assert.equal(await page.locator('.season-proposal-card img[loading=eager]').count(),2);assert(requests.every(p=>p.endsWith('preview.webp')));
+ await page.locator('.proposal-preview').first().click();assert.match(await page.locator('#proposal-viewer-image').getAttribute('src'),/preview\.webp$/);assert(requests.every(p=>p.endsWith('preview.webp')));
+ await page.locator('#proposal-zoom').click();assert.match(await page.locator('#proposal-viewer-image').getAttribute('src'),/board\.png$/);await page.locator('#proposal-close').click();
+ await page.locator('[data-proposal-page="2"]').click();assert.match(await page.locator('.season-proposal-card h3').first().textContent(),/27SS 12/);
+ await page.locator('[data-proposal-season="27FW"]').click();assert.equal(await page.locator('#proposal-season-view').textContent(),'첫 기획안 미리보기');await page.locator('[data-proposal-category="daily"]').click();assert.equal(await page.locator('.season-proposal-card').count(),10);
+ await page.locator('#proposal-search').fill('Concept 27FW 3');assert.equal(await page.locator('.season-proposal-card').count(),1);
+ for(const width of [390,760,1280]){await page.setViewportSize({width,height:900});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Filter overflow '+width);}
+ await page.setViewportSize({width:1600,height:1000});await page.locator('[data-proposal-to-board="27fw-3"]').click();
+ await page.waitForFunction(()=>document.querySelectorAll('.rb-reference').length===6&&document.querySelector('#board-hero img'));
+ await page.locator('#board-preview-canvas').waitFor();assert.equal(await page.locator('[data-preview-entry]').count(),6);assert.equal(await page.locator('.rb-preview-hero').count(),1);
+ const getBoard=()=>page.evaluate(async()=>{const m=await import('/assets/board-store.mjs');return (await m.listBoards())[0];});
+ if(process.env.PROPOSAL_UI_SCREENSHOT)await page.locator('#board-preview').screenshot({path:process.env.PROPOSAL_UI_SCREENSHOT});
+ let board=await getBoard();assert.equal(board.insight,'간결한 인사이트');assert.equal(board.application,'정확한 적용안');assert.equal(board.memo,'');assert.equal(board.hero.sourceSeason,'26FW');assert.deepEqual(board.entries[0].crop,{x:.1,y:.3,width:.8,height:.4});assert.equal(board.entries[0].memo,'연결 근거 0');assert.equal(board.entries[0].roleLabel,'구조 참고');assert.equal(board.entries.length,6);
+ await page.locator('#board-hero [data-board-hero-crop]').click();await page.locator('#board-crop-zoom').fill('2');await page.locator('#board-crop-zoom').dispatchEvent('input');await page.locator('#board-crop-apply').click();
+ await page.waitForFunction(()=>document.querySelector('#board-save-status').textContent.includes('자동 저장 완료'));board=await getBoard();assert(board.hero.crop.width<1);assert.equal(board.entries.length,6);
+ // Real raster PNG and JPEG-backed PDF exercise font loading, image crops, layout and dimensions.
+ const exports=await page.evaluate(async()=>{const tagFonts=[],originalFill=CanvasRenderingContext2D.prototype.fillText;CanvasRenderingContext2D.prototype.fillText=function(text,...args){if(String(text).startsWith('#'))tagFonts.push(this.font);return originalFill.call(this,text,...args);};const s=await import('/assets/board-store.mjs'),e=await import('/assets/board-export.mjs'),b=(await s.listBoards())[0],assets=new Map();for(const row of s.boardAssetEntries(b))assets.set(row.assetId,await s.getBoardAsset(row.assetId));const png=(await e.exportBoardPages(b,assets,'png'))[0],bitmap=await createImageBitmap(png),size=[bitmap.width,bitmap.height];bitmap.close();const pdf=await (await e.exportBoardPages(b,assets,'pdf')).text();CanvasRenderingContext2D.prototype.fillText=originalFill;return {boldTags:tagFonts.length>0&&tagFonts.every(f=>/^(?:700|bold) /.test(f)),size,dimensions:pdf.includes('/Width 6000 /Height 3375'),ratio:pdf.includes('/MediaBox [0 0 960 540]'),links:(pdf.match(/\/Subtype \/Link/g)||[]).length};});
+ assert.deepEqual(exports,{boldTags:true,size:[6000,3375],dimensions:true,ratio:true,links:7});
+ await page.locator('[data-board-use-hero]').first().click();await page.waitForFunction(()=>document.querySelector('#board-save-status').textContent.includes('자동 저장 완료'));
+ board=await getBoard();assert.equal(board.hero.assetId,board.entries[0].assetId);assert.notEqual(board.heroOriginal.assetId,board.hero.assetId);
+ await page.locator('[data-board-hero-remove]').click();await page.waitForFunction(()=>!document.querySelector('#board-hero img'));assert.equal(await page.locator('[data-preview-entry]').count(),6);
+ await page.locator('[data-board-hero-restore]').click();await page.waitForFunction(()=>document.querySelector('#board-hero img'));await page.waitForFunction(()=>document.querySelector('#board-save-status').textContent.includes('자동 저장 완료'));
+ await page.locator('#board-hero [data-board-hero-crop]').click();await page.locator('#board-crop-zoom').fill('2');await page.locator('#board-crop-zoom').dispatchEvent('input');await page.locator('#board-crop-apply').click();await page.waitForFunction(()=>document.querySelector('#board-save-status').textContent.includes('자동 저장 완료'));
+ const storage=await page.evaluate(async()=>{const m=await import('/assets/board-store.mjs'),original=(await m.listBoards())[0],backup=await m.boardBackup(original),copy=await m.importBoardBackup(backup),legacy=structuredClone(backup);delete legacy.board.hero;delete legacy.board.heroOriginal;const old=await m.importBoardBackup(legacy);const bad=structuredClone(backup);bad.assets[copy.hero.assetId].data=btoa('corrupt');let rejects=false;try{await m.importBoardBackup(bad);}catch{rejects=true;}const archived=await m.saveBoard({...copy,archivedAt:new Date().toISOString()}),removed=await m.permanentlyDeleteBoard(archived.id,archived.revision),shared=!!await m.getBoardAsset(copy.hero.assetId);for(const b of await m.listBoards()){const a=await m.saveBoard({...b,archivedAt:new Date().toISOString()});await m.permanentlyDeleteBoard(a.id,a.revision);}return {version:(await m.openBoardStore()).version,backupVersion:backup.version,assets:Object.keys(backup.assets).length,refs:copy.entries.length,crop:copy.hero.crop,season:copy.hero.sourceSeason,memo:copy.entries[0].memo,role:copy.entries[0].roleLabel,legacyHero:!!old.hero,legacyRefs:old.entries.length,rejects,removed,shared,orphan:!!await m.getBoardAsset(copy.hero.assetId)};});
+ assert(storage.crop.width<1);assert.equal(storage.version,1);assert.equal(storage.backupVersion,1);assert.equal(storage.assets,7);assert.equal(storage.refs,6);assert.equal(storage.season,'26FW');assert.equal(storage.memo,'연결 근거 0');assert.equal(storage.role,'구조 참고');assert.equal(storage.legacyHero,false);assert.equal(storage.legacyRefs,6);assert(storage.rejects);assert.deepEqual(storage.removed,[]);assert(storage.shared);assert.equal(storage.orphan,false);
+ assert.deepEqual(errors,[]);console.log('PASS: v3 pagination/mobile filters, lazy previews, 6 refs + hero import/crop/restore, real 6000×3375 PNG/PDF, v1 backups/legacy/asset GC.');
+}finally{await browser?.close();await new Promise(r=>server.close(r));}

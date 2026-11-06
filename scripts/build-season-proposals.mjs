@@ -9,6 +9,7 @@ import {prepareCatalog} from '../public/assets/catalog-runtime.mjs';
 import {variantGroupKey,isOverlay,kstToday,filterProducts} from '../public/assets/catalog-view.mjs';
 import {reportSeason} from '../public/assets/forecast.mjs';
 import {proposalSheet,seasonSheet,proposalDocument,BOARD_VERSION,BOARD_SIZE} from '../public/assets/proposal-template.mjs';
+import {buildExpandedProposals,validateExpandedConfig} from './build-expanded-proposals.mjs';
 const ROOT=fileURLToPath(new URL('../',import.meta.url));
 const read=async file=>JSON.parse(await fs.readFile(path.join(ROOT,file),'utf8'));
 const text=p=>[p.name,p.fullName,p.colorway,p.material,p.description,p.excerpt,...(p.keywords||[])].filter(Boolean).join(' ');
@@ -24,6 +25,7 @@ export function proposalEvidence(idea,{runtime,monthly,ranks,social,keywords,cat
  return {officialModels:new Set(official.map(variantGroupKey)).size,retailModels:new Set(retail.map(variantGroupKey)).size,articles:articles.length,articleSources:articles.slice(0,5).map(p=>({title:p.fullName||p.name,url:p.url,publishedAt:p.publishedAt})),ranking,social:(social.keywords||[]).filter(k=>re.test([k.hashtag,k.concept,...(k.aliases||[])].join(' '))).map(k=>k.hashtag),editorial:editorial.map(e=>({url:e.sourceUrl,source:e.sourceId,capturedAt:e.capturedAt,publishedAt:e.publishedAt})),feedTags:catwalk.looks.filter(l=>re.test((l.hashtags||[]).join(' '))).length};
 }
 export function validateProposalConfig(config,forecasts){
+ if(config?.schemaVersion===3)return validateExpandedConfig(config,forecasts);
  if(config.schemaVersion!==2||!Array.isArray(config.ideas))throw Error('Invalid season proposal configuration');
  const ids=new Set();
  for(const season of ['27SS','27FW','28SS'])if(config.ideas.filter(i=>i.season===season).length<5)throw Error('At least five proposals required for '+season);
@@ -35,9 +37,10 @@ export function validateProposalConfig(config,forecasts){
   for(const f of idea.forecast){const report=forecasts.find(r=>r.id===f.id);if(!report||reportSeason(report.title)!==idea.season.replace('FW','AW')||!Number.isInteger(f.page)||f.page<1||f.page>report.pages.length)throw Error('Wrong season or page in forecast evidence: '+idea.id);}
  }
 }
-export async function buildSeasonProposals({now=new Date()}={}){
+export async function buildSeasonProposals({now=new Date(),render=process.argv.includes('--render')}={}){
  const config=await read('data/season-proposals.json').catch(e=>{if(e.code==='ENOENT')return null;throw e;});
  if(!config){console.log('Internal season proposal configuration absent; no private research copied into a public build.');return null;}
+ if(config.schemaVersion===3)return buildExpandedProposals({config,now,render});
  const catalog=await read('public/data/catalog.json'),monthly=await read('public/data/monthly-catalog.json'),ranks=await read('public/data/rank-boards.json'),social=await read('public/data/trend-keywords.json'),catwalk=await read('public/data/catwalk.json'),forecast=await read('public/data/forecast.json');
  validateProposalConfig(config,forecast.reports);
  await fs.mkdir(path.join(ROOT,'logs/20261103/proposal-work'),{recursive:true});
