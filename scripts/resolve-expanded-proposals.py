@@ -35,6 +35,7 @@ def main():
  matches={b['id']:b for b in read(PRIVATE/'matches.json')['boards']}
  reports={r['id']:r for r in read(ROOT/'public/data/forecast.json')['reports']}
  pages={r['id']:r for r in read(PRIVATE/'wgsn-text.json')['reports']}
+ frames_path=PRIVATE/'photo-frames.json';frames=read(frames_path) if frames_path.exists() else {}
  catalog={p['id']:p for p in read(ROOT/'public/data/catalog.json')['products']}
  shows={p['id']:p for p in read(ROOT/'public/data/catwalk.json')['looks']}
  upgrades_path=PRIVATE/'photo-upgrades.json';upgrades=read(upgrades_path) if upgrades_path.exists() else {}
@@ -103,7 +104,14 @@ def main():
    upgraded={} if r.get('manualPhoto') else upgrades.get(r['key'],{});result={k:v for k,v in r.items() if k not in ['path','text','group','remoteImage','sourceListing','frame','matchEvidence','listPrice','manualPhoto','reviewedNote']}
    result.update({k:v for k,v in upgraded.items() if k in ['image','width','height']});result['original']=result['image'];result['kind']='catwalk' if r['kind']=='show' else r['kind'];result['reviewStatus']='reviewed' if reviewed else 'candidate'
    result['name']=display_name(result['name'],result['brand'],result.get('style',''))
+   color=str(result.get('color',''))
+   if len(color)>80 or re.search(r'https?://|\[!\[|<[^>]+>|Image \d+|undefined',color):color=''
+   result['color']=color
    result['cropMode']='auto'
+   if result['image'] in frames:
+    frame=frames[result['image']]
+    if not (all(isinstance(frame[k],(int,float)) for k in ['x','y','width','height']) and frame['x']>=0 and frame['y']>=0 and frame['width']>.015 and frame['height']>.015 and frame['x']+frame['width']<=1 and frame['y']+frame['height']<=1):raise ValueError('Invalid reviewed crop frame')
+    result['frame']=frame;result['cropMode']='frame'
    if r['kind']=='show':
     result['sourceSeason']=shows[r['id']]['season'];result['url']=shows[r['id']].get('sourceFeedUrl') or shows[r['id']].get('originalUrl') or shows[r['id']].get('sourceUrl')
    result['quality']={'width':result['width'],'height':result['height'],'rendition':'출처의 큰 원본' if upgraded else '보유 원본'}

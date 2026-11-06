@@ -77,3 +77,10 @@ test('English wraps by word; Hangul and overlong identifiers can wrap by charact
  assert.deepEqual(boardTextLines(ctx,'갑피 Sneakers 밑창',9),['갑피','Sneakers','밑창']);
  assert.deepEqual(boardTextLines(ctx,'Aged\n\nEffects',9),['Aged','','Effects']);
 });
+
+test('reviewed reference labels override malformed legacy catalog color text, including intentional omission',()=>{
+ const reference={id:'source',kind:'product',name:'Source',color:'',style:'REVIEWED'},product={colorway:'[![Image 115](https://example.com/image)',style:'LEGACY'};
+ assert.equal(proposalEntrySource(reference,product).color,'');assert.equal(proposalEntrySource(reference,product).style,'REVIEWED');
+ assert.equal(proposalEntrySource({...reference,color:'White'},product).color,'White');
+ const legacy={...reference};delete legacy.color;assert.equal(proposalEntrySource(legacy,{colorway:'Black'}).color,'Black');
+});

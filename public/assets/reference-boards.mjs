@@ -71,7 +71,7 @@ function renderTemplates(){
 export function proposalEntrySource(reference,product={},hero=false){
  const kind=['catwalk','show'].includes(reference.kind)?'show':'product';
  const original=reference.original||reference.image;
- return {sourceKey:(hero?'hero:':kind==='show'?'show:':'product:')+reference.id,kind,name:reference.name,brand:reference.brand,sourceSeason:reference.sourceSeason||reference.season,sourceDate:reference.sourceDate,seasonRelation:reference.seasonRelation,sourceUrl:reference.url,imageUrl:original?.startsWith('/')?original:reference.image,original:reference.original,credit:reference.credit,role:reference.role,roleLabel:reference.roleLabel,memo:reference.note||'',note:reference.note,matchEvidence:reference.matchEvidence,quality:reference.quality,color:product.colorway,style:product.style,frame:hero||reference.cropMode==='auto'?undefined:(reference.frame??product.presentation?.frame)};
+ return {sourceKey:(hero?'hero:':kind==='show'?'show:':'product:')+reference.id,kind,name:reference.name,brand:reference.brand,sourceSeason:reference.sourceSeason||reference.season,sourceDate:reference.sourceDate,seasonRelation:reference.seasonRelation,sourceUrl:reference.url,imageUrl:original?.startsWith('/')?original:reference.image,original:reference.original,credit:reference.credit,role:reference.role,roleLabel:reference.roleLabel,memo:reference.note||'',note:reference.note,matchEvidence:reference.matchEvidence,quality:reference.quality,color:Object.hasOwn(reference,'color')?reference.color:product.colorway,style:reference.style??product.style,frame:hero||reference.cropMode==='auto'?undefined:(reference.frame??product.presentation?.frame)};
 }
 async function copySeasonProposal(id){
  if(busy)return;busy=true;

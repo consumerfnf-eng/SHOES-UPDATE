@@ -21,6 +21,8 @@ repository contains the tooling, UI and synthetic test fixtures only.
    `shortlist-proposal-photo-fixes.py` produces optional replacement shortlists.
    Inspect every selected image and record component-specific notes. New
    mechanisms and performance remain development hypotheses.
+   Optional `photo-frames.json` entries bind reviewed crops to exact hashed
+   source files; imports and static exports both preserve those same crops.
 4. Save season-specific photo patches and run
    `python scripts/apply-proposal-photo-patches.py`. Resolve every reported
    duplicate anchor, hero or within-board image. The three canonical private
